@@ -4,6 +4,8 @@ import { trpc } from "@/lib/trpc";
 import { Analytics } from "@/lib/analytics";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
+import { useCurrency } from "@/contexts/CurrencyContext";
+import { convertPriceString } from "@/lib/currencyUtils";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -209,6 +211,7 @@ export default function Results() {
   const recommendedRoute = (resultQuery.data as unknown as { recommendedRoute?: string }).recommendedRoute;
 
   const isGenerating = roadmapMutation.isPending || (!roadmap && !roadmapError);
+  const { formatPrice, currency } = useCurrency();
 
   const dimensionConfig = [
     { key: "readiness" as const, label: "Readiness", icon: <Clock className="w-4 h-4" />, color: "text-blue-500" },
@@ -298,7 +301,7 @@ export default function Results() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 animate-fade-in-up">
               {[
                 { icon: <Plane className="w-4 h-4" />, label: "Recommended Route", value: recommendedRoute },
-                { icon: <PoundSterling className="w-4 h-4" />, label: "Estimated Cost", value: estimatedCostRange },
+                { icon: <PoundSterling className="w-4 h-4" />, label: `Estimated Cost${currency.code !== "GBP" ? ` (${currency.code})` : ""}`, value: estimatedCostRange ? convertPriceString(estimatedCostRange, formatPrice) : undefined },
                 { icon: <Clock className="w-4 h-4" />, label: "Timeline", value: estimatedTimeline },
                 { icon: <AlertTriangle className="w-4 h-4" />, label: "Biggest Risk", value: biggestRisk },
               ].filter(c => c.value).map((item, i) => (
@@ -397,7 +400,7 @@ export default function Results() {
                             <p className="text-xs text-[var(--color-muted-foreground)] mt-0.5 flex items-center gap-1">
                               <MapPin className="w-3 h-3" />
                               {[school.city, school.country].filter(Boolean).join(", ")}
-                              {school.priceRange && ` · ${school.priceRange}`}
+                              {school.priceRange && ` · ${convertPriceString(school.priceRange, formatPrice)}${currency.code !== "GBP" ? ` (${currency.code})` : ""}`}
                             </p>
                             <div className="flex gap-1 mt-1.5 flex-wrap">
                               {school.integratedAtpl && <span className="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">Integrated ATPL</span>}
@@ -534,7 +537,12 @@ export default function Results() {
                       <div className="p-4 rounded-xl bg-[var(--color-muted)]">
                         <div className="text-xs text-[var(--color-muted-foreground)] mb-1">Estimated cost range</div>
                         <div className="font-display font-bold text-[var(--color-navy)]">
-                          £{roadmap.estimatedCostMin.toLocaleString()} – £{roadmap.estimatedCostMax.toLocaleString()}
+                          {formatPrice(roadmap.estimatedCostMin!)} – {formatPrice(roadmap.estimatedCostMax!)}
+                          {currency.code !== "GBP" && (
+                            <div className="text-xs font-normal text-[var(--color-muted-foreground)] mt-0.5">
+                              ≈ £{roadmap.estimatedCostMin!.toLocaleString("en-GB")} – £{roadmap.estimatedCostMax!.toLocaleString("en-GB")} GBP
+                            </div>
+                          )}
                         </div>
                       </div>
                     )}

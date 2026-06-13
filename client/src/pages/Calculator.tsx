@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import { ArrowRight, Calculator as CalcIcon, Info } from "lucide-react";
+import { useCurrency } from "@/contexts/CurrencyContext";
 
 interface CostItem {
   label: string;
@@ -79,14 +80,12 @@ const ROUTES: Record<string, { label: string; description: string; items: CostIt
   },
 };
 
-function formatGBP(n: number) {
-  return new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 }).format(n);
-}
-
 export default function Calculator() {
   useEffect(() => {
     document.title = "Pilot Training Cost Calculator – AviatorIQ";
   }, []);
+
+  const { formatPrice, currency } = useCurrency();
   const [selectedRoute, setSelectedRoute] = useState("integrated_uk");
   const [adjustments, setAdjustments] = useState<Record<string, number>>({});
 
@@ -102,6 +101,8 @@ export default function Calculator() {
     });
     return { min, max };
   }, [route, adjustments]);
+
+  const isGBP = currency.code === "GBP";
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -151,9 +152,16 @@ export default function Calculator() {
 
             {/* Cost breakdown */}
             <div className="card-base p-6 mb-6">
-              <h2 className="font-display font-bold text-[var(--color-navy)] text-xl mb-1">Cost breakdown</h2>
+              <div className="flex items-center justify-between mb-1">
+                <h2 className="font-display font-bold text-[var(--color-navy)] text-xl">Cost breakdown</h2>
+                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[var(--color-primary-light)] text-[var(--color-primary)]">
+                  {currency.flag} {currency.code}
+                </span>
+              </div>
               <p className="text-sm text-[var(--color-muted-foreground)] mb-5">
-                All figures are estimates in GBP. Actual costs vary by school, location and individual progress.
+                {isGBP
+                  ? "All figures are estimates in GBP. Actual costs vary by school, location and individual progress."
+                  : `Figures converted from GBP to ${currency.name} using live exchange rates. Actual costs vary.`}
               </p>
               <div className="space-y-3">
                 {route.items.map((item) => (
@@ -164,7 +172,7 @@ export default function Calculator() {
                     </div>
                     <div className="text-right">
                       <div className="text-sm font-bold text-[var(--color-navy)]">
-                        {formatGBP(item.min + (adjustments[item.label] ?? 0))} – {formatGBP(item.max + (adjustments[item.label] ?? 0))}
+                        {formatPrice(item.min + (adjustments[item.label] ?? 0))} – {formatPrice(item.max + (adjustments[item.label] ?? 0))}
                       </div>
                     </div>
                   </div>
@@ -178,10 +186,15 @@ export default function Calculator() {
                 <div>
                   <div className="text-sm font-semibold text-[var(--color-primary)] mb-1">Estimated total cost</div>
                   <div className="text-3xl font-display font-bold text-[var(--color-navy)]">
-                    {formatGBP(totals.min)} – {formatGBP(totals.max)}
+                    {formatPrice(totals.min)} – {formatPrice(totals.max)}
                   </div>
                   <div className="text-xs text-[var(--color-muted-foreground)] mt-1">
-                    Midpoint estimate: {formatGBP(Math.round((totals.min + totals.max) / 2))}
+                    Midpoint estimate: {formatPrice(Math.round((totals.min + totals.max) / 2))}
+                    {!isGBP && (
+                      <span className="ml-2 opacity-70">
+                        (≈ £{Math.round((totals.min + totals.max) / 2).toLocaleString("en-GB")} GBP)
+                      </span>
+                    )}
                   </div>
                 </div>
                 <CalcIcon className="w-12 h-12 text-[var(--color-primary)]/30" />
@@ -192,7 +205,7 @@ export default function Calculator() {
             <div className="flex items-start gap-3 p-4 rounded-xl bg-amber-50 border border-amber-200 mb-8">
               <Info className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
               <p className="text-xs text-amber-700 leading-relaxed">
-                These are indicative estimates only. Actual costs depend on your school, location, individual progress, exchange rates and additional fees. Always get a detailed quote from your chosen school. This calculator does not constitute financial advice.
+                These are indicative estimates only. Source figures are in GBP; non-GBP conversions use live exchange rates and are for guidance only. Actual costs depend on your school, location, individual progress, exchange rates and additional fees. Always get a detailed quote from your chosen school. This calculator does not constitute financial advice.
               </p>
             </div>
 

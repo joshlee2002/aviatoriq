@@ -160,3 +160,12 @@
 - [x] Show source in admin lead table and detail panel
 - [x] Add source breakdown to admin analytics panel
 - [x] Build Launch Dashboard at top of admin: last 7 days stats (visitors, quiz starts, completions, completion rate, Flight Ready leads, intro requests, intro rate, top source, top country, avg budget)
+
+## Phase 14 – Currency Conversion
+
+- [x] Create CurrencyContext with geo-detection (ipapi.co), exchange rates, and formatPrice helper
+- [x] Update Calculator page to use detected currency with live conversion
+- [x] Update Schools directory price ranges to show converted currency
+- [x] Update Results page cost estimates to show converted currency
+- [x] Add manual currency switcher (flag + code) in PublicNav
+- [x] Write vitest tests for currency formatting and conversion logic

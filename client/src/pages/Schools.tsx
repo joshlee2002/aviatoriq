@@ -4,6 +4,8 @@ import { trpc } from "@/lib/trpc";
 import { Analytics } from "@/lib/analytics";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
+import { useCurrency } from "@/contexts/CurrencyContext";
+import { convertPriceString } from "@/lib/currencyUtils";
 import {
   MapPin,
   Globe,
@@ -30,6 +32,7 @@ export default function Schools() {
   useEffect(() => {
     document.title = "Flight School Directory – AviatorIQ";
   }, []);
+  const { formatPrice, currency } = useCurrency();
   const [country, setCountry] = useState("");
   const [trainingType, setTrainingType] = useState("");
   const [financeFilter, setFinanceFilter] = useState("");
@@ -216,7 +219,12 @@ export default function Schools() {
                         {school.priceRange && (
                           <div className="flex items-center gap-1.5 text-xs text-[var(--color-muted-foreground)]">
                             <CreditCard className="w-3 h-3" />
-                            {school.priceRange}
+                            <span title={school.priceRange}>
+                              {convertPriceString(school.priceRange, formatPrice)}
+                              {currency.code !== "GBP" && (
+                                <span className="ml-1 opacity-60">({currency.code})</span>
+                              )}
+                            </span>
                           </div>
                         )}
                         {school.airlinePartnerships && (
