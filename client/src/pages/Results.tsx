@@ -313,7 +313,7 @@ export default function Results() {
                 <span className="text-white/60 text-xs font-medium uppercase tracking-wide">Share your result</span>
                 <div className="flex gap-2">
                   <a
-                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent('Could you actually become an airline pilot? I just took the AviatorIQ assessment to find out. ✈️')}&url=${encodeURIComponent('https://pilotpath-mchvfa42.manus.space/quiz')}`}
+                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent('Could you actually become an airline pilot? I just took the AviatorIQ assessment to find out. ✈️')}&url=${encodeURIComponent(window.location.origin + '/quiz')}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-black/30 hover:bg-black/50 border border-white/20 text-white text-sm font-medium transition-colors no-underline"
@@ -322,7 +322,7 @@ export default function Results() {
                     Share on X
                   </a>
                   <a
-                    href={`https://wa.me/?text=${encodeURIComponent('Could you actually become an airline pilot? I just took the AviatorIQ assessment to find out: https://pilotpath-mchvfa42.manus.space/quiz ✈️')}`}
+                    href={`https://wa.me/?text=${encodeURIComponent('Could you actually become an airline pilot? I just took the AviatorIQ assessment to find out: ' + window.location.origin + '/quiz ✈️')}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-green-600/70 hover:bg-green-600/90 border border-white/20 text-white text-sm font-medium transition-colors no-underline"
