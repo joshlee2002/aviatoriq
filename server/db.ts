@@ -424,6 +424,13 @@ export async function getLeadAnalytics() {
     budgetBreakdown[b] = (budgetBreakdown[b] ?? 0) + 1;
   }
 
+  // Source breakdown
+  const sourceBreakdown: Record<string, number> = {};
+  for (const l of allLeads) {
+    const s = (l as any).source ?? 'Unknown';
+    if (s && s !== 'Unknown') sourceBreakdown[s] = (sourceBreakdown[s] ?? 0) + 1;
+  }
+
   // Score distribution (buckets of 10)
   const scoreDistribution = Array.from({ length: 10 }, (_, i) => ({
     range: `${i * 10}–${i * 10 + 9}`,
@@ -454,6 +461,7 @@ export async function getLeadAnalytics() {
     goalBreakdown,
     fundingBreakdown,
     budgetBreakdown,
+    sourceBreakdown,
     scoreDistribution,
     leadsPerDay,
   };

@@ -144,19 +144,19 @@
 
 ## Phase 13 – Launch Prep (Stop After This)
 
-- [ ] Add "For Schools" link to top navigation bar
-- [ ] Add social sharing (Twitter/X and WhatsApp) to results page with user-centric copy
-- [ ] Add source tracking field to leads schema and migration
-- [ ] Add source question to quiz (Instagram, Facebook, Reddit, Google, YouTube, Friend, Other)
-- [ ] Show source column in admin lead table and detail panel
-- [ ] Add source breakdown to admin analytics panel
+- [x] Add "For Schools" link to top navigation bar
+- [x] Add social sharing (Twitter/X and WhatsApp) to results page with user-centric copy
+- [x] Add source tracking field to leads schema and migration
+- [x] Add source question to quiz (Instagram, Facebook, Reddit, Google, YouTube, Friend, Other)
+- [x] Show source column in admin lead table and detail panel
+- [x] Add source breakdown to admin analytics panel
 
 ## Phase 13 – Launch Prep (Feature Complete After This)
 
-- [ ] Add "For Schools" link to top navigation bar (outlined button, distinct from CTA)
-- [ ] Add social sharing to results page (Twitter/X and WhatsApp, user-centric copy)
-- [ ] Add source field to leads schema (Instagram, Facebook, Reddit, Google, YouTube, Friend, Other)
-- [ ] Add "How did you hear about us?" question to quiz
-- [ ] Show source in admin lead table and detail panel
-- [ ] Add source breakdown to admin analytics panel
-- [ ] Build Launch Dashboard at top of admin: last 7 days stats (visitors, quiz starts, completions, completion rate, Flight Ready leads, intro requests, intro rate, top source, top country, avg budget)
+- [x] Add "For Schools" link to top navigation bar (outlined button, distinct from CTA)
+- [x] Add social sharing to results page (Twitter/X and WhatsApp, user-centric copy)
+- [x] Add source field to leads schema (Instagram, Facebook, Reddit, Google, YouTube, Friend, Other)
+- [x] Add "How did you hear about us?" question to quiz
+- [x] Show source in admin lead table and detail panel
+- [x] Add source breakdown to admin analytics panel
+- [x] Build Launch Dashboard at top of admin: last 7 days stats (visitors, quiz starts, completions, completion rate, Flight Ready leads, intro requests, intro rate, top source, top country, avg budget)

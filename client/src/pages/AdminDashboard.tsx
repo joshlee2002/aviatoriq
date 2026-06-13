@@ -59,6 +59,8 @@ type Lead = {
   consentToContact: boolean;
   consentToShare: boolean;
   writtenAnswer: string | null;
+  source: string | null;
+  preferredContact: string | null;
   aiSummary: string | null;
   aiRoadmap: string | null;
   leadScore: number;
@@ -158,6 +160,8 @@ function LeadDetailModal({ lead, onClose }: { lead: Lead; onClose: () => void })
     { label: "Biggest concern", value: lead.biggestConcern },
     { label: "Start timeframe", value: lead.startTimeframe },
     { label: "Wants school contact", value: lead.wantsSchoolContact },
+    { label: "Preferred contact", value: lead.preferredContact },
+    { label: "Source", value: lead.source },
   ];
 
   return (
@@ -829,6 +833,28 @@ export default function AdminDashboard() {
                     </div>
                   </div>
 
+                    {/* Source breakdown */}
+                    {Object.keys(a.sourceBreakdown ?? {}).length > 0 && (
+                    <div className="card-base p-6">
+                      <h3 className="font-display font-bold text-[var(--color-navy)] mb-4 flex items-center gap-2"><TrendingUp className="w-5 h-5 text-purple-500" /> Traffic Source</h3>
+                      <div className="space-y-2">
+                        {Object.entries(a.sourceBreakdown ?? {}).sort(([,a],[,b]) => (b as number) - (a as number)).map(([src, count]) => (
+                          <div key={src} className="flex items-center gap-2">
+                            <div className="flex-1">
+                              <div className="flex justify-between text-sm mb-0.5">
+                                <span className="text-[var(--color-foreground)] font-medium">{src}</span>
+                                <span className="text-[var(--color-muted-foreground)]">{count as number} ({Math.round(((count as number) / a.total) * 100)}%)</span>
+                              </div>
+                              <div className="h-1.5 bg-[var(--color-muted)] rounded-full">
+                                <div className="h-1.5 bg-purple-500 rounded-full" style={{ width: `${Math.round(((count as number) / a.total) * 100)}%` }} />
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    )}
+
                   {/* Leads per day */}
                   {a.leadsPerDay.length > 0 && (
                     <div className="card-base p-6">
@@ -936,7 +962,7 @@ export default function AdminDashboard() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-[var(--color-border)] bg-[var(--color-muted)]">
-                    {["Name", "Country", "Goal", "Budget", "Score", "Category", "Status", "Date", ""].map((h) => (
+                    {["Name", "Country", "Goal", "Budget", "Score", "Category", "Source", "Status", "Date", ""].map((h) => (
                       <th key={h} className="text-left px-4 py-3 text-xs font-semibold text-[var(--color-muted-foreground)] uppercase tracking-wider whitespace-nowrap">
                         {h}
                       </th>
@@ -962,6 +988,7 @@ export default function AdminDashboard() {
                         <span className="text-xs text-[var(--color-muted-foreground)]">/100</span>
                       </td>
                         <td className="px-4 py-3"><CategoryBadge category={lead.leadCategory} /><div className="mt-1"><LeadValueBadge value={lead.leadValue ?? 'Low'} /></div></td>
+                      <td className="px-4 py-3 text-xs text-[var(--color-muted-foreground)] max-w-24 truncate">{(lead as any).source ?? '—'}</td>
                       <td className="px-4 py-3"><StatusBadge status={lead.status} /></td>
                       <td className="px-4 py-3 text-xs text-[var(--color-muted-foreground)] whitespace-nowrap">
                         {new Date(lead.createdAt).toLocaleDateString()}
