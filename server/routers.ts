@@ -22,6 +22,7 @@ import {
   getLeadAssignments,
   getLeadById,
   getLeadAnalytics,
+  getLaunchStats,
   listAllIntroductionRequests,
   listFlightSchools,
   listLeads,
@@ -65,6 +66,7 @@ const leadSubmitSchema = z.object({
   startTimeframe: z.string().optional(),
   wantsSchoolContact: z.string().optional(),
   preferredContact: z.string().optional(),
+  source: z.string().optional(),
   contactConsentSchools: z.boolean().optional(),
   contactConsentFinance: z.boolean().optional(),
   contactConsentMedical: z.boolean().optional(),
@@ -163,6 +165,7 @@ Lead score: ${score}/100 (${category})`;
           aiSummary,
           status: "New",
           preferredContact: input.preferredContact ?? null,
+          source: input.source ?? null,
           contactConsentSchools: input.contactConsentSchools ?? true,
           contactConsentFinance: input.contactConsentFinance ?? false,
           contactConsentMedical: input.contactConsentMedical ?? false,
@@ -593,6 +596,9 @@ Use cautious, helpful language. Do not invent specific school prices unless they
   analytics: router({
     overview: adminProcedure.query(async () => {
       return getLeadAnalytics();
+    }),
+    launchStats: adminProcedure.query(async () => {
+      return getLaunchStats();
     }),
   }),
 });

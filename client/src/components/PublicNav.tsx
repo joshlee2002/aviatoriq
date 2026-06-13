@@ -9,6 +9,8 @@ const navLinks = [
   { label: "About", href: "/about" },
 ];
 
+const FOR_SCHOOLS = { label: "For Schools", href: "/partner" };
+
 export default function PublicNav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [location] = useLocation();
@@ -44,6 +46,12 @@ export default function PublicNav() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
+            <Link
+              href={FOR_SCHOOLS.href}
+              className="px-4 py-2 rounded-lg text-sm font-semibold border border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary-light)] transition-colors no-underline"
+            >
+              For Schools
+            </Link>
             <Link href="/quiz" className="btn-cta text-sm py-2 px-5">
               Take Free Assessment
             </Link>
@@ -72,6 +80,13 @@ export default function PublicNav() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href={FOR_SCHOOLS.href}
+              onClick={() => setMobileOpen(false)}
+              className="block px-4 py-3 text-sm font-semibold text-[var(--color-primary)] hover:bg-[var(--color-primary-light)] rounded-lg no-underline"
+            >
+              For Schools
+            </Link>
             <div className="px-4 pt-3 pb-1">
               <Link
                 href="/quiz"

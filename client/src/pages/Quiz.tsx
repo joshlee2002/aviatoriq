@@ -37,6 +37,7 @@ interface QuizData {
   writtenAnswer: string;
   consentToContact: boolean;
   consentToShare: boolean;
+  source: string;
 }
 
 const EMPTY: QuizData = {
@@ -49,6 +50,7 @@ const EMPTY: QuizData = {
   preferredContact: "",
   contactConsentSchools: true, contactConsentFinance: false, contactConsentMedical: false, contactConsentPartners: false,
   writtenAnswer: "", consentToContact: false, consentToShare: false,
+  source: "",
 };
 
 const TOTAL_STEPS = 7;
@@ -422,6 +424,28 @@ function Step7({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
           </div>
         </div>
 
+        {/* Source question */}
+        <div className="p-5 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
+          <p className="text-sm font-semibold text-[var(--color-navy)] mb-1">How did you hear about AviatorIQ?</p>
+          <p className="text-xs text-[var(--color-muted-foreground)] mb-3">Optional — helps us understand where to focus.</p>
+          <div className="grid grid-cols-2 gap-2">
+            {["Google / Search", "Instagram", "Facebook", "Reddit", "YouTube", "A friend", "Forum / Community", "Other"].map((opt) => (
+              <button
+                key={opt}
+                type="button"
+                onClick={() => update("source", data.source === opt ? "" : opt)}
+                className={`px-3 py-2 rounded-lg text-sm font-medium border-2 transition-colors text-left ${
+                  data.source === opt
+                    ? "border-[var(--color-primary)] bg-[var(--color-primary-light)] text-[var(--color-primary)]"
+                    : "border-[var(--color-border)] hover:border-[var(--color-primary)]/50 text-[var(--color-foreground)]"
+                }`}
+              >
+                {opt}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Consent */}
         <div className="space-y-4">
           <h3 className="font-display font-bold text-[var(--color-navy)]">Your consent</h3>
@@ -513,6 +537,7 @@ export default function Quiz() {
     submitMutation.mutate({
       ...data,
       age: data.age ? parseInt(data.age, 10) : undefined,
+      source: data.source || undefined,
     });
   };
 

@@ -141,3 +141,22 @@
 - [x] Auto-email PDF to user on quiz submission
 - [x] Admin analytics panel: completion stats, score distribution, budget averages, funding breakdown, country split, goal breakdown, leads over time
 - [x] Wire /partner route in App.tsx and add to nav footer
+
+## Phase 13 – Launch Prep (Stop After This)
+
+- [ ] Add "For Schools" link to top navigation bar
+- [ ] Add social sharing (Twitter/X and WhatsApp) to results page with user-centric copy
+- [ ] Add source tracking field to leads schema and migration
+- [ ] Add source question to quiz (Instagram, Facebook, Reddit, Google, YouTube, Friend, Other)
+- [ ] Show source column in admin lead table and detail panel
+- [ ] Add source breakdown to admin analytics panel
+
+## Phase 13 – Launch Prep (Feature Complete After This)
+
+- [ ] Add "For Schools" link to top navigation bar (outlined button, distinct from CTA)
+- [ ] Add social sharing to results page (Twitter/X and WhatsApp, user-centric copy)
+- [ ] Add source field to leads schema (Instagram, Facebook, Reddit, Google, YouTube, Friend, Other)
+- [ ] Add "How did you hear about us?" question to quiz
+- [ ] Show source in admin lead table and detail panel
+- [ ] Add source breakdown to admin analytics panel
+- [ ] Build Launch Dashboard at top of admin: last 7 days stats (visitors, quiz starts, completions, completion rate, Flight Ready leads, intro requests, intro rate, top source, top country, avg budget)

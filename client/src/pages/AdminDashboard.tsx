@@ -511,6 +511,7 @@ export default function AdminDashboard() {
   const [showSchools, setShowSchools] = useState(false);
   const [activeTab, setActiveTab] = useState<"leads" | "introductions" | "analytics">("leads");
   const analyticsQuery = trpc.analytics.overview.useQuery(undefined, { enabled: isAuthenticated && user?.role === "admin" });
+  const launchStatsQuery = trpc.analytics.launchStats.useQuery(undefined, { enabled: isAuthenticated && user?.role === "admin", refetchInterval: 60_000 });
   const [page, setPage] = useState(1);
 
   const filters = { search, category: category || undefined, status: status || undefined, country: country || undefined, page, pageSize: 50 };
@@ -597,6 +598,67 @@ export default function AdminDashboard() {
             </button>
           </div>
         </div>
+
+        {/* ── Launch Dashboard ── */}
+        {launchStatsQuery.data && (() => {
+          const s = launchStatsQuery.data;
+          return (
+            <div className="mb-6 p-5 rounded-2xl border-2 border-[var(--color-primary)]/20 bg-gradient-to-br from-[var(--color-primary-light)] to-white">
+              <div className="flex items-center justify-between mb-4">
+                <div>
+                  <h2 className="font-display font-bold text-[var(--color-navy)] text-lg">Launch Dashboard</h2>
+                  <p className="text-xs text-[var(--color-muted-foreground)]">Last 7 days · refreshes every 60s</p>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-[var(--color-muted-foreground)]">
+                  <span>All-time: {s.totalAllTime} assessments · {s.hotAllTime} Flight Ready · {s.introAllTime} intro requests</span>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+                {[
+                  { label: "Assessments", value: s.total7d, sub: "last 7 days", highlight: false },
+                  { label: "Flight Ready", value: s.hot7d, sub: "hot leads", highlight: s.hot7d > 0 },
+                  { label: "Intro Requests", value: `${s.introRate7d}%`, sub: `${s.introLeads7d} leads`, highlight: s.introRate7d >= 20 },
+                  { label: "Avg Score", value: s.avgScore7d > 0 ? `${s.avgScore7d}/100` : '—', sub: "AviatorIQ score", highlight: false },
+                  { label: "Top Source", value: s.topSource7d === 'N/A' ? '—' : s.topSource7d, sub: s.topCountry7d === 'N/A' ? 'top country' : s.topCountry7d, highlight: false },
+                ].map((m) => (
+                  <div key={m.label} className={`rounded-xl p-4 text-center border ${
+                    m.highlight
+                      ? 'bg-[var(--color-primary)] border-[var(--color-primary)] text-white'
+                      : 'bg-white border-[var(--color-border)]'
+                  }`}>
+                    <div className={`text-2xl font-display font-bold ${m.highlight ? 'text-white' : 'text-[var(--color-navy)]'}`}>{m.value}</div>
+                    <div className={`text-xs font-semibold mt-0.5 ${m.highlight ? 'text-white/80' : 'text-[var(--color-primary)]'}`}>{m.label}</div>
+                    <div className={`text-xs mt-0.5 ${m.highlight ? 'text-white/60' : 'text-[var(--color-muted-foreground)]'}`}>{m.sub}</div>
+                  </div>
+                ))}
+              </div>
+              {/* 7-day spark bars */}
+              {s.leadsPerDay7d.length > 0 && (
+                <div className="mt-4">
+                  <p className="text-xs text-[var(--color-muted-foreground)] mb-2">Assessments per day</p>
+                  <div className="flex items-end gap-1 h-10">
+                    {s.leadsPerDay7d.map((d) => {
+                      const max = Math.max(...s.leadsPerDay7d.map(x => x.count), 1);
+                      const pct = Math.max((d.count / max) * 100, d.count > 0 ? 8 : 2);
+                      return (
+                        <div key={d.date} className="flex-1 flex flex-col items-center gap-1">
+                          <div
+                            className={`w-full rounded-sm transition-all ${
+                              d.count > 0 ? 'bg-[var(--color-primary)]' : 'bg-[var(--color-border)]'
+                            }`}
+                            style={{ height: `${pct}%` }}
+                            title={`${d.date}: ${d.count}`}
+                          />
+                          <span className="text-[9px] text-[var(--color-muted-foreground)]">{d.date.slice(5)}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })()}
 
         {/* Tabs */}
         <div className="flex gap-1 mb-5 bg-[var(--color-muted)] p-1 rounded-xl w-fit">

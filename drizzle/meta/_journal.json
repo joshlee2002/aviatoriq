@@ -50,6 +50,13 @@
       "when": 1781327834044,
       "tag": "0006_chubby_blue_blade",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1781328194804,
+      "tag": "0007_certain_scarlet_witch",
+      "breakpoints": true
     }
   ]
 }

@@ -317,6 +317,67 @@ export async function listSchoolWaitlist(): Promise<SchoolWaitlistEntry[]> {
 }
 
 // ─── Analytics ──────────────────────────────────────────────────────────────────
+export async function getLaunchStats() {
+  const db = await getDb();
+  if (!db) return null;
+
+  const allLeads = await db.select().from(leads);
+  const allIntros = await db.select().from(introductionRequests);
+
+  const now = Date.now();
+  const sevenDaysAgo = now - 7 * 24 * 60 * 60 * 1000;
+
+  const recent = allLeads.filter(l => l.createdAt.getTime() >= sevenDaysAgo);
+  const recentIntros = allIntros.filter(i => i.createdAt.getTime() >= sevenDaysAgo);
+
+  const total7d = recent.length;
+  const hot7d = recent.filter(l => l.leadCategory === 'Hot').length;
+  const introLeads7d = new Set(recentIntros.map(i => i.leadId)).size;
+  const introRate7d = total7d > 0 ? Math.round((introLeads7d / total7d) * 100) : 0;
+  const avgScore7d = total7d > 0 ? Math.round(recent.reduce((s, l) => s + (l.leadScore ?? 0), 0) / total7d) : 0;
+  const avgBudget7d = total7d > 0 ? (() => {
+    const budgetMap: Record<string, number> = {};
+    for (const l of recent) { const b = l.budgetRange ?? 'Unknown'; budgetMap[b] = (budgetMap[b] ?? 0) + 1; }
+    return Object.entries(budgetMap).sort((a, b) => b[1] - a[1])[0]?.[0] ?? 'N/A';
+  })() : 'N/A';
+
+  const topSource7d = (() => {
+    const srcMap: Record<string, number> = {};
+    for (const l of recent) { const s = l.source ?? 'Unknown'; srcMap[s] = (srcMap[s] ?? 0) + 1; }
+    return Object.entries(srcMap).sort((a, b) => b[1] - a[1])[0]?.[0] ?? 'N/A';
+  })();
+
+  const topCountry7d = (() => {
+    const cMap: Record<string, number> = {};
+    for (const l of recent) { const c = l.country ?? 'Unknown'; cMap[c] = (cMap[c] ?? 0) + 1; }
+    return Object.entries(cMap).sort((a, b) => b[1] - a[1])[0]?.[0] ?? 'N/A';
+  })();
+
+  // Leads per day last 7 days
+  const leadsPerDay7d: { date: string; count: number }[] = [];
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date(now - i * 24 * 60 * 60 * 1000);
+    const dayStr = d.toISOString().slice(0, 10);
+    leadsPerDay7d.push({ date: dayStr, count: recent.filter(l => l.createdAt.toISOString().slice(0, 10) === dayStr).length });
+  }
+
+  return {
+    total7d,
+    hot7d,
+    introLeads7d,
+    introRate7d,
+    avgScore7d,
+    avgBudget7d,
+    topSource7d,
+    topCountry7d,
+    leadsPerDay7d,
+    // All-time totals for context
+    totalAllTime: allLeads.length,
+    hotAllTime: allLeads.filter(l => l.leadCategory === 'Hot').length,
+    introAllTime: new Set(allIntros.map(i => i.leadId)).size,
+  };
+}
+
 export async function getLeadAnalytics() {
   const db = await getDb();
   if (!db) return null;

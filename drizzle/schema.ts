@@ -54,6 +54,8 @@ export const leads = mysqlTable("leads", {
   biggestConcern: varchar("biggestConcern", { length: 100 }),
   startTimeframe: varchar("startTimeframe", { length: 100 }),
   wantsSchoolContact: varchar("wantsSchoolContact", { length: 10 }),
+  // Source tracking
+  source: varchar("source", { length: 100 }),
   preferredContact: varchar("preferredContact", { length: 50 }),
   contactConsentSchools: boolean("contactConsentSchools").default(true),
   contactConsentFinance: boolean("contactConsentFinance").default(false),
