@@ -655,7 +655,7 @@ export default function Quiz() {
             </h1>
 
             <p className="text-lg text-[oklch(0.65_0_0)] mb-4 leading-relaxed max-w-md mx-auto">
-              10 minutes. We'll identify your biggest barrier, your strongest asset, and give you a personalised training roadmap — not generic advice.
+              5 minutes. We'll identify your biggest barrier, your strongest asset, and give you a personalised training roadmap — not generic advice.
             </p>
             <p className="text-sm text-[oklch(0.5_0_0)] mb-10 leading-relaxed">
               Most people who take this assessment say the result describes them better than they expected. That's the point.
@@ -664,7 +664,7 @@ export default function Quiz() {
             {/* Trust stats */}
             <div className="grid grid-cols-3 gap-4 mb-10">
               {[
-                { icon: <Clock className="w-5 h-5" />, label: "10 minutes", sub: "to complete" },
+                { icon: <Clock className="w-5 h-5" />, label: "5 minutes", sub: "to complete" },
                 { icon: <Star className="w-5 h-5" />, label: "100% free", sub: "no payment ever" },
                 { icon: <Plane className="w-5 h-5" />, label: "AI roadmap", sub: "personalised to you" },
               ].map((item) => (

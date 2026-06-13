@@ -411,7 +411,7 @@ function QuizTeaserSection() {
     },
     {
       emoji: "🛫",
-      badge: "5–10 minutes",
+      badge: "5 minutes",
       badgeColor: "oklch(0.72 0.18 65)",
       tag: "Most popular",
       title: "Career Readiness Assessment",

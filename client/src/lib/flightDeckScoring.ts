@@ -183,7 +183,7 @@ function getBarrierAdvice(key: BarrierKey): string {
     age: "Age is rarely the barrier people think it is. Airlines hire pilots up to their mid-forties. The modular route is particularly well-suited to older candidates — you can train at your own pace and still qualify for a commercial career.",
     career_risk: "The risk calculation is real, and it deserves a serious answer. The key question is: what is the cost of not doing it? Many career changers find that the modular route lets them keep their income while training — reducing the financial risk significantly.",
     information_overload: "More information isn't the answer. A structured assessment that maps your specific situation to a specific path is. The goal isn't to know everything about pilot training — it's to know what the right next step is for you.",
-    unknown: "The most useful thing you can do right now is understand your specific situation clearly. A full career assessment takes 10 minutes and gives you a personalised roadmap built around your actual profile.",
+    unknown: "The most useful thing you can do right now is understand your specific situation clearly. A full career assessment takes 5 minutes and gives you a personalised roadmap built around your actual profile.",
   };
   return map[key];
 }

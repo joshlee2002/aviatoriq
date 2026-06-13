@@ -252,7 +252,7 @@ export default function LicenceQuizResults() {
               Get Your Full Pilot Blueprint
             </h2>
             <p className="text-[var(--color-navy)]/75 text-sm mb-5 max-w-md mx-auto">
-              Personalised readiness score, biggest obstacle, AI training roadmap, and matched flight schools — in under 10 minutes.
+              Personalised readiness score, biggest obstacle, AI training roadmap, and matched flight schools — in under 5 minutes.
             </p>
             <Link href="/quiz">
               <button className="w-full py-4 rounded-xl bg-[var(--color-navy)] text-white font-bold text-sm hover:bg-[var(--color-navy)]/90 transition-all active:scale-[0.98] flex items-center justify-center gap-2">

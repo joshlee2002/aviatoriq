@@ -244,7 +244,7 @@ export default function QuizHub() {
                 Take the Full Assessment
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <p className="text-sm mt-4" style={{ color: muted }}>Free · No registration · 5–10 minutes</p>
+              <p className="text-sm mt-4" style={{ color: muted }}>Free · No registration · 5 minutes</p>
             </div>
           </div>
         </div>
