@@ -27,4 +27,4 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-Sitemap: https://pilotpath-mchvfa42.manus.space/sitemap.xml
+Sitemap: https://aviatoriq.com/sitemap.xml

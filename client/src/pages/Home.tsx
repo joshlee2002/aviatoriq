@@ -18,128 +18,168 @@ import {
   Clock,
   Target,
   Zap,
-  MapPin,
   Activity,
-  FlaskConical,
+  MapPin,
   Stethoscope,
+  GraduationCap,
+  Compass,
+  BarChart3,
+  Lock,
+  Award,
+  BadgeCheck,
+  Quote,
 } from "lucide-react";
 
+// ─── Shared style tokens ──────────────────────────────────────────────────────
+const surface = "oklch(0.14 0.08 250)";
+const surfaceHover = "oklch(0.17 0.08 250)";
+const border = "oklch(1 0 0 / 0.08)";
+const borderHover = "oklch(1 0 0 / 0.16)";
+const muted = "oklch(0.55 0.04 240)";
+const brandGradient = "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0.18 200))";
+const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
+
+// ─── Hero ─────────────────────────────────────────────────────────────────────
 function HeroSection() {
   const statsQuery = trpc.platform.stats.useQuery(undefined, { staleTime: 60_000 });
   const stats = statsQuery.data;
 
   return (
-    <section className="bg-hero relative overflow-hidden">
-      {/* Radar grid overlay */}
+    <section
+      className="relative overflow-hidden"
+      style={{
+        background: "linear-gradient(160deg, oklch(0.10 0.10 255) 0%, oklch(0.14 0.12 248) 50%, oklch(0.12 0.08 240) 100%)",
+        minHeight: "auto",
+        display: "flex",
+        alignItems: "center",
+      }}
+    >
+      {/* Grid overlay */}
       <div
-        className="absolute inset-0 opacity-[0.06]"
+        className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage:
-            "linear-gradient(oklch(1 0 0 / 1) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 1) 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
+          backgroundImage: "linear-gradient(oklch(1 0 0 / 0.03) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 0.03) 1px, transparent 1px)",
+          backgroundSize: "56px 56px",
         }}
       />
-      {/* Radial glow */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-10" style={{ background: "radial-gradient(circle, oklch(0.65 0.18 230) 0%, transparent 70%)", transform: "translate(30%, -30%)" }} />
+      {/* Radial glows */}
+      <div className="absolute top-0 right-0 pointer-events-none" style={{ width: "700px", height: "700px", background: "radial-gradient(circle, oklch(0.45 0.18 240 / 0.12) 0%, transparent 65%)", transform: "translate(25%, -25%)" }} />
+      <div className="absolute bottom-0 left-0 pointer-events-none" style={{ width: "500px", height: "500px", background: "radial-gradient(circle, oklch(0.6 0.18 200 / 0.07) 0%, transparent 65%)", transform: "translate(-25%, 25%)" }} />
 
-      <div className="container relative py-20 md:py-28">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container relative w-full py-12 md:py-20 lg:py-28">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-          {/* Left: Identity-led copy */}
+          {/* Left: Copy */}
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 border border-white/20 rounded-full text-white/80 text-xs font-semibold uppercase tracking-wider mb-6 animate-fade-in">
-              <Activity className="w-3 h-3 text-[var(--color-cta)]" />
+            <div
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6 animate-fade-in"
+              style={{ background: "oklch(1 0 0 / 0.07)", border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.75 0.04 240)" }}
+            >
+              <div className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
               Free · No registration · 5 minutes
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-display font-bold text-white mb-5 leading-[1.1] animate-fade-in-up">
-              Could You Actually{" "}
-              <span className="text-[var(--color-cta)]">Become An Airline Pilot?</span>
+
+            <h1
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-display font-bold text-white mb-4 leading-[1.1] animate-fade-in-up"
+              style={{ letterSpacing: "-0.02em" }}
+            >
+              Your Personalised{" "}
+              <span style={{ background: ctaGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+                Pilot Training Roadmap
+              </span>
             </h1>
-            <p className="text-lg text-white/75 mb-8 leading-relaxed animate-fade-in-up delay-100">
-              Most people never find out — not because they can't, but because they don't know what's really standing in the way. AviatorIQ identifies your biggest barrier and gives you a personalised roadmap to overcome it.
+
+            <p className="text-base md:text-lg mb-6 leading-relaxed animate-fade-in-up delay-100" style={{ color: "oklch(0.72 0.04 240)" }}>
+              Answer 5 questions about your age, budget, and availability. Get a specific, data-driven training roadmap — your exact route, realistic costs, timeline, and matched flight schools. No generic advice.
             </p>
+
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-200">
-              <Link href="/quiz" className="btn-cta text-base px-8 py-4">
-                Find My Biggest Barrier
+              <Link
+                href="/roadmap"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white no-underline transition-all"
+                style={{ background: ctaGradient, boxShadow: "0 0 30px oklch(0.72 0.18 65 / 0.35)" }}
+              >
+                Generate My Roadmap
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link href="/quiz/flight-deck" className="btn-outline text-base px-6 py-4 border-white/30 text-white hover:bg-white/10">
-                2-min quick check
+              <Link
+                href="/quiz"
+                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-base font-semibold text-white/80 no-underline transition-all hover:text-white"
+                style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.15)" }}
+              >
+                Career Readiness Assessment
               </Link>
             </div>
+
             <div className="flex flex-wrap items-center gap-5 mt-8 animate-fade-in-up delay-300">
-              {[
-                "No registration required",
-                "Real flight schools matched",
-                "Free PDF blueprint",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-2 text-white/60 text-sm">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[var(--color-cta)] flex-shrink-0" />
+              {["Free · No registration", "Real 2026 costs & timelines", "Matched flight schools"].map((item) => (
+                <div key={item} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.6 0.04 240)" }}>
+                  <CheckCircle2 className="w-3.5 h-3.5 flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }} />
                   {item}
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right: Live stats / instrument panel */}
-          <div className="animate-fade-in-up delay-200">
-            <div className="glass-card-strong p-6 rounded-2xl">
+          {/* Right: Roadmap preview panel — hidden on small mobile, shown from lg */}
+          <div className="hidden lg:block animate-fade-in-up delay-200">
+            <div
+              className="rounded-2xl p-6"
+              style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.12)", backdropFilter: "blur(20px)" }}
+            >
               <div className="flex items-center justify-between mb-5">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-[var(--color-cockpit-green)] animate-pulse" />
-                  <span className="text-white/60 text-xs font-semibold uppercase tracking-widest">AviatorIQ Platform</span>
+                  <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                  <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "oklch(0.55 0.04 240)" }}>Roadmap Generator</span>
                 </div>
-                <span className="text-white/60 text-xs">Live</span>
+                <span className="text-xs px-2 py-0.5 rounded-full font-bold" style={{ background: "oklch(0.72 0.18 65 / 0.2)", color: "oklch(0.85 0.15 65)" }}>Free</span>
               </div>
 
-              {/* Live platform stats */}
+              {/* Stats */}
               <div className="grid grid-cols-3 gap-2.5 mb-5">
                 {[
-                  {
-                    label: "Assessments Taken",
-                    value: stats ? (stats.totalAssessments >= 1000 ? `${(stats.totalAssessments / 1000).toFixed(1)}k` : stats.totalAssessments.toString()) : "—",
-                    icon: <Users className="w-3.5 h-3.5" />,
-                    color: "oklch(0.65 0.18 230)",
-                  },
-                  {
-                    label: "Avg IQ Score",
-                    value: stats ? `${stats.avgScore}` : "—",
-                    icon: <Activity className="w-3.5 h-3.5" />,
-                    color: "oklch(0.72 0.18 65)",
-                  },
-                  {
-                    label: "Top Barrier",
-                    value: stats ? (stats.mostCommonBarrier.length > 12 ? stats.mostCommonBarrier.slice(0, 12) + "…" : stats.mostCommonBarrier) : "Finance",
-                    icon: <TrendingUp className="w-3.5 h-3.5" />,
-                    color: "oklch(0.78 0.18 25)",
-                  },
+                  { label: "Assessments", value: stats && stats.totalAssessments > 0 ? (stats.totalAssessments >= 1000 ? `${(stats.totalAssessments / 1000).toFixed(1)}k` : stats.totalAssessments.toString()) : "Live", icon: <Users className="w-3.5 h-3.5" />, color: "oklch(0.65 0.18 230)" },
+                  { label: "Avg IQ Score", value: stats && stats.avgScore > 0 ? `${stats.avgScore}` : "Ready", icon: <Activity className="w-3.5 h-3.5" />, color: "oklch(0.72 0.18 65)" },
+                  { label: "Top Barrier", value: stats ? (stats.mostCommonBarrier.length > 10 ? stats.mostCommonBarrier.slice(0, 10) + "…" : stats.mostCommonBarrier) : "Finance", icon: <TrendingUp className="w-3.5 h-3.5" />, color: "oklch(0.78 0.18 25)" },
                 ].map((tile) => (
-                  <div key={tile.label} className="stat-tile">
+                  <div
+                    key={tile.label}
+                    className="rounded-xl p-3 transition-all"
+                    style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.08)" }}
+                  >
                     <div className="flex items-center gap-1.5 mb-1.5" style={{ color: tile.color }}>
                       {tile.icon}
-                      <span className="text-[10px] font-semibold uppercase tracking-wider text-white/60 leading-tight">{tile.label}</span>
+                      <span className="text-[10px] font-semibold uppercase tracking-wider leading-tight" style={{ color: "oklch(0.55 0.04 240)" }}>{tile.label}</span>
                     </div>
-                    <div className="text-white font-display font-bold text-base">{tile.value}</div>
+                    <div className="text-white font-display font-bold text-sm">{tile.value}</div>
                   </div>
                 ))}
               </div>
 
-              {/* Platform tools */}
-              <div className="space-y-2">
-                <div className="text-white/30 text-[10px] font-semibold uppercase tracking-widest mb-2">Decision Tools</div>
+              {/* Tool links */}
+              <div className="space-y-1.5">
+                <div className="text-[10px] font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.4 0.04 240)" }}>All Decision Tools</div>
                 {[
+                  { label: "Pilot Roadmap Generator", href: "/roadmap", badge: "New" },
                   { label: "Career Readiness Assessment", href: "/quiz", badge: "Most popular" },
-                  { label: "Integrated vs Modular Tool", href: "/tools/integrated-vs-modular", badge: null },
-                  { label: "Class 1 Medical Check", href: "/tools/class-1-medical-check", badge: null },
                   { label: "Training Cost Calculator", href: "/calculator", badge: null },
+                  { label: "Quiz Hub — 7 Quizzes", href: "/quizzes", badge: null },
                 ].map((tool) => (
-                  <Link key={tool.href} href={tool.href}
-                    className="flex items-center justify-between px-3 py-2 rounded-lg transition-all no-underline group"
-                    style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.08)" }}
+                  <Link
+                    key={tool.href}
+                    href={tool.href}
+                    className="flex items-center justify-between px-3 py-2.5 rounded-lg transition-all no-underline group"
+                    style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.07)" }}
+                    onMouseEnter={e => (e.currentTarget.style.background = "oklch(1 0 0 / 0.08)")}
+                    onMouseLeave={e => (e.currentTarget.style.background = "oklch(1 0 0 / 0.04)")}
                   >
-                    <span className="text-white/70 text-xs font-medium group-hover:text-white transition-colors">{tool.label}</span>
+                    <span className="text-xs font-medium text-white/70 group-hover:text-white transition-colors">{tool.label}</span>
                     <div className="flex items-center gap-2">
-                      {tool.badge && <span className="text-[10px] px-1.5 py-0.5 rounded-full font-bold" style={{ background: "oklch(0.72 0.18 65 / 0.25)", color: "oklch(0.85 0.15 65)" }}>{tool.badge}</span>}
+                      {tool.badge && (
+                        <span className="text-[10px] px-1.5 py-0.5 rounded-full font-bold" style={{ background: "oklch(0.72 0.18 65 / 0.2)", color: "oklch(0.85 0.15 65)" }}>
+                          {tool.badge}
+                        </span>
+                      )}
                       <ArrowRight className="w-3 h-3 text-white/30 group-hover:text-white/70 transition-colors" />
                     </div>
                   </Link>
@@ -154,71 +194,86 @@ function HeroSection() {
   );
 }
 
+// ─── Social proof bar ─────────────────────────────────────────────────────────
+function SocialProofBar() {
+  return (
+    <div style={{ background: "oklch(0.12 0.08 250)", borderBottom: "1px solid oklch(1 0 0 / 0.08)" }}>
+      <div className="container py-4">
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+          {[
+            { value: "16+", label: "UK & international schools listed" },
+            { value: "24", label: "In-depth training guides" },
+            { value: "7", label: "Interactive quizzes" },
+            { value: "Free", label: "Always, no registration" },
+          ].map((stat) => (
+            <div key={stat.label} className="flex items-center gap-3">
+              <span className="font-display font-bold text-lg" style={{ background: brandGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+                {stat.value}
+              </span>
+              <span className="text-sm" style={{ color: muted }}>{stat.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── How It Works ─────────────────────────────────────────────────────────────
 function HowItWorksSection() {
   const steps = [
-    {
-      number: "01",
-      icon: <BookOpen className="w-6 h-6" />,
-      title: "Answer a few honest questions",
-      description:
-        "Tell us about your goal, your situation, and — most importantly — what's been stopping you. The assessment takes around 5 minutes and is completely free.",
-    },
-    {
-      number: "02",
-      icon: <Target className="w-6 h-6" />,
-      title: "Discover your biggest barrier",
-      description:
-        "Get your AviatorIQ Score and a clear, honest answer to the question you've been avoiding: what is actually standing between you and the cockpit?",
-    },
-    {
-      number: "03",
-      icon: <Building2 className="w-6 h-6" />,
-      title: "Get a personalised roadmap",
-      description:
-        "Receive an AI-powered training roadmap that addresses your specific barrier, recommends the right route, and matches you with real flight schools.",
-    },
+    { number: "01", icon: <BookOpen className="w-6 h-6" />, title: "Answer a few honest questions", description: "Tell us about your goal, your situation, and — most importantly — what's been stopping you. The assessment takes around 5 minutes and is completely free.", color: "oklch(0.45 0.18 240)" },
+    { number: "02", icon: <Target className="w-6 h-6" />, title: "Discover your biggest barrier", description: "Get your AviatorIQ Score and a clear, honest answer to the question you've been avoiding: what is actually standing between you and the cockpit?", color: "oklch(0.72 0.18 65)" },
+    { number: "03", icon: <Building2 className="w-6 h-6" />, title: "Get a personalised roadmap", description: "Receive a training roadmap that addresses your specific barrier, recommends the right route, and matches you with real flight schools.", color: "oklch(0.6 0.18 200)" },
   ];
 
   return (
-    <section className="section bg-white">
+    <section className="section" style={{ background: "oklch(0.11 0.08 252)" }}>
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-[var(--color-navy)] mb-4">
-            How AviatorIQ works
+        <div className="text-center mb-8 md:mb-14">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4" style={{ background: "oklch(0.45 0.18 240 / 0.12)", border: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.65 0.18 240)" }}>
+            How it works
+          </div>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
+            Three steps from curiosity to a clear plan
           </h2>
-          <p className="text-lg text-[var(--color-muted-foreground)] max-w-2xl mx-auto">
-            Three steps from curiosity to a clear pilot training plan.
+          <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: muted }}>
+            No generic advice. No information overload. Just a clear answer to the question you actually need answered.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {steps.map((step, i) => (
             <div
               key={step.number}
-              className="relative p-8 rounded-2xl border border-[var(--color-border)] bg-white hover:shadow-lg transition-shadow duration-300"
-              style={{ animationDelay: `${i * 100}ms` }}
+              className="relative p-5 md:p-8 rounded-2xl transition-all duration-300"
+              style={{ background: surface, border: `1px solid ${border}` }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
             >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 bg-[var(--color-primary-light)] rounded-xl flex items-center justify-center text-[var(--color-primary)] flex-shrink-0">
+              <div className="flex items-start gap-4 mb-5">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: `${step.color.replace(")", " / 0.15)")}`, color: step.color }}>
                   {step.icon}
                 </div>
-                <span className="text-4xl font-display font-bold text-[var(--color-border)] leading-none mt-1">
+                <span className="text-5xl font-display font-black leading-none mt-1" style={{ color: "oklch(1 0 0 / 0.06)" }}>
                   {step.number}
                 </span>
               </div>
-              <h3 className="text-xl font-display font-bold text-[var(--color-navy)] mb-3">
-                {step.title}
-              </h3>
-              <p className="text-[var(--color-muted-foreground)] leading-relaxed">
-                {step.description}
-              </p>
+              <h3 className="text-xl font-display font-bold text-white mb-3">{step.title}</h3>
+              <p className="leading-relaxed text-sm" style={{ color: muted }}>{step.description}</p>
               {i < steps.length - 1 && (
-                <ChevronRight className="hidden md:block absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 text-[var(--color-border)] z-10" />
+                <ChevronRight className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 z-10" style={{ color: "oklch(1 0 0 / 0.15)" }} />
               )}
             </div>
           ))}
         </div>
+
         <div className="text-center mt-10">
-          <Link href="/quiz" className="btn-primary">
+          <Link
+            href="/quiz"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white no-underline transition-all"
+            style={{ background: brandGradient, boxShadow: "0 0 24px oklch(0.45 0.18 240 / 0.3)" }}
+          >
             Start your assessment
             <ArrowRight className="w-4 h-4" />
           </Link>
@@ -228,144 +283,222 @@ function HowItWorksSection() {
   );
 }
 
-function QuizTeaserSection() {
+// ─── Why Trust Us ─────────────────────────────────────────────────────────────
+function ExpertCredibilitySection() {
+  const pillars = [
+    {
+      icon: <Shield className="w-6 h-6" />,
+      title: "No sponsored rankings",
+      body: "Flight schools are listed on merit, not because they pay us. Every school in our directory is included because it's a legitimate, CAA or EASA approved training provider.",
+      color: "oklch(0.45 0.18 240)",
+    },
+    {
+      icon: <BookOpen className="w-6 h-6" />,
+      title: "Researched from primary sources",
+      body: "Every cost figure, timeline, and requirement in our guides is sourced from the CAA, EASA, and direct school prospectuses — not copied from other websites. We cite our sources.",
+      color: "oklch(0.6 0.18 200)",
+    },
+    {
+      icon: <Clock className="w-6 h-6" />,
+      title: "Updated for 2026",
+      body: "Pilot training costs and requirements change. We review and update every guide at least twice a year. Every page shows its last-updated date so you know what you're reading.",
+      color: "oklch(0.72 0.18 65)",
+    },
+    {
+      icon: <Target className="w-6 h-6" />,
+      title: "Built for one decision",
+      body: "AviatorIQ exists for one purpose: to help you decide whether and how to become a pilot. We don't sell courses, we don't run a flight school. We have no incentive to mislead you.",
+      color: "oklch(0.55 0.18 145)",
+    },
+  ];
+
   return (
-    <section className="section bg-[var(--color-muted)]">
+    <section className="section" style={{ background: "oklch(0.11 0.08 252)" }}>
       <div className="container">
-        <div className="text-center mb-10">
-          <span className="inline-block px-3 py-1 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-semibold uppercase tracking-wider mb-4">
-            Three assessments
-          </span>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-[var(--color-navy)] mb-4">
-            Find your answer in minutes
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4" style={{ background: "oklch(0.72 0.18 65 / 0.12)", border: "1px solid oklch(0.72 0.18 65 / 0.25)", color: "oklch(0.85 0.15 65)" }}>
+            <Shield className="w-3 h-3" />
+            Why trust AviatorIQ
+          </div>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
+            Honest information. No agenda.
           </h2>
-          <p className="text-lg text-[var(--color-muted-foreground)] max-w-2xl mx-auto">
-            Each assessment is designed to give you one thing: certainty. Not information — certainty. Pick the question you most need answered right now.
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: muted }}>
+            The internet is full of flight school websites dressed up as advice. AviatorIQ is independent. Here's what that means in practice.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {/* Flight Deck quiz — top of funnel */}
-          <div className="card-base p-6 flex flex-col">
-            <div className="text-3xl mb-4">✈️</div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-semibold text-[var(--color-primary)] uppercase tracking-wider">2 minutes</span>
-              <span className="text-xs bg-[var(--color-primary)] text-white px-2 py-0.5 rounded-full font-semibold">New</span>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {pillars.map((p) => (
+            <div
+              key={p.title}
+              className="p-5 md:p-7 rounded-2xl flex gap-5 transition-all duration-300"
+              style={{ background: surface, border: `1px solid ${border}` }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+            >
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: `${p.color.replace(")", " / 0.15)")}`, color: p.color }}>
+                {p.icon}
+              </div>
+              <div>
+                <h3 className="font-display font-bold text-white mb-2">{p.title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: muted }}>{p.body}</p>
+              </div>
             </div>
-            <h3 className="text-lg font-display font-bold text-[var(--color-navy)] mb-2">
-              What's Really Stopping You?
-            </h3>
-            <p className="text-[var(--color-muted-foreground)] text-sm mb-5 flex-1 leading-relaxed">
-              7 questions. Find your biggest barrier, your strongest asset, and your Flight Potential Score — no sign-up needed.
-            </p>
-            <Link href="/quiz/flight-deck" className="btn-primary text-sm text-center no-underline">
-              Find out now →
-            </Link>
-          </div>
-          {/* Licence quiz */}
-          <div className="card-base p-6 flex flex-col">
-            <div className="text-3xl mb-4">🎓</div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-semibold text-[var(--color-primary)] uppercase tracking-wider">2–3 minutes</span>
-            </div>
-            <h3 className="text-lg font-display font-bold text-[var(--color-navy)] mb-2">
-              Which Pilot Licence Is Right For You?
-            </h3>
-            <p className="text-[var(--color-muted-foreground)] text-sm mb-5 flex-1 leading-relaxed">
-              PPL, ATPL, LAPL or CPL? Answer 8 questions and get a personalised licence recommendation with cost estimates.
-            </p>
-            <Link href="/quiz/licence" className="btn-secondary text-sm text-center no-underline">
-              Find my licence →
-            </Link>
-          </div>
-          {/* Career assessment */}
-          <div className="card-base p-6 flex flex-col border-[var(--color-primary)]/30 bg-[var(--color-primary)]/5">
-            <div className="text-3xl mb-4">🛫</div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-semibold text-[var(--color-primary)] uppercase tracking-wider">5–10 minutes</span>
-              <span className="text-xs bg-[var(--color-cta)] text-white px-2 py-0.5 rounded-full font-semibold">Most popular</span>
-            </div>
-            <h3 className="text-lg font-display font-bold text-[var(--color-navy)] mb-2">
-              Career Readiness Assessment
-            </h3>
-            <p className="text-[var(--color-muted-foreground)] text-sm mb-5 flex-1 leading-relaxed">
-              Your AviatorIQ Score, biggest barrier, AI training roadmap, matched flight schools, and a free PDF blueprint.
-            </p>
-            <Link href="/quiz" className="btn-cta text-sm text-center no-underline">
-              Take the assessment →
-            </Link>
-          </div>
+          ))}
+        </div>
+
+        {/* Pilot community note */}
+        <div className="mt-8 p-6 rounded-2xl text-center" style={{ background: "oklch(0.45 0.18 240 / 0.06)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+          <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>
+            <span className="font-semibold text-white">Are you a pilot or flight instructor?</span>{" "}
+            If you spot anything inaccurate in our guides, we want to know.{" "}
+            <a href="mailto:hello@aviatoriq.com" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>Email us</a>{" "}
+            and we'll review and credit you.
+          </p>
         </div>
       </div>
     </section>
   );
 }
 
-function TrainingRoutesSection() {
-  const routes = [
+// ─── Quiz Teaser ──────────────────────────────────────────────────────────────
+function QuizTeaserSection() {
+  const quizCards = [
     {
-      icon: "✈️",
-      title: "Airline Pilot Training",
-      description:
-        "The most common goal. Choose between Integrated ATPL (fastest, £80k–£120k) or Modular ATPL (flexible, £40k–£80k). Both lead to the same licence.",
-      cta: "Find airline training",
-      href: "/quiz",
+      emoji: "✈️",
+      badge: "2 minutes",
+      badgeColor: "oklch(0.45 0.18 240)",
+      tag: "New",
+      title: "What's Really Stopping You?",
+      desc: "7 questions. Find your biggest barrier, your strongest asset, and your Flight Potential Score — no sign-up needed.",
+      href: "/quiz/flight-deck",
+      cta: "Find out now",
+      variant: "secondary",
     },
     {
-      icon: "🛩️",
-      title: "Private Pilot Licence",
-      description:
-        "Fly for pleasure or personal travel. A PPL typically takes 6–18 months and costs £8,000–£15,000 depending on location and aircraft type.",
-      cta: "Explore PPL training",
-      href: "/quiz",
+      emoji: "🎓",
+      badge: "2–3 minutes",
+      badgeColor: "oklch(0.6 0.18 200)",
+      tag: null,
+      title: "Which Pilot Licence Is Right For You?",
+      desc: "PPL, ATPL, LAPL or CPL? Answer 8 questions and get a personalised licence recommendation with cost estimates.",
+      href: "/quiz/licence",
+      cta: "Find my licence",
+      variant: "secondary",
     },
     {
-      icon: "🏢",
-      title: "Corporate & Private Jets",
-      description:
-        "Fly high-net-worth individuals on business jets. Requires ATPL and type ratings. A growing sector with strong demand for experienced pilots.",
-      cta: "Learn about corporate",
+      emoji: "🛫",
+      badge: "5–10 minutes",
+      badgeColor: "oklch(0.72 0.18 65)",
+      tag: "Most popular",
+      title: "Career Readiness Assessment",
+      desc: "Your AviatorIQ Score, biggest barrier, AI training roadmap, matched flight schools, and a free PDF blueprint.",
       href: "/quiz",
-    },
-    {
-      icon: "🎓",
-      title: "Flight Instructor",
-      description:
-        "Teach others to fly while building your own hours. A popular route for modular students to build flight time before airline applications.",
-      cta: "Explore instructing",
-      href: "/quiz",
+      cta: "Take the assessment",
+      variant: "primary",
     },
   ];
 
   return (
-    <section className="section bg-sky-subtle">
+    <section className="section" style={{ background: "oklch(0.13 0.09 250)" }}>
+      <div className="container">
+        <div className="text-center mb-8 md:mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4" style={{ background: "oklch(0.72 0.18 65 / 0.12)", border: "1px solid oklch(0.72 0.18 65 / 0.25)", color: "oklch(0.85 0.15 65)" }}>
+            Three assessments
+          </div>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
+            Find your answer in minutes
+          </h2>
+          <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: muted }}>
+            Each assessment is designed to give you one thing: certainty. Not information — certainty. Pick the question you most need answered right now.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {quizCards.map((card) => (
+            <div
+              key={card.href}
+              className="flex flex-col p-5 md:p-7 rounded-2xl transition-all duration-300"
+              style={{
+                background: card.variant === "primary" ? "oklch(0.45 0.18 240 / 0.08)" : surface,
+                border: card.variant === "primary" ? "1px solid oklch(0.45 0.18 240 / 0.3)" : `1px solid ${border}`,
+              }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+            >
+              <div className="text-3xl mb-5">{card.emoji}</div>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: card.badgeColor }}>{card.badge}</span>
+                {card.tag && (
+                  <span className="text-xs px-2 py-0.5 rounded-full font-bold" style={{ background: card.variant === "primary" ? ctaGradient : "oklch(0.45 0.18 240 / 0.2)", color: "white" }}>
+                    {card.tag}
+                  </span>
+                )}
+              </div>
+              <h3 className="text-lg font-display font-bold text-white mb-3">{card.title}</h3>
+              <p className="text-sm leading-relaxed flex-1 mb-6" style={{ color: muted }}>{card.desc}</p>
+              <Link
+                href={card.href}
+                className="inline-flex items-center justify-center gap-2 py-3 px-5 rounded-xl text-sm font-bold text-white no-underline transition-all"
+                style={card.variant === "primary" ? { background: ctaGradient, boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.3)" } : { background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)" }}
+              >
+                {card.cta} →
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        {/* Quiz hub link */}
+        <div className="text-center mt-8">
+          <Link href="/quizzes" className="inline-flex items-center gap-2 text-sm font-semibold no-underline transition-all" style={{ color: "oklch(0.65 0.18 240)" }}>
+            Browse all 7 quizzes
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── Training Routes ──────────────────────────────────────────────────────────
+function TrainingRoutesSection() {
+  const routes = [
+    { icon: <Plane className="w-6 h-6" />, color: "oklch(0.45 0.18 240)", title: "Airline Pilot Training", description: "The most common goal. Choose between Integrated ATPL (fastest, £80k–£120k) or Modular ATPL (flexible, £40k–£80k). Both lead to the same licence.", cta: "Find airline training", href: "/quiz" },
+    { icon: <Compass className="w-6 h-6" />, color: "oklch(0.6 0.18 200)", title: "Private Pilot Licence", description: "Fly for pleasure or personal travel. A PPL typically takes 6–18 months and costs £8,000–£15,000 depending on location and aircraft type.", cta: "Explore PPL training", href: "/quiz" },
+    { icon: <Building2 className="w-6 h-6" />, color: "oklch(0.72 0.18 65)", title: "Corporate & Private Jets", description: "Fly high-net-worth individuals on business jets. Requires ATPL and type ratings. A growing sector with strong demand for experienced pilots.", cta: "Learn about corporate", href: "/quiz" },
+    { icon: <GraduationCap className="w-6 h-6" />, color: "oklch(0.65 0.2 300)", title: "Flight Instructor", description: "Teach others to fly while building your own hours. A popular route for modular students to build flight time before airline applications.", cta: "Explore instructing", href: "/quiz" },
+  ];
+
+  return (
+    <section className="section" style={{ background: "oklch(0.11 0.08 252)" }}>
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-[var(--color-navy)] mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
             Every type of pilot training, covered
           </h2>
-          <p className="text-lg text-[var(--color-muted-foreground)] max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: muted }}>
             Whether you want to fly for an airline, for pleasure, or as a career change, AviatorIQ helps you find the right route.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {routes.map((route) => (
             <div
               key={route.title}
-              className="card-base p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
+              className="p-5 md:p-7 rounded-2xl transition-all duration-300 group"
+              style={{ background: surface, border: `1px solid ${border}` }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
             >
-              <div className="text-3xl mb-4">{route.icon}</div>
-              <h3 className="text-xl font-display font-bold text-[var(--color-navy)] mb-3">
-                {route.title}
-              </h3>
-              <p className="text-[var(--color-muted-foreground)] mb-5 leading-relaxed">
-                {route.description}
-              </p>
-              <Link
-                href={route.href}
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-primary)] hover:gap-2.5 transition-all no-underline"
-              >
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ background: `${route.color.replace(")", " / 0.15)")}`, color: route.color }}>
+                {route.icon}
+              </div>
+              <h3 className="text-xl font-display font-bold text-white mb-3">{route.title}</h3>
+              <p className="leading-relaxed mb-5 text-sm" style={{ color: muted }}>{route.description}</p>
+              <Link href={route.href} className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline transition-all" style={{ color: route.color }}>
                 {route.cta}
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           ))}
@@ -375,79 +508,73 @@ function TrainingRoutesSection() {
   );
 }
 
+// ─── Cost Section ─────────────────────────────────────────────────────────────
 function CostSection() {
   const costData = [
-    { route: "Integrated ATPL", range: "£80,000 – £120,000", duration: "18–24 months", flag: "🇬🇧" },
-    { route: "Modular ATPL", range: "£40,000 – £80,000", duration: "3–5 years", flag: "🇬🇧" },
-    { route: "PPL Only", range: "£8,000 – £15,000", duration: "6–18 months", flag: "🇬🇧" },
+    { route: "Integrated ATPL", range: "£80,000 – £120,000", duration: "18–24 months", flag: "🇬🇧", color: "oklch(0.45 0.18 240)" },
+    { route: "Modular ATPL", range: "£40,000 – £80,000", duration: "3–5 years", flag: "🇬🇧", color: "oklch(0.6 0.18 200)" },
+    { route: "PPL Only", range: "£8,000 – £15,000", duration: "6–18 months", flag: "🇬🇧", color: "oklch(0.72 0.18 65)" },
   ];
 
   return (
-    <section className="section bg-white">
+    <section className="section" style={{ background: "oklch(0.13 0.09 250)" }}>
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-[var(--color-navy)] mb-5">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-5" style={{ letterSpacing: "-0.02em" }}>
               How much does pilot training cost?
             </h2>
-            <p className="text-lg text-[var(--color-muted-foreground)] mb-6 leading-relaxed">
+            <p className="text-lg mb-7 leading-relaxed" style={{ color: muted }}>
               Training costs vary significantly depending on your chosen route, country and school. Use our cost calculator for a personalised estimate, or take the assessment to see what suits your budget.
             </p>
             <div className="space-y-3 mb-8">
               {costData.map((item) => (
                 <div
                   key={item.route}
-                  className="flex items-center justify-between p-4 rounded-xl bg-[var(--color-muted)] border border-[var(--color-border)]"
+                  className="flex items-center justify-between p-4 rounded-xl transition-all"
+                  style={{ background: surface, border: `1px solid ${border}` }}
                 >
                   <div>
-                    <div className="font-display font-semibold text-[var(--color-navy)] text-sm">
-                      {item.flag} {item.route}
-                    </div>
-                    <div className="text-xs text-[var(--color-muted-foreground)] mt-0.5">
-                      {item.duration}
-                    </div>
+                    <div className="font-display font-semibold text-white text-sm">{item.flag} {item.route}</div>
+                    <div className="text-xs mt-0.5" style={{ color: muted }}>{item.duration}</div>
                   </div>
-                  <div className="font-bold text-[var(--color-primary)] text-sm">{item.range}</div>
+                  <div className="font-bold text-sm" style={{ color: item.color }}>{item.range}</div>
                 </div>
               ))}
             </div>
             <div className="flex flex-wrap gap-3">
-              <Link href="/calculator" className="btn-primary text-sm">
+              <Link href="/calculator" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white no-underline" style={{ background: brandGradient }}>
                 <Calculator className="w-4 h-4" />
                 Cost Calculator
               </Link>
-              <Link href="/guides/pilot-training-costs" className="btn-outline text-sm">
+              <Link href="/guides/pilot-training-costs" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white/70 no-underline transition-all hover:text-white" style={{ background: "oklch(1 0 0 / 0.06)", border: `1px solid ${border}` }}>
                 Full Cost Guide
               </Link>
             </div>
           </div>
-          <div className="bg-[var(--color-navy)] rounded-2xl p-8 text-white">
+
+          <div className="rounded-2xl p-8" style={{ background: "oklch(0.16 0.10 248)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-[var(--color-cta)] rounded-xl flex items-center justify-center">
-                <TrendingUp className="w-5 h-5 text-[var(--color-cta-foreground)]" />
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: ctaGradient }}>
+                <TrendingUp className="w-5 h-5 text-white" />
               </div>
               <div>
-                <div className="font-display font-bold text-lg">Finance options available</div>
-                <div className="text-white/60 text-sm">For qualifying candidates</div>
+                <div className="font-display font-bold text-lg text-white">Finance options available</div>
+                <div className="text-sm" style={{ color: muted }}>For qualifying candidates</div>
               </div>
             </div>
-            <p className="text-white/80 mb-6 leading-relaxed">
-              Many flight schools offer finance plans, career development loans, and payment structures to help spread the cost of training. Take the assessment to see if you qualify.
+            <p className="mb-6 leading-relaxed text-sm" style={{ color: muted }}>
+              Many flight schools offer finance plans, career development loans, and payment structures to help spread the cost of training.
             </p>
             <ul className="space-y-3 mb-6">
-              {[
-                "Career development loans",
-                "School payment plans",
-                "Airline cadet sponsorships",
-                "Government-backed schemes",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2 text-white/80 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-[var(--color-cta)] flex-shrink-0" />
+              {["Career development loans", "School payment plans", "Airline cadet sponsorships", "Government-backed schemes"].map((item) => (
+                <li key={item} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.72 0.04 240)" }}>
+                  <CheckCircle2 className="w-4 h-4 flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }} />
                   {item}
                 </li>
               ))}
             </ul>
-            <Link href="/guides/finance-guide" className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-cta)] hover:gap-2.5 transition-all no-underline">
+            <Link href="/guides/finance-guide" className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline transition-all" style={{ color: "oklch(0.72 0.18 65)" }}>
               Read the finance guide
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -458,50 +585,41 @@ function CostSection() {
   );
 }
 
+// ─── School Matching ──────────────────────────────────────────────────────────
 function SchoolMatchingSection() {
   return (
-    <section className="section bg-sky-subtle">
+    <section className="section" style={{ background: "oklch(0.11 0.08 252)" }}>
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-[var(--color-navy)] mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
             Matched to the right flight school
           </h2>
-          <p className="text-lg text-[var(--color-muted-foreground)]">
+          <p className="text-lg" style={{ color: muted }}>
             After your assessment, AviatorIQ matches you with flight schools based on your country, training goal, budget and preferences — not random results.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-10">
           {[
-            {
-              icon: <Users className="w-6 h-6" />,
-              title: "Qualified matches only",
-              desc: "Schools are filtered by your training goal, budget range and location preferences.",
-            },
-            {
-              icon: <Shield className="w-6 h-6" />,
-              title: "Your data is protected",
-              desc: "We only share your details with schools you explicitly request introductions from.",
-            },
-            {
-              icon: <Clock className="w-6 h-6" />,
-              title: "No cold calls",
-              desc: "You control who contacts you. No unsolicited calls from schools you haven't chosen.",
-            },
+            { icon: <Users className="w-6 h-6" />, color: "oklch(0.45 0.18 240)", title: "Qualified matches only", desc: "Schools are filtered by your training goal, budget range and location preferences." },
+            { icon: <Lock className="w-6 h-6" />, color: "oklch(0.6 0.18 200)", title: "Your data is protected", desc: "We only share your details with schools you explicitly request introductions from." },
+            { icon: <Clock className="w-6 h-6" />, color: "oklch(0.72 0.18 65)", title: "No cold calls", desc: "You control who contacts you. No unsolicited calls from schools you haven't chosen." },
           ].map((item) => (
-            <div key={item.title} className="card-base p-6 text-center">
-              <div className="w-12 h-12 bg-[var(--color-primary-light)] rounded-xl flex items-center justify-center text-[var(--color-primary)] mx-auto mb-4">
+            <div key={item.title} className="p-7 rounded-2xl text-center" style={{ background: surface, border: `1px solid ${border}` }}>
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4" style={{ background: `${item.color.replace(")", " / 0.15)")}`, color: item.color }}>
                 {item.icon}
               </div>
-              <h3 className="font-display font-bold text-[var(--color-navy)] mb-2">{item.title}</h3>
-              <p className="text-sm text-[var(--color-muted-foreground)] leading-relaxed">{item.desc}</p>
+              <h3 className="font-display font-bold text-white mb-2">{item.title}</h3>
+              <p className="text-sm leading-relaxed" style={{ color: muted }}>{item.desc}</p>
             </div>
           ))}
         </div>
-        <div className="text-center">
-          <Link href="/schools" className="btn-outline mr-4">
+
+        <div className="text-center flex flex-wrap gap-4 justify-center">
+          <Link href="/schools" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white/70 no-underline transition-all hover:text-white" style={{ background: "oklch(1 0 0 / 0.06)", border: `1px solid ${border}` }}>
             Browse All Schools
           </Link>
-          <Link href="/quiz" className="btn-cta">
+          <Link href="/quiz" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white no-underline" style={{ background: ctaGradient, boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.25)" }}>
             Get Matched Now
             <ArrowRight className="w-4 h-4" />
           </Link>
@@ -511,46 +629,48 @@ function SchoolMatchingSection() {
   );
 }
 
+// ─── Guides ───────────────────────────────────────────────────────────────────
 function GuidesSection() {
   const guides = [
-    { title: "How to become a pilot", href: "/guides/how-to-become-a-pilot", time: "8 min read" },
-    { title: "Integrated vs Modular training", href: "/guides/integrated-vs-modular", time: "6 min read" },
-    { title: "What is a Class 1 Medical?", href: "/guides/class-1-medical", time: "5 min read" },
-    { title: "Airline pilot salary guide", href: "/guides/airline-pilot-salary", time: "7 min read" },
-    { title: "How long does training take?", href: "/guides/training-timeline", time: "5 min read" },
-    { title: "Can I afford pilot training?", href: "/guides/finance-guide", time: "6 min read" },
+    { title: "How to become a pilot", href: "/guides/how-to-become-a-pilot", time: "8 min read", icon: "🛫" },
+    { title: "Integrated vs Modular training", href: "/guides/integrated-vs-modular", time: "6 min read", icon: "⚖️" },
+    { title: "What is a Class 1 Medical?", href: "/guides/class-1-medical", time: "5 min read", icon: "🩺" },
+    { title: "Airline pilot salary guide", href: "/guides/airline-pilot-salary", time: "7 min read", icon: "💰" },
+    { title: "How long does training take?", href: "/guides/training-timeline", time: "5 min read", icon: "📅" },
+    { title: "Can I afford pilot training?", href: "/guides/finance-guide", time: "6 min read", icon: "🏦" },
   ];
 
   return (
-    <section className="section bg-white">
+    <section className="section" style={{ background: "oklch(0.13 0.09 250)" }}>
       <div className="container">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-10 gap-4">
           <div>
-            <h2 className="text-3xl font-display font-bold text-[var(--color-navy)] mb-2">
+            <h2 className="text-3xl font-display font-bold text-white mb-2" style={{ letterSpacing: "-0.02em" }}>
               Pilot training guides
             </h2>
-            <p className="text-[var(--color-muted-foreground)]">
-              Everything you need to understand before you start.
-            </p>
+            <p style={{ color: muted }}>Everything you need to understand before you start.</p>
           </div>
-          <Link href="/guides" className="btn-outline text-sm whitespace-nowrap">
+          <Link href="/guides" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white/70 no-underline transition-all hover:text-white whitespace-nowrap" style={{ background: "oklch(1 0 0 / 0.06)", border: `1px solid ${border}` }}>
             All guides →
           </Link>
         </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {guides.map((guide) => (
             <Link
               key={guide.href}
               href={guide.href}
-              className="group flex items-center justify-between p-5 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-primary)] hover:shadow-md transition-all duration-200 no-underline"
+              className="group flex items-center gap-4 p-5 rounded-xl transition-all duration-200 no-underline"
+              style={{ background: surface, border: `1px solid ${border}` }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
             >
-              <div>
-                <div className="font-display font-semibold text-[var(--color-navy)] group-hover:text-[var(--color-primary)] transition-colors text-sm mb-1">
-                  {guide.title}
-                </div>
-                <div className="text-xs text-[var(--color-muted-foreground)]">{guide.time}</div>
+              <span className="text-2xl flex-shrink-0">{guide.icon}</span>
+              <div className="flex-1 min-w-0">
+                <div className="font-display font-semibold text-white/90 group-hover:text-white transition-colors text-sm truncate">{guide.title}</div>
+                <div className="text-xs mt-0.5" style={{ color: muted }}>{guide.time}</div>
               </div>
-              <ChevronRight className="w-4 h-4 text-[var(--color-muted-foreground)] group-hover:text-[var(--color-primary)] transition-colors flex-shrink-0" />
+              <ChevronRight className="w-4 h-4 flex-shrink-0 transition-transform group-hover:translate-x-1" style={{ color: muted }} />
             </Link>
           ))}
         </div>
@@ -559,27 +679,52 @@ function GuidesSection() {
   );
 }
 
+// ─── CTA Banner ───────────────────────────────────────────────────────────────
 function CtaBannerSection() {
   return (
-    <section className="bg-hero py-16">
-      <div className="container text-center">
+    <section
+      className="py-20 relative overflow-hidden"
+      style={{ background: "linear-gradient(135deg, oklch(0.12 0.12 255) 0%, oklch(0.16 0.14 248) 50%, oklch(0.14 0.10 240) 100%)" }}
+    >
+      <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(oklch(1 0 0 / 0.025) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 0.025) 1px, transparent 1px)", backgroundSize: "56px 56px" }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" style={{ width: "600px", height: "600px", background: "radial-gradient(circle, oklch(0.45 0.18 240 / 0.15) 0%, transparent 65%)" }} />
+
+      <div className="container relative text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-            Stop Wondering. Start Knowing.
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6" style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.7 0.04 240)" }}>
+            <Zap className="w-3 h-3" style={{ color: "oklch(0.72 0.18 65)" }} />
+            Free · No registration required
+          </div>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
+            Your Roadmap Is 5 Questions Away.
           </h2>
-          <p className="text-lg text-white/80 mb-8">
-            The Career Readiness Assessment identifies your biggest barrier, names your strongest asset, and gives you a personalised roadmap with matched flight schools. Free. No registration required.
+          <p className="text-lg mb-8" style={{ color: "oklch(0.72 0.04 240)" }}>
+            Answer 5 questions. Get your specific training route, real 2026 costs, a step-by-step action plan, and matched flight schools. Free, no registration.
           </p>
-          <Link href="/quiz" className="btn-cta text-base px-10 py-4">
-            Find my biggest barrier
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/roadmap"
+              className="inline-flex items-center gap-2 px-10 py-4 rounded-xl text-base font-bold text-white no-underline transition-all"
+              style={{ background: ctaGradient, boxShadow: "0 0 40px oklch(0.72 0.18 65 / 0.4)" }}
+            >
+              Generate My Roadmap
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
+              href="/quiz"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-white/70 no-underline transition-all hover:text-white"
+              style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)" }}
+            >
+              Full Career Assessment
+            </Link>
+          </div>
         </div>
       </div>
     </section>
   );
 }
 
+// ─── Page ─────────────────────────────────────────────────────────────────────
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -596,14 +741,16 @@ export default function Home() {
           "potentialAction": {
             "@type": "SearchAction",
             "target": "https://aviatoriq.com/schools?search={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
+            "query-input": "required name=search_term_string",
+          },
         }}
       />
       <PublicNav />
       <main className="flex-1">
         <HeroSection />
+        <SocialProofBar />
         <HowItWorksSection />
+        <ExpertCredibilitySection />
         <QuizTeaserSection />
         <TrainingRoutesSection />
         <CostSection />

@@ -205,11 +205,11 @@ export default function Results() {
     return (
       <div className="min-h-screen flex flex-col">
         <PublicNav />
-        <main className="flex-1 flex items-center justify-center py-20">
+        <main className="flex-1 flex items-center justify-center py-20" style={{ background: "oklch(0.10 0.01 240)" }}>
           <div className="text-center">
-            <Loader2 className="w-10 h-10 animate-spin text-[var(--color-primary)] mx-auto mb-4" />
-            <p className="font-semibold text-[var(--color-navy)] mb-1">Calculating your AviatorIQ Score…</p>
-            <p className="text-sm text-[var(--color-muted-foreground)]">Analysing your profile and matching training routes.</p>
+            <Loader2 className="w-10 h-10 animate-spin mx-auto mb-4" style={{ color: "oklch(0.55 0.18 240)" }} />
+            <p className="font-semibold text-white mb-1">Calculating your AviatorIQ Score…</p>
+            <p className="text-sm" style={{ color: "oklch(0.6 0 0)" }}>Analysing your profile and matching training routes.</p>
           </div>
         </main>
         <PublicFooter />
@@ -239,7 +239,7 @@ export default function Results() {
   return (
     <div className="min-h-screen flex flex-col">
       <PublicNav />
-      <main className="flex-1" style={{ background: "oklch(0.97 0.015 240)" }}>
+      <main className="flex-1" style={{ background: "oklch(0.10 0.01 240)" }}>
 
         {/* ── Mission Control Hero ── */}
         <div className="bg-hero relative overflow-hidden">
@@ -371,19 +371,19 @@ export default function Results() {
                 { icon: <Clock className="w-4 h-4" />, label: "Timeline", value: estimatedTimeline },
                 { icon: <AlertTriangle className="w-4 h-4" />, label: "Biggest Risk", value: biggestRisk },
               ].filter(c => c.value).map((item, i) => (
-                <div key={i} className="card-base p-4 text-center">
-                  <div className="flex justify-center text-[var(--color-primary)] mb-2">{item.icon}</div>
-                  <p className="text-xs text-[var(--color-muted-foreground)] mb-1">{item.label}</p>
-                  <p className="text-sm font-bold text-[var(--color-navy)] leading-tight">{item.value}</p>
+                <div key={i} className="rounded-xl p-4 text-center" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
+                  <div className="flex justify-center mb-2" style={{ color: "oklch(0.65 0.18 240)" }}>{item.icon}</div>
+                  <p className="text-xs mb-1" style={{ color: "oklch(0.55 0 0)" }}>{item.label}</p>
+                  <p className="text-sm font-bold text-white leading-tight">{item.value}</p>
                 </div>
               ))}
             </div>
           )}
 
           {/* ── Matched Schools + Request Introduction ── */}
-          <div className="card-base p-6 animate-fade-in-up">
-            <h2 className="font-display font-bold text-[var(--color-navy)] text-xl mb-1">Matched Flight Schools</h2>
-            <p className="text-sm text-[var(--color-muted-foreground)] mb-5">
+          <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
+            <h2 className="font-display font-bold text-white text-xl mb-1">Matched Flight Schools</h2>
+            <p className="text-sm mb-5" style={{ color: "oklch(0.65 0 0)" }}>
               {matchedSchools.length > 0
                 ? `We found ${matchedSchools.length} school${matchedSchools.length !== 1 ? "s" : ""} that match your profile. Select up to 3 and request an introduction — we'll make the connection on your behalf.`
                 : "We're expanding our school network. Your profile has been saved and we'll notify you when suitable schools are added."}
@@ -399,12 +399,15 @@ export default function Results() {
                       <div
                         key={school.id}
                         onClick={() => !introSubmitted && !isDisabled && toggleSchool(school.id)}
-                        className={`border rounded-xl p-4 transition-all cursor-pointer ${
+                        className={`rounded-xl p-4 transition-all cursor-pointer ${
                           introSubmitted ? "opacity-60 cursor-default" :
-                          isSelected ? "border-[var(--color-primary)] bg-[var(--color-primary-light)] shadow-sm" :
-                          isDisabled ? "border-border opacity-50 cursor-not-allowed" :
-                          "border-border hover:border-[var(--color-primary)]/50 hover:bg-muted/30"
+                          isSelected ? "shadow-sm" :
+                          isDisabled ? "opacity-50 cursor-not-allowed" : ""
                         }`}
+                        style={{
+                          border: isSelected ? "1px solid oklch(0.55 0.18 240)" : "1px solid oklch(1 0 0 / 0.1)",
+                          background: isSelected ? "oklch(0.55 0.18 240 / 0.12)" : "oklch(1 0 0 / 0.04)"
+                        }}
                       >
                         <div className="flex items-start gap-3">
                           <Checkbox
@@ -416,20 +419,20 @@ export default function Results() {
                           />
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-2 flex-wrap">
-                              <h3 className="font-display font-semibold text-[var(--color-navy)] text-sm">{school.name}</h3>
+                              <h3 className="font-display font-semibold text-white text-sm">{school.name}</h3>
                               {school.financeAvailable === "yes" && (
-                                <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">Finance available</span>
+                                <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "oklch(0.45 0.18 145 / 0.2)", color: "oklch(0.75 0.18 145)" }}>Finance available</span>
                               )}
                             </div>
-                            <p className="text-xs text-[var(--color-muted-foreground)] mt-0.5 flex items-center gap-1">
+                            <p className="text-xs mt-0.5 flex items-center gap-1" style={{ color: "oklch(0.6 0 0)" }}>
                               <MapPin className="w-3 h-3" />
                               {[school.city, school.country].filter(Boolean).join(", ")}
                               {school.priceRange && ` · ${convertPriceString(school.priceRange, formatPrice)}${currency.code !== "GBP" ? ` (${currency.code})` : ""}`}
                             </p>
                             <div className="flex gap-1 mt-1.5 flex-wrap">
-                              {school.integratedAtpl && <span className="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full">Integrated ATPL</span>}
-                              {school.modularAtpl && <span className="text-xs bg-purple-50 text-purple-600 px-2 py-0.5 rounded-full">Modular ATPL</span>}
-                              {school.ppl && <span className="text-xs bg-green-50 text-green-600 px-2 py-0.5 rounded-full">PPL</span>}
+                              {school.integratedAtpl && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "oklch(0.55 0.18 240 / 0.15)", color: "oklch(0.75 0.15 240)" }}>Integrated ATPL</span>}
+                              {school.modularAtpl && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "oklch(0.55 0.18 290 / 0.15)", color: "oklch(0.75 0.15 290)" }}>Modular ATPL</span>}
+                              {school.ppl && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "oklch(0.45 0.18 145 / 0.15)", color: "oklch(0.75 0.18 145)" }}>PPL</span>}
                             </div>
                           </div>
                         </div>
@@ -440,7 +443,7 @@ export default function Results() {
 
                 {!introSubmitted ? (
                   <div className="space-y-3">
-                    <p className="text-xs text-[var(--color-muted-foreground)]">
+                    <p className="text-xs" style={{ color: "oklch(0.6 0 0)" }}>
                       {selectedSchoolIds.length === 0
                         ? "Select up to 3 schools above to request introductions."
                         : `${selectedSchoolIds.length} school${selectedSchoolIds.length !== 1 ? "s" : ""} selected. We'll send your qualified profile to them — no cold calls, no spam.`}
@@ -459,23 +462,23 @@ export default function Results() {
                     </Button>
                   </div>
                 ) : (
-                  <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-xl">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <div className="flex items-center gap-3 p-4 rounded-xl" style={{ background: "oklch(0.45 0.18 145 / 0.15)", border: "1px solid oklch(0.45 0.18 145 / 0.3)" }}>
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: "oklch(0.75 0.18 145)" }} />
                     <div>
-                      <p className="font-semibold text-green-800 text-sm">Introduction requests sent!</p>
-                      <p className="text-xs text-green-700 mt-0.5">We've notified the selected schools. Expect to hear back within 2–3 business days.</p>
+                      <p className="font-semibold text-sm" style={{ color: "oklch(0.85 0.1 145)" }}>Introduction requests sent!</p>
+                      <p className="text-xs mt-0.5" style={{ color: "oklch(0.7 0.08 145)" }}>We've notified the selected schools. Expect to hear back within 2–3 business days.</p>
                     </div>
                   </div>
                 )}
               </>
             ) : (
               <div className="text-center py-6">
-                <Globe className="w-8 h-8 text-[var(--color-muted-foreground)] mx-auto mb-3" />
-                <p className="font-display font-semibold text-[var(--color-navy)] mb-1">Expanding our school network</p>
-                <p className="text-sm text-[var(--color-muted-foreground)]">
+                <Globe className="w-8 h-8 mx-auto mb-3" style={{ color: "oklch(0.5 0 0)" }} />
+                <p className="font-display font-semibold text-white mb-1">Expanding our school network</p>
+                <p className="text-sm" style={{ color: "oklch(0.6 0 0)" }}>
                   We are still adding schools that match your profile. Your results have been saved.
                 </p>
-                <Link href="/schools" className="inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-primary)] mt-3">
+                <Link href="/schools" className="inline-flex items-center gap-1 text-sm font-semibold mt-3" style={{ color: "oklch(0.65 0.18 240)" }}>
                   Browse all schools <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
@@ -484,37 +487,36 @@ export default function Results() {
 
           {/* ── Next Action ── */}
           {nextAction && (
-            <div className="card-base p-5 border-[var(--color-primary)] bg-[var(--color-primary-light)] animate-fade-in-up flex items-start gap-4">
-              <div className="w-9 h-9 rounded-full bg-[var(--color-primary)] flex items-center justify-center flex-shrink-0">
+            <div className="rounded-2xl p-5 animate-fade-in-up flex items-start gap-4" style={{ background: "oklch(0.55 0.18 240 / 0.1)", border: "1px solid oklch(0.55 0.18 240 / 0.25)" }}>
+              <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "oklch(0.55 0.18 240)" }}>
                 <CheckCircle2 className="w-5 h-5 text-white" />
               </div>
               <div>
-                <p className="text-xs font-semibold text-[var(--color-primary)] uppercase tracking-wider mb-1">Your Next Action</p>
-                <p className="font-semibold text-[var(--color-navy)]">{nextAction}</p>
+                <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: "oklch(0.65 0.18 240)" }}>Your Next Action</p>
+                <p className="font-semibold text-white">{nextAction}</p>
               </div>
             </div>
           )}
 
           {/* ── 5-Dimension Score Card ── */}
           {dimensions && labels && (
-            <div className="card-base p-6 animate-fade-in-up">
-              <h2 className="font-display font-bold text-[var(--color-navy)] text-lg mb-1">Your 5-Dimension AviatorIQ Breakdown</h2>
-              <p className="text-sm text-[var(--color-muted-foreground)] mb-5">Each dimension is scored 0–100 based on your answers.</p>
+            <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
+              <h2 className="font-display font-bold text-white text-lg mb-1">Your 5-Dimension AviatorIQ Breakdown</h2>
+              <p className="text-sm mb-5" style={{ color: "oklch(0.6 0 0)" }}>Each dimension is scored 0–100 based on your answers.</p>
               <div className="space-y-4">
                 {dimensionConfig.map(({ key, label, icon, color }) => (
                   <div key={key} className="space-y-1.5">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <span className={color}>{icon}</span>
-                        <span className="text-sm font-semibold text-[var(--color-navy)]">{label}</span>
+                        <span className="text-sm font-semibold text-white">{label}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${
-                          dimensions[key] >= 70 ? "bg-green-100 text-green-700" :
-                          dimensions[key] >= 45 ? "bg-amber-100 text-amber-700" :
-                          "bg-red-100 text-red-700"
-                        }`}>{labels[key]}</span>
-                        <span className="text-sm font-bold text-[var(--color-navy)] w-8 text-right">{dimensions[key]}</span>
+                        <span className="text-xs font-medium px-2 py-0.5 rounded-full" style={{
+                          background: dimensions[key] >= 70 ? "oklch(0.45 0.18 145 / 0.2)" : dimensions[key] >= 45 ? "oklch(0.72 0.18 65 / 0.2)" : "oklch(0.55 0.18 25 / 0.2)",
+                          color: dimensions[key] >= 70 ? "oklch(0.75 0.18 145)" : dimensions[key] >= 45 ? "oklch(0.82 0.18 65)" : "oklch(0.75 0.18 25)"
+                        }}>{labels[key]}</span>
+                        <span className="text-sm font-bold text-white w-8 text-right">{dimensions[key]}</span>
                       </div>
                     </div>
                     <AnimatedBar score={dimensions[key]} />
@@ -526,17 +528,17 @@ export default function Results() {
 
           {/* ── Finance nudge ── */}
           {lead.wantsFinanceInfo === "Yes" && (
-            <div className="card-base p-6 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200 animate-fade-in-up">
+            <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(0.45 0.18 145 / 0.1)", border: "1px solid oklch(0.45 0.18 145 / 0.25)" }}>
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-                  <PoundSterling className="w-5 h-5 text-green-600" />
+                <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "oklch(0.45 0.18 145 / 0.3)" }}>
+                  <PoundSterling className="w-5 h-5" style={{ color: "oklch(0.75 0.18 145)" }} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-display font-bold text-green-900 mb-1">You may qualify for pilot training finance</h3>
-                  <p className="text-sm text-green-800 mb-3">
+                  <h3 className="font-display font-bold text-white mb-1">You may qualify for pilot training finance</h3>
+                  <p className="text-sm mb-3" style={{ color: "oklch(0.7 0 0)" }}>
                     Many aspiring pilots fund their training through specialist aviation loans, career development loans, school payment plans, and airline cadet sponsorships.
                   </p>
-                  <Link href="/guides/finance-guide" className="inline-flex items-center gap-1 text-sm font-semibold text-green-700">
+                  <Link href="/guides/finance-guide" className="inline-flex items-center gap-1 text-sm font-semibold" style={{ color: "oklch(0.75 0.18 145)" }}>
                     Read the Finance Guide <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
@@ -680,18 +682,18 @@ export default function Results() {
           ) : null}
 
           {/* ── Finance Referral Card ── */}
-          <div className="card-base p-6 border-2 border-[var(--color-primary)] bg-gradient-to-br from-[var(--color-primary-light)] to-white animate-fade-in-up">
+          <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(0.55 0.18 240 / 0.08)", border: "1px solid oklch(0.55 0.18 240 / 0.2)" }}>
             <div className="flex items-start gap-4 mb-4">
-              <div className="w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "oklch(0.55 0.18 240)" }}>
                 <PoundSterling className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h3 className="font-display font-bold text-[var(--color-navy)] text-lg mb-1">Get free finance guidance</h3>
-                <p className="text-sm text-[var(--color-muted-foreground)]">Funding is the biggest barrier for most aspiring pilots. Leave your details and we will connect you with specialist aviation finance guidance — no obligation, no hard sell.</p>
+                <h3 className="font-display font-bold text-white text-lg mb-1">Get free finance guidance</h3>
+                <p className="text-sm" style={{ color: "oklch(0.65 0 0)" }}>Funding is the biggest barrier for most aspiring pilots. Leave your details and we will connect you with specialist aviation finance guidance — no obligation, no hard sell.</p>
               </div>
             </div>
             {financeSubmitted ? (
-              <div className="flex items-center gap-2 text-green-700 bg-green-50 rounded-lg p-3">
+              <div className="flex items-center gap-2 rounded-lg p-3" style={{ background: "oklch(0.45 0.18 145 / 0.15)", color: "oklch(0.75 0.18 145)" }}>
                 <CheckCircle2 className="w-5 h-5" />
                 <span className="text-sm font-semibold">Received — we will be in touch shortly.</span>
               </div>
@@ -703,28 +705,28 @@ export default function Results() {
               <div className="space-y-3">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <label className="block text-xs font-semibold text-[var(--color-navy)] mb-1">Your name *</label>
-                    <input value={financeName} onChange={e => setFinanceName(e.target.value)} placeholder="Full name" className="w-full border border-[var(--color-border)] rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]" />
+                    <label className="block text-xs font-semibold text-white mb-1">Your name *</label>
+                    <input value={financeName} onChange={e => setFinanceName(e.target.value)} placeholder="Full name" className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white placeholder-[oklch(0.45_0_0)]" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)" }} />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-[var(--color-navy)] mb-1">Email address *</label>
-                    <input value={financeEmail} onChange={e => setFinanceEmail(e.target.value)} placeholder="you@example.com" type="email" className="w-full border border-[var(--color-border)] rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]" />
+                    <label className="block text-xs font-semibold text-white mb-1">Email address *</label>
+                    <input value={financeEmail} onChange={e => setFinanceEmail(e.target.value)} placeholder="you@example.com" type="email" className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white placeholder-[oklch(0.45_0_0)]" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)" }} />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-[var(--color-navy)] mb-1">Phone (optional)</label>
-                    <input value={financePhone} onChange={e => setFinancePhone(e.target.value)} placeholder="07xxx xxxxxx" className="w-full border border-[var(--color-border)] rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]" />
+                    <label className="block text-xs font-semibold text-white mb-1">Phone (optional)</label>
+                    <input value={financePhone} onChange={e => setFinancePhone(e.target.value)} placeholder="07xxx xxxxxx" className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white placeholder-[oklch(0.45_0_0)]" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)" }} />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-[var(--color-navy)] mb-1">Training route</label>
-                    <select value={financeRoute} onChange={e => setFinanceRoute(e.target.value as any)} className="w-full border border-[var(--color-border)] rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]">
+                    <label className="block text-xs font-semibold text-white mb-1">Training route</label>
+                    <select value={financeRoute} onChange={e => setFinanceRoute(e.target.value as any)} className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white" style={{ background: "oklch(0.14 0.01 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
                       <option value="unsure">Not sure yet</option>
                       <option value="integrated">Integrated ATPL</option>
                       <option value="modular">Modular</option>
                     </select>
                   </div>
                   <div className="sm:col-span-2">
-                    <label className="block text-xs font-semibold text-[var(--color-navy)] mb-1">Estimated training budget</label>
-                    <select value={financeBudget} onChange={e => setFinanceBudget(e.target.value as any)} className="w-full border border-[var(--color-border)] rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]">
+                    <label className="block text-xs font-semibold text-white mb-1">Estimated training budget</label>
+                    <select value={financeBudget} onChange={e => setFinanceBudget(e.target.value as any)} className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white" style={{ background: "oklch(0.14 0.01 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
                       <option value="unsure">Not sure yet</option>
                       <option value="under50k">Under £50,000</option>
                       <option value="50k_80k">£50,000 – £80,000</option>
@@ -735,7 +737,7 @@ export default function Results() {
                 </div>
                 <label className="flex items-start gap-2 cursor-pointer">
                   <input type="checkbox" checked={financeConsent} onChange={e => setFinanceConsent(e.target.checked)} className="mt-0.5" />
-                  <span className="text-xs text-[var(--color-muted-foreground)]">I consent to being contacted with finance guidance. I understand this is not financial advice.</span>
+                  <span className="text-xs" style={{ color: "oklch(0.6 0 0)" }}>I consent to being contacted with finance guidance. I understand this is not financial advice.</span>
                 </label>
                 <button
                   onClick={() => {
@@ -751,15 +753,17 @@ export default function Results() {
             )}
           </div>
           {/* ── Final CTA ── */}
-          <div className="card-base p-6 bg-[var(--color-navy)] text-white text-center">
-            <Clock className="w-8 h-8 text-[var(--color-cta)] mx-auto mb-3" />
-            <h3 className="font-display font-bold text-xl mb-2">Ready to take the next step?</h3>
-            <p className="text-white/70 text-sm mb-5">Browse all flight schools in our directory or use the cost calculator to plan your budget.</p>
+          <div className="rounded-2xl p-8 text-center" style={{ background: "linear-gradient(135deg, oklch(0.55 0.18 240 / 0.15), oklch(0.45 0.2 260 / 0.1))", border: "1px solid oklch(0.55 0.18 240 / 0.25)" }}>
+            <div className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5" style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.62 0.2 45))", boxShadow: "0 0 30px oklch(0.72 0.18 65 / 0.3)" }}>
+              <Plane className="w-7 h-7 text-white" />
+            </div>
+            <h3 className="font-display font-bold text-white text-2xl mb-3">Your roadmap is ready.</h3>
+            <p className="text-sm mb-6 max-w-md mx-auto" style={{ color: "oklch(0.65 0 0)" }}>Share your results, browse matched schools, or use the cost calculator to plan your budget in detail.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/schools" className="btn-cta text-sm">
-                Browse all schools <ArrowRight className="w-4 h-4" />
+              <Link href="/schools" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-white text-sm font-bold transition-all hover:scale-[1.02]" style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.62 0.2 45))", boxShadow: "0 4px 20px oklch(0.72 0.18 65 / 0.3)" }}>
+                Browse matched schools <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link href="/calculator" className="btn-outline text-sm border-white/30 text-white hover:bg-white/10">
+              <Link href="/calculator" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all hover:bg-white/10" style={{ border: "1px solid oklch(1 0 0 / 0.2)", color: "oklch(0.75 0 0)" }}>
                 Cost calculator
               </Link>
             </div>

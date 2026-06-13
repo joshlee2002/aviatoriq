@@ -1,31 +1,32 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Plane, ChevronDown } from "lucide-react";
+import { Menu, X, Plane, ChevronDown, Zap } from "lucide-react";
 import { useCurrency, SUPPORTED_CURRENCIES } from "@/contexts/CurrencyContext";
 
 const navLinks = [
-  { label: "Quizzes", href: "/quiz/flight-deck" },
+  { label: "Quizzes", href: "/quizzes" },
   { label: "Flight Schools", href: "/schools" },
   { label: "Guides", href: "/guides" },
+  { label: "Pilot Stories", href: "/stories" },
+  { label: "Jobs", href: "/jobs" },
   { label: "About", href: "/about" },
 ];
 
 const toolLinks = [
-  { label: "Cost Calculator", href: "/calculator", desc: "Estimate your total training cost" },
-  { label: "Integrated vs Modular", href: "/tools/integrated-vs-modular", desc: "Find the right training route" },
-  { label: "Medical Readiness Check", href: "/tools/class-1-medical-check", desc: "Assess your Class 1 eligibility" },
+  { label: "Pilot Roadmap Generator", href: "/roadmap", desc: "Get your personalised training roadmap", icon: "🗺️" },
+  { label: "Cost Calculator", href: "/calculator", desc: "Estimate your total training cost", icon: "🧮" },
+  { label: "Integrated vs Modular", href: "/tools/integrated-vs-modular", desc: "Find the right training route", icon: "⚖️" },
+  { label: "Medical Readiness Check", href: "/tools/class-1-medical-check", desc: "Assess your Class 1 eligibility", icon: "🩺" },
 ];
 
 const FOR_SCHOOLS = { label: "For Schools", href: "/partner" };
 
 // ─── Currency Switcher ────────────────────────────────────────────────────────
-
 function CurrencySwitcher() {
   const { currency, setCurrency } = useCurrency();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  // Close on outside click
   useEffect(() => {
     function handler(e: MouseEvent) {
       if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
@@ -39,18 +40,26 @@ function CurrencySwitcher() {
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium text-[var(--color-muted-foreground)] hover:text-[var(--color-foreground)] hover:bg-[var(--color-muted)] transition-colors border border-[var(--color-border)]"
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors"
+        style={{ color: "oklch(0.7 0.04 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
         aria-label="Change currency"
         aria-expanded={open}
       >
         <span>{currency.flag}</span>
-        <span className="font-semibold text-[var(--color-navy)]">{currency.code}</span>
+        <span className="font-semibold text-white/80">{currency.code}</span>
         <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-150 ${open ? "rotate-180" : ""}`} />
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-1.5 w-52 bg-white rounded-xl border border-[var(--color-border)] shadow-lg z-50 py-1 animate-fade-in">
-          <p className="text-xs text-[var(--color-muted-foreground)] px-3 py-2 border-b border-[var(--color-border)]">
+        <div
+          className="absolute right-0 top-full mt-2 w-52 rounded-xl z-50 py-1 animate-fade-in"
+          style={{
+            background: "oklch(0.14 0.08 250)",
+            border: "1px solid oklch(1 0 0 / 0.12)",
+            boxShadow: "0 16px 40px oklch(0 0 0 / 0.5)",
+          }}
+        >
+          <p className="text-xs px-3 py-2 font-medium uppercase tracking-wider" style={{ color: "oklch(0.55 0.04 240)", borderBottom: "1px solid oklch(1 0 0 / 0.08)" }}>
             Select currency
           </p>
           {SUPPORTED_CURRENCIES.map((c) => (
@@ -60,13 +69,14 @@ function CurrencySwitcher() {
               onClick={() => { setCurrency(c.code); setOpen(false); }}
               className={`w-full flex items-center gap-2.5 px-3 py-2 text-sm transition-colors ${
                 currency.code === c.code
-                  ? "bg-[var(--color-primary-light)] text-[var(--color-primary)] font-semibold"
-                  : "text-[var(--color-foreground)] hover:bg-[var(--color-muted)]"
+                  ? "text-[var(--color-primary)]"
+                  : "text-white/70 hover:text-white"
               }`}
+              style={currency.code === c.code ? { background: "oklch(0.45 0.18 240 / 0.15)" } : {}}
             >
               <span className="text-base">{c.flag}</span>
               <span className="font-medium">{c.code}</span>
-              <span className="text-[var(--color-muted-foreground)] text-xs ml-auto">{c.name}</span>
+              <span className="text-xs ml-auto" style={{ color: "oklch(0.5 0.04 240)" }}>{c.name}</span>
             </button>
           ))}
         </div>
@@ -76,13 +86,13 @@ function CurrencySwitcher() {
 }
 
 // ─── Main Nav ─────────────────────────────────────────────────────────────────
-
 export default function PublicNav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [toolsOpen, setToolsOpen] = useState(false);
   const toolsRef = useRef<HTMLDivElement>(null);
   const [location] = useLocation();
   const { currency, setCurrency } = useCurrency();
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     function handler(e: MouseEvent) {
@@ -92,58 +102,97 @@ export default function PublicNav() {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
+  useEffect(() => {
+    function onScroll() { setScrolled(window.scrollY > 10); }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const navStyle: React.CSSProperties = {
+    background: scrolled ? "oklch(0.10 0.08 250 / 0.92)" : "oklch(0.10 0.08 250 / 0.75)",
+    backdropFilter: "blur(20px)",
+    WebkitBackdropFilter: "blur(20px)",
+    borderBottom: "1px solid oklch(1 0 0 / 0.08)",
+    transition: "background 0.3s ease",
+  };
+
+  const isActive = (href: string) => location === href;
+
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[var(--color-border)] shadow-sm">
+    <nav className="sticky top-0 z-50" style={navStyle}>
       <div className="container">
         <div className="flex items-center justify-between h-16">
+
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-display font-bold text-xl text-[var(--color-navy)] no-underline">
-            <div className="w-8 h-8 bg-[var(--color-primary)] rounded-lg flex items-center justify-center">
+          <Link href="/" className="flex items-center gap-2.5 font-display font-bold text-xl text-white no-underline group">
+            <div
+              className="w-8 h-8 rounded-lg flex items-center justify-center transition-all group-hover:scale-105"
+              style={{ background: "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0.18 200))" }}
+            >
               <Plane className="w-4 h-4 text-white" strokeWidth={2.5} />
             </div>
-            AviatorIQ
+            <span>AviatorIQ</span>
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-0.5">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors no-underline ${
-                  location === link.href
-                    ? "bg-[var(--color-primary-light)] text-[var(--color-primary)]"
-                    : "text-[var(--color-muted-foreground)] hover:text-[var(--color-foreground)] hover:bg-[var(--color-muted)]"
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all no-underline ${
+                  isActive(link.href)
+                    ? "text-white bg-white/10"
+                    : "text-white/60 hover:text-white hover:bg-white/8"
                 }`}
+                style={isActive(link.href) ? {} : {}}
               >
                 {link.label}
               </Link>
             ))}
+
             {/* Tools dropdown */}
             <div ref={toolsRef} className="relative">
               <button
                 type="button"
                 onClick={() => setToolsOpen(!toolsOpen)}
-                className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  toolLinks.some(t => location === t.href)
-                    ? "bg-[var(--color-primary-light)] text-[var(--color-primary)]"
-                    : "text-[var(--color-muted-foreground)] hover:text-[var(--color-foreground)] hover:bg-[var(--color-muted)]"
+                className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                  toolLinks.some(t => isActive(t.href))
+                    ? "text-white bg-white/10"
+                    : "text-white/60 hover:text-white hover:bg-white/8"
                 }`}
               >
                 Tools
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-150 ${toolsOpen ? "rotate-180" : ""}`} />
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${toolsOpen ? "rotate-180" : ""}`} />
               </button>
+
               {toolsOpen && (
-                <div className="absolute left-0 top-full mt-1.5 w-64 bg-white rounded-xl border border-[var(--color-border)] shadow-lg z-50 py-1 animate-fade-in">
+                <div
+                  className="absolute left-0 top-full mt-2 w-72 rounded-xl z-50 py-2 animate-fade-in"
+                  style={{
+                    background: "oklch(0.12 0.08 250)",
+                    border: "1px solid oklch(1 0 0 / 0.12)",
+                    boxShadow: "0 20px 60px oklch(0 0 0 / 0.6)",
+                  }}
+                >
+                  <p className="text-xs px-4 py-2 font-semibold uppercase tracking-widest" style={{ color: "oklch(0.45 0.04 240)" }}>
+                    Decision Tools
+                  </p>
                   {toolLinks.map((t) => (
                     <Link
                       key={t.href}
                       href={t.href}
                       onClick={() => setToolsOpen(false)}
-                      className="block px-4 py-3 hover:bg-[var(--color-muted)] transition-colors no-underline"
+                      className="flex items-start gap-3 px-4 py-3 transition-colors no-underline group/item"
+                      style={{ borderRadius: "0" }}
+                      onMouseEnter={e => (e.currentTarget.style.background = "oklch(1 0 0 / 0.05)")}
+                      onMouseLeave={e => (e.currentTarget.style.background = "transparent")}
                     >
-                      <div className="text-sm font-semibold text-[var(--color-navy)]">{t.label}</div>
-                      <div className="text-xs text-[var(--color-muted-foreground)] mt-0.5">{t.desc}</div>
+                      <span className="text-lg mt-0.5 flex-shrink-0">{t.icon}</span>
+                      <div>
+                        <div className="text-sm font-semibold text-white/90 group-hover/item:text-white transition-colors">{t.label}</div>
+                        <div className="text-xs mt-0.5" style={{ color: "oklch(0.5 0.04 240)" }}>{t.desc}</div>
+                      </div>
                     </Link>
                   ))}
                 </div>
@@ -151,23 +200,34 @@ export default function PublicNav() {
             </div>
           </div>
 
-          {/* CTA + currency */}
+          {/* Right: CTA + currency */}
           <div className="hidden md:flex items-center gap-2">
             <CurrencySwitcher />
             <Link
               href={FOR_SCHOOLS.href}
-              className="px-4 py-2 rounded-lg text-sm font-semibold border border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary-light)] transition-colors no-underline"
+              className="px-4 py-2 rounded-lg text-sm font-semibold transition-all no-underline"
+              style={{ color: "white", border: "1px solid oklch(1 0 0 / 0.15)" }}
+              onMouseEnter={e => (e.currentTarget.style.background = "oklch(1 0 0 / 0.08)")}
+              onMouseLeave={e => (e.currentTarget.style.background = "transparent")}
             >
               For Schools
             </Link>
-            <Link href="/quiz" className="btn-cta text-sm py-2 px-5">
-              Take Free Assessment
+            <Link
+              href="/quiz"
+              className="inline-flex items-center gap-1.5 px-5 py-2 rounded-lg text-sm font-bold text-white no-underline transition-all"
+              style={{
+                background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))",
+                boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.3)",
+              }}
+            >
+              <Zap className="w-3.5 h-3.5" />
+              Free Assessment
             </Link>
           </div>
 
           {/* Mobile toggle */}
           <button
-            className="md:hidden p-2 rounded-lg text-[var(--color-muted-foreground)] hover:bg-[var(--color-muted)] transition-colors"
+            className="md:hidden p-2 rounded-lg text-white/60 hover:text-white transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -177,52 +237,61 @@ export default function PublicNav() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden border-t border-[var(--color-border)] py-3 animate-fade-in">
+          <div
+            className="md:hidden py-3 animate-fade-in"
+            style={{ borderTop: "1px solid oklch(1 0 0 / 0.08)" }}
+          >
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="block px-4 py-3 text-sm font-medium text-[var(--color-foreground)] hover:bg-[var(--color-muted)] rounded-lg no-underline"
+                className="block px-4 py-3 text-sm font-medium rounded-lg no-underline transition-colors"
+                style={{ color: isActive(link.href) ? "white" : "oklch(0.7 0.04 240)" }}
               >
                 {link.label}
               </Link>
             ))}
             <div className="px-4 py-2">
-              <p className="text-xs text-[var(--color-muted-foreground)] mb-1 font-medium uppercase tracking-wide">Tools</p>
+              <p className="text-xs font-semibold uppercase tracking-widest" style={{ color: "oklch(0.45 0.04 240)" }}>Tools</p>
             </div>
             {toolLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="block px-4 py-2.5 text-sm font-medium text-[var(--color-foreground)] hover:bg-[var(--color-muted)] rounded-lg no-underline"
+                className="flex items-center gap-2 px-4 py-2.5 text-sm font-medium rounded-lg no-underline transition-colors"
+                style={{ color: "oklch(0.7 0.04 240)" }}
               >
+                <span>{link.icon}</span>
                 {link.label}
               </Link>
             ))}
             <Link
               href={FOR_SCHOOLS.href}
               onClick={() => setMobileOpen(false)}
-              className="block px-4 py-3 text-sm font-semibold text-[var(--color-primary)] hover:bg-[var(--color-primary-light)] rounded-lg no-underline"
+              className="block px-4 py-3 text-sm font-semibold rounded-lg no-underline"
+              style={{ color: "oklch(0.7 0.04 240)" }}
             >
               For Schools
             </Link>
 
             {/* Mobile currency picker */}
             <div className="px-4 pt-3 pb-2">
-              <p className="text-xs text-[var(--color-muted-foreground)] mb-2 font-medium uppercase tracking-wide">Currency</p>
+              <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.45 0.04 240)" }}>Currency</p>
               <div className="flex flex-wrap gap-2">
                 {SUPPORTED_CURRENCIES.map((c) => (
                   <button
                     key={c.code}
                     type="button"
                     onClick={() => { setCurrency(c.code); setMobileOpen(false); }}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm border transition-colors ${
-                      currency.code === c.code
-                        ? "border-[var(--color-primary)] bg-[var(--color-primary-light)] text-[var(--color-primary)] font-semibold"
-                        : "border-[var(--color-border)] text-[var(--color-foreground)] hover:bg-[var(--color-muted)]"
-                    }`}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm transition-colors"
+                    style={{
+                      border: `1px solid ${currency.code === c.code ? "oklch(0.45 0.18 240)" : "oklch(1 0 0 / 0.12)"}`,
+                      background: currency.code === c.code ? "oklch(0.45 0.18 240 / 0.15)" : "transparent",
+                      color: currency.code === c.code ? "oklch(0.7 0.18 240)" : "oklch(0.7 0.04 240)",
+                      fontWeight: currency.code === c.code ? "700" : "500",
+                    }}
                   >
                     <span>{c.flag}</span>
                     <span>{c.code}</span>
@@ -235,8 +304,10 @@ export default function PublicNav() {
               <Link
                 href="/quiz"
                 onClick={() => setMobileOpen(false)}
-                className="btn-cta w-full justify-center text-sm"
+                className="flex items-center justify-center gap-2 w-full py-3 rounded-lg text-sm font-bold text-white no-underline"
+                style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))" }}
               >
+                <Zap className="w-4 h-4" />
                 Take Free Assessment
               </Link>
             </div>
