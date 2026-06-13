@@ -34,18 +34,18 @@ function HeroSection() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 border border-white/20 rounded-full text-white/80 text-sm font-medium mb-6 animate-fade-in">
             <Star className="w-3.5 h-3.5 text-[var(--color-cta)]" />
-            Free pilot career assessment — takes 5 minutes
+            Free pilot career assessment — find your biggest barrier
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 animate-fade-in-up">
-            Could You Actually{" "}
-            <span className="text-[var(--color-cta)]">Become An Airline Pilot?</span>
+            What's Really Stopping You{" "}
+            <span className="text-[var(--color-cta)]">Becoming A Pilot?</span>
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed animate-fade-in-up delay-100">
-            Get a personalised readiness score, training roadmap and matched flight schools — in 5 minutes. Completely free.
+            Most aspiring pilots already know what they want. What they need is clarity on what's actually standing in the way — and what to do about it. AviatorIQ identifies your biggest barrier and gives you a personalised plan to overcome it.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-200">
             <Link href="/quiz" className="btn-cta text-base px-8 py-4">
-              Take the Free Assessment
+              Find My Biggest Barrier
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link href="/schools" className="btn-outline text-base px-8 py-4 border-white/40 text-white hover:bg-white/10">
@@ -55,8 +55,8 @@ function HeroSection() {
           <div className="flex flex-wrap items-center gap-6 mt-10 animate-fade-in-up delay-300">
             {[
               "No registration required",
-              "Personalised AI roadmap",
-              "Matched to real schools",
+              "Identifies your real barrier",
+              "Personalised next action",
             ].map((item) => (
               <div key={item} className="flex items-center gap-2 text-white/70 text-sm">
                 <CheckCircle2 className="w-4 h-4 text-[var(--color-cta)]" />
@@ -75,23 +75,23 @@ function HowItWorksSection() {
     {
       number: "01",
       icon: <BookOpen className="w-6 h-6" />,
-      title: "Answer a few questions",
+      title: "Answer a few honest questions",
       description:
-        "Tell us about your pilot goal, budget, background and timeline. The assessment takes around 5 minutes and is completely free.",
+        "Tell us about your goal, your situation, and — most importantly — what's been stopping you. The assessment takes around 5 minutes and is completely free.",
     },
     {
       number: "02",
       icon: <Target className="w-6 h-6" />,
-      title: "Get your personalised roadmap",
+      title: "Discover your biggest barrier",
       description:
-        "Receive an AI-powered pilot training roadmap tailored to your profile — including recommended route, estimated costs and readiness score.",
+        "Get your AviatorIQ Score and a clear, honest answer to the question you've been avoiding: what is actually standing between you and the cockpit?",
     },
     {
       number: "03",
       icon: <Building2 className="w-6 h-6" />,
-      title: "Compare schools and routes",
+      title: "Get a personalised roadmap",
       description:
-        "See flight schools that match your country, budget and training preferences. Request introductions to the ones that interest you.",
+        "Receive an AI-powered training roadmap that addresses your specific barrier, recommends the right route, and matches you with real flight schools.",
     },
   ];
 
@@ -150,13 +150,13 @@ function QuizTeaserSection() {
       <div className="container">
         <div className="text-center mb-10">
           <span className="inline-block px-3 py-1 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-semibold uppercase tracking-wider mb-4">
-            Three ways to find your path
+            Three assessments
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-[var(--color-navy)] mb-4">
-            Start wherever you are
+            Find your answer in minutes
           </h2>
           <p className="text-lg text-[var(--color-muted-foreground)] max-w-2xl mx-auto">
-            From a 2-minute curiosity check to a full career assessment — pick the one that fits where you are right now.
+            Each assessment is designed to give you one thing: certainty. Not information — certainty. Pick the question you most need answered right now.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -168,10 +168,10 @@ function QuizTeaserSection() {
               <span className="text-xs bg-[var(--color-primary)] text-white px-2 py-0.5 rounded-full font-semibold">New</span>
             </div>
             <h3 className="text-lg font-display font-bold text-[var(--color-navy)] mb-2">
-              How Close Are You To The Flight Deck?
+              What's Really Stopping You?
             </h3>
             <p className="text-[var(--color-muted-foreground)] text-sm mb-5 flex-1 leading-relaxed">
-              6 quick questions. Get your Flight Potential Score, biggest barrier, and recommended route — no sign-up needed.
+              7 questions. Find your biggest barrier, your strongest asset, and your Flight Potential Score — no sign-up needed.
             </p>
             <Link href="/quiz/flight-deck" className="btn-primary text-sm text-center no-underline">
               Find out now →
@@ -204,7 +204,7 @@ function QuizTeaserSection() {
               Career Readiness Assessment
             </h3>
             <p className="text-[var(--color-muted-foreground)] text-sm mb-5 flex-1 leading-relaxed">
-              AviatorIQ Score, AI training roadmap, matched flight schools, and a free PDF blueprint.
+              Your AviatorIQ Score, biggest barrier, AI training roadmap, matched flight schools, and a free PDF blueprint.
             </p>
             <Link href="/quiz" className="btn-cta text-sm text-center no-underline">
               Take the assessment →
@@ -481,13 +481,13 @@ function CtaBannerSection() {
       <div className="container text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-            Find Out If You Could Actually Become An Airline Pilot
+            Stop Wondering. Start Knowing.
           </h2>
           <p className="text-lg text-white/80 mb-8">
-            Take the free 5-minute assessment. Get your AviatorIQ Score, a personalised training roadmap, and matched flight schools — completely free, no registration required.
+            The Career Readiness Assessment identifies your biggest barrier, names your strongest asset, and gives you a personalised roadmap with matched flight schools. Free. No registration required.
           </p>
           <Link href="/quiz" className="btn-cta text-base px-10 py-4">
-            Take the free assessment
+            Find my biggest barrier
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
@@ -498,7 +498,7 @@ function CtaBannerSection() {
 
 export default function Home() {
   useEffect(() => {
-    document.title = "AviatorIQ – Free Pilot Career Assessment & Training Guide";
+    document.title = "AviatorIQ – What's Really Stopping You Becoming A Pilot?";
   }, []);
 
   return (

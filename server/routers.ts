@@ -116,29 +116,32 @@ export const appRouter = router({
           preferredRoute: input.preferredRoute,
           country: input.country,
           startTimeframe: input.startTimeframe,
+          biggestConcern: input.biggestConcern,
         });
         const { score, category, intentScore } = scoreResult;
 
         // Generate AI summary (non-blocking, best-effort)
         let aiSummary: string | undefined;
         try {
-          const summaryPrompt = `You are an aviation training advisor. Summarise this pilot training enquiry in 2-3 sentences for an admin dashboard. Be concise and factual. Use cautious language.
+          const summaryPrompt = `You are an aviation training advisor. Summarise this pilot training enquiry in 2-3 sentences for an admin dashboard. Lead with their biggest stated barrier, then their commitment level, then their readiness. Be concise and factual.
 
 Lead details:
 - Name: ${input.fullName}
 - Country: ${input.country ?? "Unknown"}
 - Age: ${input.age ?? "Unknown"}
-- Goal: ${input.pilotGoal ?? "Unknown"}
-- Seriousness: ${input.seriousness ?? "Unknown"}
-- Route: ${input.preferredRoute ?? "Unknown"}
+- Pilot goal: ${input.pilotGoal ?? "Unknown"}
+- Commitment level (what they've done): ${input.spokenToSchool ?? "Unknown"}
+- How often they think about it: ${input.seriousness ?? "Unknown"}
+- Biggest stated barrier: ${input.biggestConcern ?? "Unknown"}
+- Training route: ${input.preferredRoute ?? "Unknown"}
 - Budget: ${input.budgetRange ?? "Unknown"}
-- Funding: ${input.fundingMethod ?? "Unknown"}
+- Funding method: ${input.fundingMethod ?? "Unknown"}
 - Start timeframe: ${input.startTimeframe ?? "Unknown"}
-- Concern: ${input.biggestConcern ?? "Unknown"}
-- Medical: ${input.class1Medical ?? "Unknown"}
+- Medical confidence: ${input.class1Medical ?? "Unknown"}
+- Flying experience: ${input.flyingExperience ?? "Unknown"}
 - Written answer: ${input.writtenAnswer ?? "None"}
 
-Lead score: ${score}/100 (${category})`;
+AviatorIQ Score: ${score}/100 (${category})`;
 
           const response = await invokeLLM({
             messages: [
@@ -154,7 +157,7 @@ Lead score: ${score}/100 (${category})`;
 
         // Compute lead value (admin-only, not shown to user)
         const leadValue = (() => {
-          if (score >= 75 && (input.startTimeframe === 'Immediately' || input.startTimeframe === 'Within 3 months' || input.startTimeframe === 'Within 6 months')) return 'High';
+          if (score >= 75 && (input.startTimeframe === "As soon as possible — I'm ready now" || input.startTimeframe === 'Within the next 12 months' || input.startTimeframe === 'Immediately' || input.startTimeframe === 'Within 3 months' || input.startTimeframe === 'Within 6 months')) return 'High';
           if (score >= 45) return 'Medium';
           return 'Low';
         })();
@@ -239,6 +242,7 @@ Lead score: ${score}/100 (${category})`;
           preferredRoute: lead.preferredRoute,
           country: lead.country,
           startTimeframe: lead.startTimeframe,
+          biggestConcern: lead.biggestConcern,
         });
         return { lead, matchedSchools, dimensions: scoreResult.dimensions, labels: scoreResult.labels, nextAction: scoreResult.nextAction, biggestRisk: scoreResult.biggestRisk, estimatedCostRange: scoreResult.estimatedCostRange, estimatedTimeline: scoreResult.estimatedTimeline, recommendedRoute: scoreResult.recommendedRoute };
       }),
@@ -264,41 +268,48 @@ Lead score: ${score}/100 (${category})`;
 
         const prompt = `You are an expert aviation career advisor. Generate a personalised pilot training roadmap for this candidate. Format your response as structured JSON.
 
+IMPORTANT: This roadmap must be insight-led. Start with the candidate's biggest barrier and address it directly. Do not just recommend a route — tell them what's actually standing between them and the cockpit, and what to do about it.
+
 Candidate profile:
 - Name: ${lead.fullName}
 - Age: ${lead.age ?? "Unknown"}
 - Country: ${lead.country ?? "Unknown"}
-- Goal: ${lead.pilotGoal ?? "Unknown"}
+- Pilot goal: ${lead.pilotGoal ?? "Unknown"}
+- Biggest stated barrier: ${lead.biggestConcern ?? "Unknown"}
+- What they've already done: ${lead.spokenToSchool ?? "Unknown"}
+- How often they think about it: ${lead.seriousness ?? "Unknown"}
 - Preferred route: ${lead.preferredRoute ?? "Unknown"}
 - Budget: ${lead.budgetRange ?? "Unknown"}
-- Funding: ${lead.fundingMethod ?? "Unknown"}
+- Funding method: ${lead.fundingMethod ?? "Unknown"}
 - Wants finance info: ${lead.wantsFinanceInfo ?? "Unknown"}
-- Medical status: ${lead.class1Medical ?? "Unknown"}
+- Medical confidence: ${lead.class1Medical ?? "Unknown"}
 - Flying experience: ${lead.flyingExperience ?? "Unknown"}
 - Start timeframe: ${lead.startTimeframe ?? "Unknown"}
-- Open to abroad: ${lead.openToAbroad ?? "Unknown"}
-- Biggest concern: ${lead.biggestConcern ?? "Unknown"}
+- Open to training abroad: ${lead.openToAbroad ?? "Unknown"}
 - Written answer: ${lead.writtenAnswer ?? "None provided"}
-- Readiness score: ${lead.leadScore}/100 (${lead.leadCategory === "Hot" ? "Flight Ready" : lead.leadCategory === "Warm" ? "Development Phase" : "Exploration Phase"})
+- AviatorIQ Score: ${lead.leadScore}/100 (${lead.leadCategory === "Hot" ? "Flight Ready" : lead.leadCategory === "Warm" ? "Development Phase" : "Exploration Phase"})
 
 Return a JSON object with these exact keys:
 {
-  "pilotGoalSummary": "1-2 sentence summary of their goal",
+  "pilotGoalSummary": "1-2 sentence summary of their goal and current situation",
+  "biggestBarrier": "Name their biggest barrier in plain English — be specific and honest",
+  "barrierAdvice": "2-3 sentences of specific, actionable advice to address their biggest barrier",
+  "strongestAsset": "What is already working in their favour — be specific",
   "recommendedRoute": "The recommended training route name",
-  "routeRationale": "2-3 sentences explaining why this route suits them",
+  "routeRationale": "2-3 sentences explaining why this route suits them specifically",
   "estimatedCostMin": number (GBP, no currency symbol),
   "estimatedCostMax": number (GBP, no currency symbol),
   "estimatedDuration": "e.g. 18-24 months",
-  "readinessLabel": "Strong Candidate | Developing Candidate | Early-Stage Researcher",
-  "readinessExplanation": "1-2 sentences about their readiness",
-  "nextSteps": ["step 1", "step 2", "step 3", "step 4"],
-  "medicalAdvice": "1-2 sentences about Class 1 Medical",
-  "financeConsiderations": "1-2 sentences about financing",
-  "schoolTypeRecommendation": "What type of school to look for",
+  "readinessLabel": "Flight Ready | Development Phase | Exploration Phase",
+  "readinessExplanation": "1-2 sentences about their readiness — be honest, not just encouraging",
+  "nextSteps": ["step 1", "step 2", "step 3", "step 4", "step 5"],
+  "medicalAdvice": "1-2 sentences about Class 1 Medical relevant to their specific situation",
+  "financeConsiderations": "1-2 sentences about financing relevant to their budget and funding method",
+  "schoolTypeRecommendation": "What type of school to look for and why",
   "disclaimer": "This report is guidance only and not official career, medical or financial advice. Always consult qualified professionals before making training decisions."
 }
 
-Use cautious, helpful language. Do not invent specific school prices unless they are well-established industry averages. Do not make promises about employment or medical approval.`;
+Use honest, direct language. If their barrier is funding, say so clearly and give real options. If their timeline is unrealistic, say so kindly. Do not make promises about employment or medical approval. The goal is to give them the certainty they need to make a decision — not just to encourage them.`;
 
         const response = await invokeLLM({
           messages: [

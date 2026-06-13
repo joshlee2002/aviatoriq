@@ -8,25 +8,32 @@ import { ArrowRight, ArrowLeft, CheckCircle2, Loader2, Plane } from "lucide-reac
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface QuizData {
+  // Step 1 — Contact details
   fullName: string;
   email: string;
   phone: string;
   country: string;
   city: string;
   age: string;
+  // Step 2 — Goal & commitment
   pilotGoal: string;
   seriousness: string;
   spokenToSchool: string;
+  // Step 3 — Barriers (the real questions)
+  biggestConcern: string;
+  // Step 4 — Training route
   preferredRoute: string;
   openToAbroad: string;
+  // Step 5 — Finance (can they afford it?)
   fundingMethod: string;
   budgetRange: string;
   wantsFinanceInfo: string;
+  // Step 6 — Background & medical
   educationLevel: string;
   class1Medical: string;
   flyingExperience: string;
   rightToWorkStudy: string;
-  biggestConcern: string;
+  // Step 7 — Consent & context
   startTimeframe: string;
   wantsSchoolContact: string;
   preferredContact: string;
@@ -43,11 +50,11 @@ interface QuizData {
 const EMPTY: QuizData = {
   fullName: "", email: "", phone: "", country: "", city: "", age: "",
   pilotGoal: "", seriousness: "", spokenToSchool: "",
+  biggestConcern: "",
   preferredRoute: "", openToAbroad: "",
   fundingMethod: "", budgetRange: "", wantsFinanceInfo: "",
   educationLevel: "", class1Medical: "", flyingExperience: "", rightToWorkStudy: "",
-  biggestConcern: "", startTimeframe: "", wantsSchoolContact: "",
-  preferredContact: "",
+  startTimeframe: "", wantsSchoolContact: "", preferredContact: "",
   contactConsentSchools: true, contactConsentFinance: false, contactConsentMedical: false, contactConsentPartners: false,
   writtenAnswer: "", consentToContact: false, consentToShare: false,
   source: "",
@@ -56,9 +63,7 @@ const EMPTY: QuizData = {
 const TOTAL_STEPS = 7;
 
 // ─── Option button ────────────────────────────────────────────────────────────
-function OptionButton({
-  label, selected, onClick,
-}: { label: string; selected: boolean; onClick: () => void }) {
+function OptionButton({ label, selected, onClick }: { label: string; selected: boolean; onClick: () => void }) {
   return (
     <button
       type="button"
@@ -70,11 +75,7 @@ function OptionButton({
       }`}
     >
       <div className="flex items-center gap-3">
-        <div
-          className={`w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center transition-colors ${
-            selected ? "border-[var(--color-primary)] bg-[var(--color-primary)]" : "border-[var(--color-border)]"
-          }`}
-        >
+        <div className={`w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center transition-colors ${selected ? "border-[var(--color-primary)] bg-[var(--color-primary)]" : "border-[var(--color-border)]"}`}>
           {selected && <div className="w-2 h-2 rounded-full bg-white" />}
         </div>
         {label}
@@ -89,16 +90,11 @@ function ProgressBar({ step, total }: { step: number; total: number }) {
   return (
     <div className="mb-8">
       <div className="flex items-center justify-between mb-2">
-        <span className="text-xs font-semibold text-[var(--color-muted-foreground)] uppercase tracking-wider">
-          Step {step} of {total}
-        </span>
+        <span className="text-xs font-semibold text-[var(--color-muted-foreground)] uppercase tracking-wider">Step {step} of {total}</span>
         <span className="text-xs font-bold text-[var(--color-primary)]">{pct}% complete</span>
       </div>
       <div className="h-2 bg-[var(--color-muted)] rounded-full overflow-hidden">
-        <div
-          className="h-full bg-[var(--color-primary)] rounded-full transition-all duration-500 ease-out"
-          style={{ width: `${pct}%` }}
-        />
+        <div className="h-full bg-[var(--color-primary)] rounded-full transition-all duration-500 ease-out" style={{ width: `${pct}%` }} />
       </div>
     </div>
   );
@@ -115,103 +111,72 @@ function StepCard({ title, subtitle, children }: { title: string; subtitle?: str
   );
 }
 
-// ─── Step 1: Basic Details ────────────────────────────────────────────────────
+// ─── Step 1: Contact details ──────────────────────────────────────────────────
 function Step1({ data, update }: { data: QuizData; update: (k: keyof QuizData, v: string) => void }) {
   const countries = [
-    "United Kingdom", "United States", "Australia", "Canada", "Ireland",
-    "Germany", "France", "Spain", "Netherlands", "New Zealand", "South Africa",
-    "UAE", "Singapore", "India", "Other",
+    "United Kingdom", "Ireland", "United States", "Canada", "Australia", "New Zealand",
+    "Germany", "France", "Spain", "Netherlands", "Sweden", "Norway", "Denmark",
+    "South Africa", "UAE", "Singapore", "India", "Other",
   ];
-
   return (
-    <StepCard title="Let's start with the basics" subtitle="Tell us a little about yourself so we can personalise your roadmap.">
+    <StepCard title="Let's start with you" subtitle="Your roadmap will be personalised to your profile. We'll never share your details without your permission.">
       <div className="space-y-5">
         <div>
           <label className="block text-sm font-semibold text-[var(--color-foreground)] mb-2">Full name *</label>
-          <input
-            type="text"
-            value={data.fullName}
-            onChange={(e) => update("fullName", e.target.value)}
-            placeholder="Your full name"
-            className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white"
-          />
+          <input type="text" value={data.fullName} onChange={(e) => update("fullName", e.target.value)} placeholder="Your full name"
+            className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white" />
         </div>
         <div>
           <label className="block text-sm font-semibold text-[var(--color-foreground)] mb-2">Email address *</label>
-          <input
-            type="email"
-            value={data.email}
-            onChange={(e) => update("email", e.target.value)}
-            placeholder="your@email.com"
-            className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white"
-          />
+          <input type="email" value={data.email} onChange={(e) => update("email", e.target.value)} placeholder="your@email.com"
+            className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white" />
+          <p className="text-xs text-[var(--color-muted-foreground)] mt-1">Your roadmap will be sent here.</p>
         </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-semibold text-[var(--color-foreground)] mb-2">Country</label>
-            <select
-              value={data.country}
-              onChange={(e) => update("country", e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white"
-            >
-              <option value="">Select country…</option>
+            <select value={data.country} onChange={(e) => update("country", e.target.value)}
+              className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white">
+              <option value="">Select country</option>
               {countries.map((c) => <option key={c} value={c}>{c}</option>)}
             </select>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[var(--color-foreground)] mb-2">City / nearest airport</label>
-            <input
-              type="text"
-              value={data.city}
-              onChange={(e) => update("city", e.target.value)}
-              placeholder="e.g. London"
-              className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white"
-            />
+            <label className="block text-sm font-semibold text-[var(--color-foreground)] mb-2">Age</label>
+            <input type="number" value={data.age} onChange={(e) => update("age", e.target.value)} placeholder="Your age" min="14" max="99"
+              className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white" />
           </div>
-        </div>
-        <div>
-          <label className="block text-sm font-semibold text-[var(--color-foreground)] mb-2">Age</label>
-          <input
-            type="number"
-            value={data.age}
-            onChange={(e) => update("age", e.target.value)}
-            placeholder="Your age"
-            min="14"
-            max="99"
-            className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white"
-          />
         </div>
       </div>
     </StepCard>
   );
 }
 
-// ─── Step 2: Pilot Goal ───────────────────────────────────────────────────────
+// ─── Step 2: Goal & commitment ────────────────────────────────────────────────
 function Step2({ data, update }: { data: QuizData; update: (k: keyof QuizData, v: string) => void }) {
   return (
-    <StepCard title="What's your pilot goal?" subtitle="This helps us recommend the right training route for you.">
+    <StepCard title="Your goal and where you are now" subtitle="Honest answers lead to better guidance.">
       <div className="space-y-8">
         <div>
           <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">What type of pilot do you want to become?</p>
           <div className="space-y-2">
-            {["Airline pilot", "Private pilot", "Corporate/private jet pilot", "Flight instructor", "Military pilot", "Not sure yet"].map((o) => (
+            {["Airline pilot (commercial)", "Private pilot (for fun)", "Corporate / private jet pilot", "Flight instructor", "Military pilot", "Not sure yet"].map((o) => (
               <OptionButton key={o} label={o} selected={data.pilotGoal === o} onClick={() => update("pilotGoal", o)} />
             ))}
           </div>
         </div>
         <div>
-          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">How serious are you about pilot training?</p>
+          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">What have you actually done about it so far?</p>
+          <p className="text-xs text-[var(--color-muted-foreground)] mb-3">This is one of the most useful questions — be honest.</p>
           <div className="space-y-2">
-            {["Just researching", "Interested but unsure", "I want to start within 1-3 years", "I want to start within 12 months", "I want to start as soon as possible"].map((o) => (
-              <OptionButton key={o} label={o} selected={data.seriousness === o} onClick={() => update("seriousness", o)} />
-            ))}
-          </div>
-        </div>
-        <div>
-          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Have you spoken to a flight school before?</p>
-          <div className="space-y-2">
-            {["Yes", "No", "I have booked a visit/open day", "I have already applied somewhere"].map((o) => (
+            {[
+              "I've applied to a flight school",
+              "I've visited a flight school or attended an open day",
+              "I've done a trial lesson",
+              "I've researched schools and training routes",
+              "I've watched videos and read forums",
+              "Mostly just thought about it",
+            ].map((o) => (
               <OptionButton key={o} label={o} selected={data.spokenToSchool === o} onClick={() => update("spokenToSchool", o)} />
             ))}
           </div>
@@ -221,15 +186,61 @@ function Step2({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
   );
 }
 
-// ─── Step 3: Training Route ───────────────────────────────────────────────────
+// ─── Step 3: Barriers — the real questions ────────────────────────────────────
 function Step3({ data, update }: { data: QuizData; update: (k: keyof QuizData, v: string) => void }) {
   return (
-    <StepCard title="Training route preference" subtitle="Not sure of the difference? We'll explain it in your roadmap.">
+    <StepCard title="What's really stopping you?" subtitle="This is the most important question in the assessment. Your answer shapes everything that follows.">
+      <div className="space-y-8">
+        <div>
+          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">If a flight school offered you a place tomorrow, what would stop you starting?</p>
+          <p className="text-xs text-[var(--color-muted-foreground)] mb-3">Pick the one that feels most true right now.</p>
+          <div className="space-y-2">
+            {[
+              "The cost — I can't fund it",
+              "I'm not sure I could actually do it",
+              "I'm worried about passing the medical",
+              "I don't have the time right now",
+              "I think I might be too old",
+              "I'd be risking too much (career, income, stability)",
+              "I have too many unanswered questions",
+              "Nothing — I'm ready to start",
+            ].map((o) => (
+              <OptionButton key={o} label={o} selected={data.biggestConcern === o} onClick={() => update("biggestConcern", o)} />
+            ))}
+          </div>
+        </div>
+        <div>
+          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">How often do you think about becoming a pilot?</p>
+          <div className="space-y-2">
+            {[
+              "Every day — it's always on my mind",
+              "Most weeks",
+              "Occasionally",
+              "Rarely — I'm just exploring",
+            ].map((o) => (
+              <OptionButton key={o} label={o} selected={data.seriousness === o} onClick={() => update("seriousness", o)} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </StepCard>
+  );
+}
+
+// ─── Step 4: Training route ───────────────────────────────────────────────────
+function Step4({ data, update }: { data: QuizData; update: (k: keyof QuizData, v: string) => void }) {
+  return (
+    <StepCard title="Training route" subtitle="Not sure of the difference between integrated and modular? We'll explain it in your roadmap.">
       <div className="space-y-8">
         <div>
           <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Which training route interests you most?</p>
           <div className="space-y-2">
-            {["Integrated ATPL", "Modular ATPL", "PPL only", "I do not know the difference yet"].map((o) => (
+            {[
+              "Integrated ATPL (full-time, 18–24 months, £80k–£120k)",
+              "Modular ATPL (part-time, 3–5 years, £40k–£80k)",
+              "PPL only (private licence, £8k–£15k)",
+              "I don't know the difference yet",
+            ].map((o) => (
               <OptionButton key={o} label={o} selected={data.preferredRoute === o} onClick={() => update("preferredRoute", o)} />
             ))}
           </div>
@@ -237,7 +248,7 @@ function Step3({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
         <div>
           <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Are you open to training abroad?</p>
           <div className="space-y-2">
-            {["Yes", "No", "Maybe, depending on cost", "I need guidance"].map((o) => (
+            {["Yes — I'd consider it for the right school", "No — I want to train in my home country", "Maybe, depending on cost", "I need guidance on this"].map((o) => (
               <OptionButton key={o} label={o} selected={data.openToAbroad === o} onClick={() => update("openToAbroad", o)} />
             ))}
           </div>
@@ -247,15 +258,15 @@ function Step3({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
   );
 }
 
-// ─── Step 4: Finance ──────────────────────────────────────────────────────────
-function Step4({ data, update }: { data: QuizData; update: (k: keyof QuizData, v: string) => void }) {
+// ─── Step 5: Finance ──────────────────────────────────────────────────────────
+function Step5({ data, update }: { data: QuizData; update: (k: keyof QuizData, v: string) => void }) {
   return (
-    <StepCard title="Funding your training" subtitle="This helps us match you with schools that fit your budget and finance needs.">
+    <StepCard title="Can you afford it?" subtitle="This is one of the 10 questions aspiring pilots ask most. Let's be honest about your situation.">
       <div className="space-y-8">
         <div>
           <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">How do you expect to fund your training?</p>
           <div className="space-y-2">
-            {["Self-funded", "Family support", "Loan/finance", "Scholarship", "Employer/airline sponsored", "Unsure"].map((o) => (
+            {["Self-funded from savings", "Family support", "Career development loan or finance", "Airline cadet sponsorship", "Scholarship", "I haven't figured this out yet"].map((o) => (
               <OptionButton key={o} label={o} selected={data.fundingMethod === o} onClick={() => update("fundingMethod", o)} />
             ))}
           </div>
@@ -263,7 +274,7 @@ function Step4({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
         <div>
           <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">What training budget are you realistically working with?</p>
           <div className="space-y-2">
-            {["Under £10,000", "£10,000-£25,000", "£25,000-£50,000", "£50,000-£100,000", "£100,000+", "I need finance"].map((o) => (
+            {["Under £10,000", "£10,000–£25,000", "£25,000–£50,000", "£50,000–£100,000", "£100,000+", "I need finance — I don't have savings"].map((o) => (
               <OptionButton key={o} label={o} selected={data.budgetRange === o} onClick={() => update("budgetRange", o)} />
             ))}
           </div>
@@ -271,7 +282,7 @@ function Step4({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
         <div>
           <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Would you like information about finance options?</p>
           <div className="space-y-2">
-            {["Yes", "No", "Maybe"].map((o) => (
+            {["Yes — please include this", "No", "Maybe"].map((o) => (
               <OptionButton key={o} label={o} selected={data.wantsFinanceInfo === o} onClick={() => update("wantsFinanceInfo", o)} />
             ))}
           </div>
@@ -281,11 +292,48 @@ function Step4({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
   );
 }
 
-// ─── Step 5: Suitability ──────────────────────────────────────────────────────
-function Step5({ data, update }: { data: QuizData; update: (k: keyof QuizData, v: string) => void }) {
+// ─── Step 6: Background & medical ────────────────────────────────────────────
+function Step6({ data, update }: { data: QuizData; update: (k: keyof QuizData, v: string) => void }) {
   return (
-    <StepCard title="Your background" subtitle="This helps us assess your readiness and suggest the most suitable path.">
+    <StepCard title="Your background" subtitle="This helps us assess your readiness and flag anything that needs attention.">
       <div className="space-y-8">
+        <div>
+          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Have you ever been in the cockpit?</p>
+          <div className="space-y-2">
+            {[
+              "Never — complete beginner",
+              "I've done a trial lesson or two",
+              "I hold a PPL or LAPL",
+              "I have 50+ hours of flight time",
+              "I hold a commercial licence",
+            ].map((o) => (
+              <OptionButton key={o} label={o} selected={data.flyingExperience === o} onClick={() => update("flyingExperience", o)} />
+            ))}
+          </div>
+        </div>
+        <div>
+          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">How confident are you about passing a Class 1 medical?</p>
+          <p className="text-xs text-[var(--color-muted-foreground)] mb-3">Required for commercial flying. Most people pass — but uncertainty is common.</p>
+          <div className="space-y-2">
+            {[
+              "I already hold a Class 1 medical",
+              "No concerns — I'm in good health",
+              "Minor concerns but probably fine",
+              "I genuinely don't know",
+              "I have significant concerns",
+            ].map((o) => (
+              <OptionButton key={o} label={o} selected={data.class1Medical === o} onClick={() => update("class1Medical", o)} />
+            ))}
+          </div>
+        </div>
+        <div>
+          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Do you have the right to study or work in your chosen training country?</p>
+          <div className="space-y-2">
+            {["Yes", "No", "Unsure"].map((o) => (
+              <OptionButton key={o} label={o} selected={data.rightToWorkStudy === o} onClick={() => update("rightToWorkStudy", o)} />
+            ))}
+          </div>
+        </div>
         <div>
           <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">What is your highest education level?</p>
           <div className="space-y-2">
@@ -294,56 +342,27 @@ function Step5({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
             ))}
           </div>
         </div>
-        <div>
-          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Do you currently hold a Class 1 Medical?</p>
-          <div className="space-y-2">
-            {["Yes", "No", "I plan to get one", "I do not know what this is"].map((o) => (
-              <OptionButton key={o} label={o} selected={data.class1Medical === o} onClick={() => update("class1Medical", o)} />
-            ))}
-          </div>
-        </div>
-        <div>
-          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Have you ever flown an aircraft?</p>
-          <div className="space-y-2">
-            {["No", "Trial lesson/discovery flight", "PPL student", "PPL holder", "Other licence/rating"].map((o) => (
-              <OptionButton key={o} label={o} selected={data.flyingExperience === o} onClick={() => update("flyingExperience", o)} />
-            ))}
-          </div>
-        </div>
-        <div>
-          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Do you have the right to study/work in your chosen training country?</p>
-          <div className="space-y-2">
-            {["Yes", "No", "Unsure"].map((o) => (
-              <OptionButton key={o} label={o} selected={data.rightToWorkStudy === o} onClick={() => update("rightToWorkStudy", o)} />
-            ))}
-          </div>
-        </div>
       </div>
     </StepCard>
   );
 }
 
-// ─── Step 6: Intent ───────────────────────────────────────────────────────────
-function Step6({ data, update }: { data: QuizData; update: (k: keyof QuizData, v: string) => void }) {
+// ─── Step 7: Timeline, contact & consent ─────────────────────────────────────
+function Step7({ data, update }: { data: QuizData; update: (k: keyof QuizData, v: string | boolean) => void }) {
   return (
-    <StepCard title="Your timeline and concerns" subtitle="Almost done — just a few more questions to complete your profile.">
+    <StepCard title="Almost there" subtitle="One final section, then your personalised roadmap is ready.">
       <div className="space-y-8">
+        {/* Timeline */}
         <div>
-          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">What is your biggest concern about becoming a pilot?</p>
+          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">When do you want to start training?</p>
           <div className="space-y-2">
-            {["Cost", "Medical requirements", "Finding the right school", "Getting a job after training", "Age", "Academic requirements", "I do not know where to start"].map((o) => (
-              <OptionButton key={o} label={o} selected={data.biggestConcern === o} onClick={() => update("biggestConcern", o)} />
-            ))}
-          </div>
-        </div>
-        <div>
-          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">When would you like to start training?</p>
-          <div className="space-y-2">
-            {["Immediately", "Within 3 months", "Within 6 months", "Within 12 months", "1-3 years", "Just researching"].map((o) => (
+            {["As soon as possible — I'm ready now", "Within the next 12 months", "In the next 1–3 years", "Someday — no fixed timeline", "I'm not sure yet"].map((o) => (
               <OptionButton key={o} label={o} selected={data.startTimeframe === o} onClick={() => update("startTimeframe", o)} />
             ))}
           </div>
         </div>
+
+        {/* School contact */}
         <div>
           <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Would you like suitable flight schools to contact you?</p>
           <div className="space-y-2">
@@ -352,31 +371,24 @@ function Step6({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
             ))}
           </div>
         </div>
-        <div>
-          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">What is your preferred contact method?</p>
-          <div className="space-y-2">
-            {["Email", "Phone", "WhatsApp", "Any"].map((o) => (
-              <OptionButton key={o} label={o} selected={data.preferredContact === o} onClick={() => update("preferredContact", o)} />
-            ))}
-          </div>
-        </div>
-      </div>
-    </StepCard>
-  );
-}
 
-// ─── Step 7: AI Answer + Consent ─────────────────────────────────────────────
-function Step7({ data, update }: { data: QuizData; update: (k: keyof QuizData, v: string | boolean) => void }) {
-  return (
-    <StepCard title="Almost there" subtitle="One optional question, then your consent and you're done.">
-      <div className="space-y-8">
-        {/* Optional AI question */}
+        {/* Preferred contact */}
+        {data.wantsSchoolContact === "Yes" && (
+          <div>
+            <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Preferred contact method</p>
+            <div className="space-y-2">
+              {["Email", "Phone", "WhatsApp", "Any"].map((o) => (
+                <OptionButton key={o} label={o} selected={data.preferredContact === o} onClick={() => update("preferredContact", o)} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Optional written answer */}
         <div className="p-5 rounded-xl bg-[var(--color-primary-light)] border border-[var(--color-primary)]/20">
-          <p className="text-sm font-semibold text-[var(--color-navy)] mb-2">
-            Optional: Tell us in your own words
-          </p>
+          <p className="text-sm font-semibold text-[var(--color-navy)] mb-2">Optional: In your own words</p>
           <p className="text-sm text-[var(--color-muted-foreground)] mb-3">
-            Why do you want to become a pilot, and what is stopping you from starting? Your answer helps us give you better guidance.
+            Why do you want to become a pilot, and what is the one thing that's really holding you back? Your answer helps us give you better guidance.
           </p>
           <textarea
             value={data.writtenAnswer}
@@ -387,24 +399,20 @@ function Step7({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
           />
         </div>
 
-        {/* Contact consent categories */}
-        <div className="p-5 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
+        {/* Contact consent */}
+        <div className="p-5 rounded-xl bg-[var(--color-muted)] border border-[var(--color-border)]">
           <p className="text-sm font-semibold text-[var(--color-navy)] mb-1">Who are you happy to be contacted by?</p>
-          <p className="text-xs text-[var(--color-muted-foreground)] mb-3">Optional — tick all that apply. This helps us match you with the right partners.</p>
+          <p className="text-xs text-[var(--color-muted-foreground)] mb-3">Optional — tick all that apply.</p>
           <div className="space-y-2">
             {([
               { key: "contactConsentSchools" as const, label: "Flight schools" },
               { key: "contactConsentFinance" as const, label: "Pilot training finance providers" },
               { key: "contactConsentMedical" as const, label: "Aviation medical examiners" },
-              { key: "contactConsentPartners" as const, label: "Training partners (ground schools, simulators, accommodation)" },
+              { key: "contactConsentPartners" as const, label: "Training partners (ground schools, simulators)" },
             ]).map(({ key, label }) => (
               <label key={key} className="flex items-center gap-3 cursor-pointer">
                 <div
-                  className={`w-5 h-5 rounded border-2 flex-shrink-0 flex items-center justify-center transition-colors ${
-                    data[key]
-                      ? "bg-[var(--color-primary)] border-[var(--color-primary)]"
-                      : "border-[var(--color-border)] hover:border-[var(--color-primary)]"
-                  }`}
+                  className={`w-5 h-5 rounded border-2 flex-shrink-0 flex items-center justify-center transition-colors ${data[key] ? "bg-[var(--color-primary)] border-[var(--color-primary)]" : "border-[var(--color-border)] hover:border-[var(--color-primary)]"}`}
                   onClick={() => update(key, !data[key])}
                 >
                   {data[key] && <CheckCircle2 className="w-3.5 h-3.5 text-white" />}
@@ -415,52 +423,34 @@ function Step7({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
           </div>
         </div>
 
-        {/* Source question */}
-        <div className="p-5 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
+        {/* Source */}
+        <div className="p-5 rounded-xl bg-[var(--color-muted)] border border-[var(--color-border)]">
           <p className="text-sm font-semibold text-[var(--color-navy)] mb-1">How did you hear about AviatorIQ?</p>
-          <p className="text-xs text-[var(--color-muted-foreground)] mb-3">Optional — helps us understand where to focus.</p>
+          <p className="text-xs text-[var(--color-muted-foreground)] mb-3">Optional.</p>
           <div className="grid grid-cols-2 gap-2">
             {["Google / Search", "Instagram", "Facebook", "Reddit", "YouTube", "A friend", "Forum / Community", "Other"].map((opt) => (
-              <button
-                key={opt}
-                type="button"
-                onClick={() => update("source", data.source === opt ? "" : opt)}
-                className={`px-3 py-2 rounded-lg text-sm font-medium border-2 transition-colors text-left ${
-                  data.source === opt
-                    ? "border-[var(--color-primary)] bg-[var(--color-primary-light)] text-[var(--color-primary)]"
-                    : "border-[var(--color-border)] hover:border-[var(--color-primary)]/50 text-[var(--color-foreground)]"
-                }`}
-              >
+              <button key={opt} type="button" onClick={() => update("source", data.source === opt ? "" : opt)}
+                className={`px-3 py-2 rounded-lg text-sm font-medium border-2 transition-colors text-left ${data.source === opt ? "border-[var(--color-primary)] bg-[var(--color-primary-light)] text-[var(--color-primary)]" : "border-[var(--color-border)] hover:border-[var(--color-primary)]/50 text-[var(--color-foreground)]"}`}>
                 {opt}
               </button>
             ))}
           </div>
         </div>
 
-        {/* Phone number — collected after value is delivered */}
-        <div className="p-5 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
+        {/* Phone */}
+        <div className="p-5 rounded-xl bg-[var(--color-muted)] border border-[var(--color-border)]">
           <p className="text-sm font-semibold text-[var(--color-navy)] mb-1">Phone number <span className="font-normal text-[var(--color-muted-foreground)]">(optional)</span></p>
           <p className="text-xs text-[var(--color-muted-foreground)] mb-3">Only used if a school or our team needs to reach you directly. Never shared without your permission.</p>
-          <input
-            type="tel"
-            value={data.phone as string}
-            onChange={(e) => update("phone", e.target.value)}
-            placeholder="+44 7700 000000"
-            className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white"
-          />
+          <input type="tel" value={data.phone as string} onChange={(e) => update("phone", e.target.value)} placeholder="+44 7700 000000"
+            className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white" />
         </div>
 
         {/* Consent */}
         <div className="space-y-4">
           <h3 className="font-display font-bold text-[var(--color-navy)]">Your consent</h3>
-
           <label className="flex items-start gap-3 cursor-pointer group">
             <div
-              className={`mt-0.5 w-5 h-5 rounded border-2 flex-shrink-0 flex items-center justify-center transition-colors ${
-                data.consentToContact
-                  ? "bg-[var(--color-primary)] border-[var(--color-primary)]"
-                  : "border-[var(--color-border)] group-hover:border-[var(--color-primary)]"
-              }`}
+              className={`mt-0.5 w-5 h-5 rounded border-2 flex-shrink-0 flex items-center justify-center transition-colors ${data.consentToContact ? "bg-[var(--color-primary)] border-[var(--color-primary)]" : "border-[var(--color-border)] group-hover:border-[var(--color-primary)]"}`}
               onClick={() => update("consentToContact", !data.consentToContact)}
             >
               {data.consentToContact && <CheckCircle2 className="w-3.5 h-3.5 text-white" />}
@@ -469,14 +459,9 @@ function Step7({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
               <strong>Required:</strong> I agree to AviatorIQ storing my answers and contacting me about pilot training options. I also agree that AviatorIQ may share my details with relevant flight schools or training partners where I have requested introductions.
             </span>
           </label>
-
           <label className="flex items-start gap-3 cursor-pointer group">
             <div
-              className={`mt-0.5 w-5 h-5 rounded border-2 flex-shrink-0 flex items-center justify-center transition-colors ${
-                data.consentToShare
-                  ? "bg-[var(--color-primary)] border-[var(--color-primary)]"
-                  : "border-[var(--color-border)] group-hover:border-[var(--color-primary)]"
-              }`}
+              className={`mt-0.5 w-5 h-5 rounded border-2 flex-shrink-0 flex items-center justify-center transition-colors ${data.consentToShare ? "bg-[var(--color-primary)] border-[var(--color-primary)]" : "border-[var(--color-border)] group-hover:border-[var(--color-primary)]"}`}
               onClick={() => update("consentToShare", !data.consentToShare)}
             >
               {data.consentToShare && <CheckCircle2 className="w-3.5 h-3.5 text-white" />}
@@ -485,9 +470,8 @@ function Step7({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
               Optional: I am happy for AviatorIQ to use my anonymised data to improve its school matching and guidance services.
             </span>
           </label>
-
           <p className="text-xs text-[var(--color-muted-foreground)] leading-relaxed">
-            Your data is stored securely and never sold. You can request deletion at any time by contacting us. See our{" "}
+            Your data is stored securely and never sold. You can request deletion at any time.{" "}
             <a href="/privacy" className="text-[var(--color-primary)] underline">Privacy Policy</a>.
           </p>
         </div>
@@ -501,6 +485,7 @@ export default function Quiz() {
   useEffect(() => {
     document.title = "Free Pilot Career Assessment – AviatorIQ";
   }, []);
+
   const [step, setStep] = useState(1);
   const [data, setData] = useState<QuizData>(EMPTY);
   const [started, setStarted] = useState(false);
@@ -559,14 +544,17 @@ export default function Quiz() {
               <Plane className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-3xl md:text-4xl font-display font-bold text-[var(--color-navy)] mb-4">
-              Free Pilot Career Assessment
+              Career Readiness Assessment
             </h1>
-            <p className="text-lg text-[var(--color-muted-foreground)] mb-8 leading-relaxed">
-              Answer 15–20 questions about your goals, budget and background. Get a personalised pilot training roadmap and be matched with suitable flight schools.
+            <p className="text-lg text-[var(--color-muted-foreground)] mb-3 leading-relaxed">
+              10 minutes. We'll identify your biggest barrier, your strongest asset, and give you a personalised training roadmap — not generic advice.
+            </p>
+            <p className="text-sm text-[var(--color-muted-foreground)] mb-8 leading-relaxed">
+              Most people who take this assessment say the result describes them better than they expected. That's the point.
             </p>
             <div className="grid grid-cols-3 gap-4 mb-8">
               {[
-                { label: "5 minutes", sub: "to complete" },
+                { label: "10 minutes", sub: "to complete" },
                 { label: "100% free", sub: "no payment" },
                 { label: "AI roadmap", sub: "personalised" },
               ].map((item) => (
@@ -609,52 +597,29 @@ export default function Quiz() {
           <div className="card-base p-6 md:p-10 mb-6">
             {stepComponents[step]}
           </div>
-
           {/* Navigation */}
           <div className="flex items-center justify-between gap-4">
-            <button
-              onClick={handleBack}
-              disabled={step === 1}
-              className="btn-outline text-sm disabled:opacity-40 disabled:cursor-not-allowed"
-            >
+            <button onClick={handleBack} disabled={step === 1} className="btn-outline text-sm disabled:opacity-40 disabled:cursor-not-allowed">
               <ArrowLeft className="w-4 h-4" />
               Back
             </button>
-
             {step < TOTAL_STEPS ? (
-              <button
-                onClick={handleNext}
-                disabled={!canAdvance()}
-                className="btn-primary text-sm disabled:opacity-40 disabled:cursor-not-allowed"
-              >
+              <button onClick={handleNext} disabled={!canAdvance()} className="btn-primary text-sm disabled:opacity-40 disabled:cursor-not-allowed">
                 Continue
                 <ArrowRight className="w-4 h-4" />
               </button>
             ) : (
-              <button
-                onClick={handleSubmit}
-                disabled={!data.consentToContact || submitMutation.isPending}
-                className="btn-cta text-sm disabled:opacity-40 disabled:cursor-not-allowed"
-              >
+              <button onClick={handleSubmit} disabled={!data.consentToContact || submitMutation.isPending} className="btn-cta text-sm disabled:opacity-40 disabled:cursor-not-allowed">
                 {submitMutation.isPending ? (
-                  <>
-                    <Loader2 className="w-4 h-4 animate-spin" />
-                    Generating your roadmap…
-                  </>
+                  <><Loader2 className="w-4 h-4 animate-spin" />Generating your roadmap…</>
                 ) : (
-                  <>
-                    Get my pilot roadmap
-                    <ArrowRight className="w-4 h-4" />
-                  </>
+                  <>Get my pilot roadmap<ArrowRight className="w-4 h-4" /></>
                 )}
               </button>
             )}
           </div>
-
           {submitMutation.isError && (
-            <div className="mt-4 p-4 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm">
-              Something went wrong. Please check your details and try again.
-            </div>
+            <p className="text-red-500 text-sm text-center mt-4">Something went wrong. Please try again.</p>
           )}
         </div>
       </main>
