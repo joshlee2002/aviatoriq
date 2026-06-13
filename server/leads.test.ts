@@ -16,6 +16,7 @@ describe("Lead scoring integration", () => {
     const result = scoreLead({
       pilotGoal: "Airline pilot",
       seriousness: "I want to start as soon as possible",
+      spokenToSchool: "I've applied to a flight school",
       budgetRange: "£100,000+",
       fundingMethod: "Self-funded",
       age: 22,
@@ -25,6 +26,7 @@ describe("Lead scoring integration", () => {
       phone: "+44 7700 900000",
       writtenAnswer: "I have been saving for three years and am fully committed.",
       preferredRoute: "Integrated ATPL (full-time, 18-24 months)",
+      startTimeframe: "As soon as possible — I'm ready now",
       country: "GB",
     });
     expect(result.category).toBe("Hot");

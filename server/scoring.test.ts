@@ -23,6 +23,7 @@ describe("scoreLead", () => {
       age: 22,
       pilotGoal: "Airline pilot",
       seriousness: "I want to start as soon as possible",
+      spokenToSchool: "I've applied to a flight school",
       budgetRange: "£100,000+",
       fundingMethod: "Self-funded",
       wantsFinanceInfo: "No",
@@ -32,6 +33,7 @@ describe("scoreLead", () => {
       phone: "+44 7700 900000",
       writtenAnswer: "I have always wanted to fly and have been saving for 3 years.",
       preferredRoute: "Integrated ATPL (full-time, 18-24 months)",
+      startTimeframe: "As soon as possible — I'm ready now",
       country: "GB",
     });
     expect(result.category).toBe("Hot");
@@ -154,11 +156,12 @@ describe("scoreLead", () => {
   it("intentScore reaches maximum with all intent signals present", () => {
     const result = scoreLead({
       seriousness: "I want to start as soon as possible",
-      spokenToSchool: "I have already applied somewhere",
+      spokenToSchool: "I've applied to a flight school",
+      startTimeframe: "As soon as possible — I'm ready now",
       phone: "+44 7700 900000",
-      wantsFinanceInfo: "Yes",
+      wantsFinanceInfo: "Yes — please include this",
     });
-    // 30 (school) + 30 (seriousness) + 25 (phone) + 15 (finance) = 100
+    // 30 (school) + 30 (seriousness) + 20 (timeframe) + 20 (phone) + 10 (finance) = 110 -> clamped to 100
     expect(result.intentScore).toBe(100);
   });
 });
