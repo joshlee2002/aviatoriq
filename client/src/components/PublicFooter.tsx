@@ -17,6 +17,8 @@ const toolLinks = [
   { label: "Cost Calculator", href: "/calculator" },
   { label: "Integrated vs Modular Tool", href: "/tools/integrated-vs-modular" },
   { label: "Medical Readiness Check", href: "/tools/class-1-medical-check" },
+  { label: "Medical Condition Lookup", href: "/tools/medical-condition-lookup" },
+  { label: "Cadet Eligibility Checker", href: "/tools/cadet-eligibility" },
 ];
 
 const platformLinks = [

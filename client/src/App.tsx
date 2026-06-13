@@ -42,6 +42,10 @@ import MedicalCheck from "./pages/MedicalCheck";
 // Partner page
 import Partner from "./pages/Partner";
 
+// New tools
+import MedicalConditionLookup from "./pages/MedicalConditionLookup";
+import CadetEligibility from "./pages/CadetEligibility";
+
 // Quiz Hub & individual quizzes
 import QuizHub from "./pages/QuizHub";
 import QuizPage from "./pages/quizzes/QuizPage";
@@ -107,6 +111,8 @@ function Router() {
       <Route path="/calculator" component={Calculator} />
       <Route path="/tools/integrated-vs-modular" component={IntModDecision} />
       <Route path="/tools/class-1-medical-check" component={MedicalCheck} />
+      <Route path="/tools/medical-condition-lookup" component={MedicalConditionLookup} />
+      <Route path="/tools/cadet-eligibility" component={CadetEligibility} />
 
       {/* Guides */}
       <Route path="/guides" component={GuidesIndex} />

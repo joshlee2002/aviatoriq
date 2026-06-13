@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -24,6 +25,8 @@ import {
   TrendingUp,
   Shield,
   Zap,
+  Check,
+  Mail,
 } from "lucide-react";
 
 // ─── Schema ───────────────────────────────────────────────────────────────────
@@ -39,6 +42,69 @@ const schema = z.object({
   notes: z.string().optional(),
 });
 type FormData = z.infer<typeof schema>;
+
+// ─── Pricing tiers ────────────────────────────────────────────────────────────
+const tiers = [
+  {
+    name: "Basic Listing",
+    price: "£149",
+    period: "/month",
+    description: "Get discovered by aspiring pilots searching for UK flight schools.",
+    highlight: false,
+    badge: null,
+    features: [
+      "Standard listing in the flight school directory",
+      "School profile: name, location, courses, website",
+      "Matched to relevant candidates by route & country",
+      "AviatorIQ badge for your website",
+      "Monthly performance report (impressions, clicks)",
+    ],
+    notIncluded: [
+      "Lead introductions",
+      "Featured placement",
+      "Lead notifications",
+    ],
+    cta: "Apply for Basic",
+  },
+  {
+    name: "Featured",
+    price: "£349",
+    period: "/month",
+    description: "Stand out in the directory and receive introduction requests from matched candidates.",
+    highlight: true,
+    badge: "Most Popular",
+    features: [
+      "Everything in Basic",
+      "Featured placement — top of matched results",
+      "Receive lead introduction requests",
+      "Full lead profile on each introduction (score, budget, goal, timeline)",
+      "Explicit consent confirmed on every lead",
+      "Monthly lead summary report",
+    ],
+    notIncluded: [
+      "Real-time lead notifications",
+    ],
+    cta: "Apply for Featured",
+  },
+  {
+    name: "Premium",
+    price: "£699",
+    period: "/month",
+    description: "Maximum visibility and instant notification on every Flight Ready lead that matches your school.",
+    highlight: false,
+    badge: "Best for Growth",
+    features: [
+      "Everything in Featured",
+      "Real-time email notification on every new Flight Ready lead",
+      "Priority placement above all other schools",
+      "Dedicated account review call (quarterly)",
+      "Co-branded content opportunity (guide feature, case study)",
+      "Early access to new AviatorIQ tools and data",
+    ],
+    notIncluded: [],
+    cta: "Apply for Premium",
+  },
+];
 
 // ─── Example lead profile card ────────────────────────────────────────────────
 function ExampleLeadCard() {
@@ -181,6 +247,7 @@ export default function Partner() {
     document.title = "Partner With AviatorIQ – Flight School Directory";
   }, []);
   const [submitted, setSubmitted] = useState(false);
+  const [selectedTier, setSelectedTier] = useState<string | null>(null);
 
   const joinWaitlist = trpc.partner.joinWaitlist.useMutation({
     onSuccess: () => {
@@ -207,11 +274,19 @@ export default function Partner() {
   const interestedInLeads = watch("interestedInLeads");
 
   const onSubmit = (data: FormData) => {
-    joinWaitlist.mutate(data);
+    const notesWithTier = selectedTier
+      ? `Interested tier: ${selectedTier}${data.notes ? `\n\n${data.notes}` : ""}`
+      : data.notes;
+    joinWaitlist.mutate({ ...data, notes: notesWithTier });
   };
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <SEO
+        title="Partner With AviatorIQ | Flight School Lead Generation"
+        description="Join the AviatorIQ partner programme. Receive pre-qualified, scored aspiring pilots who have actively requested an introduction to your flight school. Three tiers from £149/month."
+        canonical="/partner"
+      />
       <PublicNav />
 
       {/* ── Hero ── */}
@@ -226,9 +301,14 @@ export default function Partner() {
           <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-8">
             Receive pre-qualified, scored aspiring pilots who have actively requested an introduction to your school — not cold enquiries.
           </p>
-          <a href="#apply" className="inline-flex items-center gap-2 bg-[var(--color-primary)] hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl transition-colors">
-            Apply to Join the Partner Programme <ArrowRight className="w-4 h-4" />
-          </a>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="#pricing" className="inline-flex items-center gap-2 bg-[var(--color-primary)] hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl transition-colors">
+              View Pricing <ArrowRight className="w-4 h-4" />
+            </a>
+            <a href="#apply" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-xl transition-colors border border-white/20">
+              Apply Now
+            </a>
+          </div>
         </div>
       </section>
 
@@ -327,14 +407,89 @@ export default function Partner() {
         </div>
       </section>
 
+      {/* ── Pricing ── */}
+      <section id="pricing" className="py-20 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl font-bold text-[var(--color-navy)] mb-3">Partner pricing</h2>
+            <p className="text-[var(--color-muted-foreground)] max-w-xl mx-auto">
+              All plans are billed monthly with no long-term contract. Cancel at any time. Prices exclude VAT.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {tiers.map((tier) => (
+              <div
+                key={tier.name}
+                className={`relative rounded-2xl border p-7 flex flex-col transition-shadow ${
+                  tier.highlight
+                    ? "border-[var(--color-primary)] shadow-xl ring-2 ring-[var(--color-primary)]/20"
+                    : "border-[var(--color-border)] hover:shadow-md"
+                }`}
+              >
+                {tier.badge && (
+                  <div className={`absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-bold px-3 py-1 rounded-full ${
+                    tier.highlight ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-navy)] text-white"
+                  }`}>
+                    {tier.badge}
+                  </div>
+                )}
+                <div className="mb-5">
+                  <h3 className="font-display font-bold text-lg text-[var(--color-navy)] mb-1">{tier.name}</h3>
+                  <div className="flex items-end gap-1 mb-3">
+                    <span className="text-3xl font-display font-bold text-[var(--color-navy)]">{tier.price}</span>
+                    <span className="text-sm text-[var(--color-muted-foreground)] mb-1">{tier.period}</span>
+                  </div>
+                  <p className="text-sm text-[var(--color-muted-foreground)]">{tier.description}</p>
+                </div>
+                <ul className="space-y-2.5 mb-6 flex-1">
+                  {tier.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-[var(--color-foreground)]">
+                      <Check className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                      {f}
+                    </li>
+                  ))}
+                  {tier.notIncluded.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-[var(--color-muted-foreground)] line-through">
+                      <span className="w-4 h-4 mt-0.5 shrink-0 text-center text-xs leading-4">✕</span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="#apply"
+                  onClick={() => setSelectedTier(tier.name)}
+                  className={`w-full text-center py-3 px-5 rounded-xl font-bold text-sm transition-colors ${
+                    tier.highlight
+                      ? "bg-[var(--color-primary)] hover:bg-orange-600 text-white"
+                      : "bg-[var(--color-navy)] hover:bg-[var(--color-navy)]/90 text-white"
+                  }`}
+                >
+                  {tier.cta}
+                </a>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-xs text-[var(--color-muted-foreground)] mt-6">
+            Not sure which tier is right for you? <a href="mailto:hello@aviatoriq.co.uk" className="text-[var(--color-primary)] hover:underline">Email us</a> and we will help you decide.
+          </p>
+        </div>
+      </section>
+
       {/* ── Application form ── */}
       <section id="apply" className="py-20 px-4 bg-[var(--color-navy)]">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="font-display text-3xl font-bold text-white mb-3">Apply to join the partner programme</h2>
             <p className="text-blue-100">
-              We are currently building our partner network ahead of launch. Complete the form below and we will be in touch with partnership details, pricing, and next steps.
+              Complete the form below and we will be in touch with onboarding details and next steps — usually within 2 business days.
             </p>
+            {selectedTier && (
+              <div className="mt-4 inline-flex items-center gap-2 bg-[var(--color-primary)]/20 border border-[var(--color-primary)]/40 text-white text-sm px-4 py-2 rounded-full">
+                <Check className="w-4 h-4 text-[var(--color-primary)]" />
+                Applying for: <strong>{selectedTier}</strong>
+                <button onClick={() => setSelectedTier(null)} className="ml-1 text-white/60 hover:text-white text-xs">✕</button>
+              </div>
+            )}
           </div>
 
           {submitted ? (
@@ -342,11 +497,16 @@ export default function Partner() {
               <CheckCircle2 className="w-12 h-12 text-green-500 mx-auto mb-4" />
               <h3 className="font-display text-2xl font-bold text-[var(--color-navy)] mb-2">Application received</h3>
               <p className="text-[var(--color-muted-foreground)] mb-6">
-                Thank you for your interest. We will review your application and be in touch within 2 business days.
+                Thank you for your interest in partnering with AviatorIQ. We will review your application and be in touch within 2 business days.
               </p>
-              <Link href="/" className="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold hover:underline">
-                Back to AviatorIQ <ArrowRight className="w-4 h-4" />
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Link href="/" className="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold hover:underline">
+                  Back to AviatorIQ <ArrowRight className="w-4 h-4" />
+                </Link>
+                <a href="mailto:hello@aviatoriq.co.uk" className="inline-flex items-center gap-2 text-[var(--color-muted-foreground)] font-semibold hover:underline text-sm">
+                  <Mail className="w-4 h-4" /> hello@aviatoriq.co.uk
+                </a>
+              </div>
             </div>
           ) : (
             <form onSubmit={handleSubmit(onSubmit)} className="bg-white rounded-2xl p-8 space-y-5">
@@ -414,11 +574,16 @@ export default function Partner() {
               </div>
 
               <div>
-                <Label htmlFor="notes" className="text-[var(--color-navy)] font-semibold mb-1.5 block">Anything else you'd like us to know?</Label>
+                <Label htmlFor="notes" className="text-[var(--color-navy)] font-semibold mb-1.5 block">
+                  Anything else you'd like us to know?
+                  {selectedTier && (
+                    <span className="ml-2 text-xs font-normal text-[var(--color-muted-foreground)]">(Tier: {selectedTier} pre-selected)</span>
+                  )}
+                </Label>
                 <Textarea
                   id="notes"
                   {...register("notes")}
-                  placeholder="e.g. specific intake dates, cadet programmes, airline partnerships..."
+                  placeholder="e.g. specific intake dates, cadet programmes, airline partnerships, preferred tier..."
                   rows={3}
                 />
               </div>

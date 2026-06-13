@@ -1,15 +1,17 @@
-import { useEffect } from "react";
 import { Link } from "wouter";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
+import SEO from "@/components/SEO";
 import { ArrowRight, Mail, MessageCircle } from "lucide-react";
 
 export default function Contact() {
-  useEffect(() => {
-    document.title = "Contact AviatorIQ";
-  }, []);
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Contact AviatorIQ | Get in Touch"
+        description="Contact AviatorIQ with questions about pilot training, partnership enquiries, or feedback. Email us at hello@aviatoriq.co.uk."
+        canonical="/contact"
+      />
       <PublicNav />
       <main className="flex-1">
         <div className="bg-hero py-12 px-4">

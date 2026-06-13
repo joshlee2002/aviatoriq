@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { Mail, Globe, Phone } from "lucide-react";
 import { trpc } from "@/lib/trpc";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { getLoginUrl } from "@/const";
@@ -444,6 +445,88 @@ function SchoolModal({ onClose }: { onClose: () => void }) {
   );
 }
 
+// ─── Partner Applications Panel ──────────────────────────────────────────────
+function PartnerApplicationsPanel() {
+  const waitlistQuery = trpc.partner.listWaitlist.useQuery();
+  const entries = waitlistQuery.data ?? [];
+
+  return (
+    <div className="card-base overflow-hidden">
+      <div className="p-4 border-b border-[var(--color-border)] flex items-center gap-2">
+        <Building2 className="w-5 h-5 text-[var(--color-primary)]" />
+        <h3 className="font-display font-bold text-[var(--color-navy)]">Partner Applications</h3>
+        <span className="ml-auto text-xs text-[var(--color-muted-foreground)]">{entries.length} total</span>
+      </div>
+      {waitlistQuery.isLoading ? (
+        <div className="flex items-center justify-center py-12">
+          <Loader2 className="w-6 h-6 animate-spin text-[var(--color-primary)]" />
+        </div>
+      ) : entries.length === 0 ? (
+        <div className="text-center py-12">
+          <Building2 className="w-10 h-10 text-[var(--color-muted-foreground)] mx-auto mb-3" />
+          <p className="font-display font-semibold text-[var(--color-navy)]">No partner applications yet</p>
+          <p className="text-sm text-[var(--color-muted-foreground)]">Applications submitted via /partner will appear here.</p>
+        </div>
+      ) : (
+        <div className="divide-y divide-[var(--color-border)]">
+          {entries.map((entry) => (
+            <div key={entry.id} className="p-5 hover:bg-[var(--color-muted)]/30 transition-colors">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="font-display font-bold text-[var(--color-navy)] text-sm">{entry.schoolName}</span>
+                    {entry.country && (
+                      <span className="text-xs text-[var(--color-muted-foreground)] flex items-center gap-1">
+                        <Globe className="w-3 h-3" />{entry.country}
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap gap-3 text-xs text-[var(--color-muted-foreground)] mb-2">
+                    <span className="flex items-center gap-1"><Users className="w-3 h-3" />{entry.contactName}</span>
+                    <a href={`mailto:${entry.email}`} className="flex items-center gap-1 text-[var(--color-primary)] hover:underline">
+                      <Mail className="w-3 h-3" />{entry.email}
+                    </a>
+                    {entry.website && (
+                      <a href={entry.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-[var(--color-primary)] hover:underline">
+                        <Globe className="w-3 h-3" />Website
+                      </a>
+                    )}
+                  </div>
+                  {entry.coursesOffered && (
+                    <p className="text-xs text-[var(--color-muted-foreground)] mb-1"><strong>Courses:</strong> {entry.coursesOffered}</p>
+                  )}
+                  {entry.notes && (
+                    <p className="text-xs text-[var(--color-muted-foreground)] bg-[var(--color-muted)] rounded-lg p-2 mt-1">{entry.notes}</p>
+                  )}
+                </div>
+                <div className="flex flex-col gap-1.5 items-end shrink-0">
+                  <span className="text-xs text-[var(--color-muted-foreground)] whitespace-nowrap">
+                    {new Date(entry.createdAt).toLocaleDateString()}
+                  </span>
+                  <div className="flex gap-1.5">
+                    {entry.interestedInLeads && (
+                      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-50 text-green-700 border border-green-200">Wants leads</span>
+                    )}
+                    {entry.financeAvailable && (
+                      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">Finance</span>
+                    )}
+                  </div>
+                  <a
+                    href={`mailto:${entry.email}?subject=AviatorIQ Partner Programme — ${encodeURIComponent(entry.schoolName)}`}
+                    className="inline-flex items-center gap-1 text-xs text-white bg-[var(--color-primary)] hover:bg-orange-600 px-3 py-1.5 rounded-lg font-semibold transition-colors"
+                  >
+                    <Mail className="w-3 h-3" /> Reply
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─── Introductions Panel ─────────────────────────────────────────────────────
 function IntroductionsPanel() {
   const introsQuery = trpc.introductions.listAll.useQuery();
@@ -519,7 +602,7 @@ export default function AdminDashboard() {
   const [country, setCountry] = useState("");
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
   const [showSchools, setShowSchools] = useState(false);
-  const [activeTab, setActiveTab] = useState<"leads" | "introductions" | "analytics">("leads");
+  const [activeTab, setActiveTab] = useState<"leads" | "introductions" | "analytics" | "partners">("leads");
   const analyticsQuery = trpc.analytics.overview.useQuery(undefined, { enabled: isAuthenticated && user?.role === "admin" });
   const launchStatsQuery = trpc.analytics.launchStats.useQuery(undefined, { enabled: isAuthenticated && user?.role === "admin", refetchInterval: 60_000 });
   const [page, setPage] = useState(1);
@@ -677,8 +760,8 @@ export default function AdminDashboard() {
         })()}
 
         {/* Tabs */}
-        <div className="flex gap-1 mb-5 bg-[var(--color-muted)] p-1 rounded-xl w-fit">
-          {(["leads", "introductions", "analytics"] as const).map((tab) => (
+        <div className="flex gap-1 mb-5 bg-[var(--color-muted)] p-1 rounded-xl w-fit flex-wrap">
+          {(["leads", "introductions", "analytics", "partners"] as const).map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -689,12 +772,13 @@ export default function AdminDashboard() {
                   : "text-[var(--color-muted-foreground)] hover:text-[var(--color-foreground)]",
               ].join(" ")}
             >
-              {tab === "leads" ? "Leads" : tab === "introductions" ? "Introductions" : "Analytics"}
+              {tab === "leads" ? "Leads" : tab === "introductions" ? "Introductions" : tab === "analytics" ? "Analytics" : "Partners"}
             </button>
           ))}
         </div>
 
         {activeTab === "introductions" && <IntroductionsPanel />}
+        {activeTab === "partners" && <PartnerApplicationsPanel />}
 
         {activeTab === "analytics" && (
           <div className="space-y-6">

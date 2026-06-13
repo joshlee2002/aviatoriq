@@ -1,19 +1,21 @@
-import { useEffect } from "react";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
+import SEO from "@/components/SEO";
 
 export default function Terms() {
-  useEffect(() => {
-    document.title = "Terms of Use – AviatorIQ";
-  }, []);
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Terms of Use | AviatorIQ"
+        description="AviatorIQ's terms of use. Read our terms and conditions for using the pilot career assessment platform, guides, and school directory."
+        canonical="/terms"
+      />
       <PublicNav />
       <main className="flex-1">
         <div className="bg-hero py-12 px-4">
           <div className="container max-w-3xl">
             <h1 className="text-3xl font-display font-bold text-white mb-3">Terms of Use</h1>
-            <p className="text-white/80">Last updated: June 2025</p>
+            <p className="text-white/80">Last updated: June 2026</p>
           </div>
         </div>
         <div className="bg-sky-subtle py-10 px-4">

@@ -17,6 +17,8 @@ const toolLinks = [
   { label: "Cost Calculator", href: "/calculator", desc: "Estimate your total training cost", icon: "🧮" },
   { label: "Integrated vs Modular", href: "/tools/integrated-vs-modular", desc: "Find the right training route", icon: "⚖️" },
   { label: "Medical Readiness Check", href: "/tools/class-1-medical-check", desc: "Assess your Class 1 eligibility", icon: "🩺" },
+  { label: "Medical Condition Lookup", href: "/tools/medical-condition-lookup", desc: "Check any condition against Class 1 standards", icon: "🔍" },
+  { label: "Cadet Eligibility Checker", href: "/tools/cadet-eligibility", desc: "Find which cadet programmes you qualify for", icon: "✈️" },
 ];
 
 const FOR_SCHOOLS = { label: "For Schools", href: "/partner" };
