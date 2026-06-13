@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { useEffect } from "react";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import {
@@ -424,6 +425,10 @@ function CtaBannerSection() {
 }
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "AviatorIQ – Free Pilot Career Assessment & Training Guide";
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <PublicNav />
