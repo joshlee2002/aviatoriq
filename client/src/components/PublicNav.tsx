@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Plane, ChevronDown, Zap, ArrowRight } from "lucide-react";
 import { useCurrency, SUPPORTED_CURRENCIES } from "@/contexts/CurrencyContext";
+import { useCountry } from "@/contexts/CountryContext";
 
 const announcements = [
   { text: "New guide: BA Speedbird Academy 2026 requirements", href: "/guides/ba-speedbird-academy" },
@@ -129,6 +130,7 @@ export default function PublicNav() {
   const toolsRef = useRef<HTMLDivElement>(null);
   const [location] = useLocation();
   const { currency, setCurrency } = useCurrency();
+  const { country, setCountry } = useCountry();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -243,6 +245,17 @@ export default function PublicNav() {
           {/* Right: CTA + currency */}
           <div className="hidden md:flex items-center gap-2">
             <CurrencySwitcher />
+            {/* Country Switcher */}
+            <button
+              type="button"
+              onClick={() => setCountry(country === "us" ? "uk" : "us")}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
+              style={{ color: "oklch(0.75 0.04 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
+              title={country === "us" ? "Switch to UK version" : "Switch to US version"}
+            >
+              {country === "us" ? "🇺🇸 US" : "🇬🇧 UK"}
+            </button>
+
             <Link
               href={FOR_SCHOOLS.href}
               className="px-4 py-2 rounded-lg text-sm font-semibold transition-all no-underline"

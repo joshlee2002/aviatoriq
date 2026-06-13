@@ -21,7 +21,7 @@ import {
   CheckCircle,
   Quote,
 } from "lucide-react";
-import { STATIC_SCHOOLS, type StaticSchool } from "@/data/schools";
+import { ALL_SCHOOLS, type StaticSchool } from "@/data/schools";
 
 const COUNTRIES = [
   "United Kingdom", "United States", "Australia", "Canada", "Ireland",
@@ -57,7 +57,7 @@ export default function Schools() {
   const dbSchools = schoolsQuery.data ?? [];
   const sourceSchools: StaticSchool[] = dbSchools.length > 0
     ? (dbSchools as unknown as StaticSchool[])
-    : STATIC_SCHOOLS;
+    : ALL_SCHOOLS;
 
   const schools = sourceSchools.filter((s) => {
     if (country && s.country !== country) return false;

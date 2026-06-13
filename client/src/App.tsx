@@ -5,6 +5,16 @@ import { Route, Switch, useLocation } from "wouter";
 import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { CountryProvider } from "./contexts/CountryContext";
+
+// US pages
+import HomeUS from "./pages/HomeUS";
+import MedicalConditionLookupUS from "./pages/MedicalConditionLookupUS";
+import CadetEligibilityUS from "./pages/CadetEligibilityUS";
+import CalculatorUS from "./pages/CalculatorUS";
+import HowToBecomePilotUS from "./pages/guides/HowToBecomePilotUS";
+import Part61Vs141 from "./pages/guides/Part61Vs141";
+import FaaMedicalGuide from "./pages/guides/FaaMedicalGuide";
 
 // Public pages
 import Home from "./pages/Home";
@@ -190,6 +200,15 @@ function Router() {
       <Route path="/privacy" component={Privacy} />
       <Route path="/terms" component={Terms} />
 
+      {/* US routes */}
+      <Route path="/us" component={HomeUS} />
+      <Route path="/us/medical-lookup" component={MedicalConditionLookupUS} />
+      <Route path="/us/cadet-eligibility" component={CadetEligibilityUS} />
+      <Route path="/us/calculator" component={CalculatorUS} />
+      <Route path="/us/guides/how-to-become-a-pilot" component={HowToBecomePilotUS} />
+      <Route path="/us/guides/part-61-vs-141" component={Part61Vs141} />
+      <Route path="/us/guides/faa-medical-requirements" component={FaaMedicalGuide} />
+
       {/* 404 */}
       <Route path="/404" component={NotFound} />
       <Route path="*" component={NotFound} />
@@ -200,12 +219,14 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="light">
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
-      </ThemeProvider>
+      <CountryProvider>
+        <ThemeProvider defaultTheme="light">
+          <TooltipProvider>
+            <Toaster />
+            <Router />
+          </TooltipProvider>
+        </ThemeProvider>
+      </CountryProvider>
     </ErrorBoundary>
   );
 }

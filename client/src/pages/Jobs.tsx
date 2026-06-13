@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { useState } from "react";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import SEO from "@/components/SEO";
@@ -154,6 +155,111 @@ const JOBS: Job[] = [
     description: "easyJet promotes from within and also accepts external Captain applications. Candidates must hold an unrestricted ATPL, significant A320 family experience, and strong CRM skills. easyJet Captains benefit from one of the best pay and lifestyle packages in UK short-haul aviation.",
     posted: "June 2026",
   },
+  // ─── US JOBS ─────────────────────────────────────────────────────────────────
+  {
+    id: 11,
+    title: "Cadet Pilot — United Aviate Academy",
+    airline: "United Airlines",
+    location: "Training: Goodyear, AZ. Base: United hubs nationwide",
+    type: "Cadet",
+    hours: "No experience required (PPL preferred)",
+    salary: "Self-funded training, guaranteed United FO interview on completion",
+    link: "https://www.united.com/en/us/fly/company/careers/aviate.html",
+    badge: "United Airlines Pipeline",
+    description: "United Aviate is United Airlines' official cadet pathway. Selected candidates train at the United Aviate Academy in Goodyear, AZ and receive a guaranteed First Officer interview with United upon reaching ATP minimums. United Aviate is the most direct pipeline to the world's largest airline by fleet size.",
+    posted: "June 2026",
+  },
+  {
+    id: 12,
+    title: "Cadet Pilot — Delta Propel Program",
+    airline: "Delta Air Lines",
+    location: "Training: Multiple partner schools. Base: Delta hubs",
+    type: "Cadet",
+    hours: "No experience required",
+    salary: "Self-funded training, guaranteed Delta FO interview on completion",
+    link: "https://www.delta.com/us/en/careers/propel",
+    badge: "Delta Airlines Pipeline",
+    description: "Delta Propel is Delta Air Lines' structured cadet program, partnering with select flight schools including Embry-Riddle and ATP Flight School. Accepted candidates receive a Propel ID number — a guaranteed First Officer interview with Delta upon reaching ATP minimums. Delta is consistently rated the best major airline to work for in the US.",
+    posted: "June 2026",
+  },
+  {
+    id: 13,
+    title: "Cadet Pilot — American Airlines Cadet Academy",
+    airline: "American Airlines",
+    location: "Training: L3Harris (Sanford, FL / Goodyear, AZ). Base: AA hubs",
+    type: "Cadet",
+    hours: "No experience required",
+    salary: "Self-funded training, guaranteed AA FO interview on completion",
+    link: "https://jobs.aa.com/cadet",
+    badge: "American Airlines Pipeline",
+    description: "American Airlines' Cadet Academy is a direct pipeline from zero hours to American Airlines First Officer. Training is conducted at L3Harris Flight Academy. Accepted cadets receive a Cadet ID — a guaranteed interview with American upon reaching 1,500 hours (or R-ATP minimums). American operates the world's largest fleet.",
+    posted: "June 2026",
+  },
+  {
+    id: 14,
+    title: "Cadet Pilot — Southwest Destination 225°",
+    airline: "Southwest Airlines",
+    location: "Training: L3Harris (Sanford, FL). Base: Southwest hubs",
+    type: "Cadet",
+    hours: "No experience required",
+    salary: "Self-funded training, guaranteed Southwest FO interview on completion",
+    link: "https://www.southwest.com/careers/destination225",
+    badge: "Southwest Pipeline",
+    description: "Southwest Destination 225° is Southwest Airlines' cadet pathway, training exclusively at L3Harris Flight Academy. Southwest is known for its exceptional company culture, profit-sharing, and work-life balance. Destination 225° cadets receive a guaranteed First Officer interview upon reaching ATP minimums.",
+    posted: "June 2026",
+  },
+  {
+    id: 15,
+    title: "First Officer — Embraer E175",
+    airline: "SkyWest Airlines",
+    location: "US Bases (Salt Lake City, Los Angeles, Denver, Chicago, Portland, Seattle)",
+    type: "First Officer",
+    hours: "1,500 hours (or R-ATP minimums)",
+    salary: "$80,000 – $110,000 (Year 1–3)",
+    link: "https://www.skywest.com/fly-skywest/pilot-career/",
+    badge: "Top Regional Airline",
+    description: "SkyWest is the largest regional airline in the United States and consistently rated the best regional to work for. Operating as Delta Connection, United Express, and American Eagle, SkyWest FOs gain exceptional experience on the E175 and CRJ-700/900. SkyWest offers a fast upgrade path to Captain and a clear pathway to major airlines.",
+    posted: "June 2026",
+  },
+  {
+    id: 16,
+    title: "First Officer — Embraer E175 / CRJ-900",
+    airline: "Envoy Air (American Eagle)",
+    location: "US Bases (Dallas/Fort Worth, Miami, Chicago, New York)",
+    type: "First Officer",
+    hours: "1,500 hours (or R-ATP minimums)",
+    salary: "$75,000 – $100,000 (Year 1–3)",
+    link: "https://www.envoyair.com/careers/pilots/",
+    badge: "American Airlines Feeder",
+    description: "Envoy Air is the wholly-owned regional subsidiary of American Airlines, operating as American Eagle. Envoy FOs have a direct pathway to American Airlines through the Envoy Career Incentive Program (CIP) — one of the fastest routes to a major airline in the US. Envoy recruits heavily from ATP Flight School and L3Harris.",
+    posted: "June 2026",
+  },
+  {
+    id: 17,
+    title: "First Officer — Boeing 737 / Airbus A320",
+    airline: "Frontier Airlines",
+    location: "US Bases (Denver, Las Vegas, Orlando, Atlanta)",
+    type: "First Officer",
+    hours: "1,500 hours",
+    salary: "$85,000 – $115,000 (Year 1–3)",
+    link: "https://careers.flyfrontier.com/",
+    badge: "Ultra-Low Cost Carrier",
+    description: "Frontier Airlines is one of America's fastest-growing ultra-low-cost carriers and actively recruits First Officers from regional airlines. Frontier operates a mixed Boeing 737 and Airbus A320 family fleet. The airline offers competitive pay, a clear Captain upgrade path, and a growing route network.",
+    posted: "June 2026",
+  },
+  {
+    id: 18,
+    title: "Flight Instructor — CFI / CFII / MEI",
+    airline: "ATP Flight School",
+    location: "80+ locations nationwide",
+    type: "Instructor",
+    hours: "Commercial Pilot Certificate + CFI rating required",
+    salary: "$45,000 – $65,000 + benefits",
+    link: "https://atpflightschool.com/become-a-pilot/flight-instructor-jobs.html",
+    badge: "Build Hours Fast",
+    description: "ATP Flight School hires CFIs at all 80+ of its US locations. As an ATP instructor, you'll build hours quickly — typically reaching 1,500 hours in 12–18 months. ATP instructors receive guaranteed interviews with ATP's airline partners (SkyWest, Envoy, Endeavor, Republic) upon reaching minimums. The fastest path to a regional airline in the US.",
+    posted: "June 2026",
+  },
 ];
 
 const typeColors: Record<string, { bg: string; text: string; border: string }> = {
@@ -173,10 +279,21 @@ const jobSchema = {
 };
 
 export default function Jobs() {
-  const foRoles = JOBS.filter(j => j.type === "First Officer");
-  const cadetRoles = JOBS.filter(j => j.type === "Cadet");
-  const captainRoles = JOBS.filter(j => j.type === "Captain");
-  const instructorRoles = JOBS.filter(j => j.type === "Instructor");
+  const [countryFilter, setCountryFilter] = useState<"all" | "uk" | "us">("all");
+
+  const isUS = (j: Job) => j.id >= 11;
+  const isUK = (j: Job) => j.id <= 10;
+
+  const filteredJobs = JOBS.filter(j => {
+    if (countryFilter === "uk") return isUK(j);
+    if (countryFilter === "us") return isUS(j);
+    return true;
+  });
+
+  const foRoles = filteredJobs.filter(j => j.type === "First Officer");
+  const cadetRoles = filteredJobs.filter(j => j.type === "Cadet");
+  const captainRoles = filteredJobs.filter(j => j.type === "Captain");
+  const instructorRoles = filteredJobs.filter(j => j.type === "Instructor");
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: bg }}>
@@ -203,10 +320,10 @@ export default function Jobs() {
               Pilot Jobs Board
             </div>
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
-              UK Pilot Jobs 2026
+              Pilot Jobs — UK &amp; USA 2026
             </h1>
             <p className="text-base md:text-lg lg:text-xl max-w-2xl mb-5" style={{ color: "oklch(0.65 0.04 240)" }}>
-              Current vacancies at UK airlines — First Officer, Captain, Cadet, and Instructor roles. Updated monthly.
+              Current vacancies at UK and US airlines — First Officer, Captain, Cadet, and Instructor roles. Updated monthly.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <div className="flex items-center gap-2 text-sm" style={{ color: muted }}>
@@ -235,6 +352,26 @@ export default function Jobs() {
               <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>
                 These listings are curated from official airline careers pages and verified as active in June 2026. Always apply directly through the airline's official website. AviatorIQ is not a recruitment agency and does not charge fees.
               </p>
+            </div>
+
+            {/* Country Filter */}
+            <div className="flex items-center gap-2 mb-8">
+              {(["all", "uk", "us"] as const).map((c) => (
+                <button
+                  key={c}
+                  onClick={() => setCountryFilter(c)}
+                  className="px-4 py-2 rounded-lg text-sm font-semibold transition-all"
+                  style={countryFilter === c
+                    ? { background: "oklch(0.72 0.18 65)", color: "oklch(0.10 0.08 252)" }
+                    : { background: "oklch(0.14 0.08 250)", color: "oklch(0.65 0.04 240)", border: "1px solid oklch(1 0 0 / 0.08)" }
+                  }
+                >
+                  {c === "all" ? "All Countries" : c === "uk" ? "🇬🇧 United Kingdom" : "🇺🇸 United States"}
+                </button>
+              ))}
+              <span className="text-sm ml-2" style={{ color: "oklch(0.55 0.04 240)" }}>
+                {filteredJobs.length} listing{filteredJobs.length !== 1 ? "s" : ""}
+              </span>
             </div>
 
             {/* Not yet trained? CTA */}

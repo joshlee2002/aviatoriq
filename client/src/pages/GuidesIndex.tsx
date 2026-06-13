@@ -39,6 +39,10 @@ const guides = [
   { title: "Wizz Air Pilot Academy 2026", description: "Europe's fastest-growing airline's cadet programme — training, costs, and what a Wizz Air career looks like.", href: "/guides/wizz-air-pilot-academy", time: "8 min read", category: "Cadet Programmes", emoji: "🟣" },
   { title: "TUI Airways MPL Programme 2026", description: "TUI's MPL cadet pathway from zero hours to Boeing 737 FO — selection, training, costs, and career.", href: "/guides/tui-mpl-cadet-programme", time: "8 min read", category: "Cadet Programmes", emoji: "🌴" },
   { title: "Pilot Aptitude Tests: Free Prep Guide", description: "What the tests measure, how to prepare, and free resources — without paying £200 for a prep course.", href: "/guides/pilot-aptitude-test-uk", time: "11 min read", category: "Getting Started", emoji: "🧠" },
+  // US guides
+  { title: "How to Become a Pilot in the USA", description: "The complete 2026 guide to FAA licences, Part 141 vs Part 61, ATP minimums, and airline cadet programmes.", href: "/us/guides/how-to-become-a-pilot", time: "9 min read", category: "USA", emoji: "🇺🇸" },
+  { title: "FAA Medical Requirements (2026)", description: "First, Second, and Third Class medical standards — what the AME checks and how to prepare.", href: "/us/guides/faa-medical-requirements", time: "7 min read", category: "USA", emoji: "🏥" },
+  { title: "Part 61 vs Part 141: Which is Right for You?", description: "The honest comparison of the two FAA training structures — cost, speed, and which schools offer what.", href: "/us/guides/part-61-vs-141", time: "8 min read", category: "USA", emoji: "⚖️" },
 ];
 
 const categoryColors: Record<string, { bg: string; text: string; border: string }> = {
@@ -48,6 +52,7 @@ const categoryColors: Record<string, { bg: string; text: string; border: string 
   "Medical": { bg: "oklch(0.55 0.18 145 / 0.12)", text: "oklch(0.7 0.18 145)", border: "oklch(0.55 0.18 145 / 0.25)" },
   "Career": { bg: "oklch(0.65 0.2 300 / 0.12)", text: "oklch(0.78 0.18 300)", border: "oklch(0.65 0.2 300 / 0.25)" },
   "Cadet Programmes": { bg: "oklch(0.55 0.2 145 / 0.12)", text: "oklch(0.72 0.18 145)", border: "oklch(0.55 0.2 145 / 0.25)" },
+  "USA": { bg: "oklch(0.55 0.2 25 / 0.12)", text: "oklch(0.75 0.18 25)", border: "oklch(0.55 0.2 25 / 0.25)" },
 };
 
 const categories = Array.from(new Set(guides.map((g) => g.category)));
