@@ -18,11 +18,11 @@ export default function Terms() {
               {[
                 {
                   heading: "1. Acceptance of terms",
-                  content: "By using PilotPath, you agree to these terms. If you do not agree, please do not use our platform.",
+                  content: "By using AviatorIQ, you agree to these terms. If you do not agree, please do not use our platform.",
                 },
                 {
                   heading: "2. Nature of the service",
-                  content: "PilotPath provides career guidance information and school matching for aspiring pilots. The information on this platform is for general guidance only and does not constitute professional advice. Always verify information with your chosen school, the Civil Aviation Authority, and qualified advisers.",
+                  content: "AviatorIQ provides career guidance information and school matching for aspiring pilots. The information on this platform is for general guidance only and does not constitute professional advice. Always verify information with your chosen school, the Civil Aviation Authority, and qualified advisers.",
                 },
                 {
                   heading: "3. Assessment and roadmap",
@@ -38,11 +38,11 @@ export default function Terms() {
                 },
                 {
                   heading: "6. Intellectual property",
-                  content: "All content on PilotPath, including guides, tools, and the assessment, is owned by PilotPath and protected by copyright. You may not reproduce or distribute our content without permission.",
+                  content: "All content on AviatorIQ, including guides, tools, and the assessment, is owned by AviatorIQ and protected by copyright. You may not reproduce or distribute our content without permission.",
                 },
                 {
                   heading: "7. Limitation of liability",
-                  content: "PilotPath is not liable for any loss or damage arising from your use of the platform, reliance on information provided, or decisions made based on our recommendations. Our total liability to you shall not exceed £100.",
+                  content: "AviatorIQ is not liable for any loss or damage arising from your use of the platform, reliance on information provided, or decisions made based on our recommendations. Our total liability to you shall not exceed £100.",
                 },
                 {
                   heading: "8. Changes to terms",

@@ -10,7 +10,7 @@ export default function About() {
       <main className="flex-1">
         <div className="bg-hero py-12 px-4">
           <div className="container max-w-3xl">
-            <h1 className="text-3xl md:text-4xl font-display font-bold text-white mb-3">About PilotPath</h1>
+            <h1 className="text-3xl md:text-4xl font-display font-bold text-white mb-3">About AviatorIQ</h1>
             <p className="text-lg text-white/80">Helping aspiring pilots find the right training route since day one.</p>
           </div>
         </div>
@@ -19,7 +19,7 @@ export default function About() {
             <div className="card-base p-6 md:p-8 mb-6">
               <h2 className="text-2xl font-display font-bold text-[var(--color-navy)] mb-4">Our mission</h2>
               <p className="text-[var(--color-foreground)] leading-relaxed mb-4">
-                PilotPath exists to make the pilot training journey clearer, less daunting, and more accessible. We know that aspiring pilots face a bewildering array of choices — integrated or modular, which school, which country, how to fund it — and that the wrong decision can cost tens of thousands of pounds and years of time.
+                AviatorIQ exists to make the pilot training journey clearer, less daunting, and more accessible. We know that aspiring pilots face a bewildering array of choices — integrated or modular, which school, which country, how to fund it — and that the wrong decision can cost tens of thousands of pounds and years of time.
               </p>
               <p className="text-[var(--color-foreground)] leading-relaxed">
                 Our free career assessment and AI-powered roadmap tool helps you cut through the noise and find the training route that genuinely fits your goals, budget and background.

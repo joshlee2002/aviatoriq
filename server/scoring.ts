@@ -1,7 +1,14 @@
 /**
- * PilotPath Lead Scoring Engine
- * Max score: 100
+ * AviatorIQ Lead Scoring Engine
+ * Overall score: 0–100
  * Hot: 75–100 | Warm: 45–74 | Cold: <45
+ *
+ * Sub-scores (each 0–100) power the 5-dimension score card on the results page:
+ *   readiness  – commitment, urgency, timeline
+ *   finance    – budget, funding method, finance awareness
+ *   medical    – Class 1 status, age eligibility
+ *   career     – goal clarity, right to work/study, experience
+ *   pathway    – route fit based on budget + goal + country
  */
 
 export interface LeadInput {
@@ -17,126 +24,238 @@ export interface LeadInput {
   rightToWorkStudy?: string | null;
   phone?: string | null;
   writtenAnswer?: string | null;
+  preferredRoute?: string | null;
+  country?: string | null;
+  startTimeframe?: string | null;
 }
 
 export interface ScoreResult {
   score: number;
   category: "Hot" | "Warm" | "Cold";
+  /** Legacy breakdown kept for backward compat */
   breakdown: {
     intent: number;
     finance: number;
     suitability: number;
     engagement: number;
   };
+  /** 5-dimension sub-scores (0–100 each) for the AviatorIQ score card */
+  dimensions: {
+    readiness: number;
+    finance: number;
+    medical: number;
+    career: number;
+    pathway: number;
+  };
+  /** Human-readable label for each dimension */
+  labels: {
+    readiness: string;
+    finance: string;
+    medical: string;
+    career: string;
+    pathway: string;
+  };
+  /** Specific next action recommendation */
+  nextAction: string;
+  /** Biggest risk flag */
+  biggestRisk: string;
+  /** Estimated training cost range */
+  estimatedCostRange: string;
+  /** Estimated timeline */
+  estimatedTimeline: string;
+  /** Recommended route */
+  recommendedRoute: string;
 }
 
+// ── Helpers ──────────────────────────────────────────────────────────────────
+
+function clamp(v: number, max = 100): number {
+  return Math.min(Math.max(v, 0), max);
+}
+
+function scoreLabel(score: number): string {
+  if (score >= 80) return "Excellent";
+  if (score >= 60) return "Good";
+  if (score >= 40) return "Fair";
+  return "Needs attention";
+}
+
+// ── Main scoring function ─────────────────────────────────────────────────────
+
 export function scoreLead(input: LeadInput): ScoreResult {
-  let intent = 0;
-  let finance = 0;
-  let suitability = 0;
-  let engagement = 0;
 
-  // ── Intent (max 40) ──────────────────────────────────────────────────────
-  if (input.pilotGoal === "Airline pilot") {
-    intent += 15;
-  }
+  // ── 1. READINESS (commitment, urgency, timeline) ─────────────────────────
+  let readinessRaw = 0;
 
-  const urgentStart = ["Immediately", "Within 3 months", "Within 6 months", "Within 12 months"];
   const highSeriousness = ["I want to start as soon as possible", "I want to start within 12 months"];
-  if (
-    (input.seriousness && highSeriousness.includes(input.seriousness)) ||
-    (input.seriousness === "I want to start within 1-3 years")
-  ) {
-    intent += input.seriousness === "I want to start within 1-3 years" ? 8 : 15;
-  }
+  const medSeriousness = ["I want to start within 1-3 years"];
+  if (input.seriousness && highSeriousness.includes(input.seriousness)) readinessRaw += 40;
+  else if (input.seriousness && medSeriousness.includes(input.seriousness)) readinessRaw += 25;
+  else if (input.seriousness) readinessRaw += 10;
 
-  if (
-    input.spokenToSchool === "I have booked a visit/open day" ||
-    input.spokenToSchool === "I have already applied somewhere"
-  ) {
-    intent += 10;
-  } else if (input.spokenToSchool === "Yes") {
-    intent += 5;
-  }
+  if (input.spokenToSchool === "I have already applied somewhere") readinessRaw += 30;
+  else if (input.spokenToSchool === "I have booked a visit/open day") readinessRaw += 25;
+  else if (input.spokenToSchool === "Yes") readinessRaw += 15;
 
-  intent = Math.min(intent, 40);
+  if (input.writtenAnswer && input.writtenAnswer.trim().length > 50) readinessRaw += 20;
+  else if (input.writtenAnswer && input.writtenAnswer.trim().length > 20) readinessRaw += 10;
 
-  // ── Finance (max 30) ─────────────────────────────────────────────────────
-  if (
-    input.budgetRange === "£50,000-£100,000" ||
-    input.budgetRange === "£100,000+"
-  ) {
-    finance += 15;
-  } else if (input.budgetRange === "£25,000-£50,000") {
-    finance += 8;
-  }
+  if (input.phone && input.phone.trim().length > 5) readinessRaw += 10;
 
-  const solidFunding = ["Self-funded", "Family support", "Loan/finance"];
-  if (input.fundingMethod && solidFunding.includes(input.fundingMethod)) {
-    finance += 10;
-  } else if (input.fundingMethod === "Scholarship" || input.fundingMethod === "Employer/airline sponsored") {
-    finance += 7;
-  }
+  const readiness = clamp(readinessRaw);
 
-  if (input.wantsFinanceInfo === "Yes") {
-    finance += 5;
-  } else if (input.wantsFinanceInfo === "Maybe") {
-    finance += 2;
-  }
+  // ── 2. FINANCE (budget, funding, finance awareness) ──────────────────────
+  let financeRaw = 0;
 
-  finance = Math.min(finance, 30);
+  if (input.budgetRange === "£100,000+") financeRaw += 40;
+  else if (input.budgetRange === "£50,000-£100,000") financeRaw += 35;
+  else if (input.budgetRange === "£25,000-£50,000") financeRaw += 20;
+  else if (input.budgetRange === "£10,000-£25,000") financeRaw += 10;
 
-  // ── Suitability (max 20) ─────────────────────────────────────────────────
+  const solidFunding = ["Self-funded", "Family support"];
+  const loanFunding = ["Loan/finance", "Scholarship", "Employer/airline sponsored"];
+  if (input.fundingMethod && solidFunding.includes(input.fundingMethod)) financeRaw += 40;
+  else if (input.fundingMethod && loanFunding.includes(input.fundingMethod)) financeRaw += 25;
+  else if (input.fundingMethod) financeRaw += 10;
+
+  if (input.wantsFinanceInfo === "Yes") financeRaw += 15;
+  else if (input.wantsFinanceInfo === "Maybe") financeRaw += 8;
+
+  const finance = clamp(financeRaw);
+
+  // ── 3. MEDICAL (Class 1 status, age eligibility) ─────────────────────────
+  let medicalRaw = 0;
+
+  if (input.class1Medical === "Yes") medicalRaw += 60;
+  else if (input.class1Medical === "I plan to get one") medicalRaw += 40;
+  else if (input.class1Medical === "I'm not sure") medicalRaw += 20;
+  else if (input.class1Medical === "No") medicalRaw += 5;
+
   if (input.age !== null && input.age !== undefined) {
-    if (input.age >= 18 && input.age <= 35) {
-      suitability += 8;
-    } else if (input.age > 35 && input.age <= 45) {
-      suitability += 4;
-    }
+    if (input.age >= 17 && input.age <= 30) medicalRaw += 40;
+    else if (input.age > 30 && input.age <= 40) medicalRaw += 25;
+    else if (input.age > 40 && input.age <= 55) medicalRaw += 10;
+    else if (input.age > 55) medicalRaw += 0;
+    else if (input.age < 17) medicalRaw += 15; // too young but still possible future
   }
 
-  if (
-    input.class1Medical === "Yes" ||
-    input.class1Medical === "I plan to get one"
-  ) {
-    suitability += 5;
-  }
+  const medical = clamp(medicalRaw);
 
-  if (
-    input.flyingExperience === "Trial lesson/discovery flight" ||
-    input.flyingExperience === "PPL student" ||
-    input.flyingExperience === "PPL holder" ||
-    input.flyingExperience === "Other licence/rating"
-  ) {
-    suitability += 4;
-  }
+  // ── 4. CAREER (goal clarity, right to work, experience) ──────────────────
+  let careerRaw = 0;
 
-  if (input.rightToWorkStudy === "Yes") {
-    suitability += 3;
-  }
+  if (input.pilotGoal === "Airline pilot") careerRaw += 40;
+  else if (input.pilotGoal === "Corporate/private jet pilot") careerRaw += 30;
+  else if (input.pilotGoal === "Flight instructor") careerRaw += 25;
+  else if (input.pilotGoal === "Private Pilot Licence (PPL) only") careerRaw += 15;
+  else if (input.pilotGoal) careerRaw += 10;
 
-  suitability = Math.min(suitability, 20);
+  if (input.rightToWorkStudy === "Yes") careerRaw += 30;
+  else if (input.rightToWorkStudy === "I need to check") careerRaw += 10;
 
-  // ── Engagement (max 10) ──────────────────────────────────────────────────
-  if (input.phone && input.phone.trim().length > 5) {
-    engagement += 5;
-  }
-  if (input.writtenAnswer && input.writtenAnswer.trim().length > 20) {
-    engagement += 5;
-  }
+  if (input.flyingExperience === "PPL holder" || input.flyingExperience === "Other licence/rating") careerRaw += 30;
+  else if (input.flyingExperience === "PPL student") careerRaw += 20;
+  else if (input.flyingExperience === "Trial lesson/discovery flight") careerRaw += 10;
 
-  engagement = Math.min(engagement, 10);
+  const career = clamp(careerRaw);
 
-  const score = intent + finance + suitability + engagement;
+  // ── 5. PATHWAY (route fit based on budget + goal + country) ──────────────
+  let pathwayRaw = 0;
+
+  // Route clarity
+  if (input.preferredRoute === "Integrated ATPL (full-time, 18-24 months)") pathwayRaw += 30;
+  else if (input.preferredRoute === "Modular ATPL (flexible, part-time option)") pathwayRaw += 30;
+  else if (input.preferredRoute === "Not sure yet") pathwayRaw += 15;
+  else if (input.preferredRoute) pathwayRaw += 20;
+
+  // Budget-route alignment
+  const highBudget = input.budgetRange === "£100,000+" || input.budgetRange === "£50,000-£100,000";
+  const medBudget = input.budgetRange === "£25,000-£50,000";
+  const isAirline = input.pilotGoal === "Airline pilot";
+
+  if (highBudget && isAirline) pathwayRaw += 40;
+  else if (medBudget && isAirline) pathwayRaw += 25;
+  else if (highBudget) pathwayRaw += 30;
+  else if (medBudget) pathwayRaw += 15;
+
+  // Country availability
+  if (input.country) pathwayRaw += 15;
+
+  const pathway = clamp(pathwayRaw);
+
+  // ── Overall score (legacy-compatible) ────────────────────────────────────
+  // Weighted average: readiness 25%, finance 25%, medical 20%, career 20%, pathway 10%
+  const score = Math.round(
+    readiness * 0.25 +
+    finance * 0.25 +
+    medical * 0.20 +
+    career * 0.20 +
+    pathway * 0.10
+  );
 
   let category: "Hot" | "Warm" | "Cold";
-  if (score >= 75) {
-    category = "Hot";
-  } else if (score >= 45) {
-    category = "Warm";
-  } else {
-    category = "Cold";
+  if (score >= 75) category = "Hot";
+  else if (score >= 45) category = "Warm";
+  else category = "Cold";
+
+  // ── Legacy breakdown ──────────────────────────────────────────────────────
+  const intent = Math.round(readiness * 0.4);
+  const financeLegacy = Math.round(finance * 0.3);
+  const suitability = Math.round((medical + career) * 0.1);
+  const engagement = Math.round(readiness * 0.1);
+
+  // ── Derived recommendations ───────────────────────────────────────────────
+
+  let recommendedRoute = "Modular ATPL";
+  if (input.budgetRange === "£100,000+" && input.pilotGoal === "Airline pilot") {
+    recommendedRoute = "Integrated ATPL";
+  } else if (input.pilotGoal === "Private Pilot Licence (PPL) only") {
+    recommendedRoute = "PPL Only";
+  } else if (input.pilotGoal === "Flight instructor") {
+    recommendedRoute = "Modular ATPL + FI Rating";
   }
 
-  return { score, category, breakdown: { intent, finance, suitability, engagement } };
+  let estimatedCostRange = "£40,000 – £80,000";
+  if (recommendedRoute === "Integrated ATPL") estimatedCostRange = "£80,000 – £120,000";
+  else if (recommendedRoute === "PPL Only") estimatedCostRange = "£8,000 – £15,000";
+  else if (recommendedRoute === "Modular ATPL + FI Rating") estimatedCostRange = "£45,000 – £85,000";
+
+  let estimatedTimeline = "3 – 5 years (modular, part-time)";
+  if (recommendedRoute === "Integrated ATPL") estimatedTimeline = "18 – 24 months";
+  else if (recommendedRoute === "PPL Only") estimatedTimeline = "6 – 18 months";
+
+  let biggestRisk = "Funding";
+  if (finance >= 70) biggestRisk = "Medical clearance";
+  if (finance >= 70 && medical >= 70) biggestRisk = "Finding the right school";
+  if (readiness < 40) biggestRisk = "Commitment / timeline clarity";
+  if (career < 40) biggestRisk = "Goal clarity";
+
+  let nextAction = "Book a free consultation with a training advisor";
+  if (medical < 40) nextAction = "Book a Class 1 Medical assessment";
+  else if (finance < 40) nextAction = "Explore pilot training finance options";
+  else if (readiness >= 70 && finance >= 60) nextAction = "Request introductions to matched flight schools";
+
+  return {
+    score,
+    category,
+    breakdown: {
+      intent: clamp(intent, 40),
+      finance: clamp(financeLegacy, 30),
+      suitability: clamp(suitability, 20),
+      engagement: clamp(engagement, 10),
+    },
+    dimensions: { readiness, finance, medical, career, pathway },
+    labels: {
+      readiness: scoreLabel(readiness),
+      finance: scoreLabel(finance),
+      medical: scoreLabel(medical),
+      career: scoreLabel(career),
+      pathway: scoreLabel(pathway),
+    },
+    nextAction,
+    biggestRisk,
+    estimatedCostRange,
+    estimatedTimeline,
+    recommendedRoute,
+  };
 }

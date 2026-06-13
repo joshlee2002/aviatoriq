@@ -5,13 +5,16 @@ import {
   FlightSchool,
   InsertAdminNote,
   InsertFlightSchool,
+  InsertIntroductionRequest,
   InsertLead,
   InsertLeadAssignment,
   InsertUser,
+  IntroductionRequest,
   Lead,
   LeadAssignment,
   adminNotes,
   flightSchools,
+  introductionRequests,
   leadAssignments,
   leads,
   users,
@@ -272,4 +275,24 @@ export async function matchSchoolsForLead(lead: {
   const where = and(...(conditions as []));
   const results = await db.select().from(flightSchools).where(where).limit(6);
   return results;
+}
+
+// ─── Introduction Requests ────────────────────────────────────────────────────
+export async function createIntroductionRequest(data: InsertIntroductionRequest): Promise<number> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  const result = await db.insert(introductionRequests).values(data);
+  return (result[0] as { insertId: number }).insertId;
+}
+
+export async function getIntroductionRequestsByLeadId(leadId: number): Promise<IntroductionRequest[]> {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(introductionRequests).where(eq(introductionRequests.leadId, leadId));
+}
+
+export async function listAllIntroductionRequests(): Promise<IntroductionRequest[]> {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(introductionRequests).orderBy(introductionRequests.createdAt);
 }

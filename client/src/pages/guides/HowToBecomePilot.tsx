@@ -20,7 +20,7 @@ export default function HowToBecomePilot() {
           content: (
             <>
               <p>The first decision is what type of pilot you want to become. The most common goal is an <strong>Airline Transport Pilot Licence (ATPL)</strong>, which allows you to fly commercially for an airline. Other options include a Private Pilot Licence (PPL) for recreational flying, or a Commercial Pilot Licence (CPL) for charter, cargo or corporate work.</p>
-              <p>Your goal determines which training route you take, how long it takes, and how much it costs. If you are unsure, the PilotPath assessment can help you identify the best route based on your background and ambitions.</p>
+              <p>Your goal determines which training route you take, how long it takes, and how much it costs. If you are unsure, the AviatorIQ assessment can help you identify the best route based on your background and ambitions.</p>
             </>
           ),
         },

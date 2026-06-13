@@ -35,7 +35,7 @@ export default function PublicFooter() {
               <div className="w-8 h-8 bg-[var(--color-primary)] rounded-lg flex items-center justify-center">
                 <Plane className="w-4 h-4 text-white" strokeWidth={2.5} />
               </div>
-              <span className="font-display font-bold text-xl">PilotPath</span>
+              <span className="font-display font-bold text-xl">AviatorIQ</span>
             </div>
             <p className="text-sm text-white/70 leading-relaxed">
               Find your best route into pilot training. Personalised guidance for aspiring pilots.
@@ -82,7 +82,7 @@ export default function PublicFooter() {
 
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/50">
-            © {new Date().getFullYear()} PilotPath. All rights reserved.
+            © {new Date().getFullYear()} AviatorIQ. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             {legalLinks.map((link) => (

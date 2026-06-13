@@ -23,6 +23,8 @@ import {
   Plus,
   CheckCircle2,
   AlertTriangle,
+  School,
+  ArrowRight,
 } from "lucide-react";
 import DashboardLayout from "@/components/DashboardLayout";
 import { toast } from "sonner";
@@ -421,6 +423,72 @@ function SchoolModal({ onClose }: { onClose: () => void }) {
   );
 }
 
+// ─── Introductions Panel ─────────────────────────────────────────────────────
+function IntroductionsPanel() {
+  const introsQuery = trpc.introductions.listAll.useQuery();
+  const intros = introsQuery.data ?? [];
+
+  const statusColors: Record<string, string> = {
+    Pending: "bg-yellow-50 text-yellow-700 border-yellow-100",
+    Sent: "bg-blue-50 text-blue-700 border-blue-100",
+    Responded: "bg-green-50 text-green-700 border-green-100",
+    Declined: "bg-red-50 text-red-700 border-red-100",
+  };
+
+  return (
+    <div className="card-base overflow-hidden">
+      <div className="p-4 border-b border-[var(--color-border)] flex items-center gap-2">
+        <School className="w-5 h-5 text-[var(--color-primary)]" />
+        <h3 className="font-display font-bold text-[var(--color-navy)]">Introduction Requests</h3>
+        <span className="ml-auto text-xs text-[var(--color-muted-foreground)]">{intros.length} total</span>
+      </div>
+      {introsQuery.isLoading ? (
+        <div className="flex items-center justify-center py-12">
+          <Loader2 className="w-6 h-6 animate-spin text-[var(--color-primary)]" />
+        </div>
+      ) : intros.length === 0 ? (
+        <div className="text-center py-12">
+          <School className="w-10 h-10 text-[var(--color-muted-foreground)] mx-auto mb-3" />
+          <p className="font-display font-semibold text-[var(--color-navy)]">No introduction requests yet</p>
+          <p className="text-sm text-[var(--color-muted-foreground)]">When leads request introductions from the results page, they will appear here.</p>
+        </div>
+      ) : (
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-[var(--color-border)] bg-[var(--color-muted)]">
+                {["Lead ID", "School", "Status", "Requested"].map((h) => (
+                  <th key={h} className="text-left px-4 py-3 text-xs font-semibold text-[var(--color-muted-foreground)] uppercase tracking-wider whitespace-nowrap">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {intros.map((intro) => (
+                <tr key={intro.id} className="border-b border-[var(--color-border)] hover:bg-[var(--color-muted)]/50">
+                  <td className="px-4 py-3">
+                    <a href={`/admin?lead=${intro.leadId}`} className="text-[var(--color-primary)] font-medium hover:underline flex items-center gap-1">
+                      Lead #{intro.leadId} <ArrowRight className="w-3 h-3" />
+                    </a>
+                  </td>
+                  <td className="px-4 py-3 text-[var(--color-navy)] font-medium">{intro.schoolName}</td>
+                  <td className="px-4 py-3">
+                    <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium border ${statusColors[intro.status] ?? "bg-gray-50 text-gray-600 border-gray-100"}`}>
+                      {intro.status}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3 text-xs text-[var(--color-muted-foreground)] whitespace-nowrap">
+                    {new Date(intro.createdAt).toLocaleDateString()}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─── Main Admin Dashboard ─────────────────────────────────────────────────────
 export default function AdminDashboard() {
   const { user, loading, isAuthenticated } = useAuth();
@@ -430,6 +498,7 @@ export default function AdminDashboard() {
   const [country, setCountry] = useState("");
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
   const [showSchools, setShowSchools] = useState(false);
+  const [activeTab, setActiveTab] = useState<"leads" | "introductions">("leads");
   const [page, setPage] = useState(1);
 
   const filters = { search, category: category || undefined, status: status || undefined, country: country || undefined, page, pageSize: 50 };
@@ -452,7 +521,7 @@ export default function AdminDashboard() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `pilotpath-leads-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.download = `aviatoriq-leads-${new Date().toISOString().slice(0, 10)}.csv`;
     a.click();
     URL.revokeObjectURL(url);
     toast.success("CSV exported");
@@ -502,7 +571,7 @@ export default function AdminDashboard() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
           <div>
-            <h1 className="text-2xl font-display font-bold text-[var(--color-navy)]">Lead Dashboard</h1>
+            <h1 className="text-2xl font-display font-bold text-[var(--color-navy)]">AviatorIQ Admin</h1>
             <p className="text-sm text-[var(--color-muted-foreground)]">{total} total leads</p>
           </div>
           <div className="flex items-center gap-2">
@@ -517,6 +586,27 @@ export default function AdminDashboard() {
           </div>
         </div>
 
+        {/* Tabs */}
+        <div className="flex gap-1 mb-5 bg-[var(--color-muted)] p-1 rounded-xl w-fit">
+          {(["leads", "introductions"] as const).map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={[
+                "px-4 py-2 rounded-lg text-sm font-semibold capitalize transition-all",
+                activeTab === tab
+                  ? "bg-white text-[var(--color-navy)] shadow-sm"
+                  : "text-[var(--color-muted-foreground)] hover:text-[var(--color-foreground)]",
+              ].join(" ")}
+            >
+              {tab === "leads" ? "Leads" : "Introductions"}
+            </button>
+          ))}
+        </div>
+
+        {activeTab === "introductions" && <IntroductionsPanel />}
+
+        {activeTab === "leads" && <>
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
           {[
@@ -657,6 +747,7 @@ export default function AdminDashboard() {
             </div>
           )}
         </div>
+        </>}
       </div>
 
       {selectedLead && <LeadDetailModal lead={selectedLead} onClose={() => setSelectedLead(null)} />}

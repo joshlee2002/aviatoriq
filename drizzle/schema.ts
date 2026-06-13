@@ -136,3 +136,17 @@ export const adminNotes = mysqlTable("admin_notes", {
 
 export type AdminNote = typeof adminNotes.$inferSelect;
 export type InsertAdminNote = typeof adminNotes.$inferInsert;
+
+// ─── Introduction Requests ────────────────────────────────────────────────────
+export const introductionRequests = mysqlTable("introduction_requests", {
+  id: int("id").autoincrement().primaryKey(),
+  leadId: int("leadId").notNull(),
+  schoolId: int("schoolId").notNull(),
+  schoolName: varchar("schoolName", { length: 255 }),
+  status: mysqlEnum("status", ["Pending", "Sent", "Responded", "Declined"]).default("Pending").notNull(),
+  sentAt: timestamp("sentAt"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type IntroductionRequest = typeof introductionRequests.$inferSelect;
+export type InsertIntroductionRequest = typeof introductionRequests.$inferInsert;

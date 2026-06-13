@@ -9,6 +9,7 @@ import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
 import {
   createAdminNote,
   createFlightSchool,
+  createIntroductionRequest,
   createLead,
   createLeadAssignment,
   deleteLead,
@@ -16,8 +17,10 @@ import {
   getAdminNotesByLeadId,
   getAllLeadsForExport,
   getFlightSchoolById,
+  getIntroductionRequestsByLeadId,
   getLeadAssignments,
   getLeadById,
+  listAllIntroductionRequests,
   listFlightSchools,
   listLeads,
   matchSchoolsForLead,
@@ -84,7 +87,7 @@ export const appRouter = router({
         }
 
         // Score the lead
-        const { score, category } = scoreLead({
+        const scoreResult = scoreLead({
           pilotGoal: input.pilotGoal,
           seriousness: input.seriousness,
           spokenToSchool: input.spokenToSchool,
@@ -97,7 +100,11 @@ export const appRouter = router({
           rightToWorkStudy: input.rightToWorkStudy,
           phone: input.phone,
           writtenAnswer: input.writtenAnswer,
+          preferredRoute: input.preferredRoute,
+          country: input.country,
+          startTimeframe: input.startTimeframe,
         });
+        const { score, category } = scoreResult;
 
         // Generate AI summary (non-blocking, best-effort)
         let aiSummary: string | undefined;
@@ -161,7 +168,7 @@ Lead score: ${score}/100 (${category})`;
           openToAbroad: input.openToAbroad,
         });
 
-        return { leadId, score, category, matchedSchools };
+        return { leadId, score, category, matchedSchools, dimensions: scoreResult.dimensions, labels: scoreResult.labels, nextAction: scoreResult.nextAction, biggestRisk: scoreResult.biggestRisk, estimatedCostRange: scoreResult.estimatedCostRange, estimatedTimeline: scoreResult.estimatedTimeline, recommendedRoute: scoreResult.recommendedRoute };
       }),
 
     getResult: publicProcedure
@@ -178,7 +185,24 @@ Lead score: ${score}/100 (${category})`;
           openToAbroad: lead.openToAbroad,
         });
 
-        return { lead, matchedSchools };
+        const scoreResult = scoreLead({
+          pilotGoal: lead.pilotGoal,
+          seriousness: lead.seriousness,
+          spokenToSchool: lead.spokenToSchool,
+          fundingMethod: lead.fundingMethod,
+          budgetRange: lead.budgetRange,
+          wantsFinanceInfo: lead.wantsFinanceInfo,
+          age: lead.age,
+          class1Medical: lead.class1Medical,
+          flyingExperience: lead.flyingExperience,
+          rightToWorkStudy: lead.rightToWorkStudy,
+          phone: lead.phone,
+          writtenAnswer: lead.writtenAnswer,
+          preferredRoute: lead.preferredRoute,
+          country: lead.country,
+          startTimeframe: lead.startTimeframe,
+        });
+        return { lead, matchedSchools, dimensions: scoreResult.dimensions, labels: scoreResult.labels, nextAction: scoreResult.nextAction, biggestRisk: scoreResult.biggestRisk, estimatedCostRange: scoreResult.estimatedCostRange, estimatedTimeline: scoreResult.estimatedTimeline, recommendedRoute: scoreResult.recommendedRoute };
       }),
 
     generateRoadmap: publicProcedure
@@ -433,6 +457,53 @@ Use cautious, helpful language. Do not invent specific school prices unless they
         return school;
       }),
   }),
-});
+  // ─── Introduction Requests ────────────────────────────────────────────────────
+  introductions: router({
+    requestIntroductions: publicProcedure
+      .input(z.object({
+        leadId: z.number(),
+        schoolIds: z.array(z.number()).min(1).max(5),
+      }))
+      .mutation(async ({ input }) => {
+        const lead = await getLeadById(input.leadId);
+        if (!lead) throw new TRPCError({ code: 'NOT_FOUND' });
 
+        const results = [];
+        for (const schoolId of input.schoolIds) {
+          const school = await getFlightSchoolById(schoolId);
+          if (!school) continue;
+          const id = await createIntroductionRequest({
+            leadId: input.leadId,
+            schoolId,
+            schoolName: school.name,
+            status: 'Pending',
+          });
+          results.push({ id, schoolName: school.name });
+        }
+
+        // Notify owner
+        try {
+          await notifyOwner({
+            title: `🏫 Introduction Request: ${lead.fullName}`,
+            content: `${lead.fullName} has requested introductions to ${results.length} school(s):\n${results.map(r => `- ${r.schoolName}`).join('\n')}\n\nLead score: ${lead.leadScore}/100 (${lead.leadCategory})`,
+          });
+        } catch (e) {
+          console.warn('[Notification] Introduction request notify failed:', e);
+        }
+
+        return { success: true, count: results.length, schools: results };
+      }),
+
+    getByLeadId: publicProcedure
+      .input(z.object({ leadId: z.number() }))
+      .query(async ({ input }) => {
+        return getIntroductionRequestsByLeadId(input.leadId);
+      }),
+
+    listAll: adminProcedure
+      .query(async () => {
+        return listAllIntroductionRequests();
+      }),
+  }),
+});
 export type AppRouter = typeof appRouter;

@@ -1,5 +1,5 @@
 /**
- * PilotPath Analytics
+ * AviatorIQ Analytics
  * Tracks exactly 6 events via Umami (built-in analytics) and window.umami if available.
  */
 

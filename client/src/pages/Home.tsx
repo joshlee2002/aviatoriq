@@ -99,7 +99,7 @@ function HowItWorksSection() {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-[var(--color-navy)] mb-4">
-            How PilotPath works
+            How AviatorIQ works
           </h2>
           <p className="text-lg text-[var(--color-muted-foreground)] max-w-2xl mx-auto">
             Three steps from curiosity to a clear pilot training plan.
@@ -187,7 +187,7 @@ function TrainingRoutesSection() {
             Every type of pilot training, covered
           </h2>
           <p className="text-lg text-[var(--color-muted-foreground)] max-w-2xl mx-auto">
-            Whether you want to fly for an airline, for pleasure, or as a career change, PilotPath helps you find the right route.
+            Whether you want to fly for an airline, for pleasure, or as a career change, AviatorIQ helps you find the right route.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -310,7 +310,7 @@ function SchoolMatchingSection() {
             Matched to the right flight school
           </h2>
           <p className="text-lg text-[var(--color-muted-foreground)]">
-            After your assessment, PilotPath matches you with flight schools based on your country, training goal, budget and preferences — not random results.
+            After your assessment, AviatorIQ matches you with flight schools based on your country, training goal, budget and preferences — not random results.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">

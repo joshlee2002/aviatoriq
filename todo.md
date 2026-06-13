@@ -103,3 +103,15 @@
 - [x] Vitest unit tests for scoring engine
 - [x] Vitest unit tests for lead router
 - [x] Final checkpoint
+
+## Phase 10 – AviatorIQ Rebrand & Platform Upgrade
+
+- [ ] Rename platform from PilotPath to AviatorIQ in all files (HTML title, nav, footer, meta, copy)
+- [ ] Update app title secret VITE_APP_TITLE to AviatorIQ
+- [ ] Update scoring engine to return 5 sub-scores (Readiness, Finance, Medical, Career, Pathway)
+- [ ] Rebuild results page with 5-dimension AviatorIQ score card
+- [ ] Replace "Visit School" links with "Request Introduction" checkbox flow
+- [ ] Add introduction_requests table to schema and router
+- [ ] Seed 50 real flight schools with country, type, finance, website data
+- [ ] Add finance matching layer on results page
+- [ ] Update admin dashboard to show introduction requests

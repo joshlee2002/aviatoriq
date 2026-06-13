@@ -395,7 +395,7 @@ function Step7({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
               {data.consentToContact && <CheckCircle2 className="w-3.5 h-3.5 text-white" />}
             </div>
             <span className="text-sm text-[var(--color-foreground)] leading-relaxed">
-              <strong>Required:</strong> I agree to PilotPath storing my answers and contacting me about pilot training options. I also agree that PilotPath may share my details with relevant flight schools or training partners where I have requested introductions.
+              <strong>Required:</strong> I agree to AviatorIQ storing my answers and contacting me about pilot training options. I also agree that AviatorIQ may share my details with relevant flight schools or training partners where I have requested introductions.
             </span>
           </label>
 
@@ -411,7 +411,7 @@ function Step7({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
               {data.consentToShare && <CheckCircle2 className="w-3.5 h-3.5 text-white" />}
             </div>
             <span className="text-sm text-[var(--color-foreground)] leading-relaxed">
-              Optional: I am happy for PilotPath to use my anonymised data to improve its school matching and guidance services.
+              Optional: I am happy for AviatorIQ to use my anonymised data to improve its school matching and guidance services.
             </span>
           </label>
 

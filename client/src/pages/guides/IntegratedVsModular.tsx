@@ -79,7 +79,7 @@ export default function IntegratedVsModular() {
                 <li><strong>Are you self-disciplined?</strong> Modular requires you to manage your own progress over several years.</li>
                 <li><strong>Do you have family or other commitments?</strong> Modular offers more flexibility around life events.</li>
               </ul>
-              <p className="mt-3">Take the PilotPath assessment to get a personalised recommendation based on your specific profile.</p>
+              <p className="mt-3">Take the AviatorIQ assessment to get a personalised recommendation based on your specific profile.</p>
             </>
           ),
         },

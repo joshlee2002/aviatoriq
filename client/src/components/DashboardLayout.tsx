@@ -28,9 +28,9 @@ import { DashboardLayoutSkeleton } from './DashboardLayoutSkeleton';
 import { Button } from "./ui/button";
 
 const menuItems = [
-  { icon: LayoutDashboard, label: "Lead Dashboard", path: "/admin" },
-  { icon: Building2, label: "School Directory", path: "/schools" },
-  { icon: Home, label: "Back to Site", path: "/" },
+  { icon: LayoutDashboard, label: "AviatorIQ Admin", path: "/admin" },
+  { icon: Building2, label: "Flight Schools", path: "/schools" },
+  { icon: Home, label: "← Back to Site", path: "/" },
 ];
 
 const SIDEBAR_WIDTH_KEY = "sidebar-width";
