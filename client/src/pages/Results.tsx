@@ -86,8 +86,8 @@ function ScoreRing({ score }: { score: number }) {
   const radius = 52;
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (score / 100) * circumference;
-  const color = score >= 75 ? "#f97316" : score >= 45 ? "#f59e0b" : "#60a5fa";
-
+  const color = score >= 85 ? "#f97316" : score >= 55 ? "#f59e0b" : "#60a5fa";
+  const phase = score >= 85 ? "Flight Ready" : score >= 55 ? "Development" : "Exploration";
   return (
     <div className="relative w-36 h-36 flex items-center justify-center">
       <svg className="absolute inset-0 -rotate-90" width="144" height="144" viewBox="0 0 144 144">
@@ -103,7 +103,7 @@ function ScoreRing({ score }: { score: number }) {
       </svg>
       <div className="text-center text-white">
         <div className="text-4xl font-black">{score}</div>
-        <div className="text-xs text-white/60">out of 100</div>
+        <div className="text-xs font-semibold mt-0.5" style={{ color }}>{phase}</div>
       </div>
     </div>
   );
@@ -115,7 +115,7 @@ function AnimatedBar({ score }: { score: number }) {
     const t = setTimeout(() => setWidth(score), 400);
     return () => clearTimeout(t);
   }, [score]);
-  const color = score >= 70 ? "bg-green-500" : score >= 45 ? "bg-amber-500" : "bg-red-400";
+  const color = score >= 85 ? "bg-orange-500" : score >= 55 ? "bg-amber-500" : "bg-blue-400";
   return (
     <div className="h-2 bg-muted rounded-full overflow-hidden">
       <div className={`h-full rounded-full transition-all duration-700 ease-out ${color}`} style={{ width: `${width}%` }} />
@@ -124,9 +124,9 @@ function AnimatedBar({ score }: { score: number }) {
 }
 
 function CategoryBadge({ category }: { category: string }) {
-  if (category === "Hot") return <span className="badge-hot"><Flame className="w-3 h-3" /> Hot Lead</span>;
-  if (category === "Warm") return <span className="badge-warm"><Thermometer className="w-3 h-3" /> Warm Lead</span>;
-  return <span className="badge-cold"><Snowflake className="w-3 h-3" /> Early Stage</span>;
+  if (category === "Hot") return <span className="badge-hot"><Flame className="w-3 h-3" /> Flight Ready</span>;
+  if (category === "Warm") return <span className="badge-warm"><Thermometer className="w-3 h-3" /> Development Phase</span>;
+  return <span className="badge-cold"><Snowflake className="w-3 h-3" /> Exploration Phase</span>;
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
@@ -243,10 +243,10 @@ export default function Results() {
               </div>
               <p className="text-white/70 text-sm max-w-md">
                 {lead.leadCategory === "Hot"
-                  ? "Your profile shows excellent potential. You're well-positioned to start training."
+                  ? "Your profile shows strong readiness. You have the foundations to start training seriously."
                   : lead.leadCategory === "Warm"
-                  ? "You have good foundations. A few areas to strengthen before you begin."
-                  : "You're at the beginning of your journey. Let's map out the path forward."}
+                  ? "You're building towards readiness. A few key areas to develop before you begin."
+                  : "You're in the exploration phase — exactly where many pilots start. Let's map out your path forward."}
               </p>
               {/* PDF Download */}
               {pdfQuery.data?.pdfUrl ? (
@@ -311,48 +311,6 @@ export default function Results() {
                   <p className="text-sm font-bold text-[var(--color-navy)] leading-tight">{item.value}</p>
                 </div>
               ))}
-            </div>
-          )}
-
-          {/* ── 5-Dimension Score Card ── */}
-          {dimensions && labels && (
-            <div className="card-base p-6 animate-fade-in-up">
-              <h2 className="font-display font-bold text-[var(--color-navy)] text-lg mb-1">Your 5-Dimension AviatorIQ Breakdown</h2>
-              <p className="text-sm text-[var(--color-muted-foreground)] mb-5">Each dimension is scored 0–100 based on your answers.</p>
-              <div className="space-y-4">
-                {dimensionConfig.map(({ key, label, icon, color }) => (
-                  <div key={key} className="space-y-1.5">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <span className={color}>{icon}</span>
-                        <span className="text-sm font-semibold text-[var(--color-navy)]">{label}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${
-                          dimensions[key] >= 70 ? "bg-green-100 text-green-700" :
-                          dimensions[key] >= 45 ? "bg-amber-100 text-amber-700" :
-                          "bg-red-100 text-red-700"
-                        }`}>{labels[key]}</span>
-                        <span className="text-sm font-bold text-[var(--color-navy)] w-8 text-right">{dimensions[key]}</span>
-                      </div>
-                    </div>
-                    <AnimatedBar score={dimensions[key]} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* ── Next Action ── */}
-          {nextAction && (
-            <div className="card-base p-5 border-[var(--color-primary)] bg-[var(--color-primary-light)] animate-fade-in-up flex items-start gap-4">
-              <div className="w-9 h-9 rounded-full bg-[var(--color-primary)] flex items-center justify-center flex-shrink-0">
-                <CheckCircle2 className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <p className="text-xs font-semibold text-[var(--color-primary)] uppercase tracking-wider mb-1">Your Next Action</p>
-                <p className="font-semibold text-[var(--color-navy)]">{nextAction}</p>
-              </div>
             </div>
           )}
 
@@ -457,6 +415,48 @@ export default function Results() {
               </div>
             )}
           </div>
+
+          {/* ── Next Action ── */}
+          {nextAction && (
+            <div className="card-base p-5 border-[var(--color-primary)] bg-[var(--color-primary-light)] animate-fade-in-up flex items-start gap-4">
+              <div className="w-9 h-9 rounded-full bg-[var(--color-primary)] flex items-center justify-center flex-shrink-0">
+                <CheckCircle2 className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-[var(--color-primary)] uppercase tracking-wider mb-1">Your Next Action</p>
+                <p className="font-semibold text-[var(--color-navy)]">{nextAction}</p>
+              </div>
+            </div>
+          )}
+
+          {/* ── 5-Dimension Score Card ── */}
+          {dimensions && labels && (
+            <div className="card-base p-6 animate-fade-in-up">
+              <h2 className="font-display font-bold text-[var(--color-navy)] text-lg mb-1">Your 5-Dimension AviatorIQ Breakdown</h2>
+              <p className="text-sm text-[var(--color-muted-foreground)] mb-5">Each dimension is scored 0–100 based on your answers.</p>
+              <div className="space-y-4">
+                {dimensionConfig.map(({ key, label, icon, color }) => (
+                  <div key={key} className="space-y-1.5">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <span className={color}>{icon}</span>
+                        <span className="text-sm font-semibold text-[var(--color-navy)]">{label}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${
+                          dimensions[key] >= 70 ? "bg-green-100 text-green-700" :
+                          dimensions[key] >= 45 ? "bg-amber-100 text-amber-700" :
+                          "bg-red-100 text-red-700"
+                        }`}>{labels[key]}</span>
+                        <span className="text-sm font-bold text-[var(--color-navy)] w-8 text-right">{dimensions[key]}</span>
+                      </div>
+                    </div>
+                    <AnimatedBar score={dimensions[key]} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* ── Finance nudge ── */}
           {lead.wantsFinanceInfo === "Yes" && (

@@ -146,16 +146,7 @@ function Step1({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
             className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white"
           />
         </div>
-        <div>
-          <label className="block text-sm font-semibold text-[var(--color-foreground)] mb-2">Phone number</label>
-          <input
-            type="tel"
-            value={data.phone}
-            onChange={(e) => update("phone", e.target.value)}
-            placeholder="+44 7700 000000"
-            className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white"
-          />
-        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-semibold text-[var(--color-foreground)] mb-2">Country</label>
@@ -444,6 +435,19 @@ function Step7({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
               </button>
             ))}
           </div>
+        </div>
+
+        {/* Phone number — collected after value is delivered */}
+        <div className="p-5 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
+          <p className="text-sm font-semibold text-[var(--color-navy)] mb-1">Phone number <span className="font-normal text-[var(--color-muted-foreground)]">(optional)</span></p>
+          <p className="text-xs text-[var(--color-muted-foreground)] mb-3">Only used if a school or our team needs to reach you directly. Never shared without your permission.</p>
+          <input
+            type="tel"
+            value={data.phone as string}
+            onChange={(e) => update("phone", e.target.value)}
+            placeholder="+44 7700 000000"
+            className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white"
+          />
         </div>
 
         {/* Consent */}

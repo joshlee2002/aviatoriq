@@ -37,11 +37,11 @@ function HeroSection() {
             Free pilot career assessment — takes 5 minutes
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 animate-fade-in-up">
-            Find your best route into{" "}
-            <span className="text-[var(--color-cta)]">pilot training</span>
+            Could You Actually{" "}
+            <span className="text-[var(--color-cta)]">Become An Airline Pilot?</span>
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed animate-fade-in-up delay-100">
-            Answer a few questions about your goals, budget and background. Get a personalised pilot training roadmap and be matched with suitable flight schools — completely free.
+            Get a personalised readiness score, training roadmap and matched flight schools — in 5 minutes. Completely free.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-200">
             <Link href="/quiz" className="btn-cta text-base px-8 py-4">
