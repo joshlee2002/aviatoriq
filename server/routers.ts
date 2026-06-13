@@ -163,20 +163,46 @@ AviatorIQ Score: ${score}/100 (${category})`;
           return 'Low';
         })();
 
+        // Normalise optional string fields: undefined and empty string both become null
+        const ns = (v: string | undefined | null): string | null => (v === undefined || v === '' ? null : v);
+
         const leadId = await createLead({
-          ...input,
-          leadScore: score,
-          leadCategory: category,
-          leadValue,
-          intentScore,
-          aiSummary,
-          status: "New",
-          preferredContact: input.preferredContact ?? null,
-          source: input.source ?? null,
+          fullName: input.fullName,
+          email: input.email,
+          phone: ns(input.phone),
+          country: ns(input.country),
+          city: ns(input.city),
+          age: input.age ?? null,
+          pilotGoal: ns(input.pilotGoal),
+          seriousness: ns(input.seriousness),
+          spokenToSchool: ns(input.spokenToSchool),
+          preferredRoute: ns(input.preferredRoute),
+          openToAbroad: ns(input.openToAbroad),
+          fundingMethod: ns(input.fundingMethod),
+          budgetRange: ns(input.budgetRange),
+          wantsFinanceInfo: ns(input.wantsFinanceInfo),
+          educationLevel: ns(input.educationLevel),
+          class1Medical: ns(input.class1Medical),
+          flyingExperience: ns(input.flyingExperience),
+          rightToWorkStudy: ns(input.rightToWorkStudy),
+          biggestConcern: ns(input.biggestConcern),
+          startTimeframe: ns(input.startTimeframe),
+          wantsSchoolContact: ns(input.wantsSchoolContact),
+          preferredContact: ns(input.preferredContact),
+          source: ns(input.source),
           contactConsentSchools: input.contactConsentSchools ?? true,
           contactConsentFinance: input.contactConsentFinance ?? false,
           contactConsentMedical: input.contactConsentMedical ?? false,
           contactConsentPartners: input.contactConsentPartners ?? false,
+          consentToContact: input.consentToContact,
+          consentToShare: input.consentToShare,
+          writtenAnswer: ns(input.writtenAnswer),
+          aiSummary: aiSummary ?? null,
+          leadScore: score,
+          leadCategory: category,
+          leadValue,
+          intentScore,
+          status: "New",
         });
 
         // Generate PDF blueprint (non-blocking, best-effort)
