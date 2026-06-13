@@ -106,12 +106,38 @@
 
 ## Phase 10 – AviatorIQ Rebrand & Platform Upgrade
 
-- [ ] Rename platform from PilotPath to AviatorIQ in all files (HTML title, nav, footer, meta, copy)
-- [ ] Update app title secret VITE_APP_TITLE to AviatorIQ
-- [ ] Update scoring engine to return 5 sub-scores (Readiness, Finance, Medical, Career, Pathway)
-- [ ] Rebuild results page with 5-dimension AviatorIQ score card
-- [ ] Replace "Visit School" links with "Request Introduction" checkbox flow
-- [ ] Add introduction_requests table to schema and router
-- [ ] Seed 50 real flight schools with country, type, finance, website data
-- [ ] Add finance matching layer on results page
-- [ ] Update admin dashboard to show introduction requests
+- [x] Rename platform from PilotPath to AviatorIQ in all files (HTML title, nav, footer, meta, copy)
+- [x] Update app title secret VITE_APP_TITLE to AviatorIQ
+- [x] Update scoring engine to return 5 sub-scores (Readiness, Finance, Medical, Career, Pathway)
+- [x] Rebuild results page with 5-dimension AviatorIQ score card
+- [x] Replace "Visit School" links with "Request Introduction" checkbox flow
+- [x] Add introduction_requests table to schema and router
+- [x] Seed 50 real flight schools with country, type, finance, website data
+- [x] Add finance matching layer on results page
+- [x] Update admin dashboard to show introduction requests
+
+## Phase 11 – Pilot Blueprint PDF & Admin Insights
+
+- [x] Install PDF generation library (pdfkit or similar) on server
+- [x] Build server-side PDF generator: cover page, score card, pilot profile, recommended route, cost estimate, timeline, matched schools, risks, next actions, disclaimer
+- [x] Store generated PDF in S3 and save key to lead record
+- [x] Add tRPC procedure to download/retrieve PDF by lead ID
+- [x] Add download button on results page
+- [x] Auto-email PDF to user on quiz submission (via notifyOwner pattern or direct email)
+- [x] Admin insights panel: aggregate stats (avg budget, funding method distribution, goal breakdown, score band conversion)
+- [x] Admin insights panel: country distribution chart
+- [x] Admin insights panel: leads over time chart
+
+## Phase 12 – Partner Page, Quiz Enhancement, PDF & Analytics
+
+- [x] Partner With AviatorIQ school-facing sales page (/partner)
+- [x] Add preferred contact method question to quiz (Email/Phone/WhatsApp/Any)
+- [x] Add preferredContact field to leads schema and migration
+- [x] Lead value estimation in admin dashboard (High/Medium/Low, not visible to users)
+- [x] PDF Pilot Blueprint: server-side generation with pdfkit
+- [x] PDF stored in S3, key saved to lead record
+- [x] PDF download endpoint (tRPC procedure)
+- [x] PDF download button on results page
+- [x] Auto-email PDF to user on quiz submission
+- [x] Admin analytics panel: completion stats, score distribution, budget averages, funding breakdown, country split, goal breakdown, leads over time
+- [x] Wire /partner route in App.tsx and add to nav footer

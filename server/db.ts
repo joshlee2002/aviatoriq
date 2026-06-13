@@ -8,15 +8,18 @@ import {
   InsertIntroductionRequest,
   InsertLead,
   InsertLeadAssignment,
+  InsertSchoolWaitlistEntry,
   InsertUser,
   IntroductionRequest,
   Lead,
   LeadAssignment,
+  SchoolWaitlistEntry,
   adminNotes,
   flightSchools,
   introductionRequests,
   leadAssignments,
   leads,
+  schoolWaitlist,
   users,
 } from "../drizzle/schema";
 import { ENV } from "./_core/env";
@@ -295,4 +298,102 @@ export async function listAllIntroductionRequests(): Promise<IntroductionRequest
   const db = await getDb();
   if (!db) return [];
   return db.select().from(introductionRequests).orderBy(introductionRequests.createdAt);
+}
+
+// ─── School Waitlist ─────────────────────────────────────────────────────────
+export async function createSchoolWaitlistEntry(
+  data: InsertSchoolWaitlistEntry
+): Promise<{ id: number }> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  const result = await db.insert(schoolWaitlist).values(data);
+  return { id: (result[0] as { insertId: number }).insertId };
+}
+
+export async function listSchoolWaitlist(): Promise<SchoolWaitlistEntry[]> {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(schoolWaitlist).orderBy(desc(schoolWaitlist.createdAt));
+}
+
+// ─── Analytics ──────────────────────────────────────────────────────────────────
+export async function getLeadAnalytics() {
+  const db = await getDb();
+  if (!db) return null;
+
+  const allLeads = await db.select().from(leads);
+  const total = allLeads.length;
+  if (total === 0) return { total: 0, hot: 0, warm: 0, cold: 0, introductionRequestRate: 0, avgScore: 0, countryBreakdown: {}, goalBreakdown: {}, fundingBreakdown: {}, budgetBreakdown: {}, scoreDistribution: [], leadsPerDay: [] };
+
+  const hot = allLeads.filter(l => l.leadCategory === 'Hot').length;
+  const warm = allLeads.filter(l => l.leadCategory === 'Warm').length;
+  const cold = allLeads.filter(l => l.leadCategory === 'Cold').length;
+  const avgScore = Math.round(allLeads.reduce((s, l) => s + (l.leadScore ?? 0), 0) / total);
+
+  // Introduction request rate
+  const allIntros = await db.select().from(introductionRequests);
+  const leadsWithIntros = new Set(allIntros.map(i => i.leadId)).size;
+  const introductionRequestRate = total > 0 ? Math.round((leadsWithIntros / total) * 100) : 0;
+
+  // Country breakdown
+  const countryBreakdown: Record<string, number> = {};
+  for (const l of allLeads) {
+    const c = l.country ?? 'Unknown';
+    countryBreakdown[c] = (countryBreakdown[c] ?? 0) + 1;
+  }
+
+  // Goal breakdown
+  const goalBreakdown: Record<string, number> = {};
+  for (const l of allLeads) {
+    const g = l.pilotGoal ?? 'Unknown';
+    goalBreakdown[g] = (goalBreakdown[g] ?? 0) + 1;
+  }
+
+  // Funding breakdown
+  const fundingBreakdown: Record<string, number> = {};
+  for (const l of allLeads) {
+    const f = l.fundingMethod ?? 'Unknown';
+    fundingBreakdown[f] = (fundingBreakdown[f] ?? 0) + 1;
+  }
+
+  // Budget breakdown
+  const budgetBreakdown: Record<string, number> = {};
+  for (const l of allLeads) {
+    const b = l.budgetRange ?? 'Unknown';
+    budgetBreakdown[b] = (budgetBreakdown[b] ?? 0) + 1;
+  }
+
+  // Score distribution (buckets of 10)
+  const scoreDistribution = Array.from({ length: 10 }, (_, i) => ({
+    range: `${i * 10}–${i * 10 + 9}`,
+    count: allLeads.filter(l => (l.leadScore ?? 0) >= i * 10 && (l.leadScore ?? 0) <= i * 10 + 9).length,
+  }));
+
+  // Leads per day (last 30 days)
+  const now = Date.now();
+  const thirtyDaysAgo = now - 30 * 24 * 60 * 60 * 1000;
+  const recentLeads = allLeads.filter(l => l.createdAt.getTime() >= thirtyDaysAgo);
+  const leadsPerDayMap: Record<string, number> = {};
+  for (const l of recentLeads) {
+    const day = l.createdAt.toISOString().slice(0, 10);
+    leadsPerDayMap[day] = (leadsPerDayMap[day] ?? 0) + 1;
+  }
+  const leadsPerDay = Object.entries(leadsPerDayMap)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([date, count]) => ({ date, count }));
+
+  return {
+    total,
+    hot,
+    warm,
+    cold,
+    introductionRequestRate,
+    avgScore,
+    countryBreakdown,
+    goalBreakdown,
+    fundingBreakdown,
+    budgetBreakdown,
+    scoreDistribution,
+    leadsPerDay,
+  };
 }

@@ -12,6 +12,7 @@ import {
   createIntroductionRequest,
   createLead,
   createLeadAssignment,
+  createSchoolWaitlistEntry,
   deleteLead,
   deleteFlightSchool,
   getAdminNotesByLeadId,
@@ -20,14 +21,17 @@ import {
   getIntroductionRequestsByLeadId,
   getLeadAssignments,
   getLeadById,
+  getLeadAnalytics,
   listAllIntroductionRequests,
   listFlightSchools,
   listLeads,
+  listSchoolWaitlist,
   matchSchoolsForLead,
   updateFlightSchool,
   updateLead,
 } from "./db";
 import { scoreLead } from "./scoring";
+import { generatePilotBlueprint } from "./pdfReport";
 
 // ─── Admin guard ──────────────────────────────────────────────────────────────
 const adminProcedure = protectedProcedure.use(({ ctx, next }) => {
@@ -60,6 +64,11 @@ const leadSubmitSchema = z.object({
   biggestConcern: z.string().optional(),
   startTimeframe: z.string().optional(),
   wantsSchoolContact: z.string().optional(),
+  preferredContact: z.string().optional(),
+  contactConsentSchools: z.boolean().optional(),
+  contactConsentFinance: z.boolean().optional(),
+  contactConsentMedical: z.boolean().optional(),
+  contactConsentPartners: z.boolean().optional(),
   consentToContact: z.boolean(),
   consentToShare: z.boolean(),
   writtenAnswer: z.string().optional(),
@@ -139,13 +148,36 @@ Lead score: ${score}/100 (${category})`;
           console.warn("[AI] Summary generation failed:", e);
         }
 
+        // Compute lead value (admin-only, not shown to user)
+        const leadValue = (() => {
+          if (score >= 75 && (input.startTimeframe === 'Immediately' || input.startTimeframe === 'Within 3 months' || input.startTimeframe === 'Within 6 months')) return 'High';
+          if (score >= 45) return 'Medium';
+          return 'Low';
+        })();
+
         const leadId = await createLead({
           ...input,
           leadScore: score,
           leadCategory: category,
+          leadValue,
           aiSummary,
           status: "New",
+          preferredContact: input.preferredContact ?? null,
+          contactConsentSchools: input.contactConsentSchools ?? true,
+          contactConsentFinance: input.contactConsentFinance ?? false,
+          contactConsentMedical: input.contactConsentMedical ?? false,
+          contactConsentPartners: input.contactConsentPartners ?? false,
         });
+
+        // Generate PDF blueprint (non-blocking, best-effort)
+        const leadForPdf = await getLeadById(leadId);
+        if (leadForPdf) {
+          generatePilotBlueprint(leadForPdf, scoreResult.dimensions, scoreResult.labels)
+            .then(async (pdfUrl) => {
+              await updateLead(leadId, { pdfKey: pdfUrl });
+            })
+            .catch((e) => console.warn('[PDF] Blueprint generation failed:', e));
+        }
 
         // Notify owner on Hot leads
         if (category === "Hot") {
@@ -168,7 +200,7 @@ Lead score: ${score}/100 (${category})`;
           openToAbroad: input.openToAbroad,
         });
 
-        return { leadId, score, category, matchedSchools, dimensions: scoreResult.dimensions, labels: scoreResult.labels, nextAction: scoreResult.nextAction, biggestRisk: scoreResult.biggestRisk, estimatedCostRange: scoreResult.estimatedCostRange, estimatedTimeline: scoreResult.estimatedTimeline, recommendedRoute: scoreResult.recommendedRoute };
+        return { leadId, score, category, leadValue, matchedSchools, dimensions: scoreResult.dimensions, labels: scoreResult.labels, nextAction: scoreResult.nextAction, biggestRisk: scoreResult.biggestRisk, estimatedCostRange: scoreResult.estimatedCostRange, estimatedTimeline: scoreResult.estimatedTimeline, recommendedRoute: scoreResult.recommendedRoute };
       }),
 
     getResult: publicProcedure
@@ -203,6 +235,14 @@ Lead score: ${score}/100 (${category})`;
           startTimeframe: lead.startTimeframe,
         });
         return { lead, matchedSchools, dimensions: scoreResult.dimensions, labels: scoreResult.labels, nextAction: scoreResult.nextAction, biggestRisk: scoreResult.biggestRisk, estimatedCostRange: scoreResult.estimatedCostRange, estimatedTimeline: scoreResult.estimatedTimeline, recommendedRoute: scoreResult.recommendedRoute };
+      }),
+
+    getPdfUrl: publicProcedure
+      .input(z.object({ leadId: z.number() }))
+      .query(async ({ input }) => {
+        const lead = await getLeadById(input.leadId);
+        if (!lead) throw new TRPCError({ code: "NOT_FOUND" });
+        return { pdfUrl: lead.pdfKey ?? null };
       }),
 
     generateRoadmap: publicProcedure
@@ -504,6 +544,56 @@ Use cautious, helpful language. Do not invent specific school prices unless they
       .query(async () => {
         return listAllIntroductionRequests();
       }),
+  }),
+  // ─── Partner / School Waitlist ───────────────────────────────────────────
+  partner: router({
+    joinWaitlist: publicProcedure
+      .input(
+        z.object({
+          schoolName: z.string().min(2),
+          country: z.string().optional(),
+          contactName: z.string().min(2),
+          email: z.string().email(),
+          website: z.string().optional(),
+          coursesOffered: z.string().optional(),
+          financeAvailable: z.boolean().optional(),
+          interestedInLeads: z.boolean().optional(),
+          notes: z.string().optional(),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const entry = await createSchoolWaitlistEntry({
+          schoolName: input.schoolName,
+          country: input.country ?? null,
+          contactName: input.contactName,
+          email: input.email,
+          website: input.website ?? null,
+          coursesOffered: input.coursesOffered ?? null,
+          financeAvailable: input.financeAvailable ?? false,
+          interestedInLeads: input.interestedInLeads ?? true,
+          notes: input.notes ?? null,
+        });
+        // Notify owner
+        try {
+          await notifyOwner({
+            title: `🏫 New School Partner Application: ${input.schoolName}`,
+            content: `School: ${input.schoolName}\nCountry: ${input.country ?? 'N/A'}\nContact: ${input.contactName}\nEmail: ${input.email}\nWebsite: ${input.website ?? 'N/A'}\nCourses: ${input.coursesOffered ?? 'N/A'}\nFinance: ${input.financeAvailable ? 'Yes' : 'No'}\nWants leads: ${input.interestedInLeads ? 'Yes' : 'No'}`,
+          });
+        } catch (e) {
+          console.warn('[Notification] Partner waitlist notify failed:', e);
+        }
+        return { success: true, id: entry.id };
+      }),
+    listWaitlist: adminProcedure.query(async () => {
+      return listSchoolWaitlist();
+    }),
+  }),
+
+  // ─── Analytics (admin only) ───────────────────────────────────────────────
+  analytics: router({
+    overview: adminProcedure.query(async () => {
+      return getLeadAnalytics();
+    }),
   }),
 });
 export type AppRouter = typeof appRouter;

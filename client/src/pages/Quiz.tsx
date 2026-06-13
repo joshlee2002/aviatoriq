@@ -29,6 +29,11 @@ interface QuizData {
   biggestConcern: string;
   startTimeframe: string;
   wantsSchoolContact: string;
+  preferredContact: string;
+  contactConsentSchools: boolean;
+  contactConsentFinance: boolean;
+  contactConsentMedical: boolean;
+  contactConsentPartners: boolean;
   writtenAnswer: string;
   consentToContact: boolean;
   consentToShare: boolean;
@@ -41,6 +46,8 @@ const EMPTY: QuizData = {
   fundingMethod: "", budgetRange: "", wantsFinanceInfo: "",
   educationLevel: "", class1Medical: "", flyingExperience: "", rightToWorkStudy: "",
   biggestConcern: "", startTimeframe: "", wantsSchoolContact: "",
+  preferredContact: "",
+  contactConsentSchools: true, contactConsentFinance: false, contactConsentMedical: false, contactConsentPartners: false,
   writtenAnswer: "", consentToContact: false, consentToShare: false,
 };
 
@@ -352,6 +359,14 @@ function Step6({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
             ))}
           </div>
         </div>
+        <div>
+          <p className="text-sm font-semibold text-[var(--color-foreground)] mb-3">What is your preferred contact method?</p>
+          <div className="space-y-2">
+            {["Email", "Phone", "WhatsApp", "Any"].map((o) => (
+              <OptionButton key={o} label={o} selected={data.preferredContact === o} onClick={() => update("preferredContact", o)} />
+            ))}
+          </div>
+        </div>
       </div>
     </StepCard>
   );
@@ -377,6 +392,34 @@ function Step7({ data, update }: { data: QuizData; update: (k: keyof QuizData, v
             placeholder="Write as much or as little as you like…"
             className="w-full px-4 py-3 rounded-xl border-2 border-[var(--color-border)] focus:border-[var(--color-primary)] outline-none text-sm transition-colors bg-white resize-none"
           />
+        </div>
+
+        {/* Contact consent categories */}
+        <div className="p-5 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
+          <p className="text-sm font-semibold text-[var(--color-navy)] mb-1">Who are you happy to be contacted by?</p>
+          <p className="text-xs text-[var(--color-muted-foreground)] mb-3">Optional — tick all that apply. This helps us match you with the right partners.</p>
+          <div className="space-y-2">
+            {([
+              { key: "contactConsentSchools" as const, label: "Flight schools" },
+              { key: "contactConsentFinance" as const, label: "Pilot training finance providers" },
+              { key: "contactConsentMedical" as const, label: "Aviation medical examiners" },
+              { key: "contactConsentPartners" as const, label: "Training partners (ground schools, simulators, accommodation)" },
+            ]).map(({ key, label }) => (
+              <label key={key} className="flex items-center gap-3 cursor-pointer">
+                <div
+                  className={`w-5 h-5 rounded border-2 flex-shrink-0 flex items-center justify-center transition-colors ${
+                    data[key]
+                      ? "bg-[var(--color-primary)] border-[var(--color-primary)]"
+                      : "border-[var(--color-border)] hover:border-[var(--color-primary)]"
+                  }`}
+                  onClick={() => update(key, !data[key])}
+                >
+                  {data[key] && <CheckCircle2 className="w-3.5 h-3.5 text-white" />}
+                </div>
+                <span className="text-sm text-[var(--color-foreground)]">{label}</span>
+              </label>
+            ))}
+          </div>
         </div>
 
         {/* Consent */}

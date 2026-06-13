@@ -27,6 +27,7 @@ import {
   PoundSterling,
   Plane,
   School,
+  FileDown,
 } from "lucide-react";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -137,6 +138,7 @@ export default function Results() {
   const [introSubmitted, setIntroSubmitted] = useState(false);
 
   const resultQuery = trpc.leads.getResult.useQuery({ leadId }, { enabled: !!leadId });
+  const pdfQuery = trpc.leads.getPdfUrl.useQuery({ leadId }, { enabled: !!leadId, refetchInterval: (q) => (!q.state.data?.pdfUrl ? 5000 : false) });
   const roadmapMutation = trpc.leads.generateRoadmap.useMutation({
     onSuccess: (data) => {
       try { setRoadmap(JSON.parse(data.roadmap)); } catch { setRoadmapError(true); }
@@ -240,6 +242,23 @@ export default function Results() {
                   ? "You have good foundations. A few areas to strengthen before you begin."
                   : "You're at the beginning of your journey. Let's map out the path forward."}
               </p>
+              {/* PDF Download */}
+              {pdfQuery.data?.pdfUrl ? (
+                <a
+                  href={pdfQuery.data.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm font-semibold transition-colors"
+                >
+                  <FileDown className="w-4 h-4" />
+                  Download Your Pilot Blueprint PDF
+                </a>
+              ) : (
+                <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/10 border border-white/10 text-white/50 text-sm">
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                  Generating your Blueprint PDF…
+                </div>
+              )}
             </div>
           </div>
         </div>

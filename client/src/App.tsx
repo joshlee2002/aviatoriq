@@ -26,6 +26,9 @@ import TrainingTimeline from "./pages/guides/TrainingTimeline";
 // Admin
 import AdminDashboard from "./pages/AdminDashboard";
 
+// Partner page
+import Partner from "./pages/Partner";
+
 // Simple static pages
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -59,6 +62,8 @@ function Router() {
 
       {/* Admin */}
       <Route path="/admin" component={AdminDashboard} />
+      {/* Partner */}
+      <Route path="/partner" component={Partner} />
 
       {/* Static pages */}
       <Route path="/about" component={About} />

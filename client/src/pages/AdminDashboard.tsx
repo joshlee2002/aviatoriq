@@ -25,6 +25,9 @@ import {
   AlertTriangle,
   School,
   ArrowRight,
+  BarChart2,
+  PieChart,
+  Target,
 } from "lucide-react";
 import DashboardLayout from "@/components/DashboardLayout";
 import { toast } from "sonner";
@@ -60,6 +63,7 @@ type Lead = {
   aiRoadmap: string | null;
   leadScore: number;
   leadCategory: "Hot" | "Warm" | "Cold";
+  leadValue: "High" | "Medium" | "Low";
   status: string;
   createdAt: Date;
   updatedAt: Date;
@@ -71,6 +75,12 @@ function CategoryBadge({ category }: { category: string }) {
   if (category === "Hot") return <span className="badge-hot"><Flame className="w-3 h-3" /> Hot</span>;
   if (category === "Warm") return <span className="badge-warm"><Thermometer className="w-3 h-3" /> Warm</span>;
   return <span className="badge-cold"><Snowflake className="w-3 h-3" /> Cold</span>;
+}
+
+function LeadValueBadge({ value }: { value: string }) {
+  if (value === "High") return <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">💎 High Value</span>;
+  if (value === "Medium") return <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200">⭐ Medium</span>;
+  return <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-gray-50 text-gray-500 border border-gray-200">Low</span>;
 }
 
 function StatusBadge({ status }: { status: string }) {
@@ -159,6 +169,7 @@ function LeadDetailModal({ lead, onClose }: { lead: Lead; onClose: () => void })
             <h2 className="font-display font-bold text-xl text-[var(--color-navy)]">{lead.fullName}</h2>
             <div className="flex items-center gap-2 mt-1">
               <CategoryBadge category={lead.leadCategory} />
+              <LeadValueBadge value={lead.leadValue ?? 'Low'} />
               <span className="text-sm text-[var(--color-muted-foreground)]">Score: {lead.leadScore}/100</span>
             </div>
           </div>
@@ -498,7 +509,8 @@ export default function AdminDashboard() {
   const [country, setCountry] = useState("");
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
   const [showSchools, setShowSchools] = useState(false);
-  const [activeTab, setActiveTab] = useState<"leads" | "introductions">("leads");
+  const [activeTab, setActiveTab] = useState<"leads" | "introductions" | "analytics">("leads");
+  const analyticsQuery = trpc.analytics.overview.useQuery(undefined, { enabled: isAuthenticated && user?.role === "admin" });
   const [page, setPage] = useState(1);
 
   const filters = { search, category: category || undefined, status: status || undefined, country: country || undefined, page, pageSize: 50 };
@@ -509,11 +521,11 @@ export default function AdminDashboard() {
     const result = await exportQuery.refetch();
     if (!result.data) return;
     const leads = result.data;
-    const headers = ["ID", "Name", "Email", "Phone", "Country", "City", "Age", "Goal", "Route", "Budget", "Score", "Category", "Status", "Created"];
+    const headers = ["ID", "Name", "Email", "Phone", "Country", "City", "Age", "Goal", "Route", "Budget", "Score", "Category", "Lead Value", "Preferred Contact", "Status", "Created"];
     const rows = leads.map((l) => [
       l.id, l.fullName, l.email, l.phone ?? "", l.country ?? "", l.city ?? "", l.age ?? "",
       l.pilotGoal ?? "", l.preferredRoute ?? "", l.budgetRange ?? "",
-      l.leadScore, l.leadCategory, l.status,
+      l.leadScore, l.leadCategory, (l as any).leadValue ?? "Low", (l as any).preferredContact ?? "", l.status,
       new Date(l.createdAt).toLocaleDateString(),
     ]);
     const csv = [headers, ...rows].map((r) => r.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(",")).join("\n");
@@ -588,7 +600,7 @@ export default function AdminDashboard() {
 
         {/* Tabs */}
         <div className="flex gap-1 mb-5 bg-[var(--color-muted)] p-1 rounded-xl w-fit">
-          {(["leads", "introductions"] as const).map((tab) => (
+          {(["leads", "introductions", "analytics"] as const).map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -599,12 +611,185 @@ export default function AdminDashboard() {
                   : "text-[var(--color-muted-foreground)] hover:text-[var(--color-foreground)]",
               ].join(" ")}
             >
-              {tab === "leads" ? "Leads" : "Introductions"}
+              {tab === "leads" ? "Leads" : tab === "introductions" ? "Introductions" : "Analytics"}
             </button>
           ))}
         </div>
 
         {activeTab === "introductions" && <IntroductionsPanel />}
+
+        {activeTab === "analytics" && (
+          <div className="space-y-6">
+            {analyticsQuery.isLoading && (
+              <div className="flex items-center justify-center py-20">
+                <Loader2 className="w-8 h-8 animate-spin text-[var(--color-primary)]" />
+              </div>
+            )}
+            {analyticsQuery.data && (() => {
+              const a = analyticsQuery.data;
+              if (!a) return null;
+              return (
+                <>
+                  {/* Headline metric: Introduction Request Rate */}
+                  <div className="card-base p-6 border-2 border-[var(--color-primary)]/20 bg-gradient-to-r from-orange-50 to-white">
+                    <div className="flex items-center gap-3 mb-2">
+                      <Target className="w-6 h-6 text-[var(--color-primary)]" />
+                      <h2 className="font-display font-bold text-[var(--color-navy)] text-xl">Introduction Request Rate</h2>
+                    </div>
+                    <p className="text-5xl font-display font-bold text-[var(--color-primary)] mb-1">{a.introductionRequestRate}%</p>
+                    <p className="text-sm text-[var(--color-muted-foreground)]">
+                      {a.introductionRequestRate >= 25
+                        ? "Strong conversion — users are finding value in the matched schools."
+                        : a.introductionRequestRate >= 10
+                        ? "Moderate conversion. Consider improving school match quality or results page copy."
+                        : "Low conversion. Review the results page experience and school matching logic."}
+                    </p>
+                  </div>
+
+                  {/* Key stats */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    {[
+                      { label: "Total Assessments", value: a.total, icon: <Users className="w-5 h-5" />, color: "text-[var(--color-primary)]" },
+                      { label: "Average Score", value: `${a.avgScore}/100`, icon: <BarChart2 className="w-5 h-5" />, color: "text-blue-600" },
+                      { label: "Flight Ready", value: a.hot, icon: <Flame className="w-5 h-5" />, color: "text-[var(--color-hot)]" },
+                      { label: "Development Phase", value: a.warm, icon: <Thermometer className="w-5 h-5" />, color: "text-[var(--color-warm)]" },
+                    ].map((stat) => (
+                      <div key={stat.label} className="card-base p-4">
+                        <div className={`${stat.color} mb-2`}>{stat.icon}</div>
+                        <div className={`text-2xl font-display font-bold ${stat.color}`}>{stat.value}</div>
+                        <div className="text-xs text-[var(--color-muted-foreground)] mt-1">{stat.label}</div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Score distribution */}
+                  <div className="card-base p-6">
+                    <h3 className="font-display font-bold text-[var(--color-navy)] mb-4 flex items-center gap-2"><BarChart2 className="w-5 h-5 text-[var(--color-primary)]" /> Score Distribution</h3>
+                    <div className="flex items-end gap-1 h-32">
+                      {a.scoreDistribution.map((bucket) => {
+                        const maxCount = Math.max(...a.scoreDistribution.map(b => b.count), 1);
+                        const height = Math.round((bucket.count / maxCount) * 100);
+                        return (
+                          <div key={bucket.range} className="flex-1 flex flex-col items-center gap-1">
+                            <span className="text-xs text-[var(--color-muted-foreground)]">{bucket.count > 0 ? bucket.count : ''}</span>
+                            <div
+                              className="w-full rounded-t-sm bg-[var(--color-primary)]/80 transition-all"
+                              style={{ height: `${Math.max(height, bucket.count > 0 ? 4 : 0)}%` }}
+                            />
+                            <span className="text-[10px] text-[var(--color-muted-foreground)] rotate-0">{bucket.range.split('–')[0]}</span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                    <p className="text-xs text-[var(--color-muted-foreground)] mt-2 text-center">Score range (0–100)</p>
+                  </div>
+
+                  {/* Breakdowns */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {/* Country breakdown */}
+                    <div className="card-base p-6">
+                      <h3 className="font-display font-bold text-[var(--color-navy)] mb-4 flex items-center gap-2"><PieChart className="w-5 h-5 text-[var(--color-primary)]" /> Country Breakdown</h3>
+                      <div className="space-y-2">
+                        {Object.entries(a.countryBreakdown).sort(([,a],[,b]) => b - a).slice(0, 8).map(([country, count]) => (
+                          <div key={country} className="flex items-center gap-2">
+                            <div className="flex-1">
+                              <div className="flex justify-between text-sm mb-0.5">
+                                <span className="text-[var(--color-foreground)] font-medium">{country}</span>
+                                <span className="text-[var(--color-muted-foreground)]">{count}</span>
+                              </div>
+                              <div className="h-1.5 bg-[var(--color-muted)] rounded-full">
+                                <div className="h-1.5 bg-[var(--color-primary)] rounded-full" style={{ width: `${Math.round((count / a.total) * 100)}%` }} />
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Funding breakdown */}
+                    <div className="card-base p-6">
+                      <h3 className="font-display font-bold text-[var(--color-navy)] mb-4 flex items-center gap-2"><PieChart className="w-5 h-5 text-blue-500" /> Funding Method</h3>
+                      <div className="space-y-2">
+                        {Object.entries(a.fundingBreakdown).sort(([,a],[,b]) => b - a).map(([method, count]) => (
+                          <div key={method} className="flex items-center gap-2">
+                            <div className="flex-1">
+                              <div className="flex justify-between text-sm mb-0.5">
+                                <span className="text-[var(--color-foreground)] font-medium">{method}</span>
+                                <span className="text-[var(--color-muted-foreground)]">{count} ({Math.round((count / a.total) * 100)}%)</span>
+                              </div>
+                              <div className="h-1.5 bg-[var(--color-muted)] rounded-full">
+                                <div className="h-1.5 bg-blue-500 rounded-full" style={{ width: `${Math.round((count / a.total) * 100)}%` }} />
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Goal breakdown */}
+                    <div className="card-base p-6">
+                      <h3 className="font-display font-bold text-[var(--color-navy)] mb-4 flex items-center gap-2"><Target className="w-5 h-5 text-green-500" /> Pilot Goal</h3>
+                      <div className="space-y-2">
+                        {Object.entries(a.goalBreakdown).sort(([,a],[,b]) => b - a).map(([goal, count]) => (
+                          <div key={goal} className="flex items-center gap-2">
+                            <div className="flex-1">
+                              <div className="flex justify-between text-sm mb-0.5">
+                                <span className="text-[var(--color-foreground)] font-medium">{goal}</span>
+                                <span className="text-[var(--color-muted-foreground)]">{count} ({Math.round((count / a.total) * 100)}%)</span>
+                              </div>
+                              <div className="h-1.5 bg-[var(--color-muted)] rounded-full">
+                                <div className="h-1.5 bg-green-500 rounded-full" style={{ width: `${Math.round((count / a.total) * 100)}%` }} />
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Budget breakdown */}
+                    <div className="card-base p-6">
+                      <h3 className="font-display font-bold text-[var(--color-navy)] mb-4 flex items-center gap-2"><PieChart className="w-5 h-5 text-amber-500" /> Budget Range</h3>
+                      <div className="space-y-2">
+                        {Object.entries(a.budgetBreakdown).sort(([,a],[,b]) => b - a).map(([budget, count]) => (
+                          <div key={budget} className="flex items-center gap-2">
+                            <div className="flex-1">
+                              <div className="flex justify-between text-sm mb-0.5">
+                                <span className="text-[var(--color-foreground)] font-medium">{budget}</span>
+                                <span className="text-[var(--color-muted-foreground)]">{count} ({Math.round((count / a.total) * 100)}%)</span>
+                              </div>
+                              <div className="h-1.5 bg-[var(--color-muted)] rounded-full">
+                                <div className="h-1.5 bg-amber-500 rounded-full" style={{ width: `${Math.round((count / a.total) * 100)}%` }} />
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Leads per day */}
+                  {a.leadsPerDay.length > 0 && (
+                    <div className="card-base p-6">
+                      <h3 className="font-display font-bold text-[var(--color-navy)] mb-4">Assessments per Day (Last 30 Days)</h3>
+                      <div className="flex items-end gap-1 h-24">
+                        {a.leadsPerDay.map((d) => {
+                          const maxCount = Math.max(...a.leadsPerDay.map(x => x.count), 1);
+                          const height = Math.round((d.count / maxCount) * 100);
+                          return (
+                            <div key={d.date} className="flex-1 flex flex-col items-center gap-1" title={`${d.date}: ${d.count}`}>
+                              <div className="w-full rounded-t-sm bg-[var(--color-navy)]/60" style={{ height: `${Math.max(height, 4)}%` }} />
+                            </div>
+                          );
+                        })}
+                      </div>
+                      <p className="text-xs text-[var(--color-muted-foreground)] mt-2">{a.leadsPerDay[0]?.date} → {a.leadsPerDay[a.leadsPerDay.length - 1]?.date}</p>
+                    </div>
+                  )}
+                </>
+              );
+            })()}
+          </div>
+        )}
 
         {activeTab === "leads" && <>
         {/* Stats */}
@@ -714,7 +899,7 @@ export default function AdminDashboard() {
                         <span className="font-bold text-[var(--color-navy)]">{lead.leadScore}</span>
                         <span className="text-xs text-[var(--color-muted-foreground)]">/100</span>
                       </td>
-                      <td className="px-4 py-3"><CategoryBadge category={lead.leadCategory} /></td>
+                        <td className="px-4 py-3"><CategoryBadge category={lead.leadCategory} /><div className="mt-1"><LeadValueBadge value={lead.leadValue ?? 'Low'} /></div></td>
                       <td className="px-4 py-3"><StatusBadge status={lead.status} /></td>
                       <td className="px-4 py-3 text-xs text-[var(--color-muted-foreground)] whitespace-nowrap">
                         {new Date(lead.createdAt).toLocaleDateString()}

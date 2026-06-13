@@ -54,6 +54,11 @@ export const leads = mysqlTable("leads", {
   biggestConcern: varchar("biggestConcern", { length: 100 }),
   startTimeframe: varchar("startTimeframe", { length: 100 }),
   wantsSchoolContact: varchar("wantsSchoolContact", { length: 10 }),
+  preferredContact: varchar("preferredContact", { length: 50 }),
+  contactConsentSchools: boolean("contactConsentSchools").default(true),
+  contactConsentFinance: boolean("contactConsentFinance").default(false),
+  contactConsentMedical: boolean("contactConsentMedical").default(false),
+  contactConsentPartners: boolean("contactConsentPartners").default(false),
   // Consent
   consentToContact: boolean("consentToContact").default(false).notNull(),
   consentToShare: boolean("consentToShare").default(false).notNull(),
@@ -64,6 +69,9 @@ export const leads = mysqlTable("leads", {
   // Scoring
   leadScore: int("leadScore").default(0).notNull(),
   leadCategory: mysqlEnum("leadCategory", ["Hot", "Warm", "Cold"]).default("Cold").notNull(),
+  leadValue: mysqlEnum("leadValue", ["High", "Medium", "Low"]).default("Low").notNull(),
+  // PDF
+  pdfKey: varchar("pdfKey", { length: 500 }),
   // Status
   status: mysqlEnum("status", [
     "New",
@@ -136,6 +144,24 @@ export const adminNotes = mysqlTable("admin_notes", {
 
 export type AdminNote = typeof adminNotes.$inferSelect;
 export type InsertAdminNote = typeof adminNotes.$inferInsert;
+
+// ─── School Waitlist ─────────────────────────────────────────────────────────
+export const schoolWaitlist = mysqlTable("school_waitlist", {
+  id: int("id").autoincrement().primaryKey(),
+  schoolName: varchar("schoolName", { length: 255 }).notNull(),
+  country: varchar("country", { length: 100 }),
+  contactName: varchar("contactName", { length: 255 }).notNull(),
+  email: varchar("email", { length: 320 }).notNull(),
+  website: varchar("website", { length: 500 }),
+  coursesOffered: text("coursesOffered"),
+  financeAvailable: boolean("financeAvailable").default(false),
+  interestedInLeads: boolean("interestedInLeads").default(true),
+  notes: text("notes"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type SchoolWaitlistEntry = typeof schoolWaitlist.$inferSelect;
+export type InsertSchoolWaitlistEntry = typeof schoolWaitlist.$inferInsert;
 
 // ─── Introduction Requests ────────────────────────────────────────────────────
 export const introductionRequests = mysqlTable("introduction_requests", {

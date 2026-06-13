@@ -16,6 +16,7 @@ const platformLinks = [
   { label: "Flight School Directory", href: "/schools" },
   { label: "Cost Calculator", href: "/calculator" },
   { label: "Take the Assessment", href: "/quiz" },
+  { label: "Partner With AviatorIQ", href: "/partner" },
   { label: "Contact", href: "/contact" },
 ];
 

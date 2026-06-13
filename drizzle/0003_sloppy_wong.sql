@@ -1,0 +1,1 @@
+ALTER TABLE `leads` ADD `pdfKey` varchar(500);

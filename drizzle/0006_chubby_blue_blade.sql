@@ -1,0 +1,1 @@
+ALTER TABLE `leads` ADD `leadValue` enum('High','Medium','Low') DEFAULT 'Low' NOT NULL;
