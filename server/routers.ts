@@ -333,6 +333,8 @@ Use cautious, helpful language. Do not invent specific school prices unless they
           maxScore: z.number().optional(),
           page: z.number().default(1),
           pageSize: z.number().default(50),
+          sortBy: z.enum(["createdAt", "leadScore", "intentScore"]).optional(),
+          sortDir: z.enum(["asc", "desc"]).optional(),
         })
       )
       .query(async ({ input }) => {

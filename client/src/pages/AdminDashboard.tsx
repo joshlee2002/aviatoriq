@@ -9,6 +9,8 @@ import {
   Thermometer,
   Snowflake,
   ChevronDown,
+  ChevronUp,
+  ChevronsUpDown,
   X,
   Loader2,
   Eye,
@@ -521,8 +523,14 @@ export default function AdminDashboard() {
   const analyticsQuery = trpc.analytics.overview.useQuery(undefined, { enabled: isAuthenticated && user?.role === "admin" });
   const launchStatsQuery = trpc.analytics.launchStats.useQuery(undefined, { enabled: isAuthenticated && user?.role === "admin", refetchInterval: 60_000 });
   const [page, setPage] = useState(1);
+  const [sortBy, setSortBy] = useState<"createdAt" | "leadScore" | "intentScore">("createdAt");
+  const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
+  const handleSort = (col: "createdAt" | "leadScore" | "intentScore") => {
+    if (sortBy === col) setSortDir(d => d === "desc" ? "asc" : "desc");
+    else { setSortBy(col); setSortDir("desc"); }
+  };
 
-  const filters = { search, category: category || undefined, status: status || undefined, country: country || undefined, page, pageSize: 50 };
+  const filters = { search, category: category || undefined, status: status || undefined, country: country || undefined, page, pageSize: 50, sortBy, sortDir };
   const leadsQuery = trpc.admin.listLeads.useQuery(filters, { enabled: isAuthenticated && user?.role === "admin" });
   const exportQuery = trpc.admin.exportLeads.useQuery(undefined, { enabled: false });
 
@@ -964,13 +972,27 @@ export default function AdminDashboard() {
           ) : (
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
-                <thead>
+<thead>
                   <tr className="border-b border-[var(--color-border)] bg-[var(--color-muted)]">
-                    {["Name", "Country", "Goal", "Budget", "Score", "Category", "Source", "Status", "Date", ""].map((h) => (
-                      <th key={h} className="text-left px-4 py-3 text-xs font-semibold text-[var(--color-muted-foreground)] uppercase tracking-wider whitespace-nowrap">
-                        {h}
-                      </th>
+                    {["Name", "Country", "Goal", "Budget"].map((h) => (
+                      <th key={h} className="text-left px-4 py-3 text-xs font-semibold text-[var(--color-muted-foreground)] uppercase tracking-wider whitespace-nowrap">{h}</th>
                     ))}
+                    {(["Score", "Intent", "Category", "Source", "Status", "Date", ""] as const).map((h) => {
+                      const sortKey = h === "Score" ? "leadScore" : h === "Intent" ? "intentScore" : h === "Date" ? "createdAt" : null;
+                      const isActive = sortKey && sortBy === sortKey;
+                      return (
+                        <th
+                          key={h}
+                          onClick={sortKey ? () => handleSort(sortKey as "createdAt" | "leadScore" | "intentScore") : undefined}
+                          className={`text-left px-4 py-3 text-xs font-semibold text-[var(--color-muted-foreground)] uppercase tracking-wider whitespace-nowrap ${sortKey ? "cursor-pointer hover:text-[var(--color-navy)] select-none" : ""} ${isActive ? "text-[var(--color-navy)]" : ""}`}
+                        >
+                          <span className="inline-flex items-center gap-1">
+                            {h === "Intent" ? <span title="Intent Score — commercial readiness signal (admin only)">⚡ Intent</span> : h}
+                            {sortKey && (isActive ? (sortDir === "desc" ? <ChevronDown className="w-3 h-3" /> : <ChevronUp className="w-3 h-3" />) : <ChevronsUpDown className="w-3 h-3 opacity-40" />)}
+                          </span>
+                        </th>
+                      );
+                    })}
                   </tr>
                 </thead>
                 <tbody>
@@ -988,10 +1010,15 @@ export default function AdminDashboard() {
                       <td className="px-4 py-3 text-[var(--color-muted-foreground)] max-w-32 truncate">{lead.pilotGoal ?? "—"}</td>
                       <td className="px-4 py-3 text-[var(--color-muted-foreground)] whitespace-nowrap">{lead.budgetRange ?? "—"}</td>
                       <td className="px-4 py-3">
-                        <span className="font-bold text-[var(--color-navy)]">{lead.leadScore}</span>
+                        <span className={`font-bold ${sortBy === "leadScore" ? "text-[var(--color-primary)]" : "text-[var(--color-navy)]"}`}>{lead.leadScore}</span>
                         <span className="text-xs text-[var(--color-muted-foreground)]">/100</span>
                       </td>
-                        <td className="px-4 py-3"><CategoryBadge category={lead.leadCategory} /><div className="mt-1"><LeadValueBadge value={lead.leadValue ?? 'Low'} /></div></td>
+                      <td className="px-4 py-3">
+                        {(lead.intentScore ?? 0) > 0 ? (
+                          <span className={`font-bold ${sortBy === "intentScore" ? "text-amber-600" : "text-amber-500"}`}>{lead.intentScore}</span>
+                        ) : <span className="text-[var(--color-muted-foreground)] text-xs">—</span>}
+                      </td>
+                      <td className="px-4 py-3"><CategoryBadge category={lead.leadCategory} /><div className="mt-1"><LeadValueBadge value={lead.leadValue ?? 'Low'} /></div></td>
                       <td className="px-4 py-3 text-xs text-[var(--color-muted-foreground)] max-w-24 truncate">{(lead as any).source ?? '—'}</td>
                       <td className="px-4 py-3"><StatusBadge status={lead.status} /></td>
                       <td className="px-4 py-3 text-xs text-[var(--color-muted-foreground)] whitespace-nowrap">

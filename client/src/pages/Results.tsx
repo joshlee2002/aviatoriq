@@ -30,7 +30,9 @@ import {
   Plane,
   School,
   FileDown,
+  Info,
 } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface FlightSchool {
@@ -240,6 +242,34 @@ export default function Results() {
               <ScoreRing score={lead.leadScore} />
               <div className="flex items-center gap-2">
                 <CategoryBadge category={lead.leadCategory} />
+                <TooltipProvider delayDuration={200}>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <button className="text-white/50 hover:text-white/90 transition-colors" aria-label="What does this phase mean?">
+                        <Info className="w-4 h-4" />
+                      </button>
+                    </TooltipTrigger>
+                    <TooltipContent side="bottom" className="max-w-xs text-left p-4 space-y-2">
+                      <p className="font-semibold text-sm">
+                        {lead.leadCategory === "Hot" ? "Flight Ready" : lead.leadCategory === "Warm" ? "Development Phase" : "Exploration Phase"}
+                      </p>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        {lead.leadCategory === "Hot"
+                          ? "You have strong readiness across finance, medical, and career clarity. You're well-positioned to begin serious training conversations with flight schools."
+                          : lead.leadCategory === "Warm"
+                          ? "You're building solid foundations but have a few areas to develop — typically finance, medical clearance, or training route clarity. Work through your roadmap below to progress to Flight Ready."
+                          : "You're at the start of your pilot journey — exactly where most pilots begin. Use your personalised roadmap below to understand what steps will move you toward Development Phase and beyond."}
+                      </p>
+                      <p className="text-xs font-medium">
+                        {lead.leadCategory === "Hot"
+                          ? "Score: 85–100"
+                          : lead.leadCategory === "Warm"
+                          ? "Score: 55–84"
+                          : "Score: 0–54"}
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               <p className="text-white/70 text-sm max-w-md">
                 {lead.leadCategory === "Hot"

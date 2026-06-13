@@ -1,4 +1,4 @@
-import { and, desc, eq, gte, like, lte, or, sql } from "drizzle-orm";
+import { and, asc, desc, eq, gte, like, lte, or, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
 import {
   AdminNote,
@@ -121,6 +121,8 @@ export interface LeadFilters {
   wantsFinanceInfo?: string;
   page?: number;
   pageSize?: number;
+  sortBy?: "createdAt" | "leadScore" | "intentScore";
+  sortDir?: "asc" | "desc";
 }
 
 export async function listLeads(filters: LeadFilters = {}): Promise<{ items: Lead[]; total: number }> {
@@ -151,8 +153,12 @@ export async function listLeads(filters: LeadFilters = {}): Promise<{ items: Lea
   const pageSize = filters.pageSize ?? 50;
   const offset = (page - 1) * pageSize;
 
+  const sortField = filters.sortBy ?? "createdAt";
+  const sortDir = filters.sortDir ?? "desc";
+  const orderCol = sortField === "leadScore" ? leads.leadScore : sortField === "intentScore" ? leads.intentScore : leads.createdAt;
+  const orderExpr = sortDir === "asc" ? asc(orderCol) : desc(orderCol);
   const [items, countResult] = await Promise.all([
-    db.select().from(leads).where(where).orderBy(desc(leads.createdAt)).limit(pageSize).offset(offset),
+    db.select().from(leads).where(where).orderBy(orderExpr).limit(pageSize).offset(offset),
     db.select({ count: sql<number>`count(*)` }).from(leads).where(where),
   ]);
 

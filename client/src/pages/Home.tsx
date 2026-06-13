@@ -409,13 +409,13 @@ function CtaBannerSection() {
       <div className="container text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-            Ready to find your pilot training route?
+            Find Out If You Could Actually Become An Airline Pilot
           </h2>
           <p className="text-lg text-white/80 mb-8">
-            Take the free 5-minute career assessment. Get a personalised roadmap, readiness score and matched flight schools — no registration required.
+            Take the free 5-minute assessment. Get your AviatorIQ Score, a personalised training roadmap, and matched flight schools — completely free, no registration required.
           </p>
           <Link href="/quiz" className="btn-cta text-base px-10 py-4">
-            Get your free pilot roadmap
+            Take the free assessment
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
