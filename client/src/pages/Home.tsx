@@ -28,6 +28,9 @@ import {
   Award,
   BadgeCheck,
   Quote,
+  Briefcase,
+  BrainCircuit,
+  MonitorPlay,
 } from "lucide-react";
 
 // ─── Shared style tokens ──────────────────────────────────────────────────────
@@ -61,7 +64,14 @@ function HeroSection() {
           backgroundImage: "url('/images/hero-cockpit.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
-          opacity: 0.12,
+          opacity: 0.28,
+        }}
+      />
+      {/* Dark gradient overlay to keep text readable */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: "linear-gradient(90deg, oklch(0.10 0.10 255 / 0.85) 0%, oklch(0.10 0.10 255 / 0.55) 50%, oklch(0.10 0.10 255 / 0.25) 100%)",
         }}
       />
       {/* Grid overlay */}
@@ -520,6 +530,57 @@ function TrainingRoutesSection() {
   );
 }
 
+// ─── After Training ─────────────────────────────────────────────────────────────
+function AfterTrainingSection() {
+  const resources = [
+    { icon: <Briefcase className="w-6 h-6" />, color: "oklch(0.72 0.18 65)", title: "Pilot CV & Cover Letters", description: "How to structure an aviation CV, highlight your training achievements, and write a cover letter that passes airline screening.", href: "/guides" },
+    { icon: <Users className="w-6 h-6" />, color: "oklch(0.45 0.18 240)", title: "Airline Interview Prep", description: "Common technical and HR questions, group exercise strategies, and how to prepare for the competency-based interview.", href: "/guides" },
+    { icon: <BrainCircuit className="w-6 h-6" />, color: "oklch(0.6 0.18 200)", title: "Aptitude Testing", description: "What to expect from CUT-E, Symbiotics, and Pilapt tests. How to practice numerical reasoning, spatial awareness, and multitasking.", href: "/guides" },
+    { icon: <MonitorPlay className="w-6 h-6" />, color: "oklch(0.65 0.2 300)", title: "Simulator Assessments", description: "How airlines assess your raw flying ability and CRM (Crew Resource Management) in a full-motion simulator before hiring.", href: "/guides" },
+  ];
+
+  return (
+    <section className="section" style={{ background: "oklch(0.12 0.09 252)" }}>
+      <div className="container">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-5" style={{ background: "oklch(0.45 0.18 240 / 0.12)", border: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.65 0.18 240)" }}>
+            <Briefcase className="w-3 h-3" />
+            Beyond Flight School
+          </div>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
+            The final hurdle: getting hired
+          </h2>
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: muted }}>
+            Getting your licence is only half the battle. Passing airline selection is what gets you into the right-hand seat.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {resources.map((res) => (
+            <div
+              key={res.title}
+              className="p-5 rounded-2xl transition-all duration-300 group"
+              style={{ background: surface, border: `1px solid ${border}` }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+            >
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-4" style={{ background: `${res.color.replace(")", " / 0.15)")}`, color: res.color }}>
+                {res.icon}
+              </div>
+              <h3 className="text-base font-display font-bold text-white mb-2">{res.title}</h3>
+              <p className="text-sm leading-relaxed mb-4" style={{ color: muted }}>{res.description}</p>
+              <Link href={res.href} className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline transition-all" style={{ color: res.color }}>
+                Read guide
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ─── Cost Section ─────────────────────────────────────────────────────────────
 function CostSection() {
   const costData = [
@@ -764,8 +825,9 @@ export default function Home() {
         <HowItWorksSection />
         <ExpertCredibilitySection />
         <QuizTeaserSection />
-        <TrainingRoutesSection />
-        <CostSection />
+      <TrainingRoutesSection />
+      <AfterTrainingSection />
+      <CostSection />
         <SchoolMatchingSection />
         <GuidesSection />
         <CtaBannerSection />

@@ -1,7 +1,42 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Plane, ChevronDown, Zap } from "lucide-react";
+import { Menu, X, Plane, ChevronDown, Zap, ArrowRight } from "lucide-react";
 import { useCurrency, SUPPORTED_CURRENCIES } from "@/contexts/CurrencyContext";
+
+const announcements = [
+  { text: "New guide: BA Speedbird Academy 2026 requirements", href: "/guides/ba-speedbird-academy" },
+  { text: "New tool: Medical Condition Lookup — check any condition against Class 1 standards", href: "/tools/medical-condition-lookup" },
+  { text: "New guide: Can you become a pilot with ADHD? 2026 CAA rules explained", href: "/guides/adhd-pilot-uk" },
+  { text: "New tool: Cadet Eligibility Checker — find which airline programmes you qualify for", href: "/tools/cadet-eligibility" },
+  { text: "New guide: Integrated vs Modular ATPL — which is actually cheaper in 2026?", href: "/guides/integrated-vs-modular-cost" },
+];
+
+function AnnouncementBar() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent(prev => (prev + 1) % announcements.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
+
+  const ann = announcements[current];
+
+  return (
+    <div
+      className="w-full text-center py-2 px-4 text-xs font-medium flex items-center justify-center gap-2"
+      style={{ background: "oklch(0.45 0.18 240 / 0.18)", borderBottom: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.80 0.06 240)" }}
+    >
+      <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider" style={{ background: "oklch(0.45 0.18 240 / 0.3)", color: "oklch(0.72 0.18 65)" }}>New</span>
+      <Link href={ann.href} className="no-underline hover:underline transition-all" style={{ color: "oklch(0.85 0.05 240)" }}>
+        {ann.text}
+      </Link>
+      <ArrowRight className="w-3 h-3 flex-shrink-0" style={{ color: "oklch(0.65 0.18 240)" }} />
+    </div>
+  );
+}
+
 
 const navLinks = [
   { label: "Quizzes", href: "/quizzes" },
@@ -121,7 +156,10 @@ export default function PublicNav() {
   const isActive = (href: string) => location === href;
 
   return (
-    <nav className="sticky top-0 z-50" style={navStyle}>
+    <>
+    <div className="sticky top-0 z-50">
+    <AnnouncementBar />
+    <nav style={navStyle}>
       <div className="container">
         <div className="flex items-center justify-between h-16">
 
@@ -317,5 +355,7 @@ export default function PublicNav() {
         )}
       </div>
     </nav>
+    </div>
+    </>
   );
 }
