@@ -115,14 +115,163 @@ const usGuides = [
     category: "Ratings",
     emoji: "🌫️",
   },
+  {
+    title: "Type Ratings in the USA: Costs, Process & 2026 Guide",
+    description: "How airline type ratings work in the US, who pays, costs ($20,000–$35,000 self-funded), and which airlines provide type rating training as part of hiring.",
+    href: "/us/guides/type-rating-usa",
+    time: "8 min read",
+    category: "Ratings",
+    emoji: "🛩️",
+  },
+  // Flight Schools
+  {
+    title: "Best Flight Schools in the USA 2026",
+    description: "ATP Flight School, United Aviate Academy, Embry-Riddle, L3Harris, CAE, Epic — compare costs, airline partnerships, and completion rates.",
+    href: "/us/guides/best-flight-schools-usa",
+    time: "11 min read",
+    category: "Flight Schools",
+    emoji: "🏫",
+  },
+  {
+    title: "ATP Flight School 2026: Complete Review",
+    description: "America's largest flight school — Airline Career Pilot Program ($123,995), airline partner guarantees, CFI pathway, financing, and honest pros/cons.",
+    href: "/us/guides/atp-flight-school-guide",
+    time: "11 min read",
+    category: "Flight Schools",
+    emoji: "🏆",
+  },
+  {
+    title: "Embry-Riddle Aeronautical University: Pilot Programme Guide 2026",
+    description: "Is ERAU worth the $220,000+ cost? Airline partnerships, R-ATP eligibility, Daytona vs Prescott, graduate outcomes, and an honest cost-benefit analysis.",
+    href: "/us/guides/embry-riddle-aeronautical-university",
+    time: "13 min read",
+    category: "Flight Schools",
+    emoji: "🎓",
+  },
+  // Airline Cadet Programmes
+  {
+    title: "United Aviate Academy 2026: Complete Guide",
+    description: "Everything about United Airlines' cadet programme — eligibility, costs ($111,700–$122,000), application process, Aviate ID, and how to maximise your chances.",
+    href: "/us/guides/united-aviate-program",
+    time: "12 min read",
+    category: "Airline Cadet Programmes",
+    emoji: "🔵",
+  },
+  {
+    title: "Delta Propel Program 2026: Complete Guide",
+    description: "Delta Air Lines' cadet programme — partner schools, Propel ID system, eligibility, timeline to Delta FO, and how it compares to United Aviate.",
+    href: "/us/guides/delta-propel-program",
+    time: "10 min read",
+    category: "Airline Cadet Programmes",
+    emoji: "🔴",
+  },
+  // Career Preparation
+  {
+    title: "US Airline Pilot Interview Guide 2026",
+    description: "How to prepare for US airline assessments — TBAS/ASTB tests, simulator sessions, HR interviews, CRM evaluations. United, Delta, American, Southwest, and regionals.",
+    href: "/us/guides/airline-interview-usa",
+    time: "11 min read",
+    category: "Career Preparation",
+    emoji: "🎤",
+  },
+  {
+    title: "US Pilot Aptitude Tests 2026: TBAS, ASTB & Airline Assessments",
+    description: "Complete guide to TBAS, ASTB-E, and airline-specific aptitude tests. How to prepare, what to expect, and how to score in the top percentile.",
+    href: "/us/guides/pilot-aptitude-test-usa",
+    time: "8 min read",
+    category: "Career Preparation",
+    emoji: "🧪",
+  },
+  {
+    title: "Airline Pilot Resume & Cover Letter Guide USA 2026",
+    description: "How to write a US airline pilot resume — logbook summary, certificates, hours breakdown, and cover letter tips for United, Delta, American, Southwest.",
+    href: "/us/guides/pilot-resume-usa",
+    time: "8 min read",
+    category: "Career Preparation",
+    emoji: "📄",
+  },
+  {
+    title: "Military Pilot to Airline: The Complete US Transition Guide 2026",
+    description: "How US military pilots transition to airline careers — JTIP programme, military experience credit toward ATP, which airlines recruit military pilots, and timeline.",
+    href: "/us/guides/military-to-airline-usa",
+    time: "10 min read",
+    category: "Career Preparation",
+    emoji: "🎖️",
+  },
+  // Hour Building
+  {
+    title: "How to Build Flight Hours in the USA: Complete 2026 Guide",
+    description: "CFI route, banner towing, pipeline patrol, skydive pilot, charter flying — all methods for building hours from CPL to ATP minimums, with costs and timelines.",
+    href: "/us/guides/hour-building-usa",
+    time: "9 min read",
+    category: "Hour Building",
+    emoji: "⏱️",
+  },
+  {
+    title: "US Pilot Training Timeline: Zero to Airline in 2026",
+    description: "Realistic step-by-step timeline from zero hours to regional airline First Officer — PPL, IR, CPL, CFI, hour building, ATP written, regional hiring. Total: 3–4 years.",
+    href: "/us/guides/pilot-training-timeline-usa",
+    time: "9 min read",
+    category: "Hour Building",
+    emoji: "📅",
+  },
+  // Finance
+  {
+    title: "How Much Does Pilot Training Cost in the USA? 2026",
+    description: "Full breakdown of all US pilot training costs — PPL ($10–15k), IR, CPL, CFI, total zero-to-ATP ($100–130k). Part 61 vs 141 vs Embry-Riddle vs ATP Flight School.",
+    href: "/us/guides/pilot-training-costs-usa",
+    time: "10 min read",
+    category: "Finance & Funding",
+    emoji: "💵",
+  },
+  // Diversity & Inclusion
+  {
+    title: "Women in Aviation USA: Scholarships, Programmes & Career Guide 2026",
+    description: "WAI, Ninety-Nines, airline diversity programmes, key scholarships, current statistics (women are ~7% of US airline pilots), and how to break in.",
+    href: "/us/guides/women-in-aviation-usa",
+    time: "9 min read",
+    category: "Diversity & Inclusion",
+    emoji: "👩‍✈️",
+  },
+  // Career Changers
+  {
+    title: "Am I Too Old to Become a Pilot in the USA? 2026",
+    description: "FAA age rules (no upper limit for PPL/CPL, mandatory retirement at 65), realistic timelines for career changers aged 30–50, and real examples of late starters.",
+    href: "/us/guides/am-i-too-old-to-become-a-pilot-usa",
+    time: "8 min read",
+    category: "Career Changers",
+    emoji: "🕐",
+  },
+  {
+    title: "Becoming a Pilot Over 40 in the USA: Complete 2026 Guide",
+    description: "Realistic guide for career changers over 40 — FAA medical considerations, timeline to ATP, regional vs major airline prospects, financing, and what's achievable.",
+    href: "/us/guides/pilot-training-over-40-usa",
+    time: "9 min read",
+    category: "Career Changers",
+    emoji: "🔄",
+  },
+  {
+    title: "The US Pilot Shortage 2026: What It Means for Your Career",
+    description: "Boeing projects 17,000 new pilots needed per year through 2042. Regional airline hiring surge, upgrade timelines, starting salaries, and why now is the best time to start.",
+    href: "/us/guides/us-pilot-shortage-2026",
+    time: "8 min read",
+    category: "Career & Salary",
+    emoji: "📊",
+  },
 ];
 
 const categoryColors: Record<string, { bg: string; text: string; border: string }> = {
-  "Getting Started":    { bg: "oklch(0.45 0.18 240 / 0.12)", text: "oklch(0.7 0.18 240)",  border: "oklch(0.45 0.18 240 / 0.25)" },
-  "Career & Salary":    { bg: "oklch(0.55 0.18 145 / 0.12)", text: "oklch(0.7 0.18 145)",  border: "oklch(0.55 0.18 145 / 0.25)" },
-  "Finance & Funding":  { bg: "oklch(0.72 0.18 65 / 0.12)",  text: "oklch(0.85 0.15 65)",  border: "oklch(0.72 0.18 65 / 0.25)"  },
-  "Medical":            { bg: "oklch(0.60 0.15 340 / 0.12)", text: "oklch(0.75 0.15 340)", border: "oklch(0.60 0.15 340 / 0.25)" },
-  "Ratings":            { bg: "oklch(0.6 0.18 200 / 0.12)",  text: "oklch(0.75 0.15 200)", border: "oklch(0.6 0.18 200 / 0.25)"  },
+  "Getting Started":          { bg: "oklch(0.45 0.18 240 / 0.12)", text: "oklch(0.7 0.18 240)",  border: "oklch(0.45 0.18 240 / 0.25)" },
+  "Career & Salary":          { bg: "oklch(0.55 0.18 145 / 0.12)", text: "oklch(0.7 0.18 145)",  border: "oklch(0.55 0.18 145 / 0.25)" },
+  "Finance & Funding":        { bg: "oklch(0.72 0.18 65 / 0.12)",  text: "oklch(0.85 0.15 65)",  border: "oklch(0.72 0.18 65 / 0.25)"  },
+  "Medical":                  { bg: "oklch(0.60 0.15 340 / 0.12)", text: "oklch(0.75 0.15 340)", border: "oklch(0.60 0.15 340 / 0.25)" },
+  "Ratings":                  { bg: "oklch(0.6 0.18 200 / 0.12)",  text: "oklch(0.75 0.15 200)", border: "oklch(0.6 0.18 200 / 0.25)"  },
+  "Flight Schools":           { bg: "oklch(0.55 0.18 280 / 0.12)", text: "oklch(0.75 0.15 280)", border: "oklch(0.55 0.18 280 / 0.25)" },
+  "Airline Cadet Programmes": { bg: "oklch(0.55 0.2 25 / 0.12)",   text: "oklch(0.75 0.18 25)",  border: "oklch(0.55 0.2 25 / 0.25)"  },
+  "Career Preparation":       { bg: "oklch(0.55 0.18 145 / 0.12)", text: "oklch(0.7 0.18 145)",  border: "oklch(0.55 0.18 145 / 0.25)" },
+  "Hour Building":            { bg: "oklch(0.6 0.18 200 / 0.12)",  text: "oklch(0.75 0.15 200)", border: "oklch(0.6 0.18 200 / 0.25)"  },
+  "Diversity & Inclusion":    { bg: "oklch(0.60 0.15 340 / 0.12)", text: "oklch(0.75 0.15 340)", border: "oklch(0.60 0.15 340 / 0.25)" },
+  "Career Changers":          { bg: "oklch(0.72 0.18 65 / 0.12)",  text: "oklch(0.85 0.15 65)",  border: "oklch(0.72 0.18 65 / 0.25)"  },
 };
 
 const surface = "oklch(0.14 0.08 250)";
@@ -141,7 +290,7 @@ const usTools = [
 export default function GuidesIndexUS() {
   useEffect(() => { document.title = "US Pilot Training Guides (2026) – AviatorIQ"; }, []);
 
-  const categoryOrder = ["Getting Started", "Career & Salary", "Finance & Funding", "Medical", "Ratings"];
+  const categoryOrder = ["Getting Started", "Career & Salary", "Finance & Funding", "Medical", "Ratings", "Flight Schools", "Airline Cadet Programmes", "Career Preparation", "Hour Building", "Diversity & Inclusion", "Career Changers"];
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.10 0.08 252)" }}>
@@ -172,7 +321,7 @@ export default function GuidesIndexUS() {
               Everything you need to understand before starting FAA pilot training. Written clearly, updated for 2026, built for the US market.
             </p>
             <p className="text-sm mb-6" style={{ color: "oklch(0.5 0.04 240)" }}>
-              13 free guides covering FAA licences, medical, funding, career, and ratings.
+              30 free guides covering FAA licences, medical, funding, career, flight schools, cadet programmes, and more.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Link

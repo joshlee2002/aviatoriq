@@ -115,6 +115,23 @@ import MccJocUK from "./pages/guides/MccJocUK";
 import PilotEyesightUK from "./pages/guides/PilotEyesightUK";
 
 // New US guides
+import AirlineInterviewUSA from "./pages/guides/AirlineInterviewUSA";
+import AmITooOldUSA from "./pages/guides/AmITooOldUSA";
+import PilotTrainingOver40USA from "./pages/guides/PilotTrainingOver40USA";
+import UnitedAviateGuide from "./pages/guides/UnitedAviateGuide";
+import DeltaPropelGuide from "./pages/guides/DeltaPropelGuide";
+import PilotAptitudeTestUSA from "./pages/guides/PilotAptitudeTestUSA";
+import HourBuildingUSA from "./pages/guides/HourBuildingUSA";
+import TypeRatingUSA from "./pages/guides/TypeRatingUSA";
+import WomenInAviationUSA from "./pages/guides/WomenInAviationUSA";
+import PilotCvGuideUSA from "./pages/guides/PilotCvGuideUSA";
+import BestFlightSchoolsUSA from "./pages/guides/BestFlightSchoolsUSA";
+import PilotShortageUSA from "./pages/guides/PilotShortageUSA";
+import TrainingTimelineUSA from "./pages/guides/TrainingTimelineUSA";
+import PilotTrainingCostsUSA from "./pages/guides/PilotTrainingCostsUSA";
+import MilitaryToAirlineUSA from "./pages/guides/MilitaryToAirlineUSA";
+import EmbryRiddleGuide from "./pages/guides/EmbryRiddleGuide";
+import AtpFlightSchoolGuide from "./pages/guides/AtpFlightSchoolGuide";
 import PilotSalaryUSA from "./pages/guides/PilotSalaryUSA";
 import FundPilotTrainingUSA from "./pages/guides/FundPilotTrainingUSA";
 import PplRequirementsUSA from "./pages/guides/PplRequirementsUSA";
@@ -278,6 +295,23 @@ function Router() {
       <Route path="/us/guides/adhd-faa-medical" component={AdhdFaaMedical} />
       <Route path="/us/guides/atp-certificate-usa" component={AtpCertificateUSA} />
       <Route path="/us/guides/cfi-career-usa" component={CfiCareerUSA} />
+      <Route path="/us/guides/airline-interview-usa" component={AirlineInterviewUSA} />
+      <Route path="/us/guides/am-i-too-old-to-become-a-pilot-usa" component={AmITooOldUSA} />
+      <Route path="/us/guides/pilot-training-over-40-usa" component={PilotTrainingOver40USA} />
+      <Route path="/us/guides/united-aviate-program" component={UnitedAviateGuide} />
+      <Route path="/us/guides/delta-propel-program" component={DeltaPropelGuide} />
+      <Route path="/us/guides/pilot-aptitude-test-usa" component={PilotAptitudeTestUSA} />
+      <Route path="/us/guides/hour-building-usa" component={HourBuildingUSA} />
+      <Route path="/us/guides/type-rating-usa" component={TypeRatingUSA} />
+      <Route path="/us/guides/women-in-aviation-usa" component={WomenInAviationUSA} />
+      <Route path="/us/guides/pilot-resume-usa" component={PilotCvGuideUSA} />
+      <Route path="/us/guides/best-flight-schools-usa" component={BestFlightSchoolsUSA} />
+      <Route path="/us/guides/us-pilot-shortage-2026" component={PilotShortageUSA} />
+      <Route path="/us/guides/pilot-training-timeline-usa" component={TrainingTimelineUSA} />
+      <Route path="/us/guides/pilot-training-costs-usa" component={PilotTrainingCostsUSA} />
+      <Route path="/us/guides/military-to-airline-usa" component={MilitaryToAirlineUSA} />
+      <Route path="/us/guides/embry-riddle-aeronautical-university" component={EmbryRiddleGuide} />
+      <Route path="/us/guides/atp-flight-school-guide" component={AtpFlightSchoolGuide} />
 
       {/* 404 */}
       <Route path="/404" component={NotFound} />
