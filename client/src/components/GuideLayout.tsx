@@ -89,6 +89,7 @@ interface GuideLayoutProps {
   author?: string;
   authorRole?: string;
   lastUpdated?: string;
+  category?: string;
 }
 
 const surface = "oklch(0.14 0.08 250)";
@@ -112,6 +113,7 @@ export default function GuideLayout({
   author = "Joshua Fagan",
   authorRole = "Founder, AviatorIQ — researched from CAA, EASA & official school prospectuses",
   lastUpdated = "June 2026",
+  category,
 }: GuideLayoutProps) {
   const schemas: object[] = [];
 

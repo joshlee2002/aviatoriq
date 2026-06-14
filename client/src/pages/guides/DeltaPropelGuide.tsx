@@ -48,40 +48,7 @@ export default function DeltaPropelGuide() {
                 <li><strong>English Proficiency:</strong> Must be proficient in English (read, speak, write).</li>
               </ul>
               <h3 className="text-xl font-semibold mb-2" style={{ color: "oklch(0.72 0.18 65)" }}>Pathway-Specific Requirements</h3>
-              <ComparisonTable
-                headers={[
-                  "Pathway",
-                  "Education",
-                  "Flight Experience",
-                  "Other Key Requirements",
-                ]}
-                rows={[
-                  [
-                    "Collegiate Pilot Pathway",
-                    "Enrollment in a partner university's aviation program; minimum GPA often required.",
-                    "No prior flight experience required to apply, but must progress through certifications (PPL, IR, CPL, ME, CFI/CFII) during studies.",
-                    "Strong academic record, leadership potential, commitment to Delta.",
-                  ],
-                  [
-                    "Company Pilot Pathway",
-                    "High school diploma or GED; some roles may prefer higher education.",
-                    "No specific flight hours required for application, but must complete all FAA certifications (PPL, IR, CPL, ME, CFI/CFII) to progress.",
-                    "Current Delta employee in good standing, strong performance history.",
-                  ],
-                  [
-                    "Flight Instructor Pilot Pathway (CFI)",
-                    "High school diploma or GED; Bachelor's degree preferred.",
-                    "FAA Commercial Pilot Certificate with Instrument Rating, Multi-Engine Rating, and Certified Flight Instructor (CFI) certificate; typically 500+ hours total time, including 100+ hours dual given.",
-                    "Strong instructional skills, leadership, and mentorship abilities.",
-                  ],
-                  [
-                    "Propel Scholarship Path",
-                    "Varies by associated pathway (Collegiate, CFI); strong academic performance is key.",
-                    "Varies by associated pathway; often requires demonstration of early flight progress or commitment.",
-                    "Exceptional leadership, community involvement, demonstrated financial need (for some scholarships), commitment to Delta.",
-                  ],
-                ]}
-              />
+              <div className="overflow-x-auto mb-4"><table className="w-full text-sm border-collapse"><tbody></tbody></table></div>
             </div>
           ),
         },
@@ -127,9 +94,9 @@ export default function DeltaPropelGuide() {
                 <li><strong>Regional Airline Employment (Delta Connection):</strong> Upon completion of flight training and ATP/CTP, pilots typically spend 2-4 years flying for a Delta Connection carrier (e.g., Endeavor Air, Republic Airways, SkyWest Airlines) to gain the necessary experience for mainline Delta.</li>
                 <li><strong>Transition to Delta Air Lines Mainline:</strong> This transition typically occurs after accumulating sufficient flight hours and experience at the regional level, often 5-7 years from initial program entry for a zero-experience candidate.</li>
               </ul>
-              <HighlightBox type="neutral">
+              <div className="p-4 rounded-lg mb-4" style={{background:"oklch(0.18 0.05 240)",border:"1px solid oklch(1 0 0 / 0.1)"}}>
                 <p className="mb-2"><strong>Key Insight:</strong> While the Propel program offers an accelerated path, it is not a shortcut. The total journey from zero experience to a Delta mainline pilot can still span 5-7 years, emphasizing consistent performance and dedication.</p>
-              </HighlightBox>
+              </div>
             </div>
           ),
         },
@@ -157,9 +124,9 @@ export default function DeltaPropelGuide() {
                 <li><strong>Aviation-Specific Scholarships:</strong> Numerous organizations, such as the Experimental Aircraft Association (EAA), Aircraft Owners and Pilots Association (AOPA), and Women in Aviation International (WAI), offer scholarships for aspiring pilots. These often have specific criteria related to academic achievement, community involvement, or demographic factors.</li>
                 <li><strong>Airline Cadet Programs (Non-Propel):</strong> While not directly Propel, some regional airlines (including Delta Connection carriers) offer their own cadet programs with financial incentives or tuition reimbursement, which can complement a Propel pathway.</li>
               </ul>
-              <HighlightBox type="positive">
+              <div className="p-4 rounded-lg mb-4" style={{background:"oklch(0.18 0.12 145 / 0.2)",border:"1px solid oklch(0.55 0.18 145 / 0.3)"}}>
                 <p className="mb-2"><strong>Pro Tip:</strong> Actively research and apply for multiple scholarships. The cumulative effect of several smaller scholarships can significantly reduce your out-of-pocket expenses for flight training.</p>
-              </HighlightBox>
+              </div>
             </div>
           ),
         },

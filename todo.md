@@ -239,3 +239,16 @@
 - [x] Results page: 4-stat instrument panel (Biggest Risk, Best Route, Est. Cost, Timeline)
 - [x] Results page: Flight Plan styled roadmap with waypoints and runway line (dark navy panel, gold header, numbered waypoints)
 - [x] Global CSS: glassmorphism card tokens, aviation colour palette, cockpit-inspired styles
+
+## Phase 19 – Migration to New Project & Priority Fixes
+
+- [x] Migrate all 14 DB tables to new project database
+- [x] Restore all server files (routers.ts, db.ts, scoring.ts, pdfReport.ts, licenceQuizScoring.ts, flightDeckScoring.ts)
+- [x] Restore all client pages (Home.tsx, Quiz.tsx, Results.tsx, AdminDashboard.tsx, Schools.tsx, SchoolsUS.tsx, all guides, all tools)
+- [x] Fix TypeScript errors (GuideLayout category prop, Results.tsx circular reference, DeltaPropelGuide components)
+- [x] Install missing dependencies (posthog-js, react-helmet-async)
+- [x] Add captureRoadmapEmail tRPC endpoint to leads router
+- [x] Add email gate overlay before AI roadmap section on Results page (blurred preview + unlock form)
+- [x] Set OPENAI_API_KEY and PEXELS_API_KEY secrets
+- [x] 54 real UK and US flight schools in database
+- [x] All 70 tests passing

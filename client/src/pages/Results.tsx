@@ -140,9 +140,24 @@ export default function Results() {
   const [roadmapError, setRoadmapError] = useState(false);
   const [selectedSchoolIds, setSelectedSchoolIds] = useState<number[]>([]);
   const [introSubmitted, setIntroSubmitted] = useState(false);
+  // Email gate: users who arrive directly (not via quiz) must enter email before seeing roadmap
+  const [emailGateUnlocked, setEmailGateUnlocked] = useState(() => {
+    // If they came from the quiz, sessionStorage will have their data — gate is pre-unlocked
+    try {
+      const raw = sessionStorage.getItem(`quiz_result_${leadId}`);
+      return !!raw;
+    } catch { return false; }
+  });
+  const [gateEmail, setGateEmail] = useState("");
+  const [gateName, setGateName] = useState("");
+  const [gateSubmitting, setGateSubmitting] = useState(false);
+  const captureEmailMutation = trpc.leads.captureRoadmapEmail.useMutation({
+    onSuccess: () => { setEmailGateUnlocked(true); },
+    onError: () => { setEmailGateUnlocked(true); }, // unlock anyway on error
+  });
 
   // Try to load cached result from sessionStorage (set by Quiz.tsx on submit)
-  const [cachedResult] = useState<typeof resultQuery.data | null>(() => {
+  const [cachedResult] = useState<Record<string, unknown> | null>(() => {
     try {
       const raw = sessionStorage.getItem(`quiz_result_${leadId}`);
       return raw ? JSON.parse(raw) : null;
@@ -235,7 +250,7 @@ export default function Results() {
     );
   }
 
-  const { lead, matchedSchools } = activeResult;
+  const { lead, matchedSchools } = activeResult as any;
   const dimensions = (activeResult as unknown as { dimensions?: Dimensions }).dimensions;
   const labels = (activeResult as unknown as { labels?: DimensionLabels }).labels;
   const nextAction = (activeResult as unknown as { nextAction?: string }).nextAction;
@@ -565,7 +580,67 @@ export default function Results() {
           )}
 
           {/* ── Flight Plan (AI Roadmap) ── */}
-          {isGenerating ? (
+          {/* Email gate: shown when user arrives directly (not via quiz) */}
+          {!emailGateUnlocked ? (
+            <div className="relative rounded-2xl overflow-hidden" style={{ background: "var(--color-navy)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
+              {/* Blurred preview */}
+              <div className="p-6 blur-sm pointer-events-none select-none" aria-hidden="true">
+                <div className="flex items-center gap-2 mb-4">
+                  <Map className="w-4 h-4 text-[var(--color-gold)]" />
+                  <span className="text-white font-display font-bold text-sm uppercase tracking-widest">Flight Plan</span>
+                </div>
+                <div className="space-y-3">
+                  {[...Array(4)].map((_, i) => (
+                    <div key={i} className="h-4 rounded" style={{ background: "oklch(1 0 0 / 0.08)", width: `${70 + (i % 3) * 10}%` }} />
+                  ))}
+                </div>
+              </div>
+              {/* Gate overlay */}
+              <div className="absolute inset-0 flex items-center justify-center" style={{ background: "oklch(0.10 0.08 252 / 0.85)", backdropFilter: "blur(4px)" }}>
+                <div className="w-full max-w-sm mx-4 p-6 rounded-2xl text-center" style={{ background: "oklch(0.14 0.08 250)", border: "1px solid oklch(1 0 0 / 0.15)" }}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3" style={{ background: "oklch(0.72 0.18 65 / 0.15)" }}>
+                    <Map className="w-6 h-6" style={{ color: "oklch(0.85 0.15 65)" }} />
+                  </div>
+                  <h3 className="font-display font-bold text-white text-lg mb-1">Unlock Your Flight Plan</h3>
+                  <p className="text-sm mb-4" style={{ color: "oklch(0.65 0.04 240)" }}>Enter your name and email to reveal your personalised AI training roadmap.</p>
+                  <form onSubmit={async (e) => {
+                    e.preventDefault();
+                    if (!gateName.trim() || !gateEmail.includes("@")) return;
+                    setGateSubmitting(true);
+                    captureEmailMutation.mutate({ leadId, name: gateName, email: gateEmail });
+                  }} className="space-y-3">
+                    <input
+                      type="text"
+                      value={gateName}
+                      onChange={e => setGateName(e.target.value)}
+                      placeholder="Your first name"
+                      required
+                      className="w-full px-3 py-2.5 rounded-lg text-sm outline-none text-white placeholder-white/30"
+                      style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.15)" }}
+                    />
+                    <input
+                      type="email"
+                      value={gateEmail}
+                      onChange={e => setGateEmail(e.target.value)}
+                      placeholder="your@email.com"
+                      required
+                      className="w-full px-3 py-2.5 rounded-lg text-sm outline-none text-white placeholder-white/30"
+                      style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.15)" }}
+                    />
+                    <button
+                      type="submit"
+                      disabled={gateSubmitting || captureEmailMutation.isPending}
+                      className="w-full py-2.5 rounded-xl text-sm font-bold text-white flex items-center justify-center gap-2"
+                      style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))", opacity: (gateSubmitting || captureEmailMutation.isPending) ? 0.7 : 1 }}
+                    >
+                      {(gateSubmitting || captureEmailMutation.isPending) ? <><Loader2 className="w-4 h-4 animate-spin" /> Unlocking…</> : <>Reveal my Flight Plan <ArrowRight className="w-4 h-4" /></>}
+                    </button>
+                  </form>
+                  <p className="text-xs mt-3" style={{ color: "oklch(0.45 0.04 240)" }}>No spam. Unsubscribe any time.</p>
+                </div>
+              </div>
+            </div>
+          ) : isGenerating ? (
             <div className="rounded-2xl overflow-hidden" style={{ background: "var(--color-navy)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
               <div className="flex items-center justify-between px-6 py-4" style={{ borderBottom: "1px solid oklch(1 0 0 / 0.1)" }}>
                 <div className="flex items-center gap-2">
