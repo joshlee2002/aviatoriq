@@ -246,6 +246,47 @@ function LeadDetailModal({ lead, onClose }: { lead: Lead; onClose: () => void })
             </div>
           </div>
 
+          {/* Assigned Schools + Notify School */}
+          {detailQuery.data?.assignments && detailQuery.data.assignments.length > 0 && (
+            <div>
+              <h4 className="text-sm font-semibold text-[var(--color-foreground)] mb-3 flex items-center gap-2">
+                <School className="w-4 h-4 text-[var(--color-primary)]" />
+                Assigned Schools
+              </h4>
+              <div className="space-y-2">
+                {detailQuery.data.assignments.map((a) => {
+                  const schoolEmail = (a as any).schoolContactEmail;
+                  const schoolName = (a as any).schoolName ?? `School #${a.schoolId}`;
+                  const subject = encodeURIComponent(`AviatorIQ Lead Introduction — ${lead.fullName}`);
+                  const body = encodeURIComponent(
+                    `Hi ${schoolName} Team,\n\nA prospective student has expressed interest in your flight school through AviatorIQ.\n\nLead details:\n- Name: ${lead.fullName}\n- Country: ${lead.country ?? 'N/A'}\n- Budget: ${lead.budgetRange ?? 'N/A'}\n- Route: ${lead.preferredRoute ?? 'N/A'}\n- Score: ${lead.leadScore}/100 (${lead.leadCategory})\n\nPlease reach out to them directly at: ${lead.email}${lead.phone ? `\nPhone: ${lead.phone}` : ''}\n\nBest regards,\nAviatorIQ Team`
+                  );
+                  return (
+                    <div key={a.id} className="flex items-center justify-between p-3 rounded-lg bg-[var(--color-muted)] border border-[var(--color-border)]">
+                      <div>
+                        <div className="text-sm font-semibold text-[var(--color-navy)]">{schoolName}</div>
+                        <div className="text-xs text-[var(--color-muted-foreground)] mt-0.5">
+                          Status: {a.status ?? 'Assigned'}{schoolEmail ? ` · ${schoolEmail}` : ''}
+                        </div>
+                      </div>
+                      {schoolEmail ? (
+                        <a
+                          href={`mailto:${schoolEmail}?subject=${subject}&body=${body}`}
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-[var(--color-primary)] hover:bg-orange-600 px-3 py-1.5 rounded-lg transition-colors"
+                        >
+                          <Mail className="w-3 h-3" />
+                          Notify School
+                        </a>
+                      ) : (
+                        <span className="text-xs text-[var(--color-muted-foreground)] italic">No email on file</span>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
           {/* Notes */}
           <div>
             <h4 className="text-sm font-semibold text-[var(--color-foreground)] mb-3">Admin notes</h4>
@@ -561,7 +602,7 @@ function IntroductionsPanel() {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-[var(--color-border)] bg-[var(--color-muted)]">
-                {["Lead ID", "School", "Status", "Requested"].map((h) => (
+                {["Lead ID", "School", "Status", "Requested", "Action"].map((h) => (
                   <th key={h} className="text-left px-4 py-3 text-xs font-semibold text-[var(--color-muted-foreground)] uppercase tracking-wider whitespace-nowrap">{h}</th>
                 ))}
               </tr>
@@ -583,6 +624,19 @@ function IntroductionsPanel() {
                   <td className="px-4 py-3 text-xs text-[var(--color-muted-foreground)] whitespace-nowrap">
                     {new Date(intro.createdAt).toLocaleDateString()}
                   </td>
+                  <td className="px-4 py-3">
+                    {intro.schoolContactEmail ? (
+                      <a
+                        href={`mailto:${intro.schoolContactEmail}?subject=${encodeURIComponent(`AviatorIQ Introduction Request — Lead #${intro.leadId}`)}&body=${encodeURIComponent(`Hi ${intro.schoolName} Team,\n\nA student has requested an introduction to your school via AviatorIQ.\n\nLead ID: #${intro.leadId}\nSchool requested: ${intro.schoolName}\nRequest date: ${new Date(intro.createdAt).toLocaleDateString()}\n\nPlease log in to the AviatorIQ admin dashboard to view full lead details and respond.\n\nBest regards,\nAviatorIQ Team`)}`}
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-white bg-[var(--color-primary)] hover:bg-orange-600 px-2.5 py-1.5 rounded-lg transition-colors whitespace-nowrap"
+                      >
+                        <Mail className="w-3 h-3" />
+                        Send Intro
+                      </a>
+                    ) : (
+                      <span className="text-xs text-[var(--color-muted-foreground)] italic">No email</span>
+                    )}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -600,6 +654,7 @@ export default function AdminDashboard() {
   const [category, setCategory] = useState("");
   const [status, setStatus] = useState("");
   const [country, setCountry] = useState("");
+  const [source, setSource] = useState("");
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
   const [showSchools, setShowSchools] = useState(false);
   const [activeTab, setActiveTab] = useState<"leads" | "introductions" | "analytics" | "partners">("leads");
@@ -613,7 +668,7 @@ export default function AdminDashboard() {
     else { setSortBy(col); setSortDir("desc"); }
   };
 
-  const filters = { search, category: category || undefined, status: status || undefined, country: country || undefined, page, pageSize: 50, sortBy, sortDir };
+  const filters = { search, category: category || undefined, status: status || undefined, country: country || undefined, source: source || undefined, page, pageSize: 50, sortBy, sortDir };
   const leadsQuery = trpc.admin.listLeads.useQuery(filters, { enabled: isAuthenticated && user?.role === "admin" });
   const exportQuery = trpc.admin.exportLeads.useQuery(undefined, { enabled: false });
 
@@ -1030,9 +1085,22 @@ export default function AdminDashboard() {
               placeholder="Filter by country…"
               className="px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none"
             />
-            {(search || category || status || country) && (
+            <select
+              value={source}
+              onChange={(e) => { setSource(e.target.value); setPage(1); }}
+              className="px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none"
+            >
+              <option value="">All sources</option>
+              <option value="quiz">Quiz</option>
+              <option value="school_unlock">School Unlock</option>
+              <option value="roadmap_email">Roadmap Email</option>
+              <option value="licence_quiz">Licence Quiz</option>
+              <option value="flight_deck">Flight Deck</option>
+              <option value="calculator">Calculator</option>
+            </select>
+            {(search || category || status || country || source) && (
               <button
-                onClick={() => { setSearch(""); setCategory(""); setStatus(""); setCountry(""); setPage(1); }}
+                onClick={() => { setSearch(""); setCategory(""); setStatus(""); setCountry(""); setSource(""); setPage(1); }}
                 className="flex items-center gap-1.5 px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm text-[var(--color-muted-foreground)] hover:bg-[var(--color-muted)] transition-colors"
               >
                 <X className="w-3.5 h-3.5" /> Clear

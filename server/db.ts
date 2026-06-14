@@ -123,6 +123,7 @@ export interface LeadFilters {
   minScore?: number;
   maxScore?: number;
   wantsFinanceInfo?: string;
+  source?: string;
   page?: number;
   pageSize?: number;
   sortBy?: "createdAt" | "leadScore" | "intentScore";
@@ -148,6 +149,7 @@ export async function listLeads(filters: LeadFilters = {}): Promise<{ items: Lea
   if (filters.budgetRange) conditions.push(eq(leads.budgetRange, filters.budgetRange));
   if (filters.startTimeframe) conditions.push(eq(leads.startTimeframe, filters.startTimeframe));
   if (filters.wantsFinanceInfo) conditions.push(eq(leads.wantsFinanceInfo, filters.wantsFinanceInfo));
+  if (filters.source) conditions.push(eq(leads.source, filters.source));
   if (filters.minScore !== undefined) conditions.push(gte(leads.leadScore, filters.minScore));
   if (filters.maxScore !== undefined) conditions.push(lte(leads.leadScore, filters.maxScore));
 
@@ -247,10 +249,26 @@ export async function createLeadAssignment(data: InsertLeadAssignment): Promise<
   await db.insert(leadAssignments).values(data);
 }
 
-export async function getLeadAssignments(leadId: number): Promise<LeadAssignment[]> {
+export async function getLeadAssignments(leadId: number): Promise<(LeadAssignment & { schoolName: string | null; schoolContactEmail: string | null; schoolWebsite: string | null })[]> {
   const db = await getDb();
   if (!db) return [];
-  return db.select().from(leadAssignments).where(eq(leadAssignments.leadId, leadId));
+  const rows = await db
+    .select({
+      id: leadAssignments.id,
+      leadId: leadAssignments.leadId,
+      schoolId: leadAssignments.schoolId,
+      assignedAt: leadAssignments.assignedAt,
+      status: leadAssignments.status,
+      notes: leadAssignments.notes,
+      estimatedValue: leadAssignments.estimatedValue,
+      schoolName: flightSchools.name,
+      schoolContactEmail: flightSchools.contactEmail,
+      schoolWebsite: flightSchools.website,
+    })
+    .from(leadAssignments)
+    .leftJoin(flightSchools, eq(leadAssignments.schoolId, flightSchools.id))
+    .where(eq(leadAssignments.leadId, leadId));
+  return rows;
 }
 
 // ─── School Matching ──────────────────────────────────────────────────────────
@@ -304,10 +322,24 @@ export async function getIntroductionRequestsByLeadId(leadId: number): Promise<I
   return db.select().from(introductionRequests).where(eq(introductionRequests.leadId, leadId));
 }
 
-export async function listAllIntroductionRequests(): Promise<IntroductionRequest[]> {
+export async function listAllIntroductionRequests(): Promise<(IntroductionRequest & { schoolContactEmail: string | null })[]> {
   const db = await getDb();
   if (!db) return [];
-  return db.select().from(introductionRequests).orderBy(introductionRequests.createdAt);
+  const rows = await db
+    .select({
+      id: introductionRequests.id,
+      leadId: introductionRequests.leadId,
+      schoolId: introductionRequests.schoolId,
+      schoolName: introductionRequests.schoolName,
+      status: introductionRequests.status,
+      sentAt: introductionRequests.sentAt,
+      createdAt: introductionRequests.createdAt,
+      schoolContactEmail: flightSchools.contactEmail,
+    })
+    .from(introductionRequests)
+    .leftJoin(flightSchools, eq(introductionRequests.schoolId, flightSchools.id))
+    .orderBy(introductionRequests.createdAt);
+  return rows;
 }
 
 // ─── School Waitlist ─────────────────────────────────────────────────────────

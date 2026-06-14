@@ -262,3 +262,11 @@
   - [x] Build "Get Full Details" modal with name+email form on each school card
   - [x] On form submit: reveal full school details inline, store lead in DB with school pre-assigned
   - [x] Wire school unlock leads to admin dashboard lead list
+
+## Phase 21 – Admin Source Filter, More US Schools, School Notification Email
+
+- [x] Add 13 more real US flight schools to DB (Spartan, Sierra, Westwind, etc.) — total 32 US schools
+- [x] Add Source filter dropdown to admin dashboard lead list (All / Quiz / School Unlock / Roadmap Email / Licence Quiz / Flight Deck / Calculator)
+- [x] Add Notify School button in lead detail modal (mailto: pre-filled with lead details, school name, contact email)
+- [x] Add Send Introduction action in Introductions panel (mailto: pre-filled to school contact)
+- [x] Update getLeadAssignments and listAllIntroductionRequests to join flight_schools for contact email

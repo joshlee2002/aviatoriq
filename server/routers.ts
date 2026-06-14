@@ -461,6 +461,7 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
           budgetRange: z.string().optional(),
           startTimeframe: z.string().optional(),
           wantsFinanceInfo: z.string().optional(),
+          source: z.string().optional(),
           minScore: z.number().optional(),
           maxScore: z.number().optional(),
           page: z.number().default(1),
