@@ -3,7 +3,8 @@ import { Link } from "wouter";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import SEO from "@/components/SEO";
-import { useCurrency } from "@/contexts/CurrencyContext";
+import SchoolUnlockModal from "@/components/SchoolUnlockModal";
+import { trpc } from "@/lib/trpc";
 import {
   MapPin,
   Globe,
@@ -14,11 +15,11 @@ import {
   ArrowRight,
   Zap,
   CheckCircle,
-  Quote,
   GraduationCap,
   Plane,
+  Loader2,
 } from "lucide-react";
-import { US_SCHOOLS, type StaticSchool } from "@/data/schools";
+import type { FlightSchool } from "../../../drizzle/schema";
 
 const surface = "oklch(0.14 0.08 250)";
 const border = "oklch(1 0 0 / 0.08)";
@@ -41,12 +42,23 @@ const TRAINING_TYPES = [
   { value: "university", label: "University / Degree" },
 ];
 
+type UnlockTarget = {
+  id: number; name: string; country?: string;
+  website?: string | null; contactEmail?: string | null;
+  phone?: string | null; priceRange?: string | null;
+  airlinePartnerships?: string | null;
+};
+
 export default function SchoolsUS() {
-  const { formatPrice } = useCurrency();
   const [stateFilter, setStateFilter] = useState("");
   const [trainingType, setTrainingType] = useState("");
   const [financeFilter, setFinanceFilter] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
+  const [unlockSchool, setUnlockSchool] = useState<UnlockTarget | null>(null);
+
+  // Fetch US schools from DB
+  const schoolsQuery = trpc.schools.list.useQuery({ country: "United States" });
+  const allSchools: FlightSchool[] = schoolsQuery.data ?? [];
 
   // State keyword map for matching against city strings
   const STATE_KEYWORDS: Record<string, string[]> = {
@@ -72,7 +84,8 @@ export default function SchoolsUS() {
     "Washington": ["wa,", ", wa", "washington"],
     "Wisconsin": ["wi,", ", wi", "wisconsin"],
   };
-  const schools = US_SCHOOLS.filter((s) => {
+
+  const schools = allSchools.filter((s) => {
     if (stateFilter && stateFilter !== "All States") {
       const city = (s.city ?? "").toLowerCase();
       const keywords = STATE_KEYWORDS[stateFilter] ?? [stateFilter.toLowerCase()];
@@ -80,7 +93,7 @@ export default function SchoolsUS() {
     }
     if (trainingType === "part141" && !s.integratedAtpl && !s.modularAtpl) return false;
     if (trainingType === "part61" && s.integratedAtpl) return false;
-    if (trainingType === "university" && !(s.badge ?? "").toLowerCase().includes("university") && !s.name.toLowerCase().includes("university") && !s.name.toLowerCase().includes("riddle") && !s.name.toLowerCase().includes("und") && !s.name.toLowerCase().includes("embry")) return false;
+    if (trainingType === "university" && !s.name.toLowerCase().includes("university") && !s.name.toLowerCase().includes("riddle") && !s.name.toLowerCase().includes("und") && !s.name.toLowerCase().includes("embry") && !s.name.toLowerCase().includes("purdue")) return false;
     if (financeFilter && s.financeAvailable !== financeFilter) return false;
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
@@ -105,8 +118,17 @@ export default function SchoolsUS() {
       <PublicNav />
 
       {/* Hero */}
-      <section className="py-16 md:py-24" style={{ background: "linear-gradient(180deg, oklch(0.10 0.09 252) 0%, oklch(0.13 0.09 250) 100%)" }}>
-        <div className="container">
+      <section
+        className="py-16 md:py-24 relative overflow-hidden"
+        style={{
+          background: "linear-gradient(180deg, oklch(0.10 0.09 252) 0%, oklch(0.13 0.09 250) 100%)",
+          backgroundImage: "url('/manus-storage/usa-school_36756c90.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0" style={{ background: "oklch(0.08 0.09 252 / 0.82)" }} />
+        <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6" style={{ background: "oklch(0.45 0.18 240 / 0.12)", border: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.65 0.18 240)" }}>
               <Plane className="w-3 h-3" />
@@ -116,7 +138,7 @@ export default function SchoolsUS() {
               Find the right US flight school for you
             </h1>
             <p className="text-lg md:text-xl mb-8" style={{ color: muted }}>
-              {US_SCHOOLS.length} US flight schools compared — Part 141, Part 61, university programmes, airline cadet partnerships, and financing options.
+              {schoolsQuery.isLoading ? "Loading..." : `${allSchools.length} US flight schools compared`} — Part 141, Part 61, university programmes, airline cadet partnerships, and financing options.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 text-sm" style={{ color: muted }}>
               <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4" style={{ color: "oklch(0.65 0.18 240)" }} /> FAA-approved schools only</span>
@@ -198,7 +220,6 @@ export default function SchoolsUS() {
               >
                 <option value="">Finance: all options</option>
                 <option value="yes">Finance available</option>
-                <option value="partial">Partial finance</option>
                 <option value="no">No finance</option>
               </select>
 
@@ -219,7 +240,11 @@ export default function SchoolsUS() {
           {/* Results count */}
           <div className="flex items-center justify-between mb-6">
             <p className="text-sm" style={{ color: muted }}>
-              Showing <span className="text-white font-semibold">{schools.length}</span> of {US_SCHOOLS.length} US schools
+              {schoolsQuery.isLoading ? (
+                <span className="flex items-center gap-2"><Loader2 className="w-4 h-4 animate-spin" /> Loading schools...</span>
+              ) : (
+                <>Showing <span className="text-white font-semibold">{schools.length}</span> of {allSchools.length} US schools</>
+              )}
             </p>
             <Link href="/us/calculator" className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline" style={{ color: "oklch(0.65 0.18 240)" }}>
               Estimate your costs <ArrowRight className="w-3.5 h-3.5" />
@@ -227,13 +252,21 @@ export default function SchoolsUS() {
           </div>
 
           {/* School cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {schools.map((school) => (
-              <SchoolCard key={school.id} school={school} />
-            ))}
-          </div>
+          {schoolsQuery.isLoading ? (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {[1,2,3,4].map(i => (
+                <div key={i} className="rounded-2xl overflow-hidden animate-pulse" style={{ background: surface, border: `1px solid ${border}`, height: 300 }} />
+              ))}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {schools.map((school) => (
+                <SchoolCard key={school.id} school={school} onUnlock={(s) => setUnlockSchool(s)} />
+              ))}
+            </div>
+          )}
 
-          {schools.length === 0 && (
+          {!schoolsQuery.isLoading && schools.length === 0 && (
             <div className="text-center py-16">
               <p className="text-lg font-semibold text-white mb-2">No schools match your filters</p>
               <p className="text-sm mb-4" style={{ color: muted }}>Try adjusting your search or clearing the filters.</p>
@@ -283,13 +316,30 @@ export default function SchoolsUS() {
         </div>
       </section>
 
+      {/* School Unlock Modal */}
+      {unlockSchool && (
+        <SchoolUnlockModal
+          schoolId={unlockSchool.id}
+          schoolName={unlockSchool.name}
+          schoolCountry="United States"
+          website={unlockSchool.website}
+          contactEmail={unlockSchool.contactEmail}
+          phone={unlockSchool.phone}
+          priceRange={unlockSchool.priceRange}
+          airlinePartnerships={unlockSchool.airlinePartnerships}
+          onClose={() => setUnlockSchool(null)}
+        />
+      )}
+
       <PublicFooter />
     </>
   );
 }
 
-function SchoolCard({ school }: { school: StaticSchool }) {
+function SchoolCard({ school, onUnlock }: { school: FlightSchool; onUnlock: (s: UnlockTarget) => void }) {
   const [expanded, setExpanded] = useState(false);
+
+  const heroImg = "/manus-storage/usa-school_36756c90.jpg";
 
   return (
     <div
@@ -298,34 +348,56 @@ function SchoolCard({ school }: { school: StaticSchool }) {
       onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; }}
       onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; }}
     >
-      <div className="p-6">
+      {/* Image banner */}
+      <div className="relative h-40 overflow-hidden">
+        <img
+          src={heroImg}
+          alt={school.name}
+          className="w-full h-full object-cover"
+          style={{ filter: "brightness(0.75)" }}
+        />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 40%, oklch(0.14 0.08 250) 100%)" }} />
+        {school.integratedAtpl && (
+          <div className="absolute top-3 left-3">
+            <span className="px-2 py-1 rounded-md text-xs font-bold" style={{ background: "oklch(0.45 0.18 240)", color: "white" }}>
+              Part 141
+            </span>
+          </div>
+        )}
+        {school.airlinePartnerships && (
+          <div className="absolute top-3 right-3">
+            <span className="px-2 py-1 rounded-md text-xs font-bold flex items-center gap-1" style={{ background: "oklch(0.72 0.18 65)", color: "white" }}>
+              <Plane className="w-3 h-3" /> Airline partner
+            </span>
+          </div>
+        )}
+      </div>
+
+      <div className="p-5">
         {/* Header */}
-        <div className="flex items-start justify-between gap-3 mb-4">
-          <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2 flex-wrap mb-1">
-              <h3 className="font-display font-bold text-lg text-white">{school.name}</h3>
-              {school.badge && (
-                <span className="px-2 py-0.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.72 0.18 65 / 0.15)", color: "oklch(0.72 0.18 65)", border: "1px solid oklch(0.72 0.18 65 / 0.25)" }}>
-                  {school.badge}
-                </span>
-              )}
-            </div>
-            <div className="flex items-center gap-1.5 text-sm" style={{ color: muted }}>
+        <div className="flex items-start justify-between gap-3 mb-3">
+          <div className="min-w-0">
+            <h3 className="font-display font-bold text-white text-lg leading-tight mb-1">{school.name}</h3>
+            <div className="flex items-center gap-1.5 text-xs" style={{ color: muted }}>
               <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
-              <span>{school.city}</span>
+              <span>{[school.city, school.country].filter(Boolean).join(", ")}</span>
             </div>
           </div>
           <div className="text-right flex-shrink-0">
-            <div className="text-sm font-bold text-white">{school.priceRange}</div>
-            {school.duration && <div className="text-xs mt-0.5" style={{ color: muted }}>{school.duration}</div>}
+            <div className="text-sm font-bold text-white">{school.priceRange ?? "Contact for pricing"}</div>
           </div>
         </div>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-1.5 mb-4">
-          {school.modularAtpl && (
+          {school.integratedAtpl && (
             <span className="px-2 py-0.5 rounded-md text-xs font-medium" style={{ background: "oklch(0.45 0.18 240 / 0.12)", color: "oklch(0.65 0.18 240)", border: "1px solid oklch(0.45 0.18 240 / 0.2)" }}>
-              Part 141
+              Integrated ATPL
+            </span>
+          )}
+          {school.modularAtpl && (
+            <span className="px-2 py-0.5 rounded-md text-xs font-medium" style={{ background: "oklch(0.6 0.18 200 / 0.12)", color: "oklch(0.7 0.18 200)", border: "1px solid oklch(0.6 0.18 200 / 0.2)" }}>
+              Modular ATPL
             </span>
           )}
           {school.ppl && (
@@ -346,20 +418,10 @@ function SchoolCard({ school }: { school: StaticSchool }) {
         </div>
 
         {/* Description */}
-        <p className="text-sm leading-relaxed mb-4" style={{ color: muted }}>
-          {expanded ? school.description : `${school.description?.slice(0, 180)}...`}
-        </p>
-
-        {/* Highlights */}
-        {school.highlights && school.highlights.length > 0 && (
-          <ul className="space-y-1.5 mb-4">
-            {school.highlights.slice(0, expanded ? undefined : 3).map((h) => (
-              <li key={h} className="flex items-start gap-2 text-sm">
-                <CheckCircle className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" style={{ color: "oklch(0.65 0.18 240)" }} />
-                <span style={{ color: "oklch(0.7 0.04 240)" }}>{h}</span>
-              </li>
-            ))}
-          </ul>
+        {school.description && (
+          <p className="text-sm leading-relaxed mb-4" style={{ color: muted }}>
+            {expanded ? school.description : `${school.description.slice(0, 180)}...`}
+          </p>
         )}
 
         {/* Airline partnerships */}
@@ -373,43 +435,36 @@ function SchoolCard({ school }: { school: StaticSchool }) {
           </div>
         )}
 
-        {/* Testimonials */}
-        {expanded && school.testimonials && school.testimonials.length > 0 && (
-          <div className="space-y-3 mb-4">
-            {school.testimonials.map((t) => (
-              <div key={t.name} className="p-3 rounded-xl" style={{ background: "oklch(0.10 0.07 252)", border: `1px solid ${border}` }}>
-                <div className="flex items-start gap-2">
-                  <Quote className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" style={{ color: "oklch(0.65 0.18 240)" }} />
-                  <p className="text-xs italic leading-relaxed" style={{ color: "oklch(0.65 0.04 240)" }}>{t.quote}</p>
-                </div>
-                <p className="text-xs font-semibold mt-2" style={{ color: muted }}>— {t.name}, {t.role}</p>
-              </div>
-            ))}
-          </div>
-        )}
-
         {/* Actions */}
         <div className="flex items-center gap-3 pt-2" style={{ borderTop: `1px solid ${border}` }}>
+          {school.description && school.description.length > 180 && (
+            <button
+              type="button"
+              onClick={() => setExpanded(!expanded)}
+              className="text-sm font-semibold transition-colors"
+              style={{ color: "oklch(0.65 0.18 240)" }}
+            >
+              {expanded ? "Show less" : "Read more"}
+            </button>
+          )}
           <button
             type="button"
-            onClick={() => setExpanded(!expanded)}
-            className="text-sm font-semibold transition-colors"
-            style={{ color: "oklch(0.65 0.18 240)" }}
+            onClick={() => onUnlock({
+              id: school.id,
+              name: school.name,
+              country: school.country ?? "United States",
+              website: school.website,
+              contactEmail: school.contactEmail,
+              phone: school.phone,
+              priceRange: school.priceRange,
+              airlinePartnerships: school.airlinePartnerships,
+            })}
+            className="ml-auto inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all"
+            style={{ background: brandGradient }}
           >
-            {expanded ? "Show less" : "Read more"}
+            <Globe className="w-3.5 h-3.5" />
+            Get Full Details
           </button>
-          {school.website && (
-            <a
-              href={school.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-auto inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold text-white no-underline transition-all"
-              style={{ background: ctaGradient }}
-            >
-              <Globe className="w-3.5 h-3.5" />
-              Visit school
-            </a>
-          )}
         </div>
       </div>
     </div>

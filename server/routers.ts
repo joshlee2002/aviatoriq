@@ -388,6 +388,47 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
         return { roadmap };
       }),
 
+    /** Lead gate: capture name+email when a user unlocks a school's full details. */
+    captureSchoolUnlock: publicProcedure
+      .input(z.object({
+        name: z.string().min(1),
+        email: z.string().email(),
+        schoolId: z.number(),
+        schoolName: z.string(),
+        country: z.string().optional(),
+      }))
+      .mutation(async ({ input }) => {
+        try {
+          const leadId = await createLead({
+            fullName: input.name,
+            email: input.email,
+            country: input.country ?? 'Unknown',
+            pilotGoal: 'airline',
+            leadScore: 40,
+            intentScore: 50,
+            leadCategory: 'Warm',
+            source: 'school_unlock',
+            consentToContact: true,
+            consentToShare: true,
+          });
+          await createLeadAssignment({
+            leadId,
+            schoolId: input.schoolId,
+            status: 'Unlocked',
+            notes: `Lead unlocked school details for ${input.schoolName}`,
+          });
+          try {
+            await notifyOwner({
+              title: `\uD83D\uDD13 School Unlock: ${input.name}`,
+              content: `${input.name} (${input.email}) unlocked full details for ${input.schoolName}.\nLead ID: ${leadId}`,
+            });
+          } catch { /* non-critical */ }
+          return { success: true, leadId };
+        } catch (e) {
+          console.error('[captureSchoolUnlock] Error:', e);
+          throw new TRPCError({ code: 'INTERNAL_SERVER_ERROR', message: 'Failed to capture lead' });
+        }
+      }),
     /** Email gate: capture email before revealing the AI roadmap on the results page. */
     captureRoadmapEmail: publicProcedure
       .input(z.object({

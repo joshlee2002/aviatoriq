@@ -7,6 +7,7 @@ import PublicFooter from "@/components/PublicFooter";
 import { useCurrency } from "@/contexts/CurrencyContext";
 import { convertPriceString } from "@/lib/currencyUtils";
 import SEO from "@/components/SEO";
+import SchoolUnlockModal from "@/components/SchoolUnlockModal";
 import {
   MapPin,
   Globe,
@@ -36,12 +37,15 @@ const muted = "oklch(0.55 0.04 240)";
 const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
 const brandGradient = "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0.18 200))";
 
+type UnlockTarget = { id: number; name: string; country?: string; website?: string | null; contactEmail?: string | null; phone?: string | null; priceRange?: string | null; airlinePartnerships?: string | null };
+
 export default function Schools() {
   const { formatPrice, currency } = useCurrency();
-  const [country, setCountry] = useState("");
+  const [country, setCountry] = useState("United Kingdom");
   const [trainingType, setTrainingType] = useState("");
   const [financeFilter, setFinanceFilter] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
+  const [unlockSchool, setUnlockSchool] = useState<UnlockTarget | null>(null);
 
   const filters = {
     country: country || undefined,
@@ -303,35 +307,27 @@ export default function Schools() {
                       </div>
                     )}
 
-                    <div className="flex items-center justify-between pt-4" style={{ borderTop: `1px solid ${border}` }}>
-                      <div className="space-y-1">
-                        {school.priceRange && (
-                          <div className="flex items-center gap-1.5 text-xs" style={{ color: muted }}>
-                            <CreditCard className="w-3 h-3" />
-                            <span title={school.priceRange}>
-                              {convertPriceString(school.priceRange, formatPrice)}
-                              {currency.code !== "GBP" && (
-                                <span className="ml-1 opacity-60">({currency.code})</span>
-                              )}
-                            </span>
-                          </div>
-                        )}
-                        {school.airlinePartnerships && (
-                          <div className="flex items-center gap-1.5 text-xs" style={{ color: muted }}>
-                            <Globe className="w-3 h-3" />
-                            {school.airlinePartnerships}
-                          </div>
-                        )}
+                    {/* Price teaser — full pricing revealed after unlock */}
+                    {school.priceRange && (
+                      <div className="flex items-center gap-1.5 text-xs mb-3" style={{ color: muted }}>
+                        <CreditCard className="w-3 h-3" />
+                        <span>from {convertPriceString(school.priceRange.split('–')[0].trim(), formatPrice)}</span>
+                        <span className="ml-1 px-1.5 py-0.5 rounded text-xs" style={{ background: "oklch(0.45 0.18 240 / 0.1)", color: "oklch(0.65 0.18 240)" }}>Full pricing on unlock</span>
                       </div>
-                      <Link
-                        href="/quiz"
-                        onClick={() => Analytics.schoolRecommendationClicked(school.name)}
-                        className="flex items-center gap-1.5 text-xs font-semibold no-underline transition-all"
-                        style={{ color: "oklch(0.65 0.18 240)" }}
+                    )}
+                    <div className="flex items-center justify-between pt-4" style={{ borderTop: `1px solid ${border}` }}>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          Analytics.schoolRecommendationClicked(school.name);
+                          setUnlockSchool({ id: school.id, name: school.name, country: school.country ?? undefined, website: (school as any).website, contactEmail: (school as any).contactEmail, phone: (school as any).phone, priceRange: school.priceRange, airlinePartnerships: school.airlinePartnerships });
+                        }}
+                        className="flex items-center gap-1.5 text-xs font-bold px-4 py-2 rounded-lg transition-all text-white"
+                        style={{ background: brandGradient }}
                       >
-                        Request introduction
+                        Get Full Details
                         <ChevronRight className="w-3.5 h-3.5" />
-                      </Link>
+                      </button>
                     </div>
                     </div>
                   </div>
@@ -339,6 +335,20 @@ export default function Schools() {
               </div>
             )}
 
+            {/* School Unlock Modal */}
+            {unlockSchool && (
+              <SchoolUnlockModal
+                schoolId={unlockSchool.id}
+                schoolName={unlockSchool.name}
+                schoolCountry={unlockSchool.country}
+                website={unlockSchool.website}
+                contactEmail={unlockSchool.contactEmail}
+                phone={unlockSchool.phone}
+                priceRange={unlockSchool.priceRange}
+                airlinePartnerships={unlockSchool.airlinePartnerships}
+                onClose={() => setUnlockSchool(null)}
+              />
+            )}
             {/* Bottom CTA */}
             <div
               className="mt-10 p-8 rounded-2xl text-center"

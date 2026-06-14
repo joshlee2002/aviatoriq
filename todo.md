@@ -252,3 +252,13 @@
 - [x] Set OPENAI_API_KEY and PEXELS_API_KEY secrets
 - [x] 54 real UK and US flight schools in database
 - [x] All 70 tests passing
+
+## Phase 20 – Lead-Gated School Directory & Images
+
+- [x] Add 15 real UK integrated ATPL providers with accurate 2026 pricing
+- [x] Remove 5 duplicate/outdated UK school entries
+- [x] Upload 163 aviation images to CDN and wire into all guide pages, tool pages, school cards
+- [ ] Strip website URL, phone, full pricing from school cards (show teaser: name, location, type, "from £X", finance badge only)
+- [ ] Build "Get Full Details" modal with name+email form on each school card
+- [ ] On form submit: reveal full school details inline, store lead in DB with school pre-assigned
+- [ ] Wire school unlock leads to admin dashboard lead list
