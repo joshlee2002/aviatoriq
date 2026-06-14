@@ -194,9 +194,14 @@ export default function Stories() {
             <p className="text-base md:text-lg lg:text-xl max-w-2xl mb-5" style={{ color: "oklch(0.65 0.04 240)" }}>
               Training journeys from working UK pilots — what route they took, what it cost, how long it took, and what they wish they'd known.
             </p>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs" style={{ background: "oklch(0.72 0.18 65 / 0.1)", border: "1px solid oklch(0.72 0.18 65 / 0.25)", color: "oklch(0.75 0.15 65)" }}>
-              <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              These profiles are composite case studies based on real training routes, costs, and timelines sourced from UK flight schools and CAA data. Names and identifying details are illustrative. <a href="mailto:hello@aviatoriq.co.uk?subject=Share my pilot story" className="underline ml-1 font-semibold" style={{ color: "oklch(0.85 0.15 65)" }}>Share your real story →</a>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 p-4 rounded-xl text-xs" style={{ background: "oklch(0.72 0.18 65 / 0.08)", border: "1px solid oklch(0.72 0.18 65 / 0.3)" }}>
+              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 sm:mt-0" fill="none" viewBox="0 0 24 24" stroke="oklch(0.85 0.15 65)" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span style={{ color: "oklch(0.75 0.04 240)" }}>
+                <strong style={{ color: "oklch(0.85 0.15 65)" }}>About these stories:</strong> These are composite case studies based on real training routes, costs, and timelines sourced from UK flight schools and CAA data. Names are illustrative. Have a real story to share?
+              </span>
+              <a href="mailto:hello@aviatoriq.co.uk?subject=Share my pilot story" className="flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-semibold no-underline transition-all" style={{ background: "oklch(0.72 0.18 65 / 0.15)", border: "1px solid oklch(0.72 0.18 65 / 0.4)", color: "oklch(0.85 0.15 65)" }}>
+                Share your story →
+              </a>
             </div>
           </div>
         </div>

@@ -320,19 +320,19 @@ export default function Jobs() {
               Pilot Jobs Board
             </div>
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
-              Pilot Jobs — UK &amp; USA 2026
+              Pilot Careers Guide — UK &amp; USA 2026
             </h1>
             <p className="text-base md:text-lg lg:text-xl max-w-2xl mb-5" style={{ color: "oklch(0.65 0.04 240)" }}>
-              Current vacancies at UK and US airlines — First Officer, Captain, Cadet, and Instructor roles. Updated monthly.
+              Profiles of the main pilot hiring routes at UK and US airlines — First Officer, Captain, Cadet, and Instructor. Each profile links directly to the airline's official careers page.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <div className="flex items-center gap-2 text-sm" style={{ color: muted }}>
                 <RefreshCw className="w-4 h-4" />
-                Last updated: June 2026
+                Last reviewed: June 2026
               </div>
               <div className="flex items-center gap-2 text-sm" style={{ color: muted }}>
                 <Briefcase className="w-4 h-4" />
-                {JOBS.length} active listings
+                {JOBS.length} role profiles
               </div>
             </div>
           </div>
@@ -350,7 +350,7 @@ export default function Jobs() {
                 <span className="text-xs font-bold">i</span>
               </div>
               <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>
-                These listings are curated from official airline careers pages and verified as active in June 2026. Always apply directly through the airline's official website. AviatorIQ is not a recruitment agency and does not charge fees.
+                <strong className="text-white/80">How this works:</strong> These are curated role profiles — not live job postings. Each one describes a hiring route that these airlines regularly recruit for, with a direct link to their official careers page where you can check current vacancies and apply. AviatorIQ is not a recruitment agency and does not charge fees. Always verify availability directly with the airline.
               </p>
             </div>
 
@@ -403,8 +403,8 @@ export default function Jobs() {
             {/* FO roles */}
             {foRoles.length > 0 && (
               <section className="mb-10">
-                <h2 className="font-display font-bold text-xl text-white mb-1">First Officer Vacancies</h2>
-                <p className="text-sm mb-5" style={{ color: muted }}>Direct-entry FO roles at UK and European airlines.</p>
+                <h2 className="font-display font-bold text-xl text-white mb-1">First Officer Roles</h2>
+                <p className="text-sm mb-5" style={{ color: muted }}>Direct-entry FO hiring routes at UK and US airlines — click through to check current availability.</p>
                 <div className="space-y-4">
                   {foRoles.map(job => <JobCard key={job.id} job={job} />)}
                 </div>
@@ -414,8 +414,8 @@ export default function Jobs() {
             {/* Captain roles */}
             {captainRoles.length > 0 && (
               <section className="mb-10">
-                <h2 className="font-display font-bold text-xl text-white mb-1">Captain Vacancies</h2>
-                <p className="text-sm mb-5" style={{ color: muted }}>Command upgrade and direct-entry Captain positions.</p>
+                <h2 className="font-display font-bold text-xl text-white mb-1">Captain Roles</h2>
+                <p className="text-sm mb-5" style={{ color: muted }}>Command upgrade and direct-entry Captain hiring routes — click through to check current availability.</p>
                 <div className="space-y-4">
                   {captainRoles.map(job => <JobCard key={job.id} job={job} />)}
                 </div>
@@ -539,7 +539,7 @@ function JobCard({ job }: { job: Job }) {
       <p className="text-sm leading-relaxed mb-4" style={{ color: "oklch(0.65 0.04 240)" }}>{job.description}</p>
 
       <div className="flex items-center justify-between pt-4" style={{ borderTop: "1px solid oklch(1 0 0 / 0.07)" }}>
-        <span className="text-xs" style={{ color: muted }}>Posted: {job.posted}</span>
+        <span className="text-xs" style={{ color: muted }}>Last reviewed: {job.posted}</span>
         <a
           href={job.link}
           target="_blank"
