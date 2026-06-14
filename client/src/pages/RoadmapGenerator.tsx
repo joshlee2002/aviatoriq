@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Share2, CheckCircle2, ArrowRight, AlertTriangle, MapPin, Clock, PoundSterling, Shield, ChevronRight, Plane, Target, BookOpen, Users, Zap } from 'lucide-react';
 import { roadmapQuestions, roadmapResults, PathId } from '../data/roadmap';
+import EmailCapture from '../components/EmailCapture';
 import SEO from '../components/SEO';
 import PublicNav from '../components/PublicNav';
 import PublicFooter from '../components/PublicFooter';
@@ -476,6 +477,16 @@ export default function RoadmapGenerator() {
                     </div>
                   </motion.div>
 
+                  {/* Email Capture */}
+                  <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.80 }}>
+                    <EmailCapture
+                      source="roadmap_result"
+                      headline="Save your roadmap & get weekly pilot training tips"
+                      subtext="Join 4,000+ aspiring pilots. No spam. Unsubscribe any time."
+                      ctaLabel="Save my roadmap"
+                      variant="banner"
+                    />
+                  </motion.div>
                   {/* Share + Recalculate */}
                   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.85 }}
                     className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">

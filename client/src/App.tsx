@@ -3,7 +3,11 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch, useLocation } from "wouter";
 import { useEffect } from "react";
+import { initAnalytics } from "./lib/analytics";
+import { usePageTracking } from "./hooks/usePageTracking";
+
 import ErrorBoundary from "./components/ErrorBoundary";
+
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { CountryProvider } from "./contexts/CountryContext";
 
@@ -133,6 +137,9 @@ import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 
+// Initialise PostHog analytics once on app load
+initAnalytics();
+
 function ScrollToTop() {
   const [location] = useLocation();
   useEffect(() => {
@@ -142,6 +149,7 @@ function ScrollToTop() {
 }
 
 function Router() {
+  usePageTracking();
   return (
     <>
       <ScrollToTop />

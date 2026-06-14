@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
+import EmailCapture from "@/components/EmailCapture";
 import SEO from "@/components/SEO";
 
 const surface = "oklch(0.14 0.08 250)";
@@ -434,6 +435,16 @@ export default function HomeUS() {
         </div>
       </section>
 
+      {/* Email Capture */}
+      <section style={{ padding: "4rem 1.5rem", maxWidth: "600px", margin: "0 auto" }}>
+        <EmailCapture
+          source="us_homepage"
+          headline="Get the free US Pilot Training Guide 2026"
+          subtext="Everything you need to know about becoming a pilot in the USA — FAA licences, Part 141 vs 61, costs, and airline cadet programmes."
+          ctaLabel="Send me the free guide"
+          variant="card"
+        />
+      </section>
       <PublicFooter />
     </div>
   );

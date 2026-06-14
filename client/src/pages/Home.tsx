@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
+import EmailCapture from "@/components/EmailCapture";
 import { trpc } from "@/lib/trpc";
 import {
   Plane,
@@ -831,6 +832,16 @@ export default function Home() {
         <SchoolMatchingSection />
         <GuidesSection />
         <CtaBannerSection />
+        {/* Email Capture Section */}
+        <section style={{ padding: "4rem 1.5rem", maxWidth: "600px", margin: "0 auto" }}>
+          <EmailCapture
+            source="uk_homepage"
+            headline="Get the free UK Pilot Training Guide 2026"
+            subtext="Everything you need to know about becoming a pilot in the UK — costs, routes, medical, and cadet programmes. Sent straight to your inbox."
+            ctaLabel="Send me the free guide"
+            variant="card"
+          />
+        </section>
       </main>
       <PublicFooter />
     </div>

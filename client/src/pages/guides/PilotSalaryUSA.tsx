@@ -14,7 +14,7 @@ const PilotSalaryUSA = () => {
         },
         {
           question: "How much does a regional airline first officer make?",
-          answer: "Regional airline first officers typically start at $45,000 to $70,000 per year. Signing bonuses of $10,000 to $30,000 are common due to the pilot shortage. After 2 to 3 years, regional FOs can earn $70,000 to $100,000, and regional captains earn $90,000 to $140,000.",
+          answer: "Regional airline first officers now start at $110,000–$112,000 per year including signing bonuses (2026). SkyWest starts at $111,170 (including $5,000 bonus), Envoy at $110,428, and Piedmont at $111,684. After 2 to 3 years, regional FOs earn $120,000+, and regional captains earn $130,000 to $160,000.",
         },
         {
           question: "How much does an airline captain make in the USA?",
@@ -57,7 +57,7 @@ const PilotSalaryUSA = () => {
                 Most pilots begin their airline careers at regional carriers — airlines such as SkyWest, Envoy, Piedmont, PSA, Horizon, GoJet, and Republic that operate regional jets under the banners of the major carriers. Regional airlines are the primary path for pilots who have built their 1,500 hours (or R-ATP minimums) as a CFI or in other roles.
               </p>
               <p>
-                Regional first officer starting salaries have risen sharply. In 2018, many regional FOs started at $25,000 to $35,000 per year. By 2026, starting salaries at most regionals are $50,000 to $75,000, with signing bonuses of $10,000 to $30,000 common. SkyWest, Envoy, and Horizon have been particularly competitive. Total first-year compensation including signing bonus and per diem can exceed $80,000.
+                Regional first officer starting salaries have transformed completely. In 2018, many regional FOs started at $25,000 to $35,000 per year. By 2026, the figures are dramatically higher: SkyWest starts at $111,170 (including a $5,000 signing bonus), Envoy at $110,428, and Piedmont at $111,684. These are verified 2026 figures from ATP Flight School's airline partner data. Total first-year compensation including per diem can exceed $120,000.
               </p>
               <p>
                 Regional captain salaries range from $90,000 to $140,000 depending on the carrier and aircraft type. Upgrade timelines have compressed to 1 to 3 years at many regionals due to rapid expansion and attrition to major carriers. The regional captain role is often used as a stepping stone to major airline first officer positions, where seniority resets but pay increases significantly.
@@ -157,7 +157,7 @@ const PilotSalaryUSA = () => {
               </p>
               <ul style={{ paddingLeft: "1.5rem", lineHeight: "2.2" }}>
                 <li><strong>Years 0 to 2:</strong> Flight training (PPL, IR, CPL, CFI) — earning $30,000 to $50,000 as a CFI</li>
-                <li><strong>Years 2 to 4:</strong> Regional airline first officer — earning $50,000 to $90,000</li>
+                <li><strong>Years 2 to 4:</strong> Regional airline first officer — earning $110,000 to $130,000 (2026 figures)</li>
                 <li><strong>Years 4 to 6:</strong> Regional captain or major airline FO hire — earning $90,000 to $130,000</li>
                 <li><strong>Years 6 to 12:</strong> Major airline first officer — earning $100,000 to $185,000</li>
                 <li><strong>Years 12 to 20:</strong> Major airline captain — earning $200,000 to $320,000+</li>
