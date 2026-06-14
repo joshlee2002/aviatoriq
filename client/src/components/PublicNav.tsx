@@ -4,7 +4,7 @@ import { Menu, X, Plane, ChevronDown, Zap } from "lucide-react";
 import { useCurrency, SUPPORTED_CURRENCIES } from "@/contexts/CurrencyContext";
 import { useCountry } from "@/contexts/CountryContext";
 
-const announcements = [
+const ukAnnouncements = [
   { text: "New guide: BA Speedbird Academy 2026 requirements", href: "/guides/ba-speedbird-academy" },
   { text: "New tool: Medical Condition Lookup — check any condition against Class 1 standards", href: "/tools/medical-condition-lookup" },
   { text: "New guide: Can you become a pilot with ADHD? 2026 CAA rules explained", href: "/guides/adhd-pilot-uk" },
@@ -12,15 +12,28 @@ const announcements = [
   { text: "New guide: Integrated vs Modular ATPL — which is actually cheaper in 2026?", href: "/guides/integrated-vs-modular-cost" },
 ];
 
-function AnnouncementBar() {
+const usAnnouncements = [
+  { text: "New guide: Delta Propel Program — how to get selected in 2026", href: "/us/guides/delta-propel-program" },
+  { text: "New tool: FAA Medical Condition Lookup — check your eligibility", href: "/us/medical-lookup" },
+  { text: "New guide: United Aviate Academy — requirements, timeline & pay", href: "/us/guides/united-aviate-program" },
+  { text: "New tool: US Cadet Eligibility Checker — find your airline programme", href: "/us/cadet-eligibility" },
+  { text: "New guide: ATP Flight School — full 2026 review and costs", href: "/us/guides/atp-flight-school-guide" },
+];
+
+function AnnouncementBar({ isUS }: { isUS: boolean }) {
   const [current, setCurrent] = useState(0);
+  const announcements = isUS ? usAnnouncements : ukAnnouncements;
+
+  useEffect(() => {
+    setCurrent(0);
+  }, [isUS]);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent(prev => (prev + 1) % announcements.length);
     }, 4500);
     return () => clearInterval(timer);
-  }, []);
+  }, [announcements]);
 
   const ann = announcements[current];
 
@@ -50,10 +63,10 @@ const ukNavLinks = [
 ];
 
 const usNavLinks = [
-  { label: "US Guides", href: "/us/guides" },
+  { label: "Quizzes", href: "/quizzes" },
   { label: "US Schools", href: "/us/schools" },
+  { label: "US Guides", href: "/us/guides" },
   { label: "Jobs", href: "/jobs" },
-  { label: "Stories", href: "/stories" },
   { label: "About", href: "/about" },
 ];
 
@@ -184,7 +197,7 @@ export default function PublicNav() {
   return (
     <>
     <div className="sticky top-0 z-50">
-    <AnnouncementBar />
+    <AnnouncementBar isUS={isUS} />
     <nav style={navStyle}>
       <div className="container">
         <div className="flex items-center justify-between h-16">
@@ -271,6 +284,16 @@ export default function PublicNav() {
                       onMouseLeave={e => (e.currentTarget.style.color = "oklch(0.5 0.04 240)")}
                     >
                       {isUS ? "→ View UK tools" : "→ View US tools"}
+                    </Link>
+                    <Link
+                      href={isUS ? "/" : "/us"}
+                      onClick={() => setToolsOpen(false)}
+                      className="flex items-center gap-2 px-4 py-2 text-xs no-underline transition-colors"
+                      style={{ color: "oklch(0.5 0.04 240)" }}
+                      onMouseEnter={e => (e.currentTarget.style.color = "oklch(0.65 0.22 45)")}
+                      onMouseLeave={e => (e.currentTarget.style.color = "oklch(0.5 0.04 240)")}
+                    >
+                      {isUS ? "→ Switch to UK platform" : "→ Switch to US platform"}
                     </Link>
                   </div>
                 </div>

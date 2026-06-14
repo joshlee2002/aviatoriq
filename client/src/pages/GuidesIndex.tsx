@@ -85,7 +85,7 @@ const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2
 
 export default function GuidesIndex() {
   useEffect(() => { document.title = "Pilot Training Guides – AviatorIQ"; }, []);
-  const [market, setMarket] = useState<MarketFilter>("All");
+  const [market, setMarket] = useState<MarketFilter>("UK");
 
   const filtered = guides.filter((g) => market === "All" || g.market === market);
   const categories = Array.from(new Set(filtered.map((g) => g.category)));
