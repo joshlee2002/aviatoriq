@@ -6,6 +6,7 @@ export default function AirlineInterviewUSA() {
       title="US Airline Pilot Interview Preparation Guide 2026: Ace Your Interview"
       subtitle="Master the rigorous US airline pilot interview process in 2026 with our comprehensive guide. Learn what major and regional carriers look for, how to conquer the TBAS aptitude test, and strategies to answer the toughest behavioral and technical questions."
       readTime="19 min read"
+      heroImage="/manus-storage/airline-interview-usa_2b9e4f7a.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/airline-interview-usa"
       metaDescription="Prepare for your 2026 US airline pilot interview. Master the TBAS, behavioral questions (STAR method), and technical assessments to secure your dream job."
@@ -17,6 +18,7 @@ export default function AirlineInterviewUSA() {
               <p className="mb-4 text-[oklch(0.65_0.04_240)]">
                 Becoming an airline pilot in the United States is a challenging yet highly rewarding career path, demanding not only exceptional flying skills but also a comprehensive understanding of the rigorous selection processes employed by major and regional carriers. In 2026, the demand for qualified pilots remains strong, with airlines continually refining their interview strategies to identify candidates who possess the technical proficiency, leadership qualities, and cultural fit necessary for success. This guide provides an in-depth look at what to expect, how to prepare, and what airlines are truly seeking in the next generation of aviators.
               </p>
+              <img src="/manus-storage/interview-assessment_c517e045.jpg" alt="Airline interview assessment" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <div className="bg-[oklch(0.55_0.18_145/0.08)] border border-[oklch(0.55_0.18_145/0.2)] p-6 rounded-lg mb-6">
                 <h3 className="text-xl font-semibold text-[oklch(0.72_0.18_65)] mb-2">Key 2026 Statistic</h3>
                 <p className="text-[oklch(0.65_0.04_240)]">

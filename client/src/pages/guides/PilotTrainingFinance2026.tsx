@@ -16,6 +16,7 @@ const PilotTrainingFinance2026 = () => {
         { question: "Can I train as a pilot while working full-time?", answer: "Yes, through the modular route. Modular training allows you to complete each stage at your own pace, including evenings and weekends for ground school. Many pilots have completed modular training while working full-time, though it typically takes 4–6 years." },
       ]}
       readTime="9 min read"
+      heroImage="/manus-storage/training-finance-2026_cc42618a.jpg"
       ctaHref="/calculator"
       ctaText="Calculate your training costs"
       relatedGuides={[
@@ -31,7 +32,7 @@ const PilotTrainingFinance2026 = () => {
             <>
               <div style={{ margin: "0 0 20px 0", borderRadius: "12px", overflow: "hidden" }}>
                 <img
-                  src="/images/guides/pilot-training-cost-breakdown.png"
+                  src="/manus-storage/pilot-training-cost-breakdown_b2ddab91.png"
                   alt="UK pilot training cost breakdown 2026 by route"
                   style={{ width: "100%", display: "block" }}
                   loading="lazy"
@@ -40,6 +41,8 @@ const PilotTrainingFinance2026 = () => {
               <p style={{ fontSize: "0.8rem", color: "oklch(0.45 0.04 240)", textAlign: "center", marginBottom: "16px" }}>
                 Cost breakdown by training route. Source: AviatorIQ research from school prospectuses, 2026.
               </p>
+              <img src="/manus-storage/training-finance-loan_7be38da5.jpg" alt="Pilot training finance loan" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/pilot-training-cost-breakdown_b2ddab91.png" alt="Training cost breakdown" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
             </>
           ),
         },

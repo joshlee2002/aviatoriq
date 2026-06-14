@@ -6,6 +6,7 @@ export default function MilitaryToAirlineUSA() {
       title="Military Pilot to Airline Transition USA: Your 2026 Guide"
       subtitle="Discover the definitive pathway for military pilots transitioning to commercial airlines in the USA, covering eligibility, programs, and financial aid for 2026."
       readTime="13 min read"
+      heroImage="/manus-storage/military-airline_3b8b8da5.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/military-to-airline-usa"
       metaDescription="Comprehensive 2026 guide for military pilots transitioning to US airlines. Explore programs, requirements, costs, and career outlook to become a commercial pilot in the USA."
@@ -15,6 +16,8 @@ export default function MilitaryToAirlineUSA() {
           content: (
             <div>
               <p className="mb-4">The transition from military aviation to a commercial airline career in the United States presents a unique and highly sought-after pathway for skilled aviators. Military pilots bring invaluable experience, discipline, and advanced flight proficiency, making them prime candidates for the demanding roles of airline pilots. The demand for experienced pilots remains robust, with airlines actively recruiting from military ranks to address projected shortages. This guide provides a comprehensive overview of the landscape, focusing on the specific programs, requirements, and opportunities available in 2026.</p>
+              <img src="/manus-storage/pilot-briefing_76df7230.jpg" alt="Military pilot briefing" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/first-officer-job_23328c88.jpg" alt="Airline first officer" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4"><strong>Key Statistic</strong>: JetBlue's Gateway Rotor Transition Program (RTP) aims to fill a limited number of spots in its first class in fall 2023 and plans to scale the program in the future, bringing more skilled veterans to JetBlue. This highlights the proactive approach by major airlines to integrate military talent, recognizing their exceptional skill sets and dedication.</p>
             </div>
           ),

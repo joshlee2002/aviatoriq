@@ -6,6 +6,7 @@ export default function PilotCvGuideUSA() {
       title="Airline Pilot Resume USA 2026: Your Ultimate Guide to Success"
       subtitle="Craft a powerful airline pilot resume in 2026 that highlights your flight experience, certifications, and logbook summary to secure your dream job with major US carriers."
       readTime="20 min read"
+      heroImage="/manus-storage/pilot-cv-usa_67d5f48f.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/pilot-resume-usa"
       metaDescription="Master your airline pilot resume for 2026 with this comprehensive USA guide. Learn to format logbook summaries, highlight experience, and avoid common pitfalls to impress US airlines."
@@ -15,6 +16,7 @@ export default function PilotCvGuideUSA() {
           content: (
             <div>
               <p className="mb-4">In the highly competitive landscape of US airline pilot recruitment in 2026, your resume serves as your primary advocate, a critical document that distills years of rigorous training and invaluable flight experience into a concise, impactful narrative. Unlike traditional resumes, an airline pilot's curriculum vitae must meticulously detail flight hours, certifications, and operational experience in a format that resonates with airline hiring managers and applicant tracking systems (ATS). The goal is not merely to list qualifications but to strategically present your journey in aviation, demonstrating a clear progression towards becoming a safe, proficient, and reliable airline pilot. A well-crafted resume acts as your gateway to an interview, showcasing your adherence to FAA regulations, your commitment to safety, and your readiness for the demands of commercial aviation.</p>
+              <img src="/manus-storage/airline-interview-usa_2b9e4f7a.jpg" alt="US airline interview" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">A key differentiator for a successful airline pilot resume in the USA is its ability to communicate not just what you have done, but the quality and relevance of that experience. This includes highlighting multi-crew cooperation, instrument proficiency, and experience in complex aircraft, all while aligning with the specific requirements of major US carriers like Delta, United, and American Airlines. The aviation industry is experiencing significant growth, with the Bureau of Labor Statistics projecting that the <strong>overall employment of airline and commercial pilots is projected to grow by 4% from 2022 to 2032</strong>, translating to approximately 18,100 new job openings each year. This growth underscores the ongoing demand for qualified pilots and the necessity of a resume that stands out amidst a large pool of applicants. Your resume must effectively bridge the gap between your personal logbook and the airline's operational needs, making it clear that you possess the exact skill set and professional demeanor they seek.</p>
             </div>
           ),

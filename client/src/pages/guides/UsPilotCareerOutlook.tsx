@@ -31,6 +31,7 @@ const UsPilotCareerOutlook = () => {
         },
       ]}
       readTime="10 min read"
+      heroImage="/manus-storage/us-pilot-career_eda6a21f.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
       sections={[
@@ -52,6 +53,8 @@ const UsPilotCareerOutlook = () => {
                 the impact on career timelines, and the financial prospects
                 for new entrants.
               </p>
+              <img src="/manus-storage/airline-pilot-cockpit_3c8e2f1a.jpg" alt="US airline pilot cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/first-officer-job_23328c88.jpg" alt="US airline first officer" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
             </>
           ),
         },

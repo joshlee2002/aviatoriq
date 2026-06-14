@@ -30,7 +30,8 @@ const InstrumentRatingUSA = () => {
           answer: 'To remain instrument current, FAR 61.57(c) requires a pilot, within the preceding six calendar months, to have performed in actual or simulated instrument conditions: six instrument approaches, holding procedures and tasks, and intercepting and tracking courses using navigation systems. This can be done in an aircraft, flight simulator, or flight training device. If currency lapses beyond six months, a pilot must complete an Instrument Proficiency Check (IPC) with a CFII.'
         }
       ]}
-      readTime='20 min read' // Placeholder, will update after content is written
+      heroImage="/manus-storage/instrument-rating-usa_a47c6d18.jpg"
+      readTime='20 min read'
       ctaHref='/us/roadmap'
       ctaText='Get my free US pilot roadmap'
       sections={[

@@ -16,6 +16,7 @@ const AmITooOld = () => {
         { question: "Can I become a private pilot at any age?", answer: "Yes. There is no upper age limit for a Private Pilot Licence (PPL) in the UK. You can fly for pleasure at any age as long as you hold a valid medical certificate." },
       ]}
       readTime="7 min read"
+      heroImage="/manus-storage/pilot-age_3cb7fd51.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -26,6 +27,8 @@ const AmITooOld = () => {
               <p>
                 The Civil Aviation Authority (CAA) does not impose an upper age limit on obtaining a Commercial Pilot Licence (CPL) or an Airline Transport Pilot Licence (ATPL). You can start training at 40, 50, or even 60 and legally qualify as a commercial pilot. The question is not whether you <em>can</em> — it's whether it makes practical and financial sense for your specific situation.
               </p>
+              <img src="/manus-storage/pilot-over-40_fbd1e435.jpg" alt="Pilot training over 40" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/ground-school-classroom_b43b6fc8.jpg" alt="Ground school training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The mandatory retirement age for airline pilots operating under UK regulations is 65. This is the single most important number in the age conversation. Everything else — what airlines will consider, whether training is worth the investment, what career is realistically achievable — flows from this one fact.
               </p>

@@ -6,6 +6,7 @@ export default function UnitedAviateGuide() {
       title="United Aviate Academy Review 2026: Your Path to United Airlines"
       subtitle="Explore the United Aviate Academy, its costs, career progression, and how it compares to other flight training programs in 2026."
       readTime="20 min read"
+      heroImage="/manus-storage/united-aviate_a3a727c0.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/united-aviate-program"
       metaDescription="Comprehensive 2026 review of United Aviate Academy. Understand costs, admission, career path, and compare it to other pilot training programs."
@@ -15,6 +16,7 @@ export default function UnitedAviateGuide() {
           content: (
             <div>
               <p className="mb-4">The United Aviate Academy, located in Goodyear, Arizona, stands as a premier flight training institution designed to funnel aspiring pilots directly into the cockpit of United Airlines. Established to address the growing demand for qualified airline pilots, the Academy offers a structured, FAA-approved Part 141 training curriculum. Its primary appeal lies in the direct pathway it provides to a First Officer position at United Airlines, offering a clear career trajectory for graduates. The program emphasizes a rigorous training environment, comprehensive support, and a culture aligned with United's operational standards. As of 2026, the Academy continues to be a significant player in US pilot recruitment, aiming to produce thousands of new pilots over the next decade. A crucial aspect for prospective students is the financial commitment: United Aviate Academy requires applicants to show proof of funding of at least $111,700 to cover the cost of training, ensuring candidates are prepared for the significant investment required.</p>
+              <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="United Aviate cadet programme" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">The curriculum is meticulously designed to take cadets from zero flight experience to becoming a Commercial Pilot with multi-engine and instrument ratings. Beyond the technical flight training, the Academy integrates professional development, leadership skills, and an understanding of United Airlines' operational philosophy. This holistic approach aims to cultivate not just skilled pilots, but future airline captains who embody the values and professionalism expected by a major carrier. The program's structure is intensive, demanding full-time dedication, and is geared towards accelerating the journey from student pilot to airline pilot, making it an attractive option for those committed to a career with United.</p>
             </div>
           ),

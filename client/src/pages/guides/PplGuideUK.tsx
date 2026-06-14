@@ -31,6 +31,7 @@ const PplGuideUK = () => {
         },
       ]}
       readTime="15 min read"
+      heroImage="/manus-storage/ppl-guide_ba765335.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -41,6 +42,8 @@ const PplGuideUK = () => {
               <p>
                 The Private Pilot Licence (PPL) is your first significant step into the world of aviation, granting you the privilege to fly an aircraft for recreational purposes in the United Kingdom. Regulated by the UK Civil Aviation Authority (CAA), the PPL allows you to act as pilot in command (PIC) of an aircraft for non-commercial operations. This means you can fly for leisure, take friends and family along, and even share the operating costs of a flight. It's the foundational licence for anyone aspiring to a career in aviation or simply wishing to enjoy the freedom of flight as a hobby.
               </p>
+              <img src="/manus-storage/solo-flight_ac4d5964.jpg" alt="Student pilot solo flight" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/small-aircraft_e3c4488b.jpg" alt="Small aircraft flying" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The UK PPL is governed by Part-FCL regulations, which are derived from European Union Aviation Safety Agency (EASA) standards but are now administered independently by the UK CAA post-Brexit. While the core principles remain similar to international PPLs, specific UK regulations and procedures apply. Aspiring pilots must meet certain age, medical, theoretical knowledge, and practical flight experience requirements to qualify for the licence. The journey is challenging but immensely rewarding, opening doors to further aviation qualifications and experiences.
               </p>

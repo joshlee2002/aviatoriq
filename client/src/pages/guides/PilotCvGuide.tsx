@@ -8,6 +8,7 @@ export default function PilotCvGuide() {
       canonical="/guides/pilot-cv-cover-letter"
       metaDescription="How to write a pilot CV and cover letter in 2026. Aviation CV structure, what to include, common mistakes, and cover letter templates for UK airline applications."
       readTime="7 min read"
+      heroImage="/manus-storage/pilot-cv_e66193e2.jpg"
       lastUpdated="June 2026"
       ctaHref="/quiz"
       ctaText="Get your personalised training roadmap"
@@ -31,6 +32,7 @@ export default function PilotCvGuide() {
               <p>
                 Airline recruitment teams screen pilot CVs in seconds. The first pass is purely mechanical: does this candidate meet the minimum requirements? Licence type, total hours, right to work, medical validity. If you do not meet the minimums, the CV goes no further regardless of how well it is written.
               </p>
+              <img src="/manus-storage/airline-interview_3a8f2c1d.jpg" alt="Airline interview preparation" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 If you do meet the minimums, the second pass is about presentation. A disorganised, inconsistently formatted CV signals the same lack of attention to detail that would concern a chief pilot in the cockpit. A clean, professional CV signals the opposite.
               </p>

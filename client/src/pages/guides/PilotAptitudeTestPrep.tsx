@@ -8,6 +8,7 @@ export default function PilotAptitudeTestPrep() {
       canonical="/guides/pilot-aptitude-test-preparation"
       metaDescription="How to prepare for pilot aptitude tests in 2026. CUT-E, Symbiotics, Pilapt, and COMPASS explained. What each test measures, pass marks, and the most effective preparation strategies."
       readTime="8 min read"
+      heroImage="/manus-storage/aptitude-test_3c7e9f2a.jpg"
       lastUpdated="June 2026"
       ctaHref="/quiz"
       ctaText="Take the free pilot readiness assessment"
@@ -31,6 +32,7 @@ export default function PilotAptitudeTestPrep() {
               <p>
                 Pilot aptitude tests are not knowledge tests. They do not test your understanding of aviation meteorology or air law. They test the underlying cognitive and psychomotor abilities that predict success in flight training and in the cockpit.
               </p>
+              <img src="/manus-storage/simulator-assessment_08bb00b0.jpg" alt="Simulator assessment preparation" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The core abilities assessed across all major platforms are:
               </p>

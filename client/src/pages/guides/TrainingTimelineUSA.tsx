@@ -6,6 +6,7 @@ export default function TrainingTimelineUSA() {
       title="How Long to Become a Pilot in the USA: Your 2026 Timeline Guide"
       subtitle="Navigate the comprehensive journey from aspiring aviator to airline pilot, understanding every milestone, cost, and opportunity in the United States."
       readTime="20 min read"
+      heroImage="/manus-storage/training-timeline-usa_5603c4cd.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/pilot-training-timeline-usa"
       metaDescription="Discover the detailed 2026 timeline to become a pilot in the USA, including training phases, costs, hour-building strategies, and the impact of the current pilot shortage on your career path."
@@ -15,6 +16,7 @@ export default function TrainingTimelineUSA() {
           content: (
             <div>
               <p className="mb-4">Becoming a professional pilot in the United States is a rigorous yet rewarding journey, demanding significant dedication, time, and financial investment. For aspiring aviators, understanding the typical timeline is crucial for effective planning and successful career progression. The path from zero flight experience to becoming an airline-eligible pilot in the USA generally spans two to two and a half years for a focused student, encompassing all necessary certifications and the accumulation of 1,500 flight hours. This guide provides a comprehensive breakdown of each stage, offering realistic expectations for 2026 and beyond.</p>
+              <img src="/manus-storage/usa-school_36756c90.jpg" alt="USA flight training timeline" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">The Federal Aviation Administration (FAA) sets stringent requirements for pilot certification, ensuring a high standard of safety and proficiency. These regulations dictate the minimum flight hours, knowledge, and practical skills required for each license and rating. While the FAA outlines minimums, real-world training often takes longer due to factors such as weather, instructor availability, individual learning pace, and the need to build additional flight experience beyond the basic certifications. This guide will delve into these nuances, providing a clear roadmap for your aviation career.</p>
             </div>
           ),

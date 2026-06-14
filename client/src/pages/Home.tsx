@@ -62,7 +62,7 @@ function HeroSection() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: "url('/images/hero-cockpit.jpg')",
+          backgroundImage: "url('/manus-storage/hero-cockpit_b4476f04.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
           opacity: 0.28,

@@ -8,6 +8,7 @@ const AdhdPilotGuide = () => {
       canonical="/guides/adhd-pilot-uk"
       metaDescription="Can you become a commercial pilot with ADHD in the UK? Yes, but it requires a specific CAA assessment. Learn the 2026 rules on medication, history, and the exact steps to get your Class 1 Medical."
       readTime="6 min read"
+      heroImage="/manus-storage/adhd-pilot_3f8a2c9e.jpg"
       ctaHref="/tools/medical-condition-lookup"
       ctaText="Check other medical conditions"
       faqSchema={[
@@ -28,6 +29,7 @@ const AdhdPilotGuide = () => {
               <p>
                 One of the most common questions aspiring pilots ask is whether a childhood or adult diagnosis of ADHD (Attention Deficit Hyperactivity Disorder) automatically disqualifies them from becoming a commercial pilot.
               </p>
+              <img src="/manus-storage/medical-exam_79659228.jpg" alt="Aviation medical examination" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 <strong>The short answer is no. An ADHD diagnosis is not an automatic, lifelong ban in the UK.</strong>
               </p>

@@ -3,7 +3,8 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
     <GuideLayout
       title="CFI Hour Building Methods, Costs & Timeline USA 2026: Your Complete Guide"
       subtitle="Navigate the complexities of building flight hours in the USA, from CFI pathways and alternative methods to detailed cost analysis and strategic timelines for aspiring airline pilots in 2026."
-      readTime="X min read" // Placeholder, will update later
+      readTime="X min read"
+      heroImage="/manus-storage/hour-building-usa_cbbd5703.jpg" // Placeholder, will update later
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/hour-building-usa"
       metaDescription="Discover the most effective CFI hour building methods, associated costs, and realistic timelines in the USA for 2026. This guide covers FAA requirements, funding, and strategies to reach 1,500 hours efficiently."
@@ -15,6 +16,8 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
               <p className="mb-4">
                 For aspiring airline pilots in the United States, accumulating sufficient flight hours is a critical milestone on the path to a professional career. The Federal Aviation Administration (FAA) sets specific hour requirements for both Commercial Pilot Certificates (CPL) and Airline Transport Pilot (ATP) Certificates, which are essential for flying commercially. Understanding these regulations is the first step in strategically planning your hour-building journey. The ultimate goal for many is the unrestricted ATP certificate, which mandates a minimum of 1,500 total flight hours. However, pathways exist for reduced hour requirements, such as the Restricted ATP (R-ATP), which can lower the threshold to 1,000 or even 750 hours for graduates of specific collegiate aviation programs or military pilots [1].
               </p>
+              <img src="/manus-storage/hour-building-flight_1908e157.jpg" alt="Hour building flight USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/small-aircraft_e3c4488b.jpg" alt="Small aircraft propeller flying" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">
                 A significant portion of this hour-building often involves serving as a Certified Flight Instructor (CFI). This method not only allows pilots to log flight time but also refines their aeronautical knowledge and teaching skills. For full-time Certified Flight Instructors, the hour building phase typically takes 18 to 24 months to reach 1,500 hours, logging 600 to 800 hours per year. This statistic highlights the dedication and time commitment required for this common hour-building strategy.
               </p>

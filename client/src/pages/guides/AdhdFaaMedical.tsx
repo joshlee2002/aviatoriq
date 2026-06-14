@@ -31,6 +31,7 @@ const AdhdFaaMedical = () => {
         },
       ]}
       readTime="15 min read"
+      heroImage="/manus-storage/adhd-faa_7b3e9f2a.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
       sections={[
@@ -41,6 +42,7 @@ const AdhdFaaMedical = () => {
               <p>
                 Historically, Attention-Deficit/Hyperactivity Disorder (ADHD) has been a significant hurdle for aspiring pilots seeking FAA medical certification. The Federal Aviation Administration (FAA) has long viewed ADHD, and particularly the use of stimulant medications to treat it, as a condition that could impair an individual's ability to safely operate an aircraft. This conservative stance stems from concerns about potential distractions, impulsivity, and cognitive deficits that could compromise flight safety. For decades, an ADHD diagnosis often led to an automatic deferral or denial of a medical certificate, placing a heavy burden on applicants to prove their fitness.
               </p>
+              <img src="/manus-storage/faa-ame-doctor_9d5ff4b3.jpg" alt="FAA AME doctor" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The FAA's primary mission is aviation safety, and its medical certification standards are designed to ensure that pilots possess the necessary physical and mental capabilities. In the context of ADHD, the FAA has been particularly cautious due to the critical nature of tasks performed by pilots, which demand sustained attention, rapid decision-making, and precise execution. Any condition that could compromise these abilities is scrutinized rigorously. This has meant that even a childhood diagnosis, if not properly addressed and documented, could resurface as a major obstacle years later during the medical application process.
               </p>

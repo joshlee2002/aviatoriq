@@ -8,6 +8,7 @@ const IntegratedVsModularCost = () => {
       canonical="/guides/integrated-vs-modular-cost"
       metaDescription="Integrated vs Modular ATPL cost comparison 2026. Discover why Integrated costs £100k+ while Modular costs £60k, and which route actually makes financial sense for you."
       readTime="9 min read"
+      heroImage="/manus-storage/integrated-modular-cost_96c840dd.jpg"
       ctaHref="/calculator"
       ctaText="Calculate your training cost"
       faqSchema={[
@@ -28,6 +29,8 @@ const IntegratedVsModularCost = () => {
               <p>
                 If you want to become an airline pilot in the UK, you have to choose between two training routes: Integrated or Modular. Both result in the exact same piece of paper — a "Frozen" ATPL (Airline Transport Pilot Licence).
               </p>
+              <img src="/manus-storage/integrated-school_e4427060.jpg" alt="Integrated flight training school" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/pilot-training-cost-breakdown_b2ddab91.png" alt="Pilot training cost breakdown" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 Yet one route costs around £110,000, and the other costs around £60,000. 
               </p>

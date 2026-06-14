@@ -31,6 +31,7 @@ const MccJocUK = () => {
         },
       ]}
       readTime="12 min read"
+      heroImage="/manus-storage/mcc-joc_88c97923.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -41,6 +42,8 @@ const MccJocUK = () => {
               <p>
                 For aspiring airline pilots in the UK, the journey from single-engine aircraft to the complex world of multi-crew jet operations involves several critical training phases. Among the most pivotal are the Multi-Crew Cooperation (MCC) and Jet Orientation Course (JOC). These courses are not merely additional qualifications; they are fundamental bridges that prepare pilots for the demands of a professional airline career, ensuring safety, efficiency, and effective teamwork in the cockpit.
               </p>
+              <img src="/manus-storage/mcc-simulator_d3ac3716.jpg" alt="Multi crew cooperation simulator" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/joc-cockpit_aa406b45.jpg" alt="Jet orientation course cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The transition from flying solo to operating as part of a two-pilot crew in a sophisticated jet airliner requires a significant shift in mindset and skill set. MCC training focuses on the 'soft skills' of aviation – communication, leadership, decision-making, and workload management – all within a multi-crew environment. Complementing this, the JOC provides the practical 'hard skills' necessary to handle the unique characteristics of jet aircraft, such as their speed, inertia, and advanced systems.
               </p>

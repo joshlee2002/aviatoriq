@@ -6,6 +6,7 @@ export default function HowToBecomePilotUS() {
       title="How to Become an Airline Pilot in the USA (2026 Guide)"
       subtitle="The complete step-by-step guide to becoming a commercial airline pilot in the United States — Part 61 vs Part 141, costs, the 1500-hour rule, and cadet programmes."
       readTime="12 min read"
+      heroImage="/manus-storage/how-to-become-pilot_a1ed518f.jpg"
       canonical="https://www.aviatoriq.com/us/guides/how-to-become-a-pilot"
       metaDescription="How to become an airline pilot in the USA in 2026. Covers FAA licences, Part 61 vs Part 141, the 1500-hour rule, costs, and airline cadet programmes."
       author="AviatorIQ Editorial Team"

@@ -7,6 +7,7 @@ export default function PilotAptitudeTestUSA() {
       title="US Pilot Aptitude Tests 2026: TBAS, ASTB & Airline Assessments"
       subtitle="A comprehensive guide to navigating the essential aptitude tests for aspiring pilots in the United States, including the TBAS, ASTB-E, and various airline-specific evaluations."
       readTime="15 min read"
+      heroImage="/manus-storage/aptitude-test-usa_9f2e4c8b.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/pilot-aptitude-test-usa"
       metaDescription="Prepare for US pilot aptitude tests like TBAS, ASTB-E, and airline assessments in 2026. Learn about test structures, content, preparation strategies, and how to achieve top scores."
@@ -16,6 +17,7 @@ export default function PilotAptitudeTestUSA() {
           content: (
             <div>
               <p className="mb-4">Aspiring pilots in the United States face a rigorous selection process that often includes specialized aptitude tests designed to evaluate their cognitive abilities, psychomotor skills, and personality traits relevant to aviation. These tests are critical gatekeepers, determining eligibility for military flight programs and commercial airline cadet schemes. Understanding the nuances of each test—from the Air Force's TBAS to the Navy's ASTB-E and various airline-specific assessments—is paramount for effective preparation and success.</p>
+              <img src="/manus-storage/simulator-assessment_08bb00b0.jpg" alt="Simulator assessment USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">These assessments are not merely knowledge-based exams; they delve into innate aptitudes that are difficult to teach but crucial for safe and efficient flight operations. They measure your ability to process information under pressure, maintain situational awareness, and demonstrate the hand-eye coordination essential for controlling an aircraft. As the aviation industry evolves, so do these tests, with 2026 versions incorporating advanced psychometric principles to identify the most promising candidates.</p>
             </div>
           ),

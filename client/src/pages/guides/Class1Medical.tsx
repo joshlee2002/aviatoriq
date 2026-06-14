@@ -17,6 +17,7 @@ const Class1Medical: React.FC = () => {
         { question: "What should I do if I have a pre-existing medical condition?", answer: "Consult a CAA-approved Aeromedical Examiner (AME) before starting training. An AME can advise whether your condition is likely to be accepted, what documentation you need, and whether you should apply for an OML (Operational Multi-crew Limitation)." },
       ]}
       readTime="10 min read"
+      heroImage="/manus-storage/class1-medical_c4a3b12e.jpg"
       ctaHref="/quiz/flight-deck"
       ctaText="Check your readiness for free"
       sections={[
@@ -27,6 +28,9 @@ const Class1Medical: React.FC = () => {
               <p>
                 The Civil Aviation Authority (CAA) Class 1 Medical Certificate is a mandatory requirement for anyone aspiring to become a commercial pilot in the UK. It's not just a formality; it's a comprehensive health assessment designed to ensure you meet the stringent physical and mental standards necessary to safely operate an aircraft carrying passengers or cargo. Passing this medical is a critical early step in your pilot journey, often recommended even before committing significant funds to flight training.
               </p>
+              <img src="/manus-storage/medical-exam_79659228.jpg" alt="Aviation medical examination" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/pilot-health_45564817.jpg" alt="Pilot health and fitness" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/class1-medical-requirements_bd662c65.png" alt="Class 1 medical requirements" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 This examination is far more detailed than a standard GP check-up, delving into various aspects of your health to identify any conditions that could impair your judgment, performance, or lead to incapacitation in the cockpit. The aim is to protect both you and the public. Understanding what the medical entails and preparing adequately can significantly reduce anxiety and improve your chances of a smooth process.
               </p>

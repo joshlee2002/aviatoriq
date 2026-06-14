@@ -16,6 +16,7 @@ const BestFlightSchoolsUK = () => {
         { question: "Do flight schools guarantee jobs?", answer: "No reputable flight school can guarantee employment. Schools that claim to 'guarantee' airline jobs are misleading candidates. What reputable schools can offer is strong airline partnerships, career support services, and a track record of graduate employment." },
       ]}
       readTime="10 min read"
+      heroImage="/manus-storage/best-schools-uk_7f3a2c9e.jpg"
       ctaHref="/schools"
       ctaText="Browse the full school directory"
       sections={[
@@ -26,6 +27,9 @@ const BestFlightSchoolsUK = () => {
               <p>
                 This guide does not rank flight schools in a simple numbered list, because the "best" school depends entirely on your specific circumstances. Instead, it gives you an honest assessment of the major schools across the criteria that actually matter: CAA approval, airline placement record, fleet quality, financial stability, and what students actually say.
               </p>
+              <img src="/manus-storage/uk-school_2515f292.jpg" alt="UK flight school" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/school-campus_0aa4197f.jpg" alt="Flight school campus" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/school-fleet_107b79ba.jpg" alt="Flight school aircraft fleet" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The most important thing to understand before choosing a flight school is this: the quality of your training matters far more than the brand name on your licence. A well-trained pilot from a smaller, less-famous school will outperform a poorly-trained pilot from a prestigious one. Choose the school that will give you the best training for your budget — not the one with the best marketing.
               </p>

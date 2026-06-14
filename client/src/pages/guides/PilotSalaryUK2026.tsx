@@ -16,6 +16,7 @@ const PilotSalaryUK2026 = () => {
         { question: "Do pilots pay tax on their salary?", answer: "Yes. UK-based pilots pay income tax and National Insurance on their salary in the normal way. Some allowances and per diems may be tax-free up to HMRC limits. Pilots based overseas may have different tax arrangements depending on their employment contract and residency status." },
       ]}
       readTime="8 min read"
+      heroImage="/manus-storage/uk-salary-2026_12c4d065.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       relatedGuides={[
@@ -31,7 +32,7 @@ const PilotSalaryUK2026 = () => {
             <>
               <div style={{ margin: "0 0 20px 0", borderRadius: "12px", overflow: "hidden" }}>
                 <img
-                  src="/images/guides/pilot-salary-progression.png"
+                  src="/manus-storage/pilot-salary-progression_0322057d.png"
                   alt="UK airline pilot salary progression 2026 from first officer to captain"
                   style={{ width: "100%", display: "block" }}
                   loading="lazy"
@@ -40,6 +41,8 @@ const PilotSalaryUK2026 = () => {
               <p style={{ fontSize: "0.8rem", color: "oklch(0.45 0.04 240)", textAlign: "center", marginBottom: "16px" }}>
                 UK airline pilot salary ranges by career stage, 2026. Base salary only — total compensation 20–30% higher.
               </p>
+              <img src="/manus-storage/pay-scale_67aa53c9.jpg" alt="UK pilot pay scale" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/pilot-salary-progression_0322057d.png" alt="UK pilot salary progression" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
             </>
           ),
         },

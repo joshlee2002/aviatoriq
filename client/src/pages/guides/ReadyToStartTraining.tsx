@@ -16,6 +16,7 @@ const ReadyToStartTraining = () => {
         { question: "What is the dropout rate for pilot training?", answer: "Dropout rates vary by school and route. Integrated programmes typically have completion rates of 70–85%. Modular training has a higher dropout rate, estimated at 30–40%, primarily due to financial pressure, life changes, or loss of motivation over the longer timeframe." },
       ]}
       readTime="7 min read"
+      heroImage="/manus-storage/ready-training_2e0e9694.jpg"
       ctaHref="/quiz"
       ctaText="Take the full readiness assessment"
       sections={[
@@ -26,6 +27,8 @@ const ReadyToStartTraining = () => {
               <p>
                 Every year, hundreds of people in the UK start pilot training without being genuinely ready. Not because they lack talent or passion — but because they have not honestly assessed whether the timing, finances, and circumstances are right. The result is dropout, debt, and disappointment.
               </p>
+              <img src="/manus-storage/ground-school-classroom_b43b6fc8.jpg" alt="Ground school training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/solo-flight_ac4d5964.jpg" alt="Solo flight" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 This guide is not designed to discourage you. It is designed to help you start at the right time, with the right preparation, so that when you do commit, you succeed. The 8 questions below are the ones that matter most.
               </p>

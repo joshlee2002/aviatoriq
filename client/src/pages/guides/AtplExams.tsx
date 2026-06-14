@@ -16,6 +16,7 @@ const AtplExams = () => {
         { question: "What are the best resources for ATPL study?", answer: "The most widely used resources are Bristol Groundschool (distance learning), Oxford Aviation Academy (ATPL textbooks), and question banks such as Padpilot, Qbase, and ATPL Questions. Most candidates use a combination of a structured course and a question bank for exam practice." },
       ]}
       readTime="10 min read"
+      heroImage="/manus-storage/atpl-exams_9d4c2b8e.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -26,6 +27,8 @@ const AtplExams = () => {
               <p>
                 The ATPL theory examination consists of 14 subjects, covering everything from the legal framework of aviation to the aerodynamics of swept-wing aircraft. The total recommended study time is approximately 750 hours — equivalent to a full university year. This is not a qualification you can cram for.
               </p>
+              <img src="/manus-storage/atpl-theory-books_5f2a8c3d.jpg" alt="ATPL theory exam books" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/aviation-exam_8b3e1f9a.jpg" alt="Aviation exam study" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <div style={{ overflowX: "auto" }}>
                 <table style={{ width: "100%", borderCollapse: "collapse", margin: "20px 0" }}>
                   <thead>

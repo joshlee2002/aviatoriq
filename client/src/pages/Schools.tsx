@@ -111,7 +111,7 @@ export default function Schools() {
           className="relative overflow-hidden py-10 md:py-16"
           style={{ background: "linear-gradient(160deg, oklch(0.10 0.10 255) 0%, oklch(0.14 0.12 248) 100%)" }}
         >
-          <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "url('/images/training-aircraft.jpg')", backgroundSize: "cover", backgroundPosition: "center 40%", opacity: 0.09 }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "url('/manus-storage/training-aircraft_52514b39.jpg')", backgroundSize: "cover", backgroundPosition: "center 40%", opacity: 0.09 }} />
           <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(oklch(1 0 0 / 0.025) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 0.025) 1px, transparent 1px)", backgroundSize: "56px 56px" }} />
           <div className="container max-w-3xl text-center relative">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-5" style={{ background: "oklch(0.45 0.18 240 / 0.12)", border: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.65 0.18 240)" }}>
@@ -206,11 +206,23 @@ export default function Schools() {
                 {schools.map((school) => (
                   <div
                     key={school.id}
-                    className="p-4 md:p-6 rounded-2xl transition-all duration-200"
+                    className="rounded-2xl overflow-hidden transition-all duration-200"
                     style={{ background: surface, border: `1px solid ${border}` }}
                     onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
                     onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
                   >
+                    {/* School image banner */}
+                    <div className="w-full h-32 relative overflow-hidden">
+                      <img
+                        src={school.country === 'United Kingdom' || school.country === 'UK' ? '/manus-storage/uk-school_2515f292.jpg' : '/manus-storage/usa-school_36756c90.jpg'}
+                        alt={school.name}
+                        className="w-full h-full object-cover"
+                        style={{ opacity: 0.75 }}
+                        onError={(e) => { (e.target as HTMLImageElement).src = '/manus-storage/school-campus_0aa4197f.jpg'; }}
+                      />
+                      <div className="absolute inset-0" style={{ background: "linear-gradient(to top, oklch(0.14 0.08 250) 0%, transparent 55%)" }} />
+                    </div>
+                    <div className="p-4 md:p-6">
                     <div className="flex items-start justify-between gap-3 mb-4">
                       <div className="flex-1">
                         <div className="flex items-center gap-2 flex-wrap mb-1">
@@ -320,6 +332,7 @@ export default function Schools() {
                         Request introduction
                         <ChevronRight className="w-3.5 h-3.5" />
                       </Link>
+                    </div>
                     </div>
                   </div>
                 ))}

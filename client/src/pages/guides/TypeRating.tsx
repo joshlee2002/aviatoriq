@@ -16,6 +16,7 @@ const TypeRating = () => {
         { question: "How long does a type rating take?", answer: "A type rating course typically takes 6–8 weeks, including ground school, simulator training, and a skills test. The course is intensive and requires full-time commitment." },
       ]}
       readTime="7 min read"
+      heroImage="/manus-storage/type-rating_e790e1aa.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -26,6 +27,8 @@ const TypeRating = () => {
               <p>
                 A type rating is an endorsement on your pilot licence that authorises you to fly a specific aircraft type. All commercial airliners — the Airbus A320, Boeing 737, Embraer E-Jets, and others — require a type rating because they are too complex, expensive, and safety-critical to be included in initial pilot training.
               </p>
+              <img src="/manus-storage/a320-simulator_8f3e2c1a.jpg" alt="A320 type rating simulator" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/b737-cockpit_4e9f2b7a.jpg" alt="Boeing 737 cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 Your ATPL (frozen or full) qualifies you to act as a commercial pilot. Your type rating qualifies you to fly a specific aircraft. Without both, you cannot work as an airline first officer. The type rating is the final, and often most expensive, step between your ATPL and your first airline job.
               </p>

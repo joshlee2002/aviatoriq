@@ -216,7 +216,7 @@ export default function MedicalConditionLookupUS() {
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero-medical.jpg"
+            src="/manus-storage/hero-medical_faa9a026.jpg"
             alt="Aviation medical examination"
             className="w-full h-full object-cover opacity-[0.12]"
           />

@@ -16,6 +16,7 @@ const CadetProgrammes = () => {
         { question: "What qualifications do I need for a cadet programme?", answer: "Most programmes require a minimum of 5 GCSEs at grade C/4 or above, including Maths and English. Some prefer A-levels or a degree. All require a valid Class 1 medical. Strong aptitude test performance and a clean background check are also essential." },
       ]}
       readTime="10 min read"
+      heroImage="/manus-storage/cadet-programme_8f3a2c1d.jpg"
       ctaHref="/roadmap"
       ctaText="See if a cadet route is right for you"
       sections={[
@@ -26,6 +27,8 @@ const CadetProgrammes = () => {
               <p>
                 A cadet pilot programme is a structured, end-to-end training pathway that takes candidates from zero flight experience to a qualified, type-rated first officer. The key distinction from self-funded training is the airline relationship — cadet programmes either guarantee a job interview, offer a conditional job offer, or provide direct employment on completion.
               </p>
+              <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="Airline sponsored cadet programme" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/cadet-simulator-2_3c8d1e7f.jpg" alt="Cadet pilot simulator training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The term "cadet programme" is used loosely in the industry. It covers everything from fully sponsored schemes (where the airline pays all training costs) to bonded schemes (where you pay for training, often via a loan, in exchange for a guaranteed interview and a commitment to work for the airline for a set period). Understanding this distinction is critical before you apply.
               </p>

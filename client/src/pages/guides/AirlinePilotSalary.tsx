@@ -15,6 +15,7 @@ const AirlinePilotSalary = () => {
         { question: "Is pilot training worth the cost given the salary?", answer: "For most who complete training and secure an airline job, yes. The return on investment is positive over a career, but the upfront cost of £90k–£130k is significant and there is no employment guarantee after training." },
       ]}
       readTime="8 min read"
+      heroImage="/manus-storage/airline-salary_3b7c8d1e.jpg"
       ctaHref="/quiz"
       ctaText="Get your personalised pilot roadmap"
       sections={[
@@ -25,6 +26,9 @@ const AirlinePilotSalary = () => {
               <p>
                 UK airline pilot salaries have risen significantly over the past three years, driven by a structural pilot shortage and post-pandemic airline expansion. The figures below are sourced from BALPA (British Airline Pilots' Association) data, airline job postings, and industry salary surveys — not generic estimates.
               </p>
+              <img src="/manus-storage/captain-salary_2e9f4a7b.jpg" alt="Airline captain salary progression" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/pay-scale_67aa53c9.jpg" alt="Pilot pay scale comparison" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/pilot-salary-progression_0322057d.png" alt="Pilot salary progression chart" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 One important distinction: <strong>basic salary</strong> and <strong>total package</strong> can differ dramatically. At British Airways, for example, a new first officer earns £34,000–£40,000 basic — but their total first-year earnings including allowances, per diems, and sector pay typically reach £100,000+. Always look at total package, not just basic.
               </p>

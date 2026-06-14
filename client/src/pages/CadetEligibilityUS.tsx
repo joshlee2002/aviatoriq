@@ -205,7 +205,7 @@ export default function CadetEligibilityUS() {
       <section className="relative pt-32 pb-12 overflow-hidden border-b" style={{ borderColor: "oklch(0.28 0.06 240)" }}>
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero-cadet.jpg"
+            src="/manus-storage/hero-cadet_e21689fe.jpg"
             alt="Flight simulator training"
             className="w-full h-full object-cover opacity-[0.12]"
           />

@@ -16,6 +16,7 @@ const Class1MedicalDisqualifiers = () => {
         { question: "What is an OML and how does it affect my flying career?", answer: "An Operational Multi-crew Limitation (OML) allows a pilot with a certain medical condition to fly commercially, provided they always fly with a co-pilot who holds a full, unrestricted medical. Most commercial airline flying is multi-crew anyway, so an OML has minimal practical impact on an airline career." },
       ]}
       readTime="8 min read"
+      heroImage="/manus-storage/class1-disqualifiers_e8f2a91c.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       relatedGuides={[
@@ -31,7 +32,7 @@ const Class1MedicalDisqualifiers = () => {
             <>
               <div style={{ margin: "0 0 20px 0", borderRadius: "12px", overflow: "hidden" }}>
                 <img
-                  src="/images/guides/class1-medical-conditions.png"
+                  src="/manus-storage/class1-medical-conditions_c671ee2f.png"
                   alt="CAA Class 1 medical conditions checklist UK 2026"
                   style={{ width: "100%", display: "block" }}
                   loading="lazy"
@@ -40,6 +41,8 @@ const Class1MedicalDisqualifiers = () => {
               <p style={{ fontSize: "0.8rem", color: "oklch(0.45 0.04 240)", textAlign: "center", marginBottom: "16px" }}>
                 CAA Class 1 medical assessment areas. Source: CAA Medical Department, 2026.
               </p>
+              <img src="/manus-storage/medical-exam_79659228.jpg" alt="Aviation medical examination" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/class1-medical-conditions_c671ee2f.png" alt="Class 1 medical conditions" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
             </>
           ),
         },

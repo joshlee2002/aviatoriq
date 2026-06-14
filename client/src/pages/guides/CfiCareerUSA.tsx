@@ -31,6 +31,7 @@ const CfiCareerUSA = () => {
         },
       ]}
       readTime="15 min read"
+      heroImage="/manus-storage/cfi-career_9f2a4b7c.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
       sections={[
@@ -41,6 +42,7 @@ const CfiCareerUSA = () => {
               <p>
                 For many aspiring airline pilots in the United States, becoming a Certified Flight Instructor (CFI) is not just a job; it's a strategic career move. The path to the airline cockpit requires accumulating a significant number of flight hours, typically 1,000 to 1,500 hours, to meet the Airline Transport Pilot (ATP) certificate minimums. Paying for these hours out-of-pocket can be prohibitively expensive, often adding hundreds of thousands of dollars to an already substantial training cost. This is where the CFI role becomes invaluable: it allows you to get paid while building the essential flight experience needed for your airline career.
               </p>
+              <img src="/manus-storage/instructor-teaching_bbff2f90.jpg" alt="CFI teaching student" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The demand for flight instruction remains consistently high, driven by the ongoing pilot shortage and the continuous influx of new students into flight schools. This ensures a steady stream of opportunities for CFIs to log flight time. By actively instructing, pilots can accumulate between 500 to 800 hours per year, significantly accelerating their journey to regional airlines. This method not only helps offset training costs but also provides invaluable experience in decision-making, risk management, and communication—skills highly valued by airlines.
               </p>

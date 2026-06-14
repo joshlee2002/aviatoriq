@@ -31,6 +31,7 @@ const PilotEyesightUK = () => {
         },
       ]}
       readTime="12 min read"
+      heroImage="/manus-storage/pilot-eyesight_70ef5247.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -39,6 +40,7 @@ const PilotEyesightUK = () => {
           content: (
             <>
               <p>Becoming a commercial pilot in the United Kingdom is a dream for many, but it comes with rigorous requirements, not least of which are the stringent eyesight standards. The UK Civil Aviation Authority (CAA), aligning with European Union Aviation Safety Agency (EASA) regulations, mandates a Class 1 medical certificate for all commercial pilots. Central to this certification is impeccable vision, ensuring pilots can safely perform their duties in all operational environments.</p>
+              <img src="/manus-storage/medical-exam_79659228.jpg" alt="Aviation medical examination" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>This comprehensive guide delves into the specifics of pilot eyesight requirements in the UK, addressing common concerns such as wearing glasses or contact lenses, colour vision testing, and the implications of laser eye surgery. Our aim is to provide clear, accurate, and up-to-date information to help aspiring pilots understand what's expected during their medical examination.</p>
               <p>It's important to note that while the standards are high, many individuals with common vision corrections successfully navigate the medical process. The key is understanding the precise limits and preparing thoroughly for the assessments conducted by an Aeromedical Examiner (AME).</p>
             </>

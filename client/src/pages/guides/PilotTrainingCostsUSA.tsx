@@ -6,6 +6,7 @@ export default function PilotTrainingCostsUSA() {
       title="How Much Does Pilot Training Cost in the USA in 2026? Your Complete Guide"
       subtitle="Navigate the complex landscape of pilot training expenses in the US for 2026 with this comprehensive guide, covering everything from initial certificates to the Airline Transport Pilot (ATP) license and strategies to manage costs effectively."
       readTime="10 min read"
+      heroImage="/manus-storage/training-costs-usa_3d276236.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/pilot-training-costs-usa"
       metaDescription="Discover the true cost of pilot training in the USA for 2026, from zero experience to ATP. Learn about hidden fees, financing, and how to save money on your aviation career."
@@ -15,6 +16,8 @@ export default function PilotTrainingCostsUSA() {
           content: (
             <div>
               <p className="mb-4">Aspiring pilots often face a daunting question: "How much does pilot training cost in the USA?" The journey from zero flight experience to holding an Airline Transport Pilot (ATP) certificate, the pinnacle for commercial airline pilots, involves significant financial investment. In 2026, the total cost can range widely, but a comprehensive program typically falls between $90,000 and $150,000. This figure encompasses all necessary certificates and ratings, including Private Pilot License (PPL), Instrument Rating (IR), Commercial Pilot License (CPL), Certified Flight Instructor (CFI), and finally, the ATP. Understanding this investment upfront is crucial for effective financial planning.</p>
+              <img src="/manus-storage/atp-flight-school_6c3e4d2a.jpg" alt="ATP flight school USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/fund-training-usa_d29d0341.jpg" alt="Funding pilot training USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">Many flight schools, like ATP Flight School, offer integrated programs designed to take students from no experience to a commercial pilot in a structured timeframe. For instance, ATP Flight School charges $123,995 to become a pilot when starting with no previous experience. This all-inclusive approach simplifies budgeting but it's essential to dissect what these costs cover and what potential additional expenses might arise. Our guide aims to provide a transparent breakdown, addressing common competitor gaps by offering national averages and strategies to mitigate unexpected financial burdens.</p>
               <h3 className="text-xl font-semibold mb-3 text-oklch(0.72 0.18 65)">Key Components of Pilot Training Costs</h3>
               <ul className="list-disc list-inside mb-4 ml-4 text-oklch(0.65 0.04 240)">

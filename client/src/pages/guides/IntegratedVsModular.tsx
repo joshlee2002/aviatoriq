@@ -14,6 +14,7 @@ export default function IntegratedVsModular() {
         { question: "Which is cheaper, integrated or modular ATPL?", answer: "Modular is typically cheaper: £40,000–£80,000 vs £90,000–£130,000 for integrated. However modular takes longer, so you need to factor in living costs and the opportunity cost of training part-time." },
       ]}
       readTime="9 min read"
+      heroImage="/manus-storage/integrated-training_a566fa21.jpg"
       ctaHref="/quiz"
       ctaText="Find your best training route"
       relatedGuides={[
@@ -30,6 +31,9 @@ export default function IntegratedVsModular() {
               <p>
                 Aspiring airline pilots in the UK face a fundamental decision early in their journey: should they pursue an Integrated ATPL or a Modular ATPL? This choice significantly impacts your training timeline, total cost, and even the structure of your daily life for the next few years. It's not merely a preference; it's a strategic decision that should align with your personal circumstances, financial situation, and career aspirations. Many fall into the trap of believing one route is inherently superior, but the reality is far more nuanced.
               </p>
+              <img src="/manus-storage/integrated-school_e4427060.jpg" alt="Integrated flight training school" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/modular-training_ba7d8263.jpg" alt="Modular pilot training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/integrated-vs-modular-timeline_77509ad4.png" alt="Integrated vs modular training timeline" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 Both routes lead to the same qualification – a 'frozen' ATPL (Airline Transport Pilot Licence), which is the prerequisite for becoming a First Officer with an airline. The key difference lies in the structure and pace of training. Integrated courses are typically full-time, intensive programmes delivered by a single flight school, while modular training allows for greater flexibility, often undertaken part-time across multiple schools. Understanding these core distinctions is crucial before committing significant time and money.
               </p>

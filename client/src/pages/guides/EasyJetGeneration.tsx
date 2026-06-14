@@ -8,6 +8,7 @@ export default function EasyJetGeneration() {
       canonical="/guides/easyjet-generation-pilot"
       metaDescription="easyJet Generation Pilot Programme 2026: MPL training at CAE Oxford, costs, selection process, and guaranteed FO job. Is it worth it? Updated June 2026."
       readTime="9 min read"
+      heroImage="/manus-storage/easyjet-generation_0954c6af.jpg"
       ctaHref="/quiz"
       ctaText="Check your readiness for cadet programmes"
       relatedGuides={[
@@ -31,6 +32,8 @@ export default function EasyJetGeneration() {
               <p>
                 The Generation easyJet programme is easyJet's flagship ab-initio cadet pilot pathway — a direct route from zero flying experience to a First Officer seat on easyJet's Airbus A320 family fleet. The programme is delivered in partnership with CAE Oxford Aviation Academy and uses the Multi-Crew Pilot Licence (MPL) as its qualifying licence, rather than the traditional frozen ATPL.
               </p>
+              <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="easyJet Generation cadet" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/interview-assessment_c517e045.jpg" alt="easyJet selection" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The defining feature of the Generation programme is the guaranteed job offer. Cadets who successfully complete training to the required standard are offered a First Officer position with easyJet before they begin flying. This removes the speculative risk that characterises self-sponsored pilot training and replaces it with a defined, supported pathway to the flight deck of one of Europe's largest airlines.
               </p>

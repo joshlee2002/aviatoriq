@@ -6,6 +6,7 @@ export default function DeltaPropelGuide() {
       title="Delta Propel Program Guide 2026: Your Path to Becoming a Delta Pilot"
       subtitle="The Delta Propel program offers aspiring pilots a clear, structured pathway to a career with Delta Air Lines, providing mentorship, financial support, and a direct route from flight school to the cockpit."
       readTime="11 min read"
+      heroImage="/manus-storage/delta-propel_2baba3b3.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/delta-propel-program"
       metaDescription="Discover the Delta Propel program guide for 2026. Learn about pathways, eligibility, financial aid, and how to become a Delta pilot with this comprehensive resource."
@@ -15,6 +16,7 @@ export default function DeltaPropelGuide() {
           content: (
             <div>
               <p className="mb-4">The Delta Propel program, established by Delta Air Lines, is a groundbreaking initiative designed to identify, select, and develop the next generation of pilots. It offers aspiring aviators a clear, structured pathway from flight training to a career as a Delta Air Lines pilot. This comprehensive guide for 2026 delves into every aspect of the program, providing unparalleled detail to help you navigate your journey. The program addresses the critical need for highly skilled pilots, ensuring a steady pipeline of talent for one of the world's leading airlines. It stands out by offering mentorship, a defined career trajectory, and significant support throughout the demanding training process. For instance, <strong>ATP Flight School has placed over 1,000 pilots with Delta Connection airlines</strong>, highlighting the program's effectiveness in transitioning pilots to regional carriers, a crucial step towards mainline Delta.</p>
+              <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="Delta Propel pilot programme" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
             </div>
           ),
         },

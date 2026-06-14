@@ -16,6 +16,7 @@ const PilotTrainingOver40 = () => {
         { question: "Is the Class 1 medical harder to pass over 40?", answer: "The Class 1 medical becomes more rigorous with age, with additional cardiovascular checks required from age 40. Most healthy 40-year-olds pass without issue, but pre-existing conditions that might be overlooked at 25 become more significant. A pre-assessment with an Aviation Medical Examiner before committing to training is strongly recommended." },
       ]}
       readTime="7 min read"
+      heroImage="/manus-storage/pilot-over-40_fbd1e435.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -26,6 +27,8 @@ const PilotTrainingOver40 = () => {
               <p>
                 "Is it worth training as a pilot at 40?" is one of the most common questions on aviation forums, and it almost always gets the same unhelpful answer: "Age is just a number, follow your dreams." That is not useful. You deserve a real answer.
               </p>
+              <img src="/manus-storage/ground-school-classroom_b43b6fc8.jpg" alt="Ground school training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/solo-flight_ac4d5964.jpg" alt="Solo flight training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The real answer is: it depends. Not on your passion, not on your determination, but on your specific financial situation, health, and what you actually want from a pilot career. This guide will give you the framework to make that decision properly.
               </p>

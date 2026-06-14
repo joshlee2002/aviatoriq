@@ -16,6 +16,7 @@ const HourBuilding = () => {
         { question: "Can I count hours from a PPL towards my CPL?", answer: "Yes. All hours flown on a valid PPL count towards your CPL total. This is why many modular pilots start their PPL as early as possible — every hour flown during PPL training counts towards the 200-hour CPL requirement." },
       ]}
       readTime="8 min read"
+      heroImage="/manus-storage/hour-building_5e36aac1.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -26,6 +27,8 @@ const HourBuilding = () => {
               <p>
                 Hour building is the process of accumulating the flight hours required to meet the minimum experience requirements for a Commercial Pilot Licence (CPL). After completing your PPL, you need a minimum of 200 total flight hours — including at least 100 hours as pilot-in-command — before you can sit the CPL skills test.
               </p>
+              <img src="/manus-storage/hour-building-flight_1908e157.jpg" alt="Hour building cross country flight" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/pilot-logbook_8afa8322.jpg" alt="Pilot logbook hours" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 Hour building is often the most expensive and time-consuming phase of modular pilot training. Done poorly, it is a financial drain with little educational value. Done well, it is an opportunity to build genuine cross-country navigation skills, experience different weather conditions, and develop the airmanship that separates good pilots from great ones.
               </p>

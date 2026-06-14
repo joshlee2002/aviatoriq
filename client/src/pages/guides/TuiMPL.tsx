@@ -8,6 +8,7 @@ export default function TuiMPL() {
       canonical="/guides/tui-mpl-cadet-programme"
       metaDescription="TUI Airways MPL cadet programme 2026: selection process, training route, costs, and First Officer career at one of the UK's largest leisure airlines. Updated June 2026."
       readTime="8 min read"
+      heroImage="/manus-storage/tui-mpl_c5f0c8af.jpg"
       ctaHref="/quiz"
       ctaText="Check your readiness for cadet programmes"
       relatedGuides={[
@@ -31,6 +32,7 @@ export default function TuiMPL() {
               <p>
                 TUI Airways is the UK's largest leisure airline, operating flights to over 100 destinations across Europe, the Caribbean, Mexico, and beyond. Part of the TUI Group — the world's largest tourism company — TUI Airways operates a modern fleet of Boeing 737 MAX and Boeing 787 Dreamliner aircraft from bases across the UK including Gatwick, Manchester, Birmingham, Bristol, East Midlands, and Glasgow.
               </p>
+              <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="TUI MPL cadet programme" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 For aspiring pilots, TUI offers something genuinely distinctive: a career that combines professional aviation with some of the world's most desirable destinations. TUI pilots fly to the Canary Islands, the Caribbean, the Maldives, and dozens of other holiday destinations — a lifestyle that many pilots find more appealing than the point-to-point European short-haul operations of low-cost carriers.
               </p>

@@ -6,6 +6,7 @@ export default function TypeRatingUSA() {
       title="Airline Type Rating USA Cost: Self-Funded vs. Airline Sponsored in 2026"
       subtitle="Understanding the financial implications and career impact of obtaining an airline type rating in the United States, including detailed cost comparisons and sponsorship models for aspiring pilots."
       readTime="13 min read"
+      heroImage="/manus-storage/type-rating-usa_492628c9.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/type-rating-usa"
       metaDescription="Explore airline type rating costs in the USA for 2026, comparing self-funded and airline-sponsored options. Get insights into training bonds and financial strategies."
@@ -15,6 +16,7 @@ export default function TypeRatingUSA() {
           content: (
             <div>
               <p className="mb-4">An airline type rating is a certification added to a pilot's license, authorizing them to fly a specific aircraft type that requires more than one pilot or is turbojet-powered. The Federal Aviation Administration (FAA) mandates these ratings to ensure pilots possess the specialized knowledge and skills necessary for complex aircraft operations. Without a type rating for a particular aircraft, a pilot cannot legally act as pilot-in-command or second-in-command of that aircraft in commercial operations. This requirement underscores the critical importance of safety and standardization within the aviation industry, ensuring that every pilot operating sophisticated machinery has undergone rigorous, aircraft-specific training.</p>
+              <img src="/manus-storage/a320-simulator_8f3e2c1a.jpg" alt="Type rating simulator USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">The necessity for a type rating arises from the inherent complexity and unique operational characteristics of modern airliners. Each aircraft model, such as the Airbus A320 or Boeing 737, has distinct systems, performance envelopes, and emergency procedures. The training for a type rating typically involves extensive ground school instruction, simulator sessions, and often a checkride in the actual aircraft or a full-motion simulator. This comprehensive approach ensures pilots are not only proficient in general aviation principles but are also intimately familiar with the specific nuances of the aircraft they will be flying, thereby mitigating risks and enhancing operational efficiency.</p>
             </div>
           ),

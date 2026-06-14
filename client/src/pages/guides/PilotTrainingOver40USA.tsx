@@ -6,6 +6,7 @@ export default function PilotTrainingOver40USA() {
       title="Pilot Training Over 40 in the USA: Your 2026 Career Change Roadmap"
       subtitle="Discover the definitive roadmap for aspiring pilots over 40 in the USA, covering everything from FAA medical requirements and funding strategies to balancing life and training for a successful career change in 2026."
       readTime="15 min read"
+      heroImage="/manus-storage/pilot-over-40-usa_35140e0e.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/pilot-training-over-40-usa"
       metaDescription="Considering a pilot career change over 40 in the USA? This 2026 guide provides a comprehensive roadmap, covering training costs, FAA medicals, funding, and career paths for older aspiring pilots."
@@ -17,6 +18,7 @@ export default function PilotTrainingOver40USA() {
               <p className="mb-4">
                 Many aspiring pilots over 40 often wonder if their age presents an insurmountable barrier to a career in aviation. The good news is that age is largely just a number in the FAA\'s eyes, and a fulfilling pilot career is well within reach for motivated individuals. While the journey requires dedication, the aviation industry actively welcomes experienced professionals from diverse backgrounds.
               </p>
+              <img src="/manus-storage/usa-school_36756c90.jpg" alt="USA flight school" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">
                 In 2026, the cost to go from zero experience to a commercial pilot certificate in the United States typically ranges from **$70,000 to $120,000** [1] [2]. This significant investment underscores the importance of a clear roadmap and realistic expectations, regardless of age. However, the maturity, discipline, and life experience that come with being over 40 can be distinct advantages in the rigorous world of flight training and professional aviation.
               </p>

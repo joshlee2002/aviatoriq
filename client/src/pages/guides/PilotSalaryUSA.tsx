@@ -30,6 +30,7 @@ const PilotSalaryUSA = () => {
         },
       ]}
       readTime="10 min read"
+      heroImage="/manus-storage/pilot-salary-usa_292045db.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
       sections={[
@@ -40,6 +41,7 @@ const PilotSalaryUSA = () => {
               <p>
                 US airline pilot salaries have risen dramatically over the past five years, driven by a combination of mandatory retirement at age 65, post-pandemic travel demand recovery, and the structural pilot shortage that has been building since the 2013 first officer experience rule changes. The result is that pilots entering the profession today face a more financially rewarding career than any previous generation.
               </p>
+              <img src="/manus-storage/pay-scale_67aa53c9.jpg" alt="US airline pilot salary" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 Understanding pilot compensation requires looking beyond base pay. Total compensation includes base salary, per diem (a daily allowance when away from base), profit sharing (which at Delta and Southwest has added $20,000 to $50,000 per year for senior pilots), 401(k) contributions, health insurance, travel benefits, and signing bonuses. For senior captains at major carriers, total compensation routinely exceeds $400,000 per year.
               </p>

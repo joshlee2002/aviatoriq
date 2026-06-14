@@ -8,6 +8,7 @@ const HowToBecomePilot = () => {
       canonical="/guides/how-to-become-a-pilot"
       metaDescription="How to become a pilot in the UK in 2026: integrated vs modular ATPL, real costs (£40k–£130k), Class 1 Medical, cadet programmes, and first airline job. Step-by-step guide."
       readTime="14 min read"
+      heroImage="/manus-storage/how-to-become-pilot_a1ed518f.jpg"
       ctaHref="/quiz"
       ctaText="Find your training route"
       faqSchema={[
@@ -32,6 +33,9 @@ const HowToBecomePilot = () => {
               <p>
                 The short answer is yes — and the timing has not been this favourable in over a decade. The global aviation industry is in the midst of a well-documented pilot shortage that is expected to intensify over the next 15–20 years. Boeing's 2023 Pilot Outlook forecasts a requirement for 649,000 new commercial pilots globally by 2042. In Europe alone, airlines are struggling to find enough qualified pilots to crew their expanding fleets.
               </p>
+              <img src="/manus-storage/ground-school-classroom_b43b6fc8.jpg" alt="Ground school classroom training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/solo-flight_ac4d5964.jpg" alt="Student pilot solo flight" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/first-officer-job_23328c88.jpg" alt="Airline first officer in cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 In the UK specifically, the post-pandemic recovery has been faster than most analysts predicted. British Airways, easyJet, Ryanair, and TUI are all expanding their fleets and their pilot recruitment. Cadet programmes that were paused during COVID have restarted and in some cases expanded. The average time from newly qualified First Officer to Captain has shortened considerably — pilots who might have waited 15–20 years for an upgrade in previous generations are now upgrading in 8–12 years at many carriers.
               </p>

@@ -6,6 +6,7 @@ export default function PilotShortageUSA() {
       title="US Pilot Shortage 2026: Causes, Impact, and Solutions for Aspiring Pilots"
       subtitle="The United States faces a significant pilot deficit in 2026, impacting regional air travel and creating unprecedented opportunities for new aviators. This guide explores the core reasons behind the shortage, its effects on the aviation industry, and the pathways available to aspiring pilots."
       readTime="10 min read"
+      heroImage="/manus-storage/us-pilot-career_eda6a21f.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/us-pilot-shortage-2026"
       metaDescription="Explore the US pilot shortage in 2026, its causes, impact on regional airlines, and how aspiring pilots can navigate this high-demand career path. Get real data on salaries, training, and solutions."
@@ -15,6 +16,7 @@ export default function PilotShortageUSA() {
           content: (
             <div>
               <p className="mb-4">The United States aviation industry is grappling with a severe pilot shortage in 2026, a challenge that has been exacerbated by a confluence of factors including mandatory retirements, reduced military pilot pipelines, and the lingering effects of the COVID-19 pandemic on training. This deficit is not merely a statistical anomaly but a tangible issue affecting flight schedules, regional connectivity, and the overall economic health of communities reliant on air travel. The US faces a 24,000-pilot shortfall in 2026, marking the widest gap between supply and demand since the post-pandemic travel boom began. This critical shortage underscores the urgent need for robust recruitment and training initiatives to ensure the future stability of air transportation.</p>
+              <img src="/manus-storage/airline-fleet_e94d0411.jpg" alt="US airline fleet" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">While the demand for air travel has rebounded strongly, the supply of qualified pilots has struggled to keep pace. Major airlines are aggressively hiring, often pulling experienced pilots from regional carriers, which in turn creates a vacuum at the entry-level. This dynamic has profound implications for aspiring pilots, presenting a landscape rich with career opportunities but also highlighting the systemic challenges that need addressing within the training and recruitment infrastructure.</p>
             </div>
           ),

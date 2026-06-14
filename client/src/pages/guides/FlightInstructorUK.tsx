@@ -31,6 +31,7 @@ const FlightInstructorUK = () => {
         },
       ]}
       readTime="12 min read"
+      heroImage="/manus-storage/flight-instructor_8a93442c.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -41,6 +42,8 @@ const FlightInstructorUK = () => {
               <p>
                 For many aspiring airline pilots in the UK, the journey to the flight deck involves a crucial step: hour-building. While various methods exist to accumulate the necessary flight time, becoming a Flight Instructor (FI) stands out as one of the most effective and professionally rewarding. It's not just about logging hours; it's about deepening your understanding of aviation principles, honing your piloting skills, and developing critical leadership and communication abilities.
               </p>
+              <img src="/manus-storage/instructor-teaching_bbff2f90.jpg" alt="Flight instructor teaching" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/dual-instruction_48048c62.jpg" alt="Dual instruction flying" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The role of an FI is multifaceted. You'll be responsible for teaching student pilots the intricacies of flight, from basic manoeuvres to complex navigation and emergency procedures. This process of teaching reinforces your own knowledge and ensures a robust understanding of aviation regulations and best practices. Furthermore, the constant interaction with diverse students and scenarios builds resilience and adaptability, qualities highly sought after by airlines.
               </p>

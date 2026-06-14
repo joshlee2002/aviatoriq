@@ -6,6 +6,7 @@ export default function EmbryRiddleGuide() {
       title="Embry-Riddle Pilot Program Cost & ROI: Is it Worth it in 2026?"
       subtitle="Explore the comprehensive costs, financial aid, career outcomes, and return on investment for an Embry-Riddle Aeronautical University pilot program in 2026."
       readTime="20 min read"
+      heroImage="/manus-storage/embry-riddle_8e02f196.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/embry-riddle-aeronautical-university"
       metaDescription="Detailed guide on Embry-Riddle pilot program costs, ROI, and career prospects in 2026. Compare ERAU with other flight training options and find financial aid."
@@ -15,6 +16,8 @@ export default function EmbryRiddleGuide() {
           content: (
             <div>
               <p className="mb-4">Embry-Riddle Aeronautical University (ERAU) stands as a global leader in aviation and aerospace education, attracting aspiring pilots with its prestigious programs and state-of-the-art facilities. For many, the dream of flying begins with ERAU, renowned for its comprehensive curriculum, experienced faculty, and strong industry connections. However, the pursuit of an ERAU pilot degree comes with a significant financial commitment. The total estimated program cost for an Embry-Riddle Aeronautical University pilot program is <strong style={{ color: 'oklch(0.72 0.18 65)' }}>$222,472</strong>, a figure that encompasses tuition, flight fees, and various other expenses crucial for earning your wings. This guide will delve into the specifics of this investment, analyze its return, and provide a detailed comparison with alternative training pathways to help you make an informed decision about your aviation future in 2026.</p>
+              <img src="/manus-storage/atp-flight-school_6c3e4d2a.jpg" alt="Embry Riddle flight training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/usa-school_36756c90.jpg" alt="Embry Riddle campus" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">ERAU offers a structured, university-based approach to pilot training, often leading to a Bachelor of Science degree in Aeronautical Science or a related field. This differs significantly from standalone flight schools (Part 61 or Part 141) by integrating flight training with a broader academic curriculum. The university environment provides a holistic educational experience, including access to campus resources, student life, and a strong alumni network. Graduates often emerge with not only their FAA pilot certificates but also a four-year degree, which can be a distinct advantage in a competitive job market, particularly for airline career progression. The rigorous academic and flight training standards at ERAU are designed to produce highly competent and well-rounded aviation professionals, prepared for diverse roles within the industry.</p>
             </div>
           ),

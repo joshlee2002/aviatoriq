@@ -16,6 +16,7 @@ const AirlineInterview = () => {
         { question: "What questions are asked in a pilot competency-based interview?", answer: "Competency-based interviews ask for specific examples of past behaviour: 'Tell me about a time you had to make a decision under pressure.' Common competencies assessed include: crew resource management, situational awareness, decision-making, communication, and resilience. Prepare STAR-format answers (Situation, Task, Action, Result) for each competency." },
       ]}
       readTime="9 min read"
+      heroImage="/manus-storage/airline-interview_3a8f2c1d.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -26,6 +27,8 @@ const AirlineInterview = () => {
               <p>
                 Airline pilot selection is a multi-stage process designed to assess both your technical competence and your suitability as a crew member. The process varies by airline, but most major UK carriers follow a similar structure:
               </p>
+              <img src="/manus-storage/interview-assessment_c517e045.jpg" alt="Airline assessment centre" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/group-exercise_40006909.jpg" alt="Pilot group exercise" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 <strong>Stage 1 — Application and CV screening:</strong> Your application is reviewed against minimum requirements (hours, licence, type rating). At this stage, presentation matters. A clear, professional CV with accurate logbook data and well-written cover letter gets you to the next stage.
               </p>

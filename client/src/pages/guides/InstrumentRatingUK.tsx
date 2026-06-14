@@ -31,6 +31,7 @@ const InstrumentRatingUK = () => {
         },
       ]}
       readTime="15 min read"
+      heroImage="/manus-storage/instrument-rating_da56b64b.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -41,6 +42,8 @@ const InstrumentRatingUK = () => {
               <p>
                 The Instrument Rating (IR) is a crucial qualification for any pilot aspiring to a professional career in aviation, particularly within the United Kingdom. It permits a pilot to fly an aircraft under Instrument Flight Rules (IFR) in Instrument Meteorological Conditions (IMC), meaning they can operate safely and legally in clouds, fog, or other low-visibility environments. This capability is not merely a convenience; it is a fundamental requirement for commercial airline operations, where flights often traverse varying weather conditions and rely heavily on air traffic control (ATC) guidance and instrument procedures.
               </p>
+              <img src="/manus-storage/instruments-panel_33ae88e6.jpg" alt="Aircraft instrument panel" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/night-flight_2e96753a.jpg" alt="Night flight cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 In the UK, obtaining an IR signifies a pilot's proficiency in navigating and controlling an aircraft solely by reference to its instruments. This advanced training covers complex procedures such as instrument departures, en-route navigation, holding patterns, and precision and non-precision approaches. The skills acquired are paramount for maintaining flight safety and operational efficiency, enabling pilots to adhere to strict flight plans and schedules regardless of external visual cues. Without an IR, a pilot is restricted to Visual Flight Rules (VFR) and Visual Meteorological Conditions (VMC), severely limiting their operational scope and career prospects.
               </p>

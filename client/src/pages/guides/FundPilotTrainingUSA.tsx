@@ -27,6 +27,7 @@ const FundPilotTrainingUSA = () => {
         },
       ]}
       readTime="10-12 min read"
+      heroImage="/manus-storage/fund-training-usa_d29d0341.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
       sections={[
@@ -37,6 +38,7 @@ const FundPilotTrainingUSA = () => {
               <p>
                 The dream of becoming a pilot is shared by many, fueled by the allure of the skies and a dynamic career path. However, transforming this dream into reality requires a significant financial investment. Pilot training in the USA is a rigorous and costly endeavor, often presenting the biggest hurdle for aspiring aviators. Understanding the financial landscape is the first step toward achieving your aviation goals.
               </p>
+              <img src="/manus-storage/gi-bill-training_775b4cc1.jpg" alt="GI Bill flight training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 This comprehensive guide aims to demystify the various funding avenues available for pilot training in the United States. From traditional student loans to military benefits and a plethora of scholarships, we will explore each option in detail, providing you with the knowledge to make informed decisions. Our goal is to equip you with a clear roadmap to finance your flight education responsibly and effectively.
               </p>

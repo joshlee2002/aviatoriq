@@ -90,6 +90,7 @@ interface GuideLayoutProps {
   authorRole?: string;
   lastUpdated?: string;
   category?: string;
+  heroImage?: string;
 }
 
 const surface = "oklch(0.14 0.08 250)";
@@ -114,6 +115,7 @@ export default function GuideLayout({
   authorRole = "Founder, AviatorIQ — researched from CAA, EASA & official school prospectuses",
   lastUpdated = "June 2026",
   category,
+  heroImage,
 }: GuideLayoutProps) {
   const schemas: object[] = [];
 
@@ -154,7 +156,7 @@ export default function GuideLayout({
           className="relative overflow-hidden py-10 md:py-14"
           style={{ background: "linear-gradient(160deg, oklch(0.10 0.10 255) 0%, oklch(0.14 0.12 248) 100%)" }}
         >
-          <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "url('/images/airplane-takeoff.jpg')", backgroundSize: "cover", backgroundPosition: "center 40%", opacity: 0.08 }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: `url('${heroImage || '/manus-storage/airplane-takeoff_6f139e92.jpg'}')`, backgroundSize: "cover", backgroundPosition: "center 40%", opacity: heroImage ? 0.18 : 0.08 }} />
           <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(oklch(1 0 0 / 0.025) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 0.025) 1px, transparent 1px)", backgroundSize: "56px 56px" }} />
           <div className="container max-w-3xl relative">
             {/* Breadcrumb */}

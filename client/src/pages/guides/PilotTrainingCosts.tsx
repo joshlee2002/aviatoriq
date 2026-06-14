@@ -8,6 +8,7 @@ export default function PilotTrainingCosts() {
       canonical="/guides/pilot-training-costs"
       metaDescription="Complete 2026 breakdown of UK pilot training costs. Integrated ATPL £90k–£130k, modular £40k–£80k, overseas from £47k. Includes hidden costs, finance options, and real total budgets."
       readTime="12 min read"
+      heroImage="/manus-storage/pilot-training-cost_55d64cb4.jpg"
       ctaHref="/quiz"
       ctaText="Get a personalised cost estimate"
       faqSchema={[
@@ -32,6 +33,8 @@ export default function PilotTrainingCosts() {
               <p>
                 The cost of pilot training is the single biggest barrier for most aspiring pilots — and it is also the topic most frequently obscured by optimistic marketing, outdated figures, and incomplete cost breakdowns. This guide gives you the real numbers for 2026, including the costs that most guides omit.
               </p>
+              <img src="/manus-storage/training-finance-loan_7be38da5.jpg" alt="Pilot training finance and loans" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/cost-breakdown_fb067021.jpg" alt="Training cost breakdown" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The headline figures are well-known: integrated ATPL training at a UK school costs £90,000–£130,000; modular ATPL training costs £40,000–£80,000. But these figures represent training fees only. The true total cost of becoming a UK airline pilot — including living costs, medical fees, equipment, exam fees, and the type rating — is typically £110,000–£160,000 for integrated routes and £70,000–£110,000 for modular routes.
               </p>

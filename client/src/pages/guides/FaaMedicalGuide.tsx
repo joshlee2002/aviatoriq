@@ -6,6 +6,7 @@ export default function FaaMedicalGuide() {
       title="FAA Medical Certificate Requirements for Airline Pilots (2026)"
       subtitle="Everything you need to know about the FAA First, Second, and Third Class Medical Certificates — vision standards, disqualifying conditions, ADHD, depression, and the Special Issuance process."
       readTime="11 min read"
+      heroImage="/manus-storage/faa-medical_60c77c69.jpg"
       canonical="/guides/faa-medical-requirements"
       metaDescription="FAA medical certificate requirements for pilots in 2026. First, Second, and Third Class standards, disqualifying conditions, ADHD, depression, SSRI policy, and Special Issuance explained."
       author="Joshua Fagan"
@@ -19,6 +20,8 @@ export default function FaaMedicalGuide() {
               <p className="mb-4">
                 The FAA issues three classes of medical certificate, each with different standards and validity periods. For an airline career, you need a First Class. For a commercial pilot certificate (CPL), you need at least a Second Class. Third Class is sufficient for private flying.
               </p>
+              <img src="/manus-storage/faa-ame-doctor_9d5ff4b3.jpg" alt="FAA AME doctor" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/medical-certificate_9ad09b89.jpg" alt="FAA medical certificate" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <div className="overflow-x-auto mt-2">
                 <table className="w-full text-sm border-collapse">
                   <thead>

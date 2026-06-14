@@ -291,7 +291,7 @@ export default function PartnerUS() {
 
       {/* ── Hero ── */}
       <section className="bg-[var(--color-navy)] text-white py-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "url('/images/flight-school-runway.jpg')", backgroundSize: "cover", backgroundPosition: "center 60%", opacity: 0.1 }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "url('/manus-storage/flight-school-runway_2b67dbee.jpg')", backgroundSize: "cover", backgroundPosition: "center 60%", opacity: 0.1 }} />
         <div className="max-w-4xl mx-auto text-center relative">
           <span className="inline-block bg-[var(--color-primary)] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6">
             🇺🇸 For US Flight Schools &amp; Training Providers

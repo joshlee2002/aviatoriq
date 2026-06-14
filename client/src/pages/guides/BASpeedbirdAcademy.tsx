@@ -8,6 +8,7 @@ export default function BASpeedbirdAcademy() {
       canonical="/guides/ba-speedbird-academy"
       metaDescription="British Airways Speedbird Academy 2026 guide: application process, selection stages, training at CAE Oxford, costs, and what happens after you qualify. Updated June 2026."
       readTime="10 min read"
+      heroImage="/manus-storage/ba-speedbird_2f8a3c9e.jpg"
       ctaHref="/quiz"
       ctaText="Check your readiness for cadet programmes"
       relatedGuides={[
@@ -31,6 +32,8 @@ export default function BASpeedbirdAcademy() {
               <p>
                 The British Airways Speedbird Academy is the airline's flagship ab-initio cadet pilot programme — widely regarded as one of the most prestigious routes into commercial aviation in the world. Named after BA's iconic radio callsign, the programme takes applicants with no flying experience and trains them to become First Officers on British Airways' fleet, which includes the Boeing 777, Boeing 787, and Airbus A320 family.
               </p>
+              <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="BA sponsored cadet" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/interview-assessment_c517e045.jpg" alt="BA selection assessment" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 What makes the Speedbird Academy distinct from self-sponsored training is the guaranteed job offer. Successful applicants who complete training to the required standard are offered a First Officer position with British Airways before they even begin flying. This removes the single biggest risk of pilot training — spending £100,000+ and then failing to secure an airline job — and replaces it with a structured, supported pathway to the flight deck of one of the world's most respected airlines.
               </p>

@@ -31,6 +31,7 @@ const FrozenAtplUK = () => {
         },
       ]}
       readTime="15 min read"
+      heroImage="/manus-storage/frozen-atpl_415e1a95.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -41,6 +42,8 @@ const FrozenAtplUK = () => {
               <p>
                 The term 'Frozen ATPL' (fATPL) is a cornerstone of professional pilot training in the United Kingdom and across Europe. It's not a standalone licence but rather a crucial milestone in a pilot's career progression towards becoming an airline captain. Essentially, a pilot holds a Frozen ATPL when they have successfully completed all the theoretical knowledge examinations for the Airline Transport Pilot Licence (ATPL) and possess a Commercial Pilot Licence (CPL) with a Multi-Engine Instrument Rating (MEIR), but have not yet accumulated the minimum 1,500 hours of flight experience required for the full ATPL. This status allows pilots to be employed as First Officers by airlines, where they will gain the necessary flight hours to 'unfreeze' their ATPL.
               </p>
+              <img src="/manus-storage/atpl-theory-books_5f2a8c3d.jpg" alt="ATPL theory exam books" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/first-officer-job_23328c88.jpg" alt="Airline first officer" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 For aspiring airline pilots in the UK, understanding the fATPL is paramount. It represents the point at which you are theoretically qualified and legally permitted to operate as a co-pilot in a multi-crew environment. The journey to this point involves rigorous academic study and practical flight training, culminating in a comprehensive understanding of advanced aviation principles. The UK Civil Aviation Authority (CAA) oversees these qualifications, ensuring that all pilots meet stringent safety and competency standards that align with international aviation regulations.
               </p>

@@ -8,6 +8,7 @@ const BaSpeedbirdGuide = () => {
       canonical="/guides/ba-speedbird-academy"
       metaDescription="British Airways Speedbird Pilot Academy 2026 guide: entry requirements, acceptance rate, assessment process, and how to apply for the fully funded cadet programme."
       readTime="8 min read"
+      heroImage="/manus-storage/ba-speedbird-guide_4e9f2a7b.jpg"
       ctaHref="/tools/cadet-eligibility"
       ctaText="Check your eligibility"
       faqSchema={[
@@ -29,6 +30,7 @@ const BaSpeedbirdGuide = () => {
               <p>
                 Launched in 2023, the British Airways Speedbird Pilot Academy is the holy grail of UK pilot training: a <strong>fully funded</strong> cadet programme that takes you from zero experience to the right-hand seat of a British Airways Airbus A320.
               </p>
+              <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="BA Speedbird cadet programme" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 Unlike traditional "sponsored" programmes where you still have to secure a £100,000 loan backed by a parent's house, BA actually pays the training provider directly. They cover the cost of the training, your accommodation, and your food. It is a genuine effort to remove the financial barrier to the flight deck and increase diversity in aviation.
               </p>

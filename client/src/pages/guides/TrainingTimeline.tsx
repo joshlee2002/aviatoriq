@@ -14,6 +14,7 @@ const TrainingTimeline = () => {
         { question: "How long does ATPL ground school take?", answer: "ATPL ground school (14 subjects) typically takes 6–18 months. Full-time integrated programmes include it in the course. Modular students usually study part-time over 12–18 months." },
       ]}
       readTime="8 min read"
+      heroImage="/manus-storage/training-timeline_9baef553.jpg"
       ctaHref="/quiz/flight-deck"
       ctaText="Find out how ready you are"
       relatedGuides={[
@@ -29,6 +30,8 @@ const TrainingTimeline = () => {
               <p>
                 Embarking on a career as an airline pilot is an exciting prospect, but it's crucial to approach it with a realistic understanding of the time commitment involved. Many aspiring pilots underestimate the duration of the journey from their first lesson to sitting in an airline cockpit. This guide will break down the typical timelines for each stage of pilot training in the UK, helping you plan your path effectively and manage expectations.
               </p>
+              <img src="/manus-storage/training-routes-comparison_206bd458.png" alt="Training routes comparison" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/integrated-vs-modular-timeline_77509ad4.png" alt="Integrated vs modular timeline" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The overall timeline can vary significantly based on your chosen training route (integrated or modular), personal circumstances, financial resources, and even external factors like weather. It's not uncommon for the entire process, from zero experience to securing your first airline job, to span several years. Understanding these nuances upfront will help you navigate the challenges and maintain motivation throughout your training.
               </p>

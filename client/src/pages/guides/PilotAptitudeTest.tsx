@@ -8,6 +8,7 @@ export default function PilotAptitudeTest() {
       canonical="/guides/pilot-aptitude-test-uk"
       metaDescription="Free pilot aptitude test preparation guide 2026: what the tests measure, sample questions, and how to prepare for numerical reasoning, spatial awareness, and multi-tasking assessments. Updated June 2026."
       readTime="11 min read"
+      heroImage="/manus-storage/aptitude-test_3c7e9f2a.jpg"
       ctaHref="/quiz"
       ctaText="Take the free pilot readiness assessment"
       relatedGuides={[
@@ -31,6 +32,7 @@ export default function PilotAptitudeTest() {
               <p>
                 Before you can prepare effectively for pilot aptitude tests, you need to understand what they are actually measuring — and why. Airlines and flight schools use aptitude tests not to assess your aviation knowledge (you don't need any) but to identify whether you have the underlying cognitive profile associated with successful pilots.
               </p>
+              <img src="/manus-storage/simulator-assessment_08bb00b0.jpg" alt="Simulator assessment" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 Research into pilot performance has identified a consistent set of cognitive abilities that predict success in training and on the line. These include: the ability to process multiple streams of information simultaneously (multi-tasking), strong spatial reasoning (understanding three-dimensional relationships), numerical accuracy under time pressure, working memory capacity, and psychomotor coordination (hand-eye coordination and fine motor control).
               </p>

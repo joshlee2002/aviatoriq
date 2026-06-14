@@ -6,6 +6,7 @@ export default function WomenInAviationUSA() {
       title="Women in Aviation Scholarships USA: Your 2026 Guide to Funding Your Flight Training"
       subtitle="Discover the top scholarships for aspiring female pilots in the United States, comparing key programs like WAI and The Ninety-Nines to help you secure funding for your aviation career."
       readTime="13 min read"
+      heroImage="/manus-storage/women-aviation-usa_a2dc68a7.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/women-in-aviation-usa"
       metaDescription="Explore comprehensive 2026 guide to women in aviation scholarships USA. Find funding for flight training, compare WAI and Ninety-Nines, and boost your aviation career."
@@ -15,6 +16,7 @@ export default function WomenInAviationUSA() {
           content: (
             <div>
               <p className="mb-4">Aspiring female aviators in the United States have access to a wealth of scholarship opportunities designed to alleviate the financial burden of flight training and higher education. Two of the most prominent organizations leading this charge are Women in Aviation International (WAI) and The Ninety-Nines, Inc. Both offer significant support, but understanding their distinct focuses and eligibility criteria is crucial for applicants. Since 1995, Women in Aviation International has awarded thousands of members scholarships every year, with over $750,000 awarded annually across numerous awards, demonstrating a long-standing commitment to fostering female talent in the industry.</p>
+              <img src="/manus-storage/female-pilot_91c3e6c5.jpg" alt="Female pilot USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">While both organizations aim to empower women in aviation, their scholarship programs often cater to slightly different needs and career stages. WAI, for instance, offers a broad spectrum of scholarships covering flight training, maintenance, aerospace engineering, and even business management within aviation. The Ninety-Nines, on the other hand, tend to focus more acutely on flight training and pilot certification, reflecting their roots as an organization for licensed women pilots. Applicants should carefully review each organization's specific offerings to align with their personal and professional goals.</p>
               <div className="overflow-x-auto mb-8">
                 <table className="min-w-full bg-[oklch(0.14_0.08_250)] rounded-lg shadow-md">

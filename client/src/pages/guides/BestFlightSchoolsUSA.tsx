@@ -6,6 +6,7 @@ export default function BestFlightSchoolsUSA() {
       title="Best Flight Schools USA 2026: ATP vs. Embry-Riddle Comparison & Costs"
       subtitle="Choosing between ATP Flight School and Embry-Riddle Aeronautical University for pilot training in 2026 requires a deep dive into their distinct cost structures, program durations, and career outcomes. This guide provides an unbiased comparison to help aspiring pilots make an informed decision."
       readTime="15 min read"
+      heroImage="/manus-storage/best-schools-usa_9e4f2b7a.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/best-flight-schools-usa"
       metaDescription="Compare the best flight schools in the USA for 2026: ATP Flight School vs. Embry-Riddle. Explore program costs, financing, career outcomes, and hidden expenses to choose your ideal pilot training path."
@@ -17,6 +18,8 @@ export default function BestFlightSchoolsUSA() {
               <p className="mb-4">
                 Aspiring airline pilots in the United States face a pivotal decision when selecting a flight school, with ATP Flight School and Embry-Riddle Aeronautical University standing out as two prominent, yet fundamentally different, institutions. This guide provides a comprehensive, unbiased comparison of these leading flight training providers, focusing on their cost structures, program models, and overall value proposition for prospective pilots in 2026.
               </p>
+              <img src="/manus-storage/usa-school_36756c90.jpg" alt="USA flight school" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/school-campus_0aa4197f.jpg" alt="Flight school campus" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">
                 Understanding the financial commitment is paramount. For instance, a key consideration for many is that <strong>ATP Flight School charges $123,995 for their Airline Career Pilot Program when starting with no previous experience.</strong> This figure represents a significant upfront investment, but it encompasses an accelerated, fixed-cost model designed to fast-track students into airline careers. In contrast, Embry-Riddle, a traditional university, offers a more modular, pay-as-you-go approach, integrating flight training with a degree program, which can lead to a different financial trajectory and timeline.
               </p>

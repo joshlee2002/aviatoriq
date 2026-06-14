@@ -14,6 +14,7 @@ const BestRouteToAirline = () => {
         { question: "Is there a pilot shortage in the UK?", answer: "Yes. UK and European airlines have been experiencing a significant pilot shortage since 2022. This has improved employment prospects for newly qualified pilots, though competition for the best airlines remains high." },
       ]}
       readTime="9 min read"
+      heroImage="/manus-storage/best-route-airline_3c8e2f1a.jpg"
       ctaHref="/quiz"
       ctaText="Find your route to the airlines"
       sections={[
@@ -24,6 +25,8 @@ const BestRouteToAirline = () => {
               <p>
                 Becoming an airline pilot in the UK is a challenging yet incredibly rewarding career. The journey is complex, with significant financial and time commitments. This guide cuts through the noise to provide an honest assessment of the best routes to the flight deck in 2025, focusing on what UK airlines genuinely seek in new recruits. We'll explore the various training paths, essential qualifications, and crucial soft skills that will set you apart.
               </p>
+              <img src="/manus-storage/training-routes-comparison_206bd458.png" alt="Training routes comparison" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="Cadet programme route" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 Many aspiring pilots are led to believe there's one 'golden' route, but the reality is more nuanced. Airlines are increasingly pragmatic, valuing a combination of technical proficiency, professionalism, and the right attitude. Understanding these core requirements from the outset will enable you to make informed decisions, avoid common pitfalls, and significantly enhance your employability.
               </p>

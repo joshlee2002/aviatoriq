@@ -16,6 +16,7 @@ const ModularVsIntegratedDeep = () => {
         { question: "How long does modular pilot training take?", answer: "Modular training typically takes 3–5 years if done part-time alongside work, or 2–3 years if done more intensively. The pace is flexible — you can complete modules faster or slower depending on your availability and finances." },
       ]}
       readTime="11 min read"
+      heroImage="/manus-storage/modular-integrated-deep_ae32f22e.jpg"
       ctaHref="/tools/integrated-vs-modular"
       ctaText="Use the Integrated vs Modular decision tool"
       relatedGuides={[
@@ -32,6 +33,8 @@ const ModularVsIntegratedDeep = () => {
               <p>
                 The idea that integrated training is "airline preferred" and modular training is a second-tier option is one of the most persistent myths in UK aviation. It is also, largely, false — and it has cost thousands of aspiring pilots tens of thousands of pounds in unnecessary training costs.
               </p>
+              <img src="/manus-storage/integrated-school_e4427060.jpg" alt="Integrated flight training school" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/modular-training_ba7d8263.jpg" alt="Modular pilot training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 This myth exists because integrated flight schools have a financial incentive to perpetuate it. An integrated programme costs £90,000–£130,000. A modular programme costs £55,000–£85,000. The difference is significant, and the integrated schools have historically been better at marketing.
               </p>
@@ -50,7 +53,7 @@ const ModularVsIntegratedDeep = () => {
               </p>
               <div style={{ margin: "20px 0", borderRadius: "12px", overflow: "hidden" }}>
                 <img
-                  src="/images/guides/integrated-vs-modular-timeline.png"
+                  src="/manus-storage/integrated-vs-modular-timeline_77509ad4.png"
                   alt="Integrated vs Modular pilot training timeline comparison 2026"
                   style={{ width: "100%", display: "block" }}
                   loading="lazy"

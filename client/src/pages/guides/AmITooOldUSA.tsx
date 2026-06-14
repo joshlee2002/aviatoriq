@@ -6,6 +6,7 @@ export default function AmITooOldUSA() {
       title="Am I Too Old to Become a Pilot in the USA? (2026 Guide)"
       subtitle="Discover the truth about starting a pilot career later in life. Learn about FAA age limits, medical requirements, and the best pathways for career changers in their 30s, 40s, and 50s."
       readTime="12 min read"
+      heroImage="/manus-storage/pilot-over-40-usa_35140e0e.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/am-i-too-old-to-become-a-pilot-usa"
       metaDescription="Wondering 'am I too old to become a pilot USA'? Explore our 2026 guide covering FAA age limits, medical requirements, financing, and career paths for older pilots."
@@ -17,6 +18,7 @@ export default function AmITooOldUSA() {
               <p className="mb-4">
                 The most critical fact for any aspiring aviator considering a mid-life career change is this: <strong>The FAA allows airline pilots to fly until age 65 in Part 121 operations, regardless of when they begin training.</strong> This means if you start your flight training at age 40, you still have a potential 25-year career ahead of you at major US airlines like Delta, United, or American Airlines. The aviation industry does not discriminate based on when you earned your certificates; it values your total flight hours, safety record, and professionalism.
               </p>
+              <img src="/manus-storage/pilot-over-40_fbd1e435.jpg" alt="Pilot training over 40 USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">
                 Under current Federal Aviation Administration (FAA) regulations, the mandatory retirement age of 65 applies specifically to pilots operating under Part 121 (scheduled commercial airlines). However, this is not a blanket ban on flying after 65. Pilots who reach this milestone can seamlessly transition to Part 135 operations (charter and corporate flying), Part 91 (general aviation and private corporate), or flight instruction (Part 61 and 141), none of which have a mandatory maximum age limit, provided the pilot can maintain their FAA medical certificate.
               </p>

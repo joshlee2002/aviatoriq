@@ -31,6 +31,7 @@ const GiBillFlightTraining = () => {
         },
       ]}
       readTime="12 min read"
+      heroImage="/manus-storage/gi-bill-training_775b4cc1.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
       sections={[
@@ -41,6 +42,7 @@ const GiBillFlightTraining = () => {
               <p>
                 Navigating the complexities of GI Bill benefits for flight training can be challenging, but with the right information, veterans can effectively leverage their earned benefits to pursue a career in aviation. The primary chapters applicable to flight training are the Post-9/11 GI Bill (Chapter 33) and the Montgomery GI Bill Active Duty (MGIB-AD, Chapter 30). Each program has distinct eligibility criteria, payment structures, and limitations that significantly impact how much of your flight training costs will be covered. Understanding these differences is the first critical step in planning your aviation education.
               </p>
+              <img src="/manus-storage/military-airline_3b8b8da5.jpg" alt="Military to airline pilot" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 To be eligible for GI Bill benefits for flight training, you must generally meet several key requirements. First, you need to possess a private pilot license before you can use your benefits for advanced flight training. The VA typically does not cover the initial private pilot certificate unless it is part of a broader degree program at a college or university. Second, you must hold a valid medical certificate—a second-class medical for most training, or a first-class medical if you intend to pursue an Airline Transport Pilot (ATP) certificate. Finally, and crucially, your chosen flight school must be certified by the Federal Aviation Administration (FAA) under Part 141 and be specifically approved by the VA for education benefits.
               </p>

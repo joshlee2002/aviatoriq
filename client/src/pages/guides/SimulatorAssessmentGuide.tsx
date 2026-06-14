@@ -8,6 +8,7 @@ export default function SimulatorAssessmentGuide() {
       canonical="/guides/airline-simulator-assessment"
       metaDescription="How to pass an airline pilot simulator assessment in 2026. What assessors look for, common scenarios, CRM tips, and how to prepare for the sim check. UK airline selection guide."
       readTime="8 min read"
+      heroImage="/manus-storage/simulator-assessment_08bb00b0.jpg"
       lastUpdated="June 2026"
       ctaHref="/quiz"
       ctaText="Take the free pilot readiness assessment"
@@ -31,6 +32,7 @@ export default function SimulatorAssessmentGuide() {
               <p>
                 The most important thing to understand about a simulator assessment is this: it is not primarily a flying test. It is a CRM assessment that happens to involve flying.
               </p>
+              <img src="/manus-storage/mcc-simulator_d3ac3716.jpg" alt="Simulator assessment training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 Assessors are not looking for perfect flying. They are looking for safe, professional behaviour — the kind of behaviour that will keep passengers and crew safe in line operations over a 30-year career. A candidate who flies a slightly imperfect ILS but communicates clearly, manages workload effectively, and handles an engine failure calmly will score higher than a candidate who flies a technically perfect approach but is silent, reactive, and flustered when something goes wrong.
               </p>

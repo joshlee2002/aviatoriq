@@ -8,6 +8,7 @@ export default function RyanairCadet() {
       canonical="/guides/ryanair-cadet-programme"
       metaDescription="Ryanair cadet pilot programme 2026: partner schools (FTEJerez, Bartolini Air, MATS), selection process, costs, and First Officer career. Updated June 2026."
       readTime="8 min read"
+      heroImage="/manus-storage/ryanair-cadet_432ca710.jpg"
       ctaHref="/quiz"
       ctaText="Check your readiness for cadet programmes"
       relatedGuides={[
@@ -31,6 +32,7 @@ export default function RyanairCadet() {
               <p>
                 Ryanair is Europe's largest airline by passenger numbers and one of the world's largest employers of commercial pilots. Unlike British Airways or easyJet, Ryanair does not operate a single branded cadet programme with a direct application portal. Instead, the airline recruits cadets through a network of approved partner flight schools — primarily FTEJerez in Spain, Bartolini Air in Poland, and MATS in Malta.
               </p>
+              <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="Ryanair cadet programme" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 This decentralised model means that if you want to pursue a Ryanair cadet pathway, you apply to and train at one of these partner schools, which have established relationships with Ryanair's recruitment team. Graduates who meet Ryanair's standards are offered First Officer positions on the Boeing 737 fleet — the airline's sole aircraft type.
               </p>

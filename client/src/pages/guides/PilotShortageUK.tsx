@@ -15,6 +15,7 @@ const PilotShortageUK = () => {
         { question: "Are airlines offering signing bonuses?", answer: "Yes. Several UK and European airlines have offered signing bonuses and enhanced packages to attract qualified pilots. Ryanair, Jet2, and several regional operators have run enhanced recruitment campaigns with financial incentives." },
       ]}
       readTime="7 min read"
+      heroImage="/manus-storage/pilot-shortage_0ebfbc22.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -25,6 +26,8 @@ const PilotShortageUK = () => {
               <p>
                 The pilot shortage is not a marketing myth invented by flight schools to sell training. It is a structural, data-backed reality that is reshaping the aviation industry. Here are the key numbers:
               </p>
+              <img src="/manus-storage/airline-fleet_e94d0411.jpg" alt="Airline fleet expansion" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/first-officer-job_23328c88.jpg" alt="First officer job opportunities" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 Boeing's 2024 Pilot and Technician Outlook projects a global need for 670,000 new commercial pilots over the next 20 years — an average of 33,500 per year. In Europe specifically, the shortage is estimated at 80,000 pilots by 2032, driven by a combination of mandatory retirements, post-COVID recovery, and growing air travel demand.
               </p>

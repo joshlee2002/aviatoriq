@@ -8,6 +8,7 @@ export default function WizzAirAcademy() {
       canonical="/guides/wizz-air-pilot-academy"
       metaDescription="Wizz Air Pilot Academy 2026: training locations, selection process, costs, and First Officer career at one of Europe's fastest-growing airlines. Updated June 2026."
       readTime="8 min read"
+      heroImage="/manus-storage/wizzair-cadet_8bbabaaa.jpg"
       ctaHref="/quiz"
       ctaText="Check your readiness for cadet programmes"
       relatedGuides={[
@@ -31,6 +32,7 @@ export default function WizzAirAcademy() {
               <p>
                 Wizz Air is one of Europe's most dynamic airlines — a Budapest-headquartered ultra-low-cost carrier that has grown from a small Central European operation to one of the continent's largest airlines, carrying over 60 million passengers per year. The airline operates an all-Airbus A320 family fleet and is one of the largest operators of the fuel-efficient A321neo in the world.
               </p>
+              <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="Wizz Air cadet programme" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 For aspiring pilots, Wizz Air's rapid expansion creates genuine opportunities. The airline needs pilots — lots of them — and its Pilot Academy is one of the primary routes through which it recruits and trains the next generation of its flight crew. Unlike some cadet programmes that take only 20–30 cadets per year, Wizz Air's growth means it has the capacity to absorb significantly more cadet graduates.
               </p>

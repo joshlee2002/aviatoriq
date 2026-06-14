@@ -6,6 +6,7 @@ export default function AtpFlightSchoolGuide() {
       title="ATP Flight School Airline Career Pilot Program Cost & Guide 2026"
       subtitle="Discover the comprehensive costs, program structure, and career opportunities of the ATP Flight School Airline Career Pilot Program in 2026, and learn how it prepares you for a successful airline career."
       readTime="12 min read"
+      heroImage="/manus-storage/atp-flight-school_6c3e4d2a.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/atp-flight-school-guide"
       metaDescription="Explore the ATP Flight School Airline Career Pilot Program cost in 2026, including detailed breakdowns, student experiences, and career progression. Your ultimate guide to becoming an airline pilot."
@@ -15,6 +16,8 @@ export default function AtpFlightSchoolGuide() {
           content: (
             <div>
               <p className="mb-4">The ATP Flight School Airline Career Pilot Program is one of the most recognized and intensive fast-track programs for aspiring airline pilots in the United States. Designed to take individuals with little to no prior flight experience to a commercial pilot certificate with multi-engine and instrument ratings, the program aims to prepare graduates for a career in the airlines. The curriculum is structured to meet the rigorous demands of the aviation industry, focusing on accelerated learning and practical flight experience. A key statistic to note is that <strong className="text-[oklch(0.72_0.18_65)]">the ATP Flight School Airline Career Pilot Program costs $123,995 when starting with no previous experience</strong>, a significant investment for a career with high earning potential.</p>
+              <img src="/manus-storage/usa-school_36756c90.jpg" alt="ATP flight school campus" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/training-aircraft_09ae6a9b.jpg" alt="ATP training aircraft" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">This guide provides an in-depth look at the program, covering everything from detailed costs and financing options to student experiences and career progression opportunities. We will also compare ATP with other leading flight schools to help you make an informed decision about your pilot training journey in 2026.</p>
             </div>
           ),

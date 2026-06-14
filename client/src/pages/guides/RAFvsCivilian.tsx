@@ -16,6 +16,7 @@ const RAFvsCivilian = () => {
         { question: "Do you need a degree to become an RAF pilot?", answer: "A degree is not strictly required for RAF pilot selection, but the vast majority of successful applicants are graduates. Strong A-levels (typically ABB or above) in STEM subjects are the minimum academic requirement." },
       ]}
       readTime="8 min read"
+      heroImage="/manus-storage/raf-civilian_cd4555a1.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -26,6 +27,8 @@ const RAFvsCivilian = () => {
               <p>
                 The RAF and civilian routes both lead to a professional pilot career, but they are fundamentally different in almost every other respect — cost, timeline, lifestyle, selection criteria, and long-term career trajectory. Understanding the real differences is essential before committing to either path.
               </p>
+              <img src="/manus-storage/military-airline_3b8b8da5.jpg" alt="Military to civilian pilot" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/first-officer-job_23328c88.jpg" alt="Civilian airline first officer" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 This guide is not designed to steer you toward one route or the other. It is designed to give you an honest picture of both so you can make the right decision for your specific circumstances, values, and goals.
               </p>

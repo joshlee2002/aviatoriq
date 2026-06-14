@@ -31,6 +31,7 @@ const CplGuideUK = () => {
         },
       ]}
       readTime="15 min read"
+      heroImage="/manus-storage/cpl-guide_9dea1e2a.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -41,6 +42,8 @@ const CplGuideUK = () => {
               <p>
                 The Commercial Pilot Licence (CPL) is a crucial step for aspiring professional pilots in the United Kingdom. It allows you to act as pilot-in-command (PIC) or co-pilot of an aircraft engaged in operations other than commercial air transport, or as PIC in commercial air transport of any single-pilot aircraft, subject to certain restrictions. Essentially, the CPL is your gateway to earning money from flying, opening doors to various aviation careers beyond recreational flying. This comprehensive guide will walk you through the requirements, costs, training routes, and career opportunities associated with obtaining a CPL in the UK, adhering to the standards set by the UK Civil Aviation Authority (CAA).
               </p>
+              <img src="/manus-storage/dual-instruction_48048c62.jpg" alt="Dual instruction flying" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/pilot-logbook_8afa8322.jpg" alt="Pilot logbook" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
             </>
           ),
         },

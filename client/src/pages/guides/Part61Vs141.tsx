@@ -6,6 +6,7 @@ export default function Part61Vs141() {
       title="Part 61 vs Part 141 Flight Training: Which Is Right for You?"
       subtitle="The two FAA-approved training frameworks have different structures, costs, and timelines. Here's how to choose the right one for your goals in 2026."
       readTime="10 min read"
+      heroImage="/manus-storage/part61-141_25c6f61a.jpg"
       canonical="/guides/part-61-vs-141"
       metaDescription="Part 61 vs Part 141 flight training USA — what's the difference, which costs less, which is faster, and which leads to airline cadet programmes. Full 2026 comparison."
       author="Joshua Fagan"
@@ -19,6 +20,8 @@ export default function Part61Vs141() {
               <p className="mb-4">
                 Both Part 61 and Part 141 refer to sections of Title 14 of the Code of Federal Regulations (14 CFR) — the rulebook that governs how flight training is conducted in the United States. The key difference is structure and FAA oversight.
               </p>
+              <img src="/manus-storage/usa-school_36756c90.jpg" alt="Part 141 flight school USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/training-aircraft_09ae6a9b.jpg" alt="Part 61 training aircraft" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">
                 <strong>Part 61</strong> sets out the minimum aeronautical experience requirements for each certificate and rating. Any certificated flight instructor (CFI) can train a student under Part 61, with no formal curriculum approval required. The student and instructor have flexibility to design their own training syllabus around the FAA's minimum hour requirements.
               </p>

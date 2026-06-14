@@ -15,6 +15,7 @@ const WomenInAviation = () => {
         { question: "Is it harder for women to become pilots?", answer: "The training requirements are identical for men and women. The challenges women face are more cultural and structural — a historically male-dominated environment, fewer visible role models, and occasional unconscious bias. These are real but not insurmountable, and the industry is actively working to address them." },
       ]}
       readTime="7 min read"
+      heroImage="/manus-storage/women-aviation_11789230.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       sections={[
@@ -25,6 +26,8 @@ const WomenInAviation = () => {
               <p>
                 Approximately 6% of commercial airline pilots in the UK are women — a figure that has grown steadily over the past decade but remains far below the proportion of women in the general workforce. The aviation industry has recognised this as both a diversity issue and a talent pipeline problem, and is actively working to change it.
               </p>
+              <img src="/manus-storage/female-pilot_91c3e6c5.jpg" alt="Female pilot in cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img src="/manus-storage/women-flight-school_f06670af.jpg" alt="Women in flight school" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
                 The good news for women considering a pilot career in 2026 is that the industry has never been more actively supportive. Scholarships, mentoring programmes, diversity initiatives, and visible role models have all increased significantly. The barriers are real but lower than they have ever been.
               </p>
