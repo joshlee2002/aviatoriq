@@ -50,7 +50,10 @@ export async function setupVite(app: Express, server: Server) {
       // Use the pathname portion of originalUrl (strip query string)
       const urlPathname = url.split("?")[0].split("#")[0] || "/";
       const seoTags = buildSeoTags(urlPathname);
-      if (seoTags && page.includes("</head>")) {
+      if (seoTags) {
+        // Replace the generic fallback <title> with the route-specific one so
+        // there is only ever a single <title> tag in the document.
+        page = page.replace(/<title>[^<]*<\/title>/, "");
         page = page.replace("</head>", `${seoTags}\n  </head>`);
       }
 
@@ -86,7 +89,9 @@ export function serveStatic(app: Express) {
       }
       const urlPathname = req.originalUrl.split("?")[0].split("#")[0] || "/";
       const seoTags = buildSeoTags(urlPathname);
-      if (seoTags && html.includes("</head>")) {
+      if (seoTags) {
+        // Remove the generic fallback <title> so only the injected one remains.
+        html = html.replace(/<title>[^<]*<\/title>/, "");
         html = html.replace("</head>", `${seoTags}\n  </head>`);
       }
       res.status(200).set({ "Content-Type": "text/html" }).end(html);
