@@ -8,7 +8,7 @@ export default function PilotTrainingCosts() {
       subtitle="Every cost involved in becoming a UK airline pilot — integrated vs modular, hidden costs, overseas options, financing, and the real total you need to budget for."
       canonical="/guides/pilot-training-costs"
       metaDescription="Complete 2026 breakdown of UK pilot training costs. Integrated ATPL £90k–£130k, modular £40k–£80k, overseas from £47k. Includes hidden costs, finance options, and real total budgets."
-      readTime="12 min read"
+      readTime="15 min read"
       heroImage="/manus-storage/pilot-training-cost_55d64cb4.jpg"
       ctaHref="/quiz"
       ctaText="Get a personalised cost estimate"
@@ -69,10 +69,16 @@ export default function PilotTrainingCosts() {
                 </thead>
                 <tbody>
                   <tr>
+                    <td>Acron Aviation (formerly L3Harris)</td>
+                    <td>London/Gatwick</td>
+                    <td>£102,500</td>
+                    <td>BA Speedbird, easyJet Generation</td>
+                  </tr>
+                  <tr>
                     <td>CAE Oxford Aviation Academy</td>
                     <td>Oxford</td>
-                    <td>£100,000–£130,000</td>
-                    <td>BA Speedbird, easyJet Generation</td>
+                    <td>£99,900</td>
+                    <td>easyJet Generation, Volotea</td>
                   </tr>
                   <tr>
                     <td>Skyborne Airline Academy</td>
@@ -87,15 +93,9 @@ export default function PilotTrainingCosts() {
                     <td>None (strong employment record)</td>
                   </tr>
                   <tr>
-                    <td>LEAP (London)</td>
-                    <td>London</td>
-                    <td>£95,000–£115,000</td>
-                    <td>Various</td>
-                  </tr>
-                  <tr>
                     <td>Leading Edge Aviation</td>
-                    <td>Carlisle</td>
-                    <td>£85,000–£95,000</td>
+                    <td>Oxford</td>
+                    <td>£114,950</td>
                     <td>None</td>
                   </tr>
                 </tbody>
@@ -132,7 +132,7 @@ export default function PilotTrainingCosts() {
                   <tr>
                     <td>FTEJerez</td>
                     <td>Jerez, Spain</td>
-                    <td>€124,000 all-inclusive (~£106,000)</td>
+                    <td>£119,500 (UK CAA route)</td>
                     <td>Ryanair partnership, includes accommodation and meals</td>
                   </tr>
                   <tr>
@@ -140,12 +140,6 @@ export default function PilotTrainingCosts() {
                     <td>Malta</td>
                     <td>€80,000–€95,000 (~£68,000–£81,000)</td>
                     <td>English-speaking environment, EASA approved</td>
-                  </tr>
-                  <tr>
-                    <td>L3Harris CTC</td>
-                    <td>New Zealand / Spain</td>
-                    <td>£90,000–£110,000</td>
-                    <td>UK-managed, strong airline placement record</td>
                   </tr>
                 </tbody>
               </table>
@@ -241,7 +235,7 @@ export default function PilotTrainingCosts() {
                 <strong>Living costs during full-time training phases:</strong> This is the largest hidden cost and the one most frequently underestimated. During full-time training phases (particularly the integrated programme or the flying phases of modular training), you cannot work. Budget £800–£1,500 per month for accommodation, food, and personal expenses. Over an 18-month integrated programme, this adds £14,400–£27,000 to your total cost.
               </p>
               <p>
-                <strong>Exam resit fees:</strong> The ATPL theory examinations are 14 subjects, and most candidates fail at least one on their first attempt. Each resit costs approximately £200–£400. Budget for at least 2–3 resits across the 14 subjects — this adds £400–£1,200 to your theory costs.
+                <strong>Exam resit fees:</strong> The ATPL theory examinations are 14 subjects, and most candidates fail at least one on their first attempt. Each resit costs approximately £200–£400. Budget for at least 2–3 resits across the 14 subjects.
               </p>
               <p>
                 <strong>Flight test resit fees:</strong> Skills tests (PPL, CPL, IR) can be failed and must be retaken. Each resit costs £500–£1,500 including examiner fees and additional training. Budget for at least one resit across all your skills tests.
