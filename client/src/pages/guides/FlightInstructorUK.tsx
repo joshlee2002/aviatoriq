@@ -162,44 +162,44 @@ const FlightInstructorUK = () => {
                 Ferry piloting can also provide hours, but opportunities can be sporadic and often require specific aircraft type ratings. The unique advantage of the FI role is the combination of earning an income, building hours, and simultaneously developing advanced piloting and leadership skills that are directly transferable and highly valued by airlines. The table below provides a quick comparison:
               </p>
               <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
+                <table className="w-full text-sm text-left border-collapse">
+                  <thead>
                     <tr>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Method</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Cost/Income</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Hours/Year (Est.)</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Skill Development</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Airline Value</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Method</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost/Income</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Hours/Year (Est.)</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Skill Development</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline Value</th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
+                  <tbody>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Flight Instructor (FI)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Income (£25k-£40k)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">400-700+</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Teaching, leadership, CRM, deep theory</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Very High</td>
+                      <td className="px-4 py-3 font-medium text-white">Flight Instructor (FI)</td>
+                      <td className="px-4 py-3 text-white/80">Income (£25k-£40k)</td>
+                      <td className="px-4 py-3 text-white/80">400-700+</td>
+                      <td className="px-4 py-3 text-white/80">Teaching, leadership, CRM, deep theory</td>
+                      <td className="px-4 py-3 text-white/80">Very High</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Self-Funded Private Flying</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">High Cost (£150-£250/hr)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">100-200</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Personal proficiency, navigation</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Moderate</td>
+                      <td className="px-4 py-3 font-medium text-white">Self-Funded Private Flying</td>
+                      <td className="px-4 py-3 text-white/80">High Cost (£150-£250/hr)</td>
+                      <td className="px-4 py-3 text-white/80">100-200</td>
+                      <td className="px-4 py-3 text-white/80">Personal proficiency, navigation</td>
+                      <td className="px-4 py-3 text-white/80">Moderate</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Banner Towing/Skydiving</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Income (variable)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">200-400 (seasonal)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Specific operational skills</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Moderate</td>
+                      <td className="px-4 py-3 font-medium text-white">Banner Towing/Skydiving</td>
+                      <td className="px-4 py-3 text-white/80">Income (variable)</td>
+                      <td className="px-4 py-3 text-white/80">200-400 (seasonal)</td>
+                      <td className="px-4 py-3 text-white/80">Specific operational skills</td>
+                      <td className="px-4 py-3 text-white/80">Moderate</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Ferry Pilot</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Income (project-based)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Variable</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Aircraft handling, logistics</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Moderate</td>
+                      <td className="px-4 py-3 font-medium text-white">Ferry Pilot</td>
+                      <td className="px-4 py-3 text-white/80">Income (project-based)</td>
+                      <td className="px-4 py-3 text-white/80">Variable</td>
+                      <td className="px-4 py-3 text-white/80">Aircraft handling, logistics</td>
+                      <td className="px-4 py-3 text-white/80">Moderate</td>
                     </tr>
                   </tbody>
                 </table>

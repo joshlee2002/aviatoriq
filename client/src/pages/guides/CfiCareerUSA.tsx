@@ -114,7 +114,7 @@ const CfiCareerUSA = () => {
                 Compensation structures vary; some schools offer hourly pay for flight, ground, and simulator instruction, while larger academies or university programs might offer salaried positions with benefits. Many schools also provide bonuses for checkride passes, knowledge test proctoring, or student retention. Understanding these compensation models and choosing a flight school that aligns with your hour-building goals is crucial. The investment in your CFI training effectively pays for itself through earned income and accelerated career progression.
               </p>
               <h3>Typical CFI Earnings and Hour Building</h3>
-              <table className="table-auto w-full text-left">
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr>
                     <th className="px-4 py-2">Metric</th>
@@ -124,19 +124,19 @@ const CfiCareerUSA = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border px-4 py-2">Hourly Rate</td>
-                    <td className="border px-4 py-2">$25 - $40</td>
-                    <td className="border px-4 py-2">$40 - $70+</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Hourly Rate</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">$25 - $40</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">$40 - $70+</td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Estimated Annual Income</td>
-                    <td className="border px-4 py-2">$35,000 - $55,000</td>
-                    <td className="border px-4 py-2">$55,000 - $85,000+</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Estimated Annual Income</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">$35,000 - $55,000</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">$55,000 - $85,000+</td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Hours Built Per Year</td>
-                    <td className="border px-4 py-2">500 - 800 hours</td>
-                    <td className="border px-4 py-2">500 - 900+ hours</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Hours Built Per Year</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">500 - 800 hours</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">500 - 900+ hours</td>
                   </tr>
                 </tbody>
               </table>

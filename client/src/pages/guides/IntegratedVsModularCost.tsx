@@ -51,8 +51,8 @@ export default function IntegratedVsModularCost() {
                   </thead>
                   <tbody className="divide-y divide-white/10 text-white/80">
                     <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">School fees (Skyborne/CAE/L3Harris)</td>
-                      <td className="px-4 py-3">£95,000 – £130,000</td>
+                      <td className="px-4 py-3 font-medium text-white">School fees (CAE/Acron/FTEJerez/Skyborne)</td>
+                      <td className="px-4 py-3">£99,900 – £119,500</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Living costs during training (20 months)</td>
@@ -64,7 +64,7 @@ export default function IntegratedVsModularCost() {
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors font-semibold">
                       <td className="px-4 py-3 text-white">Total (without type rating)</td>
-                      <td className="px-4 py-3 text-white">£110,000 – £155,000</td>
+                      <td className="px-4 py-3 text-white">£115,000 – £145,000</td>
                     </tr>
                   </tbody>
                 </table>
@@ -143,7 +143,7 @@ export default function IntegratedVsModularCost() {
                 When you factor in the opportunity cost of income lost during integrated training, the comparison looks very different.
               </p>
               <p>
-                <strong>Integrated (20 months, full-time):</strong> School fees £110,000 + living costs £20,000 + lost income (£35k/year × 1.7 years) £60,000 = <strong>total economic cost: ~£190,000</strong>.
+                <strong>Integrated (20 months, full-time):</strong> School fees £99,900–£119,500 (e.g. CAE £99,900, FTEJerez £119,500) + living costs £20,000 + lost income (£35k/year × 1.7 years) £60,000 = <strong>total economic cost: ~£180,000–£200,000</strong>.
               </p>
               <p>
                 <strong>Modular (4 years, part-time):</strong> Training fees £65,000 + skill decay extra hours £5,000 + no lost income = <strong>total economic cost: ~£70,000</strong>.

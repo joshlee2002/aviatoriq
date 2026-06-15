@@ -46,39 +46,39 @@ const BestRouteToAirline = () => {
               </p>
               <h3>Key Attributes Airlines Seek</h3>
               <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
+                <table className="w-full text-sm text-left border-collapse">
+                  <thead>
                     <tr>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Attribute</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Why it Matters</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Attribute</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Description</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Why it Matters</th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
+                  <tbody>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Technical Proficiency</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mastery of aircraft systems, flight principles, and procedures.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Ensures safe and efficient operation of complex aircraft.</td>
+                      <td className="px-4 py-3 font-medium text-white">Technical Proficiency</td>
+                      <td className="px-4 py-3 text-white/80">Mastery of aircraft systems, flight principles, and procedures.</td>
+                      <td className="px-4 py-3 text-white/80">Ensures safe and efficient operation of complex aircraft.</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Multi-Crew Cooperation (MCC)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Effective teamwork, communication, and decision-making in a cockpit.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Crucial for safety and operational efficiency in airline environments.</td>
+                      <td className="px-4 py-3 font-medium text-white">Multi-Crew Cooperation (MCC)</td>
+                      <td className="px-4 py-3 text-white/80">Effective teamwork, communication, and decision-making in a cockpit.</td>
+                      <td className="px-4 py-3 text-white/80">Crucial for safety and operational efficiency in airline environments.</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Problem Solving & Decision Making</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Ability to analyze situations, identify solutions, and make timely decisions under pressure.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Essential for handling unexpected events and maintaining flight safety.</td>
+                      <td className="px-4 py-3 font-medium text-white">Problem Solving & Decision Making</td>
+                      <td className="px-4 py-3 text-white/80">Ability to analyze situations, identify solutions, and make timely decisions under pressure.</td>
+                      <td className="px-4 py-3 text-white/80">Essential for handling unexpected events and maintaining flight safety.</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Resilience & Adaptability</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Capacity to manage stress, learn from mistakes, and adjust to changing circumstances.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Coping with irregular hours, diverse environments, and continuous learning.</td>
+                      <td className="px-4 py-3 font-medium text-white">Resilience & Adaptability</td>
+                      <td className="px-4 py-3 text-white/80">Capacity to manage stress, learn from mistakes, and adjust to changing circumstances.</td>
+                      <td className="px-4 py-3 text-white/80">Coping with irregular hours, diverse environments, and continuous learning.</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Professionalism & Integrity</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Adherence to ethical standards, regulations, and company policies.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Upholding the airline's reputation and ensuring regulatory compliance.</td>
+                      <td className="px-4 py-3 font-medium text-white">Professionalism & Integrity</td>
+                      <td className="px-4 py-3 text-white/80">Adherence to ethical standards, regulations, and company policies.</td>
+                      <td className="px-4 py-3 text-white/80">Upholding the airline's reputation and ensuring regulatory compliance.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -98,39 +98,39 @@ const BestRouteToAirline = () => {
               </p>
               <h3>Major UK Airline Cadet Programmes (Examples)</h3>
               <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
+                <table className="w-full text-sm text-left border-collapse">
+                  <thead>
                     <tr>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Airline/Programme</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Route Type</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Key Features</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status (2025)</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline/Programme</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Route Type</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Features</th>
+                      <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Status (2025)</th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
+                  <tbody>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">British Airways Future Pilot Programme</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Integrated</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Historically offered sponsorship/loan support, direct entry to BA.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Currently paused/under review; check BA careers for updates.</td>
+                      <td className="px-4 py-3 font-medium text-white">British Airways Future Pilot Programme</td>
+                      <td className="px-4 py-3 text-white/80">Integrated</td>
+                      <td className="px-4 py-3 text-white/80">Historically offered sponsorship/loan support, direct entry to BA.</td>
+                      <td className="px-4 py-3 text-white/80">Currently paused/under review; check BA careers for updates.</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">easyJet Generation easyJet Pilot Programme</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Integrated</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Partnership with flight schools (e.g., CAE, L3Harris), job offer upon completion.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Active, highly competitive.</td>
+                      <td className="px-4 py-3 font-medium text-white">easyJet Generation easyJet Pilot Programme</td>
+                      <td className="px-4 py-3 text-white/80">Integrated</td>
+                      <td className="px-4 py-3 text-white/80">Partnership with flight schools (e.g., CAE, L3Harris), job offer upon completion.</td>
+                      <td className="px-4 py-3 text-white/80">Active, highly competitive.</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Ryanair Mentored Programme</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Integrated</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Partnership with flight schools (e.g., ATOs like Airline Flight Academy), type rating often included.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Active, consistent recruitment.</td>
+                      <td className="px-4 py-3 font-medium text-white">Ryanair Mentored Programme</td>
+                      <td className="px-4 py-3 text-white/80">Integrated</td>
+                      <td className="px-4 py-3 text-white/80">Partnership with flight schools (e.g., ATOs like Airline Flight Academy), type rating often included.</td>
+                      <td className="px-4 py-3 text-white/80">Active, consistent recruitment.</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">TUI Airline Pilot Programme</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Integrated</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Historically fully sponsored, direct entry to TUI.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Often seasonal/demand-driven; check TUI careers.</td>
+                      <td className="px-4 py-3 font-medium text-white">TUI Airline Pilot Programme</td>
+                      <td className="px-4 py-3 text-white/80">Integrated</td>
+                      <td className="px-4 py-3 text-white/80">Historically fully sponsored, direct entry to TUI.</td>
+                      <td className="px-4 py-3 text-white/80">Often seasonal/demand-driven; check TUI careers.</td>
                     </tr>
                   </tbody>
                 </table>

@@ -98,7 +98,7 @@ const CommercialPilotCertUSA = () => {
                 While the total hours are lower, the intensity of training in a Part 141 program is often higher, with specific milestones and progress checks integrated throughout the course. Students benefit from standardized instruction, dedicated facilities, and often, a direct pathway to airline hiring programs through partnerships between the school and air carriers. The choice between Part 61 and Part 141 depends on an individual's learning style, financial situation, and career timeline, with both pathways leading to the same FAA Commercial Pilot Certificate.
               </p>
               <h3>Part 61 vs. Part 141 CPL Requirements Comparison</h3>
-              <table className="table-auto w-full text-left">
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr>
                     <th className="px-4 py-2">Feature</th>
@@ -108,29 +108,29 @@ const CommercialPilotCertUSA = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border px-4 py-2">Total Flight Hours (Minimum)</td>
-                    <td className="border px-4 py-2">250 hours</td>
-                    <td className="border px-4 py-2">190 hours</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Total Flight Hours (Minimum)</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">250 hours</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">190 hours</td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Structure</td>
-                    <td className="border px-4 py-2">Flexible, self-paced</td>
-                    <td className="border px-4 py-2">Structured curriculum, FAA-approved school</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Structure</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Flexible, self-paced</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Structured curriculum, FAA-approved school</td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Instructor</td>
-                    <td className="border px-4 py-2">Any authorized instructor</td>
-                    <td className="border px-4 py-2">Authorized instructor within approved school</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Instructor</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Any authorized instructor</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Authorized instructor within approved school</td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Oversight</td>
-                    <td className="border px-4 py-2">Less direct FAA oversight</td>
-                    <td className="border px-4 py-2">Regular FAA oversight and inspections</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Oversight</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Less direct FAA oversight</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Regular FAA oversight and inspections</td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Ideal for</td>
-                    <td className="border px-4 py-2">Self-starters, those with prior experience, flexible schedules</td>
-                    <td className="border px-4 py-2">Students in aviation programs, those seeking accelerated training</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Ideal for</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Self-starters, those with prior experience, flexible schedules</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">Students in aviation programs, those seeking accelerated training</td>
                   </tr>
                 </tbody>
               </table>

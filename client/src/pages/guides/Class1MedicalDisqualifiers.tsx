@@ -38,7 +38,7 @@ const Class1MedicalDisqualifiers = () => {
                   loading="lazy"
                 />
               </div>
-              <p style={{ fontSize: "0.8rem", color: "oklch(0.45 0.04 240)", textAlign: "center", marginBottom: "16px" }}>
+              <p style={{ fontSize: "0.8rem", color: "rgba(255, 255, 255, 0.5)", textAlign: "center", marginBottom: "16px" }}>
                 CAA Class 1 medical assessment areas. Source: CAA Medical Department, 2026.
               </p>
               <img src="/manus-storage/medical-exam_79659228.jpg" alt="Aviation medical examination" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />

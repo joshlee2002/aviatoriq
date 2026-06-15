@@ -5,9 +5,9 @@ const CplGuideUK = () => {
   return (
     <GuideLayout
       title="Commercial Pilot Licence (CPL) UK: Requirements, Cost & How to Get One"
-      subtitle="Your comprehensive guide to obtaining a Commercial Pilot Licence (CPL) in the UK, covering requirements, costs, training routes, and career opportunities."
+      subtitle="Requirements, costs, training routes, and career opportunities for the UK Commercial Pilot Licence — the licence that lets you earn money from flying."
       canonical="/guides/cpl-uk"
-      metaDescription="A comprehensive guide to obtaining a Commercial Pilot Licence (CPL) in the UK, covering requirements, costs, integrated vs. modular training, career opportunities, and the difference between CPL and frozen ATPL."
+      metaDescription="UK Commercial Pilot Licence (CPL) 2026: requirements, costs (£55k–£120k), training routes, and the difference between CPL and frozen ATPL. CAA-sourced data."
       faqSchema={[
         {
           question: "How long does it take to get a CPL in the UK?",
@@ -40,7 +40,7 @@ const CplGuideUK = () => {
           content: (
             <>
               <p>
-                The Commercial Pilot Licence (CPL) is a crucial step for aspiring professional pilots in the United Kingdom. It allows you to act as pilot-in-command (PIC) or co-pilot of an aircraft engaged in operations other than commercial air transport, or as PIC in commercial air transport of any single-pilot aircraft, subject to certain restrictions. Essentially, the CPL is your gateway to earning money from flying, opening doors to various aviation careers beyond recreational flying. This comprehensive guide will walk you through the requirements, costs, training routes, and career opportunities associated with obtaining a CPL in the UK, adhering to the standards set by the UK Civil Aviation Authority (CAA).
+                The Commercial Pilot Licence (CPL) is a crucial step for aspiring professional pilots in the United Kingdom. It allows you to act as pilot-in-command (PIC) or co-pilot of an aircraft engaged in operations other than commercial air transport, or as PIC in commercial air transport of any single-pilot aircraft, subject to certain restrictions. Essentially, the CPL is your gateway to earning money from flying, opening doors to various aviation careers beyond recreational flying. This guide covers the requirements, costs, training routes, and career opportunities for the UK CPL, using data from the UK Civil Aviation Authority (CAA).
               </p>
               <img src="/manus-storage/dual-instruction_48048c62.jpg" alt="Dual instruction flying" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/pilot-logbook_8afa8322.jpg" alt="Pilot logbook" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
@@ -289,10 +289,10 @@ const CplGuideUK = () => {
                   <strong>Distance Learning:</strong> Studying through an Approved Training Organisation (ATO) over 6-12 months.
                 </li>
                 <li>
-                  <strong>14 Subjects:</strong> Covering advanced topics such as Air Law, Aircraft General Knowledge, Flight Planning, Meteorology, Navigation, and Operational Procedures.
+                  <strong>13 Subjects:</strong> Covering Air Law, Aircraft General Knowledge, Flight Planning, Meteorology, Navigation, Operational Procedures, and other core topics.
                 </li>
                 <li>
-                  <strong>Exams:</strong> Passing all 14 exams at a CAA-approved examination centre. A pass mark of 75% is required for each subject.
+                  <strong>Exams:</strong> Passing all 13 ATPL theoretical knowledge exams at a CAA-approved examination centre. A pass mark of 75% is required for each subject.
                 </li>
               </ul>
               <h3>Step 4: CPL Flight Training Course</h3>

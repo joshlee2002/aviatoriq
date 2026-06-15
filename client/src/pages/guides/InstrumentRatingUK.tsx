@@ -5,7 +5,7 @@ const InstrumentRatingUK = () => {
   return (
     <GuideLayout
       title="Instrument Rating (IR) UK: Requirements, Cost & What It Unlocks"
-      subtitle="A comprehensive guide to obtaining an Instrument Rating in the UK, covering requirements, costs, and career benefits."
+      subtitle="UK Instrument Rating (IR) 2026: requirements, costs (£8,000–£15,000), EASA vs UK IR explained, and why it is essential for an airline career."
       canonical="/guides/instrument-rating-uk"
       metaDescription="Understand the UK Instrument Rating (IR) for aeroplanes: EASA vs UK IR, requirements, theory exams, skill test, costs (£8,000-£15,000), and its importance for airline careers."
       faqSchema={[
@@ -67,42 +67,44 @@ const InstrumentRatingUK = () => {
                 The <b>En-Route Instrument Rating (EIR)</b>, sometimes referred to as a Basic Instrument Rating (BIR) in some contexts, is a more limited form of instrument qualification. The EIR allows pilots to fly under IFR during the en-route phase of flight but does not permit instrument approaches or departures in IMC. This means a pilot with an EIR must still operate under VFR for take-off and landing, or in conditions where visual flight is possible. While it offers some flexibility for longer cross-country flights, its significant limitations, particularly regarding approaches in poor weather, make it largely unsuitable for aspiring airline pilots who require full IR privileges. Career pilots almost exclusively pursue the full Instrument Rating (UK IR or EASA IR) due to the operational restrictions of the EIR.
               </p>
               <h3>Comparison of Instrument Ratings</h3>
-              <table className="table-auto w-full text-left">
+              <div className="overflow-x-auto">
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th className="px-4 py-2">Feature</th>
-                    <th className="px-4 py-2">EASA IR</th>
-                    <th className="px-4 py-2">UK IR</th>
-                    <th className="px-4 py-2">EIR (En-Route IR)</th>
+                  <tr className="border-b border-white/20">
+                    <th className="px-4 py-3 text-white/70 font-semibold">Feature</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold">EASA IR</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold">UK IR</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold">EIR (En-Route IR)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td className="border px-4 py-2">Primary Validity</td>
-                    <td className="border px-4 py-2">EASA Member States</td>
-                    <td className="border px-4 py-2">United Kingdom Airspace</td>
-                    <td className="border px-4 py-2">En-route IFR (limited)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 font-medium text-white">Primary Validity</td>
+                    <td className="px-4 py-3 text-white/80">EASA Member States</td>
+                    <td className="px-4 py-3 text-white/80">United Kingdom Airspace</td>
+                    <td className="px-4 py-3 text-white/80">En-route IFR (limited)</td>
                   </tr>
-                  <tr>
-                    <td className="border px-4 py-2">Approaches in IMC</td>
-                    <td className="border px-4 py-2">Yes</td>
-                    <td className="border px-4 py-2">Yes</td>
-                    <td className="border px-4 py-2">No</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 font-medium text-white">Approaches in IMC</td>
+                    <td className="px-4 py-3 text-white/80">Yes</td>
+                    <td className="px-4 py-3 text-white/80">Yes</td>
+                    <td className="px-4 py-3 text-white/80">No</td>
                   </tr>
-                  <tr>
-                    <td className="border px-4 py-2">Departures in IMC</td>
-                    <td className="border px-4 py-2">Yes</td>
-                    <td className="border px-4 py-2">Yes</td>
-                    <td className="border px-4 py-2">No</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 font-medium text-white">Departures in IMC</td>
+                    <td className="px-4 py-3 text-white/80">Yes</td>
+                    <td className="px-4 py-3 text-white/80">Yes</td>
+                    <td className="px-4 py-3 text-white/80">No</td>
                   </tr>
-                  <tr>
-                    <td className="border px-4 py-2">Suitability for Airline Career</td>
-                    <td className="border px-4 py-2">High</td>
-                    <td className="border px-4 py-2">High</td>
-                    <td className="border px-4 py-2">Low (not suitable)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 font-medium text-white">Suitability for Airline Career</td>
+                    <td className="px-4 py-3 text-white/80">High</td>
+                    <td className="px-4 py-3 text-white/80">High</td>
+                    <td className="px-4 py-3 text-white/80">Low (not suitable)</td>
                   </tr>
                 </tbody>
               </table>
+              </div>
             </>
           ),
         },

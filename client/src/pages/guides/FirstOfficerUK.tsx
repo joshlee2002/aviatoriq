@@ -99,29 +99,29 @@ const FirstOfficerUK = () => {
                 To mitigate the financial burden, many airlines offer 'training bonds' as an alternative to upfront payment. Under this arrangement, the airline funds the type rating, and the pilot agrees to a repayment schedule, often deducted from their salary over a period of 3-5 years. Should the pilot leave the airline before the bond is fully repaid, they are liable for the remaining balance. Airlines such as Jet2, Loganair, Emerald Airways, and Aurigny have been known to offer training bonds, providing a more accessible route for pilots to enter airline operations without immediate, large out-of-pocket expenses.
               </p>
               <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
-                    <tr>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aircraft Type</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estimated Cost (GBP)</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Common UK Airlines</th>
+                <table className="w-full text-sm text-left border-collapse">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="px-4 py-3 text-white/70 font-semibold">Aircraft Type</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Estimated Cost (GBP)</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Common UK Airlines</th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Airbus A320 Family</td>
-                      <td className="px-6 py-4 whitespace-nowrap">£20,000 - £30,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap">easyJet, British Airways, Jet2, Wizz Air UK</td>
+                  <tbody>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 font-medium text-white">Airbus A320 Family</td>
+                      <td className="px-4 py-3 text-white/80">£20,000–£30,000</td>
+                      <td className="px-4 py-3 text-white/80">easyJet, British Airways, Jet2, Wizz Air UK</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Boeing 737 Family</td>
-                      <td className="px-6 py-4 whitespace-nowrap">£22,000 - £35,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap">Ryanair, Jet2, TUI Airways, Norwegian Air UK</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 font-medium text-white">Boeing 737 Family</td>
+                      <td className="px-4 py-3 text-white/80">£22,000–£35,000</td>
+                      <td className="px-4 py-3 text-white/80">Ryanair, Jet2, TUI Airways</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Embraer 170/190</td>
-                      <td className="px-6 py-4 whitespace-nowrap">£18,000 - £28,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap">Loganair, BA CityFlyer</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 font-medium text-white">Embraer 170/190</td>
+                      <td className="px-4 py-3 text-white/80">£18,000–£28,000</td>
+                      <td className="px-4 py-3 text-white/80">Loganair, BA CityFlyer</td>
                     </tr>
                   </tbody>
                 </table>
@@ -134,7 +134,7 @@ const FirstOfficerUK = () => {
           content: (
             <>
               <p>
-                The salary for a First Officer in the UK is a significant consideration for those entering the profession. Entry-level salaries for new First Officers typically range from £35,000 to £60,000 per annum for short-haul operations on aircraft like the Airbus A320 or Boeing 737. For those flying long-haul routes on larger aircraft such as the Airbus A330 or Boeing 787, starting salaries can be higher, often beginning at £55,000 and potentially reaching £75,000 or more with some experience. These figures are influenced by the airline's pay scales, the aircraft type, and the number of flying hours.
+                The salary for a First Officer in the UK is a significant consideration for those entering the profession. Entry-level salaries for new First Officers in 2026 typically range from £65,000 to £100,000 per annum for short-haul operations (easyJet, Ryanair, Jet2), including sector pay and allowances. For long-haul operations at British Airways or Virgin Atlantic, starting salaries for new FOs begin at £70,000–£90,000 and rise significantly with seniority. These figures are influenced by the airline's pay scales, the aircraft type, and the number of flying hours.
               </p>
               <p>
                 Salary progression is generally structured, with annual increments based on experience, flight hours, and seniority within the airline. Over time, a First Officer's salary can increase substantially, reflecting their growing expertise and contribution. Beyond the basic salary, First Officers typically receive a comprehensive benefits package. This often includes loss of license insurance, which provides financial protection in case a pilot loses their medical certificate, as well as robust pension contributions, private health benefits, and attractive travel perks for themselves and their families.

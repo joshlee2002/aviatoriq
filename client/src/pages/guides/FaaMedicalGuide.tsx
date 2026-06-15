@@ -25,7 +25,7 @@ export default function FaaMedicalGuide() {
               <div className="overflow-x-auto mt-2">
                 <table className="w-full text-sm border-collapse">
                   <thead>
-                    <tr style={{ background: "oklch(0.2 0.08 250)" }}>
+                    <tr style={{ background: "rgba(30, 40, 70, 0.9)" }}>
                       <th className="text-left p-3 text-white">Class</th>
                       <th className="text-left p-3 text-white">Required for</th>
                       <th className="text-left p-3 text-white">Validity (under 40)</th>
@@ -38,17 +38,17 @@ export default function FaaMedicalGuide() {
                       ["Second Class", "Commercial Pilot Certificate (CPL) — paid flying, charter, cargo", "12 months", "12 months"],
                       ["Third Class", "Private Pilot Certificate (PPL) — recreational flying only", "60 months (under 40)", "24 months (40+)"],
                     ].map(([cls, req, v1, v2], i) => (
-                      <tr key={i} style={{ background: i % 2 === 0 ? "oklch(0.16 0.06 250)" : "oklch(0.14 0.06 250)" }}>
+                      <tr key={i} style={{ background: i % 2 === 0 ? "rgba(25, 35, 60, 0.8)" : "rgba(20, 30, 55, 0.7)" }}>
                         <td className="p-3 font-medium text-white">{cls}</td>
-                        <td className="p-3" style={{ color: "oklch(0.75 0.04 240)" }}>{req}</td>
-                        <td className="p-3" style={{ color: "oklch(0.75 0.04 240)" }}>{v1}</td>
-                        <td className="p-3" style={{ color: "oklch(0.75 0.04 240)" }}>{v2}</td>
+                        <td className="p-3" style={{ color: "rgba(255, 255, 255, 0.8)" }}>{req}</td>
+                        <td className="p-3" style={{ color: "rgba(255, 255, 255, 0.8)" }}>{v1}</td>
+                        <td className="p-3" style={{ color: "rgba(255, 255, 255, 0.8)" }}>{v2}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
-              <p className="mt-4 text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>
+              <p className="mt-4 text-sm" style={{ color: "rgba(255, 255, 255, 0.7)" }}>
                 Note: A First Class medical is valid as a Second Class for 12 months and as a Third Class for 60 months (under 40) or 24 months (40+). Most aspiring airline pilots obtain a First Class from the start.
               </p>
             </div>
@@ -61,9 +61,9 @@ export default function FaaMedicalGuide() {
               <p className="mb-4">
                 Before you see an Aviation Medical Examiner (AME), you must complete FAA Form 8500-8 on the FAA's online MedXPress system. This generates a confirmation code you give to the AME at your appointment.
               </p>
-              <div className="p-4 rounded-xl mb-4" style={{ background: "oklch(0.6 0.18 30 / 0.12)", border: "1px solid oklch(0.6 0.18 30 / 0.3)" }}>
+              <div className="p-4 rounded-xl mb-4" style={{ background: "rgba(220, 120, 50, 0.12)", border: "1px solid rgba(255, 255, 255, 0.1)" }}>
                 <p className="font-semibold text-white mb-2">⚠️ Critical warning before you submit</p>
-                <p className="text-sm" style={{ color: "oklch(0.75 0.04 240)" }}>
+                <p className="text-sm" style={{ color: "rgba(255, 255, 255, 0.8)" }}>
                   MedXPress is a legal document. Omitting or falsifying medical history is a federal crime under 18 U.S.C. § 1001, punishable by fines, imprisonment, and permanent revocation of all pilot certificates. The FAA cross-references applications with the National Driver Register, VA disability records, and Social Security Administration records. <strong className="text-white">Do not lie or omit anything.</strong>
                 </p>
               </div>
@@ -103,9 +103,9 @@ export default function FaaMedicalGuide() {
                     detail: "History of epilepsy or unexplained disturbance of consciousness is disqualifying. ADHD is assessed case by case — see below. Stroke history requires a Special Issuance.",
                   },
                 ].map(({ area, detail }) => (
-                  <div key={area} className="p-4 rounded-lg" style={{ background: "oklch(0.16 0.06 250)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
+                  <div key={area} className="p-4 rounded-lg" style={{ background: "rgba(25, 35, 60, 0.8)", border: "1px solid rgba(255, 255, 255, 0.1)" }}>
                     <p className="font-semibold text-white mb-1">{area}</p>
-                    <p className="text-sm" style={{ color: "oklch(0.75 0.04 240)" }}>{detail}</p>
+                    <p className="text-sm" style={{ color: "rgba(255, 255, 255, 0.8)" }}>{detail}</p>
                   </div>
                 ))}
               </div>
@@ -125,7 +125,7 @@ export default function FaaMedicalGuide() {
               <p className="mb-4">
                 However, a diagnosis of ADHD does not automatically disqualify you. The FAA's position (as of 2026) is that ADHD can be compatible with certification if:
               </p>
-              <ul className="space-y-2 mb-4 text-sm" style={{ color: "oklch(0.75 0.04 240)" }}>
+              <ul className="space-y-2 mb-4 text-sm" style={{ color: "rgba(255, 255, 255, 0.8)" }}>
                 {[
                   "You have been off all stimulant medication for a minimum of 90 days",
                   "You undergo a comprehensive neuropsychological evaluation (cost: $3,000–$5,000) demonstrating no significant cognitive impairment",
@@ -133,7 +133,7 @@ export default function FaaMedicalGuide() {
                   "You are granted a Special Issuance, which must be renewed annually with updated evaluations",
                 ].map((item) => (
                   <li key={item} className="flex gap-2">
-                    <span className="mt-0.5 flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }}>→</span>
+                    <span className="mt-0.5 flex-shrink-0" style={{ color: "rgba(255, 255, 255, 0.75)" }}>→</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -141,7 +141,7 @@ export default function FaaMedicalGuide() {
               <p className="mb-4">
                 The process is expensive, time-consuming, and not guaranteed. Many applicants with ADHD history are ultimately granted a Special Issuance, but the process typically takes 6–18 months. If you have a history of ADHD, consult a HIMS AME before doing anything else.
               </p>
-              <p className="text-sm p-3 rounded-lg" style={{ background: "oklch(0.45 0.18 240 / 0.1)", border: "1px solid oklch(0.45 0.18 240 / 0.2)", color: "oklch(0.75 0.04 240)" }}>
+              <p className="text-sm p-3 rounded-lg" style={{ background: "rgba(255, 255, 255, 0.5)", border: "1px solid rgba(255, 255, 255, 0.1)", color: "rgba(255, 255, 255, 0.8)" }}>
                 Use our <strong className="text-white">US Medical Condition Lookup</strong> tool to check your specific condition against FAA standards.
               </p>
             </div>
@@ -160,7 +160,7 @@ export default function FaaMedicalGuide() {
               <p className="mb-4">
                 To qualify for the SSRI Special Issuance, you must:
               </p>
-              <ul className="space-y-2 mb-4 text-sm" style={{ color: "oklch(0.75 0.04 240)" }}>
+              <ul className="space-y-2 mb-4 text-sm" style={{ color: "rgba(255, 255, 255, 0.8)" }}>
                 {[
                   "Have been on a stable dose of one of the four approved SSRIs for at least 6 months",
                   "Have no history of psychosis, mania, or suicidal ideation",
@@ -169,7 +169,7 @@ export default function FaaMedicalGuide() {
                   "Renew the Special Issuance annually with updated psychiatric evaluation",
                 ].map((item) => (
                   <li key={item} className="flex gap-2">
-                    <span className="mt-0.5 flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }}>→</span>
+                    <span className="mt-0.5 flex-shrink-0" style={{ color: "rgba(255, 255, 255, 0.75)" }}>→</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -193,9 +193,9 @@ export default function FaaMedicalGuide() {
               <p className="mb-4">
                 Special Issuances must be renewed periodically (usually annually) and require you to submit updated medical records to maintain the certificate. They are not permanent — if your condition changes, the FAA can revoke the Special Issuance.
               </p>
-              <div className="p-4 rounded-xl" style={{ background: "oklch(0.55 0.18 145 / 0.1)", border: "1px solid oklch(0.55 0.18 145 / 0.25)" }}>
+              <div className="p-4 rounded-xl" style={{ background: "rgba(50, 180, 100, 0.1)", border: "1px solid rgba(255, 255, 255, 0.1)" }}>
                 <p className="font-semibold text-white mb-2">The key takeaway</p>
-                <p className="text-sm" style={{ color: "oklch(0.75 0.04 240)" }}>
+                <p className="text-sm" style={{ color: "rgba(255, 255, 255, 0.8)" }}>
                   Having a medical condition does not automatically end your pilot career ambitions. The FAA's Special Issuance process exists precisely to evaluate complex cases individually. The critical mistake is submitting an official MedXPress application without first understanding how your specific history will be assessed. Always consult a HIMS AME privately before applying.
                 </p>
               </div>

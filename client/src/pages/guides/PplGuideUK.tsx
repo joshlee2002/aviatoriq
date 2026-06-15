@@ -79,54 +79,54 @@ const PplGuideUK = () => {
               <p>
                 Here's an estimated breakdown of typical PPL costs in the UK for 2026:
               </p>
-              <table className="min-w-full divide-y divide-gray-200">
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr>
-                    <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Expense Category</th>
-                    <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estimated Cost (GBP)</th>
-                    <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Notes</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (GBP)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
+                <tbody>
                   <tr>
-                    <td className="px-6 py-4 whitespace-nowrap">Flight Instruction (55 hours @ £250/hr aircraft + instructor)</td>
-                    <td className="px-6 py-4 whitespace-nowrap">£13,750 - £17,325</td>
-                    <td className="px-6 py-4 whitespace-nowrap">Includes aircraft rental and instructor fees. Assumes 55 hours, not minimum 45.</td>
+                    <td className="px-4 py-3 text-white/80">Flight Instruction (55 hours @ £250/hr aircraft + instructor)</td>
+                    <td className="px-4 py-3 text-white/80">£13,750 - £17,325</td>
+                    <td className="px-4 py-3 text-white/80">Includes aircraft rental and instructor fees. Assumes 55 hours, not minimum 45.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 whitespace-nowrap">Theoretical Knowledge Course & Materials</td>
-                    <td className="px-6 py-4 whitespace-nowrap">£500 - £1,000</td>
-                    <td className="px-6 py-4 whitespace-nowrap">Online courses, textbooks, study guides.</td>
+                    <td className="px-4 py-3 text-white/80">Theoretical Knowledge Course & Materials</td>
+                    <td className="px-4 py-3 text-white/80">£500 - £1,000</td>
+                    <td className="px-4 py-3 text-white/80">Online courses, textbooks, study guides.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 whitespace-nowrap">Theory Exams (9 subjects @ approx. £70 each)</td>
-                    <td className="px-6 py-4 whitespace-nowrap">£630</td>
-                    <td className="px-6 py-4 whitespace-nowrap">UK CAA exam fees.</td>
+                    <td className="px-4 py-3 text-white/80">Theory Exams (9 subjects @ approx. £70 each)</td>
+                    <td className="px-4 py-3 text-white/80">£630</td>
+                    <td className="px-4 py-3 text-white/80">UK CAA exam fees.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 whitespace-nowrap">Class 2 Medical Certificate</td>
-                    <td className="px-6 py-4 whitespace-nowrap">£150 - £250</td>
-                    <td className="px-6 py-4 whitespace-nowrap">Initial examination cost.</td>
+                    <td className="px-4 py-3 text-white/80">Class 2 Medical Certificate</td>
+                    <td className="px-4 py-3 text-white/80">£150 - £250</td>
+                    <td className="px-4 py-3 text-white/80">Initial examination cost.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 whitespace-nowrap">Skill Test Examiner Fee</td>
-                    <td className="px-6 py-4 whitespace-nowrap">£250 - £400</td>
-                    <td className="px-6 py-4 whitespace-nowrap">Fee for the practical flight test examiner.</td>
+                    <td className="px-4 py-3 text-white/80">Skill Test Examiner Fee</td>
+                    <td className="px-4 py-3 text-white/80">£250 - £400</td>
+                    <td className="px-4 py-3 text-white/80">Fee for the practical flight test examiner.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 whitespace-nowrap">Licence Application Fee</td>
-                    <td className="px-6 py-4 whitespace-nowrap">£150 - £200</td>
-                    <td className="px-6 py-4 whitespace-nowrap">Fee paid to the CAA for licence issuance.</td>
+                    <td className="px-4 py-3 text-white/80">Licence Application Fee</td>
+                    <td className="px-4 py-3 text-white/80">£150 - £200</td>
+                    <td className="px-4 py-3 text-white/80">Fee paid to the CAA for licence issuance.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 whitespace-nowrap">Headset, Navigation Equipment, Uniform (Optional)</td>
-                    <td className="px-6 py-4 whitespace-nowrap">£500 - £1,500</td>
-                    <td className="px-6 py-4 whitespace-nowrap">Essential gear for training.</td>
+                    <td className="px-4 py-3 text-white/80">Headset, Navigation Equipment, Uniform (Optional)</td>
+                    <td className="px-4 py-3 text-white/80">£500 - £1,500</td>
+                    <td className="px-4 py-3 text-white/80">Essential gear for training.</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 whitespace-nowrap font-bold">Total Estimated Cost</td>
-                    <td className="px-6 py-4 whitespace-nowrap font-bold">£16,000 - £21,000</td>
-                    <td className="px-6 py-4 whitespace-nowrap"></td>
+                    <td className="px-4 py-3 font-bold text-white">Total Estimated Cost</td>
+                    <td className="px-4 py-3 font-bold text-white">£16,000 - £21,000</td>
+                    <td className="px-4 py-3 text-white/80"></td>
                   </tr>
                 </tbody>
               </table>

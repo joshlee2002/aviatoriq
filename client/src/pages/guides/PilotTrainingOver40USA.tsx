@@ -42,39 +42,39 @@ export default function PilotTrainingOver40USA() {
                 Here's a realistic breakdown of the typical timeline for each stage:
               </p>
               <div className="overflow-x-auto mb-4">
-                <table className="min-w-full bg-oklch(0.14 0.06 250) rounded-lg shadow-md">
+                <table className="w-full text-sm text-left border-collapse">
                   <thead>
                     <tr>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Certificate/Rating</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Typical Duration</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Typical Flight Hours</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Certificate/Rating</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Typical Duration</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Typical Flight Hours</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Private Pilot License (PPL)</td>
-                      <td className="border px-4 py-2">3-4 months</td>
-                      <td className="border px-4 py-2">50-80 hours (FAA minimum 40) [3]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Private Pilot License (PPL)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">3-4 months</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">50-80 hours (FAA minimum 40) [3]</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Instrument Rating (IR)</td>
-                      <td className="border px-4 py-2">2-3 months</td>
-                      <td className="border px-4 py-2">40-60 hours (FAA minimum 35)</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Instrument Rating (IR)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">2-3 months</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">40-60 hours (FAA minimum 35)</td>
                     </tr>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Commercial Pilot Certificate (CPL)</td>
-                      <td className="border px-4 py-2">3-5 months</td>
-                      <td className="border px-4 py-2">120-150 hours (FAA minimum 120 for Part 141, 250 for Part 61)</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Commercial Pilot Certificate (CPL)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">3-5 months</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">120-150 hours (FAA minimum 120 for Part 141, 250 for Part 61)</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Multi-Engine Rating (MEL)</td>
-                      <td className="border px-4 py-2">2-4 weeks</td>
-                      <td className="border px-4 py-2">10-15 hours</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Multi-Engine Rating (MEL)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">2-4 weeks</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">10-15 hours</td>
                     </tr>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Certified Flight Instructor (CFI)</td>
-                      <td className="border px-4 py-2">2-3 months</td>
-                      <td className="border px-4 py-2">20-30 hours (instructional)</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Certified Flight Instructor (CFI)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">2-3 months</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">20-30 hours (instructional)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -99,59 +99,59 @@ export default function PilotTrainingOver40USA() {
                 The largest cost drivers are aircraft rental and instructor time. Many schools offer fixed-price programs, which can provide more predictability, while others operate on a pay-as-you-go model. For career-track students, a comprehensive program typically includes Private Pilot, Instrument Rating, Commercial Pilot, Multi-Engine, and Flight Instructor ratings.
               </p>
               <div className="overflow-x-auto mb-4">
-                <table className="min-w-full bg-oklch(0.14 0.06 250) rounded-lg shadow-md">
+                <table className="w-full text-sm text-left border-collapse">
                   <thead>
                     <tr>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Expense Category</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Typical Cost (USD)</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Notes</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Expense Category</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Typical Cost (USD)</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Notes</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Private Pilot License (PPL)</td>
-                      <td className="border px-4 py-2">$15,000 - $36,000</td>
-                      <td className="border px-4 py-2">Includes aircraft rental, instructor, ground school, exams [1] [4]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Private Pilot License (PPL)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$15,000 - $36,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Includes aircraft rental, instructor, ground school, exams [1] [4]</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Instrument Rating (IR)</td>
-                      <td className="border px-4 py-2">$10,000 - $17,000</td>
-                      <td className="border px-4 py-2">Adds ability to fly in low visibility conditions [1]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Instrument Rating (IR)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$10,000 - $17,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Adds ability to fly in low visibility conditions [1]</td>
                     </tr>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Commercial Pilot Certificate (CPL)</td>
-                      <td className="border px-4 py-2">$20,000 - $30,000</td>
-                      <td className="border px-4 py-2">Required for paid flying, includes flight hours [1]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Commercial Pilot Certificate (CPL)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$20,000 - $30,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Required for paid flying, includes flight hours [1]</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Multi-Engine Rating (MEL)</td>
-                      <td className="border px-4 py-2">$5,000 - $12,000</td>
-                      <td className="border px-4 py-2">Necessary for multi-engine aircraft operations [1]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Multi-Engine Rating (MEL)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$5,000 - $12,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Necessary for multi-engine aircraft operations [1]</td>
                     </tr>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Certified Flight Instructor (CFI)</td>
-                      <td className="border px-4 py-2">$10,000 - $15,000</td>
-                      <td className="border px-4 py-2">Allows earning money while building flight hours [1]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Certified Flight Instructor (CFI)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$10,000 - $15,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Allows earning money while building flight hours [1]</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Airline Transport Pilot (ATP) CTP</td>
-                      <td className="border px-4 py-2">$5,000 - $8,000</td>
-                      <td className="border px-4 py-2">Required for airline pilots, often covered by airlines [1]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Airline Transport Pilot (ATP) CTP</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$5,000 - $8,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Required for airline pilots, often covered by airlines [1]</td>
                     </tr>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">FAA Exams & Checkrides</td>
-                      <td className="border px-4 py-2">$1,000 - $2,000 per exam/checkride</td>
-                      <td className="border px-4 py-2">Written tests and practical exams (DPE fees) [4]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">FAA Exams & Checkrides</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$1,000 - $2,000 per exam/checkride</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Written tests and practical exams (DPE fees) [4]</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Medical Certificates</td>
-                      <td className="border px-4 py-2">$100 - $200 per exam</td>
-                      <td className="border px-4 py-2">Required periodically, varies by class [4]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Medical Certificates</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$100 - $200 per exam</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Required periodically, varies by class [4]</td>
                     </tr>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Pilot Supplies (Headset, etc.)</td>
-                      <td className="border px-4 py-2">$500 - $1,500</td>
-                      <td className="border px-4 py-2">Essential gear for training and flying [4]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Pilot Supplies (Headset, etc.)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$500 - $1,500</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Essential gear for training and flying [4]</td>
                     </tr>
                   </tbody>
                 </table>
@@ -176,33 +176,33 @@ export default function PilotTrainingOver40USA() {
                 There are three classes of FAA medical certificates: First, Second, and Third Class, each corresponding to different levels of piloting privileges. For career changers aiming for commercial pilot roles, a First or Second Class medical will eventually be required. However, a Third Class medical is sufficient to begin flight training and fly solo. The validity period of these certificates changes once you turn 40.
               </p>
               <div className="overflow-x-auto mb-4">
-                <table className="min-w-full bg-oklch(0.14 0.06 250) rounded-lg shadow-md">
+                <table className="w-full text-sm text-left border-collapse">
                   <thead>
                     <tr>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Medical Certificate Class</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Privileges</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Under Age 40 Validity</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Age 40 and Over Validity</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Medical Certificate Class</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Privileges</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Under Age 40 Validity</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Age 40 and Over Validity</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">First-Class</td>
-                      <td className="border px-4 py-2">Airline Transport Pilot (ATP)</td>
-                      <td className="border px-4 py-2">12 Months</td>
-                      <td className="border px-4 py-2">6 Months [6]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">First-Class</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Airline Transport Pilot (ATP)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">12 Months</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">6 Months [6]</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Second-Class</td>
-                      <td className="border px-4 py-2">Commercial Pilot</td>
-                      <td className="border px-4 py-2">12 Months</td>
-                      <td className="border px-4 py-2">12 Months [6]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Second-Class</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Commercial Pilot</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">12 Months</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">12 Months [6]</td>
                     </tr>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Third-Class</td>
-                      <td className="border px-4 py-2">Private Pilot, Recreational Pilot, Student Pilot</td>
-                      <td className="border px-4 py-2">60 Months</td>
-                      <td className="border px-4 py-2">24 Months [6]</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Third-Class</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Private Pilot, Recreational Pilot, Student Pilot</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">60 Months</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">24 Months [6]</td>
                     </tr>
                   </tbody>
                 </table>
@@ -259,44 +259,44 @@ export default function PilotTrainingOver40USA() {
                 **Comparison of Funding Options:**
               </p>
               <div className="overflow-x-auto mb-4">
-                <table className="min-w-full bg-oklch(0.14 0.06 250) rounded-lg shadow-md">
+                <table className="w-full text-sm text-left border-collapse">
                   <thead>
                     <tr>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Funding Option</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Pros</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Cons</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Funding Option</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Pros</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Cons</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Traditional Student Loans (e.g., Sallie Mae)</td>
-                      <td className="border px-4 py-2">Can cover full cost, competitive rates, structured repayment</td>
-                      <td className="border px-4 py-2">Requires good credit, accrues interest, long-term commitment</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Traditional Student Loans (e.g., Sallie Mae)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Can cover full cost, competitive rates, structured repayment</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Requires good credit, accrues interest, long-term commitment</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Private Aviation Loans</td>
-                      <td className="border px-4 py-2">Tailored for flight training, potentially higher limits</td>
-                      <td className="border px-4 py-2">May have higher interest rates, specific eligibility criteria</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Private Aviation Loans</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Tailored for flight training, potentially higher limits</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">May have higher interest rates, specific eligibility criteria</td>
                     </tr>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Personal Savings/Investments</td>
-                      <td className="border px-4 py-2">No debt, immediate access to funds</td>
-                      <td className="border px-4 py-2">Depletes assets, potential tax implications, risk of market fluctuations</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Personal Savings/Investments</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">No debt, immediate access to funds</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Depletes assets, potential tax implications, risk of market fluctuations</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Scholarships and Grants</td>
-                      <td className="border px-4 py-2">Free money, no repayment required</td>
-                      <td className="border px-4 py-2">Highly competitive, limited availability, time-consuming application process</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Scholarships and Grants</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Free money, no repayment required</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Highly competitive, limited availability, time-consuming application process</td>
                     </tr>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">GI Bill Benefits</td>
-                      <td className="border px-4 py-2">Significant coverage for veterans, housing allowance</td>
-                      <td className="border px-4 py-2">Only for eligible veterans, specific program approval required</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">GI Bill Benefits</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Significant coverage for veterans, housing allowance</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Only for eligible veterans, specific program approval required</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Part-Time Training/Continued Employment</td>
-                      <td className="border px-4 py-2">Maintains income, reduces immediate financial strain</td>
-                      <td className="border px-4 py-2">Longer training timeline, potential for increased overall cost due to review</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Part-Time Training/Continued Employment</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Maintains income, reduces immediate financial strain</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Longer training timeline, potential for increased overall cost due to review</td>
                     </tr>
                   </tbody>
                 </table>
@@ -333,39 +333,39 @@ export default function PilotTrainingOver40USA() {
                 **Comparison of Pilot Career Paths (Beyond Major Airlines) - 2026 Data:**
               </p>
               <div className="overflow-x-auto mb-4">
-                <table className="min-w-full bg-oklch(0.14 0.06 250) rounded-lg shadow-md">
+                <table className="w-full text-sm text-left border-collapse">
                   <thead>
                     <tr>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Career Path</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Typical Salary Range (USD, 2026)</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Lifestyle/Work-Life Balance</th>
-                      <th className="px-4 py-2 text-left bg-oklch(0.2 0.08 250) text-white">Pros for Over 40</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Career Path</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Typical Salary Range (USD, 2026)</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Lifestyle/Work-Life Balance</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold">Pros for Over 40</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Corporate/Business Aviation</td>
-                      <td className="border px-4 py-2">$80,000 - $200,000+</td>
-                      <td className="border px-4 py-2">More consistent schedules, less overnight, varied flying</td>
-                      <td className="border px-4 py-2">Leverages professional experience, better work-life balance</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Corporate/Business Aviation</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$80,000 - $200,000+</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">More consistent schedules, less overnight, varied flying</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Leverages professional experience, better work-life balance</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Cargo Aviation</td>
-                      <td className="border px-4 py-2">$70,000 - $450,000+ (Captain) [9]</td>
-                      <td className="border px-4 py-2">Predictable schedules, often night flying, stable</td>
-                      <td className="border px-4 py-2">High earning potential, stable career, less passenger interaction</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Cargo Aviation</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$70,000 - $450,000+ (Captain) [9]</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Predictable schedules, often night flying, stable</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">High earning potential, stable career, less passenger interaction</td>
                     </tr>
-                    <tr className="bg-oklch(0.16 0.06 250)">
-                      <td className="border px-4 py-2">Flight Instruction (CFI)</td>
-                      <td className="border px-4 py-2">$30,000 - $70,000+</td>
-                      <td className="border px-4 py-2">Flexible hours, local flying, teaching role</td>
-                      <td className="border px-4 py-2">Builds hours, rewarding mentorship, good for balancing commitments</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Flight Instruction (CFI)</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$30,000 - $70,000+</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Flexible hours, local flying, teaching role</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Builds hours, rewarding mentorship, good for balancing commitments</td>
                     </tr>
-                    <tr className="bg-oklch(0.14 0.06 250)">
-                      <td className="border px-4 py-2">Charter Operations</td>
-                      <td className="border px-4 py-2">$60,000 - $180,000+</td>
-                      <td className="border px-4 py-2">Varied assignments, on-demand, can be less predictable</td>
-                      <td className="border px-4 py-2">Diverse flying, values experience, good earning potential</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Charter Operations</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$60,000 - $180,000+</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Varied assignments, on-demand, can be less predictable</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">Diverse flying, values experience, good earning potential</td>
                     </tr>
                   </tbody>
                 </table>

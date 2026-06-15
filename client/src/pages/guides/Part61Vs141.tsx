@@ -31,7 +31,7 @@ export default function Part61Vs141() {
               <div className="overflow-x-auto mt-4">
                 <table className="w-full text-sm border-collapse">
                   <thead>
-                    <tr style={{ background: "oklch(0.2 0.08 250)" }}>
+                    <tr style={{ background: "rgba(30, 40, 70, 0.9)" }}>
                       <th className="text-left p-3 text-white">Factor</th>
                       <th className="text-left p-3 text-white">Part 61</th>
                       <th className="text-left p-3 text-white">Part 141</th>
@@ -47,10 +47,10 @@ export default function Part61Vs141() {
                       ["R-ATP eligibility (university)", "Not eligible", "Yes — 1,000 hrs with 4-yr AABI degree"],
                       ["Financing options", "Limited — few lenders cover Part 61", "Sallie Mae, AOPA Finance, GI Bill eligible"],
                     ].map(([factor, p61, p141], i) => (
-                      <tr key={i} style={{ background: i % 2 === 0 ? "oklch(0.16 0.06 250)" : "oklch(0.14 0.06 250)" }}>
+                      <tr key={i} style={{ background: i % 2 === 0 ? "rgba(25, 35, 60, 0.8)" : "rgba(20, 30, 55, 0.7)" }}>
                         <td className="p-3 font-medium text-white">{factor}</td>
-                        <td className="p-3" style={{ color: "oklch(0.75 0.04 240)" }}>{p61}</td>
-                        <td className="p-3" style={{ color: "oklch(0.75 0.04 240)" }}>{p141}</td>
+                        <td className="p-3" style={{ color: "rgba(255, 255, 255, 0.8)" }}>{p61}</td>
+                        <td className="p-3" style={{ color: "rgba(255, 255, 255, 0.8)" }}>{p141}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -85,7 +85,7 @@ export default function Part61Vs141() {
               <div className="overflow-x-auto mt-2 mb-4">
                 <table className="w-full text-sm border-collapse">
                   <thead>
-                    <tr style={{ background: "oklch(0.2 0.08 250)" }}>
+                    <tr style={{ background: "rgba(30, 40, 70, 0.9)" }}>
                       <th className="text-left p-3 text-white">Certificate / Rating</th>
                       <th className="text-left p-3 text-white">Part 61 typical cost</th>
                       <th className="text-left p-3 text-white">Part 141 typical cost</th>
@@ -100,10 +100,10 @@ export default function Part61Vs141() {
                       ["Zero to CPL + CFI total", "$50,000–$80,000", "$45,000–$70,000"],
                       ["Full ATP pipeline (zero to 1,500 hrs)", "$100,000–$130,000", "$100,000–$125,000"],
                     ].map(([cert, p61, p141], i) => (
-                      <tr key={i} style={{ background: i % 2 === 0 ? "oklch(0.16 0.06 250)" : "oklch(0.14 0.06 250)" }}>
+                      <tr key={i} style={{ background: i % 2 === 0 ? "rgba(25, 35, 60, 0.8)" : "rgba(20, 30, 55, 0.7)" }}>
                         <td className="p-3 font-medium text-white">{cert}</td>
-                        <td className="p-3" style={{ color: "oklch(0.75 0.04 240)" }}>{p61}</td>
-                        <td className="p-3" style={{ color: "oklch(0.75 0.04 240)" }}>{p141}</td>
+                        <td className="p-3" style={{ color: "rgba(255, 255, 255, 0.8)" }}>{p61}</td>
+                        <td className="p-3" style={{ color: "rgba(255, 255, 255, 0.8)" }}>{p141}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -144,9 +144,9 @@ export default function Part61Vs141() {
                     detail: "Operated through ATP Flight School (Part 141). Application window closed for 2026 enrollment; next window expected early 2027. Graduates receive a Conditional Job Offer (CJO) for American Airlines.",
                   },
                 ].map(({ prog, detail }) => (
-                  <div key={prog} className="p-4 rounded-lg" style={{ background: "oklch(0.16 0.06 250)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
+                  <div key={prog} className="p-4 rounded-lg" style={{ background: "rgba(25, 35, 60, 0.8)", border: "1px solid rgba(255, 255, 255, 0.1)" }}>
                     <p className="font-semibold text-white mb-1">{prog}</p>
-                    <p className="text-sm" style={{ color: "oklch(0.75 0.04 240)" }}>{detail}</p>
+                    <p className="text-sm" style={{ color: "rgba(255, 255, 255, 0.8)" }}>{detail}</p>
                   </div>
                 ))}
               </div>
@@ -174,8 +174,8 @@ export default function Part61Vs141() {
                       "You prefer structured, scheduled training with a defined daily syllabus",
                       "You want to train full-time and reach the airlines as fast as possible",
                     ],
-                    color: "oklch(0.55 0.18 145 / 0.12)",
-                    borderColor: "oklch(0.55 0.18 145 / 0.3)",
+                    color: "rgba(255, 255, 255, 0.1)",
+                    borderColor: "rgba(255, 255, 255, 0.1)",
                   },
                   {
                     label: "Choose Part 61 if:",
@@ -186,16 +186,16 @@ export default function Part61Vs141() {
                       "You are building hours for corporate, charter, or general aviation rather than a major airline",
                       "You have a specific CFI you want to train with who doesn't operate under Part 141",
                     ],
-                    color: "oklch(0.45 0.18 240 / 0.1)",
-                    borderColor: "oklch(0.45 0.18 240 / 0.25)",
+                    color: "rgba(255, 255, 255, 0.5)",
+                    borderColor: "rgba(255, 255, 255, 0.5)",
                   },
                 ].map(({ label, items, color, borderColor }) => (
                   <div key={label} className="p-4 rounded-xl" style={{ background: color, border: `1px solid ${borderColor}` }}>
                     <p className="font-semibold text-white mb-3">{label}</p>
                     <ul className="space-y-2">
                       {items.map((item) => (
-                        <li key={item} className="flex gap-2 text-sm" style={{ color: "oklch(0.75 0.04 240)" }}>
-                          <span className="mt-0.5 flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }}>✓</span>
+                        <li key={item} className="flex gap-2 text-sm" style={{ color: "rgba(255, 255, 255, 0.8)" }}>
+                          <span className="mt-0.5 flex-shrink-0" style={{ color: "rgba(255, 255, 255, 0.75)" }}>✓</span>
                           <span>{item}</span>
                         </li>
                       ))}

@@ -25,8 +25,8 @@ export default function AmITooOldUSA() {
               <p className="mb-4">
                 For career changers, this regulatory framework provides immense flexibility. Even if you begin your journey at 50, you can realistically achieve your Airline Transport Pilot (ATP) certificate by 53, fly for a regional or major airline for 12 years, and then continue earning a lucrative income as a corporate pilot or simulator instructor well into your 70s. The current pilot shortage in 2026 has forced airlines to aggressively recruit pilots of all ages, making this the most welcoming era in aviation history for mature candidates.
               </p>
-              <div className="p-6 rounded-lg mb-6" style={{ backgroundColor: "oklch(0.55 0.18 145 / 0.08)", border: "1px solid oklch(0.55 0.18 145 / 0.2)" }}>
-                <h3 className="text-xl font-bold mb-2" style={{ color: "oklch(0.72 0.18 65)" }}>2026 Regulatory Update</h3>
+              <div className="p-6 rounded-lg mb-6 bg-white/5 border border-white/20">
+                <h3 className="text-xl font-bold mb-2 text-white/80">2026 Regulatory Update</h3>
                 <p>
                   While there have been legislative discussions regarding raising the Part 121 retirement age to 67, the FAA mandate remains firmly at 65 as of 2026. Prospective pilots should base their financial and career planning on the age 65 retirement rule for major airlines, while keeping Part 135 and Part 91 opportunities in mind for post-65 flying.
                 </p>
@@ -94,7 +94,7 @@ export default function AmITooOldUSA() {
               <div className="overflow-x-auto mb-6">
                 <table className="w-full text-left border-collapse">
                   <thead>
-                    <tr style={{ backgroundColor: "oklch(0.2 0.08 250)", color: "white" }}>
+                    <tr className="bg-white/10">
                       <th className="p-3 border border-gray-600">Starting Age</th>
                       <th className="p-3 border border-gray-600">Time to 1,500 Hours</th>
                       <th className="p-3 border border-gray-600">Years at Airlines (Part 121)</th>
@@ -102,19 +102,19 @@ export default function AmITooOldUSA() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr style={{ backgroundColor: "oklch(0.16 0.06 250)" }}>
+                    <tr className="bg-white/5 border border-white/20">
                       <td className="p-3 border border-gray-700">35 Years Old</td>
                       <td className="p-3 border border-gray-700">2 - 2.5 Years</td>
                       <td className="p-3 border border-gray-700">27.5 Years</td>
                       <td className="p-3 border border-gray-700">$350,000+ (Legacy Captain)</td>
                     </tr>
-                    <tr style={{ backgroundColor: "oklch(0.14 0.06 250)" }}>
+                    <tr className="bg-white/5 border border-white/20">
                       <td className="p-3 border border-gray-700">45 Years Old</td>
                       <td className="p-3 border border-gray-700">2 - 2.5 Years</td>
                       <td className="p-3 border border-gray-700">17.5 Years</td>
                       <td className="p-3 border border-gray-700">$280,000+ (Legacy/Regional Capt)</td>
                     </tr>
-                    <tr style={{ backgroundColor: "oklch(0.16 0.06 250)" }}>
+                    <tr className="bg-white/5 border border-white/20">
                       <td className="p-3 border border-gray-700">55 Years Old</td>
                       <td className="p-3 border border-gray-700">2 - 2.5 Years</td>
                       <td className="p-3 border border-gray-700">7.5 Years</td>
@@ -180,8 +180,8 @@ export default function AmITooOldUSA() {
               <p className="mb-4">
                 <strong>Leverage Your Study Skills:</strong> Where older students truly excel is in the academic portion of flight training. The FAA written exams and oral checkrides require discipline, organization, and deep comprehension of complex systems, weather, and regulations. Use the study habits you developed in college or your previous career to dominate the ground school requirements.
               </p>
-              <div className="p-6 rounded-lg mb-6" style={{ backgroundColor: "oklch(0.45 0.18 240 / 0.1)", border: "1px solid oklch(0.45 0.18 240 / 0.2)" }}>
-                <h3 className="text-xl font-bold mb-2" style={{ color: "oklch(0.72 0.18 65)" }}>Pro Tip for Career Changers</h3>
+              <div className="p-6 rounded-lg mb-6 bg-white/5 border border-white/20">
+                <h3 className="text-xl font-bold mb-2 text-white/80">Pro Tip for Career Changers</h3>
                 <p>
                   Do not quit your day job immediately. Complete your Private Pilot License (PPL) locally on weekends and evenings. This allows you to ensure you actually enjoy flying and possess the aptitude for it before making a massive financial and career commitment. Once you have your PPL, you can confidently transition to a full-time accelerated program for your advanced ratings.
                 </p>

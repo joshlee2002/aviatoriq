@@ -109,28 +109,28 @@ const MccJocUK = () => {
                   </thead>
                   <tbody className="divide-y divide-white/10 text-white/80">
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Standard MCC</td>
-                      <td className="px-6 py-4 whitespace-nowrap">Crew Resource Management, SOPs, Teamwork</td>
-                      <td className="px-6 py-4 whitespace-nowrap">Mandatory for multi-pilot type rating [1]</td>
-                      <td className="px-6 py-4 whitespace-nowrap">20 hours (minimum)</td>
+                      <td className="px-4 py-3 text-white/80">Standard MCC</td>
+                      <td className="px-4 py-3 text-white/80">Crew Resource Management, SOPs, Teamwork</td>
+                      <td className="px-4 py-3 text-white/80">Mandatory for multi-pilot type rating [1]</td>
+                      <td className="px-4 py-3 text-white/80">20 hours (minimum)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">JOC</td>
-                      <td className="px-6 py-4 whitespace-nowrap">Jet aircraft handling, aerodynamics, systems</td>
-                      <td className="px-6 py-4 whitespace-nowrap">Recommended, not mandatory</td>
-                      <td className="px-6 py-4 whitespace-nowrap">8-12 hours (typical)</td>
+                      <td className="px-4 py-3 text-white/80">JOC</td>
+                      <td className="px-4 py-3 text-white/80">Jet aircraft handling, aerodynamics, systems</td>
+                      <td className="px-4 py-3 text-white/80">Recommended, not mandatory</td>
+                      <td className="px-4 py-3 text-white/80">8-12 hours (typical)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Combined MCC/JOC</td>
-                      <td className="px-6 py-4 whitespace-nowrap">Both CRM and jet handling</td>
-                      <td className="px-6 py-4 whitespace-nowrap">MCC part mandatory, JOC part recommended</td>
-                      <td className="px-6 py-4 whitespace-nowrap">30-35 hours (typical)</td>
+                      <td className="px-4 py-3 text-white/80">Combined MCC/JOC</td>
+                      <td className="px-4 py-3 text-white/80">Both CRM and jet handling</td>
+                      <td className="px-4 py-3 text-white/80">MCC part mandatory, JOC part recommended</td>
+                      <td className="px-4 py-3 text-white/80">30-35 hours (typical)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">APS MCC</td>
-                      <td className="px-6 py-4 whitespace-nowrap">Enhanced CRM, advanced jet operations, airline scenarios</td>
-                      <td className="px-6 py-4 whitespace-nowrap">Optional, but preferred by some airlines</td>
-                      <td className="px-6 py-4 whitespace-nowrap">40 hours (minimum) [4]</td>
+                      <td className="px-4 py-3 text-white/80">APS MCC</td>
+                      <td className="px-4 py-3 text-white/80">Enhanced CRM, advanced jet operations, airline scenarios</td>
+                      <td className="px-4 py-3 text-white/80">Optional, but preferred by some airlines</td>
+                      <td className="px-4 py-3 text-white/80">40 hours (minimum) [4]</td>
                     </tr>
                   </tbody>
                 </table>

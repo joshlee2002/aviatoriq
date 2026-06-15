@@ -20,7 +20,7 @@ export default function EasyJetGeneration() {
       faqSchema={[
         { question: "What is the easyJet Generation Pilot Programme?", answer: "The Generation easyJet programme is an ab-initio cadet programme that trains pilots from zero experience to easyJet First Officer via the Multi-Crew Pilot Licence (MPL). Training is conducted at CAE Oxford Aviation Academy. Successful graduates are guaranteed a First Officer position with easyJet." },
         { question: "What is an MPL licence and how is it different from an ATPL?", answer: "An MPL (Multi-Crew Pilot Licence) is an airline-specific licence that trains you for multi-crew jet operations from the start. Unlike an ATPL, the MPL is type-specific — you train on the A320 family simulator from early in the programme. The MPL is only valid for the specific aircraft type and operator, so it ties you to easyJet initially." },
-        { question: "How much does the easyJet Generation programme cost?", answer: "The training cost at CAE Oxford is approximately £99,900. This is self-funded — easyJet does not pay for your training. Finance options are available through CAE and specialist aviation lenders." },
+        { question: "How much does the easyJet Generation programme cost?", answer: "The training cost at CAE Oxford is €102,942 (billed in euros; approximately £87,000–£90,000 at current exchange rates). This is self-funded — easyJet does not pay for your training. Finance options are available through CAE and specialist aviation lenders such as Lendwise. Note that no UK high-street bank currently offers a dedicated pilot training loan (BALPA confirmed 2026)." },
         { question: "Is the MPL licence limiting compared to an ATPL?", answer: "Initially yes — the MPL is type-specific and ties you to easyJet for your first years of employment. However, once you have accumulated sufficient hours on the line, you can convert your MPL to a full ATPL, giving you the same flexibility as any other commercial pilot." },
         { question: "How competitive is the easyJet Generation programme?", answer: "Very competitive, though slightly less so than the BA Speedbird Academy. easyJet takes more cadets per intake (typically 30–50 per year) but still receives thousands of applications. The selection process is rigorous." },
       ]}
@@ -136,16 +136,19 @@ export default function EasyJetGeneration() {
           content: (
             <>
               <p>
-                The Generation easyJet programme costs approximately £99,900 at CAE Oxford. This is self-funded — easyJet does not pay for your training. The cost covers the full MPL programme including all flight training, simulator time, ground school, examinations, and the A320 type rating.
+                The Generation easyJet programme costs €102,942 at CAE Oxford (billed in euros; approximately £87,000–£90,000 at current exchange rates). This is self-funded — easyJet does not pay for your training. The cost covers the full MPL programme including all flight training, simulator time, ground school, examinations, and the A320 type rating.
+              </p>
+              <p>
+                A second pathway was added in 2026 via <strong>Skyborne Airline Academy</strong>, which delivers an ATPL-based (rather than MPL-based) route to easyJet. The Skyborne pathway results in a frozen ATPL rather than an MPL, giving graduates greater licence portability from day one. Pricing for the Skyborne pathway is available directly from Skyborne.
               </p>
               <p>
                 Additional costs to budget for include living expenses during training (approximately £12,000–£18,000 over the training period) and the Class 1 Medical examination (approximately £500–£800 for the initial full assessment).
               </p>
               <p>
-                CAE Oxford offers financing options, and several specialist aviation finance providers (including BBVA, Barclays Partner Finance, and specialist lenders) offer pilot training loans. Interest rates and terms vary — compare carefully and seek independent financial advice before committing. The guaranteed job offer at the end of the programme significantly improves the risk profile of this investment compared to self-sponsored training.
+                CAE Oxford offers financing options, and specialist aviation lenders such as Lendwise offer pilot training loans. Note that as of 2026, no UK high-street bank offers a dedicated pilot training loan product — BALPA has confirmed this. Interest rates and terms vary — compare carefully and seek independent financial advice before committing. The guaranteed job offer at the end of the programme significantly improves the risk profile of this investment compared to self-sponsored training.
               </p>
               <p>
-                A First Officer salary at easyJet starts at approximately £50,000–£65,000 (including allowances), rising to £75,000–£90,000 with experience. Captain salaries at easyJet range from £90,000–£130,000. The financial return on the training investment is strong, particularly given the current pilot shortage environment.
+                A First Officer salary at easyJet starts at approximately £65,000–£100,000 (including allowances and sector pay), rising with seniority. Captain salaries at easyJet range from £170,000–£220,000 at the top of the scale. The financial return on the training investment is strong, particularly given the current pilot shortage environment.
               </p>
             </>
           ),
@@ -161,7 +164,7 @@ export default function EasyJetGeneration() {
                 <strong>Licence type:</strong> Speedbird Academy graduates receive a frozen ATPL — the most flexible commercial pilot licence. Generation easyJet graduates receive an MPL, which is initially type-specific and operator-specific. If you value licence flexibility from day one, the Speedbird Academy has an advantage. If you are committed to an easyJet career and the MPL's limitations don't concern you, the Generation programme is equally valid.
               </p>
               <p>
-                <strong>Cost:</strong> The Generation easyJet programme (£99,900) is typically less expensive than the Speedbird Academy (£100,000–£130,000). The difference is not enormous but is worth factoring in.
+                <strong>Cost:</strong> The Generation easyJet programme costs €102,942 (self-funded). The BA Speedbird Academy is <strong>fully funded by British Airways</strong> — meaning BA covers all training costs. On a cost-to-you basis, the Speedbird Academy is significantly cheaper if you are accepted.
               </p>
               <p>
                 <strong>Competition:</strong> The Speedbird Academy is generally considered more competitive (1–2% acceptance rate vs approximately 2–4% for Generation easyJet). Both are highly selective, but if you are applying to both, the Generation programme may offer a slightly higher probability of success.
