@@ -31,13 +31,13 @@ const PilotTrainingFinance2026 = () => {
           heading: "What Does Pilot Training Actually Cost?",
           content: (
             <>
+              <GuideScopeBanner scope="This guide covers UK-specific pilot training finance options for 2026 (HSBC, UK lenders, cadet bonds)." usHref="/us/guides/how-to-fund-pilot-training-usa" usLabel="View USA funding options →" />
               <div style={{ margin: "0 0 20px 0", borderRadius: "12px", overflow: "hidden" }}>
                 <img
                   src="/manus-storage/pilot-training-cost-breakdown_b2ddab91.png"
                   alt="UK pilot training cost breakdown 2026 by route"
                   style={{ width: "100%", display: "block" }}
                   loading="lazy"
-                scopeBanner={<><GuideScopeBanner scope="This guide covers UK-specific pilot training finance options for 2026 (HSBC, UK lenders, cadet bonds)." usHref="/us/guides/how-to-fund-pilot-training-usa" usLabel="View USA funding options →" /></>}
                 />
               </div>
               <p style={{ fontSize: "0.8rem", color: "oklch(0.45 0.04 240)", textAlign: "center", marginBottom: "16px" }}>

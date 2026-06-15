@@ -6,13 +6,14 @@ interface SEOProps {
   canonical?: string;
   ogImage?: string;
   schema?: object | object[];
+  noindex?: boolean;
 }
 
 const SITE_NAME = "AviatorIQ";
 const BASE_URL = "https://aviatoriq.com";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-default.jpg`;
 
-export default function SEO({ title, description, canonical, ogImage, schema }: SEOProps) {
+export default function SEO({ title, description, canonical, ogImage, schema, noindex }: SEOProps) {
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
   const canonicalUrl = canonical ? `${BASE_URL}${canonical}` : undefined;
   const image = ogImage || DEFAULT_OG_IMAGE;
@@ -23,6 +24,7 @@ export default function SEO({ title, description, canonical, ogImage, schema }: 
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {noindex && <meta name="robots" content="noindex,nofollow" />}
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
 
       {/* Open Graph */}
