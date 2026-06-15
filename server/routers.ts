@@ -146,6 +146,7 @@ Lead details:
 AviatorIQ Score: ${score}/100 (${category})`;
 
           const response = await invokeLLM({
+            model: process.env.LLM_MODEL || "gpt-5-mini",
             messages: [
               { role: "system", content: "You are a helpful aviation training advisor assistant. Be concise and professional." },
               { role: "user", content: summaryPrompt },
@@ -417,6 +418,7 @@ Return a JSON object with these exact keys:
 Use honest, direct language. If their barrier is funding, say so clearly and give real options. If their timeline is unrealistic, say so kindly. Do not make promises about employment or medical approval. The goal is to give them the certainty they need to make a decision — not just to encourage them.`;
 
         const response = await invokeLLM({
+          model: process.env.LLM_MODEL || "gpt-5-mini",
           messages: [
             { role: "system", content: "You are an expert aviation career advisor. Always respond with valid JSON only, no markdown." },
             { role: "user", content: prompt },
