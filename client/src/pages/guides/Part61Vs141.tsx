@@ -136,8 +136,8 @@ export default function Part61Vs141() {
                     detail: "Requires graduation from a U.S.-based AABI-accredited 4-year aviation programme or a Propel affiliate school. All affiliate schools — ATP Flight School, Academy of Aviation, Superior Flight School — are Part 141. Single-interview process leads to Endeavor Air then mainline Delta.",
                   },
                   {
-                    prog: "Southwest Destination 225°",
-                    detail: "Partners with CAE (Mesa, AZ), SkyWarrior (Pensacola, FL), and US Aviation (Denton, TX) — all Part 141. Training costs $115,000–$125,000 depending on partner. Programme takes approximately 4 years from start to Southwest First Officer.",
+                    prog: "Southwest Destination 225° (Paused 2025–2026)",
+                    detail: "Southwest paused new Destination 225° intakes in 2025. As of June 2026, the programme has not reopened for new applications. Previously partnered with CAE, SkyWarrior, and US Aviation — all Part 141. Check southwest.com/careers for updates on resumption.",
                   },
                   {
                     prog: "American Airlines Cadet Academy",

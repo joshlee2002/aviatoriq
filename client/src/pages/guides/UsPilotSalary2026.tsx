@@ -1,148 +1,335 @@
-import React from 'react';
-import GuideLayout from '@/components/GuideLayout';
+import GuideLayout from "@/components/GuideLayout";
+import { Link } from "wouter";
 
 export default function UsPilotSalary2026() {
   return (
     <GuideLayout
-      title="US Pilot Salary 2026: A Comprehensive Guide to Aviation Earnings"
-      subtitle="Navigate the lucrative career path of a US airline pilot in 2026, exploring salary expectations, training costs, and career progression."
-      readTime="12 min"
+      title="US Airline Pilot Salary 2026: The Complete Guide"
+      subtitle="Real pay scales from Delta, United, American, Southwest, and the regional carriers — with per diem, profit-sharing, and a full career earnings breakdown."
+      readTime="12 min read"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
       category="Pilot Careers"
       canonical="https://aviatoriq.com/us/guides/us-pilot-salary-2026"
-      metaDescription="Explore US pilot salaries for 2026, including major airlines, regional carriers, training costs, and career progression. Your definitive guide to aviation earnings."
+      metaDescription="US airline pilot salary 2026: Delta, United, American, and Southwest pay scales confirmed. Regional FOs start at $90k–$110k. Major airline captains earn $465,000–$520,000. Full breakdown inside."
       ctaText="Check your US pilot readiness"
       ctaHref="/quiz"
+      faqSchema={[
+        { question: "What is the average salary for a US airline pilot in 2026?", answer: "The Bureau of Labor Statistics reported a median annual wage of $226,600 for airline pilots in May 2024. In 2026, first-year regional FOs earn $90,000–$110,000 in total compensation, while major airline widebody captains earn $465,000–$520,000 annually." },
+        { question: "How much do Delta, United, and American pilots earn?", answer: "Following 2023 contract ratifications, all three carriers now pay identical widebody captain rates of $465.13 per hour at year 12. At 900 hours annually, that is approximately $418,617 in base pay alone, with profit-sharing and per diem adding $50,000–$100,000 more." },
+        { question: "How much do regional airline pilots earn in their first year?", answer: "Regional airline first officers in 2026 typically earn $90,000–$110,000 in total first-year compensation, including base pay, per diem, and signing bonuses. SkyWest Year 1 FO pay is $92/hour; Republic's total first-year package is approximately $93,646." },
+        { question: "Which US airline pays pilots the most?", answer: "Delta, United, and American now pay identical widebody captain rates ($465.13/hour at year 12). Alaska Airlines and Southwest are close behind. FedEx and UPS cargo carriers pay captains $358–$380+/hour but have longer upgrade times." },
+        { question: "How does per diem affect pilot salary?", answer: "US airline pilots receive a per diem allowance of $2.00–$4.50 per hour away from base. At 900 hours away from base annually, that adds $1,800–$4,050 in tax-free income. International pilots earn more due to longer trips." },
+        { question: "What is pilot profit-sharing in the USA?", answer: "Major airlines distribute a percentage of annual profits to employees. Delta's profit-sharing has paid out $1.1–$1.4 billion annually in recent years, with pilots receiving $20,000–$60,000 in a strong year. United and American have similar programmes." }
+      ]}
       sections={[
         {
-          heading: "Introduction: The Lucrative Path to the Cockpit",
+          heading: "The State of US Pilot Pay in 2026",
           content: (
             <>
-              <p>Becoming a pilot in the United States offers a career path marked by significant financial rewards and unparalleled professional growth. The year 2026 stands as a pivotal moment for aspiring aviators, with unprecedented demand and competitive compensation packages driven by a persistent pilot shortage and robust airline industry growth. This guide provides an in-depth analysis of pilot salaries across major US airlines, the factors influencing earning potential, and the essential training pathways to achieve these lucrative careers.</p>
+              <p>
+                US airline pilot compensation reached a historic milestone in 2026. Following the ratification of new contracts at Delta, United, and American Airlines in 2023 — which phased in through 2026 — all three carriers now pay <strong>identical widebody captain rates of $465.13 per hour</strong> at year 12 of seniority. At 900 credited hours annually, that translates to approximately $418,617 in base pay alone, before profit-sharing, per diem, and retirement contributions.
+              </p>
+              <p>
+                The Bureau of Labor Statistics reported a median annual wage of <strong>$226,600</strong> for airline pilots, copilots, and flight engineers in May 2024 — nearly double the 2016 median of $127,820. The structural driver is the mandatory retirement age of 65: the FAA projects approximately 4,300 mandatory retirements per year through 2042, sustaining demand for new pilots throughout the next two decades.
+              </p>
+              <p>
+                For aspiring pilots, the financial case for the career has never been stronger. Regional airline first officers now start at <strong>$90,000–$110,000</strong> in total first-year compensation — a figure that was $40,000–$50,000 just ten years ago.
+              </p>
             </>
-          )
+          ),
         },
         {
-          heading: "Understanding Pilot Compensation in 2026",
+          heading: "Major Airline Pilot Pay Scales (2026)",
           content: (
             <>
-              <h3>How Airline Pilot Pay Works</h3>
-              <p>Unlike traditional salaried roles, airline pilot compensation is multifaceted, typically comprising an hourly wage based on credited flight hours, guaranteed monthly minimums, profit-sharing, per diem allowances, and substantial retirement contributions. These elements combine to form comprehensive packages that often far exceed base salary figures.</p>
-              <h3>Major Airline Pilot Salaries: A 2026 Overview</h3>
-              <p>The US airline industry, particularly major carriers like Delta, United, and American, offers some of the highest pilot salaries globally. Regional airlines also provide competitive entry-level compensation, serving as crucial stepping stones to mainline carriers.</p>
-              <h4>Table: Major US Airline Pilot Salaries (2026 Estimates)</h4>
-              <table>
-                <thead>
-                  <tr><th>Airline</th><th>First Officer (Entry)</th><th>First Officer (Senior, Widebody)</th><th>Captain (Narrowbody)</th><th>Captain (Widebody)</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Delta Air Lines</td><td>$106,000 - $222,000</td><td>Up to $300,000+</td><td>$313,000 - $410,000</td><td>$410,000+</td></tr>
-                  <tr><td>United Airlines</td><td>$113,000 - $300,000</td><td>Up to $300,000+</td><td>$320,000 - $419,000</td><td>$419,000+</td></tr>
-                  <tr><td>American Airlines</td><td>$108,000 - $300,000</td><td>Up to $300,000+</td><td>$288,000 - $410,000</td><td>$410,000+</td></tr>
-                  <tr><td>Southwest Airlines</td><td>$105,000 - $200,000</td><td>N/A (Narrowbody only)</td><td>$262,000 - $286,000</td><td>N/A (Narrowbody only)</td></tr>
-                </tbody>
-              </table>
-              <p><em>Note: These figures represent base pay at 900 hours annually. Actual earnings can be higher due to profit-sharing, per diem, and other benefits <a href="https://www.verticalvisionflight.com/blog/how-much-do-airline-pilots-make-in-2026-complete-salary-amp-career-path-guide" target="_blank">[1]</a> <a href="https://airmappr.com/articles/career/pilot-salary-usa" target="_blank">[2]</a>.</em></p>
-              <h3>Factors Influencing Pilot Salary</h3>
-              <p>Several key factors dictate a pilot's earning potential:</p>
-              <ul>
-                <li><strong>Airline Type:</strong> Major airlines generally offer higher salaries than regional carriers.</li>
-                <li><strong>Aircraft Type:</strong> Pilots flying larger, wide-body aircraft typically earn more due to increased responsibility and international routes.</li>
-                <li><strong>Seniority:</strong> Experience and time with an airline significantly impact pay scales and scheduling preferences.</li>
-                <li><strong>Contract Negotiations:</strong> Pilot unions (e.g., ALPA, APA, SWAPA) play a crucial role in negotiating favorable contracts, leading to substantial pay raises and benefits <a href="https://www.verticalvisionflight.com/blog/how-much-do-airline-pilots-make-in-2026-complete-salary-amp-career-path-guide" target="_blank">[1]</a>.</li>
-                <li><strong>Profit Sharing & Bonuses:</strong> Many airlines offer profit-sharing programs and ratification bonuses, adding significantly to annual income <a href="https://www.verticalvisionflight.com/blog/how-much-do-airline-pilots-make-in-2026-complete-salary-amp-career-path-guide" target="_blank">[1]</a>.</li>
-                <li><strong>Retirement Contributions:</strong> Employer contributions to 401(k) plans are a substantial part of the total compensation package, often reaching 18-20% of eligible earnings <a href="https://www.verticalvisionflight.com/blog/how-much-do-airline-pilots-make-in-2026-complete-salary-amp-career-path-guide" target="_blank">[1]</a>.</li>
-                <li><strong>Domicile:</strong> Living in states with no state income tax (e.g., Texas, Florida) can result in significant annual savings <a href="https://airmappr.com/articles/career/pilot-salary-usa" target="_blank">[2]</a>.</li>
-              </ul>
+              <p>
+                The following figures represent base hourly rates from confirmed 2026 contracts. Annual earnings are calculated at 900 credited hours — the typical full-time schedule. Total compensation (including per diem, profit-sharing, and 401k contributions) is typically 20–40% higher than base pay alone.
+              </p>
+
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Airline</th>
+                      <th className="px-4 py-3 font-semibold">Year 1 FO (Narrowbody)</th>
+                      <th className="px-4 py-3 font-semibold">Year 12 FO (Widebody)</th>
+                      <th className="px-4 py-3 font-semibold">Year 12 Captain (Widebody)</th>
+                      <th className="px-4 py-3 font-semibold">Est. Total Comp (Senior Captain)</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Delta Air Lines</td>
+                      <td className="px-4 py-3">$113,476/yr</td>
+                      <td className="px-4 py-3">$317.73/hr (~$285,957/yr)</td>
+                      <td className="px-4 py-3">$465.13/hr (~$418,617/yr)</td>
+                      <td className="px-4 py-3 font-semibold text-white">$465,000 – $520,000+</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">United Airlines</td>
+                      <td className="px-4 py-3">$115,621/yr</td>
+                      <td className="px-4 py-3">$317.73/hr (~$285,957/yr)</td>
+                      <td className="px-4 py-3">$465.13/hr (~$418,617/yr)</td>
+                      <td className="px-4 py-3 font-semibold text-white">$465,000 – $520,000+</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">American Airlines</td>
+                      <td className="px-4 py-3">$113,476/yr</td>
+                      <td className="px-4 py-3">$317.73/hr (~$285,957/yr)</td>
+                      <td className="px-4 py-3">$465.13/hr (~$418,617/yr)</td>
+                      <td className="px-4 py-3 font-semibold text-white">$465,000 – $520,000+</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Southwest Airlines</td>
+                      <td className="px-4 py-3">$114,928/yr</td>
+                      <td className="px-4 py-3">N/A (narrowbody only)</td>
+                      <td className="px-4 py-3">~$300/hr (~$270,000/yr)</td>
+                      <td className="px-4 py-3 font-semibold text-white">$300,000 – $380,000</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Alaska Airlines</td>
+                      <td className="px-4 py-3">$125,731/yr</td>
+                      <td className="px-4 py-3">~$280/hr</td>
+                      <td className="px-4 py-3">~$380/hr</td>
+                      <td className="px-4 py-3 font-semibold text-white">$380,000 – $450,000</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">JetBlue</td>
+                      <td className="px-4 py-3">$97,000/yr</td>
+                      <td className="px-4 py-3">~$230/hr</td>
+                      <td className="px-4 py-3">~$310/hr</td>
+                      <td className="px-4 py-3 font-semibold text-white">$280,000 – $340,000</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">FedEx Express</td>
+                      <td className="px-4 py-3">$82,690/yr</td>
+                      <td className="px-4 py-3">~$280/hr</td>
+                      <td className="px-4 py-3">~$380/hr</td>
+                      <td className="px-4 py-3 font-semibold text-white">$380,000 – $450,000</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">UPS Airlines</td>
+                      <td className="px-4 py-3">$63,442/yr</td>
+                      <td className="px-4 py-3">~$280/hr</td>
+                      <td className="px-4 py-3">~$358/hr</td>
+                      <td className="px-4 py-3 font-semibold text-white">$360,000 – $430,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p className="text-xs text-white/50 mt-2">
+                Sources: ATP Flight School / AirlinePilotCentral (2025/2026 contracts); MiGFlug analysis of Big Three contract realignment (May 2026); BLS Occupational Outlook Handbook (May 2024). Year 1 FO figures based on 72–87 credited hours/month at the applicable aircraft/base. Total compensation estimates include base pay, per diem, and profit-sharing.
+              </p>
             </>
-          )
+          ),
         },
         {
-          heading: "The Pilot Shortage and Its Impact on Compensation",
+          heading: "Regional Airline Pilot Pay (2026)",
           content: (
             <>
-              <p>The ongoing pilot shortage in the US aviation industry continues to drive up compensation, creating a highly favorable market for new and experienced pilots. The Bureau of Labor Statistics (BLS) projects a 4% growth in airline pilot employment from 2024 to 2034, with approximately 18,200 job openings annually, primarily due to retirements <a href="https://www.verticalvisionflight.com/blog/how-much-do-airline-pilots-make-in-2026-complete-salary-amp-career-path-guide" target="_blank">[1]</a>. This sustained demand ensures strong job security and continued upward pressure on salaries.</p>
+              <p>
+                Most pilots begin their airline careers at a regional carrier, building seniority and flight hours before upgrading to a major. Regional pay has risen dramatically since 2022 — first-year FOs now earn <strong>$90,000–$110,000</strong> in total compensation at the major regionals, compared to $40,000–$50,000 five years ago.
+              </p>
+
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Regional Airline</th>
+                      <th className="px-4 py-3 font-semibold">Year 1 FO ($/hr)</th>
+                      <th className="px-4 py-3 font-semibold">Year 1 Total Comp</th>
+                      <th className="px-4 py-3 font-semibold">Flow-Through to Major</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">SkyWest Airlines</td>
+                      <td className="px-4 py-3">$92/hr</td>
+                      <td className="px-4 py-3">~$82,800/yr (base only)</td>
+                      <td className="px-4 py-3">Delta, United, Alaska, American</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Republic Airways</td>
+                      <td className="px-4 py-3">~$93/hr</td>
+                      <td className="px-4 py-3">$93,646/yr total</td>
+                      <td className="px-4 py-3">United Aviate programme</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Endeavor Air</td>
+                      <td className="px-4 py-3">~$90/hr</td>
+                      <td className="px-4 py-3">~$90,000/yr total</td>
+                      <td className="px-4 py-3">Delta Propel (guaranteed path)</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Envoy Air</td>
+                      <td className="px-4 py-3">~$90/hr</td>
+                      <td className="px-4 py-3">~$90,000/yr total</td>
+                      <td className="px-4 py-3">American Airlines (flow, no interview)</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Piedmont Airlines</td>
+                      <td className="px-4 py-3">~$90/hr</td>
+                      <td className="px-4 py-3">~$90,000/yr total</td>
+                      <td className="px-4 py-3">American Airlines (flow, no interview)</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Horizon Air</td>
+                      <td className="px-4 py-3">~$95/hr</td>
+                      <td className="px-4 py-3">~$95,000/yr total</td>
+                      <td className="px-4 py-3">Alaska Airlines Career Path</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p>
+                Pilots at Envoy, Piedmont, and PSA Airlines who joined before October 2011 have a <strong>flow-through agreement</strong> to American Airlines — meaning they transfer to mainline American without a separate interview once they meet the seniority and hour requirements. Endeavor Air pilots have a guaranteed interview with Delta through the Propel programme.
+              </p>
             </>
-          )
+          ),
         },
         {
-          heading: "Pathways to the Cockpit: Training and Certification",
+          heading: "Understanding Total Compensation: Beyond the Base Rate",
           content: (
             <>
-              <p>Becoming a commercial pilot requires rigorous training and adherence to Federal Aviation Administration (FAA) regulations. The two primary pathways are Part 61 and Part 141 flight schools.</p>
-              <h3>Part 61 vs. Part 141 Flight Schools</h3>
-              <table>
-                <thead>
-                  <tr><th>Feature</th><th>Part 61</th><th>Part 141</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td><strong>Structure</strong></td><td>More flexible, self-paced</td><td>Structured curriculum, FAA-approved</td></tr>
-                  <tr><td><strong>Minimum Hours (PPL)</strong></td><td>40 hours (typically 60-75)</td><td>35 hours (typically 50-60)</td></tr>
-                  <tr><td><strong>Minimum Hours (Commercial)</strong></td><td>250 hours</td><td>190 hours</td></tr>
-                  <tr><td><strong>Instruction</strong></td><td>Individualized, less formal</td><td>Regimented, classroom-based ground school</td></tr>
-                  <tr><td><strong>Cost</strong></td><td>Can be lower if efficient, but variable</td><td>Often higher upfront, but potentially faster completion</td></tr>
-                  <tr><td><strong>Ideal For</strong></td><td>Part-time students, those with prior experience</td><td>Full-time students, career-focused</td></tr>
-                </tbody>
-              </table>
-              <h3>Estimated Flight Training Costs (2026)</h3>
-              <p>The investment in flight training is substantial but yields significant returns. Costs vary based on the chosen pathway, school, and individual progress.</p>
-              <h4>Table: Estimated Flight Training Costs (2026)</h4>
-              <table>
-                <thead>
-                  <tr><th>Certificate/Rating</th><th>Estimated Cost (USD)</th><th>Estimated Duration</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Private Pilot License (PPL)</td><td>$36,147</td><td>3 months</td></tr>
-                  <tr><td>Instrument Rating (IR)</td><td>$17,052</td><td>2 months</td></tr>
-                  <tr><td>Commercial Single-Engine (CSEL)</td><td>$24,880</td><td>2 months</td></tr>
-                  <tr><td>Commercial Multi-Engine (CMEL) Add-On</td><td>$5,786</td><td>3 weeks</td></tr>
-                  <tr><td>Certified Flight Instructor (CFI)</td><td>$11,155</td><td>2 months</td></tr>
-                  <tr><td>Certified Flight Instructor – Instrument (CFII)</td><td>$5,860</td><td>3 weeks</td></tr>
-                  <tr><td>Multi-Engine Flight Instructor (MEI)</td><td>$11,667</td><td>3 weeks</td></tr>
-                  <tr><td><strong>Total (from zero to CFI)</strong></td><td><strong>~$112,547</strong></td><td><strong>~10 months</strong></td></tr>
-                </tbody>
-              </table>
-              <p><em>Note: These costs are estimates from Epic Flight Academy and can vary. Additional expenses include FAA exam fees, medical certificates, and study materials <a href="https://epicflightacademy.com/how-much-does-flight-school-cost/" target="_blank">[3]</a>.</em></p>
-              <h3>ATP Certificate Requirements</h3>
-              <p>To become an airline pilot, an Airline Transport Pilot (ATP) certificate is required. The FAA mandates 1,500 total flight hours for the ATP, with reduced hour requirements for graduates of specific Part 141 programs (e.g., 1,000 hours for a 4-year degree with aviation major) <a href="https://airmappr.com/articles/career/pilot-salary-usa" target="_blank">[2]</a>.</p>
+              <p>
+                Hourly base pay is only part of a US airline pilot's earnings. The full compensation package includes several additional components that can add <strong>$50,000–$100,000</strong> per year for senior pilots.
+              </p>
+
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Compensation Component</th>
+                      <th className="px-4 py-3 font-semibold">Typical Amount</th>
+                      <th className="px-4 py-3 font-semibold">Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Base Pay (hourly × credited hours)</td>
+                      <td className="px-4 py-3">$63,000 – $418,617/yr</td>
+                      <td className="px-4 py-3">Varies by airline, aircraft, and seniority year</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Per Diem</td>
+                      <td className="px-4 py-3">$2.00 – $4.50/hr away from base</td>
+                      <td className="px-4 py-3">Tax-free. At 900 hrs away from base: $1,800–$4,050/yr. International pilots earn more.</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Profit-Sharing</td>
+                      <td className="px-4 py-3">$5,000 – $60,000/yr</td>
+                      <td className="px-4 py-3">Delta has paid out $1.1–$1.4B annually in recent years. United and American have similar programmes.</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">401(k) Employer Match</td>
+                      <td className="px-4 py-3">16–20% of eligible earnings</td>
+                      <td className="px-4 py-3">For a captain earning $418,617, that is $67,000–$84,000 in retirement contributions annually.</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Travel Benefits</td>
+                      <td className="px-4 py-3">Free / heavily discounted</td>
+                      <td className="px-4 py-3">Pilots and their families fly free (standby) or at deeply discounted rates on their airline and partners.</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Signing Bonuses (regional)</td>
+                      <td className="px-4 py-3">$5,000 – $20,000</td>
+                      <td className="px-4 py-3">Air Wisconsin: $5,000; CommuteAir: $20,000. Varies by carrier and current demand.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </>
-          )
+          ),
         },
         {
-          heading: "Career Progression and Long-Term Earnings",
+          heading: "Career Earnings Timeline: Zero to Major Airline Captain",
           content: (
             <>
-              <p>The pilot career path is a journey of continuous growth and increasing earning potential:</p>
-              <ul>
-                <li><strong>Years 1-5 (First Officer, Regional/Mainline):</strong> Building seniority, gaining experience, and establishing a foundation. Earnings typically range from $100,000 to $200,000+.</li>
-                <li><strong>Years 5-10 (Captain, Regional/Mainline First Officer):</strong> Potential upgrade to Captain at a regional airline or continued progression as a First Officer at a major. Significant salary increases and improved schedule control. Earnings can reach $200,000 - $300,000+.</li>
-                <li><strong>Years 10-20 (Senior Captain, Mainline):</strong> Peak earning years, often flying wide-body international routes. Earnings can exceed $400,000 - $500,000+ annually.</li>
-                <li><strong>Years 20-30+ (Veteran Captain):</strong> Maintaining top-tier compensation until mandatory retirement at age 65.</li>
-              </ul>
-              <p>Over a full career, major airline pilots can expect to earn several million dollars in total compensation, making the initial investment in training highly worthwhile <a href="https://www.verticalvisionflight.com/blog/how-much-do-airline-pilots-make-in-2026-complete-salary-amp-career-path-guide" target="_blank">[1]</a>.</p>
+              <p>
+                The US pilot career follows a predictable earnings trajectory. The early years are lean — CFI pay and regional FO salaries are modest — but the long-term earnings potential is exceptional.
+              </p>
+
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Career Stage</th>
+                      <th className="px-4 py-3 font-semibold">Typical Timeline</th>
+                      <th className="px-4 py-3 font-semibold">Annual Earnings</th>
+                      <th className="px-4 py-3 font-semibold">Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Flight Training</td>
+                      <td className="px-4 py-3">Year 0–1</td>
+                      <td className="px-4 py-3 text-red-400">–$80,000 to –$124,000</td>
+                      <td className="px-4 py-3">Investment phase. ATP: $123,995. Epic: $83,647.</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">CFI / Hour Building</td>
+                      <td className="px-4 py-3">Year 1–2.5</td>
+                      <td className="px-4 py-3">$35,000 – $55,000</td>
+                      <td className="px-4 py-3">Building to 1,500 hours for ATP certificate</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Regional FO (Year 1)</td>
+                      <td className="px-4 py-3">Year 2.5–3.5</td>
+                      <td className="px-4 py-3">$90,000 – $110,000</td>
+                      <td className="px-4 py-3">Total comp including per diem and signing bonus</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Regional Captain / Major FO</td>
+                      <td className="px-4 py-3">Year 4–8</td>
+                      <td className="px-4 py-3">$130,000 – $250,000</td>
+                      <td className="px-4 py-3">Depends on upgrade speed and flow-through timing</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Major Airline FO (Senior)</td>
+                      <td className="px-4 py-3">Year 8–15</td>
+                      <td className="px-4 py-3">$200,000 – $320,000</td>
+                      <td className="px-4 py-3">Year 12 widebody FO: $317.73/hr = ~$285,957 base</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Major Airline Captain</td>
+                      <td className="px-4 py-3">Year 12–20+</td>
+                      <td className="px-4 py-3">$380,000 – $520,000+</td>
+                      <td className="px-4 py-3">Big Three widebody captain: $465.13/hr + profit-sharing + 401k</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p>
+                Over a full 30-year career at a major airline, total compensation — including base pay, profit-sharing, per diem, and retirement contributions — typically reaches <strong>$8–12 million</strong>. Most pilots who attend an accelerated programme and flow directly to a regional airline break even on their training investment within 12–18 months of their first airline job.
+              </p>
             </>
-          )
+          ),
         },
         {
-          heading: "Conclusion",
+          heading: "References",
           content: (
             <>
-              <p>The US pilot training market in 2026 presents an unparalleled opportunity for individuals seeking a challenging yet profoundly rewarding career. With robust demand, competitive salaries, and clear pathways to advancement, the dream of flying for a major airline is more attainable and lucrative than ever. Diligent training, strategic career planning, and a commitment to excellence will pave the way for a successful and financially secure future in the cockpit.</p>
+              <p className="text-xs text-white/50">
+                [1] Bureau of Labor Statistics. "Airline and Commercial Pilots." <em>bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm</em>. Updated 2024.<br/>
+                [2] MiGFlug. "United, American and Delta Now Pay Identical $465/Hour." <em>migflug.com</em>. May 2026.<br/>
+                [3] Simple Flying. "Hourly Pay of US Regional Airline First Officers in 2026." <em>simpleflying.com</em>. April 2026.<br/>
+                [4] ATP Flight School. "Airline Pilot Salary." <em>atpflightschool.com</em>. Accessed June 2026.<br/>
+                [5] ALPA. "Regional Airline Pilot Signing Bonuses." <em>alpa.org</em>. July 2025.<br/>
+                [6] Delta Air Lines. "Propel Pilot Career Path Program." <em>delta.com/us/en/careers/pilots/propel</em>. Accessed June 2026.
+              </p>
             </>
-          )
-        },
-      ]}
-      faqSchema={[
-        { question: "What is the average salary for a US airline pilot in 2026?", answer: "The median annual wage for airline pilots, copilots, and flight engineers was $226,600 in May 2024, with top earners exceeding $400,000+ at major airlines in 2026 <a href=\"https://www.verticalvisionflight.com/blog/how-much-do-airline-pilots-make-in-2026-complete-salary-amp-career-path-guide\" target=\"_blank\">[1]</a>." },
-        { question: "How much does it cost to become a pilot in the US?", answer: "The estimated cost to go from zero flight experience to a Certified Flight Instructor (CFI) is approximately $112,547, covering Private Pilot, Instrument Rating, Commercial, and Instructor certificates <a href=\"https://epicflightacademy.com/how-much-does-flight-school-cost/\" target=\"_blank\">[3]</a>." },
-        { question: "What is the difference between Part 61 and Part 141 flight schools?", answer: "Part 61 schools offer more flexible, self-paced training, while Part 141 schools follow a structured, FAA-approved curriculum. Part 141 programs can lead to reduced ATP hour requirements <a href=\"https://airmappr.com/articles/career/pilot-salary-usa\" target=\"_blank\">[2]</a>." },
-        { question: "Which airlines pay the most in the US?", answer: "Delta, United, and American Airlines offer the highest compensation packages, with senior wide-body Captains earning over $400,000 annually. Southwest also offers competitive pay for narrow-body operations <a href=\"https://www.verticalvisionflight.com/blog/how-much-do-airline-pilots-make-in-2026-complete-salary-amp-career-path-guide\" target=\"_blank\">[1]</a> <a href=\"https://airmappr.com/articles/career/pilot-salary-usa\" target=\"_blank\">[2]</a>." },
-        { question: "Is there a pilot shortage in the US?", answer: "Yes, a significant pilot shortage persists, leading to high demand for qualified aviators and driving up compensation across the industry <a href=\"https://www.verticalvisionflight.com/blog/how-much-do-airline-pilots-make-in-2026-complete-salary-amp-career-path-guide\" target=\"_blank\">[1]</a>." },
+          ),
+        }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" }
+        { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
+        { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "14 min" },
+        { title: "US Airline Cadet Programmes 2026", href: "/us/guides/us-airline-cadet-programs", time: "11 min" },
+        { title: "How to Fund Pilot Training in the USA", href: "/us/guides/how-to-fund-pilot-training-usa", time: "9 min" },
       ]}
     />
   );

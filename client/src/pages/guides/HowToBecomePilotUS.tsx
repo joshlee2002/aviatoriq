@@ -68,7 +68,7 @@ export default function HowToBecomePilotUS() {
                 This is the most important structural decision you will make. US flight training operates under two different sets of FAA regulations:
               </p>
               <p>
-                <strong>Part 141 (Structured/Accelerated):</strong> These schools follow an FAA-approved structured syllabus. Because the training is highly regulated, the FAA allows Part 141 students to graduate with fewer minimum flight hours (e.g., 35 hours for a PPL instead of 40, and 190 hours for a CPL instead of 250). Major Part 141 schools include ATP Flight School, Embry-Riddle Aeronautical University, CAE, and L3Harris.
+                <strong>Part 141 (Structured/Accelerated):</strong> These schools follow an FAA-approved structured syllabus. Because the training is highly regulated, the FAA allows Part 141 students to graduate with fewer minimum flight hours (e.g., 35 hours for a PPL instead of 40, and 190 hours for a CPL instead of 250). Major Part 141 schools include ATP Flight School, Embry-Riddle Aeronautical University, Epic Flight Academy, and CAE.
               </p>
               <p>
                 <strong>Part 61 (Flexible/Modular):</strong> This is the traditional "mom and pop" flight school route. It is highly flexible and self-paced. You hire an independent instructor or join a local flying club and pay by the hour. It is generally cheaper per hour than Part 141, but requires more total hours to qualify for your commercial licence.
@@ -76,6 +76,51 @@ export default function HowToBecomePilotUS() {
               <p>
                 For career-track pilots aiming for the airlines, Part 141 is almost always the better choice. The structured curriculum and fast-paced environment mimic airline training. More importantly, graduating from an approved university Part 141 programme allows you to qualify for a Restricted ATP (R-ATP) at 1,000 or 1,250 hours instead of the standard 1,500 hours — saving you a year of hour-building.
               </p>
+
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Route</th>
+                      <th className="px-4 py-3 font-semibold">ATP Hours Required</th>
+                      <th className="px-4 py-3 font-semibold">GI Bill Eligible?</th>
+                      <th className="px-4 py-3 font-semibold">Best For</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Part 61 (local school / club)</td>
+                      <td className="px-4 py-3">1,500 hours</td>
+                      <td className="px-4 py-3">No</td>
+                      <td className="px-4 py-3">Part-time students; budget-conscious; recreational pilots</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Part 141 accelerated (ATP, Epic)</td>
+                      <td className="px-4 py-3">1,500 hours</td>
+                      <td className="px-4 py-3">Yes</td>
+                      <td className="px-4 py-3">Full-time career-track pilots wanting the fastest route</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Part 141 university (associate's degree)</td>
+                      <td className="px-4 py-3">1,250 hours (R-ATP)</td>
+                      <td className="px-4 py-3">Yes</td>
+                      <td className="px-4 py-3">Pilots who want a degree and a modest hour reduction</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Part 141 university (aviation bachelor's)</td>
+                      <td className="px-4 py-3">1,000 hours (R-ATP)</td>
+                      <td className="px-4 py-3">Yes</td>
+                      <td className="px-4 py-3">Pilots who want maximum hour reduction and a BSc (Embry-Riddle, UND)</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Military-trained pilot</td>
+                      <td className="px-4 py-3">750 hours (R-ATP)</td>
+                      <td className="px-4 py-3">Yes (GI Bill)</td>
+                      <td className="px-4 py-3">Veterans transitioning from military aviation</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </>
           ),
         },
@@ -100,17 +145,17 @@ export default function HowToBecomePilotUS() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Private Pilot (PPL)</td>
                       <td className="px-4 py-3">Fly single-engine aircraft for personal use. No paid flying.</td>
-                      <td className="px-4 py-3">$12,000 – $15,000</td>
+                      <td className="px-4 py-3">$12,000 – $28,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Instrument Rating (IR)</td>
                       <td className="px-4 py-3">Fly in clouds and low visibility solely by reference to instruments.</td>
-                      <td className="px-4 py-3">$10,000 – $12,000</td>
+                      <td className="px-4 py-3">$10,000 – $17,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Commercial Pilot (CPL)</td>
                       <td className="px-4 py-3">Be paid to fly (e.g., banner towing, crop dusting, instructing).</td>
-                      <td className="px-4 py-3">$25,000 – $35,000</td>
+                      <td className="px-4 py-3">$18,000 – $35,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Multi-Engine Rating (ME)</td>
@@ -147,7 +192,7 @@ export default function HowToBecomePilotUS() {
                 The standard, almost universal method is to become a <strong>Certified Flight Instructor (CFI)</strong>. You pay approx $5,000–$8,000 to get your CFI rating, then get hired by a flight school to teach new students. You log flight time while being paid (typically $25–$40 per flight hour). 
               </p>
               <p>
-                It usually takes 1.5 to 2 years of full-time instructing to reach 1,500 hours. It is not glamorous, the pay is modest ($30,000–$50,000/year), but it is the fastest and most reliable way to bridge the gap between flight school and the airlines.
+                It usually takes 1.5 to 2 years of full-time instructing to reach 1,500 hours. It is not glamorous, but the pay has improved significantly — CFIs now typically earn <strong>$35,000–$55,000 per year</strong> at major flight schools, and many schools like ATP and Epic hire their own graduates as instructors. It remains the fastest and most reliable way to bridge the gap between flight school and the airlines.
               </p>
             </>
           ),
@@ -169,7 +214,7 @@ export default function HowToBecomePilotUS() {
                 <strong>Delta Propel:</strong> Delta's career development programme. Not a flight school, but a structured pathway with mentoring and a conditional offer to Delta Connection carriers, followed by a guaranteed path to mainline Delta.
               </p>
               <p>
-                <strong>Southwest Destination 225°:</strong> Partners with L3Harris and CAE. Provides a pathway to Southwest Airlines with tuition assistance available for eligible candidates.
+                <strong>Southwest Destination 225°:</strong> Southwest's pathway programme was paused in 2025/2026 as Southwest restructured its operations. Check Southwest's careers page for the current status before applying.
               </p>
             </>
           ),
@@ -183,15 +228,15 @@ export default function HowToBecomePilotUS() {
               </p>
               <ul className="list-disc pl-5 space-y-2 mt-2 mb-4">
                 <li>FAA First Class Medical: $200</li>
-                <li>Private Pilot Licence: $15,000</li>
-                <li>Instrument Rating: $12,000</li>
-                <li>Commercial Pilot Licence (including time building): $35,000</li>
+                <li>Private Pilot Licence: $12,000–$28,000</li>
+                <li>Instrument Rating: $10,000–$17,000</li>
+                <li>Commercial Pilot Licence (including time building): $18,000–$35,000</li>
                 <li>Multi-Engine Rating: $6,000</li>
                 <li>CFI, CFII, and MEI (Instructor Ratings): $12,000</li>
                 <li>Living costs during training (12–18 months): $25,000–$40,000</li>
               </ul>
               <p>
-                <strong>Total Training Cost: $80,000–$120,000</strong>
+                <strong>Total Training Cost: $80,000–$124,000</strong> (ATP Flight School's fixed-price programme: $123,995 from zero; Epic Flight Academy: $83,647)
               </p>
               <p>
                 Financing this amount is the biggest hurdle for most students. Federal student loans are only available if your flight training is part of a degree programme at an accredited university. If you attend a standalone flight school (like ATP), you must rely on private aviation loans from lenders like Sallie Mae, College Ave, or Meritize, which often require a co-signer and carry higher interest rates.

@@ -60,47 +60,54 @@ const FundPilotTrainingUSA = () => {
               </p>
               <p>
                 Here is a general breakdown of estimated costs for key certificates:
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead>
-                    <tr>
-                      <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Certificate/Rating</th>
-                      <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estimated Cost (USD)</th>
-                      <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Typical Hours</th>
-                    </tr>
-                  </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Private Pilot Certificate (PPL)</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$10,000 - $17,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap">40-60</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Instrument Rating (IR)</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$10,000 - $15,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap">40-50</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Commercial Pilot Certificate (CPL)</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$25,000 - $40,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap">120-250</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Certified Flight Instructor (CFI)</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$5,000 - $8,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap">20-30</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Multi-Engine Rating (ME)</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$4,000 - $7,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap">10-15</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">ATP CTP (Airline Transport Pilot Certification Training Program)</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$5,000 - $10,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap">~40 (ground & sim)</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="overflow-x-auto my-6">
+                  <table className="w-full text-sm text-left">
+                    <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                      <tr>
+                        <th className="px-4 py-3 font-semibold">Certificate / Rating</th>
+                        <th className="px-4 py-3 font-semibold">Estimated Cost (USD)</th>
+                        <th className="px-4 py-3 font-semibold">Typical Hours</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-white/10 text-white/80">
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3 font-medium text-white">Private Pilot Certificate (PPL)</td>
+                        <td className="px-4 py-3">$15,000 – $29,000</td>
+                        <td className="px-4 py-3">40–60 hrs</td>
+                      </tr>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3 font-medium text-white">Instrument Rating (IR)</td>
+                        <td className="px-4 py-3">$10,000 – $17,000</td>
+                        <td className="px-4 py-3">40–50 hrs</td>
+                      </tr>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3 font-medium text-white">Commercial Pilot Certificate (CPL)</td>
+                        <td className="px-4 py-3">$20,000 – $40,000</td>
+                        <td className="px-4 py-3">120–250 hrs total</td>
+                      </tr>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3 font-medium text-white">CFI / CFII / MEI</td>
+                        <td className="px-4 py-3">$11,000 – $29,000</td>
+                        <td className="px-4 py-3">~60–80 hrs</td>
+                      </tr>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3 font-medium text-white">ATP CTP</td>
+                        <td className="px-4 py-3">$5,000 – $10,000</td>
+                        <td className="px-4 py-3">~40 hrs (ground + sim)</td>
+                      </tr>
+                      <tr className="hover:bg-white/5 transition-colors bg-white/5 font-semibold">
+                        <td className="px-4 py-3 text-white">Total (ATP accelerated — ATP Flight School)</td>
+                        <td className="px-4 py-3 text-white">$123,995 (fixed)</td>
+                        <td className="px-4 py-3 text-white">7–9 months</td>
+                      </tr>
+                      <tr className="hover:bg-white/5 transition-colors bg-white/5 font-semibold">
+                        <td className="px-4 py-3 text-white">Total (ATP accelerated — Epic Flight Academy)</td>
+                        <td className="px-4 py-3 text-white">$83,647 (fixed)</td>
+                        <td className="px-4 py-3 text-white">~12 months</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </p>
             </>
           ),
