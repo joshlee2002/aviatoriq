@@ -4,126 +4,89 @@ import GuideScopeBanner from "@/components/GuideScopeBanner";
 export default function IntegratedVsModular() {
   return (
     <GuideLayout
-      title="Integrated vs Modular ATPL Training: Which Is Right for You?"
-      subtitle="An honest comparison of the two main routes to an ATPL — including cost, timeline, employment prospects, and which suits different life situations."
+      title="Integrated vs Modular ATPL Training UK 2026: Which Is Right for You?"
+      subtitle="An honest, data-driven comparison of the two main routes to an ATPL — including verified 2026 costs, real timelines, airline acceptance, and a decision framework for your situation."
       canonical="/guides/integrated-vs-modular"
-      metaDescription="Integrated vs modular ATPL training: honest 2025 comparison of cost, timeline, employment prospects and which route suits your situation. Includes a free decision tool."
+      metaDescription="Integrated vs modular ATPL training UK 2026: honest comparison of cost, timeline, airline acceptance and which route suits your situation. Includes real 2026 prices from CAE, Acron, Stapleford and Bristol Groundschool."
       faqSchema={[
-        { question: "What is the difference between integrated and modular ATPL training?", answer: "Integrated training is a single full-time programme (18–24 months, £90k–£130k) that takes you from zero to frozen ATPL. Modular training lets you complete each licence stage separately (3–5 years part-time, £40k–£80k), allowing you to keep working." },
-        { question: "Is integrated or modular training better for getting an airline job?", answer: "Historically integrated graduates had an advantage with some airlines. Today most major airlines accept both routes. What matters more is your total hours, sim performance and interview preparation." },
-        { question: "Can I do modular ATPL training while working full-time?", answer: "Yes. Modular training is specifically designed to allow this. You complete modules in stages — PPL, night rating, instrument rating, CPL, multi-engine, and ATPL theory — around your existing commitments." },
-        { question: "Which is cheaper, integrated or modular ATPL?", answer: "Modular is typically cheaper: £40,000–£80,000 vs £90,000–£130,000 for integrated. However modular takes longer, so you need to factor in living costs and the opportunity cost of training part-time." },
+        { question: "What is the difference between integrated and modular ATPL training?", answer: "Integrated training is a single full-time programme (18–24 months, £95,880–£119,500) that takes you from zero to frozen ATPL at one academy. Modular training lets you complete each licence stage separately (2–5 years, £77,000–£90,000 in the UK), allowing you to keep working between phases." },
+        { question: "Is integrated or modular training better for getting an airline job?", answer: "Both routes lead to the same frozen ATPL qualification. Major UK airlines including British Airways, easyJet, Ryanair, and Jet2 all accept both integrated and modular graduates. What matters most is your simulator performance, interview preparation, and total hours. The MPL route (via BA Speedbird or easyJet Generation) is the only route where the training method is tied to a specific airline." },
+        { question: "Can I do modular ATPL training while working full-time?", answer: "Yes. Modular training is specifically designed to allow this. You complete modules in stages — PPL, night rating, ATPL theory, hour building, CPL, MEP, instrument rating, and APS MCC — around your existing commitments. The ATPL theory phase (Bristol Groundschool) is entirely distance-learning and can be done evenings and weekends." },
+        { question: "Which is cheaper, integrated or modular ATPL in the UK?", answer: "Modular is typically cheaper: approximately £77,000–£90,000 at a UK school (Stapleford 2026 prices) vs £95,880–£119,500 for integrated. Training in Poland with Bartolini Air reduces modular costs to £55,000–£65,000 for an EASA licence. However, modular takes longer, so factor in living costs and the opportunity cost of an extended training timeline." },
+        { question: "How many ATPL theory exams are there in the UK?", answer: "The UK CAA requires 13 ATPL theoretical knowledge subjects. These are: Air Law, Aircraft General Knowledge (Airframes & Systems), Aircraft General Knowledge (Electrics), Aircraft General Knowledge (Powerplant), Aircraft General Knowledge (Instrumentation), Mass & Balance, Performance, Flight Planning & Monitoring, Human Performance, Meteorology, General Navigation, Radio Navigation, and Operational Procedures. The initial sitting fee is £1,261 per paper; resits are £97 per paper." },
+        { question: "What is the MPL route?", answer: "The Multi-Pilot Licence (MPL) is a third training route, only available through sponsored airline cadet programmes such as the BA Speedbird Academy and easyJet Generation Pilot programme. It is fully funded by the airline and leads directly to a First Officer role, but the licence is type-specific and cannot easily be used at other airlines without conversion." },
       ]}
-      readTime="9 min read"
+      readTime="12 min read"
       heroImage="/manus-storage/integrated-training_a566fa21.jpg"
       ctaHref="/quiz"
       ctaText="Find your best training route"
       relatedGuides={[
-        { title: "How to Become a Pilot in the UK (2025 Complete Guide)", href: "/guides/HowToBecomePilot" ,          time: "8 min" },
-        { title: "Pilot Training Costs in the UK: The Complete 2025 Breakdown", href: "/guides/PilotTrainingCosts" ,          time: "8 min" },
-        { title: "The Best Route to Becoming an Airline Pilot in 2025", href: "/guides/BestRouteToAirline" ,          time: "8 min" },
-        { title: "Pilot Training Timeline: How Long Does It Actually Take?", href: "/guides/TrainingTimeline" ,          time: "8 min" },
+        { title: "Best Flight Schools in the UK 2026", href: "/guides/best-flight-schools-uk-2026", time: "14 min" },
+        { title: "Pilot Training Costs UK 2026", href: "/guides/pilot-training-costs", time: "8 min" },
+        { title: "UK Airline Cadet Programmes", href: "/guides/uk-cadet-programmes", time: "10 min" },
+        { title: "How to Finance Pilot Training UK", href: "/guides/pilot-training-finance-uk", time: "9 min" },
       ]}
       sections={[
         {
-          heading: "Understanding the Two Main Paths to Your ATPL",
+          heading: "The Three Routes to a Frozen ATPL",
           content: (
             <>
               <p>
-                Aspiring airline pilots in the UK face a fundamental decision early in their journey: should they pursue an Integrated ATPL or a Modular ATPL? This choice significantly impacts your training timeline, total cost, and even the structure of your daily life for the next few years. It's not merely a preference; it's a strategic decision that should align with your personal circumstances, financial situation, and career aspirations. Many fall into the trap of believing one route is inherently superior, but the reality is far more nuanced.
+                Aspiring airline pilots in the UK have three routes to a frozen ATPL: integrated, modular, and MPL. The integrated and modular routes are self-funded and lead to the same qualification. The MPL is only available through sponsored airline cadet programmes. Understanding the real differences — not the marketing version — is the most important decision you will make before spending £80,000–£120,000.
               </p>
-              <img src="/manus-storage/integrated-school_e4427060.jpg" alt="Integrated flight training school" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/modular-training_ba7d8263.jpg" alt="Modular pilot training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/integrated-vs-modular-timeline_77509ad4.png" alt="Integrated vs modular training timeline" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <p>
-                Both routes lead to the same qualification – a 'frozen' ATPL (Airline Transport Pilot Licence), which is the prerequisite for becoming a First Officer with an airline. The key difference lies in the structure and pace of training. Integrated courses are typically full-time, intensive programmes delivered by a single flight school, while modular training allows for greater flexibility, often undertaken part-time across multiple schools. Understanding these core distinctions is crucial before committing significant time and money.
-              </p>
-            </>
-          ),
-        },
-        {
-          heading: "The Integrated ATPL: A Fast-Track, All-Inclusive Approach",
-          content: (
-            <>
-              <p>
-                An Integrated ATPL programme is designed to take a cadet with little to no flying experience straight through to a frozen ATPL in a continuous, full-time course. Typically lasting around 18 months, these programmes are highly structured and intensive, often requiring relocation to a dedicated training academy. You'll progress through all phases of training – from ab-initio flight training to advanced multi-crew cooperation – under one roof, fostering a strong cohort environment and a consistent learning methodology.
-              </p>
-              <p>
-                While appealing for its speed and comprehensive nature, the integrated route comes with a significant financial commitment, generally ranging from £80,000 to £130,000. This cost usually covers all flight instruction, ground school, examinations, and often accommodation. However, it's vital to scrutinise what's included, as type rating costs (the specific aircraft training required by an airline) are almost always additional and can add another £20,000-£30,000, though airlines sometimes cover this for new recruits.
-              </p>
-              <p>
-                The perceived advantage of integrated training is often its direct link to airline recruitment, with some academies having preferential agreements. However, this landscape has evolved significantly. While integrated cadets historically had a smoother path, airlines now widely accept and value modular graduates, focusing more on individual aptitude and performance rather than the training route itself. The myth that integrated is always better for employment prospects is largely outdated.
-              </p>
-            </>
-          ),
-        },
-        {
-          heading: "The Modular ATPL: Flexibility, Cost-Effectiveness, and Self-Paced Learning",
-          content: (
-            <>
-              <p>
-                The Modular ATPL route offers a more flexible and often more affordable path to the flight deck. Instead of one continuous programme, you complete each phase of training (PPL, ATPL theory, hour building, CPL, IR, MCC/JOC) as separate 'modules'. This allows you to train at your own pace, spread costs over a longer period, and even work alongside your studies. The total timeline typically ranges from 3 to 5 years, though this can vary significantly based on individual commitment and financial resources.
-              </p>
-              <p>
-                Financially, modular training is generally more accessible, with total costs for a frozen ATPL typically falling between £40,000 and £80,000. This substantial saving compared to integrated routes is a major draw. However, it requires a high degree of self-discipline and organisation, as you are responsible for managing your own progression, choosing different schools for different modules, and ensuring all regulatory requirements are met. The 'hidden' costs of modular, such as travel between schools or resit fees, can accumulate if not managed carefully.
-              </p>
-              <p>
-                The modular route is particularly well-suited for individuals who need to maintain employment, have family commitments, or prefer to learn at a slower, more deliberate pace. It also allows for greater control over the quality of instruction, as you can select the best schools for each specific module. Many successful airline pilots today are modular graduates, demonstrating that this route is equally valid and respected within the industry.
-              </p>
-            </>
-          ),
-        },
-        {
-          heading: "Integrated vs Modular: A Direct Comparison",
-          content: (
-            <>
-              <p>
-                To help you make an informed decision, here's a direct comparison of the key aspects of Integrated and Modular ATPL training. This table highlights the practical differences in cost, timeline, structure, and suitability for various individuals. Remember, the 'best' route is the one that aligns with your personal circumstances and learning style, not necessarily the most expensive or fastest.
-              </p>
-              <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
+
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
                     <tr>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Feature</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Integrated ATPL</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Modular ATPL</th>
+                      <th className="px-4 py-3 font-semibold">Feature</th>
+                      <th className="px-4 py-3 font-semibold">Integrated ATPL</th>
+                      <th className="px-4 py-3 font-semibold">Modular ATPL</th>
+                      <th className="px-4 py-3 font-semibold">MPL (Sponsored)</th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Total Cost (approx.)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">£80,000 - £130,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">£40,000 - £80,000</td>
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">2026 Cost (UK)</td>
+                      <td className="px-4 py-3">£95,880–£119,500</td>
+                      <td className="px-4 py-3">£77,000–£90,000</td>
+                      <td className="px-4 py-3">£0 (airline-funded)</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Timeline (approx.)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">18 - 24 months</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">3 - 5 years</td>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Timeline</td>
+                      <td className="px-4 py-3">18–24 months</td>
+                      <td className="px-4 py-3">2–5 years</td>
+                      <td className="px-4 py-3">18–24 months</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Structure</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Full-time, continuous, single school</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Part-time possible, self-paced, multiple schools</td>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Structure</td>
+                      <td className="px-4 py-3">Full-time, one school</td>
+                      <td className="px-4 py-3">Self-paced, multiple schools</td>
+                      <td className="px-4 py-3">Full-time, airline-directed</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Flexibility</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Low</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">High</td>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Work alongside?</td>
+                      <td className="px-4 py-3">No</td>
+                      <td className="px-4 py-3">Yes (between phases)</td>
+                      <td className="px-4 py-3">No</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Entry Requirements</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Often higher academic, aptitude tests</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">PPL required for advanced modules</td>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Airline flexibility</td>
+                      <td className="px-4 py-3">Any airline</td>
+                      <td className="px-4 py-3">Any airline</td>
+                      <td className="px-4 py-3">Sponsoring airline only</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Employment Prospects</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Good, historically perceived as 'preferred'</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Equally good, focus on individual merit</td>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Availability</td>
+                      <td className="px-4 py-3">Open to all</td>
+                      <td className="px-4 py-3">Open to all</td>
+                      <td className="px-4 py-3">Competitive selection only</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Ideal Candidate</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Young, unencumbered, strong financial backing</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Working adult, budget-conscious, self-motivated</td>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Best for</td>
+                      <td className="px-4 py-3">Structured learners with funding</td>
+                      <td className="px-4 py-3">Working adults, budget-conscious</td>
+                      <td className="px-4 py-3">Highly competitive candidates</td>
                     </tr>
                   </tbody>
                 </table>
@@ -132,128 +95,267 @@ export default function IntegratedVsModular() {
           ),
         },
         {
-          heading: "The Frozen ATPL and Airline Preferences: What Airlines Really Look For",
+          heading: "Integrated ATPL: What You're Actually Paying For",
           content: (
             <>
               <p>
-                Regardless of whether you choose the integrated or modular route, your ultimate goal is to achieve a 'frozen ATPL'. This signifies that you have passed all 14 ATPL theoretical exams and completed the practical flight training (CPL/IR/MCC/JOC). It's called 'frozen' because it becomes 'unfrozen' and converts to a full ATPL once you accumulate 1,500 hours of flying experience, including a certain amount of multi-pilot time. Both integrated and modular paths lead to this identical qualification.
+                An integrated ATPL programme takes a cadet from zero experience to a frozen ATPL in a single, continuous, full-time course at one academy. In 2026, UK integrated programmes cost between £95,880 (Leading Edge Aviation, with Student Loans Company tuition loan) and £119,500 (FTEJerez UK CAA route). CAE Oxford is £99,900 and Acron Aviation (formerly L3Harris) is £102,500.
               </p>
               <p>
-                A common misconception is that airlines strongly prefer integrated graduates. While this might have held some truth in the past, the modern aviation industry is far more pragmatic. Airlines are primarily interested in a candidate's competence, attitude, and suitability for their operations. They look for strong technical skills, excellent CRM (Crew Resource Management) abilities, a professional demeanour, and the right soft skills. Many airlines now actively recruit from both integrated and modular backgrounds, often through their own cadet programmes or direct entry schemes.
+                The price includes everything: ATPL theory, all flying phases (PPL through to APS MCC), accommodation during the overseas flight phase, examiner fees, and in most cases a training guarantee that covers additional hours if you need extra support. What it does not include is the type rating — the aircraft-specific training required to join an airline — which costs an additional £20,000–£30,000 and is either self-funded or covered by the airline if you are accepted onto a sponsored cadet programme.
               </p>
               <p>
-                Your performance during selection, simulator assessments, and interviews will weigh far more heavily than the specific training route you took. Focus on excelling in your chosen path, building strong foundational knowledge, and developing the professional attributes that airlines value. Don't let outdated perceptions about integrated superiority deter you from the modular route if it's a better fit for your circumstances.
+                The genuine advantage of integrated training is not the qualification itself (which is identical to modular) but the structure. You are in a cohort, progressing through defined phases, with an academy managing your schedule. For students who struggle with self-motivation or who want the fastest possible route to a frozen ATPL, integrated is the right choice. The airline partnership networks at CAE Oxford and Acron Aviation also provide direct access to BA Speedbird and easyJet Generation selection processes.
               </p>
             </>
           ),
         },
         {
-          heading: "Beyond the Core Training: Hour Building and Type Ratings",
+          heading: "Modular ATPL: The Real 2026 Cost Breakdown",
           content: (
             <>
               <p>
-                While the ATPL training forms the backbone of your journey, there are other critical components and costs to consider. For modular students, 'hour building' is a significant phase where you accumulate the necessary flight hours (typically 100 hours as pilot-in-command) required before commencing the Commercial Pilot Licence (CPL) and Instrument Rating (IR). This is often done in light aircraft and can cost anywhere from £15,000 to £25,000, depending on the aircraft type and school.
+                Modular training means completing each phase of the ATPL separately, at your own pace, and often at different schools. The total cost at a UK school in 2026 is approximately £77,000–£90,000 — significantly less than integrated, but not the £40,000–£60,000 figure that is often quoted on forums (those figures are outdated or exclude CAA fees and hour building).
               </p>
               <p>
-                Another major consideration is the 'type rating'. This is specific training required to fly a particular aircraft type (e.g., Boeing 737, Airbus A320). Type ratings are expensive, typically costing £20,000 to £30,000. Historically, cadets often had to self-fund this, but increasingly, airlines are offering sponsored type ratings as part of their recruitment packages, especially for those joining cadet programmes. It's crucial to factor this potential cost into your overall financial planning, as it's a non-negotiable step to flying for an airline.
+                The following breakdown is based on published prices from Stapleford Flight Centre (updated 1 April 2026) and Bristol Groundschool:
               </p>
-            </>
-          ),
-        },
-        {
-          heading: "Choosing Your Path: Which Route is Right for Your Life Situation?",
-          content: (
-            <>
-              <p>
-                The decision between integrated and modular training is deeply personal and should be based on an honest assessment of your circumstances. If you are young, have significant financial backing (or access to it), are unencumbered by existing commitments, and thrive in an intensive, structured environment, an integrated course might be an excellent fit. It offers a clear, fast-paced progression with a strong peer support network.
-              </p>
-              <p>
-                Conversely, if you need to continue working, have family responsibilities, prefer to spread the financial burden over a longer period, or learn best at your own pace, the modular route is likely more suitable. It demands greater self-motivation and organisation but provides unparalleled flexibility. Many working adults successfully transition to airline careers via the modular path, proving it's a viable and respected option.
-              </p>
-              <p>
-                Consider your learning style: do you prefer a 'classroom to cockpit' approach with minimal breaks, or do you benefit from time to consolidate learning and gain real-world experience? Your answer to this question, combined with your financial reality, will often point you towards the most appropriate training route. Don't let external pressure dictate your choice; this is your career, and your journey.
-              </p>
-            </>
-          ),
-        },
-        {
-          heading: "Modular ATPL Key Phases & Estimated Costs",
-          content: (
-            <>
-              <p>
-                For those considering the modular route, understanding the individual components and their associated costs is essential for budgeting and planning. This table breaks down the typical phases of modular ATPL training in the UK, along with realistic cost estimates. These figures are approximate and can vary based on the chosen flight school, aircraft type, and individual performance (e.g., requiring additional flight hours).
-              </p>
-              <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
+
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
                     <tr>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Phase</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estimated Cost (UK)</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estimated Duration</th>
+                      <th className="px-4 py-3 font-semibold">Phase</th>
+                      <th className="px-4 py-3 font-semibold">2026 Cost (UK)</th>
+                      <th className="px-4 py-3 font-semibold">Min Hours</th>
+                      <th className="px-4 py-3 font-semibold">Duration</th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">PPL (Private Pilot Licence)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">First licence, allows private flying.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">£8,000 - £15,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">6 - 18 months</td>
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">PPL</td>
+                      <td className="px-4 py-3">~£9,600</td>
+                      <td className="px-4 py-3">45 hrs</td>
+                      <td className="px-4 py-3">6–12 months</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ATPL Theory</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">14 theoretical exams.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">£3,000 - £5,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">6 - 18 months</td>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">ATPL Theory (BGS course + CAA exams)</td>
+                      <td className="px-4 py-3">£3,631 + up to £16,393 CAA fees</td>
+                      <td className="px-4 py-3">13 subjects</td>
+                      <td className="px-4 py-3">6–18 months</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Hour Building</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Accumulating 100 PIC hours.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">£15,000 - £25,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">6 - 12 months</td>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Night Rating</td>
+                      <td className="px-4 py-3">~£1,650</td>
+                      <td className="px-4 py-3">5 hrs</td>
+                      <td className="px-4 py-3">1–2 weeks</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">CPL (Commercial Pilot Licence)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Allows flying for remuneration.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">£10,000 - £15,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2 - 4 months</td>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Hour Building (~130 hrs)</td>
+                      <td className="px-4 py-3">~£21,320 (UK) / ~£14,000 (Spain/Florida)</td>
+                      <td className="px-4 py-3">~130 hrs</td>
+                      <td className="px-4 py-3">3–9 months</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">IR (Instrument Rating)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Allows flying in instrument meteorological conditions.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">£15,000 - £25,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">3 - 6 months</td>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">CPL</td>
+                      <td className="px-4 py-3">~£8,265</td>
+                      <td className="px-4 py-3">25 hrs</td>
+                      <td className="px-4 py-3">6–10 weeks</td>
                     </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">MCC/JOC (Multi-Crew Co-operation/Jet Orientation Course)</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Essential for multi-pilot operations.</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">£5,000 - £8,000</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2 - 4 weeks</td>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">MEP Rating</td>
+                      <td className="px-4 py-3">~£4,044</td>
+                      <td className="px-4 py-3">6 hrs</td>
+                      <td className="px-4 py-3">1–2 weeks</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">CB Instrument Rating</td>
+                      <td className="px-4 py-3">~£16,505</td>
+                      <td className="px-4 py-3">35 hrs</td>
+                      <td className="px-4 py-3">3–5 months</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">APS MCC</td>
+                      <td className="px-4 py-3">~£5,995</td>
+                      <td className="px-4 py-3">40 hrs sim</td>
+                      <td className="px-4 py-3">2–3 weeks</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">CAA licence fees, skill tests</td>
+                      <td className="px-4 py-3">~£3,000–£5,000</td>
+                      <td className="px-4 py-3">—</td>
+                      <td className="px-4 py-3">—</td>
+                    </tr>
+                    <tr className="bg-white/5">
+                      <td className="px-4 py-3 font-medium text-white">Total (UK, excl. living costs)</td>
+                      <td className="px-4 py-3 font-medium text-white">~£77,000–£90,000</td>
+                      <td className="px-4 py-3">—</td>
+                      <td className="px-4 py-3">2–5 years</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-white/50 mt-2">
+                Costs based on Stapleford Flight Centre pricelist from 1 April 2026 and Bristol Groundschool published prices. ATPL theory CAA exam fees assume all 13 papers passed at first sitting (£1,261 per paper = £16,393 total). Hour building overseas (Spain or Florida) reduces that line item to approximately £14,000. Total can be reduced to £55,000–£65,000 by training with Bartolini Air in Poland for an EASA licence.
+              </p>
             </>
           ),
         },
         {
-          heading: "The Myth: Is Integrated Always Better?",
+          heading: "The 13 ATPL Theory Subjects",
           content: (
             <>
               <p>
-                For many years, a prevailing myth in the aviation industry suggested that integrated ATPL training was the 'gold standard' and offered a superior pathway to airline employment. This perception often stemmed from the historical direct recruitment pipelines some integrated academies had with major airlines. However, the reality in 2025 is significantly different. The industry has matured, and airlines now recognise the value and competence of pilots from both training routes.
+                Both integrated and modular students must pass the same 13 UK CAA ATPL theoretical knowledge subjects. These are examined by the CAA at approved test centres. The initial sitting fee is £1,261 per paper; resits cost £97 per paper. Passing all 13 at the first attempt costs £16,393 in CAA fees alone — a figure that is frequently omitted from modular cost estimates.
+              </p>
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">#</th>
+                      <th className="px-4 py-3 font-semibold">Subject</th>
+                      <th className="px-4 py-3 font-semibold">Typical Difficulty</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    {[
+                      ["1", "Air Law", "Medium"],
+                      ["2", "Aircraft General Knowledge — Airframes & Systems", "Hard"],
+                      ["3", "Aircraft General Knowledge — Electrics", "Hard"],
+                      ["4", "Aircraft General Knowledge — Powerplant", "Hard"],
+                      ["5", "Aircraft General Knowledge — Instrumentation", "Medium"],
+                      ["6", "Mass & Balance", "Medium"],
+                      ["7", "Performance", "Hard"],
+                      ["8", "Flight Planning & Monitoring", "Hard"],
+                      ["9", "Human Performance & Limitations", "Easy"],
+                      ["10", "Meteorology", "Medium"],
+                      ["11", "General Navigation", "Hard"],
+                      ["12", "Radio Navigation", "Hard"],
+                      ["13", "Operational Procedures", "Easy"],
+                    ].map(([num, subject, difficulty]) => (
+                      <tr key={num} className="hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3 text-white/50">{num}</td>
+                        <td className="px-4 py-3 font-medium text-white">{subject}</td>
+                        <td className="px-4 py-3 text-white/70">{difficulty}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                Difficulty ratings are based on student feedback from PPRuNe forums and Bristol Groundschool guidance. Performance, General Navigation, and Flight Planning are consistently the hardest subjects. Most students allow 12–18 months for the full theory phase when studying alongside work.
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "Which Airlines Accept Which Route?",
+          content: (
+            <>
+              <p>
+                This is the question most candidates want answered before choosing a route. The short answer is: all major UK airlines accept both integrated and modular graduates. The longer answer is that the route to selection differs.
+              </p>
+
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Airline</th>
+                      <th className="px-4 py-3 font-semibold">Integrated</th>
+                      <th className="px-4 py-3 font-semibold">Modular</th>
+                      <th className="px-4 py-3 font-semibold">MPL (Sponsored)</th>
+                      <th className="px-4 py-3 font-semibold">Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">British Airways</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-green-400">✓ (Speedbird)</td>
+                      <td className="px-4 py-3">Speedbird MPL via CAE or Acron. Direct entry accepts both routes.</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">easyJet</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-green-400">✓ (Generation)</td>
+                      <td className="px-4 py-3">Generation MPL via CAE. Direct entry accepts both routes.</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Ryanair</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-white/30">—</td>
+                      <td className="px-4 py-3">Mentored Programme via Bartolini Air (EASA). Self-fund type rating.</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Jet2</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-white/30">—</td>
+                      <td className="px-4 py-3">Jet2FlightPath sponsored programme (60 places, 2026). Direct entry both routes.</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Wizz Air UK</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-white/30">—</td>
+                      <td className="px-4 py-3">Accepts both routes. Acron Aviation is a preferred feeder.</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">TUI Airways</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-green-400">✓</td>
+                      <td className="px-4 py-3 text-white/30">—</td>
+                      <td className="px-4 py-3">TUI MPL programme paused for 2026 intake.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p>
+                The MPL route is the only one where the training method is directly tied to a specific airline. An MPL licence is type-specific and cannot easily be used at another airline without conversion. If you are selected for BA Speedbird or easyJet Generation, the MPL is an excellent outcome — but you should not choose integrated training specifically hoping to get onto these programmes, as selection rates are very low.
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "Which Route Is Right for You?",
+          content: (
+            <>
+              <p>
+                The decision comes down to three factors: your financial situation, your life commitments, and your learning style.
               </p>
               <p>
-                The idea that integrated graduates are inherently more skilled or better prepared is largely unfounded. While integrated courses provide a highly structured environment, modular students often develop stronger self-reliance, problem-solving skills, and adaptability due to managing their own training progression. These qualities are highly valued by airlines. Your dedication, performance, and professional attitude throughout your training, regardless of the route, are what truly matter.
+                <strong>Choose integrated if:</strong> you have access to £95,000–£120,000 in funding (loan, family, savings), you have no dependants or employment commitments that prevent full-time training, and you want the fastest possible route to a frozen ATPL with a structured peer environment. The airline partnership networks at CAE Oxford and Acron Aviation provide the most direct access to BA and easyJet selection.
               </p>
               <p>
-                Don't let the 'integrated is better' myth pressure you into a training path that doesn't suit your financial situation or personal learning style. Both routes are legitimate and respected ways to achieve your frozen ATPL. Focus on choosing the path that allows you to perform at your best, manage your finances effectively, and ultimately become a competent and confident pilot. Your career success will be a testament to your skills, not just your training certificate.
+                <strong>Choose modular if:</strong> you need to keep working during training, you want to spread the financial burden over time, or you prefer to choose the best specialist school for each phase rather than committing to one academy. The total cost saving of £20,000–£40,000 compared to integrated is significant. The trade-off is a longer timeline (2–5 years) and the need to manage your own progression.
+              </p>
+              <p>
+                <strong>Apply for MPL if:</strong> you meet the academic and aptitude requirements and want to pursue BA Speedbird or easyJet Generation. These are the only routes where your training is fully funded. Acceptance rates are very competitive — treat it as a lottery ticket, not a plan.
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "References",
+          content: (
+            <>
+              <p className="text-xs text-white/50 space-y-1">
+                [1] Stapleford Flight Centre. "Modular Course Pricelist — Training Course Fees from 1st April 2026." <em>flysfc.com</em>.<br/>
+                [2] Bristol Groundschool. "ATPL(A) Course." <em>bristol.gs</em>. Accessed June 2026.<br/>
+                [3] CAA. "ATPL Theoretical Knowledge Examination Fees." Effective 1 April 2026. <em>caa.co.uk</em>.<br/>
+                [4] Leading Edge Aviation. "Integrated Pilot Training (LEAP) — Fees." <em>leadingedgeaviation.com</em>. Accessed June 2026.<br/>
+                [5] Airmappr. "Acron Aviation Review 2026." January 2026.<br/>
+                [6] Skyborne. "Integrated ATPL Course." <em>skyborne.com/uk/integrated-atpl-course/</em>. Accessed June 2026.
               </p>
             </>
           ),
         },
       ]}
-    scopeBanner={<><GuideScopeBanner scope="This guide covers integrated vs modular ATPL training under CAA/EASA regulations. The concepts apply globally, but costs and structures are UK-based." usHref="/us/guides/part-61-vs-141" usLabel="View USA equivalent (Part 61 vs 141) →" /></>}
+      scopeBanner={<GuideScopeBanner scope="This guide covers integrated vs modular ATPL training under UK CAA regulations. Costs are UK-based. EASA equivalents differ." usHref="/us/guides/part-61-vs-141" usLabel="View USA equivalent (Part 61 vs 141) →" />}
     />
   );
 }
