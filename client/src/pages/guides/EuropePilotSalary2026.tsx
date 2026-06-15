@@ -4,157 +4,555 @@ import GuideLayout from '@/components/GuideLayout';
 export default function EuropePilotSalary2026() {
   return (
     <GuideLayout
-      title="European Pilot Salary & Training Guide 2026"
-      subtitle="A comprehensive analysis of pilot compensation, career progression, and EASA licensing requirements across Europe."
+      title="Europe Pilot Salary 2026: Ryanair, easyJet, Wizz Air, Vueling"
+      subtitle="A comprehensive guide to pilot salaries in 2026 for major European low-cost carriers, including detailed breakdowns for First Officers and Captains."
+      canonical="/guides/europe-pilot-salary-2026"
+      metaDescription="Explore 2026 pilot salaries for Ryanair, easyJet, Wizz Air, and Vueling. Detailed tables, compensation structures, and career progression for First Officers and Captains."
       readTime="15 min"
-      author="AviatorIQ Research"
-      lastUpdated="June 2026"
-      category="Europe"
-      canonical="https://aviatoriq.com/europe/guides/pilot-salary-2026"
-      metaDescription="Discover the latest 2026 pilot salaries in Europe, compare LCCs vs Legacy carriers, and understand EASA Part-FCL licensing requirements."
-      ctaText="Check your pilot readiness"
-      ctaHref="/quiz"
       sections={[
         {
-          heading: "Introduction",
+          heading: "Introduction to European Pilot Salaries in 2026",
           content: (
             <>
-              <p>The European pilot market in 2026 is experiencing an unprecedented "arms race" for qualified flight crew. Airlines are aggressively competing through significant salary increases, attractive retention bonuses, and improved benefits packages. Pilot compensation has seen a remarkable 8-12% year-over-year growth through late 2025 and into 2026, substantially outpacing the Eurozone's average wage growth of approximately 3%.</p>
-              <p>This surge is primarily driven by a global shortage of 38,000 unfilled pilot positions, with over 16,000 European pilots anticipated to retire within the next five years. This demographic shift has firmly empowered labor, granting pilots significant leverage in negotiations and career progression.</p>
+              <p>The European aviation sector in 2026 continues to be a dynamic environment for pilots, particularly within the low-cost carrier (LCC) segment. Airlines like Ryanair, easyJet, Wizz Air, and Vueling are key players, each offering distinct compensation packages and career progression paths. This guide provides an in-depth look at pilot salaries for these airlines, focusing on 2026 data for First Officers and Captains, including base pay, variable components, and associated benefits.</p>
+              <p>The pilot market in Europe is characterized by competitive recruitment, retention bonuses, and varying compensation structures influenced by factors such as base location, seniority, and flight hours. Understanding these nuances is crucial for both aspiring and experienced pilots navigating their careers.</p>
             </>
-          )
+          ),
         },
         {
-          heading: "Pilot Salary Landscape in Europe (2026)",
+          heading: "Ryanair Pilot Salary 2026",
           content: (
             <>
-              <p>In 2026, European pilot salaries exhibit a broad spectrum, ranging from an entry-level First Officer (FO) in Eastern Europe earning around EUR35,000 annually to a highly experienced Senior Captain flying long-haul routes for major carriers like Lufthansa or Air France, who can command upwards of EUR280,000 per year. The compensation varies significantly based on factors such as the country of employment, the airline's business model, the pilot's seniority, and the type of aircraft flown.</p>
+              <p>Ryanair, Europe's largest low-cost airline, offers a competitive salary structure for its pilots, with significant variations based on rank, experience, and base. In 2026, Ryanair's compensation package includes a base salary, fixed allowances, and substantial variable sector pay.</p>
+              <h3>Overall Salary Ranges (Gross, 2026)</h3>
               <ul>
-                <li><strong>Entry First Officer (Low-Cost Carrier - LCC):</strong> EUR35,000 - EUR85,000 gross per annum.</li>
-                <li><strong>Entry First Officer (Legacy Carrier):</strong> EUR50,000 - EUR100,000 gross per annum.</li>
-                <li><strong>Senior First Officer:</strong> EUR65,000 - EUR135,000 gross per annum.</li>
-                <li><strong>Captain (Short-haul):</strong> EUR90,000 - EUR210,000 gross per annum.</li>
-                <li><strong>Captain (Long-haul):</strong> EUR160,000 - EUR280,000 gross per annum.</li>
+                <li><strong>First Officer (FO):</strong> €45,000 – €93,000 per year. This range includes cadets (Second Officers) at the lower end, with three-stripe FOs typically starting around €53,000.</li>
+                <li><strong>Captain:</strong> €145,000 – €175,000 per year. Typical line Captains earn between €143,000 and €165,000, with the higher end requiring instructor supplements (TRE/TRI).</li>
               </ul>
-              <p>One notable trend is the accelerated command upgrade timeline at LCCs, where First Officers can become Captains in 3.5-5 years (e.g., Ryanair, Wizz Air), compared to 8-15 years at traditional legacy carriers.</p>
-              
-              <h3>Pilot Salary by Country  -  Top 15</h3>
-              <p>Location remains the most significant determinant of pilot compensation in Europe. While Western and Northern European countries generally offer the highest gross salaries, Eastern European nations often provide superior purchasing power due to lower living costs and favorable tax regimes.</p>
-              <table className="w-full text-sm text-left border-collapse">
+              <p>Approximately 30-50% of a pilot's total annual earnings at Ryanair come from variable sector pay, highlighting the importance of flight hours and productivity.</p>
+
+              <h3>Captain Base Salary by Region (2026)</h3>
+              <table>
                 <thead>
-                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Country</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Avg FO (Gross)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Avg Captain (Gross)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Tax Rate</th></tr>
+                  <tr>
+                    <th>Region</th>
+                    <th>Annual Base</th>
+                    <th>Fixed Allowances</th>
+                    <th>Total Fixed Floor</th>
+                  </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇨🇭 Switzerland</td><td className="px-4 py-3 text-white/80">EUR79,000</td><td className="px-4 py-3 text-white/80">EUR142,000+</td><td className="px-4 py-3 text-white/80">20-25%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇧🇪 Belgium</td><td className="px-4 py-3 text-white/80">EUR77,000</td><td className="px-4 py-3 text-white/80">EUR138,000+</td><td className="px-4 py-3 text-white/80">40-50%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇮🇪 Ireland</td><td className="px-4 py-3 text-white/80">EUR75,000</td><td className="px-4 py-3 text-white/80">EUR135,000+</td><td className="px-4 py-3 text-white/80">40%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇩🇪 Germany</td><td className="px-4 py-3 text-white/80">EUR74,000</td><td className="px-4 py-3 text-white/80">EUR150,000+</td><td className="px-4 py-3 text-white/80">35-45%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇳🇱 Netherlands</td><td className="px-4 py-3 text-white/80">EUR70,000</td><td className="px-4 py-3 text-white/80">EUR130,000+</td><td className="px-4 py-3 text-white/80">37-49.5%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇦🇹 Austria</td><td className="px-4 py-3 text-white/80">EUR70,000</td><td className="px-4 py-3 text-white/80">EUR125,000+</td><td className="px-4 py-3 text-white/80">35-45%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇫🇮 Finland</td><td className="px-4 py-3 text-white/80">EUR67,000</td><td className="px-4 py-3 text-white/80">EUR120,000+</td><td className="px-4 py-3 text-white/80">30-50%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇫🇷 France</td><td className="px-4 py-3 text-white/80">EUR61,000</td><td className="px-4 py-3 text-white/80">EUR109,200+</td><td className="px-4 py-3 text-white/80">30-45%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇮🇹 Italy</td><td className="px-4 py-3 text-white/80">EUR57,000</td><td className="px-4 py-3 text-white/80">EUR100,000+</td><td className="px-4 py-3 text-white/80">22-43%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇸🇪 Sweden</td><td className="px-4 py-3 text-white/80">EUR56,000</td><td className="px-4 py-3 text-white/80">EUR100,000+</td><td className="px-4 py-3 text-white/80">30-50%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇳🇴 Norway</td><td className="px-4 py-3 text-white/80">EUR55,000</td><td className="px-4 py-3 text-white/80">EUR125,000+</td><td className="px-4 py-3 text-white/80">35%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇬🇧 United Kingdom</td><td className="px-4 py-3 text-white/80">£54,000</td><td className="px-4 py-3 text-white/80">£178,000+</td><td className="px-4 py-3 text-white/80">20-45%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇪🇸 Spain</td><td className="px-4 py-3 text-white/80">EUR54,000</td><td className="px-4 py-3 text-white/80">EUR96,000+</td><td className="px-4 py-3 text-white/80">25-45%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇵🇹 Portugal</td><td className="px-4 py-3 text-white/80">EUR42,000</td><td className="px-4 py-3 text-white/80">EUR75,000+</td><td className="px-4 py-3 text-white/80">25-48%</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇵🇱 Poland</td><td className="px-4 py-3 text-white/80">EUR35,000</td><td className="px-4 py-3 text-white/80">EUR62,000+</td><td className="px-4 py-3 text-white/80">12-32%</td></tr>
-                </tbody>
-              </table>
-            </>
-          )
-        },
-        {
-          heading: "Low-Cost vs Legacy Carriers",
-          content: (
-            <>
-              <h3>Low-Cost Carriers (LCC) Salary Breakdown</h3>
-              <p>In 2026, salaries at Low-Cost Carriers (LCCs) have increasingly converged with those of narrowbody legacy carriers, particularly for Captains. LCCs often offer sector pay or flight pay, which can significantly boost earnings for high-productivity pilots.</p>
-              <table className="w-full text-sm text-left border-collapse">
-                <thead>
-                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">FO Range</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Captain Range</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Notes</th></tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ryanair (UK)</td><td className="px-4 py-3 text-white/80">£30-50K base</td><td className="px-4 py-3 text-white/80">£80-155K total</td><td className="px-4 py-3 text-white/80">+£37/sector</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ryanair (EU)</td><td className="px-4 py-3 text-white/80">EUR26-36K base</td><td className="px-4 py-3 text-white/80">EUR53-85K total</td><td className="px-4 py-3 text-white/80">+~EUR20/hr flight pay</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Wizz Air (East)</td><td className="px-4 py-3 text-white/80">EUR42-78K</td><td className="px-4 py-3 text-white/80">EUR108-180K</td><td className="px-4 py-3 text-white/80">+EUR0.02-0.04/km distance</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">easyJet (UK)</td><td className="px-4 py-3 text-white/80">£60-68K base</td><td className="px-4 py-3 text-white/80">£70-191K total</td><td className="px-4 py-3 text-white/80">£20-108/sector</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Eurowings</td><td className="px-4 py-3 text-white/80">EUR50-80K base</td><td className="px-4 py-3 text-white/80">EUR90-250K total</td><td className="px-4 py-3 text-white/80">+EUR3/hr duty pay</td></tr>
+                  <tr>
+                    <td>UK (Direct)</td>
+                    <td>£114,000</td>
+                    <td>£10,897</td>
+                    <td>£124,897</td>
+                  </tr>
+                  <tr>
+                    <td>Spain (Malta Air)</td>
+                    <td>€100,000–€104,500</td>
+                    <td>€10,350</td>
+                    <td>€112,850</td>
+                  </tr>
+                  <tr>
+                    <td>Ireland (DAC)</td>
+                    <td>€90,000 (est.)</td>
+                    <td>€15,000</td>
+                    <td>€105,000</td>
+                  </tr>
+                  <tr>
+                    <td>Poland (Buzz B2B)</td>
+                    <td>No base salary</td>
+                    <td>—</td>
+                    <td>Hourly rate only</td>
+                  </tr>
                 </tbody>
               </table>
 
-              <h3>Legacy / Flag Carriers Salary Breakdown</h3>
-              <p>Legacy and flag carriers have recently secured multi-year pay deals, often including cumulative increases of 15-20%. For example, Lufthansa's multi-year agreement includes a final 5% increment effective January 1, 2026, allowing Training Captains on widebody flagships to achieve up to EUR342,000.</p>
-              <table className="w-full text-sm text-left border-collapse">
+              <h3>First Officer Base Salary by Level (2026)</h3>
+              <table>
                 <thead>
-                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Total Gross/Year</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Notes</th></tr>
+                  <tr>
+                    <th>Level</th>
+                    <th>UK Base</th>
+                    <th>EU Base</th>
+                    <th>Notes</th>
+                  </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Lufthansa Group</td><td className="px-4 py-3 text-white/80">EUR60K-EUR280K+</td><td className="px-4 py-3 text-white/80">18% Cumulative Increase</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">British Airways</td><td className="px-4 py-3 text-white/80">£40K-£190K+</td><td className="px-4 py-3 text-white/80">Profit-Sharing Model</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Aer Lingus</td><td className="px-4 py-3 text-white/80">EUR125K-EUR338K</td><td className="px-4 py-3 text-white/80">17.75% raise; 21% pension</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Air France / KLM</td><td className="px-4 py-3 text-white/80">EUR160K-EUR350K+</td><td className="px-4 py-3 text-white/80">Strong unions, high social protection</td></tr>
+                  <tr>
+                    <td>Senior FO (1,500+ hrs)</td>
+                    <td>£59,500 + £10,397</td>
+                    <td>€35,000–€40,000 + allowances</td>
+                    <td>Command-ready, 15–20% raise over JFO</td>
+                  </tr>
+                  <tr>
+                    <td>Junior FO (Years 1–3)</td>
+                    <td>£53,000</td>
+                    <td>€30,000–€35,000</td>
+                    <td>Post line training</td>
+                  </tr>
+                  <tr>
+                    <td>Second Officer (Cadet)</td>
+                    <td>£39,000</td>
+                    <td>€16,800</td>
+                    <td>UK premium due to post-Brexit shortage</td>
+                  </tr>
                 </tbody>
               </table>
+
+              <h3>Sector Pay (Per Hour, 2026)</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>UK Rate</th>
+                    <th>EU (Malta Air)</th>
+                    <th>Buzz (Poland)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Captain</td>
+                    <td>£27–£40/hr</td>
+                    <td>€40–€55/hr</td>
+                    <td>€170.50/hr (all-in)</td>
+                  </tr>
+                  <tr>
+                    <td>Senior FO</td>
+                    <td>£15–£25/hr</td>
+                    <td>€23–€45/hr</td>
+                    <td>€88/hr (gross invoice)</td>
+                  </tr>
+                  <tr>
+                    <td>Second Officer</td>
+                    <td>Included in base</td>
+                    <td>€13–€14/hr</td>
+                    <td>Lower tier</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Note: Buzz (Poland) rates are all-in" and cover the lack of base salary, pension, sick pay, and holiday pay, as pilots are self-employed contractors.</p>
+
+              <h3>Captain Scenarios (850 hours, 2026)</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Base</th>
+                    <th>Total Gross</th>
+                    <th>Est. Monthly Net</th>
+                    <th>Why</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>🇬🇧 UK (Stansted)</td>
+                    <td>£150,500</td>
+                    <td>£7,200–£7,800</td>
+                    <td>40–45% tax + NI</td>
+                  </tr>
+                  <tr>
+                    <td>🇮🇹 Italy (Bergamo)</td>
+                    <td>€155,000–€165,000</td>
+                    <td>€8,500–€10,000</td>
+                    <td>Preferential flight crew tax</td>
+                  </tr>
+                  <tr>
+                    <td>🇵🇱 Poland (Buzz)</td>
+                    <td>€145,000 (invoice)</td>
+                    <td>€10,000+</td>
+                    <td>12–15% flat tax (B2B), no benefits</td>
+                  </tr>
+                  <tr>
+                    <td>🇮🇪 Ireland (Dublin)</td>
+                    <td>€155,000</td>
+                    <td>€7,500–€8,500</td>
+                    <td>High tax + housing crisis</td>
+                  </tr>
+                  <tr>
+                    <td>🇩🇪 Germany</td>
+                    <td>€145,000–€155,000</td>
+                    <td>€6,500–€7,500</td>
+                    <td>High tax + social contributions</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h3>First Officer Salary Progression (EU, 2026)</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Year</th>
+                    <th>Rank</th>
+                    <th>Gross Total (EU)</th>
+                    <th>Est. Net/Month</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Year 1</td>
+                    <td>Second Officer</td>
+                    <td>€35,000–€45,000</td>
+                    <td>€2,000–€2,500</td>
+                  </tr>
+                  <tr>
+                    <td>Year 3</td>
+                    <td>Junior FO</td>
+                    <td>€55,000–€65,000</td>
+                    <td>€3,200–€3,800</td>
+                  </tr>
+                  <tr>
+                    <td>Year 5</td>
+                    <td>Senior FO</td>
+                    <td>€80,000–€93,000</td>
+                    <td>€4,500–€5,500</td>
+                  </tr>
+                  <tr>
+                    <td>Year 4–5</td>
+                    <td>Captain Upgrade</td>
+                    <td>€145,000+</td>
+                    <td>€7,000+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Ryanair offers one of the fastest command upgrade timelines in Europe, typically 3.5 to 5 years, requiring a minimum of 2,900 hours.</p>
             </>
-          )
+          ),
         },
         {
-          heading: "EASA Pilot Licensing and Training (2026)",
+          heading: "easyJet Pilot Salary 2026",
           content: (
             <>
-              <p>Part-FCL (Flight Crew Licensing) is the cornerstone of pilot certification within the European Union Aviation Safety Agency (EASA) member states. It established a harmonized regulatory framework across 35 member states, meaning an EASA license obtained in one state is equally valid in any other.</p>
-              
-              <h3>License Progression Pathways</h3>
-              <p>The journey to becoming an airline pilot in Europe involves a structured progression through various licenses and ratings:</p>
-              <ol>
-                <li><strong>LAPL or PPL:</strong> Entry-level license. PPL hours count toward CPL. Costs typically range from EUR5,000-EUR12,000.</li>
-                <li><strong>Night Rating + Hour Building:</strong> Add a night rating and build flight hours towards the CPL minimum.</li>
-                <li><strong>ATPL Theory:</strong> Complete the 14 ATPL theory exams (e.g., Air Law, Meteorology, Principles of Flight).</li>
-                <li><strong>CPL + IR + MEP:</strong> Obtain a Commercial Pilot License with Instrument Rating and Multi-Engine Piston rating. This stage represents the "frozen ATPL" and qualifies a pilot for airline First Officer positions.</li>
-                <li><strong>MCC + Type Rating:</strong> Complete a Multi-Crew Cooperation (MCC) course, followed by a type rating for a specific airline aircraft.</li>
-                <li><strong>Full ATPL:</strong> After accumulating 1,500 hours total flight time, including 500 hours in multi-crew operations, the ATPL "unfreezes," making the pilot eligible for Captain upgrade training.</li>
-              </ol>
+              <p>easyJet, a prominent low-cost carrier in Europe, provides a compensation package that includes a basic salary, sector pay, and a loyalty bonus. These variable components significantly contribute to the overall take-home pay for pilots.</p>
 
-              <h3>Integrated vs Modular Training</h3>
-              <p>Both integrated and modular training pathways lead to the same outcome: a frozen ATPL and an airline career. The choice depends on financial resources, desired timeline, and personal circumstances.</p>
-              <table className="w-full text-sm text-left border-collapse">
+              <h3>Basic Salary by Rank (2026)</h3>
+              <table>
                 <thead>
-                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Aspect</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Integrated</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Modular</th></tr>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Basic Salary</th>
+                    <th>Notes</th>
+                  </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Duration</strong></td><td className="px-4 py-3 text-white/80">18-24 months full-time</td><td className="px-4 py-3 text-white/80">2-4 years flexible</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Flight Hours</strong></td><td className="px-4 py-3 text-white/80">~150 hours (lower minimum)</td><td className="px-4 py-3 text-white/80">~200 hours (higher minimum)</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Cost</strong></td><td className="px-4 py-3 text-white/80">EUR70,000-EUR150,000 upfront</td><td className="px-4 py-3 text-white/80">EUR60,000-EUR120,000 spread over time</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Best For</strong></td><td className="px-4 py-3 text-white/80">Financing available, fast-track career</td><td className="px-4 py-3 text-white/80">Self-funded, need flexibility</td></tr>
+                  <tr>
+                    <td>Second Officer</td>
+                    <td>£57,235</td>
+                    <td>Flat rate during training/line training</td>
+                  </tr>
+                  <tr>
+                    <td>First Officer</td>
+                    <td>£60,440 – £67,628</td>
+                    <td>Increases with seniority + sector pay</td>
+                  </tr>
+                  <tr>
+                    <td>Senior First Officer</td>
+                    <td>£70,000 – £83,020</td>
+                    <td>After ~3,000-4,000 factored hours</td>
+                  </tr>
+                  <tr>
+                    <td>Captain</td>
+                    <td>£144,597 – £166,286</td>
+                    <td>+ performance bonuses + longevity</td>
+                  </tr>
                 </tbody>
               </table>
+
+              <h3>Sector Pay (2026)</h3>
+              <ul>
+                <li><strong>Short (&lt;400nm):</strong> ~£20 FO / ~£34 Captain</li>
+                <li><strong>Medium (400-1000nm):</strong> ~£31 FO / ~£51 Captain</li>
+                <li><strong>Long (&gt;1500nm):</strong> ~£64 FO / ~£108 Captain</li>
+              </ul>
+              <p>Pilots typically fly 30-50 sectors per month, which can add an additional £10,000-£15,000 annually to their earnings.</p>
+              <p>easyJet also offers a predictable 5/4/5/3 roster pattern (5 days ON → 4 days OFF → 5 days ON → 3 days OFF), which is a significant lifestyle benefit, allowing for long-term planning. Flexi-roster options (75%/50%) are also available.</p>
             </>
-          )
-        }
+          ),
+        },
+        {
+          heading: "Wizz Air Pilot Salary 2026",
+          content: (
+            <>
+              <p>Wizz Air employs a distinct pay model where base salary is a retainer, and the majority of earnings come from variable components like distance pay, sector pay, and productivity bonuses. This model means income can fluctuate based on operational factors.</p>
+
+              <h3>Overall Salary Ranges (Gross, 2026)</h3>
+              <ul>
+                <li><strong>First Officer (FO):</strong> €42,000 – €100,000 per year, highly dependent on base and seniority.</li>
+                <li><strong>Captain:</strong> €108,000 – €210,000 per year, with UK Captains earning the highest gross at over £200,000.</li>
+              </ul>
+
+              <h3>Base Salary by Rank and Region (2026)</h3>
+              <h4>Continental Europe (Hungary / Malta AOC)</h4>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Year 1</th>
+                    <th>Year 3</th>
+                    <th>Year 5</th>
+                    <th>Year 10</th>
+                    <th>Top (14+)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Captain</td>
+                    <td>€32,400</td>
+                    <td>€53,000</td>
+                    <td>€61,000</td>
+                    <td>€73,000</td>
+                    <td>€81,000</td>
+                  </tr>
+                  <tr>
+                    <td>Senior FO</td>
+                    <td>€13,200</td>
+                    <td>€26,000</td>
+                    <td>—</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>First Officer</td>
+                    <td>€12,000</td>
+                    <td>€21,000</td>
+                    <td>—</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Second Officer</td>
+                    <td>€16,020</td>
+                    <td>—</td>
+                    <td>€21,000</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h4>Wizz Air UK (Luton / Gatwick)</h4>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Year 1</th>
+                    <th>Year 5</th>
+                    <th>Year 10</th>
+                    <th>Top (14+)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Captain</td>
+                    <td>£97,550</td>
+                    <td>£118,950</td>
+                    <td>£135,000</td>
+                    <td>£145,700</td>
+                  </tr>
+                  <tr>
+                    <td>First Officer</td>
+                    <td>£40,870</td>
+                    <td>£50,000</td>
+                    <td>—</td>
+                    <td>£55,000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>The disparity between UK and EU base salaries is significant, with UK Captains earning approximately three times more due to higher living costs in London.</p>
+
+              <h3>Variable Pay Components (2026)</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Component</th>
+                    <th>Captain</th>
+                    <th>First Officer</th>
+                    <th>Second Officer</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sector Pay (per leg)</td>
+                    <td>€30.00–€37.20</td>
+                    <td>€33.31</td>
+                    <td>€19.14</td>
+                  </tr>
+                  <tr>
+                    <td>Distance Pay (per km)</td>
+                    <td>€0.0769</td>
+                    <td>€0.0666</td>
+                    <td>€0.0351</td>
+                  </tr>
+                  <tr>
+                    <td>Landing Pay</td>
+                    <td>€37.20</td>
+                    <td>€33.31</td>
+                    <td>€19.14</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Wizz Air also offers additional variable pay, including a Productivity Bonus (€4,000/year per 1,000 hours flown as Captain), Off-Day Working pay (€120-€300/day), Random Roster Premium (€400-€600/month), and Office Duty pay (€150-€450/day).</p>
+
+              <h3>Captain Scenarios (850 hours, 2026)</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Base</th>
+                    <th>Total Gross</th>
+                    <th>Est. Monthly Net</th>
+                    <th>Purchasing Power</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>🇬🇧 UK (Luton)</td>
+                    <td>£200,000–£210,000</td>
+                    <td>£8,500–£9,000</td>
+                    <td>Medium/High</td>
+                  </tr>
+                  <tr>
+                    <td>🇷🇴 Bucharest</td>
+                    <td>€150,000–€180,000</td>
+                    <td>€9,000–€10,000</td>
+                    <td>Very High</td>
+                  </tr>
+                  <tr>
+                    <td>🇮🇹 Rome / Milan</td>
+                    <td>€150,000–€170,000</td>
+                    <td>€9,000–€10,000</td>
+                    <td>High</td>
+                  </tr>
+                  <tr>
+                    <td>🇭🇺 Budapest</td>
+                    <td>€130,000–€160,000</td>
+                    <td>€8,000–€9,500</td>
+                    <td>Very High</td>
+                  </tr>
+                  <tr>
+                    <td>🇵🇱 Poland (Gdansk)</td>
+                    <td>€120,000–€155,000</td>
+                    <td>€7,500–€9,000</td>
+                    <td>Very High</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h3>First Officer Salary Progression (2026)</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Stage</th>
+                    <th>EU Total (Gross)</th>
+                    <th>UK Total (Gross)</th>
+                    <th>Est. EU Net/Month</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Year 1 (FO)</td>
+                    <td>€42,000–€50,000</td>
+                    <td>£60,000–£65,000</td>
+                    <td>€2,500–€3,200</td>
+                  </tr>
+                  <tr>
+                    <td>Year 3 (SFO)</td>
+                    <td>€55,000–€70,000</td>
+                    <td>~£85,000</td>
+                    <td>€3,500–€4,500</td>
+                  </tr>
+                  <tr>
+                    <td>Top Scale (SFO)</td>
+                    <td>€78,000–€100,000</td>
+                    <td>—</td>
+                    <td>€5,000–€6,500</td>
+                  </tr>
+                  <tr>
+                    <td>Year 4–5 (Captain Upgrade)</td>
+                    <td>€108,000+</td>
+                    <td>£155,000+</td>
+                    <td>€7,000+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Wizz Air offers a fast track to command, typically 3.5 to 5 years, driven by aggressive fleet growth.</p>
+            </>
+          ),
+        },
+        {
+          heading: "Vueling Pilot Salary 2026",
+          content: (
+            <>
+              <p>Vueling, a Spanish low-cost airline, offers pilot salaries that, while competitive, are generally positioned below some of its larger European counterparts. The compensation structure includes a base salary and additional duty pay/per diems.</p>
+
+              <h3>Overall Salary Ranges (Gross, 2026)</h3>
+              <ul>
+                <li><strong>First Officer (FO):</strong> €40,000 – €70,000 per year (base).</li>
+                <li><strong>Captain:</strong> €70,000 – €115,000 per year (total).</li>
+              </ul>
+              <p>According to the SEPLA VII Vueling Collective Agreement, these figures represent the gross annual earnings. Entry-level FO pay is particularly modest, with some reports indicating less than €2,000 monthly after tax in the initial years.</p>
+
+              <h3>Additional Duty Pay / Per Diems (2026)</h3>
+              <ul>
+                <li><strong>Captain (National):</strong> €54.32</li>
+                <li><strong>Captain (International):</strong> €96.18</li>
+                <li><strong>Overnight:</strong> +€28.28</li>
+              </ul>
+              <p>These per diems and allowances can partly offset the lower base salaries compared to other airlines, especially when considering the lower cost of living in Spain.</p>
+            </>
+          ),
+        },
       ]}
       faqSchema={[
-        { 
-          question: "How much does a pilot earn in Europe in 2026?", 
-          answer: "In 2026, European pilot salaries range from EUR35,000 for an entry-level First Officer at a Low-Cost Carrier in Eastern Europe to over EUR280,000 for a Senior Captain flying long-haul routes at a major legacy carrier." 
-        },
-        { 
-          question: "What is a Frozen ATPL?", 
-          answer: "A 'frozen ATPL' means a pilot holds a Commercial Pilot License (CPL) with an Instrument Rating (IR), a Multi-Engine Piston (MEP) rating, and has passed all 14 ATPL theory exams, but has not yet logged the 1,500 hours of total flight time required for a full ATPL." 
-        },
-        { 
-          question: "How long does it take to become a Captain at a European airline?", 
-          answer: "At Low-Cost Carriers (LCCs) like Ryanair or Wizz Air, a First Officer can upgrade to Captain in 3.5 to 5 years. At traditional legacy carriers, the upgrade process typically takes 10 to 15 years due to seniority-based systems." 
+        {
+          question: "What is the average First Officer salary at Ryanair in 2026?",
+          answer: "In 2026, Ryanair First Officers can expect to earn between €45,000 and €93,000 gross per year. Junior FOs typically start around €53,000, while Second Officers (cadets) are at the lower end of this range.",
         },
         {
-          question: "What are the 14 EASA ATPL theory exams?",
-          answer: "The 14 exams cover subjects including Air Law, Aircraft General Knowledge (Airframe, Systems, Instruments), Mass & Balance, Performance, Flight Planning, Human Performance, Meteorology, General Navigation, Radio Navigation, Operational Procedures, Principles of Flight, and Communications."
-        }
+          question: "How much does a Ryanair Captain earn in 2026?",
+          answer: "Ryanair Captains in 2026 earn between €145,000 and €175,000 gross annually. Typical line Captains are in the €143,000–€165,000 range, with the higher figures including instructor supplements (TRE/TRI).",
+        },
+        {
+          question: "What is the easyJet First Officer salary in 2026?",
+          answer: "easyJet First Officers in 2026 have a basic salary ranging from £60,440 to £67,628, increasing with seniority. Additional sector pay can add £10,000-£15,000 annually.",
+        },
+        {
+          question: "What is the easyJet Captain salary in 2026?",
+          answer: "easyJet Captains in 2026 can expect a basic salary between £144,597 and £166,286, plus performance bonuses and longevity benefits.",
+        },
+        {
+          question: "What is the Wizz Air First Officer salary in 2026?",
+          answer: "Wizz Air First Officers in 2026 earn between €42,000 and €100,000 gross per year, with significant variation based on base location and seniority. UK-based FOs can earn £60,000-£65,000 gross.",
+        },
+        {
+          question: "How much does a Wizz Air Captain earn in 2026?",
+          answer: "Wizz Air Captains in 2026 earn between €108,000 and €210,000 gross annually. UK-based Captains have the highest gross earnings, often exceeding £200,000.",
+        },
+        {
+          question: "What is the Vueling First Officer salary in 2026?",
+          answer: "Vueling First Officers in 2026 can expect a base salary between €40,000 and €70,000 gross per year. Entry-level pay can be modest, with some reports indicating less than €2,000 net monthly.",
+        },
+        {
+          question: "How much does a Vueling Captain earn in 2026?",
+          answer: "Vueling Captains in 2026 earn between €70,000 and €115,000 total gross per year, according to the SEPLA VII Vueling Collective Agreement. This can be supplemented by additional duty pay and per diems.",
+        },
+        {
+          question: "How does variable pay impact pilot salaries at these airlines?",
+          answer: "Variable pay, such as sector pay, distance pay, and productivity bonuses, forms a significant portion of pilot compensation at low-cost carriers. For Ryanair, it can be 30-50% of total earnings. For Wizz Air, it's even more critical, with base salary often acting as a retainer and variable components making up the 'real' money.",
+        },
+        {
+          question: "What are the typical command upgrade times for these airlines?",
+          answer: "Ryanair offers one of the fastest command upgrade timelines in Europe, typically 3.5 to 5 years. Wizz Air also provides a fast track to command, usually within 3.5 to 5 years, driven by aggressive fleet growth.",
+        },
+        {
+          question: "Are there retention bonuses offered by these airlines in 2026?",
+          answer: "Wizz Air introduced significant retention bonuses in late 2024/2025, offering up to €40,000 for Captains and €25,000 for Senior FOs for multi-year commitments, to retain experienced crew.",
+        },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Europe", href: "/europe/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "EASA Pilot Training Costs 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" }
+        { title: "Ryanair Pilot Salary Guide", href: "/guides/ryanair-pilot-salary-guide", time: "14 min" },
+        { title: "easyJet Pilot Application & Cadet Program", href: "/guides/easyjet-pilot-application", time: "8 min" },
+        { title: "Wizz Air Pilot Salary Guide", href: "/guides/wizz-air-pilot-salary-guide", time: "13 min" },
+        { title: "Pilot Salary in Europe 2026 — 30 Airlines Compared", href: "/guides/pilot-salary-europe-comparison", time: "9 min" },
       ]}
     />
   );

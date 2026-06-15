@@ -962,6 +962,59 @@ export const routeMetaMap: Record<string, RouteMeta> = {
     description: "Explore pilot seniority in Europe for 2026, covering EASA, major airlines like Lufthansa, Air France, BA, career progression, and training costs.",
     canonical: `${BASE}/europe/guides/europe-pilot-seniority`,
   },
+
+  // ─── Europe guides (batch 3 - new guides) ─────────────────────────────────
+  "/europe/guides/europe-pilot-taxes": {
+    title: "Pilot Taxes in Europe 2026: Cross-Border Tax Guide for Airline Pilots | AviatorIQ",
+    description: "How are airline pilots taxed in Europe? Cross-border taxation, Ireland vs Spain vs Germany, EASA pilot tax obligations, and how to avoid double taxation.",
+    canonical: `${BASE}/europe/guides/europe-pilot-taxes`,
+  },
+  "/europe/guides/europe-pilot-bases": {
+    title: "Best Pilot Bases in Europe 2026: Dublin, Amsterdam, Barcelona, Frankfurt | AviatorIQ",
+    description: "Which European pilot base is best? Compare Dublin, Amsterdam, Barcelona, Frankfurt, and Paris CDG by cost of living, lifestyle, and career prospects.",
+    canonical: `${BASE}/europe/guides/europe-pilot-bases`,
+  },
+  "/europe/guides/europe-pilot-benefits": {
+    title: "European Airline Pilot Benefits 2026: Staff Travel, Pension & More | AviatorIQ",
+    description: "What benefits do airline pilots get in Europe? Staff travel, ZED tickets, pension schemes, loss of licence insurance, and health cover at Ryanair, easyJet, Lufthansa.",
+    canonical: `${BASE}/europe/guides/europe-pilot-benefits`,
+  },
+  "/europe/guides/europe-pilot-schedule": {
+    title: "European Pilot Roster & Schedule 2026: EASA FTL Rules Explained | AviatorIQ",
+    description: "How does a European airline pilot's roster work? EASA Flight Time Limitations (FTL), max 900 hours per year, typical LCC vs long-haul schedules.",
+    canonical: `${BASE}/europe/guides/europe-pilot-schedule`,
+  },
+  "/europe/guides/europe-pilot-housing-cost-of-living": {
+    title: "Pilot Housing & Cost of Living in Europe 2026 | AviatorIQ",
+    description: "How much does it cost to live as a pilot in Europe? Housing costs in Dublin, Amsterdam, Barcelona, and Frankfurt compared for airline pilots.",
+    canonical: `${BASE}/europe/guides/europe-pilot-housing-cost-of-living`,
+  },
+  "/europe/guides/europe-pilot-retirement-age": {
+    title: "European Pilot Retirement Age 2026: EASA Age 65 Rule Explained | AviatorIQ",
+    description: "What is the mandatory retirement age for pilots in Europe? EASA Part-MED age 65 rule, age 60 restrictions, and how it affects your career planning.",
+    canonical: `${BASE}/europe/guides/europe-pilot-retirement-age`,
+  },
+  "/europe/guides/europe-pilot-union": {
+    title: "European Pilot Unions 2026: ECA, Vereinigung Cockpit, SNPL, VNV | AviatorIQ",
+    description: "Guide to European pilot unions. European Cockpit Association (ECA), Vereinigung Cockpit (Germany), SNPL (France), VNV (Netherlands), SEPLA (Spain), BALPA (UK).",
+    canonical: `${BASE}/europe/guides/europe-pilot-union`,
+  },
+  "/europe/guides/lufthansa-group-pilot-salary": {
+    title: "Lufthansa Group Pilot Salary 2026: Lufthansa, Swiss, Austrian, Brussels | AviatorIQ",
+    description: "Exact 2026 pilot salaries across the Lufthansa Group. Lufthansa Captain up to €28,422/month, Swiss Captain CHF 250k-320k/year, Austrian and Brussels Airlines pay scales.",
+    canonical: `${BASE}/europe/guides/lufthansa-group-pilot-salary`,
+  },
+  "/europe/guides/air-france-pilot-salary": {
+    title: "Air France Pilot Salary 2026: First Officer to Captain Pay | AviatorIQ",
+    description: "Air France pilot salary 2026: First Officer €60,000-€150,000, Captain €150,000-€260,000+. SNPL union agreement, allowances, and career progression.",
+    canonical: `${BASE}/europe/guides/air-france-pilot-salary`,
+  },
+  "/europe/guides/klm-pilot-salary": {
+    title: "KLM Pilot Salary 2026: First Officer to Captain Pay | AviatorIQ",
+    description: "KLM pilot salary 2026: First Officer €80,000-€254,000, Captain €176,000-€338,000+. VNV union agreement, profit-sharing, and KLM Cityhopper pay scales.",
+    canonical: `${BASE}/europe/guides/klm-pilot-salary`,
+  },
+
   // ─── UAE guides ───────────────────────────────────────────────────────────
   "/uae/guides/uae-pilot-training-costs": {
     title: "Unveiling the True Cost of Pilot Training in the UAE (2026 Guide)",
