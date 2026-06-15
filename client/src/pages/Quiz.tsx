@@ -324,6 +324,24 @@ function Step4({ data, update, onAdvance }: { data: QuizData; update: (k: keyof 
   );
 }
 
+// ─── Budget options per country ──────────────────────────────────────────────
+function getBudgetOptions(country: string): string[] {
+  const c = country.toLowerCase();
+  if (c.includes("australia")) return ["Under A$15,000","A$15,000–A$40,000","A$40,000–A$80,000","A$80,000–A$140,000","A$140,000+","I need finance — I don't have savings"];
+  if (c.includes("canada")) return ["Under C$15,000","C$15,000–C$40,000","C$40,000–C$80,000","C$80,000–C$130,000","C$130,000+","I need finance — I don't have savings"];
+  if (c.includes("united states") || c.includes("usa")) return ["Under $15,000","$15,000–$40,000","$40,000–$80,000","$80,000–$120,000","$120,000+","I need finance — I don't have savings"];
+  if (c.includes("new zealand")) return ["Under NZ$15,000","NZ$15,000–NZ$40,000","NZ$40,000–NZ$80,000","NZ$80,000–NZ$130,000","NZ$130,000+","I need finance — I don't have savings"];
+  if (c.includes("south africa")) return ["Under R100,000","R100,000–R250,000","R250,000–R500,000","R500,000–R850,000","R850,000+","I need finance — I don't have savings"];
+  if (c.includes("uae") || c.includes("emirates")) return ["Under AED 50,000","AED 50,000–AED 120,000","AED 120,000–AED 200,000","AED 200,000–AED 350,000","AED 350,000+","I need finance — I don't have savings"];
+  if (c.includes("india")) return ["Under ₹10,00,000","₹10,00,000–₹25,00,000","₹25,00,000–₹50,00,000","₹50,00,000–₹80,00,000","₹80,00,000+","I need finance — I don't have savings"];
+  if (c.includes("singapore")) return ["Under S$20,000","S$20,000–S$50,000","S$50,000–S$100,000","S$100,000–S$160,000","S$160,000+","I need finance — I don't have savings"];
+  // EUR countries
+  if (["germany","france","spain","netherlands","sweden","norway","denmark","ireland","italy","portugal","belgium","austria","switzerland"].some(eu => c.includes(eu)))
+    return ["Under €15,000","€15,000–€40,000","€40,000–€80,000","€80,000–€120,000","€120,000+","I need finance — I don't have savings"];
+  // Default GBP (UK, Ireland, other)
+  return ["Under £10,000","£10,000–£25,000","£25,000–£50,000","£50,000–£100,000","£100,000+","I need finance — I don't have savings"];
+}
+
 // ─── Step 5: Finance ──────────────────────────────────────────────────────────
 function Step5({ data, update, onAdvance }: { data: QuizData; update: (k: keyof QuizData, v: string) => void; onAdvance: () => void }) {
   const handleFunding = useCallback((v: string) => {
@@ -352,7 +370,7 @@ function Step5({ data, update, onAdvance }: { data: QuizData; update: (k: keyof 
         <div>
           <p className="text-sm font-semibold text-[oklch(0.85_0_0)] mb-4">What training budget are you realistically working with?</p>
           <div className="space-y-2">
-            {["Under £10,000","£10,000–£25,000","£25,000–£50,000","£50,000–£100,000","£100,000+","I need finance — I don't have savings"].map((o) => (
+            {getBudgetOptions(data.country).map((o) => (
               <OptionButton key={o} label={o} selected={data.budgetRange === o} onClick={() => handleBudget(o)} />
             ))}
           </div>

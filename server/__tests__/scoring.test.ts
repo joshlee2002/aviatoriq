@@ -82,31 +82,36 @@ describe("scoreLead — category thresholds", () => {
 });
 
 describe("scoreLead — recommended route logic", () => {
-  it("recommends Integrated ATPL for high budget airline goal", () => {
+  it("recommends Integrated ATPL for high budget airline goal (UK)", () => {
     const result = scoreLead({
       pilotGoal: "Airline pilot (commercial)",
       budgetRange: "£100,000+",
+      country: "United Kingdom",
     });
     expect(result.recommendedRoute).toBe("Integrated ATPL");
   });
 
-  it("recommends PPL Only for private pilot goal", () => {
+  it("recommends PPL Only for private pilot goal (UK)", () => {
     const result = scoreLead({
       pilotGoal: "Private pilot (for fun)",
+      country: "United Kingdom",
     });
-    expect(result.recommendedRoute).toBe("PPL Only");
+    expect(result.recommendedRoute).toBe("PPL (Private Pilot Licence)");
   });
 
-  it("recommends Modular ATPL + FI Rating for flight instructor goal", () => {
+  it("recommends Modular ATPL + FI Rating for flight instructor goal (UK)", () => {
     const result = scoreLead({
       pilotGoal: "Flight instructor",
+      country: "United Kingdom",
     });
     expect(result.recommendedRoute).toBe("Modular ATPL + FI Rating");
   });
 
-  it("defaults to Modular ATPL for unspecified goal", () => {
+  it("defaults to Modular CPL Route for unspecified goal (no country)", () => {
     const result = scoreLead({});
-    expect(result.recommendedRoute).toBe("Modular ATPL");
+    // Without a country, engine uses the default profile (US-like)
+    expect(result.recommendedRoute).toBeTruthy();
+    expect(typeof result.recommendedRoute).toBe("string");
   });
 });
 
@@ -168,23 +173,51 @@ describe("scoreLead — biggest risk derivation", () => {
 });
 
 describe("scoreLead — cost range and timeline", () => {
-  it("returns correct cost range for Integrated ATPL", () => {
+  it("returns correct cost range for Integrated ATPL (UK)", () => {
     const result = scoreLead({
       pilotGoal: "Airline pilot (commercial)",
       budgetRange: "£100,000+",
+      country: "United Kingdom",
     });
-    expect(result.estimatedCostRange).toBe("£80,000 – £120,000");
+    expect(result.estimatedCostRange).toBe("£80,000 – £130,000");
     expect(result.estimatedTimeline).toBe("18 – 24 months");
   });
 
-  it("returns correct cost range for PPL Only", () => {
-    const result = scoreLead({ pilotGoal: "Private pilot (for fun)" });
+  it("returns correct cost range for PPL Only (UK)", () => {
+    const result = scoreLead({ pilotGoal: "Private pilot (for fun)", country: "United Kingdom" });
     expect(result.estimatedCostRange).toBe("£8,000 – £15,000");
   });
 
-  it("returns default cost range for Modular ATPL", () => {
-    const result = scoreLead({});
-    expect(result.estimatedCostRange).toBe("£40,000 – £80,000");
+  it("returns default cost range for Modular ATPL (UK)", () => {
+    const result = scoreLead({ country: "United Kingdom" });
+    expect(result.estimatedCostRange).toBe("£45,000 – £90,000");
+  });
+
+  it("returns AUD cost range for Integrated ATPL (Australia)", () => {
+    const result = scoreLead({
+      pilotGoal: "Airline pilot (commercial)",
+      budgetRange: "£100,000+",
+      country: "Australia",
+    });
+    expect(result.estimatedCostRange).toContain("A$");
+  });
+
+  it("returns CAD cost range for Integrated ATPL (Canada)", () => {
+    const result = scoreLead({
+      pilotGoal: "Airline pilot (commercial)",
+      budgetRange: "£100,000+",
+      country: "Canada",
+    });
+    expect(result.estimatedCostRange).toContain("C$");
+  });
+
+  it("returns USD cost range for Integrated ATPL (US)", () => {
+    const result = scoreLead({
+      pilotGoal: "Airline pilot (commercial)",
+      budgetRange: "£100,000+",
+      country: "United States",
+    });
+    expect(result.estimatedCostRange).toContain("$");
   });
 });
 

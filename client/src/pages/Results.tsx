@@ -27,7 +27,7 @@ import {
   Heart,
   Briefcase,
   Map,
-  PoundSterling,
+  Banknote,
   Plane,
   School,
   FileDown,
@@ -280,7 +280,7 @@ export default function Results() {
 
   const dimensionConfig = [
     { key: "readiness" as const, label: "Readiness", icon: <Clock className="w-4 h-4" />, color: "text-blue-500" },
-    { key: "finance" as const, label: "Finance", icon: <PoundSterling className="w-4 h-4" />, color: "text-green-500" },
+    { key: "finance" as const, label: "Finance", icon: <Banknote className="w-4 h-4" />, color: "text-green-500" },
     { key: "medical" as const, label: "Medical", icon: <Heart className="w-4 h-4" />, color: "text-red-500" },
     { key: "career" as const, label: "Career Clarity", icon: <Briefcase className="w-4 h-4" />, color: "text-purple-500" },
     { key: "pathway" as const, label: "Pathway Match", icon: <Map className="w-4 h-4" />, color: "text-indigo-500" },
@@ -385,7 +385,7 @@ export default function Results() {
                   {[
                     { label: "Biggest Risk", value: biggestRisk ?? "—", color: "oklch(0.78 0.18 25)", icon: <AlertTriangle className="w-3.5 h-3.5" /> },
                     { label: "Best Route", value: recommendedRoute ?? "—", color: "oklch(0.65 0.18 230)", icon: <Plane className="w-3.5 h-3.5" /> },
-                    { label: "Est. Cost", value: estimatedCostRange ? estimatedCostRange.split("–")[0].trim() + "–" + (estimatedCostRange.split("–")[1] ?? "").trim() : "—", color: "oklch(0.72 0.2 145)", icon: <PoundSterling className="w-3.5 h-3.5" /> },
+                    { label: "Est. Cost", value: estimatedCostRange ? estimatedCostRange.split("–")[0].trim() + "–" + (estimatedCostRange.split("–")[1] ?? "").trim() : "—", color: "oklch(0.72 0.2 145)", icon: <Banknote className="w-3.5 h-3.5" /> },
                     { label: "Timeline", value: estimatedTimeline ?? "—", color: "oklch(0.75 0.12 290)", icon: <Clock className="w-3.5 h-3.5" /> },
                   ].map((tile) => (
                     <div key={tile.label} className="stat-tile">
@@ -430,7 +430,7 @@ export default function Results() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 animate-fade-in-up">
               {[
                 { icon: <Plane className="w-4 h-4" />, label: "Recommended Route", value: recommendedRoute },
-                { icon: <PoundSterling className="w-4 h-4" />, label: `Estimated Cost${currency.code !== "GBP" ? ` (${currency.code})` : ""}`, value: estimatedCostRange ? convertPriceString(estimatedCostRange, formatPrice) : undefined },
+                { icon: <Banknote className="w-4 h-4" />, label: "Estimated Cost", value: estimatedCostRange ?? undefined },
                 { icon: <Clock className="w-4 h-4" />, label: "Timeline", value: estimatedTimeline },
                 { icon: <AlertTriangle className="w-4 h-4" />, label: "Biggest Risk", value: biggestRisk },
               ].filter(c => c.value).map((item, i) => (
@@ -594,7 +594,7 @@ export default function Results() {
             <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(0.45 0.18 145 / 0.1)", border: "1px solid oklch(0.45 0.18 145 / 0.25)" }}>
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "oklch(0.45 0.18 145 / 0.3)" }}>
-                  <PoundSterling className="w-5 h-5" style={{ color: "oklch(0.75 0.18 145)" }} />
+                  <Banknote className="w-5 h-5" style={{ color: "oklch(0.75 0.18 145)" }} />
                 </div>
                 <div className="flex-1">
                   <h3 className="font-display font-bold text-white mb-1">You may qualify for pilot training finance</h3>
@@ -808,7 +808,7 @@ export default function Results() {
           <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(0.55 0.18 240 / 0.08)", border: "1px solid oklch(0.55 0.18 240 / 0.2)" }}>
             <div className="flex items-start gap-4 mb-4">
               <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "oklch(0.55 0.18 240)" }}>
-                <PoundSterling className="w-5 h-5 text-white" />
+                <Banknote className="w-5 h-5 text-white" />
               </div>
               <div>
                 <h3 className="font-display font-bold text-white text-lg mb-1">Get free finance guidance</h3>
@@ -851,10 +851,10 @@ export default function Results() {
                     <label className="block text-xs font-semibold text-white mb-1">Estimated training budget</label>
                     <select value={financeBudget} onChange={e => setFinanceBudget(e.target.value as any)} className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white" style={{ background: "oklch(0.14 0.01 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
                       <option value="unsure">Not sure yet</option>
-                      <option value="under50k">Under £50,000</option>
-                      <option value="50k_80k">£50,000 – £80,000</option>
-                      <option value="80k_100k">£80,000 – £100,000</option>
-                      <option value="over100k">Over £100,000</option>
+                      <option value="under50k">Under {currency.symbol}50,000</option>
+                      <option value="50k_80k">{currency.symbol}50,000 – {currency.symbol}80,000</option>
+                      <option value="80k_100k">{currency.symbol}80,000 – {currency.symbol}100,000</option>
+                      <option value="over100k">Over {currency.symbol}100,000</option>
                     </select>
                   </div>
                 </div>

@@ -234,8 +234,8 @@ export default function PublicNav() {
   const navLinks = isUS ? usNavLinks : ukNavLinks;
   const toolLinks = isUS ? usToolLinks : ukToolLinks;
   const homeHref = isUS ? "/us" : "/";
-  const ctaHref = isUS ? "/us/roadmap" : "/quiz";
-  const ctaLabel = isUS ? "Generate US Roadmap" : "Free Assessment";
+  const ctaHref = "/quiz";
+  const ctaLabel = "Free Assessment";
   const { user, logout } = useAuth();
 
   useEffect(() => {
@@ -375,16 +375,12 @@ export default function PublicNav() {
             {/* Region Switcher */}
             <button
               type="button"
-              onClick={() => {
-                const next = country === "us" ? "uk" : "us";
-                setCountry(next);
-                navigate(next === "us" ? "/us" : "/");
-              }}
+              onClick={() => navigate("/select")}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all hover:bg-white/8"
               style={{ color: "oklch(0.75 0.04 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
-              title={country === "us" ? "Switch to UK / Global version" : "Switch to US version"}
+              title="Change country"
             >
-              {country === "us" ? "🇺🇸 US" : "🌍 Global"}
+              {country === "us" ? "🇺🇸 US" : country === "australia" ? "🇦🇺 AU" : country === "canada" ? "🇨🇦 CA" : country === "europe" ? "🇪🇺 EU" : country === "uae" ? "🇦🇪 UAE" : country === "south-africa" ? "🇿🇦 ZA" : country === "new-zealand" ? "🇳🇿 NZ" : country === "india" ? "🇮🇳 IN" : country === "singapore" ? "🇸🇬 SG" : "🌍 Global"}
             </button>
 
             {user?.role === "admin" && (

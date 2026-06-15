@@ -146,6 +146,11 @@ import AdhdFaaMedical from "./pages/guides/AdhdFaaMedical";
 import AtpCertificateUSA from "./pages/guides/AtpCertificateUSA";
 import CfiCareerUSA from "./pages/guides/CfiCareerUSA";
 
+// Regional hub pages
+import HomeAustralia from "./pages/HomeAustralia";
+import HomeCanada from "./pages/HomeCanada";
+import HomeEurope from "./pages/HomeEurope";
+
 // New regional guides (Australia, Canada, Europe)
 import HowToBecomePilotAustralia from "./pages/guides/HowToBecomePilotAustralia";
 import HowToBecomePilotCanada from "./pages/guides/HowToBecomePilotCanada";
@@ -282,6 +287,11 @@ function Router() {
 
       {/* Country selector */}
       <Route path="/select" component={CountrySelect} />
+
+      {/* Regional hub routes */}
+      <Route path="/australia" component={HomeAustralia} />
+      <Route path="/canada" component={HomeCanada} />
+      <Route path="/europe" component={HomeEurope} />
 
       {/* US routes */}
       <Route path="/us" component={HomeUS} />

@@ -10,6 +10,7 @@ export interface RouteMeta {
   description: string;
   canonical: string;
   noindex?: boolean;
+  robots?: string;
   ogImage?: string;
 }
 
@@ -342,21 +343,7 @@ export const routeMetaMap: Record<string, RouteMeta> = {
     description: "How long does it take to become a commercial pilot in the UK? Realistic timelines for integrated (18–24 months) and modular (3–5 years) routes.",
     canonical: `${BASE}/guides/training-timeline`,
   },
-  "/guides/how-to-become-a-pilot-australia": {
-    title: "How to Become a Pilot in Australia 2026 | AviatorIQ",
-    description: "Complete guide to becoming a commercial pilot in Australia. CASA requirements, training routes, costs, and the path to an Australian ATPL.",
-    canonical: `${BASE}/guides/how-to-become-a-pilot-australia`,
-  },
-  "/guides/how-to-become-a-pilot-canada": {
-    title: "How to Become a Pilot in Canada 2026 | AviatorIQ",
-    description: "Complete guide to becoming a commercial pilot in Canada. Transport Canada requirements, training routes, costs, and the path to a Canadian ATPL.",
-    canonical: `${BASE}/guides/how-to-become-a-pilot-canada`,
-  },
-  "/guides/how-to-become-a-pilot-europe": {
-    title: "How to Become a Pilot in Europe 2026 | EASA Training Guide | AviatorIQ",
-    description: "Complete guide to becoming a commercial pilot in Europe. EASA requirements, best training countries, costs, and the path to an EASA ATPL.",
-    canonical: `${BASE}/guides/how-to-become-a-pilot-europe`,
-  },
+
   "/guides/wizz-air-pilot-academy": {
     title: "Wizz Air Pilot Academy 2026: Complete Guide | AviatorIQ",
     description: "Everything about the Wizz Air Pilot Academy cadet programme. Entry requirements, training pathway, costs, and guaranteed FO job offer.",
@@ -448,6 +435,140 @@ export const routeMetaMap: Record<string, RouteMeta> = {
     title: "Embry-Riddle Aeronautical University: Complete Guide 2026 | AviatorIQ",
     description: "Is Embry-Riddle worth it? Complete guide to ERAU's aviation programmes, costs, career outcomes, and how it compares to other training routes.",
     canonical: `${BASE}/us/guides/embry-riddle-aeronautical-university`,
+  },
+
+  // ─── Country selector ──────────────────────────────────────────────────────
+  "/select": {
+    title: "Choose Your Country | AviatorIQ — Global Pilot Training Platform",
+    description: "Select your country to get a personalised pilot training roadmap with correct costs, routes, regulators, and matched flight schools for your region.",
+    canonical: `${BASE}/select`,
+    noindex: true,
+  },
+
+  // ─── Australia hub & guides ────────────────────────────────────────────────
+  "/australia": {
+    title: "Become a Pilot in Australia 2026 | CASA Training Guide | AviatorIQ",
+    description: "Australia's most complete pilot training resource. CASA CPL/ATPL routes, real 2026 costs in AUD, Class 1 medical guidance, and matched Australian flight schools.",
+    canonical: `${BASE}/australia`,
+  },
+  "/guides/how-to-become-a-pilot-australia": {
+    title: "How to Become a Pilot in Australia (2026 Complete Guide) | AviatorIQ",
+    description: "The definitive guide to becoming a commercial airline pilot in Australia. CASA training routes, costs (A$90k–A$150k), timelines, medical requirements, and cadet programmes.",
+    canonical: `${BASE}/guides/how-to-become-a-pilot-australia`,
+  },
+  "/guides/pilot-training-costs-australia": {
+    title: "Pilot Training Costs Australia 2026: The Full Breakdown | AviatorIQ",
+    description: "How much does pilot training cost in Australia? CPL, ATPL, PPL — real 2026 costs in AUD from Australian flight schools. Integrated vs modular compared.",
+    canonical: `${BASE}/guides/pilot-training-costs-australia`,
+  },
+  "/guides/casa-class-1-medical": {
+    title: "CASA Class 1 Medical 2026: Complete Guide for Aspiring Pilots | AviatorIQ",
+    description: "Everything you need to know about the CASA Class 1 medical. DAME requirements, disqualifying conditions, and how to prepare for your aviation medical in Australia.",
+    canonical: `${BASE}/guides/casa-class-1-medical`,
+  },
+  "/guides/integrated-vs-modular-australia": {
+    title: "Integrated vs Modular ATPL in Australia 2026 | AviatorIQ",
+    description: "Which CASA training route is right for you? Integrated vs modular ATPL compared — costs in AUD, timelines, and airline hiring preferences in Australia.",
+    canonical: `${BASE}/guides/integrated-vs-modular-australia`,
+  },
+  "/guides/best-flight-schools-australia": {
+    title: "Best Flight Schools in Australia 2026 | CASA-Approved | AviatorIQ",
+    description: "Australia's top CASA-approved flight schools ranked by completion rates, cost, and airline placement. AFAC, Griffith Aviation, AVIA, and more.",
+    canonical: `${BASE}/guides/best-flight-schools-australia`,
+  },
+  "/guides/australian-airline-cadet-programmes": {
+    title: "Australian Airline Cadet Programmes 2026 | Qantas, Virgin, Rex | AviatorIQ",
+    description: "Complete guide to Australian airline cadet programmes. Qantas Group, Virgin Australia, Rex, and regional airline pathways — eligibility, costs, and how to apply.",
+    canonical: `${BASE}/guides/australian-airline-cadet-programmes`,
+  },
+  "/guides/australian-pilot-salary": {
+    title: "Australian Pilot Salary 2026: First Officer to Captain | AviatorIQ",
+    description: "How much do airline pilots earn in Australia? Full salary breakdown from First Officer (A$80k–A$120k) to Captain (A$180k–A$300k) across Qantas, Virgin, and regional airlines.",
+    canonical: `${BASE}/guides/australian-pilot-salary`,
+  },
+
+  // ─── Canada hub & guides ───────────────────────────────────────────────────
+  "/canada": {
+    title: "Become a Pilot in Canada 2026 | Transport Canada Training Guide | AviatorIQ",
+    description: "Canada's most complete pilot training resource. Transport Canada CPL/ATPL routes, real 2026 costs in CAD, Class 1 medical guidance, and matched Canadian flight schools.",
+    canonical: `${BASE}/canada`,
+  },
+  "/guides/how-to-become-a-pilot-canada": {
+    title: "How to Become a Pilot in Canada (2026 Complete Guide) | AviatorIQ",
+    description: "The definitive guide to becoming a commercial airline pilot in Canada. Transport Canada training routes, costs (CA$90k–CA$140k), timelines, medical requirements, and cadet programmes.",
+    canonical: `${BASE}/guides/how-to-become-a-pilot-canada`,
+  },
+  "/guides/pilot-training-costs-canada": {
+    title: "Pilot Training Costs Canada 2026: The Full Breakdown | AviatorIQ",
+    description: "How much does pilot training cost in Canada? CPL, ATPL, PPL — real 2026 costs in CAD from Canadian flight schools. Integrated vs modular compared.",
+    canonical: `${BASE}/guides/pilot-training-costs-canada`,
+  },
+  "/guides/transport-canada-class-1-medical": {
+    title: "Transport Canada Class 1 Medical 2026: Complete Guide | AviatorIQ",
+    description: "Everything you need to know about the Transport Canada Class 1 medical. AME requirements, disqualifying conditions, and how to prepare for your aviation medical in Canada.",
+    canonical: `${BASE}/guides/transport-canada-class-1-medical`,
+  },
+  "/guides/best-flight-schools-canada": {
+    title: "Best Flight Schools in Canada 2026 | Transport Canada Approved | AviatorIQ",
+    description: "Canada's top Transport Canada-approved flight schools ranked by completion rates, cost, and airline placement. Seneca, BCIT, Confederation, and more.",
+    canonical: `${BASE}/guides/best-flight-schools-canada`,
+  },
+  "/guides/canadian-airline-cadet-programmes": {
+    title: "Canadian Airline Cadet Programmes 2026 | Air Canada, WestJet | AviatorIQ",
+    description: "Complete guide to Canadian airline cadet programmes. Air Canada, WestJet, Jazz, and regional airline pathways — eligibility, costs, and how to apply.",
+    canonical: `${BASE}/guides/canadian-airline-cadet-programmes`,
+  },
+  "/guides/cpl-vs-atpl-canada": {
+    title: "CPL vs ATPL Canada 2026: Which Route Is Right for You? | AviatorIQ",
+    description: "Understanding the difference between CPL and ATPL training in Canada. Costs in CAD, timelines, and which route leads to the airlines fastest.",
+    canonical: `${BASE}/guides/cpl-vs-atpl-canada`,
+  },
+  "/guides/canadian-pilot-salary": {
+    title: "Canadian Pilot Salary 2026: First Officer to Captain | AviatorIQ",
+    description: "How much do airline pilots earn in Canada? Full salary breakdown from First Officer (CA$70k–CA$110k) to Captain (CA$160k–CA$280k) across Air Canada, WestJet, and regional airlines.",
+    canonical: `${BASE}/guides/canadian-pilot-salary`,
+  },
+
+  // ─── Europe / EASA hub & guides ────────────────────────────────────────────
+  "/europe": {
+    title: "Become a Pilot in Europe 2026 | EASA Training Guide | AviatorIQ",
+    description: "Europe's most complete EASA pilot training resource. Integrated and modular ATPL routes, real 2026 costs in EUR, Class 1 medical guidance, and matched European flight schools.",
+    canonical: `${BASE}/europe`,
+  },
+  "/guides/how-to-become-a-pilot-europe": {
+    title: "How to Become a Pilot in Europe (2026 EASA Guide) | AviatorIQ",
+    description: "The definitive guide to becoming a commercial airline pilot in Europe. EASA training routes, costs (€80k–€140k), timelines, medical requirements, and cadet programmes.",
+    canonical: `${BASE}/guides/how-to-become-a-pilot-europe`,
+  },
+  "/guides/easa-atpl-training-costs": {
+    title: "EASA ATPL Training Costs 2026: The Full Breakdown | AviatorIQ",
+    description: "How much does EASA ATPL training cost in Europe? Integrated and modular routes — real 2026 costs in EUR from European flight schools.",
+    canonical: `${BASE}/guides/easa-atpl-training-costs`,
+  },
+  "/guides/easa-class-1-medical": {
+    title: "EASA Class 1 Medical 2026: Complete Guide for Aspiring Pilots | AviatorIQ",
+    description: "Everything you need to know about the EASA Class 1 medical. AeMC requirements, disqualifying conditions, and how to prepare across EU countries.",
+    canonical: `${BASE}/guides/easa-class-1-medical`,
+  },
+  "/guides/best-flight-schools-europe": {
+    title: "Best Flight Schools in Europe 2026 | EASA Approved | AviatorIQ",
+    description: "Europe's top EASA-approved flight schools ranked by completion rates, cost, and airline placement. CAE Oxford, L3Harris, and national academies.",
+    canonical: `${BASE}/guides/best-flight-schools-europe`,
+  },
+  "/guides/european-airline-cadet-programmes": {
+    title: "European Airline Cadet Programmes 2026 | Lufthansa, Ryanair, easyJet | AviatorIQ",
+    description: "Complete guide to European airline cadet programmes. Lufthansa, Ryanair, easyJet, KLM, and more — eligibility, costs, and how to apply.",
+    canonical: `${BASE}/guides/european-airline-cadet-programmes`,
+  },
+  "/guides/integrated-vs-modular-europe": {
+    title: "Integrated vs Modular ATPL in Europe 2026 | EASA | AviatorIQ",
+    description: "Which EASA training route is right for you? Integrated vs modular ATPL compared — costs in EUR, timelines, and airline hiring preferences.",
+    canonical: `${BASE}/guides/integrated-vs-modular-europe`,
+  },
+  "/guides/european-pilot-salary": {
+    title: "European Pilot Salary 2026: First Officer to Captain | AviatorIQ",
+    description: "How much do airline pilots earn in Europe? Full salary breakdown from First Officer (€45k–€80k) to Captain (€100k–€200k) across Ryanair, Lufthansa, easyJet, and more.",
+    canonical: `${BASE}/guides/european-pilot-salary`,
   },
 };
 
