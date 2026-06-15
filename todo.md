@@ -296,3 +296,12 @@
 - [x] US homepage: FAA Guides grid (6 guides)
 - [x] US homepage: CTA banner + email capture
 - [x] Enhance Quiz Hub (QuizHub.tsx) with featured quiz spotlight, stats bar, 7-quiz grid with accent colours and badges, bottom CTA
+
+## Phase 24 – For Schools Page, Nav Login Button, US Hero CTA Fix
+
+- [x] Fix US homepage hero primary CTA to link to /us/roadmap instead of /us (already correct from Phase 23 rebuild)
+- [x] Add Sign in button to nav for logged-out users
+- [x] Add user avatar/profile dropdown to nav for logged-in non-admin users (shows name, email, sign out)
+- [x] Build For Schools pricing page at /for-schools (hero, stats, why partner, 3-tier pricing, example lead card, FAQ, application form)
+- [x] Wire /for-schools route in App.tsx
+- [x] Update "For Schools" nav button to point to /for-schools

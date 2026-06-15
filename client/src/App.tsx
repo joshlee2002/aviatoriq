@@ -65,6 +65,7 @@ import MedicalCheck from "./pages/MedicalCheck";
 // Partner page
 import Partner from "./pages/Partner";
 import PartnerUS from "./pages/PartnerUS";
+import ForSchools from "./pages/ForSchools";
 
 // New tools
 import MedicalConditionLookup from "./pages/MedicalConditionLookup";
@@ -262,6 +263,7 @@ function Router() {
       <Route path="/admin" component={AdminDashboard} />
       {/* Partner */}
       <Route path="/partner" component={Partner} />
+      <Route path="/for-schools" component={ForSchools} />
 
       {/* Static pages */}
       <Route path="/about" component={About} />

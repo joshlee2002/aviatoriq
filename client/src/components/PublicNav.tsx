@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Plane, ChevronDown, Zap, LayoutDashboard } from "lucide-react";
+import { Menu, X, Plane, ChevronDown, Zap, LayoutDashboard, LogIn, LogOut, User } from "lucide-react";
+import { getLoginUrl } from "@/const";
 import { useCurrency, SUPPORTED_CURRENCIES } from "@/contexts/CurrencyContext";
 import { useCountry } from "@/contexts/CountryContext";
 import { useAuth } from "@/_core/hooks/useAuth";
@@ -87,8 +88,8 @@ const usToolLinks = [
   { label: "US Cadet Eligibility Checker", href: "/us/cadet-eligibility", desc: "United Aviate, Delta Propel, American, Southwest", icon: "✈️" },
 ];
 
-const FOR_SCHOOLS_UK = { label: "For Schools", href: "/partner" };
-const FOR_SCHOOLS_US = { label: "For US Schools", href: "/us/partner" };
+const FOR_SCHOOLS_UK = { label: "For Schools", href: "/for-schools" };
+const FOR_SCHOOLS_US = { label: "For US Schools", href: "/for-schools" };
 
 // ─── Currency Switcher ────────────────────────────────────────────────────────
 function CurrencySwitcher() {
@@ -154,6 +155,71 @@ function CurrencySwitcher() {
   );
 }
 
+// ─── User Menu (logged-in non-admin) ────────────────────────────────────────
+function UserMenu({ user }: { user: { name?: string | null; email?: string | null } }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const { logout } = useAuth();
+
+  useEffect(() => {
+    function handler(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    }
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  const initials = (user.name ?? user.email ?? "U")
+    .split(" ")
+    .map((w) => w[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-sm font-semibold transition-all"
+        style={{ color: "oklch(0.75 0.04 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
+        aria-label="Account menu"
+      >
+        <div
+          className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold"
+          style={{ background: "oklch(0.45 0.18 240)", color: "white" }}
+        >
+          {initials}
+        </div>
+        <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-150 ${open ? "rotate-180" : ""}`} />
+      </button>
+      {open && (
+        <div
+          className="absolute right-0 top-full mt-2 w-52 rounded-xl z-50 py-2 animate-fade-in"
+          style={{
+            background: "oklch(0.14 0.08 250)",
+            border: "1px solid oklch(1 0 0 / 0.12)",
+            boxShadow: "0 16px 40px oklch(0 0 0 / 0.5)",
+          }}
+        >
+          <div className="px-4 py-2" style={{ borderBottom: "1px solid oklch(1 0 0 / 0.08)" }}>
+            <p className="text-sm font-semibold text-white truncate">{user.name ?? "Pilot"}</p>
+            {user.email && <p className="text-xs truncate" style={{ color: "oklch(0.55 0.04 240)" }}>{user.email}</p>}
+          </div>
+          <button
+            type="button"
+            onClick={() => { logout(); setOpen(false); }}
+            className="w-full flex items-center gap-2.5 px-4 py-2.5 text-sm transition-colors text-white/70 hover:text-white"
+          >
+            <LogOut className="w-4 h-4" />
+            Sign out
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─── Main Nav ─────────────────────────────────────────────────────────────────
 export default function PublicNav() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -170,7 +236,7 @@ export default function PublicNav() {
   const homeHref = isUS ? "/us" : "/";
   const ctaHref = isUS ? "/us" : "/quiz";
   const ctaLabel = isUS ? "US Platform" : "Free Assessment";
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
 
   useEffect(() => {
     function handler(e: MouseEvent) {
@@ -333,6 +399,21 @@ export default function PublicNav() {
                 Dashboard
               </Link>
             )}
+            {user && user.role !== "admin" && (
+              <UserMenu user={user} />
+            )}
+            {!user && (
+              <a
+                href={getLoginUrl()}
+                className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold transition-all no-underline"
+                style={{ color: "oklch(0.75 0.04 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "oklch(1 0 0 / 0.07)"; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "transparent"; }}
+              >
+                <LogIn className="w-3.5 h-3.5" />
+                Sign in
+              </a>
+            )}
             <Link
               href={isUS ? FOR_SCHOOLS_US.href : FOR_SCHOOLS_UK.href}
               className="px-4 py-2 rounded-lg text-sm font-semibold transition-all no-underline"
@@ -425,6 +506,40 @@ export default function PublicNav() {
                 <LayoutDashboard className="w-4 h-4" />
                 Dashboard
               </Link>
+            )}
+            {user && user.role !== "admin" && (
+              <div style={{ borderTop: "1px solid oklch(1 0 0 / 0.08)" }} className="px-4 py-3">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0" style={{ background: "oklch(0.45 0.18 240)", color: "white" }}>
+                    {(user.name ?? user.email ?? "U").split(" ").map((w: string) => w[0]).join("").slice(0, 2).toUpperCase()}
+                  </div>
+                  <div className="min-w-0">
+                    <p className="text-sm font-semibold text-white truncate">{user.name ?? "Pilot"}</p>
+                    {user.email && <p className="text-xs truncate" style={{ color: "oklch(0.55 0.04 240)" }}>{user.email}</p>}
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => { logout(); setMobileOpen(false); }}
+                  className="flex items-center gap-2 text-sm transition-colors text-white/60 hover:text-white"
+                >
+                  <LogOut className="w-4 h-4" />
+                  Sign out
+                </button>
+              </div>
+            )}
+            {!user && (
+              <div className="px-4 py-2" style={{ borderTop: "1px solid oklch(1 0 0 / 0.08)" }}>
+                <a
+                  href={getLoginUrl()}
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-2 py-2.5 text-sm font-semibold no-underline transition-colors"
+                  style={{ color: "oklch(0.7 0.04 240)" }}
+                >
+                  <LogIn className="w-4 h-4" />
+                  Sign in
+                </a>
+              </div>
             )}
             <Link
               href={isUS ? FOR_SCHOOLS_US.href : FOR_SCHOOLS_UK.href}
