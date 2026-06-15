@@ -5,6 +5,7 @@ import { nanoid } from "nanoid";
 import path from "path";
 import { createServer as createViteServer } from "vite";
 import viteConfig from "../../vite.config";
+import { buildSeoTags } from "../seoInjector";
 
 export async function setupVite(app: Express, server: Server) {
   const serverOptions = {
@@ -38,7 +39,21 @@ export async function setupVite(app: Express, server: Server) {
         `src="/src/main.tsx"`,
         `src="/src/main.tsx?v=${nanoid()}"`
       );
-      const page = await vite.transformIndexHtml(url, template);
+      let page = await vite.transformIndexHtml(url, template);
+
+      // ── Server-side SEO injection ──────────────────────────────────────────
+      // Inject <title>, <meta>, <canonical>, OG, Twitter Card, and JSON-LD
+      // schema into the HTML shell here, after Vite has processed it but before
+      // it is sent to the client. This is the correct interception point because
+      // Vite uses res.end() not res.send(), so middleware-level res.send overrides
+      // would not fire.
+      // Use the pathname portion of originalUrl (strip query string)
+      const urlPathname = url.split("?")[0].split("#")[0] || "/";
+      const seoTags = buildSeoTags(urlPathname);
+      if (seoTags && page.includes("</head>")) {
+        page = page.replace("</head>", `${seoTags}\n  </head>`);
+      }
+
       res.status(200).set({ "Content-Type": "text/html" }).end(page);
     } catch (e) {
       vite.ssrFixStacktrace(e as Error);
@@ -61,7 +76,20 @@ export function serveStatic(app: Express) {
   app.use(express.static(distPath));
 
   // fall through to index.html if the file doesn't exist
-  app.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  // Inject server-side SEO tags before sending the static shell
+  app.use("*", (req, res) => {
+    const indexPath = path.resolve(distPath, "index.html");
+    fs.readFile(indexPath, "utf-8", (err, html) => {
+      if (err) {
+        res.status(500).send("Internal server error");
+        return;
+      }
+      const urlPathname = req.originalUrl.split("?")[0].split("#")[0] || "/";
+      const seoTags = buildSeoTags(urlPathname);
+      if (seoTags && html.includes("</head>")) {
+        html = html.replace("</head>", `${seoTags}\n  </head>`);
+      }
+      res.status(200).set({ "Content-Type": "text/html" }).end(html);
+    });
   });
 }

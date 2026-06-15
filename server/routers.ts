@@ -233,8 +233,13 @@ AviatorIQ Score: ${score}/100 (${category})`;
           } catch (notifyErr) {
             console.error("[DB] Backup notification also failed:", notifyErr);
           }
-          // Use timestamp as pseudo-ID so the response can still be returned
-          leadId = Date.now();
+          // Do NOT return a fake ID — throw so the client shows a real error
+          // rather than a broken results page with a non-existent lead ID.
+          throw new TRPCError({
+            code: "INTERNAL_SERVER_ERROR",
+            message:
+              "We couldn't save your submission right now. Your details have been captured and our team will be in touch. Please try again in a few minutes.",
+          });
         }
 
         // Generate PDF blueprint (non-blocking, best-effort)

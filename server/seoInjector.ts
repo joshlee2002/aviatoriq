@@ -58,33 +58,30 @@ function escapeHtml(str: string): string {
 }
 
 /**
- * Express middleware that intercepts HTML responses and injects SEO tags.
- * Must be applied AFTER Vite middleware so it can intercept the rendered HTML.
+ * Build the SEO HTML tag block for a given URL path.
+ * Called directly inside the Vite HTML catch-all after transformIndexHtml,
+ * which is the correct interception point (Vite uses res.end, not res.send).
+ *
+ * Returns null for API/asset paths that should not be processed.
  */
-export function seoInjectorMiddleware(
-  req: Request,
-  res: Response,
-  next: NextFunction
-) {
-  // Only process HTML responses for non-API, non-asset routes
-  const path = req.path;
+export function buildSeoTags(urlPath: string): string | null {
   if (
-    path.startsWith("/api/") ||
-    path.startsWith("/uploads/") ||
-    path.startsWith("/assets/") ||
-    path.match(/\.(js|css|png|jpg|jpeg|svg|ico|woff|woff2|ttf|map)$/)
+    urlPath.startsWith("/api/") ||
+    urlPath.startsWith("/uploads/") ||
+    urlPath.startsWith("/assets/") ||
+    /\.(js|css|png|jpg|jpeg|svg|ico|woff|woff2|ttf|map)$/.test(urlPath)
   ) {
-    return next();
+    return null;
   }
 
-  const meta = getMetaForPath(path);
+  const meta = getMetaForPath(urlPath);
   const title = escapeHtml(meta.title);
   const description = escapeHtml(meta.description);
   const canonical = escapeHtml(meta.canonical);
   const ogImage = escapeHtml(meta.ogImage || DEFAULT_OG_IMAGE);
   const robotsContent = meta.noindex ? "noindex, nofollow" : "index, follow";
 
-  const seoTags = `
+  return `
     <title>${title}</title>
     <meta name="description" content="${description}" />
     <link rel="canonical" href="${canonical}" />
@@ -104,19 +101,16 @@ export function seoInjectorMiddleware(
     <meta name="twitter:site" content="@aviatoriq" />
     <!-- Global Schema -->
     <script type="application/ld+json">${globalSchema}</script>`;
+}
 
-  // Intercept the response write to inject tags into <head>
-  const originalSend = res.send.bind(res);
-  res.send = function (body: any) {
-    if (
-      typeof body === "string" &&
-      body.includes("</head>") &&
-      res.getHeader("content-type")?.toString().includes("text/html")
-    ) {
-      body = body.replace("</head>", `${seoTags}\n  </head>`);
-    }
-    return originalSend(body);
-  };
-
+/**
+ * Legacy no-op middleware kept for import compatibility.
+ * SEO injection now happens inside setupVite / serveStatic directly.
+ */
+export function seoInjectorMiddleware(
+  _req: Request,
+  _res: Response,
+  next: NextFunction
+) {
   next();
 }
