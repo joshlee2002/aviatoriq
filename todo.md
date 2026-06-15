@@ -279,3 +279,20 @@
 - [x] Add normalizeValue() in QuizPage.tsx diagnostic scoring to map "finance2" → "finance" result correctly
 - [x] UK/US content separation fixes: UK guides index defaults to UK-only, US announcements in nav, Quizzes in US nav
 - [x] All 70 tests passing, zero TypeScript errors
+
+## Phase 23 – US Homepage Parity & Quiz Hub Enhancement
+
+- [x] Rebuild US homepage (HomeUS.tsx) with full section parity to UK homepage
+- [x] US homepage: hero with sample roadmap card (Alex, Dallas, TX) and cockpit background
+- [x] US homepage: social proof bar (32+ schools, 20+ guides, 8 tools, Free)
+- [x] US homepage: How It Works (3 steps, FAA-specific copy)
+- [x] US homepage: Expert Credibility / Why Trust Us (4 pillars, FAA-sourced data)
+- [x] US homepage: Quiz Teaser (3 quiz cards, FAA-specific)
+- [x] US homepage: US Tools section (Cost Calculator, FAA Medical Lookup, Cadet Eligibility)
+- [x] US homepage: Training Routes (ATP, PPL, Corporate, CFI)
+- [x] US homepage: After Training (Resume, Interview, Aptitude, Cadet Programmes)
+- [x] US homepage: Cost section with finance options (GI Bill, cadet sponsorships)
+- [x] US homepage: School Matching section
+- [x] US homepage: FAA Guides grid (6 guides)
+- [x] US homepage: CTA banner + email capture
+- [x] Enhance Quiz Hub (QuizHub.tsx) with featured quiz spotlight, stats bar, 7-quiz grid with accent colours and badges, bottom CTA
