@@ -39,8 +39,27 @@ class OAuthService {
   }
 
   private decodeState(state: string): string {
-    const redirectUri = atob(state);
-    return redirectUri;
+    try {
+      // Normalise URL-safe base64 (replace - with + and _ with /) and add padding
+      const normalised = state.replace(/-/g, "+").replace(/_/g, "/");
+      const padded = normalised + "=".repeat((4 - (normalised.length % 4)) % 4);
+      const decoded = atob(padded);
+      // If it looks like a URL, use it
+      if (decoded.startsWith("http://") || decoded.startsWith("https://")) {
+        return decoded;
+      }
+      // state might already be the redirect URI itself
+      if (state.startsWith("http://") || state.startsWith("https://")) {
+        return state;
+      }
+      return decoded;
+    } catch {
+      // If decoding fails entirely, check if state is already a URL
+      if (state.startsWith("http://") || state.startsWith("https://")) {
+        return state;
+      }
+      throw new Error(`Failed to decode OAuth state: ${state.substring(0, 20)}...`);
+    }
   }
 
   async getTokenByCode(
