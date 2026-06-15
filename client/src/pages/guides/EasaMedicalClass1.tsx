@@ -19,7 +19,7 @@ export default function EasaMedicalClass1() {
           heading: "Introduction",
           content: (
             <>
-              <p>The EASA Class 1 medical certificate is the foundational requirement for any pilot intending to fly commercially within the European Union and other EASA member states. Whether your goal is to become an Airline Transport Pilot (ATPL), a Commercial Pilot (CPL), or a Multi-crew Pilot (MPL), this certificate is mandatory. It represents the strictest aviation medical standard in Europe, meticulously assessing cardiovascular health, vision, hearing, mental health, and neurological fitness. This comprehensive guide details the requirements, examination processes, costs across Europe for 2026, and strategies for maintaining your medical fitness throughout your career.</p>
+              <p>The EASA Class 1 medical certificate is the foundational requirement for any pilot intending to fly commercially within the European Union and other EASA member states. Whether your goal is to become an Airline Transport Pilot (ATPL), a Commercial Pilot (CPL), or a Multi-crew Pilot (MPL), this certificate is mandatory. It represents the strictest aviation medical standard in Europe, meticulously assessing cardiovascular health, vision, hearing, mental health, and neurological fitness. This guide covers the exact requirements, the examination process at approved Aeromedical Centres (AeMCs) across Europe, real 2026 costs by country, and what to do if you have a condition that may affect your certification.</p>
             </>
           )
         },

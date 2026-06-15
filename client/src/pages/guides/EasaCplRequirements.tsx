@@ -20,7 +20,7 @@ export default function EasaCplRequirements() {
           content: (
             <>
               <p>The European Union Aviation Safety Agency (EASA) Commercial Pilot License (CPL) is a pivotal qualification for aspiring professional aviators within Europe. It represents a significant step beyond the Private Pilot License (PPL), enabling holders to fly aircraft for remuneration. This guide provides an in-depth look at the requirements, training pathways, costs, and career prospects for obtaining an EASA CPL in 2026, ensuring you have the most current and accurate information to plan your aviation career.</p>
-              <p>An EASA CPL allows you to act as a First Officer in commercial air transport operations, or as Pilot-in-Command (PIC) in single-pilot commercial air transport. It also encompasses all privileges of a PPL holder and permits PIC or co-pilot duties in non-commercial operations. Understanding these privileges and the rigorous standards set by EASA is crucial for anyone considering this demanding yet rewarding career path.</p>
+              <p>An EASA CPL allows you to act as a First Officer in commercial air transport operations, or as Pilot-in-Command (PIC) in single-pilot commercial air transport. It also encompasses all privileges of a PPL holder and permits PIC or co-pilot duties in non-commercial operations. Understanding these privileges and the standards set by EASA is essential for anyone planning a commercial aviation career in Europe.</p>
             </>
           )
         },

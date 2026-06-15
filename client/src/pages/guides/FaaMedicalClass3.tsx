@@ -19,7 +19,7 @@ export default function FaaMedicalClass3() {
           heading: "Introduction: The Foundation of Your Private Pilot Journey",
           content: (
             <>
-              <p>For aspiring private pilots and those pursuing recreational flying in the United States, the Federal Aviation Administration (FAA) Class 3 Medical Certificate is not merely a formality; it is the bedrock upon which your aviation dreams are built. This comprehensive guide covers obtaining and maintaining this essential certification, providing a detailed, accurate, and up-to-date overview of the requirements, application process, potential challenges, and costs for 2026. Our aim is to equip you with the knowledge necessary to navigate the FAA's medical certification system with confidence and clarity, ensuring a smooth path to the skies.</p>
+              <p>The FAA Class 3 Medical Certificate is the minimum medical standard required for a Private Pilot Certificate in the United States. This guide covers the exact requirements, the examination process, what conditions can disqualify you, and the real 2026 costs — so you know exactly what to expect before you book your appointment with an Aviation Medical Examiner (AME).</p>
               <p>The Class 3 Medical Certificate is mandated by <strong>14 CFR Part 61.23</strong> for private pilot operations, recreational pilot operations, and student pilot operations. It signifies that an airman meets the minimum health standards to safely exercise the privileges of their certificate. Without a valid Class 3 Medical, you cannot act as pilot-in-command for these activities.</p>
             </>
           )

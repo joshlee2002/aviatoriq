@@ -469,7 +469,7 @@ export default function EasaAtplRequirements() {
           content: (
             <>
               <p>
-                The path to becoming an airline pilot with an EASA ATPL is a challenging yet highly rewarding endeavor. It demands significant dedication, financial investment, and a commitment to continuous learning. By understanding the detailed requirements, comparing integrated and modular training pathways, and planning for all associated costs, aspiring pilots can confidently navigate this complex journey.
+                The EASA ATPL requires a minimum of 1,500 flight hours, 14 theoretical knowledge exams, and a type rating before you can act as captain on a commercial aircraft. Understanding the full requirements, the integrated vs modular cost comparison, and the current approved training organisations in your country is the starting point for any serious planning.
               </p>
               <p>
                 The European aviation sector continues to offer robust career opportunities for well-trained and highly skilled pilots. With careful preparation and perseverance, the dream of commanding an aircraft for a major European airline is well within reach.

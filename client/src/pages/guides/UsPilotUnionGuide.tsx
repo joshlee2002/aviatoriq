@@ -373,7 +373,7 @@ export default function UsPilotUnionGuide() {
           heading: "Conclusion: Your Path to the Cockpit",
           content: (
             <>
-              <p>The journey to becoming a professional pilot in the United States is a challenging yet rewarding endeavor. It demands unwavering commitment, meticulous planning, and a deep understanding of the regulatory and financial landscapes. By carefully considering the distinctions between Part 61 and Part 141 training, understanding the phased approach to certification, securing the necessary medical clearances, and strategically planning your career trajectory, aspiring aviators can confidently navigate the path to the cockpit.</p>
+              <p>Understanding how pilot unions work — ALPA, APA, SWAPA — and what they actually deliver in terms of pay, scheduling, and job security is important context for any pilot evaluating airline career options. The union structure at your airline will directly affect your quality of life from day one.</p>
               <p>The US aviation market offers a dynamic environment with continuous opportunities for growth and advancement. With the right preparation and dedication, the goal of becoming a pilot for a living can become a tangible reality. This guide serves as a foundational resource for those ready to embark on this elite professional journey.</p>
             </>
           )

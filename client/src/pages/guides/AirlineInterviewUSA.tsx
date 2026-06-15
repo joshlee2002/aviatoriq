@@ -4,7 +4,7 @@ export default function AirlineInterviewUSA() {
   return (
     <GuideLayout
       title="US Airline Pilot Interview Preparation Guide 2026: Ace Your Interview"
-      subtitle="Master the rigorous US airline pilot interview process in 2026 with our comprehensive guide. Learn what major and regional carriers look for, how to conquer the TBAS aptitude test, and strategies to answer the toughest behavioral and technical questions."
+      subtitle="What US airlines actually look for in 2026: TBAS aptitude test, TMAAT behavioural questions, technical knowledge standards, and how to prepare for major and regional carrier interviews."
       readTime="19 min read"
       heroImage="/manus-storage/airline-interview-usa_2b9e4f7a.jpg"
       category="US Pilot Training"
@@ -16,7 +16,7 @@ export default function AirlineInterviewUSA() {
           content: (
             <div>
               <p className="mb-4 text-white/80">
-                Becoming an airline pilot in the United States is a challenging yet highly rewarding career path, demanding not only exceptional flying skills but also a comprehensive understanding of the rigorous selection processes employed by major and regional carriers. In 2026, the demand for qualified pilots remains strong, with airlines continually refining their interview strategies to identify candidates who possess the technical proficiency, leadership qualities, and cultural fit necessary for success. This guide provides an in-depth look at what to expect, how to prepare, and what airlines are truly seeking in the next generation of aviators.
+                The US airline interview process in 2026 is more structured and competitive than at any point in the past decade. Major carriers use standardised aptitude testing (TBAS at Delta, United, American), structured behavioural interviews based on TMAAT methodology, and technical knowledge assessments. This guide covers exactly what each stage involves, what scores are required, and how to prepare effectively.
               </p>
               <img src="/manus-storage/interview-assessment_c517e045.jpg" alt="Airline interview assessment" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <div className="bg-white/5 border border-white/20 p-6 rounded-lg mb-6">
