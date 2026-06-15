@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Plane, ChevronDown, Zap } from "lucide-react";
+import { Menu, X, Plane, ChevronDown, Zap, LayoutDashboard } from "lucide-react";
 import { useCurrency, SUPPORTED_CURRENCIES } from "@/contexts/CurrencyContext";
 import { useCountry } from "@/contexts/CountryContext";
+import { useAuth } from "@/_core/hooks/useAuth";
 
 const ukAnnouncements = [
   { text: "New guide: BA Speedbird Academy 2026 requirements", href: "/guides/ba-speedbird-academy" },
@@ -169,6 +170,7 @@ export default function PublicNav() {
   const homeHref = isUS ? "/us" : "/";
   const ctaHref = isUS ? "/us" : "/quiz";
   const ctaLabel = isUS ? "US Platform" : "Free Assessment";
+  const { user } = useAuth();
 
   useEffect(() => {
     function handler(e: MouseEvent) {
@@ -319,6 +321,18 @@ export default function PublicNav() {
               {country === "us" ? "🇺🇸 US" : "🇬🇧 UK"}
             </button>
 
+            {user?.role === "admin" && (
+              <Link
+                href="/admin"
+                className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold transition-all no-underline"
+                style={{ color: "oklch(0.85 0.15 65)", border: "1px solid oklch(0.72 0.18 65 / 0.35)", background: "oklch(0.72 0.18 65 / 0.10)" }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "oklch(0.72 0.18 65 / 0.20)"; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "oklch(0.72 0.18 65 / 0.10)"; }}
+              >
+                <LayoutDashboard className="w-3.5 h-3.5" />
+                Dashboard
+              </Link>
+            )}
             <Link
               href={isUS ? FOR_SCHOOLS_US.href : FOR_SCHOOLS_UK.href}
               className="px-4 py-2 rounded-lg text-sm font-semibold transition-all no-underline"
@@ -401,6 +415,17 @@ export default function PublicNav() {
               </button>
             </div>
 
+            {user?.role === "admin" && (
+              <Link
+                href="/admin"
+                onClick={() => setMobileOpen(false)}
+                className="flex items-center gap-2 px-4 py-3 text-sm font-semibold rounded-lg no-underline"
+                style={{ color: "oklch(0.85 0.15 65)" }}
+              >
+                <LayoutDashboard className="w-4 h-4" />
+                Dashboard
+              </Link>
+            )}
             <Link
               href={isUS ? FOR_SCHOOLS_US.href : FOR_SCHOOLS_UK.href}
               onClick={() => setMobileOpen(false)}
