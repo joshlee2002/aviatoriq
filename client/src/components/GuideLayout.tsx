@@ -91,6 +91,8 @@ interface GuideLayoutProps {
   lastUpdated?: string;
   category?: string;
   heroImage?: string;
+  /** Optional scope banner shown above the article for non-UK/US readers */
+  scopeBanner?: React.ReactNode;
 }
 
 const surface = "oklch(0.14 0.08 250)";
@@ -116,6 +118,7 @@ export default function GuideLayout({
   lastUpdated = "June 2026",
   category,
   heroImage,
+  scopeBanner,
 }: GuideLayoutProps) {
   const schemas: object[] = [];
 
@@ -209,6 +212,11 @@ export default function GuideLayout({
                 {ctaText}
               </Link>
             </div>
+
+            {/* Scope banner for non-UK/US readers */}
+            {scopeBanner && (
+              <div className="mb-2">{scopeBanner}</div>
+            )}
 
             {/* Article content */}
             <div

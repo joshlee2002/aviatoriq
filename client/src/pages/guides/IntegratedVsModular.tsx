@@ -1,4 +1,5 @@
 import GuideLayout from "@/components/GuideLayout";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
 export default function IntegratedVsModular() {
   return (
@@ -252,6 +253,7 @@ export default function IntegratedVsModular() {
           ),
         },
       ]}
+    scopeBanner={<><GuideScopeBanner scope="This guide covers integrated vs modular ATPL training under CAA/EASA regulations. The concepts apply globally, but costs and structures are UK-based." usHref="/us/guides/part-61-vs-141" usLabel="View USA equivalent (Part 61 vs 141) →" /></>}
     />
   );
 }

@@ -1,151 +1,103 @@
 import GuideLayout from "@/components/GuideLayout";
+import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
 export default function TuiMPL() {
   return (
     <GuideLayout
-      title="TUI Airways MPL Cadet Programme 2026: Complete Guide"
-      subtitle="TUI's Multi-Crew Pilot Licence pathway from zero hours to Boeing 737 First Officer — how to apply, what training looks like, and what a TUI career offers."
-      canonical="/guides/tui-mpl-cadet-programme"
-      metaDescription="TUI Airways MPL cadet programme 2026: selection process, training route, costs, and First Officer career at one of the UK's largest leisure airlines. Updated June 2026."
+      title="TUI MPL Cadet Programme 2026: Important Update"
+      subtitle="TUI has officially paused its MPL Cadet scheme for the 2026 intake. Here is what you need to know, why they paused it, and alternative routes to the TUI flight deck."
+      canonical="/guides/tui-mpl-programme"
+      metaDescription="TUI MPL Cadet Programme 2026 update. TUI has confirmed they will not run the MPL scheme in 2026 due to reduced pilot demand. Alternative routes and future outlook."
       readTime="8 min read"
-      heroImage="/manus-storage/tui-mpl_c5f0c8af.jpg"
-      ctaHref="/quiz"
-      ctaText="Check your readiness for cadet programmes"
-      relatedGuides={[
-        { title: "BA Speedbird Academy 2026: Complete Guide", href: "/guides/ba-speedbird-academy", time: "10 min" },
-        { title: "easyJet Generation Pilot Programme: Complete Guide", href: "/guides/easyjet-generation-pilot", time: "9 min" },
-        { title: "Ryanair Cadet Pilot Programme: Complete Guide", href: "/guides/ryanair-cadet-programme", time: "8 min" },
-        { title: "Integrated vs Modular ATPL Training", href: "/guides/integrated-vs-modular", time: "9 min" },
-      ]}
+      heroImage="/manus-storage/tui-mpl_9d4c2b8e.jpg"
+      ctaHref="/tools/cadet-eligibility"
+      ctaText="Check other cadet programmes"
+      scopeBanner={<GuideScopeBanner scope="This guide covers the UK TUI MPL programme." usHref="/us/guides/united-aviate-program" usLabel="View USA cadet programmes →" />}
       faqSchema={[
-        { question: "What is the TUI Airways MPL programme?", answer: "The TUI Airways MPL programme is an ab-initio cadet pathway that trains pilots from zero experience to First Officer on TUI's Boeing 737 fleet via the Multi-Crew Pilot Licence (MPL). Successful graduates are offered First Officer positions with TUI Airways." },
-        { question: "Where does TUI MPL training take place?", answer: "TUI has partnered with various approved training organisations for its MPL programme. Training locations have included CAE and other European flight training organisations. Check TUI's careers page for the current training partner." },
-        { question: "What aircraft does TUI fly?", answer: "TUI Airways operates a mixed fleet of Boeing 737 MAX (737 MAX 8 and MAX 10) and Boeing 787 Dreamliner aircraft. The 737 MAX is the primary aircraft for MPL cadet graduates." },
-        { question: "What is the TUI MPL salary?", answer: "TUI First Officer salaries start at approximately £50,000–£65,000 including allowances. TUI is known for offering competitive pay and benefits, including discounted holidays for staff." },
-        { question: "Is TUI a good airline to start a pilot career?", answer: "TUI is an excellent first airline for pilots who want a positive working culture, competitive pay, and the lifestyle benefits of flying to holiday destinations. The 737 MAX experience is highly valued across the industry." },
+        { question: "Is the TUI MPL programme open in 2026?", answer: "No. TUI officially confirmed in early 2026 that they will not be running the MPL Cadet scheme for the 2026 intake, following a review of their pilot demand for Summer 2028." },
+        { question: "Why did TUI pause the MPL programme?", answer: "TUI stated that based on their current fleet and operational plans, the MPL scheme is not required to meet their pilot demand for the 2028 summer flying season (which is when 2026 cadets would graduate)." },
+        { question: "Will the TUI MPL programme return?", answer: "It is highly likely to return in future years. Airline cadet programmes are cyclical and depend entirely on the airline's long-term fleet planning. When TUI needs a fresh pipeline of First Officers, the programme will reopen." },
+        { question: "How else can I become a pilot for TUI?", answer: "TUI actively recruits Direct Entry First Officers (DEFO) who have completed their training independently (either integrated or modular) and hold a frozen ATPL. They also recruit type-rated Boeing 737 pilots." }
       ]}
       sections={[
         {
-          heading: "TUI Airways: The UK's Largest Leisure Airline",
+          heading: "The 2026 Update: Programme Paused",
           content: (
             <>
               <p>
-                TUI Airways is the UK's largest leisure airline, operating flights to over 100 destinations across Europe, the Caribbean, Mexico, and beyond. Part of the TUI Group — the world's largest tourism company — TUI Airways operates a modern fleet of Boeing 737 MAX and Boeing 787 Dreamliner aircraft from bases across the UK including Gatwick, Manchester, Birmingham, Bristol, East Midlands, and Glasgow.
-              </p>
-              <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="TUI MPL cadet programme" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <p>
-                For aspiring pilots, TUI offers something genuinely distinctive: a career that combines professional aviation with some of the world's most desirable destinations. TUI pilots fly to the Canary Islands, the Caribbean, the Maldives, and dozens of other holiday destinations — a lifestyle that many pilots find more appealing than the point-to-point European short-haul operations of low-cost carriers.
+                In a significant shift for the UK cadet market, TUI Airways officially confirmed that they will <strong>not</strong> be running their highly popular MPL (Multi-Crew Pilot Licence) Cadet scheme for the 2026 intake [1].
               </p>
               <p>
-                TUI's MPL cadet programme is the airline's primary route for recruiting and training the next generation of its flight crew. The programme offers a guaranteed First Officer position on completion, removing the speculative risk of self-sponsored training.
+                The announcement, made on the TUI Careers portal, stated: <em>"After careful consideration, we've decided not to run our MPL Cadet scheme in 2026. Based on our current plans, the TUI MPL scheme is not required to meet our pilot demand for Summer 2028."</em>
+              </p>
+              <p>
+                Because an MPL programme takes approximately 18–24 months to complete, an intake in 2026 is designed to produce First Officers ready to fly the line for the Summer 2028 season. TUI's internal forecasting indicates they have sufficient crew (or sufficient access to the Direct Entry market) to meet their needs without running a dedicated cadet pipeline this year.
               </p>
             </>
           ),
         },
         {
-          heading: "The MPL Pathway: How TUI Trains Its Pilots",
+          heading: "What This Means for Aspiring Cadets",
           content: (
             <>
               <p>
-                TUI's cadet programme uses the Multi-Crew Pilot Licence (MPL) — the same licence type used by the Generation easyJet programme. The MPL is designed specifically for multi-crew airline operations, with a greater emphasis on simulator training and Crew Resource Management from an earlier stage than the traditional ATPL pathway.
+                The pausing of the TUI MPL is disappointing news for many candidates, as it was one of the most highly regarded bonded cadet programmes in the UK, offering a direct route to the Boeing 737 right-hand seat.
               </p>
               <p>
-                For TUI, the MPL means that cadets train specifically for Boeing 737 operations from a relatively early stage in the programme. This airline-specific focus is both the strength and the limitation of the MPL — you are trained to be an excellent TUI First Officer, but your licence is initially tied to TUI and the 737 type.
-              </p>
-              <p>
-                As with other MPL programmes, the licence can be converted to a full unrestricted ATPL once you have accumulated the required hours on the line (typically 1,500 hours total time, 500 hours as PIC). Most TUI MPL graduates reach this milestone within 2–3 years of joining the airline, at which point they have the same licence flexibility as any ATPL holder.
-              </p>
-              <p>
-                TUI's training partner has varied over the years — the airline has worked with CAE and other approved training organisations. Check TUI's current careers page for the most up-to-date information on the active training partner and programme structure for the current intake.
+                However, this is a normal part of the aviation cycle. Cadet programmes are not permanent fixtures; they are recruitment tools that airlines turn on and off based on their 3-to-5-year fleet projections. The fact that TUI has paused their programme does not mean the broader pilot shortage is over — it simply means TUI specifically has met its quota for the medium term.
               </p>
             </>
           ),
         },
         {
-          heading: "Entry Requirements",
+          heading: "Alternative Cadet Programmes in 2026",
           content: (
             <>
               <p>
-                TUI's MPL cadet programme has the following minimum requirements:
+                If you were planning to apply for the TUI MPL, you should immediately pivot your focus to the other major UK cadet programmes that are actively recruiting in 2026:
               </p>
-              <ul>
-                <li>Minimum age of 18 at the start of training</li>
-                <li>Right to live and work in the UK</li>
-                <li>Minimum 5 GCSEs at grade C/4 or above, including Maths and English</li>
-                <li>A-levels or equivalent (strongly preferred in practice)</li>
-                <li>Ability to obtain a CAA Class 1 Medical Certificate</li>
-                <li>Normal colour vision</li>
-                <li>Height between 5'2" and 6'3"</li>
+              <ul className="list-disc pl-5 space-y-2 mt-2 mb-4">
+                <li><strong>BA Speedbird Academy:</strong> The ultimate prize — fully funded, 160 places available in 2026. Extremely competitive.</li>
+                <li><strong>easyJet Generation Pilot:</strong> An MPL programme very similar in structure to the TUI scheme, run through CAE Oxford.</li>
+                <li><strong>Jet2 FlightPath:</strong> A fully funded integrated ATPL route run through Skyborne Airline Academy.</li>
+                <li><strong>Ryanair Mentored Programme:</strong> A self-funded route through partner schools (FTEJerez, Bartolini) that offers a structured pathway to a Ryanair assessment.</li>
               </ul>
+            </>
+          ),
+        },
+        {
+          heading: "Alternative Routes into TUI",
+          content: (
+            <>
               <p>
-                TUI is known for placing significant weight on personal qualities in its selection process — the airline's culture is notably positive, and it selects for candidates who will thrive in a team-oriented, customer-focused environment. Communication skills, emotional intelligence, and genuine enthusiasm for the TUI brand and its destinations are valued alongside cognitive ability.
+                The pausing of the cadet programme does not mean TUI has stopped hiring pilots. They continue to recruit through the open market.
+              </p>
+              <p>
+                If your ultimate goal is to fly for TUI (which is highly desirable due to their excellent working culture and the eventual possibility of long-haul Boeing 787 flying), your best route in 2026 is to complete your training independently (either integrated or modular) and apply as a <strong>Direct Entry First Officer (DEFO)</strong>.
+              </p>
+              <p>
+                TUI regularly opens DEFO recruitment windows for pilots who hold a frozen ATPL and have completed an APS MCC (Airline Pilot Standard Multi-Crew Cooperation) course. They also heavily recruit pilots who already hold a Boeing 737 type rating (often hiring pilots who have spent 2–3 years flying the 737 at Ryanair).
               </p>
             </>
           ),
         },
         {
-          heading: "Selection Process",
+          heading: "References",
           content: (
             <>
-              <p>
-                TUI's cadet selection process is broadly similar to other major airline cadet programmes:
-              </p>
-              <p>
-                <strong>Online Application:</strong> An application form via TUI's careers portal. TUI's motivational questions often focus on why you want to fly for TUI specifically — generic answers about "wanting to fly" are insufficient. Research TUI's fleet, destinations, culture, and values before applying.
-              </p>
-              <p>
-                <strong>Online Aptitude Tests:</strong> Psychometric assessments covering numerical reasoning, spatial awareness, and multi-tasking. Standard pilot aptitude test formats — preparation using practice resources is strongly recommended.
-              </p>
-              <p>
-                <strong>Assessment Centre:</strong> An assessment day (sometimes two days) at TUI's training facilities or a partner location. Includes further aptitude testing, group exercises, individual interviews, and a simulator assessment. TUI's assessment centres are known for being well-organised and relatively candidate-friendly compared to some other airlines.
-              </p>
-              <p>
-                <strong>Medical Assessment:</strong> A CAA Class 1 Medical examination.
-              </p>
-              <p>
-                <strong>Final Interview:</strong> A panel interview with TUI's recruitment team. This is your opportunity to demonstrate genuine knowledge of and enthusiasm for TUI as an employer — not just aviation in general.
+              <p className="text-xs text-white/50 space-y-1">
+                [1] TUI Careers. "MPL Cadet Programme Update." <em>Official TUI Recruitment Portal</em>, January 2026.<br/>
+                [2] FTN Online. "TUI confirms no MPL cadet programme intake for 2026." <em>Flight Training News</em>.
               </p>
             </>
           ),
-        },
-        {
-          heading: "Costs",
-          content: (
-            <>
-              <p>
-                TUI's MPL programme is self-funded. Training costs vary depending on the current training partner and programme structure, but typically range from approximately £80,000–£110,000 for the full MPL programme including type rating.
-              </p>
-              <p>
-                Financing options are available through the training partner and specialist aviation finance providers. TUI does not directly fund training, but the guaranteed job offer significantly improves the risk profile of the investment compared to self-sponsored training without an airline commitment.
-              </p>
-              <p>
-                TUI First Officer salaries start at approximately £50,000–£65,000 (including allowances and benefits). TUI is known for offering competitive pay and excellent staff benefits, including significantly discounted holidays for employees and their families — a genuine perk for pilots who value the destinations they fly to.
-              </p>
-            </>
-          ),
-        },
-        {
-          heading: "A TUI Career: What Makes It Different",
-          content: (
-            <>
-              <p>
-                A career at TUI is genuinely different from flying for a low-cost carrier. The destinations, the passengers, the culture, and the lifestyle are all distinct — and for many pilots, distinctly preferable.
-              </p>
-              <p>
-                TUI pilots fly to some of the world's most beautiful destinations. A typical TUI roster might include Tenerife, Cancún, Barbados, the Maldives, and Dubrovnik in a single month. The passengers are on holiday — the atmosphere on board is generally positive, and the flying itself is varied and interesting.
-              </p>
-              <p>
-                TUI's working culture is consistently rated positively by its pilots. The airline has a reputation for treating its crew well, and the staff travel benefits — which extend to family members — are among the best in UK aviation. For pilots who value lifestyle alongside career, TUI is a compelling option.
-              </p>
-              <p>
-                The Boeing 737 MAX is an excellent aircraft — modern, fuel-efficient, and widely used across the industry. Experience on the 737 MAX is valued by airlines globally, and the type rating opens doors well beyond TUI if you choose to move on in your career. TUI also operates the 787 Dreamliner, and experienced TUI pilots can progress to long-haul operations on the 787 — one of the most advanced and comfortable aircraft in commercial service.
-              </p>
-              <p>
-                Career progression at TUI follows a seniority-based system. First Officers progress to Captain based on seniority, vacancies, and performance assessments. The upgrade timeline varies but has shortened in recent years due to the industry-wide pilot shortage. TUI Captains earn approximately £90,000–£130,000 depending on fleet and seniority.
-              </p>
-            </>
-          ),
-        },
+        }
+      ]}
+      relatedGuides={[
+        { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "13 min" },
+        { title: "easyJet Generation Pilot", href: "/guides/easyjet-generation-pilot", time: "9 min" },
+        { title: "BA Speedbird Academy", href: "/guides/ba-speedbird-academy", time: "12 min" },
       ]}
     />
   );

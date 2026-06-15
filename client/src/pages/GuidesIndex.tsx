@@ -49,6 +49,10 @@ const guides = [
   { title: "How to Become a Flight Instructor (FI) UK", description: "FI rating requirements, costs, salary, and how instructing fits into the hour-building strategy.", href: "/guides/flight-instructor-uk", time: "8 min read", category: "Training Routes", emoji: "👨‍🏫", market: "UK" },
   { title: "MCC & JOC Course UK", description: "What MCC and JOC are, cost (£3,500–£8,000), duration, and which airlines require which.", href: "/guides/mcc-joc-uk", time: "7 min read", category: "Training Routes", emoji: "🤝", market: "UK" },
   { title: "Pilot Eyesight Requirements UK", description: "Can you become a pilot with glasses or contacts? Class 1 vision standards and colour vision rules.", href: "/guides/pilot-eyesight-requirements-uk", time: "6 min read", category: "Medical", emoji: "👁️", market: "UK" },
+  // Global regional guides
+  { title: "How to Become a Pilot in Australia", description: "The complete 2026 guide to CASA licences, Part 141 vs 142, costs (AUD $65k–$120k), and the Qantas Academy pathway.", href: "/guides/how-to-become-a-pilot-australia", time: "12 min read", category: "Getting Started", emoji: "🇦🇺", market: "Global" },
+  { title: "How to Become a Pilot in Canada", description: "Transport Canada PPL to ATPL, real costs (CAD $80k–$130k), hour building in northern Canada, and aviation college pathways.", href: "/guides/how-to-become-a-pilot-canada", time: "11 min read", category: "Getting Started", emoji: "🇨🇦", market: "Global" },
+  { title: "How to Become a Pilot in Europe (EASA)", description: "EASA integrated vs modular ATPL, costs across 15 countries (€40k–€130k), and Lufthansa, Wizz Air, and Ryanair cadet programmes.", href: "/guides/how-to-become-a-pilot-europe", time: "13 min read", category: "Getting Started", emoji: "🇪🇺", market: "Global" },
   // US guides
   { title: "How to Become a Pilot in the USA", description: "The complete 2026 guide to FAA licences, Part 141 vs Part 61, ATP minimums, and airline cadet programmes.", href: "/us/guides/how-to-become-a-pilot", time: "9 min read", category: "Getting Started", emoji: "🇺🇸", market: "US" },
   { title: "FAA Medical Requirements (2026)", description: "First, Second, and Third Class medical standards — what the AME checks and how to prepare.", href: "/us/guides/faa-medical-requirements", time: "7 min read", category: "Medical", emoji: "🏥", market: "US" },
@@ -75,7 +79,7 @@ const categoryColors: Record<string, { bg: string; text: string; border: string 
   "Cadet Programmes": { bg: "oklch(0.55 0.2 145 / 0.12)", text: "oklch(0.72 0.18 145)", border: "oklch(0.55 0.2 145 / 0.25)" },
 };
 
-type MarketFilter = "All" | "UK" | "US";
+type MarketFilter = "All" | "UK" | "US" | "Global";
 
 const surface = "oklch(0.14 0.08 250)";
 const borderStyle = "oklch(1 0 0 / 0.08)";
@@ -85,7 +89,7 @@ const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2
 
 export default function GuidesIndex() {
   useEffect(() => { document.title = "Pilot Training Guides – AviatorIQ"; }, []);
-  const [market, setMarket] = useState<MarketFilter>("UK");
+  const [market, setMarket] = useState<MarketFilter>("All");
 
   const filtered = guides.filter((g) => market === "All" || g.market === market);
   const categories = Array.from(new Set(filtered.map((g) => g.category)));
@@ -140,9 +144,9 @@ export default function GuidesIndex() {
           <div className="container max-w-4xl">
             <div className="flex items-center gap-2 flex-wrap">
               <span className="text-xs font-semibold uppercase tracking-wider mr-1" style={{ color: muted }}>Show:</span>
-              {(["All", "UK", "US"] as MarketFilter[]).map((m) => (
+              {(["All", "UK", "US", "Global"] as MarketFilter[]).map((m) => (
                 <button key={m} style={tabStyle(market === m)} onClick={() => setMarket(m)}>
-                  {m === "UK" ? "🇬🇧 UK Guides" : m === "US" ? "🇺🇸 US Guides" : "All Guides"}
+                  {m === "UK" ? "🇬🇧 UK Guides" : m === "US" ? "🇺🇸 US Guides" : m === "Global" ? "🌍 Global Guides" : "All Guides"}
                 </button>
               ))}
               <span className="ml-auto text-xs" style={{ color: muted }}>

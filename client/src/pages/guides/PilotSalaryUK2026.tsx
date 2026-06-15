@@ -1,157 +1,178 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
-const PilotSalaryUK2026 = () => {
+export default function PilotSalaryUK2026() {
   return (
     <GuideLayout
       title="UK Pilot Salary Guide 2026: First Officer to Captain"
       subtitle="Real salary figures for UK airline pilots in 2026 — by rank, airline, and aircraft type. Based on current pay scales and union data."
       canonical="/guides/uk-pilot-salary-2026"
       metaDescription="UK pilot salary 2026. Real figures for first officers and captains at Ryanair, easyJet, Jet2, BA, and regional airlines. Includes pay progression, allowances, and total compensation."
+      readTime="12 min read"
+      heroImage="/manus-storage/uk-salary-2026_12c4d065.jpg"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
+      scopeBanner={<GuideScopeBanner scope="Salary figures in this guide are for UK airline pilots in GBP (2026)." usHref="/us/guides/airline-pilot-salary-usa" usLabel="View USA salaries →" />}
       faqSchema={[
         { question: "How much does a UK airline pilot earn in 2026?", answer: "A UK airline first officer earns £45,000–£75,000 in their first year, depending on the airline and aircraft type. Captains earn £80,000–£180,000. Total compensation including allowances, per diems, and pension contributions is typically 20–30% higher than base salary." },
         { question: "How long does it take to become a captain?", answer: "The timeline from first officer to captain varies significantly by airline and market conditions. In a growing airline, promotion can happen in 5–8 years. At legacy carriers like British Airways, it can take 10–15 years. The pilot shortage is accelerating promotion timelines across the industry." },
         { question: "Do pilots get paid per hour or a salary?", answer: "Most UK airline pilots receive a combination of a base salary plus flying hour pay. The base salary covers guaranteed minimum hours, and additional pay is earned for hours flown above the minimum. Some low-cost carriers pay primarily on a per-hour basis." },
         { question: "What is the highest paying airline for pilots in the UK?", answer: "British Airways and Virgin Atlantic typically offer the highest total compensation packages for UK pilots, particularly at captain level. Jet2 is known for competitive pay and a positive working culture. Ryanair pays well at captain level but has a more demanding working environment." },
-        { question: "Do pilots pay tax on their salary?", answer: "Yes. UK-based pilots pay income tax and National Insurance on their salary in the normal way. Some allowances and per diems may be tax-free up to HMRC limits. Pilots based overseas may have different tax arrangements depending on their employment contract and residency status." },
-      ]}
-      readTime="8 min read"
-      heroImage="/manus-storage/uk-salary-2026_12c4d065.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
-      relatedGuides={[
-        { title: "UK Pilot Shortage 2026: What It Means for You", href: "/guides/uk-pilot-shortage-2026", time: "5 min read" },
-        { title: "How to Finance Pilot Training UK 2026", href: "/guides/pilot-training-finance-2026", time: "9 min read" },
-        { title: "Airline Pilot Interview Guide", href: "/guides/airline-pilot-interview-guide", time: "10 min read" },
-        { title: "Type Rating: What It Is and What It Costs", href: "/guides/type-rating-guide", time: "6 min read" },
+        { question: "Do pilots pay tax on their salary?", answer: "Yes. UK-based pilots pay income tax and National Insurance on their salary in the normal way. Some allowances and per diems may be tax-free up to HMRC limits. Pilots based overseas may have different tax arrangements depending on their employment contract and residency status." }
       ]}
       sections={[
         {
-          heading: "Salary Progression: First Officer to Captain",
+          heading: "The Reality of UK Pilot Salaries in 2026",
           content: (
             <>
-              <div style={{ margin: "0 0 20px 0", borderRadius: "12px", overflow: "hidden" }}>
-                <img
-                  src="/manus-storage/pilot-salary-progression_0322057d.png"
-                  alt="UK airline pilot salary progression 2026 from first officer to captain"
-                  style={{ width: "100%", display: "block" }}
-                  loading="lazy"
-                />
-              </div>
-              <p style={{ fontSize: "0.8rem", color: "oklch(0.45 0.04 240)", textAlign: "center", marginBottom: "16px" }}>
-                UK airline pilot salary ranges by career stage, 2026. Base salary only — total compensation 20–30% higher.
+              <p>
+                For years, airline pilots have been viewed as some of the highest earners in the UK, but in 2026, salaries across the industry are reaching levels few could have predicted a decade ago. Driven by post-pandemic recovery, aggressive fleet expansion, and a structural shortage of experienced captains, airlines have been forced to significantly improve pay and conditions to attract and retain flight crew [1].
               </p>
-              <img src="/manus-storage/pay-scale_67aa53c9.jpg" alt="UK pilot pay scale" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/pilot-salary-progression_0322057d.png" alt="UK pilot salary progression" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <p>
+                However, behind the eye-catching six-figure salaries lies a more complicated reality. Becoming an airline pilot still requires a massive financial commitment — often exceeding £100,000 — before your first job. When looking at pilot salaries, you must consider the "total compensation package," not just the base pay. This includes block hour pay (flying pay), sector pay, overnight allowances (per diems), and employer pension contributions.
+              </p>
+              <p>
+                In this guide, we break down exactly what UK pilots earn in 2026, from low-hour regional First Officers to senior long-haul Captains at the national flag carrier.
+              </p>
             </>
           ),
         },
         {
-          heading: "The Real Numbers: UK Pilot Pay in 2026",
+          heading: "British Airways vs Virgin Atlantic: The Long-Haul Giants",
           content: (
             <>
               <p>
-                Pilot salaries in the UK have recovered strongly from the COVID-19 pandemic and are now at or above pre-pandemic levels at most airlines. The ongoing pilot shortage in Europe has given pilots significant negotiating leverage, and pay scales have increased across the industry.
+                British Airways and Virgin Atlantic offer the highest earning potential in the UK market, particularly for experienced long-haul crews. The recent BALPA-negotiated pay deal at British Airways (running 2023–2027) delivered cumulative increases of approximately 15.5%, restoring and exceeding pre-pandemic levels [2].
               </p>
               <p>
-                The figures below are based on current pay scales from union agreements, publicly available data, and industry sources. They represent base salary — total compensation including allowances, per diems, and pension contributions is typically 20–30% higher.
+                <strong>British Airways:</strong>
+                <ul className="list-disc pl-5 mt-2 mb-4 space-y-1">
+                  <li><strong>First Officer (Short-Haul A320):</strong> £40,000–£85,000 depending on seniority.</li>
+                  <li><strong>First Officer (Long-Haul B787/A350/B777):</strong> £85,000–£120,000.</li>
+                  <li><strong>Captain (Short-Haul):</strong> £100,000–£145,000.</li>
+                  <li><strong>Captain (Long-Haul):</strong> £145,000–£167,000+ base salary. With allowances and flying pay, senior captains regularly exceed £200,000.</li>
+                </ul>
               </p>
-              <div style={{ overflowX: "auto" }}>
-                <table style={{ width: "100%", borderCollapse: "collapse", margin: "20px 0" }}>
-                  <thead>
-                    <tr style={{ backgroundColor: "oklch(0.18 0.08 250)" }}>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Airline</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>First Officer (Year 1)</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Senior First Officer</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Captain</th>
+              <p>
+                <strong>Virgin Atlantic:</strong>
+                Salaries at Virgin are highly competitive and broadly similar to BA's long-haul fleets. First Officers typically earn £70,000–£100,000, while Captains earn £115,000–£200,000. The key difference is career structure: Virgin is a purely long-haul operator, giving pilots direct access to widebody flying, whereas BA pilots often spend years on the short-haul European network before bidding for long-haul slots.
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "Low-Cost Carriers: easyJet, Ryanair & Wizz Air",
+          content: (
+            <>
+              <p>
+                Historically, low-cost carriers (LCCs) were associated with lower pay and demanding conditions. In 2026, that perception is outdated. LCCs now offer salaries that rival traditional flag carriers, making them highly attractive — especially given their much faster time-to-command (upgrade to Captain).
+              </p>
+              
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Airline</th>
+                      <th className="px-4 py-3 font-semibold">First Officer (Total Est.)</th>
+                      <th className="px-4 py-3 font-semibold">Captain (Total Est.)</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    {[
-                      ["British Airways", "£55,000–£65,000", "£75,000–£95,000", "£120,000–£180,000"],
-                      ["easyJet", "£50,000–£60,000", "£65,000–£80,000", "£90,000–£130,000"],
-                      ["Jet2", "£50,000–£62,000", "£68,000–£82,000", "£95,000–£130,000"],
-                      ["Ryanair", "£45,000–£58,000", "£60,000–£75,000", "£100,000–£150,000"],
-                      ["TUI Airways", "£48,000–£60,000", "£65,000–£78,000", "£90,000–£120,000"],
-                      ["Virgin Atlantic", "£52,000–£65,000", "£75,000–£90,000", "£110,000–£160,000"],
-                      ["Loganair / Regional", "£35,000–£50,000", "£50,000–£65,000", "£65,000–£90,000"],
-                    ].map(([airline, fo, sfo, capt]) => (
-                      <tr key={airline}>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.85 0.04 240)", fontWeight: "600" }}>{airline}</td>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>{fo}</td>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>{sfo}</td>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>{capt}</td>
-                      </tr>
-                    ))}
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">easyJet</td>
+                      <td className="px-4 py-3">£65,000 – £100,000</td>
+                      <td className="px-4 py-3">£170,000 – £220,000</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Ryanair</td>
+                      <td className="px-4 py-3">£50,000 – £95,000</td>
+                      <td className="px-4 py-3">£140,000 – £180,000</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Wizz Air (UK/West EU)</td>
+                      <td className="px-4 py-3">£55,000 – £90,000</td>
+                      <td className="px-4 py-3">£120,000 – £170,000</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
+
               <p>
-                These figures are base salary only. Total compensation — including sector pay, allowances, per diems, and pension — is typically 20–30% higher. A Jet2 captain on a £120,000 base salary may have total compensation of £145,000–£155,000.
+                <strong>easyJet</strong> has emerged as one of the strongest-paying short-haul airlines in Europe following recent retention agreements. A senior easyJet captain flying a busy summer roster can earn over £200,000.
+              </p>
+              <p>
+                <strong>Ryanair</strong> remains highly competitive, though its pay structure is heavily weighted toward sector pay (you get paid for what you fly). The major draw of Ryanair is career progression: it is possible to join as a 200-hour cadet and upgrade to Captain in just 3 to 4 years — a timeline that would take 10+ years at British Airways.
               </p>
             </>
           ),
         },
         {
-          heading: "Pay Progression: From First Officer to Captain",
+          heading: "The Package Holiday Giants: Jet2 & TUI",
           content: (
             <>
               <p>
-                The journey from newly qualified first officer to captain is the most important financial trajectory in a pilot's career. The timeline varies significantly by airline, market conditions, and the pilot shortage.
+                Jet2 and TUI offer a very different lifestyle to the aggressive schedules of the LCCs. Focused on seasonal leisure travel, these airlines are highly regarded for their company culture and lifestyle balance.
               </p>
               <p>
-                In the current market (2026), with a significant pilot shortage across Europe, promotion timelines have accelerated. At growing airlines like Jet2 and Ryanair, first officers are being promoted to captain in 5–8 years. At legacy carriers like British Airways, where the fleet is larger and the seniority list is longer, the timeline is typically 10–15 years.
+                <strong>Jet2:</strong> First Officers typically earn £60,000–£85,000, while Captains earn around £145,000 (including allowances). Jet2 is frequently voted one of the best airlines to work for in the UK.
               </p>
               <p>
-                The seniority system means that joining a growing airline early is one of the best career decisions a pilot can make. A first officer who joins Jet2 in 2026 will move up the seniority list faster than one who joins a stagnant airline, regardless of their individual performance.
+                <strong>TUI:</strong> First Officers earn £60,000–£100,000, and Captains earn £100,000–£170,000. TUI offers a unique advantage over Jet2: a mixed fleet that includes the Boeing 787 Dreamliner. This allows TUI pilots to fly long-haul routes to the Caribbean and Asia, accessing higher earnings and international layovers without moving to BA or Virgin.
               </p>
             </>
           ),
         },
         {
-          heading: "Total Compensation: What's Beyond the Base Salary",
+          heading: "Regional Airlines: The Essential Stepping Stone",
           content: (
             <>
               <p>
-                Base salary is only part of the picture. UK airline pilots typically receive a range of additional compensation elements:
+                Regional airlines like Loganair, Aurigny, and Eastern Airways are the traditional entry point for newly qualified commercial pilots. Operating turboprops (like the ATR 72) or small regional jets (like the Embraer E190), these airlines offer invaluable hands-on flying experience in challenging weather conditions.
               </p>
               <p>
-                <strong>Sector pay / flying hour pay:</strong> Additional pay for each sector flown or hour in the air, above a guaranteed minimum. This can add £5,000–£20,000 per year depending on the airline and how much you fly.
+                Salaries are noticeably lower than at mainline carriers. First Officers typically earn £30,000–£50,000, while Captains earn £60,000–£85,000. BA CityFlyer (operating out of London City) sits slightly higher, with FOs earning £45,000–£70,000 and Captains reaching £90,000–£120,000.
               </p>
               <p>
-                <strong>Per diems and allowances:</strong> Daily allowances for time away from base, meal allowances, and hotel costs when overnighting away from home. These are often tax-free up to HMRC limits and can add £5,000–£15,000 per year.
-              </p>
-              <p>
-                <strong>Pension:</strong> Most UK airlines contribute 5–15% of salary to a pension scheme. At British Airways, the pension contribution is particularly generous. Over a 30-year career, this is a significant component of total compensation.
-              </p>
-              <p>
-                <strong>Travel benefits:</strong> Staff travel (standby and sometimes confirmed seats) for the pilot and their family is a significant perk. The value varies by airline but can be worth thousands of pounds per year in holiday savings.
+                While the pay is lower, regional flying builds exceptional manual handling skills. Pilots often fly 4 to 6 short sectors a day into smaller airports. After 2–3 years, most regional pilots use this experience to transition to easyJet, Jet2, or British Airways.
               </p>
             </>
           ),
         },
         {
-          heading: "The Return on Investment Calculation",
+          heading: "The Tax Reality: Gross vs Take-Home Pay",
           content: (
             <>
               <p>
-                The most important financial question for any aspiring pilot is: does the investment in training pay off? The honest answer, for most people who complete training and get an airline job, is yes — but the timeline matters.
+                When comparing UK pilot salaries to the tax-free packages offered by Gulf carriers (like Emirates or Qatar Airways), it is vital to factor in HMRC.
               </p>
               <p>
-                Consider this scenario: You spend £100,000 on integrated training plus a type rating, funded by a loan at 7% over 15 years. Your monthly repayment is approximately £900. You join an airline as a first officer at £55,000. After tax, your take-home is approximately £3,400/month. Your loan repayment is £900/month — 26% of take-home pay. Tight, but manageable.
+                A BA Captain earning £167,000 gross will take home approximately £105,700 after UK Income Tax and National Insurance (assuming standard 2025/26 tax bands and no salary sacrifice). The personal allowance tapers away for earnings over £100,000, creating an effective marginal tax rate of 60% in that band.
               </p>
               <p>
-                By year 5, you are earning £70,000. Your loan repayment is now 18% of take-home pay. By year 10, as a captain on £110,000, your loan may be paid off entirely. Over a 30-year career, your total earnings will be £2.5–£4 million. The £100,000 investment looks very different in that context.
-              </p>
-              <p>
-                The calculation changes significantly if you start training at 45 rather than 25. A 20-year career window changes the ROI fundamentally. Use the <Link href="/calculator">AviatorIQ Cost Calculator</Link> to model your specific scenario.
+                However, UK pilots benefit from strong employer pension contributions (often 10–15%), the protection of UK employment law, and the ability to live at home rather than as an expatriate in the Middle East. Many pilots use salary sacrifice pension schemes to efficiently manage their tax burden.
               </p>
             </>
           ),
         },
+        {
+          heading: "References",
+          content: (
+            <>
+              <p className="text-xs text-white/50 space-y-1">
+                [1] Simple Flying. "A Look At The Salaries Of UK Airline Pilots In 2026." <em>Aviation News</em>.<br/>
+                [2] Airmappr. "British Airways Pilot Salary Guide 2026." <em>Flight Training Data</em>.<br/>
+                [3] British Airline Pilots' Association (BALPA). "Pilot Pay and Conditions Agreements."
+              </p>
+            </>
+          ),
+        }
+      ]}
+      relatedGuides={[
+        { title: "UK Pilot Shortage 2026: What It Means for You", href: "/guides/uk-pilot-shortage-2026", time: "5 min" },
+        { title: "How to Finance Pilot Training UK", href: "/guides/pilot-training-finance-2026", time: "9 min" },
+        { title: "Airline Pilot Interview Guide", href: "/guides/airline-pilot-interview", time: "10 min" },
       ]}
     />
   );
-};
-
-export default PilotSalaryUK2026;
+}

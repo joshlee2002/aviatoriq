@@ -53,7 +53,7 @@ const PilotEyesightUK = () => {
               <p>The cornerstone of the Class 1 medical vision assessment is visual acuity – how clearly you can see at various distances. The CAA and EASA specify distinct requirements for distant, intermediate, and near vision, both with and without corrective lenses.</p>
               <p>For <strong>distant visual acuity</strong>, with or without correction, you must achieve 6/9 (0.7) or better in each eye separately. Crucially, your visual acuity with both eyes together (binocular vision) must be 6/6 (1.0) or better. This ensures a pilot has excellent overall vision for identifying distant landmarks, other aircraft, and runway features.</p>
               <p><strong>Near and intermediate vision</strong> are equally important for tasks within the cockpit, such as reading instruments, charts, and electronic displays. Applicants must be able to read an N5 chart or equivalent at 30-50 cm (near vision) and an N14 chart or equivalent at 100 cm (intermediate vision), if necessary with correction. These tests simulate the distances at which pilots interact with their flight deck instruments and documentation.</p>
-              <p>It is important to understand that while correction is allowed, the underlying refractive error must also fall within acceptable limits, which we will explore in the next section.</p>
+              <p>understand that while correction is allowed, the underlying refractive error must also fall within acceptable limits, which we will explore in the next section.</p>
             </>
           ),
         },
@@ -90,7 +90,7 @@ const PilotEyesightUK = () => {
             <>
               <p>Advancements in refractive surgery, such as LASIK and PRK, have made it possible for many individuals to correct their vision. For aspiring and current pilots in the UK, these procedures are generally accepted, but with strict conditions and a thorough post-operative assessment.</p>
               <p>The primary requirement is that your visual function must have fully recovered and be stable, with no complications that could affect flight safety. Following laser eye surgery, a mandatory waiting period is typically imposed (e.g., 3 to 6 months) to ensure the eye has healed completely and the refractive error is stable. A satisfactory ophthalmological evaluation by an eye specialist is always required before recertification can be considered.</p>
-              <p>The CAA will assess the stability of your vision, the absence of glare or halo effects, and any potential long-term complications. Procedures like Radial Keratotomy (RK) are generally not accepted due to potential long-term instability. It is crucial to inform your AME about any refractive surgery you have undergone and provide all relevant medical documentation from your ophthalmologist.</p>
+              <p>The CAA will assess the stability of your vision, the absence of glare or halo effects, and any potential long-term complications. Procedures like Radial Keratotomy (RK) are generally not accepted due to potential long-term instability. inform your AME about any refractive surgery you have undergone and provide all relevant medical documentation from your ophthalmologist.</p>
             </>
           ),
         },

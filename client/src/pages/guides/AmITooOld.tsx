@@ -1,164 +1,133 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
-const AmITooOld = () => {
+export default function AmITooOld() {
   return (
     <GuideLayout
       title="Am I Too Old to Become a Pilot? The Honest Answer (2026)"
-      subtitle="Age limits, realistic career timelines, and what airlines actually think — based on real CAA rules and airline hiring data."
+      subtitle="No upper age limit exists for pilot training — but there are real considerations around career length, medical requirements, and return on investment."
       canonical="/guides/am-i-too-old-to-become-a-pilot"
-      metaDescription="Wondering if you're too old to become a pilot in the UK? This guide covers CAA age rules, realistic career timelines by age group, and what airlines actually look for in 2026."
+      metaDescription="Am I too old to become a pilot? No upper age limit in the UK. Mandatory retirement at 65. Real analysis of career length, medical requirements, and ROI by starting age."
+      readTime="10 min read"
+      heroImage="/manus-storage/pilot-age_9d4c2b8e.jpg"
+      ctaHref="/quiz"
+      ctaText="Find your training route"
+      scopeBanner={<GuideScopeBanner scope="Age limits and career runway figures in this guide are based on UK airline hiring practices." usHref="/us/guides/am-i-too-old-to-become-a-pilot-usa" usLabel="View USA version →" />}
       faqSchema={[
-        { question: "Is there an upper age limit to become a commercial pilot in the UK?", answer: "There is no upper age limit to obtain a CPL or ATPL in the UK. However, UK airlines must retire pilots at 65, and most airlines want a minimum return on their training investment, so practical career considerations apply for candidates over 45." },
-        { question: "Can I start pilot training at 40?", answer: "Yes. Many pilots have started training at 40 and gone on to successful airline careers. The key factors are your Class 1 medical status, financial readiness, and the realistic career window before the mandatory retirement age of 65." },
-        { question: "What is the best age to start pilot training?", answer: "From a pure career-economics standpoint, starting between 18 and 28 gives the longest career runway. However, people who start in their 30s and 40s often have stronger finances, better discipline, and more life experience — which can make them better candidates." },
-        { question: "Will airlines hire a pilot who is 45?", answer: "Yes, airlines hire pilots in their 40s, particularly for first officer roles. The shortage of pilots in Europe means airlines are less age-selective than they were a decade ago. Your Class 1 medical, hours, and type rating matter far more than your age." },
-        { question: "Can I become a private pilot at any age?", answer: "Yes. There is no upper age limit for a Private Pilot Licence (PPL) in the UK. You can fly for pleasure at any age as long as you hold a valid medical certificate." },
+        { question: "Is there an upper age limit to become a commercial pilot?", answer: "No. There is no legal upper age limit to start pilot training in the UK. However, the mandatory retirement age for commercial pilots is 65." },
+        { question: "What is the maximum age to fly for an airline?", answer: "The mandatory retirement age for commercial airline pilots is 65 under ICAO standards, adopted by the UK CAA. Pilots aged 60-65 may only fly as part of a two-pilot crew where the other pilot is under 60." },
+        { question: "Can I become a pilot at 50?", answer: "Yes. There is no legal barrier to starting training at 50. You would have a 15-year career to age 65. The key considerations are the Class 1 Medical (which becomes more demanding with age) and the return on investment of £100,000 training costs over a 15-year career." },
+        { question: "Do airlines discriminate against older pilot applicants?", answer: "No. UK airlines are legally prohibited from age discrimination under the Equality Act 2010. Airlines hire based on qualifications, aptitude test scores, and simulator performance." }
       ]}
-      readTime="7 min read"
-      heroImage="/manus-storage/pilot-age_3cb7fd51.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
       sections={[
         {
-          heading: "The Short Answer: No, There Is No Legal Upper Age Limit",
+          heading: "The Direct Answer",
           content: (
             <>
               <p>
-                The Civil Aviation Authority (CAA) does not impose an upper age limit on obtaining a Commercial Pilot Licence (CPL) or an Airline Transport Pilot Licence (ATPL). You can start training at 40, 50, or even 60 and legally qualify as a commercial pilot. The question is not whether you <em>can</em> — it's whether it makes practical and financial sense for your specific situation.
+                There is no upper age limit to start pilot training in the UK. You can legally begin flight training at any age, and UK airlines are legally prohibited from discriminating on the basis of age under the Equality Act 2010.
               </p>
-              <img src="/manus-storage/pilot-over-40_fbd1e435.jpg" alt="Pilot training over 40" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/ground-school-classroom_b43b6fc8.jpg" alt="Ground school training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                The mandatory retirement age for airline pilots operating under UK regulations is 65. This is the single most important number in the age conversation. Everything else — what airlines will consider, whether training is worth the investment, what career is realistically achievable — flows from this one fact.
+                The mandatory retirement age for commercial airline pilots is 65 — set by ICAO and adopted by the UK CAA. This is the only hard age limit in the system.
+              </p>
+              <p>
+                What this means in practice:
+              </p>
+              <ul className="list-disc pl-5 space-y-2 mt-2 mb-4">
+                <li>Starting at 30: 35-year potential career</li>
+                <li>Starting at 40: 25-year potential career</li>
+                <li>Starting at 50: 15-year potential career</li>
+                <li>Starting at 55: 10-year potential career</li>
+              </ul>
+              <p>
+                Whether any of these career lengths justify the £80,000–£130,000 investment in training depends on your personal financial situation and what you want from the career.
               </p>
             </>
           ),
         },
         {
-          heading: "Age Groups: What's Realistic at Each Stage",
+          heading: "The Age Brackets: What Each Means",
           content: (
             <>
               <p>
-                The honest picture varies significantly depending on where you are in life. Here is a frank breakdown by age group, based on real hiring patterns and training economics:
+                <strong>Starting in your 20s:</strong> This is the conventional route. You have the longest career runway, the easiest access to cadet programmes (most have informal upper age limits of 35–40), and the most time to recoup your training investment. The main challenge is funding £100,000 at an age when you have had little time to save.
               </p>
-              <div style={{ overflowX: "auto" }}>
-                <table style={{ width: "100%", borderCollapse: "collapse", margin: "20px 0" }}>
-                  <thead>
-                    <tr style={{ backgroundColor: "oklch(0.18 0.08 250)" }}>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Age at Start</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Career Window</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Recommended Route</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Verdict</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>18–28</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>37–47 years</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>Integrated or Modular</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.72 0.18 145)" }}>Ideal window</td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>29–35</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>28–34 years</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>Integrated or Modular</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.72 0.18 145)" }}>Excellent — very common</td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>36–42</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>21–27 years</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>Modular (cost-efficient)</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.72 0.18 65)" }}>Viable — plan carefully</td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>43–50</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>13–20 years</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>Modular or PPL/CPL only</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.78 0.18 25)" }}>Possible — ROI is tight</td>
-                    </tr>
-                    <tr>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>51+</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>Under 12 years</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>PPL for pleasure</td>
-                      <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.78 0.18 25)" }}>Commercial ROI unlikely</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
               <p>
-                These are honest assessments, not discouragement. The career window calculation is simple: if you finish training at 38 and retire at 65, you have 27 years to recoup a £60,000–£100,000 investment and build a pension. That is entirely viable. If you finish at 55, you have 10 years — the maths becomes much harder to justify.
+                <strong>Starting in your 30s:</strong> Still an excellent time to start. You likely have more financial stability than in your 20s, and a 25–35 year career is more than enough to make the investment worthwhile. Cadet programmes may still be accessible. The Class 1 Medical is straightforward for most healthy 30-year-olds.
+              </p>
+              <p>
+                <strong>Starting in your 40s:</strong> Absolutely viable, but requires more careful financial planning. The modular route is often more practical than integrated. Cadet programmes are largely off the table. The Class 1 Medical requires annual renewal after 40 and includes additional cardiovascular checks.
+              </p>
+              <p>
+                <strong>Starting in your 50s:</strong> Possible, but the ROI calculation becomes much tighter. A 50-year-old has 15 years to recoup £100,000 in training costs. This is achievable if you reach Captain within 8–10 years, but leaves little margin for error. The medical requirements are more demanding, and the risk of a disqualifying condition increases with age.
               </p>
             </>
           ),
         },
         {
-          heading: "What Airlines Actually Think About Older Candidates",
+          heading: "The Medical: The Real Age Constraint",
           content: (
             <>
               <p>
-                The pilot shortage in Europe has fundamentally changed how airlines view age. A decade ago, airlines could afford to be selective. Today, with a projected shortfall of 80,000 pilots in Europe by 2032, carriers are actively recruiting experienced candidates in their 30s and 40s. Ryanair, Jet2, TUI, and regional operators like Loganair regularly hire first officers who are in their late 30s and early 40s.
+                The Class 1 Medical is the practical age constraint in pilot training — not any legal rule about starting age. The older you are, the more demanding the medical becomes, and the higher the probability of developing a condition that prevents you from flying.
               </p>
               <p>
-                What airlines care about far more than age is your Class 1 medical status, your hours, your type rating, and your interview performance. A 42-year-old with a clean medical, 200 hours, and a strong simulator assessment will beat a 24-year-old who cannot handle pressure in a sim. Age is a factor in the long-term hiring calculation, but it is not the disqualifier many people assume.
+                Under 40: Class 1 Medical valid for 24 months. Standard assessments.
               </p>
               <p>
-                The one area where age creates a genuine disadvantage is cadet sponsorship programmes. BA Speedbird, Jet2, and easyJet cadet schemes typically have upper age limits of 35–40, because they are investing in a long career return. If you are over 40, self-funded training is the realistic path.
+                40–60: Class 1 Medical valid for 12 months. Annual ECG required. Additional cardiovascular checks as you age.
+              </p>
+              <p>
+                60–65: Class 1 Medical valid for 6 months. More frequent assessments. Can only fly as part of a two-pilot crew where the other pilot is under 60.
+              </p>
+              <p>
+                The most important thing you can do before spending any money on flight training is to get a Class 1 Medical assessment. This costs £500–£800 and takes a full day. If you pass, you have certainty. If there are borderline issues, an AME can give you a realistic assessment of your long-term prospects.
               </p>
             </>
           ),
         },
         {
-          heading: "The Class 1 Medical: The Real Gating Factor",
+          heading: "What Airlines Actually Do",
           content: (
             <>
               <p>
-                For older candidates, the Class 1 medical is a more significant concern than age itself. The CAA's Class 1 medical requirements become harder to pass as you age, particularly around cardiovascular health, vision, and certain chronic conditions. Before committing any money to training, every candidate over 35 should book a Class 1 medical examination first.
+                Airlines hire pilots based on qualifications, aptitude test performance, and simulator assessment results. Age is not a formal criterion.
               </p>
               <p>
-                The medical costs around £350–£500 and takes half a day. If you pass, you have your answer — proceed with confidence. If there are borderline issues, the CAA can issue an OML (Operational Multi-crew Limitation) which allows you to fly commercially with a co-pilot present. Many conditions that would have disqualified you ten years ago are now manageable under OML.
+                The one exception is cadet programmes. Most airline cadet programmes have informal upper age limits (typically 35–40) because they are investing in a long career return. The BA Speedbird Academy states an upper age limit of 58, but in practice, the vast majority of successful applicants are under 35.
               </p>
               <p>
-                Do not spend £60,000 on training before you have a valid Class 1 medical. This is the single most important piece of advice for any candidate over 30.
+                For direct-entry First Officer positions (applying to airlines after completing your training independently), there is no age barrier. In 2026, with the pilot shortage at its peak, airlines are hiring qualified pilots of all ages.
               </p>
             </>
           ),
         },
         {
-          heading: "Career Paths That Make Sense at Every Age",
+          heading: "The Question You Should Actually Be Asking",
           content: (
             <>
               <p>
-                Commercial airline flying is not the only destination. If the airline career window is tight, there are rewarding and well-paid alternatives that do not require 30 years of service to justify the investment:
+                The question "Am I too old?" is usually the wrong question. The right questions are:
               </p>
+              <ol className="list-decimal pl-5 space-y-2 mt-2 mb-4">
+                <li><strong>Can I get a Class 1 Medical?</strong> Get this answered before anything else.</li>
+                <li><strong>Can I fund the training without causing financial hardship?</strong> £100,000 in debt on a first officer's salary is manageable but not comfortable.</li>
+                <li><strong>Do I have a realistic career plan?</strong> What airline do I want to fly for? What aircraft? What base?</li>
+                <li><strong>Is my family supportive?</strong> Pilot training is demanding on relationships. The shift work and time away from home are significant lifestyle changes.</li>
+              </ol>
               <p>
-                <strong>Corporate and business aviation</strong> is a growing sector with strong demand. Flying a Cessna Citation or Bombardier Challenger for a private operator or charter company is a legitimate and often very well-paid career, and operators in this sector are less age-sensitive than airlines.
-              </p>
-              <p>
-                <strong>Flight instruction</strong> is a viable career path for those who complete a CPL and CFI rating. Instructors are in extremely high demand across the UK, and the work is genuinely rewarding. It also builds hours if you later want to move into commercial operations.
-              </p>
-              <p>
-                <strong>Private flying</strong> — if your goal is simply to fly for pleasure, a PPL is achievable at any age, costs £8,000–£15,000, and gives you access to thousands of airfields across Europe. Many people who thought they wanted an airline career discover that a PPL is actually what they wanted all along.
+                If you can answer all four of these questions positively, age is not the barrier. Use the <Link href="/quiz">AviatorIQ Career Readiness Assessment</Link> to get a personalised evaluation of your readiness.
               </p>
             </>
           ),
-        },
-        {
-          heading: "The Bottom Line",
-          content: (
-            <>
-              <p>
-                You are not too old to become a pilot. The question is whether the specific career you have in mind is achievable and financially sensible given your age, health, and circumstances. For most people under 45, the answer is yes — with the right route and realistic planning. For those over 50, the commercial airline path is financially difficult to justify, but flying for pleasure or instruction remains entirely within reach.
-              </p>
-              <p>
-                The best thing you can do right now is two things: book a Class 1 medical to get a definitive answer on your health, and use the <Link href="/roadmap">AviatorIQ Roadmap Generator</Link> to see which specific path makes sense for your age, budget, and availability. Both take less than a day and will give you more clarity than months of online research.
-              </p>
-            </>
-          ),
-        },
+        }
+      ]}
+      relatedGuides={[
+        { title: "Pilot Training Over 40", href: "/guides/pilot-training-over-40", time: "11 min" },
+        { title: "Class 1 Medical Guide", href: "/guides/class-1-medical", time: "5 min" },
+        { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
       ]}
     />
   );
-};
-
-export default AmITooOld;
+}

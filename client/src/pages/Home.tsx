@@ -162,7 +162,7 @@ function HeroSection() {
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: ctaGradient }}>JM</div>
                   <div>
-                    <div className="text-sm font-semibold text-white">Jamie, 24 — London</div>
+                    <div className="text-sm font-semibold text-white">Jamie, 24 — Sydney</div>
                     <div className="text-xs" style={{ color: "oklch(0.6 0.04 240)" }}>Goal: Airline Pilot (ATPL)</div>
                   </div>
                   <div className="ml-auto text-right">
@@ -173,7 +173,7 @@ function HeroSection() {
                 <div className="grid grid-cols-2 gap-2">
                   {[
                     { label: "Route", value: "Integrated ATPL" },
-                    { label: "Budget", value: "£50k–£100k" },
+                    { label: "Budget", value: "$80k–$140k" },
                     { label: "Timeline", value: "Within 12 months" },
                     { label: "Top barrier", value: "Finance" },
                   ].map(item => (
@@ -191,8 +191,8 @@ function HeroSection() {
                 <div className="space-y-1.5">
                   {[
                     { name: "Oxford Aviation Academy", match: "98%", location: "Oxford, UK" },
-                    { name: "L3Harris Airline Academy", match: "94%", location: "Bournemouth, UK" },
-                    { name: "CAE Oxford", match: "91%", location: "Oxford, UK" },
+                    { name: "ATP Flight School", match: "94%", location: "Phoenix, USA" },
+                    { name: "CASA Aviation Academy", match: "91%", location: "Melbourne, AU" },
                   ].map(school => (
                     <div
                       key={school.name}
@@ -224,7 +224,7 @@ function SocialProofBar() {
       <div className="container py-4">
         <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
           {[
-            { value: "16+", label: "UK flight schools listed" },
+            { value: "54+", label: "Flight schools worldwide" },
             { value: "33+", label: "In-depth training guides" },
             { value: "11", label: "Free interactive tools" },
             { value: "Free", label: "Always, no registration" },
@@ -312,13 +312,13 @@ function ExpertCredibilitySection() {
     {
       icon: <Shield className="w-6 h-6" />,
       title: "No sponsored rankings",
-      body: "Flight schools are listed on merit, not because they pay us. Every school in our directory is included because it's a legitimate, CAA or EASA approved training provider.",
+      body: "Flight schools are listed on merit, not because they pay us. Every school in our directory is included because it's a legitimate, nationally approved training provider.",
       color: "oklch(0.45 0.18 240)",
     },
     {
       icon: <BookOpen className="w-6 h-6" />,
       title: "Researched from primary sources",
-      body: "Every cost figure, timeline, and requirement in our guides is sourced from the CAA, EASA, and direct school prospectuses — not copied from other websites. We cite our sources.",
+      body: "Every cost figure, timeline, and requirement in our guides is sourced from national aviation authorities and direct school prospectuses — not copied from other websites. We cite our sources.",
       color: "oklch(0.6 0.18 200)",
     },
     {
@@ -585,9 +585,9 @@ function AfterTrainingSection() {
 // ─── Cost Section ─────────────────────────────────────────────────────────────
 function CostSection() {
   const costData = [
-    { route: "Integrated ATPL", range: "£80,000 – £120,000", duration: "18–24 months", flag: "🇬🇧", color: "oklch(0.45 0.18 240)" },
-    { route: "Modular ATPL", range: "£40,000 – £80,000", duration: "3–5 years", flag: "🇬🇧", color: "oklch(0.6 0.18 200)" },
-    { route: "PPL Only", range: "£8,000 – £15,000", duration: "6–18 months", flag: "🇬🇧", color: "oklch(0.72 0.18 65)" },
+    { route: "Integrated ATPL", range: "£80k–£120k / $100k–$150k", duration: "18–24 months", flag: "✈️", color: "oklch(0.45 0.18 240)" },
+    { route: "Modular ATPL", range: "£40k–£80k / $50k–$100k", duration: "3–5 years", flag: "🎓", color: "oklch(0.6 0.18 200)" },
+    { route: "PPL Only", range: "£8k–£15k / $10k–$20k", duration: "6–18 months", flag: "🛩️", color: "oklch(0.72 0.18 65)" },
   ];
 
   return (
@@ -835,9 +835,9 @@ export default function Home() {
         {/* Email Capture Section */}
         <section style={{ padding: "4rem 1.5rem", maxWidth: "600px", margin: "0 auto" }}>
           <EmailCapture
-            source="uk_homepage"
-            headline="Get the free UK Pilot Training Guide 2026"
-            subtext="Everything you need to know about becoming a pilot in the UK — costs, routes, medical, and cadet programmes. Sent straight to your inbox."
+            source="global_homepage"
+            headline="Get the free Pilot Training Guide 2026"
+            subtext="Everything you need to know about becoming a pilot — costs, routes, medical requirements, and how to get your first airline job. Sent straight to your inbox."
             ctaLabel="Send me the free guide"
             variant="card"
           />

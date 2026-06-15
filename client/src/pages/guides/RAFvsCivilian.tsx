@@ -1,80 +1,76 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
-const RAFvsCivilian = () => {
+export default function RAFvsCivilian() {
   return (
     <GuideLayout
       title="RAF vs Civilian Pilot Training: Which Path Is Right for You?"
-      subtitle="A genuine comparison of military and civilian routes to the flight deck — costs, timelines, lifestyle, and what each path actually leads to."
+      subtitle="An honest comparison of military and civilian routes to a pilot career — costs, timelines, lifestyle, and career outcomes in 2026."
       canonical="/guides/raf-vs-civilian-pilot-training"
-      metaDescription="RAF vs civilian pilot training UK. Honest comparison of military and civilian routes — costs, timelines, selection, lifestyle, and career outcomes. Which path is right for you?"
+      metaDescription="RAF vs civilian pilot training 2026. Compare costs (free vs £100k), timelines, lifestyle, career outcomes, and the current RAF training backlog."
+      readTime="11 min read"
+      heroImage="/manus-storage/raf-vs-civilian_9d4c2b8e.jpg"
+      ctaHref="/quiz"
+      ctaText="Find your training route"
+      scopeBanner={<GuideScopeBanner scope="This guide compares RAF military training with UK civilian pilot training. Relevant to UK readers only." />}
       faqSchema={[
-        { question: "Is it better to join the RAF or do civilian pilot training?", answer: "It depends entirely on your priorities. The RAF provides free training and a salary, but requires a 12-year minimum service commitment and has a highly competitive selection process. Civilian training costs £90,000–£130,000 but gives you more career flexibility and a faster route to airline employment." },
-        { question: "How competitive is RAF pilot selection?", answer: "RAF pilot selection is extremely competitive. Typically 1–3% of applicants are selected for pilot training. You must pass aptitude tests, medical assessments, fitness tests, and a multi-day Officer and Aircrew Selection Centre (OASC) assessment at RAF Cranwell." },
-        { question: "Can RAF pilots become airline pilots?", answer: "Yes. Many RAF pilots transition to airline careers after completing their service commitment. Their military flying experience is highly valued by airlines, and they typically join as senior first officers or captains depending on their hours and experience." },
-        { question: "What is the minimum age to join the RAF as a pilot?", answer: "You must be at least 17 years and 6 months old to apply for RAF pilot training, and you must begin training before your 26th birthday. Some exceptions exist for certain roles." },
-        { question: "Do you need a degree to become an RAF pilot?", answer: "A degree is not strictly required for RAF pilot selection, but the vast majority of successful applicants are graduates. Strong A-levels (typically ABB or above) in STEM subjects are the minimum academic requirement." },
+        { question: "Is RAF pilot training free?", answer: "Yes. The RAF pays for all pilot training costs, and you receive a salary throughout. In return, you commit to a minimum service period of typically 12 years (for fast jet pilots) or shorter for multi-engine roles." },
+        { question: "What is the age limit for RAF pilot training?", answer: "You must apply by age 26 for most RAF pilot roles. The minimum age is 17.5. You must be able to complete initial training before your 26th birthday." },
+        { question: "Is there currently a training backlog in the RAF?", answer: "Yes. As of 2025-2026, there are reports of RAF pilot recruits waiting up to 5 years after joining before starting actual flying training, due to a backlog in the training pipeline. During this time, recruits are typically given ground-based roles." },
+        { question: "Can RAF pilots transition to commercial airlines?", answer: "Yes. Many commercial airline pilots started their careers in the RAF. Airlines have specific military conversion programmes. However, you will typically need additional civilian licences (ATPL theory exams, instrument ratings) to convert your military experience." }
       ]}
-      readTime="8 min read"
-      heroImage="/manus-storage/raf-civilian_cd4555a1.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
       sections={[
         {
-          heading: "Two Very Different Paths to the Same Cockpit",
+          heading: "The Fundamental Trade-Off",
           content: (
             <>
               <p>
-                The RAF and civilian routes both lead to a professional pilot career, but they are fundamentally different in almost every other respect — cost, timeline, lifestyle, selection criteria, and long-term career trajectory. Understanding the real differences is essential before committing to either path.
+                The RAF vs civilian debate comes down to one fundamental trade-off: <strong>free training with a long commitment</strong> versus <strong>expensive training with immediate freedom</strong>.
               </p>
-              <img src="/manus-storage/military-airline_3b8b8da5.jpg" alt="Military to civilian pilot" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/first-officer-job_23328c88.jpg" alt="Civilian airline first officer" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                This guide is not designed to steer you toward one route or the other. It is designed to give you an honest picture of both so you can make the right decision for your specific circumstances, values, and goals.
+                The RAF will train you to fly for free. In return, you commit to a minimum service period (typically 12 years for fast jet pilots), accept that you will be posted wherever the RAF needs you, and accept the possibility of deployment to hostile environments.
+              </p>
+              <p>
+                Civilian training costs £80,000–£130,000. You fund it yourself (or through loans), choose your own school, and can start applying to airlines within 18–24 months of starting. You have complete control over your career from day one.
+              </p>
+              <p>
+                Neither route is objectively better. The right choice depends entirely on your personal circumstances, risk tolerance, and life goals.
               </p>
             </>
           ),
         },
         {
-          heading: "The RAF Route: Free Training, Major Commitment",
+          heading: "The RAF Route: What It Actually Involves",
           content: (
             <>
               <p>
-                The RAF provides fully funded pilot training — you pay nothing and receive a salary throughout. This sounds like an obvious choice until you understand the full picture.
+                RAF pilot selection is one of the most rigorous selection processes in the UK. It involves the RAF Aircrew Selection process at RAF Cranwell, which includes cognitive aptitude tests, psychomotor assessments, medical examination, and interviews. The upper age limit is 26 for most pilot roles.
               </p>
               <p>
-                <strong>Selection:</strong> RAF pilot selection is among the most competitive processes in the UK. Typically 1–3% of applicants are selected. You must pass the Airman/Aircrew Selection Centre (ASC) aptitude tests, a rigorous medical, fitness assessments, and a multi-day Officer and Aircrew Selection Centre (OASC) at RAF Cranwell. The process takes 6–18 months from application to offer.
+                If selected, you undergo Initial Officer Training (IOT) — 24 weeks of military training at RAF Cranwell. This is not flying; it is military discipline, leadership, and officer development. After IOT, you begin Elementary Flying Training (EFT) on the Grob Tutor, then progress to Basic Flying Training (BFT) on the Texan T-1.
               </p>
               <p>
-                <strong>Service commitment:</strong> If selected, you commit to a minimum of 12 years of service. During this time, the RAF decides where you are posted, what aircraft you fly, and when you deploy. You may fly fast jets, transport aircraft, helicopters, or maritime patrol aircraft — you do not choose. You may be deployed to conflict zones. Your personal life is significantly constrained by service requirements.
+                <strong>The current training backlog:</strong> As of 2025–2026, there are credible reports of RAF pilot recruits waiting up to 5 years after joining before starting actual flying training, due to a significant backlog in the training pipeline. During this waiting period, recruits are typically given ground-based administrative roles. This is a critical consideration for anyone weighing the RAF route in 2026.
               </p>
               <p>
-                <strong>Flying experience:</strong> The quality of RAF flying training is world-class. RAF pilots accumulate exceptional experience — often including combat operations, formation flying, and low-level operations — that civilian pilots never encounter. This experience is highly valued if you later transition to airlines.
-              </p>
-              <p>
-                <strong>After service:</strong> RAF pilots who transition to airlines typically join as senior first officers or direct-entry captains, depending on their hours and aircraft type. The transition is well-trodden and airlines actively recruit ex-military pilots.
+                <strong>Minimum service commitment:</strong> Short Service Commission (SSC) for fast jet pilots is typically 12 years. Multi-engine and helicopter roles may have shorter commitments. If you leave before your commitment ends, you may be required to repay a portion of training costs.
               </p>
             </>
           ),
         },
         {
-          heading: "The Civilian Route: Your Money, Your Timeline, Your Career",
+          heading: "The Civilian Route: Speed and Freedom",
           content: (
             <>
               <p>
-                Civilian pilot training costs £90,000–£130,000 (integrated) or £55,000–£85,000 (modular). You fund it yourself, either from savings or a loan. In exchange, you have complete control over your career from day one.
+                The civilian integrated ATPL route takes 18–24 months from zero hours to a frozen ATPL. If you pass your airline assessments, you could be in the right seat of a commercial jet within 6–12 months of graduating.
               </p>
               <p>
-                <strong>Selection:</strong> Civilian training schools have their own selection processes, but they are significantly less competitive than the RAF. Most integrated schools require aptitude testing and an interview. The key selection criterion is financial — can you fund the training?
+                The total cost is typically £80,000–£130,000 for an integrated programme, or £55,000–£80,000 for a modular route. Most candidates finance this through specialist aviation loans.
               </p>
               <p>
-                <strong>Timeline:</strong> Integrated civilian training takes 18–24 months. Modular training takes 3–5 years. Either way, you can be flying as an airline first officer within 2–3 years of starting training (integrated) or 4–6 years (modular).
-              </p>
-              <p>
-                <strong>Career flexibility:</strong> As a civilian pilot, you choose your airline, your base, and your aircraft type. You can move between employers, negotiate your contract, and build a career on your own terms. You are not posted to a base you did not choose or deployed to a conflict zone.
-              </p>
-              <p>
-                <strong>The financial reality:</strong> The debt is real and the repayments are significant. A £100,000 loan at 7% over 15 years costs approximately £900/month. On a first officer's salary of £55,000, this is manageable but not comfortable. The debt is paid off over time, but it is a genuine constraint in the early years of your career.
+                The key advantage of the civilian route is control. You choose your school, your training pace, and your target airline. You are not subject to military postings, deployments, or the RAF's training backlog. If the airline market is strong (as it is in 2026), you can move quickly from training to employment.
               </p>
             </>
           ),
@@ -83,34 +79,51 @@ const RAFvsCivilian = () => {
           heading: "Side-by-Side Comparison",
           content: (
             <>
-              <div style={{ overflowX: "auto" }}>
-                <table style={{ width: "100%", borderCollapse: "collapse", margin: "20px 0" }}>
-                  <thead>
-                    <tr style={{ backgroundColor: "oklch(0.18 0.08 250)" }}>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Factor</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>RAF</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Civilian</th>
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Factor</th>
+                      <th className="px-4 py-3 font-semibold">RAF Route</th>
+                      <th className="px-4 py-3 font-semibold">Civilian Route</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    {[
-                      ["Training cost", "Free (+ salary)", "£55,000–£130,000"],
-                      ["Selection competitiveness", "1–3% acceptance rate", "Moderate (financial-led)"],
-                      ["Time to airline cockpit", "12–15 years (post-service)", "2–6 years"],
-                      ["Career control", "Low (RAF decides)", "High (you decide)"],
-                      ["Flying experience quality", "Exceptional", "Good"],
-                      ["Deployment risk", "Yes", "No"],
-                      ["Age limit", "Must start before 26", "No upper limit (medical permitting)"],
-                      ["Job security", "High (12-year contract)", "Market-dependent"],
-                      ["Lifestyle flexibility", "Low", "High"],
-                      ["Airline transition", "Excellent (ex-mil valued)", "Standard pathway"],
-                    ].map(([factor, raf, civ]) => (
-                      <tr key={factor}>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.85 0.04 240)", fontWeight: "600" }}>{factor}</td>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>{raf}</td>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>{civ}</td>
-                      </tr>
-                    ))}
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Training Cost</td>
+                      <td className="px-4 py-3 text-green-400">Free (RAF pays)</td>
+                      <td className="px-4 py-3 text-red-400">£80,000 – £130,000</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Time to First Flight</td>
+                      <td className="px-4 py-3 text-red-400">1-5 years (backlog)</td>
+                      <td className="px-4 py-3 text-green-400">Immediate</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Time to Airlines</td>
+                      <td className="px-4 py-3">8-15 years (after service)</td>
+                      <td className="px-4 py-3 text-green-400">2-3 years</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Age Limit</td>
+                      <td className="px-4 py-3 text-red-400">Must apply by 26</td>
+                      <td className="px-4 py-3 text-green-400">No upper age limit</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Commitment</td>
+                      <td className="px-4 py-3 text-red-400">8-12 year minimum</td>
+                      <td className="px-4 py-3 text-green-400">None</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Aircraft Quality</td>
+                      <td className="px-4 py-3 text-green-400">World-class (fast jets)</td>
+                      <td className="px-4 py-3">Commercial jets</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Lifestyle Control</td>
+                      <td className="px-4 py-3 text-red-400">Low (postings, deployments)</td>
+                      <td className="px-4 py-3 text-green-400">High</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -118,24 +131,27 @@ const RAFvsCivilian = () => {
           ),
         },
         {
-          heading: "Which Path Is Right for You?",
+          heading: "The RAF-to-Airline Transition",
           content: (
             <>
               <p>
-                <strong>Choose the RAF if:</strong> You are under 26, have strong academics and fitness, are drawn to military service and the values it represents, want to fly high-performance aircraft, and are willing to commit 12+ years to a structured service career before transitioning to airlines.
+                Many commercial airline pilots began their careers in the RAF, and the transition is well-trodden. Airlines have specific military conversion programmes, and the skills, discipline, and experience gained in the RAF are highly valued.
               </p>
               <p>
-                <strong>Choose civilian training if:</strong> You are over 26 (or close to it), want to reach the airline cockpit as quickly as possible, need career flexibility, are not drawn to military service, or want to choose your own aircraft type and employer from day one.
+                However, the transition is not automatic. You will typically need to pass the ATPL theory exams (all 13 subjects), obtain a civilian instrument rating, and complete a Multi-Crew Cooperation (MCC) course before airlines will consider you. This adds approximately £15,000–£25,000 and 6–12 months to your transition timeline.
               </p>
               <p>
-                There is no objectively correct answer. Both routes produce excellent pilots. The question is which life you want to live. Use the <Link href="/roadmap">AviatorIQ Roadmap Generator</Link> for a personalised recommendation based on your specific age, budget, and goals.
+                The RAF experience is a genuine advantage in airline selection. Former RAF pilots typically perform very well in simulator assessments due to their high-pressure flying experience. British Airways, in particular, has historically recruited heavily from the RAF.
               </p>
             </>
           ),
-        },
+        }
+      ]}
+      relatedGuides={[
+        { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "13 min" },
+        { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
+        { title: "Pilot Training Costs UK", href: "/guides/pilot-training-costs", time: "8 min" },
       ]}
     />
   );
-};
-
-export default RAFvsCivilian;
+}

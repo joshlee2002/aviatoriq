@@ -22,7 +22,7 @@ export default function AirlineInterviewUSA() {
               <div className="bg-[oklch(0.55_0.18_145/0.08)] border border-[oklch(0.55_0.18_145/0.2)] p-6 rounded-lg mb-6">
                 <h3 className="text-xl font-semibold text-[oklch(0.72_0.18_65)] mb-2">Key 2026 Statistic</h3>
                 <p className="text-[oklch(0.65_0.04_240)]">
-                  In 2026, the average starting salary for a First Officer at a major US airline is projected to be $95,000, with some regional airlines offering sign-on bonuses up to $50,000, underscoring the significant investment airlines are making in new talent. Furthermore, AviationInterviews.com reports an 87.6% interview success rate for pilots using their preparation services.
+                  In 2026, the average starting salary for a First Officer at a major US airline is projected to be $95,000, with some regional airlines offering sign-on bonuses up to $50,000, underscoring the significant investment airlines are making in new talent. AviationInterviews.com reports an 87.6% interview success rate for pilots using their preparation services.
                 </p>
               </div>
               <p className="mb-4 text-[oklch(0.65_0.04_240)]">

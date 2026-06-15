@@ -1,137 +1,134 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
-const AirlineInterview = () => {
+export default function AirlineInterview() {
   return (
     <GuideLayout
-      title="How to Pass an Airline Pilot Interview: The Complete 2026 Guide"
-      subtitle="What actually happens in airline pilot selection, what assessors are looking for, and how to prepare properly — not just practice questions."
+      title="Airline Pilot Interview Guide: What to Expect in 2026"
+      subtitle="The complete guide to UK airline selection — aptitude tests, group exercises, simulator assessments, and panel interviews. What assessors actually look for."
       canonical="/guides/airline-pilot-interview"
-      metaDescription="How to pass an airline pilot interview in 2026. What happens in selection, what assessors look for, simulator assessment tips, and how to prepare properly. Complete UK guide."
+      metaDescription="Airline pilot interview guide 2026. Aptitude tests (PILAPT, Compass), group exercises, simulator assessments, and panel interviews. What UK airlines actually look for."
+      readTime="12 min read"
+      heroImage="/manus-storage/airline-interview_9d4c2b8e.jpg"
+      ctaHref="/quiz"
+      ctaText="Check your career readiness"
+      scopeBanner={<GuideScopeBanner scope="This guide covers UK airline selection processes. US airline interviews differ significantly." usHref="/us/guides/airline-interview-usa" usLabel="View USA airline interview guide →" />}
       faqSchema={[
-        { question: "What does an airline pilot interview involve?", answer: "Airline pilot selection typically involves: an online application and CV screening, aptitude testing (psychometric and aviation-specific), a simulator assessment, a technical interview (aircraft systems, meteorology, air law), a competency-based interview (CBI), and a medical assessment. The process varies by airline." },
-        { question: "How hard is it to pass an airline pilot interview?", answer: "Airline selection is competitive but not impossible. Pass rates vary by airline and market conditions. In the current pilot shortage, airlines are more willing to invest in candidates who show strong potential. The simulator assessment and competency-based interview are typically the most challenging elements." },
-        { question: "What do airlines look for in a pilot interview?", answer: "Airlines assess technical knowledge, simulator performance, and non-technical skills (crew resource management, decision-making, communication, situational awareness). They are looking for candidates who demonstrate safe, professional behaviour and fit the airline's culture." },
-        { question: "How should I prepare for an airline pilot simulator assessment?", answer: "Practice in a simulator of the same type you will be assessed in. Focus on instrument flying, ILS approaches, and go-arounds. Demonstrate good crew resource management — communicate clearly, manage workload, and prioritise safety over performance. Most candidates fail simulator assessments due to poor CRM, not poor flying." },
-        { question: "What questions are asked in a pilot competency-based interview?", answer: "Competency-based interviews ask for specific examples of past behaviour: 'Tell me about a time you had to make a decision under pressure.' Common competencies assessed include: crew resource management, situational awareness, decision-making, communication, and resilience. Prepare STAR-format answers (Situation, Task, Action, Result) for each competency." },
+        { question: "What is the airline pilot selection process?", answer: "UK airline selection typically involves: online application, cognitive aptitude tests (PILAPT, Compass, or similar), an assessment centre (group exercise, further aptitude tests), a simulator assessment (raw data flying, CRM scenarios), and a final panel interview." },
+        { question: "What aptitude tests do airlines use?", answer: "Common UK airline aptitude tests include PILAPT (Pilot Aptitude Test), Compass+, Saville Assessment, and Cut-E. They test multi-tasking, spatial reasoning, numerical reasoning, and psychomotor skills." },
+        { question: "What is a raw data simulator assessment?", answer: "A raw data simulator assessment requires you to fly the simulator without the flight director (the guidance bars that tell you where to point the nose). You must fly precise headings, altitudes, and speeds using only the basic instruments. It tests your fundamental instrument flying skills." },
+        { question: "How do I prepare for an airline interview?", answer: "Prepare by: practising aptitude tests extensively (use online platforms like PilotAptitudeTest.com), researching the airline's values and fleet, preparing competency-based interview answers using the STAR method, and practising your simulator flying skills in a certified simulator." }
       ]}
-      readTime="9 min read"
-      heroImage="/manus-storage/airline-interview_3a8f2c1d.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
       sections={[
         {
-          heading: "The Selection Process: What to Expect",
+          heading: "The Anatomy of a UK Airline Selection Process",
           content: (
             <>
               <p>
-                Airline pilot selection is a multi-stage process designed to assess both your technical competence and your suitability as a crew member. The process varies by airline, but most major UK carriers follow a similar structure:
-              </p>
-              <img src="/manus-storage/interview-assessment_c517e045.jpg" alt="Airline assessment centre" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/group-exercise_40006909.jpg" alt="Pilot group exercise" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <p>
-                <strong>Stage 1 — Application and CV screening:</strong> Your application is reviewed against minimum requirements (hours, licence, type rating). At this stage, presentation matters. A clear, professional CV with accurate logbook data and well-written cover letter gets you to the next stage.
+                UK airline selection is a multi-stage process designed to identify candidates who are not just technically competent, but who demonstrate the right personality, decision-making ability, and crew resource management (CRM) skills. Understanding each stage before you walk through the door is the single most important thing you can do to improve your chances.
               </p>
               <p>
-                <strong>Stage 2 — Aptitude testing:</strong> Most airlines use computer-based aptitude tests covering psychomotor skills, multi-tasking, spatial reasoning, and aviation-specific knowledge. These tests are designed to predict training success. Practice is essential — the tests are learnable, and candidates who have practised consistently outperform those who have not.
+                The typical UK airline selection process follows this structure, though the exact stages vary by airline:
               </p>
+              <ol className="list-decimal pl-5 space-y-2 mt-2 mb-4">
+                <li><strong>Online Application:</strong> CV, cover letter, and eligibility screening.</li>
+                <li><strong>Online Aptitude Tests:</strong> Cognitive and psychomotor testing (PILAPT, Compass, Saville).</li>
+                <li><strong>Assessment Centre:</strong> Group exercise, further aptitude tests, initial interview.</li>
+                <li><strong>Simulator Assessment:</strong> Raw data flying, CRM scenarios, technical knowledge.</li>
+                <li><strong>Final Panel Interview:</strong> Competency-based questions, airline knowledge, motivation.</li>
+              </ol>
               <p>
-                <strong>Stage 3 — Simulator assessment:</strong> You will fly a simulator (usually the aircraft type you are applying for) with an assessor. The assessment typically includes normal operations, instrument approaches, and an emergency scenario. You are being assessed on flying accuracy, crew resource management, and how you handle pressure.
-              </p>
-              <p>
-                <strong>Stage 4 — Technical interview:</strong> A structured interview covering aircraft systems, meteorology, air law, and operational procedures. The depth of questioning varies by airline — low-cost carriers tend to focus on practical knowledge, legacy carriers go deeper into systems.
-              </p>
-              <p>
-                <strong>Stage 5 — Competency-based interview (CBI):</strong> A structured interview using behavioural questions to assess non-technical skills. This is where many technically strong candidates fail — because they have not prepared for the CBI format.
-              </p>
-              <p>
-                <strong>Stage 6 — Medical:</strong> A Class 1 medical assessment if you do not already hold a valid one.
+                The entire process typically takes 3–6 months from application to offer. Preparation at each stage is critical.
               </p>
             </>
           ),
         },
         {
-          heading: "The Simulator Assessment: What Assessors Are Actually Looking For",
+          heading: "Stage 1: Online Aptitude Tests",
           content: (
             <>
               <p>
-                The most common misconception about simulator assessments is that they are primarily about flying accuracy. They are not. Assessors are primarily looking at your crew resource management (CRM) — how you communicate, manage workload, prioritise tasks, and behave under pressure.
+                The online aptitude tests are the first major filter. They are designed to be difficult, and many candidates who are perfectly capable pilots fail at this stage simply because they did not prepare.
               </p>
               <p>
-                A candidate who flies a slightly imperfect ILS approach but communicates clearly, manages the workload effectively, and handles an unexpected event calmly will score higher than a candidate who flies a technically perfect approach but is silent, reactive, and flustered when something goes wrong.
+                <strong>PILAPT (Pilot Aptitude Test):</strong> Used by many UK airlines and flight schools. Tests multi-tasking (tracking a moving dot while performing mental arithmetic), spatial reasoning (rotating 3D shapes), and psychomotor coordination (tracking tasks using a joystick). The multi-tasking test is the most commonly failed component.
               </p>
               <p>
-                <strong>What to do in the simulator:</strong> Think aloud. Narrate your actions and intentions. "I'm going to set the MCP to 3,000 feet and engage the autopilot" is better than silence. Call out deviations before the assessor does. If you make an error, acknowledge it, correct it, and move on — do not dwell on it. Treat the assessor as your first officer — brief them, check in with them, and manage the crew.
+                <strong>Compass+:</strong> Used by British Airways and several other major carriers. Similar structure to PILAPT but with additional personality and situational judgement components.
               </p>
               <p>
-                <strong>What to practise:</strong> ILS approaches to minimums, go-arounds, engine failures after V1, and TCAS RAs. These are the scenarios most commonly used in assessments. Practice in a simulator of the same type — not just a generic flight sim. Most type rating training centres offer assessment preparation sessions.
+                <strong>Saville Assessment:</strong> Used by some airlines for personality and cognitive ability testing. Includes verbal reasoning, numerical reasoning, and diagrammatic reasoning.
+              </p>
+              <p>
+                <strong>How to prepare:</strong> Practice is the only effective preparation. Use platforms like PilotAptitudeTest.com, PILAPT practice software, or the specific airline's recommended preparation resources. Practice daily for at least 4–6 weeks before your test. The multi-tasking tests in particular require building a specific mental skill that only comes with repetition.
               </p>
             </>
           ),
         },
         {
-          heading: "The Competency-Based Interview: How to Prepare",
+          heading: "Stage 2: The Assessment Centre",
           content: (
             <>
               <p>
-                The competency-based interview (CBI) is the stage where technically qualified candidates most often fail. The format is unfamiliar, the questions are open-ended, and candidates who have not prepared tend to give vague, unconvincing answers.
+                If you pass the online tests, you will be invited to an assessment centre. This is typically a full day at the airline's headquarters or a training centre. It usually involves:
               </p>
               <p>
-                The CBI uses the STAR format: Situation (what was the context?), Task (what were you responsible for?), Action (what did you specifically do?), Result (what was the outcome?). Every answer should follow this structure.
+                <strong>Group Exercise:</strong> You are placed in a group of 4–8 candidates and given a scenario to discuss and resolve as a team. Assessors are watching how you communicate, whether you listen to others, whether you contribute constructively, and whether you can reach a consensus under time pressure. They are not looking for the loudest voice in the room — they are looking for collaborative, professional communication.
               </p>
               <p>
-                The competencies most commonly assessed are: crew resource management, situational awareness, decision-making under pressure, communication, leadership, and resilience. Prepare a specific, detailed example for each competency — from your flying experience, your previous career, or your personal life.
+                <strong>Further Aptitude Testing:</strong> Some airlines run additional aptitude tests in person to verify the results of the online tests and to assess performance under pressure.
               </p>
               <p>
-                <strong>Common CBI questions:</strong> "Tell me about a time you had to make a difficult decision with limited information." "Describe a situation where you had to challenge a more senior colleague." "Give me an example of when you made a mistake and how you handled it." "Tell me about a time you had to adapt quickly to an unexpected change."
-              </p>
-              <p>
-                Practise your answers out loud, not just in your head. Record yourself and watch it back. The candidates who perform best in CBIs are those who have rehearsed their stories until they flow naturally.
+                <strong>Initial Interview:</strong> A shorter interview with HR or a recruitment officer. This typically covers your motivation for applying, your understanding of the airline, and your career history. It is not the technical deep-dive — that comes later.
               </p>
             </>
           ),
         },
         {
-          heading: "Technical Interview Preparation",
+          heading: "Stage 3: The Simulator Assessment",
           content: (
             <>
               <p>
-                The technical interview covers aircraft systems, meteorology, air law, and operational procedures. The depth varies by airline, but the following topics are almost universally covered:
+                The simulator assessment is the most technically demanding stage. For most UK airlines, it involves flying a Level D full-flight simulator (typically an Airbus A320 or Boeing 737 variant) with a training captain in the left seat.
               </p>
               <p>
-                <strong>Aircraft systems:</strong> Know the systems of the aircraft you are applying for — hydraulics, electrics, fuel, pressurisation, flight controls. If you have a type rating, you should know these in detail. If you do not, study the FCOM (Flight Crew Operating Manual) for the relevant aircraft type.
+                <strong>Raw Data Flying:</strong> You will be asked to fly the simulator without the flight director (the guidance bars that tell you where to point the nose). This is called "raw data" flying, and it tests your fundamental instrument flying skills. You must maintain precise headings, altitudes, and speeds using only the basic instruments (attitude indicator, altimeter, airspeed indicator, heading indicator).
               </p>
               <p>
-                <strong>Meteorology:</strong> Weather minima, METAR and TAF interpretation, icing conditions, thunderstorm avoidance, and wind shear. These are practical questions — "what would you do if you encountered wind shear on approach?" — not just theoretical.
+                <strong>CRM Scenarios:</strong> The training captain will deliberately create situations that require you to communicate, challenge, and work as a crew. They might make a deliberate error to see if you catch it and challenge it assertively but professionally. They are assessing your Crew Resource Management (CRM) skills — your ability to work effectively in a two-person crew.
               </p>
               <p>
-                <strong>Air law:</strong> ICAO rules of the air, flight time limitations, minimum equipment lists, and emergency procedures. Know the relevant regulations for the aircraft type and operation you are applying for.
-              </p>
-              <p>
-                Use the <Link href="/quizzes/aviation-myth-buster">AviatorIQ Aviation Knowledge Quiz</Link> to test your technical knowledge, and the <Link href="/roadmap">Roadmap Generator</Link> to understand where interview preparation fits in your overall training plan.
+                <strong>How to prepare:</strong> If you have not flown a jet simulator before, book at least 2–3 sessions in a certified A320 or B737 simulator before your assessment. Many training centres offer "interview preparation" simulator packages specifically for this purpose. The cost (£500–£1,500) is well worth it.
               </p>
             </>
           ),
         },
         {
-          heading: "The Things Nobody Tells You",
+          heading: "Stage 4: The Panel Interview",
           content: (
             <>
               <p>
-                <strong>Research the airline before your interview.</strong> Know their fleet, their routes, their recent news, and their values. Assessors notice when candidates have done genuine research versus those who have not. "Why do you want to work for us?" is a question you will be asked, and "because you're a good airline" is not an answer.
+                The final panel interview is typically conducted by a senior training captain and an HR representative. It is a competency-based interview, meaning most questions follow the STAR format (Situation, Task, Action, Result).
               </p>
               <p>
-                <strong>Dress and presentation matter.</strong> Airline selection is a professional environment. Wear a suit. Be early. Be polite to everyone — the receptionist, the other candidates, the assessors. Assessors notice how you treat people throughout the day, not just in the formal assessment.
+                Common competency areas include: <strong>Situational Awareness</strong> (describe a time when you identified a risk before it became a problem), <strong>Decision Making</strong> (describe a time when you had to make a difficult decision under time pressure), <strong>Communication</strong> (describe a time when you had to communicate complex information clearly), and <strong>Teamwork</strong> (describe a time when you had to work with a difficult colleague).
               </p>
               <p>
-                <strong>Failure is not the end.</strong> Most pilots are rejected by their first airline before being hired by another. The feedback from a failed selection is valuable — use it. Many airlines allow you to reapply after 6–12 months. The pilots who eventually succeed are those who treat each selection as a learning experience.
+                You will also be asked technical questions about aviation regulations, meteorology, and aircraft systems. The depth of technical questioning varies by airline — Ryanair is known for rigorous technical interviews, while some regional carriers focus more on personality and motivation.
+              </p>
+              <p>
+                Research the airline thoroughly before your interview. Know their fleet, their routes, their recent news, and their stated values. Assessors are testing whether you genuinely want to work for <em>this</em> airline, not just any airline.
               </p>
             </>
           ),
         },
+      ]}
+      relatedGuides={[
+        { title: "Pilot Aptitude Test Preparation", href: "/guides/pilot-aptitude-test-uk", time: "8 min" },
+        { title: "Airline Simulator Assessment Guide", href: "/guides/airline-simulator-assessment", time: "8 min" },
+        { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
       ]}
     />
   );
-};
-
-export default AirlineInterview;
+}

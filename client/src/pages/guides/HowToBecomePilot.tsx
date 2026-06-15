@@ -1,4 +1,5 @@
 import GuideLayout from "@/components/GuideLayout";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
 const HowToBecomePilot = () => {
   return (
@@ -291,6 +292,7 @@ const HowToBecomePilot = () => {
           ),
         },
       ]}
+    scopeBanner={<><GuideScopeBanner scope="This guide covers UK pilot training (CAA/EASA regulations, UK flight schools, and UK-specific routes)." usHref="/us/guides/how-to-become-a-pilot" usLabel="View USA version →" globalHref="/schools" globalLabel="Browse global schools →" /></>}
     />
   );
 };

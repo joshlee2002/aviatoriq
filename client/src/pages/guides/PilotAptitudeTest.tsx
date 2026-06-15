@@ -1,4 +1,5 @@
 import GuideLayout from "@/components/GuideLayout";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
 export default function PilotAptitudeTest() {
   return (
@@ -199,6 +200,7 @@ export default function PilotAptitudeTest() {
           ),
         },
       ]}
+    scopeBanner={<><GuideScopeBanner scope="This guide focuses on UK airline aptitude tests (Pilapt, Compass, etc.)." usHref="/us/guides/pilot-aptitude-test-usa" usLabel="View USA aptitude tests →" /></>}
     />
   );
 }

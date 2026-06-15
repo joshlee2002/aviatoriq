@@ -1,4 +1,5 @@
 import GuideLayout from "@/components/GuideLayout";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
 const TrainingTimeline = () => {
   return (
@@ -205,6 +206,7 @@ const TrainingTimeline = () => {
           ),
         },
       ]}
+    scopeBanner={<><GuideScopeBanner scope="Timelines in this guide are based on UK/EASA pilot training. Timelines vary by country and training provider." usHref="/us/guides/pilot-training-timeline-usa" usLabel="View USA timeline →" /></>}
     />
   );
 };

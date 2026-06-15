@@ -11,7 +11,7 @@ const FlightInstructorUK = () => {
       faqSchema={[
         {
           question: "What are the basic requirements to start FI training in the UK?",
-          answer: "To begin Flight Instructor (FI) training in the UK, you must hold at least a Commercial Pilot Licence (CPL) or have completed the theoretical knowledge examinations for an Airline Transport Pilot Licence (ATPL). You also need a valid Class 1 or Class 2 medical certificate and a minimum of 200 hours total flight time, including at least 100 hours as Pilot-in-Command (PIC) if you hold a CPL, or 150 hours as PIC if you only hold a PPL and ATPL theory credits. Additionally, you must have completed at least 30 hours on the class or type of aircraft to be used for the FI skill test, with 5 hours completed in the 6 months preceding the pre-entry flight test.",
+          answer: "To begin Flight Instructor (FI) training in the UK, you must hold at least a Commercial Pilot Licence (CPL) or have completed the theoretical knowledge examinations for an Airline Transport Pilot Licence (ATPL). You also need a valid Class 1 or Class 2 medical certificate and a minimum of 200 hours total flight time, including at least 100 hours as Pilot-in-Command (PIC) if you hold a CPL, or 150 hours as PIC if you only hold a PPL and ATPL theory credits. you must have completed at least 30 hours on the class or type of aircraft to be used for the FI skill test, with 5 hours completed in the 6 months preceding the pre-entry flight test.",
         },
         {
           question: "How much does FI training cost in the UK?",
@@ -45,7 +45,7 @@ const FlightInstructorUK = () => {
               <img src="/manus-storage/instructor-teaching_bbff2f90.jpg" alt="Flight instructor teaching" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/dual-instruction_48048c62.jpg" alt="Dual instruction flying" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                The role of an FI is multifaceted. You'll be responsible for teaching student pilots the intricacies of flight, from basic manoeuvres to complex navigation and emergency procedures. This process of teaching reinforces your own knowledge and ensures a robust understanding of aviation regulations and best practices. Furthermore, the constant interaction with diverse students and scenarios builds resilience and adaptability, qualities highly sought after by airlines.
+                The role of an FI is multifaceted. You'll be responsible for teaching student pilots the intricacies of flight, from basic manoeuvres to complex navigation and emergency procedures. This process of teaching reinforces your own knowledge and ensures a robust understanding of aviation regulations and best practices. the constant interaction with diverse students and scenarios builds resilience and adaptability, qualities highly sought after by airlines.
               </p>
               <p>
                 Beyond the personal and professional development, instructing offers a structured environment to build significant flight hours. Unlike other hour-building methods that might involve repetitive cross-country flights, instructing provides varied flying experiences, often in different aircraft types, contributing to a well-rounded pilot profile. It's a pathway that transforms you from a pilot who can fly into a pilot who can teach, lead, and inspire.

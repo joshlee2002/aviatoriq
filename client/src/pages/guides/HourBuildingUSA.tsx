@@ -87,7 +87,7 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
                 </table>
               </div>
               <p className="mb-4">
-                It is crucial to budget for these expenses accurately. Some flight schools offer bundled CFI courses, which may provide a slight discount, but it is essential to scrutinize what is included. Unexpected costs can arise from additional flight hours needed to meet proficiency standards or re-test fees if an exam is not passed on the first attempt. Many pilots choose to pursue their CFI after obtaining their Commercial Pilot Certificate, leveraging their existing flight experience to reduce the overall training time and cost for the CFI rating itself.
+                budget for these expenses accurately. Some flight schools offer bundled CFI courses, which may provide a slight discount, but it is essential to scrutinize what is included. Unexpected costs can arise from additional flight hours needed to meet proficiency standards or re-test fees if an exam is not passed on the first attempt. Many pilots choose to pursue their CFI after obtaining their Commercial Pilot Certificate, leveraging their existing flight experience to reduce the overall training time and cost for the CFI rating itself.
               </p>
               <h3 className="text-xl font-semibold mb-3 text-oklch(0.72 0.18 65)">Benefits of the CFI Pathway</h3>
               <ul className="list-disc list-inside mb-4 text-oklch(0.65 0.04 240)">
@@ -286,7 +286,7 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
               </p>
               <h3 className="text-xl font-semibold mb-3 text-oklch(0.72 0.18 65)">GI Bill Benefits for Veterans</h3>
               <p className="mb-4">
-                For eligible veterans, the Post-9/11 GI Bill can be a substantial resource for flight training. While the GI Bill typically covers flight training at FAA-approved Part 141 schools that are also approved by the Department of Veterans Affairs, it generally does not cover all 1,500 hours required for an ATP certificate. It primarily covers the cost of flight courses up to the commercial pilot certificate and often a portion of the CFI rating. Veterans often use their GI Bill benefits for initial ratings and then pursue CFI work or other methods to build the remaining hours [10]. It is crucial for veterans to verify the eligibility of their chosen flight school and specific programs with the VA.
+                For eligible veterans, the Post-9/11 GI Bill can be a substantial resource for flight training. While the GI Bill typically covers flight training at FAA-approved Part 141 schools that are also approved by the Department of Veterans Affairs, it generally does not cover all 1,500 hours required for an ATP certificate. It primarily covers the cost of flight courses up to the commercial pilot certificate and often a portion of the CFI rating. Veterans often use their GI Bill benefits for initial ratings and then pursue CFI work or other methods to build the remaining hours [10]. veterans to verify the eligibility of their chosen flight school and specific programs with the VA.
               </p>
               <h3 className="text-xl font-semibold mb-3 text-oklch(0.72 0.18 65)">Comparison of Funding Options</h3>
               <div className="overflow-x-auto mb-6">
@@ -397,7 +397,7 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
               </p>
               <h3 className="text-xl font-semibold mb-3 text-oklch(0.72 0.18 65)">International Pilots</h3>
               <p className="mb-4">
-                International pilots seeking to build hours in the U.S. must navigate specific visa requirements and FAA regulations. Typically, an M-1 student visa is required for flight training. It is crucial to choose a flight school approved to enroll non-immigrant students. Furthermore, converting foreign pilot licenses to FAA certificates involves a process that includes verifying the foreign license, passing FAA written exams, and completing a practical test. While foreign hours can often be credited, the specific requirements for hour building and subsequent employment in the U.S. may differ from those for U.S. citizens.
+                International pilots seeking to build hours in the U.S. must navigate specific visa requirements and FAA regulations. Typically, an M-1 student visa is required for flight training. choose a flight school approved to enroll non-immigrant students. converting foreign pilot licenses to FAA certificates involves a process that includes verifying the foreign license, passing FAA written exams, and completing a practical test. While foreign hours can often be credited, the specific requirements for hour building and subsequent employment in the U.S. may differ from those for U.S. citizens.
               </p>
               <h3 className="text-xl font-semibold mb-3 text-oklch(0.72 0.18 65)">Veteran Pilots (Beyond GI Bill)</h3>
               <p className="mb-4">

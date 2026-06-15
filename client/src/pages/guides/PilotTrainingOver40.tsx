@@ -1,132 +1,127 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
-const PilotTrainingOver40 = () => {
+export default function PilotTrainingOver40() {
   return (
     <GuideLayout
       title="Pilot Training Over 40: Is It Worth It? A Realistic Guide for 2026"
-      subtitle="The honest answer to whether starting pilot training in your 40s makes financial and practical sense — with real numbers and real examples."
+      subtitle="The honest numbers on ROI, medical considerations, and career length for pilots who start training in their 40s."
       canonical="/guides/pilot-training-over-40"
-      metaDescription="Can you become a pilot over 40 in the UK? Is it worth the investment? This guide covers the financial reality, medical requirements, career prospects, and what airlines actually think."
+      metaDescription="Pilot training over 40 UK 2026. No upper age limit, mandatory retirement at 65. ROI calculation, Class 1 medical changes, and realistic career timeline for older pilots."
+      readTime="11 min read"
+      heroImage="/manus-storage/pilot-over-40_9d4c2b8e.jpg"
+      ctaHref="/quiz"
+      ctaText="Find your training route"
+      scopeBanner={<GuideScopeBanner scope="Hiring age limits and career runway figures in this guide are based on UK airline practices." usHref="/us/guides/pilot-training-over-40-usa" usLabel="View USA version →" />}
       faqSchema={[
-        { question: "Can I become a pilot at 40 or over?", answer: "Yes. There is no upper age limit for obtaining a pilot licence in the UK. The Class 1 medical becomes harder to pass with age, but most healthy 40-year-olds can obtain one. The main consideration is the financial return on investment given a shorter career runway." },
-        { question: "Is it worth training as a pilot at 40?", answer: "It depends on your financial situation and career goals. With a 20-year career ahead, the ROI on training costs is positive but tighter than for a 25-year-old. If you can fund training without excessive debt, and the career change is genuinely what you want, it is absolutely achievable." },
-        { question: "Do airlines hire pilots over 40?", answer: "Yes. Airlines hire based on qualifications, hours, and performance — not age. The mandatory retirement age for airline pilots in the UK is 65. A 40-year-old starting training today could have a 20-year airline career." },
-        { question: "What is the mandatory retirement age for pilots?", answer: "The mandatory retirement age for commercial airline pilots in the UK and EU is 65. Pilots aged 60–65 may only operate as part of a two-pilot crew where the other pilot is under 60." },
-        { question: "Is the Class 1 medical harder to pass over 40?", answer: "The Class 1 medical becomes more rigorous with age, with additional cardiovascular checks required from age 40. Most healthy 40-year-olds pass without issue, but pre-existing conditions that might be overlooked at 25 become more significant. A pre-assessment with an Aviation Medical Examiner before committing to training is strongly recommended." },
+        { question: "Is there an upper age limit to start pilot training in the UK?", answer: "No. There is no legal upper age limit to start pilot training. However, the mandatory retirement age for commercial pilots is 65, which limits your career runway if you start late." },
+        { question: "Can I get a Class 1 Medical over 40?", answer: "Yes, but the renewal requirements become more frequent. After age 40, Class 1 Medicals must be renewed every 12 months instead of every 24 months. After age 60, they must be renewed every 6 months." },
+        { question: "Will airlines hire me if I start training at 40?", answer: "Yes. UK airlines do not have a formal upper age limit for hiring First Officers. The Equality Act 2010 prohibits age discrimination in employment. Airlines care about your qualifications, aptitude test scores, and simulator performance — not your age." },
+        { question: "Is pilot training worth the investment if I start at 40?", answer: "It depends on your financial situation and career goals. Starting at 40 gives you a potential 25-year career (to age 65). The ROI is positive if you reach a Captain salary within 8-10 years. The key risk is the upfront cost of £100,000+ with a shorter career to recoup it." }
       ]}
-      readTime="7 min read"
-      heroImage="/manus-storage/pilot-over-40_fbd1e435.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
       sections={[
         {
-          heading: "The Question Everyone Asks But Nobody Answers Honestly",
+          heading: "The Honest Answer to 'Am I Too Old?'",
           content: (
             <>
               <p>
-                "Is it worth training as a pilot at 40?" is one of the most common questions on aviation forums, and it almost always gets the same unhelpful answer: "Age is just a number, follow your dreams." That is not useful. You deserve a real answer.
+                There is no legal upper age limit to start pilot training in the UK. The mandatory retirement age for commercial pilots is 65 — set by ICAO and adopted by the UK CAA. This means a 40-year-old starting training today has a potential 25-year commercial flying career ahead of them.
               </p>
-              <img src="/manus-storage/ground-school-classroom_b43b6fc8.jpg" alt="Ground school training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/solo-flight_ac4d5964.jpg" alt="Solo flight training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                The real answer is: it depends. Not on your passion, not on your determination, but on your specific financial situation, health, and what you actually want from a pilot career. This guide will give you the framework to make that decision properly.
+                A 45-year-old has 20 years. A 50-year-old has 15 years. These are not trivial career lengths — many professions consider 15–20 years a full career.
+              </p>
+              <p>
+                The real question is not "can I?" but "should I?" — and the answer depends on your financial situation, your motivations, and your honest assessment of the medical and physical demands of the career.
               </p>
             </>
           ),
         },
         {
-          heading: "The Financial Reality: Running the Numbers",
+          heading: "The Medical Reality After 40",
           content: (
             <>
               <p>
-                The core question for anyone starting pilot training over 40 is the return on investment. Training costs £90,000–£130,000 (integrated) or £55,000–£85,000 (modular). You have, at most, 25 years of flying career ahead of you (mandatory retirement at 65). A 25-year-old starting the same training has 40 years.
+                The Class 1 Medical becomes more demanding as you age, and this is the most important practical consideration for pilots starting training over 40.
               </p>
               <p>
-                Here is a simplified ROI calculation for a 42-year-old starting integrated training:
+                <strong>Renewal frequency:</strong> Under 40, a Class 1 Medical is valid for 24 months. After age 40, it must be renewed every 12 months. After age 60, it must be renewed every 6 months. Each renewal costs approximately £500–£800 and requires a full day at an Aeromedical Examiner.
               </p>
               <p>
-                Total training cost (including type rating and living costs): £140,000. Loan repayment at 7% over 15 years: approximately £1,260/month. First officer starting salary: £55,000 (take-home approximately £3,400/month). Loan repayment as percentage of take-home: 37%. This is tight but manageable.
+                <strong>Cardiovascular screening:</strong> After age 40, the CAA requires an ECG (electrocardiogram) at every Class 1 Medical renewal. After age 50, a stress ECG (exercise tolerance test) is required periodically.
               </p>
               <p>
-                By age 50 (8 years into career), you are likely a senior first officer earning £75,000–£85,000. Your loan may be paid off or nearly so. By age 55, if promoted to captain, you are earning £100,000–£130,000. Over a 23-year career (42 to 65), total earnings are approximately £1.8–£2.5 million. The £140,000 investment looks very different in that context.
-              </p>
-              <p>
-                The calculation changes significantly if you are funding training with debt you cannot comfortably service on a first officer's salary. If the loan repayments would cause genuine financial hardship, the modular route — spread over more years, with lower monthly costs — is the more sensible approach.
+                <strong>The risk of medical failure:</strong> The probability of developing a disqualifying medical condition increases with age. Cardiovascular issues, diabetes, and neurological conditions all become more common in middle age. This is not a reason to avoid training, but it is a reason to get your Class 1 Medical before you spend a penny on flight training.
               </p>
             </>
           ),
         },
         {
-          heading: "The Medical: What Changes After 40",
+          heading: "The Return on Investment Calculation",
           content: (
             <>
               <p>
-                The Class 1 medical becomes more rigorous after 40. From age 40, pilots are required to have annual cardiovascular assessments including an ECG. From age 60, the requirements increase further. Most healthy 40-year-olds pass the Class 1 medical without issue, but the following conditions are more likely to cause problems with age:
+                Let us run the numbers honestly for a 40-year-old starting integrated ATPL training in 2026.
               </p>
               <p>
-                Cardiovascular conditions (hypertension, elevated cholesterol, previous cardiac events), diabetes, vision deterioration (particularly colour vision), and hearing loss. None of these are automatic disqualifiers, but they require careful assessment by an Aviation Medical Examiner (AME).
+                <strong>Training cost:</strong> £100,000 (integrated ATPL, including type rating)
               </p>
               <p>
-                <strong>The most important thing you can do before spending any money on training is to get a Class 1 medical assessment.</strong> This costs £350–£500 and takes half a day. If you pass, you have certainty. If there are borderline issues, an AME can give you a realistic assessment of your long-term prospects. See our <Link href="/guides/class-1-medical-disqualifiers">Class 1 Medical guide</Link> for full details.
+                <strong>Year 1-2 (First Officer, Regional):</strong> £35,000–£50,000/year. Net income after loan repayments (£900/month on a £100k loan at 7% over 15 years): approximately £25,000–£40,000/year.
+              </p>
+              <p>
+                <strong>Year 3-5 (First Officer, LCC):</strong> £65,000–£95,000/year. Net income after loan repayments: approximately £55,000–£85,000/year.
+              </p>
+              <p>
+                <strong>Year 6-10 (Captain, LCC):</strong> £140,000–£180,000/year. Loan likely paid off. Net income: £90,000–£120,000/year after tax.
+              </p>
+              <p>
+                <strong>Year 10-25 (Captain, mainline):</strong> £150,000–£225,000/year. Net income: £95,000–£140,000/year after tax.
+              </p>
+              <p>
+                Over a 25-year career (age 40 to 65), the total net income significantly exceeds the £100,000 training investment. The ROI is positive — but it depends on reaching Captain within a reasonable timeframe and maintaining your medical throughout.
               </p>
             </>
           ),
         },
         {
-          heading: "What Airlines Actually Think",
+          heading: "What Airlines Actually Think About Older Pilots",
           content: (
             <>
               <p>
-                Airlines do not discriminate on age. They hire based on qualifications, simulator performance, and interview results. A 45-year-old first officer with a clean training record and strong interview skills will be hired over a 25-year-old with a patchy record.
+                UK airlines are legally prohibited from discriminating on the basis of age under the Equality Act 2010. In practice, airlines care about your qualifications, your aptitude test scores, your simulator performance, and your interview presentation — not your date of birth.
               </p>
               <p>
-                What airlines do consider is the length of your potential career with them. A 45-year-old first officer has 20 years before mandatory retirement. The airline's investment in your training and type rating will be amortised over a shorter period than a 25-year-old's. In a competitive hiring market, this is a minor consideration. In a tight market, it may be a factor.
+                There is one practical consideration: cadet programmes. Most airline cadet programmes have informal upper age limits (typically 35–40) because they are investing in a long career return. If you are 42, you are unlikely to be accepted onto the BA Speedbird Academy. However, you can absolutely apply directly to airlines as a qualified First Officer after completing your training independently.
               </p>
               <p>
-                The practical reality is that in 2026, with a significant pilot shortage, airlines are not in a position to be selective about age. They need qualified pilots. A 45-year-old with a frozen ATPL and a type rating will find opportunities.
+                The pilot shortage has made airlines less picky, not more. In 2026, airlines that previously required 500+ hours for First Officer roles are hiring at minimum hours. A 42-year-old with a frozen ATPL, strong exam scores, and a good simulator assessment will find a job.
               </p>
             </>
           ),
         },
         {
-          heading: "The Modular Route: The Smart Choice for Over-40s",
+          heading: "Integrated vs Modular: Which Is Better for Older Students?",
           content: (
             <>
               <p>
-                For most candidates over 40, the modular route is the more sensible financial choice. Here is why:
+                This is a genuine question that deserves a direct answer. Integrated training is faster (18–24 months) and more structured, but it is also more physically and mentally demanding. You are in class or flying 5–6 days a week for nearly two years.
               </p>
               <p>
-                Integrated training requires you to give up your income for 18–24 months. At 40+, you likely have financial commitments — mortgage, family, savings — that make this more difficult than it would be at 25. The modular route allows you to maintain your income while training, spreading the cost over several years.
+                Modular training takes longer (3–5 years) but allows you to balance training with existing family and work commitments. For a 40-year-old with a mortgage, a family, and a career to manage, the modular route is often the more practical choice — even if it costs slightly more in total.
               </p>
               <p>
-                The modular route also allows you to test your commitment at each stage. If you discover after your PPL that commercial flying is not what you expected, you have spent £10,000–£15,000 rather than £130,000. This risk management is particularly valuable for career changers who are making a significant life decision.
-              </p>
-              <p>
-                Use the <Link href="/roadmap">AviatorIQ Roadmap Generator</Link> to get a personalised training plan based on your age, budget, and availability.
+                The one caveat is that modular training requires exceptional self-discipline. Without the structure of an integrated programme, it is easy to let training slip. If you choose modular, set yourself hard deadlines for each stage and treat them as non-negotiable.
               </p>
             </>
           ),
-        },
-        {
-          heading: "Real Examples: Pilots Who Made the Change",
-          content: (
-            <>
-              <p>
-                Career-change pilots are not unusual in the industry. Former teachers, engineers, doctors, and business professionals have all successfully transitioned to airline careers in their 40s. The common threads in successful career-change stories are: a clear-eyed financial plan, the modular route (in most cases), a supportive family, and genuine passion for flying rather than romantic notions about the lifestyle.
-              </p>
-              <p>
-                The career changers who struggle are those who underestimated the financial pressure, did not have a supportive partner, or discovered that the reality of shift work and time away from home was not what they expected. These are not reasons not to pursue the career — they are reasons to go in with eyes open.
-              </p>
-              <p>
-                If you are seriously considering this path, take the <Link href="/quiz">AviatorIQ Career Readiness Assessment</Link> for a personalised evaluation of your readiness, and use the <Link href="/calculator">Cost Calculator</Link> to model your specific financial scenario.
-              </p>
-            </>
-          ),
-        },
+        }
+      ]}
+      relatedGuides={[
+        { title: "Am I Too Old to Become a Pilot?", href: "/guides/am-i-too-old-to-become-a-pilot", time: "6 min" },
+        { title: "Class 1 Medical Guide", href: "/guides/class-1-medical", time: "5 min" },
+        { title: "Integrated vs Modular ATPL", href: "/guides/integrated-vs-modular", time: "9 min" },
       ]}
     />
   );
-};
-
-export default PilotTrainingOver40;
+}

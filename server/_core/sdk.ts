@@ -298,21 +298,22 @@ class SDKServer {
     const signedInAt = new Date();
     let user = await db.getUserByOpenId(sessionUserId);
 
-    // If user not in DB, sync from OAuth server automatically
+    // Self-hosted: if user not in DB, create from session data (no external OAuth sync)
     if (!user) {
       try {
-        const userInfo = await this.getUserInfoWithJwt(sessionCookie ?? "");
+        const isAdmin = sessionUserId === (process.env.OWNER_OPEN_ID ?? "admin");
         await db.upsertUser({
-          openId: userInfo.openId,
-          name: userInfo.name || null,
-          email: userInfo.email ?? null,
-          loginMethod: userInfo.loginMethod ?? userInfo.platform ?? null,
+          openId: sessionUserId,
+          name: session.name || sessionUserId,
+          email: null,
+          loginMethod: "local",
+          role: isAdmin ? "admin" : "user",
           lastSignedIn: signedInAt,
         });
-        user = await db.getUserByOpenId(userInfo.openId);
+        user = await db.getUserByOpenId(sessionUserId);
       } catch (error) {
-        console.error("[Auth] Failed to sync user from OAuth:", error);
-        throw ForbiddenError("Failed to sync user info");
+        console.error("[Auth] Failed to create local user:", error);
+        throw ForbiddenError("Failed to create user");
       }
     }
 

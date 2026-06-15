@@ -1,1 +1,1 @@
-{"@tailwindcss/oxide":true,"esbuild":true}
+{"@tailwindcss/oxide":true,"esbuild":true,"core-js":true}

@@ -1,68 +1,157 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
-const AtplExams = () => {
+export default function AtplExams() {
   return (
     <GuideLayout
       title="ATPL Theory Exams UK: Complete Guide 2026"
-      subtitle="All 14 ATPL subjects, pass rates, study strategies, and the best resources — from candidates who have been through it."
+      subtitle="All 13 ATPL subjects ranked from easiest to hardest, with real pass rates, exam durations, and the study strategies that actually work."
       canonical="/guides/atpl-theory-exams-uk"
-      metaDescription="Complete guide to ATPL theory exams in the UK 2026. All 14 subjects, pass rates, difficulty ratings, best study resources, and strategies to pass first time."
+      metaDescription="Complete guide to the 13 UK CAA/EASA ATPL theory exams. See real pass rates, subject difficulty rankings (Communications to Performance), and study tips."
+      readTime="12 min read"
+      heroImage="/manus-storage/atpl-exams_5e2d1a8c.jpg"
+      ctaHref="/quiz"
+      ctaText="Find your training route"
+      scopeBanner={<GuideScopeBanner scope="This guide covers the 13 ATPL theory exams under UK CAA/EASA regulations. The FAA has a different exam structure." usHref="/us/guides/atp-certificate-usa" usLabel="View USA ATP certificate →" />}
       faqSchema={[
-        { question: "How many ATPL exams are there?", answer: "There are 14 ATPL theory subjects in the UK/EASA system: Air Law, Aircraft General Knowledge (Airframes & Systems), Aircraft General Knowledge (Electrics), Aircraft General Knowledge (Powerplant), Aircraft General Knowledge (Instrumentation), Mass & Balance, Performance, Flight Planning & Monitoring, Human Performance, Meteorology, General Navigation, Radio Navigation, Operational Procedures, and Principles of Flight." },
-        { question: "How hard are ATPL exams?", answer: "ATPL exams are challenging but passable with consistent study. The overall pass rate is approximately 70–80% per attempt. The hardest subjects are generally considered to be General Navigation, Meteorology, and Principles of Flight. The easiest are typically Air Law and Operational Procedures." },
-        { question: "How long does it take to study for ATPL exams?", answer: "Most candidates spend 12–18 months studying for ATPL theory, typically 15–20 hours per week. Intensive full-time study can compress this to 6–9 months. The total recommended study time is approximately 750 hours across all 14 subjects." },
-        { question: "What is the pass mark for ATPL exams?", answer: "The pass mark for all ATPL theory exams is 75%. Exams are multiple choice. You have a maximum of 6 attempts per subject and must pass all 14 subjects within 6 years of passing your first exam." },
-        { question: "What are the best resources for ATPL study?", answer: "The most widely used resources are Bristol Groundschool (distance learning), Oxford Aviation Academy (ATPL textbooks), and question banks such as Padpilot, Qbase, and ATPL Questions. Most candidates use a combination of a structured course and a question bank for exam practice." },
+        { question: "How many ATPL exams are there?", answer: "There are 13 ATPL theory exams under the current UK CAA and EASA syllabus (previously 14, but VFR and IFR Communications were merged). You must pass all 13 to obtain a Frozen ATPL." },
+        { question: "What is the pass mark for ATPL exams?", answer: "The minimum pass mark for every ATPL exam is 75%. However, airlines highly value first-time passes and strong average scores (aiming for 85-90%+)." },
+        { question: "How many times can you fail an ATPL exam?", answer: "You have a maximum of 6 attempts per subject, across a maximum of 6 total sittings. You must pass all 13 exams within 18 months of taking your first exam." },
+        { question: "Which is the hardest ATPL exam?", answer: "Performance is widely considered the hardest ATPL exam, with the lowest average pass rate (around 58%). Principles of Flight and General Navigation are also consistently ranked among the most difficult." },
+        { question: "How long does ATPL theory take?", answer: "Full-time residential ground school typically takes 6 to 8 months. Part-time distance learning usually takes 12 to 18 months while working alongside study." }
       ]}
-      readTime="10 min read"
-      heroImage="/manus-storage/atpl-exams_9d4c2b8e.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
       sections={[
         {
-          heading: "The 14 ATPL Subjects: An Honest Overview",
+          heading: "The Academic Hurdle of Pilot Training",
           content: (
             <>
               <p>
-                The ATPL theory examination consists of 14 subjects, covering everything from the legal framework of aviation to the aerodynamics of swept-wing aircraft. The total recommended study time is approximately 750 hours — equivalent to a full university year. This is not a qualification you can cram for.
+                The Airline Transport Pilot Licence (ATPL) theory exams are the academic backbone of European and UK pilot training. While the flight training teaches you how to handle the aircraft, the ATPL exams prove you have the technical knowledge required to operate a complex commercial airliner safely.
               </p>
-              <img src="/manus-storage/atpl-theory-books_5f2a8c3d.jpg" alt="ATPL theory exam books" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/aviation-exam_8b3e1f9a.jpg" alt="Aviation exam study" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <div style={{ overflowX: "auto" }}>
-                <table style={{ width: "100%", borderCollapse: "collapse", margin: "20px 0" }}>
-                  <thead>
-                    <tr style={{ backgroundColor: "oklch(0.18 0.08 250)" }}>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Subject</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Questions</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Time</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Difficulty</th>
+              <p>
+                There are 13 exams in total (reduced from 14 after VFR and IFR Communications were merged). They cover everything from basic aerodynamics to complex high-altitude meteorology and human psychology. The sheer volume of information is what makes the ATPL theory phase notoriously difficult — it is often described as trying to drink from a firehose.
+              </p>
+              <p>
+                You must pass all 13 exams within an 18-month window, starting from the end of the calendar month in which you attempt your first exam. You have a maximum of 6 sittings (a sitting is a consecutive 10-day period where you can take multiple exams) and a maximum of 4 attempts per subject [1].
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "The 13 ATPL Subjects Ranked (Easiest to Hardest)",
+          content: (
+            <>
+              <p>
+                The difficulty of an ATPL exam rarely correlates with how complex the subject is in the real world. Difficulty is driven by how the UK CAA/EASA phrases the questions, the time pressure of the exam, and the sheer volume of rote memorisation required.
+              </p>
+              <p>
+                Based on historic pass rate data and feedback from thousands of candidates, here is the honest ranking of the 13 subjects, from easiest to hardest [2].
+              </p>
+              
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Rank</th>
+                      <th className="px-4 py-3 font-semibold">Subject</th>
+                      <th className="px-4 py-3 font-semibold">Questions</th>
+                      <th className="px-4 py-3 font-semibold">Time Allowed</th>
+                      <th className="px-4 py-3 font-semibold">Est. Pass Rate</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    {[
-                      ["Air Law", "44", "60 min", "Easy"],
-                      ["AGK — Airframes & Systems", "80", "120 min", "Medium"],
-                      ["AGK — Electrics", "50", "60 min", "Medium"],
-                      ["AGK — Powerplant", "60", "60 min", "Medium"],
-                      ["AGK — Instrumentation", "60", "60 min", "Medium-Hard"],
-                      ["Mass & Balance", "25", "60 min", "Medium"],
-                      ["Performance", "50", "120 min", "Hard"],
-                      ["Flight Planning & Monitoring", "43", "120 min", "Hard"],
-                      ["Human Performance", "48", "60 min", "Easy-Medium"],
-                      ["Meteorology", "84", "120 min", "Hard"],
-                      ["General Navigation", "60", "120 min", "Very Hard"],
-                      ["Radio Navigation", "66", "90 min", "Hard"],
-                      ["Operational Procedures", "45", "75 min", "Easy"],
-                      ["Principles of Flight", "44", "60 min", "Hard"],
-                    ].map(([subj, q, time, diff]) => (
-                      <tr key={subj}>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.85 0.04 240)", fontWeight: "600" }}>{subj}</td>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>{q}</td>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>{time}</td>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: diff === "Very Hard" ? "oklch(0.78 0.18 25)" : diff === "Hard" ? "oklch(0.72 0.18 65)" : diff === "Easy" ? "oklch(0.72 0.18 145)" : "oklch(0.75 0.04 240)" }}>{diff}</td>
-                      </tr>
-                    ))}
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">1 (Easiest)</td>
+                      <td className="px-4 py-3">Communications</td>
+                      <td className="px-4 py-3">34</td>
+                      <td className="px-4 py-3">45 mins</td>
+                      <td className="px-4 py-3 text-green-400">~90%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">2</td>
+                      <td className="px-4 py-3">Instrumentation</td>
+                      <td className="px-4 py-3">60</td>
+                      <td className="px-4 py-3">90 mins</td>
+                      <td className="px-4 py-3 text-green-400">~87%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">3</td>
+                      <td className="px-4 py-3">Human Performance & Limitations</td>
+                      <td className="px-4 py-3">48</td>
+                      <td className="px-4 py-3">60 mins</td>
+                      <td className="px-4 py-3 text-green-400">~84%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">4</td>
+                      <td className="px-4 py-3">Air Law</td>
+                      <td className="px-4 py-3">44</td>
+                      <td className="px-4 py-3">60 mins</td>
+                      <td className="px-4 py-3 text-amber-400">~82%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">5</td>
+                      <td className="px-4 py-3">Mass & Balance</td>
+                      <td className="px-4 py-3">25</td>
+                      <td className="px-4 py-3">60 mins</td>
+                      <td className="px-4 py-3 text-amber-400">~79%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">6</td>
+                      <td className="px-4 py-3">Aircraft General Knowledge (AGK)</td>
+                      <td className="px-4 py-3">80</td>
+                      <td className="px-4 py-3">120 mins</td>
+                      <td className="px-4 py-3 text-amber-400">~76%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">7</td>
+                      <td className="px-4 py-3">Operational Procedures</td>
+                      <td className="px-4 py-3">45</td>
+                      <td className="px-4 py-3">75 mins</td>
+                      <td className="px-4 py-3 text-amber-400">~74%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">8</td>
+                      <td className="px-4 py-3">Meteorology</td>
+                      <td className="px-4 py-3">84</td>
+                      <td className="px-4 py-3">120 mins</td>
+                      <td className="px-4 py-3 text-amber-400">~71%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">9</td>
+                      <td className="px-4 py-3">Radio Navigation</td>
+                      <td className="px-4 py-3">66</td>
+                      <td className="px-4 py-3">90 mins</td>
+                      <td className="px-4 py-3 text-orange-400">~69%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">10</td>
+                      <td className="px-4 py-3">General Navigation</td>
+                      <td className="px-4 py-3">60</td>
+                      <td className="px-4 py-3">120 mins</td>
+                      <td className="px-4 py-3 text-orange-400">~67%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">11</td>
+                      <td className="px-4 py-3">Flight Planning & Monitoring</td>
+                      <td className="px-4 py-3">43</td>
+                      <td className="px-4 py-3">120 mins</td>
+                      <td className="px-4 py-3 text-orange-400">~65%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">12</td>
+                      <td className="px-4 py-3">Principles of Flight</td>
+                      <td className="px-4 py-3">46</td>
+                      <td className="px-4 py-3">90 mins</td>
+                      <td className="px-4 py-3 text-red-400">~62%</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">13 (Hardest)</td>
+                      <td className="px-4 py-3">Performance</td>
+                      <td className="px-4 py-3">61</td>
+                      <td className="px-4 py-3">120 mins</td>
+                      <td className="px-4 py-3 text-red-400">~58%</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -70,90 +159,74 @@ const AtplExams = () => {
           ),
         },
         {
-          heading: "The Hardest Subjects and How to Tackle Them",
+          heading: "The 'Big Three' Killers: Performance, PoF, and Gen Nav",
           content: (
             <>
               <p>
-                <strong>General Navigation (GNAV)</strong> is consistently rated the hardest ATPL subject. It requires strong mental arithmetic, the ability to work with charts and plotting instruments, and a solid understanding of magnetic variation, wind correction, and time calculations. The key to passing GNAV is practice — not reading. Do hundreds of practice questions, use the navigation computer (CRP-5) until it is second nature, and work through past papers under timed conditions.
+                <strong>Performance</strong> is universally regarded as the hardest ATPL exam. It combines complex graph reading, multi-variable calculations, and regulatory knowledge under severe time pressure. You must calculate climb gradients, obstacle clearance, and field length requirements. One misread line on a CAP 698 graph will cascade into a wrong answer.
               </p>
               <p>
-                <strong>Meteorology</strong> is the subject that most surprises candidates with its depth. It is not just "what does a cold front look like" — it covers atmospheric physics, jet streams, SIGMET interpretation, and complex weather phenomena. The Oxford Aviation Academy meteorology textbook is the gold standard. Read it twice, then do question banks.
+                <strong>Principles of Flight (PoF)</strong> covers lift, drag, stall, high-speed aerodynamics, and compressibility effects. It requires genuine conceptual understanding — you cannot memorise your way through this one. The exam frequently tests edge cases like swept-wing behaviour and Mach tuck.
               </p>
               <p>
-                <strong>Performance</strong> is heavily mathematical and requires understanding of take-off and landing performance charts, climb gradients, and obstacle clearance calculations. The CAA's Learning Objectives for Performance are very specific — study to them, not just to the textbook.
+                <strong>General Navigation</strong> humbles candidates who underestimate it. It covers charts, great circles, rhumb lines, and wind calculations. The exam is heavily calculation-based and requires fast, accurate use of the CRP-5 flight computer. Time pressure is the main reason candidates fail.
               </p>
             </>
           ),
         },
         {
-          heading: "Study Strategy: How to Pass First Time",
+          heading: "The Memory Tests: Air Law and AGK",
           content: (
             <>
               <p>
-                The candidates who pass ATPL exams first time consistently follow a similar approach:
+                <strong>Air Law</strong> is 100% a memory test. You must memorise specific regulation numbers, time limits, and licence requirements. There is no conceptual reasoning to rely on. The pass rate is relatively high only because the question bank covers the vast majority of what shows up in the real exam.
               </p>
               <p>
-                <strong>1. Use a structured course.</strong> Bristol Groundschool's distance learning course is the most widely used in the UK and has an excellent track record. Oxford Aviation Academy's classroom courses are more expensive but provide more structure. Do not try to self-study from textbooks alone — the structured courses are specifically designed around the CAA's learning objectives.
-              </p>
-              <p>
-                <strong>2. Start question banks early.</strong> Do not wait until you have finished studying a subject before starting question bank practice. Do questions from the first week. The question banks (Padpilot, Qbase, ATPL Questions) contain thousands of questions that closely mirror the real exams. Familiarity with the question style is as important as subject knowledge.
-              </p>
-              <p>
-                <strong>3. Study in blocks, not subjects.</strong> Rather than studying one subject from start to finish before moving to the next, rotate through subjects. This improves retention and prevents the burnout that comes from spending three months on a single topic.
-              </p>
-              <p>
-                <strong>4. Sit exams in the right order.</strong> Most experienced candidates recommend sitting Air Law and Human Performance first (easier, builds confidence), then tackling the harder subjects (GNAV, Met, Performance) in the middle of your study period when you are at peak focus.
-              </p>
-              <p>
-                <strong>5. Allow time for resits.</strong> Even well-prepared candidates sometimes fail a subject. Budget time and money for resits. Exam fees are approximately £50–£100 per attempt, and resit sessions are held regularly throughout the year.
+                <strong>Aircraft General Knowledge (AGK)</strong> is a broad, substantial exam covering airframes, hydraulics, pneumatics, fuel systems, electrics, and powerplants. The sheer breadth of material is what makes it demanding. You can spend weeks studying one system and still get caught out on a small detail in another.
               </p>
             </>
           ),
         },
         {
-          heading: "The Rules You Must Know",
+          heading: "Study Strategies That Actually Work",
           content: (
             <>
               <p>
-                The CAA's ATPL exam rules are specific and must be understood before you start:
+                The most common mistake candidates make is relying entirely on question banks (like Bristol Groundschool's BGSonline or AviationExam) without understanding the underlying theory. The UK CAA frequently updates its question database specifically to catch out candidates who have memorised answers rather than learned the concepts.
               </p>
               <p>
-                <strong>The 6-year rule:</strong> You must pass all 14 subjects within 6 years of passing your first exam. If you pass your first exam in June 2026, you must have passed all 14 by June 2032. This is generous, but it means you cannot take a multi-year break mid-way through.
+                <strong>The optimal study loop:</strong>
               </p>
+              <ol className="list-decimal pl-5 space-y-2 mt-2 mb-4">
+                <li>Read the textbook chapter or watch the ground school lecture to build the conceptual foundation.</li>
+                <li>Attempt the end-of-chapter progress tests without looking at the answers.</li>
+                <li>Only once you have finished the entire subject module, move to the question bank.</li>
+                <li>When using the question bank, read the explanation for <em>every</em> question you get wrong. If you don't understand the explanation, go back to the textbook.</li>
+                <li>Aim for consistent 90%+ scores in mock exams before sitting the real thing. The real exam environment induces stress that will naturally lower your score by 5–10%.</li>
+              </ol>
               <p>
-                <strong>Maximum 6 attempts per subject:</strong> You have a maximum of 6 attempts at each subject. If you fail a subject 6 times, you cannot retake it and cannot obtain an ATPL. This is rare, but it does happen to candidates who are not adequately prepared.
-              </p>
-              <p>
-                <strong>The 18-month rule:</strong> Once you have passed all 14 subjects, your ATPL theory credit is valid for 7 years. If you do not obtain a CPL/IR within 7 years of passing your last exam, your theory credit expires and you must resit all 14 subjects.
+                Group your exams logically. Do not sit Performance, Gen Nav, and PoF in the same sitting. Mix calculation-heavy subjects with memory-heavy subjects (e.g., pair Gen Nav with Communications and Air Law).
               </p>
             </>
           ),
         },
         {
-          heading: "Best Resources for ATPL Study (2026)",
+          heading: "References",
           content: (
             <>
-              <p>
-                <strong>Bristol Groundschool (BGS):</strong> The most popular distance learning ATPL course in the UK. Comprehensive, well-structured, and regularly updated. Costs approximately £2,500–£3,500 for the full 14-subject course. Includes video lectures, textbooks, and question bank access.
-              </p>
-              <p>
-                <strong>Oxford Aviation Academy (OAA) textbooks:</strong> The industry-standard ATPL textbooks. Available as a set of 14 books or individually. Essential reference material even if you are using a different course provider.
-              </p>
-              <p>
-                <strong>Padpilot:</strong> A highly regarded question bank and study app. The interface is clean, the questions are well-calibrated, and the performance tracking is excellent. Available on iOS and Android. Costs approximately £150–£200 for full access.
-              </p>
-              <p>
-                <strong>ATPL Questions (atplquestions.com):</strong> A free and paid question bank with thousands of questions. Less polished than Padpilot but comprehensive and widely used.
-              </p>
-              <p>
-                Use the <Link href="/roadmap">AviatorIQ Roadmap Generator</Link> to see how ATPL theory fits into your specific training timeline and get a cost estimate for your chosen study route.
+              <p className="text-xs text-white/50 space-y-1">
+                [1] UK Civil Aviation Authority (CAA). "Commercial pilot theory exams." <em>CAA Official Guidelines</em>.<br/>
+                [2] ClearATPL. "13 ATPL Exams Ranked: Easiest to Hardest." <em>Aviation Training Data</em>.
               </p>
             </>
           ),
-        },
+        }
+      ]}
+      relatedGuides={[
+        { title: "Integrated vs Modular ATPL", href: "/guides/integrated-vs-modular", time: "9 min" },
+        { title: "Pilot Training Costs UK", href: "/guides/pilot-training-costs", time: "8 min" },
+        { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
       ]}
     />
   );
-};
-
-export default AtplExams;
+}

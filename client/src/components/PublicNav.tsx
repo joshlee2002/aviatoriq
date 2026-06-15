@@ -76,9 +76,9 @@ const ukToolLinks = [
   { label: "Pilot Roadmap Generator", href: "/roadmap", desc: "Get your personalised training roadmap", icon: "🗺️" },
   { label: "Cost Calculator", href: "/calculator", desc: "Estimate your total training cost", icon: "🧮" },
   { label: "Integrated vs Modular", href: "/tools/integrated-vs-modular", desc: "Find the right training route", icon: "⚖️" },
-  { label: "Medical Readiness Check", href: "/tools/class-1-medical-check", desc: "Assess your Class 1 eligibility", icon: "🩺" },
-  { label: "Medical Condition Lookup", href: "/tools/medical-condition-lookup", desc: "Check any condition against Class 1 standards", icon: "🔍" },
-  { label: "Cadet Eligibility Checker", href: "/tools/cadet-eligibility", desc: "Find which cadet programmes you qualify for", icon: "✈️" },
+  { label: "Medical Readiness Check", href: "/tools/class-1-medical-check", desc: "Assess your pilot medical eligibility (CAA/EASA)", icon: "🩺" },
+  { label: "Medical Condition Lookup", href: "/tools/medical-condition-lookup", desc: "Check any condition against pilot medical standards", icon: "🔍" },
+  { label: "UK & EU Cadet Eligibility", href: "/tools/cadet-eligibility", desc: "BA, easyJet, Ryanair, Wizz Air, TUI programmes", icon: "✈️" },
 ];
 
 const usToolLinks = [
@@ -361,7 +361,7 @@ export default function PublicNav() {
                       onMouseEnter={e => (e.currentTarget.style.color = "oklch(0.65 0.22 45)")}
                       onMouseLeave={e => (e.currentTarget.style.color = "oklch(0.5 0.04 240)")}
                     >
-                      {isUS ? "→ Switch to UK platform" : "→ Switch to US platform"}
+                      {isUS ? "→ Switch to Global / UK platform" : "→ Switch to US platform"}
                     </Link>
                   </div>
                 </div>
@@ -372,7 +372,7 @@ export default function PublicNav() {
           {/* Right: CTA + currency */}
           <div className="hidden md:flex items-center gap-2">
             <CurrencySwitcher />
-            {/* Country Switcher */}
+            {/* Region Switcher */}
             <button
               type="button"
               onClick={() => {
@@ -382,9 +382,9 @@ export default function PublicNav() {
               }}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all hover:bg-white/8"
               style={{ color: "oklch(0.75 0.04 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
-              title={country === "us" ? "Switch to UK version" : "Switch to US version"}
+              title={country === "us" ? "Switch to UK / Global version" : "Switch to US version"}
             >
-              {country === "us" ? "🇺🇸 US" : "🇬🇧 UK"}
+              {country === "us" ? "🇺🇸 US" : "🌍 Global"}
             </button>
 
             {user?.role === "admin" && (
@@ -492,7 +492,7 @@ export default function PublicNav() {
                 className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold transition-all"
                 style={{ border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.75 0.04 240)" }}
               >
-                {country === "us" ? "🇬🇧 Switch to UK version" : "🇺🇸 Switch to US version"}
+                {country === "us" ? "🌍 Switch to Global / UK version" : "🇺🇸 Switch to US version"}
               </button>
             </div>
 

@@ -366,8 +366,8 @@ export default function CadetEligibility() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.10 0.08 252)" }}>
       <SEO
-        title="Cadet Programme Eligibility Checker | Which Airline Cadet Scheme Can I Apply For? | AviatorIQ"
-        description="Answer 5 questions to find out which UK airline cadet programmes you are eligible for — BA Speedbird Academy, easyJet Generation Pilot, Ryanair, Wizz Air, and TUI MPL."
+        title="UK & European Cadet Programme Eligibility Checker | AviatorIQ"
+        description="Answer 5 questions to find out which UK and European airline cadet programmes you are eligible for — BA Speedbird Academy, easyJet Generation Pilot, Ryanair, Wizz Air, and TUI MPL."
         canonical="/tools/cadet-eligibility"
         schema={{
           "@context": "https://schema.org",
@@ -394,11 +394,15 @@ export default function CadetEligibility() {
               <Star className="w-3.5 h-3.5" /> Cadet Programme Tool
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
-              Cadet Programme Eligibility Checker
+              UK & European Cadet Programme Checker
             </h1>
             <p className="text-base md:text-lg mb-4" style={{ color: "oklch(0.65 0.04 240)" }}>
-              Answer 5 questions to find out which of the UK's main airline cadet programmes you are eligible for — including BA, easyJet, Ryanair, Wizz Air, and TUI.
+              Answer 5 questions to find out which UK and European airline cadet programmes you are eligible for — BA, easyJet, Ryanair, Wizz Air, and TUI.
             </p>
+            <div className="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-xs mb-2" style={{ background: "oklch(0.72 0.18 65 / 0.12)", border: "1px solid oklch(0.72 0.18 65 / 0.25)", color: "oklch(0.85 0.12 65)" }}>
+              <span>🌍</span>
+              <span>Based in the USA, Australia, or Canada? Check out the <a href="/us/cadet-eligibility" style={{ textDecoration: "underline", color: "inherit" }}>US cadet programmes checker</a> or search our <a href="/schools" style={{ textDecoration: "underline", color: "inherit" }}>global school directory</a> for airline-affiliated schools in your country.</span>
+            </div>
             <p className="text-sm" style={{ color: "oklch(0.5 0.04 240)" }}>
               Takes 60 seconds · No registration required
             </p>

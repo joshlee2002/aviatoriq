@@ -93,7 +93,7 @@ const FrozenAtplUK = () => {
                 The journey to obtaining a Frozen ATPL involves a significant investment of both time and money. The duration of ATPL theory ground school typically ranges from 6 to 18 months. Integrated courses, which are full-time, often condense the theory into 6-9 months, followed by flight training. Modular courses offer more flexibility, allowing students to study part-time over a longer period, usually 12-18 months, often alongside other commitments.
               </p>
               <p>
-                In terms of financial outlay, the cost for ATPL theory ground school in the UK generally falls between £3,000 and £6,000. This figure primarily covers tuition fees, access to online learning platforms, study materials, and instructor support. It is crucial to note that this cost usually excludes the examination fees, which are paid directly to the UK CAA. These exam fees can add several hundred pounds to the total, with each of the 14 exams incurring a separate charge.
+                In terms of financial outlay, the cost for ATPL theory ground school in the UK generally falls between £3,000 and £6,000. This figure primarily covers tuition fees, access to online learning platforms, study materials, and instructor support. note that this cost usually excludes the examination fees, which are paid directly to the UK CAA. These exam fees can add several hundred pounds to the total, with each of the 14 exams incurring a separate charge.
               </p>
               <p>
                 Beyond the theory, the overall cost of gaining a CPL with MEIR and the associated flight training can range from £80,000 to £120,000 or more, depending on the training route (integrated vs. modular) and the chosen flight school. Prospective pilots should thoroughly research different training providers and consider all associated costs, including accommodation, living expenses, and additional ratings, when planning their budget.
@@ -128,7 +128,7 @@ const FrozenAtplUK = () => {
                 The fATPL status assures airlines that a candidate is ready to integrate into a multi-crew cockpit environment and can absorb the advanced training required for their specific aircraft types. It's a globally recognised standard that streamlines the recruitment process and ensures a consistent quality of pilot entering the flight deck. Without a fATPL, a pilot would not meet the minimum regulatory requirements to act as a co-pilot in commercial air transport operations.
               </p>
               <p>
-                Furthermore, the structured nature of ATPL training, leading to the fATPL, instils discipline and a professional mindset crucial for airline operations. Airlines invest heavily in their pilots, and the fATPL serves as a strong indicator that this investment will be well-placed, leading to a competent and career-focused First Officer who is on track to become a future Captain.
+                the structured nature of ATPL training, leading to the fATPL, instils discipline and a professional mindset crucial for airline operations. Airlines invest heavily in their pilots, and the fATPL serves as a strong indicator that this investment will be well-placed, leading to a competent and career-focused First Officer who is on track to become a future Captain.
               </p>
             </>
           ),

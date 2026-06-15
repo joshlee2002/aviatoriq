@@ -22,6 +22,13 @@ const usGuideLinks = [
   { label: "ATP Certificate Guide", href: "/us/guides/atp-certificate-usa" },
 ];
 
+const globalGuideLinks = [
+  { label: "🇦🇺 How to Become a Pilot in Australia", href: "/guides/how-to-become-a-pilot-australia" },
+  { label: "🇨🇦 How to Become a Pilot in Canada", href: "/guides/how-to-become-a-pilot-canada" },
+  { label: "🇪🇺 How to Become a Pilot in Europe", href: "/guides/how-to-become-a-pilot-europe" },
+  { label: "🇺🇸 How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot" },
+];
+
 const ukToolLinks = [
   { label: "Pilot Roadmap Generator", href: "/roadmap" },
   { label: "Cost Calculator", href: "/calculator" },
@@ -63,14 +70,14 @@ export default function PublicFooter() {
   const toolLinks = isUS ? usToolLinks : ukToolLinks;
   const tagline = isUS
     ? "The USA's most personalised pilot training guidance platform. FAA routes, real costs, and matched flight schools."
-    : "The UK's most personalised pilot training guidance platform. Find your route, understand your costs, and get matched with the right flight school.";
+    : "The world's most personalised pilot training guidance platform. Find your route, understand your costs, and get matched with the right flight school.";
   const assessmentHref = isUS ? "/us" : "/quiz";
   const homeHref = isUS ? "/us" : "/";
 
   return (
     <footer style={{ background: "oklch(0.08 0.07 252)", borderTop: "1px solid oklch(1 0 0 / 0.07)" }}>
       <div className="container py-8 md:py-14">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10 mb-8 md:mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-8 mb-8 md:mb-12">
 
           {/* Brand — spans 2 cols */}
           <div className="col-span-2 md:col-span-2">
@@ -101,6 +108,23 @@ export default function PublicFooter() {
             <h4 className="font-display font-semibold text-xs uppercase tracking-widest mb-4" style={{ color: "oklch(0.45 0.04 240)" }}>Pilot Guides</h4>
             <ul className="space-y-2.5">
               {guideLinks.map((link) => (
+                <li key={link.href + link.label}>
+                  <Link href={link.href} className="text-sm no-underline transition-colors" style={{ color: "oklch(0.55 0.04 240)" }}
+                    onMouseEnter={e => (e.currentTarget.style.color = "white")}
+                    onMouseLeave={e => (e.currentTarget.style.color = "oklch(0.55 0.04 240)")}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Global Guides */}
+          <div>
+            <h4 className="font-display font-semibold text-xs uppercase tracking-widest mb-4" style={{ color: "oklch(0.45 0.04 240)" }}>Global Guides</h4>
+            <ul className="space-y-2.5">
+              {globalGuideLinks.map((link) => (
                 <li key={link.href + link.label}>
                   <Link href={link.href} className="text-sm no-underline transition-colors" style={{ color: "oklch(0.55 0.04 240)" }}
                     onMouseEnter={e => (e.currentTarget.style.color = "white")}

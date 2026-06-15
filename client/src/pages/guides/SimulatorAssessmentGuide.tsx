@@ -1,128 +1,132 @@
 import GuideLayout from "@/components/GuideLayout";
+import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
 export default function SimulatorAssessmentGuide() {
   return (
     <GuideLayout
-      title="Airline Simulator Assessment Guide 2026: What to Expect and How to Prepare"
-      subtitle="The simulator assessment is the stage where most technically qualified candidates fail — not because they cannot fly, but because they do not understand what assessors are actually looking for."
+      title="Airline Simulator Assessment Guide: What to Expect in 2026"
+      subtitle="How to pass the most stressful part of airline selection. What raw data flying actually means, and why most candidates fail on CRM, not flying skills."
       canonical="/guides/airline-simulator-assessment"
-      metaDescription="How to pass an airline pilot simulator assessment in 2026. What assessors look for, common scenarios, CRM tips, and how to prepare for the sim check. UK airline selection guide."
-      readTime="8 min read"
-      heroImage="/manus-storage/simulator-assessment_08bb00b0.jpg"
-      lastUpdated="June 2026"
+      metaDescription="Airline simulator assessment guide 2026. What to expect in a raw data sim check, how to handle CRM scenarios, and how to prepare for the hardest part of airline selection."
+      readTime="11 min read"
+      heroImage="/manus-storage/sim-assessment_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Take the free pilot readiness assessment"
+      ctaText="Find your training route"
+      scopeBanner={<GuideScopeBanner scope="This guide covers simulator assessments for UK and European airlines." usHref="/us/guides/airline-interview-usa" usLabel="View USA airline interview guide →" />}
       faqSchema={[
-        { question: "What happens in an airline pilot simulator assessment?", answer: "A typical airline simulator assessment lasts 60-90 minutes and includes: a pre-flight briefing, normal operations (departure, cruise, approach), an instrument approach (usually an ILS to minimums), a go-around, and at least one abnormal or emergency scenario (engine failure, system malfunction). You will be assessed on flying accuracy, CRM, and how you handle unexpected events." },
-        { question: "What aircraft type will I fly in the simulator assessment?", answer: "This varies by airline. Most major airlines use the aircraft type you are applying to fly — typically an Airbus A320 or Boeing 737. Some airlines use a generic multi-engine simulator for ab-initio candidates. Check the airline's recruitment information or ask the recruitment team before your assessment." },
-        { question: "What is CRM and why does it matter in a simulator assessment?", answer: "CRM stands for Crew Resource Management — the non-technical skills required to operate safely as part of a crew. It includes communication, workload management, situational awareness, decision-making, and leadership. Assessors weight CRM heavily because it predicts safe, professional behaviour in line operations. Many technically strong candidates fail simulator assessments due to poor CRM." },
-        { question: "How should I prepare for an airline simulator assessment?", answer: "Book preparation sessions in a simulator of the same type as your assessment. Focus on instrument flying, ILS approaches, go-arounds, and engine failures after V1. Practice thinking aloud and communicating with your assessor as if they were your first officer. Review the aircraft's standard operating procedures (SOPs) if available." },
-        { question: "Can I fail a simulator assessment and reapply?", answer: "Yes, most airlines allow reapplication after a waiting period (typically 6-12 months). If you fail, ask for feedback if the airline offers it. Use the waiting period to address the specific areas where you underperformed — whether that is flying accuracy, CRM, or handling abnormal procedures." },
-      ]}
-      relatedGuides={[
-        { title: "How to Pass an Airline Pilot Interview", href: "/guides/airline-pilot-interview", time: "9 min read" },
-        { title: "Pilot Aptitude Tests: Complete Preparation Guide", href: "/guides/pilot-aptitude-test-preparation", time: "8 min read" },
-        { title: "UK Cadet Pilot Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "8 min read" },
+        { question: "What is an airline simulator assessment?", answer: "A simulator assessment is a practical flight test in a full-motion Level D simulator (usually an A320 or B737). It is used by airlines to assess a candidate's basic instrument flying skills, crew resource management (CRM), and ability to learn under pressure." },
+        { question: "What does 'raw data flying' mean?", answer: "Raw data flying means flying the aircraft without the flight director (the guidance crosshairs on the primary flight display) or the autopilot. You must fly precise headings, altitudes, and speeds by interpreting the basic instruments yourself." },
+        { question: "Do I need to know the specific aircraft systems?", answer: "Generally, no. Unless you already hold a type rating for that aircraft, the assessors do not expect you to know the complex systems or standard operating procedures (SOPs) of the A320 or B737. They will set the aircraft up for you." },
+        { question: "How should I prepare for a simulator assessment?", answer: "Book 2–3 hours in a fixed-base or full-motion simulator of the type you will be assessed in. Practice raw data ILS approaches, steep turns, and go-arounds. Most importantly, practice verbalising your thought process to demonstrate good CRM." }
       ]}
       sections={[
         {
-          heading: "What Assessors Are Actually Looking For",
+          heading: "The Reality of the Simulator Assessment",
           content: (
             <>
               <p>
-                The most important thing to understand about a simulator assessment is this: it is not primarily a flying test. It is a CRM assessment that happens to involve flying.
-              </p>
-              <img src="/manus-storage/mcc-simulator_d3ac3716.jpg" alt="Simulator assessment training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <p>
-                Assessors are not looking for perfect flying. They are looking for safe, professional behaviour — the kind of behaviour that will keep passengers and crew safe in line operations over a 30-year career. A candidate who flies a slightly imperfect ILS but communicates clearly, manages workload effectively, and handles an engine failure calmly will score higher than a candidate who flies a technically perfect approach but is silent, reactive, and flustered when something goes wrong.
+                The simulator assessment is the most technically demanding and stressful stage of airline pilot selection. You will be placed in a multi-million-pound Level D full-flight simulator — typically an Airbus A320 or Boeing 737 — alongside another candidate or a training captain.
               </p>
               <p>
-                The specific behaviours assessors are looking for are defined by the ICAO and EASA competency frameworks:
+                The most common misconception is that the airline expects you to fly the jet perfectly. They do not. If you are a 200-hour cadet whose only twin-engine experience is in a Diamond DA42, they know you will struggle with the inertia and speed of a 70-tonne airliner.
               </p>
               <p>
-                <strong>Communication:</strong> Clear, concise, and timely. You should brief your assessor (as first officer) before each phase of flight. Call out deviations before the assessor does. Confirm readbacks. Speak at a normal pace — stress causes candidates to speak too quickly.
-              </p>
-              <p>
-                <strong>Workload management:</strong> Prioritise tasks correctly. Aviate, navigate, communicate — in that order. Do not become fixated on one task at the expense of others. Use automation appropriately.
-              </p>
-              <p>
-                <strong>Situational awareness:</strong> Know where you are, where you are going, and what is likely to happen next. Anticipate — do not just react. "I'm expecting the ILS to become active in about 10 miles" demonstrates situational awareness. Silence until the ILS activates does not.
-              </p>
-              <p>
-                <strong>Decision-making:</strong> Make decisions clearly and in good time. Announce your decisions to the assessor. "I'm going to go around — flaps to go-around, TOGA" is better than silently initiating a go-around.
+                They are assessing two things: your fundamental instrument scanning skills (can you process basic flight data?) and your Crew Resource Management (CRM) — how you communicate, manage workload, and respond to errors.
               </p>
             </>
           ),
         },
         {
-          heading: "Typical Assessment Scenarios and How to Handle Them",
+          heading: "Raw Data Flying: What You Will Actually Do",
           content: (
             <>
               <p>
-                While every airline's assessment is different, the following scenarios appear in the vast majority of airline simulator assessments:
+                Almost all airline assessments require "raw data" flying. This means the autopilot, autothrust, and flight directors (the crosshairs that tell you where to point the nose) are turned off. You must fly the aircraft using only the primary flight instruments.
               </p>
               <p>
-                <strong>ILS approach to minimums:</strong> The most common scenario. You will fly an ILS approach, likely in simulated IMC, to decision height. The assessor will either give you visual references at DH (land) or not (go-around). Fly the approach accurately, communicate your intentions, and make a clear decision at DH. Do not continue below DH without visual references.
+                A typical 45-minute assessment profile looks like this:
+              </p>
+              <ol className="list-decimal pl-5 space-y-2 mt-2 mb-4">
+                <li><strong>Takeoff and Standard Instrument Departure (SID):</strong> Manual flying to V2+10/V2+15 knots, managing the flap retraction schedule, and navigating the SID using VOR/NDB radials or ATC headings.</li>
+                <li><strong>General Handling:</strong> Steep turns (usually 45 degrees of bank), climbing and descending turns at specific speeds, and level-offs. This tests your basic scan and ability to trim the aircraft.</li>
+                <li><strong>Abnormal Event:</strong> An engine failure (usually after V1) or a system failure that requires you to manage the aircraft while communicating with your pilot monitoring (PM).</li>
+                <li><strong>Raw Data ILS Approach:</strong> Flying an Instrument Landing System approach down to minimums without flight directors.</li>
+                <li><strong>Go-Around:</strong> Executing a missed approach from minimums, requiring a high workload and precise pitch/power changes.</li>
+              </ol>
+            </>
+          ),
+        },
+        {
+          heading: "Why Most Candidates Fail: It Is Not the Flying",
+          content: (
+            <>
+              <p>
+                The vast majority of candidates who fail a simulator assessment do not fail because they flew a sloppy ILS approach. They fail because their CRM broke down under pressure.
               </p>
               <p>
-                <strong>Go-around:</strong> Expect at least one go-around, either from a planned missed approach or from an unexpected event (runway incursion, wind shear warning). The go-around procedure must be executed correctly and promptly. Brief the go-around procedure before the approach so you are not trying to recall it under pressure.
+                <strong>The Silent Pilot:</strong> The most common failure mode. The candidate gets overwhelmed by the aircraft, develops tunnel vision on the instruments, and stops communicating. They do not brief the approach, they do not tell the other pilot what they are doing, and they ignore callouts.
               </p>
               <p>
-                <strong>Engine failure after V1:</strong> The classic emergency scenario. After V1, the engine failure must be continued — do not reject the takeoff. Maintain directional control, rotate at Vr, establish a positive rate of climb, retract gear, and follow the engine failure procedure. Communicate with the assessor throughout.
+                <strong>The Defensive Pilot:</strong> The candidate makes an error (e.g., busts an altitude by 200 feet), the assessor points it out, and the candidate makes an excuse or gets flustered. Assessors want to see you acknowledge the error ("My fault, correcting down to 3,000"), fix it, and move on.
               </p>
               <p>
-                <strong>System malfunction:</strong> A hydraulic failure, pressurisation problem, or other system abnormality. The correct response is: aviate first, then diagnose. Do not dive into the QRH while the aircraft is deviating from its cleared altitude. Stabilise the aircraft, then work the abnormal procedure methodically.
-              </p>
-              <p>
-                <strong>TCAS RA:</strong> A traffic alert requiring an immediate vertical manoeuvre. Respond immediately and correctly: "TCAS RA — CLIMB" (or descend), disconnect the autopilot if required, and follow the RA. Inform ATC after the RA is resolved.
+                <strong>The Solo Operator:</strong> The candidate tries to do everything themselves — flying, navigating, and talking to ATC — rather than delegating tasks to the Pilot Monitoring. In a multi-crew environment, failing to use your colleague is a critical error.
               </p>
             </>
           ),
         },
         {
-          heading: "How to Prepare: A Practical Guide",
+          heading: "How to Demonstrate Excellent CRM",
           content: (
             <>
               <p>
-                Preparation for a simulator assessment should begin at least four weeks before the assessment date. Here is a structured approach:
+                To pass the assessment, you must demonstrate that you are a safe, communicative multi-crew pilot. Here is how:
               </p>
               <p>
-                <strong>Book simulator time:</strong> This is non-negotiable. You cannot prepare adequately for a full-motion simulator assessment by flying a desktop simulator. Book preparation sessions at a type rating training centre that operates the same simulator type as your assessment. Most centres offer assessment preparation packages. Expect to pay £200-500 per session — it is worth it.
+                <strong>Think out loud:</strong> Narrate your intentions. "I am going to pitch up to 15 degrees and set climb thrust." This keeps the other pilot in the loop and shows the assessor your thought process.
               </p>
               <p>
-                <strong>Review the SOPs:</strong> If the airline has published standard operating procedures (SOPs) for the aircraft type, study them. Know the callouts for each phase of flight. Know the go-around procedure by memory. Know the engine failure after V1 procedure by memory. You should not be reading checklists for these procedures during the assessment.
+                <strong>Brief thoroughly:</strong> Before an approach or departure, give a clear, concise brief. "This will be a standard takeoff. If we have a failure before V1, I will call stop and close the thrust levers. If we have a failure after V1, we will continue, climb to 1,500 feet, and I will hand over control to you while we run the checklist."
               </p>
               <p>
-                <strong>Practice thinking aloud:</strong> This is the single most effective thing you can do to improve your CRM score. During every practice session, narrate your actions and intentions continuously. "Setting 3,000 feet on the MCP. Arming the approach. Checking the ILS frequency is set. Briefing the go-around: TOGA, flaps to go-around, positive rate, gear up." It feels unnatural at first. It becomes natural with practice.
-              </p>
-              <p>
-                <strong>Debrief every session:</strong> After each practice session, debrief with your instructor. Identify the three things you did well and the three things you need to improve. Focus your next session on the improvements. Do not just fly the same scenarios repeatedly without reflection.
+                <strong>Acknowledge and correct:</strong> If you make a mistake, call it out yourself before the assessor does. "Speed is dropping, adding thrust." This shows excellent situational awareness.
               </p>
             </>
           ),
         },
         {
-          heading: "On the Day: Managing Nerves and Performing Under Pressure",
+          heading: "How to Prepare",
           content: (
             <>
               <p>
-                Simulator assessments are stressful. Every candidate feels nervous. The assessors know this and account for it. What they are assessing is not whether you feel nervous — it is how you perform despite feeling nervous.
+                Do not walk into an airline simulator assessment having never flown a jet simulator. The inertia and pitch/power couples of an A320 or B737 are completely different from a Piper Seneca.
               </p>
               <p>
-                <strong>Arrive early and brief thoroughly:</strong> Use the pre-flight briefing time fully. Brief the departure, the expected routing, the approach, and the go-around procedure. Ask the assessor (as your first officer) to confirm the briefing. This establishes the professional tone for the session and demonstrates good CRM from the start.
+                <strong>Book a prep session:</strong> Book 2–3 hours in a fixed-base or full-motion simulator of the type you will be assessed in. Many training centres (like Virtual Aviation or Jet Masterclass in the UK) offer specific "airline assessment prep" sessions with current airline captains. It will cost £500–£1,000, but it is the best investment you can make.
               </p>
               <p>
-                <strong>If you make an error, recover and move on:</strong> Every candidate makes errors in simulator assessments. The assessors know this. What they are watching is how you recover. Acknowledge the error ("I've deviated from the cleared altitude — correcting now"), correct it, and move on. Do not dwell on it. Do not apologise repeatedly. Do not let one error cascade into a loss of situational awareness.
-              </p>
-              <p>
-                <strong>Communicate even when you are busy:</strong> The natural response to a high-workload situation is to go silent and focus. Resist this. Even a brief "I'm managing the engine failure — standby" keeps the assessor informed and demonstrates workload management. Silence is interpreted as loss of situational awareness.
-              </p>
-              <p>
-                <strong>After the assessment:</strong> Ask for feedback. Not all airlines offer it, but those that do provide valuable information about your performance. If you are unsuccessful, use the feedback to guide your preparation for the next attempt. The waiting period before reapplication is an opportunity, not a punishment.
+                <strong>Learn the pitch and power settings:</strong> Ask your prep instructor for the standard pitch and power settings for the aircraft. (e.g., in a B737, level flight at 210 knots clean is roughly 6 degrees nose up and 60% N1). If you know these numbers, you can set them and the aircraft will roughly do what you want, freeing up your mental capacity for navigation and CRM.
               </p>
             </>
           ),
         },
+        {
+          heading: "References",
+          content: (
+            <>
+              <p className="text-xs text-white/50 space-y-1">
+                [1] Airmappr. "Simulator Assessment Guide: What Airlines Test." <em>Career Resources</em>.<br/>
+                [2] PPRuNe Forums. "The simulator assessment test as part of airline interview." <em>Professional Pilot Discussions</em>.
+              </p>
+            </>
+          ),
+        }
+      ]}
+      relatedGuides={[
+        { title: "Airline Pilot Interview Guide", href: "/guides/airline-pilot-interview", time: "12 min" },
+        { title: "Pilot Aptitude Test Preparation", href: "/guides/pilot-aptitude-test-uk", time: "10 min" },
+        { title: "Type Rating: What It Costs", href: "/guides/pilot-type-rating-uk", time: "11 min" },
       ]}
     />
   );

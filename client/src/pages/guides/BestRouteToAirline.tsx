@@ -1,4 +1,5 @@
 import GuideLayout from "@/components/GuideLayout";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
 const BestRouteToAirline = () => {
   return (
@@ -217,6 +218,7 @@ const BestRouteToAirline = () => {
           title: "UK Airline Pilot Salary Guide 2025",
           href: "/guides/AirlinePilotSalary",          time: "8 min" },
       ]}
+    scopeBanner={<><GuideScopeBanner scope="Routes and timelines in this guide are based on the UK aviation market (CAA/EASA licensing)." usHref="/us/guides/how-to-become-a-pilot" usLabel="View USA version →" globalHref="/schools" globalLabel="Browse global schools →" /></>}
     />
   );
 };

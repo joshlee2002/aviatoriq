@@ -160,7 +160,7 @@ export default function BestFlightSchoolsUSA() {
               </p>
               <h3 className="text-xl font-semibold mb-2">Medical Certificates and Endorsements</h3>
               <p className="mb-4">
-                Obtaining and maintaining an FAA medical certificate is a prerequisite for flight training. The cost of these exams can range from $100 to $200, depending on the class of medical certificate required. Additionally, various endorsements and administrative fees may arise throughout the training process.
+                Obtaining and maintaining an FAA medical certificate is a prerequisite for flight training. The cost of these exams can range from $100 to $200, depending on the class of medical certificate required. various endorsements and administrative fees may arise throughout the training process.
               </p>
             </div>
           ),

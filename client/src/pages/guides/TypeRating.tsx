@@ -1,24 +1,26 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
-const TypeRating = () => {
+export default function TypeRating() {
   return (
     <GuideLayout
       title="Pilot Type Ratings UK: What They Are, What They Cost, and How to Get One (2026)"
-      subtitle="Everything you need to know about type ratings — A320, B737, and beyond — including self-funded vs airline-sponsored options."
+      subtitle="Everything you need to know about type ratings — A320, B737, and beyond — including self-funded vs airline-sponsored options and the training bond reality."
       canonical="/guides/pilot-type-rating-uk"
       metaDescription="What is a pilot type rating? How much does an A320 or B737 type rating cost in the UK in 2026? Self-funded vs airline-sponsored. Complete guide for aspiring airline pilots."
-      faqSchema={[
-        { question: "What is a type rating for pilots?", answer: "A type rating is an additional qualification that authorises a pilot to fly a specific aircraft type. Commercial airliners require a type rating because they are too complex and expensive to train on during initial pilot training. Common type ratings include the A320 family and B737 family." },
-        { question: "How much does a type rating cost in the UK?", answer: "A self-funded type rating costs £20,000–£35,000 in the UK in 2026, depending on the aircraft type and training provider. An A320 type rating typically costs £25,000–£30,000. Some airlines sponsor type ratings in exchange for a bond." },
-        { question: "Do I need a type rating before applying to airlines?", answer: "Not always. Some airlines hire pilots without a type rating and provide training as part of their induction. However, having a type rating significantly improves your chances of being hired, as it reduces the airline's training costs. In a competitive market, a self-funded type rating can be the deciding factor." },
-        { question: "Which type rating should I get?", answer: "The A320 family (A319/A320/A321) is the most widely used narrow-body aircraft in Europe and gives you the widest range of job opportunities. The B737 family is also widely used. Your choice should be based on which aircraft the airlines you want to work for operate." },
-        { question: "How long does a type rating take?", answer: "A type rating course typically takes 6–8 weeks, including ground school, simulator training, and a skills test. The course is intensive and requires full-time commitment." },
-      ]}
-      readTime="7 min read"
+      readTime="11 min read"
       heroImage="/manus-storage/type-rating_e790e1aa.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
+      scopeBanner={<GuideScopeBanner scope="Type rating costs and processes in this guide are based on UK/EASA regulations." usHref="/us/guides/type-rating-usa" usLabel="View USA type rating guide →" />}
+      faqSchema={[
+        { question: "What is a type rating for pilots?", answer: "A type rating is an additional qualification that authorises a pilot to fly a specific aircraft type. Commercial airliners require a type rating because they are too complex and expensive to train on during initial pilot training. Common type ratings include the A320 family and B737 family." },
+        { question: "How much does a type rating cost in the UK?", answer: "A self-funded type rating costs £20,000–£35,000 in the UK in 2026, depending on the aircraft type and training provider. An A320 type rating typically costs £25,000–£30,000. Some airlines sponsor type ratings in exchange for a bond." },
+        { question: "Do I need a type rating before applying to airlines?", answer: "Not always. Some airlines hire pilots without a type rating and provide training as part of their induction. However, having a type rating significantly improves your chances of being hired, as it reduces the airline's training costs." },
+        { question: "Which type rating should I get?", answer: "The A320 family (A319/A320/A321) is the most widely used narrow-body aircraft in Europe and gives you the widest range of job opportunities. The B737 family is also widely used. Your choice should be based on which aircraft the airlines you want to work for operate." },
+        { question: "How long does a type rating take?", answer: "A type rating course typically takes 6–8 weeks, including ground school, simulator training, and a skills test. The course is intensive and requires full-time commitment." }
+      ]}
       sections={[
         {
           heading: "What Is a Type Rating and Why Do You Need One?",
@@ -27,99 +29,128 @@ const TypeRating = () => {
               <p>
                 A type rating is an endorsement on your pilot licence that authorises you to fly a specific aircraft type. All commercial airliners — the Airbus A320, Boeing 737, Embraer E-Jets, and others — require a type rating because they are too complex, expensive, and safety-critical to be included in initial pilot training.
               </p>
-              <img src="/manus-storage/a320-simulator_8f3e2c1a.jpg" alt="A320 type rating simulator" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/b737-cockpit_4e9f2b7a.jpg" alt="Boeing 737 cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                Your ATPL (frozen or full) qualifies you to act as a commercial pilot. Your type rating qualifies you to fly a specific aircraft. Without both, you cannot work as an airline first officer. The type rating is the final, and often most expensive, step between your ATPL and your first airline job.
+                When you graduate from flight school with a frozen ATPL, you are qualified to fly multi-engine aircraft under instrument flight rules. You are not qualified to fly an Airbus A320 or a Boeing 737. Before you can sit in the right seat of a commercial airliner, you must complete a type rating course for that specific aircraft.
+              </p>
+              <p>
+                The type rating is the final financial hurdle of pilot training — and for many newly qualified pilots, it is the most stressful one. You have already spent £80,000–£130,000 on your ATPL training, and now you face a further £20,000–£35,000 for a type rating, with no guarantee of a job at the end.
               </p>
             </>
           ),
         },
         {
-          heading: "Type Rating Costs in 2026",
+          heading: "Type Rating Costs in the UK in 2026",
           content: (
             <>
-              <div style={{ overflowX: "auto" }}>
-                <table style={{ width: "100%", borderCollapse: "collapse", margin: "20px 0" }}>
-                  <thead>
-                    <tr style={{ backgroundColor: "oklch(0.18 0.08 250)" }}>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Aircraft Type</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Self-Funded Cost</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>Duration</th>
-                      <th style={{ border: "1px solid oklch(1 0 0 / 0.1)", padding: "10px", textAlign: "left", color: "oklch(0.85 0.04 240)" }}>UK Airlines Using</th>
+              <p>
+                Type rating costs vary by aircraft type and training provider. Here are the realistic 2026 costs for the most common type ratings in the UK market.
+              </p>
+              
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Aircraft Type</th>
+                      <th className="px-4 py-3 font-semibold">Self-Funded Cost (UK)</th>
+                      <th className="px-4 py-3 font-semibold">Duration</th>
+                      <th className="px-4 py-3 font-semibold">Key UK Operators</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    {[
-                      ["Airbus A320 family", "£25,000–£30,000", "6–8 weeks", "easyJet, BA, Jet2, TUI, Wizz"],
-                      ["Boeing 737 family", "£22,000–£28,000", "6–8 weeks", "Ryanair, TUI, Jet2"],
-                      ["ATR 42/72", "£15,000–£20,000", "5–7 weeks", "Loganair, Eastern, regional"],
-                      ["Embraer E-Jet", "£18,000–£24,000", "6–8 weeks", "BA CityFlyer, Flybe"],
-                      ["Bombardier Q400", "£16,000–£22,000", "5–7 weeks", "Loganair, regional"],
-                    ].map(([type, cost, dur, airlines]) => (
-                      <tr key={type}>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.85 0.04 240)", fontWeight: "600" }}>{type}</td>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>{cost}</td>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>{dur}</td>
-                        <td style={{ border: "1px solid oklch(1 0 0 / 0.08)", padding: "10px", color: "oklch(0.75 0.04 240)" }}>{airlines}</td>
-                      </tr>
-                    ))}
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Airbus A320 family</td>
+                      <td className="px-4 py-3">£25,000 – £32,000</td>
+                      <td className="px-4 py-3">6–8 weeks</td>
+                      <td className="px-4 py-3">easyJet, Wizz Air, British Airways</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Boeing 737 family</td>
+                      <td className="px-4 py-3">£22,000 – £30,000</td>
+                      <td className="px-4 py-3">6–8 weeks</td>
+                      <td className="px-4 py-3">Ryanair, Jet2, TUI</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Embraer E-Jets</td>
+                      <td className="px-4 py-3">£18,000 – £25,000</td>
+                      <td className="px-4 py-3">5–7 weeks</td>
+                      <td className="px-4 py-3">Loganair, BA CityFlyer</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">ATR 72</td>
+                      <td className="px-4 py-3">£15,000 – £20,000</td>
+                      <td className="px-4 py-3">4–6 weeks</td>
+                      <td className="px-4 py-3">Loganair, Eastern Airways</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
+
               <p>
-                The A320 type rating is the most valuable investment for most UK candidates because it opens the widest range of opportunities. easyJet, British Airways, Jet2, TUI, and Wizz Air all operate A320-family aircraft, meaning an A320 type rating is accepted by the majority of UK airlines.
+                The A320 type rating is the most valuable in the UK market because it opens doors to easyJet, Wizz Air, British Airways, and Vueling — four of the largest operators in Europe. If you are going to self-fund a type rating, the A320 gives you the widest range of options.
               </p>
             </>
           ),
         },
         {
-          heading: "Self-Funded vs Airline-Sponsored Type Ratings",
+          heading: "Self-Funded vs Airline-Sponsored: The Real Trade-Off",
           content: (
             <>
               <p>
-                There are two ways to obtain a type rating: self-fund it before applying to airlines, or get an airline to sponsor it as part of their hiring process.
+                This is the most important decision you will face at the end of your training. Should you pay £30,000 for your own type rating, or should you wait for an airline to sponsor it?
               </p>
               <p>
-                <strong>Self-funded type rating:</strong> You pay £25,000–£30,000 for an A320 or B737 type rating at an approved training centre (CAE, L3Harris, Lufthansa Aviation Training). You then apply to airlines with a type rating already on your licence. This significantly increases your chances of being hired, as the airline's training costs are lower. The downside is the upfront cost.
+                <strong>Self-fund if:</strong> You have a specific target airline that does not offer sponsorship. You want maximum flexibility to apply to any airline without being tied to a bond. You have the financial means (savings or access to low-interest financing). You want to move quickly and not wait for an airline to open a bonded programme.
               </p>
               <p>
-                <strong>Airline-sponsored type rating:</strong> Some airlines hire pilots without a type rating and provide training as part of their induction. This is more common during pilot shortages, when airlines cannot afford to be selective. The training is typically bonded — you agree to stay with the airline for 3–5 years or repay the cost.
+                <strong>Wait for sponsorship if:</strong> You do not have £30,000 available. You are comfortable committing to a specific airline for 2–3 years. The bond terms are reasonable (prorated repayment, no interest on the bond amount). You are applying to airlines that actively offer bonded type ratings (Ryanair, Jet2, easyJet).
               </p>
               <p>
-                In the current market (2026), both routes are viable. If you have the funds, a self-funded type rating gives you more flexibility and a stronger application. If you do not, applying to airlines that offer sponsored type ratings is a legitimate alternative.
+                The most common mistake is treating sponsorship as inherently better. A bonded type rating at Ryanair means you are committed to Ryanair for 3 years. If you perform well and want to move to easyJet or British Airways after 18 months, you cannot without repaying a significant portion of the bond. Self-funding gives you freedom.
               </p>
             </>
           ),
         },
         {
-          heading: "Where to Do Your Type Rating",
+          heading: "Training Bonds: What the Fine Print Says",
           content: (
             <>
               <p>
-                Type rating training must be conducted at a CAA-approved Type Rating Training Organisation (TRTO). The main providers in the UK and Europe are:
+                Most airline training bonds in the UK work on a prorated basis. If the bond is for 3 years and you leave after 18 months, you repay 50% of the training cost. If you leave after 2 years, you repay 33%. After the bond period, you owe nothing.
               </p>
               <p>
-                <strong>CAE (Oxford, Amsterdam, Madrid):</strong> The world's largest aviation training company. CAE operates full-flight simulators for all major aircraft types and is approved by virtually every airline. Their type rating courses are comprehensive and well-regarded. Costs are at the higher end of the market.
+                The key things to check in any bond agreement: the total bond amount (some airlines include not just the type rating but also initial operating experience costs, pushing the total to £50,000+), whether the bond accrues interest, what triggers repayment (resignation vs. termination), and whether the bond is waived if the airline makes you redundant.
               </p>
               <p>
-                <strong>L3Harris CTC (Southampton):</strong> One of the UK's leading type rating providers, with strong airline relationships. L3Harris has a good track record of placing graduates into airline jobs.
+                The opportunity cost of a bond is real. Staying at a regional airline for 3 years when you could have moved to a mainline carrier after 18 months can cost £30,000–£60,000 in foregone salary. Run the numbers before signing.
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "The Type Rating Course: What to Expect",
+          content: (
+            <>
+              <p>
+                A type rating course is typically 6–8 weeks of intensive full-time training. It is divided into three phases:
               </p>
               <p>
-                <strong>Lufthansa Aviation Training (Munich, Frankfurt):</strong> High-quality training with strong European airline connections. Worth considering if you are targeting European carriers.
+                <strong>Ground School (2–3 weeks):</strong> You study the aircraft systems in exhaustive detail — hydraulics, electrics, fuel, flight controls, pressurisation, and emergency procedures. The ground school exam is multiple-choice and requires a minimum pass mark of 75%.
               </p>
               <p>
-                <strong>Bartolini Air (Poland):</strong> A cost-effective option for type rating training, particularly for the A320. Bartolini has a strong relationship with Ryanair and other European LCCs.
+                <strong>Simulator Training (3–4 weeks):</strong> You complete a series of simulator sessions in a Level D full-flight simulator (the highest certification level). These sessions cover normal operations, abnormal procedures, and emergency drills. The final simulator session is your type rating skills test, conducted with a CAA-approved examiner.
               </p>
               <p>
-                Use the <Link href="/roadmap">AviatorIQ Roadmap Generator</Link> to see where a type rating fits in your specific training plan and get a cost estimate for your chosen route.
+                <strong>Line Training:</strong> After passing your type rating, you complete a period of supervised line flying with an experienced captain before you are released to operate independently. Line training is typically funded by the airline that hires you.
               </p>
             </>
           ),
         },
       ]}
+      relatedGuides={[
+        { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
+        { title: "Integrated vs Modular ATPL", href: "/guides/integrated-vs-modular", time: "9 min" },
+        { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "13 min" },
+      ]}
     />
   );
-};
-
-export default TypeRating;
+}

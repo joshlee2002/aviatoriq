@@ -145,6 +145,11 @@ import AdhdFaaMedical from "./pages/guides/AdhdFaaMedical";
 import AtpCertificateUSA from "./pages/guides/AtpCertificateUSA";
 import CfiCareerUSA from "./pages/guides/CfiCareerUSA";
 
+// New regional guides (Australia, Canada, Europe)
+import HowToBecomePilotAustralia from "./pages/guides/HowToBecomePilotAustralia";
+import HowToBecomePilotCanada from "./pages/guides/HowToBecomePilotCanada";
+import HowToBecomePilotEurope from "./pages/guides/HowToBecomePilotEurope";
+
 // New section pages
 import Stories from "./pages/Stories";
 import Jobs from "./pages/Jobs";
@@ -198,6 +203,9 @@ function Router() {
 
       {/* Guides */}
       <Route path="/guides" component={GuidesIndex} />
+      <Route path="/guides/how-to-become-a-pilot-australia" component={HowToBecomePilotAustralia} />
+      <Route path="/guides/how-to-become-a-pilot-canada" component={HowToBecomePilotCanada} />
+      <Route path="/guides/how-to-become-a-pilot-europe" component={HowToBecomePilotEurope} />
       <Route path="/guides/how-to-become-a-pilot" component={HowToBecomePilot} />
       <Route path="/guides/pilot-training-costs" component={PilotTrainingCosts} />
       <Route path="/guides/integrated-vs-modular" component={IntegratedVsModular} />

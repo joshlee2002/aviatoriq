@@ -1,150 +1,175 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
-const ReadyToStartTraining = () => {
+export default function ReadyToStartTraining() {
   return (
     <GuideLayout
-      title="Am I Ready to Start Pilot Training? A Realistic Self-Assessment"
-      subtitle="The 8 questions you need to answer honestly before committing money to flight training — from someone who has seen what happens when people skip this step."
+      title="Am I Ready to Start Pilot Training? 8 Questions to Answer Honestly"
+      subtitle="Before you commit £100,000 to flight training, answer these 8 questions honestly. They will tell you whether you are genuinely ready — or whether you need to prepare more."
       canonical="/guides/am-i-ready-to-start-pilot-training"
-      metaDescription="Are you ready to start pilot training? This guide covers the 8 key questions every aspiring pilot should answer before committing money — medical, finances, aptitude, and commitment."
+      metaDescription="Am I ready to start pilot training? 8 honest questions to answer before committing to flight school. Covers medical, finances, aptitude, motivation, and lifestyle."
+      readTime="10 min read"
+      heroImage="/manus-storage/ready-to-train_9d4c2b8e.jpg"
+      ctaHref="/quiz"
+      ctaText="Take the career readiness assessment"
+      scopeBanner={<GuideScopeBanner scope="This guide references UK training costs and CAA/EASA medical standards. The self-assessment questions apply globally." />}
       faqSchema={[
         { question: "How do I know if I am ready to start pilot training?", answer: "The key readiness indicators are: a valid Class 1 medical, financial plan covering full training costs plus living expenses, realistic understanding of the time commitment, and evidence of aptitude through ground school study or a trial flight." },
         { question: "Should I do a trial flight before committing to training?", answer: "Yes, absolutely. A trial flight costs £150–£250 and gives you 30–60 minutes in a light aircraft. It is the single best way to test whether you enjoy the physical experience of flying before committing tens of thousands of pounds." },
-        { question: "What maths do I need for pilot training?", answer: "You need solid GCSE-level maths — fractions, percentages, basic algebra, and mental arithmetic. ATPL theory exams include navigation calculations and meteorology that require comfort with numbers. You do not need A-level maths, but you must be comfortable with numbers." },
-        { question: "How long should I study before starting pilot training?", answer: "There is no required study period, but candidates who have done some preparation — reading aviation books, studying basic meteorology and navigation, or completing an online ground school taster — consistently perform better in the early stages of training." },
-        { question: "What is the dropout rate for pilot training?", answer: "Dropout rates vary by school and route. Integrated programmes typically have completion rates of 70–85%. Modular training has a higher dropout rate, estimated at 30–40%, primarily due to financial pressure, life changes, or loss of motivation over the longer timeframe." },
+        { question: "What maths do I need for pilot training?", answer: "You need solid GCSE-level maths — fractions, percentages, basic algebra, and mental arithmetic. ATPL theory exams include navigation calculations and meteorology that require comfort with numbers. You do not need A-level maths, but you must be comfortable with numbers." }
       ]}
-      readTime="7 min read"
-      heroImage="/manus-storage/ready-training_2e0e9694.jpg"
-      ctaHref="/quiz"
-      ctaText="Take the full readiness assessment"
       sections={[
         {
-          heading: "Why This Question Matters More Than You Think",
+          heading: "Why This Guide Exists",
           content: (
             <>
               <p>
-                Every year, hundreds of people in the UK start pilot training without being genuinely ready. Not because they lack talent or passion — but because they have not honestly assessed whether the timing, finances, and circumstances are right. The result is dropout, debt, and disappointment.
+                Flight schools have a financial incentive to tell you that you are ready to start training. They will not tell you that your finances are too thin, that your aptitude test scores need work, or that your medical history might be a problem. That is not their job.
               </p>
-              <img src="/manus-storage/ground-school-classroom_b43b6fc8.jpg" alt="Ground school training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/solo-flight_ac4d5964.jpg" alt="Solo flight" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                This guide is not designed to discourage you. It is designed to help you start at the right time, with the right preparation, so that when you do commit, you succeed. The 8 questions below are the ones that matter most.
+                This guide asks the questions that flight schools do not. Answer them honestly — not optimistically, not pessimistically, but honestly. If you can answer all 8 positively, you are ready. If you cannot, this guide will tell you what to fix first.
               </p>
             </>
           ),
         },
         {
-          heading: "Question 1: Have You Done a Trial Flight?",
+          heading: "Question 1: Have You Passed a Class 1 Medical?",
           content: (
             <>
               <p>
-                This sounds obvious, but a surprising number of people commit to training without ever having been in a light aircraft. Flying a commercial airliner feels very different from watching aviation videos online. The physical sensations, the workload, the noise, and the responsibility are all things you need to experience before committing £60,000–£130,000.
+                This is the most important question on the list, and it must be answered before any other. A Class 1 Medical Certificate is a legal requirement for commercial flying. If you cannot obtain one, you cannot fly commercially — regardless of how much money you spend on training.
               </p>
               <p>
-                A trial flight at a local flying club costs £150–£250 and takes about an hour. You will get 30–45 minutes in the air with an instructor, handle the controls, and get a genuine feel for whether this is something you want to do every day for 30 years. If you have not done this, do it before reading any further.
+                Do not assume you will pass. Conditions that seem minor — a history of depression, ADHD, colour blindness, or elevated blood pressure — can cause significant delays or permanent disqualification. The medical costs £500–£800 and takes a full day. If you have any doubt about your medical fitness, get the medical first.
+              </p>
+              <p>
+                <strong>If your answer is no:</strong> Book a Class 1 Medical before you do anything else. Do not spend a single pound on flight training until you have a valid Class 1.
               </p>
             </>
           ),
         },
         {
-          heading: "Question 2: Do You Have a Valid Class 1 Medical?",
+          heading: "Question 2: Do You Have a Realistic Financial Plan?",
           content: (
             <>
               <p>
-                Or at minimum, have you had an informal pre-assessment with an Aviation Medical Examiner? This is non-negotiable. Do not spend money on training before you know you can pass the medical.
+                Integrated ATPL training costs £80,000–£130,000. Modular training costs £55,000–£85,000. These figures do not include living costs during training, type rating costs, or the income you will lose if you train full-time.
               </p>
               <p>
-                The Class 1 medical costs £350–£500 and takes half a day. If you pass, you have certainty. If there are borderline issues, you can get a realistic assessment of your prospects before committing. See our <Link href="/guides/class-1-medical-disqualifiers">complete guide to Class 1 medical disqualifiers</Link> for a full breakdown of what the CAA assesses.
+                A realistic financial plan means: you know exactly how much training will cost, you have secured the funding (savings, loan, or a combination), you have modelled the loan repayments against your expected first-year salary, and you have a contingency for cost overruns (extra hours, failed checkrides).
+              </p>
+              <p>
+                <strong>If your answer is no:</strong> Spend time building your financial plan before committing to a school. Use the AviatorIQ Cost Calculator to model your specific scenario.
               </p>
             </>
           ),
         },
         {
-          heading: "Question 3: Do You Have a Realistic Financial Plan?",
+          heading: "Question 3: Have You Taken a Trial Flight?",
           content: (
             <>
               <p>
-                Not just "I think I can get a loan" — a specific, costed plan that covers training fees, living costs during training, exam resits, a type rating, and a financial buffer for unexpected costs. The total cost of becoming an airline-ready pilot in the UK is typically £110,000–£160,000 when all costs are included.
+                A trial flight costs £150–£250 and takes about an hour. It will tell you more about whether you want to be a pilot than any amount of online research.
               </p>
               <p>
-                If you cannot articulate exactly how you will fund this, and what your monthly repayments will be on a first officer's salary, you are not ready to start. Use the <Link href="/calculator">AviatorIQ Cost Calculator</Link> to build your specific financial model.
+                Many people discover that the reality of sitting in a small aircraft, wearing headphones, and being responsible for the controls is very different from their imagination of it. Some love it immediately. Some find it uncomfortable or anxiety-inducing. Both reactions are valid — but you need to know which one applies to you before you commit £100,000.
+              </p>
+              <p>
+                <strong>If your answer is no:</strong> Book a trial flight at your nearest flying club or flight school. This is the cheapest and most informative investment you can make.
               </p>
             </>
           ),
         },
         {
-          heading: "Question 4: Are You Comfortable With Maths and Physics?",
+          heading: "Question 4: Have You Practised Aptitude Tests?",
           content: (
             <>
               <p>
-                ATPL theory exams cover 14 subjects including navigation, meteorology, flight planning, and aircraft performance. These subjects require comfort with numbers — not A-level maths, but solid GCSE-level arithmetic, fractions, percentages, and basic trigonometry.
+                Airline aptitude tests (PILAPT, Compass, Saville) are the first filter in airline selection. Many technically capable pilots fail at this stage because they have never practised the specific skills being tested — multi-tasking, spatial reasoning, and psychomotor coordination.
               </p>
               <p>
-                If you struggled with maths at school, that does not disqualify you — but it does mean you need to invest in preparation before starting. Many candidates do a refresher maths course or work through a GCSE maths revision book before beginning ATPL theory. The candidates who fail ATPL exams most often are those who underestimated the mathematical content.
+                These skills are learnable with practice. Candidates who practise consistently for 4–6 weeks before their tests perform significantly better than those who do not. If you are planning to apply to a cadet programme or an airline, start practising aptitude tests now — not the week before your assessment.
+              </p>
+              <p>
+                <strong>If your answer is no:</strong> Start practising immediately. Use platforms like PilotAptitudeTest.com or the PILAPT practice software. Make it a daily habit.
               </p>
             </>
           ),
         },
         {
-          heading: "Question 5: Can You Commit the Required Time?",
+          heading: "Question 5: Do You Understand What the Career Actually Involves?",
           content: (
             <>
               <p>
-                Integrated training requires 18–24 months of full-time commitment. You cannot work alongside it. Modular training is more flexible, but still requires consistent effort over 3–5 years. Weekends, evenings, and holidays will be consumed by study and flying.
+                The romantic image of the pilot career — exotic destinations, glamorous lifestyle, respected profession — is real, but it is only part of the picture.
               </p>
               <p>
-                Think honestly about your current life commitments. Do you have a partner who understands what this will mean for your relationship? Children? A mortgage? A business? None of these are disqualifiers, but they all need to be factored into your plan. The candidates who drop out most often are those who underestimated the time commitment and its impact on their personal lives.
+                The reality also includes: shift work (early starts, late finishes, night flights), irregular schedules that make social and family planning difficult, time away from home (especially in the early years), constant recurrent training and simulator checks, the ever-present possibility of a medical issue ending your career, and the financial pressure of loan repayments on a first officer's salary.
+              </p>
+              <p>
+                None of these are reasons not to pursue the career. But they are reasons to go in with eyes open. Talk to working pilots. Read forums like PPRuNe. Shadow a pilot for a day if you can arrange it.
+              </p>
+              <p>
+                <strong>If your answer is no:</strong> Do more research before committing. The career is genuinely rewarding for the right person — but it is not for everyone.
               </p>
             </>
           ),
         },
         {
-          heading: "Question 6: Have You Researched the Job Market?",
+          heading: "Question 6: Is Your Family Supportive?",
           content: (
             <>
               <p>
-                The pilot shortage in Europe is real, and the job market for qualified pilots in 2026 is strong. But "strong" does not mean "guaranteed." You will still need to pass airline selection processes, perform well in simulator assessments, and compete with other candidates for first officer roles.
+                Pilot training is demanding on relationships. If you are training full-time, you will be unavailable for 18–24 months. If you are training modularly, you will be spending weekends and evenings studying and flying for 3–5 years.
               </p>
               <p>
-                Research the airlines you want to work for. Understand their selection processes. Read forums like PPRuNe and the Airline Pilot Club. Talk to pilots who have recently gone through airline selection. The more you understand the destination, the better prepared you will be for the journey.
+                If you have a partner, they need to understand and accept this commitment. If you have children, you need a childcare plan for the training period. If your family is not supportive, the training will be significantly harder — and the subsequent career (with its irregular schedules and time away from home) will put further strain on relationships that are already under pressure.
+              </p>
+              <p>
+                <strong>If your answer is no:</strong> Have the conversation with your family before you commit. This is not a reason to abandon the dream, but it is a reason to make sure everyone is aligned.
               </p>
             </>
           ),
         },
         {
-          heading: "Question 7: Do You Have a Backup Plan?",
+          heading: "Question 7: Have You Researched and Visited Your Chosen School?",
           content: (
             <>
               <p>
-                What happens if you fail a medical exam? What if you pass all your training but struggle to find an airline job in a market downturn? What if a personal circumstance forces you to pause training for a year?
+                Flight schools go bust. They have done so repeatedly over the past decade, leaving students with incomplete training, lost deposits, and no recourse. Before you hand over £100,000, you must verify the financial health of the school you are choosing.
               </p>
               <p>
-                Having a backup plan is not pessimism — it is risk management. The candidates who handle setbacks best are those who have thought through the contingencies in advance. Your backup plan might be flight instruction, corporate aviation, or returning to your previous career. Having one does not make failure more likely; it makes you more resilient if things do not go exactly to plan.
+                Check the school's Companies House filing. Look at their cash position and their liabilities. Read recent student reviews on forums like PPRuNe. Visit the school in person and speak to current students. Ask about their aircraft availability, instructor-to-student ratio, and employment outcomes.
+              </p>
+              <p>
+                <strong>If your answer is no:</strong> Do not commit to any school without visiting it first and doing financial due diligence. The extra time is worth it.
               </p>
             </>
           ),
         },
         {
-          heading: "Question 8: Is Your Motivation Intrinsic?",
+          heading: "Question 8: Are You Applying to Cadet Programmes First?",
           content: (
             <>
               <p>
-                This is the most important question and the hardest to answer honestly. Are you pursuing this because you genuinely love flying and cannot imagine doing anything else? Or are you pursuing it because of the salary, the status, the uniform, or because someone else thinks it would be a good idea?
+                If you are under 40, you should apply to airline cadet programmes before committing to self-funded training. Cadet programmes (BA Speedbird Academy, Jet2 FlightPath, easyJet Generation Pilot) offer a conditional job offer before you start training — the single most valuable thing in pilot training.
               </p>
               <p>
-                Extrinsic motivations are not enough to sustain you through 14 ATPL exams, failed check rides, financial stress, and the grinding early years of an airline career. The pilots who succeed long-term are those who would fly even if the pay were lower — because the act of flying itself is what drives them.
+                The acceptance rates are low (under 1% for BA Speedbird), but the cost of applying is zero. If you are accepted, you have a guaranteed job. If you are rejected, you can proceed with self-funded training. There is no downside to applying.
               </p>
               <p>
-                If you can answer yes to most of these questions, you are likely ready to start. Take the <Link href="/quiz">AviatorIQ Career Readiness Assessment</Link> for a more detailed, personalised evaluation of your readiness across all dimensions.
+                <strong>If your answer is no:</strong> Apply to cadet programmes before committing to self-funded training. Use the <Link href="/tools/cadet-eligibility">Cadet Eligibility Checker</Link> to see which programmes you are eligible for.
               </p>
             </>
           ),
         },
+      ]}
+      relatedGuides={[
+        { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
+        { title: "Class 1 Medical Guide", href: "/guides/class-1-medical", time: "5 min" },
+        { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "13 min" },
       ]}
     />
   );
-};
-
-export default ReadyToStartTraining;
+}

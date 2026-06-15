@@ -142,7 +142,10 @@ const RESULT_COPY = {
 };
 
 const DISCLAIMER =
-  "This tool is for general guidance only and does not constitute medical advice. Only a CAA-approved Aeromedical Examiner (AME) can assess your eligibility for a Class 1 medical certificate. Always consult a qualified AME before making financial commitments to pilot training.";
+  "This tool is for general guidance only and does not constitute medical advice. Only a qualified Aeromedical Examiner (AME) approved by your national aviation authority can assess your eligibility for a pilot medical certificate. Always consult a qualified AME before making financial commitments to pilot training.";
+
+const SCOPE_NOTE =
+  "This tool is based on UK CAA / EASA Class 1 medical standards. If you are training in the USA, Australia, Canada, or another country, your national authority (FAA, CASA, Transport Canada, etc.) may have different standards. The general health principles are similar worldwide, but specific rules vary — always check with your local aviation authority.";
 
 export default function MedicalCheck() {
   const [step, setStep] = useState(0);
@@ -177,14 +180,14 @@ export default function MedicalCheck() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="Class 1 Medical Readiness Check | AviatorIQ"
-        description="Answer 7 questions and find out if your health profile is likely to be compatible with a CAA Class 1 medical certificate. Free, confidential, no registration required."
+        title="Pilot Medical Readiness Check | AviatorIQ"
+        description="Answer 7 questions and find out if your health profile is likely to be compatible with a pilot medical certificate. Based on CAA/EASA Class 1 standards. Free, confidential, no registration required."
         canonical="/tools/class-1-medical-check"
         schema={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "Class 1 Medical Readiness Check",
-          description: "Free tool to assess whether your health profile is compatible with a CAA Class 1 medical certificate",
+          name: "Pilot Medical Readiness Check",
+          description: "Free tool to assess whether your health profile is compatible with a pilot medical certificate (based on CAA/EASA Class 1 standards)",
           url: "https://aviatoriq.com/tools/class-1-medical-check",
           applicationCategory: "HealthApplication",
         }}
@@ -200,11 +203,18 @@ export default function MedicalCheck() {
                 <Heart className="w-7 h-7 text-red-500" />
               </div>
               <h1 className="font-display font-bold text-2xl md:text-3xl text-[var(--color-navy)] mb-3">
-                Class 1 Medical Readiness Check
+                Pilot Medical Readiness Check
               </h1>
               <p className="text-[var(--color-muted-foreground)] mb-4 max-w-md mx-auto">
-                The Class 1 medical is the biggest unknown for many aspiring pilots. Answer 7 questions and find out if your health profile is likely to be compatible — before you commit to expensive training.
+                The pilot medical is the biggest unknown for many aspiring pilots. Answer 7 questions and find out if your health profile is likely to be compatible — before you commit to expensive training.
               </p>
+              {/* Scope note for non-UK/EU users */}
+              <div className="p-4 rounded-xl bg-blue-50 border border-blue-200 text-left mb-4 max-w-md mx-auto">
+                <div className="flex items-start gap-2.5">
+                  <Info className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <p className="text-xs text-blue-800"><strong>Scope:</strong> {SCOPE_NOTE}</p>
+                </div>
+              </div>
               <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-left mb-8 max-w-md mx-auto">
                 <div className="flex items-start gap-2.5">
                   <Info className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />

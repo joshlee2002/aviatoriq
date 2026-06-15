@@ -212,10 +212,16 @@ const normalizeToolChoice = (
   return toolChoice;
 };
 
-const resolveApiUrl = () =>
-  ENV.forgeApiUrl && ENV.forgeApiUrl.trim().length > 0
+const resolveApiUrl = () => {
+  // Support self-hosted: if OPENAI_API_BASE is set, use it directly
+  const openaiBase = process.env.OPENAI_API_BASE;
+  if (openaiBase && openaiBase.trim().length > 0) {
+    return `${openaiBase.replace(/\/$/, "")}/chat/completions`;
+  }
+  return ENV.forgeApiUrl && ENV.forgeApiUrl.trim().length > 0
     ? `${ENV.forgeApiUrl.replace(/\/$/, "")}/v1/chat/completions`
-    : "https://forge.manus.im/v1/chat/completions";
+    : "https://api.openai.com/v1/chat/completions";
+};
 
 const assertApiKey = () => {
   if (!ENV.forgeApiKey) {

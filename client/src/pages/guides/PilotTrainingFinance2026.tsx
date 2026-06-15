@@ -1,5 +1,6 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
 const PilotTrainingFinance2026 = () => {
   return (
@@ -36,6 +37,7 @@ const PilotTrainingFinance2026 = () => {
                   alt="UK pilot training cost breakdown 2026 by route"
                   style={{ width: "100%", display: "block" }}
                   loading="lazy"
+                scopeBanner={<><GuideScopeBanner scope="This guide covers UK-specific pilot training finance options for 2026 (HSBC, UK lenders, cadet bonds)." usHref="/us/guides/how-to-fund-pilot-training-usa" usLabel="View USA funding options →" /></>}
                 />
               </div>
               <p style={{ fontSize: "0.8rem", color: "oklch(0.45 0.04 240)", textAlign: "center", marginBottom: "16px" }}>

@@ -1,4 +1,5 @@
 import GuideLayout from "@/components/GuideLayout";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
 export default function PilotTrainingCosts() {
   return (
@@ -387,6 +388,7 @@ export default function PilotTrainingCosts() {
           ),
         },
       ]}
+    scopeBanner={<><GuideScopeBanner scope="This guide covers UK pilot training costs in GBP (CAA/EASA routes). Costs vary significantly by country." usHref="/us/guides/pilot-training-costs-usa" usLabel="View USA costs →" globalHref="/calculator" globalLabel="Use the cost calculator →" /></>}
     />
   );
 }

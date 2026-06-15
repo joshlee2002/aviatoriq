@@ -1,144 +1,120 @@
 import GuideLayout from "@/components/GuideLayout";
-import React from "react";
+import { Link } from "wouter";
+import GuideScopeBanner from "@/components/GuideScopeBanner";
 
 export default function PilotAptitudeTestUSA() {
   return (
     <GuideLayout
-      title="US Pilot Aptitude Tests 2026: TBAS, ASTB & Airline Assessments"
-      subtitle="A comprehensive guide to navigating the essential aptitude tests for aspiring pilots in the United States, including the TBAS, ASTB-E, and various airline-specific evaluations."
-      readTime="15 min read"
-      heroImage="/manus-storage/aptitude-test-usa_9f2e4c8b.jpg"
+      title="Pilot Aptitude Tests USA: How to Prepare in 2026"
+      subtitle="What US airlines and cadet programmes actually test. How to pass the AFAST, Delta's psychological screening, and United Aviate assessments."
+      canonical="/us/guides/pilot-aptitude-test-usa"
+      metaDescription="Pilot aptitude test USA 2026. How to pass the AFAST, Delta psychological screening, and United Aviate assessments. What US airlines actually test."
+      readTime="10 min read"
+      heroImage="/manus-storage/aptitude-test_9d4c2b8e.jpg"
       category="US Pilot Training"
-      canonical="https://aviatoriq.com/us/guides/pilot-aptitude-test-usa"
-      metaDescription="Prepare for US pilot aptitude tests like TBAS, ASTB-E, and airline assessments in 2026. Learn about test structures, content, preparation strategies, and how to achieve top scores."
+      ctaHref="/us/roadmap"
+      ctaText="Find your training route"
+      scopeBanner={<GuideScopeBanner scope="This guide covers aptitude tests used by US airlines and cadet programmes." globalHref="/guides/pilot-aptitude-test-preparation" globalLabel="View UK/European aptitude tests →" />}
+      faqSchema={[
+        { question: "Do US airlines use pilot aptitude tests?", answer: "Yes, but differently than European airlines. While European airlines rely heavily on psychomotor and multi-tasking tests (like Cut-e or PILAPT), US airlines focus more heavily on psychological screening, personality profiling, and cognitive reasoning (like the AFAST or Delta's specific battery)." },
+        { question: "What is the AFAST test?", answer: "The Alternate Flight Aptitude Selection Test (AFAST) or similar cognitive batteries are used by some cadet programmes and military branches to assess spatial awareness, mechanical comprehension, and numerical reasoning." },
+        { question: "How does Delta screen pilots?", answer: "Delta Air Lines is known for a rigorous psychological screening process. This includes an extensive personality questionnaire (often the MMPI or similar) followed by an interview with an aviation psychologist to assess crew resource management and cultural fit." },
+        { question: "Can I practice for US pilot aptitude tests?", answer: "Yes. You can practice the cognitive elements (spatial reasoning, mental math, mechanical comprehension). For the personality and psychological elements, the best preparation is honesty and understanding the airline's core values." }
+      ]}
       sections={[
         {
-          heading: "Understanding US Pilot Aptitude Tests",
+          heading: "How US Testing Differs from Europe",
           content: (
-            <div>
-              <p className="mb-4">Aspiring pilots in the United States face a rigorous selection process that often includes specialized aptitude tests designed to evaluate their cognitive abilities, psychomotor skills, and personality traits relevant to aviation. These tests are critical gatekeepers, determining eligibility for military flight programs and commercial airline cadet schemes. Understanding the nuances of each test—from the Air Force's TBAS to the Navy's ASTB-E and various airline-specific assessments—is paramount for effective preparation and success.</p>
-              <img src="/manus-storage/simulator-assessment_08bb00b0.jpg" alt="Simulator assessment USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <p className="mb-4">These assessments are not merely knowledge-based exams; they delve into innate aptitudes that are difficult to teach but crucial for safe and efficient flight operations. They measure your ability to process information under pressure, maintain situational awareness, and demonstrate the hand-eye coordination essential for controlling an aircraft. As the aviation industry evolves, so do these tests, with 2026 versions incorporating advanced psychometric principles to identify the most promising candidates.</p>
-            </div>
+            <>
+              <p>
+                If you read pilot forums, you will see a lot of discussion about "joystick and rudder" aptitude tests like PILAPT or Cut-e. It is important to understand that these psychomotor tests are primarily a European phenomenon.
+              </p>
+              <p>
+                In the United States, the hiring philosophy is different. Because the FAA's 1,500-hour rule ensures that any pilot applying to a Part 121 airline already has significant flying experience, US airlines do not need to test your basic hand-eye coordination. Your logbook proves you can fly an airplane.
+              </p>
+              <p>
+                Instead, US major airlines and cadet programmes focus their testing on <strong>cognitive reasoning</strong>, <strong>psychological fitness</strong>, and <strong>cultural fit</strong>. They want to know how you think, how you handle stress, and whether they want to sit next to you for a four-day trip.
+              </p>
+            </>
           ),
         },
         {
-          heading: "The Test of Basic Aviation Skills (TBAS)",
+          heading: "What US Cadet Programmes Test (United Aviate, American Cadet Academy)",
           content: (
-            <div>
-              <p className="mb-4">The Test of Basic Aviation Skills (TBAS) is a cornerstone assessment for individuals seeking to become pilots or Remotely Piloted Aircraft (RPA) pilots in the United States Air Force (USAF). Administered as a computerized battery, the TBAS evaluates a candidate's psychomotor skills, spatial ability, and multi-tasking aptitude. It is typically taken after the Air Force Officer Qualifying Test (AFOQT) and contributes significantly to the Pilot Candidate Selection Method (PCSM) score.</p>
-              <p className="mb-4">The TBAS consists of several subtests, each designed to challenge different aspects of aviation aptitude. These include tasks that require precise joystick control, rapid information processing, and the ability to manage multiple simultaneous inputs. The test generally takes approximately 1 hour and 15 minutes to 1 hour and 30 minutes to complete. Candidates are allowed up to three attempts, with a mandatory 90-day waiting period between administrations. Only the most recent score is considered for selection purposes.</p>
-            </div>
+            <>
+              <p>
+                If you are applying to a zero-time cadet programme like the United Aviate Academy or the American Airlines Cadet Academy, you <em>will</em> face cognitive aptitude testing, because you do not yet have a logbook to prove your ability.
+              </p>
+              <p>
+                These tests typically assess:
+              </p>
+              <ul className="list-disc pl-5 space-y-2 mt-2 mb-4">
+                <li><strong>Spatial Awareness:</strong> Can you mentally rotate 3D objects? Can you determine an aircraft's position relative to a beacon based on instrument readings?</li>
+                <li><strong>Numerical Reasoning:</strong> Mental math, speed/distance/time calculations, and basic algebra without a calculator.</li>
+                <li><strong>Mechanical Comprehension:</strong> Understanding basic physics, gears, pulleys, and fluid dynamics.</li>
+                <li><strong>Reading Comprehension:</strong> The ability to quickly read, process, and extract specific information from technical manuals or regulations.</li>
+              </ul>
+              <p>
+                <strong>How to prepare:</strong> Use generic cognitive test preparation software or specific aviation aptitude platforms. Re-learn your times tables and basic physics principles.
+              </p>
+            </>
           ),
         },
         {
-          heading: "The Aviation Selection Test Battery (ASTB-E)",
+          heading: "The Major Airline Psychological Screening (Delta, United, American)",
           content: (
-            <div>
-              <p className="mb-4">For those aspiring to fly for the U.S. Navy, Marine Corps, or Coast Guard, the Aviation Selection Test Battery-E (ASTB-E) is the primary hurdle. This comprehensive test assesses a broad spectrum of abilities, including mathematical skills, reading comprehension, mechanical reasoning, aviation and nautical knowledge, and personality traits. The ASTB-E is composed of seven subtests, with three forming the Officer Aptitude Rating (OAR) portion, which is also used for non-aviation officer programs.</p>
-              <p className="mb-4">The full ASTB-E can take between 2 to 3 hours and 15 minutes, while the OAR portion alone typically lasts 1.5 to 2 hours. Many of its subtests, such as the Math Skills Test (MST) and Reading Comprehension Test (RCT), are administered using a computer-adaptive testing (CAT) format, meaning the difficulty of questions adjusts based on previous answers. Candidates can attempt the ASTB-E up to three times in their lifetime, with a minimum of 31 days between tests. Similar to the TBAS, the most recent score is the one that counts.</p>
-            </div>
+            <>
+              <p>
+                When applying to the major legacy carriers, the testing shifts from cognitive to psychological. Delta Air Lines is particularly famous for its rigorous psychological screening process.
+              </p>
+              <p>
+                <strong>The Personality Inventory:</strong> You will typically take a massive, multi-hundred-question personality test (often based on the MMPI - Minnesota Multiphasic Personality Inventory or the Hogan Personality Inventory). The questions will seem repetitive. This is intentional — it is designed to catch inconsistencies and measure traits like conscientiousness, emotional stability, and agreeableness.
+              </p>
+              <p>
+                <strong>The Psychologist Interview:</strong> At airlines like Delta, the written test is followed by an interview with an aviation psychologist. They will probe your answers from the written test and ask specific behavioural questions to assess your stress response and Crew Resource Management (CRM) potential.
+              </p>
+            </>
           ),
         },
         {
-          heading: "Airline-Specific Pilot Assessments",
+          heading: "How to 'Pass' a Personality Test",
           content: (
-            <div>
-              <p className="mb-4">Beyond military aviation, major US airlines and flight schools conduct their own aptitude tests as part of their cadet programs and pilot recruitment. These assessments often draw from established psychometric test publishers like Cut-e (Aon), SHL, and Saville, or utilize proprietary systems. The goal is to identify candidates with the cognitive and psychomotor skills necessary for commercial aviation, as well as the personality traits suited for a demanding airline environment.</p>
-              <p className="mb-4">Common areas evaluated include numerical reasoning (interpreting data, performing calculations), verbal reasoning (comprehending complex instructions), spatial awareness (understanding object relationships in 3D space), mechanical reasoning (understanding physical forces and systems), and psychomotor skills (hand-eye coordination, reaction time, multitasking). Personality assessments are also standard, gauging traits like resilience, teamwork, and leadership potential. Preparation for these tests often involves practicing a wide range of aptitude questions and familiarizing oneself with the specific test formats used by target airlines.</p>
-            </div>
+            <>
+              <p>
+                The most common mistake candidates make is trying to "game" the personality test by answering how they think the airline wants them to answer, rather than answering honestly.
+              </p>
+              <p>
+                These tests have built-in "lie scales" and consistency checkers. If you try to portray yourself as a flawless, emotionless robot who never gets angry and always follows the rules perfectly, the test will flag your results as invalid or deceptive.
+              </p>
+              <p>
+                <strong>The strategy:</strong> Be honest, but be your professional self. Airlines are looking for safe, predictable, collaborative pilots. They want someone who is assertive enough to speak up when something is wrong (good CRM), but agreeable enough to take instruction and work in a team. They do not want mavericks, and they do not want pushovers.
+              </p>
+            </>
           ),
         },
         {
-          heading: "Key Differences and Similarities: TBAS vs. ASTB-E vs. Airline Tests",
+          heading: "The Hogan Assessment",
           content: (
-            <div>
-              <p className="mb-4">While all pilot aptitude tests aim to identify suitable candidates for flight training, their specific focus, structure, and scoring mechanisms can vary significantly. The table below highlights some key distinctions and commonalities among the TBAS, ASTB-E, and typical airline pilot assessments in the US for 2026.</p>
-              <div className="overflow-x-auto mb-4">
-                <table className="min-w-full bg-[oklch(0.14_0.06_250)] text-[oklch(0.65_0.04_240)] rounded-lg shadow-md">
-                  <thead>
-                    <tr>
-                      <th className="py-3 px-4 text-left bg-[oklch(0.2_0.08_250)]">Feature</th>
-                      <th className="py-3 px-4 text-left bg-[oklch(0.2_0.08_250)]">TBAS (USAF)</th>
-                      <th className="py-3 px-4 text-left bg-[oklch(0.2_0.08_250)]">ASTB-E (USN/USMC/USCG)</th>
-                      <th className="py-3 px-4 text-left bg-[oklch(0.2_0.08_250)]">Airline Assessments (e.g., Cut-e, SHL)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="bg-[oklch(0.16_0.06_250)]">
-                      <td className="py-2 px-4">Primary Purpose</td>
-                      <td className="py-2 px-4">USAF Pilot/RPA Pilot Selection</td>
-                      <td className="py-2 px-4">USN/USMC/USCG Officer Aviation Selection</td>
-                      <td className="py-2 px-4">Commercial Airline Cadet/Pilot Recruitment</td>
-                    </tr>
-                    <tr className="bg-[oklch(0.14_0.06_250)]">
-                      <td className="py-2 px-4">Key Aptitudes Tested</td>
-                      <td className="py-2 px-4">Psychomotor, Spatial Ability, Multitasking</td>
-                      <td className="py-2 px-4">Cognitive (Math, Reading, Mechanical), Aviation/Nautical Knowledge, Psychomotor, Personality</td>
-                    </tr>
-                    <tr className="bg-[oklch(0.16_0.06_250)]">
-                      <td className="py-2 px-4">Duration (Approx.)</td>
-                      <td className="py-2 px-4">1 hr 15 min - 1 hr 30 min</td>
-                      <td className="py-2 px-4">2 hrs - 3 hrs 15 min (Full ASTB-E)</td>
-                      <td className="py-2 px-4">Varies, typically 1-4 hours for full battery</td>
-                    </tr>
-                    <tr className="bg-[oklch(0.14_0.06_250)]">
-                      <td className="py-2 px-4">Scoring Method</td>
-                      <td className="py-2 px-4">PCSM Score (1-99 percentile)</td>
-                      <td className="py-2 px-4">Composite Scores (Stanine 1-9, OAR 20-80)</td>
-                      <td className="py-2 px-4">Percentile Ranks, Pass/Fail thresholds</td>
-                    </tr>
-                    <tr className="bg-[oklch(0.16_0.06_250)]">
-                      <td className="py-2 px-4">Retake Policy (Lifetime)</td>
-                      <td className="py-2 px-4">3 attempts (90-day wait)</td>
-                      <td className="py-2 px-4">3 attempts (31-day wait)</td>
-                      <td className="py-2 px-4">Varies by airline, often 1-2 attempts (6-12 month wait)</td>
-                    </tr>
-                    <tr className="bg-[oklch(0.14_0.06_250)]">
-                      <td className="py-2 px-4">Cost (USD)</td>
-                      <td className="py-2 px-4">Free</td>
-                      <td className="py-2 px-4">Free</td>
-                      <td className="py-2 px-4">Varies (preparation materials may cost $50-$300+)</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p className="mb-4">While the military tests are standardized across their respective branches, airline assessments can be more diverse, tailored to specific company needs or utilizing different psychometric vendors. However, the underlying aptitudes tested remain largely consistent: the ability to learn, adapt, and perform under pressure in a complex operational environment.</p>
-            </div>
-          ),
-        },
-        {
-          heading: "Effective Preparation Strategies for 2026",
-          content: (
-            <div>
-              <p className="mb-4">Preparing for pilot aptitude tests in 2026 requires a multi-faceted approach that goes beyond rote memorization. Given the adaptive nature of some tests and the focus on innate abilities, consistent practice and skill development are key. Start by identifying the specific tests you will be taking and research their formats and content areas. Official study guides, if available, should be your first resource. For military tests, leverage resources provided by the USAF, USN, USMC, or USCG.</p>
-              <p className="mb-4">For airline assessments, consider investing in reputable online practice platforms that simulate the test environment. Focus on improving your numerical, verbal, and mechanical reasoning skills through targeted exercises. Enhance your psychomotor abilities with flight simulator games or dedicated coordination drills. Crucially, practice under timed conditions to build speed and accuracy. Additionally, ensure you are well-rested and mentally prepared on test day, as fatigue can significantly impact performance on these demanding evaluations.</p>
-            </div>
-          ),
-        },
-        {
-          heading: "Maximizing Your Score and Acing the Interview",
-          content: (
-            <div>
-              <p className="mb-4">Achieving a top percentile score on pilot aptitude tests is a significant step, but it's often just one part of the overall selection process. To truly maximize your chances, focus on consistent, deliberate practice. For psychomotor tasks, repetition helps build muscle memory and refine reaction times. For cognitive sections, understanding the underlying principles rather than just memorizing answers will serve you better, especially in adaptive tests.</p>
-              <p className="mb-4">Beyond the tests, prepare for the interview stage, which often follows successful aptitude test results. Be ready to articulate your motivation for flying, demonstrate leadership potential, and showcase your understanding of the aviation career path. Highlight any relevant experiences, such as flight hours (even recreational), leadership roles, or technical hobbies. A strong performance in both the aptitude tests and the interview will position you as a highly competitive candidate for any US pilot training program in 2026.</p>
-            </div>
+            <>
+              <p>
+                Many US aviation employers use the Hogan Assessment. It is divided into three parts:
+              </p>
+              <ol className="list-decimal pl-5 space-y-2 mt-2 mb-4">
+                <li><strong>Hogan Personality Inventory (HPI):</strong> Measures your day-to-day, "bright side" personality (how you relate to others).</li>
+                <li><strong>Hogan Development Survey (HDS):</strong> Measures your "dark side" personality — how you behave under stress or fatigue (e.g., do you become volatile, passive-aggressive, or withdrawn?).</li>
+                <li><strong>Motives, Values, Preferences Inventory (MVPI):</strong> Measures what drives you and what kind of culture you fit into.</li>
+              </ol>
+              <p>
+                You can take practice Hogan assessments online to understand your profile before the real interview. If you know that your "dark side" trait under stress is becoming overly critical, you can prepare a strategy to mitigate that during the simulator assessment and discuss it maturely in the interview.
+              </p>
+            </>
           ),
         },
       ]}
       relatedGuides={[
-        { title: "US Pilot Training Pathways 2026", href: "/us/guides/us-pilot-training-pathways", time: "12 min" },
-        { title: "FAA Medical Certificate Requirements 2026", href: "/us/guides/faa-medical-certificate-requirements", time: "10 min" },
-        { title: "Airline Pilot Salary & Career Outlook US 2026", href: "/us/guides/airline-pilot-salary-career-outlook-us", time: "18 min" },
-      ]}
-      ctaText="Explore Your Pilot Career Roadmap"
-      ctaHref="/us/roadmap"
-      faqSchema={[
-        { question: "What is the primary purpose of pilot aptitude tests in the US?", answer: "Pilot aptitude tests in the US are designed to assess a candidate's inherent abilities, cognitive skills, psychomotor coordination, and personality traits relevant to aviation. They serve as a critical screening tool for military flight programs (USAF, USN, USMC, USCG) and commercial airline cadet schemes, predicting success in demanding flight training and operational environments." },
-        { question: "How many times can I retake the TBAS or ASTB-E?", answer: "For the TBAS, candidates are generally allowed up to three administrations in their lifetime, with a mandatory 90-day waiting period between attempts. For the ASTB-E, you can take the test up to three times in total (initial attempt plus two retakes), with a minimum of 31 days between each test. In both cases, only your most recent score is considered valid." },
-        { question: "Are airline pilot aptitude tests the same as military ones?", answer: "No, while they assess similar core aptitudes, airline pilot aptitude tests are typically distinct from military tests like the TBAS and ASTB-E. Airlines often use tests from commercial psychometric publishers (e.g., Cut-e, SHL) or proprietary assessments tailored to their specific operational needs and company culture. The content and format can vary significantly between airlines." },
-        { question: "Do I need to pay to take military pilot aptitude tests like TBAS or ASTB-E?", answer: "No, the TBAS and ASTB-E are administered free of charge by the respective US military branches (Air Force, Navy, Marine Corps, Coast Guard) as part of their recruitment and selection process. However, commercial preparation materials or courses for these tests may incur costs." },
-        { question: "What kind of preparation is most effective for these tests in 2026?", answer: "Effective preparation for 2026 pilot aptitude tests involves a combination of targeted practice and skill development. Focus on improving cognitive abilities (numerical, verbal, mechanical reasoning), psychomotor skills (hand-eye coordination, multitasking), and spatial awareness. Utilize official study guides, reputable online practice platforms, and flight simulator exercises. Consistent, timed practice is crucial, as is ensuring you are well-rested and mentally prepared on test day." },
+        { title: "Airline Interview USA", href: "/us/guides/airline-interview-usa", time: "11 min" },
+        { title: "United Aviate Program", href: "/us/guides/united-aviate-program", time: "9 min" },
+        { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "12 min" },
       ]}
     />
   );

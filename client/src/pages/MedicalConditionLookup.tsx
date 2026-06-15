@@ -339,8 +339,8 @@ export default function MedicalConditionLookup() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.10 0.08 252)" }}>
       <SEO
-        title="Class 1 Medical Condition Lookup | Can I Become a Pilot? | AviatorIQ"
-        description="Search any medical condition to find out if it affects your Class 1 Medical eligibility for UK pilot training. Covers asthma, ADHD, colour blindness, diabetes, depression, epilepsy and more."
+        title="Pilot Medical Condition Lookup | Can I Become a Pilot? | AviatorIQ"
+        description="Search any medical condition to find out if it affects your pilot medical eligibility. Based on CAA/EASA Class 1 standards. Covers asthma, ADHD, colour blindness, diabetes, depression, epilepsy and more."
         canonical="/tools/medical-condition-lookup"
         schema={{
           "@context": "https://schema.org",
@@ -369,9 +369,18 @@ export default function MedicalConditionLookup() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
               Medical Condition Lookup
             </h1>
-            <p className="text-base md:text-lg mb-8" style={{ color: "oklch(0.65 0.04 240)" }}>
-              Search any medical condition to get a plain-English answer about Class 1 Medical eligibility for UK pilot training. Covers 20+ conditions including the most-searched topics.
+            <p className="text-base md:text-lg mb-4" style={{ color: "oklch(0.65 0.04 240)" }}>
+              Search any medical condition to get a plain-English answer about pilot medical eligibility. Covers 20+ conditions including the most-searched topics.
             </p>
+            {/* Scope banner */}
+            <div className="max-w-xl mx-auto mb-6 p-3 rounded-xl text-left" style={{ background: "oklch(0.16 0.08 250)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
+              <div className="flex items-start gap-2">
+                <Info className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: "oklch(0.72 0.18 65)" }} />
+                <p className="text-xs" style={{ color: "oklch(0.65 0.04 240)" }}>
+                  <strong style={{ color: "oklch(0.85 0.04 240)" }}>Based on UK CAA / EASA standards.</strong> If you are training in the USA (FAA), Australia (CASA), Canada (Transport Canada), or another country, your national authority may have different rules. The principles are broadly similar — but always verify with your local aviation authority.
+                </p>
+              </div>
+            </div>
 
             {/* Search form */}
             <form onSubmit={handleSubmit} className="max-w-xl mx-auto">

@@ -41,7 +41,7 @@ type UnlockTarget = { id: number; name: string; country?: string; website?: stri
 
 export default function Schools() {
   const { formatPrice, currency } = useCurrency();
-  const [country, setCountry] = useState("United Kingdom");
+  const [country, setCountry] = useState("");
   const [trainingType, setTrainingType] = useState("");
   const [financeFilter, setFinanceFilter] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
@@ -96,8 +96,8 @@ export default function Schools() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.10 0.08 252)" }}>
       <SEO
-        title="Flight School Directory UK 2026 | AviatorIQ"
-        description="Browse 54+ UK and international flight schools. Filter by country, training type and finance. Request an introduction through AviatorIQ — we match you with the right school."
+        title="Global Flight School Directory 2026 | AviatorIQ"
+        description="Browse 54+ flight schools worldwide — UK, USA, Australia, Europe and more. Filter by country, training type and finance. Get matched to the right school for your goals."
         canonical="/schools"
         schema={{
           "@context": "https://schema.org",
@@ -126,7 +126,7 @@ export default function Schools() {
               Find Your Flight School
             </h1>
             <p className="text-base md:text-lg mb-5" style={{ color: "oklch(0.65 0.04 240)" }}>
-              Browse accredited flight schools and training providers across the UK and worldwide. Filter by training type, country, and finance options.
+              Browse 54+ accredited flight schools and training providers worldwide — UK, USA, Europe, Australia, and beyond. Filter by country, training type, and finance options.
             </p>
             <Link
               href="/quiz"
