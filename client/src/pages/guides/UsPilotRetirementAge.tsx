@@ -5,7 +5,7 @@ export default function UsPilotRetirementAge() {
   return (
     <GuideLayout
       title="The Mandatory Retirement Age for US Airline Pilots: Navigating Your Career to 65 and Beyond"
-      subtitle="A Comprehensive Guide to FAA Regulations, Historical Context, and Future Outlook for Commercial Aviators in 2026"
+      subtitle="The FAA mandates retirement at 65 for Part 121 airline pilots. Here is how the rule works, why it exists, and what the ongoing push to raise it to 67 means for your career."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -31,37 +31,39 @@ export default function UsPilotRetirementAge() {
               <p>The concept of a mandatory retirement age for airline pilots in the US is not new; it dates back to the late 1950s. The original "Age 60 Rule," enacted by the FAA in 1959 and effective March 1960, prohibited pilots from serving in airline operations after their 60th birthday. This rule was primarily justified by then-prevailing medical concerns regarding age-related physiological and cognitive decline, coupled with the limited diagnostic and screening tools available at the time to accurately assess individual pilot fitness beyond that age.</p>
               <p>The landscape began to shift significantly in the mid-2000s. The International Civil Aviation Organization (ICAO), the United Nations body responsible for setting global aviation standards, implemented new guidelines in 2006. These guidelines raised the age limit for multi-crew international commercial air transport from 60 to 65. This international harmonization was a pivotal moment, as it highlighted a discrepancy between US domestic regulations and global norms, creating operational complexities for airlines engaged in international routes.</p>
               <p>In response to these international developments and growing advocacy from pilot groups, the US Congress passed the "Fair Treatment for Experienced Pilots Act" in December 2007. This landmark legislation officially raised the maximum age for Part 121 airline pilots from 60 to 65, aligning US regulations with the new ICAO standard. A further refinement occurred in 2015 when the FAA issued a final rule removing a previous "pilot pairing" requirement for international operations, which had mandated that if one pilot was over 60, the other had to be under 60. This change streamlined international scheduling and further solidified the age 65 standard.</p>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Year</th>
-                    <th>Key Event</th>
-                    <th>Impact on Retirement Age</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1959</td>
-                    <td>FAA enacts "Age 60 Rule"</td>
-                    <td>Mandatory retirement at 60 for Part 121 pilots</td>
-                  </tr>
-                  <tr>
-                    <td>2006</td>
-                    <td>ICAO raises international age limit</td>
-                    <td>International standard shifts to 65</td>
-                  </tr>
-                  <tr>
-                    <td>2007</td>
-                    <td>Fair Treatment for Experienced Pilots Act</td>
-                    <td>US Part 121 retirement age raised to 65</td>
-                  </tr>
-                  <tr>
-                    <td>2015</td>
-                    <td>FAA removes international "pilot pairing" rule</td>
-                    <td>Streamlines international operations for older pilots</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div className="overflow-x-auto my-4">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-white/10">
+                      <th className="px-4 py-3 text-left font-semibold text-white">Year</th>
+                      <th className="px-4 py-3 text-left font-semibold text-white">Key Event</th>
+                      <th className="px-4 py-3 text-left font-semibold text-white">Impact on Retirement Age</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">1959</td>
+                      <td className="px-4 py-3">FAA enacts "Age 60 Rule"</td>
+                      <td className="px-4 py-3">Mandatory retirement at 60 for Part 121 pilots</td>
+                    </tr>
+                    <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">2006</td>
+                      <td className="px-4 py-3">ICAO raises international age limit</td>
+                      <td className="px-4 py-3">International standard shifts to 65</td>
+                    </tr>
+                    <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">2007</td>
+                      <td className="px-4 py-3">Fair Treatment for Experienced Pilots Act</td>
+                      <td className="px-4 py-3">US Part 121 retirement age raised to 65</td>
+                    </tr>
+                    <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">2015</td>
+                      <td className="px-4 py-3">FAA removes international "pilot pairing" rule</td>
+                      <td className="px-4 py-3">Streamlines international operations for older pilots</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </>
           )
         },

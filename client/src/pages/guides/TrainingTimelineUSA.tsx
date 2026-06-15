@@ -115,8 +115,8 @@ export default function TrainingTimelineUSA() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Federal Aviation Administration (FAA). "Pilot Certification and Qualification Requirements for Air Carrier Operations." <em>14 CFR Part 121</em>.<br/>
-                [2] Wayman Aviation. "How Many Years to Become a Pilot? A Realistic 2026 Timeline." <em>Aviation Training Data</em>.
+                [1] Federal Aviation Administration (FAA). "Pilot Certification and Qualification Requirements for Air Carrier Operations." <em>14 CFR Part 121</em>. <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-G/part-121" className="underline" target="_blank" rel="noopener noreferrer">ecfr.gov</a><br/>
+                [2] Federal Aviation Administration (FAA). "Pilot Certification: Restricted Privileges Airline Transport Pilot Certificate." <em>14 CFR § 61.160</em>. <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-G/section-61.160" className="underline" target="_blank" rel="noopener noreferrer">ecfr.gov</a>
               </p>
             </>
           ),

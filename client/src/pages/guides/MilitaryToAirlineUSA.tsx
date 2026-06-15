@@ -111,6 +111,28 @@ export default function MilitaryToAirlineUSA() {
             </>
           ),
         },
+        {
+          heading: "GI Bill and VA Benefits for Flight Training",
+          content: (
+            <>
+              <p>
+                One of the most underutilised benefits available to transitioning military pilots is the GI Bill for flight training. Under the Post-9/11 GI Bill (Chapter 33), veterans can use their education benefit to cover flight training costs at an FAA Part 141 school, up to the national maximum of <strong>$14,000 per academic year</strong> (as of 2026). This can significantly offset the cost of obtaining civilian ratings or building hours toward the ATP.
+              </p>
+              <p>
+                To use Chapter 33 benefits for flight training, the school must be Part 141 approved and the training must be part of a degree-granting programme or a standalone approved flight training programme. The VA pays tuition and fees directly to the school; the student receives a monthly housing allowance (MHA) based on the E-5 with dependents rate for the school's zip code.
+              </p>
+              <p>
+                <strong>MGIB-AD (Chapter 30)</strong> can also be used for flight training but is generally less valuable than Chapter 33 for this purpose, as it pays a flat monthly rate to the student rather than covering tuition directly.
+              </p>
+              <p>
+                The <strong>Army Career Alumni Program (ACAP)</strong> and the <strong>Transition Assistance Program (TAP)</strong> both provide resources to help separating service members understand their education benefits and connect with aviation employers. Many major airlines (Delta, United, American, FedEx, UPS) have dedicated military recruiting teams and attend events like the NGPA (National Gay Pilots Association) and OBAP (Organization of Black Aerospace Professionals) conferences alongside general military transition events.
+              </p>
+              <p>
+                For Army helicopter pilots specifically, the <strong>Warrant Officer Career College (WOCC)</strong> transition resources and the <strong>Army Aviation Association of America (Quad-A)</strong> are the primary networking organisations for connecting with airline recruiters.
+              </p>
+            </>
+          ),
+        },
       ]}
       relatedGuides={[
         { title: "Airline Pilot Salary USA 2026", href: "/us/guides/airline-pilot-salary-usa", time: "10 min" },

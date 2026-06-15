@@ -5,7 +5,7 @@ const PplRequirementsUSA = () => {
   return (
     <GuideLayout
       title="Private Pilot License (PPL) Requirements USA: Cost, Hours & How to Get Started"
-      subtitle="Unlock the skies with a Private Pilot Certificate in the USA. This comprehensive guide covers FAA requirements, training hours, costs, and the steps to begin your journey."
+      subtitle="Everything you need to know about getting your FAA Private Pilot Certificate — minimum hours, real costs, medical requirements, and how long it actually takes."
       canonical="/us/guides/ppl-requirements-usa"
       metaDescription="Discover everything you need to know about obtaining your Private Pilot License (PPL) in the USA, including FAA Part 61 and Part 141 requirements, flight hours, typical costs, medical certificate details, and the path to becoming a certified private pilot."
       faqSchema={[
@@ -47,7 +47,7 @@ const PplRequirementsUSA = () => {
                 Unlike a student pilot certificate, which permits solo flight under specific conditions, the PPL grants you the privilege to carry passengers and fly cross-country, albeit with certain limitations. You cannot, for instance, fly for compensation or hire, nor can you fly in commercial operations. However, you can share operating expenses with passengers, making recreational flying more accessible. This certificate is recognized globally, though specific regulations may vary when flying in international airspace.
               </p>
               <p>
-                The journey to your PPL is challenging but immensely rewarding. It demands dedication, discipline, and a commitment to safety. This guide will walk you through every essential requirement, from flight hours and medical certificates to the costs involved and the practical steps to get you started on your path to becoming a certificated private pilot in the USA.
+                This guide covers every requirement — from flight hours and medical certificates to the real costs involved and the practical steps to get started.
               </p>
             </>
           ),
@@ -109,44 +109,46 @@ const PplRequirementsUSA = () => {
               </p>
               <p>
                 Here's a breakdown of typical costs:
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
-                    <tr>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Item</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estimated Cost (USD)</th>
-                    </tr>
-                  </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Flight Instruction (40-60 hours @ $60-80/hr)</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$2,400 - $4,800</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Aircraft Rental (40-60 hours @ $120-180/hr)</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$4,800 - $10,800</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Ground School/Study Materials</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$300 - $500</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">FAA Knowledge Test Fee</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$175</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">FAA Medical Certificate Exam</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$100 - $180</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap">Checkride (DPE Fee)</td>
-                      <td className="px-6 py-4 whitespace-nowrap">$600 - $1,000</td>
-                    </tr>
-                    <tr>
-                      <td className="px-6 py-4 whitespace-nowrap"><b>Total Estimated Range</b></td>
-                      <td className="px-6 py-4 whitespace-nowrap"><b>$8,375 - $17,455</b></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="overflow-x-auto my-4">
+                  <table className="w-full text-sm border-collapse">
+                    <thead>
+                      <tr className="bg-white/10">
+                        <th className="px-4 py-3 text-left font-semibold text-white">Item</th>
+                        <th className="px-4 py-3 text-left font-semibold text-white">Estimated Cost (USD)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3">Flight Instruction (40–60 hrs × $60–$80/hr)</td>
+                        <td className="px-4 py-3">$2,400–$4,800</td>
+                      </tr>
+                      <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3">Aircraft Rental (40–60 hrs × $120–$180/hr)</td>
+                        <td className="px-4 py-3">$4,800–$10,800</td>
+                      </tr>
+                      <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3">Ground School / Study Materials</td>
+                        <td className="px-4 py-3">$300–$500</td>
+                      </tr>
+                      <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3">FAA Knowledge Test Fee</td>
+                        <td className="px-4 py-3">$175</td>
+                      </tr>
+                      <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3">FAA Medical Certificate Exam (Class 3 AME)</td>
+                        <td className="px-4 py-3">$75–$200</td>
+                      </tr>
+                      <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                        <td className="px-4 py-3">Checkride (DPE Fee)</td>
+                        <td className="px-4 py-3">$600–$1,000</td>
+                      </tr>
+                      <tr className="border-t border-white/10 bg-white/5">
+                        <td className="px-4 py-3 font-semibold text-white">Total Estimated Range</td>
+                        <td className="px-4 py-3 font-semibold text-white">$8,350–$17,475</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </p>
               <p>
                 Regarding your medical certificate, a <b>Third-Class Medical Certificate</b> is the minimum requirement for a private pilot. This certificate is obtained from an FAA-authorized Aviation Medical Examiner (AME) and involves a physical examination to ensure you meet the basic health standards for flying. It typically needs to be renewed every 2 years if you are under 40 years old, and annually if you are 40 or older. It's crucial to obtain this early in your training, as any disqualifying conditions could halt your progress.

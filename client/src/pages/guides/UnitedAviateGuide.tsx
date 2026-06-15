@@ -116,7 +116,7 @@ export default function UnitedAviateGuide() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] United Airlines. "Aviate Program Frequently Asked Questions." <em>United Aviate Official Website</em>.
+                [1] United Airlines. "Aviate Program Frequently Asked Questions." <em>United Aviate Official Website</em>. <a href="https://unitedaviate.com/" className="underline" target="_blank" rel="noopener noreferrer">unitedaviate.com</a>
               </p>
             </>
           ),

@@ -5,7 +5,7 @@ export default function UsPilotCommuting() {
   return (
     <GuideLayout
       title="The Elite Guide to US Pilot Commuting in 2026: Strategies, Costs, and FAA Regulations"
-      subtitle="Navigate the complexities of airline pilot commuting with expert insights into FAA Part 117, crash pad economics, and training path advantages."
+      subtitle="Most US airline pilots do not live near their base. Here is how commuting works, what it costs, and how Part 117 rest rules affect your planning."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="January 2026"
@@ -48,21 +48,63 @@ export default function UsPilotCommuting() {
             <>
               <p>To comply with rest requirements and manage the logistics of commuting, many pilots utilize "crash pads"—shared housing arrangements located near their domicile airports. Crash pads offer a cost-effective alternative to hotels or maintaining a second apartment.</p>
               <p>In 2026, the cost of a crash pad varies significantly depending on the domicile city, the type of accommodation (hot bed vs. cold bed, private room vs. bunk), and proximity to the airport.</p>
-              <h3>Estimated Monthly Crash Pad Costs (2026)</h3>
-              <table>
-                <thead>
-                  <tr><th>Domicile City</th><th>Airport Code</th><th>Average Monthly Cost (USD)</th><th>Notes</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Atlanta, GA</td><td>ATL</td><td>$300 - $500</td><td>High availability, Delta hub</td></tr>
-                  <tr><td>Chicago, IL</td><td>ORD / MDW</td><td>$350 - $600</td><td>Higher costs near ORD</td></tr>
-                  <tr><td>Dallas, TX</td><td>DFW</td><td>$300 - $450</td><td>Sprawling metroplex, transport needed</td></tr>
-                  <tr><td>Los Angeles, CA</td><td>LAX</td><td>$450 - $750</td><td>High cost of living area</td></tr>
-                  <tr><td>New York, NY</td><td>JFK / LGA / EWR</td><td>$500 - $800</td><td>Premium pricing, limited space</td></tr>
-                  <tr><td>Miami, FL</td><td>MIA</td><td>$400 - $600</td><td>Seasonal fluctuations</td></tr>
-                  <tr><td>Denver, CO</td><td>DEN</td><td>$350 - $550</td><td>Growing hub, increasing demand</td></tr>
-                </tbody>
-              </table>
+              <p><strong>Estimated Monthly Crash Pad Costs (2026)</strong></p>
+              <div className="overflow-x-auto my-4">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-white/10">
+                      <th className="px-4 py-3 text-left font-semibold text-white">Domicile City</th>
+                      <th className="px-4 py-3 text-left font-semibold text-white">Airport</th>
+                      <th className="px-4 py-3 text-left font-semibold text-white">Monthly Cost (Shared)</th>
+                      <th className="px-4 py-3 text-left font-semibold text-white">Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Atlanta, GA</td>
+                      <td className="px-4 py-3">ATL</td>
+                      <td className="px-4 py-3">$300–$500</td>
+                      <td className="px-4 py-3">High availability; Delta hub</td>
+                    </tr>
+                    <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Chicago, IL</td>
+                      <td className="px-4 py-3">ORD / MDW</td>
+                      <td className="px-4 py-3">$350–$600</td>
+                      <td className="px-4 py-3">Higher costs near ORD</td>
+                    </tr>
+                    <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Dallas, TX</td>
+                      <td className="px-4 py-3">DFW</td>
+                      <td className="px-4 py-3">$300–$450</td>
+                      <td className="px-4 py-3">Sprawling metroplex; transport needed</td>
+                    </tr>
+                    <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Los Angeles, CA</td>
+                      <td className="px-4 py-3">LAX</td>
+                      <td className="px-4 py-3">$450–$750</td>
+                      <td className="px-4 py-3">High cost of living area</td>
+                    </tr>
+                    <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">New York, NY</td>
+                      <td className="px-4 py-3">JFK / LGA / EWR</td>
+                      <td className="px-4 py-3">$500–$800</td>
+                      <td className="px-4 py-3">Premium pricing; limited space</td>
+                    </tr>
+                    <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Miami, FL</td>
+                      <td className="px-4 py-3">MIA</td>
+                      <td className="px-4 py-3">$400–$600</td>
+                      <td className="px-4 py-3">Seasonal fluctuations</td>
+                    </tr>
+                    <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Denver, CO</td>
+                      <td className="px-4 py-3">DEN</td>
+                      <td className="px-4 py-3">$350–$550</td>
+                      <td className="px-4 py-3">Growing hub; increasing demand</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <p><em>Note: Costs are estimates for shared rooms/bunks. Private rooms command a significant premium.</em></p>
               <p>Beyond the crash pad, commuting pilots must budget for ground transportation (Uber/Lyft to and from the airport), which can add $100 to $300 monthly depending on frequency and distance.</p>
             </>
