@@ -61,11 +61,11 @@ export default function UsMilitaryPilotToAirlines() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost Range</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATP CTP Course Fee</td><td className="px-4 py-3 text-white/80">$4,000 - $5,000</td><td className="px-4 py-3 text-white/80">Covers ground school and simulator time. Prices vary by provider and equipment quality.</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">FAA ATM Knowledge Test Fee</td><td className="px-4 py-3 text-white/80">$175</td><td className="px-4 py-3 text-white/80">Paid directly to testing center per attempt.</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Travel & Lodging</td><td className="px-4 py-3 text-white/80">$700 - $1,500+</td><td className="px-4 py-3 text-white/80">For 7-8 days, depending on location and personal choices.</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Study Materials (Optional)</td><td className="px-4 py-3 text-white/80">$100 - $300</td><td className="px-4 py-3 text-white/80">Prep apps like Sheppard Air are highly recommended.</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Total Estimated Cost</td><td className="px-4 py-3 text-white/80">$4,975 - $6,975+</td><td className="px-4 py-3 text-white/80">Excludes potential airline sponsorship or GI Bill benefits.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATP CTP Course Fee</td><td className="px-4 py-3 text-white/80">{">"}$4,000 - $5,000</td><td className="px-4 py-3 text-white/80">Covers ground school and simulator time. Prices vary by provider and equipment quality.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">FAA ATM Knowledge Test Fee</td><td className="px-4 py-3 text-white/80">{">"}$175</td><td className="px-4 py-3 text-white/80">Paid directly to testing center per attempt.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Travel & Lodging</td><td className="px-4 py-3 text-white/80">{">"}$700 - $1,500+</td><td className="px-4 py-3 text-white/80">For 7-8 days, depending on location and personal choices.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Study Materials (Optional)</td><td className="px-4 py-3 text-white/80">{">"}$100 - $300</td><td className="px-4 py-3 text-white/80">Prep apps like Sheppard Air are highly recommended.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Total Estimated Cost</td><td className="px-4 py-3 text-white/80">{">"}$4,975 - $6,975+</td><td className="px-4 py-3 text-white/80">Excludes potential airline sponsorship or GI Bill benefits.</td></tr>
                 </tbody>
               </table>
               <p>Many regional airlines offer ATP CTP sponsorships, covering the course cost, travel, and lodging in exchange for a commitment to fly for them for a specified period. This can significantly reduce the financial burden and provide a direct pathway to an airline career.</p>
@@ -123,7 +123,7 @@ export default function UsMilitaryPilotToAirlines() {
           content: (
             <>
               <p>The journey from a military cockpit to a commercial flight deck is a challenging yet rewarding endeavor. The US airline industry in 2026 is actively seeking the caliber of pilot forged in military service. By understanding the FAA regulations, strategically approaching the ATP/R-ATP certification, leveraging military benefits, and engaging with airline transition programs, you can successfully navigate this path.</p>
-              <p>Military pilots transitioning to the airlines in 2026 are entering one of the strongest hiring markets in the industry's history. The R-ATP pathway, MilComp credits, and direct-to-major hiring at Delta, United, and American make this a realistic 12–24 month process for most applicants with the right total time and ratings.</p>
+              <p>Military pilots transitioning to the airlines in 2026 are entering one of the strongest hiring markets in the industry's history. The R-ATP pathway, MilComp credits, and direct-to-major hiring at Delta, United, and American make this a realistic 12-24 month process for most applicants with the right total time and ratings.</p>
             </>
           )
         }

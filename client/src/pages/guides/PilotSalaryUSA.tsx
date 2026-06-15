@@ -4,7 +4,7 @@ const PilotSalaryUSA = () => {
   return (
     <GuideLayout
       title="Airline Pilot Salary USA 2026: First Officer & Captain Pay at Every Major Airline"
-      subtitle="Real 2026 salary data for regional and major airline pilots — what you will earn at every stage of your career."
+      subtitle="Real 2026 salary data for regional and major airline pilots  -  what you will earn at every stage of your career."
       canonical="/us/guides/airline-pilot-salary-usa"
       metaDescription="US airline pilot salary guide 2026. Real pay data for regional FOs, major airline first officers, and captains at Delta, United, American, Southwest, FedEx and UPS."
       faqSchema={[
@@ -14,7 +14,7 @@ const PilotSalaryUSA = () => {
         },
         {
           question: "How much does a regional airline first officer make?",
-          answer: "Regional airline first officers now start at $110,000–$112,000 per year including signing bonuses (2026). SkyWest starts at $111,170 (including $5,000 bonus), Envoy at $110,428, and Piedmont at $111,684. After 2 to 3 years, regional FOs earn $120,000+, and regional captains earn $130,000 to $160,000.",
+          answer: "Regional airline first officers now start at $110,000-$112,000 per year including signing bonuses (2026). SkyWest starts at $111,170 (including $5,000 bonus), Envoy at $110,428, and Piedmont at $111,684. After 2 to 3 years, regional FOs earn $120,000+, and regional captains earn $130,000 to $160,000.",
         },
         {
           question: "How much does an airline captain make in the USA?",
@@ -46,7 +46,7 @@ const PilotSalaryUSA = () => {
                 Understanding pilot compensation requires looking beyond base pay. Total compensation includes base salary, per diem (a daily allowance when away from base), profit sharing (which at Delta and Southwest has added $20,000 to $50,000 per year for senior pilots), 401(k) contributions, health insurance, travel benefits, and signing bonuses. For senior captains at major carriers, total compensation routinely exceeds $400,000 per year.
               </p>
               <p>
-                The career path typically follows a predictable arc: start as a regional airline first officer, upgrade to regional captain or move directly to a major airline as a first officer, then work through the seniority list to captain. The timeline for each stage has compressed significantly — what took 20 years in the 1990s now takes 8 to 12 years for many pilots.
+                The career path typically follows a predictable arc: start as a regional airline first officer, upgrade to regional captain or move directly to a major airline as a first officer, then work through the seniority list to captain. The timeline for each stage has compressed significantly  -  what took 20 years in the 1990s now takes 8 to 12 years for many pilots.
               </p>
             </>
           ),
@@ -56,7 +56,7 @@ const PilotSalaryUSA = () => {
           content: (
             <>
               <p>
-                Most pilots begin their airline careers at regional carriers — airlines such as SkyWest, Envoy, Piedmont, PSA, Horizon, GoJet, and Republic that operate regional jets under the banners of the major carriers. Regional airlines are the primary path for pilots who have built their 1,500 hours (or R-ATP minimums) as a CFI or in other roles.
+                Most pilots begin their airline careers at regional carriers  -  airlines such as SkyWest, Envoy, Piedmont, PSA, Horizon, GoJet, and Republic that operate regional jets under the banners of the major carriers. Regional airlines are the primary path for pilots who have built their 1,500 hours (or R-ATP minimums) as a CFI or in other roles.
               </p>
               <p>
                 Regional first officer starting salaries have transformed completely. In 2018, many regional FOs started at $25,000 to $35,000 per year. By 2026, the figures are dramatically higher: SkyWest starts at $111,170 (including a $5,000 signing bonus), Envoy at $110,428, and Piedmont at $111,684. These are verified 2026 figures from ATP Flight School's airline partner data. Total first-year compensation including per diem can exceed $120,000.
@@ -158,17 +158,17 @@ const PilotSalaryUSA = () => {
                 The timeline from zero hours to major airline captain has compressed significantly. A typical career path in 2026 looks like this:
               </p>
               <ul style={{ paddingLeft: "1.5rem", lineHeight: "2.2" }}>
-                <li><strong>Years 0 to 2:</strong> Flight training (PPL, IR, CPL, CFI) — earning $30,000 to $50,000 as a CFI</li>
-                <li><strong>Years 2 to 4:</strong> Regional airline first officer — earning $110,000 to $130,000 (2026 figures)</li>
-                <li><strong>Years 4 to 6:</strong> Regional captain or major airline FO hire — earning $90,000 to $130,000</li>
-                <li><strong>Years 6 to 12:</strong> Major airline first officer — earning $100,000 to $185,000</li>
-                <li><strong>Years 12 to 20:</strong> Major airline captain — earning $200,000 to $320,000+</li>
+                <li><strong>Years 0 to 2:</strong> Flight training (PPL, IR, CPL, CFI)  -  earning $30,000 to $50,000 as a CFI</li>
+                <li><strong>Years 2 to 4:</strong> Regional airline first officer  -  earning $110,000 to $130,000 (2026 figures)</li>
+                <li><strong>Years 4 to 6:</strong> Regional captain or major airline FO hire  -  earning $90,000 to $130,000</li>
+                <li><strong>Years 6 to 12:</strong> Major airline first officer  -  earning $100,000 to $185,000</li>
+                <li><strong>Years 12 to 20:</strong> Major airline captain  -  earning $200,000 to $320,000+</li>
               </ul>
               <p>
-                These timelines are approximate and depend heavily on the state of the industry, the specific airline, and individual circumstances. The pilot shortage has compressed timelines at every stage — pilots who would have waited 15 years for a major airline captain seat in 2005 are upgrading in 8 to 10 years today.
+                These timelines are approximate and depend heavily on the state of the industry, the specific airline, and individual circumstances. The pilot shortage has compressed timelines at every stage  -  pilots who would have waited 15 years for a major airline captain seat in 2005 are upgrading in 8 to 10 years today.
               </p>
               <p>
-                The investment in training ($80,000 to $150,000 for the full pathway) is typically recovered within 3 to 5 years of reaching a major airline first officer position. The lifetime earnings potential of a major airline captain who retires at 65 is substantial — often exceeding $5 to $8 million in total career earnings.
+                The investment in training ($80,000 to $150,000 for the full pathway) is typically recovered within 3 to 5 years of reaching a major airline first officer position. The lifetime earnings potential of a major airline captain who retires at 65 is substantial  -  often exceeding $5 to $8 million in total career earnings.
               </p>
             </>
           ),

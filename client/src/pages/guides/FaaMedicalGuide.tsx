@@ -4,13 +4,13 @@ export default function FaaMedicalGuide() {
   return (
     <GuideLayout
       title="FAA Medical Certificate Requirements for Airline Pilots (2026)"
-      subtitle="Everything you need to know about the FAA First, Second, and Third Class Medical Certificates — vision standards, disqualifying conditions, ADHD, depression, and the Special Issuance process."
+      subtitle="Everything you need to know about the FAA First, Second, and Third Class Medical Certificates  -  vision standards, disqualifying conditions, ADHD, depression, and the Special Issuance process."
       readTime="11 min read"
       heroImage="/manus-storage/faa-medical_60c77c69.jpg"
       canonical="/guides/faa-medical-requirements"
       metaDescription="FAA medical certificate requirements for pilots in 2026. First, Second, and Third Class standards, disqualifying conditions, ADHD, depression, SSRI policy, and Special Issuance explained."
       author="Joshua Fagan"
-      authorRole="Founder, AviatorIQ — researched from FAA 14 CFR Part 67, FAA MedXPress guidance, and HIMS AME consultation data"
+      authorRole="Founder, AviatorIQ  -  researched from FAA 14 CFR Part 67, FAA MedXPress guidance, and HIMS AME consultation data"
       lastUpdated="June 2026"
       sections={[
         {
@@ -34,9 +34,9 @@ export default function FaaMedicalGuide() {
                   </thead>
                   <tbody>
                     {[
-                      ["First Class", "Airline Transport Pilot (ATP) — required to fly for an airline", "12 months", "6 months"],
-                      ["Second Class", "Commercial Pilot Certificate (CPL) — paid flying, charter, cargo", "12 months", "12 months"],
-                      ["Third Class", "Private Pilot Certificate (PPL) — recreational flying only", "60 months (under 40)", "24 months (40+)"],
+                      ["First Class", "Airline Transport Pilot (ATP)  -  required to fly for an airline", "12 months", "6 months"],
+                      ["Second Class", "Commercial Pilot Certificate (CPL)  -  paid flying, charter, cargo", "12 months", "12 months"],
+                      ["Third Class", "Private Pilot Certificate (PPL)  -  recreational flying only", "60 months (under 40)", "24 months (40+)"],
                     ].map(([cls, req, v1, v2], i) => (
                       <tr key={i} style={{ background: i % 2 === 0 ? "rgba(25, 35, 60, 0.8)" : "rgba(20, 30, 55, 0.7)" }}>
                         <td className="p-3 font-medium text-white">{cls}</td>
@@ -55,7 +55,7 @@ export default function FaaMedicalGuide() {
           ),
         },
         {
-          heading: "The MedXPress application — read this before you apply",
+          heading: "The MedXPress application  -  read this before you apply",
           content: (
             <div>
               <p className="mb-4">
@@ -68,10 +68,10 @@ export default function FaaMedicalGuide() {
                 </p>
               </div>
               <p className="mb-4">
-                If you have a complex medical history — ADHD diagnosis, depression, DUI, heart condition — do <strong>not</strong> submit a MedXPress application until you have had a private, off-the-record consultation with a HIMS AME (Human Intervention Motivation Study Aviation Medical Examiner). A HIMS AME specialises in complex medical cases and can advise you on how to present your history before anything goes on your official FAA record.
+                If you have a complex medical history  -  ADHD diagnosis, depression, DUI, heart condition  -  do <strong>not</strong> submit a MedXPress application until you have had a private, off-the-record consultation with a HIMS AME (Human Intervention Motivation Study Aviation Medical Examiner). A HIMS AME specialises in complex medical cases and can advise you on how to present your history before anything goes on your official FAA record.
               </p>
               <p>
-                The cost of an AME appointment is typically <strong>$150–$250</strong>, paid directly to the examiner. Insurance does not cover this. A HIMS AME consultation (not an official exam) typically costs $200–$400.
+                The cost of an AME appointment is typically <strong>$150-$250</strong>, paid directly to the examiner. Insurance does not cover this. A HIMS AME consultation (not an official exam) typically costs $200-$400.
               </p>
             </div>
           ),
@@ -84,7 +84,7 @@ export default function FaaMedicalGuide() {
                 {[
                   {
                     area: "Vision",
-                    detail: "Distant vision: 20/20 or better in each eye separately, with or without correction. Near vision: 20/40 or better in each eye. Intermediate vision (age 50+): 20/40 or better. Colour vision: must be able to perceive colours necessary for safe performance — failing the Ishihara test requires an alternative test (FALANT, Optec 900, or operational colour vision test). LASIK and PRK are acceptable once vision has stabilised and there are no adverse side effects.",
+                    detail: "Distant vision: 20/20 or better in each eye separately, with or without correction. Near vision: 20/40 or better in each eye. Intermediate vision (age 50+): 20/40 or better. Colour vision: must be able to perceive colours necessary for safe performance  -  failing the Ishihara test requires an alternative test (FALANT, Optec 900, or operational colour vision test). LASIK and PRK are acceptable once vision has stabilised and there are no adverse side effects.",
                   },
                   {
                     area: "Hearing",
@@ -96,11 +96,11 @@ export default function FaaMedicalGuide() {
                   },
                   {
                     area: "Mental health",
-                    detail: "History of psychosis, bipolar disorder, or personality disorder with repeated overt acts is disqualifying. Depression and anxiety are assessed case by case — see the SSRI section below. Substance dependence is disqualifying without a Special Issuance.",
+                    detail: "History of psychosis, bipolar disorder, or personality disorder with repeated overt acts is disqualifying. Depression and anxiety are assessed case by case  -  see the SSRI section below. Substance dependence is disqualifying without a Special Issuance.",
                   },
                   {
                     area: "Neurological",
-                    detail: "History of epilepsy or unexplained disturbance of consciousness is disqualifying. ADHD is assessed case by case — see below. Stroke history requires a Special Issuance.",
+                    detail: "History of epilepsy or unexplained disturbance of consciousness is disqualifying. ADHD is assessed case by case  -  see below. Stroke history requires a Special Issuance.",
                   },
                 ].map(({ area, detail }) => (
                   <div key={area} className="p-4 rounded-lg" style={{ background: "rgba(25, 35, 60, 0.8)", border: "1px solid rgba(255, 255, 255, 0.1)" }}>
@@ -128,7 +128,7 @@ export default function FaaMedicalGuide() {
               <ul className="space-y-2 mb-4 text-sm" style={{ color: "rgba(255, 255, 255, 0.8)" }}>
                 {[
                   "You have been off all stimulant medication for a minimum of 90 days",
-                  "You undergo a comprehensive neuropsychological evaluation (cost: $3,000–$5,000) demonstrating no significant cognitive impairment",
+                  "You undergo a comprehensive neuropsychological evaluation (cost: $3,000-$5,000) demonstrating no significant cognitive impairment",
                   "The evaluation is reviewed and approved by the FAA Aerospace Medical Certification Division in Oklahoma City",
                   "You are granted a Special Issuance, which must be renewed annually with updated evaluations",
                 ].map((item) => (
@@ -139,7 +139,7 @@ export default function FaaMedicalGuide() {
                 ))}
               </ul>
               <p className="mb-4">
-                The process is expensive, time-consuming, and not guaranteed. Many applicants with ADHD history are ultimately granted a Special Issuance, but the process typically takes 6–18 months. If you have a history of ADHD, consult a HIMS AME before doing anything else.
+                The process is expensive, time-consuming, and not guaranteed. Many applicants with ADHD history are ultimately granted a Special Issuance, but the process typically takes 6-18 months. If you have a history of ADHD, consult a HIMS AME before doing anything else.
               </p>
               <p className="text-sm p-3 rounded-lg" style={{ background: "rgba(255, 255, 255, 0.5)", border: "1px solid rgba(255, 255, 255, 0.1)", color: "rgba(255, 255, 255, 0.8)" }}>
                 Use our <strong className="text-white">US Medical Condition Lookup</strong> tool to check your specific condition against FAA standards.
@@ -175,7 +175,7 @@ export default function FaaMedicalGuide() {
                 ))}
               </ul>
               <p>
-                The SSRI Special Issuance process typically takes 6–12 months for initial approval. It is not guaranteed, but the majority of straightforward cases are approved. If you are currently on an approved SSRI and considering a pilot career, do not stop your medication without medical advice — consult a HIMS AME first.
+                The SSRI Special Issuance process typically takes 6-12 months for initial approval. It is not guaranteed, but the majority of straightforward cases are approved. If you are currently on an approved SSRI and considering a pilot career, do not stop your medication without medical advice  -  consult a HIMS AME first.
               </p>
             </div>
           ),
@@ -185,13 +185,13 @@ export default function FaaMedicalGuide() {
           content: (
             <div>
               <p className="mb-4">
-                If you are in good health with no significant medical history, the AME will issue your certificate at the end of your appointment. This is a <strong>Standard Issuance</strong> — the straightforward case.
+                If you are in good health with no significant medical history, the AME will issue your certificate at the end of your appointment. This is a <strong>Standard Issuance</strong>  -  the straightforward case.
               </p>
               <p className="mb-4">
-                If you have a condition that requires further review, the AME cannot issue the certificate at the appointment. They must defer your application to the FAA Aerospace Medical Certification Division (AMCD) in Oklahoma City. The AMCD reviews your medical records and, if they determine you are safe to fly, grants a <strong>Special Issuance</strong>. This process typically takes 3–18 months depending on the complexity of your case.
+                If you have a condition that requires further review, the AME cannot issue the certificate at the appointment. They must defer your application to the FAA Aerospace Medical Certification Division (AMCD) in Oklahoma City. The AMCD reviews your medical records and, if they determine you are safe to fly, grants a <strong>Special Issuance</strong>. This process typically takes 3-18 months depending on the complexity of your case.
               </p>
               <p className="mb-4">
-                Special Issuances must be renewed periodically (usually annually) and require you to submit updated medical records to maintain the certificate. They are not permanent — if your condition changes, the FAA can revoke the Special Issuance.
+                Special Issuances must be renewed periodically (usually annually) and require you to submit updated medical records to maintain the certificate. They are not permanent  -  if your condition changes, the FAA can revoke the Special Issuance.
               </p>
               <div className="p-4 rounded-xl" style={{ background: "rgba(50, 180, 100, 0.1)", border: "1px solid rgba(255, 255, 255, 0.1)" }}>
                 <p className="font-semibold text-white mb-2">The key takeaway</p>
@@ -217,15 +217,15 @@ export default function FaaMedicalGuide() {
         },
         {
           question: "Can I become a pilot with ADHD in the USA?",
-          answer: "Possibly, but it is a complex process. All stimulant medications (Adderall, Ritalin, Vyvanse) are banned. You must be off medication for at least 90 days and undergo a neuropsychological evaluation costing $3,000–$5,000. If approved, you receive a Special Issuance that must be renewed annually.",
+          answer: "Possibly, but it is a complex process. All stimulant medications (Adderall, Ritalin, Vyvanse) are banned. You must be off medication for at least 90 days and undergo a neuropsychological evaluation costing $3,000-$5,000. If approved, you receive a Special Issuance that must be renewed annually.",
         },
         {
           question: "Can I fly for an airline while taking antidepressants?",
-          answer: "Yes, under specific conditions. The FAA allows pilots to hold medical certificates while taking one of four approved SSRIs (Prozac, Zoloft, Celexa, Lexapro) under a Special Issuance programme. The process takes 6–12 months and requires annual psychiatric evaluation.",
+          answer: "Yes, under specific conditions. The FAA allows pilots to hold medical certificates while taking one of four approved SSRIs (Prozac, Zoloft, Celexa, Lexapro) under a Special Issuance programme. The process takes 6-12 months and requires annual psychiatric evaluation.",
         },
         {
           question: "How much does an FAA medical exam cost?",
-          answer: "An FAA medical exam with an Aviation Medical Examiner (AME) typically costs $150–$250, paid directly to the examiner. Insurance does not cover this. A HIMS AME consultation for complex medical histories costs $200–$400.",
+          answer: "An FAA medical exam with an Aviation Medical Examiner (AME) typically costs $150-$250, paid directly to the examiner. Insurance does not cover this. A HIMS AME consultation for complex medical histories costs $200-$400.",
         },
         {
           question: "What is a Special Issuance?",

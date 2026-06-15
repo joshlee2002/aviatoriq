@@ -6,7 +6,7 @@ export default function MilitaryToAirlineUSA() {
   return (
     <GuideLayout
       title="Military Pilot to Airline Transition USA: Your 2026 Guide"
-      subtitle="How to transition from the US military to a commercial airline career — the R-ATP, translating hours, and leveraging military experience in 2026."
+      subtitle="How to transition from the US military to a commercial airline career  -  the R-ATP, translating hours, and leveraging military experience in 2026."
       canonical="/us/guides/military-to-airline-usa"
       metaDescription="Military pilot to airline transition USA 2026. How to translate military flight hours, the 750-hour R-ATP rule, and how airlines view military experience."
       readTime="11 min read"
@@ -87,7 +87,7 @@ export default function MilitaryToAirlineUSA() {
                 Before you can take the ATP written exam or the practical checkride, you must complete the <strong>ATP Certification Training Program (ATP-CTP)</strong>. This is a mandatory course consisting of 30 hours of ground school and 10 hours of simulator training.
               </p>
               <p>
-                The ATP-CTP course typically costs $4,000–$5,000. However, if you are hired by a regional airline, they will almost always pay for this course as part of your initial training. If you are applying directly to a major airline, you may need to self-fund the ATP-CTP to make yourself competitive, though some majors are beginning to offer conditional offers that include ATP-CTP sponsorship.
+                The ATP-CTP course typically costs $4,000-$5,000. However, if you are hired by a regional airline, they will almost always pay for this course as part of your initial training. If you are applying directly to a major airline, you may need to self-fund the ATP-CTP to make yourself competitive, though some majors are beginning to offer conditional offers that include ATP-CTP sponsorship.
               </p>
             </>
           ),
@@ -103,7 +103,7 @@ export default function MilitaryToAirlineUSA() {
                 <strong>Direct to Majors:</strong> Due to the pilot shortage, major airlines (Delta, United, American, Southwest, FedEx, UPS) are actively recruiting military pilots directly, bypassing the regional airlines entirely. If you have 1,500+ hours of high-performance military turbine time (especially heavy multi-engine or fast jet experience), you are highly competitive for a direct-entry First Officer position at a major carrier.
               </p>
               <p>
-                <strong>The Regional Route:</strong> If you have fewer hours (e.g., you separated early or flew helicopters), you may need to spend 1–2 years at a regional airline (like SkyWest, Republic, or Envoy) to build civilian turbine experience. Regional airlines actively recruit military pilots and offer rapid upgrade paths to Captain.
+                <strong>The Regional Route:</strong> If you have fewer hours (e.g., you separated early or flew helicopters), you may need to spend 1-2 years at a regional airline (like SkyWest, Republic, or Envoy) to build civilian turbine experience. Regional airlines actively recruit military pilots and offer rapid upgrade paths to Captain.
               </p>
               <p>
                 <strong>Helicopter Pilots:</strong> Transitioning from military helicopters to commercial airlines requires fixed-wing experience. The FAA requires 250 hours of fixed-wing Pilot-in-Command time for the ATP. Many regional airlines offer "Rotor Transition Programs" (RTP) that provide financial assistance to help military helicopter pilots obtain their fixed-wing ratings and build the required hours.

@@ -127,7 +127,7 @@ const AdhdFaaMedical = () => {
                 Consider consulting with an aviation medical specialist or an aviation attorney who has experience with ADHD cases. These professionals can provide invaluable guidance, help you understand the specific FAA requirements, and assist in preparing a compelling application package. They can also recommend neuropsychologists who are familiar with FAA protocols, ensuring that your evaluations meet the necessary standards. While this adds to the cost, it can significantly increase your chances of a successful outcome and potentially shorten the overall process.
               </p>
               <p>
-                The ADHD certification process with the FAA is lengthy — typically 6–18 months from initial application to Special Issuance. Follow all instructions from the FAA and your AME precisely, provide requested documentation promptly, and work with a physician experienced in FAA ADHD cases. Pilots with a history of ADHD have successfully obtained First Class medicals. The process is demanding but it is a defined, navigable pathway.
+                The ADHD certification process with the FAA is lengthy  -  typically 6-18 months from initial application to Special Issuance. Follow all instructions from the FAA and your AME precisely, provide requested documentation promptly, and work with a physician experienced in FAA ADHD cases. Pilots with a history of ADHD have successfully obtained First Class medicals. The process is demanding but it is a defined, navigable pathway.
               </p>
               <h3>Key Considerations for FAA Medical with ADHD</h3>
               <table className="w-full text-sm text-left border-collapse">
@@ -152,7 +152,7 @@ const AdhdFaaMedical = () => {
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Neuropsychological Testing</strong></td>
                     <td className="px-4 py-3 text-white/80">Comprehensive evaluation by an FAA-aware neuropsychologist.</td>
-                    <td className="px-4 py-3 text-white/80">$3,000 - $6,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$3,000 - $6,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Medical Records</strong></td>
@@ -167,7 +167,7 @@ const AdhdFaaMedical = () => {
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Professional Consultation</strong></td>
                     <td className="px-4 py-3 text-white/80">Consider an aviation medical consultant or attorney.</td>
-                    <td className="px-4 py-3 text-white/80">$500 - $2,000+</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$500 - $2,000+</td>
                   </tr>
                 </tbody>
               </table>

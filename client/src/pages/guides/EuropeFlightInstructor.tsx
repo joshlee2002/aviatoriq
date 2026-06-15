@@ -65,7 +65,7 @@ export default function EuropeFlightInstructor() {
               <ul>
                 <li>Refresh the technical knowledge of the student instructor.</li>
                 <li>Train the student instructor to teach ground subjects and air exercises.</li>
-                <li>Ensure that the student instructor’s flying is of a sufficiently high standard.</li>
+                <li>Ensure that the student instructor's flying is of a sufficiently high standard.</li>
                 <li>Teach the student instructor the principles of basic instruction and how to apply them at the PPL level.</li>
               </ul>
               <h3>Mutual Flying:</h3>
@@ -79,7 +79,7 @@ export default function EuropeFlightInstructor() {
           content: (
             <>
               <p>The investment required for EASA Flight Instructor (FI) training in Europe can vary significantly based on the chosen flight school, country, and specific aircraft types involved. As of 2026, prospective FIs should anticipate a substantial financial commitment, reflecting the depth and rigor of the training.</p>
-              <p>Based on current data and trends, the cost for a comprehensive FI training course in Europe typically ranges from <strong>€8,000 to €12,000</strong>. This figure primarily covers the theoretical knowledge instruction, teaching and learning modules, and the required flight instruction hours. It is crucial to note that this range can fluctuate, with some premium institutions or specialized courses potentially exceeding these estimates.</p>
+              <p>Based on current data and trends, the cost for a comprehensive FI training course in Europe typically ranges from <strong>EUR8,000 to EUR12,000</strong>. This figure primarily covers the theoretical knowledge instruction, teaching and learning modules, and the required flight instruction hours. It is crucial to note that this range can fluctuate, with some premium institutions or specialized courses potentially exceeding these estimates.</p>
               <h3>Factors Influencing Cost:</h3>
               <ul>
                 <li><strong>Flight School Reputation and Location:</strong> Well-established academies in Western European countries may have higher fees compared to those in Eastern Europe.</li>
@@ -110,8 +110,8 @@ export default function EuropeFlightInstructor() {
               <h3>Compensation:</h3>
               <p>Compensation for Flight Instructors in Europe varies based on experience, location, and the type of employment (e.g., freelance vs. salaried). As of 2026:</p>
               <ul>
-                <li><strong>Entry-Level/Freelance:</strong> For PPL-level instruction, freelance FIs might earn between <strong>€15 to €25 net per flight hour</strong>. Given that daily flight hours can range from 3 to 6, with additional time for briefings and debriefings, monthly income during peak seasons (e.g., summer) could be estimated around <strong>€3,000 gross</strong> for a full-time commitment.</li>
-                <li><strong>Commercial Flight Schools:</strong> Salaried positions at commercial flight schools generally offer annual salaries ranging from <strong>€35,000 to €55,000</strong>. In countries like Germany, the average annual salary for an in-flight instructor can be higher, around <strong>€91,215</strong>, or an equivalent hourly rate of <strong>€44</strong>.</li>
+                <li><strong>Entry-Level/Freelance:</strong> For PPL-level instruction, freelance FIs might earn between <strong>EUR15 to EUR25 net per flight hour</strong>. Given that daily flight hours can range from 3 to 6, with additional time for briefings and debriefings, monthly income during peak seasons (e.g., summer) could be estimated around <strong>EUR3,000 gross</strong> for a full-time commitment.</li>
+                <li><strong>Commercial Flight Schools:</strong> Salaried positions at commercial flight schools generally offer annual salaries ranging from <strong>EUR35,000 to EUR55,000</strong>. In countries like Germany, the average annual salary for an in-flight instructor can be higher, around <strong>EUR91,215</strong>, or an equivalent hourly rate of <strong>EUR44</strong>.</li>
                 <li><strong>Advanced Ratings:</strong> Instructors with CPL and IFR privileges, or those teaching advanced courses, often command higher hourly rates, potentially double the standard PPL instruction rates.</li>
                 <li><strong>Supervised Phase (Restricted Privileges):</strong> During the initial supervised phase (often referred to as the "restricted privileges" or "rp-phase"), remuneration might be lower or even unpaid, as the instructor gains experience under supervision.</li>
               </ul>
@@ -123,10 +123,10 @@ export default function EuropeFlightInstructor() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Role/Experience Level</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (EUR)</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Entry-Level/Restricted FI</td><td className="px-4 py-3 text-white/80">€18,000 - €30,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Experienced FI (PPL/CPL)</td><td className="px-4 py-3 text-white/80">€35,000 - €55,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Advanced FI (IR/ME)</td><td className="px-4 py-3 text-white/80">€50,000 - €75,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Senior FI/Chief Instructor</td><td className="px-4 py-3 text-white/80">€70,000 - €100,000+</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Entry-Level/Restricted FI</td><td className="px-4 py-3 text-white/80">EUR18,000 - EUR30,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Experienced FI (PPL/CPL)</td><td className="px-4 py-3 text-white/80">EUR35,000 - EUR55,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Advanced FI (IR/ME)</td><td className="px-4 py-3 text-white/80">EUR50,000 - EUR75,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Senior FI/Chief Instructor</td><td className="px-4 py-3 text-white/80">EUR70,000 - EUR100,000+</td></tr>
                 </tbody>
               </table>
               <p><em>Note: These figures are estimates and can vary based on country, flight school, and specific contract terms.</em></p>
@@ -138,7 +138,7 @@ export default function EuropeFlightInstructor() {
         { question: "What are the minimum age requirements to become an EASA Flight Instructor?", answer: "You must be at least 18 years old to apply for an EASA Flight Instructor certificate." },
         { question: "Do I need a CPL(A) to become an EASA Flight Instructor?", answer: "You need at least a CPL(A) or a PPL(A) with the theoretical knowledge examination for the CPL(A) successfully passed. The latter does not grant a CPL itself but fulfills the theoretical knowledge requirement for the FI rating." },
         { question: "How many flight hours are required to become an EASA Flight Instructor?", answer: "A minimum of 200 hours total flight time on aeroplanes or TMGs, with at least 150 hours as Pilot-in-Command (PIC), is required. Additionally, specific instrument flight and cross-country flight hours are necessary." },
-        { question: "What is the typical cost of EASA Flight Instructor training in Europe?", answer: "The cost typically ranges from €8,000 to €12,000, but this can vary based on the flight school, country, and specific aircraft types used for training. This figure generally covers theoretical and flight instruction." },
+        { question: "What is the typical cost of EASA Flight Instructor training in Europe?", answer: "The cost typically ranges from EUR8,000 to EUR12,000, but this can vary based on the flight school, country, and specific aircraft types used for training. This figure generally covers theoretical and flight instruction." },
         { question: "What are the career prospects for EASA Flight Instructors in Europe in 2026?", answer: "The career prospects are generally positive, with an anticipated shortage of qualified FIs. Opportunities exist in Approved Training Organisations (ATOs), aero clubs, and general aviation. Experienced FIs can also progress to advanced instructor roles or transition to airline careers." },
         { question: "What is the 'restricted privileges' phase for new FIs?", answer: "The 'restricted privileges' phase is an initial period where new FIs operate under supervision. During this time, they gain experience and accumulate a certain number of instructional hours and solo flight supervisions before their privileges become unrestricted. Remuneration might be lower or unpaid during this phase." },
         { question: "Can I get funding for EASA Flight Instructor training?", answer: "Some countries or flight schools may offer funding opportunities or partnerships with employment agencies. It is advisable to research and inquire about such options directly with ATOs or relevant national aviation authorities." },

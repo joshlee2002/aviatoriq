@@ -138,7 +138,7 @@ export default function UaeMedicalClass1() {
               </table>
 
               <h4>Visual System (MED.B.070)</h4>
-              <p>Distant visual acuity, with or without correction, must be 6/9 (0.7) or better in each eye separately, and 6/6 (1.0) or better with both eyes. Near vision requires reading an N5 chart at 30-50 cm and an N14 chart at 100 cm. Normal fields of vision and binocular function are mandatory. Refractive error limits apply: hypermetropia not exceeding +5.0 dioptres, myopia not exceeding –6.0 dioptres, astigmatism not exceeding 2.0 dioptres, and anisometropia not exceeding 2.0 dioptres for initial applicants [1].</p>
+              <p>Distant visual acuity, with or without correction, must be 6/9 (0.7) or better in each eye separately, and 6/6 (1.0) or better with both eyes. Near vision requires reading an N5 chart at 30-50 cm and an N14 chart at 100 cm. Normal fields of vision and binocular function are mandatory. Refractive error limits apply: hypermetropia not exceeding +5.0 dioptres, myopia not exceeding -6.0 dioptres, astigmatism not exceeding 2.0 dioptres, and anisometropia not exceeding 2.0 dioptres for initial applicants [1].</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">

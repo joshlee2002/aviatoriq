@@ -4,7 +4,7 @@ export default function RyanairCadet() {
   return (
     <GuideLayout
       title="Ryanair Cadet Pilot Programme 2026: Complete Guide"
-      subtitle="How Ryanair recruits and trains its pilots — the cadet pathway, partner schools, costs, and what a career at Europe's largest airline actually looks like."
+      subtitle="How Ryanair recruits and trains its pilots  -  the cadet pathway, partner schools, costs, and what a career at Europe's largest airline actually looks like."
       canonical="/guides/ryanair-cadet-programme"
       metaDescription="Ryanair cadet pilot programme 2026: partner schools (FTEJerez, Bartolini Air, MATS), selection process, costs, and First Officer career. Updated June 2026."
       readTime="8 min read"
@@ -18,11 +18,11 @@ export default function RyanairCadet() {
         { title: "Integrated vs Modular ATPL Training", href: "/guides/integrated-vs-modular", time: "9 min" },
       ]}
       faqSchema={[
-        { question: "Does Ryanair have a cadet pilot programme?", answer: "Yes. Ryanair recruits cadets through its partner flight schools — primarily FTEJerez (Spain), Bartolini Air (Poland), and MATS (Malta). Successful graduates are offered First Officer positions on Ryanair's Boeing 737 fleet." },
-        { question: "Which flight schools does Ryanair partner with?", answer: "Ryanair's primary cadet partners are FTEJerez (Jerez, Spain), Bartolini Air (Wrocław, Poland), and MATS (Malta Air Training School). Training costs vary by school but typically range from €55,000 to €124,000." },
-        { question: "How much does Ryanair cadet training cost?", answer: "Costs vary by partner school: Bartolini Air (Poland) from approximately €55,000–€69,000; FTEJerez (Spain) approximately €124,000 all-inclusive; MATS (Malta) approximately €80,000–€95,000. Ryanair does not fund training." },
+        { question: "Does Ryanair have a cadet pilot programme?", answer: "Yes. Ryanair recruits cadets through its partner flight schools  -  primarily FTEJerez (Spain), Bartolini Air (Poland), and MATS (Malta). Successful graduates are offered First Officer positions on Ryanair's Boeing 737 fleet." },
+        { question: "Which flight schools does Ryanair partner with?", answer: "Ryanair's primary cadet partners are FTEJerez (Jerez, Spain), Bartolini Air (Wrocław, Poland), and MATS (Malta Air Training School). Training costs vary by school but typically range from EUR55,000 to EUR124,000." },
+        { question: "How much does Ryanair cadet training cost?", answer: "Costs vary by partner school: Bartolini Air (Poland) from approximately EUR55,000-EUR69,000; FTEJerez (Spain) approximately EUR124,000 all-inclusive; MATS (Malta) approximately EUR80,000-EUR95,000. Ryanair does not fund training." },
         { question: "Is Ryanair a good airline to start a pilot career?", answer: "Ryanair offers one of the most accessible routes into commercial aviation for low-hours graduates. The pay starts lower than BA or easyJet but increases significantly with experience. Many pilots use Ryanair as a stepping stone to other carriers, while others build long careers there." },
-        { question: "What aircraft does Ryanair fly?", answer: "Ryanair operates an all-Boeing 737 fleet — primarily the 737-800 and increasingly the 737 MAX 8 and MAX 10. The 737 type rating is one of the most widely recognised in commercial aviation." },
+        { question: "What aircraft does Ryanair fly?", answer: "Ryanair operates an all-Boeing 737 fleet  -  primarily the 737-800 and increasingly the 737 MAX 8 and MAX 10. The 737 type rating is one of the most widely recognised in commercial aviation." },
       ]}
       sections={[
         {
@@ -30,14 +30,14 @@ export default function RyanairCadet() {
           content: (
             <>
               <p>
-                Ryanair is Europe's largest airline by passenger numbers and one of the world's largest employers of commercial pilots. Unlike British Airways or easyJet, Ryanair does not operate a single branded cadet programme with a direct application portal. Instead, the airline recruits cadets through a network of approved partner flight schools — primarily FTEJerez in Spain, Bartolini Air in Poland, and MATS in Malta.
+                Ryanair is Europe's largest airline by passenger numbers and one of the world's largest employers of commercial pilots. Unlike British Airways or easyJet, Ryanair does not operate a single branded cadet programme with a direct application portal. Instead, the airline recruits cadets through a network of approved partner flight schools  -  primarily FTEJerez in Spain, Bartolini Air in Poland, and MATS in Malta.
               </p>
               <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="Ryanair cadet programme" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                This decentralised model means that if you want to pursue a Ryanair cadet pathway, you apply to and train at one of these partner schools, which have established relationships with Ryanair's recruitment team. Graduates who meet Ryanair's standards are offered First Officer positions on the Boeing 737 fleet — the airline's sole aircraft type.
+                This decentralised model means that if you want to pursue a Ryanair cadet pathway, you apply to and train at one of these partner schools, which have established relationships with Ryanair's recruitment team. Graduates who meet Ryanair's standards are offered First Officer positions on the Boeing 737 fleet  -  the airline's sole aircraft type.
               </p>
               <p>
-                Ryanair also recruits experienced pilots directly (minimum 500 hours, B737 type rating preferred), but for zero-hours applicants, the partner school route is the primary pathway. The airline is known for accepting low-hours graduates — some intakes have welcomed cadets with as few as 200 hours total time, making it one of the most accessible first airlines for newly qualified pilots.
+                Ryanair also recruits experienced pilots directly (minimum 500 hours, B737 type rating preferred), but for zero-hours applicants, the partner school route is the primary pathway. The airline is known for accepting low-hours graduates  -  some intakes have welcomed cadets with as few as 200 hours total time, making it one of the most accessible first airlines for newly qualified pilots.
               </p>
             </>
           ),
@@ -50,16 +50,16 @@ export default function RyanairCadet() {
                 Ryanair's three primary cadet partner schools each offer a different proposition in terms of cost, location, and training environment. Understanding the differences is important when choosing your training route.
               </p>
               <p>
-                <strong>FTEJerez (Jerez de la Frontera, Spain):</strong> One of Europe's most prestigious integrated academies, FTEJerez has trained pilots for over 30 years and has a long-standing Ryanair partnership. The school is based in southern Spain, offering excellent flying weather and fast progression. The all-inclusive programme (accommodation and meals included) costs approximately €124,000. FTEJerez graduates are well-regarded by Ryanair and other European carriers.
+                <strong>FTEJerez (Jerez de la Frontera, Spain):</strong> One of Europe's most prestigious integrated academies, FTEJerez has trained pilots for over 30 years and has a long-standing Ryanair partnership. The school is based in southern Spain, offering excellent flying weather and fast progression. The all-inclusive programme (accommodation and meals included) costs approximately EUR124,000. FTEJerez graduates are well-regarded by Ryanair and other European carriers.
               </p>
               <p>
-                <strong>Bartolini Air (Wrocław, Poland):</strong> The best-value option in the Ryanair partner network. Bartolini Air offers a full integrated ATPL programme from approximately €55,000–€69,000 — roughly half the cost of FTEJerez — with a strong Ryanair placement record. CAA and EASA approved. Increasingly popular with UK students seeking the same quality training at a fraction of the cost. Wrocław is a modern, affordable city with a good quality of life.
+                <strong>Bartolini Air (Wrocław, Poland):</strong> The best-value option in the Ryanair partner network. Bartolini Air offers a full integrated ATPL programme from approximately EUR55,000-EUR69,000  -  roughly half the cost of FTEJerez  -  with a strong Ryanair placement record. CAA and EASA approved. Increasingly popular with UK students seeking the same quality training at a fraction of the cost. Wrocław is a modern, affordable city with a good quality of life.
               </p>
               <p>
-                <strong>MATS — Malta Air Training School (Malta):</strong> Based in Malta, MATS offers an integrated ATPL programme in a warm, English-speaking environment. Costs are typically in the range of €80,000–€95,000. Malta's aviation authority is EASA-aligned, and MATS graduates are accepted by Ryanair and other European carriers.
+                <strong>MATS  -  Malta Air Training School (Malta):</strong> Based in Malta, MATS offers an integrated ATPL programme in a warm, English-speaking environment. Costs are typically in the range of EUR80,000-EUR95,000. Malta's aviation authority is EASA-aligned, and MATS graduates are accepted by Ryanair and other European carriers.
               </p>
               <p>
-                When choosing between these schools, consider not just the cost but the training environment, the school's current Ryanair placement rate, and the lifestyle factors of training in each location. All three schools produce competent graduates — the differences are primarily financial and environmental rather than qualitative.
+                When choosing between these schools, consider not just the cost but the training environment, the school's current Ryanair placement rate, and the lifestyle factors of training in each location. All three schools produce competent graduates  -  the differences are primarily financial and environmental rather than qualitative.
               </p>
             </>
           ),
@@ -80,7 +80,7 @@ export default function RyanairCadet() {
                 <li>English Language Proficiency Level 4 or above</li>
               </ul>
               <p>
-                Ryanair's cadet pathway is generally considered more accessible than BA or easyJet's programmes in terms of academic requirements. The airline is primarily interested in your aptitude test performance, medical fitness, and personal qualities — not your A-level grades. This makes it a realistic option for candidates who may not have the strongest academic background but demonstrate strong cognitive ability and the right personal profile.
+                Ryanair's cadet pathway is generally considered more accessible than BA or easyJet's programmes in terms of academic requirements. The airline is primarily interested in your aptitude test performance, medical fitness, and personal qualities  -  not your A-level grades. This makes it a realistic option for candidates who may not have the strongest academic background but demonstrate strong cognitive ability and the right personal profile.
               </p>
             </>
           ),
@@ -99,7 +99,7 @@ export default function RyanairCadet() {
                 <strong>Aptitude Testing:</strong> All partner schools use psychometric and aptitude testing as a core selection tool. Tests typically cover numerical reasoning, spatial awareness, multi-tasking, and psychomotor skills. Preparation is strongly recommended.
               </p>
               <p>
-                <strong>Simulator Assessment:</strong> A basic simulator assessment to evaluate your ability to learn and follow instructions. No prior flying experience is required or expected — this is a learning assessment, not a skills test.
+                <strong>Simulator Assessment:</strong> A basic simulator assessment to evaluate your ability to learn and follow instructions. No prior flying experience is required or expected  -  this is a learning assessment, not a skills test.
               </p>
               <p>
                 <strong>Interview:</strong> A structured interview covering your motivation, personal qualities, and understanding of the pilot career. Ryanair and its partner schools are looking for candidates who are mature, self-aware, and realistic about the demands of a commercial pilot career.
@@ -121,15 +121,15 @@ export default function RyanairCadet() {
                 The Ryanair cadet pathway is self-funded. The total training cost depends on your choice of partner school:
               </p>
               <ul>
-                <li><strong>Bartolini Air:</strong> €55,000–€69,000 (approximately £47,000–£59,000 at current rates)</li>
-                <li><strong>MATS Malta:</strong> €80,000–€95,000 (approximately £68,000–£81,000)</li>
-                <li><strong>FTEJerez:</strong> €124,000 all-inclusive (approximately £106,000)</li>
+                <li><strong>Bartolini Air:</strong> EUR55,000-EUR69,000 (approximately £47,000-£59,000 at current rates)</li>
+                <li><strong>MATS Malta:</strong> EUR80,000-EUR95,000 (approximately £68,000-£81,000)</li>
+                <li><strong>FTEJerez:</strong> EUR124,000 all-inclusive (approximately £106,000)</li>
               </ul>
               <p>
-                For UK students, Bartolini Air represents an extraordinary value proposition — a full integrated ATPL with a strong Ryanair placement record at roughly half the cost of UK schools. The CAA approval means there are no issues with UK airline applications, and the quality of training is consistently well-regarded.
+                For UK students, Bartolini Air represents an extraordinary value proposition  -  a full integrated ATPL with a strong Ryanair placement record at roughly half the cost of UK schools. The CAA approval means there are no issues with UK airline applications, and the quality of training is consistently well-regarded.
               </p>
               <p>
-                Ryanair First Officer salaries start at approximately €45,000–€55,000 (base) with productivity pay that can increase total earnings significantly. The airline's pay structure rewards hours flown, so earnings increase as you build experience. Many Ryanair FOs earn €60,000–€80,000 in their second and third years. Captain salaries at Ryanair range from €90,000–€130,000.
+                Ryanair First Officer salaries start at approximately EUR45,000-EUR55,000 (base) with productivity pay that can increase total earnings significantly. The airline's pay structure rewards hours flown, so earnings increase as you build experience. Many Ryanair FOs earn EUR60,000-EUR80,000 in their second and third years. Captain salaries at Ryanair range from EUR90,000-EUR130,000.
               </p>
             </>
           ),
@@ -139,16 +139,16 @@ export default function RyanairCadet() {
           content: (
             <>
               <p>
-                Ryanair has a reputation — not entirely undeserved — as a demanding employer with a focus on efficiency and productivity. Understanding what a Ryanair career actually looks like helps you make an informed decision about whether it is the right fit for you.
+                Ryanair has a reputation  -  not entirely undeserved  -  as a demanding employer with a focus on efficiency and productivity. Understanding what a Ryanair career actually looks like helps you make an informed decision about whether it is the right fit for you.
               </p>
               <p>
-                The Boeing 737 is an excellent first aircraft. It is one of the most widely flown commercial jets in the world, and a 737 type rating is recognised and valued by virtually every airline globally. The experience you build at Ryanair — high-frequency short-haul operations, often into challenging airports — is genuinely excellent preparation for a long career in aviation.
+                The Boeing 737 is an excellent first aircraft. It is one of the most widely flown commercial jets in the world, and a 737 type rating is recognised and valued by virtually every airline globally. The experience you build at Ryanair  -  high-frequency short-haul operations, often into challenging airports  -  is genuinely excellent preparation for a long career in aviation.
               </p>
               <p>
                 Ryanair's bases are spread across the UK and Europe, giving you some choice over where you are based. The airline has improved its employment terms significantly in recent years following industrial action, and many pilots report a better working environment than the airline's historical reputation suggests.
               </p>
               <p>
-                Many pilots use Ryanair as a stepping stone — building 1,500–3,000 hours over 3–5 years before moving to BA, easyJet, or long-haul carriers. Others build long careers at Ryanair, progressing to Captain and enjoying the productivity pay that comes with seniority. Both paths are valid.
+                Many pilots use Ryanair as a stepping stone  -  building 1,500-3,000 hours over 3-5 years before moving to BA, easyJet, or long-haul carriers. Others build long careers at Ryanair, progressing to Captain and enjoying the productivity pay that comes with seniority. Both paths are valid.
               </p>
             </>
           ),

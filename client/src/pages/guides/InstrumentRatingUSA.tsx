@@ -40,7 +40,7 @@ const InstrumentRatingUSA = () => {
           content: (
             <>
               <p>
-                For any pilot aspiring to a professional career in aviation, or even a private pilot seeking to enhance safety and utility, the FAA Instrument Rating (IR) is not merely an option—it\'s a fundamental necessity. This certification equips pilots with the skills and legal authority to fly under Instrument Flight Rules (IFR) and in Instrument Meteorological Conditions (IMC), meaning operations in clouds, fog, or other low-visibility environments where visual flight rules (VFR) are not permissible. It transforms a pilot from being weather-dependent to weather-aware, significantly expanding their operational capabilities and safety margins.
+                For any pilot aspiring to a professional career in aviation, or even a private pilot seeking to enhance safety and utility, the FAA Instrument Rating (IR) is not merely an option - it\'s a fundamental necessity. This certification equips pilots with the skills and legal authority to fly under Instrument Flight Rules (IFR) and in Instrument Meteorological Conditions (IMC), meaning operations in clouds, fog, or other low-visibility environments where visual flight rules (VFR) are not permissible. It transforms a pilot from being weather-dependent to weather-aware, significantly expanding their operational capabilities and safety margins.
               </p>
               <p>
                 The journey to obtaining an Instrument Rating is often regarded as one of the most challenging yet rewarding phases of pilot training. It demands a deep understanding of aerodynamics, meteorology, air traffic control (ATC) procedures, and advanced aircraft systems, all while honing precise aircraft control solely by reference to instruments. This guide will delve into the specific FAA requirements, the financial investment involved, the profound career advantages it offers, and crucial aspects of maintaining instrument currency in the United States.
@@ -124,44 +124,44 @@ const InstrumentRatingUSA = () => {
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80">Aircraft Rental (Cessna 172)</td>
                       <td className="px-4 py-3 text-white/80">25</td>
-                      <td className="px-4 py-3 text-white/80">$175</td>
-                      <td className="px-4 py-3 text-white/80">$4,375</td>
+                      <td className="px-4 py-3 text-white/80">{">"}$175</td>
+                      <td className="px-4 py-3 text-white/80">{">"}$4,375</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80">CFII Instruction (Aircraft)</td>
                       <td className="px-4 py-3 text-white/80">25</td>
-                      <td className="px-4 py-3 text-white/80">$70</td>
-                      <td className="px-4 py-3 text-white/80">$1,750</td>
+                      <td className="px-4 py-3 text-white/80">{">"}$70</td>
+                      <td className="px-4 py-3 text-white/80">{">"}$1,750</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80">Simulator Time (AATD)</td>
                       <td className="px-4 py-3 text-white/80">15</td>
-                      <td className="px-4 py-3 text-white/80">$75</td>
-                      <td className="px-4 py-3 text-white/80">$1,125</td>
+                      <td className="px-4 py-3 text-white/80">{">"}$75</td>
+                      <td className="px-4 py-3 text-white/80">{">"}$1,125</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80">CFII Instruction (Simulator)</td>
                       <td className="px-4 py-3 text-white/80">15</td>
-                      <td className="px-4 py-3 text-white/80">$70</td>
-                      <td className="px-4 py-3 text-white/80">$1,050</td>
+                      <td className="px-4 py-3 text-white/80">{">"}$70</td>
+                      <td className="px-4 py-3 text-white/80">{">"}$1,050</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80">Knowledge Test Fee</td>
                       <td className="px-4 py-3 text-white/80">N/A</td>
                       <td className="px-4 py-3 text-white/80">N/A</td>
-                      <td className="px-4 py-3 text-white/80">$175</td>
+                      <td className="px-4 py-3 text-white/80">{">"}$175</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80">DPE Checkride Fee</td>
                       <td className="px-4 py-3 text-white/80">N/A</td>
                       <td className="px-4 py-3 text-white/80">N/A</td>
-                      <td className="px-4 py-3 text-white/80">$800</td>
+                      <td className="px-4 py-3 text-white/80">{">"}$800</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80">Study Materials/Charts</td>
                       <td className="px-4 py-3 text-white/80">N/A</td>
                       <td className="px-4 py-3 text-white/80">N/A</td>
-                      <td className="px-4 py-3 text-white/80">$300</td>
+                      <td className="px-4 py-3 text-white/80">{">"}$300</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td colSpan={3}><strong>Total Estimated Cost</strong></td>
@@ -197,7 +197,7 @@ const InstrumentRatingUSA = () => {
                 Maintaining instrument currency is a critical ongoing responsibility for any IR-rated pilot. According to FAR 61.57(c), to act as pilot in command under IFR or in IMC, a pilot must, within the preceding six calendar months, have performed and logged: six instrument approaches, holding procedures and tasks, and intercepting and tracking courses using navigation systems. This can be accomplished in an aircraft, a flight simulator, or a flight training device. If a pilot fails to meet these requirements within six months, they have an additional six months to regain currency with a CFII. If currency lapses beyond 12 months, an Instrument Proficiency Check (IPC) with a CFII is required.
               </p>
               <p>
-                The roles of a safety pilot and a Certified Flight Instructor – Instrument (CFII) are distinct but both crucial for instrument training and currency. A <strong>safety pilot</strong> is required when a pilot is flying in simulated instrument conditions (e.g., wearing a view-limiting device) under VFR. The safety pilot must be at least a private pilot with appropriate category and class ratings, current medical certificate, and if the flight is conducted under IFR, the safety pilot must be instrument current. Their primary role is to scan for traffic and provide visual lookout, ensuring the safety of the flight while the other pilot focuses on instrument procedures. The safety pilot can log PIC time for the portion of the flight where they are acting as safety pilot, and the instrument pilot can log simulated instrument time.
+                The roles of a safety pilot and a Certified Flight Instructor - Instrument (CFII) are distinct but both crucial for instrument training and currency. A <strong>safety pilot</strong> is required when a pilot is flying in simulated instrument conditions (e.g., wearing a view-limiting device) under VFR. The safety pilot must be at least a private pilot with appropriate category and class ratings, current medical certificate, and if the flight is conducted under IFR, the safety pilot must be instrument current. Their primary role is to scan for traffic and provide visual lookout, ensuring the safety of the flight while the other pilot focuses on instrument procedures. The safety pilot can log PIC time for the portion of the flight where they are acting as safety pilot, and the instrument pilot can log simulated instrument time.
               </p>
               <p>
                 A <strong>CFII</strong>, on the other hand, is an authorized instructor specifically qualified to provide instrument flight instruction and endorsements. A CFII can provide all the necessary training for an initial Instrument Rating, conduct Instrument Proficiency Checks (IPCs), and help pilots regain currency. Unlike a safety pilot, a CFII is actively instructing and evaluating the instrument pilot\'s performance, providing guidance and signing off on training. While a safety pilot is essential for simulated instrument flight in VFR conditions, a CFII is indispensable for formal instruction, checkride preparation, and regaining lapsed currency, offering expertise that a safety pilot cannot.

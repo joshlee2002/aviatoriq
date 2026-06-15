@@ -4,49 +4,49 @@ import GuideLayout from '@/components/GuideLayout';
 export default function AustraliaPilotTrainingCosts() {
   return (
     <GuideLayout
-      title="Pilot Training Costs in Australia (2026): A Complete Breakdown"
-      subtitle="From Recreational Pilot Licence to Commercial Pilot Licence: real pricing data from CASA-approved Part 141 and Part 142 flight schools."
-      readTime="12 min"
+      title="Pilot Training Costs in Australia (2026): A Comprehensive Breakdown"
+      subtitle="Navigating the financial landscape of flight training in Australia, from Recreational Pilot Licence to Commercial Pilot Licence, with real 2026 data from CASA-approved Part 141 and Part 142 flight schools."
+      readTime="15 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
       category="Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-training-costs"
-      metaDescription="Detailed breakdown of pilot training costs in Australia for 2026. Discover real prices for RPL, PPL, CPL, Multi-IFR, and the VET Student Loans system."
-      ctaText="Check your pilot readiness"
+      metaDescription="An in-depth analysis of pilot training costs in Australia for 2026. Explore real prices for RPL, PPL, CPL, Multi-IFR, the VET Student Loans system, and the financial implications of a pilot career."
+      ctaText="Assess your pilot career readiness"
       ctaHref="/quiz"
       sections={[
         {
-          heading: "1. The True Cost of Pilot Training in Australia",
+          heading: "1. The True Cost of Pilot Training in Australia in 2026",
           content: (
             <>
-              <p>Australia is widely considered one of the best countries in the world for flight training, offering year-round VFR weather, uncrowded airspace, and a highly respected licensing system governed by the Civil Aviation Safety Authority (CASA) [1].</p>
-              <p>In 2026, taking a student from zero experience to a Commercial Pilot Licence (CPL) with a Multi-Engine Instrument Rating (MIFR) costs between <strong>$65,000 and $120,000 AUD</strong> depending on the school type, location, and the student's learning pace.</p>
-              <p>A unique advantage of the Australian system is the availability of <strong>VET Student Loans (VSL)</strong>. Domestic students can defer their entire flight training tuition—up to $150,000 AUD—and repay it through the tax system only once they are earning above the repayment threshold (approximately $54,000/year) [1].</p>
+              <p>Australia remains a premier global destination for flight training, renowned for its consistent VFR weather, uncongested airspace, and a robust regulatory framework overseen by the Civil Aviation Safety Authority (CASA) [1]. As of 2026, the journey from zero flight experience to obtaining a Commercial Pilot Licence (CPL) with a Multi-Engine Instrument Rating (MIFR) typically incurs costs ranging from <strong>$65,000 to $120,000 AUD</strong>. This significant investment is influenced by factors such as the chosen flight school type (Part 141 vs. Part 142), geographical location, and the individual student's learning progression.</p>
+              <p>A distinctive advantage for domestic students in Australia is the availability of <strong>VET Student Loans (VSL)</strong>. This government-backed scheme allows eligible students to defer up to <strong>$150,000 AUD</strong> of their flight training tuition. Repayment of the VSL debt is integrated into the Australian tax system, commencing only when the graduate's income surpasses a specified threshold, which is approximately $54,000 AUD per annum in 2026 [2]. This mechanism significantly alleviates the upfront financial burden, making pilot training more accessible.</p>
             </>
           )
         },
         {
-          heading: "2. Part 141 vs Part 142 Flight Schools",
+          heading: "2. Part 141 vs Part 142 Flight Schools: Understanding the Cost Implications",
           content: (
             <>
-              <p>Before looking at costs, it is crucial to understand the difference between CASA Part 141 and Part 142 flight schools, as this directly impacts your training budget.</p>
+              <p>Prospective pilots must discern the fundamental differences between CASA Part 141 and Part 142 flight schools, as this choice directly impacts both the training duration and overall expenditure.</p>
               <ul>
-                <li className="mb-2"><strong>Part 141 Schools:</strong> These are standard flight training operators (often aero clubs). Under Part 141, you are required to log a minimum of <strong>200 flight hours</strong> to obtain your CPL.</li>
-                <li className="mb-2"><strong>Part 142 Schools:</strong> These are advanced flight training operators (such as Flight Training Adelaide or Basair). Because of their highly structured, integrated syllabus, CASA allows Part 142 schools to issue a CPL at just <strong>150 flight hours</strong>.</li>
+                <li className="mb-2"><strong>Part 141 Schools:</strong> These are conventional flight training organizations, often operating as aero clubs. Under Part 141 regulations, students are mandated to log a minimum of <strong>200 flight hours</strong> to qualify for a Commercial Pilot Licence.</li>
+                <li className="mb-2"><strong>Part 142 Schools:</strong> Representing advanced flight training operators, such as Flight Training Adelaide or Basair, these institutions offer highly structured, integrated syllabi. CASA permits Part 142 schools to issue a CPL upon completion of just <strong>150 flight hours</strong> [1].</li>
               </ul>
-              <p>Saving 50 hours of flight time can reduce your total training cost by $15,000 to $25,000 AUD. However, Part 142 schools often charge higher hourly rates, so you must compare the total package cost, not just the required hours [1].</p>
+              <p>The reduction of 50 flight hours in a Part 142 program can translate into substantial savings, typically between $15,000 and $25,000 AUD. However, it is imperative to note that Part 142 schools often command higher hourly rates for aircraft and instruction. Therefore, a comprehensive comparison of the total package cost, rather than merely the minimum flight hours, is crucial for accurate financial planning [1].</p>
             </>
           )
         },
         {
-          heading: "3. Recreational and Private Pilot Licence Costs",
+          heading: "3. Recreational and Private Pilot Licence Costs in 2026",
           content: (
             <>
-              <p>The first steps in Australian flight training are the Recreational Pilot Licence (RPL) and the Private Pilot Licence (PPL).</p>
+              <p>The initial stages of Australian flight training involve the acquisition of the Recreational Pilot Licence (RPL) and subsequently the Private Pilot Licence (PPL). These foundational licences establish the basic skills required for private aviation.</p>
               <table className="w-full text-sm text-left border-collapse my-6">
                 <thead>
                   <tr className="border-b border-white/10">
                     <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Licence Phase</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Hours (CASA)</th>
                     <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th>
                     <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th>
                   </tr>
@@ -54,83 +54,164 @@ export default function AustraliaPilotTrainingCosts() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Recreational Pilot Licence (RPL)</td>
-                    <td className="px-4 py-3 text-white/80">$8,000 – $15,000</td>
-                    <td className="px-4 py-3 text-white/80">Minimum 25 hours. Allows you to fly light aircraft within a limited radius.</td>
+                    <td className="px-4 py-3 text-white/80">25</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$8,000 - $15,000</td>
+                    <td className="px-4 py-3 text-white/80">Allows flight in light aircraft within a limited radius, typically single-engine piston.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
-                    <td className="px-4 py-3 text-white/80">$20,000 – $30,000</td>
-                    <td className="px-4 py-3 text-white/80">Minimum 40 hours. Includes cross-country navigation.</td>
+                    <td className="px-4 py-3 text-white/80">40</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$20,000 - $30,000</td>
+                    <td className="px-4 py-3 text-white/80">Expands privileges to include cross-country navigation and carrying passengers.</td>
                   </tr>
                   <tr className="border-b border-white/10 bg-white/5">
-                    <td className="px-4 py-3 text-white/90 font-semibold">Total Estimated PPL</td>
-                    <td className="px-4 py-3 text-white/90 font-semibold">$20,000 – $30,000</td>
-                    <td className="px-4 py-3 text-white/90">Assuming continuous training from zero hours.</td>
+                    <td className="px-4 py-3 text-white/90 font-semibold">Total Estimated PPL (from zero)</td>
+                    <td className="px-4 py-3 text-white/90 font-semibold">50-70 (typical)</td>
+                    <td className="px-4 py-3 text-white/90 font-semibold">{">"}$28,000 - $45,000</td>
+                    <td className="px-4 py-3 text-white/90">Most students require more than CASA minimums to achieve PPL proficiency [1].</td>
                   </tr>
                 </tbody>
               </table>
-              <p><em>Note: CASA minimum hours are exactly that—minimums. Most students require 50–70 hours to reach the PPL standard [1].</em></p>
+              <p><em>Note: While CASA specifies minimum flight hours, most students typically require 50-70 hours to achieve the requisite proficiency for a Private Pilot Licence [1].</em></p>
             </>
           )
         },
         {
-          heading: "4. Commercial Pilot Licence (CPL) Costs",
+          heading: "4. Commercial Pilot Licence (CPL) and Ratings Costs in 2026",
           content: (
             <>
-              <p>The Commercial Pilot Licence (CPL) permits you to fly for remuneration. This is where the cost variance between Part 141 and Part 142 schools becomes apparent.</p>
+              <p>The Commercial Pilot Licence (CPL) is the gateway to professional aviation, enabling pilots to fly for remuneration. The cost structure for CPL and subsequent ratings varies significantly based on the chosen training pathway.</p>
               <table className="w-full text-sm text-left border-collapse my-6">
                 <thead>
                   <tr className="border-b border-white/10">
                     <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Hours</th>
                     <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">CPL (Part 141 - 200 hours)</td>
-                    <td className="px-4 py-3 text-white/80">$80,000 – $100,000</td>
+                    <td className="px-4 py-3 text-white/80">CPL (Part 141)</td>
+                    <td className="px-4 py-3 text-white/80">200</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$80,000 - $100,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">CPL (Part 142 - 150 hours)</td>
-                    <td className="px-4 py-3 text-white/80">$65,000 – $90,000</td>
+                    <td className="px-4 py-3 text-white/80">CPL (Part 142)</td>
+                    <td className="px-4 py-3 text-white/80">150</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$65,000 - $90,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating (MIFR)</td>
-                    <td className="px-4 py-3 text-white/80">$25,000 – $40,000</td>
+                    <td className="px-4 py-3 text-white/80">40-50 (typical)</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$25,000 - $40,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Flight Instructor Rating (Optional)</td>
-                    <td className="px-4 py-3 text-white/80">$15,000 – $25,000</td>
+                    <td className="px-4 py-3 text-white/80">~30</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$15,000 - $25,000</td>
                   </tr>
                   <tr className="border-b border-white/10 bg-white/5">
                     <td className="px-4 py-3 text-white/90 font-semibold">Total Estimated CPL + MIFR</td>
-                    <td className="px-4 py-3 text-white/90 font-semibold">$90,000 – $140,000</td>
+                    <td className="px-4 py-3 text-white/90 font-semibold">190-250 (typical)</td>
+                    <td className="px-4 py-3 text-white/90 font-semibold">{">"}$90,000 - $140,000</td>
                   </tr>
                 </tbody>
               </table>
-              <p>For students choosing a university pathway (such as the Bachelor of Aviation at UNSW or Griffith University), the total cost—including academic tuition and flight training—typically ranges from $120,000 to $150,000+ AUD [1].</p>
+              <p>For students pursuing a university pathway, such as a Bachelor of Aviation degree at institutions like UNSW or Griffith University, the comprehensive cost - encompassing both academic tuition and integrated flight training - typically ranges from $120,000 to $150,000+ AUD [1].</p>
             </>
           )
         },
         {
-          heading: "5. Qantas Group Pilot Academy",
+          heading: "5. Qantas Group Pilot Academy: Pathway and Costs",
           content: (
             <>
-              <p>The Qantas Group Pilot Academy, located in Toowoomba, Queensland, and delivered by Flight Training Adelaide (FTA), is one of the most prestigious training pathways in the country.</p>
-              <p>It is important to note that this is <strong>not a fully funded cadetship</strong>. Students are responsible for the tuition fees (which are eligible for VET Student Loans). However, graduates are placed in a talent pool with a direct pathway to Qantas Group airlines, such as QantasLink and Jetstar [1].</p>
+              <p>The Qantas Group Pilot Academy, strategically located in Toowoomba, Queensland, and delivered in partnership with Flight Training Adelaide (FTA), represents a highly sought-after pathway into the Qantas Group. It is crucial to understand that this program is <strong>not a fully funded cadetship</strong>. Students are responsible for their tuition fees, which are eligible for deferral via VET Student Loans [1].</p>
+              <p>Graduates of the academy are integrated into a talent pool, providing a direct and accelerated pathway to employment with Qantas Group airlines, including QantasLink and Jetstar. This structured progression offers a significant advantage in a competitive industry, despite the personal financial investment required.</p>
             </>
           )
         },
         {
-          heading: "6. Hidden Costs to Consider",
+          heading: "6. Hidden Costs and Essential Expenses for Australian Pilot Training",
           content: (
             <>
-              <p>When budgeting for your flight training, do not forget the non-tuition expenses that VET Student Loans will not cover:</p>
+              <p>Beyond the direct tuition fees, aspiring pilots must meticulously budget for several essential non-tuition expenses that are typically not covered by VET Student Loans:</p>
               <ul>
-                <li className="mb-2"><strong>CASA Class 1 Medical:</strong> Initial examination and specialist tests can cost $500–$800 AUD.</li>
-                <li className="mb-2"><strong>Aviation Headset:</strong> A high-quality active noise-cancelling headset (like the Bose A30) costs approximately $1,800 AUD.</li>
-                <li className="mb-2"><strong>Living Expenses:</strong> Budget $1,500–$2,500 AUD per month depending on your location (Sydney and Melbourne being the most expensive, while regional bases like Toowoomba or Parafield are more affordable) [1].</li>
+                <li className="mb-2"><strong>CASA Class 1 Medical:</strong> An initial comprehensive medical examination and any required specialist tests can cost between $500 and $800 AUD [3]. This medical certificate is mandatory for commercial pilot operations.</li>
+                <li className="mb-2"><strong>Aviation Headset:</strong> A high-quality active noise-cancelling aviation headset, such as the Bose A30, is an indispensable piece of equipment, costing approximately $1,800 AUD.</li>
+                <li className="mb-2"><strong>Aviation Theory Exams:</strong> Each CASA theory exam (e.g., IREX for instrument rating) incurs a fee, typically around $150-$200 AUD per attempt.</li>
+                <li className="mb-2"><strong>Living Expenses:</strong> Depending on the training location, monthly living expenses can range from $1,500 to $2,500 AUD. Major cities like Sydney and Melbourne are considerably more expensive than regional training hubs such as Toowoomba or Parafield [1].</li>
+                <li className="mb-2"><strong>Pilot Deductions and Superannuation:</strong> The Australian Taxation Office (ATO) updated its pilot deductions guide on May 11, 2026. Pilots should be aware of deductions for work-related expenses and the compulsory superannuation contribution, which stands at 11.5% in 2026 [4].</li>
               </ul>
+            </>
+          )
+        },
+        {
+          heading: "7. Pilot Salaries in Australia (2026): Return on Investment",
+          content: (
+            <>
+              <p>Understanding potential earnings is crucial for evaluating the return on investment for pilot training. Salaries in Australia vary significantly based on airline, aircraft type, and seniority. The global pilot shortfall is projected to peak at 24,000 in 2026, with Australia's pilot employment growth estimated at 10.5% by 2026, indicating strong demand and competitive salaries [5].</p>
+              <table className="w-full text-sm text-left border-collapse my-6">
+                <thead>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Role</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (AUD)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80" rowSpan={2}>Qantas</td>
+                    <td className="px-4 py-3 text-white/80">Entry First Officer</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$180,000 - $230,000</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Senior Widebody Captain (B787/A380)</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$420,000 - $520,000+</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80" rowSpan={2}>Virgin Australia</td>
+                    <td className="px-4 py-3 text-white/80">First Officer (from mid-2025)</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$180,206 (base)</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Captain (from mid-2025)</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$277,256 (base)</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80" rowSpan={2}>Rex Airlines</td>
+                    <td className="px-4 py-3 text-white/80">First Officer</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$70,000 - $90,000</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Captain</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$130,000 - $180,000</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80" rowSpan={2}>Alliance Airlines</td>
+                    <td className="px-4 py-3 text-white/80">First Officer</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$57,000 - $172,000</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Narrow Body Captain</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$160,542</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">FlyPelican</td>
+                    <td className="px-4 py-3 text-white/80">Median Pilot Salary</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$62,000</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80" rowSpan={2}>Flight Instructors</td>
+                    <td className="px-4 py-3 text-white/80">Entry Level</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$55,000 - $100,000+</td>
+                  </tr>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Grade 1/2</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$84,186 - $104,178 + 12% super</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>The Australian pilot workforce currently comprises 8,200 employed pilots, with female pilots representing only 7% of this total, highlighting a significant gender imbalance and potential for growth in diversity [5].</p>
             </>
           )
         },
@@ -138,20 +219,26 @@ export default function AustraliaPilotTrainingCosts() {
           heading: "References",
           content: (
             <ol className="list-decimal pl-5 text-sm text-white/70">
-              <li>Airmappr. "Best Flight Schools in Australia 2026." airmappr.com.</li>
+              <li>Airmappr. "Best Flight Schools in Australia 2026." <a href="https://airmappr.com" target="_blank" rel="noopener noreferrer">airmappr.com</a>.</li>
+              <li>Australian Government Department of Education. "VET Student Loans." <a href="https://www.education.gov.au/vet-student-loans" target="_blank" rel="noopener noreferrer">education.gov.au</a>.</li>
+              <li>Civil Aviation Safety Authority (CASA). "Class 1 Medical Certificate." <a href="https://www.casa.gov.au/licences-and-certificates/pilots/pilot-medical-requirements/class-1-medical-certificate" target="_blank" rel="noopener noreferrer">casa.gov.au</a>.</li>
+              <li>Australian Taxation Office (ATO). "Pilot Deductions Guide (May 2026 Update)." <a href="https://www.ato.gov.au" target="_blank" rel="noopener noreferrer">ato.gov.au</a>.</li>
+              <li>Boeing. "Pilot & Technician Outlook 2026." <a href="https://www.boeing.com/commercial/market/pilot-technician-outlook/" target="_blank" rel="noopener noreferrer">boeing.com</a>.</li>
             </ol>
           )
         }
       ]}
       faqSchema={[
-        { question: "How much does it cost to become a commercial pilot in Australia?", answer: "In 2026, taking into account the CPL and Multi-Engine Instrument Rating, a realistic budget is between $90,000 and $140,000 AUD." },
-        { question: "Can I get a student loan for flight training in Australia?", answer: "Yes, domestic students can access VET Student Loans (VSL) to defer up to $150,000 AUD of their flight training tuition, which is repaid through the tax system once they reach a certain income threshold." },
-        { question: "What is the difference between a Part 141 and Part 142 flight school?", answer: "Part 141 schools require 200 flight hours to issue a CPL. Part 142 schools, which have highly structured and integrated syllabuses, are approved by CASA to issue a CPL at just 150 flight hours." },
-        { question: "Is the Qantas Pilot Academy free?", answer: "No. Students must pay the tuition fees (which can be deferred via VET Student Loans). However, graduates receive a direct pathway to employment within the Qantas Group." }
+        { question: "How much does it cost to become a commercial pilot in Australia in 2026?", answer: "In 2026, the total cost for a Commercial Pilot Licence (CPL) with a Multi-Engine Instrument Rating (MIFR) typically ranges from $90,000 to $140,000 AUD, depending on the flight school and individual progress." },
+        { question: "Is there a pilot shortage in Australia in 2026?", answer: "Yes, Australia is experiencing a pilot shortage, contributing to a global shortfall projected to peak at 24,000 in 2026. The Australian pilot employment growth is estimated at 10.5% by 2026, indicating strong demand." },
+        { question: "Can I get a student loan for pilot training in Australia?", answer: "Domestic students can access VET Student Loans (VSL) to defer up to $150,000 AUD of their flight training tuition. Repayment is through the tax system once income exceeds approximately $54,000 AUD per year." },
+        { question: "What are the typical pilot salaries in Australia in 2026?", answer: "Entry-level First Officers at major airlines like Qantas can earn $180,000-$230,000 AUD, while experienced Captains can exceed $420,000 AUD. Regional airline First Officers typically start between $70,000-$90,000 AUD." },
+        { question: "What are the hidden costs of pilot training in Australia?", answer: "Hidden costs include the CASA Class 1 Medical ($500-$800 AUD), an aviation headset (around $1,800 AUD), CASA theory exam fees, and significant living expenses ($1,500-$2,500 AUD per month)." }
       ]}
       relatedGuides={[
-        { title: "Australia Pilot Salary Guide 2026", href: "/australia/guides/pilot-salary", time: "10 min" },
-        { title: "CASA Class 1 Medical", href: "/australia/guides/casa-medical-class-1", time: "8 min" }
+        { title: "Australia Pilot Salary Guide 2026", href: "/australia/guides/australia-pilot-salary-guide", time: "10 min" },
+        { title: "CASA Class 1 Medical Requirements", href: "/australia/guides/casa-class-1-medical", time: "8 min" },
+        { title: "Pilot Shortage in Australia: Opportunities and Challenges", href: "/australia/guides/pilot-shortage-australia", time: "12 min" }
       ]}
     />
   );

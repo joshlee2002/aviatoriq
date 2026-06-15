@@ -73,32 +73,32 @@ export default function AirArabiaCadetProgram() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Ground School Training</td>
-                    <td className="px-4 py-3 text-white/80">$12,000 - $18,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$12,000 - $18,000</td>
                     <td className="px-4 py-3 text-white/80">AED 44,000 - AED 66,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Flying Hours (Single Engine)</td>
-                    <td className="px-4 py-3 text-white/80">$35,000 - $45,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$35,000 - $45,000</td>
                     <td className="px-4 py-3 text-white/80">AED 128,500 - AED 165,300</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Multi-Engine Rating</td>
-                    <td className="px-4 py-3 text-white/80">$10,000 - $15,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$10,000 - $15,000</td>
                     <td className="px-4 py-3 text-white/80">AED 36,700 - AED 55,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Type Rating (Airbus A320)</td>
-                    <td className="px-4 py-3 text-white/80">$25,000 - $35,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$25,000 - $35,000</td>
                     <td className="px-4 py-3 text-white/80">AED 91,800 - AED 128,500</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Accommodation & Living Expenses</td>
-                    <td className="px-4 py-3 text-white/80">$15,000 - $25,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$15,000 - $25,000</td>
                     <td className="px-4 py-3 text-white/80">AED 55,000 - AED 91,800</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">GCAA Fees & Examinations</td>
-                    <td className="px-4 py-3 text-white/80">$5,000 - $8,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$5,000 - $8,000</td>
                     <td className="px-4 py-3 text-white/80">AED 18,300 - AED 29,400</td>
                   </tr>
                   <tr className="border-b border-white/10">

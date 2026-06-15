@@ -30,7 +30,7 @@ export default function AtplExams() {
                 The Airline Transport Pilot Licence (ATPL) theory exams are the academic backbone of European and UK pilot training. While the flight training teaches you how to handle the aircraft, the ATPL exams prove you have the technical knowledge required to operate a complex commercial airliner safely.
               </p>
               <p>
-                There are 13 exams in total (reduced from 14 after VFR and IFR Communications were merged). They cover everything from basic aerodynamics to complex high-altitude meteorology and human psychology. The sheer volume of information is what makes the ATPL theory phase notoriously difficult — it is often described as trying to drink from a firehose.
+                There are 13 exams in total (reduced from 14 after VFR and IFR Communications were merged). They cover everything from basic aerodynamics to complex high-altitude meteorology and human psychology. The sheer volume of information is what makes the ATPL theory phase notoriously difficult  -  it is often described as trying to drink from a firehose.
               </p>
               <p>
                 You must pass all 13 exams within an 18-month window, starting from the end of the calendar month in which you attempt your first exam. You have a maximum of 6 sittings (a sitting is a consecutive 10-day period where you can take multiple exams) and a maximum of 4 attempts per subject [1].
@@ -166,7 +166,7 @@ export default function AtplExams() {
                 <strong>Performance</strong> is universally regarded as the hardest ATPL exam. It combines complex graph reading, multi-variable calculations, and regulatory knowledge under severe time pressure. You must calculate climb gradients, obstacle clearance, and field length requirements. One misread line on a CAP 698 graph will cascade into a wrong answer.
               </p>
               <p>
-                <strong>Principles of Flight (PoF)</strong> covers lift, drag, stall, high-speed aerodynamics, and compressibility effects. It requires genuine conceptual understanding — you cannot memorise your way through this one. The exam frequently tests edge cases like swept-wing behaviour and Mach tuck.
+                <strong>Principles of Flight (PoF)</strong> covers lift, drag, stall, high-speed aerodynamics, and compressibility effects. It requires genuine conceptual understanding  -  you cannot memorise your way through this one. The exam frequently tests edge cases like swept-wing behaviour and Mach tuck.
               </p>
               <p>
                 <strong>General Navigation</strong> humbles candidates who underestimate it. It covers charts, great circles, rhumb lines, and wind calculations. The exam is heavily calculation-based and requires fast, accurate use of the CRP-5 flight computer. Time pressure is the main reason candidates fail.
@@ -202,7 +202,7 @@ export default function AtplExams() {
                 <li>Attempt the end-of-chapter progress tests without looking at the answers.</li>
                 <li>Only once you have finished the entire subject module, move to the question bank.</li>
                 <li>When using the question bank, read the explanation for <em>every</em> question you get wrong. If you don't understand the explanation, go back to the textbook.</li>
-                <li>Aim for consistent 90%+ scores in mock exams before sitting the real thing. The real exam environment induces stress that will naturally lower your score by 5–10%.</li>
+                <li>Aim for consistent 90%+ scores in mock exams before sitting the real thing. The real exam environment induces stress that will naturally lower your score by 5-10%.</li>
               </ol>
               <p>
                 Group your exams logically. Do not sit Performance, Gen Nav, and PoF in the same sitting. Mix calculation-heavy subjects with memory-heavy subjects (e.g., pair Gen Nav with Communications and Air Law).

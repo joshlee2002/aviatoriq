@@ -25,7 +25,7 @@ export default function UsPilotUnionGuide() {
           )
         },
         {
-          heading: "FAA Regulations: Part 61 vs. Part 141 – A Critical Distinction",
+          heading: "FAA Regulations: Part 61 vs. Part 141 - A Critical Distinction",
           content: (
             <>
               <p>The Federal Aviation Administration (FAA) governs all aspects of pilot training in the United States, primarily through two distinct regulatory frameworks: Part 61 and Part 141. The choice between these two parts significantly impacts the structure, duration, and intensity of a pilot's training. Both pathways lead to the same FAA certificates and ratings, but their operational methodologies and minimum hour requirements differ substantially.</p>
@@ -99,19 +99,19 @@ export default function UsPilotUnionGuide() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Flight Instruction (Aircraft & Instructor)</td>
-                    <td className="px-4 py-3 text-white/80">$10,000 - $18,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$10,000 - $18,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Ground School & Materials</td>
-                    <td className="px-4 py-3 text-white/80">$500 - $1,500</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$500 - $1,500</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">FAA Written Exam</td>
-                    <td className="px-4 py-3 text-white/80">$175</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$175</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Checkride (Examiner Fee & Aircraft Rental)</td>
-                    <td className="px-4 py-3 text-white/80">$800 - $1,500</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$800 - $1,500</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Total PPL Estimate</strong></td>
@@ -131,19 +131,19 @@ export default function UsPilotUnionGuide() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Flight Instruction (Aircraft & Instructor)</td>
-                    <td className="px-4 py-3 text-white/80">$8,000 - $15,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$8,000 - $15,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Ground School & Materials</td>
-                    <td className="px-4 py-3 text-white/80">$300 - $1,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$300 - $1,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">FAA Written Exam</td>
-                    <td className="px-4 py-3 text-white/80">$175</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$175</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Checkride (Examiner Fee & Aircraft Rental)</td>
-                    <td className="px-4 py-3 text-white/80">$800 - $1,500</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$800 - $1,500</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Total IR Estimate</strong></td>
@@ -163,19 +163,19 @@ export default function UsPilotUnionGuide() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Flight Instruction (Aircraft & Instructor)</td>
-                    <td className="px-4 py-3 text-white/80">$25,000 - $35,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$25,000 - $35,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Ground School & Materials</td>
-                    <td className="px-4 py-3 text-white/80">$500 - $1,500</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$500 - $1,500</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">FAA Written Exam</td>
-                    <td className="px-4 py-3 text-white/80">$175</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$175</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Checkride (Examiner Fee & Aircraft Rental)</td>
-                    <td className="px-4 py-3 text-white/80">$800 - $1,500</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$800 - $1,500</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Total CPL Estimate</strong></td>
@@ -195,15 +195,15 @@ export default function UsPilotUnionGuide() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">ATP-CTP Course</td>
-                    <td className="px-4 py-3 text-white/80">$4,000 - $5,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$4,000 - $5,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">FAA Written Exam</td>
-                    <td className="px-4 py-3 text-white/80">$175</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$175</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">ATP Practical Test (Checkride)</td>
-                    <td className="px-4 py-3 text-white/80">$1,500 - $3,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$1,500 - $3,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Total ATP/ATP-CTP Estimate</strong></td>
@@ -329,23 +329,23 @@ export default function UsPilotUnionGuide() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Flight Instructor</td>
-                    <td className="px-4 py-3 text-white/80">$30,000 - $60,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$30,000 - $60,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Regional Airline First Officer (Year 1)</td>
-                    <td className="px-4 py-3 text-white/80">$60,000 - $90,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$60,000 - $90,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Regional Airline Captain (Experienced)</td>
-                    <td className="px-4 py-3 text-white/80">$100,000 - $180,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$100,000 - $180,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Major Airline First Officer (Year 1)</td>
-                    <td className="px-4 py-3 text-white/80">$90,000 - $150,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$90,000 - $150,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Major Airline Captain (Experienced)</td>
-                    <td className="px-4 py-3 text-white/80">$250,000 - $500,000+</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$250,000 - $500,000+</td>
                   </tr>
                 </tbody>
               </table>
@@ -373,7 +373,7 @@ export default function UsPilotUnionGuide() {
           heading: "Conclusion: Your Path to the Cockpit",
           content: (
             <>
-              <p>Understanding how pilot unions work — ALPA, APA, SWAPA — and what they actually deliver in terms of pay, scheduling, and job security is important context for any pilot evaluating airline career options. The union structure at your airline will directly affect your quality of life from day one.</p>
+              <p>Understanding how pilot unions work  -  ALPA, APA, SWAPA  -  and what they actually deliver in terms of pay, scheduling, and job security is important context for any pilot evaluating airline career options. The union structure at your airline will directly affect your quality of life from day one.</p>
               <p>The US aviation market offers a dynamic environment with continuous opportunities for growth and advancement. With the right preparation and dedication, the goal of becoming a pilot for a living can become a tangible reality. This guide serves as a foundational resource for those ready to embark on this elite professional journey.</p>
             </>
           )

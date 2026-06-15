@@ -40,7 +40,7 @@ export default function EuropeMilitaryToAirlines() {
             <>
               <p>The journey to an EASA ATPL for military pilots typically involves several distinct phases, each with its own requirements and challenges. Understanding these steps is vital for efficient planning and execution.</p>
               <h3>Phase 1: Medical and English Language Proficiency</h3>
-              <p>Before embarking on any significant training, obtaining an EASA Class 1 Medical Certificate is paramount. This is the highest medical standard for professional pilots and is required for all ATPL holders. The examination must be conducted by an Aero-Medical Centre (AeMC) or an Aero-Medical Examiner (AME) approved by an EASA member state. The cost typically ranges from €100 to €300, and it's advisable to secure this early in the process to ensure eligibility.</p>
+              <p>Before embarking on any significant training, obtaining an EASA Class 1 Medical Certificate is paramount. This is the highest medical standard for professional pilots and is required for all ATPL holders. The examination must be conducted by an Aero-Medical Centre (AeMC) or an Aero-Medical Examiner (AME) approved by an EASA member state. The cost typically ranges from EUR100 to EUR300, and it's advisable to secure this early in the process to ensure eligibility.</p>
               <p>Additionally, demonstrating English Language Proficiency (ELP) at ICAO Level 4 (Operational) or higher is mandatory. This assessment evaluates listening, speaking, pronunciation, fluency, structure, vocabulary, and interaction. Many military pilots already possess a high level of English proficiency, but a formal assessment by an approved examiner is required for the EASA license endorsement.</p>
               <h3>Phase 2: Theoretical Knowledge Examinations</h3>
               <p>This is often the most demanding part of the conversion. EASA requires military pilots to pass all 14 ATPL theoretical knowledge examinations. Unlike some other authorities, EASA generally does not grant full credit for ICAO or other non-EASA theory exams, meaning a comprehensive study of all subjects is usually necessary. The subjects include:</p>
@@ -83,37 +83,37 @@ export default function EuropeMilitaryToAirlines() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">EASA Class 1 Medical</td>
-                    <td className="px-4 py-3 text-white/80">€100 - €300</td>
+                    <td className="px-4 py-3 text-white/80">EUR100 - EUR300</td>
                     <td className="px-4 py-3 text-white/80">1-2 days</td>
                     <td className="px-4 py-3 text-white/80">Initial examination</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">English Language Proficiency</td>
-                    <td className="px-4 py-3 text-white/80">€50 - €150</td>
+                    <td className="px-4 py-3 text-white/80">EUR50 - EUR150</td>
                     <td className="px-4 py-3 text-white/80">1 day</td>
                     <td className="px-4 py-3 text-white/80">Assessment and endorsement</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">ATPL Theory Course & Exams</td>
-                    <td className="px-4 py-3 text-white/80">€3,000 - €7,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR3,000 - EUR7,000</td>
                     <td className="px-4 py-3 text-white/80">6 - 12 months</td>
                     <td className="px-4 py-3 text-white/80">Distance learning or intensive course, includes exam fees</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Conversion Flight Training (CPL/IR/MEP)</td>
-                    <td className="px-4 py-3 text-white/80">€5,000 - €10,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR5,000 - EUR10,000</td>
                     <td className="px-4 py-3 text-white/80">2 - 4 weeks</td>
                     <td className="px-4 py-3 text-white/80">10-15 hours flight training + skill tests</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Administrative Fees (NAA)</td>
-                    <td className="px-4 py-3 text-white/80">€200 - €500</td>
+                    <td className="px-4 py-3 text-white/80">EUR200 - EUR500</td>
                     <td className="px-4 py-3 text-white/80">Variable</td>
                     <td className="px-4 py-3 text-white/80">License application and issue fees</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost</strong></td>
-                    <td className="px-4 py-3 text-white/80"><strong>€8,350 - €17,950</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>EUR8,350 - EUR17,950</strong></td>
                     <td className="px-4 py-3 text-white/80"><strong>7 - 18 months</strong></td>
                     <td className="px-4 py-3 text-white/80">Excludes accommodation, travel, and living expenses</td>
                   </tr>
@@ -164,7 +164,7 @@ export default function EuropeMilitaryToAirlines() {
         { question: "Do I need to retake all 14 ATPL theory exams if I'm a military pilot?", answer: "Yes, generally EASA requires military pilots to pass all 14 ATPL theoretical knowledge examinations, as there is typically no credit for ICAO or other non-EASA military theory exams." },
         { question: "How long does the EASA ATPL conversion process usually take for military pilots?", answer: "The entire conversion process, including theoretical knowledge and flight training, can take between 7 to 18 months, depending on individual pace and the chosen training path." },
         { question: "Which European airlines are known for hiring ex-military pilots?", answer: "Airlines such as British Airways, Lufthansa Group, Air France-KLM, Ryanair, and easyJet are known to actively recruit or consider ex-military pilots for their commercial operations." },
-        { question: "What are the estimated costs for EASA ATPL conversion?", answer: "The estimated costs for EASA ATPL conversion for military pilots range from approximately €8,350 to €17,950, excluding living expenses, travel, and accommodation." }
+        { question: "What are the estimated costs for EASA ATPL conversion?", answer: "The estimated costs for EASA ATPL conversion for military pilots range from approximately EUR8,350 to EUR17,950, excluding living expenses, travel, and accommodation." }
       ]}
       relatedGuides={[
         { title: "How to Become a Pilot in Europe", href: "/europe/guides/how-to-become-a-pilot", time: "15 min" },

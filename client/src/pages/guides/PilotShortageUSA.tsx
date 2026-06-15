@@ -30,7 +30,7 @@ export default function PilotShortageUSA() {
                 If you ask a pilot at Delta Air Lines if there is a pilot shortage, they might say no. If you ask a pilot at a regional airline, or a passenger trying to fly out of a small regional airport, they will tell you the shortage is very real.
               </p>
               <p>
-                In 2026, the US pilot shortage has evolved from a frantic, industry-wide crisis into a highly localized problem. The "hiring frenzy" of 2021–2023 — where major airlines hired over 4,000 pilots in a single year — has cooled. But the underlying demographic drivers have not gone away.
+                In 2026, the US pilot shortage has evolved from a frantic, industry-wide crisis into a highly localized problem. The "hiring frenzy" of 2021-2023  -  where major airlines hired over 4,000 pilots in a single year  -  has cooled. But the underlying demographic drivers have not gone away.
               </p>
               <p>
                 According to an April 2026 report by the Government Accountability Office (GAO), pilot hiring slowed at network and low-cost airlines primarily due to aircraft delivery delays [1]. However, the report confirmed that regional airlines are still struggling, contributing to ongoing reductions in regional air service to small communities.
@@ -97,7 +97,7 @@ export default function PilotShortageUSA() {
                 By the time you reach your 1,500 hours in 2029 or 2030, the aircraft delivery bottlenecks are projected to be resolved, and the retirement wave will still be pulling pilots upward.
               </p>
               <p>
-                More importantly, the permanent legacy of the pilot shortage is <strong>higher pay</strong>. Regional airlines were forced to increase salaries by up to 86% to attract and retain pilots. A first-year regional First Officer now earns $70,000–$90,000 — a dramatic improvement from the $30,000 salaries of a decade ago. The shortage has fundamentally repriced the profession.
+                More importantly, the permanent legacy of the pilot shortage is <strong>higher pay</strong>. Regional airlines were forced to increase salaries by up to 86% to attract and retain pilots. A first-year regional First Officer now earns $70,000-$90,000  -  a dramatic improvement from the $30,000 salaries of a decade ago. The shortage has fundamentally repriced the profession.
               </p>
             </>
           ),

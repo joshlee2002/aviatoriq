@@ -6,9 +6,9 @@ export default function HourBuilding() {
   return (
     <GuideLayout
       title="Hour Building for Pilots: The Complete UK Guide (2026)"
-      subtitle="How to build your 100 hours of PIC time cheaply and efficiently — the best locations, aircraft, and strategies that actually work."
+      subtitle="How to build your 100 hours of PIC time cheaply and efficiently  -  the best locations, aircraft, and strategies that actually work."
       canonical="/guides/hour-building-pilot-uk"
-      metaDescription="Complete guide to hour building for UK EASA pilots in 2026. Spain costs €90/hr, South Africa €100/hr, UK £150/hr. Methods, destinations, and practical tips."
+      metaDescription="Complete guide to hour building for UK EASA pilots in 2026. Spain costs EUR90/hr, South Africa EUR100/hr, UK £150/hr. Methods, destinations, and practical tips."
       readTime="11 min read"
       heroImage="/manus-storage/hour-building_4e2d1a8c.jpg"
       ctaHref="/quiz"
@@ -16,7 +16,7 @@ export default function HourBuilding() {
       scopeBanner={<GuideScopeBanner scope="This guide covers hour building strategies for UK/EASA pilots (CPL prerequisites, popular locations from the UK)." usHref="/us/guides/hour-building-usa" usLabel="View USA version →" />}
       faqSchema={[
         { question: "How many hours do I need for hour building?", answer: "For a modular EASA CPL, you need 200 hours total flight time, of which at least 100 hours must be as Pilot in Command (PIC). After your PPL, you typically have 45-55 hours total with 10-15 hours PIC, so you need to build approximately 85-90 more PIC hours." },
-        { question: "Where is the cheapest place to hour build?", answer: "Spain and Portugal offer the best combination of low cost (€75-120/hr) and excellent weather (300+ VFR days/year). South Africa is similarly priced but requires travel. The UK is the most expensive option (£130-170/hr) but the most convenient." },
+        { question: "Where is the cheapest place to hour build?", answer: "Spain and Portugal offer the best combination of low cost (EUR75-120/hr) and excellent weather (300+ VFR days/year). South Africa is similarly priced but requires travel. The UK is the most expensive option (£130-170/hr) but the most convenient." },
         { question: "How long does hour building take?", answer: "If you fly intensively (10-15 hours per week), you can complete 100 hours in 7-10 weeks. Part-time hour building at weekends in the UK typically takes 6-12 months." },
         { question: "Can I hour build in the USA?", answer: "Yes. Florida and Arizona offer cheap aircraft rental ($80-140/hr) and excellent weather. However, you need an FAA licence validation or conversion to fly N-registered aircraft. Check acceptance of US hours with your EASA authority before committing." }
       ]}
@@ -29,10 +29,10 @@ export default function HourBuilding() {
                 Hour building is the phase of modular pilot training that sits between your Private Pilot Licence (PPL) and your Commercial Pilot Licence (CPL). It is the process of accumulating the Pilot in Command (PIC) flight time required by EASA regulations before you can sit your CPL skills test.
               </p>
               <p>
-                Under EASA Part-FCL, you need 200 hours total flight time to qualify for a CPL, of which at least 100 hours must be as PIC. After completing your PPL, you typically have 45–55 hours total with only 10–15 hours of solo PIC time. This means you need to build approximately 85–90 more hours of PIC time before you can start your CPL training.
+                Under EASA Part-FCL, you need 200 hours total flight time to qualify for a CPL, of which at least 100 hours must be as PIC. After completing your PPL, you typically have 45-55 hours total with only 10-15 hours of solo PIC time. This means you need to build approximately 85-90 more hours of PIC time before you can start your CPL training.
               </p>
               <p>
-                The cost of hour building varies enormously depending on where and how you fly. The spread between the cheapest and most expensive options is enormous: from £50/hr in an aircraft syndicate to £170/hr at a UK flying school. This difference, multiplied over 100 hours, can amount to £12,000 in savings — enough to pay for your entire CPL training.
+                The cost of hour building varies enormously depending on where and how you fly. The spread between the cheapest and most expensive options is enormous: from £50/hr in an aircraft syndicate to £170/hr at a UK flying school. This difference, multiplied over 100 hours, can amount to £12,000 in savings  -  enough to pay for your entire CPL training.
               </p>
             </>
           ),
@@ -77,38 +77,38 @@ export default function HourBuilding() {
                   <tbody className="divide-y divide-white/10 text-white/80">
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Spain (Mallorca, Granada)</td>
-                      <td className="px-4 py-3">€75 – €120/hr</td>
-                      <td className="px-4 py-3">€7,500 – €12,000</td>
+                      <td className="px-4 py-3">EUR75 - EUR120/hr</td>
+                      <td className="px-4 py-3">EUR7,500 - EUR12,000</td>
                       <td className="px-4 py-3 text-green-400">300+</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Portugal (Cascais)</td>
-                      <td className="px-4 py-3">€75 – €110/hr</td>
-                      <td className="px-4 py-3">€7,500 – €11,000</td>
+                      <td className="px-4 py-3">EUR75 - EUR110/hr</td>
+                      <td className="px-4 py-3">EUR7,500 - EUR11,000</td>
                       <td className="px-4 py-3 text-green-400">280+</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">South Africa</td>
-                      <td className="px-4 py-3">~€100/hr</td>
-                      <td className="px-4 py-3">~€10,000</td>
+                      <td className="px-4 py-3">~EUR100/hr</td>
+                      <td className="px-4 py-3">~EUR10,000</td>
                       <td className="px-4 py-3 text-green-400">300+</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">USA (Florida/Arizona)</td>
-                      <td className="px-4 py-3">$80 – $140/hr</td>
-                      <td className="px-4 py-3">$8,000 – $14,000</td>
+                      <td className="px-4 py-3">{">"}$80 - $140/hr</td>
+                      <td className="px-4 py-3">{">"}$8,000 - $14,000</td>
                       <td className="px-4 py-3 text-green-400">300+</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Greece</td>
-                      <td className="px-4 py-3">€100 – €130/hr</td>
-                      <td className="px-4 py-3">€10,000 – €13,000</td>
+                      <td className="px-4 py-3">EUR100 - EUR130/hr</td>
+                      <td className="px-4 py-3">EUR10,000 - EUR13,000</td>
                       <td className="px-4 py-3 text-amber-400">250+</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">UK</td>
-                      <td className="px-4 py-3">£130 – £170/hr</td>
-                      <td className="px-4 py-3">£13,000 – £17,000</td>
+                      <td className="px-4 py-3">£130 - £170/hr</td>
+                      <td className="px-4 py-3">£13,000 - £17,000</td>
                       <td className="px-4 py-3 text-red-400">150-180</td>
                     </tr>
                   </tbody>
@@ -116,10 +116,10 @@ export default function HourBuilding() {
               </div>
 
               <p>
-                <strong>Spain</strong> is the most popular European hour building destination for UK pilots. Operators like Fly EPT Spain offer Tecnam P2002 aircraft at €75/hr dry (fuel extra). With fuel, total cost is roughly €90–€100/hr. The weather is outstanding: 300+ VFR days per year, open airspace, and cheap landing fees.
+                <strong>Spain</strong> is the most popular European hour building destination for UK pilots. Operators like Fly EPT Spain offer Tecnam P2002 aircraft at EUR75/hr dry (fuel extra). With fuel, total cost is roughly EUR90-EUR100/hr. The weather is outstanding: 300+ VFR days per year, open airspace, and cheap landing fees.
               </p>
               <p>
-                <strong>South Africa</strong> offers rates around €100/hr with 300+ flying days per year and English-speaking instruction. Schools like 43 Air School in Port Alfred are SACAA-certified. The main consideration is that SACAA hours need validation by your EASA authority — check acceptance before booking.
+                <strong>South Africa</strong> offers rates around EUR100/hr with 300+ flying days per year and English-speaking instruction. Schools like 43 Air School in Port Alfred are SACAA-certified. The main consideration is that SACAA hours need validation by your EASA authority  -  check acceptance before booking.
               </p>
             </>
           ),
@@ -132,13 +132,13 @@ export default function HourBuilding() {
                 Beyond location, how you access the aircraft makes a significant difference to your hourly cost.
               </p>
               <p>
-                <strong>School or Club Rental (Most Common):</strong> You rent a school aircraft by the hour. Simple and requires no commitment. Most schools offer block booking discounts (5–15% off for 50+ hours prepaid). The downside is aircraft availability — popular schools may have limited slots, especially in summer.
+                <strong>School or Club Rental (Most Common):</strong> You rent a school aircraft by the hour. Simple and requires no commitment. Most schools offer block booking discounts (5-15% off for 50+ hours prepaid). The downside is aircraft availability  -  popular schools may have limited slots, especially in summer.
               </p>
               <p>
-                <strong>Aircraft Syndicate (Best UK Value):</strong> A PA-28 syndicate share might cost £2,000–£5,000 to buy in, with monthly fees of £100–£200 and hourly rates of £80–£100/hr — significantly below school rental. You get better availability and more flexibility. The trade-off: you need to find a syndicate with availability, the buy-in capital, and the commitment to sell your share when done.
+                <strong>Aircraft Syndicate (Best UK Value):</strong> A PA-28 syndicate share might cost £2,000-£5,000 to buy in, with monthly fees of £100-£200 and hourly rates of £80-£100/hr  -  significantly below school rental. You get better availability and more flexibility. The trade-off: you need to find a syndicate with availability, the buy-in capital, and the commitment to sell your share when done.
               </p>
               <p>
-                <strong>Aircraft Ownership (Cheapest Per Hour):</strong> The most extreme option. Pilots report buying a cheap LAA (Light Aircraft Association) aircraft for £10,500, flying 100+ hours at approximately £50/hr in fuel and maintenance, then reselling for a similar price. The hourly cost is almost entirely fuel. You bear the risks of maintenance, insurance, and resale value — but if you buy well and sell well, it can be remarkably cheap.
+                <strong>Aircraft Ownership (Cheapest Per Hour):</strong> The most extreme option. Pilots report buying a cheap LAA (Light Aircraft Association) aircraft for £10,500, flying 100+ hours at approximately £50/hr in fuel and maintenance, then reselling for a similar price. The hourly cost is almost entirely fuel. You bear the risks of maintenance, insurance, and resale value  -  but if you buy well and sell well, it can be remarkably cheap.
               </p>
             </>
           ),
@@ -151,7 +151,7 @@ export default function HourBuilding() {
                 These tips come from PPRuNe and pilot community discussions. They represent hard-won experience from pilots who have been through this.
               </p>
               <p>
-                <strong>Do not fly more than 15 hours per week.</strong> As a low-hour pilot, flying 20–30 hours per week is not safe. You will not have the capacity to process and learn from that much flying. A sensible maximum is 3 hours per day, 5 days per week — about 15 hours per week. At that pace, 100 hours takes 7 weeks.
+                <strong>Do not fly more than 15 hours per week.</strong> As a low-hour pilot, flying 20-30 hours per week is not safe. You will not have the capacity to process and learn from that much flying. A sensible maximum is 3 hours per day, 5 days per week  -  about 15 hours per week. At that pace, 100 hours takes 7 weeks.
               </p>
               <p>
                 <strong>Make it count.</strong> Hour building is not just about logging numbers. Use it to build genuine skills: fly to controlled aerodromes, practice radio in busy airspace, plan and execute cross-country flights, handle different weather conditions. Pilots who hour build in interesting environments arrive at CPL training significantly more competent than those who flew 100 boring circuits at one airfield.

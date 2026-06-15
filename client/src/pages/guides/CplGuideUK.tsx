@@ -5,9 +5,9 @@ const CplGuideUK = () => {
   return (
     <GuideLayout
       title="Commercial Pilot Licence (CPL) UK: Requirements, Cost & How to Get One"
-      subtitle="Requirements, costs, training routes, and career opportunities for the UK Commercial Pilot Licence — the licence that lets you earn money from flying."
+      subtitle="Requirements, costs, training routes, and career opportunities for the UK Commercial Pilot Licence  -  the licence that lets you earn money from flying."
       canonical="/guides/cpl-uk"
-      metaDescription="UK Commercial Pilot Licence (CPL) 2026: requirements, costs (£55k–£120k), training routes, and the difference between CPL and frozen ATPL. CAA-sourced data."
+      metaDescription="UK Commercial Pilot Licence (CPL) 2026: requirements, costs (£55k-£120k), training routes, and the difference between CPL and frozen ATPL. CAA-sourced data."
       faqSchema={[
         {
           question: "How long does it take to get a CPL in the UK?",
@@ -248,7 +248,7 @@ const CplGuideUK = () => {
           content: (
             <>
               <p>
-                The modular route offers a flexible and often more affordable pathway to a Commercial Pilot Licence in the UK. It allows aspiring pilots to complete their training in distinct phases, often while managing other commitments or financial constraints. Here’s a detailed breakdown of the typical modular progression:
+                The modular route offers a flexible and often more affordable pathway to a Commercial Pilot Licence in the UK. It allows aspiring pilots to complete their training in distinct phases, often while managing other commitments or financial constraints. Here's a detailed breakdown of the typical modular progression:
               </p>
               <h3>Step 1: Private Pilot Licence (PPL)</h3>
               <p>

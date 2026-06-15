@@ -91,7 +91,7 @@ export default function UsRegionalAirlinesGuide() {
                 </tbody>
               </table>
               <p>
-                For aspiring regional airline pilots, Part 141 programs are often favored due to their structured nature, potential for reduced hours, and the accelerated path to meeting airline hiring minimums. Many airlines also have established cadet programs or partnerships with Part 141 schools, offering clearer pathways to employment. However, a hybrid approach—starting with Part 61 for initial certificates and transitioning to Part 141 for advanced ratings—can also be effective, allowing for initial flexibility before committing to an intensive program.
+                For aspiring regional airline pilots, Part 141 programs are often favored due to their structured nature, potential for reduced hours, and the accelerated path to meeting airline hiring minimums. Many airlines also have established cadet programs or partnerships with Part 141 schools, offering clearer pathways to employment. However, a hybrid approach - starting with Part 61 for initial certificates and transitioning to Part 141 for advanced ratings - can also be effective, allowing for initial flexibility before committing to an intensive program.
               </p>
             </>
           )
@@ -154,32 +154,32 @@ export default function UsRegionalAirlinesGuide() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td>
-                    <td className="px-4 py-3 text-white/80">$10,000 - $18,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$10,000 - $18,000</td>
                     <td className="px-4 py-3 text-white/80">40-75</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
-                    <td className="px-4 py-3 text-white/80">$12,000 - $20,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$12,000 - $20,000</td>
                     <td className="px-4 py-3 text-white/80">40-60</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td>
-                    <td className="px-4 py-3 text-white/80">$20,000 - $35,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$20,000 - $35,000</td>
                     <td className="px-4 py-3 text-white/80">110-190 (Part 141) / 250 (Part 61 total time)</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
-                    <td className="px-4 py-3 text-white/80">$6,000 - $10,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$6,000 - $10,000</td>
                     <td className="px-4 py-3 text-white/80">10-15</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Certified Flight Instructor (CFI/CFII/MEI)</td>
-                    <td className="px-4 py-3 text-white/80">$8,000 - $15,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$8,000 - $15,000</td>
                     <td className="px-4 py-3 text-white/80">20-40 per rating</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">ATP CTP Course</td>
-                    <td className="px-4 py-3 text-white/80">$5,000 - $8,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$5,000 - $8,000</td>
                     <td className="px-4 py-3 text-white/80">N/A (ground/simulator)</td>
                   </tr>
                   <tr className="border-b border-white/10">

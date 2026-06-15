@@ -152,32 +152,32 @@ export default function NzCplRequirements() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Flight Training (PPL to CPL)</td>
-                    <td className="px-4 py-3 text-white/80">$79,000 - $120,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$79,000 - $120,000</td>
                     <td className="px-4 py-3 text-white/80">Includes aircraft rental, instructor fees, fuel. Varies by school and efficiency.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Theory Exams (Aspeq)</td>
-                    <td className="px-4 py-3 text-white/80">$1,500 - $2,500</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$1,500 - $2,500</td>
                     <td className="px-4 py-3 text-white/80">Per attempt fees for 6-7 subjects.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">CAA NZ Class 1 Medical</td>
-                    <td className="px-4 py-3 text-white/80">$500 - $800 (initial)</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$500 - $800 (initial)</td>
                     <td className="px-4 py-3 text-white/80">Annual renewals will incur further costs.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Licence Application Fees</td>
-                    <td className="px-4 py-3 text-white/80">$200 - $400</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$200 - $400</td>
                     <td className="px-4 py-3 text-white/80">Fees for CPL issue and associated ratings.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Study Materials & Equipment</td>
-                    <td className="px-4 py-3 text-white/80">$1,000 - $3,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$1,000 - $3,000</td>
                     <td className="px-4 py-3 text-white/80">Textbooks, charts, headset, uniform, flight bag.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Living Expenses (if applicable)</td>
-                    <td className="px-4 py-3 text-white/80">$15,000 - $25,000 per year</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$15,000 - $25,000 per year</td>
                     <td className="px-4 py-3 text-white/80">Accommodation, food, transport. Highly variable.</td>
                   </tr>
                 </tbody>

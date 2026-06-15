@@ -44,7 +44,7 @@ const MccJocUK = () => {
               </p>
               <img src="/manus-storage/mcc-simulator_d3ac3716.jpg" alt="Multi crew cooperation simulator" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                MCC focuses on crew resource management — communication, decision-making, workload sharing, and standard operating procedures in a two-pilot cockpit. JOC adds jet-specific handling: swept-wing aerodynamics, high-altitude operations, and the faster pace of jet operations. Together they make you a credible candidate for an airline type rating course.
+                MCC focuses on crew resource management  -  communication, decision-making, workload sharing, and standard operating procedures in a two-pilot cockpit. JOC adds jet-specific handling: swept-wing aerodynamics, high-altitude operations, and the faster pace of jet operations. Together they make you a credible candidate for an airline type rating course.
               </p>
             </>
           ),

@@ -62,11 +62,11 @@ export default function UsPilotSchedule() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Certificate/Rating</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$12,000 - $25,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">$8,000 - $15,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">$25,000 - $35,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating (Add-on)</td><td className="px-4 py-3 text-white/80">$4,000 - $8,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Airline Transport Pilot (ATP-CTP)</td><td className="px-4 py-3 text-white/80">$5,000 - $10,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">{">"}$12,000 - $25,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">{">"}$8,000 - $15,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">{">"}$25,000 - $35,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating (Add-on)</td><td className="px-4 py-3 text-white/80">{">"}$4,000 - $8,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Airline Transport Pilot (ATP-CTP)</td><td className="px-4 py-3 text-white/80">{">"}$5,000 - $10,000</td></tr>
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total (from zero to ATP)</strong></td><td className="px-4 py-3 text-white/80"><strong>$85,000 - $125,000+</strong></td></tr>
                 </tbody>
               </table>

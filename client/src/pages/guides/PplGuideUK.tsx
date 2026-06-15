@@ -45,7 +45,7 @@ const PplGuideUK = () => {
               <img src="/manus-storage/solo-flight_ac4d5964.jpg" alt="Student pilot solo flight" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/small-aircraft_e3c4488b.jpg" alt="Small aircraft flying" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                The UK PPL is governed by Part-FCL regulations, administered independently by the UK CAA post-Brexit. The core standards remain closely aligned with EASA, but they are separate licences. If you intend to work for an EASA airline such as Ryanair, you will need a separate EASA licence in addition to your UK PPL — something worth planning for from the start.
+                The UK PPL is governed by Part-FCL regulations, administered independently by the UK CAA post-Brexit. The core standards remain closely aligned with EASA, but they are separate licences. If you intend to work for an EASA airline such as Ryanair, you will need a separate EASA licence in addition to your UK PPL  -  something worth planning for from the start.
               </p>
             </>
           ),
@@ -157,7 +157,7 @@ const PplGuideUK = () => {
                 When considering PPL training in the UK, you'll generally encounter two primary pathways: integrated and standalone (often referred to as modular) courses. The choice between these depends on your learning style, financial situation, and long-term aviation goals. Both lead to the same PPL qualification, but the journey differs significantly.
               </p>
               <p>
-                A standalone PPL course offers maximum flexibility. You can complete each phase of your training – ground school, flight instruction, and exams – at your own pace and potentially with different Approved Training Organisations (ATOs) or Declared Training Organisations (DTOs). This modular approach is often favoured by individuals who need to balance training with work or other commitments, or those who prefer to spread the cost over a longer period. It allows for a more self-directed learning experience, though it requires strong self-discipline.
+                A standalone PPL course offers maximum flexibility. You can complete each phase of your training - ground school, flight instruction, and exams - at your own pace and potentially with different Approved Training Organisations (ATOs) or Declared Training Organisations (DTOs). This modular approach is often favoured by individuals who need to balance training with work or other commitments, or those who prefer to spread the cost over a longer period. It allows for a more self-directed learning experience, though it requires strong self-discipline.
               </p>
               <p>
                 In contrast, an integrated PPL course is a full-time, highly structured program typically offered by larger ATOs. These courses combine all theoretical and practical elements into a continuous curriculum, often designed to transition seamlessly into Commercial Pilot Licence (CPL) or Airline Transport Pilot Licence (ATPL) training. Integrated courses are generally more intensive, faster to complete, and can be more expensive upfront. They are often chosen by aspiring commercial pilots who want a direct, streamlined path to an airline career, benefiting from a consistent learning environment and often a strong network within the industry.

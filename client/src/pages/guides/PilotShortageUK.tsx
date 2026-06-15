@@ -26,7 +26,7 @@ export default function PilotShortageUK() {
           content: (
             <>
               <p>
-                If you are considering spending £100,000 on flight training, you need to know if there will actually be a job waiting for you at the end. The short answer in 2026 is yes — but the nature of the "pilot shortage" is often misunderstood.
+                If you are considering spending £100,000 on flight training, you need to know if there will actually be a job waiting for you at the end. The short answer in 2026 is yes  -  but the nature of the "pilot shortage" is often misunderstood.
               </p>
               <p>
                 There is not a shortage of people who <em>want</em> to be pilots. There is a structural shortage of <strong>experienced, type-rated Captains</strong>, which forces airlines to promote First Officers faster, which in turn creates a vacuum at the entry level that must be filled by newly qualified cadets.
@@ -67,7 +67,7 @@ export default function PilotShortageUK() {
                 Today, low-cost carriers are hiring cadets directly out of flight school. If you perform well in your ATPL exams and simulator assessments, you can be sitting in the right seat of a jet within months of graduating.
               </p>
               <p>
-                Furthermore, the time to upgrade from First Officer to Captain has compressed. At airlines like Ryanair, strong-performing First Officers are achieving their command (Captain upgrade) in just 3 to 5 years — a process that historically took 7 to 10 years.
+                Furthermore, the time to upgrade from First Officer to Captain has compressed. At airlines like Ryanair, strong-performing First Officers are achieving their command (Captain upgrade) in just 3 to 5 years  -  a process that historically took 7 to 10 years.
               </p>
             </>
           ),
@@ -83,7 +83,7 @@ export default function PilotShortageUK() {
                 Regional airlines (like Loganair and Aurigny) have been forced to increase salaries simply to stop their pilots from being poached by easyJet and Jet2. Meanwhile, legacy carriers like British Airways have negotiated new pay deals with BALPA (the pilot union) to ensure they remain the most attractive long-term employer in the UK market.
               </p>
               <p>
-                We are also seeing a slow shift away from the controversial "pay-to-fly" models. While many airlines still require cadets to self-fund their €30,000 type rating, more airlines are offering bonded training (where the airline pays upfront and deducts the cost from your salary over several years) or, in the case of the BA Speedbird Academy, fully funded training.
+                We are also seeing a slow shift away from the controversial "pay-to-fly" models. While many airlines still require cadets to self-fund their EUR30,000 type rating, more airlines are offering bonded training (where the airline pays upfront and deducts the cost from your salary over several years) or, in the case of the BA Speedbird Academy, fully funded training.
               </p>
             </>
           ),

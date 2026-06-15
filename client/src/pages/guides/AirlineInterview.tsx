@@ -6,7 +6,7 @@ export default function AirlineInterview() {
   return (
     <GuideLayout
       title="Airline Pilot Interview Guide: What to Expect in 2026"
-      subtitle="The complete guide to UK airline selection — aptitude tests, group exercises, simulator assessments, and panel interviews. What assessors actually look for."
+      subtitle="The complete guide to UK airline selection  -  aptitude tests, group exercises, simulator assessments, and panel interviews. What assessors actually look for."
       canonical="/guides/airline-pilot-interview"
       metaDescription="Airline pilot interview guide 2026. Aptitude tests (PILAPT, Compass), group exercises, simulator assessments, and panel interviews. What UK airlines actually look for."
       readTime="12 min read"
@@ -39,7 +39,7 @@ export default function AirlineInterview() {
                 <li><strong>Final Panel Interview:</strong> Competency-based questions, airline knowledge, motivation.</li>
               </ol>
               <p>
-                The entire process typically takes 3–6 months from application to offer. Preparation at each stage is critical.
+                The entire process typically takes 3-6 months from application to offer. Preparation at each stage is critical.
               </p>
             </>
           ),
@@ -61,7 +61,7 @@ export default function AirlineInterview() {
                 <strong>Saville Assessment:</strong> Used by some airlines for personality and cognitive ability testing. Includes verbal reasoning, numerical reasoning, and diagrammatic reasoning.
               </p>
               <p>
-                <strong>How to prepare:</strong> Practice is the only effective preparation. Use platforms like PilotAptitudeTest.com, PILAPT practice software, or the specific airline's recommended preparation resources. Practice daily for at least 4–6 weeks before your test. The multi-tasking tests in particular require building a specific mental skill that only comes with repetition.
+                <strong>How to prepare:</strong> Practice is the only effective preparation. Use platforms like PilotAptitudeTest.com, PILAPT practice software, or the specific airline's recommended preparation resources. Practice daily for at least 4-6 weeks before your test. The multi-tasking tests in particular require building a specific mental skill that only comes with repetition.
               </p>
             </>
           ),
@@ -74,13 +74,13 @@ export default function AirlineInterview() {
                 If you pass the online tests, you will be invited to an assessment centre. This is typically a full day at the airline's headquarters or a training centre. It usually involves:
               </p>
               <p>
-                <strong>Group Exercise:</strong> You are placed in a group of 4–8 candidates and given a scenario to discuss and resolve as a team. Assessors are watching how you communicate, whether you listen to others, whether you contribute constructively, and whether you can reach a consensus under time pressure. They are not looking for the loudest voice in the room — they are looking for collaborative, professional communication.
+                <strong>Group Exercise:</strong> You are placed in a group of 4-8 candidates and given a scenario to discuss and resolve as a team. Assessors are watching how you communicate, whether you listen to others, whether you contribute constructively, and whether you can reach a consensus under time pressure. They are not looking for the loudest voice in the room  -  they are looking for collaborative, professional communication.
               </p>
               <p>
                 <strong>Further Aptitude Testing:</strong> Some airlines run additional aptitude tests in person to verify the results of the online tests and to assess performance under pressure.
               </p>
               <p>
-                <strong>Initial Interview:</strong> A shorter interview with HR or a recruitment officer. This typically covers your motivation for applying, your understanding of the airline, and your career history. It is not the technical deep-dive — that comes later.
+                <strong>Initial Interview:</strong> A shorter interview with HR or a recruitment officer. This typically covers your motivation for applying, your understanding of the airline, and your career history. It is not the technical deep-dive  -  that comes later.
               </p>
             </>
           ),
@@ -96,10 +96,10 @@ export default function AirlineInterview() {
                 <strong>Raw Data Flying:</strong> You will be asked to fly the simulator without the flight director (the guidance bars that tell you where to point the nose). This is called "raw data" flying, and it tests your fundamental instrument flying skills. You must maintain precise headings, altitudes, and speeds using only the basic instruments (attitude indicator, altimeter, airspeed indicator, heading indicator).
               </p>
               <p>
-                <strong>CRM Scenarios:</strong> The training captain will deliberately create situations that require you to communicate, challenge, and work as a crew. They might make a deliberate error to see if you catch it and challenge it assertively but professionally. They are assessing your Crew Resource Management (CRM) skills — your ability to work effectively in a two-person crew.
+                <strong>CRM Scenarios:</strong> The training captain will deliberately create situations that require you to communicate, challenge, and work as a crew. They might make a deliberate error to see if you catch it and challenge it assertively but professionally. They are assessing your Crew Resource Management (CRM) skills  -  your ability to work effectively in a two-person crew.
               </p>
               <p>
-                <strong>How to prepare:</strong> If you have not flown a jet simulator before, book at least 2–3 sessions in a certified A320 or B737 simulator before your assessment. Many training centres offer "interview preparation" simulator packages specifically for this purpose. The cost (£500–£1,500) is well worth it.
+                <strong>How to prepare:</strong> If you have not flown a jet simulator before, book at least 2-3 sessions in a certified A320 or B737 simulator before your assessment. Many training centres offer "interview preparation" simulator packages specifically for this purpose. The cost (£500-£1,500) is well worth it.
               </p>
             </>
           ),
@@ -115,7 +115,7 @@ export default function AirlineInterview() {
                 Common competency areas include: <strong>Situational Awareness</strong> (describe a time when you identified a risk before it became a problem), <strong>Decision Making</strong> (describe a time when you had to make a difficult decision under time pressure), <strong>Communication</strong> (describe a time when you had to communicate complex information clearly), and <strong>Teamwork</strong> (describe a time when you had to work with a difficult colleague).
               </p>
               <p>
-                You will also be asked technical questions about aviation regulations, meteorology, and aircraft systems. The depth of technical questioning varies by airline — Ryanair is known for rigorous technical interviews, while some regional carriers focus more on personality and motivation.
+                You will also be asked technical questions about aviation regulations, meteorology, and aircraft systems. The depth of technical questioning varies by airline  -  Ryanair is known for rigorous technical interviews, while some regional carriers focus more on personality and motivation.
               </p>
               <p>
                 Research the airline thoroughly before your interview. Know their fleet, their routes, their recent news, and their stated values. Assessors are testing whether you genuinely want to work for <em>this</em> airline, not just any airline.

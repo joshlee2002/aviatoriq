@@ -5,7 +5,7 @@ export default function BestFlightSchoolsUSA() {
   return (
     <GuideLayout
       title="Best Flight Schools USA 2026: The Complete Comparison"
-      subtitle="ATP Flight School, Epic Flight Academy, Embry-Riddle, CAE, UND, and local Part 61 clubs — compared on real 2026 prices, timelines, career outcomes, and financing."
+      subtitle="ATP Flight School, Epic Flight Academy, Embry-Riddle, CAE, UND, and local Part 61 clubs  -  compared on real 2026 prices, timelines, career outcomes, and financing."
       readTime="15 min read"
       heroImage="/manus-storage/best-schools-usa_9e4f2b7a.jpg"
       category="US Pilot Training"
@@ -24,13 +24,13 @@ export default function BestFlightSchoolsUSA() {
           content: (
             <>
               <p>
-                The US flight training market in 2026 offers more options than ever, but the choice between them is consequential. Spend $80,000 at the wrong school and you could add 12–18 months to your timeline to the airlines. Spend $220,000 at a university when you only needed a $124,000 accelerated programme and you've taken on unnecessary debt.
+                The US flight training market in 2026 offers more options than ever, but the choice between them is consequential. Spend $80,000 at the wrong school and you could add 12-18 months to your timeline to the airlines. Spend $220,000 at a university when you only needed a $124,000 accelerated programme and you've taken on unnecessary debt.
               </p>
               <p>
-                The right school depends on three factors: whether you want a degree, how quickly you want to reach the airlines, and how much debt you can service on a regional FO salary of $90,000–$110,000 in your first year.
+                The right school depends on three factors: whether you want a degree, how quickly you want to reach the airlines, and how much debt you can service on a regional FO salary of $90,000-$110,000 in your first year.
               </p>
               <p>
-                This guide covers every major category of US flight school — accelerated Part 141, university aviation programmes, and local Part 61 clubs — with real 2026 prices and honest assessments of who each option is right for.
+                This guide covers every major category of US flight school  -  accelerated Part 141, university aviation programmes, and local Part 61 clubs  -  with real 2026 prices and honest assessments of who each option is right for.
               </p>
             </>
           ),
@@ -55,15 +55,15 @@ export default function BestFlightSchoolsUSA() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">ATP Flight School</td>
                       <td className="px-4 py-3">Part 141 accelerated</td>
-                      <td className="px-4 py-3 font-semibold text-white">$123,995 (zero) / $90,995 (with PPL)</td>
-                      <td className="px-4 py-3">7–9 months</td>
+                      <td className="px-4 py-3 font-semibold text-white">{">"}$123,995 (zero) / $90,995 (with PPL)</td>
+                      <td className="px-4 py-3">7-9 months</td>
                       <td className="px-4 py-3">No</td>
                       <td className="px-4 py-3">Yes</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Epic Flight Academy</td>
                       <td className="px-4 py-3">Part 141 accelerated</td>
-                      <td className="px-4 py-3 font-semibold text-white">$83,647</td>
+                      <td className="px-4 py-3 font-semibold text-white">{">"}$83,647</td>
                       <td className="px-4 py-3">~12 months</td>
                       <td className="px-4 py-3">No</td>
                       <td className="px-4 py-3">Yes</td>
@@ -71,7 +71,7 @@ export default function BestFlightSchoolsUSA() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">CAE (Oxford Aviation Academy)</td>
                       <td className="px-4 py-3">Part 141 accelerated</td>
-                      <td className="px-4 py-3 font-semibold text-white">~$100,000–$130,000</td>
+                      <td className="px-4 py-3 font-semibold text-white">~$100,000-$130,000</td>
                       <td className="px-4 py-3">~12 months</td>
                       <td className="px-4 py-3">No</td>
                       <td className="px-4 py-3">Yes</td>
@@ -79,7 +79,7 @@ export default function BestFlightSchoolsUSA() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Embry-Riddle Aeronautical University</td>
                       <td className="px-4 py-3">University (Part 141)</td>
-                      <td className="px-4 py-3 font-semibold text-white">$150,000–$220,000+ total</td>
+                      <td className="px-4 py-3 font-semibold text-white">{">"}$150,000-$220,000+ total</td>
                       <td className="px-4 py-3">4 years (BSc)</td>
                       <td className="px-4 py-3">Yes (BSc)</td>
                       <td className="px-4 py-3">Yes</td>
@@ -87,7 +87,7 @@ export default function BestFlightSchoolsUSA() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">University of North Dakota</td>
                       <td className="px-4 py-3">University (Part 141)</td>
-                      <td className="px-4 py-3 font-semibold text-white">$80,000–$140,000+ total</td>
+                      <td className="px-4 py-3 font-semibold text-white">{">"}$80,000-$140,000+ total</td>
                       <td className="px-4 py-3">4 years (BSc)</td>
                       <td className="px-4 py-3">Yes (BSc)</td>
                       <td className="px-4 py-3">Yes</td>
@@ -95,8 +95,8 @@ export default function BestFlightSchoolsUSA() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Local Part 61 Club / School</td>
                       <td className="px-4 py-3">Part 61 flexible</td>
-                      <td className="px-4 py-3 font-semibold text-white">$65,000–$90,000</td>
-                      <td className="px-4 py-3">2–5 years (part-time)</td>
+                      <td className="px-4 py-3 font-semibold text-white">{">"}$65,000-$90,000</td>
+                      <td className="px-4 py-3">2-5 years (part-time)</td>
                       <td className="px-4 py-3">No</td>
                       <td className="px-4 py-3">No</td>
                     </tr>
@@ -125,15 +125,15 @@ export default function BestFlightSchoolsUSA() {
                   <tbody className="divide-y divide-white/10 text-white/80">
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Programme cost (zero experience)</td>
-                      <td className="px-4 py-3">$123,995 (fixed price, includes checkride fees at select locations)</td>
+                      <td className="px-4 py-3">{">"}$123,995 (fixed price, includes checkride fees at select locations)</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Programme cost (with PPL)</td>
-                      <td className="px-4 py-3">$90,995</td>
+                      <td className="px-4 py-3">{">"}$90,995</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Timeline</td>
-                      <td className="px-4 py-3">7–9 months to CFI/CFII/MEI certificates</td>
+                      <td className="px-4 py-3">7-9 months to CFI/CFII/MEI certificates</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Locations</td>
@@ -163,7 +163,7 @@ export default function BestFlightSchoolsUSA() {
                 <strong>Best for:</strong> Pilots who want the fastest possible route to a regional airline, are prepared to train full-time, and do not need a degree. ATP's fixed-price model eliminates the risk of cost overruns from extra flight hours.
               </p>
               <p>
-                <strong>Watch out for:</strong> The $123,995 price includes checkride fees only at select locations — confirm this for your chosen training centre. Living costs on top of tuition can add $12,000–$24,000 if you are not at a free-housing location.
+                <strong>Watch out for:</strong> The $123,995 price includes checkride fees only at select locations  -  confirm this for your chosen training centre. Living costs on top of tuition can add $12,000-$24,000 if you are not at a free-housing location.
               </p>
             </>
           ),
@@ -173,7 +173,7 @@ export default function BestFlightSchoolsUSA() {
           content: (
             <>
               <p>
-                Epic Flight Academy, based in New Smyrna Beach, Florida, offers the most affordable full-service accelerated programme in the US. Their Professional Airline Pilot Program takes students from zero to CFI/CFII/MEI in approximately 12 months at a total cost of <strong>$83,646.85</strong> — roughly $40,000 less than ATP.
+                Epic Flight Academy, based in New Smyrna Beach, Florida, offers the most affordable full-service accelerated programme in the US. Their Professional Airline Pilot Program takes students from zero to CFI/CFII/MEI in approximately 12 months at a total cost of <strong>$83,646.85</strong>  -  roughly $40,000 less than ATP.
               </p>
 
               <div className="overflow-x-auto my-6">
@@ -188,42 +188,42 @@ export default function BestFlightSchoolsUSA() {
                   <tbody className="divide-y divide-white/10 text-white/80">
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Private Pilot (PPL)</td>
-                      <td className="px-4 py-3">$28,822</td>
+                      <td className="px-4 py-3">{">"}$28,822</td>
                       <td className="px-4 py-3">3 months</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Instrument Rating (IR)</td>
-                      <td className="px-4 py-3">$17,052.50</td>
+                      <td className="px-4 py-3">{">"}$17,052.50</td>
                       <td className="px-4 py-3">2 months</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Commercial Single-Engine (CSEL)</td>
-                      <td className="px-4 py-3">$18,013.50</td>
+                      <td className="px-4 py-3">{">"}$18,013.50</td>
                       <td className="px-4 py-3">2 months</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Commercial Multi-Engine (CMEL)</td>
-                      <td className="px-4 py-3">$7,064</td>
+                      <td className="px-4 py-3">{">"}$7,064</td>
                       <td className="px-4 py-3">3 weeks</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">CFI</td>
-                      <td className="px-4 py-3">$11,155</td>
+                      <td className="px-4 py-3">{">"}$11,155</td>
                       <td className="px-4 py-3">2 months</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">CFII</td>
-                      <td className="px-4 py-3">$5,860</td>
+                      <td className="px-4 py-3">{">"}$5,860</td>
                       <td className="px-4 py-3">3 weeks</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">MEI</td>
-                      <td className="px-4 py-3">$11,663</td>
+                      <td className="px-4 py-3">{">"}$11,663</td>
                       <td className="px-4 py-3">3 weeks</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors bg-white/5 font-semibold">
                       <td className="px-4 py-3 text-white">Total (zero to CFI/CFII/MEI)</td>
-                      <td className="px-4 py-3 text-white">$83,646.85 + non-tuition ~$8,603</td>
+                      <td className="px-4 py-3 text-white">{">"}$83,646.85 + non-tuition ~$8,603</td>
                       <td className="px-4 py-3 text-white">~12 months</td>
                     </tr>
                   </tbody>
@@ -234,7 +234,7 @@ export default function BestFlightSchoolsUSA() {
                 <strong>Best for:</strong> Pilots who want an accelerated route to the airlines at the lowest possible cost, and are comfortable training in Florida's weather-dependent environment.
               </p>
               <p>
-                <strong>Watch out for:</strong> Epic's lower cost reflects a slightly less intensive schedule than ATP — training takes 12 months vs ATP's 7–9. Epic does not have the same nationwide network of locations as ATP, which matters if you want to train close to home.
+                <strong>Watch out for:</strong> Epic's lower cost reflects a slightly less intensive schedule than ATP  -  training takes 12 months vs ATP's 7-9. Epic does not have the same nationwide network of locations as ATP, which matters if you want to train close to home.
               </p>
             </>
           ),
@@ -247,7 +247,7 @@ export default function BestFlightSchoolsUSA() {
                 Embry-Riddle Aeronautical University (ERAU) is the most prestigious aviation university in the United States, with campuses in Daytona Beach, Florida and Prescott, Arizona. Their Bachelor of Science in Aeronautical Science integrates flight training with a four-year degree.
               </p>
               <p>
-                The key advantage of the ERAU route is the <strong>R-ATP hour reduction</strong>: graduates with an aviation bachelor's degree from an AABI-accredited institution qualify for the Restricted ATP at 1,000 hours instead of 1,500 — saving approximately 12–18 months of CFI hour-building. The degree also opens doors to management, government, and non-flying aviation careers.
+                The key advantage of the ERAU route is the <strong>R-ATP hour reduction</strong>: graduates with an aviation bachelor's degree from an AABI-accredited institution qualify for the Restricted ATP at 1,000 hours instead of 1,500  -  saving approximately 12-18 months of CFI hour-building. The degree also opens doors to management, government, and non-flying aviation careers.
               </p>
               <p>
                 The key disadvantage is cost. Total estimated cost including tuition, flight fees, and living expenses over four years can exceed <strong>$220,000</strong> at the Daytona Beach campus. Students can access federal student loans (FAFSA) and university scholarships, which are not available at standalone flight schools.
@@ -263,7 +263,7 @@ export default function BestFlightSchoolsUSA() {
           content: (
             <>
               <p>
-                Training at a local Part 61 flying club or small flight school is the cheapest way to earn your licences — typically <strong>$65,000–$90,000</strong> total from zero to CFI. The trade-off is time: without the structured curriculum of a Part 141 school, most students take 2–5 years to complete the same training, training part-time around work or study.
+                Training at a local Part 61 flying club or small flight school is the cheapest way to earn your licences  -  typically <strong>$65,000-$90,000</strong> total from zero to CFI. The trade-off is time: without the structured curriculum of a Part 141 school, most students take 2-5 years to complete the same training, training part-time around work or study.
               </p>
               <p>
                 The other significant disadvantage is that Part 61 schools do not qualify for the GI Bill, and their students cannot access the R-ATP hour reduction. If you plan to go to the airlines, you will need 1,500 hours regardless of how efficiently you trained.
@@ -291,12 +291,12 @@ export default function BestFlightSchoolsUSA() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Want the fastest route to the airlines, no degree needed</td>
                       <td className="px-4 py-3">ATP Flight School</td>
-                      <td className="px-4 py-3">Fixed price, 7–9 months, 100+ locations, strongest airline partnerships</td>
+                      <td className="px-4 py-3">Fixed price, 7-9 months, 100+ locations, strongest airline partnerships</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Want accelerated training at the lowest cost</td>
                       <td className="px-4 py-3">Epic Flight Academy</td>
-                      <td className="px-4 py-3">$83,647 total — $40k cheaper than ATP, still Part 141 and GI Bill eligible</td>
+                      <td className="px-4 py-3">{">"}$83,647 total  -  $40k cheaper than ATP, still Part 141 and GI Bill eligible</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Want a degree and can access federal financial aid</td>

@@ -6,7 +6,7 @@ export default function IntegratedVsModularCost() {
   return (
     <GuideLayout
       title="Integrated vs Modular ATPL: Which is Actually Cheaper? (2026)"
-      subtitle="A brutally honest cost comparison of the two main routes to a commercial pilot licence — including the hidden costs that marketing materials never mention."
+      subtitle="A brutally honest cost comparison of the two main routes to a commercial pilot licence  -  including the hidden costs that marketing materials never mention."
       canonical="/guides/integrated-vs-modular-cost"
       metaDescription="Integrated vs modular ATPL cost comparison 2026. Integrated: £80k-£130k. Modular: £55k-£85k. But the real difference is smaller than you think. Full breakdown."
       readTime="11 min read"
@@ -25,10 +25,10 @@ export default function IntegratedVsModularCost() {
           content: (
             <>
               <p>
-                The headline cost comparison is straightforward. Integrated ATPL training at a major UK academy costs £80,000–£130,000. Modular ATPL training typically costs £55,000–£85,000. On paper, modular is cheaper by £25,000–£45,000.
+                The headline cost comparison is straightforward. Integrated ATPL training at a major UK academy costs £80,000-£130,000. Modular ATPL training typically costs £55,000-£85,000. On paper, modular is cheaper by £25,000-£45,000.
               </p>
               <p>
-                But the headline numbers are misleading. The real cost comparison is more nuanced, and for many candidates, the difference is smaller than it appears — or even reversed.
+                But the headline numbers are misleading. The real cost comparison is more nuanced, and for many candidates, the difference is smaller than it appears  -  or even reversed.
               </p>
             </>
           ),
@@ -38,7 +38,7 @@ export default function IntegratedVsModularCost() {
           content: (
             <>
               <p>
-                An integrated programme takes you from zero hours to a frozen ATPL in 18–24 months of full-time training. Here is a realistic all-in cost breakdown for 2026:
+                An integrated programme takes you from zero hours to a frozen ATPL in 18-24 months of full-time training. Here is a realistic all-in cost breakdown for 2026:
               </p>
               
               <div className="overflow-x-auto my-6">
@@ -52,26 +52,26 @@ export default function IntegratedVsModularCost() {
                   <tbody className="divide-y divide-white/10 text-white/80">
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">School fees (CAE/Acron/FTEJerez/Skyborne)</td>
-                      <td className="px-4 py-3">£99,900 – £119,500</td>
+                      <td className="px-4 py-3">£99,900 - £119,500</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Living costs during training (20 months)</td>
-                      <td className="px-4 py-3">£15,000 – £25,000</td>
+                      <td className="px-4 py-3">£15,000 - £25,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Type rating (if not included)</td>
-                      <td className="px-4 py-3">£0 – £30,000</td>
+                      <td className="px-4 py-3">£0 - £30,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors font-semibold">
                       <td className="px-4 py-3 text-white">Total (without type rating)</td>
-                      <td className="px-4 py-3 text-white">£115,000 – £145,000</td>
+                      <td className="px-4 py-3 text-white">£115,000 - £145,000</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
               <p>
-                The key hidden cost of integrated training is the <strong>opportunity cost</strong> — the income you give up by training full-time for 20 months. If you were earning £35,000/year before training, that is £58,000 in foregone income over 20 months. This is a real cost that most integrated school brochures never mention.
+                The key hidden cost of integrated training is the <strong>opportunity cost</strong>  -  the income you give up by training full-time for 20 months. If you were earning £35,000/year before training, that is £58,000 in foregone income over 20 months. This is a real cost that most integrated school brochures never mention.
               </p>
             </>
           ),
@@ -81,7 +81,7 @@ export default function IntegratedVsModularCost() {
           content: (
             <>
               <p>
-                A modular programme allows you to train stage-by-stage over 3–5 years while maintaining your income. Here is a realistic all-in cost breakdown:
+                A modular programme allows you to train stage-by-stage over 3-5 years while maintaining your income. Here is a realistic all-in cost breakdown:
               </p>
               
               <div className="overflow-x-auto my-6">
@@ -95,35 +95,35 @@ export default function IntegratedVsModularCost() {
                   <tbody className="divide-y divide-white/10 text-white/80">
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">PPL (Private Pilot Licence)</td>
-                      <td className="px-4 py-3">£8,000 – £15,000</td>
+                      <td className="px-4 py-3">£8,000 - £15,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">ATPL Theory (distance learning)</td>
-                      <td className="px-4 py-3">£2,500 – £4,000</td>
+                      <td className="px-4 py-3">£2,500 - £4,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Hour Building (100 hours, Spain)</td>
-                      <td className="px-4 py-3">£9,000 – £14,000</td>
+                      <td className="px-4 py-3">£9,000 - £14,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">CPL (Commercial Pilot Licence)</td>
-                      <td className="px-4 py-3">£10,000 – £15,000</td>
+                      <td className="px-4 py-3">£10,000 - £15,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Multi-Engine Rating (ME)</td>
-                      <td className="px-4 py-3">£5,000 – £8,000</td>
+                      <td className="px-4 py-3">£5,000 - £8,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Instrument Rating (IR)</td>
-                      <td className="px-4 py-3">£12,000 – £18,000</td>
+                      <td className="px-4 py-3">£12,000 - £18,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">MCC/JOC Course</td>
-                      <td className="px-4 py-3">£3,500 – £6,000</td>
+                      <td className="px-4 py-3">£3,500 - £6,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors font-semibold">
                       <td className="px-4 py-3 text-white">Total (without type rating)</td>
-                      <td className="px-4 py-3 text-white">£50,000 – £80,000</td>
+                      <td className="px-4 py-3 text-white">£50,000 - £80,000</td>
                     </tr>
                   </tbody>
                 </table>
@@ -143,13 +143,13 @@ export default function IntegratedVsModularCost() {
                 When you factor in the opportunity cost of income lost during integrated training, the comparison looks very different.
               </p>
               <p>
-                <strong>Integrated (20 months, full-time):</strong> School fees £99,900–£119,500 (e.g. CAE £99,900, FTEJerez £119,500) + living costs £20,000 + lost income (£35k/year × 1.7 years) £60,000 = <strong>total economic cost: ~£180,000–£200,000</strong>.
+                <strong>Integrated (20 months, full-time):</strong> School fees £99,900-£119,500 (e.g. CAE £99,900, FTEJerez £119,500) + living costs £20,000 + lost income (£35k/year × 1.7 years) £60,000 = <strong>total economic cost: ~£180,000-£200,000</strong>.
               </p>
               <p>
                 <strong>Modular (4 years, part-time):</strong> Training fees £65,000 + skill decay extra hours £5,000 + no lost income = <strong>total economic cost: ~£70,000</strong>.
               </p>
               <p>
-                On this basis, modular is dramatically cheaper — but only if you maintain your income throughout training and avoid significant skill decay gaps.
+                On this basis, modular is dramatically cheaper  -  but only if you maintain your income throughout training and avoid significant skill decay gaps.
               </p>
               <p>
                 The integrated route is worth the premium if: you cannot self-motivate over a 4-year period, you want the fastest possible route to an airline job, or you have access to a cadet programme that requires integrated training.
@@ -165,7 +165,7 @@ export default function IntegratedVsModularCost() {
                 The myth that integrated training is significantly better for employment prospects is largely outdated. A decade ago, legacy carriers like British Airways and Lufthansa had strong preferences for integrated graduates from specific partner schools. Today, the pilot shortage has fundamentally changed the hiring landscape.
               </p>
               <p>
-                Ryanair, easyJet, Jet2, and Wizz Air — the four largest employers of newly qualified pilots in the UK — all actively recruit modular graduates. What matters to these airlines is your ATPL exam average (aim for 85%+), your simulator performance in their assessment, and your interview skills. They do not ask whether you trained at CAE Oxford or Bristol Groundschool.
+                Ryanair, easyJet, Jet2, and Wizz Air  -  the four largest employers of newly qualified pilots in the UK  -  all actively recruit modular graduates. What matters to these airlines is your ATPL exam average (aim for 85%+), your simulator performance in their assessment, and your interview skills. They do not ask whether you trained at CAE Oxford or Bristol Groundschool.
               </p>
               <p>
                 The one area where integrated training still has a genuine advantage is access to specific cadet programmes. The BA Speedbird Academy, easyJet Generation Pilot, and Jet2 FlightPath programmes all require integrated training at their partner schools. If you want a guaranteed job offer before you start training, integrated is the only option.

@@ -5,7 +5,7 @@ const BestRouteToAirline = () => {
   return (
     <GuideLayout
       title="The Best Route to Becoming an Airline Pilot in 2025"
-      subtitle="Which training path gives you the best chance of getting hired by a UK airline — and what airlines actually look for when recruiting."
+      subtitle="Which training path gives you the best chance of getting hired by a UK airline  -  and what airlines actually look for when recruiting."
       canonical="/guides/best-route-to-airline"
       metaDescription="Best route to becoming an airline pilot in 2025: which training path, what airlines look for, cadet programmes vs self-funded, and how to maximise your chances of getting hired."
       faqSchema={[

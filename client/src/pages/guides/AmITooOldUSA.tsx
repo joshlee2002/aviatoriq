@@ -106,19 +106,19 @@ export default function AmITooOldUSA() {
                       <td className="p-3 border border-gray-700">35 Years Old</td>
                       <td className="p-3 border border-gray-700">2 - 2.5 Years</td>
                       <td className="p-3 border border-gray-700">27.5 Years</td>
-                      <td className="p-3 border border-gray-700">$350,000+ (Legacy Captain)</td>
+                      <td className="p-3 border border-gray-700">{">"}$350,000+ (Legacy Captain)</td>
                     </tr>
                     <tr className="bg-white/5 border border-white/20">
                       <td className="p-3 border border-gray-700">45 Years Old</td>
                       <td className="p-3 border border-gray-700">2 - 2.5 Years</td>
                       <td className="p-3 border border-gray-700">17.5 Years</td>
-                      <td className="p-3 border border-gray-700">$280,000+ (Legacy/Regional Capt)</td>
+                      <td className="p-3 border border-gray-700">{">"}$280,000+ (Legacy/Regional Capt)</td>
                     </tr>
                     <tr className="bg-white/5 border border-white/20">
                       <td className="p-3 border border-gray-700">55 Years Old</td>
                       <td className="p-3 border border-gray-700">2 - 2.5 Years</td>
                       <td className="p-3 border border-gray-700">7.5 Years</td>
-                      <td className="p-3 border border-gray-700">$180,000+ (Regional Captain)</td>
+                      <td className="p-3 border border-gray-700">{">"}$180,000+ (Regional Captain)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -134,7 +134,7 @@ export default function AmITooOldUSA() {
                 Many mature candidates ask: <em>Are there specific airlines or types of aviation (e.g., cargo, corporate) that are more welcoming to older, career-changing pilots?</em> The resounding answer is yes. While major passenger airlines are an excellent goal, they are not the only lucrative or fulfilling path in aviation, especially for those starting in their late 40s or 50s.
               </p>
               <p className="mb-4">
-                Corporate aviation (Part 135 and Part 91) is incredibly welcoming to older pilots. Corporate flight departments often value the maturity, life experience, and professional demeanor that older career changers bring to the cockpit. Flying high-net-worth individuals or corporate executives requires exceptional customer service and discretion—skills many older professionals have honed over decades. Part 135 and Part 91 operations do not have a mandatory retirement age of 65. As long as you can hold a First or Second Class Medical Certificate, you can continue flying jets like Gulfstreams or Cessna Citations well into your 70s. In 2026, experienced corporate jet captains can earn between $150,000 and $250,000 annually.
+                Corporate aviation (Part 135 and Part 91) is incredibly welcoming to older pilots. Corporate flight departments often value the maturity, life experience, and professional demeanor that older career changers bring to the cockpit. Flying high-net-worth individuals or corporate executives requires exceptional customer service and discretion - skills many older professionals have honed over decades. Part 135 and Part 91 operations do not have a mandatory retirement age of 65. As long as you can hold a First or Second Class Medical Certificate, you can continue flying jets like Gulfstreams or Cessna Citations well into your 70s. In 2026, experienced corporate jet captains can earn between $150,000 and $250,000 annually.
               </p>
               <p className="mb-4">
                 Cargo operations also present a fantastic opportunity. While major cargo carriers like FedEx and UPS operate under Part 121 and are subject to the age 65 rule, feeder cargo operations (flying smaller turboprops like the Cessna Caravan for companies like Ameriflight) often operate under Part 135. These roles offer stable schedules, excellent stick-and-rudder experience, and a pathway that bypasses the passenger airline age restrictions.

@@ -44,7 +44,7 @@ const CfiCareerUSA = () => {
               </p>
               <img src="/manus-storage/instructor-teaching_bbff2f90.jpg" alt="CFI teaching student" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                The demand for flight instruction remains consistently high, driven by the ongoing pilot shortage and the continuous influx of new students into flight schools. This ensures a steady stream of opportunities for CFIs to log flight time. By actively instructing, pilots can accumulate between 500 to 800 hours per year, significantly accelerating their journey to regional airlines. This method not only helps offset training costs but also provides invaluable experience in decision-making, risk management, and communication—skills highly valued by airlines.
+                The demand for flight instruction remains consistently high, driven by the ongoing pilot shortage and the continuous influx of new students into flight schools. This ensures a steady stream of opportunities for CFIs to log flight time. By actively instructing, pilots can accumulate between 500 to 800 hours per year, significantly accelerating their journey to regional airlines. This method not only helps offset training costs but also provides invaluable experience in decision-making, risk management, and communication - skills highly valued by airlines.
               </p>
               <p>
                 Beyond hour-building, the CFI experience refines your aeronautical knowledge and teaching abilities. Explaining complex aviation concepts to students solidifies your understanding and prepares you for the rigorous training and standardization required in an airline environment. It's a period of intense learning and professional growth, transforming you from a pilot who can fly to a pilot who can teach, lead, and operate with a high degree of precision and professionalism.
@@ -89,7 +89,7 @@ const CfiCareerUSA = () => {
           content: (
             <>
               <p>
-                While a basic CFI certificate allows you to instruct in single-engine aircraft under visual flight rules, adding a Certificated Flight Instructor – Instrument (CFII) and a Multi-Engine Instructor (MEI) rating significantly enhances your marketability and earning potential. A CFII rating authorizes you to provide instrument flight instruction, a highly sought-after skill given the importance of instrument proficiency for commercial and airline pilots. This allows you to teach students how to fly solely by reference to instruments, preparing them for instrument rating checkrides.
+                While a basic CFI certificate allows you to instruct in single-engine aircraft under visual flight rules, adding a Certificated Flight Instructor - Instrument (CFII) and a Multi-Engine Instructor (MEI) rating significantly enhances your marketability and earning potential. A CFII rating authorizes you to provide instrument flight instruction, a highly sought-after skill given the importance of instrument proficiency for commercial and airline pilots. This allows you to teach students how to fly solely by reference to instruments, preparing them for instrument rating checkrides.
               </p>
               <p>
                 The Multi-Engine Instructor (MEI) rating is considered the pinnacle of flight instructor specialization. With an MEI, you can instruct students in multi-engine aircraft, which is a critical step for pilots aiming for an airline career, as regional and major airlines operate multi-engine jets. MEI-qualified instructors are in high demand and often command higher hourly rates due to the complexity of multi-engine aircraft systems and the specialized training required. Acquiring these add-on ratings demonstrates a higher level of expertise and commitment to your instructing career.
@@ -125,13 +125,13 @@ const CfiCareerUSA = () => {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Hourly Rate</td>
-                    <td className="px-4 py-3 text-white/80 border-b border-white/10">$25 - $40</td>
-                    <td className="px-4 py-3 text-white/80 border-b border-white/10">$40 - $70+</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$25 - $40</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$40 - $70+</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Estimated Annual Income</td>
-                    <td className="px-4 py-3 text-white/80 border-b border-white/10">$35,000 - $55,000</td>
-                    <td className="px-4 py-3 text-white/80 border-b border-white/10">$55,000 - $85,000+</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$35,000 - $55,000</td>
+                    <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$55,000 - $85,000+</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Hours Built Per Year</td>

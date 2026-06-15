@@ -40,10 +40,10 @@ const PilotEyesightUK = () => {
           content: (
             <>
               <p>
-                The UK CAA Class 1 medical includes a detailed vision assessment. Poor eyesight does not automatically disqualify you — the majority of aspiring pilots who wear glasses or contact lenses pass without issue. What matters is whether your corrected vision meets the specific standards, and whether any underlying eye condition is stable and non-progressive.
+                The UK CAA Class 1 medical includes a detailed vision assessment. Poor eyesight does not automatically disqualify you  -  the majority of aspiring pilots who wear glasses or contact lenses pass without issue. What matters is whether your corrected vision meets the specific standards, and whether any underlying eye condition is stable and non-progressive.
               </p>
               <p>
-                Post-Brexit, the UK CAA operates its own medical standards (UK-FCL), which are closely aligned with but not identical to the EASA standards. If you plan to fly for an EASA carrier (Ryanair, Wizz Air, etc.) you will need a separate EASA medical certificate — the vision standards are the same, but the certificates are issued separately.
+                Post-Brexit, the UK CAA operates its own medical standards (UK-FCL), which are closely aligned with but not identical to the EASA standards. If you plan to fly for an EASA carrier (Ryanair, Wizz Air, etc.) you will need a separate EASA medical certificate  -  the vision standards are the same, but the certificates are issued separately.
               </p>
               <img src="/manus-storage/medical-exam_79659228.jpg" alt="Aviation medical examination" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
             </>
@@ -53,10 +53,10 @@ const PilotEyesightUK = () => {
           heading: "Class 1 Medical Visual Acuity Standards: Distant, Near, and Intermediate Vision",
           content: (
             <>
-              <p>The cornerstone of the Class 1 medical vision assessment is visual acuity – how clearly you can see at various distances. The CAA and EASA specify distinct requirements for distant, intermediate, and near vision, both with and without corrective lenses.</p>
+              <p>The cornerstone of the Class 1 medical vision assessment is visual acuity - how clearly you can see at various distances. The CAA and EASA specify distinct requirements for distant, intermediate, and near vision, both with and without corrective lenses.</p>
               <p>For <strong>distant visual acuity</strong>, with or without correction, you must achieve 6/9 (0.7) or better in each eye separately. Crucially, your visual acuity with both eyes together (binocular vision) must be 6/6 (1.0) or better. This ensures a pilot has excellent overall vision for identifying distant landmarks, other aircraft, and runway features.</p>
               <p><strong>Near and intermediate vision</strong> are equally important for tasks within the cockpit, such as reading instruments, charts, and electronic displays. Applicants must be able to read an N5 chart or equivalent at 30-50 cm (near vision) and an N14 chart or equivalent at 100 cm (intermediate vision), if necessary with correction. These tests simulate the distances at which pilots interact with their flight deck instruments and documentation.</p>
-              <p>Correction is permitted, but the underlying refractive error must also fall within acceptable limits — covered in the next section.</p>
+              <p>Correction is permitted, but the underlying refractive error must also fall within acceptable limits  -  covered in the next section.</p>
             </>
           ),
         },

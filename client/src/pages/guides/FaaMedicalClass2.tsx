@@ -154,8 +154,8 @@ export default function FaaMedicalClass2() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Service</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Standard Class 2 AME Exam</td><td className="px-4 py-3 text-white/80">$150 - $300</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Additional Tests (e.g., EKG)</td><td className="px-4 py-3 text-white/80">$50 - $150 (each)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Standard Class 2 AME Exam</td><td className="px-4 py-3 text-white/80">{">"}$150 - $300</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Additional Tests (e.g., EKG)</td><td className="px-4 py-3 text-white/80">{">"}$50 - $150 (each)</td></tr>
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Special Issuance Consultation</td><td className="px-4 py-3 text-white/80">Varies significantly</td></tr>
                 </tbody>
               </table>

@@ -20,7 +20,7 @@ export default function SaCplRequirements() {
           content: (
             <>
               <p>The journey to becoming a commercial pilot in South Africa is a rigorous yet rewarding path, governed by the stringent standards of the South African Civil Aviation Authority (SACAA). A Commercial Pilot License (CPL) is the essential credential that permits an individual to act as pilot-in-command of an aircraft for remuneration. This guide provides an exhaustive overview of the requirements, training modules, associated costs, and career opportunities within the South African aviation sector for 2026, ensuring aspiring pilots are equipped with accurate and comprehensive information.</p>
-              <p>South Africa has long been recognized as a prime destination for pilot training, attracting both local and international students due to its favorable flying conditions, diverse airspace, and adherence to international aviation standards set by the International Civil Aviation Organization (ICAO). The SACAA’s regulatory framework, detailed primarily in the Civil Aviation Regulations (CAR) 2011 Part 61, ensures that all licensed pilots meet the highest safety and operational competencies.</p>
+              <p>South Africa has long been recognized as a prime destination for pilot training, attracting both local and international students due to its favorable flying conditions, diverse airspace, and adherence to international aviation standards set by the International Civil Aviation Organization (ICAO). The SACAA's regulatory framework, detailed primarily in the Civil Aviation Regulations (CAR) 2011 Part 61, ensures that all licensed pilots meet the highest safety and operational competencies.</p>
             </>
           )
         },
@@ -117,7 +117,7 @@ export default function SaCplRequirements() {
                 <li><strong>Hour Building:</strong> Accumulating the required flight hours, often structured to maximize experience in diverse conditions.</li>
                 <li><strong>Instrument Rating (IR):</strong> Training to fly solely by reference to instruments, crucial for commercial operations.</li>
                 <li><strong>Multi-Engine Rating (ME):</strong> (Optional but highly recommended) Training on aircraft with more than one engine, enhancing employability.</li>
-                <li><strong>Commercial Pilot’s Rating:</strong> The final practical flight test, demonstrating proficiency in commercial operations.</li>
+                <li><strong>Commercial Pilot's Rating:</strong> The final practical flight test, demonstrating proficiency in commercial operations.</li>
               </ol>
               <p>The final phase of practical training for the CPL is often conducted on a variable pitch, retractable gear aircraft, preparing the pilot for more complex aircraft operations. The choice between a single-engine or multi-engine route for the CPL skill test depends on career aspirations and the specific flight school's offerings.</p>
             </>

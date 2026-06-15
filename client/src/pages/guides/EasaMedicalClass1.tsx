@@ -36,7 +36,7 @@ export default function EasaMedicalClass1() {
                 <li>Flight instructors exercising CPL privileges</li>
                 <li>Any pilot receiving compensation for flying</li>
               </ul>
-              <p>It is highly recommended to obtain your Class 1 medical before commencing expensive commercial pilot training. An integrated ATPL course can cost between €60,000 and €120,000. Discovering a disqualifying condition after starting training can be financially devastating.</p>
+              <p>It is highly recommended to obtain your Class 1 medical before commencing expensive commercial pilot training. An integrated ATPL course can cost between EUR60,000 and EUR120,000. Discovering a disqualifying condition after starting training can be financially devastating.</p>
             </>
           )
         },
@@ -126,15 +126,15 @@ export default function EasaMedicalClass1() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Country</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Initial Cost (EUR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Renewal Cost (EUR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Bulgaria</td><td className="px-4 py-3 text-white/80">€150</td><td className="px-4 py-3 text-white/80">€95</td><td className="px-4 py-3 text-white/80">Cheapest in Europe — same-day certificate</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Latvia</td><td className="px-4 py-3 text-white/80">€180</td><td className="px-4 py-3 text-white/80">€120</td><td className="px-4 py-3 text-white/80">Blood panel not included (€20-€40 extra)</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Czech Republic</td><td className="px-4 py-3 text-white/80">€220</td><td className="px-4 py-3 text-white/80">€88-€140</td><td className="px-4 py-3 text-white/80">AME renewals from €88</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Spain</td><td className="px-4 py-3 text-white/80">€350-€600</td><td className="px-4 py-3 text-white/80">€200-€300</td><td className="px-4 py-3 text-white/80">14 AeMCs — wide price competition</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Germany</td><td className="px-4 py-3 text-white/80">€500-€700</td><td className="px-4 py-3 text-white/80">€200-€350</td><td className="px-4 py-3 text-white/80">Multiple AeMCs, varies by region</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ireland</td><td className="px-4 py-3 text-white/80">€750</td><td className="px-4 py-3 text-white/80">€350</td><td className="px-4 py-3 text-white/80">One of Europe\'s most expensive</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Bulgaria</td><td className="px-4 py-3 text-white/80">EUR150</td><td className="px-4 py-3 text-white/80">EUR95</td><td className="px-4 py-3 text-white/80">Cheapest in Europe  -  same-day certificate</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Latvia</td><td className="px-4 py-3 text-white/80">EUR180</td><td className="px-4 py-3 text-white/80">EUR120</td><td className="px-4 py-3 text-white/80">Blood panel not included (EUR20-EUR40 extra)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Czech Republic</td><td className="px-4 py-3 text-white/80">EUR220</td><td className="px-4 py-3 text-white/80">EUR88-EUR140</td><td className="px-4 py-3 text-white/80">AME renewals from EUR88</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Spain</td><td className="px-4 py-3 text-white/80">EUR350-EUR600</td><td className="px-4 py-3 text-white/80">EUR200-EUR300</td><td className="px-4 py-3 text-white/80">14 AeMCs  -  wide price competition</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Germany</td><td className="px-4 py-3 text-white/80">EUR500-EUR700</td><td className="px-4 py-3 text-white/80">EUR200-EUR350</td><td className="px-4 py-3 text-white/80">Multiple AeMCs, varies by region</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ireland</td><td className="px-4 py-3 text-white/80">EUR750</td><td className="px-4 py-3 text-white/80">EUR350</td><td className="px-4 py-3 text-white/80">One of Europe\'s most expensive</td></tr>
                 </tbody>
               </table>
-              <p><em>Note: Base prices exclude specialist referrals, additional testing, or casework, which can add €100-€500+.</em></p>
+              <p><em>Note: Base prices exclude specialist referrals, additional testing, or casework, which can add EUR100-EUR500+.</em></p>
             </>
           )
         },
@@ -168,14 +168,14 @@ export default function EasaMedicalClass1() {
                 <li><strong>OML:</strong> Valid only as or with a qualified co-pilot (multi-crew only).</li>
                 <li><strong>HAL:</strong> Valid only with hearing aid(s) worn.</li>
               </ul>
-              <p>If assessed as \"unfit,\" the Part-MED flexibility clause allows certification if the condition does not compromise flight safety. You have the right to appeal to the medical assessor of your national aviation authority.</p>
+              <p>If assessed as "unfit," the Part-MED flexibility clause allows certification if the condition does not compromise flight safety. You have the right to appeal to the medical assessor of your national aviation authority.</p>
             </>
           )
         },
       ]}
       faqSchema={[
         { question: "Can I get an EASA Class 1 medical if I wear glasses?", answer: "Yes, corrected vision is acceptable as long as it meets the standards (e.g., distant vision 6/9 each eye, 6/6 both). Refractive limits are generally +5.0 to -6.0 diopters." },
-        { question: "How much does an initial EASA Class 1 medical cost in 2026?", answer: "Costs range from €150 in countries like Bulgaria to €750 in Ireland. The certificate is valid across all EASA member states regardless of where it is issued." },
+        { question: "How much does an initial EASA Class 1 medical cost in 2026?", answer: "Costs range from EUR150 in countries like Bulgaria to EUR750 in Ireland. The certificate is valid across all EASA member states regardless of where it is issued." },
         { question: "What happens if I fail the medical exam?", answer: "An \"unfit\" assessment is not always final. You can appeal to your national aviation authority\'s medical assessor, and the flexibility clause may allow certification if your condition doesn\'t compromise flight safety." },
         { question: "How long is the Class 1 medical valid?", answer: "For multi-pilot operations, it is valid for 12 months if you are under 60, and 6 months if you are 60-64. For single-pilot commercial operations carrying passengers, it drops to 6 months after age 40." },
         { question: "Do I need to go to an AeMC for my renewal?", answer: "No, while the initial examination must be at an Aeromedical Centre (AeMC), routine renewals can be performed by any Aeromedical Examiner (AME) with Class 1 privileges." },

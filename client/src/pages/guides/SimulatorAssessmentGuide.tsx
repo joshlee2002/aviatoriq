@@ -18,7 +18,7 @@ export default function SimulatorAssessmentGuide() {
         { question: "What is an airline simulator assessment?", answer: "A simulator assessment is a practical flight test in a full-motion Level D simulator (usually an A320 or B737). It is used by airlines to assess a candidate's basic instrument flying skills, crew resource management (CRM), and ability to learn under pressure." },
         { question: "What does 'raw data flying' mean?", answer: "Raw data flying means flying the aircraft without the flight director (the guidance crosshairs on the primary flight display) or the autopilot. You must fly precise headings, altitudes, and speeds by interpreting the basic instruments yourself." },
         { question: "Do I need to know the specific aircraft systems?", answer: "Generally, no. Unless you already hold a type rating for that aircraft, the assessors do not expect you to know the complex systems or standard operating procedures (SOPs) of the A320 or B737. They will set the aircraft up for you." },
-        { question: "How should I prepare for a simulator assessment?", answer: "Book 2–3 hours in a fixed-base or full-motion simulator of the type you will be assessed in. Practice raw data ILS approaches, steep turns, and go-arounds. Most importantly, practice verbalising your thought process to demonstrate good CRM." }
+        { question: "How should I prepare for a simulator assessment?", answer: "Book 2-3 hours in a fixed-base or full-motion simulator of the type you will be assessed in. Practice raw data ILS approaches, steep turns, and go-arounds. Most importantly, practice verbalising your thought process to demonstrate good CRM." }
       ]}
       sections={[
         {
@@ -26,13 +26,13 @@ export default function SimulatorAssessmentGuide() {
           content: (
             <>
               <p>
-                The simulator assessment is the most technically demanding and stressful stage of airline pilot selection. You will be placed in a multi-million-pound Level D full-flight simulator — typically an Airbus A320 or Boeing 737 — alongside another candidate or a training captain.
+                The simulator assessment is the most technically demanding and stressful stage of airline pilot selection. You will be placed in a multi-million-pound Level D full-flight simulator  -  typically an Airbus A320 or Boeing 737  -  alongside another candidate or a training captain.
               </p>
               <p>
                 The most common misconception is that the airline expects you to fly the jet perfectly. They do not. If you are a 200-hour cadet whose only twin-engine experience is in a Diamond DA42, they know you will struggle with the inertia and speed of a 70-tonne airliner.
               </p>
               <p>
-                They are assessing two things: your fundamental instrument scanning skills (can you process basic flight data?) and your Crew Resource Management (CRM) — how you communicate, manage workload, and respond to errors.
+                They are assessing two things: your fundamental instrument scanning skills (can you process basic flight data?) and your Crew Resource Management (CRM)  -  how you communicate, manage workload, and respond to errors.
               </p>
             </>
           ),
@@ -71,7 +71,7 @@ export default function SimulatorAssessmentGuide() {
                 <strong>The Defensive Pilot:</strong> The candidate makes an error (e.g., busts an altitude by 200 feet), the assessor points it out, and the candidate makes an excuse or gets flustered. Assessors want to see you acknowledge the error ("My fault, correcting down to 3,000"), fix it, and move on.
               </p>
               <p>
-                <strong>The Solo Operator:</strong> The candidate tries to do everything themselves — flying, navigating, and talking to ATC — rather than delegating tasks to the Pilot Monitoring. In a multi-crew environment, failing to use your colleague is a critical error.
+                <strong>The Solo Operator:</strong> The candidate tries to do everything themselves  -  flying, navigating, and talking to ATC  -  rather than delegating tasks to the Pilot Monitoring. In a multi-crew environment, failing to use your colleague is a critical error.
               </p>
             </>
           ),
@@ -103,7 +103,7 @@ export default function SimulatorAssessmentGuide() {
                 Do not walk into an airline simulator assessment having never flown a jet simulator. The inertia and pitch/power couples of an A320 or B737 are completely different from a Piper Seneca.
               </p>
               <p>
-                <strong>Book a prep session:</strong> Book 2–3 hours in a fixed-base or full-motion simulator of the type you will be assessed in. Many training centres (like Virtual Aviation or Jet Masterclass in the UK) offer specific "airline assessment prep" sessions with current airline captains. It will cost £500–£1,000, but it is the best investment you can make.
+                <strong>Book a prep session:</strong> Book 2-3 hours in a fixed-base or full-motion simulator of the type you will be assessed in. Many training centres (like Virtual Aviation or Jet Masterclass in the UK) offer specific "airline assessment prep" sessions with current airline captains. It will cost £500-£1,000, but it is the best investment you can make.
               </p>
               <p>
                 <strong>Learn the pitch and power settings:</strong> Ask your prep instructor for the standard pitch and power settings for the aircraft. (e.g., in a B737, level flight at 210 knots clean is roughly 6 degrees nose up and 60% N1). If you know these numbers, you can set them and the aircraft will roughly do what you want, freeing up your mental capacity for navigation and CRM.

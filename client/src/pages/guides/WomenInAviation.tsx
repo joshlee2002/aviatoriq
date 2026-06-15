@@ -25,10 +25,10 @@ export default function WomenInAviation() {
           content: (
             <>
               <p>
-                Progress is being made, but the numbers remain stark. Women represent approximately 5% of commercial pilots in the UK. The Civil Aviation Authority's most recent data shows that 301 pilot licences were issued to women in 2023, up from 239 in 2019 — a meaningful increase, but still a tiny fraction of the total [1].
+                Progress is being made, but the numbers remain stark. Women represent approximately 5% of commercial pilots in the UK. The Civil Aviation Authority's most recent data shows that 301 pilot licences were issued to women in 2023, up from 239 in 2019  -  a meaningful increase, but still a tiny fraction of the total [1].
               </p>
               <p>
-                The global picture is similar. Women account for approximately 5–6% of commercial pilots worldwide. In some regions, the figure is even lower. The aviation industry is aware of this imbalance and has made diversity a stated priority — but awareness and action are different things.
+                The global picture is similar. Women account for approximately 5-6% of commercial pilots worldwide. In some regions, the figure is even lower. The aviation industry is aware of this imbalance and has made diversity a stated priority  -  but awareness and action are different things.
               </p>
               <p>
                 For women considering a pilot career in 2026, the good news is that the industry has never been more actively trying to recruit female candidates. Airlines are running targeted initiatives, scholarships are more available than ever, and the cultural environment in cockpits has improved significantly over the past decade.
@@ -41,13 +41,13 @@ export default function WomenInAviation() {
           content: (
             <>
               <p>
-                Acknowledging the challenges is not pessimism — it is preparation. Women entering aviation in 2026 will encounter some specific obstacles that their male counterparts do not.
+                Acknowledging the challenges is not pessimism  -  it is preparation. Women entering aviation in 2026 will encounter some specific obstacles that their male counterparts do not.
               </p>
               <p>
-                <strong>The cost barrier:</strong> Flight training costs £80,000–£130,000. This is a barrier for everyone, but research consistently shows that women are less likely to take on large amounts of debt than men, and less likely to have access to family financial support for training. Scholarships and bursaries specifically targeting women are therefore critically important.
+                <strong>The cost barrier:</strong> Flight training costs £80,000-£130,000. This is a barrier for everyone, but research consistently shows that women are less likely to take on large amounts of debt than men, and less likely to have access to family financial support for training. Scholarships and bursaries specifically targeting women are therefore critically important.
               </p>
               <p>
-                <strong>The visibility problem:</strong> If you have never seen a female pilot, it is harder to imagine yourself as one. The lack of role models in the cockpit creates a self-reinforcing cycle. This is changing — airlines are increasingly featuring female pilots in their marketing and cadet programme materials — but it is still a real psychological barrier for many young women.
+                <strong>The visibility problem:</strong> If you have never seen a female pilot, it is harder to imagine yourself as one. The lack of role models in the cockpit creates a self-reinforcing cycle. This is changing  -  airlines are increasingly featuring female pilots in their marketing and cadet programme materials  -  but it is still a real psychological barrier for many young women.
               </p>
               <p>
                 <strong>The culture:</strong> Aviation culture has historically been male-dominated, and while it has improved significantly, some environments still have work to do. Most major airlines have strong HR policies and zero tolerance for discrimination, but smaller operators and some flight schools can still feel unwelcoming.
@@ -82,7 +82,7 @@ export default function WomenInAviation() {
                 The major UK airlines have made genuine commitments to improving gender diversity in their cockpits, driven partly by ethics and partly by the practical reality that they cannot afford to exclude half the potential talent pool.
               </p>
               <p>
-                <strong>British Airways:</strong> BA has publicly committed to increasing the proportion of female pilots. Their Speedbird Academy actively encourages female applicants and has no gender preference in selection — candidates are assessed purely on merit. The 2026 intake included a higher proportion of female cadets than any previous year.
+                <strong>British Airways:</strong> BA has publicly committed to increasing the proportion of female pilots. Their Speedbird Academy actively encourages female applicants and has no gender preference in selection  -  candidates are assessed purely on merit. The 2026 intake included a higher proportion of female cadets than any previous year.
               </p>
               <p>
                 <strong>easyJet:</strong> easyJet launched its Amy Johnson Initiative in 2015 with a target of 20% female new entrant pilots by 2020. While that target was not fully met, the initiative raised awareness and created a pipeline of female candidates. easyJet continues to run targeted recruitment events for women.
@@ -98,13 +98,13 @@ export default function WomenInAviation() {
           content: (
             <>
               <p>
-                <strong>Get a trial flight first.</strong> Many women who become pilots say the moment they sat in a cockpit for the first time was the moment they knew it was right for them. A trial flight costs £150–£250 and is the best investment you can make before committing to training.
+                <strong>Get a trial flight first.</strong> Many women who become pilots say the moment they sat in a cockpit for the first time was the moment they knew it was right for them. A trial flight costs £150-£250 and is the best investment you can make before committing to training.
               </p>
               <p>
                 <strong>Apply for every scholarship you are eligible for.</strong> The BWPA, WIA UK, and airline-specific programmes are all worth applying for. The competition is real, but the odds are better than the airline cadet programmes, and the financial benefit can be significant.
               </p>
               <p>
-                <strong>Connect with the community.</strong> Women in Aviation (WIA UK) and the BWPA both run active communities where female pilots and student pilots share experiences, advice, and support. These networks are genuinely valuable — both for practical advice and for the psychological benefit of knowing you are not alone.
+                <strong>Connect with the community.</strong> Women in Aviation (WIA UK) and the BWPA both run active communities where female pilots and student pilots share experiences, advice, and support. These networks are genuinely valuable  -  both for practical advice and for the psychological benefit of knowing you are not alone.
               </p>
               <p>
                 <strong>Do not let the statistics put you off.</strong> The fact that only 5% of pilots are women is a description of the current state, not a prescription for the future. Every woman who becomes a pilot makes it easier for the next one.

@@ -191,19 +191,19 @@ const UsPilotCareerOutlook = () => {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Regional First Officer (Year 1)</td>
-                    <td className="px-4 py-3 text-white/80">$90,000 - $115,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$90,000 - $115,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Regional Captain</td>
-                    <td className="px-4 py-3 text-white/80">$140,000 - $220,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$140,000 - $220,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Major Airline First Officer (Entry)</td>
-                    <td className="px-4 py-3 text-white/80">$110,000 - $180,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$110,000 - $180,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Major Airline Captain</td>
-                    <td className="px-4 py-3 text-white/80">$300,000 - $450,000+</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$300,000 - $450,000+</td>
                   </tr>
                 </tbody>
               </table>

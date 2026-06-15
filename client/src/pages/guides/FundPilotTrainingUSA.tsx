@@ -56,7 +56,7 @@ const FundPilotTrainingUSA = () => {
                 The total cost of pilot training in the USA can vary widely, influenced by several factors including the type of flight school, geographical location, aircraft used for training, and the pace of study. Aspiring pilots typically pursue a series of certificates and ratings, starting with the Private Pilot Certificate (PPL), followed by the Instrument Rating (IR), Commercial Pilot Certificate (CPL), and often Certified Flight Instructor (CFI), Certified Flight Instructor Instrument (CFII), Multi-Engine Instructor (MEI), and finally the Airline Transport Pilot (ATP) certificate.
               </p>
               <p>
-                For a \"zero-to-hero\" program, which takes a student from no prior flight experience to a commercial pilot with instructor ratings, the estimated cost can range from <strong>$80,000 to $120,000 USD</strong>. This figure encompasses flight hours, ground instruction, study materials, examiner fees, and aircraft rental. Part 141 schools, which are FAA-approved and follow a structured curriculum, often have a higher upfront cost but can sometimes be more efficient in terms of time. Part 61 schools offer more flexibility, which can sometimes lead to lower costs if managed carefully, but may take longer to complete.
+                For a "zero-to-hero" program, which takes a student from no prior flight experience to a commercial pilot with instructor ratings, the estimated cost can range from <strong>$80,000 to $120,000 USD</strong>. This figure encompasses flight hours, ground instruction, study materials, examiner fees, and aircraft rental. Part 141 schools, which are FAA-approved and follow a structured curriculum, often have a higher upfront cost but can sometimes be more efficient in terms of time. Part 61 schools offer more flexibility, which can sometimes lead to lower costs if managed carefully, but may take longer to complete.
               </p>
               <p>
                 Here is a general breakdown of estimated costs for key certificates:
@@ -72,37 +72,37 @@ const FundPilotTrainingUSA = () => {
                     <tbody className="divide-y divide-white/10 text-white/80">
                       <tr className="hover:bg-white/5 transition-colors">
                         <td className="px-4 py-3 font-medium text-white">Private Pilot Certificate (PPL)</td>
-                        <td className="px-4 py-3">$15,000 – $29,000</td>
-                        <td className="px-4 py-3">40–60 hrs</td>
+                        <td className="px-4 py-3">{">"}$15,000 - $29,000</td>
+                        <td className="px-4 py-3">40-60 hrs</td>
                       </tr>
                       <tr className="hover:bg-white/5 transition-colors">
                         <td className="px-4 py-3 font-medium text-white">Instrument Rating (IR)</td>
-                        <td className="px-4 py-3">$10,000 – $17,000</td>
-                        <td className="px-4 py-3">40–50 hrs</td>
+                        <td className="px-4 py-3">{">"}$10,000 - $17,000</td>
+                        <td className="px-4 py-3">40-50 hrs</td>
                       </tr>
                       <tr className="hover:bg-white/5 transition-colors">
                         <td className="px-4 py-3 font-medium text-white">Commercial Pilot Certificate (CPL)</td>
-                        <td className="px-4 py-3">$20,000 – $40,000</td>
-                        <td className="px-4 py-3">120–250 hrs total</td>
+                        <td className="px-4 py-3">{">"}$20,000 - $40,000</td>
+                        <td className="px-4 py-3">120-250 hrs total</td>
                       </tr>
                       <tr className="hover:bg-white/5 transition-colors">
                         <td className="px-4 py-3 font-medium text-white">CFI / CFII / MEI</td>
-                        <td className="px-4 py-3">$11,000 – $29,000</td>
-                        <td className="px-4 py-3">~60–80 hrs</td>
+                        <td className="px-4 py-3">{">"}$11,000 - $29,000</td>
+                        <td className="px-4 py-3">~60-80 hrs</td>
                       </tr>
                       <tr className="hover:bg-white/5 transition-colors">
                         <td className="px-4 py-3 font-medium text-white">ATP CTP</td>
-                        <td className="px-4 py-3">$5,000 – $10,000</td>
+                        <td className="px-4 py-3">{">"}$5,000 - $10,000</td>
                         <td className="px-4 py-3">~40 hrs (ground + sim)</td>
                       </tr>
                       <tr className="hover:bg-white/5 transition-colors bg-white/5 font-semibold">
-                        <td className="px-4 py-3 text-white">Total (ATP accelerated — ATP Flight School)</td>
-                        <td className="px-4 py-3 text-white">$123,995 (fixed)</td>
-                        <td className="px-4 py-3 text-white">7–9 months</td>
+                        <td className="px-4 py-3 text-white">Total (ATP accelerated  -  ATP Flight School)</td>
+                        <td className="px-4 py-3 text-white">{">"}$123,995 (fixed)</td>
+                        <td className="px-4 py-3 text-white">7-9 months</td>
                       </tr>
                       <tr className="hover:bg-white/5 transition-colors bg-white/5 font-semibold">
-                        <td className="px-4 py-3 text-white">Total (ATP accelerated — Epic Flight Academy)</td>
-                        <td className="px-4 py-3 text-white">$83,647 (fixed)</td>
+                        <td className="px-4 py-3 text-white">Total (ATP accelerated  -  Epic Flight Academy)</td>
+                        <td className="px-4 py-3 text-white">{">"}$83,647 (fixed)</td>
                         <td className="px-4 py-3 text-white">~12 months</td>
                       </tr>
                     </tbody>

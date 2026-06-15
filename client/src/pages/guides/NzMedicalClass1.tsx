@@ -120,27 +120,27 @@ export default function NzMedicalClass1() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">CAA Application Fee (Resident)</td>
-                    <td className="px-4 py-3 text-white/80">$132.83 (fixed)</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$132.83 (fixed)</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Medical Examination (ME Fee)</td>
-                    <td className="px-4 py-3 text-white/80">$350 - $599</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$350 - $599</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">ECG (if separate)</td>
-                    <td className="px-4 py-3 text-white/80">$65 - $100</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$65 - $100</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Audiogram (if separate)</td>
-                    <td className="px-4 py-3 text-white/80">$85 - $100</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$85 - $100</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Spirometry (if separate)</td>
-                    <td className="px-4 py-3 text-white/80">$50 - $80</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$50 - $80</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Special Eye Report (if separate)</td>
-                    <td className="px-4 py-3 text-white/80">$100 - $200</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$100 - $200</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Total Estimated Initial Cost</strong></td>

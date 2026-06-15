@@ -70,7 +70,7 @@ export default function ModularVsIntegratedDeep() {
                 <strong>The Advantages:</strong> It is drastically cheaper. Because you pay per module, you do not need to secure a £100,000 loan upfront. You can continue working in your current job, maintaining an income while you study. If you discover after your PPL that flying is not for you, you can walk away having spent £12,000 instead of £100,000.
               </p>
               <p>
-                <strong>The Disadvantages:</strong> It takes longer (typically 3 to 5 years). You are the project manager of your own training — you must book the aircraft, manage the weather delays, and maintain your own motivation during the grueling 12-month ATPL theory distance-learning phase. Skill decay between modules can require extra (expensive) refresher hours.
+                <strong>The Disadvantages:</strong> It takes longer (typically 3 to 5 years). You are the project manager of your own training  -  you must book the aircraft, manage the weather delays, and maintain your own motivation during the grueling 12-month ATPL theory distance-learning phase. Skill decay between modules can require extra (expensive) refresher hours.
               </p>
             </>
           ),
@@ -101,7 +101,7 @@ export default function ModularVsIntegratedDeep() {
                 Do not make this decision based on prestige. Make it based on finance and personality.
               </p>
               <p>
-                <strong>Choose Integrated if:</strong> You are 18–25, have access to £120,000 in funding (or parents willing to guarantee a loan), want to reach the airlines as fast as possible, and thrive in highly structured, competitive environments.
+                <strong>Choose Integrated if:</strong> You are 18-25, have access to £120,000 in funding (or parents willing to guarantee a loan), want to reach the airlines as fast as possible, and thrive in highly structured, competitive environments.
               </p>
               <p>
                 <strong>Choose Modular if:</strong> You are a career-changer over 30, you need to maintain your current income, you want to graduate with minimal debt, and you have the self-discipline to manage a multi-year project without someone holding your hand.

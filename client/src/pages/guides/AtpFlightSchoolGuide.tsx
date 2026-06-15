@@ -30,7 +30,7 @@ export default function AtpFlightSchoolGuide() {
                 ATP Flight School is the largest flight training company in the United States, operating over 75 locations and a massive fleet of standardized aircraft (mostly Piper Archers, Cessna 172s, and Piper Seminoles).
               </p>
               <p>
-                Their flagship offering is the Airline Career Pilot Program (ACPP) — a fast-track, highly structured syllabus designed to take a student with zero flight experience and turn them into a Commercial Pilot with Certified Flight Instructor (CFI/CFII/MEI) ratings in just 7 months.
+                Their flagship offering is the Airline Career Pilot Program (ACPP)  -  a fast-track, highly structured syllabus designed to take a student with zero flight experience and turn them into a Commercial Pilot with Certified Flight Instructor (CFI/CFII/MEI) ratings in just 7 months.
               </p>
               <p>
                 ATP is a polarizing force in the aviation community. Its graduates praise the speed and the airline connections. Its critics point to the grueling pace, high cost, and the "sink or swim" mentality. Here is the honest reality for 2026.
@@ -49,13 +49,13 @@ export default function AtpFlightSchoolGuide() {
                 However, that is not the total amount you will spend. You must budget for the following "hidden" costs that are not included in the tuition:
               </p>
               <ul className="list-disc pl-5 space-y-2 mt-2 mb-4">
-                <li><strong>Checkride Fees:</strong> You must pay the FAA Designated Pilot Examiner (DPE) directly for every practical test. At roughly $800–$1,200 per checkride (with 6 or 7 required), this adds $5,000–$8,000.</li>
+                <li><strong>Checkride Fees:</strong> You must pay the FAA Designated Pilot Examiner (DPE) directly for every practical test. At roughly $800-$1,200 per checkride (with 6 or 7 required), this adds $5,000-$8,000.</li>
                 <li><strong>Written Exams:</strong> FAA knowledge tests cost $175 each.</li>
-                <li><strong>Living Expenses:</strong> You cannot work a full-time job while attending ATP. You must budget for 7–10 months of rent, food, and transport.</li>
+                <li><strong>Living Expenses:</strong> You cannot work a full-time job while attending ATP. You must budget for 7-10 months of rent, food, and transport.</li>
                 <li><strong>iPad and Headset:</strong> A required iPad with ForeFlight and a quality aviation headset will cost around $1,500.</li>
               </ul>
               <p>
-                The realistic all-in cost of attending ATP, including living expenses, is closer to <strong>$130,000–$140,000</strong>.
+                The realistic all-in cost of attending ATP, including living expenses, is closer to <strong>$130,000-$140,000</strong>.
               </p>
             </>
           ),
@@ -65,7 +65,7 @@ export default function AtpFlightSchoolGuide() {
           content: (
             <>
               <p>
-                ATP's marketing heavily promotes the 7-month timeline. This is achievable, but it represents the "happy path" — meaning you pass every checkride on the first attempt, you don't experience significant weather delays (hard in winter in the Northeast), and your assigned aircraft doesn't go down for maintenance.
+                ATP's marketing heavily promotes the 7-month timeline. This is achievable, but it represents the "happy path"  -  meaning you pass every checkride on the first attempt, you don't experience significant weather delays (hard in winter in the Northeast), and your assigned aircraft doesn't go down for maintenance.
               </p>
               <p>
                 A more realistic expectation is <strong>8 to 10 months</strong>.

@@ -6,20 +6,20 @@ export default function AirlinePilotSalary() {
   return (
     <GuideLayout
       title="UK Airline Pilot Salary Guide 2026"
-      subtitle="Verified salary figures for first officers and captains at UK airlines — including base pay, allowances, and what actually affects your earnings."
+      subtitle="Verified salary figures for first officers and captains at UK airlines  -  including base pay, allowances, and what actually affects your earnings."
       canonical="/guides/airline-pilot-salary"
-      metaDescription="UK airline pilot salary 2026: easyJet FO £65k–£100k, Ryanair FO £50k–£95k, BA FO £40k–£120k. Verified from BALPA and airline data."
+      metaDescription="UK airline pilot salary 2026: easyJet FO £65k-£100k, Ryanair FO £50k-£95k, BA FO £40k-£120k. Verified from BALPA and airline data."
       readTime="11 min read"
       heroImage="/manus-storage/airline-salary_3b7c8d1e.jpg"
       ctaHref="/quiz"
       ctaText="Get your personalised pilot roadmap"
       scopeBanner={<GuideScopeBanner scope="Salary figures in this guide are for UK airline pilots in GBP. Salaries vary significantly by country and airline." usHref="/us/guides/airline-pilot-salary-usa" usLabel="View USA salaries →" />}
       faqSchema={[
-        { question: "How much do airline pilots earn in the UK?", answer: "UK airline first officers typically earn £50,000–£100,000 total package depending on the airline. Captains earn £100,000–£225,000+. Low-cost carriers like easyJet and Ryanair now pay higher total packages than many legacy carriers due to sector pay and allowances." },
-        { question: "How much do easyJet pilots earn?", answer: "easyJet first officers earn £65,000–£100,000 total package (2025–2026). Captains earn £170,000–£220,000. Pay includes base salary, sector pay and allowances. easyJet is consistently one of the highest-paying short-haul operators in the UK." },
-        { question: "How much do British Airways pilots earn?", answer: "British Airways first officers earn £40,000–£120,000 depending on seniority and fleet. BA captains earn £100,000–£167,000 basic, with total packages reaching £225,000+ for senior long-haul captains." },
-        { question: "How long does it take to become a captain?", answer: "Typically 4–15 years from starting training, depending on the airline and your seniority progression. Low-cost carriers promote first officers to captain much faster (3-5 years) than legacy carriers like BA (10-15 years)." },
-        { question: "Is pilot training worth the cost given the salary?", answer: "For most who complete training and secure an airline job, yes. The return on investment is positive over a career, but the upfront cost of £90k–£130k is significant and there is no employment guarantee after training." }
+        { question: "How much do airline pilots earn in the UK?", answer: "UK airline first officers typically earn £50,000-£100,000 total package depending on the airline. Captains earn £100,000-£225,000+. Low-cost carriers like easyJet and Ryanair now pay higher total packages than many legacy carriers due to sector pay and allowances." },
+        { question: "How much do easyJet pilots earn?", answer: "easyJet first officers earn £65,000-£100,000 total package (2025-2026). Captains earn £170,000-£220,000. Pay includes base salary, sector pay and allowances. easyJet is consistently one of the highest-paying short-haul operators in the UK." },
+        { question: "How much do British Airways pilots earn?", answer: "British Airways first officers earn £40,000-£120,000 depending on seniority and fleet. BA captains earn £100,000-£167,000 basic, with total packages reaching £225,000+ for senior long-haul captains." },
+        { question: "How long does it take to become a captain?", answer: "Typically 4-15 years from starting training, depending on the airline and your seniority progression. Low-cost carriers promote first officers to captain much faster (3-5 years) than legacy carriers like BA (10-15 years)." },
+        { question: "Is pilot training worth the cost given the salary?", answer: "For most who complete training and secure an airline job, yes. The return on investment is positive over a career, but the upfront cost of £90k-£130k is significant and there is no employment guarantee after training." }
       ]}
       sections={[
         {
@@ -89,7 +89,7 @@ export default function AirlinePilotSalary() {
               </div>
 
               <p>
-                <strong>The Low-Cost Carrier Advantage:</strong> easyJet and Ryanair currently offer some of the highest total packages for junior First Officers in the UK. This is because their pay models are heavily weighted toward sector pay — if you fly a busy summer roster, your take-home pay increases dramatically.
+                <strong>The Low-Cost Carrier Advantage:</strong> easyJet and Ryanair currently offer some of the highest total packages for junior First Officers in the UK. This is because their pay models are heavily weighted toward sector pay  -  if you fly a busy summer roster, your take-home pay increases dramatically.
               </p>
               <p>
                 <strong>The Legacy Carrier Model:</strong> British Airways starts junior FOs on a lower base salary (cadets start around £37,000), but the long-term earning potential is higher. Once a BA FO transitions to long-haul widebody aircraft (like the A350 or B777), their pay jumps significantly due to higher basic rates and lucrative international per diems.
@@ -117,23 +117,23 @@ export default function AirlinePilotSalary() {
                   <tbody className="divide-y divide-white/10 text-white/80">
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">easyJet</td>
-                      <td className="px-4 py-3">£170,000 – £220,000</td>
-                      <td className="px-4 py-3">5 – 8 years</td>
+                      <td className="px-4 py-3">£170,000 - £220,000</td>
+                      <td className="px-4 py-3">5 - 8 years</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Ryanair</td>
-                      <td className="px-4 py-3">£140,000 – £180,000</td>
-                      <td className="px-4 py-3">3 – 5 years</td>
+                      <td className="px-4 py-3">£140,000 - £180,000</td>
+                      <td className="px-4 py-3">3 - 5 years</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">British Airways</td>
-                      <td className="px-4 py-3">£150,000 – £225,000+</td>
-                      <td className="px-4 py-3">10 – 15 years</td>
+                      <td className="px-4 py-3">£150,000 - £225,000+</td>
+                      <td className="px-4 py-3">10 - 15 years</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">TUI</td>
-                      <td className="px-4 py-3">£100,000 – £170,000</td>
-                      <td className="px-4 py-3">8 – 12 years</td>
+                      <td className="px-4 py-3">£100,000 - £170,000</td>
+                      <td className="px-4 py-3">8 - 12 years</td>
                     </tr>
                   </tbody>
                 </table>

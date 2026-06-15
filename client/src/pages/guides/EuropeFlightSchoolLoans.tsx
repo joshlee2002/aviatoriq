@@ -53,11 +53,11 @@ export default function EuropeFlightSchoolLoans() {
               </p>
               <h3>Integrated ATPL Program Costs</h3>
               <p>
-                Integrated ATPL programs, while more expensive upfront, offer a streamlined path to airline readiness. Costs typically range from **€65,000 to €140,000**. Premier academies like Quality Fly (Madrid, Spain) offer programs around €79,650, while others such as L3Harris (UK) and CAE (across Europe) can range from €112,000 to over €120,000. FTE Jerez (Spain) is another prominent option, with costs around €126,500. These figures generally include ground school, flight training (200+ hours), simulator training (including APS MCC), EASA ATPL exams, licensing fees, and basic equipment.
+                Integrated ATPL programs, while more expensive upfront, offer a streamlined path to airline readiness. Costs typically range from **EUR65,000 to EUR140,000**. Premier academies like Quality Fly (Madrid, Spain) offer programs around EUR79,650, while others such as L3Harris (UK) and CAE (across Europe) can range from EUR112,000 to over EUR120,000. FTE Jerez (Spain) is another prominent option, with costs around EUR126,500. These figures generally include ground school, flight training (200+ hours), simulator training (including APS MCC), EASA ATPL exams, licensing fees, and basic equipment.
               </p>
               <h3>Modular Training Program Costs</h3>
               <p>
-                Modular training allows for a pay-as-you-go approach, spreading the financial burden over a longer period. The total cost can range from **€50,000 to €100,000+**, depending on how efficiently each module is completed and the chosen providers. A typical breakdown includes:
+                Modular training allows for a pay-as-you-go approach, spreading the financial burden over a longer period. The total cost can range from **EUR50,000 to EUR100,000+**, depending on how efficiently each module is completed and the chosen providers. A typical breakdown includes:
               </p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
@@ -69,29 +69,29 @@ export default function EuropeFlightSchoolLoans() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
-                    <td className="px-4 py-3 text-white/80">€10,000 - €15,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR10,000 - EUR15,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">ATPL Theory (Distance Learning/Classroom)</td>
-                    <td className="px-4 py-3 text-white/80">€3,000 - €8,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR3,000 - EUR8,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Hour Building (100-150 hours)</td>
-                    <td className="px-4 py-3 text-white/80">€15,000 - €30,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR15,000 - EUR30,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL) + Multi-Engine Instrument Rating (MEIR)</td>
-                    <td className="px-4 py-3 text-white/80">€30,000 - €50,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR30,000 - EUR50,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Multi-Crew Cooperation (MCC) / APS MCC</td>
-                    <td className="px-4 py-3 text-white/80">€1,950 - €10,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR1,950 - EUR10,000</td>
                   </tr>
                 </tbody>
               </table>
               <h3>Additional Costs to Consider</h3>
               <p>
-                Beyond tuition, aspiring pilots must budget for a Type Rating (specific to an airline aircraft, often €25,000-€40,000, though sometimes covered by airlines), living expenses (which can range from €1,000-€2,000 per month depending on location), and miscellaneous fees. It is prudent to budget an additional 15% contingency for unexpected costs.
+                Beyond tuition, aspiring pilots must budget for a Type Rating (specific to an airline aircraft, often EUR25,000-EUR40,000, though sometimes covered by airlines), living expenses (which can range from EUR1,000-EUR2,000 per month depending on location), and miscellaneous fees. It is prudent to budget an additional 15% contingency for unexpected costs.
               </p>
             </>
           ),
@@ -105,11 +105,11 @@ export default function EuropeFlightSchoolLoans() {
               </p>
               <h3>School-Backed Loan Partnerships</h3>
               <p>
-                Some flight academies have forged partnerships with financial institutions to offer specialized loans. A prime example is Quality Fly's collaboration with **CaixaBank** in Spain, providing loans of up to €150,000 for Spanish residents. This can cover full course fees and living costs, a rare and significant offering in the European market. Similarly, the European Aviation Academy (EAA) offers access to **BNL** and **Intesa San Paolo** merit-based loans for its students.
+                Some flight academies have forged partnerships with financial institutions to offer specialized loans. A prime example is Quality Fly's collaboration with **CaixaBank** in Spain, providing loans of up to EUR150,000 for Spanish residents. This can cover full course fees and living costs, a rare and significant offering in the European market. Similarly, the European Aviation Academy (EAA) offers access to **BNL** and **Intesa San Paolo** merit-based loans for its students.
               </p>
               <h3>Income Share Agreements (ISAs)</h3>
               <p>
-                Innovative financing models like Income Share Agreements are gaining traction. The **Lufthansa European Flight Academy**, for instance, partners with Brain Capital for an ISA model. Students contribute a basic capital (e.g., €10,000), and the remaining €110,000 is financed. Repayment begins only after employment, with a fixed percentage (e.g., 11%) of gross income paid over 11 years, provided a minimum yearly gross income (e.g., €30,000) is reached. This model significantly reduces upfront financial pressure.
+                Innovative financing models like Income Share Agreements are gaining traction. The **Lufthansa European Flight Academy**, for instance, partners with Brain Capital for an ISA model. Students contribute a basic capital (e.g., EUR10,000), and the remaining EUR110,000 is financed. Repayment begins only after employment, with a fixed percentage (e.g., 11%) of gross income paid over 11 years, provided a minimum yearly gross income (e.g., EUR30,000) is reached. This model significantly reduces upfront financial pressure.
               </p>
               <h3>Traditional Bank Loans and Private Financing</h3>
               <p>
@@ -131,13 +131,13 @@ export default function EuropeFlightSchoolLoans() {
               </p>
               <ul>
                 <li>
-                  <strong>EASA Class 1 Medical:</strong> Obtain this early. It costs around €400-€600 and identifies any conditions affecting eligibility, preventing wasted investment in training if medical requirements cannot be met.
+                  <strong>EASA Class 1 Medical:</strong> Obtain this early. It costs around EUR400-EUR600 and identifies any conditions affecting eligibility, preventing wasted investment in training if medical requirements cannot be met.
                 </li>
                 <li>
                   <strong>Credit History:</strong> If pursuing bank loans, cultivate a solid credit history and stable income. This significantly improves approval chances and secures better interest rates.
                 </li>
                 <li>
-                  <strong>Budgeting:</strong> Account for all expenses, including tuition, living costs, medicals, exams, and a contingency fund. European airline First Officers earn €35,000-€60,000 initially, with Captains earning €90,000-€155,000+, making the investment highly rewarding over a 35+ year career.
+                  <strong>Budgeting:</strong> Account for all expenses, including tuition, living costs, medicals, exams, and a contingency fund. European airline First Officers earn EUR35,000-EUR60,000 initially, with Captains earning EUR90,000-EUR155,000+, making the investment highly rewarding over a 35+ year career.
                 </li>
                 <li>
                   <strong>Airline Market:</strong> The 2026 European pilot market is robust, with compensation growing 8-12% year-over-year. Sign-on bonuses and retention payments are becoming common, making it an opportune time to enter the profession.
@@ -150,7 +150,7 @@ export default function EuropeFlightSchoolLoans() {
       faqSchema={[
         {
           question: "What are the typical costs for pilot training in Europe in 2026?",
-          answer: "Integrated ATPL programs range from €65,000 to €140,000, while modular training can cost between €50,000 and €100,000+. Additional costs for type ratings and living expenses should also be factored in.",
+          answer: "Integrated ATPL programs range from EUR65,000 to EUR140,000, while modular training can cost between EUR50,000 and EUR100,000+. Additional costs for type ratings and living expenses should also be factored in.",
         },
         {
           question: "Are there specific loans available for pilot training in Europe?",

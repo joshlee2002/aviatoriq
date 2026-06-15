@@ -55,27 +55,27 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
                   <tbody>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">CFI Flight Training (Aircraft & Instructor)</td>
-                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">$7,000 - $12,000</td>
+                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">{">"}$7,000 - $12,000</td>
                       <td className="px-4 py-3 text-sm text-white/80">Includes dual instruction and aircraft rental for training.</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">CFI Ground Course/Instruction</td>
-                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">$500 - $2,000</td>
+                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">{">"}$500 - $2,000</td>
                       <td className="px-4 py-3 text-sm text-white/80">Covers theoretical knowledge, lesson planning, and teaching techniques.</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">FAA Knowledge Exams (FOI & FIA)</td>
-                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">$350 - $400</td>
+                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">{">"}$350 - $400</td>
                       <td className="px-4 py-3 text-sm text-white/80">Approximately $175-$200 per exam (Fundamentals of Instruction & Flight Instructor Airplane).</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">FAA Practical Test (Checkride) Fee</td>
-                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">$800 - $1,200</td>
+                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">{">"}$800 - $1,200</td>
                       <td className="px-4 py-3 text-sm text-white/80">Paid directly to the Designated Pilot Examiner (DPE).</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">Study Materials & Supplies</td>
-                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">$200 - $500</td>
+                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">{">"}$200 - $500</td>
                       <td className="px-4 py-3 text-sm text-white/80">Textbooks, online courses, FAR/AIM, logbooks, etc.</td>
                     </tr>
                     <tr className="border-b border-white/10">
@@ -173,28 +173,28 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
                   <tbody>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">Certified Flight Instructor (CFI)</td>
-                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">$8,850 - $16,100</td>
+                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">{">"}$8,850 - $16,100</td>
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">Earn $25 - $50/hour</td>
                       <td className="px-4 py-3 text-sm text-white/80">Paid hours, skill refinement, networking.</td>
                       <td className="px-4 py-3 text-sm text-white/80">High initial cost, demanding, potential burnout.</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">Aircraft Rental (Solo)</td>
-                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">$0 (after CPL)</td>
+                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">{">"}$0 (after CPL)</td>
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">Cost $120 - $200/hour</td>
                       <td className="px-4 py-3 text-sm text-white/80">Flexibility, direct PIC time.</td>
                       <td className="px-4 py-3 text-sm text-white/80">High hourly cost, no income.</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">Safety Pilot Cost-Sharing</td>
-                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">$0 (after CPL)</td>
+                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">{">"}$0 (after CPL)</td>
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">Cost $60 - $100/hour (shared)</td>
                       <td className="px-4 py-3 text-sm text-white/80">Reduced cost, builds instrument/PIC time.</td>
                       <td className="px-4 py-3 text-sm text-white/80">Requires coordination, limited to simulated instrument.</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">Low-Time Pilot Jobs (e.g., Banner Towing)</td>
-                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">$0 (after CPL)</td>
+                      <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">{">"}$0 (after CPL)</td>
                       <td className="px-4 py-3 whitespace-nowrap text-sm text-white/80">Earn $15 - $30/hour</td>
                       <td className="px-4 py-3 text-sm text-white/80">Paid hours, diverse experience.</td>
                       <td className="px-4 py-3 text-sm text-white/80">Seasonal, inconsistent hours, lower pay.</td>

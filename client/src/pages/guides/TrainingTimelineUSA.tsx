@@ -6,7 +6,7 @@ export default function TrainingTimelineUSA() {
   return (
     <GuideLayout
       title="How Long Does It Take to Become a Pilot in the USA? (2026 Timeline)"
-      subtitle="The honest timeline from zero experience to a regional airline right seat — breaking down Part 141, Part 61, and the 1,500-hour rule."
+      subtitle="The honest timeline from zero experience to a regional airline right seat  -  breaking down Part 141, Part 61, and the 1,500-hour rule."
       canonical="/us/guides/pilot-training-timeline-usa"
       metaDescription="How long does it take to become a pilot in the USA? 2026 timeline breakdown: 7-12 months for flight school, 1.5-2 years instructing to reach 1,500 hours."
       readTime="10 min read"
@@ -46,10 +46,10 @@ export default function TrainingTimelineUSA() {
                 This phase takes you from zero experience to holding a Commercial Pilot Certificate with Instrument and Multi-Engine ratings, plus your Flight Instructor (CFI) certificates. Your timeline depends entirely on whether you train full-time or part-time.
               </p>
               <p>
-                <strong>The Accelerated Part 141 Route (7–12 Months):</strong> Schools like ATP Flight School or CAE offer highly structured, full-time programmes. You fly 4–5 days a week. You will complete your PPL in 2-3 months, Instrument Rating in 1-2 months, and Commercial/CFI ratings in the remaining 4-6 months. This requires you to quit your job and dedicate yourself entirely to training.
+                <strong>The Accelerated Part 141 Route (7-12 Months):</strong> Schools like ATP Flight School or CAE offer highly structured, full-time programmes. You fly 4-5 days a week. You will complete your PPL in 2-3 months, Instrument Rating in 1-2 months, and Commercial/CFI ratings in the remaining 4-6 months. This requires you to quit your job and dedicate yourself entirely to training.
               </p>
               <p>
-                <strong>The Part 61 Local School Route (18–36 Months):</strong> If you train part-time while working a normal job, flying 1-2 times a week, the timeline stretches significantly. Weather delays, instructor availability, and skill decay between lessons mean it typically takes 2 to 3 years to reach the commercial level.
+                <strong>The Part 61 Local School Route (18-36 Months):</strong> If you train part-time while working a normal job, flying 1-2 times a week, the timeline stretches significantly. Weather delays, instructor availability, and skill decay between lessons mean it typically takes 2 to 3 years to reach the commercial level.
               </p>
               <p>
                 <strong>The University Degree Route (4 Years):</strong> If you attend an aviation university (like Embry-Riddle or UND), you will complete your flight training alongside a 4-year bachelor's degree.
@@ -71,7 +71,7 @@ export default function TrainingTimelineUSA() {
                 <strong>The CFI Timeline:</strong> A busy flight instructor flying in a good-weather state (like Florida, Texas, or Arizona) will log 60 to 80 hours per month. At that pace, it takes <strong>18 to 24 months</strong> to build the required 1,250 hours.
               </p>
               <p>
-                Other time-building jobs — like banner towing, pipeline patrol, or flying skydivers — exist, but they are often highly seasonal and can take longer to accumulate the required hours than a busy instructing job.
+                Other time-building jobs  -  like banner towing, pipeline patrol, or flying skydivers  -  exist, but they are often highly seasonal and can take longer to accumulate the required hours than a busy instructing job.
               </p>
             </>
           ),
@@ -105,7 +105,7 @@ export default function TrainingTimelineUSA() {
                 You will undergo <strong>Initial Airline Training</strong>. This involves 2-3 weeks of company induction and ground school, followed by 4-6 weeks of simulator training to earn your Type Rating on the specific aircraft you will fly (e.g., the Embraer 175 or Bombardier CRJ).
               </p>
               <p>
-                After passing your simulator checkride, you complete <strong>Initial Operating Experience (IOE)</strong> — flying actual passenger routes with a training captain for about 25-50 hours before you are signed off as a fully qualified First Officer.
+                After passing your simulator checkride, you complete <strong>Initial Operating Experience (IOE)</strong>  -  flying actual passenger routes with a training captain for about 25-50 hours before you are signed off as a fully qualified First Officer.
               </p>
             </>
           ),

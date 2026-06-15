@@ -6,20 +6,20 @@ export default function HowToBecomePilotUS() {
   return (
     <GuideLayout
       title="How to Become an Airline Pilot in the USA (2026 Guide)"
-      subtitle="The honest, step-by-step guide to becoming a commercial airline pilot in the United States — Part 61 vs Part 141, real costs, the 1500-hour rule, and cadet programmes."
+      subtitle="The honest, step-by-step guide to becoming a commercial airline pilot in the United States  -  Part 61 vs Part 141, real costs, the 1500-hour rule, and cadet programmes."
       readTime="14 min read"
       heroImage="/manus-storage/how-to-become-pilot_a1ed518f.jpg"
       canonical="https://www.aviatoriq.com/us/guides/how-to-become-a-pilot"
-      metaDescription="How to become an airline pilot in the USA in 2026. Covers FAA licences, Part 61 vs Part 141, the 1500-hour rule, real costs ($80k–$120k), and airline cadet programmes."
+      metaDescription="How to become an airline pilot in the USA in 2026. Covers FAA licences, Part 61 vs Part 141, the 1500-hour rule, real costs ($80k-$120k), and airline cadet programmes."
       author="Joshua Fagan"
-      authorRole="Founder, AviatorIQ — researched from FAA, ATP Flight School & airline cadet programme data"
+      authorRole="Founder, AviatorIQ  -  researched from FAA, ATP Flight School & airline cadet programme data"
       lastUpdated="June 2026"
       ctaText="Take the free pilot assessment"
       ctaHref="/quiz"
       scopeBanner={<GuideScopeBanner scope="This guide covers FAA pilot training in the USA." globalHref="/schools" globalLabel="Browse global schools →" />}
       faqSchema={[
-        { question: "How long does it take to become an airline pilot in the USA?", answer: "Typically 3–5 years from zero experience to a regional airline first officer seat. Part 141 accelerated programmes can get you to the ATP minimums in 2–3 years. The 1500-hour rule is the main bottleneck." },
-        { question: "How much does it cost to become a pilot in the USA?", answer: "Expect $80,000–$120,000 for the full journey from zero to commercial pilot with flight instructor ratings. Part 141 integrated programmes at schools like ATP Flight School cost around $90,000–$100,000 all-in. Part 61 modular routes can be cheaper but take longer." },
+        { question: "How long does it take to become an airline pilot in the USA?", answer: "Typically 3-5 years from zero experience to a regional airline first officer seat. Part 141 accelerated programmes can get you to the ATP minimums in 2-3 years. The 1500-hour rule is the main bottleneck." },
+        { question: "How much does it cost to become a pilot in the USA?", answer: "Expect $80,000-$120,000 for the full journey from zero to commercial pilot with flight instructor ratings. Part 141 integrated programmes at schools like ATP Flight School cost around $90,000-$100,000 all-in. Part 61 modular routes can be cheaper but take longer." },
         { question: "What is the 1500-hour rule?", answer: "The FAA requires airline first officers to hold an ATP certificate, which requires 1,500 flight hours (or 1,000 hours for university Part 141 graduates, or 750 hours for military-trained pilots). This is the main difference from most other countries." },
         { question: "What is the difference between Part 61 and Part 141?", answer: "Part 141 schools follow an FAA-approved structured curriculum and can offer reduced hour requirements. Part 61 is more flexible and self-paced. Part 141 is generally better for career-track pilots; Part 61 is better for recreational pilots or those with irregular schedules." },
         { question: "Are there sponsored cadet programmes in the USA?", answer: "Yes. United Aviate, American Airlines Cadet Academy, Delta Propel, and Southwest Destination 225° all offer pathways from zero hours to a first officer seat at the sponsoring airline, often with tuition assistance or guaranteed interviews." }
@@ -30,13 +30,13 @@ export default function HowToBecomePilotUS() {
           content: (
             <>
               <p>
-                The US aviation market is currently experiencing a massive demographic shift. The pilot shortage is not a temporary blip — it is a structural reality driven by the mandatory retirement age of 65. According to FAA data and Oliver Wyman forecasts, the US airline industry will see roughly 4,300 mandatory retirements per year through 2042 [1].
+                The US aviation market is currently experiencing a massive demographic shift. The pilot shortage is not a temporary blip  -  it is a structural reality driven by the mandatory retirement age of 65. According to FAA data and Oliver Wyman forecasts, the US airline industry will see roughly 4,300 mandatory retirements per year through 2042 [1].
               </p>
               <p>
                 The peak of this retirement wave hits right now, between 2025 and 2026, creating a projected shortfall of up to 24,000 pilots. This has fundamentally shifted bargaining power toward pilots. In 2016, the median US airline pilot earned $127,820. By 2024, that figure had nearly doubled to $226,600, with regional airline salaries rising by 86% over the same period [2].
               </p>
               <p>
-                However, the barrier to entry remains high. The FAA's 1,500-hour rule means you cannot simply graduate from flight school and jump into an Airbus A320, as cadets do in Europe. You must fund your initial training (typically $80,000–$120,000) and then spend 1–2 years working a low-paying flying job to build your hours.
+                However, the barrier to entry remains high. The FAA's 1,500-hour rule means you cannot simply graduate from flight school and jump into an Airbus A320, as cadets do in Europe. You must fund your initial training (typically $80,000-$120,000) and then spend 1-2 years working a low-paying flying job to build your hours.
               </p>
             </>
           ),
@@ -52,7 +52,7 @@ export default function HowToBecomePilotUS() {
                 Do not assume you will pass. Conditions like ADHD (and past use of stimulant medication like Adderall or Ritalin), a history of depression, asthma, or colour blindness can cause significant delays or permanent disqualification. 
               </p>
               <p>
-                To get your medical, you must fill out an application on FAA MedXPress, then book an appointment with an AME. The initial examination typically costs $150–$200.
+                To get your medical, you must fill out an application on FAA MedXPress, then book an appointment with an AME. The initial examination typically costs $150-$200.
               </p>
               <p>
                 <strong>Pro Tip:</strong> If you have a complex medical history (especially regarding mental health or ADHD), book a "consultation-only" appointment with a HIMS AME before submitting your official MedXPress application. Once an official application is submitted, a denial goes on your permanent FAA record and requires a lengthy, expensive Special Issuance process to overturn.
@@ -61,7 +61,7 @@ export default function HowToBecomePilotUS() {
           ),
         },
         {
-          heading: "Step 2: Choose Your Training Route — Part 61 vs Part 141",
+          heading: "Step 2: Choose Your Training Route  -  Part 61 vs Part 141",
           content: (
             <>
               <p>
@@ -74,7 +74,7 @@ export default function HowToBecomePilotUS() {
                 <strong>Part 61 (Flexible/Modular):</strong> This is the traditional "mom and pop" flight school route. It is highly flexible and self-paced. You hire an independent instructor or join a local flying club and pay by the hour. It is generally cheaper per hour than Part 141, but requires more total hours to qualify for your commercial licence.
               </p>
               <p>
-                For career-track pilots aiming for the airlines, Part 141 is almost always the better choice. The structured curriculum and fast-paced environment mimic airline training. More importantly, graduating from an approved university Part 141 programme allows you to qualify for a Restricted ATP (R-ATP) at 1,000 or 1,250 hours instead of the standard 1,500 hours — saving you a year of hour-building.
+                For career-track pilots aiming for the airlines, Part 141 is almost always the better choice. The structured curriculum and fast-paced environment mimic airline training. More importantly, graduating from an approved university Part 141 programme allows you to qualify for a Restricted ATP (R-ATP) at 1,000 or 1,250 hours instead of the standard 1,500 hours  -  saving you a year of hour-building.
               </p>
 
               <div className="overflow-x-auto my-6">
@@ -145,22 +145,22 @@ export default function HowToBecomePilotUS() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Private Pilot (PPL)</td>
                       <td className="px-4 py-3">Fly single-engine aircraft for personal use. No paid flying.</td>
-                      <td className="px-4 py-3">$12,000 – $28,000</td>
+                      <td className="px-4 py-3">{">"}$12,000 - $28,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Instrument Rating (IR)</td>
                       <td className="px-4 py-3">Fly in clouds and low visibility solely by reference to instruments.</td>
-                      <td className="px-4 py-3">$10,000 – $17,000</td>
+                      <td className="px-4 py-3">{">"}$10,000 - $17,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Commercial Pilot (CPL)</td>
                       <td className="px-4 py-3">Be paid to fly (e.g., banner towing, crop dusting, instructing).</td>
-                      <td className="px-4 py-3">$18,000 – $35,000</td>
+                      <td className="px-4 py-3">{">"}$18,000 - $35,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Multi-Engine Rating (ME)</td>
                       <td className="px-4 py-3">Fly aircraft with more than one engine. Essential for airlines.</td>
-                      <td className="px-4 py-3">$5,000 – $8,000</td>
+                      <td className="px-4 py-3">{">"}$5,000 - $8,000</td>
                     </tr>
                   </tbody>
                 </table>
@@ -189,10 +189,10 @@ export default function HowToBecomePilotUS() {
                 To get an ATP, you need <strong>1,500 total flight hours</strong>. Since you graduate flight school with your CPL at around 250 hours, you must find a way to build the remaining 1,250 hours.
               </p>
               <p>
-                The standard, almost universal method is to become a <strong>Certified Flight Instructor (CFI)</strong>. You pay approx $5,000–$8,000 to get your CFI rating, then get hired by a flight school to teach new students. You log flight time while being paid (typically $25–$40 per flight hour). 
+                The standard, almost universal method is to become a <strong>Certified Flight Instructor (CFI)</strong>. You pay approx $5,000-$8,000 to get your CFI rating, then get hired by a flight school to teach new students. You log flight time while being paid (typically $25-$40 per flight hour). 
               </p>
               <p>
-                It usually takes 1.5 to 2 years of full-time instructing to reach 1,500 hours. It is not glamorous, but the pay has improved significantly — CFIs now typically earn <strong>$35,000–$55,000 per year</strong> at major flight schools, and many schools like ATP and Epic hire their own graduates as instructors. It remains the fastest and most reliable way to bridge the gap between flight school and the airlines.
+                It usually takes 1.5 to 2 years of full-time instructing to reach 1,500 hours. It is not glamorous, but the pay has improved significantly  -  CFIs now typically earn <strong>$35,000-$55,000 per year</strong> at major flight schools, and many schools like ATP and Epic hire their own graduates as instructors. It remains the fastest and most reliable way to bridge the gap between flight school and the airlines.
               </p>
             </>
           ),
@@ -228,15 +228,15 @@ export default function HowToBecomePilotUS() {
               </p>
               <ul className="list-disc pl-5 space-y-2 mt-2 mb-4">
                 <li>FAA First Class Medical: $200</li>
-                <li>Private Pilot Licence: $12,000–$28,000</li>
-                <li>Instrument Rating: $10,000–$17,000</li>
-                <li>Commercial Pilot Licence (including time building): $18,000–$35,000</li>
+                <li>Private Pilot Licence: $12,000-$28,000</li>
+                <li>Instrument Rating: $10,000-$17,000</li>
+                <li>Commercial Pilot Licence (including time building): $18,000-$35,000</li>
                 <li>Multi-Engine Rating: $6,000</li>
                 <li>CFI, CFII, and MEI (Instructor Ratings): $12,000</li>
-                <li>Living costs during training (12–18 months): $25,000–$40,000</li>
+                <li>Living costs during training (12-18 months): $25,000-$40,000</li>
               </ul>
               <p>
-                <strong>Total Training Cost: $80,000–$124,000</strong> (ATP Flight School's fixed-price programme: $123,995 from zero; Epic Flight Academy: $83,647)
+                <strong>Total Training Cost: $80,000-$124,000</strong> (ATP Flight School's fixed-price programme: $123,995 from zero; Epic Flight Academy: $83,647)
               </p>
               <p>
                 Financing this amount is the biggest hurdle for most students. Federal student loans are only available if your flight training is part of a degree programme at an accredited university. If you attend a standalone flight school (like ATP), you must rely on private aviation loans from lenders like Sallie Mae, College Ave, or Meritize, which often require a co-signer and carry higher interest rates.

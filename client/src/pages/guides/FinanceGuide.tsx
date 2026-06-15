@@ -3,7 +3,7 @@ import { useLocation } from "wouter";
 import SEO from "@/components/SEO";
 
 /**
- * /guides/finance-guide — legacy URL
+ * /guides/finance-guide  -  legacy URL
  * 301-equivalent client-side redirect to the canonical 2026 guide.
  * The SEO component sets a canonical tag pointing to the new URL so crawlers
  * consolidate link equity immediately.

@@ -68,7 +68,7 @@ export default function PilotAptitudeTestUSA() {
                 When applying to the major legacy carriers, the testing shifts from cognitive to psychological. Delta Air Lines is particularly famous for its rigorous psychological screening process.
               </p>
               <p>
-                <strong>The Personality Inventory:</strong> You will typically take a massive, multi-hundred-question personality test (often based on the MMPI - Minnesota Multiphasic Personality Inventory or the Hogan Personality Inventory). The questions will seem repetitive. This is intentional — it is designed to catch inconsistencies and measure traits like conscientiousness, emotional stability, and agreeableness.
+                <strong>The Personality Inventory:</strong> You will typically take a massive, multi-hundred-question personality test (often based on the MMPI - Minnesota Multiphasic Personality Inventory or the Hogan Personality Inventory). The questions will seem repetitive. This is intentional  -  it is designed to catch inconsistencies and measure traits like conscientiousness, emotional stability, and agreeableness.
               </p>
               <p>
                 <strong>The Psychologist Interview:</strong> At airlines like Delta, the written test is followed by an interview with an aviation psychologist. They will probe your answers from the written test and ask specific behavioural questions to assess your stress response and Crew Resource Management (CRM) potential.
@@ -101,7 +101,7 @@ export default function PilotAptitudeTestUSA() {
               </p>
               <ol className="list-decimal pl-5 space-y-2 mt-2 mb-4">
                 <li><strong>Hogan Personality Inventory (HPI):</strong> Measures your day-to-day, "bright side" personality (how you relate to others).</li>
-                <li><strong>Hogan Development Survey (HDS):</strong> Measures your "dark side" personality — how you behave under stress or fatigue (e.g., do you become volatile, passive-aggressive, or withdrawn?).</li>
+                <li><strong>Hogan Development Survey (HDS):</strong> Measures your "dark side" personality  -  how you behave under stress or fatigue (e.g., do you become volatile, passive-aggressive, or withdrawn?).</li>
                 <li><strong>Motives, Values, Preferences Inventory (MVPI):</strong> Measures what drives you and what kind of culture you fit into.</li>
               </ol>
               <p>

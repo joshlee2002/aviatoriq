@@ -148,7 +148,7 @@ export default function EasaAtplRequirements() {
                 </li>
               </ul>
               <p>
-                The cost for an initial Class 1 medical typically ranges from <strong>€300 to €800</strong>, depending on the country and specific center. For instance, some Eastern European countries like Bulgaria may offer lower costs (around €150). The certificate's validity is usually 12 months for individuals under 40 and six months thereafter, with additional requirements for older age groups.
+                The cost for an initial Class 1 medical typically ranges from <strong>EUR300 to EUR800</strong>, depending on the country and specific center. For instance, some Eastern European countries like Bulgaria may offer lower costs (around EUR150). The certificate's validity is usually 12 months for individuals under 40 and six months thereafter, with additional requirements for older age groups.
               </p>
               <p>
                 It is crucial to disclose all medical history honestly. Certain conditions, such as well-controlled hypertension or corrected vision, may not be disqualifying but might require additional documentation or monitoring. Non-disclosure can lead to severe consequences, including license suspension.
@@ -185,7 +185,7 @@ export default function EasaAtplRequirements() {
                 To pass, candidates must achieve at least 75% in each subject. You have a maximum of six sittings to pass all exams, with no more than four attempts per subject within those six sittings. All 14 exams must be completed within 18 months of your first exam attempt. Once passed, the theoretical knowledge credit remains valid for seven years for license issuance purposes.
               </p>
               <p>
-                Exam fees typically range from <strong>€80 to €120 per subject</strong>, though some countries like Greece offer lower fees (around €7 per subject). A common study strategy involves starting with foundational subjects like navigation and meteorology, progressing to technical systems, and concluding with calculation-heavy papers such as performance and flight planning.
+                Exam fees typically range from <strong>EUR80 to EUR120 per subject</strong>, though some countries like Greece offer lower fees (around EUR7 per subject). A common study strategy involves starting with foundational subjects like navigation and meteorology, progressing to technical systems, and concluding with calculation-heavy papers such as performance and flight planning.
               </p>
             </>
           )
@@ -232,7 +232,7 @@ export default function EasaAtplRequirements() {
                 The MCC course covers Crew Resource Management (CRM) theory, Standard Operating Procedures (SOPs), effective communication, and decision-making within a multi-crew context. Students practice normal and abnormal procedures in a simulator, alternating roles as Pilot Flying (PF) and Pilot Monitoring (PM). An Airline Pilot Standards Multi-Crew Cooperation (APS MCC) course is an enhanced version, often preferred by airlines.
               </p>
               <p>
-                There is no separate exam for the MCC; instead, continuous assessment leads to a course completion certificate. This certificate does not require revalidation and is a critical component for airline employment. Costs for MCC/APS MCC typically range from <strong>€4,000 to €8,000</strong>.
+                There is no separate exam for the MCC; instead, continuous assessment leads to a course completion certificate. This certificate does not require revalidation and is a critical component for airline employment. Costs for MCC/APS MCC typically range from <strong>EUR4,000 to EUR8,000</strong>.
               </p>
             </>
           )
@@ -246,7 +246,7 @@ export default function EasaAtplRequirements() {
               </p>
               <h3>Integrated ATPL Cost Breakdown (2026):</h3>
               <p>
-                Integrated programs, while comprehensive, come with a higher upfront cost. Prices can range from <strong>€65,000 to €140,000+</strong>. Premium academies in Western Europe (e.g., L3Harris, CAE, FTE Jerez) typically charge at the higher end, while quality schools in Eastern Europe (e.g., Poland, Romania) offer more competitive pricing without compromising EASA standards.
+                Integrated programs, while comprehensive, come with a higher upfront cost. Prices can range from <strong>EUR65,000 to EUR140,000+</strong>. Premium academies in Western Europe (e.g., L3Harris, CAE, FTE Jerez) typically charge at the higher end, while quality schools in Eastern Europe (e.g., Poland, Romania) offer more competitive pricing without compromising EASA standards.
               </p>
               <h4>Typical Integrated ATPL Costs (2026):</h4>
               <table className="w-full text-sm text-left border-collapse">
@@ -260,44 +260,44 @@ export default function EasaAtplRequirements() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Headline Tuition</td>
-                    <td className="px-4 py-3 text-white/80">€65,000 – €130,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR65,000 - EUR130,000</td>
                     <td className="px-4 py-3 text-white/80">Depends on country and school</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Accommodation (18-24 months)</td>
-                    <td className="px-4 py-3 text-white/80">€7,200 – €36,000</td>
-                    <td className="px-4 py-3 text-white/80">Often excluded, varies by location (€400-€1,500/month)</td>
+                    <td className="px-4 py-3 text-white/80">EUR7,200 - EUR36,000</td>
+                    <td className="px-4 py-3 text-white/80">Often excluded, varies by location (EUR400-EUR1,500/month)</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">EASA Exam Fees</td>
-                    <td className="px-4 py-3 text-white/80">€1,000 – €3,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR1,000 - EUR3,000</td>
                     <td className="px-4 py-3 text-white/80">Varies by national authority and subject retakes</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Class 1 Medical (Initial & Renewals)</td>
-                    <td className="px-4 py-3 text-white/80">€150 – €700</td>
+                    <td className="px-4 py-3 text-white/80">EUR150 - EUR700</td>
                     <td className="px-4 py-3 text-white/80">Initial cost, renewals are annual/bi-annual</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Equipment (Headset, iPad, Uniform)</td>
-                    <td className="px-4 py-3 text-white/80">€2,000 – €5,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR2,000 - EUR5,000</td>
                     <td className="px-4 py-3 text-white/80">Essential pilot gear</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Type Rating (Post-ATPL)</td>
-                    <td className="px-4 py-3 text-white/80">€15,000 – €35,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR15,000 - EUR35,000</td>
                     <td className="px-4 py-3 text-white/80">Crucial for airline entry, rarely included in ATPL tuition</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Realistic Total Budget</strong></td>
-                    <td className="px-4 py-3 text-white/80"><strong>€88,000 – €190,000+</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>EUR88,000 - EUR190,000+</strong></td>
                     <td className="px-4 py-3 text-white/80">Includes living expenses and type rating</td>
                   </tr>
                 </tbody>
               </table>
               <h3>Modular ATPL Cost Breakdown (2026):</h3>
               <p>
-                Modular training can be 20-30% cheaper on paper, allowing costs to be spread over a longer period. However, hidden costs can narrow this gap. A realistic total for modular training, including all modules and associated expenses, typically ranges from <strong>€59,000 to €102,000+</strong>.
+                Modular training can be 20-30% cheaper on paper, allowing costs to be spread over a longer period. However, hidden costs can narrow this gap. A realistic total for modular training, including all modules and associated expenses, typically ranges from <strong>EUR59,000 to EUR102,000+</strong>.
               </p>
               <h4>Typical Modular ATPL Costs (2026):</h4>
               <table className="w-full text-sm text-left border-collapse">
@@ -311,55 +311,55 @@ export default function EasaAtplRequirements() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">PPL (Private Pilot License)</td>
-                    <td className="px-4 py-3 text-white/80">€8,000 – €15,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR8,000 - EUR15,000</td>
                     <td className="px-4 py-3 text-white/80">45+ hours flight time</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">ATPL Theory (Distance Learning)</td>
-                    <td className="px-4 py-3 text-white/80">€1,700 – €6,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR1,700 - EUR6,000</td>
                     <td className="px-4 py-3 text-white/80">Distance learning is generally more affordable</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Hour Building (100+ PIC)</td>
-                    <td className="px-4 py-3 text-white/80">€12,000 – €20,000</td>
-                    <td className="px-4 py-3 text-white/80">€120-€160/hour; cheapest in Poland/Greece</td>
+                    <td className="px-4 py-3 text-white/80">EUR12,000 - EUR20,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR120-EUR160/hour; cheapest in Poland/Greece</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">CPL (Commercial Pilot License)</td>
-                    <td className="px-4 py-3 text-white/80">€15,000 – €25,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR15,000 - EUR25,000</td>
                     <td className="px-4 py-3 text-white/80">25+ hours intensive training</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Multi-Engine (ME) Rating</td>
-                    <td className="px-4 py-3 text-white/80">€5,000 – €8,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR5,000 - EUR8,000</td>
                     <td className="px-4 py-3 text-white/80">6+ hours twin-engine</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
-                    <td className="px-4 py-3 text-white/80">€12,000 – €20,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR12,000 - EUR20,000</td>
                     <td className="px-4 py-3 text-white/80">50+ hours (aircraft + simulator)</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">MCC / APS MCC</td>
-                    <td className="px-4 py-3 text-white/80">€4,000 – €8,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR4,000 - EUR8,000</td>
                     <td className="px-4 py-3 text-white/80">Critical for airline transition</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Total Modular (Excl. Type Rating)</strong></td>
-                    <td className="px-4 py-3 text-white/80"><strong>€59,000 – €102,000</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>EUR59,000 - EUR102,000</strong></td>
                     <td className="px-4 py-3 text-white/80">All modules combined, before type rating</td>
                   </tr>
                 </tbody>
               </table>
               <h3>Hidden Costs to Budget For:</h3>
               <ul>
-                <li>Extra hours if you fall behind (€150-€250/hour)</li>
-                <li>EASA exam retakes (€50-€150 per attempt)</li>
+                <li>Extra hours if you fall behind (EUR150-EUR250/hour)</li>
+                <li>EASA exam retakes (EUR50-EUR150 per attempt)</li>
                 <li>Transport between training bases</li>
-                <li>Annual Class 1 Medical renewal (€150-€300)</li>
-                <li>English proficiency test (€200-€400)</li>
+                <li>Annual Class 1 Medical renewal (EUR150-EUR300)</li>
+                <li>English proficiency test (EUR200-EUR400)</li>
                 <li>Weather delays extending training timeline</li>
-                <li>Equipment: headset (€200-€1,000), iPad, charts</li>
+                <li>Equipment: headset (EUR200-EUR1,000), iPad, charts</li>
                 <li>Loss-of-license insurance (recommended)</li>
                 <li>Visa costs for non-EU students</li>
                 <li>Accommodation during separate training phases</li>
@@ -389,17 +389,17 @@ export default function EasaAtplRequirements() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Wizz Air WAPA</td>
-                    <td className="px-4 py-3 text-white/80">€47,510</td>
-                    <td className="px-4 py-3 text-white/80">Pre-financed by airline; €13,950 upfront, rest deducted from salary over 5 years</td>
+                    <td className="px-4 py-3 text-white/80">EUR47,510</td>
+                    <td className="px-4 py-3 text-white/80">Pre-financed by airline; EUR13,950 upfront, rest deducted from salary over 5 years</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Lufthansa Brain Capital</td>
-                    <td className="px-4 py-3 text-white/80">~€110,000</td>
-                    <td className="px-4 py-3 text-white/80">Income Share Agreement (ISA) model – pay 11% of income for 11 years after employment</td>
+                    <td className="px-4 py-3 text-white/80">~EUR110,000</td>
+                    <td className="px-4 py-3 text-white/80">Income Share Agreement (ISA) model - pay 11% of income for 11 years after employment</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">BNL Futuriamo (Italy)</td>
-                    <td className="px-4 py-3 text-white/80">€5,000-€70,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR5,000-EUR70,000</td>
                     <td className="px-4 py-3 text-white/80">Bank loan for Italian residents only</td>
                   </tr>
                   <tr className="border-b border-white/10">
@@ -409,7 +409,7 @@ export default function EasaAtplRequirements() {
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Ryanair Bonded Type Rating</td>
-                    <td className="px-4 py-3 text-white/80">~€35,000</td>
+                    <td className="px-4 py-3 text-white/80">~EUR35,000</td>
                     <td className="px-4 py-3 text-white/80">Type rating 'free' with a 5-year bond commitment to the airline</td>
                   </tr>
                 </tbody>
@@ -429,7 +429,7 @@ export default function EasaAtplRequirements() {
               </p>
               <h3>Airline Employment and Salaries (2026):</h3>
               <p>
-                Upon completing your frozen ATPL, you will typically start as a Junior First Officer. Major European airlines such as Ryanair, Wizz Air, Lufthansa, KLM, Air France, and British Airways are primary employers. Starting salaries for First Officers generally range from <strong>€35,000 to €65,000 per annum</strong>, depending on the airline, aircraft type, and country of operation.
+                Upon completing your frozen ATPL, you will typically start as a Junior First Officer. Major European airlines such as Ryanair, Wizz Air, Lufthansa, KLM, Air France, and British Airways are primary employers. Starting salaries for First Officers generally range from <strong>EUR35,000 to EUR65,000 per annum</strong>, depending on the airline, aircraft type, and country of operation.
               </p>
               <h4>Pilot Salary Progression (Europe, 2026 Estimates):</h4>
               <table className="w-full text-sm text-left border-collapse">
@@ -443,23 +443,23 @@ export default function EasaAtplRequirements() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Junior First Officer (Year 1-2)</td>
-                    <td className="px-4 py-3 text-white/80">€35,000 – €65,000</td>
-                    <td className="px-4 py-3 text-white/80">€70,000 – €130,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR35,000 - EUR65,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR70,000 - EUR130,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Senior First Officer (Year 3-5)</td>
-                    <td className="px-4 py-3 text-white/80">€65,000 – €100,000</td>
-                    <td className="px-4 py-3 text-white/80">€265,000 – €430,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR65,000 - EUR100,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR265,000 - EUR430,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Captain (Year 6+)</td>
-                    <td className="px-4 py-3 text-white/80">€90,000 – €180,000+</td>
-                    <td className="px-4 py-3 text-white/80">€500,000+ (first 5 years as Captain)</td>
+                    <td className="px-4 py-3 text-white/80">EUR90,000 - EUR180,000+</td>
+                    <td className="px-4 py-3 text-white/80">EUR500,000+ (first 5 years as Captain)</td>
                   </tr>
                 </tbody>
               </table>
               <p>
-                With a training investment of approximately €100,000, the payback period typically falls within 5-8 years. Senior Captains, with decades of experience, can earn upwards of €150,000 to €180,000+ annually, generating substantial returns over a 30-year career.
+                With a training investment of approximately EUR100,000, the payback period typically falls within 5-8 years. Senior Captains, with decades of experience, can earn upwards of EUR150,000 to EUR180,000+ annually, generating substantial returns over a 30-year career.
               </p>
             </>
           )
@@ -481,7 +481,7 @@ export default function EasaAtplRequirements() {
       faqSchema={[
         { question: "What is an EASA ATPL?", answer: "The EASA ATPL (Airline Transport Pilot License) is the highest level of pilot certification in Europe, required to command large commercial aircraft (over 5,700 kg or with more than nine passenger seats) for airlines operating under EASA regulations." },
         { question: "How long does EASA ATPL training take?", answer: "Integrated ATPL programs typically take 18-24 months of full-time study. Modular ATPL training offers more flexibility and can take 2-5 years, depending on the individual's pace and commitment." },
-        { question: "How much does EASA ATPL training cost in 2026?", answer: "Integrated ATPL programs generally cost between €65,000 and €140,000+. Modular ATPL training can range from €59,000 to €102,000+. These figures exclude the type rating (an additional €15,000-€35,000) and living expenses, which can significantly increase the total investment." },
+        { question: "How much does EASA ATPL training cost in 2026?", answer: "Integrated ATPL programs generally cost between EUR65,000 and EUR140,000+. Modular ATPL training can range from EUR59,000 to EUR102,000+. These figures exclude the type rating (an additional EUR15,000-EUR35,000) and living expenses, which can significantly increase the total investment." },
         { question: "What are the medical requirements for an EASA ATPL?", answer: "A valid EASA Class 1 Medical Certificate is mandatory. This involves a comprehensive physical and mental health examination, including cardiovascular, vision, hearing, and neurological assessments. It must be obtained before commencing training and renewed regularly." },
         { question: "Can I work while doing modular ATPL training?", answer: "Yes, modular ATPL training is designed to be flexible, allowing students to complete modules at their own pace. This makes it possible to work concurrently, helping to manage the financial burden, though it typically extends the overall training duration." },
         { question: "What is the difference between integrated and modular ATPL?", answer: "Integrated training is a full-time, continuous program at one school, faster (18-24 months), and generally more expensive upfront. Modular training is flexible, completed in stages, can take longer (2-5 years), and allows for pay-as-you-go financing, often across different schools." }

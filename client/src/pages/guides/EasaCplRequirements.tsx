@@ -121,7 +121,7 @@ export default function EasaCplRequirements() {
               <p>If you already possess a valid Instrument Rating, the CPL flight training can be completed with a reduced hour requirement:</p>
               <ul>
                 <li><strong>15 hours</strong> of dual flight instruction.</li>
-                <li>At least <strong>5 hours</strong> must be conducted on a complex aircraft (e.g., Piper Arrow, Cessna 172RG – defined as a single-engine aeroplane with retractable landing gear, flaps, and a variable pitch propeller).</li>
+                <li>At least <strong>5 hours</strong> must be conducted on a complex aircraft (e.g., Piper Arrow, Cessna 172RG - defined as a single-engine aeroplane with retractable landing gear, flaps, and a variable pitch propeller).</li>
                 <li>The training will focus on advanced visual commercial maneuvers and precision flying.</li>
               </ul>
               <h3>For Pilots Without an Instrument Rating (Non-IR Holders):</h3>
@@ -207,22 +207,22 @@ export default function EasaCplRequirements() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Integrated ATPL (leading to CPL/IR)</td>
-                    <td className="px-4 py-3 text-white/80">€65,000 - €140,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR65,000 - EUR140,000</td>
                     <td className="px-4 py-3 text-white/80">Comprehensive program from zero experience to 'frozen ATPL'.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Modular CPL (after PPL & ATPL theory)</td>
-                    <td className="px-4 py-3 text-white/80">€7,000 - €15,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR7,000 - EUR15,000</td>
                     <td className="px-4 py-3 text-white/80">Focuses on CPL flight training, assuming PPL and ATPL theory are completed.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Full Modular Route (PPL, ATPL Theory, CPL, IR, ME)</td>
-                    <td className="px-4 py-3 text-white/80">€50,000 - €100,000+</td>
+                    <td className="px-4 py-3 text-white/80">EUR50,000 - EUR100,000+</td>
                     <td className="px-4 py-3 text-white/80">Building blocks approach, often more flexible but requires self-discipline.</td>
                   </tr>
                 </tbody>
               </table>
-              <p>These figures are estimates for 2026. Eastern European schools often offer more competitive pricing (e.g., €40,000 - €70,000 for integrated programs) compared to Western European academies (€130,000+). Additional costs may include medical examinations, study materials, examiner fees, and living expenses.</p>
+              <p>These figures are estimates for 2026. Eastern European schools often offer more competitive pricing (e.g., EUR40,000 - EUR70,000 for integrated programs) compared to Western European academies (EUR130,000+). Additional costs may include medical examinations, study materials, examiner fees, and living expenses.</p>
               <h3>Financing Options:</h3>
               <p>Several financing options are available to help manage the cost of pilot training:</p>
               <ul>
@@ -321,7 +321,7 @@ export default function EasaCplRequirements() {
         { question: "What is the minimum age to start EASA CPL training?", answer: "You can start EASA CPL training at 17 years old, but you must be at least 18 years old to be issued the license." },
         { question: "Do I need an Instrument Rating (IR) before starting EASA CPL flight training?", answer: "No, an Instrument Rating is not strictly required beforehand, but holding one can reduce the required CPL flight training hours. If you don't have an IR, your CPL training will include the necessary instrument flight instruction." },
         { question: "How many flight hours are required for an EASA CPL?", answer: "A minimum of 200 total flight hours (including PPL time) is required to be eligible for the CPL skill test. This includes specific hours as Pilot-in-Command, instrument training, night flying, and complex aircraft experience." },
-        { question: "What is the estimated cost of EASA CPL training in 2026?", answer: "The cost varies significantly. A modular CPL course (assuming PPL and ATPL theory are done) can range from €7,000 to €15,000. A full integrated ATPL program, which includes CPL, can cost between €65,000 and €140,000 in 2026, depending on the school and location." },
+        { question: "What is the estimated cost of EASA CPL training in 2026?", answer: "The cost varies significantly. A modular CPL course (assuming PPL and ATPL theory are done) can range from EUR7,000 to EUR15,000. A full integrated ATPL program, which includes CPL, can cost between EUR65,000 and EUR140,000 in 2026, depending on the school and location." },
         { question: "What are the main differences between modular and integrated EASA CPL training?", answer: "Integrated training is a full-time, structured program from zero experience to 'frozen ATPL' in one go. Modular training breaks down the process into separate courses (PPL, ATPL theory, CPL, IR, ME), offering more flexibility but requiring more self-discipline to manage." },
         { question: "What medical certificate is required for an EASA CPL?", answer: "You must hold a valid EASA Class 1 Medical Certificate, which is the highest standard of medical fitness for professional pilots." },
         { question: "Can I convert my non-EASA pilot license to an EASA CPL?", answer: "Yes, it is possible to convert non-EASA licenses (e.g., FAA) to an EASA CPL, but it typically involves fulfilling EASA theoretical knowledge requirements, additional flight training, and passing EASA skill tests. The exact process depends on the specific foreign license and your total flight experience." },

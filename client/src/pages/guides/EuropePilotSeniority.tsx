@@ -57,21 +57,21 @@ export default function EuropePilotSeniority() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Path</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (EUR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Description</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Integrated ATPL</strong></td><td className="px-4 py-3 text-white/80">€80,000 - €130,000</td><td className="px-4 py-3 text-white/80">18-24 months</td><td className="px-4 py-3 text-white/80">Full-time, airline-focused program from zero experience to 'frozen ATPL'. Often includes type rating preparation.</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Modular ATPL</strong></td><td className="px-4 py-3 text-white/80">€60,000 - €100,000</td><td className="px-4 py-3 text-white/80">24-36 months (flexible)</td><td className="px-4 py-3 text-white/80">Allows pilots to complete licenses and ratings separately (PPL, ATPL Theory, CPL, IR, MEP, UPRT). More flexible but requires self-discipline.</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Type Rating</strong></td><td className="px-4 py-3 text-white/80">€20,000 - €35,000</td><td className="px-4 py-3 text-white/80">4-6 weeks</td><td className="px-4 py-3 text-white/80">Specific training for a particular aircraft type (e.g., Airbus A320, Boeing 737). Often paid by the airline or financed by the pilot.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Integrated ATPL</strong></td><td className="px-4 py-3 text-white/80">EUR80,000 - EUR130,000</td><td className="px-4 py-3 text-white/80">18-24 months</td><td className="px-4 py-3 text-white/80">Full-time, airline-focused program from zero experience to 'frozen ATPL'. Often includes type rating preparation.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Modular ATPL</strong></td><td className="px-4 py-3 text-white/80">EUR60,000 - EUR100,000</td><td className="px-4 py-3 text-white/80">24-36 months (flexible)</td><td className="px-4 py-3 text-white/80">Allows pilots to complete licenses and ratings separately (PPL, ATPL Theory, CPL, IR, MEP, UPRT). More flexible but requires self-discipline.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Type Rating</strong></td><td className="px-4 py-3 text-white/80">EUR20,000 - EUR35,000</td><td className="px-4 py-3 text-white/80">4-6 weeks</td><td className="px-4 py-3 text-white/80">Specific training for a particular aircraft type (e.g., Airbus A320, Boeing 737). Often paid by the airline or financed by the pilot.</td></tr>
                 </tbody>
               </table>
               <p><strong>Breakdown of Modular Training Costs (Approximate 2026 figures):</strong></p>
               <ul>
-                <li><strong>Private Pilot Licence (PPL)</strong>: €10,000 - €15,000</li>
-                <li><strong>ATPL Theory (Distance Learning or Classroom)</strong>: €3,000 - €8,000</li>
-                <li><strong>Hour Building</strong>: €15,000 - €25,000 (depending on aircraft type and hours)</li>
-                <li><strong>Commercial Pilot Licence (CPL)</strong>: €15,000 - €20,000</li>
-                <li><strong>Multi-Engine Piston (MEP) Rating</strong>: €5,000 - €8,000</li>
-                <li><strong>Instrument Rating (IR)</strong>: €15,000 - €25,000</li>
-                <li><strong>Multi-Crew Cooperation (MCC) Course</strong>: €5,000 - €8,000</li>
-                <li><strong>Upset Prevention and Recovery Training (UPRT)</strong>: €2,000 - €3,000</li>
+                <li><strong>Private Pilot Licence (PPL)</strong>: EUR10,000 - EUR15,000</li>
+                <li><strong>ATPL Theory (Distance Learning or Classroom)</strong>: EUR3,000 - EUR8,000</li>
+                <li><strong>Hour Building</strong>: EUR15,000 - EUR25,000 (depending on aircraft type and hours)</li>
+                <li><strong>Commercial Pilot Licence (CPL)</strong>: EUR15,000 - EUR20,000</li>
+                <li><strong>Multi-Engine Piston (MEP) Rating</strong>: EUR5,000 - EUR8,000</li>
+                <li><strong>Instrument Rating (IR)</strong>: EUR15,000 - EUR25,000</li>
+                <li><strong>Multi-Crew Cooperation (MCC) Course</strong>: EUR5,000 - EUR8,000</li>
+                <li><strong>Upset Prevention and Recovery Training (UPRT)</strong>: EUR2,000 - EUR3,000</li>
               </ul>
               <p>These figures are estimates and can fluctuate based on fuel prices, instructor fees, and the specific school. Financial aid, scholarships, and airline cadet programs can help mitigate these costs, but competition for such opportunities is fierce.</p>
             </>
@@ -121,7 +121,7 @@ export default function EuropePilotSeniority() {
         },
         {
           question: "What are the estimated costs for pilot training in Europe in 2026?",
-          answer: "As of 2026, integrated ATPL programs typically cost between €80,000 and €130,000. Modular ATPL programs, which offer more flexibility, range from €60,000 to €100,000. These figures do not include the additional €20,000 to €35,000 for a type rating, which is often required by airlines.",
+          answer: "As of 2026, integrated ATPL programs typically cost between EUR80,000 and EUR130,000. Modular ATPL programs, which offer more flexibility, range from EUR60,000 to EUR100,000. These figures do not include the additional EUR20,000 to EUR35,000 for a type rating, which is often required by airlines.",
         },
         {
           question: "Which major European airlines operate with strong seniority systems?",

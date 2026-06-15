@@ -19,7 +19,7 @@ const FlightInstructorUK = () => {
         },
         {
           question: "What is the typical salary for a Flight Instructor in the UK?",
-          answer: "A Flight Instructor's (FI) salary in the UK depends on experience and school. Entry-level restricted FIs typically earn £28,000–£32,000 per year. Experienced unrestricted FIs at larger academies earn £35,000–£50,000. Many FIs supplement income with ground instruction and simulator work. Pay at the integrated schools (CAE, Skyborne, Leading Edge) is generally higher than at smaller Part 61 clubs.",
+          answer: "A Flight Instructor's (FI) salary in the UK depends on experience and school. Entry-level restricted FIs typically earn £28,000-£32,000 per year. Experienced unrestricted FIs at larger academies earn £35,000-£50,000. Many FIs supplement income with ground instruction and simulator work. Pay at the integrated schools (CAE, Skyborne, Leading Edge) is generally higher than at smaller Part 61 clubs.",
         },
         {
           question: "What is the difference between a Restricted and Unrestricted FI rating?",
@@ -140,7 +140,7 @@ const FlightInstructorUK = () => {
                 A full-time Flight Instructor in the UK can typically log between 400 to 700 hours per year, depending on the demand at their flight school, weather conditions, and the type of instruction being conducted. Some busy schools might even see FIs logging closer to 800-900 hours in a good year. This rate of hour accumulation is considerably faster than what most pilots can achieve by simply renting aircraft for personal flying.
               </p>
               <p>
-                The timeline from becoming an FI to securing an airline position is often a strategic one. As mentioned, most FIs spend 2-3 years instructing to reach the 1500-hour mark, which is a common minimum requirement for many airline First Officer positions. During this time, FIs also gain invaluable experience in crew resource management (CRM), threat and error management (TEM), and standard operating procedures (SOPs) – all critical skills for an airline environment.
+                The timeline from becoming an FI to securing an airline position is often a strategic one. As mentioned, most FIs spend 2-3 years instructing to reach the 1500-hour mark, which is a common minimum requirement for many airline First Officer positions. During this time, FIs also gain invaluable experience in crew resource management (CRM), threat and error management (TEM), and standard operating procedures (SOPs) - all critical skills for an airline environment.
               </p>
               <p>
                 Many FIs also use this period to complete additional ratings, such as a Multi-Engine Instrument Rating (MEIR) if they don't already possess one, or to undertake Multi-Crew Cooperation (MCC) and Jet Orientation Courses (JOC). These further enhance their employability and prepare them for the demands of multi-pilot operations in an airline cockpit.

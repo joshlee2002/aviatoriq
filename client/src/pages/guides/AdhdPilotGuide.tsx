@@ -25,7 +25,7 @@ export default function AdhdPilotGuide() {
           content: (
             <>
               <p>
-                This is the question anxious student pilots search for at 2am. The answer is more nuanced — and more hopeful — than most of what you will find on internet forums. ADHD is not automatically disqualifying for a UK CAA Class 1 Medical Certificate [1].
+                This is the question anxious student pilots search for at 2am. The answer is more nuanced  -  and more hopeful  -  than most of what you will find on internet forums. ADHD is not automatically disqualifying for a UK CAA Class 1 Medical Certificate [1].
               </p>
               <p>
                 Many pilots with a childhood ADHD diagnosis, and some with adult ADHD, currently hold valid Class 1 certificates and fly commercially for UK airlines. The problem is that most ADHD-and-flying content online is heavily focused on the American FAA system. The UK CAA rules are different, and in some ways, they offer a more individualised approach.
@@ -98,10 +98,10 @@ export default function AdhdPilotGuide() {
               </div>
 
               <p>
-                <strong>Scenario 1 (Childhood ADHD):</strong> This is the most common and most favourable case. You were diagnosed as a child, took medication during school, stopped at some point (often 16–18), and have no current symptoms. Research showing 40–60% of childhood cases improve significantly in adulthood is explicitly referenced by the CAA [2].
+                <strong>Scenario 1 (Childhood ADHD):</strong> This is the most common and most favourable case. You were diagnosed as a child, took medication during school, stopped at some point (often 16-18), and have no current symptoms. Research showing 40-60% of childhood cases improve significantly in adulthood is explicitly referenced by the CAA [2].
               </p>
               <p>
-                <strong>Scenario 2 (Recently stopped medication):</strong> You were diagnosed as an adult, took medication, and are now stopping specifically to pursue a pilot career. The authority will want to see a stability period off medication (typically 6–12 months) and evidence that you can function without it.
+                <strong>Scenario 2 (Recently stopped medication):</strong> You were diagnosed as an adult, took medication, and are now stopping specifically to pursue a pilot career. The authority will want to see a stability period off medication (typically 6-12 months) and evidence that you can function without it.
               </p>
             </>
           ),
@@ -117,10 +117,10 @@ export default function AdhdPilotGuide() {
                 First, gather all your treatment records: original diagnosis, medication history, treatment dates, and assessment reports from childhood or adulthood. The more complete your file, the faster the process. Disclose your ADHD history on the medical application. The AME will forward your case to the CAA's Aeromedical Section (AMS) at Gatwick for review.
               </p>
               <p>
-                The CAA may request an assessment by a neuropsychologist or aviation clinical psychologist. This evaluates attention, working memory, processing speed, and executive function. It is thorough but not hostile — the purpose is to establish your cognitive fitness, not to catch you out.
+                The CAA may request an assessment by a neuropsychologist or aviation clinical psychologist. This evaluates attention, working memory, processing speed, and executive function. It is thorough but not hostile  -  the purpose is to establish your cognitive fitness, not to catch you out.
               </p>
               <p>
-                The AMS reviews everything and issues a decision: fit (possibly with an Operational Multi-crew Limitation initially), unfit, or a request for more information. Positive decisions may include a surveillance requirement — an annual specialist review for 3–5 years, after which it may be removed.
+                The AMS reviews everything and issues a decision: fit (possibly with an Operational Multi-crew Limitation initially), unfit, or a request for more information. Positive decisions may include a surveillance requirement  -  an annual specialist review for 3-5 years, after which it may be removed.
               </p>
             </>
           ),
@@ -133,7 +133,7 @@ export default function AdhdPilotGuide() {
                 The temptation to simply tick "No" on the medical declaration form is strong for many applicants. Do not do it. Hiding an ADHD diagnosis is far riskier than disclosing it.
               </p>
               <p>
-                Concealing a medical diagnosis on an official aviation document is a criminal offence. If an undisclosed condition is discovered later — through medical records integration, insurance claims, or during an incident investigation — your commercial pilot licence can be permanently revoked, ending your career instantly.
+                Concealing a medical diagnosis on an official aviation document is a criminal offence. If an undisclosed condition is discovered later  -  through medical records integration, insurance claims, or during an incident investigation  -  your commercial pilot licence can be permanently revoked, ending your career instantly.
               </p>
               <p>
                 The CAA's approach to mental health and neurodevelopmental conditions has become significantly more nuanced and supportive in recent years. Honest disclosure with good documentation leads to certification far more often than pilots expect.

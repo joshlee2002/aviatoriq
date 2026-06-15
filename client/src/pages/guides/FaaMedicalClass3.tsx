@@ -19,7 +19,7 @@ export default function FaaMedicalClass3() {
           heading: "Introduction: The Foundation of Your Private Pilot Journey",
           content: (
             <>
-              <p>The FAA Class 3 Medical Certificate is the minimum medical standard required for a Private Pilot Certificate in the United States. This guide covers the exact requirements, the examination process, what conditions can disqualify you, and the real 2026 costs — so you know exactly what to expect before you book your appointment with an Aviation Medical Examiner (AME).</p>
+              <p>The FAA Class 3 Medical Certificate is the minimum medical standard required for a Private Pilot Certificate in the United States. This guide covers the exact requirements, the examination process, what conditions can disqualify you, and the real 2026 costs  -  so you know exactly what to expect before you book your appointment with an Aviation Medical Examiner (AME).</p>
               <p>The Class 3 Medical Certificate is mandated by <strong>14 CFR Part 61.23</strong> for private pilot operations, recreational pilot operations, and student pilot operations. It signifies that an airman meets the minimum health standards to safely exercise the privileges of their certificate. Without a valid Class 3 Medical, you cannot act as pilot-in-command for these activities.</p>
             </>
           )
@@ -192,15 +192,15 @@ export default function FaaMedicalClass3() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Standard Class 3 Medical Exam</td>
-                    <td className="px-4 py-3 text-white/80">$100 - $200</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$100 - $200</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Additional tests (e.g., EKG if required)</td>
-                    <td className="px-4 py-3 text-white/80">$50 - $100 (additional)</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$50 - $100 (additional)</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Color Vision Testing (e.g., Waggoner CCVT)</td>
-                    <td className="px-4 py-3 text-white/80">$100 - $200 (additional)</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$100 - $200 (additional)</td>
                   </tr>
                 </tbody>
               </table>

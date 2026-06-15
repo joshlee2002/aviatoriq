@@ -5,7 +5,7 @@ const InstrumentRatingUK = () => {
   return (
     <GuideLayout
       title="Instrument Rating (IR) UK: Requirements, Cost & What It Unlocks"
-      subtitle="UK Instrument Rating (IR) 2026: requirements, costs (£8,000–£15,000), EASA vs UK IR explained, and why it is essential for an airline career."
+      subtitle="UK Instrument Rating (IR) 2026: requirements, costs (£8,000-£15,000), EASA vs UK IR explained, and why it is essential for an airline career."
       canonical="/guides/instrument-rating-uk"
       metaDescription="Understand the UK Instrument Rating (IR) for aeroplanes: EASA vs UK IR, requirements, theory exams, skill test, costs (£8,000-£15,000), and its importance for airline careers."
       faqSchema={[

@@ -5,13 +5,13 @@ export default function LufthansaEuropeanFlightAcademy() {
   return (
     <GuideLayout
       title="Lufthansa European Flight Academy: The Complete 2026 Guide"
-      subtitle="An in-depth analysis of the EFA cadet program, including the €120,000 training cost, the Brain Capital ISA, DLR selection process, and the reality of City Airlines vs. Mainline placement."
+      subtitle="An in-depth analysis of the EFA cadet program, including the EUR120,000 training cost, the Brain Capital ISA, DLR selection process, and the reality of City Airlines vs. Mainline placement."
       readTime="15 min"
       author="AviatorIQ Research"
       lastUpdated="February 2026"
       category="Flight Schools"
       canonical="https://aviatoriq.com/europe/guides/lufthansa-european-flight-academy"
-      metaDescription="Complete 2026 guide to the Lufthansa European Flight Academy (EFA) cadet program. Learn about the €120,000 cost, Brain Capital ISA, DLR test, and career paths."
+      metaDescription="Complete 2026 guide to the Lufthansa European Flight Academy (EFA) cadet program. Learn about the EUR120,000 cost, Brain Capital ISA, DLR test, and career paths."
       ctaText="Check your pilot readiness"
       ctaHref="/quiz"
       sections={[
@@ -23,7 +23,7 @@ export default function LufthansaEuropeanFlightAcademy() {
                 The European Flight Academy (EFA) serves as the exclusive ab-initio training arm for the Lufthansa Group. Formed in 2017 through the merger of Lufthansa Flight Training, Swiss AviationTraining, and the Pilot Training Network, EFA is designed to feed highly qualified pilots into the world's largest airline group by revenue. In 2026, the academy remains one of the most prestigious cadet pathways in European aviation, offering a standardized EASA integrated ATPL curriculum across multiple international training locations.
               </p>
               <p>
-                However, the landscape of pilot training at Lufthansa has evolved significantly. The legacy model, where the airline bore all training costs, has been replaced by a "shared risk" philosophy. Today, cadets are responsible for the €120,000 training cost. To mitigate this financial burden, EFA offers innovative financing solutions like the Brain Capital Income Share Agreement (ISA) and a unique "Take-off Promise" that provides a 50% refund if a cockpit job within the Lufthansa Group does not materialize within 24 months of graduation.
+                However, the landscape of pilot training at Lufthansa has evolved significantly. The legacy model, where the airline bore all training costs, has been replaced by a "shared risk" philosophy. Today, cadets are responsible for the EUR120,000 training cost. To mitigate this financial burden, EFA offers innovative financing solutions like the Brain Capital Income Share Agreement (ISA) and a unique "Take-off Promise" that provides a 50% refund if a cockpit job within the Lufthansa Group does not materialize within 24 months of graduation.
               </p>
             </>
           )
@@ -89,10 +89,10 @@ export default function LufthansaEuropeanFlightAcademy() {
           content: (
             <>
               <p>
-                The total cost for the integrated ATPL program at EFA in 2026 is €120,000. This figure covers the core training but does not include living expenses, accommodation during the European phases, or the initial EASA Class 1 Medical certificate. Recognizing the substantial financial barrier, EFA has partnered with financial institutions to offer viable funding pathways.
+                The total cost for the integrated ATPL program at EFA in 2026 is EUR120,000. This figure covers the core training but does not include living expenses, accommodation during the European phases, or the initial EASA Class 1 Medical certificate. Recognizing the substantial financial barrier, EFA has partnered with financial institutions to offer viable funding pathways.
               </p>
               <p>
-                The most prominent option is the Brain Capital Income Share Agreement (ISA). Under this model, cadets pay an upfront fee of €10,000, with the remaining €110,000 covered by Brain Capital. In return, graduates commit to paying approximately 11% of their future gross income for 11 payment years, but only when their earnings exceed €30,000 annually. This structure aligns the cost of training with future earning potential, providing a safety net for those entering the industry.
+                The most prominent option is the Brain Capital Income Share Agreement (ISA). Under this model, cadets pay an upfront fee of EUR10,000, with the remaining EUR110,000 covered by Brain Capital. In return, graduates commit to paying approximately 11% of their future gross income for 11 payment years, but only when their earnings exceed EUR30,000 annually. This structure aligns the cost of training with future earning potential, providing a safety net for those entering the industry.
               </p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
@@ -105,18 +105,18 @@ export default function LufthansaEuropeanFlightAcademy() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Brain Capital ISA</td>
-                    <td className="px-4 py-3 text-white/80">€10,000</td>
-                    <td className="px-4 py-3 text-white/80">Pay ~11% of income for 11 years (threshold: €30,000/year).</td>
+                    <td className="px-4 py-3 text-white/80">EUR10,000</td>
+                    <td className="px-4 py-3 text-white/80">Pay ~11% of income for 11 years (threshold: EUR30,000/year).</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Albatros Financial Solutions</td>
                     <td className="px-4 py-3 text-white/80">Variable</td>
-                    <td className="px-4 py-3 text-white/80">Personal loans up to €100,000 (10-year term) or real estate-backed loans.</td>
+                    <td className="px-4 py-3 text-white/80">Personal loans up to EUR100,000 (10-year term) or real estate-backed loans.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">KfW Bildungskredit</td>
                     <td className="px-4 py-3 text-white/80">None</td>
-                    <td className="px-4 py-3 text-white/80">State-backed loan up to €7,200 at low interest for living costs.</td>
+                    <td className="px-4 py-3 text-white/80">State-backed loan up to EUR7,200 at low interest for living costs.</td>
                   </tr>
                 </tbody>
               </table>
@@ -144,22 +144,22 @@ export default function LufthansaEuropeanFlightAcademy() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Lufthansa Mainline</td>
-                    <td className="px-4 py-3 text-white/80">€83,000 - €86,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR83,000 - EUR86,000</td>
                     <td className="px-4 py-3 text-white/80">KTV (Strong Union Agreement)</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Lufthansa City Airlines</td>
-                    <td className="px-4 py-3 text-white/80">€59,000 - €65,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR59,000 - EUR65,000</td>
                     <td className="px-4 py-3 text-white/80">Non-KTV (New Subsidiary)</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Eurowings</td>
-                    <td className="px-4 py-3 text-white/80">€55,000 - €65,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR55,000 - EUR65,000</td>
                     <td className="px-4 py-3 text-white/80">Sector Pay Subsidiary</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Discover Airlines</td>
-                    <td className="px-4 py-3 text-white/80">€50,000 - €60,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR50,000 - EUR60,000</td>
                     <td className="px-4 py-3 text-white/80">Sector Pay Subsidiary</td>
                   </tr>
                 </tbody>
@@ -171,11 +171,11 @@ export default function LufthansaEuropeanFlightAcademy() {
       faqSchema={[
         {
           question: "How much does the Lufthansa European Flight Academy cost in 2026?",
-          answer: "The total training cost for the integrated ATPL program at EFA is €120,000. This does not include living expenses or accommodation during the European training phases."
+          answer: "The total training cost for the integrated ATPL program at EFA is EUR120,000. This does not include living expenses or accommodation during the European training phases."
         },
         {
           question: "What is the Brain Capital ISA?",
-          answer: "The Brain Capital Income Share Agreement (ISA) allows cadets to pay €10,000 upfront, with the remaining €110,000 covered by Brain Capital. Graduates then pay approximately 11% of their gross income for 11 years, provided they earn over €30,000 annually."
+          answer: "The Brain Capital Income Share Agreement (ISA) allows cadets to pay EUR10,000 upfront, with the remaining EUR110,000 covered by Brain Capital. Graduates then pay approximately 11% of their gross income for 11 years, provided they earn over EUR30,000 annually."
         },
         {
           question: "What is the EFA Take-off Promise?",

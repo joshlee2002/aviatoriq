@@ -5,7 +5,7 @@ const PplRequirementsUSA = () => {
   return (
     <GuideLayout
       title="Private Pilot License (PPL) Requirements USA: Cost, Hours & How to Get Started"
-      subtitle="Everything you need to know about getting your FAA Private Pilot Certificate — minimum hours, real costs, medical requirements, and how long it actually takes."
+      subtitle="Everything you need to know about getting your FAA Private Pilot Certificate  -  minimum hours, real costs, medical requirements, and how long it actually takes."
       canonical="/us/guides/ppl-requirements-usa"
       metaDescription="Discover everything you need to know about obtaining your Private Pilot License (PPL) in the USA, including FAA Part 61 and Part 141 requirements, flight hours, typical costs, medical certificate details, and the path to becoming a certified private pilot."
       faqSchema={[
@@ -47,7 +47,7 @@ const PplRequirementsUSA = () => {
                 Unlike a student pilot certificate, which permits solo flight under specific conditions, the PPL grants you the privilege to carry passengers and fly cross-country, albeit with certain limitations. You cannot, for instance, fly for compensation or hire, nor can you fly in commercial operations. However, you can share operating expenses with passengers, making recreational flying more accessible. This certificate is recognized globally, though specific regulations may vary when flying in international airspace.
               </p>
               <p>
-                This guide covers every requirement — from flight hours and medical certificates to the real costs involved and the practical steps to get started.
+                This guide covers every requirement  -  from flight hours and medical certificates to the real costs involved and the practical steps to get started.
               </p>
             </>
           ),
@@ -119,32 +119,32 @@ const PplRequirementsUSA = () => {
                     </thead>
                     <tbody>
                       <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
-                        <td className="px-4 py-3">Flight Instruction (40–60 hrs × $60–$80/hr)</td>
-                        <td className="px-4 py-3">$2,400–$4,800</td>
+                        <td className="px-4 py-3">Flight Instruction (40-60 hrs × $60-$80/hr)</td>
+                        <td className="px-4 py-3">{">"}$2,400-$4,800</td>
                       </tr>
                       <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
-                        <td className="px-4 py-3">Aircraft Rental (40–60 hrs × $120–$180/hr)</td>
-                        <td className="px-4 py-3">$4,800–$10,800</td>
+                        <td className="px-4 py-3">Aircraft Rental (40-60 hrs × $120-$180/hr)</td>
+                        <td className="px-4 py-3">{">"}$4,800-$10,800</td>
                       </tr>
                       <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
                         <td className="px-4 py-3">Ground School / Study Materials</td>
-                        <td className="px-4 py-3">$300–$500</td>
+                        <td className="px-4 py-3">{">"}$300-$500</td>
                       </tr>
                       <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
                         <td className="px-4 py-3">FAA Knowledge Test Fee</td>
-                        <td className="px-4 py-3">$175</td>
+                        <td className="px-4 py-3">{">"}$175</td>
                       </tr>
                       <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
                         <td className="px-4 py-3">FAA Medical Certificate Exam (Class 3 AME)</td>
-                        <td className="px-4 py-3">$75–$200</td>
+                        <td className="px-4 py-3">{">"}$75-$200</td>
                       </tr>
                       <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
                         <td className="px-4 py-3">Checkride (DPE Fee)</td>
-                        <td className="px-4 py-3">$600–$1,000</td>
+                        <td className="px-4 py-3">{">"}$600-$1,000</td>
                       </tr>
                       <tr className="border-t border-white/10 bg-white/5">
                         <td className="px-4 py-3 font-semibold text-white">Total Estimated Range</td>
-                        <td className="px-4 py-3 font-semibold text-white">$8,350–$17,475</td>
+                        <td className="px-4 py-3 font-semibold text-white">{">"}$8,350-$17,475</td>
                       </tr>
                     </tbody>
                   </table>

@@ -6,7 +6,7 @@ const AtpCertificateUSA = () => {
       title="Airline Transport Pilot (ATP) Certificate USA: Requirements, Cost & How to Get One"
       subtitle="The ATP certificate is the highest level of FAA pilot certification and the final step to an airline captain seat."
       canonical="/us/guides/atp-certificate-usa"
-      metaDescription="Complete guide to the FAA ATP certificate — 1,500-hour requirements, R-ATP pathways, ATP-CTP course, checkride, and costs. Updated for 2026."
+      metaDescription="Complete guide to the FAA ATP certificate  -  1,500-hour requirements, R-ATP pathways, ATP-CTP course, checkride, and costs. Updated for 2026."
       faqSchema={[
         {
           question: "What is an Airline Transport Pilot (ATP) certificate?",
@@ -39,7 +39,7 @@ const AtpCertificateUSA = () => {
           content: (
             <>
               <p>
-                The Airline Transport Pilot (ATP) certificate is the pinnacle of FAA pilot certification. It is a legal requirement for any pilot serving as captain or first officer at a Part 121 airline — scheduled air carriers such as American, Delta, United, Southwest, and the regional carriers that feed them. Without an ATP or Restricted ATP (R-ATP), you cannot sit in either seat of a commercial airliner.
+                The Airline Transport Pilot (ATP) certificate is the pinnacle of FAA pilot certification. It is a legal requirement for any pilot serving as captain or first officer at a Part 121 airline  -  scheduled air carriers such as American, Delta, United, Southwest, and the regional carriers that feed them. Without an ATP or Restricted ATP (R-ATP), you cannot sit in either seat of a commercial airliner.
               </p>
               <img src="/manus-storage/airline-pilot-cockpit_3c8e2f1a.jpg" alt="ATP certificate airline cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
@@ -69,7 +69,7 @@ const AtpCertificateUSA = () => {
                 You must also hold at least a Commercial Pilot Certificate with an instrument rating, be at least 23 years old (21 for R-ATP), pass the ATM knowledge test, complete the ATP-CTP course, and pass an ATP checkride with an FAA Designated Pilot Examiner (DPE).
               </p>
               <p>
-                In practice, most pilots accumulate their 1,500 hours over 2 to 4 years of working as a CFI, charter pilot, or regional airline first officer. The regional airline path is particularly efficient — you can log multi-engine turbine time while being paid, which is far more cost-effective than renting aircraft independently.
+                In practice, most pilots accumulate their 1,500 hours over 2 to 4 years of working as a CFI, charter pilot, or regional airline first officer. The regional airline path is particularly efficient  -  you can log multi-engine turbine time while being paid, which is far more cost-effective than renting aircraft independently.
               </p>
             </>
           ),
@@ -88,7 +88,7 @@ const AtpCertificateUSA = () => {
                 <strong>Aviation degree pathway (1,250 hours):</strong> Graduates of a bachelor's or associate's degree programme in aviation from an accredited institution can apply with 1,250 hours. The degree must meet specific FAA curriculum requirements.
               </p>
               <p>
-                <strong>Part 141 pathway (1,000 hours):</strong> Graduates of certain FAA-approved Part 141 flight schools with qualifying integrated curricula can apply with 1,000 hours. Not all Part 141 schools qualify — the school must have specific curriculum approval from the FAA. This pathway is offered by major flight academies such as ATP Flight School and Embry-Riddle.
+                <strong>Part 141 pathway (1,000 hours):</strong> Graduates of certain FAA-approved Part 141 flight schools with qualifying integrated curricula can apply with 1,000 hours. Not all Part 141 schools qualify  -  the school must have specific curriculum approval from the FAA. This pathway is offered by major flight academies such as ATP Flight School and Embry-Riddle.
               </p>
               <p>
                 The R-ATP allows you to serve as a first officer immediately upon reaching the reduced minimums. The full ATP is automatically granted when you reach 1,500 hours total time, at which point you become eligible to serve as captain.
@@ -107,7 +107,7 @@ const AtpCertificateUSA = () => {
                 The ATP-CTP consists of 30 hours of ground instruction and 10 hours of flight simulation training device (FSTD) time, including at least 6 hours in a Level C or D full flight simulator. Ground instruction covers: aerodynamics at high altitudes, automation and flight management systems, leadership and crew resource management, air carrier operations, and meteorology relevant to airline flying.
               </p>
               <p>
-                The course is offered by providers including ATP Flight School, FlightSafety International, CAE, and SimCom. Cost typically ranges from $3,000 to $6,000. Some regional airlines offer the ATP-CTP as part of their hiring process, covering the cost in exchange for a service commitment — this is worth investigating when you are approaching the R-ATP minimums.
+                The course is offered by providers including ATP Flight School, FlightSafety International, CAE, and SimCom. Cost typically ranges from $3,000 to $6,000. Some regional airlines offer the ATP-CTP as part of their hiring process, covering the cost in exchange for a service commitment  -  this is worth investigating when you are approaching the R-ATP minimums.
               </p>
             </>
           ),
@@ -120,7 +120,7 @@ const AtpCertificateUSA = () => {
                 Before taking the ATP checkride, you must pass the Airline Transport Pilot Multiengine (ATM) knowledge test. This computer-based test covers aerodynamics, aircraft systems, meteorology, navigation, FARs, crew resource management, and instrument procedures. The test consists of 125 questions and requires a minimum score of 70%. The test fee is approximately $175.
               </p>
               <p>
-                The ATP checkride is conducted with an FAA Designated Pilot Examiner (DPE) and consists of an oral examination followed by a practical flight test in a multi-engine aircraft or full flight simulator. The oral covers systems knowledge, regulations, and aeronautical decision-making. The practical test evaluates your ability to fly to ATP standards — higher precision requirements than the commercial certificate. Checkride examiner fees typically range from $500 to $800.
+                The ATP checkride is conducted with an FAA Designated Pilot Examiner (DPE) and consists of an oral examination followed by a practical flight test in a multi-engine aircraft or full flight simulator. The oral covers systems knowledge, regulations, and aeronautical decision-making. The practical test evaluates your ability to fly to ATP standards  -  higher precision requirements than the commercial certificate. Checkride examiner fees typically range from $500 to $800.
               </p>
               <p>
                 Preparation for the ATP checkride typically involves studying the ATP Airmen Certification Standards (ACS), reviewing the aircraft's Airplane Flight Manual (AFM), and completing simulator practice sessions. Most pilots who have been flying professionally for several years find the ATP checkride challenging but achievable with focused preparation.

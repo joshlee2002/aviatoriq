@@ -4,7 +4,7 @@ export default function EasyJetGeneration() {
   return (
     <GuideLayout
       title="easyJet Generation Pilot Programme 2026: Complete Guide"
-      subtitle="The MPL route from zero hours to easyJet First Officer — how it works, what it costs, how to get in, and whether it's the right choice for you."
+      subtitle="The MPL route from zero hours to easyJet First Officer  -  how it works, what it costs, how to get in, and whether it's the right choice for you."
       canonical="/guides/easyjet-generation-pilot"
       metaDescription="easyJet Generation Pilot Programme 2026: MPL training at CAE Oxford, costs, selection process, and guaranteed FO job. Is it worth it? Updated June 2026."
       readTime="9 min read"
@@ -19,10 +19,10 @@ export default function EasyJetGeneration() {
       ]}
       faqSchema={[
         { question: "What is the easyJet Generation Pilot Programme?", answer: "The Generation easyJet programme is an ab-initio cadet programme that trains pilots from zero experience to easyJet First Officer via the Multi-Crew Pilot Licence (MPL). Training is conducted at CAE Oxford Aviation Academy. Successful graduates are guaranteed a First Officer position with easyJet." },
-        { question: "What is an MPL licence and how is it different from an ATPL?", answer: "An MPL (Multi-Crew Pilot Licence) is an airline-specific licence that trains you for multi-crew jet operations from the start. Unlike an ATPL, the MPL is type-specific — you train on the A320 family simulator from early in the programme. The MPL is only valid for the specific aircraft type and operator, so it ties you to easyJet initially." },
-        { question: "How much does the easyJet Generation programme cost?", answer: "The training cost at CAE Oxford is €102,942 (billed in euros; approximately £87,000–£90,000 at current exchange rates). This is self-funded — easyJet does not pay for your training. Finance options are available through CAE and specialist aviation lenders such as Lendwise. Note that no UK high-street bank currently offers a dedicated pilot training loan (BALPA confirmed 2026)." },
-        { question: "Is the MPL licence limiting compared to an ATPL?", answer: "Initially yes — the MPL is type-specific and ties you to easyJet for your first years of employment. However, once you have accumulated sufficient hours on the line, you can convert your MPL to a full ATPL, giving you the same flexibility as any other commercial pilot." },
-        { question: "How competitive is the easyJet Generation programme?", answer: "Very competitive, though slightly less so than the BA Speedbird Academy. easyJet takes more cadets per intake (typically 30–50 per year) but still receives thousands of applications. The selection process is rigorous." },
+        { question: "What is an MPL licence and how is it different from an ATPL?", answer: "An MPL (Multi-Crew Pilot Licence) is an airline-specific licence that trains you for multi-crew jet operations from the start. Unlike an ATPL, the MPL is type-specific  -  you train on the A320 family simulator from early in the programme. The MPL is only valid for the specific aircraft type and operator, so it ties you to easyJet initially." },
+        { question: "How much does the easyJet Generation programme cost?", answer: "The training cost at CAE Oxford is EUR102,942 (billed in euros; approximately £87,000-£90,000 at current exchange rates). This is self-funded  -  easyJet does not pay for your training. Finance options are available through CAE and specialist aviation lenders such as Lendwise. Note that no UK high-street bank currently offers a dedicated pilot training loan (BALPA confirmed 2026)." },
+        { question: "Is the MPL licence limiting compared to an ATPL?", answer: "Initially yes  -  the MPL is type-specific and ties you to easyJet for your first years of employment. However, once you have accumulated sufficient hours on the line, you can convert your MPL to a full ATPL, giving you the same flexibility as any other commercial pilot." },
+        { question: "How competitive is the easyJet Generation programme?", answer: "Very competitive, though slightly less so than the BA Speedbird Academy. easyJet takes more cadets per intake (typically 30-50 per year) but still receives thousands of applications. The selection process is rigorous." },
       ]}
       sections={[
         {
@@ -30,7 +30,7 @@ export default function EasyJetGeneration() {
           content: (
             <>
               <p>
-                The Generation easyJet programme is easyJet's flagship ab-initio cadet pilot pathway — a direct route from zero flying experience to a First Officer seat on easyJet's Airbus A320 family fleet. The programme is delivered in partnership with CAE Oxford Aviation Academy and uses the Multi-Crew Pilot Licence (MPL) as its qualifying licence, rather than the traditional frozen ATPL.
+                The Generation easyJet programme is easyJet's flagship ab-initio cadet pilot pathway  -  a direct route from zero flying experience to a First Officer seat on easyJet's Airbus A320 family fleet. The programme is delivered in partnership with CAE Oxford Aviation Academy and uses the Multi-Crew Pilot Licence (MPL) as its qualifying licence, rather than the traditional frozen ATPL.
               </p>
               <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="easyJet Generation cadet" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/interview-assessment_c517e045.jpg" alt="easyJet selection" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
@@ -54,10 +54,10 @@ export default function EasyJetGeneration() {
                 In practice, this means that MPL training is more simulator-heavy from an earlier stage, with a greater focus on Crew Resource Management (CRM), Standard Operating Procedures (SOPs), and the specific aircraft type you will fly. For the Generation easyJet programme, this means significant time in A320 family simulators long before you would encounter them on a traditional ATPL route.
               </p>
               <p>
-                The key limitation of the MPL is that it is initially type-specific and operator-specific. Your MPL licence is valid for the A320 family with easyJet. This means that if you leave easyJet in your first years of employment, you cannot simply take your licence to another airline — you would need to complete additional training to convert to a full ATPL. This is a genuine consideration when weighing the MPL route against the traditional ATPL.
+                The key limitation of the MPL is that it is initially type-specific and operator-specific. Your MPL licence is valid for the A320 family with easyJet. This means that if you leave easyJet in your first years of employment, you cannot simply take your licence to another airline  -  you would need to complete additional training to convert to a full ATPL. This is a genuine consideration when weighing the MPL route against the traditional ATPL.
               </p>
               <p>
-                However, once you have accumulated the required hours on the line (typically 1,500 hours total time, 500 hours as PIC), you can convert your MPL to a full unrestricted ATPL, giving you the same licence flexibility as any other commercial pilot. Most Generation easyJet graduates reach this milestone within 2–3 years of joining the airline.
+                However, once you have accumulated the required hours on the line (typically 1,500 hours total time, 500 hours as PIC), you can convert your MPL to a full unrestricted ATPL, giving you the same licence flexibility as any other commercial pilot. Most Generation easyJet graduates reach this milestone within 2-3 years of joining the airline.
               </p>
             </>
           ),
@@ -82,7 +82,7 @@ export default function EasyJetGeneration() {
                 As with all major cadet programmes, the formal minimum requirements are the floor, not the ceiling. In practice, successful applicants typically hold strong A-level results or a degree, demonstrate excellent aptitude test performance, and show the communication and teamwork skills that characterise effective airline pilots.
               </p>
               <p>
-                Prior flying experience is not required and is not a significant selection factor. easyJet and CAE are training you from scratch — what they are selecting for is the cognitive and personal profile of a pilot, not existing aviation knowledge.
+                Prior flying experience is not required and is not a significant selection factor. easyJet and CAE are training you from scratch  -  what they are selecting for is the cognitive and personal profile of a pilot, not existing aviation knowledge.
               </p>
             </>
           ),
@@ -95,16 +95,16 @@ export default function EasyJetGeneration() {
                 The Generation easyJet selection process is conducted by CAE on behalf of easyJet and follows a similar structure to other major cadet programmes:
               </p>
               <p>
-                <strong>Stage 1 — Online Application:</strong> An application form covering personal details, qualifications, and motivational questions. Ensure your answers are specific and well-researched — generic enthusiasm is not sufficient at this stage.
+                <strong>Stage 1  -  Online Application:</strong> An application form covering personal details, qualifications, and motivational questions. Ensure your answers are specific and well-researched  -  generic enthusiasm is not sufficient at this stage.
               </p>
               <p>
-                <strong>Stage 2 — Online Aptitude Tests:</strong> A battery of psychometric assessments covering numerical reasoning, spatial awareness, multi-tasking, and working memory. These tests are designed to identify the cognitive profile associated with successful pilots. Preparation using practice tests is strongly recommended and makes a measurable difference to scores.
+                <strong>Stage 2  -  Online Aptitude Tests:</strong> A battery of psychometric assessments covering numerical reasoning, spatial awareness, multi-tasking, and working memory. These tests are designed to identify the cognitive profile associated with successful pilots. Preparation using practice tests is strongly recommended and makes a measurable difference to scores.
               </p>
               <p>
-                <strong>Stage 3 — Assessment Centre:</strong> Candidates who pass the online tests are invited to CAE Oxford for a one or two-day assessment centre. This includes further aptitude testing (often more advanced), group exercises, individual interviews, and a simulator assessment. The simulator assessment is designed to be accessible to complete beginners — it tests your ability to learn and follow instructions, not existing flying skill.
+                <strong>Stage 3  -  Assessment Centre:</strong> Candidates who pass the online tests are invited to CAE Oxford for a one or two-day assessment centre. This includes further aptitude testing (often more advanced), group exercises, individual interviews, and a simulator assessment. The simulator assessment is designed to be accessible to complete beginners  -  it tests your ability to learn and follow instructions, not existing flying skill.
               </p>
               <p>
-                <strong>Stage 4 — Medical Assessment:</strong> Candidates who pass the assessment centre are required to complete a CAA Class 1 Medical examination. This is a comprehensive medical assessment covering vision, hearing, cardiovascular health, and neurological function. Certain conditions are disqualifying — it is worth completing a preliminary medical assessment before investing heavily in the application process.
+                <strong>Stage 4  -  Medical Assessment:</strong> Candidates who pass the assessment centre are required to complete a CAA Class 1 Medical examination. This is a comprehensive medical assessment covering vision, hearing, cardiovascular health, and neurological function. Certain conditions are disqualifying  -  it is worth completing a preliminary medical assessment before investing heavily in the application process.
               </p>
               <p>
                 <strong>Conditional Offer:</strong> Successful candidates receive a conditional offer of a place on the programme, subject to medical clearance and security checks.
@@ -117,13 +117,13 @@ export default function EasyJetGeneration() {
           content: (
             <>
               <p>
-                The Generation easyJet MPL programme at CAE Oxford typically lasts approximately 18–22 months and is structured in four phases, as defined by the EASA MPL framework:
+                The Generation easyJet MPL programme at CAE Oxford typically lasts approximately 18-22 months and is structured in four phases, as defined by the EASA MPL framework:
               </p>
               <ul>
-                <li><strong>Phase 1 — Core (Basic):</strong> Fundamental flying skills in single-engine piston aircraft. This phase covers the equivalent of PPL skills and basic instrument flying. Approximately 60–80 hours of flight time.</li>
-                <li><strong>Phase 2 — Basic Instrument:</strong> Advanced instrument flying, multi-engine operations, and the transition to more complex aircraft. ATPL theory is studied and examined during this phase.</li>
-                <li><strong>Phase 3 — Intermediate (Multi-Crew):</strong> The transition to multi-crew jet operations begins here. Significant simulator time in the A320 family, with a strong focus on CRM, SOPs, and airline procedures. This is where the MPL route diverges most significantly from the traditional ATPL path.</li>
-                <li><strong>Phase 4 — Advanced (Line-Oriented):</strong> Full A320 type rating training, including line-oriented flight training (LOFT) scenarios. Graduates complete this phase with a full A320 type rating and are ready to begin line training with easyJet.</li>
+                <li><strong>Phase 1  -  Core (Basic):</strong> Fundamental flying skills in single-engine piston aircraft. This phase covers the equivalent of PPL skills and basic instrument flying. Approximately 60-80 hours of flight time.</li>
+                <li><strong>Phase 2  -  Basic Instrument:</strong> Advanced instrument flying, multi-engine operations, and the transition to more complex aircraft. ATPL theory is studied and examined during this phase.</li>
+                <li><strong>Phase 3  -  Intermediate (Multi-Crew):</strong> The transition to multi-crew jet operations begins here. Significant simulator time in the A320 family, with a strong focus on CRM, SOPs, and airline procedures. This is where the MPL route diverges most significantly from the traditional ATPL path.</li>
+                <li><strong>Phase 4  -  Advanced (Line-Oriented):</strong> Full A320 type rating training, including line-oriented flight training (LOFT) scenarios. Graduates complete this phase with a full A320 type rating and are ready to begin line training with easyJet.</li>
               </ul>
               <p>
                 Throughout the programme, cadets are assessed continuously against defined competency standards. The MPL framework uses a competency-based assessment model rather than purely hours-based progression, meaning you advance when you demonstrate the required competencies rather than simply accumulating flight time.
@@ -136,19 +136,19 @@ export default function EasyJetGeneration() {
           content: (
             <>
               <p>
-                The Generation easyJet programme costs €102,942 at CAE Oxford (billed in euros; approximately £87,000–£90,000 at current exchange rates). This is self-funded — easyJet does not pay for your training. The cost covers the full MPL programme including all flight training, simulator time, ground school, examinations, and the A320 type rating.
+                The Generation easyJet programme costs EUR102,942 at CAE Oxford (billed in euros; approximately £87,000-£90,000 at current exchange rates). This is self-funded  -  easyJet does not pay for your training. The cost covers the full MPL programme including all flight training, simulator time, ground school, examinations, and the A320 type rating.
               </p>
               <p>
                 A second pathway was added in 2026 via <strong>Skyborne Airline Academy</strong>, which delivers an ATPL-based (rather than MPL-based) route to easyJet. The Skyborne pathway results in a frozen ATPL rather than an MPL, giving graduates greater licence portability from day one. Pricing for the Skyborne pathway is available directly from Skyborne.
               </p>
               <p>
-                Additional costs to budget for include living expenses during training (approximately £12,000–£18,000 over the training period) and the Class 1 Medical examination (approximately £500–£800 for the initial full assessment).
+                Additional costs to budget for include living expenses during training (approximately £12,000-£18,000 over the training period) and the Class 1 Medical examination (approximately £500-£800 for the initial full assessment).
               </p>
               <p>
-                CAE Oxford offers financing options, and specialist aviation lenders such as Lendwise offer pilot training loans. Note that as of 2026, no UK high-street bank offers a dedicated pilot training loan product — BALPA has confirmed this. Interest rates and terms vary — compare carefully and seek independent financial advice before committing. The guaranteed job offer at the end of the programme significantly improves the risk profile of this investment compared to self-sponsored training.
+                CAE Oxford offers financing options, and specialist aviation lenders such as Lendwise offer pilot training loans. Note that as of 2026, no UK high-street bank offers a dedicated pilot training loan product  -  BALPA has confirmed this. Interest rates and terms vary  -  compare carefully and seek independent financial advice before committing. The guaranteed job offer at the end of the programme significantly improves the risk profile of this investment compared to self-sponsored training.
               </p>
               <p>
-                A First Officer salary at easyJet starts at approximately £65,000–£100,000 (including allowances and sector pay), rising with seniority. Captain salaries at easyJet range from £170,000–£220,000 at the top of the scale. The financial return on the training investment is strong, particularly given the current pilot shortage environment.
+                A First Officer salary at easyJet starts at approximately £65,000-£100,000 (including allowances and sector pay), rising with seniority. Captain salaries at easyJet range from £170,000-£220,000 at the top of the scale. The financial return on the training investment is strong, particularly given the current pilot shortage environment.
               </p>
             </>
           ),
@@ -161,13 +161,13 @@ export default function EasyJetGeneration() {
                 Both the Generation easyJet programme and the BA Speedbird Academy are excellent cadet pathways with guaranteed job offers, but they suit different candidates and have different characteristics worth understanding.
               </p>
               <p>
-                <strong>Licence type:</strong> Speedbird Academy graduates receive a frozen ATPL — the most flexible commercial pilot licence. Generation easyJet graduates receive an MPL, which is initially type-specific and operator-specific. If you value licence flexibility from day one, the Speedbird Academy has an advantage. If you are committed to an easyJet career and the MPL's limitations don't concern you, the Generation programme is equally valid.
+                <strong>Licence type:</strong> Speedbird Academy graduates receive a frozen ATPL  -  the most flexible commercial pilot licence. Generation easyJet graduates receive an MPL, which is initially type-specific and operator-specific. If you value licence flexibility from day one, the Speedbird Academy has an advantage. If you are committed to an easyJet career and the MPL's limitations don't concern you, the Generation programme is equally valid.
               </p>
               <p>
-                <strong>Cost:</strong> The Generation easyJet programme costs €102,942 (self-funded). The BA Speedbird Academy is <strong>fully funded by British Airways</strong> — meaning BA covers all training costs. On a cost-to-you basis, the Speedbird Academy is significantly cheaper if you are accepted.
+                <strong>Cost:</strong> The Generation easyJet programme costs EUR102,942 (self-funded). The BA Speedbird Academy is <strong>fully funded by British Airways</strong>  -  meaning BA covers all training costs. On a cost-to-you basis, the Speedbird Academy is significantly cheaper if you are accepted.
               </p>
               <p>
-                <strong>Competition:</strong> The Speedbird Academy is generally considered more competitive (1–2% acceptance rate vs approximately 2–4% for Generation easyJet). Both are highly selective, but if you are applying to both, the Generation programme may offer a slightly higher probability of success.
+                <strong>Competition:</strong> The Speedbird Academy is generally considered more competitive (1-2% acceptance rate vs approximately 2-4% for Generation easyJet). Both are highly selective, but if you are applying to both, the Generation programme may offer a slightly higher probability of success.
               </p>
               <p>
                 <strong>Airline career:</strong> British Airways and easyJet are both excellent employers, but they offer different careers. BA is predominantly long-haul with a prestige factor that is hard to match. easyJet is predominantly short-haul with a modern fleet, strong culture, and bases across the UK. Consider which airline environment suits your lifestyle preferences.

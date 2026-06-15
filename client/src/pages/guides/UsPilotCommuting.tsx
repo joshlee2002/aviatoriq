@@ -46,7 +46,7 @@ export default function UsPilotCommuting() {
           heading: "The Financial Impact: Crash Pads and Travel Costs",
           content: (
             <>
-              <p>To comply with rest requirements and manage the logistics of commuting, many pilots utilize "crash pads"—shared housing arrangements located near their domicile airports. Crash pads offer a cost-effective alternative to hotels or maintaining a second apartment.</p>
+              <p>To comply with rest requirements and manage the logistics of commuting, many pilots utilize "crash pads" - shared housing arrangements located near their domicile airports. Crash pads offer a cost-effective alternative to hotels or maintaining a second apartment.</p>
               <p>In 2026, the cost of a crash pad varies significantly depending on the domicile city, the type of accommodation (hot bed vs. cold bed, private room vs. bunk), and proximity to the airport.</p>
               <p><strong>Estimated Monthly Crash Pad Costs (2026)</strong></p>
               <div className="overflow-x-auto my-4">
@@ -63,43 +63,43 @@ export default function UsPilotCommuting() {
                     <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Atlanta, GA</td>
                       <td className="px-4 py-3">ATL</td>
-                      <td className="px-4 py-3">$300–$500</td>
+                      <td className="px-4 py-3">{">"}$300-$500</td>
                       <td className="px-4 py-3">High availability; Delta hub</td>
                     </tr>
                     <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Chicago, IL</td>
                       <td className="px-4 py-3">ORD / MDW</td>
-                      <td className="px-4 py-3">$350–$600</td>
+                      <td className="px-4 py-3">{">"}$350-$600</td>
                       <td className="px-4 py-3">Higher costs near ORD</td>
                     </tr>
                     <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Dallas, TX</td>
                       <td className="px-4 py-3">DFW</td>
-                      <td className="px-4 py-3">$300–$450</td>
+                      <td className="px-4 py-3">{">"}$300-$450</td>
                       <td className="px-4 py-3">Sprawling metroplex; transport needed</td>
                     </tr>
                     <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Los Angeles, CA</td>
                       <td className="px-4 py-3">LAX</td>
-                      <td className="px-4 py-3">$450–$750</td>
+                      <td className="px-4 py-3">{">"}$450-$750</td>
                       <td className="px-4 py-3">High cost of living area</td>
                     </tr>
                     <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">New York, NY</td>
                       <td className="px-4 py-3">JFK / LGA / EWR</td>
-                      <td className="px-4 py-3">$500–$800</td>
+                      <td className="px-4 py-3">{">"}$500-$800</td>
                       <td className="px-4 py-3">Premium pricing; limited space</td>
                     </tr>
                     <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Miami, FL</td>
                       <td className="px-4 py-3">MIA</td>
-                      <td className="px-4 py-3">$400–$600</td>
+                      <td className="px-4 py-3">{">"}$400-$600</td>
                       <td className="px-4 py-3">Seasonal fluctuations</td>
                     </tr>
                     <tr className="border-t border-white/10 hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Denver, CO</td>
                       <td className="px-4 py-3">DEN</td>
-                      <td className="px-4 py-3">$350–$550</td>
+                      <td className="px-4 py-3">{">"}$350-$550</td>
                       <td className="px-4 py-3">Growing hub; increasing demand</td>
                     </tr>
                   </tbody>
@@ -115,7 +115,7 @@ export default function UsPilotCommuting() {
           content: (
             <>
               <p>The foundation of a pilot's career is laid during their initial flight training. The choice between FAA Part 61 and Part 141 flight schools can indirectly influence a pilot's preparedness for the commuting lifestyle.</p>
-              <p><strong>Part 61 Training:</strong> Known for its flexibility, Part 61 allows students to train at their own pace, often fitting lessons around a full-time job or a long commute to the airport. This path requires a minimum of 250 hours for a Commercial Pilot License. The inherent flexibility of Part 61 teaches time management and adaptability—skills crucial for a commuting airline pilot who must constantly adjust to changing flight schedules and standby availability.</p>
+              <p><strong>Part 61 Training:</strong> Known for its flexibility, Part 61 allows students to train at their own pace, often fitting lessons around a full-time job or a long commute to the airport. This path requires a minimum of 250 hours for a Commercial Pilot License. The inherent flexibility of Part 61 teaches time management and adaptability - skills crucial for a commuting airline pilot who must constantly adjust to changing flight schedules and standby availability.</p>
               <p><strong>Part 141 Training:</strong> This path is highly structured, utilizing an FAA-approved syllabus with strict stage checks. It is designed for full-time, career-oriented students and allows for a Commercial Pilot License in as few as 190 hours. While less flexible for a commuting student, the rigorous structure of Part 141 closely mirrors the disciplined environment of airline training (Part 121), preparing pilots for the strict adherence to schedules and regulations they will face in their careers.</p>
               <p>For a student commuting to flight school, Part 61 often provides the necessary leeway to manage weather cancellations and travel logistics. However, the structured discipline of Part 141 is invaluable preparation for the rigid operational environment of the airlines.</p>
             </>

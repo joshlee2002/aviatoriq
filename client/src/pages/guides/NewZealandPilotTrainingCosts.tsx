@@ -53,12 +53,12 @@ export default function NewZealandPilotTrainingCosts() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hours (Aircraft & Instructor)</td><td className="px-4 py-3 text-white/80">$25,000 - $35,000</td><td className="px-4 py-3 text-white/80">Based on 50-60 hours at $500-$600/hour</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ground School & Materials</td><td className="px-4 py-3 text-white/80">$2,000 - $4,000</td><td className="px-4 py-3 text-white/80">Includes textbooks, charts, and online resources</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CAA Exams (6 theory subjects)</td><td className="px-4 py-3 text-white/80">$500 - $800</td><td className="px-4 py-3 text-white/80">Per attempt, re-sit fees extra</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Test Fee</td><td className="px-4 py-3 text-white/80">$800 - $1,200</td><td className="px-4 py-3 text-white/80">Examiner fee and aircraft hire</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Class 2 Medical Certificate</td><td className="px-4 py-3 text-white/80">$500 - $800</td><td className="px-4 py-3 text-white/80">Initial examination</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Application Fee (CAA)</td><td className="px-4 py-3 text-white/80">$130 - $140</td><td className="px-4 py-3 text-white/80">For NZ residents</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hours (Aircraft & Instructor)</td><td className="px-4 py-3 text-white/80">{">"}$25,000 - $35,000</td><td className="px-4 py-3 text-white/80">Based on 50-60 hours at $500-$600/hour</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ground School & Materials</td><td className="px-4 py-3 text-white/80">{">"}$2,000 - $4,000</td><td className="px-4 py-3 text-white/80">Includes textbooks, charts, and online resources</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CAA Exams (6 theory subjects)</td><td className="px-4 py-3 text-white/80">{">"}$500 - $800</td><td className="px-4 py-3 text-white/80">Per attempt, re-sit fees extra</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Test Fee</td><td className="px-4 py-3 text-white/80">{">"}$800 - $1,200</td><td className="px-4 py-3 text-white/80">Examiner fee and aircraft hire</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Class 2 Medical Certificate</td><td className="px-4 py-3 text-white/80">{">"}$500 - $800</td><td className="px-4 py-3 text-white/80">Initial examination</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Application Fee (CAA)</td><td className="px-4 py-3 text-white/80">{">"}$130 - $140</td><td className="px-4 py-3 text-white/80">For NZ residents</td></tr>
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total PPL Estimate</strong></td><td className="px-4 py-3 text-white/80"><strong>$28,930 - $40,940</strong></td><td className="px-4 py-3 text-white/80"></td></tr>
                 </tbody>
               </table>
@@ -70,11 +70,11 @@ export default function NewZealandPilotTrainingCosts() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hours (Aircraft & Instructor)</td><td className="px-4 py-3 text-white/80">$70,000 - $100,000</td><td className="px-4 py-3 text-white/80">Additional 150 hours beyond PPL, often in more complex aircraft</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ground School & Materials</td><td className="px-4 py-3 text-white/80">$5,000 - $8,000</td><td className="px-4 py-3 text-white/80">Advanced theory for CPL subjects</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CAA Exams (7 theory subjects)</td><td className="px-4 py-3 text-white/80">$600 - $1,000</td><td className="px-4 py-3 text-white/80">Per attempt</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Test Fee</td><td className="px-4 py-3 text-white/80">$1,000 - $1,500</td><td className="px-4 py-3 text-white/80">Examiner fee and aircraft hire</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Class 1 Medical Certificate</td><td className="px-4 py-3 text-white/80">$600 - $900</td><td className="px-4 py-3 text-white/80">Required for CPL</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hours (Aircraft & Instructor)</td><td className="px-4 py-3 text-white/80">{">"}$70,000 - $100,000</td><td className="px-4 py-3 text-white/80">Additional 150 hours beyond PPL, often in more complex aircraft</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ground School & Materials</td><td className="px-4 py-3 text-white/80">{">"}$5,000 - $8,000</td><td className="px-4 py-3 text-white/80">Advanced theory for CPL subjects</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CAA Exams (7 theory subjects)</td><td className="px-4 py-3 text-white/80">{">"}$600 - $1,000</td><td className="px-4 py-3 text-white/80">Per attempt</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Test Fee</td><td className="px-4 py-3 text-white/80">{">"}$1,000 - $1,500</td><td className="px-4 py-3 text-white/80">Examiner fee and aircraft hire</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Class 1 Medical Certificate</td><td className="px-4 py-3 text-white/80">{">"}$600 - $900</td><td className="px-4 py-3 text-white/80">Required for CPL</td></tr>
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total CPL (Post-PPL) Estimate</strong></td><td className="px-4 py-3 text-white/80"><strong>$77,200 - $111,400</strong></td><td className="px-4 py-3 text-white/80"></td></tr>
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total PPL to CPL (Overall)</strong></td><td className="px-4 py-3 text-white/80"><strong>$106,130 - $152,340</strong></td><td className="px-4 py-3 text-white/80">Includes PPL costs</td></tr>
                 </tbody>
@@ -87,7 +87,7 @@ export default function NewZealandPilotTrainingCosts() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating (MEIR)</td><td className="px-4 py-3 text-white/80">$25,000 - $35,000</td><td className="px-4 py-3 text-white/80">Includes flight time, simulator, and instruction</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating (MEIR)</td><td className="px-4 py-3 text-white/80">{">"}$25,000 - $35,000</td><td className="px-4 py-3 text-white/80">Includes flight time, simulator, and instruction</td></tr>
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total MEIR Estimate</strong></td><td className="px-4 py-3 text-white/80"><strong>$25,000 - $35,000</strong></td><td className="px-4 py-3 text-white/80"></td></tr>
                 </tbody>
               </table>
@@ -98,8 +98,8 @@ export default function NewZealandPilotTrainingCosts() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATPL Theory Course</td><td className="px-4 py-3 text-white/80">$5,000 - $10,000</td><td className="px-4 py-3 text-white/80">Intensive ground school for 7 subjects</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CAA Exams (7 theory subjects)</td><td className="px-4 py-3 text-white/80">$600 - $1,000</td><td className="px-4 py-3 text-white/80">Per attempt</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATPL Theory Course</td><td className="px-4 py-3 text-white/80">{">"}$5,000 - $10,000</td><td className="px-4 py-3 text-white/80">Intensive ground school for 7 subjects</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CAA Exams (7 theory subjects)</td><td className="px-4 py-3 text-white/80">{">"}$600 - $1,000</td><td className="px-4 py-3 text-white/80">Per attempt</td></tr>
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total ATPL Theory Estimate</strong></td><td className="px-4 py-3 text-white/80"><strong>$5,600 - $11,000</strong></td><td className="px-4 py-3 text-white/80"></td></tr>
                 </tbody>
               </table>

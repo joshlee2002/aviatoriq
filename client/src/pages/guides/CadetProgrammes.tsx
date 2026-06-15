@@ -6,20 +6,20 @@ export default function CadetProgrammes() {
   return (
     <GuideLayout
       title="UK Airline Cadet Pilot Programmes 2026: The Complete Guide"
-      subtitle="Every sponsored cadet scheme in the UK — BA Speedbird, easyJet Generation, Jet2FlightPath, Ryanair, Wizz Air — with real costs, places, timelines, bonds, and current application status."
+      subtitle="Every sponsored cadet scheme in the UK  -  BA Speedbird, easyJet Generation, Jet2FlightPath, Ryanair, Wizz Air  -  with real costs, places, timelines, bonds, and current application status."
       canonical="/guides/cadet-pilot-programmes-uk"
-      metaDescription="UK airline cadet programmes 2026. BA Speedbird Academy (fully funded, 160 places, 2026 window closed). easyJet Generation MPL (€102,942 self-funded via CAE). Jet2FlightPath (fully funded, Leading Edge Aviation). Ryanair cadet (self-funded). Wizz Air pre-financed. Side-by-side comparison table."
+      metaDescription="UK airline cadet programmes 2026. BA Speedbird Academy (fully funded, 160 places, 2026 window closed). easyJet Generation MPL (EUR102,942 self-funded via CAE). Jet2FlightPath (fully funded, Leading Edge Aviation). Ryanair cadet (self-funded). Wizz Air pre-financed. Side-by-side comparison table."
       readTime="14 min read"
       heroImage="/manus-storage/cadet-programme_7f3a2c9e.jpg"
       ctaHref="/tools/cadet-eligibility"
       ctaText="Check your cadet eligibility"
       scopeBanner={<GuideScopeBanner scope="This guide covers UK airline cadet programmes only. For US cadet routes, see the United Aviate Program guide." usHref="/us/guides/united-aviate-program" usLabel="View USA cadet programmes →" />}
       faqSchema={[
-        { question: "What are the UK airline cadet programmes in 2026?", answer: "The main UK airline cadet programmes in 2026 are: BA Speedbird Academy (fully funded, ~160 places, 2026 window closed — apply April 2027), easyJet Generation Pilot MPL via CAE (self-funded at €102,942), easyJet Skyborne FlightCrew Futures ATPL (self-funded, ~£129,000, announced April 2026), Jet2FlightPath via Leading Edge Aviation (fully funded, ~20 places), Ryanair mentored cadet (self-funded via FTEJerez/Bartolini/MATS), and Wizz Air Pilot Academy (pre-financed, €14,000 upfront)." },
-        { question: "How competitive is the BA Speedbird Academy?", answer: "Extremely competitive. The 2026 intake received over 20,000 applications for approximately 160 places — an acceptance rate of under 1%. It is widely considered the most competitive cadet programme in the UK. The 2026 application window opened 14 April and closed 23 April 2026. The next window is expected to open in April 2027." },
-        { question: "Is the easyJet Generation Pilot programme fully funded?", answer: "No — this is a common misconception. The easyJet Generation Pilot MPL programme via CAE is self-funded at €102,942 (approximately £88,000). You pay for training yourself. What you get in return is a structured pathway with a conditional easyJet First Officer position at the end, provided you meet training standards. It is not a sponsored or funded programme." },
-        { question: "Do I need a degree to apply for a cadet programme?", answer: "No. Most UK cadet programmes only require completed secondary education — typically 5 GCSEs at grade C/4 or higher, including Maths, English, and a Science. No degree or A-levels required. BA Speedbird requires 6 GCSEs. None require a university degree." },
-        { question: "What is the difference between a funded and self-funded cadet programme?", answer: "Funded programmes (BA Speedbird, Jet2FlightPath) cover all training costs with no upfront payment — usually in exchange for a bond (commitment to stay with the airline for several years). Self-funded programmes (easyJet Generation MPL, Ryanair mentored cadet) require you to pay for training yourself, but provide a structured pathway and conditional job offer. Wizz Air sits in between — you pay €14,000 upfront and repay the rest via salary deductions." },
+        { question: "What are the UK airline cadet programmes in 2026?", answer: "The main UK airline cadet programmes in 2026 are: BA Speedbird Academy (fully funded, ~160 places, 2026 window closed  -  apply April 2027), easyJet Generation Pilot MPL via CAE (self-funded at EUR102,942), easyJet Skyborne FlightCrew Futures ATPL (self-funded, ~£129,000, announced April 2026), Jet2FlightPath via Leading Edge Aviation (fully funded, ~20 places), Ryanair mentored cadet (self-funded via FTEJerez/Bartolini/MATS), and Wizz Air Pilot Academy (pre-financed, EUR14,000 upfront)." },
+        { question: "How competitive is the BA Speedbird Academy?", answer: "Extremely competitive. The 2026 intake received over 20,000 applications for approximately 160 places  -  an acceptance rate of under 1%. It is widely considered the most competitive cadet programme in the UK. The 2026 application window opened 14 April and closed 23 April 2026. The next window is expected to open in April 2027." },
+        { question: "Is the easyJet Generation Pilot programme fully funded?", answer: "No  -  this is a common misconception. The easyJet Generation Pilot MPL programme via CAE is self-funded at EUR102,942 (approximately £88,000). You pay for training yourself. What you get in return is a structured pathway with a conditional easyJet First Officer position at the end, provided you meet training standards. It is not a sponsored or funded programme." },
+        { question: "Do I need a degree to apply for a cadet programme?", answer: "No. Most UK cadet programmes only require completed secondary education  -  typically 5 GCSEs at grade C/4 or higher, including Maths, English, and a Science. No degree or A-levels required. BA Speedbird requires 6 GCSEs. None require a university degree." },
+        { question: "What is the difference between a funded and self-funded cadet programme?", answer: "Funded programmes (BA Speedbird, Jet2FlightPath) cover all training costs with no upfront payment  -  usually in exchange for a bond (commitment to stay with the airline for several years). Self-funded programmes (easyJet Generation MPL, Ryanair mentored cadet) require you to pay for training yourself, but provide a structured pathway and conditional job offer. Wizz Air sits in between  -  you pay EUR14,000 upfront and repay the rest via salary deductions." },
         { question: "When does the BA Speedbird Academy open for applications?", answer: "The 2026 application window opened on 14 April 2026 and closed on 23 April 2026. The next window is expected to open in April 2027. Register for job alerts on the BA Careers website to be notified when applications reopen." },
       ]}
       sections={[
@@ -51,7 +51,7 @@ export default function CadetProgrammes() {
                       <td className="px-4 py-3 text-green-400">Fully funded</td>
                       <td className="px-4 py-3">£0 upfront</td>
                       <td className="px-4 py-3">~160</td>
-                      <td className="px-4 py-3">18–24 months</td>
+                      <td className="px-4 py-3">18-24 months</td>
                       <td className="px-4 py-3">5 years</td>
                       <td className="px-4 py-3 text-yellow-400">Window closed (April 2026)</td>
                     </tr>
@@ -69,8 +69,8 @@ export default function CadetProgrammes() {
                       <td className="px-4 py-3 font-medium text-white">Generation easyJet (MPL)</td>
                       <td className="px-4 py-3">easyJet</td>
                       <td className="px-4 py-3 text-red-400">Self-funded</td>
-                      <td className="px-4 py-3">€102,942 (~£88k)</td>
-                      <td className="px-4 py-3">~30–50</td>
+                      <td className="px-4 py-3">EUR102,942 (~£88k)</td>
+                      <td className="px-4 py-3">~30-50</td>
                       <td className="px-4 py-3">~24 months</td>
                       <td className="px-4 py-3">None</td>
                       <td className="px-4 py-3 text-green-400">Open (CAE, May 2026)</td>
@@ -83,13 +83,13 @@ export default function CadetProgrammes() {
                       <td className="px-4 py-3">~20/intake</td>
                       <td className="px-4 py-3">~18 months</td>
                       <td className="px-4 py-3">None</td>
-                      <td className="px-4 py-3 text-green-400">New — launched April 2026</td>
+                      <td className="px-4 py-3 text-green-400">New  -  launched April 2026</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Ryanair Mentored Cadet</td>
                       <td className="px-4 py-3">Ryanair</td>
                       <td className="px-4 py-3 text-red-400">Self-funded</td>
-                      <td className="px-4 py-3">£47,000–£65,000</td>
+                      <td className="px-4 py-3">£47,000-£65,000</td>
                       <td className="px-4 py-3">Open</td>
                       <td className="px-4 py-3">~18 months</td>
                       <td className="px-4 py-3">None</td>
@@ -99,7 +99,7 @@ export default function CadetProgrammes() {
                       <td className="px-4 py-3 font-medium text-white">Wizz Air Pilot Academy</td>
                       <td className="px-4 py-3">Wizz Air</td>
                       <td className="px-4 py-3 text-yellow-400">Pre-financed</td>
-                      <td className="px-4 py-3">€14,000 upfront</td>
+                      <td className="px-4 py-3">EUR14,000 upfront</td>
                       <td className="px-4 py-3">Varies</td>
                       <td className="px-4 py-3">~24 months</td>
                       <td className="px-4 py-3">5 years</td>
@@ -113,7 +113,7 @@ export default function CadetProgrammes() {
                       <td className="px-4 py-3">~20</td>
                       <td className="px-4 py-3">~24 months</td>
                       <td className="px-4 py-3">TBC</td>
-                      <td className="px-4 py-3 text-red-400">Paused — no 2026 intake</td>
+                      <td className="px-4 py-3 text-red-400">Paused  -  no 2026 intake</td>
                     </tr>
                   </tbody>
                 </table>
@@ -125,20 +125,20 @@ export default function CadetProgrammes() {
           ),
         },
         {
-          heading: "Why Cadet Programmes Matter — And What They Actually Offer",
+          heading: "Why Cadet Programmes Matter  -  And What They Actually Offer",
           content: (
             <>
               <p>
                 Before you commit to self-funded training, you should seriously consider applying to airline cadet programmes. These programmes offer something that no amount of self-funded training can: a <strong>conditional job offer before you start</strong>.
               </p>
               <p>
-                When you train self-funded, you spend £80,000–£120,000 and then compete in the open market for a First Officer position. When you train through a funded cadet programme, you know before you start that a job is waiting at the end — provided you meet the training standards.
+                When you train self-funded, you spend £80,000-£120,000 and then compete in the open market for a First Officer position. When you train through a funded cadet programme, you know before you start that a job is waiting at the end  -  provided you meet the training standards.
               </p>
               <p>
-                The catch is that funded cadet programmes are intensely competitive. The BA Speedbird Academy received over 20,000 applications for approximately 160 places in 2026 — an acceptance rate of under 1% [1]. If you are rejected, you are not barred from the airlines; many successful pilots trained self-funded. But if you can secure a funded cadet place, the financial security it provides is significant.
+                The catch is that funded cadet programmes are intensely competitive. The BA Speedbird Academy received over 20,000 applications for approximately 160 places in 2026  -  an acceptance rate of under 1% [1]. If you are rejected, you are not barred from the airlines; many successful pilots trained self-funded. But if you can secure a funded cadet place, the financial security it provides is significant.
               </p>
               <p>
-                It is also important to understand the difference between a <strong>funded</strong> programme (BA, Jet2) and a <strong>structured pathway</strong> programme (easyJet Generation, Ryanair mentored). The latter still requires you to pay for training — the airline is providing a pathway and conditional job offer, not funding.
+                It is also important to understand the difference between a <strong>funded</strong> programme (BA, Jet2) and a <strong>structured pathway</strong> programme (easyJet Generation, Ryanair mentored). The latter still requires you to pay for training  -  the airline is providing a pathway and conditional job offer, not funding.
               </p>
             </>
           ),
@@ -148,19 +148,19 @@ export default function CadetProgrammes() {
           content: (
             <>
               <p>
-                The BA Speedbird Academy is the only fully funded cadet programme at a major UK network carrier. British Airways covers 100% of training costs — no upfront payment, no loan required. The 2026 intake funded approximately 160 places, with British Airways investing £18 million in the programme. [1]
+                The BA Speedbird Academy is the only fully funded cadet programme at a major UK network carrier. British Airways covers 100% of training costs  -  no upfront payment, no loan required. The 2026 intake funded approximately 160 places, with British Airways investing £18 million in the programme. [1]
               </p>
               <p>
-                <strong>Training:</strong> Full integrated ATPL training (18–24 months) at Skyborne Airline Academy (Gloucestershire and Vero Beach, Florida) or FTEJerez (Spain). On successful graduation, you join BA as a First Officer on the A320 short-haul fleet at Gatwick or Heathrow.
+                <strong>Training:</strong> Full integrated ATPL training (18-24 months) at Skyborne Airline Academy (Gloucestershire and Vero Beach, Florida) or FTEJerez (Spain). On successful graduation, you join BA as a First Officer on the A320 short-haul fleet at Gatwick or Heathrow.
               </p>
               <p>
-                <strong>The bond:</strong> A 5-year bond (you must stay at BA for 5 years or repay a portion of training costs). A 6-year short-haul freeze applies — you cannot bid for long-haul fleets for 6 years after joining.
+                <strong>The bond:</strong> A 5-year bond (you must stay at BA for 5 years or repay a portion of training costs). A 6-year short-haul freeze applies  -  you cannot bid for long-haul fleets for 6 years after joining.
               </p>
               <p>
-                <strong>Entry requirements:</strong> 6 GCSEs at grade 4–9 (A*–C) including Maths, English Language, and a Science. No degree, A-levels, or prior flying experience required. Age: must be 18 by training start, no upper age limit stated. Height 1.57m–1.91m. Right to work in the UK without sponsorship. EASA Class 1 Medical.
+                <strong>Entry requirements:</strong> 6 GCSEs at grade 4-9 (A*-C) including Maths, English Language, and a Science. No degree, A-levels, or prior flying experience required. Age: must be 18 by training start, no upper age limit stated. Height 1.57m-1.91m. Right to work in the UK without sponsorship. EASA Class 1 Medical.
               </p>
               <p>
-                <strong>Selection process:</strong> Online application → cognitive aptitude tests (numerical, verbal, spatial reasoning) → assessment centre (group exercise, interview, further aptitude tests) → simulator assessment → final panel interview. The process takes approximately 3–6 months from application to offer.
+                <strong>Selection process:</strong> Online application → cognitive aptitude tests (numerical, verbal, spatial reasoning) → assessment centre (group exercise, interview, further aptitude tests) → simulator assessment → final panel interview. The process takes approximately 3-6 months from application to offer.
               </p>
               <p>
                 <strong>2026 status:</strong> The application window opened 14 April 2026 and closed 23 April 2026. The next window is expected to open in April 2027. Register for job alerts on the BA Careers website (careers.ba.com) to be notified when applications reopen. [1]
@@ -173,7 +173,7 @@ export default function CadetProgrammes() {
           content: (
             <>
               <p>
-                Jet2FlightPath is a fully funded cadet programme — British Airways' main competition for the "zero upfront cost" category. It relaunched in February 2026 in partnership with <strong>Leading Edge Aviation</strong> (Oxford, UK + Alhama de Murcia, Spain), replacing the previous Skyborne partnership. [3]
+                Jet2FlightPath is a fully funded cadet programme  -  British Airways' main competition for the "zero upfront cost" category. It relaunched in February 2026 in partnership with <strong>Leading Edge Aviation</strong> (Oxford, UK + Alhama de Murcia, Spain), replacing the previous Skyborne partnership. [3]
               </p>
               <p>
                 <strong>What you get:</strong> Fully funded integrated ATPL training (18 months) at Leading Edge Aviation. A guaranteed Second Officer position at Jet2 upon successful graduation, with immediate progression to First Officer training on Boeing or Airbus aircraft at one of Jet2's 14 UK bases.
@@ -195,13 +195,13 @@ export default function CadetProgrammes() {
           content: (
             <>
               <p>
-                The easyJet Generation Pilot programme is widely misunderstood. It is <strong>not a funded programme</strong>. You pay €102,942 (approximately £88,000) for training at CAE, conducted at Brussels, Madrid, or London Gatwick. In return, you receive a structured MPL training pathway and a conditional First Officer position at easyJet upon successful graduation. [2]
+                The easyJet Generation Pilot programme is widely misunderstood. It is <strong>not a funded programme</strong>. You pay EUR102,942 (approximately £88,000) for training at CAE, conducted at Brussels, Madrid, or London Gatwick. In return, you receive a structured MPL training pathway and a conditional First Officer position at easyJet upon successful graduation. [2]
               </p>
               <p>
-                <strong>What the MPL licence means:</strong> The Multi-Crew Pilot Licence (MPL) is trained specifically for multi-crew jet operations. It is initially restricted to easyJet A320 operations. After accumulating approximately 500 hours, you can convert to a full frozen ATPL. If you leave easyJet before conversion, your licence options are limited — this is the key difference from an integrated ATPL.
+                <strong>What the MPL licence means:</strong> The Multi-Crew Pilot Licence (MPL) is trained specifically for multi-crew jet operations. It is initially restricted to easyJet A320 operations. After accumulating approximately 500 hours, you can convert to a full frozen ATPL. If you leave easyJet before conversion, your licence options are limited  -  this is the key difference from an integrated ATPL.
               </p>
               <p>
-                <strong>What's included in the €102,942:</strong> All ground, simulator, and flight training; ATPL theory exams; A-UPRT; flight bag; uniform; resits and remedial training (CAE's First Officer Quality Insurance). Not included: Class 1 Medical, accommodation, travel, iPad.
+                <strong>What's included in the EUR102,942:</strong> All ground, simulator, and flight training; ATPL theory exams; A-UPRT; flight bag; uniform; resits and remedial training (CAE's First Officer Quality Insurance). Not included: Class 1 Medical, accommodation, travel, iPad.
               </p>
               <p>
                 <strong>Entry requirements:</strong> Age 18+ by course start. Right to live and work in UK/EEA/EU/Switzerland (no visa sponsorship). 5 GCSEs grade C/4+ including Maths, English, and a Science. Minimum height 157cm. UK CAA or EASA Class 1 Medical. No previous flying experience required. Maximum 200 hours total flight time.
@@ -236,16 +236,16 @@ export default function CadetProgrammes() {
           content: (
             <>
               <p>
-                Ryanair does not offer a funded cadet programme. Instead, they partner with specific flight schools — FTEJerez (Spain), Bartolini Air (Poland), and MATS (Malta) — to offer mentored programmes where you self-fund training but receive a structured pathway directly to a Ryanair First Officer assessment.
+                Ryanair does not offer a funded cadet programme. Instead, they partner with specific flight schools  -  FTEJerez (Spain), Bartolini Air (Poland), and MATS (Malta)  -  to offer mentored programmes where you self-fund training but receive a structured pathway directly to a Ryanair First Officer assessment.
               </p>
               <p>
-                <strong>Cost:</strong> Approximately £47,000–£65,000 depending on school and location. Bartolini Air in Poland is typically the cheapest option. This is significantly cheaper than the easyJet MPL because Ryanair's mentored programme does not include a type rating — you complete the type rating after being hired.
+                <strong>Cost:</strong> Approximately £47,000-£65,000 depending on school and location. Bartolini Air in Poland is typically the cheapest option. This is significantly cheaper than the easyJet MPL because Ryanair's mentored programme does not include a type rating  -  you complete the type rating after being hired.
               </p>
               <p>
                 <strong>What you get:</strong> Training using Ryanair's standard operating procedures. Priority access to Ryanair simulator assessments upon graduation. If you pass, a First Officer position. Ryanair's acceptance rate for their own mentored programme graduates is very high.
               </p>
               <p>
-                <strong>The reality:</strong> This is not a guaranteed job offer. You pay for training, and if you pass the Ryanair assessment, you get hired. If you fail, you are a qualified commercial pilot who must find employment elsewhere. The key advantage of Ryanair is the fastest time-to-command in UK aviation — 3–5 years from joining as an FO to captain.
+                <strong>The reality:</strong> This is not a guaranteed job offer. You pay for training, and if you pass the Ryanair assessment, you get hired. If you fail, you are a qualified commercial pilot who must find employment elsewhere. The key advantage of Ryanair is the fastest time-to-command in UK aviation  -  3-5 years from joining as an FO to captain.
               </p>
             </>
           ),
@@ -255,13 +255,13 @@ export default function CadetProgrammes() {
           content: (
             <>
               <p>
-                Wizz Air offers a model that sits between fully funded and self-funded. You pay an initial fee of approximately €14,000 and Wizz Air pre-finances the remaining training costs. You repay the airline via salary deductions over your first five years of employment.
+                Wizz Air offers a model that sits between fully funded and self-funded. You pay an initial fee of approximately EUR14,000 and Wizz Air pre-finances the remaining training costs. You repay the airline via salary deductions over your first five years of employment.
               </p>
               <p>
                 <strong>What you get:</strong> Integrated ATPL training with a conditional Wizz Air First Officer position. Wizz Air is Europe's fastest-growing airline, with a rapidly expanding network of bases across the UK and Europe.
               </p>
               <p>
-                <strong>The reality:</strong> The pre-financing model means you do not need £80,000–£100,000 upfront, but you will have salary deductions for several years after joining. Wizz Air's working conditions and roster patterns are more demanding than Jet2 or BA, but the career progression can be fast given the airline's growth rate.
+                <strong>The reality:</strong> The pre-financing model means you do not need £80,000-£100,000 upfront, but you will have salary deductions for several years after joining. Wizz Air's working conditions and roster patterns are more demanding than Jet2 or BA, but the career progression can be fast given the airline's growth rate.
               </p>
             </>
           ),
@@ -296,12 +296,12 @@ export default function CadetProgrammes() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Fastest route to command</td>
                       <td className="px-4 py-3">Ryanair mentored cadet</td>
-                      <td className="px-4 py-3">3–5 years FO to captain; fastest in UK aviation</td>
+                      <td className="px-4 py-3">3-5 years FO to captain; fastest in UK aviation</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Portable licence, easyJet job offer</td>
                       <td className="px-4 py-3">easyJet FlightCrew Futures (ATPL)</td>
-                      <td className="px-4 py-3">Frozen ATPL — not restricted to easyJet if plans change</td>
+                      <td className="px-4 py-3">Frozen ATPL  -  not restricted to easyJet if plans change</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">easyJet job offer, lower cost</td>
@@ -311,7 +311,7 @@ export default function CadetProgrammes() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Low upfront, fast-growing airline</td>
                       <td className="px-4 py-3">Wizz Air Pilot Academy</td>
-                      <td className="px-4 py-3">€14k upfront; rest repaid via salary; Europe's fastest-growing LCC</td>
+                      <td className="px-4 py-3">EUR14k upfront; rest repaid via salary; Europe's fastest-growing LCC</td>
                     </tr>
                   </tbody>
                 </table>
@@ -327,10 +327,10 @@ export default function CadetProgrammes() {
           content: (
             <>
               <p className="text-xs text-white/50">
-                [1] British Airways Media Centre. "British Airways' fully-funded pilot training programme opens for applications for fourth year running." 14 April 2026. <em>mediacentre.britishairways.com</em>. Application window: 14–23 April 2026. ~160 places. BA invested £18m in the programme.<br/>
-                [2] CAE. "Generation easyJet Multi Crew Pilot Licence (MPL) Training Programme." <em>cae.com/civil-aviation/become-a-pilot/our-pilot-training-programmes/generation-easyjet-pilot-training-programme/</em>. Programme cost: €102,942. Accessed June 2026.<br/>
+                [1] British Airways Media Centre. "British Airways' fully-funded pilot training programme opens for applications for fourth year running." 14 April 2026. <em>mediacentre.britishairways.com</em>. Application window: 14-23 April 2026. ~160 places. BA invested £18m in the programme.<br/>
+                [2] CAE. "Generation easyJet Multi Crew Pilot Licence (MPL) Training Programme." <em>cae.com/civil-aviation/become-a-pilot/our-pilot-training-programmes/generation-easyjet-pilot-training-programme/</em>. Programme cost: EUR102,942. Accessed June 2026.<br/>
                 [3] Leading Edge Aviation. "Jet2 relaunches Jet2flightpath in collaboration with Leading Edge Aviation." 17 February 2026. <em>leadingedgeaviation.com/news/</em>. ~20 places. Applications opened 17 February 2026.<br/>
-                [4] Airmappr. "easyJet Pilot Application &amp; Cadet Program 2026 — Full Guide." 31 January 2026. <em>airmappr.com/articles/career/easyjet-pilot-application</em>. Skyborne FlightCrew Futures ATPL announced April 18, 2026 at Pilot Careers Live; ~£129,000 including A320 type rating.
+                [4] Airmappr. "easyJet Pilot Application &amp; Cadet Program 2026  -  Full Guide." 31 January 2026. <em>airmappr.com/articles/career/easyjet-pilot-application</em>. Skyborne FlightCrew Futures ATPL announced April 18, 2026 at Pilot Careers Live; ~£129,000 including A320 type rating.
               </p>
             </>
           ),

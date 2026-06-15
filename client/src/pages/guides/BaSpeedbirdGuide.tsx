@@ -5,7 +5,7 @@ export default function BaSpeedbirdGuide() {
   return (
     <GuideLayout
       title="BA Speedbird Academy 2026: Requirements, Acceptance Rate & How to Pass"
-      subtitle="The complete guide to British Airways' fully funded cadet programme — 160 places, 20,000+ applications, and the exact process to maximise your chances."
+      subtitle="The complete guide to British Airways' fully funded cadet programme  -  160 places, 20,000+ applications, and the exact process to maximise your chances."
       canonical="/guides/ba-speedbird-academy"
       metaDescription="BA Speedbird Academy 2026 guide. 160 places, 20,000+ applications, under 1% acceptance rate. Entry requirements, assessment process, training schools, and how to prepare."
       readTime="12 min read"
@@ -14,7 +14,7 @@ export default function BaSpeedbirdGuide() {
       ctaText="Check your eligibility"
       faqSchema={[
         { question: "Is the BA Speedbird Academy fully funded?", answer: "Yes. British Airways covers the entire cost of the training (approximately £100,000+), including accommodation and food during the training phases. You do not need to take out a loan or provide a guarantor." },
-        { question: "What is the acceptance rate for the BA Speedbird Academy?", answer: "The acceptance rate is under 1%. The 2026 intake received over 20,000 applications for approximately 160 places — an acceptance rate of around 0.8%." },
+        { question: "What is the acceptance rate for the BA Speedbird Academy?", answer: "The acceptance rate is under 1%. The 2026 intake received over 20,000 applications for approximately 160 places  -  an acceptance rate of around 0.8%." },
         { question: "What are the requirements for the BA Speedbird Academy?", answer: "You must be 17-58 years old (18 by training start), have the right to live and work in the UK without sponsorship, hold a valid passport, be fluent in English, have 6 GCSEs at grade A*-C/9-4 (including Maths, English Language and a Science), and be able to obtain a UK CAA Class 1 Medical." },
         { question: "Do I need a degree for the BA Speedbird Academy?", answer: "No. A degree is not a requirement. The minimum academic requirement is 6 GCSEs (or equivalent). BA is explicitly looking for aptitude and potential, not just academic history." },
         { question: "What bond do Speedbird Academy graduates sign?", answer: "Graduates sign a 5-year bond with British Airways and a 6-year short-haul freeze (meaning they cannot bid for long-haul fleets for 6 years after joining). Starting salary is approximately £37,000, rising with seniority." }
@@ -25,13 +25,13 @@ export default function BaSpeedbirdGuide() {
           content: (
             <>
               <p>
-                Launched in September 2023, the British Airways Speedbird Pilot Academy is the most prestigious cadet programme in the UK: a <strong>fully funded</strong> pathway that takes you from zero flight experience to the right-hand seat of a British Airways Airbus A320 — at no cost to you.
+                Launched in September 2023, the British Airways Speedbird Pilot Academy is the most prestigious cadet programme in the UK: a <strong>fully funded</strong> pathway that takes you from zero flight experience to the right-hand seat of a British Airways Airbus A320  -  at no cost to you.
               </p>
               <p>
                 Unlike traditional "sponsored" programmes where you still have to secure a £100,000 loan backed by a parent's house, BA pays the training provider directly. They cover the cost of the training, your accommodation, and your food. British Airways invested £18 million to fund up to 160 places in the 2026 intake [1].
               </p>
               <p>
-                Because it removes the financial barrier, it is also fiercely competitive. The 2026 intake received over 20,000 applications for 160 places — an acceptance rate of under 1%.
+                Because it removes the financial barrier, it is also fiercely competitive. The 2026 intake received over 20,000 applications for 160 places  -  an acceptance rate of under 1%.
               </p>
             </>
           ),
@@ -47,7 +47,7 @@ export default function BaSpeedbirdGuide() {
                 <strong>Training partners:</strong> The 2026 intake uses three training partners: Skyborne Airline Academy (Gloucestershire, UK and Vero Beach, Florida), FTEJerez (Jerez de la Frontera, Spain), and Aeros Flight Training (Gloucester, UK) as a new support partner.
               </p>
               <p>
-                <strong>Places:</strong> The 2026 intake offers 160 places, down from 200 in 2025 but up from the inaugural 60 places in 2023. BA has signalled that they plan to maintain approximately 150–200 places per year going forward.
+                <strong>Places:</strong> The 2026 intake offers 160 places, down from 200 in 2025 but up from the inaugural 60 places in 2023. BA has signalled that they plan to maintain approximately 150-200 places per year going forward.
               </p>
               <p>
                 <strong>Upper age limit:</strong> The stated upper age limit is now 58 (up from 55 in earlier intakes), though in practice the vast majority of successful applicants are under 35.
@@ -74,7 +74,7 @@ export default function BaSpeedbirdGuide() {
                   <tbody className="divide-y divide-white/10 text-white/80">
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Age</td>
-                      <td className="px-4 py-3">17–58 (must be 18 by training start)</td>
+                      <td className="px-4 py-3">17-58 (must be 18 by training start)</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Right to work</td>
@@ -82,7 +82,7 @@ export default function BaSpeedbirdGuide() {
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Education</td>
-                      <td className="px-4 py-3">6 GCSEs at grade 4–9 (A*–C) including Maths, English Language, and a Science</td>
+                      <td className="px-4 py-3">6 GCSEs at grade 4-9 (A*-C) including Maths, English Language, and a Science</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Medical</td>
@@ -90,7 +90,7 @@ export default function BaSpeedbirdGuide() {
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Height</td>
-                      <td className="px-4 py-3">1.57m–1.91m (5'2"–6'3")</td>
+                      <td className="px-4 py-3">1.57m-1.91m (5'2"-6'3")</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Flying experience</td>
@@ -110,19 +110,19 @@ export default function BaSpeedbirdGuide() {
                 The assessment process is designed to whittle 20,000+ applicants down to 160. It is heavily weighted towards objective data in the early stages.
               </p>
               <p>
-                <strong>Stage 1 — Online Application:</strong> A standard application form checking you meet the minimum requirements, followed by situational judgement questions assessing your alignment with BA's values.
+                <strong>Stage 1  -  Online Application:</strong> A standard application form checking you meet the minimum requirements, followed by situational judgement questions assessing your alignment with BA's values.
               </p>
               <p>
-                <strong>Stage 2 — Online Aptitude Tests:</strong> This is where the vast majority of applicants fail. You will sit a battery of cognitive tests (typically provided by cut-e/Aon or Symbiotics). These test spatial awareness, reaction time, multi-tasking, working memory, and numerical reasoning. You cannot wing these. Practice daily for at least 6 weeks before the test window opens.
+                <strong>Stage 2  -  Online Aptitude Tests:</strong> This is where the vast majority of applicants fail. You will sit a battery of cognitive tests (typically provided by cut-e/Aon or Symbiotics). These test spatial awareness, reaction time, multi-tasking, working memory, and numerical reasoning. You cannot wing these. Practice daily for at least 6 weeks before the test window opens.
               </p>
               <p>
-                <strong>Stage 3 — Video Interview:</strong> An asynchronous video interview where you record answers to pre-set questions. Questions focus on motivation, resilience, and evidence of leadership or teamwork.
+                <strong>Stage 3  -  Video Interview:</strong> An asynchronous video interview where you record answers to pre-set questions. Questions focus on motivation, resilience, and evidence of leadership or teamwork.
               </p>
               <p>
-                <strong>Stage 4 — Assessment Centre:</strong> Held in person at BA's headquarters or a partner school. Involves group exercises (teamwork and communication), a technical/HR interview panel, and sometimes a basic simulator assessment (which tests your ability to learn and take instruction, not your flying ability).
+                <strong>Stage 4  -  Assessment Centre:</strong> Held in person at BA's headquarters or a partner school. Involves group exercises (teamwork and communication), a technical/HR interview panel, and sometimes a basic simulator assessment (which tests your ability to learn and take instruction, not your flying ability).
               </p>
               <p>
-                The entire process typically takes 3–6 months from application to offer.
+                The entire process typically takes 3-6 months from application to offer.
               </p>
             </>
           ),
@@ -135,7 +135,7 @@ export default function BaSpeedbirdGuide() {
                 If you receive a conditional offer, you must pass a full UK CAA Class 1 Medical before training begins. Assuming you pass, you join a cohort at either Skyborne or FTEJerez for approximately 18 months of integrated ATPL training.
               </p>
               <p>
-                Upon successful graduation, you join British Airways as a First Officer on the A320 short-haul fleet at either London Gatwick or London Heathrow. Your starting salary is approximately £37,000 — significantly below the standard BA FO starting salary, reflecting the 5-year bond and 6-year short-haul freeze.
+                Upon successful graduation, you join British Airways as a First Officer on the A320 short-haul fleet at either London Gatwick or London Heathrow. Your starting salary is approximately £37,000  -  significantly below the standard BA FO starting salary, reflecting the 5-year bond and 6-year short-haul freeze.
               </p>
               <p>
                 After 5 years (the bond period), you are free to bid for other fleets, apply to other airlines, or negotiate your contract. Many Speedbird graduates use the BA experience as a springboard to long-haul positions within BA itself, or to other carriers.

@@ -70,7 +70,7 @@ export default function PilotAptitudeTestPrep() {
               </p>
               <p>
                 <strong>3. Numerical Reasoning:</strong> Mental arithmetic, speed, distance, and time calculations, and currency conversions. You are usually not allowed a calculator.
-                <br/><em>The Strategy:</em> Re-learn your times tables up to 15. Memorise the basic speed/distance/time formulas. Practice estimating — the multiple-choice answers are often far enough apart that a quick estimate is enough to select the correct answer without doing the exact calculation.
+                <br/><em>The Strategy:</em> Re-learn your times tables up to 15. Memorise the basic speed/distance/time formulas. Practice estimating  -  the multiple-choice answers are often far enough apart that a quick estimate is enough to select the correct answer without doing the exact calculation.
               </p>
               <p>
                 <strong>4. Psychomotor (Hand-Eye Coordination):</strong> Using a joystick to fly through hoops or track a target.
@@ -87,7 +87,7 @@ export default function PilotAptitudeTestPrep() {
                 Do not start practising the night before. Your brain needs time to build the neural pathways required for the multi-tasking and spatial exercises.
               </p>
               <p>
-                <strong>The 4-Week Plan:</strong> Subscribe to a dedicated preparation platform (like PilotAptitudeTest.com, Pilotest, or LatestPilotJobs). Practice for 30–45 minutes every day. Do not practice for 4 hours on a Sunday — daily repetition is far more effective for building cognitive capacity.
+                <strong>The 4-Week Plan:</strong> Subscribe to a dedicated preparation platform (like PilotAptitudeTest.com, Pilotest, or LatestPilotJobs). Practice for 30-45 minutes every day. Do not practice for 4 hours on a Sunday  -  daily repetition is far more effective for building cognitive capacity.
               </p>
               <p>
                 <strong>Hardware matters:</strong> If the test requires a joystick, buy a cheap USB joystick and practice with it. Practising psychomotor tests with a mouse or trackpad will not build the correct muscle memory.

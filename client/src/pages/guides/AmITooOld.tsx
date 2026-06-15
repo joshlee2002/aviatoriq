@@ -6,7 +6,7 @@ export default function AmITooOld() {
   return (
     <GuideLayout
       title="Am I Too Old to Become a Pilot? The Honest Answer (2026)"
-      subtitle="No upper age limit exists for pilot training — but there are real considerations around career length, medical requirements, and return on investment."
+      subtitle="No upper age limit exists for pilot training  -  but there are real considerations around career length, medical requirements, and return on investment."
       canonical="/guides/am-i-too-old-to-become-a-pilot"
       metaDescription="Am I too old to become a pilot? No upper age limit in the UK. Mandatory retirement at 65. Real analysis of career length, medical requirements, and ROI by starting age."
       readTime="10 min read"
@@ -29,7 +29,7 @@ export default function AmITooOld() {
                 There is no upper age limit to start pilot training in the UK. You can legally begin flight training at any age, and UK airlines are legally prohibited from discriminating on the basis of age under the Equality Act 2010.
               </p>
               <p>
-                The mandatory retirement age for commercial airline pilots is 65 — set by ICAO and adopted by the UK CAA. This is the only hard age limit in the system.
+                The mandatory retirement age for commercial airline pilots is 65  -  set by ICAO and adopted by the UK CAA. This is the only hard age limit in the system.
               </p>
               <p>
                 What this means in practice:
@@ -41,7 +41,7 @@ export default function AmITooOld() {
                 <li>Starting at 55: 10-year potential career</li>
               </ul>
               <p>
-                Whether any of these career lengths justify the £80,000–£130,000 investment in training depends on your personal financial situation and what you want from the career.
+                Whether any of these career lengths justify the £80,000-£130,000 investment in training depends on your personal financial situation and what you want from the career.
               </p>
             </>
           ),
@@ -51,16 +51,16 @@ export default function AmITooOld() {
           content: (
             <>
               <p>
-                <strong>Starting in your 20s:</strong> This is the conventional route. You have the longest career runway, the easiest access to cadet programmes (most have informal upper age limits of 35–40), and the most time to recoup your training investment. The main challenge is funding £100,000 at an age when you have had little time to save.
+                <strong>Starting in your 20s:</strong> This is the conventional route. You have the longest career runway, the easiest access to cadet programmes (most have informal upper age limits of 35-40), and the most time to recoup your training investment. The main challenge is funding £100,000 at an age when you have had little time to save.
               </p>
               <p>
-                <strong>Starting in your 30s:</strong> Still an excellent time to start. You likely have more financial stability than in your 20s, and a 25–35 year career is more than enough to make the investment worthwhile. Cadet programmes may still be accessible. The Class 1 Medical is straightforward for most healthy 30-year-olds.
+                <strong>Starting in your 30s:</strong> Still an excellent time to start. You likely have more financial stability than in your 20s, and a 25-35 year career is more than enough to make the investment worthwhile. Cadet programmes may still be accessible. The Class 1 Medical is straightforward for most healthy 30-year-olds.
               </p>
               <p>
                 <strong>Starting in your 40s:</strong> Absolutely viable, but requires more careful financial planning. The modular route is often more practical than integrated. Cadet programmes are largely off the table. The Class 1 Medical requires annual renewal after 40 and includes additional cardiovascular checks.
               </p>
               <p>
-                <strong>Starting in your 50s:</strong> Possible, but the ROI calculation becomes much tighter. A 50-year-old has 15 years to recoup £100,000 in training costs. This is achievable if you reach Captain within 8–10 years, but leaves little margin for error. The medical requirements are more demanding, and the risk of a disqualifying condition increases with age.
+                <strong>Starting in your 50s:</strong> Possible, but the ROI calculation becomes much tighter. A 50-year-old has 15 years to recoup £100,000 in training costs. This is achievable if you reach Captain within 8-10 years, but leaves little margin for error. The medical requirements are more demanding, and the risk of a disqualifying condition increases with age.
               </p>
             </>
           ),
@@ -70,19 +70,19 @@ export default function AmITooOld() {
           content: (
             <>
               <p>
-                The Class 1 Medical is the practical age constraint in pilot training — not any legal rule about starting age. The older you are, the more demanding the medical becomes, and the higher the probability of developing a condition that prevents you from flying.
+                The Class 1 Medical is the practical age constraint in pilot training  -  not any legal rule about starting age. The older you are, the more demanding the medical becomes, and the higher the probability of developing a condition that prevents you from flying.
               </p>
               <p>
                 Under 40: Class 1 Medical valid for 24 months. Standard assessments.
               </p>
               <p>
-                40–60: Class 1 Medical valid for 12 months. Annual ECG required. Additional cardiovascular checks as you age.
+                40-60: Class 1 Medical valid for 12 months. Annual ECG required. Additional cardiovascular checks as you age.
               </p>
               <p>
-                60–65: Class 1 Medical valid for 6 months. More frequent assessments. Can only fly as part of a two-pilot crew where the other pilot is under 60.
+                60-65: Class 1 Medical valid for 6 months. More frequent assessments. Can only fly as part of a two-pilot crew where the other pilot is under 60.
               </p>
               <p>
-                The most important thing you can do before spending any money on flight training is to get a Class 1 Medical assessment. This costs £500–£800 and takes a full day. If you pass, you have certainty. If there are borderline issues, an AME can give you a realistic assessment of your long-term prospects.
+                The most important thing you can do before spending any money on flight training is to get a Class 1 Medical assessment. This costs £500-£800 and takes a full day. If you pass, you have certainty. If there are borderline issues, an AME can give you a realistic assessment of your long-term prospects.
               </p>
             </>
           ),
@@ -95,7 +95,7 @@ export default function AmITooOld() {
                 Airlines hire pilots based on qualifications, aptitude test performance, and simulator assessment results. Age is not a formal criterion.
               </p>
               <p>
-                The one exception is cadet programmes. Most airline cadet programmes have informal upper age limits (typically 35–40) because they are investing in a long career return. The BA Speedbird Academy states an upper age limit of 58, but in practice, the vast majority of successful applicants are under 35.
+                The one exception is cadet programmes. Most airline cadet programmes have informal upper age limits (typically 35-40) because they are investing in a long career return. The BA Speedbird Academy states an upper age limit of 58, but in practice, the vast majority of successful applicants are under 35.
               </p>
               <p>
                 For direct-entry First Officer positions (applying to airlines after completing your training independently), there is no age barrier. In 2026, with the pilot shortage at its peak, airlines are hiring qualified pilots of all ages.

@@ -67,7 +67,7 @@ export default function PilotCvGuideUSA() {
               <p>
                 <strong>2. Certificates and Ratings:</strong> List your highest certificate first. Include your medical class and any specific endorsements.
                 <br/><em>Example:</em>
-                <br/>• FAA Commercial Pilot Certificate – Airplane Single & Multi-Engine Land, Instrument Rating
+                <br/>• FAA Commercial Pilot Certificate - Airplane Single & Multi-Engine Land, Instrument Rating
                 <br/>• Certified Flight Instructor (CFI, CFII, MEI)
                 <br/>• FAA First Class Medical (Issued: 03/2026)
                 <br/>• FCC Restricted Radiotelephone Operator Permit
@@ -80,7 +80,7 @@ export default function PilotCvGuideUSA() {
               <p>
                 <strong>4. Aviation Experience:</strong> List your flying jobs in reverse chronological order. Focus on responsibilities, safety record, and leadership.
                 <br/><em>Example:</em>
-                <br/><strong>Certified Flight Instructor</strong> | ATP Flight School, Phoenix, AZ | 2024 – Present
+                <br/><strong>Certified Flight Instructor</strong> | ATP Flight School, Phoenix, AZ | 2024 - Present
                 <br/>• Provided over 1,000 hours of dual instruction in single and multi-engine aircraft.
                 <br/>• Maintained a 90% first-time pass rate for students on FAA practical exams.
               </p>

@@ -40,7 +40,7 @@ export default function AirFranceKLMCadet() {
                 <li><strong>Prior Flying Experience:</strong> Candidates must NOT hold a CPL(A) license at the application deadline, with specific exceptions for those who received a one-year deferment during an initial Psy2 cadet assessment.</li>
                 <li><strong>Criminal Record:</strong> Must have a clean criminal record.</li>
                 <li><strong>Application History:</strong> Must not have been eliminated from previous Air France pilot selections (specific deferral and elimination rules apply).</li>
-                <li><strong>Application Fee:</strong> A €200 registration fee is applicable, with exemptions for French government scholarship holders based on social criteria.</li>
+                <li><strong>Application Fee:</strong> A EUR200 registration fee is applicable, with exemptions for French government scholarship holders based on social criteria.</li>
               </ul>
               <h3>Selection Process (2026)</h3>
               <p>The Air France selection process is multi-phased and highly competitive, designed to identify candidates with the highest potential:</p>
@@ -85,7 +85,7 @@ export default function AirFranceKLMCadet() {
                 <li><strong>Simulator Grading:</strong> A basic simulator evaluation to assess innate flying aptitude, even for ab-initio candidates.</li>
               </ol>
               <h3>Financial Model and Career Prospects</h3>
-              <p>The KLMFA program operates on a deferred payment model. While there are no upfront tuition fees, the total training cost, approximately €163,500, is financed by KLM and repaid by the cadet from their future salary once employed as a First Officer. Cadets also receive a monthly stipend of around €700 to cover living expenses during the two-year training period. This model significantly reduces the financial barrier to entry, making it accessible to a broader range of talented individuals.</p>
+              <p>The KLMFA program operates on a deferred payment model. While there are no upfront tuition fees, the total training cost, approximately EUR163,500, is financed by KLM and repaid by the cadet from their future salary once employed as a First Officer. Cadets also receive a monthly stipend of around EUR700 to cover living expenses during the two-year training period. This model significantly reduces the financial barrier to entry, making it accessible to a broader range of talented individuals.</p>
               <p>Upon graduation, cadets are guaranteed employment with KLM or KLM Cityhopper, progressing through the ranks from First Officer to Captain. The career path offers opportunities to fly a diverse fleet of modern aircraft and benefit from KLM's extensive global network.</p>
             </>
           )
@@ -106,8 +106,8 @@ export default function AirFranceKLMCadet() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Financial Model</strong></td>
-                    <td className="px-4 py-3 text-white/80">Fully Sponsored (€0 tuition)</td>
-                    <td className="px-4 py-3 text-white/80">Deferred Payment (€0 upfront, €163,500 repaid from salary)</td>
+                    <td className="px-4 py-3 text-white/80">Fully Sponsored (EUR0 tuition)</td>
+                    <td className="px-4 py-3 text-white/80">Deferred Payment (EUR0 upfront, EUR163,500 repaid from salary)</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Training Duration</strong></td>
@@ -137,7 +137,7 @@ export default function AirFranceKLMCadet() {
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Stipend During Training</strong></td>
                     <td className="px-4 py-3 text-white/80">Not explicitly mentioned as standard</td>
-                    <td className="px-4 py-3 text-white/80">~€700/month</td>
+                    <td className="px-4 py-3 text-white/80">~EUR700/month</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Prior Flying Experience</strong></td>
@@ -209,11 +209,11 @@ export default function AirFranceKLMCadet() {
       faqSchema={[
         {
           question: "What is the main difference between the Air France and KLM Cadet programs' financial models?",
-          answer: "The Air France Cadet Program is fully sponsored, covering 100% of training costs. The KLM Flight Academy operates on a deferred payment model, where the training cost (approx. €163,500) is financed by KLM and repaid from the cadet's salary after employment, with no upfront tuition."
+          answer: "The Air France Cadet Program is fully sponsored, covering 100% of training costs. The KLM Flight Academy operates on a deferred payment model, where the training cost (approx. EUR163,500) is financed by KLM and repaid from the cadet's salary after employment, with no upfront tuition."
         },
         {
           question: "Are there any upfront costs for the Air France Cadet Program?",
-          answer: "Yes, there is a €200 registration fee for the Air France Cadet Program, though French government scholarship holders are exempt."
+          answer: "Yes, there is a EUR200 registration fee for the Air France Cadet Program, though French government scholarship holders are exempt."
         },
         {
           question: "Do I need to speak French to apply for the Air France Cadet Program?",

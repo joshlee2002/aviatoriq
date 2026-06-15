@@ -4,18 +4,18 @@ export default function FaaMedicalClass1() {
   return (
     <GuideLayout
       title="FAA Medical Class 1 Certificate 2026: Requirements, Costs & Process"
-      subtitle="Everything you need to know about the FAA First Class Medical — vision and hearing standards, AME exam process, disqualifying conditions, special issuances, and how much it costs."
+      subtitle="Everything you need to know about the FAA First Class Medical  -  vision and hearing standards, AME exam process, disqualifying conditions, special issuances, and how much it costs."
       readTime="12 min read"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
       category="Medical Requirements"
       canonical="https://aviatoriq.com/us/guides/faa-medical-class-1"
-      metaDescription="FAA Class 1 Medical Certificate 2026: vision 20/20 required, costs $150–$400, valid 12 months under 40 / 6 months over 40. Full requirements, AME process, and disqualifying conditions explained."
+      metaDescription="FAA Class 1 Medical Certificate 2026: vision 20/20 required, costs $150-$400, valid 12 months under 40 / 6 months over 40. Full requirements, AME process, and disqualifying conditions explained."
       ctaText="Check your US pilot readiness"
       ctaHref="/quiz"
       faqSchema={[
         { question: "What are the vision requirements for an FAA Class 1 Medical?", answer: "Distant vision must be 20/20 or better in each eye separately, with or without correction. Near vision must be 20/40 or better at 16 inches. Intermediate vision (20/40 at 32 inches) is required for pilots aged 50 and over. Normal colour vision is required; colour vision deficiency may result in a limitation." },
-        { question: "How much does an FAA Class 1 Medical cost?", answer: "FAA Class 1 Medical exams typically cost $150–$400 depending on the AME and location. An EKG (required at age 35 and over) adds $50–$150. There is no set FAA fee — AMEs set their own prices." },
+        { question: "How much does an FAA Class 1 Medical cost?", answer: "FAA Class 1 Medical exams typically cost $150-$400 depending on the AME and location. An EKG (required at age 35 and over) adds $50-$150. There is no set FAA fee  -  AMEs set their own prices." },
         { question: "How long is an FAA Class 1 Medical valid?", answer: "For ATP privileges: 12 calendar months if under 40, 6 calendar months if 40 or over. For commercial pilot privileges (not ATP): 12 calendar months at any age. When it expires for its primary purpose, it automatically downgrades to Class 2 then Class 3 validity." },
         { question: "What conditions disqualify you from an FAA Class 1 Medical?", answer: "Statutory disqualifying conditions include angina pectoris, cardiac valve replacement, coronary heart disease, epilepsy, psychosis, bipolar disorder, substance dependence, and diabetes requiring insulin. Many conditions can be considered for Special Issuance with documentation." },
         { question: "Can I fly with depression or anxiety and get an FAA Class 1 Medical?", answer: "Yes, in many cases. The FAA accepts four specific SSRIs (fluoxetine, sertraline, citalopram, escitalopram) under the SSRI protocol after a 6-month stable period. Anxiety managed without medication may be certifiable. Full disclosure to your AME is essential." },
@@ -47,35 +47,35 @@ export default function FaaMedicalClass1() {
                       <td className="px-4 py-3">Airline Transport Pilot (ATP); commercial operations requiring ATP</td>
                       <td className="px-4 py-3">12 months</td>
                       <td className="px-4 py-3">6 months</td>
-                      <td className="px-4 py-3">$150–$400</td>
+                      <td className="px-4 py-3">{">"}$150-$400</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Class 2 (Second Class)</td>
                       <td className="px-4 py-3">Commercial Pilot Certificate (not requiring ATP)</td>
                       <td className="px-4 py-3">12 months</td>
                       <td className="px-4 py-3">12 months</td>
-                      <td className="px-4 py-3">$100–$300</td>
+                      <td className="px-4 py-3">{">"}$100-$300</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Class 3 (Third Class)</td>
                       <td className="px-4 py-3">Private Pilot, Student Pilot, Recreational Pilot</td>
                       <td className="px-4 py-3">60 months</td>
                       <td className="px-4 py-3">24 months</td>
-                      <td className="px-4 py-3">$75–$200</td>
+                      <td className="px-4 py-3">{">"}$75-$200</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">BasicMed</td>
                       <td className="px-4 py-3">Private pilot operations only (aircraft under 6,000 lbs, max 6 occupants, below 18,000 ft)</td>
                       <td className="px-4 py-3">48 months (physician exam)</td>
                       <td className="px-4 py-3">48 months</td>
-                      <td className="px-4 py-3">$50–$150</td>
+                      <td className="px-4 py-3">{">"}$50-$150</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
               <p>
-                When a higher-class medical expires for its primary purpose, it automatically downgrades. A Class 1 held by a pilot aged 38 will function as a Class 2 for 12 months after the Class 1 expires, then as a Class 3 for a further period — giving up to 60 months of private pilot validity from a single Class 1 examination (for pilots under 40).
+                When a higher-class medical expires for its primary purpose, it automatically downgrades. A Class 1 held by a pilot aged 38 will function as a Class 2 for 12 months after the Class 1 expires, then as a Class 3 for a further period  -  giving up to 60 months of private pilot validity from a single Class 1 examination (for pilots under 40).
               </p>
             </>
           ),
@@ -131,7 +131,7 @@ export default function FaaMedicalClass1() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Electrocardiogram (EKG)</td>
                       <td className="px-4 py-3">Required at initial Class 1 exam at age 35 and over</td>
-                      <td className="px-4 py-3">Adds $50–$150 to the exam cost</td>
+                      <td className="px-4 py-3">Adds $50-$150 to the exam cost</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Urinalysis</td>
@@ -153,15 +153,15 @@ export default function FaaMedicalClass1() {
               </p>
 
               <p>
-                <strong>Step 1: Complete FAA Form 8500-8 via MedXPress.</strong> Before your AME appointment, complete the application at <a href="https://medxpress.faa.gov" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">medxpress.faa.gov</a>. This form requires a detailed medical history, current medications, and any prior FAA medical actions. Complete honesty is essential — the FAA cross-references with the National Driver Register, Social Security Administration, and other databases. Omissions can result in certificate denial or criminal prosecution. You will receive a confirmation number to bring to your appointment.
+                <strong>Step 1: Complete FAA Form 8500-8 via MedXPress.</strong> Before your AME appointment, complete the application at <a href="https://medxpress.faa.gov" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">medxpress.faa.gov</a>. This form requires a detailed medical history, current medications, and any prior FAA medical actions. Complete honesty is essential  -  the FAA cross-references with the National Driver Register, Social Security Administration, and other databases. Omissions can result in certificate denial or criminal prosecution. You will receive a confirmation number to bring to your appointment.
               </p>
 
               <p>
-                <strong>Step 2: Your AME examination.</strong> Schedule an appointment with an FAA-authorized Aviation Medical Examiner (AME) using the <a href="https://amsrvs.ama.org/amsrvs/default.asp" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">FAA AME Locator</a>. The examination typically takes 30–45 minutes and includes a physical examination, vision and hearing tests, blood pressure measurement, urinalysis, and (if aged 35+) an EKG.
+                <strong>Step 2: Your AME examination.</strong> Schedule an appointment with an FAA-authorized Aviation Medical Examiner (AME) using the <a href="https://amsrvs.ama.org/amsrvs/default.asp" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">FAA AME Locator</a>. The examination typically takes 30-45 minutes and includes a physical examination, vision and hearing tests, blood pressure measurement, urinalysis, and (if aged 35+) an EKG.
               </p>
 
               <p>
-                If the AME finds no disqualifying conditions, they can issue your certificate on the spot. If a condition requires further review, the AME will defer your application to the FAA Aerospace Medical Certification Division (AMCD) in Oklahoma City. A deferral is not a denial — it means the FAA needs more information before making a decision.
+                If the AME finds no disqualifying conditions, they can issue your certificate on the spot. If a condition requires further review, the AME will defer your application to the FAA Aerospace Medical Certification Division (AMCD) in Oklahoma City. A deferral is not a denial  -  it means the FAA needs more information before making a decision.
               </p>
             </>
           ),
@@ -187,12 +187,12 @@ export default function FaaMedicalClass1() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Cardiovascular</td>
                       <td className="px-4 py-3">Angina pectoris, cardiac valve replacement, coronary heart disease, heart replacement, permanent cardiac pacemaker</td>
-                      <td className="px-4 py-3">Yes — with extensive cardiology documentation and favourable prognosis</td>
+                      <td className="px-4 py-3">Yes  -  with extensive cardiology documentation and favourable prognosis</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Neurological</td>
                       <td className="px-4 py-3">Epilepsy, unexplained loss of consciousness, transient loss of neurological function</td>
-                      <td className="px-4 py-3">Rarely — epilepsy is very difficult to certify for Class 1</td>
+                      <td className="px-4 py-3">Rarely  -  epilepsy is very difficult to certify for Class 1</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Mental Health</td>
@@ -202,14 +202,14 @@ export default function FaaMedicalClass1() {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Metabolic</td>
                       <td className="px-4 py-3">Diabetes mellitus requiring hypoglycaemic medications (including insulin)</td>
-                      <td className="px-4 py-3">Yes — insulin-treated diabetes is now certifiable under strict monitoring protocols</td>
+                      <td className="px-4 py-3">Yes  -  insulin-treated diabetes is now certifiable under strict monitoring protocols</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
               <p>
-                <strong>Depression and SSRIs:</strong> The FAA accepts four specific SSRIs under the SSRI protocol: fluoxetine (Prozac), sertraline (Zoloft), citalopram (Celexa), and escitalopram (Lexapro). To be considered, the pilot must have been on a stable dose for at least 6 months with no significant side effects, and must not be taking the medication for a disqualifying condition. Full disclosure to your AME is essential — flying on an undisclosed SSRI is a serious violation.
+                <strong>Depression and SSRIs:</strong> The FAA accepts four specific SSRIs under the SSRI protocol: fluoxetine (Prozac), sertraline (Zoloft), citalopram (Celexa), and escitalopram (Lexapro). To be considered, the pilot must have been on a stable dose for at least 6 months with no significant side effects, and must not be taking the medication for a disqualifying condition. Full disclosure to your AME is essential  -  flying on an undisclosed SSRI is a serious violation.
               </p>
 
               <p>
@@ -245,7 +245,7 @@ export default function FaaMedicalClass1() {
           content: (
             <>
               <p className="text-xs text-white/50">
-                [1] Federal Aviation Administration. "14 CFR Part 67 — Medical Standards and Certification." <em>ecfr.gov</em>. Accessed June 2026.<br/>
+                [1] Federal Aviation Administration. "14 CFR Part 67  -  Medical Standards and Certification." <em>ecfr.gov</em>. Accessed June 2026.<br/>
                 [2] Federal Aviation Administration. "MedXPress." <em>medxpress.faa.gov</em>. Accessed June 2026.<br/>
                 [3] Federal Aviation Administration. "FAA AME Locator." <em>amsrvs.ama.org</em>. Accessed June 2026.<br/>
                 [4] Federal Aviation Administration. "BasicMed." <em>faa.gov/licenses_certificates/airmen_certification/basic_med</em>. Accessed June 2026.<br/>

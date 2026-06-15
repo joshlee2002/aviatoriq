@@ -20,7 +20,7 @@ export default function UsPilotBenefits() {
           content: (
             <>
               <p>
-                The US airline pilot career in 2026 offers some of the highest total compensation packages in the profession's history. A combination of mandatory retirement at 65, post-pandemic travel demand, and the 2013 first officer experience rule change has produced a sustained structural shortage that major airlines are actively working to address. This guide covers what the career actually looks like in 2026 — the training pathway, real costs, salary at each stage, and the benefits and trade-offs of the lifestyle.
+                The US airline pilot career in 2026 offers some of the highest total compensation packages in the profession's history. A combination of mandatory retirement at 65, post-pandemic travel demand, and the 2013 first officer experience rule change has produced a sustained structural shortage that major airlines are actively working to address. This guide covers what the career actually looks like in 2026  -  the training pathway, real costs, salary at each stage, and the benefits and trade-offs of the lifestyle.
               </p>
             </>
           )
@@ -103,13 +103,13 @@ export default function UsPilotBenefits() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Certificate/Rating</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost Range (USD)</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$12,000 – $25,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">$8,000 – $15,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">$25,000 – $35,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating</td><td className="px-4 py-3 text-white/80">$3,000 – $7,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Certified Flight Instructor (CFI)</td><td className="px-4 py-3 text-white/80">$5,000 – $10,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATP CTP Course</td><td className="px-4 py-3 text-white/80">$8,000 – $10,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total (from zero to ATP)</strong></td><td className="px-4 py-3 text-white/80"><strong>$61,000 – $102,000+</strong></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">{">"}$12,000 - $25,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">{">"}$8,000 - $15,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">{">"}$25,000 - $35,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating</td><td className="px-4 py-3 text-white/80">{">"}$3,000 - $7,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Certified Flight Instructor (CFI)</td><td className="px-4 py-3 text-white/80">{">"}$5,000 - $10,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATP CTP Course</td><td className="px-4 py-3 text-white/80">{">"}$8,000 - $10,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total (from zero to ATP)</strong></td><td className="px-4 py-3 text-white/80"><strong>$61,000 - $102,000+</strong></td></tr>
                 </tbody>
               </table>
               <p>
@@ -267,7 +267,7 @@ export default function UsPilotBenefits() {
           content: (
             <>
               <p>
-                Becoming a professional pilot in the United States requires a significant financial investment and several years of training. The pilot shortage is real, demand at the major airlines is sustained, and total compensation packages have reached levels that make the career financially viable for those who plan carefully. The key decisions — Part 61 vs Part 141, regional vs direct-entry, cadet programme vs self-funded — are covered in detail throughout this site. Use the assessment tool above to model your specific situation before committing.
+                Becoming a professional pilot in the United States requires a significant financial investment and several years of training. The pilot shortage is real, demand at the major airlines is sustained, and total compensation packages have reached levels that make the career financially viable for those who plan carefully. The key decisions  -  Part 61 vs Part 141, regional vs direct-entry, cadet programme vs self-funded  -  are covered in detail throughout this site. Use the assessment tool above to model your specific situation before committing.
               </p>
             </>
           )
@@ -312,7 +312,7 @@ export default function UsPilotBenefits() {
         { question: "What are the age requirements?", answer: "To obtain a Private Pilot Certificate, you must be at least 17 years old (16 to solo). For a Commercial Pilot Certificate, the minimum age is 18, and for an Airline Transport Pilot (ATP) certificate, it is 23. There is no maximum age to become a pilot, provided you can meet the medical requirements." },
         { question: "What are the medical requirements?", answer: "All pilots must hold an FAA medical certificate. The class of medical certificate required depends on the type of flying. Airline pilots require a First-Class Medical Certificate, which involves stringent health standards, including vision, hearing, and cardiovascular health. These certificates must be renewed periodically." },
         { question: "Is the pilot shortage real in 2026?", answer: "Yes, the pilot shortage is a well-documented and ongoing issue in 2026, driven by retirements and increased demand. This creates a favorable hiring environment for new, qualified pilots." },
-        { question: "How much do pilots earn?", answer: "Entry-level first officers at regional airlines now typically earn $80,000–$110,000 in year one (2026 figures). Captains at the Big 3 majors (Delta, United, American) earn $300,000–$465,000+ at the top of the pay scale. Delta's widebody captain top rate reached $465/hour in 2026 under their current contract." }
+        { question: "How much do pilots earn?", answer: "Entry-level first officers at regional airlines now typically earn $80,000-$110,000 in year one (2026 figures). Captains at the Big 3 majors (Delta, United, American) earn $300,000-$465,000+ at the top of the pay scale. Delta's widebody captain top rate reached $465/hour in 2026 under their current contract." }
       ]}
       relatedGuides={[
         { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },

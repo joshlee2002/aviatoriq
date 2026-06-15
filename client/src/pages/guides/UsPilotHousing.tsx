@@ -19,7 +19,7 @@ export default function UsPilotHousing() {
           heading: "Introduction: The Crucial Role of Housing in Pilot Training",
           content: (
             <>
-              <p>Where you live during flight training has a direct impact on your training costs and your ability to progress quickly. This guide covers the realistic housing options for student pilots in the US — from school-arranged accommodation to crash pads and local rentals — with real cost figures for 2026.</p>
+              <p>Where you live during flight training has a direct impact on your training costs and your ability to progress quickly. This guide covers the realistic housing options for student pilots in the US  -  from school-arranged accommodation to crash pads and local rentals  -  with real cost figures for 2026.</p>
               <p>Accelerated pilot training programs, whether under FAA Part 61 or Part 141 regulations, demand an high level of dedication and focus. These programs are intensive, requiring long hours of ground school, simulator sessions, and actual flight time. A stable, conducive living environment minimizes distractions, reduces commute times, and provides the necessary tranquility for rigorous study and adequate rest. This guide covers housing options available to pilot trainees in the US for 2026, offering a strategic perspective on making informed decisions that align with your career aspirations and financial planning.</p>
             </>
           )
@@ -61,11 +61,11 @@ export default function UsPilotHousing() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Monthly Cost (USD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Rent (Shared Apartment)</td><td className="px-4 py-3 text-white/80">$700 - $1,200</td><td className="px-4 py-3 text-white/80">Varies by region; single occupancy higher</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Utilities (Electricity, Water, Gas, Internet)</td><td className="px-4 py-3 text-white/80">$150 - $300</td><td className="px-4 py-3 text-white/80">Can fluctuate seasonally</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Groceries/Food</td><td className="px-4 py-3 text-white/80">$400 - $600</td><td className="px-4 py-3 text-white/80">Depends on cooking habits vs. dining out</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Transportation (Fuel, Maintenance, Public Transit)</td><td className="px-4 py-3 text-white/80">$100 - $250</td><td className="px-4 py-3 text-white/80">Crucial for commute to airport</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Personal Expenses (Toiletries, Entertainment)</td><td className="px-4 py-3 text-white/80">$150 - $300</td><td className="px-4 py-3 text-white/80">Budget for occasional leisure</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Rent (Shared Apartment)</td><td className="px-4 py-3 text-white/80">{">"}$700 - $1,200</td><td className="px-4 py-3 text-white/80">Varies by region; single occupancy higher</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Utilities (Electricity, Water, Gas, Internet)</td><td className="px-4 py-3 text-white/80">{">"}$150 - $300</td><td className="px-4 py-3 text-white/80">Can fluctuate seasonally</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Groceries/Food</td><td className="px-4 py-3 text-white/80">{">"}$400 - $600</td><td className="px-4 py-3 text-white/80">Depends on cooking habits vs. dining out</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Transportation (Fuel, Maintenance, Public Transit)</td><td className="px-4 py-3 text-white/80">{">"}$100 - $250</td><td className="px-4 py-3 text-white/80">Crucial for commute to airport</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Personal Expenses (Toiletries, Entertainment)</td><td className="px-4 py-3 text-white/80">{">"}$150 - $300</td><td className="px-4 py-3 text-white/80">Budget for occasional leisure</td></tr>
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated Monthly</strong></td><td className="px-4 py-3 text-white/80"><strong>$1,500 - $2,650</strong></td><td className="px-4 py-3 text-white/80">Excludes unexpected costs</td></tr>
                 </tbody>
               </table>

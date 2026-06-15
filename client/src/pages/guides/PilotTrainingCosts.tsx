@@ -5,19 +5,19 @@ export default function PilotTrainingCosts() {
   return (
     <GuideLayout
       title="Pilot Training Costs UK 2026: The Complete Breakdown"
-      subtitle="Every cost involved in becoming a UK airline pilot — integrated vs modular, hidden costs, overseas options, financing, and the real total you need to budget for."
+      subtitle="Every cost involved in becoming a UK airline pilot  -  integrated vs modular, hidden costs, overseas options, financing, and the real total you need to budget for."
       canonical="/guides/pilot-training-costs"
-      metaDescription="Complete 2026 breakdown of UK pilot training costs. Integrated ATPL £90k–£130k, modular £40k–£80k, overseas from £47k. Includes hidden costs, finance options, and real total budgets."
+      metaDescription="Complete 2026 breakdown of UK pilot training costs. Integrated ATPL £90k-£130k, modular £40k-£80k, overseas from £47k. Includes hidden costs, finance options, and real total budgets."
       readTime="15 min read"
       heroImage="/manus-storage/pilot-training-cost_55d64cb4.jpg"
       ctaHref="/quiz"
       ctaText="Get a personalised cost estimate"
       faqSchema={[
-        { question: "How much does ATPL training cost in the UK in 2026?", answer: "Integrated ATPL training at UK schools costs £90,000–£130,000. Modular ATPL training costs £40,000–£80,000 spread over 3–5 years. Overseas integrated training (e.g., Bartolini Air in Poland) costs from approximately £47,000–£60,000 for the same qualification." },
-        { question: "What is the cheapest way to become a pilot in the UK?", answer: "The cheapest route to a UK commercial pilot licence is modular ATPL training, which can be completed for £40,000–£80,000 over 3–5 years. Overseas integrated training at schools like Bartolini Air in Poland offers a full integrated ATPL from approximately £47,000–£60,000." },
-        { question: "Is pilot training worth the debt?", answer: "For most people who complete training and get an airline job, yes. UK airline First Officers earn £40,000–£65,000 rising to £90,000–£150,000+ as a Captain. However the financial risk is real — there is no guarantee of employment after self-funded training. Cadet programmes with guaranteed job offers significantly reduce this risk." },
+        { question: "How much does ATPL training cost in the UK in 2026?", answer: "Integrated ATPL training at UK schools costs £90,000-£130,000. Modular ATPL training costs £40,000-£80,000 spread over 3-5 years. Overseas integrated training (e.g., Bartolini Air in Poland) costs from approximately £47,000-£60,000 for the same qualification." },
+        { question: "What is the cheapest way to become a pilot in the UK?", answer: "The cheapest route to a UK commercial pilot licence is modular ATPL training, which can be completed for £40,000-£80,000 over 3-5 years. Overseas integrated training at schools like Bartolini Air in Poland offers a full integrated ATPL from approximately £47,000-£60,000." },
+        { question: "Is pilot training worth the debt?", answer: "For most people who complete training and get an airline job, yes. UK airline First Officers earn £40,000-£65,000 rising to £90,000-£150,000+ as a Captain. However the financial risk is real  -  there is no guarantee of employment after self-funded training. Cadet programmes with guaranteed job offers significantly reduce this risk." },
         { question: "Can I get a loan for pilot training?", answer: "Yes. Options include specialist aviation loans from BBVA, Barclays Partner Finance, and FlyNow Finance; the Government's Advanced Learner Loan for ground school courses; and some schools offer payment plans. Integrated schools with university partnerships (e.g., Skyborne/UWL) allow access to student loans for part of the cost." },
-        { question: "What are the hidden costs of pilot training?", answer: "Beyond tuition, budget for: Class 1 Medical (£500–£800), ATPL exam fees (£1,000–£1,500), headset (£500–£1,000), study materials (£500–£1,000), living costs during training (£12,000–£25,000+), exam resit fees (£200–£400 per resit), and type rating if not funded by an airline (£20,000–£30,000)." },
+        { question: "What are the hidden costs of pilot training?", answer: "Beyond tuition, budget for: Class 1 Medical (£500-£800), ATPL exam fees (£1,000-£1,500), headset (£500-£1,000), study materials (£500-£1,000), living costs during training (£12,000-£25,000+), exam resit fees (£200-£400 per resit), and type rating if not funded by an airline (£20,000-£30,000)." },
         { question: "Do airlines pay for the type rating?", answer: "It depends on the airline and the recruitment route. Cadet programme graduates typically have the type rating included or funded by the airline. Direct entry First Officers at some airlines (historically Ryanair) have been required to self-fund the type rating. Always clarify this before accepting any offer." },
       ]}
       relatedGuides={[
@@ -32,15 +32,15 @@ export default function PilotTrainingCosts() {
           content: (
             <>
               <p>
-                The cost of pilot training is the single biggest barrier for most aspiring pilots — and it is also the topic most frequently obscured by optimistic marketing, outdated figures, and incomplete cost breakdowns. This guide gives you the real numbers for 2026, including the costs that most guides omit.
+                The cost of pilot training is the single biggest barrier for most aspiring pilots  -  and it is also the topic most frequently obscured by optimistic marketing, outdated figures, and incomplete cost breakdowns. This guide gives you the real numbers for 2026, including the costs that most guides omit.
               </p>
               <img src="/manus-storage/training-finance-loan_7be38da5.jpg" alt="Pilot training finance and loans" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/cost-breakdown_fb067021.jpg" alt="Training cost breakdown" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                The headline figures are well-known: integrated ATPL training at a UK school costs £90,000–£130,000; modular ATPL training costs £40,000–£80,000. But these figures represent training fees only. The true total cost of becoming a UK airline pilot — including living costs, medical fees, equipment, exam fees, and the type rating — is typically £110,000–£160,000 for integrated routes and £70,000–£110,000 for modular routes.
+                The headline figures are well-known: integrated ATPL training at a UK school costs £90,000-£130,000; modular ATPL training costs £40,000-£80,000. But these figures represent training fees only. The true total cost of becoming a UK airline pilot  -  including living costs, medical fees, equipment, exam fees, and the type rating  -  is typically £110,000-£160,000 for integrated routes and £70,000-£110,000 for modular routes.
               </p>
               <p>
-                There is also a third option that most UK guides underreport: overseas integrated training. Schools like Bartolini Air in Poland offer a full CAA-approved integrated ATPL programme from approximately €55,000–€69,000 (£47,000–£59,000 at current rates) — roughly half the cost of equivalent UK schools. This option has become increasingly popular with UK students and deserves serious consideration.
+                There is also a third option that most UK guides underreport: overseas integrated training. Schools like Bartolini Air in Poland offer a full CAA-approved integrated ATPL programme from approximately EUR55,000-EUR69,000 (£47,000-£59,000 at current rates)  -  roughly half the cost of equivalent UK schools. This option has become increasingly popular with UK students and deserves serious consideration.
               </p>
             </>
           ),
@@ -50,10 +50,10 @@ export default function PilotTrainingCosts() {
           content: (
             <>
               <p>
-                An integrated ATPL at a UK school is the most expensive route to a commercial pilot licence, but it offers the fastest timeline (18–24 months), the most structured learning environment, and — for some schools — direct links to airline cadet programmes with guaranteed job offers.
+                An integrated ATPL at a UK school is the most expensive route to a commercial pilot licence, but it offers the fastest timeline (18-24 months), the most structured learning environment, and  -  for some schools  -  direct links to airline cadet programmes with guaranteed job offers.
               </p>
               <p>
-                The cost range of £90,000–£130,000 reflects genuine variation between schools. The factors that drive cost differences include: the school's location (London-area schools are more expensive than those in the Midlands or South West), the quality and modernity of the training fleet, the simulator facilities, and whether the programme includes accommodation and meals.
+                The cost range of £90,000-£130,000 reflects genuine variation between schools. The factors that drive cost differences include: the school's location (London-area schools are more expensive than those in the Midlands or South West), the quality and modernity of the training fleet, the simulator facilities, and whether the programme includes accommodation and meals.
               </p>
               <p>
                 The following table shows indicative 2026 costs for the leading UK integrated schools:
@@ -89,7 +89,7 @@ export default function PilotTrainingCosts() {
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Aeros Flight Training</td>
                     <td className="px-4 py-3 text-white/80">Gloucester</td>
-                    <td className="px-4 py-3 text-white/80">£89,000–£99,000</td>
+                    <td className="px-4 py-3 text-white/80">£89,000-£99,000</td>
                     <td className="px-4 py-3 text-white/80">None (strong employment record)</td>
                   </tr>
                   <tr className="border-b border-white/10">
@@ -101,7 +101,7 @@ export default function PilotTrainingCosts() {
                 </tbody>
               </table>
               <p>
-                These figures represent training fees only. Add living costs of £12,000–£20,000 for the 18–24 month training period (depending on location and lifestyle), plus the additional costs detailed below.
+                These figures represent training fees only. Add living costs of £12,000-£20,000 for the 18-24 month training period (depending on location and lifestyle), plus the additional costs detailed below.
               </p>
             </>
           ),
@@ -126,7 +126,7 @@ export default function PilotTrainingCosts() {
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Bartolini Air</td>
                     <td className="px-4 py-3 text-white/80">Wrocław, Poland</td>
-                    <td className="px-4 py-3 text-white/80">€55,000–€69,000 (~£47,000–£59,000)</td>
+                    <td className="px-4 py-3 text-white/80">EUR55,000-EUR69,000 (~£47,000-£59,000)</td>
                     <td className="px-4 py-3 text-white/80">Ryanair partnership, CAA approved, growing UK student base</td>
                   </tr>
                   <tr className="border-b border-white/10">
@@ -138,7 +138,7 @@ export default function PilotTrainingCosts() {
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">MATS</td>
                     <td className="px-4 py-3 text-white/80">Malta</td>
-                    <td className="px-4 py-3 text-white/80">€80,000–€95,000 (~£68,000–£81,000)</td>
+                    <td className="px-4 py-3 text-white/80">EUR80,000-EUR95,000 (~£68,000-£81,000)</td>
                     <td className="px-4 py-3 text-white/80">English-speaking environment, EASA approved</td>
                   </tr>
                 </tbody>
@@ -147,7 +147,7 @@ export default function PilotTrainingCosts() {
                 Bartolini Air in particular has become a serious option for UK students. The school is CAA-approved (meaning the licence is fully valid for UK airline employment), has a strong Ryanair placement record, and costs approximately half the equivalent UK school. The city of Wrocław is modern, affordable, and English-friendly. Living costs during training are significantly lower than in the UK.
               </p>
               <p>
-                The main considerations for overseas training are: you will be living abroad for 18–24 months (a lifestyle choice that suits some people and not others), the school's CAA approval status must be verified before enrolling, and you should research the school's current employment outcomes carefully.
+                The main considerations for overseas training are: you will be living abroad for 18-24 months (a lifestyle choice that suits some people and not others), the school's CAA approval status must be verified before enrolling, and you should research the school's current employment outcomes carefully.
               </p>
             </>
           ),
@@ -157,7 +157,7 @@ export default function PilotTrainingCosts() {
           content: (
             <>
               <p>
-                Modular ATPL training is the most cost-effective route to a UK commercial pilot licence, and it is equally respected by airlines. The total training fee for a modular ATPL is typically £40,000–£80,000, spread over 3–5 years. The ability to keep working and spread costs over time is the key financial advantage.
+                Modular ATPL training is the most cost-effective route to a UK commercial pilot licence, and it is equally respected by airlines. The total training fee for a modular ATPL is typically £40,000-£80,000, spread over 3-5 years. The ability to keep working and spread costs over time is the key financial advantage.
               </p>
               <p>
                 The following table shows the typical cost of each modular phase:
@@ -173,53 +173,53 @@ export default function PilotTrainingCosts() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Class 1 Medical</td>
-                    <td className="px-4 py-3 text-white/80">£500–£800</td>
+                    <td className="px-4 py-3 text-white/80">£500-£800</td>
                     <td className="px-4 py-3 text-white/80">1 day</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
-                    <td className="px-4 py-3 text-white/80">£8,000–£15,000</td>
-                    <td className="px-4 py-3 text-white/80">3–12 months</td>
+                    <td className="px-4 py-3 text-white/80">£8,000-£15,000</td>
+                    <td className="px-4 py-3 text-white/80">3-12 months</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">ATPL Theory (distance learning)</td>
-                    <td className="px-4 py-3 text-white/80">£2,500–£4,500</td>
-                    <td className="px-4 py-3 text-white/80">12–18 months part-time</td>
+                    <td className="px-4 py-3 text-white/80">£2,500-£4,500</td>
+                    <td className="px-4 py-3 text-white/80">12-18 months part-time</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">ATPL Exam Fees (14 exams)</td>
-                    <td className="px-4 py-3 text-white/80">£1,000–£1,500</td>
+                    <td className="px-4 py-3 text-white/80">£1,000-£1,500</td>
                     <td className="px-4 py-3 text-white/80">Taken during theory phase</td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Hour Building (100–150 hours)</td>
-                    <td className="px-4 py-3 text-white/80">£15,000–£25,000</td>
-                    <td className="px-4 py-3 text-white/80">2–6 months</td>
+                    <td className="px-4 py-3 text-white/80">Hour Building (100-150 hours)</td>
+                    <td className="px-4 py-3 text-white/80">£15,000-£25,000</td>
+                    <td className="px-4 py-3 text-white/80">2-6 months</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
-                    <td className="px-4 py-3 text-white/80">£10,000–£15,000</td>
-                    <td className="px-4 py-3 text-white/80">4–8 weeks</td>
+                    <td className="px-4 py-3 text-white/80">£10,000-£15,000</td>
+                    <td className="px-4 py-3 text-white/80">4-8 weeks</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating (MEIR)</td>
-                    <td className="px-4 py-3 text-white/80">£20,000–£30,000</td>
-                    <td className="px-4 py-3 text-white/80">2–4 months</td>
+                    <td className="px-4 py-3 text-white/80">£20,000-£30,000</td>
+                    <td className="px-4 py-3 text-white/80">2-4 months</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">MCC/JOC</td>
-                    <td className="px-4 py-3 text-white/80">£5,000–£8,000</td>
-                    <td className="px-4 py-3 text-white/80">2–4 weeks</td>
+                    <td className="px-4 py-3 text-white/80">£5,000-£8,000</td>
+                    <td className="px-4 py-3 text-white/80">2-4 weeks</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Total Training Fees</strong></td>
-                    <td className="px-4 py-3 text-white/80"><strong>£62,000–£99,800</strong></td>
-                    <td className="px-4 py-3 text-white/80"><strong>3–5 years</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>£62,000-£99,800</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>3-5 years</strong></td>
                   </tr>
                 </tbody>
               </table>
               <p>
-                The lower end of the modular cost range (£40,000–£50,000) is achievable by doing hour building abroad (Spain, USA, or South Africa, where flying costs £100–£150/hour vs £200–£250/hour in the UK) and using distance learning for ATPL theory rather than residential ground school. The higher end reflects UK-based training throughout.
+                The lower end of the modular cost range (£40,000-£50,000) is achievable by doing hour building abroad (Spain, USA, or South Africa, where flying costs £100-£150/hour vs £200-£250/hour in the UK) and using distance learning for ATPL theory rather than residential ground school. The higher end reflects UK-based training throughout.
               </p>
             </>
           ),
@@ -232,25 +232,25 @@ export default function PilotTrainingCosts() {
                 Training fees are only part of the picture. The following costs are frequently omitted from pilot training cost guides but are real and significant:
               </p>
               <p>
-                <strong>Living costs during full-time training phases:</strong> This is the largest hidden cost and the one most frequently underestimated. During full-time training phases (particularly the integrated programme or the flying phases of modular training), you cannot work. Budget £800–£1,500 per month for accommodation, food, and personal expenses. Over an 18-month integrated programme, this adds £14,400–£27,000 to your total cost.
+                <strong>Living costs during full-time training phases:</strong> This is the largest hidden cost and the one most frequently underestimated. During full-time training phases (particularly the integrated programme or the flying phases of modular training), you cannot work. Budget £800-£1,500 per month for accommodation, food, and personal expenses. Over an 18-month integrated programme, this adds £14,400-£27,000 to your total cost.
               </p>
               <p>
-                <strong>Exam resit fees:</strong> The ATPL theory examinations are 14 subjects, and most candidates fail at least one on their first attempt. Each resit costs approximately £200–£400. Budget for at least 2–3 resits across the 14 subjects.
+                <strong>Exam resit fees:</strong> The ATPL theory examinations are 14 subjects, and most candidates fail at least one on their first attempt. Each resit costs approximately £200-£400. Budget for at least 2-3 resits across the 14 subjects.
               </p>
               <p>
-                <strong>Flight test resit fees:</strong> Skills tests (PPL, CPL, IR) can be failed and must be retaken. Each resit costs £500–£1,500 including examiner fees and additional training. Budget for at least one resit across all your skills tests.
+                <strong>Flight test resit fees:</strong> Skills tests (PPL, CPL, IR) can be failed and must be retaken. Each resit costs £500-£1,500 including examiner fees and additional training. Budget for at least one resit across all your skills tests.
               </p>
               <p>
-                <strong>Equipment:</strong> A good quality aviation headset (David Clark, Bose A20, or Lightspeed Zulu) costs £500–£1,200. Navigation equipment, logbooks, charts, and study materials add another £500–£1,000. Total equipment budget: £1,000–£2,200.
+                <strong>Equipment:</strong> A good quality aviation headset (David Clark, Bose A20, or Lightspeed Zulu) costs £500-£1,200. Navigation equipment, logbooks, charts, and study materials add another £500-£1,000. Total equipment budget: £1,000-£2,200.
               </p>
               <p>
-                <strong>Medical renewals:</strong> The Class 1 Medical must be renewed annually (or every 6 months after age 40). Each renewal costs approximately £300–£500. Over a 3-year modular training period, this adds £600–£1,000.
+                <strong>Medical renewals:</strong> The Class 1 Medical must be renewed annually (or every 6 months after age 40). Each renewal costs approximately £300-£500. Over a 3-year modular training period, this adds £600-£1,000.
               </p>
               <p>
-                <strong>Travel costs:</strong> If training at multiple schools (common in modular training) or doing hour building abroad, travel costs can be significant. Budget £1,000–£3,000 for travel across the training period.
+                <strong>Travel costs:</strong> If training at multiple schools (common in modular training) or doing hour building abroad, travel costs can be significant. Budget £1,000-£3,000 for travel across the training period.
               </p>
               <p>
-                <strong>Type rating (if self-funded):</strong> If you do not secure a cadet programme place and need to self-fund a type rating to improve your employability, this costs £20,000–£30,000. This is the single largest potential hidden cost and can be avoided by securing a cadet programme place or joining an airline that funds the type rating on hiring.
+                <strong>Type rating (if self-funded):</strong> If you do not secure a cadet programme place and need to self-fund a type rating to improve your employability, this costs £20,000-£30,000. This is the single largest potential hidden cost and can be avoided by securing a cadet programme place or joining an airline that funds the type rating on hiring.
               </p>
             </>
           ),
@@ -275,36 +275,36 @@ export default function PilotTrainingCosts() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Integrated ATPL (UK school, no type rating)</td>
-                    <td className="px-4 py-3 text-white/80">£90,000–£130,000</td>
-                    <td className="px-4 py-3 text-white/80">£14,000–£27,000</td>
-                    <td className="px-4 py-3 text-white/80">£5,000–£8,000</td>
-                    <td className="px-4 py-3 text-white/80">£109,000–£165,000</td>
+                    <td className="px-4 py-3 text-white/80">£90,000-£130,000</td>
+                    <td className="px-4 py-3 text-white/80">£14,000-£27,000</td>
+                    <td className="px-4 py-3 text-white/80">£5,000-£8,000</td>
+                    <td className="px-4 py-3 text-white/80">£109,000-£165,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Integrated ATPL (overseas — Bartolini Air)</td>
-                    <td className="px-4 py-3 text-white/80">£47,000–£59,000</td>
-                    <td className="px-4 py-3 text-white/80">£10,000–£18,000</td>
-                    <td className="px-4 py-3 text-white/80">£5,000–£8,000</td>
-                    <td className="px-4 py-3 text-white/80">£62,000–£85,000</td>
+                    <td className="px-4 py-3 text-white/80">Integrated ATPL (overseas  -  Bartolini Air)</td>
+                    <td className="px-4 py-3 text-white/80">£47,000-£59,000</td>
+                    <td className="px-4 py-3 text-white/80">£10,000-£18,000</td>
+                    <td className="px-4 py-3 text-white/80">£5,000-£8,000</td>
+                    <td className="px-4 py-3 text-white/80">£62,000-£85,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Modular ATPL (UK-based)</td>
-                    <td className="px-4 py-3 text-white/80">£55,000–£80,000</td>
-                    <td className="px-4 py-3 text-white/80">£8,000–£15,000</td>
-                    <td className="px-4 py-3 text-white/80">£5,000–£8,000</td>
-                    <td className="px-4 py-3 text-white/80">£68,000–£103,000</td>
+                    <td className="px-4 py-3 text-white/80">£55,000-£80,000</td>
+                    <td className="px-4 py-3 text-white/80">£8,000-£15,000</td>
+                    <td className="px-4 py-3 text-white/80">£5,000-£8,000</td>
+                    <td className="px-4 py-3 text-white/80">£68,000-£103,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Cadet programme (e.g., easyJet Generation)</td>
                     <td className="px-4 py-3 text-white/80">£99,900</td>
-                    <td className="px-4 py-3 text-white/80">£12,000–£18,000</td>
-                    <td className="px-4 py-3 text-white/80">£3,000–£5,000</td>
-                    <td className="px-4 py-3 text-white/80">£114,900–£122,900</td>
+                    <td className="px-4 py-3 text-white/80">£12,000-£18,000</td>
+                    <td className="px-4 py-3 text-white/80">£3,000-£5,000</td>
+                    <td className="px-4 py-3 text-white/80">£114,900-£122,900</td>
                   </tr>
                 </tbody>
               </table>
               <p>
-                The cadet programme figure includes the significant advantage of a guaranteed job offer — which means no type rating cost and no period of unemployment after qualifying. When you factor in the type rating cost (£20,000–£30,000) and potential unemployment period (6–18 months) for self-funded pilots, the cadet programme's true cost advantage is even greater than the headline figures suggest.
+                The cadet programme figure includes the significant advantage of a guaranteed job offer  -  which means no type rating cost and no period of unemployment after qualifying. When you factor in the type rating cost (£20,000-£30,000) and potential unemployment period (6-18 months) for self-funded pilots, the cadet programme's true cost advantage is even greater than the headline figures suggest.
               </p>
             </>
           ),
@@ -317,22 +317,22 @@ export default function PilotTrainingCosts() {
                 The most common financing routes for UK pilot training in 2026 are:
               </p>
               <p>
-                <strong>Specialist aviation loans:</strong> Several lenders offer loans specifically for pilot training. BBVA (formerly Sabadell) is the largest specialist aviation lender in the UK, offering loans of up to £100,000 at rates of approximately 6–10% APR. Barclays Partner Finance offers loans through some flight schools. FlyNow Finance is a specialist aviation finance broker that can access multiple lenders. Rates vary significantly — compare carefully and use an independent broker if possible.
+                <strong>Specialist aviation loans:</strong> Several lenders offer loans specifically for pilot training. BBVA (formerly Sabadell) is the largest specialist aviation lender in the UK, offering loans of up to £100,000 at rates of approximately 6-10% APR. Barclays Partner Finance offers loans through some flight schools. FlyNow Finance is a specialist aviation finance broker that can access multiple lenders. Rates vary significantly  -  compare carefully and use an independent broker if possible.
               </p>
               <p>
                 <strong>Government Advanced Learner Loan:</strong> Available for some ground school courses (ATPL theory) at approved providers. Covers up to £10,000 of course fees, repayable only when earning above the threshold. Not available for flying training, but can reduce the amount you need to borrow commercially for the theory phase.
               </p>
               <p>
-                <strong>Student loans (integrated schools with university partnerships):</strong> Skyborne Airline Academy's partnership with the University of West London allows students to access standard student loans (up to approximately £40,000 over the course) to fund part of the integrated programme. This significantly reduces the amount that needs to be borrowed commercially. Other schools may offer similar arrangements — check with individual schools.
+                <strong>Student loans (integrated schools with university partnerships):</strong> Skyborne Airline Academy's partnership with the University of West London allows students to access standard student loans (up to approximately £40,000 over the course) to fund part of the integrated programme. This significantly reduces the amount that needs to be borrowed commercially. Other schools may offer similar arrangements  -  check with individual schools.
               </p>
               <p>
-                <strong>Personal savings:</strong> The most straightforward option if you have the funds. Avoids interest costs and gives you maximum flexibility. Many modular students fund training through a combination of savings and part-time work over the 3–5 year training period.
+                <strong>Personal savings:</strong> The most straightforward option if you have the funds. Avoids interest costs and gives you maximum flexibility. Many modular students fund training through a combination of savings and part-time work over the 3-5 year training period.
               </p>
               <p>
                 <strong>Family support:</strong> Common and entirely legitimate. If family members are willing and able to contribute, this can significantly reduce borrowing costs.
               </p>
               <p>
-                <strong>Scholarships:</strong> Several aviation organisations offer scholarships for pilot training, including the Air League, the Royal Aero Club, and some airlines. Competition is intense and amounts are typically £5,000–£20,000 — not enough to fund full training, but meaningful as a contribution. Research available scholarships before applying for commercial finance.
+                <strong>Scholarships:</strong> Several aviation organisations offer scholarships for pilot training, including the Air League, the Royal Aero Club, and some airlines. Competition is intense and amounts are typically £5,000-£20,000  -  not enough to fund full training, but meaningful as a contribution. Research available scholarships before applying for commercial finance.
               </p>
             </>
           ),
@@ -345,7 +345,7 @@ export default function PilotTrainingCosts() {
                 The financial case for pilot training depends on two variables: whether you complete training successfully, and whether you get an airline job. For those who do both, the return on investment is strong.
               </p>
               <p>
-                A UK airline First Officer earning £50,000 per year will earn £500,000 over 10 years. A Captain earning £100,000 will earn £1,000,000 over 10 years. The total career earnings of a pilot who starts at 25 and retires at 65 — accounting for salary progression from FO to Captain — are typically £3,000,000–£5,000,000. Against a training investment of £70,000–£130,000, the financial return is very strong.
+                A UK airline First Officer earning £50,000 per year will earn £500,000 over 10 years. A Captain earning £100,000 will earn £1,000,000 over 10 years. The total career earnings of a pilot who starts at 25 and retires at 65  -  accounting for salary progression from FO to Captain  -  are typically £3,000,000-£5,000,000. Against a training investment of £70,000-£130,000, the financial return is very strong.
               </p>
               <p>
                 The risk is that training is expensive and the outcome is not guaranteed. Self-funded pilots who complete training but fail to get an airline job face significant debt with no corresponding income. This risk is real but manageable with the right preparation. The key risk mitigations are: securing a cadet programme place (which guarantees a job), completing the Class 1 Medical before spending money on training, and choosing a school with a strong employment track record.
@@ -364,10 +364,10 @@ export default function PilotTrainingCosts() {
                 Before committing to any training route or school, take the following steps in order:
               </p>
               <p>
-                <strong>1. Get the Class 1 Medical.</strong> This is non-negotiable. Do it before you spend anything else. Cost: £500–£800. Time: 1 day.
+                <strong>1. Get the Class 1 Medical.</strong> This is non-negotiable. Do it before you spend anything else. Cost: £500-£800. Time: 1 day.
               </p>
               <p>
-                <strong>2. Apply to cadet programmes.</strong> If you are eligible, apply to BA Speedbird, easyJet Generation, TUI MPL, and Ryanair partner schools before committing to self-funded training. The selection processes take 3–6 months — start them now, and pursue self-funded training in parallel if you want to avoid delay.
+                <strong>2. Apply to cadet programmes.</strong> If you are eligible, apply to BA Speedbird, easyJet Generation, TUI MPL, and Ryanair partner schools before committing to self-funded training. The selection processes take 3-6 months  -  start them now, and pursue self-funded training in parallel if you want to avoid delay.
               </p>
               <p>
                 <strong>3. Build a complete budget.</strong> Use the figures in this guide to build a comprehensive budget that includes training fees, living costs, equipment, exam fees, resit contingency, and type rating. Add a 15% contingency on top. This is the number you need to finance.

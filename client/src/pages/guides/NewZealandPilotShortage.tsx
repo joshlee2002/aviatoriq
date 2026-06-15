@@ -58,31 +58,31 @@ export default function NewZealandPilotShortage() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
-                    <td className="px-4 py-3 text-white/80">$18,000 – $27,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$18,000 - $27,000</td>
                     <td className="px-4 py-3 text-white/80">50+</td>
-                    <td className="px-4 py-3 text-white/80">3 – 6 months</td>
+                    <td className="px-4 py-3 text-white/80">3 - 6 months</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
-                    <td className="px-4 py-3 text-white/80">$60,000 – $100,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$60,000 - $100,000</td>
                     <td className="px-4 py-3 text-white/80">200 total</td>
-                    <td className="px-4 py-3 text-white/80">9 – 15 months</td>
+                    <td className="px-4 py-3 text-white/80">9 - 15 months</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating</td>
-                    <td className="px-4 py-3 text-white/80">$20,000 – $30,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$20,000 - $30,000</td>
                     <td className="px-4 py-3 text-white/80">N/A</td>
                     <td className="px-4 py-3 text-white/80">Included in diploma programs</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Flight Instructor Rating</td>
-                    <td className="px-4 py-3 text-white/80">$10,000 – $18,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$10,000 - $18,000</td>
                     <td className="px-4 py-3 text-white/80">N/A</td>
                     <td className="px-4 py-3 text-white/80">Primary hour-building pathway</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Airline-Ready (Total)</td>
-                    <td className="px-4 py-3 text-white/80">$90,000 – $130,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$90,000 - $130,000</td>
                     <td className="px-4 py-3 text-white/80">1,500+</td>
                     <td className="px-4 py-3 text-white/80">For airline minimums</td>
                   </tr>
@@ -91,12 +91,12 @@ export default function NewZealandPilotShortage() {
               <p><em>Note: CAA NZ minimum for CPL is 200 hours. Most students complete between 220-260 hours. Budgeting for approximately 1.3 times the minimum hours is advisable [2].</em></p>
               <p><strong>Training Costs by School Type (2026):</strong></p>
               <ul>
-                <li><strong>Aero Clubs (e.g., Canterbury, Waikato, Air Hawkes Bay):</strong> Typically range from NZD $60,000 – $80,000 for a CPL. These offer pay-as-you-fly flexibility and often have lower hourly rates, making them suitable for budget-conscious domestic students [2].</li>
-                <li><strong>Professional Schools (e.g., IAANZ, NZ Aviation Academy, NZAAL, Mainland Air):</strong> CPL diploma programs generally cost between NZD $80,000 – $100,000. These schools offer structured programs, often with NZQA approval, and fixed timelines. Many are equipped to accept international students [2].</li>
-                <li><strong>University Programs (e.g., Massey University School of Aviation):</strong> A Bachelor of Aviation degree combined with flight training can cost NZD $90,000 – $110,000+. This includes academic tuition and flight training, leading to a degree alongside licenses [2].</li>
+                <li><strong>Aero Clubs (e.g., Canterbury, Waikato, Air Hawkes Bay):</strong> Typically range from NZD $60,000 - $80,000 for a CPL. These offer pay-as-you-fly flexibility and often have lower hourly rates, making them suitable for budget-conscious domestic students [2].</li>
+                <li><strong>Professional Schools (e.g., IAANZ, NZ Aviation Academy, NZAAL, Mainland Air):</strong> CPL diploma programs generally cost between NZD $80,000 - $100,000. These schools offer structured programs, often with NZQA approval, and fixed timelines. Many are equipped to accept international students [2].</li>
+                <li><strong>University Programs (e.g., Massey University School of Aviation):</strong> A Bachelor of Aviation degree combined with flight training can cost NZD $90,000 - $110,000+. This includes academic tuition and flight training, leading to a degree alongside licenses [2].</li>
               </ul>
               <p><strong>Living Expenses:</strong></p>
-              <p>Living costs are a significant consideration. Outside of Auckland, students should budget approximately NZD $1,200 – $1,800 per month. Auckland is considerably more expensive, with estimates ranging from NZD $1,800 – $2,500 per month. Cities like Christchurch, Hamilton, and Palmerston North offer better value for flight training students [2].</p>
+              <p>Living costs are a significant consideration. Outside of Auckland, students should budget approximately NZD $1,200 - $1,800 per month. Auckland is considerably more expensive, with estimates ranging from NZD $1,800 - $2,500 per month. Cities like Christchurch, Hamilton, and Palmerston North offer better value for flight training students [2].</p>
               <p><strong>Real Total Cost (CPL + Instrument Rating) Example (2026):</strong></p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
@@ -110,9 +110,9 @@ export default function NewZealandPilotShortage() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">CPL + IR / Degree</td>
-                    <td className="px-4 py-3 text-white/80">NZD $80,000 – $100,000</td>
+                    <td className="px-4 py-3 text-white/80">NZD $80,000 - $100,000</td>
                     <td className="px-4 py-3 text-white/80">NZD $103,230</td>
-                    <td className="px-4 py-3 text-white/80">NZD $90,000 – $110,000</td>
+                    <td className="px-4 py-3 text-white/80">NZD $90,000 - $110,000</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Living (12 months)</td>
@@ -128,15 +128,15 @@ export default function NewZealandPilotShortage() {
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Real Total</strong></td>
-                    <td className="px-4 py-3 text-white/80"><strong>~NZD $103,000 – $119,000</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>~NZD $103,000 - $119,000</strong></td>
                     <td className="px-4 py-3 text-white/80"><strong>~NZD $122,230</strong></td>
-                    <td className="px-4 py-3 text-white/80"><strong>~NZD $147,000 – $167,000</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>~NZD $147,000 - $167,000</strong></td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">EUR Equivalent</td>
-                    <td className="px-4 py-3 text-white/80">~€57,000 – €66,000</td>
-                    <td className="px-4 py-3 text-white/80">~€67,000</td>
-                    <td className="px-4 py-3 text-white/80">~€81,000 – €92,000</td>
+                    <td className="px-4 py-3 text-white/80">~EUR57,000 - EUR66,000</td>
+                    <td className="px-4 py-3 text-white/80">~EUR67,000</td>
+                    <td className="px-4 py-3 text-white/80">~EUR81,000 - EUR92,000</td>
                   </tr>
                 </tbody>
               </table>
@@ -153,14 +153,14 @@ export default function NewZealandPilotShortage() {
               <ul>
                 <li><strong>International Aviation Academy of New Zealand (IAANZ) (Christchurch, Canterbury):</strong> As one of NZ's largest professional flight training operations, IAANZ operates a fleet of 26 aircraft from Christchurch International Airport. They offer a CPL MEIR Diploma (domestic cost ~NZD $103,230) and have a strong partnership with Air New Zealand, boasting over 4,500 graduates. NZQA approved.</li>
                 <li><strong>Canterbury Aero Club (Christchurch + West Melton, Canterbury):</strong> Established in 1928, it's NZ's largest aero club. They operate from Christchurch International and a private airfield at West Melton. CAA Part 141 and NZQA approved, offering a pay-as-you-fly model with competitive rates.</li>
-                <li><strong>New Zealand Aviation Academy (Nelson Aviation College) (Motueka, Nelson/Tasman):</strong> Located in one of NZ's sunniest regions, this established professional school offers a NZQA Diploma in Aviation. CPL diploma costs range from NZD $85,000 – $95,000, with student loans available for NZ citizens.</li>
+                <li><strong>New Zealand Aviation Academy (Nelson Aviation College) (Motueka, Nelson/Tasman):</strong> Located in one of NZ's sunniest regions, this established professional school offers a NZQA Diploma in Aviation. CPL diploma costs range from NZD $85,000 - $95,000, with student loans available for NZ citizens.</li>
                 <li><strong>Mainland Air (Dunedin, Otago):</strong> Based at Dunedin International Airport, Mainland Air offers a NZQA Diploma of Aviation. They provide a unique flying environment with access to Fiordland, Otago high country, and the Southern Alps.</li>
               </ul>
               <p><strong>North Island Schools:</strong></p>
               <ul>
                 <li><strong>Massey University School of Aviation (Palmerston North, Manawatū):</strong> New Zealand's only university-integrated aviation degree, offering a 3-year Bachelor of Aviation. Training is conducted at Palmerston North Airport with an all-Diamond glass cockpit fleet.</li>
                 <li><strong>Ardmore Flying School (Papakura, Auckland):</strong> One of NZ's oldest schools (est. 1961), based at Ardmore Airport, NZ's busiest General Aviation (GA) airport. They offer PPL from ~NZD $22,000 and CPL from ~NZD $70,000.</li>
-                <li><strong>New Zealand Airline Academy (NZAAL) (Ardmore, Auckland):</strong> An airline-focused training provider at Ardmore Airport, offering NZQA-approved Diploma in Aviation. CPL programs are typically NZD $80,000 – $100,000.</li>
+                <li><strong>New Zealand Airline Academy (NZAAL) (Ardmore, Auckland):</strong> An airline-focused training provider at Ardmore Airport, offering NZQA-approved Diploma in Aviation. CPL programs are typically NZD $80,000 - $100,000.</li>
                 <li><strong>Waikato Aviation (Hamilton, Waikato):</strong> Training pilots since 1933 from Hamilton International Airport. They offer NZQA-approved NZ Diploma in Aviation in Flight Instruction and Airline Preparation streams. PPL ~NZD $20,000, CPL ~NZD $70,000.</li>
                 <li><strong>Air Hawkes Bay (Hastings, Hawke's Bay):</strong> A regional school at Bridge Pa Aerodrome, known for excellent VFR weather. Offers competitive rates: PPL from ~NZD $18,000, CPL from ~NZD $60,000.</li>
               </ul>
@@ -209,9 +209,9 @@ export default function NewZealandPilotShortage() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Cost (CPL)</strong></td>
-                    <td className="px-4 py-3 text-white/80">NZD $60,000 – $110,000 (~€33,000 – €61,000) [2]</td>
-                    <td className="px-4 py-3 text-white/80">AUD $65,000 – $120,000 [5]</td>
-                    <td className="px-4 py-3 text-white/80">€55,000 – €130,000 [5]</td>
+                    <td className="px-4 py-3 text-white/80">NZD $60,000 - $110,000 (~EUR33,000 - EUR61,000) [2]</td>
+                    <td className="px-4 py-3 text-white/80">AUD $65,000 - $120,000 [5]</td>
+                    <td className="px-4 py-3 text-white/80">EUR55,000 - EUR130,000 [5]</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80"><strong>Living Costs</strong></td>

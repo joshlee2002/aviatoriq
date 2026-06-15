@@ -90,7 +90,7 @@ export default function UnitedAviateGuide() {
                 Once flying for the regional partner, the clock starts. To transition to United, you must complete either <strong>1,200 or 1,600 hours as a Captain</strong> (Pilot-in-Command) at that regional carrier. The specific number depends on your entry point into the program.
               </p>
               <p>
-                This means you must spend 1–2 years as a First Officer at the regional airline, upgrade to Captain, and then fly another 1.5–2.5 years as a Captain before you can transition to United.
+                This means you must spend 1-2 years as a First Officer at the regional airline, upgrade to Captain, and then fly another 1.5-2.5 years as a Captain before you can transition to United.
               </p>
             </>
           ),

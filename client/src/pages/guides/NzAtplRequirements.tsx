@@ -213,22 +213,22 @@ export default function NzAtplRequirements() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
-                    <td className="px-4 py-3 text-white/80">$15,000 - $25,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$15,000 - $25,000</td>
                     <td className="px-4 py-3 text-white/80">Foundation for all subsequent licences.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
-                    <td className="px-4 py-3 text-white/80">$50,000 - $70,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$50,000 - $70,000</td>
                     <td className="px-4 py-3 text-white/80">Includes flight hours and theory.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
-                    <td className="px-4 py-3 text-white/80">$20,000 - $30,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$20,000 - $30,000</td>
                     <td className="px-4 py-3 text-white/80">Essential for IFR operations.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">ATPL Theoretical Exams</td>
-                    <td className="px-4 py-3 text-white/80">$5,000 - $10,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$5,000 - $10,000</td>
                     <td className="px-4 py-3 text-white/80">Includes course materials and examination fees.</td>
                   </tr>
                   <tr className="border-b border-white/10">
@@ -238,7 +238,7 @@ export default function NzAtplRequirements() {
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Medical Certificates (Class 1)</td>
-                    <td className="px-4 py-3 text-white/80">$500 - $1,000 (initial, then annual renewals)</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$500 - $1,000 (initial, then annual renewals)</td>
                     <td className="px-4 py-3 text-white/80">Mandatory health assessments.</td>
                   </tr>
                   <tr className="border-b border-white/10">
@@ -248,7 +248,7 @@ export default function NzAtplRequirements() {
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Study Materials & Equipment</td>
-                    <td className="px-4 py-3 text-white/80">$2,000 - $5,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$2,000 - $5,000</td>
                     <td className="px-4 py-3 text-white/80">Books, charts, headsets, etc.</td>
                   </tr>
                 </tbody>
@@ -318,7 +318,7 @@ export default function NzAtplRequirements() {
           content: (
             <>
               <p>
-                The journey to obtaining a New Zealand ATPL is a testament to dedication, perseverance, and a profound passion for aviation. It demands significant investment in time, effort, and finances, but the outcome is a highly respected and rewarding career. By understanding and meticulously preparing for each stage – from meeting eligibility criteria and accumulating flight hours to mastering theoretical knowledge and excelling in the flight test – aspiring pilots can confidently navigate their path to the flight deck.
+                The journey to obtaining a New Zealand ATPL is a testament to dedication, perseverance, and a profound passion for aviation. It demands significant investment in time, effort, and finances, but the outcome is a highly respected and rewarding career. By understanding and meticulously preparing for each stage - from meeting eligibility criteria and accumulating flight hours to mastering theoretical knowledge and excelling in the flight test - aspiring pilots can confidently navigate their path to the flight deck.
               </p>
               <p>
                 The skies of New Zealand, with their unique challenges and breathtaking beauty, await those who are prepared to meet the rigorous standards of the CAA NZ ATPL. With thorough preparation and unwavering commitment, the dream of commanding an airliner can become a tangible reality.

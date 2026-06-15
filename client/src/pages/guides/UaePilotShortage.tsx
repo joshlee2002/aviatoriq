@@ -113,31 +113,31 @@ export default function UaePilotShortage() {
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td>
                     <td className="px-4 py-3 text-white/80">AED 60,000 - 90,000</td>
-                    <td className="px-4 py-3 text-white/80">$16,300 - $24,500</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$16,300 - $24,500</td>
                     <td className="px-4 py-3 text-white/80">3-6 months</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td>
                     <td className="px-4 py-3 text-white/80">AED 150,000 - 250,000</td>
-                    <td className="px-4 py-3 text-white/80">$40,800 - $68,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$40,800 - $68,000</td>
                     <td className="px-4 py-3 text-white/80">6-12 months (after PPL)</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Airline Transport Pilot License (ATPL) - Integrated</td>
                     <td className="px-4 py-3 text-white/80">AED 450,000 - 700,000+</td>
-                    <td className="px-4 py-3 text-white/80">$122,500 - $190,500+</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$122,500 - $190,500+</td>
                     <td className="px-4 py-3 text-white/80">18-24 months (ab-initio)</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Multi-Crew Cooperation (MCC)</td>
                     <td className="px-4 py-3 text-white/80">AED 20,000 - 35,000</td>
-                    <td className="px-4 py-3 text-white/80">$5,400 - $9,500</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$5,400 - $9,500</td>
                     <td className="px-4 py-3 text-white/80">1-2 weeks</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Type Rating (e.g., Boeing 737, Airbus A320)</td>
                     <td className="px-4 py-3 text-white/80">AED 100,000 - 180,000+</td>
-                    <td className="px-4 py-3 text-white/80">$27,200 - $49,000+</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$27,200 - $49,000+</td>
                     <td className="px-4 py-3 text-white/80">4-6 weeks</td>
                   </tr>
                 </tbody>

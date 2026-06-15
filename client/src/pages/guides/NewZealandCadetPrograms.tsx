@@ -145,27 +145,27 @@ export default function NewZealandCadetPrograms() {
                 <tbody>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
-                    <td className="px-4 py-3 text-white/80">$35,000 - $45,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$35,000 - $45,000</td>
                     <td className="px-4 py-3 text-white/80">Includes flight hours, ground school, exams.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
-                    <td className="px-4 py-3 text-white/80">$80,000 - $120,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$80,000 - $120,000</td>
                     <td className="px-4 py-3 text-white/80">Additional flight hours, advanced ground school, exams.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
-                    <td className="px-4 py-3 text-white/80">$25,000 - $35,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$25,000 - $35,000</td>
                     <td className="px-4 py-3 text-white/80">Enables flight in Instrument Meteorological Conditions.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
-                    <td className="px-4 py-3 text-white/80">$10,000 - $15,000</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$10,000 - $15,000</td>
                     <td className="px-4 py-3 text-white/80">Required for multi-engine aircraft.</td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">New Zealand Diploma in Aviation (Integrated CPL/IR/ME)</td>
-                    <td className="px-4 py-3 text-white/80">$100,000 - $150,000+</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$100,000 - $150,000+</td>
                     <td className="px-4 py-3 text-white/80">Comprehensive program offered by many FTOs.</td>
                   </tr>
                   <tr className="border-b border-white/10">
@@ -175,7 +175,7 @@ export default function NewZealandCadetPrograms() {
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">CAA NZ Medical Certificate (Class 1)</td>
-                    <td className="px-4 py-3 text-white/80">$500 - $1,000 (initial)</td>
+                    <td className="px-4 py-3 text-white/80">{">"}$500 - $1,000 (initial)</td>
                     <td className="px-4 py-3 text-white/80">Includes examination and special eye report. Annual renewals are less.</td>
                   </tr>
                   <tr className="border-b border-white/10">

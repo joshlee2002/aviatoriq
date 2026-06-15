@@ -110,47 +110,47 @@ export default function PilotTrainingOver40USA() {
                   <tbody>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Private Pilot License (PPL)</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$15,000 - $36,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$15,000 - $36,000</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Includes aircraft rental, instructor, ground school, exams [1] [4]</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Instrument Rating (IR)</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$10,000 - $17,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$10,000 - $17,000</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Adds ability to fly in low visibility conditions [1]</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Commercial Pilot Certificate (CPL)</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$20,000 - $30,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$20,000 - $30,000</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Required for paid flying, includes flight hours [1]</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Multi-Engine Rating (MEL)</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$5,000 - $12,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$5,000 - $12,000</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Necessary for multi-engine aircraft operations [1]</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Certified Flight Instructor (CFI)</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$10,000 - $15,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$10,000 - $15,000</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Allows earning money while building flight hours [1]</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Airline Transport Pilot (ATP) CTP</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$5,000 - $8,000</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$5,000 - $8,000</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Required for airline pilots, often covered by airlines [1]</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">FAA Exams & Checkrides</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$1,000 - $2,000 per exam/checkride</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$1,000 - $2,000 per exam/checkride</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Written tests and practical exams (DPE fees) [4]</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Medical Certificates</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$100 - $200 per exam</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$100 - $200 per exam</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Required periodically, varies by class [4]</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Pilot Supplies (Headset, etc.)</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$500 - $1,500</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$500 - $1,500</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Essential gear for training and flying [4]</td>
                     </tr>
                   </tbody>
@@ -345,25 +345,25 @@ export default function PilotTrainingOver40USA() {
                   <tbody>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Corporate/Business Aviation</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$80,000 - $200,000+</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$80,000 - $200,000+</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">More consistent schedules, less overnight, varied flying</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Leverages professional experience, better work-life balance</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Cargo Aviation</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$70,000 - $450,000+ (Captain) [9]</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$70,000 - $450,000+ (Captain) [9]</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Predictable schedules, often night flying, stable</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">High earning potential, stable career, less passenger interaction</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Flight Instruction (CFI)</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$30,000 - $70,000+</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$30,000 - $70,000+</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Flexible hours, local flying, teaching role</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Builds hours, rewarding mentorship, good for balancing commitments</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Charter Operations</td>
-                      <td className="px-4 py-3 text-white/80 border-b border-white/10">$60,000 - $180,000+</td>
+                      <td className="px-4 py-3 text-white/80 border-b border-white/10">{">"}$60,000 - $180,000+</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Varied assignments, on-demand, can be less predictable</td>
                       <td className="px-4 py-3 text-white/80 border-b border-white/10">Diverse flying, values experience, good earning potential</td>
                     </tr>

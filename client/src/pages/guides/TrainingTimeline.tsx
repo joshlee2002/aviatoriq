@@ -5,14 +5,14 @@ const TrainingTimeline = () => {
   return (
     <GuideLayout
       title="Pilot Training Timeline: How Long Does It Actually Take?"
-      subtitle="Realistic timelines for every stage of pilot training in the UK — from first lesson to airline first officer."
+      subtitle="Realistic timelines for every stage of pilot training in the UK  -  from first lesson to airline first officer."
       canonical="/guides/training-timeline"
-      metaDescription="Pilot training timeline 2025: how long does it take to become an airline pilot in the UK? Integrated 18–24 months, modular 3–5 years. Realistic stage-by-stage breakdown."
+      metaDescription="Pilot training timeline 2025: how long does it take to become an airline pilot in the UK? Integrated 18-24 months, modular 3-5 years. Realistic stage-by-stage breakdown."
       faqSchema={[
-        { question: "How long does it take to become an airline pilot?", answer: "Integrated ATPL training takes 18–24 months full-time. Modular training takes 3–5 years part-time. After training you need a type rating (4–6 weeks) before joining an airline. Total time from zero to airline first officer is typically 2–4 years." },
+        { question: "How long does it take to become an airline pilot?", answer: "Integrated ATPL training takes 18-24 months full-time. Modular training takes 3-5 years part-time. After training you need a type rating (4-6 weeks) before joining an airline. Total time from zero to airline first officer is typically 2-4 years." },
         { question: "Am I too old to become a pilot?", answer: "There is no upper age limit for private flying. For airline careers, the CAA mandatory retirement age is 65. Starting training at 30 is common and leaves 35 years of potential airline career. Starting at 40 is still viable for a 25-year career." },
-        { question: "How long does PPL training take?", answer: "A PPL typically takes 6–18 months depending on how frequently you fly. The minimum is 45 hours flight time. Most students take 60–70 hours to reach the required standard." },
-        { question: "How long does ATPL ground school take?", answer: "ATPL ground school (14 subjects) typically takes 6–18 months. Full-time integrated programmes include it in the course. Modular students usually study part-time over 12–18 months." },
+        { question: "How long does PPL training take?", answer: "A PPL typically takes 6-18 months depending on how frequently you fly. The minimum is 45 hours flight time. Most students take 60-70 hours to reach the required standard." },
+        { question: "How long does ATPL ground school take?", answer: "ATPL ground school (14 subjects) typically takes 6-18 months. Full-time integrated programmes include it in the course. Modular students usually study part-time over 12-18 months." },
       ]}
       readTime="8 min read"
       heroImage="/manus-storage/training-timeline_9baef553.jpg"
@@ -44,7 +44,7 @@ const TrainingTimeline = () => {
           content: (
             <>
               <p>
-                The Integrated ATPL (Airline Transport Pilot Licence) route is designed as a full-time, intensive programme, typically completed at a single flight school. It condenses all the necessary training – from ab-initio to frozen ATPL – into a structured curriculum. While often marketed as the quickest route, it still demands a significant time investment and unwavering dedication.
+                The Integrated ATPL (Airline Transport Pilot Licence) route is designed as a full-time, intensive programme, typically completed at a single flight school. It condenses all the necessary training - from ab-initio to frozen ATPL - into a structured curriculum. While often marketed as the quickest route, it still demands a significant time investment and unwavering dedication.
               </p>
               <p>
                 On average, an Integrated ATPL programme takes between 18 to 24 months to complete. This includes ground school, single-engine and multi-engine flight training, instrument rating, and multi-crew cooperation (MCC) and jet orientation courses (JOC). The intensity means little to no time for external commitments, and any delays can push the completion date further back.

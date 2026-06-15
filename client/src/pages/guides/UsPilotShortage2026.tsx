@@ -70,12 +70,12 @@ export default function UsPilotShortage2026() {
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Certificate/Rating</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost Range (USD)</th></tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$12,000 – $25,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">$8,000 – $15,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">$25,000 – $35,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Certified Flight Instructor (CFI)</td><td className="px-4 py-3 text-white/80">$5,000 – $10,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating</td><td className="px-4 py-3 text-white/80">$3,000 – $7,000</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total (Zero to CFI/Multi-Engine)</strong></td><td className="px-4 py-3 text-white/80"><strong>$53,000 – $92,000+</strong></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">{">"}$12,000 - $25,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">{">"}$8,000 - $15,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">{">"}$25,000 - $35,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Certified Flight Instructor (CFI)</td><td className="px-4 py-3 text-white/80">{">"}$5,000 - $10,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating</td><td className="px-4 py-3 text-white/80">{">"}$3,000 - $7,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total (Zero to CFI/Multi-Engine)</strong></td><td className="px-4 py-3 text-white/80"><strong>$53,000 - $92,000+</strong></td></tr>
                 </tbody>
               </table>
               <p><em>Note: These figures do not include the Airline Transport Pilot Certification Training Program (ATP CTP) or the cost of time-building to reach ATP/R-ATP minimums, which can add tens of thousands of dollars.</em></p>
@@ -104,7 +104,7 @@ export default function UsPilotShortage2026() {
           heading: "Conclusion",
           content: (
             <>
-              <p>The US pilot training market in 2026 presents both challenges and significant opportunities. While the financial and time commitments are substantial, the persistent demand for qualified aviators, particularly at the airline level, ensures a robust career outlook. Aspiring pilots who plan their training carefully, understand the regulatory framework, and manage their finances strategically are well-positioned to enter the profession at a time of genuine demand. The demand for qualified pilots in 2026 is real and sustained — careful planning and commitment to training quality will determine outcomes.</p>
+              <p>The US pilot training market in 2026 presents both challenges and significant opportunities. While the financial and time commitments are substantial, the persistent demand for qualified aviators, particularly at the airline level, ensures a robust career outlook. Aspiring pilots who plan their training carefully, understand the regulatory framework, and manage their finances strategically are well-positioned to enter the profession at a time of genuine demand. The demand for qualified pilots in 2026 is real and sustained  -  careful planning and commitment to training quality will determine outcomes.</p>
             </>
           )
         }

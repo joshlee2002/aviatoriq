@@ -8,9 +8,9 @@ export default function Part61Vs141() {
       readTime="10 min read"
       heroImage="/manus-storage/part61-141_25c6f61a.jpg"
       canonical="/guides/part-61-vs-141"
-      metaDescription="Part 61 vs Part 141 flight training USA — what's the difference, which costs less, which is faster, and which leads to airline cadet programmes. Full 2026 comparison."
+      metaDescription="Part 61 vs Part 141 flight training USA  -  what's the difference, which costs less, which is faster, and which leads to airline cadet programmes. Full 2026 comparison."
       author="Joshua Fagan"
-      authorRole="Founder, AviatorIQ — researched from FAA 14 CFR Parts 61 & 141, ATP Flight School, United Aviate Academy, and AABI-accredited university prospectuses"
+      authorRole="Founder, AviatorIQ  -  researched from FAA 14 CFR Parts 61 & 141, ATP Flight School, United Aviate Academy, and AABI-accredited university prospectuses"
       lastUpdated="June 2026"
       sections={[
         {
@@ -18,7 +18,7 @@ export default function Part61Vs141() {
           content: (
             <div>
               <p className="mb-4">
-                Both Part 61 and Part 141 refer to sections of Title 14 of the Code of Federal Regulations (14 CFR) — the rulebook that governs how flight training is conducted in the United States. The key difference is structure and FAA oversight.
+                Both Part 61 and Part 141 refer to sections of Title 14 of the Code of Federal Regulations (14 CFR)  -  the rulebook that governs how flight training is conducted in the United States. The key difference is structure and FAA oversight.
               </p>
               <img src="/manus-storage/usa-school_36756c90.jpg" alt="Part 141 flight school USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/training-aircraft_09ae6a9b.jpg" alt="Part 61 training aircraft" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
@@ -39,13 +39,13 @@ export default function Part61Vs141() {
                   </thead>
                   <tbody>
                     {[
-                      ["FAA oversight", "Minimal — instructor-led", "High — approved curriculum + inspections"],
-                      ["PPL minimum hours", "40 hrs (avg: 60–70 hrs)", "35 hrs (avg: 45–55 hrs)"],
+                      ["FAA oversight", "Minimal  -  instructor-led", "High  -  approved curriculum + inspections"],
+                      ["PPL minimum hours", "40 hrs (avg: 60-70 hrs)", "35 hrs (avg: 45-55 hrs)"],
                       ["CPL minimum hours", "250 hrs total time", "190 hrs total time"],
-                      ["Flexibility", "High — train at your own pace", "Low — structured daily schedule"],
-                      ["Airline cadet access", "Limited — most programmes excluded", "Required for all major cadet programmes"],
-                      ["R-ATP eligibility (university)", "Not eligible", "Yes — 1,000 hrs with 4-yr AABI degree"],
-                      ["Financing options", "Limited — few lenders cover Part 61", "Sallie Mae, AOPA Finance, GI Bill eligible"],
+                      ["Flexibility", "High  -  train at your own pace", "Low  -  structured daily schedule"],
+                      ["Airline cadet access", "Limited  -  most programmes excluded", "Required for all major cadet programmes"],
+                      ["R-ATP eligibility (university)", "Not eligible", "Yes  -  1,000 hrs with 4-yr AABI degree"],
+                      ["Financing options", "Limited  -  few lenders cover Part 61", "Sallie Mae, AOPA Finance, GI Bill eligible"],
                     ].map(([factor, p61, p141], i) => (
                       <tr key={i} style={{ background: i % 2 === 0 ? "rgba(25, 35, 60, 0.8)" : "rgba(20, 30, 55, 0.7)" }}>
                         <td className="p-3 font-medium text-white">{factor}</td>
@@ -64,13 +64,13 @@ export default function Part61Vs141() {
           content: (
             <div>
               <p className="mb-4">
-                The hour reduction under Part 141 is most significant at the Commercial Pilot Certificate (CPL) level. Under Part 61, you need 250 total flight hours to apply for a CPL. Under Part 141, that drops to 190 hours — a saving of 60 hours of flight time, which at typical wet rental rates of $150–$200/hour represents a potential saving of <strong>$9,000–$12,000</strong>.
+                The hour reduction under Part 141 is most significant at the Commercial Pilot Certificate (CPL) level. Under Part 61, you need 250 total flight hours to apply for a CPL. Under Part 141, that drops to 190 hours  -  a saving of 60 hours of flight time, which at typical wet rental rates of $150-$200/hour represents a potential saving of <strong>$9,000-$12,000</strong>.
               </p>
               <p className="mb-4">
-                For the Private Pilot Certificate (PPL), the difference is smaller: 40 hours minimum under Part 61 vs 35 hours under Part 141. In practice, most students take 60–70 hours under Part 61 and 45–55 hours under Part 141, because the structured syllabus of Part 141 reduces wasted repetitive lessons.
+                For the Private Pilot Certificate (PPL), the difference is smaller: 40 hours minimum under Part 61 vs 35 hours under Part 141. In practice, most students take 60-70 hours under Part 61 and 45-55 hours under Part 141, because the structured syllabus of Part 141 reduces wasted repetitive lessons.
               </p>
               <p className="mb-4">
-                The most important hour difference for aspiring airline pilots is the <strong>Restricted ATP (R-ATP)</strong>. Graduates of AABI-accredited four-year aviation degree programmes at Part 141 schools can qualify for an R-ATP with just <strong>1,000 hours</strong> (vs 1,500 for the standard ATP). An associate's degree from a Part 141 school gets you an R-ATP at 1,250 hours. This allows you to serve as a co-pilot at a regional airline 500 hours earlier — roughly 12–18 months of flight instructing time saved.
+                The most important hour difference for aspiring airline pilots is the <strong>Restricted ATP (R-ATP)</strong>. Graduates of AABI-accredited four-year aviation degree programmes at Part 141 schools can qualify for an R-ATP with just <strong>1,000 hours</strong> (vs 1,500 for the standard ATP). An associate's degree from a Part 141 school gets you an R-ATP at 1,250 hours. This allows you to serve as a co-pilot at a regional airline 500 hours earlier  -  roughly 12-18 months of flight instructing time saved.
               </p>
             </div>
           ),
@@ -80,7 +80,7 @@ export default function Part61Vs141() {
           content: (
             <div>
               <p className="mb-4">
-                The answer depends on your situation. Part 141 schools typically charge higher hourly rates and require upfront tuition payments. However, because the structured curriculum reduces wasted flight hours, the total cost to reach a Commercial Pilot Certificate is often comparable — and sometimes lower — than Part 61.
+                The answer depends on your situation. Part 141 schools typically charge higher hourly rates and require upfront tuition payments. However, because the structured curriculum reduces wasted flight hours, the total cost to reach a Commercial Pilot Certificate is often comparable  -  and sometimes lower  -  than Part 61.
               </p>
               <div className="overflow-x-auto mt-2 mb-4">
                 <table className="w-full text-sm border-collapse">
@@ -93,12 +93,12 @@ export default function Part61Vs141() {
                   </thead>
                   <tbody>
                     {[
-                      ["Private Pilot (PPL)", "$10,000–$15,000", "$8,000–$13,000"],
-                      ["Instrument Rating (IR)", "$8,000–$12,000", "$7,000–$11,000"],
-                      ["Commercial Pilot (CPL)", "$20,000–$35,000", "$18,000–$28,000"],
-                      ["CFI + CFII + MEI", "$8,000–$15,000", "$8,000–$14,000"],
-                      ["Zero to CPL + CFI total", "$50,000–$80,000", "$45,000–$70,000"],
-                      ["Full ATP pipeline (zero to 1,500 hrs)", "$100,000–$130,000", "$100,000–$125,000"],
+                      ["Private Pilot (PPL)", "$10,000-$15,000", "$8,000-$13,000"],
+                      ["Instrument Rating (IR)", "$8,000-$12,000", "$7,000-$11,000"],
+                      ["Commercial Pilot (CPL)", "$20,000-$35,000", "$18,000-$28,000"],
+                      ["CFI + CFII + MEI", "$8,000-$15,000", "$8,000-$14,000"],
+                      ["Zero to CPL + CFI total", "$50,000-$80,000", "$45,000-$70,000"],
+                      ["Full ATP pipeline (zero to 1,500 hrs)", "$100,000-$130,000", "$100,000-$125,000"],
                     ].map(([cert, p61, p141], i) => (
                       <tr key={i} style={{ background: i % 2 === 0 ? "rgba(25, 35, 60, 0.8)" : "rgba(20, 30, 55, 0.7)" }}>
                         <td className="p-3 font-medium text-white">{cert}</td>
@@ -110,10 +110,10 @@ export default function Part61Vs141() {
                 </table>
               </div>
               <p className="mb-4">
-                For the full zero-to-ATP pipeline at ATP Flight School (the largest Part 141 flight school in the USA), the published 2026 price for the Airline Career Pilot Program is <strong>$123,995</strong> — covering all certificates, ratings, and flight hours from zero time to ATP minimums, including CFI, CFII, and MEI ratings.
+                For the full zero-to-ATP pipeline at ATP Flight School (the largest Part 141 flight school in the USA), the published 2026 price for the Airline Career Pilot Program is <strong>$123,995</strong>  -  covering all certificates, ratings, and flight hours from zero time to ATP minimums, including CFI, CFII, and MEI ratings.
               </p>
               <p className="mb-4">
-                United Aviate Academy (Part 141, Goodyear AZ) publishes a total programme cost of approximately <strong>$111,700–$122,000</strong> including check ride fees and supplemental training funds, with a guaranteed interview at United Airlines upon completion.
+                United Aviate Academy (Part 141, Goodyear AZ) publishes a total programme cost of approximately <strong>$111,700-$122,000</strong> including check ride fees and supplemental training funds, with a guaranteed interview at United Airlines upon completion.
               </p>
             </div>
           ),
@@ -123,7 +123,7 @@ export default function Part61Vs141() {
           content: (
             <div>
               <p className="mb-4">
-                If your goal is to join a structured airline cadet programme — United Aviate, Delta Propel, Southwest Destination 225°, or American Airlines Cadet Academy — Part 141 training is effectively a requirement. Here's the verified position of each programme as of 2026:
+                If your goal is to join a structured airline cadet programme  -  United Aviate, Delta Propel, Southwest Destination 225°, or American Airlines Cadet Academy  -  Part 141 training is effectively a requirement. Here's the verified position of each programme as of 2026:
               </p>
               <div className="space-y-3 mb-4">
                 {[
@@ -133,11 +133,11 @@ export default function Part61Vs141() {
                   },
                   {
                     prog: "Delta Propel",
-                    detail: "Requires graduation from a U.S.-based AABI-accredited 4-year aviation programme or a Propel affiliate school. All affiliate schools — ATP Flight School, Academy of Aviation, Superior Flight School — are Part 141. Single-interview process leads to Endeavor Air then mainline Delta.",
+                    detail: "Requires graduation from a U.S.-based AABI-accredited 4-year aviation programme or a Propel affiliate school. All affiliate schools  -  ATP Flight School, Academy of Aviation, Superior Flight School  -  are Part 141. Single-interview process leads to Endeavor Air then mainline Delta.",
                   },
                   {
-                    prog: "Southwest Destination 225° (Paused 2025–2026)",
-                    detail: "Southwest paused new Destination 225° intakes in 2025. As of June 2026, the programme has not reopened for new applications. Previously partnered with CAE, SkyWarrior, and US Aviation — all Part 141. Check southwest.com/careers for updates on resumption.",
+                    prog: "Southwest Destination 225° (Paused 2025-2026)",
+                    detail: "Southwest paused new Destination 225° intakes in 2025. As of June 2026, the programme has not reopened for new applications. Previously partnered with CAE, SkyWarrior, and US Aviation  -  all Part 141. Check southwest.com/careers for updates on resumption.",
                   },
                   {
                     prog: "American Airlines Cadet Academy",
@@ -221,19 +221,19 @@ export default function Part61Vs141() {
         },
         {
           question: "Is Part 141 cheaper than Part 61?",
-          answer: "Not necessarily per hour, but Part 141 typically requires fewer total hours to reach each certificate. For the Commercial Pilot Certificate, Part 141 requires 190 hours vs 250 under Part 61 — a potential saving of $9,000–$12,000 in flight time costs.",
+          answer: "Not necessarily per hour, but Part 141 typically requires fewer total hours to reach each certificate. For the Commercial Pilot Certificate, Part 141 requires 190 hours vs 250 under Part 61  -  a potential saving of $9,000-$12,000 in flight time costs.",
         },
         {
           question: "Do I need Part 141 training to join a US airline cadet programme?",
-          answer: "Yes, in practice. All major US airline cadet programmes — United Aviate, Delta Propel, Southwest Destination 225°, and American Airlines Cadet Academy — require training at Part 141 affiliate schools.",
+          answer: "Yes, in practice. All major US airline cadet programmes  -  United Aviate, Delta Propel, Southwest Destination 225°, and American Airlines Cadet Academy  -  require training at Part 141 affiliate schools.",
         },
         {
           question: "What is an R-ATP and how does it relate to Part 141?",
-          answer: "A Restricted ATP (R-ATP) allows pilots who graduated from AABI-accredited 4-year aviation degree programmes at Part 141 schools to serve as co-pilots with just 1,000 flight hours instead of the standard 1,500. This can accelerate an airline career by 12–18 months.",
+          answer: "A Restricted ATP (R-ATP) allows pilots who graduated from AABI-accredited 4-year aviation degree programmes at Part 141 schools to serve as co-pilots with just 1,000 flight hours instead of the standard 1,500. This can accelerate an airline career by 12-18 months.",
         },
         {
           question: "How much does Part 141 flight training cost in the USA in 2026?",
-          answer: "A full zero-to-ATP programme at a major Part 141 school costs approximately $100,000–$125,000 in 2026. ATP Flight School's Airline Career Pilot Program is priced at $123,995. United Aviate Academy's full programme costs approximately $111,700–$122,000.",
+          answer: "A full zero-to-ATP programme at a major Part 141 school costs approximately $100,000-$125,000 in 2026. ATP Flight School's Airline Career Pilot Program is priced at $123,995. United Aviate Academy's full programme costs approximately $111,700-$122,000.",
         },
       ]}
     />

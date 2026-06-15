@@ -110,17 +110,17 @@ const FirstOfficerUK = () => {
                   <tbody>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Airbus A320 Family</td>
-                      <td className="px-4 py-3 text-white/80">£20,000–£30,000</td>
+                      <td className="px-4 py-3 text-white/80">£20,000-£30,000</td>
                       <td className="px-4 py-3 text-white/80">easyJet, British Airways, Jet2, Wizz Air UK</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Boeing 737 Family</td>
-                      <td className="px-4 py-3 text-white/80">£22,000–£35,000</td>
+                      <td className="px-4 py-3 text-white/80">£22,000-£35,000</td>
                       <td className="px-4 py-3 text-white/80">Ryanair, Jet2, TUI Airways</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Embraer 170/190</td>
-                      <td className="px-4 py-3 text-white/80">£18,000–£28,000</td>
+                      <td className="px-4 py-3 text-white/80">£18,000-£28,000</td>
                       <td className="px-4 py-3 text-white/80">Loganair, BA CityFlyer</td>
                     </tr>
                   </tbody>
@@ -134,7 +134,7 @@ const FirstOfficerUK = () => {
           content: (
             <>
               <p>
-                The salary for a First Officer in the UK is a significant consideration for those entering the profession. Entry-level salaries for new First Officers in 2026 typically range from £65,000 to £100,000 per annum for short-haul operations (easyJet, Ryanair, Jet2), including sector pay and allowances. For long-haul operations at British Airways or Virgin Atlantic, starting salaries for new FOs begin at £70,000–£90,000 and rise significantly with seniority. These figures are influenced by the airline's pay scales, the aircraft type, and the number of flying hours.
+                The salary for a First Officer in the UK is a significant consideration for those entering the profession. Entry-level salaries for new First Officers in 2026 typically range from £65,000 to £100,000 per annum for short-haul operations (easyJet, Ryanair, Jet2), including sector pay and allowances. For long-haul operations at British Airways or Virgin Atlantic, starting salaries for new FOs begin at £70,000-£90,000 and rise significantly with seniority. These figures are influenced by the airline's pay scales, the aircraft type, and the number of flying hours.
               </p>
               <p>
                 Salary progression is generally structured, with annual increments based on experience, flight hours, and seniority within the airline. Over time, a First Officer's salary can increase substantially, reflecting their growing expertise and contribution. Beyond the basic salary, First Officers typically receive a comprehensive benefits package. This often includes loss of license insurance, which provides financial protection in case a pilot loses their medical certificate, as well as robust pension contributions, private health benefits, and attractive travel perks for themselves and their families.

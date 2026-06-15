@@ -32,7 +32,7 @@ export default function TuiMPL() {
                 The announcement, made on the TUI Careers portal, stated: <em>"After careful consideration, we've decided not to run our MPL Cadet scheme in 2026. Based on our current plans, the TUI MPL scheme is not required to meet our pilot demand for Summer 2028."</em>
               </p>
               <p>
-                Because an MPL programme takes approximately 18–24 months to complete, an intake in 2026 is designed to produce First Officers ready to fly the line for the Summer 2028 season. TUI's internal forecasting indicates they have sufficient crew (or sufficient access to the Direct Entry market) to meet their needs without running a dedicated cadet pipeline this year.
+                Because an MPL programme takes approximately 18-24 months to complete, an intake in 2026 is designed to produce First Officers ready to fly the line for the Summer 2028 season. TUI's internal forecasting indicates they have sufficient crew (or sufficient access to the Direct Entry market) to meet their needs without running a dedicated cadet pipeline this year.
               </p>
             </>
           ),
@@ -45,7 +45,7 @@ export default function TuiMPL() {
                 The pausing of the TUI MPL is disappointing news for many candidates, as it was one of the most highly regarded bonded cadet programmes in the UK, offering a direct route to the Boeing 737 right-hand seat.
               </p>
               <p>
-                However, this is a normal part of the aviation cycle. Cadet programmes are not permanent fixtures; they are recruitment tools that airlines turn on and off based on their 3-to-5-year fleet projections. The fact that TUI has paused their programme does not mean the broader pilot shortage is over — it simply means TUI specifically has met its quota for the medium term.
+                However, this is a normal part of the aviation cycle. Cadet programmes are not permanent fixtures; they are recruitment tools that airlines turn on and off based on their 3-to-5-year fleet projections. The fact that TUI has paused their programme does not mean the broader pilot shortage is over  -  it simply means TUI specifically has met its quota for the medium term.
               </p>
             </>
           ),
@@ -58,7 +58,7 @@ export default function TuiMPL() {
                 If you were planning to apply for the TUI MPL, you should immediately pivot your focus to the other major UK cadet programmes that are actively recruiting in 2026:
               </p>
               <ul className="list-disc pl-5 space-y-2 mt-2 mb-4">
-                <li><strong>BA Speedbird Academy:</strong> The ultimate prize — fully funded, 160 places available in 2026. Extremely competitive.</li>
+                <li><strong>BA Speedbird Academy:</strong> The ultimate prize  -  fully funded, 160 places available in 2026. Extremely competitive.</li>
                 <li><strong>easyJet Generation Pilot:</strong> An MPL programme very similar in structure to the TUI scheme, run through CAE Oxford.</li>
                 <li><strong>Jet2 FlightPath:</strong> A fully funded integrated ATPL route run through Skyborne Airline Academy.</li>
                 <li><strong>Ryanair Mentored Programme:</strong> A self-funded route through partner schools (FTEJerez, Bartolini) that offers a structured pathway to a Ryanair assessment.</li>
@@ -77,7 +77,7 @@ export default function TuiMPL() {
                 If your ultimate goal is to fly for TUI (which is highly desirable due to their excellent working culture and the eventual possibility of long-haul Boeing 787 flying), your best route in 2026 is to complete your training independently (either integrated or modular) and apply as a <strong>Direct Entry First Officer (DEFO)</strong>.
               </p>
               <p>
-                TUI regularly opens DEFO recruitment windows for pilots who hold a frozen ATPL and have completed an APS MCC (Airline Pilot Standard Multi-Crew Cooperation) course. They also heavily recruit pilots who already hold a Boeing 737 type rating (often hiring pilots who have spent 2–3 years flying the 737 at Ryanair).
+                TUI regularly opens DEFO recruitment windows for pilots who hold a frozen ATPL and have completed an APS MCC (Airline Pilot Standard Multi-Crew Cooperation) course. They also heavily recruit pilots who already hold a Boeing 737 type rating (often hiring pilots who have spent 2-3 years flying the 737 at Ryanair).
               </p>
             </>
           ),
