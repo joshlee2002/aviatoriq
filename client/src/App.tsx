@@ -155,6 +155,117 @@ import HomeEurope from "./pages/HomeEurope";
 import HowToBecomePilotAustralia from "./pages/guides/HowToBecomePilotAustralia";
 import HowToBecomePilotCanada from "./pages/guides/HowToBecomePilotCanada";
 import HowToBecomePilotEurope from "./pages/guides/HowToBecomePilotEurope";
+// New US guides (batch 2)
+import FaaAtpRequirements from "@/pages/guides/FaaAtpRequirements";
+import UsRegionalAirlinesGuide from "@/pages/guides/UsRegionalAirlinesGuide";
+import MajorAirlinesHiringUSA from "@/pages/guides/MajorAirlinesHiringUSA";
+import FaaMedicalClass1 from "@/pages/guides/FaaMedicalClass1";
+import FaaMedicalClass2 from "@/pages/guides/FaaMedicalClass2";
+import FaaMedicalClass3 from "@/pages/guides/FaaMedicalClass3";
+import UsFlightSchoolLoans from "@/pages/guides/UsFlightSchoolLoans";
+import UsCadetPrograms from "@/pages/guides/UsCadetPrograms";
+import UsMilitaryPilotToAirlines from "@/pages/guides/UsMilitaryPilotToAirlines";
+import UsPilotShortage2026 from "@/pages/guides/UsPilotShortage2026";
+import UsPilotSalary2026 from "@/pages/guides/UsPilotSalary2026";
+import UsPilotRetirementAge from "@/pages/guides/UsPilotRetirementAge";
+import UsPilotUnionGuide from "@/pages/guides/UsPilotUnionGuide";
+import UsPilotSeniority from "@/pages/guides/UsPilotSeniority";
+import UsPilotCommuting from "@/pages/guides/UsPilotCommuting";
+import UsPilotBases from "@/pages/guides/UsPilotBases";
+import UsPilotSchedule from "@/pages/guides/UsPilotSchedule";
+import UsPilotBenefits from "@/pages/guides/UsPilotBenefits";
+import UsPilotTaxes from "@/pages/guides/UsPilotTaxes";
+import UsPilotHousing from "@/pages/guides/UsPilotHousing";
+// New Australia guides
+import CasaCplRequirements from "@/pages/guides/CasaCplRequirements";
+import CasaAtplRequirements from "@/pages/guides/CasaAtplRequirements";
+import CasaMedicalClass1 from "@/pages/guides/CasaMedicalClass1";
+import AustraliaPilotTrainingCosts from "@/pages/guides/AustraliaPilotTrainingCosts";
+import AustraliaFlightSchoolLoans from "@/pages/guides/AustraliaFlightSchoolLoans";
+import AustraliaCadetPrograms from "@/pages/guides/AustraliaCadetPrograms";
+import AustraliaPilotSalary2026 from "@/pages/guides/AustraliaPilotSalary2026";
+import AustraliaPilotShortage from "@/pages/guides/AustraliaPilotShortage";
+import QantasGroupPilotAcademy from "@/pages/guides/QantasGroupPilotAcademy";
+import VirginAustraliaCadet from "@/pages/guides/VirginAustraliaCadet";
+import RexPilotAcademy from "@/pages/guides/RexPilotAcademy";
+import AustraliaRegionalAirlines from "@/pages/guides/AustraliaRegionalAirlines";
+import AustraliaMilitaryToAirlines from "@/pages/guides/AustraliaMilitaryToAirlines";
+import AustraliaFlightInstructor from "@/pages/guides/AustraliaFlightInstructor";
+import AustraliaPilotSeniority from "@/pages/guides/AustraliaPilotSeniority";
+import AustraliaPilotBases from "@/pages/guides/AustraliaPilotBases";
+import AustraliaPilotCommuting from "@/pages/guides/AustraliaPilotCommuting";
+import AustraliaPilotSchedule from "@/pages/guides/AustraliaPilotSchedule";
+import AustraliaPilotBenefits from "@/pages/guides/AustraliaPilotBenefits";
+import AustraliaPilotTaxes from "@/pages/guides/AustraliaPilotTaxes";
+// New Canada guides
+import TcCpLRequirements from "@/pages/guides/TcCpLRequirements";
+import TcAtplRequirements from "@/pages/guides/TcAtplRequirements";
+import TcMedicalClass1 from "@/pages/guides/TcMedicalClass1";
+import CanadaPilotTrainingCosts from "@/pages/guides/CanadaPilotTrainingCosts";
+import CanadaFlightSchoolLoans from "@/pages/guides/CanadaFlightSchoolLoans";
+import CanadaCadetPrograms from "@/pages/guides/CanadaCadetPrograms";
+import CanadaPilotSalary2026 from "@/pages/guides/CanadaPilotSalary2026";
+import CanadaPilotShortage from "@/pages/guides/CanadaPilotShortage";
+import AirCanadaJazzCadet from "@/pages/guides/AirCanadaJazzCadet";
+import WestJetEncoreCadet from "@/pages/guides/WestJetEncoreCadet";
+import PorterAirlinesCadet from "@/pages/guides/PorterAirlinesCadet";
+import CanadaRegionalAirlines from "@/pages/guides/CanadaRegionalAirlines";
+import CanadaMilitaryToAirlines from "@/pages/guides/CanadaMilitaryToAirlines";
+import CanadaFlightInstructor from "@/pages/guides/CanadaFlightInstructor";
+import CanadaPilotSeniority from "@/pages/guides/CanadaPilotSeniority";
+import CanadaPilotBases from "@/pages/guides/CanadaPilotBases";
+import CanadaPilotCommuting from "@/pages/guides/CanadaPilotCommuting";
+import CanadaPilotSchedule from "@/pages/guides/CanadaPilotSchedule";
+import CanadaPilotBenefits from "@/pages/guides/CanadaPilotBenefits";
+import CanadaPilotTaxes from "@/pages/guides/CanadaPilotTaxes";
+// New Europe guides
+import EasaCplRequirements from "@/pages/guides/EasaCplRequirements";
+import EasaAtplRequirements from "@/pages/guides/EasaAtplRequirements";
+import EasaMedicalClass1 from "@/pages/guides/EasaMedicalClass1";
+import EuropePilotTrainingCosts from "@/pages/guides/EuropePilotTrainingCosts";
+import EuropeFlightSchoolLoans from "@/pages/guides/EuropeFlightSchoolLoans";
+import EuropeCadetPrograms from "@/pages/guides/EuropeCadetPrograms";
+import EuropePilotSalary2026 from "@/pages/guides/EuropePilotSalary2026";
+import EuropePilotShortage from "@/pages/guides/EuropePilotShortage";
+import LufthansaEuropeanFlightAcademy from "@/pages/guides/LufthansaEuropeanFlightAcademy";
+import AirFranceKLMCadet from "@/pages/guides/AirFranceKLMCadet";
+import EuropeRegionalAirlines from "@/pages/guides/EuropeRegionalAirlines";
+import EuropeMilitaryToAirlines from "@/pages/guides/EuropeMilitaryToAirlines";
+import EuropeFlightInstructor from "@/pages/guides/EuropeFlightInstructor";
+import EuropePilotSeniority from "@/pages/guides/EuropePilotSeniority";
+// New UAE guides
+import UaePilotTrainingCosts from "@/pages/guides/UaePilotTrainingCosts";
+import EmiratesCadetPilotProgram from "@/pages/guides/EmiratesCadetPilotProgram";
+import EtihadCadetPilotProgram from "@/pages/guides/EtihadCadetPilotProgram";
+import AirArabiaCadetProgram from "@/pages/guides/AirArabiaCadetProgram";
+import UaePilotSalary2026 from "@/pages/guides/UaePilotSalary2026";
+import UaePilotLifestyle from "@/pages/guides/UaePilotLifestyle";
+import UaeMedicalClass1 from "@/pages/guides/UaeMedicalClass1";
+import UaePilotShortage from "@/pages/guides/UaePilotShortage";
+// New South Africa guides
+import SaCplRequirements from "@/pages/guides/SaCplRequirements";
+import SaAtplRequirements from "@/pages/guides/SaAtplRequirements";
+import SaMedicalClass1 from "@/pages/guides/SaMedicalClass1";
+import SouthAfricaPilotTrainingCosts from "@/pages/guides/SouthAfricaPilotTrainingCosts";
+import SouthAfricaCadetPrograms from "@/pages/guides/SouthAfricaCadetPrograms";
+import SouthAfricaPilotSalary2026 from "@/pages/guides/SouthAfricaPilotSalary2026";
+import SouthAfricaPilotShortage from "@/pages/guides/SouthAfricaPilotShortage";
+import SouthAfricaRegionalAirlines from "@/pages/guides/SouthAfricaRegionalAirlines";
+import SouthAfricaMilitaryToAirlines from "@/pages/guides/SouthAfricaMilitaryToAirlines";
+// New New Zealand guides
+import NzCplRequirements from "@/pages/guides/NzCplRequirements";
+import NzAtplRequirements from "@/pages/guides/NzAtplRequirements";
+import NzMedicalClass1 from "@/pages/guides/NzMedicalClass1";
+import NewZealandPilotTrainingCosts from "@/pages/guides/NewZealandPilotTrainingCosts";
+import NewZealandCadetPrograms from "@/pages/guides/NewZealandCadetPrograms";
+import AirNewZealandCadet from "@/pages/guides/AirNewZealandCadet";
+import NewZealandPilotSalary2026 from "@/pages/guides/NewZealandPilotSalary2026";
+import NewZealandPilotShortage from "@/pages/guides/NewZealandPilotShortage";
+import NewZealandRegionalAirlines from "@/pages/guides/NewZealandRegionalAirlines";
+// New hub pages
+import HomeUAE from "./pages/HomeUAE";
+import HomeSouthAfrica from "./pages/HomeSouthAfrica";
+import HomeNewZealand from "./pages/HomeNewZealand";
 
 // New section pages
 import Stories from "./pages/Stories";
@@ -335,6 +446,116 @@ function Router() {
       <Route path="/us/guides/embry-riddle-aeronautical-university" component={EmbryRiddleGuide} />
       <Route path="/us/guides/atp-flight-school-guide" component={AtpFlightSchoolGuide} />
 
+      {/* New US guides (batch 2) */}
+      <Route path="/us/guides/faa-atp-requirements" component={FaaAtpRequirements} />
+      <Route path="/us/guides/us-regional-airlines-guide" component={UsRegionalAirlinesGuide} />
+      <Route path="/us/guides/major-airlines-hiring-usa" component={MajorAirlinesHiringUSA} />
+      <Route path="/us/guides/faa-medical-class-1" component={FaaMedicalClass1} />
+      <Route path="/us/guides/faa-medical-class-2" component={FaaMedicalClass2} />
+      <Route path="/us/guides/faa-medical-class-3" component={FaaMedicalClass3} />
+      <Route path="/us/guides/us-flight-school-loans" component={UsFlightSchoolLoans} />
+      <Route path="/us/guides/us-cadet-programs" component={UsCadetPrograms} />
+      <Route path="/us/guides/us-military-pilot-to-airlines" component={UsMilitaryPilotToAirlines} />
+      <Route path="/us/guides/us-pilot-shortage-2026" component={UsPilotShortage2026} />
+      <Route path="/us/guides/us-pilot-salary-2026" component={UsPilotSalary2026} />
+      <Route path="/us/guides/us-pilot-retirement-age" component={UsPilotRetirementAge} />
+      <Route path="/us/guides/us-pilot-training-market-guide" component={UsPilotUnionGuide} />
+      <Route path="/us/guides/us-pilot-seniority" component={UsPilotSeniority} />
+      <Route path="/us/guides/us-pilot-commuting" component={UsPilotCommuting} />
+      <Route path="/us/guides/us-pilot-training-2026" component={UsPilotBases} />
+      <Route path="/us/guides/us-pilot-schedule" component={UsPilotSchedule} />
+      <Route path="/us/guides/us-pilot-benefits" component={UsPilotBenefits} />
+      <Route path="/us/guides/us-pilot-taxes" component={UsPilotTaxes} />
+      <Route path="/us/guides/us-pilot-housing" component={UsPilotHousing} />
+      {/* Australia guides */}
+      <Route path="/australia/guides/casa-cpl-requirements" component={CasaCplRequirements} />
+      <Route path="/australia/guides/casa-atpl-requirements" component={CasaAtplRequirements} />
+      <Route path="/australia/guides/casa-medical-class-1" component={CasaMedicalClass1} />
+      <Route path="/australia/guides/australia-pilot-training-costs" component={AustraliaPilotTrainingCosts} />
+      <Route path="/australia/guides/australia-flight-school-loans" component={AustraliaFlightSchoolLoans} />
+      <Route path="/australia/guides/australia-cadet-programs" component={AustraliaCadetPrograms} />
+      <Route path="/australia/guides/australia-pilot-salary-2026" component={AustraliaPilotSalary2026} />
+      <Route path="/australia/guides/australia-pilot-shortage" component={AustraliaPilotShortage} />
+      <Route path="/australia/guides/qantas-group-pilot-academy" component={QantasGroupPilotAcademy} />
+      <Route path="/australia/guides/virgin-australia-cadet-pilot-program" component={VirginAustraliaCadet} />
+      <Route path="/australia/guides/rex-pilot-academy" component={RexPilotAcademy} />
+      <Route path="/australia/guides/australia-regional-airlines" component={AustraliaRegionalAirlines} />
+      <Route path="/australia/guides/australia-military-to-airlines" component={AustraliaMilitaryToAirlines} />
+      <Route path="/australia/guides/australia-flight-instructor" component={AustraliaFlightInstructor} />
+      <Route path="/australia/guides/pilot-seniority" component={AustraliaPilotSeniority} />
+      <Route path="/australia/guides/australia-pilot-bases" component={AustraliaPilotBases} />
+      <Route path="/australia/guides/australia-pilot-commuting" component={AustraliaPilotCommuting} />
+      <Route path="/australia/guides/australia-pilot-schedule" component={AustraliaPilotSchedule} />
+      <Route path="/australia/guides/australia-pilot-benefits" component={AustraliaPilotBenefits} />
+      <Route path="/australia/guides/australia-pilot-taxes" component={AustraliaPilotTaxes} />
+      {/* Canada guides */}
+      <Route path="/canada/guides/transport-canada-cpl-requirements" component={TcCpLRequirements} />
+      <Route path="/canada/guides/tc-atpl-requirements" component={TcAtplRequirements} />
+      <Route path="/canada/guides/tc-medical-class-1" component={TcMedicalClass1} />
+      <Route path="/canada/guides/canada-pilot-training-costs" component={CanadaPilotTrainingCosts} />
+      <Route path="/canada/guides/canada-flight-school-loans" component={CanadaFlightSchoolLoans} />
+      <Route path="/canada/guides/canada-cadet-programs" component={CanadaCadetPrograms} />
+      <Route path="/canada/guides/canada-pilot-salary-2026" component={CanadaPilotSalary2026} />
+      <Route path="/canada/guides/canada-pilot-shortage" component={CanadaPilotShortage} />
+      <Route path="/canada/guides/air-canada-jazz-cadet" component={AirCanadaJazzCadet} />
+      <Route path="/canada/guides/westjet-encore-cadet" component={WestJetEncoreCadet} />
+      <Route path="/canada/guides/porter-airlines-cadet-program" component={PorterAirlinesCadet} />
+      <Route path="/canada/guides/canada-regional-airlines" component={CanadaRegionalAirlines} />
+      <Route path="/canada/guides/canada-military-to-airlines" component={CanadaMilitaryToAirlines} />
+      <Route path="/canada/guides/canada-flight-instructor" component={CanadaFlightInstructor} />
+      <Route path="/canada/guides/canada-pilot-seniority" component={CanadaPilotSeniority} />
+      <Route path="/canada/guides/canada-pilot-bases" component={CanadaPilotBases} />
+      <Route path="/canada/guides/canada-pilot-commuting" component={CanadaPilotCommuting} />
+      <Route path="/canada/guides/canada-pilot-schedule" component={CanadaPilotSchedule} />
+      <Route path="/canada/guides/canada-pilot-benefits" component={CanadaPilotBenefits} />
+      <Route path="/canada/guides/canada-pilot-taxes" component={CanadaPilotTaxes} />
+      {/* Europe guides */}
+      <Route path="/europe/guides/easa-cpl-requirements" component={EasaCplRequirements} />
+      <Route path="/europe/guides/easa-atpl-requirements" component={EasaAtplRequirements} />
+      <Route path="/europe/guides/easa-medical-class-1" component={EasaMedicalClass1} />
+      <Route path="/europe/guides/pilot-training-costs" component={EuropePilotTrainingCosts} />
+      <Route path="/europe/guides/europe-flight-school-loans" component={EuropeFlightSchoolLoans} />
+      <Route path="/europe/guides/europe-cadet-programs" component={EuropeCadetPrograms} />
+      <Route path="/europe/guides/pilot-salary-2026" component={EuropePilotSalary2026} />
+      <Route path="/europe/guides/europe-pilot-shortage" component={EuropePilotShortage} />
+      <Route path="/europe/guides/lufthansa-european-flight-academy" component={LufthansaEuropeanFlightAcademy} />
+      <Route path="/europe/guides/air-france-klm-cadet-pilot-program" component={AirFranceKLMCadet} />
+      <Route path="/europe/guides/europe-regional-airlines-pilot-training" component={EuropeRegionalAirlines} />
+      <Route path="/europe/guides/military-to-airlines" component={EuropeMilitaryToAirlines} />
+      <Route path="/europe/guides/europe-flight-instructor" component={EuropeFlightInstructor} />
+      <Route path="/europe/guides/europe-pilot-seniority" component={EuropePilotSeniority} />
+      {/* UAE hub and guides */}
+      <Route path="/uae" component={HomeUAE} />
+      <Route path="/uae/guides/uae-pilot-training-costs" component={UaePilotTrainingCosts} />
+      <Route path="/uae/guides/emirates-cadet-pilot-program" component={EmiratesCadetPilotProgram} />
+      <Route path="/uae/guides/etihad-cadet-pilot-program" component={EtihadCadetPilotProgram} />
+      <Route path="/uae/guides/air-arabia-cadet-program" component={AirArabiaCadetProgram} />
+      <Route path="/uae/guides/uae-pilot-salary-2026" component={UaePilotSalary2026} />
+      <Route path="/uae/guides/uae-pilot-lifestyle" component={UaePilotLifestyle} />
+      <Route path="/uae/guides/uae-medical-class-1" component={UaeMedicalClass1} />
+      <Route path="/uae/guides/uae-pilot-shortage" component={UaePilotShortage} />
+      {/* South Africa hub and guides */}
+      <Route path="/south-africa" component={HomeSouthAfrica} />
+      <Route path="/south-africa/guides/sacpl-requirements" component={SaCplRequirements} />
+      <Route path="/south-africa/guides/sa-atpl-requirements" component={SaAtplRequirements} />
+      <Route path="/south-africa/guides/sacaa-class-1-medical-certificate" component={SaMedicalClass1} />
+      <Route path="/south-africa/guides/pilot-training-costs" component={SouthAfricaPilotTrainingCosts} />
+      <Route path="/south-africa/guides/south-africa-cadet-programs" component={SouthAfricaCadetPrograms} />
+      <Route path="/south-africa/guides/pilot-salary-2026" component={SouthAfricaPilotSalary2026} />
+      <Route path="/south-africa/guides/south-africa-pilot-shortage" component={SouthAfricaPilotShortage} />
+      <Route path="/south-africa/guides/south-africa-regional-airlines-pilot-training" component={SouthAfricaRegionalAirlines} />
+      <Route path="/south-africa/guides/military-to-airlines" component={SouthAfricaMilitaryToAirlines} />
+      {/* New Zealand hub and guides */}
+      <Route path="/new-zealand" component={HomeNewZealand} />
+      <Route path="/new-zealand/guides/nz-cpl-requirements" component={NzCplRequirements} />
+      <Route path="/new-zealand/guides/nz-atpl-requirements" component={NzAtplRequirements} />
+      <Route path="/new-zealand/guides/nz-medical-class-1" component={NzMedicalClass1} />
+      <Route path="/new-zealand/guides/new-zealand-pilot-training-costs" component={NewZealandPilotTrainingCosts} />
+      <Route path="/new-zealand/guides/new-zealand-cadet-programs" component={NewZealandCadetPrograms} />
+      <Route path="/new-zealand/guides/air-new-zealand-cadet-pilot-training" component={AirNewZealandCadet} />
+      <Route path="/new-zealand/guides/new-zealand-pilot-salary-2026" component={NewZealandPilotSalary2026} />
+      <Route path="/new-zealand/guides/new-zealand-pilot-shortage" component={NewZealandPilotShortage} />
+      <Route path="/new-zealand/guides/new-zealand-regional-airlines-pilot-training" component={NewZealandRegionalAirlines} />
       {/* 404 */}
       <Route path="/404" component={NotFound} />
       <Route path="*" component={NotFound} />

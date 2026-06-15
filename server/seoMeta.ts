@@ -570,6 +570,531 @@ export const routeMetaMap: Record<string, RouteMeta> = {
     description: "How much do airline pilots earn in Europe? Full salary breakdown from First Officer (€45k–€80k) to Captain (€100k–€200k) across Ryanair, Lufthansa, easyJet, and more.",
     canonical: `${BASE}/guides/european-pilot-salary`,
   },
+  // ─── UAE hub & guides ─────────────────────────────────────────────────────
+  "/uae": {
+    title: "Become a Pilot in the UAE 2026 | GCAA Training Guide | AviatorIQ",
+    description: "The UAE's most complete pilot training resource. GCAA-approved routes, real 2026 costs in AED, Emirates and Etihad cadet programmes, and Class 1 medical guidance.",
+    canonical: `${BASE}/uae`,
+  },
+  // ─── South Africa hub & guides ────────────────────────────────────────────
+  "/south-africa": {
+    title: "Become a Pilot in South Africa 2026 | SACAA Training Guide | AviatorIQ",
+    description: "South Africa's most complete pilot training resource. SACAA CPL/ATPL routes, real 2026 costs in ZAR, Class 1 medical guidance, and matched South African flight schools.",
+    canonical: `${BASE}/south-africa`,
+  },
+  // ─── New Zealand hub & guides ─────────────────────────────────────────────
+  "/new-zealand": {
+    title: "Become a Pilot in New Zealand 2026 | CAA NZ Training Guide | AviatorIQ",
+    description: "New Zealand's most complete pilot training resource. CAA NZ CPL/ATPL routes, real 2026 costs in NZD, Air New Zealand cadet programme, and Class 1 medical guidance.",
+    canonical: `${BASE}/new-zealand`,
+  },
+  // ─── New US guides (batch 2) ──────────────────────────────────────────────
+  "/us/guides/faa-atp-requirements": {
+    title: "Mastering the Skies: Your Definitive Guide to FAA ATP Requirements in 2026",
+    description: "Detailed guide to FAA ATP requirements for 2026, covering Part 61, Part 141, costs, and career opportunities for aspiring airline pilots.",
+    canonical: `${BASE}/us/guides/faa-atp-requirements`,
+  },
+  "/us/guides/us-regional-airlines-guide": {
+    title: "Navigating the US Regional Airline Pilot Pathway: A 2026 Comprehensive Guide",
+    description: "Comprehensive guide for aspiring regional airline pilots in the US. Covers 2026 FAA regulations, training costs, career paths, and hiring requirements.",
+    canonical: `${BASE}/us/guides/us-regional-airlines-guide`,
+  },
+  "/us/guides/major-airlines-hiring-usa": {
+    title: "Major Airlines Hiring in the USA: A Comprehensive Guide for Aspiring Pilots (2026)",
+    description: "Comprehensive 2026 guide for aspiring US airline pilots, covering training, costs, FAA regulations (Part 61/141), and major airline hiring requirements.",
+    canonical: `${BASE}/us/guides/major-airlines-hiring-usa`,
+  },
+  "/us/guides/faa-medical-class-1": {
+    title: "The Elite Standard: Navigating Your FAA Medical Class 1 Certification",
+    description: "Discover the 2026 requirements, costs, and application process for the FAA Medical Class 1 Certificate. Learn about vision, hearing, and disqualifying conditions.",
+    canonical: `${BASE}/us/guides/faa-medical-class-1`,
+  },
+  "/us/guides/faa-medical-class-2": {
+    title: "Navigating the FAA Class 2 Medical Certificate: A Comprehensive Guide for US Pilots",
+    description: "Comprehensive guide to FAA Class 2 Medical Certificate requirements for US commercial pilots in 2026, including regulations, costs, and application process.",
+    canonical: `${BASE}/us/guides/faa-medical-class-2`,
+  },
+  "/us/guides/faa-medical-class-3": {
+    title: "Navigating Your Wings: The Definitive Guide to the FAA Class 3 Medical Certificate (2026)",
+    description: "Comprehensive 2026 guide to the FAA Class 3 Medical Certificate. Learn about vision and hearing standards, the MedXPress process, costs, and Special Issuances.",
+    canonical: `${BASE}/us/guides/faa-medical-class-3`,
+  },
+  "/us/guides/us-flight-school-loans": {
+    title: "Navigating the Skies: A Comprehensive Guide to US Flight School Loans in 2026",
+    description: "Discover the best US flight school loans for 2026. Learn about Part 61 vs. Part 141 costs, federal vs. private loans, and alternative financing options.",
+    canonical: `${BASE}/us/guides/us-flight-school-loans`,
+  },
+  "/us/guides/us-cadet-programs": {
+    title: "The Aspiring Aviator's Guide to US Airline Cadet Programs (2026)",
+    description: "Explore US airline cadet programs for 2026, including FAA regulations (Part 61/141), costs, and career paths with American, United, and Southwest.",
+    canonical: `${BASE}/us/guides/us-cadet-programs`,
+  },
+  "/us/guides/us-military-pilot-to-airlines": {
+    title: "From Cockpit to Commercial: The Elite Military Pilot's Guide to US Airlines in 2026",
+    description: "Navigate the transition from US military pilot to airline pilot in 2026. This guide covers FAA R-ATP requirements, ATP CTP, job market, and airline programs.",
+    canonical: `${BASE}/us/guides/us-military-pilot-to-airlines`,
+  },
+  "/us/guides/us-pilot-shortage-2026": {
+    title: "The Looming Sky: Navigating the US Pilot Shortage in 2026",
+    description: "Comprehensive guide to the 2026 US pilot shortage, covering FAA regulations, Part 61/141 training, costs, and airline hiring trends.",
+    canonical: `${BASE}/us/guides/us-pilot-shortage-2026`,
+  },
+  "/us/guides/us-pilot-salary-2026": {
+    title: "US Pilot Salary 2026: A Comprehensive Guide to Aviation Earnings",
+    description: "Explore US pilot salaries for 2026, including major airlines, regional carriers, training costs, and career progression. Your definitive guide to aviation earnings.",
+    canonical: `${BASE}/us/guides/us-pilot-salary-2026`,
+  },
+  "/us/guides/us-pilot-retirement-age": {
+    title: "The Mandatory Retirement Age for US Airline Pilots: Navigating Your Career to 65 and Beyond",
+    description: "Understand the FAA's mandatory retirement age of 65 for US commercial airline pilots in 2026. Explore its history, current regulations, and the ongoing debate.",
+    canonical: `${BASE}/us/guides/us-pilot-retirement-age`,
+  },
+  "/us/guides/us-pilot-training-market-guide": {
+    title: "Navigating the Skies: A Comprehensive Guide to US Pilot Training in 2026",
+    description: "Comprehensive guide to US pilot training in 2026, covering FAA Part 61/141, costs, medicals, and airline career paths. Essential for aspiring aviators.",
+    canonical: `${BASE}/us/guides/us-pilot-training-market-guide`,
+  },
+  "/us/guides/us-pilot-seniority": {
+    title: "Mastering the Skies: A 2026 Guide to US Airline Pilot Seniority",
+    description: "Explore the profound impact of seniority on US airline pilot careers in 2026, covering pay, schedules, bases, aircraft, and career advancement.",
+    canonical: `${BASE}/us/guides/us-pilot-seniority`,
+  },
+  "/us/guides/us-pilot-commuting": {
+    title: "The Elite Guide to US Pilot Commuting in 2026: Strategies, Costs, and FAA Regulations",
+    description: "Comprehensive guide for US airline pilots on commuting strategies, FAA Part 117 compliance, crash pad costs, and training considerations for 2026.",
+    canonical: `${BASE}/us/guides/us-pilot-commuting`,
+  },
+  "/us/guides/us-pilot-training-2026": {
+    title: "Navigating the Skies: A Comprehensive Guide to US Pilot Training in 2026",
+    description: "Your essential guide to US pilot training in 2026: FAA Part 61/141, costs, airlines, and career paths for aspiring pilots.",
+    canonical: `${BASE}/us/guides/us-pilot-training-2026`,
+  },
+  "/us/guides/us-pilot-schedule": {
+    title: "Navigating the Skies: A Comprehensive Guide to US Pilot Training in 2026",
+    description: "Explore the intricate world of US pilot training in 2026. Understand FAA Part 61/141, costs, career paths, and how to achieve your aviation dreams.",
+    canonical: `${BASE}/us/guides/us-pilot-schedule`,
+  },
+  "/us/guides/us-pilot-benefits": {
+    title: "The Elite Path: Unlocking the Benefits of a US Pilot Career in 2026",
+    description: "Explore the benefits of a US pilot career in 2026, including FAA regulations (Part 61/141), training costs, and airline job prospects.",
+    canonical: `${BASE}/us/guides/us-pilot-benefits`,
+  },
+  "/us/guides/us-pilot-taxes": {
+    title: "Navigating US Pilot Taxes: A Comprehensive 2026 Guide to Deductions and Planning",
+    description: "Comprehensive guide to US pilot taxes in 2026, covering flight training deductions, 529 plans, and essential tax strategies for aviators.",
+    canonical: `${BASE}/us/guides/us-pilot-taxes`,
+  },
+  "/us/guides/us-pilot-housing": {
+    title: "Navigating US Pilot Training Housing: Your 2026 Comprehensive Guide",
+    description: "A deep dive into US pilot training housing in 2026. Understand costs, options, and how to choose accommodations that support your aviation career.",
+    canonical: `${BASE}/us/guides/us-pilot-housing`,
+  },
+  // ─── Australia guides ─────────────────────────────────────────────────────
+  "/australia/guides/casa-cpl-requirements": {
+    title: "Mastering the Skies: Your Definitive Guide to CASA CPL Requirements in 2026",
+    description: "A detailed guide to CASA Commercial Pilot Licence (CPL) requirements in Australia for 2026, covering eligibility, training, costs, and career paths.",
+    canonical: `${BASE}/australia/guides/casa-cpl-requirements`,
+  },
+  "/australia/guides/casa-atpl-requirements": {
+    title: "Navigating the Skies: Your Comprehensive Guide to CASA ATPL Requirements in 2026",
+    description: "Detailed guide to CASA ATPL requirements for 2026, covering eligibility, exams, flight hours, costs, and career opportunities in Australia.",
+    canonical: `${BASE}/australia/guides/casa-atpl-requirements`,
+  },
+  "/australia/guides/casa-medical-class-1": {
+    title: "The Definitive Guide to CASA Class 1 Medical Certificate in Australia (2026)",
+    description: "Comprehensive guide to the CASA Class 1 Medical Certificate in Australia for 2026, covering requirements, costs, process, and common disqualifying conditions.",
+    canonical: `${BASE}/australia/guides/casa-medical-class-1`,
+  },
+  "/australia/guides/australia-pilot-training-costs": {
+    title: "The Definitive Guide to Australian Pilot Training Costs in 2026",
+    description: "Explore the true costs of pilot training in Australia for 2026. Detailed insights into licenses, flight schools, CASA fees, and financial aid options.",
+    canonical: `${BASE}/australia/guides/australia-pilot-training-costs`,
+  },
+  "/australia/guides/australia-flight-school-loans": {
+    title: "Navigating the Skies: A Comprehensive Guide to Australian Flight School Loans in 2026",
+    description: "A detailed guide to flight school loans in Australia for 2026, covering VET Student Loans, private financing, airline cadet programs, and scholarships.",
+    canonical: `${BASE}/australia/guides/australia-flight-school-loans`,
+  },
+  "/australia/guides/australia-cadet-programs": {
+    title: "Australia Pilot Cadet Programs 2026: Your Elite Pathway to the Flight Deck",
+    description: "Explore Australia's top pilot cadet programs for 2026, including Qantas, Rex, and Learn To Fly. Understand CASA regulations, training costs, and career opportunities.",
+    canonical: `${BASE}/australia/guides/australia-cadet-programs`,
+  },
+  "/australia/guides/australia-pilot-salary-2026": {
+    title: "Navigating the Skies: Australia Pilot Salary Guide 2026",
+    description: "Explore detailed pilot salaries in Australia for 2026, including insights into Qantas, Virgin Australia, regional airlines, and career growth.",
+    canonical: `${BASE}/australia/guides/australia-pilot-salary-2026`,
+  },
+  "/australia/guides/australia-pilot-shortage": {
+    title: "Navigating Australia's Pilot Shortage: Opportunities and Challenges for Aspiring Aviators in 2026",
+    description: "Explore the current pilot shortage in Australia for 2026, including training costs, CASA regulations, and career opportunities with major airlines like Qantas and Virgin Australia.",
+    canonical: `${BASE}/australia/guides/australia-pilot-shortage`,
+  },
+  "/australia/guides/qantas-group-pilot-academy": {
+    title: "Navigating Your Future: A Comprehensive Guide to the Qantas Group Pilot Academy 2026",
+    description: "Detailed guide to the Qantas Group Pilot Academy in 2026, covering training, costs, application process, and career prospects with Qantas Group airlines.",
+    canonical: `${BASE}/australia/guides/qantas-group-pilot-academy`,
+  },
+  "/australia/guides/virgin-australia-cadet-pilot-program": {
+    title: "Aspiring to the Skies: Your Guide to Becoming a Virgin Australia Pilot in 2026",
+    description: "A detailed guide for aspiring pilots in Australia, covering CASA regulations, training costs, and Virgin Australia's direct entry pilot recruitment requirements for 2026.",
+    canonical: `${BASE}/australia/guides/virgin-australia-cadet-pilot-program`,
+  },
+  "/australia/guides/rex-pilot-academy": {
+    title: "Mastering the Skies: A Deep Dive into the Rex Pilot Academy Pathway",
+    description: "Explore the Rex Pilot Academy (AAPA) cadet program, CASA regulations, training costs, and career opportunities for aspiring pilots in Australia in 2026.",
+    canonical: `${BASE}/australia/guides/rex-pilot-academy`,
+  },
+  "/australia/guides/australia-regional-airlines": {
+    title: "Navigating the Skies: A Comprehensive Guide to Australia's Regional Airline Pilot Career (2026)",
+    description: "Explore the detailed pathway to becoming a regional airline pilot in Australia, covering CASA regulations, training costs, and airline-specific requirements for 2026.",
+    canonical: `${BASE}/australia/guides/australia-regional-airlines`,
+  },
+  "/australia/guides/australia-military-to-airlines": {
+    title: "From Cockpit to Commercial: A Guide for Australian Military Pilots Transitioning to Airlines",
+    description: "Comprehensive guide for Australian military pilots transitioning to commercial airlines. Covers CASA regulations, ATPL conversion, costs, and employment prospects in 2026.",
+    canonical: `${BASE}/australia/guides/australia-military-to-airlines`,
+  },
+  "/australia/guides/australia-flight-instructor": {
+    title: "Becoming a Flight Instructor in Australia: Your 2026 Guide",
+    description: "A comprehensive guide for aspiring flight instructors in Australia. Learn about CASA regulations, training requirements, costs, and career opportunities in 2026.",
+    canonical: `${BASE}/australia/guides/australia-flight-instructor`,
+  },
+  "/australia/guides/pilot-seniority": {
+    title: "The Ultimate Guide to Pilot Seniority in Australia (2026)",
+    description: "Discover how pilot seniority works in Australia in 2026. Learn how it impacts your salary, aircraft type, base assignment, and career progression at major airlines.",
+    canonical: `${BASE}/australia/guides/pilot-seniority`,
+  },
+  "/australia/guides/australia-pilot-bases": {
+    title: "Navigating Australia's Pilot Bases: A 2026 Career Guide",
+    description: "Explore Australia's key pilot bases, understand CASA regulations, training costs, and career prospects for pilots in 2026. Your essential guide to aviation in Australia.",
+    canonical: `${BASE}/australia/guides/australia-pilot-bases`,
+  },
+  "/australia/guides/australia-pilot-commuting": {
+    title: "Navigating the Skies: A Comprehensive Guide to Pilot Commuting in Australia (2026)",
+    description: "Detailed guide for pilots commuting in Australia in 2026, covering CASA regulations, airline policies, cost of living, and lifestyle tips.",
+    canonical: `${BASE}/australia/guides/australia-pilot-commuting`,
+  },
+  "/australia/guides/australia-pilot-schedule": {
+    title: "Mastering Your Flight Path: The 2026 Australia Pilot Training Schedule & Costs",
+    description: "Comprehensive guide for aspiring pilots in Australia, covering 2026 CASA regulations, license requirements, detailed costs in AUD, and career pathways.",
+    canonical: `${BASE}/australia/guides/australia-pilot-schedule`,
+  },
+  "/australia/guides/australia-pilot-benefits": {
+    title: "Unlocking the Skies: Comprehensive Pilot Benefits in Australia (2026)",
+    description: "Explore the comprehensive benefits for pilots in Australia in 2026, including salaries, superannuation, health, and career growth with major airlines.",
+    canonical: `${BASE}/australia/guides/australia-pilot-benefits`,
+  },
+  "/australia/guides/australia-pilot-taxes": {
+    title: "Navigating Australian Pilot Taxes: A Comprehensive 2026 Guide",
+    description: "A detailed guide for Australian pilots on tax obligations, deductible expenses, and allowances for the 2026 financial year.",
+    canonical: `${BASE}/australia/guides/australia-pilot-taxes`,
+  },
+  // ─── Canada guides ────────────────────────────────────────────────────────
+  "/canada/guides/transport-canada-cpl-requirements": {
+    title: "The Ultimate Guide to Transport Canada Commercial Pilot License (CPL) Requirements in 2026",
+    description: "Discover the complete 2026 Transport Canada Commercial Pilot License (CPL) requirements, including flight hours, ground school, medical standards, and training costs.",
+    canonical: `${BASE}/canada/guides/transport-canada-cpl-requirements`,
+  },
+  "/canada/guides/tc-atpl-requirements": {
+    title: "Navigating the Skies: Transport Canada ATPL Requirements 2026",
+    description: "Detailed guide on Transport Canada ATPL (Aeroplane) requirements for 2026, covering age, medical, knowledge, flight experience, and skill tests.",
+    canonical: `${BASE}/canada/guides/tc-atpl-requirements`,
+  },
+  "/canada/guides/tc-medical-class-1": {
+    title: "Transport Canada Medical Class 1: Your Essential Guide to Aviation Fitness",
+    description: "Detailed guide on Transport Canada Medical Class 1 for aspiring pilots in Canada. Covers requirements, costs, and examination process for 2026.",
+    canonical: `${BASE}/canada/guides/tc-medical-class-1`,
+  },
+  "/canada/guides/canada-pilot-training-costs": {
+    title: "The Ultimate Guide to Pilot Training Costs in Canada (2026)",
+    description: "Detailed guide on pilot training costs in Canada for 2026, covering PPL, CPL, ATPL, and strategies to save money.",
+    canonical: `${BASE}/canada/guides/canada-pilot-training-costs`,
+  },
+  "/canada/guides/canada-flight-school-loans": {
+    title: "Navigating Flight School Loans in Canada: Your 2026 Financing Guide",
+    description: "Explore detailed options for flight school loans in Canada for 2026, including government programs, bank loans, scholarships, and essential tips for aspiring pilots.",
+    canonical: `${BASE}/canada/guides/canada-flight-school-loans`,
+  },
+  "/canada/guides/canada-cadet-programs": {
+    title: "Navigating Canada's Elite Pilot Cadet Programs: Your 2026 Guide",
+    description: "Explore Canada's top pilot cadet programs for 2026, including Flair, Porter, Jazz, and Air Transat. Understand eligibility, costs, and career paths.",
+    canonical: `${BASE}/canada/guides/canada-cadet-programs`,
+  },
+  "/canada/guides/canada-pilot-salary-2026": {
+    title: "Canada Pilot Salary 2026: A Comprehensive Guide to Earnings and Career Paths",
+    description: "Detailed guide on pilot salaries in Canada for 2026, covering entry-level to senior captain earnings, training costs, and Transport Canada regulations.",
+    canonical: `${BASE}/canada/guides/canada-pilot-salary-2026`,
+  },
+  "/canada/guides/canada-pilot-shortage": {
+    title: "Navigating the Canadian Skies: Understanding the 2026 Pilot Shortage",
+    description: "Explore the truth behind the 2026 Canadian pilot shortage. Learn about training costs, Transport Canada regulations, and career outlooks for new aviators.",
+    canonical: `${BASE}/canada/guides/canada-pilot-shortage`,
+  },
+  "/canada/guides/air-canada-jazz-cadet": {
+    title: "The Air Canada Jazz Cadet Program: Your Definitive Guide to a Pilot Career in Canada",
+    description: "Explore the Air Canada Jazz Cadet Program (Jazz Approach) in Canada. Learn about eligibility, costs, training, and career progression to become an airline pilot.",
+    canonical: `${BASE}/canada/guides/air-canada-jazz-cadet`,
+  },
+  "/canada/guides/westjet-encore-cadet": {
+    title: "Aspiring to the Skies: Your Definitive Guide to Becoming a WestJet Encore First Officer",
+    description: "A detailed guide for aspiring pilots on how to join WestJet Encore as a First Officer, covering training, costs, and career progression in Canada.",
+    canonical: `${BASE}/canada/guides/westjet-encore-cadet`,
+  },
+  "/canada/guides/porter-airlines-cadet-program": {
+    title: "Destination Porter: Your Definitive Guide to a Pilot Career with Porter Airlines",
+    description: "Navigate the Porter Airlines Cadet Program for 2026. Discover in-depth training modules, precise cost estimations in CAD, stringent eligibility, and a clear career trajectory to a Porter First Officer position.",
+    canonical: `${BASE}/canada/guides/porter-airlines-cadet-program`,
+  },
+  "/canada/guides/canada-regional-airlines": {
+    title: "Navigating the Skies: A Comprehensive Guide to Canada's Regional Airline Pilot Market",
+    description: "Explore the pathway to becoming a regional airline pilot in Canada, covering Transport Canada regulations, training costs, and career opportunities with major carriers in 2026.",
+    canonical: `${BASE}/canada/guides/canada-regional-airlines`,
+  },
+  "/canada/guides/canada-military-to-airlines": {
+    title: "From Cockpit to Commercial: A Canadian Military Pilot's Guide to Airline Transition",
+    description: "Comprehensive guide for Canadian military pilots transitioning to civilian airlines in 2026. Covers Transport Canada ATPL conversion, DND credits, costs, and airline hiring.",
+    canonical: `${BASE}/canada/guides/canada-military-to-airlines`,
+  },
+  "/canada/guides/canada-flight-instructor": {
+    title: "Mastering the Skies: Your Definitive Guide to Becoming a Flight Instructor in Canada (2026)",
+    description: "A comprehensive guide for aspiring flight instructors in Canada. Learn about Transport Canada requirements, training, costs, and career paths in 2026.",
+    canonical: `${BASE}/canada/guides/canada-flight-instructor`,
+  },
+  "/canada/guides/canada-pilot-seniority": {
+    title: "Mastering the Skies: A Comprehensive Guide to Pilot Seniority in Canada",
+    description: "Explore the Canadian pilot seniority system, its mechanics, impact on airline careers, and how to navigate career progression in 2026.",
+    canonical: `${BASE}/canada/guides/canada-pilot-seniority`,
+  },
+  "/canada/guides/canada-pilot-bases": {
+    title: "Navigating Canadian Skies: A Comprehensive Guide to Pilot Bases in 2026",
+    description: "Explore Canadian pilot bases for major and regional airlines in 2026, including Air Canada, WestJet, and Porter. Understand training, costs, and career paths.",
+    canonical: `${BASE}/canada/guides/canada-pilot-bases`,
+  },
+  "/canada/guides/canada-pilot-commuting": {
+    title: "Mastering the Commute: A Canadian Pilot's Guide to Seamless Operations",
+    description: "Comprehensive guide for Canadian pilots on commuting, covering Transport Canada regulations, major airline policies, costs, and strategies for a successful career.",
+    canonical: `${BASE}/canada/guides/canada-pilot-commuting`,
+  },
+  "/canada/guides/canada-pilot-schedule": {
+    title: "Mastering Your Flight Path: A Comprehensive Guide to Canadian Pilot Training Schedules",
+    description: "Detailed guide on Canadian pilot training schedules, including PPL, CPL, ATPL, costs, Transport Canada regulations, and career pathways for aspiring pilots in 2026.",
+    canonical: `${BASE}/canada/guides/canada-pilot-schedule`,
+  },
+  "/canada/guides/canada-pilot-benefits": {
+    title: "Navigating the Skies: A Comprehensive Guide to Pilot Training and Career Benefits in Canada (2026)",
+    description: "Detailed guide to pilot training in Canada, covering licenses, costs, career outlook, and benefits for 2026. Learn about PPL, CPL, ATPL, and top airlines.",
+    canonical: `${BASE}/canada/guides/canada-pilot-benefits`,
+  },
+  "/canada/guides/canada-pilot-taxes": {
+    title: "Navigating Canadian Pilot Taxes: A Comprehensive 2026 Guide",
+    description: "A detailed 2026 guide to Canadian pilot taxes, covering tuition tax credits, GST/HST implications for flight training, and essential deductions for pilots.",
+    canonical: `${BASE}/canada/guides/canada-pilot-taxes`,
+  },
+  // ─── Europe guides (batch 2) ──────────────────────────────────────────────
+  "/europe/guides/easa-cpl-requirements": {
+    title: "EASA Commercial Pilot License (CPL) Requirements 2026: Your Comprehensive Guide",
+    description: "A detailed guide to EASA CPL requirements in 2026, covering age, medical, flight hours, theoretical knowledge, and costs for aspiring commercial pilots in Europe.",
+    canonical: `${BASE}/europe/guides/easa-cpl-requirements`,
+  },
+  "/europe/guides/easa-atpl-requirements": {
+    title: "EASA ATPL Requirements: Your Comprehensive 2026 Guide to Becoming an Airline Pilot in Europe",
+    description: "A detailed 2026 guide to EASA ATPL requirements, covering integrated and modular training paths, costs, medicals, exams, and career outlook in Europe.",
+    canonical: `${BASE}/europe/guides/easa-atpl-requirements`,
+  },
+  "/europe/guides/easa-medical-class-1": {
+    title: "EASA Class 1 Medical Certificate: The Complete 2026 Guide for European Pilots",
+    description: "Detailed guide on EASA Class 1 medical certificate for European pilots, covering requirements, examination process, 2026 costs, and validity.",
+    canonical: `${BASE}/europe/guides/easa-medical-class-1`,
+  },
+  "/europe/guides/pilot-training-costs": {
+    title: "Navigating European Skies: A Comprehensive Guide to Pilot Training Costs in 2026",
+    description: "Explore the detailed costs of pilot training in Europe for 2026, covering EASA regulations, integrated and modular ATPL programs, and financial planning.",
+    canonical: `${BASE}/europe/guides/pilot-training-costs`,
+  },
+  "/europe/guides/europe-flight-school-loans": {
+    title: "Navigating Flight School Loans in Europe: Your 2026 Guide",
+    description: "Explore detailed insights into European flight school loans, EASA regulations, and pilot training costs in 2026. Your essential guide to aviation financing.",
+    canonical: `${BASE}/europe/guides/europe-flight-school-loans`,
+  },
+  "/europe/guides/europe-cadet-programs": {
+    title: "Navigating Europe's Elite Pilot Training: Your 2026 Guide to Cadet Programs and EASA Licensing",
+    description: "Explore the definitive guide to pilot training in Europe for 2026, covering EASA regulations, cadet programs, costs, and career paths.",
+    canonical: `${BASE}/europe/guides/europe-cadet-programs`,
+  },
+  "/europe/guides/pilot-salary-2026": {
+    title: "European Pilot Salary & Training Guide 2026",
+    description: "Discover the latest 2026 pilot salaries in Europe, compare LCCs vs Legacy carriers, and understand EASA Part-FCL licensing requirements.",
+    canonical: `${BASE}/europe/guides/pilot-salary-2026`,
+  },
+  "/europe/guides/europe-pilot-shortage": {
+    title: "Navigating the European Pilot Shortage: Opportunities and Outlook for 2026",
+    description: "Explore the European pilot shortage in 2026, including EASA regulations, training costs, airline demand, and career prospects for future pilots. Understand the market dynamics and prepare for a thriving aviation career.",
+    canonical: `${BASE}/europe/guides/europe-pilot-shortage`,
+  },
+  "/europe/guides/lufthansa-european-flight-academy": {
+    title: "Lufthansa European Flight Academy: The Complete 2026 Guide",
+    description: "Complete 2026 guide to the Lufthansa European Flight Academy (EFA) cadet program. Learn about the €120,000 cost, Brain Capital ISA, DLR test, and career paths.",
+    canonical: `${BASE}/europe/guides/lufthansa-european-flight-academy`,
+  },
+  "/europe/guides/air-france-klm-cadet-pilot-program": {
+    title: "Air France-KLM Cadet Pilot Programs 2026: Your Elite Path to the Cockpit",
+    description: "Explore the Air France and KLM Cadet Pilot Programs for 2026. Detailed insights into eligibility, selection process, training, costs, and career opportunities.",
+    canonical: `${BASE}/europe/guides/air-france-klm-cadet-pilot-program`,
+  },
+  "/europe/guides/europe-regional-airlines-pilot-training": {
+    title: "Europe Regional Airlines: Your Definitive Guide to Pilot Training in 2026",
+    description: "Comprehensive guide to becoming a regional airline pilot in Europe, covering EASA ATPL/MPL, training costs, financing, and key airlines for 2026.",
+    canonical: `${BASE}/europe/guides/europe-regional-airlines-pilot-training`,
+  },
+  "/europe/guides/military-to-airlines": {
+    title: "From Military Cockpit to Commercial Jet: Navigating Europe's Airline Transition",
+    description: "Detailed guide for military pilots transitioning to European airlines. Covers EASA ATPL conversion, regulations, costs, and job prospects in 2026.",
+    canonical: `${BASE}/europe/guides/military-to-airlines`,
+  },
+  "/europe/guides/europe-flight-instructor": {
+    title: "Mastering the Skies: Your Definitive Guide to Becoming an EASA Flight Instructor in Europe (2026)",
+    description: "A comprehensive guide for aspiring EASA Flight Instructors in Europe, detailing 2026 regulations, training costs, career outlook, and essential requirements.",
+    canonical: `${BASE}/europe/guides/europe-flight-instructor`,
+  },
+  "/europe/guides/europe-pilot-seniority": {
+    title: "Navigating the Skies: A Comprehensive Guide to Pilot Seniority in European Aviation (2026)",
+    description: "Explore pilot seniority in Europe for 2026, covering EASA, major airlines like Lufthansa, Air France, BA, career progression, and training costs.",
+    canonical: `${BASE}/europe/guides/europe-pilot-seniority`,
+  },
+  // ─── UAE guides ───────────────────────────────────────────────────────────
+  "/uae/guides/uae-pilot-training-costs": {
+    title: "Unveiling the True Cost of Pilot Training in the UAE (2026 Guide)",
+    description: "Explore the detailed costs of pilot training in the UAE for 2026, including GCAA regulations, flight schools like EFTA and Alpha Aviation, and financing options.",
+    canonical: `${BASE}/uae/guides/uae-pilot-training-costs`,
+  },
+  "/uae/guides/emirates-cadet-pilot-program": {
+    title: "Emirates Cadet Pilot Program: Your Definitive 2026 Guide",
+    description: "Explore the Emirates Cadet Pilot Program for 2026. Learn about eligibility, GCAA regulations, training at EFTA, costs in AED, and career opportunities with Emirates.",
+    canonical: `${BASE}/uae/guides/emirates-cadet-pilot-program`,
+  },
+  "/uae/guides/etihad-cadet-pilot-program": {
+    title: "The Elite Path: Etihad Airways Cadet Pilot Program 2026",
+    description: "Explore the Etihad Airways Cadet Pilot Program for 2026. Learn about eligibility, the MPL training structure, GCAA regulations, and career opportunities for UAE nationals.",
+    canonical: `${BASE}/uae/guides/etihad-cadet-pilot-program`,
+  },
+  "/uae/guides/air-arabia-cadet-program": {
+    title: "The Definitive Guide to the Air Arabia Cadet Pilot Program (2026)",
+    description: "Comprehensive guide to the Air Arabia Cadet Pilot Program for 2026. Learn about eligibility, GCAA regulations, training structure, and estimated costs in AED.",
+    canonical: `${BASE}/uae/guides/air-arabia-cadet-program`,
+  },
+  "/uae/guides/uae-pilot-salary-2026": {
+    title: "UAE Pilot Salary Guide 2026: Unveiling Tax-Free Earning Potential",
+    description: "Explore the lucrative tax-free pilot salaries and extensive benefits offered by UAE airlines like Emirates in 2026. Detailed insights for First Officers and Captains.",
+    canonical: `${BASE}/uae/guides/uae-pilot-salary-2026`,
+  },
+  "/uae/guides/uae-pilot-lifestyle": {
+    title: "Soaring High: A Comprehensive Guide to the UAE Pilot Lifestyle & Career in 2026",
+    description: "Explore the UAE pilot lifestyle in 2026: GCAA regulations, training costs, top airlines like Emirates & Flydubai, tax-free salaries, and career benefits.",
+    canonical: `${BASE}/uae/guides/uae-pilot-lifestyle`,
+  },
+  "/uae/guides/uae-medical-class-1": {
+    title: "GCAA Class 1 Medical Certificate: Your Comprehensive 2026 Guide for UAE Pilots",
+    description: "A detailed guide to the GCAA Class 1 Medical Certificate in the UAE for 2026, covering requirements, validity, renewal, and approved medical centers.",
+    canonical: `${BASE}/uae/guides/uae-medical-class-1`,
+  },
+  "/uae/guides/uae-pilot-shortage": {
+    title: "Navigating the Skies: The UAE Pilot Training Market in 2026",
+    description: "Explore the UAE pilot training market in 2026, covering regulations, costs, and career opportunities amidst a growing pilot shortage.",
+    canonical: `${BASE}/uae/guides/uae-pilot-shortage`,
+  },
+  // ─── South Africa guides ──────────────────────────────────────────────────
+  "/south-africa/guides/sacpl-requirements": {
+    title: "Navigating the Skies: Your Comprehensive Guide to the South African Commercial Pilot License (CPL) in 2026",
+    description: "Detailed guide to obtaining a Commercial Pilot License (CPL) in South Africa for 2026, covering SACAA requirements, training costs, and career opportunities.",
+    canonical: `${BASE}/south-africa/guides/sacpl-requirements`,
+  },
+  "/south-africa/guides/sa-atpl-requirements": {
+    title: "South African ATPL Requirements 2026: Your Definitive Guide",
+    description: "Detailed guide to South African ATPL requirements for 2026, covering SACAA regulations, training, costs, and major airlines. Essential for aspiring pilots.",
+    canonical: `${BASE}/south-africa/guides/sa-atpl-requirements`,
+  },
+  "/south-africa/guides/sacaa-class-1-medical-certificate": {
+    title: "SACAA Class 1 Medical Certificate: Your Definitive 2026 Guide for Aspiring Pilots",
+    description: "Comprehensive guide to the SACAA Class 1 Medical Certificate for aspiring pilots in South Africa. Covers 2026 requirements, costs, disqualifying conditions, and renewal.",
+    canonical: `${BASE}/south-africa/guides/sacaa-class-1-medical-certificate`,
+  },
+  "/south-africa/guides/pilot-training-costs": {
+    title: "The Definitive Guide to Pilot Training Costs in South Africa (2026)",
+    description: "Explore the comprehensive guide to pilot training costs in South Africa for 2026, including SACAA regulations, licensing pathways, and financing options.",
+    canonical: `${BASE}/south-africa/guides/pilot-training-costs`,
+  },
+  "/south-africa/guides/south-africa-cadet-programs": {
+    title: "Navigating South Africa's Elite Pilot Cadet Programs in 2026",
+    description: "Explore South Africa's top pilot cadet programs for 2026. Understand SACAA regulations, SAA requirements, training costs, and funding options for a successful aviation career.",
+    canonical: `${BASE}/south-africa/guides/south-africa-cadet-programs`,
+  },
+  "/south-africa/guides/pilot-salary-2026": {
+    title: "Pilot Salary in South Africa 2026: A Comprehensive Guide",
+    description: "Explore detailed pilot salary expectations in South Africa for 2026, covering entry-level to experienced captains, major airlines, and SACAA regulations.",
+    canonical: `${BASE}/south-africa/guides/pilot-salary-2026`,
+  },
+  "/south-africa/guides/south-africa-pilot-shortage": {
+    title: "Navigating the Skies: A Comprehensive Guide to South Africa's Pilot Training Market Amidst 2026 Challenges",
+    description: "Explore the South African pilot training landscape in 2026, including the nuanced pilot shortage, SACAA regulations, and detailed cost breakdowns.",
+    canonical: `${BASE}/south-africa/guides/south-africa-pilot-shortage`,
+  },
+  "/south-africa/guides/south-africa-regional-airlines-pilot-training": {
+    title: "Navigating the Skies: A Comprehensive Guide to Pilot Training for South African Regional Airlines",
+    description: "A detailed guide for aspiring pilots in South Africa, covering SACAA regulations, training costs, regional airline career paths, and essential insights for 2026.",
+    canonical: `${BASE}/south-africa/guides/south-africa-regional-airlines-pilot-training`,
+  },
+  "/south-africa/guides/military-to-airlines": {
+    title: "Transitioning from Military to Airline Pilot in South Africa",
+    description: "A detailed guide for South African Air Force (SAAF) pilots transitioning to commercial airlines, covering SACAA regulations, training costs, and career prospects in 2026.",
+    canonical: `${BASE}/south-africa/guides/military-to-airlines`,
+  },
+  // ─── New Zealand guides ───────────────────────────────────────────────────
+  "/new-zealand/guides/nz-cpl-requirements": {
+    title: "Mastering the Skies: Your Definitive Guide to New Zealand CPL Requirements (2026)",
+    description: "A comprehensive guide to New Zealand Commercial Pilot License (CPL) requirements for 2026, including age, medical, flight hours, costs, and career paths.",
+    canonical: `${BASE}/new-zealand/guides/nz-cpl-requirements`,
+  },
+  "/new-zealand/guides/nz-atpl-requirements": {
+    title: "Mastering the Skies: Your Definitive Guide to New Zealand ATPL Requirements (2026)",
+    description: "A comprehensive guide to New Zealand ATPL requirements for 2026, detailing CAA NZ regulations, flight hours, costs, and career pathways for aspiring airline pilots.",
+    canonical: `${BASE}/new-zealand/guides/nz-atpl-requirements`,
+  },
+  "/new-zealand/guides/nz-medical-class-1": {
+    title: "New Zealand Class 1 Medical Certificate: Your Comprehensive Guide to Pilot Medical Certification in 2026",
+    description: "Comprehensive guide to obtaining a New Zealand CAA Class 1 Medical Certificate in 2026. Learn about requirements, costs, the application process, and medical standards.",
+    canonical: `${BASE}/new-zealand/guides/nz-medical-class-1`,
+  },
+  "/new-zealand/guides/new-zealand-pilot-training-costs": {
+    title: "Navigating the Skies: A Comprehensive Guide to Pilot Training Costs in New Zealand (2026)",
+    description: "Explore the detailed costs of pilot training in New Zealand for 2026, including PPL, CPL, ATPL, flight school fees, CAA NZ regulations, and funding options.",
+    canonical: `${BASE}/new-zealand/guides/new-zealand-pilot-training-costs`,
+  },
+  "/new-zealand/guides/new-zealand-cadet-programs": {
+    title: "Navigating New Zealand's Pilot Cadet Programs & Training Pathways in 2026",
+    description: "Explore New Zealand's pilot cadet programs, including Air New Zealand's Mangōpare, and independent training pathways for 2026. Detailed insights on regulations, costs, and career opportunities.",
+    canonical: `${BASE}/new-zealand/guides/new-zealand-cadet-programs`,
+  },
+  "/new-zealand/guides/air-new-zealand-cadet-pilot-training": {
+    title: "Navigating the Skies: A Comprehensive Guide to Pilot Training in New Zealand and the Air New Zealand Cadetship",
+    description: "Explore the comprehensive guide to pilot training in New Zealand, including CAA NZ regulations, estimated costs, leading flight schools, and details on the Air New Zealand Mangōpare Pilot Cadetship. Your essential resource for aspiring aviators in Aotearoa.",
+    canonical: `${BASE}/new-zealand/guides/air-new-zealand-cadet-pilot-training`,
+  },
+  "/new-zealand/guides/new-zealand-pilot-salary-2026": {
+    title: "New Zealand Pilot Salary Guide 2026: Comprehensive Earnings & Career Outlook",
+    description: "Explore the 2026 pilot salary landscape in New Zealand, including Air New Zealand, regional airlines, and factors influencing earnings. Understand CAA regulations and career pathways.",
+    canonical: `${BASE}/new-zealand/guides/new-zealand-pilot-salary-2026`,
+  },
+  "/new-zealand/guides/new-zealand-pilot-shortage": {
+    title: "Navigating the New Zealand Pilot Shortage: Your 2026 Training and Career Guide",
+    description: "Explore the New Zealand pilot shortage in 2026, including CAA NZ regulations, training costs (NZD), top flight schools, and career opportunities with major airlines. Your essential guide to becoming a pilot in NZ.",
+    canonical: `${BASE}/new-zealand/guides/new-zealand-pilot-shortage`,
+  },
+  "/new-zealand/guides/new-zealand-regional-airlines-pilot-training": {
+    title: "Navigating the Skies: A Comprehensive Guide to Pilot Training in New Zealand's Regional Airline Market (2026)",
+    description: "Comprehensive guide to pilot training in New Zealand for 2026, covering CAA NZ regulations, PPL, CPL, ATPL costs, regional airlines, and career paths.",
+    canonical: `${BASE}/new-zealand/guides/new-zealand-regional-airlines-pilot-training`,
+  },
 };
 
 /**
