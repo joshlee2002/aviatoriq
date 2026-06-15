@@ -19,7 +19,7 @@ export default function BASpeedbirdAcademy() {
       ]}
       faqSchema={[
         { question: "What is the British Airways Speedbird Academy?", answer: "The Speedbird Academy is British Airways' flagship cadet pilot programme. Successful applicants train at CAE Oxford Aviation Academy and are guaranteed a First Officer position with British Airways on completion. It is one of the most competitive cadet programmes in the world." },
-        { question: "How much does the BA Speedbird Academy cost?", answer: "The Speedbird Academy is self-funded. Training at CAE Oxford costs approximately £100,000–£130,000. British Airways does not pay for your training, but the guaranteed job offer at the end makes the investment more secure than self-sponsored routes." },
+        { question: "How much does the BA Speedbird Academy cost?", answer: "The Speedbird Academy is self-funded. Training at CAE Oxford Aviation Academy costs £99,900 for the integrated ATPL programme. British Airways does not pay for your training, but the guaranteed job offer at the end makes the investment more secure than self-sponsored routes." },
         { question: "How competitive is the BA Speedbird Academy?", answer: "Extremely competitive. British Airways typically receives 2,000–4,000 applications per intake for approximately 20–30 cadet places. The acceptance rate is approximately 1–2%." },
         { question: "What are the minimum requirements for the BA Speedbird Academy?", answer: "You must be at least 18 years old, hold a minimum of 5 GCSEs (grades A-C/9-4) including Maths and English, have the right to live and work in the UK, and pass a Class 1 Medical. A degree is not required but is common among successful applicants." },
         { question: "Where does Speedbird Academy training take place?", answer: "Training takes place at CAE Oxford Aviation Academy, based at London Oxford Airport. CAE is British Airways' exclusive training partner for the Speedbird Academy programme." },
@@ -104,7 +104,7 @@ export default function BASpeedbirdAcademy() {
                 The training programme broadly follows this structure:
               </p>
               <ul>
-                <li><strong>Phase 1 — Ground School:</strong> ATPL theory covering 14 subjects including Air Law, Meteorology, Navigation, Aircraft General Knowledge, and Human Performance. This phase typically lasts 6–9 months and culminates in the ATPL theory examinations.</li>
+                <li><strong>Phase 1 — Ground School:</strong> ATPL theory covering 13 subjects including Air Law, Meteorology, Navigation, Aircraft General Knowledge, and Human Performance. This phase typically lasts 6–9 months and culminates in the UK CAA ATPL theory examinations.</li>
                 <li><strong>Phase 2 — Basic Flying Training:</strong> Single-engine piston flying covering the Private Pilot Licence (PPL) and initial hour-building. This phase builds fundamental stick-and-rudder skills and situational awareness.</li>
                 <li><strong>Phase 3 — Advanced Flying Training:</strong> Multi-engine flying, Instrument Rating (IR), and Commercial Pilot Licence (CPL) skills test. This is the most technically demanding phase of training.</li>
                 <li><strong>Phase 4 — MCC/JOC:</strong> Multi-Crew Cooperation (MCC) and Jet Orientation Course (JOC) — training in a jet simulator to prepare for multi-crew airline operations. This is where the transition from single-pilot to airline operations begins.</li>
@@ -127,13 +127,13 @@ export default function BASpeedbirdAcademy() {
                 This is a significant financial commitment, and it is important to understand the full picture before applying. The key financial considerations are:
               </p>
               <ul>
-                <li><strong>Training fees:</strong> Approximately £100,000–£130,000 for the full integrated ATPL programme at CAE Oxford</li>
+                <li><strong>Training fees:</strong> £99,900 for the full integrated ATPL programme at CAE Oxford Aviation Academy (confirmed 2026 price)</li>
                 <li><strong>Living costs:</strong> You will need to fund accommodation, food, and transport during training — typically £12,000–£20,000 over the training period</li>
                 <li><strong>Type rating:</strong> Usually included within the programme cost for Speedbird Academy cadets, but confirm this at application</li>
                 <li><strong>Financing:</strong> CAE Oxford and several specialist aviation finance providers offer loans for pilot training. Interest rates and terms vary significantly — compare carefully</li>
               </ul>
               <p>
-                The guaranteed job offer at the end of the programme is the key factor that makes this financial commitment more manageable than self-sponsored training. A First Officer salary at British Airways starts at approximately £40,000–£55,000 and increases significantly with experience and seniority. The investment is substantial, but the career trajectory is clear.
+                The guaranteed job offer at the end of the programme is the key factor that makes this financial commitment more manageable than self-sponsored training. A First Officer salary at British Airways starts at approximately £70,000–£90,000 in the first year and rises to £100,000–£125,000 with experience. The investment is substantial, but the career trajectory is clear.
               </p>
             </>
           ),
@@ -143,7 +143,7 @@ export default function BASpeedbirdAcademy() {
           content: (
             <>
               <p>
-                Graduates of the Speedbird Academy join British Airways as First Officers, typically on the Airbus A320 family (short-haul) or Boeing 787/777 (long-haul), depending on the cohort's allocation. The starting salary for a BA First Officer is approximately £40,000–£55,000, rising to £70,000–£90,000 with experience.
+                Graduates of the Speedbird Academy join British Airways as First Officers, typically on the Airbus A320 family (short-haul) or Boeing 787/777 (long-haul), depending on the cohort's allocation. The starting salary for a BA First Officer is approximately £70,000–£90,000, rising to £100,000–£125,000 with experience.
               </p>
               <p>
                 Career progression at British Airways follows a seniority-based system. Promotion to Captain depends on seniority, vacancies, and performance assessments. In the current climate of pilot shortages and airline expansion, the upgrade timeline has shortened considerably — many BA First Officers are upgrading to Captain within 8–12 years, compared to 15–20 years in previous generations.

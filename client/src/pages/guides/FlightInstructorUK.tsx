@@ -5,7 +5,7 @@ const FlightInstructorUK = () => {
   return (
     <GuideLayout
       title="How to Become a Flight Instructor in the UK: FI Rating, Salary & Career Path"
-      subtitle="Unlock your aviation career by becoming a Flight Instructor in the UK, a rewarding path for hour-building and professional development."
+      subtitle="The Flight Instructor rating is the most practical way to build hours toward an airline career. Here is what it costs, what it pays, and how long it takes."
       canonical="/guides/flight-instructor-uk"
       metaDescription="Comprehensive guide on becoming a Flight Instructor (FI) in the UK, covering rating requirements, training costs, salary expectations, and career progression to airlines."
       faqSchema={[
@@ -19,7 +19,7 @@ const FlightInstructorUK = () => {
         },
         {
           question: "What is the typical salary for a Flight Instructor in the UK?",
-          answer: "A Flight Instructor's (FI) salary in the UK can vary widely depending on experience, location, and the type of flight school. Entry-level FIs, often working under a 'restricted' rating, might expect to earn between £25,000 and £30,000 per year. More experienced and unrestricted FIs, especially those working at larger academies or offering specialised instruction, can command salaries ranging from £30,000 to £40,000 or more. Many FIs also supplement their income through additional flying opportunities or ground instruction.",
+          answer: "A Flight Instructor's (FI) salary in the UK depends on experience and school. Entry-level restricted FIs typically earn £28,000–£32,000 per year. Experienced unrestricted FIs at larger academies earn £35,000–£50,000. Many FIs supplement income with ground instruction and simulator work. Pay at the integrated schools (CAE, Skyborne, Leading Edge) is generally higher than at smaller Part 61 clubs.",
         },
         {
           question: "What is the difference between a Restricted and Unrestricted FI rating?",
@@ -45,7 +45,7 @@ const FlightInstructorUK = () => {
               <img src="/manus-storage/instructor-teaching_bbff2f90.jpg" alt="Flight instructor teaching" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/dual-instruction_48048c62.jpg" alt="Dual instruction flying" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                The role of an FI is multifaceted. You'll be responsible for teaching student pilots the intricacies of flight, from basic manoeuvres to complex navigation and emergency procedures. This process of teaching reinforces your own knowledge and ensures a robust understanding of aviation regulations and best practices. the constant interaction with diverse students and scenarios builds resilience and adaptability, qualities highly sought after by airlines.
+                The role of an FI is multifaceted. You will be responsible for teaching student pilots the intricacies of flight, from basic manoeuvres to complex navigation and emergency procedures. This process of teaching reinforces your own knowledge and ensures a robust understanding of aviation regulations and best practices. The constant interaction with diverse students and scenarios builds resilience and adaptability, qualities highly sought after by airlines.
               </p>
               <p>
                 Beyond the personal and professional development, instructing offers a structured environment to build significant flight hours. Unlike other hour-building methods that might involve repetitive cross-country flights, instructing provides varied flying experiences, often in different aircraft types, contributing to a well-rounded pilot profile. It's a pathway that transforms you from a pilot who can fly into a pilot who can teach, lead, and inspire.

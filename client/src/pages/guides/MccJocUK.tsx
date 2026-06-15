@@ -36,19 +36,15 @@ const MccJocUK = () => {
       ctaText="Generate my personalised roadmap"
       sections={[
         {
-          heading: "Introduction to MCC & JOC",
+          heading: "What are MCC and JOC?",
           content: (
             <>
               <p>
-                For aspiring airline pilots in the UK, the journey from single-engine aircraft to the complex world of multi-crew jet operations involves several critical training phases. Among the most pivotal are the Multi-Crew Cooperation (MCC) and Jet Orientation Course (JOC). These courses are not merely additional qualifications; they are fundamental bridges that prepare pilots for the demands of a professional airline career, ensuring safety, efficiency, and effective teamwork in the cockpit.
+                The Multi-Crew Cooperation (MCC) course and Jet Orientation Course (JOC) are the final training steps before a newly qualified pilot applies for their first airline type rating. They bridge the gap between single-pilot flying and the two-crew jet environment you will work in for the rest of your career.
               </p>
               <img src="/manus-storage/mcc-simulator_d3ac3716.jpg" alt="Multi crew cooperation simulator" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/joc-cockpit_aa406b45.jpg" alt="Jet orientation course cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                The transition from flying solo to operating as part of a two-pilot crew in a sophisticated jet airliner requires a significant shift in mindset and skill set. MCC training focuses on the 'soft skills' of aviation – communication, leadership, decision-making, and workload management – all within a multi-crew environment. Complementing this, the JOC provides the practical 'hard skills' necessary to handle the unique characteristics of jet aircraft, such as their speed, inertia, and advanced systems.
-              </p>
-              <p>
-                This comprehensive guide will demystify MCC and JOC courses in the UK, explaining what they entail, their regulatory standing, typical costs, duration, and how they fit into your overall pilot training pathway. We will also delve into the distinctions between standard MCC, JOC, and the enhanced Airline Pilot Standard Multi-Crew Cooperation (APS MCC), helping you make informed decisions for your future career.
+                MCC focuses on crew resource management — communication, decision-making, workload sharing, and standard operating procedures in a two-pilot cockpit. JOC adds jet-specific handling: swept-wing aerodynamics, high-altitude operations, and the faster pace of jet operations. Together they make you a credible candidate for an airline type rating course.
               </p>
             </>
           ),
@@ -102,16 +98,16 @@ const MccJocUK = () => {
                 Here's a quick comparison of the course types:
               </p>
               <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
                     <tr>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Course Type</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Primary Focus</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Regulatory Requirement</th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Simulator Hours (Approx.)</th>
+                      <th className="px-4 py-3 font-semibold">Course Type</th>
+                      <th className="px-4 py-3 font-semibold">Primary Focus</th>
+                      <th className="px-4 py-3 font-semibold">Regulatory Requirement</th>
+                      <th className="px-4 py-3 font-semibold">Simulator Hours (Approx.)</th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
+                  <tbody className="divide-y divide-white/10 text-white/80">
                     <tr>
                       <td className="px-6 py-4 whitespace-nowrap">Standard MCC</td>
                       <td className="px-6 py-4 whitespace-nowrap">Crew Resource Management, SOPs, Teamwork</td>
@@ -185,7 +181,7 @@ const MccJocUK = () => {
                 While the JOC is generally optional from a regulatory standpoint, its impact on a pilot's readiness and attractiveness to airlines cannot be overstated. It provides a crucial head start in understanding jet aircraft operations, making the subsequent type rating course less steep and improving performance during airline simulator assessments. Many airlines view JOC completion as a strong indicator of a candidate's proactive approach to training and commitment to a jet environment.
               </p>
               <p>
-                the emergence of the APS MCC has introduced a new dynamic. As noted, some airlines, particularly those with high-volume recruitment and demanding operational profiles, explicitly prefer or even require candidates to have completed an APS MCC. This is due to the enhanced training and higher simulator hours, which are believed to produce more 'airline-ready' pilots, reducing the airlines' own training burden. Therefore, understanding the specific requirements and preferences of your target airlines is crucial when deciding on your MCC/JOC training pathway.
+                The emergence of the APS MCC has introduced a new dynamic. As noted, some airlines, particularly those with high-volume recruitment and demanding operational profiles, explicitly prefer or even require candidates to have completed an APS MCC. This is due to the enhanced training and higher simulator hours, which are believed to produce more 'airline-ready' pilots, reducing the airlines' own training burden. Therefore, understanding the specific requirements and preferences of your target airlines is crucial when deciding on your MCC/JOC training pathway.
               </p>
             </>
           ),

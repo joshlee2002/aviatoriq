@@ -12,7 +12,7 @@ const Class1MedicalDisqualifiers = () => {
         { question: "What conditions automatically disqualify you from a Class 1 medical?", answer: "Conditions that typically result in automatic disqualification include insulin-dependent diabetes, active psychosis, severe epilepsy, and certain cardiovascular conditions. However, many conditions that previously disqualified candidates are now manageable under an Operational Multi-crew Limitation (OML)." },
         { question: "Can I fly commercially with glasses or contact lenses?", answer: "Yes. Corrected vision is acceptable for a Class 1 medical. Your uncorrected vision must meet minimum standards, and your corrected vision must reach the required level. Laser eye surgery (LASIK/PRK) is also accepted by the CAA after a suitable recovery period, typically 6–12 months." },
         { question: "Does depression or anxiety disqualify you from a Class 1 medical?", answer: "Not automatically. Mild to moderate depression or anxiety that is well-controlled with medication or therapy may be compatible with a Class 1 medical under OML. The CAA assesses each case individually. Severe or unstable mental health conditions are more likely to result in disqualification." },
-        { question: "How much does a Class 1 medical cost in the UK?", answer: "A Class 1 medical examination with a CAA-approved Aeromedical Centre (AMC) typically costs £350–£500 in the UK. It is strongly recommended to complete this before committing to expensive flight training." },
+        { question: "How much does a Class 1 medical cost in the UK?", answer: "A Class 1 medical examination at a UK CAA-approved Aeromedical Medical Centre (AeMC) costs £957–£1,398 depending on the centre and whether you need a dual UK+EASA certificate. Centreline at Gatwick charges £1,181 inc VAT for a UK-only initial; Birmingham AeMC charges £1,198. It is strongly recommended to complete this before committing to expensive flight training." },
         { question: "What is an OML and how does it affect my flying career?", answer: "An Operational Multi-crew Limitation (OML) allows a pilot with a certain medical condition to fly commercially, provided they always fly with a co-pilot who holds a full, unrestricted medical. Most commercial airline flying is multi-crew anyway, so an OML has minimal practical impact on an airline career." },
       ]}
       readTime="8 min read"
@@ -42,7 +42,6 @@ const Class1MedicalDisqualifiers = () => {
                 CAA Class 1 medical assessment areas. Source: CAA Medical Department, 2026.
               </p>
               <img src="/manus-storage/medical-exam_79659228.jpg" alt="Aviation medical examination" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/class1-medical-conditions_c671ee2f.png" alt="Class 1 medical conditions" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
             </>
           ),
         },

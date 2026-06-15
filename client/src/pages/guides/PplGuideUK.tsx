@@ -5,7 +5,7 @@ const PplGuideUK = () => {
   return (
     <GuideLayout
       title="Private Pilot Licence (PPL) UK: The Complete 2026 Guide"
-      subtitle="Your definitive resource for understanding the requirements, costs, and journey to obtaining your PPL in the United Kingdom."
+      subtitle="Everything you need to know about getting your Private Pilot Licence in the UK in 2026: requirements, costs, theory exams, and what comes next."
       canonical="/guides/ppl-uk"
       metaDescription="A comprehensive 2026 guide to obtaining your Private Pilot Licence (PPL) in the UK, covering requirements, costs, theory, medicals, and next steps."
       faqSchema={[
@@ -45,10 +45,7 @@ const PplGuideUK = () => {
               <img src="/manus-storage/solo-flight_ac4d5964.jpg" alt="Student pilot solo flight" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/small-aircraft_e3c4488b.jpg" alt="Small aircraft flying" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                The UK PPL is governed by Part-FCL regulations, which are derived from European Union Aviation Safety Agency (EASA) standards but are now administered independently by the UK CAA post-Brexit. While the core principles remain similar to international PPLs, specific UK regulations and procedures apply. Aspiring pilots must meet certain age, medical, theoretical knowledge, and practical flight experience requirements to qualify for the licence. The journey is challenging but immensely rewarding, opening doors to further aviation qualifications and experiences.
-              </p>
-              <p>
-                Before embarking on your PPL journey, it's crucial to understand the commitment involved in terms of time, effort, and financial investment. This guide aims to provide a comprehensive overview of what to expect in 2026, drawing on current CAA regulations and realistic cost estimates. Whether your ultimate goal is to fly commercially or simply to enjoy the skies, the PPL is where it all begins.
+                The UK PPL is governed by Part-FCL regulations, administered independently by the UK CAA post-Brexit. The core standards remain closely aligned with EASA, but they are separate licences. If you intend to work for an EASA airline such as Ryanair, you will need a separate EASA licence in addition to your UK PPL — something worth planning for from the start.
               </p>
             </>
           ),
@@ -195,7 +192,7 @@ const PplGuideUK = () => {
                 The path to a CPL typically involves accumulating additional flight hours beyond the PPL minimums, often reaching 150-200 hours, including more complex cross-country flights and night flying. You will also undertake advanced theoretical knowledge training covering subjects like Air Law, Aircraft General Knowledge, Flight Planning, Human Performance, Meteorology, Navigation, Operational Procedures, Principles of Flight, and Communications, but at a much deeper, commercial level. This culminates in a series of challenging theoretical exams and a rigorous practical skill test.
               </p>
               <p>
-                After obtaining your CPL, and often an Instrument Rating (IR) and Multi-Engine Piston (MEP) rating, you can then work towards your 'frozen ATPL'. This involves passing the 14 ATPL theoretical exams. Once you gain sufficient experience (typically 1500 hours of flight time), your 'frozen ATPL' becomes a full ATPL, allowing you to act as pilot in command of multi-pilot aircraft in commercial air transport. The journey is long and demanding, but the PPL provides the essential foundation and initial experience.
+                After obtaining your CPL, and often an Instrument Rating (IR) and Multi-Engine Piston (MEP) rating, you can then work towards your 'frozen ATPL'. This involves passing the 13 UK CAA ATPL theoretical knowledge exams. Once you gain sufficient experience (typically 1500 hours of flight time), your 'frozen ATPL' becomes a full ATPL, allowing you to act as pilot in command of multi-pilot aircraft in commercial air transport. The journey is long and demanding, but the PPL provides the essential foundation and initial experience.
               </p>
             </>
           ),

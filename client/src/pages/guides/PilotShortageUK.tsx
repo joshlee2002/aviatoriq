@@ -99,7 +99,7 @@ export default function PilotShortageUK() {
                 If you fail multiple ATPL exams, struggle through your flight training, or perform poorly in a simulator assessment, you will still struggle to find a job. The shortage means there are jobs available for <em>good</em> pilots; it does not guarantee a job for <em>every</em> pilot.
               </p>
               <p>
-                Your goal should be to pass your exams first time, build a strong training record, and prepare obsessively for airline assessments. If you do that, the 2026 market offers unparalleled opportunities.
+                Your goal should be to pass your exams first time, build a strong training record, and prepare obsessively for airline assessments. If you do that, the 2026 market is the most favourable for new entrants in a generation.
               </p>
             </>
           ),
