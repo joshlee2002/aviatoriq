@@ -909,7 +909,7 @@ const obstacleQuiz: Quiz = {
       question: "What best describes your current financial situation relative to pilot training?",
       options: [
         { value: "finance", label: "I have no realistic path to funding it right now", emoji: "❌" },
-        { value: "finance", label: "I could fund it but it would require major life changes", emoji: "⚖️" },
+        { value: "finance2", label: "I could fund it but it would require major life changes", emoji: "⚖️" },
         { value: "time", label: "Finance isn't the issue — time and lifestyle are", emoji: "🕐" },
         { value: "confidence", label: "I have the money but I'm not sure I should spend it on this", emoji: "🤔" },
       ],

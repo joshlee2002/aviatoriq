@@ -270,3 +270,12 @@
 - [x] Add Notify School button in lead detail modal (mailto: pre-filled with lead details, school name, contact email)
 - [x] Add Send Introduction action in Introductions panel (mailto: pre-filled to school contact)
 - [x] Update getLeadAssignments and listAllIntroductionRequests to join flight_schools for contact email
+
+## Phase 22 – Bug Fixes & Production Stability
+
+- [x] Add Express trust proxy (app.set("trust proxy", 1)) to fix secure cookies behind Manus reverse proxy
+- [x] Switch currency API from exchangerate.host (broken/paid) to open.er-api.com (free, no key required)
+- [x] Fix duplicate React key warning for 'finance' — question o4 in biggest-obstacle quiz had two options with value="finance"; renamed second to "finance2"
+- [x] Add normalizeValue() in QuizPage.tsx diagnostic scoring to map "finance2" → "finance" result correctly
+- [x] UK/US content separation fixes: UK guides index defaults to UK-only, US announcements in nav, Quizzes in US nav
+- [x] All 70 tests passing, zero TypeScript errors

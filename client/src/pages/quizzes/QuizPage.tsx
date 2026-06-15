@@ -41,10 +41,15 @@ function computeResult(quiz: Quiz, answers: Record<string, string>): QuizResult 
 
   if (quiz.type === "diagnostic") {
     // Obstacle quiz: find most-voted category
+    // Normalize variant values (e.g. finance2 → finance) before tallying
+    const normalizeValue = (v: string) => v.replace(/\d+$/, "");
     const votes: Record<string, number> = {};
     quiz.questions.forEach((q) => {
       const val = answers[q.id];
-      if (val) votes[val] = (votes[val] ?? 0) + 1;
+      if (val) {
+        const key = normalizeValue(val);
+        votes[key] = (votes[key] ?? 0) + 1;
+      }
     });
     const top = Object.entries(votes).sort((a, b) => b[1] - a[1])[0]?.[0];
     const byId = quiz.results.find((r) => r.id === top);

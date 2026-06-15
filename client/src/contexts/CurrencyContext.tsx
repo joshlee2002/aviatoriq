@@ -139,15 +139,15 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
     return () => { cancelled = true; };
   }, []);
 
-  // 2. Fetch live rates (GBP base) from exchangerate.host (free, no key needed)
+  // 2. Fetch live rates (GBP base) from open.er-api.com (free, no key needed)
   useEffect(() => {
     let cancelled = false;
 
     async function fetchRates() {
       try {
-        const codes = SUPPORTED_CURRENCIES.map((c) => c.code).join(",");
+        // Use open.er-api.com — free tier, no API key required
         const res = await fetch(
-          `https://api.exchangerate.host/latest?base=GBP&symbols=${codes}`,
+          `https://open.er-api.com/v6/latest/GBP`,
           { signal: AbortSignal.timeout(5000) }
         );
         if (!res.ok) throw new Error("rates failed");
@@ -157,7 +157,7 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
           setRates({ GBP: 1, ...data.rates });
         }
       } catch {
-        // keep fallback rates
+        // keep fallback rates on any error
       }
     }
 
