@@ -48,36 +48,36 @@ const adminProcedure = protectedProcedure.use(({ ctx, next }) => {
 
 // ─── Lead submission schema ───────────────────────────────────────────────────
 const leadSubmitSchema = z.object({
-  fullName: z.string().min(2),
-  email: z.string().email(),
-  phone: z.string().optional(),
-  country: z.string().optional(),
-  city: z.string().optional(),
+  fullName: z.string().min(2).max(120),
+  email: z.string().email().max(254),
+  phone: z.string().max(30).optional(),
+  country: z.string().max(80).optional(),
+  city: z.string().max(100).optional(),
   age: z.number().int().min(14).max(99).optional(),
-  pilotGoal: z.string().optional(),
-  seriousness: z.string().optional(),
-  spokenToSchool: z.string().optional(),
-  preferredRoute: z.string().optional(),
-  openToAbroad: z.string().optional(),
-  fundingMethod: z.string().optional(),
-  budgetRange: z.string().optional(),
-  wantsFinanceInfo: z.string().optional(),
-  educationLevel: z.string().optional(),
-  class1Medical: z.string().optional(),
-  flyingExperience: z.string().optional(),
-  rightToWorkStudy: z.string().optional(),
-  biggestConcern: z.string().optional(),
-  startTimeframe: z.string().optional(),
-  wantsSchoolContact: z.string().optional(),
-  preferredContact: z.string().optional(),
-  source: z.string().optional(),
+  pilotGoal: z.string().max(200).optional(),
+  seriousness: z.string().max(200).optional(),
+  spokenToSchool: z.string().max(200).optional(),
+  preferredRoute: z.string().max(100).optional(),
+  openToAbroad: z.string().max(50).optional(),
+  fundingMethod: z.string().max(100).optional(),
+  budgetRange: z.string().max(100).optional(),
+  wantsFinanceInfo: z.string().max(50).optional(),
+  educationLevel: z.string().max(100).optional(),
+  class1Medical: z.string().max(100).optional(),
+  flyingExperience: z.string().max(100).optional(),
+  rightToWorkStudy: z.string().max(100).optional(),
+  biggestConcern: z.string().max(500).optional(),
+  startTimeframe: z.string().max(100).optional(),
+  wantsSchoolContact: z.string().max(50).optional(),
+  preferredContact: z.string().max(50).optional(),
+  source: z.string().max(200).optional(),
   contactConsentSchools: z.boolean().optional(),
   contactConsentFinance: z.boolean().optional(),
   contactConsentMedical: z.boolean().optional(),
   contactConsentPartners: z.boolean().optional(),
   consentToContact: z.boolean(),
   consentToShare: z.boolean(),
-  writtenAnswer: z.string().optional(),
+  writtenAnswer: z.string().max(1000).optional(),
 });
 
 export const appRouter = router({
@@ -209,8 +209,32 @@ AviatorIQ Score: ${score}/100 (${category})`;
           status: "New",
           });
         } catch (dbErr) {
-          console.warn("[DB] Lead save failed, using in-memory fallback:", dbErr);
-          leadId = Date.now(); // fallback: use timestamp as pseudo-ID
+          console.error("[DB] Lead save FAILED — sending backup notification:", dbErr);
+          // Send backup notification with full lead payload so no data is lost
+          const backupPayload = JSON.stringify({
+            fullName: input.fullName,
+            email: input.email,
+            phone: input.phone ?? null,
+            country: input.country ?? null,
+            age: input.age ?? null,
+            pilotGoal: input.pilotGoal ?? null,
+            budgetRange: input.budgetRange ?? null,
+            startTimeframe: input.startTimeframe ?? null,
+            leadScore: score,
+            leadCategory: category,
+            consentToContact: input.consentToContact,
+            dbError: String(dbErr),
+          }, null, 2);
+          try {
+            await notifyOwner({
+              title: `⚠️ DB SAVE FAILED — Lead backup: ${input.fullName}`,
+              content: `A lead submission could not be saved to the database.\n\nFull payload:\n${backupPayload}`,
+            });
+          } catch (notifyErr) {
+            console.error("[DB] Backup notification also failed:", notifyErr);
+          }
+          // Use timestamp as pseudo-ID so the response can still be returned
+          leadId = Date.now();
         }
 
         // Generate PDF blueprint (non-blocking, best-effort)
@@ -321,6 +345,22 @@ AviatorIQ Score: ${score}/100 (${category})`;
         const lead = dbLead ?? (input.leadData ? { ...input.leadData, id: input.leadId, aiRoadmap: null } as any : null);
         if (!lead) throw new TRPCError({ code: "NOT_FOUND" });
 
+        // ── Input sanitisation: strip prompt injection attempts from free-text fields ──
+        const sanitiseField = (val: string | null | undefined): string | null => {
+          if (!val) return null;
+          // Truncate to 500 chars max
+          const truncated = String(val).slice(0, 500);
+          // Remove common prompt injection patterns
+          return truncated
+            .replace(/ignore (previous|above|all) instructions?/gi, "[redacted]")
+            .replace(/you are now|act as|pretend (you are|to be)/gi, "[redacted]")
+            .replace(/<\/?[a-z][^>]*>/gi, "") // strip HTML tags
+            .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, ""); // strip control chars
+        };
+        const safeFullName = sanitiseField(lead.fullName) ?? "Candidate";
+        const safeWrittenAnswer = sanitiseField(lead.writtenAnswer) ?? "None provided";
+        const safeBiggestConcern = sanitiseField(lead.biggestConcern) ?? "Unknown";
+
         // Return cached roadmap if available
         if (lead.aiRoadmap) {
           return { roadmap: lead.aiRoadmap };
@@ -331,11 +371,11 @@ AviatorIQ Score: ${score}/100 (${category})`;
 IMPORTANT: This roadmap must be insight-led. Start with the candidate's biggest barrier and address it directly. Do not just recommend a route — tell them what's actually standing between them and the cockpit, and what to do about it.
 
 Candidate profile:
-- Name: ${lead.fullName}
+- Name: ${safeFullName}
 - Age: ${lead.age ?? "Unknown"}
 - Country: ${lead.country ?? "Unknown"}
 - Pilot goal: ${lead.pilotGoal ?? "Unknown"}
-- Biggest stated barrier: ${lead.biggestConcern ?? "Unknown"}
+- Biggest stated barrier: ${safeBiggestConcern}
 - What they've already done: ${lead.spokenToSchool ?? "Unknown"}
 - How often they think about it: ${lead.seriousness ?? "Unknown"}
 - Preferred route: ${lead.preferredRoute ?? "Unknown"}
@@ -346,7 +386,7 @@ Candidate profile:
 - Flying experience: ${lead.flyingExperience ?? "Unknown"}
 - Start timeframe: ${lead.startTimeframe ?? "Unknown"}
 - Open to training abroad: ${lead.openToAbroad ?? "Unknown"}
-- Written answer: ${lead.writtenAnswer ?? "None provided"}
+- Written answer: ${safeWrittenAnswer}
 - AviatorIQ Score: ${lead.leadScore}/100 (${lead.leadCategory === "Hot" ? "Flight Ready" : lead.leadCategory === "Warm" ? "Development Phase" : "Exploration Phase"})
 
 Return a JSON object with these exact keys:
@@ -786,6 +826,10 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
         consentToContact: z.boolean(),
       }))
       .mutation(async ({ input }) => {
+        // Enforce consent — do not save or notify if user did not explicitly consent
+        if (!input.consentToContact) {
+          throw new TRPCError({ code: "BAD_REQUEST", message: "Consent to contact is required." });
+        }
         const id = await createFinanceInterest(input);
         await notifyOwner({
           title: "New Finance Interest Lead",

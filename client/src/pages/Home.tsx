@@ -120,7 +120,7 @@ function HeroSection() {
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white no-underline transition-all"
                 style={{ background: ctaGradient, boxShadow: "0 0 30px oklch(0.72 0.18 65 / 0.35)" }}
               >
-                Generate My Roadmap
+                Generate My Free Pilot Roadmap
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
@@ -128,7 +128,7 @@ function HeroSection() {
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-base font-semibold text-white/80 no-underline transition-all hover:text-white"
                 style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.15)" }}
               >
-                Career Readiness Assessment
+                Check Career Readiness
               </Link>
             </div>
 
@@ -187,7 +187,7 @@ function HeroSection() {
 
               {/* Recommended schools */}
               <div>
-                <div className="text-[10px] font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.4 0.04 240)" }}>Matched Flight Schools</div>
+                <div className="text-[10px] font-semibold uppercase tracking-widest mb-2 flex items-center gap-1.5" style={{ color: "oklch(0.4 0.04 240)" }}>Example Matched Schools <span className="text-[9px] px-1.5 py-0.5 rounded font-normal" style={{ background: "oklch(1 0 0 / 0.06)", color: "oklch(0.5 0.04 240)" }}>Illustrative only</span></div>
                 <div className="space-y-1.5">
                   {[
                     { name: "Oxford Aviation Academy", match: "98%", location: "Oxford, UK" },

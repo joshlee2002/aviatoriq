@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "wouter";
+import SEO from "@/components/SEO";
 import { trpc } from "@/lib/trpc";
 import { Analytics } from "@/lib/analytics";
 import PublicNav from "@/components/PublicNav";
@@ -169,7 +170,20 @@ export default function Results() {
     // Skip DB fetch if we already have the result from sessionStorage
     { enabled: !!leadId && !cachedResult }
   );
-  const pdfQuery = trpc.leads.getPdfUrl.useQuery({ leadId }, { enabled: !!leadId, refetchInterval: (q) => (!q.state.data?.pdfUrl ? 5000 : false) });
+  const [pdfRetryCount, setPdfRetryCount] = useState(0);
+  const pdfQuery = trpc.leads.getPdfUrl.useQuery(
+    { leadId },
+    {
+      enabled: !!leadId,
+      // Poll every 5s until PDF is ready, stop after 12 attempts (60s)
+      refetchInterval: (q) => {
+        if (q.state.data?.pdfUrl) return false;
+        if (pdfRetryCount >= 12) return false;
+        return 5000;
+      },
+    }
+  );
+  const pdfTimedOut = !pdfQuery.data?.pdfUrl && pdfRetryCount >= 12;
   const roadmapMutation = trpc.leads.generateRoadmap.useMutation({
     onSuccess: (data) => {
       try { setRoadmap(JSON.parse(data.roadmap)); } catch { setRoadmapError(true); }
@@ -210,9 +224,7 @@ export default function Results() {
   useEffect(() => {
     if (activeResult) Analytics.quizCompleted();
   }, [activeResult]);
-  useEffect(() => {
-    document.title = "Your AviatorIQ Pilot Blueprint – Results";
-  }, []);
+  // SEO handled by <SEO> component in render
 
   const toggleSchool = (id: number) => {
     setSelectedSchoolIds(prev =>
@@ -237,6 +249,11 @@ export default function Results() {
   if ((resultQuery.isLoading && !cachedResult) || !activeResult) {
     return (
       <div className="min-h-screen flex flex-col">
+        <SEO
+          title="Your AviatorIQ Pilot Blueprint – Results"
+          description="Your personalised pilot training roadmap with AI-generated flight plan, matched schools, and career readiness score."
+          noindex
+        />
         <PublicNav />
         <main className="flex-1 flex items-center justify-center py-20" style={{ background: "oklch(0.10 0.01 240)" }}>
           <div className="text-center">
@@ -271,6 +288,11 @@ export default function Results() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title={`${lead.fullName?.split(" ")[0] ?? "Your"}'s AviatorIQ Pilot Blueprint`}
+        description="Your personalised pilot training roadmap with AI-generated flight plan, matched schools, and career readiness score."
+        noindex
+      />
       <PublicNav />
       <main className="flex-1" style={{ background: "oklch(0.10 0.01 240)" }}>
 
@@ -295,6 +317,14 @@ export default function Results() {
                     <FileDown className="w-3.5 h-3.5" />
                     Download PDF
                   </a>
+                ) : pdfTimedOut ? (
+                  <button
+                    onClick={() => { setPdfRetryCount(0); pdfQuery.refetch(); }}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-amber-400/80 hover:text-amber-300 text-xs font-medium transition-colors"
+                    style={{ background: "oklch(0.72 0.18 65 / 0.1)", border: "1px solid oklch(0.72 0.18 65 / 0.25)" }}>
+                    <AlertTriangle className="w-3 h-3" />
+                    Retry PDF
+                  </button>
                 ) : (
                   <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/60 text-xs"
                     style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
@@ -861,6 +891,65 @@ export default function Results() {
               </Link>
             </div>
           </div>
+
+          {/* ── Post-result lead capture: Email my roadmap ── */}
+          {emailGateUnlocked && roadmap && (
+            <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(1 0 0 / 0.03)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: "oklch(0.55 0.18 240 / 0.2)" }}>
+                  <FileDown className="w-4 h-4" style={{ color: "oklch(0.75 0.15 240)" }} />
+                </div>
+                <div>
+                  <h3 className="font-display font-semibold text-white text-sm">Save your roadmap</h3>
+                  <p className="text-xs" style={{ color: "oklch(0.55 0 0)" }}>Get a copy of your full flight plan, matched schools, and next steps sent to your inbox.</p>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-2">
+                {pdfQuery.data?.pdfUrl ? (
+                  <a
+                    href={pdfQuery.data.pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-white text-sm font-bold no-underline transition-all hover:scale-[1.01]"
+                    style={{ background: "oklch(0.55 0.18 240)", boxShadow: "0 2px 12px oklch(0.55 0.18 240 / 0.3)" }}
+                  >
+                    <FileDown className="w-4 h-4" />
+                    Download PDF Blueprint
+                  </a>
+                ) : (
+                  <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white/40 text-sm"
+                    style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                    PDF generating…
+                  </span>
+                )}
+                <Link
+                  href={`/schools`}
+                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold no-underline transition-all hover:bg-white/10"
+                  style={{ border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.75 0 0)" }}
+                >
+                  <School className="w-4 h-4" />
+                  Unlock matched schools
+                </Link>
+                {!introSubmitted && matchedSchools?.length > 0 && (
+                  <button
+                    onClick={() => {
+                      const firstSchool = (matchedSchools as FlightSchool[])[0];
+                      if (firstSchool && !selectedSchoolIds.includes(firstSchool.id)) {
+                        setSelectedSchoolIds([firstSchool.id]);
+                      }
+                      document.getElementById("school-intro-section")?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all hover:bg-white/10"
+                    style={{ border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.75 0 0)" }}
+                  >
+                    <ArrowRight className="w-4 h-4" />
+                    Request school introduction
+                  </button>
+                )}
+              </div>
+            </div>
+          )}
 
         </div>
       </main>

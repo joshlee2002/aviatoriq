@@ -234,8 +234,8 @@ export default function PublicNav() {
   const navLinks = isUS ? usNavLinks : ukNavLinks;
   const toolLinks = isUS ? usToolLinks : ukToolLinks;
   const homeHref = isUS ? "/us" : "/";
-  const ctaHref = isUS ? "/us" : "/quiz";
-  const ctaLabel = isUS ? "US Platform" : "Free Assessment";
+  const ctaHref = isUS ? "/us/roadmap" : "/quiz";
+  const ctaLabel = isUS ? "Generate US Roadmap" : "Free Assessment";
   const { user, logout } = useAuth();
 
   useEffect(() => {
