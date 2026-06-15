@@ -23,6 +23,151 @@ export default function PilotSalaryUK2026() {
       ]}
       sections={[
         {
+          heading: "UK Airline Pilot Salaries at a Glance (2026)",
+          content: (
+            <>
+              <p>
+                The table below summarises verified 2026 total compensation figures (base salary + flying pay + allowances) for UK airline pilots. All figures are gross annual earnings in GBP. Sources: airline careers pages, Simple Flying (May 2026), Ryanair careers page (June 2026), BALPA.
+              </p>
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Airline</th>
+                      <th className="px-4 py-3 font-semibold">Type</th>
+                      <th className="px-4 py-3 font-semibold">First Officer</th>
+                      <th className="px-4 py-3 font-semibold">Captain</th>
+                      <th className="px-4 py-3 font-semibold">Time to Command</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">British Airways</td>
+                      <td className="px-4 py-3">Legacy / Long-haul</td>
+                      <td className="px-4 py-3">£70,000 – £125,000</td>
+                      <td className="px-4 py-3">£100,000 – £225,000</td>
+                      <td className="px-4 py-3">10–15 years</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Virgin Atlantic</td>
+                      <td className="px-4 py-3">Legacy / Long-haul</td>
+                      <td className="px-4 py-3">£70,000 – £100,000</td>
+                      <td className="px-4 py-3">£115,000 – £200,000</td>
+                      <td className="px-4 py-3">8–12 years</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">easyJet</td>
+                      <td className="px-4 py-3">Low-cost / Short-haul</td>
+                      <td className="px-4 py-3">£65,000 – £100,000</td>
+                      <td className="px-4 py-3">£170,000 – £220,000</td>
+                      <td className="px-4 py-3">5–8 years</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Ryanair</td>
+                      <td className="px-4 py-3">Low-cost / Short-haul</td>
+                      <td className="px-4 py-3">£50,000 – £95,000</td>
+                      <td className="px-4 py-3">£140,000 – £155,500</td>
+                      <td className="px-4 py-3">3–5 years</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Jet2</td>
+                      <td className="px-4 py-3">Leisure / Short-haul</td>
+                      <td className="px-4 py-3">£60,000 – £85,000</td>
+                      <td className="px-4 py-3">~£145,000</td>
+                      <td className="px-4 py-3">6–10 years</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">TUI</td>
+                      <td className="px-4 py-3">Leisure / Mixed</td>
+                      <td className="px-4 py-3">£60,000 – £100,000</td>
+                      <td className="px-4 py-3">£100,000 – £170,000</td>
+                      <td className="px-4 py-3">7–12 years</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Wizz Air (UK/West EU)</td>
+                      <td className="px-4 py-3">Low-cost / Short-haul</td>
+                      <td className="px-4 py-3">£55,000 – £90,000</td>
+                      <td className="px-4 py-3">£120,000 – £170,000</td>
+                      <td className="px-4 py-3">5–8 years</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">BA CityFlyer</td>
+                      <td className="px-4 py-3">Regional / Short-haul</td>
+                      <td className="px-4 py-3">£45,000 – £70,000</td>
+                      <td className="px-4 py-3">£90,000 – £120,000</td>
+                      <td className="px-4 py-3">6–10 years</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Loganair / Aurigny</td>
+                      <td className="px-4 py-3">Regional</td>
+                      <td className="px-4 py-3">£30,000 – £50,000</td>
+                      <td className="px-4 py-3">£60,000 – £85,000</td>
+                      <td className="px-4 py-3">3–6 years</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-white/50">All figures are gross total compensation (base + flying pay + allowances). Ryanair captain figure from official careers page (June 2026): "Captains can earn up to £155,500 p.a. in year 1." easyJet figures from Simple Flying (May 2026). BA figures from Simple Flying (May 2026). Time-to-command estimates based on current market conditions and may vary significantly.</p>
+            </>
+          ),
+        },
+        {
+          heading: "Career Progression: How Long Does It Take?",
+          content: (
+            <>
+              <p>
+                The timeline from newly qualified First Officer to Captain depends heavily on which airline you join, market conditions, and fleet expansion. The pilot shortage is currently accelerating promotion timelines across the industry.
+              </p>
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm text-left">
+                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Stage</th>
+                      <th className="px-4 py-3 font-semibold">Typical Timeline</th>
+                      <th className="px-4 py-3 font-semibold">Approximate Salary</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/10 text-white/80">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Newly qualified (frozen ATPL, 200 hrs)</td>
+                      <td className="px-4 py-3">Year 0</td>
+                      <td className="px-4 py-3">Job hunting; no airline salary yet</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">First airline job (regional FO or cadet FO)</td>
+                      <td className="px-4 py-3">Year 1–2</td>
+                      <td className="px-4 py-3">£30,000 – £65,000</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Established FO (LCC or mainline)</td>
+                      <td className="px-4 py-3">Year 2–5</td>
+                      <td className="px-4 py-3">£65,000 – £100,000</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Captain (LCC — Ryanair/easyJet)</td>
+                      <td className="px-4 py-3">Year 4–8</td>
+                      <td className="px-4 py-3">£140,000 – £220,000</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Captain (BA short-haul)</td>
+                      <td className="px-4 py-3">Year 10–15</td>
+                      <td className="px-4 py-3">£100,000 – £145,000</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="px-4 py-3 font-medium text-white">Captain (BA long-haul)</td>
+                      <td className="px-4 py-3">Year 15–20+</td>
+                      <td className="px-4 py-3">£145,000 – £225,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                The fastest route to command is currently through Ryanair (3–5 years) or easyJet (5–8 years). The trade-off is that LCC captains fly short-haul only. BA long-haul captains earn the highest total compensation in UK aviation, but the timeline is 15–20 years from training completion.
+              </p>
+            </>
+          ),
+        },
+        {
           heading: "The Reality of UK Pilot Salaries in 2026",
           content: (
             <>
@@ -159,10 +304,12 @@ export default function PilotSalaryUK2026() {
           heading: "References",
           content: (
             <>
-              <p className="text-xs text-white/50 space-y-1">
-                [1] Simple Flying. "A Look At The Salaries Of UK Airline Pilots In 2026." <em>Aviation News</em>.<br/>
-                [2] Airmappr. "British Airways Pilot Salary Guide 2026." <em>Flight Training Data</em>.<br/>
-                [3] British Airline Pilots' Association (BALPA). "Pilot Pay and Conditions Agreements."
+              <p className="text-xs text-white/50">
+                [1] Simple Flying. "A Look At The Salaries Of UK Airline Pilots In 2026." May 26, 2026. <em>simpleflying.com/uk-airline-pilot-salaries/</em><br/>
+                [2] Ryanair Careers. "Direct Entry Pilots — What We Offer." June 2026. <em>careers.ryanair.com/pilots/direct-entry-pilots/</em> — "Captains can earn up to £155,500/€165,000 p.a. in year 1."<br/>
+                [3] British Airline Pilots' Association (BALPA). "Salary and Benefits." <em>balpa.org/becoming-a-pilot/salary-and-benefits/</em><br/>
+                [4] Aviation A2Z. "British Airways Pilots Reject New Pay Restructuring." May 1, 2026. <em>aviationa2z.com</em> — BA pilots voted down proposed 4% pay rise; existing 2026 pay deal remains in place.<br/>
+                [5] Reddit r/flyingeurope. "How much do Ryanair UK guys actually get paid?" April 6, 2026 — UK base captains £143k–£155k permanent contract confirmed by multiple posters.
               </p>
             </>
           ),
