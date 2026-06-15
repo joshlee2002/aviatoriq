@@ -80,34 +80,34 @@ export default function TcAtplRequirements() {
                 A minimum of <strong>1500 hours of total flight time</strong> is required, of which at least 900 hours must have been acquired in aeroplanes. This substantial requirement ensures a broad base of experience.
               </p>
               <h3>Specific Flight Experience Breakdown</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Category</th>
-                    <th>Requirement</th>
-                    <th>Details</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Pilot-in-Command (PIC)</td>
-                    <td>250 hours</td>
-                    <td>Includes a maximum of 100 hours Pilot-in-Command Under Supervision (PICUS). Must include 100 hours cross-country flight time, with at least 25 hours by night.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Pilot-in-Command (PIC)</td>
+                    <td className="px-4 py-3 text-white/80">250 hours</td>
+                    <td className="px-4 py-3 text-white/80">Includes a maximum of 100 hours Pilot-in-Command Under Supervision (PICUS). Must include 100 hours cross-country flight time, with at least 25 hours by night.</td>
                   </tr>
-                  <tr>
-                    <td>Night Flight Time</td>
-                    <td>100 hours</td>
-                    <td>As PIC or co-pilot, with a minimum of 30 hours acquired in aeroplanes.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Night Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">100 hours</td>
+                    <td className="px-4 py-3 text-white/80">As PIC or co-pilot, with a minimum of 30 hours acquired in aeroplanes.</td>
                   </tr>
-                  <tr>
-                    <td>Additional Cross-Country</td>
-                    <td>100 hours (PIC) or 200 hours (co-pilot)</td>
-                    <td>Or any combination thereof. PIC time may be part of the 250 hours PIC requirement.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Additional Cross-Country</td>
+                    <td className="px-4 py-3 text-white/80">100 hours (PIC) or 200 hours (co-pilot)</td>
+                    <td className="px-4 py-3 text-white/80">Or any combination thereof. PIC time may be part of the 250 hours PIC requirement.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Flight Time</td>
-                    <td>75 hours</td>
-                    <td>Maximum 25 hours in approved instrument ground trainers, maximum 35 hours in helicopters. Instrument ground time does not count towards the 1500 total flight hours.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">75 hours</td>
+                    <td className="px-4 py-3 text-white/80">Maximum 25 hours in approved instrument ground trainers, maximum 35 hours in helicopters. Instrument ground time does not count towards the 1500 total flight hours.</td>
                   </tr>
                 </tbody>
               </table>
@@ -165,49 +165,49 @@ export default function TcAtplRequirements() {
               <p>
                 The journey to an ATPL is a significant investment in both time and finances. While costs can vary widely based on flight school, location, and individual progress, here are estimated figures for 2026 in Canadian Dollars (CAD).
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Estimated Cost (CAD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Flight Training (CPL to ATPL hours)</td>
-                    <td>$60,000 - $100,000+</td>
-                    <td>Includes multi-engine, instrument, and advanced training to accumulate required hours.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Training (CPL to ATPL hours)</td>
+                    <td className="px-4 py-3 text-white/80">$60,000 - $100,000+</td>
+                    <td className="px-4 py-3 text-white/80">Includes multi-engine, instrument, and advanced training to accumulate required hours.</td>
                   </tr>
-                  <tr>
-                    <td>Ground School & Study Materials</td>
-                    <td>$3,000 - $7,000</td>
-                    <td>Comprehensive courses for SARON and SAMRA exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground School & Study Materials</td>
+                    <td className="px-4 py-3 text-white/80">$3,000 - $7,000</td>
+                    <td className="px-4 py-3 text-white/80">Comprehensive courses for SARON and SAMRA exams.</td>
                   </tr>
-                  <tr>
-                    <td>Examinations (SARON, SAMRA)</td>
-                    <td>$300 - $500 per attempt</td>
-                    <td>Fees for written exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Examinations (SARON, SAMRA)</td>
+                    <td className="px-4 py-3 text-white/80">$300 - $500 per attempt</td>
+                    <td className="px-4 py-3 text-white/80">Fees for written exams.</td>
                   </tr>
-                  <tr>
-                    <td>Flight Test Fees</td>
-                    <td>$1,500 - $3,000</td>
-                    <td>Examiner fees and aircraft rental for the skill test.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Test Fees</td>
+                    <td className="px-4 py-3 text-white/80">$1,500 - $3,000</td>
+                    <td className="px-4 py-3 text-white/80">Examiner fees and aircraft rental for the skill test.</td>
                   </tr>
-                  <tr>
-                    <td>Medical Certificates</td>
-                    <td>$150 - $300 (initial)</td>
-                    <td>Annual renewal costs.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Medical Certificates</td>
+                    <td className="px-4 py-3 text-white/80">$150 - $300 (initial)</td>
+                    <td className="px-4 py-3 text-white/80">Annual renewal costs.</td>
                   </tr>
-                  <tr>
-                    <td>Licence Application Fees</td>
-                    <td>$100 - $200</td>
-                    <td>Administrative fees to Transport Canada.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Licence Application Fees</td>
+                    <td className="px-4 py-3 text-white/80">$100 - $200</td>
+                    <td className="px-4 py-3 text-white/80">Administrative fees to Transport Canada.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Cost</strong></td>
-                    <td><strong>$65,000 - $115,000+</strong></td>
-                    <td>Excludes initial PPL/CPL training costs.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$65,000 - $115,000+</strong></td>
+                    <td className="px-4 py-3 text-white/80">Excludes initial PPL/CPL training costs.</td>
                   </tr>
                 </tbody>
               </table>

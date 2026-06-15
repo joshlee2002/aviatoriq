@@ -111,61 +111,61 @@ const InstrumentRatingUSA = () => {
               </p>
               <p>
                 Here\'s an illustrative breakdown of potential costs, assuming a Part 61 training path with a mix of aircraft and simulator time:
-                <table>
+                <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
-                      <th>Item</th>
-                      <th>Estimated Hours</th>
-                      <th>Rate (USD/hr)</th>
-                      <th>Estimated Cost (USD)</th>
+                    <tr className="border-b border-white/10">
+                      <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Hours</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Rate (USD/hr)</th>
+                      <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Aircraft Rental (Cessna 172)</td>
-                      <td>25</td>
-                      <td>$175</td>
-                      <td>$4,375</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80">Aircraft Rental (Cessna 172)</td>
+                      <td className="px-4 py-3 text-white/80">25</td>
+                      <td className="px-4 py-3 text-white/80">$175</td>
+                      <td className="px-4 py-3 text-white/80">$4,375</td>
                     </tr>
-                    <tr>
-                      <td>CFII Instruction (Aircraft)</td>
-                      <td>25</td>
-                      <td>$70</td>
-                      <td>$1,750</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80">CFII Instruction (Aircraft)</td>
+                      <td className="px-4 py-3 text-white/80">25</td>
+                      <td className="px-4 py-3 text-white/80">$70</td>
+                      <td className="px-4 py-3 text-white/80">$1,750</td>
                     </tr>
-                    <tr>
-                      <td>Simulator Time (AATD)</td>
-                      <td>15</td>
-                      <td>$75</td>
-                      <td>$1,125</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80">Simulator Time (AATD)</td>
+                      <td className="px-4 py-3 text-white/80">15</td>
+                      <td className="px-4 py-3 text-white/80">$75</td>
+                      <td className="px-4 py-3 text-white/80">$1,125</td>
                     </tr>
-                    <tr>
-                      <td>CFII Instruction (Simulator)</td>
-                      <td>15</td>
-                      <td>$70</td>
-                      <td>$1,050</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80">CFII Instruction (Simulator)</td>
+                      <td className="px-4 py-3 text-white/80">15</td>
+                      <td className="px-4 py-3 text-white/80">$70</td>
+                      <td className="px-4 py-3 text-white/80">$1,050</td>
                     </tr>
-                    <tr>
-                      <td>Knowledge Test Fee</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
-                      <td>$175</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80">Knowledge Test Fee</td>
+                      <td className="px-4 py-3 text-white/80">N/A</td>
+                      <td className="px-4 py-3 text-white/80">N/A</td>
+                      <td className="px-4 py-3 text-white/80">$175</td>
                     </tr>
-                    <tr>
-                      <td>DPE Checkride Fee</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
-                      <td>$800</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80">DPE Checkride Fee</td>
+                      <td className="px-4 py-3 text-white/80">N/A</td>
+                      <td className="px-4 py-3 text-white/80">N/A</td>
+                      <td className="px-4 py-3 text-white/80">$800</td>
                     </tr>
-                    <tr>
-                      <td>Study Materials/Charts</td>
-                      <td>N/A</td>
-                      <td>N/A</td>
-                      <td>$300</td>
+                    <tr className="border-b border-white/10">
+                      <td className="px-4 py-3 text-white/80">Study Materials/Charts</td>
+                      <td className="px-4 py-3 text-white/80">N/A</td>
+                      <td className="px-4 py-3 text-white/80">N/A</td>
+                      <td className="px-4 py-3 text-white/80">$300</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td colSpan={3}><strong>Total Estimated Cost</strong></td>
-                      <td><strong>$9,575</strong></td>
+                      <td className="px-4 py-3 text-white/80"><strong>$9,575</strong></td>
                     </tr>
                   </tbody>
                 </table>

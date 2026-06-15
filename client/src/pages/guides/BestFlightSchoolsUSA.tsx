@@ -42,7 +42,7 @@ export default function BestFlightSchoolsUSA() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">School / Route</th>
                       <th className="px-4 py-3 font-semibold">Type</th>
                       <th className="px-4 py-3 font-semibold">Total Cost (2026)</th>
@@ -117,7 +117,7 @@ export default function BestFlightSchoolsUSA() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Detail</th>
                       <th className="px-4 py-3 font-semibold">ATP Flight School (2026)</th>
                     </tr>
@@ -179,7 +179,7 @@ export default function BestFlightSchoolsUSA() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Certificate / Rating</th>
                       <th className="px-4 py-3 font-semibold">Epic Cost (2026)</th>
                       <th className="px-4 py-3 font-semibold">Duration</th>
@@ -281,7 +281,7 @@ export default function BestFlightSchoolsUSA() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Your Situation</th>
                       <th className="px-4 py-3 font-semibold">Recommended Route</th>
                       <th className="px-4 py-3 font-semibold">Why</th>

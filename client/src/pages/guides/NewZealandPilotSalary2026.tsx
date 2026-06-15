@@ -38,44 +38,44 @@ export default function NewZealandPilotSalary2026() {
               <p>
                 At Air New Zealand, first officers and captains command substantial salaries, augmented by various allowances for long-haul operations, duty credits, and extended flying hours. These figures represent a blend of base salary and typical additional earnings.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Role</th>
-                    <th>Annual Salary Range (NZD)</th>
-                    <th>Annual Salary Range (EUR)</th>
-                    <th>Annual Salary Range (AED)</th>
-                    <th>Annual Salary Range (CAD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Role</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Annual Salary Range (NZD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Annual Salary Range (EUR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Annual Salary Range (AED)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Annual Salary Range (CAD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>First Officer (Entry-Level/Short-Haul)</td>
-                    <td>NZD 110,000 - 160,000</td>
-                    <td>EUR 55,000 - 80,000</td>
-                    <td>AED 235,400 - 342,400</td>
-                    <td>CAD 89,100 - 129,600</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">First Officer (Entry-Level/Short-Haul)</td>
+                    <td className="px-4 py-3 text-white/80">NZD 110,000 - 160,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR 55,000 - 80,000</td>
+                    <td className="px-4 py-3 text-white/80">AED 235,400 - 342,400</td>
+                    <td className="px-4 py-3 text-white/80">CAD 89,100 - 129,600</td>
                   </tr>
-                  <tr>
-                    <td>First Officer (Experienced/Long-Haul)</td>
-                    <td>NZD 170,000 - 220,000</td>
-                    <td>EUR 85,000 - 110,000</td>
-                    <td>AED 363,800 - 470,800</td>
-                    <td>CAD 137,700 - 178,200</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">First Officer (Experienced/Long-Haul)</td>
+                    <td className="px-4 py-3 text-white/80">NZD 170,000 - 220,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR 85,000 - 110,000</td>
+                    <td className="px-4 py-3 text-white/80">AED 363,800 - 470,800</td>
+                    <td className="px-4 py-3 text-white/80">CAD 137,700 - 178,200</td>
                   </tr>
-                  <tr>
-                    <td>Captain (Entry-Level/Short-Haul)</td>
-                    <td>NZD 220,000 - 300,000</td>
-                    <td>EUR 110,000 - 150,000</td>
-                    <td>AED 470,800 - 642,000</td>
-                    <td>CAD 178,200 - 243,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Captain (Entry-Level/Short-Haul)</td>
+                    <td className="px-4 py-3 text-white/80">NZD 220,000 - 300,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR 110,000 - 150,000</td>
+                    <td className="px-4 py-3 text-white/80">AED 470,800 - 642,000</td>
+                    <td className="px-4 py-3 text-white/80">CAD 178,200 - 243,000</td>
                   </tr>
-                  <tr>
-                    <td>Captain (Senior/Long-Haul)</td>
-                    <td>NZD 300,000 - 420,000</td>
-                    <td>EUR 150,000 - 210,000</td>
-                    <td>AED 642,000 - 898,800</td>
-                    <td>CAD 243,000 - 340,200</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Captain (Senior/Long-Haul)</td>
+                    <td className="px-4 py-3 text-white/80">NZD 300,000 - 420,000</td>
+                    <td className="px-4 py-3 text-white/80">EUR 150,000 - 210,000</td>
+                    <td className="px-4 py-3 text-white/80">AED 642,000 - 898,800</td>
+                    <td className="px-4 py-3 text-white/80">CAD 243,000 - 340,200</td>
                   </tr>
                 </tbody>
               </table>
@@ -103,44 +103,44 @@ export default function NewZealandPilotSalary2026() {
               <p>
                 The cost of pilot training varies depending on the chosen program and flight school. For a comprehensive Commercial Pilot License (CPL) with Instrument Rating (IR) and Multi-Engine Rating (ME), programs can range from NZD 70,000 to over NZD 160,000. Below is an illustrative breakdown based on data from reputable New Zealand flight schools for 2026:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Program</th>
-                    <th>Approximate Cost (NZD)</th>
-                    <th>Approximate Cost (EUR)</th>
-                    <th>Approximate Cost (AED)</th>
-                    <th>Approximate Cost (CAD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Program</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Approximate Cost (NZD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Approximate Cost (EUR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Approximate Cost (AED)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Approximate Cost (CAD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>NZD 38,859</td>
-                    <td>EUR 19,430</td>
-                    <td>AED 83,150</td>
-                    <td>CAD 31,475</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">NZD 38,859</td>
+                    <td className="px-4 py-3 text-white/80">EUR 19,430</td>
+                    <td className="px-4 py-3 text-white/80">AED 83,150</td>
+                    <td className="px-4 py-3 text-white/80">CAD 31,475</td>
                   </tr>
-                  <tr>
-                    <td>NZ Diploma in Aviation (Airline Preparation)</td>
-                    <td>NZD 144,725</td>
-                    <td>EUR 72,360</td>
-                    <td>AED 309,700</td>
-                    <td>CAD 117,225</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">NZ Diploma in Aviation (Airline Preparation)</td>
+                    <td className="px-4 py-3 text-white/80">NZD 144,725</td>
+                    <td className="px-4 py-3 text-white/80">EUR 72,360</td>
+                    <td className="px-4 py-3 text-white/80">AED 309,700</td>
+                    <td className="px-4 py-3 text-white/80">CAD 117,225</td>
                   </tr>
-                  <tr>
-                    <td>NZ Diploma in Aviation (Flight Instructor)</td>
-                    <td>NZD 157,015</td>
-                    <td>EUR 78,500</td>
-                    <td>AED 335,900</td>
-                    <td>CAD 127,180</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">NZ Diploma in Aviation (Flight Instructor)</td>
+                    <td className="px-4 py-3 text-white/80">NZD 157,015</td>
+                    <td className="px-4 py-3 text-white/80">EUR 78,500</td>
+                    <td className="px-4 py-3 text-white/80">AED 335,900</td>
+                    <td className="px-4 py-3 text-white/80">CAD 127,180</td>
                   </tr>
-                  <tr>
-                    <td>NZ Diploma in Aviation (General Aviation)</td>
-                    <td>NZD 161,472</td>
-                    <td>EUR 80,735</td>
-                    <td>AED 345,550</td>
-                    <td>CAD 130,790</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">NZ Diploma in Aviation (General Aviation)</td>
+                    <td className="px-4 py-3 text-white/80">NZD 161,472</td>
+                    <td className="px-4 py-3 text-white/80">EUR 80,735</td>
+                    <td className="px-4 py-3 text-white/80">AED 345,550</td>
+                    <td className="px-4 py-3 text-white/80">CAD 130,790</td>
                   </tr>
                 </tbody>
               </table>

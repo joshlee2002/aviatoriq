@@ -19,7 +19,7 @@ export default function FaaMedicalClass3() {
           heading: "Introduction: The Foundation of Your Private Pilot Journey",
           content: (
             <>
-              <p>For aspiring private pilots and those pursuing recreational flying in the United States, the Federal Aviation Administration (FAA) Class 3 Medical Certificate is not merely a formality; it is the bedrock upon which your aviation dreams are built. This comprehensive guide delves into the intricacies of obtaining and maintaining this essential certification, providing a detailed, accurate, and up-to-date overview of the requirements, application process, potential challenges, and costs for 2026. Our aim is to equip you with the knowledge necessary to navigate the FAA's medical certification system with confidence and clarity, ensuring a smooth path to the skies.</p>
+              <p>For aspiring private pilots and those pursuing recreational flying in the United States, the Federal Aviation Administration (FAA) Class 3 Medical Certificate is not merely a formality; it is the bedrock upon which your aviation dreams are built. This comprehensive guide covers obtaining and maintaining this essential certification, providing a detailed, accurate, and up-to-date overview of the requirements, application process, potential challenges, and costs for 2026. Our aim is to equip you with the knowledge necessary to navigate the FAA's medical certification system with confidence and clarity, ensuring a smooth path to the skies.</p>
               <p>The Class 3 Medical Certificate is mandated by <strong>14 CFR Part 61.23</strong> for private pilot operations, recreational pilot operations, and student pilot operations. It signifies that an airman meets the minimum health standards to safely exercise the privileges of their certificate. Without a valid Class 3 Medical, you cannot act as pilot-in-command for these activities.</p>
             </>
           )
@@ -32,29 +32,29 @@ export default function FaaMedicalClass3() {
               
               <h3>Vision Standards</h3>
               <p>Visual acuity is a critical component of pilot fitness. For a Class 3 Medical Certificate, the requirements are as follows:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Vision Aspect</th>
-                    <th>Requirement for Class 3 Medical Certificate</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Vision Aspect</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement for Class 3 Medical Certificate</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Distant Vision</td>
-                    <td>20/40 or better in each eye separately, with or without corrective lenses.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Distant Vision</td>
+                    <td className="px-4 py-3 text-white/80">20/40 or better in each eye separately, with or without corrective lenses.</td>
                   </tr>
-                  <tr>
-                    <td>Near Vision</td>
-                    <td>20/40 or better in each eye separately (Snellen equivalent), with or without corrective lenses, as measured at 16 inches.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Near Vision</td>
+                    <td className="px-4 py-3 text-white/80">20/40 or better in each eye separately (Snellen equivalent), with or without corrective lenses, as measured at 16 inches.</td>
                   </tr>
-                  <tr>
-                    <td>Intermediate Vision</td>
-                    <td>No specific requirement.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Intermediate Vision</td>
+                    <td className="px-4 py-3 text-white/80">No specific requirement.</td>
                   </tr>
-                  <tr>
-                    <td>Color Vision</td>
-                    <td>Ability to perceive those colors necessary for the safe performance of airman duties. This is typically assessed using pseudo-isochromatic plates (e.g., Ishihara).</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Color Vision</td>
+                    <td className="px-4 py-3 text-white/80">Ability to perceive those colors necessary for the safe performance of airman duties. This is typically assessed using pseudo-isochromatic plates (e.g., Ishihara).</td>
                   </tr>
                 </tbody>
               </table>
@@ -66,30 +66,30 @@ export default function FaaMedicalClass3() {
                 <li>Demonstrate hearing of an average conversational voice in a quiet room, using both ears at 6 feet, with your back turned to the examiner; OR</li>
                 <li>Pass one of the audiometric tests, with specific thresholds at various frequencies. The unaided thresholds should be no worse than:</li>
               </ul>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Ear Condition</th>
-                    <th>500 Hz</th>
-                    <th>1,000 Hz</th>
-                    <th>2,000 Hz</th>
-                    <th>3,000 Hz</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Ear Condition</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">500 Hz</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">1,000 Hz</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">2,000 Hz</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">3,000 Hz</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Better Ear</td>
-                    <td>35 dB</td>
-                    <td>30 dB</td>
-                    <td>30 dB</td>
-                    <td>40 dB</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Better Ear</td>
+                    <td className="px-4 py-3 text-white/80">35 dB</td>
+                    <td className="px-4 py-3 text-white/80">30 dB</td>
+                    <td className="px-4 py-3 text-white/80">30 dB</td>
+                    <td className="px-4 py-3 text-white/80">40 dB</td>
                   </tr>
-                  <tr>
-                    <td>Worst Ear</td>
-                    <td>35 dB</td>
-                    <td>50 dB</td>
-                    <td>50 dB</td>
-                    <td>60 dB</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Worst Ear</td>
+                    <td className="px-4 py-3 text-white/80">35 dB</td>
+                    <td className="px-4 py-3 text-white/80">50 dB</td>
+                    <td className="px-4 py-3 text-white/80">50 dB</td>
+                    <td className="px-4 py-3 text-white/80">60 dB</td>
                   </tr>
                 </tbody>
               </table>
@@ -155,21 +155,21 @@ export default function FaaMedicalClass3() {
           content: (
             <>
               <p>The FAA Class 3 Medical Certificate has a specific validity period, which depends on your age at the time of the examination. Understanding these durations is crucial for maintaining continuous medical certification.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Age at Examination</th>
-                    <th>Duration of Validity</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Age at Examination</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration of Validity</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Under 40 years old</td>
-                    <td>60 calendar months (5 years)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Under 40 years old</td>
+                    <td className="px-4 py-3 text-white/80">60 calendar months (5 years)</td>
                   </tr>
-                  <tr>
-                    <td>40 years old or older</td>
-                    <td>24 calendar months (2 years)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">40 years old or older</td>
+                    <td className="px-4 py-3 text-white/80">24 calendar months (2 years)</td>
                   </tr>
                 </tbody>
               </table>
@@ -182,25 +182,25 @@ export default function FaaMedicalClass3() {
           content: (
             <>
               <p>The FAA does not set fees for medical examinations; rather, individual Aviation Medical Examiners (AMEs) determine their own pricing. The cost can vary significantly based on location, the AME's practice, and whether additional tests or documentation are required. For 2026, typical costs for a Class 3 Medical Examination in the US generally range from <strong>$100 to $200 USD</strong>.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Service</th>
-                    <th>Estimated Cost (USD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Service</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Standard Class 3 Medical Exam</td>
-                    <td>$100 - $200</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Standard Class 3 Medical Exam</td>
+                    <td className="px-4 py-3 text-white/80">$100 - $200</td>
                   </tr>
-                  <tr>
-                    <td>Additional tests (e.g., EKG if required)</td>
-                    <td>$50 - $100 (additional)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Additional tests (e.g., EKG if required)</td>
+                    <td className="px-4 py-3 text-white/80">$50 - $100 (additional)</td>
                   </tr>
-                  <tr>
-                    <td>Color Vision Testing (e.g., Waggoner CCVT)</td>
-                    <td>$100 - $200 (additional)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Color Vision Testing (e.g., Waggoner CCVT)</td>
+                    <td className="px-4 py-3 text-white/80">$100 - $200 (additional)</td>
                   </tr>
                 </tbody>
               </table>

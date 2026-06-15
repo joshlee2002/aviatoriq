@@ -23,16 +23,16 @@ export default function CanadaPilotTrainingCosts() {
               <p>The Private Pilot Licence (PPL) is the foundational step for all pilots in Canada. Under Transport Canada's Standard 421.26, applicants must be at least 17 years old and hold a Category 3 Medical Certificate.</p>
               <p>While Transport Canada mandates a minimum of 45 hours of flight training (including 17 hours dual and 12 hours solo), the national average to complete a PPL is closer to 65-75 hours.</p>
               <h3>Estimated PPL Costs (CAD)</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Expense Category</th><th>Minimum Estimated Cost</th><th>Realistic Average Cost</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Estimated Cost</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Realistic Average Cost</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Flight Training (65-70 hours)</td><td>$14,500</td><td>$18,000</td></tr>
-                  <tr><td>Ground School (40 hours min)</td><td>$350 (Online)</td><td>$1,000 (In-person)</td></tr>
-                  <tr><td>Transport Canada Exams & Fees</td><td>$600</td><td>$800</td></tr>
-                  <tr><td>Medical Certificate & Supplies</td><td>$450</td><td>$900</td></tr>
-                  <tr><td><strong>Total Estimated Cost</strong></td><td><strong>$15,900</strong></td><td><strong>$20,700</strong></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Training (65-70 hours)</td><td className="px-4 py-3 text-white/80">$14,500</td><td className="px-4 py-3 text-white/80">$18,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ground School (40 hours min)</td><td className="px-4 py-3 text-white/80">$350 (Online)</td><td className="px-4 py-3 text-white/80">$1,000 (In-person)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Transport Canada Exams & Fees</td><td className="px-4 py-3 text-white/80">$600</td><td className="px-4 py-3 text-white/80">$800</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical Certificate & Supplies</td><td className="px-4 py-3 text-white/80">$450</td><td className="px-4 py-3 text-white/80">$900</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost</strong></td><td className="px-4 py-3 text-white/80"><strong>$15,900</strong></td><td className="px-4 py-3 text-white/80"><strong>$20,700</strong></td></tr>
                 </tbody>
               </table>
               <p><em>Note: Aircraft rental rates average $200–$250 per hour, and instructor fees range from $70–$90 per hour.</em></p>
@@ -46,15 +46,15 @@ export default function CanadaPilotTrainingCosts() {
               <p>To fly for hire in Canada, you must obtain a Commercial Pilot Licence (CPL). According to Standard 421.30, applicants must be at least 18 years old, hold a Category 1 Medical Certificate, and accumulate a minimum of 200 hours of total flight time, including 100 hours as pilot-in-command (PIC).</p>
               <p>Building hours from a PPL to meet the 200-hour CPL requirement is the most significant expense in pilot training.</p>
               <h3>Estimated CPL Costs (CAD)</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Expense Category</th><th>Minimum Estimated Cost</th><th>Realistic Average Cost</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Estimated Cost</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Realistic Average Cost</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Time Building & Flight Training</td><td>$25,000</td><td>$35,000</td></tr>
-                  <tr><td>Ground School (80 hours min)</td><td>$300 (Online)</td><td>$1,500 (In-person)</td></tr>
-                  <tr><td>Transport Canada Exams & Fees</td><td>$700</td><td>$1,000</td></tr>
-                  <tr><td><strong>Total Estimated Cost (Post-PPL)</strong></td><td><strong>$26,000</strong></td><td><strong>$37,500</strong></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Time Building & Flight Training</td><td className="px-4 py-3 text-white/80">$25,000</td><td className="px-4 py-3 text-white/80">$35,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ground School (80 hours min)</td><td className="px-4 py-3 text-white/80">$300 (Online)</td><td className="px-4 py-3 text-white/80">$1,500 (In-person)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Transport Canada Exams & Fees</td><td className="px-4 py-3 text-white/80">$700</td><td className="px-4 py-3 text-white/80">$1,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost (Post-PPL)</strong></td><td className="px-4 py-3 text-white/80"><strong>$26,000</strong></td><td className="px-4 py-3 text-white/80"><strong>$37,500</strong></td></tr>
                 </tbody>
               </table>
             </>

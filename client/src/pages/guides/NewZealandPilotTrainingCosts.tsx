@@ -48,59 +48,59 @@ export default function NewZealandPilotTrainingCosts() {
               <p>The cost of pilot training in New Zealand varies significantly based on the chosen flight school, the type of program (integrated vs. modular), and individual aptitude. However, a general breakdown can provide a realistic financial outlook for 2026. All figures are approximate and in New Zealand Dollars (NZD).</p>
               <h3>Private Pilot Licence (PPL) Costs</h3>
               <p>The PPL is the entry point, typically requiring a minimum of 50 hours of flight time. Costs generally include flight instruction, ground school, study materials, examination fees, and landing fees.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (NZD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Flight Hours (Aircraft & Instructor)</td><td>$25,000 - $35,000</td><td>Based on 50-60 hours at $500-$600/hour</td></tr>
-                  <tr><td>Ground School & Materials</td><td>$2,000 - $4,000</td><td>Includes textbooks, charts, and online resources</td></tr>
-                  <tr><td>CAA Exams (6 theory subjects)</td><td>$500 - $800</td><td>Per attempt, re-sit fees extra</td></tr>
-                  <tr><td>Flight Test Fee</td><td>$800 - $1,200</td><td>Examiner fee and aircraft hire</td></tr>
-                  <tr><td>Class 2 Medical Certificate</td><td>$500 - $800</td><td>Initial examination</td></tr>
-                  <tr><td>Application Fee (CAA)</td><td>$130 - $140</td><td>For NZ residents</td></tr>
-                  <tr><td><strong>Total PPL Estimate</strong></td><td><strong>$28,930 - $40,940</strong></td><td></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hours (Aircraft & Instructor)</td><td className="px-4 py-3 text-white/80">$25,000 - $35,000</td><td className="px-4 py-3 text-white/80">Based on 50-60 hours at $500-$600/hour</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ground School & Materials</td><td className="px-4 py-3 text-white/80">$2,000 - $4,000</td><td className="px-4 py-3 text-white/80">Includes textbooks, charts, and online resources</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CAA Exams (6 theory subjects)</td><td className="px-4 py-3 text-white/80">$500 - $800</td><td className="px-4 py-3 text-white/80">Per attempt, re-sit fees extra</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Test Fee</td><td className="px-4 py-3 text-white/80">$800 - $1,200</td><td className="px-4 py-3 text-white/80">Examiner fee and aircraft hire</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Class 2 Medical Certificate</td><td className="px-4 py-3 text-white/80">$500 - $800</td><td className="px-4 py-3 text-white/80">Initial examination</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Application Fee (CAA)</td><td className="px-4 py-3 text-white/80">$130 - $140</td><td className="px-4 py-3 text-white/80">For NZ residents</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total PPL Estimate</strong></td><td className="px-4 py-3 text-white/80"><strong>$28,930 - $40,940</strong></td><td className="px-4 py-3 text-white/80"></td></tr>
                 </tbody>
               </table>
               <p>Some schools, like Nelson Aviation College, quote PPL costs around $38,859 NZD, which aligns with this estimate.</p>
               <h3>Commercial Pilot Licence (CPL) Costs</h3>
               <p>The CPL builds upon the PPL, requiring a minimum of 200 hours of flight time. Many students pursue a New Zealand Diploma in Aviation, which integrates CPL training with other ratings and often qualifies for student loan support.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (NZD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Flight Hours (Aircraft & Instructor)</td><td>$70,000 - $100,000</td><td>Additional 150 hours beyond PPL, often in more complex aircraft</td></tr>
-                  <tr><td>Ground School & Materials</td><td>$5,000 - $8,000</td><td>Advanced theory for CPL subjects</td></tr>
-                  <tr><td>CAA Exams (7 theory subjects)</td><td>$600 - $1,000</td><td>Per attempt</td></tr>
-                  <tr><td>Flight Test Fee</td><td>$1,000 - $1,500</td><td>Examiner fee and aircraft hire</td></tr>
-                  <tr><td>Class 1 Medical Certificate</td><td>$600 - $900</td><td>Required for CPL</td></tr>
-                  <tr><td><strong>Total CPL (Post-PPL) Estimate</strong></td><td><strong>$77,200 - $111,400</strong></td><td></td></tr>
-                  <tr><td><strong>Total PPL to CPL (Overall)</strong></td><td><strong>$106,130 - $152,340</strong></td><td>Includes PPL costs</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hours (Aircraft & Instructor)</td><td className="px-4 py-3 text-white/80">$70,000 - $100,000</td><td className="px-4 py-3 text-white/80">Additional 150 hours beyond PPL, often in more complex aircraft</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ground School & Materials</td><td className="px-4 py-3 text-white/80">$5,000 - $8,000</td><td className="px-4 py-3 text-white/80">Advanced theory for CPL subjects</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CAA Exams (7 theory subjects)</td><td className="px-4 py-3 text-white/80">$600 - $1,000</td><td className="px-4 py-3 text-white/80">Per attempt</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Test Fee</td><td className="px-4 py-3 text-white/80">$1,000 - $1,500</td><td className="px-4 py-3 text-white/80">Examiner fee and aircraft hire</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Class 1 Medical Certificate</td><td className="px-4 py-3 text-white/80">$600 - $900</td><td className="px-4 py-3 text-white/80">Required for CPL</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total CPL (Post-PPL) Estimate</strong></td><td className="px-4 py-3 text-white/80"><strong>$77,200 - $111,400</strong></td><td className="px-4 py-3 text-white/80"></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total PPL to CPL (Overall)</strong></td><td className="px-4 py-3 text-white/80"><strong>$106,130 - $152,340</strong></td><td className="px-4 py-3 text-white/80">Includes PPL costs</td></tr>
                 </tbody>
               </table>
               <p>Flight schools offering integrated diploma programs often provide a bundled price. For instance, the New Zealand Diploma in Aviation - Airline Preparation at Nelson Aviation College is $144,725 NZD, and the General Aviation stream is $161,472 NZD. The Aviation Industry Association of New Zealand (AIANZ) states that training for a two-year course is approximately $120,000 NZD, with students often needing to fund an additional $50,000 beyond the student loan cap.</p>
               <h3>Instrument Rating (IR) and Multi-Engine Rating (ME) Costs</h3>
               <p>These ratings are crucial for professional pilots and are often integrated into CPL programs or pursued shortly after.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (NZD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Multi-Engine Instrument Rating (MEIR)</td><td>$25,000 - $35,000</td><td>Includes flight time, simulator, and instruction</td></tr>
-                  <tr><td><strong>Total MEIR Estimate</strong></td><td><strong>$25,000 - $35,000</strong></td><td></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating (MEIR)</td><td className="px-4 py-3 text-white/80">$25,000 - $35,000</td><td className="px-4 py-3 text-white/80">Includes flight time, simulator, and instruction</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total MEIR Estimate</strong></td><td className="px-4 py-3 text-white/80"><strong>$25,000 - $35,000</strong></td><td className="px-4 py-3 text-white/80"></td></tr>
                 </tbody>
               </table>
               <h3>Airline Transport Pilot Licence (ATPL) Theory Costs</h3>
               <p>While the full ATPL requires significant flight hours, passing the theory exams is a common step for aspiring airline pilots.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (NZD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>ATPL Theory Course</td><td>$5,000 - $10,000</td><td>Intensive ground school for 7 subjects</td></tr>
-                  <tr><td>CAA Exams (7 theory subjects)</td><td>$600 - $1,000</td><td>Per attempt</td></tr>
-                  <tr><td><strong>Total ATPL Theory Estimate</strong></td><td><strong>$5,600 - $11,000</strong></td><td></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATPL Theory Course</td><td className="px-4 py-3 text-white/80">$5,000 - $10,000</td><td className="px-4 py-3 text-white/80">Intensive ground school for 7 subjects</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CAA Exams (7 theory subjects)</td><td className="px-4 py-3 text-white/80">$600 - $1,000</td><td className="px-4 py-3 text-white/80">Per attempt</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total ATPL Theory Estimate</strong></td><td className="px-4 py-3 text-white/80"><strong>$5,600 - $11,000</strong></td><td className="px-4 py-3 text-white/80"></td></tr>
                 </tbody>
               </table>
               <p><strong>Overall Estimated Cost for a "Frozen ATPL" (PPL + CPL + MEIR + ATPL Theory):</strong> This comprehensive pathway typically ranges from <strong>$136,730 to $198,340 NZD</strong>. This figure does not include living expenses, accommodation, or other personal costs.</p>
@@ -161,26 +161,26 @@ export default function NewZealandPilotTrainingCosts() {
               </ul>
               <h3>Air New Zealand Pilot Application Checklist (2026)</h3>
               <p>Air New Zealand, the national carrier, has rigorous selection processes and specific requirements for its pilots. While requirements can vary for jet fleet vs. regional fleet, general expectations for 2026 include:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Requirement</th><th>Details</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Citizenship/Residency</td><td>NZ or Australian citizen, or NZ Permanent Resident visa</td></tr>
-                  <tr><td>Medical</td><td>Current NZCAA Class 1 Medical Certificate</td></tr>
-                  <tr><td>Fit and Proper Person</td><td>Clean criminal and driving record</td></tr>
-                  <tr><td>Swimming</td><td>Ability to swim 50m in &lt;2min, tread water for 1min</td></tr>
-                  <tr><td>Total Flight Experience</td><td>Typically 1,500+ hours (can be lower for regional/cadet pathways)</td></tr>
-                  <tr><td>Multi-Engine Time</td><td>100+ hours in multi-engine aircraft</td></tr>
-                  <tr><td>Instrument Time</td><td>40+ hours of instrument flight time</td></tr>
-                  <tr><td>Night Flying</td><td>25+ hours of night flight experience</td></tr>
-                  <tr><td>Command Experience</td><td>Ideally 100+ hours Air Transport Operations or multi-crew</td></tr>
-                  <tr><td>Licenses</td><td>Current NZ CPL or ATPL</td></tr>
-                  <tr><td>Theory</td><td>Completion of all ATPL theory subjects (highly preferred)</td></tr>
-                  <tr><td>Ratings</td><td>Current MEIR (Multi-Engine Instrument Rating)</td></tr>
-                  <tr><td>English Proficiency</td><td>ICAO English Language Proficiency Level 6</td></tr>
-                  <tr><td>Academic</td><td>University Entrance or equivalent Level 4 qualification</td></tr>
-                  <tr><td>ADAPT Test</td><td>High score on ADAPT Pilot Aptitude Test</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Citizenship/Residency</td><td className="px-4 py-3 text-white/80">NZ or Australian citizen, or NZ Permanent Resident visa</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical</td><td className="px-4 py-3 text-white/80">Current NZCAA Class 1 Medical Certificate</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Fit and Proper Person</td><td className="px-4 py-3 text-white/80">Clean criminal and driving record</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Swimming</td><td className="px-4 py-3 text-white/80">Ability to swim 50m in &lt;2min, tread water for 1min</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Total Flight Experience</td><td className="px-4 py-3 text-white/80">Typically 1,500+ hours (can be lower for regional/cadet pathways)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Time</td><td className="px-4 py-3 text-white/80">100+ hours in multi-engine aircraft</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Time</td><td className="px-4 py-3 text-white/80">40+ hours of instrument flight time</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Night Flying</td><td className="px-4 py-3 text-white/80">25+ hours of night flight experience</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Command Experience</td><td className="px-4 py-3 text-white/80">Ideally 100+ hours Air Transport Operations or multi-crew</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Licenses</td><td className="px-4 py-3 text-white/80">Current NZ CPL or ATPL</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Theory</td><td className="px-4 py-3 text-white/80">Completion of all ATPL theory subjects (highly preferred)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ratings</td><td className="px-4 py-3 text-white/80">Current MEIR (Multi-Engine Instrument Rating)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">English Proficiency</td><td className="px-4 py-3 text-white/80">ICAO English Language Proficiency Level 6</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Academic</td><td className="px-4 py-3 text-white/80">University Entrance or equivalent Level 4 qualification</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ADAPT Test</td><td className="px-4 py-3 text-white/80">High score on ADAPT Pilot Aptitude Test</td></tr>
                 </tbody>
               </table>
               <p>Jetstar, another significant operator in the region, will have similar stringent requirements, often focusing on total flight hours, multi-engine experience, and a valid ATPL theory pass. Specific requirements should always be verified directly on their official career portals.</p>
@@ -202,7 +202,7 @@ export default function NewZealandPilotTrainingCosts() {
                 <li><strong>Continuous Learning:</strong> The aviation industry is constantly evolving. Pilots must commit to lifelong learning, including recurrent training, new aircraft type ratings, and staying updated with regulations.</li>
                 <li><strong>Resilience:</strong> The path to becoming an airline pilot can have setbacks, from challenging exams to competitive job markets. Resilience and perseverance are key attributes for success.</li>
               </ul>
-              <p>New Zealand offers an exceptional environment for pilot training, combining high standards with stunning flying conditions. With thorough preparation and a clear understanding of the costs and requirements, your dream of flying the skies of Aotearoa and beyond can become a reality.</p>
+              <p>New Zealand offers an exceptional environment for pilot training, combining high standards with stunning flying conditions. With thorough preparation and a clear understanding of the costs and requirements, your goal of becoming a pilot the skies of Aotearoa and beyond can become a reality.</p>
             </>
           )
         }

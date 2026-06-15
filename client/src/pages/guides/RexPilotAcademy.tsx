@@ -20,7 +20,7 @@ export default function RexPilotAcademy() {
           content: (
             <>
               <p>The Australian Airline Pilot Academy (AAPA), a wholly-owned subsidiary of Regional Express (Rex) Airlines, stands as a premier institution for aspiring commercial pilots in Australia. Established in November 2007, AAPA is renowned for its intensive, live-in Pilot Cadet Programme, designed to transform individuals with little to no flying experience into highly skilled and airline-ready first officers. Located in Wagga Wagga, New South Wales, the academy leverages a structured curriculum and direct pathway to Rex Airlines, offering a unique advantage in the competitive aviation industry.</p>
-              <p>AAPA operates as a Registered Training Organisation (RTO), ensuring its programs meet stringent national vocational education and training standards. The academy's philosophy centers on producing pilots who not only possess exceptional technical proficiency but also embody the professional ethos required for airline operations. This guide delves into the intricacies of the AAPA program, regulatory frameworks, financial considerations, and the career trajectory available to its graduates in 2026.</p>
+              <p>AAPA operates as a Registered Training Organisation (RTO), ensuring its programs meet stringent national vocational education and training standards. The academy's philosophy centers on producing pilots who not only possess exceptional technical proficiency but also embody the professional ethos required for airline operations. This guide covers the AAPA program, regulatory frameworks, financial considerations, and the career trajectory available to its graduates in 2026.</p>
             </>
           )
         },
@@ -52,34 +52,34 @@ export default function RexPilotAcademy() {
             <>
               <p>The Rex Pilot Cadet Programme is an integrated, full-time course designed for individuals committed to an airline career. It is structured to provide a seamless progression from ab-initio (no prior experience) to a Commercial Pilot Licence with multi-engine command instrument rating (CPL/MEIR), followed by an Air Transport Pilot Licence (ATPL) theory and potentially a type rating on Rex aircraft.</p>
               <p>The program typically spans approximately 52-60 weeks and is divided into several key phases:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Phase</th>
-                    <th>Key Focus Areas</th>
-                    <th>Approximate Duration</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Phase</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Focus Areas</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Approximate Duration</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Foundation & RPL</strong></td>
-                    <td>Basic flight principles, circuit training, first solo, Recreational Pilot Licence (RPL)</td>
-                    <td>10-12 weeks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Foundation & RPL</strong></td>
+                    <td className="px-4 py-3 text-white/80">Basic flight principles, circuit training, first solo, Recreational Pilot Licence (RPL)</td>
+                    <td className="px-4 py-3 text-white/80">10-12 weeks</td>
                   </tr>
-                  <tr>
-                    <td><strong>PPL & Navigation</strong></td>
-                    <td>Advanced maneuvers, cross-country navigation, Private Pilot Licence (PPL) theory and practical</td>
-                    <td>12-15 weeks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>PPL & Navigation</strong></td>
+                    <td className="px-4 py-3 text-white/80">Advanced maneuvers, cross-country navigation, Private Pilot Licence (PPL) theory and practical</td>
+                    <td className="px-4 py-3 text-white/80">12-15 weeks</td>
                   </tr>
-                  <tr>
-                    <td><strong>CPL Core</strong></td>
-                    <td>Commercial Pilot Licence (CPL) theory, advanced flight techniques, commercial operations</td>
-                    <td>15-18 weeks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>CPL Core</strong></td>
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL) theory, advanced flight techniques, commercial operations</td>
+                    <td className="px-4 py-3 text-white/80">15-18 weeks</td>
                   </tr>
-                  <tr>
-                    <td><strong>MEIR & ATPL Theory</strong></td>
-                    <td>Multi-Engine Instrument Rating (MEIR), advanced instrument flying, Air Transport Pilot Licence (ATPL) theory exams</td>
-                    <td>15-20 weeks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>MEIR & ATPL Theory</strong></td>
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating (MEIR), advanced instrument flying, Air Transport Pilot Licence (ATPL) theory exams</td>
+                    <td className="px-4 py-3 text-white/80">15-20 weeks</td>
                   </tr>
                 </tbody>
               </table>
@@ -92,44 +92,44 @@ export default function RexPilotAcademy() {
           content: (
             <>
               <p>Becoming a commercial pilot represents a significant financial investment. While specific figures for the Rex Pilot Cadet Programme are often provided directly to successful applicants, general costs for integrated commercial pilot training in Australia in 2026 can serve as a benchmark. These costs typically cover tuition, flight hours, ground school, examinations, and some materials.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Cost Category</th>
-                    <th>Estimated Cost (AUD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Integrated CPL/MEIR Program</strong></td>
-                    <td>$150,000 - $180,000</td>
-                    <td>Covers flight hours, ground school, aircraft usage, instructor fees. University-affiliated programs may be higher.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Integrated CPL/MEIR Program</strong></td>
+                    <td className="px-4 py-3 text-white/80">$150,000 - $180,000</td>
+                    <td className="px-4 py-3 text-white/80">Covers flight hours, ground school, aircraft usage, instructor fees. University-affiliated programs may be higher.</td>
                   </tr>
-                  <tr>
-                    <td><strong>CASA Class 1 Medical</strong></td>
-                    <td>$600 - $750</td>
-                    <td>Initial examination; recurring costs apply for renewals.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>CASA Class 1 Medical</strong></td>
+                    <td className="px-4 py-3 text-white/80">$600 - $750</td>
+                    <td className="px-4 py-3 text-white/80">Initial examination; recurring costs apply for renewals.</td>
                   </tr>
-                  <tr>
-                    <td><strong>ASIC Card (Aviation Security Identity Card)</strong></td>
-                    <td>$300 - $350</td>
-                    <td>Mandatory for unescorted access to secure airport areas.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>ASIC Card (Aviation Security Identity Card)</strong></td>
+                    <td className="px-4 py-3 text-white/80">$300 - $350</td>
+                    <td className="px-4 py-3 text-white/80">Mandatory for unescorted access to secure airport areas.</td>
                   </tr>
-                  <tr>
-                    <td><strong>CASA Licence Fees</strong></td>
-                    <td>$50 - $80 per licence</td>
-                    <td>RPL, PPL, CPL application fees.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>CASA Licence Fees</strong></td>
+                    <td className="px-4 py-3 text-white/80">$50 - $80 per licence</td>
+                    <td className="px-4 py-3 text-white/80">RPL, PPL, CPL application fees.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Study Materials & Equipment</strong></td>
-                    <td>$3,000 - $5,000</td>
-                    <td>Textbooks, charts, navigation equipment, headset, uniform.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Study Materials & Equipment</strong></td>
+                    <td className="px-4 py-3 text-white/80">$3,000 - $5,000</td>
+                    <td className="px-4 py-3 text-white/80">Textbooks, charts, navigation equipment, headset, uniform.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Accommodation & Living Expenses</strong></td>
-                    <td>Variable</td>
-                    <td>Significant for live-in programs like AAPA. Budget approximately $20,000 - $30,000 per year.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Accommodation & Living Expenses</strong></td>
+                    <td className="px-4 py-3 text-white/80">Variable</td>
+                    <td className="px-4 py-3 text-white/80">Significant for live-in programs like AAPA. Budget approximately $20,000 - $30,000 per year.</td>
                   </tr>
                 </tbody>
               </table>

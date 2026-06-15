@@ -164,7 +164,7 @@ const FlightInstructorUK = () => {
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Method</th>
                       <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost/Income</th>
                       <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Hours/Year (Est.)</th>
@@ -173,28 +173,28 @@ const FlightInstructorUK = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Flight Instructor (FI)</td>
                       <td className="px-4 py-3 text-white/80">Income (£25k-£40k)</td>
                       <td className="px-4 py-3 text-white/80">400-700+</td>
                       <td className="px-4 py-3 text-white/80">Teaching, leadership, CRM, deep theory</td>
                       <td className="px-4 py-3 text-white/80">Very High</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Self-Funded Private Flying</td>
                       <td className="px-4 py-3 text-white/80">High Cost (£150-£250/hr)</td>
                       <td className="px-4 py-3 text-white/80">100-200</td>
                       <td className="px-4 py-3 text-white/80">Personal proficiency, navigation</td>
                       <td className="px-4 py-3 text-white/80">Moderate</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Banner Towing/Skydiving</td>
                       <td className="px-4 py-3 text-white/80">Income (variable)</td>
                       <td className="px-4 py-3 text-white/80">200-400 (seasonal)</td>
                       <td className="px-4 py-3 text-white/80">Specific operational skills</td>
                       <td className="px-4 py-3 text-white/80">Moderate</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Ferry Pilot</td>
                       <td className="px-4 py-3 text-white/80">Income (project-based)</td>
                       <td className="px-4 py-3 text-white/80">Variable</td>

@@ -72,41 +72,41 @@ export default function VirginAustraliaCadet() {
                 The Civil Aviation Safety Authority (CASA) is Australia's aviation safety regulator, setting the standards for pilot licensing, medical fitness, and operational procedures. Adhering to CASA's Part 61 of the Civil Aviation Safety Regulations (CASR) is paramount for all aspiring pilots [2].
               </p>
               <h4>Commercial Pilot Licence (CPL) Requirements [2]:</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Requirement</th>
-                    <th>Details</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Age</td>
-                    <td>Minimum 18 years old</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Age</td>
+                    <td className="px-4 py-3 text-white/80">Minimum 18 years old</td>
                   </tr>
-                  <tr>
-                    <td>English Language Proficiency</td>
-                    <td>Demonstrate a certain level of aviation English proficiency (Level 6 typically required by airlines)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">English Language Proficiency</td>
+                    <td className="px-4 py-3 text-white/80">Demonstrate a certain level of aviation English proficiency (Level 6 typically required by airlines)</td>
                   </tr>
-                  <tr>
-                    <td>Medical Certificate</td>
-                    <td>Class 1 Medical Certificate (essential for commercial operations)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Medical Certificate</td>
+                    <td className="px-4 py-3 text-white/80">Class 1 Medical Certificate (essential for commercial operations)</td>
                   </tr>
-                  <tr>
-                    <td>Theory Examinations</td>
-                    <td>Pass all CPL theory examinations for the relevant aircraft category</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Theory Examinations</td>
+                    <td className="px-4 py-3 text-white/80">Pass all CPL theory examinations for the relevant aircraft category</td>
                   </tr>
-                  <tr>
-                    <td>Flight Training</td>
-                    <td>Complete flight training with a Part 141 or 142 approved operator</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Training</td>
+                    <td className="px-4 py-3 text-white/80">Complete flight training with a Part 141 or 142 approved operator</td>
                   </tr>
-                  <tr>
-                    <td>Aeronautical Experience</td>
-                    <td>Minimum 150 hours total flight time (integrated course) or 200 hours (non-integrated course), including specific solo and cross-country hours.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Aeronautical Experience</td>
+                    <td className="px-4 py-3 text-white/80">Minimum 150 hours total flight time (integrated course) or 200 hours (non-integrated course), including specific solo and cross-country hours.</td>
                   </tr>
-                  <tr>
-                    <td>Flight Test</td>
-                    <td>Pass the CPL flight test</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Test</td>
+                    <td className="px-4 py-3 text-white/80">Pass the CPL flight test</td>
                   </tr>
                 </tbody>
               </table>
@@ -114,41 +114,41 @@ export default function VirginAustraliaCadet() {
               <p>
                 While the ATPL is typically obtained later in a pilot's career, passing the ATPL theory examinations is often a prerequisite for airline First Officer positions. The full ATPL requires extensive aeronautical experience:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Requirement</th>
-                    <th>Minimum Hours (Aeroplane)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Hours (Aeroplane)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Total Aeronautical Experience</td>
-                    <td>1500 hours (flight + simulated)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Aeronautical Experience</td>
+                    <td className="px-4 py-3 text-white/80">1500 hours (flight + simulated)</td>
                   </tr>
-                  <tr>
-                    <td>Total Flight Time as Pilot</td>
-                    <td>1400 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Flight Time as Pilot</td>
+                    <td className="px-4 py-3 text-white/80">1400 hours</td>
                   </tr>
-                  <tr>
-                    <td>Total Flight Time as Pilot in Aeroplane</td>
-                    <td>750 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Flight Time as Pilot in Aeroplane</td>
+                    <td className="px-4 py-3 text-white/80">750 hours</td>
                   </tr>
-                  <tr>
-                    <td>Pilot in Command (PIC) or Co-pilot (ICUS) in multi-crew aircraft</td>
-                    <td>500 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Pilot in Command (PIC) or Co-pilot (ICUS) in multi-crew aircraft</td>
+                    <td className="px-4 py-3 text-white/80">500 hours</td>
                   </tr>
-                  <tr>
-                    <td>Cross-country Flight Time</td>
-                    <td>200 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Cross-country Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">200 hours</td>
                   </tr>
-                  <tr>
-                    <td>Night Flight Time</td>
-                    <td>100 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Night Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">100 hours</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Flight Time</td>
-                    <td>75 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">75 hours</td>
                   </tr>
                 </tbody>
               </table>
@@ -165,49 +165,49 @@ export default function VirginAustraliaCadet() {
               <p>
                 The financial investment required to become a commercial pilot in Australia is substantial. Costs can vary significantly based on the chosen flight school, training pathway (integrated vs. modular), and individual learning pace. The figures below provide a general estimate for 2026, but prospective students should always obtain detailed quotes from specific flight training organizations [5] [6].
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Licence/Rating</th>
-                    <th>Estimated Cost (AUD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Licence/Rating</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>$25,000 - $45,000</td>
-                    <td>Includes aircraft hire, instructor fees, exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">$25,000 - $45,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes aircraft hire, instructor fees, exams.</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>$80,000 - $120,000+</td>
-                    <td>Total cost from zero experience, including PPL. Integrated courses can be around $99,850 - $150,000.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">$80,000 - $120,000+</td>
+                    <td className="px-4 py-3 text-white/80">Total cost from zero experience, including PPL. Integrated courses can be around $99,850 - $150,000.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (ME)</td>
-                    <td>$10,000 - $15,000</td>
-                    <td>Additional to CPL.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
+                    <td className="px-4 py-3 text-white/80">$10,000 - $15,000</td>
+                    <td className="px-4 py-3 text-white/80">Additional to CPL.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>$20,000 - $35,000</td>
-                    <td>Additional to CPL.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">$20,000 - $35,000</td>
+                    <td className="px-4 py-3 text-white/80">Additional to CPL.</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Theory Course</td>
-                    <td>$4,000 - $10,000</td>
-                    <td>Ground school and examination fees.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Theory Course</td>
+                    <td className="px-4 py-3 text-white/80">$4,000 - $10,000</td>
+                    <td className="px-4 py-3 text-white/80">Ground school and examination fees.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Crew Cooperation (MCC)</td>
-                    <td>$5,000 - $10,000</td>
-                    <td>Often included in integrated airline preparation courses.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Crew Cooperation (MCC)</td>
+                    <td className="px-4 py-3 text-white/80">$5,000 - $10,000</td>
+                    <td className="px-4 py-3 text-white/80">Often included in integrated airline preparation courses.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total (Ab-Initio to Airline Ready)</strong></td>
-                    <td><strong>$150,000 - $250,000+</strong></td>
-                    <td>Highly variable, depending on school, aircraft, and individual progress.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total (Ab-Initio to Airline Ready)</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$150,000 - $250,000+</strong></td>
+                    <td className="px-4 py-3 text-white/80">Highly variable, depending on school, aircraft, and individual progress.</td>
                   </tr>
                 </tbody>
               </table>
@@ -225,49 +225,49 @@ export default function VirginAustraliaCadet() {
                 As of June 2026, Virgin Australia primarily recruits experienced pilots through direct entry rather than an active ab-initio cadet program. Their recruitment process is designed to assess skills and experience against specific operational requirements. Prospective pilots should monitor the Virgin Australia careers website for current openings and expressions of interest [3].
               </p>
               <h4>Typical Requirements for Virgin Australia First Officer (B737) [3]:</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Requirement</th>
-                    <th>Details</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Licence</td>
-                    <td>Current Australian ATPL or Commercial Pilot Licence (CPL) with passes in all Australian ATPL theory subjects</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Licence</td>
+                    <td className="px-4 py-3 text-white/80">Current Australian ATPL or Commercial Pilot Licence (CPL) with passes in all Australian ATPL theory subjects</td>
                   </tr>
-                  <tr>
-                    <td>Ratings</td>
-                    <td>Australian Instrument Rating with MEA, IAP 2D and IAP 3D endorsement</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ratings</td>
+                    <td className="px-4 py-3 text-white/80">Australian Instrument Rating with MEA, IAP 2D and IAP 3D endorsement</td>
                   </tr>
-                  <tr>
-                    <td>English Language</td>
-                    <td>English language proficiency Level 6</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">English Language</td>
+                    <td className="px-4 py-3 text-white/80">English language proficiency Level 6</td>
                   </tr>
-                  <tr>
-                    <td>Medical</td>
-                    <td>Valid Australian Class 1 Medical Certificate</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Medical</td>
+                    <td className="px-4 py-3 text-white/80">Valid Australian Class 1 Medical Certificate</td>
                   </tr>
-                  <tr>
-                    <td>Certificates</td>
-                    <td>MCC Certificate</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Certificates</td>
+                    <td className="px-4 py-3 text-white/80">MCC Certificate</td>
                   </tr>
-                  <tr>
-                    <td>Flight Time (Option 1)</td>
-                    <td>Minimum 500 hours total flight time, with 300 hours in command of a powered fixed-wing aircraft (excluding ICUS), including 200 hours in command of a multi-engine aircraft (excluding ICUS)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Time (Option 1)</td>
+                    <td className="px-4 py-3 text-white/80">Minimum 500 hours total flight time, with 300 hours in command of a powered fixed-wing aircraft (excluding ICUS), including 200 hours in command of a multi-engine aircraft (excluding ICUS)</td>
                   </tr>
-                  <tr>
-                    <td>Flight Time (Option 2)</td>
-                    <td>Minimum 500 hours total flight time, with 300 hours in command of a turbine-powered fixed-wing aircraft</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Time (Option 2)</td>
+                    <td className="px-4 py-3 text-white/80">Minimum 500 hours total flight time, with 300 hours in command of a turbine-powered fixed-wing aircraft</td>
                   </tr>
-                  <tr>
-                    <td>Flight Time (Option 3)</td>
-                    <td>Minimum 500 hours on aircraft certified for operation by a crew of at least 2 pilots (multi-crew aircraft)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Time (Option 3)</td>
+                    <td className="px-4 py-3 text-white/80">Minimum 500 hours on aircraft certified for operation by a crew of at least 2 pilots (multi-crew aircraft)</td>
                   </tr>
-                  <tr>
-                    <td>Working Rights</td>
-                    <td>Australian or New Zealand citizen or Australian permanent residency</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Working Rights</td>
+                    <td className="px-4 py-3 text-white/80">Australian or New Zealand citizen or Australian permanent residency</td>
                   </tr>
                 </tbody>
               </table>
@@ -318,7 +318,7 @@ export default function VirginAustraliaCadet() {
           content: (
             <>
               <p>
-                The journey to becoming a Virgin Australia pilot is a challenging yet immensely rewarding endeavor. While direct cadet programs are not currently available, the pathway through comprehensive flight training, adherence to CASA regulations, and accumulation of significant flight experience remains robust. By meticulously planning your training, committing to continuous learning, and meeting the high standards set by Virgin Australia, you can achieve your ambition of flying for one of Australia's leading airlines. The skies above Australia await your command.
+                The journey to becoming a Virgin Australia pilot is a challenging yet rewarding endeavor. While direct cadet programs are not currently available, the pathway through comprehensive flight training, adherence to CASA regulations, and accumulation of significant flight experience remains robust. By meticulously planning your training, committing to continuous learning, and meeting the high standards set by Virgin Australia, you can achieve your ambition of flying for one of Australia's leading airlines. The skies above Australia await your command.
               </p>
             </>
           )

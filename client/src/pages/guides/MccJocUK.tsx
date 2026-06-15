@@ -5,7 +5,7 @@ const MccJocUK = () => {
   return (
     <GuideLayout
       title="MCC & JOC Course UK: What It Is, Cost & Why You Need It"
-      subtitle="A comprehensive guide to Multi-Crew Cooperation (MCC) and Jet Orientation Course (JOC) training in the UK, covering requirements, costs, and career impact."
+      subtitle="Multi-Crew Cooperation (MCC) and Jet Orientation Course (JOC) training in the UK, covering requirements, costs, and career impact."
       canonical="/guides/mcc-joc-uk"
       metaDescription="Understand MCC & JOC courses in the UK: what they are, why they're essential for airline pilots, typical costs (£3,500-£8,000), duration, and how to choose a provider. Covers EASA/CAA regulations and APS MCC."
       faqSchema={[
@@ -100,7 +100,7 @@ const MccJocUK = () => {
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Course Type</th>
                       <th className="px-4 py-3 font-semibold">Primary Focus</th>
                       <th className="px-4 py-3 font-semibold">Regulatory Requirement</th>
@@ -108,25 +108,25 @@ const MccJocUK = () => {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-white/10 text-white/80">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80">Standard MCC</td>
                       <td className="px-4 py-3 text-white/80">Crew Resource Management, SOPs, Teamwork</td>
                       <td className="px-4 py-3 text-white/80">Mandatory for multi-pilot type rating [1]</td>
                       <td className="px-4 py-3 text-white/80">20 hours (minimum)</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80">JOC</td>
                       <td className="px-4 py-3 text-white/80">Jet aircraft handling, aerodynamics, systems</td>
                       <td className="px-4 py-3 text-white/80">Recommended, not mandatory</td>
                       <td className="px-4 py-3 text-white/80">8-12 hours (typical)</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80">Combined MCC/JOC</td>
                       <td className="px-4 py-3 text-white/80">Both CRM and jet handling</td>
                       <td className="px-4 py-3 text-white/80">MCC part mandatory, JOC part recommended</td>
                       <td className="px-4 py-3 text-white/80">30-35 hours (typical)</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 text-white/80">APS MCC</td>
                       <td className="px-4 py-3 text-white/80">Enhanced CRM, advanced jet operations, airline scenarios</td>
                       <td className="px-4 py-3 text-white/80">Optional, but preferred by some airlines</td>

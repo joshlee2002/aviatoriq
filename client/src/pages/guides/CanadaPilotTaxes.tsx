@@ -32,37 +32,37 @@ export default function CanadaPilotTaxes() {
               <h3>Eligible Expenses for Pilot Training</h3>
               <p>Not all flight training expenses are eligible for tax credits. The Canada Revenue Agency (CRA) allows claims for costs associated with ground school, flight simulators, and the minimum Transport Canada requirements for Commercial Pilot Licence (CPL), Airline Transport Pilot Licence (ATPL), and various ratings such as multi-engine, instrument, and instructor ratings [3, 7]. It is important to note that the Private Pilot Licence (PPL) on its own is generally not eligible unless it is part of a continuous progression towards a Commercial Licence [3].</p>
               <h4>Table: Eligible vs. Ineligible Flight Training Expenses for Tuition Tax Credits</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Eligible Expenses</th>
-                    <th>Ineligible Expenses</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Eligible Expenses</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Ineligible Expenses</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Ground school fees</td>
-                    <td>Aircraft owner costs</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground school fees</td>
+                    <td className="px-4 py-3 text-white/80">Aircraft owner costs</td>
                   </tr>
-                  <tr>
-                    <td>Flight simulator fees</td>
-                    <td>Lodging and meals</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight simulator fees</td>
+                    <td className="px-4 py-3 text-white/80">Lodging and meals</td>
                   </tr>
-                  <tr>
-                    <td>Minimum dual/solo hours for CPL, ATPL, and ratings (as per TC regulations)</td>
-                    <td>Textbooks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Minimum dual/solo hours for CPL, ATPL, and ratings (as per TC regulations)</td>
+                    <td className="px-4 py-3 text-white/80">Textbooks</td>
                   </tr>
-                  <tr>
-                    <td>Written exam fees</td>
-                    <td>Flying hours above Transport Canada minimums</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Written exam fees</td>
+                    <td className="px-4 py-3 text-white/80">Flying hours above Transport Canada minimums</td>
                   </tr>
-                  <tr>
-                    <td>Applicable fees from designated institutions</td>
-                    <td>Transportation and parking</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Applicable fees from designated institutions</td>
+                    <td className="px-4 py-3 text-white/80">Transportation and parking</td>
                   </tr>
-                  <tr>
-                    <td></td>
-                    <td>Extracurricular activity fees</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"></td>
+                    <td className="px-4 py-3 text-white/80">Extracurricular activity fees</td>
                   </tr>
                 </tbody>
               </table>
@@ -84,59 +84,59 @@ export default function CanadaPilotTaxes() {
               <p>For GST/HST purposes, flight training leading to a Commercial Pilot Licence (CPL), Airline Transport Pilot Licence (ATPL), and specific ratings (multi-engine, instrument, instructor) is generally exempt from GST/HST if it meets two primary conditions: it must be provided by a <em>vocational school</em> and adhere to the <em>minimum flight time requirements</em> set by federal legislation [6].</p>
               <p>Conversely, training for a Private Pilot Licence (PPL), Recreational Pilot Permit, any 'build-up' time (hours accumulated beyond minimum requirements), and flight time exceeding the Transport Canada minimums are typically subject to GST/HST [6]. The CRA defines a vocational school as an organization established and operated primarily to provide instruction in courses that develop or enhance students' occupational skills [6].</p>
               <h4>Table: GST/HST Applicability to Flight Training Types</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Training Type</th>
-                    <th>GST/HST Applicability</th>
-                    <th>Conditions</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Type</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">GST/HST Applicability</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Conditions</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>Exempt</td>
-                    <td>Provided by a vocational school; meets TC minimums [6]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">Exempt</td>
+                    <td className="px-4 py-3 text-white/80">Provided by a vocational school; meets TC minimums [6]</td>
                   </tr>
-                  <tr>
-                    <td>Airline Transport Pilot Licence (ATPL)</td>
-                    <td>Exempt</td>
-                    <td>Provided by a vocational school; meets TC minimums [6]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Airline Transport Pilot Licence (ATPL)</td>
+                    <td className="px-4 py-3 text-white/80">Exempt</td>
+                    <td className="px-4 py-3 text-white/80">Provided by a vocational school; meets TC minimums [6]</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating</td>
-                    <td>Exempt</td>
-                    <td>Provided by a vocational school; meets TC minimums [6]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating</td>
+                    <td className="px-4 py-3 text-white/80">Exempt</td>
+                    <td className="px-4 py-3 text-white/80">Provided by a vocational school; meets TC minimums [6]</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating</td>
-                    <td>Exempt</td>
-                    <td>Provided by a vocational school; meets TC minimums [6]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating</td>
+                    <td className="px-4 py-3 text-white/80">Exempt</td>
+                    <td className="px-4 py-3 text-white/80">Provided by a vocational school; meets TC minimums [6]</td>
                   </tr>
-                  <tr>
-                    <td>Flight Instructor Rating</td>
-                    <td>Exempt</td>
-                    <td>Provided by a vocational school; meets TC minimums [6]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Instructor Rating</td>
+                    <td className="px-4 py-3 text-white/80">Exempt</td>
+                    <td className="px-4 py-3 text-white/80">Provided by a vocational school; meets TC minimums [6]</td>
                   </tr>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>Taxable</td>
-                    <td>Generally considered recreational [6]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">Taxable</td>
+                    <td className="px-4 py-3 text-white/80">Generally considered recreational [6]</td>
                   </tr>
-                  <tr>
-                    <td>Recreational Pilot Permit</td>
-                    <td>Taxable</td>
-                    <td>Generally considered recreational [6]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Recreational Pilot Permit</td>
+                    <td className="px-4 py-3 text-white/80">Taxable</td>
+                    <td className="px-4 py-3 text-white/80">Generally considered recreational [6]</td>
                   </tr>
-                  <tr>
-                    <td>Flight time exceeding TC minimums</td>
-                    <td>Taxable</td>
-                    <td>Beyond occupational skill enhancement [6]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight time exceeding TC minimums</td>
+                    <td className="px-4 py-3 text-white/80">Taxable</td>
+                    <td className="px-4 py-3 text-white/80">Beyond occupational skill enhancement [6]</td>
                   </tr>
-                  <tr>
-                    <td>Build-up time (e.g., for CPL)</td>
-                    <td>Taxable</td>
-                    <td>Beyond occupational skill enhancement [6]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Build-up time (e.g., for CPL)</td>
+                    <td className="px-4 py-3 text-white/80">Taxable</td>
+                    <td className="px-4 py-3 text-white/80">Beyond occupational skill enhancement [6]</td>
                   </tr>
                 </tbody>
               </table>

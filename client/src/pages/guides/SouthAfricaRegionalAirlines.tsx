@@ -52,39 +52,39 @@ export default function SouthAfricaRegionalAirlines() {
             <>
               <p>Aspiring pilots in South Africa have several pathways to achieve their goals, primarily through modular or integrated training programs offered by SACAA-approved Flight Training Organisations (FTOs). Each approach has its advantages, catering to different learning styles and financial situations.</p>
               <h3>Modular vs. Integrated Training:</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Feature</th>
-                    <th>Modular Training</th>
-                    <th>Integrated Training</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Modular Training</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Integrated Training</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Structure</strong></td>
-                    <td>Individual licenses (PPL, CPL, IR, ME) obtained sequentially.</td>
-                    <td>A continuous, full-time program from ab-initio to CPL/IR.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Structure</strong></td>
+                    <td className="px-4 py-3 text-white/80">Individual licenses (PPL, CPL, IR, ME) obtained sequentially.</td>
+                    <td className="px-4 py-3 text-white/80">A continuous, full-time program from ab-initio to CPL/IR.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Flexibility</strong></td>
-                    <td>High; allows for breaks between modules, self-study.</td>
-                    <td>Low; intensive, structured curriculum.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Flexibility</strong></td>
+                    <td className="px-4 py-3 text-white/80">High; allows for breaks between modules, self-study.</td>
+                    <td className="px-4 py-3 text-white/80">Low; intensive, structured curriculum.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Duration</strong></td>
-                    <td>Longer overall, depending on individual pace.</td>
-                    <td>Typically 18-24 months.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Duration</strong></td>
+                    <td className="px-4 py-3 text-white/80">Longer overall, depending on individual pace.</td>
+                    <td className="px-4 py-3 text-white/80">Typically 18-24 months.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Cost Management</strong></td>
-                    <td>Pay-as-you-go, potentially spreading costs.</td>
-                    <td>Upfront or structured payments for the entire course.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Cost Management</strong></td>
+                    <td className="px-4 py-3 text-white/80">Pay-as-you-go, potentially spreading costs.</td>
+                    <td className="px-4 py-3 text-white/80">Upfront or structured payments for the entire course.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Intensity</strong></td>
-                    <td>Less intense, allows for part-time work.</td>
-                    <td>Highly intense, full-time commitment.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Intensity</strong></td>
+                    <td className="px-4 py-3 text-white/80">Less intense, allows for part-time work.</td>
+                    <td className="px-4 py-3 text-white/80">Highly intense, full-time commitment.</td>
                   </tr>
                 </tbody>
               </table>
@@ -107,59 +107,59 @@ export default function SouthAfricaRegionalAirlines() {
             <>
               <p>The financial investment required for pilot training in South Africa is substantial, reflecting the specialized nature of the profession. Costs can vary significantly based on the chosen training pathway (modular vs. integrated), the FTO, aircraft type used for training, and individual learning pace. The figures below are estimates for 2026, denominated in South African Rand (ZAR).</p>
               <h3>Cost Breakdown for CPL with Multi-Engine and Instrument Rating:</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Estimated Cost (ZAR)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (ZAR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot License (PPL)</td>
-                    <td>ZAR 100,000 - 150,000</td>
-                    <td>Includes flight hours, ground school, exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">ZAR 100,000 - 150,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes flight hours, ground school, exams.</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot License (CPL)</td>
-                    <td>ZAR 350,000 - 500,000</td>
-                    <td>Advanced flight training, theoretical exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">ZAR 350,000 - 500,000</td>
+                    <td className="px-4 py-3 text-white/80">Advanced flight training, theoretical exams.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>ZAR 100,000 - 180,000</td>
-                    <td>Essential for flying in various weather conditions.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">ZAR 100,000 - 180,000</td>
+                    <td className="px-4 py-3 text-white/80">Essential for flying in various weather conditions.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (ME)</td>
-                    <td>ZAR 60,000 - 100,000</td>
-                    <td>Required for multi-engine aircraft.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
+                    <td className="px-4 py-3 text-white/80">ZAR 60,000 - 100,000</td>
+                    <td className="px-4 py-3 text-white/80">Required for multi-engine aircraft.</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Theoretical Exams</td>
-                    <td>ZAR 30,000 - 50,000</td>
-                    <td>Often completed during CPL phase.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Theoretical Exams</td>
+                    <td className="px-4 py-3 text-white/80">ZAR 30,000 - 50,000</td>
+                    <td className="px-4 py-3 text-white/80">Often completed during CPL phase.</td>
                   </tr>
-                  <tr>
-                    <td>Medical Examinations (Class 1)</td>
-                    <td>ZAR 5,000 - 10,000</td>
-                    <td>Initial and recurring costs.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Medical Examinations (Class 1)</td>
+                    <td className="px-4 py-3 text-white/80">ZAR 5,000 - 10,000</td>
+                    <td className="px-4 py-3 text-white/80">Initial and recurring costs.</td>
                   </tr>
-                  <tr>
-                    <td>Study Materials & Equipment</td>
-                    <td>ZAR 20,000 - 40,000</td>
-                    <td>Headset, textbooks, navigation tools.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Study Materials & Equipment</td>
+                    <td className="px-4 py-3 text-white/80">ZAR 20,000 - 40,000</td>
+                    <td className="px-4 py-3 text-white/80">Headset, textbooks, navigation tools.</td>
                   </tr>
-                  <tr>
-                    <td>Accommodation & Living Expenses</td>
-                    <td>Variable</td>
-                    <td>Significant factor, especially for full-time students.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Accommodation & Living Expenses</td>
+                    <td className="px-4 py-3 text-white/80">Variable</td>
+                    <td className="px-4 py-3 text-white/80">Significant factor, especially for full-time students.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Cost</strong></td>
-                    <td><strong>ZAR 600,000 - 1,000,000+</strong></td>
-                    <td>Excludes living expenses; highly dependent on choices.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>ZAR 600,000 - 1,000,000+</strong></td>
+                    <td className="px-4 py-3 text-white/80">Excludes living expenses; highly dependent on choices.</td>
                   </tr>
                 </tbody>
               </table>
@@ -198,7 +198,7 @@ export default function SouthAfricaRegionalAirlines() {
                 <li><strong>Physical and Mental Fitness:</strong> Aviation demands high levels of both; maintain a healthy lifestyle.</li>
                 <li><strong>Build Experience:</strong> After CPL, consider opportunities like flight instructing or charter flying to build hours and experience.</li>
               </ul>
-              <p>The journey to becoming a regional airline pilot in South Africa is challenging but immensely rewarding. With meticulous planning, dedication, and a passion for aviation, the skies are within reach.</p>
+              <p>The journey to becoming a regional airline pilot in South Africa is challenging but rewarding. With meticulous planning, dedication, and a passion for aviation, the skies are within reach.</p>
             </>
           )
         }

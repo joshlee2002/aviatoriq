@@ -48,34 +48,34 @@ const BestRouteToAirline = () => {
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Attribute</th>
                       <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Description</th>
                       <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Why it Matters</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Technical Proficiency</td>
                       <td className="px-4 py-3 text-white/80">Mastery of aircraft systems, flight principles, and procedures.</td>
                       <td className="px-4 py-3 text-white/80">Ensures safe and efficient operation of complex aircraft.</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Multi-Crew Cooperation (MCC)</td>
                       <td className="px-4 py-3 text-white/80">Effective teamwork, communication, and decision-making in a cockpit.</td>
                       <td className="px-4 py-3 text-white/80">Crucial for safety and operational efficiency in airline environments.</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Problem Solving & Decision Making</td>
                       <td className="px-4 py-3 text-white/80">Ability to analyze situations, identify solutions, and make timely decisions under pressure.</td>
                       <td className="px-4 py-3 text-white/80">Essential for handling unexpected events and maintaining flight safety.</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Resilience & Adaptability</td>
                       <td className="px-4 py-3 text-white/80">Capacity to manage stress, learn from mistakes, and adjust to changing circumstances.</td>
                       <td className="px-4 py-3 text-white/80">Coping with irregular hours, diverse environments, and continuous learning.</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Professionalism & Integrity</td>
                       <td className="px-4 py-3 text-white/80">Adherence to ethical standards, regulations, and company policies.</td>
                       <td className="px-4 py-3 text-white/80">Upholding the airline's reputation and ensuring regulatory compliance.</td>
@@ -100,7 +100,7 @@ const BestRouteToAirline = () => {
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline/Programme</th>
                       <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Route Type</th>
                       <th scope="col" className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Features</th>
@@ -108,25 +108,25 @@ const BestRouteToAirline = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">British Airways Future Pilot Programme</td>
                       <td className="px-4 py-3 text-white/80">Integrated</td>
                       <td className="px-4 py-3 text-white/80">Historically offered sponsorship/loan support, direct entry to BA.</td>
                       <td className="px-4 py-3 text-white/80">Currently paused/under review; check BA careers for updates.</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">easyJet Generation easyJet Pilot Programme</td>
                       <td className="px-4 py-3 text-white/80">Integrated</td>
                       <td className="px-4 py-3 text-white/80">Partnership with flight schools (e.g., CAE, L3Harris), job offer upon completion.</td>
                       <td className="px-4 py-3 text-white/80">Active, highly competitive.</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">Ryanair Mentored Programme</td>
                       <td className="px-4 py-3 text-white/80">Integrated</td>
                       <td className="px-4 py-3 text-white/80">Partnership with flight schools (e.g., ATOs like Airline Flight Academy), type rating often included.</td>
                       <td className="px-4 py-3 text-white/80">Active, consistent recruitment.</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="px-4 py-3 font-medium text-white">TUI Airline Pilot Programme</td>
                       <td className="px-4 py-3 text-white/80">Integrated</td>
                       <td className="px-4 py-3 text-white/80">Historically fully sponsored, direct entry to TUI.</td>

@@ -33,7 +33,7 @@ export default function FaaMedicalClass1() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Class</th>
                       <th className="px-4 py-3 font-semibold">Required For</th>
                       <th className="px-4 py-3 font-semibold">Validity (Under 40)</th>
@@ -91,7 +91,7 @@ export default function FaaMedicalClass1() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Domain</th>
                       <th className="px-4 py-3 font-semibold">Class 1 Standard</th>
                       <th className="px-4 py-3 font-semibold">Notes</th>
@@ -177,7 +177,7 @@ export default function FaaMedicalClass1() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Category</th>
                       <th className="px-4 py-3 font-semibold">Disqualifying Conditions</th>
                       <th className="px-4 py-3 font-semibold">Special Issuance Possible?</th>

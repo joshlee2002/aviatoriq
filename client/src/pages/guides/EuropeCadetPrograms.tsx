@@ -32,16 +32,16 @@ export default function EuropeCadetPrograms() {
               <p>Complementing Part-FCL is Part-MED, which outlines the stringent medical requirements for all pilots. Maintaining a valid EASA medical certificate of the appropriate class is paramount throughout a pilot's career. As of 2026, EASA continues to refine these regulations, with a notable shift towards competency-based assessment and ongoing incorporation of Evidence-Based Training (EBT) principles.</p>
               <h3>Key License Types and Requirements</h3>
               <p>Part-FCL establishes a progressive hierarchy of pilot licenses, each with distinct privileges and requirements:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Licence</th><th>Min Hours</th><th>Medical</th><th>Privileges</th><th>Typical Cost (EUR)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Licence</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Min Hours</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Medical</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Privileges</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Cost (EUR)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>LAPL (Light Aircraft Pilot Licence)</td><td>30 hrs</td><td>LAPL</td><td>VFR, max 3 pax, EASA states only</td><td>€6,000 - €10,000</td></tr>
-                  <tr><td>PPL (Private Pilot Licence)</td><td>45 hrs</td><td>Class 2</td><td>VFR, no pax limit, ICAO worldwide</td><td>€10,000 - €18,000</td></tr>
-                  <tr><td>CPL (Commercial Pilot Licence)</td><td>200 hrs</td><td>Class 1</td><td>Paid flying, aerial work, charter</td><td>€50,000 - €100,000</td></tr>
-                  <tr><td>MPL (Multi-crew Pilot Licence)</td><td>240 hrs</td><td>Class 1</td><td>Multi-crew co-pilot only (airline-linked)</td><td>Airline-funded (approx. €60,000 - €120,000 if self-funded)</td></tr>
-                  <tr><td>ATPL (Airline Transport Pilot Licence)</td><td>1,500 hrs*</td><td>Class 1</td><td>Captain on any aircraft, all operations</td><td>€60,000 - €140,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">LAPL (Light Aircraft Pilot Licence)</td><td className="px-4 py-3 text-white/80">30 hrs</td><td className="px-4 py-3 text-white/80">LAPL</td><td className="px-4 py-3 text-white/80">VFR, max 3 pax, EASA states only</td><td className="px-4 py-3 text-white/80">€6,000 - €10,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">PPL (Private Pilot Licence)</td><td className="px-4 py-3 text-white/80">45 hrs</td><td className="px-4 py-3 text-white/80">Class 2</td><td className="px-4 py-3 text-white/80">VFR, no pax limit, ICAO worldwide</td><td className="px-4 py-3 text-white/80">€10,000 - €18,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CPL (Commercial Pilot Licence)</td><td className="px-4 py-3 text-white/80">200 hrs</td><td className="px-4 py-3 text-white/80">Class 1</td><td className="px-4 py-3 text-white/80">Paid flying, aerial work, charter</td><td className="px-4 py-3 text-white/80">€50,000 - €100,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">MPL (Multi-crew Pilot Licence)</td><td className="px-4 py-3 text-white/80">240 hrs</td><td className="px-4 py-3 text-white/80">Class 1</td><td className="px-4 py-3 text-white/80">Multi-crew co-pilot only (airline-linked)</td><td className="px-4 py-3 text-white/80">Airline-funded (approx. €60,000 - €120,000 if self-funded)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATPL (Airline Transport Pilot Licence)</td><td className="px-4 py-3 text-white/80">1,500 hrs*</td><td className="px-4 py-3 text-white/80">Class 1</td><td className="px-4 py-3 text-white/80">Captain on any aircraft, all operations</td><td className="px-4 py-3 text-white/80">€60,000 - €140,000</td></tr>
                 </tbody>
               </table>
               <p>*ATPL requires 1,500 total hours including 500 multi-crew. A frozen ATPL (fATPL) is issued after integrated/modular training and unfreezes at 1,500 hours.</p>
@@ -89,24 +89,24 @@ export default function EuropeCadetPrograms() {
             <>
               <p>The financial investment required for pilot training in Europe is substantial, reflecting the rigorous standards and high-quality instruction. Costs can vary significantly based on the chosen training pathway (integrated vs. modular), the flight school's location, its reputation, and the type of aircraft used for training. All figures are approximate for 2026 and are denominated in Euros (EUR).</p>
               <h3>Breakdown of Typical Costs</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Training Phase/Item</th><th>Modular Pathway (EUR)</th><th>Integrated Pathway (EUR)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase/Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Modular Pathway (EUR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Integrated Pathway (EUR)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot Licence (PPL)</td><td>€10,000 - €18,000</td><td>Included</td></tr>
-                  <tr><td>ATPL Theory (Distance Learning/Classroom)</td><td>€3,000 - €8,000</td><td>Included</td></tr>
-                  <tr><td>Hour Building (approx. 100-150 hours)</td><td>€20,000 - €35,000</td><td>Included</td></tr>
-                  <tr><td>Commercial Pilot Licence (CPL)</td><td>€15,000 - €25,000</td><td>Included</td></tr>
-                  <tr><td>Multi-Engine Piston (MEP) Rating</td><td>€5,000 - €8,000</td><td>Included</td></tr>
-                  <tr><td>Instrument Rating (IR)</td><td>€15,000 - €25,000</td><td>Included</td></tr>
-                  <tr><td>Multi-Crew Cooperation (MCC) Course</td><td>€3,000 - €6,000</td><td>Included</td></tr>
-                  <tr><td>Upset Prevention & Recovery Training (UPRT)</td><td>€2,000 - €4,000</td><td>Included</td></tr>
-                  <tr><td>EASA Class 1 Medical Examination</td><td>€500 - €1,000</td><td>€500 - €1,000</td></tr>
-                  <tr><td>Examiner Fees & Licensing</td><td>€1,000 - €2,000</td><td>€1,000 - €2,000</td></tr>
-                  <tr><td>Study Materials & Equipment</td><td>€1,000 - €3,000</td><td>€1,000 - €3,000</td></tr>
-                  <tr><td>Accommodation & Living Expenses</td><td>Variable</td><td>Variable</td></tr>
-                  <tr><td><strong>Total Estimated Cost</strong></td><td><strong>€60,000 - €90,000</strong></td><td><strong>€80,000 - €120,000</strong></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td><td className="px-4 py-3 text-white/80">€10,000 - €18,000</td><td className="px-4 py-3 text-white/80">Included</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATPL Theory (Distance Learning/Classroom)</td><td className="px-4 py-3 text-white/80">€3,000 - €8,000</td><td className="px-4 py-3 text-white/80">Included</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Hour Building (approx. 100-150 hours)</td><td className="px-4 py-3 text-white/80">€20,000 - €35,000</td><td className="px-4 py-3 text-white/80">Included</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td><td className="px-4 py-3 text-white/80">€15,000 - €25,000</td><td className="px-4 py-3 text-white/80">Included</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Piston (MEP) Rating</td><td className="px-4 py-3 text-white/80">€5,000 - €8,000</td><td className="px-4 py-3 text-white/80">Included</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">€15,000 - €25,000</td><td className="px-4 py-3 text-white/80">Included</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Crew Cooperation (MCC) Course</td><td className="px-4 py-3 text-white/80">€3,000 - €6,000</td><td className="px-4 py-3 text-white/80">Included</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Upset Prevention & Recovery Training (UPRT)</td><td className="px-4 py-3 text-white/80">€2,000 - €4,000</td><td className="px-4 py-3 text-white/80">Included</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">EASA Class 1 Medical Examination</td><td className="px-4 py-3 text-white/80">€500 - €1,000</td><td className="px-4 py-3 text-white/80">€500 - €1,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Examiner Fees & Licensing</td><td className="px-4 py-3 text-white/80">€1,000 - €2,000</td><td className="px-4 py-3 text-white/80">€1,000 - €2,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Study Materials & Equipment</td><td className="px-4 py-3 text-white/80">€1,000 - €3,000</td><td className="px-4 py-3 text-white/80">€1,000 - €3,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Accommodation & Living Expenses</td><td className="px-4 py-3 text-white/80">Variable</td><td className="px-4 py-3 text-white/80">Variable</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost</strong></td><td className="px-4 py-3 text-white/80"><strong>€60,000 - €90,000</strong></td><td className="px-4 py-3 text-white/80"><strong>€80,000 - €120,000</strong></td></tr>
                 </tbody>
               </table>
               <p>It is crucial to factor in additional costs such as accommodation, living expenses, transport, and potential re-examination fees. Many flight schools offer financing options or partnerships with lending institutions. Some airlines also offer sponsored cadet programs, which can significantly reduce the financial burden.</p>

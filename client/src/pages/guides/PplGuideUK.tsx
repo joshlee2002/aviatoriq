@@ -81,49 +81,49 @@ const PplGuideUK = () => {
               </p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th>
                     <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (GBP)</th>
                     <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Flight Instruction (55 hours @ £250/hr aircraft + instructor)</td>
                     <td className="px-4 py-3 text-white/80">£13,750 - £17,325</td>
                     <td className="px-4 py-3 text-white/80">Includes aircraft rental and instructor fees. Assumes 55 hours, not minimum 45.</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Theoretical Knowledge Course & Materials</td>
                     <td className="px-4 py-3 text-white/80">£500 - £1,000</td>
                     <td className="px-4 py-3 text-white/80">Online courses, textbooks, study guides.</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Theory Exams (9 subjects @ approx. £70 each)</td>
                     <td className="px-4 py-3 text-white/80">£630</td>
                     <td className="px-4 py-3 text-white/80">UK CAA exam fees.</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Class 2 Medical Certificate</td>
                     <td className="px-4 py-3 text-white/80">£150 - £250</td>
                     <td className="px-4 py-3 text-white/80">Initial examination cost.</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Skill Test Examiner Fee</td>
                     <td className="px-4 py-3 text-white/80">£250 - £400</td>
                     <td className="px-4 py-3 text-white/80">Fee for the practical flight test examiner.</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Licence Application Fee</td>
                     <td className="px-4 py-3 text-white/80">£150 - £200</td>
                     <td className="px-4 py-3 text-white/80">Fee paid to the CAA for licence issuance.</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Headset, Navigation Equipment, Uniform (Optional)</td>
                     <td className="px-4 py-3 text-white/80">£500 - £1,500</td>
                     <td className="px-4 py-3 text-white/80">Essential gear for training.</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 font-bold text-white">Total Estimated Cost</td>
                     <td className="px-4 py-3 font-bold text-white">£16,000 - £21,000</td>
                     <td className="px-4 py-3 text-white/80"></td>

@@ -5,7 +5,7 @@ export default function EuropeFlightSchoolLoans() {
   return (
     <GuideLayout
       title="Navigating Flight School Loans in Europe: Your 2026 Guide"
-      subtitle="A comprehensive guide to financing your pilot training in Europe, covering EASA regulations, costs, and loan options for aspiring aviators."
+      subtitle="Financing your pilot training in Europe, covering EASA regulations, costs, and loan options for aspiring aviators."
       readTime="14 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -59,33 +59,33 @@ export default function EuropeFlightSchoolLoans() {
               <p>
                 Modular training allows for a pay-as-you-go approach, spreading the financial burden over a longer period. The total cost can range from **€50,000 to €100,000+**, depending on how efficiently each module is completed and the chosen providers. A typical breakdown includes:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Module</th>
-                    <th>Estimated Cost (EUR)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Module</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (EUR)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>€10,000 - €15,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">€10,000 - €15,000</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Theory (Distance Learning/Classroom)</td>
-                    <td>€3,000 - €8,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Theory (Distance Learning/Classroom)</td>
+                    <td className="px-4 py-3 text-white/80">€3,000 - €8,000</td>
                   </tr>
-                  <tr>
-                    <td>Hour Building (100-150 hours)</td>
-                    <td>€15,000 - €30,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Hour Building (100-150 hours)</td>
+                    <td className="px-4 py-3 text-white/80">€15,000 - €30,000</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL) + Multi-Engine Instrument Rating (MEIR)</td>
-                    <td>€30,000 - €50,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL) + Multi-Engine Instrument Rating (MEIR)</td>
+                    <td className="px-4 py-3 text-white/80">€30,000 - €50,000</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Crew Cooperation (MCC) / APS MCC</td>
-                    <td>€1,950 - €10,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Crew Cooperation (MCC) / APS MCC</td>
+                    <td className="px-4 py-3 text-white/80">€1,950 - €10,000</td>
                   </tr>
                 </tbody>
               </table>

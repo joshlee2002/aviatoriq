@@ -77,54 +77,54 @@ export default function CasaAtplRequirements() {
               <p>
                 The CASA ATPL demands significant flight experience, ensuring that pilots have accumulated a broad range of operational hours in various conditions. The minimum hours are prescribed to build proficiency and decision-making capabilities essential for air transport roles. Up to 100 hours of the total aeronautical experience can be accrued in a Flight Simulation Training Device (FSTD), with a maximum of 25 hours in an FSTD that is not a full flight simulator.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Experience Category</th>
-                    <th>Minimum Hours (Aeroplane ATPL)</th>
-                    <th>Conditions</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Experience Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Hours (Aeroplane ATPL)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Conditions</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Total Aeronautical Experience</td>
-                    <td>1500</td>
-                    <td>Up to 100 hours in FSTD (max 25 in non-simulator FSTD)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Aeronautical Experience</td>
+                    <td className="px-4 py-3 text-white/80">1500</td>
+                    <td className="px-4 py-3 text-white/80">Up to 100 hours in FSTD (max 25 in non-simulator FSTD)</td>
                   </tr>
-                  <tr>
-                    <td>Flight Time as Pilot</td>
-                    <td>1400</td>
-                    <td>At least 750 hours in aeroplanes</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Time as Pilot</td>
+                    <td className="px-4 py-3 text-white/80">1400</td>
+                    <td className="px-4 py-3 text-white/80">At least 750 hours in aeroplanes</td>
                   </tr>
-                  <tr>
-                    <td>Pilot in Command (PIC) or PIC Under Supervision (PICUS)</td>
-                    <td>500 (or 250 if at least 70 are PIC)</td>
-                    <td>Must be in aeroplanes</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Pilot in Command (PIC) or PIC Under Supervision (PICUS)</td>
+                    <td className="px-4 py-3 text-white/80">500 (or 250 if at least 70 are PIC)</td>
+                    <td className="px-4 py-3 text-white/80">Must be in aeroplanes</td>
                   </tr>
-                  <tr>
-                    <td>Cross-Country Flight Time</td>
-                    <td>200</td>
-                    <td>Must be in aeroplanes</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Cross-Country Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">200</td>
+                    <td className="px-4 py-3 text-white/80">Must be in aeroplanes</td>
                   </tr>
-                  <tr>
-                    <td>Cross-Country Flight Time as PIC or PICUS</td>
-                    <td>100</td>
-                    <td>Must be in aeroplanes</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Cross-Country Flight Time as PIC or PICUS</td>
+                    <td className="px-4 py-3 text-white/80">100</td>
+                    <td className="px-4 py-3 text-white/80">Must be in aeroplanes</td>
                   </tr>
-                  <tr>
-                    <td>Night Flight Time (other than dual)</td>
-                    <td>100</td>
-                    <td>Must be in aeroplanes</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Night Flight Time (other than dual)</td>
+                    <td className="px-4 py-3 text-white/80">100</td>
+                    <td className="px-4 py-3 text-white/80">Must be in aeroplanes</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Time</td>
-                    <td>75</td>
-                    <td>N/A</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Time</td>
+                    <td className="px-4 py-3 text-white/80">75</td>
+                    <td className="px-4 py-3 text-white/80">N/A</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Flight Time</td>
-                    <td>45</td>
-                    <td>Must be in aeroplanes</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">45</td>
+                    <td className="px-4 py-3 text-white/80">Must be in aeroplanes</td>
                   </tr>
                 </tbody>
               </table>
@@ -151,49 +151,49 @@ export default function CasaAtplRequirements() {
               <p>
                 The financial investment required to obtain a CASA ATPL can be substantial, encompassing theoretical study materials, examination fees, flight training, and associated administrative costs. While individual costs can vary based on training provider, prior experience, and the efficiency of progress, here's an estimated breakdown for 2026:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Cost Category</th>
-                    <th>Estimated Cost (AUD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>ATPL Theory Course</td>
-                    <td>$2,000 - $6,000</td>
-                    <td>Depending on self-study vs. structured ground school</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Theory Course</td>
+                    <td className="px-4 py-3 text-white/80">$2,000 - $6,000</td>
+                    <td className="px-4 py-3 text-white/80">Depending on self-study vs. structured ground school</td>
                   </tr>
-                  <tr>
-                    <td>CASA ATPL Exam Fees (7 subjects)</td>
-                    <td>$1,472.31 (7 x $210.33)</td>
-                    <td>Includes invigilator and CASA fees; re-sit costs extra</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CASA ATPL Exam Fees (7 subjects)</td>
+                    <td className="px-4 py-3 text-white/80">$1,472.31 (7 x $210.33)</td>
+                    <td className="px-4 py-3 text-white/80">Includes invigilator and CASA fees; re-sit costs extra</td>
                   </tr>
-                  <tr>
-                    <td>Class 1 Medical Certificate</td>
-                    <td>$500 - $800</td>
-                    <td>Initial examination and subsequent renewals</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Class 1 Medical Certificate</td>
+                    <td className="px-4 py-3 text-white/80">$500 - $800</td>
+                    <td className="px-4 py-3 text-white/80">Initial examination and subsequent renewals</td>
                   </tr>
-                  <tr>
-                    <td>Multi-crew Cooperation (MCC) Training</td>
-                    <td>$5,000 - $10,000</td>
-                    <td>Can be integrated into airline training programs</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-crew Cooperation (MCC) Training</td>
+                    <td className="px-4 py-3 text-white/80">$5,000 - $10,000</td>
+                    <td className="px-4 py-3 text-white/80">Can be integrated into airline training programs</td>
                   </tr>
-                  <tr>
-                    <td>Flight Training (Hour Building & Endorsements)</td>
-                    <td>Highly Variable</td>
-                    <td>Depends on current experience and required hours to meet ATPL minimums</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Training (Hour Building & Endorsements)</td>
+                    <td className="px-4 py-3 text-white/80">Highly Variable</td>
+                    <td className="px-4 py-3 text-white/80">Depends on current experience and required hours to meet ATPL minimums</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Flight Test Fee</td>
-                    <td>$1,500 - $3,000</td>
-                    <td>Examiner fees and aircraft hire</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Flight Test Fee</td>
+                    <td className="px-4 py-3 text-white/80">$1,500 - $3,000</td>
+                    <td className="px-4 py-3 text-white/80">Examiner fees and aircraft hire</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Cost (Excluding extensive hour building)</strong></td>
-                    <td><strong>$10,472 - $20,800+</strong></td>
-                    <td>This does not include the cost of obtaining a CPL or significant hour building if starting from scratch. Total cost from zero experience to ATPL can exceed AUD $100,000 - $150,000.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost (Excluding extensive hour building)</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$10,472 - $20,800+</strong></td>
+                    <td className="px-4 py-3 text-white/80">This does not include the cost of obtaining a CPL or significant hour building if starting from scratch. Total cost from zero experience to ATPL can exceed AUD $100,000 - $150,000.</td>
                   </tr>
                 </tbody>
               </table>

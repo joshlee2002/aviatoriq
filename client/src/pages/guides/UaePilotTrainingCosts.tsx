@@ -47,18 +47,18 @@ export default function UaePilotTrainingCosts() {
             <>
               <p>The Emirates Flight Training Academy (EFTA), located in Dubai South, is renowned for its advanced training methodologies and direct affiliation with Emirates Airline. EFTA offers a comprehensive cadet program designed to produce highly skilled pilots for the airline industry. The academy boasts a modern fleet of training aircraft, including Cirrus SR22 and Embraer Phenom 100EV jets, and state-of-the-art simulators.</p>
               <p>As of January 2026, the estimated cost for the self-sponsored cadet program at EFTA is approximately <strong>USD 181,650</strong>, inclusive of 5% VAT. This figure covers a significant portion of the training, from ground school to flight phases, but prospective cadets should budget for additional personal expenses.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Cost Component</th><th>Estimated Cost (USD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Component</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Tuition Fee (incl. 5% VAT)</td><td>181,650</td><td>Covers ground school, flight training, and type rating preparation.</td></tr>
-                  <tr><td>Accommodation</td><td>Variable</td><td>Not included in tuition; estimated 1,000-2,000 USD/month.</td></tr>
-                  <tr><td>Living Expenses</td><td>Variable</td><td>Food, transport, personal expenses; estimated 500-1,000 USD/month.</td></tr>
-                  <tr><td>Medical Examination (Class 1)</td><td>500 - 1,000</td><td>Initial and recurring checks.</td></tr>
-                  <tr><td>GCAA Examination Fees</td><td>1,000 - 2,000</td><td>Theoretical and practical exam fees.</td></tr>
-                  <tr><td>Study Materials & Uniform</td><td>1,500 - 3,000</td><td>Books, charts, pilot supplies, academy uniform.</td></tr>
-                  <tr><td>Total Estimated (Excl. Living)</td><td>~185,000 - 190,000</td><td>A conservative estimate for the full program.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Tuition Fee (incl. 5% VAT)</td><td className="px-4 py-3 text-white/80">181,650</td><td className="px-4 py-3 text-white/80">Covers ground school, flight training, and type rating preparation.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Accommodation</td><td className="px-4 py-3 text-white/80">Variable</td><td className="px-4 py-3 text-white/80">Not included in tuition; estimated 1,000-2,000 USD/month.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Living Expenses</td><td className="px-4 py-3 text-white/80">Variable</td><td className="px-4 py-3 text-white/80">Food, transport, personal expenses; estimated 500-1,000 USD/month.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical Examination (Class 1)</td><td className="px-4 py-3 text-white/80">500 - 1,000</td><td className="px-4 py-3 text-white/80">Initial and recurring checks.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">GCAA Examination Fees</td><td className="px-4 py-3 text-white/80">1,000 - 2,000</td><td className="px-4 py-3 text-white/80">Theoretical and practical exam fees.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Study Materials & Uniform</td><td className="px-4 py-3 text-white/80">1,500 - 3,000</td><td className="px-4 py-3 text-white/80">Books, charts, pilot supplies, academy uniform.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Total Estimated (Excl. Living)</td><td className="px-4 py-3 text-white/80">~185,000 - 190,000</td><td className="px-4 py-3 text-white/80">A conservative estimate for the full program.</td></tr>
                 </tbody>
               </table>
               <p>While EFTA does not typically offer scholarships for self-sponsored students, its reputation and the quality of training often lead to favorable career prospects with major airlines.</p>
@@ -71,17 +71,17 @@ export default function UaePilotTrainingCosts() {
             <>
               <p>Alpha Aviation Academy, based in Sharjah, is another prominent flight training organization in the UAE, known for its Multi-crew Pilot License (MPL) program. The MPL program is designed in collaboration with airlines, focusing on multi-crew operations from an early stage, making graduates highly desirable for airline recruitment.</p>
               <p>For 2026, the estimated cost for an MPL program at Alpha Aviation Academy can range significantly, but historical data suggests figures around <strong>AED 600,000 to AED 625,000</strong> (approximately USD 163,000 to USD 170,000) plus VAT, depending on payment plans. This typically includes ground school, flight training, and often a type rating for a specific aircraft.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Cost Component</th><th>Estimated Cost (AED)</th><th>Estimated Cost (USD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Component</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AED)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>MPL Program Fee</td><td>600,000 - 625,000</td><td>163,350 - 170,150</td><td>Covers integrated ground and flight training.</td></tr>
-                  <tr><td>VAT (5%)</td><td>30,000 - 31,250</td><td>8,167 - 8,507</td><td>Applicable on program fees.</td></tr>
-                  <tr><td>Accommodation</td><td>Variable</td><td>Variable</td><td>Often available through the academy; estimated 3,000-5,000 AED/month.</td></tr>
-                  <tr><td>Living Expenses</td><td>Variable</td><td>Variable</td><td>Estimated 1,500-3,000 AED/month.</td></tr>
-                  <tr><td>Medical & GCAA Fees</td><td>5,000 - 10,000</td><td>1,360 - 2,720</td><td>Similar to EFTA, for licensing and medicals.</td></tr>
-                  <tr><td>Total Estimated (Excl. Living)</td><td>~635,000 - 666,250</td><td>~173,000 - 181,377</td><td>Comprehensive estimate for the MPL program.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">MPL Program Fee</td><td className="px-4 py-3 text-white/80">600,000 - 625,000</td><td className="px-4 py-3 text-white/80">163,350 - 170,150</td><td className="px-4 py-3 text-white/80">Covers integrated ground and flight training.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">VAT (5%)</td><td className="px-4 py-3 text-white/80">30,000 - 31,250</td><td className="px-4 py-3 text-white/80">8,167 - 8,507</td><td className="px-4 py-3 text-white/80">Applicable on program fees.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Accommodation</td><td className="px-4 py-3 text-white/80">Variable</td><td className="px-4 py-3 text-white/80">Variable</td><td className="px-4 py-3 text-white/80">Often available through the academy; estimated 3,000-5,000 AED/month.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Living Expenses</td><td className="px-4 py-3 text-white/80">Variable</td><td className="px-4 py-3 text-white/80">Variable</td><td className="px-4 py-3 text-white/80">Estimated 1,500-3,000 AED/month.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical & GCAA Fees</td><td className="px-4 py-3 text-white/80">5,000 - 10,000</td><td className="px-4 py-3 text-white/80">1,360 - 2,720</td><td className="px-4 py-3 text-white/80">Similar to EFTA, for licensing and medicals.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Total Estimated (Excl. Living)</td><td className="px-4 py-3 text-white/80">~635,000 - 666,250</td><td className="px-4 py-3 text-white/80">~173,000 - 181,377</td><td className="px-4 py-3 text-white/80">Comprehensive estimate for the MPL program.</td></tr>
                 </tbody>
               </table>
               <p>Alpha Aviation Academy often partners with airlines for cadet programs, which can sometimes offer partial or full sponsorship opportunities for eligible candidates. It is advisable to check their official website for the latest program details and partnership announcements.</p>

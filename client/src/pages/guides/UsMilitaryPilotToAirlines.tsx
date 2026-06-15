@@ -19,7 +19,7 @@ export default function UsMilitaryPilotToAirlines() {
           heading: "The Unparalleled Value of Military Aviators in Commercial Aviation",
           content: (
             <>
-              <p>The transition from military to commercial aviation represents a significant and highly sought-after career path for elite aviators. US military pilots bring an invaluable skillset to the airline industry: unparalleled discipline, extensive experience in complex aircraft, and a profound understanding of demanding operational environments. As the US airline industry continues its robust growth trajectory into 2026, the demand for qualified pilots remains exceptionally strong, with military-trained individuals often fast-tracked due to their proven capabilities and leadership.</p>
+              <p>The transition from military to commercial aviation represents a significant and highly sought-after career path for elite aviators. US military pilots bring an invaluable skillset to the airline industry: exceptional discipline, extensive experience in complex aircraft, and a profound understanding of demanding operational environments. As the US airline industry continues its sustained growth into 2026, the demand for qualified pilots remains exceptionally strong, with military-trained individuals often fast-tracked due to their proven capabilities and leadership.</p>
               <p>This guide provides a detailed, honest, and professional roadmap for military pilots considering this pivotal career shift. We will delve into the specific FAA regulations, the current market landscape, financial considerations, and the strategic steps required to successfully navigate this transition, ensuring you are optimally positioned for a rewarding career with a major US airline.</p>
             </>
           )
@@ -31,18 +31,18 @@ export default function UsMilitaryPilotToAirlines() {
               <p>The cornerstone of your transition is obtaining the Airline Transport Pilot (ATP) certificate, the highest level of aircraft pilot certification. For military pilots, the Federal Aviation Administration (FAA) offers significant advantages, primarily through the Restricted ATP (R-ATP) pathway, which acknowledges your extensive training and flight experience.</p>
               <p>Under 14 CFR Part 61.160, military pilots can qualify for an R-ATP with significantly fewer flight hours than the standard 1,500-hour requirement. This provision is a testament to the rigorous and comprehensive training received within the US armed forces. Understanding the precise hour requirements and how your military flight time translates is crucial.</p>
               <h3>Standard ATP vs. Restricted ATP (Military)</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Requirement</th><th>Standard ATP</th><th>Restricted ATP (Military)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Standard ATP</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Restricted ATP (Military)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Minimum Age</td><td>23 years</td><td>21 years</td></tr>
-                  <tr><td>Total Flight Time</td><td>1,500 hours</td><td>750 hours</td></tr>
-                  <tr><td>Cross-Country Flight Time</td><td>500 hours</td><td>200 hours</td></tr>
-                  <tr><td>Night Flight Time</td><td>100 hours</td><td>75 hours</td></tr>
-                  <tr><td>Instrument Flight Time</td><td>75 hours</td><td>50 hours</td></tr>
-                  <tr><td>Pilot-in-Command (PIC) Time</td><td>250 hours</td><td>250 hours</td></tr>
-                  <tr><td>Multi-Engine Time</td><td>50 hours</td><td>50 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Minimum Age</td><td className="px-4 py-3 text-white/80">23 years</td><td className="px-4 py-3 text-white/80">21 years</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Total Flight Time</td><td className="px-4 py-3 text-white/80">1,500 hours</td><td className="px-4 py-3 text-white/80">750 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Cross-Country Flight Time</td><td className="px-4 py-3 text-white/80">500 hours</td><td className="px-4 py-3 text-white/80">200 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Night Flight Time</td><td className="px-4 py-3 text-white/80">100 hours</td><td className="px-4 py-3 text-white/80">75 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Flight Time</td><td className="px-4 py-3 text-white/80">75 hours</td><td className="px-4 py-3 text-white/80">50 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Pilot-in-Command (PIC) Time</td><td className="px-4 py-3 text-white/80">250 hours</td><td className="px-4 py-3 text-white/80">250 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Time</td><td className="px-4 py-3 text-white/80">50 hours</td><td className="px-4 py-3 text-white/80">50 hours</td></tr>
                 </tbody>
               </table>
               <p>It is imperative to meticulously document all military flight hours, including specific breakdowns for cross-country, night, and instrument time. While simulator time can contribute, there are limitations (e.g., typically not more than 100 hours towards total time). An honorable discharge (DD-214) and official military pilot training records are essential for verifying your eligibility for the R-ATP.</p>
@@ -56,16 +56,16 @@ export default function UsMilitaryPilotToAirlines() {
               <p>Before you can take the FAA ATP knowledge test, all applicants, including military pilots, must complete the Airline Transport Pilot Certification Training Program (ATP CTP). This program, mandated by the FAA since 2014, is designed to bridge the gap between traditional flight training and the multi-crew, airline operational environment. It is not a flight proficiency course but rather an academic and simulator-based introduction to the complexities of airline operations.</p>
               <p>The ATP CTP typically consists of 30-32 hours of ground school and 10 hours of simulator training. The ground school covers advanced aerodynamics, meteorology, air carrier operations, leadership, and crew resource management. The simulator portion includes both fixed-base training devices (FTDs) and full-flight simulators (FFSs), exposing pilots to airline-specific scenarios and procedures. While the ATP CTP does not grant the ATP certificate itself, it is a mandatory prerequisite for the written exam.</p>
               <h3>ATP CTP Costs in 2026 (USD)</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost Range</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost Range</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>ATP CTP Course Fee</td><td>$4,000 - $5,000</td><td>Covers ground school and simulator time. Prices vary by provider and equipment quality.</td></tr>
-                  <tr><td>FAA ATM Knowledge Test Fee</td><td>$175</td><td>Paid directly to testing center per attempt.</td></tr>
-                  <tr><td>Travel & Lodging</td><td>$700 - $1,500+</td><td>For 7-8 days, depending on location and personal choices.</td></tr>
-                  <tr><td>Study Materials (Optional)</td><td>$100 - $300</td><td>Prep apps like Sheppard Air are highly recommended.</td></tr>
-                  <tr><td>Total Estimated Cost</td><td>$4,975 - $6,975+</td><td>Excludes potential airline sponsorship or GI Bill benefits.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATP CTP Course Fee</td><td className="px-4 py-3 text-white/80">$4,000 - $5,000</td><td className="px-4 py-3 text-white/80">Covers ground school and simulator time. Prices vary by provider and equipment quality.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">FAA ATM Knowledge Test Fee</td><td className="px-4 py-3 text-white/80">$175</td><td className="px-4 py-3 text-white/80">Paid directly to testing center per attempt.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Travel & Lodging</td><td className="px-4 py-3 text-white/80">$700 - $1,500+</td><td className="px-4 py-3 text-white/80">For 7-8 days, depending on location and personal choices.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Study Materials (Optional)</td><td className="px-4 py-3 text-white/80">$100 - $300</td><td className="px-4 py-3 text-white/80">Prep apps like Sheppard Air are highly recommended.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Total Estimated Cost</td><td className="px-4 py-3 text-white/80">$4,975 - $6,975+</td><td className="px-4 py-3 text-white/80">Excludes potential airline sponsorship or GI Bill benefits.</td></tr>
                 </tbody>
               </table>
               <p>Many regional airlines offer ATP CTP sponsorships, covering the course cost, travel, and lodging in exchange for a commitment to fly for them for a specified period. This can significantly reduce the financial burden and provide a direct pathway to an airline career.</p>
@@ -79,14 +79,14 @@ export default function UsMilitaryPilotToAirlines() {
               <p>The US airline industry in 2026 presents an exceptionally favorable environment for aspiring and transitioning pilots. Despite some fluctuations, the long-term demand for airline pilots remains robust, driven by a combination of factors including mandatory retirements, industry growth, and expansion of regional and major airline fleets. Forecasts for 2026 indicate continued strong hiring, with thousands of new pilot jobs expected at major carriers.</p>
               <p>Major US airlines such as American Airlines, United Airlines, Delta Air Lines, and Southwest Airlines are actively recruiting, alongside regional carriers like SkyWest, Envoy, Republic, and Piedmont. These airlines value the experience and professionalism of military pilots, often offering tailored transition programs. The Bureau of Labor Statistics projects a steady growth in employment for airline and commercial pilots, reinforcing the stability and long-term prospects of this career.</p>
               <h3>2026 US Airline Pilot Hiring Forecast</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Source</th><th>Projected New Hires (2026)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Source</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Projected New Hires (2026)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Kit Darby Aviation Consulting</td><td>7,500+</td><td>Forecast for major airlines, marking one of the best hiring years in history.</td></tr>
-                  <tr><td>American Airlines (Internal)</td><td>~1,500</td><td>To offset retirements and support fleet expansion.</td></tr>
-                  <tr><td>BLS (2024-2034 Outlook)</td><td>4% growth</td><td>Overall employment growth for airline and commercial pilots.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Kit Darby Aviation Consulting</td><td className="px-4 py-3 text-white/80">7,500+</td><td className="px-4 py-3 text-white/80">Forecast for major airlines, marking one of the best hiring years in history.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">American Airlines (Internal)</td><td className="px-4 py-3 text-white/80">~1,500</td><td className="px-4 py-3 text-white/80">To offset retirements and support fleet expansion.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">BLS (2024-2034 Outlook)</td><td className="px-4 py-3 text-white/80">4% growth</td><td className="px-4 py-3 text-white/80">Overall employment growth for airline and commercial pilots.</td></tr>
                 </tbody>
               </table>
               <p>The current market conditions mean that military pilots, with their advanced training and leadership experience, are highly competitive candidates. Airlines are not just looking for hours; they are looking for proven decision-makers and leaders, qualities inherent in military aviators.</p>
@@ -122,7 +122,7 @@ export default function UsMilitaryPilotToAirlines() {
           heading: "Conclusion: Your Future in the Commercial Flight Deck Awaits",
           content: (
             <>
-              <p>The journey from a military cockpit to a commercial flight deck is a challenging yet immensely rewarding endeavor. The US airline industry in 2026 is actively seeking the caliber of pilot forged in military service. By understanding the FAA regulations, strategically approaching the ATP/R-ATP certification, leveraging military benefits, and engaging with airline transition programs, you can successfully navigate this path.</p>
+              <p>The journey from a military cockpit to a commercial flight deck is a challenging yet rewarding endeavor. The US airline industry in 2026 is actively seeking the caliber of pilot forged in military service. By understanding the FAA regulations, strategically approaching the ATP/R-ATP certification, leveraging military benefits, and engaging with airline transition programs, you can successfully navigate this path.</p>
               <p>Your discipline, leadership, and extensive flight experience are not just assets; they are the foundation of a distinguished career in commercial aviation. The opportunities are abundant, and with meticulous planning and execution, your transition will be a testament to your unwavering commitment to excellence in the skies.</p>
             </>
           )

@@ -80,7 +80,7 @@ export default function HowToBecomePilotUS() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Route</th>
                       <th className="px-4 py-3 font-semibold">ATP Hours Required</th>
                       <th className="px-4 py-3 font-semibold">GI Bill Eligible?</th>
@@ -135,7 +135,7 @@ export default function HowToBecomePilotUS() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Certificate / Rating</th>
                       <th className="px-4 py-3 font-semibold">What it allows you to do</th>
                       <th className="px-4 py-3 font-semibold">Estimated Cost (USD)</th>

@@ -18,7 +18,7 @@ export default function EuropePilotSeniority() {
           heading: "Introduction to Pilot Seniority in Europe",
           content: (
             <>
-              <p>In the highly structured and competitive world of commercial aviation, <strong>pilot seniority</strong> stands as a cornerstone, profoundly influencing a pilot's career trajectory, quality of life, and earning potential. Unlike many other professions where merit or performance solely dictate advancement, the European aviation sector, much like its global counterparts, operates on a system where the length of service within a specific airline largely determines a pilot's standing. This guide delves into the intricacies of pilot seniority in Europe, exploring its regulatory underpinnings, practical implications, and the financial landscape of pilot training in 2026.</p>
+              <p>In the highly structured and competitive world of commercial aviation, <strong>pilot seniority</strong> stands as a cornerstone, profoundly influencing a pilot's career trajectory, quality of life, and earning potential. Unlike many other professions where merit or performance solely dictate advancement, the European aviation sector, much like its global counterparts, operates on a system where the length of service within a specific airline largely determines a pilot's standing. This guide covers pilot seniority in Europe, exploring its regulatory underpinnings, practical implications, and the financial landscape of pilot training in 2026.</p>
             </>
           )
         },
@@ -52,14 +52,14 @@ export default function EuropePilotSeniority() {
           content: (
             <>
               <p>Becoming a commercial pilot in Europe is a substantial financial investment. The costs can vary significantly based on the training path (integrated vs. modular), the flight school, and the country. As of 2026, aspiring pilots can expect the following approximate costs in Euros (EUR):</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Training Path</th><th>Estimated Cost (EUR)</th><th>Duration</th><th>Description</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Path</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (EUR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Description</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Integrated ATPL</strong></td><td>€80,000 - €130,000</td><td>18-24 months</td><td>Full-time, airline-focused program from zero experience to 'frozen ATPL'. Often includes type rating preparation.</td></tr>
-                  <tr><td><strong>Modular ATPL</strong></td><td>€60,000 - €100,000</td><td>24-36 months (flexible)</td><td>Allows pilots to complete licenses and ratings separately (PPL, ATPL Theory, CPL, IR, MEP, UPRT). More flexible but requires self-discipline.</td></tr>
-                  <tr><td><strong>Type Rating</strong></td><td>€20,000 - €35,000</td><td>4-6 weeks</td><td>Specific training for a particular aircraft type (e.g., Airbus A320, Boeing 737). Often paid by the airline or financed by the pilot.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Integrated ATPL</strong></td><td className="px-4 py-3 text-white/80">€80,000 - €130,000</td><td className="px-4 py-3 text-white/80">18-24 months</td><td className="px-4 py-3 text-white/80">Full-time, airline-focused program from zero experience to 'frozen ATPL'. Often includes type rating preparation.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Modular ATPL</strong></td><td className="px-4 py-3 text-white/80">€60,000 - €100,000</td><td className="px-4 py-3 text-white/80">24-36 months (flexible)</td><td className="px-4 py-3 text-white/80">Allows pilots to complete licenses and ratings separately (PPL, ATPL Theory, CPL, IR, MEP, UPRT). More flexible but requires self-discipline.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Type Rating</strong></td><td className="px-4 py-3 text-white/80">€20,000 - €35,000</td><td className="px-4 py-3 text-white/80">4-6 weeks</td><td className="px-4 py-3 text-white/80">Specific training for a particular aircraft type (e.g., Airbus A320, Boeing 737). Often paid by the airline or financed by the pilot.</td></tr>
                 </tbody>
               </table>
               <p><strong>Breakdown of Modular Training Costs (Approximate 2026 figures):</strong></p>

@@ -97,44 +97,44 @@ export default function SouthAfricaMilitaryToAirlines() {
               
               <h3>Estimated Pilot Training Costs in South Africa (2026, ZAR)</h3>
               <p>Based on current market trends and projections for 2026, the overall cost for comprehensive pilot training in South Africa can be estimated as follows:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Licence/Rating</th>
-                    <th>Estimated Cost (ZAR)</th>
-                    <th>Duration (Approx.)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Licence/Rating</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (ZAR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration (Approx.)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>R 150,000 - R 250,000</td>
-                    <td>3-6 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">R 150,000 - R 250,000</td>
+                    <td className="px-4 py-3 text-white/80">3-6 months</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>R 350,000 - R 550,000</td>
-                    <td>9-12 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">R 350,000 - R 550,000</td>
+                    <td className="px-4 py-3 text-white/80">9-12 months</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>R 100,000 - R 180,000</td>
-                    <td>2-4 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">R 100,000 - R 180,000</td>
+                    <td className="px-4 py-3 text-white/80">2-4 months</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (ME)</td>
-                    <td>R 80,000 - R 150,000</td>
-                    <td>1-2 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
+                    <td className="px-4 py-3 text-white/80">R 80,000 - R 150,000</td>
+                    <td className="px-4 py-3 text-white/80">1-2 months</td>
                   </tr>
-                  <tr>
-                    <td>Airline Transport Pilot Licence (ATPL) Theory</td>
-                    <td>R 50,000 - R 80,000</td>
-                    <td>3-6 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Airline Transport Pilot Licence (ATPL) Theory</td>
+                    <td className="px-4 py-3 text-white/80">R 50,000 - R 80,000</td>
+                    <td className="px-4 py-3 text-white/80">3-6 months</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total (PPL to ATPL)</strong></td>
-                    <td><strong>R 730,000 - R 1,210,000</strong></td>
-                    <td><strong>18-30 months</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total (PPL to ATPL)</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>R 730,000 - R 1,210,000</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>18-30 months</strong></td>
                   </tr>
                 </tbody>
               </table>

@@ -46,7 +46,7 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
               <div className="overflow-x-auto mb-6">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5 rounded-tl-lg">Expense Category</th>
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5">Estimated Cost (USD)</th>
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5 rounded-tr-lg">Notes</th>
@@ -162,7 +162,7 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
               <div className="overflow-x-auto mb-6">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5 rounded-tl-lg">Method</th>
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5">Initial Investment (USD)</th>
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5">Hourly Cost/Earning (USD)</th>
@@ -229,7 +229,7 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
               <div className="overflow-x-auto mb-6">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5 rounded-tl-lg">Program Type</th>
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5">Timeline</th>
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5">Cost Implications</th>
@@ -292,7 +292,7 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
               <div className="overflow-x-auto mb-6">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5 rounded-tl-lg">Funding Option</th>
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5">Coverage</th>
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5">Pros</th>
@@ -347,7 +347,7 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
               <div className="overflow-x-auto mb-6">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5 rounded-tl-lg">Phase</th>
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5">Hours to Accumulate</th>
                       <th className="px-4 py-3 text-left text-sm font-medium text-white/80 bg-white/5">Estimated Duration</th>

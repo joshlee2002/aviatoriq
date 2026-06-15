@@ -30,17 +30,17 @@ export default function MajorAirlinesHiringUSA() {
               <p>The journey to becoming a commercial airline pilot involves several key certifications, each building upon the last. The Federal Aviation Administration (FAA) governs these certifications under Title 14 of the Code of Federal Regulations (14 CFR), primarily Part 61 and Part 141.</p>
               <h3>Part 61 vs. Part 141 Flight Schools</h3>
               <p>Aspiring pilots typically choose between Part 61 and Part 141 flight training programs. Understanding the differences is crucial for selecting the right path.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Feature</th><th>Part 61</th><th>Part 141</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 61</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 141</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Flexibility</strong></td><td>Highly flexible, self-paced</td><td>Structured curriculum, less flexible</td></tr>
-                  <tr><td><strong>Minimum Hours</strong></td><td>Higher minimum flight hours (e.g., 40 PPL, 250 CPL)</td><td>Lower minimum flight hours (e.g., 35 PPL, 190 CPL)</td></tr>
-                  <tr><td><strong>Curriculum</strong></td><td>Instructor-developed, less standardized</td><td>FAA-approved, highly standardized</td></tr>
-                  <tr><td><strong>Oversight</strong></td><td>Less direct FAA oversight</td><td>More direct FAA oversight, regular audits</td></tr>
-                  <tr><td><strong>Cost</strong></td><td>Can be more variable</td><td>Often bundled, potentially lower overall due to efficiency</td></tr>
-                  <tr><td><strong>Ideal For</strong></td><td>Part-time students, those with prior experience</td><td>Full-time students, career-focused individuals</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Flexibility</strong></td><td className="px-4 py-3 text-white/80">Highly flexible, self-paced</td><td className="px-4 py-3 text-white/80">Structured curriculum, less flexible</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Minimum Hours</strong></td><td className="px-4 py-3 text-white/80">Higher minimum flight hours (e.g., 40 PPL, 250 CPL)</td><td className="px-4 py-3 text-white/80">Lower minimum flight hours (e.g., 35 PPL, 190 CPL)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Curriculum</strong></td><td className="px-4 py-3 text-white/80">Instructor-developed, less standardized</td><td className="px-4 py-3 text-white/80">FAA-approved, highly standardized</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Oversight</strong></td><td className="px-4 py-3 text-white/80">Less direct FAA oversight</td><td className="px-4 py-3 text-white/80">More direct FAA oversight, regular audits</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Cost</strong></td><td className="px-4 py-3 text-white/80">Can be more variable</td><td className="px-4 py-3 text-white/80">Often bundled, potentially lower overall due to efficiency</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Ideal For</strong></td><td className="px-4 py-3 text-white/80">Part-time students, those with prior experience</td><td className="px-4 py-3 text-white/80">Full-time students, career-focused individuals</td></tr>
                 </tbody>
               </table>
               <h3>Key Pilot Certifications</h3>
@@ -59,17 +59,17 @@ export default function MajorAirlinesHiringUSA() {
           content: (
             <>
               <p>Becoming an airline pilot is a significant financial undertaking. Costs can vary widely based on the chosen flight school, training pace, and individual aptitude. As of 2026, here's an estimated breakdown:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Certification/Course</th><th>Estimated Cost (USD)</th><th>Estimated Duration</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Certification/Course</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Duration</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot License (PPL)</td><td>$15,000 - $20,000</td><td>2-4 months</td></tr>
-                  <tr><td>Instrument Rating (IR)</td><td>$10,000 - $15,000</td><td>2-3 months</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>$25,000 - $35,000</td><td>3-5 months</td></tr>
-                  <tr><td>Multi-Engine Rating (MEL)</td><td>$5,000 - $10,000</td><td>1-2 weeks</td></tr>
-                  <tr><td>CFI/CFII/MEI (Instructor Ratings)</td><td>$15,000 - $20,000</td><td>2-4 months</td></tr>
-                  <tr><td><strong>Total (Zero to ATP)</strong></td><td><strong>$80,000 - $120,000+</strong></td><td><strong>12-24 months (full-time)</strong></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$15,000 - $20,000</td><td className="px-4 py-3 text-white/80">2-4 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">$10,000 - $15,000</td><td className="px-4 py-3 text-white/80">2-3 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">$25,000 - $35,000</td><td className="px-4 py-3 text-white/80">3-5 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating (MEL)</td><td className="px-4 py-3 text-white/80">$5,000 - $10,000</td><td className="px-4 py-3 text-white/80">1-2 weeks</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CFI/CFII/MEI (Instructor Ratings)</td><td className="px-4 py-3 text-white/80">$15,000 - $20,000</td><td className="px-4 py-3 text-white/80">2-4 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total (Zero to ATP)</strong></td><td className="px-4 py-3 text-white/80"><strong>$80,000 - $120,000+</strong></td><td className="px-4 py-3 text-white/80"><strong>12-24 months (full-time)</strong></td></tr>
                 </tbody>
               </table>
               <p><em>Note: These figures are estimates and can fluctuate based on fuel costs, aircraft rental rates, instructor fees, and individual progress. Non-tuition expenses such as medical exams, study materials, and checkride fees can add an additional $5,000 - $10,000.</em> [1] [2]</p>
@@ -88,19 +88,19 @@ export default function MajorAirlinesHiringUSA() {
                 <li><strong>Cadet Programs:</strong> Partnerships with flight schools to create a direct pipeline for new pilots. These programs often include financial assistance and a guaranteed interview upon completion.</li>
                 <li><strong>Flow-Through Agreements:</strong> Agreements between regional airlines and their mainline partners, allowing regional pilots to transition to the major airline after meeting certain criteria.</li>
               </ul>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Airline</th><th>Cadet/Pathway Programs</th><th>Typical Minimum Requirements (First Officer)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cadet/Pathway Programs</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Minimum Requirements (First Officer)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>American Airlines</strong></td><td>Cadet Academy, Envoy Air, Piedmont Airlines, PSA Airlines</td><td>ATP, 1,500 hours total time, First Class Medical</td></tr>
-                  <tr><td><strong>Delta Air Lines</strong></td><td>Propel Pilot Career Path Program</td><td>ATP, 1,500 hours total time, First Class Medical</td></tr>
-                  <tr><td><strong>United Airlines</strong></td><td>Aviate Program</td><td>ATP, 1,500 hours total time, First Class Medical</td></tr>
-                  <tr><td><strong>Southwest Airlines</strong></td><td>Destination 225° Program</td><td>ATP, 1,500 hours total time, First Class Medical</td></tr>
-                  <tr><td><strong>Alaska Airlines</strong></td><td>Ascend Pilot Academy</td><td>ATP, 1,500 hours total time, First Class Medical</td></tr>
-                  <tr><td><strong>JetBlue</strong></td><td>Gateway Select Program</td><td>ATP, 1,500 hours total time, First Class Medical</td></tr>
-                  <tr><td><strong>Spirit Airlines</strong></td><td>Spirit Direct Program</td><td>ATP, 1,500 hours total time, First Class Medical</td></tr>
-                  <tr><td><strong>Frontier Airlines</strong></td><td>Frontier Direct Program</td><td>ATP, 1,500 hours total time, First Class Medical</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>American Airlines</strong></td><td className="px-4 py-3 text-white/80">Cadet Academy, Envoy Air, Piedmont Airlines, PSA Airlines</td><td className="px-4 py-3 text-white/80">ATP, 1,500 hours total time, First Class Medical</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Delta Air Lines</strong></td><td className="px-4 py-3 text-white/80">Propel Pilot Career Path Program</td><td className="px-4 py-3 text-white/80">ATP, 1,500 hours total time, First Class Medical</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>United Airlines</strong></td><td className="px-4 py-3 text-white/80">Aviate Program</td><td className="px-4 py-3 text-white/80">ATP, 1,500 hours total time, First Class Medical</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Southwest Airlines</strong></td><td className="px-4 py-3 text-white/80">Destination 225° Program</td><td className="px-4 py-3 text-white/80">ATP, 1,500 hours total time, First Class Medical</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Alaska Airlines</strong></td><td className="px-4 py-3 text-white/80">Ascend Pilot Academy</td><td className="px-4 py-3 text-white/80">ATP, 1,500 hours total time, First Class Medical</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>JetBlue</strong></td><td className="px-4 py-3 text-white/80">Gateway Select Program</td><td className="px-4 py-3 text-white/80">ATP, 1,500 hours total time, First Class Medical</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Spirit Airlines</strong></td><td className="px-4 py-3 text-white/80">Spirit Direct Program</td><td className="px-4 py-3 text-white/80">ATP, 1,500 hours total time, First Class Medical</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Frontier Airlines</strong></td><td className="px-4 py-3 text-white/80">Frontier Direct Program</td><td className="px-4 py-3 text-white/80">ATP, 1,500 hours total time, First Class Medical</td></tr>
                 </tbody>
               </table>
               <p><em>Note: Specific requirements can vary and are subject to change. Always refer to the official airline career pages for the most up-to-date information.</em> [3]</p>

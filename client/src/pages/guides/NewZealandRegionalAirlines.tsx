@@ -101,16 +101,16 @@ export default function NewZealandRegionalAirlines() {
           content: (
             <>
               <p>Pilot training in New Zealand represents a significant financial investment. Costs can vary based on the chosen training provider, aircraft type, and individual progress. The following table provides estimated costs for key licenses and ratings in 2026 [3, 4]:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Licence/Rating</th><th>Estimated Cost (NZD)</th><th>Duration (Approx.)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Licence/Rating</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration (Approx.)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot Licence (PPL)</td><td>$20,000 - $39,000</td><td>4-6 months</td></tr>
-                  <tr><td>Commercial Pilot Licence (CPL)</td><td>$100,000 - $150,000+</td><td>6-8 months (post-PPL)</td></tr>
-                  <tr><td>Multi-Engine Instrument Rating (MEIR)</td><td>$25,000 - $35,000</td><td>Included in CPL/ATPL or 3-4 months standalone</td></tr>
-                  <tr><td>ATPL Theory (Frozen ATPL)</td><td>Included in CPL/ATPL or separate course</td><td>Varies</td></tr>
-                  <tr><td>Flight Instructor Rating (C Cat)</td><td>~$157,000 (part of Diploma)</td><td>4-6 months (post-CPL)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td><td className="px-4 py-3 text-white/80">$20,000 - $39,000</td><td className="px-4 py-3 text-white/80">4-6 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td><td className="px-4 py-3 text-white/80">$100,000 - $150,000+</td><td className="px-4 py-3 text-white/80">6-8 months (post-PPL)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating (MEIR)</td><td className="px-4 py-3 text-white/80">$25,000 - $35,000</td><td className="px-4 py-3 text-white/80">Included in CPL/ATPL or 3-4 months standalone</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATPL Theory (Frozen ATPL)</td><td className="px-4 py-3 text-white/80">Included in CPL/ATPL or separate course</td><td className="px-4 py-3 text-white/80">Varies</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Instructor Rating (C Cat)</td><td className="px-4 py-3 text-white/80">~$157,000 (part of Diploma)</td><td className="px-4 py-3 text-white/80">4-6 months (post-CPL)</td></tr>
                 </tbody>
               </table>
               <p><em>Note: These figures are estimates and can fluctuate. It is crucial to consult individual flight schools for precise and up-to-date pricing.</em> [3, 4]</p>

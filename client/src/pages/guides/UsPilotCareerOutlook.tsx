@@ -181,29 +181,29 @@ const UsPilotCareerOutlook = () => {
                 profession in the current market. The table below illustrates
                 the typical salary progression:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Position</th>
-                    <th>Typical Annual Salary Range (2026)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Position</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Annual Salary Range (2026)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Regional First Officer (Year 1)</td>
-                    <td>$90,000 - $115,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Regional First Officer (Year 1)</td>
+                    <td className="px-4 py-3 text-white/80">$90,000 - $115,000</td>
                   </tr>
-                  <tr>
-                    <td>Regional Captain</td>
-                    <td>$140,000 - $220,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Regional Captain</td>
+                    <td className="px-4 py-3 text-white/80">$140,000 - $220,000</td>
                   </tr>
-                  <tr>
-                    <td>Major Airline First Officer (Entry)</td>
-                    <td>$110,000 - $180,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Major Airline First Officer (Entry)</td>
+                    <td className="px-4 py-3 text-white/80">$110,000 - $180,000</td>
                   </tr>
-                  <tr>
-                    <td>Major Airline Captain</td>
-                    <td>$300,000 - $450,000+</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Major Airline Captain</td>
+                    <td className="px-4 py-3 text-white/80">$300,000 - $450,000+</td>
                   </tr>
                 </tbody>
               </table>

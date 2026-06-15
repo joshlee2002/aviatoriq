@@ -51,21 +51,21 @@ export default function CanadaPilotSalary2026() {
               <p>Airline pilot salaries represent the pinnacle of earning potential in the Canadian aviation industry. Compensation at major airlines is typically determined by collective agreements negotiated between pilot unions and the airlines. These agreements factor in fleet type, base location, seniority, and various premiums and allowances [1].</p>
               <p>As of April 2024, senior captains at major airlines, particularly those flying wide-body aircraft, can earn substantial incomes. Many wide-body captains with 12 or more years of experience can expect base salaries in the <b>$350,000 to $400,000 CAD per year</b> range, excluding additional benefits like per diems, premiums, overtime, and profit-sharing [2]. New first officers at major airlines like Air Canada might start around <b>$78,000 CAD per year</b>, which is considered a significant improvement from previous years [3].</p>
               <p>The following table provides a snapshot of hourly rates and estimated annual salaries for various airlines and aircraft types, accurate as of April 2024 [1]:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Airline</th>
-                    <th>Aircraft Type</th>
-                    <th>Hourly Rate (CAD)</th>
-                    <th>Estimated Annual Salary (CAD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Aircraft Type</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Hourly Rate (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (CAD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td>Westjet</td><td>B737</td><td>$158.45 - $222.51</td><td>$147,358.50 - $206,934.30</td></tr>
-                  <tr><td>Air Transat (NEW)</td><td>A321</td><td>$184.72 - $254.59</td><td>$177,331.20 - $244,406.40</td></tr>
-                  <tr><td>Flair (NEW)</td><td>B737</td><td>$147.06 - $216.67</td><td>$150,001.20 - $221,003.40</td></tr>
-                  <tr><td>Porter (NEW)</td><td>E195-E2</td><td>$127.62 - $198.79</td><td>$122,515.20 - $190,838.40</td></tr>
-                  <tr><td>Canadian North/First Air (NEW)</td><td>B737</td><td>$148.24 - $198.49</td><td>$142,310.40 - $190,550.40</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Westjet</td><td className="px-4 py-3 text-white/80">B737</td><td className="px-4 py-3 text-white/80">$158.45 - $222.51</td><td className="px-4 py-3 text-white/80">$147,358.50 - $206,934.30</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Air Transat (NEW)</td><td className="px-4 py-3 text-white/80">A321</td><td className="px-4 py-3 text-white/80">$184.72 - $254.59</td><td className="px-4 py-3 text-white/80">$177,331.20 - $244,406.40</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flair (NEW)</td><td className="px-4 py-3 text-white/80">B737</td><td className="px-4 py-3 text-white/80">$147.06 - $216.67</td><td className="px-4 py-3 text-white/80">$150,001.20 - $221,003.40</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Porter (NEW)</td><td className="px-4 py-3 text-white/80">E195-E2</td><td className="px-4 py-3 text-white/80">$127.62 - $198.79</td><td className="px-4 py-3 text-white/80">$122,515.20 - $190,838.40</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Canadian North/First Air (NEW)</td><td className="px-4 py-3 text-white/80">B737</td><td className="px-4 py-3 text-white/80">$148.24 - $198.49</td><td className="px-4 py-3 text-white/80">$142,310.40 - $190,550.40</td></tr>
                 </tbody>
               </table>
               <p>It's important to note that these figures are based on hourly rates and may not include all components of a pilot's total compensation package. Seniority plays a significant role, with captains typically reaching their maximum pay scale after 11-15 years [2, 4].</p>
@@ -81,18 +81,18 @@ export default function CanadaPilotSalary2026() {
               <p>For a <b>Commercial Pilot License (CPL)</b>, which requires 200 hours total time (including 100 hours Pilot-in-Command), the costs are integrated with PPL hours. Strategic planning, such as integrating Multi-Engine and Multi-Engine Instrument Ratings during the CPL phase, can help manage costs and maximize qualifications within the 200-hour requirement [5].</p>
               <p>An integrated path covering <b>PPL + CPL + Multi-Engine + Multi-IFR</b> can cost around <b>$85,000 CAD</b>. After accounting for federal tuition tax credits (approximately 15%), the effective out-of-pocket cost can be reduced to about <b>$71,000 CAD</b> [5].</p>
               <p>The use of flight simulators (FTDs) can significantly reduce overall training costs. Simulator hours are typically less expensive than actual aircraft hours and allow for efficient practice of procedures, instrument flying, emergencies, and radio communication without fuel burn or weather delays [5].</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>License/Rating</th>
-                    <th>Estimated Cost (CAD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">License/Rating</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot License (PPL)</td><td>$27,000</td><td>Realistic budget for 60-80 hours of flight time.</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>Integrated with PPL</td><td>Requires 200 total hours, including 100 PIC.</td></tr>
-                  <tr><td>PPL + CPL + Multi-Engine + Multi-IFR (Integrated Path)</td><td>$85,000 (before tax credit)</td><td>Effective cost ~$71,000 after federal tuition tax credit.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$27,000</td><td className="px-4 py-3 text-white/80">Realistic budget for 60-80 hours of flight time.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">Integrated with PPL</td><td className="px-4 py-3 text-white/80">Requires 200 total hours, including 100 PIC.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">PPL + CPL + Multi-Engine + Multi-IFR (Integrated Path)</td><td className="px-4 py-3 text-white/80">$85,000 (before tax credit)</td><td className="px-4 py-3 text-white/80">Effective cost ~$71,000 after federal tuition tax credit.</td></tr>
                 </tbody>
               </table>
             </>

@@ -72,17 +72,17 @@ export default function UsPilotSeniority() {
             <>
               <p>Seniority is directly correlated with a pilot's earning potential. Airline pilot pay scales are structured to reward longevity and experience, with significant increases tied to years of service and position (FO vs. Captain).</p>
               <h4>Typical Pilot Salary Progression (2026 Estimates)</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Role/Seniority</th><th>Annual Salary Range (USD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Role/Seniority</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Annual Salary Range (USD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Regional Airline FO (Year 1-3)</td><td>$60,000 - $100,000</td><td>Often includes sign-on bonuses.</td></tr>
-                  <tr><td>Regional Airline Captain (Year 3-7)</td><td>$100,000 - $180,000</td><td>Dependent on aircraft type and hours.</td></tr>
-                  <tr><td>Major Airline FO (Year 1-5)</td><td>$90,000 - $200,000</td><td>Starting pay can be competitive, rapid progression.</td></tr>
-                  <tr><td>Major Airline FO (Year 5-15)</td><td>$200,000 - $300,000+</td><td>Significant increases with seniority and wide-body eligibility.</td></tr>
-                  <tr><td>Major Airline Captain (Year 1-5)</td><td>$250,000 - $350,000+</td><td>Initial Captain pay at a major.</td></tr>
-                  <tr><td>Major Airline Captain (Year 15+)</td><td>$350,000 - $450,000+</td><td>Senior Captains on wide-body aircraft, top-tier pay.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Regional Airline FO (Year 1-3)</td><td className="px-4 py-3 text-white/80">$60,000 - $100,000</td><td className="px-4 py-3 text-white/80">Often includes sign-on bonuses.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Regional Airline Captain (Year 3-7)</td><td className="px-4 py-3 text-white/80">$100,000 - $180,000</td><td className="px-4 py-3 text-white/80">Dependent on aircraft type and hours.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Major Airline FO (Year 1-5)</td><td className="px-4 py-3 text-white/80">$90,000 - $200,000</td><td className="px-4 py-3 text-white/80">Starting pay can be competitive, rapid progression.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Major Airline FO (Year 5-15)</td><td className="px-4 py-3 text-white/80">$200,000 - $300,000+</td><td className="px-4 py-3 text-white/80">Significant increases with seniority and wide-body eligibility.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Major Airline Captain (Year 1-5)</td><td className="px-4 py-3 text-white/80">$250,000 - $350,000+</td><td className="px-4 py-3 text-white/80">Initial Captain pay at a major.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Major Airline Captain (Year 15+)</td><td className="px-4 py-3 text-white/80">$350,000 - $450,000+</td><td className="px-4 py-3 text-white/80">Senior Captains on wide-body aircraft, top-tier pay.</td></tr>
                 </tbody>
               </table>
               <p>These figures are estimates for 2026 and can vary based on the specific airline, collective bargaining agreements, and economic conditions. The difference in lifetime earnings between a pilot who achieves high seniority early in their career and one who faces delays can amount to millions of dollars.</p>
@@ -100,15 +100,15 @@ export default function UsPilotSeniority() {
               <p>When airlines face financial difficulties and must reduce their workforce, furloughs are almost universally implemented in reverse seniority order. This means the most junior pilots are the first to be laid off, and the most senior pilots are the last. This system provides a strong incentive for pilots to build and maintain seniority, as it acts as a buffer against job loss. The COVID-19 pandemic, for instance, saw thousands of junior pilots furloughed, while senior pilots largely retained their positions.</p>
               <h4>FAA Mandatory Retirement Age</h4>
               <p>The Federal Aviation Administration (FAA) mandates that airline pilots must retire at age 65. This regulation creates a continuous cycle of pilot retirements, opening up opportunities for junior pilots to advance on the seniority list and for new pilots to be hired. The projected wave of retirements in the coming years (2026-2030) is a significant factor contributing to the current high demand for pilots and potentially faster seniority progression for new hires.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Year</th><th>Projected Major Airline Pilot Retirements (Approx.)</th><th>Impact on Seniority</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Year</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Projected Major Airline Pilot Retirements (Approx.)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Impact on Seniority</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>2026</td><td>~4,000 - 5,000</td><td>Significant movement, especially at legacy carriers.</td></tr>
-                  <tr><td>2027</td><td>~4,500 - 5,500</td><td>Continued strong progression opportunities.</td></tr>
-                  <tr><td>2028</td><td>~5,000 - 6,000+</td><td>Peak retirement wave, fastest seniority gains.</td></tr>
-                  <tr><td>2029-2030</td><td>~4,000 - 5,000 per year</td><td>Sustained opportunities for advancement.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">2026</td><td className="px-4 py-3 text-white/80">~4,000 - 5,000</td><td className="px-4 py-3 text-white/80">Significant movement, especially at legacy carriers.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">2027</td><td className="px-4 py-3 text-white/80">~4,500 - 5,500</td><td className="px-4 py-3 text-white/80">Continued strong progression opportunities.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">2028</td><td className="px-4 py-3 text-white/80">~5,000 - 6,000+</td><td className="px-4 py-3 text-white/80">Peak retirement wave, fastest seniority gains.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">2029-2030</td><td className="px-4 py-3 text-white/80">~4,000 - 5,000 per year</td><td className="px-4 py-3 text-white/80">Sustained opportunities for advancement.</td></tr>
                 </tbody>
               </table>
               <p><em>Note: These are industry-wide estimates for major US airlines and can vary by individual carrier.</em></p>

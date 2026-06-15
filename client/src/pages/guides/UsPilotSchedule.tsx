@@ -18,7 +18,7 @@ export default function UsPilotSchedule() {
           heading: "Introduction: The Sky's the Limit for Aspiring US Pilots in 2026",
           content: (
             <>
-              <p>The year 2026 presents a dynamic and promising landscape for individuals aspiring to become pilots in the United States. With a robust demand for aviators across major airlines, regional carriers, and cargo operations, the aviation industry continues to offer rewarding career paths. This comprehensive guide delves into the intricacies of pilot training, FAA regulations, associated costs, and the career progression within the US aviation sector, providing an honest and elite perspective for future aviators.</p>
+              <p>The year 2026 presents a dynamic and promising landscape for individuals aspiring to become pilots in the United States. With a robust demand for aviators across major airlines, regional carriers, and cargo operations, the aviation industry continues to offer rewarding career paths. This comprehensive guide covers pilot training, FAA regulations, associated costs, and the career progression within the US aviation sector, providing an honest and elite perspective for future aviators.</p>
             </>
           )
         },
@@ -57,17 +57,17 @@ export default function UsPilotSchedule() {
           content: (
             <>
               <p>Becoming a pilot is a significant financial investment. The total cost can vary widely based on the chosen training pathway, school, and individual progress. As of 2026, aspiring pilots should anticipate the following estimated costs:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Certificate/Rating</th><th>Estimated Cost (USD)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Certificate/Rating</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot License (PPL)</td><td>$12,000 - $25,000</td></tr>
-                  <tr><td>Instrument Rating (IR)</td><td>$8,000 - $15,000</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>$25,000 - $35,000</td></tr>
-                  <tr><td>Multi-Engine Rating (Add-on)</td><td>$4,000 - $8,000</td></tr>
-                  <tr><td>Airline Transport Pilot (ATP-CTP)</td><td>$5,000 - $10,000</td></tr>
-                  <tr><td><strong>Total (from zero to ATP)</strong></td><td><strong>$85,000 - $125,000+</strong></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$12,000 - $25,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">$8,000 - $15,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">$25,000 - $35,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating (Add-on)</td><td className="px-4 py-3 text-white/80">$4,000 - $8,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Airline Transport Pilot (ATP-CTP)</td><td className="px-4 py-3 text-white/80">$5,000 - $10,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total (from zero to ATP)</strong></td><td className="px-4 py-3 text-white/80"><strong>$85,000 - $125,000+</strong></td></tr>
                 </tbody>
               </table>
               <p>These figures typically include flight instruction, aircraft rental, ground school, and examination fees. Additional costs may include study materials, headsets, medical exams, and living expenses.</p>

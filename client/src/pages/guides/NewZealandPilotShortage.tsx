@@ -46,45 +46,45 @@ export default function NewZealandPilotShortage() {
             <>
               <p>Pilot training in New Zealand, while substantial, is generally more cost-effective than in many other English-speaking countries, including Australia and parts of Europe [5]. The modular training model is prevalent, allowing students to progress through PPL, CPL, and instrument ratings as separate stages. Many schools also offer structured diploma programs that package these stages together.</p>
               <p>Here is a realistic breakdown of training costs in NZD for 2026, based on data from various flight schools [2]:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Licence/Rating</th>
-                    <th>Estimated Cost (NZD)</th>
-                    <th>Hours</th>
-                    <th>Duration</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Licence/Rating</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Hours</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>$18,000 – $27,000</td>
-                    <td>50+</td>
-                    <td>3 – 6 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">$18,000 – $27,000</td>
+                    <td className="px-4 py-3 text-white/80">50+</td>
+                    <td className="px-4 py-3 text-white/80">3 – 6 months</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>$60,000 – $100,000</td>
-                    <td>200 total</td>
-                    <td>9 – 15 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">$60,000 – $100,000</td>
+                    <td className="px-4 py-3 text-white/80">200 total</td>
+                    <td className="px-4 py-3 text-white/80">9 – 15 months</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Instrument Rating</td>
-                    <td>$20,000 – $30,000</td>
-                    <td>N/A</td>
-                    <td>Included in diploma programs</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating</td>
+                    <td className="px-4 py-3 text-white/80">$20,000 – $30,000</td>
+                    <td className="px-4 py-3 text-white/80">N/A</td>
+                    <td className="px-4 py-3 text-white/80">Included in diploma programs</td>
                   </tr>
-                  <tr>
-                    <td>Flight Instructor Rating</td>
-                    <td>$10,000 – $18,000</td>
-                    <td>N/A</td>
-                    <td>Primary hour-building pathway</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Instructor Rating</td>
+                    <td className="px-4 py-3 text-white/80">$10,000 – $18,000</td>
+                    <td className="px-4 py-3 text-white/80">N/A</td>
+                    <td className="px-4 py-3 text-white/80">Primary hour-building pathway</td>
                   </tr>
-                  <tr>
-                    <td>Airline-Ready (Total)</td>
-                    <td>$90,000 – $130,000</td>
-                    <td>1,500+</td>
-                    <td>For airline minimums</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Airline-Ready (Total)</td>
+                    <td className="px-4 py-3 text-white/80">$90,000 – $130,000</td>
+                    <td className="px-4 py-3 text-white/80">1,500+</td>
+                    <td className="px-4 py-3 text-white/80">For airline minimums</td>
                   </tr>
                 </tbody>
               </table>
@@ -98,45 +98,45 @@ export default function NewZealandPilotShortage() {
               <p><strong>Living Expenses:</strong></p>
               <p>Living costs are a significant consideration. Outside of Auckland, students should budget approximately NZD $1,200 – $1,800 per month. Auckland is considerably more expensive, with estimates ranging from NZD $1,800 – $2,500 per month. Cities like Christchurch, Hamilton, and Palmerston North offer better value for flight training students [2].</p>
               <p><strong>Real Total Cost (CPL + Instrument Rating) Example (2026):</strong></p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Expense Category</th>
-                    <th>Canterbury Aero Club (Aero Club)</th>
-                    <th>IAANZ (Professional)</th>
-                    <th>Massey University (University)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Canterbury Aero Club (Aero Club)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">IAANZ (Professional)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Massey University (University)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>CPL + IR / Degree</td>
-                    <td>NZD $80,000 – $100,000</td>
-                    <td>NZD $103,230</td>
-                    <td>NZD $90,000 – $110,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CPL + IR / Degree</td>
+                    <td className="px-4 py-3 text-white/80">NZD $80,000 – $100,000</td>
+                    <td className="px-4 py-3 text-white/80">NZD $103,230</td>
+                    <td className="px-4 py-3 text-white/80">NZD $90,000 – $110,000</td>
                   </tr>
-                  <tr>
-                    <td>Living (12 months)</td>
-                    <td>~NZD $16,000</td>
-                    <td>~NZD $16,000</td>
-                    <td>~NZD $54,000 (3 years)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Living (12 months)</td>
+                    <td className="px-4 py-3 text-white/80">~NZD $16,000</td>
+                    <td className="px-4 py-3 text-white/80">~NZD $16,000</td>
+                    <td className="px-4 py-3 text-white/80">~NZD $54,000 (3 years)</td>
                   </tr>
-                  <tr>
-                    <td>Exams/Medical</td>
-                    <td>~NZD $3,000</td>
-                    <td>~NZD $3,000</td>
-                    <td>~NZD $3,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Exams/Medical</td>
+                    <td className="px-4 py-3 text-white/80">~NZD $3,000</td>
+                    <td className="px-4 py-3 text-white/80">~NZD $3,000</td>
+                    <td className="px-4 py-3 text-white/80">~NZD $3,000</td>
                   </tr>
-                  <tr>
-                    <td><strong>Real Total</strong></td>
-                    <td><strong>~NZD $103,000 – $119,000</strong></td>
-                    <td><strong>~NZD $122,230</strong></td>
-                    <td><strong>~NZD $147,000 – $167,000</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Real Total</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>~NZD $103,000 – $119,000</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>~NZD $122,230</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>~NZD $147,000 – $167,000</strong></td>
                   </tr>
-                  <tr>
-                    <td>EUR Equivalent</td>
-                    <td>~€57,000 – €66,000</td>
-                    <td>~€67,000</td>
-                    <td>~€81,000 – €92,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">EUR Equivalent</td>
+                    <td className="px-4 py-3 text-white/80">~€57,000 – €66,000</td>
+                    <td className="px-4 py-3 text-white/80">~€67,000</td>
+                    <td className="px-4 py-3 text-white/80">~€81,000 – €92,000</td>
                   </tr>
                 </tbody>
               </table>
@@ -197,45 +197,45 @@ export default function NewZealandPilotShortage() {
           content: (
             <>
               <p>Choosing a pilot training destination involves weighing various factors, including cost, licensing, and career opportunities. New Zealand presents a compelling option, particularly when compared to Australia and Europe.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Feature</th>
-                    <th>New Zealand</th>
-                    <th>Australia</th>
-                    <th>Europe (EASA)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">New Zealand</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Australia</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Europe (EASA)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Cost (CPL)</strong></td>
-                    <td>NZD $60,000 – $110,000 (~€33,000 – €61,000) [2]</td>
-                    <td>AUD $65,000 – $120,000 [5]</td>
-                    <td>€55,000 – €130,000 [5]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Cost (CPL)</strong></td>
+                    <td className="px-4 py-3 text-white/80">NZD $60,000 – $110,000 (~€33,000 – €61,000) [2]</td>
+                    <td className="px-4 py-3 text-white/80">AUD $65,000 – $120,000 [5]</td>
+                    <td className="px-4 py-3 text-white/80">€55,000 – €130,000 [5]</td>
                   </tr>
-                  <tr>
-                    <td><strong>Living Costs</strong></td>
-                    <td>Lower, especially outside Auckland [2]</td>
-                    <td>Higher (e.g., Sydney, Melbourne) [5]</td>
-                    <td>Varies, often higher (e.g., London) [5]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Living Costs</strong></td>
+                    <td className="px-4 py-3 text-white/80">Lower, especially outside Auckland [2]</td>
+                    <td className="px-4 py-3 text-white/80">Higher (e.g., Sydney, Melbourne) [5]</td>
+                    <td className="px-4 py-3 text-white/80">Varies, often higher (e.g., London) [5]</td>
                   </tr>
-                  <tr>
-                    <td><strong>Licensing</strong></td>
-                    <td>CAA NZ, mutual recognition with CASA (Australia) [5]</td>
-                    <td>CASA, mutual recognition with CAA NZ [5]</td>
-                    <td>EASA, requires full conversion for NZ/AU [5]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Licensing</strong></td>
+                    <td className="px-4 py-3 text-white/80">CAA NZ, mutual recognition with CASA (Australia) [5]</td>
+                    <td className="px-4 py-3 text-white/80">CASA, mutual recognition with CAA NZ [5]</td>
+                    <td className="px-4 py-3 text-white/80">EASA, requires full conversion for NZ/AU [5]</td>
                   </tr>
-                  <tr>
-                    <td><strong>Terrain/Experience</strong></td>
-                    <td>High diversity (mountains, coast, fjords) [5]</td>
-                    <td>Varied, but less diversity per area [5]</td>
-                    <td>Denser controlled airspace [5]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Terrain/Experience</strong></td>
+                    <td className="px-4 py-3 text-white/80">High diversity (mountains, coast, fjords) [5]</td>
+                    <td className="px-4 py-3 text-white/80">Varied, but less diversity per area [5]</td>
+                    <td className="px-4 py-3 text-white/80">Denser controlled airspace [5]</td>
                   </tr>
-                  <tr>
-                    <td><strong>Market Access</strong></td>
-                    <td>Australasia, Pacific, Asia, Middle East [5]</td>
-                    <td>Australasia, Asia, Middle East [5]</td>
-                    <td>Primarily European airlines [5]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Market Access</strong></td>
+                    <td className="px-4 py-3 text-white/80">Australasia, Pacific, Asia, Middle East [5]</td>
+                    <td className="px-4 py-3 text-white/80">Australasia, Asia, Middle East [5]</td>
+                    <td className="px-4 py-3 text-white/80">Primarily European airlines [5]</td>
                   </tr>
                 </tbody>
               </table>

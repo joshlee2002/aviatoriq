@@ -20,7 +20,7 @@ export default function CanadaPilotSeniority() {
           content: (
             <>
               <p>In the highly structured world of commercial aviation, seniority is not merely a concept but the fundamental pillar upon which a pilot's career trajectory is built. For aspiring and current pilots in Canada, a deep understanding of the seniority system is paramount. It dictates everything from flight schedules and aircraft assignments to base locations and promotion opportunities. Unlike many other professions where merit or performance might be the primary drivers of advancement, in aviation, particularly within major airlines, the length of service—your seniority date—is the ultimate determinant of your professional life.</p>
-              <p>The Canadian aviation landscape, governed by Transport Canada regulations and shaped by the collective agreements of pilot unions, operates on a similar principle. Your seniority number, typically assigned on your date of hire, is a unique identifier that places you on a master list. This list is immutable; once established, your position relative to other pilots hired before or after you remains fixed. This guide delves into the intricacies of this system, offering a comprehensive look at its mechanics, its far-reaching implications, and how Canadian pilots can strategically navigate their careers within its framework in 2026.</p>
+              <p>The Canadian aviation landscape, governed by Transport Canada regulations and shaped by the collective agreements of pilot unions, operates on a similar principle. Your seniority number, typically assigned on your date of hire, is a unique identifier that places you on a master list. This list is immutable; once established, your position relative to other pilots hired before or after you remains fixed. This guide covers this system, offering a comprehensive look at its mechanics, its far-reaching implications, and how Canadian pilots can strategically navigate their careers within its framework in 2026.</p>
             </>
           )
         },
@@ -50,39 +50,39 @@ export default function CanadaPilotSeniority() {
               <h4>5. Financial Remuneration and Benefits</h4>
               <p>While base pay is often tied to years of service, seniority indirectly impacts earnings through access to higher-paying aircraft types, more flying hours, and better per diem rates on certain routes. Furthermore, benefits such as vacation time, retirement contributions, and even health benefits can be enhanced with greater seniority, as negotiated in CBAs.</p>
               <p>The table below illustrates a hypothetical, yet realistic, career progression based on seniority within a major Canadian airline:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Seniority (Years)</th>
-                    <th>Typical Role/Aircraft</th>
-                    <th>Impact on Lifestyle</th>
-                    <th>Estimated Earnings (CAD, Annual)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Seniority (Years)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Role/Aircraft</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Impact on Lifestyle</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Earnings (CAD, Annual)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>0-5</td>
-                    <td>Regional Airline First Officer / Mainline Junior First Officer (Narrow-body)</td>
-                    <td>Unpredictable schedules, frequent reserve, potential commuting</td>
-                    <td>$50,000 - $90,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">0-5</td>
+                    <td className="px-4 py-3 text-white/80">Regional Airline First Officer / Mainline Junior First Officer (Narrow-body)</td>
+                    <td className="px-4 py-3 text-white/80">Unpredictable schedules, frequent reserve, potential commuting</td>
+                    <td className="px-4 py-3 text-white/80">$50,000 - $90,000</td>
                   </tr>
-                  <tr>
-                    <td>5-10</td>
-                    <td>Mainline First Officer (Narrow-body), potential upgrade to Captain (Regional)</td>
-                    <td>Improving schedules, more choice in routes, less reserve</td>
-                    <td>$90,000 - $150,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">5-10</td>
+                    <td className="px-4 py-3 text-white/80">Mainline First Officer (Narrow-body), potential upgrade to Captain (Regional)</td>
+                    <td className="px-4 py-3 text-white/80">Improving schedules, more choice in routes, less reserve</td>
+                    <td className="px-4 py-3 text-white/80">$90,000 - $150,000</td>
                   </tr>
-                  <tr>
-                    <td>10-15</td>
-                    <td>Mainline Captain (Narrow-body) / Senior First Officer (Wide-body)</td>
-                    <td>Stable schedules, preferred routes, potential for international flying</td>
-                    <td>$150,000 - $250,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">10-15</td>
+                    <td className="px-4 py-3 text-white/80">Mainline Captain (Narrow-body) / Senior First Officer (Wide-body)</td>
+                    <td className="px-4 py-3 text-white/80">Stable schedules, preferred routes, potential for international flying</td>
+                    <td className="px-4 py-3 text-white/80">$150,000 - $250,000</td>
                   </tr>
-                  <tr>
-                    <td>15-25+</td>
-                    <td>Mainline Captain (Wide-body), Instructor Pilot, Management roles</td>
-                    <td>Highly desirable schedules, choice of bases, top-tier benefits</td>
-                    <td>$250,000 - $400,000+</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">15-25+</td>
+                    <td className="px-4 py-3 text-white/80">Mainline Captain (Wide-body), Instructor Pilot, Management roles</td>
+                    <td className="px-4 py-3 text-white/80">Highly desirable schedules, choice of bases, top-tier benefits</td>
+                    <td className="px-4 py-3 text-white/80">$250,000 - $400,000+</td>
                   </tr>
                 </tbody>
               </table>

@@ -81,44 +81,44 @@ export default function CanadaMilitaryToAirlines() {
             <>
               <p>While military service covers the bulk of flight training costs, the transition to civilian aviation still involves financial outlays. Budgeting for these expenses is a critical part of the planning process.</p>
               <h3>Estimated Costs (CAD, 2026):</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Estimated Cost (CAD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Category 1 Medical Examination</td>
-                    <td>$250 - $450</td>
-                    <td>Excludes additional tests like ECG ($60) and Audiology ($30) [2] [3] [4]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Category 1 Medical Examination</td>
+                    <td className="px-4 py-3 text-white/80">$250 - $450</td>
+                    <td className="px-4 py-3 text-white/80">Excludes additional tests like ECG ($60) and Audiology ($30) [2] [3] [4]</td>
                   </tr>
-                  <tr>
-                    <td>TC Written Examinations (SAMRA, SARON, INRAT)</td>
-                    <td>$105 - $395</td>
-                    <td>Approximately $35 - $131.54 per exam [6]</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">TC Written Examinations (SAMRA, SARON, INRAT)</td>
+                    <td className="px-4 py-3 text-white/80">$105 - $395</td>
+                    <td className="px-4 py-3 text-white/80">Approximately $35 - $131.54 per exam [6]</td>
                   </tr>
-                  <tr>
-                    <td>Ground School / Exam Prep Courses</td>
-                    <td>$500 - $2,000+</td>
-                    <td>Optional, but highly recommended for civilian exam specifics</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground School / Exam Prep Courses</td>
+                    <td className="px-4 py-3 text-white/80">$500 - $2,000+</td>
+                    <td className="px-4 py-3 text-white/80">Optional, but highly recommended for civilian exam specifics</td>
                   </tr>
-                  <tr>
-                    <td>Additional Flight Training (if required)</td>
-                    <td>Variable ($5,000 - $20,000+)</td>
-                    <td>Depends on individual experience and gaps in TC requirements; e.g., specific multi-engine or instrument hours. Hourly rates for aircraft rental and instructor fees vary significantly.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Additional Flight Training (if required)</td>
+                    <td className="px-4 py-3 text-white/80">Variable ($5,000 - $20,000+)</td>
+                    <td className="px-4 py-3 text-white/80">Depends on individual experience and gaps in TC requirements; e.g., specific multi-engine or instrument hours. Hourly rates for aircraft rental and instructor fees vary significantly.</td>
                   </tr>
-                  <tr>
-                    <td>License Application Fees</td>
-                    <td>Variable</td>
-                    <td>Refer to Transport Canada's fee schedule for current rates.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">License Application Fees</td>
+                    <td className="px-4 py-3 text-white/80">Variable</td>
+                    <td className="px-4 py-3 text-white/80">Refer to Transport Canada's fee schedule for current rates.</td>
                   </tr>
-                  <tr>
-                    <td>Type Ratings (post-hire)</td>
-                    <td>Covered by Airline</td>
-                    <td>Typically provided by the hiring airline.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Type Ratings (post-hire)</td>
+                    <td className="px-4 py-3 text-white/80">Covered by Airline</td>
+                    <td className="px-4 py-3 text-white/80">Typically provided by the hiring airline.</td>
                   </tr>
                 </tbody>
               </table>
@@ -187,7 +187,7 @@ export default function CanadaMilitaryToAirlines() {
           heading: "Conclusion: A Rewarding Second Career",
           content: (
             <>
-              <p>The transition from a distinguished career in the Royal Canadian Air Force to a civilian airline pilot is a challenging yet immensely rewarding endeavor. With meticulous planning, a thorough understanding of Transport Canada's Standard 421, and strategic financial preparation, RCAF pilots are exceptionally well-equipped to embark on this new chapter. Their unparalleled experience, discipline, and advanced flying skills are highly sought after by Canadian airlines, promising a fulfilling and impactful second career in the skies.</p>
+              <p>The transition from a distinguished career in the Royal Canadian Air Force to a civilian airline pilot is a challenging yet rewarding endeavor. With meticulous planning, a thorough understanding of Transport Canada's Standard 421, and strategic financial preparation, RCAF pilots are exceptionally well-equipped to embark on this new chapter. Their unparalleled experience, discipline, and advanced flying skills are highly sought after by Canadian airlines, promising a fulfilling and impactful second career in the skies.</p>
               <p>By focusing on obtaining the Canadian ATPL, ensuring all regulatory requirements are met, and strategically approaching the job market, former military aviators can successfully navigate this transition and continue their legacy of excellence in Canada's vibrant aviation industry.</p>
             </>
           )

@@ -38,39 +38,39 @@ export default function CanadaFlightInstructor() {
               </ul>
               <h3>Knowledge Requirements:</h3>
               <p>Applicants must demonstrate comprehensive knowledge by successfully completing Transport Canada written examinations. The specific examinations and pass marks vary depending on the class of instructor rating sought:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Examination</th>
-                    <th>Questions</th>
-                    <th>Time Limit</th>
-                    <th>Pass Mark</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Examination</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Questions</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Time Limit</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Pass Mark</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Flight Instructor Rating – Class 4 (AIRAF)</td>
-                    <td>100</td>
-                    <td>3 hours</td>
-                    <td>70%</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Instructor Rating – Class 4 (AIRAF)</td>
+                    <td className="px-4 py-3 text-white/80">100</td>
+                    <td className="px-4 py-3 text-white/80">3 hours</td>
+                    <td className="px-4 py-3 text-white/80">70%</td>
                   </tr>
-                  <tr>
-                    <td>Flight Instructor Rating – Class 2 (AIRAT)</td>
-                    <td>100</td>
-                    <td>3 hours</td>
-                    <td>70%</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Instructor Rating – Class 2 (AIRAT)</td>
+                    <td className="px-4 py-3 text-white/80">100</td>
+                    <td className="px-4 py-3 text-white/80">3 hours</td>
+                    <td className="px-4 py-3 text-white/80">70%</td>
                   </tr>
-                  <tr>
-                    <td>Flight Instructor Rating – Class 1 (AIRAT)</td>
-                    <td>100</td>
-                    <td>3 hours</td>
-                    <td>80%</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Instructor Rating – Class 1 (AIRAT)</td>
+                    <td className="px-4 py-3 text-white/80">100</td>
+                    <td className="px-4 py-3 text-white/80">3 hours</td>
+                    <td className="px-4 py-3 text-white/80">80%</td>
                   </tr>
-                  <tr>
-                    <td>Flight Instructor Rating – Aerobatic Class 1 (FITEN)</td>
-                    <td>25</td>
-                    <td>1 hour</td>
-                    <td>80%</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Instructor Rating – Aerobatic Class 1 (FITEN)</td>
+                    <td className="px-4 py-3 text-white/80">25</td>
+                    <td className="px-4 py-3 text-white/80">1 hour</td>
+                    <td className="px-4 py-3 text-white/80">80%</td>
                   </tr>
                 </tbody>
               </table>
@@ -98,34 +98,34 @@ export default function CanadaFlightInstructor() {
           content: (
             <>
               <p>Transport Canada issues different classes of Flight Instructor Ratings, each with distinct privileges and responsibilities. Understanding these classes is crucial for career progression.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Class</th>
-                    <th>Privileges</th>
-                    <th>Key Responsibilities</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Class</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Privileges</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Responsibilities</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Class 4</strong></td>
-                    <td>Can provide flight instruction under the supervision of a Class 1 or 2 instructor. Typically the entry-level rating.</td>
-                    <td>Guiding students for Recreational Pilot Permits, Private Pilot Licences, Commercial Pilot Licences, VFR Over-the-Top Ratings, and Night Ratings.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Class 4</strong></td>
+                    <td className="px-4 py-3 text-white/80">Can provide flight instruction under the supervision of a Class 1 or 2 instructor. Typically the entry-level rating.</td>
+                    <td className="px-4 py-3 text-white/80">Guiding students for Recreational Pilot Permits, Private Pilot Licences, Commercial Pilot Licences, VFR Over-the-Top Ratings, and Night Ratings.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Class 3</strong></td>
-                    <td>(No specific examination; typically progression from Class 4 with experience and recommendation)</td>
-                    <td>Similar to Class 4, but with more autonomy and experience.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Class 3</strong></td>
+                    <td className="px-4 py-3 text-white/80">(No specific examination; typically progression from Class 4 with experience and recommendation)</td>
+                    <td className="px-4 py-3 text-white/80">Similar to Class 4, but with more autonomy and experience.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Class 2</strong></td>
-                    <td>Can supervise Class 4 instructors and provide advanced flight instruction.</td>
-                    <td>Supervision of junior instructors, advanced flight training, and a deeper understanding of administrative procedures.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Class 2</strong></td>
+                    <td className="px-4 py-3 text-white/80">Can supervise Class 4 instructors and provide advanced flight instruction.</td>
+                    <td className="px-4 py-3 text-white/80">Supervision of junior instructors, advanced flight training, and a deeper understanding of administrative procedures.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Class 1</strong></td>
-                    <td>Highest level of instructor rating. Can supervise all other classes of instructors, provide advanced training, and act as a Chief Flight Instructor.</td>
-                    <td>Subject matter expert, capable of training candidates for Flight Instructor Ratings, structuring and evaluating training programs, and managing flight training operations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Class 1</strong></td>
+                    <td className="px-4 py-3 text-white/80">Highest level of instructor rating. Can supervise all other classes of instructors, provide advanced training, and act as a Chief Flight Instructor.</td>
+                    <td className="px-4 py-3 text-white/80">Subject matter expert, capable of training candidates for Flight Instructor Ratings, structuring and evaluating training programs, and managing flight training operations.</td>
                   </tr>
                 </tbody>
               </table>
@@ -138,49 +138,49 @@ export default function CanadaFlightInstructor() {
           content: (
             <>
               <p>The cost of obtaining a Flight Instructor Rating in Canada can vary significantly based on the flight school, location, and individual progress. The following table provides estimated costs in Canadian Dollars (CAD) for 2026, based on current market rates and minimum requirements. These figures are approximate and prospective students should always consult with flight schools for precise quotes.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Estimated Cost (CAD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Yearly Membership (Flight School)</td>
-                    <td>$200 - $300</td>
-                    <td>Varies by school, often annual fee.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Yearly Membership (Flight School)</td>
+                    <td className="px-4 py-3 text-white/80">$200 - $300</td>
+                    <td className="px-4 py-3 text-white/80">Varies by school, often annual fee.</td>
                   </tr>
-                  <tr>
-                    <td>Ground School (30 hours)</td>
-                    <td>$2,500 - $3,500</td>
-                    <td>Includes instruction on teaching methods and regulations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground School (30 hours)</td>
+                    <td className="px-4 py-3 text-white/80">$2,500 - $3,500</td>
+                    <td className="px-4 py-3 text-white/80">Includes instruction on teaching methods and regulations.</td>
                   </tr>
-                  <tr>
-                    <td>Dual Flight Instruction (30 hours)</td>
-                    <td>$9,000 - $12,000</td>
-                    <td>Based on aircraft rental (e.g., C172R/S at $300-$400/hour) and instructor fees.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Dual Flight Instruction (30 hours)</td>
+                    <td className="px-4 py-3 text-white/80">$9,000 - $12,000</td>
+                    <td className="px-4 py-3 text-white/80">Based on aircraft rental (e.g., C172R/S at $300-$400/hour) and instructor fees.</td>
                   </tr>
-                  <tr>
-                    <td>Transport Canada Written Exam Fees</td>
-                    <td>$100 - $200</td>
-                    <td>Per attempt.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Transport Canada Written Exam Fees</td>
+                    <td className="px-4 py-3 text-white/80">$100 - $200</td>
+                    <td className="px-4 py-3 text-white/80">Per attempt.</td>
                   </tr>
-                  <tr>
-                    <td>Flight Test Fee</td>
-                    <td>$500 - $800</td>
-                    <td>Examiner fee.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Test Fee</td>
+                    <td className="px-4 py-3 text-white/80">$500 - $800</td>
+                    <td className="px-4 py-3 text-white/80">Examiner fee.</td>
                   </tr>
-                  <tr>
-                    <td>Study Materials & Supplies</td>
-                    <td>$300 - $600</td>
-                    <td>Books, charts, E6B, logbooks.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Study Materials & Supplies</td>
+                    <td className="px-4 py-3 text-white/80">$300 - $600</td>
+                    <td className="px-4 py-3 text-white/80">Books, charts, E6B, logbooks.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Cost</strong></td>
-                    <td><strong>$12,600 - $17,400</strong></td>
-                    <td>Excludes CPL/ATPL costs, which are prerequisites.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$12,600 - $17,400</strong></td>
+                    <td className="px-4 py-3 text-white/80">Excludes CPL/ATPL costs, which are prerequisites.</td>
                   </tr>
                 </tbody>
               </table>
@@ -209,7 +209,7 @@ export default function CanadaFlightInstructor() {
           heading: "Conclusion: Your Path to Aviation Leadership",
           content: (
             <>
-              <p>Becoming a Flight Instructor in Canada is a challenging yet profoundly rewarding endeavor. It requires a significant investment of time, effort, and financial resources, but the returns in terms of personal growth, professional development, and contribution to the aviation community are immeasurable. By meticulously adhering to Transport Canada's regulations, committing to continuous learning, and embracing the role of a mentor, you can achieve this esteemed qualification and play a vital role in shaping the future of Canadian aviation.</p>
+              <p>Becoming a Flight Instructor in Canada is a challenging yet rewarding endeavor. It requires a significant investment of time, effort, and financial resources, but the returns in terms of personal growth, professional development, and contribution to the aviation community are immeasurable. By meticulously adhering to Transport Canada's regulations, committing to continuous learning, and embracing the role of a mentor, you can achieve this esteemed qualification and play a vital role in shaping the future of Canadian aviation.</p>
             </>
           )
         }

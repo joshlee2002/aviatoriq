@@ -38,33 +38,33 @@ export default function LufthansaEuropeanFlightAcademy() {
               <p>
                 The academy employs an "ab-initio glass" philosophy, meaning students train on aircraft equipped with modern glass cockpits (such as the Garmin Perspective+ and G1000 NXi) from day one. This early exposure to advanced avionics, combined with side-stick controls on the primary trainer, mirrors the Airbus fly-by-wire systems used extensively across the Lufthansa Group fleet, facilitating a smoother transition to commercial airliners.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Training Phase</th>
-                    <th>Location</th>
-                    <th>Duration</th>
-                    <th>Focus & Aircraft</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Location</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Focus & Aircraft</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Phase 1: ATPL Theory</td>
-                    <td>Bremen (DE) or Zurich (CH)</td>
-                    <td>12 months</td>
-                    <td>14 EASA subjects, CBT stations, cockpit procedure trainers.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Phase 1: ATPL Theory</td>
+                    <td className="px-4 py-3 text-white/80">Bremen (DE) or Zurich (CH)</td>
+                    <td className="px-4 py-3 text-white/80">12 months</td>
+                    <td className="px-4 py-3 text-white/80">14 EASA subjects, CBT stations, cockpit procedure trainers.</td>
                   </tr>
-                  <tr>
-                    <td>Phase 2: Primary Flight Training</td>
-                    <td>Goodyear, Arizona (USA)</td>
-                    <td>6 months</td>
-                    <td>VFR/Basic IFR on Cirrus SR20 (Garmin Perspective+).</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Phase 2: Primary Flight Training</td>
+                    <td className="px-4 py-3 text-white/80">Goodyear, Arizona (USA)</td>
+                    <td className="px-4 py-3 text-white/80">6 months</td>
+                    <td className="px-4 py-3 text-white/80">VFR/Basic IFR on Cirrus SR20 (Garmin Perspective+).</td>
                   </tr>
-                  <tr>
-                    <td>Phase 3: Advanced IFR & MCC</td>
-                    <td>Rostock-Laage (DE) or Grenchen (CH)</td>
-                    <td>6 months</td>
-                    <td>MEP/Advanced IFR on Diamond DA42 NG-VI; MCC on A320/B737 simulators.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Phase 3: Advanced IFR & MCC</td>
+                    <td className="px-4 py-3 text-white/80">Rostock-Laage (DE) or Grenchen (CH)</td>
+                    <td className="px-4 py-3 text-white/80">6 months</td>
+                    <td className="px-4 py-3 text-white/80">MEP/Advanced IFR on Diamond DA42 NG-VI; MCC on A320/B737 simulators.</td>
                   </tr>
                 </tbody>
               </table>
@@ -94,29 +94,29 @@ export default function LufthansaEuropeanFlightAcademy() {
               <p>
                 The most prominent option is the Brain Capital Income Share Agreement (ISA). Under this model, cadets pay an upfront fee of €10,000, with the remaining €110,000 covered by Brain Capital. In return, graduates commit to paying approximately 11% of their future gross income for 11 payment years, but only when their earnings exceed €30,000 annually. This structure aligns the cost of training with future earning potential, providing a safety net for those entering the industry.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Financing Option</th>
-                    <th>Upfront Cost</th>
-                    <th>Details</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Financing Option</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Upfront Cost</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Brain Capital ISA</td>
-                    <td>€10,000</td>
-                    <td>Pay ~11% of income for 11 years (threshold: €30,000/year).</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Brain Capital ISA</td>
+                    <td className="px-4 py-3 text-white/80">€10,000</td>
+                    <td className="px-4 py-3 text-white/80">Pay ~11% of income for 11 years (threshold: €30,000/year).</td>
                   </tr>
-                  <tr>
-                    <td>Albatros Financial Solutions</td>
-                    <td>Variable</td>
-                    <td>Personal loans up to €100,000 (10-year term) or real estate-backed loans.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Albatros Financial Solutions</td>
+                    <td className="px-4 py-3 text-white/80">Variable</td>
+                    <td className="px-4 py-3 text-white/80">Personal loans up to €100,000 (10-year term) or real estate-backed loans.</td>
                   </tr>
-                  <tr>
-                    <td>KfW Bildungskredit</td>
-                    <td>None</td>
-                    <td>State-backed loan up to €7,200 at low interest for living costs.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">KfW Bildungskredit</td>
+                    <td className="px-4 py-3 text-white/80">None</td>
+                    <td className="px-4 py-3 text-white/80">State-backed loan up to €7,200 at low interest for living costs.</td>
                   </tr>
                 </tbody>
               </table>
@@ -133,34 +133,34 @@ export default function LufthansaEuropeanFlightAcademy() {
               <p>
                 While these subsidiaries operate similar aircraft (such as the A320 family) out of major hubs like Frankfurt and Munich, the starting salaries are notably lower. This "two-tier" system means that while the prestige of EFA training remains high, the financial outcome can vary significantly depending on the specific airline placement within the group.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Airline Entity</th>
-                    <th>Estimated FO Salary (Annual)</th>
-                    <th>Contract Type</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline Entity</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated FO Salary (Annual)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Contract Type</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Lufthansa Mainline</td>
-                    <td>€83,000 - €86,000</td>
-                    <td>KTV (Strong Union Agreement)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Lufthansa Mainline</td>
+                    <td className="px-4 py-3 text-white/80">€83,000 - €86,000</td>
+                    <td className="px-4 py-3 text-white/80">KTV (Strong Union Agreement)</td>
                   </tr>
-                  <tr>
-                    <td>Lufthansa City Airlines</td>
-                    <td>€59,000 - €65,000</td>
-                    <td>Non-KTV (New Subsidiary)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Lufthansa City Airlines</td>
+                    <td className="px-4 py-3 text-white/80">€59,000 - €65,000</td>
+                    <td className="px-4 py-3 text-white/80">Non-KTV (New Subsidiary)</td>
                   </tr>
-                  <tr>
-                    <td>Eurowings</td>
-                    <td>€55,000 - €65,000</td>
-                    <td>Sector Pay Subsidiary</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Eurowings</td>
+                    <td className="px-4 py-3 text-white/80">€55,000 - €65,000</td>
+                    <td className="px-4 py-3 text-white/80">Sector Pay Subsidiary</td>
                   </tr>
-                  <tr>
-                    <td>Discover Airlines</td>
-                    <td>€50,000 - €60,000</td>
-                    <td>Sector Pay Subsidiary</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Discover Airlines</td>
+                    <td className="px-4 py-3 text-white/80">€50,000 - €60,000</td>
+                    <td className="px-4 py-3 text-white/80">Sector Pay Subsidiary</td>
                   </tr>
                 </tbody>
               </table>

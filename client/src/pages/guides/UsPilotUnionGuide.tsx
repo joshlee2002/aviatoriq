@@ -19,7 +19,7 @@ export default function UsPilotUnionGuide() {
           heading: "Introduction: The Gateway to American Aviation Excellence",
           content: (
             <>
-              <p>The United States continues to be a global leader in aviation, offering unparalleled opportunities for aspiring pilots. The journey to becoming a professional aviator in the US is rigorous, demanding dedication, significant investment, and a thorough understanding of the regulatory landscape. This guide provides an elite, comprehensive overview of the US pilot training market in 2026, designed for individuals committed to achieving excellence in their aviation careers. We delve into the intricacies of FAA regulations, dissect the financial commitments, and illuminate the diverse career trajectories available within the American aviation industry.</p>
+              <p>The United States continues to be a global leader in aviation, offering significant opportunities for aspiring pilots. The journey to becoming a professional aviator in the US is rigorous, demanding dedication, significant investment, and a thorough understanding of the regulatory landscape. This guide provides an elite, comprehensive overview of the US pilot training market in 2026, designed for individuals committed to achieving excellence in their aviation careers. We delve into the intricacies of FAA regulations, dissect the financial commitments, and illuminate the diverse career trajectories available within the American aviation industry.</p>
               <p>The demand for highly skilled pilots remains robust, driven by retirements, global air travel growth, and the expansion of cargo operations. For those with the ambition and aptitude, the US pilot training system offers a clear, albeit challenging, path to a rewarding profession. Understanding the nuances of this path is critical for strategic planning and successful execution.</p>
             </>
           )
@@ -33,49 +33,49 @@ export default function UsPilotUnionGuide() {
               <p><strong>Part 141</strong> schools, conversely, operate under a more structured and rigorous curriculum approved by the FAA. These programs are often integrated into aviation colleges or larger flight academies and are characterized by a fixed syllabus, stage checks, and a more intensive schedule. Part 141 programs are generally preferred by individuals aiming for an accelerated career path, as they often allow for reduced minimum flight hours for certain certificates, particularly for the Commercial Pilot Certificate and Airline Transport Pilot Certificate.</p>
               <p>The decision between Part 61 and Part 141 should be based on an individual's learning style, availability, financial resources, and career aspirations. While Part 141 can be faster due to reduced hour requirements, the overall cost might be similar or even higher due to the structured nature and potentially higher hourly rates. Conversely, Part 61 offers flexibility but demands greater self-discipline and can sometimes extend the training timeline.</p>
               <h3>Key Differences: Part 61 vs. Part 141</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Feature</th>
-                    <th>Part 61</th>
-                    <th>Part 141</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 61</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 141</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Structure</strong></td>
-                    <td>Flexible, self-paced, instructor-driven</td>
-                    <td>Structured, FAA-approved syllabus, stage checks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Structure</strong></td>
+                    <td className="px-4 py-3 text-white/80">Flexible, self-paced, instructor-driven</td>
+                    <td className="px-4 py-3 text-white/80">Structured, FAA-approved syllabus, stage checks</td>
                   </tr>
-                  <tr>
-                    <td><strong>Minimum Hours (PPL)</strong></td>
-                    <td>40 hours (minimum)</td>
-                    <td>35 hours (minimum)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Minimum Hours (PPL)</strong></td>
+                    <td className="px-4 py-3 text-white/80">40 hours (minimum)</td>
+                    <td className="px-4 py-3 text-white/80">35 hours (minimum)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Minimum Hours (CPL)</strong></td>
-                    <td>250 hours (minimum)</td>
-                    <td>190-200 hours (minimum, depending on program)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Minimum Hours (CPL)</strong></td>
+                    <td className="px-4 py-3 text-white/80">250 hours (minimum)</td>
+                    <td className="px-4 py-3 text-white/80">190-200 hours (minimum, depending on program)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Curriculum</strong></td>
-                    <td>Tailored to student needs</td>
-                    <td>Fixed, FAA-approved curriculum</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Curriculum</strong></td>
+                    <td className="px-4 py-3 text-white/80">Tailored to student needs</td>
+                    <td className="px-4 py-3 text-white/80">Fixed, FAA-approved curriculum</td>
                   </tr>
-                  <tr>
-                    <td><strong>Instructor Oversight</strong></td>
-                    <td>Less formal oversight</td>
-                    <td>Rigorous oversight, standardized instruction</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Instructor Oversight</strong></td>
+                    <td className="px-4 py-3 text-white/80">Less formal oversight</td>
+                    <td className="px-4 py-3 text-white/80">Rigorous oversight, standardized instruction</td>
                   </tr>
-                  <tr>
-                    <td><strong>Financial Aid Eligibility</strong></td>
-                    <td>Limited eligibility</td>
-                    <td>Often eligible for federal financial aid</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Financial Aid Eligibility</strong></td>
+                    <td className="px-4 py-3 text-white/80">Limited eligibility</td>
+                    <td className="px-4 py-3 text-white/80">Often eligible for federal financial aid</td>
                   </tr>
-                  <tr>
-                    <td><strong>Ideal For</strong></td>
-                    <td>Hobbyists, those with other commitments, self-starters</td>
-                    <td>Career pilots, accelerated programs, veterans</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Ideal For</strong></td>
+                    <td className="px-4 py-3 text-white/80">Hobbyists, those with other commitments, self-starters</td>
+                    <td className="px-4 py-3 text-white/80">Career pilots, accelerated programs, veterans</td>
                   </tr>
                 </tbody>
               </table>
@@ -89,125 +89,125 @@ export default function UsPilotUnionGuide() {
               <p>The journey to becoming an airline pilot involves several distinct phases, each culminating in a specific FAA certificate or rating. The costs associated with each phase can vary significantly based on the flight school, aircraft type, geographic location, and the student's individual learning pace. The figures provided below are estimates for 2026 and represent a typical pathway for aspiring professional pilots.</p>
               <h3>Private Pilot License (PPL)</h3>
               <p>The PPL is the foundational certificate, allowing you to fly an aircraft for recreational purposes. It's the first major milestone in any pilot's career.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Estimated Cost (USD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Flight Instruction (Aircraft & Instructor)</td>
-                    <td>$10,000 - $18,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Instruction (Aircraft & Instructor)</td>
+                    <td className="px-4 py-3 text-white/80">$10,000 - $18,000</td>
                   </tr>
-                  <tr>
-                    <td>Ground School & Materials</td>
-                    <td>$500 - $1,500</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground School & Materials</td>
+                    <td className="px-4 py-3 text-white/80">$500 - $1,500</td>
                   </tr>
-                  <tr>
-                    <td>FAA Written Exam</td>
-                    <td>$175</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">FAA Written Exam</td>
+                    <td className="px-4 py-3 text-white/80">$175</td>
                   </tr>
-                  <tr>
-                    <td>Checkride (Examiner Fee & Aircraft Rental)</td>
-                    <td>$800 - $1,500</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Checkride (Examiner Fee & Aircraft Rental)</td>
+                    <td className="px-4 py-3 text-white/80">$800 - $1,500</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total PPL Estimate</strong></td>
-                    <td><strong>$11,475 - $21,175</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total PPL Estimate</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$11,475 - $21,175</strong></td>
                   </tr>
                 </tbody>
               </table>
               <h3>Instrument Rating (IR)</h3>
               <p>The Instrument Rating allows a pilot to fly under Instrument Flight Rules (IFR), navigating solely by reference to instruments. This is a crucial step for professional aviation.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Estimated Cost (USD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Flight Instruction (Aircraft & Instructor)</td>
-                    <td>$8,000 - $15,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Instruction (Aircraft & Instructor)</td>
+                    <td className="px-4 py-3 text-white/80">$8,000 - $15,000</td>
                   </tr>
-                  <tr>
-                    <td>Ground School & Materials</td>
-                    <td>$300 - $1,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground School & Materials</td>
+                    <td className="px-4 py-3 text-white/80">$300 - $1,000</td>
                   </tr>
-                  <tr>
-                    <td>FAA Written Exam</td>
-                    <td>$175</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">FAA Written Exam</td>
+                    <td className="px-4 py-3 text-white/80">$175</td>
                   </tr>
-                  <tr>
-                    <td>Checkride (Examiner Fee & Aircraft Rental)</td>
-                    <td>$800 - $1,500</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Checkride (Examiner Fee & Aircraft Rental)</td>
+                    <td className="px-4 py-3 text-white/80">$800 - $1,500</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total IR Estimate</strong></td>
-                    <td><strong>$9,275 - $17,675</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total IR Estimate</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$9,275 - $17,675</strong></td>
                   </tr>
                 </tbody>
               </table>
               <h3>Commercial Pilot License (CPL)</h3>
               <p>The CPL permits a pilot to be compensated for flying. This rating requires significant flight experience and advanced maneuvers.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Estimated Cost (USD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Flight Instruction (Aircraft & Instructor)</td>
-                    <td>$25,000 - $35,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Instruction (Aircraft & Instructor)</td>
+                    <td className="px-4 py-3 text-white/80">$25,000 - $35,000</td>
                   </tr>
-                  <tr>
-                    <td>Ground School & Materials</td>
-                    <td>$500 - $1,500</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground School & Materials</td>
+                    <td className="px-4 py-3 text-white/80">$500 - $1,500</td>
                   </tr>
-                  <tr>
-                    <td>FAA Written Exam</td>
-                    <td>$175</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">FAA Written Exam</td>
+                    <td className="px-4 py-3 text-white/80">$175</td>
                   </tr>
-                  <tr>
-                    <td>Checkride (Examiner Fee & Aircraft Rental)</td>
-                    <td>$800 - $1,500</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Checkride (Examiner Fee & Aircraft Rental)</td>
+                    <td className="px-4 py-3 text-white/80">$800 - $1,500</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total CPL Estimate</strong></td>
-                    <td><strong>$26,475 - $38,175</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total CPL Estimate</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$26,475 - $38,175</strong></td>
                   </tr>
                 </tbody>
               </table>
               <h3>Airline Transport Pilot (ATP) Certificate & ATP-CTP</h3>
               <p>The ATP is the highest level of pilot certification, required for airline captains. Before taking the ATP written exam, candidates must complete the Airline Transport Pilot Certification Training Program (ATP-CTP).</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Estimated Cost (USD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>ATP-CTP Course</td>
-                    <td>$4,000 - $5,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATP-CTP Course</td>
+                    <td className="px-4 py-3 text-white/80">$4,000 - $5,000</td>
                   </tr>
-                  <tr>
-                    <td>FAA Written Exam</td>
-                    <td>$175</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">FAA Written Exam</td>
+                    <td className="px-4 py-3 text-white/80">$175</td>
                   </tr>
-                  <tr>
-                    <td>ATP Practical Test (Checkride)</td>
-                    <td>$1,500 - $3,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATP Practical Test (Checkride)</td>
+                    <td className="px-4 py-3 text-white/80">$1,500 - $3,000</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total ATP/ATP-CTP Estimate</strong></td>
-                    <td><strong>$5,675 - $8,175</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total ATP/ATP-CTP Estimate</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$5,675 - $8,175</strong></td>
                   </tr>
                 </tbody>
               </table>
@@ -221,33 +221,33 @@ export default function UsPilotUnionGuide() {
             <>
               <p>Before embarking on any flight training, aspiring pilots must obtain an FAA medical certificate. This certificate ensures that pilots meet the necessary health standards to safely operate an aircraft. There are three classes of medical certificates, each with different requirements and validity periods, depending on the type of flying you intend to do.</p>
               <h3>Classes of Medical Certificates</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Class</th>
-                    <th>Purpose</th>
-                    <th>Validity (Under 40)</th>
-                    <th>Validity (Over 40)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Class</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Purpose</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Validity (Under 40)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Validity (Over 40)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>First Class</strong></td>
-                    <td>Required for Airline Transport Pilot (ATP) privileges (e.g., airline captains).</td>
-                    <td>12 calendar months</td>
-                    <td>6 calendar months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>First Class</strong></td>
+                    <td className="px-4 py-3 text-white/80">Required for Airline Transport Pilot (ATP) privileges (e.g., airline captains).</td>
+                    <td className="px-4 py-3 text-white/80">12 calendar months</td>
+                    <td className="px-4 py-3 text-white/80">6 calendar months</td>
                   </tr>
-                  <tr>
-                    <td><strong>Second Class</strong></td>
-                    <td>Required for Commercial Pilot privileges (e.g., charter pilots, flight instructors).</td>
-                    <td>12 calendar months</td>
-                    <td>12 calendar months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Second Class</strong></td>
+                    <td className="px-4 py-3 text-white/80">Required for Commercial Pilot privileges (e.g., charter pilots, flight instructors).</td>
+                    <td className="px-4 py-3 text-white/80">12 calendar months</td>
+                    <td className="px-4 py-3 text-white/80">12 calendar months</td>
                   </tr>
-                  <tr>
-                    <td><strong>Third Class</strong></td>
-                    <td>Required for Private Pilot and Recreational Pilot privileges.</td>
-                    <td>60 calendar months</td>
-                    <td>24 calendar months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Third Class</strong></td>
+                    <td className="px-4 py-3 text-white/80">Required for Private Pilot and Recreational Pilot privileges.</td>
+                    <td className="px-4 py-3 text-white/80">60 calendar months</td>
+                    <td className="px-4 py-3 text-white/80">24 calendar months</td>
                   </tr>
                 </tbody>
               </table>
@@ -263,44 +263,44 @@ export default function UsPilotUnionGuide() {
               <p>Upon achieving the necessary certificates and ratings, US pilots have a diverse array of career paths available, ranging from instructing new pilots to commanding international flights for major airlines. The aviation industry offers stability and growth, particularly within the airline sector.</p>
               <h3>Major US Airlines</h3>
               <p>The US airline industry is dominated by several major carriers, which offer competitive salaries, comprehensive benefits, and extensive route networks. These airlines typically require significant flight experience, often accumulated through regional airline service or military aviation.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Airline</th>
-                    <th>Primary Hubs</th>
-                    <th>Market Share (2025 Domestic)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Primary Hubs</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Market Share (2025 Domestic)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>American Airlines</td>
-                    <td>Dallas/Fort Worth, Charlotte, Chicago-O'Hare, Miami, Philadelphia, Phoenix, Washington-National</td>
-                    <td>~18-20%</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">American Airlines</td>
+                    <td className="px-4 py-3 text-white/80">Dallas/Fort Worth, Charlotte, Chicago-O'Hare, Miami, Philadelphia, Phoenix, Washington-National</td>
+                    <td className="px-4 py-3 text-white/80">~18-20%</td>
                   </tr>
-                  <tr>
-                    <td>Delta Air Lines</td>
-                    <td>Atlanta, Boston, Detroit, Los Angeles, Minneapolis/St. Paul, New York-JFK, New York-LaGuardia, Salt Lake City, Seattle/Tacoma</td>
-                    <td>~18-20%</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Delta Air Lines</td>
+                    <td className="px-4 py-3 text-white/80">Atlanta, Boston, Detroit, Los Angeles, Minneapolis/St. Paul, New York-JFK, New York-LaGuardia, Salt Lake City, Seattle/Tacoma</td>
+                    <td className="px-4 py-3 text-white/80">~18-20%</td>
                   </tr>
-                  <tr>
-                    <td>United Airlines</td>
-                    <td>Chicago-O'Hare, Denver, Houston-Intercontinental, Los Angeles, Newark, San Francisco, Washington-Dulles</td>
-                    <td>~17-19%</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">United Airlines</td>
+                    <td className="px-4 py-3 text-white/80">Chicago-O'Hare, Denver, Houston-Intercontinental, Los Angeles, Newark, San Francisco, Washington-Dulles</td>
+                    <td className="px-4 py-3 text-white/80">~17-19%</td>
                   </tr>
-                  <tr>
-                    <td>Southwest Airlines</td>
-                    <td>Atlanta, Baltimore, Chicago-Midway, Dallas-Love Field, Denver, Houston-Hobby, Las Vegas, Los Angeles, Oakland, Orlando, Phoenix</td>
-                    <td>~18-19%</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Southwest Airlines</td>
+                    <td className="px-4 py-3 text-white/80">Atlanta, Baltimore, Chicago-Midway, Dallas-Love Field, Denver, Houston-Hobby, Las Vegas, Los Angeles, Oakland, Orlando, Phoenix</td>
+                    <td className="px-4 py-3 text-white/80">~18-19%</td>
                   </tr>
-                  <tr>
-                    <td>Alaska Airlines</td>
-                    <td>Seattle/Tacoma, Portland, Anchorage, Los Angeles, San Francisco</td>
-                    <td>~5%</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Alaska Airlines</td>
+                    <td className="px-4 py-3 text-white/80">Seattle/Tacoma, Portland, Anchorage, Los Angeles, San Francisco</td>
+                    <td className="px-4 py-3 text-white/80">~5%</td>
                   </tr>
-                  <tr>
-                    <td>JetBlue Airways</td>
-                    <td>New York-JFK, Boston, Fort Lauderdale, Orlando, Long Beach</td>
-                    <td>~4%</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">JetBlue Airways</td>
+                    <td className="px-4 py-3 text-white/80">New York-JFK, Boston, Fort Lauderdale, Orlando, Long Beach</td>
+                    <td className="px-4 py-3 text-white/80">~4%</td>
                   </tr>
                 </tbody>
               </table>
@@ -319,33 +319,33 @@ export default function UsPilotUnionGuide() {
               </ul>
               <h3>Pilot Salary Expectations (2026 USD)</h3>
               <p>Pilot salaries are highly dependent on experience, aircraft type, and the airline. Entry-level positions, such as First Officer at a regional airline, will have lower salaries, which increase significantly with seniority and progression to major airlines and Captain positions.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Position</th>
-                    <th>Estimated Annual Salary Range (USD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Position</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary Range (USD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Flight Instructor</td>
-                    <td>$30,000 - $60,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Instructor</td>
+                    <td className="px-4 py-3 text-white/80">$30,000 - $60,000</td>
                   </tr>
-                  <tr>
-                    <td>Regional Airline First Officer (Year 1)</td>
-                    <td>$60,000 - $90,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Regional Airline First Officer (Year 1)</td>
+                    <td className="px-4 py-3 text-white/80">$60,000 - $90,000</td>
                   </tr>
-                  <tr>
-                    <td>Regional Airline Captain (Experienced)</td>
-                    <td>$100,000 - $180,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Regional Airline Captain (Experienced)</td>
+                    <td className="px-4 py-3 text-white/80">$100,000 - $180,000</td>
                   </tr>
-                  <tr>
-                    <td>Major Airline First Officer (Year 1)</td>
-                    <td>$90,000 - $150,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Major Airline First Officer (Year 1)</td>
+                    <td className="px-4 py-3 text-white/80">$90,000 - $150,000</td>
                   </tr>
-                  <tr>
-                    <td>Major Airline Captain (Experienced)</td>
-                    <td>$250,000 - $500,000+</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Major Airline Captain (Experienced)</td>
+                    <td className="px-4 py-3 text-white/80">$250,000 - $500,000+</td>
                   </tr>
                 </tbody>
               </table>
@@ -373,8 +373,8 @@ export default function UsPilotUnionGuide() {
           heading: "Conclusion: Your Path to the Cockpit",
           content: (
             <>
-              <p>The journey to becoming a professional pilot in the United States is a challenging yet immensely rewarding endeavor. It demands unwavering commitment, meticulous planning, and a deep understanding of the regulatory and financial landscapes. By carefully considering the distinctions between Part 61 and Part 141 training, understanding the phased approach to certification, securing the necessary medical clearances, and strategically planning your career trajectory, aspiring aviators can confidently navigate the path to the cockpit.</p>
-              <p>The US aviation market offers a dynamic environment with continuous opportunities for growth and advancement. With the right preparation and dedication, the dream of flying for a living can become a tangible reality. This guide serves as a foundational resource for those ready to embark on this elite professional journey.</p>
+              <p>The journey to becoming a professional pilot in the United States is a challenging yet rewarding endeavor. It demands unwavering commitment, meticulous planning, and a deep understanding of the regulatory and financial landscapes. By carefully considering the distinctions between Part 61 and Part 141 training, understanding the phased approach to certification, securing the necessary medical clearances, and strategically planning your career trajectory, aspiring aviators can confidently navigate the path to the cockpit.</p>
+              <p>The US aviation market offers a dynamic environment with continuous opportunities for growth and advancement. With the right preparation and dedication, the goal of becoming a pilot for a living can become a tangible reality. This guide serves as a foundational resource for those ready to embark on this elite professional journey.</p>
             </>
           )
         },

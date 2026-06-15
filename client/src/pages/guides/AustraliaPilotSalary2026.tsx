@@ -19,7 +19,7 @@ export default function AustraliaPilotSalary2026() {
           heading: "Introduction: The Lucrative Path of an Australian Pilot",
           content: (
             <>
-              <p>Becoming a pilot in Australia is a dream for many, offering not just the thrill of flight but also a highly rewarding career path. In 2026, the Australian aviation industry continues to present robust opportunities, with competitive salaries reflecting the significant investment in training and the high level of responsibility involved. This guide delves into the intricacies of pilot salaries across various sectors of Australian aviation, providing aspiring and current pilots with a clear understanding of earning potential.</p>
+              <p>Becoming a pilot in Australia is a dream for many, offering not just the thrill of flight but also a highly rewarding career path. In 2026, the Australian aviation industry continues to present robust opportunities, with competitive salaries reflecting the significant investment in training and the high level of responsibility involved. This guide covers pilot salaries across various sectors of Australian aviation, providing aspiring and current pilots with a clear understanding of earning potential.</p>
               <p>We will explore the key factors that influence pilot remuneration, from initial entry-level positions to senior captain roles at major airlines like Qantas and Virgin Australia. Our analysis incorporates the latest data and industry insights to offer a realistic outlook on what pilots can expect to earn in 2026, alongside a discussion of regulatory impacts and career progression.</p>
             </>
           )
@@ -45,17 +45,17 @@ export default function AustraliaPilotSalary2026() {
           content: (
             <>
               <p>Based on current industry trends and projections for 2026, here's an overview of average pilot salaries in Australia. These figures are indicative and can vary based on specific airline agreements, individual performance, and economic conditions.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Role</th><th>Experience Level</th><th>Average Annual Salary (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Role</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Experience Level</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Average Annual Salary (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>First Officer (Regional)</td><td>0-3 years</td><td>$70,000 - $110,000</td><td>Entry-level, often flying smaller turboprops or regional jets.</td></tr>
-                  <tr><td>First Officer (Major Airline)</td><td>3-7 years</td><td>$120,000 - $200,000</td><td>Progression to larger aircraft and more complex routes.</td></tr>
-                  <tr><td>Captain (Regional)</td><td>5-10 years</td><td>$130,000 - $220,000</td><td>Command responsibility on regional routes.</td></tr>
-                  <tr><td>Captain (Major Airline - Narrow-body)</td><td>7-15 years</td><td>$250,000 - $350,000</td><td>Command on domestic and short-haul international flights.</td></tr>
-                  <tr><td>Captain (Major Airline - Wide-body)</td><td>15+ years</td><td>$350,000 - $450,000+</td><td>Command on long-haul international flights, highest seniority.</td></tr>
-                  <tr><td>Flight Instructor</td><td>Varies</td><td>$60,000 - $90,000</td><td>Often a stepping stone for new commercial pilots.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">First Officer (Regional)</td><td className="px-4 py-3 text-white/80">0-3 years</td><td className="px-4 py-3 text-white/80">$70,000 - $110,000</td><td className="px-4 py-3 text-white/80">Entry-level, often flying smaller turboprops or regional jets.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">First Officer (Major Airline)</td><td className="px-4 py-3 text-white/80">3-7 years</td><td className="px-4 py-3 text-white/80">$120,000 - $200,000</td><td className="px-4 py-3 text-white/80">Progression to larger aircraft and more complex routes.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Captain (Regional)</td><td className="px-4 py-3 text-white/80">5-10 years</td><td className="px-4 py-3 text-white/80">$130,000 - $220,000</td><td className="px-4 py-3 text-white/80">Command responsibility on regional routes.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Captain (Major Airline - Narrow-body)</td><td className="px-4 py-3 text-white/80">7-15 years</td><td className="px-4 py-3 text-white/80">$250,000 - $350,000</td><td className="px-4 py-3 text-white/80">Command on domestic and short-haul international flights.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Captain (Major Airline - Wide-body)</td><td className="px-4 py-3 text-white/80">15+ years</td><td className="px-4 py-3 text-white/80">$350,000 - $450,000+</td><td className="px-4 py-3 text-white/80">Command on long-haul international flights, highest seniority.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Instructor</td><td className="px-4 py-3 text-white/80">Varies</td><td className="px-4 py-3 text-white/80">$60,000 - $90,000</td><td className="px-4 py-3 text-white/80">Often a stepping stone for new commercial pilots.</td></tr>
                 </tbody>
               </table>
               <p>These figures represent base salaries and do not always include additional allowances, superannuation, and benefits, which can significantly increase the total compensation package.</p>

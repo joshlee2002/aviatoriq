@@ -65,44 +65,44 @@ export default function SaMedicalClass1() {
                 While many medical conditions can be managed, certain conditions are generally considered disqualifying for a Class 1 Medical Certificate, or require extensive evaluation and potential waivers. It's important to note that a disqualifying condition does not always mean the end of a piloting dream, as the SACAA, in line with ICAO, may grant medical certificates with limitations or waivers if the risk to flight safety can be acceptably mitigated.
               </p>
               <h4>Key Disqualifying Conditions (or those requiring careful assessment):</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Category</th>
-                    <th>Conditions</th>
-                    <th>Considerations for Waiver/Limitation</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Conditions</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Considerations for Waiver/Limitation</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Cardiovascular</strong></td>
-                    <td>Uncontrolled hypertension, significant coronary artery disease, recurrent arrhythmias, heart valve disease, history of myocardial infarction or stroke.</td>
-                    <td>May be considered if stable, well-managed, and assessed by a cardiologist with favorable prognosis and no risk of sudden incapacitation. Regular follow-ups and specific tests may be required.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Cardiovascular</strong></td>
+                    <td className="px-4 py-3 text-white/80">Uncontrolled hypertension, significant coronary artery disease, recurrent arrhythmias, heart valve disease, history of myocardial infarction or stroke.</td>
+                    <td className="px-4 py-3 text-white/80">May be considered if stable, well-managed, and assessed by a cardiologist with favorable prognosis and no risk of sudden incapacitation. Regular follow-ups and specific tests may be required.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Neurological</strong></td>
-                    <td>Epilepsy, recurrent seizures, severe head injury with neurological deficits, certain chronic neurological disorders.</td>
-                    <td>A history of a single seizure may be waiverable after a long seizure-free period and neurological assessment. Chronic conditions are assessed individually based on stability and impact on flight safety.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Neurological</strong></td>
+                    <td className="px-4 py-3 text-white/80">Epilepsy, recurrent seizures, severe head injury with neurological deficits, certain chronic neurological disorders.</td>
+                    <td className="px-4 py-3 text-white/80">A history of a single seizure may be waiverable after a long seizure-free period and neurological assessment. Chronic conditions are assessed individually based on stability and impact on flight safety.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Psychiatric</strong></td>
-                    <td>Bipolar disorder, severe depression with psychotic features, active substance dependence/abuse, certain personality disorders.</td>
-                    <td>Mild to moderate depression or anxiety may be waiverable if stable on approved medication and under psychiatric review. Substance abuse requires documented recovery and ongoing monitoring.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Psychiatric</strong></td>
+                    <td className="px-4 py-3 text-white/80">Bipolar disorder, severe depression with psychotic features, active substance dependence/abuse, certain personality disorders.</td>
+                    <td className="px-4 py-3 text-white/80">Mild to moderate depression or anxiety may be waiverable if stable on approved medication and under psychiatric review. Substance abuse requires documented recovery and ongoing monitoring.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Endocrine</strong></td>
-                    <td>Insulin-dependent diabetes mellitus.</td>
-                    <td>May be considered for a waiver if the condition is extremely well-controlled, stable, and the applicant demonstrates a thorough understanding of their condition and management. Requires frequent monitoring and specific protocols.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Endocrine</strong></td>
+                    <td className="px-4 py-3 text-white/80">Insulin-dependent diabetes mellitus.</td>
+                    <td className="px-4 py-3 text-white/80">May be considered for a waiver if the condition is extremely well-controlled, stable, and the applicant demonstrates a thorough understanding of their condition and management. Requires frequent monitoring and specific protocols.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Vision</strong></td>
-                    <td>Uncorrected visual acuity worse than 6/9 (20/30) in each eye, significant color vision deficiency (unable to pass approved tests), progressive eye diseases.</td>
-                    <td>Corrective lenses are permitted. Color vision deficiencies may be assessed with practical tests (e.g., lantern test) for certain privileges.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Vision</strong></td>
+                    <td className="px-4 py-3 text-white/80">Uncorrected visual acuity worse than 6/9 (20/30) in each eye, significant color vision deficiency (unable to pass approved tests), progressive eye diseases.</td>
+                    <td className="px-4 py-3 text-white/80">Corrective lenses are permitted. Color vision deficiencies may be assessed with practical tests (e.g., lantern test) for certain privileges.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Hearing</strong></td>
-                    <td>Significant hearing loss that interferes with communication in a noisy cockpit environment.</td>
-                    <td>Hearing aids may be permitted if they restore hearing to acceptable levels for aviation communication.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Hearing</strong></td>
+                    <td className="px-4 py-3 text-white/80">Significant hearing loss that interferes with communication in a noisy cockpit environment.</td>
+                    <td className="px-4 py-3 text-white/80">Hearing aids may be permitted if they restore hearing to acceptable levels for aviation communication.</td>
                   </tr>
                 </tbody>
               </table>
@@ -122,29 +122,29 @@ export default function SaMedicalClass1() {
               <p>
                 The validity period of a Class 1 Medical Certificate depends on the age of the applicant and the type of operation:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Age of Applicant</th>
-                    <th>Validity Period (Commercial Operations)</th>
-                    <th>Validity Period (Single-Pilot Commercial Air Transport, Multi-Pilot Operations)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Age of Applicant</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Validity Period (Commercial Operations)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Validity Period (Single-Pilot Commercial Air Transport, Multi-Pilot Operations)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Under 40</td>
-                    <td>12 months</td>
-                    <td>12 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Under 40</td>
+                    <td className="px-4 py-3 text-white/80">12 months</td>
+                    <td className="px-4 py-3 text-white/80">12 months</td>
                   </tr>
-                  <tr>
-                    <td>40 to 59</td>
-                    <td>12 months</td>
-                    <td>6 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">40 to 59</td>
+                    <td className="px-4 py-3 text-white/80">12 months</td>
+                    <td className="px-4 py-3 text-white/80">6 months</td>
                   </tr>
-                  <tr>
-                    <td>60 and over</td>
-                    <td>6 months</td>
-                    <td>6 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">60 and over</td>
+                    <td className="px-4 py-3 text-white/80">6 months</td>
+                    <td className="px-4 py-3 text-white/80">6 months</td>
                   </tr>
                 </tbody>
               </table>

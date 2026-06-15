@@ -90,7 +90,7 @@ const HowToBecomePilot = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Integrated ATPL</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">18–24 months</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£99,900–£119,500</td>
@@ -104,7 +104,7 @@ const HowToBecomePilot = () => {
                       <td className="p-3 border border-slate-200 dark:border-slate-700">High — self-paced, multiple schools</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Those who need to keep working and spread costs</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">MPL</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">18–24 months</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Funded by airline</td>
@@ -164,7 +164,7 @@ const HowToBecomePilot = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">CAE Oxford Aviation Academy</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Oxford / Bournemouth</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-semibold">£99,900</td>
@@ -176,7 +176,7 @@ const HowToBecomePilot = () => {
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-semibold">£102,500</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Rebranded from L3Harris in 2025/2026</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Leading Edge Aviation</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Perth, Scotland</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-semibold">£114,950</td>
@@ -188,7 +188,7 @@ const HowToBecomePilot = () => {
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-semibold">£119,500</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">UK CAA-approved; excellent flying weather</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Bartolini Air (EASA)</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Kraków, Poland</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-semibold">~£55,000–£65,000</td>
@@ -252,7 +252,7 @@ const HowToBecomePilot = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">PPL</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">45 hrs (typically 60–70)</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£8,000–£15,000</td>
@@ -264,7 +264,7 @@ const HowToBecomePilot = () => {
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£3,000–£5,000</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">12–18 months (part-time)</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Hour Building</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">~100–150 hrs</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£15,000–£25,000</td>
@@ -276,7 +276,7 @@ const HowToBecomePilot = () => {
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£10,000–£15,000</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">4–8 weeks</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Multi-Engine IR (MEIR)</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">50 hrs instrument</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£20,000–£30,000</td>
@@ -288,7 +288,7 @@ const HowToBecomePilot = () => {
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£5,000–£8,000</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">2–4 weeks</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Type Rating</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">—</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£20,000–£30,000 (if self-funded)</td>
@@ -385,7 +385,7 @@ const HowToBecomePilot = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">New FO — Regional (Loganair, Eastern)</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£35,000–£45,000</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Excellent experience; stepping stone to majors</td>
@@ -395,7 +395,7 @@ const HowToBecomePilot = () => {
                       <td className="p-3 border border-slate-200 dark:border-slate-700">€45,000–€55,000 base</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Plus productivity pay; self-employed contract</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">New FO — easyJet</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£50,000–£65,000</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Including allowances; BALPA agreement</td>
@@ -405,7 +405,7 @@ const HowToBecomePilot = () => {
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£40,000–£55,000</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Rises quickly with seniority; sector pay on top</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Senior FO (5–10 yrs)</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£65,000–£85,000</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Varies by airline and aircraft type</td>
@@ -415,7 +415,7 @@ const HowToBecomePilot = () => {
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£90,000–£130,000</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Upgrade typically 8–12 years in current market</td>
                     </tr>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Captain — BA long-haul (777/787)</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">£120,000–£160,000+</td>
                       <td className="p-3 border border-slate-200 dark:border-slate-700">Among highest-paid in UK aviation</td>

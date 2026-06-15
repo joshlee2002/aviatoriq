@@ -17,7 +17,7 @@ const CommercialPilotCertUSA = () => {
   return (
     <GuideLayout
       title="Commercial Pilot Certificate (CPL) USA: Requirements, Cost & Career Options"
-      subtitle="Your comprehensive guide to obtaining a Commercial Pilot Certificate in the USA, covering FAA requirements, training costs, and diverse career opportunities."
+      subtitle="Obtaining a Commercial Pilot Certificate in the USA, covering FAA requirements, training costs, and diverse career opportunities."
       canonical="/us/guides/commercial-pilot-certificate-usa"
       metaDescription="Explore the FAA Commercial Pilot Certificate (CPL) in the USA. Learn about Part 61 and Part 141 requirements, training costs, knowledge tests, checkrides, and career paths including charter, instructing, and airline progression."
       faqSchema={[
@@ -100,34 +100,34 @@ const CommercialPilotCertUSA = () => {
               <h3>Part 61 vs. Part 141 CPL Requirements Comparison</h3>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <th className="px-4 py-2">Feature</th>
                     <th className="px-4 py-2">Part 61</th>
                     <th className="px-4 py-2">Part 141</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Total Flight Hours (Minimum)</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">250 hours</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">190 hours</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Structure</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Flexible, self-paced</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Structured curriculum, FAA-approved school</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Instructor</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Any authorized instructor</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Authorized instructor within approved school</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Oversight</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Less direct FAA oversight</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Regular FAA oversight and inspections</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Ideal for</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Self-starters, those with prior experience, flexible schedules</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Students in aviation programs, those seeking accelerated training</td>

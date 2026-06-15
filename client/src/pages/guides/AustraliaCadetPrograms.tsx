@@ -92,18 +92,18 @@ export default function AustraliaCadetPrograms() {
             <>
               <p>The cost of pilot training in Australia can vary significantly based on the chosen pathway, flight school, and individual pace of learning. While cadet programs often streamline this process, understanding the general cost breakdown is crucial.</p>
               <h4>Estimated Costs for Key Licenses and Ratings:</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>License/Rating</th><th>Estimated Cost (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">License/Rating</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Recreational Pilot License (RPL)</td><td>$10,000 - $15,000</td><td>Minimum 25 flight hours, limited privileges.</td></tr>
-                  <tr><td>Private Pilot License (PPL)</td><td>$15,000 - $25,000</td><td>Minimum 40 flight hours, cross-country flights permitted.</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>$80,000 - $140,000</td><td>Minimum 150-200 flight hours, allows for commercial operations.</td></tr>
-                  <tr><td>Instrument Rating (IR)</td><td>$9,000 - $15,000</td><td>Allows flight in instrument meteorological conditions.</td></tr>
-                  <tr><td>Multi-Engine Rating</td><td>$5,000 - $10,000</td><td>Add-on to CPL, for flying complex multi-engine aircraft.</td></tr>
-                  <tr><td>Flight Instructor Rating (FIR)</td><td>$5,000 - $10,000</td><td>Allows training new students, excellent for hour building.</td></tr>
-                  <tr><td>Airline Transport Pilot License (ATPL) Theory</td><td>$4,000 - $6,500</td><td>Required for airline captain operations.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Recreational Pilot License (RPL)</td><td className="px-4 py-3 text-white/80">$10,000 - $15,000</td><td className="px-4 py-3 text-white/80">Minimum 25 flight hours, limited privileges.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$15,000 - $25,000</td><td className="px-4 py-3 text-white/80">Minimum 40 flight hours, cross-country flights permitted.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">$80,000 - $140,000</td><td className="px-4 py-3 text-white/80">Minimum 150-200 flight hours, allows for commercial operations.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">$9,000 - $15,000</td><td className="px-4 py-3 text-white/80">Allows flight in instrument meteorological conditions.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating</td><td className="px-4 py-3 text-white/80">$5,000 - $10,000</td><td className="px-4 py-3 text-white/80">Add-on to CPL, for flying complex multi-engine aircraft.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Instructor Rating (FIR)</td><td className="px-4 py-3 text-white/80">$5,000 - $10,000</td><td className="px-4 py-3 text-white/80">Allows training new students, excellent for hour building.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Airline Transport Pilot License (ATPL) Theory</td><td className="px-4 py-3 text-white/80">$4,000 - $6,500</td><td className="px-4 py-3 text-white/80">Required for airline captain operations.</td></tr>
                 </tbody>
               </table>
               <ul>

@@ -71,51 +71,51 @@ export default function EuropeMilitaryToAirlines() {
           content: (
             <>
               <p>The financial and time investment for converting a military pilot license to an EASA ATPL can be substantial. It is crucial to budget effectively and plan for the duration of the process.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Category</th>
-                    <th>Estimated Cost (EUR)</th>
-                    <th>Estimated Timeline</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (EUR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Timeline</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>EASA Class 1 Medical</td>
-                    <td>€100 - €300</td>
-                    <td>1-2 days</td>
-                    <td>Initial examination</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">EASA Class 1 Medical</td>
+                    <td className="px-4 py-3 text-white/80">€100 - €300</td>
+                    <td className="px-4 py-3 text-white/80">1-2 days</td>
+                    <td className="px-4 py-3 text-white/80">Initial examination</td>
                   </tr>
-                  <tr>
-                    <td>English Language Proficiency</td>
-                    <td>€50 - €150</td>
-                    <td>1 day</td>
-                    <td>Assessment and endorsement</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">English Language Proficiency</td>
+                    <td className="px-4 py-3 text-white/80">€50 - €150</td>
+                    <td className="px-4 py-3 text-white/80">1 day</td>
+                    <td className="px-4 py-3 text-white/80">Assessment and endorsement</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Theory Course & Exams</td>
-                    <td>€3,000 - €7,000</td>
-                    <td>6 - 12 months</td>
-                    <td>Distance learning or intensive course, includes exam fees</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Theory Course & Exams</td>
+                    <td className="px-4 py-3 text-white/80">€3,000 - €7,000</td>
+                    <td className="px-4 py-3 text-white/80">6 - 12 months</td>
+                    <td className="px-4 py-3 text-white/80">Distance learning or intensive course, includes exam fees</td>
                   </tr>
-                  <tr>
-                    <td>Conversion Flight Training (CPL/IR/MEP)</td>
-                    <td>€5,000 - €10,000</td>
-                    <td>2 - 4 weeks</td>
-                    <td>10-15 hours flight training + skill tests</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Conversion Flight Training (CPL/IR/MEP)</td>
+                    <td className="px-4 py-3 text-white/80">€5,000 - €10,000</td>
+                    <td className="px-4 py-3 text-white/80">2 - 4 weeks</td>
+                    <td className="px-4 py-3 text-white/80">10-15 hours flight training + skill tests</td>
                   </tr>
-                  <tr>
-                    <td>Administrative Fees (NAA)</td>
-                    <td>€200 - €500</td>
-                    <td>Variable</td>
-                    <td>License application and issue fees</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Administrative Fees (NAA)</td>
+                    <td className="px-4 py-3 text-white/80">€200 - €500</td>
+                    <td className="px-4 py-3 text-white/80">Variable</td>
+                    <td className="px-4 py-3 text-white/80">License application and issue fees</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Cost</strong></td>
-                    <td><strong>€8,350 - €17,950</strong></td>
-                    <td><strong>7 - 18 months</strong></td>
-                    <td>Excludes accommodation, travel, and living expenses</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>€8,350 - €17,950</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>7 - 18 months</strong></td>
+                    <td className="px-4 py-3 text-white/80">Excludes accommodation, travel, and living expenses</td>
                   </tr>
                 </tbody>
               </table>

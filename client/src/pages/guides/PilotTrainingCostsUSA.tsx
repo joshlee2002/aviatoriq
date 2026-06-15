@@ -50,7 +50,7 @@ export default function PilotTrainingCostsUSA() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Certificate / Rating</th>
                       <th className="px-4 py-3 font-semibold">FAA Min Hours (Pt 61 / Pt 141)</th>
                       <th className="px-4 py-3 font-semibold">Realistic Hours</th>
@@ -121,7 +121,7 @@ export default function PilotTrainingCostsUSA() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">School / Route</th>
                       <th className="px-4 py-3 font-semibold">Type</th>
                       <th className="px-4 py-3 font-semibold">Total Cost (2026)</th>
@@ -193,7 +193,7 @@ export default function PilotTrainingCostsUSA() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Hidden Cost</th>
                       <th className="px-4 py-3 font-semibold">Typical Amount</th>
                       <th className="px-4 py-3 font-semibold">Notes</th>
@@ -262,7 +262,7 @@ export default function PilotTrainingCostsUSA() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Finance Option</th>
                       <th className="px-4 py-3 font-semibold">Who Qualifies</th>
                       <th className="px-4 py-3 font-semibold">Typical APR</th>
@@ -327,7 +327,7 @@ export default function PilotTrainingCostsUSA() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Career Stage</th>
                       <th className="px-4 py-3 font-semibold">Typical Timeline</th>
                       <th className="px-4 py-3 font-semibold">Annual Earnings</th>
@@ -386,7 +386,7 @@ export default function PilotTrainingCostsUSA() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Programme</th>
                       <th className="px-4 py-3 font-semibold">Destination Airline</th>
                       <th className="px-4 py-3 font-semibold">Financial Support</th>

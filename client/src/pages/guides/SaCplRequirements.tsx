@@ -37,49 +37,49 @@ export default function SaCplRequirements() {
                 <li><strong>Theoretical Examinations:</strong> Successful completion of the SACAA Commercial theoretical examinations is a critical prerequisite. These exams cover a broad spectrum of aviation subjects, designed to ensure a deep understanding of commercial flight operations.</li>
               </ul>
               <p>The theoretical examinations typically encompass the following subjects:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Subject Area</th>
-                    <th>Description</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Subject Area</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Description</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Human Performance</td>
-                    <td>Understanding human factors in aviation, including psychology, physiology, and decision-making.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Human Performance</td>
+                    <td className="px-4 py-3 text-white/80">Understanding human factors in aviation, including psychology, physiology, and decision-making.</td>
                   </tr>
-                  <tr>
-                    <td>Meteorology</td>
-                    <td>In-depth knowledge of weather phenomena, forecasting, and their impact on flight operations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Meteorology</td>
+                    <td className="px-4 py-3 text-white/80">In-depth knowledge of weather phenomena, forecasting, and their impact on flight operations.</td>
                   </tr>
-                  <tr>
-                    <td>Aircraft Technical and General</td>
-                    <td>Comprehensive understanding of aircraft systems, engines, and general operational principles.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Aircraft Technical and General</td>
+                    <td className="px-4 py-3 text-white/80">Comprehensive understanding of aircraft systems, engines, and general operational principles.</td>
                   </tr>
-                  <tr>
-                    <td>Radio Aids</td>
-                    <td>Knowledge of radio navigation systems and communication procedures.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Radio Aids</td>
+                    <td className="px-4 py-3 text-white/80">Knowledge of radio navigation systems and communication procedures.</td>
                   </tr>
-                  <tr>
-                    <td>Instruments</td>
-                    <td>Detailed understanding of flight instruments and their use in various flight conditions.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instruments</td>
+                    <td className="px-4 py-3 text-white/80">Detailed understanding of flight instruments and their use in various flight conditions.</td>
                   </tr>
-                  <tr>
-                    <td>Navigation</td>
-                    <td>Advanced navigation techniques, including dead reckoning, radio navigation, and flight planning.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Navigation</td>
+                    <td className="px-4 py-3 text-white/80">Advanced navigation techniques, including dead reckoning, radio navigation, and flight planning.</td>
                   </tr>
-                  <tr>
-                    <td>Air Law</td>
-                    <td>Thorough knowledge of national and international aviation regulations, rules of the air, and licensing requirements.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Air Law</td>
+                    <td className="px-4 py-3 text-white/80">Thorough knowledge of national and international aviation regulations, rules of the air, and licensing requirements.</td>
                   </tr>
-                  <tr>
-                    <td>Flight Planning</td>
-                    <td>Principles of flight planning, performance calculations, and operational procedures.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Planning</td>
+                    <td className="px-4 py-3 text-white/80">Principles of flight planning, performance calculations, and operational procedures.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating Examination</td>
-                    <td>Specific examination for pilots seeking an Instrument Rating, covering IFR procedures and regulations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating Examination</td>
+                    <td className="px-4 py-3 text-white/80">Specific examination for pilots seeking an Instrument Rating, covering IFR procedures and regulations.</td>
                   </tr>
                 </tbody>
               </table>
@@ -129,54 +129,54 @@ export default function SaCplRequirements() {
             <>
               <p>The cost of obtaining a Commercial Pilot License in South Africa can vary significantly based on the flight school, aircraft type used for training, and individual student aptitude. However, a general estimate for 2026 indicates a substantial investment. These figures are approximate and subject to change, so prospective students should always obtain detailed quotes from their chosen flight training organizations.</p>
               <p>Below is an estimated breakdown of costs in South African Rand (ZAR) for a comprehensive CPL program, including prerequisite licenses and ratings:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Training Phase</th>
-                    <th>Estimated Cost (ZAR)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (ZAR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot License (PPL)</td>
-                    <td>R 120,000 - R 160,000</td>
-                    <td>Includes flight hours, ground school, exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">R 120,000 - R 160,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes flight hours, ground school, exams.</td>
                   </tr>
-                  <tr>
-                    <td>Night Rating</td>
-                    <td>R 15,000 - R 25,000</td>
-                    <td>Additional hours for night flying proficiency.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Night Rating</td>
+                    <td className="px-4 py-3 text-white/80">R 15,000 - R 25,000</td>
+                    <td className="px-4 py-3 text-white/80">Additional hours for night flying proficiency.</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Ground School & Exams</td>
-                    <td>R 30,000 - R 50,000</td>
-                    <td>Theoretical instruction and SACAA exam fees.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Ground School & Exams</td>
+                    <td className="px-4 py-3 text-white/80">R 30,000 - R 50,000</td>
+                    <td className="px-4 py-3 text-white/80">Theoretical instruction and SACAA exam fees.</td>
                   </tr>
-                  <tr>
-                    <td>Hour Building (to 200 hours total)</td>
-                    <td>R 200,000 - R 300,000</td>
-                    <td>Cost of accumulating required flight hours.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Hour Building (to 200 hours total)</td>
+                    <td className="px-4 py-3 text-white/80">R 200,000 - R 300,000</td>
+                    <td className="px-4 py-3 text-white/80">Cost of accumulating required flight hours.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>R 80,000 - R 120,000</td>
-                    <td>Includes simulator and aircraft instrument flight time.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">R 80,000 - R 120,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes simulator and aircraft instrument flight time.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (ME)</td>
-                    <td>R 70,000 - R 100,000</td>
-                    <td>Optional, but highly recommended for career progression.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
+                    <td className="px-4 py-3 text-white/80">R 70,000 - R 100,000</td>
+                    <td className="px-4 py-3 text-white/80">Optional, but highly recommended for career progression.</td>
                   </tr>
-                  <tr>
-                    <td>CPL Skill Test & Examiner Fees</td>
-                    <td>R 10,000 - R 20,000</td>
-                    <td>Final practical flight test and associated fees.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CPL Skill Test & Examiner Fees</td>
+                    <td className="px-4 py-3 text-white/80">R 10,000 - R 20,000</td>
+                    <td className="px-4 py-3 text-white/80">Final practical flight test and associated fees.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated CPL Cost</strong></td>
-                    <td><strong>R 525,000 - R 775,000</strong></td>
-                    <td>Excludes medicals, study materials, accommodation, and personal expenses.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated CPL Cost</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>R 525,000 - R 775,000</strong></td>
+                    <td className="px-4 py-3 text-white/80">Excludes medicals, study materials, accommodation, and personal expenses.</td>
                   </tr>
                 </tbody>
               </table>

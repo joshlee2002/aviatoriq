@@ -29,16 +29,16 @@ export default function FaaAtpRequirements() {
           content: (
             <>
               <p>To embark on the path to ATP certification, candidates must meet several fundamental eligibility criteria established by the Federal Aviation Administration (FAA). These requirements ensure that only individuals with the requisite maturity, language proficiency, and foundational pilot certificates are considered for this advanced credential.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Requirement</th><th>Details</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Age</td><td>Minimum 23 years old for an unrestricted ATP. For a Restricted ATP (R-ATP), the minimum age is 21.</td></tr>
-                  <tr><td>Language Proficiency</td><td>Must be able to read, speak, write, and understand the English language.</td></tr>
-                  <tr><td>Moral Character</td><td>Must be of good moral character.</td></tr>
-                  <tr><td>Pilot Certificate</td><td>Hold a Commercial Pilot Certificate with an Instrument Rating, or a foreign equivalent.</td></tr>
-                  <tr><td>Medical Certificate</td><td>Possess a current FAA First-Class Medical Certificate.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Age</td><td className="px-4 py-3 text-white/80">Minimum 23 years old for an unrestricted ATP. For a Restricted ATP (R-ATP), the minimum age is 21.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Language Proficiency</td><td className="px-4 py-3 text-white/80">Must be able to read, speak, write, and understand the English language.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Moral Character</td><td className="px-4 py-3 text-white/80">Must be of good moral character.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Pilot Certificate</td><td className="px-4 py-3 text-white/80">Hold a Commercial Pilot Certificate with an Instrument Rating, or a foreign equivalent.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical Certificate</td><td className="px-4 py-3 text-white/80">Possess a current FAA First-Class Medical Certificate.</td></tr>
                 </tbody>
               </table>
               <p>The distinction between an unrestricted ATP and a Restricted ATP (R-ATP) is particularly significant for aspiring airline pilots. The R-ATP allows pilots to serve as First Officers in Part 121 operations with reduced flight hour requirements, primarily benefiting graduates of specific aviation degree programs or former military pilots. However, certain limitations apply to R-ATP holders, particularly regarding acting as PIC in Part 121 operations until the full ATP hour requirements are met.</p>
@@ -50,17 +50,17 @@ export default function FaaAtpRequirements() {
           content: (
             <>
               <p>The accumulation of flight hours is a cornerstone of ATP certification, demonstrating a pilot's practical experience across diverse flight conditions and aircraft types. For an unrestricted ATP certificate, a minimum of 1,500 hours of total flight time as a pilot is required. This total must include specific hour breakdowns to ensure comprehensive experience.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Experience Type</th><th>Minimum Hours Required</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Experience Type</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Hours Required</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Total Flight Time</td><td>1,500 hours</td><td>As a pilot.</td></tr>
-                  <tr><td>Cross-Country Flight Time</td><td>500 hours</td><td></td></tr>
-                  <tr><td>Night Flight Time</td><td>100 hours</td><td></td></tr>
-                  <tr><td>PIC Time</td><td>250 hours</td><td>As Pilot in Command, or SIC performing PIC duties under supervision. Includes 100 hours cross-country and 25 hours night.</td></tr>
-                  <tr><td>Instrument Flight Time</td><td>75 hours</td><td>In actual or simulated instrument conditions.</td></tr>
-                  <tr><td>Multi-Engine (for ME ATP)</td><td>50 hours</td><td>In the class of airplane for the rating sought. Up to 25 hours can be in a full flight simulator.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Total Flight Time</td><td className="px-4 py-3 text-white/80">1,500 hours</td><td className="px-4 py-3 text-white/80">As a pilot.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Cross-Country Flight Time</td><td className="px-4 py-3 text-white/80">500 hours</td><td className="px-4 py-3 text-white/80"></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Night Flight Time</td><td className="px-4 py-3 text-white/80">100 hours</td><td className="px-4 py-3 text-white/80"></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">PIC Time</td><td className="px-4 py-3 text-white/80">250 hours</td><td className="px-4 py-3 text-white/80">As Pilot in Command, or SIC performing PIC duties under supervision. Includes 100 hours cross-country and 25 hours night.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Flight Time</td><td className="px-4 py-3 text-white/80">75 hours</td><td className="px-4 py-3 text-white/80">In actual or simulated instrument conditions.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine (for ME ATP)</td><td className="px-4 py-3 text-white/80">50 hours</td><td className="px-4 py-3 text-white/80">In the class of airplane for the rating sought. Up to 25 hours can be in a full flight simulator.</td></tr>
                 </tbody>
               </table>
               <p>It is important to note that a maximum of 100 hours of the total aeronautical experience requirements may be obtained in a full flight simulator or flight training device. Careful logging and verification of flight hours are paramount throughout this process.</p>
@@ -72,14 +72,14 @@ export default function FaaAtpRequirements() {
           content: (
             <>
               <p>The R-ATP provides an accelerated pathway for eligible candidates to enter airline operations as First Officers. This provision addresses the industry's need for pilots while maintaining high safety standards. The reduced hour requirements are contingent upon specific educational or military backgrounds.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Eligibility</th><th>Minimum Total Flight Hours</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Eligibility</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Total Flight Hours</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Graduates of a 4-year aviation bachelor's degree program from an FAA-approved institution</td><td>1,000 hours</td></tr>
-                  <tr><td>Graduates of a 2-year aviation associate's degree program from an FAA-approved institution</td><td>1,250 hours</td></tr>
-                  <tr><td>Former military pilots</td><td>750 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Graduates of a 4-year aviation bachelor's degree program from an FAA-approved institution</td><td className="px-4 py-3 text-white/80">1,000 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Graduates of a 2-year aviation associate's degree program from an FAA-approved institution</td><td className="px-4 py-3 text-white/80">1,250 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Former military pilots</td><td className="px-4 py-3 text-white/80">750 hours</td></tr>
                 </tbody>
               </table>
               <p>While the R-ATP allows for earlier entry into the airline cockpit, pilots operating under an R-ATP certificate are subject to certain limitations. They must accumulate the remaining flight hours to meet the unrestricted ATP requirements before they can act as a Pilot in Command in Part 121 operations. This pathway is a strategic option for many aspiring airline pilots, offering a structured route to professional aviation.</p>
@@ -132,15 +132,15 @@ export default function FaaAtpRequirements() {
               <p>Part 61 is less structured and offers greater flexibility. It allows for self-paced training with an authorized instructor, making it suitable for individuals who may have irregular schedules or prefer a more customized learning experience. While the total flight hour requirements remain the same as outlined in 14 CFR §61.159, the specific curriculum and sequence of training are determined by the instructor and student. This pathway often appeals to pilots who are building hours through various means, such as flight instructing or other commercial operations.</p>
               <h3>Part 141 Training</h3>
               <p>Part 141 training is conducted at FAA-approved flight schools with a structured curriculum, strict attendance requirements, and defined course outlines. The primary advantage of Part 141 programs, especially for aspiring airline pilots, is the potential for reduced flight hour requirements for certain certificates, including the R-ATP. For example, graduates of a Part 141 approved aviation degree program can qualify for an R-ATP with fewer than 1,500 hours. These programs are often more intensive and designed to prepare students for a career in aviation efficiently.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Feature</th><th>Part 61</th><th>Part 141</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 61</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 141</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Structure</td><td>Flexible, self-paced</td><td>Structured curriculum, FAA-approved</td></tr>
-                  <tr><td>Flight Hour Requirements</td><td>Standard 1,500 hours for ATP</td><td>Reduced hours for R-ATP (e.g., 1,000 or 1,250)</td></tr>
-                  <tr><td>Instructor Oversight</td><td>Individual instructor</td><td>Approved flight school with standardized training</td></tr>
-                  <tr><td>Suitability</td><td>Irregular schedules, customized learning</td><td>Career-focused, accelerated programs</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Structure</td><td className="px-4 py-3 text-white/80">Flexible, self-paced</td><td className="px-4 py-3 text-white/80">Structured curriculum, FAA-approved</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hour Requirements</td><td className="px-4 py-3 text-white/80">Standard 1,500 hours for ATP</td><td className="px-4 py-3 text-white/80">Reduced hours for R-ATP (e.g., 1,000 or 1,250)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instructor Oversight</td><td className="px-4 py-3 text-white/80">Individual instructor</td><td className="px-4 py-3 text-white/80">Approved flight school with standardized training</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Suitability</td><td className="px-4 py-3 text-white/80">Irregular schedules, customized learning</td><td className="px-4 py-3 text-white/80">Career-focused, accelerated programs</td></tr>
                 </tbody>
               </table>
               <p>Choosing between Part 61 and Part 141 depends on individual circumstances, career goals, and learning preferences. Many aspiring airline pilots opt for Part 141 programs due to the R-ATP benefits and the structured environment that mirrors airline training.</p>
@@ -152,17 +152,17 @@ export default function FaaAtpRequirements() {
           content: (
             <>
               <p>The financial investment required to obtain an ATP certificate can be substantial, encompassing flight training, ground school, examinations, and the mandatory ATP CTP. While exact figures can vary based on location, training provider, and individual progress, here's an estimated breakdown for 2026:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Expense Category</th><th>Estimated Cost (USD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>ATP CTP Course</td><td>$4,200 - $5,000</td><td>Mandatory for multi-engine ATP knowledge test.</td></tr>
-                  <tr><td>ATP Knowledge Test Fee</td><td>$175 - $200</td><td>Administered at testing centers.</td></tr>
-                  <tr><td>ATP Practical Test (DPE Fee)</td><td>$800 - $1,500</td><td>Varies by examiner and region.</td></tr>
-                  <tr><td>Flight Training (if needed)</td><td>Variable</td><td>Depends on current flight hours and aircraft rental rates.</td></tr>
-                  <tr><td>Study Materials/Resources</td><td>$200 - $500</td><td>Books, online courses, test prep software.</td></tr>
-                  <tr><td>Medical Certificate</td><td>$100 - $200</td><td>First-Class Medical.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATP CTP Course</td><td className="px-4 py-3 text-white/80">$4,200 - $5,000</td><td className="px-4 py-3 text-white/80">Mandatory for multi-engine ATP knowledge test.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATP Knowledge Test Fee</td><td className="px-4 py-3 text-white/80">$175 - $200</td><td className="px-4 py-3 text-white/80">Administered at testing centers.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATP Practical Test (DPE Fee)</td><td className="px-4 py-3 text-white/80">$800 - $1,500</td><td className="px-4 py-3 text-white/80">Varies by examiner and region.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Training (if needed)</td><td className="px-4 py-3 text-white/80">Variable</td><td className="px-4 py-3 text-white/80">Depends on current flight hours and aircraft rental rates.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Study Materials/Resources</td><td className="px-4 py-3 text-white/80">$200 - $500</td><td className="px-4 py-3 text-white/80">Books, online courses, test prep software.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical Certificate</td><td className="px-4 py-3 text-white/80">$100 - $200</td><td className="px-4 py-3 text-white/80">First-Class Medical.</td></tr>
                 </tbody>
               </table>
               <p>It's important to consider the overall cost of pilot training from zero experience to ATP, which can range from $70,000 to $110,000 or more, depending on the chosen pathway (e.g., integrated programs vs. modular training). Many flight schools offer financing options, and scholarships are available from various aviation organizations to help offset these costs.</p>

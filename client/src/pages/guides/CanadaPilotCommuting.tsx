@@ -52,29 +52,29 @@ export default function CanadaPilotCommuting() {
               <p>
                 It is crucial for pilots to understand that time spent commuting is generally not considered part of the flight duty period or rest period under TC regulations, unless the airline specifically requires the travel for positioning. This distinction places the onus on the pilot to manage their personal travel time to ensure they are adequately rested and fit for duty upon arrival at their base. Failure to do so can lead to fatigue, compromise safety, and result in disciplinary action.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Regulation</th>
-                    <th>Key Provision</th>
-                    <th>Impact on Commuting Pilots</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Regulation</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Provision</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Impact on Commuting Pilots</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>CAR 702.92 (Maximum Flight Time)</td>
-                    <td>1,200 hours in any 365 consecutive days</td>
-                    <td>Influences long-term scheduling and base assignments.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CAR 702.92 (Maximum Flight Time)</td>
+                    <td className="px-4 py-3 text-white/80">1,200 hours in any 365 consecutive days</td>
+                    <td className="px-4 py-3 text-white/80">Influences long-term scheduling and base assignments.</td>
                   </tr>
-                  <tr>
-                    <td>CAR 702.93 (Maximum FDP & Rest)</td>
-                    <td>Max 14 consecutive hours FDP; minimum rest period after FDP. Extensions possible with internal rest.</td>
-                    <td>Directly impacts daily travel planning to ensure adequate rest before and after duty.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CAR 702.93 (Maximum FDP & Rest)</td>
+                    <td className="px-4 py-3 text-white/80">Max 14 consecutive hours FDP; minimum rest period after FDP. Extensions possible with internal rest.</td>
+                    <td className="px-4 py-3 text-white/80">Directly impacts daily travel planning to ensure adequate rest before and after duty.</td>
                   </tr>
-                  <tr>
-                    <td>CAR 702.97 (Flight Crew Member Positioning)</td>
-                    <td>Additional rest for required positioning travel exceeding FDP.</td>
-                    <td>Provides compensatory rest for company-mandated travel, but not for personal commuting.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CAR 702.97 (Flight Crew Member Positioning)</td>
+                    <td className="px-4 py-3 text-white/80">Additional rest for required positioning travel exceeding FDP.</td>
+                    <td className="px-4 py-3 text-white/80">Provides compensatory rest for company-mandated travel, but not for personal commuting.</td>
                   </tr>
                 </tbody>
               </table>
@@ -111,39 +111,39 @@ export default function CanadaPilotCommuting() {
               <p>
                 This policy underscores the need for proactive and responsible commuting practices. While airlines may offer jumpseat agreements or non-revenue travel benefits, these are typically space-available and cannot be relied upon for critical commutes. Pilots must plan for the possibility of commercial travel or overnight stays to ensure they are at their base on time and well-rested.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Policy Aspect</th>
-                    <th>Air Canada Commuter Policy (LoU 47)</th>
-                    <th>Implication for Pilots</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Policy Aspect</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Air Canada Commuter Policy (LoU 47)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Implication for Pilots</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Cost Responsibility</td>
-                    <td>Sole responsibility of the Commuter.</td>
-                    <td>Budget for travel, accommodation, and potential last-minute commercial flights.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Cost Responsibility</td>
+                    <td className="px-4 py-3 text-white/80">Sole responsibility of the Commuter.</td>
+                    <td className="px-4 py-3 text-white/80">Budget for travel, accommodation, and potential last-minute commercial flights.</td>
                   </tr>
-                  <tr>
-                    <td>Reporting for Duty</td>
-                    <td>Expected as scheduled; exceptions for unforeseen irregular operations if conditions met.</td>
-                    <td>Plan for early arrival and backup options to mitigate risks.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Reporting for Duty</td>
+                    <td className="px-4 py-3 text-white/80">Expected as scheduled; exceptions for unforeseen irregular operations if conditions met.</td>
+                    <td className="px-4 py-3 text-white/80">Plan for early arrival and backup options to mitigate risks.</td>
                   </tr>
-                  <tr>
-                    <td>Backup Flights</td>
-                    <td>One original (2 hrs prior) and one backup (30 mins prior) flight option required.</td>
-                    <td>Crucial for contingency planning and minimizing risk of missed duty.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Backup Flights</td>
+                    <td className="px-4 py-3 text-white/80">One original (2 hrs prior) and one backup (30 mins prior) flight option required.</td>
+                    <td className="px-4 py-3 text-white/80">Crucial for contingency planning and minimizing risk of missed duty.</td>
                   </tr>
-                  <tr>
-                    <td>Good Judgment</td>
-                    <td>Exercise caution with weather and oversold flights.</td>
-                    <td>Prioritize safety and reliability over convenience.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Good Judgment</td>
+                    <td className="px-4 py-3 text-white/80">Exercise caution with weather and oversold flights.</td>
+                    <td className="px-4 py-3 text-white/80">Prioritize safety and reliability over convenience.</td>
                   </tr>
-                  <tr>
-                    <td>Non-Compliance</td>
-                    <td>Subject to disciplinary action or CAMS.</td>
-                    <td>Strict adherence to policy is mandatory.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Non-Compliance</td>
+                    <td className="px-4 py-3 text-white/80">Subject to disciplinary action or CAMS.</td>
+                    <td className="px-4 py-3 text-white/80">Strict adherence to policy is mandatory.</td>
                   </tr>
                 </tbody>
               </table>
@@ -213,44 +213,44 @@ export default function CanadaPilotCommuting() {
               <p>
                 Consider the following hypothetical monthly commuting budget for a pilot commuting from Calgary to Toronto:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Expense Category</th>
-                    <th>Estimated Monthly Cost (CAD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Monthly Cost (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Commercial Airfare (Backup)</td>
-                    <td>400 - 1000</td>
-                    <td>Assumes 1-2 commercial tickets per month for backup.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Airfare (Backup)</td>
+                    <td className="px-4 py-3 text-white/80">400 - 1000</td>
+                    <td className="px-4 py-3 text-white/80">Assumes 1-2 commercial tickets per month for backup.</td>
                   </tr>
-                  <tr>
-                    <td>Airport Parking</td>
-                    <td>200 - 400</td>
-                    <td>Based on 4-6 days of parking per month.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Airport Parking</td>
+                    <td className="px-4 py-3 text-white/80">200 - 400</td>
+                    <td className="px-4 py-3 text-white/80">Based on 4-6 days of parking per month.</td>
                   </tr>
-                  <tr>
-                    <td>Ground Transport (Home-Airport)</td>
-                    <td>100 - 200</td>
-                    <td>Taxis/Ride-share or fuel costs.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground Transport (Home-Airport)</td>
+                    <td className="px-4 py-3 text-white/80">100 - 200</td>
+                    <td className="px-4 py-3 text-white/80">Taxis/Ride-share or fuel costs.</td>
                   </tr>
-                  <tr>
-                    <td>Crashpad/Hotel</td>
-                    <td>300 - 600</td>
-                    <td>Crashpad is more economical than hotels.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Crashpad/Hotel</td>
+                    <td className="px-4 py-3 text-white/80">300 - 600</td>
+                    <td className="px-4 py-3 text-white/80">Crashpad is more economical than hotels.</td>
                   </tr>
-                  <tr>
-                    <td>Meals & Incidentals</td>
-                    <td>150 - 300</td>
-                    <td>Food, coffee, etc., during travel.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Meals & Incidentals</td>
+                    <td className="px-4 py-3 text-white/80">150 - 300</td>
+                    <td className="px-4 py-3 text-white/80">Food, coffee, etc., during travel.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Monthly Cost</strong></td>
-                    <td><strong>1150 - 2500+</strong></td>
-                    <td>Varies significantly based on choices and unforeseen events.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Monthly Cost</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>1150 - 2500+</strong></td>
+                    <td className="px-4 py-3 text-white/80">Varies significantly based on choices and unforeseen events.</td>
                   </tr>
                 </tbody>
               </table>

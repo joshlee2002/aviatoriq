@@ -22,34 +22,34 @@ export default function AustraliaPilotTaxes() {
               <p>As a pilot in Australia, understanding your taxable income and various allowances is the first step towards effective tax management. The Australian Taxation Office (ATO) mandates that all income received during the financial year must be declared. This includes your salary and wages, any cash or bonus payments, and compensation or insurance payments, such as those from income protection policies designed to replace lost salary and wages. It is crucial to distinguish between taxable allowances and non-taxable reimbursements to accurately report your earnings.</p>
               <p>Allowances are amounts paid by your employer for specific purposes, such as covering work expenses, compensating for challenging working conditions (e.g., night-time operations), or acknowledging special skills (e.g., first aid qualifications). All allowances reported on your income statement or payment summary must be included in your tax return. However, some allowances, like certain travel or overtime meal allowances, might not appear on your income statement but are listed on your payslip. These do not need to be declared as income unless you intend to claim a deduction for related expenses. If you spend such an allowance on deductible work expenses, you must declare the allowance as income to claim the deduction, ensuring you keep meticulous records of your expenditures.</p>
               <h3>Key Distinctions: Allowances vs. Reimbursements</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Feature</th>
-                    <th>Allowance</th>
-                    <th>Reimbursement</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Allowance</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Reimbursement</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Amount paid by employer for specific purposes (expenses, conditions, skills)</td>
-                    <td>Repayment by employer for exact amount of expense incurred by employee</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Definition</td>
+                    <td className="px-4 py-3 text-white/80">Amount paid by employer for specific purposes (expenses, conditions, skills)</td>
+                    <td className="px-4 py-3 text-white/80">Repayment by employer for exact amount of expense incurred by employee</td>
                   </tr>
-                  <tr>
-                    <td>Taxable Income</td>
-                    <td>Generally taxable if on income statement; taxable if claiming deduction for related expenses</td>
-                    <td>Not taxable income</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Taxable Income</td>
+                    <td className="px-4 py-3 text-white/80">Generally taxable if on income statement; taxable if claiming deduction for related expenses</td>
+                    <td className="px-4 py-3 text-white/80">Not taxable income</td>
                   </tr>
-                  <tr>
-                    <td>Deductibility of Expenses</td>
-                    <td>Expenses may be deductible if allowance is declared as income</td>
-                    <td>Expenses not deductible as employer has repaid them</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Deductibility of Expenses</td>
+                    <td className="px-4 py-3 text-white/80">Expenses may be deductible if allowance is declared as income</td>
+                    <td className="px-4 py-3 text-white/80">Expenses not deductible as employer has repaid them</td>
                   </tr>
-                  <tr>
-                    <td>Record Keeping</td>
-                    <td>Required if claiming deduction for related expenses</td>
-                    <td>Not required for tax purposes as no deduction is claimed</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Record Keeping</td>
+                    <td className="px-4 py-3 text-white/80">Required if claiming deduction for related expenses</td>
+                    <td className="px-4 py-3 text-white/80">Not required for tax purposes as no deduction is claimed</td>
                   </tr>
                 </tbody>
               </table>

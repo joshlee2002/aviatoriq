@@ -5,7 +5,7 @@ export default function CanadaCadetPrograms() {
   return (
     <GuideLayout
       title="Navigating Canada's Elite Pilot Cadet Programs: Your 2026 Guide"
-      subtitle="A comprehensive guide to Canada's leading airline cadet programs, Transport Canada regulations, and financial planning for aspiring aviators in 2026."
+      subtitle="Canada's leading airline cadet programs, Transport Canada regulations, and financial planning for aspiring aviators in 2026."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -56,49 +56,49 @@ export default function CanadaCadetPrograms() {
             <>
               <p>The investment required for pilot training in Canada is substantial, but various financing options exist. Understanding the breakdown of costs is crucial for effective financial planning. While cadet programs may offer some financial advantages or loan guarantees, it's important to be aware of the general expenses involved.</p>
               <p>The following table provides estimated costs for various licenses and ratings in Canada for 2026. These figures are approximate and can vary significantly based on the flight school, location, aircraft type, and individual progress.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>License/Rating</th>
-                    <th>Estimated Cost (CAD)</th>
-                    <th>Typical Duration</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">License/Rating</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Duration</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot License (PPL)</td>
-                    <td>$15,000 - $20,000</td>
-                    <td>3-6 months (full-time)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">$15,000 - $20,000</td>
+                    <td className="px-4 py-3 text-white/80">3-6 months (full-time)</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot License (CPL)</td>
-                    <td>$30,000 - $45,000 (additional to PPL)</td>
-                    <td>6-12 months (full-time)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">$30,000 - $45,000 (additional to PPL)</td>
+                    <td className="px-4 py-3 text-white/80">6-12 months (full-time)</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (MER)</td>
-                    <td>$5,000 - $8,000</td>
-                    <td>1-2 weeks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (MER)</td>
+                    <td className="px-4 py-3 text-white/80">$5,000 - $8,000</td>
+                    <td className="px-4 py-3 text-white/80">1-2 weeks</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>$15,000 - $25,000</td>
-                    <td>2-4 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">$15,000 - $25,000</td>
+                    <td className="px-4 py-3 text-white/80">2-4 months</td>
                   </tr>
-                  <tr>
-                    <td>Integrated ATPL (Cadet Programs)</td>
-                    <td>$80,000 - $120,000+</td>
-                    <td>18-24 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Integrated ATPL (Cadet Programs)</td>
+                    <td className="px-4 py-3 text-white/80">$80,000 - $120,000+</td>
+                    <td className="px-4 py-3 text-white/80">18-24 months</td>
                   </tr>
-                  <tr>
-                    <td>Medical Certificates (Cat 1)</td>
-                    <td>$150 - $300 (initial, recurring annually)</td>
-                    <td>N/A</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Medical Certificates (Cat 1)</td>
+                    <td className="px-4 py-3 text-white/80">$150 - $300 (initial, recurring annually)</td>
+                    <td className="px-4 py-3 text-white/80">N/A</td>
                   </tr>
-                  <tr>
-                    <td>Examiner Fees & Study Materials</td>
-                    <td>$2,000 - $5,000</td>
-                    <td>N/A</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Examiner Fees & Study Materials</td>
+                    <td className="px-4 py-3 text-white/80">$2,000 - $5,000</td>
+                    <td className="px-4 py-3 text-white/80">N/A</td>
                   </tr>
                 </tbody>
               </table>

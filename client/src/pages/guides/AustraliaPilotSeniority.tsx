@@ -59,39 +59,39 @@ export default function AustraliaPilotSeniority() {
             <>
               <p>In 2026, compensation at major Australian airlines is deeply intertwined with seniority. While base pay increases with years of service, the real financial leaps occur when seniority allows for upgrades in aircraft type or seat.</p>
               <p><strong>Qantas Airways (2026 Estimates)</strong><br/>Qantas offers a highly structured compensation model based on experience, seniority, and route complexity.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Position</th>
-                    <th>Aircraft Type</th>
-                    <th>Estimated Annual Salary (AUD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Position</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Aircraft Type</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (AUD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Junior First Officer</td>
-                    <td>Narrow-body (e.g., B737)</td>
-                    <td>$180,000 - $230,000</td>
-                    <td>Entry-level, domestic/regional routes.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Junior First Officer</td>
+                    <td className="px-4 py-3 text-white/80">Narrow-body (e.g., B737)</td>
+                    <td className="px-4 py-3 text-white/80">$180,000 - $230,000</td>
+                    <td className="px-4 py-3 text-white/80">Entry-level, domestic/regional routes.</td>
                   </tr>
-                  <tr>
-                    <td>Senior First Officer</td>
-                    <td>Wide-body (e.g., B787, A380)</td>
-                    <td>$250,000 - $300,000</td>
-                    <td>Includes allowances for night stops and international flying.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Senior First Officer</td>
+                    <td className="px-4 py-3 text-white/80">Wide-body (e.g., B787, A380)</td>
+                    <td className="px-4 py-3 text-white/80">$250,000 - $300,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes allowances for night stops and international flying.</td>
                   </tr>
-                  <tr>
-                    <td>Junior Captain</td>
-                    <td>Narrow-body (e.g., B737)</td>
-                    <td>$320,000 - $380,000</td>
-                    <td>Command of domestic and short-haul international routes.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Junior Captain</td>
+                    <td className="px-4 py-3 text-white/80">Narrow-body (e.g., B737)</td>
+                    <td className="px-4 py-3 text-white/80">$320,000 - $380,000</td>
+                    <td className="px-4 py-3 text-white/80">Command of domestic and short-haul international routes.</td>
                   </tr>
-                  <tr>
-                    <td>Senior Captain</td>
-                    <td>Wide-body (e.g., B787, A380)</td>
-                    <td>$420,000 - $520,000+</td>
-                    <td>Top of the seniority list, commanding flagship international routes.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Senior Captain</td>
+                    <td className="px-4 py-3 text-white/80">Wide-body (e.g., B787, A380)</td>
+                    <td className="px-4 py-3 text-white/80">$420,000 - $520,000+</td>
+                    <td className="px-4 py-3 text-white/80">Top of the seniority list, commanding flagship international routes.</td>
                   </tr>
                 </tbody>
               </table>

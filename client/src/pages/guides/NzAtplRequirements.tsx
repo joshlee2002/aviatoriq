@@ -65,37 +65,37 @@ export default function NzAtplRequirements() {
               <p>
                 The 1500 hours must comprise specific flight experience acceptable to the Director of Civil Aviation. While the exact breakdown can vary based on individual circumstances and previous experience, a general guideline for aeroplane ATPL candidates includes:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Flight Experience Category</th>
-                    <th>Minimum Hours (Aeroplane)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Flight Experience Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Hours (Aeroplane)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Total Flight Time</td>
-                    <td>1500 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">1500 hours</td>
                   </tr>
-                  <tr>
-                    <td>Pilot-in-Command (PIC)</td>
-                    <td>250 hours (or 100 hours PIC and 150 hours PIC under supervision)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Pilot-in-Command (PIC)</td>
+                    <td className="px-4 py-3 text-white/80">250 hours (or 100 hours PIC and 150 hours PIC under supervision)</td>
                   </tr>
-                  <tr>
-                    <td>Cross-Country Flight Time</td>
-                    <td>200 hours (including 100 hours as PIC)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Cross-Country Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">200 hours (including 100 hours as PIC)</td>
                   </tr>
-                  <tr>
-                    <td>Night Flight Time</td>
-                    <td>100 hours as PIC or co-pilot</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Night Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">100 hours as PIC or co-pilot</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Flight Time</td>
-                    <td>75 hours (of which up to 30 hours may be in a simulator)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">75 hours (of which up to 30 hours may be in a simulator)</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Aircraft</td>
-                    <td>50 hours (as PIC or co-pilot)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Aircraft</td>
+                    <td className="px-4 py-3 text-white/80">50 hours (as PIC or co-pilot)</td>
                   </tr>
                 </tbody>
               </table>
@@ -115,41 +115,41 @@ export default function NzAtplRequirements() {
               <p>
                 The valid written examination credit, or an approved equivalent, must cover the following airline transport pilot licence subject areas:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Subject Area</th>
-                    <th>Description</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Subject Area</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Description</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Air Law</td>
-                    <td>Detailed understanding of national and international aviation regulations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Air Law</td>
+                    <td className="px-4 py-3 text-white/80">Detailed understanding of national and international aviation regulations.</td>
                   </tr>
-                  <tr>
-                    <td>Flight Navigation General</td>
-                    <td>Advanced navigation techniques, including long-range navigation and performance-based navigation (PBN).</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Navigation General</td>
+                    <td className="px-4 py-3 text-white/80">Advanced navigation techniques, including long-range navigation and performance-based navigation (PBN).</td>
                   </tr>
-                  <tr>
-                    <td>Flight Planning (Aeroplane)</td>
-                    <td>Complex flight planning, fuel management, and operational considerations for airline operations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Planning (Aeroplane)</td>
+                    <td className="px-4 py-3 text-white/80">Complex flight planning, fuel management, and operational considerations for airline operations.</td>
                   </tr>
-                  <tr>
-                    <td>Meteorology</td>
-                    <td>Advanced meteorological knowledge, including weather systems, forecasting, and hazardous weather phenomena.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Meteorology</td>
+                    <td className="px-4 py-3 text-white/80">Advanced meteorological knowledge, including weather systems, forecasting, and hazardous weather phenomena.</td>
                   </tr>
-                  <tr>
-                    <td>Instruments and Navigation Aids (Aeroplane)</td>
-                    <td>In-depth knowledge of aircraft instrumentation, autopilot systems, and advanced navigation aids.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instruments and Navigation Aids (Aeroplane)</td>
+                    <td className="px-4 py-3 text-white/80">In-depth knowledge of aircraft instrumentation, autopilot systems, and advanced navigation aids.</td>
                   </tr>
-                  <tr>
-                    <td>Human Factors</td>
-                    <td>Understanding of human performance and limitations in the aviation environment, including crew resource management (CRM).</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Human Factors</td>
+                    <td className="px-4 py-3 text-white/80">Understanding of human performance and limitations in the aviation environment, including crew resource management (CRM).</td>
                   </tr>
-                  <tr>
-                    <td>Advanced Aerodynamics, Performance, and Systems Knowledge (Aeroplane)</td>
-                    <td>Comprehensive understanding of aircraft aerodynamics, performance calculations, and complex aircraft systems.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Advanced Aerodynamics, Performance, and Systems Knowledge (Aeroplane)</td>
+                    <td className="px-4 py-3 text-white/80">Comprehensive understanding of aircraft aerodynamics, performance calculations, and complex aircraft systems.</td>
                   </tr>
                 </tbody>
               </table>
@@ -202,54 +202,54 @@ export default function NzAtplRequirements() {
               <p>
                 As of 2026, a general estimate for the entire journey from ab-initio to ATPL (including PPL, CPL, IR, and ATPL theory) can range from NZD $100,000 to NZD $150,000 or more. This typically includes:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Cost Category</th>
-                    <th>Estimated Range (NZD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Range (NZD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>$15,000 - $25,000</td>
-                    <td>Foundation for all subsequent licences.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">$15,000 - $25,000</td>
+                    <td className="px-4 py-3 text-white/80">Foundation for all subsequent licences.</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>$50,000 - $70,000</td>
-                    <td>Includes flight hours and theory.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">$50,000 - $70,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes flight hours and theory.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>$20,000 - $30,000</td>
-                    <td>Essential for IFR operations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">$20,000 - $30,000</td>
+                    <td className="px-4 py-3 text-white/80">Essential for IFR operations.</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Theoretical Exams</td>
-                    <td>$5,000 - $10,000</td>
-                    <td>Includes course materials and examination fees.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Theoretical Exams</td>
+                    <td className="px-4 py-3 text-white/80">$5,000 - $10,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes course materials and examination fees.</td>
                   </tr>
-                  <tr>
-                    <td>Flight Hours Accumulation (post-CPL/IR)</td>
-                    <td>Variable, often integrated into employment</td>
-                    <td>Achieving the 1500-hour requirement.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Hours Accumulation (post-CPL/IR)</td>
+                    <td className="px-4 py-3 text-white/80">Variable, often integrated into employment</td>
+                    <td className="px-4 py-3 text-white/80">Achieving the 1500-hour requirement.</td>
                   </tr>
-                  <tr>
-                    <td>Medical Certificates (Class 1)</td>
-                    <td>$500 - $1,000 (initial, then annual renewals)</td>
-                    <td>Mandatory health assessments.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Medical Certificates (Class 1)</td>
+                    <td className="px-4 py-3 text-white/80">$500 - $1,000 (initial, then annual renewals)</td>
+                    <td className="px-4 py-3 text-white/80">Mandatory health assessments.</td>
                   </tr>
-                  <tr>
-                    <td>CAA NZ Application Fees</td>
-                    <td>~$150 - $200</td>
-                    <td>Licence application and processing fees.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CAA NZ Application Fees</td>
+                    <td className="px-4 py-3 text-white/80">~$150 - $200</td>
+                    <td className="px-4 py-3 text-white/80">Licence application and processing fees.</td>
                   </tr>
-                  <tr>
-                    <td>Study Materials & Equipment</td>
-                    <td>$2,000 - $5,000</td>
-                    <td>Books, charts, headsets, etc.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Study Materials & Equipment</td>
+                    <td className="px-4 py-3 text-white/80">$2,000 - $5,000</td>
+                    <td className="px-4 py-3 text-white/80">Books, charts, headsets, etc.</td>
                   </tr>
                 </tbody>
               </table>

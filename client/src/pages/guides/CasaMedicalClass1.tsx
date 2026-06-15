@@ -89,25 +89,25 @@ export default function CasaMedicalClass1() {
               <p>
                 CASA charges a non-refundable fee for processing the medical certificate application. This fee covers the administrative work involved in reviewing the DAME's report and issuing the certificate.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Request Type</th>
-                    <th>CASA Processing Fee (AUD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Request Type</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">CASA Processing Fee (AUD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Class 1 Medical</td>
-                    <td>$75.00</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Class 1 Medical</td>
+                    <td className="px-4 py-3 text-white/80">$75.00</td>
                   </tr>
-                  <tr>
-                    <td>Reconsideration of application</td>
-                    <td>$150.00</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Reconsideration of application</td>
+                    <td className="px-4 py-3 text-white/80">$150.00</td>
                   </tr>
-                  <tr>
-                    <td>Extension of medical certificate</td>
-                    <td>$50.00</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Extension of medical certificate</td>
+                    <td className="px-4 py-3 text-white/80">$50.00</td>
                   </tr>
                 </tbody>
               </table>

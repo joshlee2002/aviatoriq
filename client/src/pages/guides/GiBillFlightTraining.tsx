@@ -81,39 +81,39 @@ const GiBillFlightTraining = () => {
               <p>
                 One of the most frequently misunderstood aspects of GI Bill benefits for flight training is the Monthly Housing Allowance (MHA), often referred to as BAH. For vocational flight training programs, <strong>veterans are generally NOT eligible for MHA</strong>. MHA is typically provided for degree-seeking students attending in-person courses at a rate based on an E-5 with dependents BAH for the school's zip code. However, if your flight training is part of an approved aviation degree program at a college or university, you <em>may</em> be eligible for MHA. the Post-9/11 GI Bill provides a book stipend of up to $1,000 per academic year for degree programs, but this is also generally <strong>not available for standalone flight training</strong>. Veterans should also be aware that the GI Bill covers tuition and fees, but not all associated costs. For instance, flight hours and aircraft rental, which constitute a significant portion of flight training expenses, might not be fully covered if they are billed separately from tuition. This can lead to substantial out-of-pocket costs, even with GI Bill benefits.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Benefit Type</th>
-                    <th>Post-9/11 GI Bill (Chapter 33) - Vocational Flight Training (Non-Degree)</th>
-                    <th>Post-9/11 GI Bill (Chapter 33) - Degree Program with Flight Training</th>
-                    <th>Montgomery GI Bill Active Duty (Chapter 30) - Vocational Flight Training</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Benefit Type</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Post-9/11 GI Bill (Chapter 33) - Vocational Flight Training (Non-Degree)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Post-9/11 GI Bill (Chapter 33) - Degree Program with Flight Training</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Montgomery GI Bill Active Duty (Chapter 30) - Vocational Flight Training</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Tuition & Fees</strong></td>
-                    <td>Up to $17,097.67/year (2025-2026 cap)</td>
-                    <td>Full in-state at public; up to $29,920.95/year at private (2025-2026 cap)</td>
-                    <td>60% reimbursement of approved charges</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Tuition & Fees</strong></td>
+                    <td className="px-4 py-3 text-white/80">Up to $17,097.67/year (2025-2026 cap)</td>
+                    <td className="px-4 py-3 text-white/80">Full in-state at public; up to $29,920.95/year at private (2025-2026 cap)</td>
+                    <td className="px-4 py-3 text-white/80">60% reimbursement of approved charges</td>
                   </tr>
-                  <tr>
-                    <td><strong>Monthly Housing Allowance (MHA/BAH)</strong></td>
-                    <td>Generally NOT eligible</td>
-                    <td>Eligible (E-5 w/ dependents BAH rate for school zip code)</td>
-                    <td>Eligible (monthly stipend, not location-based BAH)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Monthly Housing Allowance (MHA/BAH)</strong></td>
+                    <td className="px-4 py-3 text-white/80">Generally NOT eligible</td>
+                    <td className="px-4 py-3 text-white/80">Eligible (E-5 w/ dependents BAH rate for school zip code)</td>
+                    <td className="px-4 py-3 text-white/80">Eligible (monthly stipend, not location-based BAH)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Book Stipend</strong></td>
-                    <td>Generally NOT eligible</td>
-                    <td>Up to $1,000/year</td>
-                    <td>Not applicable (part of monthly stipend)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Book Stipend</strong></td>
+                    <td className="px-4 py-3 text-white/80">Generally NOT eligible</td>
+                    <td className="px-4 py-3 text-white/80">Up to $1,000/year</td>
+                    <td className="px-4 py-3 text-white/80">Not applicable (part of monthly stipend)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Yellow Ribbon Program</strong></td>
-                    <td>Not applicable</td>
-                    <td>Eligible (for private schools exceeding cap)</td>
-                    <td>Not applicable</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Yellow Ribbon Program</strong></td>
+                    <td className="px-4 py-3 text-white/80">Not applicable</td>
+                    <td className="px-4 py-3 text-white/80">Eligible (for private schools exceeding cap)</td>
+                    <td className="px-4 py-3 text-white/80">Not applicable</td>
                   </tr>
                 </tbody>
               </table>

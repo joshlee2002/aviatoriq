@@ -99,37 +99,37 @@ export default function TcCpLRequirements() {
           content: (
             <>
               <p>The investment in CPL training is significant, but it paves the way for a rewarding career. Costs can vary based on the flight school, location, and individual progress. The following table provides an estimated breakdown of costs in Canadian Dollars (CAD) for CPL training, assuming the candidate has already obtained their Private Pilot License:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Expense Category</th>
-                    <th>Estimated Cost (CAD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Time Building (approx. 90 hours)</td>
-                    <td>$15,000 - $20,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Time Building (approx. 90 hours)</td>
+                    <td className="px-4 py-3 text-white/80">$15,000 - $20,000</td>
                   </tr>
-                  <tr>
-                    <td>Dual Flight Training (35 hours)</td>
-                    <td>$10,000 - $12,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Dual Flight Training (35 hours)</td>
+                    <td className="px-4 py-3 text-white/80">$10,000 - $12,000</td>
                   </tr>
-                  <tr>
-                    <td>Solo Flight Training (30 hours)</td>
-                    <td>$6,000 - $8,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Solo Flight Training (30 hours)</td>
+                    <td className="px-4 py-3 text-white/80">$6,000 - $8,000</td>
                   </tr>
-                  <tr>
-                    <td>Ground School & Materials</td>
-                    <td>$1,000 - $1,500</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground School & Materials</td>
+                    <td className="px-4 py-3 text-white/80">$1,000 - $1,500</td>
                   </tr>
-                  <tr>
-                    <td>Transport Canada Fees (Exams, Licensing)</td>
-                    <td>$500 - $800</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Transport Canada Fees (Exams, Licensing)</td>
+                    <td className="px-4 py-3 text-white/80">$500 - $800</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Cost (Post-PPL)</strong></td>
-                    <td><strong>$32,500 - $42,300</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost (Post-PPL)</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$32,500 - $42,300</strong></td>
                   </tr>
                 </tbody>
               </table>

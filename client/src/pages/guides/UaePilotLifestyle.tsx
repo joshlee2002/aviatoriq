@@ -38,17 +38,17 @@ export default function UaePilotLifestyle() {
               <p>
                 Foreign license holders, particularly those with EASA or FAA certifications, will find a structured conversion process. This typically involves license verification, passing GCAA-specific theoretical examinations, and potentially undergoing a skill test. The process is designed to integrate international pilots seamlessly into the UAE's aviation framework while maintaining the highest safety standards. It is advisable to engage with GCAA-approved training organizations (ATOs) for guidance through this conversion, as they possess the most current understanding of regulatory requirements.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Requirement</th><th>Details (GCAA 2026)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details (GCAA 2026)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Minimum Age</td><td>17 years (for PPL commencement), 18 years (for CPL/ATPL issue)</td></tr>
-                  <tr><td>Medical Certificate</td><td>Class 1 Medical Certificate (valid for CPL/ATPL)</td></tr>
-                  <tr><td>English Proficiency</td><td>ICAO Level 4 or higher</td></tr>
-                  <tr><td>Flight Hours (CPL)</td><td>Minimum 150-200 hours (depending on integrated/modular course)</td></tr>
-                  <tr><td>Flight Hours (ATPL)</td><td>Minimum 1500 hours (including specific cross-country, night, and instrument time)</td></tr>
-                  <tr><td>Theoretical Exams</td><td>Completion of GCAA-approved theoretical knowledge examinations</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Minimum Age</td><td className="px-4 py-3 text-white/80">17 years (for PPL commencement), 18 years (for CPL/ATPL issue)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical Certificate</td><td className="px-4 py-3 text-white/80">Class 1 Medical Certificate (valid for CPL/ATPL)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">English Proficiency</td><td className="px-4 py-3 text-white/80">ICAO Level 4 or higher</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hours (CPL)</td><td className="px-4 py-3 text-white/80">Minimum 150-200 hours (depending on integrated/modular course)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hours (ATPL)</td><td className="px-4 py-3 text-white/80">Minimum 1500 hours (including specific cross-country, night, and instrument time)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Theoretical Exams</td><td className="px-4 py-3 text-white/80">Completion of GCAA-approved theoretical knowledge examinations</td></tr>
                 </tbody>
               </table>
             </>
@@ -64,16 +64,16 @@ export default function UaePilotLifestyle() {
               <p>
                 Costs can vary widely based on the chosen pathway (integrated vs. modular), the flight school, and individual progress. As of 2026, aspiring pilots should anticipate substantial expenses, which often include tuition, accommodation, study materials, examination fees, and type rating costs. Many airlines offer cadet programs that may partially or fully sponsor training, often with a commitment to employment upon successful completion. It is crucial to research these options thoroughly and understand the financial implications.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Training Phase</th><th>Estimated Cost (AED, 2026)</th><th>Duration</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AED, 2026)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot License (PPL)</td><td>AED 50,000 - 70,000</td><td>3-6 months</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>AED 150,000 - 250,000</td><td>9-12 months</td></tr>
-                  <tr><td>Airline Transport Pilot License (ATPL) (Frozen)</td><td>AED 300,000 - 450,000</td><td>18-24 months</td></tr>
-                  <tr><td>Type Rating (e.g., Boeing 737/Airbus A320)</td><td>AED 100,000 - 180,000</td><td>2-3 months</td></tr>
-                  <tr><td>Emirates Flight Training Academy (Integrated ATPL)</td><td>USD 220,500 (approx. AED 810,000)</td><td>24 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">AED 50,000 - 70,000</td><td className="px-4 py-3 text-white/80">3-6 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">AED 150,000 - 250,000</td><td className="px-4 py-3 text-white/80">9-12 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Airline Transport Pilot License (ATPL) (Frozen)</td><td className="px-4 py-3 text-white/80">AED 300,000 - 450,000</td><td className="px-4 py-3 text-white/80">18-24 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Type Rating (e.g., Boeing 737/Airbus A320)</td><td className="px-4 py-3 text-white/80">AED 100,000 - 180,000</td><td className="px-4 py-3 text-white/80">2-3 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Emirates Flight Training Academy (Integrated ATPL)</td><td className="px-4 py-3 text-white/80">USD 220,500 (approx. AED 810,000)</td><td className="px-4 py-3 text-white/80">24 months</td></tr>
                 </tbody>
               </table>
               <p>
@@ -92,19 +92,19 @@ export default function UaePilotLifestyle() {
               <p>
                 Beyond salary, major UAE airlines offer comprehensive benefits packages designed to attract and retain top talent. These typically include generous housing allowances or company-provided accommodation, education allowances for children, extensive medical and life insurance, and attractive travel benefits for pilots and their families. The work environment is highly professional, with a strong emphasis on safety, continuous training, and career development. Pilots often enjoy a dynamic roster that balances international travel with sufficient time off to enjoy the UAE's diverse leisure and entertainment options.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Benefit Category</th><th>Typical Offerings (2026)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Benefit Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Offerings (2026)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Salary</td><td>Tax-free, highly competitive (see next section for details)</td></tr>
-                  <tr><td>Housing</td><td>Company-provided accommodation or generous housing allowance</td></tr>
-                  <tr><td>Education</td><td>Allowance for children's schooling (often up to university level)</td></tr>
-                  <tr><td>Medical & Insurance</td><td>Comprehensive medical, dental, and life insurance for pilot and family</td></tr>
-                  <tr><td>Travel</td><td>Concessional travel for pilot and eligible dependents on airline network</td></tr>
-                  <tr><td>Retirement</td><td>End-of-service benefits/gratuity, sometimes provident fund options</td></tr>
-                  <tr><td>Leave</td><td>Generous annual leave, sick leave, and compassionate leave</td></tr>
-                  <tr><td>Transport</td><td>Company transport or allowance for commuting</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Salary</td><td className="px-4 py-3 text-white/80">Tax-free, highly competitive (see next section for details)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Housing</td><td className="px-4 py-3 text-white/80">Company-provided accommodation or generous housing allowance</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Education</td><td className="px-4 py-3 text-white/80">Allowance for children's schooling (often up to university level)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical & Insurance</td><td className="px-4 py-3 text-white/80">Comprehensive medical, dental, and life insurance for pilot and family</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Travel</td><td className="px-4 py-3 text-white/80">Concessional travel for pilot and eligible dependents on airline network</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Retirement</td><td className="px-4 py-3 text-white/80">End-of-service benefits/gratuity, sometimes provident fund options</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Leave</td><td className="px-4 py-3 text-white/80">Generous annual leave, sick leave, and compassionate leave</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Transport</td><td className="px-4 py-3 text-white/80">Company transport or allowance for commuting</td></tr>
                 </tbody>
               </table>
             </>
@@ -120,17 +120,17 @@ export default function UaePilotLifestyle() {
               <p>
                 Hiring cycles for 2026 are dynamic, with airlines continuously seeking qualified First Officers and Captains. The interview process is rigorous, often involving multiple stages including technical assessments, simulator checks, and competency-based interviews focusing on Crew Resource Management (CRM) and operational decision-making. Airlines prioritize candidates with strong academic backgrounds, significant flight experience, and a demonstrated commitment to safety and professionalism. Career progression is typically structured, with clear pathways from First Officer to Captain and opportunities for command upgrades and specialized roles.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Airline</th><th>Position</th><th>Estimated Annual Salary (AED, 2026)</th><th>Key Aircraft Types</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Position</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (AED, 2026)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Aircraft Types</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Emirates</td><td>First Officer</td><td>AED 430,000 - 660,000</td><td>Airbus A380, Boeing 777</td></tr>
-                  <tr><td>Emirates</td><td>Captain</td><td>AED 750,000 - 900,000+</td><td>Airbus A380, Boeing 777</td></tr>
-                  <tr><td>Flydubai</td><td>First Officer</td><td>AED 360,000 - 540,000</td><td>Boeing 737</td></tr>
-                  <tr><td>Flydubai</td><td>Captain</td><td>AED 600,000 - 750,000+</td><td>Boeing 737</td></tr>
-                  <tr><td>Etihad Airways</td><td>First Officer</td><td>AED 380,000 - 580,000</td><td>Airbus A350, Boeing 787, Boeing 777</td></tr>
-                  <tr><td>Etihad Airways</td><td>Captain</td><td>AED 650,000 - 850,000+</td><td>Airbus A350, Boeing 787, Boeing 777</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Emirates</td><td className="px-4 py-3 text-white/80">First Officer</td><td className="px-4 py-3 text-white/80">AED 430,000 - 660,000</td><td className="px-4 py-3 text-white/80">Airbus A380, Boeing 777</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Emirates</td><td className="px-4 py-3 text-white/80">Captain</td><td className="px-4 py-3 text-white/80">AED 750,000 - 900,000+</td><td className="px-4 py-3 text-white/80">Airbus A380, Boeing 777</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flydubai</td><td className="px-4 py-3 text-white/80">First Officer</td><td className="px-4 py-3 text-white/80">AED 360,000 - 540,000</td><td className="px-4 py-3 text-white/80">Boeing 737</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flydubai</td><td className="px-4 py-3 text-white/80">Captain</td><td className="px-4 py-3 text-white/80">AED 600,000 - 750,000+</td><td className="px-4 py-3 text-white/80">Boeing 737</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Etihad Airways</td><td className="px-4 py-3 text-white/80">First Officer</td><td className="px-4 py-3 text-white/80">AED 380,000 - 580,000</td><td className="px-4 py-3 text-white/80">Airbus A350, Boeing 787, Boeing 777</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Etihad Airways</td><td className="px-4 py-3 text-white/80">Captain</td><td className="px-4 py-3 text-white/80">AED 650,000 - 850,000+</td><td className="px-4 py-3 text-white/80">Airbus A350, Boeing 787, Boeing 777</td></tr>
                 </tbody>
               </table>
               <p>

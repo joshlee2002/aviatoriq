@@ -64,19 +64,19 @@ export default function QantasGroupPilotAcademy() {
               <p>
                 It is crucial for applicants to review the official Schedule of Fees provided by FTA and Qantas for the most current and precise cost information. Financial assistance options, including VET Student Loans and scholarships, are available to eligible Australian citizens and permanent residents to help manage these costs.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Expense Category</th><th>Estimated Cost (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Tuition Fees (Course)</td><td>$130,000 - $145,000</td><td>Covers flight training, ground school, and examinations.</td></tr>
-                  <tr><td>VET Student Loan Admin Fee</td><td>Up to $20,000</td><td>Government loan scheme for eligible students.</td></tr>
-                  <tr><td>On-site Accommodation</td><td>$450 per week (approx. $23,400/year)</td><td>Mandatory for the 55-week program. Includes meals.</td></tr>
-                  <tr><td>Application/Assessment Fee</td><td>$200</td><td>One-time fee for the selection process.</td></tr>
-                  <tr><td>Textbooks, Equipment & Uniform</td><td>$5,000 - $10,000</td><td>Includes essential learning materials and flight gear.</td></tr>
-                  <tr><td>CASA Class 1 Medical</td><td>$1,000 - $2,000</td><td>Required before course commencement.</td></tr>
-                  <tr><td>Licensing & ASIC Fees</td><td>$1,000 - $2,000</td><td>Fees for obtaining licenses and Aviation Security Identification Card.</td></tr>
-                  <tr><td><b>Total Estimated Cost</b></td><td><b>$160,000 - $180,000</b></td><td><b>Excludes personal expenses and travel to Toowoomba.</b></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Tuition Fees (Course)</td><td className="px-4 py-3 text-white/80">$130,000 - $145,000</td><td className="px-4 py-3 text-white/80">Covers flight training, ground school, and examinations.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">VET Student Loan Admin Fee</td><td className="px-4 py-3 text-white/80">Up to $20,000</td><td className="px-4 py-3 text-white/80">Government loan scheme for eligible students.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">On-site Accommodation</td><td className="px-4 py-3 text-white/80">$450 per week (approx. $23,400/year)</td><td className="px-4 py-3 text-white/80">Mandatory for the 55-week program. Includes meals.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Application/Assessment Fee</td><td className="px-4 py-3 text-white/80">$200</td><td className="px-4 py-3 text-white/80">One-time fee for the selection process.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Textbooks, Equipment & Uniform</td><td className="px-4 py-3 text-white/80">$5,000 - $10,000</td><td className="px-4 py-3 text-white/80">Includes essential learning materials and flight gear.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CASA Class 1 Medical</td><td className="px-4 py-3 text-white/80">$1,000 - $2,000</td><td className="px-4 py-3 text-white/80">Required before course commencement.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Licensing & ASIC Fees</td><td className="px-4 py-3 text-white/80">$1,000 - $2,000</td><td className="px-4 py-3 text-white/80">Fees for obtaining licenses and Aviation Security Identification Card.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><b>Total Estimated Cost</b></td><td className="px-4 py-3 text-white/80"><b>$160,000 - $180,000</b></td><td className="px-4 py-3 text-white/80"><b>Excludes personal expenses and travel to Toowoomba.</b></td></tr>
                 </tbody>
               </table>
             </>
@@ -105,16 +105,16 @@ export default function QantasGroupPilotAcademy() {
               <p>
                 Successful applicants proceed through a multi-stage selection process, which includes a mandatory computer-based training assessment on abbreviated aviation theory, comprehensive psychometric and skills assessments, and a pilot aptitude test. The final stage involves an interview with FTA's leadership, focusing on the candidate's motivation, understanding of the course, and test results. A CASA Class 1 medical certificate is a prerequisite for commencing the course, ensuring all cadets meet the stringent health standards required for commercial pilots.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Stage</th><th>Description</th><th>Key Requirements/Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Stage</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Description</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Requirements/Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>1. Online Application</td><td>Submission of personal, educational, and experience details.</td><td>Australian Citizen or Permanent Resident; 17+ years old (18 to commence).</td></tr>
-                  <tr><td>2. Initial Screening</td><td>Review of applications by FTA for suitability.</td><td>Strong academic background in Maths/Science (Year 12 level desirable).</td></tr>
-                  <tr><td>3. Assessments</td><td>Computer-based theory, psychometric, skills, and aptitude tests.</td><td>$200 assessment fee payable.</td></tr>
-                  <tr><td>4. Interview</td><td>Conducted by FTA leadership at the Academy.</td><td>Evaluates motivation, course understanding, and test performance.</td></tr>
-                  <tr><td>5. Medical Certification</td><td>Obtain CASA Class 1 Medical Certificate.</td><td>Required before course start date.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">1. Online Application</td><td className="px-4 py-3 text-white/80">Submission of personal, educational, and experience details.</td><td className="px-4 py-3 text-white/80">Australian Citizen or Permanent Resident; 17+ years old (18 to commence).</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">2. Initial Screening</td><td className="px-4 py-3 text-white/80">Review of applications by FTA for suitability.</td><td className="px-4 py-3 text-white/80">Strong academic background in Maths/Science (Year 12 level desirable).</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">3. Assessments</td><td className="px-4 py-3 text-white/80">Computer-based theory, psychometric, skills, and aptitude tests.</td><td className="px-4 py-3 text-white/80">$200 assessment fee payable.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">4. Interview</td><td className="px-4 py-3 text-white/80">Conducted by FTA leadership at the Academy.</td><td className="px-4 py-3 text-white/80">Evaluates motivation, course understanding, and test performance.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">5. Medical Certification</td><td className="px-4 py-3 text-white/80">Obtain CASA Class 1 Medical Certificate.</td><td className="px-4 py-3 text-white/80">Required before course start date.</td></tr>
                 </tbody>
               </table>
             </>
@@ -140,15 +140,15 @@ export default function QantasGroupPilotAcademy() {
               <p>
                 For those planning to join the Academy in 2026-2027, several course intakes are scheduled. Prospective applicants are advised to monitor the official Qantas Group Pilot Academy website for the most up-to-date information on application closing dates and course start dates, as these can be subject to change.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Course Intake</th><th>Applications Close</th><th>Course Start Date</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Course Intake</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Applications Close</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Course Start Date</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>QG60</td><td>19 July 2026</td><td>30 November 2026</td></tr>
-                  <tr><td>QG61</td><td>6 September 2026</td><td>11 January 2027</td></tr>
-                  <tr><td>QG62</td><td>11 October 2026</td><td>15 February 2027</td></tr>
-                  <tr><td>QG63</td><td>15 November 2026</td><td>22 March 2027</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">QG60</td><td className="px-4 py-3 text-white/80">19 July 2026</td><td className="px-4 py-3 text-white/80">30 November 2026</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">QG61</td><td className="px-4 py-3 text-white/80">6 September 2026</td><td className="px-4 py-3 text-white/80">11 January 2027</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">QG62</td><td className="px-4 py-3 text-white/80">11 October 2026</td><td className="px-4 py-3 text-white/80">15 February 2027</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">QG63</td><td className="px-4 py-3 text-white/80">15 November 2026</td><td className="px-4 py-3 text-white/80">22 March 2027</td></tr>
                 </tbody>
               </table>
             </>

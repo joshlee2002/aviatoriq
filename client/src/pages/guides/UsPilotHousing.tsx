@@ -20,7 +20,7 @@ export default function UsPilotHousing() {
           content: (
             <>
               <p>Embarking on a career as a professional pilot in the United States is an ambitious and rewarding endeavor. While the primary focus often gravitates towards flight hours, FAA regulations, and aircraft types, the often-overlooked aspect of housing plays a profoundly critical role in an aspiring aviator's success. Your living situation during flight training is not merely a place to sleep; it is an integral component of your study environment, mental well-being, and ultimately, your ability to absorb complex aeronautical knowledge and master intricate flying skills.</p>
-              <p>Accelerated pilot training programs, whether under FAA Part 61 or Part 141 regulations, demand an unparalleled level of dedication and focus. These programs are intensive, requiring long hours of ground school, simulator sessions, and actual flight time. A stable, conducive living environment minimizes distractions, reduces commute times, and provides the necessary tranquility for rigorous study and adequate rest. This guide delves into the nuances of housing options available to pilot trainees in the US for 2026, offering a strategic perspective on making informed decisions that align with your career aspirations and financial planning.</p>
+              <p>Accelerated pilot training programs, whether under FAA Part 61 or Part 141 regulations, demand an high level of dedication and focus. These programs are intensive, requiring long hours of ground school, simulator sessions, and actual flight time. A stable, conducive living environment minimizes distractions, reduces commute times, and provides the necessary tranquility for rigorous study and adequate rest. This guide covers housing options available to pilot trainees in the US for 2026, offering a strategic perspective on making informed decisions that align with your career aspirations and financial planning.</p>
             </>
           )
         },
@@ -56,17 +56,17 @@ export default function UsPilotHousing() {
               <p>The financial commitment to pilot training extends far beyond tuition and flight hours. Housing, living expenses, and associated logistics can significantly impact your overall budget. For 2026, understanding these costs is paramount for effective financial planning.</p>
               <h3>Average Monthly Living Expenses (Independent Living, 2026 Estimates)</h3>
               <p>These figures can vary widely based on location (e.g., major metropolitan areas vs. rural flight schools) and personal lifestyle. For a student living independently near a typical flight school, monthly expenses might look like this:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Expense Category</th><th>Estimated Monthly Cost (USD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Monthly Cost (USD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Rent (Shared Apartment)</td><td>$700 - $1,200</td><td>Varies by region; single occupancy higher</td></tr>
-                  <tr><td>Utilities (Electricity, Water, Gas, Internet)</td><td>$150 - $300</td><td>Can fluctuate seasonally</td></tr>
-                  <tr><td>Groceries/Food</td><td>$400 - $600</td><td>Depends on cooking habits vs. dining out</td></tr>
-                  <tr><td>Transportation (Fuel, Maintenance, Public Transit)</td><td>$100 - $250</td><td>Crucial for commute to airport</td></tr>
-                  <tr><td>Personal Expenses (Toiletries, Entertainment)</td><td>$150 - $300</td><td>Budget for occasional leisure</td></tr>
-                  <tr><td><strong>Total Estimated Monthly</strong></td><td><strong>$1,500 - $2,650</strong></td><td>Excludes unexpected costs</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Rent (Shared Apartment)</td><td className="px-4 py-3 text-white/80">$700 - $1,200</td><td className="px-4 py-3 text-white/80">Varies by region; single occupancy higher</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Utilities (Electricity, Water, Gas, Internet)</td><td className="px-4 py-3 text-white/80">$150 - $300</td><td className="px-4 py-3 text-white/80">Can fluctuate seasonally</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Groceries/Food</td><td className="px-4 py-3 text-white/80">$400 - $600</td><td className="px-4 py-3 text-white/80">Depends on cooking habits vs. dining out</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Transportation (Fuel, Maintenance, Public Transit)</td><td className="px-4 py-3 text-white/80">$100 - $250</td><td className="px-4 py-3 text-white/80">Crucial for commute to airport</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Personal Expenses (Toiletries, Entertainment)</td><td className="px-4 py-3 text-white/80">$150 - $300</td><td className="px-4 py-3 text-white/80">Budget for occasional leisure</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated Monthly</strong></td><td className="px-4 py-3 text-white/80"><strong>$1,500 - $2,650</strong></td><td className="px-4 py-3 text-white/80">Excludes unexpected costs</td></tr>
                 </tbody>
               </table>
               <h3>Hidden Costs and Financial Planning</h3>

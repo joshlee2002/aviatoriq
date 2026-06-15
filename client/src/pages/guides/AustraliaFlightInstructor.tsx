@@ -51,13 +51,13 @@ export default function AustraliaFlightInstructor() {
               </ul>
               <p>It is crucial to note that a PPL holder can only obtain a flight instructor rating and training endorsement to conduct training for the issue of a design feature endorsement or flight activity endorsement. For broader instructional privileges, a CPL or ATPL is generally required.</p>
               <p>In addition to holding a valid pilot licence, candidates must meet specific aeronautical experience requirements, which vary slightly between helicopter and aeroplane categories:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Aircraft Category</th><th>Minimum Flight Time as Pilot</th><th>Minimum Flight Time as Pilot in Command</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Aircraft Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Flight Time as Pilot</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Flight Time as Pilot in Command</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Aeroplanes</td><td>200 hours</td><td>100 hours</td></tr>
-                  <tr><td>Helicopters</td><td>250 hours</td><td>100 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Aeroplanes</td><td className="px-4 py-3 text-white/80">200 hours</td><td className="px-4 py-3 text-white/80">100 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Helicopters</td><td className="px-4 py-3 text-white/80">250 hours</td><td className="px-4 py-3 text-white/80">100 hours</td></tr>
                 </tbody>
               </table>
               <p>Exemptions to these hour requirements may apply if you have completed an integrated CPL course with the relevant category rating or hold specific additional ratings/endorsements (e.g., low-level rating, NVFR rating, instrument rating for helicopters).</p>
@@ -98,17 +98,17 @@ export default function AustraliaFlightInstructor() {
                 <li>Study materials and resources.</li>
               </ul>
               <p>It's important to note that these figures are estimates, and additional costs may include accommodation, living expenses, and potential re-test fees if required. Some training providers, like Air Gold Coast, have quoted figures around AUD $40,087.00 for their FIR course (excluding optional endorsements), which aligns with the general market trend.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Cost Component</th><th>Estimated Range (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Component</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Range (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Course Fees (Flight & Ground)</td><td>$30,000 - $45,000</td><td>Varies by FTO and course structure</td></tr>
-                  <tr><td>CASA Exam Fees (PIRC)</td><td>$200 - $300</td><td>Approximate, subject to CASA fee schedule</td></tr>
-                  <tr><td>Flight Test Fee</td><td>$1,000 - $2,000</td><td>Paid to approved flight examiner</td></tr>
-                  <tr><td>Study Materials</td><td>$500 - $1,000</td><td>Textbooks, charts, online resources</td></tr>
-                  <tr><td>Medical Certificate</td><td>$200 - $500</td><td>Class 1 or 2, depending on licence held</td></tr>
-                  <tr><td><strong>Total Estimated Cost</strong></td><td><strong>$35,000 - $50,000+</strong></td><td>Excludes living expenses and re-test fees</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Course Fees (Flight & Ground)</td><td className="px-4 py-3 text-white/80">$30,000 - $45,000</td><td className="px-4 py-3 text-white/80">Varies by FTO and course structure</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CASA Exam Fees (PIRC)</td><td className="px-4 py-3 text-white/80">$200 - $300</td><td className="px-4 py-3 text-white/80">Approximate, subject to CASA fee schedule</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Test Fee</td><td className="px-4 py-3 text-white/80">$1,000 - $2,000</td><td className="px-4 py-3 text-white/80">Paid to approved flight examiner</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Study Materials</td><td className="px-4 py-3 text-white/80">$500 - $1,000</td><td className="px-4 py-3 text-white/80">Textbooks, charts, online resources</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical Certificate</td><td className="px-4 py-3 text-white/80">$200 - $500</td><td className="px-4 py-3 text-white/80">Class 1 or 2, depending on licence held</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost</strong></td><td className="px-4 py-3 text-white/80"><strong>$35,000 - $50,000+</strong></td><td className="px-4 py-3 text-white/80">Excludes living expenses and re-test fees</td></tr>
                 </tbody>
               </table>
               <p>Prospective students are strongly advised to contact multiple Flight Training Operators for detailed and up-to-date cost breakdowns, as prices can fluctuate.</p>
@@ -125,14 +125,14 @@ export default function AustraliaFlightInstructor() {
               <p>Beyond traditional flight schools, experienced instructors may also work in corporate aviation, provide specialized training, or contribute to aviation safety programs.</p>
               <h3>Salary Expectations</h3>
               <p>Flight instructor salaries in Australia can vary based on experience, location, the type of employer, and the number of hours flown. As of 2026, entry-level Grade 3 instructors might expect a starting salary, which increases significantly with experience and higher instructor grades.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Experience Level</th><th>Estimated Annual Salary (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Experience Level</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Entry-Level (Grade 3)</td><td>$50,000 - $70,000</td><td>Often hourly rate based on flight time</td></tr>
-                  <tr><td>Experienced (Grade 2)</td><td>$70,000 - $90,000</td><td>Increased responsibilities and flight hours</td></tr>
-                  <tr><td>Senior (Grade 1 / Examiner)</td><td>$90,000 - $120,000+</td><td>Higher demand, specialized roles</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Entry-Level (Grade 3)</td><td className="px-4 py-3 text-white/80">$50,000 - $70,000</td><td className="px-4 py-3 text-white/80">Often hourly rate based on flight time</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Experienced (Grade 2)</td><td className="px-4 py-3 text-white/80">$70,000 - $90,000</td><td className="px-4 py-3 text-white/80">Increased responsibilities and flight hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Senior (Grade 1 / Examiner)</td><td className="px-4 py-3 text-white/80">$90,000 - $120,000+</td><td className="px-4 py-3 text-white/80">Higher demand, specialized roles</td></tr>
                 </tbody>
               </table>
               <p>According to some salary survey data for Melbourne, the average flight instructor salary is around AUD $94,777 per year, or an equivalent hourly rate of AUD $46. However, other sources suggest a broader range, with many instructors making between AUD $40,000 and $60,000, especially in their initial years. It's common for instructors to be paid per flight hour, so total earnings are directly tied to instructional workload.</p>

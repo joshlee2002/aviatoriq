@@ -81,64 +81,64 @@ export default function AustraliaFlightSchoolLoans() {
             <>
               <p>Understanding the overall cost of pilot training is crucial for financial planning. The total expense can vary significantly based on the chosen pathway (modular vs. integrated), flight school, location, and individual progress.</p>
               <h4>Breakdown of Key Costs</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Cost Component</th>
-                    <th>Estimated Range (AUD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Component</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Range (AUD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Recreational Pilot Licence (RPL)</td>
-                    <td>$5,000 – $12,000</td>
-                    <td>Depends on hours needed for solo and license standard.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Recreational Pilot Licence (RPL)</td>
+                    <td className="px-4 py-3 text-white/80">$5,000 – $12,000</td>
+                    <td className="px-4 py-3 text-white/80">Depends on hours needed for solo and license standard.</td>
                   </tr>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>$15,000 – $30,000</td>
-                    <td>Includes dual/solo flight time, ground school, CASA PPL flight test fee, headset.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">$15,000 – $30,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes dual/solo flight time, ground school, CASA PPL flight test fee, headset.</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>$45,000 – $85,000 (on top of PPL)</td>
-                    <td>More complex aircraft, more dual instruction, navigation exercises.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">$45,000 – $85,000 (on top of PPL)</td>
+                    <td className="px-4 py-3 text-white/80">More complex aircraft, more dual instruction, navigation exercises.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>$12,000 – $25,000</td>
-                    <td>Often required by airlines.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">$12,000 – $25,000</td>
+                    <td className="px-4 py-3 text-white/80">Often required by airlines.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (ME)</td>
-                    <td>$8,000 – $18,000</td>
-                    <td>Often required by airlines.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
+                    <td className="px-4 py-3 text-white/80">$8,000 – $18,000</td>
+                    <td className="px-4 py-3 text-white/80">Often required by airlines.</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Theory (Frozen ATPL)</td>
-                    <td>$4,000 – $10,000</td>
-                    <td>Includes ground school fees, CASA exam fees, study materials.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Theory (Frozen ATPL)</td>
+                    <td className="px-4 py-3 text-white/80">$4,000 – $10,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes ground school fees, CASA exam fees, study materials.</td>
                   </tr>
-                  <tr>
-                    <td>CASA Class 1 Medical Certificate</td>
-                    <td>$350 – $600 (annual/biennial)</td>
-                    <td>Essential for commercial pilots. Get it done early.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CASA Class 1 Medical Certificate</td>
+                    <td className="px-4 py-3 text-white/80">$350 – $600 (annual/biennial)</td>
+                    <td className="px-4 py-3 text-white/80">Essential for commercial pilots. Get it done early.</td>
                   </tr>
-                  <tr>
-                    <td>CASA Exam and Licensing Fees (total)</td>
-                    <td>$8,000 – $12,000</td>
-                    <td>Across entire training journey for various tests and licenses.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CASA Exam and Licensing Fees (total)</td>
+                    <td className="px-4 py-3 text-white/80">$8,000 – $12,000</td>
+                    <td className="px-4 py-3 text-white/80">Across entire training journey for various tests and licenses.</td>
                   </tr>
-                  <tr>
-                    <td>Accommodation & Living Expenses (if relocating)</td>
-                    <td>$15,000 – $30,000 per year</td>
-                    <td>For regional training locations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Accommodation & Living Expenses (if relocating)</td>
+                    <td className="px-4 py-3 text-white/80">$15,000 – $30,000 per year</td>
+                    <td className="px-4 py-3 text-white/80">For regional training locations.</td>
                   </tr>
-                  <tr>
-                    <td>Contingency (20-30% buffer)</td>
-                    <td>Variable</td>
-                    <td>For unexpected delays, extra hours, re-test attempts.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Contingency (20-30% buffer)</td>
+                    <td className="px-4 py-3 text-white/80">Variable</td>
+                    <td className="px-4 py-3 text-white/80">For unexpected delays, extra hours, re-test attempts.</td>
                   </tr>
                 </tbody>
               </table>

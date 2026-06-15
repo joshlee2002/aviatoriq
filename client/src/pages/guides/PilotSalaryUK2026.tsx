@@ -32,7 +32,7 @@ export default function PilotSalaryUK2026() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Airline</th>
                       <th className="px-4 py-3 font-semibold">Type</th>
                       <th className="px-4 py-3 font-semibold">First Officer</th>
@@ -121,7 +121,7 @@ export default function PilotSalaryUK2026() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Stage</th>
                       <th className="px-4 py-3 font-semibold">Typical Timeline</th>
                       <th className="px-4 py-3 font-semibold">Approximate Salary</th>
@@ -217,7 +217,7 @@ export default function PilotSalaryUK2026() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Airline</th>
                       <th className="px-4 py-3 font-semibold">First Officer (Total Est.)</th>
                       <th className="px-4 py-3 font-semibold">Captain (Total Est.)</th>

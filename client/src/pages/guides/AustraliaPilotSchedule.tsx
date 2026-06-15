@@ -67,34 +67,34 @@ export default function AustraliaPilotSchedule() {
             <>
               <p>The cost of pilot training in Australia can vary significantly based on the chosen license, flight school, and individual progress. Prospective pilots should budget for tuition fees, non-tuition expenses, and potential hidden costs. Here's an estimated breakdown for 2026:</p>
               <h3>Estimated Total Costs by License Type</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>License Type</th><th>Estimated Cost (AUD)</th><th>Duration</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">License Type</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Recreational Pilot License (RPL)</td><td>$8,000 – $15,000</td><td>25+ hours</td></tr>
-                  <tr><td>Private Pilot License (PPL)</td><td>$20,000 – $30,000</td><td>40+ hours (3-6 months)</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>$65,000 – $120,000</td><td>150-200 hours (9-18 months)</td></tr>
-                  <tr><td>Multi-Engine Instrument Rating (MEIR)</td><td>$25,000 – $40,000</td><td>(Often included in CPL programs)</td></tr>
-                  <tr><td>Flight Instructor Rating</td><td>$15,000 – $25,000</td><td>(Primary hour-building path)</td></tr>
-                  <tr><td>Integrated ATPL (CPL + MEIR + ATPL Theory)</td><td>$100,000 – $175,000+</td><td>(Varies by program)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Recreational Pilot License (RPL)</td><td className="px-4 py-3 text-white/80">$8,000 – $15,000</td><td className="px-4 py-3 text-white/80">25+ hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$20,000 – $30,000</td><td className="px-4 py-3 text-white/80">40+ hours (3-6 months)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">$65,000 – $120,000</td><td className="px-4 py-3 text-white/80">150-200 hours (9-18 months)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating (MEIR)</td><td className="px-4 py-3 text-white/80">$25,000 – $40,000</td><td className="px-4 py-3 text-white/80">(Often included in CPL programs)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Instructor Rating</td><td className="px-4 py-3 text-white/80">$15,000 – $25,000</td><td className="px-4 py-3 text-white/80">(Primary hour-building path)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Integrated ATPL (CPL + MEIR + ATPL Theory)</td><td className="px-4 py-3 text-white/80">$100,000 – $175,000+</td><td className="px-4 py-3 text-white/80">(Varies by program)</td></tr>
                 </tbody>
               </table>
               <p><em>Note: These figures are estimates for 2026 and can vary. Most students require more than the minimum hours, so budgeting for 1.3x the minimum is advisable [4].</em></p>
               <h3>Typical Non-Tuition Fees</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Expense</th><th>Estimated Cost (AUD)</th><th>Frequency</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Frequency</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Class 1 Medical Certificate</td><td>$350 – $600</td><td>Annual/Biennial</td></tr>
-                  <tr><td>Class 2 Medical Certificate</td><td>$250 – $450</td><td>Annual/Biennial</td></tr>
-                  <tr><td>ASIC Card</td><td>$300 – $320</td><td>Initial, then renewals</td></tr>
-                  <tr><td>CASA License Fees (RPL, PPL, CPL)</td><td>$50 – $80 per license</td><td>Per license/endorsement</td></tr>
-                  <tr><td>Textbooks & Navigation Equipment</td><td>$800 – $2,200 (initial)</td><td>One-time/As needed</td></tr>
-                  <tr><td>Headset</td><td>$300 – $1,800</td><td>One-time</td></tr>
-                  <tr><td>CPL Exam Fees (7 subjects)</td><td>$2,100 – $2,800</td><td>Per attempt</td></tr>
-                  <tr><td>Flight Test Fees (PPL, CPL, IR, ME)</td><td>$900 – $1,800 per test</td><td>Per attempt</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Class 1 Medical Certificate</td><td className="px-4 py-3 text-white/80">$350 – $600</td><td className="px-4 py-3 text-white/80">Annual/Biennial</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Class 2 Medical Certificate</td><td className="px-4 py-3 text-white/80">$250 – $450</td><td className="px-4 py-3 text-white/80">Annual/Biennial</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ASIC Card</td><td className="px-4 py-3 text-white/80">$300 – $320</td><td className="px-4 py-3 text-white/80">Initial, then renewals</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CASA License Fees (RPL, PPL, CPL)</td><td className="px-4 py-3 text-white/80">$50 – $80 per license</td><td className="px-4 py-3 text-white/80">Per license/endorsement</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Textbooks & Navigation Equipment</td><td className="px-4 py-3 text-white/80">$800 – $2,200 (initial)</td><td className="px-4 py-3 text-white/80">One-time/As needed</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Headset</td><td className="px-4 py-3 text-white/80">$300 – $1,800</td><td className="px-4 py-3 text-white/80">One-time</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CPL Exam Fees (7 subjects)</td><td className="px-4 py-3 text-white/80">$2,100 – $2,800</td><td className="px-4 py-3 text-white/80">Per attempt</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Test Fees (PPL, CPL, IR, ME)</td><td className="px-4 py-3 text-white/80">$900 – $1,800 per test</td><td className="px-4 py-3 text-white/80">Per attempt</td></tr>
                 </tbody>
               </table>
               <p><em>Source: Various flight schools and aviation career resources [3] [4].</em></p>

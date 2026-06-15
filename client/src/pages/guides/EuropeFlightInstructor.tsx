@@ -118,15 +118,15 @@ export default function EuropeFlightInstructor() {
               <h3>Career Progression:</h3>
               <p>The FI rating is often seen as a foundational step. Many instructors use the opportunity to build flight hours and gain invaluable experience before transitioning to airline careers. However, for those passionate about teaching, advanced instructor roles offer a stable and rewarding career path, contributing directly to the development of future aviators.</p>
               <h3>Table: Estimated Annual Salary Ranges for EASA Flight Instructors (2026)</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Role/Experience Level</th><th>Estimated Annual Salary (EUR)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Role/Experience Level</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (EUR)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Entry-Level/Restricted FI</td><td>€18,000 - €30,000</td></tr>
-                  <tr><td>Experienced FI (PPL/CPL)</td><td>€35,000 - €55,000</td></tr>
-                  <tr><td>Advanced FI (IR/ME)</td><td>€50,000 - €75,000</td></tr>
-                  <tr><td>Senior FI/Chief Instructor</td><td>€70,000 - €100,000+</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Entry-Level/Restricted FI</td><td className="px-4 py-3 text-white/80">€18,000 - €30,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Experienced FI (PPL/CPL)</td><td className="px-4 py-3 text-white/80">€35,000 - €55,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Advanced FI (IR/ME)</td><td className="px-4 py-3 text-white/80">€50,000 - €75,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Senior FI/Chief Instructor</td><td className="px-4 py-3 text-white/80">€70,000 - €100,000+</td></tr>
                 </tbody>
               </table>
               <p><em>Note: These figures are estimates and can vary based on country, flight school, and specific contract terms.</em></p>

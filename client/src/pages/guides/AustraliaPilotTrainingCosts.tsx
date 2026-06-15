@@ -20,7 +20,7 @@ export default function AustraliaPilotTrainingCosts() {
           content: (
             <>
               <p>Aspiring aviators in Australia face a significant, yet rewarding, financial commitment when pursuing a career in the cockpit. The journey from a novice enthusiast to a certified commercial pilot involves a series of licenses, ratings, and rigorous training, each with its own associated costs. This guide provides an exhaustive, up-to-date analysis of pilot training expenses in Australia for 2026, incorporating Civil Aviation Safety Authority (CASA) regulations, typical flight school fees, and often-overlooked expenditures. Our aim is to equip you with transparent, accurate data to plan your aviation career with confidence.</p>
-              <p>The demand for qualified pilots globally, and particularly within the Asia-Pacific region, remains robust. Major Australian airlines, regional carriers, and general aviation sectors consistently seek skilled professionals. Understanding the financial landscape is the first critical step towards achieving your dream of flying.</p>
+              <p>The demand for qualified pilots globally, and particularly within the Asia-Pacific region, remains robust. Major Australian airlines, regional carriers, and general aviation sectors consistently seek skilled professionals. Understanding the financial landscape is the first critical step towards achieving your goal of becoming a pilot.</p>
             </>
           )
         },
@@ -46,82 +46,82 @@ export default function AustraliaPilotTrainingCosts() {
             <>
               <p>The following tables provide estimated costs for each stage of pilot training in Australia for 2026. These figures are based on current market rates, including flight hours, ground school, examination fees, and essential equipment. It's important to note that actual costs can vary significantly based on the flight school, location, aircraft type, and individual learning pace.</p>
               <h3>1. Recreational Pilot Licence (RPL)</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Flight Hours (approx. 25-30 hours)</td><td>$5,000 - $8,000</td><td>Includes dual and solo flight time.</td></tr>
-                  <tr><td>Ground School & Materials</td><td>$500 - $1,000</td><td>Theory instruction and textbooks.</td></tr>
-                  <tr><td>CASA Exam Fee</td><td>$150 - $200</td><td></td></tr>
-                  <tr><td>Medical Certificate (Class 2)</td><td>$250 - $450</td><td>Minimum requirement for RPL.</td></tr>
-                  <tr><td><strong>Total Estimated RPL Cost</strong></td><td><strong>$5,900 - $9,650</strong></td><td></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hours (approx. 25-30 hours)</td><td className="px-4 py-3 text-white/80">$5,000 - $8,000</td><td className="px-4 py-3 text-white/80">Includes dual and solo flight time.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ground School & Materials</td><td className="px-4 py-3 text-white/80">$500 - $1,000</td><td className="px-4 py-3 text-white/80">Theory instruction and textbooks.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CASA Exam Fee</td><td className="px-4 py-3 text-white/80">$150 - $200</td><td className="px-4 py-3 text-white/80"></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical Certificate (Class 2)</td><td className="px-4 py-3 text-white/80">$250 - $450</td><td className="px-4 py-3 text-white/80">Minimum requirement for RPL.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated RPL Cost</strong></td><td className="px-4 py-3 text-white/80"><strong>$5,900 - $9,650</strong></td><td className="px-4 py-3 text-white/80"></td></tr>
                 </tbody>
               </table>
 
               <h3>2. Private Pilot Licence (PPL)</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Flight Hours (approx. 40-65 hours)</td><td>$12,000 - $20,000</td><td>Includes dual, solo, and cross-country flights.</td></tr>
-                  <tr><td>Ground School & Materials</td><td>$1,000 - $2,500</td><td>More in-depth theory.</td></tr>
-                  <tr><td>CASA PPL Flight Test Fee</td><td>$950 - $1,200</td><td>Includes examiner fee.</td></tr>
-                  <tr><td>Headset</td><td>$300 - $1,200</td><td>Essential equipment, one-off purchase.</td></tr>
-                  <tr><td><strong>Total Estimated PPL Cost (from scratch)</strong></td><td><strong>$14,250 - $24,900</strong></td><td>If starting with RPL, subtract RPL flight hours.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hours (approx. 40-65 hours)</td><td className="px-4 py-3 text-white/80">$12,000 - $20,000</td><td className="px-4 py-3 text-white/80">Includes dual, solo, and cross-country flights.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ground School & Materials</td><td className="px-4 py-3 text-white/80">$1,000 - $2,500</td><td className="px-4 py-3 text-white/80">More in-depth theory.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CASA PPL Flight Test Fee</td><td className="px-4 py-3 text-white/80">$950 - $1,200</td><td className="px-4 py-3 text-white/80">Includes examiner fee.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Headset</td><td className="px-4 py-3 text-white/80">$300 - $1,200</td><td className="px-4 py-3 text-white/80">Essential equipment, one-off purchase.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated PPL Cost (from scratch)</strong></td><td className="px-4 py-3 text-white/80"><strong>$14,250 - $24,900</strong></td><td className="px-4 py-3 text-white/80">If starting with RPL, subtract RPL flight hours.</td></tr>
                 </tbody>
               </table>
 
               <h3>3. Commercial Pilot Licence (CPL)</h3>
               <p>The CPL is the most substantial investment. Costs vary significantly between modular and integrated programs. Integrated programs often bundle various ratings.</p>
               <h4>Modular CPL (on top of PPL)</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Flight Hours (approx. 110-150 hours)</td><td>$45,000 - $75,000</td><td>Includes advanced maneuvers, navigation, and night flying.</td></tr>
-                  <tr><td>Ground School & Materials</td><td>$2,000 - $4,000</td><td>7 CPL theory subjects.</td></tr>
-                  <tr><td>CASA CPL Flight Test Fee</td><td>$1,400 - $1,800</td><td>Includes examiner fee.</td></tr>
-                  <tr><td><strong>Total Estimated Modular CPL Cost</strong></td><td><strong>$48,400 - $80,800</strong></td><td>This is *in addition* to PPL costs.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Hours (approx. 110-150 hours)</td><td className="px-4 py-3 text-white/80">$45,000 - $75,000</td><td className="px-4 py-3 text-white/80">Includes advanced maneuvers, navigation, and night flying.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ground School & Materials</td><td className="px-4 py-3 text-white/80">$2,000 - $4,000</td><td className="px-4 py-3 text-white/80">7 CPL theory subjects.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CASA CPL Flight Test Fee</td><td className="px-4 py-3 text-white/80">$1,400 - $1,800</td><td className="px-4 py-3 text-white/80">Includes examiner fee.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated Modular CPL Cost</strong></td><td className="px-4 py-3 text-white/80"><strong>$48,400 - $80,800</strong></td><td className="px-4 py-3 text-white/80">This is *in addition* to PPL costs.</td></tr>
                 </tbody>
               </table>
               <h4>Integrated CPL (Zero to CPL)</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Full Integrated Program Tuition</td><td>$85,000 - $150,000</td><td>Includes all flight hours (150-200+), ground school, some exams.</td></tr>
-                  <tr><td>CASA Fees (Medical, Exams, Licence Issue)</td><td>$3,000 - $5,000</td><td>Paid directly to CASA.</td></tr>
-                  <tr><td><strong>Total Estimated Integrated CPL Cost</strong></td><td><strong>$88,000 - $155,000</strong></td><td>Often includes some ratings like ME.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Full Integrated Program Tuition</td><td className="px-4 py-3 text-white/80">$85,000 - $150,000</td><td className="px-4 py-3 text-white/80">Includes all flight hours (150-200+), ground school, some exams.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CASA Fees (Medical, Exams, Licence Issue)</td><td className="px-4 py-3 text-white/80">$3,000 - $5,000</td><td className="px-4 py-3 text-white/80">Paid directly to CASA.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated Integrated CPL Cost</strong></td><td className="px-4 py-3 text-white/80"><strong>$88,000 - $155,000</strong></td><td className="px-4 py-3 text-white/80">Often includes some ratings like ME.</td></tr>
                 </tbody>
               </table>
 
               <h3>4. Instrument Rating (IR) & Multi-Engine Rating (ME)</h3>
               <p>These ratings are critical for commercial operations, especially for airline careers.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Instrument Rating (IR)</td><td>$12,000 - $25,000</td><td>Includes flight time (actual and simulator), ground theory, and flight test.</td></tr>
-                  <tr><td>Multi-Engine Rating (ME)</td><td>$8,000 - $18,000</td><td>Includes flight time, ground theory, and flight test. Often combined with IR.</td></tr>
-                  <tr><td><strong>Total Estimated IR & ME Cost</strong></td><td><strong>$20,000 - $43,000</strong></td><td>Can be higher if combined with Multi-Engine Command Instrument Rating (MECIR).</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">$12,000 - $25,000</td><td className="px-4 py-3 text-white/80">Includes flight time (actual and simulator), ground theory, and flight test.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td><td className="px-4 py-3 text-white/80">$8,000 - $18,000</td><td className="px-4 py-3 text-white/80">Includes flight time, ground theory, and flight test. Often combined with IR.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated IR & ME Cost</strong></td><td className="px-4 py-3 text-white/80"><strong>$20,000 - $43,000</strong></td><td className="px-4 py-3 text-white/80">Can be higher if combined with Multi-Engine Command Instrument Rating (MECIR).</td></tr>
                 </tbody>
               </table>
 
               <h3>5. Air Transport Pilot Licence (ATPL) Theory (Frozen ATPL)</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>ATPL Ground School Course</td><td>$2,000 - $6,000</td><td>Self-study materials or in-person courses.</td></tr>
-                  <tr><td>CASA ATPL Exam Fees (7 subjects)</td><td>$1,200 - $1,540</td><td>Approx. $170-$220 per subject.</td></tr>
-                  <tr><td>Study Materials & Question Banks</td><td>$500 - $1,500</td><td></td></tr>
-                  <tr><td><strong>Total Estimated ATPL Theory Cost</strong></td><td><strong>$3,700 - $9,040</strong></td><td></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATPL Ground School Course</td><td className="px-4 py-3 text-white/80">$2,000 - $6,000</td><td className="px-4 py-3 text-white/80">Self-study materials or in-person courses.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CASA ATPL Exam Fees (7 subjects)</td><td className="px-4 py-3 text-white/80">$1,200 - $1,540</td><td className="px-4 py-3 text-white/80">Approx. $170-$220 per subject.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Study Materials & Question Banks</td><td className="px-4 py-3 text-white/80">$500 - $1,500</td><td className="px-4 py-3 text-white/80"></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated ATPL Theory Cost</strong></td><td className="px-4 py-3 text-white/80"><strong>$3,700 - $9,040</strong></td><td className="px-4 py-3 text-white/80"></td></tr>
                 </tbody>
               </table>
             </>
@@ -134,31 +134,31 @@ export default function AustraliaPilotTrainingCosts() {
               <p>Beyond the core training fees, several other significant costs can impact your overall budget. These are often overlooked but are crucial for a realistic financial plan.</p>
               <h3>CASA Medical Certificates</h3>
               <p>A Class 1 Medical Certificate is mandatory for commercial pilots. It's highly recommended to obtain this early in your training to ensure you meet the stringent health requirements.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (AUD)</th><th>Frequency</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Frequency</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Class 2 Medical (for PPL)</td><td>$250 - $450</td><td>Annual/Biennial</td></tr>
-                  <tr><td>Class 1 Medical (for CPL/ATPL)</td><td>$350 - $600</td><td>Annual/Biennial</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Class 2 Medical (for PPL)</td><td className="px-4 py-3 text-white/80">$250 - $450</td><td className="px-4 py-3 text-white/80">Annual/Biennial</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Class 1 Medical (for CPL/ATPL)</td><td className="px-4 py-3 text-white/80">$350 - $600</td><td className="px-4 py-3 text-white/80">Annual/Biennial</td></tr>
                 </tbody>
               </table>
               <p><em>Note: Specialist referrals by a Designated Aviation Medical Examiner (DAME) for pre-existing conditions will incur additional costs.</em></p>
 
               <h3>CASA Exam and Licensing Fees</h3>
               <p>Various administrative fees are charged by CASA throughout your training journey.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (AUD)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>PPL Flight Test</td><td>$950 - $1,200</td></tr>
-                  <tr><td>CPL Flight Test</td><td>$1,400 - $1,800</td></tr>
-                  <tr><td>Instrument Rating Flight Test</td><td>$1,200 - $1,600</td></tr>
-                  <tr><td>Multi-Engine Rating Test</td><td>$900 - $1,200</td></tr>
-                  <tr><td>ATPL Theory Exams (per subject)</td><td>$170 - $220</td></tr>
-                  <tr><td>Licence Issue / Endorsement</td><td>$100 - $200 per licence</td></tr>
-                  <tr><td><strong>Total Estimated CASA Fees (across training)</strong></td><td><strong>$8,000 - $12,000</strong></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">PPL Flight Test</td><td className="px-4 py-3 text-white/80">$950 - $1,200</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CPL Flight Test</td><td className="px-4 py-3 text-white/80">$1,400 - $1,800</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating Flight Test</td><td className="px-4 py-3 text-white/80">$1,200 - $1,600</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating Test</td><td className="px-4 py-3 text-white/80">$900 - $1,200</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATPL Theory Exams (per subject)</td><td className="px-4 py-3 text-white/80">$170 - $220</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Licence Issue / Endorsement</td><td className="px-4 py-3 text-white/80">$100 - $200 per licence</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated CASA Fees (across training)</strong></td><td className="px-4 py-3 text-white/80"><strong>$8,000 - $12,000</strong></td></tr>
                 </tbody>
               </table>
 
@@ -180,15 +180,15 @@ export default function AustraliaPilotTrainingCosts() {
           content: (
             <>
               <p>Combining all the elements, here's a realistic overview of the total investment required to become a job-ready commercial pilot in Australia.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Pathway</th><th>Estimated Total Cost (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Pathway</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Total Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Modular (PPL → CPL)</td><td>$80,000 - $130,000</td><td>Excludes IR/ME and ATPL theory.</td></tr>
-                  <tr><td>Integrated (Zero to CPL with MEIR)</td><td>$100,000 - $160,000</td><td>Often includes Multi-Engine Instrument Rating.</td></tr>
-                  <tr><td>CPL + Multi-Engine + Instrument Rating + ATPL Theory</td><td>$110,000 - $175,000</td><td>A common pathway for airline readiness.</td></tr>
-                  <tr><td>CPL + ME + IR + ATPL Theory + Type Rating (Airline-Ready)</td><td>$130,000 - $200,000+</td><td>Type rating costs are often covered by airlines upon employment.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Modular (PPL → CPL)</td><td className="px-4 py-3 text-white/80">$80,000 - $130,000</td><td className="px-4 py-3 text-white/80">Excludes IR/ME and ATPL theory.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Integrated (Zero to CPL with MEIR)</td><td className="px-4 py-3 text-white/80">$100,000 - $160,000</td><td className="px-4 py-3 text-white/80">Often includes Multi-Engine Instrument Rating.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CPL + Multi-Engine + Instrument Rating + ATPL Theory</td><td className="px-4 py-3 text-white/80">$110,000 - $175,000</td><td className="px-4 py-3 text-white/80">A common pathway for airline readiness.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CPL + ME + IR + ATPL Theory + Type Rating (Airline-Ready)</td><td className="px-4 py-3 text-white/80">$130,000 - $200,000+</td><td className="px-4 py-3 text-white/80">Type rating costs are often covered by airlines upon employment.</td></tr>
                 </tbody>
               </table>
               <p>These figures represent the cost to achieve the necessary qualifications. They do not typically include living expenses, which can add a significant amount, as detailed in the 'Hidden Costs' section.</p>

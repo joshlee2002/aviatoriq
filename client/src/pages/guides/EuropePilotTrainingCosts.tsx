@@ -41,59 +41,59 @@ export default function EuropePilotTrainingCosts() {
               <p>For an <strong>Integrated ATPL program</strong>, the average cost in Europe for 2026 ranges from approximately <strong>€60,000 to €140,000</strong>. Prestigious academies like Quality Fly in Madrid offer programs around €86,000, while others such as L3Harris and CAE can exceed €112,000 and €120,000 respectively, depending on the specific course and location. The National Flight Centre (NFC) in Dublin, for instance, quotes its Integrated ATPL course for European students at €83,500. These figures typically encompass all flight and ground instruction, simulator time, and necessary materials.</p>
               <p>The <strong>Modular ATPL program</strong>, while requiring more self-discipline and potentially a longer completion time, generally presents a lower upfront cost. Estimates for 2026 place modular training between <strong>€40,000 and €100,000+</strong>. This route allows for a pay-as-you-go approach, where individual licenses and ratings are paid for separately. For example, ATPL theory alone might cost around €8,716, with subsequent flight hours and ratings adding to the total. A comprehensive modular plan, including experience building, could range from £65,000 to £78,000 (approximately €76,000 to €91,000, depending on exchange rates) for a dual license.</p>
               <p>Below is a comparative table illustrating typical cost ranges for different training components in EUR for 2026:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Training Component</th>
-                    <th>Typical Cost Range (EUR)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Component</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Cost Range (EUR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Integrated ATPL Program</td>
-                    <td>€60,000 - €140,000</td>
-                    <td>Full-time, all-inclusive, faster completion</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Integrated ATPL Program</td>
+                    <td className="px-4 py-3 text-white/80">€60,000 - €140,000</td>
+                    <td className="px-4 py-3 text-white/80">Full-time, all-inclusive, faster completion</td>
                   </tr>
-                  <tr>
-                    <td>Modular ATPL Program</td>
-                    <td>€40,000 - €100,000+</td>
-                    <td>Flexible, pay-as-you-go, self-paced</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Modular ATPL Program</td>
+                    <td className="px-4 py-3 text-white/80">€40,000 - €100,000+</td>
+                    <td className="px-4 py-3 text-white/80">Flexible, pay-as-you-go, self-paced</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Theory (Modular)</td>
-                    <td>€5,000 - €10,000</td>
-                    <td>Often includes study materials and exams</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Theory (Modular)</td>
+                    <td className="px-4 py-3 text-white/80">€5,000 - €10,000</td>
+                    <td className="px-4 py-3 text-white/80">Often includes study materials and exams</td>
                   </tr>
-                  <tr>
-                    <td>PPL (Private Pilot License)</td>
-                    <td>€8,000 - €15,000</td>
-                    <td>Prerequisite for modular route</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">PPL (Private Pilot License)</td>
+                    <td className="px-4 py-3 text-white/80">€8,000 - €15,000</td>
+                    <td className="px-4 py-3 text-white/80">Prerequisite for modular route</td>
                   </tr>
-                  <tr>
-                    <td>CPL (Commercial Pilot License)</td>
-                    <td>€15,000 - €25,000</td>
-                    <td>Includes flight hours and skill test</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CPL (Commercial Pilot License)</td>
+                    <td className="px-4 py-3 text-white/80">€15,000 - €25,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes flight hours and skill test</td>
                   </tr>
-                  <tr>
-                    <td>MEIR (Multi-Engine Instrument Rating)</td>
-                    <td>€15,000 - €25,000</td>
-                    <td>Crucial for airline operations</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">MEIR (Multi-Engine Instrument Rating)</td>
+                    <td className="px-4 py-3 text-white/80">€15,000 - €25,000</td>
+                    <td className="px-4 py-3 text-white/80">Crucial for airline operations</td>
                   </tr>
-                  <tr>
-                    <td>MCC (Multi-Crew Cooperation)</td>
-                    <td>€3,000 - €6,000</td>
-                    <td>Required for multi-pilot aircraft</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">MCC (Multi-Crew Cooperation)</td>
+                    <td className="px-4 py-3 text-white/80">€3,000 - €6,000</td>
+                    <td className="px-4 py-3 text-white/80">Required for multi-pilot aircraft</td>
                   </tr>
-                  <tr>
-                    <td>UPRT (Upset Prevention & Recovery Training)</td>
-                    <td>€2,000 - €4,000</td>
-                    <td>Mandatory for commercial pilots</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">UPRT (Upset Prevention & Recovery Training)</td>
+                    <td className="px-4 py-3 text-white/80">€2,000 - €4,000</td>
+                    <td className="px-4 py-3 text-white/80">Mandatory for commercial pilots</td>
                   </tr>
-                  <tr>
-                    <td>Class 1 Medical Certificate</td>
-                    <td>€150 - €500 (initial)</td>
-                    <td>Annual renewals apply</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Class 1 Medical Certificate</td>
+                    <td className="px-4 py-3 text-white/80">€150 - €500 (initial)</td>
+                    <td className="px-4 py-3 text-white/80">Annual renewals apply</td>
                   </tr>
                 </tbody>
               </table>

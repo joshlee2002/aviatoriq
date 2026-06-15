@@ -5,7 +5,7 @@ export default function TcMedicalClass1() {
   return (
     <GuideLayout
       title="Transport Canada Medical Class 1: Your Essential Guide to Aviation Fitness"
-      subtitle="A comprehensive guide to the requirements, process, costs, and critical considerations for obtaining and maintaining your TC Medical Class 1 certificate in 2026."
+      subtitle="The requirements, process, costs, and critical considerations for obtaining and maintaining your TC Medical Class 1 certificate in 2026."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="January 2026"
@@ -19,7 +19,7 @@ export default function TcMedicalClass1() {
           heading: "Introduction: The Gateway to Canadian Skies",
           content: (
             <>
-              <p>For aspiring commercial and airline pilots in Canada, obtaining a Transport Canada (TC) Medical Certificate Class 1 is not merely a formality; it is a fundamental prerequisite and a testament to one's physical and mental fitness to safely operate aircraft. This comprehensive guide delves into the intricacies of the TC Medical Class 1, outlining its importance, requirements, the examination process, associated costs, and critical considerations for 2026.</p>
+              <p>For aspiring commercial and airline pilots in Canada, obtaining a Transport Canada (TC) Medical Certificate Class 1 is not merely a formality; it is a fundamental prerequisite and a testament to one's physical and mental fitness to safely operate aircraft. This comprehensive guide covers the TC Medical Class 1, outlining its importance, requirements, the examination process, associated costs, and critical considerations for 2026.</p>
             </>
           )
         },
@@ -94,14 +94,14 @@ export default function TcMedicalClass1() {
           content: (
             <>
               <p>The validity period of a TC Medical Class 1 certificate depends on the pilot's age and the type of operation. It is crucial to be aware of these periods to ensure continuous medical certification.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Age Group</th><th>Medical Validity (Multi-Crew)</th><th>Medical Validity (Single-Pilot, Commercial)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Age Group</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Medical Validity (Multi-Crew)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Medical Validity (Single-Pilot, Commercial)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Under 40 Years</td><td>12 months</td><td>12 months</td></tr>
-                  <tr><td>40 to 59 Years</td><td>12 months</td><td>6 months</td></tr>
-                  <tr><td>60 Years and Over</td><td>6 months</td><td>6 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Under 40 Years</td><td className="px-4 py-3 text-white/80">12 months</td><td className="px-4 py-3 text-white/80">12 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">40 to 59 Years</td><td className="px-4 py-3 text-white/80">12 months</td><td className="px-4 py-3 text-white/80">6 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">60 Years and Over</td><td className="px-4 py-3 text-white/80">6 months</td><td className="px-4 py-3 text-white/80">6 months</td></tr>
                 </tbody>
               </table>
               <ul>

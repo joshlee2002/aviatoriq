@@ -19,7 +19,7 @@ export default function AustraliaMilitaryToAirlines() {
           heading: "Introduction: The Valued Transition",
           content: (
             <>
-              <p>The transition from military to commercial aviation is a well-trodden path for many highly skilled pilots in Australia. The Australian Defence Force (ADF) produces some of the world's most capable aviators, equipped with unparalleled discipline, decision-making under pressure, and advanced operational experience. These qualities are highly sought after by commercial airlines, making ex-military pilots prime candidates for a successful second career in the civilian sector. However, navigating the regulatory landscape of the Civil Aviation Safety Authority (CASA) and the specific requirements of Australian airlines requires careful planning and execution. This guide provides a comprehensive roadmap for ADF pilots looking to make this significant career move in 2026, detailing the licensing conversion process, associated costs, and employment opportunities.</p>
+              <p>The transition from military to commercial aviation is a well-trodden path for many highly skilled pilots in Australia. The Australian Defence Force (ADF) produces some of the world's most capable aviators, equipped with exceptional discipline, decision-making under pressure, and advanced operational experience. These qualities are highly sought after by commercial airlines, making ex-military pilots prime candidates for a successful second career in the civilian sector. However, navigating the regulatory landscape of the Civil Aviation Safety Authority (CASA) and the specific requirements of Australian airlines requires careful planning and execution. This guide provides a comprehensive roadmap for ADF pilots looking to make this significant career move in 2026, detailing the licensing conversion process, associated costs, and employment opportunities.</p>
               <p>While the skills acquired in the military are invaluable, the civilian aviation world operates under a different set of rules and procedures. Understanding these differences and proactively addressing the conversion requirements will streamline your journey. This guide will delve into the specifics of CASA regulations, the necessary examinations, financial considerations, and insights into what major Australian airlines are looking for for their pilot recruits.</p>
             </>
           )
@@ -75,57 +75,57 @@ export default function AustraliaMilitaryToAirlines() {
           content: (
             <>
               <p>The financial and time investment for transitioning from military to commercial aviation can vary, but a realistic estimate is crucial for planning. The following table provides a breakdown of potential costs and timelines for 2026:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Estimated Cost (AUD)</th>
-                    <th>Estimated Time</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Time</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>CASA ATPL Theory Exams (AOSA/AOSH, AHUF, IREX)</td>
-                    <td>~AUD 630 (3 exams x AUD 210.33)</td>
-                    <td>3-6 months (study + exams)</td>
-                    <td>Excludes ground school fees. Each exam requires an 80% pass mark.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CASA ATPL Theory Exams (AOSA/AOSH, AHUF, IREX)</td>
+                    <td className="px-4 py-3 text-white/80">~AUD 630 (3 exams x AUD 210.33)</td>
+                    <td className="px-4 py-3 text-white/80">3-6 months (study + exams)</td>
+                    <td className="px-4 py-3 text-white/80">Excludes ground school fees. Each exam requires an 80% pass mark.</td>
                   </tr>
-                  <tr>
-                    <td>Class 1 Medical Certificate (Initial)</td>
-                    <td>AUD 800 - AUD 1,100</td>
-                    <td>1-2 weeks</td>
-                    <td>Cost varies by DAME and required specialist tests.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Class 1 Medical Certificate (Initial)</td>
+                    <td className="px-4 py-3 text-white/80">AUD 800 - AUD 1,100</td>
+                    <td className="px-4 py-3 text-white/80">1-2 weeks</td>
+                    <td className="px-4 py-3 text-white/80">Cost varies by DAME and required specialist tests.</td>
                   </tr>
-                  <tr>
-                    <td>Ground School / Exam Preparation</td>
-                    <td>AUD 2,000 - AUD 5,000+</td>
-                    <td>Variable</td>
-                    <td>Highly recommended for civilian exam specific knowledge.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground School / Exam Preparation</td>
+                    <td className="px-4 py-3 text-white/80">AUD 2,000 - AUD 5,000+</td>
+                    <td className="px-4 py-3 text-white/80">Variable</td>
+                    <td className="px-4 py-3 text-white/80">Highly recommended for civilian exam specific knowledge.</td>
                   </tr>
-                  <tr>
-                    <td>Flight Review / Proficiency Check (if required)</td>
-                    <td>AUD 500 - AUD 1,500</td>
-                    <td>Few days</td>
-                    <td>May be needed to demonstrate recency or specific civilian procedures.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Review / Proficiency Check (if required)</td>
+                    <td className="px-4 py-3 text-white/80">AUD 500 - AUD 1,500</td>
+                    <td className="px-4 py-3 text-white/80">Few days</td>
+                    <td className="px-4 py-3 text-white/80">May be needed to demonstrate recency or specific civilian procedures.</td>
                   </tr>
-                  <tr>
-                    <td>English Language Proficiency (if not already met)</td>
-                    <td>AUD 200 - AUD 400</td>
-                    <td>1 day</td>
-                    <td>Required for ICAO compliance.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">English Language Proficiency (if not already met)</td>
+                    <td className="px-4 py-3 text-white/80">AUD 200 - AUD 400</td>
+                    <td className="px-4 py-3 text-white/80">1 day</td>
+                    <td className="px-4 py-3 text-white/80">Required for ICAO compliance.</td>
                   </tr>
-                  <tr>
-                    <td>Application Fees (CASA)</td>
-                    <td>AUD 100 - AUD 300</td>
-                    <td>N/A</td>
-                    <td>For licence issue and ratings.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Application Fees (CASA)</td>
+                    <td className="px-4 py-3 text-white/80">AUD 100 - AUD 300</td>
+                    <td className="px-4 py-3 text-white/80">N/A</td>
+                    <td className="px-4 py-3 text-white/80">For licence issue and ratings.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Minimum Cost</strong></td>
-                    <td><strong>AUD 4,230 - AUD 8,930+</strong></td>
-                    <td><strong>6-12 months (overall)</strong></td>
-                    <td>Excludes type rating costs, which are typically covered by airlines.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Minimum Cost</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>AUD 4,230 - AUD 8,930+</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>6-12 months (overall)</strong></td>
+                    <td className="px-4 py-3 text-white/80">Excludes type rating costs, which are typically covered by airlines.</td>
                   </tr>
                 </tbody>
               </table>

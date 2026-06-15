@@ -54,41 +54,41 @@ export default function NzCplRequirements() {
             <>
               <p>The theoretical component of the CPL is as critical as the practical flying. Candidates must pass a series of rigorous written examinations covering a broad spectrum of aviation subjects. These exams are administered by Aspeq on behalf of CAA NZ, and a minimum pass mark of 70% is typically required for each subject.</p>
               <p>The CPL theory syllabus is designed to equip pilots with an in-depth understanding of the principles governing flight, navigation, meteorology, and human factors, among others. Training providers like Nelson Aviation College offer structured courses to prepare students for these challenging examinations.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Subject Area</th>
-                    <th>Key Focus Areas</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Subject Area</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Focus Areas</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Human Factors</td>
-                    <td>Pilot performance, decision-making, error management, crew resource management (CRM)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Human Factors</td>
+                    <td className="px-4 py-3 text-white/80">Pilot performance, decision-making, error management, crew resource management (CRM)</td>
                   </tr>
-                  <tr>
-                    <td>Air Law</td>
-                    <td>CAA NZ regulations, operational rules, airspace classifications, licensing requirements</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Air Law</td>
+                    <td className="px-4 py-3 text-white/80">CAA NZ regulations, operational rules, airspace classifications, licensing requirements</td>
                   </tr>
-                  <tr>
-                    <td>Meteorology</td>
-                    <td>Weather phenomena, forecasting, aviation weather reports (METAR, TAF), hazardous weather</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Meteorology</td>
+                    <td className="px-4 py-3 text-white/80">Weather phenomena, forecasting, aviation weather reports (METAR, TAF), hazardous weather</td>
                   </tr>
-                  <tr>
-                    <td>Principles of Flight</td>
-                    <td>Aerodynamics, aircraft performance, stability, control surfaces</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Principles of Flight</td>
+                    <td className="px-4 py-3 text-white/80">Aerodynamics, aircraft performance, stability, control surfaces</td>
                   </tr>
-                  <tr>
-                    <td>Navigation</td>
-                    <td>Dead reckoning, radio navigation (VOR, NDB, GPS), flight planning, charts</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Navigation</td>
+                    <td className="px-4 py-3 text-white/80">Dead reckoning, radio navigation (VOR, NDB, GPS), flight planning, charts</td>
                   </tr>
-                  <tr>
-                    <td>General Aircraft Technical Knowledge</td>
-                    <td>Aircraft systems (engines, airframe, electrics), instruments, maintenance procedures</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">General Aircraft Technical Knowledge</td>
+                    <td className="px-4 py-3 text-white/80">Aircraft systems (engines, airframe, electrics), instruments, maintenance procedures</td>
                   </tr>
-                  <tr>
-                    <td>Basic Turbine Knowledge Rating</td>
-                    <td>Introduction to turbine engines, systems, and operational considerations</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Basic Turbine Knowledge Rating</td>
+                    <td className="px-4 py-3 text-white/80">Introduction to turbine engines, systems, and operational considerations</td>
                   </tr>
                 </tbody>
               </table>
@@ -101,33 +101,33 @@ export default function NzCplRequirements() {
             <>
               <p>The practical flying component is the heart of CPL training. It involves accumulating significant flight hours under various conditions and demonstrating advanced piloting skills. The CAA NZ Part 61 regulations stipulate specific minimum flight time requirements, which are often exceeded by training schools to ensure comprehensive preparation.</p>
               <p>A typical CPL flight training program will include advanced maneuvers, instrument flying, cross-country navigation, and potentially mountain flying, depending on the training provider and operational environment. The goal is to develop a highly proficient and adaptable pilot capable of handling complex situations safely and efficiently.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Requirement</th>
-                    <th>Minimum Hours (Aeroplane)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Hours (Aeroplane)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Total Flight Time</td>
-                    <td>200 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">200 hours</td>
                   </tr>
-                  <tr>
-                    <td>Pilot in Command (Solo) Time</td>
-                    <td>100 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Pilot in Command (Solo) Time</td>
+                    <td className="px-4 py-3 text-white/80">100 hours</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Flight Time</td>
-                    <td>10 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">10 hours</td>
                   </tr>
-                  <tr>
-                    <td>Cross-Country Flight Time</td>
-                    <td>(Included in total/solo, specific requirements apply)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Cross-Country Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">(Included in total/solo, specific requirements apply)</td>
                   </tr>
-                  <tr>
-                    <td>Mountain Flying Course</td>
-                    <td>(Often included in advanced training)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Mountain Flying Course</td>
+                    <td className="px-4 py-3 text-white/80">(Often included in advanced training)</td>
                   </tr>
                 </tbody>
               </table>
@@ -141,44 +141,44 @@ export default function NzCplRequirements() {
             <>
               <p>Investing in CPL training is a significant financial commitment. Costs can vary widely depending on the flight school, the type of aircraft used, the pace of training, and individual student aptitude. For 2026, aspiring pilots should budget carefully for tuition, flight hours, examination fees, medicals, and living expenses.</p>
               <p>Based on current data from reputable New Zealand flight training organizations, the cost for a comprehensive CPL program typically ranges from NZD $80,000 to NZD $130,000. This figure often includes flight hours, ground school, theory materials, and flight tests, but it's crucial to verify inclusions with each school.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Cost Category</th>
-                    <th>Estimated Range (NZD, 2026)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Range (NZD, 2026)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Flight Training (PPL to CPL)</td>
-                    <td>$79,000 - $120,000</td>
-                    <td>Includes aircraft rental, instructor fees, fuel. Varies by school and efficiency.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Training (PPL to CPL)</td>
+                    <td className="px-4 py-3 text-white/80">$79,000 - $120,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes aircraft rental, instructor fees, fuel. Varies by school and efficiency.</td>
                   </tr>
-                  <tr>
-                    <td>Theory Exams (Aspeq)</td>
-                    <td>$1,500 - $2,500</td>
-                    <td>Per attempt fees for 6-7 subjects.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Theory Exams (Aspeq)</td>
+                    <td className="px-4 py-3 text-white/80">$1,500 - $2,500</td>
+                    <td className="px-4 py-3 text-white/80">Per attempt fees for 6-7 subjects.</td>
                   </tr>
-                  <tr>
-                    <td>CAA NZ Class 1 Medical</td>
-                    <td>$500 - $800 (initial)</td>
-                    <td>Annual renewals will incur further costs.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CAA NZ Class 1 Medical</td>
+                    <td className="px-4 py-3 text-white/80">$500 - $800 (initial)</td>
+                    <td className="px-4 py-3 text-white/80">Annual renewals will incur further costs.</td>
                   </tr>
-                  <tr>
-                    <td>Licence Application Fees</td>
-                    <td>$200 - $400</td>
-                    <td>Fees for CPL issue and associated ratings.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Licence Application Fees</td>
+                    <td className="px-4 py-3 text-white/80">$200 - $400</td>
+                    <td className="px-4 py-3 text-white/80">Fees for CPL issue and associated ratings.</td>
                   </tr>
-                  <tr>
-                    <td>Study Materials & Equipment</td>
-                    <td>$1,000 - $3,000</td>
-                    <td>Textbooks, charts, headset, uniform, flight bag.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Study Materials & Equipment</td>
+                    <td className="px-4 py-3 text-white/80">$1,000 - $3,000</td>
+                    <td className="px-4 py-3 text-white/80">Textbooks, charts, headset, uniform, flight bag.</td>
                   </tr>
-                  <tr>
-                    <td>Living Expenses (if applicable)</td>
-                    <td>$15,000 - $25,000 per year</td>
-                    <td>Accommodation, food, transport. Highly variable.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Living Expenses (if applicable)</td>
+                    <td className="px-4 py-3 text-white/80">$15,000 - $25,000 per year</td>
+                    <td className="px-4 py-3 text-white/80">Accommodation, food, transport. Highly variable.</td>
                   </tr>
                 </tbody>
               </table>

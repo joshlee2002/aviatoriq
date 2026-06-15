@@ -55,41 +55,41 @@ export default function NzMedicalClass1() {
               <p>
                 During the appointment, the ME will confirm your identity using photographic identification (e.g., NZ passport, NZ Driver Licence, or other approved photographic ID). A series of tests are conducted, which may include:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Test Category</th>
-                    <th>Initial Class 1 Requirement</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Test Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Initial Class 1 Requirement</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>General</td>
-                    <td>Physical examination, medical history review</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">General</td>
+                    <td className="px-4 py-3 text-white/80">Physical examination, medical history review</td>
                   </tr>
-                  <tr>
-                    <td>Vision</td>
-                    <td>Visual acuity, color vision, field of vision, eye health (special eye report by accredited optometrist/ophthalmologist required for first-time applicants)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Vision</td>
+                    <td className="px-4 py-3 text-white/80">Visual acuity, color vision, field of vision, eye health (special eye report by accredited optometrist/ophthalmologist required for first-time applicants)</td>
                   </tr>
-                  <tr>
-                    <td>Hearing</td>
-                    <td>Audiogram</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Hearing</td>
+                    <td className="px-4 py-3 text-white/80">Audiogram</td>
                   </tr>
-                  <tr>
-                    <td>Cardiovascular</td>
-                    <td>Electrocardiogram (ECG)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Cardiovascular</td>
+                    <td className="px-4 py-3 text-white/80">Electrocardiogram (ECG)</td>
                   </tr>
-                  <tr>
-                    <td>Respiratory</td>
-                    <td>Spirometry</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Respiratory</td>
+                    <td className="px-4 py-3 text-white/80">Spirometry</td>
                   </tr>
-                  <tr>
-                    <td>Urine</td>
-                    <td>Urinalysis (for glucose, protein, blood)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Urine</td>
+                    <td className="px-4 py-3 text-white/80">Urinalysis (for glucose, protein, blood)</td>
                   </tr>
-                  <tr>
-                    <td>Blood</td>
-                    <td>Haemoglobin, lipids, blood sugar (as required)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Blood</td>
+                    <td className="px-4 py-3 text-white/80">Haemoglobin, lipids, blood sugar (as required)</td>
                   </tr>
                 </tbody>
               </table>
@@ -110,41 +110,41 @@ export default function NzMedicalClass1() {
               <p>
                 The total cost of obtaining a Class 1 Medical Certificate comprises the CAA application fee and the medical examiner's fees, which can vary. The CAA application fee is a fixed NZD $132.83 (including GST) for residents. Medical examiner fees are additional and depend on the ME and any required outsourced tests. Based on current information, an initial Class 1 medical examination can range from NZD $500 to NZD $950, including various tests.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Cost Item</th>
-                    <th>Estimated Range (NZD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Range (NZD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>CAA Application Fee (Resident)</td>
-                    <td>$132.83 (fixed)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CAA Application Fee (Resident)</td>
+                    <td className="px-4 py-3 text-white/80">$132.83 (fixed)</td>
                   </tr>
-                  <tr>
-                    <td>Medical Examination (ME Fee)</td>
-                    <td>$350 - $599</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Medical Examination (ME Fee)</td>
+                    <td className="px-4 py-3 text-white/80">$350 - $599</td>
                   </tr>
-                  <tr>
-                    <td>ECG (if separate)</td>
-                    <td>$65 - $100</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ECG (if separate)</td>
+                    <td className="px-4 py-3 text-white/80">$65 - $100</td>
                   </tr>
-                  <tr>
-                    <td>Audiogram (if separate)</td>
-                    <td>$85 - $100</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Audiogram (if separate)</td>
+                    <td className="px-4 py-3 text-white/80">$85 - $100</td>
                   </tr>
-                  <tr>
-                    <td>Spirometry (if separate)</td>
-                    <td>$50 - $80</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Spirometry (if separate)</td>
+                    <td className="px-4 py-3 text-white/80">$50 - $80</td>
                   </tr>
-                  <tr>
-                    <td>Special Eye Report (if separate)</td>
-                    <td>$100 - $200</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Special Eye Report (if separate)</td>
+                    <td className="px-4 py-3 text-white/80">$100 - $200</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Initial Cost</strong></td>
-                    <td><strong>$780 - $1212</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Initial Cost</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$780 - $1212</strong></td>
                   </tr>
                 </tbody>
               </table>

@@ -84,54 +84,54 @@ export default function AirNewZealandCadet() {
                 It is crucial to note that these figures often cover tuition and flight hours but may not include additional expenses such as medical examinations, CAA NZ licensing fees, study materials, uniforms, accommodation, and living costs. Financial planning is a critical component of the pilot training journey. Options for funding may include personal savings, student loans, scholarships, and, for a select few, airline cadetship programs that offer financial support.
               </p>
               <h3>Typical Cost Breakdown (Estimates for 2026):</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Estimated Cost (NZD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>15,000 - 25,000</td>
-                    <td>Includes minimum flight hours, ground school, exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">15,000 - 25,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes minimum flight hours, ground school, exams.</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>40,000 - 70,000</td>
-                    <td>Builds on PPL, includes advanced flight training, theory, exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">40,000 - 70,000</td>
+                    <td className="px-4 py-3 text-white/80">Builds on PPL, includes advanced flight training, theory, exams.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>15,000 - 25,000</td>
-                    <td>Often integrated with CPL or as a standalone course.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">15,000 - 25,000</td>
+                    <td className="px-4 py-3 text-white/80">Often integrated with CPL or as a standalone course.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (ME)</td>
-                    <td>5,000 - 10,000</td>
-                    <td>Additional training for multi-engine aircraft.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
+                    <td className="px-4 py-3 text-white/80">5,000 - 10,000</td>
+                    <td className="px-4 py-3 text-white/80">Additional training for multi-engine aircraft.</td>
                   </tr>
-                  <tr>
-                    <td>Frozen ATPL Theory</td>
-                    <td>5,000 - 10,000</td>
-                    <td>Advanced theoretical knowledge for airline operations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Frozen ATPL Theory</td>
+                    <td className="px-4 py-3 text-white/80">5,000 - 10,000</td>
+                    <td className="px-4 py-3 text-white/80">Advanced theoretical knowledge for airline operations.</td>
                   </tr>
-                  <tr>
-                    <td>CAA NZ Fees & Medicals</td>
-                    <td>2,000 - 4,000</td>
-                    <td>Initial Class 1 medical, license application fees, exam fees.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CAA NZ Fees & Medicals</td>
+                    <td className="px-4 py-3 text-white/80">2,000 - 4,000</td>
+                    <td className="px-4 py-3 text-white/80">Initial Class 1 medical, license application fees, exam fees.</td>
                   </tr>
-                  <tr>
-                    <td>Study Materials & Equipment</td>
-                    <td>1,000 - 3,000</td>
-                    <td>Headset, textbooks, navigation tools, uniform.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Study Materials & Equipment</td>
+                    <td className="px-4 py-3 text-white/80">1,000 - 3,000</td>
+                    <td className="px-4 py-3 text-white/80">Headset, textbooks, navigation tools, uniform.</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Range</strong></td>
-                    <td><strong>80,000 - 150,000+</strong></td>
-                    <td>Excludes living expenses, accommodation, and type ratings.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Range</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>80,000 - 150,000+</strong></td>
+                    <td className="px-4 py-3 text-white/80">Excludes living expenses, accommodation, and type ratings.</td>
                   </tr>
                 </tbody>
               </table>

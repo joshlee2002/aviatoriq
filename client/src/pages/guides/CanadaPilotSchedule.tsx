@@ -30,14 +30,14 @@ export default function CanadaPilotSchedule() {
             <>
               <p>The foundation of any pilot career in Canada begins with a series of licenses, each building upon the last. Transport Canada (TC) oversees all aviation licensing, ensuring high standards of safety and proficiency. The primary licenses you will pursue include the Private Pilot License (PPL), Commercial Pilot License (CPL), and ultimately, the Airline Transport Pilot License (ATPL).</p>
               <p>Each license has specific aeronautical experience requirements, including flight hours, cross-country time, instrument time, and night flying. Theoretical knowledge is assessed through written examinations, and practical skills are evaluated during flight tests. Understanding these prerequisites is crucial for planning an effective training schedule.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>License Type</th><th>Minimum Age</th><th>Medical Certificate</th><th>Minimum Flight Hours</th><th>Key Privileges</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">License Type</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Age</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Medical Certificate</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Flight Hours</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Privileges</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot License (PPL)</td><td>17 (for license)</td><td>Category 3</td><td>45 (40 dual, 5 solo)</td><td>Fly for pleasure, non-commercial</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>18</td><td>Category 1</td><td>200 (100 PIC, 20 cross-country PIC)</td><td>Fly for hire, single-pilot commercial ops</td></tr>
-                  <tr><td>Airline Transport Pilot License (ATPL)</td><td>21</td><td>Category 1</td><td>1500 (250 PIC, 100 night, 100 cross-country)</td><td>Command multi-crew aircraft in commercial air transport</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">17 (for license)</td><td className="px-4 py-3 text-white/80">Category 3</td><td className="px-4 py-3 text-white/80">45 (40 dual, 5 solo)</td><td className="px-4 py-3 text-white/80">Fly for pleasure, non-commercial</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">18</td><td className="px-4 py-3 text-white/80">Category 1</td><td className="px-4 py-3 text-white/80">200 (100 PIC, 20 cross-country PIC)</td><td className="px-4 py-3 text-white/80">Fly for hire, single-pilot commercial ops</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Airline Transport Pilot License (ATPL)</td><td className="px-4 py-3 text-white/80">21</td><td className="px-4 py-3 text-white/80">Category 1</td><td className="px-4 py-3 text-white/80">1500 (250 PIC, 100 night, 100 cross-country)</td><td className="px-4 py-3 text-white/80">Command multi-crew aircraft in commercial air transport</td></tr>
                 </tbody>
               </table>
               <p><em>Note: All flight hour requirements are minimums. Most students will exceed these to achieve proficiency.</em></p>
@@ -50,17 +50,17 @@ export default function CanadaPilotSchedule() {
             <>
               <p>The duration of pilot training in Canada can vary significantly based on the chosen training pathway, individual aptitude, and financial resources. Generally, there are two main routes: integrated programs and modular training. Integrated programs are often full-time, structured courses offered by larger flight schools, designed to take a student from zero experience to a CPL with multi-engine and instrument ratings efficiently. Modular training allows for greater flexibility, enabling students to complete licenses and ratings at their own pace.</p>
               <p>For 2026, a realistic timeline for a full-time student pursuing an integrated program from PPL to CPL with multi-engine and instrument ratings would be approximately 18-24 months. Modular training can extend this timeline, often taking 2-4 years depending on the student's availability and commitment. The ATPL is typically obtained later in a pilot's career, after accumulating significant flight experience.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Training Phase</th><th>Full-Time (Integrated)</th><th>Part-Time (Modular)</th><th>Key Milestones</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Full-Time (Integrated)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part-Time (Modular)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Milestones</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot License (PPL)</td><td>3-6 months</td><td>6-12 months</td><td>TC Written Exam, Flight Test</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>9-12 months (post-PPL)</td><td>18-36 months (post-PPL)</td><td>TC Written Exam, Flight Test</td></tr>
-                  <tr><td>Multi-Engine Rating</td><td>1-2 months</td><td>2-4 months</td><td>Flight Test</td></tr>
-                  <tr><td>Instrument Rating (Group 1)</td><td>3-5 months</td><td>6-12 months</td><td>TC Written Exam, Flight Test</td></tr>
-                  <tr><td>ATPL Written Exams</td><td>Concurrent with CPL/IR</td><td>As experience accumulates</td><td>Two TC Written Exams (SAMRA, SARON)</td></tr>
-                  <tr><td>ATPL (Frozen)</td><td>~2 years post-CPL</td><td>~3-5 years post-CPL</td><td>Accumulate 1500 hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">3-6 months</td><td className="px-4 py-3 text-white/80">6-12 months</td><td className="px-4 py-3 text-white/80">TC Written Exam, Flight Test</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">9-12 months (post-PPL)</td><td className="px-4 py-3 text-white/80">18-36 months (post-PPL)</td><td className="px-4 py-3 text-white/80">TC Written Exam, Flight Test</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating</td><td className="px-4 py-3 text-white/80">1-2 months</td><td className="px-4 py-3 text-white/80">2-4 months</td><td className="px-4 py-3 text-white/80">Flight Test</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (Group 1)</td><td className="px-4 py-3 text-white/80">3-5 months</td><td className="px-4 py-3 text-white/80">6-12 months</td><td className="px-4 py-3 text-white/80">TC Written Exam, Flight Test</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATPL Written Exams</td><td className="px-4 py-3 text-white/80">Concurrent with CPL/IR</td><td className="px-4 py-3 text-white/80">As experience accumulates</td><td className="px-4 py-3 text-white/80">Two TC Written Exams (SAMRA, SARON)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATPL (Frozen)</td><td className="px-4 py-3 text-white/80">~2 years post-CPL</td><td className="px-4 py-3 text-white/80">~3-5 years post-CPL</td><td className="px-4 py-3 text-white/80">Accumulate 1500 hours</td></tr>
                 </tbody>
               </table>
               <p><em>These timelines are estimates for 2026 and can be influenced by weather, aircraft availability, instructor availability, and individual learning pace.</em></p>
@@ -73,17 +73,17 @@ export default function CanadaPilotSchedule() {
             <>
               <p>Pilot training represents a significant financial investment. Costs can vary widely between flight schools and regions within Canada. For 2026, aspiring pilots should anticipate total costs ranging from CAD $70,000 to CAD $120,000 for a CPL with multi-engine and instrument ratings. This includes tuition, flight hours, ground school, examination fees, and study materials. The ATPL itself does not incur significant additional training costs beyond the CPL, as it is primarily an experience-based license, but the cost of accumulating 1500 hours must be factored into career planning.</p>
               <p>Financing options include personal savings, student loans (e.g., through major Canadian banks like RBC, TD, BMO), government student aid programs (provincial and federal), and scholarships offered by aviation organizations (e.g., COPA, Ninety-Nines, specific airlines). Early and thorough financial planning is essential.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Training Phase</th><th>Estimated Cost (CAD 2026)</th><th>Key Expenses Included</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD 2026)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Expenses Included</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot License (PPL)</td><td>$15,000 - $25,000</td><td>45-60 flight hours, ground school, exams, materials</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>$40,000 - $60,000</td><td>150-200 flight hours, advanced ground school, exams, materials</td></tr>
-                  <tr><td>Multi-Engine Rating</td><td>$5,000 - $10,000</td><td>5-10 multi-engine flight hours, ground instruction</td></tr>
-                  <tr><td>Instrument Rating (Group 1)</td><td>$15,000 - $25,000</td><td>40-50 instrument flight hours (sim/aircraft), ground school, exams</td></tr>
-                  <tr><td>Total (PPL to CPL/ME/IR)</td><td>$75,000 - $120,000</td><td>Comprehensive training, all ratings</td></tr>
-                  <tr><td>ATPL Written Exams</td><td>$500 - $1,000</td><td>Exam fees only</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$15,000 - $25,000</td><td className="px-4 py-3 text-white/80">45-60 flight hours, ground school, exams, materials</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">$40,000 - $60,000</td><td className="px-4 py-3 text-white/80">150-200 flight hours, advanced ground school, exams, materials</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating</td><td className="px-4 py-3 text-white/80">$5,000 - $10,000</td><td className="px-4 py-3 text-white/80">5-10 multi-engine flight hours, ground instruction</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (Group 1)</td><td className="px-4 py-3 text-white/80">$15,000 - $25,000</td><td className="px-4 py-3 text-white/80">40-50 instrument flight hours (sim/aircraft), ground school, exams</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Total (PPL to CPL/ME/IR)</td><td className="px-4 py-3 text-white/80">$75,000 - $120,000</td><td className="px-4 py-3 text-white/80">Comprehensive training, all ratings</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATPL Written Exams</td><td className="px-4 py-3 text-white/80">$500 - $1,000</td><td className="px-4 py-3 text-white/80">Exam fees only</td></tr>
                 </tbody>
               </table>
               <p><em>These are average estimates for 2026. Costs can fluctuate based on fuel prices, aircraft maintenance, and school-specific pricing structures.</em></p>
@@ -121,7 +121,7 @@ export default function CanadaPilotSchedule() {
           heading: "Conclusion: Your Future in Canadian Skies Awaits",
           content: (
             <>
-              <p>The path to becoming a professional pilot in Canada is demanding but immensely rewarding. By understanding the regulatory framework, planning your training schedule meticulously, managing your finances wisely, and committing to continuous learning, you can navigate this complex journey successfully. The Canadian aviation industry offers a wealth of opportunities for well-trained and dedicated pilots. With this comprehensive guide, you are now better equipped to chart your course and achieve your dream of flying in the Canadian skies.</p>
+              <p>The path to becoming a professional pilot in Canada is demanding but rewarding. By understanding the regulatory framework, planning your training schedule meticulously, managing your finances wisely, and committing to continuous learning, you can navigate this complex journey successfully. The Canadian aviation industry offers a wealth of opportunities for well-trained and dedicated pilots. With this comprehensive guide, you are now better equipped to chart your course and achieve your goal of becoming a pilot in the Canadian skies.</p>
             </>
           )
         }

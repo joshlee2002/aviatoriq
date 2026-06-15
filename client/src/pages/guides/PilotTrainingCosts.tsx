@@ -58,45 +58,45 @@ export default function PilotTrainingCosts() {
               <p>
                 The following table shows indicative 2026 costs for the leading UK integrated schools:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>School</th>
-                    <th>Location</th>
-                    <th>Programme Cost</th>
-                    <th>Airline Partnership</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">School</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Location</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Programme Cost</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline Partnership</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Acron Aviation (formerly L3Harris)</td>
-                    <td>London/Gatwick</td>
-                    <td>£102,500</td>
-                    <td>BA Speedbird, easyJet Generation</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Acron Aviation (formerly L3Harris)</td>
+                    <td className="px-4 py-3 text-white/80">London/Gatwick</td>
+                    <td className="px-4 py-3 text-white/80">£102,500</td>
+                    <td className="px-4 py-3 text-white/80">BA Speedbird, easyJet Generation</td>
                   </tr>
-                  <tr>
-                    <td>CAE Oxford Aviation Academy</td>
-                    <td>Oxford</td>
-                    <td>£99,900</td>
-                    <td>easyJet Generation, Volotea</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CAE Oxford Aviation Academy</td>
+                    <td className="px-4 py-3 text-white/80">Oxford</td>
+                    <td className="px-4 py-3 text-white/80">£99,900</td>
+                    <td className="px-4 py-3 text-white/80">easyJet Generation, Volotea</td>
                   </tr>
-                  <tr>
-                    <td>Skyborne Airline Academy</td>
-                    <td>Cheltenham</td>
-                    <td>£114,950</td>
-                    <td>easyJet partnership</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Skyborne Airline Academy</td>
+                    <td className="px-4 py-3 text-white/80">Cheltenham</td>
+                    <td className="px-4 py-3 text-white/80">£114,950</td>
+                    <td className="px-4 py-3 text-white/80">easyJet partnership</td>
                   </tr>
-                  <tr>
-                    <td>Aeros Flight Training</td>
-                    <td>Gloucester</td>
-                    <td>£89,000–£99,000</td>
-                    <td>None (strong employment record)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Aeros Flight Training</td>
+                    <td className="px-4 py-3 text-white/80">Gloucester</td>
+                    <td className="px-4 py-3 text-white/80">£89,000–£99,000</td>
+                    <td className="px-4 py-3 text-white/80">None (strong employment record)</td>
                   </tr>
-                  <tr>
-                    <td>Leading Edge Aviation</td>
-                    <td>Oxford</td>
-                    <td>£114,950</td>
-                    <td>None</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Leading Edge Aviation</td>
+                    <td className="px-4 py-3 text-white/80">Oxford</td>
+                    <td className="px-4 py-3 text-white/80">£114,950</td>
+                    <td className="px-4 py-3 text-white/80">None</td>
                   </tr>
                 </tbody>
               </table>
@@ -113,33 +113,33 @@ export default function PilotTrainingCosts() {
               <p>
                 Overseas integrated training is the most underreported option in UK pilot training guides, and it represents extraordinary value for UK students willing to train abroad. The key schools with strong UK student populations and CAA-approved programmes are:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>School</th>
-                    <th>Location</th>
-                    <th>Programme Cost</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">School</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Location</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Programme Cost</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Bartolini Air</td>
-                    <td>Wrocław, Poland</td>
-                    <td>€55,000–€69,000 (~£47,000–£59,000)</td>
-                    <td>Ryanair partnership, CAA approved, growing UK student base</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Bartolini Air</td>
+                    <td className="px-4 py-3 text-white/80">Wrocław, Poland</td>
+                    <td className="px-4 py-3 text-white/80">€55,000–€69,000 (~£47,000–£59,000)</td>
+                    <td className="px-4 py-3 text-white/80">Ryanair partnership, CAA approved, growing UK student base</td>
                   </tr>
-                  <tr>
-                    <td>FTEJerez</td>
-                    <td>Jerez, Spain</td>
-                    <td>£119,500 (UK CAA route)</td>
-                    <td>Ryanair partnership, includes accommodation and meals</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">FTEJerez</td>
+                    <td className="px-4 py-3 text-white/80">Jerez, Spain</td>
+                    <td className="px-4 py-3 text-white/80">£119,500 (UK CAA route)</td>
+                    <td className="px-4 py-3 text-white/80">Ryanair partnership, includes accommodation and meals</td>
                   </tr>
-                  <tr>
-                    <td>MATS</td>
-                    <td>Malta</td>
-                    <td>€80,000–€95,000 (~£68,000–£81,000)</td>
-                    <td>English-speaking environment, EASA approved</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">MATS</td>
+                    <td className="px-4 py-3 text-white/80">Malta</td>
+                    <td className="px-4 py-3 text-white/80">€80,000–€95,000 (~£68,000–£81,000)</td>
+                    <td className="px-4 py-3 text-white/80">English-speaking environment, EASA approved</td>
                   </tr>
                 </tbody>
               </table>
@@ -162,59 +162,59 @@ export default function PilotTrainingCosts() {
               <p>
                 The following table shows the typical cost of each modular phase:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Training Phase</th>
-                    <th>Typical Cost (UK)</th>
-                    <th>Duration</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Cost (UK)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Class 1 Medical</td>
-                    <td>£500–£800</td>
-                    <td>1 day</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Class 1 Medical</td>
+                    <td className="px-4 py-3 text-white/80">£500–£800</td>
+                    <td className="px-4 py-3 text-white/80">1 day</td>
                   </tr>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>£8,000–£15,000</td>
-                    <td>3–12 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">£8,000–£15,000</td>
+                    <td className="px-4 py-3 text-white/80">3–12 months</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Theory (distance learning)</td>
-                    <td>£2,500–£4,500</td>
-                    <td>12–18 months part-time</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Theory (distance learning)</td>
+                    <td className="px-4 py-3 text-white/80">£2,500–£4,500</td>
+                    <td className="px-4 py-3 text-white/80">12–18 months part-time</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Exam Fees (14 exams)</td>
-                    <td>£1,000–£1,500</td>
-                    <td>Taken during theory phase</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Exam Fees (14 exams)</td>
+                    <td className="px-4 py-3 text-white/80">£1,000–£1,500</td>
+                    <td className="px-4 py-3 text-white/80">Taken during theory phase</td>
                   </tr>
-                  <tr>
-                    <td>Hour Building (100–150 hours)</td>
-                    <td>£15,000–£25,000</td>
-                    <td>2–6 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Hour Building (100–150 hours)</td>
+                    <td className="px-4 py-3 text-white/80">£15,000–£25,000</td>
+                    <td className="px-4 py-3 text-white/80">2–6 months</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>£10,000–£15,000</td>
-                    <td>4–8 weeks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">£10,000–£15,000</td>
+                    <td className="px-4 py-3 text-white/80">4–8 weeks</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Instrument Rating (MEIR)</td>
-                    <td>£20,000–£30,000</td>
-                    <td>2–4 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating (MEIR)</td>
+                    <td className="px-4 py-3 text-white/80">£20,000–£30,000</td>
+                    <td className="px-4 py-3 text-white/80">2–4 months</td>
                   </tr>
-                  <tr>
-                    <td>MCC/JOC</td>
-                    <td>£5,000–£8,000</td>
-                    <td>2–4 weeks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">MCC/JOC</td>
+                    <td className="px-4 py-3 text-white/80">£5,000–£8,000</td>
+                    <td className="px-4 py-3 text-white/80">2–4 weeks</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Training Fees</strong></td>
-                    <td><strong>£62,000–£99,800</strong></td>
-                    <td><strong>3–5 years</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Training Fees</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>£62,000–£99,800</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>3–5 years</strong></td>
                   </tr>
                 </tbody>
               </table>
@@ -262,44 +262,44 @@ export default function PilotTrainingCosts() {
               <p>
                 Taking all costs into account, the following are realistic total budgets for each training route in 2026:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Route</th>
-                    <th>Training Fees</th>
-                    <th>Living Costs</th>
-                    <th>Additional Costs</th>
-                    <th>True Total</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Route</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Fees</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Living Costs</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Additional Costs</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">True Total</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Integrated ATPL (UK school, no type rating)</td>
-                    <td>£90,000–£130,000</td>
-                    <td>£14,000–£27,000</td>
-                    <td>£5,000–£8,000</td>
-                    <td>£109,000–£165,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Integrated ATPL (UK school, no type rating)</td>
+                    <td className="px-4 py-3 text-white/80">£90,000–£130,000</td>
+                    <td className="px-4 py-3 text-white/80">£14,000–£27,000</td>
+                    <td className="px-4 py-3 text-white/80">£5,000–£8,000</td>
+                    <td className="px-4 py-3 text-white/80">£109,000–£165,000</td>
                   </tr>
-                  <tr>
-                    <td>Integrated ATPL (overseas — Bartolini Air)</td>
-                    <td>£47,000–£59,000</td>
-                    <td>£10,000–£18,000</td>
-                    <td>£5,000–£8,000</td>
-                    <td>£62,000–£85,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Integrated ATPL (overseas — Bartolini Air)</td>
+                    <td className="px-4 py-3 text-white/80">£47,000–£59,000</td>
+                    <td className="px-4 py-3 text-white/80">£10,000–£18,000</td>
+                    <td className="px-4 py-3 text-white/80">£5,000–£8,000</td>
+                    <td className="px-4 py-3 text-white/80">£62,000–£85,000</td>
                   </tr>
-                  <tr>
-                    <td>Modular ATPL (UK-based)</td>
-                    <td>£55,000–£80,000</td>
-                    <td>£8,000–£15,000</td>
-                    <td>£5,000–£8,000</td>
-                    <td>£68,000–£103,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Modular ATPL (UK-based)</td>
+                    <td className="px-4 py-3 text-white/80">£55,000–£80,000</td>
+                    <td className="px-4 py-3 text-white/80">£8,000–£15,000</td>
+                    <td className="px-4 py-3 text-white/80">£5,000–£8,000</td>
+                    <td className="px-4 py-3 text-white/80">£68,000–£103,000</td>
                   </tr>
-                  <tr>
-                    <td>Cadet programme (e.g., easyJet Generation)</td>
-                    <td>£99,900</td>
-                    <td>£12,000–£18,000</td>
-                    <td>£3,000–£5,000</td>
-                    <td>£114,900–£122,900</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Cadet programme (e.g., easyJet Generation)</td>
+                    <td className="px-4 py-3 text-white/80">£99,900</td>
+                    <td className="px-4 py-3 text-white/80">£12,000–£18,000</td>
+                    <td className="px-4 py-3 text-white/80">£3,000–£5,000</td>
+                    <td className="px-4 py-3 text-white/80">£114,900–£122,900</td>
                   </tr>
                 </tbody>
               </table>

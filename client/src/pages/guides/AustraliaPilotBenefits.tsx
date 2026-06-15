@@ -31,15 +31,15 @@ export default function AustraliaPilotBenefits() {
               <p>Pilot salaries in Australia are among the most competitive globally, reflecting the high level of skill, responsibility, and training required. In 2026, entry-level First Officers at major airlines can expect to start at a substantial six-figure salary, which escalates rapidly with experience, aircraft type, and seniority. Captains, particularly on international routes or larger aircraft, command significantly higher earnings.</p>
               <p>The average salary for a pilot in Australia generally ranges between AUD 110,000 and AUD 130,000 annually. However, this figure can be misleading as it encompasses various roles from regional to major airline pilots. For those at the pinnacle of the profession, especially with carriers like Qantas and Virgin Australia, total compensation can reach well over AUD 300,000 per annum, including allowances and bonuses. First Officers at Qantas, for instance, typically earn between AUD 180,000 and AUD 300,000 per year.</p>
               <p>Below is an illustrative table of typical pilot salaries in Australia for 2026, demonstrating the significant earning potential across different experience levels and roles:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Role</th><th>Airline Type</th><th>Annual Salary Range (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Role</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline Type</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Annual Salary Range (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Entry-Level First Officer</td><td>Regional/Domestic</td><td>$100,000 - $150,000</td><td>Initial years, smaller aircraft</td></tr>
-                  <tr><td>Experienced First Officer</td><td>Major Domestic/International</td><td>$180,000 - $300,000</td><td>Qantas, Virgin Australia, larger aircraft</td></tr>
-                  <tr><td>Captain</td><td>Regional/Domestic</td><td>$200,000 - $350,000</td><td>Significant command experience</td></tr>
-                  <tr><td>Senior Captain</td><td>Major International</td><td>$350,000 - $500,000+</td><td>Long-haul, wide-body aircraft</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Entry-Level First Officer</td><td className="px-4 py-3 text-white/80">Regional/Domestic</td><td className="px-4 py-3 text-white/80">$100,000 - $150,000</td><td className="px-4 py-3 text-white/80">Initial years, smaller aircraft</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Experienced First Officer</td><td className="px-4 py-3 text-white/80">Major Domestic/International</td><td className="px-4 py-3 text-white/80">$180,000 - $300,000</td><td className="px-4 py-3 text-white/80">Qantas, Virgin Australia, larger aircraft</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Captain</td><td className="px-4 py-3 text-white/80">Regional/Domestic</td><td className="px-4 py-3 text-white/80">$200,000 - $350,000</td><td className="px-4 py-3 text-white/80">Significant command experience</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Senior Captain</td><td className="px-4 py-3 text-white/80">Major International</td><td className="px-4 py-3 text-white/80">$350,000 - $500,000+</td><td className="px-4 py-3 text-white/80">Long-haul, wide-body aircraft</td></tr>
                 </tbody>
               </table>
             </>

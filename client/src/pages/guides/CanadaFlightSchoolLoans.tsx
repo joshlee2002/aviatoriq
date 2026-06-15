@@ -5,7 +5,7 @@ export default function CanadaFlightSchoolLoans() {
   return (
     <GuideLayout
       title="Navigating Flight School Loans in Canada: Your 2026 Financing Guide"
-      subtitle="A comprehensive guide to understanding and securing financial aid for pilot training in Canada, covering federal, provincial, and private options."
+      subtitle="Understanding and securing financial aid for pilot training in Canada, covering federal, provincial, and private options."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="January 2026"
@@ -21,16 +21,16 @@ export default function CanadaFlightSchoolLoans() {
             <>
               <p>Aspiring pilots in Canada face a significant financial commitment to achieve their dreams. The cost of flight training can vary widely based on the type of license, the flight school, and the province of study. As of 2026, a Private Pilot License (PPL) can range from CAD $15,000 to $25,000, while a Commercial Pilot License (CPL) with multi-engine and instrument ratings, often required for airline careers, can easily exceed CAD $80,000 to $120,000. Integrated Airline Transport Pilot License (ATPL) programs, which offer a streamlined path to airline readiness, can be even more substantial, sometimes reaching CAD $100,000 to $150,000 or more.</p>
               <p>These figures typically include flight hours, ground school, examiner fees, and study materials. However, they often do not account for living expenses, transportation, or potential re-take fees for exams and flight tests. Understanding these costs is the first critical step in planning your financing strategy.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>License/Rating</th><th>Estimated Cost (CAD, 2026)</th><th>Typical Duration</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">License/Rating</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD, 2026)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Duration</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot License (PPL)</td><td>$15,000 - $25,000</td><td>3-6 months (full-time)</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>$40,000 - $60,000 (after PPL)</td><td>6-12 months (full-time)</td></tr>
-                  <tr><td>Multi-Engine Rating</td><td>$5,000 - $10,000</td><td>1-2 weeks</td></tr>
-                  <tr><td>Instrument Rating (Group 1)</td><td>$15,000 - $25,000</td><td>2-4 months</td></tr>
-                  <tr><td>Integrated ATPL Program</td><td>$100,000 - $150,000+</td><td>18-24 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$15,000 - $25,000</td><td className="px-4 py-3 text-white/80">3-6 months (full-time)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">$40,000 - $60,000 (after PPL)</td><td className="px-4 py-3 text-white/80">6-12 months (full-time)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating</td><td className="px-4 py-3 text-white/80">$5,000 - $10,000</td><td className="px-4 py-3 text-white/80">1-2 weeks</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (Group 1)</td><td className="px-4 py-3 text-white/80">$15,000 - $25,000</td><td className="px-4 py-3 text-white/80">2-4 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Integrated ATPL Program</td><td className="px-4 py-3 text-white/80">$100,000 - $150,000+</td><td className="px-4 py-3 text-white/80">18-24 months</td></tr>
                 </tbody>
               </table>
               <p>It's important to note that these are estimates, and actual costs can fluctuate. Factors such as fuel prices, instructor rates, aircraft availability, and the student's learning pace can all influence the final expenditure. Many flight schools offer package deals for integrated programs, which can sometimes be more cost-effective than pursuing licenses and ratings individually.</p>
@@ -44,17 +44,17 @@ export default function CanadaFlightSchoolLoans() {
               <p>The Government of Canada offers significant financial assistance through the Canada Student Grants and Loans Program. This program is designed to help eligible Canadian citizens and permanent residents finance their post-secondary education, including approved flight training programs. The key benefit of this program is that it combines both grants (money you don't have to pay back) and loans (money you do pay back).</p>
               <p>To be eligible, your flight training program must be designated by your provincial or territorial government for student aid purposes. Many accredited flight schools in Canada have programs that qualify. The application process is managed through your province or territory of residence, not directly through the federal government. When you apply, your eligibility for various grants and loans will be assessed based on factors such as family income, dependents, tuition fees, living expenses, and disability status.</p>
               <p>As of August 1, 2026, the Canada Student Financial Assistance Program continues to be a cornerstone for many students. It's crucial to understand that while the federal government sets the framework, the specific amounts and eligibility criteria can be influenced by provincial policies. Students can receive aid for a maximum of 340 weeks for most programs, with extensions for doctoral studies or students with disabilities.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Feature</th><th>Details</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Eligibility</td><td>Canadian citizens, permanent residents, designated programs</td></tr>
-                  <tr><td>Application</td><td>Through provincial/territorial student aid offices</td></tr>
-                  <tr><td>Components</td><td>Grants (non-repayable) and Loans (repayable)</td></tr>
-                  <tr><td>Assessment Factors</td><td>Income, dependents, tuition, living expenses, disability</td></tr>
-                  <tr><td>Lifetime Limit</td><td>340 weeks (most programs), 400 weeks (doctoral), 520 weeks (disability)</td></tr>
-                  <tr><td>Repayment</td><td>Begins 6 months after finishing studies</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Eligibility</td><td className="px-4 py-3 text-white/80">Canadian citizens, permanent residents, designated programs</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Application</td><td className="px-4 py-3 text-white/80">Through provincial/territorial student aid offices</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Components</td><td className="px-4 py-3 text-white/80">Grants (non-repayable) and Loans (repayable)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Assessment Factors</td><td className="px-4 py-3 text-white/80">Income, dependents, tuition, living expenses, disability</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Lifetime Limit</td><td className="px-4 py-3 text-white/80">340 weeks (most programs), 400 weeks (doctoral), 520 weeks (disability)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Repayment</td><td className="px-4 py-3 text-white/80">Begins 6 months after finishing studies</td></tr>
                 </tbody>
               </table>
               <p>It is highly recommended to use the federal student aid estimator available on the Canada.ca website to get an idea of how much assistance you might qualify for. Remember, this estimator does not include provincial aid, which can further supplement your funding.</p>

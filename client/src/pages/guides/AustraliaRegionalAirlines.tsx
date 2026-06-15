@@ -47,54 +47,54 @@ export default function AustraliaRegionalAirlines() {
                 Key theoretical subjects for the ATPL include Air Law, Human Factors (with a focus on multi-crew operations), Meteorology, Navigation, Flight Planning, Performance and Aircraft Loading, and Aircraft Systems. Most aspiring ATPL holders will also undertake instrument rating theory if they do not already possess an instrument rating. The practical training emphasizes instrument flying competencies, multi-engine aircraft operations, and multi-crew cooperation (MCC) training, culminating in a comprehensive ATPL flight test.
               </p>
               <h4>Minimum Aeronautical Experience for ATPL (Aeroplane)</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Experience Category</th>
-                    <th>Hours Required</th>
-                    <th>Conditions/Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Experience Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Hours Required</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Conditions/Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Total Aeronautical Experience</td>
-                    <td>1500</td>
-                    <td>Up to 100 hours in FSTD (max 25 hours in non-flight simulator FSTD)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Aeronautical Experience</td>
+                    <td className="px-4 py-3 text-white/80">1500</td>
+                    <td className="px-4 py-3 text-white/80">Up to 100 hours in FSTD (max 25 hours in non-flight simulator FSTD)</td>
                   </tr>
-                  <tr>
-                    <td>Flight Time as Pilot</td>
-                    <td>1400</td>
-                    <td>At least 750 hours in aeroplane</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Time as Pilot</td>
+                    <td className="px-4 py-3 text-white/80">1400</td>
+                    <td className="px-4 py-3 text-white/80">At least 750 hours in aeroplane</td>
                   </tr>
-                  <tr>
-                    <td>Pilot in Command (PIC) or PIC Under Supervision (PICUS)</td>
-                    <td>500 (or 250 if at least 70 are PIC)</td>
-                    <td>Hours must be in an aeroplane</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Pilot in Command (PIC) or PIC Under Supervision (PICUS)</td>
+                    <td className="px-4 py-3 text-white/80">500 (or 250 if at least 70 are PIC)</td>
+                    <td className="px-4 py-3 text-white/80">Hours must be in an aeroplane</td>
                   </tr>
-                  <tr>
-                    <td>Cross-Country Flight Time</td>
-                    <td>200</td>
-                    <td>Must be in aeroplane</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Cross-Country Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">200</td>
+                    <td className="px-4 py-3 text-white/80">Must be in aeroplane</td>
                   </tr>
-                  <tr>
-                    <td>Cross-Country Flight Time as PIC or PICUS</td>
-                    <td>100</td>
-                    <td>Must be in aeroplane</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Cross-Country Flight Time as PIC or PICUS</td>
+                    <td className="px-4 py-3 text-white/80">100</td>
+                    <td className="px-4 py-3 text-white/80">Must be in aeroplane</td>
                   </tr>
-                  <tr>
-                    <td>Flight Time at Night (other than dual)</td>
-                    <td>100</td>
-                    <td>Must be in aeroplane</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Time at Night (other than dual)</td>
+                    <td className="px-4 py-3 text-white/80">100</td>
+                    <td className="px-4 py-3 text-white/80">Must be in aeroplane</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Time</td>
-                    <td>75</td>
-                    <td>N/A</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Time</td>
+                    <td className="px-4 py-3 text-white/80">75</td>
+                    <td className="px-4 py-3 text-white/80">N/A</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Flight Time</td>
-                    <td>45</td>
-                    <td>Must be in aeroplane</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">45</td>
+                    <td className="px-4 py-3 text-white/80">Must be in aeroplane</td>
                   </tr>
                 </tbody>
               </table>
@@ -108,64 +108,64 @@ export default function AustraliaRegionalAirlines() {
               <p>
                 The financial commitment required to become a professional pilot in Australia is substantial, reflecting the specialized nature of the training and the high standards demanded by CASA. As of 2026, aspiring pilots should anticipate significant costs for flight training, theory courses, examinations, and medical certifications. These figures are estimates and can vary based on the flight school, individual progress, and market fluctuations.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Cost Category</th>
-                    <th>Estimated Range (AUD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Range (AUD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>$80,000 - $120,000+</td>
-                    <td>Includes flight hours, ground school, and initial exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">$80,000 - $120,000+</td>
+                    <td className="px-4 py-3 text-white/80">Includes flight hours, ground school, and initial exams.</td>
                   </tr>
-                  <tr>
-                    <td>Air Transport Pilot Licence (ATPL) Theory</td>
-                    <td>$4,000 - $10,000</td>
-                    <td>Ground school and CASA ATPL theory exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Air Transport Pilot Licence (ATPL) Theory</td>
+                    <td className="px-4 py-3 text-white/80">$4,000 - $10,000</td>
+                    <td className="px-4 py-3 text-white/80">Ground school and CASA ATPL theory exams.</td>
                   </tr>
-                  <tr>
-                    <td>CASA Class 1 Medical Certificate (Initial)</td>
-                    <td>$335 - $1,100</td>
-                    <td>Includes examination fees and CASA administration fee.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CASA Class 1 Medical Certificate (Initial)</td>
+                    <td className="px-4 py-3 text-white/80">$335 - $1,100</td>
+                    <td className="px-4 py-3 text-white/80">Includes examination fees and CASA administration fee.</td>
                   </tr>
-                  <tr>
-                    <td>CASA Exam Fees (per subject)</td>
-                    <td>$150 - $250</td>
-                    <td>Multiple exams for CPL and ATPL theory.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CASA Exam Fees (per subject)</td>
+                    <td className="px-4 py-3 text-white/80">$150 - $250</td>
+                    <td className="px-4 py-3 text-white/80">Multiple exams for CPL and ATPL theory.</td>
                   </tr>
-                  <tr>
-                    <td>Textbooks & Study Materials</td>
-                    <td>$2,000 - $4,000</td>
-                    <td>Essential for theory and practical training.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Textbooks & Study Materials</td>
+                    <td className="px-4 py-3 text-white/80">$2,000 - $4,000</td>
+                    <td className="px-4 py-3 text-white/80">Essential for theory and practical training.</td>
                   </tr>
-                  <tr>
-                    <td>Headset</td>
-                    <td>$300 - $2,000+</td>
-                    <td>Personal equipment, varies by quality.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Headset</td>
+                    <td className="px-4 py-3 text-white/80">$300 - $2,000+</td>
+                    <td className="px-4 py-3 text-white/80">Personal equipment, varies by quality.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating</td>
-                    <td>Included in CPL/ATPL programs, or additional $10,000 - $15,000</td>
-                    <td>Crucial for regional airline operations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating</td>
+                    <td className="px-4 py-3 text-white/80">Included in CPL/ATPL programs, or additional $10,000 - $15,000</td>
+                    <td className="px-4 py-3 text-white/80">Crucial for regional airline operations.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating</td>
-                    <td>Included in CPL/ATPL programs, or additional $15,000 - $25,000</td>
-                    <td>Essential for IFR operations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating</td>
+                    <td className="px-4 py-3 text-white/80">Included in CPL/ATPL programs, or additional $15,000 - $25,000</td>
+                    <td className="px-4 py-3 text-white/80">Essential for IFR operations.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Crew Cooperation (MCC) Course</td>
-                    <td>$5,000 - $10,000</td>
-                    <td>Often a prerequisite for airline entry.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Crew Cooperation (MCC) Course</td>
+                    <td className="px-4 py-3 text-white/80">$5,000 - $10,000</td>
+                    <td className="px-4 py-3 text-white/80">Often a prerequisite for airline entry.</td>
                   </tr>
-                  <tr>
-                    <td>Total Estimated Cost (Zero to ATPL ready)</td>
-                    <td>$120,000 - $200,000+</td>
-                    <td>Highly variable, depends on integrated vs. modular training.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Estimated Cost (Zero to ATPL ready)</td>
+                    <td className="px-4 py-3 text-white/80">$120,000 - $200,000+</td>
+                    <td className="px-4 py-3 text-white/80">Highly variable, depends on integrated vs. modular training.</td>
                   </tr>
                 </tbody>
               </table>
@@ -231,7 +231,7 @@ export default function AustraliaRegionalAirlines() {
           content: (
             <>
               <p>
-                Embarking on a career as a regional airline pilot in Australia is a challenging yet profoundly rewarding endeavor. It demands rigorous training, significant financial outlay, and an unwavering commitment to safety and professionalism. However, for those with the passion and perseverance, the skies of regional Australia offer a career filled with unparalleled experiences, continuous learning, and the satisfaction of connecting communities across this vast nation.
+                Embarking on a career as a regional airline pilot in Australia is a challenging yet rewarding endeavor. It demands rigorous training, significant financial outlay, and an unwavering commitment to safety and professionalism. However, for those with the passion and perseverance, the skies of regional Australia offer a career filled with unparalleled experiences, continuous learning, and the satisfaction of connecting communities across this vast nation.
               </p>
               <p>
                 By meticulously planning your training, understanding the regulatory landscape, and targeting the specific requirements of regional carriers, you can confidently navigate your path to the flight deck. The journey is long, but the destination—a fulfilling career flying Australia's regional routes—is well within reach.

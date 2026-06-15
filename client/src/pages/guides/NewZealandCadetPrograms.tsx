@@ -63,34 +63,34 @@ export default function NewZealandCadetPrograms() {
                 Key flight schools across New Zealand, such as Nelson Aviation College and Southern Wings, offer structured diploma programs that integrate flight training with theoretical knowledge. These programs are designed to meet CAA NZ requirements and prepare graduates for a professional aviation career. The journey typically begins with a PPL, followed by advanced training for a CPL, instrument ratings, and multi-engine endorsements.
               </p>
               <h3>Key Flight Training Schools in New Zealand:</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Flight School</th>
-                    <th>Location</th>
-                    <th>Key Programs Offered</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Flight School</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Location</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Programs Offered</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Nelson Aviation College</td>
-                    <td>Motueka</td>
-                    <td>New Zealand Diploma in Aviation (Airline Preparation), PPL, CPL, Instructor Ratings</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Nelson Aviation College</td>
+                    <td className="px-4 py-3 text-white/80">Motueka</td>
+                    <td className="px-4 py-3 text-white/80">New Zealand Diploma in Aviation (Airline Preparation), PPL, CPL, Instructor Ratings</td>
                   </tr>
-                  <tr>
-                    <td>Southern Wings</td>
-                    <td>Whangarei, Auckland</td>
-                    <td>New Zealand Diploma in Aviation (Airline Preparation), PPL, CPL, Multi-Engine, Instrument Ratings</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Southern Wings</td>
+                    <td className="px-4 py-3 text-white/80">Whangarei, Auckland</td>
+                    <td className="px-4 py-3 text-white/80">New Zealand Diploma in Aviation (Airline Preparation), PPL, CPL, Multi-Engine, Instrument Ratings</td>
                   </tr>
-                  <tr>
-                    <td>Ardmore Flying School</td>
-                    <td>Ardmore, Auckland</td>
-                    <td>PPL, CPL, Instrument Ratings, Multi-Engine, Instructor Ratings</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ardmore Flying School</td>
+                    <td className="px-4 py-3 text-white/80">Ardmore, Auckland</td>
+                    <td className="px-4 py-3 text-white/80">PPL, CPL, Instrument Ratings, Multi-Engine, Instructor Ratings</td>
                   </tr>
-                  <tr>
-                    <td>CTC Aviation (L3Harris Airline Academy)</td>
-                    <td>Hamilton</td>
-                    <td>Airline Pilot Career Programme (Integrated ATPL)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CTC Aviation (L3Harris Airline Academy)</td>
+                    <td className="px-4 py-3 text-white/80">Hamilton</td>
+                    <td className="px-4 py-3 text-white/80">Airline Pilot Career Programme (Integrated ATPL)</td>
                   </tr>
                 </tbody>
               </table>
@@ -134,54 +134,54 @@ export default function NewZealandCadetPrograms() {
               <p>
                 While airline cadetships may offer partial sponsorship or facilitated loan arrangements, independent training typically requires self-funding or securing educational loans. The figures below provide general estimates for 2026; actual costs may vary.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Training Phase/Licence</th>
-                    <th>Estimated Cost (NZD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase/Licence</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (NZD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>$35,000 - $45,000</td>
-                    <td>Includes flight hours, ground school, exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">$35,000 - $45,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes flight hours, ground school, exams.</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>$80,000 - $120,000</td>
-                    <td>Additional flight hours, advanced ground school, exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">$80,000 - $120,000</td>
+                    <td className="px-4 py-3 text-white/80">Additional flight hours, advanced ground school, exams.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>$25,000 - $35,000</td>
-                    <td>Enables flight in Instrument Meteorological Conditions.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">$25,000 - $35,000</td>
+                    <td className="px-4 py-3 text-white/80">Enables flight in Instrument Meteorological Conditions.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (ME)</td>
-                    <td>$10,000 - $15,000</td>
-                    <td>Required for multi-engine aircraft.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
+                    <td className="px-4 py-3 text-white/80">$10,000 - $15,000</td>
+                    <td className="px-4 py-3 text-white/80">Required for multi-engine aircraft.</td>
                   </tr>
-                  <tr>
-                    <td>New Zealand Diploma in Aviation (Integrated CPL/IR/ME)</td>
-                    <td>$100,000 - $150,000+</td>
-                    <td>Comprehensive program offered by many FTOs.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">New Zealand Diploma in Aviation (Integrated CPL/IR/ME)</td>
+                    <td className="px-4 py-3 text-white/80">$100,000 - $150,000+</td>
+                    <td className="px-4 py-3 text-white/80">Comprehensive program offered by many FTOs.</td>
                   </tr>
-                  <tr>
-                    <td>Air New Zealand Mangōpare Cadetship (Cadet Contribution)</td>
-                    <td>~$53,500</td>
-                    <td>Estimated bank loan portion (20-30% of total cadetship cost). Total program cost significantly higher.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Air New Zealand Mangōpare Cadetship (Cadet Contribution)</td>
+                    <td className="px-4 py-3 text-white/80">~$53,500</td>
+                    <td className="px-4 py-3 text-white/80">Estimated bank loan portion (20-30% of total cadetship cost). Total program cost significantly higher.</td>
                   </tr>
-                  <tr>
-                    <td>CAA NZ Medical Certificate (Class 1)</td>
-                    <td>$500 - $1,000 (initial)</td>
-                    <td>Includes examination and special eye report. Annual renewals are less.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CAA NZ Medical Certificate (Class 1)</td>
+                    <td className="px-4 py-3 text-white/80">$500 - $1,000 (initial)</td>
+                    <td className="px-4 py-3 text-white/80">Includes examination and special eye report. Annual renewals are less.</td>
                   </tr>
-                  <tr>
-                    <td>CAA NZ Exam Fees</td>
-                    <td>Varies ($100 - $200 per exam)</td>
-                    <td>Multiple theory exams required for each licence.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CAA NZ Exam Fees</td>
+                    <td className="px-4 py-3 text-white/80">Varies ($100 - $200 per exam)</td>
+                    <td className="px-4 py-3 text-white/80">Multiple theory exams required for each licence.</td>
                   </tr>
                 </tbody>
               </table>

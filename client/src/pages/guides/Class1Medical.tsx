@@ -54,7 +54,7 @@ const Class1Medical: React.FC = () => {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Certificate Needed</th>
                       <th className="px-4 py-3 font-semibold">Airlines</th>
                     </tr>
@@ -94,7 +94,7 @@ const Class1Medical: React.FC = () => {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">AeMC</th>
                       <th className="px-4 py-3 font-semibold">Location</th>
                       <th className="px-4 py-3 font-semibold">UK Only (Initial)</th>
@@ -153,7 +153,7 @@ const Class1Medical: React.FC = () => {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Test</th>
                       <th className="px-4 py-3 font-semibold">What It Checks</th>
                       <th className="px-4 py-3 font-semibold">Standard Required</th>
@@ -241,7 +241,7 @@ const Class1Medical: React.FC = () => {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Age</th>
                       <th className="px-4 py-3 font-semibold">Multi-crew Operations</th>
                       <th className="px-4 py-3 font-semibold">Single-pilot Commercial</th>
@@ -283,7 +283,7 @@ const Class1Medical: React.FC = () => {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Condition</th>
                       <th className="px-4 py-3 font-semibold">Typical Outcome</th>
                       <th className="px-4 py-3 font-semibold">Notes</th>

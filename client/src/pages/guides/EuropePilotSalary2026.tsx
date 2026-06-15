@@ -40,26 +40,26 @@ export default function EuropePilotSalary2026() {
               
               <h3>Pilot Salary by Country — Top 15</h3>
               <p>Location remains the most significant determinant of pilot compensation in Europe. While Western and Northern European countries generally offer the highest gross salaries, Eastern European nations often provide superior purchasing power due to lower living costs and favorable tax regimes.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Country</th><th>Avg FO (Gross)</th><th>Avg Captain (Gross)</th><th>Tax Rate</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Country</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Avg FO (Gross)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Avg Captain (Gross)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Tax Rate</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>🇨🇭 Switzerland</td><td>€79,000</td><td>€142,000+</td><td>20-25%</td></tr>
-                  <tr><td>🇧🇪 Belgium</td><td>€77,000</td><td>€138,000+</td><td>40-50%</td></tr>
-                  <tr><td>🇮🇪 Ireland</td><td>€75,000</td><td>€135,000+</td><td>40%</td></tr>
-                  <tr><td>🇩🇪 Germany</td><td>€74,000</td><td>€150,000+</td><td>35-45%</td></tr>
-                  <tr><td>🇳🇱 Netherlands</td><td>€70,000</td><td>€130,000+</td><td>37-49.5%</td></tr>
-                  <tr><td>🇦🇹 Austria</td><td>€70,000</td><td>€125,000+</td><td>35-45%</td></tr>
-                  <tr><td>🇫🇮 Finland</td><td>€67,000</td><td>€120,000+</td><td>30-50%</td></tr>
-                  <tr><td>🇫🇷 France</td><td>€61,000</td><td>€109,200+</td><td>30-45%</td></tr>
-                  <tr><td>🇮🇹 Italy</td><td>€57,000</td><td>€100,000+</td><td>22-43%</td></tr>
-                  <tr><td>🇸🇪 Sweden</td><td>€56,000</td><td>€100,000+</td><td>30-50%</td></tr>
-                  <tr><td>🇳🇴 Norway</td><td>€55,000</td><td>€125,000+</td><td>35%</td></tr>
-                  <tr><td>🇬🇧 United Kingdom</td><td>£54,000</td><td>£178,000+</td><td>20-45%</td></tr>
-                  <tr><td>🇪🇸 Spain</td><td>€54,000</td><td>€96,000+</td><td>25-45%</td></tr>
-                  <tr><td>🇵🇹 Portugal</td><td>€42,000</td><td>€75,000+</td><td>25-48%</td></tr>
-                  <tr><td>🇵🇱 Poland</td><td>€35,000</td><td>€62,000+</td><td>12-32%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇨🇭 Switzerland</td><td className="px-4 py-3 text-white/80">€79,000</td><td className="px-4 py-3 text-white/80">€142,000+</td><td className="px-4 py-3 text-white/80">20-25%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇧🇪 Belgium</td><td className="px-4 py-3 text-white/80">€77,000</td><td className="px-4 py-3 text-white/80">€138,000+</td><td className="px-4 py-3 text-white/80">40-50%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇮🇪 Ireland</td><td className="px-4 py-3 text-white/80">€75,000</td><td className="px-4 py-3 text-white/80">€135,000+</td><td className="px-4 py-3 text-white/80">40%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇩🇪 Germany</td><td className="px-4 py-3 text-white/80">€74,000</td><td className="px-4 py-3 text-white/80">€150,000+</td><td className="px-4 py-3 text-white/80">35-45%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇳🇱 Netherlands</td><td className="px-4 py-3 text-white/80">€70,000</td><td className="px-4 py-3 text-white/80">€130,000+</td><td className="px-4 py-3 text-white/80">37-49.5%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇦🇹 Austria</td><td className="px-4 py-3 text-white/80">€70,000</td><td className="px-4 py-3 text-white/80">€125,000+</td><td className="px-4 py-3 text-white/80">35-45%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇫🇮 Finland</td><td className="px-4 py-3 text-white/80">€67,000</td><td className="px-4 py-3 text-white/80">€120,000+</td><td className="px-4 py-3 text-white/80">30-50%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇫🇷 France</td><td className="px-4 py-3 text-white/80">€61,000</td><td className="px-4 py-3 text-white/80">€109,200+</td><td className="px-4 py-3 text-white/80">30-45%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇮🇹 Italy</td><td className="px-4 py-3 text-white/80">€57,000</td><td className="px-4 py-3 text-white/80">€100,000+</td><td className="px-4 py-3 text-white/80">22-43%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇸🇪 Sweden</td><td className="px-4 py-3 text-white/80">€56,000</td><td className="px-4 py-3 text-white/80">€100,000+</td><td className="px-4 py-3 text-white/80">30-50%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇳🇴 Norway</td><td className="px-4 py-3 text-white/80">€55,000</td><td className="px-4 py-3 text-white/80">€125,000+</td><td className="px-4 py-3 text-white/80">35%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇬🇧 United Kingdom</td><td className="px-4 py-3 text-white/80">£54,000</td><td className="px-4 py-3 text-white/80">£178,000+</td><td className="px-4 py-3 text-white/80">20-45%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇪🇸 Spain</td><td className="px-4 py-3 text-white/80">€54,000</td><td className="px-4 py-3 text-white/80">€96,000+</td><td className="px-4 py-3 text-white/80">25-45%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇵🇹 Portugal</td><td className="px-4 py-3 text-white/80">€42,000</td><td className="px-4 py-3 text-white/80">€75,000+</td><td className="px-4 py-3 text-white/80">25-48%</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">🇵🇱 Poland</td><td className="px-4 py-3 text-white/80">€35,000</td><td className="px-4 py-3 text-white/80">€62,000+</td><td className="px-4 py-3 text-white/80">12-32%</td></tr>
                 </tbody>
               </table>
             </>
@@ -71,30 +71,30 @@ export default function EuropePilotSalary2026() {
             <>
               <h3>Low-Cost Carriers (LCC) Salary Breakdown</h3>
               <p>In 2026, salaries at Low-Cost Carriers (LCCs) have increasingly converged with those of narrowbody legacy carriers, particularly for Captains. LCCs often offer sector pay or flight pay, which can significantly boost earnings for high-productivity pilots.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Airline</th><th>FO Range</th><th>Captain Range</th><th>Key Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">FO Range</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Captain Range</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Ryanair (UK)</td><td>£30-50K base</td><td>£80-155K total</td><td>+£37/sector</td></tr>
-                  <tr><td>Ryanair (EU)</td><td>€26-36K base</td><td>€53-85K total</td><td>+~€20/hr flight pay</td></tr>
-                  <tr><td>Wizz Air (East)</td><td>€42-78K</td><td>€108-180K</td><td>+€0.02-0.04/km distance</td></tr>
-                  <tr><td>easyJet (UK)</td><td>£60-68K base</td><td>£70-191K total</td><td>£20-108/sector</td></tr>
-                  <tr><td>Eurowings</td><td>€50-80K base</td><td>€90-250K total</td><td>+€3/hr duty pay</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ryanair (UK)</td><td className="px-4 py-3 text-white/80">£30-50K base</td><td className="px-4 py-3 text-white/80">£80-155K total</td><td className="px-4 py-3 text-white/80">+£37/sector</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ryanair (EU)</td><td className="px-4 py-3 text-white/80">€26-36K base</td><td className="px-4 py-3 text-white/80">€53-85K total</td><td className="px-4 py-3 text-white/80">+~€20/hr flight pay</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Wizz Air (East)</td><td className="px-4 py-3 text-white/80">€42-78K</td><td className="px-4 py-3 text-white/80">€108-180K</td><td className="px-4 py-3 text-white/80">+€0.02-0.04/km distance</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">easyJet (UK)</td><td className="px-4 py-3 text-white/80">£60-68K base</td><td className="px-4 py-3 text-white/80">£70-191K total</td><td className="px-4 py-3 text-white/80">£20-108/sector</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Eurowings</td><td className="px-4 py-3 text-white/80">€50-80K base</td><td className="px-4 py-3 text-white/80">€90-250K total</td><td className="px-4 py-3 text-white/80">+€3/hr duty pay</td></tr>
                 </tbody>
               </table>
 
               <h3>Legacy / Flag Carriers Salary Breakdown</h3>
               <p>Legacy and flag carriers have recently secured multi-year pay deals, often including cumulative increases of 15–20%. For example, Lufthansa's multi-year agreement includes a final 5% increment effective January 1, 2026, allowing Training Captains on widebody flagships to achieve up to €342,000.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Airline</th><th>Total Gross/Year</th><th>Key Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Total Gross/Year</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Lufthansa Group</td><td>€60K–€280K+</td><td>18% Cumulative Increase</td></tr>
-                  <tr><td>British Airways</td><td>£40K–£190K+</td><td>Profit-Sharing Model</td></tr>
-                  <tr><td>Aer Lingus</td><td>€125K–€338K</td><td>17.75% raise; 21% pension</td></tr>
-                  <tr><td>Air France / KLM</td><td>€160K–€350K+</td><td>Strong unions, high social protection</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Lufthansa Group</td><td className="px-4 py-3 text-white/80">€60K–€280K+</td><td className="px-4 py-3 text-white/80">18% Cumulative Increase</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">British Airways</td><td className="px-4 py-3 text-white/80">£40K–£190K+</td><td className="px-4 py-3 text-white/80">Profit-Sharing Model</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Aer Lingus</td><td className="px-4 py-3 text-white/80">€125K–€338K</td><td className="px-4 py-3 text-white/80">17.75% raise; 21% pension</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Air France / KLM</td><td className="px-4 py-3 text-white/80">€160K–€350K+</td><td className="px-4 py-3 text-white/80">Strong unions, high social protection</td></tr>
                 </tbody>
               </table>
             </>
@@ -119,15 +119,15 @@ export default function EuropePilotSalary2026() {
 
               <h3>Integrated vs Modular Training</h3>
               <p>Both integrated and modular training pathways lead to the same outcome: a frozen ATPL and an airline career. The choice depends on financial resources, desired timeline, and personal circumstances.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Aspect</th><th>Integrated</th><th>Modular</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Aspect</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Integrated</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Modular</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Duration</strong></td><td>18-24 months full-time</td><td>2-4 years flexible</td></tr>
-                  <tr><td><strong>Flight Hours</strong></td><td>~150 hours (lower minimum)</td><td>~200 hours (higher minimum)</td></tr>
-                  <tr><td><strong>Cost</strong></td><td>€70,000-€150,000 upfront</td><td>€60,000-€120,000 spread over time</td></tr>
-                  <tr><td><strong>Best For</strong></td><td>Financing available, fast-track career</td><td>Self-funded, need flexibility</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Duration</strong></td><td className="px-4 py-3 text-white/80">18-24 months full-time</td><td className="px-4 py-3 text-white/80">2-4 years flexible</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Flight Hours</strong></td><td className="px-4 py-3 text-white/80">~150 hours (lower minimum)</td><td className="px-4 py-3 text-white/80">~200 hours (higher minimum)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Cost</strong></td><td className="px-4 py-3 text-white/80">€70,000-€150,000 upfront</td><td className="px-4 py-3 text-white/80">€60,000-€120,000 spread over time</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Best For</strong></td><td className="px-4 py-3 text-white/80">Financing available, fast-track career</td><td className="px-4 py-3 text-white/80">Self-funded, need flexibility</td></tr>
                 </tbody>
               </table>
             </>

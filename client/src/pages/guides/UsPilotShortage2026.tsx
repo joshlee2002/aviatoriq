@@ -65,17 +65,17 @@ export default function UsPilotShortage2026() {
           content: (
             <>
               <p>Becoming a professional pilot represents a significant financial investment. Costs can vary substantially based on the chosen training pathway, school, and individual progress. As of 2026, aspiring pilots can expect the following approximate costs:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Certificate/Rating</th><th>Estimated Cost Range (USD)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Certificate/Rating</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost Range (USD)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot License (PPL)</td><td>$12,000 – $25,000</td></tr>
-                  <tr><td>Instrument Rating (IR)</td><td>$8,000 – $15,000</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>$25,000 – $35,000</td></tr>
-                  <tr><td>Certified Flight Instructor (CFI)</td><td>$5,000 – $10,000</td></tr>
-                  <tr><td>Multi-Engine Rating</td><td>$3,000 – $7,000</td></tr>
-                  <tr><td><strong>Total (Zero to CFI/Multi-Engine)</strong></td><td><strong>$53,000 – $92,000+</strong></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$12,000 – $25,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">$8,000 – $15,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">$25,000 – $35,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Certified Flight Instructor (CFI)</td><td className="px-4 py-3 text-white/80">$5,000 – $10,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating</td><td className="px-4 py-3 text-white/80">$3,000 – $7,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total (Zero to CFI/Multi-Engine)</strong></td><td className="px-4 py-3 text-white/80"><strong>$53,000 – $92,000+</strong></td></tr>
                 </tbody>
               </table>
               <p><em>Note: These figures do not include the Airline Transport Pilot Certification Training Program (ATP CTP) or the cost of time-building to reach ATP/R-ATP minimums, which can add tens of thousands of dollars.</em></p>
@@ -104,7 +104,7 @@ export default function UsPilotShortage2026() {
           heading: "Conclusion",
           content: (
             <>
-              <p>The US pilot training market in 2026 presents both challenges and unparalleled opportunities. While the financial and time commitments are substantial, the persistent demand for qualified aviators, particularly at the airline level, ensures a robust career outlook. Aspiring pilots who meticulously plan their training, understand the regulatory framework, and strategically navigate financing options are well-positioned to embark on a rewarding career in aviation. The sky is not just the limit; it's the beginning of a challenging yet fulfilling journey.</p>
+              <p>The US pilot training market in 2026 presents both challenges and significant opportunities. While the financial and time commitments are substantial, the persistent demand for qualified aviators, particularly at the airline level, ensures a robust career outlook. Aspiring pilots who meticulously plan their training, understand the regulatory framework, and strategically navigate financing options are well-positioned to embark on a rewarding career in aviation. The demand for qualified pilots in 2026 is real and sustained — careful planning and commitment to training quality will determine outcomes.</p>
             </>
           )
         }

@@ -57,7 +57,7 @@ const FrozenAtplUK = () => {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Feature</th>
                       <th className="px-4 py-3 font-semibold">Frozen ATPL (fATPL)</th>
                       <th className="px-4 py-3 font-semibold">Full ATPL</th>
@@ -95,7 +95,7 @@ const FrozenAtplUK = () => {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">#</th>
                       <th className="px-4 py-3 font-semibold">Subject</th>
                       <th className="px-4 py-3 font-semibold">Typical difficulty</th>
@@ -145,7 +145,7 @@ const FrozenAtplUK = () => {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Item</th>
                       <th className="px-4 py-3 font-semibold">Cost (2026)</th>
                     </tr>
@@ -185,7 +185,7 @@ const FrozenAtplUK = () => {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Requirement</th>
                       <th className="px-4 py-3 font-semibold">Minimum hours</th>
                     </tr>

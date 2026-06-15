@@ -5,7 +5,7 @@ export default function AustraliaPilotBases() {
   return (
     <GuideLayout
       title="Navigating Australia's Pilot Bases: A 2026 Career Guide"
-      subtitle="A comprehensive guide to major airline pilot bases, training pathways, and career opportunities in Australia for aspiring aviators in 2026."
+      subtitle="Major airline pilot bases, training pathways, and career opportunities in Australia for aspiring aviators in 2026."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="April 2026"
@@ -29,15 +29,15 @@ export default function AustraliaPilotBases() {
           content: (
             <>
               <p>Australia's major airlines, including Qantas, Virgin Australia, and Jetstar, operate out of several key bases. These hubs are critical for domestic and international operations, offering diverse opportunities for pilots at various career stages.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Airline</th><th>Primary Bases</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Primary Bases</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Qantas Airways</td><td>Sydney (SYD), Melbourne (MEL), Brisbane (BNE), Perth (PER)</td><td>Major international and domestic operations. Often a target for experienced pilots.</td></tr>
-                  <tr><td>Virgin Australia</td><td>Sydney (SYD), Melbourne (MEL), Brisbane (BNE), Adelaide (ADL), Perth (PER)</td><td>Strong domestic network with some international routes. Offers diverse entry points.</td></tr>
-                  <tr><td>Jetstar Airways</td><td>Melbourne (MEL), Sydney (SYD), Gold Coast (OOL), Brisbane (BNE)</td><td>Low-cost carrier with extensive domestic and Asian network.</td></tr>
-                  <tr><td>Rex Airlines (Regional Express)</td><td>Various regional hubs, Sydney (SYD), Melbourne (MEL)</td><td>Focus on regional connectivity, providing valuable experience for new pilots.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Qantas Airways</td><td className="px-4 py-3 text-white/80">Sydney (SYD), Melbourne (MEL), Brisbane (BNE), Perth (PER)</td><td className="px-4 py-3 text-white/80">Major international and domestic operations. Often a target for experienced pilots.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Virgin Australia</td><td className="px-4 py-3 text-white/80">Sydney (SYD), Melbourne (MEL), Brisbane (BNE), Adelaide (ADL), Perth (PER)</td><td className="px-4 py-3 text-white/80">Strong domestic network with some international routes. Offers diverse entry points.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Jetstar Airways</td><td className="px-4 py-3 text-white/80">Melbourne (MEL), Sydney (SYD), Gold Coast (OOL), Brisbane (BNE)</td><td className="px-4 py-3 text-white/80">Low-cost carrier with extensive domestic and Asian network.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Rex Airlines (Regional Express)</td><td className="px-4 py-3 text-white/80">Various regional hubs, Sydney (SYD), Melbourne (MEL)</td><td className="px-4 py-3 text-white/80">Focus on regional connectivity, providing valuable experience for new pilots.</td></tr>
                 </tbody>
               </table>
               <p>The choice of base can significantly impact a pilot's quality of life, proximity to family, and access to specific types of flying. While initial placements might be dictated by airline needs, career progression often allows for more choice.</p>
@@ -59,16 +59,16 @@ export default function AustraliaPilotBases() {
           content: (
             <>
               <p>Becoming a pilot in Australia involves a structured progression through various training stages. Aspiring aviators can choose between modular and integrated training pathways, each with distinct advantages in terms of flexibility, duration, and cost.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Licence/Pathway</th><th>Estimated Cost (AUD)</th><th>Typical Duration</th><th>Key Focus</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Licence/Pathway</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Duration</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Focus</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot Licence (PPL)</td><td>$35,000 – $45,000</td><td>6-12 months</td><td>Independent recreational flying</td></tr>
-                  <tr><td>Commercial Pilot Licence (CPL)</td><td>$85,000 – $110,000</td><td>12-24 months</td><td>Earning income from flying</td></tr>
-                  <tr><td>Full Airline Pathway</td><td>$130,000 – $150,000+</td><td>18-24 months (career-ready)</td><td>Advanced theory, multi-engine, instrument ratings</td></tr>
-                  <tr><td>Modular Training</td><td>$80,000 – $110,000</td><td>Flexible</td><td>Part-time learners, self-paced</td></tr>
-                  <tr><td>Integrated Course</td><td>$90,000 – $120,000</td><td>18-24 months</td><td>Full-time, structured career focus</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td><td className="px-4 py-3 text-white/80">$35,000 – $45,000</td><td className="px-4 py-3 text-white/80">6-12 months</td><td className="px-4 py-3 text-white/80">Independent recreational flying</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td><td className="px-4 py-3 text-white/80">$85,000 – $110,000</td><td className="px-4 py-3 text-white/80">12-24 months</td><td className="px-4 py-3 text-white/80">Earning income from flying</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Full Airline Pathway</td><td className="px-4 py-3 text-white/80">$130,000 – $150,000+</td><td className="px-4 py-3 text-white/80">18-24 months (career-ready)</td><td className="px-4 py-3 text-white/80">Advanced theory, multi-engine, instrument ratings</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Modular Training</td><td className="px-4 py-3 text-white/80">$80,000 – $110,000</td><td className="px-4 py-3 text-white/80">Flexible</td><td className="px-4 py-3 text-white/80">Part-time learners, self-paced</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Integrated Course</td><td className="px-4 py-3 text-white/80">$90,000 – $120,000</td><td className="px-4 py-3 text-white/80">18-24 months</td><td className="px-4 py-3 text-white/80">Full-time, structured career focus</td></tr>
                 </tbody>
               </table>
               <p>These figures are estimates for 2026 and can vary based on the chosen flight school, aircraft type, and individual learning pace. Funding remains a significant consideration, with many students exploring loans, scholarships, or part-time work to support their training.</p>
@@ -80,19 +80,19 @@ export default function AustraliaPilotBases() {
           content: (
             <>
               <p>The Australian aviation industry is experiencing steady growth, leading to a consistent demand for qualified pilots. The career outlook for 2026 remains positive, particularly in regional aviation and as the major airlines continue to expand their fleets and routes.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Role</th><th>Estimated Annual Salary (AUD)</th><th>Experience Level</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Role</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Experience Level</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Charter Pilot</td><td>$60,000 – $90,000</td><td>Entry-Level CPL</td></tr>
-                  <tr><td>Flight Instructor</td><td>$55,000 – $100,000+</td><td>Entry-Level CPL</td></tr>
-                  <tr><td>First Officer (Regional)</td><td>$70,000 – $120,000</td><td>Mid-Level, building hours</td></tr>
-                  <tr><td>First Officer (Major Airline)</td><td>$100,000 – $150,000</td><td>Mid-Level, significant hours</td></tr>
-                  <tr><td>Airline Captain</td><td>$150,000 – $300,000+</td><td>Senior-Level, extensive experience</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Charter Pilot</td><td className="px-4 py-3 text-white/80">$60,000 – $90,000</td><td className="px-4 py-3 text-white/80">Entry-Level CPL</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Instructor</td><td className="px-4 py-3 text-white/80">$55,000 – $100,000+</td><td className="px-4 py-3 text-white/80">Entry-Level CPL</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">First Officer (Regional)</td><td className="px-4 py-3 text-white/80">$70,000 – $120,000</td><td className="px-4 py-3 text-white/80">Mid-Level, building hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">First Officer (Major Airline)</td><td className="px-4 py-3 text-white/80">$100,000 – $150,000</td><td className="px-4 py-3 text-white/80">Mid-Level, significant hours</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Airline Captain</td><td className="px-4 py-3 text-white/80">$150,000 – $300,000+</td><td className="px-4 py-3 text-white/80">Senior-Level, extensive experience</td></tr>
                 </tbody>
               </table>
-              <p>Salaries are highly dependent on factors such as experience, aircraft type, and the employer. Beyond financial rewards, the career offers unparalleled opportunities for travel, continuous learning, and a profound sense of accomplishment.</p>
+              <p>Salaries are highly dependent on factors such as experience, aircraft type, and the employer. Beyond financial rewards, the career offers significant opportunities for travel, continuous learning, and a profound sense of accomplishment.</p>
             </>
           )
         },

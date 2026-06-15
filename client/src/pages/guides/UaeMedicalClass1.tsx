@@ -51,161 +51,161 @@ export default function UaeMedicalClass1() {
               <p>The GCAA Civil Aviation Regulations (CAR-MED) outlines specific requirements for each bodily system. Understanding these details is crucial for preparation.</p>
               <h4>Cardiovascular System (MED.B.010)</h4>
               <p>Beyond the general ECG and blood pressure checks, conditions such as aneurysms, significant heart valve abnormalities, or a history of heart/lung transplantation will result in an 'unfit' assessment for Class 1. Certain conditions like peripheral arterial disease or specific rhythm disturbances require referral to the licensing authority for further cardiological evaluation [1].</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Condition</th>
-                    <th>Class 1 Medical Outcome</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Condition</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Class 1 Medical Outcome</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Aneurysm (thoracic/supra-renal abdominal aorta)</td>
-                    <td>Unfit</td>
-                    <td>Before or after surgery</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Aneurysm (thoracic/supra-renal abdominal aorta)</td>
+                    <td className="px-4 py-3 text-white/80">Unfit</td>
+                    <td className="px-4 py-3 text-white/80">Before or after surgery</td>
                   </tr>
-                  <tr>
-                    <td>Significant Heart Valve Abnormality</td>
-                    <td>Unfit</td>
-                    <td>Functional abnormality</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Significant Heart Valve Abnormality</td>
+                    <td className="px-4 py-3 text-white/80">Unfit</td>
+                    <td className="px-4 py-3 text-white/80">Functional abnormality</td>
                   </tr>
-                  <tr>
-                    <td>Heart/Lung Transplantation</td>
-                    <td>Unfit</td>
-                    <td></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Heart/Lung Transplantation</td>
+                    <td className="px-4 py-3 text-white/80">Unfit</td>
+                    <td className="px-4 py-3 text-white/80"></td>
                   </tr>
-                  <tr>
-                    <td>Blood Pressure &gt; 160/95 mmHg (consistent)</td>
-                    <td>Unfit</td>
-                    <td>With or without treatment</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Blood Pressure &gt; 160/95 mmHg (consistent)</td>
+                    <td className="px-4 py-3 text-white/80">Unfit</td>
+                    <td className="px-4 py-3 text-white/80">With or without treatment</td>
                   </tr>
-                  <tr>
-                    <td>Myocardial Ischaemia (suspected/symptomatic)</td>
-                    <td>Unfit (initial issue); Referred (revalidation)</td>
-                    <td>Requires cardiological evaluation</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Myocardial Ischaemia (suspected/symptomatic)</td>
+                    <td className="px-4 py-3 text-white/80">Unfit (initial issue); Referred (revalidation)</td>
+                    <td className="px-4 py-3 text-white/80">Requires cardiological evaluation</td>
                   </tr>
-                  <tr>
-                    <td>Significant Cardiac Conduction/Rhythm Disturbance</td>
-                    <td>Referred</td>
-                    <td>e.g., Atrial Fibrillation, Mobitz type 2 block</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Significant Cardiac Conduction/Rhythm Disturbance</td>
+                    <td className="px-4 py-3 text-white/80">Referred</td>
+                    <td className="px-4 py-3 text-white/80">e.g., Atrial Fibrillation, Mobitz type 2 block</td>
                   </tr>
                 </tbody>
               </table>
 
               <h4>Respiratory System (MED.B.015)</h4>
               <p>Significant impairment of pulmonary function will lead to an 'unfit' assessment. Applicants with a history of asthma requiring medication, active inflammatory disease, sarcoidosis, pneumothorax, sleep apnoea syndrome, or major thoracic surgery require detailed respiratory evaluation. For asthma, stability, satisfactory pulmonary function tests, and compatible medication are key. Systemic steroids are generally disqualifying [1].</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Condition</th>
-                    <th>Class 1 Medical Outcome</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Condition</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Class 1 Medical Outcome</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Significant Pulmonary Impairment</td>
-                    <td>Unfit</td>
-                    <td>Until satisfactory recovery</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Significant Pulmonary Impairment</td>
+                    <td className="px-4 py-3 text-white/80">Unfit</td>
+                    <td className="px-4 py-3 text-white/80">Until satisfactory recovery</td>
                   </tr>
-                  <tr>
-                    <td>Asthma (requiring medication)</td>
-                    <td>Fit (conditional)</td>
-                    <td>Stable, satisfactory PFTs, compatible medication; systemic steroids disqualifying</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Asthma (requiring medication)</td>
+                    <td className="px-4 py-3 text-white/80">Fit (conditional)</td>
+                    <td className="px-4 py-3 text-white/80">Stable, satisfactory PFTs, compatible medication; systemic steroids disqualifying</td>
                   </tr>
-                  <tr>
-                    <td>Active Inflammatory Respiratory Disease</td>
-                    <td>Unfit</td>
-                    <td>Until resolved without sequelae</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Active Inflammatory Respiratory Disease</td>
+                    <td className="px-4 py-3 text-white/80">Unfit</td>
+                    <td className="px-4 py-3 text-white/80">Until resolved without sequelae</td>
                   </tr>
-                  <tr>
-                    <td>Active Sarcoidosis</td>
-                    <td>Unfit</td>
-                    <td>Unless inactive and limited to hilar lymphadenopathy</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Active Sarcoidosis</td>
+                    <td className="px-4 py-3 text-white/80">Unfit</td>
+                    <td className="px-4 py-3 text-white/80">Unless inactive and limited to hilar lymphadenopathy</td>
                   </tr>
-                  <tr>
-                    <td>Spontaneous Pneumothorax</td>
-                    <td>Unfit (initial); Fit (conditional, revalidation)</td>
-                    <td>1 year post-recovery (initial); 6 weeks post-recovery with multi-pilot limitation (revalidation)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Spontaneous Pneumothorax</td>
+                    <td className="px-4 py-3 text-white/80">Unfit (initial); Fit (conditional, revalidation)</td>
+                    <td className="px-4 py-3 text-white/80">1 year post-recovery (initial); 6 weeks post-recovery with multi-pilot limitation (revalidation)</td>
                   </tr>
-                  <tr>
-                    <td>Total Pneumonectomy</td>
-                    <td>Unfit</td>
-                    <td></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Pneumonectomy</td>
+                    <td className="px-4 py-3 text-white/80">Unfit</td>
+                    <td className="px-4 py-3 text-white/80"></td>
                   </tr>
                 </tbody>
               </table>
 
               <h4>Visual System (MED.B.070)</h4>
               <p>Distant visual acuity, with or without correction, must be 6/9 (0.7) or better in each eye separately, and 6/6 (1.0) or better with both eyes. Near vision requires reading an N5 chart at 30-50 cm and an N14 chart at 100 cm. Normal fields of vision and binocular function are mandatory. Refractive error limits apply: hypermetropia not exceeding +5.0 dioptres, myopia not exceeding –6.0 dioptres, astigmatism not exceeding 2.0 dioptres, and anisometropia not exceeding 2.0 dioptres for initial applicants [1].</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Requirement</th>
-                    <th>Class 1 Standard</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Class 1 Standard</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Distant Visual Acuity (each eye)</td>
-                    <td>6/9 (0.7) or better</td>
-                    <td>With or without correction</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Distant Visual Acuity (each eye)</td>
+                    <td className="px-4 py-3 text-white/80">6/9 (0.7) or better</td>
+                    <td className="px-4 py-3 text-white/80">With or without correction</td>
                   </tr>
-                  <tr>
-                    <td>Distant Visual Acuity (both eyes)</td>
-                    <td>6/6 (1.0) or better</td>
-                    <td>With or without correction</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Distant Visual Acuity (both eyes)</td>
+                    <td className="px-4 py-3 text-white/80">6/6 (1.0) or better</td>
+                    <td className="px-4 py-3 text-white/80">With or without correction</td>
                   </tr>
-                  <tr>
-                    <td>Near Visual Acuity</td>
-                    <td>N5 at 30-50 cm, N14 at 100 cm</td>
-                    <td>With correction, if prescribed</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Near Visual Acuity</td>
+                    <td className="px-4 py-3 text-white/80">N5 at 30-50 cm, N14 at 100 cm</td>
+                    <td className="px-4 py-3 text-white/80">With correction, if prescribed</td>
                   </tr>
-                  <tr>
-                    <td>Fields of Vision</td>
-                    <td>Normal</td>
-                    <td></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Fields of Vision</td>
+                    <td className="px-4 py-3 text-white/80">Normal</td>
+                    <td className="px-4 py-3 text-white/80"></td>
                   </tr>
-                  <tr>
-                    <td>Binocular Function</td>
-                    <td>Normal</td>
-                    <td></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Binocular Function</td>
+                    <td className="px-4 py-3 text-white/80">Normal</td>
+                    <td className="px-4 py-3 text-white/80"></td>
                   </tr>
-                  <tr>
-                    <td>Refractive Error (Initial)</td>
-                    <td>Hypermetropia ≤ +5.0D, Myopia ≤ -6.0D, Astigmatism ≤ 2.0D, Anisometropia ≤ 2.0D</td>
-                    <td>Referral to licensing authority if limits exceeded</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Refractive Error (Initial)</td>
+                    <td className="px-4 py-3 text-white/80">Hypermetropia ≤ +5.0D, Myopia ≤ -6.0D, Astigmatism ≤ 2.0D, Anisometropia ≤ 2.0D</td>
+                    <td className="px-4 py-3 text-white/80">Referral to licensing authority if limits exceeded</td>
                   </tr>
-                  <tr>
-                    <td>Corrective Lenses</td>
-                    <td>Permitted; spare set required; contact lenses must be monofocal, non-tinted</td>
-                    <td>Orthokeratological lenses not permitted</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Corrective Lenses</td>
+                    <td className="px-4 py-3 text-white/80">Permitted; spare set required; contact lenses must be monofocal, non-tinted</td>
+                    <td className="px-4 py-3 text-white/80">Orthokeratological lenses not permitted</td>
                   </tr>
                 </tbody>
               </table>
 
               <h4>Colour Vision (MED.B.075)</h4>
               <p>Applicants must demonstrate the ability to perceive colors necessary for safe duties. The Ishihara test is the primary screening method. Passing requires identifying all 24 plates without error. Failure necessitates GCAA-approved advanced color perception testing (e.g., CAD test) to confirm 'color safe' status. Failure of advanced testing results in an 'unfit' assessment for Class 1 [1].</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Test</th>
-                    <th>Class 1 Standard</th>
-                    <th>Outcome for Failure</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Test</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Class 1 Standard</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Outcome for Failure</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Ishihara Test (24 plates)</td>
-                    <td>All 24 plates identified without error</td>
-                    <td>Proceed to advanced testing</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ishihara Test (24 plates)</td>
+                    <td className="px-4 py-3 text-white/80">All 24 plates identified without error</td>
+                    <td className="px-4 py-3 text-white/80">Proceed to advanced testing</td>
                   </tr>
-                  <tr>
-                    <td>Advanced Colour Perception Test (e.g., CAD)</td>
-                    <td>'Colour Safe' status achieved</td>
-                    <td>Unfit for Class 1</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Advanced Colour Perception Test (e.g., CAD)</td>
+                    <td className="px-4 py-3 text-white/80">'Colour Safe' status achieved</td>
+                    <td className="px-4 py-3 text-white/80">Unfit for Class 1</td>
                   </tr>
                 </tbody>
               </table>
@@ -222,34 +222,34 @@ export default function UaeMedicalClass1() {
             <>
               <p>The validity period of a GCAA Class 1 Medical Certificate depends on the pilot's age and the type of operation. Generally, for pilots under 40 engaged in multi-pilot operations, the certificate is valid for 12 months. For single-pilot commercial operations, it's also 12 months. For pilots aged 40 and above, the validity period is typically reduced to 6 months [1].</p>
               <p>Revalidation involves undergoing a periodic medical examination before the current certificate expires. Renewal is for certificates that have already expired. The requirements for both are similar to the initial examination, though some tests may be less frequent. It is crucial to manage your revalidation/renewal schedule diligently to avoid any lapse in your medical certificate, which would prevent you from exercising your pilot privileges.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Pilot Age</th>
-                    <th>Operation Type</th>
-                    <th>Validity Period</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Pilot Age</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Operation Type</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Validity Period</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Under 40</td>
-                    <td>Multi-pilot commercial air transport</td>
-                    <td>12 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Under 40</td>
+                    <td className="px-4 py-3 text-white/80">Multi-pilot commercial air transport</td>
+                    <td className="px-4 py-3 text-white/80">12 months</td>
                   </tr>
-                  <tr>
-                    <td>Under 40</td>
-                    <td>Single-pilot commercial air transport</td>
-                    <td>12 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Under 40</td>
+                    <td className="px-4 py-3 text-white/80">Single-pilot commercial air transport</td>
+                    <td className="px-4 py-3 text-white/80">12 months</td>
                   </tr>
-                  <tr>
-                    <td>40 and above</td>
-                    <td>Multi-pilot commercial air transport</td>
-                    <td>6 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">40 and above</td>
+                    <td className="px-4 py-3 text-white/80">Multi-pilot commercial air transport</td>
+                    <td className="px-4 py-3 text-white/80">6 months</td>
                   </tr>
-                  <tr>
-                    <td>40 and above</td>
-                    <td>Single-pilot commercial air transport</td>
-                    <td>6 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">40 and above</td>
+                    <td className="px-4 py-3 text-white/80">Single-pilot commercial air transport</td>
+                    <td className="px-4 py-3 text-white/80">6 months</td>
                   </tr>
                 </tbody>
               </table>

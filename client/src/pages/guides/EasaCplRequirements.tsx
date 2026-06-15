@@ -46,65 +46,65 @@ export default function EasaCplRequirements() {
             <>
               <p>The theoretical component of the EASA CPL is extensive, covering 13 distinct subjects designed to equip you with the comprehensive aeronautical knowledge required for commercial operations. This phase can often be completed through distance learning or in a classroom setting, depending on the Approved Training Organisation (ATO).</p>
               <p>The curriculum includes:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Subject Area</th>
-                    <th>Key Focus</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Subject Area</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Focus</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Advanced Flight Planning</td>
-                    <td>Optimizing routes, fuel, and performance for commercial flights.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Advanced Flight Planning</td>
+                    <td className="px-4 py-3 text-white/80">Optimizing routes, fuel, and performance for commercial flights.</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Air Law</td>
-                    <td>In-depth understanding of EASA regulations, operational procedures, and international aviation law.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Air Law</td>
+                    <td className="px-4 py-3 text-white/80">In-depth understanding of EASA regulations, operational procedures, and international aviation law.</td>
                   </tr>
-                  <tr>
-                    <td>Complex Aircraft Systems</td>
-                    <td>Detailed knowledge of advanced aircraft systems, including hydraulics, electrics, and pressurization.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Complex Aircraft Systems</td>
+                    <td className="px-4 py-3 text-white/80">Detailed knowledge of advanced aircraft systems, including hydraulics, electrics, and pressurization.</td>
                   </tr>
-                  <tr>
-                    <td>Advanced Meteorology</td>
-                    <td>Interpreting complex weather phenomena and their impact on commercial aviation.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Advanced Meteorology</td>
+                    <td className="px-4 py-3 text-white/80">Interpreting complex weather phenomena and their impact on commercial aviation.</td>
                   </tr>
-                  <tr>
-                    <td>Performance & Planning</td>
-                    <td>Aircraft performance calculations for various flight phases and conditions.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Performance & Planning</td>
+                    <td className="px-4 py-3 text-white/80">Aircraft performance calculations for various flight phases and conditions.</td>
                   </tr>
-                  <tr>
-                    <td>Principles of Flight (Advanced)</td>
-                    <td>Aerodynamics of high-performance aircraft and advanced flight mechanics.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Principles of Flight (Advanced)</td>
+                    <td className="px-4 py-3 text-white/80">Aerodynamics of high-performance aircraft and advanced flight mechanics.</td>
                   </tr>
-                  <tr>
-                    <td>Human Performance & Limitations</td>
-                    <td>Understanding human factors in aviation, decision-making, and crew resource management.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Human Performance & Limitations</td>
+                    <td className="px-4 py-3 text-white/80">Understanding human factors in aviation, decision-making, and crew resource management.</td>
                   </tr>
-                  <tr>
-                    <td>Navigation</td>
-                    <td>Advanced navigation techniques, including RNAV and FMS.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Navigation</td>
+                    <td className="px-4 py-3 text-white/80">Advanced navigation techniques, including RNAV and FMS.</td>
                   </tr>
-                  <tr>
-                    <td>Operational Procedures</td>
-                    <td>Standard operating procedures for commercial flights, emergency protocols.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Operational Procedures</td>
+                    <td className="px-4 py-3 text-white/80">Standard operating procedures for commercial flights, emergency protocols.</td>
                   </tr>
-                  <tr>
-                    <td>Aircraft General Knowledge</td>
-                    <td>Detailed understanding of aircraft structure, engines, and systems.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Aircraft General Knowledge</td>
+                    <td className="px-4 py-3 text-white/80">Detailed understanding of aircraft structure, engines, and systems.</td>
                   </tr>
-                  <tr>
-                    <td>Radio Telephony</td>
-                    <td>Advanced communication procedures and phraseology.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Radio Telephony</td>
+                    <td className="px-4 py-3 text-white/80">Advanced communication procedures and phraseology.</td>
                   </tr>
-                  <tr>
-                    <td>Mass and Balance</td>
-                    <td>Calculations for safe aircraft loading and center of gravity.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Mass and Balance</td>
+                    <td className="px-4 py-3 text-white/80">Calculations for safe aircraft loading and center of gravity.</td>
                   </tr>
-                  <tr>
-                    <td>Flight Performance and Planning</td>
-                    <td>Comprehensive understanding of flight envelope and operational limits.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Performance and Planning</td>
+                    <td className="px-4 py-3 text-white/80">Comprehensive understanding of flight envelope and operational limits.</td>
                   </tr>
                 </tbody>
               </table>
@@ -128,44 +128,44 @@ export default function EasaCplRequirements() {
               <p>For those without an IR, the CPL training typically involves a more comprehensive flight hour package to meet the total experience requirements.</p>
               <h3>Total Flight Experience Requirements for CPL Skill Test:</h3>
               <p>Regardless of your IR status, to be eligible for the CPL skill test, you must have accumulated a minimum of <strong>200 total flight hours</strong> (including your PPL(A) time). This total must include specific components:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Requirement</th>
-                    <th>Hours</th>
-                    <th>Details</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Hours</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Total Flight Time</td>
-                    <td>200</td>
-                    <td>Including PPL(A) time.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">200</td>
+                    <td className="px-4 py-3 text-white/80">Including PPL(A) time.</td>
                   </tr>
-                  <tr>
-                    <td>Pilot-in-Command (PIC)</td>
-                    <td>100</td>
-                    <td>Hours flown as the sole manipulator of the controls.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Pilot-in-Command (PIC)</td>
+                    <td className="px-4 py-3 text-white/80">100</td>
+                    <td className="px-4 py-3 text-white/80">Hours flown as the sole manipulator of the controls.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Training (BIFM)</td>
-                    <td>10</td>
-                    <td>Basic Instrument Flight Module.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Training (BIFM)</td>
+                    <td className="px-4 py-3 text-white/80">10</td>
+                    <td className="px-4 py-3 text-white/80">Basic Instrument Flight Module.</td>
                   </tr>
-                  <tr>
-                    <td>Night Flying</td>
-                    <td>5</td>
-                    <td>Including one cross-country flight and 5 solo take-offs and 5 landings.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Night Flying</td>
+                    <td className="px-4 py-3 text-white/80">5</td>
+                    <td className="px-4 py-3 text-white/80">Including one cross-country flight and 5 solo take-offs and 5 landings.</td>
                   </tr>
-                  <tr>
-                    <td>Complex Aircraft</td>
-                    <td>5</td>
-                    <td>On an aircraft with retractable gear, flaps, and variable pitch propeller.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Complex Aircraft</td>
+                    <td className="px-4 py-3 text-white/80">5</td>
+                    <td className="px-4 py-3 text-white/80">On an aircraft with retractable gear, flaps, and variable pitch propeller.</td>
                   </tr>
-                  <tr>
-                    <td>VFR Cross-Country PIC</td>
-                    <td>20</td>
-                    <td>Including a cross-country flight totaling at least 540 km (300 NM) with landings at two aerodromes different from the aerodrome of departure.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">VFR Cross-Country PIC</td>
+                    <td className="px-4 py-3 text-white/80">20</td>
+                    <td className="px-4 py-3 text-white/80">Including a cross-country flight totaling at least 540 km (300 NM) with landings at two aerodromes different from the aerodrome of departure.</td>
                   </tr>
                 </tbody>
               </table>
@@ -196,29 +196,29 @@ export default function EasaCplRequirements() {
             <>
               <p>The financial investment for an EASA CPL can be substantial, varying significantly based on the training route (modular vs. integrated), the chosen flight school, and its geographical location within Europe. As of 2026, prospective pilots should budget carefully.</p>
               <h3>Estimated Costs (EUR):</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Training Route</th>
-                    <th>Estimated Cost Range (EUR)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Route</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost Range (EUR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Integrated ATPL (leading to CPL/IR)</td>
-                    <td>€65,000 - €140,000</td>
-                    <td>Comprehensive program from zero experience to 'frozen ATPL'.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Integrated ATPL (leading to CPL/IR)</td>
+                    <td className="px-4 py-3 text-white/80">€65,000 - €140,000</td>
+                    <td className="px-4 py-3 text-white/80">Comprehensive program from zero experience to 'frozen ATPL'.</td>
                   </tr>
-                  <tr>
-                    <td>Modular CPL (after PPL & ATPL theory)</td>
-                    <td>€7,000 - €15,000</td>
-                    <td>Focuses on CPL flight training, assuming PPL and ATPL theory are completed.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Modular CPL (after PPL & ATPL theory)</td>
+                    <td className="px-4 py-3 text-white/80">€7,000 - €15,000</td>
+                    <td className="px-4 py-3 text-white/80">Focuses on CPL flight training, assuming PPL and ATPL theory are completed.</td>
                   </tr>
-                  <tr>
-                    <td>Full Modular Route (PPL, ATPL Theory, CPL, IR, ME)</td>
-                    <td>€50,000 - €100,000+</td>
-                    <td>Building blocks approach, often more flexible but requires self-discipline.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Full Modular Route (PPL, ATPL Theory, CPL, IR, ME)</td>
+                    <td className="px-4 py-3 text-white/80">€50,000 - €100,000+</td>
+                    <td className="px-4 py-3 text-white/80">Building blocks approach, often more flexible but requires self-discipline.</td>
                   </tr>
                 </tbody>
               </table>
@@ -266,49 +266,49 @@ export default function EasaCplRequirements() {
                 <li>Aerial work pilot (e.g., surveying, photography).</li>
               </ul>
               <p>Major European airlines that recruit EASA-qualified pilots include:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Airline Group</th>
-                    <th>Key Airlines</th>
-                    <th>Hubs</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline Group</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Airlines</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Hubs</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Lufthansa Group</td>
-                    <td>Lufthansa, Swiss, Austrian Airlines, Eurowings</td>
-                    <td>Frankfurt, Munich, Zurich, Vienna</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Lufthansa Group</td>
+                    <td className="px-4 py-3 text-white/80">Lufthansa, Swiss, Austrian Airlines, Eurowings</td>
+                    <td className="px-4 py-3 text-white/80">Frankfurt, Munich, Zurich, Vienna</td>
                   </tr>
-                  <tr>
-                    <td>Air France-KLM Group</td>
-                    <td>Air France, KLM</td>
-                    <td>Paris-CDG, Amsterdam-Schiphol</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Air France-KLM Group</td>
+                    <td className="px-4 py-3 text-white/80">Air France, KLM</td>
+                    <td className="px-4 py-3 text-white/80">Paris-CDG, Amsterdam-Schiphol</td>
                   </tr>
-                  <tr>
-                    <td>International Airlines Group (IAG)</td>
-                    <td>British Airways, Iberia, Vueling, Aer Lingus</td>
-                    <td>London-Heathrow, Madrid, Dublin</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">International Airlines Group (IAG)</td>
+                    <td className="px-4 py-3 text-white/80">British Airways, Iberia, Vueling, Aer Lingus</td>
+                    <td className="px-4 py-3 text-white/80">London-Heathrow, Madrid, Dublin</td>
                   </tr>
-                  <tr>
-                    <td>Ryanair</td>
-                    <td>Ryanair, Lauda, Buzz, Malta Air</td>
-                    <td>Dublin, London-Stansted, various bases across Europe</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ryanair</td>
+                    <td className="px-4 py-3 text-white/80">Ryanair, Lauda, Buzz, Malta Air</td>
+                    <td className="px-4 py-3 text-white/80">Dublin, London-Stansted, various bases across Europe</td>
                   </tr>
-                  <tr>
-                    <td>EasyJet</td>
-                    <td>EasyJet UK, EasyJet Europe, EasyJet Switzerland</td>
-                    <td>London-Gatwick, various bases across Europe</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">EasyJet</td>
+                    <td className="px-4 py-3 text-white/80">EasyJet UK, EasyJet Europe, EasyJet Switzerland</td>
+                    <td className="px-4 py-3 text-white/80">London-Gatwick, various bases across Europe</td>
                   </tr>
-                  <tr>
-                    <td>Wizz Air</td>
-                    <td>Wizz Air, Wizz Air UK</td>
-                    <td>Budapest, London-Luton, various bases in Central/Eastern Europe</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Wizz Air</td>
+                    <td className="px-4 py-3 text-white/80">Wizz Air, Wizz Air UK</td>
+                    <td className="px-4 py-3 text-white/80">Budapest, London-Luton, various bases in Central/Eastern Europe</td>
                   </tr>
-                  <tr>
-                    <td>SAS Scandinavian Airlines</td>
-                    <td>SAS</td>
-                    <td>Copenhagen, Oslo, Stockholm</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">SAS Scandinavian Airlines</td>
+                    <td className="px-4 py-3 text-white/80">SAS</td>
+                    <td className="px-4 py-3 text-white/80">Copenhagen, Oslo, Stockholm</td>
                   </tr>
                 </tbody>
               </table>

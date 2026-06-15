@@ -41,29 +41,29 @@ export default function CanadaPilotShortage() {
               <p>
                 Recruitment and retention challenges also play a major role. Airlines, particularly regional carriers, struggle to attract and retain pilots due to uncompetitive wages and working conditions compared to larger airlines. Pilots often move to better-paying positions with major carriers, creating a constant churn in regional aviation. Additionally, the lingering impacts of COVID-19, a general decline in interest in trades among youth, and international competition for talent further exacerbate the situation.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>License Type</th>
-                    <th>Estimated Cost (CAD)</th>
-                    <th>Key Components</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">License Type</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Components</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot License (PPL)</td>
-                    <td>$15,000 - $20,000</td>
-                    <td>Flight hours, ground school, exams, materials</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">$15,000 - $20,000</td>
+                    <td className="px-4 py-3 text-white/80">Flight hours, ground school, exams, materials</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot License (CPL)</td>
-                    <td>$30,000 - $40,000 (additional to PPL)</td>
-                    <td>Advanced flight hours, specialized training, exams</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">$30,000 - $40,000 (additional to PPL)</td>
+                    <td className="px-4 py-3 text-white/80">Advanced flight hours, specialized training, exams</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total (PPL + CPL)</strong></td>
-                    <td><strong>$45,000 - $60,000+</strong></td>
-                    <td>Comprehensive training for professional piloting</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total (PPL + CPL)</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$45,000 - $60,000+</strong></td>
+                    <td className="px-4 py-3 text-white/80">Comprehensive training for professional piloting</td>
                   </tr>
                 </tbody>
               </table>
@@ -94,29 +94,29 @@ export default function CanadaPilotShortage() {
               <p>
                 Pilot salaries in Canada vary significantly based on experience, airline, and aircraft type. Entry-level positions, particularly with regional carriers, may offer lower starting wages, but salaries increase substantially with experience. The average annual income for pilots in British Columbia, for example, is around $120,000, though it can take about five years after obtaining a CPL to reach these well-paying positions.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Experience Level</th>
-                    <th>Estimated Annual Salary (CAD)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Experience Level</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Entry-Level (Regional)</td>
-                    <td>$40,000 - $70,000</td>
-                    <td>Often requires building hours and experience</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Entry-Level (Regional)</td>
+                    <td className="px-4 py-3 text-white/80">$40,000 - $70,000</td>
+                    <td className="px-4 py-3 text-white/80">Often requires building hours and experience</td>
                   </tr>
-                  <tr>
-                    <td>Mid-Career (Regional/Major First Officer)</td>
-                    <td>$70,000 - $150,000</td>
-                    <td>Significant increase with experience and type ratings</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Mid-Career (Regional/Major First Officer)</td>
+                    <td className="px-4 py-3 text-white/80">$70,000 - $150,000</td>
+                    <td className="px-4 py-3 text-white/80">Significant increase with experience and type ratings</td>
                   </tr>
-                  <tr>
-                    <td>Senior Captain (Major Airline)</td>
-                    <td>$150,000 - $300,000+</td>
-                    <td>Top-tier compensation with extensive experience</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Senior Captain (Major Airline)</td>
+                    <td className="px-4 py-3 text-white/80">$150,000 - $300,000+</td>
+                    <td className="px-4 py-3 text-white/80">Top-tier compensation with extensive experience</td>
                   </tr>
                 </tbody>
               </table>

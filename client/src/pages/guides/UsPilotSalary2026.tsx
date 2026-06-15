@@ -50,7 +50,7 @@ export default function UsPilotSalary2026() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Airline</th>
                       <th className="px-4 py-3 font-semibold">Year 1 FO (Narrowbody)</th>
                       <th className="px-4 py-3 font-semibold">Year 12 FO (Widebody)</th>
@@ -136,7 +136,7 @@ export default function UsPilotSalary2026() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Regional Airline</th>
                       <th className="px-4 py-3 font-semibold">Year 1 FO ($/hr)</th>
                       <th className="px-4 py-3 font-semibold">Year 1 Total Comp</th>
@@ -201,7 +201,7 @@ export default function UsPilotSalary2026() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Compensation Component</th>
                       <th className="px-4 py-3 font-semibold">Typical Amount</th>
                       <th className="px-4 py-3 font-semibold">Notes</th>
@@ -255,7 +255,7 @@ export default function UsPilotSalary2026() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Career Stage</th>
                       <th className="px-4 py-3 font-semibold">Typical Timeline</th>
                       <th className="px-4 py-3 font-semibold">Annual Earnings</th>

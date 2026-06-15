@@ -5,7 +5,7 @@ export default function EasaMedicalClass1() {
   return (
     <GuideLayout
       title="EASA Class 1 Medical Certificate: The Complete 2026 Guide for European Pilots"
-      subtitle="A comprehensive guide to EASA Class 1 medical requirements, process, costs, and validity for aspiring and current commercial pilots in Europe."
+      subtitle="EASA Class 1 medical requirements, process, costs, and validity for aspiring and current commercial pilots in Europe."
       readTime="15 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -47,30 +47,30 @@ export default function EasaMedicalClass1() {
               <p>The Class 1 requirements cover seven primary body systems. Each is assessed at every examination, though the depth of certain tests varies by age.</p>
               <h3>Vision Requirements</h3>
               <p>Vision testing is the most detailed part of the Class 1 examination. It covers acuity at three distances, color perception, visual fields, eye muscle balance, and refractive error. Corrected vision is acceptable, provided it meets the standards.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Test</th><th>Requirement</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Test</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Distant vision</td><td>6/9 each eye, 6/6 both</td><td>With or without correction</td></tr>
-                  <tr><td>Near vision</td><td>N5 at 30-50 cm</td><td>Reading small print (charts, checklists)</td></tr>
-                  <tr><td>Intermediate vision</td><td>N14 at 100 cm</td><td>Instrument panel reading distance</td></tr>
-                  <tr><td>Colour vision</td><td>Ishihara plates (initial)</td><td>Lantern test (CAD) if Ishihara failed</td></tr>
-                  <tr><td>Refractive limits</td><td>+5.0 to -6.0 diopters</td><td>Max 2.0 astigmatism, max 2.0 anisometropia</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Distant vision</td><td className="px-4 py-3 text-white/80">6/9 each eye, 6/6 both</td><td className="px-4 py-3 text-white/80">With or without correction</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Near vision</td><td className="px-4 py-3 text-white/80">N5 at 30-50 cm</td><td className="px-4 py-3 text-white/80">Reading small print (charts, checklists)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Intermediate vision</td><td className="px-4 py-3 text-white/80">N14 at 100 cm</td><td className="px-4 py-3 text-white/80">Instrument panel reading distance</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Colour vision</td><td className="px-4 py-3 text-white/80">Ishihara plates (initial)</td><td className="px-4 py-3 text-white/80">Lantern test (CAD) if Ishihara failed</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Refractive limits</td><td className="px-4 py-3 text-white/80">+5.0 to -6.0 diopters</td><td className="px-4 py-3 text-white/80">Max 2.0 astigmatism, max 2.0 anisometropia</td></tr>
                 </tbody>
               </table>
               <p>If you wear correction, you must bring your current optician prescription to the exam. Contact lenses must be monofocal and well-tolerated. A VDL (distant correction) or VML (multifocal correction) limitation will be endorsed on your certificate.</p>
               <h3>Hearing Requirements</h3>
               <p>Class 1 requires pure tone audiometry at every examination, plus a conversational voice test. The audiometry measures hearing sensitivity across four frequencies to ensure you can hear radio communications and cockpit aural warnings.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Frequency</th><th>Maximum Loss (each ear)</th><th>What It Tests</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Frequency</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Maximum Loss (each ear)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">What It Tests</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>500 Hz</td><td>35 dB</td><td>Low-frequency sounds (engine hum)</td></tr>
-                  <tr><td>1000 Hz</td><td>35 dB</td><td>Speech range (ATC communications)</td></tr>
-                  <tr><td>2000 Hz</td><td>35 dB</td><td>Speech clarity and consonants</td></tr>
-                  <tr><td>3000 Hz</td><td>50 dB</td><td>Aural warnings (more tolerance allowed)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">500 Hz</td><td className="px-4 py-3 text-white/80">35 dB</td><td className="px-4 py-3 text-white/80">Low-frequency sounds (engine hum)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">1000 Hz</td><td className="px-4 py-3 text-white/80">35 dB</td><td className="px-4 py-3 text-white/80">Speech range (ATC communications)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">2000 Hz</td><td className="px-4 py-3 text-white/80">35 dB</td><td className="px-4 py-3 text-white/80">Speech clarity and consonants</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">3000 Hz</td><td className="px-4 py-3 text-white/80">50 dB</td><td className="px-4 py-3 text-white/80">Aural warnings (more tolerance allowed)</td></tr>
                 </tbody>
               </table>
               <p>Hearing aids are permitted if they are well-tolerated and suitable for aviation purposes, resulting in a HAL (Hearing Aid Limitation) endorsement.</p>
@@ -121,17 +121,17 @@ export default function EasaMedicalClass1() {
           content: (
             <>
               <p>Class 1 medical costs vary enormously across Europe, though the certificate is identical and valid across all EASA states. Many pilots travel to Eastern Europe for their initial examination to save money.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Country</th><th>Initial Cost (EUR)</th><th>Renewal Cost (EUR)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Country</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Initial Cost (EUR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Renewal Cost (EUR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Bulgaria</td><td>€150</td><td>€95</td><td>Cheapest in Europe — same-day certificate</td></tr>
-                  <tr><td>Latvia</td><td>€180</td><td>€120</td><td>Blood panel not included (€20-€40 extra)</td></tr>
-                  <tr><td>Czech Republic</td><td>€220</td><td>€88-€140</td><td>AME renewals from €88</td></tr>
-                  <tr><td>Spain</td><td>€350-€600</td><td>€200-€300</td><td>14 AeMCs — wide price competition</td></tr>
-                  <tr><td>Germany</td><td>€500-€700</td><td>€200-€350</td><td>Multiple AeMCs, varies by region</td></tr>
-                  <tr><td>Ireland</td><td>€750</td><td>€350</td><td>One of Europe\'s most expensive</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Bulgaria</td><td className="px-4 py-3 text-white/80">€150</td><td className="px-4 py-3 text-white/80">€95</td><td className="px-4 py-3 text-white/80">Cheapest in Europe — same-day certificate</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Latvia</td><td className="px-4 py-3 text-white/80">€180</td><td className="px-4 py-3 text-white/80">€120</td><td className="px-4 py-3 text-white/80">Blood panel not included (€20-€40 extra)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Czech Republic</td><td className="px-4 py-3 text-white/80">€220</td><td className="px-4 py-3 text-white/80">€88-€140</td><td className="px-4 py-3 text-white/80">AME renewals from €88</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Spain</td><td className="px-4 py-3 text-white/80">€350-€600</td><td className="px-4 py-3 text-white/80">€200-€300</td><td className="px-4 py-3 text-white/80">14 AeMCs — wide price competition</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Germany</td><td className="px-4 py-3 text-white/80">€500-€700</td><td className="px-4 py-3 text-white/80">€200-€350</td><td className="px-4 py-3 text-white/80">Multiple AeMCs, varies by region</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Ireland</td><td className="px-4 py-3 text-white/80">€750</td><td className="px-4 py-3 text-white/80">€350</td><td className="px-4 py-3 text-white/80">One of Europe\'s most expensive</td></tr>
                 </tbody>
               </table>
               <p><em>Note: Base prices exclude specialist referrals, additional testing, or casework, which can add €100-€500+.</em></p>
@@ -143,15 +143,15 @@ export default function EasaMedicalClass1() {
           content: (
             <>
               <p>Validity depends on age and the type of commercial operations. Multi-pilot airline operations have the longest validity periods.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Age at Exam</th><th>Multi-Pilot Ops</th><th>Single-Pilot Commercial (Pax)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Age at Exam</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Multi-Pilot Ops</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Single-Pilot Commercial (Pax)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Under 40</td><td>12 months</td><td>12 months</td></tr>
-                  <tr><td>40-49</td><td>12 months</td><td>6 months</td></tr>
-                  <tr><td>50-59</td><td>12 months</td><td>6 months</td></tr>
-                  <tr><td>60-64</td><td>6 months</td><td>6 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Under 40</td><td className="px-4 py-3 text-white/80">12 months</td><td className="px-4 py-3 text-white/80">12 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">40-49</td><td className="px-4 py-3 text-white/80">12 months</td><td className="px-4 py-3 text-white/80">6 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">50-59</td><td className="px-4 py-3 text-white/80">12 months</td><td className="px-4 py-3 text-white/80">6 months</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">60-64</td><td className="px-4 py-3 text-white/80">6 months</td><td className="px-4 py-3 text-white/80">6 months</td></tr>
                 </tbody>
               </table>
               <p>It is advised to book your revalidation examination 3-4 weeks before your certificate expires to stay within the 45-day revalidation window.</p>

@@ -39,48 +39,48 @@ export default function CanadaPilotBenefits() {
               <p>
                 The Private Pilot License is the first significant step, allowing you to fly an aeroplane for recreational purposes, carrying passengers, but not for hire or reward. As per Transport Canada Standard 421.26, the requirements for obtaining a PPL (Aeroplane) are:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Requirement</th><th>Details (TC Standard 421.26)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details (TC Standard 421.26)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Age</strong></td><td>Minimum 17 years old.</td></tr>
-                  <tr><td><strong>Medical Fitness</strong></td><td>Category 3 Medical Certificate.</td></tr>
-                  <tr><td><strong>Knowledge</strong></td><td>Minimum 40 hours of ground school instruction covering Canadian Aviation Regulations, Aerodynamics, Meteorology, Airframes, Engines and Systems, Flight Instruments, Radio and Electronic Theory, Navigation, Flight Operations, Licensing Requirements, and Human Factors. Must achieve at least 60% on the PPAER written examination (Air Law, Navigation, Meteorology, Aeronautics - General Knowledge).</td></tr>
-                  <tr><td><strong>Experience</strong></td><td>Minimum 45 hours flight training in aeroplanes, including at least 17 hours dual instruction (3 hours cross-country, 5 hours instrument time) and 12 hours solo flight time (5 hours cross-country, including a 150 nautical mile flight with 2 full-stop landings at different aerodromes). A maximum of 5 hours may be on an approved simulator.</td></tr>
-                  <tr><td><strong>Skill</strong></td><td>Successful completion of a flight test within 12 months preceding the application, demonstrating proficiency as pilot-in-command.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Age</strong></td><td className="px-4 py-3 text-white/80">Minimum 17 years old.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Medical Fitness</strong></td><td className="px-4 py-3 text-white/80">Category 3 Medical Certificate.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Knowledge</strong></td><td className="px-4 py-3 text-white/80">Minimum 40 hours of ground school instruction covering Canadian Aviation Regulations, Aerodynamics, Meteorology, Airframes, Engines and Systems, Flight Instruments, Radio and Electronic Theory, Navigation, Flight Operations, Licensing Requirements, and Human Factors. Must achieve at least 60% on the PPAER written examination (Air Law, Navigation, Meteorology, Aeronautics - General Knowledge).</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Experience</strong></td><td className="px-4 py-3 text-white/80">Minimum 45 hours flight training in aeroplanes, including at least 17 hours dual instruction (3 hours cross-country, 5 hours instrument time) and 12 hours solo flight time (5 hours cross-country, including a 150 nautical mile flight with 2 full-stop landings at different aerodromes). A maximum of 5 hours may be on an approved simulator.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Skill</strong></td><td className="px-4 py-3 text-white/80">Successful completion of a flight test within 12 months preceding the application, demonstrating proficiency as pilot-in-command.</td></tr>
                 </tbody>
               </table>
               <h3>Commercial Pilot License (CPL) - Aeroplane</h3>
               <p>
                 The Commercial Pilot License allows you to fly for hire or reward, opening doors to various aviation careers such as flight instruction, aerial tours, or cargo operations. Transport Canada Standard 421.30 outlines the requirements:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Requirement</th><th>Details (TC Standard 421.30)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details (TC Standard 421.30)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Age</strong></td><td>Minimum 18 years old.</td></tr>
-                  <tr><td><strong>Medical Fitness</strong></td><td>Category 1 Medical Certificate.</td></tr>
-                  <tr><td><strong>Knowledge</strong></td><td>Minimum 80 hours of commercial pilot ground school instruction, covering advanced topics in Canadian Aviation Regulations, Aerodynamics, Meteorology, Airframes, Engines and Systems, Flight Instruments, Radio and Electronic Theory, Navigation, Flight Operations, Licensing Requirements, and Human Factors. Must achieve at least 60% on the CPAER written examination (Air Law, Navigation, Meteorology, Aeronautics - General Knowledge).</td></tr>
-                  <tr><td><strong>Experience</strong></td><td>Minimum 200 hours total flight time in aeroplanes, including at least 100 hours pilot-in-command (PIC) time (20 hours cross-country PIC). Additionally, 65 hours of commercial pilot flight training, comprising 35 hours dual instruction (5 hours night, 5 hours cross-country, 20 hours instrument time) and 30 hours solo flight time (25 hours general flying skills, including a 300 nautical mile cross-country flight with 3 full-stop landings; 5 hours night solo with 10 takeoffs and landings).</td></tr>
-                  <tr><td><strong>Skill</strong></td><td>Successful completion of a flight test within 12 months preceding the application, demonstrating proficiency as pilot-in-command.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Age</strong></td><td className="px-4 py-3 text-white/80">Minimum 18 years old.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Medical Fitness</strong></td><td className="px-4 py-3 text-white/80">Category 1 Medical Certificate.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Knowledge</strong></td><td className="px-4 py-3 text-white/80">Minimum 80 hours of commercial pilot ground school instruction, covering advanced topics in Canadian Aviation Regulations, Aerodynamics, Meteorology, Airframes, Engines and Systems, Flight Instruments, Radio and Electronic Theory, Navigation, Flight Operations, Licensing Requirements, and Human Factors. Must achieve at least 60% on the CPAER written examination (Air Law, Navigation, Meteorology, Aeronautics - General Knowledge).</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Experience</strong></td><td className="px-4 py-3 text-white/80">Minimum 200 hours total flight time in aeroplanes, including at least 100 hours pilot-in-command (PIC) time (20 hours cross-country PIC). Additionally, 65 hours of commercial pilot flight training, comprising 35 hours dual instruction (5 hours night, 5 hours cross-country, 20 hours instrument time) and 30 hours solo flight time (25 hours general flying skills, including a 300 nautical mile cross-country flight with 3 full-stop landings; 5 hours night solo with 10 takeoffs and landings).</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Skill</strong></td><td className="px-4 py-3 text-white/80">Successful completion of a flight test within 12 months preceding the application, demonstrating proficiency as pilot-in-command.</td></tr>
                 </tbody>
               </table>
               <h3>Airline Transport Pilot License (ATPL) - Aeroplane</h3>
               <p>
                 The Airline Transport Pilot License is required to act as pilot-in-command or co-pilot in multi-crew, multi-engine aircraft in commercial air transport operations, typically for major airlines. Transport Canada Standard 421.34 details the stringent requirements:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Requirement</th><th>Details (TC Standard 421.34)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details (TC Standard 421.34)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Age</strong></td><td>Minimum 21 years old.</td></tr>
-                  <tr><td><strong>Medical Fitness</strong></td><td>Category 1 Medical Certificate.</td></tr>
-                  <tr><td><strong>Knowledge</strong></td><td>Minimum 70% on three written examinations: SAMRA (Meteorology, Radio Aids, Flight Planning), SARON (Air Law, Aeroplane Operations, Navigation General), and INRAT (Instrument Rating).</td></tr>
-                  <tr><td><strong>Experience</strong></td><td>Minimum 1500 hours total flight time, including at least 900 hours in aeroplanes. This must include 250 hours PIC (or PIC under supervision), 100 hours night flight time (30 hours in aeroplanes), 100 additional hours cross-country (PIC or co-pilot), and 75 hours instrument flight time (max 25 hours in approved ground trainers, max 35 hours in helicopters).</td></tr>
-                  <tr><td><strong>Skill</strong></td><td>Successful completion of a flight test in a multi-engine aeroplane (or Level C/D simulator) operated with a co-pilot, demonstrating IFR flight procedures and manoeuvres, or a Pilot Proficiency Check (PPC) under Part VII or Subpart 604.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Age</strong></td><td className="px-4 py-3 text-white/80">Minimum 21 years old.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Medical Fitness</strong></td><td className="px-4 py-3 text-white/80">Category 1 Medical Certificate.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Knowledge</strong></td><td className="px-4 py-3 text-white/80">Minimum 70% on three written examinations: SAMRA (Meteorology, Radio Aids, Flight Planning), SARON (Air Law, Aeroplane Operations, Navigation General), and INRAT (Instrument Rating).</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Experience</strong></td><td className="px-4 py-3 text-white/80">Minimum 1500 hours total flight time, including at least 900 hours in aeroplanes. This must include 250 hours PIC (or PIC under supervision), 100 hours night flight time (30 hours in aeroplanes), 100 additional hours cross-country (PIC or co-pilot), and 75 hours instrument flight time (max 25 hours in approved ground trainers, max 35 hours in helicopters).</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Skill</strong></td><td className="px-4 py-3 text-white/80">Successful completion of a flight test in a multi-engine aeroplane (or Level C/D simulator) operated with a co-pilot, demonstrating IFR flight procedures and manoeuvres, or a Pilot Proficiency Check (PPC) under Part VII or Subpart 604.</td></tr>
                 </tbody>
               </table>
             </>
@@ -93,19 +93,19 @@ export default function CanadaPilotBenefits() {
               <p>
                 The cost of pilot training in Canada can be substantial, varying significantly based on the flight school, aircraft type, and individual progress. It's crucial to budget comprehensively for tuition, flight hours, examinations, medicals, and other associated expenses. Here's an estimated breakdown for 2026:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Item</th><th>Estimated Cost (CAD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Private Pilot License (PPL)</strong></td><td>$15,000 - $25,000</td><td>Includes ground school, flight hours (aircraft rental and instructor fees), study materials, exams, and medical.</td></tr>
-                  <tr><td><strong>Commercial Pilot License (CPL)</strong></td><td>$40,000 - $60,000</td><td>Includes advanced ground school, additional flight hours to meet 200-hour requirement, instrument rating, multi-engine rating, exams, and flight tests. This is often an add-on to PPL costs.</td></tr>
-                  <tr><td><strong>Airline Transport Pilot License (ATPL)</strong></td><td>$20,000 - $30,000</td><td>Primarily involves written exams and meeting extensive flight hour requirements, often accumulated during initial commercial flying. Costs include exam fees, study materials, and potentially simulator time.</td></tr>
-                  <tr><td><strong>Medical Certificates</strong></td><td>$150 - $300 per examination</td><td>Recurring expense, Category 1 is more expensive than Category 3.</td></tr>
-                  <tr><td><strong>Examiner Fees</strong></td><td>$300 - $600 per flight test</td><td>Fees for Transport Canada authorized examiners.</td></tr>
-                  <tr><td><strong>Study Materials & Equipment</strong></td><td>$1,000 - $3,000</td><td>Textbooks, charts, navigation tools, headset, iPad with aviation apps.</td></tr>
-                  <tr><td><strong>Living Expenses</strong></td><td>Variable</td><td>Accommodation, food, transportation during training.</td></tr>
-                  <tr><td><strong>Total Estimated Cost (from zero to CPL with ratings)</strong></td><td>$70,000 - $120,000+</td><td>This range is highly dependent on the school, efficiency of training, and individual aptitude.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Private Pilot License (PPL)</strong></td><td className="px-4 py-3 text-white/80">$15,000 - $25,000</td><td className="px-4 py-3 text-white/80">Includes ground school, flight hours (aircraft rental and instructor fees), study materials, exams, and medical.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Commercial Pilot License (CPL)</strong></td><td className="px-4 py-3 text-white/80">$40,000 - $60,000</td><td className="px-4 py-3 text-white/80">Includes advanced ground school, additional flight hours to meet 200-hour requirement, instrument rating, multi-engine rating, exams, and flight tests. This is often an add-on to PPL costs.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Airline Transport Pilot License (ATPL)</strong></td><td className="px-4 py-3 text-white/80">$20,000 - $30,000</td><td className="px-4 py-3 text-white/80">Primarily involves written exams and meeting extensive flight hour requirements, often accumulated during initial commercial flying. Costs include exam fees, study materials, and potentially simulator time.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Medical Certificates</strong></td><td className="px-4 py-3 text-white/80">$150 - $300 per examination</td><td className="px-4 py-3 text-white/80">Recurring expense, Category 1 is more expensive than Category 3.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Examiner Fees</strong></td><td className="px-4 py-3 text-white/80">$300 - $600 per flight test</td><td className="px-4 py-3 text-white/80">Fees for Transport Canada authorized examiners.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Study Materials & Equipment</strong></td><td className="px-4 py-3 text-white/80">$1,000 - $3,000</td><td className="px-4 py-3 text-white/80">Textbooks, charts, navigation tools, headset, iPad with aviation apps.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Living Expenses</strong></td><td className="px-4 py-3 text-white/80">Variable</td><td className="px-4 py-3 text-white/80">Accommodation, food, transportation during training.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost (from zero to CPL with ratings)</strong></td><td className="px-4 py-3 text-white/80">$70,000 - $120,000+</td><td className="px-4 py-3 text-white/80">This range is highly dependent on the school, efficiency of training, and individual aptitude.</td></tr>
                 </tbody>
               </table>
               <p>

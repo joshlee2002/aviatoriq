@@ -5,7 +5,7 @@ export default function EmiratesCadetPilotProgram() {
   return (
     <GuideLayout
       title="Emirates Cadet Pilot Program: Your Definitive 2026 Guide"
-      subtitle="A comprehensive guide to the Emirates Cadet Pilot Program, covering eligibility, selection, training, costs, and career prospects for aspiring pilots in 2026."
+      subtitle="The Emirates Cadet Pilot Program, covering eligibility, selection, training, costs, and career prospects for aspiring pilots in 2026."
       readTime="15 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -99,39 +99,39 @@ export default function EmiratesCadetPilotProgram() {
                 <li>Issuance of ATPL, MCC, and CPL/Multi IR certificates approved by the UAE GCAA</li>
               </ul>
               <p>Additional costs to consider include the assessment fees mentioned in the selection process. While the program is substantial, the investment provides world-class training and a direct pathway to a career with a prestigious airline.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Cost (AED)</th>
-                    <th>Cost (USD)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost (AED)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost (USD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Online Assessments</td>
-                    <td>1,000</td>
-                    <td>272</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Online Assessments</td>
+                    <td className="px-4 py-3 text-white/80">1,000</td>
+                    <td className="px-4 py-3 text-white/80">272</td>
                   </tr>
-                  <tr>
-                    <td>Assessment Day 1 (Dubai)</td>
-                    <td>500</td>
-                    <td>136</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Assessment Day 1 (Dubai)</td>
+                    <td className="px-4 py-3 text-white/80">500</td>
+                    <td className="px-4 py-3 text-white/80">136</td>
                   </tr>
-                  <tr>
-                    <td>Assessment Day 2 & 3 (Dubai)</td>
-                    <td>4,200</td>
-                    <td>1,143</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Assessment Day 2 & 3 (Dubai)</td>
+                    <td className="px-4 py-3 text-white/80">4,200</td>
+                    <td className="px-4 py-3 text-white/80">1,143</td>
                   </tr>
-                  <tr>
-                    <td>Full Training Program</td>
-                    <td>593,700</td>
-                    <td>161,650</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Full Training Program</td>
+                    <td className="px-4 py-3 text-white/80">593,700</td>
+                    <td className="px-4 py-3 text-white/80">161,650</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Cost</strong></td>
-                    <td><strong>599,400</strong></td>
-                    <td><strong>163,201</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>599,400</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>163,201</strong></td>
                   </tr>
                 </tbody>
               </table>

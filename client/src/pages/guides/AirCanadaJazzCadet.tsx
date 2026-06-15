@@ -5,7 +5,7 @@ export default function AirCanadaJazzCadet() {
   return (
     <GuideLayout
       title="The Air Canada Jazz Cadet Program: Your Definitive Guide to a Pilot Career in Canada"
-      subtitle="A comprehensive guide to the Jazz Approach program, offering a direct pathway to becoming a First Officer with Jazz Aviation LP and Air Canada."
+      subtitle="The Jazz Approach program, offering a direct pathway to becoming a First Officer with Jazz Aviation LP and Air Canada."
       readTime="15 min"
       author="AviatorIQ Research"
       lastUpdated="January 2026"
@@ -19,7 +19,7 @@ export default function AirCanadaJazzCadet() {
           heading: "Introduction: Charting Your Course with Air Canada Jazz",
           content: (
             <>
-              <p>Aspiring aviators in Canada often seek a clear and structured pathway into the cockpit of a major airline. The Air Canada Jazz Cadet Program, officially known as the Jazz Approach, offers precisely such an opportunity. This comprehensive guide delves into the intricacies of this esteemed program, providing an in-depth look at its structure, requirements, costs, and the unparalleled career progression it offers. Designed for individuals with little to no prior flight experience, the Jazz Approach is a collaborative initiative between industry leaders CAE, Jazz Aviation LP, and Cygnet Aviation Academy LP, meticulously crafted to transform dedicated cadets into airline-ready First Officers for Jazz Aviation, with direct flow-through opportunities to Air Canada.</p>
+              <p>Aspiring aviators in Canada often seek a clear and structured pathway into the cockpit of a major airline. The Air Canada Jazz Cadet Program, officially known as the Jazz Approach, offers precisely such an opportunity. This comprehensive guide covers this esteemed program, providing an in-depth look at its structure, requirements, costs, and the unparalleled career progression it offers. Designed for individuals with little to no prior flight experience, the Jazz Approach is a collaborative initiative between industry leaders CAE, Jazz Aviation LP, and Cygnet Aviation Academy LP, meticulously crafted to transform dedicated cadets into airline-ready First Officers for Jazz Aviation, with direct flow-through opportunities to Air Canada.</p>
             </>
           )
         },
@@ -54,13 +54,13 @@ export default function AirCanadaJazzCadet() {
             <>
               <p>Investing in an airline pilot career is a significant financial commitment. The total cost for the Air Canada Jazz Cadet Program is <strong>$137,139 CAD plus applicable taxes</strong> [1]. It is important to note that this amount is subject to periodic review and may be adjusted. This comprehensive fee covers all aspects of the training, from initial ground school to advanced simulator sessions and all necessary examinations.</p>
               <p>Recognizing the substantial investment, CAE and its partners have established financing opportunities to support aspiring pilots. Cadets accepted into the program can explore student loan options through reputable Canadian financial institutions:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Financial Institution</th><th>Maximum Loan Amount (CAD)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Financial Institution</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Maximum Loan Amount (CAD)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>CIBC</td><td>Up to $200,000</td></tr>
-                  <tr><td>Scotiabank</td><td>Up to $100,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">CIBC</td><td className="px-4 py-3 text-white/80">Up to $200,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Scotiabank</td><td className="px-4 py-3 text-white/80">Up to $100,000</td></tr>
                 </tbody>
               </table>
               <p>Further details regarding student loan applications and instructions are provided upon official acceptance into the program. Prospective cadets are encouraged to thoroughly research these options and plan their finances accordingly.</p>

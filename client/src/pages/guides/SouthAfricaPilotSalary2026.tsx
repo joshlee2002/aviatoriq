@@ -48,14 +48,14 @@ export default function SouthAfricaPilotSalary2026() {
               <p>For newly qualified pilots entering the South African aviation industry, the initial earning potential can vary. Many begin their careers as First Officers (FOs) with regional airlines, charter companies, or flight schools as instructors. The starting salaries reflect the need to build experience and accumulate flight hours, which are vital for career progression.</p>
               <p>In 2026, a typical entry-level First Officer can expect to earn in the range of **ZAR 350,000 to ZAR 600,000 per annum**. This range can be influenced by the operator's size, the aircraft type, and the pilot's specific qualifications. Some sources indicate starting salaries as low as ZAR 280,000 per year for certain roles, while others suggest that with additional ratings or specialized experience, a new pilot might approach the higher end of this spectrum.</p>
               <p>Below is an estimated breakdown for entry-level positions:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Role</th><th>Estimated Annual Salary (ZAR)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Role</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (ZAR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Flight Instructor</td><td>300,000 - 450,000</td><td>Often a stepping stone to airline careers.</td></tr>
-                  <tr><td>First Officer (Regional/Charter)</td><td>350,000 - 600,000</td><td>Building hours on smaller aircraft.</td></tr>
-                  <tr><td>First Officer (Major Airline - entry)</td><td>500,000 - 750,000</td><td>Highly competitive, often requires prior experience.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Instructor</td><td className="px-4 py-3 text-white/80">300,000 - 450,000</td><td className="px-4 py-3 text-white/80">Often a stepping stone to airline careers.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">First Officer (Regional/Charter)</td><td className="px-4 py-3 text-white/80">350,000 - 600,000</td><td className="px-4 py-3 text-white/80">Building hours on smaller aircraft.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">First Officer (Major Airline - entry)</td><td className="px-4 py-3 text-white/80">500,000 - 750,000</td><td className="px-4 py-3 text-white/80">Highly competitive, often requires prior experience.</td></tr>
                 </tbody>
               </table>
               <p>It's important to note that these figures often include base salary, flight pay, and sometimes allowances. Bonuses and profit-sharing schemes are less common at the entry-level but can contribute to overall compensation as experience grows.</p>
@@ -69,14 +69,14 @@ export default function SouthAfricaPilotSalary2026() {
               <p>As pilots gain significant experience, accumulate thousands of flight hours, and upgrade their licenses and ratings, their earning potential increases substantially. Experienced First Officers and, particularly, Captains at major South African airlines are among the highest earners in the profession.</p>
               <p>A seasoned Captain flying for a major airline like South African Airways (SAA), FlySafair, or Airlink can expect to earn between **ZAR 900,000 and ZAR 2,400,000 per annum** in 2026. Some highly experienced Captains on long-haul international routes or specialized aircraft may even exceed this range, with reports suggesting figures up to ZAR 2.5 million or more annually. Senior First Officers, on the path to command, typically fall within the **ZAR 700,000 to ZAR 1,200,000** range.</p>
               <p>The type of aircraft significantly impacts these figures. Pilots qualified on wide-body aircraft (e.g., Airbus A330/A340, Boeing 777/787) generally earn more than those on narrow-body jets (e.g., Boeing 737, Airbus A320) or turboprops, due to the complexity, responsibility, and longer routes associated with such operations.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Role</th><th>Estimated Annual Salary (ZAR)</th><th>Typical Aircraft</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Role</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (ZAR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Aircraft</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Senior First Officer</td><td>700,000 - 1,200,000</td><td>Boeing 737, Airbus A320</td></tr>
-                  <tr><td>Captain (Narrow-body)</td><td>900,000 - 1,800,000</td><td>Boeing 737, Airbus A320</td></tr>
-                  <tr><td>Captain (Wide-body/Long-haul)</td><td>1,800,000 - 2,500,000+</td><td>Airbus A330/A340, Boeing 777/787</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Senior First Officer</td><td className="px-4 py-3 text-white/80">700,000 - 1,200,000</td><td className="px-4 py-3 text-white/80">Boeing 737, Airbus A320</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Captain (Narrow-body)</td><td className="px-4 py-3 text-white/80">900,000 - 1,800,000</td><td className="px-4 py-3 text-white/80">Boeing 737, Airbus A320</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Captain (Wide-body/Long-haul)</td><td className="px-4 py-3 text-white/80">1,800,000 - 2,500,000+</td><td className="px-4 py-3 text-white/80">Airbus A330/A340, Boeing 777/787</td></tr>
                 </tbody>
               </table>
               <p>These figures often include a robust package comprising base salary, flight allowances, per diems for international travel, and potentially performance-based bonuses or profit-sharing schemes, especially with more established and profitable airlines.</p>
@@ -91,15 +91,15 @@ export default function SouthAfricaPilotSalary2026() {
               <p><b>Major Airlines:</b> National and larger private airlines such as South African Airways (SAA), FlySafair, and Airlink typically offer the most attractive salary packages. These airlines often have structured pay scales, comprehensive benefits (medical aid, provident fund), and opportunities for career progression onto larger aircraft and international routes. Their remuneration reflects the higher demands, responsibilities, and often more extensive training requirements.</p>
               <p><b>Regional Airlines:</b> Operators like CemAir or smaller regional carriers, while offering valuable experience, generally have lower salary scales compared to the majors. Pilots in these roles might earn between **ZAR 400,000 and ZAR 900,000 per annum**, depending on their rank and aircraft type. These roles are often crucial for building flight hours and gaining multi-crew experience necessary for transitioning to larger airlines.</p>
               <p><b>Charter and Corporate Aviation:</b> This segment can be highly variable. Corporate pilots flying private jets for businesses might earn competitive salaries, sometimes comparable to or exceeding major airline First Officers, ranging from **ZAR 600,000 to ZAR 1,500,000 per annum**. Charter pilots, often flying smaller aircraft on demand, might have more fluctuating incomes, sometimes based on flight hours or contracts, with annual earnings typically between **ZAR 350,000 and ZAR 800,000**.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Employer Type</th><th>Estimated Annual Salary Range (ZAR)</th><th>Typical Career Stage</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Employer Type</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary Range (ZAR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Career Stage</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Major Airlines (e.g., SAA, FlySafair, Airlink)</td><td>500,000 - 2,500,000+</td><td>Mid-career to Senior Captain</td></tr>
-                  <tr><td>Regional Airlines (e.g., CemAir)</td><td>400,000 - 900,000</td><td>Entry-level to Mid-career First Officer</td></tr>
-                  <tr><td>Corporate Aviation</td><td>600,000 - 1,500,000</td><td>Experienced First Officer to Captain</td></tr>
-                  <tr><td>Charter Services</td><td>350,000 - 800,000</td><td>Entry-level to Experienced Pilot</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Major Airlines (e.g., SAA, FlySafair, Airlink)</td><td className="px-4 py-3 text-white/80">500,000 - 2,500,000+</td><td className="px-4 py-3 text-white/80">Mid-career to Senior Captain</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Regional Airlines (e.g., CemAir)</td><td className="px-4 py-3 text-white/80">400,000 - 900,000</td><td className="px-4 py-3 text-white/80">Entry-level to Mid-career First Officer</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Corporate Aviation</td><td className="px-4 py-3 text-white/80">600,000 - 1,500,000</td><td className="px-4 py-3 text-white/80">Experienced First Officer to Captain</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Charter Services</td><td className="px-4 py-3 text-white/80">350,000 - 800,000</td><td className="px-4 py-3 text-white/80">Entry-level to Experienced Pilot</td></tr>
                 </tbody>
               </table>
               <p>The benefits package, including medical aid, pension contributions, and travel perks, should also be considered when evaluating the overall compensation from different employers.</p>

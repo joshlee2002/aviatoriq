@@ -32,14 +32,14 @@ export default function CanadaRegionalAirlines() {
               <p>Key regulatory documents, such as Standard 421 of the Canadian Aviation Regulations (CARs), detail the precise requirements for each license and rating. Adherence to these standards is non-negotiable and forms the bedrock of a safe and professional aviation career.</p>
               <h3>Medical Certificates</h3>
               <p>A crucial prerequisite for all pilot licenses is a valid medical certificate. For commercial operations, a Category 1 Medical Certificate is mandatory. This certificate requires a comprehensive medical examination by a Transport Canada-approved medical examiner and must be renewed periodically.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Medical Certificate Category</th><th>Validity (Under 40)</th><th>Validity (40 and Over)</th><th>Associated Licence</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Medical Certificate Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Validity (Under 40)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Validity (40 and Over)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Associated Licence</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Category 1</td><td>12 months</td><td>6 months</td><td>Commercial Pilot Licence (CPL), Airline Transport Pilot Licence (ATPL)</td></tr>
-                  <tr><td>Category 3</td><td>24 months</td><td>12 months</td><td>Private Pilot Licence (PPL)</td></tr>
-                  <tr><td>Category 4</td><td>60 months</td><td>24 months</td><td>Recreational Pilot Permit, Ultra-light Aeroplane Pilot Permit</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Category 1</td><td className="px-4 py-3 text-white/80">12 months</td><td className="px-4 py-3 text-white/80">6 months</td><td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL), Airline Transport Pilot Licence (ATPL)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Category 3</td><td className="px-4 py-3 text-white/80">24 months</td><td className="px-4 py-3 text-white/80">12 months</td><td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Category 4</td><td className="px-4 py-3 text-white/80">60 months</td><td className="px-4 py-3 text-white/80">24 months</td><td className="px-4 py-3 text-white/80">Recreational Pilot Permit, Ultra-light Aeroplane Pilot Permit</td></tr>
                 </tbody>
               </table>
               <h3>Licensing Requirements Overview</h3>
@@ -76,17 +76,17 @@ export default function CanadaRegionalAirlines() {
           content: (
             <>
               <p>The cost of pilot training in Canada can be substantial, varying based on the flight school, aircraft type, and individual learning pace. It's crucial to budget meticulously and explore all financing options.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Licence/Rating</th><th>Estimated Cost (CAD)</th><th>Key Components</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Licence/Rating</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Components</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot Licence (PPL)</td><td>$15,000 - $25,000</td><td>Flight hours, ground school, exams, medical, supplies</td></tr>
-                  <tr><td>Commercial Pilot Licence (CPL)</td><td>$50,000 - $75,000 (from scratch)</td><td>Additional flight hours, advanced ground school, exams, ratings (multi-engine, instrument)</td></tr>
-                  <tr><td>Multi-Engine Rating</td><td>$5,000 - $10,000</td><td>Dual instruction in multi-engine aircraft</td></tr>
-                  <tr><td>Instrument Rating (Group 1)</td><td>$15,000 - $25,000</td><td>Dual instrument instruction, simulator time, exams</td></tr>
-                  <tr><td>Airline Transport Pilot Licence (ATPL) Exams</td><td>$500 - $1,500</td><td>Written exams (SARON, SAMRA)</td></tr>
-                  <tr><td>Total (PPL to CPL with Multi/IFR)</td><td>$70,000 - $120,000+</td><td>Comprehensive training pathway</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td><td className="px-4 py-3 text-white/80">$15,000 - $25,000</td><td className="px-4 py-3 text-white/80">Flight hours, ground school, exams, medical, supplies</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td><td className="px-4 py-3 text-white/80">$50,000 - $75,000 (from scratch)</td><td className="px-4 py-3 text-white/80">Additional flight hours, advanced ground school, exams, ratings (multi-engine, instrument)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating</td><td className="px-4 py-3 text-white/80">$5,000 - $10,000</td><td className="px-4 py-3 text-white/80">Dual instruction in multi-engine aircraft</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (Group 1)</td><td className="px-4 py-3 text-white/80">$15,000 - $25,000</td><td className="px-4 py-3 text-white/80">Dual instrument instruction, simulator time, exams</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Airline Transport Pilot Licence (ATPL) Exams</td><td className="px-4 py-3 text-white/80">$500 - $1,500</td><td className="px-4 py-3 text-white/80">Written exams (SARON, SAMRA)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Total (PPL to CPL with Multi/IFR)</td><td className="px-4 py-3 text-white/80">$70,000 - $120,000+</td><td className="px-4 py-3 text-white/80">Comprehensive training pathway</td></tr>
                 </tbody>
               </table>
               <p>These figures are estimates for 2026 and can fluctuate. Factors such as fuel prices, instructor rates, and aircraft maintenance costs directly impact overall expenses. Many flight schools offer integrated programs that can sometimes be more cost-effective than modular training.</p>

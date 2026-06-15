@@ -39,44 +39,44 @@ export default function SouthAfricaPilotShortage() {
                 Key requirements for obtaining a commercial pilot license (CPL) in South Africa, as stipulated by SACAA, include completing a specified number of flight hours, which typically ranges from 150 to 200 hours depending on the training program (Part 61 or Part 141). This includes solo flight time, cross-country flights, and instrument flight training. Following the accumulation of required hours and successful completion of theoretical exams, candidates must pass a practical skill test, commonly known as a 'check ride,' with a SACAA-designated examiner. Furthermore, obtaining an Instrument Rating (IR) and a Multi-Engine Rating (ME) is crucial for commercial operations, enabling pilots to fly in various weather conditions and operate more complex aircraft. SACAA's commitment to safety is underscored by its consistent high ranking globally in aviation safety audits, a testament to its robust regulatory framework.
               </p>
               <h3>Key SACAA Licensing Requirements (2026)</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Requirement Category</th>
-                    <th>Details</th>
-                    <th>SACAA Part Reference</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">SACAA Part Reference</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Theoretical Exams</td>
-                    <td>Pass all required SACAA theoretical examinations (e.g., Air Law, Meteorology, Navigation, Flight Planning, Human Performance, General Aircraft Knowledge).</td>
-                    <td>Part 61 & Part 141</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Theoretical Exams</td>
+                    <td className="px-4 py-3 text-white/80">Pass all required SACAA theoretical examinations (e.g., Air Law, Meteorology, Navigation, Flight Planning, Human Performance, General Aircraft Knowledge).</td>
+                    <td className="px-4 py-3 text-white/80">Part 61 & Part 141</td>
                   </tr>
-                  <tr>
-                    <td>Flight Hours</td>
-                    <td>Minimum 150-200 hours total flight time (PPL + CPL), including specified solo, cross-country, and instrument hours.</td>
-                    <td>Part 61 & Part 141</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Hours</td>
+                    <td className="px-4 py-3 text-white/80">Minimum 150-200 hours total flight time (PPL + CPL), including specified solo, cross-country, and instrument hours.</td>
+                    <td className="px-4 py-3 text-white/80">Part 61 & Part 141</td>
                   </tr>
-                  <tr>
-                    <td>Skill Test (Check Ride)</td>
-                    <td>Successful completion of a practical flight test with a SACAA-approved examiner.</td>
-                    <td>Part 61</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Skill Test (Check Ride)</td>
+                    <td className="px-4 py-3 text-white/80">Successful completion of a practical flight test with a SACAA-approved examiner.</td>
+                    <td className="px-4 py-3 text-white/80">Part 61</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>Required for flight under Instrument Flight Rules (IFR).</td>
-                    <td>Part 61</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">Required for flight under Instrument Flight Rules (IFR).</td>
+                    <td className="px-4 py-3 text-white/80">Part 61</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (ME)</td>
-                    <td>Required for operating multi-engine aircraft.</td>
-                    <td>Part 61</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
+                    <td className="px-4 py-3 text-white/80">Required for operating multi-engine aircraft.</td>
+                    <td className="px-4 py-3 text-white/80">Part 61</td>
                   </tr>
-                  <tr>
-                    <td>Medical Certificate</td>
-                    <td>Valid Class 1 Aviation Medical Certificate.</td>
-                    <td>Part 67</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Medical Certificate</td>
+                    <td className="px-4 py-3 text-white/80">Valid Class 1 Aviation Medical Certificate.</td>
+                    <td className="px-4 py-3 text-white/80">Part 67</td>
                   </tr>
                 </tbody>
               </table>
@@ -94,54 +94,54 @@ export default function SouthAfricaPilotShortage() {
                 Additional expenses that are often not included in the base training cost but are essential for a complete pilot journey include accommodation, transportation, medical examinations, and personal living expenses. Some flight schools offer all-inclusive packages that cover accommodation and transportation, which can be a convenient option for international students or those relocating for training. However, these packages will naturally fall towards the higher end of the cost spectrum. Financial planning is paramount, and exploring options such as student loans, scholarships, or part-time employment is advisable. The return on investment, however, remains strong given the long-term career prospects in aviation.
               </p>
               <h3>Estimated Pilot Training Costs (ZAR) - 2026</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Training Phase/Item</th>
-                    <th>Estimated Cost Range (ZAR)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase/Item</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost Range (ZAR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot License (PPL)</td>
-                    <td>100,000 - 150,000</td>
-                    <td>Foundation for all further training.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">100,000 - 150,000</td>
+                    <td className="px-4 py-3 text-white/80">Foundation for all further training.</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot License (CPL)</td>
-                    <td>350,000 - 600,000</td>
-                    <td>Includes flight hours, ground school, exams.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">350,000 - 600,000</td>
+                    <td className="px-4 py-3 text-white/80">Includes flight hours, ground school, exams.</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>100,000 - 180,000</td>
-                    <td>Essential for commercial operations.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">100,000 - 180,000</td>
+                    <td className="px-4 py-3 text-white/80">Essential for commercial operations.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (ME)</td>
-                    <td>50,000 - 100,000</td>
-                    <td>Required for multi-engine aircraft.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
+                    <td className="px-4 py-3 text-white/80">50,000 - 100,000</td>
+                    <td className="px-4 py-3 text-white/80">Required for multi-engine aircraft.</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Subjects (Frozen ATPL)</td>
-                    <td>30,000 - 60,000</td>
-                    <td>Theoretical knowledge for Airline Transport Pilot License.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Subjects (Frozen ATPL)</td>
+                    <td className="px-4 py-3 text-white/80">30,000 - 60,000</td>
+                    <td className="px-4 py-3 text-white/80">Theoretical knowledge for Airline Transport Pilot License.</td>
                   </tr>
-                  <tr>
-                    <td>Medical Examination (Class 1)</td>
-                    <td>2,000 - 5,000</td>
-                    <td>Initial and recurring.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Medical Examination (Class 1)</td>
+                    <td className="px-4 py-3 text-white/80">2,000 - 5,000</td>
+                    <td className="px-4 py-3 text-white/80">Initial and recurring.</td>
                   </tr>
-                  <tr>
-                    <td>Study Materials & Equipment</td>
-                    <td>10,000 - 20,000</td>
-                    <td>Books, charts, headset, uniform.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Study Materials & Equipment</td>
+                    <td className="px-4 py-3 text-white/80">10,000 - 20,000</td>
+                    <td className="px-4 py-3 text-white/80">Books, charts, headset, uniform.</td>
                   </tr>
-                  <tr>
-                    <td>Total Estimated Cost (PPL to CPL/IR/ME)</td>
-                    <td>600,000 - 1,200,000</td>
-                    <td>Excludes accommodation and living expenses.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Estimated Cost (PPL to CPL/IR/ME)</td>
+                    <td className="px-4 py-3 text-white/80">600,000 - 1,200,000</td>
+                    <td className="px-4 py-3 text-white/80">Excludes accommodation and living expenses.</td>
                   </tr>
                 </tbody>
               </table>
@@ -159,39 +159,39 @@ export default function SouthAfricaPilotShortage() {
                 Beyond the major passenger airlines, opportunities also exist in cargo operations, charter services, flight instruction, and corporate aviation. The demand for experienced captains, as highlighted by the current market dynamics, suggests that pilots who accumulate significant flight hours and command experience will be highly sought after. While the initial entry into an airline might be competitive, the long-term outlook for dedicated and proficient aviators in South Africa remains positive, especially as the industry recovers and expands. Networking within the aviation community, maintaining a strong academic record, and demonstrating exceptional flying skills are crucial for securing a rewarding career.
               </p>
               <h3>Major South African Airlines (2026)</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Airline Name</th>
-                    <th>Primary Focus</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline Name</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Primary Focus</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>South African Airways (SAA)</td>
-                    <td>National Flag Carrier, International & Domestic</td>
-                    <td>Undergoing restructuring, aiming for expansion.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">South African Airways (SAA)</td>
+                    <td className="px-4 py-3 text-white/80">National Flag Carrier, International & Domestic</td>
+                    <td className="px-4 py-3 text-white/80">Undergoing restructuring, aiming for expansion.</td>
                   </tr>
-                  <tr>
-                    <td>Airlink</td>
-                    <td>Regional & Domestic</td>
-                    <td>Largest independent regional airline in Southern Africa.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Airlink</td>
+                    <td className="px-4 py-3 text-white/80">Regional & Domestic</td>
+                    <td className="px-4 py-3 text-white/80">Largest independent regional airline in Southern Africa.</td>
                   </tr>
-                  <tr>
-                    <td>CemAir</td>
-                    <td>Regional & Domestic, Charter</td>
-                    <td>Growing regional presence and charter services.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CemAir</td>
+                    <td className="px-4 py-3 text-white/80">Regional & Domestic, Charter</td>
+                    <td className="px-4 py-3 text-white/80">Growing regional presence and charter services.</td>
                   </tr>
-                  <tr>
-                    <td>Safair (FlySafair)</td>
-                    <td>Low-Cost Carrier, Domestic</td>
-                    <td>Popular for affordable domestic travel.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Safair (FlySafair)</td>
+                    <td className="px-4 py-3 text-white/80">Low-Cost Carrier, Domestic</td>
+                    <td className="px-4 py-3 text-white/80">Popular for affordable domestic travel.</td>
                   </tr>
-                  <tr>
-                    <td>LIFT Airline</td>
-                    <td>Low-Cost Carrier, Domestic</td>
-                    <td>Newer entrant, focusing on key domestic routes.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">LIFT Airline</td>
+                    <td className="px-4 py-3 text-white/80">Low-Cost Carrier, Domestic</td>
+                    <td className="px-4 py-3 text-white/80">Newer entrant, focusing on key domestic routes.</td>
                   </tr>
                 </tbody>
               </table>

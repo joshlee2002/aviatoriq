@@ -5,7 +5,7 @@ export default function UaePilotShortage() {
   return (
     <GuideLayout
       title="Navigating the Skies: The UAE Pilot Training Market in 2026"
-      subtitle="A Comprehensive Guide to Opportunities, Regulations, and Training for Aspiring Aviators in the United Arab Emirates"
+      subtitle="Opportunities, Regulations, and Training for Aspiring Aviators in the United Arab Emirates"
       readTime="15 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -20,10 +20,10 @@ export default function UaePilotShortage() {
           content: (
             <>
               <p>
-                The global aviation industry is experiencing a significant pilot shortage, a trend that is acutely felt and strategically addressed within the United Arab Emirates (UAE). As of 2026, projections indicate a sustained demand for highly skilled aviators, driven by ambitious expansion plans of national carriers and the region's burgeoning status as a global aviation hub. This guide delves into the intricacies of the UAE pilot training market, offering an elite perspective on regulations, training pathways, costs, and career prospects for those aspiring to join the ranks of professional pilots in this dynamic region.
+                The global aviation industry is experiencing a significant pilot shortage, a trend that is acutely felt and strategically addressed within the United Arab Emirates (UAE). As of 2026, projections indicate a sustained demand for highly skilled aviators, driven by ambitious expansion plans of national carriers and the region's burgeoning status as a global aviation hub. This guide covers the UAE pilot training market, offering an elite perspective on regulations, training pathways, costs, and career prospects for those aspiring to join the ranks of professional pilots in this dynamic region.
               </p>
               <p>
-                The Middle East, in particular, is poised for substantial growth, with major airlines like Emirates and Etihad Airways continually expanding their fleets and route networks. Boeing's latest Pilot and Technician Outlook forecasts a long-term demand for hundreds of thousands of new pilots globally, with a significant portion allocated to the Asia-Pacific and Middle East regions. This robust demand translates into unparalleled opportunities for both local and international cadets seeking a rewarding career in aviation.
+                The Middle East, in particular, is poised for substantial growth, with major airlines like Emirates and Etihad Airways continually expanding their fleets and route networks. Boeing's latest Pilot and Technician Outlook forecasts a long-term demand for hundreds of thousands of new pilots globally, with a significant portion allocated to the Asia-Pacific and Middle East regions. This robust demand translates into significant opportunities for both local and international cadets seeking a rewarding career in aviation.
               </p>
             </>
           ),
@@ -100,45 +100,45 @@ export default function UaePilotShortage() {
               <p>
                 Pilot training is a significant investment, and costs in the UAE reflect the high quality of instruction and facilities. While exact figures can vary based on the academy, program type (integrated vs. modular), and individual progress, here are estimated ranges for 2026:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>License/Rating</th>
-                    <th>Estimated Cost (AED)</th>
-                    <th>Estimated Cost (USD)</th>
-                    <th>Duration</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">License/Rating</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AED)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot License (PPL)</td>
-                    <td>AED 60,000 - 90,000</td>
-                    <td>$16,300 - $24,500</td>
-                    <td>3-6 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">AED 60,000 - 90,000</td>
+                    <td className="px-4 py-3 text-white/80">$16,300 - $24,500</td>
+                    <td className="px-4 py-3 text-white/80">3-6 months</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot License (CPL)</td>
-                    <td>AED 150,000 - 250,000</td>
-                    <td>$40,800 - $68,000</td>
-                    <td>6-12 months (after PPL)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">AED 150,000 - 250,000</td>
+                    <td className="px-4 py-3 text-white/80">$40,800 - $68,000</td>
+                    <td className="px-4 py-3 text-white/80">6-12 months (after PPL)</td>
                   </tr>
-                  <tr>
-                    <td>Airline Transport Pilot License (ATPL) - Integrated</td>
-                    <td>AED 450,000 - 700,000+</td>
-                    <td>$122,500 - $190,500+</td>
-                    <td>18-24 months (ab-initio)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Airline Transport Pilot License (ATPL) - Integrated</td>
+                    <td className="px-4 py-3 text-white/80">AED 450,000 - 700,000+</td>
+                    <td className="px-4 py-3 text-white/80">$122,500 - $190,500+</td>
+                    <td className="px-4 py-3 text-white/80">18-24 months (ab-initio)</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Crew Cooperation (MCC)</td>
-                    <td>AED 20,000 - 35,000</td>
-                    <td>$5,400 - $9,500</td>
-                    <td>1-2 weeks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Crew Cooperation (MCC)</td>
+                    <td className="px-4 py-3 text-white/80">AED 20,000 - 35,000</td>
+                    <td className="px-4 py-3 text-white/80">$5,400 - $9,500</td>
+                    <td className="px-4 py-3 text-white/80">1-2 weeks</td>
                   </tr>
-                  <tr>
-                    <td>Type Rating (e.g., Boeing 737, Airbus A320)</td>
-                    <td>AED 100,000 - 180,000+</td>
-                    <td>$27,200 - $49,000+</td>
-                    <td>4-6 weeks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Type Rating (e.g., Boeing 737, Airbus A320)</td>
+                    <td className="px-4 py-3 text-white/80">AED 100,000 - 180,000+</td>
+                    <td className="px-4 py-3 text-white/80">$27,200 - $49,000+</td>
+                    <td className="px-4 py-3 text-white/80">4-6 weeks</td>
                   </tr>
                 </tbody>
               </table>

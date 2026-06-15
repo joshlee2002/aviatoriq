@@ -72,44 +72,44 @@ export default function EasaAtplRequirements() {
                 Modular training offers greater flexibility, allowing students to complete individual licenses and ratings in stages (e.g., PPL, ATPL Theory, Hour Building, CPL, IR, ME, MCC). This approach can be spread over 2-5 years, enabling students to work alongside their studies and manage costs incrementally. While potentially more affordable upfront, it requires significant self-discipline and planning to maintain continuity and proficiency between modules.
               </p>
               <h4>Comparison of Training Paths:</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Feature</th>
-                    <th>Integrated ATPL</th>
-                    <th>Modular ATPL</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Integrated ATPL</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Modular ATPL</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Duration</strong></td>
-                    <td>18-24 months (full-time)</td>
-                    <td>2-5 years (flexible, part-time possible)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Duration</strong></td>
+                    <td className="px-4 py-3 text-white/80">18-24 months (full-time)</td>
+                    <td className="px-4 py-3 text-white/80">2-5 years (flexible, part-time possible)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Structure</strong></td>
-                    <td>Highly structured, continuous program at one ATO</td>
-                    <td>Step-by-step, individual modules, can be across multiple ATOs</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Structure</strong></td>
+                    <td className="px-4 py-3 text-white/80">Highly structured, continuous program at one ATO</td>
+                    <td className="px-4 py-3 text-white/80">Step-by-step, individual modules, can be across multiple ATOs</td>
                   </tr>
-                  <tr>
-                    <td><strong>Cost Management</strong></td>
-                    <td>Higher upfront investment, often paid in larger installments</td>
-                    <td>Pay-as-you-go, spread over several years</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Cost Management</strong></td>
+                    <td className="px-4 py-3 text-white/80">Higher upfront investment, often paid in larger installments</td>
+                    <td className="px-4 py-3 text-white/80">Pay-as-you-go, spread over several years</td>
                   </tr>
-                  <tr>
-                    <td><strong>Flexibility</strong></td>
-                    <td>Low; demanding schedule, difficult to work concurrently</td>
-                    <td>High; allows working, self-paced study</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Flexibility</strong></td>
+                    <td className="px-4 py-3 text-white/80">Low; demanding schedule, difficult to work concurrently</td>
+                    <td className="px-4 py-3 text-white/80">High; allows working, self-paced study</td>
                   </tr>
-                  <tr>
-                    <td><strong>Airline Focus</strong></td>
-                    <td>Often airline-oriented, includes APS MCC</td>
-                    <td>Less direct airline focus, MCC/APS MCC is a separate module</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Airline Focus</strong></td>
+                    <td className="px-4 py-3 text-white/80">Often airline-oriented, includes APS MCC</td>
+                    <td className="px-4 py-3 text-white/80">Less direct airline focus, MCC/APS MCC is a separate module</td>
                   </tr>
-                  <tr>
-                    <td><strong>Skill Retention</strong></td>
-                    <td>Continuous training minimizes skill decay</td>
-                    <td>Gaps between modules can lead to skill decay, requiring extra hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Skill Retention</strong></td>
+                    <td className="px-4 py-3 text-white/80">Continuous training minimizes skill decay</td>
+                    <td className="px-4 py-3 text-white/80">Gaps between modules can lead to skill decay, requiring extra hours</td>
                   </tr>
                 </tbody>
               </table>
@@ -249,49 +249,49 @@ export default function EasaAtplRequirements() {
                 Integrated programs, while comprehensive, come with a higher upfront cost. Prices can range from <strong>€65,000 to €140,000+</strong>. Premium academies in Western Europe (e.g., L3Harris, CAE, FTE Jerez) typically charge at the higher end, while quality schools in Eastern Europe (e.g., Poland, Romania) offer more competitive pricing without compromising EASA standards.
               </p>
               <h4>Typical Integrated ATPL Costs (2026):</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Cost Component</th>
-                    <th>Range (EUR)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Component</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Range (EUR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Headline Tuition</td>
-                    <td>€65,000 – €130,000</td>
-                    <td>Depends on country and school</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Headline Tuition</td>
+                    <td className="px-4 py-3 text-white/80">€65,000 – €130,000</td>
+                    <td className="px-4 py-3 text-white/80">Depends on country and school</td>
                   </tr>
-                  <tr>
-                    <td>Accommodation (18-24 months)</td>
-                    <td>€7,200 – €36,000</td>
-                    <td>Often excluded, varies by location (€400-€1,500/month)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Accommodation (18-24 months)</td>
+                    <td className="px-4 py-3 text-white/80">€7,200 – €36,000</td>
+                    <td className="px-4 py-3 text-white/80">Often excluded, varies by location (€400-€1,500/month)</td>
                   </tr>
-                  <tr>
-                    <td>EASA Exam Fees</td>
-                    <td>€1,000 – €3,000</td>
-                    <td>Varies by national authority and subject retakes</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">EASA Exam Fees</td>
+                    <td className="px-4 py-3 text-white/80">€1,000 – €3,000</td>
+                    <td className="px-4 py-3 text-white/80">Varies by national authority and subject retakes</td>
                   </tr>
-                  <tr>
-                    <td>Class 1 Medical (Initial & Renewals)</td>
-                    <td>€150 – €700</td>
-                    <td>Initial cost, renewals are annual/bi-annual</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Class 1 Medical (Initial & Renewals)</td>
+                    <td className="px-4 py-3 text-white/80">€150 – €700</td>
+                    <td className="px-4 py-3 text-white/80">Initial cost, renewals are annual/bi-annual</td>
                   </tr>
-                  <tr>
-                    <td>Equipment (Headset, iPad, Uniform)</td>
-                    <td>€2,000 – €5,000</td>
-                    <td>Essential pilot gear</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Equipment (Headset, iPad, Uniform)</td>
+                    <td className="px-4 py-3 text-white/80">€2,000 – €5,000</td>
+                    <td className="px-4 py-3 text-white/80">Essential pilot gear</td>
                   </tr>
-                  <tr>
-                    <td>Type Rating (Post-ATPL)</td>
-                    <td>€15,000 – €35,000</td>
-                    <td>Crucial for airline entry, rarely included in ATPL tuition</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Type Rating (Post-ATPL)</td>
+                    <td className="px-4 py-3 text-white/80">€15,000 – €35,000</td>
+                    <td className="px-4 py-3 text-white/80">Crucial for airline entry, rarely included in ATPL tuition</td>
                   </tr>
-                  <tr>
-                    <td><strong>Realistic Total Budget</strong></td>
-                    <td><strong>€88,000 – €190,000+</strong></td>
-                    <td>Includes living expenses and type rating</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Realistic Total Budget</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>€88,000 – €190,000+</strong></td>
+                    <td className="px-4 py-3 text-white/80">Includes living expenses and type rating</td>
                   </tr>
                 </tbody>
               </table>
@@ -300,54 +300,54 @@ export default function EasaAtplRequirements() {
                 Modular training can be 20-30% cheaper on paper, allowing costs to be spread over a longer period. However, hidden costs can narrow this gap. A realistic total for modular training, including all modules and associated expenses, typically ranges from <strong>€59,000 to €102,000+</strong>.
               </p>
               <h4>Typical Modular ATPL Costs (2026):</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Module</th>
-                    <th>Cost Range (EUR)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Module</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Range (EUR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>PPL (Private Pilot License)</td>
-                    <td>€8,000 – €15,000</td>
-                    <td>45+ hours flight time</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">PPL (Private Pilot License)</td>
+                    <td className="px-4 py-3 text-white/80">€8,000 – €15,000</td>
+                    <td className="px-4 py-3 text-white/80">45+ hours flight time</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Theory (Distance Learning)</td>
-                    <td>€1,700 – €6,000</td>
-                    <td>Distance learning is generally more affordable</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Theory (Distance Learning)</td>
+                    <td className="px-4 py-3 text-white/80">€1,700 – €6,000</td>
+                    <td className="px-4 py-3 text-white/80">Distance learning is generally more affordable</td>
                   </tr>
-                  <tr>
-                    <td>Hour Building (100+ PIC)</td>
-                    <td>€12,000 – €20,000</td>
-                    <td>€120-€160/hour; cheapest in Poland/Greece</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Hour Building (100+ PIC)</td>
+                    <td className="px-4 py-3 text-white/80">€12,000 – €20,000</td>
+                    <td className="px-4 py-3 text-white/80">€120-€160/hour; cheapest in Poland/Greece</td>
                   </tr>
-                  <tr>
-                    <td>CPL (Commercial Pilot License)</td>
-                    <td>€15,000 – €25,000</td>
-                    <td>25+ hours intensive training</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">CPL (Commercial Pilot License)</td>
+                    <td className="px-4 py-3 text-white/80">€15,000 – €25,000</td>
+                    <td className="px-4 py-3 text-white/80">25+ hours intensive training</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine (ME) Rating</td>
-                    <td>€5,000 – €8,000</td>
-                    <td>6+ hours twin-engine</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine (ME) Rating</td>
+                    <td className="px-4 py-3 text-white/80">€5,000 – €8,000</td>
+                    <td className="px-4 py-3 text-white/80">6+ hours twin-engine</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>€12,000 – €20,000</td>
-                    <td>50+ hours (aircraft + simulator)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">€12,000 – €20,000</td>
+                    <td className="px-4 py-3 text-white/80">50+ hours (aircraft + simulator)</td>
                   </tr>
-                  <tr>
-                    <td>MCC / APS MCC</td>
-                    <td>€4,000 – €8,000</td>
-                    <td>Critical for airline transition</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">MCC / APS MCC</td>
+                    <td className="px-4 py-3 text-white/80">€4,000 – €8,000</td>
+                    <td className="px-4 py-3 text-white/80">Critical for airline transition</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Modular (Excl. Type Rating)</strong></td>
-                    <td><strong>€59,000 – €102,000</strong></td>
-                    <td>All modules combined, before type rating</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Modular (Excl. Type Rating)</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>€59,000 – €102,000</strong></td>
+                    <td className="px-4 py-3 text-white/80">All modules combined, before type rating</td>
                   </tr>
                 </tbody>
               </table>
@@ -378,39 +378,39 @@ export default function EasaAtplRequirements() {
                 Securing financing for pilot training can be challenging, but several options exist in 2026, including airline cadet programs and specialized loans.
               </p>
               <h4>Key Financing Options:</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Option</th>
-                    <th>Amount</th>
-                    <th>Details</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Option</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Amount</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Wizz Air WAPA</td>
-                    <td>€47,510</td>
-                    <td>Pre-financed by airline; €13,950 upfront, rest deducted from salary over 5 years</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Wizz Air WAPA</td>
+                    <td className="px-4 py-3 text-white/80">€47,510</td>
+                    <td className="px-4 py-3 text-white/80">Pre-financed by airline; €13,950 upfront, rest deducted from salary over 5 years</td>
                   </tr>
-                  <tr>
-                    <td>Lufthansa Brain Capital</td>
-                    <td>~€110,000</td>
-                    <td>Income Share Agreement (ISA) model – pay 11% of income for 11 years after employment</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Lufthansa Brain Capital</td>
+                    <td className="px-4 py-3 text-white/80">~€110,000</td>
+                    <td className="px-4 py-3 text-white/80">Income Share Agreement (ISA) model – pay 11% of income for 11 years after employment</td>
                   </tr>
-                  <tr>
-                    <td>BNL Futuriamo (Italy)</td>
-                    <td>€5,000-€70,000</td>
-                    <td>Bank loan for Italian residents only</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">BNL Futuriamo (Italy)</td>
+                    <td className="px-4 py-3 text-white/80">€5,000-€70,000</td>
+                    <td className="px-4 py-3 text-white/80">Bank loan for Italian residents only</td>
                   </tr>
-                  <tr>
-                    <td>UK Student Loan (SLC)</td>
-                    <td>Varies</td>
-                    <td>Only for integrated courses combined with a BSc degree</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">UK Student Loan (SLC)</td>
+                    <td className="px-4 py-3 text-white/80">Varies</td>
+                    <td className="px-4 py-3 text-white/80">Only for integrated courses combined with a BSc degree</td>
                   </tr>
-                  <tr>
-                    <td>Ryanair Bonded Type Rating</td>
-                    <td>~€35,000</td>
-                    <td>Type rating 'free' with a 5-year bond commitment to the airline</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ryanair Bonded Type Rating</td>
+                    <td className="px-4 py-3 text-white/80">~€35,000</td>
+                    <td className="px-4 py-3 text-white/80">Type rating 'free' with a 5-year bond commitment to the airline</td>
                   </tr>
                 </tbody>
               </table>
@@ -432,29 +432,29 @@ export default function EasaAtplRequirements() {
                 Upon completing your frozen ATPL, you will typically start as a Junior First Officer. Major European airlines such as Ryanair, Wizz Air, Lufthansa, KLM, Air France, and British Airways are primary employers. Starting salaries for First Officers generally range from <strong>€35,000 to €65,000 per annum</strong>, depending on the airline, aircraft type, and country of operation.
               </p>
               <h4>Pilot Salary Progression (Europe, 2026 Estimates):</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Career Stage</th>
-                    <th>Salary Range (EUR/year)</th>
-                    <th>Cumulative Earnings (5 years)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Career Stage</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Salary Range (EUR/year)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cumulative Earnings (5 years)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Junior First Officer (Year 1-2)</td>
-                    <td>€35,000 – €65,000</td>
-                    <td>€70,000 – €130,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Junior First Officer (Year 1-2)</td>
+                    <td className="px-4 py-3 text-white/80">€35,000 – €65,000</td>
+                    <td className="px-4 py-3 text-white/80">€70,000 – €130,000</td>
                   </tr>
-                  <tr>
-                    <td>Senior First Officer (Year 3-5)</td>
-                    <td>€65,000 – €100,000</td>
-                    <td>€265,000 – €430,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Senior First Officer (Year 3-5)</td>
+                    <td className="px-4 py-3 text-white/80">€65,000 – €100,000</td>
+                    <td className="px-4 py-3 text-white/80">€265,000 – €430,000</td>
                   </tr>
-                  <tr>
-                    <td>Captain (Year 6+)</td>
-                    <td>€90,000 – €180,000+</td>
-                    <td>€500,000+ (first 5 years as Captain)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Captain (Year 6+)</td>
+                    <td className="px-4 py-3 text-white/80">€90,000 – €180,000+</td>
+                    <td className="px-4 py-3 text-white/80">€500,000+ (first 5 years as Captain)</td>
                   </tr>
                 </tbody>
               </table>

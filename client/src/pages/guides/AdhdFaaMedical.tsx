@@ -47,7 +47,7 @@ const AdhdFaaMedical = () => {
                 The FAA's primary mission is aviation safety, and its medical certification standards are designed to ensure that pilots possess the necessary physical and mental capabilities. In the context of ADHD, the FAA has been particularly cautious due to the critical nature of tasks performed by pilots, which demand sustained attention, rapid decision-making, and precise execution. Any condition that could compromise these abilities is scrutinized rigorously. This has meant that even a childhood diagnosis, if not properly addressed and documented, could resurface as a major obstacle years later during the medical application process.
               </p>
               <p>
-                However, the FAA's approach has evolved over time, recognizing advancements in the understanding and management of ADHD. While the core concern for safety remains paramount, the agency has introduced more nuanced pathways for evaluation. These changes reflect a growing understanding that not all individuals with an ADHD diagnosis experience the same level of impairment, and that some can effectively manage their condition without posing a risk to aviation safety. This evolution has opened doors for many who previously believed their dream of flying was unattainable.
+                However, the FAA's approach has evolved over time, recognizing advancements in the understanding and management of ADHD. While the core concern for safety remains paramount, the agency has introduced more nuanced pathways for evaluation. These changes reflect a growing understanding that not all individuals with an ADHD diagnosis experience the same level of impairment, and that some can effectively manage their condition without posing a risk to aviation safety. This evolution has opened doors for many who previously believed their goal of becoming a pilot was unattainable.
               </p>
             </>
           ),
@@ -130,44 +130,44 @@ const AdhdFaaMedical = () => {
                 Finally, be prepared for a potentially long and arduous process. Patience and persistence are key. Maintain a positive attitude, diligently follow all instructions from the FAA and your medical advisors, and provide any requested information promptly. Demonstrating a commitment to safety and a thorough understanding of your condition will go a long way in convincing the FAA that you are fit to fly. The dream of becoming a pilot is achievable, even with a history of ADHD, through careful planning and adherence to FAA regulations.
               </p>
               <h3>Key Considerations for FAA Medical with ADHD</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Aspect</th>
-                    <th>Requirement/Consideration</th>
-                    <th>Estimated Cost/Timeline</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Aspect</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement/Consideration</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost/Timeline</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Honesty & Transparency</strong></td>
-                    <td>Full disclosure of all ADHD history and medication use to AME and FAA.</td>
-                    <td>N/A (Crucial for success)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Honesty & Transparency</strong></td>
+                    <td className="px-4 py-3 text-white/80">Full disclosure of all ADHD history and medication use to AME and FAA.</td>
+                    <td className="px-4 py-3 text-white/80">N/A (Crucial for success)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Medication-Free Period</strong></td>
-                    <td>Minimum 90 days off all stimulant ADHD medications (Adderall, Ritalin, Vyvanse, etc.).</td>
-                    <td>N/A (Mandatory)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Medication-Free Period</strong></td>
+                    <td className="px-4 py-3 text-white/80">Minimum 90 days off all stimulant ADHD medications (Adderall, Ritalin, Vyvanse, etc.).</td>
+                    <td className="px-4 py-3 text-white/80">N/A (Mandatory)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Neuropsychological Testing</strong></td>
-                    <td>Comprehensive evaluation by an FAA-aware neuropsychologist.</td>
-                    <td>$3,000 - $6,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Neuropsychological Testing</strong></td>
+                    <td className="px-4 py-3 text-white/80">Comprehensive evaluation by an FAA-aware neuropsychologist.</td>
+                    <td className="px-4 py-3 text-white/80">$3,000 - $6,000</td>
                   </tr>
-                  <tr>
-                    <td><strong>Medical Records</strong></td>
-                    <td>Gather all diagnostic reports, treatment history, and academic records.</td>
-                    <td>Varies (Time for collection)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Medical Records</strong></td>
+                    <td className="px-4 py-3 text-white/80">Gather all diagnostic reports, treatment history, and academic records.</td>
+                    <td className="px-4 py-3 text-white/80">Varies (Time for collection)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Special Issuance/Fast Track</strong></td>
-                    <td>Understand which pathway applies to your case and its specific requirements.</td>
-                    <td>6 months - 1+ year (Special Issuance), Shorter (Fast Track)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Special Issuance/Fast Track</strong></td>
+                    <td className="px-4 py-3 text-white/80">Understand which pathway applies to your case and its specific requirements.</td>
+                    <td className="px-4 py-3 text-white/80">6 months - 1+ year (Special Issuance), Shorter (Fast Track)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Professional Consultation</strong></td>
-                    <td>Consider an aviation medical consultant or attorney.</td>
-                    <td>$500 - $2,000+</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Professional Consultation</strong></td>
+                    <td className="px-4 py-3 text-white/80">Consider an aviation medical consultant or attorney.</td>
+                    <td className="px-4 py-3 text-white/80">$500 - $2,000+</td>
                   </tr>
                 </tbody>
               </table>

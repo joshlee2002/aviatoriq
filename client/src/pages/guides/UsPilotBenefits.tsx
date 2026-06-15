@@ -5,7 +5,7 @@ export default function UsPilotBenefits() {
   return (
     <GuideLayout
       title="The Elite Path: Unlocking the Benefits of a US Pilot Career in 2026"
-      subtitle="A comprehensive guide to FAA regulations, training pathways, costs, and career opportunities for aspiring aviators in the United States."
+      subtitle="FAA regulations, training pathways, costs, and career opportunities for aspiring aviators in the United States."
       readTime="15 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -20,7 +20,7 @@ export default function UsPilotBenefits() {
           content: (
             <>
               <p>
-                The professional pilot career in the United States continues to stand as a beacon of prestige, challenge, and substantial reward in 2026. Far from being a mere occupation, it represents a commitment to a lifestyle characterized by continuous learning, unparalleled responsibility, and the profound satisfaction of mastering one of humanity's most complex endeavors. The aviation industry, particularly in the US, is experiencing a robust demand for highly skilled aviators, driven by a combination of anticipated retirements, sustained growth in air travel, and the expansion of cargo and corporate aviation sectors. This creates a uniquely opportune environment for aspiring pilots, offering not just job security but also significant opportunities for career advancement and financial prosperity. Navigating this demanding yet deeply fulfilling path requires a clear understanding of the regulatory landscape, the rigorous training protocols, and the strategic financial planning necessary to transform aspiration into achievement.
+                The professional pilot career in the United States continues to stand as a beacon of prestige, challenge, and substantial reward in 2026. Far from being a mere occupation, it represents a commitment to a lifestyle characterized by continuous learning, significant responsibility, and the profound satisfaction of mastering one of humanity's most complex endeavors. The aviation industry, particularly in the US, is experiencing a robust demand for highly skilled aviators, driven by a combination of anticipated retirements, sustained growth in air travel, and the expansion of cargo and corporate aviation sectors. This creates a strong hiring environment for aspiring pilots, offering not just job security but also significant opportunities for career advancement and financial prosperity. Navigating this demanding yet fulfilling path requires a clear understanding of the regulatory landscape, the rigorous training protocols, and the strategic financial planning necessary to achieve your goal.
               </p>
             </>
           )
@@ -39,19 +39,19 @@ export default function UsPilotBenefits() {
                 <strong>Part 141</strong> schools, conversely, operate under a highly structured, FAA-approved curriculum. These programs are often integrated into colleges and universities, offering aviation degrees alongside flight training. Part 141 schools are subject to more stringent oversight by the FAA, including regular inspections and audits of their facilities, instructors, and training syllabi. This structured environment can lead to a more efficient training progression, often allowing students to achieve certificates with fewer minimum flight hours (e.g., 35 hours for a Private Pilot Certificate). The comprehensive nature of Part 141 programs, with their dedicated training facilities, flight instructor oversight, and standardized course outlines, is often preferred by those seeking a professional aviation career, as it demonstrates a commitment to a rigorous, airline-style training methodology. Many airlines and corporate operators view Part 141 graduates favorably due to this inherent structure and adherence to strict standards [1].
               </p>
               <h3>Comparison of Part 61 and Part 141 Flight Training</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Feature</th><th>Part 61</th><th>Part 141</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 61</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 141</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Structure</strong></td><td>Flexible, self-paced, less rigid</td><td>Highly structured, FAA-approved curriculum</td></tr>
-                  <tr><td><strong>Curriculum</strong></td><td>Instructor-developed, adaptable</td><td>FAA-approved, standardized syllabus</td></tr>
-                  <tr><td><strong>Minimum Hours</strong></td><td>Higher (e.g., 40 PPL, typically 60-75)</td><td>Lower (e.g., 35 PPL)</td></tr>
-                  <tr><td><strong>Oversight</strong></td><td>Less direct FAA oversight</td><td>Strict FAA oversight, regular inspections</td></tr>
-                  <tr><td><strong>Pace</strong></td><td>Student-driven</td><td>Program-driven, often faster progression</td></tr>
-                  <tr><td><strong>Cost</strong></td><td>Potentially lower overall, but variable</td><td>Often higher initial cost, but potentially more efficient</td></tr>
-                  <tr><td><strong>Eligibility</strong></td><td>Broad, suitable for part-time students</td><td>Often preferred for career-track pilots, integrated with degrees</td></tr>
-                  <tr><td><strong>Airline View</strong></td><td>Accepted, but 141 often preferred for structure</td><td>Highly regarded due to structured methodology</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Structure</strong></td><td className="px-4 py-3 text-white/80">Flexible, self-paced, less rigid</td><td className="px-4 py-3 text-white/80">Highly structured, FAA-approved curriculum</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Curriculum</strong></td><td className="px-4 py-3 text-white/80">Instructor-developed, adaptable</td><td className="px-4 py-3 text-white/80">FAA-approved, standardized syllabus</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Minimum Hours</strong></td><td className="px-4 py-3 text-white/80">Higher (e.g., 40 PPL, typically 60-75)</td><td className="px-4 py-3 text-white/80">Lower (e.g., 35 PPL)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Oversight</strong></td><td className="px-4 py-3 text-white/80">Less direct FAA oversight</td><td className="px-4 py-3 text-white/80">Strict FAA oversight, regular inspections</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Pace</strong></td><td className="px-4 py-3 text-white/80">Student-driven</td><td className="px-4 py-3 text-white/80">Program-driven, often faster progression</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Cost</strong></td><td className="px-4 py-3 text-white/80">Potentially lower overall, but variable</td><td className="px-4 py-3 text-white/80">Often higher initial cost, but potentially more efficient</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Eligibility</strong></td><td className="px-4 py-3 text-white/80">Broad, suitable for part-time students</td><td className="px-4 py-3 text-white/80">Often preferred for career-track pilots, integrated with degrees</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Airline View</strong></td><td className="px-4 py-3 text-white/80">Accepted, but 141 often preferred for structure</td><td className="px-4 py-3 text-white/80">Highly regarded due to structured methodology</td></tr>
                 </tbody>
               </table>
             </>
@@ -98,18 +98,18 @@ export default function UsPilotBenefits() {
               <p>
                 The following table provides a realistic range of costs for obtaining key pilot certificates in the US for 2026. These figures are estimates and can vary based on location, training frequency, aircraft type, and individual learning pace [5].
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Certificate/Rating</th><th>Estimated Cost Range (USD)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Certificate/Rating</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost Range (USD)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot License (PPL)</td><td>$12,000 – $25,000</td></tr>
-                  <tr><td>Instrument Rating (IR)</td><td>$8,000 – $15,000</td></tr>
-                  <tr><td>Commercial Pilot License (CPL)</td><td>$25,000 – $35,000</td></tr>
-                  <tr><td>Multi-Engine Rating</td><td>$3,000 – $7,000</td></tr>
-                  <tr><td>Certified Flight Instructor (CFI)</td><td>$5,000 – $10,000</td></tr>
-                  <tr><td>ATP CTP Course</td><td>$8,000 – $10,000</td></tr>
-                  <tr><td><strong>Total (from zero to ATP)</strong></td><td><strong>$61,000 – $102,000+</strong></td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$12,000 – $25,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td><td className="px-4 py-3 text-white/80">$8,000 – $15,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">$25,000 – $35,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating</td><td className="px-4 py-3 text-white/80">$3,000 – $7,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Certified Flight Instructor (CFI)</td><td className="px-4 py-3 text-white/80">$5,000 – $10,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">ATP CTP Course</td><td className="px-4 py-3 text-white/80">$8,000 – $10,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total (from zero to ATP)</strong></td><td className="px-4 py-3 text-white/80"><strong>$61,000 – $102,000+</strong></td></tr>
                 </tbody>
               </table>
               <p>
@@ -267,7 +267,7 @@ export default function UsPilotBenefits() {
           content: (
             <>
               <p>
-                The journey to becoming a professional pilot in the United States in 2026 is an arduous yet profoundly rewarding endeavor. It demands unwavering dedication, significant financial investment, and a commitment to continuous learning. However, the current landscape of robust pilot demand, competitive compensation, and diverse career opportunities makes it an exceptionally opportune time to embark on this path. By understanding the nuances of FAA regulations (Part 61 vs. Part 141), meticulously planning the training phases, and strategically managing the financial aspects, aspiring aviators can confidently navigate their way to a fulfilling and prestigious career in the skies. The benefits extend far beyond the cockpit, offering a lifestyle of adventure, intellectual challenge, and substantial personal and professional growth. Investing in pilot training today is an investment in a future defined by excellence and unparalleled horizons.
+                The journey to becoming a professional pilot in the United States in 2026 is an arduous yet rewarding endeavor. It demands unwavering dedication, significant financial investment, and a commitment to continuous learning. However, the current landscape of robust pilot demand, competitive compensation, and diverse career opportunities makes it an exceptionally opportune time to embark on this path. By understanding the nuances of FAA regulations (Part 61 vs. Part 141), meticulously planning the training phases, and strategically managing the financial aspects, aspiring aviators can confidently navigate their way to a fulfilling and prestigious career in the skies. The benefits extend far beyond the cockpit, offering a lifestyle of adventure, intellectual challenge, and substantial personal and professional growth. Investing in pilot training today is an investment in a future defined by excellence and unparalleled horizons.
               </p>
             </>
           )

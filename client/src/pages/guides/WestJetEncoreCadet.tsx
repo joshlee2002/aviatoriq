@@ -36,16 +36,16 @@ export default function WestJetEncoreCadet() {
               <h3>Additional Ratings for Career Advancement</h3>
               <p>Beyond the CPL, several additional ratings are highly recommended, and often necessary, for airline employment. These include the Multi-Engine Rating (ME) and the Instrument Flight Rules (IFR) Rating. The ME rating allows you to fly aircraft with more than one engine, a standard for regional and mainline carriers. The IFR rating enables flight under instrument meteorological conditions, crucial for commercial operations.</p>
               <h4>Estimated Pilot Training Costs in Canada (CAD, 2026)</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Licence/Rating</th><th>Minimum Hours</th><th>Estimated Cost (CAD)</th><th>Key Components</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Licence/Rating</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Hours</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Components</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Private Pilot Licence (PPL)</td><td>45-70 flight hours</td><td>$15,000 - $20,000</td><td>Flight instruction, aircraft rental, ground school, exams, medical, supplies</td></tr>
-                  <tr><td>Commercial Pilot Licence (CPL)</td><td>200 total flight hours (100 PIC)</td><td>$30,000 - $40,000 (additional to PPL)</td><td>Flight instruction, time-building, ground school, exams, Class 1 medical</td></tr>
-                  <tr><td>Multi-Engine Rating (ME)</td><td>7-10 flight hours</td><td>$4,000 - $6,000</td><td>Multi-engine aircraft rental, instruction</td></tr>
-                  <tr><td>Instrument Flight Rules (IFR) Rating</td><td>40 instrument hours</td><td>$8,000 - $12,000</td><td>Instrument flight instruction (aircraft/simulator), ground school, exams</td></tr>
-                  <tr><td>**Total Estimated Cost (PPL to CPL + ME/IFR)**</td><td>~250-300 hours</td><td>**$57,000 - $78,000**</td><td>Comprehensive training for airline readiness</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td><td className="px-4 py-3 text-white/80">45-70 flight hours</td><td className="px-4 py-3 text-white/80">$15,000 - $20,000</td><td className="px-4 py-3 text-white/80">Flight instruction, aircraft rental, ground school, exams, medical, supplies</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td><td className="px-4 py-3 text-white/80">200 total flight hours (100 PIC)</td><td className="px-4 py-3 text-white/80">$30,000 - $40,000 (additional to PPL)</td><td className="px-4 py-3 text-white/80">Flight instruction, time-building, ground school, exams, Class 1 medical</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td><td className="px-4 py-3 text-white/80">7-10 flight hours</td><td className="px-4 py-3 text-white/80">$4,000 - $6,000</td><td className="px-4 py-3 text-white/80">Multi-engine aircraft rental, instruction</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Instrument Flight Rules (IFR) Rating</td><td className="px-4 py-3 text-white/80">40 instrument hours</td><td className="px-4 py-3 text-white/80">$8,000 - $12,000</td><td className="px-4 py-3 text-white/80">Instrument flight instruction (aircraft/simulator), ground school, exams</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">**Total Estimated Cost (PPL to CPL + ME/IFR)**</td><td className="px-4 py-3 text-white/80">~250-300 hours</td><td className="px-4 py-3 text-white/80">**$57,000 - $78,000**</td><td className="px-4 py-3 text-white/80">Comprehensive training for airline readiness</td></tr>
                 </tbody>
               </table>
               <p>These figures are estimates and can vary significantly based on flight school, location, individual learning pace, and fuel prices. Hidden costs such as landing fees, exam re-writes, and winter delays can also impact the final expenditure. <a href="https://levelflight.ca/blog/The+True+Cost+of+Pilot+Training+in+Canada+and+How+to+Save+Money/90" target="_blank">Level Flight</a> provides a detailed breakdown of these costs and strategies for saving money [1].</p>
@@ -92,12 +92,12 @@ export default function WestJetEncoreCadet() {
               </ul>
               <p>The recruitment process is highly competitive. Applicants typically undergo a rigorous selection process that may include online applications, aptitude tests, panel interviews, and simulator evaluations. While WestJet Encore does not have a formal 'cadet' program, its focus on developing lower-time pilots through programs like the Pilot-In-Command Under Supervision (PIC U/S) program highlights its commitment to internal talent development [3].</p>
               <h4>WestJet Encore Fleet and Bases</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Aircraft Type</th><th>Primary Bases</th><th>Role</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Aircraft Type</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Primary Bases</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Role</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>De Havilland Dash 8-400 (Q400)</td><td>Calgary (YYC)</td><td>Regional First Officer</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">De Havilland Dash 8-400 (Q400)</td><td className="px-4 py-3 text-white/80">Calgary (YYC)</td><td className="px-4 py-3 text-white/80">Regional First Officer</td></tr>
                 </tbody>
               </table>
             </>
@@ -137,7 +137,7 @@ export default function WestJetEncoreCadet() {
           content: (
             <>
               <p>Becoming a WestJet Encore First Officer is an ambitious yet attainable goal for dedicated individuals. While not a traditional 'cadet' program, WestJet Encore provides a robust pathway for aspiring pilots to gain invaluable experience, develop professional skills, and progress within a leading Canadian airline. By understanding the training requirements, financial commitments, and career opportunities, you can strategically plan your journey to the cockpit of a Q400 and beyond.</p>
-              <p>The demand for skilled pilots in Canada remains strong, and WestJet Encore continues to be a pivotal employer for those embarking on their airline careers. With thorough preparation and unwavering commitment, your dream of flying for WestJet Encore can become a reality.</p>
+              <p>The demand for skilled pilots in Canada remains strong, and WestJet Encore continues to be a pivotal employer for those embarking on their airline careers. With thorough preparation and unwavering commitment, your goal of becoming a pilot for WestJet Encore can become a reality.</p>
             </>
           )
         }

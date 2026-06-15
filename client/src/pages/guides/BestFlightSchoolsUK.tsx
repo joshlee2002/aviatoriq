@@ -50,7 +50,7 @@ export default function BestFlightSchoolsUK() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Academy</th>
                       <th className="px-4 py-3 font-semibold">2026 Cost</th>
                       <th className="px-4 py-3 font-semibold">UK Base</th>
@@ -136,7 +136,7 @@ export default function BestFlightSchoolsUK() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Stage</th>
                       <th className="px-4 py-3 font-semibold">Recommended Provider</th>
                       <th className="px-4 py-3 font-semibold">2026 Cost</th>

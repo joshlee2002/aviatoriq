@@ -29,15 +29,15 @@ export default function CasaCplRequirements() {
           content: (
             <>
               <p>Before embarking on your CPL journey, you must meet several fundamental eligibility criteria set by CASA. These ensure that all candidates possess the necessary foundational attributes for professional pilot training.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Requirement</th><th>Details</th><th>CASA Regulation Reference</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">CASA Regulation Reference</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Age</td><td>Minimum 18 years old at the time of licence issue. Training can commence earlier.</td><td>CASR Part 61.120</td></tr>
-                  <tr><td>Medical Certificate</td><td>Hold a current Class 1 Aviation Medical Certificate. This is a rigorous medical examination ensuring you meet the highest health standards for commercial operations.</td><td>CASR Part 67</td></tr>
-                  <tr><td>English Language Proficiency</td><td>Demonstrate a proficient level of English language comprehension and speaking. This is typically assessed during flight training and theory examinations.</td><td>CASR Part 61.285</td></tr>
-                  <tr><td>Prior Licence</td><td>Hold a Private Pilot Licence (PPL) or equivalent, or complete an integrated course that incorporates PPL training.</td><td>CASR Part 61.125</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Age</td><td className="px-4 py-3 text-white/80">Minimum 18 years old at the time of licence issue. Training can commence earlier.</td><td className="px-4 py-3 text-white/80">CASR Part 61.120</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical Certificate</td><td className="px-4 py-3 text-white/80">Hold a current Class 1 Aviation Medical Certificate. This is a rigorous medical examination ensuring you meet the highest health standards for commercial operations.</td><td className="px-4 py-3 text-white/80">CASR Part 67</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">English Language Proficiency</td><td className="px-4 py-3 text-white/80">Demonstrate a proficient level of English language comprehension and speaking. This is typically assessed during flight training and theory examinations.</td><td className="px-4 py-3 text-white/80">CASR Part 61.285</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Prior Licence</td><td className="px-4 py-3 text-white/80">Hold a Private Pilot Licence (PPL) or equivalent, or complete an integrated course that incorporates PPL training.</td><td className="px-4 py-3 text-white/80">CASR Part 61.125</td></tr>
                 </tbody>
               </table>
               <p>Meeting these initial requirements is crucial. The Class 1 Medical Certificate, in particular, should be obtained early in your training to identify any potential issues that could preclude you from a commercial flying career.</p>
@@ -50,18 +50,18 @@ export default function CasaCplRequirements() {
             <>
               <p>The theoretical component of the CPL is extensive, covering a broad spectrum of aviation subjects essential for safe and effective commercial operations. Candidates must pass seven individual CPL (Aeroplane) theory examinations, each focusing on a specific area of knowledge.</p>
               <p>These examinations are administered by CASA and require a deep understanding of the subject matter. Preparation typically involves dedicated study through approved flight schools or self-study programs, often supported by online resources and practice exams.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Subject Area</th><th>Key Topics Covered</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Subject Area</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Topics Covered</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Aerodynamics</td><td>Principles of flight, aircraft performance, stability and control.</td></tr>
-                  <tr><td>Aircraft General Knowledge</td><td>Aircraft systems, engines, airframes, and instrumentation.</td></tr>
-                  <tr><td>Flight Rules and Air Law</td><td>Detailed understanding of Australian aviation law, rules of the air, and operational procedures.</td></tr>
-                  <tr><td>Human Factors</td><td>Pilot decision-making, fatigue management, and physiological aspects of flight.</td></tr>
-                  <tr><td>Meteorology</td><td>Weather phenomena, forecasting, and interpretation of meteorological reports relevant to aviation.</td></tr>
-                  <tr><td>Navigation</td><td>Principles of air navigation, use of navigation aids, flight planning, and fuel management.</td></tr>
-                  <tr><td>Operations, Performance and Planning</td><td>Aircraft loading, performance calculations, and operational planning for commercial flights.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Aerodynamics</td><td className="px-4 py-3 text-white/80">Principles of flight, aircraft performance, stability and control.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Aircraft General Knowledge</td><td className="px-4 py-3 text-white/80">Aircraft systems, engines, airframes, and instrumentation.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Rules and Air Law</td><td className="px-4 py-3 text-white/80">Detailed understanding of Australian aviation law, rules of the air, and operational procedures.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Human Factors</td><td className="px-4 py-3 text-white/80">Pilot decision-making, fatigue management, and physiological aspects of flight.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Meteorology</td><td className="px-4 py-3 text-white/80">Weather phenomena, forecasting, and interpretation of meteorological reports relevant to aviation.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Navigation</td><td className="px-4 py-3 text-white/80">Principles of air navigation, use of navigation aids, flight planning, and fuel management.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Operations, Performance and Planning</td><td className="px-4 py-3 text-white/80">Aircraft loading, performance calculations, and operational planning for commercial flights.</td></tr>
                 </tbody>
               </table>
               <p>Each examination has a passing mark, and candidates must successfully complete all seven subjects to progress to the flight test phase. The order in which these exams are taken can vary, but a structured approach is recommended.</p>
@@ -76,13 +76,13 @@ export default function CasaCplRequirements() {
               <h3>Integrated vs. Non-Integrated Courses</h3>
               <p>An <strong>integrated course</strong> is a full-time, structured program offered by an approved flight training organisation. It is designed to take a student from no prior experience to CPL holder in a continuous, intensive manner.</p>
               <p>A <strong>non-integrated course</strong> (often referred to as modular training) allows students more flexibility, often building hours and ratings incrementally. This pathway is common for those who already hold a PPL and wish to upgrade.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Training Pathway</th><th>Minimum Total Flight Hours</th><th>Key Requirements</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Pathway</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Total Flight Hours</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Requirements</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Integrated Course</td><td>150 hours</td><td>Structured syllabus, often includes PPL and Instrument Rating components.</td></tr>
-                  <tr><td>Non-Integrated Course</td><td>200 hours</td><td>Includes specific hours as pilot in command (PIC), cross-country, and night flying.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Integrated Course</td><td className="px-4 py-3 text-white/80">150 hours</td><td className="px-4 py-3 text-white/80">Structured syllabus, often includes PPL and Instrument Rating components.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Non-Integrated Course</td><td className="px-4 py-3 text-white/80">200 hours</td><td className="px-4 py-3 text-white/80">Includes specific hours as pilot in command (PIC), cross-country, and night flying.</td></tr>
                 </tbody>
               </table>
               <p>Regardless of the pathway, specific flight experience must be logged, including:</p>
@@ -103,19 +103,19 @@ export default function CasaCplRequirements() {
             <>
               <p>The investment required for CPL training in Australia is substantial, reflecting the comprehensive nature of the program and the high standards of aviation safety. Costs can vary significantly based on the flight school, aircraft type used for training, and whether the course is integrated or non-integrated.</p>
               <p>As of 2026, prospective pilots should budget for a significant financial commitment. These figures are estimates and can fluctuate based on individual progress and market conditions.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Cost Category</th><th>Estimated Range (AUD)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Range (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Flight Training (Integrated)</td><td>$100,000 - $150,000</td><td>Includes aircraft hire, instructor fees, ground school.</td></tr>
-                  <tr><td>Flight Training (Non-Integrated)</td><td>$80,000 - $130,000</td><td>Assumes PPL already held; focuses on hour building and CPL specific training.</td></tr>
-                  <tr><td>Theory Exams</td><td>$200 - $300 per exam</td><td>CASA examination fees.</td></tr>
-                  <tr><td>Medical Certificate (Class 1)</td><td>$300 - $500</td><td>Initial and renewal costs.</td></tr>
-                  <tr><td>Study Materials & Equipment</td><td>$2,000 - $5,000</td><td>Textbooks, charts, headset, navigation tools.</td></tr>
-                  <tr><td>Flight Test Fee</td><td>$1,500 - $2,500</td><td>Fee for the final CPL flight test.</td></tr>
-                  <tr><td>Licence Application Fee</td><td>$200 - $400</td><td>CASA administrative fee.</td></tr>
-                  <tr><td>Total Estimated Cost</td><td><b>$105,000 - $160,000+</b></td><td>Highly dependent on school, aircraft, and individual progress.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Training (Integrated)</td><td className="px-4 py-3 text-white/80">$100,000 - $150,000</td><td className="px-4 py-3 text-white/80">Includes aircraft hire, instructor fees, ground school.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Training (Non-Integrated)</td><td className="px-4 py-3 text-white/80">$80,000 - $130,000</td><td className="px-4 py-3 text-white/80">Assumes PPL already held; focuses on hour building and CPL specific training.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Theory Exams</td><td className="px-4 py-3 text-white/80">$200 - $300 per exam</td><td className="px-4 py-3 text-white/80">CASA examination fees.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Medical Certificate (Class 1)</td><td className="px-4 py-3 text-white/80">$300 - $500</td><td className="px-4 py-3 text-white/80">Initial and renewal costs.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Study Materials & Equipment</td><td className="px-4 py-3 text-white/80">$2,000 - $5,000</td><td className="px-4 py-3 text-white/80">Textbooks, charts, headset, navigation tools.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flight Test Fee</td><td className="px-4 py-3 text-white/80">$1,500 - $2,500</td><td className="px-4 py-3 text-white/80">Fee for the final CPL flight test.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Licence Application Fee</td><td className="px-4 py-3 text-white/80">$200 - $400</td><td className="px-4 py-3 text-white/80">CASA administrative fee.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Total Estimated Cost</td><td className="px-4 py-3 text-white/80"><b>$105,000 - $160,000+</b></td><td className="px-4 py-3 text-white/80">Highly dependent on school, aircraft, and individual progress.</td></tr>
                 </tbody>
               </table>
               <p>Many flight schools offer payment plans or assist with financing options. It is highly recommended to research and compare several flight training organisations to find a program that best suits your budget and learning style.</p>

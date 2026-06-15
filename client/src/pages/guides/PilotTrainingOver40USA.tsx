@@ -44,7 +44,7 @@ export default function PilotTrainingOver40USA() {
               <div className="overflow-x-auto mb-4">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 text-white/70 font-semibold">Certificate/Rating</th>
                       <th className="px-4 py-3 text-white/70 font-semibold">Typical Duration</th>
                       <th className="px-4 py-3 text-white/70 font-semibold">Typical Flight Hours</th>
@@ -101,7 +101,7 @@ export default function PilotTrainingOver40USA() {
               <div className="overflow-x-auto mb-4">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 text-white/70 font-semibold">Expense Category</th>
                       <th className="px-4 py-3 text-white/70 font-semibold">Typical Cost (USD)</th>
                       <th className="px-4 py-3 text-white/70 font-semibold">Notes</th>
@@ -178,7 +178,7 @@ export default function PilotTrainingOver40USA() {
               <div className="overflow-x-auto mb-4">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 text-white/70 font-semibold">Medical Certificate Class</th>
                       <th className="px-4 py-3 text-white/70 font-semibold">Privileges</th>
                       <th className="px-4 py-3 text-white/70 font-semibold">Under Age 40 Validity</th>
@@ -261,7 +261,7 @@ export default function PilotTrainingOver40USA() {
               <div className="overflow-x-auto mb-4">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 text-white/70 font-semibold">Funding Option</th>
                       <th className="px-4 py-3 text-white/70 font-semibold">Pros</th>
                       <th className="px-4 py-3 text-white/70 font-semibold">Cons</th>
@@ -335,7 +335,7 @@ export default function PilotTrainingOver40USA() {
               <div className="overflow-x-auto mb-4">
                 <table className="w-full text-sm text-left border-collapse">
                   <thead>
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 text-white/70 font-semibold">Career Path</th>
                       <th className="px-4 py-3 text-white/70 font-semibold">Typical Salary Range (USD, 2026)</th>
                       <th className="px-4 py-3 text-white/70 font-semibold">Lifestyle/Work-Life Balance</th>

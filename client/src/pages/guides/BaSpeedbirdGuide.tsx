@@ -66,7 +66,7 @@ export default function BaSpeedbirdGuide() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Requirement</th>
                       <th className="px-4 py-3 font-semibold">Detail</th>
                     </tr>

@@ -38,29 +38,29 @@ export default function AustraliaPilotCommuting() {
               <p>
                 CASA's focus remains on ensuring pilots are fit for duty, regardless of their travel arrangements to and from their operational base. Pilots are personally responsible for managing their rest and ensuring they comply with all FDP and rest period requirements. Any travel undertaken to position for duty, if not considered part of the FDP by the operator, must still allow for adequate rest before commencing flight duties.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>CASA Regulation Area</th>
-                    <th>Impact on Commuting Pilots</th>
-                    <th>Key Consideration for 2026</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">CASA Regulation Area</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Impact on Commuting Pilots</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Consideration for 2026</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Fatigue Management</td>
-                    <td>Pilots must ensure sufficient rest before duty, factoring in travel time.</td>
-                    <td>Adherence to operator's FRMS and personal responsibility for rest.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Fatigue Management</td>
+                    <td className="px-4 py-3 text-white/80">Pilots must ensure sufficient rest before duty, factoring in travel time.</td>
+                    <td className="px-4 py-3 text-white/80">Adherence to operator's FRMS and personal responsibility for rest.</td>
                   </tr>
-                  <tr>
-                    <td>Flight Time Limitations (FTL)</td>
-                    <td>Commuting travel generally not counted in FTL, but impacts readiness.</td>
-                    <td>Strict compliance with FDP and rest period requirements.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flight Time Limitations (FTL)</td>
+                    <td className="px-4 py-3 text-white/80">Commuting travel generally not counted in FTL, but impacts readiness.</td>
+                    <td className="px-4 py-3 text-white/80">Strict compliance with FDP and rest period requirements.</td>
                   </tr>
-                  <tr>
-                    <td>Medical Requirements</td>
-                    <td>Ongoing Class 1 Medical certificate required.</td>
-                    <td>Regular medical checks and self-assessment of fitness to fly.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Medical Requirements</td>
+                    <td className="px-4 py-3 text-white/80">Ongoing Class 1 Medical certificate required.</td>
+                    <td className="px-4 py-3 text-white/80">Regular medical checks and self-assessment of fitness to fly.</td>
                   </tr>
                 </tbody>
               </table>
@@ -77,29 +77,29 @@ export default function AustraliaPilotCommuting() {
               <p>
                 For 2026, pilots should anticipate continued competition for jumpseat availability, especially on popular routes. It is crucial for commuting pilots to understand their airline's specific policies regarding staff travel, priority listings, and the implications of non-revenue travel on duty periods. Some airlines may offer specific commuting contracts or allowances, but these are generally rare and highly sought after.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Airline</th>
-                    <th>Commuting Support (General)</th>
-                    <th>Considerations for 2026</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Commuting Support (General)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Considerations for 2026</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Qantas Group (Qantas/Jetstar)</td>
-                    <td>Staff travel benefits, jumpseat agreements.</td>
-                    <td>High demand for popular routes; early booking essential.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Qantas Group (Qantas/Jetstar)</td>
+                    <td className="px-4 py-3 text-white/80">Staff travel benefits, jumpseat agreements.</td>
+                    <td className="px-4 py-3 text-white/80">High demand for popular routes; early booking essential.</td>
                   </tr>
-                  <tr>
-                    <td>Virgin Australia</td>
-                    <td>Staff travel benefits, potential for reciprocal agreements.</td>
-                    <td>Policies may vary with network changes and fleet expansion.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Virgin Australia</td>
+                    <td className="px-4 py-3 text-white/80">Staff travel benefits, potential for reciprocal agreements.</td>
+                    <td className="px-4 py-3 text-white/80">Policies may vary with network changes and fleet expansion.</td>
                   </tr>
-                  <tr>
-                    <td>Rex (Regional Express)</td>
-                    <td>Limited staff travel, focus on regional bases.</td>
-                    <td>Commuting often more challenging due to regional network.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Rex (Regional Express)</td>
+                    <td className="px-4 py-3 text-white/80">Limited staff travel, focus on regional bases.</td>
+                    <td className="px-4 py-3 text-white/80">Commuting often more challenging due to regional network.</td>
                   </tr>
                 </tbody>
               </table>
@@ -116,39 +116,39 @@ export default function AustraliaPilotCommuting() {
               <p>
                 A single person commuting to a major city like Sydney or Melbourne can expect monthly expenses (excluding home rent) to range from AUD $4,000–$4,800, which includes temporary accommodation, food, and local transport. This figure can easily exceed AUD $8,000+ for families. Pilots often mitigate these costs by sharing crash pads, utilizing airline-provided layover facilities, or negotiating specific commuting allowances with their employers.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Expense Category</th>
-                    <th>Estimated Monthly Cost (AUD, 2026)</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Expense Category</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Monthly Cost (AUD, 2026)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Return Flights (Commuting)</td>
-                    <td>$300 - $1000+</td>
-                    <td>Varies by route, airline, and booking flexibility.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Return Flights (Commuting)</td>
+                    <td className="px-4 py-3 text-white/80">$300 - $1000+</td>
+                    <td className="px-4 py-3 text-white/80">Varies by route, airline, and booking flexibility.</td>
                   </tr>
-                  <tr>
-                    <td>Temporary Accommodation (Crash Pad/Short Stay)</td>
-                    <td>$800 - $2000</td>
-                    <td>Highly dependent on location and duration.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Temporary Accommodation (Crash Pad/Short Stay)</td>
+                    <td className="px-4 py-3 text-white/80">$800 - $2000</td>
+                    <td className="px-4 py-3 text-white/80">Highly dependent on location and duration.</td>
                   </tr>
-                  <tr>
-                    <td>Ground Transport (Base City)</td>
-                    <td>$100 - $300</td>
-                    <td>Public transport vs. ride-sharing/taxi.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground Transport (Base City)</td>
+                    <td className="px-4 py-3 text-white/80">$100 - $300</td>
+                    <td className="px-4 py-3 text-white/80">Public transport vs. ride-sharing/taxi.</td>
                   </tr>
-                  <tr>
-                    <td>Food & Incidentals (Base City)</td>
-                    <td>$600 - $1000</td>
-                    <td>Personal spending habits.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Food & Incidentals (Base City)</td>
+                    <td className="px-4 py-3 text-white/80">$600 - $1000</td>
+                    <td className="px-4 py-3 text-white/80">Personal spending habits.</td>
                   </tr>
-                  <tr>
-                    <td>Total Estimated Commuting Costs</td>
-                    <td>$1800 - $4300+</td>
-                    <td>Excludes home living expenses.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total Estimated Commuting Costs</td>
+                    <td className="px-4 py-3 text-white/80">$1800 - $4300+</td>
+                    <td className="px-4 py-3 text-white/80">Excludes home living expenses.</td>
                   </tr>
                 </tbody>
               </table>

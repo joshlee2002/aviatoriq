@@ -5,7 +5,7 @@ export default function AirFranceKLMCadet() {
   return (
     <GuideLayout
       title="Air France-KLM Cadet Pilot Programs 2026: Your Elite Path to the Cockpit"
-      subtitle="A comprehensive guide to the fully sponsored and deferred payment cadet pilot programs offered by Air France and KLM, detailing eligibility, selection, training, and career prospects in 2026."
+      subtitle="The fully sponsored and deferred payment cadet pilot programs offered by Air France and KLM, detailing eligibility, selection, training, and career prospects in 2026."
       readTime="14 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -95,59 +95,59 @@ export default function AirFranceKLMCadet() {
           content: (
             <>
               <p>While both Air France and KLM offer exceptional cadet programs, they cater to slightly different profiles and financial preferences. Understanding these distinctions is crucial for prospective applicants to choose the most suitable path.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Feature</th>
-                    <th>Air France Cadet Program</th>
-                    <th>KLM Flight Academy</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Air France Cadet Program</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">KLM Flight Academy</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Financial Model</strong></td>
-                    <td>Fully Sponsored (€0 tuition)</td>
-                    <td>Deferred Payment (€0 upfront, €163,500 repaid from salary)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Financial Model</strong></td>
+                    <td className="px-4 py-3 text-white/80">Fully Sponsored (€0 tuition)</td>
+                    <td className="px-4 py-3 text-white/80">Deferred Payment (€0 upfront, €163,500 repaid from salary)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Training Duration</strong></td>
-                    <td>24-30 months</td>
-                    <td>~24 months</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Training Duration</strong></td>
+                    <td className="px-4 py-3 text-white/80">24-30 months</td>
+                    <td className="px-4 py-3 text-white/80">~24 months</td>
                   </tr>
-                  <tr>
-                    <td><strong>Primary Training Location</strong></td>
-                    <td>France (ENAC, Airbus Flight Academy)</td>
-                    <td>Netherlands (KLM Flight Academy)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Primary Training Location</strong></td>
+                    <td className="px-4 py-3 text-white/80">France (ENAC, Airbus Flight Academy)</td>
+                    <td className="px-4 py-3 text-white/80">Netherlands (KLM Flight Academy)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Airline Affiliation</strong></td>
-                    <td>Air France, Transavia</td>
-                    <td>KLM, KLM Cityhopper</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Airline Affiliation</strong></td>
+                    <td className="px-4 py-3 text-white/80">Air France, Transavia</td>
+                    <td className="px-4 py-3 text-white/80">KLM, KLM Cityhopper</td>
                   </tr>
-                  <tr>
-                    <td><strong>Aircraft Types (Initial)</strong></td>
-                    <td>Airbus A220/A320, Boeing 737/A320neo</td>
-                    <td>Boeing 737, 777, 787</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Aircraft Types (Initial)</strong></td>
+                    <td className="px-4 py-3 text-white/80">Airbus A220/A320, Boeing 737/A320neo</td>
+                    <td className="px-4 py-3 text-white/80">Boeing 737, 777, 787</td>
                   </tr>
-                  <tr>
-                    <td><strong>Language Requirement</strong></td>
-                    <td>Fluent French (FCL 055 Level 6), Advanced English</td>
-                    <td>High English Proficiency</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Language Requirement</strong></td>
+                    <td className="px-4 py-3 text-white/80">Fluent French (FCL 055 Level 6), Advanced English</td>
+                    <td className="px-4 py-3 text-white/80">High English Proficiency</td>
                   </tr>
-                  <tr>
-                    <td><strong>Stipend During Training</strong></td>
-                    <td>Not explicitly mentioned as standard</td>
-                    <td>~€700/month</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Stipend During Training</strong></td>
+                    <td className="px-4 py-3 text-white/80">Not explicitly mentioned as standard</td>
+                    <td className="px-4 py-3 text-white/80">~€700/month</td>
                   </tr>
-                  <tr>
-                    <td><strong>Prior Flying Experience</strong></td>
-                    <td>No CPL(A) at application (with exceptions)</td>
-                    <td>Ab-initio (no prior experience required)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Prior Flying Experience</strong></td>
+                    <td className="px-4 py-3 text-white/80">No CPL(A) at application (with exceptions)</td>
+                    <td className="px-4 py-3 text-white/80">Ab-initio (no prior experience required)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Key Advantage</strong></td>
-                    <td>100% tuition coverage, direct entry to French aviation sector</td>
-                    <td>No upfront cost, guaranteed employment, monthly stipend</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Key Advantage</strong></td>
+                    <td className="px-4 py-3 text-white/80">100% tuition coverage, direct entry to French aviation sector</td>
+                    <td className="px-4 py-3 text-white/80">No upfront cost, guaranteed employment, monthly stipend</td>
                   </tr>
                 </tbody>
               </table>
@@ -200,7 +200,7 @@ export default function AirFranceKLMCadet() {
           heading: "Conclusion: Charting Your Course to a European Airline Career",
           content: (
             <>
-              <p>The Air France and KLM Cadet Pilot Programs offer unparalleled opportunities for aspiring pilots to launch their careers with two of Europe's most respected airlines. Whether through Air France's fully sponsored model or KLM's deferred payment structure, both programs provide world-class training, direct employment pathways, and the chance to fly advanced aircraft within the dynamic European aviation sector.</p>
+              <p>The Air France and KLM Cadet Pilot Programs offer significant opportunities for aspiring pilots to launch their careers with two of Europe's most respected airlines. Whether through Air France's fully sponsored model or KLM's deferred payment structure, both programs provide world-class training, direct employment pathways, and the chance to fly advanced aircraft within the dynamic European aviation sector.</p>
               <p>Success in these programs demands not only academic excellence and inherent aptitude but also unwavering dedication, meticulous preparation, and a deep-seated passion for aviation. For those who meet the rigorous standards, these cadet programs represent a definitive pathway to a fulfilling and elite career in the skies.</p>
             </>
           )

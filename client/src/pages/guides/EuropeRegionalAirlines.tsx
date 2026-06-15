@@ -74,14 +74,14 @@ export default function EuropeRegionalAirlines() {
           content: (
             <>
               <p>The financial investment required for pilot training in Europe is substantial and varies significantly based on the chosen pathway, flight school, and country. As of 2026, aspiring pilots should anticipate the following estimated costs [2]:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Training Pathway</th><th>Duration</th><th>Estimated Cost (EUR)</th><th>Key Features</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Pathway</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (EUR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Features</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Integrated ATPL</td><td>18-24 months</td><td>€60,000 - €140,000</td><td>Full-time, structured, airline-focused, often includes accommodation</td></tr>
-                  <tr><td>Modular ATPL</td><td>24-36 months</td><td>€40,000 - €80,000</td><td>Flexible, self-paced, can work while training, pay-as-you-go</td></tr>
-                  <tr><td>MPL Program</td><td>18-24 months</td><td>€80,000 - €120,000</td><td>Airline-sponsored, type-rating included, job offer potential, highly structured</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Integrated ATPL</td><td className="px-4 py-3 text-white/80">18-24 months</td><td className="px-4 py-3 text-white/80">€60,000 - €140,000</td><td className="px-4 py-3 text-white/80">Full-time, structured, airline-focused, often includes accommodation</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Modular ATPL</td><td className="px-4 py-3 text-white/80">24-36 months</td><td className="px-4 py-3 text-white/80">€40,000 - €80,000</td><td className="px-4 py-3 text-white/80">Flexible, self-paced, can work while training, pay-as-you-go</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">MPL Program</td><td className="px-4 py-3 text-white/80">18-24 months</td><td className="px-4 py-3 text-white/80">€80,000 - €120,000</td><td className="px-4 py-3 text-white/80">Airline-sponsored, type-rating included, job offer potential, highly structured</td></tr>
                 </tbody>
               </table>
               <p>These figures are estimates and can fluctuate based on several factors, including the reputation of the flight school, the country where training is undertaken (e.g., Eastern vs. Western Europe), the type of aircraft used for flight hours, and the inclusion of additional services like accommodation or exam retakes. It is highly recommended to obtain detailed cost breakdowns directly from ATOs.</p>

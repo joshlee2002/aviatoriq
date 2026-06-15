@@ -29,17 +29,17 @@ export default function SaAtplRequirements() {
           content: (
             <>
               <p>To embark on the ATPL journey in South Africa, candidates must first meet a series of fundamental eligibility criteria. These prerequisites ensure that individuals possess the foundational knowledge, physical fitness, and initial licensing required before undertaking advanced ATPL training. The SACAA mandates strict compliance with these standards, which are regularly updated to align with global best practices and technological advancements in aviation.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Requirement Category</th><th>Specific Criteria (2026)</th><th>Details</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Specific Criteria (2026)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Academic Qualifications</strong></td><td>Minimum 10+2 (or equivalent) with Mathematics and Physics</td><td>A strong foundation in these subjects is crucial for understanding aviation principles and complex aircraft systems.</td></tr>
-                  <tr><td><strong>Prior Licensing</strong></td><td>Valid Commercial Pilot License (CPL)</td><td>The ATPL builds upon the skills and knowledge acquired during CPL training.</td></tr>
-                  <tr><td><strong>Medical Certification</strong></td><td>Valid Class 1 Medical Certificate (SACAA)</td><td>Maintained throughout training and career, ensuring the highest level of physical and mental fitness.</td></tr>
-                  <tr><td><strong>English Proficiency</strong></td><td>ICAO English Proficiency Level 4 or above</td><td>Essential for clear and effective communication in international aviation environments.</td></tr>
-                  <tr><td><strong>Multi-Engine Rating</strong></td><td>Mandatory Multi-Engine Instrument Rating</td><td>Required for operating multi-engine aircraft under Instrument Flight Rules (IFR).</td></tr>
-                  <tr><td><strong>Minimum Age</strong></td><td>At least 21 years of age for full ATPL issuance</td><td>Candidates can begin ATPL theoretical training earlier, often with a 'frozen ATPL' status.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Academic Qualifications</strong></td><td className="px-4 py-3 text-white/80">Minimum 10+2 (or equivalent) with Mathematics and Physics</td><td className="px-4 py-3 text-white/80">A strong foundation in these subjects is crucial for understanding aviation principles and complex aircraft systems.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Prior Licensing</strong></td><td className="px-4 py-3 text-white/80">Valid Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">The ATPL builds upon the skills and knowledge acquired during CPL training.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Medical Certification</strong></td><td className="px-4 py-3 text-white/80">Valid Class 1 Medical Certificate (SACAA)</td><td className="px-4 py-3 text-white/80">Maintained throughout training and career, ensuring the highest level of physical and mental fitness.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>English Proficiency</strong></td><td className="px-4 py-3 text-white/80">ICAO English Proficiency Level 4 or above</td><td className="px-4 py-3 text-white/80">Essential for clear and effective communication in international aviation environments.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Multi-Engine Rating</strong></td><td className="px-4 py-3 text-white/80">Mandatory Multi-Engine Instrument Rating</td><td className="px-4 py-3 text-white/80">Required for operating multi-engine aircraft under Instrument Flight Rules (IFR).</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Minimum Age</strong></td><td className="px-4 py-3 text-white/80">At least 21 years of age for full ATPL issuance</td><td className="px-4 py-3 text-white/80">Candidates can begin ATPL theoretical training earlier, often with a 'frozen ATPL' status.</td></tr>
                 </tbody>
               </table>
               <p>These foundational requirements are non-negotiable and serve as the gateway to advanced pilot training. Prospective candidates are advised to verify their qualifications with the SACAA or an approved Aviation Training Organization (ATO) to ensure full compliance.</p>
@@ -71,17 +71,17 @@ export default function SaAtplRequirements() {
               </ul>
               <h3>Flight Experience Requirements</h3>
               <p>To unfreeze the ATPL and obtain the full license, a pilot must accumulate significant flight experience. The SACAA requirements for total flight time are aligned with international standards:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Flight Time Category</th><th>Minimum Hours (2026)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Flight Time Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Hours (2026)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Total Flight Time</strong></td><td>1500 hours</td><td>Including all flight time as pilot.</td></tr>
-                  <tr><td><strong>Pilot-in-Command (PIC)</strong></td><td>250 hours</td><td>Or 100 hours PIC and 150 hours as PIC under supervision (PICUS).</td></tr>
-                  <tr><td><strong>Multi-Engine Aircraft</strong></td><td>50 hours</td><td>As PIC in multi-engine aircraft.</td></tr>
-                  <tr><td><strong>Cross-Country Flight Time</strong></td><td>200 hours</td><td>Including at least 100 hours as PIC.</td></tr>
-                  <tr><td><strong>Instrument Flight Time (IFR)</strong></td><td>75 hours</td><td>Of which a maximum of 30 hours may be in a simulator.</td></tr>
-                  <tr><td><strong>Night Flight Time</strong></td><td>100 hours</td><td>As PIC or co-pilot.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Flight Time</strong></td><td className="px-4 py-3 text-white/80">1500 hours</td><td className="px-4 py-3 text-white/80">Including all flight time as pilot.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Pilot-in-Command (PIC)</strong></td><td className="px-4 py-3 text-white/80">250 hours</td><td className="px-4 py-3 text-white/80">Or 100 hours PIC and 150 hours as PIC under supervision (PICUS).</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Multi-Engine Aircraft</strong></td><td className="px-4 py-3 text-white/80">50 hours</td><td className="px-4 py-3 text-white/80">As PIC in multi-engine aircraft.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Cross-Country Flight Time</strong></td><td className="px-4 py-3 text-white/80">200 hours</td><td className="px-4 py-3 text-white/80">Including at least 100 hours as PIC.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Instrument Flight Time (IFR)</strong></td><td className="px-4 py-3 text-white/80">75 hours</td><td className="px-4 py-3 text-white/80">Of which a maximum of 30 hours may be in a simulator.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Night Flight Time</strong></td><td className="px-4 py-3 text-white/80">100 hours</td><td className="px-4 py-3 text-white/80">As PIC or co-pilot.</td></tr>
                 </tbody>
               </table>
               <p>These hours are typically accumulated through various roles, including flight instructing, charter operations, or as a First Officer with an airline under a frozen ATPL.</p>
@@ -93,18 +93,18 @@ export default function SaAtplRequirements() {
           content: (
             <>
               <p>The financial investment required for ATPL training in South Africa is substantial, reflecting the comprehensive nature of the program. Costs can vary significantly based on the chosen ATO, the type of aircraft used for flight training, and individual learning pace. The figures below provide a realistic estimate for a complete ATPL pathway, from Private Pilot License (PPL) to a frozen ATPL, as of 2026. All costs are presented in South African Rand (ZAR).</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Training Phase</th><th>Estimated Cost (ZAR)</th><th>Notes</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (ZAR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td><strong>Private Pilot License (PPL)</strong></td><td>ZAR 80,000 - ZAR 120,000</td><td>Includes ground school, flight hours (approx. 45-50), exams, and materials.</td></tr>
-                  <tr><td><strong>Commercial Pilot License (CPL)</strong></td><td>ZAR 300,000 - ZAR 450,000</td><td>Includes advanced ground school, flight hours (approx. 150-200 total), night rating, and general radio telephony.</td></tr>
-                  <tr><td><strong>Multi-Engine Rating (ME)</strong></td><td>ZAR 60,000 - ZAR 90,000</td><td>Adds multi-engine proficiency to CPL.</td></tr>
-                  <tr><td><strong>Instrument Rating (IR)</strong></td><td>ZAR 80,000 - ZAR 120,000</td><td>Enables flight under Instrument Flight Rules.</td></tr>
-                  <tr><td><strong>ATPL Theoretical Knowledge</strong></td><td>ZAR 40,000 - ZAR 70,000</td><td>Ground school and examination fees for the 14 ATPL subjects.</td></tr>
-                  <tr><td><strong>Total Estimated Cost (PPL to Frozen ATPL)</strong></td><td><strong>ZAR 560,000 - ZAR 850,000</strong></td><td>This range does not include living expenses, medicals, or license issue fees.</td></tr>
-                  <tr><td><strong>Additional Costs (Estimated)</strong></td><td>ZAR 50,000 - ZAR 150,000</td><td>Medical exams, license issue fees, study materials, uniform, accommodation, transport.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Private Pilot License (PPL)</strong></td><td className="px-4 py-3 text-white/80">ZAR 80,000 - ZAR 120,000</td><td className="px-4 py-3 text-white/80">Includes ground school, flight hours (approx. 45-50), exams, and materials.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Commercial Pilot License (CPL)</strong></td><td className="px-4 py-3 text-white/80">ZAR 300,000 - ZAR 450,000</td><td className="px-4 py-3 text-white/80">Includes advanced ground school, flight hours (approx. 150-200 total), night rating, and general radio telephony.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Multi-Engine Rating (ME)</strong></td><td className="px-4 py-3 text-white/80">ZAR 60,000 - ZAR 90,000</td><td className="px-4 py-3 text-white/80">Adds multi-engine proficiency to CPL.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Instrument Rating (IR)</strong></td><td className="px-4 py-3 text-white/80">ZAR 80,000 - ZAR 120,000</td><td className="px-4 py-3 text-white/80">Enables flight under Instrument Flight Rules.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>ATPL Theoretical Knowledge</strong></td><td className="px-4 py-3 text-white/80">ZAR 40,000 - ZAR 70,000</td><td className="px-4 py-3 text-white/80">Ground school and examination fees for the 14 ATPL subjects.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost (PPL to Frozen ATPL)</strong></td><td className="px-4 py-3 text-white/80"><strong>ZAR 560,000 - ZAR 850,000</strong></td><td className="px-4 py-3 text-white/80">This range does not include living expenses, medicals, or license issue fees.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Additional Costs (Estimated)</strong></td><td className="px-4 py-3 text-white/80">ZAR 50,000 - ZAR 150,000</td><td className="px-4 py-3 text-white/80">Medical exams, license issue fees, study materials, uniform, accommodation, transport.</td></tr>
                 </tbody>
               </table>
               <p>It is important to note that these figures are estimates and can fluctuate. Prospective students should contact multiple SACAA-approved ATOs for precise, up-to-date quotations and to inquire about financing options or cadet programs offered by airlines.</p>

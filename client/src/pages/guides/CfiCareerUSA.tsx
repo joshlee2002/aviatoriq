@@ -5,7 +5,7 @@ const CfiCareerUSA = () => {
   return (
     <GuideLayout
       title="How to Become a Flight Instructor (CFI) in the USA: Requirements, Salary & Career Path"
-      subtitle="Your comprehensive guide to becoming a Certified Flight Instructor in the United States, covering FAA requirements, training, salary expectations, and career progression."
+      subtitle="Becoming a Certified Flight Instructor in the United States, covering FAA requirements, training, salary expectations, and career progression."
       canonical="/us/guides/cfi-career-usa"
       metaDescription="Learn how to become a Flight Instructor (CFI) in the USA. This guide covers FAA requirements, CPL, FOI, FIA tests, CFII/MEI add-ons, salary, hour building, and career paths."
       faqSchema={[
@@ -116,24 +116,24 @@ const CfiCareerUSA = () => {
               <h3>Typical CFI Earnings and Hour Building</h3>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <th className="px-4 py-2">Metric</th>
                     <th className="px-4 py-2">Entry-Level CFI (0-500 hrs dual)</th>
                     <th className="px-4 py-2">Experienced CFI (500+ hrs dual, with CFII/MEI)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Hourly Rate</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">$25 - $40</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">$40 - $70+</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Estimated Annual Income</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">$35,000 - $55,000</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">$55,000 - $85,000+</td>
                   </tr>
-                  <tr>
+                  <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">Hours Built Per Year</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">500 - 800 hours</td>
                     <td className="px-4 py-3 text-white/80 border-b border-white/10">500 - 900+ hours</td>

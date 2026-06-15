@@ -149,14 +149,14 @@ export default function FaaMedicalClass2() {
               <p>
                 The cost of an FAA Class 2 Medical Examination can vary based on the AME's location, their fee structure, and any additional tests required. As of 2026, applicants can expect the following estimated costs:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Service</th><th>Estimated Cost (USD)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Service</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Standard Class 2 AME Exam</td><td>$150 - $300</td></tr>
-                  <tr><td>Additional Tests (e.g., EKG)</td><td>$50 - $150 (each)</td></tr>
-                  <tr><td>Special Issuance Consultation</td><td>Varies significantly</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Standard Class 2 AME Exam</td><td className="px-4 py-3 text-white/80">$150 - $300</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Additional Tests (e.g., EKG)</td><td className="px-4 py-3 text-white/80">$50 - $150 (each)</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Special Issuance Consultation</td><td className="px-4 py-3 text-white/80">Varies significantly</td></tr>
                 </tbody>
               </table>
               <p>
@@ -165,15 +165,15 @@ export default function FaaMedicalClass2() {
               <p>
                 The validity period of an FAA Class 2 Medical Certificate depends on the age of the applicant and the type of pilot privileges being exercised. The certificate is valid from the date of examination [1]:
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Age of Applicant</th><th>Privileges Exercised (Medical Class)</th><th>Validity Period (Calendar Months)</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Age of Applicant</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Privileges Exercised (Medical Class)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Validity Period (Calendar Months)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Under 40</td><td>Class 2</td><td>12</td></tr>
-                  <tr><td>Under 40</td><td>Class 3</td><td>60</td></tr>
-                  <tr><td>40 and Over</td><td>Class 2</td><td>12</td></tr>
-                  <tr><td>40 and Over</td><td>Class 3</td><td>24</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Under 40</td><td className="px-4 py-3 text-white/80">Class 2</td><td className="px-4 py-3 text-white/80">12</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Under 40</td><td className="px-4 py-3 text-white/80">Class 3</td><td className="px-4 py-3 text-white/80">60</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">40 and Over</td><td className="px-4 py-3 text-white/80">Class 2</td><td className="px-4 py-3 text-white/80">12</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">40 and Over</td><td className="px-4 py-3 text-white/80">Class 3</td><td className="px-4 py-3 text-white/80">24</td></tr>
                 </tbody>
               </table>
               <p>

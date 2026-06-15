@@ -38,7 +38,7 @@ export default function IntegratedVsModular() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Feature</th>
                       <th className="px-4 py-3 font-semibold">Integrated ATPL</th>
                       <th className="px-4 py-3 font-semibold">Modular ATPL</th>
@@ -124,7 +124,7 @@ export default function IntegratedVsModular() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Phase</th>
                       <th className="px-4 py-3 font-semibold">2026 Cost (UK)</th>
                       <th className="px-4 py-3 font-semibold">Min Hours</th>
@@ -211,7 +211,7 @@ export default function IntegratedVsModular() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">#</th>
                       <th className="px-4 py-3 font-semibold">Subject</th>
                       <th className="px-4 py-3 font-semibold">Typical Difficulty</th>
@@ -259,7 +259,7 @@ export default function IntegratedVsModular() {
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr>
+                    <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Airline</th>
                       <th className="px-4 py-3 font-semibold">Integrated</th>
                       <th className="px-4 py-3 font-semibold">Modular</th>

@@ -5,7 +5,7 @@ export default function SouthAfricaCadetPrograms() {
   return (
     <GuideLayout
       title="Navigating South Africa's Elite Pilot Cadet Programs in 2026"
-      subtitle="A comprehensive guide to SACAA regulations, SAA opportunities, costs in ZAR, and funding for aspiring aviators."
+      subtitle="SACAA regulations, SAA opportunities, costs in ZAR, and funding for aspiring aviators."
       readTime="15 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -19,7 +19,7 @@ export default function SouthAfricaCadetPrograms() {
           heading: "Introduction to Pilot Cadet Programs in South Africa",
           content: (
             <>
-              <p>South Africa, with its vast airspace and burgeoning aviation sector, presents a compelling destination for aspiring pilots. The South African Civil Aviation Authority (SACAA) ensures rigorous standards, aligning with international best practices. For those dreaming of a career in the cockpit, cadet pilot programs offer a structured and often financially supported pathway. This guide delves into the intricacies of these programs in South Africa for 2026, covering regulatory frameworks, leading airline opportunities like South African Airways (SAA), detailed cost breakdowns in ZAR, and essential funding strategies.</p>
+              <p>South Africa, with its vast airspace and burgeoning aviation sector, presents a compelling destination for aspiring pilots. The South African Civil Aviation Authority (SACAA) ensures rigorous standards, aligning with international best practices. For those dreaming of a career in the cockpit, cadet pilot programs offer a structured and often financially supported pathway. This guide covers these programs in South Africa for 2026, covering regulatory frameworks, leading airline opportunities like South African Airways (SAA), detailed cost breakdowns in ZAR, and essential funding strategies.</p>
               <p>The journey to becoming a commercial pilot is demanding, requiring significant dedication and investment. Cadet programs are designed to streamline this process, providing comprehensive training from ab-initio to a Frozen Airline Transport Pilot's Licence (ATPL). Understanding the landscape of these programs, including eligibility, curriculum, and post-graduation prospects, is crucial for making informed decisions.</p>
             </>
           )
@@ -121,29 +121,29 @@ export default function SouthAfricaCadetPrograms() {
             <>
               <p>Understanding the financial commitment is a critical step in planning a pilot career. The costs for pilot training in South Africa for 2026 can vary significantly based on the flight school, aircraft type, and individual progress. Below is an estimated breakdown of core training costs for Private Pilot Licence (PPL), Commercial Pilot Licence (CPL), and Multi-Engine Instrument Rating (MEIR), along with additional expenses.</p>
               <h4>Core Training Costs (Estimated 2025/2026 in ZAR):</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Licence/Rating</th>
-                    <th>Estimated Cost (ZAR)</th>
-                    <th>Key Inclusions</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Licence/Rating</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (ZAR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Inclusions</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>ZAR 90,000 - ZAR 130,000</td>
-                    <td>45-60 flight hours (dual & solo), ground school, study materials, theoretical & practical exams, initial licensing fee.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">ZAR 90,000 - ZAR 130,000</td>
+                    <td className="px-4 py-3 text-white/80">45-60 flight hours (dual & solo), ground school, study materials, theoretical & practical exams, initial licensing fee.</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>ZAR 280,000 - ZAR 380,000</td>
-                    <td>Minimum 200 total flight hours (including PPL), advanced instruction, 100 hours PIC, 20 hours cross-country PIC, 10 hours instrument instruction, comprehensive ground school, all CPL exams, licensing fee.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">ZAR 280,000 - ZAR 380,000</td>
+                    <td className="px-4 py-3 text-white/80">Minimum 200 total flight hours (including PPL), advanced instruction, 100 hours PIC, 20 hours cross-country PIC, 10 hours instrument instruction, comprehensive ground school, all CPL exams, licensing fee.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Instrument Rating (MEIR)</td>
-                    <td>ZAR 150,000 - ZAR 220,000</td>
-                    <td>15-20 multi-engine flight hours, 40-50 instrument hours (some simulator), specialized ground school, theoretical & practical exams, MEIR endorsement fee.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating (MEIR)</td>
+                    <td className="px-4 py-3 text-white/80">ZAR 150,000 - ZAR 220,000</td>
+                    <td className="px-4 py-3 text-white/80">15-20 multi-engine flight hours, 40-50 instrument hours (some simulator), specialized ground school, theoretical & practical exams, MEIR endorsement fee.</td>
                   </tr>
                 </tbody>
               </table>

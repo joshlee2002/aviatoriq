@@ -72,44 +72,44 @@ const TrainingTimeline = () => {
               <p>
                 Regardless of whether you choose the integrated or modular route, certain core phases of training are universal. Understanding the typical duration for each of these components will help you construct a more accurate personal timeline. It's important to remember that these are averages, and individual progress can vary.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Training Phase</th>
-                    <th>Typical Modular Duration</th>
-                    <th>Notes</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Modular Duration</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot Licence (PPL)</td>
-                    <td>6-18 months</td>
-                    <td>Highly dependent on weather, instructor availability, and personal commitment.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot Licence (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">6-18 months</td>
+                    <td className="px-4 py-3 text-white/80">Highly dependent on weather, instructor availability, and personal commitment.</td>
                   </tr>
-                  <tr>
-                    <td>Hour Building</td>
-                    <td>6-12 months</td>
-                    <td>Accumulating 100+ hours of pilot-in-command time. Can be done efficiently or spread out.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Hour Building</td>
+                    <td className="px-4 py-3 text-white/80">6-12 months</td>
+                    <td className="px-4 py-3 text-white/80">Accumulating 100+ hours of pilot-in-command time. Can be done efficiently or spread out.</td>
                   </tr>
-                  <tr>
-                    <td>ATPL Theory Exams</td>
-                    <td>6-18 months</td>
-                    <td>14 demanding exams. Often done via distance learning or full-time ground school.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATPL Theory Exams</td>
+                    <td className="px-4 py-3 text-white/80">6-18 months</td>
+                    <td className="px-4 py-3 text-white/80">14 demanding exams. Often done via distance learning or full-time ground school.</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot Licence (CPL)</td>
-                    <td>2-4 months</td>
-                    <td>Requires a minimum of 25 hours of flight training.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot Licence (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">2-4 months</td>
+                    <td className="px-4 py-3 text-white/80">Requires a minimum of 25 hours of flight training.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Instrument Rating (MEIR)</td>
-                    <td>3-6 months</td>
-                    <td>Intensive instrument flight training.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Instrument Rating (MEIR)</td>
+                    <td className="px-4 py-3 text-white/80">3-6 months</td>
+                    <td className="px-4 py-3 text-white/80">Intensive instrument flight training.</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Crew Cooperation (MCC) & Jet Orientation Course (JOC)</td>
-                    <td>2-4 weeks</td>
-                    <td>Often combined, focuses on airline operations and teamwork.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Crew Cooperation (MCC) & Jet Orientation Course (JOC)</td>
+                    <td className="px-4 py-3 text-white/80">2-4 weeks</td>
+                    <td className="px-4 py-3 text-white/80">Often combined, focuses on airline operations and teamwork.</td>
                   </tr>
                 </tbody>
               </table>
@@ -162,27 +162,27 @@ const TrainingTimeline = () => {
               <p>
                 To provide a clearer picture, here's a direct comparison of the typical timelines for the two primary ATPL training routes. This table highlights the significant differences in duration, which often correlates with the intensity and structure of the programmes.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Route</th>
-                    <th>Training Duration (Zero to Frozen ATPL)</th>
-                    <th>Total Duration (Zero to First Officer)</th>
-                    <th>Key Characteristics</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Route</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Duration (Zero to Frozen ATPL)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Total Duration (Zero to First Officer)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Characteristics</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Integrated ATPL</td>
-                    <td>18-24 months</td>
-                    <td>2-4 years</td>
-                    <td>Full-time, structured, single school, high intensity.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Integrated ATPL</td>
+                    <td className="px-4 py-3 text-white/80">18-24 months</td>
+                    <td className="px-4 py-3 text-white/80">2-4 years</td>
+                    <td className="px-4 py-3 text-white/80">Full-time, structured, single school, high intensity.</td>
                   </tr>
-                  <tr>
-                    <td>Modular ATPL</td>
-                    <td>3-6 years</td>
-                    <td>4-8 years</td>
-                    <td>Part-time possible, flexible, multiple schools, self-paced.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Modular ATPL</td>
+                    <td className="px-4 py-3 text-white/80">3-6 years</td>
+                    <td className="px-4 py-3 text-white/80">4-8 years</td>
+                    <td className="px-4 py-3 text-white/80">Part-time possible, flexible, multiple schools, self-paced.</td>
                   </tr>
                 </tbody>
               </table>

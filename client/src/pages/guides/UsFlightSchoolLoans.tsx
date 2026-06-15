@@ -35,44 +35,44 @@ export default function UsFlightSchoolLoans() {
               <p>
                 <strong>Part 141 Training:</strong> Operates under strict FAA oversight with an approved, structured syllabus. These programs are typically more intensive and accelerated. Part 141 programs have reduced minimum flight hour requirements (e.g., 35 hours for a PPL), which can potentially lead to lower total costs if completed efficiently. However, these programs often require upfront tuition payments or structured payment plans.
               </p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Feature</th>
-                    <th>Part 61 Training</th>
-                    <th>Part 141 Training</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 61 Training</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 141 Training</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Flexibility</strong></td>
-                    <td>High (adaptable schedule)</td>
-                    <td>Low (rigid, structured syllabus)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Flexibility</strong></td>
+                    <td className="px-4 py-3 text-white/80">High (adaptable schedule)</td>
+                    <td className="px-4 py-3 text-white/80">Low (rigid, structured syllabus)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Pacing</strong></td>
-                    <td>Self-paced</td>
-                    <td>Accelerated, fixed progression</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Pacing</strong></td>
+                    <td className="px-4 py-3 text-white/80">Self-paced</td>
+                    <td className="px-4 py-3 text-white/80">Accelerated, fixed progression</td>
                   </tr>
-                  <tr>
-                    <td><strong>FAA Minimum PPL Hours</strong></td>
-                    <td>40 hours (typically 60-75 in practice)</td>
-                    <td>35 hours (often higher in practice)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>FAA Minimum PPL Hours</strong></td>
+                    <td className="px-4 py-3 text-white/80">40 hours (typically 60-75 in practice)</td>
+                    <td className="px-4 py-3 text-white/80">35 hours (often higher in practice)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Payment Structure</strong></td>
-                    <td>Pay-as-you-go, modular billing</td>
-                    <td>Upfront tuition or structured blocks</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Payment Structure</strong></td>
+                    <td className="px-4 py-3 text-white/80">Pay-as-you-go, modular billing</td>
+                    <td className="px-4 py-3 text-white/80">Upfront tuition or structured blocks</td>
                   </tr>
-                  <tr>
-                    <td><strong>FAA Oversight</strong></td>
-                    <td>General requirements</td>
-                    <td>FAA-approved syllabus, regular inspections</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>FAA Oversight</strong></td>
+                    <td className="px-4 py-3 text-white/80">General requirements</td>
+                    <td className="px-4 py-3 text-white/80">FAA-approved syllabus, regular inspections</td>
                   </tr>
-                  <tr>
-                    <td><strong>Suitability</strong></td>
-                    <td>Hobbyists, working professionals, flexible learners</td>
-                    <td>Career-focused, full-time students, accelerated path</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Suitability</strong></td>
+                    <td className="px-4 py-3 text-white/80">Hobbyists, working professionals, flexible learners</td>
+                    <td className="px-4 py-3 text-white/80">Career-focused, full-time students, accelerated path</td>
                   </tr>
                 </tbody>
               </table>
@@ -93,19 +93,19 @@ export default function UsFlightSchoolLoans() {
                 Examples of qualifying programs include a Professional Pilot Science Associate Degree from Polk State College or an Aviation Science Degree from Aviator College. Prospective students should verify their chosen school's eligibility through the Department of Education's accreditation database.
               </p>
               <h3>Federal Loan Limits (2024-2025 Academic Year)</h3>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Loan Type</th>
-                    <th>Dependent Undergraduate (Annual)</th>
-                    <th>Independent Undergraduate (Annual)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Loan Type</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Dependent Undergraduate (Annual)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Independent Undergraduate (Annual)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Direct Subsidized & Unsubsidized (Max Subsidized)</td>
-                    <td>Up to $5,500 ($3,500)</td>
-                    <td>Up to $9,500 ($3,500)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Direct Subsidized & Unsubsidized (Max Subsidized)</td>
+                    <td className="px-4 py-3 text-white/80">Up to $5,500 ($3,500)</td>
+                    <td className="px-4 py-3 text-white/80">Up to $9,500 ($3,500)</td>
                   </tr>
                 </tbody>
               </table>

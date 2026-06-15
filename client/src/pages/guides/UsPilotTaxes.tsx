@@ -31,14 +31,14 @@ export default function UsPilotTaxes() {
               <p>One of the most frequently asked questions by aspiring pilots concerns the tax deductibility of flight training expenses. The Internal Revenue Service (IRS) distinguishes between training that qualifies an individual for a new trade or business and training that maintains or improves skills required in an existing trade or business. This distinction is paramount.</p>
               <p>Generally, flight training undertaken to meet the minimum educational requirements for a new profession (e.g., a student pursuing their Private Pilot Certificate with the ultimate goal of becoming an airline pilot) is considered a personal expense and is not tax-deductible. The IRS views this as education that qualifies you for a new line of work, rather than enhancing skills in your current one.</p>
               <p>However, the situation changes for individuals already working in aviation who are pursuing additional ratings or certifications to maintain or improve their skills in their current role. For instance, a commercial pilot obtaining a new type rating, an instrument rating, or a flight instructor certificate to enhance their existing professional capabilities may be able to deduct these expenses. The key is that the training must be directly related to and necessary for their current employment or business.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Training Purpose</th><th>Deductibility Status</th><th>IRS Rationale</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Purpose</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Deductibility Status</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">IRS Rationale</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Qualifying for a new trade/business (e.g., initial Private Pilot for career)</td><td>Generally NOT deductible</td><td>Considered education for a new profession.</td></tr>
-                  <tr><td>Maintaining/improving skills in current aviation job (e.g., new type rating for existing pilot)</td><td>Potentially deductible</td><td>Enhances existing professional capabilities.</td></tr>
-                  <tr><td>Personal or recreational flying</td><td>NOT deductible</td><td>Personal expense, not business-related.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Qualifying for a new trade/business (e.g., initial Private Pilot for career)</td><td className="px-4 py-3 text-white/80">Generally NOT deductible</td><td className="px-4 py-3 text-white/80">Considered education for a new profession.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Maintaining/improving skills in current aviation job (e.g., new type rating for existing pilot)</td><td className="px-4 py-3 text-white/80">Potentially deductible</td><td className="px-4 py-3 text-white/80">Enhances existing professional capabilities.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Personal or recreational flying</td><td className="px-4 py-3 text-white/80">NOT deductible</td><td className="px-4 py-3 text-white/80">Personal expense, not business-related.</td></tr>
                 </tbody>
               </table>
               <p>It is crucial to consult with a qualified tax professional to assess individual circumstances, as the interpretation of these rules can be nuanced and depends heavily on specific facts and documentation.</p>
@@ -70,16 +70,16 @@ export default function UsPilotTaxes() {
               <p>Essential equipment required for the job, such as high-quality aviation headsets, flight bags, navigation equipment (e.g., GPS units), and other necessary tools, may be deductible. The cost of these items, especially if they have a useful life of more than one year, might be depreciated over time.</p>
               <h4>Licensing and Medical Fees</h4>
               <p>Costs associated with maintaining professional status, including FAA medical certificate examinations, license renewal fees, and other mandatory certifications, are typically deductible. These are considered necessary expenses for continued employment as a pilot.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr><th>Deduction Category</th><th>Examples</th><th>Key Considerations</th></tr>
+                  <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Deduction Category</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Examples</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Considerations</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Travel Expenses</td><td>Hotel, meals (per diem), incidentals during layovers</td><td>Away from tax home, business-related only.</td></tr>
-                  <tr><td>Uniforms</td><td>Flight suits, epaulets, cleaning costs</td><td>Not suitable for everyday wear.</td></tr>
-                  <tr><td>Professional Dues</td><td>ALPA membership, aviation union dues</td><td>Directly related to profession.</td></tr>
-                  <tr><td>Equipment</td><td>Aviation headsets, flight bags, navigation tools</td><td>Necessary for job performance, depreciation may apply.</td></tr>
-                  <tr><td>Licensing & Medical</td><td>FAA medical exams, license renewal fees</td><td>Mandatory for professional status.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Travel Expenses</td><td className="px-4 py-3 text-white/80">Hotel, meals (per diem), incidentals during layovers</td><td className="px-4 py-3 text-white/80">Away from tax home, business-related only.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Uniforms</td><td className="px-4 py-3 text-white/80">Flight suits, epaulets, cleaning costs</td><td className="px-4 py-3 text-white/80">Not suitable for everyday wear.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Professional Dues</td><td className="px-4 py-3 text-white/80">ALPA membership, aviation union dues</td><td className="px-4 py-3 text-white/80">Directly related to profession.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Equipment</td><td className="px-4 py-3 text-white/80">Aviation headsets, flight bags, navigation tools</td><td className="px-4 py-3 text-white/80">Necessary for job performance, depreciation may apply.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Licensing & Medical</td><td className="px-4 py-3 text-white/80">FAA medical exams, license renewal fees</td><td className="px-4 py-3 text-white/80">Mandatory for professional status.</td></tr>
                 </tbody>
               </table>
             </>

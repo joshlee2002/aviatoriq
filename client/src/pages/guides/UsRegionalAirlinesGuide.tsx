@@ -44,49 +44,49 @@ export default function UsRegionalAirlinesGuide() {
                 Part 141 schools operate under a highly structured, FAA-approved syllabus. These programs are designed for efficiency and accelerated learning, often resembling a collegiate or academy-style environment. The FAA permits reduced minimum flight hours for certificates under Part 141; for instance, a PPL can be obtained with a minimum of 35 hours. This reduction is predicated on the rigorous, standardized curriculum and frequent evaluations (stage checks) that ensure consistent progress. Part 141 programs often require a full-time commitment and may involve upfront tuition payments or structured payment plans. While the initial cost might seem higher, the reduced hour requirements and accelerated pace can sometimes lead to lower overall expenses for dedicated students.
               </p>
               <h4>Key Differences: Part 61 vs. Part 141 (2026)</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Feature</th>
-                    <th>Part 61 Training</th>
-                    <th>Part 141 Training</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Feature</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 61 Training</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Part 141 Training</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Flexibility</td>
-                    <td>High (tailored schedule)</td>
-                    <td>Low (rigid, structured syllabus)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flexibility</td>
+                    <td className="px-4 py-3 text-white/80">High (tailored schedule)</td>
+                    <td className="px-4 py-3 text-white/80">Low (rigid, structured syllabus)</td>
                   </tr>
-                  <tr>
-                    <td>PPL Minimum Hours</td>
-                    <td>40 hours</td>
-                    <td>35 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">PPL Minimum Hours</td>
+                    <td className="px-4 py-3 text-white/80">40 hours</td>
+                    <td className="px-4 py-3 text-white/80">35 hours</td>
                   </tr>
-                  <tr>
-                    <td>Typical Completion Hours (PPL)</td>
-                    <td>60-75 hours</td>
-                    <td>40-55 hours</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Typical Completion Hours (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">60-75 hours</td>
+                    <td className="px-4 py-3 text-white/80">40-55 hours</td>
                   </tr>
-                  <tr>
-                    <td>Pace</td>
-                    <td>Self-paced</td>
-                    <td>Accelerated, full-time often recommended</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Pace</td>
+                    <td className="px-4 py-3 text-white/80">Self-paced</td>
+                    <td className="px-4 py-3 text-white/80">Accelerated, full-time often recommended</td>
                   </tr>
-                  <tr>
-                    <td>Payment Structure</td>
-                    <td>Pay-as-you-go</td>
-                    <td>Upfront tuition or structured plans</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Payment Structure</td>
+                    <td className="px-4 py-3 text-white/80">Pay-as-you-go</td>
+                    <td className="px-4 py-3 text-white/80">Upfront tuition or structured plans</td>
                   </tr>
-                  <tr>
-                    <td>FAA Oversight</td>
-                    <td>General requirements</td>
-                    <td>Approved syllabus, regular inspections</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">FAA Oversight</td>
+                    <td className="px-4 py-3 text-white/80">General requirements</td>
+                    <td className="px-4 py-3 text-white/80">Approved syllabus, regular inspections</td>
                   </tr>
-                  <tr>
-                    <td>GI Bill Eligibility</td>
-                    <td>Limited</td>
-                    <td>Often eligible (check specific programs)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">GI Bill Eligibility</td>
+                    <td className="px-4 py-3 text-white/80">Limited</td>
+                    <td className="px-4 py-3 text-white/80">Often eligible (check specific programs)</td>
                   </tr>
                 </tbody>
               </table>
@@ -143,49 +143,49 @@ export default function UsRegionalAirlinesGuide() {
                 The financial investment required to become a regional airline pilot is substantial, often ranging from $80,000 to $120,000+ for a zero-to-hero training path (PPL through CFI/MEI). These figures encompass aircraft rental, instructor fees, ground school materials, FAA exam fees, and supplies. The total cost can vary significantly based on the chosen flight school (Part 61 vs. 141), individual learning pace, and geographic location.
               </p>
               <h4>Typical Cost Breakdown (Estimated 2026 USD)</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Certificate/Rating</th>
-                    <th>Estimated Cost Range (USD)</th>
-                    <th>Typical Hours</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Certificate/Rating</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost Range (USD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Hours</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot License (PPL)</td>
-                    <td>$10,000 - $18,000</td>
-                    <td>40-75</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">$10,000 - $18,000</td>
+                    <td className="px-4 py-3 text-white/80">40-75</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>$12,000 - $20,000</td>
-                    <td>40-60</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">$12,000 - $20,000</td>
+                    <td className="px-4 py-3 text-white/80">40-60</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot License (CPL)</td>
-                    <td>$20,000 - $35,000</td>
-                    <td>110-190 (Part 141) / 250 (Part 61 total time)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">$20,000 - $35,000</td>
+                    <td className="px-4 py-3 text-white/80">110-190 (Part 141) / 250 (Part 61 total time)</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (ME)</td>
-                    <td>$6,000 - $10,000</td>
-                    <td>10-15</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
+                    <td className="px-4 py-3 text-white/80">$6,000 - $10,000</td>
+                    <td className="px-4 py-3 text-white/80">10-15</td>
                   </tr>
-                  <tr>
-                    <td>Certified Flight Instructor (CFI/CFII/MEI)</td>
-                    <td>$8,000 - $15,000</td>
-                    <td>20-40 per rating</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Certified Flight Instructor (CFI/CFII/MEI)</td>
+                    <td className="px-4 py-3 text-white/80">$8,000 - $15,000</td>
+                    <td className="px-4 py-3 text-white/80">20-40 per rating</td>
                   </tr>
-                  <tr>
-                    <td>ATP CTP Course</td>
-                    <td>$5,000 - $8,000</td>
-                    <td>N/A (ground/simulator)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">ATP CTP Course</td>
+                    <td className="px-4 py-3 text-white/80">$5,000 - $8,000</td>
+                    <td className="px-4 py-3 text-white/80">N/A (ground/simulator)</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Range</strong></td>
-                    <td><strong>$80,000 - $120,000+</strong></td>
-                    <td><strong>250-1500 (total time)</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Range</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$80,000 - $120,000+</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>250-1500 (total time)</strong></td>
                   </tr>
                 </tbody>
               </table>
@@ -242,44 +242,44 @@ export default function UsRegionalAirlinesGuide() {
                 The traditional career progression involves spending 2-5 years as a First Officer at a regional airline, building experience and upgrading to Captain. After accumulating sufficient turbine time and meeting major airline hiring minimums (typically 2,500-5,000+ hours of total time, with significant turbine PIC time), pilots can then transition to a major airline. Many regional airlines have "flow-through" or "cadet" programs that offer a direct path to their major airline partners (e.g., American Airlines, Delta Air Lines, United Airlines) upon meeting specific criteria. These programs significantly de-risk the transition to a major carrier and are highly sought after.
               </p>
               <h4>Major Airline Flow-Through Programs (Examples)</h4>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Regional Airline</th>
-                    <th>Major Airline Partner</th>
-                    <th>Program Type</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Regional Airline</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Major Airline Partner</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Program Type</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Envoy Air</td>
-                    <td>American Airlines</td>
-                    <td>Flow-Through</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Envoy Air</td>
+                    <td className="px-4 py-3 text-white/80">American Airlines</td>
+                    <td className="px-4 py-3 text-white/80">Flow-Through</td>
                   </tr>
-                  <tr>
-                    <td>Piedmont Airlines</td>
-                    <td>American Airlines</td>
-                    <td>Flow-Through</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Piedmont Airlines</td>
+                    <td className="px-4 py-3 text-white/80">American Airlines</td>
+                    <td className="px-4 py-3 text-white/80">Flow-Through</td>
                   </tr>
-                  <tr>
-                    <td>PSA Airlines</td>
-                    <td>American Airlines</td>
-                    <td>Flow-Through</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">PSA Airlines</td>
+                    <td className="px-4 py-3 text-white/80">American Airlines</td>
+                    <td className="px-4 py-3 text-white/80">Flow-Through</td>
                   </tr>
-                  <tr>
-                    <td>Republic Airways</td>
-                    <td>American, Delta, United</td>
-                    <td>Cadet/Pathway</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Republic Airways</td>
+                    <td className="px-4 py-3 text-white/80">American, Delta, United</td>
+                    <td className="px-4 py-3 text-white/80">Cadet/Pathway</td>
                   </tr>
-                  <tr>
-                    <td>SkyWest Airlines</td>
-                    <td>Alaska, American, Delta, United</td>
-                    <td>Cadet/Pathway</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">SkyWest Airlines</td>
+                    <td className="px-4 py-3 text-white/80">Alaska, American, Delta, United</td>
+                    <td className="px-4 py-3 text-white/80">Cadet/Pathway</td>
                   </tr>
-                  <tr>
-                    <td>Mesa Airlines</td>
-                    <td>American, United</td>
-                    <td>Cadet/Pathway</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Mesa Airlines</td>
+                    <td className="px-4 py-3 text-white/80">American, United</td>
+                    <td className="px-4 py-3 text-white/80">Cadet/Pathway</td>
                   </tr>
                 </tbody>
               </table>

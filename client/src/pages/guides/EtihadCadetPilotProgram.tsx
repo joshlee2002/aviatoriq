@@ -5,7 +5,7 @@ export default function EtihadCadetPilotProgram() {
   return (
     <GuideLayout
       title="The Elite Path: Etihad Airways Cadet Pilot Program 2026"
-      subtitle="A comprehensive guide to joining Etihad's prestigious Multi-Crew Pilot License (MPL) program for aspiring Emirati aviators."
+      subtitle="Joining Etihad's prestigious Multi-Crew Pilot License (MPL) program for aspiring Emirati aviators."
       readTime="14 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -29,45 +29,45 @@ export default function EtihadCadetPilotProgram() {
           content: (
             <>
               <p>Admission to the Etihad Cadet Pilot Program is highly competitive and exclusively open to UAE nationals who meet stringent criteria. Prospective candidates must demonstrate not only academic excellence but also a strong aptitude for aviation, leadership potential, and the ability to thrive in a demanding, high-pressure environment. The program's focus on national talent means that self-funded or international applicants are generally not considered for this specific cadet scheme.</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Requirement</th>
-                    <th>Details for 2026 Intake</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Requirement</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Details for 2026 Intake</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Nationality</td>
-                    <td>UAE National (Emirati)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Nationality</td>
+                    <td className="px-4 py-3 text-white/80">UAE National (Emirati)</td>
                   </tr>
-                  <tr>
-                    <td>Age</td>
-                    <td>Between 18 and 29 years old at the time of application</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Age</td>
+                    <td className="px-4 py-3 text-white/80">Between 18 and 29 years old at the time of application</td>
                   </tr>
-                  <tr>
-                    <td>Education</td>
-                    <td>High School Diploma with a minimum overall grade of 80%, including strong passes in Mathematics, Physics, and English. Equivalency certificates may be required for international qualifications.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Education</td>
+                    <td className="px-4 py-3 text-white/80">High School Diploma with a minimum overall grade of 80%, including strong passes in Mathematics, Physics, and English. Equivalency certificates may be required for international qualifications.</td>
                   </tr>
-                  <tr>
-                    <td>Height</td>
-                    <td>Minimum 160 cm (specific ergonomic requirements for cockpit access)</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Height</td>
+                    <td className="px-4 py-3 text-white/80">Minimum 160 cm (specific ergonomic requirements for cockpit access)</td>
                   </tr>
-                  <tr>
-                    <td>Medical Fitness</td>
-                    <td>Hold a valid GCAA Class 1 Medical Certificate. This involves comprehensive medical examinations to ensure physical and mental fitness for flying duties.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Medical Fitness</td>
+                    <td className="px-4 py-3 text-white/80">Hold a valid GCAA Class 1 Medical Certificate. This involves comprehensive medical examinations to ensure physical and mental fitness for flying duties.</td>
                   </tr>
-                  <tr>
-                    <td>English Proficiency</td>
-                    <td>Demonstrated high level of English language proficiency (reading, writing, speaking, listening), as aviation is conducted predominantly in English.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">English Proficiency</td>
+                    <td className="px-4 py-3 text-white/80">Demonstrated high level of English language proficiency (reading, writing, speaking, listening), as aviation is conducted predominantly in English.</td>
                   </tr>
-                  <tr>
-                    <td>Aptitude Testing</td>
-                    <td>Successful completion of a series of psychometric, cognitive, and aviation-specific aptitude tests.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Aptitude Testing</td>
+                    <td className="px-4 py-3 text-white/80">Successful completion of a series of psychometric, cognitive, and aviation-specific aptitude tests.</td>
                   </tr>
-                  <tr>
-                    <td>Interview Process</td>
-                    <td>Pass multiple interview stages, including panel interviews and potentially psychological assessments.</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Interview Process</td>
+                    <td className="px-4 py-3 text-white/80">Pass multiple interview stages, including panel interviews and potentially psychological assessments.</td>
                   </tr>
                 </tbody>
               </table>

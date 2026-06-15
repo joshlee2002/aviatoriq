@@ -19,7 +19,7 @@ export default function AirArabiaCadetProgram() {
           heading: "Introduction to the Air Arabia Cadet Pilot Program",
           content: (
             <>
-              <p>The Air Arabia Cadet Pilot Program offers an unparalleled opportunity for aspiring aviators to launch their careers with one of the Middle East's leading low-cost carriers. Designed as a Multi-Crew Pilot Licence (MPL) program, it provides a direct pathway to the flight deck of an Airbus A320, integrating theoretical knowledge with practical, airline-specific training from the outset. This guide delves into the intricacies of the program, offering a comprehensive overview for prospective cadets considering this elite training route in 2026.</p>
+              <p>The Air Arabia Cadet Pilot Program offers an unparalleled opportunity for aspiring aviators to launch their careers with one of the Middle East's leading low-cost carriers. Designed as a Multi-Crew Pilot Licence (MPL) program, it provides a direct pathway to the flight deck of an Airbus A320, integrating theoretical knowledge with practical, airline-specific training from the outset. This guide covers the program, offering a comprehensive overview for prospective cadets considering this elite training route in 2026.</p>
               <p>Operated in conjunction with the Air Arabia Academy, the program is meticulously structured to meet the rigorous standards set by the UAE General Civil Aviation Authority (GCAA). It emphasizes a competency-based approach, ensuring graduates are not only proficient in flying but also adept at operating within a multi-crew airline environment. With a strong focus on career progression, successful completion often leads to permanent contracts and guaranteed flying hours with Air Arabia, making it a highly sought-after opportunity for both local and international candidates.</p>
             </>
           )
@@ -62,49 +62,49 @@ export default function AirArabiaCadetProgram() {
           content: (
             <>
               <p>Investing in pilot training is a significant financial commitment. The estimated costs for the Air Arabia Cadet Pilot Program in 2026 can vary based on several factors, including the specific training provider (e.g., Air Arabia Academy, T3 Aviation Academy), individual progress, and living expenses. Below is an estimated breakdown in United Arab Emirates Dirhams (AED), converted from USD estimates, for a comprehensive understanding:</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Cost Component</th>
-                    <th>Estimated Cost (USD)</th>
-                    <th>Estimated Cost (AED)</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Component</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (USD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AED)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Ground School Training</td>
-                    <td>$12,000 - $18,000</td>
-                    <td>AED 44,000 - AED 66,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Ground School Training</td>
+                    <td className="px-4 py-3 text-white/80">$12,000 - $18,000</td>
+                    <td className="px-4 py-3 text-white/80">AED 44,000 - AED 66,000</td>
                   </tr>
-                  <tr>
-                    <td>Flying Hours (Single Engine)</td>
-                    <td>$35,000 - $45,000</td>
-                    <td>AED 128,500 - AED 165,300</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Flying Hours (Single Engine)</td>
+                    <td className="px-4 py-3 text-white/80">$35,000 - $45,000</td>
+                    <td className="px-4 py-3 text-white/80">AED 128,500 - AED 165,300</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating</td>
-                    <td>$10,000 - $15,000</td>
-                    <td>AED 36,700 - AED 55,000</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating</td>
+                    <td className="px-4 py-3 text-white/80">$10,000 - $15,000</td>
+                    <td className="px-4 py-3 text-white/80">AED 36,700 - AED 55,000</td>
                   </tr>
-                  <tr>
-                    <td>Type Rating (Airbus A320)</td>
-                    <td>$25,000 - $35,000</td>
-                    <td>AED 91,800 - AED 128,500</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Type Rating (Airbus A320)</td>
+                    <td className="px-4 py-3 text-white/80">$25,000 - $35,000</td>
+                    <td className="px-4 py-3 text-white/80">AED 91,800 - AED 128,500</td>
                   </tr>
-                  <tr>
-                    <td>Accommodation & Living Expenses</td>
-                    <td>$15,000 - $25,000</td>
-                    <td>AED 55,000 - AED 91,800</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Accommodation & Living Expenses</td>
+                    <td className="px-4 py-3 text-white/80">$15,000 - $25,000</td>
+                    <td className="px-4 py-3 text-white/80">AED 55,000 - AED 91,800</td>
                   </tr>
-                  <tr>
-                    <td>GCAA Fees & Examinations</td>
-                    <td>$5,000 - $8,000</td>
-                    <td>AED 18,300 - AED 29,400</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">GCAA Fees & Examinations</td>
+                    <td className="px-4 py-3 text-white/80">$5,000 - $8,000</td>
+                    <td className="px-4 py-3 text-white/80">AED 18,300 - AED 29,400</td>
                   </tr>
-                  <tr>
-                    <td><strong>Total Estimated Program Cost</strong></td>
-                    <td><strong>$102,000 - $146,000</strong></td>
-                    <td><strong>AED 374,300 - AED 536,000</strong></td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Program Cost</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>$102,000 - $146,000</strong></td>
+                    <td className="px-4 py-3 text-white/80"><strong>AED 374,300 - AED 536,000</strong></td>
                   </tr>
                 </tbody>
               </table>

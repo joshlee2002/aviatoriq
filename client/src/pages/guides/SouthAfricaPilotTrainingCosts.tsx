@@ -53,44 +53,44 @@ export default function SouthAfricaPilotTrainingCosts() {
           content: (
             <>
               <p>The cost of pilot training in South Africa can vary significantly based on the chosen flight school, the type of aircraft used, and the individual student's pace of learning. Below is an estimated breakdown of costs for 2026, presented in South African Rand (ZAR). These figures are indicative and should be verified with individual Aviation Training Organisations (ATOs).</p>
-              <table>
+              <table className="w-full text-sm text-left border-collapse">
                 <thead>
-                  <tr>
-                    <th>Training Phase</th>
-                    <th>Estimated Cost (ZAR)</th>
-                    <th>Key Components</th>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Phase</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (ZAR)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Components</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Private Pilot License (PPL)</td>
-                    <td>R 100,000 - R 150,000</td>
-                    <td>45-50 flight hours, ground school, exams, SACAA fees, study materials</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td>
+                    <td className="px-4 py-3 text-white/80">R 100,000 - R 150,000</td>
+                    <td className="px-4 py-3 text-white/80">45-50 flight hours, ground school, exams, SACAA fees, study materials</td>
                   </tr>
-                  <tr>
-                    <td>Commercial Pilot License (CPL)</td>
-                    <td>R 250,000 - R 400,000</td>
-                    <td>150-200 flight hours (incl. PPL hours), advanced ground school, exams, SACAA fees, skill tests</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td>
+                    <td className="px-4 py-3 text-white/80">R 250,000 - R 400,000</td>
+                    <td className="px-4 py-3 text-white/80">150-200 flight hours (incl. PPL hours), advanced ground school, exams, SACAA fees, skill tests</td>
                   </tr>
-                  <tr>
-                    <td>Instrument Rating (IR)</td>
-                    <td>R 80,000 - R 120,000</td>
-                    <td>40-50 instrument flight hours, theoretical knowledge, skill test</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Instrument Rating (IR)</td>
+                    <td className="px-4 py-3 text-white/80">R 80,000 - R 120,000</td>
+                    <td className="px-4 py-3 text-white/80">40-50 instrument flight hours, theoretical knowledge, skill test</td>
                   </tr>
-                  <tr>
-                    <td>Multi-Engine Rating (ME)</td>
-                    <td>R 50,000 - R 80,000</td>
-                    <td>10-15 multi-engine flight hours, theoretical knowledge, skill test</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Multi-Engine Rating (ME)</td>
+                    <td className="px-4 py-3 text-white/80">R 50,000 - R 80,000</td>
+                    <td className="px-4 py-3 text-white/80">10-15 multi-engine flight hours, theoretical knowledge, skill test</td>
                   </tr>
-                  <tr>
-                    <td>Airline Transport Pilot License (ATPL - Frozen) Theory</td>
-                    <td>R 40,000 - R 70,000</td>
-                    <td>Extensive theoretical modules, examinations</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Airline Transport Pilot License (ATPL - Frozen) Theory</td>
+                    <td className="px-4 py-3 text-white/80">R 40,000 - R 70,000</td>
+                    <td className="px-4 py-3 text-white/80">Extensive theoretical modules, examinations</td>
                   </tr>
-                  <tr>
-                    <td>Total (PPL to Frozen ATPL)</td>
-                    <td>R 520,000 - R 820,000</td>
-                    <td>Excludes accommodation, living expenses, re-tests, and unforeseen costs</td>
+                  <tr className="border-b border-white/10">
+                    <td className="px-4 py-3 text-white/80">Total (PPL to Frozen ATPL)</td>
+                    <td className="px-4 py-3 text-white/80">R 520,000 - R 820,000</td>
+                    <td className="px-4 py-3 text-white/80">Excludes accommodation, living expenses, re-tests, and unforeseen costs</td>
                   </tr>
                 </tbody>
               </table>
