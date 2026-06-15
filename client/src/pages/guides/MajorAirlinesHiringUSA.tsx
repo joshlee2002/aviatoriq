@@ -19,7 +19,7 @@ export default function MajorAirlinesHiringUSA() {
           heading: "Introduction",
           content: (
             <>
-              <p>Becoming an airline pilot in the United States is a demanding yet highly rewarding career path. With a projected pilot shortage and major airlines actively recruiting, 2026 presents a unique opportunity for dedicated individuals. This guide provides an in-depth look into the requirements, training pathways, costs, and hiring landscape for major US airlines, ensuring aspiring aviators are well-equipped for success.</p>
+              <p>Major US airlines are actively hiring in 2026. Delta, United, American, and Southwest are all running structured cadet and direct-hire programmes. This guide covers the minimum requirements, the current hiring landscape, and what each major airline is actually looking for in 2026.</p>
             </>
           )
         },

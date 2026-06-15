@@ -4,7 +4,7 @@ import GuideLayout from '@/components/GuideLayout';
 export default function UsPilotBenefits() {
   return (
     <GuideLayout
-      title="The Elite Path: Unlocking the Benefits of a US Pilot Career in 2026"
+      title="US Pilot Career Benefits 2026: Salary, Lifestyle, and Career Outlook"
       subtitle="FAA regulations, training pathways, costs, and career opportunities for aspiring aviators in the United States."
       readTime="15 min"
       author="AviatorIQ Research"
@@ -20,7 +20,7 @@ export default function UsPilotBenefits() {
           content: (
             <>
               <p>
-                The professional pilot career in the United States continues to stand as a beacon of prestige, challenge, and substantial reward in 2026. Far from being a mere occupation, it represents a commitment to a lifestyle characterized by continuous learning, significant responsibility, and the profound satisfaction of mastering one of humanity's most complex endeavors. The aviation industry, particularly in the US, is experiencing a robust demand for highly skilled aviators, driven by a combination of anticipated retirements, sustained growth in air travel, and the expansion of cargo and corporate aviation sectors. This creates a strong hiring environment for aspiring pilots, offering not just job security but also significant opportunities for career advancement and financial prosperity. Navigating this demanding yet fulfilling path requires a clear understanding of the regulatory landscape, the rigorous training protocols, and the strategic financial planning necessary to achieve your goal.
+                The US airline pilot career in 2026 offers some of the highest total compensation packages in the profession's history. A combination of mandatory retirement at 65, post-pandemic travel demand, and the 2013 first officer experience rule change has produced a sustained structural shortage that major airlines are actively working to address. This guide covers what the career actually looks like in 2026 — the training pathway, real costs, salary at each stage, and the benefits and trade-offs of the lifestyle.
               </p>
             </>
           )
@@ -267,7 +267,7 @@ export default function UsPilotBenefits() {
           content: (
             <>
               <p>
-                The journey to becoming a professional pilot in the United States in 2026 is an arduous yet rewarding endeavor. It demands unwavering dedication, significant financial investment, and a commitment to continuous learning. However, the current landscape of robust pilot demand, competitive compensation, and diverse career opportunities makes it an exceptionally opportune time to embark on this path. By understanding the nuances of FAA regulations (Part 61 vs. Part 141), meticulously planning the training phases, and strategically managing the financial aspects, aspiring aviators can confidently navigate their way to a fulfilling and prestigious career in the skies. The benefits extend far beyond the cockpit, offering a lifestyle of adventure, intellectual challenge, and substantial personal and professional growth. Investing in pilot training today is an investment in a future defined by excellence and unparalleled horizons.
+                Becoming a professional pilot in the United States requires a significant financial investment and several years of training. The pilot shortage is real, demand at the major airlines is sustained, and total compensation packages have reached levels that make the career financially viable for those who plan carefully. The key decisions — Part 61 vs Part 141, regional vs direct-entry, cadet programme vs self-funded — are covered in detail throughout this site. Use the assessment tool above to model your specific situation before committing.
               </p>
             </>
           )
@@ -312,7 +312,7 @@ export default function UsPilotBenefits() {
         { question: "What are the age requirements?", answer: "To obtain a Private Pilot Certificate, you must be at least 17 years old (16 to solo). For a Commercial Pilot Certificate, the minimum age is 18, and for an Airline Transport Pilot (ATP) certificate, it is 23. There is no maximum age to become a pilot, provided you can meet the medical requirements." },
         { question: "What are the medical requirements?", answer: "All pilots must hold an FAA medical certificate. The class of medical certificate required depends on the type of flying. Airline pilots require a First-Class Medical Certificate, which involves stringent health standards, including vision, hearing, and cardiovascular health. These certificates must be renewed periodically." },
         { question: "Is the pilot shortage real in 2026?", answer: "Yes, the pilot shortage is a well-documented and ongoing issue in 2026, driven by retirements and increased demand. This creates a favorable hiring environment for new, qualified pilots." },
-        { question: "How much do pilots earn?", answer: "Entry-level first officers at regional airlines can expect to earn $60,000 - $80,000 annually. Experienced captains at major airlines can earn well over $300,000 per year, with some reaching $500,000+ with seniority and bonuses." }
+        { question: "How much do pilots earn?", answer: "Entry-level first officers at regional airlines now typically earn $80,000–$110,000 in year one (2026 figures). Captains at the Big 3 majors (Delta, United, American) earn $300,000–$465,000+ at the top of the pay scale. Delta's widebody captain top rate reached $465/hour in 2026 under their current contract." }
       ]}
       relatedGuides={[
         { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },

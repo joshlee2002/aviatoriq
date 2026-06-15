@@ -19,7 +19,7 @@ export default function UsPilotHousing() {
           heading: "Introduction: The Crucial Role of Housing in Pilot Training",
           content: (
             <>
-              <p>Embarking on a career as a professional pilot in the United States is an ambitious and rewarding endeavor. While the primary focus often gravitates towards flight hours, FAA regulations, and aircraft types, the often-overlooked aspect of housing plays a profoundly critical role in an aspiring aviator's success. Your living situation during flight training is not merely a place to sleep; it is an integral component of your study environment, mental well-being, and ultimately, your ability to absorb complex aeronautical knowledge and master intricate flying skills.</p>
+              <p>Where you live during flight training has a direct impact on your training costs and your ability to progress quickly. This guide covers the realistic housing options for student pilots in the US — from school-arranged accommodation to crash pads and local rentals — with real cost figures for 2026.</p>
               <p>Accelerated pilot training programs, whether under FAA Part 61 or Part 141 regulations, demand an high level of dedication and focus. These programs are intensive, requiring long hours of ground school, simulator sessions, and actual flight time. A stable, conducive living environment minimizes distractions, reduces commute times, and provides the necessary tranquility for rigorous study and adequate rest. This guide covers housing options available to pilot trainees in the US for 2026, offering a strategic perspective on making informed decisions that align with your career aspirations and financial planning.</p>
             </>
           )

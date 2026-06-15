@@ -5,7 +5,7 @@ export default function UsMilitaryPilotToAirlines() {
   return (
     <GuideLayout
       title="From Cockpit to Commercial: The Elite Military Pilot's Guide to US Airlines in 2026"
-      subtitle="A comprehensive and honest roadmap for US military aviators transitioning to a lucrative and rewarding career with major US airlines, detailing FAA regulations, market opportunities, and strategic pathways."
+      subtitle="A practical guide for US military aviators transitioning to major US airlines: FAA regulations, R-ATP pathways, MilComp credits, and the current hiring landscape."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -20,7 +20,7 @@ export default function UsMilitaryPilotToAirlines() {
           content: (
             <>
               <p>The transition from military to commercial aviation represents a significant and highly sought-after career path for elite aviators. US military pilots bring an invaluable skillset to the airline industry: exceptional discipline, extensive experience in complex aircraft, and a profound understanding of demanding operational environments. As the US airline industry continues its sustained growth into 2026, the demand for qualified pilots remains exceptionally strong, with military-trained individuals often fast-tracked due to their proven capabilities and leadership.</p>
-              <p>This guide provides a detailed, honest, and professional roadmap for military pilots considering this pivotal career shift. We will delve into the specific FAA regulations, the current market landscape, financial considerations, and the strategic steps required to successfully navigate this transition, ensuring you are optimally positioned for a rewarding career with a major US airline.</p>
+              <p>This guide covers the specific FAA regulations, the current hiring landscape at the major airlines, how to convert military flight time to civilian credentials, and the strategic steps required to complete the transition successfully.</p>
             </>
           )
         },
@@ -123,7 +123,7 @@ export default function UsMilitaryPilotToAirlines() {
           content: (
             <>
               <p>The journey from a military cockpit to a commercial flight deck is a challenging yet rewarding endeavor. The US airline industry in 2026 is actively seeking the caliber of pilot forged in military service. By understanding the FAA regulations, strategically approaching the ATP/R-ATP certification, leveraging military benefits, and engaging with airline transition programs, you can successfully navigate this path.</p>
-              <p>Your discipline, leadership, and extensive flight experience are not just assets; they are the foundation of a distinguished career in commercial aviation. The opportunities are abundant, and with meticulous planning and execution, your transition will be a testament to your unwavering commitment to excellence in the skies.</p>
+              <p>Military pilots transitioning to the airlines in 2026 are entering one of the strongest hiring markets in the industry's history. The R-ATP pathway, MilComp credits, and direct-to-major hiring at Delta, United, and American make this a realistic 12–24 month process for most applicants with the right total time and ratings.</p>
             </>
           )
         }

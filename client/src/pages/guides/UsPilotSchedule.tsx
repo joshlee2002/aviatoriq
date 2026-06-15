@@ -18,7 +18,7 @@ export default function UsPilotSchedule() {
           heading: "Introduction: The Sky's the Limit for Aspiring US Pilots in 2026",
           content: (
             <>
-              <p>The year 2026 presents a dynamic and promising landscape for individuals aspiring to become pilots in the United States. With a robust demand for aviators across major airlines, regional carriers, and cargo operations, the aviation industry continues to offer rewarding career paths. This comprehensive guide covers pilot training, FAA regulations, associated costs, and the career progression within the US aviation sector, providing an honest and elite perspective for future aviators.</p>
+              <p>Understanding how pilot schedules actually work is one of the most important things an aspiring pilot can research before committing to the career. This guide covers the FAA duty time and rest rules under Part 117, what a typical regional and major airline schedule looks like in 2026, and how seniority determines your quality of life.</p>
             </>
           )
         },

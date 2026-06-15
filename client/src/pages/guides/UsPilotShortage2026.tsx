@@ -104,7 +104,7 @@ export default function UsPilotShortage2026() {
           heading: "Conclusion",
           content: (
             <>
-              <p>The US pilot training market in 2026 presents both challenges and significant opportunities. While the financial and time commitments are substantial, the persistent demand for qualified aviators, particularly at the airline level, ensures a robust career outlook. Aspiring pilots who meticulously plan their training, understand the regulatory framework, and strategically navigate financing options are well-positioned to embark on a rewarding career in aviation. The demand for qualified pilots in 2026 is real and sustained — careful planning and commitment to training quality will determine outcomes.</p>
+              <p>The US pilot training market in 2026 presents both challenges and significant opportunities. While the financial and time commitments are substantial, the persistent demand for qualified aviators, particularly at the airline level, ensures a robust career outlook. Aspiring pilots who plan their training carefully, understand the regulatory framework, and manage their finances strategically are well-positioned to enter the profession at a time of genuine demand. The demand for qualified pilots in 2026 is real and sustained — careful planning and commitment to training quality will determine outcomes.</p>
             </>
           )
         }
