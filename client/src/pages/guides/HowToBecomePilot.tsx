@@ -1,5 +1,6 @@
 import GuideLayout from "@/components/GuideLayout";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
+import { Link } from "wouter";
 
 const HowToBecomePilot = () => {
   return (
@@ -19,6 +20,8 @@ const HowToBecomePilot = () => {
         { question: "What is the minimum age to become a commercial pilot?", answer: "You must be at least 18 to obtain a CPL or ATPL. You can start PPL training at 14 and fly solo at 16. There is no upper age limit for private flying, but airline careers are affected by the mandatory retirement age of 65." },
         { question: "Can I become a pilot with glasses?", answer: "Yes. Corrected vision is acceptable for a Class 1 Medical provided your uncorrected vision meets minimum standards and your corrected vision reaches the required level. Laser eye surgery is also accepted by the CAA after a suitable recovery period." },
         { question: "Is there a pilot shortage in the UK?", answer: "Yes. The UK and global aviation industry faces a significant pilot shortage. Boeing forecasts a need for 649,000 new pilots globally by 2042. This creates genuine opportunities for newly qualified pilots, though airlines remain highly selective on quality." },
+        { question: "What are the 14 ATPL theory exam subjects?", answer: "The 14 CAA ATPL theory exams are: Air Law, Aircraft General Knowledge (Airframes & Systems), Aircraft General Knowledge (Powerplant), Aircraft General Knowledge (Electrics), Aircraft General Knowledge (Instrumentation), Flight Performance & Planning (Aeroplane), Flight Performance & Planning (Mass & Balance), Human Performance & Limitations, Meteorology, General Navigation, Radio Navigation, Operational Procedures, Principles of Flight, and Communications (VFR/IFR)." },
+        { question: "How many hours do I need to unfreeze my ATPL?", answer: "To unfreeze a UK ATPL you need 1,500 total flight hours, including 500 hours in multi-pilot operations, 200 hours cross-country, 100 hours night flying, and 75 hours instrument time (of which 30 can be in a simulator)." },
       ]}
       relatedGuides={[
         { title: "Integrated vs Modular ATPL Training: Which Is Right for You?", href: "/guides/integrated-vs-modular", time: "9 min" },
@@ -73,17 +76,44 @@ const HowToBecomePilot = () => {
           content: (
             <>
               <p>
-                Once you have confirmed your medical fitness, the most important decision you will make is which training route to pursue. In the UK, there are three primary routes to a commercial pilot licence:
+                Once you have confirmed your medical fitness, the most important decision you will make is which training route to pursue. In the UK, there are three primary routes to a commercial pilot licence. The table below summarises the key differences:
               </p>
-              <p>
-                <strong>Integrated ATPL:</strong> A single, continuous full-time programme taking you from zero experience to a frozen ATPL in 18–24 months. Typically conducted at one flight school. Costs £90,000–£130,000. The fastest route to an airline job, and the route preferred by most major airline cadet programmes.
-              </p>
-              <p>
-                <strong>Modular ATPL:</strong> A flexible route where you complete each licence stage separately — PPL, ATPL theory, hour building, CPL, Instrument Rating, Multi-Engine Rating, MCC/JOC — at your own pace and at different schools if you choose. Typically takes 3–5 years. Costs £40,000–£80,000. Allows you to keep working and spread costs over time.
-              </p>
-              <p>
-                <strong>MPL (Multi-Crew Pilot Licence):</strong> An airline-specific licence available only through airline cadet programmes (easyJet Generation, TUI MPL). Trains you specifically for multi-crew jet operations from the start. Tied to the specific airline and aircraft type initially, but convertible to a full ATPL after sufficient hours. Only available if you are accepted onto a specific airline programme.
-              </p>
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-slate-100 dark:bg-slate-800">
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Route</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Duration</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Cost (fees only)</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Flexibility</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Best for</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Integrated ATPL</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">18–24 months</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£99,900–£119,500</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Low — full-time, one school</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Those who can commit fully and want the fastest route</td>
+                    </tr>
+                    <tr className="bg-slate-50 dark:bg-slate-900">
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Modular ATPL</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">3–5 years</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£40,000–£75,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">High — self-paced, multiple schools</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Those who need to keep working and spread costs</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">MPL</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">18–24 months</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Funded by airline</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Very low — tied to one airline</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Those accepted onto a specific airline cadet programme</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <p>
                 The right choice depends on your personal circumstances. If you have the funds (or access to finance) and want the fastest route to an airline job, integrated is the better choice. If you need to keep working and spread costs, modular is the more practical option. If you can secure a place on an airline cadet programme with an MPL pathway, that is the lowest-risk option of all — you have a guaranteed job before you start.
               </p>
@@ -106,12 +136,69 @@ const HowToBecomePilot = () => {
               <ul>
                 <li><strong>British Airways Speedbird Academy</strong> — integrated ATPL at CAE Oxford, guaranteed BA First Officer position. Approximately 20–30 places per intake. Extremely competitive (1–2% acceptance rate).</li>
                 <li><strong>easyJet Generation Pilot</strong> — MPL at CAE Oxford, guaranteed easyJet First Officer position. Approximately 30–50 places per year. Highly competitive.</li>
-                <li><strong>TUI Airways MPL</strong> — MPL programme, guaranteed TUI First Officer position. Competitive but slightly more accessible than BA or easyJet.</li>
+                <li><strong>TUI Airways MPL</strong> — MPL programme paused for 2026 intake. TUI confirmed in early 2026 that the scheme will not run for this cycle due to reduced pilot demand projections for Summer 2028. Expected to reopen for future intakes. <Link href="/guides/tui-mpl-programme" className="text-blue-600 underline">Full TUI MPL update →</Link></li>
                 <li><strong>Ryanair partner schools</strong> — integrated ATPL at FTEJerez, Bartolini Air, or MATS, with Ryanair First Officer pathway. More accessible than BA/easyJet programmes.</li>
                 <li><strong>Wizz Air Pilot Academy</strong> — integrated ATPL, Wizz Air First Officer pathway. Growing programme with multiple intakes per year.</li>
               </ul>
               <p>
                 The selection processes for these programmes are rigorous — aptitude tests, assessment centres, simulator assessments, and panel interviews. Preparation makes a significant difference. If you are rejected from a cadet programme, that is not the end of the road — many successful airline pilots trained self-funded and applied to airlines directly after qualifying. But if you can secure a cadet place, the financial security it provides is invaluable.
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "Step 3b: UK Integrated Flight Schools — 2026 Prices",
+          content: (
+            <>
+              <p>
+                If you are pursuing an integrated ATPL, the following table shows the confirmed 2026 tuition fees for the leading UK-approved schools. All are approved by the UK Civil Aviation Authority as Approved Training Organisations (ATOs).
+              </p>
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-slate-100 dark:bg-slate-800">
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">School</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Location</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">2026 Integrated ATPL Fee</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Notable</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">CAE Oxford Aviation Academy</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Oxford / Bournemouth</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-semibold">£99,900</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">BA Speedbird & easyJet Generation partner</td>
+                    </tr>
+                    <tr className="bg-slate-50 dark:bg-slate-900">
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Acron Aviation (formerly L3Harris)</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Bournemouth</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-semibold">£102,500</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Rebranded from L3Harris in 2025/2026</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Leading Edge Aviation</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Perth, Scotland</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-semibold">£114,950</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Includes BSc degree in Air Transport Management</td>
+                    </tr>
+                    <tr className="bg-slate-50 dark:bg-slate-900">
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">FTEJerez (UK CAA)</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Jerez, Spain</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-semibold">£119,500</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">UK CAA-approved; excellent flying weather</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Bartolini Air (EASA)</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Kraków, Poland</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-semibold">~£55,000–£65,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">EASA licence; Ryanair partner school</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                Note: Bartolini Air issues an EASA licence rather than a UK CAA licence. Both are accepted by most UK airlines, but verify with your target airline before committing.
               </p>
             </>
           ),
@@ -154,6 +241,62 @@ const HowToBecomePilot = () => {
               <p>
                 Whether you choose integrated or modular training, the qualification stages are broadly the same. Understanding what each phase involves helps you plan your time, budget, and expectations.
               </p>
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-slate-100 dark:bg-slate-800">
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Stage</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Min. Hours</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Typical Cost</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Duration</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">PPL</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">45 hrs (typically 60–70)</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£8,000–£15,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">3–12 months</td>
+                    </tr>
+                    <tr className="bg-slate-50 dark:bg-slate-900">
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">ATPL Theory (14 exams)</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">—</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£3,000–£5,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">12–18 months (part-time)</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Hour Building</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">~100–150 hrs</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£15,000–£25,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">2–6 months</td>
+                    </tr>
+                    <tr className="bg-slate-50 dark:bg-slate-900">
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">CPL</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">200 hrs total</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£10,000–£15,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">4–8 weeks</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Multi-Engine IR (MEIR)</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">50 hrs instrument</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£20,000–£30,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">2–4 months</td>
+                    </tr>
+                    <tr className="bg-slate-50 dark:bg-slate-900">
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">MCC / JOC</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">—</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£5,000–£8,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">2–4 weeks</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Type Rating</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">—</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£20,000–£30,000 (if self-funded)</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">6–8 weeks</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <p>
                 <strong>Private Pilot Licence (PPL):</strong> The foundation of all pilot training. A minimum of 45 hours of flight time (typically 60–70 in practice) covering basic flying skills, navigation, and emergency procedures. Culminates in a skills test with a CAA examiner. Cost: £8,000–£15,000. Duration: 3–12 months depending on frequency of flying.
               </p>
@@ -232,12 +375,54 @@ const HowToBecomePilot = () => {
               <p>
                 A career as a commercial pilot in the UK is one of the most financially rewarding and personally fulfilling careers available. Understanding the career trajectory helps you make informed decisions about training investment.
               </p>
-              <p>
-                <strong>First Officer salaries (2026):</strong> Starting salaries for First Officers at UK airlines range from approximately £40,000–£65,000 depending on the airline. Ryanair FOs start at approximately €45,000–€55,000 (base) with productivity pay. easyJet FOs start at approximately £50,000–£65,000 including allowances. British Airways FOs start at approximately £40,000–£55,000, rising quickly with seniority. Regional carriers (Loganair, Eastern) typically start lower — £35,000–£45,000 — but offer excellent experience.
-              </p>
-              <p>
-                <strong>Captain salaries (2026):</strong> Captain salaries at UK airlines range from approximately £80,000 to £150,000+ depending on the airline, fleet, and seniority. Long-haul Captains at British Airways on the 777 or 787 are among the highest-paid pilots in UK aviation, earning £120,000–£160,000+. easyJet and Ryanair Captains earn approximately £90,000–£130,000.
-              </p>
+              <div className="overflow-x-auto my-6">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-slate-100 dark:bg-slate-800">
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Role / Airline</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Typical Base Salary (2026)</th>
+                      <th className="text-left p-3 border border-slate-200 dark:border-slate-700 font-semibold">Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">New FO — Regional (Loganair, Eastern)</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£35,000–£45,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Excellent experience; stepping stone to majors</td>
+                    </tr>
+                    <tr className="bg-slate-50 dark:bg-slate-900">
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">New FO — Ryanair</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">€45,000–€55,000 base</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Plus productivity pay; self-employed contract</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">New FO — easyJet</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£50,000–£65,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Including allowances; BALPA agreement</td>
+                    </tr>
+                    <tr className="bg-slate-50 dark:bg-slate-900">
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">New FO — British Airways</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£40,000–£55,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Rises quickly with seniority; sector pay on top</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Senior FO (5–10 yrs)</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£65,000–£85,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Varies by airline and aircraft type</td>
+                    </tr>
+                    <tr className="bg-slate-50 dark:bg-slate-900">
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Captain — easyJet / Ryanair</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£90,000–£130,000</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Upgrade typically 8–12 years in current market</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700 font-medium">Captain — BA long-haul (777/787)</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">£120,000–£160,000+</td>
+                      <td className="p-3 border border-slate-200 dark:border-slate-700">Among highest-paid in UK aviation</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <p>
                 <strong>Career progression:</strong> The pilot shortage is shortening upgrade timelines across the industry. Many UK airline pilots are now upgrading from First Officer to Captain within 8–12 years — compared to 15–20 years in previous generations. At some carriers, the timeline is even shorter. This accelerated progression means the return on training investment is improving.
               </p>
