@@ -7,7 +7,7 @@ export default function EmbryRiddleGuide() {
     <GuideLayout
       title="Embry-Riddle Aeronautical University: 2026 Cost & Review"
       subtitle="The honest breakdown of what a 4-year degree at the 'Harvard of the Sky' actually costs in 2026, and whether the $200k+ investment is worth it."
-      canonical="/us/guides/embry-riddle-guide"
+      canonical="/us/guides/embry-riddle-aeronautical-university"
       metaDescription="Embry-Riddle Aeronautical University 2026 guide. Tuition costs ($36k/yr), flight fees ($20k-$30k/yr), R-ATP advantages, and whether the $222k total cost is worth it."
       readTime="11 min read"
       heroImage="/manus-storage/embry-riddle_9d4c2b8e.jpg"

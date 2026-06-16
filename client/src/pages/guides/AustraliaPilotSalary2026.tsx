@@ -109,9 +109,9 @@ export default function AustraliaPilotSalary2026() {
         { question: "What is the long-term earning potential for an Australian pilot?", answer: "With 15+ years of experience, particularly as a Captain on wide-body aircraft at major airlines, pilots can expect to earn over AUD 450,000 annually, in addition to comprehensive benefits." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/pilot-training-costs-australia-2026", time: "12 min" },
-        { title: "CASA Regulations for Commercial Pilots 2026", href: "/australia/guides/casa-regulations-commercial-pilots-2026", time: "10 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
+        { title: "CASA Regulations for Commercial Pilots 2026", href: "/australia/guides/casa-cpl-requirements", time: "10 min" }
       ]}
     />
   );

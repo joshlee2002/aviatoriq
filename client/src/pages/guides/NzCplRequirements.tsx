@@ -234,9 +234,9 @@ export default function NzCplRequirements() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in New Zealand", href: "/new-zealand/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "New Zealand Pilot Training Costs 2026", href: "/new-zealand/guides/pilot-training-costs", time: "12 min" },
-        { title: "Understanding CAA NZ Medical Requirements", href: "/new-zealand/guides/caa-nz-medical-requirements", time: "8 min" }
+        { title: "How to Become a Pilot in New Zealand", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "15 min" },
+        { title: "New Zealand Pilot Training Costs 2026", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "12 min" },
+        { title: "Understanding CAA NZ Medical Requirements", href: "/new-zealand/guides/nz-medical-class-1", time: "8 min" }
       ]}
     />
   );

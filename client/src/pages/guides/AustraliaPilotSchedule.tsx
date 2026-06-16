@@ -173,8 +173,8 @@ export default function AustraliaPilotSchedule() {
         { question: "Which airlines offer cadet programs in Australia?", answer: "The Qantas Group Pilot Academy offers a well-regarded program. Other major airlines like Virgin Australia and Rex also recruit pilots, and Australian training is recognized by international carriers such as Cathay Pacific and Air India." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

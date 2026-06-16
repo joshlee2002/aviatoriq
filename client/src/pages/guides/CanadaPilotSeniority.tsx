@@ -165,8 +165,8 @@ export default function CanadaPilotSeniority() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Canadian Pilot Training Costs 2026", href: "/canada/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Canadian Pilot Training Costs 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

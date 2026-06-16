@@ -202,10 +202,10 @@ const PplGuideUK = () => {
         { title: "Commercial Pilot Licence (CPL) UK Guide", href: "/guides/cpl-uk" ,
           time: "8 min read",
         },
-        { title: "Airline Transport Pilot Licence (ATPL) UK Guide", href: "/guides/atpl-uk" ,
+        { title: "Airline Transport Pilot Licence (ATPL) UK Guide", href: "/guides/atpl-theory-exams-uk" ,
           time: "8 min read",
         },
-        { title: "UK Class 1 Medical Certificate Guide", href: "/guides/class-1-medical-uk" ,
+        { title: "UK Class 1 Medical Certificate Guide", href: "/guides/class-1-medical" ,
           time: "8 min read",
         },
       ]}

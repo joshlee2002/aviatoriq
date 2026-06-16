@@ -143,12 +143,12 @@ export default function AustraliaPilotSeniority() {
       relatedGuides={[
         {
           title: "How to Become a Pilot in Australia",
-          href: "/australia/guides/how-to-become-a-pilot",
+          href: "/australia/guides/australia-pilot-training-costs",
           time: "15 min"
         },
         {
           title: "Pilot Training Costs in Australia 2026",
-          href: "/australia/guides/pilot-training-costs",
+          href: "/australia/guides/australia-pilot-training-costs",
           time: "12 min"
         }
       ]}

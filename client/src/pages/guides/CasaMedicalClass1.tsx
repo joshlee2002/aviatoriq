@@ -228,9 +228,9 @@ export default function CasaMedicalClass1() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/pilot-training-costs", time: "12 min" },
-        { title: "Understanding the CASA Class 2 Medical Certificate", href: "/australia/guides/casa-medical-class-2", time: "10 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
+        { title: "Understanding the CASA Class 2 Medical Certificate", href: "/australia/guides/casa-medical-class-1", time: "10 min" }
       ]}
     />
   );

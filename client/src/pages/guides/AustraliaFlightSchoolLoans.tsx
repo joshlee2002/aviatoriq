@@ -242,8 +242,8 @@ export default function AustraliaFlightSchoolLoans() {
         { question: "What are the eligibility requirements for VET Student Loans?", answer: "Eligibility for VET Student Loans typically requires Australian citizenship or eligible residency, being 18 or older (or having parental consent), demonstrating academic suitability, possessing a Tax File Number (TFN) and Unique Student Identifier (USI), and enrolling in an approved course with an approved provider." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

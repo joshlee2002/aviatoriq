@@ -203,8 +203,8 @@ export default function CanadaPilotBenefits() {
         { question: "Are there scholarships available for pilot training in Canada?", answer: "Yes, various scholarships and bursaries are offered by aviation organizations, flight schools, and private foundations. It's recommended to research and apply for these opportunities to help offset training costs." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

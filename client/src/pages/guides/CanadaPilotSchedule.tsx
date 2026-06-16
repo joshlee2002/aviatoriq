@@ -149,9 +149,9 @@ export default function CanadaPilotSchedule() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot-canada", time: "15 min" },
-        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/pilot-training-costs-canada", time: "12 min" },
-        { title: "Choosing a Flight School in Canada", href: "/canada/guides/choosing-flight-school-canada", time: "10 min" }
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
+        { title: "Choosing a Flight School in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "10 min" }
       ]}
     />
   );

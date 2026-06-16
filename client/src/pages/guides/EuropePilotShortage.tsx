@@ -115,9 +115,9 @@ export default function EuropePilotShortage() {
         { question: "What are EASA regulations regarding pilot retirement age?", answer: "Under current EASA regulations, commercial airline pilots must retire from flying by age 65. EASA has maintained this rule and shows no signs of raising it." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Europe: Your EASA Guide", href: "/europe/guides/how-to-become-a-pilot-europe", time: "18 min" },
-        { title: "Pilot Training Costs 2026: A Global Breakdown", href: "/guides/pilot-training-costs-2026", time: "12 min" },
-        { title: "EASA vs. FAA: Choosing Your Pilot License Path", href: "/guides/easa-vs-faa-pilot-license", time: "10 min" }
+        { title: "How to Become a Pilot in Europe: Your EASA Guide", href: "/europe/guides/pilot-training-costs", time: "18 min" },
+        { title: "Pilot Training Costs 2026: A Global Breakdown", href: "/guides/pilot-training-costs", time: "12 min" },
+        { title: "EASA vs. FAA: Choosing Your Pilot License Path", href: "/europe/guides/easa-atpl-requirements", time: "10 min" }
       ]}
     />
   );

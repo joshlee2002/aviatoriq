@@ -162,9 +162,9 @@ export default function SaAtplRequirements() {
         { question: "Can foreign CPL holders convert their licenses to SACAA ATPL?", answer: "Yes, foreign CPL holders can convert their licenses, but it requires regulatory validation and may involve additional examinations or flight checks as determined by the SACAA." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in South Africa", href: "/south-africa/guides/how-to-become-a-pilot-sa", time: "15 min" },
-        { title: "Pilot Training Costs in South Africa 2026", href: "/south-africa/guides/pilot-training-costs-sa", time: "12 min" },
-        { title: "Understanding SACAA Regulations for Pilots", href: "/south-africa/guides/sacaa-regulations", time: "10 min" }
+        { title: "How to Become a Pilot in South Africa", href: "/south-africa/guides/pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in South Africa 2026", href: "/south-africa/guides/pilot-training-costs", time: "12 min" },
+        { title: "Understanding SACAA Regulations for Pilots", href: "/south-africa/guides/sacpl-requirements", time: "10 min" }
       ]}
     />
   );

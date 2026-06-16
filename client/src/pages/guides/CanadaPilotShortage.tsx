@@ -149,17 +149,17 @@ export default function CanadaPilotShortage() {
       relatedGuides={[
         {
           title: "How to Become a Pilot in Canada",
-          href: "/canada/guides/how-to-become-a-pilot",
+          href: "/canada/guides/canada-pilot-training-costs",
           time: "15 min"
         },
         {
           title: "Pilot Training Costs in Canada 2026",
-          href: "/canada/guides/pilot-training-costs",
+          href: "/canada/guides/canada-pilot-training-costs",
           time: "10 min"
         },
         {
           title: "Choosing the Right Flight School in Canada",
-          href: "/canada/guides/choosing-flight-school",
+          href: "/canada/guides/canada-pilot-training-costs",
           time: "8 min"
         }
       ]}

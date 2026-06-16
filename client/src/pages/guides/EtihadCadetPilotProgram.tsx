@@ -174,8 +174,8 @@ export default function EtihadCadetPilotProgram() {
         }
       ]}
       relatedGuides={[
-        { title: "GCAA Pilot License Requirements 2026", href: "/uae/guides/gcaa-pilot-license-requirements", time: "10 min" },
-        { title: "Pilot Training Costs in the UAE 2026", href: "/uae/guides/pilot-training-costs-uae", time: "12 min" }
+        { title: "GCAA Pilot License Requirements 2026", href: "/uae/guides/uae-pilot-training-costs", time: "10 min" },
+        { title: "Pilot Training Costs in the UAE 2026", href: "/uae/guides/uae-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

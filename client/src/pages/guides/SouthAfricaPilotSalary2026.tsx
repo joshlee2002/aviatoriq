@@ -183,8 +183,8 @@ export default function SouthAfricaPilotSalary2026() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in South Africa", href: "/south-africa/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs in South Africa 2026", href: "/south-africa/guides/pilot-training-costs-2026", time: "12 min" }
+        { title: "How to Become a Pilot in South Africa", href: "/south-africa/guides/pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in South Africa 2026", href: "/south-africa/guides/pilot-training-costs", time: "12 min" }
       ]}
     />
   );

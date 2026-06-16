@@ -224,9 +224,9 @@ export default function SouthAfricaCadetPrograms() {
         { question: "What are the key factors to consider when choosing a flight school in South Africa?", answer: "When selecting a flight school, prioritize SACAA accreditation, the modernity and maintenance of their aircraft fleet, the experience of instructors, student-to-instructor ratios, first-time pass rates for examinations, the school's location and weather conditions, and the availability of student support services, especially for international students." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in South Africa", href: "/south-africa/guides/how-to-become-a-pilot-south-africa", time: "15 min" },
-        { title: "Pilot Training Costs South Africa 2026", href: "/south-africa/guides/pilot-training-costs-south-africa", time: "12 min" },
-        { title: "SACAA Pilot Licence Requirements Explained", href: "/south-africa/guides/sacaa-pilot-licence-requirements", time: "10 min" }
+        { title: "How to Become a Pilot in South Africa", href: "/south-africa/guides/pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs South Africa 2026", href: "/south-africa/guides/pilot-training-costs", time: "12 min" },
+        { title: "SACAA Pilot Licence Requirements Explained", href: "/south-africa/guides/sacpl-requirements", time: "10 min" }
       ]}
     />
   );

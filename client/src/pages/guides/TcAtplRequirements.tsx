@@ -9,7 +9,7 @@ export default function TcAtplRequirements() {
       author="AviatorIQ Research"
       lastUpdated="June 2026"
       category="ATPL Requirements"
-      canonical="https://aviatoriq.com/ca/guides/tc-atpl-requirements"
+      canonical="https://aviatoriq.com/canada/guides/tc-atpl-requirements"
       metaDescription="Detailed guide to Transport Canada Airline Transport Pilot Licence (ATPL) requirements for 2026, including age, medical, knowledge, and flight experience."
       ctaText="Assess Your Pilot Career Path"
       ctaHref="/quiz"
@@ -285,9 +285,9 @@ export default function TcAtplRequirements() {
         },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/ca/guides/how-to-become-a-pilot-canada", time: "18 min" },
-        { title: "EASA ATPL Requirements Explained", href: "/eu/guides/easa-atpl-requirements", time: "14 min" },
-        { title: "GCAA ATPL Pathway: A Detailed Look", href: "/uae/guides/gcaa-atpl-pathway", time: "16 min" },
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "18 min" },
+        { title: "EASA ATPL Requirements Explained", href: "/europe/guides/easa-atpl-requirements", time: "14 min" },
+        { title: "GCAA ATPL Pathway: A Detailed Look", href: "/uae/guides/uae-pilot-training-costs", time: "16 min" },
       ]}
     />
   );

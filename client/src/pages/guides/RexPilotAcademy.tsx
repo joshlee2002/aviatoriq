@@ -172,9 +172,9 @@ export default function RexPilotAcademy() {
         { question: "What is the estimated cost of the Rex Pilot Cadet Programme?", answer: "While exact figures for the cadet program are often provided upon application, integrated CPL/MEIR programs in Australia generally cost between AUD $150,000 - $180,000, excluding living expenses and some ancillary fees. Financing options and cadetship bonds may apply." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot-australia", time: "15 min" },
-        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/pilot-training-costs-australia", time: "12 min" },
-        { title: "CASA Regulations for Aspiring Pilots", href: "/australia/guides/casa-regulations-pilots", time: "10 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
+        { title: "CASA Regulations for Aspiring Pilots", href: "/australia/guides/casa-cpl-requirements", time: "10 min" }
       ]}
     />
   );

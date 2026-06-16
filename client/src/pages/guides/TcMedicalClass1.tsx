@@ -187,8 +187,8 @@ export default function TcMedicalClass1() {
         { question: "Can I hide a medical condition to pass the exam?", answer: "No, honesty is paramount. Hiding medical conditions can lead to severe consequences and does not help ensure aviation safety. It is best to be transparent and work with your CAME to manage any conditions." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot", href: "/canada/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs 2026", href: "/canada/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

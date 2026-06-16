@@ -231,10 +231,10 @@ const FrozenAtplUK = () => {
         },
       ]}
       relatedGuides={[
-        { title: "Integrated vs Modular ATPL Training UK", href: "/guides/integrated-vs-modular-atpl-uk", time: "10 min read" },
-        { title: "UK Pilot Training Costs 2026", href: "/guides/pilot-training-costs-uk", time: "12 min read" },
-        { title: "UK Class 1 Medical: What to Expect", href: "/guides/uk-caa-class-1-medical", time: "10 min read" },
-        { title: "UK Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes", time: "10 min read" },
+        { title: "Integrated vs Modular ATPL Training UK", href: "/guides/integrated-vs-modular", time: "10 min read" },
+        { title: "UK Pilot Training Costs 2026", href: "/guides/pilot-training-costs", time: "12 min read" },
+        { title: "UK Class 1 Medical: What to Expect", href: "/guides/class-1-medical", time: "10 min read" },
+        { title: "UK Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "10 min read" },
       ]}
     />
   );

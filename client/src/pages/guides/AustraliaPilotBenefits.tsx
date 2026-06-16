@@ -116,8 +116,8 @@ export default function AustraliaPilotBenefits() {
         { question: "Which are the major airlines employing pilots in Australia?", answer: "The major airlines employing pilots in Australia include Qantas, Virgin Australia, and regional carriers like Rex Airlines and Alliance Airlines. Opportunities also exist in general aviation." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

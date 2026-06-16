@@ -135,7 +135,7 @@ export default function AtpFlightSchoolGuide() {
       ]}
       relatedGuides={[
         { title: "Pilot Training Costs USA", href: "/us/guides/pilot-training-costs-usa", time: "10 min" },
-        { title: "Embry-Riddle Guide", href: "/us/guides/embry-riddle-guide", time: "11 min" },
+        { title: "Embry-Riddle Guide", href: "/us/guides/embry-riddle-aeronautical-university", time: "11 min" },
         { title: "Part 61 vs Part 141", href: "/us/guides/part-61-vs-141", time: "8 min" },
       ]}
     />

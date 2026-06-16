@@ -341,7 +341,7 @@ export default function CadetProgrammes() {
         { title: "easyJet Generation Pilot 2026", href: "/guides/easyjet-generation-pilot", time: "9 min" },
         { title: "Ryanair Cadet Programme 2026", href: "/guides/ryanair-cadet-programme", time: "8 min" },
         { title: "UK Pilot Training Costs 2026", href: "/guides/pilot-training-costs", time: "8 min" },
-        { title: "How to Finance Pilot Training UK", href: "/guides/pilot-training-finance-2026", time: "9 min" },
+        { title: "How to Finance Pilot Training UK", href: "/guides/how-to-finance-pilot-training-uk", time: "9 min" },
       ]}
     />
   );

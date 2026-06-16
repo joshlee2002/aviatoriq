@@ -272,7 +272,7 @@ export default function BestFlightSchoolsUK() {
       relatedGuides={[
         { title: "Integrated vs Modular ATPL", href: "/guides/integrated-vs-modular", time: "9 min" },
         { title: "Pilot Training Costs UK 2026", href: "/guides/pilot-training-costs", time: "8 min" },
-        { title: "UK Airline Cadet Programmes", href: "/guides/uk-cadet-programmes", time: "10 min" },
+        { title: "UK Airline Cadet Programmes", href: "/guides/cadet-pilot-programmes-uk", time: "10 min" },
       ]}
     />
   );

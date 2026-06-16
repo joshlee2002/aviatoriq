@@ -170,9 +170,9 @@ export default function CanadaRegionalAirlines() {
         { question: "Do Canadian regional airlines offer pathways to major airlines?", answer: "Yes, many Canadian regional airlines, particularly Jazz Aviation and WestJet Encore, have established career progression programs or flow-through agreements with their mainline partners (Air Canada and WestJet, respectively). These programs provide structured opportunities for regional pilots to transition to larger aircraft and international routes." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs 2026", href: "/canada/guides/pilot-training-costs", time: "12 min" },
-        { title: "Instrument Rating in Canada", href: "/canada/guides/instrument-rating-canada", time: "10 min" }
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
+        { title: "Instrument Rating in Canada", href: "/canada/guides/transport-canada-cpl-requirements", time: "10 min" }
       ]}
     />
   );

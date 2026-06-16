@@ -128,8 +128,8 @@ export default function EuropePilotTrainingCosts() {
         { question: "What is a 'frozen ATPL'?", answer: "A 'frozen ATPL' refers to a Commercial Pilot License (CPL) holder who has successfully completed all 14 ATPL theoretical knowledge examinations. The ATPL becomes 'unfrozen' and fully valid once the pilot accumulates the required flight experience (1,500 hours) for an Airline Transport Pilot License." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Europe", href: "/europe/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "EASA Pilot Medical Requirements Explained", href: "/europe/guides/easa-medical-requirements", time: "10 min" }
+        { title: "How to Become a Pilot in Europe", href: "/europe/guides/pilot-training-costs", time: "15 min" },
+        { title: "EASA Pilot Medical Requirements Explained", href: "/europe/guides/easa-medical-class-1", time: "10 min" }
       ]}
     />
   );

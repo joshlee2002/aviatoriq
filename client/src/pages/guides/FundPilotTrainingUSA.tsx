@@ -203,13 +203,13 @@ const FundPilotTrainingUSA = () => {
         },
       ]}
       relatedGuides={[
-        { title: "Related Guide", href: "/us/guides/related-slug" ,
+        { title: "Related Guide", href: "/us/guides/how-to-fund-pilot-training-usa" ,
           time: "8 min read",
         },
-        { title: "Related Guide 2", href: "/us/guides/related-slug-2" ,
+        { title: "Related Guide 2", href: "/us/guides/gi-bill-flight-training" ,
           time: "8 min read",
         },
-        { title: "Related Guide 3", href: "/us/guides/related-slug-3" ,
+        { title: "Related Guide 3", href: "/us/guides/us-flight-school-loans" ,
           time: "8 min read",
         },
       ]}

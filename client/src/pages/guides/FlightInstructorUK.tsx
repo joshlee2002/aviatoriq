@@ -212,13 +212,13 @@ const FlightInstructorUK = () => {
         },
       ]}
       relatedGuides={[
-        { title: "How to Become a Commercial Pilot in the UK", href: "/guides/commercial-pilot-uk" ,
+        { title: "How to Become a Commercial Pilot in the UK", href: "/guides/cpl-uk" ,
           time: "8 min read",
         },
-        { title: "ATPL Theory: Your Guide to Airline Pilot Exams", href: "/guides/atpl-theory-uk" ,
+        { title: "ATPL Theory: Your Guide to Airline Pilot Exams", href: "/guides/atpl-theory-exams-uk" ,
           time: "8 min read",
         },
-        { title: "Multi-Engine Instrument Rating (MEIR) Guide UK", href: "/guides/meir-uk" ,
+        { title: "Multi-Engine Instrument Rating (MEIR) Guide UK", href: "/guides/instrument-rating-uk" ,
           time: "8 min read",
         },
       ]}

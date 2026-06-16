@@ -237,9 +237,9 @@ export default function AirFranceKLMCadet() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Europe", href: "/europe/guides/how-to-become-a-pilot-europe", time: "15 min" },
-        { title: "EASA Pilot Training Costs 2026", href: "/europe/guides/easa-pilot-training-costs-2026", time: "12 min" },
-        { title: "The European Pilot Job Market Outlook 2026", href: "/europe/guides/european-pilot-job-market-2026", time: "10 min" }
+        { title: "How to Become a Pilot in Europe", href: "/europe/guides/pilot-training-costs", time: "15 min" },
+        { title: "EASA Pilot Training Costs 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" },
+        { title: "The European Pilot Job Market Outlook 2026", href: "/europe/guides/europe-pilot-shortage", time: "10 min" }
       ]}
     />
   );

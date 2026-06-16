@@ -171,8 +171,8 @@ export default function UaePilotLifestyle() {
         { question: "What are the main benefits of being a pilot in the UAE?", answer: "Key benefits for pilots in the UAE include tax-free salaries, comprehensive housing allowances or company accommodation, education allowances for children, extensive medical and life insurance, and attractive travel benefits for the pilot and their family. The high standard of living and professional development opportunities are also significant draws." },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot", href: "/uae/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs 2026", href: "/uae/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot", href: "/uae/guides/uae-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs 2026", href: "/uae/guides/uae-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

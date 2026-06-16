@@ -140,8 +140,8 @@ export default function EuropeRegionalAirlines() {
         { question: "What is the average salary for a regional airline pilot in Europe?", answer: "Entry-level co-pilot salaries in European regional airlines can range from €30,000 to €50,000 annually, varying by airline, country, and aircraft type. This typically increases significantly with experience and command." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Europe", href: "/europe/guides/how-to-become-a-pilot-europe", time: "15 min" },
-        { title: "Pilot Training Costs Europe 2026", href: "/europe/guides/pilot-training-costs-europe", time: "12 min" }
+        { title: "How to Become a Pilot in Europe", href: "/europe/guides/pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Europe 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" }
       ]}
     />
   );

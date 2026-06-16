@@ -201,7 +201,7 @@ export default function FaaAtpRequirements() {
       relatedGuides={[
         { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" },
-        { title: "Understanding the Restricted ATP (R-ATP)", href: "/us/guides/restricted-atp-guide", time: "10 min" },
+        { title: "Understanding the Restricted ATP (R-ATP)", href: "/us/guides/atp-certificate-usa", time: "10 min" },
       ]}
     />
   );

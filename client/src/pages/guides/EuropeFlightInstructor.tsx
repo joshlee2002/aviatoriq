@@ -144,7 +144,7 @@ export default function EuropeFlightInstructor() {
         { question: "Can I get funding for EASA Flight Instructor training?", answer: "Some countries or flight schools may offer funding opportunities or partnerships with employment agencies. It is advisable to research and inquire about such options directly with ATOs or relevant national aviation authorities." },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Europe", href: "/europe/guides/how-to-become-a-pilot", time: "15 min" },
+        { title: "How to Become a Pilot in Europe", href: "/europe/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs Europe 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" }
       ]}
     />

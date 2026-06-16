@@ -107,9 +107,9 @@ export default function AirCanadaJazzCadet() {
         { question: "Is financial aid available for the program?", answer: "Yes, financing opportunities are available through Canadian financial institutions like CIBC (up to $200,000) and Scotiabank (up to $100,000) for eligible candidates." },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Canadian Pilot Training Costs 2026", href: "/canada/guides/pilot-training-costs", time: "12 min" },
-        { title: "Transport Canada Pilot Regulations Explained", href: "/canada/guides/transport-canada-pilot-regulations", time: "10 min" },
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Canadian Pilot Training Costs 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
+        { title: "Transport Canada Pilot Regulations Explained", href: "/canada/guides/transport-canada-cpl-requirements", time: "10 min" },
       ]}
     />
   );

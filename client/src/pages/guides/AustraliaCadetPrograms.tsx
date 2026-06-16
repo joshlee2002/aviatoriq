@@ -138,8 +138,8 @@ export default function AustraliaCadetPrograms() {
         { question: "What are the career prospects after completing an Australian cadet program?", answer: "Graduates of cadet programs often have a direct pathway to employment with the affiliated airline or as flight instructors. Gaining experience as a flight instructor is highly valued and can lead to direct entry positions with major airlines once sufficient flight hours are accumulated." },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot", href: "/australia/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs 2026", href: "/australia/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

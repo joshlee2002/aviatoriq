@@ -179,16 +179,16 @@ const FirstOfficerUK = () => {
         },
       ]}
       relatedGuides={[
-        { title: "PPL Guide UK", href: "/guides/ppl-guide-uk" ,
+        { title: "PPL Guide UK", href: "/guides/ppl-uk" ,
           time: "8 min read",
         },
-        { title: "ATPL Theory Guide UK", href: "/guides/atpl-theory-guide-uk" ,
+        { title: "ATPL Theory Guide UK", href: "/guides/atpl-theory-exams-uk" ,
           time: "8 min read",
         },
-        { title: "Airline Pilot Salary UK", href: "/guides/airline-pilot-salary-uk" ,
+        { title: "Airline Pilot Salary UK", href: "/guides/airline-pilot-salary" ,
           time: "8 min read",
         },
-        { title: "Multi-Crew Co-operation (MCC) Guide", href: "/guides/multi-crew-cooperation-guide" ,
+        { title: "Multi-Crew Co-operation (MCC) Guide", href: "/guides/mcc-joc-uk" ,
           time: "8 min read",
         },
       ]}

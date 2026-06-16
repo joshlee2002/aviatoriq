@@ -167,8 +167,8 @@ export default function EuropeMilitaryToAirlines() {
         { question: "What are the estimated costs for EASA ATPL conversion?", answer: "The estimated costs for EASA ATPL conversion for military pilots range from approximately €8,350 to €17,950, excluding living expenses, travel, and accommodation." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Europe", href: "/europe/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "EASA Pilot Training Costs 2026", href: "/europe/guides/easa-pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot in Europe", href: "/europe/guides/pilot-training-costs", time: "15 min" },
+        { title: "EASA Pilot Training Costs 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" }
       ]}
     />
   );

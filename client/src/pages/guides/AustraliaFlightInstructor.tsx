@@ -166,8 +166,8 @@ export default function AustraliaFlightInstructor() {
         { question: "How long does it take to become a Flight Instructor in Australia?", answer: "The duration varies based on whether you train full-time or part-time, and your prior experience. Typically, it can take anywhere from 3 to 6 months to complete the FIR course after meeting all prerequisites." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

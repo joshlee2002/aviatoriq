@@ -4,10 +4,10 @@ import GuideScopeBanner from "@/components/GuideScopeBanner";
 const BestRouteToAirline = () => {
   return (
     <GuideLayout
-      title="The Best Route to Becoming an Airline Pilot in 2025"
+      title="The Best Route to Becoming an Airline Pilot in 2026"
       subtitle="Which training path gives you the best chance of getting hired by a UK airline — and what airlines actually look for when recruiting."
       canonical="/guides/best-route-to-airline"
-      metaDescription="Best route to becoming an airline pilot in 2025: which training path, what airlines look for, cadet programmes vs self-funded, and how to maximise your chances of getting hired."
+      metaDescription="Best route to becoming an airline pilot in 2026: which training path, what airlines look for, cadet programmes vs self-funded, and how to maximise your chances of getting hired."
       faqSchema={[
         { question: "What is the best way to become an airline pilot in the UK?", answer: "The most direct route is an integrated ATPL programme at a recognised flight school, followed by a type rating and applying to airlines. Modular training is cheaper but takes longer. Cadet programmes sponsored by airlines are the most competitive but cover training costs." },
         { question: "Do airlines prefer integrated or modular trained pilots?", answer: "Most major UK airlines now accept both routes. What matters more is your total hours, simulator performance, and interview preparation. Some airlines run their own cadet programmes which are integrated by design." },
@@ -207,16 +207,16 @@ const BestRouteToAirline = () => {
       relatedGuides={[
         {
           title: "Integrated vs Modular ATPL Training: Which Is Right for You?",
-          href: "/guides/IntegratedVsModular",          time: "8 min" },
+          href: "/guides/integrated-vs-modular",          time: "8 min" },
         {
           title: "Pilot Training Costs in the UK: The Complete 2025 Breakdown",
-          href: "/guides/PilotTrainingCosts",          time: "8 min" },
+          href: "/guides/pilot-training-costs",          time: "8 min" },
         {
           title: "How to Finance Pilot Training in the UK (2025 Guide)",
-          href: "/guides/FinanceGuide",          time: "8 min" },
+          href: "/guides/how-to-finance-pilot-training-uk",          time: "8 min" },
         {
           title: "UK Airline Pilot Salary Guide 2025",
-          href: "/guides/AirlinePilotSalary",          time: "8 min" },
+          href: "/guides/airline-pilot-salary",          time: "8 min" },
       ]}
     scopeBanner={<><GuideScopeBanner scope="Routes and timelines in this guide are based on the UK aviation market (CAA/EASA licensing)." usHref="/us/guides/how-to-become-a-pilot" usLabel="View USA version →" globalHref="/schools" globalLabel="Browse global schools →" /></>}
     />

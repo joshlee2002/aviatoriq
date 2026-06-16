@@ -126,8 +126,8 @@ export default function AustraliaPilotBases() {
         { question: "Are pilots in demand in Australia?", answer: "Yes, demand is growing, especially in regional aviation and international travel sectors. However, competition can vary based on experience level." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

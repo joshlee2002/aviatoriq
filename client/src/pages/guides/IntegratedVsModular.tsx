@@ -23,8 +23,8 @@ export default function IntegratedVsModular() {
       relatedGuides={[
         { title: "Best Flight Schools in the UK 2026", href: "/guides/best-flight-schools-uk-2026", time: "14 min" },
         { title: "Pilot Training Costs UK 2026", href: "/guides/pilot-training-costs", time: "8 min" },
-        { title: "UK Airline Cadet Programmes", href: "/guides/uk-cadet-programmes", time: "10 min" },
-        { title: "How to Finance Pilot Training UK", href: "/guides/pilot-training-finance-uk", time: "9 min" },
+        { title: "UK Airline Cadet Programmes", href: "/guides/cadet-pilot-programmes-uk", time: "10 min" },
+        { title: "How to Finance Pilot Training UK", href: "/guides/how-to-finance-pilot-training-uk", time: "9 min" },
       ]}
       sections={[
         {

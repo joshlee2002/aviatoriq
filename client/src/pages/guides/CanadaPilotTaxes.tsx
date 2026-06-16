@@ -191,9 +191,9 @@ export default function CanadaPilotTaxes() {
         { question: "What happens if I don't have enough income to use my tuition tax credits?", answer: "You can transfer a portion of your unused tuition tax credits to a spouse, common-law partner, or a parent/grandparent. Any remaining unused credits can be carried forward indefinitely to reduce your taxable income in future years. [4]" },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/pilot-training-costs", time: "12 min" },
-        { title: "Choosing a Flight School in Canada", href: "/canada/guides/choosing-a-flight-school", time: "10 min" },
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
+        { title: "Choosing a Flight School in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "10 min" },
       ]}
     />
   );

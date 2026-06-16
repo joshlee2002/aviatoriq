@@ -21,7 +21,7 @@ const TrainingTimeline = () => {
       relatedGuides={[
         { title: "Integrated vs Modular ATPL Training: Which Is Right for You?", href: "/guides/integrated-vs-modular" ,          time: "9 min" },
         { title: "Pilot Training Costs in the UK: The Complete 2025 Breakdown", href: "/guides/pilot-training-costs" ,          time: "11 min" },
-        { title: "How to Become a Pilot in the UK (2025 Complete Guide)", href: "/guides/how-to-become-pilot" ,          time: "8 min" },
+        { title: "How to Become a Pilot in the UK (2025 Complete Guide)", href: "/guides/how-to-become-a-pilot" ,          time: "8 min" },
       ]}
       sections={[
         {

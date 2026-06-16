@@ -170,8 +170,8 @@ export default function EuropeFlightSchoolLoans() {
         },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Europe: A Step-by-Step Guide", href: "/europe/guides/how-to-become-a-pilot-europe", time: "15 min" },
-        { title: "EASA Pilot Training: Integrated vs. Modular Pathways", href: "/europe/guides/easa-pilot-training-integrated-modular", time: "12 min" },
+        { title: "How to Become a Pilot in Europe: A Step-by-Step Guide", href: "/europe/guides/pilot-training-costs", time: "15 min" },
+        { title: "EASA Pilot Training: Integrated vs. Modular Pathways", href: "/europe/guides/easa-atpl-requirements", time: "12 min" },
       ]}
     />
   );

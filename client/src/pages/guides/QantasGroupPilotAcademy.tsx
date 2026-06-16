@@ -166,9 +166,9 @@ export default function QantasGroupPilotAcademy() {
         { question: "Can international students apply?", answer: "At this stage, the Academy is only accepting applications from Australian Citizens or holders of Australian Permanent Residency." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot-australia", time: "15 min" },
-        { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/pilot-training-costs-australia", time: "12 min" },
-        { title: "CASA Regulations for Commercial Pilots", href: "/australia/guides/casa-regulations-commercial-pilots", time: "10 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
+        { title: "CASA Regulations for Commercial Pilots", href: "/australia/guides/casa-cpl-requirements", time: "10 min" }
       ]}
     />
   );

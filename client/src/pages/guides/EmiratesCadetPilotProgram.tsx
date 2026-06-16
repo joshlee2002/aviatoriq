@@ -190,9 +190,9 @@ export default function EmiratesCadetPilotProgram() {
         },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in the UAE", href: "/uae/guides/how-to-become-a-pilot-uae", time: "14 min" },
-        { title: "Pilot Training Costs in the UAE 2026", href: "/uae/guides/pilot-training-costs-uae", time: "12 min" },
-        { title: "GCAA Pilot Licensing Requirements", href: "/uae/guides/gcaa-pilot-licensing", time: "10 min" },
+        { title: "How to Become a Pilot in the UAE", href: "/uae/guides/uae-pilot-training-costs", time: "14 min" },
+        { title: "Pilot Training Costs in the UAE 2026", href: "/uae/guides/uae-pilot-training-costs", time: "12 min" },
+        { title: "GCAA Pilot Licensing Requirements", href: "/uae/guides/uae-pilot-training-costs", time: "10 min" },
       ]}
     />
   );

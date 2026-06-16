@@ -104,8 +104,8 @@ export default function AustraliaPilotShortage() {
         { question: "Is becoming a flight instructor a good career move in Australia?", answer: "Yes, with the decline of traditional hour-building pathways, becoming a flight instructor is increasingly seen as a reliable method to gain necessary flight hours and experience, with rising salaries due to high demand." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

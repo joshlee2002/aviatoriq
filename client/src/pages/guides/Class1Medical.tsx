@@ -25,7 +25,7 @@ const Class1Medical: React.FC = () => {
         { title: "How to Become a Pilot in the UK 2026", href: "/guides/how-to-become-a-pilot", time: "15 min" },
         { title: "Pilot Training Costs UK 2026", href: "/guides/pilot-training-costs", time: "8 min" },
         { title: "UK Integrated vs Modular ATPL 2026", href: "/guides/integrated-vs-modular", time: "12 min" },
-        { title: "UK Airline Cadet Programmes 2026", href: "/guides/uk-cadet-programmes", time: "10 min" },
+        { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "10 min" },
       ]}
       sections={[
         {

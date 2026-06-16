@@ -231,9 +231,9 @@ export default function NewZealandCadetPrograms() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot: A Global Perspective", href: "/global/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs 2026: An International Overview", href: "/global/guides/pilot-training-costs", time: "12 min" },
-        { title: "A Career in Aviation: Beyond the Flight Deck", href: "/global/guides/aviation-careers", time: "10 min" }
+        { title: "How to Become a Pilot: A Global Perspective", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs 2026: An International Overview", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "12 min" },
+        { title: "A Career in Aviation: Beyond the Flight Deck", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "10 min" }
       ]}
     />
   );

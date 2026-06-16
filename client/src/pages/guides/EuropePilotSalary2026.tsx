@@ -153,7 +153,7 @@ export default function EuropePilotSalary2026() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Europe", href: "/europe/guides/how-to-become-a-pilot", time: "15 min" },
+        { title: "How to Become a Pilot in Europe", href: "/europe/guides/pilot-training-costs", time: "15 min" },
         { title: "EASA Pilot Training Costs 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" }
       ]}
     />

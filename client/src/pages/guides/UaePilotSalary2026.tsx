@@ -126,9 +126,9 @@ export default function UaePilotSalary2026() {
         { question: "Do pilots need to reside in the UAE to work for Emirates?", answer: "Yes, Emirates has a strict non-commuting policy, requiring all pilots to reside in the UAE for the duration of their employment." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in the UAE", href: "/uae/guides/how-to-become-a-pilot-uae", time: "15 min" },
-        { title: "Pilot Training Costs in UAE 2026", href: "/uae/guides/pilot-training-costs-uae-2026", time: "12 min" },
-        { title: "GCAA Pilot License Conversion Guide", href: "/uae/guides/gcaa-pilot-license-conversion", time: "10 min" }
+        { title: "How to Become a Pilot in the UAE", href: "/uae/guides/uae-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in UAE 2026", href: "/uae/guides/uae-pilot-training-costs", time: "12 min" },
+        { title: "GCAA Pilot License Conversion Guide", href: "/uae/guides/uae-pilot-training-costs", time: "10 min" }
       ]}
     />
   );

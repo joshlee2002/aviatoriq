@@ -109,8 +109,8 @@ export default function CanadaPilotTrainingCosts() {
         { question: "What is the minimum age to start flight training?", answer: "You can begin flight training at any age, but you must be 14 to fly solo, 17 to get a PPL, and 18 to get a CPL." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot", href: "/canada/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs 2026", href: "/canada/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

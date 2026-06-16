@@ -136,7 +136,7 @@ const HowToBecomePilot = () => {
               <ul>
                 <li><strong>British Airways Speedbird Academy</strong> — integrated ATPL at CAE Oxford, guaranteed BA First Officer position. Approximately 20–30 places per intake. Extremely competitive (1–2% acceptance rate).</li>
                 <li><strong>easyJet Generation Pilot</strong> — MPL at CAE Oxford, guaranteed easyJet First Officer position. Approximately 30–50 places per year. Highly competitive.</li>
-                <li><strong>TUI Airways MPL</strong> — MPL programme paused for 2026 intake. TUI confirmed in early 2026 that the scheme will not run for this cycle due to reduced pilot demand projections for Summer 2028. Expected to reopen for future intakes. <Link href="/guides/tui-mpl-programme" className="text-blue-600 underline">Full TUI MPL update →</Link></li>
+                <li><strong>TUI Airways MPL</strong> — MPL programme paused for 2026 intake. TUI confirmed in early 2026 that the scheme will not run for this cycle due to reduced pilot demand projections for Summer 2028. Expected to reopen for future intakes. <Link href="/guides/tui-mpl-cadet-programme" className="text-blue-600 underline">Full TUI MPL update →</Link></li>
                 <li><strong>Ryanair partner schools</strong> — integrated ATPL at FTEJerez, Bartolini Air, or MATS, with Ryanair First Officer pathway. More accessible than BA/easyJet programmes.</li>
                 <li><strong>Wizz Air Pilot Academy</strong> — integrated ATPL, Wizz Air First Officer pathway. Growing programme with multiple intakes per year.</li>
               </ul>

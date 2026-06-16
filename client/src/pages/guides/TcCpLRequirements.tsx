@@ -155,8 +155,8 @@ export default function TcCpLRequirements() {
         { question: "What medical certificate is required for a CPL?", answer: "A Transport Canada Category 1 Medical Certificate is required for all Commercial Pilot License applicants. This certificate must be valid and maintained throughout your professional flying career." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

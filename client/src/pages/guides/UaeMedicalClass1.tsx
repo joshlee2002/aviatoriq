@@ -310,9 +310,9 @@ export default function UaeMedicalClass1() {
         { question: "Where can I get a GCAA Class 1 Medical examination in the UAE?", answer: "You must visit a GCAA-approved Aeromedical Centre (AeMC). Prominent centers include Etihad Airways Medical Center, Mediclinic Airport Road Hospital (Abu Dhabi), Emirates Aviation Medical Centre, American Hospital Dubai, and GMCClinics (Dubai)." },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in the UAE", href: "/uae/guides/how-to-become-a-pilot-uae", time: "18 min" },
-        { title: "EASA Class 1 Medical Requirements", href: "/international/guides/easa-class-1-medical", time: "14 min" },
-        { title: "FAA Class 1 Medical Requirements", href: "/international/guides/faa-class-1-medical", time: "16 min" },
+        { title: "How to Become a Pilot in the UAE", href: "/uae/guides/uae-pilot-training-costs", time: "18 min" },
+        { title: "EASA Class 1 Medical Requirements", href: "/europe/guides/easa-medical-class-1", time: "14 min" },
+        { title: "FAA Class 1 Medical Requirements", href: "/us/guides/faa-medical-class-1", time: "16 min" },
       ]}
     />
   );

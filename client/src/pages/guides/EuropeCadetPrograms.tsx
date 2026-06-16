@@ -198,9 +198,9 @@ export default function EuropeCadetPrograms() {
         { question: "What is a 'frozen ATPL'?", answer: "A 'frozen ATPL' (fATPL) signifies that a pilot has successfully completed all the theoretical examinations for the Airline Transport Pilot Licence (ATPL) and holds a Commercial Pilot Licence (CPL) with a Multi-Engine Instrument Rating (MEIR). The ATPL 'unfreezes' and becomes a full ATPL once the pilot accumulates 1,500 hours of flight time, including specific multi-crew experience." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot", href: "/europe/guides/how-to-become-a-pilot", time: "15 min" },
+        { title: "How to Become a Pilot", href: "/europe/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" },
-        { title: "EASA Medical Regulations Explained", href: "/europe/guides/easa-medical-regulations", time: "10 min" }
+        { title: "EASA Medical Regulations Explained", href: "/europe/guides/easa-medical-class-1", time: "10 min" }
       ]}
     />
   );

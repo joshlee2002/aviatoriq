@@ -198,12 +198,12 @@ export default function LufthansaEuropeanFlightAcademy() {
         },
         {
           title: "How to Pass the DLR Test",
-          href: "/europe/guides/dlr-test-preparation",
+          href: "/europe/guides/lufthansa-european-flight-academy",
           time: "10 min"
         },
         {
           title: "EASA Medical Requirements 2026",
-          href: "/europe/guides/easa-medical-requirements",
+          href: "/europe/guides/easa-medical-class-1",
           time: "8 min"
         }
       ]}

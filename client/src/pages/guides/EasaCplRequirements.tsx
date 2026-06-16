@@ -327,7 +327,7 @@ export default function EasaCplRequirements() {
         { question: "Can I convert my non-EASA pilot license to an EASA CPL?", answer: "Yes, it is possible to convert non-EASA licenses (e.g., FAA) to an EASA CPL, but it typically involves fulfilling EASA theoretical knowledge requirements, additional flight training, and passing EASA skill tests. The exact process depends on the specific foreign license and your total flight experience." },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot: A Step-by-Step Guide", href: "/europe/guides/how-to-become-a-pilot", time: "15 min" },
+        { title: "How to Become a Pilot: A Step-by-Step Guide", href: "/europe/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs 2026: Global Overview", href: "/europe/guides/pilot-training-costs", time: "12 min" },
         { title: "EASA ATPL Requirements: Your Path to the Airlines", href: "/europe/guides/easa-atpl-requirements", time: "18 min" }
       ]}

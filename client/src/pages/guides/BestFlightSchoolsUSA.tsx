@@ -342,7 +342,7 @@ export default function BestFlightSchoolsUSA() {
       relatedGuides={[
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "14 min" },
         { title: "Part 61 vs Part 141: Which is Right for You?", href: "/us/guides/part-61-vs-141", time: "8 min" },
-        { title: "US Airline Cadet Programmes 2026", href: "/us/guides/us-airline-cadet-programs", time: "11 min" },
+        { title: "US Airline Cadet Programmes 2026", href: "/us/guides/us-cadet-programs", time: "11 min" },
         { title: "How to Fund Pilot Training in the USA", href: "/us/guides/how-to-fund-pilot-training-usa", time: "9 min" },
       ]}
     />

@@ -185,7 +185,7 @@ export const routeMetaMap: Record<string, RouteMeta> = {
   },
   "/guides/how-to-finance-pilot-training-uk": {
     title: "How to Finance Pilot Training UK 2026 | Loans, Bursaries & Cadet Schemes | AviatorIQ",
-    description: "How to fund pilot training in the UK. Covers career development loans, flight school finance, bursaries, cadet programmes, and self-funding strategies.",
+    description: "How to fund pilot training in the UK in 2026. No high-street bank loans exist — covers Lendwise specialist loans, SLC student loans, cadet bonds, RAF pathway, Air League bursaries, and realistic repayment figures.",
     canonical: `${BASE}/guides/how-to-finance-pilot-training-uk`,
   },
   "/guides/uk-pilot-salary-2026": {
@@ -650,8 +650,8 @@ export const routeMetaMap: Record<string, RouteMeta> = {
     canonical: `${BASE}/us/guides/us-pilot-retirement-age`,
   },
   "/us/guides/us-pilot-training-market-guide": {
-    title: "Navigating the Skies: A Comprehensive Guide to US Pilot Training in 2026",
-    description: "Comprehensive guide to US pilot training in 2026, covering FAA Part 61/141, costs, medicals, and airline career paths. Essential for aspiring aviators.",
+    title: "US Pilot Union & Career Guide 2026: ALPA, Pay Scales & Airline Contracts | AviatorIQ",
+    description: "How US airline pilot unions work, ALPA contract basics, pay scale structures, and what the current market means for new and experienced pilots in 2026.",
     canonical: `${BASE}/us/guides/us-pilot-training-market-guide`,
   },
   "/us/guides/us-pilot-seniority": {
@@ -665,13 +665,13 @@ export const routeMetaMap: Record<string, RouteMeta> = {
     canonical: `${BASE}/us/guides/us-pilot-commuting`,
   },
   "/us/guides/us-pilot-training-2026": {
-    title: "Navigating the Skies: A Comprehensive Guide to US Pilot Training in 2026",
-    description: "Your essential guide to US pilot training in 2026: FAA Part 61/141, costs, airlines, and career paths for aspiring pilots.",
+    title: "US Airline Pilot Bases 2026: Where to Be Based & How Bases Work | AviatorIQ",
+    description: "How US airline pilot base assignments work, which bases are most desirable, and how seniority determines where you live and fly in 2026.",
     canonical: `${BASE}/us/guides/us-pilot-training-2026`,
   },
   "/us/guides/us-pilot-schedule": {
-    title: "Navigating the Skies: A Comprehensive Guide to US Pilot Training in 2026",
-    description: "Explore the intricate world of US pilot training in 2026. Understand FAA Part 61/141, costs, career paths, and how to achieve your aviation dreams.",
+    title: "US Airline Pilot Schedule 2026: What a Real Work Month Looks Like | AviatorIQ",
+    description: "What a US airline pilot's schedule actually looks like in 2026: FAA Part 117 duty limits, bidding systems, days off, and how seniority affects your quality of life.",
     canonical: `${BASE}/us/guides/us-pilot-schedule`,
   },
   "/us/guides/us-pilot-benefits": {

@@ -318,9 +318,9 @@ export default function CanadaPilotCommuting() {
         },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot-canada", time: "15 min" },
-        { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/pilot-training-costs-canada", time: "12 min" },
-        { title: "Fatigue Risk Management for Canadian Pilots", href: "/canada/guides/fatigue-risk-management-canada", time: "10 min" },
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
+        { title: "Fatigue Risk Management for Canadian Pilots", href: "/canada/guides/canada-pilot-commuting", time: "10 min" },
       ]}
     />
   );

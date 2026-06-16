@@ -23,7 +23,7 @@ export default function PilotTrainingCosts() {
       relatedGuides={[
         { title: "How to Become a Pilot in the UK (2026 Complete Guide)", href: "/guides/how-to-become-a-pilot", time: "14 min" },
         { title: "Integrated vs Modular ATPL Training", href: "/guides/integrated-vs-modular", time: "9 min" },
-        { title: "How to Finance Pilot Training UK 2026", href: "/guides/pilot-training-finance-2026", time: "8 min" },
+        { title: "How to Finance Pilot Training UK 2026", href: "/guides/how-to-finance-pilot-training-uk", time: "8 min" },
         { title: "BA Speedbird Academy 2026: Complete Guide", href: "/guides/ba-speedbird-academy", time: "10 min" },
       ]}
       sections={[

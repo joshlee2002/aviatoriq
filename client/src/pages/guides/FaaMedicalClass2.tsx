@@ -241,7 +241,7 @@ export default function FaaMedicalClass2() {
       relatedGuides={[
         { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" },
-        { title: "FAA First Class Medical Requirements: The Complete Guide", href: "/us/guides/faa-first-class-medical", time: "10 min" }
+        { title: "FAA First Class Medical Requirements: The Complete Guide", href: "/us/guides/faa-medical-class-1", time: "10 min" }
       ]}
     />
   );

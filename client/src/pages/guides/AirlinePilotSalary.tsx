@@ -182,7 +182,7 @@ export default function AirlinePilotSalary() {
       ]}
       relatedGuides={[
         { title: "UK Pilot Shortage 2026: What It Means for You", href: "/guides/uk-pilot-shortage-2026", time: "5 min" },
-        { title: "How to Finance Pilot Training UK", href: "/guides/pilot-training-finance-2026", time: "9 min" },
+        { title: "How to Finance Pilot Training UK", href: "/guides/how-to-finance-pilot-training-uk", time: "9 min" },
         { title: "Airline Pilot Interview Guide", href: "/guides/airline-pilot-interview", time: "10 min" },
       ]}
     />

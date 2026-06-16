@@ -151,9 +151,9 @@ export default function CanadaPilotBases() {
         { question: "What are the medical requirements for pilots in Canada?", answer: "All pilots in Canada must hold a valid Transport Canada medical certificate. A Category 1 medical is required for Commercial and Airline Transport Pilot Licenses, while a Category 3 is sufficient for a Private Pilot License." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot-canada", time: "15 min" },
-        { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/pilot-training-costs-canada", time: "12 min" },
-        { title: "Understanding Transport Canada Pilot Regulations", href: "/canada/guides/transport-canada-pilot-regulations", time: "10 min" }
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
+        { title: "Understanding Transport Canada Pilot Regulations", href: "/canada/guides/transport-canada-cpl-requirements", time: "10 min" }
       ]}
     />
   );

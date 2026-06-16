@@ -222,9 +222,9 @@ export default function CanadaFlightInstructor() {
         { question: "Are the costs for Flight Instructor training tax-deductible in Canada?", answer: "It is advisable to consult with a tax professional regarding the deductibility of flight training expenses, as eligibility can depend on individual circumstances and specific tax laws." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot-canada", time: "15 min" },
-        { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/pilot-training-costs-canada", time: "12 min" },
-        { title: "Commercial Pilot Licence Requirements Canada", href: "/canada/guides/commercial-pilot-licence-canada", time: "10 min" }
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
+        { title: "Commercial Pilot Licence Requirements Canada", href: "/canada/guides/transport-canada-cpl-requirements", time: "10 min" }
       ]}
     />
   );

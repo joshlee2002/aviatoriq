@@ -222,7 +222,7 @@ export default function SouthAfricaPilotShortage() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot", href: "/south-africa/guides/how-to-become-a-pilot", time: "15 min" },
+        { title: "How to Become a Pilot", href: "/south-africa/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs 2026", href: "/south-africa/guides/pilot-training-costs", time: "12 min" }
       ]}
     />

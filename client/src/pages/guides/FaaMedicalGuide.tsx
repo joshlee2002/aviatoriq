@@ -7,7 +7,7 @@ export default function FaaMedicalGuide() {
       subtitle="Everything you need to know about the FAA First, Second, and Third Class Medical Certificates — vision standards, disqualifying conditions, ADHD, depression, and the Special Issuance process."
       readTime="11 min read"
       heroImage="/manus-storage/faa-medical_60c77c69.jpg"
-      canonical="/guides/faa-medical-requirements"
+      canonical="/us/guides/faa-medical-requirements"
       metaDescription="FAA medical certificate requirements for pilots in 2026. First, Second, and Third Class standards, disqualifying conditions, ADHD, depression, SSRI policy, and Special Issuance explained."
       author="Joshua Fagan"
       authorRole="Founder, AviatorIQ — researched from FAA 14 CFR Part 67, FAA MedXPress guidance, and HIMS AME consultation data"
@@ -204,12 +204,12 @@ export default function FaaMedicalGuide() {
         },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in the USA (2026)", href: "/guides/how-to-become-a-pilot-usa", time: "12 min" },
-        { title: "Part 61 vs Part 141: Which is Right for You?", href: "/guides/part-61-vs-141", time: "10 min" },
-        { title: "US Medical Condition Lookup Tool", href: "/tools/medical-condition-lookup-us", time: "5 min" },
+        { title: "How to Become a Pilot in the USA (2026)", href: "/us/guides/how-to-become-a-pilot", time: "12 min" },
+        { title: "Part 61 vs Part 141: Which is Right for You?", href: "/us/guides/part-61-vs-141", time: "10 min" },
+        { title: "US Medical Condition Lookup Tool", href: "/us/guides/faa-medical-class-1", time: "5 min" },
       ]}
       ctaText="Check your medical condition against FAA standards"
-      ctaHref="/tools/medical-condition-lookup-us"
+      ctaHref="/us/guides/faa-medical-class-1"
       faqSchema={[
         {
           question: "Do I need a First Class medical to become a pilot in the USA?",

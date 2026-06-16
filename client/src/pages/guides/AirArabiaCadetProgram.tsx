@@ -160,9 +160,9 @@ export default function AirArabiaCadetProgram() {
         { question: "Is there a guaranteed job with Air Arabia after the program?", answer: "While not explicitly a 100% guarantee, the program is designed to feed directly into Air Arabia's pilot roster, and most successful cadets are offered permanent First Officer contracts." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in the UAE", href: "/uae/guides/how-to-become-a-pilot-uae", time: "15 min" },
-        { title: "GCAA Pilot Training Regulations Explained", href: "/uae/guides/gcaa-pilot-regulations", time: "10 min" },
-        { title: "Pilot Training Costs in the Middle East 2026", href: "/uae/guides/pilot-training-costs-middle-east", time: "12 min" }
+        { title: "How to Become a Pilot in the UAE", href: "/uae/guides/uae-pilot-training-costs", time: "15 min" },
+        { title: "GCAA Pilot Training Regulations Explained", href: "/uae/guides/uae-pilot-training-costs", time: "10 min" },
+        { title: "Pilot Training Costs in the Middle East 2026", href: "/uae/guides/uae-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

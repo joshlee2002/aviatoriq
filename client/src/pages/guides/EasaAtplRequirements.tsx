@@ -487,7 +487,7 @@ export default function EasaAtplRequirements() {
         { question: "What is the difference between integrated and modular ATPL?", answer: "Integrated training is a full-time, continuous program at one school, faster (18-24 months), and generally more expensive upfront. Modular training is flexible, completed in stages, can take longer (2-5 years), and allows for pay-as-you-go financing, often across different schools." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot", href: "/europe/guides/how-to-be-a-pilot", time: "15 min" },
+        { title: "How to Become a Pilot", href: "/europe/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" }
       ]}
     />

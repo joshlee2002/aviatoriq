@@ -127,13 +127,13 @@ const PilotEyesightUK = () => {
         },
       ]}
       relatedGuides={[
-        { title: "UK CAA Class 1 Medical Guide", href: "/guides/uk-caa-class-1-medical-guide" ,
+        { title: "UK CAA Class 1 Medical Guide", href: "/guides/class-1-medical" ,
           time: "8 min read",
         },
-        { title: "Pilot Medical Conditions UK", href: "/guides/pilot-medical-conditions-uk" ,
+        { title: "Pilot Medical Conditions UK", href: "/guides/class-1-medical-disqualifiers" ,
           time: "8 min read",
         },
-        { title: "EASA Pilot Training Requirements", href: "/guides/easa-pilot-training-requirements" ,
+        { title: "EASA Pilot Training Requirements", href: "/guides/integrated-vs-modular" ,
           time: "8 min read",
         },
       ]}

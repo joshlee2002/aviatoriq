@@ -157,9 +157,9 @@ export default function CanadaFlightSchoolLoans() {
         { question: "How can I improve my chances of getting a flight school loan?", answer: "Build a strong credit history, prepare a detailed financial plan, explore all scholarship opportunities, consider a co-signer, and choose an accredited flight school. Starting your research and applications early is also beneficial." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/pilot-training-costs", time: "12 min" },
-        { title: "Choosing the Right Flight School in Canada", href: "/canada/guides/choosing-flight-school", time: "10 min" }
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
+        { title: "Choosing the Right Flight School in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "10 min" }
       ]}
     />
   );

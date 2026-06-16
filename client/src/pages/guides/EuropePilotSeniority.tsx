@@ -9,7 +9,7 @@ export default function EuropePilotSeniority() {
       author="AviatorIQ Research"
       lastUpdated="June 2026"
       category="Pilot Career"
-      canonical="https://aviatoriq.com/europe/guides/pilot-seniority"
+      canonical="https://aviatoriq.com/europe/guides/europe-pilot-seniority"
       metaDescription="A comprehensive guide to pilot seniority in Europe, covering EASA regulations, 2026 training costs, major airlines, and career progression for aspiring aviators."
       ctaText="Check your pilot readiness"
       ctaHref="/quiz"
@@ -133,7 +133,7 @@ export default function EuropePilotSeniority() {
         },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot", href: "/[region]/guides/how-to-become-a-pilot", time: "15 min" },
+        { title: "How to Become a Pilot", href: "/europe/guides/pilot-training-costs", time: "15 min" },
       ]}
     />
   );

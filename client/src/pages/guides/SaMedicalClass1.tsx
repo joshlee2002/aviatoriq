@@ -195,9 +195,9 @@ export default function SaMedicalClass1() {
         { question: "Where can I find a Designated Aviation Medical Examiner (DAME) in South Africa?", answer: "The SACAA website provides a list of approved DAMEs. It is crucial to use an examiner authorized by the SACAA to conduct Class 1 medical examinations." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in South Africa", href: "/south-africa/guides/how-to-become-a-pilot-sa", time: "15 min" },
-        { title: "Pilot Training Costs in South Africa 2026", href: "/south-africa/guides/pilot-training-costs-sa", time: "12 min" },
-        { title: "EASA Class 1 Medical: European Requirements", href: "/europe/guides/easa-class-1-medical", time: "13 min" }
+        { title: "How to Become a Pilot in South Africa", href: "/south-africa/guides/pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in South Africa 2026", href: "/south-africa/guides/pilot-training-costs", time: "12 min" },
+        { title: "EASA Class 1 Medical: European Requirements", href: "/europe/guides/easa-medical-class-1", time: "13 min" }
       ]}
     />
   );

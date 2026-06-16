@@ -221,9 +221,9 @@ export default function UaePilotShortage() {
         },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Europe", href: "/europe/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs 2026: Global Overview", href: "/global/guides/pilot-training-costs", time: "12 min" },
-        { title: "The Future of Aviation: Technology and Careers", href: "/global/guides/future-of-aviation", time: "10 min" },
+        { title: "How to Become a Pilot in Europe", href: "/europe/guides/pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs 2026: Global Overview", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "12 min" },
+        { title: "The Future of Aviation: Technology and Careers", href: "/new-zealand/guides/new-zealand-pilot-shortage", time: "10 min" },
       ]}
     />
   );

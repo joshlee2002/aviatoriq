@@ -193,10 +193,10 @@ const CfiCareerUSA = () => {
         },
       ]}
       relatedGuides={[
-        { title: "How to Become a Commercial Pilot in the USA", href: "/us/guides/commercial-pilot-usa" ,
+        { title: "How to Become a Commercial Pilot in the USA", href: "/us/guides/commercial-pilot-certificate-usa" ,
           time: "8 min read",
         },
-        { title: "Pilot Salary USA: How Much Do Pilots Make?", href: "/us/guides/pilot-salary-usa" ,
+        { title: "Pilot Salary USA: How Much Do Pilots Make?", href: "/us/guides/airline-pilot-salary-usa" ,
           time: "8 min read",
         },
         { title: "How to Get an Instrument Rating in the USA", href: "/us/guides/instrument-rating-usa" ,

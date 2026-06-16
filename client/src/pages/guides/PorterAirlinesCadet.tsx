@@ -149,10 +149,10 @@ export default function PorterAirlinesCadet() {
         { question: "What are the main challenges or considerations for applicants?", answer: "Applicants should be prepared for an intensive and demanding full-time schedule, a substantial financial commitment, potential geographic relocation to Kingston, Ontario, and navigating a highly competitive entry process." }
       ]}
       relatedGuides={[
-        { title: "How to Become an Airline Pilot in Canada: A 2026 Roadmap", href: "/canada/guides/how-to-become-a-pilot-canada", time: "15 min" },
-        { title: "Canadian Pilot Training Costs 2026: A Detailed Breakdown", href: "/canada/guides/pilot-training-costs-canada", time: "12 min" },
-        { title: "Integrated ATPL vs. Modular Training: Choosing Your Path in Canadian Aviation", href: "/canada/guides/integrated-atpl-vs-modular-canada", time: "10 min" },
-        { title: "Transport Canada Pilot Medical Requirements: What You Need to Know", href: "/canada/guides/transport-canada-medical-requirements", time: "8 min" }
+        { title: "How to Become an Airline Pilot in Canada: A 2026 Roadmap", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Canadian Pilot Training Costs 2026: A Detailed Breakdown", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
+        { title: "Integrated ATPL vs. Modular Training: Choosing Your Path in Canadian Aviation", href: "/canada/guides/canada-pilot-training-costs", time: "10 min" },
+        { title: "Transport Canada Pilot Medical Requirements: What You Need to Know", href: "/canada/guides/tc-medical-class-1", time: "8 min" }
       ]}
     />
   );

@@ -222,13 +222,13 @@ const InstrumentRatingUK = () => {
         },
       ]}
       relatedGuides={[
-        { title: "Private Pilot Licence (PPL) UK Guide", href: "/guides/ppl-guide-uk" ,
+        { title: "Private Pilot Licence (PPL) UK Guide", href: "/guides/ppl-uk" ,
           time: "8 min read",
         },
-        { title: "Commercial Pilot Licence (CPL) UK Guide", href: "/guides/cpl-guide-uk" ,
+        { title: "Commercial Pilot Licence (CPL) UK Guide", href: "/guides/cpl-uk" ,
           time: "8 min read",
         },
-        { title: "ATPL Theory UK Guide", href: "/guides/atpl-theory-uk" ,
+        { title: "ATPL Theory UK Guide", href: "/guides/atpl-theory-exams-uk" ,
           time: "8 min read",
         },
       ]}

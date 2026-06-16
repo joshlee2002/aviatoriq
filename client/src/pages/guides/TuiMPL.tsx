@@ -7,7 +7,7 @@ export default function TuiMPL() {
     <GuideLayout
       title="TUI MPL Cadet Programme 2026: Important Update"
       subtitle="TUI has officially paused its MPL Cadet scheme for the 2026 intake. Here is what you need to know, why they paused it, and alternative routes to the TUI flight deck."
-      canonical="/guides/tui-mpl-programme"
+      canonical="/guides/tui-mpl-cadet-programme"
       metaDescription="TUI MPL Cadet Programme 2026 update. TUI has confirmed they will not run the MPL scheme in 2026 due to reduced pilot demand. Alternative routes and future outlook."
       readTime="8 min read"
       heroImage="/manus-storage/tui-mpl_9d4c2b8e.jpg"

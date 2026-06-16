@@ -9,7 +9,7 @@ export default function NewZealandPilotSalary2026() {
       author="AviatorIQ Research"
       lastUpdated="June 2026"
       category="Pilot Careers"
-      canonical="https://aviatoriq.com/oceania/guides/new-zealand-pilot-salary-2026"
+      canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-pilot-salary-2026"
       metaDescription="Explore the definitive guide to pilot salaries in New Zealand for 2026, covering Air NZ earnings, training costs, and license conversion pathways."
       ctaText="Check your pilot readiness"
       ctaHref="/quiz"
@@ -278,9 +278,9 @@ export default function NewZealandPilotSalary2026() {
         { question: "What are the major airlines hiring pilots in New Zealand?", answer: "Air New Zealand is the largest employer of pilots. Regional airlines like Air Chathams, Sounds Air, and Barrier Air also offer opportunities, particularly for pilots building experience. The Royal New Zealand Air Force (RNZAF) and general aviation sectors also employ pilots." },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in New Zealand", href: "/oceania/guides/how-to-become-a-pilot-new-zealand", time: "15 min" },
-        { title: "Global Pilot Salary Report 2026", href: "/global/guides/global-pilot-salary-report-2026", time: "20 min" },
-        { title: "Understanding Pilot License Conversions", href: "/global/guides/understanding-pilot-license-conversions", time: "10 min" },
+        { title: "How to Become a Pilot in New Zealand", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "15 min" },
+        { title: "Global Pilot Salary Report 2026", href: "/new-zealand/guides/new-zealand-pilot-salary-2026", time: "20 min" },
+        { title: "Understanding Pilot License Conversions", href: "/new-zealand/guides/nz-atpl-requirements", time: "10 min" },
       ]}
     />
   );

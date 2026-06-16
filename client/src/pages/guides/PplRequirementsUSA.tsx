@@ -190,13 +190,13 @@ const PplRequirementsUSA = () => {
         },
       ]}
       relatedGuides={[
-        { title: "Instrument Rating Requirements USA", href: "/us/guides/instrument-rating-requirements-usa" ,
+        { title: "Instrument Rating Requirements USA", href: "/us/guides/instrument-rating-usa" ,
           time: "8 min read",
         },
-        { title: "Commercial Pilot License Requirements USA", href: "/us/guides/cpl-requirements-usa" ,
+        { title: "Commercial Pilot License Requirements USA", href: "/us/guides/commercial-pilot-certificate-usa" ,
           time: "8 min read",
         },
-        { title: "How to Become an Airline Pilot in the USA", href: "/us/guides/how-to-become-an-airline-pilot-usa" ,
+        { title: "How to Become an Airline Pilot in the USA", href: "/us/guides/how-to-become-a-pilot" ,
           time: "8 min read",
         },
       ]}

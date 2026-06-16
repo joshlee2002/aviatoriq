@@ -354,9 +354,9 @@ export default function NzAtplRequirements() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in New Zealand", href: "/new-zealand/guides/how-to-become-a-pilot", time: "15 min" },
+        { title: "How to Become a Pilot in New Zealand", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs 2026: A Global Overview", href: "/guides/pilot-training-costs", time: "12 min" },
-        { title: "Understanding the Class 1 Medical for Pilots", href: "/guides/class-1-medical-pilot", time: "10 min" }
+        { title: "Understanding the Class 1 Medical for Pilots", href: "/guides/class-1-medical", time: "10 min" }
       ]}
     />
   );

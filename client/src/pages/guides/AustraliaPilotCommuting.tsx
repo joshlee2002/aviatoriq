@@ -207,9 +207,9 @@ export default function AustraliaPilotCommuting() {
         { question: "Are there any specific tax implications for commuting pilots in Australia?", answer: "Pilots should seek independent financial advice regarding potential tax deductions for commuting-related expenses. Generally, travel between home and a regular workplace is not deductible, but specific circumstances may vary." },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/pilot-training-costs", time: "12 min" },
-        { title: "Aviation Career Paths in Australia", href: "/australia/guides/aviation-career-paths", time: "10 min" },
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
+        { title: "Aviation Career Paths in Australia", href: "/australia/guides/australia-cadet-programs", time: "10 min" },
       ]}
     />
   );

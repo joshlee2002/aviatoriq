@@ -118,8 +118,8 @@ export default function UsPilotSchedule() {
       ]}
       relatedGuides={[
         { title: "How to Become a Pilot", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Salary Guide 2026", href: "/us/guides/pilot-salary-guide-2026", time: "10 min" },
-        { title: "Aviation Scholarships US", href: "/us/guides/aviation-scholarships-us", time: "8 min" },
+        { title: "Pilot Salary Guide 2026", href: "/us/guides/airline-pilot-salary-usa", time: "10 min" },
+        { title: "Aviation Scholarships US", href: "/us/guides/how-to-fund-pilot-training-usa", time: "8 min" },
       ]}
     />
   );

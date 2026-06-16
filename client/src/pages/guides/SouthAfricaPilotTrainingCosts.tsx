@@ -162,11 +162,11 @@ export default function SouthAfricaPilotTrainingCosts() {
         { question: "What is the difference between Part 61 and Part 141 training?", answer: "SACAA CARs Part 61 outlines the general requirements for pilot licenses and ratings, allowing for more flexible, self-paced training. Part 141 specifies the requirements for approved Aviation Training Organisations (ATOs), which offer structured, often more intensive, and time-efficient training programs with a set curriculum." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot: The Ultimate Guide", href: "/global/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs 2026: Global Overview", href: "/global/guides/pilot-training-costs", time: "12 min" },
-        { title: "EASA Pilot Training: Costs and Regulations", href: "/europe/guides/easa-pilot-training-costs", time: "14 min" },
-        { title: "GCAA Pilot Training: Costs and Regulations", href: "/uae/guides/gcaa-pilot-training-costs", time: "13 min" },
-        { title: "CAA NZ Pilot Training: Costs and Regulations", href: "/new-zealand/guides/caa-nz-pilot-training-costs", time: "13 min" }
+        { title: "How to Become a Pilot: The Ultimate Guide", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs 2026: Global Overview", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "12 min" },
+        { title: "EASA Pilot Training: Costs and Regulations", href: "/europe/guides/pilot-training-costs", time: "14 min" },
+        { title: "GCAA Pilot Training: Costs and Regulations", href: "/uae/guides/uae-pilot-training-costs", time: "13 min" },
+        { title: "CAA NZ Pilot Training: Costs and Regulations", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "13 min" }
       ]}
     />
   );

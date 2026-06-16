@@ -276,13 +276,13 @@ const UsPilotCareerOutlook = () => {
         },
       ]}
       relatedGuides={[
-        { title: "Pilot Salary USA", href: "/us/guides/pilot-salary-usa" ,
+        { title: "Pilot Salary USA", href: "/us/guides/airline-pilot-salary-usa" ,
           time: "8 min read",
         },
-        { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot-us" ,
+        { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot" ,
           time: "8 min read",
         },
-        { title: "ATP Flight School Review", href: "/us/guides/atp-flight-school-review" ,
+        { title: "ATP Flight School Review", href: "/us/guides/atp-flight-school-guide" ,
           time: "8 min read",
         },
       ]}

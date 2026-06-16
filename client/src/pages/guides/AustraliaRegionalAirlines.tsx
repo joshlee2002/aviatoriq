@@ -267,9 +267,9 @@ export default function AustraliaRegionalAirlines() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot-australia", time: "15 min" },
-        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/pilot-training-costs-australia", time: "12 min" },
-        { title: "CASA Class 1 Medical: What Pilots Need to Know", href: "/australia/guides/casa-class-1-medical", time: "8 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
+        { title: "CASA Class 1 Medical: What Pilots Need to Know", href: "/australia/guides/casa-medical-class-1", time: "8 min" }
       ]}
     />
   );

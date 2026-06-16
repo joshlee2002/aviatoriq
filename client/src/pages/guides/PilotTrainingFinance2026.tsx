@@ -23,7 +23,7 @@ const PilotTrainingFinance2026 = () => {
       ctaText="Calculate your training costs"
       relatedGuides={[
         { title: "Integrated vs Modular ATPL UK 2026", href: "/guides/integrated-vs-modular", time: "12 min" },
-        { title: "UK Airline Cadet Programmes 2026", href: "/guides/uk-cadet-programmes", time: "10 min" },
+        { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "10 min" },
         { title: "Best Flight Schools in the UK 2026", href: "/guides/best-flight-schools-uk-2026", time: "14 min" },
         { title: "Pilot Training Costs UK 2026", href: "/guides/pilot-training-costs", time: "8 min" },
       ]}

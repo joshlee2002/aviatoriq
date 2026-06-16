@@ -21,9 +21,9 @@ const Class1MedicalDisqualifiers = () => {
       ctaText="Generate my personalised roadmap"
       relatedGuides={[
         { title: "Am I Too Old to Become a Pilot?", href: "/guides/am-i-too-old-to-become-a-pilot", time: "6 min read" },
-        { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot-uk", time: "12 min read" },
+        { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "12 min read" },
         { title: "Am I Ready to Start Pilot Training?", href: "/guides/am-i-ready-to-start-pilot-training", time: "7 min read" },
-        { title: "Cadet Pilot Programmes UK 2026", href: "/guides/cadet-pilot-programmes", time: "8 min read" },
+        { title: "Cadet Pilot Programmes UK 2026", href: "/guides/cadet-pilot-programmes-uk", time: "8 min read" },
       ]}
       sections={[
         {

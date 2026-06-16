@@ -340,10 +340,10 @@ const CplGuideUK = () => {
         { title: "PPL Guide UK", href: "/guides/ppl-uk" ,
           time: "8 min read",
         },
-        { title: "ATPL Guide UK", href: "/guides/atpl-uk" ,
+        { title: "ATPL Guide UK", href: "/guides/atpl-theory-exams-uk" ,
           time: "8 min read",
         },
-        { title: "Flight Instructor Rating UK", href: "/guides/fi-rating-uk" ,
+        { title: "Flight Instructor Rating UK", href: "/guides/flight-instructor-uk" ,
           time: "8 min read",
         },
       ]}

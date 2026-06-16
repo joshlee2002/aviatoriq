@@ -7,7 +7,7 @@ export default function PilotCvGuideUSA() {
     <GuideLayout
       title="Pilot Resume Guide USA: How to Stand Out in 2026"
       subtitle="What US airlines actually look for on a pilot resume. Formatting rules, how to list your flight hours, and the mistakes that get applications binned."
-      canonical="/us/guides/pilot-resume-guide-usa"
+      canonical="/us/guides/pilot-resume-usa"
       metaDescription="Pilot resume guide USA 2026. How to format your pilot resume, how to list flight hours (total, PIC, multi-engine), and what US airline recruiters actually want to see."
       readTime="10 min read"
       heroImage="/manus-storage/pilot-cv_9d4c2b8e.jpg"

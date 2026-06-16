@@ -221,17 +221,17 @@ export default function NzMedicalClass1() {
       relatedGuides={[
         {
           title: "How to Become a Pilot in New Zealand",
-          href: "/new-zealand/guides/how-to-become-a-pilot",
+          href: "/new-zealand/guides/new-zealand-pilot-training-costs",
           time: "15 min"
         },
         {
           title: "Pilot Training Costs in New Zealand 2026",
-          href: "/new-zealand/guides/pilot-training-costs",
+          href: "/new-zealand/guides/new-zealand-pilot-training-costs",
           time: "12 min"
         },
         {
           title: "Understanding NZ CAA Pilot Licences",
-          href: "/new-zealand/guides/nz-caa-pilot-licences",
+          href: "/new-zealand/guides/nz-cpl-requirements",
           time: "10 min"
         }
       ]}

@@ -7,7 +7,7 @@ export default function DeltaPropelGuide() {
     <GuideLayout
       title="Delta Propel Program: 2026 Requirements & Complete Guide"
       subtitle="How Delta's pilot career path program actually works. The four pathways, the QJO, and what you need to know about the transition to mainline Delta."
-      canonical="/us/guides/delta-propel-guide"
+      canonical="/us/guides/delta-propel-program"
       metaDescription="Delta Propel Program 2026 guide. Requirements, the four pathways (Collegiate, CFI, Company, Scholarship), and how to get a Qualified Job Offer to Delta."
       readTime="11 min read"
       heroImage="/manus-storage/delta-propel_9d4c2b8e.jpg"

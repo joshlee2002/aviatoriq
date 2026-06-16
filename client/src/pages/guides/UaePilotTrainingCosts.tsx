@@ -149,8 +149,8 @@ export default function UaePilotTrainingCosts() {
         { question: "Can international students train to be pilots in the UAE?", answer: "Yes, international students are welcome to enroll in pilot training programs at GCAA-approved academies in the UAE, provided they meet the admission criteria and visa requirements." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in the UAE", href: "/uae/guides/how-to-become-a-pilot-uae", time: "15 min" },
-        { title: "GCAA Pilot License Requirements 2026", href: "/uae/guides/gcaa-pilot-license-requirements", time: "10 min" }
+        { title: "How to Become a Pilot in the UAE", href: "/uae/guides/uae-pilot-training-costs", time: "15 min" },
+        { title: "GCAA Pilot License Requirements 2026", href: "/uae/guides/uae-pilot-training-costs", time: "10 min" }
       ]}
     />
   );

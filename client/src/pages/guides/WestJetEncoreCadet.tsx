@@ -150,9 +150,9 @@ export default function WestJetEncoreCadet() {
         { question: "Are there opportunities for career progression from WestJet Encore to WestJet mainline?", answer: "Yes, WestJet Encore is specifically designed as a pathway for pilots to gain experience and progress to WestJet mainline, flying larger Boeing aircraft." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot-canada", time: "15 min" },
-        { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/pilot-training-costs-canada", time: "12 min" },
-        { title: "Understanding Transport Canada Pilot Licences", href: "/canada/guides/transport-canada-pilot-licences", time: "10 min" }
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
+        { title: "Understanding Transport Canada Pilot Licences", href: "/canada/guides/transport-canada-cpl-requirements", time: "10 min" }
       ]}
     />
   );

@@ -131,8 +131,8 @@ export default function CanadaPilotSalary2026() {
         { question: "Can simulator time reduce pilot training costs in Canada?", answer: "Yes, utilizing approved flight simulators (FTDs) can significantly reduce training costs as they are generally less expensive than actual aircraft hours and allow for efficient practice of various flight procedures [5]." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/how-to-become-a-pilot-canada", time: "15 min" },
-        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/pilot-training-costs-canada-2026", time: "12 min" }
+        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" }
       ]}
     
     />

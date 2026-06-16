@@ -350,7 +350,7 @@ export default function UsRegionalAirlinesGuide() {
       relatedGuides={[
         { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" },
-        { title: "Major Airline Pilot Career Path US", href: "/us/guides/major-airline-pilot-career-path", time: "18 min" }
+        { title: "Major Airline Pilot Career Path US", href: "/us/guides/major-airlines-hiring-usa", time: "18 min" }
       ]}
     />
   );

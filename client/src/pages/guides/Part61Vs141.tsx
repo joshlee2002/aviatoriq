@@ -7,7 +7,7 @@ export default function Part61Vs141() {
       subtitle="The two FAA-approved training frameworks have different structures, costs, and timelines. Here's how to choose the right one for your goals in 2026."
       readTime="10 min read"
       heroImage="/manus-storage/part61-141_25c6f61a.jpg"
-      canonical="/guides/part-61-vs-141"
+      canonical="/us/guides/part-61-vs-141"
       metaDescription="Part 61 vs Part 141 flight training USA — what's the difference, which costs less, which is faster, and which leads to airline cadet programmes. Full 2026 comparison."
       author="Joshua Fagan"
       authorRole="Founder, AviatorIQ — researched from FAA 14 CFR Parts 61 & 141, ATP Flight School, United Aviate Academy, and AABI-accredited university prospectuses"
@@ -208,12 +208,12 @@ export default function Part61Vs141() {
         },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in the USA (2026)", href: "/guides/how-to-become-a-pilot-usa", time: "12 min" },
-        { title: "FAA Medical Certificate Requirements", href: "/guides/faa-medical-requirements", time: "8 min" },
-        { title: "US Cadet Programme Eligibility Checker", href: "/tools/cadet-eligibility-us", time: "5 min" },
+        { title: "How to Become a Pilot in the USA (2026)", href: "/us/guides/how-to-become-a-pilot", time: "12 min" },
+        { title: "FAA Medical Certificate Requirements", href: "/us/guides/faa-medical-requirements", time: "8 min" },
+        { title: "US Cadet Programme Eligibility Checker", href: "/us/cadet-eligibility", time: "5 min" },
       ]}
       ctaText="Check your US cadet programme eligibility"
-      ctaHref="/tools/cadet-eligibility-us"
+      ctaHref="/us/cadet-eligibility"
       faqSchema={[
         {
           question: "What is the difference between Part 61 and Part 141 flight training?",

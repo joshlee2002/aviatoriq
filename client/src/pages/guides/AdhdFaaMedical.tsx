@@ -176,13 +176,13 @@ const AdhdFaaMedical = () => {
         },
       ]}
       relatedGuides={[
-        { title: "Can You Be a Pilot with Depression in the USA?", href: "/us/guides/depression-faa-medical" ,
+        { title: "Can You Be a Pilot with Depression in the USA?", href: "/us/guides/adhd-faa-medical" ,
           time: "8 min read",
         },
         { title: "FAA Medical Certificate Requirements: A Comprehensive Guide", href: "/us/guides/faa-medical-requirements" ,
           time: "8 min read",
         },
-        { title: "Pilot Salary in the USA: What to Expect", href: "/us/guides/pilot-salary-usa" ,
+        { title: "Pilot Salary in the USA: What to Expect", href: "/us/guides/airline-pilot-salary-usa" ,
           time: "8 min read",
         },
       ]}

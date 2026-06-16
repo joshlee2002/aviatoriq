@@ -215,8 +215,8 @@ export default function NewZealandPilotTrainingCosts() {
         { question: "What are the minimum flight hours required by Air New Zealand?", answer: "Air New Zealand typically requires 500 to 1,500 total flying hours for entry-level positions, with specific requirements for multi-engine, instrument, and night flying time. Completion of ATPL theory subjects is also highly preferred." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in New Zealand", href: "/new-zealand/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Career Pathways: From Cadet to Captain", href: "/guides/pilot-career-pathways", time: "10 min" }
+        { title: "How to Become a Pilot in New Zealand", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Career Pathways: From Cadet to Captain", href: "/guides/best-route-to-airline", time: "10 min" }
       ]}
     />
   );

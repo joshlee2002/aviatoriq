@@ -246,9 +246,9 @@ export default function AustraliaPilotTrainingCosts() {
         { question: "What are the CASA medical requirements for commercial pilots?", answer: "Commercial pilots in Australia require a Class 1 Medical Certificate from CASA. It involves a comprehensive medical examination and must be renewed annually or biennially depending on age. It's crucial to obtain this early to ensure eligibility." },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Best Flight Schools in Australia 2026", href: "/australia/guides/best-flight-schools-australia", time: "10 min" },
-        { title: "CASA Pilot Licence Requirements Explained", href: "/australia/guides/casa-pilot-licence-requirements", time: "8 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Best Flight Schools in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "10 min" },
+        { title: "CASA Pilot Licence Requirements Explained", href: "/australia/guides/casa-cpl-requirements", time: "8 min" }
       ]}
     />
   );

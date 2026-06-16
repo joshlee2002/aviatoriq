@@ -170,13 +170,13 @@ const GiBillFlightTraining = () => {
         },
       ]}
       relatedGuides={[
-        { title: "Pilot Training Cost in the USA: 2026 Guide", href: "/us/guides/pilot-training-cost" ,
+        { title: "Pilot Training Cost in the USA: 2026 Guide", href: "/us/guides/pilot-training-costs-usa" ,
           time: "8 min read",
         },
-        { title: "How to Become a Commercial Pilot in the US", href: "/us/guides/commercial-pilot-requirements" ,
+        { title: "How to Become a Commercial Pilot in the US", href: "/us/guides/commercial-pilot-certificate-usa" ,
           time: "8 min read",
         },
-        { title: "Understanding the Post-9/11 GI Bill", href: "/us/guides/post-911-gi-bill-benefits" ,
+        { title: "Understanding the Post-9/11 GI Bill", href: "/us/guides/gi-bill-flight-training" ,
           time: "8 min read",
         },
       ]}

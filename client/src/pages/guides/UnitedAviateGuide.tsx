@@ -123,7 +123,7 @@ export default function UnitedAviateGuide() {
         }
       ]}
       relatedGuides={[
-        { title: "Delta Propel Program", href: "/us/guides/delta-propel-guide", time: "10 min" },
+        { title: "Delta Propel Program", href: "/us/guides/delta-propel-program", time: "10 min" },
         { title: "ATP Flight School Review", href: "/us/guides/atp-flight-school-guide", time: "11 min" },
         { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "12 min" },
       ]}

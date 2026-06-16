@@ -211,8 +211,8 @@ export default function NewZealandRegionalAirlines() {
         { question: "What are the main costs associated with pilot training?", answer: "The main costs include flight instruction, aircraft rental, theory courses, examination fees, medical certificates, and living expenses. Total costs for a CPL can range from NZD $100,000 to $150,000+." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot", href: "/new-zealand/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs 2026", href: "/new-zealand/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs 2026", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

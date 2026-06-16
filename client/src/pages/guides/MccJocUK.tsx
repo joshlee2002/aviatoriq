@@ -188,13 +188,13 @@ const MccJocUK = () => {
         },
       ]}
       relatedGuides={[
-        { title: "Integrated ATPL vs. Modular ATPL: UK Pilot Training Routes", href: "/guides/integrated-vs-modular-atpl-uk" ,
+        { title: "Integrated ATPL vs. Modular ATPL: UK Pilot Training Routes", href: "/guides/integrated-vs-modular" ,
           time: "8 min read",
         },
-        { title: "Type Rating Explained: Your First Jet Aircraft Qualification", href: "/guides/type-rating-explained" ,
+        { title: "Type Rating Explained: Your First Jet Aircraft Qualification", href: "/guides/pilot-type-rating-uk" ,
           time: "8 min read",
         },
-        { title: "EASA vs. UK CAA Pilot Licences: What You Need to Know", href: "/guides/easa-vs-uk-caa-licences" ,
+        { title: "EASA vs. UK CAA Pilot Licences: What You Need to Know", href: "/guides/frozen-atpl-uk" ,
           time: "8 min read",
         },
       ]}

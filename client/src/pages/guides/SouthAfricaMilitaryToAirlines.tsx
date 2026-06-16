@@ -248,7 +248,7 @@ export default function SouthAfricaMilitaryToAirlines() {
       relatedGuides={[
         {
           title: "How to Become a Pilot in South Africa",
-          href: "/south-africa/guides/how-to-become-a-pilot",
+          href: "/south-africa/guides/pilot-training-costs",
           time: "15 min"
         },
         {

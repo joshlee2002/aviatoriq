@@ -147,9 +147,9 @@ export default function CasaCplRequirements() {
         { question: "Which airlines hire CPL holders in Australia?", answer: "Newly qualified CPL holders often start in general aviation or with regional airlines such as Rex Airlines or Alliance Airlines. With further experience and an ATPL, opportunities open up with major carriers like Qantas, Virgin Australia, and Jetstar." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/how-to-be-a-pilot-australia", time: "15 min" },
-        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/pilot-training-costs-australia", time: "12 min" },
-        { title: "Understanding CASA Part 61 Regulations", href: "/australia/guides/casa-part-61-regulations", time: "10 min" }
+        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
+        { title: "Understanding CASA Part 61 Regulations", href: "/australia/guides/casa-cpl-requirements", time: "10 min" }
       ]}
     />
   );

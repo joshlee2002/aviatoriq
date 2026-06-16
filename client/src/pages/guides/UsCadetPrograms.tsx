@@ -255,9 +255,9 @@ export default function UsCadetPrograms() {
       ]}
       relatedGuides={[
         { title: "How to Become a Pilot in the USA (2026)", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs", time: "12 min" },
+        { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" },
         { title: "Part 61 vs Part 141: Which Is Right for You?", href: "/us/guides/part-61-vs-141", time: "10 min" },
-        { title: "US Pilot Salary 2026", href: "/us/guides/pilot-salary", time: "10 min" },
+        { title: "US Pilot Salary 2026", href: "/us/guides/airline-pilot-salary-usa", time: "10 min" },
       ]}
     />
   );

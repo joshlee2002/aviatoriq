@@ -426,7 +426,7 @@ export default function PilotTrainingCostsUSA() {
                 These programmes do not eliminate the cost of training — you still need to fund your certificates — but they significantly reduce financial risk by guaranteeing a job at the end of the pipeline. The Delta Propel scholarship path ($12,000 per scholarship) is particularly valuable for candidates from diverse backgrounds.
               </p>
               <p>
-                For a full breakdown of each programme, see our <Link href="/us/guides/us-airline-cadet-programs" className="text-blue-400 hover:text-blue-300 underline">US Airline Cadet Programmes guide</Link>.
+                For a full breakdown of each programme, see our <Link href="/us/guides/us-cadet-programs" className="text-blue-400 hover:text-blue-300 underline">US Airline Cadet Programmes guide</Link>.
               </p>
             </>
           ),
@@ -453,7 +453,7 @@ export default function PilotTrainingCostsUSA() {
         { title: "Part 61 vs Part 141: Which is Right for You?", href: "/us/guides/part-61-vs-141", time: "8 min" },
         { title: "US Airline Pilot Salary 2026", href: "/us/guides/airline-pilot-salary-usa", time: "10 min" },
         { title: "How to Fund Pilot Training in the USA", href: "/us/guides/how-to-fund-pilot-training-usa", time: "9 min" },
-        { title: "US Airline Cadet Programmes 2026", href: "/us/guides/us-airline-cadet-programs", time: "11 min" },
+        { title: "US Airline Cadet Programmes 2026", href: "/us/guides/us-cadet-programs", time: "11 min" },
         { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
       ]}
     />

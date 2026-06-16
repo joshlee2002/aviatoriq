@@ -225,9 +225,9 @@ export default function AirNewZealandCadet() {
         }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot: A Global Perspective", href: "/global/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs: A Worldwide Comparison 2026", href: "/global/guides/pilot-training-costs", time: "12 min" },
-        { title: "Understanding Aviation Medicals: What Pilots Need to Know", href: "/global/guides/aviation-medicals", time: "10 min" }
+        { title: "How to Become a Pilot: A Global Perspective", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs: A Worldwide Comparison 2026", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "12 min" },
+        { title: "Understanding Aviation Medicals: What Pilots Need to Know", href: "/new-zealand/guides/nz-medical-class-1", time: "10 min" }
       ]}
     />
   );

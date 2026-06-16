@@ -266,8 +266,8 @@ export default function NewZealandPilotShortage() {
         { question: "What are the job prospects for pilots in New Zealand?", answer: "Job prospects are robust. Graduates often start as flight instructors or fly for regional and scenic operators to build hours before moving to major airlines like Air New Zealand or Jetstar. The mutual recognition with Australia also opens up the Australian market." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot", href: "/new-zealand/guides/how-to-become-a-pilot", time: "15 min" },
-        { title: "Pilot Training Costs 2026", href: "/new-zealand/guides/pilot-training-costs", time: "12 min" }
+        { title: "How to Become a Pilot", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "15 min" },
+        { title: "Pilot Training Costs 2026", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "12 min" }
       ]}
     />
   );

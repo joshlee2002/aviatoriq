@@ -328,7 +328,7 @@ export default function UsPilotSalary2026() {
       relatedGuides={[
         { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "14 min" },
-        { title: "US Airline Cadet Programmes 2026", href: "/us/guides/us-airline-cadet-programs", time: "11 min" },
+        { title: "US Airline Cadet Programmes 2026", href: "/us/guides/us-cadet-programs", time: "11 min" },
         { title: "How to Fund Pilot Training in the USA", href: "/us/guides/how-to-fund-pilot-training-usa", time: "9 min" },
       ]}
     />

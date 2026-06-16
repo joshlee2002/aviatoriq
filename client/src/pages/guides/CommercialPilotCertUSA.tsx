@@ -207,13 +207,13 @@ const CommercialPilotCertUSA = () => {
         },
       ]}
       relatedGuides={[
-        { title: "Private Pilot Certificate USA: Your First Step to Flying", href: "/us/guides/private-pilot-certificate-usa" ,
+        { title: "Private Pilot Certificate USA: Your First Step to Flying", href: "/us/guides/ppl-requirements-usa" ,
           time: "8 min read",
         },
         { title: "Instrument Rating USA: Flying in All Weather Conditions", href: "/us/guides/instrument-rating-usa" ,
           time: "8 min read",
         },
-        { title: "Airline Transport Pilot (ATP) Certificate USA: The Pinnacle of Pilot Certification", href: "/us/guides/airline-transport-pilot-certificate-usa" ,
+        { title: "Airline Transport Pilot (ATP) Certificate USA: The Pinnacle of Pilot Certification", href: "/us/guides/atp-certificate-usa" ,
           time: "8 min read",
         },
       ]}
