@@ -13,13 +13,16 @@ export default function UsPilotUnionGuide() {
       canonical="https://aviatoriq.com/us/guides/us-pilot-training-market-guide"
       metaDescription="Comprehensive guide to US pilot training in 2026, covering FAA Part 61/141, costs, medicals, and airline career paths. Essential for aspiring aviators."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "Introduction: The Gateway to American Aviation Excellence",
           content: (
             <>
               <p>The United States continues to be a global leader in aviation, offering significant opportunities for aspiring pilots. The journey to becoming a professional aviator in the US is rigorous, demanding dedication, significant investment, and a thorough understanding of the regulatory landscape. This guide provides an elite, comprehensive overview of the US pilot training market in 2026, designed for individuals committed to achieving excellence in their aviation careers. We delve into the intricacies of FAA regulations, dissect the financial commitments, and illuminate the diverse career trajectories available within the American aviation industry.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to see a timeline from training to captain.
+              </p>
               <p>The demand for highly skilled pilots remains robust, driven by retirements, global air travel growth, and the expansion of cargo operations. For those with the ambition and aptitude, the US pilot training system offers a clear, albeit challenging, path to a rewarding profession. Understanding the nuances of this path is critical for strategic planning and successful execution.</p>
             </>
           )

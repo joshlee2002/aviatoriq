@@ -12,14 +12,17 @@ export default function WestJetEncoreCadet() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/canada/guides/westjet-encore-cadet"
       metaDescription="A detailed guide for aspiring pilots on how to join WestJet Encore as a First Officer, covering training, costs, and career progression in Canada."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction: WestJet Encore and Your Aviation Journey",
           content: (
             <>
               <p>WestJet Encore, a vital component of the WestJet Group, stands as a premier regional airline in Canada, operating a fleet of De Havilland Dash 8-400 (Q400) aircraft. For many aspiring aviators, WestJet Encore represents not just a job, but a critical stepping stone towards a long and distinguished career in commercial aviation, potentially leading to mainline operations with WestJet. This guide provides an exhaustive overview of the journey to becoming a WestJet Encore First Officer, detailing the training, financial commitments, regulatory requirements, and career prospects as of 2026.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
+              </p>
               <p>The path to the flight deck of a WestJet Encore Q400 demands dedication, rigorous training, and a clear understanding of the Canadian aviation landscape. While WestJet Encore does not operate a traditional 'cadet' program in the ab-initio sense, it actively recruits lower-time pilots, offering a structured environment for professional growth and accelerated experience accumulation. This guide will demystify the process, offering insights into what it truly takes to achieve this coveted position.</p>
             </>
           )

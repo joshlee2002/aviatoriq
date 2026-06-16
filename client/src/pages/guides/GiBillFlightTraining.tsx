@@ -31,9 +31,10 @@ const GiBillFlightTraining = () => {
         },
       ]}
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/gi-bill-training_775b4cc1.jpg"
-      ctaHref="/us/roadmap"
-      ctaText="Get my free US pilot roadmap"
+      ctaHref="/us/calculator"
+      ctaText="Calculate your US training costs"
       sections={[
         {
           heading: "Understanding Your GI Bill Benefits for Flight Training",
@@ -41,6 +42,9 @@ const GiBillFlightTraining = () => {
             <>
               <p>
                 Navigating the complexities of GI Bill benefits for flight training can be challenging, but with the right information, veterans can effectively leverage their earned benefits to pursue a career in aviation. The primary chapters applicable to flight training are the Post-9/11 GI Bill (Chapter 33) and the Montgomery GI Bill Active Duty (MGIB-AD, Chapter 30). Each program has distinct eligibility criteria, payment structures, and limitations that significantly impact how much of your flight training costs will be covered. Understanding these differences is the first critical step in planning your aviation education.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/us/calculator" className="text-blue-400 underline">US Pilot Training Cost Calculator</Link> to get a personalised estimate based on your chosen training path.
               </p>
               <img src="/manus-storage/military-airline_3b8b8da5.jpg" alt="Military to airline pilot" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>

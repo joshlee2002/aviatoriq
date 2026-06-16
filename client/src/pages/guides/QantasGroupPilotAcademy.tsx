@@ -12,8 +12,8 @@ export default function QantasGroupPilotAcademy() {
       category="Australia Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/qantas-group-pilot-academy"
       metaDescription="Detailed guide to the Qantas Group Pilot Academy in 2026, covering training, costs, application process, and career prospects with Qantas Group airlines."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction to the Qantas Group Pilot Academy",
@@ -21,6 +21,9 @@ export default function QantasGroupPilotAcademy() {
             <>
               <p>
                 The Qantas Group Pilot Academy, established in partnership with Flight Training Adelaide (FTA), represents a significant investment by Qantas in addressing the global demand for highly skilled aviators. Located at Wellcamp Airport in Toowoomba, Queensland, the Academy is designed to provide world-class, ab-initio pilot training for aspiring pilots with little to no prior flying experience. This guide offers an in-depth look into the Academy's offerings for 2026, covering everything from its state-of-the-art facilities and comprehensive curriculum to the financial commitments, application process, and potential career trajectories within the Qantas Group.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <p>
                 As the aviation industry continues its robust recovery and expansion, the need for new pilots remains critical. The Qantas Group Pilot Academy stands as a beacon for those dreaming of a professional flying career, offering a structured pathway endorsed by one of the world's leading airline groups. This guide aims to equip prospective students with all the necessary information to make an informed decision about pursuing their pilot training journey at this esteemed institution.

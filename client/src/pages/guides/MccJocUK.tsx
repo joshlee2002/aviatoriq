@@ -31,9 +31,10 @@ const MccJocUK = () => {
         },
       ]}
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/mcc-joc_88c97923.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
+      ctaHref="/quiz"
+      ctaText="Start your career assessment"
       sections={[
         {
           heading: "What are MCC and JOC?",
@@ -41,6 +42,9 @@ const MccJocUK = () => {
             <>
               <p>
                 The Multi-Crew Cooperation (MCC) course and Jet Orientation Course (JOC) are the final training steps before a newly qualified pilot applies for their first airline type rating. They bridge the gap between single-pilot flying and the two-crew jet environment you will work in for the rest of your career.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <img src="/manus-storage/mcc-simulator_d3ac3716.jpg" alt="Multi crew cooperation simulator" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>

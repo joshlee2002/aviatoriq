@@ -13,13 +13,16 @@ export default function UsMilitaryPilotToAirlines() {
       canonical="https://aviatoriq.com/us/guides/us-military-pilot-to-airlines"
       metaDescription="Navigate the transition from US military pilot to airline pilot in 2026. This guide covers FAA R-ATP requirements, ATP CTP, job market, and airline programs."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "The Unparalleled Value of Military Aviators in Commercial Aviation",
           content: (
             <>
               <p>The transition from military to commercial aviation represents a significant and highly sought-after career path for elite aviators. US military pilots bring an invaluable skillset to the airline industry: exceptional discipline, extensive experience in complex aircraft, and a profound understanding of demanding operational environments. As the US airline industry continues its sustained growth into 2026, the demand for qualified pilots remains exceptionally strong, with military-trained individuals often fast-tracked due to their proven capabilities and leadership.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
               <p>This guide covers the specific FAA regulations, the current hiring landscape at the major airlines, how to convert military flight time to civilian credentials, and the strategic steps required to complete the transition successfully.</p>
             </>
           )

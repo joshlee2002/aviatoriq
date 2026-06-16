@@ -12,14 +12,17 @@ export default function EmiratesCadetPilotProgram() {
       category="UAE Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/emirates-cadet-pilot-program"
       metaDescription="Explore the Emirates Cadet Pilot Program for 2026. Learn about eligibility, GCAA regulations, training at EFTA, costs in AED, and career opportunities with Emirates."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction to the Emirates Cadet Pilot Program",
           content: (
             <>
               <p>The Emirates Cadet Pilot Program offers an unparalleled opportunity for aspiring aviators to join one of the world's leading airlines. Based at the state-of-the-art Emirates Flight Training Academy (EFTA) in Dubai, this program is designed to transform individuals with little to no prior flying experience into highly skilled airline pilots. The curriculum is meticulously structured to meet the rigorous standards of the UAE General Civil Aviation Authority (GCAA), ensuring graduates are fully prepared for a career in commercial aviation.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
+              </p>
               <p>The program emphasizes a holistic approach to pilot training, integrating advanced theoretical knowledge with extensive practical flight experience. Cadets benefit from world-class facilities, including modern aircraft fleets, cutting-edge simulators, and a dedicated campus environment that fosters learning and professional development. This guide provides a detailed overview of the program for 2026, covering eligibility criteria, the rigorous selection process, training phases, associated costs, and the career pathways available upon successful completion.</p>
             </>
           ),

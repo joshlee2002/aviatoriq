@@ -14,7 +14,7 @@ export default function HowToBecomePilotUS() {
       author="Joshua Fagan"
       authorRole="Founder, AviatorIQ — researched from FAA, ATP Flight School & airline cadet programme data"
       lastUpdated="June 2026"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       scopeBanner={<GuideScopeBanner scope="This guide covers FAA pilot training in the USA." globalHref="/schools" globalLabel="Browse global schools →" />}
       faqSchema={[
@@ -31,6 +31,9 @@ export default function HowToBecomePilotUS() {
             <>
               <p>
                 The US aviation market is currently experiencing a massive demographic shift. The pilot shortage is not a temporary blip — it is a structural reality driven by the mandatory retirement age of 65. According to FAA data and Oliver Wyman forecasts, the US airline industry will see roughly 4,300 mandatory retirements per year through 2042 [1].
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 The peak of this retirement wave hits right now, between 2025 and 2026, creating a projected shortfall of up to 24,000 pilots. This has fundamentally shifted bargaining power toward pilots. In 2016, the median US airline pilot earned $127,820. By 2024, that figure had nearly doubled to $226,600, with regional airline salaries rising by 86% over the same period [2].

@@ -20,6 +20,9 @@ export default function Part61Vs141() {
               <p className="mb-4">
                 Both Part 61 and Part 141 refer to sections of Title 14 of the Code of Federal Regulations (14 CFR) — the rulebook that governs how flight training is conducted in the United States. The key difference is structure and FAA oversight.
               </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <img src="/manus-storage/usa-school_36756c90.jpg" alt="Part 141 flight school USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/training-aircraft_09ae6a9b.jpg" alt="Part 61 training aircraft" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p className="mb-4">

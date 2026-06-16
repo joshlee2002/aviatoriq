@@ -12,14 +12,17 @@ export default function AustraliaPilotTrainingCosts() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-training-costs"
       metaDescription="Explore the true costs of pilot training in Australia for 2026. Detailed insights into licenses, flight schools, CASA fees, and financial aid options."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Calculate your training costs"
+      ctaHref="/calculator"
       sections={[
         {
           heading: "Introduction: Navigating the Skies of Australian Pilot Training Costs",
           content: (
             <>
               <p>Aspiring aviators in Australia face a significant, yet rewarding, financial commitment when pursuing a career in the cockpit. The journey from a novice enthusiast to a certified commercial pilot involves a series of licenses, ratings, and rigorous training, each with its own associated costs. This guide provides an exhaustive, up-to-date analysis of pilot training expenses in Australia for 2026, incorporating Civil Aviation Safety Authority (CASA) regulations, typical flight school fees, and often-overlooked expenditures. Our aim is to equip you with transparent, accurate data to plan your aviation career with confidence.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/calculator" className="text-blue-400 underline">Pilot Training Cost Calculator</Link> to get a personalised cost estimate based on your chosen route and country.
+              </p>
               <p>The demand for qualified pilots globally, and particularly within the Asia-Pacific region, remains robust. Major Australian airlines, regional carriers, and general aviation sectors consistently seek skilled professionals. Understanding the financial landscape is the first critical step towards achieving your goal of becoming a pilot.</p>
             </>
           )

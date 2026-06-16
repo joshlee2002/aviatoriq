@@ -12,7 +12,7 @@ export default function AustraliaPilotCommuting() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-commuting"
       metaDescription="Detailed guide for pilots commuting in Australia in 2026, covering CASA regulations, airline policies, cost of living, and lifestyle tips."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -21,6 +21,9 @@ export default function AustraliaPilotCommuting() {
             <>
               <p>
                 Pilot commuting, a common practice in global aviation, presents unique challenges and opportunities within the Australian context. As the aviation industry continues its robust recovery and growth into 2026, understanding the intricacies of commuting becomes paramount for both aspiring and established pilots. This guide delves deep into the practicalities, regulatory frameworks, financial implications, and lifestyle adjustments associated with pilot commuting across Australia, offering a professional and honest perspective.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 The decision to commute often stems from a desire to maintain a preferred lifestyle, family ties, or to access specific career opportunities not available in one's home base. While offering flexibility, it demands meticulous planning, resilience, and a thorough understanding of the operational environment. This guide aims to equip pilots with the knowledge to navigate this complex landscape effectively.

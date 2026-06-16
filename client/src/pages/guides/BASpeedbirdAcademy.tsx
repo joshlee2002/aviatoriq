@@ -8,9 +8,10 @@ export default function BASpeedbirdAcademy() {
       canonical="/guides/ba-speedbird-academy"
       metaDescription="British Airways Speedbird Academy 2026 guide: application process, selection stages, training at CAE Oxford, costs, and what happens after you qualify. Updated June 2026."
       readTime="10 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/ba-speedbird_2f8a3c9e.jpg"
-      ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaHref="/tools/cadet-eligibility"
+      ctaText="Check your cadet eligibility"
       relatedGuides={[
         { title: "easyJet Generation Pilot Programme: Complete Guide", href: "/guides/easyjet-generation-pilot", time: "9 min" },
         { title: "How to Become a Pilot in the UK (2026 Complete Guide)", href: "/guides/how-to-become-a-pilot", time: "8 min" },
@@ -31,6 +32,9 @@ export default function BASpeedbirdAcademy() {
             <>
               <p>
                 The British Airways Speedbird Academy is the airline's flagship ab-initio cadet pilot programme — widely regarded as one of the most prestigious routes into commercial aviation in the world. Named after BA's iconic radio callsign, the programme takes applicants with no flying experience and trains them to become First Officers on British Airways' fleet, which includes the Boeing 777, Boeing 787, and Airbus A320 family.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="BA sponsored cadet" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/interview-assessment_c517e045.jpg" alt="BA selection assessment" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />

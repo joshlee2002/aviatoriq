@@ -10,9 +10,10 @@ export default function TypeRating() {
       canonical="/guides/pilot-type-rating-uk"
       metaDescription="What is a pilot type rating? How much does an A320 or B737 type rating cost in the UK in 2026? Self-funded vs airline-sponsored. Complete guide for aspiring airline pilots."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/type-rating_e790e1aa.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
+      ctaHref="/quiz"
+      ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="Type rating costs and processes in this guide are based on UK/EASA regulations." usHref="/us/guides/type-rating-usa" usLabel="View USA type rating guide →" />}
       faqSchema={[
         { question: "What is a type rating for pilots?", answer: "A type rating is an additional qualification that authorises a pilot to fly a specific aircraft type. Commercial airliners require a type rating because they are too complex and expensive to train on during initial pilot training. Common type ratings include the A320 family and B737 family." },
@@ -28,6 +29,9 @@ export default function TypeRating() {
             <>
               <p>
                 A type rating is an endorsement on your pilot licence that authorises you to fly a specific aircraft type. All commercial airliners — the Airbus A320, Boeing 737, Embraer E-Jets, and others — require a type rating because they are too complex, expensive, and safety-critical to be included in initial pilot training.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 When you graduate from flight school with a frozen ATPL, you are qualified to fly multi-engine aircraft under instrument flight rules. You are not qualified to fly an Airbus A320 or a Boeing 737. Before you can sit in the right seat of a commercial airliner, you must complete a type rating course for that specific aircraft.

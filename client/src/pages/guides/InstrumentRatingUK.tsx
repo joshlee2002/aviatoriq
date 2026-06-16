@@ -31,9 +31,10 @@ const InstrumentRatingUK = () => {
         },
       ]}
       readTime="15 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/instrument-rating_da56b64b.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
+      ctaHref="/quiz"
+      ctaText="Start your career assessment"
       sections={[
         {
           heading: "Introduction to Instrument Rating (IR) in the UK",
@@ -41,6 +42,9 @@ const InstrumentRatingUK = () => {
             <>
               <p>
                 The Instrument Rating (IR) is a crucial qualification for any pilot aspiring to a professional career in aviation, particularly within the United Kingdom. It permits a pilot to fly an aircraft under Instrument Flight Rules (IFR) in Instrument Meteorological Conditions (IMC), meaning they can operate safely and legally in clouds, fog, or other low-visibility environments. This capability is not merely a convenience; it is a fundamental requirement for commercial airline operations, where flights often traverse varying weather conditions and rely heavily on air traffic control (ATC) guidance and instrument procedures.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <img src="/manus-storage/instruments-panel_33ae88e6.jpg" alt="Aircraft instrument panel" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/night-flight_2e96753a.jpg" alt="Night flight cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />

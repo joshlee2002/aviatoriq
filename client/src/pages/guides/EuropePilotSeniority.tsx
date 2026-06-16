@@ -11,7 +11,7 @@ export default function EuropePilotSeniority() {
       category="Pilot Career"
       canonical="https://aviatoriq.com/europe/guides/europe-pilot-seniority"
       metaDescription="A comprehensive guide to pilot seniority in Europe, covering EASA regulations, 2026 training costs, major airlines, and career progression for aspiring aviators."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -19,6 +19,9 @@ export default function EuropePilotSeniority() {
           content: (
             <>
               <p>In the highly structured and competitive world of commercial aviation, <strong>pilot seniority</strong> stands as a cornerstone, profoundly influencing a pilot's career trajectory, quality of life, and earning potential. Unlike many other professions where merit or performance solely dictate advancement, the European aviation sector, much like its global counterparts, operates on a system where the length of service within a specific airline largely determines a pilot's standing. This guide covers pilot seniority in Europe, exploring its regulatory underpinnings, practical implications, and the financial landscape of pilot training in 2026.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
             </>
           )
         },

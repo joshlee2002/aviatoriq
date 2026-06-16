@@ -12,7 +12,7 @@ export default function EasaAtplRequirements() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/europe/guides/easa-atpl-requirements"
       metaDescription="A detailed 2026 guide to EASA ATPL requirements, covering integrated and modular training paths, costs, medicals, exams, and career outlook in Europe."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -21,6 +21,9 @@ export default function EasaAtplRequirements() {
             <>
               <p>
                 The Airline Transport Pilot License (ATPL) represents the highest level of aircraft pilot certification, essential for commanding aircraft exceeding 5,700 kg or those configured for more than nine passenger seats. In Europe, this license is governed by the European Union Aviation Safety Agency (EASA), which establishes stringent common standards across its member states. Obtaining an EASA ATPL is a rigorous yet rewarding journey, designed to ensure pilots meet the highest safety and competency benchmarks required for commercial airline operations.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 The EASA ATPL is a harmonized standard accepted across 26 European countries, ensuring portability and consistent regulatory oversight. While EASA sets the overarching rules, national aviation authorities (e.g., UK CAA, French DGAC) act as agents, issuing licenses and approving training organizations within their respective jurisdictions. This guide provides an in-depth look into the requirements, training pathways, associated costs, and career opportunities for aspiring airline pilots in Europe for the year 2026.

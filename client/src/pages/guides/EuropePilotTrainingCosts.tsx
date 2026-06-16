@@ -12,14 +12,17 @@ export default function EuropePilotTrainingCosts() {
       category="Pilot Training Costs"
       canonical="https://aviatoriq.com/europe/guides/pilot-training-costs"
       metaDescription="Explore the detailed costs of pilot training in Europe for 2026, covering EASA regulations, integrated and modular ATPL programs, and financial planning."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Calculate your training costs"
+      ctaHref="/calculator"
       sections={[
         {
           heading: "The European Aviation Landscape: EASA's Role in 2026",
           content: (
             <>
               <p>Aspiring pilots in Europe operate within a highly regulated and standardized environment, primarily governed by the European Union Aviation Safety Agency (EASA). In 2026, EASA continues to uphold stringent standards for pilot training, licensing, safety, and operations across its 31 member states, which include the 27 EU nations and 4 EFTA countries (Iceland, Liechtenstein, Norway, and Switzerland). These regulations, particularly those outlined in Part-FCL (Flight Crew Licensing), ensure a uniform quality of training and global recognition of EASA licenses, making them a gold standard in the aviation industry. Understanding the nuances of EASA's framework is the foundational step for any individual considering a career in European aviation.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/calculator" className="text-blue-400 underline">Pilot Training Cost Calculator</Link> to get a personalised cost estimate based on your chosen route and country.
+              </p>
               <p>Recent and upcoming regulatory updates, such as AMC & GM Amendment 13, emphasize competency-based training and evidence-based training (EBT) principles, reflecting EASA's commitment to continuous improvement and adaptation to modern aviation demands. These changes aim to enhance safety and efficiency, ensuring that pilots are not only proficient in hours but also in critical skills and decision-making. For instance, the formalization of differences training requirements for electric aircraft variants highlights the forward-looking nature of EASA's regulatory approach, preparing the industry for future technological advancements.</p>
             </>
           )

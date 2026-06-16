@@ -12,8 +12,8 @@ export default function CasaMedicalClass1() {
       category="Pilot Medicals"
       canonical="https://aviatoriq.com/australia/guides/casa-medical-class-1"
       metaDescription="Comprehensive guide to the CASA Class 1 Medical Certificate in Australia for 2026, covering requirements, costs, process, and common disqualifying conditions."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your medical condition"
+      ctaHref="/tools/medical-condition-lookup"
       sections={[
         {
           heading: "Introduction to the CASA Class 1 Medical Certificate",
@@ -21,6 +21,9 @@ export default function CasaMedicalClass1() {
             <>
               <p>
                 For any individual aspiring to a professional aviation career in Australia, obtaining a Civil Aviation Safety Authority (CASA) Class 1 Medical Certificate is a fundamental and non-negotiable requirement. This certificate signifies that a pilot meets the stringent health standards necessary to safely operate aircraft in commercial and air transport operations. It is the highest level of medical certification in Australian aviation, reflecting the significant responsibilities associated with carrying passengers and operating complex aircraft.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
               </p>
               <p>
                 The Class 1 medical certificate is mandatory for holders of an Air Transport Pilot Licence (ATPL), Commercial Pilot Licence (CPL) (excluding balloons), Multi-Crew Pilot (Aeroplane) Licence, Flight Engineer Licence, and Student Flight Engineer Licence. While some commercial operations might be permissible with a Class 2 medical under specific exemptions, the Class 1 remains the benchmark for those pursuing a career as an airline or professional pilot. This guide provides a comprehensive overview of the requirements, process, costs, and critical considerations for the CASA Class 1 Medical Certificate in 2026.

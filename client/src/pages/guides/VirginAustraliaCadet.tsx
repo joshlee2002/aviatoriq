@@ -12,8 +12,8 @@ export default function VirginAustraliaCadet() {
       category="Airline Pilot Careers"
       canonical="https://aviatoriq.com/australia/guides/virgin-australia-cadet-pilot-program"
       metaDescription="A detailed guide for aspiring pilots in Australia, covering CASA regulations, training costs, and Virgin Australia's direct entry pilot recruitment requirements for 2026."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction: Charting Your Course to Virgin Australia",
@@ -21,6 +21,9 @@ export default function VirginAustraliaCadet() {
             <>
               <p>
                 For many aspiring aviators in Australia, a career with Virgin Australia represents the pinnacle of professional achievement. Known for its vibrant culture and extensive domestic and international network, Virgin Australia offers a dynamic environment for pilots. This comprehensive guide is designed to illuminate the path to becoming a Virgin Australia pilot in 2026, providing a detailed overview of the necessary qualifications, training pathways, regulatory requirements, and financial considerations. It is important to note that as of June 2026, Virgin Australia does not currently operate an active cadet pilot program. Therefore, this guide will focus on the established direct entry pathways, emphasizing the foundational steps and advanced qualifications required to meet their stringent recruitment standards.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <p>
                 The journey to the flight deck of a Virgin Australia aircraft is rigorous, demanding dedication, significant investment, and a thorough understanding of Australia's Civil Aviation Safety Authority (CASA) regulations. This guide will delve into each stage, from initial flight training to obtaining the Commercial Pilot Licence (CPL) and Airline Transport Pilot Licence (ATPL), alongside the specific experience Virgin Australia seeks in its First Officers.

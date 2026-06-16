@@ -10,10 +10,11 @@ export default function TrainingTimelineUSA() {
       canonical="/us/guides/pilot-training-timeline-usa"
       metaDescription="How long does it take to become a pilot in the USA? 2026 timeline breakdown: 7-12 months for flight school, 1.5-2 years instructing to reach 1,500 hours."
       readTime="10 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/training-timeline_9d4c2b8e.jpg"
       category="US Pilot Training"
       ctaHref="/us/roadmap"
-      ctaText="Find my training route"
+      ctaText="Get my free US pilot roadmap"
       scopeBanner={<GuideScopeBanner scope="This guide covers the US FAA training timeline, including the 1,500-hour rule." globalHref="/guides/training-timeline" globalLabel="View UK/EASA timeline →" />}
       faqSchema={[
         { question: "How many years does it take to become an airline pilot in the USA?", answer: "It typically takes 3 to 4 years from zero experience to your first day at a regional airline. This includes 7-12 months of flight school (to reach 250 hours) and 1.5-2 years of working as a flight instructor to build the 1,500 hours required by the FAA." },
@@ -28,6 +29,9 @@ export default function TrainingTimelineUSA() {
             <>
               <p>
                 If you see a flight school advertising that you can "become an airline pilot in 7 months," they are not telling you the whole truth. 
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <p>
                 You can complete your <em>initial training</em> in 7 months. But because of the FAA's 1,500-hour rule, you cannot legally fly for a commercial airline until you have built significantly more flight time. The journey in the United States is a two-part process: <strong>Flight School</strong> (to get your commercial licence) and <strong>Time Building</strong> (to get your Airline Transport Pilot certificate).

@@ -17,9 +17,10 @@ export default function IntegratedVsModular() {
         { question: "What is the MPL route?", answer: "The Multi-Pilot Licence (MPL) is a third training route, only available through sponsored airline cadet programmes such as the BA Speedbird Academy and easyJet Generation Pilot programme. It is fully funded by the airline and leads directly to a First Officer role, but the licence is type-specific and cannot easily be used at other airlines without conversion." },
       ]}
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/integrated-training_a566fa21.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       relatedGuides={[
         { title: "Best Flight Schools in the UK 2026", href: "/guides/best-flight-schools-uk-2026", time: "14 min" },
         { title: "Pilot Training Costs UK 2026", href: "/guides/pilot-training-costs", time: "8 min" },
@@ -33,6 +34,9 @@ export default function IntegratedVsModular() {
             <>
               <p>
                 Aspiring airline pilots in the UK have three routes to a frozen ATPL: integrated, modular, and MPL. The integrated and modular routes are self-funded and lead to the same qualification. The MPL is only available through sponsored airline cadet programmes. Understanding the real differences — not the marketing version — is the most important decision you will make before spending £80,000–£120,000.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
 
               <div className="overflow-x-auto my-6">

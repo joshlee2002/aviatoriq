@@ -10,9 +10,10 @@ export default function WomenInAviation() {
       canonical="/guides/women-in-aviation-uk"
       metaDescription="Women in aviation UK 2026. Scholarships, CAA statistics, challenges, and support organisations for women pursuing a commercial pilot career."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/women-aviation_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="Scholarships and organisations in this guide are primarily UK-based." usHref="/us/guides/women-in-aviation-usa" usLabel="View USA scholarships →" />}
       faqSchema={[
         { question: "What percentage of UK pilots are women?", answer: "Women represent approximately 5% of commercial pilots in the UK. The CAA issued 301 pilot licences to women in 2023, up from 239 in 2019, but the overall proportion remains very low." },
@@ -26,6 +27,9 @@ export default function WomenInAviation() {
             <>
               <p>
                 Progress is being made, but the numbers remain stark. Women represent approximately 5% of commercial pilots in the UK. The Civil Aviation Authority's most recent data shows that 301 pilot licences were issued to women in 2023, up from 239 in 2019 — a meaningful increase, but still a tiny fraction of the total [1].
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 The global picture is similar. Women account for approximately 5–6% of commercial pilots worldwide. In some regions, the figure is even lower. The aviation industry is aware of this imbalance and has made diversity a stated priority — but awareness and action are different things.

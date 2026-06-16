@@ -12,14 +12,17 @@ export default function CanadaPilotTaxes() {
       category="Pilot Training, Finance, Canada"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-taxes"
       metaDescription="A detailed 2026 guide to Canadian pilot taxes, covering tuition tax credits, GST/HST implications for flight training, and essential deductions for pilots."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "1. Introduction to Canadian Pilot Taxation",
           content: (
             <>
               <p>Understanding the intricacies of the Canadian tax system is paramount for both aspiring and professional pilots. The financial landscape of flight training and a career in aviation involves significant investments, making it crucial to navigate tax implications effectively. This guide provides a comprehensive overview of relevant tax considerations, focusing on the Canada Revenue Agency (CRA) regulations and provincial tax authorities that impact aviators across the nation.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
+              </p>
               <p>From tuition tax credits that can alleviate the burden of training costs to the nuances of Goods and Services Tax (GST) and Harmonized Sales Tax (HST) on flight instruction, every detail can significantly affect a pilot's financial journey. This guide aims to demystify these complex topics, offering clarity and actionable insights for 2026 and beyond.</p>
             </>
           )

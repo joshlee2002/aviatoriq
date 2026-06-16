@@ -11,14 +11,17 @@ export default function UsPilotBenefits() {
       category="Pilot Lifestyle"
       canonical="https://aviatoriq.com/us/guides/us-pilot-benefits"
       metaDescription="What are the benefits of being a US airline pilot in 2026? Learn about 16-18% direct 401(k) contributions, profit sharing, health insurance, and non-rev travel."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Get my free US pilot roadmap"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "The Hidden Value of the Pilot Contract",
           content: (
             <>
               <p>When people discuss US airline pilot compensation, they usually focus on the hourly rate. While earning $300 to $450 per flight hour is impressive, it only tells half the story. The true financial power of a US airline pilot career lies in the benefits package negotiated by unions like ALPA (Air Line Pilots Association) and the APA (Allied Pilots Association).</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to see a timeline from training to captain.
+              </p>
               <p>In 2026, the benefits offered by the "Big Three" (Delta, United, American) and major cargo carriers (FedEx, UPS) are virtually unmatched in the corporate world. From direct 401(k) contributions that require no employee match, to profit-sharing checks that can equal a down payment on a house, these benefits add tens of thousands of dollars in hidden value to a pilot's annual compensation.</p>
             </>
           )

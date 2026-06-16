@@ -10,6 +10,7 @@ export default function BestFlightSchoolsUK() {
       canonical="/guides/best-flight-schools-uk-2026"
       metaDescription="Best flight schools in the UK 2026. Honest comparison of CAE Oxford, Acron Aviation, Skyborne, Leading Edge, and modular providers. Real 2026 prices, airline partnerships, and fleet data."
       readTime="14 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/best-schools-uk_7f3a2c9e.jpg"
       ctaHref="/schools"
       ctaText="Browse the full school directory"
@@ -29,6 +30,9 @@ export default function BestFlightSchoolsUK() {
             <>
               <p>
                 The UK flight training market is highly concentrated, with a handful of large "integrated" academies dominating the marketing landscape, surrounded by dozens of excellent smaller "modular" providers. This guide does not rank schools in a simple numbered list, because the "best" school depends entirely on your circumstances.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Compare schools side by side in our <Link href="/schools" className="text-blue-400 underline">Flight School Directory</Link>, which lists verified schools with tuition fees, locations, and airline partnerships.
               </p>
               <p>
                 A £102,500 integrated programme at Acron Aviation might be the right choice for a student with access to funding who wants a structured, direct pathway to British Airways. But for a student who needs to keep working while training, a £77,000–£90,000 modular route through Stapleford Flight Centre and Bristol Groundschool is the objectively superior choice — and for those willing to train in Poland, Bartolini Air can deliver an EASA licence for £55,000–£65,000.

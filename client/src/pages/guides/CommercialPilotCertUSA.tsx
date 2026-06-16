@@ -43,6 +43,7 @@ const CommercialPilotCertUSA = () => {
         },
       ]}
       readTime="15 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/commercial-cert-usa_8f3a2c1d.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
@@ -53,6 +54,9 @@ const CommercialPilotCertUSA = () => {
             <>
               <p>
                 The Commercial Pilot Certificate (CPL) marks a significant milestone in an aviator's journey, transitioning from recreational flying to professional aviation. Unlike the Private Pilot Certificate (PPL), which permits flying for personal use, the CPL authorizes you to act as pilot in command of an aircraft for compensation or hire. This certificate is not merely a license to earn money from flying; it signifies a higher level of aeronautical skill, knowledge, and professionalism, essential for a wide array of aviation careers.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <img src="/manus-storage/dual-instruction_48048c62.jpg" alt="Commercial pilot training" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/pilot-logbook_8afa8322.jpg" alt="Pilot logbook hours" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />

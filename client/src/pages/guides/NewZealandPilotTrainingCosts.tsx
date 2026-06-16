@@ -12,14 +12,17 @@ export default function NewZealandPilotTrainingCosts() {
       category="Pilot Training Costs"
       canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-pilot-training-costs"
       metaDescription="Explore the detailed costs of pilot training in New Zealand for 2026, including PPL, CPL, ATPL, flight school fees, CAA NZ regulations, and funding options."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Calculate your training costs"
+      ctaHref="/calculator"
       sections={[
         {
           heading: "Introduction: The Allure of Aviation in Aotearoa",
           content: (
             <>
               <p>New Zealand, known for its breathtaking landscapes and clear, uncongested airspace, has long been a coveted destination for aspiring pilots worldwide. The country's robust aviation industry, coupled with its adherence to stringent International Civil Aviation Organization (ICAO) standards, offers a world-class environment for flight training. For those dreaming of a career in the cockpit, understanding the financial commitment and regulatory landscape is the first critical step. This guide provides a comprehensive, up-to-date overview of pilot training costs in New Zealand for 2026, detailing everything from initial license acquisition to advanced ratings and career entry.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/calculator" className="text-blue-400 underline">Pilot Training Cost Calculator</Link> to get a personalised cost estimate based on your chosen route and country.
+              </p>
               <p>The journey to becoming a commercial pilot in New Zealand is both challenging and rewarding, demanding significant dedication and financial planning. While the costs can appear substantial, the investment opens doors to diverse career opportunities within a globally recognized aviation framework. We will delve into the specifics of various licenses, the expenses associated with leading flight schools, the role of the Civil Aviation Authority of New Zealand (CAA NZ), and potential funding avenues, all presented with a professional and honest perspective.</p>
             </>
           )

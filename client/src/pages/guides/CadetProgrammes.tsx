@@ -10,6 +10,7 @@ export default function CadetProgrammes() {
       canonical="/guides/cadet-pilot-programmes-uk"
       metaDescription="UK airline cadet programmes 2026. BA Speedbird Academy (fully funded, 160 places, 2026 window closed). easyJet Generation MPL (€102,942 self-funded via CAE). Jet2FlightPath (fully funded, Leading Edge Aviation). Ryanair cadet (self-funded). Wizz Air pre-financed. Side-by-side comparison table."
       readTime="14 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/cadet-programme_7f3a2c9e.jpg"
       ctaHref="/tools/cadet-eligibility"
       ctaText="Check your cadet eligibility"
@@ -29,6 +30,9 @@ export default function CadetProgrammes() {
             <>
               <p>
                 The table below compares every active UK airline cadet pathway in 2026. Read the detailed sections below for the full picture on each programme.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">

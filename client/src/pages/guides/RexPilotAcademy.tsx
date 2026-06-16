@@ -12,14 +12,17 @@ export default function RexPilotAcademy() {
       category="Pilot Training Australia"
       canonical="https://aviatoriq.com/australia/guides/rex-pilot-academy"
       metaDescription="Explore the Rex Pilot Academy (AAPA) cadet program, CASA regulations, training costs, and career opportunities for aspiring pilots in Australia in 2026."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction to Rex Pilot Academy (AAPA)",
           content: (
             <>
               <p>The Australian Airline Pilot Academy (AAPA), a wholly-owned subsidiary of Regional Express (Rex) Airlines, stands as a premier institution for aspiring commercial pilots in Australia. Established in November 2007, AAPA is renowned for its intensive, live-in Pilot Cadet Programme, designed to transform individuals with little to no flying experience into highly skilled and airline-ready first officers. Located in Wagga Wagga, New South Wales, the academy leverages a structured curriculum and direct pathway to Rex Airlines, offering a unique advantage in the competitive aviation industry.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
+              </p>
               <p>AAPA operates as a Registered Training Organisation (RTO), ensuring its programs meet stringent national vocational education and training standards. The academy's philosophy centers on producing pilots who not only possess exceptional technical proficiency but also embody the professional ethos required for airline operations. This guide covers the AAPA program, regulatory frameworks, financial considerations, and the career trajectory available to its graduates in 2026.</p>
             </>
           )

@@ -12,7 +12,7 @@ export default function NzAtplRequirements() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/nz-atpl-requirements"
       metaDescription="A comprehensive guide to New Zealand ATPL requirements for 2026, detailing CAA NZ regulations, flight hours, costs, and career pathways for aspiring airline pilots."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -21,6 +21,9 @@ export default function NzAtplRequirements() {
             <>
               <p>
                 The Airline Transport Pilot Licence (ATPL) represents the pinnacle of aviation certification, qualifying an individual to act as pilot-in-command of multi-crew aircraft in commercial air transport operations. In New Zealand, the Civil Aviation Authority (CAA NZ) governs the issuance of this prestigious licence, ensuring that only the most competent and experienced aviators command the nation's skies. Aspiring airline pilots embarking on this journey in 2026 must meticulously understand the regulatory framework, extensive flight experience prerequisites, rigorous theoretical examinations, and the significant financial investment required.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 This guide provides an exhaustive overview of the requirements for obtaining an ATPL in New Zealand, drawing directly from CAA NZ regulations and current industry standards. It is designed for serious candidates who are committed to a career in aviation and seek a clear, authoritative roadmap to achieving their professional pilot aspirations. The journey is demanding, but the rewards of a career in the cockpit of a major airline are unparalleled.

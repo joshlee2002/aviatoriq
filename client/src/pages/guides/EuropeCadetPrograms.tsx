@@ -12,14 +12,17 @@ export default function EuropeCadetPrograms() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/europe/guides/europe-cadet-programs"
       metaDescription="Explore the definitive guide to pilot training in Europe for 2026, covering EASA regulations, cadet programs, costs, and career paths."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction: The European Aviation Landscape in 2026",
           content: (
             <>
               <p>Europe, a continent with a rich aviation history and a forward-looking regulatory environment, presents a dynamic and highly competitive landscape for aspiring pilots. As of 2026, the European Union Aviation Safety Agency (EASA) continues to set the global benchmark for pilot training and licensing standards, ensuring a high level of safety and professionalism across its 31 member states. This guide provides an in-depth look into the pathways to becoming a commercial pilot in Europe, focusing on the regulatory framework, diverse training options, financial considerations, and the burgeoning opportunities within European airlines.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
+              </p>
               <p>The demand for highly skilled aviators remains robust, driven by fleet expansions, pilot retirements, and the continuous growth of air travel. Navigating the complexities of EASA Part-FCL (Flight Crew Licensing) and understanding the nuances of integrated versus modular training, along with the financial commitments involved, is crucial for any cadet embarking on this elite career path. This guide aims to equip you with the accurate, up-to-date information necessary to make informed decisions for your pilot journey in 2026 and beyond.</p>
             </>
           )

@@ -12,14 +12,17 @@ export default function EuropeRegionalAirlines() {
       category="Europe Pilot Training"
       canonical="https://aviatoriq.com/europe/guides/europe-regional-airlines-pilot-training"
       metaDescription="Comprehensive guide to becoming a regional airline pilot in Europe, covering EASA ATPL/MPL, training costs, financing, and key airlines for 2026."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Get my free US pilot roadmap"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "Introduction to European Regional Airline Pilot Training",
           content: (
             <>
               <p>The European regional airline sector is a vital component of the continent's aviation network, connecting smaller cities and feeding passengers into major hubs. In 2026, this dynamic market continues to experience steady growth, driven by increasing passenger demand and fleet modernization. This expansion translates into a consistent demand for highly skilled and well-trained pilots. Aspiring aviators looking to enter this exciting field must navigate a rigorous training landscape governed by the European Union Aviation Safety Agency (EASA), which sets stringent regulations to ensure the highest standards of safety and operational excellence across all Member States.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
               <p>Understanding the intricacies of EASA licensing, the various training pathways available, and the financial commitments involved is crucial for a successful career launch. This guide provides a comprehensive overview, equipping you with the knowledge needed to embark on your journey to the cockpit of a European regional airline.</p>
             </>
           )

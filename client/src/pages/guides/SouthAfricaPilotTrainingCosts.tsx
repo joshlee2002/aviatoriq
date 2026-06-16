@@ -12,14 +12,17 @@ export default function SouthAfricaPilotTrainingCosts() {
       category="Pilot Training, South Africa, Costs"
       canonical="https://aviatoriq.com/south-africa/guides/pilot-training-costs"
       metaDescription="Explore the comprehensive guide to pilot training costs in South Africa for 2026, including SACAA regulations, licensing pathways, and financing options."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Calculate your training costs"
+      ctaHref="/calculator"
       sections={[
         {
           heading: "1. Introduction: The Dream of Flight in South Africa",
           content: (
             <>
               <p>South Africa, with its vast and diverse landscapes, offers a unique and increasingly attractive environment for aspiring pilots. The nation boasts a well-established aviation infrastructure and a regulatory framework overseen by the South African Civil Aviation Authority (SACAA), making it a strategic choice for flight training. This guide delves into the financial landscape of pilot training in South Africa for 2026, providing a detailed breakdown of costs, regulatory insights, and practical advice for navigating your journey to the cockpit.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/calculator" className="text-blue-400 underline">Pilot Training Cost Calculator</Link> to get a personalised cost estimate based on your chosen route and country.
+              </p>
             </>
           )
         },

@@ -9,6 +9,7 @@ export default function AdhdPilotGuide() {
       canonical="/guides/adhd-pilot-uk"
       metaDescription="Can you become a commercial pilot in the UK with ADHD? The 2026 CAA rules explained. Medication bans, neuropsychological testing, and the 4 scenarios for certification."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/medical-check_8e2a1b9f.jpg"
       ctaHref="/tools/class-1-medical-check"
       ctaText="Check your medical readiness"
@@ -26,6 +27,9 @@ export default function AdhdPilotGuide() {
             <>
               <p>
                 This is the question anxious student pilots search for at 2am. The answer is more nuanced — and more hopeful — than most of what you will find on internet forums. ADHD is not automatically disqualifying for a UK CAA Class 1 Medical Certificate [1].
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
               </p>
               <p>
                 Many pilots with a childhood ADHD diagnosis, and some with adult ADHD, currently hold valid Class 1 certificates and fly commercially for UK airlines. The problem is that most ADHD-and-flying content online is heavily focused on the American FAA system. The UK CAA rules are different, and in some ways, they offer a more individualised approach.

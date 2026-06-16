@@ -10,10 +10,11 @@ export default function MilitaryToAirlineUSA() {
       canonical="/us/guides/military-to-airline-usa"
       metaDescription="Military pilot to airline transition USA 2026. How to translate military flight hours, the 750-hour R-ATP rule, and how airlines view military experience."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/military-airline_3b8b8da5.jpg"
       category="US Pilot Training"
       ctaHref="/us/roadmap"
-      ctaText="Generate my personalised roadmap"
+      ctaText="Get my free US pilot roadmap"
       scopeBanner={<GuideScopeBanner scope="This guide covers the transition from the US military to commercial airlines." />}
       faqSchema={[
         { question: "How many hours do military pilots need for an ATP?", answer: "Military-trained pilots are eligible for a Restricted Airline Transport Pilot (R-ATP) certificate at 750 hours of total flight time, instead of the standard 1,500 hours required for civilian pilots." },
@@ -28,6 +29,9 @@ export default function MilitaryToAirlineUSA() {
             <>
               <p>
                 Transitioning from a military cockpit to a commercial airliner is a well-established pathway in the United States. In 2026, with the ongoing pilot shortage and airlines competing for experienced talent, military pilots are in an exceptionally strong position.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <p>
                 Major airlines (Delta, United, American, Southwest) highly value military experience. The rigorous training, operational discipline, and leadership skills developed in the military translate perfectly to the flight deck of a commercial airliner.

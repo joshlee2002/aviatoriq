@@ -10,10 +10,11 @@ export default function AtpFlightSchoolGuide() {
       canonical="/us/guides/atp-flight-school-guide"
       metaDescription="ATP Flight School review 2026. Costs ($103,995), 7-month timeline, washout rates, and whether the Airline Career Pilot Program is right for you."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/atp-flight-school_9d4c2b8e.jpg"
       category="US Pilot Training"
-      ctaHref="/us/roadmap"
-      ctaText="Find my training route"
+      ctaHref="/schools"
+      ctaText="Browse the school directory"
       scopeBanner={<GuideScopeBanner scope="This guide covers ATP Flight School in the USA." globalHref="/guides/best-flight-schools-uk-2026" globalLabel="View UK flight schools →" />}
       faqSchema={[
         { question: "How much does ATP Flight School cost in 2026?", answer: "The Airline Career Pilot Program (zero experience to commercial pilot with instructor ratings) costs $103,995 in 2026. If you already hold a Private Pilot License (PPL), the cost is $90,995. This does not include living expenses or checkride examiner fees." },
@@ -28,6 +29,9 @@ export default function AtpFlightSchoolGuide() {
             <>
               <p>
                 ATP Flight School is the largest flight training company in the United States, operating over 75 locations and a massive fleet of standardized aircraft (mostly Piper Archers, Cessna 172s, and Piper Seminoles).
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Compare schools side by side in our <Link href="/schools" className="text-blue-400 underline">Flight School Directory</Link>, which lists verified schools with tuition fees, locations, and airline partnerships.
               </p>
               <p>
                 Their flagship offering is the Airline Career Pilot Program (ACPP) — a fast-track, highly structured syllabus designed to take a student with zero flight experience and turn them into a Commercial Pilot with Certified Flight Instructor (CFI/CFII/MEI) ratings in just 7 months.

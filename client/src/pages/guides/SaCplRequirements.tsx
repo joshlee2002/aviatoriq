@@ -12,7 +12,7 @@ export default function SaCplRequirements() {
       category="South Africa Pilot Training"
       canonical="https://aviatoriq.com/south-africa/guides/sacpl-requirements"
       metaDescription="Detailed guide to obtaining a Commercial Pilot License (CPL) in South Africa for 2026, covering SACAA requirements, training costs, and career opportunities."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function SaCplRequirements() {
           content: (
             <>
               <p>The journey to becoming a commercial pilot in South Africa is a rigorous yet rewarding path, governed by the stringent standards of the South African Civil Aviation Authority (SACAA). A Commercial Pilot License (CPL) is the essential credential that permits an individual to act as pilot-in-command of an aircraft for remuneration. This guide provides an exhaustive overview of the requirements, training modules, associated costs, and career opportunities within the South African aviation sector for 2026, ensuring aspiring pilots are equipped with accurate and comprehensive information.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>South Africa has long been recognized as a prime destination for pilot training, attracting both local and international students due to its favorable flying conditions, diverse airspace, and adherence to international aviation standards set by the International Civil Aviation Organization (ICAO). The SACAA’s regulatory framework, detailed primarily in the Civil Aviation Regulations (CAR) 2011 Part 61, ensures that all licensed pilots meet the highest safety and operational competencies.</p>
             </>
           )

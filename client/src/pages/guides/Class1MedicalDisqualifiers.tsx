@@ -16,9 +16,10 @@ const Class1MedicalDisqualifiers = () => {
         { question: "What is an OML and how does it affect my flying career?", answer: "An Operational Multi-crew Limitation (OML) allows a pilot with a certain medical condition to fly commercially, provided they always fly with a co-pilot who holds a full, unrestricted medical. Most commercial airline flying is multi-crew anyway, so an OML has minimal practical impact on an airline career." },
       ]}
       readTime="8 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/class1-disqualifiers_e8f2a91c.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
+      ctaHref="/tools/medical-condition-lookup"
+      ctaText="Check your medical condition"
       relatedGuides={[
         { title: "Am I Too Old to Become a Pilot?", href: "/guides/am-i-too-old-to-become-a-pilot", time: "6 min read" },
         { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "12 min read" },

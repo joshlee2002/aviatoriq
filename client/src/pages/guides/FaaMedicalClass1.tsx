@@ -11,8 +11,8 @@ export default function FaaMedicalClass1() {
       category="Medical Requirements"
       canonical="https://aviatoriq.com/us/guides/faa-medical-class-1"
       metaDescription="FAA Class 1 Medical Certificate 2026: vision 20/20 required, costs $150–$400, valid 12 months under 40 / 6 months over 40. Full requirements, AME process, and disqualifying conditions explained."
-      ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaText="Check your FAA medical condition"
+      ctaHref="/us/medical-lookup"
       faqSchema={[
         { question: "What are the vision requirements for an FAA Class 1 Medical?", answer: "Distant vision must be 20/20 or better in each eye separately, with or without correction. Near vision must be 20/40 or better at 16 inches. Intermediate vision (20/40 at 32 inches) is required for pilots aged 50 and over. Normal colour vision is required; colour vision deficiency may result in a limitation." },
         { question: "How much does an FAA Class 1 Medical cost?", answer: "FAA Class 1 Medical exams typically cost $150–$400 depending on the AME and location. An EKG (required at age 35 and over) adds $50–$150. There is no set FAA fee — AMEs set their own prices." },
@@ -28,6 +28,9 @@ export default function FaaMedicalClass1() {
             <>
               <p>
                 The FAA issues three classes of medical certificate, each corresponding to different piloting privileges. The class you need depends on what you intend to fly and in what capacity.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/us/medical-lookup" className="text-blue-400 underline">FAA Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your FAA medical application.
               </p>
 
               <div className="overflow-x-auto my-6">

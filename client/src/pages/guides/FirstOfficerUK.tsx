@@ -31,9 +31,10 @@ const FirstOfficerUK = () => {
         },
       ]}
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/first-officer_8f42d3d9.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
+      ctaHref="/quiz"
+      ctaText="Start your career assessment"
       sections={[
         {
           heading: "What Does a First Officer Do?",
@@ -41,6 +42,9 @@ const FirstOfficerUK = () => {
             <>
               <p>
                 A First Officer (FO), also known as a co-pilot, plays a crucial role in the flight deck of a multi-crew aircraft. Working in tandem with the Captain, the FO is responsible for assisting in the safe and efficient operation of the flight. This involves a wide range of duties, from pre-flight checks and flight planning to in-flight navigation, communication with air traffic control, and monitoring aircraft systems. During a flight, the responsibilities are typically shared, with one pilot acting as the Pilot Flying (PF) and the other as the Pilot Monitoring (PM), roles which are alternated between flights.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <img src="/manus-storage/first-officer-job_23328c88.jpg" alt="Airline first officer cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/pilot-briefing_76df7230.jpg" alt="Pilot pre-flight briefing" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />

@@ -12,14 +12,17 @@ export default function EtihadCadetPilotProgram() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/etihad-cadet-pilot-program"
       metaDescription="Explore the Etihad Airways Cadet Pilot Program for 2026. Learn about eligibility, the MPL training structure, GCAA regulations, and career opportunities for UAE nationals."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction to the Etihad Cadet Pilot Program",
           content: (
             <>
               <p>The Etihad Airways Cadet Pilot Program represents a pinnacle of aviation training in the Middle East, offering an unparalleled opportunity for ambitious UAE nationals to forge a career as a commercial airline pilot. This highly selective program is meticulously designed to cultivate future aviators to the exacting standards required by Etihad Airways, the national airline of the United Arab Emirates. Focusing on the Multi-Crew Pilot License (MPL) pathway, the program integrates advanced theoretical knowledge with extensive practical and simulator training, preparing cadets for the complexities of modern airline operations from day one.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
+              </p>
               <p>Unlike traditional pilot training routes, the MPL program is airline-centric, meaning the curriculum is tailored specifically to the operational procedures and aircraft types flown by Etihad Airways. This bespoke approach ensures that graduates are not only proficient in flying but are also fully integrated into the airline's culture and operational philosophy upon completion. The program is a significant investment by Etihad in developing local talent, reinforcing its commitment to Emiratisation within the aviation sector.</p>
             </>
           )

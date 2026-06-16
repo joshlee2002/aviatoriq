@@ -10,9 +10,10 @@ export default function PilotTrainingOver40() {
       canonical="/guides/pilot-training-over-40"
       metaDescription="Pilot training over 40 UK 2026. No upper age limit, mandatory retirement at 65. ROI calculation, Class 1 medical changes, and realistic career timeline for older pilots."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-over-40_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="Hiring age limits and career runway figures in this guide are based on UK airline practices." usHref="/us/guides/pilot-training-over-40-usa" usLabel="View USA version →" />}
       faqSchema={[
         { question: "Is there an upper age limit to start pilot training in the UK?", answer: "No. There is no legal upper age limit to start pilot training. However, the mandatory retirement age for commercial pilots is 65, which limits your career runway if you start late." },
@@ -27,6 +28,9 @@ export default function PilotTrainingOver40() {
             <>
               <p>
                 There is no legal upper age limit to start pilot training in the UK. The mandatory retirement age for commercial pilots is 65 — set by ICAO and adopted by the UK CAA. This means a 40-year-old starting training today has a potential 25-year commercial flying career ahead of them.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 A 45-year-old has 20 years. A 50-year-old has 15 years. These are not trivial career lengths — many professions consider 15–20 years a full career.

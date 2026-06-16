@@ -12,8 +12,8 @@ export default function AustraliaRegionalAirlines() {
       category="Australia Pilot Careers"
       canonical="https://aviatoriq.com/australia/guides/australia-regional-airlines"
       metaDescription="Explore the detailed pathway to becoming a regional airline pilot in Australia, covering CASA regulations, training costs, and airline-specific requirements for 2026."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Get my free US pilot roadmap"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "The Backbone of Australian Aviation: Regional Airlines in 2026",
@@ -21,6 +21,9 @@ export default function AustraliaRegionalAirlines() {
             <>
               <p>
                 Australia's vast and diverse landscape necessitates a robust regional aviation network. These airlines are not merely feeders for major international hubs; they are the lifeblood connecting remote communities, supporting vital industries, and facilitating domestic travel across the continent. In 2026, the regional sector continues to be a dynamic and essential component of the national economy, offering unique and rewarding career paths for aspiring pilots. Understanding this intricate ecosystem is the first step towards a successful career in the cockpit of a regional aircraft.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <p>
                 The demand for skilled pilots in regional Australia remains consistently high, driven by factors such as fleet expansions, pilot retirements, and the ongoing need to service an ever-growing network of regional routes. This guide provides an in-depth look into the requirements, training, costs, and career prospects for those aiming to join the ranks of Australia's regional airline pilots, ensuring you are equipped with the most current and accurate information for 2026.

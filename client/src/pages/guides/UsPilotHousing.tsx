@@ -13,13 +13,16 @@ export default function UsPilotHousing() {
       canonical="https://aviatoriq.com/us/guides/us-pilot-housing"
       metaDescription="A deep dive into US pilot training housing in 2026. Understand costs, options, and how to choose accommodations that support your aviation career."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "Introduction: The Crucial Role of Housing in Pilot Training",
           content: (
             <>
               <p>Where you live during flight training has a direct impact on your training costs and your ability to progress quickly. This guide covers the realistic housing options for student pilots in the US — from school-arranged accommodation to crash pads and local rentals — with real cost figures for 2026.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
               <p>Accelerated pilot training programs, whether under FAA Part 61 or Part 141 regulations, demand an high level of dedication and focus. These programs are intensive, requiring long hours of ground school, simulator sessions, and actual flight time. A stable, conducive living environment minimizes distractions, reduces commute times, and provides the necessary tranquility for rigorous study and adequate rest. This guide covers housing options available to pilot trainees in the US for 2026, offering a strategic perspective on making informed decisions that align with your career aspirations and financial planning.</p>
             </>
           )

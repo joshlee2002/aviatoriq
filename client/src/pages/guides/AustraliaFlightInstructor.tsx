@@ -12,7 +12,7 @@ export default function AustraliaFlightInstructor() {
       category="Flight Instructor Training"
       canonical="https://aviatoriq.com/australia/guides/australia-flight-instructor"
       metaDescription="A comprehensive guide for aspiring flight instructors in Australia. Learn about CASA regulations, training requirements, costs, and career opportunities in 2026."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function AustraliaFlightInstructor() {
           content: (
             <>
               <p>Becoming a Flight Instructor (FI) in Australia is a rewarding career path for experienced pilots looking to share their knowledge and passion for aviation. The role involves not only teaching the practical skills of flying but also instilling the critical theoretical understanding and safety culture essential for future aviators. This guide provides a detailed overview of the requirements, training process, costs, and career opportunities for aspiring Flight Instructors in Australia, adhering to the Civil Aviation Safety Authority (CASA) regulations for 2026.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>The demand for qualified flight instructors remains consistent, driven by the continuous growth of the aviation industry and the need to train new pilots for commercial airlines, general aviation, and recreational flying. A Flight Instructor Rating (FIR) is a significant step in a pilot's professional development, offering diverse career prospects and the chance to build valuable flight hours and experience.</p>
             </>
           )

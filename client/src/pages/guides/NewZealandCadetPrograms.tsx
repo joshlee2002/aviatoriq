@@ -12,8 +12,8 @@ export default function NewZealandCadetPrograms() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-cadet-programs"
       metaDescription="Explore New Zealand's pilot cadet programs, including Air New Zealand's Mangōpare, and independent training pathways for 2026. Detailed insights on regulations, costs, and career opportunities."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "The Landscape of Pilot Training in New Zealand",
@@ -21,6 +21,9 @@ export default function NewZealandCadetPrograms() {
             <>
               <p>
                 New Zealand, known for its stunning landscapes and robust aviation industry, offers aspiring pilots a clear, albeit rigorous, path to the cockpit. In 2026, the demand for skilled aviators remains consistent, driven by both national carriers and regional operators. This guide delves into the primary avenues for pilot training: airline-sponsored cadet programs and independent flight training pathways, with a particular focus on the unique opportunities and regulatory environment within Aotearoa.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <p>
                 The Civil Aviation Authority of New Zealand (CAA NZ) governs all aviation activities, ensuring high standards of safety and proficiency. Prospective pilots must navigate specific licensing requirements, medical certifications, and English language proficiency standards, all of which are critical for a successful career in New Zealand aviation. Understanding these foundational elements is the first step towards achieving your aviation dreams.

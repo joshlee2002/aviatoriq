@@ -9,9 +9,10 @@ export default function HowToBecomePilotAustralia() {
       canonical="/guides/how-to-become-a-pilot-australia"
       metaDescription="How to become an airline pilot in Australia in 2026. Covers CASA licences (RPL, PPL, CPL, ATPL), Part 142 integrated vs modular routes, real costs (AUD $65k–$120k), and airline cadet programmes."
       readTime="14 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/airplane-takeoff_6f139e92.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       faqSchema={[
         { question: "How long does it take to become a pilot in Australia?", answer: "Integrated CPL training typically takes 12–18 months full-time. Modular training usually takes 2–4 years part-time. Reaching the airlines depends on the hiring market and whether you secure a cadet programme place." },
         { question: "How much does it cost to become a pilot in Australia?", answer: "A Commercial Pilot Licence (CPL) typically costs AUD $65,000–$120,000. Part 142 integrated programmes are often more expensive per hour but require fewer total hours (150 vs 200). A Private Pilot Licence (PPL) alone costs AUD $20,000–$30,000." },

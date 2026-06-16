@@ -12,14 +12,17 @@ export default function UaePilotSalary2026() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/uae/guides/uae-pilot-salary-2026"
       metaDescription="Explore the lucrative tax-free pilot salaries and extensive benefits offered by UAE airlines like Emirates in 2026. Detailed insights for First Officers and Captains."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "The Allure of UAE Aviation: A Tax-Free Haven for Pilots",
           content: (
             <>
               <p>The United Arab Emirates (UAE) has firmly established itself as a global aviation hub, attracting pilots from across the world with its modern infrastructure, strategic geographical location, and, most notably, its highly competitive, tax-free remuneration packages. For 2026, the UAE continues to offer an unparalleled financial proposition for aviation professionals, particularly those aspiring to or currently flying with its flagship carrier, Emirates. This guide delves into the intricate details of pilot salaries, comprehensive benefits, and the regulatory landscape governed by the General Civil Aviation Authority (GCAA), providing a realistic outlook for prospective and current pilots in the region.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
+              </p>
               <p>The absence of personal income tax in the UAE is a significant differentiator, meaning that gross salary is effectively net take-home pay. This fundamental advantage, coupled with generous allowances for housing, education, and travel, positions UAE airlines among the most attractive employers globally. Understanding the nuances of these packages is crucial for pilots evaluating career opportunities in this dynamic market.</p>
             </>
           )

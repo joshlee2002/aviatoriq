@@ -12,14 +12,17 @@ export default function SouthAfricaRegionalAirlines() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/south-africa/guides/south-africa-regional-airlines-pilot-training"
       metaDescription="A detailed guide for aspiring pilots in South Africa, covering SACAA regulations, training costs, regional airline career paths, and essential insights for 2026."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Get my free US pilot roadmap"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "Introduction to South Africa's Regional Aviation Landscape",
           content: (
             <>
               <p>South Africa, with its vast landscapes and growing economic ties across the continent, presents a vibrant and expanding regional aviation market. Aspiring pilots looking to embark on a fulfilling career will find a robust regulatory framework governed by the South African Civil Aviation Authority (SACAA) and numerous opportunities within regional carriers. This guide provides an exhaustive overview of the journey from aspiring aviator to a qualified pilot flying for South African regional airlines, focusing on 2026 data, regulations, and career insights.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
               <p>The regional airline sector plays a crucial role in connecting smaller cities and towns, feeding into larger hubs, and facilitating business and tourism. Understanding the specific requirements, training pathways, and financial commitments is paramount for a successful career trajectory in this dynamic environment.</p>
             </>
           )

@@ -12,14 +12,17 @@ export default function FaaMedicalClass3() {
       category="Medical Certification"
       canonical="https://aviatoriq.com/us/guides/faa-medical-class-3"
       metaDescription="Comprehensive 2026 guide to the FAA Class 3 Medical Certificate. Learn about vision and hearing standards, the MedXPress process, costs, and Special Issuances."
-      ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaText="Check your FAA medical condition"
+      ctaHref="/us/medical-lookup"
       sections={[
         {
           heading: "Introduction: The Foundation of Your Private Pilot Journey",
           content: (
             <>
               <p>The FAA Class 3 Medical Certificate is the minimum medical standard required for a Private Pilot Certificate in the United States. This guide covers the exact requirements, the examination process, what conditions can disqualify you, and the real 2026 costs — so you know exactly what to expect before you book your appointment with an Aviation Medical Examiner (AME).</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/us/medical-lookup" className="text-blue-400 underline">FAA Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your FAA medical application.
+              </p>
               <p>The Class 3 Medical Certificate is mandated by <strong>14 CFR Part 61.23</strong> for private pilot operations, recreational pilot operations, and student pilot operations. It signifies that an airman meets the minimum health standards to safely exercise the privileges of their certificate. Without a valid Class 3 Medical, you cannot act as pilot-in-command for these activities.</p>
             </>
           )

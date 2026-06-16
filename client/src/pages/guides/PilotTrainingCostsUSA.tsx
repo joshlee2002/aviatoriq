@@ -8,6 +8,9 @@ export default function PilotTrainingCostsUSA() {
       title="How Much Does Pilot Training Cost in the USA in 2026?"
       subtitle="The complete, itemised breakdown of US pilot training costs from zero to ATP — with real school prices, hidden fees, financing options, and a full ROI analysis."
       readTime="14 min read"
+      ctaHref="/us/calculator"
+      ctaText="Calculate your US training costs"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/training-costs-usa_3d276236.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/pilot-training-costs-usa"
@@ -29,6 +32,9 @@ export default function PilotTrainingCostsUSA() {
             <>
               <p>
                 Becoming an airline pilot in the United States requires a financial commitment that rivals a professional degree. In 2026, the journey from zero flight experience to holding a Commercial Pilot Certificate with Flight Instructor ratings — the minimum required to get a job building hours toward the airlines — costs between <strong>$80,000 and $124,000</strong> depending on the school and route you choose.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/us/calculator" className="text-blue-400 underline">US Pilot Training Cost Calculator</Link> to get a personalised estimate based on your chosen training path.
               </p>
               <p>
                 The return on that investment has never been stronger. Regional airline First Officers now start at <strong>$80,000–$110,000</strong> in their first year, and major airline Captains at Delta, United, and American earn <strong>$465,000–$520,000</strong> annually at the top of the pay scale — a figure that was unimaginable a decade ago. The Big Three airlines ratified new contracts in 2023 that phased in through 2026, converging on identical widebody captain pay of $465.13 per hour across all three carriers.

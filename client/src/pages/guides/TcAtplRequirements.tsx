@@ -11,7 +11,7 @@ export default function TcAtplRequirements() {
       category="ATPL Requirements"
       canonical="https://aviatoriq.com/canada/guides/tc-atpl-requirements"
       metaDescription="Detailed guide to Transport Canada Airline Transport Pilot Licence (ATPL) requirements for 2026, including age, medical, knowledge, and flight experience."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function TcAtplRequirements() {
             <>
               <p>
                 The Airline Transport Pilot Licence (ATPL) represents the highest certification for aeroplane pilots in Canada, issued by Transport Canada (TC). It is the mandatory credential for anyone aspiring to command multi-crew, multi-engine aircraft in commercial air transport operations. Achieving this licence signifies a pilot's profound expertise, extensive experience, and unwavering commitment to aviation safety and professionalism. As of 2026, the requirements are meticulously designed to ensure that Canadian ATPL holders meet and exceed international standards, preparing them for the demanding roles within major airlines such as Air Canada, WestJet, and Air Transat.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 This guide provides an in-depth look at the current and forthcoming regulations, ensuring prospective pilots have the most accurate and actionable information. From initial eligibility to the final skill test, every facet of the journey is covered, emphasizing the critical importance of each step in building a successful and safe career in the Canadian airline industry.

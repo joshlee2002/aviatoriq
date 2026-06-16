@@ -10,10 +10,11 @@ export default function PilotAptitudeTestUSA() {
       canonical="/us/guides/pilot-aptitude-test-usa"
       metaDescription="Pilot aptitude test USA 2026. How to pass the AFAST, Delta psychological screening, and United Aviate assessments. What US airlines actually test."
       readTime="10 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/aptitude-test_9d4c2b8e.jpg"
       category="US Pilot Training"
-      ctaHref="/us/roadmap"
-      ctaText="Find my training route"
+      ctaHref="/us/quiz"
+      ctaText="Start your US career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide covers aptitude tests used by US airlines and cadet programmes." globalHref="/guides/pilot-aptitude-test-preparation" globalLabel="View UK/European aptitude tests →" />}
       faqSchema={[
         { question: "Do US airlines use pilot aptitude tests?", answer: "Yes, but differently than European airlines. While European airlines rely heavily on psychomotor and multi-tasking tests (like Cut-e or PILAPT), US airlines focus more heavily on psychological screening, personality profiling, and cognitive reasoning (like the AFAST or Delta's specific battery)." },
@@ -28,6 +29,9 @@ export default function PilotAptitudeTestUSA() {
             <>
               <p>
                 If you read pilot forums, you will see a lot of discussion about "joystick and rudder" aptitude tests like PILAPT or Cut-e. It is important to understand that these psychomotor tests are primarily a European phenomenon.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Before your interview, complete our free <Link href="/us/quiz" className="text-blue-400 underline">US Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
               </p>
               <p>
                 In the United States, the hiring philosophy is different. Because the FAA's 1,500-hour rule ensures that any pilot applying to a Part 121 airline already has significant flying experience, US airlines do not need to test your basic hand-eye coordination. Your logbook proves you can fly an airplane.

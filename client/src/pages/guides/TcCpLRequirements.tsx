@@ -12,7 +12,7 @@ export default function TcCpLRequirements() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/transport-canada-cpl-requirements"
       metaDescription="Discover the complete 2026 Transport Canada Commercial Pilot License (CPL) requirements, including flight hours, ground school, medical standards, and training costs."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function TcCpLRequirements() {
           content: (
             <>
               <p>The Commercial Pilot License (CPL) in Canada is a pivotal achievement for aspiring aviators, marking the transition from recreational flying to a professional career. In 2026, the Canadian aviation industry is experiencing a dynamic period, characterized by airlines actively rebuilding and expanding their fleets, regional operators extending their routes, and a consistent demand for skilled pilots due to ongoing retirements. This guide provides a comprehensive overview of the requirements set forth by Transport Canada for obtaining a CPL, ensuring you are well-prepared for the journey ahead.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>A CPL empowers you to engage in various professional aviation activities, including flight instruction, charter operations, and entry-level positions with airlines. Understanding the intricacies of the licensing process, from initial eligibility to advanced flight training, is crucial for a successful career in Canadian aviation.</p>
             </>
           )

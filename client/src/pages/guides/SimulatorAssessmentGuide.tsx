@@ -10,9 +10,10 @@ export default function SimulatorAssessmentGuide() {
       canonical="/guides/airline-simulator-assessment"
       metaDescription="Airline simulator assessment guide 2026. What to expect in a raw data sim check, how to handle CRM scenarios, and how to prepare for the hardest part of airline selection."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/sim-assessment_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide covers simulator assessments for UK and European airlines." usHref="/us/guides/airline-interview-usa" usLabel="View USA airline interview guide →" />}
       faqSchema={[
         { question: "What is an airline simulator assessment?", answer: "A simulator assessment is a practical flight test in a full-motion Level D simulator (usually an A320 or B737). It is used by airlines to assess a candidate's basic instrument flying skills, crew resource management (CRM), and ability to learn under pressure." },
@@ -27,6 +28,9 @@ export default function SimulatorAssessmentGuide() {
             <>
               <p>
                 The simulator assessment is the most technically demanding and stressful stage of airline pilot selection. You will be placed in a multi-million-pound Level D full-flight simulator — typically an Airbus A320 or Boeing 737 — alongside another candidate or a training captain.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Before your interview, complete our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
               </p>
               <p>
                 The most common misconception is that the airline expects you to fly the jet perfectly. They do not. If you are a 200-hour cadet whose only twin-engine experience is in a Diamond DA42, they know you will struggle with the inertia and speed of a 70-tonne airliner.

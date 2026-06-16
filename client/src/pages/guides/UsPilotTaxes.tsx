@@ -13,13 +13,16 @@ export default function UsPilotTaxes() {
       canonical="https://aviatoriq.com/us/guides/us-pilot-taxes"
       metaDescription="Comprehensive guide to US pilot taxes in 2026, covering flight training deductions, 529 plans, and essential tax strategies for aviators."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "Introduction: The Complexities of Pilot Taxation in the US",
           content: (
             <>
               <p>The journey to becoming a professional pilot in the United States is a significant investment, not only in time and dedication but also financially. Understanding the intricate landscape of US tax laws, particularly as they apply to flight training and a pilot's career, is crucial for optimizing financial planning. This guide provides a detailed overview of tax considerations for both aspiring and current pilots in 2026, offering insights into potential deductions, the role of educational savings, and best practices for record-keeping.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to see a timeline from training to captain.
+              </p>
               <p>While the allure of the skies is strong, the financial realities, including tax obligations and opportunities, demand careful attention. This document aims to demystify these complexities, providing a professional, honest, and elite perspective on managing your finances as an aviator.</p>
             </>
           )

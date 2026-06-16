@@ -10,6 +10,7 @@ export default function IntegratedVsModularCost() {
       canonical="/guides/integrated-vs-modular-cost"
       metaDescription="Integrated vs modular ATPL cost comparison 2026. Integrated: £80k-£130k. Modular: £55k-£85k. But the real difference is smaller than you think. Full breakdown."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/training-costs_9d4c2b8e.jpg"
       ctaHref="/calculator"
       ctaText="Use the cost calculator"
@@ -26,6 +27,9 @@ export default function IntegratedVsModularCost() {
             <>
               <p>
                 The headline cost comparison is straightforward. Integrated ATPL training at a major UK academy costs £80,000–£130,000. Modular ATPL training typically costs £55,000–£85,000. On paper, modular is cheaper by £25,000–£45,000.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/calculator" className="text-blue-400 underline">Pilot Training Cost Calculator</Link> to get a personalised cost estimate based on your chosen route and country.
               </p>
               <p>
                 But the headline numbers are misleading. The real cost comparison is more nuanced, and for many candidates, the difference is smaller than it appears — or even reversed.

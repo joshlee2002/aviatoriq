@@ -85,7 +85,6 @@ import AmITooOld from "./pages/guides/AmITooOld";
 import Class1MedicalDisqualifiers from "./pages/guides/Class1MedicalDisqualifiers";
 import CadetProgrammes from "./pages/guides/CadetProgrammes";
 import PilotTrainingFinance2026 from "./pages/guides/PilotTrainingFinance2026";
-import ModularVsIntegratedDeep from "./pages/guides/ModularVsIntegratedDeep";
 import PilotSalaryUK2026 from "./pages/guides/PilotSalaryUK2026";
 import ReadyToStartTraining from "./pages/guides/ReadyToStartTraining";
 import HourBuilding from "./pages/guides/HourBuilding";
@@ -129,7 +128,6 @@ import TypeRatingUSA from "./pages/guides/TypeRatingUSA";
 import WomenInAviationUSA from "./pages/guides/WomenInAviationUSA";
 import PilotCvGuideUSA from "./pages/guides/PilotCvGuideUSA";
 import BestFlightSchoolsUSA from "./pages/guides/BestFlightSchoolsUSA";
-import PilotShortageUSA from "./pages/guides/PilotShortageUSA";
 import TrainingTimelineUSA from "./pages/guides/TrainingTimelineUSA";
 import PilotTrainingCostsUSA from "./pages/guides/PilotTrainingCostsUSA";
 import MilitaryToAirlineUSA from "./pages/guides/MilitaryToAirlineUSA";
@@ -165,10 +163,10 @@ import FaaMedicalClass3 from "@/pages/guides/FaaMedicalClass3";
 import UsFlightSchoolLoans from "@/pages/guides/UsFlightSchoolLoans";
 import UsCadetPrograms from "@/pages/guides/UsCadetPrograms";
 import UsMilitaryPilotToAirlines from "@/pages/guides/UsMilitaryPilotToAirlines";
-import UsPilotShortage2026 from "@/pages/guides/UsPilotShortage2026";
 import UsPilotSalary2026 from "@/pages/guides/UsPilotSalary2026";
 import UsPilotRetirementAge from "@/pages/guides/UsPilotRetirementAge";
 import UsPilotUnionGuide from "@/pages/guides/UsPilotUnionGuide";
+import UsPilotShortage2026 from "@/pages/guides/UsPilotShortage2026";
 import UsPilotSeniority from "@/pages/guides/UsPilotSeniority";
 import UsPilotCommuting from "@/pages/guides/UsPilotCommuting";
 import UsPilotBases from "@/pages/guides/UsPilotBases";
@@ -276,6 +274,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import EditorialPolicy from "./pages/EditorialPolicy";
+import AboutOurAuthors from "./pages/AboutOurAuthors";
 
 // Initialise PostHog analytics once on app load
 initAnalytics();
@@ -339,7 +339,6 @@ function Router() {
       <Route path="/guides/class-1-medical-disqualifiers" component={Class1MedicalDisqualifiers} />
       <Route path="/guides/cadet-pilot-programmes-uk" component={CadetProgrammes} />
       <Route path="/guides/how-to-finance-pilot-training-uk" component={PilotTrainingFinance2026} />
-      <Route path="/guides/modular-vs-integrated-pilot-training" component={ModularVsIntegratedDeep} />
       <Route path="/guides/uk-pilot-salary-2026" component={PilotSalaryUK2026} />
       <Route path="/guides/am-i-ready-to-start-pilot-training" component={ReadyToStartTraining} />
       <Route path="/guides/hour-building-pilot-uk" component={HourBuilding} />
@@ -395,6 +394,8 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/terms" component={Terms} />
+      <Route path="/editorial-policy" component={EditorialPolicy} />
+      <Route path="/about-our-authors" component={AboutOurAuthors} />
 
       {/* Country selector */}
       <Route path="/select" component={CountrySelect} />
@@ -439,7 +440,6 @@ function Router() {
       <Route path="/us/guides/women-in-aviation-usa" component={WomenInAviationUSA} />
       <Route path="/us/guides/pilot-resume-usa" component={PilotCvGuideUSA} />
       <Route path="/us/guides/best-flight-schools-usa" component={BestFlightSchoolsUSA} />
-      <Route path="/us/guides/us-pilot-shortage-2026" component={PilotShortageUSA} />
       <Route path="/us/guides/pilot-training-timeline-usa" component={TrainingTimelineUSA} />
       <Route path="/us/guides/pilot-training-costs-usa" component={PilotTrainingCostsUSA} />
       <Route path="/us/guides/military-to-airline-usa" component={MilitaryToAirlineUSA} />
@@ -558,7 +558,14 @@ function Router() {
       {/* 404 */}
       <Route path="/404" component={NotFound} />
       <Route path="*" component={NotFound} />
-    </Switch>
+            <Route path=\/canada/guides/best-flight-schools-canada\ component={BestFlightSchoolsCanada} />
+        <Route path=\/australia/guides/best-flight-schools-australia\ component={BestFlightSchoolsAustralia} />
+        <Route path=\/europe/guides/best-flight-schools-europe\ component={BestFlightSchoolsEurope} />
+        <Route path=\/us/guides/airline-interview-prep\ component={AirlineInterviewPrepUSA} />
+        <Route path=\/guides/pilot-lifestyle-uk\ component={PilotLifestyleUK} />
+        <Route path=\/uae/guides/how-to-become-a-pilot-uae\ component={HowToBecomePilotUAE} />
+        <Route path=\/uae/guides/uae-pilot-training-costs\ component={UAEPilotTrainingCosts} />
+      </Switch>
     </>  );
 }
 

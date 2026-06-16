@@ -10,10 +10,11 @@ export default function DeltaPropelGuide() {
       canonical="/us/guides/delta-propel-program"
       metaDescription="Delta Propel Program 2026 guide. Requirements, the four pathways (Collegiate, CFI, Company, Scholarship), and how to get a Qualified Job Offer to Delta."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/delta-propel_9d4c2b8e.jpg"
       category="US Pilot Training"
-      ctaHref="/us/roadmap"
-      ctaText="Find my training route"
+      ctaHref="/us/cadet-eligibility"
+      ctaText="Check your US cadet programme eligibility"
       scopeBanner={<GuideScopeBanner scope="This guide covers the Delta Propel program in the USA." globalHref="/guides/cadet-pilot-programmes-uk" globalLabel="View UK cadet programmes →" />}
       faqSchema={[
         { question: "What is the Delta Propel program?", answer: "Delta Propel is a pilot career path program that offers a defined route to a flight deck position at Delta Air Lines. Participants receive a Qualified Job Offer (QJO) and mentorship from an active Delta pilot." },
@@ -28,6 +29,9 @@ export default function DeltaPropelGuide() {
             <>
               <p>
                 The Delta Propel Pilot Career Path Program is Delta Air Lines' official pipeline for recruiting the next generation of aviators. Like United Aviate, it is designed to lock in top talent early by offering a defined, secure pathway to a major airline flight deck.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/us/cadet-eligibility" className="text-blue-400 underline">US Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <p>
                 The core benefit of the Propel program is the <strong>Qualified Job Offer (QJO)</strong>. If you are accepted into Propel, you receive a QJO that details your specific, streamlined path to becoming a Delta pilot. 

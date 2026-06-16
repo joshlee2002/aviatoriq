@@ -13,7 +13,7 @@ export default function UsRegionalAirlinesGuide() {
       canonical="https://aviatoriq.com/us/guides/us-regional-airlines-guide"
       metaDescription="Comprehensive guide for aspiring regional airline pilots in the US. Covers 2026 FAA regulations, training costs, career paths, and hiring requirements."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "The Gateway to Commercial Aviation: Understanding Regional Airlines",
@@ -21,6 +21,9 @@ export default function UsRegionalAirlinesGuide() {
             <>
               <p>
                 The journey to becoming a commercial airline pilot in the United States often begins with the regional airlines. These carriers serve as a vital feeder system to major airlines, offering invaluable experience in multi-crew, turbine aircraft operations within a structured airline environment. For 2026, the demand for qualified pilots at regional carriers remains robust, driven by retirements at major airlines and sustained growth in air travel. Aspiring aviators must navigate a complex landscape of Federal Aviation Administration (FAA) regulations, rigorous training requirements, and significant financial investment. This guide provides an authoritative and detailed roadmap for individuals committed to a career in the US regional airline sector.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <p>
                 Regional airlines, such as Envoy Air, Republic Airways, SkyWest Airlines, and Mesa Airlines, operate under Part 121 of the FAA regulations, similar to major carriers, but typically fly smaller aircraft on shorter routes. This operational model provides a unique training ground for new pilots, allowing them to accumulate the necessary flight hours and experience required for advancement. Understanding the nuances of this pathway, from initial flight training to securing that first officer position, is paramount for success.

@@ -12,8 +12,8 @@ export default function CanadaPilotBenefits() {
       category="Canada Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-benefits"
       metaDescription="Detailed guide to pilot training in Canada, covering licenses, costs, career outlook, and benefits for 2026. Learn about PPL, CPL, ATPL, and top airlines."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction: The Allure of Canadian Aviation",
@@ -21,6 +21,9 @@ export default function CanadaPilotBenefits() {
             <>
               <p>
                 Canada, with its vast airspace and robust aviation industry, offers an exceptional environment for aspiring pilots. The journey to becoming a professional pilot in Canada is rigorous but incredibly rewarding, leading to a career filled with challenge, prestige, and significant benefits. This comprehensive guide provides an in-depth look into the pilot training landscape in Canada for 2026, covering everything from licensing requirements and training costs to career prospects and the unique advantages of flying in Canadian skies.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
               </p>
               <p>
                 The Canadian aviation sector is governed by Transport Canada (TC), which sets stringent standards for pilot licensing, training, and operations, ensuring a high level of safety and professionalism. Aspiring pilots will navigate through various license types, each building upon the last, culminating in the Airline Transport Pilot License (ATPL), the pinnacle of aviation certification.

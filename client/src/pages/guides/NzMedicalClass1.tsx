@@ -12,8 +12,8 @@ export default function NzMedicalClass1() {
       category="Medical Certification"
       canonical="https://aviatoriq.com/new-zealand/guides/nz-medical-class-1"
       metaDescription="Comprehensive guide to obtaining a New Zealand CAA Class 1 Medical Certificate in 2026. Learn about requirements, costs, the application process, and medical standards."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your medical condition"
+      ctaHref="/tools/medical-condition-lookup"
       sections={[
         {
           heading: "Understanding the NZ CAA Class 1 Medical Certificate",
@@ -21,6 +21,9 @@ export default function NzMedicalClass1() {
             <>
               <p>
                 Becoming a commercial pilot in New Zealand requires not only rigorous flight training but also a stringent medical certification process. The New Zealand Civil Aviation Authority (CAA) Class 1 Medical Certificate is the highest standard of medical fitness for aviators, essential for those aspiring to careers as airline pilots or commercial operators.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
               </p>
               <p>
                 The Class 1 Medical Certificate is mandatory for pilots exercising the privileges of an Air Transport Pilot Licence (ATPL), Commercial Pilot Licence (CPL), or Multi-crew Pilot Licence (MPL). It signifies that a pilot meets the highest medical standards necessary to ensure public safety in commercial aviation operations. The requirements are designed to identify any medical conditions that could impair a pilot's ability to safely operate an aircraft.

@@ -11,14 +11,17 @@ export default function UaeMedicalClass1() {
       category="Pilot Medicals"
       canonical="https://aviatoriq.com/uae/guides/uae-medical-class-1"
       metaDescription="A detailed guide for aspiring and current pilots on the UAE GCAA Class 1 Medical Certificate, covering 2026 requirements, costs, and approved clinics."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your medical condition"
+      ctaHref="/tools/medical-condition-lookup"
       sections={[
         {
           heading: "1. Understanding the GCAA Class 1 Medical Certificate",
           content: (
             <>
               <p>The General Civil Aviation Authority (GCAA) Class 1 Medical Certificate is the cornerstone for any aspiring or current professional pilot in the United Arab Emirates. This rigorous medical assessment ensures that pilots meet the highest standards of physical and mental health, crucial for the safety of aviation. Unlike some other regions, the GCAA maintains its own distinct set of regulations, though they often align with international best practices from bodies like EASA and ICAO. Obtaining this certificate is a mandatory step before commencing flight training for a Commercial Pilot License (CPL) or Airline Transport Pilot License (ATPL) in the UAE.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
+              </p>
               <p>The GCAA's medical standards are designed to identify any condition that could potentially impair a pilot's ability to safely operate an aircraft. This guide provides an in-depth look into the 2026 requirements, helping you prepare thoroughly for your medical examination.</p>
             </>
           ),

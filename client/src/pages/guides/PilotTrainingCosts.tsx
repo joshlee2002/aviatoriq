@@ -9,9 +9,10 @@ export default function PilotTrainingCosts() {
       canonical="/guides/pilot-training-costs"
       metaDescription="Complete 2026 breakdown of UK pilot training costs. Integrated ATPL £90k–£130k, modular £40k–£80k, overseas from £47k. Includes hidden costs, finance options, and real total budgets."
       readTime="15 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-training-cost_55d64cb4.jpg"
-      ctaHref="/quiz"
-      ctaText="Get a personalised cost estimate"
+      ctaHref="/calculator"
+      ctaText="Calculate your training costs"
       faqSchema={[
         { question: "How much does ATPL training cost in the UK in 2026?", answer: "Integrated ATPL training at UK schools costs £90,000–£130,000. Modular ATPL training costs £40,000–£80,000 spread over 3–5 years. Overseas integrated training (e.g., Bartolini Air in Poland) costs from approximately £47,000–£60,000 for the same qualification." },
         { question: "What is the cheapest way to become a pilot in the UK?", answer: "The cheapest route to a UK commercial pilot licence is modular ATPL training, which can be completed for £40,000–£80,000 over 3–5 years. Overseas integrated training at schools like Bartolini Air in Poland offers a full integrated ATPL from approximately £47,000–£60,000." },

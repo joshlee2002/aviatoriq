@@ -10,9 +10,10 @@ export default function ReadyToStartTraining() {
       canonical="/guides/am-i-ready-to-start-pilot-training"
       metaDescription="Am I ready to start pilot training? 8 honest questions to answer before committing to flight school. Covers medical, finances, aptitude, motivation, and lifestyle."
       readTime="10 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/ready-to-train_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide references UK training costs and CAA/EASA medical standards. The self-assessment questions apply globally." />}
       faqSchema={[
         { question: "How do I know if I am ready to start pilot training?", answer: "The key readiness indicators are: a valid Class 1 medical, financial plan covering full training costs plus living expenses, realistic understanding of the time commitment, and evidence of aptitude through ground school study or a trial flight." },

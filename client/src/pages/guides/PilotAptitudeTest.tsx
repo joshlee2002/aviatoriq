@@ -9,9 +9,10 @@ export default function PilotAptitudeTest() {
       canonical="/guides/pilot-aptitude-test-uk"
       metaDescription="Free pilot aptitude test preparation guide 2026: what the tests measure, sample questions, and how to prepare for numerical reasoning, spatial awareness, and multi-tasking assessments. Updated June 2026."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/aptitude-test_3c7e9f2a.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       relatedGuides={[
         { title: "BA Speedbird Academy 2026: Complete Guide", href: "/guides/ba-speedbird-academy", time: "10 min" },
         { title: "easyJet Generation Pilot Programme: Complete Guide", href: "/guides/easyjet-generation-pilot", time: "9 min" },
@@ -32,6 +33,9 @@ export default function PilotAptitudeTest() {
             <>
               <p>
                 Before you can prepare effectively for pilot aptitude tests, you need to understand what they are actually measuring — and why. Airlines and flight schools use aptitude tests not to assess your aviation knowledge (you don't need any) but to identify whether you have the underlying cognitive profile associated with successful pilots.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Before your interview, complete our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
               </p>
               <img src="/manus-storage/simulator-assessment_08bb00b0.jpg" alt="Simulator assessment" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>

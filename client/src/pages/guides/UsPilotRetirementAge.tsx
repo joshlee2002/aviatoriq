@@ -13,13 +13,16 @@ export default function UsPilotRetirementAge() {
       canonical="https://aviatoriq.com/us/guides/us-pilot-retirement-age"
       metaDescription="Understand the FAA's mandatory retirement age of 65 for US commercial airline pilots in 2026. Explore its history, current regulations, and the ongoing debate."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "Introduction: The Age 65 Rule in 2026",
           content: (
             <>
               <p>For aspiring and current commercial aviators in the United States, understanding the mandatory retirement age is a critical component of long-term career planning. As of 2026, the Federal Aviation Administration (FAA) mandates that pilots operating under 14 CFR Part 121—which governs major and regional airlines—must retire from their pilot duties upon reaching their 65th birthday. This regulation, while seemingly straightforward, is the culmination of decades of debate, legislative action, and international standardization efforts. It significantly impacts pilot career trajectories, airline staffing strategies, and the overall dynamics of the US aviation industry.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to see a timeline from training to captain.
+              </p>
               <p>While the age 65 rule is firmly in place, discussions surrounding its potential modification are a recurring feature on Capitol Hill. Proposals to raise the retirement age, often citing pilot shortages and the experience of older aviators, frequently emerge but have consistently faced significant hurdles. This guide covers the age 65 rule, exploring its historical origins, the current regulatory framework, the persistent arguments for and against its alteration, and what these factors mean for pilots navigating their professional lives in 2026 and beyond.</p>
             </>
           )

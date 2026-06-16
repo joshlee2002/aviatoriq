@@ -12,7 +12,7 @@ export default function EuropeFlightInstructor() {
       category="Flight Instructor Training"
       canonical="https://aviatoriq.com/europe/guides/europe-flight-instructor"
       metaDescription="A comprehensive guide for aspiring EASA Flight Instructors in Europe, detailing 2026 regulations, training costs, career outlook, and essential requirements."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function EuropeFlightInstructor() {
           content: (
             <>
               <p>The role of a Flight Instructor (FI) within the European aviation landscape is both pivotal and rewarding. As the aviation industry continues its dynamic evolution, the demand for highly skilled and dedicated instructors remains constant. This guide provides an exhaustive overview for individuals aspiring to become an EASA (European Union Aviation Safety Agency) certified Flight Instructor in Europe, focusing on the regulations, training pathways, financial commitments, and career opportunities as of 2026. It is designed to equip prospective FIs with the knowledge required to navigate this challenging yet fulfilling career path.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
             </>
           )
         },

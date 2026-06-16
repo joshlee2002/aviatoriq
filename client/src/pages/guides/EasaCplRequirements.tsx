@@ -12,7 +12,7 @@ export default function EasaCplRequirements() {
       category="Pilot Training, EASA, CPL"
       canonical="https://aviatoriq.com/europe/guides/easa-cpl-requirements"
       metaDescription="A detailed guide to EASA CPL requirements in 2026, covering age, medical, flight hours, theoretical knowledge, and costs for aspiring commercial pilots in Europe."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function EasaCplRequirements() {
           content: (
             <>
               <p>The European Union Aviation Safety Agency (EASA) Commercial Pilot License (CPL) is a pivotal qualification for aspiring professional aviators within Europe. It represents a significant step beyond the Private Pilot License (PPL), enabling holders to fly aircraft for remuneration. This guide provides an in-depth look at the requirements, training pathways, costs, and career prospects for obtaining an EASA CPL in 2026, ensuring you have the most current and accurate information to plan your aviation career.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>An EASA CPL allows you to act as a First Officer in commercial air transport operations, or as Pilot-in-Command (PIC) in single-pilot commercial air transport. It also encompasses all privileges of a PPL holder and permits PIC or co-pilot duties in non-commercial operations. Understanding these privileges and the standards set by EASA is essential for anyone planning a commercial aviation career in Europe.</p>
             </>
           )

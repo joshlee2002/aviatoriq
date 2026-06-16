@@ -12,14 +12,17 @@ export default function CanadaRegionalAirlines() {
       category="Canada Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-regional-airlines"
       metaDescription="Explore the pathway to becoming a regional airline pilot in Canada, covering Transport Canada regulations, training costs, and career opportunities with major carriers in 2026."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Get my free US pilot roadmap"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "Introduction to Canada's Regional Airline Sector",
           content: (
             <>
               <p>Canada's vast geography and dispersed population centers make its regional airline sector a critical component of the national aviation infrastructure. These airlines serve as vital feeders to major hubs, connecting smaller communities to larger networks and offering essential air services across the country. For aspiring pilots, regional airlines often represent the first significant step in a professional aviation career, providing invaluable experience in multi-crew environments and advanced aircraft operations.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
               <p>The Canadian regional airline market is characterized by a mix of established carriers and smaller operators, each playing a unique role in the aviation ecosystem. Understanding the landscape, regulatory requirements, and career progression within this sector is paramount for any pilot aiming to join the ranks of professional aviators in Canada.</p>
             </>
           )

@@ -10,6 +10,7 @@ export default function PilotSalaryUK2026() {
       canonical="/guides/uk-pilot-salary-2026"
       metaDescription="UK pilot salary 2026. Real figures for first officers and captains at Ryanair, easyJet, Jet2, BA, and regional airlines. Includes pay progression, allowances, and total compensation."
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/uk-salary-2026_12c4d065.jpg"
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
@@ -28,6 +29,9 @@ export default function PilotSalaryUK2026() {
             <>
               <p>
                 The table below summarises verified 2026 total compensation figures (base salary + flying pay + allowances) for UK airline pilots. All figures are gross annual earnings in GBP. Sources: airline careers pages, Simple Flying (May 2026), Ryanair careers page (June 2026), BALPA.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
               </p>
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">

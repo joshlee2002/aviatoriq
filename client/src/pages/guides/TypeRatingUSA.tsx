@@ -7,6 +7,9 @@ export default function TypeRatingUSA() {
       title="Airline Type Rating USA Cost: Self-Funded vs. Airline Sponsored in 2026"
       subtitle="The honest breakdown of what a US type rating actually costs, when to self-fund, and when to take the bond — with real numbers from 2026."
       readTime="10 min read"
+      ctaHref="/us/roadmap"
+      ctaText="Get my free US pilot roadmap"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/type-rating-usa_492628c9.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/type-rating-usa"
@@ -25,6 +28,9 @@ export default function TypeRatingUSA() {
             <>
               <p>
                 A type rating is the specific certification required to fly a large jet aircraft — an Airbus A320, Boeing 737, or regional jet like the Embraer E175. The FAA requires it for any aircraft that is turbojet-powered or requires more than one pilot. Without it, you cannot legally sit in the right seat of an airliner.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <p>
                 The cost is high because the training is intensive. A typical A320 type rating involves 5–7 days of ground school covering the aircraft's systems in exhaustive detail, followed by 10–15 sessions in a Level D full-motion simulator (the highest certification level, costing $10,000–$15,000 per hour to operate), and a final checkride with an FAA Designated Pilot Examiner. The simulator time alone accounts for most of the cost.

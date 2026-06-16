@@ -12,7 +12,7 @@ export default function SouthAfricaMilitaryToAirlines() {
       category="Career Transition"
       canonical="https://aviatoriq.com/south-africa/guides/military-to-airlines"
       metaDescription="A detailed guide for South African Air Force (SAAF) pilots transitioning to commercial airlines, covering SACAA regulations, training costs, and career prospects in 2026."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function SouthAfricaMilitaryToAirlines() {
           content: (
             <>
               <p>The transition from military to commercial aviation represents a significant career evolution for South African Air Force (SAAF) pilots. This guide provides a comprehensive overview of the pathways, regulatory requirements, financial considerations, and career opportunities available to SAAF aviators seeking to join the ranks of commercial airline pilots in South Africa.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>Military pilots are highly regarded in the commercial sector due to their extensive flight experience, rigorous training, discipline, and leadership skills, making them prime candidates for airlines seeking competent and reliable flight crew. This guide aims to demystify the conversion process, offering clear, actionable insights for a successful transition in 2026.</p>
             </>
           )

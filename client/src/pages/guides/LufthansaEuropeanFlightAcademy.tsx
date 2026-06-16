@@ -12,8 +12,8 @@ export default function LufthansaEuropeanFlightAcademy() {
       category="Flight Schools"
       canonical="https://aviatoriq.com/europe/guides/lufthansa-european-flight-academy"
       metaDescription="Complete 2026 guide to the Lufthansa European Flight Academy (EFA) cadet program. Learn about the €120,000 cost, Brain Capital ISA, DLR test, and career paths."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction to the European Flight Academy (EFA)",
@@ -21,6 +21,9 @@ export default function LufthansaEuropeanFlightAcademy() {
             <>
               <p>
                 The European Flight Academy (EFA) serves as the exclusive ab-initio training arm for the Lufthansa Group. Formed in 2017 through the merger of Lufthansa Flight Training, Swiss AviationTraining, and the Pilot Training Network, EFA is designed to feed highly qualified pilots into the world's largest airline group by revenue. In 2026, the academy remains one of the most prestigious cadet pathways in European aviation, offering a standardized EASA integrated ATPL curriculum across multiple international training locations.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <p>
                 However, the landscape of pilot training at Lufthansa has evolved significantly. The legacy model, where the airline bore all training costs, has been replaced by a "shared risk" philosophy. Today, cadets are responsible for the €120,000 training cost. To mitigate this financial burden, EFA offers innovative financing solutions like the Brain Capital Income Share Agreement (ISA) and a unique "Take-off Promise" that provides a 50% refund if a cockpit job within the Lufthansa Group does not materialize within 24 months of graduation.

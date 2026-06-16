@@ -12,14 +12,17 @@ export default function AirCanadaJazzCadet() {
       category="Pilot Training Canada"
       canonical="https://aviatoriq.com/canada/guides/air-canada-jazz-cadet"
       metaDescription="Explore the Air Canada Jazz Cadet Program (Jazz Approach) in Canada. Learn about eligibility, costs, training, and career progression to become an airline pilot."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction: Charting Your Course with Air Canada Jazz",
           content: (
             <>
               <p>Aspiring aviators in Canada often seek a clear and structured pathway into the cockpit of a major airline. The Air Canada Jazz Cadet Program, officially known as the Jazz Approach, offers precisely such an opportunity. This comprehensive guide covers this esteemed program, providing an in-depth look at its structure, requirements, costs, and the unparalleled career progression it offers. Designed for individuals with little to no prior flight experience, the Jazz Approach is a collaborative initiative between industry leaders CAE, Jazz Aviation LP, and Cygnet Aviation Academy LP, meticulously crafted to transform dedicated cadets into airline-ready First Officers for Jazz Aviation, with direct flow-through opportunities to Air Canada.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
+              </p>
             </>
           )
         },

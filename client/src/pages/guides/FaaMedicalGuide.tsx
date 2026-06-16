@@ -20,6 +20,9 @@ export default function FaaMedicalGuide() {
               <p className="mb-4">
                 The FAA issues three classes of medical certificate, each with different standards and validity periods. For an airline career, you need a First Class. For a commercial pilot certificate (CPL), you need at least a Second Class. Third Class is sufficient for private flying.
               </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/us/medical-lookup" className="text-blue-400 underline">FAA Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your FAA medical application.
+              </p>
               <img src="/manus-storage/faa-ame-doctor_9d5ff4b3.jpg" alt="FAA AME doctor" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/medical-certificate_9ad09b89.jpg" alt="FAA medical certificate" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <div className="overflow-x-auto mt-2">

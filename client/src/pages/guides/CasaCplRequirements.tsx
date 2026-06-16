@@ -12,7 +12,7 @@ export default function CasaCplRequirements() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/casa-cpl-requirements"
       metaDescription="A detailed guide to CASA Commercial Pilot Licence (CPL) requirements in Australia for 2026, covering eligibility, training, costs, and career paths."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function CasaCplRequirements() {
           content: (
             <>
               <p>The Commercial Pilot Licence (CPL) is your gateway to a professional aviation career in Australia. Issued by the Civil Aviation Safety Authority (CASA), the CPL permits you to act as pilot in command of an aircraft for remuneration or hire. This comprehensive guide outlines the stringent requirements, training pathways, and financial considerations for aspiring commercial pilots in Australia, ensuring you are well-prepared for the journey ahead in 2026.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>Australia's aviation industry is governed by CASA's Part 61 of the Civil Aviation Safety Regulations, which details the licensing requirements for pilots. Understanding these regulations is paramount to a successful training experience and future career. This guide will delve into each critical aspect, from initial eligibility to advanced flight training and the subsequent career opportunities available.</p>
             </>
           )

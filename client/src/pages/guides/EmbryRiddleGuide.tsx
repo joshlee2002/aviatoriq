@@ -10,10 +10,11 @@ export default function EmbryRiddleGuide() {
       canonical="/us/guides/embry-riddle-aeronautical-university"
       metaDescription="Embry-Riddle Aeronautical University 2026 guide. Tuition costs ($36k/yr), flight fees ($20k-$30k/yr), R-ATP advantages, and whether the $222k total cost is worth it."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/embry-riddle_9d4c2b8e.jpg"
       category="US Pilot Training"
-      ctaHref="/us/roadmap"
-      ctaText="Find my training route"
+      ctaHref="/schools"
+      ctaText="Browse the school directory"
       scopeBanner={<GuideScopeBanner scope="This guide covers Embry-Riddle Aeronautical University in the USA." globalHref="/guides/best-flight-schools-uk-2026" globalLabel="View UK flight schools →" />}
       faqSchema={[
         { question: "How much does Embry-Riddle cost?", answer: "For the 2025-2026 academic year, undergraduate tuition is approximately $36,868 per year. Flight training fees are an additional $20,000-$30,000 per year for the first two years. The total 4-year cost, including room and board, typically exceeds $220,000." },
@@ -28,6 +29,9 @@ export default function EmbryRiddleGuide() {
             <>
               <p>
                 Embry-Riddle Aeronautical University (ERAU) is arguably the most famous aviation university in the world. With its primary residential campuses in Daytona Beach, Florida, and Prescott, Arizona, it has produced more commercial airline pilots than any other university in the United States.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Compare schools side by side in our <Link href="/schools" className="text-blue-400 underline">Flight School Directory</Link>, which lists verified schools with tuition fees, locations, and airline partnerships.
               </p>
               <p>
                 Graduating from ERAU carries genuine prestige in the aviation industry. Their alumni network is massive, their fleet of training aircraft is modern, and their direct pipelines to major airlines (like the Delta Propel and United Aviate programmes) are robust.

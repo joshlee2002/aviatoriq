@@ -12,7 +12,7 @@ export default function CanadaFlightInstructor() {
       category="Flight Instructor"
       canonical="https://aviatoriq.com/canada/guides/canada-flight-instructor"
       metaDescription="A comprehensive guide for aspiring flight instructors in Canada. Learn about Transport Canada requirements, training, costs, and career paths in 2026."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function CanadaFlightInstructor() {
           content: (
             <>
               <p>Becoming a Flight Instructor (FI) in Canada is a highly rewarding career path, offering the unique opportunity to shape the next generation of aviators. This guide provides an in-depth look into the requirements, training process, associated costs, and career prospects for aspiring flight instructors in Canada, adhering to the latest Transport Canada regulations for 2026. The journey demands dedication, precision, and a profound understanding of aviation principles and instructional techniques.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>A Flight Instructor is not merely a pilot with advanced skills; they are mentors, educators, and safety advocates. They are responsible for imparting critical knowledge and practical skills, ensuring that student pilots develop the competence and confidence required to operate aircraft safely and efficiently. The Canadian aviation industry, with its vast landscapes and diverse operational environments, relies heavily on highly qualified flight instructors to maintain its esteemed safety record and meet the growing demand for skilled pilots.</p>
             </>
           )

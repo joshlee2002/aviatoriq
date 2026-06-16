@@ -13,7 +13,7 @@ export default function UsPilotSalary2026() {
       canonical="https://aviatoriq.com/us/guides/us-pilot-salary-2026"
       metaDescription="US airline pilot salary 2026: Delta, United, American, and Southwest pay scales confirmed. Regional FOs start at $90k–$110k. Major airline captains earn $465,000–$520,000. Full breakdown inside."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaHref="/us/roadmap"
       faqSchema={[
         { question: "What is the average salary for a US airline pilot in 2026?", answer: "The Bureau of Labor Statistics reported a median annual wage of $226,600 for airline pilots in May 2024. In 2026, first-year regional FOs earn $90,000–$110,000 in total compensation, while major airline widebody captains earn $465,000–$520,000 annually." },
         { question: "How much do Delta, United, and American pilots earn?", answer: "Following 2023 contract ratifications, all three carriers now pay identical widebody captain rates of $465.13 per hour at year 12. At 900 hours annually, that is approximately $418,617 in base pay alone, with profit-sharing and per diem adding $50,000–$100,000 more." },
@@ -29,6 +29,9 @@ export default function UsPilotSalary2026() {
             <>
               <p>
                 US airline pilot compensation reached a historic milestone in 2026. Following the ratification of new contracts at Delta, United, and American Airlines in 2023 — which phased in through 2026 — all three carriers now pay <strong>identical widebody captain rates of $465.13 per hour</strong> at year 12 of seniority. At 900 credited hours annually, that translates to approximately $418,617 in base pay alone, before profit-sharing, per diem, and retirement contributions.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to see a timeline from training to captain.
               </p>
               <p>
                 The Bureau of Labor Statistics reported a median annual wage of <strong>$226,600</strong> for airline pilots, copilots, and flight engineers in May 2024 — nearly double the 2016 median of $127,820. The structural driver is the mandatory retirement age of 65: the FAA projects approximately 4,300 mandatory retirements per year through 2042, sustaining demand for new pilots throughout the next two decades.

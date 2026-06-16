@@ -9,9 +9,10 @@ export default function HowToBecomePilotEurope() {
       canonical="/guides/how-to-become-a-pilot-europe"
       metaDescription="How to become an airline pilot in Europe in 2026. Covers EASA regulations, integrated vs modular ATPL routes, real costs (€40k–€130k), and airline cadet programmes like Lufthansa and Wizz Air."
       readTime="16 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/airplane-takeoff_6f139e92.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       faqSchema={[
         { question: "How much does it cost to get an EASA ATPL?", answer: "Integrated ATPL programmes in Western Europe typically cost €80,000 to €130,000. Eastern European schools (e.g., in Poland or Czech Republic) offer identical EASA certification for €50,000 to €70,000. Modular training can be completed for €45,000 to €70,000." },
         { question: "What is the difference between EASA and CAA licences?", answer: "Following Brexit, the UK CAA is separate from EASA. An EASA licence allows you to fly for airlines registered in any EU member state (e.g., Ryanair, Lufthansa, Air France). A UK CAA licence only permits you to fly for UK-registered airlines (e.g., British Airways, easyJet UK). Many European schools offer dual-licensing programmes." },

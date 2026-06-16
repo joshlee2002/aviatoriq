@@ -12,14 +12,17 @@ export default function FaaAtpRequirements() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/us/guides/faa-atp-requirements"
       metaDescription="Detailed guide to FAA ATP requirements for 2026, covering Part 61, Part 141, costs, and career opportunities for aspiring airline pilots."
-      ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaText="Check your FAA medical condition"
+      ctaHref="/us/medical-lookup"
       sections={[
         {
           heading: "Introduction to the Airline Transport Pilot (ATP) Certificate",
           content: (
             <>
               <p>The Airline Transport Pilot (ATP) certificate represents the pinnacle of pilot certification in the United States, signifying the highest level of aeronautical knowledge, experience, and skill. It is the mandatory credential for pilots who wish to act as a Pilot in Command (PIC) or Second in Command (SIC) in Part 121 air carrier operations (scheduled airlines) and certain other commercial aviation roles. As of 2026, the demand for highly qualified ATP-certified pilots remains robust, driven by airline expansion and a wave of pilot retirements. This guide provides an exhaustive examination of the requirements, pathways, and considerations for obtaining your ATP certificate, ensuring you are thoroughly prepared for a successful career in the flight deck.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/us/medical-lookup" className="text-blue-400 underline">FAA Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your FAA medical application.
+              </p>
               <p>Understanding the intricacies of FAA regulations, particularly those outlined in 14 CFR Part 61 and Part 141, is crucial. While both parts govern pilot certification, they offer distinct training methodologies and hour requirements that can significantly impact your journey. This guide will delve into these differences, alongside the essential aeronautical experience, knowledge tests, practical tests, and the mandatory Airline Transport Pilot Certification Training Program (ATP CTP).</p>
             </>
           )

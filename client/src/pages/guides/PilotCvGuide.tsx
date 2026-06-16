@@ -12,7 +12,7 @@ export default function PilotCvGuide() {
       heroImage="/manus-storage/pilot-cv_e66193e2.jpg"
       lastUpdated="June 2026"
       ctaHref="/quiz"
-      ctaText="Generate my personalised roadmap"
+      ctaText="Start your career assessment"
       faqSchema={[
         { question: "What should a pilot CV include?", answer: "A pilot CV should include: personal details (name, contact, nationality, right to work), licences and ratings (with issue dates and expiry), medical class and expiry, total hours and breakdown by type, type ratings, simulator experience, and employment history. Keep it to two pages maximum." },
         { question: "How long should a pilot CV be?", answer: "A pilot CV should be one to two pages maximum. Airlines receive hundreds of applications — a concise, well-structured CV is more effective than a lengthy one. If you are a low-hours ab-initio graduate, one page is appropriate." },
@@ -32,6 +32,9 @@ export default function PilotCvGuide() {
             <>
               <p>
                 Airline recruitment teams screen pilot CVs in seconds. The first pass is purely mechanical: does this candidate meet the minimum requirements? Licence type, total hours, right to work, medical validity. If you do not meet the minimums, the CV goes no further regardless of how well it is written.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Before your interview, complete our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
               </p>
               <img src="/manus-storage/airline-interview_3a8f2c1d.jpg" alt="Airline interview preparation" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>

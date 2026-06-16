@@ -12,7 +12,7 @@ export default function UaePilotShortage() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/uae-pilot-shortage"
       metaDescription="Explore the UAE pilot training market in 2026, covering regulations, costs, and career opportunities amidst a growing pilot shortage."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -21,6 +21,9 @@ export default function UaePilotShortage() {
             <>
               <p>
                 The global aviation industry is experiencing a significant pilot shortage, a trend that is acutely felt and strategically addressed within the United Arab Emirates (UAE). As of 2026, projections indicate a sustained demand for highly skilled aviators, driven by ambitious expansion plans of national carriers and the region's burgeoning status as a global aviation hub. This guide covers the UAE pilot training market, offering an elite perspective on regulations, training pathways, costs, and career prospects for those aspiring to join the ranks of professional pilots in this dynamic region.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 The Middle East, in particular, is poised for substantial growth, with major airlines like Emirates and Etihad Airways continually expanding their fleets and route networks. Boeing's latest Pilot and Technician Outlook forecasts a long-term demand for hundreds of thousands of new pilots globally, with a significant portion allocated to the Asia-Pacific and Middle East regions. This robust demand translates into significant opportunities for both local and international cadets seeking a rewarding career in aviation.

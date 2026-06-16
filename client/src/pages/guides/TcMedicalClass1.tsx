@@ -12,14 +12,17 @@ export default function TcMedicalClass1() {
       category="Pilot Medicals"
       canonical="https://aviatoriq.com/canada/guides/tc-medical-class-1"
       metaDescription="Detailed guide on Transport Canada Medical Class 1 for aspiring pilots in Canada. Covers requirements, costs, and examination process for 2026."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your medical condition"
+      ctaHref="/tools/medical-condition-lookup"
       sections={[
         {
           heading: "Introduction: The Gateway to Canadian Skies",
           content: (
             <>
               <p>For aspiring commercial and airline pilots in Canada, obtaining a Transport Canada (TC) Medical Certificate Class 1 is not merely a formality; it is a fundamental prerequisite and a testament to one's physical and mental fitness to safely operate aircraft. This comprehensive guide covers the TC Medical Class 1, outlining its importance, requirements, the examination process, associated costs, and critical considerations for 2026.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
+              </p>
             </>
           )
         },

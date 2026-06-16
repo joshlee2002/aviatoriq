@@ -12,7 +12,7 @@ export default function SaAtplRequirements() {
       category="South Africa Pilot Training"
       canonical="https://aviatoriq.com/south-africa/guides/sa-atpl-requirements"
       metaDescription="Detailed guide to South African ATPL requirements for 2026, covering SACAA regulations, training, costs, and major airlines. Essential for aspiring pilots."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function SaAtplRequirements() {
           content: (
             <>
               <p>The Airline Transport Pilot License (ATPL) represents the pinnacle of pilot certification, enabling holders to act as pilot-in-command of multi-crew aircraft in commercial air transport operations. In South Africa, the South African Civil Aviation Authority (SACAA) governs these stringent requirements, ensuring adherence to international standards set by the International Civil Aviation Organization (ICAO). As of 2026, aspiring airline pilots in South Africa must navigate a well-defined, rigorous pathway encompassing academic prerequisites, extensive flight experience, comprehensive theoretical knowledge, and demanding practical examinations. This guide provides an in-depth look into the SACAA ATPL requirements for 2026, offering clarity on the journey to becoming a professional airline pilot in the region.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>The South African aviation sector, characterized by its dynamic growth and strategic importance on the continent, offers promising career opportunities with established carriers such as South African Airways (SAA), CemAir, and LIFT. Understanding the precise regulatory framework and industry expectations is paramount for successful career progression. This guide aims to equip prospective pilots with the knowledge needed to plan their training effectively, manage financial commitments, and prepare for the competitive airline selection processes.</p>
             </>
           )

@@ -30,6 +30,7 @@ const AtpCertificateUSA = () => {
         },
       ]}
       readTime="10 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/atp-certificate_9e4f2b7a.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
@@ -40,6 +41,9 @@ const AtpCertificateUSA = () => {
             <>
               <p>
                 The Airline Transport Pilot (ATP) certificate is the pinnacle of FAA pilot certification. It is a legal requirement for any pilot serving as captain or first officer at a Part 121 airline — scheduled air carriers such as American, Delta, United, Southwest, and the regional carriers that feed them. Without an ATP or Restricted ATP (R-ATP), you cannot sit in either seat of a commercial airliner.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <img src="/manus-storage/airline-pilot-cockpit_3c8e2f1a.jpg" alt="ATP certificate airline cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>

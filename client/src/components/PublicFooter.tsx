@@ -55,11 +55,15 @@ const platformLinks = [
   { label: "Partner With AviatorIQ", href: "/partner" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
+  { label: "Editorial Policy", href: "/editorial-policy" },
+  { label: "About Our Authors", href: "/about-our-authors" },
 ];
 
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy" },
   { label: "Terms of Service", href: "/terms" },
+  { label: "Editorial Policy", href: "/editorial-policy" },
+  { label: "About Our Authors", href: "/about-our-authors" },
 ];
 
 export default function PublicFooter() {

@@ -13,13 +13,16 @@ export default function MajorAirlinesHiringUSA() {
       canonical="https://aviatoriq.com/us/guides/major-airlines-hiring-usa"
       metaDescription="Comprehensive 2026 guide for aspiring US airline pilots, covering training, costs, FAA regulations (Part 61/141), and major airline hiring requirements."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "Introduction",
           content: (
             <>
               <p>Major US airlines are actively hiring in 2026. Delta, United, American, and Southwest are all running structured cadet and direct-hire programmes. This guide covers the minimum requirements, the current hiring landscape, and what each major airline is actually looking for in 2026.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
             </>
           )
         },

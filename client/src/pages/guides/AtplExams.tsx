@@ -10,9 +10,10 @@ export default function AtplExams() {
       canonical="/guides/atpl-theory-exams-uk"
       metaDescription="Complete guide to the 13 UK CAA/EASA ATPL theory exams. See real pass rates, subject difficulty rankings (Communications to Performance), and study tips."
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/atpl-exams_5e2d1a8c.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide covers the 13 ATPL theory exams under UK CAA/EASA regulations. The FAA has a different exam structure." usHref="/us/guides/atp-certificate-usa" usLabel="View USA ATP certificate →" />}
       faqSchema={[
         { question: "How many ATPL exams are there?", answer: "There are 13 ATPL theory exams under the current UK CAA and EASA syllabus (previously 14, but VFR and IFR Communications were merged). You must pass all 13 to obtain a Frozen ATPL." },
@@ -28,6 +29,9 @@ export default function AtplExams() {
             <>
               <p>
                 The Airline Transport Pilot Licence (ATPL) theory exams are the academic backbone of European and UK pilot training. While the flight training teaches you how to handle the aircraft, the ATPL exams prove you have the technical knowledge required to operate a complex commercial airliner safely.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 There are 13 exams in total (reduced from 14 after VFR and IFR Communications were merged). They cover everything from basic aerodynamics to complex high-altitude meteorology and human psychology. The sheer volume of information is what makes the ATPL theory phase notoriously difficult — it is often described as trying to drink from a firehose.

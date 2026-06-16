@@ -31,9 +31,10 @@ const CplGuideUK = () => {
         },
       ]}
       readTime="15 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/cpl-guide_9dea1e2a.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
+      ctaHref="/quiz"
+      ctaText="Start your career assessment"
       sections={[
         {
           heading: "Introduction to the Commercial Pilot Licence (CPL) UK",
@@ -41,6 +42,9 @@ const CplGuideUK = () => {
             <>
               <p>
                 The Commercial Pilot Licence (CPL) is a crucial step for aspiring professional pilots in the United Kingdom. It allows you to act as pilot-in-command (PIC) or co-pilot of an aircraft engaged in operations other than commercial air transport, or as PIC in commercial air transport of any single-pilot aircraft, subject to certain restrictions. Essentially, the CPL is your gateway to earning money from flying, opening doors to various aviation careers beyond recreational flying. This guide covers the requirements, costs, training routes, and career opportunities for the UK CPL, using data from the UK Civil Aviation Authority (CAA).
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <img src="/manus-storage/dual-instruction_48048c62.jpg" alt="Dual instruction flying" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/pilot-logbook_8afa8322.jpg" alt="Pilot logbook" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />

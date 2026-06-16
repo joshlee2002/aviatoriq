@@ -8,9 +8,10 @@ export default function EasyJetGeneration() {
       canonical="/guides/easyjet-generation-pilot"
       metaDescription="easyJet Generation Pilot Programme 2026: MPL training at CAE Oxford, costs, selection process, and guaranteed FO job. Is it worth it? Updated June 2026."
       readTime="9 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/easyjet-generation_0954c6af.jpg"
-      ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaHref="/tools/cadet-eligibility"
+      ctaText="Check your cadet eligibility"
       relatedGuides={[
         { title: "BA Speedbird Academy 2026: Complete Guide", href: "/guides/ba-speedbird-academy", time: "10 min" },
         { title: "Ryanair Cadet Pilot Programme: Complete Guide", href: "/guides/ryanair-cadet-programme", time: "8 min" },
@@ -31,6 +32,9 @@ export default function EasyJetGeneration() {
             <>
               <p>
                 The Generation easyJet programme is easyJet's flagship ab-initio cadet pilot pathway — a direct route from zero flying experience to a First Officer seat on easyJet's Airbus A320 family fleet. The programme is delivered in partnership with CAE Oxford Aviation Academy and uses the Multi-Crew Pilot Licence (MPL) as its qualifying licence, rather than the traditional frozen ATPL.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="easyJet Generation cadet" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/interview-assessment_c517e045.jpg" alt="easyJet selection" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />

@@ -10,9 +10,10 @@ export default function PilotAptitudeTestPrep() {
       canonical="/guides/pilot-aptitude-test-preparation"
       metaDescription="Pilot aptitude test preparation 2026. How to pass PILAPT, Compass, and Cut-e. Free resources, practice strategies, and what airlines are actually testing."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/aptitude-test_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide covers aptitude tests commonly used by UK and European airlines (PILAPT, Compass, Cut-e)." usHref="/us/guides/pilot-aptitude-test-usa" usLabel="View USA aptitude test guide →" />}
       faqSchema={[
         { question: "What is a pilot aptitude test?", answer: "A pilot aptitude test is a series of computer-based assessments designed to measure the cognitive and psychomotor skills required for flight training. They test spatial awareness, multi-tasking, numerical reasoning, and reaction time." },
@@ -27,6 +28,9 @@ export default function PilotAptitudeTestPrep() {
             <>
               <p>
                 Pilot aptitude tests are the single biggest filter in airline selection. They are ruthless, objective, and efficient. Airlines use them because flight training is incredibly expensive, and aptitude tests are statistically proven to predict a candidate's likelihood of passing flight training without requiring extra hours.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Before your interview, complete our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
               </p>
               <p>
                 The most dangerous myth in pilot training is that aptitude tests measure raw, unchangeable natural talent, and therefore you cannot prepare for them. This is completely false. The candidates who pass are the ones who practice. They familiarise themselves with the interface, develop strategies for the multi-tasking modules, and condition their brains to the specific demands of the test.

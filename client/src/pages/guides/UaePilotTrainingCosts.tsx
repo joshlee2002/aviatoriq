@@ -12,14 +12,17 @@ export default function UaePilotTrainingCosts() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/uae-pilot-training-costs"
       metaDescription="Explore the detailed costs of pilot training in the UAE for 2026, including GCAA regulations, flight schools like EFTA and Alpha Aviation, and financing options."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Calculate your training costs"
+      ctaHref="/calculator"
       sections={[
         {
           heading: "Introduction: Soaring Ambitions in the UAE Skies",
           content: (
             <>
               <p>The United Arab Emirates, a global aviation hub, offers aspiring pilots world-class training facilities and unparalleled career opportunities. With its strategic location, state-of-the-art infrastructure, and a rapidly expanding aviation sector, the UAE has become a prime destination for those dreaming of a career in the cockpit. However, embarking on this journey requires a significant financial investment. This comprehensive guide delves into the intricate details of pilot training costs in the UAE for 2026, providing an honest and elite perspective on what it truly takes to become a professional aviator in this dynamic region.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/calculator" className="text-blue-400 underline">Pilot Training Cost Calculator</Link> to get a personalised cost estimate based on your chosen route and country.
+              </p>
               <p>We will explore the regulatory landscape governed by the General Civil Aviation Authority (GCAA), examine the offerings and fee structures of leading flight academies such as Emirates Flight Training Academy (EFTA) and Alpha Aviation Academy, discuss various financing avenues, and shed light on the career prospects within the region's prominent airlines.</p>
             </>
           )

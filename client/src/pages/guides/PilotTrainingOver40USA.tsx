@@ -6,6 +6,7 @@ export default function PilotTrainingOver40USA() {
       title="Pilot Training Over 40 in the USA: Your 2026 Career Change Roadmap"
       subtitle="Discover the definitive roadmap for aspiring pilots over 40 in the USA, covering everything from FAA medical requirements and funding strategies to balancing life and training for a successful career change in 2026."
       readTime="15 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-over-40-usa_35140e0e.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/pilot-training-over-40-usa"
@@ -435,7 +436,7 @@ export default function PilotTrainingOver40USA() {
         { title: "How to Fund Pilot Training USA", href: "/us/guides/how-to-fund-pilot-training-usa", time: "12 min" },
         { title: "FAA Medical Requirements", href: "/us/guides/faa-medical-requirements", time: "8 min" },
       ]}
-      ctaText="Find my training route"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/us/roadmap"
       faqSchema={[
         { question: "What is the maximum age to become an airline pilot in the USA?", answer: "There is no maximum age limit set by the FAA to become a commercial or airline pilot in the USA. While airline hiring practices may vary, many pilots successfully begin their careers in their 40s, 50s, and even 60s. The mandatory retirement age for Part 121 airline pilots is 65, meaning you can have a substantial career even if you start later in life." },

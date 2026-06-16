@@ -8,9 +8,10 @@ export default function WizzAirAcademy() {
       canonical="/guides/wizz-air-pilot-academy"
       metaDescription="Wizz Air Pilot Academy 2026: training locations, selection process, costs, and First Officer career at one of Europe's fastest-growing airlines. Updated June 2026."
       readTime="8 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/wizzair-cadet_8bbabaaa.jpg"
-      ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaHref="/tools/cadet-eligibility"
+      ctaText="Check your cadet eligibility"
       relatedGuides={[
         { title: "Ryanair Cadet Pilot Programme: Complete Guide", href: "/guides/ryanair-cadet-programme", time: "8 min" },
         { title: "easyJet Generation Pilot Programme: Complete Guide", href: "/guides/easyjet-generation-pilot", time: "9 min" },
@@ -31,6 +32,9 @@ export default function WizzAirAcademy() {
             <>
               <p>
                 Wizz Air is one of Europe's most dynamic airlines — a Budapest-headquartered ultra-low-cost carrier that has grown from a small Central European operation to one of the continent's largest airlines, carrying over 60 million passengers per year. The airline operates an all-Airbus A320 family fleet and is one of the largest operators of the fuel-efficient A321neo in the world.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="Wizz Air cadet programme" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>

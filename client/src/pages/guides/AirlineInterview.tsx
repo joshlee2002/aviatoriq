@@ -10,9 +10,10 @@ export default function AirlineInterview() {
       canonical="/guides/airline-pilot-interview"
       metaDescription="Airline pilot interview guide 2026. Aptitude tests (PILAPT, Compass), group exercises, simulator assessments, and panel interviews. What UK airlines actually look for."
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/airline-interview_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide covers UK airline selection processes. US airline interviews differ significantly." usHref="/us/guides/airline-interview-usa" usLabel="View USA airline interview guide →" />}
       faqSchema={[
         { question: "What is the airline pilot selection process?", answer: "UK airline selection typically involves: online application, cognitive aptitude tests (PILAPT, Compass, or similar), an assessment centre (group exercise, further aptitude tests), a simulator assessment (raw data flying, CRM scenarios), and a final panel interview." },
@@ -27,6 +28,9 @@ export default function AirlineInterview() {
             <>
               <p>
                 UK airline selection is a multi-stage process designed to identify candidates who are not just technically competent, but who demonstrate the right personality, decision-making ability, and crew resource management (CRM) skills. Understanding each stage before you walk through the door is the single most important thing you can do to improve your chances.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Before your interview, complete our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
               </p>
               <p>
                 The typical UK airline selection process follows this structure, though the exact stages vary by airline:

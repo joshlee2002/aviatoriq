@@ -13,13 +13,16 @@ export default function UsPilotShortage2026() {
       canonical="https://aviatoriq.com/us/guides/us-pilot-shortage-2026"
       metaDescription="Comprehensive guide to the 2026 US pilot shortage, covering FAA regulations, Part 61/141 training, costs, and airline hiring trends."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "Introduction",
           content: (
             <>
               <p>The United States aviation industry in 2026 finds itself at a critical juncture, grappling with a persistent and evolving pilot shortage. While the immediate post-pandemic hiring surge has somewhat stabilized, underlying demographic shifts, retirement waves, and the rigorous training pipeline continue to exert pressure on the supply of qualified aviators. This guide provides an in-depth analysis of the 2026 US pilot market, offering aspiring pilots a clear, honest, and comprehensive understanding of the landscape, regulatory frameworks, financial commitments, and career opportunities.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
             </>
           )
         },

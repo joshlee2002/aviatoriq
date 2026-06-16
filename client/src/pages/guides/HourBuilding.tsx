@@ -10,9 +10,10 @@ export default function HourBuilding() {
       canonical="/guides/hour-building-pilot-uk"
       metaDescription="Complete guide to hour building for UK EASA pilots in 2026. Spain costs €90/hr, South Africa €100/hr, UK £150/hr. Methods, destinations, and practical tips."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/hour-building_4e2d1a8c.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide covers hour building strategies for UK/EASA pilots (CPL prerequisites, popular locations from the UK)." usHref="/us/guides/hour-building-usa" usLabel="View USA version →" />}
       faqSchema={[
         { question: "How many hours do I need for hour building?", answer: "For a modular EASA CPL, you need 200 hours total flight time, of which at least 100 hours must be as Pilot in Command (PIC). After your PPL, you typically have 45-55 hours total with 10-15 hours PIC, so you need to build approximately 85-90 more PIC hours." },
@@ -27,6 +28,9 @@ export default function HourBuilding() {
             <>
               <p>
                 Hour building is the phase of modular pilot training that sits between your Private Pilot Licence (PPL) and your Commercial Pilot Licence (CPL). It is the process of accumulating the Pilot in Command (PIC) flight time required by EASA regulations before you can sit your CPL skills test.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 Under EASA Part-FCL, you need 200 hours total flight time to qualify for a CPL, of which at least 100 hours must be as PIC. After completing your PPL, you typically have 45–55 hours total with only 10–15 hours of solo PIC time. This means you need to build approximately 85–90 more hours of PIC time before you can start your CPL training.

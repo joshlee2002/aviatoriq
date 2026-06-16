@@ -11,7 +11,7 @@ export default function CanadaMilitaryToAirlines() {
       category="Canada Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-military-to-airlines"
       metaDescription="Comprehensive guide for Canadian military pilots transitioning to civilian airlines in 2026. Covers Transport Canada ATPL conversion, DND credits, costs, and airline hiring."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -19,6 +19,9 @@ export default function CanadaMilitaryToAirlines() {
           content: (
             <>
               <p>The transition from military to civilian aviation is a significant career evolution, offering a new set of challenges and rewards. For Royal Canadian Air Force (RCAF) pilots, years of rigorous training, unparalleled experience, and disciplined service provide a robust foundation for a successful career in commercial aviation. This guide is meticulously crafted to provide a comprehensive, deep, and highly accurate roadmap for RCAF pilots aiming to join Canada's civilian airlines in 2026, focusing on the regulatory landscape, conversion processes, financial considerations, and specific airline requirements.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>Canada's aviation sector continues to experience robust growth, with major carriers like Air Canada, WestJet, and regional airlines consistently seeking highly qualified pilots. Military aviators, with their advanced skills in complex aircraft operations, instrument flight, and leadership, are uniquely positioned to meet this demand. Understanding the nuances of Transport Canada (TC) regulations, particularly Standard 421, and leveraging military experience for civilian licensing, is paramount for a seamless transition.</p>
             </>
           )

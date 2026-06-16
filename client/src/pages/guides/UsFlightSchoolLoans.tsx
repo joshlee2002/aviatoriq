@@ -12,8 +12,8 @@ export default function UsFlightSchoolLoans() {
       category="Financing"
       canonical="https://aviatoriq.com/us/guides/us-flight-school-loans"
       metaDescription="Discover the best US flight school loans for 2026. Learn about Part 61 vs. Part 141 costs, federal vs. private loans, and alternative financing options."
-      ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaText="Calculate your US training costs"
+      ctaHref="/us/calculator"
       sections={[
         {
           heading: "The Cost of Becoming a Pilot in 2026",
@@ -21,6 +21,9 @@ export default function UsFlightSchoolLoans() {
             <>
               <p>
                 Aspiring aviators in the United States face a significant financial commitment when pursuing their dreams of becoming a pilot. With training costs often exceeding $100,000, understanding the landscape of flight school loans is paramount. The total cost of pilot training varies significantly based on the chosen flight school, the type of program (Part 61 vs. Part 141), and individual learning pace.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/us/calculator" className="text-blue-400 underline">US Pilot Training Cost Calculator</Link> to get a personalised estimate based on your chosen training path.
               </p>
               <p>
                 As of 2026, aspiring commercial pilots can expect to incur costs ranging from approximately $80,000 to over $120,000 to achieve the necessary certifications, including Private Pilot License (PPL), Instrument Rating (IR), Commercial Pilot License (CPL), and Multi-Engine Rating (MEI).

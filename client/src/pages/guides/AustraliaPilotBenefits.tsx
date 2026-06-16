@@ -12,14 +12,17 @@ export default function AustraliaPilotBenefits() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-benefits"
       metaDescription="Explore the comprehensive benefits for pilots in Australia in 2026, including salaries, superannuation, health, and career growth with major airlines."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "The Allure of an Aviation Career in Australia",
           content: (
             <>
               <p>Australia, with its vast landscapes and thriving tourism, presents a dynamic and rewarding environment for aspiring and experienced pilots. The nation's aviation sector is characterized by stringent safety standards, robust regulatory oversight by the Civil Aviation Safety Authority (CASA), and a consistent demand for skilled aviators across commercial, regional, and general aviation segments. As of 2026, the industry continues to offer not just competitive remuneration but also a comprehensive suite of benefits designed to attract and retain top talent.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
+              </p>
               <p>Becoming a pilot in Australia is a commitment to a challenging yet highly respected profession. Beyond the prestige, pilots enjoy a lifestyle that, while demanding, is often balanced with significant time off, travel opportunities, and a clear path for professional growth. This guide delves into the specifics of what pilots can expect in terms of financial compensation, non-monetary benefits, career progression, and the regulatory landscape that shapes their professional journey in 2026.</p>
             </>
           )

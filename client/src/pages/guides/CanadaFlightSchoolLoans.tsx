@@ -12,14 +12,17 @@ export default function CanadaFlightSchoolLoans() {
       category="Financing"
       canonical="https://aviatoriq.com/canada/guides/canada-flight-school-loans"
       metaDescription="Explore detailed options for flight school loans in Canada for 2026, including government programs, bank loans, scholarships, and essential tips for aspiring pilots."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Calculate your training costs"
+      ctaHref="/calculator"
       sections={[
         {
           heading: "Understanding the Cost of Pilot Training in Canada (2026)",
           content: (
             <>
               <p>Aspiring pilots in Canada face a significant financial commitment to achieve their dreams. The cost of flight training can vary widely based on the type of license, the flight school, and the province of study. As of 2026, a Private Pilot License (PPL) can range from CAD $15,000 to $25,000, while a Commercial Pilot License (CPL) with multi-engine and instrument ratings, often required for airline careers, can easily exceed CAD $80,000 to $120,000. Integrated Airline Transport Pilot License (ATPL) programs, which offer a streamlined path to airline readiness, can be even more substantial, sometimes reaching CAD $100,000 to $150,000 or more.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/calculator" className="text-blue-400 underline">Pilot Training Cost Calculator</Link> to get a personalised cost estimate based on your chosen route and country.
+              </p>
               <p>These figures typically include flight hours, ground school, examiner fees, and study materials. However, they often do not account for living expenses, transportation, or potential re-take fees for exams and flight tests. Understanding these costs is the first critical step in planning your financing strategy.</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>

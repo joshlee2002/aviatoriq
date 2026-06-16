@@ -12,14 +12,17 @@ export default function EasaMedicalClass1() {
       category="Pilot Medicals"
       canonical="https://aviatoriq.com/europe/guides/easa-medical-class-1"
       metaDescription="Detailed guide on EASA Class 1 medical certificate for European pilots, covering requirements, examination process, 2026 costs, and validity."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your medical condition"
+      ctaHref="/tools/medical-condition-lookup"
       sections={[
         {
           heading: "Introduction",
           content: (
             <>
               <p>The EASA Class 1 medical certificate is the foundational requirement for any pilot intending to fly commercially within the European Union and other EASA member states. Whether your goal is to become an Airline Transport Pilot (ATPL), a Commercial Pilot (CPL), or a Multi-crew Pilot (MPL), this certificate is mandatory. It represents the strictest aviation medical standard in Europe, meticulously assessing cardiovascular health, vision, hearing, mental health, and neurological fitness. This guide covers the exact requirements, the examination process at approved Aeromedical Centres (AeMCs) across Europe, real 2026 costs by country, and what to do if you have a condition that may affect your certification.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
+              </p>
             </>
           )
         },

@@ -11,14 +11,17 @@ export default function UsPilotBases() {
       category="Pilot Lifestyle"
       canonical="https://aviatoriq.com/us/guides/us-pilot-training-2026"
       metaDescription="How US airline pilot base assignments work, which bases are most desirable, and how seniority determines where you live and fly in 2026."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Get my free US pilot roadmap"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "What is an Airline Pilot Base?",
           content: (
             <>
               <p>In the airline industry, a "base" (or domicile) is the airport where a pilot's trips begin and end. It is the geographic center of your working life. When you report for duty, you report to your base. When your trip is over, you are released at your base.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
               <p>Your base dictates almost everything about your lifestyle:</p>
               <ul>
                 <li><strong>Where you live:</strong> If you live in your base city, you can drive to work. If you live elsewhere, you must "commute" by flying standby on other flights to get to work.</li>

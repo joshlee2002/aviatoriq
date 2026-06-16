@@ -11,14 +11,17 @@ export default function PorterAirlinesCadet() {
       category="Airline Cadet Programs"
       canonical="https://aviatoriq.com/canada/guides/porter-airlines-cadet-program"
       metaDescription="Navigate the Porter Airlines Cadet Program for 2026. Discover in-depth training modules, precise cost estimations in CAD, stringent eligibility, and a clear career trajectory to a Porter First Officer position."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "1. Introduction to the Elite Destination Porter Cadet Program",
           content: (
             <>
               <p>The Canadian aviation sector, particularly regional air travel, is experiencing a significant resurgence and sustained growth, leading to an escalating demand for highly competent and dedicated pilots. For individuals harboring aspirations of a distinguished career in the cockpit, the <strong>Destination Porter Cadet Program</strong> represents an elite, structured, and accelerated pathway into commercial aviation. This meticulously crafted program is the result of a strategic collaboration between Porter Airlines, a rapidly expanding Canadian carrier, CAE, a global leader in aviation training, and Cygnet Aviation Academy, a renowned flight training institution. Its primary objective is to meticulously develop and integrate the next generation of First Officers directly into Porter Airlines' modern Dash 8-400 fleet.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
+              </p>
               <p>Conceived to proactively address the anticipated pilot shortage and ensure a consistent supply of highly trained aviators, the Destination Porter program offers a comprehensive Integrated Airline Transport Pilot License (ATPL) training curriculum. This program is uniquely designed for ambitious individuals with minimal to no prior flight experience, providing an end-to-end training solution that spans from fundamental aeronautical principles to advanced multi-crew airline operations. A cornerstone of this program is the provision of a <strong>conditional offer of employment</strong> with Porter Airlines upon successful acceptance, thereby establishing a clear, de-risked career trajectory into a professional piloting role from the outset of training.</p>
             </>
           )

@@ -7,6 +7,9 @@ export default function BestFlightSchoolsUSA() {
       title="Best Flight Schools USA 2026: The Complete Comparison"
       subtitle="ATP Flight School, Epic Flight Academy, Embry-Riddle, CAE, UND, and local Part 61 clubs — compared on real 2026 prices, timelines, career outcomes, and financing."
       readTime="15 min read"
+      ctaHref="/schools"
+      ctaText="Browse the school directory"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/best-schools-usa_9e4f2b7a.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/best-flight-schools-usa"
@@ -25,6 +28,9 @@ export default function BestFlightSchoolsUSA() {
             <>
               <p>
                 The US flight training market in 2026 offers more options than ever, but the choice between them is consequential. Spend $80,000 at the wrong school and you could add 12–18 months to your timeline to the airlines. Spend $220,000 at a university when you only needed a $124,000 accelerated programme and you've taken on unnecessary debt.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Compare schools side by side in our <Link href="/schools" className="text-blue-400 underline">Flight School Directory</Link>, which lists verified schools with tuition fees, locations, and airline partnerships.
               </p>
               <p>
                 The right school depends on three factors: whether you want a degree, how quickly you want to reach the airlines, and how much debt you can service on a regional FO salary of $90,000–$110,000 in your first year.

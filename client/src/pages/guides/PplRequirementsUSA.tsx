@@ -31,6 +31,7 @@ const PplRequirementsUSA = () => {
         },
       ]}
       readTime="15 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/ppl-requirements-usa_64f40a86.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
@@ -41,6 +42,9 @@ const PplRequirementsUSA = () => {
             <>
               <p>
                 The Private Pilot Certificate (PPL) is your first major milestone in aviation, allowing you to fly an aircraft for personal use, not for hire. It's the foundation for all further aviation ratings and certificates, opening up a world of personal travel, adventure, and the unique perspective that only pilots experience. Obtaining a PPL in the United States is governed by the Federal Aviation Administration (FAA) and involves a structured process of ground instruction, flight training, and examinations.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <img src="/manus-storage/solo-flight_ac4d5964.jpg" alt="Student pilot solo flight USA" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>

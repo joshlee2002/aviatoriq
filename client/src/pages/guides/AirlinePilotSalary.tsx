@@ -10,8 +10,9 @@ export default function AirlinePilotSalary() {
       canonical="/guides/airline-pilot-salary"
       metaDescription="UK airline pilot salary 2026: easyJet FO £65k–£100k, Ryanair FO £50k–£95k, BA FO £40k–£120k. Verified from BALPA and airline data."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/airline-salary_3b7c8d1e.jpg"
-      ctaHref="/quiz"
+      ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       scopeBanner={<GuideScopeBanner scope="Salary figures in this guide are for UK airline pilots in GBP. Salaries vary significantly by country and airline." usHref="/us/guides/airline-pilot-salary-usa" usLabel="View USA salaries →" />}
       faqSchema={[
@@ -28,6 +29,9 @@ export default function AirlinePilotSalary() {
             <>
               <p>
                 If you are considering spending £100,000 on flight training, you need to know exactly what the return on that investment looks like. In 2026, the financial outlook for UK airline pilots is the strongest it has been in over a decade.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
               </p>
               <p>
                 Driven by a structural pilot shortage, rapid fleet expansion at low-cost carriers, and a wave of senior captain retirements, salaries have surged. However, the headline figures often hide the complex reality of how pilots are actually paid.

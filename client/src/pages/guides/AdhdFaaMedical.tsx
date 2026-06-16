@@ -31,9 +31,10 @@ const AdhdFaaMedical = () => {
         },
       ]}
       readTime="15 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/adhd-faa_7b3e9f2a.jpg"
-      ctaHref="/us/roadmap"
-      ctaText="Get my free US pilot roadmap"
+      ctaHref="/us/medical-lookup"
+      ctaText="Check your FAA medical condition"
       sections={[
         {
           heading: "The FAA's Stance on ADHD: A Historical Overview",
@@ -41,6 +42,9 @@ const AdhdFaaMedical = () => {
             <>
               <p>
                 Historically, Attention-Deficit/Hyperactivity Disorder (ADHD) has been a significant hurdle for aspiring pilots seeking FAA medical certification. The Federal Aviation Administration (FAA) has long viewed ADHD, and particularly the use of stimulant medications to treat it, as a condition that could impair an individual's ability to safely operate an aircraft. This conservative stance stems from concerns about potential distractions, impulsivity, and cognitive deficits that could compromise flight safety. For decades, an ADHD diagnosis often led to an automatic deferral or denial of a medical certificate, placing a heavy burden on applicants to prove their fitness.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/us/medical-lookup" className="text-blue-400 underline">FAA Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your FAA medical application.
               </p>
               <img src="/manus-storage/faa-ame-doctor_9d5ff4b3.jpg" alt="FAA AME doctor" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>

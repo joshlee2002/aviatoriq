@@ -13,13 +13,16 @@ export default function CanadaPilotSalary2026() {
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-salary-2026"
       metaDescription="Canadian pilot salary guide 2026. Real pay data for Air Canada, WestJet, Porter, Flair, and regional airlines. First Officer and Captain pay scales explained."
       ctaText="Generate my personalised roadmap"
-      ctaHref="/quiz"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "The State of Canadian Pilot Pay in 2026",
           content: (
             <>
               <p>For years, Canadian pilot salaries lagged significantly behind their counterparts in the United States. However, 2024 and 2025 marked a historic turning point. Following intense union negotiations and the looming threat of strikes, major carriers like Air Canada and WestJet agreed to unprecedented pay increases to prevent their pilots from migrating south of the border [1].</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
+              </p>
               <p>In 2026, the Canadian pilot compensation landscape is stronger than ever. Air Canada pilots secured a cumulative 42% pay increase over four years, fundamentally resetting the baseline for the entire industry [2]. While starting salaries at regional operators and flight schools remain modest, the top-end earning potential for a widebody Captain at a legacy carrier now comfortably exceeds $300,000 CAD per year.</p>
               <p>This guide breaks down exactly what you can expect to earn at every stage of a Canadian aviation career, from your first job building hours to the left seat of an international airliner.</p>
             </>

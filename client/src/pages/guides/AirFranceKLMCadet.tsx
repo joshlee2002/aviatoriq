@@ -12,14 +12,17 @@ export default function AirFranceKLMCadet() {
       category="Europe Pilot Training"
       canonical="https://aviatoriq.com/europe/guides/air-france-klm-cadet-pilot-program"
       metaDescription="Explore the Air France and KLM Cadet Pilot Programs for 2026. Detailed insights into eligibility, selection process, training, costs, and career opportunities."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction to Elite European Cadet Programs",
           content: (
             <>
               <p>Aspiring airline pilots in Europe often seek pathways that combine rigorous training with financial accessibility. The Air France and KLM Cadet Pilot Programs represent two of the most prestigious and sought-after routes to a professional flying career within the European Union Aviation Safety Agency (EASA) regulatory framework. These programs are designed to cultivate future airline captains, offering either fully sponsored training or highly favorable deferred payment structures, making them exceptionally competitive.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
+              </p>
               <p>This guide provides an in-depth analysis of both the Air France and KLM Cadet programs for 2026, covering eligibility criteria, the multi-stage selection process, comprehensive training modules, financial implications, and the career trajectory upon graduation. Our aim is to equip prospective cadets with the precise, up-to-date information necessary to navigate these elite pathways successfully.</p>
             </>
           )

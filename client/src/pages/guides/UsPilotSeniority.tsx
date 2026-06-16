@@ -13,13 +13,16 @@ export default function UsPilotSeniority() {
       canonical="https://aviatoriq.com/us/guides/us-pilot-seniority"
       metaDescription="Explore the profound impact of seniority on US airline pilot careers in 2026, covering pay, schedules, bases, aircraft, and career advancement."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "The Unseen Hand: What is Pilot Seniority?",
           content: (
             <>
               <p>Pilot seniority in the United States airline industry is more than just a number; it is the foundational pillar upon which a pilot's entire career trajectory, quality of life, and financial prosperity are built. Established through collective bargaining agreements between pilot unions (such as ALPA, APA, SWAPA, etc.) and individual airlines, seniority dictates virtually every aspect of a pilot's professional existence. It is a strict, immutable hierarchy based on the date and time of hire, with the earliest hire holding the highest seniority. This system ensures fairness and transparency, removing subjective biases from critical career decisions.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
               <p>Unlike many other professions where performance reviews or educational achievements might influence career progression, an airline pilot's advancement is almost exclusively tied to their position on the seniority list. This includes everything from the type of aircraft they fly, their base location, monthly schedule, vacation slots, and crucially, their eligibility for captain upgrades and protection during economic downturns. Understanding this system is paramount for any aspiring or current US airline pilot, as strategic career planning revolves around maximizing seniority.</p>
             </>
           )

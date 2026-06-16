@@ -4,6 +4,7 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
       title="CFI Hour Building Methods, Costs & Timeline USA 2026: Your Complete Guide"
       subtitle="Navigate the complexities of building flight hours in the USA, from CFI pathways and alternative methods to detailed cost analysis and strategic timelines for aspiring airline pilots in 2026."
       readTime="X min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/hour-building-usa_cbbd5703.jpg" // Placeholder, will update later
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/hour-building-usa"
@@ -414,7 +415,7 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
         { title: "GI Bill Flight Training", href: "/us/guides/gi-bill-flight-training", time: "X min" },
         { title: "US Pilot Shortage 2026", href: "/us/guides/us-pilot-shortage-2026", time: "X min" },
       ]}
-      ctaText="Generate my personalised roadmap"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/us/roadmap"
       faqSchema={[
         { question: "What are the exact costs associated with obtaining a CFI certificate, including training, exams, and materials?", answer: "The estimated total cost for obtaining a CFI certificate in 2026 ranges from $8,850 to $16,100. This includes CFI flight training ($7,000-$12,000), ground instruction ($500-$2,000), FAA knowledge exams ($350-$400), the FAA practical test fee ($800-$1,200), and study materials ($200-$500). These figures exclude prior certificates and living expenses." },

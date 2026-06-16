@@ -12,14 +12,17 @@ export default function AirArabiaCadetProgram() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/air-arabia-cadet-program"
       metaDescription="Comprehensive guide to the Air Arabia Cadet Pilot Program for 2026. Learn about eligibility, GCAA regulations, training structure, and estimated costs in AED."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction to the Air Arabia Cadet Pilot Program",
           content: (
             <>
               <p>The Air Arabia Cadet Pilot Program offers an unparalleled opportunity for aspiring aviators to launch their careers with one of the Middle East's leading low-cost carriers. Designed as a Multi-Crew Pilot Licence (MPL) program, it provides a direct pathway to the flight deck of an Airbus A320, integrating theoretical knowledge with practical, airline-specific training from the outset. This guide covers the program, offering a comprehensive overview for prospective cadets considering this elite training route in 2026.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
+              </p>
               <p>Operated in conjunction with the Air Arabia Academy, the program is meticulously structured to meet the rigorous standards set by the UAE General Civil Aviation Authority (GCAA). It emphasizes a competency-based approach, ensuring graduates are not only proficient in flying but also adept at operating within a multi-crew airline environment. With a strong focus on career progression, successful completion often leads to permanent contracts and guaranteed flying hours with Air Arabia, making it a highly sought-after opportunity for both local and international candidates.</p>
             </>
           )

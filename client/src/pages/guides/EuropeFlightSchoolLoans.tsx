@@ -12,8 +12,8 @@ export default function EuropeFlightSchoolLoans() {
       category="Pilot Training Financing"
       canonical="https://aviatoriq.com/europe/guides/europe-flight-school-loans"
       metaDescription="Explore detailed insights into European flight school loans, EASA regulations, and pilot training costs in 2026. Your essential guide to aviation financing."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Calculate your training costs"
+      ctaHref="/calculator"
       sections={[
         {
           heading: "The European Dream: Becoming an EASA-Certified Pilot",
@@ -21,6 +21,9 @@ export default function EuropeFlightSchoolLoans() {
             <>
               <p>
                 Europe stands as a global hub for aviation, offering world-class pilot training under the stringent yet globally recognized standards of the European Union Aviation Safety Agency (EASA). Aspiring pilots from across the globe are drawn to the continent's reputable flight academies, diverse airspace, and direct pathways to major European airlines. However, the journey to the cockpit, while rewarding, requires a significant financial commitment. Understanding the landscape of pilot training costs and, crucially, the available financing options, is paramount for any prospective aviator in 2026.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/calculator" className="text-blue-400 underline">Pilot Training Cost Calculator</Link> to get a personalised cost estimate based on your chosen route and country.
               </p>
               <p>
                 This guide delves deep into the financial realities of European pilot training, providing a transparent overview of expenses, EASA regulatory frameworks, and the various avenues for securing flight school loans. Our aim is to equip you with the knowledge needed to make informed decisions, ensuring your focus remains on mastering the skies rather than navigating financial uncertainties.

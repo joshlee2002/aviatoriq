@@ -12,7 +12,7 @@ export default function UaePilotLifestyle() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/uae-pilot-lifestyle"
       metaDescription="Explore the UAE pilot lifestyle in 2026: GCAA regulations, training costs, top airlines like Emirates & Flydubai, tax-free salaries, and career benefits."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -21,6 +21,9 @@ export default function UaePilotLifestyle() {
             <>
               <p>
                 The United Arab Emirates (UAE) stands as a global aviation hub, renowned for its rapid growth, state-of-the-art infrastructure, and world-class airlines. For aspiring and experienced pilots alike, the UAE offers a compelling blend of professional opportunities and an exceptional quality of life. In 2026, the sector continues its upward trajectory, driven by ambitious expansion plans from carriers like Emirates, Flydubai, and Etihad Airways, alongside significant government investment in aviation technology and training. This guide delves into the intricate details of becoming and thriving as a pilot in the UAE, covering everything from regulatory frameworks and training costs to the unique lifestyle and career progression prospects.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 The appeal of the UAE extends beyond its modern airports and impressive fleets. Pilots are drawn to the region for its competitive, often tax-free, salaries, comprehensive benefits packages, and a vibrant expatriate community. The strategic geographical location facilitates extensive global connectivity, offering diverse flying experiences. As the demand for skilled aviation professionals remains robust, understanding the specific requirements and nuances of the UAE market is crucial for anyone considering a career in its skies.

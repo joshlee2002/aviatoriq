@@ -12,7 +12,7 @@ export default function AustraliaPilotBases() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-bases"
       metaDescription="Explore Australia's key pilot bases, understand CASA regulations, training costs, and career prospects for pilots in 2026. Your essential guide to aviation in Australia."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function AustraliaPilotBases() {
           content: (
             <>
               <p>Australia, with its vast distances and thriving aviation industry, offers a dynamic landscape for aspiring pilots. Understanding the strategic importance of pilot bases is crucial for career planning, as these locations often dictate lifestyle, commuting, and career progression opportunities. In 2026, Australia's aviation sector continues its robust recovery, with major airlines actively recruiting and expanding their operations across key hubs.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>This guide delves into the primary pilot bases across Australia, outlining the operational significance of each, the types of roles available, and how these bases integrate with the broader pilot training and career pathway governed by the Civil Aviation Safety Authority (CASA).</p>
             </>
           )

@@ -12,14 +12,17 @@ export default function EuropePilotSalary2026() {
       category="Europe"
       canonical="https://aviatoriq.com/europe/guides/pilot-salary-2026"
       metaDescription="Discover the latest 2026 pilot salaries in Europe, compare LCCs vs Legacy carriers, and understand EASA Part-FCL licensing requirements."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction",
           content: (
             <>
               <p>The European pilot market in 2026 is experiencing an unprecedented "arms race" for qualified flight crew. Airlines are aggressively competing through significant salary increases, attractive retention bonuses, and improved benefits packages. Pilot compensation has seen a remarkable 8–12% year-over-year growth through late 2025 and into 2026, substantially outpacing the Eurozone's average wage growth of approximately 3%.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
+              </p>
               <p>This surge is primarily driven by a global shortage of 38,000 unfilled pilot positions, with over 16,000 European pilots anticipated to retire within the next five years. This demographic shift has firmly empowered labor, granting pilots significant leverage in negotiations and career progression.</p>
             </>
           )

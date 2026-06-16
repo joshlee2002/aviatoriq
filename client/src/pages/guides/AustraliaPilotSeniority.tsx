@@ -12,7 +12,7 @@ export default function AustraliaPilotSeniority() {
       category="Career Progression"
       canonical="https://aviatoriq.com/australia/guides/pilot-seniority"
       metaDescription="Discover how pilot seniority works in Australia in 2026. Learn how it impacts your salary, aircraft type, base assignment, and career progression at major airlines."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function AustraliaPilotSeniority() {
           content: (
             <>
               <p>Pilot seniority is the bedrock of an airline pilot's career in Australia. It dictates everything from the aircraft you fly and the routes you are assigned, to your monthly schedule, vacation time, and ultimately, your earning potential. Unlike many other professions where merit or performance reviews drive career advancement, the airline industry operates on a strict seniority-based system.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>This guide provides a comprehensive, deep dive into how pilot seniority works in the Australian aviation market in 2026, focusing on major carriers like Qantas, Virgin Australia, and Jetstar.</p>
             </>
           )

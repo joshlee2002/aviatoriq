@@ -31,9 +31,10 @@ const PilotEyesightUK = () => {
         },
       ]}
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-eyesight_70ef5247.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
+      ctaHref="/tools/medical-condition-lookup"
+      ctaText="Check your medical condition"
       sections={[
         {
           heading: "UK pilot vision requirements at a glance",
@@ -41,6 +42,9 @@ const PilotEyesightUK = () => {
             <>
               <p>
                 The UK CAA Class 1 medical includes a detailed vision assessment. Poor eyesight does not automatically disqualify you — the majority of aspiring pilots who wear glasses or contact lenses pass without issue. What matters is whether your corrected vision meets the specific standards, and whether any underlying eye condition is stable and non-progressive.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
               </p>
               <p>
                 Post-Brexit, the UK CAA operates its own medical standards (UK-FCL), which are closely aligned with but not identical to the EASA standards. If you plan to fly for an EASA carrier (Ryanair, Wizz Air, etc.) you will need a separate EASA medical certificate — the vision standards are the same, but the certificates are issued separately.

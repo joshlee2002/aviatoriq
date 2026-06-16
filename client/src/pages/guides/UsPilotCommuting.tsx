@@ -13,13 +13,16 @@ export default function UsPilotCommuting() {
       canonical="https://aviatoriq.com/us/guides/us-pilot-commuting"
       metaDescription="Comprehensive guide for US airline pilots on commuting strategies, FAA Part 117 compliance, crash pad costs, and training considerations for 2026."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "Introduction",
           content: (
             <>
               <p>Commuting as an airline pilot in the United States is a complex logistical challenge that requires strategic planning, financial foresight, and a deep understanding of federal regulations. In 2026, as major carriers like American, Delta, and United continue robust hiring to offset retirements and fuel operational growth, the landscape of pilot domiciles and commuting practices has evolved. This comprehensive guide explores the realities of pilot commuting, the impact of FAA Part 117 regulations, the financial implications of crash pads, and how early training choices under Part 61 or Part 141 can shape a pilot's commuting resilience.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
             </>
           )
         },

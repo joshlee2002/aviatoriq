@@ -12,8 +12,8 @@ export default function FaaMedicalClass2() {
       category="FAA Medical Certification"
       canonical="https://aviatoriq.com/us/guides/faa-medical-class-2"
       metaDescription="Comprehensive guide to FAA Class 2 Medical Certificate requirements for US commercial pilots in 2026, including regulations, costs, and application process."
-      ctaText="Get my free US pilot roadmap"
-      ctaHref="/quiz"
+      ctaText="Check your FAA medical condition"
+      ctaHref="/us/medical-lookup"
       sections={[
         {
           heading: "Introduction: The Gateway to Commercial Aviation",
@@ -21,6 +21,9 @@ export default function FaaMedicalClass2() {
             <>
               <p>
                 The Federal Aviation Administration (FAA) Class 2 Medical Certificate is a critical credential for aspiring and active commercial pilots, flight engineers, flight navigators, and air traffic control tower operators in the United States. Unlike the Class 3 medical, which permits private pilot privileges, the Class 2 certificate signifies a higher standard of medical fitness, essential for those operating aircraft for compensation or hire, but not as an airline transport pilot (ATP) in scheduled air carrier operations. Maintaining this certificate is paramount, as it directly impacts a pilot's ability to exercise their professional privileges and ensures the safety of the national airspace system. This guide provides an in-depth examination of the FAA Class 2 Medical Certificate requirements, application process, costs, and validity periods, reflecting the most current 2026 regulations and data.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/us/medical-lookup" className="text-blue-400 underline">FAA Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your FAA medical application.
               </p>
             </>
           )

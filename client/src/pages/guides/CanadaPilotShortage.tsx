@@ -12,7 +12,7 @@ export default function CanadaPilotShortage() {
       category="Industry Insights"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-shortage"
       metaDescription="Explore the truth behind the 2026 Canadian pilot shortage. Learn about training costs, Transport Canada regulations, and career outlooks for new aviators."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -21,6 +21,9 @@ export default function CanadaPilotShortage() {
             <>
               <p>
                 The Canadian aviation industry, a vital artery for commerce, tourism, and connectivity across its vast geography, faces a complex challenge in 2026: a persistent and evolving pilot shortage. While often framed as a simple deficit of qualified aviators, the reality is nuanced, encompassing issues of recruitment, retention, training costs, and global market dynamics.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 Contrary to a straightforward lack of pilots, the Canadian situation is characterized by a shortage of <em>experienced</em> pilots and a struggle for regional airlines to retain talent against the allure of major carriers. The Air Line Pilots Association (ALPA) Canada, representing 95% of Canadian pilots, asserts that the issue is less about an absolute scarcity and more about an unwillingness or a failure to recognize an evolving market for pilots, particularly concerning competitive wages and working conditions.

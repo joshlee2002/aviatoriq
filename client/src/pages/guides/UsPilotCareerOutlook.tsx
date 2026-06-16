@@ -31,6 +31,7 @@ const UsPilotCareerOutlook = () => {
         },
       ]}
       readTime="10 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/us-pilot-career_eda6a21f.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
@@ -52,6 +53,9 @@ const UsPilotCareerOutlook = () => {
                 examining the scale of the shortage, its underlying causes,
                 the impact on career timelines, and the financial prospects
                 for new entrants.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <img src="/manus-storage/airline-pilot-cockpit_3c8e2f1a.jpg" alt="US airline pilot cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/first-officer-job_23328c88.jpg" alt="US airline first officer" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />

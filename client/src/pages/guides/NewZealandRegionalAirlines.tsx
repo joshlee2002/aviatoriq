@@ -12,14 +12,17 @@ export default function NewZealandRegionalAirlines() {
       category="New Zealand Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-regional-airlines-pilot-training"
       metaDescription="Comprehensive guide to pilot training in New Zealand for 2026, covering CAA NZ regulations, PPL, CPL, ATPL costs, regional airlines, and career paths."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Get my free US pilot roadmap"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "Introduction",
           content: (
             <>
               <p>New Zealand, renowned for its breathtaking landscapes and vibrant aviation sector, offers a compelling environment for aspiring pilots. The nation's Civil Aviation Authority (CAA NZ) maintains rigorous standards, aligning with International Civil Aviation Organization (ICAO) guidelines, ensuring that pilots trained here are globally recognized. This guide provides an in-depth exploration of the pilot training landscape in New Zealand, focusing on regulatory requirements, training pathways, costs, and career opportunities within its dynamic regional airline market as of 2026.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
             </>
           )
         },

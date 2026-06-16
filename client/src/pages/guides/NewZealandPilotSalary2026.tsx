@@ -11,8 +11,8 @@ export default function NewZealandPilotSalary2026() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-pilot-salary-2026"
       metaDescription="Explore the definitive guide to pilot salaries in New Zealand for 2026, covering Air NZ earnings, training costs, and license conversion pathways."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction: Navigating the Skies of Opportunity in New Zealand",
@@ -20,6 +20,9 @@ export default function NewZealandPilotSalary2026() {
             <>
               <p>
                 New Zealand, renowned for its breathtaking landscapes and robust aviation sector, presents a compelling destination for aspiring and experienced pilots alike. The nation's aviation industry, anchored by its flag carrier Air New Zealand, offers a dynamic environment characterized by high operational standards, continuous innovation, and a strong emphasis on safety. As of 2026, the demand for skilled aviators remains consistent, driven by both domestic expansion and international route connectivity. This guide provides a meticulous examination of pilot salaries, comprehensive training costs, and the intricate process of international license conversion, offering an indispensable resource for those considering a career in the New Zealand skies.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
               </p>
               <p>
                 The career trajectory for a pilot in New Zealand is shaped by a confluence of factors, including experience, aircraft type, and the specific airline employer. Aspiring pilots must navigate a rigorous training pathway, while experienced international aviators often seek to understand the nuances of local regulations and license validation. This report delves into the financial remuneration, regulatory frameworks, and career progression opportunities, ensuring a professional and honest perspective on what it truly means to be a pilot in New Zealand in 2026.

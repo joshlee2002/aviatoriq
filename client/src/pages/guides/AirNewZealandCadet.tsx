@@ -12,8 +12,8 @@ export default function AirNewZealandCadet() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/air-new-zealand-cadet-pilot-training"
       metaDescription="Explore the comprehensive guide to pilot training in New Zealand, including CAA NZ regulations, estimated costs, leading flight schools, and details on the Air New Zealand Mangōpare Pilot Cadetship. Your essential resource for aspiring aviators in Aotearoa."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction to Pilot Training in New Zealand",
@@ -21,6 +21,9 @@ export default function AirNewZealandCadet() {
             <>
               <p>
                 New Zealand, known for its stunning landscapes and vibrant aviation sector, offers a robust and highly respected environment for aspiring pilots. The Civil Aviation Authority of New Zealand (CAA NZ) oversees all aviation activities, ensuring rigorous standards for pilot training and licensing. For those dreaming of a career in the cockpit, understanding the local regulatory framework, available training pathways, and financial commitments is paramount. This guide provides an exhaustive overview, focusing on the current landscape in 2026, including the general pilot training market and specific insights into the Air New Zealand Mangōpare Pilot Cadetship.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <p>
                 The journey to becoming a commercial pilot in New Zealand is a significant investment of time, effort, and capital. However, the rewards of a professional aviation career, particularly with a flag carrier like Air New Zealand, are substantial. This guide aims to equip prospective cadets and independent students with the knowledge required to make informed decisions, navigate the complexities of flight training, and ultimately achieve their aviation aspirations.

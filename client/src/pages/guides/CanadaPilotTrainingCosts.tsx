@@ -12,14 +12,17 @@ export default function CanadaPilotTrainingCosts() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-training-costs"
       metaDescription="Detailed guide on pilot training costs in Canada for 2026, covering PPL, CPL, ATPL, and strategies to save money."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Calculate your training costs"
+      ctaHref="/calculator"
       sections={[
         {
           heading: "1. Private Pilot Licence (PPL) Costs and Requirements",
           content: (
             <>
               <p>Becoming a pilot in Canada is a rewarding but financially significant undertaking. Whether you are aiming to fly recreationally or pursuing a career as an airline captain, understanding the true costs, Transport Canada regulations, and hidden expenses is crucial for success in 2026.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/calculator" className="text-blue-400 underline">Pilot Training Cost Calculator</Link> to get a personalised cost estimate based on your chosen route and country.
+              </p>
               <p>The Private Pilot Licence (PPL) is the foundational step for all pilots in Canada. Under Transport Canada's Standard 421.26, applicants must be at least 17 years old and hold a Category 3 Medical Certificate.</p>
               <p>While Transport Canada mandates a minimum of 45 hours of flight training (including 17 hours dual and 12 hours solo), the national average to complete a PPL is closer to 65-75 hours.</p>
               <h3>Estimated PPL Costs (CAD)</h3>

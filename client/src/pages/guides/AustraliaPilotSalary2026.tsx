@@ -13,13 +13,16 @@ export default function AustraliaPilotSalary2026() {
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-salary-2026"
       metaDescription="Australian pilot salary guide 2026. Real pay data for Qantas, Virgin Australia, Jetstar, Rex, and regional airlines. First Officer and Captain pay scales explained."
       ctaText="Generate my personalised roadmap"
-      ctaHref="/quiz"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "The State of Australian Pilot Pay in 2026",
           content: (
             <>
               <p>The Australian aviation market is highly consolidated, dominated by the Qantas Group (including Jetstar and QantasLink) and Virgin Australia. This duopoly, combined with strict aviation safety standards managed by CASA, creates a highly regulated but lucrative career path for pilots.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
+              </p>
               <p>In 2026, pilot compensation in Australia remains among the strongest in the Asia-Pacific region. Following post-pandemic recovery and renegotiated Enterprise Agreements (EAs), pilots at major carriers have secured solid base pay increases alongside excellent superannuation (retirement) benefits [1].</p>
               <p>While the journey begins with low-paying general aviation jobs in the Outback or as a flight instructor, the top-end earning potential for a widebody Captain at Qantas comfortably exceeds $400,000 AUD per year. This guide breaks down exactly what you can expect to earn at every stage of an Australian aviation career.</p>
             </>

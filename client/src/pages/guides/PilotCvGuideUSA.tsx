@@ -10,10 +10,11 @@ export default function PilotCvGuideUSA() {
       canonical="/us/guides/pilot-resume-usa"
       metaDescription="Pilot resume guide USA 2026. How to format your pilot resume, how to list flight hours (total, PIC, multi-engine), and what US airline recruiters actually want to see."
       readTime="10 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-cv_9d4c2b8e.jpg"
       category="US Pilot Training"
-      ctaHref="/us/roadmap"
-      ctaText="Find my training route"
+      ctaHref="/us/quiz"
+      ctaText="Start your US career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide covers resume formatting for US airlines." globalHref="/guides/pilot-cv-cover-letter" globalLabel="View UK/European CV guide →" />}
       faqSchema={[
         { question: "How long should a pilot resume be?", answer: "One page. Unless you have over 20 years of extensive military or commercial aviation experience, your resume should fit on a single page. Airline recruiters scan resumes in seconds; brevity is essential." },
@@ -28,6 +29,9 @@ export default function PilotCvGuideUSA() {
             <>
               <p>
                 In 2026, airline recruitment departments are using automated Applicant Tracking Systems (ATS) to filter out unqualified candidates, but human recruiters still review the shortlisted resumes. 
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Before your interview, complete our free <Link href="/us/quiz" className="text-blue-400 underline">US Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
               </p>
               <p>
                 A recruiter at a major US airline will look at your resume for about 10 seconds before deciding whether to read further. In that 10 seconds, they are looking for three things: <strong>Total Hours</strong>, <strong>Certificates/Ratings</strong>, and <strong>Recent Experience</strong>.

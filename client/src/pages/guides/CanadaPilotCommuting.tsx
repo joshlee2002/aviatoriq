@@ -12,7 +12,7 @@ export default function CanadaPilotCommuting() {
       category="Pilot Lifestyle"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-commuting"
       metaDescription="Comprehensive guide for Canadian pilots on commuting, covering Transport Canada regulations, major airline policies, costs, and strategies for a successful career."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -21,6 +21,9 @@ export default function CanadaPilotCommuting() {
             <>
               <p>
                 Pilot commuting, the practice of living in one city and being based in another for work, is a prevalent and often necessary aspect of an airline pilot's career in Canada. While it offers flexibility in lifestyle choices, it also introduces unique challenges related to logistics, fatigue management, and financial planning. For aspiring and current Canadian pilots, understanding the intricacies of commuting is crucial for a sustainable and successful career in the country's diverse aviation sector.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 The Canadian aviation landscape, characterized by vast distances and concentrated airline hubs, often necessitates commuting. Major airlines like Air Canada and WestJet operate primary bases in cities such as Toronto, Montreal, Vancouver, and Calgary. Pilots, especially those early in their careers, may find themselves based in a city far from their preferred residence due to seniority systems and fleet assignments. This guide delves into the regulatory framework, airline-specific policies, and practical strategies to navigate the complexities of pilot commuting in Canada.

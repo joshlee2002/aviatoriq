@@ -6,6 +6,7 @@ export default function AmITooOldUSA() {
       title="Am I Too Old to Become a Pilot in the USA? (2026 Guide)"
       subtitle="Discover the truth about starting a pilot career later in life. Learn about FAA age limits, medical requirements, and the best pathways for career changers in their 30s, 40s, and 50s."
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-over-40-usa_35140e0e.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/am-i-too-old-to-become-a-pilot-usa"
@@ -211,7 +212,7 @@ export default function AmITooOldUSA() {
         { title: "Airline Pilot Salary USA", href: "/us/guides/airline-pilot-salary-usa", time: "8 min" },
         { title: "FAA Medical Requirements", href: "/us/guides/faa-medical-requirements", time: "9 min" }
       ]}
-      ctaText="Find my training route"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/us/roadmap"
       faqSchema={[
         {

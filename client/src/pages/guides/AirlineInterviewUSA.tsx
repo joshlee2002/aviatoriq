@@ -6,6 +6,7 @@ export default function AirlineInterviewUSA() {
       title="US Airline Pilot Interview Preparation Guide 2026: Ace Your Interview"
       subtitle="What US airlines actually look for in 2026: TBAS aptitude test, TMAAT behavioural questions, technical knowledge standards, and how to prepare for major and regional carrier interviews."
       readTime="19 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/airline-interview-usa_2b9e4f7a.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/airline-interview-usa"
@@ -266,8 +267,8 @@ export default function AirlineInterviewUSA() {
         { title: "FAA Medical Requirements for Pilots", href: "/us/guides/faa-medical-requirements", time: "7 min" },
         { title: "US Pilot Career Outlook 2026", href: "/us/guides/us-pilot-career-outlook", time: "10 min" },
       ]}
-      ctaText="Find my training route"
-      ctaHref="/us/roadmap"
+      ctaText="Start your US career assessment"
+      ctaHref="/us/quiz"
       faqSchema={[
         {
           question: "How long does the airline interview process typically take in 2026?",

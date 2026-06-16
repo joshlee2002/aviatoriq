@@ -12,8 +12,8 @@ export default function SaMedicalClass1() {
       category="South Africa Pilot Training"
       canonical="https://aviatoriq.com/south-africa/guides/sacaa-class-1-medical-certificate"
       metaDescription="Comprehensive guide to the SACAA Class 1 Medical Certificate for aspiring pilots in South Africa. Covers 2026 requirements, costs, disqualifying conditions, and renewal."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your medical condition"
+      ctaHref="/tools/medical-condition-lookup"
       sections={[
         {
           heading: "Understanding the SACAA Class 1 Medical Certificate",
@@ -21,6 +21,9 @@ export default function SaMedicalClass1() {
             <>
               <p>
                 The South African Civil Aviation Authority (SACAA) Class 1 Medical Certificate is the cornerstone for any individual aspiring to a professional piloting career within South Africa. This certificate is not merely a formality; it is a rigorous assessment designed to ensure that pilots possess the necessary physical and mental fitness to safely operate aircraft, often under demanding conditions. Adherence to these medical standards is paramount for flight safety, protecting not only the pilot and crew but also passengers and the public.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
               </p>
               <p>
                 In South Africa, the SACAA's medical standards are harmonized with the International Civil Aviation Organization (ICAO) Annex 1, Chapter 6, ensuring international recognition and compliance. This means that a SACAA Class 1 Medical Certificate is generally accepted globally, facilitating career opportunities beyond national borders. The examination is comprehensive, evaluating various physiological and psychological aspects to mitigate any potential in-flight incapacitation risks.

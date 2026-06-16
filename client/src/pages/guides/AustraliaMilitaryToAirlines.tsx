@@ -12,7 +12,7 @@ export default function AustraliaMilitaryToAirlines() {
       category="Military to Commercial Transition"
       canonical="https://aviatoriq.com/australia/guides/australia-military-to-airlines"
       metaDescription="Comprehensive guide for Australian military pilots transitioning to commercial airlines. Covers CASA regulations, ATPL conversion, costs, and employment prospects in 2026."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function AustraliaMilitaryToAirlines() {
           content: (
             <>
               <p>The transition from military to commercial aviation is a well-trodden path for many highly skilled pilots in Australia. The Australian Defence Force (ADF) produces some of the world's most capable aviators, equipped with exceptional discipline, decision-making under pressure, and advanced operational experience. These qualities are highly sought after by commercial airlines, making ex-military pilots prime candidates for a successful second career in the civilian sector. However, navigating the regulatory landscape of the Civil Aviation Safety Authority (CASA) and the specific requirements of Australian airlines requires careful planning and execution. This guide provides a comprehensive roadmap for ADF pilots looking to make this significant career move in 2026, detailing the licensing conversion process, associated costs, and employment opportunities.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>While the skills acquired in the military are invaluable, the civilian aviation world operates under a different set of rules and procedures. Understanding these differences and proactively addressing the conversion requirements will streamline your journey. This guide will delve into the specifics of CASA regulations, the necessary examinations, financial considerations, and insights into what major Australian airlines are looking for for their pilot recruits.</p>
             </>
           )

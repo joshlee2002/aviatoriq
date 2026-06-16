@@ -12,7 +12,7 @@ export default function CanadaPilotSchedule() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-schedule"
       metaDescription="Detailed guide on Canadian pilot training schedules, including PPL, CPL, ATPL, costs, Transport Canada regulations, and career pathways for aspiring pilots in 2026."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function CanadaPilotSchedule() {
           content: (
             <>
               <p>Embarking on a career as a pilot in Canada is an ambitious and rewarding endeavor, demanding dedication, precision, and a clear understanding of the training landscape. Canada, with its vast airspace and robust aviation industry, offers world-class flight training opportunities. However, the journey from aspiring aviator to commercial pilot is structured and regulated, requiring careful planning of your training schedule. This guide provides an in-depth look at the typical timelines, regulatory milestones, and strategic considerations for pilot training in Canada, ensuring you are well-prepared for the demands of 2026 and beyond.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>The Canadian aviation sector is experiencing consistent growth, driven by regional expansion, cargo operations, and a steady demand for skilled pilots. Understanding the intricacies of Transport Canada (TC) regulations, the various license types, and the most efficient training pathways is paramount to a successful and timely progression. This guide aims to demystify the scheduling aspect, offering a realistic outlook on what to expect at each stage of your professional development.</p>
             </>
           )

@@ -10,9 +10,10 @@ export default function PilotShortageUK() {
       canonical="/guides/uk-pilot-shortage-2026"
       metaDescription="Is there a pilot shortage in the UK in 2026? Yes. Read the data on mandatory retirements, airline fleet expansion, and how it affects your career timeline and salary."
       readTime="10 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-shortage_9d4c2b8e.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
+      ctaHref="/quiz"
+      ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide covers the pilot shortage in the UK specifically." usHref="/us/guides/us-pilot-shortage-2026" usLabel="View USA pilot shortage →" />}
       faqSchema={[
         { question: "Is there a pilot shortage in the UK in 2026?", answer: "Yes, there is a structural shortage of experienced captains and a growing demand for newly qualified First Officers. This is driven by post-pandemic airline expansion and a wave of mandatory retirements." },
@@ -27,6 +28,9 @@ export default function PilotShortageUK() {
             <>
               <p>
                 If you are considering spending £100,000 on flight training, you need to know if there will actually be a job waiting for you at the end. The short answer in 2026 is yes — but the nature of the "pilot shortage" is often misunderstood.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 There is not a shortage of people who <em>want</em> to be pilots. There is a structural shortage of <strong>experienced, type-rated Captains</strong>, which forces airlines to promote First Officers faster, which in turn creates a vacuum at the entry level that must be filled by newly qualified cadets.

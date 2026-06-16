@@ -18,6 +18,7 @@ const PilotTrainingFinance2026 = () => {
         { question: "What is the RAF pathway for pilot training?", answer: "Joining the RAF as a pilot means the Ministry of Defence funds all training costs (estimated at £953,817 for multi-engine pilots). RAF officer cadets earn a salary from day one, starting at approximately £34,600/year, rising to £64,600+ on promotion to Flight Lieutenant. In exchange, pilots commit to a service period. Civilian licence conversion is typically funded by the future airline employer." },
       ]}
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/training-finance-2026_cc42618a.jpg"
       ctaHref="/calculator"
       ctaText="Calculate your training costs"

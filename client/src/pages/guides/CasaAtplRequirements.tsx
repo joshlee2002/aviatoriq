@@ -12,7 +12,7 @@ export default function CasaAtplRequirements() {
       category="Pilot Licences"
       canonical="https://aviatoriq.com/australia/guides/casa-atpl-requirements"
       metaDescription="Detailed guide to CASA ATPL requirements for 2026, covering eligibility, exams, flight hours, costs, and career opportunities in Australia."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -21,6 +21,9 @@ export default function CasaAtplRequirements() {
             <>
               <p>
                 The Air Transport Pilot Licence (ATPL) is the pinnacle of aviation certifications in Australia, issued by the Civil Aviation Safety Authority (CASA). It is the mandatory qualification for pilots aspiring to command multi-crew aircraft in commercial air transport operations, or to serve as a co-pilot in such environments. Achieving an ATPL signifies a pilot's mastery of advanced aeronautical knowledge, extensive flight experience, and the highest standards of operational proficiency. This guide provides a comprehensive overview of the requirements, training pathways, and career implications for obtaining a CASA ATPL in 2026.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 The ATPL is not merely a licence; it is a testament to a pilot's dedication, skill, and commitment to safety. It opens doors to careers with major airlines, freight operators, and other advanced aviation roles. Understanding the intricate details of CASA's regulations is crucial for any aspiring Air Transport Pilot, as the journey demands rigorous study, significant flight hours, and a thorough understanding of complex operational procedures.

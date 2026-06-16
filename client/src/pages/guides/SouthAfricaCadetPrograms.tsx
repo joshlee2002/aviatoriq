@@ -12,14 +12,17 @@ export default function SouthAfricaCadetPrograms() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/south-africa/guides/south-africa-cadet-programs"
       metaDescription="Explore South Africa's top pilot cadet programs for 2026. Understand SACAA regulations, SAA requirements, training costs, and funding options for a successful aviation career."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Check your cadet eligibility"
+      ctaHref="/tools/cadet-eligibility"
       sections={[
         {
           heading: "Introduction to Pilot Cadet Programs in South Africa",
           content: (
             <>
               <p>South Africa, with its vast airspace and burgeoning aviation sector, presents a compelling destination for aspiring pilots. The South African Civil Aviation Authority (SACAA) ensures rigorous standards, aligning with international best practices. For those dreaming of a career in the cockpit, cadet pilot programs offer a structured and often financially supported pathway. This guide covers these programs in South Africa for 2026, covering regulatory frameworks, leading airline opportunities like South African Airways (SAA), detailed cost breakdowns in ZAR, and essential funding strategies.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
+              </p>
               <p>The journey to becoming a commercial pilot is demanding, requiring significant dedication and investment. Cadet programs are designed to streamline this process, providing comprehensive training from ab-initio to a Frozen Airline Transport Pilot's Licence (ATPL). Understanding the landscape of these programs, including eligibility, curriculum, and post-graduation prospects, is crucial for making informed decisions.</p>
             </>
           )

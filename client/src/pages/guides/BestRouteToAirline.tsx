@@ -15,9 +15,10 @@ const BestRouteToAirline = () => {
         { question: "Is there a pilot shortage in the UK?", answer: "Yes. UK and European airlines have been experiencing a significant pilot shortage since 2022. This has improved employment prospects for newly qualified pilots, though competition for the best airlines remains high." },
       ]}
       readTime="9 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/best-route-airline_3c8e2f1a.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       sections={[
         {
           heading: "Introduction: Navigating Your Path to the Flight Deck",

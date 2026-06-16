@@ -10,10 +10,11 @@ export default function UnitedAviateGuide() {
       canonical="/us/guides/united-aviate-program"
       metaDescription="United Aviate Program 2026 guide. Requirements, transition timeline, United Aviate Academy vs the general program, and how to secure a United First Officer CJO."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/united-aviate_9d4c2b8e.jpg"
       category="US Pilot Training"
-      ctaHref="/us/roadmap"
-      ctaText="Find my training route"
+      ctaHref="/us/cadet-eligibility"
+      ctaText="Check your US cadet programme eligibility"
       scopeBanner={<GuideScopeBanner scope="This guide covers the United Aviate program in the USA." globalHref="/guides/cadet-pilot-programmes-uk" globalLabel="View UK cadet programmes →" />}
       faqSchema={[
         { question: "What is the United Aviate program?", answer: "Aviate is United Airlines' pilot career development program. It provides a secure path to the United flight deck. Participants who are accepted receive a Conditional Job Offer (CJO) as a United First Officer, subject to meeting experience requirements." },
@@ -28,6 +29,9 @@ export default function UnitedAviateGuide() {
             <>
               <p>
                 The United Aviate program is arguably the most comprehensive airline pilot development pipeline in the United States. In an industry known for volatility, Aviate offers something highly coveted: certainty.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/us/cadet-eligibility" className="text-blue-400 underline">US Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <p>
                 If you are accepted into the program, you receive a <strong>Conditional Job Offer (CJO)</strong> as a United Airlines First Officer. You only have to interview with United once. After that, your job is secure, provided you meet the strict experience and performance requirements along the way [1].

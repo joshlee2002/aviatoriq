@@ -11,14 +11,17 @@ export default function UsPilotSchedule() {
       category="Pilot Lifestyle"
       canonical="https://aviatoriq.com/us/guides/us-pilot-schedule"
       metaDescription="What does a US airline pilot schedule look like in 2026? Learn about FAA Part 117 duty limits, seniority bidding, reserve life, line holding, and days off."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Get my free US pilot roadmap"
+      ctaHref="/us/roadmap"
       sections={[
         {
           heading: "The Reality of an Airline Pilot's Schedule",
           content: (
             <>
               <p>The phrase "banker's hours" does not exist in aviation. Airline pilots work weekends, holidays, early mornings, and red-eye flights. However, they also enjoy stretches of consecutive days off that most corporate employees can only dream of.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              </p>
               <p>In 2026, the scheduling environment at US airlines is a complex intersection of FAA safety regulations (Part 117), union contracts (ALPA, APA, SWAPA), and the all-powerful seniority list. How much you work, when you work, and where you fly is almost entirely dictated by your seniority number.</p>
               <p>This guide breaks down exactly how a US airline pilot's month is structured, the difference between holding a "line" and sitting "reserve," and the legal limits on how much you can actually fly.</p>
             </>

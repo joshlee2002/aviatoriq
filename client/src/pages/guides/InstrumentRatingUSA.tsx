@@ -32,8 +32,9 @@ const InstrumentRatingUSA = () => {
       ]}
       heroImage="/manus-storage/instrument-rating-usa_a47c6d18.jpg"
       readTime='20 min read'
-      ctaHref='/us/roadmap'
-      ctaText='Get my free US pilot roadmap'
+      lastUpdated="June 2026"
+      ctaHref="/us/roadmap"
+      ctaText="Get my free US pilot roadmap"
       sections={[
         {
           heading: 'The Indispensable Instrument Rating: Your Gateway to Professional Aviation',
@@ -41,6 +42,9 @@ const InstrumentRatingUSA = () => {
             <>
               <p>
                 For any pilot aspiring to a professional career in aviation, or even a private pilot seeking to enhance safety and utility, the FAA Instrument Rating (IR) is not merely an option—it\'s a fundamental necessity. This certification equips pilots with the skills and legal authority to fly under Instrument Flight Rules (IFR) and in Instrument Meteorological Conditions (IMC), meaning operations in clouds, fog, or other low-visibility environments where visual flight rules (VFR) are not permissible. It transforms a pilot from being weather-dependent to weather-aware, significantly expanding their operational capabilities and safety margins.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <p>
                 The journey to obtaining an Instrument Rating is often regarded as one of the most challenging yet rewarding phases of pilot training. It demands a deep understanding of aerodynamics, meteorology, air traffic control (ATC) procedures, and advanced aircraft systems, all while honing precise aircraft control solely by reference to instruments. This guide will delve into the specific FAA requirements, the financial investment involved, the profound career advantages it offers, and crucial aspects of maintaining instrument currency in the United States.

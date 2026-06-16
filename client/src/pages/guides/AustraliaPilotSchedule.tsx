@@ -12,7 +12,7 @@ export default function AustraliaPilotSchedule() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-schedule"
       metaDescription="Comprehensive guide for aspiring pilots in Australia, covering 2026 CASA regulations, license requirements, detailed costs in AUD, and career pathways."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function AustraliaPilotSchedule() {
           content: (
             <>
               <p>Australia, with its vast airspace and robust aviation industry, presents an exceptional environment for aspiring pilots. The journey to becoming a professional aviator in Australia is governed by the Civil Aviation Safety Authority (CASA), which sets stringent standards for training, licensing, and operational safety. This guide provides a comprehensive overview of the pilot training landscape in Australia for 2026, detailing regulatory requirements, various license pathways, associated costs in Australian Dollars (AUD), and key considerations for a successful career in aviation.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>Understanding the intricacies of CASA regulations and the financial commitment involved is crucial for effective planning. This document aims to equip prospective pilots with accurate, up-to-date information to make informed decisions about their training and career progression.</p>
             </>
           )

@@ -12,7 +12,7 @@ export default function SouthAfricaPilotShortage() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/south-africa/guides/south-africa-pilot-shortage"
       metaDescription="Explore the South African pilot training landscape in 2026, including the nuanced pilot shortage, SACAA regulations, and detailed cost breakdowns."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -21,6 +21,9 @@ export default function SouthAfricaPilotShortage() {
             <>
               <p>
                 The narrative surrounding a global pilot shortage often oversimplifies the complex dynamics at play within specific regions. In South Africa, as of 2026, the situation is less about a sheer lack of individuals entering the cockpit and more about a critical deficit of experienced captains. While the continent of Africa is projected to require over 23,000 new pilots by 2044 to sustain its aviation growth, South Africa faces a unique challenge: a significant number of its younger, highly-skilled first officers are increasingly marketable internationally. This phenomenon, often termed an 'exodus,' contributes to a talent drain, particularly at the senior leadership level within airlines.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 Industry analyses, including those from Oliver Wyman, suggest that while the global supply-demand gap for pilots might peak around 2026, the South African context reveals a mismatch rather than a universal headcount crisis. The issue is not a dearth of aspiring pilots or those completing initial training, but rather a shortage of seasoned aviators capable of commanding commercial flights and mentoring the next generation. This creates both a challenge and an opportunity: while airlines grapple with retaining experienced personnel, it simultaneously opens pathways for newly qualified pilots to gain valuable flight hours and advance their careers more rapidly within the domestic market, provided they meet stringent regulatory and experience requirements.

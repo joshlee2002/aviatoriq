@@ -31,9 +31,10 @@ const FlightInstructorUK = () => {
         },
       ]}
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/flight-instructor_8a93442c.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
+      ctaHref="/quiz"
+      ctaText="Start your career assessment"
       sections={[
         {
           heading: "Why Becoming a Flight Instructor is a Smart Career Move",
@@ -41,6 +42,9 @@ const FlightInstructorUK = () => {
             <>
               <p>
                 For many aspiring airline pilots in the UK, the journey to the flight deck involves a crucial step: hour-building. While various methods exist to accumulate the necessary flight time, becoming a Flight Instructor (FI) stands out as one of the most effective and professionally rewarding. It's not just about logging hours; it's about deepening your understanding of aviation principles, honing your piloting skills, and developing critical leadership and communication abilities.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <img src="/manus-storage/instructor-teaching_bbff2f90.jpg" alt="Flight instructor teaching" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <img src="/manus-storage/dual-instruction_48048c62.jpg" alt="Dual instruction flying" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />

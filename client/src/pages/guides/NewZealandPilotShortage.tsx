@@ -12,7 +12,7 @@ export default function NewZealandPilotShortage() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-pilot-shortage"
       metaDescription="Explore the New Zealand pilot shortage in 2026, including CAA NZ regulations, training costs (NZD), top flight schools, and career opportunities with major airlines. Your essential guide to becoming a pilot in NZ."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function NewZealandPilotShortage() {
           content: (
             <>
               <p>The global aviation industry continues to grapple with a significant pilot shortage, a challenge that extends to New Zealand. While the immediate post-pandemic recovery saw a surge in demand, projections for 2026 and beyond indicate a persistent need for qualified aviators. This shortage is driven by a combination of factors, including an aging pilot population reaching mandatory retirement, increased air travel demand, and the high cost and time commitment associated with pilot training [1]. For New Zealand, this translates into both a challenge for airlines and an unparalleled opportunity for aspiring pilots.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>New Zealand's unique geographical position and reliance on air travel, both domestically and internationally, make a robust supply of pilots critical. The country's aviation sector, while smaller than some global counterparts, is vibrant and growing, with major carriers like Air New Zealand and a network of regional airlines and general aviation operators. The ongoing demand creates a favorable environment for new entrants into the profession, offering clear career pathways and the potential for rapid advancement [2].</p>
             </>
           )

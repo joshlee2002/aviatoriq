@@ -10,9 +10,10 @@ export default function RAFvsCivilian() {
       canonical="/guides/raf-vs-civilian-pilot-training"
       metaDescription="RAF vs civilian pilot training 2026. Compare costs (free vs £100k), timelines, lifestyle, career outcomes, and the current RAF training backlog."
       readTime="11 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/raf-vs-civilian_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide compares RAF military training with UK civilian pilot training. Relevant to UK readers only." />}
       faqSchema={[
         { question: "Is RAF pilot training free?", answer: "Yes. The RAF pays for all pilot training costs, and you receive a salary throughout. In return, you commit to a minimum service period of typically 12 years (for fast jet pilots) or shorter for multi-engine roles." },
@@ -27,6 +28,9 @@ export default function RAFvsCivilian() {
             <>
               <p>
                 The RAF vs civilian debate comes down to one fundamental trade-off: <strong>free training with a long commitment</strong> versus <strong>expensive training with immediate freedom</strong>.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 The RAF will train you to fly for free. In return, you commit to a minimum service period (typically 12 years for fast jet pilots), accept that you will be posted wherever the RAF needs you, and accept the possibility of deployment to hostile environments.

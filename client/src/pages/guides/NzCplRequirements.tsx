@@ -12,7 +12,7 @@ export default function NzCplRequirements() {
       category="New Zealand Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/nz-cpl-requirements"
       metaDescription="A comprehensive guide to New Zealand Commercial Pilot License (CPL) requirements for 2026, including age, medical, flight hours, costs, and career paths."
-      ctaText="Find my training route"
+      ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[
         {
@@ -20,6 +20,9 @@ export default function NzCplRequirements() {
           content: (
             <>
               <p>Embarking on a career as a commercial pilot in New Zealand is a journey that demands dedication, precision, and a thorough understanding of the Civil Aviation Authority of New Zealand (CAA NZ) regulations. The Commercial Pilot Licence (CPL) is your gateway to flying professionally, whether it's for scenic flights, agricultural operations, or eventually, major airlines. This guide provides an in-depth look at the requirements, training pathways, and critical considerations for aspiring pilots in New Zealand for the year 2026.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              </p>
               <p>New Zealand's aviation industry is renowned for its high standards of training and breathtaking operational environments, from challenging mountain flying to diverse coastal conditions. Obtaining a CAA NZ CPL signifies a pilot's competence to operate aircraft for remuneration, adhering strictly to the safety and operational protocols set forth by the national aviation authority.</p>
             </>
           )

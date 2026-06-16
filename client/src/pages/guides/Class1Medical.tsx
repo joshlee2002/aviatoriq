@@ -18,6 +18,7 @@ const Class1Medical: React.FC = () => {
         { question: "Should I get my Class 1 medical before starting training?", answer: "Yes — always. The CAA and every UK flight school strongly recommend getting your Class 1 medical before committing any significant funds to training. Discovering a disqualifying condition after spending £100,000 on an integrated course would be financially devastating. Book your medical as the very first step." },
       ]}
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/class1-medical_c4a3b12e.jpg"
       ctaHref="/quiz/flight-deck"
       ctaText="Find my training route"
@@ -34,6 +35,9 @@ const Class1Medical: React.FC = () => {
             <>
               <p>
                 The single most important piece of advice in this guide: <strong>book your Class 1 medical before you spend a single pound on flight training.</strong> The CAA, BALPA, and every reputable UK flight school say the same thing. Leading Edge Aviation now requires cadets to have their Class 1 medical in place at least three months before their course start date.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
               </p>
               <p>
                 The reason is simple. If you discover a disqualifying condition after spending £100,000 on an integrated ATPL course, you have no recourse. The medical is the gateway. Everything else — training, licences, employment — depends on it. It takes approximately half a day and costs £957–£1,377. Do it first.

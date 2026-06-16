@@ -30,9 +30,10 @@ const FrozenAtplUK = () => {
         },
       ]}
       readTime="12 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/frozen-atpl_415e1a95.jpg"
-      ctaHref="/roadmap"
-      ctaText="Generate my personalised roadmap"
+      ctaHref="/quiz"
+      ctaText="Start your career assessment"
       sections={[
         {
           heading: "What is a Frozen ATPL?",
@@ -40,6 +41,9 @@ const FrozenAtplUK = () => {
             <>
               <p>
                 A Frozen ATPL (fATPL) is not a licence in its own right. It is the status you hold when you have passed all 13 UK CAA ATPL theoretical knowledge examinations and hold a Commercial Pilot Licence (CPL) with a Multi-Engine Instrument Rating (MEIR) — but have not yet accumulated the 1,500 hours of flight time required to convert it into a full Airline Transport Pilot Licence.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
                 In practice, every UK airline requires a Frozen ATPL before they will hire you as a First Officer. The moment you join an airline, you begin building the flight hours that will eventually allow you to "unfreeze" it — at which point you hold a full ATPL and become eligible for command upgrade.

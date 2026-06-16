@@ -12,14 +12,17 @@ export default function AustraliaPilotTaxes() {
       category="Pilot Finances"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-taxes"
       metaDescription="A detailed guide for Australian pilots on tax obligations, deductible expenses, and allowances for the 2026 financial year."
-      ctaText="Find my training route"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Understanding Your Income and Allowances as an Australian Pilot",
           content: (
             <>
               <p>As a pilot in Australia, understanding your taxable income and various allowances is the first step towards effective tax management. The Australian Taxation Office (ATO) mandates that all income received during the financial year must be declared. This includes your salary and wages, any cash or bonus payments, and compensation or insurance payments, such as those from income protection policies designed to replace lost salary and wages. It is crucial to distinguish between taxable allowances and non-taxable reimbursements to accurately report your earnings.</p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
+              </p>
               <p>Allowances are amounts paid by your employer for specific purposes, such as covering work expenses, compensating for challenging working conditions (e.g., night-time operations), or acknowledging special skills (e.g., first aid qualifications). All allowances reported on your income statement or payment summary must be included in your tax return. However, some allowances, like certain travel or overtime meal allowances, might not appear on your income statement but are listed on your payslip. These do not need to be declared as income unless you intend to claim a deduction for related expenses. If you spend such an allowance on deductible work expenses, you must declare the allowance as income to claim the deduction, ensuring you keep meticulous records of your expenditures.</p>
               <h3>Key Distinctions: Allowances vs. Reimbursements</h3>
               <table className="w-full text-sm text-left border-collapse">

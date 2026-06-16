@@ -43,6 +43,9 @@ export default function UsCadetPrograms() {
               <p>
                 The US airline industry faces a structural pilot shortage — Boeing projects a need for 674,000 new pilots in North America by 2043. In response, the four largest US carriers have built structured cadet pathways that take candidates from zero flight hours to a First Officer seat at a major airline. Here is how they compare:
               </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Not sure if you qualify? Try our free <Link href="/us/cadet-eligibility" className="text-blue-400 underline">US Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
+              </p>
 
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">

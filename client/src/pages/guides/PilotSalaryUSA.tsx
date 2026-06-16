@@ -30,6 +30,7 @@ const PilotSalaryUSA = () => {
         },
       ]}
       readTime="10 min read"
+      lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-salary-usa_292045db.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
@@ -40,6 +41,9 @@ const PilotSalaryUSA = () => {
             <>
               <p>
                 US airline pilot salaries have risen dramatically over the past five years, driven by a combination of mandatory retirement at age 65, post-pandemic travel demand recovery, and the structural pilot shortage that has been building since the 2013 first officer experience rule changes. The result is that pilots entering the profession today face a more financially rewarding career than any previous generation.
+              </p>
+              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
+                Want to see exactly how your salary will progress? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to see a timeline from training to captain.
               </p>
               <img src="/manus-storage/pay-scale_67aa53c9.jpg" alt="US airline pilot salary" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
