@@ -208,7 +208,7 @@ export default function MedicalConditionLookupUS() {
       <SEO 
         title="FAA Medical Condition Lookup | AviatorIQ US"
         description="Check if your medical condition (ADHD, asthma, vision, etc.) meets FAA First Class medical standards for airline pilots."
-        canonical="https://www.aviatoriq.com/us/medical-lookup"
+        canonical="https://aviatoriq.com/us/medical-lookup"
       />
       <PublicNav />
 

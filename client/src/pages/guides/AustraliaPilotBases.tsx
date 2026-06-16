@@ -4,7 +4,7 @@ import GuideLayout from '@/components/GuideLayout';
 export default function AustraliaPilotBases() {
   return (
     <GuideLayout
-      title="Navigating Australia's Pilot Bases: A 2026 Career Guide"
+      title="Australian Airline Pilot Bases 2026: Where to Be Based"
       subtitle="Major airline pilot bases, training pathways, and career opportunities in Australia for aspiring aviators in 2026."
       readTime="12 min"
       author="AviatorIQ Research"

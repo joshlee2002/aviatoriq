@@ -258,6 +258,62 @@ const usGuides = [
     category: "Career & Salary",
     emoji: "📊",
   },
+  {
+    title: "US Airline Pilot Salary 2026: Real Pay Scales",
+    description: "Real 2026 pay scales from Delta, United, American, Southwest, and regional carriers. Per diem, profit-sharing, and full career earnings breakdown.",
+    href: "/us/guides/us-pilot-salary-2026",
+    time: "12 min read",
+    category: "Career & Salary",
+    emoji: "💵",
+  },
+  {
+    title: "US Regional Airlines Guide 2026",
+    description: "How regional airlines work as the gateway to major carriers. Hiring requirements, upgrade timelines, and which regionals have the best flow-through agreements.",
+    href: "/us/guides/us-regional-airlines-guide",
+    time: "10 min read",
+    category: "Career & Salary",
+    emoji: "🛫",
+  },
+  {
+    title: "US Military Pilot to Airlines 2026",
+    description: "Transitioning from US military to commercial aviation. R-ATP at 750 hours, MilComp credits, ATP CTP waiver, and which airlines prioritise military hires.",
+    href: "/us/guides/us-military-pilot-to-airlines",
+    time: "10 min read",
+    category: "Career & Salary",
+    emoji: "🪖",
+  },
+  {
+    title: "US Airline Pilot Benefits 2026",
+    description: "Beyond the hourly rate: 16-18% direct 401(k) contributions, profit sharing, loss of license insurance, and non-revenue travel explained.",
+    href: "/us/guides/us-pilot-benefits",
+    time: "11 min read",
+    category: "Career & Salary",
+    emoji: "🏦",
+  },
+  {
+    title: "US Airline Pilot Retirement Age 2026",
+    description: "The FAA mandates retirement at 65 for Part 121 airline pilots. How the rule works, the push to raise it to 67, and what it means for your career timeline.",
+    href: "/us/guides/us-pilot-retirement-age",
+    time: "8 min read",
+    category: "Career & Salary",
+    emoji: "📅",
+  },
+  {
+    title: "US Pilot Taxes 2026: Deductions & Planning",
+    description: "Tax deductions available to US airline pilots: per diem, uniform costs, union dues, training expenses, and how to use a 529 plan for flight training.",
+    href: "/us/guides/us-pilot-taxes",
+    time: "9 min read",
+    category: "Career & Salary",
+    emoji: "🧾",
+  },
+  {
+    title: "US Pilot Housing 2026: Crash Pads & Living",
+    description: "Where US airline pilots live and how crash pads work. Cost comparison of living in base vs commuting, and the best cities for pilot quality of life.",
+    href: "/us/guides/us-pilot-housing",
+    time: "8 min read",
+    category: "Career & Salary",
+    emoji: "🏠",
+  },
 ];
 
 const categoryColors: Record<string, { bg: string; text: string; border: string }> = {
@@ -297,7 +353,7 @@ export default function GuidesIndexUS() {
       <SEO
         title="US Pilot Training Guides (2026) | AviatorIQ"
         description="Free guides for aspiring US pilots — FAA licences, Part 141 vs Part 61, ATP certificate, medical requirements, GI Bill, airline cadet programmes, and pilot salaries. Updated for 2026."
-        canonical="https://www.aviatoriq.com/us/guides"
+        canonical="https://aviatoriq.com/us/guides"
       />
       <PublicNav />
       <main className="flex-1">

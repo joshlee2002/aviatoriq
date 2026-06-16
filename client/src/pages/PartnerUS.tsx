@@ -285,7 +285,7 @@ export default function PartnerUS() {
       <SEO
         title="Partner With AviatorIQ | US Flight School Lead Generation"
         description="Join the AviatorIQ US partner programme. Receive pre-qualified, scored aspiring pilots who have actively requested an introduction to your FAA-approved flight school. Three tiers from $179/month."
-        canonical="https://www.aviatoriq.com/us/partner"
+        canonical="https://aviatoriq.com/us/partner"
       />
       <PublicNav />
 

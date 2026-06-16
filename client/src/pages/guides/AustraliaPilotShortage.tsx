@@ -4,7 +4,7 @@ import GuideLayout from '@/components/GuideLayout';
 export default function AustraliaPilotShortage() {
   return (
     <GuideLayout
-      title="Navigating Australia's Pilot Shortage: Opportunities and Challenges for Aspiring Aviators in 2026"
+      title="Australia Pilot Shortage 2026: Opportunities & Career Outlook"
       subtitle="A comprehensive analysis of the Australian aviation industry's demand for pilots, training pathways, costs, and career prospects amidst a nuanced shortage."
       readTime="14 min"
       author="AviatorIQ Research"

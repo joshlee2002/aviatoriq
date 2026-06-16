@@ -146,7 +146,7 @@ export default function RoadmapGeneratorUS() {
       <SEO
         title="US Pilot Training Roadmap — Find Your FAA Path | AviatorIQ"
         description="Answer 5 questions. Get a personalised US pilot training roadmap — Part 141, Part 61, airline cadet programmes, or university R-ATP. Free, data-driven, and built for the US market."
-        canonical="https://www.aviatoriq.com/us/roadmap"
+        canonical="https://aviatoriq.com/us/roadmap"
       />
       <PublicNav />
 

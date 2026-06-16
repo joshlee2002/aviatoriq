@@ -7,12 +7,18 @@ import SEO from "@/components/SEO";
 const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
 
 const EU_GUIDES = [
-  { title: "How to Become a Pilot in Europe (2026 EASA Guide)", href: "/guides/how-to-become-a-pilot-europe", desc: "EASA ATPL pathways, integrated vs modular, and what it really costs in EUR.", tag: "Essential" },
-  { title: "EASA ATPL Training Costs 2026: The Full Breakdown", href: "/guides/easa-atpl-training-costs", desc: "Integrated and modular ATPL — real 2026 costs from European flight schools.", tag: "Popular" },
-  { title: "EASA Class 1 Medical: What You Need to Know", href: "/guides/easa-class-1-medical", desc: "AeMC requirements, disqualifying conditions, and how to prepare across EU countries.", tag: "Medical" },
-  { title: "Best Flight Schools in Europe 2026", href: "/guides/best-flight-schools-europe", desc: "EASA-approved schools ranked by completion rates, cost, and airline placement.", tag: "Schools" },
-  { title: "European Airline Cadet Programmes 2026", href: "/guides/european-airline-cadet-programmes", desc: "Lufthansa, Ryanair, easyJet, KLM, and other European airline cadet pathways.", tag: "Cadets" },
-  { title: "Integrated vs Modular ATPL in Europe", href: "/guides/integrated-vs-modular-europe", desc: "Which route is right for you? Costs, timelines, and airline hiring preferences.", tag: "Route" },
+  { title: "European Pilot Training Costs 2026", href: "/europe/guides/pilot-training-costs", desc: "Integrated and modular ATPL — real 2026 costs from European flight schools.", tag: "Popular" },
+  { title: "European Pilot Salary 2026", href: "/europe/guides/pilot-salary-2026", desc: "FO to Captain pay at Ryanair, Wizz Air, Lufthansa, BA, and Air France.", tag: "Salary" },
+  { title: "EASA ATPL Requirements 2026", href: "/europe/guides/easa-atpl-requirements", desc: "EASA ATPL pathways, integrated vs modular, and what it really costs in EUR.", tag: "Essential" },
+  { title: "EASA Class 1 Medical 2026", href: "/europe/guides/easa-medical-class-1", desc: "AeMC requirements, disqualifying conditions, and how to prepare across EU countries.", tag: "Medical" },
+  { title: "EASA CPL Requirements 2026", href: "/europe/guides/easa-cpl-requirements", desc: "Everything you need to know about the EASA Commercial Pilot Licence.", tag: "Licence" },
+  { title: "European Airline Cadet Programmes 2026", href: "/europe/guides/europe-cadet-programs", desc: "Lufthansa EFA, BA Speedbird, Wizz Air WAPA, and Air France — all compared.", tag: "Cadets" },
+  { title: "Lufthansa European Flight Academy 2026", href: "/europe/guides/lufthansa-european-flight-academy", desc: "EFA cadet programme — €120k cost, Brain Capital ISA, DLR test, and career paths.", tag: "Cadets" },
+  { title: "Air France-KLM Cadet Programs 2026", href: "/europe/guides/air-france-klm-cadet-pilot-program", desc: "Fully sponsored Air France and deferred-payment KLM cadet pathways.", tag: "Cadets" },
+  { title: "European Pilot Shortage 2026", href: "/europe/guides/europe-pilot-shortage", desc: "The growing pilot shortage in Europe — opportunities and career outlook.", tag: "Career" },
+  { title: "European Regional Airlines 2026", href: "/europe/guides/europe-regional-airlines-pilot-training", desc: "The stepping stones to major European airline careers.", tag: "Career" },
+  { title: "EASA Flight Instructor 2026", href: "/europe/guides/europe-flight-instructor", desc: "FI rating requirements, costs, salary, and how instructing fits into hour building.", tag: "Career" },
+  { title: "European Military Pilot to Airlines 2026", href: "/europe/guides/military-to-airlines", desc: "EASA ATPL conversion for ex-military pilots — credits, costs, and airline pathways.", tag: "Career" },
 ];
 
 const EU_TOOLS = [

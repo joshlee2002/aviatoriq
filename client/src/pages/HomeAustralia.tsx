@@ -14,6 +14,11 @@ const AU_GUIDES = [
   { title: "CASA CPL Requirements 2026", href: "/australia/guides/casa-cpl-requirements", desc: "Everything you need to know about the CASA Commercial Pilot Licence.", tag: "Licence" },
   { title: "Qantas Group Pilot Academy 2026", href: "/australia/guides/qantas-group-pilot-academy", desc: "Australia's premier pilot training program — costs, curriculum, and career pathways.", tag: "Cadets" },
   { title: "Australian Airline Cadet Programmes 2026", href: "/australia/guides/australia-cadet-programs", desc: "Qantas Group, Virgin Australia, Rex, and regional airline cadet pathways.", tag: "Cadets" },
+  { title: "CASA ATPL Requirements 2026", href: "/australia/guides/casa-atpl-requirements", desc: "Everything you need to know about the CASA Airline Transport Pilot Licence.", tag: "Licence" },
+  { title: "Rex Pilot Academy 2026", href: "/australia/guides/rex-pilot-academy", desc: "Rex's cadet pathway — structure, costs, and career prospects with Australia's regional carrier.", tag: "Cadets" },
+  { title: "Australia Pilot Shortage 2026", href: "/australia/guides/australia-pilot-shortage", desc: "The growing pilot shortage in Australia — opportunities and how to position yourself.", tag: "Career" },
+  { title: "Australia Regional Airlines 2026", href: "/australia/guides/australia-regional-airlines", desc: "QantasLink, Rex, Alliance — the stepping stones to mainline airline careers.", tag: "Career" },
+  { title: "Flight Instructor Australia 2026", href: "/australia/guides/australia-flight-instructor", desc: "CASA FIR requirements, costs, salary, and how instructing fits into hour building.", tag: "Career" },
 ];
 
 const AU_TOOLS = [

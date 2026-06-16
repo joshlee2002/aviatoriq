@@ -34,7 +34,7 @@ export default function CountrySelect() {
       <SEO
         title="AviatorIQ — Choose Your Country"
         description="The world's most personalised pilot training guidance platform. Select your country to get started with tailored costs, routes, and school recommendations."
-        canonical="https://www.aviatoriq.com/select"
+        canonical="https://aviatoriq.com/select"
       />
       <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16"
         style={{ background: "oklch(0.14 0.04 240)" }}>

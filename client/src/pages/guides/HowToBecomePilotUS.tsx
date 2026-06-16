@@ -9,7 +9,7 @@ export default function HowToBecomePilotUS() {
       subtitle="The honest, step-by-step guide to becoming a commercial airline pilot in the United States — Part 61 vs Part 141, real costs, the 1500-hour rule, and cadet programmes."
       readTime="14 min read"
       heroImage="/manus-storage/how-to-become-pilot_a1ed518f.jpg"
-      canonical="https://www.aviatoriq.com/us/guides/how-to-become-a-pilot"
+      canonical="https://aviatoriq.com/us/guides/how-to-become-a-pilot"
       metaDescription="How to become an airline pilot in the USA in 2026. Covers FAA licences, Part 61 vs Part 141, the 1500-hour rule, real costs ($80k–$120k), and airline cadet programmes."
       author="Joshua Fagan"
       authorRole="Founder, AviatorIQ — researched from FAA, ATP Flight School & airline cadet programme data"

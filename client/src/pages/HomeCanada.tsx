@@ -13,6 +13,11 @@ const CA_GUIDES = [
   { title: "Transport Canada CPL Requirements 2026", href: "/canada/guides/transport-canada-cpl-requirements", desc: "Everything you need to know about the Transport Canada Commercial Pilot Licence.", tag: "Licence" },
   { title: "Air Canada Jazz Cadet Program 2026", href: "/canada/guides/air-canada-jazz-cadet", desc: "The Jazz Approach program — direct pathway to Air Canada Express.", tag: "Cadets" },
   { title: "Canadian Airline Cadet Programmes 2026", href: "/canada/guides/canada-cadet-programs", desc: "Air Canada, WestJet, Jazz, Porter, and regional airline cadet pathways.", tag: "Cadets" },
+  { title: "WestJet Encore First Officer 2026", href: "/canada/guides/westjet-encore-cadet", desc: "WestJet Encore pathway — requirements, application, and career progression.", tag: "Cadets" },
+  { title: "Porter Airlines Cadet Program 2026", href: "/canada/guides/porter-airlines-cadet-program", desc: "Porter's cadet pathway on the Embraer E195-E2 — eligibility and career trajectory.", tag: "Cadets" },
+  { title: "Transport Canada ATPL Requirements 2026", href: "/canada/guides/tc-atpl-requirements", desc: "Everything you need to know about the Transport Canada ATPL licence.", tag: "Licence" },
+  { title: "Canada Pilot Shortage 2026", href: "/canada/guides/canada-pilot-shortage", desc: "The growing pilot shortage in Canada — opportunities and how to position yourself.", tag: "Career" },
+  { title: "Canada Regional Airlines 2026", href: "/canada/guides/canada-regional-airlines", desc: "Jazz, Encore, PAL — the stepping stones to mainline airline careers in Canada.", tag: "Career" },
 ];
 
 const CA_TOOLS = [

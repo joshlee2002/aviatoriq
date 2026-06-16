@@ -197,7 +197,7 @@ export default function CadetEligibilityUS() {
       <SEO 
         title="US Airline Cadet Eligibility Checker | AviatorIQ US"
         description="Check if you qualify for United Aviate, American Airlines Cadet Academy, Delta Propel, and Southwest Destination 225°."
-        canonical="https://www.aviatoriq.com/us/cadet-eligibility"
+        canonical="https://aviatoriq.com/us/cadet-eligibility"
       />
       <PublicNav />
 
