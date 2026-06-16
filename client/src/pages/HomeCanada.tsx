@@ -7,12 +7,12 @@ import SEO from "@/components/SEO";
 const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
 
 const CA_GUIDES = [
-  { title: "How to Become a Pilot in Canada (2026 Complete Guide)", href: "/guides/how-to-become-a-pilot-canada", desc: "Transport Canada CPL/ATPL pathways, training routes, and what it really costs in CAD.", tag: "Essential" },
-  { title: "Pilot Training Costs Canada 2026: The Full Breakdown", href: "/guides/pilot-training-costs-canada", desc: "CPL, ATPL, PPL — real 2026 costs from Canadian flight schools.", tag: "Popular" },
-  { title: "Transport Canada Class 1 Medical: Full Guide", href: "/guides/transport-canada-class-1-medical", desc: "Aviation Medical Examiner (AME) requirements, disqualifying conditions, and how to prepare.", tag: "Medical" },
-  { title: "Best Flight Schools in Canada 2026", href: "/guides/best-flight-schools-canada", desc: "Transport Canada-approved schools ranked by completion rates, cost, and airline placement.", tag: "Schools" },
-  { title: "Canadian Airline Cadet Programmes 2026", href: "/guides/canadian-airline-cadet-programmes", desc: "Air Canada, WestJet, Jazz, and regional airline cadet pathways.", tag: "Cadets" },
-  { title: "CPL vs ATPL Canada: Which Route Is Right for You?", href: "/guides/cpl-vs-atpl-canada", desc: "Understanding the difference between CPL and ATPL training in Canada.", tag: "Route" },
+  { title: "Pilot Training Costs Canada 2026: The Full Breakdown", href: "/canada/guides/canada-pilot-training-costs", desc: "CPL, ATPL, PPL — real 2026 costs from Canadian flight schools.", tag: "Popular" },
+  { title: "Canadian Pilot Salary 2026: Air Canada, WestJet & Regionals", href: "/canada/guides/canada-pilot-salary-2026", desc: "From a $35k flight instructor to a $350k Air Canada Captain — real 2026 pay scales.", tag: "Salary" },
+  { title: "Transport Canada Class 1 Medical: Full Guide", href: "/canada/guides/tc-medical-class-1", desc: "Aviation Medical Examiner (AME) requirements, disqualifying conditions, and how to prepare.", tag: "Medical" },
+  { title: "Transport Canada CPL Requirements 2026", href: "/canada/guides/transport-canada-cpl-requirements", desc: "Everything you need to know about the Transport Canada Commercial Pilot Licence.", tag: "Licence" },
+  { title: "Air Canada Jazz Cadet Program 2026", href: "/canada/guides/air-canada-jazz-cadet", desc: "The Jazz Approach program — direct pathway to Air Canada Express.", tag: "Cadets" },
+  { title: "Canadian Airline Cadet Programmes 2026", href: "/canada/guides/canada-cadet-programs", desc: "Air Canada, WestJet, Jazz, Porter, and regional airline cadet pathways.", tag: "Cadets" },
 ];
 
 const CA_TOOLS = [

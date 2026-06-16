@@ -4,137 +4,146 @@ import GuideLayout from '@/components/GuideLayout';
 export default function CanadaPilotSalary2026() {
   return (
     <GuideLayout
-      title="Canada Pilot Salary 2026: A Comprehensive Guide to Earnings and Career Paths"
-      subtitle="Explore the detailed salary expectations, career progression, and financial considerations for pilots in Canada in 2026, including insights into major airlines and training costs."
-      readTime="15 min"
+      title="Canadian Airline Pilot Salary 2026: Air Canada, WestJet & Regionals"
+      subtitle="The complete breakdown of pilot pay in Canada. From a $35k flight instructor to a $350k Air Canada Boeing 777 Captain — real 2026 pay scales, per diems, and union contracts."
+      readTime="14 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
       category="Pilot Careers"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-salary-2026"
-      metaDescription="Detailed guide on pilot salaries in Canada for 2026, covering entry-level to senior captain earnings, training costs, and Transport Canada regulations."
-      ctaText="Check your pilot readiness"
+      metaDescription="Canadian pilot salary guide 2026. Real pay data for Air Canada, WestJet, Porter, Flair, and regional airlines. First Officer and Captain pay scales explained."
+      ctaText="Generate your career roadmap"
       ctaHref="/quiz"
       sections={[
         {
-          heading: "Introduction to Pilot Salaries in Canada",
+          heading: "The State of Canadian Pilot Pay in 2026",
           content: (
             <>
-              <p>Aspiring and current pilots in Canada often seek clarity on potential earnings and career progression. The aviation industry offers a dynamic and rewarding career, but understanding the financial landscape is crucial for effective career planning. This guide provides a comprehensive overview of pilot salaries in Canada for 2026, detailing expected earnings across various career stages, from entry-level positions to senior captains at major airlines. We will also delve into the factors influencing pilot compensation, the costs associated with pilot training, and relevant Transport Canada regulations.</p>
-              <p>Pilot salaries in Canada are influenced by several key factors, including the type of aircraft flown, the airline or operator, years of experience, and seniority. While entry-level positions may offer more modest compensation, the potential for significant earnings grows substantially with experience and advancement to larger aircraft and more senior roles.</p>
+              <p>For years, Canadian pilot salaries lagged significantly behind their counterparts in the United States. However, 2024 and 2025 marked a historic turning point. Following intense union negotiations and the looming threat of strikes, major carriers like Air Canada and WestJet agreed to unprecedented pay increases to prevent their pilots from migrating south of the border [1].</p>
+              <p>In 2026, the Canadian pilot compensation landscape is stronger than ever. Air Canada pilots secured a cumulative 42% pay increase over four years, fundamentally resetting the baseline for the entire industry [2]. While starting salaries at regional operators and flight schools remain modest, the top-end earning potential for a widebody Captain at a legacy carrier now comfortably exceeds $300,000 CAD per year.</p>
+              <p>This guide breaks down exactly what you can expect to earn at every stage of a Canadian aviation career, from your first job building hours to the left seat of an international airliner.</p>
             </>
           )
         },
         {
-          heading: "Entry-Level Pilot Salaries (First Job)",
+          heading: "Major Airlines: Air Canada & WestJet Pay Scales",
           content: (
             <>
-              <p>The initial stages of a pilot's career in Canada often involve building flight hours and gaining experience. Many graduates from flight schools begin their careers as flight instructors, aerial survey pilots, or banner towing pilots. During this phase, salaries can be relatively modest due to limited commercial experience and flight hours, typically ranging from 200-250 hours upon graduation [1].</p>
-              <p>Starting salaries for full-time pilots can vary significantly, generally falling between <b>$25,000 to $55,000 CAD per year</b> [1]. Flight instructors, for example, are often paid hourly, with rates depending on their instructor class. A Class 4 instructor might earn around $25-$30 per hour, while a Class 1 instructor could command $50-$90 per hour [1]. It's important to note that flight instructors are typically paid only for time spent flying or directly teaching students.</p>
-              <p>Some graduates from post-secondary aviation programs (e.g., Seneca College, Sault College, Waterloo University) may have opportunities to join larger airlines like Sunwing and Jazz directly, bypassing some of the traditional entry-level roles [1].</p>
+              <p>The "Big Two" in Canada operate under complex union contracts (ALPA). Pilots are paid an hourly rate based on their years of service (seniority), rank (First Officer or Captain), and the type of aircraft they fly. The figures below represent the guaranteed minimums (usually 75-80 hours per month) plus typical flying levels.</p>
+              
+              <h3>Air Canada (2026 Contract Rates)</h3>
+              <p>Following the landmark 2024 agreement, Air Canada abolished its highly unpopular "flat pay" system for the first four years. New First Officers now see significant year-over-year growth.</p>
+              <table className="w-full text-sm text-left border-collapse my-4">
+                <thead>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Rank & Aircraft</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Year 1 (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Year 5 (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Year 12+ (Max)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">First Officer (Narrowbody A220/B737)</td><td className="px-4 py-3 text-white/80">$78,000</td><td className="px-4 py-3 text-white/80">$145,000</td><td className="px-4 py-3 text-white/80">$195,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">First Officer (Widebody B777/B787)</td><td className="px-4 py-3 text-white/80">$95,000</td><td className="px-4 py-3 text-white/80">$175,000</td><td className="px-4 py-3 text-white/80">$230,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Captain (Narrowbody A220/B737)</td><td className="px-4 py-3 text-white/80">-</td><td className="px-4 py-3 text-white/80">$245,000</td><td className="px-4 py-3 text-white/80">$295,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Captain (Widebody B777/B787)</td><td className="px-4 py-3 text-white/80">-</td><td className="px-4 py-3 text-white/80">-</td><td className="px-4 py-3 text-white/80">$350,000+</td></tr>
+                </tbody>
+              </table>
+
+              <h3>WestJet (2026 Contract Rates)</h3>
+              <p>WestJet's integration of Sunwing and Swoop has consolidated its fleet. Their 2023/2024 contract negotiations resulted in a 24% pay bump, bringing them closely in line with Air Canada's narrowbody rates [3].</p>
+              <table className="w-full text-sm text-left border-collapse my-4">
+                <thead>
+                  <tr className="border-b border-white/10">
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Rank & Aircraft</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Year 1 (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Year 5 (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Year 12+ (Max)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">First Officer (B737)</td><td className="px-4 py-3 text-white/80">$75,000</td><td className="px-4 py-3 text-white/80">$138,000</td><td className="px-4 py-3 text-white/80">$185,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">First Officer (B787 Dreamliner)</td><td className="px-4 py-3 text-white/80">$90,000</td><td className="px-4 py-3 text-white/80">$165,000</td><td className="px-4 py-3 text-white/80">$215,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Captain (B737)</td><td className="px-4 py-3 text-white/80">-</td><td className="px-4 py-3 text-white/80">$235,000</td><td className="px-4 py-3 text-white/80">$280,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Captain (B787 Dreamliner)</td><td className="px-4 py-3 text-white/80">-</td><td className="px-4 py-3 text-white/80">-</td><td className="px-4 py-3 text-white/80">$335,000+</td></tr>
+                </tbody>
+              </table>
             </>
           )
         },
         {
-          heading: "Mid-Career Pilot Salaries (Air Taxi and Commuter Operations)",
+          heading: "National & Ultra-Low-Cost Carriers (ULCC)",
           content: (
             <>
-              <p>As pilots accumulate more flight hours and experience, they often transition to air taxi or commuter operations. These roles typically involve flying larger aircraft such as King Airs, Pilatus PC-12s, or Metroliners. Salaries in this segment of the industry can vary widely based on the operator, location, and specific aircraft type [1].</p>
-              <p>For instance, in December 2022, an air operator near Calgary was reportedly paying King Air First Officers $46,000 CAD per year and Captains $72,000 CAD per year. Corporate medevac jet pilots in the Calgary area could earn $56,000 CAD for First Officers and $90,000 CAD for Captains. Ontario-based operators flying Metroliners were offering $48,000 CAD to First Officers and $74,000 CAD to Captains [1].</p>
-              <p>When evaluating these mid-level positions, pilots must consider not only the salary but also the cost of living in the area, work schedule, and overall quality of life. For example, a Vancouver-based operator offering $77,000 CAD per year to First Officers flying commuter aircraft might seem attractive, but the high cost of living in Vancouver could offset some of the financial benefits [1].</p>
+              <p>The Canadian market features strong national carriers like Porter Airlines and Air Transat, alongside ULCCs like Flair. These airlines offer excellent career progression and often faster upgrade times to Captain than the legacy carriers.</p>
+              <ul>
+                <li><strong>Porter Airlines:</strong> With their massive expansion using Embraer E195-E2 jets, Porter has become a major player. First Officers on the E2 start around $70,000, scaling to $120,000. E2 Captains earn between $160,000 and $210,000.</li>
+                <li><strong>Air Transat:</strong> Operating A321s and A330s primarily for leisure routes, Air Transat First Officers earn $75,000 to $140,000. Captains earn between $180,000 and $260,000 depending on the aircraft type.</li>
+                <li><strong>Flair Airlines:</strong> First Officers on the B737 MAX start around $65,000, while Captains can earn $170,000 to $220,000. Upgrade times here can be exceptionally fast for pilots with the required hours.</li>
+              </ul>
             </>
           )
         },
         {
-          heading: "Airline Pilot Salaries in Canada (Major Airlines)",
+          heading: "Regional Airlines (Jazz, Encore, PAL)",
           content: (
             <>
-              <p>Airline pilot salaries represent the pinnacle of earning potential in the Canadian aviation industry. Compensation at major airlines is typically determined by collective agreements negotiated between pilot unions and the airlines. These agreements factor in fleet type, base location, seniority, and various premiums and allowances [1].</p>
-              <p>As of April 2024, senior captains at major airlines, particularly those flying wide-body aircraft, can earn substantial incomes. Many wide-body captains with 12 or more years of experience can expect base salaries in the <b>$350,000 to $400,000 CAD per year</b> range, excluding additional benefits like per diems, premiums, overtime, and profit-sharing [2]. New first officers at major airlines like Air Canada might start around <b>$78,000 CAD per year</b>, which is considered a significant improvement from previous years [3].</p>
-              <p>The following table provides a snapshot of hourly rates and estimated annual salaries for various airlines and aircraft types, accurate as of April 2024 [1]:</p>
-              <table className="w-full text-sm text-left border-collapse">
+              <p>Regional airlines are the vital stepping stones for most Canadian commercial pilots. Operating turboprops (Dash 8) and regional jets (CRJ), these carriers fly routes feeding the major hubs.</p>
+              <p>Salaries at the regional level have improved, but remain a fraction of mainline pay. However, airlines like Jazz (Air Canada Express) and WestJet Encore offer flow-through agreements, providing a guaranteed pathway to the mainline carrier after a set number of years.</p>
+              <table className="w-full text-sm text-left border-collapse my-4">
                 <thead>
                   <tr className="border-b border-white/10">
                     <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Airline</th>
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Aircraft Type</th>
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Hourly Rate (CAD)</th>
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Annual Salary (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">First Officer (CAD)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Captain (CAD)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Westjet</td><td className="px-4 py-3 text-white/80">B737</td><td className="px-4 py-3 text-white/80">$158.45 - $222.51</td><td className="px-4 py-3 text-white/80">$147,358.50 - $206,934.30</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Air Transat (NEW)</td><td className="px-4 py-3 text-white/80">A321</td><td className="px-4 py-3 text-white/80">$184.72 - $254.59</td><td className="px-4 py-3 text-white/80">$177,331.20 - $244,406.40</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Flair (NEW)</td><td className="px-4 py-3 text-white/80">B737</td><td className="px-4 py-3 text-white/80">$147.06 - $216.67</td><td className="px-4 py-3 text-white/80">$150,001.20 - $221,003.40</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Porter (NEW)</td><td className="px-4 py-3 text-white/80">E195-E2</td><td className="px-4 py-3 text-white/80">$127.62 - $198.79</td><td className="px-4 py-3 text-white/80">$122,515.20 - $190,838.40</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Canadian North/First Air (NEW)</td><td className="px-4 py-3 text-white/80">B737</td><td className="px-4 py-3 text-white/80">$148.24 - $198.49</td><td className="px-4 py-3 text-white/80">$142,310.40 - $190,550.40</td></tr>
-                </tbody>
-              </table>
-              <p>It's important to note that these figures are based on hourly rates and may not include all components of a pilot's total compensation package. Seniority plays a significant role, with captains typically reaching their maximum pay scale after 11-15 years [2, 4].</p>
-            </>
-          )
-        },
-        {
-          heading: "Pilot Training Costs in Canada (2026)",
-          content: (
-            <>
-              <p>Becoming a pilot in Canada requires a significant financial investment. The total cost varies depending on the type of license pursued (Private Pilot License - PPL, Commercial Pilot License - CPL, Airline Transport Pilot License - ATPL) and the flight school chosen. While Transport Canada sets minimum hour requirements, most students require more hours to reach proficiency [5].</p>
-              <p>A realistic budget for a <b>Private Pilot License (PPL)</b> in Canada is approximately <b>$27,000 CAD</b>, which includes flight training (60-80 hours at ~$23,000) and ground instruction (~$3,000-$5,000) [5]. This is higher than the theoretical minimum cost often advertised, which is based on the 45-hour Transport Canada minimum [5].</p>
-              <p>For a <b>Commercial Pilot License (CPL)</b>, which requires 200 hours total time (including 100 hours Pilot-in-Command), the costs are integrated with PPL hours. Strategic planning, such as integrating Multi-Engine and Multi-Engine Instrument Ratings during the CPL phase, can help manage costs and maximize qualifications within the 200-hour requirement [5].</p>
-              <p>An integrated path covering <b>PPL + CPL + Multi-Engine + Multi-IFR</b> can cost around <b>$85,000 CAD</b>. After accounting for federal tuition tax credits (approximately 15%), the effective out-of-pocket cost can be reduced to about <b>$71,000 CAD</b> [5].</p>
-              <p>The use of flight simulators (FTDs) can significantly reduce overall training costs. Simulator hours are typically less expensive than actual aircraft hours and allow for efficient practice of procedures, instrument flying, emergencies, and radio communication without fuel burn or weather delays [5].</p>
-              <table className="w-full text-sm text-left border-collapse">
-                <thead>
-                  <tr className="border-b border-white/10">
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">License/Rating</th>
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (CAD)</th>
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Private Pilot License (PPL)</td><td className="px-4 py-3 text-white/80">$27,000</td><td className="px-4 py-3 text-white/80">Realistic budget for 60-80 hours of flight time.</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Commercial Pilot License (CPL)</td><td className="px-4 py-3 text-white/80">Integrated with PPL</td><td className="px-4 py-3 text-white/80">Requires 200 total hours, including 100 PIC.</td></tr>
-                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">PPL + CPL + Multi-Engine + Multi-IFR (Integrated Path)</td><td className="px-4 py-3 text-white/80">$85,000 (before tax credit)</td><td className="px-4 py-3 text-white/80">Effective cost ~$71,000 after federal tuition tax credit.</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Jazz Aviation (Dash 8 / CRJ)</td><td className="px-4 py-3 text-white/80">$45,000 - $75,000</td><td className="px-4 py-3 text-white/80">$95,000 - $145,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">WestJet Encore (Dash 8)</td><td className="px-4 py-3 text-white/80">$45,000 - $70,000</td><td className="px-4 py-3 text-white/80">$90,000 - $135,000</td></tr>
+                  <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">PAL Airlines / Canadian North</td><td className="px-4 py-3 text-white/80">$50,000 - $80,000</td><td className="px-4 py-3 text-white/80">$100,000 - $160,000</td></tr>
                 </tbody>
               </table>
             </>
           )
         },
         {
-          heading: "Transport Canada Regulations and Licensing",
+          heading: "Entry-Level Jobs: Building the First 1,000 Hours",
           content: (
             <>
-              <p>Transport Canada (TC) is the regulatory body governing pilot licensing and aviation operations in Canada. All pilot licenses, permits, and ratings are administered under the Aeronautics Act and the Canadian Aviation Regulations (CARs) [6]. Aspiring pilots must meet specific requirements for medical fitness, flight hours, and examinations to obtain and maintain their licenses.</p>
-              <p>Key regulations and standards include:</p>
+              <p>Unlike Europe, where cadets can step directly into an Airbus A320 with 200 hours, Canadian pilots usually need to build 1,000 to 1,500 hours before a regional airline will hire them. This phase is known as "paying your dues."</p>
               <ul>
-                <li><b>Standard 421 - Flight Crew Permits, Licences and Ratings:</b> This standard outlines the specific requirements for various flight crew permits, licenses, and ratings, including age, medical fitness, knowledge, experience, and skill [7].</li>
-                <li><b>Medical Certificates:</b> Pilots must hold a valid medical certificate (Category 1 for commercial operations) issued by a Transport Canada-approved Civil Aviation Medical Examiner [8].</li>
-                <li><b>Flight Training Units:</b> Training must be conducted at approved flight training units (flight schools) that adhere to TC standards [9].</li>
-                <li><b>Recency Requirements:</b> Pilots must meet recency requirements, such as flying as Pilot-in-Command within a specified period, to maintain the validity of their licenses [10].</li>
+                <li><strong>Flight Instructor:</strong> The most common route. Class 4 (entry-level) instructors earn $25–$35 per flight hour. Because you only get paid when flying, annual income is typically $25,000 to $40,000.</li>
+                <li><strong>Bush Flying / Float Planes:</strong> Flying in Northern Canada is a rite of passage. First Officers on a Twin Otter might earn $35,000 to $50,000, often working rotational schedules (e.g., 2 weeks on, 2 weeks off) in remote camps.</li>
+                <li><strong>Pipeline Patrol / Aerial Survey:</strong> Flying single-engine Cessnas at low altitudes. Pay is usually $30,000 to $45,000, but it allows pilots to build hours very quickly during the summer months.</li>
               </ul>
-              <p>Transport Canada regularly issues exemptions and advisory circulars to address specific operational needs or clarify regulatory interpretations. Pilots should stay informed about these updates, which can be found on the official Transport Canada website [11]. Recent updates for 2026 include new pilot readback requirements [12] and ongoing reviews of pilot fatigue rules [13].</p>
             </>
           )
         },
         {
-          heading: "Conclusion",
+          heading: "Beyond the Base Salary: Per Diems and Pensions",
           content: (
             <>
-              <p>A career as a pilot in Canada offers significant earning potential, particularly at the airline level, but it demands substantial dedication and financial investment in training. Understanding the salary progression, training costs, and regulatory framework is essential for making informed decisions. With careful planning and commitment, aspiring pilots can navigate the path to a successful and rewarding career in Canadian aviation.</p>
+              <p>When evaluating a pilot job offer, the hourly rate is only part of the equation. Total compensation includes several critical benefits:</p>
+              <p><strong>Per Diems:</strong> Pilots receive a tax-free hourly allowance for every hour they are away from their home base to cover meals and incidentals. This is typically $3.00 to $4.50 per hour. A long-haul pilot can easily add $10,000 to $15,000 CAD tax-free to their annual income through per diems alone.</p>
+              <p><strong>Pension / RRSP Matching:</strong> Major airlines offer exceptional retirement plans. Air Canada, for example, contributes up to 18% of a pilot's salary into a defined contribution pension plan. Over a 30-year career, this results in a multi-million dollar retirement fund.</p>
+              <p><strong>Overtime and Draft Pay:</strong> Pilots who pick up extra flights on their days off are usually paid at a premium rate (150% to 200% of their normal hourly rate). Highly motivated Captains can increase their base salary by 20-30% simply by flying more.</p>
             </>
           )
         }
       ]}
       faqSchema={[
-        { question: "What is the average starting salary for a pilot in Canada?", answer: "Starting salaries for full-time pilots in Canada typically range from $25,000 to $55,000 CAD per year, depending on the role and operator [1]." },
-        { question: "How much does it cost to become a commercial pilot in Canada?", answer: "An integrated training path for a Private Pilot License (PPL), Commercial Pilot License (CPL), Multi-Engine, and Multi-IFR can cost around $85,000 CAD before federal tuition tax credits, reducing to approximately $71,000 CAD after credits [5]." },
-        { question: "What are the highest pilot salaries in Canada?", answer: "Senior captains at major Canadian airlines, especially those flying wide-body aircraft, can earn base salaries in the $350,000 to $400,000 CAD per year range, excluding additional benefits [2]." },
-        { question: "What are the key Transport Canada regulations for pilots?", answer: "Transport Canada regulations (CARs) cover all aspects of pilot licensing, medical fitness, flight training, and operational standards. Standard 421 specifically details flight crew permits, licenses, and ratings [7]." },
-        { question: "Can simulator time reduce pilot training costs in Canada?", answer: "Yes, utilizing approved flight simulators (FTDs) can significantly reduce training costs as they are generally less expensive than actual aircraft hours and allow for efficient practice of various flight procedures [5]." }
+        { question: "What is the starting salary for an Air Canada pilot?", answer: "Following the 2024 contract agreement, a first-year First Officer at Air Canada earns approximately $78,000 CAD. This scales up rapidly, reaching over $145,000 by year five." },
+        { question: "How much does a pilot make in Canada per month?", answer: "An entry-level flight instructor might take home $2,500 to $3,000 CAD per month. A regional First Officer earns about $4,000 to $5,000 per month. A senior widebody Captain at a major airline can gross over $25,000 CAD per month." },
+        { question: "Do Canadian pilots get paid as much as US pilots?", answer: "No. Despite recent 30-40% pay increases at Air Canada and WestJet, Canadian pilots still earn roughly 30% less than their US counterparts when adjusting for currency exchange rates. A Delta Captain can earn over $400,000 USD, whereas an Air Canada Captain maxes out around $350,000 CAD." },
+        { question: "How long does it take to become a Captain in Canada?", answer: "At regional airlines like Jazz or Encore, upgrade times can be as fast as 2 to 4 years due to high turnover. At mainline carriers like Air Canada or WestJet, it typically takes 8 to 12 years of seniority to hold a narrowbody Captain seat." }
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
-        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" }
+        { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
+        { title: "Transport Canada CPL Requirements", href: "/canada/guides/transport-canada-cpl-requirements", time: "10 min" },
+        { title: "Air Canada Jazz Cadet Program", href: "/canada/guides/air-canada-jazz-cadet", time: "8 min" },
+        { title: "WestJet Encore First Officer Pathway", href: "/canada/guides/westjet-encore-cadet", time: "8 min" }
       ]}
-    
     />
   );
 }

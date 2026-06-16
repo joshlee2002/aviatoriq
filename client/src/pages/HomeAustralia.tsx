@@ -8,12 +8,12 @@ const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2
 const brandGradient = "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0.18 200))";
 
 const AU_GUIDES = [
-  { title: "How to Become a Pilot in Australia (2026 Complete Guide)", href: "/guides/how-to-become-a-pilot-australia", desc: "CASA CPL/ATPL pathways, training routes, and what it really costs in AUD.", tag: "Essential" },
-  { title: "Pilot Training Costs Australia 2026: The Full Breakdown", href: "/guides/pilot-training-costs-australia", desc: "CPL, ATPL, PPL — real 2026 costs from Australian flight schools.", tag: "Popular" },
-  { title: "CASA Class 1 Medical: What You Need to Know", href: "/guides/casa-class-1-medical", desc: "DAME requirements, disqualifying conditions, and how to prepare.", tag: "Medical" },
-  { title: "Integrated vs Modular ATPL in Australia", href: "/guides/integrated-vs-modular-australia", desc: "Which route is right for you? Costs, timelines, and airline hiring preferences.", tag: "Route" },
-  { title: "Best Flight Schools in Australia 2026", href: "/guides/best-flight-schools-australia", desc: "CASA-approved schools ranked by completion rates, cost, and airline placement.", tag: "Schools" },
-  { title: "Australian Airline Cadet Programmes 2026", href: "/guides/australian-airline-cadet-programmes", desc: "Qantas Group, Virgin Australia, Rex, and regional airline cadet pathways.", tag: "Cadets" },
+  { title: "Pilot Training Costs Australia 2026: The Full Breakdown", href: "/australia/guides/australia-pilot-training-costs", desc: "CPL, ATPL, PPL — real 2026 costs from Australian flight schools.", tag: "Popular" },
+  { title: "Australian Pilot Salary 2026: Qantas, Virgin & Regionals", href: "/australia/guides/australia-pilot-salary-2026", desc: "From a $65k instructor to a $400k+ Qantas A380 Captain — real 2026 pay scales.", tag: "Salary" },
+  { title: "CASA Class 1 Medical: What You Need to Know", href: "/australia/guides/casa-medical-class-1", desc: "DAME requirements, disqualifying conditions, and how to prepare.", tag: "Medical" },
+  { title: "CASA CPL Requirements 2026", href: "/australia/guides/casa-cpl-requirements", desc: "Everything you need to know about the CASA Commercial Pilot Licence.", tag: "Licence" },
+  { title: "Qantas Group Pilot Academy 2026", href: "/australia/guides/qantas-group-pilot-academy", desc: "Australia's premier pilot training program — costs, curriculum, and career pathways.", tag: "Cadets" },
+  { title: "Australian Airline Cadet Programmes 2026", href: "/australia/guides/australia-cadet-programs", desc: "Qantas Group, Virgin Australia, Rex, and regional airline cadet pathways.", tag: "Cadets" },
 ];
 
 const AU_TOOLS = [

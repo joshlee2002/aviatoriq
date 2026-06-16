@@ -456,7 +456,6 @@ function Router() {
       <Route path="/us/guides/us-flight-school-loans" component={UsFlightSchoolLoans} />
       <Route path="/us/guides/us-cadet-programs" component={UsCadetPrograms} />
       <Route path="/us/guides/us-military-pilot-to-airlines" component={UsMilitaryPilotToAirlines} />
-      {/* us-pilot-shortage-2026 is already registered above with the better PilotShortageUSA component */}
       <Route path="/us/guides/us-pilot-salary-2026" component={UsPilotSalary2026} />
       <Route path="/us/guides/us-pilot-retirement-age" component={UsPilotRetirementAge} />
       <Route path="/us/guides/us-pilot-training-market-guide" component={UsPilotUnionGuide} />
