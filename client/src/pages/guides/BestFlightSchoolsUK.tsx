@@ -115,13 +115,13 @@ export default function BestFlightSchoolsUK() {
                 <strong>CAE Oxford Aviation Academy</strong> is the legacy heavyweight of UK pilot training. CAE is a massive global corporation — they also manufacture the full-flight simulators that airlines use for recurrent training. Training here is highly corporatised and structured, which suits students who want the most established brand name and the clearest pathway to British Airways and easyJet. CAE is the primary training partner for the BA Speedbird Academy and the easyJet Generation Pilot programme. The £99,900 price point makes it the most affordable of the major integrated schools in 2026.
               </p>
               <p>
-                <strong>Acron Aviation Academy</strong> (rebranded from L3Harris Airline Academy in March 2025) is the other tier-one feeder for British Airways and easyJet. The rebrand followed its acquisition by private equity firm TJC L.P. from L3Harris Technologies. The training programme and airline relationships are unchanged. Acron's London Training Centre in Crawley, adjacent to Gatwick Airport, is a genuine competitive advantage — cadets train in the same environment where they will eventually work. The £102,500 integrated ATPL includes Training Assurance, which covers additional training hours and one exam resit per subject if required. The fleet of 110+ aircraft globally is one of the largest in the industry [2].
+                <strong>Acron Aviation Academy</strong> (rebranded from L3Harris Airline Academy in March 2025) is the other tier-one feeder for British Airways and easyJet. The rebrand followed its acquisition by private equity firm TJC L.P. from L3Harris Technologies. The training programme and airline relationships are unchanged. Acron's London Training Centre in Crawley, adjacent to Gatwick Airport, is a genuine competitive advantage — cadets train in the same environment where they will eventually work. The £102,500 integrated ATPL includes Training Assurance, which covers additional training hours and one exam resit per subject if required. The fleet of 110+ aircraft globally is one of the largest in the industry .
               </p>
               <p>
-                <strong>Leading Edge Aviation</strong> (Oxford) offers the most financially accessible integrated route when student finance is factored in. Because the LEAP programme is an accredited BSc in Air Transport Management, UK students can apply for Student Loans Company tuition fee loans of up to £19,070, reducing the effective cost to £95,880 for a single UK CAA licence. The dual-licence route (UK CAA + EASA) costs £102,380 after SLC. The flying phase takes place at their Alhama de Murcia campus in Spain, with advanced training returning to Oxford. In February 2026, Leading Edge launched a funded programme offering 16 places at 80% funding (£30,000 candidate contribution), bonded to a three-year flight instructor role in Spain [3].
+                <strong>Leading Edge Aviation</strong> (Oxford) offers the most financially accessible integrated route when student finance is factored in. Because the LEAP programme is an accredited BSc in Air Transport Management, UK students can apply for Student Loans Company tuition fee loans of up to £19,070, reducing the effective cost to £95,880 for a single UK CAA licence. The dual-licence route (UK CAA + EASA) costs £102,380 after SLC. The flying phase takes place at their Alhama de Murcia campus in Spain, with advanced training returning to Oxford. In February 2026, Leading Edge launched a funded programme offering 16 places at 80% funding (£30,000 candidate contribution), bonded to a three-year flight instructor role in Spain .
               </p>
               <p>
-                <strong>Skyborne Airline Academy</strong> (Gloucestershire) has the broadest airline partnership network of any UK integrated school, with formal relationships with British Airways, easyJet, Wizz Air, Ryanair, Jet2, TUI, Titan Airways, Loganair, and DHL. The £114,950 programme includes a BSc Hons option through the University of West London, with student loans covering more than £40,000 of the cost. The flying phase takes place in Vero Beach, Florida. Student feedback on the training environment is consistently positive [1].
+                <strong>Skyborne Airline Academy</strong> (Gloucestershire) has the broadest airline partnership network of any UK integrated school, with formal relationships with British Airways, easyJet, Wizz Air, Ryanair, Jet2, TUI, Titan Airways, Loganair, and DHL. The £114,950 programme includes a BSc Hons option through the University of West London, with student loans covering more than £40,000 of the cost. The flying phase takes place in Vero Beach, Florida. Student feedback on the training environment is consistently positive .
               </p>
               <p>
                 <strong>FTEJerez</strong> is based in Jerez de la Frontera, Andalusia, and is heavily populated by UK students seeking better flying weather than the UK can reliably provide. At £119,500 for the UK CAA route, it is the most expensive option, but the near-guaranteed flying conditions in southern Spain mean training rarely suffers the weather delays that cost UK-based students time and money. FTEJerez has historically been a primary training provider for British Airways.
@@ -260,14 +260,14 @@ export default function BestFlightSchoolsUK() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Skyborne Airline Academy. "Integrated ATPL Course." <em>skyborne.com/uk/integrated-atpl-course/</em>. Accessed June 2026.<br/>
-                [2] Airmappr. "Acron Aviation Review 2026 (Formerly L3Harris)." <em>airmappr.com</em>. January 2026.<br/>
-                [3] Leading Edge Aviation. "Integrated Pilot Training (LEAP)." <em>leadingedgeaviation.com</em>. Accessed June 2026.<br/>
-                [4] Leading Edge Aviation. "Funded fATPL and Flight Instructor Training Programme." Press release, February 2026.<br/>
-                [5] Stapleford Flight Centre. "Modular Course Pricelist — Training Course Fees from 1st April 2026." <em>flysfc.com</em>.<br/>
-                [6] Bristol Groundschool. "ATPL(A) Course." <em>bristol.gs</em>. Accessed June 2026.<br/>
-                [7] Acron Aviation Academy UK. <em>acronaviationacademy.com/uk/</em>. Accessed June 2026.<br/>
-                [8] Pilot Career News. "L3Harris pilot training relaunches as Acron Aviation." March 2025.
+                 Skyborne Airline Academy. "Integrated ATPL Course." <em>skyborne.com/uk/integrated-atpl-course/</em>. Accessed June 2026.<br/>
+                 Airmappr. "Acron Aviation Review 2026 (Formerly L3Harris)." <em>airmappr.com</em>. January 2026.<br/>
+                 Leading Edge Aviation. "Integrated Pilot Training (LEAP)." <em>leadingedgeaviation.com</em>. Accessed June 2026.<br/>
+                 Leading Edge Aviation. "Funded fATPL and Flight Instructor Training Programme." Press release, February 2026.<br/>
+                 Stapleford Flight Centre. "Modular Course Pricelist — Training Course Fees from 1st April 2026." <em>flysfc.com</em>.<br/>
+                 Bristol Groundschool. "ATPL(A) Course." <em>bristol.gs</em>. Accessed June 2026.<br/>
+                 Acron Aviation Academy UK. <em>acronaviationacademy.com/uk/</em>. Accessed June 2026.<br/>
+                 Pilot Career News. "L3Harris pilot training relaunches as Acron Aviation." March 2025.
               </p>
             </>
           ),
@@ -278,6 +278,11 @@ export default function BestFlightSchoolsUK() {
         { title: "Pilot Training Costs UK 2026", href: "/guides/pilot-training-costs", time: "8 min" },
         { title: "UK Airline Cadet Programmes", href: "/guides/cadet-pilot-programmes-uk", time: "10 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

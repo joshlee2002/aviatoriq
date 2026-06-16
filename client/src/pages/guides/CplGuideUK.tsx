@@ -27,7 +27,7 @@ const CplGuideUK = () => {
         },
         {
           question: "What is a Class 1 Medical Certificate and why do I need it?",
-          answer: "A Class 1 Medical Certificate is a higher standard of medical fitness required for commercial pilots. It ensures that you are medically fit to safely exercise the privileges of a commercial pilot licence. This certificate involves comprehensive medical examinations, including vision, hearing, cardiovascular health, and neurological assessments. It is mandatory for all CPL holders and must be maintained with regular renewals to keep your licence valid. [1]",
+          answer: "A Class 1 Medical Certificate is a higher standard of medical fitness required for commercial pilots. It ensures that you are medically fit to safely exercise the privileges of a commercial pilot licence. This certificate involves comprehensive medical examinations, including vision, hearing, cardiovascular health, and neurological assessments. It is mandatory for all CPL holders and must be maintained with regular renewals to keep your licence valid. ",
         },
       ]}
       readTime="15 min read"
@@ -56,7 +56,7 @@ const CplGuideUK = () => {
           content: (
             <>
               <p>
-                Obtaining a CPL in the UK involves meeting specific age, medical, theoretical knowledge, and flight experience criteria. These requirements are designed to ensure that commercial pilots possess the necessary skills and understanding to operate aircraft safely and efficiently. The minimum age to apply for a CPL is 18 years old, and a valid UK CAA Part MED Class 1 Medical Certificate is mandatory <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/">[1]</Link>. This medical certificate is more stringent than a Class 2 medical, reflecting the higher responsibilities of a commercial pilot.
+                Obtaining a CPL in the UK involves meeting specific age, medical, theoretical knowledge, and flight experience criteria. These requirements are designed to ensure that commercial pilots possess the necessary skills and understanding to operate aircraft safely and efficiently. The minimum age to apply for a CPL is 18 years old, and a valid UK CAA Part MED Class 1 Medical Certificate is mandatory <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/"></Link>. This medical certificate is more stringent than a Class 2 medical, reflecting the higher responsibilities of a commercial pilot.
               </p>
               <h3>Flight Experience</h3>
               <p>
@@ -73,10 +73,10 @@ const CplGuideUK = () => {
                   <strong>5 hours of night flight:</strong> Comprising three hours of dual instruction, at least one hour of cross-country navigation, and five solo take-offs and full stop landings.
                 </li>
                 <li>
-                  <strong>10 hours of instrument instruction:</strong> Up to five hours of this can be completed in a suitable simulator (FNPT I, FNPT II, FTD 2, or FFS). If you hold a course completion certificate for the Basic Instrument Flight Module, you will be credited with up to 10 hours towards this requirement <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/">[1]</Link>.
+                  <strong>10 hours of instrument instruction:</strong> Up to five hours of this can be completed in a suitable simulator (FNPT I, FNPT II, FTD 2, or FFS). If you hold a course completion certificate for the Basic Instrument Flight Module, you will be credited with up to 10 hours towards this requirement <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/"></Link>.
                 </li>
                 <li>
-                  <strong>5 hours in an aircraft certified for at least four persons, with a variable pitch propeller and retractable landing gear:</strong> This ensures experience with more complex aircraft systems <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/">[1]</Link>.
+                  <strong>5 hours in an aircraft certified for at least four persons, with a variable pitch propeller and retractable landing gear:</strong> This ensures experience with more complex aircraft systems <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/"></Link>.
                 </li>
               </ul>
               <h3>Theoretical Knowledge Examinations</h3>
@@ -96,14 +96,14 @@ const CplGuideUK = () => {
                 <li>Radio Navigation</li>
                 <li>Operational Procedures</li>
                 <li>Principles of Flight</li>
-                <li>Visual Flight Rules (VFR) Communications <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/">[1]</Link></li>
+                <li>Visual Flight Rules (VFR) Communications <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/"></Link></li>
               </ul>
               <p>
-                Many aspiring pilots opt to complete the 14 ATPL (Airline Transport Pilot Licence) theoretical exams instead of the 13 CPL exams. This is often done for career flexibility, as passing the ATPL theory exams is a prerequisite for a 'frozen ATPL,' which is generally required for airline pilot positions. The theoretical knowledge training for a CPL(A) integrated course requires at least 350 hours of instruction <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/">[1]</Link>.
+                Many aspiring pilots opt to complete the 14 ATPL (Airline Transport Pilot Licence) theoretical exams instead of the 13 CPL exams. This is often done for career flexibility, as passing the ATPL theory exams is a prerequisite for a 'frozen ATPL,' which is generally required for airline pilot positions. The theoretical knowledge training for a CPL(A) integrated course requires at least 350 hours of instruction <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/"></Link>.
               </p>
               <h3>Skill Test</h3>
               <p>
-                The final hurdle to obtaining your CPL is the skill test. This practical flight examination is conducted with a CAA-approved examiner and assesses your ability to perform, as PIC, the relevant procedures and manoeuvres with the competency appropriate to the privileges granted by the CPL. The skill test must be taken after completing your flight training course, on either a single-engine or multi-engine aeroplane. If a multi-engine aeroplane is used for the skill test, six hours of flight time must have been completed in a multi-engine aeroplane <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/">[1]</Link>.
+                The final hurdle to obtaining your CPL is the skill test. This practical flight examination is conducted with a CAA-approved examiner and assesses your ability to perform, as PIC, the relevant procedures and manoeuvres with the competency appropriate to the privileges granted by the CPL. The skill test must be taken after completing your flight training course, on either a single-engine or multi-engine aeroplane. If a multi-engine aeroplane is used for the skill test, six hours of flight time must have been completed in a multi-engine aeroplane <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/"></Link>.
               </p>
             </>
           ),
@@ -351,7 +351,12 @@ const CplGuideUK = () => {
           time: "8 min read",
         },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 };
 

@@ -241,6 +241,11 @@ export default function NzCplRequirements() {
         { title: "New Zealand Pilot Training Costs 2026", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "12 min" },
         { title: "Understanding CAA NZ Medical Requirements", href: "/new-zealand/guides/nz-medical-class-1", time: "8 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

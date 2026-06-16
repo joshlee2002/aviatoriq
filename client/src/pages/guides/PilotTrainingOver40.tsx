@@ -126,6 +126,11 @@ export default function PilotTrainingOver40() {
         { title: "Class 1 Medical Guide", href: "/guides/class-1-medical", time: "5 min" },
         { title: "Integrated vs Modular ATPL", href: "/guides/integrated-vs-modular", time: "9 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

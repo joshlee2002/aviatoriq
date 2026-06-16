@@ -123,7 +123,7 @@ export default function CadetProgrammes() {
                 </table>
               </div>
               <p className="text-xs text-white/50">
-                Sources: BA Careers (April 2026), CAE Generation easyJet programme page (June 2026), Leading Edge Aviation news (February 2026), Ryanair Careers (June 2026), Airmappr (January 2026). [1][2][3]
+                Sources: BA Careers (April 2026), CAE Generation easyJet programme page (June 2026), Leading Edge Aviation news (February 2026), Ryanair Careers (June 2026), Airmappr (January 2026). 
               </p>
             </>
           ),
@@ -139,7 +139,7 @@ export default function CadetProgrammes() {
                 When you train self-funded, you spend £80,000–£120,000 and then compete in the open market for a First Officer position. When you train through a funded cadet programme, you know before you start that a job is waiting at the end — provided you meet the training standards.
               </p>
               <p>
-                The catch is that funded cadet programmes are intensely competitive. The BA Speedbird Academy received over 20,000 applications for approximately 160 places in 2026 — an acceptance rate of under 1% [1]. If you are rejected, you are not barred from the airlines; many successful pilots trained self-funded. But if you can secure a funded cadet place, the financial security it provides is significant.
+                The catch is that funded cadet programmes are intensely competitive. The BA Speedbird Academy received over 20,000 applications for approximately 160 places in 2026 — an acceptance rate of under 1% . If you are rejected, you are not barred from the airlines; many successful pilots trained self-funded. But if you can secure a funded cadet place, the financial security it provides is significant.
               </p>
               <p>
                 It is also important to understand the difference between a <strong>funded</strong> programme (BA, Jet2) and a <strong>structured pathway</strong> programme (easyJet Generation, Ryanair mentored). The latter still requires you to pay for training — the airline is providing a pathway and conditional job offer, not funding.
@@ -152,7 +152,7 @@ export default function CadetProgrammes() {
           content: (
             <>
               <p>
-                The BA Speedbird Academy is the only fully funded cadet programme at a major UK network carrier. British Airways covers 100% of training costs — no upfront payment, no loan required. The 2026 intake funded approximately 160 places, with British Airways investing £18 million in the programme. [1]
+                The BA Speedbird Academy is the only fully funded cadet programme at a major UK network carrier. British Airways covers 100% of training costs — no upfront payment, no loan required. The 2026 intake funded approximately 160 places, with British Airways investing £18 million in the programme. 
               </p>
               <p>
                 <strong>Training:</strong> Full integrated ATPL training (18–24 months) at Skyborne Airline Academy (Gloucestershire and Vero Beach, Florida) or FTEJerez (Spain). On successful graduation, you join BA as a First Officer on the A320 short-haul fleet at Gatwick or Heathrow.
@@ -167,7 +167,7 @@ export default function CadetProgrammes() {
                 <strong>Selection process:</strong> Online application → cognitive aptitude tests (numerical, verbal, spatial reasoning) → assessment centre (group exercise, interview, further aptitude tests) → simulator assessment → final panel interview. The process takes approximately 3–6 months from application to offer.
               </p>
               <p>
-                <strong>2026 status:</strong> The application window opened 14 April 2026 and closed 23 April 2026. The next window is expected to open in April 2027. Register for job alerts on the BA Careers website (careers.ba.com) to be notified when applications reopen. [1]
+                <strong>2026 status:</strong> The application window opened 14 April 2026 and closed 23 April 2026. The next window is expected to open in April 2027. Register for job alerts on the BA Careers website (careers.ba.com) to be notified when applications reopen. 
               </p>
             </>
           ),
@@ -177,7 +177,7 @@ export default function CadetProgrammes() {
           content: (
             <>
               <p>
-                Jet2FlightPath is a fully funded cadet programme — British Airways' main competition for the "zero upfront cost" category. It relaunched in February 2026 in partnership with <strong>Leading Edge Aviation</strong> (Oxford, UK + Alhama de Murcia, Spain), replacing the previous Skyborne partnership. [3]
+                Jet2FlightPath is a fully funded cadet programme — British Airways' main competition for the "zero upfront cost" category. It relaunched in February 2026 in partnership with <strong>Leading Edge Aviation</strong> (Oxford, UK + Alhama de Murcia, Spain), replacing the previous Skyborne partnership. 
               </p>
               <p>
                 <strong>What you get:</strong> Fully funded integrated ATPL training (18 months) at Leading Edge Aviation. A guaranteed Second Officer position at Jet2 upon successful graduation, with immediate progression to First Officer training on Boeing or Airbus aircraft at one of Jet2's 14 UK bases.
@@ -189,7 +189,7 @@ export default function CadetProgrammes() {
                 <strong>Entry requirements:</strong> Minimum 17 years old at application, turning 18 by 1 August 2026. Minimum 5 GCSEs at grade C/4 or higher including Mathematics. Right to work in the UK. Class 1 Medical.
               </p>
               <p>
-                <strong>2026 status:</strong> Applications opened 17 February 2026. The window is now closed for the current intake. Check jet2careers.com/pilot-careers/jet2flightpath/ for the next intake. [3]
+                <strong>2026 status:</strong> Applications opened 17 February 2026. The window is now closed for the current intake. Check jet2careers.com/pilot-careers/jet2flightpath/ for the next intake. 
               </p>
             </>
           ),
@@ -199,7 +199,7 @@ export default function CadetProgrammes() {
           content: (
             <>
               <p>
-                The easyJet Generation Pilot programme is widely misunderstood. It is <strong>not a funded programme</strong>. You pay €102,942 (approximately £88,000) for training at CAE, conducted at Brussels, Madrid, or London Gatwick. In return, you receive a structured MPL training pathway and a conditional First Officer position at easyJet upon successful graduation. [2]
+                The easyJet Generation Pilot programme is widely misunderstood. It is <strong>not a funded programme</strong>. You pay €102,942 (approximately £88,000) for training at CAE, conducted at Brussels, Madrid, or London Gatwick. In return, you receive a structured MPL training pathway and a conditional First Officer position at easyJet upon successful graduation. 
               </p>
               <p>
                 <strong>What the MPL licence means:</strong> The Multi-Crew Pilot Licence (MPL) is trained specifically for multi-crew jet operations. It is initially restricted to easyJet A320 operations. After accumulating approximately 500 hours, you can convert to a full frozen ATPL. If you leave easyJet before conversion, your licence options are limited — this is the key difference from an integrated ATPL.
@@ -211,7 +211,7 @@ export default function CadetProgrammes() {
                 <strong>Entry requirements:</strong> Age 18+ by course start. Right to live and work in UK/EEA/EU/Switzerland (no visa sponsorship). 5 GCSEs grade C/4+ including Maths, English, and a Science. Minimum height 157cm. UK CAA or EASA Class 1 Medical. No previous flying experience required. Maximum 200 hours total flight time.
               </p>
               <p>
-                <strong>2026 status:</strong> CAE reopened MPL applications in May 2026. Applications are open. Assessment is free of charge. [2]
+                <strong>2026 status:</strong> CAE reopened MPL applications in May 2026. Applications are open. Assessment is free of charge. 
               </p>
             </>
           ),
@@ -331,10 +331,10 @@ export default function CadetProgrammes() {
           content: (
             <>
               <p className="text-xs text-white/50">
-                [1] British Airways Media Centre. "British Airways' fully-funded pilot training programme opens for applications for fourth year running." 14 April 2026. <em>mediacentre.britishairways.com</em>. Application window: 14–23 April 2026. ~160 places. BA invested £18m in the programme.<br/>
-                [2] CAE. "Generation easyJet Multi Crew Pilot Licence (MPL) Training Programme." <em>cae.com/civil-aviation/become-a-pilot/our-pilot-training-programmes/generation-easyjet-pilot-training-programme/</em>. Programme cost: €102,942. Accessed June 2026.<br/>
-                [3] Leading Edge Aviation. "Jet2 relaunches Jet2flightpath in collaboration with Leading Edge Aviation." 17 February 2026. <em>leadingedgeaviation.com/news/</em>. ~20 places. Applications opened 17 February 2026.<br/>
-                [4] Airmappr. "easyJet Pilot Application &amp; Cadet Program 2026 — Full Guide." 31 January 2026. <em>airmappr.com/articles/career/easyjet-pilot-application</em>. Skyborne FlightCrew Futures ATPL announced April 18, 2026 at Pilot Careers Live; ~£129,000 including A320 type rating.
+                 British Airways Media Centre. "British Airways' fully-funded pilot training programme opens for applications for fourth year running." 14 April 2026. <em>mediacentre.britishairways.com</em>. Application window: 14–23 April 2026. ~160 places. BA invested £18m in the programme.<br/>
+                 CAE. "Generation easyJet Multi Crew Pilot Licence (MPL) Training Programme." <em>cae.com/civil-aviation/become-a-pilot/our-pilot-training-programmes/generation-easyjet-pilot-training-programme/</em>. Programme cost: €102,942. Accessed June 2026.<br/>
+                 Leading Edge Aviation. "Jet2 relaunches Jet2flightpath in collaboration with Leading Edge Aviation." 17 February 2026. <em>leadingedgeaviation.com/news/</em>. ~20 places. Applications opened 17 February 2026.<br/>
+                 Airmappr. "easyJet Pilot Application &amp; Cadet Program 2026 — Full Guide." 31 January 2026. <em>airmappr.com/articles/career/easyjet-pilot-application</em>. Skyborne FlightCrew Futures ATPL announced April 18, 2026 at Pilot Careers Live; ~£129,000 including A320 type rating.
               </p>
             </>
           ),
@@ -347,6 +347,11 @@ export default function CadetProgrammes() {
         { title: "UK Pilot Training Costs 2026", href: "/guides/pilot-training-costs", time: "8 min" },
         { title: "How to Finance Pilot Training UK", href: "/guides/how-to-finance-pilot-training-uk", time: "9 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

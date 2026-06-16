@@ -33,7 +33,7 @@ export default function EuropeRegionalAirlines() {
             <>
               <p>EASA regulations form the bedrock of pilot licensing in Europe, ensuring uniformity and high standards across all member states. For regional airline pilots, the primary licenses of focus are the Airline Transport Pilot License (ATPL(A)) and the Multi-Crew Pilot License (MPL(A)). Both pathways lead to a career in multi-pilot operations, but they differ significantly in their structure and focus.</p>
               <h3>ATPL(A) Requirements (FCL.510.A)</h3>
-              <p>The ATPL(A) is the highest level of aircraft pilot certification. To be eligible for an ATPL(A) in 2026, applicants must meet the following criteria, as per EASA FCL.510.A [1]:</p>
+              <p>The ATPL(A) is the highest level of aircraft pilot certification. To be eligible for an ATPL(A) in 2026, applicants must meet the following criteria, as per EASA FCL.510.A :</p>
               <ul>
                 <li><strong>Prerequisites</strong>: Hold an MPL, or a Commercial Pilot License (CPL(A)) and a multi-engine Instrument Rating (IR) for aeroplanes, including Multi-Crew Cooperation (MCC) instruction.</li>
                 <li><strong>Experience</strong>: A minimum of 1,500 hours of flight time in aeroplanes, which must include:</li>
@@ -47,7 +47,7 @@ export default function EuropeRegionalAirlines() {
                 <li><strong>Crediting</strong>: Up to 100 hours from a Full Flight Simulator (FFS) or Flight and Navigation Procedures Trainer (FNPT), with a maximum of 25 hours from an FNPT. Credits for flight time in other aircraft categories (e.g., Touring Motor Gliders (TMG), sailplanes, helicopters) and flight engineer experience may also be applied, subject to specific limitations outlined in EASA Part-FCL.</li>
               </ul>
               <h3>MPL(A) Requirements (FCL.400.A, FCL.405.A, FCL.410.A, FCL.415.A)</h3>
-              <p>The MPL(A) is a license specifically designed for aspiring first officers in multi-crew airline operations. It emphasizes a competency-based approach and integrated training from the outset [1]:</p>
+              <p>The MPL(A) is a license specifically designed for aspiring first officers in multi-crew airline operations. It emphasizes a competency-based approach and integrated training from the outset :</p>
               <ul>
                 <li><strong>Minimum Age</strong>: Applicants must be at least 18 years old to hold an MPL.</li>
                 <li><strong>Privileges</strong>: The holder of an MPL is authorized to act as a co-pilot in multi-pilot operations on aeroplanes.</li>
@@ -76,7 +76,7 @@ export default function EuropeRegionalAirlines() {
           heading: "Cost of Pilot Training in Europe (2026)",
           content: (
             <>
-              <p>The financial investment required for pilot training in Europe is substantial and varies significantly based on the chosen pathway, flight school, and country. As of 2026, aspiring pilots should anticipate the following estimated costs [2]:</p>
+              <p>The financial investment required for pilot training in Europe is substantial and varies significantly based on the chosen pathway, flight school, and country. As of 2026, aspiring pilots should anticipate the following estimated costs :</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Training Pathway</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Duration</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (EUR)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Key Features</th></tr>
@@ -128,8 +128,8 @@ export default function EuropeRegionalAirlines() {
           content: (
             <>
               <ul>
-                <li>[1] <a href="https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no-11782011" target="_blank" rel="noopener noreferrer">EASA Easy Access Rules for Aircrew (Regulation (EU) No 1178/2011)</a> - Official EASA document detailing aircrew regulations.</li>
-                <li>[2] <a href="https://airmappr.com/articles/flight-training/cost-of-pilot-training-europe" target="_blank" rel="noopener noreferrer">Pilot Training Cost in Europe 2026 - Airmappr</a> - Cost estimates for pilot training in Europe.</li>
+                <li> <a href="https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no-11782011" target="_blank" rel="noopener noreferrer">EASA Easy Access Rules for Aircrew (Regulation (EU) No 1178/2011)</a> - Official EASA document detailing aircrew regulations.</li>
+                <li> <a href="https://airmappr.com/articles/flight-training/cost-of-pilot-training-europe" target="_blank" rel="noopener noreferrer">Pilot Training Cost in Europe 2026 - Airmappr</a> - Cost estimates for pilot training in Europe.</li>
               </ul>
             </>
           )
@@ -146,6 +146,11 @@ export default function EuropeRegionalAirlines() {
         { title: "How to Become a Pilot in Europe", href: "/europe/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs Europe 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "EASA" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

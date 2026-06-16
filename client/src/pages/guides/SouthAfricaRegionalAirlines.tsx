@@ -232,6 +232,11 @@ export default function SouthAfricaRegionalAirlines() {
         { title: "How to Become a Pilot in South Africa", href: "/south-africa/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs 2026: A Global Perspective", href: "/south-africa/guides/pilot-training-costs", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "South African Civil Aviation Authority (SACAA)", url: "https://www.caa.co.za" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

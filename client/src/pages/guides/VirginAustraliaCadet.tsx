@@ -20,7 +20,7 @@ export default function VirginAustraliaCadet() {
           content: (
             <>
               <p>
-                For many aspiring aviators in Australia, a career with Virgin Australia represents the pinnacle of professional achievement. Known for its vibrant culture and extensive domestic and international network, Virgin Australia offers a dynamic environment for pilots. This comprehensive guide is designed to illuminate the path to becoming a Virgin Australia pilot in 2026, providing a detailed overview of the necessary qualifications, training pathways, regulatory requirements, and financial considerations. It is important to note that as of June 2026, Virgin Australia does not currently operate an active cadet pilot program. Therefore, this guide will focus on the established direct entry pathways, emphasizing the foundational steps and advanced qualifications required to meet their stringent recruitment standards.
+                For many aspiring aviators in Australia, a career with Virgin Australia represents the pinnacle of professional achievement. Known for its vibrant culture and extensive domestic and international network, Virgin Australia offers a dynamic environment for pilots. This comprehensive guide is designed to illuminate the path to becoming a Virgin Australia pilot in 2026, providing a detailed overview of the necessary qualifications, training pathways, regulatory requirements, and financial considerations. as of June 2026, Virgin Australia does not currently operate an active cadet pilot program. Therefore, this guide will focus on the established direct entry pathways, emphasizing the foundational steps and advanced qualifications required to meet their stringent recruitment standards.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
@@ -36,7 +36,7 @@ export default function VirginAustraliaCadet() {
           content: (
             <>
               <p>
-                Becoming a professional pilot in Australia involves a structured progression through various licenses and ratings, all governed by CASA. The typical pathway begins with foundational flight training and culminates in the Airline Transport Pilot Licence (ATPL), which is essential for commanding multi-crew aircraft in airline operations. While integrated cadet programs historically offered a streamlined route, aspiring pilots today primarily pursue a modular or integrated training approach through approved flight training organizations (FTOs) [1].
+                Becoming a professional pilot in Australia involves a structured progression through various licenses and ratings, all governed by CASA. The typical pathway begins with foundational flight training and culminates in the Airline Transport Pilot Licence (ATPL), which is essential for commanding multi-crew aircraft in airline operations. While integrated cadet programs historically offered a streamlined route, aspiring pilots today primarily pursue a modular or integrated training approach through approved flight training organizations (FTOs) .
               </p>
               <p>
                 The core licenses and ratings include:
@@ -46,7 +46,7 @@ export default function VirginAustraliaCadet() {
                   <strong>Private Pilot Licence (PPL):</strong> The first step, allowing you to fly recreationally.
                 </li>
                 <li>
-                  <strong>Commercial Pilot Licence (CPL):</strong> Enables you to fly for hire or reward [2].
+                  <strong>Commercial Pilot Licence (CPL):</strong> Enables you to fly for hire or reward .
                 </li>
                 <li>
                   <strong>Multi-Engine Rating (ME):</strong> Qualifies you to fly aircraft with more than one engine.
@@ -62,7 +62,7 @@ export default function VirginAustraliaCadet() {
                 </li>
               </ul>
               <p>
-                Virgin Australia's direct entry requirements typically necessitate a CPL with passes in all ATPL theory subjects, an Australian Instrument Rating, and significant flight experience, indicating a preference for pilots who have already completed substantial training and accumulated flying hours [3].
+                Virgin Australia's direct entry requirements typically necessitate a CPL with passes in all ATPL theory subjects, an Australian Instrument Rating, and significant flight experience, indicating a preference for pilots who have already completed substantial training and accumulated flying hours .
               </p>
             </>
           )
@@ -72,9 +72,9 @@ export default function VirginAustraliaCadet() {
           content: (
             <>
               <p>
-                The Civil Aviation Safety Authority (CASA) is Australia's aviation safety regulator, setting the standards for pilot licensing, medical fitness, and operational procedures. Adhering to CASA's Part 61 of the Civil Aviation Safety Regulations (CASR) is paramount for all aspiring pilots [2].
+                The Civil Aviation Safety Authority (CASA) is Australia's aviation safety regulator, setting the standards for pilot licensing, medical fitness, and operational procedures. Adhering to CASA's Part 61 of the Civil Aviation Safety Regulations (CASR) is paramount for all aspiring pilots .
               </p>
-              <h4>Commercial Pilot Licence (CPL) Requirements [2]:</h4>
+              <h4>Commercial Pilot Licence (CPL) Requirements :</h4>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
@@ -113,7 +113,7 @@ export default function VirginAustraliaCadet() {
                   </tr>
                 </tbody>
               </table>
-              <h4>Airline Transport Pilot Licence (ATPL) Requirements [4]:</h4>
+              <h4>Airline Transport Pilot Licence (ATPL) Requirements :</h4>
               <p>
                 While the ATPL is typically obtained later in a pilot's career, passing the ATPL theory examinations is often a prerequisite for airline First Officer positions. The full ATPL requires extensive aeronautical experience:
               </p>
@@ -166,7 +166,7 @@ export default function VirginAustraliaCadet() {
           content: (
             <>
               <p>
-                The financial investment required to become a commercial pilot in Australia is substantial. Costs can vary significantly based on the chosen flight school, training pathway (integrated vs. modular), and individual learning pace. The figures below provide a general estimate for 2026, but prospective students should always obtain detailed quotes from specific flight training organizations [5] [6].
+                The financial investment required to become a commercial pilot in Australia is substantial. Costs can vary significantly based on the chosen flight school, training pathway (integrated vs. modular), and individual learning pace. The figures below provide a general estimate for 2026, but prospective students should always obtain detailed quotes from specific flight training organizations  .
               </p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
@@ -225,9 +225,9 @@ export default function VirginAustraliaCadet() {
           content: (
             <>
               <p>
-                As of June 2026, Virgin Australia primarily recruits experienced pilots through direct entry rather than an active ab-initio cadet program. Their recruitment process is designed to assess skills and experience against specific operational requirements. Prospective pilots should monitor the Virgin Australia careers website for current openings and expressions of interest [3].
+                As of June 2026, Virgin Australia primarily recruits experienced pilots through direct entry rather than an active ab-initio cadet program. Their recruitment process is designed to assess skills and experience against specific operational requirements. Prospective pilots should monitor the Virgin Australia careers website for current openings and expressions of interest .
               </p>
-              <h4>Typical Requirements for Virgin Australia First Officer (B737) [3]:</h4>
+              <h4>Typical Requirements for Virgin Australia First Officer (B737) :</h4>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
@@ -275,7 +275,7 @@ export default function VirginAustraliaCadet() {
                 </tbody>
               </table>
               <p>
-                The recruitment process typically involves an online application, review by the talent team, a video interview, and an Assessment Centre which may include a simulator assessment. Candidates not shortlisted are generally asked to wait 12 months before reapplying to allow for further skill and experience development [3].
+                The recruitment process typically involves an online application, review by the talent team, a video interview, and an Assessment Centre which may include a simulator assessment. Candidates not shortlisted are generally asked to wait 12 months before reapplying to allow for further skill and experience development .
               </p>
             </>
           )
@@ -285,7 +285,7 @@ export default function VirginAustraliaCadet() {
           content: (
             <>
               <p>
-                Selecting an accredited flight training organization (FTO) is a critical decision. CASA-approved Part 141 or Part 142 operators ensure that training meets regulatory standards. When evaluating FTOs, consider factors such as [2]:
+                Selecting an accredited flight training organization (FTO) is a critical decision. CASA-approved Part 141 or Part 142 operators ensure that training meets regulatory standards. When evaluating FTOs, consider factors such as :
               </p>
               <ul>
                 <li>
@@ -354,16 +354,21 @@ export default function VirginAustraliaCadet() {
         { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
         { title: "CASA Pilot Licence Requirements Explained", href: "/australia/guides/casa-cpl-requirements", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }
 
 /*
 References:
-[1] Virgin Australia. (n.d.). Pilot jobs. Retrieved from https://www.virginaustralia.com/au/en/about-us/careers/pilot-jobs/
-[2] Civil Aviation Safety Authority. (2025, October 20). Getting a commercial pilot licence (CPL). Retrieved from https://www.casa.gov.au/licences-and-certificates/pilots/pilot-licences/commercial-pilot-licences/getting-commercial-pilot-licence-cpl
-[3] Virgin Australia. (n.d.). Our recruitment process. Retrieved from https://www.virginaustralia.com/au/en/about-us/careers/our-recruitment-process/
-[4] Civil Aviation Safety Authority. (n.d.). Air Transport Pilot Licence (Aeroplane) - Australian Civil Trained (Form 61-1AA). Retrieved from /home/ubuntu/Downloads/air-transport-pilot-licence-aeroplane-australian-civil-trained-form-61-1aa.pdf
-[5] Aviation Careers Australia. (2026, February 18). How Much Does It REALLY Cost to Become a Pilot in Australia. Retrieved from https://aviationcareers.com.au/blog/how-much-does-it-cost-to-become-a-pilot
-[6] Air Gold Coast. (n.d.). Commercial Pilot Licence. Retrieved from https://airgoldcoast.com.au/pilot-training/commercial-pilot-licence/
+ Virgin Australia. (n.d.). Pilot jobs. Retrieved from https://www.virginaustralia.com/au/en/about-us/careers/pilot-jobs/
+ Civil Aviation Safety Authority. (2025, October 20). Getting a commercial pilot licence (CPL). Retrieved from https://www.casa.gov.au/licences-and-certificates/pilots/pilot-licences/commercial-pilot-licences/getting-commercial-pilot-licence-cpl
+ Virgin Australia. (n.d.). Our recruitment process. Retrieved from https://www.virginaustralia.com/au/en/about-us/careers/our-recruitment-process/
+ Civil Aviation Safety Authority. (n.d.). Air Transport Pilot Licence (Aeroplane) - Australian Civil Trained (Form 61-1AA). Retrieved from /home/ubuntu/Downloads/air-transport-pilot-licence-aeroplane-australian-civil-trained-form-61-1aa.pdf
+ Aviation Careers Australia. (2026, February 18). How Much Does It REALLY Cost to Become a Pilot in Australia. Retrieved from https://aviationcareers.com.au/blog/how-much-does-it-cost-to-become-a-pilot
+ Air Gold Coast. (n.d.). Commercial Pilot Licence. Retrieved from https://airgoldcoast.com.au/pilot-training/commercial-pilot-licence/
 */

@@ -209,6 +209,11 @@ export default function CanadaPilotBenefits() {
         { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

@@ -136,7 +136,7 @@ export default function PorterAirlinesCadet() {
                 <li><strong>Geographic Relocation:</strong> The primary training location in Kingston, Ontario, and advanced training in Toronto will necessitate relocation for many applicants, requiring adaptability and logistical planning.</li>
                 <li><strong>Competitive Entry:</strong> Due to the program's prestige and benefits, entry is highly competitive, demanding excellence in all aspects of the application process.</li>
               </ul>
-              <p>In conclusion, the Destination Porter Cadet Program is ideally suited for exceptionally motivated individuals who possess a clear vision for a career with Porter Airlines and are fully prepared to commit to a challenging yet rewarding training environment. It represents a strategic investment in a high-demand profession within Canada's dynamic aviation industry.</p>
+              <p>the Destination Porter Cadet Program is ideally suited for exceptionally motivated individuals who possess a clear vision for a career with Porter Airlines and are fully prepared to commit to a challenging yet rewarding training environment. It represents a strategic investment in a high-demand profession within Canada's dynamic aviation industry.</p>
             </>
           )
         }
@@ -157,6 +157,11 @@ export default function PorterAirlinesCadet() {
         { title: "Integrated ATPL vs. Modular Training: Choosing Your Path in Canadian Aviation", href: "/canada/guides/canada-pilot-training-costs", time: "10 min" },
         { title: "Transport Canada Pilot Medical Requirements: What You Need to Know", href: "/canada/guides/tc-medical-class-1", time: "8 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

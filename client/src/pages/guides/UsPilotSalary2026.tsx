@@ -317,12 +317,12 @@ export default function UsPilotSalary2026() {
           content: (
             <>
               <p className="text-xs text-white/50">
-                [1] Bureau of Labor Statistics. "Airline and Commercial Pilots." <em>bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm</em>. Updated 2024.<br/>
-                [2] MiGFlug. "United, American and Delta Now Pay Identical $465/Hour." <em>migflug.com</em>. May 2026.<br/>
-                [3] Simple Flying. "Hourly Pay of US Regional Airline First Officers in 2026." <em>simpleflying.com</em>. April 2026.<br/>
-                [4] ATP Flight School. "Airline Pilot Salary." <em>atpflightschool.com</em>. Accessed June 2026.<br/>
-                [5] ALPA. "Regional Airline Pilot Signing Bonuses." <em>alpa.org</em>. July 2025.<br/>
-                [6] Delta Air Lines. "Propel Pilot Career Path Program." <em>delta.com/us/en/careers/pilots/propel</em>. Accessed June 2026.
+                 Bureau of Labor Statistics. "Airline and Commercial Pilots." <em>bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm</em>. Updated 2024.<br/>
+                 MiGFlug. "United, American and Delta Now Pay Identical $465/Hour." <em>migflug.com</em>. May 2026.<br/>
+                 Simple Flying. "Hourly Pay of US Regional Airline First Officers in 2026." <em>simpleflying.com</em>. April 2026.<br/>
+                 ATP Flight School. "Airline Pilot Salary." <em>atpflightschool.com</em>. Accessed June 2026.<br/>
+                 ALPA. "Regional Airline Pilot Signing Bonuses." <em>alpa.org</em>. July 2025.<br/>
+                 Delta Air Lines. "Propel Pilot Career Path Program." <em>delta.com/us/en/careers/pilots/propel</em>. Accessed June 2026.
               </p>
             </>
           ),
@@ -334,6 +334,11 @@ export default function UsPilotSalary2026() {
         { title: "US Airline Cadet Programmes 2026", href: "/us/guides/us-cadet-programs", time: "11 min" },
         { title: "How to Fund Pilot Training in the USA", href: "/us/guides/how-to-fund-pilot-training-usa", time: "9 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

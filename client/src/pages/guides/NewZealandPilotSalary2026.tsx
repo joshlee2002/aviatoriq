@@ -285,6 +285,11 @@ export default function NewZealandPilotSalary2026() {
         { title: "Global Pilot Salary Report 2026", href: "/new-zealand/guides/new-zealand-pilot-salary-2026", time: "20 min" },
         { title: "Understanding Pilot License Conversions", href: "/new-zealand/guides/nz-atpl-requirements", time: "10 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "Civil Aviation Authority of New Zealand (CAA NZ)", url: "https://www.aviation.govt.nz" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

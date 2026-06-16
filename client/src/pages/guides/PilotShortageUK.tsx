@@ -36,7 +36,7 @@ export default function PilotShortageUK() {
                 There is not a shortage of people who <em>want</em> to be pilots. There is a structural shortage of <strong>experienced, type-rated Captains</strong>, which forces airlines to promote First Officers faster, which in turn creates a vacuum at the entry level that must be filled by newly qualified cadets.
               </p>
               <p>
-                According to Oliver Wyman's latest aviation forecast, the global pilot shortfall is expected to reach its peak in 2026, with a deficit of approximately 24,000 pilots worldwide [1]. While the UK market is smaller than the US, it is deeply affected by this global trend.
+                According to Oliver Wyman's latest aviation forecast, the global pilot shortfall is expected to reach its peak in 2026, with a deficit of approximately 24,000 pilots worldwide . While the UK market is smaller than the US, it is deeply affected by this global trend.
               </p>
             </>
           ),
@@ -113,9 +113,9 @@ export default function PilotShortageUK() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Oliver Wyman. "Pilot Supply and Demand Analysis 2024-2034." <em>Aviation Practice</em>.<br/>
-                [2] AirAdvisor. "Navigating the Pilot Shortage: Key Statistics - 2026." <em>Aviation Data</em>.<br/>
-                [3] British Airline Pilots' Association (BALPA). "Industry Hiring Trends."
+                 Oliver Wyman. "Pilot Supply and Demand Analysis 2024-2034." <em>Aviation Practice</em>.<br/>
+                 AirAdvisor. "Navigating the Pilot Shortage: Key Statistics - 2026." <em>Aviation Data</em>.<br/>
+                 British Airline Pilots' Association (BALPA). "Industry Hiring Trends."
               </p>
             </>
           ),
@@ -126,6 +126,11 @@ export default function PilotShortageUK() {
         { title: "Best Flight Schools UK 2026", href: "/guides/best-flight-schools-uk-2026", time: "10 min" },
         { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

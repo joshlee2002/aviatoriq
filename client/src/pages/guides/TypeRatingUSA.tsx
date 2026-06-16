@@ -149,6 +149,11 @@ export default function TypeRatingUSA() {
         { title: "ATP Certificate USA", href: "/us/guides/atp-certificate-usa", time: "10 min" },
         { title: "Pilot Type Ratings UK", href: "/guides/pilot-type-rating-uk", time: "7 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

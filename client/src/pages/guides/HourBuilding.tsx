@@ -65,7 +65,7 @@ export default function HourBuilding() {
           content: (
             <>
               <p>
-                Location is the single biggest variable in your hour building cost. Here are the realistic costs for 100 hours of PIC time in the most popular destinations [1].
+                Location is the single biggest variable in your hour building cost. Here are the realistic costs for 100 hours of PIC time in the most popular destinations .
               </p>
               
               <div className="overflow-x-auto my-6">
@@ -171,8 +171,8 @@ export default function HourBuilding() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Airmappr. "Hour Building Guide: Costs by Country & Method." <em>Flight Training Data 2026</em>.<br/>
-                [2] PPRuNe Forums. "Hour building costs: UK vs Europe (90 hours)." <em>Professional Pilot Training Discussions</em>.
+                 Airmappr. "Hour Building Guide: Costs by Country & Method." <em>Flight Training Data 2026</em>.<br/>
+                 PPRuNe Forums. "Hour building costs: UK vs Europe (90 hours)." <em>Professional Pilot Training Discussions</em>.
               </p>
             </>
           ),
@@ -183,6 +183,11 @@ export default function HourBuilding() {
         { title: "Pilot Training Costs UK", href: "/guides/pilot-training-costs", time: "8 min" },
         { title: "ATPL Theory Exams: Complete Guide", href: "/guides/atpl-theory-exams-uk", time: "12 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

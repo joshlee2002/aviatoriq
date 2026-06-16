@@ -205,7 +205,12 @@ const PilotSalaryUSA = () => {
         { title: "How to Fund Pilot Training in the USA", href: "/us/guides/how-to-fund-pilot-training-usa", time: "8 min read" },
         { title: "ATP Certificate USA: Requirements & How to Get One", href: "/us/guides/atp-certificate-usa", time: "10 min read" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 };
 

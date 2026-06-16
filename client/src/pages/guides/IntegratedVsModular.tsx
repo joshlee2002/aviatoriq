@@ -348,18 +348,23 @@ export default function IntegratedVsModular() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Stapleford Flight Centre. "Modular Course Pricelist — Training Course Fees from 1st April 2026." <em>flysfc.com</em>.<br/>
-                [2] Bristol Groundschool. "ATPL(A) Course." <em>bristol.gs</em>. Accessed June 2026.<br/>
-                [3] CAA. "ATPL Theoretical Knowledge Examination Fees." Effective 1 April 2026. <em>caa.co.uk</em>.<br/>
-                [4] Leading Edge Aviation. "Integrated Pilot Training (LEAP) — Fees." <em>leadingedgeaviation.com</em>. Accessed June 2026.<br/>
-                [5] Airmappr. "Acron Aviation Review 2026." January 2026.<br/>
-                [6] Skyborne. "Integrated ATPL Course." <em>skyborne.com/uk/integrated-atpl-course/</em>. Accessed June 2026.
+                 Stapleford Flight Centre. "Modular Course Pricelist — Training Course Fees from 1st April 2026." <em>flysfc.com</em>.<br/>
+                 Bristol Groundschool. "ATPL(A) Course." <em>bristol.gs</em>. Accessed June 2026.<br/>
+                 CAA. "ATPL Theoretical Knowledge Examination Fees." Effective 1 April 2026. <em>caa.co.uk</em>.<br/>
+                 Leading Edge Aviation. "Integrated Pilot Training (LEAP) — Fees." <em>leadingedgeaviation.com</em>. Accessed June 2026.<br/>
+                 Airmappr. "Acron Aviation Review 2026." January 2026.<br/>
+                 Skyborne. "Integrated ATPL Course." <em>skyborne.com/uk/integrated-atpl-course/</em>. Accessed June 2026.
               </p>
             </>
           ),
         },
       ]}
       scopeBanner={<GuideScopeBanner scope="This guide covers integrated vs modular ATPL training under UK CAA regulations. Costs are UK-based. EASA equivalents differ." usHref="/us/guides/part-61-vs-141" usLabel="View USA equivalent (Part 61 vs 141) →" />}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

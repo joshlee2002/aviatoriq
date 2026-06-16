@@ -172,6 +172,11 @@ export default function AustraliaPilotTaxes() {
         { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
         { title: "Australian Pilot Salary Guide 2026", href: "/australia/guides/australia-pilot-salary-2026", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

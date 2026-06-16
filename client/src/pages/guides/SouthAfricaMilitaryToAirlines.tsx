@@ -31,17 +31,17 @@ export default function SouthAfricaMilitaryToAirlines() {
           heading: "2. Understanding SACAA Regulations for Military Pilot Conversion",
           content: (
             <>
-              <p>Navigating the regulatory landscape is paramount for SAAF pilots transitioning to civilian aviation. The South African Civil Aviation Authority (SACAA) outlines the framework for this conversion primarily through <strong>General Notice # PEL-2022/001</strong>, issued on March 14, 2022 [1]. This notice is crucial for current SAAF pilots intending to apply for recognition of their military experience towards a Part 61 civilian licence or rating, as well as Aviation Training Organizations (ATOs) and flight examiners involved in this process.</p>
+              <p>Navigating the regulatory landscape is paramount for SAAF pilots transitioning to civilian aviation. The South African Civil Aviation Authority (SACAA) outlines the framework for this conversion primarily through <strong>General Notice # PEL-2022/001</strong>, issued on March 14, 2022 . This notice is crucial for current SAAF pilots intending to apply for recognition of their military experience towards a Part 61 civilian licence or rating, as well as Aviation Training Organizations (ATOs) and flight examiners involved in this process.</p>
               
               <h3>Applicability and Purpose</h3>
-              <p>The General Notice clarifies the Personnel Licensing (PEL) department's position on the issuance, revalidation, or maintenance of a Part 61 licence or rating using military experience and flight time obtained in the SAAF. It also addresses situations where SAAF pilots undergo skills tests for a Part 61 licence without prior formal recognition and provides guidance on the administration of affected licence applications. The terms 'accreditation' and 'recognition' are used interchangeably within this context [1].</p>
+              <p>The General Notice clarifies the Personnel Licensing (PEL) department's position on the issuance, revalidation, or maintenance of a Part 61 licence or rating using military experience and flight time obtained in the SAAF. It also addresses situations where SAAF pilots undergo skills tests for a Part 61 licence without prior formal recognition and provides guidance on the administration of affected licence applications. The terms 'accreditation' and 'recognition' are used interchangeably within this context .</p>
               
               <h3>Key Legal Provisions</h3>
-              <p>It is essential to understand that the <strong>Convention on International Civil Aviation (Chicago Convention)</strong> and the <strong>Civil Aviation Act, 2009</strong>, apply exclusively to civilian aircraft. Consequently, the Civil Aviation Act and the Civil Aviation Regulations, 2011, do not extend to aircraft or facilities belonging to the South African National Defence Force (SANDF) [1].</p>
-              <p>However, the International Civil Aviation Organization (ICAO) does permit the formal recognition of military experience for civilian licences. This allowance is reflected in <strong>Part 61 of the Civil Aviation Regulations, 2011</strong>, specifically in <strong>SA-CAR 61.01.9 (23) and (24)</strong>, along with associated Technical Standards. Crucially, without formal recognition from the SACAA, military experience and flight time cannot be credited towards any of the flight time requirements for a Part 61 licence [1].</p>
+              <p>It is essential to understand that the <strong>Convention on International Civil Aviation (Chicago Convention)</strong> and the <strong>Civil Aviation Act, 2009</strong>, apply exclusively to civilian aircraft. Consequently, the Civil Aviation Act and the Civil Aviation Regulations, 2011, do not extend to aircraft or facilities belonging to the South African National Defence Force (SANDF) .</p>
+              <p>However, the International Civil Aviation Organization (ICAO) does permit the formal recognition of military experience for civilian licences. This allowance is reflected in <strong>Part 61 of the Civil Aviation Regulations, 2011</strong>, specifically in <strong>SA-CAR 61.01.9 (23) and (24)</strong>, along with associated Technical Standards. Crucially, without formal recognition from the SACAA, military experience and flight time cannot be credited towards any of the flight time requirements for a Part 61 licence .</p>
               
               <h3>SACAA's Stance on Military Flight Crew Experience</h3>
-              <p>The SACAA has adopted a stringent approach to ensure compliance and maintain safety standards. The PEL department advises that Part 61 licence applications utilizing military flight crew experience will be handled as follows [1]:</p>
+              <p>The SACAA has adopted a stringent approach to ensure compliance and maintain safety standards. The PEL department advises that Part 61 licence applications utilizing military flight crew experience will be handled as follows :</p>
               <ul>
                 <li><strong>Non-Accredited Experience:</strong> Applications for a Part 61 licence based on non-accredited military experience will not be processed.</li>
                 <li><strong>Skills Tests:</strong> Incomplete skills tests, or those conducted on military aircraft or outside the auspices of an approved ATO, will not be accepted.</li>
@@ -49,20 +49,20 @@ export default function SouthAfricaMilitaryToAirlines() {
                 <li><strong>Recency Requirements:</strong> Military flight time will not be accepted towards the recency and annual flight time requirements for maintaining a Part 61 licence.</li>
                 <li><strong>Aircraft Classification:</strong> For accreditation purposes, South African-registered aircraft are not considered military aircraft.</li>
               </ul>
-              <p>Pilots must understand that revalidating a civilian pilot licence necessitates compliance with revalidation requirements on civilian-registered aircraft. Military experience cannot be credited for these specific legal requirements [1].</p>
+              <p>Pilots must understand that revalidating a civilian pilot licence necessitates compliance with revalidation requirements on civilian-registered aircraft. Military experience cannot be credited for these specific legal requirements .</p>
               
               <h3>Challenges and Irregularities Identified by SACAA</h3>
-              <p>Since 2020, the SACAA PEL department has been reviewing its processes for military accreditation, aiming for greater transparency and efficiency. During this review, several irregularities were identified, including [1]:</p>
+              <p>Since 2020, the SACAA PEL department has been reviewing its processes for military accreditation, aiming for greater transparency and efficiency. During this review, several irregularities were identified, including :</p>
               <ul>
                 <li>Applicants undertaking examinations or skills tests without formal SACAA accreditation.</li>
                 <li>Examiners conducting incomplete skills tests or waiving mandatory elements.</li>
                 <li>Initial skills tests being performed outside ATOs or on military aircraft.</li>
                 <li>SAAF pilots using military flight time for civilian Pilot-in-Command (PIC) recency or annual flight hour maintenance.</li>
               </ul>
-              <p>These findings led to the publication of the General Notice, emphasizing a clear policy for dealing with irregular applications. While leniency may be extended to military applicants who submitted non-compliant applications in good faith, serious irregularities, dishonesty, forgery, fraud, or blatant disregard of legal requirements will result in enforcement action, potentially including criminal investigation [1].</p>
+              <p>These findings led to the publication of the General Notice, emphasizing a clear policy for dealing with irregular applications. While leniency may be extended to military applicants who submitted non-compliant applications in good faith, serious irregularities, dishonesty, forgery, fraud, or blatant disregard of legal requirements will result in enforcement action, potentially including criminal investigation .</p>
               
               <h3>Guidance for Former or Inactive SAAF Pilots</h3>
-              <p>For former or inactive SAAF pilots, it is a legal requirement that applicants for the recognition of SAAF experience towards a Part 61 licence or rating must be serving at a squadron or unit and possess current active flying status at the time of application. Former SAAF pilots are strongly advised to contact the SACAA PEL department directly for specific guidance tailored to their circumstances [1].</p>
+              <p>For former or inactive SAAF pilots, it is a legal requirement that applicants for the recognition of SAAF experience towards a Part 61 licence or rating must be serving at a squadron or unit and possess current active flying status at the time of application. Former SAAF pilots are strongly advised to contact the SACAA PEL department directly for specific guidance tailored to their circumstances .</p>
             </>
           )
         },
@@ -70,7 +70,7 @@ export default function SouthAfricaMilitaryToAirlines() {
           heading: "3. The Civilian Pilot Training Pathway: Bridging the Gap",
           content: (
             <>
-              <p>Transitioning from military to civilian aviation requires SAAF pilots to acquire specific civilian licences and ratings, which often involves bridging existing military qualifications with SACAA requirements. This pathway typically includes obtaining a Private Pilot Licence (PPL), Commercial Pilot Licence (CPL), Instrument Rating (IR), Multi-Engine Rating (ME), and ultimately, an Airline Transport Pilot Licence (ATPL).</p>
+              <p>Transitioning from military to civilian aviation requires SAAF pilots to acquire specific civilian licences and ratings, which often involves bridging existing military qualifications with SACAA requirements. This pathway typically includes obtaining a Private Pilot Licence (PPL), Commercial Pilot Licence (CPL), Instrument Rating (IR), Multi-Engine Rating (ME), and an Airline Transport Pilot Licence (ATPL).</p>
               
               <h3>Required Civilian Licences and Ratings</h3>
               <ul>
@@ -88,7 +88,7 @@ export default function SouthAfricaMilitaryToAirlines() {
               <p>Many ATOs offer specialized bridging courses tailored for military pilots, focusing on the differences between military and civilian aviation practices, regulations, and aircraft systems. While military experience provides a strong foundation, SAAF pilots will need to accumulate flight hours on civilian-registered aircraft to meet specific SACAA recency and total flight time requirements. This often involves hour-building programs or integrated courses that combine flight training with theoretical instruction.</p>
               
               <h3>Importance of Civilian-Registered Aircraft</h3>
-              <p>As highlighted by SACAA General Notice # PEL-2022/001, military flight time on military aircraft cannot be used for civilian PIC recency or annual flight hour maintenance for a Part 61 licence [1]. Therefore, all training, skills tests, and revalidation checks must be conducted on civilian-registered aircraft under the auspices of an ATO to ensure compliance with SACAA regulations.</p>
+              <p>As highlighted by SACAA General Notice # PEL-2022/001, military flight time on military aircraft cannot be used for civilian PIC recency or annual flight hour maintenance for a Part 61 licence . Therefore, all training, skills tests, and revalidation checks must be conducted on civilian-registered aircraft under the auspices of an ATO to ensure compliance with SACAA regulations.</p>
             </>
           )
         },
@@ -141,7 +141,7 @@ export default function SouthAfricaMilitaryToAirlines() {
                   </tr>
                 </tbody>
               </table>
-              <p><em>Note: These figures are estimates for 2026 and can vary. They typically include flight instruction, ground school, examinations, and basic materials. Accommodation and living expenses are usually separate.</em> [2] [3] [4]</p>
+              <p><em>Note: These figures are estimates for 2026 and can vary. They typically include flight instruction, ground school, examinations, and basic materials. Accommodation and living expenses are usually separate.</em>   </p>
               
               <h3>Breakdown of Major Cost Components</h3>
               <ul>
@@ -176,7 +176,7 @@ export default function SouthAfricaMilitaryToAirlines() {
               <p>Several key airlines operate within South Africa, offering diverse career paths. These include:</p>
               <ul>
                 <li><strong>South African Airways (SAA):</strong> The national flag carrier, operating both domestic and international routes. SAA often seeks experienced pilots for its diverse fleet.</li>
-                <li><strong>Airlink:</strong> A privately-owned regional airline, known for its extensive network across Southern Africa. Airlink frequently recruits experienced pilots and has shown interest in ex-military personnel [5].</li>
+                <li><strong>Airlink:</strong> A privately-owned regional airline, known for its extensive network across Southern Africa. Airlink frequently recruits experienced pilots and has shown interest in ex-military personnel .</li>
                 <li><strong>CemAir:</strong> A growing airline offering scheduled flights to various domestic and regional destinations.</li>
                 <li><strong>FlySafair:</strong> A popular low-cost carrier focusing on domestic routes, known for its efficient operations.</li>
                 <li><strong>Lift Airline:</strong> A relatively new domestic airline, expanding its operations and potentially creating new pilot positions.</li>
@@ -206,22 +206,22 @@ export default function SouthAfricaMilitaryToAirlines() {
               
               <h3>A Step-by-Step Guide for SAAF Pilots</h3>
               <ol>
-                <li><strong>Thoroughly Review SACAA Regulations:</strong> Begin by gaining a deep understanding of the latest SACAA regulations concerning military pilot conversion, particularly <strong>General Notice # PEL-2022/001</strong> and <strong>SA-CAR 61.01.9 (23) and (24)</strong> [1]. Pay close attention to the requirements for formal recognition of military experience, the necessity of civilian-registered aircraft for training and recency, and the guidelines for former or inactive SAAF pilots. Contact the SACAA Personnel Licensing (PEL) department directly for any clarifications regarding your specific circumstances.</li>
+                <li><strong>Thoroughly Review SACAA Regulations:</strong> Begin by gaining a deep understanding of the latest SACAA regulations concerning military pilot conversion, particularly <strong>General Notice # PEL-2022/001</strong> and <strong>SA-CAR 61.01.9 (23) and (24)</strong> . Pay close attention to the requirements for formal recognition of military experience, the necessity of civilian-registered aircraft for training and recency, and the guidelines for former or inactive SAAF pilots. Contact the SACAA Personnel Licensing (PEL) department directly for any clarifications regarding your specific circumstances.</li>
                 <li><strong>Assess Current Qualifications and Experience:</strong> Evaluate your military flight hours, ratings, and experience against civilian licence requirements. Identify any gaps in theoretical knowledge or practical flight experience that need to be addressed to meet SACAA Part 61 standards.</li>
                 <li><strong>Choose an Accredited Aviation Training Organization (ATO):</strong> Select a reputable SACAA-accredited ATO that has experience in assisting military pilots with their transition. Discuss your military background with the ATO to develop a tailored training program that efficiently bridges any gaps and prepares you for civilian examinations and flight tests. Ensure the ATO operates civilian-registered aircraft for all required training and check flights.</li>
                 <li><strong>Complete Required Civilian Training and Examinations:</strong> Undertake the necessary ground school and flight training to obtain your Private Pilot Licence (PPL), Commercial Pilot Licence (CPL), Instrument Rating (IR), Multi-Engine Rating (ME), and Airline Transport Pilot Licence (ATPL) theory. Focus on mastering civilian procedures, air law, and communication protocols.</li>
-                <li><strong>Accumulate Civilian Flight Hours and Recency:</strong> Actively build flight hours on civilian-registered aircraft to meet the recency and total flight time requirements for your desired civilian licences and ratings. This is a critical step, as military flight time on military aircraft cannot be used for these specific civilian requirements [1].</li>
+                <li><strong>Accumulate Civilian Flight Hours and Recency:</strong> Actively build flight hours on civilian-registered aircraft to meet the recency and total flight time requirements for your desired civilian licences and ratings. This is a critical step, as military flight time on military aircraft cannot be used for these specific civilian requirements .</li>
                 <li><strong>Network within the Civilian Aviation Industry:</strong> Attend aviation conferences, job fairs, and industry events. Connect with current airline pilots, recruiters, and other aviation professionals. Networking can provide valuable insights into job opportunities, airline-specific requirements, and mentorship.</li>
                 <li><strong>Prepare for Airline Recruitment:</strong> Once you have obtained the necessary civilian licences and accumulated sufficient civilian flight experience, prepare for airline recruitment processes. This typically involves submitting a comprehensive CV, undergoing simulator assessments, technical interviews, and panel interviews. Highlight your military discipline, leadership skills, and extensive flight experience as key assets.</li>
               </ol>
               <p>By meticulously following these steps, SAAF pilots can effectively navigate the transition from military to commercial aviation, leveraging their invaluable experience to embark on a rewarding career with South African airlines.</p>
               
               <h3>References</h3>
-              <p>[1] South African Civil Aviation Authority. (2022). <em>General Notice # PEL-2022/001: Recognition of Experience Obtained in the South African Air Force</em>. Retrieved from https://caasanwebsitestorage.blob.core.windows.net/aviationpersonnelstandardsdoc/General%20Notice%20-%20Recognition%20of%20Experience%20Obtained%20in%20the%20South%20African%20Air%20Force.pdf</p>
-              <p>[2] Cosmoipilot. (2025). <em>Full Pilot Training Cost Breakdown 2025/2026</em>. Retrieved from https://cosmoipilot.com/blog/full-pilot-training-cost-breakdown-2025-2026</p>
-              <p>[3] Airborne. (n.d.). <em>Costs of Flight Training in South Africa</em>. Retrieved from http://www.airbornesa.co.za/costs/</p>
-              <p>[4] SkyTeam Aviation Academy. (n.d.). <em>How Much It Costs To Be A Pilot</em>. Retrieved from https://skyteamaviation.com/how-much-it-costs-to-be-a-pilot/</p>
-              <p>[5] Airlink. (2025). <em>Airlink hiring experienced pilots in South Africa</em>. [Facebook Post]. Retrieved from https://www.facebook.com/groups/211474239611769/posts/2049061329186375/</p>
+              <p> South African Civil Aviation Authority. (2022). <em>General Notice # PEL-2022/001: Recognition of Experience Obtained in the South African Air Force</em>. Retrieved from https://caasanwebsitestorage.blob.core.windows.net/aviationpersonnelstandardsdoc/General%20Notice%20-%20Recognition%20of%20Experience%20Obtained%20in%20the%20South%20African%20Air%20Force.pdf</p>
+              <p> Cosmoipilot. (2025). <em>Full Pilot Training Cost Breakdown 2025/2026</em>. Retrieved from https://cosmoipilot.com/blog/full-pilot-training-cost-breakdown-2025-2026</p>
+              <p> Airborne. (n.d.). <em>Costs of Flight Training in South Africa</em>. Retrieved from http://www.airbornesa.co.za/costs/</p>
+              <p> SkyTeam Aviation Academy. (n.d.). <em>How Much It Costs To Be A Pilot</em>. Retrieved from https://skyteamaviation.com/how-much-it-costs-to-be-a-pilot/</p>
+              <p> Airlink. (2025). <em>Airlink hiring experienced pilots in South Africa</em>. [Facebook Post]. Retrieved from https://www.facebook.com/groups/211474239611769/posts/2049061329186375/</p>
             </>
           )
         }
@@ -260,6 +260,11 @@ export default function SouthAfricaMilitaryToAirlines() {
           time: "12 min"
         }
       ]}
-    />
+    
+      sources={[
+    { name: "South African Civil Aviation Authority (SACAA)", url: "https://www.caa.co.za" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

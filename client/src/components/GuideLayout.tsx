@@ -4,6 +4,7 @@ import SEO from "@/components/SEO";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import { ArrowRight, Clock, BookOpen, ChevronRight, Zap, Mail, CheckCircle2, List, ShieldCheck } from "lucide-react";
+import GuideSourcesBox, { type GuideSource } from "@/components/GuideSourcesBox";
 import { trpc } from "@/lib/trpc";
 
 // ─── Inline Email Capture ────────────────────────────────────────────
@@ -178,6 +179,8 @@ interface GuideLayoutProps {
   heroImage?: string;
   /** Optional scope banner shown above the article for non-UK/US readers */
   scopeBanner?: React.ReactNode;
+  /** Sources reviewed for this guide */
+  sources?: GuideSource[];
 }
 
 const surface = "oklch(0.14 0.08 250)";
@@ -213,6 +216,7 @@ export default function GuideLayout({
   category,
   heroImage,
   scopeBanner,
+  sources,
 }: GuideLayoutProps) {
   const schemas: object[] = [];
 
@@ -233,9 +237,32 @@ export default function GuideLayout({
     "@type": "Article",
     headline: title,
     description: metaDescription || subtitle,
-    publisher: { "@type": "Organization", name: "AviatorIQ", url: "https://aviatoriq.com" },
+    publisher: { "@type": "Organization", name: "AviatorIQ", url: "https://aviatoriq.com", logo: { "@type": "ImageObject", url: "https://aviatoriq.com/logo.png" } },
     author: { "@type": "Person", name: author, url: "https://aviatoriq.com/about-our-authors" },
     dateModified: lastUpdated,
+    mainEntityOfPage: { "@type": "WebPage", "@id": canonical ? (canonical.startsWith("http") ? canonical : `https://aviatoriq.com${canonical}`) : "https://aviatoriq.com" },
+  });
+
+  // Breadcrumb schema
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://aviatoriq.com" },
+      { "@type": "ListItem", position: 2, name: "Guides", item: "https://aviatoriq.com/guides" },
+      { "@type": "ListItem", position: 3, name: title, item: canonical ? (canonical.startsWith("http") ? canonical : `https://aviatoriq.com${canonical}`) : "https://aviatoriq.com" },
+    ],
+  });
+
+  // Organization schema (sitewide)
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "AviatorIQ",
+    url: "https://aviatoriq.com",
+    logo: "https://aviatoriq.com/logo.png",
+    sameAs: [],
+    contactPoint: { "@type": "ContactPoint", email: "hello@aviatoriq.com", contactType: "customer support" },
   });
 
   // Build ToC items from section headings
@@ -358,6 +385,11 @@ export default function GuideLayout({
                   {/* If fewer than 3 sections, show email capture at the end */}
                   {sections.length <= 2 && <div className="mt-10 pt-10" style={{ borderTop: `1px solid ${border}` }}><InlineEmailCapture /></div>}
                 </div>
+
+                {/* Sources box */}
+                {sources && sources.length > 0 && (
+                  <GuideSourcesBox sources={sources} lastReviewed={lastUpdated} />
+                )}
 
                 {/* Bottom CTA */}
                 <div

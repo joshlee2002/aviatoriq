@@ -170,9 +170,9 @@ export default function AustraliaPilotShortage() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Australian Government Department of Infrastructure, Transport, Regional Development. "Aviation Industry Workforce Report", 2025.<br/>
-                [2] Civil Aviation Safety Authority (CASA). "Flight Crew Licensing Statistics", 2026.<br/>
-                [3] Qantas Group. "Project Sunrise and Fleet Renewal Updates", 2025/2026.
+                 Australian Government Department of Infrastructure, Transport, Regional Development. "Aviation Industry Workforce Report", 2025.<br/>
+                 Civil Aviation Safety Authority (CASA). "Flight Crew Licensing Statistics", 2026.<br/>
+                 Qantas Group. "Project Sunrise and Fleet Renewal Updates", 2025/2026.
               </p>
             </>
           ),
@@ -183,6 +183,11 @@ export default function AustraliaPilotShortage() {
         { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
         { title: "Qantas Group Cadet Program", href: "/australia/guides/qantas-group-cadet", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

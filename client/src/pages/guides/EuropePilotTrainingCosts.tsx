@@ -134,6 +134,11 @@ export default function EuropePilotTrainingCosts() {
         { title: "How to Become a Pilot in Europe", href: "/europe/guides/pilot-training-costs", time: "15 min" },
         { title: "EASA Pilot Medical Requirements Explained", href: "/europe/guides/easa-medical-class-1", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "EASA" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

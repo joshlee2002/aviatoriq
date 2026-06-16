@@ -166,6 +166,11 @@ export default function CanadaPilotShortage() {
           time: "8 min"
         }
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

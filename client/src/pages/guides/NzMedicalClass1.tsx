@@ -238,6 +238,12 @@ export default function NzMedicalClass1() {
           time: "10 min"
         }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-MED", url: "https://www.easa.europa.eu/en/document-library/regulations/commission-regulation-eu-no-11782011" },
+    { name: "FAA" },
+    { name: "CASA" },
+  ]}/>
   );
 }

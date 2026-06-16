@@ -292,6 +292,11 @@ export default function TcAtplRequirements() {
         { title: "EASA ATPL Requirements Explained", href: "/europe/guides/easa-atpl-requirements", time: "14 min" },
         { title: "GCAA ATPL Pathway: A Detailed Look", href: "/uae/guides/uae-pilot-training-costs", time: "16 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

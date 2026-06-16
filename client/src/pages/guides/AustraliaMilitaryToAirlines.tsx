@@ -209,6 +209,11 @@ export default function AustraliaMilitaryToAirlines() {
         { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
         { title: "Airline Pilot Career Path in Australia", href: "/australia/guides/australia-pilot-salary-2026", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

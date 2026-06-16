@@ -124,6 +124,11 @@ export default function UsPilotShortage2026() {
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" },
         { title: "FAA ATP Requirements Explained", href: "/us/guides/faa-atp-requirements", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

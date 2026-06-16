@@ -110,7 +110,7 @@ export default function SaAtplRequirements() {
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Additional Costs (Estimated)</strong></td><td className="px-4 py-3 text-white/80">ZAR 50,000 - ZAR 150,000</td><td className="px-4 py-3 text-white/80">Medical exams, license issue fees, study materials, uniform, accommodation, transport.</td></tr>
                 </tbody>
               </table>
-              <p>It is important to note that these figures are estimates and can fluctuate. Prospective students should contact multiple SACAA-approved ATOs for precise, up-to-date quotations and to inquire about financing options or cadet programs offered by airlines.</p>
+              <p>these figures are estimates and can fluctuate. Prospective students should contact multiple SACAA-approved ATOs for precise, up-to-date quotations and to inquire about financing options or cadet programs offered by airlines.</p>
             </>
           )
         },
@@ -169,6 +169,11 @@ export default function SaAtplRequirements() {
         { title: "Pilot Training Costs in South Africa 2026", href: "/south-africa/guides/pilot-training-costs", time: "12 min" },
         { title: "Understanding SACAA Regulations for Pilots", href: "/south-africa/guides/sacpl-requirements", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

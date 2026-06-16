@@ -19,7 +19,7 @@ export default function AustraliaPilotSeniority() {
           heading: "Introduction to Pilot Seniority",
           content: (
             <>
-              <p>Pilot seniority is the bedrock of an airline pilot's career in Australia. It dictates everything from the aircraft you fly and the routes you are assigned, to your monthly schedule, vacation time, and ultimately, your earning potential. Unlike many other professions where merit or performance reviews drive career advancement, the airline industry operates on a strict seniority-based system.</p>
+              <p>Pilot seniority is the bedrock of an airline pilot's career in Australia. It dictates everything from the aircraft you fly and the routes you are assigned, to your monthly schedule, vacation time, and your earning potential. Unlike many other professions where merit or performance reviews drive career advancement, the airline industry operates on a strict seniority-based system.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
@@ -115,7 +115,7 @@ export default function AustraliaPilotSeniority() {
           heading: "CASA Regulations and Seniority",
           content: (
             <>
-              <p>It is important to note that the Civil Aviation Safety Authority (CASA) does not regulate pilot seniority. Seniority is an industrial relations construct, governed by Enterprise Agreements (EAs) negotiated between the airlines and pilot unions, such as the Australian and International Pilots Association (AIPA) or the Australian Federation of Air Pilots (AFAP).</p>
+              <p>the Civil Aviation Safety Authority (CASA) does not regulate pilot seniority. Seniority is an industrial relations construct, governed by Enterprise Agreements (EAs) negotiated between the airlines and pilot unions, such as the Australian and International Pilots Association (AIPA) or the Australian Federation of Air Pilots (AFAP).</p>
               <p>CASA's mandate is strictly safety and regulatory compliance (e.g., flight and duty time limitations, licensing, and medical standards). However, the experience gained through seniority is often a prerequisite for meeting CASA's requirements for certain upgrades, such as the minimum hours required for an Air Transport Pilot Licence (ATPL) or command upgrades.</p>
             </>
           )
@@ -155,6 +155,11 @@ export default function AustraliaPilotSeniority() {
           time: "12 min"
         }
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

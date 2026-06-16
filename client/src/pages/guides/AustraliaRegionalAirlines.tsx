@@ -274,6 +274,11 @@ export default function AustraliaRegionalAirlines() {
         { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
         { title: "CASA Class 1 Medical: What Pilots Need to Know", href: "/australia/guides/casa-medical-class-1", time: "8 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

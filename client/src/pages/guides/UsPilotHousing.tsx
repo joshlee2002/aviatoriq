@@ -104,7 +104,7 @@ export default function UsPilotHousing() {
                 <li><strong>Variable Duration:</strong> The flexible pace of Part 61 training means the duration of your stay can be less predictable, potentially complicating short-term rental agreements.</li>
                 <li><strong>Cost Management:</strong> While Part 61 training can sometimes be perceived as cheaper overall if managed efficiently, the housing component will require separate budgeting and logistical effort.</li>
               </ul>
-              <p>Ultimately, the choice of Part 61 or Part 141 should align with your learning style and career goals. If an immersive, streamlined experience with integrated housing is a priority, a Part 141 academy is often the more suitable choice. If flexibility and independent living are preferred, Part 61 might be a better fit, requiring proactive housing arrangements.</p>
+              <p>the choice of Part 61 or Part 141 should align with your learning style and career goals. If an immersive, streamlined experience with integrated housing is a priority, a Part 141 academy is often the more suitable choice. If flexibility and independent living are preferred, Part 61 might be a better fit, requiring proactive housing arrangements.</p>
             </>
           )
         },
@@ -170,6 +170,11 @@ export default function UsPilotHousing() {
         { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

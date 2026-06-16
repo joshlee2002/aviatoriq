@@ -167,6 +167,11 @@ export default function AirArabiaCadetProgram() {
         { title: "GCAA Pilot Training Regulations Explained", href: "/uae/guides/uae-pilot-training-costs", time: "10 min" },
         { title: "Pilot Training Costs in the Middle East 2026", href: "/uae/guides/uae-pilot-training-costs", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

@@ -66,7 +66,7 @@ export default function FaaAtpRequirements() {
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine (for ME ATP)</td><td className="px-4 py-3 text-white/80">50 hours</td><td className="px-4 py-3 text-white/80">In the class of airplane for the rating sought. Up to 25 hours can be in a full flight simulator.</td></tr>
                 </tbody>
               </table>
-              <p>It is important to note that a maximum of 100 hours of the total aeronautical experience requirements may be obtained in a full flight simulator or flight training device. Careful logging and verification of flight hours are paramount throughout this process.</p>
+              <p>a maximum of 100 hours of the total aeronautical experience requirements may be obtained in a full flight simulator or flight training device. Careful logging and verification of flight hours are paramount throughout this process.</p>
             </>
           )
         },
@@ -206,6 +206,11 @@ export default function FaaAtpRequirements() {
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" },
         { title: "Understanding the Restricted ATP (R-ATP)", href: "/us/guides/atp-certificate-usa", time: "10 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

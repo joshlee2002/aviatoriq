@@ -147,6 +147,11 @@ export default function BestFlightSchoolsEurope() {
         { title: "Pilot Training Costs Europe", href: "/europe/guides/europe-pilot-training-costs", time: "10 min" },
         { title: "Ryanair Mentored Programme", href: "/europe/guides/ryanair-mentored-programme", time: "9 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "EASA" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

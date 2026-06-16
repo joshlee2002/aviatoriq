@@ -213,7 +213,12 @@ const PplGuideUK = () => {
           time: "8 min read",
         },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 };
 

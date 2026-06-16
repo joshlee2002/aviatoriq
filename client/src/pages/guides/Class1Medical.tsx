@@ -83,7 +83,7 @@ const Class1Medical: React.FC = () => {
                 Most UK student pilots get a <strong>combined UK+EASA medical</strong> at their initial examination. All three UK AeMC organisations now offer dual issuance — the examination is conducted once, and results are submitted to both authorities. The EASA premium is approximately £366–£500 on top of the UK-only price.
               </p>
               <p>
-                If you only need an EASA medical (for example, you are targeting Ryanair or Wizz Air), you do not need a UK AeMC at all. Flying to Sofia, Riga, or Prague for an EASA medical costs approximately £260–£515 total (flights + medical), compared to £957–£1,377 at a UK AeMC. The saving is real. [1]
+                If you only need an EASA medical (for example, you are targeting Ryanair or Wizz Air), you do not need a UK AeMC at all. Flying to Sofia, Riga, or Prague for an EASA medical costs approximately £260–£515 total (flights + medical), compared to £957–£1,377 at a UK AeMC. The saving is real. 
               </p>
             </>
           ),
@@ -139,10 +139,10 @@ const Class1Medical: React.FC = () => {
                 </table>
               </div>
               <p className="text-xs text-white/50">
-                Prices verified from AeMC websites, May 2026. Centreline pricing shown ex-VAT per their website. Heathrow Medical does not offer a standalone UK CAA-only initial — options are EASA-only (£957) or combined UK+EASA (£1,377). [1]
+                Prices verified from AeMC websites, May 2026. Centreline pricing shown ex-VAT per their website. Heathrow Medical does not offer a standalone UK CAA-only initial — options are EASA-only (£957) or combined UK+EASA (£1,377). 
               </p>
               <p>
-                <strong>Which AeMC to choose:</strong> Heathrow Medical Services has the strongest reputation on PPRuNe (the professional pilots forum) and is CQC-inspected, SEQOHS-accredited, and ISO 9001 certified. Centreline Gatwick is the cheapest option and reviews better than their London branch. Birmingham AeMC is the only option outside the M25 corridor — the right choice for anyone in the Midlands, North England, Wales, or Scotland. [1]
+                <strong>Which AeMC to choose:</strong> Heathrow Medical Services has the strongest reputation on PPRuNe (the professional pilots forum) and is CQC-inspected, SEQOHS-accredited, and ISO 9001 certified. Centreline Gatwick is the cheapest option and reviews better than their London branch. Birmingham AeMC is the only option outside the M25 corridor — the right choice for anyone in the Midlands, North England, Wales, or Scotland. 
               </p>
             </>
           ),
@@ -152,7 +152,7 @@ const Class1Medical: React.FC = () => {
           content: (
             <>
               <p>
-                The initial Class 1 examination takes approximately four hours. The CAA specifies the following components: [2]
+                The initial Class 1 examination takes approximately four hours. The CAA specifies the following components: 
               </p>
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
@@ -360,16 +360,16 @@ const Class1Medical: React.FC = () => {
           content: (
             <>
               <p>
-                Mental health is assessed comprehensively at every Class 1 examination. The CAA's guidance covers mood, coping strategies, relationship history, work stressors, and personality. A history of depression or anxiety does not automatically disqualify you — the key factors are stability, current symptom status, and whether medication is required. [2]
+                Mental health is assessed comprehensively at every Class 1 examination. The CAA's guidance covers mood, coping strategies, relationship history, work stressors, and personality. A history of depression or anxiety does not automatically disqualify you — the key factors are stability, current symptom status, and whether medication is required. 
               </p>
               <p>
-                <strong>SSRI antidepressants:</strong> Four SSRIs are now accepted under EASA/UK CAA rules for Class 1 certificate holders: <strong>citalopram, sertraline, fluoxetine, and escitalopram.</strong> Acceptance is not automatic — it requires a period of stability on the medication (typically 6 months minimum), a specialist psychiatric evaluation, and CAA medical assessor review. If accepted, an OML (Operational Multi-crew Limitation) is typically applied. [3]
+                <strong>SSRI antidepressants:</strong> Four SSRIs are now accepted under EASA/UK CAA rules for Class 1 certificate holders: <strong>citalopram, sertraline, fluoxetine, and escitalopram.</strong> Acceptance is not automatic — it requires a period of stability on the medication (typically 6 months minimum), a specialist psychiatric evaluation, and CAA medical assessor review. If accepted, an OML (Operational Multi-crew Limitation) is typically applied. 
               </p>
               <p>
                 <strong>What an OML means in practice:</strong> An OML means you can only exercise your licence as part of a multi-crew operation — i.e., with another qualified pilot present. For airline flying (which is almost always multi-crew), this is not a career barrier. An OML does not prevent you from flying for BA, easyJet, Ryanair, or any major airline.
               </p>
               <p>
-                <strong>Self-harm history:</strong> The CAA regulations state that applicants with a documented history of deliberate self-harm or suicide attempt "shall be assessed as unfit." However, they "may be assessed as fit after satisfactory psychiatric evaluation." This is assessed individually. [2]
+                <strong>Self-harm history:</strong> The CAA regulations state that applicants with a documented history of deliberate self-harm or suicide attempt "shall be assessed as unfit." However, they "may be assessed as fit after satisfactory psychiatric evaluation." This is assessed individually. 
               </p>
               <p>
                 The most important rule with mental health: <strong>always disclose.</strong> Withholding a mental health history from your AME is a serious regulatory offence and, if discovered later, can result in licence revocation. The CAA's approach is to assess risk, not to penalise honesty.
@@ -395,16 +395,22 @@ const Class1Medical: React.FC = () => {
           content: (
             <>
               <p className="text-xs text-white/50">
-                [1] Airmappr. "EASA Class 1 Medical in the UK: 4 AeMCs Compared (2026 Prices)." March 2026. <em>airmappr.com/articles/medical/easa-class-one-medical-uk-aemc-comparison</em>. Prices verified from AeMC websites, May 2026.<br/>
-                [2] UK Civil Aviation Authority. "Initial Class 1 medical examination." <em>caa.co.uk/commercial-industry/pilot-licences/medical/initial-class-1-medical-examination/</em>. Accessed June 2026.<br/>
-                [3] UK Civil Aviation Authority. "Mental Health Guidance Material." <em>caa.co.uk/aeromedical-examiners/medical-standards/pilots/medical-conditions/mental-health/</em>. Accessed June 2026. SSRIs accepted: citalopram, sertraline, fluoxetine, escitalopram — subject to stability period and CAA psychiatric review.<br/>
-                [4] Leading Edge Aviation. "Getting your UK CAA and EASA Class 1 Medical Certificates." January 2026. <em>leadingedgeaviation.com/blog/getting-your-uk-caa-easa-class-1-medical/</em>.
+                 Airmappr. "EASA Class 1 Medical in the UK: 4 AeMCs Compared (2026 Prices)." March 2026. <em>airmappr.com/articles/medical/easa-class-one-medical-uk-aemc-comparison</em>. Prices verified from AeMC websites, May 2026.<br/>
+                 UK Civil Aviation Authority. "Initial Class 1 medical examination." <em>caa.co.uk/commercial-industry/pilot-licences/medical/initial-class-1-medical-examination/</em>. Accessed June 2026.<br/>
+                 UK Civil Aviation Authority. "Mental Health Guidance Material." <em>caa.co.uk/aeromedical-examiners/medical-standards/pilots/medical-conditions/mental-health/</em>. Accessed June 2026. SSRIs accepted: citalopram, sertraline, fluoxetine, escitalopram — subject to stability period and CAA psychiatric review.<br/>
+                 Leading Edge Aviation. "Getting your UK CAA and EASA Class 1 Medical Certificates." January 2026. <em>leadingedgeaviation.com/blog/getting-your-uk-caa-easa-class-1-medical/</em>.
               </p>
             </>
           ),
         },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-MED", url: "https://www.easa.europa.eu/en/document-library/regulations/commission-regulation-eu-no-11782011" },
+    { name: "FAA" },
+    { name: "CASA" },
+  ]}/>
   );
 };
 

@@ -220,7 +220,12 @@ const BestRouteToAirline = () => {
           href: "/guides/airline-pilot-salary",          time: "8 min" },
       ]}
     scopeBanner={<><GuideScopeBanner scope="Routes and timelines in this guide are based on the UK aviation market (CAA/EASA licensing)." usHref="/us/guides/how-to-become-a-pilot" usLabel="View USA version →" globalHref="/schools" globalLabel="Browse global schools →" /></>}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 };
 

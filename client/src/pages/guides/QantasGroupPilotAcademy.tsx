@@ -173,6 +173,11 @@ export default function QantasGroupPilotAcademy() {
         { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
         { title: "CASA Regulations for Commercial Pilots", href: "/australia/guides/casa-cpl-requirements", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

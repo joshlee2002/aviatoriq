@@ -23,7 +23,7 @@ export default function AustraliaPilotSalary2026() {
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
               </p>
-              <p>In 2026, pilot compensation in Australia remains among the strongest in the Asia-Pacific region. Following post-pandemic recovery and renegotiated Enterprise Agreements (EAs), pilots at major carriers have secured solid base pay increases alongside excellent superannuation (retirement) benefits [1].</p>
+              <p>In 2026, pilot compensation in Australia remains among the strongest in the Asia-Pacific region. Following post-pandemic recovery and renegotiated Enterprise Agreements (EAs), pilots at major carriers have secured solid base pay increases alongside excellent superannuation (retirement) benefits .</p>
               <p>While the journey begins with low-paying general aviation jobs in the Outback or as a flight instructor, the top-end earning potential for a widebody Captain at Qantas comfortably exceeds $400,000 AUD per year. This guide breaks down exactly what you can expect to earn at every stage of an Australian aviation career.</p>
             </>
           )
@@ -144,6 +144,11 @@ export default function AustraliaPilotSalary2026() {
         { title: "Qantas Group Pilot Academy Guide", href: "/australia/guides/qantas-group-pilot-academy", time: "8 min" },
         { title: "Virgin Australia Direct Entry Requirements", href: "/australia/guides/virgin-australia-cadet-pilot-program", time: "8 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

@@ -41,9 +41,9 @@ export default function CanadaMilitaryToAirlines() {
               </ul>
               <p>A crucial aspect for military pilots is the recognition of their service. Standard 421.34(8) explicitly addresses <strong>Credits for DND Applicants</strong>:</p>
               <blockquote>
-                <p>"Active and retired Royal Canadian Air Force personnel who holds a Canadian Forces Instrument Rating (unrestricted) in a multi-engine aeroplane (Group 1) that is required to be operated with a co-pilot as defined in subsection (9), shall be deemed to have met the skill requirement." [1]</p>
+                <p>"Active and retired Royal Canadian Air Force personnel who holds a Canadian Forces Instrument Rating (unrestricted) in a multi-engine aeroplane (Group 1) that is required to be operated with a co-pilot as defined in subsection (9), shall be deemed to have met the skill requirement." </p>
               </blockquote>
-              <p>This provision significantly streamlines the skill test portion of the ATPL for qualified RCAF pilots, recognizing their high level of proficiency and instrument flight experience. However, it is important to note that while the skill requirement may be deemed met, other aspects such as written examinations and specific flight time accumulations still need to be addressed.</p>
+              <p>This provision significantly streamlines the skill test portion of the ATPL for qualified RCAF pilots, recognizing their high level of proficiency and instrument flight experience. However, while the skill requirement may be deemed met, other aspects such as written examinations and specific flight time accumulations still need to be addressed.</p>
             </>
           )
         },
@@ -53,7 +53,7 @@ export default function CanadaMilitaryToAirlines() {
             <>
               <p>The journey from military to civilian airline pilot involves several distinct steps, each requiring careful attention to detail and adherence to Transport Canada regulations. While military experience provides a strong foundation, specific civilian requirements must be fulfilled.</p>
               <h3>1. Medical Certification: Category 1 Medical</h3>
-              <p>All aspiring airline pilots in Canada must hold a valid Category 1 Medical Certificate. This is a stringent medical examination to ensure pilots meet the highest standards of physical and mental fitness. It typically involves a comprehensive physical, vision and hearing tests, and an electrocardiogram (ECG). The cost for a Category 1 medical examination can range from <strong>CAD $250 to $450</strong>, with additional fees for ECG and audiology tests (e.g., $30 for audio, $60 for ECG) [2] [3] [4]. It is advisable to undergo this early in the conversion process to identify any potential issues.</p>
+              <p>All aspiring airline pilots in Canada must hold a valid Category 1 Medical Certificate. This is a stringent medical examination to ensure pilots meet the highest standards of physical and mental fitness. It typically involves a comprehensive physical, vision and hearing tests, and an electrocardiogram (ECG). The cost for a Category 1 medical examination can range from <strong>CAD $250 to $450</strong>, with additional fees for ECG and audiology tests (e.g., $30 for audio, $60 for ECG)   . It is advisable to undergo this early in the conversion process to identify any potential issues.</p>
               <h3>2. Knowledge Requirements: Written Examinations</h3>
               <p>RCAF pilots are generally exempt from certain ground school requirements due to their extensive military training. However, they must successfully pass specific Transport Canada written examinations for the ATPL. These include:</p>
               <ul>
@@ -61,7 +61,7 @@ export default function CanadaMilitaryToAirlines() {
                 <li><strong>SARON (Airline Transport Pilot Licence (Aeroplane) Air Law, Aeroplane Operation and Navigation General)</strong>: Covers Canadian Aviation Regulations (CARs), air traffic rules, general aircraft operation, and advanced navigation principles.</li>
                 <li><strong>INRAT (Instrument Rating)</strong>: While military pilots possess advanced instrument flying skills, passing the civilian INRAT written exam is often required unless specific credits apply.</li>
               </ul>
-              <p>Each examination has a passing grade of 70% [5]. Fees for these exams typically range from <strong>CAD $35.00 to $131.54 per exam</strong> and are non-refundable [6]. Several online resources and ground schools offer specialized preparation courses for these exams, which can be highly beneficial.</p>
+              <p>Each examination has a passing grade of 70% . Fees for these exams typically range from <strong>CAD $35.00 to $131.54 per exam</strong> and are non-refundable . Several online resources and ground schools offer specialized preparation courses for these exams, which can be highly beneficial.</p>
               <h3>3. Experience Requirements: Flight Time Accumulation</h3>
               <p>Transport Canada requires a minimum of 1500 hours total flight time for an ATPL, with specific breakdowns:</p>
               <ul>
@@ -73,8 +73,8 @@ export default function CanadaMilitaryToAirlines() {
               </ul>
               <p>RCAF pilots often exceed the total flight time requirements. The key is to ensure that the logged military flight hours are properly documented and categorized to meet TC's specific breakdowns, especially for PIC, cross-country, and night flight time. Detailed logbooks and official military flight records are crucial for this step.</p>
               <h3>4. Skill Requirements: Flight Test and DND Credits</h3>
-              <p>As noted in Standard 421.34(8), active and retired RCAF personnel holding an unrestricted Canadian Forces Instrument Rating in a multi-engine (Group 1) aeroplane operated with a co-pilot are generally deemed to have met the ATPL skill requirement [1]. This is a significant advantage, potentially bypassing the need for a civilian ATPL flight test. However, it is essential to confirm individual eligibility with Transport Canada.</p>
-              <p>For those who may not fully meet the DND credit criteria, a civilian ATPL flight test in a multi-engine aeroplane (Group 1) is required. This test assesses the pilot's ability to perform normal and emergency procedures under IFR conditions, often involving a Pilot Proficiency Check (PPC) or Pilot Competency Check (PCC) [1].</p>
+              <p>As noted in Standard 421.34(8), active and retired RCAF personnel holding an unrestricted Canadian Forces Instrument Rating in a multi-engine (Group 1) aeroplane operated with a co-pilot are generally deemed to have met the ATPL skill requirement . This is a significant advantage, potentially bypassing the need for a civilian ATPL flight test. However, it is essential to confirm individual eligibility with Transport Canada.</p>
+              <p>For those who may not fully meet the DND credit criteria, a civilian ATPL flight test in a multi-engine aeroplane (Group 1) is required. This test assesses the pilot's ability to perform normal and emergency procedures under IFR conditions, often involving a Pilot Proficiency Check (PPC) or Pilot Competency Check (PCC) .</p>
             </>
           )
         },
@@ -96,12 +96,12 @@ export default function CanadaMilitaryToAirlines() {
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Category 1 Medical Examination</td>
                     <td className="px-4 py-3 text-white/80">$250 - $450</td>
-                    <td className="px-4 py-3 text-white/80">Excludes additional tests like ECG ($60) and Audiology ($30) [2] [3] [4]</td>
+                    <td className="px-4 py-3 text-white/80">Excludes additional tests like ECG ($60) and Audiology ($30)   </td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">TC Written Examinations (SAMRA, SARON, INRAT)</td>
                     <td className="px-4 py-3 text-white/80">$105 - $395</td>
-                    <td className="px-4 py-3 text-white/80">Approximately $35 - $131.54 per exam [6]</td>
+                    <td className="px-4 py-3 text-white/80">Approximately $35 - $131.54 per exam </td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Ground School / Exam Prep Courses</td>
@@ -138,8 +138,8 @@ export default function CanadaMilitaryToAirlines() {
               <p>As Canada's largest airline, Air Canada typically seeks pilots with significant flight experience and a strong academic background. For ex-military pilots, key requirements often include:</p>
               <ul>
                 <li><strong>Canadian ATPL</strong> (or ability to obtain one).</li>
-                <li><strong>Minimum 1000 hours fixed-wing flying time</strong> [7].</li>
-                <li><strong>Completion of a university degree or college diploma</strong> [7].</li>
+                <li><strong>Minimum 1000 hours fixed-wing flying time</strong> .</li>
+                <li><strong>Completion of a university degree or college diploma</strong> .</li>
                 <li>Strong multi-crew and instrument flight experience, which RCAF pilots possess in abundance.</li>
                 <li>Excellent communication and leadership skills.</li>
               </ul>
@@ -199,23 +199,23 @@ export default function CanadaMilitaryToAirlines() {
       faqSchema={[
         {
           question: "What is the primary advantage for RCAF pilots converting to a Canadian ATPL?",
-          answer: "The primary advantage is the recognition of military experience and qualifications by Transport Canada. Specifically, active and retired RCAF personnel holding an unrestricted Canadian Forces Instrument Rating in a multi-engine aeroplane (Group 1) may be deemed to have met the ATPL skill requirement, significantly streamlining the flight test portion of the conversion process [1]."
+          answer: "The primary advantage is the recognition of military experience and qualifications by Transport Canada. Specifically, active and retired RCAF personnel holding an unrestricted Canadian Forces Instrument Rating in a multi-engine aeroplane (Group 1) may be deemed to have met the ATPL skill requirement, significantly streamlining the flight test portion of the conversion process ."
         },
         {
           question: "What are the main Transport Canada written exams required for an ATPL?",
-          answer: "The main written examinations for an ATPL are SAMRA (Meteorology, Radio Aids to Navigation and Flight Planning), SARON (Air Law, Aeroplane Operation and Navigation General), and INRAT (Instrument Rating). RCAF pilots must achieve a minimum of 70% on each of these exams [5]."
+          answer: "The main written examinations for an ATPL are SAMRA (Meteorology, Radio Aids to Navigation and Flight Planning), SARON (Air Law, Aeroplane Operation and Navigation General), and INRAT (Instrument Rating). RCAF pilots must achieve a minimum of 70% on each of these exams ."
         },
         {
           question: "How much does a Transport Canada Category 1 Medical cost in 2026?",
-          answer: "As of 2026, the estimated cost for a Transport Canada Category 1 Medical Examination typically ranges from CAD $250 to $450. Additional tests like an ECG or audiology may incur separate fees, usually around $30-$60 each [2] [3] [4]."
+          answer: "As of 2026, the estimated cost for a Transport Canada Category 1 Medical Examination typically ranges from CAD $250 to $450. Additional tests like an ECG or audiology may incur separate fees, usually around $30-$60 each   ."
         },
         {
           question: "Do Canadian airlines actively recruit ex-military pilots?",
-          answer: "Yes, major Canadian airlines like Air Canada and WestJet, along with regional carriers, highly value the experience, discipline, and advanced skills of former military pilots. They are often sought after for their proficiency in complex aircraft and instrument flight operations [7]."
+          answer: "Yes, major Canadian airlines like Air Canada and WestJet, along with regional carriers, highly value the experience, discipline, and advanced skills of former military pilots. They are often sought after for their proficiency in complex aircraft and instrument flight operations ."
         },
         {
           question: "What is the minimum total flight time required for a Canadian ATPL?",
-          answer: "A Canadian ATPL requires a minimum of 1500 hours total flight time, including specific breakdowns for pilot-in-command, cross-country, night, and instrument flight time. RCAF pilots often exceed the total hours but must ensure their logged military time aligns with Transport Canada's specific categorization requirements [1]."
+          answer: "A Canadian ATPL requires a minimum of 1500 hours total flight time, including specific breakdowns for pilot-in-command, cross-country, night, and instrument flight time. RCAF pilots often exceed the total hours but must ensure their logged military time aligns with Transport Canada's specific categorization requirements ."
         }
       ]}
       relatedGuides={[
@@ -223,17 +223,22 @@ export default function CanadaMilitaryToAirlines() {
         { title: "Canadian Pilot Training Costs 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
         { title: "Navigating the Canadian Aviation Job Market", href: "/canada/guides/canada-regional-airlines", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }
 
 /*
 References:
-[1] Transport Canada. (2026, January 7). Standard 421 - Flight Crew Permits, Licences and Ratings - Canadian Aviation Regulations (CARs). Retrieved from https://tc.canada.ca/en/corporate-services/acts-regulations/list-regulations/canadian-aviation-regulations-sor-96-433/standards/standard-421-flight-crew-licences-ratings-canadian-aviation-regulations-cars
-[2] Maple Wings Flight Centre. (n.d.). Aviation Medical Requirements. Retrieved from https://www.maplewingsflight.ca/medicals/
-[3] Reddit. (2024, March 7). Canada category 1 medical exam (COST). Retrieved from https://www.reddit.com/r/flying/comments/1b97ftj/canada_category_1_medical_exam_cost/
-[4] AVCentral. (n.d.). Aviation Medical FAQ — Canada. Retrieved from https://avcentral.ca/aviation-medical-guides/aviation-medical-faq/
-[5] Transport Canada. (2017, August 15). Study and Reference Guide for written examinations for the Airline Transport Pilot Licence - Aeroplane (TP 690). Retrieved from https://tc.canada.ca/en/aviation/publications/study-reference-guide-written-examinations-airline-transport-pilot-licence-aeroplane-tp-690
-[6] Transport Canada - Civil Aviation. (n.d.). Schedule an exam. Retrieved from https://examens-aviation-exams.tc.canada.ca/en/schedule/
-[7] Epic Flight Academy. (2026, January 19). Air Canada Pilot Careers & Salary: A Comprehensive Guide. Retrieved from https://epicflightacademy.com/hiring-requirements-air-canada/
+ Transport Canada. (2026, January 7). Standard 421 - Flight Crew Permits, Licences and Ratings - Canadian Aviation Regulations (CARs). Retrieved from https://tc.canada.ca/en/corporate-services/acts-regulations/list-regulations/canadian-aviation-regulations-sor-96-433/standards/standard-421-flight-crew-licences-ratings-canadian-aviation-regulations-cars
+ Maple Wings Flight Centre. (n.d.). Aviation Medical Requirements. Retrieved from https://www.maplewingsflight.ca/medicals/
+ Reddit. (2024, March 7). Canada category 1 medical exam (COST). Retrieved from https://www.reddit.com/r/flying/comments/1b97ftj/canada_category_1_medical_exam_cost/
+ AVCentral. (n.d.). Aviation Medical FAQ — Canada. Retrieved from https://avcentral.ca/aviation-medical-guides/aviation-medical-faq/
+ Transport Canada. (2017, August 15). Study and Reference Guide for written examinations for the Airline Transport Pilot Licence - Aeroplane (TP 690). Retrieved from https://tc.canada.ca/en/aviation/publications/study-reference-guide-written-examinations-airline-transport-pilot-licence-aeroplane-tp-690
+ Transport Canada - Civil Aviation. (n.d.). Schedule an exam. Retrieved from https://examens-aviation-exams.tc.canada.ca/en/schedule/
+ Epic Flight Academy. (2026, January 19). Air Canada Pilot Careers & Salary: A Comprehensive Guide. Retrieved from https://epicflightacademy.com/hiring-requirements-air-canada/
 */

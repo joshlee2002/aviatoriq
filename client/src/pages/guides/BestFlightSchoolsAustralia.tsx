@@ -147,6 +147,11 @@ export default function BestFlightSchoolsAustralia() {
         { title: "Pilot Training Costs in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
         { title: "Australia Pilot Shortage", href: "/australia/guides/australia-pilot-shortage", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

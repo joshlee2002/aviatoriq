@@ -176,9 +176,9 @@ export default function AirlinePilotSalary() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Simple Flying. "A Look At The Salaries Of UK Airline Pilots In 2026." <em>Aviation News</em>.<br/>
-                [2] Airmappr. "British Airways Pilot Salary Guide 2026." <em>Flight Training Data</em>.<br/>
-                [3] British Airline Pilots' Association (BALPA). "Pilot Pay and Conditions Agreements."
+                 Simple Flying. "A Look At The Salaries Of UK Airline Pilots In 2026." <em>Aviation News</em>.<br/>
+                 Airmappr. "British Airways Pilot Salary Guide 2026." <em>Flight Training Data</em>.<br/>
+                 British Airline Pilots' Association (BALPA). "Pilot Pay and Conditions Agreements."
               </p>
             </>
           ),
@@ -189,6 +189,11 @@ export default function AirlinePilotSalary() {
         { title: "How to Finance Pilot Training UK", href: "/guides/how-to-finance-pilot-training-uk", time: "9 min" },
         { title: "Airline Pilot Interview Guide", href: "/guides/airline-pilot-interview", time: "10 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

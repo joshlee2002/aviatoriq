@@ -130,7 +130,7 @@ export default function AirlineInterviewUSA() {
           content: (
             <div>
               <p className="mb-4 text-white/80">
-                The airline interview process is a rigorous, multi-stage evaluation designed to identify candidates who not only possess the requisite technical skills but also the professional demeanor, decision-making capabilities, and cultural fit essential for a successful career as an airline pilot. While specific steps may vary slightly between carriers, the general progression remains consistent across major US airlines in 2026. Understanding each phase is crucial for effective preparation and ultimately, securing a coveted position.
+                The airline interview process is a rigorous, multi-stage evaluation designed to identify candidates who not only possess the requisite technical skills but also the professional demeanor, decision-making capabilities, and cultural fit essential for a successful career as an airline pilot. While specific steps may vary slightly between carriers, the general progression remains consistent across major US airlines in 2026. Understanding each phase is crucial for effective preparation and securing a coveted position.
               </p>
               <ol className="list-decimal pl-6 mb-4 text-white/80 space-y-4">
                 <li>
@@ -291,6 +291,11 @@ export default function AirlineInterviewUSA() {
           answer: "If you have a past FAA violation or incident, honesty and transparency are paramount. Do not attempt to conceal it, as it will be discovered during the background check. Be prepared to discuss the incident openly, explain what you learned from it, and demonstrate how you have grown as a pilot and professional. Focus on accountability and the corrective actions you've taken to prevent recurrence. Many airlines are more interested in your ability to learn from mistakes than in a flawless record, provided the incident was not egregious."
         }
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

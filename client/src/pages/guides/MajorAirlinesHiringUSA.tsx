@@ -75,7 +75,7 @@ export default function MajorAirlinesHiringUSA() {
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Total (Zero to ATP)</strong></td><td className="px-4 py-3 text-white/80"><strong>$80,000 - $120,000+</strong></td><td className="px-4 py-3 text-white/80"><strong>12-24 months (full-time)</strong></td></tr>
                 </tbody>
               </table>
-              <p><em>Note: These figures are estimates and can fluctuate based on fuel costs, aircraft rental rates, instructor fees, and individual progress. Non-tuition expenses such as medical exams, study materials, and checkride fees can add an additional $5,000 - $10,000.</em> [1] [2]</p>
+              <p><em>Note: These figures are estimates and can fluctuate based on fuel costs, aircraft rental rates, instructor fees, and individual progress. Non-tuition expenses such as medical exams, study materials, and checkride fees can add an additional $5,000 - $10,000.</em>  </p>
             </>
           )
         },
@@ -106,7 +106,7 @@ export default function MajorAirlinesHiringUSA() {
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80"><strong>Frontier Airlines</strong></td><td className="px-4 py-3 text-white/80">Frontier Direct Program</td><td className="px-4 py-3 text-white/80">ATP, 1,500 hours total time, First Class Medical</td></tr>
                 </tbody>
               </table>
-              <p><em>Note: Specific requirements can vary and are subject to change. Always refer to the official airline career pages for the most up-to-date information.</em> [3]</p>
+              <p><em>Note: Specific requirements can vary and are subject to change. Always refer to the official airline career pages for the most up-to-date information.</em> </p>
               <h3>The Importance of a First-Class Medical Certificate</h3>
               <p>To be eligible for an airline pilot position, a First-Class FAA Medical Certificate is mandatory. This certificate ensures pilots meet stringent health and vision standards. It's advisable to obtain this early in your training to identify any potential disqualifying conditions.</p>
             </>
@@ -116,9 +116,9 @@ export default function MajorAirlinesHiringUSA() {
           heading: "References",
           content: (
             <>
-              <p>[1] Epic Flight Academy. (2026). <em>Flight School Cost in 2026: How Much to Become a Pilot?</em> Retrieved from <a href="https://epicflightacademy.com/how-much-does-flight-school-cost/">https://epicflightacademy.com/how-much-does-flight-school-cost/</a></p>
-              <p>[2] ATP Flight School. (2026). <em>How Much to Become an Airline Pilot</em>. Retrieved from <a href="https://atpflightschool.com/become-a-pilot/flight-training/pilot-training-cost.html">https://atpflightschool.com/become-a-pilot/flight-training/pilot-training-cost.html</a></p>
-              <p>[3] ATP Flight School. (2026). <em>Current 2026 Airline Pilot Hiring Announcements</em>. Retrieved from <a href="https://atpflightschool.com/news/current-pilot-hiring-announcements.html">https://atpflightschool.com/news/current-pilot-hiring-announcements.html</a></p>
+              <p> Epic Flight Academy. (2026). <em>Flight School Cost in 2026: How Much to Become a Pilot?</em> Retrieved from <a href="https://epicflightacademy.com/how-much-does-flight-school-cost/">https://epicflightacademy.com/how-much-does-flight-school-cost/</a></p>
+              <p> ATP Flight School. (2026). <em>How Much to Become an Airline Pilot</em>. Retrieved from <a href="https://atpflightschool.com/become-a-pilot/flight-training/pilot-training-cost.html">https://atpflightschool.com/become-a-pilot/flight-training/pilot-training-cost.html</a></p>
+              <p> ATP Flight School. (2026). <em>Current 2026 Airline Pilot Hiring Announcements</em>. Retrieved from <a href="https://atpflightschool.com/news/current-pilot-hiring-announcements.html">https://atpflightschool.com/news/current-pilot-hiring-announcements.html</a></p>
             </>
           )
         }
@@ -134,6 +134,11 @@ export default function MajorAirlinesHiringUSA() {
         { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

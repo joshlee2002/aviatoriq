@@ -142,7 +142,7 @@ export default function FaaMedicalGuide() {
                 ))}
               </ul>
               <p className="mb-4">
-                The process is expensive, time-consuming, and not guaranteed. Many applicants with ADHD history are ultimately granted a Special Issuance, but the process typically takes 6–18 months. If you have a history of ADHD, consult a HIMS AME before doing anything else.
+                The process is expensive, time-consuming, and not guaranteed. Many applicants with ADHD history are granted a Special Issuance, but the process typically takes 6–18 months. If you have a history of ADHD, consult a HIMS AME before doing anything else.
               </p>
               <p className="text-sm p-3 rounded-lg" style={{ background: "rgba(255, 255, 255, 0.5)", border: "1px solid rgba(255, 255, 255, 0.1)", color: "rgba(255, 255, 255, 0.8)" }}>
                 Use our <strong className="text-white">US Medical Condition Lookup</strong> tool to check your specific condition against FAA standards.
@@ -239,6 +239,12 @@ export default function FaaMedicalGuide() {
           answer: "Failing the standard Ishihara colour vision test does not automatically disqualify you. You can take alternative tests (FALANT, Optec 900, or an operational colour vision test). Many colour-blind pilots hold valid FAA medical certificates with a limitation noting they passed via alternative testing.",
         },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Federal Aviation Administration (CAA)" },
+    { name: "EASA Part-MED", url: "https://www.easa.europa.eu/en/document-library/regulations/commission-regulation-eu-no-11782011" },
+    { name: "FAA" },
+    { name: "CASA" },
+  ]}/>
   );
 }

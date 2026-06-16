@@ -122,6 +122,11 @@ export default function EuropePilotShortage() {
         { title: "Pilot Training Costs 2026: A Global Breakdown", href: "/guides/pilot-training-costs", time: "12 min" },
         { title: "EASA vs. FAA: Choosing Your Pilot License Path", href: "/europe/guides/easa-atpl-requirements", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "EASA" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

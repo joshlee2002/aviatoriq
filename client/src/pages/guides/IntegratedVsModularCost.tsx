@@ -183,6 +183,11 @@ export default function IntegratedVsModularCost() {
         { title: "Pilot Training Costs UK", href: "/guides/pilot-training-costs", time: "8 min" },
         { title: "Best Flight Schools UK 2026", href: "/guides/best-flight-schools-uk-2026", time: "12 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

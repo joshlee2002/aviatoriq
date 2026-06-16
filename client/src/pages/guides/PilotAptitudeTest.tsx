@@ -205,6 +205,11 @@ export default function PilotAptitudeTest() {
         },
       ]}
     scopeBanner={<><GuideScopeBanner scope="This guide focuses on UK airline aptitude tests (Pilapt, Compass, etc.)." usHref="/us/guides/pilot-aptitude-test-usa" usLabel="View USA aptitude tests →" /></>}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

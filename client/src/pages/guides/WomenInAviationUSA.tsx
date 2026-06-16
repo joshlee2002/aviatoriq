@@ -42,7 +42,7 @@ export default function WomenInAviationUSA() {
                 Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <p>
-                According to the Federal Aviation Administration (FAA) Civil Airmen Statistics, women currently make up approximately 6% of all Commercial and Airline Transport Pilot (ATP) certificate holders in the United States [1]. While this percentage remains low, the trend line is positive. The number of female student pilots has been growing at a faster rate than the overall average over the last five years, indicating that the pipeline is beginning to widen.
+                According to the Federal Aviation Administration (FAA) Civil Airmen Statistics, women currently make up approximately 6% of all Commercial and Airline Transport Pilot (ATP) certificate holders in the United States . While this percentage remains low, the trend line is positive. The number of female student pilots has been growing at a faster rate than the overall average over the last five years, indicating that the pipeline is beginning to widen.
               </p>
               <p>
                 This growth is not accidental. It is the result of concerted efforts by industry organizations, flight schools, and major airlines to remove barriers to entry, provide financial support, and increase the visibility of female role models in aviation.
@@ -162,9 +162,9 @@ export default function WomenInAviationUSA() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Federal Aviation Administration (FAA). "U.S. Civil Airmen Statistics." <em>FAA Data & Research</em>, 2025.<br/>
-                [2] Women in Aviation International (WAI). "WAI2027 Scholarship Cycle." <em>WAI Official Website</em>.<br/>
-                [3] United Airlines. "United Aviate Academy Diversity Commitment." <em>United Aviate Portal</em>.
+                 Federal Aviation Administration (FAA). "U.S. Civil Airmen Statistics." <em>FAA Data & Research</em>, 2025.<br/>
+                 Women in Aviation International (WAI). "WAI2027 Scholarship Cycle." <em>WAI Official Website</em>.<br/>
+                 United Airlines. "United Aviate Academy Diversity Commitment." <em>United Aviate Portal</em>.
               </p>
             </>
           ),
@@ -176,6 +176,11 @@ export default function WomenInAviationUSA() {
         { title: "United Aviate Program", href: "/us/guides/united-aviate-program", time: "9 min" },
         { title: "US Pilot Shortage 2026", href: "/us/guides/us-pilot-shortage-2026", time: "8 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

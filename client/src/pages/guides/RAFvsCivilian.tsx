@@ -156,6 +156,11 @@ export default function RAFvsCivilian() {
         { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
         { title: "Pilot Training Costs UK", href: "/guides/pilot-training-costs", time: "8 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

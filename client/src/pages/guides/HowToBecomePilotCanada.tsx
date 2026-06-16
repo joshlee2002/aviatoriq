@@ -29,7 +29,7 @@ export default function HowToBecomePilotCanada() {
                 The Canadian aviation market is currently experiencing one of its most dynamic periods in history. The pilot shortage that began post-pandemic has led to unprecedented movement across the industry, from flight instructors moving to regional airlines (like Jazz, Porter, and Encore) much faster than in previous decades, to regional pilots upgrading to mainline carriers like Air Canada and WestJet.
               </p>
               <p>
-                Transport Canada's recent regulatory changes to flight and duty times have also forced airlines to hire more pilots to operate the same schedules, further increasing demand [1]. While the market is cyclical, the underlying demographics — specifically the retirement of senior captains — suggest strong hiring will continue through the late 2020s.
+                Transport Canada's recent regulatory changes to flight and duty times have also forced airlines to hire more pilots to operate the same schedules, further increasing demand . While the market is cyclical, the underlying demographics — specifically the retirement of senior captains — suggest strong hiring will continue through the late 2020s.
               </p>
               <p>
                 However, becoming a pilot in Canada requires a significant financial and personal commitment. Training typically costs CAD $80,000 to $130,000, and unlike Europe where low-hour cadets can jump straight into an Airbus A320, the Canadian system heavily relies on "paying your dues" by building hours in general aviation, flight instructing, or flying in Canada's vast northern regions before reaching the airlines.
@@ -115,7 +115,7 @@ export default function HowToBecomePilotCanada() {
               </div>
 
               <p>
-                <strong>Private Pilot Licence (PPL):</strong> Your foundation. It allows you to fly single-engine aircraft for non-commercial purposes. While Transport Canada requires 45 hours minimum, the national average is closer to 65–75 hours [2]. You must pass the PPAER written exam and a flight test.
+                <strong>Private Pilot Licence (PPL):</strong> Your foundation. It allows you to fly single-engine aircraft for non-commercial purposes. While Transport Canada requires 45 hours minimum, the national average is closer to 65–75 hours . You must pass the PPAER written exam and a flight test.
               </p>
               <p>
                 <strong>Commercial Pilot Licence (CPL):</strong> Allows you to be paid to fly. Requires 200 hours total flight time. Because the PPL finishes at ~70 hours, you must "time build" for about 100 hours. You must pass the CPAER written exam and a commercial flight test.
@@ -131,7 +131,7 @@ export default function HowToBecomePilotCanada() {
           content: (
             <>
               <p>
-                To become a Captain at a regional airline or a First Officer at a major airline like Air Canada, you need an Airline Transport Pilot Licence (ATPL). Transport Canada requires 1,500 total flight hours (including 250 hours PIC) and passing the SAMRA and SARON written exams to issue an ATPL [3].
+                To become a Captain at a regional airline or a First Officer at a major airline like Air Canada, you need an Airline Transport Pilot Licence (ATPL). Transport Canada requires 1,500 total flight hours (including 250 hours PIC) and passing the SAMRA and SARON written exams to issue an ATPL .
               </p>
               <p>
                 Since you graduate with your CPL at 200 hours, you must find a flying job to build the remaining 1,300 hours. This is the hardest part of a Canadian pilot's career. Common pathways include:
@@ -169,9 +169,9 @@ export default function HowToBecomePilotCanada() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Transport Canada. "Flight Crew Fatigue Management - FAQ." <em>Government of Canada</em>.<br/>
-                [2] Transport Canada. "Standard 421 - Flight Crew Permits, Licences and Ratings." <em>Canadian Aviation Regulations (CARs)</em>.<br/>
-                [3] Level Flight. "The True Cost of Pilot Training in Canada." <em>Aviation Training Resources</em>.
+                 Transport Canada. "Flight Crew Fatigue Management - FAQ." <em>Government of Canada</em>.<br/>
+                 Transport Canada. "Standard 421 - Flight Crew Permits, Licences and Ratings." <em>Canadian Aviation Regulations (CARs)</em>.<br/>
+                 Level Flight. "The True Cost of Pilot Training in Canada." <em>Aviation Training Resources</em>.
               </p>
             </>
           ),
@@ -182,6 +182,11 @@ export default function HowToBecomePilotCanada() {
         { title: "Pilot Training Timeline: How Long Does It Take?", href: "/guides/training-timeline", time: "5 min" },
         { title: "Am I Ready to Start Pilot Training?", href: "/guides/am-i-ready-to-start-pilot-training", time: "7 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

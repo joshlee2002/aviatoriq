@@ -217,7 +217,7 @@ export default function SaCplRequirements() {
           heading: "Conclusion: Your Future in South African Aviation",
           content: (
             <>
-              <p>Obtaining a Commercial Pilot License in South Africa is a significant undertaking that demands dedication, financial investment, and a passion for aviation. By understanding the SACAA's comprehensive requirements, meticulously planning your training, and diligently preparing for both theoretical and practical examinations, you can successfully navigate this challenging yet ultimately fulfilling journey.</p>
+              <p>Obtaining a Commercial Pilot License in South Africa is a significant undertaking that demands dedication, financial investment, and a passion for aviation. By understanding the SACAA's comprehensive requirements, meticulously planning your training, and diligently preparing for both theoretical and practical examinations, you can successfully navigate this challenging yet fulfilling journey.</p>
               <p>The South African aviation sector offers a vibrant environment for professional growth. With a CPL, doors open to diverse roles, from instructing the next generation of pilots to flying for established airlines. The key to success lies in choosing a reputable flight school, maintaining a high standard of discipline, and continuously striving for excellence in all aspects of your training and career.</p>
             </>
           )
@@ -253,6 +253,11 @@ export default function SaCplRequirements() {
         { title: "How to Become a Pilot in South Africa", href: "/south-africa/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs South Africa 2026", href: "/south-africa/guides/pilot-training-costs", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

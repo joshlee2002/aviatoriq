@@ -155,6 +155,11 @@ export default function TypeRating() {
         { title: "Integrated vs Modular ATPL", href: "/guides/integrated-vs-modular", time: "9 min" },
         { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "13 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

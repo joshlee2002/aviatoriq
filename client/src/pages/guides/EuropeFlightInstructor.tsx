@@ -38,7 +38,7 @@ export default function EuropeFlightInstructor() {
               </ul>
               <h3>Flight Experience and Licence Holdings:</h3>
               <ul>
-                <li><strong>Licence:</strong> Hold at least a Commercial Pilot Licence (CPL(A)) or a Private Pilot Licence (PPL(A)) with the theoretical knowledge examination for the CPL(A) successfully passed. It is important to note that passing the CPL theoretical knowledge examination for FI purposes does not grant a CPL itself.</li>
+                <li><strong>Licence:</strong> Hold at least a Commercial Pilot Licence (CPL(A)) or a Private Pilot Licence (PPL(A)) with the theoretical knowledge examination for the CPL(A) successfully passed. passing the CPL theoretical knowledge examination for FI purposes does not grant a CPL itself.</li>
                 <li><strong>Total Flight Time:</strong> A minimum of 200 hours of total flight time on aeroplanes or TMGs (Touring Motor Gliders), with at least 150 hours as Pilot-in-Command (PIC).</li>
                 <li><strong>Instrument Flight Instruction:</strong> Have received at least 10 hours of instrument flight instruction on aeroplanes. A maximum of 5 hours of this can be conducted in an FSTD (Flight Simulation Training Device).</li>
                 <li><strong>VFR Cross-Country Flight:</strong> Completed 20 hours of VFR (Visual Flight Rules) cross-country flight on aeroplanes as PIC.</li>
@@ -150,6 +150,11 @@ export default function EuropeFlightInstructor() {
         { title: "How to Become a Pilot in Europe", href: "/europe/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs Europe 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "EASA" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

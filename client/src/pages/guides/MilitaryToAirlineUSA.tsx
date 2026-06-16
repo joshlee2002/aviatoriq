@@ -143,6 +143,11 @@ export default function MilitaryToAirlineUSA() {
         { title: "ATP Certificate USA", href: "/us/guides/atp-certificate-usa", time: "10 min" },
         { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "12 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

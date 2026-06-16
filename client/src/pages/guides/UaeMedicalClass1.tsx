@@ -30,9 +30,9 @@ export default function UaeMedicalClass1() {
           heading: "2. General Medical Requirements and Examination Process",
           content: (
             <>
-              <p>Applicants for a GCAA Class 1 Medical Certificate must be free from any abnormality, active disease, injury sequelae, or medication side effects that could interfere with safe flight operations [1]. The examination process is comprehensive, involving a thorough review of your medical history and a series of physical and diagnostic tests.</p>
-              <p>A standard 12-lead resting electrocardiogram (ECG) is required at the initial examination, then periodically based on age: every 5 years until age 30, every 2 years until age 40, and annually thereafter. Blood tests for serum lipids (including cholesterol) are required initially, at age 40, and every 5 years subsequently. HBA1c is also required at age 40 and every 5 years thereafter for Class 1 applicants [1].</p>
-              <p>Blood pressure must be within normal limits, with consistent readings exceeding 160 mmHg systolic and/or 95 mmHg diastolic leading to an 'unfit' assessment. The initiation of blood pressure medication requires a temporary suspension of the medical certificate to ensure no significant side effects [1].</p>
+              <p>Applicants for a GCAA Class 1 Medical Certificate must be free from any abnormality, active disease, injury sequelae, or medication side effects that could interfere with safe flight operations . The examination process is comprehensive, involving a thorough review of your medical history and a series of physical and diagnostic tests.</p>
+              <p>A standard 12-lead resting electrocardiogram (ECG) is required at the initial examination, then periodically based on age: every 5 years until age 30, every 2 years until age 40, and annually thereafter. Blood tests for serum lipids (including cholesterol) are required initially, at age 40, and every 5 years subsequently. HBA1c is also required at age 40 and every 5 years thereafter for Class 1 applicants .</p>
+              <p>Blood pressure must be within normal limits, with consistent readings exceeding 160 mmHg systolic and/or 95 mmHg diastolic leading to an 'unfit' assessment. The initiation of blood pressure medication requires a temporary suspension of the medical certificate to ensure no significant side effects .</p>
               <h3>Key Examination Components:</h3>
               <ul>
                 <li>Comprehensive medical history review</li>
@@ -53,7 +53,7 @@ export default function UaeMedicalClass1() {
             <>
               <p>The GCAA Civil Aviation Regulations (CAR-MED) outlines specific requirements for each bodily system. Understanding these details is crucial for preparation.</p>
               <h4>Cardiovascular System (MED.B.010)</h4>
-              <p>Beyond the general ECG and blood pressure checks, conditions such as aneurysms, significant heart valve abnormalities, or a history of heart/lung transplantation will result in an 'unfit' assessment for Class 1. Certain conditions like peripheral arterial disease or specific rhythm disturbances require referral to the licensing authority for further cardiological evaluation [1].</p>
+              <p>Beyond the general ECG and blood pressure checks, conditions such as aneurysms, significant heart valve abnormalities, or a history of heart/lung transplantation will result in an 'unfit' assessment for Class 1. Certain conditions like peripheral arterial disease or specific rhythm disturbances require referral to the licensing authority for further cardiological evaluation .</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
@@ -97,7 +97,7 @@ export default function UaeMedicalClass1() {
               </table>
 
               <h4>Respiratory System (MED.B.015)</h4>
-              <p>Significant impairment of pulmonary function will lead to an 'unfit' assessment. Applicants with a history of asthma requiring medication, active inflammatory disease, sarcoidosis, pneumothorax, sleep apnoea syndrome, or major thoracic surgery require detailed respiratory evaluation. For asthma, stability, satisfactory pulmonary function tests, and compatible medication are key. Systemic steroids are generally disqualifying [1].</p>
+              <p>Significant impairment of pulmonary function will lead to an 'unfit' assessment. Applicants with a history of asthma requiring medication, active inflammatory disease, sarcoidosis, pneumothorax, sleep apnoea syndrome, or major thoracic surgery require detailed respiratory evaluation. For asthma, stability, satisfactory pulmonary function tests, and compatible medication are key. Systemic steroids are generally disqualifying .</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
@@ -141,7 +141,7 @@ export default function UaeMedicalClass1() {
               </table>
 
               <h4>Visual System (MED.B.070)</h4>
-              <p>Distant visual acuity, with or without correction, must be 6/9 (0.7) or better in each eye separately, and 6/6 (1.0) or better with both eyes. Near vision requires reading an N5 chart at 30-50 cm and an N14 chart at 100 cm. Normal fields of vision and binocular function are mandatory. Refractive error limits apply: hypermetropia not exceeding +5.0 dioptres, myopia not exceeding –6.0 dioptres, astigmatism not exceeding 2.0 dioptres, and anisometropia not exceeding 2.0 dioptres for initial applicants [1].</p>
+              <p>Distant visual acuity, with or without correction, must be 6/9 (0.7) or better in each eye separately, and 6/6 (1.0) or better with both eyes. Near vision requires reading an N5 chart at 30-50 cm and an N14 chart at 100 cm. Normal fields of vision and binocular function are mandatory. Refractive error limits apply: hypermetropia not exceeding +5.0 dioptres, myopia not exceeding –6.0 dioptres, astigmatism not exceeding 2.0 dioptres, and anisometropia not exceeding 2.0 dioptres for initial applicants .</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
@@ -190,7 +190,7 @@ export default function UaeMedicalClass1() {
               </table>
 
               <h4>Colour Vision (MED.B.075)</h4>
-              <p>Applicants must demonstrate the ability to perceive colors necessary for safe duties. The Ishihara test is the primary screening method. Passing requires identifying all 24 plates without error. Failure necessitates GCAA-approved advanced color perception testing (e.g., CAD test) to confirm 'color safe' status. Failure of advanced testing results in an 'unfit' assessment for Class 1 [1].</p>
+              <p>Applicants must demonstrate the ability to perceive colors necessary for safe duties. The Ishihara test is the primary screening method. Passing requires identifying all 24 plates without error. Failure necessitates GCAA-approved advanced color perception testing (e.g., CAD test) to confirm 'color safe' status. Failure of advanced testing results in an 'unfit' assessment for Class 1 .</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
@@ -214,7 +214,7 @@ export default function UaeMedicalClass1() {
               </table>
 
               <h4>Otorhinolaryngology (ENT) (MED.B.080)</h4>
-              <p>Normal hearing is essential. Audiometry tests are conducted to ensure hearing thresholds meet specific standards. Conditions affecting balance, or chronic nasal/throat issues that could impair communication or cause incapacitation, are carefully evaluated [1].</p>
+              <p>Normal hearing is essential. Audiometry tests are conducted to ensure hearing thresholds meet specific standards. Conditions affecting balance, or chronic nasal/throat issues that could impair communication or cause incapacitation, are carefully evaluated .</p>
               <p>Other systems such as Metabolic and Endocrine, Haematology, Genitourinary, Neurological, Psychiatric, Oncology, and Dermatology also have specific criteria outlined in the CAR-MED document. Any significant condition in these areas will require specialist evaluation and GCAA review.</p>
             </>
           ),
@@ -223,7 +223,7 @@ export default function UaeMedicalClass1() {
           heading: "4. Validity, Revalidation, and Renewal of Your Medical Certificate",
           content: (
             <>
-              <p>The validity period of a GCAA Class 1 Medical Certificate depends on the pilot's age and the type of operation. Generally, for pilots under 40 engaged in multi-pilot operations, the certificate is valid for 12 months. For single-pilot commercial operations, it's also 12 months. For pilots aged 40 and above, the validity period is typically reduced to 6 months [1].</p>
+              <p>The validity period of a GCAA Class 1 Medical Certificate depends on the pilot's age and the type of operation. Generally, for pilots under 40 engaged in multi-pilot operations, the certificate is valid for 12 months. For single-pilot commercial operations, it's also 12 months. For pilots aged 40 and above, the validity period is typically reduced to 6 months .</p>
               <p>Revalidation involves undergoing a periodic medical examination before the current certificate expires. Renewal is for certificates that have already expired. The requirements for both are similar to the initial examination, though some tests may be less frequent. It is crucial to manage your revalidation/renewal schedule diligently to avoid any lapse in your medical certificate, which would prevent you from exercising your pilot privileges.</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
@@ -317,11 +317,17 @@ export default function UaeMedicalClass1() {
         { title: "EASA Class 1 Medical Requirements", href: "/europe/guides/easa-medical-class-1", time: "14 min" },
         { title: "FAA Class 1 Medical Requirements", href: "/us/guides/faa-medical-class-1", time: "16 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-MED", url: "https://www.easa.europa.eu/en/document-library/regulations/commission-regulation-eu-no-11782011" },
+    { name: "FAA" },
+    { name: "CASA" },
+  ]}/>
   );
 }
 
 /*
 References:
-[1] General Civil Aviation Authority (GCAA). (n.d.). CAR-MED - Medical Provisions (Issue 01). Retrieved from https://www.gcaa.gov.ae/en/epublication/EPublications/Civil%20Aviation%20Regulations%20(CARs)/CAR%20II%20-%20LICENSING%20AND%20TRAINING%20ORGANISATION%20REGULATIONS/CAR-MED%20-%20MEDICAL%20PROVISIONS%20-%20ISSUE%2001.pdf
+ General Civil Aviation Authority (GCAA). (n.d.). CAR-MED - Medical Provisions (Issue 01). Retrieved from https://www.gcaa.gov.ae/en/epublication/EPublications/Civil%20Aviation%20Regulations%20(CARs)/CAR%20II%20-%20LICENSING%20AND%20TRAINING%20ORGANISATION%20REGULATIONS/CAR-MED%20-%20MEDICAL%20PROVISIONS%20-%20ISSUE%2001.pdf
 */

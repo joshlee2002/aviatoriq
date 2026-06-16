@@ -479,7 +479,12 @@ const HowToBecomePilot = () => {
         },
       ]}
     scopeBanner={<><GuideScopeBanner scope="This guide covers UK pilot training (CAA/EASA regulations, UK flight schools, and UK-specific routes)." usHref="/us/guides/how-to-become-a-pilot" usLabel="View USA version →" globalHref="/schools" globalLabel="Browse global schools →" /></>}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 };
 

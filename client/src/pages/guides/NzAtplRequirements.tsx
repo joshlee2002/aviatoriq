@@ -311,7 +311,7 @@ export default function NzAtplRequirements() {
                 </li>
               </ul>
               <p>
-                It is important to note that New Zealand airlines typically prioritize candidates who are New Zealand citizens or permanent residents due to immigration and work visa requirements. Networking within the industry, maintaining a pristine flying record, and continuous professional development are key to securing desirable positions.
+                New Zealand airlines typically prioritize candidates who are New Zealand citizens or permanent residents due to immigration and work visa requirements. Networking within the industry, maintaining a pristine flying record, and continuous professional development are key to securing desirable positions.
               </p>
             </>
           )
@@ -361,6 +361,11 @@ export default function NzAtplRequirements() {
         { title: "Pilot Training Costs 2026: A Global Overview", href: "/guides/pilot-training-costs", time: "12 min" },
         { title: "Understanding the Class 1 Medical for Pilots", href: "/guides/class-1-medical", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

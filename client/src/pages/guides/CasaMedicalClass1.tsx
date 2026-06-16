@@ -172,7 +172,7 @@ export default function CasaMedicalClass1() {
                 </li>
               </ul>
               <p>
-                It is important to note that CASA's approach is to assess the individual's fitness to fly, not just the presence of a condition. In many cases, with appropriate management, treatment, and specialist reports, a medical certificate can still be issued, sometimes with specific conditions or limitations.
+                CASA's approach is to assess the individual's fitness to fly, not just the presence of a condition. In many cases, with appropriate management, treatment, and specialist reports, a medical certificate can still be issued, sometimes with specific conditions or limitations.
               </p>
             </>
           )
@@ -235,6 +235,12 @@ export default function CasaMedicalClass1() {
         { title: "Pilot Training Costs in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
         { title: "Understanding the CASA Class 2 Medical Certificate", href: "/australia/guides/casa-medical-class-1", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Safety Authority (CAA)" },
+    { name: "EASA Part-MED", url: "https://www.easa.europa.eu/en/document-library/regulations/commission-regulation-eu-no-11782011" },
+    { name: "FAA" },
+    { name: "CASA" },
+  ]}/>
   );
 }

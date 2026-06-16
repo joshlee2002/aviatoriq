@@ -63,7 +63,7 @@ export default function AustraliaCadetPrograms() {
                 <li><strong>Overview:</strong> Learn To Fly Melbourne offers a cadet program that guarantees job placement upon completion. It's designed for individuals with minimal or no flying experience, leading to a Commercial Pilot Licence (CPL) and Flight Instructor Rating (FIR).</li>
                 <li><strong>Guaranteed Employment:</strong> Graduating cadets are guaranteed a Flight Instructor position and the opportunity to gain at least 250 instructional flight hours.</li>
                 <li><strong>Training:</strong> The program includes a 60-week Diploma of Aviation (Commercial Pilot Licence - Aeroplane) AVI50222, followed by Flight Instructor Rating (FIR) training. The total estimated cost is approximately AUD$118,000.</li>
-                <li><strong>Career Progression:</strong> Offers pathways to Grade 2/Grade 1 Flight Instructor, various training endorsements, Flight Examiner, and ultimately, airline pilot positions.</li>
+                <li><strong>Career Progression:</strong> Offers pathways to Grade 2/Grade 1 Flight Instructor, various training endorsements, Flight Examiner, and airline pilot positions.</li>
               </ul>
             </>
           )
@@ -144,6 +144,11 @@ export default function AustraliaCadetPrograms() {
         { title: "How to Become a Pilot", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

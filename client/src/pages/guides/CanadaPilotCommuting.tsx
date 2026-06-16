@@ -288,7 +288,7 @@ export default function CanadaPilotCommuting() {
                 </li>
               </ul>
               <p>
-                Ultimately, successful pilot commuting in Canada will continue to hinge on a pilot's ability to adapt, plan meticulously, and prioritize safety and personal well-being. It is a demanding but manageable aspect of a rewarding career in aviation.
+                successful pilot commuting in Canada will continue to hinge on a pilot's ability to adapt, plan meticulously, and prioritize safety and personal well-being. It is a demanding but manageable aspect of a rewarding career in aviation.
               </p>
             </>
           )
@@ -325,6 +325,11 @@ export default function CanadaPilotCommuting() {
         { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
         { title: "Fatigue Risk Management for Canadian Pilots", href: "/canada/guides/canada-pilot-commuting", time: "10 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

@@ -132,6 +132,11 @@ export default function PilotCvGuideUSA() {
         { title: "Pilot Aptitude Test USA", href: "/us/guides/pilot-aptitude-test-usa", time: "10 min" },
         { title: "US Pilot Career Outlook", href: "/us/guides/us-pilot-career-outlook", time: "8 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

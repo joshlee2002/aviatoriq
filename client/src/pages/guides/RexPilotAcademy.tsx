@@ -179,6 +179,11 @@ export default function RexPilotAcademy() {
         { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" },
         { title: "CASA Regulations for Aspiring Pilots", href: "/australia/guides/casa-cpl-requirements", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

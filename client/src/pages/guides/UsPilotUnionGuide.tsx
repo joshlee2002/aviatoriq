@@ -385,7 +385,7 @@ export default function UsPilotUnionGuide() {
       faqSchema={[
         { question: "What is the primary difference between FAA Part 61 and Part 141 training?", answer: "Part 61 offers flexible, self-paced training, often requiring more flight hours. Part 141 is a structured, FAA-approved curriculum, typically found in academies, which can lead to certificates with fewer minimum hours but demands a more rigorous schedule." },
         { question: "How much does it cost to become an airline pilot in the US in 2026?", answer: "The total estimated cost to go from no experience to an Airline Transport Pilot (ATP) certificate in 2026 can range from $50,000 to over $100,000, depending on the chosen flight school, training pace, and aircraft used." },
-        { question: "Which FAA medical certificate do I need to become an airline pilot?", answer: "To become an airline pilot, you will ultimately need a First-Class FAA Medical Certificate. It is advisable to obtain this at the beginning of your training to ensure you meet all health requirements." },
+        { question: "Which FAA medical certificate do I need to become an airline pilot?", answer: "To become an airline pilot, you will need a First-Class FAA Medical Certificate. It is advisable to obtain this at the beginning of your training to ensure you meet all health requirements." },
         { question: "What are the major airlines hiring pilots in the US in 2026?", answer: "Major US airlines include American Airlines, Delta Air Lines, United Airlines, and Southwest Airlines. Many pilots begin their careers at regional airlines such as Envoy Air, Endeavor Air, or SkyWest Airlines before transitioning to major carriers." },
         { question: "Are there financing options available for pilot training?", answer: "Yes, financing options include federal and private student loans, aviation-specific scholarships, airline cadet programs, and GI Bill benefits for eligible veterans. Thorough research and financial planning are essential." },
       ]}
@@ -393,6 +393,11 @@ export default function UsPilotUnionGuide() {
         { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

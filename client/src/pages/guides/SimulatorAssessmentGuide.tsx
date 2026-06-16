@@ -120,8 +120,8 @@ export default function SimulatorAssessmentGuide() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Airmappr. "Simulator Assessment Guide: What Airlines Test." <em>Career Resources</em>.<br/>
-                [2] PPRuNe Forums. "The simulator assessment test as part of airline interview." <em>Professional Pilot Discussions</em>.
+                 Airmappr. "Simulator Assessment Guide: What Airlines Test." <em>Career Resources</em>.<br/>
+                 PPRuNe Forums. "The simulator assessment test as part of airline interview." <em>Professional Pilot Discussions</em>.
               </p>
             </>
           ),
@@ -132,6 +132,11 @@ export default function SimulatorAssessmentGuide() {
         { title: "Pilot Aptitude Test Preparation", href: "/guides/pilot-aptitude-test-uk", time: "10 min" },
         { title: "Type Rating: What It Costs", href: "/guides/pilot-type-rating-uk", time: "11 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

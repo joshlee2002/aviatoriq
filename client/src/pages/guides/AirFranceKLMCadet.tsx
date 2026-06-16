@@ -244,6 +244,11 @@ export default function AirFranceKLMCadet() {
         { title: "EASA Pilot Training Costs 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" },
         { title: "The European Pilot Job Market Outlook 2026", href: "/europe/guides/europe-pilot-shortage", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

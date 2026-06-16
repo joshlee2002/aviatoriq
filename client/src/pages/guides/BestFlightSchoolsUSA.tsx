@@ -335,11 +335,11 @@ export default function BestFlightSchoolsUSA() {
           content: (
             <>
               <p className="text-xs text-white/50">
-                [1] ATP Flight School. "Pilot Training Cost." <em>atpflightschool.com/become-a-pilot/flight-training/pilot-training-cost.html</em>. Accessed June 2026.<br/>
-                [2] Epic Flight Academy. "How Much Does Flight School Cost?" <em>epicflightacademy.com/how-much-does-flight-school-cost/</em>. Updated May 2026.<br/>
-                [3] Embry-Riddle Aeronautical University. "Flight Training Fees." <em>erau.edu</em>. Accessed June 2026.<br/>
-                [4] Federal Aviation Administration. "Part 141 vs Part 61." <em>faa.gov</em>. Accessed June 2026.<br/>
-                [5] Delta Air Lines. "Propel Pilot Career Path Program." <em>delta.com/us/en/careers/pilots/propel</em>. Accessed June 2026.
+                 ATP Flight School. "Pilot Training Cost." <em>atpflightschool.com/become-a-pilot/flight-training/pilot-training-cost.html</em>. Accessed June 2026.<br/>
+                 Epic Flight Academy. "How Much Does Flight School Cost?" <em>epicflightacademy.com/how-much-does-flight-school-cost/</em>. Updated May 2026.<br/>
+                 Embry-Riddle Aeronautical University. "Flight Training Fees." <em>erau.edu</em>. Accessed June 2026.<br/>
+                 Federal Aviation Administration. "Part 141 vs Part 61." <em>faa.gov</em>. Accessed June 2026.<br/>
+                 Delta Air Lines. "Propel Pilot Career Path Program." <em>delta.com/us/en/careers/pilots/propel</em>. Accessed June 2026.
               </p>
             </>
           ),
@@ -351,6 +351,11 @@ export default function BestFlightSchoolsUSA() {
         { title: "US Airline Cadet Programmes 2026", href: "/us/guides/us-cadet-programs", time: "11 min" },
         { title: "How to Fund Pilot Training in the USA", href: "/us/guides/how-to-fund-pilot-training-usa", time: "9 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

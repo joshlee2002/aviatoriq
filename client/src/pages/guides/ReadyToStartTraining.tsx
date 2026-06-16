@@ -171,6 +171,11 @@ export default function ReadyToStartTraining() {
         { title: "Class 1 Medical Guide", href: "/guides/class-1-medical", time: "5 min" },
         { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "13 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

@@ -129,6 +129,11 @@ export default function AmITooOld() {
         { title: "Class 1 Medical Guide", href: "/guides/class-1-medical", time: "5 min" },
         { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

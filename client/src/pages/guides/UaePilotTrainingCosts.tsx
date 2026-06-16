@@ -155,6 +155,11 @@ export default function UaePilotTrainingCosts() {
         { title: "How to Become a Pilot in the UAE", href: "/uae/guides/uae-pilot-training-costs", time: "15 min" },
         { title: "GCAA Pilot License Requirements 2026", href: "/uae/guides/uae-pilot-training-costs", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "GCAA UAE" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

@@ -187,6 +187,12 @@ export default function EasaMedicalClass1() {
         { title: "How to Become a Pilot", href: "/europe/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-MED", url: "https://www.easa.europa.eu/en/document-library/regulations/commission-regulation-eu-no-11782011" },
+    { name: "FAA" },
+    { name: "CASA" },
+  ]}/>
   );
 }

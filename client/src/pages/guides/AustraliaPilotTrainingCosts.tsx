@@ -31,7 +31,7 @@ export default function AustraliaPilotTrainingCosts() {
           heading: "Understanding Pilot Licences and Training Pathways",
           content: (
             <>
-              <p>The path to becoming a commercial pilot in Australia is structured through a progression of licenses, each building upon the last. The primary licenses include the Recreational Pilot Licence (RPL), Private Pilot Licence (PPL), Commercial Pilot Licence (CPL), and ultimately, the Air Transport Pilot Licence (ATPL). Additionally, various ratings such as Instrument Rating (IR) and Multi-Engine Rating (ME) are crucial for airline operations.</p>
+              <p>The path to becoming a commercial pilot in Australia is structured through a progression of licenses, each building upon the last. The primary licenses include the Recreational Pilot Licence (RPL), Private Pilot Licence (PPL), Commercial Pilot Licence (CPL), and the Air Transport Pilot Licence (ATPL). Additionally, various ratings such as Instrument Rating (IR) and Multi-Engine Rating (ME) are crucial for airline operations.</p>
               <p>Training can be undertaken via two main pathways: <strong>Modular</strong> or <strong>Integrated</strong>. Modular training allows students to complete each license and rating separately, often at their own pace, which can be more flexible but potentially longer. Integrated training, typically offered by larger flight schools or universities, is a full-time, structured program designed to take a student from zero experience to a commercial pilot with a 'frozen' ATPL in a shorter timeframe. While often more intensive, integrated courses can sometimes offer cost efficiencies and stronger industry connections.</p>
               <h3>Key Licences and Their Purpose:</h3>
               <ul>
@@ -253,6 +253,11 @@ export default function AustraliaPilotTrainingCosts() {
         { title: "Best Flight Schools in Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "10 min" },
         { title: "CASA Pilot Licence Requirements Explained", href: "/australia/guides/casa-cpl-requirements", time: "8 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

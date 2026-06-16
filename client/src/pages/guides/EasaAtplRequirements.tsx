@@ -493,6 +493,11 @@ export default function EasaAtplRequirements() {
         { title: "How to Become a Pilot", href: "/europe/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs 2026", href: "/europe/guides/pilot-training-costs", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

@@ -26,7 +26,7 @@ export default function WomenInAviation() {
           content: (
             <>
               <p>
-                Progress is being made, but the numbers remain stark. Women represent approximately 5% of commercial pilots in the UK. The Civil Aviation Authority's most recent data shows that 301 pilot licences were issued to women in 2023, up from 239 in 2019 — a meaningful increase, but still a tiny fraction of the total [1].
+                Progress is being made, but the numbers remain stark. Women represent approximately 5% of commercial pilots in the UK. The Civil Aviation Authority's most recent data shows that 301 pilot licences were issued to women in 2023, up from 239 in 2019 — a meaningful increase, but still a tiny fraction of the total .
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
@@ -121,7 +121,7 @@ export default function WomenInAviation() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] UK Civil Aviation Authority (CAA). "UK aviation industry sees highest number of licences issued to women." <em>CAA Newsroom, July 2024</em>.
+                 UK Civil Aviation Authority (CAA). "UK aviation industry sees highest number of licences issued to women." <em>CAA Newsroom, July 2024</em>.
               </p>
             </>
           ),
@@ -132,6 +132,11 @@ export default function WomenInAviation() {
         { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "13 min" },
         { title: "Pilot Training Costs UK", href: "/guides/pilot-training-costs", time: "8 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

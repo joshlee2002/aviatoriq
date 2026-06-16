@@ -53,13 +53,13 @@ export default function EmbryRiddleGuide() {
                 Here is a realistic breakdown of the costs for a 4-year Bachelor of Science in Aeronautics with flight training:
               </p>
               <ul className="list-disc pl-5 space-y-2 mt-2 mb-4">
-                <li><strong>Academic Tuition:</strong> $36,868 per year (in-state and out-of-state tuition are the same at ERAU) [1].</li>
-                <li><strong>Flight Training Fees:</strong> ERAU officially recommends budgeting $23,000 to $33,000 per year for flight fees during the first two years (covering PPL, IR, and CPL) [2].</li>
+                <li><strong>Academic Tuition:</strong> $36,868 per year (in-state and out-of-state tuition are the same at ERAU) .</li>
+                <li><strong>Flight Training Fees:</strong> ERAU officially recommends budgeting $23,000 to $33,000 per year for flight fees during the first two years (covering PPL, IR, and CPL) .</li>
                 <li><strong>Room and Board:</strong> Approximately $14,000 to $16,000 per year.</li>
                 <li><strong>Books and Supplies:</strong> Approximately $1,500 per year.</li>
               </ul>
               <p>
-                When you multiply these costs over four years, the total estimated programme cost frequently exceeds <strong>$222,000</strong> [3]. If you require extra flight hours to pass checkrides (which is common), the flight fees will increase.
+                When you multiply these costs over four years, the total estimated programme cost frequently exceeds <strong>$222,000</strong> . If you require extra flight hours to pass checkrides (which is common), the flight fees will increase.
               </p>
             </>
           ),
@@ -139,9 +139,9 @@ export default function EmbryRiddleGuide() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Embry-Riddle Aeronautical University. "Tuition and Estimated Costs." <em>ERAU Admissions</em>.<br/>
-                [2] Embry-Riddle Aeronautical University. "Flight Course Costs and Payment." <em>College of Aviation</em>.<br/>
-                [3] Flying Magazine. "Embry-Riddle Aeronautical University Review." <em>Flight School Directory</em>.
+                 Embry-Riddle Aeronautical University. "Tuition and Estimated Costs." <em>ERAU Admissions</em>.<br/>
+                 Embry-Riddle Aeronautical University. "Flight Course Costs and Payment." <em>College of Aviation</em>.<br/>
+                 Flying Magazine. "Embry-Riddle Aeronautical University Review." <em>Flight School Directory</em>.
               </p>
             </>
           ),
@@ -152,6 +152,11 @@ export default function EmbryRiddleGuide() {
         { title: "ATP Flight School Review", href: "/us/guides/atp-flight-school-guide", time: "10 min" },
         { title: "United Aviate Program", href: "/us/guides/united-aviate-program", time: "9 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

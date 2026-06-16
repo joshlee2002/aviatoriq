@@ -154,7 +154,7 @@ export default function NewZealandPilotTrainingCosts() {
           heading: "Career Pathways and Airline Requirements (2026)",
           content: (
             <>
-              <p>Upon completing their professional pilot training, graduates enter a dynamic job market. While flight instructing is a common initial pathway to build hours, opportunities exist across general aviation, regional charters, and ultimately, major airlines.</p>
+              <p>Upon completing their professional pilot training, graduates enter a dynamic job market. While flight instructing is a common initial pathway to build hours, opportunities exist across general aviation, regional charters, and major airlines.</p>
               <h3>Building Flight Hours</h3>
               <p>Most flight school graduates will have around 200 hours of flight time. Airlines like Air New Zealand or Jetstar typically require 500 to 1,500 total flying hours for entry-level positions. Common methods to build these crucial hours include:</p>
               <ul>
@@ -221,6 +221,11 @@ export default function NewZealandPilotTrainingCosts() {
         { title: "How to Become a Pilot in New Zealand", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "15 min" },
         { title: "Pilot Career Pathways: From Cadet to Captain", href: "/guides/best-route-to-airline", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Civil Aviation Authority of New Zealand (CAA NZ)", url: "https://www.aviation.govt.nz" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

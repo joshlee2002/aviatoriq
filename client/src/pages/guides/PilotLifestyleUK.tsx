@@ -133,6 +133,11 @@ export default function PilotLifestyleUK() {
         { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "15 min" },
         { title: "BA Speedbird Academy", href: "/guides/ba-speedbird-academy", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

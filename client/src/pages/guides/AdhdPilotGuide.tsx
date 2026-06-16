@@ -26,7 +26,7 @@ export default function AdhdPilotGuide() {
           content: (
             <>
               <p>
-                This is the question anxious student pilots search for at 2am. The answer is more nuanced — and more hopeful — than most of what you will find on internet forums. ADHD is not automatically disqualifying for a UK CAA Class 1 Medical Certificate [1].
+                This is the question anxious student pilots search for at 2am. The answer is more nuanced — and more hopeful — than most of what you will find on internet forums. ADHD is not automatically disqualifying for a UK CAA Class 1 Medical Certificate .
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
@@ -102,7 +102,7 @@ export default function AdhdPilotGuide() {
               </div>
 
               <p>
-                <strong>Scenario 1 (Childhood ADHD):</strong> This is the most common and most favourable case. You were diagnosed as a child, took medication during school, stopped at some point (often 16–18), and have no current symptoms. Research showing 40–60% of childhood cases improve significantly in adulthood is explicitly referenced by the CAA [2].
+                <strong>Scenario 1 (Childhood ADHD):</strong> This is the most common and most favourable case. You were diagnosed as a child, took medication during school, stopped at some point (often 16–18), and have no current symptoms. Research showing 40–60% of childhood cases improve significantly in adulthood is explicitly referenced by the CAA .
               </p>
               <p>
                 <strong>Scenario 2 (Recently stopped medication):</strong> You were diagnosed as an adult, took medication, and are now stopping specifically to pursue a pilot career. The authority will want to see a stability period off medication (typically 6–12 months) and evidence that you can function without it.
@@ -150,8 +150,8 @@ export default function AdhdPilotGuide() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] UK Civil Aviation Authority (CAA). "Neurodevelopmental conditions." <em>Aeromedical Examiner Guidance</em>.<br/>
-                [2] Airmappr. "Can You Be a Pilot with ADHD? EASA Rules Explained (2026)." <em>Aviation Medical Data</em>.
+                 UK Civil Aviation Authority (CAA). "Neurodevelopmental conditions." <em>Aeromedical Examiner Guidance</em>.<br/>
+                 Airmappr. "Can You Be a Pilot with ADHD? EASA Rules Explained (2026)." <em>Aviation Medical Data</em>.
               </p>
             </>
           ),
@@ -162,6 +162,12 @@ export default function AdhdPilotGuide() {
         { title: "Pilot Eyesight Requirements UK", href: "/guides/pilot-eyesight-requirements-uk", time: "6 min" },
         { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-MED", url: "https://www.easa.europa.eu/en/document-library/regulations/commission-regulation-eu-no-11782011" },
+    { name: "FAA" },
+    { name: "CASA" },
+  ]}/>
   );
 }

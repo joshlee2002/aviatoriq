@@ -176,7 +176,7 @@ export default function PilotSalaryUK2026() {
           content: (
             <>
               <p>
-                For years, airline pilots have been viewed as some of the highest earners in the UK, but in 2026, salaries across the industry are reaching levels few could have predicted a decade ago. Driven by post-pandemic recovery, aggressive fleet expansion, and a structural shortage of experienced captains, airlines have been forced to significantly improve pay and conditions to attract and retain flight crew [1].
+                For years, airline pilots have been viewed as some of the highest earners in the UK, but in 2026, salaries across the industry are reaching levels few could have predicted a decade ago. Driven by post-pandemic recovery, aggressive fleet expansion, and a structural shortage of experienced captains, airlines have been forced to significantly improve pay and conditions to attract and retain flight crew .
               </p>
               <p>
                 However, behind the eye-catching six-figure salaries lies a more complicated reality. Becoming an airline pilot still requires a massive financial commitment — often exceeding £100,000 — before your first job. When looking at pilot salaries, you must consider the "total compensation package," not just the base pay. This includes block hour pay (flying pay), sector pay, overnight allowances (per diems), and employer pension contributions.
@@ -192,7 +192,7 @@ export default function PilotSalaryUK2026() {
           content: (
             <>
               <p>
-                British Airways and Virgin Atlantic offer the highest earning potential in the UK market, particularly for experienced long-haul crews. The recent BALPA-negotiated pay deal at British Airways (running 2023–2027) delivered cumulative increases of approximately 15.5%, restoring and exceeding pre-pandemic levels [2].
+                British Airways and Virgin Atlantic offer the highest earning potential in the UK market, particularly for experienced long-haul crews. The recent BALPA-negotiated pay deal at British Airways (running 2023–2027) delivered cumulative increases of approximately 15.5%, restoring and exceeding pre-pandemic levels .
               </p>
               <p>
                 <strong>British Airways:</strong>
@@ -309,11 +309,11 @@ export default function PilotSalaryUK2026() {
           content: (
             <>
               <p className="text-xs text-white/50">
-                [1] Simple Flying. "A Look At The Salaries Of UK Airline Pilots In 2026." May 26, 2026. <em>simpleflying.com/uk-airline-pilot-salaries/</em><br/>
-                [2] Ryanair Careers. "Direct Entry Pilots — What We Offer." June 2026. <em>careers.ryanair.com/pilots/direct-entry-pilots/</em> — "Captains can earn up to £155,500/€165,000 p.a. in year 1."<br/>
-                [3] British Airline Pilots' Association (BALPA). "Salary and Benefits." <em>balpa.org/becoming-a-pilot/salary-and-benefits/</em><br/>
-                [4] Aviation A2Z. "British Airways Pilots Reject New Pay Restructuring." May 1, 2026. <em>aviationa2z.com</em> — BA pilots voted down proposed 4% pay rise; existing 2026 pay deal remains in place.<br/>
-                [5] Reddit r/flyingeurope. "How much do Ryanair UK guys actually get paid?" April 6, 2026 — UK base captains £143k–£155k permanent contract confirmed by multiple posters.
+                 Simple Flying. "A Look At The Salaries Of UK Airline Pilots In 2026." May 26, 2026. <em>simpleflying.com/uk-airline-pilot-salaries/</em><br/>
+                 Ryanair Careers. "Direct Entry Pilots — What We Offer." June 2026. <em>careers.ryanair.com/pilots/direct-entry-pilots/</em> — "Captains can earn up to £155,500/€165,000 p.a. in year 1."<br/>
+                 British Airline Pilots' Association (BALPA). "Salary and Benefits." <em>balpa.org/becoming-a-pilot/salary-and-benefits/</em><br/>
+                 Aviation A2Z. "British Airways Pilots Reject New Pay Restructuring." May 1, 2026. <em>aviationa2z.com</em> — BA pilots voted down proposed 4% pay rise; existing 2026 pay deal remains in place.<br/>
+                 Reddit r/flyingeurope. "How much do Ryanair UK guys actually get paid?" April 6, 2026 — UK base captains £143k–£155k permanent contract confirmed by multiple posters.
               </p>
             </>
           ),
@@ -324,6 +324,11 @@ export default function PilotSalaryUK2026() {
         { title: "How to Finance Pilot Training UK", href: "/guides/how-to-finance-pilot-training-uk", time: "9 min" },
         { title: "Airline Pilot Interview Guide", href: "/guides/airline-pilot-interview", time: "10 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

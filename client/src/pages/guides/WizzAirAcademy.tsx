@@ -154,6 +154,11 @@ export default function WizzAirAcademy() {
           ),
         },
       ]}
-    />
+    
+      sources={[
+    { name: "EASA" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

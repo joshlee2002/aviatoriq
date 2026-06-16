@@ -119,6 +119,11 @@ export default function UsPilotSchedule() {
         { title: "Mastering US Airline Pilot Seniority", href: "/us/guides/us-pilot-seniority", time: "9 min" },
         { title: "Airline Pilot Salary USA 2026", href: "/us/guides/airline-pilot-salary-usa", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

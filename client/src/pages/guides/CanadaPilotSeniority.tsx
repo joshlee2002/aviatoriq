@@ -136,7 +136,7 @@ export default function CanadaPilotSeniority() {
           content: (
             <>
               <p>The pilot seniority system, while sometimes perceived as rigid, has endured for decades due to its inherent fairness and ability to prevent favoritism. In 2026, there are ongoing discussions within the global aviation community about potential evolutions to this system, particularly concerning the integration of new technologies and changing workforce demographics. However, for the foreseeable future, seniority is expected to remain the dominant factor in Canadian airline pilot careers.</p>
-              <p>As the industry continues to evolve, factors such as pilot shortages, the introduction of new aircraft types, and shifts in global travel patterns may influence the pace of seniority progression. Pilots entering the Canadian market now can anticipate a career path where patience, continuous professional development, and a deep understanding of their airline's specific seniority rules will be key to achieving their long-term career aspirations. The elite aviator understands that while the climb up the seniority ladder requires time, it ultimately leads to unparalleled professional stability and quality of life.</p>
+              <p>As the industry continues to evolve, factors such as pilot shortages, the introduction of new aircraft types, and shifts in global travel patterns may influence the pace of seniority progression. Pilots entering the Canadian market now can anticipate a career path where patience, continuous professional development, and a deep understanding of their airline's specific seniority rules will be key to achieving their long-term career aspirations. The elite aviator understands that while the climb up the seniority ladder requires time, it leads to unparalleled professional stability and quality of life.</p>
             </>
           )
         },
@@ -171,6 +171,11 @@ export default function CanadaPilotSeniority() {
         { title: "How to Become a Pilot in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "15 min" },
         { title: "Canadian Pilot Training Costs 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

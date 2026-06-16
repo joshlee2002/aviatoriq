@@ -55,7 +55,7 @@ export default function AirCanadaJazzCadet() {
           heading: "Investment & Funding: Understanding the Costs",
           content: (
             <>
-              <p>Investing in an airline pilot career is a significant financial commitment. The total cost for the Air Canada Jazz Cadet Program is <strong>$137,139 CAD plus applicable taxes</strong> [1]. It is important to note that this amount is subject to periodic review and may be adjusted. This comprehensive fee covers all aspects of the training, from initial ground school to advanced simulator sessions and all necessary examinations.</p>
+              <p>Investing in an airline pilot career is a significant financial commitment. The total cost for the Air Canada Jazz Cadet Program is <strong>$137,139 CAD plus applicable taxes</strong> . this amount is subject to periodic review and may be adjusted. This comprehensive fee covers all aspects of the training, from initial ground school to advanced simulator sessions and all necessary examinations.</p>
               <p>Recognizing the substantial investment, CAE and its partners have established financing opportunities to support aspiring pilots. Cadets accepted into the program can explore student loan options through reputable Canadian financial institutions:</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
@@ -114,6 +114,11 @@ export default function AirCanadaJazzCadet() {
         { title: "Canadian Pilot Training Costs 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
         { title: "Transport Canada Pilot Regulations Explained", href: "/canada/guides/transport-canada-cpl-requirements", time: "10 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

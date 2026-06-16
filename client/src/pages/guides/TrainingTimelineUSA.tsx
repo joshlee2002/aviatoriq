@@ -119,8 +119,8 @@ export default function TrainingTimelineUSA() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Federal Aviation Administration (FAA). "Pilot Certification and Qualification Requirements for Air Carrier Operations." <em>14 CFR Part 121</em>. <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-G/part-121" className="underline" target="_blank" rel="noopener noreferrer">ecfr.gov</a><br/>
-                [2] Federal Aviation Administration (FAA). "Pilot Certification: Restricted Privileges Airline Transport Pilot Certificate." <em>14 CFR § 61.160</em>. <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-G/section-61.160" className="underline" target="_blank" rel="noopener noreferrer">ecfr.gov</a>
+                 Federal Aviation Administration (FAA). "Pilot Certification and Qualification Requirements for Air Carrier Operations." <em>14 CFR Part 121</em>. <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-G/part-121" className="underline" target="_blank" rel="noopener noreferrer">ecfr.gov</a><br/>
+                 Federal Aviation Administration (FAA). "Pilot Certification: Restricted Privileges Airline Transport Pilot Certificate." <em>14 CFR § 61.160</em>. <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-G/section-61.160" className="underline" target="_blank" rel="noopener noreferrer">ecfr.gov</a>
               </p>
             </>
           ),
@@ -131,6 +131,11 @@ export default function TrainingTimelineUSA() {
         { title: "Pilot Training Costs USA", href: "/us/guides/pilot-training-costs-usa", time: "10 min" },
         { title: "Part 61 vs Part 141", href: "/us/guides/part-61-vs-141", time: "8 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

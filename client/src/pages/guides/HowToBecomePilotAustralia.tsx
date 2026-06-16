@@ -29,7 +29,7 @@ export default function HowToBecomePilotAustralia() {
                 The short answer is yes — but the pathway has changed significantly over the last few years. Australia is unique globally because of its vast geography, uncrowded airspace, and year-round VFR flying weather. This makes it not only a brilliant place to learn to fly, but a highly respected training ground for the Asia-Pacific region.
               </p>
               <p>
-                The post-pandemic recovery saw a massive surge in hiring from the Qantas Group, Virgin Australia, and Rex. While the initial frenzied hiring wave of 2023–2024 has stabilised, the underlying demographics of the pilot workforce mean consistent demand will continue. Boeing's Pilot Outlook forecasts a requirement for 248,000 new commercial pilots in the Asia-Pacific region alone by 2042 [1].
+                The post-pandemic recovery saw a massive surge in hiring from the Qantas Group, Virgin Australia, and Rex. While the initial frenzied hiring wave of 2023–2024 has stabilised, the underlying demographics of the pilot workforce mean consistent demand will continue. Boeing's Pilot Outlook forecasts a requirement for 248,000 new commercial pilots in the Asia-Pacific region alone by 2042 .
               </p>
               <p>
                 However, becoming a pilot in Australia is not cheap. The financial commitment is substantial, typically ranging from AUD $65,000 to over $120,000. The good news is that Australia offers one of the world's most supportive domestic funding models through VET Student Loans and HECS-HELP, making the career accessible to those without significant upfront capital.
@@ -123,7 +123,7 @@ export default function HowToBecomePilotAustralia() {
               </div>
 
               <p>
-                <strong>Recreational Pilot Licence (RPL):</strong> The entry point for recreational flying. It's designed to get you to solo flight efficiently. A minimum of 25 hours of flight time (typically 30–40 in practice). Cost: AUD $8,000–$15,000. Duration: 3–6 months depending on frequency of flying [2].
+                <strong>Recreational Pilot Licence (RPL):</strong> The entry point for recreational flying. It's designed to get you to solo flight efficiently. A minimum of 25 hours of flight time (typically 30–40 in practice). Cost: AUD $8,000–$15,000. Duration: 3–6 months depending on frequency of flying .
               </p>
               <p>
                 <strong>Private Pilot Licence (PPL):</strong> Builds on the RPL and significantly expands what you're permitted to do. Upgrading removes the 25 nm restriction so you can fly anywhere in Australia, adds the ability to carry passengers on cross-country trips, and enables night flying (with a Night VFR rating). Cost: AUD $20,000–$30,000 total from zero. Duration: 6–12 months.
@@ -157,7 +157,7 @@ export default function HowToBecomePilotAustralia() {
                 <strong>University Degree Programme:</strong> AUD $120,000–$150,000+ total including academic tuition and flight training. Produces a degree alongside flight licences.
               </p>
               <p>
-                Australia offers one of the most accessible flight training finance systems in the world for domestic students. Through the <strong>VET Student Loans (VSL)</strong> programme, eligible Australian citizens can defer the cost of approved aviation diplomas [3].
+                Australia offers one of the most accessible flight training finance systems in the world for domestic students. Through the <strong>VET Student Loans (VSL)</strong> programme, eligible Australian citizens can defer the cost of approved aviation diplomas .
               </p>
               <p>
                 In 2026, the VSL cap for aviation courses is approximately AUD $150,000. This loan covers tuition fees only — it does not cover living expenses, medical certificates, headsets, or CASA exam fees. You repay the loan through the Australian taxation system once your income exceeds the minimum repayment threshold (approx. AUD $54,000 per year).
@@ -195,9 +195,9 @@ export default function HowToBecomePilotAustralia() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Boeing. "Pilot and Technician Outlook 2023-2042." <em>Boeing Commercial Market Outlook</em>.<br/>
-                [2] Civil Aviation Safety Authority (CASA). "Getting a recreational pilot licence (RPL)." <em>CASA Official Guidelines</em>.<br/>
-                [3] Department of Employment and Workplace Relations. "VET Student Loans." <em>Australian Government</em>.
+                 Boeing. "Pilot and Technician Outlook 2023-2042." <em>Boeing Commercial Market Outlook</em>.<br/>
+                 Civil Aviation Safety Authority (CASA). "Getting a recreational pilot licence (RPL)." <em>CASA Official Guidelines</em>.<br/>
+                 Department of Employment and Workplace Relations. "VET Student Loans." <em>Australian Government</em>.
               </p>
             </>
           ),
@@ -208,6 +208,11 @@ export default function HowToBecomePilotAustralia() {
         { title: "Pilot Training Timeline: How Long Does It Take?", href: "/guides/training-timeline", time: "5 min" },
         { title: "Am I Ready to Start Pilot Training?", href: "/guides/am-i-ready-to-start-pilot-training", time: "7 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "CASA" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

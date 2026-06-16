@@ -176,6 +176,11 @@ export default function EuropeFlightSchoolLoans() {
         { title: "How to Become a Pilot in Europe: A Step-by-Step Guide", href: "/europe/guides/pilot-training-costs", time: "15 min" },
         { title: "EASA Pilot Training: Integrated vs. Modular Pathways", href: "/europe/guides/easa-atpl-requirements", time: "12 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "EASA" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

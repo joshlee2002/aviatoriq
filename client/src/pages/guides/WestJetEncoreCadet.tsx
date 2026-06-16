@@ -51,7 +51,7 @@ export default function WestJetEncoreCadet() {
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">**Total Estimated Cost (PPL to CPL + ME/IFR)**</td><td className="px-4 py-3 text-white/80">~250-300 hours</td><td className="px-4 py-3 text-white/80">**$57,000 - $78,000**</td><td className="px-4 py-3 text-white/80">Comprehensive training for airline readiness</td></tr>
                 </tbody>
               </table>
-              <p>These figures are estimates and can vary significantly based on flight school, location, individual learning pace, and fuel prices. Hidden costs such as landing fees, exam re-writes, and winter delays can also impact the final expenditure. <a href="https://levelflight.ca/blog/The+True+Cost+of+Pilot+Training+in+Canada+and+How+to+Save+Money/90" target="_blank">Level Flight</a> provides a detailed breakdown of these costs and strategies for saving money [1].</p>
+              <p>These figures are estimates and can vary significantly based on flight school, location, individual learning pace, and fuel prices. Hidden costs such as landing fees, exam re-writes, and winter delays can also impact the final expenditure. <a href="https://levelflight.ca/blog/The+True+Cost+of+Pilot+Training+in+Canada+and+How+to+Save+Money/90" target="_blank">Level Flight</a> provides a detailed breakdown of these costs and strategies for saving money .</p>
             </>
           )
         },
@@ -74,7 +74,7 @@ export default function WestJetEncoreCadet() {
                 </ul>
                 <li>**Skill:** Pass a flight test to the Commercial Pilot Aeroplane standards.</li>
               </ul>
-              <p>While an Airline Transport Pilot Licence (ATPL) is the ultimate goal for many airline pilots, WestJet Encore's First Officer positions typically require a CPL with specific flight time and ratings, with the ATPL being pursued later in one's career. The ATPL requires significantly more flight experience, including 1500 hours total time, with specific PIC and multi-engine requirements [2].</p>
+              <p>While an Airline Transport Pilot Licence (ATPL) is the ultimate goal for many airline pilots, WestJet Encore's First Officer positions typically require a CPL with specific flight time and ratings, with the ATPL being pursued later in one's career. The ATPL requires significantly more flight experience, including 1500 hours total time, with specific PIC and multi-engine requirements .</p>
             </>
           )
         },
@@ -93,7 +93,7 @@ export default function WestJetEncoreCadet() {
                 <li>**English Proficiency:** Demonstrated proficiency in English.</li>
                 <li>**Education:** High school diploma or equivalent; post-secondary education is an asset.</li>
               </ul>
-              <p>The recruitment process is highly competitive. Applicants typically undergo a rigorous selection process that may include online applications, aptitude tests, panel interviews, and simulator evaluations. While WestJet Encore does not have a formal 'cadet' program, its focus on developing lower-time pilots through programs like the Pilot-In-Command Under Supervision (PIC U/S) program highlights its commitment to internal talent development [3].</p>
+              <p>The recruitment process is highly competitive. Applicants typically undergo a rigorous selection process that may include online applications, aptitude tests, panel interviews, and simulator evaluations. While WestJet Encore does not have a formal 'cadet' program, its focus on developing lower-time pilots through programs like the Pilot-In-Command Under Supervision (PIC U/S) program highlights its commitment to internal talent development .</p>
               <h4>WestJet Encore Fleet and Bases</h4>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
@@ -114,7 +114,7 @@ export default function WestJetEncoreCadet() {
               <h3>Pilot-In-Command Under Supervision (PIC U/S) Program</h3>
               <p>A significant benefit for WestJet Encore First Officers is the PIC U/S program. This program allows eligible First Officers to log Pilot-In-Command time while flying under the supervision of a Captain. This is invaluable for accumulating the necessary PIC hours required for future ATPL qualifications and career advancement, effectively accelerating a pilot's progression.</p>
               <h3>Compensation and Benefits</h3>
-              <p>WestJet Encore offers competitive compensation and a comprehensive benefits package. For First Officers, the WestJet Group matches contributions to the WestJet Savings Plan, up to 5% for the first three years and up to 10% after four years. This commitment to financial well-being, alongside flexible scheduling and internal opportunities, underscores WestJet's dedication to its pilots [3].</p>
+              <p>WestJet Encore offers competitive compensation and a comprehensive benefits package. For First Officers, the WestJet Group matches contributions to the WestJet Savings Plan, up to 5% for the first three years and up to 10% after four years. This commitment to financial well-being, alongside flexible scheduling and internal opportunities, underscores WestJet's dedication to its pilots .</p>
               <h3>Pathway to WestJet Mainline</h3>
               <p>WestJet Encore is explicitly positioned as a stepping stone to WestJet mainline. Pilots who demonstrate exceptional performance and accumulate the necessary experience are well-placed for internal transfers to fly larger Boeing 737s or 787 Dreamliners. This clear career progression path is a major draw for aspiring airline pilots.</p>
             </>
@@ -131,7 +131,7 @@ export default function WestJetEncoreCadet() {
                 <li>**Part-time Employment:** Many aspiring pilots work part-time during their training to cover living expenses and contribute to tuition.</li>
                 <li>**Flight School Payment Plans:** Some flight schools offer structured payment plans to spread out the cost of training.</li>
               </ul>
-              <p>Proactive budgeting, consistent study habits, and maximizing flight efficiency can also help minimize overall training costs [1].</p>
+              <p>Proactive budgeting, consistent study habits, and maximizing flight efficiency can also help minimize overall training costs .</p>
             </>
           )
         },
@@ -157,13 +157,18 @@ export default function WestJetEncoreCadet() {
         { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
         { title: "Understanding Transport Canada Pilot Licences", href: "/canada/guides/transport-canada-cpl-requirements", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }
 
 /*
 References:
-[1] Level Flight. (2026). The True Cost of Pilot Training in Canada & How to Save. Retrieved from https://levelflight.ca/blog/The+True+Cost+of+Pilot+Training+in+Canada+and+How+to+Save+Money/90
-[2] Transport Canada. (2026). Standard 421 - Flight Crew Permits, Licences and Ratings. Retrieved from https://tc.canada.ca/en/corporate-services/acts-regulations/list-regulations/canadian-aviation-regulations-sor-96-433/standards/standard-421-flight-crew-permits-licences-ratings-canadian-aviation-regulations-cars
-[3] WestJet. (n.d.). Pilot careers. Retrieved from https://www.westjet.com/en-ca/careers/pilot
+ Level Flight. (2026). The True Cost of Pilot Training in Canada & How to Save. Retrieved from https://levelflight.ca/blog/The+True+Cost+of+Pilot+Training+in+Canada+and+How+to+Save+Money/90
+ Transport Canada. (2026). Standard 421 - Flight Crew Permits, Licences and Ratings. Retrieved from https://tc.canada.ca/en/corporate-services/acts-regulations/list-regulations/canadian-aviation-regulations-sor-96-433/standards/standard-421-flight-crew-permits-licences-ratings-canadian-aviation-regulations-cars
+ WestJet. (n.d.). Pilot careers. Retrieved from https://www.westjet.com/en-ca/careers/pilot
 */

@@ -164,9 +164,9 @@ export default function TuiMPL() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] TUI Careers. "MPL Cadet Programme Update." <em>Official TUI Recruitment Portal</em>, January 2026.<br/>
-                [2] Civil Aviation Authority (CAA). "Multi-Crew Pilot Licence (MPL) Requirements." <em>CAA Regulatory Guidance</em>, 2026.<br/>
-                [3] Flight Training News. "TUI confirms no MPL cadet programme intake for 2026." <em>FTN Online</em>, February 2026.
+                 TUI Careers. "MPL Cadet Programme Update." <em>Official TUI Recruitment Portal</em>, January 2026.<br/>
+                 Civil Aviation Authority (CAA). "Multi-Crew Pilot Licence (MPL) Requirements." <em>CAA Regulatory Guidance</em>, 2026.<br/>
+                 Flight Training News. "TUI confirms no MPL cadet programme intake for 2026." <em>FTN Online</em>, February 2026.
               </p>
             </>
           ),
@@ -178,6 +178,11 @@ export default function TuiMPL() {
         { title: "BA Speedbird Academy", href: "/guides/ba-speedbird-academy", time: "12 min" },
         { title: "Modular vs Integrated ATPL", href: "/guides/integrated-vs-modular", time: "15 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

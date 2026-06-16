@@ -239,6 +239,11 @@ export default function Part61Vs141() {
           answer: "A full zero-to-ATP programme at a major Part 141 school costs approximately $100,000–$125,000 in 2026. ATP Flight School's Airline Career Pilot Program is priced at $123,995. United Aviate Academy's full programme costs approximately $111,700–$122,000.",
         },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

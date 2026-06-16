@@ -151,6 +151,11 @@ export default function PilotCvGuide() {
         },
       ]}
     scopeBanner={<><GuideScopeBanner scope="CV and cover letter format in this guide follows UK conventions. US airlines use a résumé format." usHref="/us/guides/pilot-resume-usa" usLabel="View USA résumé guide →" /></>}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

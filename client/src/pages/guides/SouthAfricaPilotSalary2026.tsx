@@ -34,7 +34,7 @@ export default function SouthAfricaPilotSalary2026() {
               <p>In 2026, the average commercial pilot salary in South Africa hovers around **ZAR 297,417 per annum**, according to various industry reports. However, this figure represents a broad average, with significant variations based on several critical factors. Entry-level positions typically start lower, while experienced captains at major carriers can command substantially higher figures. The South African Rand (ZAR) is the primary currency for these earnings, and its value against major international currencies can also indirectly impact the perceived value of these salaries, especially for pilots with international aspirations or those considering training abroad.</p>
               <p>Key factors influencing pilot salaries include:</p>
               <ul>
-                <li><b>Experience Level:</b> Progression from First Officer to Senior First Officer and ultimately to Captain brings significant salary increases.</li>
+                <li><b>Experience Level:</b> Progression from First Officer to Senior First Officer and to Captain brings significant salary increases.</li>
                 <li><b>Airline Type:</b> Major national carriers generally offer better compensation packages than regional or charter operators.</li>
                 <li><b>Aircraft Type:</b> Flying larger, more complex aircraft (e.g., wide-body jets) on international routes often correlates with higher pay.</li>
                 <li><b>Flight Hours:</b> Accumulated flight hours and ratings play a crucial role in career advancement and salary negotiations.</li>
@@ -189,6 +189,11 @@ export default function SouthAfricaPilotSalary2026() {
         { title: "How to Become a Pilot in South Africa", href: "/south-africa/guides/pilot-training-costs", time: "15 min" },
         { title: "Pilot Training Costs in South Africa 2026", href: "/south-africa/guides/pilot-training-costs", time: "12 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "South African Civil Aviation Authority (SACAA)", url: "https://www.caa.co.za" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

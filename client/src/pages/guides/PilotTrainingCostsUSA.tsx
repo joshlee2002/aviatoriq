@@ -442,14 +442,14 @@ export default function PilotTrainingCostsUSA() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] ATP Flight School. "Pilot Training Cost." <em>atpflightschool.com/become-a-pilot/flight-training/pilot-training-cost.html</em>. Accessed June 2026.<br/>
-                [2] Epic Flight Academy. "How Much Does Flight School Cost?" <em>epicflightacademy.com/how-much-does-flight-school-cost/</em>. Updated May 2026.<br/>
-                [3] Federal Aviation Administration. "What Are the Hourly Requirements for Becoming a Pilot?" <em>faa.gov/faq/what-are-hourly-requirements-becoming-pilot</em>.<br/>
-                [4] Bureau of Labor Statistics. "Airline and Commercial Pilots." <em>bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm</em>. Updated 2024.<br/>
-                [5] MiGFlug. "United, American and Delta Now Pay Identical $465/Hour." <em>migflug.com</em>. May 2026.<br/>
-                [6] Simple Flying. "Hourly Pay of US Regional Airline First Officers in 2026." <em>simpleflying.com</em>. April 2026.<br/>
-                [7] United Aviate. "Career Paths." <em>unitedaviate.com/aviate-program-career-paths/</em>. Accessed June 2026.<br/>
-                [8] Delta Air Lines. "Propel Pilot Career Path Program." <em>delta.com/us/en/careers/pilots/propel</em>. Accessed June 2026.
+                 ATP Flight School. "Pilot Training Cost." <em>atpflightschool.com/become-a-pilot/flight-training/pilot-training-cost.html</em>. Accessed June 2026.<br/>
+                 Epic Flight Academy. "How Much Does Flight School Cost?" <em>epicflightacademy.com/how-much-does-flight-school-cost/</em>. Updated May 2026.<br/>
+                 Federal Aviation Administration. "What Are the Hourly Requirements for Becoming a Pilot?" <em>faa.gov/faq/what-are-hourly-requirements-becoming-pilot</em>.<br/>
+                 Bureau of Labor Statistics. "Airline and Commercial Pilots." <em>bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm</em>. Updated 2024.<br/>
+                 MiGFlug. "United, American and Delta Now Pay Identical $465/Hour." <em>migflug.com</em>. May 2026.<br/>
+                 Simple Flying. "Hourly Pay of US Regional Airline First Officers in 2026." <em>simpleflying.com</em>. April 2026.<br/>
+                 United Aviate. "Career Paths." <em>unitedaviate.com/aviate-program-career-paths/</em>. Accessed June 2026.<br/>
+                 Delta Air Lines. "Propel Pilot Career Path Program." <em>delta.com/us/en/careers/pilots/propel</em>. Accessed June 2026.
               </p>
             </>
           ),
@@ -462,6 +462,11 @@ export default function PilotTrainingCostsUSA() {
         { title: "US Airline Cadet Programmes 2026", href: "/us/guides/us-cadet-programs", time: "11 min" },
         { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

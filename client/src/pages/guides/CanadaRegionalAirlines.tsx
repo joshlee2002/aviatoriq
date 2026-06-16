@@ -31,7 +31,7 @@ export default function CanadaRegionalAirlines() {
           heading: "Transport Canada Regulatory Framework for Pilots",
           content: (
             <>
-              <p>Transport Canada (TC) is the governing body responsible for aviation safety and pilot licensing in Canada. Aspiring regional airline pilots must navigate a structured pathway of licenses and ratings, each with specific knowledge, experience, and skill requirements. The primary licenses relevant to a regional airline career include the Private Pilot Licence (PPL), Commercial Pilot Licence (CPL), and ultimately, the Airline Transport Pilot Licence (ATPL).</p>
+              <p>Transport Canada (TC) is the governing body responsible for aviation safety and pilot licensing in Canada. Aspiring regional airline pilots must navigate a structured pathway of licenses and ratings, each with specific knowledge, experience, and skill requirements. The primary licenses relevant to a regional airline career include the Private Pilot Licence (PPL), Commercial Pilot Licence (CPL), and the Airline Transport Pilot Licence (ATPL).</p>
               <p>Key regulatory documents, such as Standard 421 of the Canadian Aviation Regulations (CARs), detail the precise requirements for each license and rating. Adherence to these standards is non-negotiable and forms the bedrock of a safe and professional aviation career.</p>
               <h3>Medical Certificates</h3>
               <p>A crucial prerequisite for all pilot licenses is a valid medical certificate. For commercial operations, a Category 1 Medical Certificate is mandatory. This certificate requires a comprehensive medical examination by a Transport Canada-approved medical examiner and must be renewed periodically.</p>
@@ -177,6 +177,11 @@ export default function CanadaRegionalAirlines() {
         { title: "Pilot Training Costs 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
         { title: "Instrument Rating in Canada", href: "/canada/guides/transport-canada-cpl-requirements", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

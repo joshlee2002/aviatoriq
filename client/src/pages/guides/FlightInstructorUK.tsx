@@ -103,7 +103,7 @@ const FlightInstructorUK = () => {
                 A common question among aspiring FIs is regarding potential earnings and how the role contributes to a long-term career in aviation. In the UK, the salary for a Flight Instructor can vary, but it provides a stable income while you accumulate the necessary experience for airline entry.
               </p>
               <p>
-                Entry-level FIs, often operating under a Restricted FI rating, can expect to earn in the region of £25,000 to £30,000 per annum. As you gain experience, remove your restrictions, and potentially take on more senior roles or specialised instruction, your salary can increase to £30,000 to £40,000. Some highly experienced FIs at larger academies or those involved in advanced training might earn more. It's important to remember that this income is earned while actively building flight hours, a critical component for airline applications.
+                Entry-level FIs, often operating under a Restricted FI rating, can expect to earn in the region of £25,000 to £30,000 per annum. As you gain experience, remove your restrictions, and potentially take on more senior roles or specialised instruction, your salary can increase to £30,000 to £40,000. Some highly experienced FIs at larger academies or those involved in advanced training might earn more. It's important to this income is earned while actively building flight hours, a critical component for airline applications.
               </p>
               <p>
                 The career progression from FI to airline pilot is well-trodden. Typically, an FI will spend 2 to 3 years instructing, accumulating between 800 to 1500+ hours. This period is invaluable for developing instructional skills, decision-making under pressure, and a deep understanding of aircraft systems and human factors. Airlines highly value the experience gained as an FI, as it demonstrates maturity, responsibility, and a solid foundation in aviation principles.
@@ -209,7 +209,7 @@ const FlightInstructorUK = () => {
                 </table>
               </div>
               <p>
-                Ultimately, the choice of hour-building method depends on individual circumstances, financial resources, and career goals. However, for those aiming for an airline career, the Flight Instructor path offers a comprehensive blend of income generation, significant hour accumulation, and unparalleled skill development that directly prepares you for the demands of commercial aviation.
+                the choice of hour-building method depends on individual circumstances, financial resources, and career goals. However, for those aiming for an airline career, the Flight Instructor path offers a comprehensive blend of income generation, significant hour accumulation, and unparalleled skill development that directly prepares you for the demands of commercial aviation.
               </p>
             </>
           ),
@@ -226,7 +226,12 @@ const FlightInstructorUK = () => {
           time: "8 min read",
         },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 };
 

@@ -171,6 +171,11 @@ export default function SouthAfricaPilotTrainingCosts() {
         { title: "GCAA Pilot Training: Costs and Regulations", href: "/uae/guides/uae-pilot-training-costs", time: "13 min" },
         { title: "CAA NZ Pilot Training: Costs and Regulations", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "13 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "South African Civil Aviation Authority (SACAA)", url: "https://www.caa.co.za" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

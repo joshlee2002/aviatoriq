@@ -26,7 +26,7 @@ export default function AirNewZealandCadet() {
                 Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <p>
-                The journey to becoming a commercial pilot in New Zealand is a significant investment of time, effort, and capital. However, the rewards of a professional aviation career, particularly with a flag carrier like Air New Zealand, are substantial. This guide aims to equip prospective cadets and independent students with the knowledge required to make informed decisions, navigate the complexities of flight training, and ultimately achieve their aviation aspirations.
+                The journey to becoming a commercial pilot in New Zealand is a significant investment of time, effort, and capital. However, the rewards of a professional aviation career, particularly with a flag carrier like Air New Zealand, are substantial. This guide aims to equip prospective cadets and independent students with the knowledge required to make informed decisions, navigate the complexities of flight training, and achieve their aviation aspirations.
               </p>
             </>
           )
@@ -232,6 +232,11 @@ export default function AirNewZealandCadet() {
         { title: "Pilot Training Costs: A Worldwide Comparison 2026", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "12 min" },
         { title: "Understanding Aviation Medicals: What Pilots Need to Know", href: "/new-zealand/guides/nz-medical-class-1", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Civil Aviation Authority of New Zealand (CAA NZ)", url: "https://www.aviation.govt.nz" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

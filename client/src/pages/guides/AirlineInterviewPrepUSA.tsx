@@ -165,6 +165,11 @@ export default function AirlineInterviewPrepUSA() {
         { title: "Airline Pilot Salary USA", href: "/us/guides/airline-pilot-salary", time: "10 min" },
         { title: "US Pilot Shortage 2026", href: "/us/guides/us-pilot-shortage-2026", time: "8 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

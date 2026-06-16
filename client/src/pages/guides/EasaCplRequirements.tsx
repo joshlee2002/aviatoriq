@@ -334,6 +334,11 @@ export default function EasaCplRequirements() {
         { title: "Pilot Training Costs 2026: Global Overview", href: "/europe/guides/pilot-training-costs", time: "12 min" },
         { title: "EASA ATPL Requirements: Your Path to the Airlines", href: "/europe/guides/easa-atpl-requirements", time: "18 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "EASA" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

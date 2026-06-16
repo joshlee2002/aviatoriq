@@ -107,8 +107,8 @@ export default function PilotAptitudeTestPrep() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] PilotAptitudeTest.com. "PILAPT Assessment Guide 2026." <em>Test Preparation Resources</em>.<br/>
-                [2] Pilotest. "Pilot Aptitude Tests Preparation." <em>Assessment Data</em>.
+                 PilotAptitudeTest.com. "PILAPT Assessment Guide 2026." <em>Test Preparation Resources</em>.<br/>
+                 Pilotest. "Pilot Aptitude Tests Preparation." <em>Assessment Data</em>.
               </p>
             </>
           ),
@@ -119,6 +119,11 @@ export default function PilotAptitudeTestPrep() {
         { title: "Airline Simulator Assessment Guide", href: "/guides/airline-simulator-assessment", time: "11 min" },
         { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "13 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

@@ -236,6 +236,11 @@ export default function AmITooOldUSA() {
           answer: "No, airlines do not discriminate against older applicants; in fact, age discrimination is illegal. In the 2026 hiring environment, airlines actively value the maturity, leadership, and life experience that older career changers bring to the cockpit. As long as you meet the flight hour requirements and hold the necessary certificates, you are a highly competitive candidate regardless of your age."
         }
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

@@ -157,6 +157,11 @@ export default function UsPilotSeniority() {
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" },
         { title: "Airline Pilot Salary Guide 2026", href: "/us/guides/airline-pilot-salary-usa", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

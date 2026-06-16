@@ -158,6 +158,11 @@ export default function CanadaPilotBases() {
         { title: "Pilot Training Costs in Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
         { title: "Understanding Transport Canada Pilot Regulations", href: "/canada/guides/transport-canada-cpl-requirements", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

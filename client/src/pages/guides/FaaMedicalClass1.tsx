@@ -248,11 +248,11 @@ export default function FaaMedicalClass1() {
           content: (
             <>
               <p className="text-xs text-white/50">
-                [1] Federal Aviation Administration. "14 CFR Part 67 — Medical Standards and Certification." <em>ecfr.gov</em>. Accessed June 2026.<br/>
-                [2] Federal Aviation Administration. "MedXPress." <em>medxpress.faa.gov</em>. Accessed June 2026.<br/>
-                [3] Federal Aviation Administration. "FAA AME Locator." <em>amsrvs.ama.org</em>. Accessed June 2026.<br/>
-                [4] Federal Aviation Administration. "BasicMed." <em>faa.gov/licenses_certificates/airmen_certification/basic_med</em>. Accessed June 2026.<br/>
-                [5] Federal Aviation Administration. "SSRI Protocol." <em>faa.gov/about/office_org/headquarters_offices/avs/offices/aam/ame/guide/app_process/exam_tech/item47/amd/anti</em>. Accessed June 2026.
+                 Federal Aviation Administration. "14 CFR Part 67 — Medical Standards and Certification." <em>ecfr.gov</em>. Accessed June 2026.<br/>
+                 Federal Aviation Administration. "MedXPress." <em>medxpress.faa.gov</em>. Accessed June 2026.<br/>
+                 Federal Aviation Administration. "FAA AME Locator." <em>amsrvs.ama.org</em>. Accessed June 2026.<br/>
+                 Federal Aviation Administration. "BasicMed." <em>faa.gov/licenses_certificates/airmen_certification/basic_med</em>. Accessed June 2026.<br/>
+                 Federal Aviation Administration. "SSRI Protocol." <em>faa.gov/about/office_org/headquarters_offices/avs/offices/aam/ame/guide/app_process/exam_tech/item47/amd/anti</em>. Accessed June 2026.
               </p>
             </>
           ),
@@ -264,6 +264,12 @@ export default function FaaMedicalClass1() {
         { title: "FAA Medical Class 3 Requirements", href: "/us/guides/faa-medical-class-3", time: "7 min" },
         { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Federal Aviation Administration (CAA)" },
+    { name: "EASA Part-MED", url: "https://www.easa.europa.eu/en/document-library/regulations/commission-regulation-eu-no-11782011" },
+    { name: "FAA" },
+    { name: "CASA" },
+  ]}/>
   );
 }

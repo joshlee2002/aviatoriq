@@ -238,6 +238,11 @@ export default function NewZealandCadetPrograms() {
         { title: "Pilot Training Costs 2026: An International Overview", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "12 min" },
         { title: "A Career in Aviation: Beyond the Flight Deck", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Civil Aviation Authority of New Zealand (CAA NZ)", url: "https://www.aviation.govt.nz" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

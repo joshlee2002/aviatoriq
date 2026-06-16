@@ -210,6 +210,11 @@ export default function LufthansaEuropeanFlightAcademy() {
           time: "8 min"
         }
       ]}
-    />
+    
+      sources={[
+    { name: "EASA" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

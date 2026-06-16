@@ -120,6 +120,11 @@ export default function PilotAptitudeTestUSA() {
         { title: "United Aviate Program", href: "/us/guides/united-aviate-program", time: "9 min" },
         { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "12 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

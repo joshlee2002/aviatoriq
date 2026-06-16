@@ -47,7 +47,7 @@ export default function AtpFlightSchoolGuide() {
           content: (
             <>
               <p>
-                In 2026, the upfront tuition for the zero-experience ACPP is <strong>$103,995</strong>. If you enter with your Private Pilot License (PPL) already completed, the cost drops to $90,995 [1].
+                In 2026, the upfront tuition for the zero-experience ACPP is <strong>$103,995</strong>. If you enter with your Private Pilot License (PPL) already completed, the cost drops to $90,995 .
               </p>
               <p>
                 However, that is not the total amount you will spend. You must budget for the following "hidden" costs that are not included in the tuition:
@@ -130,8 +130,8 @@ export default function AtpFlightSchoolGuide() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] ATP Flight School. "Airline Career Pilot Program Pricing." <em>Official Website</em>.<br/>
-                [2] Reddit r/flying. "ATP Flight School Experiences." <em>Aviation Community Discussions</em>.
+                 ATP Flight School. "Airline Career Pilot Program Pricing." <em>Official Website</em>.<br/>
+                 Reddit r/flying. "ATP Flight School Experiences." <em>Aviation Community Discussions</em>.
               </p>
             </>
           ),
@@ -142,6 +142,11 @@ export default function AtpFlightSchoolGuide() {
         { title: "Embry-Riddle Guide", href: "/us/guides/embry-riddle-aeronautical-university", time: "11 min" },
         { title: "Part 61 vs Part 141", href: "/us/guides/part-61-vs-141", time: "8 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

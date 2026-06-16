@@ -102,6 +102,11 @@ export default function UsPilotBenefits() {
         { title: "US Pilot Union & Career Guide", href: "/us/guides/us-pilot-training-market-guide", time: "11 min" },
         { title: "Mastering US Airline Pilot Seniority", href: "/us/guides/us-pilot-seniority", time: "9 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

@@ -77,7 +77,7 @@ const CfiCareerUSA = () => {
           content: (
             <>
               <p>
-                Becoming a CFI involves passing two distinct FAA knowledge tests: the Fundamentals of Instructing (FOI) and the Flight Instructor Airplane (FIA). The FOI test assesses your understanding of teaching and learning principles, human behavior, effective communication, and assessment strategies. It's less about flying an airplane and more about how to be an effective educator. This test typically consists of 50 questions, and a passing score of 70% is required. As of September 1, 2024, an instructor endorsement is required before taking the FOI knowledge test [3].
+                Becoming a CFI involves passing two distinct FAA knowledge tests: the Fundamentals of Instructing (FOI) and the Flight Instructor Airplane (FIA). The FOI test assesses your understanding of teaching and learning principles, human behavior, effective communication, and assessment strategies. It's less about flying an airplane and more about how to be an effective educator. This test typically consists of 50 questions, and a passing score of 70% is required. As of September 1, 2024, an instructor endorsement is required before taking the FOI knowledge test .
               </p>
               <p>
                 The FIA knowledge test, on the other hand, focuses on your aeronautical knowledge specific to instructing in an airplane. This includes regulations, aerodynamics, aircraft systems, flight maneuvers, and emergency procedures from an instructor's perspective. The FIA test contains 100 questions, also requiring a 70% passing score. It's essential to study the Airman Certification Standards (ACS) for the flight instructor certificate to understand the depth of knowledge expected for both written exams and the subsequent practical test.
@@ -109,10 +109,10 @@ const CfiCareerUSA = () => {
           content: (
             <>
               <p>
-                The financial aspect of being a CFI is a significant draw for many pilots. While entry-level CFI salaries might seem modest compared to airline pilot wages, the primary benefit is the ability to earn income while building crucial flight hours. According to various industry sources, entry-level CFIs (0-500 hours dual given) can expect an hourly rate of $25 - $40, translating to an estimated annual income of $35,000 - $55,000. Experienced CFIs with CFII and MEI ratings can command $40 - $70+ per hour, with annual incomes ranging from $55,000 - $85,000+ [1] [2]. Some chief instructor positions can even exceed $100,000 annually.
+                The financial aspect of being a CFI is a significant draw for many pilots. While entry-level CFI salaries might seem modest compared to airline pilot wages, the primary benefit is the ability to earn income while building crucial flight hours. According to various industry sources, entry-level CFIs (0-500 hours dual given) can expect an hourly rate of $25 - $40, translating to an estimated annual income of $35,000 - $55,000. Experienced CFIs with CFII and MEI ratings can command $40 - $70+ per hour, with annual incomes ranging from $55,000 - $85,000+  . Some chief instructor positions can even exceed $100,000 annually.
               </p>
               <p>
-                The number of flight hours you can accumulate as a CFI is directly tied to student demand and your availability. Full-time CFIs at busy Part 141 flight academies often log between 500 to 800 hours per year. Some highly motivated instructors, especially those working independently or at schools with high student volumes, can even exceed 900 hours annually [4]. This rapid hour-building is a key advantage, allowing pilots to reach the 1,000-1,500 hour ATP minimums within 1 to 2 years of full-time instructing.
+                The number of flight hours you can accumulate as a CFI is directly tied to student demand and your availability. Full-time CFIs at busy Part 141 flight academies often log between 500 to 800 hours per year. Some highly motivated instructors, especially those working independently or at schools with high student volumes, can even exceed 900 hours annually . This rapid hour-building is a key advantage, allowing pilots to reach the 1,000-1,500 hour ATP minimums within 1 to 2 years of full-time instructing.
               </p>
               <p>
                 Compensation structures vary; some schools offer hourly pay for flight, ground, and simulator instruction, while larger academies or university programs might offer salaried positions with benefits. Many schools also provide bonuses for checkride passes, knowledge test proctoring, or student retention. Understanding these compensation models and choosing a flight school that aligns with your hour-building goals is crucial. The investment in your CFI training effectively pays for itself through earned income and accelerated career progression.
@@ -207,7 +207,12 @@ const CfiCareerUSA = () => {
           time: "8 min read",
         },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 };
 

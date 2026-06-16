@@ -46,7 +46,7 @@ export default function EuropePilotSeniority() {
                 <li><strong>Upgrades and Promotions</strong>: The progression from First Officer to Captain, and subsequently to training or management roles, is heavily influenced by seniority. While performance and qualifications are necessary, seniority often determines <em>when</em> these opportunities become available.</li>
                 <li><strong>Job Security</strong>: During economic downturns or airline restructuring, seniority often serves as a protective measure, with junior pilots being the first to face furloughs or redundancies.</li>
               </ul>
-              <p>It is important to note that while the concept of seniority is universal, its specific application can vary between airlines and countries within Europe. Some airlines, particularly legacy carriers, have deeply entrenched seniority systems, often reinforced by strong pilot unions. Newer or low-cost carriers might have slightly different models, but the underlying principle of seniority still plays a significant role.</p>
+              <p>while the concept of seniority is universal, its specific application can vary between airlines and countries within Europe. Some airlines, particularly legacy carriers, have deeply entrenched seniority systems, often reinforced by strong pilot unions. Newer or low-cost carriers might have slightly different models, but the underlying principle of seniority still plays a significant role.</p>
             </>
           )
         },
@@ -89,7 +89,7 @@ export default function EuropePilotSeniority() {
                 <li><strong>Lufthansa Group (Lufthansa, Swiss, Austrian Airlines, Eurowings)</strong>: Known for its rigorous selection process and comprehensive training programs. Seniority within the group can be complex, especially with pilots moving between subsidiaries.</li>
                 <li><strong>British Airways (IAG Group)</strong>: A legacy carrier with a strong emphasis on seniority. Recruitment often involves cadet programs and direct entry for experienced pilots.</li>
                 <li><strong>Air France-KLM</strong>: Another major legacy group with established seniority systems. Recruitment processes are highly competitive.</li>
-                <li><strong>Ryanair</strong>: A low-cost carrier that has grown significantly. While traditionally having a less rigid seniority system than legacy carriers, there have been increasing calls for more structured seniority lists within the airline [1].</li>
+                <li><strong>Ryanair</strong>: A low-cost carrier that has grown significantly. While traditionally having a less rigid seniority system than legacy carriers, there have been increasing calls for more structured seniority lists within the airline .</li>
                 <li><strong>EasyJet</strong>: Another prominent low-cost airline with a significant presence across Europe. Their recruitment focuses on efficient operations and a strong safety culture.</li>
                 <li><strong>Turkish Airlines</strong>: A rapidly expanding airline bridging Europe and Asia, offering diverse career opportunities.</li>
               </ul>
@@ -108,7 +108,7 @@ export default function EuropePilotSeniority() {
           heading: "References",
           content: (
             <>
-              <p>[1] <a href="https://www.eurocockpit.eu/news/why-its-time-roll-out-seniority-list-ryanair-pilots">Why it's time to roll out a seniority list for Ryanair pilots</a> - Eurocockpit</p>
+              <p> <a href="https://www.eurocockpit.eu/news/why-its-time-roll-out-seniority-list-ryanair-pilots">Why it's time to roll out a seniority list for Ryanair pilots</a> - Eurocockpit</p>
             </>
           )
         },
@@ -138,6 +138,11 @@ export default function EuropePilotSeniority() {
       relatedGuides={[
         { title: "How to Become a Pilot", href: "/europe/guides/pilot-training-costs", time: "15 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "EASA" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

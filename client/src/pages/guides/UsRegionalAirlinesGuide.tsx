@@ -355,6 +355,11 @@ export default function UsRegionalAirlinesGuide() {
         { title: "US Pilot Training Costs 2026", href: "/us/guides/pilot-training-costs-usa", time: "12 min" },
         { title: "Major Airline Pilot Career Path US", href: "/us/guides/major-airlines-hiring-usa", time: "18 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

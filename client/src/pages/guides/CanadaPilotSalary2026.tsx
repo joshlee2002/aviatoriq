@@ -19,11 +19,11 @@ export default function CanadaPilotSalary2026() {
           heading: "The State of Canadian Pilot Pay in 2026",
           content: (
             <>
-              <p>For years, Canadian pilot salaries lagged significantly behind their counterparts in the United States. However, 2024 and 2025 marked a historic turning point. Following intense union negotiations and the looming threat of strikes, major carriers like Air Canada and WestJet agreed to unprecedented pay increases to prevent their pilots from migrating south of the border [1].</p>
+              <p>For years, Canadian pilot salaries lagged significantly behind their counterparts in the United States. However, 2024 and 2025 marked a historic turning point. Following intense union negotiations and the looming threat of strikes, major carriers like Air Canada and WestJet agreed to unprecedented pay increases to prevent their pilots from migrating south of the border .</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
               </p>
-              <p>In 2026, the Canadian pilot compensation landscape is stronger than ever. Air Canada pilots secured a cumulative 42% pay increase over four years, fundamentally resetting the baseline for the entire industry [2]. While starting salaries at regional operators and flight schools remain modest, the top-end earning potential for a widebody Captain at a legacy carrier now comfortably exceeds $300,000 CAD per year.</p>
+              <p>In 2026, the Canadian pilot compensation landscape is stronger than ever. Air Canada pilots secured a cumulative 42% pay increase over four years, fundamentally resetting the baseline for the entire industry . While starting salaries at regional operators and flight schools remain modest, the top-end earning potential for a widebody Captain at a legacy carrier now comfortably exceeds $300,000 CAD per year.</p>
               <p>This guide breaks down exactly what you can expect to earn at every stage of a Canadian aviation career, from your first job building hours to the left seat of an international airliner.</p>
             </>
           )
@@ -54,7 +54,7 @@ export default function CanadaPilotSalary2026() {
               </table>
 
               <h3>WestJet (2026 Contract Rates)</h3>
-              <p>WestJet's integration of Sunwing and Swoop has consolidated its fleet. Their 2023/2024 contract negotiations resulted in a 24% pay bump, bringing them closely in line with Air Canada's narrowbody rates [3].</p>
+              <p>WestJet's integration of Sunwing and Swoop has consolidated its fleet. Their 2023/2024 contract negotiations resulted in a 24% pay bump, bringing them closely in line with Air Canada's narrowbody rates .</p>
               <table className="w-full text-sm text-left border-collapse my-4">
                 <thead>
                   <tr className="border-b border-white/10">
@@ -147,6 +147,11 @@ export default function CanadaPilotSalary2026() {
         { title: "Air Canada Jazz Cadet Program", href: "/canada/guides/air-canada-jazz-cadet", time: "8 min" },
         { title: "WestJet Encore First Officer Pathway", href: "/canada/guides/westjet-encore-cadet", time: "8 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

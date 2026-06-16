@@ -48,7 +48,7 @@ export default function HowToBecomePilotEurope() {
                 The initial examination must be conducted at an approved Aeromedical Centre (AeMC) within an EASA member state. It involves a rigorous assessment of your eyesight, hearing, heart function (ECG), lung capacity, blood and urine, and a general physical and psychological evaluation.
               </p>
               <p>
-                Costs vary significantly by country. In Western Europe (Germany, France, Ireland), expect to pay €500–€700. In Eastern Europe (e.g., Romania, Poland), the exact same EASA-certified medical can cost €150–€300 [1]. Crucially, an EASA Class 1 Medical issued by any member state is valid across all EASA states.
+                Costs vary significantly by country. In Western Europe (Germany, France, Ireland), expect to pay €500–€700. In Eastern Europe (e.g., Romania, Poland), the exact same EASA-certified medical can cost €150–€300 . Crucially, an EASA Class 1 Medical issued by any member state is valid across all EASA states.
               </p>
             </>
           ),
@@ -148,7 +148,7 @@ export default function HowToBecomePilotEurope() {
                 <strong>Southern Europe (Spain, Greece, Portugal):</strong> Excellent year-round flying weather means fewer delays. Very popular for integrated academies (e.g., FTEJerez, FlyBy, Egnatia, Global Aviation). Integrated costs range from €75,000 to €125,000.
               </p>
               <p>
-                <strong>Eastern Europe (Poland, Czech Republic, Hungary):</strong> Significantly lower living costs and aircraft rental rates. Schools like Bartolini Air (Poland) or F-Air (Czech Republic) offer modular and integrated routes that are 30–40% cheaper than Western European equivalents, while still maintaining strong airline connections (e.g., Ryanair mentorships) [2].
+                <strong>Eastern Europe (Poland, Czech Republic, Hungary):</strong> Significantly lower living costs and aircraft rental rates. Schools like Bartolini Air (Poland) or F-Air (Czech Republic) offer modular and integrated routes that are 30–40% cheaper than Western European equivalents, while still maintaining strong airline connections (e.g., Ryanair mentorships) .
               </p>
             </>
           ),
@@ -199,9 +199,9 @@ export default function HowToBecomePilotEurope() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Airmappr. "Pilot Training Cost in Europe 2026 — €40K to €140K." <em>Flight Training Data</em>.<br/>
-                [2] Bartolini Air. "Ryanair Mentored Programme." <em>Official Prospectus</em>.<br/>
-                [3] European Union Aviation Safety Agency (EASA). "Part-MED Medical Requirements." <em>EASA Regulations</em>.
+                 Airmappr. "Pilot Training Cost in Europe 2026 — €40K to €140K." <em>Flight Training Data</em>.<br/>
+                 Bartolini Air. "Ryanair Mentored Programme." <em>Official Prospectus</em>.<br/>
+                 European Union Aviation Safety Agency (EASA). "Part-MED Medical Requirements." <em>EASA Regulations</em>.
               </p>
             </>
           ),
@@ -212,6 +212,11 @@ export default function HowToBecomePilotEurope() {
         { title: "Pilot Training Timeline: How Long Does It Take?", href: "/guides/training-timeline", time: "5 min" },
         { title: "Am I Ready to Start Pilot Training?", href: "/guides/am-i-ready-to-start-pilot-training", time: "7 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "EASA" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

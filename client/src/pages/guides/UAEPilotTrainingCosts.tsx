@@ -130,6 +130,11 @@ export default function UAEPilotTrainingCosts() {
         { title: "How to Become a Pilot in the UAE", href: "/uae/guides/how-to-become-a-pilot-uae", time: "14 min" },
         { title: "Emirates Pilot Salary", href: "/uae/guides/emirates-pilot-salary", time: "8 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "GCAA UAE" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

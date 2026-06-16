@@ -150,6 +150,11 @@ export default function BestFlightSchoolsCanada() {
         { title: "Pilot Training Costs Canada", href: "/canada/guides/canada-pilot-training-costs", time: "10 min" },
         { title: "Air Canada Pilot Salary", href: "/canada/guides/air-canada-pilot-salary", time: "8 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

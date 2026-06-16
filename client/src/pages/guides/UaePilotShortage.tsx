@@ -228,6 +228,11 @@ export default function UaePilotShortage() {
         { title: "Pilot Training Costs 2026: Global Overview", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "12 min" },
         { title: "The Future of Aviation: Technology and Careers", href: "/new-zealand/guides/new-zealand-pilot-shortage", time: "10 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "GCAA UAE" },
+    { name: "EASA Part-FCL" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

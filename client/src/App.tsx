@@ -248,6 +248,7 @@ import SouthAfricaPilotTrainingCosts from "@/pages/guides/SouthAfricaPilotTraini
 import SouthAfricaCadetPrograms from "@/pages/guides/SouthAfricaCadetPrograms";
 import SouthAfricaPilotSalary2026 from "@/pages/guides/SouthAfricaPilotSalary2026";
 import SouthAfricaPilotShortage from "@/pages/guides/SouthAfricaPilotShortage";
+import BestFlightSchoolsSouthAfrica from "@/pages/guides/BestFlightSchoolsSouthAfrica";
 import SouthAfricaRegionalAirlines from "@/pages/guides/SouthAfricaRegionalAirlines";
 import SouthAfricaMilitaryToAirlines from "@/pages/guides/SouthAfricaMilitaryToAirlines";
 // New New Zealand guides
@@ -259,6 +260,7 @@ import NewZealandCadetPrograms from "@/pages/guides/NewZealandCadetPrograms";
 import AirNewZealandCadet from "@/pages/guides/AirNewZealandCadet";
 import NewZealandPilotSalary2026 from "@/pages/guides/NewZealandPilotSalary2026";
 import NewZealandPilotShortage from "@/pages/guides/NewZealandPilotShortage";
+import BestFlightSchoolsNewZealand from "@/pages/guides/BestFlightSchoolsNewZealand";
 import NewZealandRegionalAirlines from "@/pages/guides/NewZealandRegionalAirlines";
 // New hub pages
 import HomeUAE from "./pages/HomeUAE";
@@ -542,6 +544,7 @@ function Router() {
       <Route path="/south-africa/guides/south-africa-cadet-programs" component={SouthAfricaCadetPrograms} />
       <Route path="/south-africa/guides/pilot-salary-2026" component={SouthAfricaPilotSalary2026} />
       <Route path="/south-africa/guides/south-africa-pilot-shortage" component={SouthAfricaPilotShortage} />
+      <Route path="/south-africa/guides/best-flight-schools-south-africa" component={BestFlightSchoolsSouthAfrica} />
       <Route path="/south-africa/guides/south-africa-regional-airlines-pilot-training" component={SouthAfricaRegionalAirlines} />
       <Route path="/south-africa/guides/military-to-airlines" component={SouthAfricaMilitaryToAirlines} />
       {/* New Zealand hub and guides */}
@@ -554,17 +557,19 @@ function Router() {
       <Route path="/new-zealand/guides/air-new-zealand-cadet-pilot-training" component={AirNewZealandCadet} />
       <Route path="/new-zealand/guides/new-zealand-pilot-salary-2026" component={NewZealandPilotSalary2026} />
       <Route path="/new-zealand/guides/new-zealand-pilot-shortage" component={NewZealandPilotShortage} />
+      <Route path="/new-zealand/guides/best-flight-schools-new-zealand" component={BestFlightSchoolsNewZealand} />
       <Route path="/new-zealand/guides/new-zealand-regional-airlines-pilot-training" component={NewZealandRegionalAirlines} />
+      {/* New cluster guides */}
+      <Route path="/canada/guides/best-flight-schools-canada" component={BestFlightSchoolsCanada} />
+      <Route path="/australia/guides/best-flight-schools-australia" component={BestFlightSchoolsAustralia} />
+      <Route path="/europe/guides/best-flight-schools-europe" component={BestFlightSchoolsEurope} />
+      <Route path="/us/guides/airline-interview-prep" component={AirlineInterviewPrepUSA} />
+      <Route path="/guides/pilot-lifestyle-uk" component={PilotLifestyleUK} />
+      <Route path="/uae/guides/how-to-become-a-pilot-uae" component={HowToBecomePilotUAE} />
+      <Route path="/uae/guides/uae-pilot-training-costs" component={UAEPilotTrainingCosts} />
       {/* 404 */}
       <Route path="/404" component={NotFound} />
       <Route path="*" component={NotFound} />
-            <Route path=\/canada/guides/best-flight-schools-canada\ component={BestFlightSchoolsCanada} />
-        <Route path=\/australia/guides/best-flight-schools-australia\ component={BestFlightSchoolsAustralia} />
-        <Route path=\/europe/guides/best-flight-schools-europe\ component={BestFlightSchoolsEurope} />
-        <Route path=\/us/guides/airline-interview-prep\ component={AirlineInterviewPrepUSA} />
-        <Route path=\/guides/pilot-lifestyle-uk\ component={PilotLifestyleUK} />
-        <Route path=\/uae/guides/how-to-become-a-pilot-uae\ component={HowToBecomePilotUAE} />
-        <Route path=\/uae/guides/uae-pilot-training-costs\ component={UAEPilotTrainingCosts} />
       </Switch>
     </>  );
 }

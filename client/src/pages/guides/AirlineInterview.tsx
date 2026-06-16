@@ -133,6 +133,11 @@ export default function AirlineInterview() {
         { title: "Airline Simulator Assessment Guide", href: "/guides/airline-simulator-assessment", time: "8 min" },
         { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

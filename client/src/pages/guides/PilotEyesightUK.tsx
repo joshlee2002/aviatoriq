@@ -125,7 +125,7 @@ const PilotEyesightUK = () => {
             <>
               <p>Achieving a Class 1 medical certificate is just the first step; maintaining optimal vision is a career-long commitment for a pilot. Regular eye check-ups are essential, not just for renewing your medical certificate, but also for proactive health management. Any changes in vision, even minor ones, should be reported to your AME.</p>
               <p>Pilots are required to carry a spare set of corrective lenses (glasses or contact lenses) at all times when flying, ensuring that a sudden loss or damage to their primary correction does not compromise safety. This is a critical operational requirement that underscores the importance of reliable vision.</p>
-              <p>Adopting healthy lifestyle habits, such as a balanced diet rich in eye-supporting nutrients, protecting your eyes from excessive UV exposure, and managing screen time, can contribute to long-term eye health. Ultimately, a pilot's vision is a precious asset, and its diligent care is paramount for a successful and safe aviation career in the UK.</p>
+              <p>Adopting healthy lifestyle habits, such as a balanced diet rich in eye-supporting nutrients, protecting your eyes from excessive UV exposure, and managing screen time, can contribute to long-term eye health. a pilot's vision is a precious asset, and its diligent care is paramount for a successful and safe aviation career in the UK.</p>
             </>
           ),
         },
@@ -141,7 +141,13 @@ const PilotEyesightUK = () => {
           time: "8 min read",
         },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-MED", url: "https://www.easa.europa.eu/en/document-library/regulations/commission-regulation-eu-no-11782011" },
+    { name: "FAA" },
+    { name: "CASA" },
+  ]}/>
   );
 };
 

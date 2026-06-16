@@ -38,7 +38,7 @@ const PilotTrainingFinance2026 = () => {
                 Before reading any further, there is one critical fact that most pilot training finance guides get wrong in 2026: <strong>no major UK high-street bank currently offers a dedicated pilot training loan.</strong>
               </p>
               <p>
-                BALPA (the British Airline Pilots' Association) confirmed this explicitly on their website: "In the past HSBC, NatWest, and BBVA bank have offered professional development loans. However there are currently no banks offering loans for pilot training." [1]
+                BALPA (the British Airline Pilots' Association) confirmed this explicitly on their website: "In the past HSBC, NatWest, and BBVA bank have offered professional development loans. However there are currently no banks offering loans for pilot training." 
               </p>
               <p>
                 This matters because many guides — including some from flight schools themselves — still reference the old HSBC Professional Qualifications Loan as if it is available. It is not. If you walk into HSBC asking for a pilot training loan, you will be offered a standard personal loan (maximum £50,000 for Premier customers, £30,000 for standard customers) at a rate that does not reflect the specialised nature of your qualification.
@@ -132,13 +132,13 @@ const PilotTrainingFinance2026 = () => {
                 The only way to train as a pilot in the UK without taking on debt is to be selected for a fully funded cadet programme. In 2026, two programmes are active:
               </p>
               <p>
-                <strong>British Airways Speedbird Pilot Academy</strong> funds the full cost of training for approximately 100 cadets per year. Training is through Skyborne or FTEJerez. Cadets receive an MPL licence and a direct pathway to a First Officer role with British Airways. The programme received more than 20,000 applications in its first year. Applicants must be aged 18–55 with six GCSEs at grade A–C including Maths, English, and Science. [3]
+                <strong>British Airways Speedbird Pilot Academy</strong> funds the full cost of training for approximately 100 cadets per year. Training is through Skyborne or FTEJerez. Cadets receive an MPL licence and a direct pathway to a First Officer role with British Airways. The programme received more than 20,000 applications in its first year. Applicants must be aged 18–55 with six GCSEs at grade A–C including Maths, English, and Science. 
               </p>
               <p>
-                <strong>Jet2FlightPath</strong> offers 60 fully funded places per year for an 18-month ATPL course, including a paid type rating and progression into employment with Jet2. The programme was launched in May 2025 with an explicit focus on social mobility and diversity. [3]
+                <strong>Jet2FlightPath</strong> offers 60 fully funded places per year for an 18-month ATPL course, including a paid type rating and progression into employment with Jet2. The programme was launched in May 2025 with an explicit focus on social mobility and diversity. 
               </p>
               <p>
-                <strong>TUI MPL programme</strong> is paused for 2026. TUI confirmed in January 2026 that they would not open the scheme as it was "not required to meet pilot demand for Summer 2028." The programme may return in future years. [3]
+                <strong>TUI MPL programme</strong> is paused for 2026. TUI confirmed in January 2026 that they would not open the scheme as it was "not required to meet pilot demand for Summer 2028." The programme may return in future years. 
               </p>
               <p>
                 Apply for these programmes. But do not make them your only plan. The acceptance rates are under 1%. You need a parallel self-funded strategy.
@@ -170,7 +170,7 @@ const PilotTrainingFinance2026 = () => {
           content: (
             <>
               <p>
-                Lendwise is currently the primary specialist education lender for UK pilot training. It is FCA-regulated, peer-to-peer, and offers unsecured loans of £5,000–£100,000 with a fixed interest rate personalised to your profile. The representative APR is 12.73% over 10 years, with repayments beginning after training ends. No guarantor or property collateral is required. [2]
+                Lendwise is currently the primary specialist education lender for UK pilot training. It is FCA-regulated, peer-to-peer, and offers unsecured loans of £5,000–£100,000 with a fixed interest rate personalised to your profile. The representative APR is 12.73% over 10 years, with repayments beginning after training ends. No guarantor or property collateral is required. 
               </p>
               <p>
                 The repayment reality at 12.73% APR is significant and must be understood before borrowing:
@@ -209,13 +209,13 @@ const PilotTrainingFinance2026 = () => {
                 </table>
               </div>
               <p className="text-xs text-white/50 mt-2">
-                Calculated at 12.73% APR representative over 120 months. Your actual rate will depend on your credit profile. Lendwise's representative example: £30,825 over 120 months at 12.73% APR = £509.26/month, total repayable £61,199.65. [2]
+                Calculated at 12.73% APR representative over 120 months. Your actual rate will depend on your credit profile. Lendwise's representative example: £30,825 over 120 months at 12.73% APR = £509.26/month, total repayable £61,199.65. 
               </p>
               <p>
                 At a starting First Officer salary of £45,000–£55,000 gross (approximately £35,000–£42,000 net), a £100,000 Lendwise loan at £1,653/month represents 47–57% of net monthly income. This is a significant financial burden and must be stress-tested against a scenario where you do not get a job immediately after training.
               </p>
               <p>
-                BALPA's warning is worth repeating: "Repayments can be around £1,500 a month depending on the terms, and if employment is not secured immediately upon graduation a strategy needs to be in place to meet the obligation." [1]
+                BALPA's warning is worth repeating: "Repayments can be around £1,500 a month depending on the terms, and if employment is not secured immediately upon graduation a strategy needs to be in place to meet the obligation." 
               </p>
             </>
           ),
@@ -241,7 +241,7 @@ const PilotTrainingFinance2026 = () => {
           content: (
             <>
               <p>
-                Joining the RAF as a pilot is the only route to a fully funded flying career with zero debt and a salary from day one. The MoD funds all training costs — estimated at £953,817 for multi-engine pilots and £5,362,085 for fast jet pilots. [3]
+                Joining the RAF as a pilot is the only route to a fully funded flying career with zero debt and a salary from day one. The MoD funds all training costs — estimated at £953,817 for multi-engine pilots and £5,362,085 for fast jet pilots. 
               </p>
               <p>
                 RAF officer cadets begin on approximately £34,600/year. On promotion to Flight Lieutenant (typically within 3 years), pay rises to £64,600+. In exchange, pilots commit to a service period, typically 12 years from the award of wings.
@@ -263,7 +263,7 @@ const PilotTrainingFinance2026 = () => {
                 Scholarships and bursaries will not fund your entire training, but they can make a meaningful difference at the margins:
               </p>
               <p>
-                <strong>Air League Educational Trust:</strong> The Air League has distributed over £2.6 million in scholarships and bursaries to young people across the UK over the past decade. Awards cover flying and gliding scholarships, engineering bursaries, and ground school costs. Typical awards are £500–£5,000. Applications open annually — check airleague.co.uk for current deadlines. [3]
+                <strong>Air League Educational Trust:</strong> The Air League has distributed over £2.6 million in scholarships and bursaries to young people across the UK over the past decade. Awards cover flying and gliding scholarships, engineering bursaries, and ground school costs. Typical awards are £500–£5,000. Applications open annually — check airleague.co.uk for current deadlines. 
               </p>
               <p>
                 <strong>Royal Aero Club Trust:</strong> Offers bursaries for young people pursuing aviation careers. Awards are competitive and typically £500–£2,000.
@@ -301,7 +301,7 @@ const PilotTrainingFinance2026 = () => {
           content: (
             <>
               <p>
-                BALPA's position is worth quoting in full: "Ultimately a huge financial commitment is required. Salaries have been driven down in real terms over the years due to inflation. You must make a major decision as to whether the outlay and associated risks can be justified when measured against career potential and associated earnings." [1]
+                BALPA's position is worth quoting in full: "a huge financial commitment is required. Salaries have been driven down in real terms over the years due to inflation. You must make a major decision as to whether the outlay and associated risks can be justified when measured against career potential and associated earnings." 
               </p>
               <p>
                 The investment can be justified — a BA long-haul captain earns £140,000–£180,000/year, and even a regional First Officer earns £45,000–£55,000 within a year of qualification. But the path from training to that salary is not guaranteed, and the loan repayments begin regardless of whether you have a job.
@@ -317,17 +317,22 @@ const PilotTrainingFinance2026 = () => {
           content: (
             <>
               <p className="text-xs text-white/50">
-                [1] BALPA. "Financing your training." <em>balpa.org/becoming-a-pilot/financing-your-training/</em>. Accessed June 2026.<br/>
-                [2] Lendwise. "Average borrower rates of 12.73% APR." <em>lendwise.com</em>. Accessed June 2026. Representative example: £30,825 over 120 months at 12.73% APR = £509.26/month, total repayable £61,199.65.<br/>
-                [3] Aerospace Global News. "Pilot training: How affordable is it and what are the funding options for cadets?" February 2026. <em>aerospaceglobalnews.com</em>.<br/>
-                [4] HSBC UK. "Loans." <em>hsbc.co.uk/loans/</em>. Accessed June 2026. Standard personal loan up to £30,000 at 6.4% APR representative; Premier up to £50,000 at 5.8% APR representative.<br/>
-                [5] Student Loans Company. "Tuition fee loans 2026/27." Threshold £9,535/year for eligible courses.
+                 BALPA. "Financing your training." <em>balpa.org/becoming-a-pilot/financing-your-training/</em>. Accessed June 2026.<br/>
+                 Lendwise. "Average borrower rates of 12.73% APR." <em>lendwise.com</em>. Accessed June 2026. Representative example: £30,825 over 120 months at 12.73% APR = £509.26/month, total repayable £61,199.65.<br/>
+                 Aerospace Global News. "Pilot training: How affordable is it and what are the funding options for cadets?" February 2026. <em>aerospaceglobalnews.com</em>.<br/>
+                 HSBC UK. "Loans." <em>hsbc.co.uk/loans/</em>. Accessed June 2026. Standard personal loan up to £30,000 at 6.4% APR representative; Premier up to £50,000 at 5.8% APR representative.<br/>
+                 Student Loans Company. "Tuition fee loans 2026/27." Threshold £9,535/year for eligible courses.
               </p>
             </>
           ),
         },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 };
 

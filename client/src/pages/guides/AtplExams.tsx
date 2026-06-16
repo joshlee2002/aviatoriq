@@ -37,7 +37,7 @@ export default function AtplExams() {
                 There are 13 exams in total (reduced from 14 after VFR and IFR Communications were merged). They cover everything from basic aerodynamics to complex high-altitude meteorology and human psychology. The sheer volume of information is what makes the ATPL theory phase notoriously difficult — it is often described as trying to drink from a firehose.
               </p>
               <p>
-                You must pass all 13 exams within an 18-month window, starting from the end of the calendar month in which you attempt your first exam. You have a maximum of 6 sittings (a sitting is a consecutive 10-day period where you can take multiple exams) and a maximum of 4 attempts per subject [1].
+                You must pass all 13 exams within an 18-month window, starting from the end of the calendar month in which you attempt your first exam. You have a maximum of 6 sittings (a sitting is a consecutive 10-day period where you can take multiple exams) and a maximum of 4 attempts per subject .
               </p>
             </>
           ),
@@ -50,7 +50,7 @@ export default function AtplExams() {
                 The difficulty of an ATPL exam rarely correlates with how complex the subject is in the real world. Difficulty is driven by how the UK CAA/EASA phrases the questions, the time pressure of the exam, and the sheer volume of rote memorisation required.
               </p>
               <p>
-                Based on historic pass rate data and feedback from thousands of candidates, here is the honest ranking of the 13 subjects, from easiest to hardest [2].
+                Based on historic pass rate data and feedback from thousands of candidates, here is the honest ranking of the 13 subjects, from easiest to hardest .
               </p>
               
               <div className="overflow-x-auto my-6">
@@ -219,8 +219,8 @@ export default function AtplExams() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] UK Civil Aviation Authority (CAA). "Commercial pilot theory exams." <em>CAA Official Guidelines</em>.<br/>
-                [2] ClearATPL. "13 ATPL Exams Ranked: Easiest to Hardest." <em>Aviation Training Data</em>.
+                 UK Civil Aviation Authority (CAA). "Commercial pilot theory exams." <em>CAA Official Guidelines</em>.<br/>
+                 ClearATPL. "13 ATPL Exams Ranked: Easiest to Hardest." <em>Aviation Training Data</em>.
               </p>
             </>
           ),
@@ -231,6 +231,11 @@ export default function AtplExams() {
         { title: "Pilot Training Costs UK", href: "/guides/pilot-training-costs", time: "8 min" },
         { title: "How to Become a Pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "14 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

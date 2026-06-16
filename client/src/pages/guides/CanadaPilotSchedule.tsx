@@ -31,7 +31,7 @@ export default function CanadaPilotSchedule() {
           heading: "Understanding Canadian Pilot Licenses and Their Requirements",
           content: (
             <>
-              <p>The foundation of any pilot career in Canada begins with a series of licenses, each building upon the last. Transport Canada (TC) oversees all aviation licensing, ensuring high standards of safety and proficiency. The primary licenses you will pursue include the Private Pilot License (PPL), Commercial Pilot License (CPL), and ultimately, the Airline Transport Pilot License (ATPL).</p>
+              <p>The foundation of any pilot career in Canada begins with a series of licenses, each building upon the last. Transport Canada (TC) oversees all aviation licensing, ensuring high standards of safety and proficiency. The primary licenses you will pursue include the Private Pilot License (PPL), Commercial Pilot License (CPL), and the Airline Transport Pilot License (ATPL).</p>
               <p>Each license has specific aeronautical experience requirements, including flight hours, cross-country time, instrument time, and night flying. Theoretical knowledge is assessed through written examinations, and practical skills are evaluated during flight tests. Understanding these prerequisites is crucial for planning an effective training schedule.</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
@@ -156,6 +156,11 @@ export default function CanadaPilotSchedule() {
         { title: "Pilot Training Costs Canada 2026", href: "/canada/guides/canada-pilot-training-costs", time: "12 min" },
         { title: "Choosing a Flight School in Canada", href: "/canada/guides/canada-pilot-training-costs", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "Transport Canada (TC)" },
+    { name: "Transport Canada", url: "https://tc.canada.ca/en/aviation" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 }

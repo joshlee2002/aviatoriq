@@ -204,7 +204,12 @@ const PplRequirementsUSA = () => {
           time: "8 min read",
         },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 };
 

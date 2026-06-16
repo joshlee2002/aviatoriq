@@ -37,7 +37,7 @@ export default function DeltaPropelGuide() {
                 The core benefit of the Propel program is the <strong>Qualified Job Offer (QJO)</strong>. If you are accepted into Propel, you receive a QJO that details your specific, streamlined path to becoming a Delta pilot. 
               </p>
               <p>
-                Crucially, Propel uses a <strong>single interview approach</strong>. You interview once to get into the program. If you pass, you do not have to interview again to join Endeavor Air (Delta's regional subsidiary), and you do not have to interview again to transition to mainline Delta [1].
+                Crucially, Propel uses a <strong>single interview approach</strong>. You interview once to get into the program. If you pass, you do not have to interview again to join Endeavor Air (Delta's regional subsidiary), and you do not have to interview again to transition to mainline Delta .
               </p>
             </>
           ),
@@ -126,7 +126,7 @@ export default function DeltaPropelGuide() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] Delta Air Lines. "Propel Pilot Career Path Program." <em>Delta Careers Official Website</em>.
+                 Delta Air Lines. "Propel Pilot Career Path Program." <em>Delta Careers Official Website</em>.
               </p>
             </>
           ),
@@ -137,6 +137,11 @@ export default function DeltaPropelGuide() {
         { title: "ATP Flight School Review", href: "/us/guides/atp-flight-school-guide", time: "11 min" },
         { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "12 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

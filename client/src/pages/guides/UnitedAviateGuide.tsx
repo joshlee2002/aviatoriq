@@ -34,7 +34,7 @@ export default function UnitedAviateGuide() {
                 Not sure if you qualify? Try our free <Link href="/us/cadet-eligibility" className="text-blue-400 underline">US Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
               </p>
               <p>
-                If you are accepted into the program, you receive a <strong>Conditional Job Offer (CJO)</strong> as a United Airlines First Officer. You only have to interview with United once. After that, your job is secure, provided you meet the strict experience and performance requirements along the way [1].
+                If you are accepted into the program, you receive a <strong>Conditional Job Offer (CJO)</strong> as a United Airlines First Officer. You only have to interview with United once. After that, your job is secure, provided you meet the strict experience and performance requirements along the way .
               </p>
               <p>
                 However, the program is frequently misunderstood. The biggest point of confusion is the difference between the <em>Aviate Program</em> and the <em>United Aviate Academy</em>.
@@ -120,7 +120,7 @@ export default function UnitedAviateGuide() {
           content: (
             <>
               <p className="text-xs text-white/50 space-y-1">
-                [1] United Airlines. "Aviate Program Frequently Asked Questions." <em>United Aviate Official Website</em>. <a href="https://unitedaviate.com/" className="underline" target="_blank" rel="noopener noreferrer">unitedaviate.com</a>
+                 United Airlines. "Aviate Program Frequently Asked Questions." <em>United Aviate Official Website</em>. <a href="https://unitedaviate.com/" className="underline" target="_blank" rel="noopener noreferrer">unitedaviate.com</a>
               </p>
             </>
           ),
@@ -131,6 +131,11 @@ export default function UnitedAviateGuide() {
         { title: "ATP Flight School Review", href: "/us/guides/atp-flight-school-guide", time: "11 min" },
         { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "12 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

@@ -245,12 +245,12 @@ export default function UsCadetPrograms() {
           content: (
             <>
               <p className="text-xs text-white/50">
-                [1] United Aviate Academy. "Programme Costs and Structure." <em>unitedaviate.com</em>. Accessed June 2026.<br/>
-                [2] ATP Flight School. "Airline Career Pilot Program — 2026 Pricing." <em>atpflightschool.com</em>. Accessed June 2026.<br/>
-                [3] Delta Air Lines. "Delta Propel Pilot Career Development Programme." <em>delta.com/careers</em>. Accessed June 2026.<br/>
-                [4] American Airlines. "Cadet Academy." <em>aacadetacademy.com</em>. Accessed June 2026.<br/>
-                [5] Southwest Airlines. "Destination 225°." <em>southwest.com/careers</em>. Accessed June 2026 (programme paused).<br/>
-                [6] Boeing. "Pilot &amp; Technician Outlook 2023–2042." <em>boeing.com</em>.
+                 United Aviate Academy. "Programme Costs and Structure." <em>unitedaviate.com</em>. Accessed June 2026.<br/>
+                 ATP Flight School. "Airline Career Pilot Program — 2026 Pricing." <em>atpflightschool.com</em>. Accessed June 2026.<br/>
+                 Delta Air Lines. "Delta Propel Pilot Career Development Programme." <em>delta.com/careers</em>. Accessed June 2026.<br/>
+                 American Airlines. "Cadet Academy." <em>aacadetacademy.com</em>. Accessed June 2026.<br/>
+                 Southwest Airlines. "Destination 225°." <em>southwest.com/careers</em>. Accessed June 2026 (programme paused).<br/>
+                 Boeing. "Pilot &amp; Technician Outlook 2023–2042." <em>boeing.com</em>.
               </p>
             </>
           ),
@@ -262,6 +262,11 @@ export default function UsCadetPrograms() {
         { title: "Part 61 vs Part 141: Which Is Right for You?", href: "/us/guides/part-61-vs-141", time: "10 min" },
         { title: "US Pilot Salary 2026", href: "/us/guides/airline-pilot-salary-usa", time: "10 min" },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 }

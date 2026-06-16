@@ -240,7 +240,12 @@ const FrozenAtplUK = () => {
         { title: "UK Class 1 Medical: What to Expect", href: "/guides/class-1-medical", time: "10 min read" },
         { title: "UK Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "10 min read" },
       ]}
-    />
+    
+      sources={[
+    { name: "FAA" },
+    { name: "FAA Aeronautical Information Manual" },
+    { name: "Boeing Commercial Market Outlook" },
+  ]}/>
   );
 };
 

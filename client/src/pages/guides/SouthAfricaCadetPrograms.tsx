@@ -150,7 +150,7 @@ export default function SouthAfricaCadetPrograms() {
                   </tr>
                 </tbody>
               </table>
-              <p>These figures represent the direct costs associated with flight and ground training. It is important to note that many students may require additional hours to achieve proficiency, which will increase the overall cost.</p>
+              <p>These figures represent the direct costs associated with flight and ground training. many students may require additional hours to achieve proficiency, which will increase the overall cost.</p>
               <h4>Additional Costs to Consider:</h4>
               <p>Beyond the core training, several other expenses contribute to the total investment:</p>
               <ul>
@@ -231,6 +231,11 @@ export default function SouthAfricaCadetPrograms() {
         { title: "Pilot Training Costs South Africa 2026", href: "/south-africa/guides/pilot-training-costs", time: "12 min" },
         { title: "SACAA Pilot Licence Requirements Explained", href: "/south-africa/guides/sacpl-requirements", time: "10 min" }
       ]}
-    />
+    
+      sources={[
+    { name: "South African Civil Aviation Authority (SACAA)", url: "https://www.caa.co.za" },
+    { name: "Boeing Commercial Market Outlook" },
+    { name: "IATA" },
+  ]}/>
   );
 }

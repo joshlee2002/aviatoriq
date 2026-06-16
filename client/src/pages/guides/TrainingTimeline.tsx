@@ -74,7 +74,7 @@ const TrainingTimeline = () => {
           content: (
             <>
               <p>
-                Regardless of whether you choose the integrated or modular route, certain core phases of training are universal. Understanding the typical duration for each of these components will help you construct a more accurate personal timeline. It's important to remember that these are averages, and individual progress can vary.
+                Regardless of whether you choose the integrated or modular route, certain core phases of training are universal. Understanding the typical duration for each of these components will help you construct a more accurate personal timeline. It's important to these are averages, and individual progress can vary.
               </p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
@@ -211,7 +211,12 @@ const TrainingTimeline = () => {
         },
       ]}
     scopeBanner={<><GuideScopeBanner scope="Timelines in this guide are based on UK/EASA pilot training. Timelines vary by country and training provider." usHref="/us/guides/pilot-training-timeline-usa" usLabel="View USA timeline →" /></>}
-    />
+    
+      sources={[
+    { name: "UK Civil Aviation Authority (CAA)" },
+    { name: "EASA Part-FCL" },
+    { name: "BALPA Pay & Conditions Survey" },
+  ]}/>
   );
 };
 

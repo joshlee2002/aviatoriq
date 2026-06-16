@@ -190,7 +190,13 @@ const AdhdFaaMedical = () => {
           time: "8 min read",
         },
       ]}
-    />
+    
+      sources={[
+    { name: "UK Federal Aviation Administration (CAA)" },
+    { name: "EASA Part-MED", url: "https://www.easa.europa.eu/en/document-library/regulations/commission-regulation-eu-no-11782011" },
+    { name: "FAA" },
+    { name: "CASA" },
+  ]}/>
   );
 };
 
