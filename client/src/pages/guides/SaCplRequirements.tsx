@@ -12,7 +12,7 @@ export default function SaCplRequirements() {
       category="South Africa Pilot Training"
       canonical="https://aviatoriq.com/south-africa/guides/sacpl-requirements"
       metaDescription="Detailed guide to obtaining a Commercial Pilot License (CPL) in South Africa for 2026, covering SACAA requirements, training costs, and career opportunities."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

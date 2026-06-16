@@ -12,7 +12,7 @@ export default function UsPilotSalary2026() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/us/guides/us-pilot-salary-2026"
       metaDescription="US airline pilot salary 2026: Delta, United, American, and Southwest pay scales confirmed. Regional FOs start at $90k–$110k. Major airline captains earn $465,000–$520,000. Full breakdown inside."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       faqSchema={[
         { question: "What is the average salary for a US airline pilot in 2026?", answer: "The Bureau of Labor Statistics reported a median annual wage of $226,600 for airline pilots in May 2024. In 2026, first-year regional FOs earn $90,000–$110,000 in total compensation, while major airline widebody captains earn $465,000–$520,000 annually." },

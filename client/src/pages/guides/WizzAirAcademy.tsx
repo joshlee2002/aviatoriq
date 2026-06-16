@@ -10,7 +10,7 @@ export default function WizzAirAcademy() {
       readTime="8 min read"
       heroImage="/manus-storage/wizzair-cadet_8bbabaaa.jpg"
       ctaHref="/quiz"
-      ctaText="Check your readiness for cadet programmes"
+      ctaText="Find my training route"
       relatedGuides={[
         { title: "Ryanair Cadet Pilot Programme: Complete Guide", href: "/guides/ryanair-cadet-programme", time: "8 min" },
         { title: "easyJet Generation Pilot Programme: Complete Guide", href: "/guides/easyjet-generation-pilot", time: "9 min" },

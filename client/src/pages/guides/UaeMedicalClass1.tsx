@@ -11,7 +11,7 @@ export default function UaeMedicalClass1() {
       category="Pilot Medicals"
       canonical="https://aviatoriq.com/uae/guides/uae-medical-class-1"
       metaDescription="A detailed guide for aspiring and current pilots on the UAE GCAA Class 1 Medical Certificate, covering 2026 requirements, costs, and approved clinics."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

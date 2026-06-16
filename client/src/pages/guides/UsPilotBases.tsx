@@ -11,7 +11,7 @@ export default function UsPilotBases() {
       category="Pilot Lifestyle"
       canonical="https://aviatoriq.com/us/guides/us-pilot-training-2026"
       metaDescription="How US airline pilot base assignments work, which bases are most desirable, and how seniority determines where you live and fly in 2026."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

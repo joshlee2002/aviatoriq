@@ -12,7 +12,7 @@ export default function PilotAptitudeTestPrep() {
       readTime="11 min read"
       heroImage="/manus-storage/aptitude-test_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers aptitude tests commonly used by UK and European airlines (PILAPT, Compass, Cut-e)." usHref="/us/guides/pilot-aptitude-test-usa" usLabel="View USA aptitude test guide →" />}
       faqSchema={[
         { question: "What is a pilot aptitude test?", answer: "A pilot aptitude test is a series of computer-based assessments designed to measure the cognitive and psychomotor skills required for flight training. They test spatial awareness, multi-tasking, numerical reasoning, and reaction time." },

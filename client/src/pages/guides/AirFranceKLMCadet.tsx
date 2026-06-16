@@ -12,7 +12,7 @@ export default function AirFranceKLMCadet() {
       category="Europe Pilot Training"
       canonical="https://aviatoriq.com/europe/guides/air-france-klm-cadet-pilot-program"
       metaDescription="Explore the Air France and KLM Cadet Pilot Programs for 2026. Detailed insights into eligibility, selection process, training, costs, and career opportunities."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

@@ -12,7 +12,7 @@ const HowToBecomePilot = () => {
       readTime="14 min read"
       heroImage="/manus-storage/how-to-become-pilot_a1ed518f.jpg"
       ctaHref="/quiz"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       faqSchema={[
         { question: "How long does it take to become a pilot in the UK?", answer: "Integrated ATPL training takes 18–24 months full-time. Modular ATPL training typically takes 3–5 years part-time. From zero experience to airline First Officer usually takes 2–4 years depending on the route and whether you secure a cadet programme place." },
         { question: "How much does it cost to become a pilot in the UK?", answer: "Integrated ATPL training costs £90,000–£130,000. Modular ATPL training costs £40,000–£80,000 depending on how many modules you complete and where. A PPL alone costs £8,000–£15,000. Total costs including living expenses and type rating can reach £150,000+ for integrated routes." },

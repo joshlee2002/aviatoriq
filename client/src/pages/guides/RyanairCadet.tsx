@@ -10,7 +10,7 @@ export default function RyanairCadet() {
       readTime="8 min read"
       heroImage="/manus-storage/ryanair-cadet_432ca710.jpg"
       ctaHref="/quiz"
-      ctaText="Check your readiness for cadet programmes"
+      ctaText="Find my training route"
       relatedGuides={[
         { title: "BA Speedbird Academy 2026: Complete Guide", href: "/guides/ba-speedbird-academy", time: "10 min" },
         { title: "easyJet Generation Pilot Programme: Complete Guide", href: "/guides/easyjet-generation-pilot", time: "9 min" },

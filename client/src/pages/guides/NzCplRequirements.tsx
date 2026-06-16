@@ -12,7 +12,7 @@ export default function NzCplRequirements() {
       category="New Zealand Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/nz-cpl-requirements"
       metaDescription="A comprehensive guide to New Zealand Commercial Pilot License (CPL) requirements for 2026, including age, medical, flight hours, costs, and career paths."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

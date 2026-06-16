@@ -13,7 +13,7 @@ export default function UnitedAviateGuide() {
       heroImage="/manus-storage/united-aviate_9d4c2b8e.jpg"
       category="US Pilot Training"
       ctaHref="/us/roadmap"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers the United Aviate program in the USA." globalHref="/guides/cadet-pilot-programmes-uk" globalLabel="View UK cadet programmes →" />}
       faqSchema={[
         { question: "What is the United Aviate program?", answer: "Aviate is United Airlines' pilot career development program. It provides a secure path to the United flight deck. Participants who are accepted receive a Conditional Job Offer (CJO) as a United First Officer, subject to meeting experience requirements." },

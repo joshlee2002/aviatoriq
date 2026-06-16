@@ -12,7 +12,7 @@ export default function CanadaPilotCommuting() {
       category="Pilot Lifestyle"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-commuting"
       metaDescription="Comprehensive guide for Canadian pilots on commuting, covering Transport Canada regulations, major airline policies, costs, and strategies for a successful career."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

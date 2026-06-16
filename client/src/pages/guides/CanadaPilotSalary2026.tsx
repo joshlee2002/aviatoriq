@@ -12,7 +12,7 @@ export default function CanadaPilotSalary2026() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-salary-2026"
       metaDescription="Canadian pilot salary guide 2026. Real pay data for Air Canada, WestJet, Porter, Flair, and regional airlines. First Officer and Captain pay scales explained."
-      ctaText="Generate your career roadmap"
+      ctaText="Generate my personalised roadmap"
       ctaHref="/quiz"
       sections={[
         {

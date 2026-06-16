@@ -12,7 +12,7 @@ export default function UsPilotSeniority() {
       category="Career Progression"
       canonical="https://aviatoriq.com/us/guides/us-pilot-seniority"
       metaDescription="Explore the profound impact of seniority on US airline pilot careers in 2026, covering pay, schedules, bases, aircraft, and career advancement."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

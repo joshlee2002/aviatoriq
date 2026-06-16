@@ -12,7 +12,7 @@ export default function WomenInAviation() {
       readTime="11 min read"
       heroImage="/manus-storage/women-aviation_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="Scholarships and organisations in this guide are primarily UK-based." usHref="/us/guides/women-in-aviation-usa" usLabel="View USA scholarships →" />}
       faqSchema={[
         { question: "What percentage of UK pilots are women?", answer: "Women represent approximately 5% of commercial pilots in the UK. The CAA issued 301 pilot licences to women in 2023, up from 239 in 2019, but the overall proportion remains very low." },

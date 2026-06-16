@@ -12,7 +12,7 @@ export default function AtplExams() {
       readTime="12 min read"
       heroImage="/manus-storage/atpl-exams_5e2d1a8c.jpg"
       ctaHref="/quiz"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers the 13 ATPL theory exams under UK CAA/EASA regulations. The FAA has a different exam structure." usHref="/us/guides/atp-certificate-usa" usLabel="View USA ATP certificate →" />}
       faqSchema={[
         { question: "How many ATPL exams are there?", answer: "There are 13 ATPL theory exams under the current UK CAA and EASA syllabus (previously 14, but VFR and IFR Communications were merged). You must pass all 13 to obtain a Frozen ATPL." },

@@ -12,7 +12,7 @@ export default function SouthAfricaCadetPrograms() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/south-africa/guides/south-africa-cadet-programs"
       metaDescription="Explore South Africa's top pilot cadet programs for 2026. Understand SACAA regulations, SAA requirements, training costs, and funding options for a successful aviation career."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

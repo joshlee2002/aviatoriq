@@ -12,7 +12,7 @@ export default function ModularVsIntegratedDeep() {
       readTime="12 min read"
       heroImage="/manus-storage/integrated-modular_9d4c2b8e.jpg"
       ctaHref="/tools/integrated-vs-modular"
-      ctaText="Take the route decider quiz"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers the European/UK EASA and CAA training structures." usHref="/us/guides/part-61-vs-141" usLabel="View USA Part 61 vs 141 guide →" />}
       faqSchema={[
         { question: "What is the difference between integrated and modular pilot training?", answer: "Integrated training is a full-time, structured course taking you from zero experience to a commercial pilot in 18-24 months at one school. Modular training allows you to complete the licences step-by-step (PPL, ATPL theory, CPL, IR) at your own pace, often at different schools." },

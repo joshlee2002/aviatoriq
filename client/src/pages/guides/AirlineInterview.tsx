@@ -12,7 +12,7 @@ export default function AirlineInterview() {
       readTime="12 min read"
       heroImage="/manus-storage/airline-interview_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Check your career readiness"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers UK airline selection processes. US airline interviews differ significantly." usHref="/us/guides/airline-interview-usa" usLabel="View USA airline interview guide →" />}
       faqSchema={[
         { question: "What is the airline pilot selection process?", answer: "UK airline selection typically involves: online application, cognitive aptitude tests (PILAPT, Compass, or similar), an assessment centre (group exercise, further aptitude tests), a simulator assessment (raw data flying, CRM scenarios), and a final panel interview." },

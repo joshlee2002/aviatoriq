@@ -12,7 +12,7 @@ export default function EmiratesCadetPilotProgram() {
       category="UAE Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/emirates-cadet-pilot-program"
       metaDescription="Explore the Emirates Cadet Pilot Program for 2026. Learn about eligibility, GCAA regulations, training at EFTA, costs in AED, and career opportunities with Emirates."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

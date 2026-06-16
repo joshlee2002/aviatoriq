@@ -12,7 +12,7 @@ export default function FaaMedicalClass3() {
       category="Medical Certification"
       canonical="https://aviatoriq.com/us/guides/faa-medical-class-3"
       metaDescription="Comprehensive 2026 guide to the FAA Class 3 Medical Certificate. Learn about vision and hearing standards, the MedXPress process, costs, and Special Issuances."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

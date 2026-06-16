@@ -12,7 +12,7 @@ export default function LufthansaEuropeanFlightAcademy() {
       category="Flight Schools"
       canonical="https://aviatoriq.com/europe/guides/lufthansa-european-flight-academy"
       metaDescription="Complete 2026 guide to the Lufthansa European Flight Academy (EFA) cadet program. Learn about the €120,000 cost, Brain Capital ISA, DLR test, and career paths."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

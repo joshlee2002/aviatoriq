@@ -12,7 +12,7 @@ export default function PilotCvGuide() {
       heroImage="/manus-storage/pilot-cv_e66193e2.jpg"
       lastUpdated="June 2026"
       ctaHref="/quiz"
-      ctaText="Get your personalised training roadmap"
+      ctaText="Generate my personalised roadmap"
       faqSchema={[
         { question: "What should a pilot CV include?", answer: "A pilot CV should include: personal details (name, contact, nationality, right to work), licences and ratings (with issue dates and expiry), medical class and expiry, total hours and breakdown by type, type ratings, simulator experience, and employment history. Keep it to two pages maximum." },
         { question: "How long should a pilot CV be?", answer: "A pilot CV should be one to two pages maximum. Airlines receive hundreds of applications — a concise, well-structured CV is more effective than a lengthy one. If you are a low-hours ab-initio graduate, one page is appropriate." },

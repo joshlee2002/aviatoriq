@@ -12,7 +12,7 @@ export default function SouthAfricaPilotTrainingCosts() {
       category="Pilot Training, South Africa, Costs"
       canonical="https://aviatoriq.com/south-africa/guides/pilot-training-costs"
       metaDescription="Explore the comprehensive guide to pilot training costs in South Africa for 2026, including SACAA regulations, licensing pathways, and financing options."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

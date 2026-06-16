@@ -12,7 +12,7 @@ export default function CanadaFlightSchoolLoans() {
       category="Financing"
       canonical="https://aviatoriq.com/canada/guides/canada-flight-school-loans"
       metaDescription="Explore detailed options for flight school loans in Canada for 2026, including government programs, bank loans, scholarships, and essential tips for aspiring pilots."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

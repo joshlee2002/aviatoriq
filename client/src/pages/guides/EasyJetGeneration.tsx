@@ -10,7 +10,7 @@ export default function EasyJetGeneration() {
       readTime="9 min read"
       heroImage="/manus-storage/easyjet-generation_0954c6af.jpg"
       ctaHref="/quiz"
-      ctaText="Check your readiness for cadet programmes"
+      ctaText="Find my training route"
       relatedGuides={[
         { title: "BA Speedbird Academy 2026: Complete Guide", href: "/guides/ba-speedbird-academy", time: "10 min" },
         { title: "Ryanair Cadet Pilot Programme: Complete Guide", href: "/guides/ryanair-cadet-programme", time: "8 min" },

@@ -12,7 +12,7 @@ export default function WestJetEncoreCadet() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/canada/guides/westjet-encore-cadet"
       metaDescription="A detailed guide for aspiring pilots on how to join WestJet Encore as a First Officer, covering training, costs, and career progression in Canada."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

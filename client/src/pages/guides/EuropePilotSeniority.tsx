@@ -11,7 +11,7 @@ export default function EuropePilotSeniority() {
       category="Pilot Career"
       canonical="https://aviatoriq.com/europe/guides/europe-pilot-seniority"
       metaDescription="A comprehensive guide to pilot seniority in Europe, covering EASA regulations, 2026 training costs, major airlines, and career progression for aspiring aviators."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

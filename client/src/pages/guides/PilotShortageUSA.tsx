@@ -13,7 +13,7 @@ export default function PilotShortageUSA() {
       heroImage="/manus-storage/pilot-shortage_9d4c2b8e.jpg"
       category="US Pilot Training"
       ctaHref="/us/roadmap"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers the pilot shortage in the US market specifically." globalHref="/guides/uk-pilot-shortage-2026" globalLabel="View UK pilot shortage →" />}
       faqSchema={[
         { question: "Is there still a pilot shortage in the US in 2026?", answer: "Yes, but it is nuanced. The acute shortage at the major airlines has largely been resolved, but regional airlines are still struggling to find enough qualified captains, leading to reduced air service for smaller communities." },

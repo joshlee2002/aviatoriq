@@ -12,7 +12,7 @@ export default function CanadaCadetPrograms() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-cadet-programs"
       metaDescription="Explore Canada's top pilot cadet programs for 2026, including Flair, Porter, Jazz, and Air Transat. Understand eligibility, costs, and career paths."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

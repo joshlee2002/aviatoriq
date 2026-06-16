@@ -108,7 +108,7 @@ export default function GuideLayout({
   readTime,
   sections,
   relatedGuides = [],
-  ctaText = "Take the free pilot assessment",
+  ctaText = "Find my training route",
   ctaHref = "/quiz",
   canonical,
   metaDescription,

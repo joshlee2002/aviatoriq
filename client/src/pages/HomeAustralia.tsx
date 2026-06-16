@@ -78,7 +78,7 @@ export default function HomeAustralia() {
                   <ArrowRight className="w-5 h-5" />
                 </Link>
                 <Link href="/quiz" className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-base font-semibold text-white/80 no-underline transition-all hover:text-white" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.15)" }}>
-                  Check Career Readiness
+                  Find My Training Route
                 </Link>
               </div>
               <div className="flex flex-wrap items-center gap-5 mt-8">

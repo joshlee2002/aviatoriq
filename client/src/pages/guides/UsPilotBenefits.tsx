@@ -11,7 +11,7 @@ export default function UsPilotBenefits() {
       category="Pilot Lifestyle"
       canonical="https://aviatoriq.com/us/guides/us-pilot-benefits"
       metaDescription="What are the benefits of being a US airline pilot in 2026? Learn about 16-18% direct 401(k) contributions, profit sharing, health insurance, and non-rev travel."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

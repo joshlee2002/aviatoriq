@@ -12,7 +12,7 @@ export default function SouthAfricaPilotSalary2026() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/south-africa/guides/pilot-salary-2026"
       metaDescription="Explore detailed pilot salary expectations in South Africa for 2026, covering entry-level to experienced captains, major airlines, and SACAA regulations."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

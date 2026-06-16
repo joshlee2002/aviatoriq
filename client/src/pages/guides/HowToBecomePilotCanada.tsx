@@ -11,7 +11,7 @@ export default function HowToBecomePilotCanada() {
       readTime="14 min read"
       heroImage="/manus-storage/airplane-takeoff_6f139e92.jpg"
       ctaHref="/quiz"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       faqSchema={[
         { question: "How much does it cost to become a pilot in Canada?", answer: "To go from zero experience to a Commercial Pilot Licence (CPL) with a Multi-Engine Instrument Rating (MIFR), expect to pay CAD $80,000 to $100,000. Reaching the airlines may require an Instructor Rating (CAD $10,000) or self-funded type ratings." },
         { question: "How long does it take to become a commercial pilot in Canada?", answer: "Full-time integrated college or university programmes typically take 2 to 3 years. Modular, self-paced training can be completed in 18–24 months if flying full-time, or 3–5 years if flying part-time while working." },

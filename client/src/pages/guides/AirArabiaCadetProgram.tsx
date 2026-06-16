@@ -12,7 +12,7 @@ export default function AirArabiaCadetProgram() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/air-arabia-cadet-program"
       metaDescription="Comprehensive guide to the Air Arabia Cadet Pilot Program for 2026. Learn about eligibility, GCAA regulations, training structure, and estimated costs in AED."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

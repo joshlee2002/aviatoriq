@@ -12,7 +12,7 @@ export default function UsMilitaryPilotToAirlines() {
       category="Military Transition"
       canonical="https://aviatoriq.com/us/guides/us-military-pilot-to-airlines"
       metaDescription="Navigate the transition from US military pilot to airline pilot in 2026. This guide covers FAA R-ATP requirements, ATP CTP, job market, and airline programs."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

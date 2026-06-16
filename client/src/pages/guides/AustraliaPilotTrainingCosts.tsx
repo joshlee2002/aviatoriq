@@ -12,7 +12,7 @@ export default function AustraliaPilotTrainingCosts() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-training-costs"
       metaDescription="Explore the true costs of pilot training in Australia for 2026. Detailed insights into licenses, flight schools, CASA fees, and financial aid options."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

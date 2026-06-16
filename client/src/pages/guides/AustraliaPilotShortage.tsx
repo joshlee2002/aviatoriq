@@ -12,7 +12,7 @@ export default function AustraliaPilotShortage() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-shortage"
       metaDescription="Explore the current pilot shortage in Australia for 2026, including training costs, CASA regulations, and career opportunities with major airlines like Qantas and Virgin Australia."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

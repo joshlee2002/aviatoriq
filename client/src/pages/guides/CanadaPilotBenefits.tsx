@@ -12,7 +12,7 @@ export default function CanadaPilotBenefits() {
       category="Canada Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-benefits"
       metaDescription="Detailed guide to pilot training in Canada, covering licenses, costs, career outlook, and benefits for 2026. Learn about PPL, CPL, ATPL, and top airlines."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

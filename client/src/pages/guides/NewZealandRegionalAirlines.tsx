@@ -12,7 +12,7 @@ export default function NewZealandRegionalAirlines() {
       category="New Zealand Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-regional-airlines-pilot-training"
       metaDescription="Comprehensive guide to pilot training in New Zealand for 2026, covering CAA NZ regulations, PPL, CPL, ATPL costs, regional airlines, and career paths."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

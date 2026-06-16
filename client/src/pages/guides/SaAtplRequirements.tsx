@@ -12,7 +12,7 @@ export default function SaAtplRequirements() {
       category="South Africa Pilot Training"
       canonical="https://aviatoriq.com/south-africa/guides/sa-atpl-requirements"
       metaDescription="Detailed guide to South African ATPL requirements for 2026, covering SACAA regulations, training, costs, and major airlines. Essential for aspiring pilots."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

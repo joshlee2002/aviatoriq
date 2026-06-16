@@ -12,7 +12,7 @@ export default function QantasGroupPilotAcademy() {
       category="Australia Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/qantas-group-pilot-academy"
       metaDescription="Detailed guide to the Qantas Group Pilot Academy in 2026, covering training, costs, application process, and career prospects with Qantas Group airlines."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

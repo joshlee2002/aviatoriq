@@ -13,7 +13,7 @@ export default function EmbryRiddleGuide() {
       heroImage="/manus-storage/embry-riddle_9d4c2b8e.jpg"
       category="US Pilot Training"
       ctaHref="/us/roadmap"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers Embry-Riddle Aeronautical University in the USA." globalHref="/guides/best-flight-schools-uk-2026" globalLabel="View UK flight schools →" />}
       faqSchema={[
         { question: "How much does Embry-Riddle cost?", answer: "For the 2025-2026 academic year, undergraduate tuition is approximately $36,868 per year. Flight training fees are an additional $20,000-$30,000 per year for the first two years. The total 4-year cost, including room and board, typically exceeds $220,000." },

@@ -12,7 +12,7 @@ export default function TcCpLRequirements() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/transport-canada-cpl-requirements"
       metaDescription="Discover the complete 2026 Transport Canada Commercial Pilot License (CPL) requirements, including flight hours, ground school, medical standards, and training costs."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

@@ -13,7 +13,7 @@ export default function PilotCvGuideUSA() {
       heroImage="/manus-storage/pilot-cv_9d4c2b8e.jpg"
       category="US Pilot Training"
       ctaHref="/us/roadmap"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers resume formatting for US airlines." globalHref="/guides/pilot-cv-cover-letter" globalLabel="View UK/European CV guide →" />}
       faqSchema={[
         { question: "How long should a pilot resume be?", answer: "One page. Unless you have over 20 years of extensive military or commercial aviation experience, your resume should fit on a single page. Airline recruiters scan resumes in seconds; brevity is essential." },

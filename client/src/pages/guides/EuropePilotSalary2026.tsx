@@ -12,7 +12,7 @@ export default function EuropePilotSalary2026() {
       category="Europe"
       canonical="https://aviatoriq.com/europe/guides/pilot-salary-2026"
       metaDescription="Discover the latest 2026 pilot salaries in Europe, compare LCCs vs Legacy carriers, and understand EASA Part-FCL licensing requirements."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

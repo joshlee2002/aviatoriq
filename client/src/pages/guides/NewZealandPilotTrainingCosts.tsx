@@ -12,7 +12,7 @@ export default function NewZealandPilotTrainingCosts() {
       category="Pilot Training Costs"
       canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-pilot-training-costs"
       metaDescription="Explore the detailed costs of pilot training in New Zealand for 2026, including PPL, CPL, ATPL, flight school fees, CAA NZ regulations, and funding options."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

@@ -12,7 +12,7 @@ export default function CasaMedicalClass1() {
       category="Pilot Medicals"
       canonical="https://aviatoriq.com/australia/guides/casa-medical-class-1"
       metaDescription="Comprehensive guide to the CASA Class 1 Medical Certificate in Australia for 2026, covering requirements, costs, process, and common disqualifying conditions."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

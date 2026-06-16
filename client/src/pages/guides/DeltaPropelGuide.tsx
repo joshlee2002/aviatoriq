@@ -13,7 +13,7 @@ export default function DeltaPropelGuide() {
       heroImage="/manus-storage/delta-propel_9d4c2b8e.jpg"
       category="US Pilot Training"
       ctaHref="/us/roadmap"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers the Delta Propel program in the USA." globalHref="/guides/cadet-pilot-programmes-uk" globalLabel="View UK cadet programmes →" />}
       faqSchema={[
         { question: "What is the Delta Propel program?", answer: "Delta Propel is a pilot career path program that offers a defined route to a flight deck position at Delta Air Lines. Participants receive a Qualified Job Offer (QJO) and mentorship from an active Delta pilot." },

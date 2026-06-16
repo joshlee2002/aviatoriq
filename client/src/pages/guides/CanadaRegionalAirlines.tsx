@@ -12,7 +12,7 @@ export default function CanadaRegionalAirlines() {
       category="Canada Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-regional-airlines"
       metaDescription="Explore the pathway to becoming a regional airline pilot in Canada, covering Transport Canada regulations, training costs, and career opportunities with major carriers in 2026."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

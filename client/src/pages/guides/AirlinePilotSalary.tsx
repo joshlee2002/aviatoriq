@@ -12,7 +12,7 @@ export default function AirlinePilotSalary() {
       readTime="11 min read"
       heroImage="/manus-storage/airline-salary_3b7c8d1e.jpg"
       ctaHref="/quiz"
-      ctaText="Get your personalised pilot roadmap"
+      ctaText="Generate my personalised roadmap"
       scopeBanner={<GuideScopeBanner scope="Salary figures in this guide are for UK airline pilots in GBP. Salaries vary significantly by country and airline." usHref="/us/guides/airline-pilot-salary-usa" usLabel="View USA salaries →" />}
       faqSchema={[
         { question: "How much do airline pilots earn in the UK?", answer: "UK airline first officers typically earn £50,000–£100,000 total package depending on the airline. Captains earn £100,000–£225,000+. Low-cost carriers like easyJet and Ryanair now pay higher total packages than many legacy carriers due to sector pay and allowances." },

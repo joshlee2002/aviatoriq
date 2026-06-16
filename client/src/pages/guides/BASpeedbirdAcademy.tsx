@@ -10,7 +10,7 @@ export default function BASpeedbirdAcademy() {
       readTime="10 min read"
       heroImage="/manus-storage/ba-speedbird_2f8a3c9e.jpg"
       ctaHref="/quiz"
-      ctaText="Check your readiness for cadet programmes"
+      ctaText="Find my training route"
       relatedGuides={[
         { title: "easyJet Generation Pilot Programme: Complete Guide", href: "/guides/easyjet-generation-pilot", time: "9 min" },
         { title: "How to Become a Pilot in the UK (2026 Complete Guide)", href: "/guides/how-to-become-a-pilot", time: "8 min" },

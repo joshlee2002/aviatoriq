@@ -12,7 +12,7 @@ export default function AirNewZealandCadet() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/air-new-zealand-cadet-pilot-training"
       metaDescription="Explore the comprehensive guide to pilot training in New Zealand, including CAA NZ regulations, estimated costs, leading flight schools, and details on the Air New Zealand Mangōpare Pilot Cadetship. Your essential resource for aspiring aviators in Aotearoa."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

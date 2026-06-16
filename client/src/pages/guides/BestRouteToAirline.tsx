@@ -17,7 +17,7 @@ const BestRouteToAirline = () => {
       readTime="9 min read"
       heroImage="/manus-storage/best-route-airline_3c8e2f1a.jpg"
       ctaHref="/quiz"
-      ctaText="Find your route to the airlines"
+      ctaText="Find my training route"
       sections={[
         {
           heading: "Introduction: Navigating Your Path to the Flight Deck",

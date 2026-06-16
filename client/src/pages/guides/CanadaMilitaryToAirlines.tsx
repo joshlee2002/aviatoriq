@@ -11,7 +11,7 @@ export default function CanadaMilitaryToAirlines() {
       category="Canada Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-military-to-airlines"
       metaDescription="Comprehensive guide for Canadian military pilots transitioning to civilian airlines in 2026. Covers Transport Canada ATPL conversion, DND credits, costs, and airline hiring."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

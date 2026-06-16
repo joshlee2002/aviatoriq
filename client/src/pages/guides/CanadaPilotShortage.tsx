@@ -12,7 +12,7 @@ export default function CanadaPilotShortage() {
       category="Industry Insights"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-shortage"
       metaDescription="Explore the truth behind the 2026 Canadian pilot shortage. Learn about training costs, Transport Canada regulations, and career outlooks for new aviators."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

@@ -11,7 +11,7 @@ export default function PilotAptitudeTest() {
       readTime="11 min read"
       heroImage="/manus-storage/aptitude-test_3c7e9f2a.jpg"
       ctaHref="/quiz"
-      ctaText="Take the free pilot readiness assessment"
+      ctaText="Find my training route"
       relatedGuides={[
         { title: "BA Speedbird Academy 2026: Complete Guide", href: "/guides/ba-speedbird-academy", time: "10 min" },
         { title: "easyJet Generation Pilot Programme: Complete Guide", href: "/guides/easyjet-generation-pilot", time: "9 min" },

@@ -12,7 +12,7 @@ export default function TuiMPL() {
       readTime="8 min read"
       heroImage="/manus-storage/tui-mpl_9d4c2b8e.jpg"
       ctaHref="/tools/cadet-eligibility"
-      ctaText="Check other cadet programmes"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers the UK TUI MPL programme." usHref="/us/guides/united-aviate-program" usLabel="View USA cadet programmes →" />}
       faqSchema={[
         { question: "Is the TUI MPL programme open in 2026?", answer: "No. TUI officially confirmed in early 2026 that they will not be running the MPL Cadet scheme for the 2026 intake, following a review of their pilot demand for Summer 2028." },

@@ -12,7 +12,7 @@ export default function EtihadCadetPilotProgram() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/etihad-cadet-pilot-program"
       metaDescription="Explore the Etihad Airways Cadet Pilot Program for 2026. Learn about eligibility, the MPL training structure, GCAA regulations, and career opportunities for UAE nationals."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

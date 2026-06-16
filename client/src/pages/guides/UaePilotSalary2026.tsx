@@ -12,7 +12,7 @@ export default function UaePilotSalary2026() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/uae/guides/uae-pilot-salary-2026"
       metaDescription="Explore the lucrative tax-free pilot salaries and extensive benefits offered by UAE airlines like Emirates in 2026. Detailed insights for First Officers and Captains."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

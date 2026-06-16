@@ -12,7 +12,7 @@ export default function AustraliaPilotCommuting() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-commuting"
       metaDescription="Detailed guide for pilots commuting in Australia in 2026, covering CASA regulations, airline policies, cost of living, and lifestyle tips."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

@@ -12,7 +12,7 @@ export default function PilotTrainingOver40() {
       readTime="11 min read"
       heroImage="/manus-storage/pilot-over-40_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="Hiring age limits and career runway figures in this guide are based on UK airline practices." usHref="/us/guides/pilot-training-over-40-usa" usLabel="View USA version →" />}
       faqSchema={[
         { question: "Is there an upper age limit to start pilot training in the UK?", answer: "No. There is no legal upper age limit to start pilot training. However, the mandatory retirement age for commercial pilots is 65, which limits your career runway if you start late." },

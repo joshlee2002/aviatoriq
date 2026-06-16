@@ -12,7 +12,7 @@ export default function UsPilotUnionGuide() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/us/guides/us-pilot-training-market-guide"
       metaDescription="Comprehensive guide to US pilot training in 2026, covering FAA Part 61/141, costs, medicals, and airline career paths. Essential for aspiring aviators."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

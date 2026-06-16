@@ -11,7 +11,7 @@ export default function UsPilotSchedule() {
       category="Pilot Lifestyle"
       canonical="https://aviatoriq.com/us/guides/us-pilot-schedule"
       metaDescription="What does a US airline pilot schedule look like in 2026? Learn about FAA Part 117 duty limits, seniority bidding, reserve life, line holding, and days off."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

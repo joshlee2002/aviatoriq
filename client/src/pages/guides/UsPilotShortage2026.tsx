@@ -12,7 +12,7 @@ export default function UsPilotShortage2026() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/us/guides/us-pilot-shortage-2026"
       metaDescription="Comprehensive guide to the 2026 US pilot shortage, covering FAA regulations, Part 61/141 training, costs, and airline hiring trends."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

@@ -11,7 +11,7 @@ export default function FaaMedicalClass1() {
       category="Medical Requirements"
       canonical="https://aviatoriq.com/us/guides/faa-medical-class-1"
       metaDescription="FAA Class 1 Medical Certificate 2026: vision 20/20 required, costs $150–$400, valid 12 months under 40 / 6 months over 40. Full requirements, AME process, and disqualifying conditions explained."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       faqSchema={[
         { question: "What are the vision requirements for an FAA Class 1 Medical?", answer: "Distant vision must be 20/20 or better in each eye separately, with or without correction. Near vision must be 20/40 or better at 16 inches. Intermediate vision (20/40 at 32 inches) is required for pilots aged 50 and over. Normal colour vision is required; colour vision deficiency may result in a limitation." },

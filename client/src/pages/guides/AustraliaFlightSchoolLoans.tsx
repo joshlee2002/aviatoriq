@@ -12,7 +12,7 @@ export default function AustraliaFlightSchoolLoans() {
       category="Pilot Training Finance"
       canonical="https://aviatoriq.com/australia/guides/australia-flight-school-loans"
       metaDescription="A detailed guide to flight school loans in Australia for 2026, covering VET Student Loans, private financing, airline cadet programs, and scholarships."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

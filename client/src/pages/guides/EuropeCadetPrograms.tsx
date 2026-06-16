@@ -12,7 +12,7 @@ export default function EuropeCadetPrograms() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/europe/guides/europe-cadet-programs"
       metaDescription="Explore the definitive guide to pilot training in Europe for 2026, covering EASA regulations, cadet programs, costs, and career paths."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

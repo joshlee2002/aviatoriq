@@ -12,7 +12,7 @@ export default function TcMedicalClass1() {
       category="Pilot Medicals"
       canonical="https://aviatoriq.com/canada/guides/tc-medical-class-1"
       metaDescription="Detailed guide on Transport Canada Medical Class 1 for aspiring pilots in Canada. Covers requirements, costs, and examination process for 2026."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

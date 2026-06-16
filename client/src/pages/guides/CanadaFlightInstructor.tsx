@@ -12,7 +12,7 @@ export default function CanadaFlightInstructor() {
       category="Flight Instructor"
       canonical="https://aviatoriq.com/canada/guides/canada-flight-instructor"
       metaDescription="A comprehensive guide for aspiring flight instructors in Canada. Learn about Transport Canada requirements, training, costs, and career paths in 2026."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

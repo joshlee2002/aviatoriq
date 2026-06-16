@@ -14,7 +14,7 @@ export default function HowToBecomePilotUS() {
       author="Joshua Fagan"
       authorRole="Founder, AviatorIQ — researched from FAA, ATP Flight School & airline cadet programme data"
       lastUpdated="June 2026"
-      ctaText="Take the free pilot assessment"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       scopeBanner={<GuideScopeBanner scope="This guide covers FAA pilot training in the USA." globalHref="/schools" globalLabel="Browse global schools →" />}
       faqSchema={[

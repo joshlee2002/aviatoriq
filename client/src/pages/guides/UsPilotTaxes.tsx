@@ -12,7 +12,7 @@ export default function UsPilotTaxes() {
       category="Pilot Finances"
       canonical="https://aviatoriq.com/us/guides/us-pilot-taxes"
       metaDescription="Comprehensive guide to US pilot taxes in 2026, covering flight training deductions, 529 plans, and essential tax strategies for aviators."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

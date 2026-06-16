@@ -414,7 +414,7 @@ import GuideLayout from "@/components/GuideLayout";export default function HourB
         { title: "GI Bill Flight Training", href: "/us/guides/gi-bill-flight-training", time: "X min" },
         { title: "US Pilot Shortage 2026", href: "/us/guides/us-pilot-shortage-2026", time: "X min" },
       ]}
-      ctaText="Explore Your Pilot Career Roadmap"
+      ctaText="Generate my personalised roadmap"
       ctaHref="/us/roadmap"
       faqSchema={[
         { question: "What are the exact costs associated with obtaining a CFI certificate, including training, exams, and materials?", answer: "The estimated total cost for obtaining a CFI certificate in 2026 ranges from $8,850 to $16,100. This includes CFI flight training ($7,000-$12,000), ground instruction ($500-$2,000), FAA knowledge exams ($350-$400), the FAA practical test fee ($800-$1,200), and study materials ($200-$500). These figures exclude prior certificates and living expenses." },

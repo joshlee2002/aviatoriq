@@ -13,7 +13,7 @@ export default function AtpFlightSchoolGuide() {
       heroImage="/manus-storage/atp-flight-school_9d4c2b8e.jpg"
       category="US Pilot Training"
       ctaHref="/us/roadmap"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers ATP Flight School in the USA." globalHref="/guides/best-flight-schools-uk-2026" globalLabel="View UK flight schools →" />}
       faqSchema={[
         { question: "How much does ATP Flight School cost in 2026?", answer: "The Airline Career Pilot Program (zero experience to commercial pilot with instructor ratings) costs $103,995 in 2026. If you already hold a Private Pilot License (PPL), the cost is $90,995. This does not include living expenses or checkride examiner fees." },

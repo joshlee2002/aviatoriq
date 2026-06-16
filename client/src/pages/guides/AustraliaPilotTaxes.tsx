@@ -12,7 +12,7 @@ export default function AustraliaPilotTaxes() {
       category="Pilot Finances"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-taxes"
       metaDescription="A detailed guide for Australian pilots on tax obligations, deductible expenses, and allowances for the 2026 financial year."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

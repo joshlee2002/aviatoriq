@@ -12,7 +12,7 @@ export default function UsPilotHousing() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/us/guides/us-pilot-housing"
       metaDescription="A deep dive into US pilot training housing in 2026. Understand costs, options, and how to choose accommodations that support your aviation career."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

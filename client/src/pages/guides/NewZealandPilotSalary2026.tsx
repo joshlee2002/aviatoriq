@@ -11,7 +11,7 @@ export default function NewZealandPilotSalary2026() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-pilot-salary-2026"
       metaDescription="Explore the definitive guide to pilot salaries in New Zealand for 2026, covering Air NZ earnings, training costs, and license conversion pathways."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

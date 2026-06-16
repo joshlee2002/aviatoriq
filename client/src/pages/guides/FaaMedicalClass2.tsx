@@ -12,7 +12,7 @@ export default function FaaMedicalClass2() {
       category="FAA Medical Certification"
       canonical="https://aviatoriq.com/us/guides/faa-medical-class-2"
       metaDescription="Comprehensive guide to FAA Class 2 Medical Certificate requirements for US commercial pilots in 2026, including regulations, costs, and application process."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

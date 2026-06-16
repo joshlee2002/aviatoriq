@@ -12,7 +12,7 @@ export default function EasaMedicalClass1() {
       category="Pilot Medicals"
       canonical="https://aviatoriq.com/europe/guides/easa-medical-class-1"
       metaDescription="Detailed guide on EASA Class 1 medical certificate for European pilots, covering requirements, examination process, 2026 costs, and validity."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

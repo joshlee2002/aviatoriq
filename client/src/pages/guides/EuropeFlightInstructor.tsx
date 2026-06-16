@@ -12,7 +12,7 @@ export default function EuropeFlightInstructor() {
       category="Flight Instructor Training"
       canonical="https://aviatoriq.com/europe/guides/europe-flight-instructor"
       metaDescription="A comprehensive guide for aspiring EASA Flight Instructors in Europe, detailing 2026 regulations, training costs, career outlook, and essential requirements."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

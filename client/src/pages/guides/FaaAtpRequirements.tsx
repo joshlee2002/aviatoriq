@@ -12,7 +12,7 @@ export default function FaaAtpRequirements() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/us/guides/faa-atp-requirements"
       metaDescription="Detailed guide to FAA ATP requirements for 2026, covering Part 61, Part 141, costs, and career opportunities for aspiring airline pilots."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

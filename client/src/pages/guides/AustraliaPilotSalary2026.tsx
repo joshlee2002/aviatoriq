@@ -12,7 +12,7 @@ export default function AustraliaPilotSalary2026() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-salary-2026"
       metaDescription="Australian pilot salary guide 2026. Real pay data for Qantas, Virgin Australia, Jetstar, Rex, and regional airlines. First Officer and Captain pay scales explained."
-      ctaText="Generate your career roadmap"
+      ctaText="Generate my personalised roadmap"
       ctaHref="/quiz"
       sections={[
         {

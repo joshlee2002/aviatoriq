@@ -12,7 +12,7 @@ export default function SimulatorAssessmentGuide() {
       readTime="11 min read"
       heroImage="/manus-storage/sim-assessment_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers simulator assessments for UK and European airlines." usHref="/us/guides/airline-interview-usa" usLabel="View USA airline interview guide →" />}
       faqSchema={[
         { question: "What is an airline simulator assessment?", answer: "A simulator assessment is a practical flight test in a full-motion Level D simulator (usually an A320 or B737). It is used by airlines to assess a candidate's basic instrument flying skills, crew resource management (CRM), and ability to learn under pressure." },

@@ -211,7 +211,7 @@ export default function AmITooOldUSA() {
         { title: "Airline Pilot Salary USA", href: "/us/guides/airline-pilot-salary-usa", time: "8 min" },
         { title: "FAA Medical Requirements", href: "/us/guides/faa-medical-requirements", time: "9 min" }
       ]}
-      ctaText="Start Your Pilot Journey Today"
+      ctaText="Find my training route"
       ctaHref="/us/roadmap"
       faqSchema={[
         {

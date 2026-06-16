@@ -12,7 +12,7 @@ export default function CanadaPilotTrainingCosts() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-training-costs"
       metaDescription="Detailed guide on pilot training costs in Canada for 2026, covering PPL, CPL, ATPL, and strategies to save money."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

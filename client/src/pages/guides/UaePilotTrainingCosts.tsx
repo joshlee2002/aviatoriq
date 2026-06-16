@@ -12,7 +12,7 @@ export default function UaePilotTrainingCosts() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/uae-pilot-training-costs"
       metaDescription="Explore the detailed costs of pilot training in the UAE for 2026, including GCAA regulations, flight schools like EFTA and Alpha Aviation, and financing options."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

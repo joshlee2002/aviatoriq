@@ -12,7 +12,7 @@ export default function VirginAustraliaCadet() {
       category="Airline Pilot Careers"
       canonical="https://aviatoriq.com/australia/guides/virgin-australia-cadet-pilot-program"
       metaDescription="A detailed guide for aspiring pilots in Australia, covering CASA regulations, training costs, and Virgin Australia's direct entry pilot recruitment requirements for 2026."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

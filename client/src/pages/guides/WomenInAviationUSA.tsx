@@ -13,7 +13,7 @@ export default function WomenInAviationUSA() {
       heroImage="/manus-storage/women-aviation_9d4c2b8e.jpg"
       category="US Pilot Training"
       ctaHref="/quiz"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="Scholarships and organisations in this guide are primarily US-based." globalHref="/guides/women-in-aviation-uk" globalLabel="View UK guide →" />}
       faqSchema={[
         { question: "What percentage of US airline pilots are women?", answer: "Approximately 7% of commercial airline pilots in the USA are women as of 2026, up from 5% in 2019. The FAA reported that women hold approximately 9% of all US pilot certificates." },

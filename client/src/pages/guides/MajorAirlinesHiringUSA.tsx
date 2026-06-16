@@ -12,7 +12,7 @@ export default function MajorAirlinesHiringUSA() {
       category="Airline Pilot Careers"
       canonical="https://aviatoriq.com/us/guides/major-airlines-hiring-usa"
       metaDescription="Comprehensive 2026 guide for aspiring US airline pilots, covering training, costs, FAA regulations (Part 61/141), and major airline hiring requirements."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

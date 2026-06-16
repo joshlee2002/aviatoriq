@@ -17,7 +17,7 @@ const TrainingTimeline = () => {
       readTime="8 min read"
       heroImage="/manus-storage/training-timeline_9baef553.jpg"
       ctaHref="/quiz/flight-deck"
-      ctaText="Find out how ready you are"
+      ctaText="Find my training route"
       relatedGuides={[
         { title: "Integrated vs Modular ATPL Training: Which Is Right for You?", href: "/guides/integrated-vs-modular" ,          time: "9 min" },
         { title: "Pilot Training Costs in the UK: The Complete 2025 Breakdown", href: "/guides/pilot-training-costs" ,          time: "11 min" },

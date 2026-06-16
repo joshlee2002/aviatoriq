@@ -12,7 +12,7 @@ export default function UsFlightSchoolLoans() {
       category="Financing"
       canonical="https://aviatoriq.com/us/guides/us-flight-school-loans"
       metaDescription="Discover the best US flight school loans for 2026. Learn about Part 61 vs. Part 141 costs, federal vs. private loans, and alternative financing options."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

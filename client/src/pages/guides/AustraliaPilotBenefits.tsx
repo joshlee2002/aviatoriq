@@ -12,7 +12,7 @@ export default function AustraliaPilotBenefits() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-benefits"
       metaDescription="Explore the comprehensive benefits for pilots in Australia in 2026, including salaries, superannuation, health, and career growth with major airlines."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

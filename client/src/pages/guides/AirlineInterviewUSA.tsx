@@ -266,7 +266,7 @@ export default function AirlineInterviewUSA() {
         { title: "FAA Medical Requirements for Pilots", href: "/us/guides/faa-medical-requirements", time: "7 min" },
         { title: "US Pilot Career Outlook 2026", href: "/us/guides/us-pilot-career-outlook", time: "10 min" },
       ]}
-      ctaText="Start Your Pilot Journey Today"
+      ctaText="Find my training route"
       ctaHref="/us/roadmap"
       faqSchema={[
         {

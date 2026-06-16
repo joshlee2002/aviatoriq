@@ -12,7 +12,7 @@ export default function UsPilotRetirementAge() {
       category="US Pilot Careers"
       canonical="https://aviatoriq.com/us/guides/us-pilot-retirement-age"
       metaDescription="Understand the FAA's mandatory retirement age of 65 for US commercial airline pilots in 2026. Explore its history, current regulations, and the ongoing debate."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

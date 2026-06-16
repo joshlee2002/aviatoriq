@@ -12,7 +12,7 @@ export default function AmITooOld() {
       readTime="10 min read"
       heroImage="/manus-storage/pilot-age_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="Age limits and career runway figures in this guide are based on UK airline hiring practices." usHref="/us/guides/am-i-too-old-to-become-a-pilot-usa" usLabel="View USA version →" />}
       faqSchema={[
         { question: "Is there an upper age limit to become a commercial pilot?", answer: "No. There is no legal upper age limit to start pilot training in the UK. However, the mandatory retirement age for commercial pilots is 65." },

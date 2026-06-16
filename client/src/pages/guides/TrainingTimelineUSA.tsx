@@ -13,7 +13,7 @@ export default function TrainingTimelineUSA() {
       heroImage="/manus-storage/training-timeline_9d4c2b8e.jpg"
       category="US Pilot Training"
       ctaHref="/us/roadmap"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers the US FAA training timeline, including the 1,500-hour rule." globalHref="/guides/training-timeline" globalLabel="View UK/EASA timeline →" />}
       faqSchema={[
         { question: "How many years does it take to become an airline pilot in the USA?", answer: "It typically takes 3 to 4 years from zero experience to your first day at a regional airline. This includes 7-12 months of flight school (to reach 250 hours) and 1.5-2 years of working as a flight instructor to build the 1,500 hours required by the FAA." },

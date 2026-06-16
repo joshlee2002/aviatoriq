@@ -12,7 +12,7 @@ export default function ReadyToStartTraining() {
       readTime="10 min read"
       heroImage="/manus-storage/ready-to-train_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Take the career readiness assessment"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide references UK training costs and CAA/EASA medical standards. The self-assessment questions apply globally." />}
       faqSchema={[
         { question: "How do I know if I am ready to start pilot training?", answer: "The key readiness indicators are: a valid Class 1 medical, financial plan covering full training costs plus living expenses, realistic understanding of the time commitment, and evidence of aptitude through ground school study or a trial flight." },

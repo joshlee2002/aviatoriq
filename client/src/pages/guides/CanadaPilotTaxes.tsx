@@ -12,7 +12,7 @@ export default function CanadaPilotTaxes() {
       category="Pilot Training, Finance, Canada"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-taxes"
       metaDescription="A detailed 2026 guide to Canadian pilot taxes, covering tuition tax credits, GST/HST implications for flight training, and essential deductions for pilots."
-      ctaText="Plan Your Pilot Career Finances"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

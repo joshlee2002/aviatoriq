@@ -12,7 +12,7 @@ export default function EasaCplRequirements() {
       category="Pilot Training, EASA, CPL"
       canonical="https://aviatoriq.com/europe/guides/easa-cpl-requirements"
       metaDescription="A detailed guide to EASA CPL requirements in 2026, covering age, medical, flight hours, theoretical knowledge, and costs for aspiring commercial pilots in Europe."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

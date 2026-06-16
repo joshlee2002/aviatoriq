@@ -12,7 +12,7 @@ export default function NewZealandPilotShortage() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-pilot-shortage"
       metaDescription="Explore the New Zealand pilot shortage in 2026, including CAA NZ regulations, training costs (NZD), top flight schools, and career opportunities with major airlines. Your essential guide to becoming a pilot in NZ."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

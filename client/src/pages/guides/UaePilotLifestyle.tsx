@@ -12,7 +12,7 @@ export default function UaePilotLifestyle() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/uae-pilot-lifestyle"
       metaDescription="Explore the UAE pilot lifestyle in 2026: GCAA regulations, training costs, top airlines like Emirates & Flydubai, tax-free salaries, and career benefits."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

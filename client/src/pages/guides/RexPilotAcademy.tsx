@@ -12,7 +12,7 @@ export default function RexPilotAcademy() {
       category="Pilot Training Australia"
       canonical="https://aviatoriq.com/australia/guides/rex-pilot-academy"
       metaDescription="Explore the Rex Pilot Academy (AAPA) cadet program, CASA regulations, training costs, and career opportunities for aspiring pilots in Australia in 2026."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

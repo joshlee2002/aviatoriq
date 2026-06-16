@@ -12,7 +12,7 @@ export default function EuropeRegionalAirlines() {
       category="Europe Pilot Training"
       canonical="https://aviatoriq.com/europe/guides/europe-regional-airlines-pilot-training"
       metaDescription="Comprehensive guide to becoming a regional airline pilot in Europe, covering EASA ATPL/MPL, training costs, financing, and key airlines for 2026."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

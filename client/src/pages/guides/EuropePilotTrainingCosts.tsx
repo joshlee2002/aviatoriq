@@ -12,7 +12,7 @@ export default function EuropePilotTrainingCosts() {
       category="Pilot Training Costs"
       canonical="https://aviatoriq.com/europe/guides/pilot-training-costs"
       metaDescription="Explore the detailed costs of pilot training in Europe for 2026, covering EASA regulations, integrated and modular ATPL programs, and financial planning."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

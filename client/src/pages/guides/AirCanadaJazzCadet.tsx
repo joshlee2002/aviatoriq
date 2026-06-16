@@ -12,7 +12,7 @@ export default function AirCanadaJazzCadet() {
       category="Pilot Training Canada"
       canonical="https://aviatoriq.com/canada/guides/air-canada-jazz-cadet"
       metaDescription="Explore the Air Canada Jazz Cadet Program (Jazz Approach) in Canada. Learn about eligibility, costs, training, and career progression to become an airline pilot."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

@@ -12,7 +12,7 @@ export default function AustraliaCadetPrograms() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/australia-cadet-programs"
       metaDescription="Explore Australia's top pilot cadet programs for 2026, including Qantas, Rex, and Learn To Fly. Understand CASA regulations, training costs, and career opportunities."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

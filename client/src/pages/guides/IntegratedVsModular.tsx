@@ -19,7 +19,7 @@ export default function IntegratedVsModular() {
       readTime="12 min read"
       heroImage="/manus-storage/integrated-training_a566fa21.jpg"
       ctaHref="/quiz"
-      ctaText="Find your best training route"
+      ctaText="Find my training route"
       relatedGuides={[
         { title: "Best Flight Schools in the UK 2026", href: "/guides/best-flight-schools-uk-2026", time: "14 min" },
         { title: "Pilot Training Costs UK 2026", href: "/guides/pilot-training-costs", time: "8 min" },

@@ -11,7 +11,7 @@ export default function TcAtplRequirements() {
       category="ATPL Requirements"
       canonical="https://aviatoriq.com/canada/guides/tc-atpl-requirements"
       metaDescription="Detailed guide to Transport Canada Airline Transport Pilot Licence (ATPL) requirements for 2026, including age, medical, knowledge, and flight experience."
-      ctaText="Assess Your Pilot Career Path"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

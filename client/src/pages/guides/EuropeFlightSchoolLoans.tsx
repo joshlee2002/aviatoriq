@@ -12,7 +12,7 @@ export default function EuropeFlightSchoolLoans() {
       category="Pilot Training Financing"
       canonical="https://aviatoriq.com/europe/guides/europe-flight-school-loans"
       metaDescription="Explore detailed insights into European flight school loans, EASA regulations, and pilot training costs in 2026. Your essential guide to aviation financing."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

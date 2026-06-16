@@ -13,7 +13,7 @@ export default function PilotAptitudeTestUSA() {
       heroImage="/manus-storage/aptitude-test_9d4c2b8e.jpg"
       category="US Pilot Training"
       ctaHref="/us/roadmap"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers aptitude tests used by US airlines and cadet programmes." globalHref="/guides/pilot-aptitude-test-preparation" globalLabel="View UK/European aptitude tests →" />}
       faqSchema={[
         { question: "Do US airlines use pilot aptitude tests?", answer: "Yes, but differently than European airlines. While European airlines rely heavily on psychomotor and multi-tasking tests (like Cut-e or PILAPT), US airlines focus more heavily on psychological screening, personality profiling, and cognitive reasoning (like the AFAST or Delta's specific battery)." },

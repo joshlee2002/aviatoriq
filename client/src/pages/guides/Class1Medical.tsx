@@ -20,7 +20,7 @@ const Class1Medical: React.FC = () => {
       readTime="12 min read"
       heroImage="/manus-storage/class1-medical_c4a3b12e.jpg"
       ctaHref="/quiz/flight-deck"
-      ctaText="Check your readiness for free"
+      ctaText="Find my training route"
       relatedGuides={[
         { title: "How to Become a Pilot in the UK 2026", href: "/guides/how-to-become-a-pilot", time: "15 min" },
         { title: "Pilot Training Costs UK 2026", href: "/guides/pilot-training-costs", time: "8 min" },

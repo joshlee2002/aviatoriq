@@ -12,7 +12,7 @@ export default function HourBuilding() {
       readTime="11 min read"
       heroImage="/manus-storage/hour-building_4e2d1a8c.jpg"
       ctaHref="/quiz"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide covers hour building strategies for UK/EASA pilots (CPL prerequisites, popular locations from the UK)." usHref="/us/guides/hour-building-usa" usLabel="View USA version →" />}
       faqSchema={[
         { question: "How many hours do I need for hour building?", answer: "For a modular EASA CPL, you need 200 hours total flight time, of which at least 100 hours must be as Pilot in Command (PIC). After your PPL, you typically have 45-55 hours total with 10-15 hours PIC, so you need to build approximately 85-90 more PIC hours." },

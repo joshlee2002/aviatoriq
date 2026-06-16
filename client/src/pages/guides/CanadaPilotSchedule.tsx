@@ -12,7 +12,7 @@ export default function CanadaPilotSchedule() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-schedule"
       metaDescription="Detailed guide on Canadian pilot training schedules, including PPL, CPL, ATPL, costs, Transport Canada regulations, and career pathways for aspiring pilots in 2026."
-      ctaText="Check your pilot readiness"
+      ctaText="Find my training route"
       ctaHref="/quiz"
       sections={[
         {

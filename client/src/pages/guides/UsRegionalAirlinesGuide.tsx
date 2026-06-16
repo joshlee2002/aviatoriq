@@ -12,7 +12,7 @@ export default function UsRegionalAirlinesGuide() {
       category="Airline Pilot Careers"
       canonical="https://aviatoriq.com/us/guides/us-regional-airlines-guide"
       metaDescription="Comprehensive guide for aspiring regional airline pilots in the US. Covers 2026 FAA regulations, training costs, career paths, and hiring requirements."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

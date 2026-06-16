@@ -12,7 +12,7 @@ export default function UsPilotCommuting() {
       category="Pilot Careers"
       canonical="https://aviatoriq.com/us/guides/us-pilot-commuting"
       metaDescription="Comprehensive guide for US airline pilots on commuting strategies, FAA Part 117 compliance, crash pad costs, and training considerations for 2026."
-      ctaText="Check your US pilot readiness"
+      ctaText="Get my free US pilot roadmap"
       ctaHref="/quiz"
       sections={[
         {

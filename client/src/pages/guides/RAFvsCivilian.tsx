@@ -12,7 +12,7 @@ export default function RAFvsCivilian() {
       readTime="11 min read"
       heroImage="/manus-storage/raf-vs-civilian_9d4c2b8e.jpg"
       ctaHref="/quiz"
-      ctaText="Find your training route"
+      ctaText="Find my training route"
       scopeBanner={<GuideScopeBanner scope="This guide compares RAF military training with UK civilian pilot training. Relevant to UK readers only." />}
       faqSchema={[
         { question: "Is RAF pilot training free?", answer: "Yes. The RAF pays for all pilot training costs, and you receive a salary throughout. In return, you commit to a minimum service period of typically 12 years (for fast jet pilots) or shorter for multi-engine roles." },
