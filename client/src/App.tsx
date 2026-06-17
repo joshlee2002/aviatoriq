@@ -276,6 +276,7 @@ import NewZealandPilotSalary2026 from "@/pages/guides/NewZealandPilotSalary2026"
 import NewZealandPilotShortage from "@/pages/guides/NewZealandPilotShortage";
 import BestFlightSchoolsNewZealand from "@/pages/guides/BestFlightSchoolsNewZealand";
 import NewZealandRegionalAirlines from "@/pages/guides/NewZealandRegionalAirlines";
+import BestFlightSchoolsUAE from "@/pages/guides/BestFlightSchoolsUAE";
 // New hub pages
 import HomeUAE from "./pages/HomeUAE";
 import HomeSouthAfrica from "./pages/HomeSouthAfrica";
@@ -599,6 +600,7 @@ function Router() {
       <Route path="/us/guides/airline-interview-prep" component={AirlineInterviewPrepUSA} />
       <Route path="/guides/pilot-lifestyle-uk" component={PilotLifestyleUK} />
       <Route path="/uae/guides/how-to-become-a-pilot-uae" component={HowToBecomePilotUAE} />
+      <Route path="/uae/guides/best-flight-schools-uae" component={BestFlightSchoolsUAE} />
       {/* Regional guide index pages — redirect to unified /guides with country pre-set */}
       <Route path="/australia/guides"><CountryRedirect country="australia" to="/guides" /></Route>
       <Route path="/canada/guides"><CountryRedirect country="canada" to="/guides" /></Route>

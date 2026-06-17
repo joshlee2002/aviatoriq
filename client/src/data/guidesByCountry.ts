@@ -743,6 +743,9 @@ export const GUIDES_BY_COUNTRY: Record<SupportedCountry, CountryGuideConfig> = {
   { title: "Emirates Cadet Pilot Program", description: "Emirates' cadet programme — how it works, selection, training at ECAS, and the guaranteed FO pathway.", href: "/uae/guides/emirates-cadet-pilot-program", time: "10 min read", category: "Cadet Programmes", emoji: "🇦🇪" },
   { title: "Etihad Cadet Pilot Program", description: "Etihad's cadet pathway — how it works, selection, training, and career prospects.", href: "/uae/guides/etihad-cadet-pilot-program", time: "9 min read", category: "Cadet Programmes", emoji: "🟤" },
   { title: "Air Arabia Cadet Program", description: "Air Arabia's cadet programme — how it works, costs, selection, and the regional-to-mainline pathway.", href: "/uae/guides/air-arabia-cadet-program", time: "8 min read", category: "Cadet Programmes", emoji: "🔴" },
+
+  // Flight Schools
+  { title: "Best Flight Schools in the UAE 2026", description: "GCAA-approved academies compared — EFTA, Alpha Aviation, Etihad Aviation Training, and Fujairah Aviation Academy.", href: "/uae/guides/best-flight-schools-uae", time: "14 min read", category: "Flight Schools", emoji: "🏫" },
 ],
   },
 };

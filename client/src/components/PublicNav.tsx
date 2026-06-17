@@ -153,6 +153,7 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     navLinks: [
       { label: "Quizzes", href: "/quizzes" },
       { label: "Guides", href: "/guides" },
+      { label: "Flight Schools", href: "/uae/guides/best-flight-schools-uae" },
       { label: "Pilot Stories", href: "/stories" },
       { label: "Jobs", href: "/jobs" },
       { label: "About", href: "/about" },
