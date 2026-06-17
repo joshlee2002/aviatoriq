@@ -32,7 +32,7 @@ export default function PilotCvGuide() {
           content: (
             <>
               <p>
-                Airline recruitment teams often screen pilot CVs quickly. The first pass is purely mechanical: does this candidate meet the minimum requirements? Licence type, total hours, right to work, medical validity. If you do not meet the minimums, the application may go no further regardless of how well the CV is written.
+                Airline recruitment teams often screen pilot CVs quickly, frequently using Applicant Tracking Systems (ATS) for the initial pass. The first pass is purely mechanical: does this candidate meet the minimum requirements? Licence type, total hours, right to work, medical validity. If you do not meet the minimums, the application will normally go no further regardless of how well the CV is written.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Before your interview, complete our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
@@ -42,7 +42,7 @@ export default function PilotCvGuide() {
                 If you do meet the minimums, the second pass is about presentation. A disorganised, inconsistently formatted CV signals the same lack of attention to detail that would concern a chief pilot in the cockpit. A clean, professional CV signals the opposite.
               </p>
               <p>
-                The third consideration — which most candidates overlook — is that your CV is the first impression of you as a professional. Airlines are not just hiring a licence; they are hiring a crew member. The tone, accuracy, and clarity of your CV communicate something about who you are.
+                The third consideration is that your CV is the first impression of you as a professional. Airlines are not just hiring a licence; they are hiring a crew member. The tone, accuracy, and clarity of your CV communicate something about who you are.
               </p>
             </>
           ),
@@ -52,16 +52,16 @@ export default function PilotCvGuide() {
           content: (
             <>
               <p>
-                Use this structure unless the airline's application portal specifies a different format.
+                Use this structure unless the airline's application portal specifies a different format or requires you to fill out their proprietary web forms.
               </p>
               <p>
-                <strong>Section 1 — Personal Details:</strong> Full name, phone number, email address, location (city and country), nationality, and right to work status. Do not include a photograph unless specifically requested (it is not standard practice in UK aviation recruitment).
+                <strong>Section 1 — Personal Details:</strong> Full name, phone number, email address, location (city and country), nationality, and right to work status. Do not include a photograph unless specifically requested (it is not standard practice in UK aviation recruitment and can cause ATS issues).
               </p>
               <p>
-                <strong>Section 2 — Licences and Ratings:</strong> List every licence and rating with the issuing authority, licence number (optional but professional), issue date, and expiry date. Include: ATPL(A) or CPL(A) or MPL, instrument rating (IR), type ratings, multi-crew cooperation (MCC) certificate, and any additional ratings (seaplane, night rating, etc.).
+                <strong>Section 2 — Licences and Ratings:</strong> List every licence and rating with the issuing authority (e.g., UK CAA, EASA), licence number (optional but professional), issue date, and expiry date. Include: ATPL(A) or CPL(A) or MPL, instrument rating (IR), type ratings, multi-crew cooperation (MCC) certificate, and any additional ratings.
               </p>
               <p>
-                <strong>Section 3 — Medical:</strong> Class 1 medical — issuing AME, issue date, and expiry date. If you hold a Class 2 medical only, include it but be aware that most airline positions require a valid Class 1.
+                <strong>Section 3 — Medical:</strong> Class 1 medical — issuing AME, issue date, and expiry date. Note any operational limitations if they are relevant to the role.
               </p>
               <p>
                 <strong>Section 4 — Flight Hours:</strong> Total hours, hours in command (PIC), hours as co-pilot (P2), hours on type (broken down by aircraft type), instrument hours, and night hours. Be precise. Recruiters cross-reference CV hours against logbook data at interview — discrepancies are disqualifying.
@@ -70,10 +70,10 @@ export default function PilotCvGuide() {
                 <strong>Section 5 — Employment History:</strong> Most recent first. For each role: employer, position, dates, aircraft type, and a brief description of responsibilities. For non-aviation roles, focus on transferable skills: leadership, communication, decision-making under pressure, team coordination.
               </p>
               <p>
-                <strong>Section 6 — Education:</strong> Highest qualification first. Include ATPL theory results if they are strong (above 90% average). Do not include GCSEs unless you have no other qualifications.
+                <strong>Section 6 — Education:</strong> Highest qualification first. Include ATPL theory results if they are strong (above 90% average) or if the airline specifically asks for first-time pass rates.
               </p>
               <p>
-                <strong>Section 7 — Additional Information:</strong> Languages spoken (with proficiency level), relevant courses (CRM, UPRT, dangerous goods), and any aviation-related achievements.
+                <strong>Section 7 — Additional Information:</strong> Languages spoken (with proficiency level, e.g., ICAO Level 6 English), relevant courses (CRM, UPRT, dangerous goods), and any aviation-related achievements.
               </p>
             </>
           ),
@@ -86,10 +86,10 @@ export default function PilotCvGuide() {
                 These are the mistakes that appear most frequently in pilot CVs and that result in immediate rejection:
               </p>
               <p>
-                <strong>Inflated hours:</strong> Never round up. Never include simulator hours as flight hours. Never include hours you cannot substantiate in your logbook. Recruiters ask for logbook evidence at interview. Discrepancies — even minor ones — are grounds for immediate rejection and can damage your reputation in a small industry.
+                <strong>Inflated hours:</strong> Never round up. Never include simulator hours as flight hours unless explicitly asked to break them out separately. Never include hours you cannot substantiate in your logbook. Recruiters ask for logbook evidence at interview. Discrepancies — even minor ones — are grounds for immediate rejection and can damage your reputation in a small industry.
               </p>
               <p>
-                <strong>Expired documents:</strong> List your medical and ratings with their expiry dates. If something is expired, note it honestly. Attempting to obscure an expired medical or lapsed rating is likely to be discovered and can damage trust.
+                <strong>Expired documents:</strong> List your medical and ratings with their expiry dates. If something is expired, note it honestly. Attempting to obscure an expired medical or lapsed rating is likely to be discovered and damages trust.
               </p>
               <p>
                 <strong>Generic CVs:</strong> Sending the same CV to every airline without tailoring it is a missed opportunity. If an airline operates a specific fleet, mention your experience on similar types. If they have a cadet programme, reference your training pathway.
@@ -108,19 +108,19 @@ export default function PilotCvGuide() {
           content: (
             <>
               <p>
-                A cover letter is not a summary of your CV. It is a targeted argument for why you are the right person for this specific airline. Three paragraphs is the correct length.
+                A cover letter is not a summary of your CV. It is a targeted argument for why you are the right person for this specific airline. Three paragraphs is normally the correct length.
               </p>
               <p>
-                <strong>Paragraph 1 — Why this airline:</strong> Be specific. "I have long admired easyJet's operational model" is vague and unconvincing. "I have followed easyJet's expansion of its A320neo fleet and its commitment to reducing per-seat emissions by 35% by 2035 — a direction I want to be part of" is specific and demonstrates genuine research.
+                <strong>Paragraph 1 — Why this airline:</strong> Be specific. "I have long admired easyJet's operational model" is vague and unconvincing. "I have followed easyJet's expansion of its A320neo fleet and its commitment to reducing per-seat emissions — a direction I want to be part of" is specific and demonstrates genuine research.
               </p>
               <p>
                 <strong>Paragraph 2 — What you bring:</strong> Summarise your strongest qualifications in two to three sentences. Focus on what is most relevant to the role. For an ab-initio application: your training school, your hours, and a specific quality you demonstrated during training. For an experienced pilot: your type rating, your hours on type, and a specific operational experience.
               </p>
               <p>
-                <strong>Paragraph 3 — Call to action:</strong> A single sentence expressing your enthusiasm for the opportunity and your availability for interview. "I would welcome the opportunity to discuss my application further and am available at your convenience."
+                <strong>Paragraph 3 — Call to action:</strong> A single sentence expressing your enthusiasm for the opportunity and your availability for interview.
               </p>
               <p>
-                Address the letter to a named individual where possible. "Dear Recruitment Team" is acceptable. "To Whom It May Concern" is not.
+                Address the letter to a named individual where possible, or use "Dear Recruitment Team". Avoid "To Whom It May Concern".
               </p>
             </>
           ),
@@ -133,13 +133,13 @@ export default function PilotCvGuide() {
                 If you have just completed your ATPL training and have 200–250 hours, you cannot compete with experienced pilots on hours. You should not try to. Instead, focus on what you can offer:
               </p>
               <p>
-                <strong>Quality of training:</strong> Name your training school. If it is a recognised UK CAA/EASA-approved school, that carries weight. If you trained at Oxford Aviation Academy, L3Harris, or CAE, say so prominently.
+                <strong>Quality of training:</strong> Name your training school. If it is a recognised UK CAA/EASA-approved school, that carries weight. 
               </p>
               <p>
-                <strong>ATPL theory results:</strong> If your average is strong, include it where the airline asks for or values theory performance. Strong theory results signal academic ability and commitment.
+                <strong>ATPL theory results:</strong> If your average is strong or you achieved first-time passes, include it where the airline asks for or values theory performance. Strong theory results signal academic ability and commitment.
               </p>
               <p>
-                <strong>MCC and JOC:</strong> If you completed a multi-crew cooperation course and jet orientation course, include them. They demonstrate you have been exposed to airline-style operations.
+                <strong>MCC and JOC:</strong> If you completed an APS MCC (Airline Pilot Standard Multi-Crew Cooperation) course, highlight this, as it demonstrates you have been trained to a higher airline-entry standard than a basic MCC.
               </p>
               <p>
                 <strong>Transferable skills:</strong> If you had a previous career before aviation — particularly in a high-stakes, team-based environment — draw explicit parallels. Former military personnel, healthcare workers, and emergency services professionals often have strong transferable skills that airlines value.
@@ -151,12 +151,11 @@ export default function PilotCvGuide() {
           ),
         },
       ]}
-    scopeBanner={<><GuideScopeBanner scope="CV and cover letter format in this guide follows UK conventions. US airlines use a résumé format." usHref="/us/guides/pilot-resume-usa" usLabel="View USA résumé guide →" /></>}
-    
+      scopeBanner={<GuideScopeBanner scope="CV and cover letter format in this guide follows UK conventions. US airlines use a résumé format." globalHref="/us/guides/pilot-resume-usa" globalLabel="View USA résumé guide →" />}
       sources={[
-    { name: "UK Civil Aviation Authority (CAA)" },
-    { name: "EASA Part-FCL" },
-    { name: "BALPA Pay & Conditions Survey" },
-  ]}/>
+        { name: "Airline Recruitment Portals (BA, easyJet, Ryanair)" },
+        { name: "BALPA Careers Guidance" },
+      ]}
+    />
   );
 }

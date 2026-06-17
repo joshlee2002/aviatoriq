@@ -6,19 +6,20 @@ export default function WomenInAviation() {
   return (
     <GuideLayout
       title="Women in Aviation: Becoming a Pilot in the UK (2026 Guide)"
-      subtitle="Scholarships, challenges, industry progress, and support organisations for women pursuing a pilot career in the UK."
+      subtitle="Scholarships, challenges, industry progress, and support organisations for women pursuing a commercial pilot career in the UK."
       canonical="/guides/women-in-aviation-uk"
       metaDescription="Women in aviation UK 2026. Scholarships, CAA statistics, challenges, and support organisations for women pursuing a commercial pilot career."
       readTime="11 min read"
       lastUpdated="June 2026"
+      category="UK Pilot Careers"
       heroImage="/manus-storage/women-aviation_9d4c2b8e.jpg"
       ctaHref="/quiz"
       ctaText="Start your career assessment"
-      scopeBanner={<GuideScopeBanner scope="Scholarships and organisations in this guide are primarily UK-based." usHref="/us/guides/women-in-aviation-usa" usLabel="View USA scholarships →" />}
+      scopeBanner={<GuideScopeBanner scope="Scholarships, statistics, and organisations in this guide are primarily UK-based." usHref="/us/guides/women-in-aviation-usa" usLabel="View USA scholarships →" />}
       faqSchema={[
-        { question: "What percentage of UK pilots are women?", answer: "Women represent approximately 5% of commercial pilots in the UK. The CAA issued 301 pilot licences to women in 2023, up from 239 in 2019, but the overall proportion remains very low." },
-        { question: "Are there scholarships for women wanting to become pilots in the UK?", answer: "Yes. The British Women Pilots' Association (BWPA), Women in Aviation (WIA UK), and several airlines offer scholarships and bursaries specifically for female aviation students." },
-        { question: "Do airlines actively recruit female pilots?", answer: "Yes. Most major UK airlines have active diversity and inclusion programmes targeting female candidates. British Airways, easyJet, and Jet2 all run specific initiatives to encourage female applicants to their cadet programmes." }
+        { question: "What percentage of UK pilots are women?", answer: "Women represent approximately 5% to 6% of commercial pilots in the UK. The CAA issued 301 commercial pilot licences to women in 2023, up from 239 in 2019, but the overall proportion remains very low." },
+        { question: "Are there scholarships for women wanting to become pilots in the UK?", answer: "Yes. The British Women Pilots' Association (BWPA) and several flight schools offer scholarships and bursaries specifically for female aviation students, though these rarely cover the full £100,000 cost of integrated training." },
+        { question: "Do airlines actively recruit female pilots?", answer: "Yes. Most major UK airlines have active diversity and inclusion programmes targeting female candidates. British Airways, easyJet, and Jet2 all run specific initiatives to encourage female applicants to their cadet programmes, though selection remains strictly merit-based." }
       ]}
       sections={[
         {
@@ -26,16 +27,16 @@ export default function WomenInAviation() {
           content: (
             <>
               <p>
-                Progress is being made, but the numbers remain stark. Women represent approximately 5% of commercial pilots in the UK. The Civil Aviation Authority's most recent data shows that 301 pilot licences were issued to women in 2023, up from 239 in 2019 — a meaningful increase, but still a tiny fraction of the total .
+                Progress is being made, but the numbers remain stark. Women represent approximately 5% to 6% of commercial pilots in the UK. The Civil Aviation Authority's data shows that 301 commercial pilot licences were issued to women in 2023, up from 239 in 2019 — a meaningful increase, but still a tiny fraction of the total.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
-                The global picture is similar. Women account for approximately 5–6% of commercial pilots worldwide. In some regions, the figure is even lower. The aviation industry is aware of this imbalance and has made diversity a stated priority — but awareness and action are different things.
+                The global picture is similar. Women account for approximately 5–6% of commercial pilots worldwide. The aviation industry is aware of this imbalance and has made diversity a stated priority, though structural barriers remain.
               </p>
               <p>
-                For women considering a pilot career in 2026, the good news is that the industry has never been more actively trying to recruit female candidates. Airlines are running targeted initiatives, scholarships are more available than ever, and the cultural environment in cockpits has improved significantly over the past decade.
+                For women considering a pilot career in 2026, the industry is actively trying to recruit female candidates. Airlines are running targeted initiatives, support networks are more visible than ever, and the cultural environment in commercial cockpits is heavily regulated by modern Crew Resource Management (CRM) standards and strict corporate HR policies.
               </p>
             </>
           ),
@@ -45,16 +46,16 @@ export default function WomenInAviation() {
           content: (
             <>
               <p>
-                Acknowledging the challenges is not pessimism — it is preparation. Women entering aviation in 2026 will encounter some specific obstacles that their male counterparts do not.
+                Acknowledging the challenges is not pessimism — it is preparation. Women entering aviation in 2026 will encounter some specific obstacles.
               </p>
               <p>
-                <strong>The cost barrier:</strong> Flight training costs £80,000–£130,000. This is a barrier for everyone, but research consistently shows that women are less likely to take on large amounts of debt than men, and less likely to have access to family financial support for training. Scholarships and bursaries specifically targeting women are therefore critically important.
+                <strong>The cost barrier:</strong> Commercial flight training costs £80,000–£130,000. This is a barrier for everyone, but some industry research suggests women are historically less likely to take on the massive unsecured debt required for integrated training. This makes funded cadet programmes (like the BA Speedbird Academy) and modular training routes particularly important.
               </p>
               <p>
-                <strong>The visibility problem:</strong> If you have never seen a female pilot, it is harder to imagine yourself as one. The lack of role models in the cockpit creates a self-reinforcing cycle. This is changing — airlines are increasingly featuring female pilots in their marketing and cadet programme materials — but it is still a real psychological barrier for many young women.
+                <strong>The visibility problem:</strong> If you rarely see a female pilot, it is harder to imagine yourself as one. The lack of visible role models creates a self-reinforcing cycle. This is changing — airlines are increasingly featuring female pilots in their recruitment materials — but it remains a psychological barrier for many young women considering STEM careers.
               </p>
               <p>
-                <strong>The culture:</strong> Aviation culture has historically been male-dominated, and while it has improved significantly, some environments still have work to do. Most major airlines have strong HR policies and zero tolerance for discrimination, but smaller operators and some flight schools can still feel unwelcoming.
+                <strong>Maternity and lifestyle:</strong> Aviation is a 24/7 industry. While airlines offer statutory maternity leave, returning to the flight deck requires maintaining medical currency and simulator checks. Balancing a flying roster with childcare requires significant planning, though many airlines now offer part-time rosters (e.g., 50% or 75% contracts) which are heavily utilised by both male and female pilots to manage family life.
               </p>
             </>
           ),
@@ -64,16 +65,16 @@ export default function WomenInAviation() {
           content: (
             <>
               <p>
-                <strong>British Women Pilots' Association (BWPA):</strong> The BWPA offers annual scholarships for women at various stages of pilot training, from PPL bursaries to advanced ratings. Their scholarship programme has been running for decades and is the most established in the UK. Applications typically open in the autumn for the following year's training.
+                While full-ride scholarships are exceptionally rare, several organisations offer bursaries that can help offset the costs of modular training or specific ratings:
               </p>
               <p>
-                <strong>Women in Aviation (WIA UK):</strong> WIA UK runs networking events, mentoring programmes, and scholarship opportunities for women in all areas of aviation, including pilot training. Their annual conference is the largest gathering of women in UK aviation.
+                <strong>British Women Pilots' Association (BWPA):</strong> The BWPA offers annual scholarships for women at various stages of pilot training, from PPL bursaries to advanced ratings. Their scholarship programme has been running for decades and is the most established in the UK. Applications typically open in the autumn.
               </p>
               <p>
-                <strong>CAE Women in Flight:</strong> CAE Oxford Aviation Academy runs a specific Women in Flight programme that provides mentoring, networking, and in some cases financial support for female candidates applying to their integrated ATPL programmes.
+                <strong>Women in Aviation International (WAI):</strong> While heavily US-focused, WAI has European chapters and offers scholarships that UK students can sometimes access, particularly for specific ratings or instructor certificates.
               </p>
               <p>
-                <strong>Airline-specific diversity programmes:</strong> British Airways, easyJet, and Jet2 all have active diversity initiatives that include specific outreach to female candidates for their cadet programmes. While these are not financial scholarships in the traditional sense, they often include mentoring, career days, and priority consideration for female applicants who meet the standard criteria.
+                <strong>Flight School Initiatives:</strong> Some Approved Training Organisations (ATOs), such as CAE and L3Harris, periodically run "Women in Flight" initiatives. These sometimes offer partial funding, but more commonly provide mentorship and guaranteed assessment slots. Always read the terms carefully to understand if the initiative provides actual funding or just deferred loan repayment options.
               </p>
             </>
           ),
@@ -83,16 +84,16 @@ export default function WomenInAviation() {
           content: (
             <>
               <p>
-                The major UK airlines have made genuine commitments to improving gender diversity in their cockpits, driven partly by ethics and partly by the practical reality that they cannot afford to exclude half the potential talent pool.
+                Major UK airlines have made genuine commitments to improving gender diversity in their cockpits, driven by both corporate ethics and the practical reality of a tightening pilot supply.
               </p>
               <p>
-                <strong>British Airways:</strong> BA has publicly committed to increasing the proportion of female pilots. Their Speedbird Academy actively encourages female applicants and has no gender preference in selection — candidates are assessed purely on merit. The 2026 intake included a higher proportion of female cadets than any previous year.
+                <strong>British Airways:</strong> BA actively encourages female applicants to its fully-funded Speedbird Academy. Selection remains strictly merit-based and gender-blind (meaning candidates must pass the same rigorous aptitude and simulator tests), but BA has significantly increased its targeted outreach to female STEM students.
               </p>
               <p>
-                <strong>easyJet:</strong> easyJet launched its Amy Johnson Initiative in 2015 with a target of 20% female new entrant pilots by 2020. While that target was not fully met, the initiative raised awareness and created a pipeline of female candidates. easyJet continues to run targeted recruitment events for women.
+                <strong>easyJet:</strong> easyJet launched its Amy Johnson Initiative with the aim of increasing female new entrant pilots. While the airline has faced challenges hitting its most ambitious targets, the initiative successfully raised awareness and created a pipeline of female candidates. easyJet continues to run targeted recruitment events.
               </p>
               <p>
-                <strong>Jet2:</strong> Jet2 has a strong reputation for inclusive culture and actively promotes female pilot role models through their social media and recruitment materials.
+                <strong>TUI and Jet2:</strong> Both airlines have strong reputations for inclusive cultures and actively promote female pilot role models through their recruitment channels, focusing heavily on the lifestyle and part-time roster options available to experienced First Officers and Captains.
               </p>
             </>
           ),
@@ -102,26 +103,16 @@ export default function WomenInAviation() {
           content: (
             <>
               <p>
-                <strong>Get a trial flight first.</strong> Many women who become pilots say the moment they sat in a cockpit for the first time was the moment they knew it was right for them. A trial flight costs £150–£250 and is the best investment you can make before committing to training.
+                <strong>Get a trial flight first.</strong> A trial flight at a local aero club costs £150–£250 and is the best investment you can make before committing to commercial training. It confirms whether you actually enjoy the environment of a light aircraft.
               </p>
               <p>
-                <strong>Apply for every scholarship you are eligible for.</strong> The BWPA, WIA UK, and airline-specific programmes are all worth applying for. The competition is real, but the odds are better than the airline cadet programmes, and the financial benefit can be significant.
+                <strong>Secure your Class 1 Medical early.</strong> Before spending any money on training, book your initial UK Class 1 Medical assessment at an Aeromedical Centre (AeMC). It costs around £950-£1,400 but provides absolute certainty that you meet the regulatory health standards.
               </p>
               <p>
-                <strong>Connect with the community.</strong> Women in Aviation (WIA UK) and the BWPA both run active communities where female pilots and student pilots share experiences, advice, and support. These networks are genuinely valuable — both for practical advice and for the psychological benefit of knowing you are not alone.
+                <strong>Connect with the community.</strong> The BWPA runs an active community where female pilots and student pilots share experiences, advice, and support. These networks are genuinely valuable — both for practical advice on flight schools and for the psychological benefit of peer support.
               </p>
               <p>
-                <strong>Do not let the statistics put you off.</strong> The fact that only 5% of pilots are women is a description of the current state, not a prescription for the future. Every woman who becomes a pilot makes it easier for the next one.
-              </p>
-            </>
-          ),
-        },
-        {
-          heading: "References",
-          content: (
-            <>
-              <p className="text-xs text-white/50 space-y-1">
-                 UK Civil Aviation Authority (CAA). "UK aviation industry sees highest number of licences issued to women." <em>CAA Newsroom, July 2024</em>.
+                <strong>Do not let the statistics put you off.</strong> The fact that only 5% of pilots are women is a description of the current state, not a limit on your potential. Selection for airline cadet programmes and flight schools is based entirely on cognitive aptitude, psychomotor skills, and professional competencies — none of which are gendered.
               </p>
             </>
           ),
@@ -132,11 +123,11 @@ export default function WomenInAviation() {
         { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "13 min" },
         { title: "Pilot Training Costs UK", href: "/guides/pilot-training-costs", time: "8 min" },
       ]}
-    
       sources={[
-    { name: "UK Civil Aviation Authority (CAA)" },
-    { name: "EASA Part-FCL" },
-    { name: "BALPA Pay & Conditions Survey" },
-  ]}/>
+        { name: "UK Civil Aviation Authority (CAA) Licensing Statistics" },
+        { name: "British Women Pilots' Association (BWPA)" },
+        { name: "Airline Recruitment Portals (BA, easyJet)" },
+      ]}
+    />
   );
 }

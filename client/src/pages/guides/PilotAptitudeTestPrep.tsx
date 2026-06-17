@@ -11,6 +11,7 @@ export default function PilotAptitudeTestPrep() {
       metaDescription="Pilot aptitude test preparation 2026. How to prepare for PILAPT, Compass, and Cut-e. Free resources, practice strategies, and what airlines are actually testing."
       readTime="11 min read"
       lastUpdated="June 2026"
+      category="UK Pilot Careers"
       heroImage="/manus-storage/aptitude-test_9d4c2b8e.jpg"
       ctaHref="/quiz"
       ctaText="Start your career assessment"
@@ -19,7 +20,7 @@ export default function PilotAptitudeTestPrep() {
         { question: "What is a pilot aptitude test?", answer: "A pilot aptitude test is a series of computer-based assessments designed to measure the cognitive and psychomotor skills required for flight training. They test spatial awareness, multi-tasking, numerical reasoning, and reaction time." },
         { question: "What are the most common pilot aptitude tests?", answer: "The most common tests used by European and UK airlines are PILAPT (Pilot Aptitude Test), Compass+, Cut-e (now part of Aon), and the Saville Assessment." },
         { question: "Can you practice for pilot aptitude tests?", answer: "Yes. Practice can help you understand the format, reduce avoidable mistakes and build better task-management techniques. It cannot guarantee a pass or replace the underlying cognitive and psychomotor skills airlines are assessing." },
-        { question: "What happens if I fail a pilot aptitude test?", answer: "If you fail an aptitude test for a specific airline or cadet programme, your application will usually be rejected. Most airlines allow you to reapply after a waiting period (typically 6 to 12 months)." }
+        { question: "What happens if I fail a pilot aptitude test?", answer: "If you fail an aptitude test for a specific airline or cadet programme, your application will usually be rejected for that intake. Most airlines allow you to reapply after a waiting period (typically 6 to 12 months), though some may have a maximum number of attempts." }
       ]}
       sections={[
         {
@@ -27,7 +28,7 @@ export default function PilotAptitudeTestPrep() {
           content: (
             <>
               <p>
-                Pilot aptitude tests are one of the biggest filters in airline selection. They are demanding, standardised and efficient for screening large applicant pools. Airlines use them because flight training is incredibly expensive, and aptitude tests are used because airlines believe they help predict a candidate's likelihood of passing flight training without requiring extra hours.
+                Pilot aptitude tests are one of the biggest filters in airline selection. They are demanding, standardised and efficient for screening large applicant pools. Airlines use them because flight training is incredibly expensive, and aptitude tests are used because airlines believe they help predict a candidate's likelihood of passing flight training without requiring extra hours or remedial training.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Before your interview, complete our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
@@ -102,28 +103,16 @@ export default function PilotAptitudeTestPrep() {
             </>
           ),
         },
-        {
-          heading: "References",
-          content: (
-            <>
-              <p className="text-xs text-white/50 space-y-1">
-                 PilotAptitudeTest.com. "PILAPT Assessment Guide 2026." <em>Test Preparation Resources</em>.<br/>
-                 Pilotest. "Pilot Aptitude Tests Preparation." <em>Assessment Data</em>.
-              </p>
-            </>
-          ),
-        }
       ]}
       relatedGuides={[
         { title: "Airline Pilot Interview Guide", href: "/guides/airline-pilot-interview", time: "12 min" },
         { title: "Airline Simulator Assessment Guide", href: "/guides/airline-simulator-assessment", time: "11 min" },
         { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "13 min" },
       ]}
-
       sources={[
-    { name: "UK Civil Aviation Authority (CAA)" },
-    { name: "EASA Part-FCL" },
-    { name: "BALPA Pay & Conditions Survey" },
-  ]}/>
+        { name: "Airline Recruitment Portals (BA, easyJet, Ryanair)" },
+        { name: "BALPA Careers Guidance" },
+      ]}
+    />
   );
 }
