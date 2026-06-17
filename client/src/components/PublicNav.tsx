@@ -379,11 +379,14 @@ export default function PublicNav() {
             <button
               type="button"
               onClick={() => navigate("/select")}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all hover:bg-white/8"
-              style={{ color: "oklch(0.75 0.04 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
-              title="Change country"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
+              style={{ color: "oklch(0.78 0.04 240)", border: "1px solid oklch(1 0 0 / 0.15)", background: "oklch(1 0 0 / 0.04)" }}
+              title="Change your country to see region-specific guides, costs, and schools"
+              aria-label="Change country"
             >
-              {country === "us" ? "🇺🇸 US" : country === "australia" ? "🇦🇺 AU" : country === "canada" ? "🇨🇦 CA" : country === "europe" ? "🇪🇺 EU" : country === "uae" ? "🇦🇪 UAE" : country === "south-africa" ? "🇿🇦 ZA" : country === "new-zealand" ? "🇳🇿 NZ" : country === "india" ? "🇮🇳 IN" : country === "singapore" ? "🇸🇬 SG" : "🌍 Global"}
+              <span>{country === "us" ? "🇺🇸" : country === "australia" ? "🇦🇺" : country === "canada" ? "🇨🇦" : country === "europe" ? "🇪🇺" : country === "uae" ? "🇦🇪" : country === "south-africa" ? "🇿🇦" : country === "new-zealand" ? "🇳🇿" : country === "india" ? "🇮🇳" : country === "singapore" ? "🇸🇬" : "🌍"}</span>
+              <span>{country === "us" ? "US" : country === "australia" ? "AU" : country === "canada" ? "CA" : country === "europe" ? "EU" : country === "uae" ? "UAE" : country === "south-africa" ? "ZA" : country === "new-zealand" ? "NZ" : country === "india" ? "IN" : country === "singapore" ? "SG" : "Global"}</span>
+              <ChevronDown className="w-3 h-3 opacity-50" />
             </button>
 
             {user?.role === "admin" && (

@@ -106,6 +106,11 @@ export default function GuidesIndexUAE() {
                 </div>
               );
             })}
+            {/* More guides notice */}
+            <div className="p-4 rounded-xl mb-4 flex items-start gap-3" style={{ background: "oklch(0.45 0.18 240 / 0.08)", border: "1px solid oklch(0.45 0.18 240 / 0.2)" }}>
+              <svg className="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="oklch(0.65 0.18 240)" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" /></svg>
+              <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}><strong className="text-white/70">More UAE & Middle East guides coming.</strong> We are actively expanding our UAE & Middle East content. Check back soon, or take the free assessment to get a personalised roadmap now.</p>
+            </div>
             <div className="p-5 md:p-8 rounded-2xl text-center mt-4" style={{ background: "linear-gradient(135deg, oklch(0.14 0.12 255), oklch(0.18 0.14 248))", border: "1px solid oklch(0.45 0.18 240 / 0.2)" }}>
               <h3 className="font-display font-bold text-xl text-white mb-2">Ready to take the next step?</h3>
               <p className="text-sm mb-5" style={{ color: muted }}>Take the free 5-minute assessment and get a personalised pilot training roadmap.</p>

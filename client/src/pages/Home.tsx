@@ -97,7 +97,7 @@ function HeroSection() {
               style={{ background: "oklch(1 0 0 / 0.07)", border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.75 0.04 240)" }}
             >
               <div className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-              Free · No registration · 5 minutes
+              Free · No registration · 🇬🇧 UK · 🇺🇸 USA · 8 countries
             </div>
 
             <h1
@@ -111,7 +111,7 @@ function HeroSection() {
             </h1>
 
             <p className="text-base md:text-lg mb-6 leading-relaxed animate-fade-in-up delay-100" style={{ color: "oklch(0.72 0.04 240)" }}>
-              Answer 5 questions about your age, budget, and availability. Get a specific, data-driven training roadmap — your exact route, realistic costs, timeline, and matched flight schools. No generic advice.
+              AviatorIQ helps aspiring pilots understand their best training route, realistic costs, and matched flight schools — based on their country, budget, and situation. Answer 5 questions and get a free, personalised roadmap. No generic advice.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-200">
@@ -224,9 +224,9 @@ function SocialProofBar() {
       <div className="container py-4">
         <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
           {[
-            { value: "54+", label: "Flight schools worldwide" },
-            { value: "33+", label: "In-depth training guides" },
-            { value: "11", label: "Free interactive tools" },
+            { value: "182", label: "Training guides" },
+            { value: "8", label: "Countries covered" },
+            { value: "11", label: "Free tools" },
             { value: "Free", label: "Always, no registration" },
           ].map((stat) => (
             <div key={stat.label} className="flex items-center gap-3">
