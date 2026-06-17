@@ -287,6 +287,11 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import EditorialPolicy from "./pages/EditorialPolicy";
 import AboutOurAuthors from "./pages/AboutOurAuthors";
+import PilotTrainingCostsHub from "./pages/hubs/PilotTrainingCostsHub";
+import PilotMedicalHub from "./pages/hubs/PilotMedicalHub";
+import CadetProgrammesHub from "./pages/hubs/CadetProgrammesHub";
+import PilotSalaryHub from "./pages/hubs/PilotSalaryHub";
+import FlightSchoolsHub from "./pages/hubs/FlightSchoolsHub";
 
 // Initialise PostHog analytics once on app load
 initAnalytics();
@@ -578,6 +583,12 @@ function Router() {
       <Route path="/us/guides/airline-interview-prep" component={AirlineInterviewPrepUSA} />
       <Route path="/guides/pilot-lifestyle-uk" component={PilotLifestyleUK} />
       <Route path="/uae/guides/how-to-become-a-pilot-uae" component={HowToBecomePilotUAE} />
+      {/* Hub pages */}
+      <Route path="/hubs/pilot-training-costs" component={PilotTrainingCostsHub} />
+      <Route path="/hubs/pilot-medical" component={PilotMedicalHub} />
+      <Route path="/hubs/cadet-programmes" component={CadetProgrammesHub} />
+      <Route path="/hubs/pilot-salary" component={PilotSalaryHub} />
+      <Route path="/hubs/flight-schools" component={FlightSchoolsHub} />
       {/* 404 */}
       <Route path="/404" component={NotFound} />
       <Route path="*" component={NotFound} />
