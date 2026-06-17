@@ -50,7 +50,7 @@ async function startServer() {
   // ─── Global rate limiter — broad abuse prevention ─────────────────────────
   const globalLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 1000, // generous for page loads; mutations have their own stricter limiter
+    max: 5000, // generous for page loads; mutations have their own stricter limiter
     standardHeaders: true,
     legacyHeaders: false,
     message: { error: "Too many requests, please try again later." },
@@ -60,7 +60,7 @@ async function startServer() {
   // ─── Strict rate limiter for public mutations ──────────────────────────────
   const mutationLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
-    max: 30,
+    max: 500,
     standardHeaders: true,
     legacyHeaders: false,
     message: { error: "Too many submissions, please try again in 15 minutes." },
@@ -79,6 +79,11 @@ async function startServer() {
   // ─── Serve local uploaded files (PDFs, etc.) ──────────────────────────────
   const uploadsPath = process.env.LOCAL_STORAGE_PATH ?? path.join(process.cwd(), "uploads");
   app.use("/uploads", express.static(uploadsPath));
+
+  // ─── Health check (used by Railway and other hosting platforms) ──────────────────
+  app.get("/api/health", (_req, res) => {
+    res.json({ status: "ok", timestamp: new Date().toISOString() });
+  });
 
   registerStorageProxy(app);
   registerOAuthRoutes(app);

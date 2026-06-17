@@ -1,14 +1,15 @@
 import { Link } from "wouter";
+import { useEffect, useState } from "react";
 import SEO from "@/components/SEO";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import EmailCapture from "@/components/EmailCapture";
 import { trpc } from "@/lib/trpc";
+import { useCountry } from "@/contexts/CountryContext";
 import {
   Plane,
   ArrowRight,
   CheckCircle2,
-  Star,
   Users,
   TrendingUp,
   BookOpen,
@@ -19,19 +20,17 @@ import {
   Clock,
   Target,
   Zap,
-  Activity,
   MapPin,
   Stethoscope,
   GraduationCap,
   Compass,
-  BarChart3,
   Lock,
   Award,
-  BadgeCheck,
-  Quote,
   Briefcase,
   BrainCircuit,
   MonitorPlay,
+  Globe,
+  X,
 } from "lucide-react";
 
 // ─── Shared style tokens ──────────────────────────────────────────────────────
@@ -42,6 +41,69 @@ const borderHover = "oklch(1 0 0 / 0.16)";
 const muted = "oklch(0.55 0.04 240)";
 const brandGradient = "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0.18 200))";
 const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
+
+// ─── Country Detection Banner ─────────────────────────────────────────────────
+function CountryDetectionBanner() {
+  const { country, setCountry } = useCountry();
+  const [detectedCountry, setDetectedCountry] = useState<string | null>(null);
+  const [dismissed, setDismissed] = useState(false);
+
+  useEffect(() => {
+    if (country || dismissed) return;
+    // Detect via timezone
+    try {
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      if (tz.startsWith("America/")) {
+        setDetectedCountry("us");
+      } else if (tz.startsWith("Australia/")) {
+        setDetectedCountry("australia");
+      } else if (tz.startsWith("Europe/London") || tz === "GB") {
+        setDetectedCountry("uk");
+      } else if (tz.startsWith("Europe/")) {
+        setDetectedCountry("europe");
+      } else if (tz.startsWith("Canada/") || tz.startsWith("America/Toronto") || tz.startsWith("America/Vancouver")) {
+        setDetectedCountry("canada");
+      }
+    } catch {}
+  }, [country, dismissed]);
+
+  if (!detectedCountry || country || dismissed) return null;
+
+  const labels: Record<string, { flag: string; name: string; href: string }> = {
+    us: { flag: "🇺🇸", name: "United States", href: "/us" },
+    australia: { flag: "🇦🇺", name: "Australia", href: "/australia" },
+    uk: { flag: "🇬🇧", name: "United Kingdom", href: "/" },
+    europe: { flag: "🇪🇺", name: "Europe (EASA)", href: "/europe" },
+    canada: { flag: "🇨🇦", name: "Canada", href: "/canada" },
+  };
+
+  const detected = labels[detectedCountry];
+  if (!detected) return null;
+
+  return (
+    <div
+      className="relative flex items-center justify-between gap-3 px-4 py-2.5 text-sm"
+      style={{ background: "oklch(0.18 0.08 240)", borderBottom: "1px solid oklch(0.45 0.18 240 / 0.3)" }}
+    >
+      <div className="flex items-center gap-2 flex-1 min-w-0">
+        <Globe className="w-3.5 h-3.5 flex-shrink-0" style={{ color: "oklch(0.65 0.18 240)" }} />
+        <span style={{ color: "oklch(0.75 0.04 240)" }}>
+          Looks like you're in <strong className="text-white">{detected.flag} {detected.name}</strong>.
+        </span>
+        <button
+          onClick={() => { setCountry(detectedCountry as any); if (detectedCountry !== "uk") window.location.href = detected.href; setDismissed(true); }}
+          className="ml-1 px-3 py-0.5 rounded-full text-xs font-semibold transition-all"
+          style={{ background: ctaGradient, color: "white" }}
+        >
+          Switch to {detected.name} version
+        </button>
+      </div>
+      <button onClick={() => setDismissed(true)} className="flex-shrink-0 p-1 rounded-full hover:bg-white/10 transition-all" aria-label="Dismiss">
+        <X className="w-3.5 h-3.5" style={{ color: muted }} />
+      </button>
+    </div>
+  );
+}
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 function HeroSection() {
@@ -65,14 +127,14 @@ function HeroSection() {
           backgroundImage: "url('/manus-storage/hero-cockpit_b4476f04.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
-          opacity: 0.28,
+          opacity: 0.22,
         }}
       />
-      {/* Dark gradient overlay to keep text readable */}
+      {/* Dark gradient overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "linear-gradient(90deg, oklch(0.10 0.10 255 / 0.85) 0%, oklch(0.10 0.10 255 / 0.55) 50%, oklch(0.10 0.10 255 / 0.25) 100%)",
+          background: "linear-gradient(90deg, oklch(0.10 0.10 255 / 0.88) 0%, oklch(0.10 0.10 255 / 0.55) 50%, oklch(0.10 0.10 255 / 0.25) 100%)",
         }}
       />
       {/* Grid overlay */}
@@ -101,26 +163,54 @@ function HeroSection() {
             </div>
 
             <h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-display font-bold text-white mb-4 leading-[1.1] animate-fade-in-up"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.2rem] font-display font-bold text-white mb-4 leading-[1.1] animate-fade-in-up"
               style={{ letterSpacing: "-0.02em" }}
             >
-              Your Personalised{" "}
+              AviatorIQ helps aspiring pilots understand their{" "}
               <span style={{ background: ctaGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                Pilot Training Roadmap
+                best route, costs, readiness
               </span>
+              {" "}and matched training options
             </h1>
 
-            <p className="text-base md:text-lg mb-6 leading-relaxed animate-fade-in-up delay-100" style={{ color: "oklch(0.72 0.04 240)" }}>
-              Answer 5 questions about your age, budget, and availability. Get a specific, data-driven training roadmap — your exact route, realistic costs, timeline, and matched flight schools. No generic advice.
+            <p className="text-base md:text-lg mb-3 leading-relaxed animate-fade-in-up delay-100" style={{ color: "oklch(0.72 0.04 240)" }}>
+              Based on your country — UK CAA, FAA, CASA, EASA or beyond. Get country-specific routes, real 2026 costs, and matched flight schools. No generic advice.
             </p>
+
+            {/* Country quick-select */}
+            <div className="flex flex-wrap gap-2 mb-6 animate-fade-in-up delay-150">
+              {[
+                { flag: "🇬🇧", label: "UK", href: "/" },
+                { flag: "🇺🇸", label: "USA", href: "/us" },
+                { flag: "🇦🇺", label: "Australia", href: "/australia" },
+                { flag: "🇨🇦", label: "Canada", href: "/canada" },
+                { flag: "🇪🇺", label: "Europe", href: "/europe" },
+              ].map(c => (
+                <Link
+                  key={c.label}
+                  href={c.href}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold no-underline transition-all hover:scale-105"
+                  style={{ background: "oklch(1 0 0 / 0.07)", border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.8 0.04 240)" }}
+                >
+                  {c.flag} {c.label}
+                </Link>
+              ))}
+              <Link
+                href="/select"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold no-underline transition-all hover:scale-105"
+                style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.10)", color: muted }}
+              >
+                <Globe className="w-3 h-3" /> More
+              </Link>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-200">
               <Link
                 href="/roadmap"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white no-underline transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white no-underline transition-all hover:scale-[1.02]"
                 style={{ background: ctaGradient, boxShadow: "0 0 30px oklch(0.72 0.18 65 / 0.35)" }}
               >
-                Generate My Free Pilot Roadmap
+                Get My Free Pilot Roadmap
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
@@ -128,12 +218,12 @@ function HeroSection() {
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-base font-semibold text-white/80 no-underline transition-all hover:text-white"
                 style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.15)" }}
               >
-                Find My Training Route
+                Full Career Assessment
               </Link>
             </div>
 
             <div className="flex flex-wrap items-center gap-5 mt-8 animate-fade-in-up delay-300">
-              {["Free · No registration", "Real 2026 costs & timelines", "Matched flight schools"].map((item) => (
+              {["Free · No registration", "Country-specific guidance", "Real 2026 costs & timelines"].map((item) => (
                 <div key={item} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.6 0.04 240)" }}>
                   <CheckCircle2 className="w-3.5 h-3.5 flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }} />
                   {item}
@@ -142,7 +232,7 @@ function HeroSection() {
             </div>
           </div>
 
-          {/* Right: Platform preview — decorative, no competing CTAs */}
+          {/* Right: Platform preview — UK sample, clearly labelled illustrative */}
           <div className="hidden lg:block animate-fade-in-up delay-200">
             <div
               className="rounded-2xl p-6"
@@ -154,7 +244,7 @@ function HeroSection() {
                   <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                   <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "oklch(0.55 0.04 240)" }}>Sample Roadmap</span>
                 </div>
-                <span className="text-xs px-2 py-0.5 rounded-full font-bold" style={{ background: "oklch(0.72 0.18 65 / 0.2)", color: "oklch(0.85 0.15 65)" }}>Free</span>
+                <span className="text-xs px-2 py-0.5 rounded-full font-bold" style={{ background: "oklch(0.72 0.18 65 / 0.2)", color: "oklch(0.85 0.15 65)" }}>🇬🇧 UK Example</span>
               </div>
 
               {/* Candidate summary */}
@@ -162,8 +252,8 @@ function HeroSection() {
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: ctaGradient }}>JM</div>
                   <div>
-                    <div className="text-sm font-semibold text-white">Jamie, 24 — Sydney</div>
-                    <div className="text-xs" style={{ color: "oklch(0.6 0.04 240)" }}>Goal: Airline Pilot (ATPL)</div>
+                    <div className="text-sm font-semibold text-white">Jamie, 24 — London, UK</div>
+                    <div className="text-xs" style={{ color: "oklch(0.6 0.04 240)" }}>Goal: Airline Pilot (CAA ATPL)</div>
                   </div>
                   <div className="ml-auto text-right">
                     <div className="text-lg font-display font-black" style={{ background: ctaGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>84</div>
@@ -173,7 +263,7 @@ function HeroSection() {
                 <div className="grid grid-cols-2 gap-2">
                   {[
                     { label: "Route", value: "Integrated ATPL" },
-                    { label: "Budget", value: "$80k–$140k" },
+                    { label: "Budget", value: "£80k–£120k" },
                     { label: "Timeline", value: "Within 12 months" },
                     { label: "Top barrier", value: "Finance" },
                   ].map(item => (
@@ -187,12 +277,15 @@ function HeroSection() {
 
               {/* Recommended schools */}
               <div>
-                <div className="text-[10px] font-semibold uppercase tracking-widest mb-2 flex items-center gap-1.5" style={{ color: "oklch(0.4 0.04 240)" }}>Example Matched Schools <span className="text-[9px] px-1.5 py-0.5 rounded font-normal" style={{ background: "oklch(1 0 0 / 0.06)", color: "oklch(0.5 0.04 240)" }}>Illustrative only</span></div>
+                <div className="text-[10px] font-semibold uppercase tracking-widest mb-2 flex items-center gap-1.5" style={{ color: "oklch(0.4 0.04 240)" }}>
+                  Matched UK Flight Schools
+                  <span className="text-[9px] px-1.5 py-0.5 rounded font-normal" style={{ background: "oklch(1 0 0 / 0.06)", color: "oklch(0.5 0.04 240)" }}>Illustrative</span>
+                </div>
                 <div className="space-y-1.5">
                   {[
-                    { name: "Oxford Aviation Academy", match: "98%", location: "Oxford, UK" },
-                    { name: "ATP Flight School", match: "94%", location: "Phoenix, USA" },
-                    { name: "CASA Aviation Academy", match: "91%", location: "Melbourne, AU" },
+                    { name: "Oxford Aviation Academy (CAE)", match: "98%", location: "Oxford, UK 🇬🇧" },
+                    { name: "L3Harris Airline Academy", match: "94%", location: "Bournemouth, UK 🇬🇧" },
+                    { name: "Skyborne Airline Academy", match: "91%", location: "Gloucestershire, UK 🇬🇧" },
                   ].map(school => (
                     <div
                       key={school.name}
@@ -226,7 +319,7 @@ function SocialProofBar() {
           {[
             { value: "54+", label: "Flight schools worldwide" },
             { value: "33+", label: "In-depth training guides" },
-            { value: "11", label: "Free interactive tools" },
+            { value: "10+", label: "Countries covered" },
             { value: "Free", label: "Always, no registration" },
           ].map((stat) => (
             <div key={stat.label} className="flex items-center gap-3">
@@ -242,16 +335,73 @@ function SocialProofBar() {
   );
 }
 
-// ─── How It Works ─────────────────────────────────────────────────────────────
-function HowItWorksSection() {
-  const steps = [
-    { number: "01", icon: <BookOpen className="w-6 h-6" />, title: "Answer a few honest questions", description: "Tell us about your goal, your situation, and — most importantly — what's been stopping you. The assessment takes around 5 minutes and is completely free.", color: "oklch(0.45 0.18 240)" },
-    { number: "02", icon: <Target className="w-6 h-6" />, title: "Discover your biggest barrier", description: "Get your AviatorIQ Score and a clear, honest answer to the question you've been avoiding: what is actually standing between you and the cockpit?", color: "oklch(0.72 0.18 65)" },
-    { number: "03", icon: <Building2 className="w-6 h-6" />, title: "Get a personalised roadmap", description: "Receive a training roadmap that addresses your specific barrier, recommends the right route, and matches you with real flight schools.", color: "oklch(0.6 0.18 200)" },
+// ─── Country Versions ─────────────────────────────────────────────────────────
+function CountryVersionsSection() {
+  const versions = [
+    { flag: "🇬🇧", label: "United Kingdom", regulator: "UK CAA", desc: "ATPL, CAA licences, UK flight schools, airline cadet programmes", href: "/", cta: "UK version" },
+    { flag: "🇺🇸", label: "United States", regulator: "FAA", desc: "FAA licences, Part 61 vs 141, ATP, US airline cadet programmes", href: "/us", cta: "US version" },
+    { flag: "🇦🇺", label: "Australia", regulator: "CASA", desc: "CASA licences, CPL/ATPL, Australian flight schools, Qantas Academy", href: "/australia", cta: "AU version" },
+    { flag: "🇨🇦", label: "Canada", regulator: "Transport Canada", desc: "TC CPL/ATPL, Canadian flight schools, NAV CANADA airspace", href: "/canada", cta: "CA version" },
+    { flag: "🇪🇺", label: "Europe (EASA)", regulator: "EASA", desc: "EASA ATPL, integrated academies, Lufthansa, Wizz Air, Ryanair cadets", href: "/europe", cta: "EU version" },
+    { flag: "🌍", label: "Other Countries", regulator: "Global", desc: "UAE, South Africa, New Zealand, India, Singapore and more", href: "/select", cta: "Select country" },
   ];
 
   return (
     <section className="section" style={{ background: "oklch(0.11 0.08 252)" }}>
+      <div className="container">
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4" style={{ background: "oklch(0.45 0.18 240 / 0.12)", border: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.65 0.18 240)" }}>
+            <Globe className="w-3 h-3" />
+            Country-specific guidance
+          </div>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-3" style={{ letterSpacing: "-0.02em" }}>
+            Select your country for the right guidance
+          </h2>
+          <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: muted }}>
+            Costs, routes, regulators, and flight schools differ significantly between countries. AviatorIQ gives you the correct information for your location — not a generic global average.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {versions.map((v) => (
+            <Link
+              key={v.label}
+              href={v.href}
+              className="group flex flex-col p-5 rounded-2xl no-underline transition-all duration-200 hover:scale-[1.02]"
+              style={{ background: surface, border: `1px solid ${border}` }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = borderHover; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = border; }}
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-3xl">{v.flag}</span>
+                <div>
+                  <div className="font-display font-bold text-white">{v.label}</div>
+                  <div className="text-xs font-semibold" style={{ color: "oklch(0.65 0.18 240)" }}>{v.regulator}</div>
+                </div>
+              </div>
+              <p className="text-sm leading-relaxed flex-1 mb-4" style={{ color: muted }}>{v.desc}</p>
+              <div className="inline-flex items-center gap-1.5 text-sm font-semibold" style={{ color: "oklch(0.72 0.18 65)" }}>
+                {v.cta}
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── How It Works ─────────────────────────────────────────────────────────────
+function HowItWorksSection() {
+  const steps = [
+    { number: "01", icon: <BookOpen className="w-6 h-6" />, title: "Answer a few honest questions", description: "Tell us about your goal, your country, your situation, and what has been stopping you. The assessment takes around 5 minutes and is completely free.", color: "oklch(0.45 0.18 240)" },
+    { number: "02", icon: <Target className="w-6 h-6" />, title: "Discover your biggest barrier", description: "Get your AviatorIQ Score and a clear, honest answer to the question you have been avoiding: what is actually standing between you and the cockpit?", color: "oklch(0.72 0.18 65)" },
+    { number: "03", icon: <Building2 className="w-6 h-6" />, title: "Get a country-specific roadmap", description: "Receive a training roadmap with the correct regulator, routes, costs, and matched flight schools for your country — not a generic global template.", color: "oklch(0.6 0.18 200)" },
+  ];
+
+  return (
+    <section className="section" style={{ background: "oklch(0.13 0.09 250)" }}>
       <div className="container">
         <div className="text-center mb-8 md:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4" style={{ background: "oklch(0.45 0.18 240 / 0.12)", border: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.65 0.18 240)" }}>
@@ -266,218 +416,24 @@ function HowItWorksSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {steps.map((step, i) => (
+          {steps.map((step) => (
             <div
               key={step.number}
               className="relative p-5 md:p-8 rounded-2xl transition-all duration-300"
               style={{ background: surface, border: `1px solid ${border}` }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = borderHover; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = border; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
             >
               <div className="flex items-start gap-4 mb-5">
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: `${step.color.replace(")", " / 0.15)")}`, color: step.color }}>
                   {step.icon}
                 </div>
-                <span className="text-5xl font-display font-black leading-none mt-1" style={{ color: "oklch(1 0 0 / 0.06)" }}>
-                  {step.number}
-                </span>
+                <div className="text-4xl font-display font-black leading-none mt-1" style={{ color: "oklch(0.25 0.06 240)" }}>{step.number}</div>
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-3">{step.title}</h3>
-              <p className="leading-relaxed text-sm" style={{ color: muted }}>{step.description}</p>
-              {i < steps.length - 1 && (
-                <ChevronRight className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 z-10" style={{ color: "oklch(1 0 0 / 0.15)" }} />
-              )}
+              <h3 className="text-lg font-display font-bold text-white mb-3">{step.title}</h3>
+              <p className="text-sm leading-relaxed" style={{ color: muted }}>{step.description}</p>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-10">
-          <Link
-            href="/quiz"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white no-underline transition-all"
-            style={{ background: brandGradient, boxShadow: "0 0 24px oklch(0.45 0.18 240 / 0.3)" }}
-          >
-            Start your assessment
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ─── Why Trust Us ─────────────────────────────────────────────────────────────
-function ExpertCredibilitySection() {
-  const pillars = [
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "No sponsored rankings",
-      body: "Flight schools are listed on merit, not because they pay us. Every school in our directory is included because it's a legitimate, nationally approved training provider.",
-      color: "oklch(0.45 0.18 240)",
-    },
-    {
-      icon: <BookOpen className="w-6 h-6" />,
-      title: "Researched from primary sources",
-      body: "Every cost figure, timeline, and requirement in our guides is sourced from national aviation authorities and direct school prospectuses — not copied from other websites. We cite our sources.",
-      color: "oklch(0.6 0.18 200)",
-    },
-    {
-      icon: <Clock className="w-6 h-6" />,
-      title: "Updated for 2026",
-      body: "Pilot training costs and requirements change. We review and update every guide at least twice a year. Every page shows its last-updated date so you know what you're reading.",
-      color: "oklch(0.72 0.18 65)",
-    },
-    {
-      icon: <Target className="w-6 h-6" />,
-      title: "Built for one decision",
-      body: "AviatorIQ exists for one purpose: to help you decide whether and how to become a pilot. We don't sell courses, we don't run a flight school. We have no incentive to mislead you.",
-      color: "oklch(0.55 0.18 145)",
-    },
-  ];
-
-  return (
-    <section className="section" style={{ background: "oklch(0.11 0.08 252)" }}>
-      <div className="container">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4" style={{ background: "oklch(0.72 0.18 65 / 0.12)", border: "1px solid oklch(0.72 0.18 65 / 0.25)", color: "oklch(0.85 0.15 65)" }}>
-            <Shield className="w-3 h-3" />
-            Why trust AviatorIQ
-          </div>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
-            Honest information. No agenda.
-          </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: muted }}>
-            The internet is full of flight school websites dressed up as advice. AviatorIQ is independent. Here's what that means in practice.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {pillars.map((p) => (
-            <div
-              key={p.title}
-              className="p-5 md:p-7 rounded-2xl flex gap-5 transition-all duration-300"
-              style={{ background: surface, border: `1px solid ${border}` }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
-            >
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: `${p.color.replace(")", " / 0.15)")}`, color: p.color }}>
-                {p.icon}
-              </div>
-              <div>
-                <h3 className="font-display font-bold text-white mb-2">{p.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: muted }}>{p.body}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Pilot community note */}
-        <div className="mt-8 p-6 rounded-2xl text-center" style={{ background: "oklch(0.45 0.18 240 / 0.06)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
-          <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>
-            <span className="font-semibold text-white">Are you a pilot or flight instructor?</span>{" "}
-            If you spot anything inaccurate in our guides, we want to know.{" "}
-            <a href="mailto:hello@aviatoriq.com" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>Email us</a>{" "}
-            and we'll review and credit you.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ─── Quiz Teaser ──────────────────────────────────────────────────────────────
-function QuizTeaserSection() {
-  const quizCards = [
-    {
-      emoji: "✈️",
-      badge: "2 minutes",
-      badgeColor: "oklch(0.45 0.18 240)",
-      tag: "New",
-      title: "What's Really Stopping You?",
-      desc: "7 questions. Find your biggest barrier, your strongest asset, and your Flight Potential Score — no sign-up needed.",
-      href: "/quiz/flight-deck",
-      cta: "Find out now",
-      variant: "secondary",
-    },
-    {
-      emoji: "🎓",
-      badge: "2–3 minutes",
-      badgeColor: "oklch(0.6 0.18 200)",
-      tag: null,
-      title: "Which Pilot Licence Is Right For You?",
-      desc: "PPL, ATPL, LAPL or CPL? Answer 8 questions and get a personalised licence recommendation with cost estimates.",
-      href: "/quiz/licence",
-      cta: "Find my licence",
-      variant: "secondary",
-    },
-    {
-      emoji: "🛫",
-      badge: "5 minutes",
-      badgeColor: "oklch(0.72 0.18 65)",
-      tag: "Most popular",
-      title: "Career Readiness Assessment",
-      desc: "Your AviatorIQ Score, biggest barrier, AI training roadmap, matched flight schools, and a free PDF blueprint.",
-      href: "/quiz",
-      cta: "Take the assessment",
-      variant: "primary",
-    },
-  ];
-
-  return (
-    <section className="section" style={{ background: "oklch(0.13 0.09 250)" }}>
-      <div className="container">
-        <div className="text-center mb-8 md:mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4" style={{ background: "oklch(0.72 0.18 65 / 0.12)", border: "1px solid oklch(0.72 0.18 65 / 0.25)", color: "oklch(0.85 0.15 65)" }}>
-            Three assessments
-          </div>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
-            Find your answer in minutes
-          </h2>
-          <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: muted }}>
-            Each assessment is designed to give you one thing: certainty. Not information — certainty. Pick the question you most need answered right now.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {quizCards.map((card) => (
-            <div
-              key={card.href}
-              className="flex flex-col p-5 md:p-7 rounded-2xl transition-all duration-300"
-              style={{
-                background: card.variant === "primary" ? "oklch(0.45 0.18 240 / 0.08)" : surface,
-                border: card.variant === "primary" ? "1px solid oklch(0.45 0.18 240 / 0.3)" : `1px solid ${border}`,
-              }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
-            >
-              <div className="text-3xl mb-5">{card.emoji}</div>
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: card.badgeColor }}>{card.badge}</span>
-                {card.tag && (
-                  <span className="text-xs px-2 py-0.5 rounded-full font-bold" style={{ background: card.variant === "primary" ? ctaGradient : "oklch(0.45 0.18 240 / 0.2)", color: "white" }}>
-                    {card.tag}
-                  </span>
-                )}
-              </div>
-              <h3 className="text-lg font-display font-bold text-white mb-3">{card.title}</h3>
-              <p className="text-sm leading-relaxed flex-1 mb-6" style={{ color: muted }}>{card.desc}</p>
-              <Link
-                href={card.href}
-                className="inline-flex items-center justify-center gap-2 py-3 px-5 rounded-xl text-sm font-bold text-white no-underline transition-all"
-                style={card.variant === "primary" ? { background: ctaGradient, boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.3)" } : { background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)" }}
-              >
-                {card.cta} →
-              </Link>
-            </div>
-          ))}
-        </div>
-
-        {/* Quiz hub link */}
-        <div className="text-center mt-8">
-          <Link href="/quizzes" className="inline-flex items-center gap-2 text-sm font-semibold no-underline transition-all" style={{ color: "oklch(0.65 0.18 240)" }}>
-            Browse all 7 quizzes
-            <ArrowRight className="w-4 h-4" />
-          </Link>
         </div>
       </div>
     </section>
@@ -487,20 +443,51 @@ function QuizTeaserSection() {
 // ─── Training Routes ──────────────────────────────────────────────────────────
 function TrainingRoutesSection() {
   const routes = [
-    { icon: <Plane className="w-6 h-6" />, color: "oklch(0.45 0.18 240)", title: "Airline Pilot Training", description: "The most common goal. Choose between Integrated ATPL (fastest, £80k–£120k) or Modular ATPL (flexible, £40k–£80k). Both lead to the same licence.", cta: "Find airline training", href: "/quiz" },
-    { icon: <Compass className="w-6 h-6" />, color: "oklch(0.6 0.18 200)", title: "Private Pilot Licence", description: "Fly for pleasure or personal travel. A PPL typically takes 6–18 months and costs £8,000–£15,000 depending on location and aircraft type.", cta: "Explore PPL training", href: "/quiz" },
-    { icon: <Building2 className="w-6 h-6" />, color: "oklch(0.72 0.18 65)", title: "Corporate & Private Jets", description: "Fly high-net-worth individuals on business jets. Requires ATPL and type ratings. A growing sector with strong demand for experienced pilots.", cta: "Learn about corporate", href: "/quiz" },
-    { icon: <GraduationCap className="w-6 h-6" />, color: "oklch(0.65 0.2 300)", title: "Flight Instructor", description: "Teach others to fly while building your own hours. A popular route for modular students to build flight time before airline applications.", cta: "Explore instructing", href: "/quiz" },
+    {
+      icon: <Plane className="w-6 h-6" />,
+      title: "Airline Pilot (ATPL)",
+      description: "The most structured path to the airlines. Integrated ATPL (18–24 months full-time) or Modular ATPL (3–5 years flexible). Costs and routes vary significantly by country.",
+      href: "/guides/integrated-vs-modular",
+      cta: "Compare routes",
+      color: "oklch(0.45 0.18 240)",
+    },
+    {
+      icon: <Compass className="w-6 h-6" />,
+      title: "Private Pilot (PPL)",
+      description: "Fly for pleasure or as a stepping stone to a commercial licence. The most accessible entry point into aviation, available worldwide.",
+      href: "/guides/how-to-become-a-pilot",
+      cta: "Learn more",
+      color: "oklch(0.6 0.18 200)",
+    },
+    {
+      icon: <GraduationCap className="w-6 h-6" />,
+      title: "Flight Instructor (FI)",
+      description: "Train others to fly while building hours towards an airline career. A popular route for modular trainees who need to build the required flight time.",
+      href: "/guides/flight-instructor-uk",
+      cta: "Explore this route",
+      color: "oklch(0.72 0.18 65)",
+    },
+    {
+      icon: <Award className="w-6 h-6" />,
+      title: "Airline Cadet Programmes",
+      description: "Sponsored training directly with an airline. Highly competitive but removes the finance burden. BA, easyJet, Ryanair, TUI, Delta, United and more.",
+      href: "/guides/cadet-pilot-programmes-uk",
+      cta: "View programmes",
+      color: "oklch(0.65 0.2 300)",
+    },
   ];
 
   return (
-    <section className="section" style={{ background: "oklch(0.11 0.08 252)" }}>
+    <section className="section" style={{ background: "oklch(0.12 0.09 252)" }}>
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4" style={{ background: "oklch(0.45 0.18 240 / 0.12)", border: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.65 0.18 240)" }}>
+            Training routes
+          </div>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-3" style={{ letterSpacing: "-0.02em" }}>
             Every type of pilot training, covered
           </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: muted }}>
+          <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: muted }}>
             Whether you want to fly for an airline, for pleasure, or as a career change, AviatorIQ helps you find the right route.
           </p>
         </div>
@@ -511,8 +498,8 @@ function TrainingRoutesSection() {
               key={route.title}
               className="p-5 md:p-7 rounded-2xl transition-all duration-300 group"
               style={{ background: surface, border: `1px solid ${border}` }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = borderHover; (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = border; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
             >
               <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ background: `${route.color.replace(")", " / 0.15)")}`, color: route.color }}>
                 {route.icon}
@@ -534,14 +521,14 @@ function TrainingRoutesSection() {
 // ─── After Training ─────────────────────────────────────────────────────────────
 function AfterTrainingSection() {
   const resources = [
-    { icon: <Briefcase className="w-6 h-6" />, color: "oklch(0.72 0.18 65)", title: "Pilot CV & Cover Letters", description: "How to structure an aviation CV, highlight your training achievements, and write a cover letter that passes airline screening.", href: "/guides/pilot-cv-cover-letter" },
-    { icon: <Users className="w-6 h-6" />, color: "oklch(0.45 0.18 240)", title: "Airline Interview Prep", description: "Common technical and HR questions, group exercise strategies, and how to prepare for the competency-based interview.", href: "/guides/airline-pilot-interview" },
+    { icon: <Briefcase className="w-6 h-6" />, color: "oklch(0.72 0.18 65)", title: "Airline Interview Prep", description: "Common technical and HR questions, group exercise strategies, and how to prepare for the competency-based interview.", href: "/guides/airline-pilot-interview" },
+    { icon: <Users className="w-6 h-6" />, color: "oklch(0.45 0.18 240)", title: "Pilot CV & Cover Letters", description: "How to structure an aviation CV, highlight your training achievements, and write a cover letter that passes airline screening.", href: "/guides/pilot-cv-cover-letter" },
     { icon: <BrainCircuit className="w-6 h-6" />, color: "oklch(0.6 0.18 200)", title: "Aptitude Testing", description: "What to expect from CUT-E, Symbiotics, and Pilapt tests. How to practice numerical reasoning, spatial awareness, and multitasking.", href: "/guides/pilot-aptitude-test-preparation" },
-    { icon: <MonitorPlay className="w-6 h-6" />, color: "oklch(0.65 0.2 300)", title: "Simulator Assessments", description: "How airlines assess your raw flying ability and CRM (Crew Resource Management) in a full-motion simulator before hiring.", href: "/guides/airline-simulator-assessment" },
+    { icon: <MonitorPlay className="w-6 h-6" />, color: "oklch(0.65 0.2 300)", title: "Simulator Assessments", description: "How airlines assess your raw flying ability and CRM in a full-motion simulator before hiring.", href: "/guides/airline-simulator-assessment" },
   ];
 
   return (
-    <section className="section" style={{ background: "oklch(0.12 0.09 252)" }}>
+    <section className="section" style={{ background: "oklch(0.11 0.08 252)" }}>
       <div className="container">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-5" style={{ background: "oklch(0.45 0.18 240 / 0.12)", border: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.65 0.18 240)" }}>
@@ -562,8 +549,8 @@ function AfterTrainingSection() {
               key={res.title}
               className="p-5 rounded-2xl transition-all duration-300 group"
               style={{ background: surface, border: `1px solid ${border}` }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = borderHover; (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = border; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
             >
               <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-4" style={{ background: `${res.color.replace(")", " / 0.15)")}`, color: res.color }}>
                 {res.icon}
@@ -584,10 +571,16 @@ function AfterTrainingSection() {
 
 // ─── Cost Section ─────────────────────────────────────────────────────────────
 function CostSection() {
-  const costData = [
-    { route: "Integrated ATPL", range: "£80k–£120k / $100k–$150k", duration: "18–24 months", flag: "✈️", color: "oklch(0.45 0.18 240)" },
-    { route: "Modular ATPL", range: "£40k–£80k / $50k–$100k", duration: "3–5 years", flag: "🎓", color: "oklch(0.6 0.18 200)" },
-    { route: "PPL Only", range: "£8k–£15k / $10k–$20k", duration: "6–18 months", flag: "🛩️", color: "oklch(0.72 0.18 65)" },
+  const { country } = useCountry();
+  const isUS = country === "us";
+  const costData = isUS ? [
+    { route: "Integrated ATP", range: "$100k–$150k", duration: "18–24 months", flag: "✈️", color: "oklch(0.45 0.18 240)" },
+    { route: "Modular / Part 61", range: "$50k–$100k", duration: "3–5 years", flag: "🎓", color: "oklch(0.6 0.18 200)" },
+    { route: "Private Pilot (PPL)", range: "$8k–$15k", duration: "6–18 months", flag: "🛩️", color: "oklch(0.72 0.18 65)" },
+  ] : [
+    { route: "Integrated ATPL", range: "£80k–£120k", duration: "18–24 months", flag: "✈️", color: "oklch(0.45 0.18 240)" },
+    { route: "Modular ATPL", range: "£40k–£80k", duration: "3–5 years", flag: "🎓", color: "oklch(0.6 0.18 200)" },
+    { route: "PPL Only", range: "£8k–£15k", duration: "6–18 months", flag: "🛩️", color: "oklch(0.72 0.18 65)" },
   ];
 
   return (
@@ -612,7 +605,7 @@ function CostSection() {
                     <div className="font-display font-semibold text-white text-sm">{item.flag} {item.route}</div>
                     <div className="text-xs mt-0.5" style={{ color: muted }}>{item.duration}</div>
                   </div>
-                  <div className="font-bold text-sm" style={{ color: item.color }}>{item.range}</div>
+                  <div className="font-bold text-xs text-right max-w-[140px]" style={{ color: item.color }}>{item.range}</div>
                 </div>
               ))}
             </div>
@@ -638,18 +631,27 @@ function CostSection() {
               </div>
             </div>
             <p className="mb-6 leading-relaxed text-sm" style={{ color: muted }}>
-              Many flight schools offer finance plans, career development loans, and payment structures to help spread the cost of training.
+              {isUS
+                ? "Many US flight schools offer financing, and veterans may qualify for GI Bill or VA benefits. Airline cadet programmes also offer sponsored pathways."
+                : "Many UK flight schools offer finance plans, career development loans, and payment structures to help spread the cost of training."}
             </p>
             <ul className="space-y-3 mb-6">
-              {["Career development loans", "School payment plans", "Airline cadet sponsorships", "Government-backed schemes"].map((item) => (
+              {(isUS
+                ? ["GI Bill & VA benefits", "School payment plans", "Airline cadet sponsorships", "Sallie Mae aviation loans", "ATP CTP funding options"]
+                : ["Career development loans", "School payment plans", "Airline cadet sponsorships", "Government-backed schemes", "Part-time modular funding"]
+              ).map((item) => (
                 <li key={item} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.72 0.04 240)" }}>
                   <CheckCircle2 className="w-4 h-4 flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }} />
                   {item}
                 </li>
               ))}
             </ul>
-            <Link href="/guides/finance-guide" className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline transition-all" style={{ color: "oklch(0.72 0.18 65)" }}>
-              Read the finance guide
+            <Link
+              href={isUS ? "/us/guides/financing-pilot-training" : "/guides/how-to-finance-pilot-training-uk"}
+              className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline transition-all"
+              style={{ color: "oklch(0.72 0.18 65)" }}
+            >
+              {isUS ? "Read the US finance guide" : "Read the UK finance guide"}
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -675,9 +677,9 @@ function SchoolMatchingSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-10">
           {[
-            { icon: <Users className="w-6 h-6" />, color: "oklch(0.45 0.18 240)", title: "Qualified matches only", desc: "Schools are filtered by your training goal, budget range and location preferences." },
+            { icon: <Users className="w-6 h-6" />, color: "oklch(0.45 0.18 240)", title: "Country-filtered matches", desc: "Schools are filtered by your country, training goal, budget range and location preferences." },
             { icon: <Lock className="w-6 h-6" />, color: "oklch(0.6 0.18 200)", title: "Your data is protected", desc: "We only share your details with schools you explicitly request introductions from." },
-            { icon: <Clock className="w-6 h-6" />, color: "oklch(0.72 0.18 65)", title: "No cold calls", desc: "You control who contacts you. No unsolicited calls from schools you haven't chosen." },
+            { icon: <Clock className="w-6 h-6" />, color: "oklch(0.72 0.18 65)", title: "No cold calls", desc: "You control who contacts you. No unsolicited calls from schools you have not chosen." },
           ].map((item) => (
             <div key={item.title} className="p-7 rounded-2xl text-center" style={{ background: surface, border: `1px solid ${border}` }}>
               <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4" style={{ background: `${item.color.replace(")", " / 0.15)")}`, color: item.color }}>
@@ -705,13 +707,22 @@ function SchoolMatchingSection() {
 
 // ─── Guides ───────────────────────────────────────────────────────────────────
 function GuidesSection() {
-  const guides = [
-    { title: "How to become a pilot", href: "/guides/how-to-become-a-pilot", time: "8 min read", icon: "🛫" },
+  const { country } = useCountry();
+  const isUS = country === "us";
+  const guides = isUS ? [
+    { title: "How to become a pilot (USA)", href: "/us/guides/how-to-become-a-pilot", time: "8 min read", icon: "🛫" },
+    { title: "FAA Private Pilot Licence (PPL)", href: "/us/guides/private-pilot-licence", time: "6 min read", icon: "⚖️" },
+    { title: "FAA Class 1 Medical", href: "/us/guides/faa-class-1-medical", time: "5 min read", icon: "🩺" },
+    { title: "US airline pilot salary 2026", href: "/us/guides/airline-pilot-salary", time: "7 min read", icon: "💰" },
+    { title: "Delta Propel Cadet Programme", href: "/us/guides/delta-propel-cadet-programme", time: "5 min read", icon: "📅" },
+    { title: "How to finance pilot training (US)", href: "/us/guides/financing-pilot-training", time: "6 min read", icon: "🏦" },
+  ] : [
+    { title: "How to become a pilot (UK)", href: "/guides/how-to-become-a-pilot", time: "8 min read", icon: "🛫" },
     { title: "Integrated vs Modular training", href: "/guides/integrated-vs-modular", time: "6 min read", icon: "⚖️" },
     { title: "What is a Class 1 Medical?", href: "/guides/class-1-medical", time: "5 min read", icon: "🩺" },
-    { title: "Airline pilot salary guide", href: "/guides/airline-pilot-salary", time: "7 min read", icon: "💰" },
+    { title: "UK airline pilot salary 2026", href: "/guides/uk-pilot-salary-2026", time: "7 min read", icon: "💰" },
     { title: "How long does training take?", href: "/guides/training-timeline", time: "5 min read", icon: "📅" },
-    { title: "Can I afford pilot training?", href: "/guides/finance-guide", time: "6 min read", icon: "🏦" },
+    { title: "How to finance pilot training (UK)", href: "/guides/how-to-finance-pilot-training-uk", time: "6 min read", icon: "🏦" },
   ];
 
   return (
@@ -736,8 +747,8 @@ function GuidesSection() {
               href={guide.href}
               className="group flex items-center gap-4 p-5 rounded-xl transition-all duration-200 no-underline"
               style={{ background: surface, border: `1px solid ${border}` }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = borderHover; (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = border; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
             >
               <span className="text-2xl flex-shrink-0">{guide.icon}</span>
               <div className="flex-1 min-w-0">
@@ -773,12 +784,12 @@ function CtaBannerSection() {
             Your Roadmap Is 5 Questions Away.
           </h2>
           <p className="text-lg mb-8" style={{ color: "oklch(0.72 0.04 240)" }}>
-            Answer 5 questions. Get your specific training route, real 2026 costs, a step-by-step action plan, and matched flight schools. Free, no registration.
+            Answer 5 questions. Get your country-specific training route, real 2026 costs, a step-by-step action plan, and matched flight schools. Free, no registration.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/roadmap"
-              className="inline-flex items-center gap-2 px-10 py-4 rounded-xl text-base font-bold text-white no-underline transition-all"
+              className="inline-flex items-center gap-2 px-10 py-4 rounded-xl text-base font-bold text-white no-underline transition-all hover:scale-[1.02]"
               style={{ background: ctaGradient, boxShadow: "0 0 40px oklch(0.72 0.18 65 / 0.4)" }}
             >
               Generate My Roadmap
@@ -803,15 +814,15 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="AviatorIQ – What's Really Stopping You Becoming A Pilot?"
-        description="Find your best route into pilot training. Take the free AviatorIQ career assessment and get a personalised pilot training roadmap matched to real flight schools."
+        title="AviatorIQ – Country-Specific Pilot Training Guidance"
+        description="AviatorIQ helps aspiring pilots understand their best route, costs, readiness and matched training options based on their country. UK CAA, FAA, CASA, EASA and beyond."
         canonical="/"
         schema={{
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "AviatorIQ",
           "url": "https://aviatoriq.com",
-          "description": "The decision platform for people thinking about becoming a pilot.",
+          "description": "Country-specific pilot training guidance platform. UK, USA, Australia, Canada, Europe and beyond.",
           "potentialAction": {
             "@type": "SearchAction",
             "target": "https://aviatoriq.com/schools?search={search_term_string}",
@@ -820,15 +831,15 @@ export default function Home() {
         }}
       />
       <PublicNav />
+      <CountryDetectionBanner />
       <main className="flex-1">
         <HeroSection />
         <SocialProofBar />
+        <CountryVersionsSection />
         <HowItWorksSection />
-        <ExpertCredibilitySection />
-        <QuizTeaserSection />
-      <TrainingRoutesSection />
-      <AfterTrainingSection />
-      <CostSection />
+        <TrainingRoutesSection />
+        <AfterTrainingSection />
+        <CostSection />
         <SchoolMatchingSection />
         <GuidesSection />
         <CtaBannerSection />

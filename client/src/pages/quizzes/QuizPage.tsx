@@ -8,6 +8,7 @@ import {
   QuizOption,
 } from "@/data/quizzes";
 import PublicNav from "@/components/PublicNav";
+import RecommendedQuizzes from "@/components/RecommendedQuizzes";
 import PublicFooter from "@/components/PublicFooter";
 import SEO from "@/components/SEO";
 import {
@@ -284,12 +285,8 @@ function ResultCard({
           </Link>
         </div>
 
-        {/* More quizzes */}
-        <div className="mt-4 text-center">
-          <Link href="/quizzes" className="text-white/50 hover:text-white/80 text-sm transition-colors no-underline">
-            ← Try another quiz
-          </Link>
-        </div>
+        {/* Recommended quizzes */}
+        <RecommendedQuizzes currentSlug={quiz.slug} count={3} />
       </div>
     </div>
   );

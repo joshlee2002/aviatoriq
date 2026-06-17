@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Plane, ChevronDown, Zap, LayoutDashboard, LogIn, LogOut, User } from "lucide-react";
+import { Menu, X, Plane, ChevronDown, Zap, LayoutDashboard, LogIn, LogOut, User, Globe } from "lucide-react";
 import { getLoginUrl } from "@/const";
 import { useCurrency, SUPPORTED_CURRENCIES } from "@/contexts/CurrencyContext";
 import { useCountry } from "@/contexts/CountryContext";
@@ -220,6 +220,104 @@ function UserMenu({ user }: { user: { name?: string | null; email?: string | nul
   );
 }
 
+// ─── Country Selector Dropdown ──────────────────────────────────────────────
+const COUNTRY_OPTIONS = [
+  { code: "uk", flag: "🇬🇧", label: "United Kingdom", short: "🇬🇧 UK", href: "/" },
+  { code: "us", flag: "🇺🇸", label: "United States", short: "🇺🇸 US", href: "/us" },
+  { code: "australia", flag: "🇦🇺", label: "Australia", short: "🇦🇺 AU", href: "/australia" },
+  { code: "canada", flag: "🇨🇦", label: "Canada", short: "🇨🇦 CA", href: "/canada" },
+  { code: "europe", flag: "🇪🇺", label: "Europe (EASA)", short: "🇪🇺 EU", href: "/europe" },
+  { code: "uae", flag: "🇦🇪", label: "UAE", short: "🇦🇪 UAE", href: "/uae" },
+  { code: "south-africa", flag: "🇿🇦", label: "South Africa", short: "🇿🇦 ZA", href: "/south-africa" },
+  { code: "new-zealand", flag: "🇳🇿", label: "New Zealand", short: "🇳🇿 NZ", href: "/new-zealand" },
+];
+
+function CountrySelectorDropdown() {
+  const { country, setCountry } = useCountry();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const [, navigate] = useLocation();
+
+  useEffect(() => {
+    function handler(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    }
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  const current = COUNTRY_OPTIONS.find(c => c.code === country);
+  const label = current ? current.short : "🌍 Global";
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
+        style={{ color: "oklch(0.75 0.04 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
+        title="Change country"
+        aria-expanded={open}
+        aria-label="Select country"
+      >
+        {!current && <Globe className="w-3.5 h-3.5" />}
+        <span>{label}</span>
+        <ChevronDown className={`w-3 h-3 transition-transform duration-150 ${open ? "rotate-180" : ""}`} />
+      </button>
+
+      {open && (
+        <div
+          className="absolute right-0 top-full mt-2 w-52 rounded-xl z-50 py-1.5 animate-fade-in"
+          style={{
+            background: "oklch(0.12 0.08 250)",
+            border: "1px solid oklch(1 0 0 / 0.12)",
+            boxShadow: "0 20px 60px oklch(0 0 0 / 0.6)",
+          }}
+        >
+          <p className="text-[10px] px-3 py-2 font-semibold uppercase tracking-widest" style={{ color: "oklch(0.45 0.04 240)", borderBottom: "1px solid oklch(1 0 0 / 0.08)" }}>
+            Select your country
+          </p>
+          {COUNTRY_OPTIONS.map((opt) => (
+            <button
+              key={opt.code}
+              type="button"
+              onClick={() => {
+                setCountry(opt.code as any);
+                navigate(opt.href);
+                setOpen(false);
+              }}
+              className="w-full flex items-center gap-2.5 px-3 py-2 text-sm transition-colors text-left"
+              style={{
+                background: country === opt.code ? "oklch(0.45 0.18 240 / 0.15)" : "transparent",
+                color: country === opt.code ? "oklch(0.75 0.18 240)" : "oklch(0.7 0.04 240)",
+              }}
+              onMouseEnter={e => { if (country !== opt.code) (e.currentTarget as HTMLElement).style.background = "oklch(1 0 0 / 0.05)"; }}
+              onMouseLeave={e => { if (country !== opt.code) (e.currentTarget as HTMLElement).style.background = "transparent"; }}
+            >
+              <span className="text-base">{opt.flag}</span>
+              <span className="font-medium">{opt.label}</span>
+              {country === opt.code && <span className="ml-auto text-[10px] font-bold" style={{ color: "oklch(0.65 0.18 240)" }}>✓</span>}
+            </button>
+          ))}
+          <div style={{ borderTop: "1px solid oklch(1 0 0 / 0.08)" }} className="mt-1 pt-1">
+            <button
+              type="button"
+              onClick={() => { navigate("/select"); setOpen(false); }}
+              className="w-full flex items-center gap-2 px-3 py-2 text-xs transition-colors"
+              style={{ color: "oklch(0.5 0.04 240)" }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = "oklch(0.7 0.04 240)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = "oklch(0.5 0.04 240)"; }}
+            >
+              <Globe className="w-3 h-3" />
+              More countries →
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─── Main Nav ─────────────────────────────────────────────────────────────────
 export default function PublicNav() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -372,16 +470,8 @@ export default function PublicNav() {
           {/* Right: CTA + currency */}
           <div className="hidden md:flex items-center gap-2">
             <CurrencySwitcher />
-            {/* Region Switcher */}
-            <button
-              type="button"
-              onClick={() => navigate("/select")}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all hover:bg-white/8"
-              style={{ color: "oklch(0.75 0.04 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
-              title="Change country"
-            >
-              {country === "us" ? "🇺🇸 US" : country === "australia" ? "🇦🇺 AU" : country === "canada" ? "🇨🇦 CA" : country === "europe" ? "🇪🇺 EU" : country === "uae" ? "🇦🇪 UAE" : country === "south-africa" ? "🇿🇦 ZA" : country === "new-zealand" ? "🇳🇿 NZ" : country === "india" ? "🇮🇳 IN" : country === "singapore" ? "🇸🇬 SG" : "🌍 Global"}
-            </button>
+            {/* Country Selector Dropdown */}
+            <CountrySelectorDropdown />
 
             {user?.role === "admin" && (
               <Link
@@ -477,18 +567,36 @@ export default function PublicNav() {
 
             {/* Country switcher in mobile */}
             <div className="px-4 py-3" style={{ borderTop: "1px solid oklch(1 0 0 / 0.08)" }}>
+              <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.45 0.04 240)" }}>Country</p>
+              <div className="grid grid-cols-4 gap-1.5">
+                {COUNTRY_OPTIONS.map((opt) => (
+                  <button
+                    key={opt.code}
+                    type="button"
+                    onClick={() => {
+                      setCountry(opt.code as any);
+                      navigate(opt.href);
+                      setMobileOpen(false);
+                    }}
+                    className="flex flex-col items-center gap-0.5 p-2 rounded-lg text-xs font-medium transition-all"
+                    style={{
+                      border: `1px solid ${country === opt.code ? "oklch(0.45 0.18 240)" : "oklch(1 0 0 / 0.12)"}`,
+                      background: country === opt.code ? "oklch(0.45 0.18 240 / 0.15)" : "transparent",
+                      color: country === opt.code ? "oklch(0.75 0.18 240)" : "oklch(0.65 0.04 240)",
+                    }}
+                  >
+                    <span className="text-base">{opt.flag}</span>
+                    <span className="text-[10px]">{opt.label.split(" ")[0]}</span>
+                  </button>
+                ))}
+              </div>
               <button
                 type="button"
-                onClick={() => {
-                  const next = country === "us" ? "uk" : "us";
-                  setCountry(next);
-                  navigate(next === "us" ? "/us" : "/");
-                  setMobileOpen(false);
-                }}
-                className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold transition-all"
-                style={{ border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.75 0.04 240)" }}
+                onClick={() => { navigate("/select"); setMobileOpen(false); }}
+                className="mt-2 w-full text-xs py-1.5 rounded-lg transition-all"
+                style={{ color: "oklch(0.5 0.04 240)", border: "1px solid oklch(1 0 0 / 0.08)" }}
               >
-                {country === "us" ? "🌍 Switch to Global / UK version" : "🇺🇸 Switch to US version"}
+                More countries →
               </button>
             </div>
 

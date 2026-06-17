@@ -350,6 +350,7 @@ function Router() {
       <Route path="/guides/class-1-medical" component={Class1Medical} />
       <Route path="/guides/adhd-pilot-uk" component={AdhdPilotGuide} />
       <Route path="/guides/integrated-vs-modular-cost" component={IntegratedVsModularCost} />
+      <Route path="/guides/modular-vs-integrated-pilot-training" component={IntegratedVsModular} />
       <Route path="/guides/airline-pilot-salary" component={AirlinePilotSalary} />
       <Route path="/guides/best-route-to-airline" component={BestRouteToAirline} />
       <Route path="/guides/finance-guide" component={FinanceGuide} />

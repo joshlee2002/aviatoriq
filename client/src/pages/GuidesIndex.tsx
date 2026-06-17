@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useCountry } from "@/contexts/CountryContext";
 import { Link } from "wouter";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
@@ -89,7 +90,9 @@ const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2
 
 export default function GuidesIndex() {
   useEffect(() => { document.title = "Pilot Training Guides – AviatorIQ"; }, []);
-  const [market, setMarket] = useState<MarketFilter>("All");
+  const { country } = useCountry();
+  const defaultMarket: MarketFilter = country === "us" ? "US" : country === "uk" ? "UK" : "All";
+  const [market, setMarket] = useState<MarketFilter>(defaultMarket);
 
   const filtered = guides.filter((g) => market === "All" || g.market === market);
   const categories = Array.from(new Set(filtered.map((g) => g.category)));

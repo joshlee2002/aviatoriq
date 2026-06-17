@@ -5,6 +5,7 @@ import { trpc } from "@/lib/trpc";
 import { Analytics } from "@/lib/analytics";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
+import RecommendedQuizzes from "@/components/RecommendedQuizzes";
 import { useCurrency } from "@/contexts/CurrencyContext";
 import { convertPriceString } from "@/lib/currencyUtils";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -951,6 +952,11 @@ export default function Results() {
             </div>
           )}
 
+        </div>
+
+        {/* ── Recommended quizzes ── */}
+        <div className="max-w-2xl mx-auto px-4 pb-12" style={{ background: 'oklch(0.13 0.08 250)' }}>
+          <RecommendedQuizzes count={3} />
         </div>
       </main>
       <PublicFooter />

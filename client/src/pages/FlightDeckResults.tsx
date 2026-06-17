@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation, Link } from "wouter";
 import { scoreFlightDeckQuiz, FlightDeckResult, FlightDeckInput } from "@/lib/flightDeckScoring";
 import { trpc } from "@/lib/trpc";
+import RecommendedQuizzes from "@/components/RecommendedQuizzes";
 import { toast } from "sonner";
 import {
   Plane,
@@ -319,6 +320,9 @@ export default function FlightDeckResults() {
             </button>
           </Link>
         </div>
+
+        {/* ── Recommended quizzes ── */}
+        <RecommendedQuizzes count={3} />
       </div>
     </div>
   );

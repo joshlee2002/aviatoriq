@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation, Link } from "wouter";
 import { trpc } from "@/lib/trpc";
+import RecommendedQuizzes from "@/components/RecommendedQuizzes";
 import {
   Plane,
   CheckCircle2,
@@ -267,6 +268,9 @@ export default function LicenceQuizResults() {
             <span>✓ Free PDF report</span>
           </div>
         </div>
+
+        {/* ── Recommended quizzes ── */}
+        <RecommendedQuizzes currentSlug="pilot-licence-quiz" count={3} />
 
         {/* ── Retake / explore ── */}
         <div className="flex items-center justify-center gap-6 pb-8">
