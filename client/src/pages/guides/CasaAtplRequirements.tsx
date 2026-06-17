@@ -1,6 +1,6 @@
 import { Link } from "wouter";
-import React from 'react';
-import GuideLayout from '@/components/GuideLayout';
+import React from "react";
+import GuideLayout from "@/components/GuideLayout";
 
 export default function CasaAtplRequirements() {
   return (
@@ -21,104 +21,231 @@ export default function CasaAtplRequirements() {
           content: (
             <>
               <p>
-                The Air Transport Pilot Licence (ATPL) is the pinnacle of aviation certifications in Australia, issued by the Civil Aviation Safety Authority (CASA). It is the mandatory qualification for pilots aspiring to command multi-crew aircraft in commercial air transport operations, or to serve as a co-pilot in such environments. Achieving an ATPL signifies a pilot's mastery of advanced aeronautical knowledge, extensive flight experience, and the highest standards of operational proficiency. This guide provides a comprehensive overview of the requirements, training pathways, and career implications for obtaining a CASA ATPL in 2026.
+                The Air Transport Pilot Licence (ATPL) is the pinnacle of
+                aviation certifications in Australia, issued by the Civil
+                Aviation Safety Authority (CASA). It is the mandatory
+                qualification for pilots aspiring to command multi-crew aircraft
+                in commercial air transport operations, or to serve as a
+                co-pilot in such environments. Achieving an ATPL signifies a
+                pilot's mastery of advanced aeronautical knowledge, extensive
+                flight experience, and the highest standards of operational
+                proficiency. This guide provides a comprehensive overview of the
+                requirements, training pathways, and career implications for
+                obtaining a CASA ATPL in 2026.
               </p>
-              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
-                Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
+              <p
+                className="text-sm p-3 rounded-lg my-3"
+                style={{
+                  background: "oklch(0.45 0.18 240 / 0.07)",
+                  border: "1px solid oklch(0.45 0.18 240 / 0.15)",
+                }}
+              >
+                Not sure where to start? Take our free{" "}
+                <Link href="/quiz" className="text-blue-400 underline">
+                  Pilot Career Assessment
+                </Link>{" "}
+                to get a personalised training roadmap in under five minutes.
               </p>
               <p>
-                The ATPL is not merely a licence; it is a testament to a pilot's dedication, skill, and commitment to safety. It opens doors to careers with major airlines, freight operators, and other advanced aviation roles. Understanding the intricate details of CASA's regulations is crucial for any aspiring Air Transport Pilot, as the journey demands rigorous study, significant flight hours, and a thorough understanding of complex operational procedures.
+                The ATPL is not merely a licence; it is a testament to a pilot's
+                dedication, skill, and commitment to safety. It opens doors to
+                careers with major airlines, freight operators, and other
+                advanced aviation roles. Understanding the intricate details of
+                CASA's regulations is crucial for any aspiring Air Transport
+                Pilot, as the journey demands rigorous study, significant flight
+                hours, and a thorough understanding of complex operational
+                procedures.
               </p>
             </>
-          )
+          ),
         },
         {
           heading: "Eligibility and Prerequisites",
           content: (
             <>
               <p>
-                Before embarking on the ATPL journey, candidates must meet several fundamental eligibility criteria set forth by CASA. These prerequisites ensure that aspiring ATPL holders possess a solid foundation in aviation and are prepared for the advanced demands of air transport operations.
+                Before embarking on the ATPL journey, candidates must meet
+                several fundamental eligibility criteria set forth by CASA.
+                These prerequisites ensure that aspiring ATPL holders possess a
+                solid foundation in aviation and are prepared for the advanced
+                demands of air transport operations.
               </p>
               <ul>
-                <li><strong>Age Requirement:</strong> Applicants must be at least 21 years old.</li>
-                <li><strong>Prior Licence Holding:</strong> A Commercial Pilot Licence (CPL) or Multi-crew Pilot Licence (MPL) with the same aircraft category rating (e.g., aeroplane or helicopter) is a mandatory prerequisite.</li>
-                <li><strong>Medical Certificate:</strong> A current Class 1 Medical Certificate is required to undertake the ATPL flight test and to exercise the privileges of the licence. In certain circumstances, a medical exemption may be considered if the flight test is conducted in an aircraft.</li>
-                <li><strong>English Language Proficiency:</strong> Candidates must hold a current Aviation English Language Proficiency Assessment.</li>
-                <li><strong>Multi-crew Cooperation (MCC) Training:</strong> Completion of an approved Multi-crew Cooperation (MCC) training course is essential, focusing on the non-technical skills required for effective teamwork in a multi-pilot environment.</li>
+                <li>
+                  <strong>Age Requirement:</strong> Applicants must be at least
+                  21 years old.
+                </li>
+                <li>
+                  <strong>Prior Licence Holding:</strong> A Commercial Pilot
+                  Licence (CPL) or Multi-crew Pilot Licence (MPL) with the same
+                  aircraft category rating (e.g., aeroplane or helicopter) is a
+                  mandatory prerequisite.
+                </li>
+                <li>
+                  <strong>Medical Certificate:</strong> A current Class 1
+                  Medical Certificate is required to undertake the ATPL flight
+                  test and to exercise the privileges of the licence. In certain
+                  circumstances, a medical exemption may be considered if the
+                  flight test is conducted in an aircraft.
+                </li>
+                <li>
+                  <strong>English Language Proficiency:</strong> Candidates must
+                  hold a current Aviation English Language Proficiency
+                  Assessment.
+                </li>
+                <li>
+                  <strong>Multi-crew Cooperation (MCC) Training:</strong>{" "}
+                  Completion of an approved Multi-crew Cooperation (MCC)
+                  training course is essential, focusing on the non-technical
+                  skills required for effective teamwork in a multi-pilot
+                  environment.
+                </li>
               </ul>
             </>
-          )
+          ),
         },
         {
           heading: "Theoretical Knowledge Examinations",
           content: (
             <>
               <p>
-                The theoretical component of the CASA ATPL is extensive, covering seven distinct subjects designed to ensure a deep understanding of air transport operations. These examinations are rigorous and require dedicated study. Candidates can pursue self-study or enroll in structured ground school programs offered by approved training providers.
+                The theoretical component of the CASA ATPL is extensive,
+                covering seven distinct subjects designed to ensure a deep
+                understanding of air transport operations. These examinations
+                are rigorous and require dedicated study. Candidates can pursue
+                self-study or enroll in structured ground school programs
+                offered by approved training providers.
               </p>
               <p>
-                The seven ATPL theoretical subjects for aeroplanes (ATPL(A)) are:
+                The seven ATPL theoretical subjects for aeroplanes (ATPL(A))
+                are:
               </p>
               <ul>
-                <li><strong>Air Law (AALW):</strong> Comprehensive understanding of aviation regulations and legal frameworks.</li>
-                <li><strong>Human Factors (AHUF):</strong> Focus on human performance and limitations in multi-crew operations.</li>
-                <li><strong>Meteorology (AMET):</strong> Advanced knowledge of weather phenomena and their impact on flight.</li>
-                <li><strong>Navigation (ANAV):</strong> Principles and practices of air navigation, including advanced systems.</li>
-                <li><strong>Flight Planning (AFPA):</strong> Category-specific flight planning, including fuel management and route optimization.</li>
-                <li><strong>Performance and Aircraft Loading (APLA):</strong> Category-specific aircraft performance calculations and weight and balance.</li>
-                <li><strong>Aircraft Systems (AASA):</strong> Detailed knowledge of aircraft systems and their operation.</li>
+                <li>
+                  <strong>Air Law (AALW):</strong> Comprehensive understanding
+                  of aviation regulations and legal frameworks.
+                </li>
+                <li>
+                  <strong>Human Factors (AHUF):</strong> Focus on human
+                  performance and limitations in multi-crew operations.
+                </li>
+                <li>
+                  <strong>Meteorology (AMET):</strong> Advanced knowledge of
+                  weather phenomena and their impact on flight.
+                </li>
+                <li>
+                  <strong>Navigation (ANAV):</strong> Principles and practices
+                  of air navigation, including advanced systems.
+                </li>
+                <li>
+                  <strong>Flight Planning (AFPA):</strong> Category-specific
+                  flight planning, including fuel management and route
+                  optimization.
+                </li>
+                <li>
+                  <strong>Performance and Aircraft Loading (APLA):</strong>{" "}
+                  Category-specific aircraft performance calculations and weight
+                  and balance.
+                </li>
+                <li>
+                  <strong>Aircraft Systems (AASA):</strong> Detailed knowledge
+                  of aircraft systems and their operation.
+                </li>
               </ul>
               <p>
-                Each examination typically requires a minimum pass mark of 70%. As of 2026, the cost per exam is approximately AUD $210.33, which includes both the invigilator fee and the CASA fee. It is important to budget for potential re-sits, as these exams are challenging.
+                Each examination typically requires a minimum pass mark of 70%.
+                As of 2026, the cost per exam is approximately AUD $210.33,
+                which includes both the invigilator fee and the CASA fee. It is
+                important to budget for potential re-sits, as these exams are
+                challenging.
               </p>
             </>
-          )
+          ),
         },
         {
           heading: "Flight Experience Requirements",
           content: (
             <>
               <p>
-                The CASA ATPL demands significant flight experience, ensuring that pilots have accumulated a broad range of operational hours in various conditions. The minimum hours are prescribed to build proficiency and decision-making capabilities essential for air transport roles. Up to 100 hours of the total aeronautical experience can be accrued in a Flight Simulation Training Device (FSTD), with a maximum of 25 hours in an FSTD that is not a full flight simulator.
+                The CASA ATPL demands significant flight experience, ensuring
+                that pilots have accumulated a broad range of operational hours
+                in various conditions. The minimum hours are prescribed to build
+                proficiency and decision-making capabilities essential for air
+                transport roles. Up to 100 hours of the total aeronautical
+                experience can be accrued in a Flight Simulation Training Device
+                (FSTD), with a maximum of 25 hours in an FSTD that is not a full
+                flight simulator.
               </p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Experience Category</th>
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Minimum Hours (Aeroplane ATPL)</th>
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Conditions</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">
+                      Experience Category
+                    </th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">
+                      Minimum Hours (Aeroplane ATPL)
+                    </th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">
+                      Conditions
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Total Aeronautical Experience</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Total Aeronautical Experience
+                    </td>
                     <td className="px-4 py-3 text-white/80">1500</td>
-                    <td className="px-4 py-3 text-white/80">Up to 100 hours in FSTD (max 25 in non-simulator FSTD)</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Up to 100 hours in FSTD (max 25 in non-simulator FSTD)
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Flight Time as Pilot</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Flight Time as Pilot
+                    </td>
                     <td className="px-4 py-3 text-white/80">1400</td>
-                    <td className="px-4 py-3 text-white/80">At least 750 hours in aeroplanes</td>
+                    <td className="px-4 py-3 text-white/80">
+                      At least 750 hours in aeroplanes
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Pilot in Command (PIC) or PIC Under Supervision (PICUS)</td>
-                    <td className="px-4 py-3 text-white/80">500 (or 250 if at least 70 are PIC)</td>
-                    <td className="px-4 py-3 text-white/80">Must be in aeroplanes</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Pilot in Command (PIC) or PIC Under Supervision (PICUS)
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      500 (or 250 if at least 70 are PIC)
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      Must be in aeroplanes
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Cross-Country Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Cross-Country Flight Time
+                    </td>
                     <td className="px-4 py-3 text-white/80">200</td>
-                    <td className="px-4 py-3 text-white/80">Must be in aeroplanes</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Must be in aeroplanes
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Cross-Country Flight Time as PIC or PICUS</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Cross-Country Flight Time as PIC or PICUS
+                    </td>
                     <td className="px-4 py-3 text-white/80">100</td>
-                    <td className="px-4 py-3 text-white/80">Must be in aeroplanes</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Must be in aeroplanes
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Night Flight Time (other than dual)</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Night Flight Time (other than dual)
+                    </td>
                     <td className="px-4 py-3 text-white/80">100</td>
-                    <td className="px-4 py-3 text-white/80">Must be in aeroplanes</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Must be in aeroplanes
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
                     <td className="px-4 py-3 text-white/80">Instrument Time</td>
@@ -126,144 +253,258 @@ export default function CasaAtplRequirements() {
                     <td className="px-4 py-3 text-white/80">N/A</td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Instrument Flight Time</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Instrument Flight Time
+                    </td>
                     <td className="px-4 py-3 text-white/80">45</td>
-                    <td className="px-4 py-3 text-white/80">Must be in aeroplanes</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Must be in aeroplanes
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </>
-          )
+          ),
         },
         {
           heading: "ATPL Flight Training and Test",
           content: (
             <>
               <p>
-                ATPL flight training is typically conducted by Part 142 flight training operators and focuses on developing the advanced competencies required for multi-crew operations. This training often integrates with command upgrade programs within airlines or charter companies. Key areas of focus include advanced instrument flying, multi-engine aircraft operations, and the application of human factors and non-technical skills in a multi-crew environment.
+                ATPL flight training is typically conducted by Part 142 flight
+                training operators and focuses on developing the advanced
+                competencies required for multi-crew operations. This training
+                often integrates with command upgrade programs within airlines
+                or charter companies. Key areas of focus include advanced
+                instrument flying, multi-engine aircraft operations, and the
+                application of human factors and non-technical skills in a
+                multi-crew environment.
               </p>
               <p>
-                Upon completion of the requisite training and accumulation of flight hours, candidates must undertake an ATPL flight test. This practical examination assesses a pilot's ability to safely and competently operate an aircraft in accordance with ATPL standards. For IFR flights, a valid Instrument Proficiency Check (IPC) is required to exercise the privileges of an ATPL, ensuring ongoing competency in instrument flight procedures.
+                Upon completion of the requisite training and accumulation of
+                flight hours, candidates must undertake an ATPL flight test.
+                This practical examination assesses a pilot's ability to safely
+                and competently operate an aircraft in accordance with ATPL
+                standards. For IFR flights, a valid Instrument Proficiency Check
+                (IPC) is required to exercise the privileges of an ATPL,
+                ensuring ongoing competency in instrument flight procedures.
               </p>
             </>
-          )
+          ),
         },
         {
           heading: "Estimated Costs for CASA ATPL (2026)",
           content: (
             <>
               <p>
-                The financial investment required to obtain a CASA ATPL can be substantial, encompassing theoretical study materials, examination fees, flight training, and associated administrative costs. While individual costs can vary based on training provider, prior experience, and the efficiency of progress, here's an estimated breakdown for 2026:
+                The financial investment required to obtain a CASA ATPL can be
+                substantial, encompassing theoretical study materials,
+                examination fees, flight training, and associated administrative
+                costs. While individual costs can vary based on training
+                provider, prior experience, and the efficiency of progress,
+                here's an estimated breakdown for 2026:
               </p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Category</th>
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Cost (AUD)</th>
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">
+                      Cost Category
+                    </th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">
+                      Estimated Cost (AUD)
+                    </th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">
+                      Notes
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">ATPL Theory Course</td>
+                    <td className="px-4 py-3 text-white/80">
+                      ATPL Theory Course
+                    </td>
                     <td className="px-4 py-3 text-white/80">$2,000 - $6,000</td>
-                    <td className="px-4 py-3 text-white/80">Depending on self-study vs. structured ground school</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Depending on self-study vs. structured ground school
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">CASA ATPL Exam Fees (7 subjects)</td>
-                    <td className="px-4 py-3 text-white/80">$1,472.31 (7 x $210.33)</td>
-                    <td className="px-4 py-3 text-white/80">Includes invigilator and CASA fees; re-sit costs extra</td>
+                    <td className="px-4 py-3 text-white/80">
+                      CASA ATPL Exam Fees (7 subjects)
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      $1,472.31 (7 x $210.33)
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      Includes invigilator and CASA fees; re-sit costs extra
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Class 1 Medical Certificate</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Class 1 Medical Certificate
+                    </td>
                     <td className="px-4 py-3 text-white/80">$500 - $800</td>
-                    <td className="px-4 py-3 text-white/80">Initial examination and subsequent renewals</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Initial examination and subsequent renewals
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Multi-crew Cooperation (MCC) Training</td>
-                    <td className="px-4 py-3 text-white/80">$5,000 - $10,000</td>
-                    <td className="px-4 py-3 text-white/80">Can be integrated into airline training programs</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Multi-crew Cooperation (MCC) Training
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      $5,000 - $10,000
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      Can be integrated into airline training programs
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Flight Training (Hour Building & Endorsements)</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Flight Training (Hour Building & Endorsements)
+                    </td>
                     <td className="px-4 py-3 text-white/80">Highly Variable</td>
-                    <td className="px-4 py-3 text-white/80">Depends on current experience and required hours to meet ATPL minimums</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Depends on current experience and required hours to meet
+                      ATPL minimums
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">ATPL Flight Test Fee</td>
+                    <td className="px-4 py-3 text-white/80">
+                      ATPL Flight Test Fee
+                    </td>
                     <td className="px-4 py-3 text-white/80">$1,500 - $3,000</td>
-                    <td className="px-4 py-3 text-white/80">Examiner fees and aircraft hire</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Examiner fees and aircraft hire
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80"><strong>Total Estimated Cost (Excluding extensive hour building)</strong></td>
-                    <td className="px-4 py-3 text-white/80"><strong>$10,472 - $20,800+</strong></td>
-                    <td className="px-4 py-3 text-white/80">This does not include the cost of obtaining a CPL or significant hour building if starting from scratch. Total cost from zero experience to ATPL can exceed AUD $100,000 - $150,000.</td>
+                    <td className="px-4 py-3 text-white/80">
+                      <strong>
+                        Total Estimated Cost (Excluding extensive hour building)
+                      </strong>
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      <strong>$10,472 - $20,800+</strong>
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      This does not include the cost of obtaining a CPL or
+                      significant hour building if starting from scratch. Total
+                      cost from zero experience to ATPL can exceed AUD $100,000
+                      - $150,000.
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </>
-          )
+          ),
         },
         {
           heading: "Career Prospects and Major Airlines",
           content: (
             <>
               <p>
-                Holding a CASA ATPL unlocks significant career opportunities within Australia's vibrant aviation sector. Major airlines, regional carriers, and freight operators actively seek qualified ATPL holders to fill pilot roles. The demand for experienced pilots remains strong, particularly as the industry continues to recover and expand.
+                Holding a CASA ATPL unlocks significant career opportunities
+                within Australia's vibrant aviation sector. Major airlines,
+                regional carriers, and freight operators actively seek qualified
+                ATPL holders to fill pilot roles. The demand for experienced
+                pilots remains strong, particularly as the industry continues to
+                recover and expand.
               </p>
               <p>
-                Prominent Australian airlines that typically recruit ATPL-qualified pilots include:
+                Prominent Australian airlines that typically recruit
+                ATPL-qualified pilots include:
               </p>
               <ul>
-                <li><strong>Qantas Airways:</strong> Australia's flag carrier, offering diverse roles from narrow-body to wide-body aircraft.</li>
-                <li><strong>Virgin Australia:</strong> A major domestic and international airline with a growing fleet.</li>
-                <li><strong>Rex Airlines (Regional Express):</strong> A significant regional operator providing pathways to larger aircraft.</li>
-                <li><strong>Alliance Airlines:</strong> Specializes in fly-in, fly-out (FIFO) operations and charter services.</li>
-                <li><strong>Jetstar Airways:</strong> Qantas's low-cost subsidiary, operating extensive domestic and international networks.</li>
-                <li><strong>Pel-Air Express:</strong> A freight and special missions operator.</li>
+                <li>
+                  <strong>Qantas Airways:</strong> Australia's flag carrier,
+                  offering diverse roles from narrow-body to wide-body aircraft.
+                </li>
+                <li>
+                  <strong>Virgin Australia:</strong> A major domestic and
+                  international airline with a growing fleet.
+                </li>
+                <li>
+                  <strong>Rex Airlines (Regional Express):</strong> A
+                  significant regional operator providing pathways to larger
+                  aircraft.
+                </li>
+                <li>
+                  <strong>Alliance Airlines:</strong> Specializes in fly-in,
+                  fly-out (FIFO) operations and charter services.
+                </li>
+                <li>
+                  <strong>Jetstar Airways:</strong> Qantas's low-cost
+                  subsidiary, operating extensive domestic and international
+                  networks.
+                </li>
+                <li>
+                  <strong>Pel-Air Express:</strong> A freight and special
+                  missions operator.
+                </li>
               </ul>
               <p>
-                Beyond airlines, opportunities exist in corporate aviation, aerial work, and flight instruction, often requiring ATPL qualifications for senior roles. Continuous professional development and type ratings on specific aircraft are crucial for career progression.
+                Beyond airlines, opportunities exist in corporate aviation,
+                aerial work, and flight instruction, often requiring ATPL
+                qualifications for senior roles. Continuous professional
+                development and type ratings on specific aircraft are crucial
+                for career progression.
               </p>
             </>
-          )
+          ),
         },
       ]}
       faqSchema={[
-        { 
-          question: "What is the minimum age to obtain a CASA ATPL?", 
-          answer: "You must be at least 21 years old to be eligible for a CASA ATPL."
+        {
+          question: "What is the minimum age to obtain a CASA ATPL?",
+          answer:
+            "You must be at least 21 years old to be eligible for a CASA ATPL.",
         },
-        { 
-          question: "How many theoretical exams are required for the CASA ATPL?", 
-          answer: "There are seven theoretical knowledge examinations required for the CASA ATPL, covering subjects like Air Law, Meteorology, and Flight Planning."
+        {
+          question:
+            "How many theoretical exams are required for the CASA ATPL?",
+          answer:
+            "There are seven theoretical knowledge examinations required for the CASA ATPL, covering subjects like Air Law, Meteorology, and Flight Planning.",
         },
-        { 
-          question: "What is the total flight experience required for a CASA ATPL?", 
-          answer: "A minimum of 1500 hours of total aeronautical experience is required for an Aeroplane ATPL, with specific breakdowns for PIC, cross-country, night, and instrument time."
+        {
+          question:
+            "What is the total flight experience required for a CASA ATPL?",
+          answer:
+            "A minimum of 1500 hours of total aeronautical experience is required for an Aeroplane ATPL, with specific breakdowns for PIC, cross-country, night, and instrument time.",
         },
-        { 
-          question: "Is a Class 1 Medical Certificate mandatory for the ATPL?", 
-          answer: "Yes, a current Class 1 Medical Certificate is mandatory for the ATPL flight test and to exercise the privileges of the licence."
+        {
+          question: "Is a Class 1 Medical Certificate mandatory for the ATPL?",
+          answer:
+            "Yes, a current Class 1 Medical Certificate is mandatory for the ATPL flight test and to exercise the privileges of the licence.",
         },
-        { 
-          question: "Which major airlines in Australia hire ATPL pilots?", 
-          answer: "Major airlines such as Qantas, Virgin Australia, Rex Airlines, Alliance Airlines, and Jetstar Airways typically recruit ATPL-qualified pilots."
+        {
+          question: "Which major airlines in Australia hire ATPL pilots?",
+          answer:
+            "Major airlines such as Qantas, Virgin Australia, Rex Airlines, Alliance Airlines, and Jetstar Airways typically recruit ATPL-qualified pilots.",
         },
-        { 
-          question: "What is Multi-crew Cooperation (MCC) training?", 
-          answer: "MCC training is an approved course focusing on the non-technical skills required for effective teamwork and communication in a multi-pilot cockpit environment."
+        {
+          question: "What is Multi-crew Cooperation (MCC) training?",
+          answer:
+            "MCC training is an approved course focusing on the non-technical skills required for effective teamwork and communication in a multi-pilot cockpit environment.",
         },
       ]}
       relatedGuides={[
-        { title: "How to Become a Pilot in Australia", href: "/australia/guides/australia-pilot-training-costs", time: "15 min" },
-        { title: "Pilot Training Costs Australia 2026", href: "/australia/guides/australia-pilot-training-costs", time: "12 min" }
+        {
+          title: "How to Become a Pilot in Australia",
+          href: "/australia/guides/australia-pilot-training-costs",
+          time: "15 min",
+        },
+        {
+          title: "Pilot Training Costs Australia 2026",
+          href: "/australia/guides/australia-pilot-training-costs",
+          time: "12 min",
+        },
       ]}
-    
       sources={[
-    { name: "FAA" },
-    { name: "FAA Aeronautical Information Manual" },
-    { name: "Boeing Commercial Market Outlook" },
-  ]}/>
+        { name: "FAA" },
+        { name: "FAA Aeronautical Information Manual" },
+        { name: "Boeing Commercial Market Outlook" },
+      ]}
+    />
   );
 }

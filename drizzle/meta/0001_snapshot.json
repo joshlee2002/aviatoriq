@@ -49,9 +49,7 @@
       "compositePrimaryKeys": {
         "admin_notes_id": {
           "name": "admin_notes_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -123,9 +121,7 @@
       "compositePrimaryKeys": {
         "calc_sessions_id": {
           "name": "calc_sessions_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -219,9 +215,7 @@
       "compositePrimaryKeys": {
         "finance_interests_id": {
           "name": "finance_interests_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -302,9 +296,7 @@
       "compositePrimaryKeys": {
         "flight_deck_email_captures_id": {
           "name": "flight_deck_email_captures_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -348,17 +340,13 @@
       "compositePrimaryKeys": {
         "flight_deck_shares_id": {
           "name": "flight_deck_shares_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {
         "flight_deck_shares_shareId_unique": {
           "name": "flight_deck_shares_shareId_unique",
-          "columns": [
-            "shareId"
-          ]
+          "columns": ["shareId"]
         }
       },
       "checkConstraint": {}
@@ -521,9 +509,7 @@
       "compositePrimaryKeys": {
         "flight_schools_id": {
           "name": "flight_schools_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -589,9 +575,7 @@
       "compositePrimaryKeys": {
         "introduction_requests_id": {
           "name": "introduction_requests_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -656,9 +640,7 @@
       "compositePrimaryKeys": {
         "lead_assignments_id": {
           "name": "lead_assignments_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -974,9 +956,7 @@
       "compositePrimaryKeys": {
         "leads_id": {
           "name": "leads_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -1099,9 +1079,7 @@
       "compositePrimaryKeys": {
         "licence_quiz_leads_id": {
           "name": "licence_quiz_leads_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -1214,17 +1192,13 @@
       "compositePrimaryKeys": {
         "school_subscriptions_id": {
           "name": "school_subscriptions_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {
         "school_subscriptions_schoolId_unique": {
           "name": "school_subscriptions_schoolId_unique",
-          "columns": [
-            "schoolId"
-          ]
+          "columns": ["schoolId"]
         }
       },
       "checkConstraint": {}
@@ -1318,9 +1292,7 @@
       "compositePrimaryKeys": {
         "school_waitlist_id": {
           "name": "school_waitlist_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {},
@@ -1403,17 +1375,13 @@
       "compositePrimaryKeys": {
         "users_id": {
           "name": "users_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {
         "users_openId_unique": {
           "name": "users_openId_unique",
-          "columns": [
-            "openId"
-          ]
+          "columns": ["openId"]
         }
       },
       "checkConstraint": {}

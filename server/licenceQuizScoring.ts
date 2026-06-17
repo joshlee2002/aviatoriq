@@ -3,18 +3,24 @@
 // All logic is deterministic and testable — no LLM required.
 
 export type LicenceQuizInput = {
-  goal: string;           // professional | recreational | business | exploring
+  goal: string; // professional | recreational | business | exploring
   timeCommitment: string; // fulltime | parttime | flexible | limited
-  budget: string;         // under10k | 10k_30k | 30k_80k | 80k_130k | over130k | unsure
+  budget: string; // under10k | 10k_30k | 30k_80k | 80k_130k | over130k | unsure
   wantsCommercial: string; // yes_commercial | maybe | no
-  experience: string;     // none | trial | has_licence | experienced
-  location: string;       // uk | europe | north_america | aus_nz | other
-  speedPriority: string;  // fast | balanced | slow
-  mainPriority: string;   // get_flying | career | research | value
+  experience: string; // none | trial | has_licence | experienced
+  location: string; // uk | europe | north_america | aus_nz | other
+  speedPriority: string; // fast | balanced | slow
+  mainPriority: string; // get_flying | career | research | value
 };
 
 export type LicenceResult = {
-  licence: "LAPL" | "PPL" | "CPL" | "Integrated_ATPL" | "Modular_ATPL" | "FAA_PPL";
+  licence:
+    | "LAPL"
+    | "PPL"
+    | "CPL"
+    | "Integrated_ATPL"
+    | "Modular_ATPL"
+    | "FAA_PPL";
   title: string;
   tagline: string;
   description: string;
@@ -27,7 +33,10 @@ export type LicenceResult = {
   careerAssessmentRate: number;
 };
 
-const RESULTS: Record<LicenceResult["licence"], Omit<LicenceResult, "licence">> = {
+const RESULTS: Record<
+  LicenceResult["licence"],
+  Omit<LicenceResult, "licence">
+> = {
   LAPL: {
     title: "LAPL — Light Aircraft Pilot Licence",
     tagline: "The fastest and most affordable way to get airborne.",
@@ -40,13 +49,15 @@ const RESULTS: Record<LicenceResult["licence"], Omit<LicenceResult, "licence">> 
     ],
     estimatedCost: "£6,000 – £12,000",
     estimatedTimeline: "12–24 months part-time",
-    bestFor: "Recreational flyers on a budget, beginners wanting to start quickly",
+    bestFor:
+      "Recreational flyers on a budget, beginners wanting to start quickly",
     ctaText: "Find out if you're ready for professional training",
     careerAssessmentRate: 42,
   },
   PPL: {
     title: "PPL — Private Pilot Licence",
-    tagline: "The classic starting point — flexible, internationally recognised, and a solid foundation.",
+    tagline:
+      "The classic starting point — flexible, internationally recognised, and a solid foundation.",
     description:
       "The PPL is the most widely held pilot licence in the world. It gives you the freedom to fly almost anywhere, carry passengers, and keep your options open for further training toward a commercial licence.",
     bullets: [
@@ -56,13 +67,15 @@ const RESULTS: Record<LicenceResult["licence"], Omit<LicenceResult, "licence">> 
     ],
     estimatedCost: "£8,000 – £18,000",
     estimatedTimeline: "12–36 months part-time",
-    bestFor: "Hobbyists, business flyers, and those who want to keep options open",
+    bestFor:
+      "Hobbyists, business flyers, and those who want to keep options open",
     ctaText: "See which flight schools offer PPL training near you",
     careerAssessmentRate: 58,
   },
   CPL: {
     title: "CPL — Commercial Pilot Licence",
-    tagline: "The licence that lets you get paid to fly — without the full airline commitment.",
+    tagline:
+      "The licence that lets you get paid to fly — without the full airline commitment.",
     description:
       "A CPL unlocks paid flying work: charter, aerial photography, flight instruction, and more. It's typically built on top of a PPL and instrument rating, and forms the backbone of the modular ATPL pathway.",
     bullets: [
@@ -72,13 +85,15 @@ const RESULTS: Record<LicenceResult["licence"], Omit<LicenceResult, "licence">> 
     ],
     estimatedCost: "£40,000 – £70,000 (modular, building on PPL)",
     estimatedTimeline: "3–5 years part-time modular",
-    bestFor: "Career changers, those who want commercial flying without integrated training costs",
+    bestFor:
+      "Career changers, those who want commercial flying without integrated training costs",
     ctaText: "Take the full AviatorIQ assessment to plan your CPL roadmap",
     careerAssessmentRate: 74,
   },
   Integrated_ATPL: {
     title: "Integrated ATPL — Airline Transport Pilot Licence",
-    tagline: "The direct route to the flight deck — intensive, expensive, and the fastest path to an airline career.",
+    tagline:
+      "The direct route to the flight deck — intensive, expensive, and the fastest path to an airline career.",
     description:
       "Integrated ATPL training takes you from zero experience to a frozen ATPL in 18–24 months of full-time study. Most major UK airlines recruit directly from integrated programmes, making this the most direct airline pathway.",
     bullets: [
@@ -88,13 +103,16 @@ const RESULTS: Record<LicenceResult["licence"], Omit<LicenceResult, "licence">> 
     ],
     estimatedCost: "£90,000 – £130,000",
     estimatedTimeline: "18–24 months full-time",
-    bestFor: "School leavers, career changers with funding, those who want the fastest airline route",
-    ctaText: "Take the AviatorIQ assessment to see if you're ready for integrated training",
+    bestFor:
+      "School leavers, career changers with funding, those who want the fastest airline route",
+    ctaText:
+      "Take the AviatorIQ assessment to see if you're ready for integrated training",
     careerAssessmentRate: 81,
   },
   Modular_ATPL: {
     title: "Modular ATPL — Airline Transport Pilot Licence (Flexible Route)",
-    tagline: "The same destination as integrated — on your own timeline and at significantly lower cost.",
+    tagline:
+      "The same destination as integrated — on your own timeline and at significantly lower cost.",
     description:
       "The modular route to an ATPL lets you build qualifications in stages: PPL, then an instrument rating, then a CPL, then your MCC. It takes longer but costs considerably less and can be done alongside a job.",
     bullets: [
@@ -104,13 +122,16 @@ const RESULTS: Record<LicenceResult["licence"], Omit<LicenceResult, "licence">> 
     ],
     estimatedCost: "£50,000 – £80,000 total",
     estimatedTimeline: "3–6 years part-time",
-    bestFor: "Self-funders, career changers who can't go full-time, older applicants",
-    ctaText: "Take the AviatorIQ assessment to build your modular training plan",
+    bestFor:
+      "Self-funders, career changers who can't go full-time, older applicants",
+    ctaText:
+      "Take the AviatorIQ assessment to build your modular training plan",
     careerAssessmentRate: 77,
   },
   FAA_PPL: {
     title: "FAA PPL — US Private Pilot Licence",
-    tagline: "A faster and often cheaper route to a licence — popular for those open to training abroad.",
+    tagline:
+      "A faster and often cheaper route to a licence — popular for those open to training abroad.",
     description:
       "Training in the USA under FAA rules is significantly cheaper than in the UK, particularly in Florida and Arizona where flying weather is near-perfect year-round. An FAA licence can later be converted to a UK/EASA licence.",
     bullets: [
@@ -120,8 +141,10 @@ const RESULTS: Record<LicenceResult["licence"], Omit<LicenceResult, "licence">> 
     ],
     estimatedCost: "£5,000 – £12,000 (in USA)",
     estimatedTimeline: "6–12 months full-time abroad",
-    bestFor: "Those open to training overseas, budget-conscious candidates, gap year students",
-    ctaText: "Take the full AviatorIQ assessment to plan your complete training route",
+    bestFor:
+      "Those open to training overseas, budget-conscious candidates, gap year students",
+    ctaText:
+      "Take the full AviatorIQ assessment to plan your complete training route",
     careerAssessmentRate: 53,
   },
 };
@@ -129,15 +152,26 @@ const RESULTS: Record<LicenceResult["licence"], Omit<LicenceResult, "licence">> 
 // ─── Scoring Decision Tree ────────────────────────────────────────────────────
 
 export function scoreLicenceQuiz(input: LicenceQuizInput): LicenceResult {
-  const { goal, timeCommitment, budget, wantsCommercial, experience, location, speedPriority, mainPriority } = input;
+  const {
+    goal,
+    timeCommitment,
+    budget,
+    wantsCommercial,
+    experience,
+    location,
+    speedPriority,
+    mainPriority,
+  } = input;
 
-  const isProfessional = goal === "professional" || wantsCommercial === "yes_commercial";
+  const isProfessional =
+    goal === "professional" || wantsCommercial === "yes_commercial";
   const isRecreational = goal === "recreational" || wantsCommercial === "no";
   const isBusiness = goal === "business";
   const isExploring = goal === "exploring";
 
   const isFullTime = timeCommitment === "fulltime";
-  const isPartTime = timeCommitment === "parttime" || timeCommitment === "flexible";
+  const isPartTime =
+    timeCommitment === "parttime" || timeCommitment === "flexible";
   const isLimited = timeCommitment === "limited";
 
   const budgetTier = (() => {
@@ -148,7 +182,8 @@ export function scoreLicenceQuiz(input: LicenceQuizInput): LicenceResult {
     return 2; // unsure → assume moderate
   })();
 
-  const hasExperience = experience === "has_licence" || experience === "experienced";
+  const hasExperience =
+    experience === "has_licence" || experience === "experienced";
   const isNorthAmerica = location === "north_america";
   const wantsSpeed = speedPriority === "fast";
   const wantsValue = mainPriority === "value" || speedPriority === "slow";
@@ -171,12 +206,21 @@ export function scoreLicenceQuiz(input: LicenceQuizInput): LicenceResult {
   if (isProfessional && isFullTime && budgetTier >= 4 && wantsSpeed) {
     return { licence: "Integrated_ATPL", ...RESULTS.Integrated_ATPL };
   }
-  if (isProfessional && isFullTime && budgetTier >= 3 && mainPriority === "career") {
+  if (
+    isProfessional &&
+    isFullTime &&
+    budgetTier >= 3 &&
+    mainPriority === "career"
+  ) {
     return { licence: "Integrated_ATPL", ...RESULTS.Integrated_ATPL };
   }
 
   // 3. Modular ATPL — professional + part-time or value-focused
-  if (isProfessional && (isPartTime || isLimited || wantsValue) && budgetTier >= 2) {
+  if (
+    isProfessional &&
+    (isPartTime || isLimited || wantsValue) &&
+    budgetTier >= 2
+  ) {
     return { licence: "Modular_ATPL", ...RESULTS.Modular_ATPL };
   }
   if (isProfessional && hasExperience && budgetTier >= 2) {
@@ -184,10 +228,18 @@ export function scoreLicenceQuiz(input: LicenceQuizInput): LicenceResult {
   }
 
   // 4. CPL — has experience, wants commercial but not full airline
-  if (hasExperience && wantsCommercial === "yes_commercial" && budgetTier >= 3) {
+  if (
+    hasExperience &&
+    wantsCommercial === "yes_commercial" &&
+    budgetTier >= 3
+  ) {
     return { licence: "CPL", ...RESULTS.CPL };
   }
-  if (hasExperience && (goal === "business" || wantsCommercial === "maybe") && budgetTier >= 3) {
+  if (
+    hasExperience &&
+    (goal === "business" || wantsCommercial === "maybe") &&
+    budgetTier >= 3
+  ) {
     return { licence: "CPL", ...RESULTS.CPL };
   }
 

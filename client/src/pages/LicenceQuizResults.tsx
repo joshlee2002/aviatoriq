@@ -32,13 +32,46 @@ type StoredData = {
 };
 
 // Colour mapping per licence
-const LICENCE_COLOURS: Record<string, { bg: string; text: string; border: string; badge: string }> = {
-  LAPL:             { bg: "bg-emerald-500/10", text: "text-emerald-400", border: "border-emerald-500/30", badge: "bg-emerald-500" },
-  PPL:              { bg: "bg-sky-500/10",     text: "text-sky-400",     border: "border-sky-500/30",     badge: "bg-sky-500" },
-  CPL:              { bg: "bg-violet-500/10",  text: "text-violet-400",  border: "border-violet-500/30",  badge: "bg-violet-500" },
-  Integrated_ATPL:  { bg: "bg-amber-500/10",   text: "text-amber-400",   border: "border-amber-500/30",   badge: "bg-amber-500" },
-  Modular_ATPL:     { bg: "bg-orange-500/10",  text: "text-orange-400",  border: "border-orange-500/30",  badge: "bg-orange-500" },
-  FAA_PPL:          { bg: "bg-rose-500/10",    text: "text-rose-400",    border: "border-rose-500/30",    badge: "bg-rose-500" },
+const LICENCE_COLOURS: Record<
+  string,
+  { bg: string; text: string; border: string; badge: string }
+> = {
+  LAPL: {
+    bg: "bg-emerald-500/10",
+    text: "text-emerald-400",
+    border: "border-emerald-500/30",
+    badge: "bg-emerald-500",
+  },
+  PPL: {
+    bg: "bg-sky-500/10",
+    text: "text-sky-400",
+    border: "border-sky-500/30",
+    badge: "bg-sky-500",
+  },
+  CPL: {
+    bg: "bg-violet-500/10",
+    text: "text-violet-400",
+    border: "border-violet-500/30",
+    badge: "bg-violet-500",
+  },
+  Integrated_ATPL: {
+    bg: "bg-amber-500/10",
+    text: "text-amber-400",
+    border: "border-amber-500/30",
+    badge: "bg-amber-500",
+  },
+  Modular_ATPL: {
+    bg: "bg-orange-500/10",
+    text: "text-orange-400",
+    border: "border-orange-500/30",
+    badge: "bg-orange-500",
+  },
+  FAA_PPL: {
+    bg: "bg-rose-500/10",
+    text: "text-rose-400",
+    border: "border-rose-500/30",
+    badge: "bg-rose-500",
+  },
 };
 
 const LICENCE_LABELS: Record<string, string> = {
@@ -86,9 +119,10 @@ export default function LicenceQuizResults() {
 
   // Social proof: use live DB rate if available, else fall back to baked-in rate
   const liveStats = statsQuery.data?.[result.licence];
-  const proceededRate = liveStats && liveStats.total >= 10
-    ? liveStats.proceededRate
-    : result.careerAssessmentRate;
+  const proceededRate =
+    liveStats && liveStats.total >= 10
+      ? liveStats.proceededRate
+      : result.careerAssessmentRate;
   const totalAssessed = liveStats?.total ?? null;
 
   const handleEmailSubmit = (e: React.FormEvent) => {
@@ -98,16 +132,25 @@ export default function LicenceQuizResults() {
       setEmailError("Please enter a valid email address.");
       return;
     }
-    captureEmailMutation.mutate({ id: data.id, email, consentToContact: consent });
+    captureEmailMutation.mutate({
+      id: data.id,
+      email,
+      consentToContact: consent,
+    });
   };
 
   const handleShare = () => {
     const text = `I just found out which pilot licence is right for me — ${label}. Find out yours 👇`;
     const url = `${window.location.origin}/quiz/licence`;
     if (navigator.share) {
-      navigator.share({ title: "Which Pilot Licence Is Right For You?", text, url }).catch(() => {});
+      navigator
+        .share({ title: "Which Pilot Licence Is Right For You?", text, url })
+        .catch(() => {});
     } else {
-      window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text + "\n" + url)}`, "_blank");
+      window.open(
+        `https://twitter.com/intent/tweet?text=${encodeURIComponent(text + "\n" + url)}`,
+        "_blank"
+      );
     }
   };
 
@@ -115,7 +158,10 @@ export default function LicenceQuizResults() {
     <div className="min-h-screen bg-[var(--color-navy)]">
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 border-b border-white/10">
-        <Link href="/" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+        <Link
+          href="/"
+          className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
+        >
           <Plane className="w-5 h-5 text-[var(--color-gold)]" />
           <span className="font-display font-bold text-sm">AviatorIQ</span>
         </Link>
@@ -129,13 +175,18 @@ export default function LicenceQuizResults() {
       </header>
 
       <div className="max-w-2xl mx-auto px-4 py-10 space-y-6">
-
         {/* ── Result card ── */}
-        <div className={`rounded-2xl border ${colours.border} ${colours.bg} p-6 md:p-8`}>
-          <p className="text-white/50 text-xs uppercase tracking-widest mb-3">Your recommended licence</p>
+        <div
+          className={`rounded-2xl border ${colours.border} ${colours.bg} p-6 md:p-8`}
+        >
+          <p className="text-white/50 text-xs uppercase tracking-widest mb-3">
+            Your recommended licence
+          </p>
           <div className="flex items-start justify-between gap-4 mb-4">
             <div>
-              <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold text-white ${colours.badge} mb-3`}>
+              <span
+                className={`inline-block px-3 py-1 rounded-full text-xs font-bold text-white ${colours.badge} mb-3`}
+              >
                 {label}
               </span>
               <h1 className="text-2xl md:text-3xl font-display font-bold text-white leading-tight">
@@ -143,8 +194,12 @@ export default function LicenceQuizResults() {
               </h1>
             </div>
           </div>
-          <p className={`text-base font-medium mb-3 ${colours.text}`}>{result.tagline}</p>
-          <p className="text-white/70 text-sm leading-relaxed">{result.description}</p>
+          <p className={`text-base font-medium mb-3 ${colours.text}`}>
+            {result.tagline}
+          </p>
+          <p className="text-white/70 text-sm leading-relaxed">
+            {result.description}
+          </p>
         </div>
 
         {/* ── Key facts ── */}
@@ -152,25 +207,37 @@ export default function LicenceQuizResults() {
           <div className="rounded-xl border border-white/10 bg-white/5 p-4">
             <div className="flex items-center gap-2 mb-1">
               <PoundSterling className="w-4 h-4 text-[var(--color-gold)]" />
-              <span className="text-white/50 text-xs uppercase tracking-wider">Estimated Cost</span>
+              <span className="text-white/50 text-xs uppercase tracking-wider">
+                Estimated Cost
+              </span>
             </div>
-            <p className="text-white font-semibold text-sm">{result.estimatedCost}</p>
+            <p className="text-white font-semibold text-sm">
+              {result.estimatedCost}
+            </p>
           </div>
           <div className="rounded-xl border border-white/10 bg-white/5 p-4">
             <div className="flex items-center gap-2 mb-1">
               <Clock className="w-4 h-4 text-[var(--color-gold)]" />
-              <span className="text-white/50 text-xs uppercase tracking-wider">Timeline</span>
+              <span className="text-white/50 text-xs uppercase tracking-wider">
+                Timeline
+              </span>
             </div>
-            <p className="text-white font-semibold text-sm">{result.estimatedTimeline}</p>
+            <p className="text-white font-semibold text-sm">
+              {result.estimatedTimeline}
+            </p>
           </div>
         </div>
 
         {/* ── Bullets ── */}
         <div className="rounded-xl border border-white/10 bg-white/5 p-5 space-y-3">
-          <p className="text-white/50 text-xs uppercase tracking-wider mb-1">What this means for you</p>
+          <p className="text-white/50 text-xs uppercase tracking-wider mb-1">
+            What this means for you
+          </p>
           {result.bullets.map((b, i) => (
             <div key={i} className="flex items-start gap-3">
-              <CheckCircle2 className={`w-4 h-4 mt-0.5 shrink-0 ${colours.text}`} />
+              <CheckCircle2
+                className={`w-4 h-4 mt-0.5 shrink-0 ${colours.text}`}
+              />
               <span className="text-white/80 text-sm">{b}</span>
             </div>
           ))}
@@ -180,7 +247,9 @@ export default function LicenceQuizResults() {
         <div className="rounded-xl border border-white/10 bg-white/5 p-4">
           <div className="flex items-center gap-2 mb-1">
             <Users className="w-4 h-4 text-[var(--color-gold)]" />
-            <span className="text-white/50 text-xs uppercase tracking-wider">Best for</span>
+            <span className="text-white/50 text-xs uppercase tracking-wider">
+              Best for
+            </span>
           </div>
           <p className="text-white/80 text-sm">{result.bestFor}</p>
         </div>
@@ -188,9 +257,12 @@ export default function LicenceQuizResults() {
         {/* ── Social proof ── */}
         <div className="text-center py-2">
           <p className="text-white/35 text-xs">
-            {proceededRate}% of people with this recommendation go on to take the full Career Readiness Assessment.
+            {proceededRate}% of people with this recommendation go on to take
+            the full Career Readiness Assessment.
             {totalAssessed && totalAssessed >= 10 && (
-              <span className="ml-1">Based on {totalAssessed} assessments.</span>
+              <span className="ml-1">
+                Based on {totalAssessed} assessments.
+              </span>
             )}
           </p>
         </div>
@@ -200,9 +272,12 @@ export default function LicenceQuizResults() {
           {emailSubmitted ? (
             <div className="text-center py-2">
               <CheckCircle2 className="w-8 h-8 text-[var(--color-gold)] mx-auto mb-3" />
-              <h3 className="text-white font-display font-bold text-lg mb-1">On its way.</h3>
+              <h3 className="text-white font-display font-bold text-lg mb-1">
+                On its way.
+              </h3>
               <p className="text-white/60 text-sm">
-                Your full {label} breakdown — costs, timeline, training steps and next actions — is heading to your inbox.
+                Your full {label} breakdown — costs, timeline, training steps
+                and next actions — is heading to your inbox.
               </p>
             </div>
           ) : (
@@ -211,26 +286,31 @@ export default function LicenceQuizResults() {
                 Want your full {label} breakdown?
               </h3>
               <p className="text-white/60 text-sm mb-4">
-                Get a detailed breakdown of your recommended licence — costs, training steps, timeline, and exactly what to do next — sent straight to your inbox.
+                Get a detailed breakdown of your recommended licence — costs,
+                training steps, timeline, and exactly what to do next — sent
+                straight to your inbox.
               </p>
               <form onSubmit={handleEmailSubmit} className="space-y-3">
                 <input
                   type="email"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={e => setEmail(e.target.value)}
                   placeholder="Your email address"
                   className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                 />
-                {emailError && <p className="text-red-400 text-xs">{emailError}</p>}
+                {emailError && (
+                  <p className="text-red-400 text-xs">{emailError}</p>
+                )}
                 <label className="flex items-start gap-2.5 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={consent}
-                    onChange={(e) => setConsent(e.target.checked)}
+                    onChange={e => setConsent(e.target.checked)}
                     className="mt-0.5 accent-[var(--color-gold)]"
                   />
                   <span className="text-white/45 text-xs leading-relaxed">
-                    I'm happy to hear from AviatorIQ about training options and matched flight schools.
+                    I'm happy to hear from AviatorIQ about training options and
+                    matched flight schools.
                   </span>
                 </label>
                 <button
@@ -238,7 +318,9 @@ export default function LicenceQuizResults() {
                   disabled={captureEmailMutation.isPending}
                   className="w-full py-3 rounded-lg bg-[var(--color-gold)] text-[var(--color-navy)] font-bold text-sm hover:bg-[var(--color-gold)]/90 transition-colors disabled:opacity-60"
                 >
-                  {captureEmailMutation.isPending ? "Sending…" : "Send me the full breakdown"}
+                  {captureEmailMutation.isPending
+                    ? "Sending…"
+                    : "Send me the full breakdown"}
                 </button>
               </form>
             </>
@@ -248,12 +330,15 @@ export default function LicenceQuizResults() {
         {/* ── Main CTA: funnel to Career Readiness Assessment ── */}
         <div className="rounded-2xl overflow-hidden">
           <div className="bg-[var(--color-gold)] px-6 pt-6 pb-5 text-center">
-            <p className="text-[var(--color-navy)]/60 text-xs uppercase tracking-widest font-semibold mb-2">Your next step</p>
+            <p className="text-[var(--color-navy)]/60 text-xs uppercase tracking-widest font-semibold mb-2">
+              Your next step
+            </p>
             <h2 className="text-xl font-display font-bold text-[var(--color-navy)] mb-2">
               Get Your Full Pilot Blueprint
             </h2>
             <p className="text-[var(--color-navy)]/75 text-sm mb-5 max-w-md mx-auto">
-              Personalised readiness score, biggest obstacle, AI training roadmap, and matched flight schools — in under 5 minutes.
+              Personalised readiness score, biggest obstacle, AI training
+              roadmap, and matched flight schools — in under 5 minutes.
             </p>
             <Link href="/quiz">
               <button className="w-full py-4 rounded-xl bg-[var(--color-navy)] text-white font-bold text-sm hover:bg-[var(--color-navy)]/90 transition-all active:scale-[0.98] flex items-center justify-center gap-2">

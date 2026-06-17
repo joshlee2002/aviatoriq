@@ -38,14 +38,19 @@ export const LastVerifiedBox: React.FC<LastVerifiedBoxProps> = ({
         className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
         style={{ background: "oklch(0.45 0.18 240 / 0.1)" }}
       >
-        <Calendar className="w-3.5 h-3.5" style={{ color: "oklch(0.65 0.18 240)" }} />
+        <Calendar
+          className="w-3.5 h-3.5"
+          style={{ color: "oklch(0.65 0.18 240)" }}
+        />
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
           <p className="text-xs font-semibold text-white">
             Last verified: {lastVerified}
           </p>
-          <span className="text-xs" style={{ color: "oklch(0.45 0.04 240)" }}>·</span>
+          <span className="text-xs" style={{ color: "oklch(0.45 0.04 240)" }}>
+            ·
+          </span>
           <a
             href={regulatorUrl}
             target="_blank"
@@ -58,7 +63,10 @@ export const LastVerifiedBox: React.FC<LastVerifiedBoxProps> = ({
           </a>
         </div>
         {verificationNote && (
-          <p className="text-xs mt-0.5" style={{ color: "oklch(0.45 0.04 240)" }}>
+          <p
+            className="text-xs mt-0.5"
+            style={{ color: "oklch(0.45 0.04 240)" }}
+          >
             {verificationNote}
           </p>
         )}

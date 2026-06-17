@@ -10,7 +10,9 @@ import { describe, it, expect } from "vitest";
 function parseGBPValues(priceStr: string): number[] {
   const matches = priceStr.match(/£([\d,]+)/g);
   if (!matches) return [];
-  return matches.map((m) => parseInt(m.replace(/[£,]/g, ""), 10)).filter((n) => !isNaN(n));
+  return matches
+    .map(m => parseInt(m.replace(/[£,]/g, ""), 10))
+    .filter(n => !isNaN(n));
 }
 
 function convertPriceString(
@@ -19,7 +21,9 @@ function convertPriceString(
 ): string {
   const trailingMatch = priceStr.match(/(\s*\([^)]+\)\s*)$/);
   const trailing = trailingMatch ? trailingMatch[1] : "";
-  const core = trailing ? priceStr.slice(0, priceStr.length - trailing.length) : priceStr;
+  const core = trailing
+    ? priceStr.slice(0, priceStr.length - trailing.length)
+    : priceStr;
   const converted = core.replace(/£([\d,]+)/g, (_, digits) => {
     const gbp = parseInt(digits.replace(/,/g, ""), 10);
     return isNaN(gbp) ? `£${digits}` : formatPrice(gbp);
@@ -39,7 +43,9 @@ describe("parseGBPValues", () => {
   });
 
   it("parses a range with trailing text", () => {
-    expect(parseGBPValues("£5,000–£15,000 (ground school only)")).toEqual([5000, 15000]);
+    expect(parseGBPValues("£5,000–£15,000 (ground school only)")).toEqual([
+      5000, 15000,
+    ]);
   });
 
   it("returns empty array for non-GBP string", () => {
@@ -55,9 +61,11 @@ describe("parseGBPValues", () => {
 
 describe("convertPriceString", () => {
   const usdFormatter = (gbp: number) =>
-    new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(
-      Math.round(gbp * 1.27)
-    );
+    new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 0,
+    }).format(Math.round(gbp * 1.27));
 
   it("converts a single GBP value", () => {
     const result = convertPriceString("£100,000", usdFormatter);
@@ -70,7 +78,10 @@ describe("convertPriceString", () => {
   });
 
   it("preserves trailing text", () => {
-    const result = convertPriceString("£5,000–£15,000 (ground school only)", usdFormatter);
+    const result = convertPriceString(
+      "£5,000–£15,000 (ground school only)",
+      usdFormatter
+    );
     expect(result).toBe("$6,350–$19,050 (ground school only)");
   });
 
@@ -81,7 +92,11 @@ describe("convertPriceString", () => {
 
   it("works with identity formatter (GBP → GBP)", () => {
     const gbpFormatter = (gbp: number) =>
-      new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 }).format(gbp);
+      new Intl.NumberFormat("en-GB", {
+        style: "currency",
+        currency: "GBP",
+        maximumFractionDigits: 0,
+      }).format(gbp);
     const result = convertPriceString("£75,000–£110,000", gbpFormatter);
     expect(result).toBe("£75,000–£110,000");
   });
@@ -90,8 +105,16 @@ describe("convertPriceString", () => {
 // ─── COUNTRY_CURRENCY mapping spot checks ─────────────────────────────────────
 
 const COUNTRY_CURRENCY: Record<string, string> = {
-  GB: "GBP", US: "USD", DE: "EUR", AU: "AUD", CA: "CAD",
-  NZ: "NZD", ZA: "ZAR", AE: "AED", SG: "SGD", IN: "INR",
+  GB: "GBP",
+  US: "USD",
+  DE: "EUR",
+  AU: "AUD",
+  CA: "CAD",
+  NZ: "NZD",
+  ZA: "ZAR",
+  AE: "AED",
+  SG: "SGD",
+  IN: "INR",
 };
 
 describe("COUNTRY_CURRENCY mapping", () => {

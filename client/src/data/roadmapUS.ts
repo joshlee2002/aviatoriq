@@ -1,9 +1,4 @@
-export type PathIdUS =
-  | "cadet"
-  | "part141"
-  | "part61"
-  | "university"
-  | "future";
+export type PathIdUS = "cadet" | "part141" | "part61" | "university" | "future";
 
 export interface QuestionUS {
   id: string;
@@ -37,7 +32,11 @@ export const roadmapQuestionsUS: QuestionUS[] = [
     title: "How old are you?",
     options: [
       { label: "Under 18", value: "under18", points: { future: 10 } },
-      { label: "18 – 30", value: "18to30", points: { cadet: 3, part141: 3, university: 3, part61: 1 } },
+      {
+        label: "18 – 30",
+        value: "18to30",
+        points: { cadet: 3, part141: 3, university: 3, part61: 1 },
+      },
       { label: "31 – 45", value: "31to45", points: { part141: 4, part61: 4 } },
       { label: "46+", value: "over46", points: { part61: 6 } },
     ],
@@ -46,38 +45,94 @@ export const roadmapQuestionsUS: QuestionUS[] = [
     id: "budget",
     title: "What is your realistic budget or funding capacity?",
     options: [
-      { label: "Less than $20,000", value: "low", points: { cadet: 8, future: 2 } },
-      { label: "$20,000 – $60,000", value: "medium", points: { part61: 6, cadet: 3 } },
-      { label: "$60,000 – $90,000", value: "high", points: { part141: 5, part61: 4 } },
-      { label: "$90,000 – $130,000", value: "veryhigh", points: { part141: 8, university: 4 } },
-      { label: "$130,000+ or student loans", value: "top", points: { university: 10, part141: 5 } },
+      {
+        label: "Less than $20,000",
+        value: "low",
+        points: { cadet: 8, future: 2 },
+      },
+      {
+        label: "$20,000 – $60,000",
+        value: "medium",
+        points: { part61: 6, cadet: 3 },
+      },
+      {
+        label: "$60,000 – $90,000",
+        value: "high",
+        points: { part141: 5, part61: 4 },
+      },
+      {
+        label: "$90,000 – $130,000",
+        value: "veryhigh",
+        points: { part141: 8, university: 4 },
+      },
+      {
+        label: "$130,000+ or student loans",
+        value: "top",
+        points: { university: 10, part141: 5 },
+      },
     ],
   },
   {
     id: "time",
     title: "How much time can you commit to training?",
     options: [
-      { label: "Full-time — I can stop working", value: "fulltime", points: { part141: 4, cadet: 4, university: 3 } },
-      { label: "Part-time — I need to keep my job", value: "parttime", points: { part61: 10 } },
+      {
+        label: "Full-time — I can stop working",
+        value: "fulltime",
+        points: { part141: 4, cadet: 4, university: 3 },
+      },
+      {
+        label: "Part-time — I need to keep my job",
+        value: "parttime",
+        points: { part61: 10 },
+      },
     ],
   },
   {
     id: "education",
     title: "What is your highest level of education?",
     options: [
-      { label: "High school diploma or GED", value: "highschool", points: { part141: 3, part61: 2 } },
-      { label: "Some college", value: "somecollege", points: { part141: 2, part61: 2, university: 2 } },
-      { label: "Bachelor's degree or higher", value: "degree", points: { cadet: 4, part141: 3, university: 2 } },
+      {
+        label: "High school diploma or GED",
+        value: "highschool",
+        points: { part141: 3, part61: 2 },
+      },
+      {
+        label: "Some college",
+        value: "somecollege",
+        points: { part141: 2, part61: 2, university: 2 },
+      },
+      {
+        label: "Bachelor's degree or higher",
+        value: "degree",
+        points: { cadet: 4, part141: 3, university: 2 },
+      },
     ],
   },
   {
     id: "goal",
     title: "What is your ultimate flying goal?",
     options: [
-      { label: "Major US airline (United, Delta, American, Southwest)", value: "major", points: { cadet: 5, part141: 4, university: 5 } },
-      { label: "Regional airline (SkyWest, Envoy, Endeavor, etc.)", value: "regional", points: { part141: 6, part61: 3 } },
-      { label: "Corporate / charter / cargo flying", value: "corporate", points: { part61: 5, part141: 3 } },
-      { label: "Recreational / private flying only", value: "recreational", points: { part61: 10 } },
+      {
+        label: "Major US airline (United, Delta, American, Southwest)",
+        value: "major",
+        points: { cadet: 5, part141: 4, university: 5 },
+      },
+      {
+        label: "Regional airline (SkyWest, Envoy, Endeavor, etc.)",
+        value: "regional",
+        points: { part141: 6, part61: 3 },
+      },
+      {
+        label: "Corporate / charter / cargo flying",
+        value: "corporate",
+        points: { part61: 5, part141: 3 },
+      },
+      {
+        label: "Recreational / private flying only",
+        value: "recreational",
+        points: { part61: 10 },
+      },
     ],
   },
 ];

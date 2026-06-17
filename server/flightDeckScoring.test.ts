@@ -70,7 +70,11 @@ describe("scoreFlightDeckQuiz", () => {
   });
 
   it("airline captain with funded budget and asap timeline recommends Integrated ATPL", () => {
-    const r = scoreFlightDeckQuiz({ ...highProfile, budget: "funded", timeline: "asap" });
+    const r = scoreFlightDeckQuiz({
+      ...highProfile,
+      budget: "funded",
+      timeline: "asap",
+    });
     expect(r.recommendedRoute).toContain("Integrated ATPL");
   });
 

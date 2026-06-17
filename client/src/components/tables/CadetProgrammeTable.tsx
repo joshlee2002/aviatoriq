@@ -5,7 +5,10 @@
  */
 
 import React, { useState } from "react";
-import { CADET_PROGRAMMES_2026, type CadetProgramme } from "../../data/cadetProgrammes2026";
+import {
+  CADET_PROGRAMMES_2026,
+  type CadetProgramme,
+} from "../../data/cadetProgrammes2026";
 
 interface CadetProgrammeTableProps {
   country?: string;
@@ -21,7 +24,9 @@ const statusBadge = (status: CadetProgramme["status"]) => {
     "Not publicly confirmed": "bg-gray-100 text-gray-600",
   };
   return (
-    <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${map[status] ?? "bg-gray-100 text-gray-600"}`}>
+    <span
+      className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${map[status] ?? "bg-gray-100 text-gray-600"}`}
+    >
       {status}
     </span>
   );
@@ -36,7 +41,9 @@ const fundingBadge = (funding: CadetProgramme["fundedOrSelfFunded"]) => {
     "Not publicly confirmed": "bg-gray-100 text-gray-600",
   };
   return (
-    <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${map[funding] ?? "bg-gray-100 text-gray-600"}`}>
+    <span
+      className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${map[funding] ?? "bg-gray-100 text-gray-600"}`}
+    >
       {funding}
     </span>
   );
@@ -49,7 +56,9 @@ export const CadetProgrammeTable: React.FC<CadetProgrammeTableProps> = ({
   const [expandedRow, setExpandedRow] = useState<number | null>(null);
 
   const rows = country
-    ? CADET_PROGRAMMES_2026.filter((r) => r.country.toLowerCase().includes(country.toLowerCase()))
+    ? CADET_PROGRAMMES_2026.filter(r =>
+        r.country.toLowerCase().includes(country.toLowerCase())
+      )
     : CADET_PROGRAMMES_2026;
 
   return (
@@ -58,12 +67,24 @@ export const CadetProgrammeTable: React.FC<CadetProgrammeTableProps> = ({
         <table className="min-w-full divide-y divide-gray-200 text-sm">
           <thead className="bg-gray-50">
             <tr>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Airline / Programme</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Status</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Funding</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Cost to Trainee</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Training Partner</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Details</th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Airline / Programme
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Status
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Funding
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Cost to Trainee
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Training Partner
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Details
+              </th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 bg-white">
@@ -79,15 +100,25 @@ export const CadetProgrammeTable: React.FC<CadetProgrammeTableProps> = ({
                     >
                       {row.airline}
                     </a>
-                    <span className="text-xs text-gray-500">{row.programmeName}</span>
+                    <span className="text-xs text-gray-500">
+                      {row.programmeName}
+                    </span>
                   </td>
                   <td className="px-4 py-3">{statusBadge(row.status)}</td>
-                  <td className="px-4 py-3">{fundingBadge(row.fundedOrSelfFunded)}</td>
-                  <td className="px-4 py-3 text-xs text-gray-700">{row.estimatedCost}</td>
-                  <td className="px-4 py-3 text-xs text-gray-600">{row.trainingPartner}</td>
+                  <td className="px-4 py-3">
+                    {fundingBadge(row.fundedOrSelfFunded)}
+                  </td>
+                  <td className="px-4 py-3 text-xs text-gray-700">
+                    {row.estimatedCost}
+                  </td>
+                  <td className="px-4 py-3 text-xs text-gray-600">
+                    {row.trainingPartner}
+                  </td>
                   <td className="px-4 py-3">
                     <button
-                      onClick={() => setExpandedRow(expandedRow === i ? null : i)}
+                      onClick={() =>
+                        setExpandedRow(expandedRow === i ? null : i)
+                      }
                       className="text-xs text-blue-600 underline hover:text-blue-800"
                     >
                       {expandedRow === i ? "Hide" : "Show"}
@@ -97,11 +128,21 @@ export const CadetProgrammeTable: React.FC<CadetProgrammeTableProps> = ({
                 {expandedRow === i && (
                   <tr className="bg-blue-50">
                     <td colSpan={6} className="px-4 py-3">
-                      <p className="text-xs font-semibold text-gray-700 mb-1">Application status:</p>
-                      <p className="text-xs text-gray-600 mb-2">{row.applicationStatus}</p>
-                      <p className="text-xs font-semibold text-gray-700 mb-1">Eligibility:</p>
-                      <p className="text-xs text-gray-600 mb-2">{row.eligibilitySummary}</p>
-                      <p className="text-xs font-semibold text-amber-700 mb-1">Important caveat:</p>
+                      <p className="text-xs font-semibold text-gray-700 mb-1">
+                        Application status:
+                      </p>
+                      <p className="text-xs text-gray-600 mb-2">
+                        {row.applicationStatus}
+                      </p>
+                      <p className="text-xs font-semibold text-gray-700 mb-1">
+                        Eligibility:
+                      </p>
+                      <p className="text-xs text-gray-600 mb-2">
+                        {row.eligibilitySummary}
+                      </p>
+                      <p className="text-xs font-semibold text-amber-700 mb-1">
+                        Important caveat:
+                      </p>
                       <p className="text-xs text-amber-800">{row.caveat}</p>
                     </td>
                   </tr>
@@ -115,15 +156,18 @@ export const CadetProgrammeTable: React.FC<CadetProgrammeTableProps> = ({
       <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-xs text-amber-800">
         <p className="font-semibold mb-1">No programme guarantees employment</p>
         <p>
-          All cadet programmes — including fully funded ones — offer a conditional offer of employment only. Completion
-          of training, passing all assessments, obtaining licences, and meeting the airline's standards throughout are
-          all required. Status, intake numbers, and eligibility criteria change frequently. Always verify directly with
+          All cadet programmes — including fully funded ones — offer a
+          conditional offer of employment only. Completion of training, passing
+          all assessments, obtaining licences, and meeting the airline's
+          standards throughout are all required. Status, intake numbers, and
+          eligibility criteria change frequently. Always verify directly with
           the airline or training partner before making any decisions.
         </p>
       </div>
 
       <p className="text-xs text-gray-400">
-        Data last checked: June 2026. Sources: official airline press releases and careers pages.
+        Data last checked: June 2026. Sources: official airline press releases
+        and careers pages.
       </p>
     </div>
   );

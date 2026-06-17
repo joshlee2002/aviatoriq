@@ -26,7 +26,8 @@ interface RepaymentRow {
 
 // ─── Calculation Engine ───────────────────────────────────────────────────────
 function calculateRepayment(inputs: LoanInputs): RepaymentRow[] {
-  const { loanAmount, apr, termYears, startingSalary, salaryGrowthRate } = inputs;
+  const { loanAmount, apr, termYears, startingSalary, salaryGrowthRate } =
+    inputs;
   const monthlyRate = apr / 100 / 12;
   const totalMonths = termYears * 12;
 
@@ -44,8 +45,12 @@ function calculateRepayment(inputs: LoanInputs): RepaymentRow[] {
   for (let year = 1; year <= termYears; year++) {
     const openingBalance = balance;
     const annualInterest = balance * (apr / 100);
-    const closingBalance = Math.max(0, openingBalance + annualInterest - annualPayment);
-    const salary = startingSalary * Math.pow(1 + salaryGrowthRate / 100, year - 1);
+    const closingBalance = Math.max(
+      0,
+      openingBalance + annualInterest - annualPayment
+    );
+    const salary =
+      startingSalary * Math.pow(1 + salaryGrowthRate / 100, year - 1);
     const paymentAsPercentOfSalary = (annualPayment / salary) * 100;
 
     rows.push({
@@ -102,7 +107,9 @@ export default function FinanceCalculator() {
     startingSalary: 38000,
     salaryGrowthRate: 5,
   });
-  const [currency, setCurrency] = useState<"GBP" | "USD" | "CAD" | "AUD" | "EUR">("GBP");
+  const [currency, setCurrency] = useState<
+    "GBP" | "USD" | "CAD" | "AUD" | "EUR"
+  >("GBP");
 
   const currencySymbols: Record<string, string> = {
     GBP: "£",
@@ -116,16 +123,22 @@ export default function FinanceCalculator() {
   const rows = useMemo(() => calculateRepayment(inputs), [inputs]);
 
   const totalInterestPaid = rows.reduce((sum, r) => sum + r.annualInterest, 0);
-  const totalPaid = rows.reduce((sum, r) => sum + Math.min(r.annualPayment, r.openingBalance + r.annualInterest), 0);
-  const monthlyPayment = (inputs.loanAmount * (inputs.apr / 100 / 12) * Math.pow(1 + inputs.apr / 100 / 12, inputs.termYears * 12)) /
+  const totalPaid = rows.reduce(
+    (sum, r) =>
+      sum + Math.min(r.annualPayment, r.openingBalance + r.annualInterest),
+    0
+  );
+  const monthlyPayment =
+    (inputs.loanAmount *
+      (inputs.apr / 100 / 12) *
+      Math.pow(1 + inputs.apr / 100 / 12, inputs.termYears * 12)) /
     (Math.pow(1 + inputs.apr / 100 / 12, inputs.termYears * 12) - 1);
-  const peakDebtBurden = Math.max(...rows.map((r) => r.paymentAsPercentOfSalary));
+  const peakDebtBurden = Math.max(...rows.map(r => r.paymentAsPercentOfSalary));
 
-  const fmt = (n: number) =>
-    `${sym}${Math.round(n).toLocaleString("en-GB")}`;
+  const fmt = (n: number) => `${sym}${Math.round(n).toLocaleString("en-GB")}`;
 
   const update = (key: keyof LoanInputs, value: number) =>
-    setInputs((prev) => ({ ...prev, [key]: value }));
+    setInputs(prev => ({ ...prev, [key]: value }));
 
   return (
     <>
@@ -147,7 +160,9 @@ export default function FinanceCalculator() {
               Pilot Training Finance Repayment Calculator
             </h1>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Model your loan repayments against your expected pilot salary. Understand your monthly payment, total interest cost, and debt burden before you borrow.
+              Model your loan repayments against your expected pilot salary.
+              Understand your monthly payment, total interest cost, and debt
+              burden before you borrow.
             </p>
           </div>
 
@@ -155,7 +170,11 @@ export default function FinanceCalculator() {
           <div className="bg-amber-900/30 border border-amber-500/30 rounded-xl p-4 mb-8 flex gap-3">
             <AlertTriangle className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
             <p className="text-sm text-amber-200">
-              <strong>This is an illustrative tool only.</strong> Actual repayment amounts depend on your lender's specific terms, fees, and interest calculation method. APR figures are indicative. Always obtain a formal loan illustration from your lender before borrowing. AviatorIQ is not a financial adviser.
+              <strong>This is an illustrative tool only.</strong> Actual
+              repayment amounts depend on your lender's specific terms, fees,
+              and interest calculation method. APR figures are indicative.
+              Always obtain a formal loan illustration from your lender before
+              borrowing. AviatorIQ is not a financial adviser.
             </p>
           </div>
 
@@ -164,9 +183,11 @@ export default function FinanceCalculator() {
             <div className="lg:col-span-1 space-y-6">
               {/* Preset Scenarios */}
               <div className="bg-white/5 rounded-xl p-5 border border-white/10">
-                <p className="text-sm font-semibold text-white/80 mb-3">Quick Presets</p>
+                <p className="text-sm font-semibold text-white/80 mb-3">
+                  Quick Presets
+                </p>
                 <div className="space-y-2">
-                  {PRESETS.map((preset) => (
+                  {PRESETS.map(preset => (
                     <button
                       key={preset.label}
                       onClick={() => {
@@ -177,7 +198,13 @@ export default function FinanceCalculator() {
                           startingSalary: preset.startingSalary,
                           salaryGrowthRate: preset.salaryGrowthRate,
                         });
-                        setCurrency(preset.label.includes("USA") ? "USD" : preset.label.includes("Canada") ? "CAD" : "GBP");
+                        setCurrency(
+                          preset.label.includes("USA")
+                            ? "USD"
+                            : preset.label.includes("Canada")
+                              ? "CAD"
+                              : "GBP"
+                        );
                       }}
                       className="w-full text-left text-sm px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 transition-colors"
                     >
@@ -189,10 +216,12 @@ export default function FinanceCalculator() {
 
               {/* Currency */}
               <div className="bg-white/5 rounded-xl p-5 border border-white/10">
-                <label className="block text-sm font-semibold text-white/80 mb-2">Currency</label>
+                <label className="block text-sm font-semibold text-white/80 mb-2">
+                  Currency
+                </label>
                 <select
                   value={currency}
-                  onChange={(e) => setCurrency(e.target.value as typeof currency)}
+                  onChange={e => setCurrency(e.target.value as typeof currency)}
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm text-white"
                 >
                   <option value="GBP">£ GBP (UK)</option>
@@ -205,14 +234,18 @@ export default function FinanceCalculator() {
 
               {/* Loan Inputs */}
               <div className="bg-white/5 rounded-xl p-5 border border-white/10 space-y-4">
-                <p className="text-sm font-semibold text-white/80">Loan Details</p>
+                <p className="text-sm font-semibold text-white/80">
+                  Loan Details
+                </p>
 
                 <div>
-                  <label className="block text-xs text-white/60 mb-1">Loan Amount ({sym})</label>
+                  <label className="block text-xs text-white/60 mb-1">
+                    Loan Amount ({sym})
+                  </label>
                   <input
                     type="number"
                     value={inputs.loanAmount}
-                    onChange={(e) => update("loanAmount", Number(e.target.value))}
+                    onChange={e => update("loanAmount", Number(e.target.value))}
                     className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm text-white"
                     min={1000}
                     max={300000}
@@ -223,12 +256,14 @@ export default function FinanceCalculator() {
                 <div>
                   <label className="block text-xs text-white/60 mb-1">
                     Representative APR (%)
-                    <span className="ml-1 text-white/40 text-xs">— indicative only</span>
+                    <span className="ml-1 text-white/40 text-xs">
+                      — indicative only
+                    </span>
                   </label>
                   <input
                     type="number"
                     value={inputs.apr}
-                    onChange={(e) => update("apr", Number(e.target.value))}
+                    onChange={e => update("apr", Number(e.target.value))}
                     className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm text-white"
                     min={1}
                     max={30}
@@ -237,11 +272,13 @@ export default function FinanceCalculator() {
                 </div>
 
                 <div>
-                  <label className="block text-xs text-white/60 mb-1">Repayment Term (years)</label>
+                  <label className="block text-xs text-white/60 mb-1">
+                    Repayment Term (years)
+                  </label>
                   <input
                     type="number"
                     value={inputs.termYears}
-                    onChange={(e) => update("termYears", Number(e.target.value))}
+                    onChange={e => update("termYears", Number(e.target.value))}
                     className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm text-white"
                     min={1}
                     max={25}
@@ -252,20 +289,28 @@ export default function FinanceCalculator() {
 
               {/* Salary Inputs */}
               <div className="bg-white/5 rounded-xl p-5 border border-white/10 space-y-4">
-                <p className="text-sm font-semibold text-white/80">Salary Assumptions</p>
+                <p className="text-sm font-semibold text-white/80">
+                  Salary Assumptions
+                </p>
                 <div className="bg-blue-900/30 border border-blue-500/30 rounded-lg p-3 flex gap-2">
                   <Info className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
                   <p className="text-xs text-blue-200">
-                    Salary figures are illustrative. Your actual salary will depend on the airline, seniority, and market conditions when you qualify.
+                    Salary figures are illustrative. Your actual salary will
+                    depend on the airline, seniority, and market conditions when
+                    you qualify.
                   </p>
                 </div>
 
                 <div>
-                  <label className="block text-xs text-white/60 mb-1">Starting Salary ({sym})</label>
+                  <label className="block text-xs text-white/60 mb-1">
+                    Starting Salary ({sym})
+                  </label>
                   <input
                     type="number"
                     value={inputs.startingSalary}
-                    onChange={(e) => update("startingSalary", Number(e.target.value))}
+                    onChange={e =>
+                      update("startingSalary", Number(e.target.value))
+                    }
                     className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm text-white"
                     min={20000}
                     max={500000}
@@ -274,11 +319,15 @@ export default function FinanceCalculator() {
                 </div>
 
                 <div>
-                  <label className="block text-xs text-white/60 mb-1">Annual Salary Growth (%)</label>
+                  <label className="block text-xs text-white/60 mb-1">
+                    Annual Salary Growth (%)
+                  </label>
                   <input
                     type="number"
                     value={inputs.salaryGrowthRate}
-                    onChange={(e) => update("salaryGrowthRate", Number(e.target.value))}
+                    onChange={e =>
+                      update("salaryGrowthRate", Number(e.target.value))
+                    }
                     className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm text-white"
                     min={0}
                     max={20}
@@ -293,12 +342,31 @@ export default function FinanceCalculator() {
               {/* Summary Cards */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {[
-                  { label: "Monthly Payment", value: fmt(monthlyPayment), sub: "per month" },
-                  { label: "Total Interest", value: fmt(totalInterestPaid), sub: "over term" },
-                  { label: "Total Repaid", value: fmt(totalPaid), sub: "principal + interest" },
-                  { label: "Peak Debt Burden", value: `${peakDebtBurden.toFixed(1)}%`, sub: "of starting salary" },
-                ].map((card) => (
-                  <div key={card.label} className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
+                  {
+                    label: "Monthly Payment",
+                    value: fmt(monthlyPayment),
+                    sub: "per month",
+                  },
+                  {
+                    label: "Total Interest",
+                    value: fmt(totalInterestPaid),
+                    sub: "over term",
+                  },
+                  {
+                    label: "Total Repaid",
+                    value: fmt(totalPaid),
+                    sub: "principal + interest",
+                  },
+                  {
+                    label: "Peak Debt Burden",
+                    value: `${peakDebtBurden.toFixed(1)}%`,
+                    sub: "of starting salary",
+                  },
+                ].map(card => (
+                  <div
+                    key={card.label}
+                    className="bg-white/5 border border-white/10 rounded-xl p-4 text-center"
+                  >
                     <p className="text-xs text-white/50 mb-1">{card.label}</p>
                     <p className="text-xl font-bold text-white">{card.value}</p>
                     <p className="text-xs text-white/40 mt-1">{card.sub}</p>
@@ -311,9 +379,16 @@ export default function FinanceCalculator() {
                 <div className="bg-red-900/30 border border-red-500/30 rounded-xl p-4 flex gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-semibold text-red-300 mb-1">High Debt Burden Warning</p>
+                    <p className="text-sm font-semibold text-red-300 mb-1">
+                      High Debt Burden Warning
+                    </p>
                     <p className="text-sm text-red-200">
-                      Your loan repayments represent <strong>{peakDebtBurden.toFixed(1)}%</strong> of your starting salary. Financial advisers generally recommend keeping total debt repayments below 30% of gross income. Consider a longer repayment term, a lower loan amount, or a higher starting salary assumption.
+                      Your loan repayments represent{" "}
+                      <strong>{peakDebtBurden.toFixed(1)}%</strong> of your
+                      starting salary. Financial advisers generally recommend
+                      keeping total debt repayments below 30% of gross income.
+                      Consider a longer repayment term, a lower loan amount, or
+                      a higher starting salary assumption.
                     </p>
                   </div>
                 </div>
@@ -322,32 +397,58 @@ export default function FinanceCalculator() {
               {/* Year-by-Year Table */}
               <div className="bg-white/5 rounded-xl border border-white/10 overflow-hidden">
                 <div className="px-5 py-4 border-b border-white/10">
-                  <p className="font-semibold text-sm">Year-by-Year Repayment Schedule</p>
-                  <p className="text-xs text-white/50 mt-1">All figures in {currency}. Interest calculated annually for illustration purposes.</p>
+                  <p className="font-semibold text-sm">
+                    Year-by-Year Repayment Schedule
+                  </p>
+                  <p className="text-xs text-white/50 mt-1">
+                    All figures in {currency}. Interest calculated annually for
+                    illustration purposes.
+                  </p>
                 </div>
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm">
                     <thead className="text-xs text-white/50 border-b border-white/10">
                       <tr>
                         <th className="px-4 py-3 text-left">Year</th>
-                        <th className="px-4 py-3 text-right">Opening Balance</th>
+                        <th className="px-4 py-3 text-right">
+                          Opening Balance
+                        </th>
                         <th className="px-4 py-3 text-right">Interest</th>
                         <th className="px-4 py-3 text-right">Annual Payment</th>
-                        <th className="px-4 py-3 text-right">Closing Balance</th>
+                        <th className="px-4 py-3 text-right">
+                          Closing Balance
+                        </th>
                         <th className="px-4 py-3 text-right">Salary</th>
                         <th className="px-4 py-3 text-right">% of Salary</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-white/5">
-                      {rows.map((row) => (
-                        <tr key={row.year} className={`hover:bg-white/5 transition-colors ${row.paymentAsPercentOfSalary > 30 ? "bg-red-900/10" : ""}`}>
-                          <td className="px-4 py-3 font-medium">Year {row.year}</td>
-                          <td className="px-4 py-3 text-right text-white/70">{fmt(row.openingBalance)}</td>
-                          <td className="px-4 py-3 text-right text-red-300">{fmt(row.annualInterest)}</td>
-                          <td className="px-4 py-3 text-right text-white">{fmt(row.annualPayment)}</td>
-                          <td className="px-4 py-3 text-right text-white/70">{fmt(row.closingBalance)}</td>
-                          <td className="px-4 py-3 text-right text-green-300">{fmt(row.salary)}</td>
-                          <td className={`px-4 py-3 text-right font-medium ${row.paymentAsPercentOfSalary > 30 ? "text-red-400" : row.paymentAsPercentOfSalary > 20 ? "text-amber-400" : "text-green-400"}`}>
+                      {rows.map(row => (
+                        <tr
+                          key={row.year}
+                          className={`hover:bg-white/5 transition-colors ${row.paymentAsPercentOfSalary > 30 ? "bg-red-900/10" : ""}`}
+                        >
+                          <td className="px-4 py-3 font-medium">
+                            Year {row.year}
+                          </td>
+                          <td className="px-4 py-3 text-right text-white/70">
+                            {fmt(row.openingBalance)}
+                          </td>
+                          <td className="px-4 py-3 text-right text-red-300">
+                            {fmt(row.annualInterest)}
+                          </td>
+                          <td className="px-4 py-3 text-right text-white">
+                            {fmt(row.annualPayment)}
+                          </td>
+                          <td className="px-4 py-3 text-right text-white/70">
+                            {fmt(row.closingBalance)}
+                          </td>
+                          <td className="px-4 py-3 text-right text-green-300">
+                            {fmt(row.salary)}
+                          </td>
+                          <td
+                            className={`px-4 py-3 text-right font-medium ${row.paymentAsPercentOfSalary > 30 ? "text-red-400" : row.paymentAsPercentOfSalary > 20 ? "text-amber-400" : "text-green-400"}`}
+                          >
                             {row.paymentAsPercentOfSalary.toFixed(1)}%
                           </td>
                         </tr>
@@ -364,16 +465,37 @@ export default function FinanceCalculator() {
                   Reduce Your Repayment Burden
                 </p>
                 <ul className="text-sm text-white/70 space-y-2 list-disc pl-5">
-                  <li>A <strong>fully funded cadet programme</strong> (e.g. BA Speedbird Academy) eliminates the loan entirely — but acceptance rates are below 1%.</li>
-                  <li>A <strong>longer repayment term</strong> reduces monthly payments but significantly increases total interest paid.</li>
-                  <li>Targeting a <strong>higher-paying first airline</strong> (e.g. long-haul carrier vs regional) reduces the debt burden percentage.</li>
-                  <li>Some lenders allow <strong>overpayments</strong> without penalty — paying extra in high-salary years can significantly reduce total interest.</li>
+                  <li>
+                    A <strong>fully funded cadet programme</strong> (e.g. BA
+                    Speedbird Academy) eliminates the loan entirely — but
+                    acceptance rates are below 1%.
+                  </li>
+                  <li>
+                    A <strong>longer repayment term</strong> reduces monthly
+                    payments but significantly increases total interest paid.
+                  </li>
+                  <li>
+                    Targeting a <strong>higher-paying first airline</strong>{" "}
+                    (e.g. long-haul carrier vs regional) reduces the debt burden
+                    percentage.
+                  </li>
+                  <li>
+                    Some lenders allow <strong>overpayments</strong> without
+                    penalty — paying extra in high-salary years can
+                    significantly reduce total interest.
+                  </li>
                 </ul>
                 <div className="mt-4 flex flex-wrap gap-3">
-                  <Link href="/calculator" className="text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                  <Link
+                    href="/calculator"
+                    className="text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
+                  >
                     Full Cost Calculator
                   </Link>
-                  <Link href="/guides/how-to-finance-pilot-training-uk" className="text-sm bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg transition-colors">
+                  <Link
+                    href="/guides/how-to-finance-pilot-training-uk"
+                    className="text-sm bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg transition-colors"
+                  >
                     Finance Guide
                   </Link>
                 </div>

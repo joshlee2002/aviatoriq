@@ -77,12 +77,25 @@ async function startServer() {
   app.use("/api/trpc/introductions.requestIntroductions", mutationLimiter);
 
   // ─── Serve local uploaded files (PDFs, etc.) ──────────────────────────────
-  const uploadsPath = process.env.LOCAL_STORAGE_PATH ?? path.join(process.cwd(), "uploads");
+  const uploadsPath =
+    process.env.LOCAL_STORAGE_PATH ?? path.join(process.cwd(), "uploads");
   app.use("/uploads", express.static(uploadsPath));
 
   // ─── Health check (used by Railway and other hosting platforms) ──────────────────
   app.get("/api/health", (_req, res) => {
-    res.json({ status: "ok", timestamp: new Date().toISOString() });
+    const hasOpenAI = !!(
+      process.env.OPENAI_API_KEY || process.env.BUILT_IN_FORGE_API_KEY
+    );
+    const hasStorage = !!(
+      process.env.STORAGE_BUCKET_URL && process.env.STORAGE_ACCESS_KEY_ID
+    );
+    res.json({
+      status: "ok",
+      timestamp: new Date().toISOString(),
+      openai: hasOpenAI ? "configured" : "missing",
+      storage: hasStorage ? "r2" : "local",
+      pdfGeneration: hasOpenAI ? "enabled" : "degraded",
+    });
   });
 
   registerStorageProxy(app);

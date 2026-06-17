@@ -39,9 +39,16 @@ export const AuthorBox: React.FC<AuthorBoxProps> = ({
           <User className="w-4 h-4" style={{ color: "oklch(0.65 0.18 240)" }} />
         </div>
         <div>
-          <p className="text-xs font-semibold text-white">Editorially reviewed by AviatorIQ</p>
-          <p className="text-xs mt-0.5" style={{ color: "oklch(0.55 0.04 240)" }}>
-            This guide has been reviewed by the AviatorIQ editorial team against primary regulatory sources. Expert review by a named individual is pending.
+          <p className="text-xs font-semibold text-white">
+            Editorially reviewed by AviatorIQ
+          </p>
+          <p
+            className="text-xs mt-0.5"
+            style={{ color: "oklch(0.55 0.04 240)" }}
+          >
+            This guide has been reviewed by the AviatorIQ editorial team against
+            primary regulatory sources. Expert review by a named individual is
+            pending.
           </p>
         </div>
       </div>

@@ -38,7 +38,10 @@ export const ReviewerBox: React.FC<ReviewerBoxProps> = ({
         className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center"
         style={{ background: "oklch(0.55 0.18 145 / 0.12)" }}
       >
-        <ShieldCheck className="w-4 h-4" style={{ color: "oklch(0.65 0.18 145)" }} />
+        <ShieldCheck
+          className="w-4 h-4"
+          style={{ color: "oklch(0.65 0.18 145)" }}
+        />
       </div>
       <div>
         {hasNamedReviewer ? (
@@ -47,7 +50,10 @@ export const ReviewerBox: React.FC<ReviewerBoxProps> = ({
               Reviewed by: {reviewerName}
             </p>
             {reviewerRole && (
-              <p className="text-xs mt-0.5" style={{ color: "oklch(0.55 0.04 240)" }}>
+              <p
+                className="text-xs mt-0.5"
+                style={{ color: "oklch(0.55 0.04 240)" }}
+              >
                 {reviewerRole}
               </p>
             )}
@@ -57,7 +63,10 @@ export const ReviewerBox: React.FC<ReviewerBoxProps> = ({
             <p className="text-xs font-semibold text-white">
               Editorially reviewed by AviatorIQ
             </p>
-            <p className="text-xs mt-0.5" style={{ color: "oklch(0.55 0.04 240)" }}>
+            <p
+              className="text-xs mt-0.5"
+              style={{ color: "oklch(0.55 0.04 240)" }}
+            >
               {pendingReviewNote
                 ? pendingReviewNote
                 : "This guide has been reviewed against primary regulatory and official sources by the AviatorIQ editorial team. Expert review by a named specialist is pending."}

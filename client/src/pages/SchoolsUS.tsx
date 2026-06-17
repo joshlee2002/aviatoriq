@@ -25,14 +25,33 @@ const surface = "oklch(0.14 0.08 250)";
 const border = "oklch(1 0 0 / 0.08)";
 const borderHover = "oklch(1 0 0 / 0.16)";
 const muted = "oklch(0.55 0.04 240)";
-const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
-const brandGradient = "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0.18 200))";
+const ctaGradient =
+  "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
+const brandGradient =
+  "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0.18 200))";
 
 const US_STATES = [
-  "All States", "Alabama", "Arizona", "California", "Colorado", "Florida",
-  "Georgia", "Illinois", "Michigan", "Minnesota", "Nevada", "New York",
-  "North Dakota", "Ohio", "Oregon", "Pennsylvania", "Tennessee", "Texas",
-  "Virginia", "Washington", "Wisconsin",
+  "All States",
+  "Alabama",
+  "Arizona",
+  "California",
+  "Colorado",
+  "Florida",
+  "Georgia",
+  "Illinois",
+  "Michigan",
+  "Minnesota",
+  "Nevada",
+  "New York",
+  "North Dakota",
+  "Ohio",
+  "Oregon",
+  "Pennsylvania",
+  "Tennessee",
+  "Texas",
+  "Virginia",
+  "Washington",
+  "Wisconsin",
 ];
 
 const TRAINING_TYPES = [
@@ -43,9 +62,13 @@ const TRAINING_TYPES = [
 ];
 
 type UnlockTarget = {
-  id: number; name: string; country?: string;
-  website?: string | null; contactEmail?: string | null;
-  phone?: string | null; priceRange?: string | null;
+  id: number;
+  name: string;
+  country?: string;
+  website?: string | null;
+  contactEmail?: string | null;
+  phone?: string | null;
+  priceRange?: string | null;
   airlinePartnerships?: string | null;
 };
 
@@ -62,38 +85,79 @@ export default function SchoolsUS() {
 
   // State keyword map for matching against city strings
   const STATE_KEYWORDS: Record<string, string[]> = {
-    "Alabama": ["al,", ", al", "alabama", "dothan"],
-    "Arizona": ["az,", ", az", "arizona", "prescott", "phoenix", "mesa", "scottsdale", "tempe"],
-    "California": ["ca,", ", ca", "california", "los angeles", "san diego", "fresno", "sacramento"],
-    "Colorado": ["co,", ", co", "colorado", "denver"],
-    "Florida": ["fl,", ", fl", "florida", "daytona", "sanford", "vero beach", "new smyrna", "fort lauderdale", "pompano", "jacksonville", "miami", "orlando"],
-    "Georgia": ["ga,", ", ga", "georgia", "atlanta"],
-    "Illinois": ["il,", ", il", "illinois", "chicago"],
-    "Michigan": ["mi,", ", mi", "michigan"],
-    "Minnesota": ["mn,", ", mn", "minnesota"],
-    "Nevada": ["nv,", ", nv", "nevada", "incline village", "las vegas"],
+    Alabama: ["al,", ", al", "alabama", "dothan"],
+    Arizona: [
+      "az,",
+      ", az",
+      "arizona",
+      "prescott",
+      "phoenix",
+      "mesa",
+      "scottsdale",
+      "tempe",
+    ],
+    California: [
+      "ca,",
+      ", ca",
+      "california",
+      "los angeles",
+      "san diego",
+      "fresno",
+      "sacramento",
+    ],
+    Colorado: ["co,", ", co", "colorado", "denver"],
+    Florida: [
+      "fl,",
+      ", fl",
+      "florida",
+      "daytona",
+      "sanford",
+      "vero beach",
+      "new smyrna",
+      "fort lauderdale",
+      "pompano",
+      "jacksonville",
+      "miami",
+      "orlando",
+    ],
+    Georgia: ["ga,", ", ga", "georgia", "atlanta"],
+    Illinois: ["il,", ", il", "illinois", "chicago"],
+    Michigan: ["mi,", ", mi", "michigan"],
+    Minnesota: ["mn,", ", mn", "minnesota"],
+    Nevada: ["nv,", ", nv", "nevada", "incline village", "las vegas"],
     "New York": ["ny,", ", ny", "new york"],
     "North Dakota": ["nd,", ", nd", "north dakota", "grand forks"],
-    "Ohio": ["oh,", ", oh", "ohio"],
-    "Oklahoma": ["ok,", ", ok", "oklahoma", "tulsa"],
-    "Oregon": ["or,", ", or", "oregon"],
-    "Pennsylvania": ["pa,", ", pa", "pennsylvania"],
-    "Tennessee": ["tn,", ", tn", "tennessee"],
-    "Texas": ["tx,", ", tx", "texas", "addison", "fort worth", "dallas"],
-    "Virginia": ["va,", ", va", "virginia"],
-    "Washington": ["wa,", ", wa", "washington"],
-    "Wisconsin": ["wi,", ", wi", "wisconsin"],
+    Ohio: ["oh,", ", oh", "ohio"],
+    Oklahoma: ["ok,", ", ok", "oklahoma", "tulsa"],
+    Oregon: ["or,", ", or", "oregon"],
+    Pennsylvania: ["pa,", ", pa", "pennsylvania"],
+    Tennessee: ["tn,", ", tn", "tennessee"],
+    Texas: ["tx,", ", tx", "texas", "addison", "fort worth", "dallas"],
+    Virginia: ["va,", ", va", "virginia"],
+    Washington: ["wa,", ", wa", "washington"],
+    Wisconsin: ["wi,", ", wi", "wisconsin"],
   };
 
-  const schools = allSchools.filter((s) => {
+  const schools = allSchools.filter(s => {
     if (stateFilter && stateFilter !== "All States") {
       const city = (s.city ?? "").toLowerCase();
-      const keywords = STATE_KEYWORDS[stateFilter] ?? [stateFilter.toLowerCase()];
-      if (!keywords.some((k) => city.includes(k))) return false;
+      const keywords = STATE_KEYWORDS[stateFilter] ?? [
+        stateFilter.toLowerCase(),
+      ];
+      if (!keywords.some(k => city.includes(k))) return false;
     }
-    if (trainingType === "part141" && !s.integratedAtpl && !s.modularAtpl) return false;
+    if (trainingType === "part141" && !s.integratedAtpl && !s.modularAtpl)
+      return false;
     if (trainingType === "part61" && s.integratedAtpl) return false;
-    if (trainingType === "university" && !s.name.toLowerCase().includes("university") && !s.name.toLowerCase().includes("riddle") && !s.name.toLowerCase().includes("und") && !s.name.toLowerCase().includes("embry") && !s.name.toLowerCase().includes("purdue")) return false;
+    if (
+      trainingType === "university" &&
+      !s.name.toLowerCase().includes("university") &&
+      !s.name.toLowerCase().includes("riddle") &&
+      !s.name.toLowerCase().includes("und") &&
+      !s.name.toLowerCase().includes("embry") &&
+      !s.name.toLowerCase().includes("purdue")
+    )
+      return false;
     if (financeFilter && s.financeAvailable !== financeFilter) return false;
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
@@ -121,47 +185,115 @@ export default function SchoolsUS() {
       <section
         className="py-16 md:py-24 relative overflow-hidden"
         style={{
-          background: "linear-gradient(180deg, oklch(0.10 0.09 252) 0%, oklch(0.13 0.09 250) 100%)",
+          background:
+            "linear-gradient(180deg, oklch(0.10 0.09 252) 0%, oklch(0.13 0.09 250) 100%)",
           backgroundImage: "url('/manus-storage/usa-school_36756c90.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0" style={{ background: "oklch(0.08 0.09 252 / 0.82)" }} />
+        <div
+          className="absolute inset-0"
+          style={{ background: "oklch(0.08 0.09 252 / 0.82)" }}
+        />
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6" style={{ background: "oklch(0.45 0.18 240 / 0.12)", border: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.65 0.18 240)" }}>
+            <div
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6"
+              style={{
+                background: "oklch(0.45 0.18 240 / 0.12)",
+                border: "1px solid oklch(0.45 0.18 240 / 0.25)",
+                color: "oklch(0.65 0.18 240)",
+              }}
+            >
               <Plane className="w-3 h-3" />
               🇺🇸 US Flight School Directory
             </div>
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-5" style={{ letterSpacing: "-0.02em" }}>
+            <h1
+              className="text-4xl md:text-5xl font-display font-bold text-white mb-5"
+              style={{ letterSpacing: "-0.02em" }}
+            >
               Find the right US flight school for you
             </h1>
             <p className="text-lg md:text-xl mb-8" style={{ color: muted }}>
-              {schoolsQuery.isLoading ? "Loading..." : `${allSchools.length} US flight schools compared`} — Part 141, Part 61, university programmes, airline cadet partnerships, and financing options.
+              {schoolsQuery.isLoading
+                ? "Loading..."
+                : `${allSchools.length} US flight schools compared`}{" "}
+              — Part 141, Part 61, university programmes, airline cadet
+              partnerships, and financing options.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4 text-sm" style={{ color: muted }}>
-              <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4" style={{ color: "oklch(0.65 0.18 240)" }} /> FAA-approved schools only</span>
-              <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4" style={{ color: "oklch(0.65 0.18 240)" }} /> Airline partnership info</span>
-              <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4" style={{ color: "oklch(0.65 0.18 240)" }} /> 2026 pricing</span>
+            <div
+              className="flex flex-wrap items-center justify-center gap-4 text-sm"
+              style={{ color: muted }}
+            >
+              <span className="flex items-center gap-1.5">
+                <CheckCircle
+                  className="w-4 h-4"
+                  style={{ color: "oklch(0.65 0.18 240)" }}
+                />{" "}
+                FAA-approved schools only
+              </span>
+              <span className="flex items-center gap-1.5">
+                <CheckCircle
+                  className="w-4 h-4"
+                  style={{ color: "oklch(0.65 0.18 240)" }}
+                />{" "}
+                Airline partnership info
+              </span>
+              <span className="flex items-center gap-1.5">
+                <CheckCircle
+                  className="w-4 h-4"
+                  style={{ color: "oklch(0.65 0.18 240)" }}
+                />{" "}
+                2026 pricing
+              </span>
             </div>
           </div>
         </div>
       </section>
 
       {/* FAA Route Explainer */}
-      <section className="py-10" style={{ background: "oklch(0.12 0.09 252)", borderBottom: "1px solid oklch(1 0 0 / 0.07)" }}>
+      <section
+        className="py-10"
+        style={{
+          background: "oklch(0.12 0.09 252)",
+          borderBottom: "1px solid oklch(1 0 0 / 0.07)",
+        }}
+      >
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { icon: "⚡", title: "Part 141 — Accelerated", desc: "FAA-approved structured curriculum. Minimum hours are lower (190 hrs for CPL vs 250 for Part 61). Best for full-time students who want the fastest route to the airlines.", color: "oklch(0.72 0.18 65)" },
-              { icon: "🔄", title: "Part 61 — Flexible", desc: "No fixed curriculum. Train at your own pace. Requires more total hours (250 hrs for CPL) but offers maximum flexibility for part-time students or those with prior experience.", color: "oklch(0.45 0.18 240)" },
-              { icon: "🎓", title: "University / R-ATP", desc: "4-year degree + FAA ratings. Graduates of qualifying aviation programmes qualify for the Restricted-ATP at just 1,000 hours — saving 12–18 months vs the standard 1,500-hour requirement.", color: "oklch(0.6 0.18 200)" },
-            ].map((item) => (
-              <div key={item.title} className="p-5 rounded-2xl" style={{ background: surface, border: `1px solid ${border}` }}>
+              {
+                icon: "⚡",
+                title: "Part 141 — Accelerated",
+                desc: "FAA-approved structured curriculum. Minimum hours are lower (190 hrs for CPL vs 250 for Part 61). Best for full-time students who want the fastest route to the airlines.",
+                color: "oklch(0.72 0.18 65)",
+              },
+              {
+                icon: "🔄",
+                title: "Part 61 — Flexible",
+                desc: "No fixed curriculum. Train at your own pace. Requires more total hours (250 hrs for CPL) but offers maximum flexibility for part-time students or those with prior experience.",
+                color: "oklch(0.45 0.18 240)",
+              },
+              {
+                icon: "🎓",
+                title: "University / R-ATP",
+                desc: "4-year degree + FAA ratings. Graduates of qualifying aviation programmes qualify for the Restricted-ATP at just 1,000 hours — saving 12–18 months vs the standard 1,500-hour requirement.",
+                color: "oklch(0.6 0.18 200)",
+              },
+            ].map(item => (
+              <div
+                key={item.title}
+                className="p-5 rounded-2xl"
+                style={{ background: surface, border: `1px solid ${border}` }}
+              >
                 <div className="text-2xl mb-3">{item.icon}</div>
-                <h3 className="font-display font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: muted }}>{item.desc}</p>
+                <h3 className="font-display font-bold text-white mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm leading-relaxed" style={{ color: muted }}>
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -172,51 +304,80 @@ export default function SchoolsUS() {
       <section className="py-10" style={{ background: "oklch(0.11 0.09 252)" }}>
         <div className="container">
           {/* Filters */}
-          <div className="p-5 rounded-2xl mb-8" style={{ background: surface, border: `1px solid ${border}` }}>
+          <div
+            className="p-5 rounded-2xl mb-8"
+            style={{ background: surface, border: `1px solid ${border}` }}
+          >
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
               {/* Search */}
               <div className="relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4" style={{ color: muted }} />
+                <Search
+                  className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4"
+                  style={{ color: muted }}
+                />
                 <input
                   type="text"
                   placeholder="Search schools..."
                   value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
+                  onChange={e => setSearchTerm(e.target.value)}
                   className="w-full pl-9 pr-3 py-2.5 rounded-lg text-sm outline-none"
-                  style={{ background: "oklch(0.10 0.07 252)", border: `1px solid ${border}`, color: "white" }}
+                  style={{
+                    background: "oklch(0.10 0.07 252)",
+                    border: `1px solid ${border}`,
+                    color: "white",
+                  }}
                 />
               </div>
 
               {/* State filter */}
               <select
                 value={stateFilter}
-                onChange={(e) => setStateFilter(e.target.value)}
+                onChange={e => setStateFilter(e.target.value)}
                 className="px-3 py-2.5 rounded-lg text-sm outline-none appearance-none"
-                style={{ background: "oklch(0.10 0.07 252)", border: `1px solid ${border}`, color: stateFilter && stateFilter !== "All States" ? "white" : muted }}
+                style={{
+                  background: "oklch(0.10 0.07 252)",
+                  border: `1px solid ${border}`,
+                  color:
+                    stateFilter && stateFilter !== "All States"
+                      ? "white"
+                      : muted,
+                }}
               >
-                {US_STATES.map((s) => (
-                  <option key={s} value={s === "All States" ? "" : s}>{s}</option>
+                {US_STATES.map(s => (
+                  <option key={s} value={s === "All States" ? "" : s}>
+                    {s}
+                  </option>
                 ))}
               </select>
 
               {/* Training type */}
               <select
                 value={trainingType}
-                onChange={(e) => setTrainingType(e.target.value)}
+                onChange={e => setTrainingType(e.target.value)}
                 className="px-3 py-2.5 rounded-lg text-sm outline-none appearance-none"
-                style={{ background: "oklch(0.10 0.07 252)", border: `1px solid ${border}`, color: trainingType ? "white" : muted }}
+                style={{
+                  background: "oklch(0.10 0.07 252)",
+                  border: `1px solid ${border}`,
+                  color: trainingType ? "white" : muted,
+                }}
               >
-                {TRAINING_TYPES.map((t) => (
-                  <option key={t.value} value={t.value}>{t.label}</option>
+                {TRAINING_TYPES.map(t => (
+                  <option key={t.value} value={t.value}>
+                    {t.label}
+                  </option>
                 ))}
               </select>
 
               {/* Finance */}
               <select
                 value={financeFilter}
-                onChange={(e) => setFinanceFilter(e.target.value)}
+                onChange={e => setFinanceFilter(e.target.value)}
                 className="px-3 py-2.5 rounded-lg text-sm outline-none appearance-none"
-                style={{ background: "oklch(0.10 0.07 252)", border: `1px solid ${border}`, color: financeFilter ? "white" : muted }}
+                style={{
+                  background: "oklch(0.10 0.07 252)",
+                  border: `1px solid ${border}`,
+                  color: financeFilter ? "white" : muted,
+                }}
               >
                 <option value="">Finance: all options</option>
                 <option value="yes">Finance available</option>
@@ -227,7 +388,12 @@ export default function SchoolsUS() {
               {hasFilters && (
                 <button
                   type="button"
-                  onClick={() => { setStateFilter(""); setTrainingType(""); setFinanceFilter(""); setSearchTerm(""); }}
+                  onClick={() => {
+                    setStateFilter("");
+                    setTrainingType("");
+                    setFinanceFilter("");
+                    setSearchTerm("");
+                  }}
                   className="flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors"
                   style={{ border: `1px solid ${border}`, color: muted }}
                 >
@@ -241,12 +407,25 @@ export default function SchoolsUS() {
           <div className="flex items-center justify-between mb-6">
             <p className="text-sm" style={{ color: muted }}>
               {schoolsQuery.isLoading ? (
-                <span className="flex items-center gap-2"><Loader2 className="w-4 h-4 animate-spin" /> Loading schools...</span>
+                <span className="flex items-center gap-2">
+                  <Loader2 className="w-4 h-4 animate-spin" /> Loading
+                  schools...
+                </span>
               ) : (
-                <>Showing <span className="text-white font-semibold">{schools.length}</span> of {allSchools.length} US schools</>
+                <>
+                  Showing{" "}
+                  <span className="text-white font-semibold">
+                    {schools.length}
+                  </span>{" "}
+                  of {allSchools.length} US schools
+                </>
               )}
             </p>
-            <Link href="/us/calculator" className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline" style={{ color: "oklch(0.65 0.18 240)" }}>
+            <Link
+              href="/us/calculator"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline"
+              style={{ color: "oklch(0.65 0.18 240)" }}
+            >
               Estimate your costs <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -254,25 +433,46 @@ export default function SchoolsUS() {
           {/* School cards */}
           {schoolsQuery.isLoading ? (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {[1,2,3,4].map(i => (
-                <div key={i} className="rounded-2xl overflow-hidden animate-pulse" style={{ background: surface, border: `1px solid ${border}`, height: 300 }} />
+              {[1, 2, 3, 4].map(i => (
+                <div
+                  key={i}
+                  className="rounded-2xl overflow-hidden animate-pulse"
+                  style={{
+                    background: surface,
+                    border: `1px solid ${border}`,
+                    height: 300,
+                  }}
+                />
               ))}
             </div>
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {schools.map((school) => (
-                <SchoolCard key={school.id} school={school} onUnlock={(s) => setUnlockSchool(s)} />
+              {schools.map(school => (
+                <SchoolCard
+                  key={school.id}
+                  school={school}
+                  onUnlock={s => setUnlockSchool(s)}
+                />
               ))}
             </div>
           )}
 
           {!schoolsQuery.isLoading && schools.length === 0 && (
             <div className="text-center py-16">
-              <p className="text-lg font-semibold text-white mb-2">No schools match your filters</p>
-              <p className="text-sm mb-4" style={{ color: muted }}>Try adjusting your search or clearing the filters.</p>
+              <p className="text-lg font-semibold text-white mb-2">
+                No schools match your filters
+              </p>
+              <p className="text-sm mb-4" style={{ color: muted }}>
+                Try adjusting your search or clearing the filters.
+              </p>
               <button
                 type="button"
-                onClick={() => { setStateFilter(""); setTrainingType(""); setFinanceFilter(""); setSearchTerm(""); }}
+                onClick={() => {
+                  setStateFilter("");
+                  setTrainingType("");
+                  setFinanceFilter("");
+                  setSearchTerm("");
+                }}
                 className="px-5 py-2.5 rounded-lg text-sm font-semibold text-white"
                 style={{ background: ctaGradient }}
               >
@@ -287,11 +487,16 @@ export default function SchoolsUS() {
       <section className="py-14" style={{ background: "oklch(0.12 0.09 252)" }}>
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
+            <h2
+              className="text-2xl md:text-3xl font-display font-bold text-white mb-4"
+              style={{ letterSpacing: "-0.02em" }}
+            >
               Not sure which school is right for you?
             </h2>
             <p className="text-base mb-6" style={{ color: muted }}>
-              Use the US cost calculator to estimate your total training cost across Part 141 and Part 61 routes — including checkrides, FAA exams, and living costs.
+              Use the US cost calculator to estimate your total training cost
+              across Part 141 and Part 61 routes — including checkrides, FAA
+              exams, and living costs.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
@@ -305,9 +510,16 @@ export default function SchoolsUS() {
               <Link
                 href="/us/cadet-eligibility"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold no-underline transition-all"
-                style={{ border: "1px solid oklch(1 0 0 / 0.15)", color: "white" }}
-                onMouseEnter={e => (e.currentTarget.style.background = "oklch(1 0 0 / 0.06)")}
-                onMouseLeave={e => (e.currentTarget.style.background = "transparent")}
+                style={{
+                  border: "1px solid oklch(1 0 0 / 0.15)",
+                  color: "white",
+                }}
+                onMouseEnter={e =>
+                  (e.currentTarget.style.background = "oklch(1 0 0 / 0.06)")
+                }
+                onMouseLeave={e =>
+                  (e.currentTarget.style.background = "transparent")
+                }
               >
                 Check Cadet Eligibility
               </Link>
@@ -336,7 +548,13 @@ export default function SchoolsUS() {
   );
 }
 
-function SchoolCard({ school, onUnlock }: { school: FlightSchool; onUnlock: (s: UnlockTarget) => void }) {
+function SchoolCard({
+  school,
+  onUnlock,
+}: {
+  school: FlightSchool;
+  onUnlock: (s: UnlockTarget) => void;
+}) {
   const [expanded, setExpanded] = useState(false);
 
   const heroImg = "/manus-storage/usa-school_36756c90.jpg";
@@ -345,8 +563,13 @@ function SchoolCard({ school, onUnlock }: { school: FlightSchool; onUnlock: (s: 
     <div
       className="rounded-2xl overflow-hidden transition-all duration-300"
       style={{ background: surface, border: `1px solid ${border}` }}
-      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; }}
-      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; }}
+      onMouseEnter={e => {
+        (e.currentTarget as HTMLElement).style.border =
+          `1px solid ${borderHover}`;
+      }}
+      onMouseLeave={e => {
+        (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`;
+      }}
     >
       {/* Image banner */}
       <div className="relative h-40 overflow-hidden">
@@ -356,17 +579,29 @@ function SchoolCard({ school, onUnlock }: { school: FlightSchool; onUnlock: (s: 
           className="w-full h-full object-cover"
           style={{ filter: "brightness(0.75)" }}
         />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 40%, oklch(0.14 0.08 250) 100%)" }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, transparent 40%, oklch(0.14 0.08 250) 100%)",
+          }}
+        />
         {school.integratedAtpl && (
           <div className="absolute top-3 left-3">
-            <span className="px-2 py-1 rounded-md text-xs font-bold" style={{ background: "oklch(0.45 0.18 240)", color: "white" }}>
+            <span
+              className="px-2 py-1 rounded-md text-xs font-bold"
+              style={{ background: "oklch(0.45 0.18 240)", color: "white" }}
+            >
               Part 141
             </span>
           </div>
         )}
         {school.airlinePartnerships && (
           <div className="absolute top-3 right-3">
-            <span className="px-2 py-1 rounded-md text-xs font-bold flex items-center gap-1" style={{ background: "oklch(0.72 0.18 65)", color: "white" }}>
+            <span
+              className="px-2 py-1 rounded-md text-xs font-bold flex items-center gap-1"
+              style={{ background: "oklch(0.72 0.18 65)", color: "white" }}
+            >
               <Plane className="w-3 h-3" /> Airline partner
             </span>
           </div>
@@ -377,41 +612,85 @@ function SchoolCard({ school, onUnlock }: { school: FlightSchool; onUnlock: (s: 
         {/* Header */}
         <div className="flex items-start justify-between gap-3 mb-3">
           <div className="min-w-0">
-            <h3 className="font-display font-bold text-white text-lg leading-tight mb-1">{school.name}</h3>
-            <div className="flex items-center gap-1.5 text-xs" style={{ color: muted }}>
+            <h3 className="font-display font-bold text-white text-lg leading-tight mb-1">
+              {school.name}
+            </h3>
+            <div
+              className="flex items-center gap-1.5 text-xs"
+              style={{ color: muted }}
+            >
               <MapPin className="w-3.5 h-3.5 flex-shrink-0" />
-              <span>{[school.city, school.country].filter(Boolean).join(", ")}</span>
+              <span>
+                {[school.city, school.country].filter(Boolean).join(", ")}
+              </span>
             </div>
           </div>
           <div className="text-right flex-shrink-0">
-            <div className="text-sm font-bold text-white">{school.priceRange ?? "Contact for pricing"}</div>
+            <div className="text-sm font-bold text-white">
+              {school.priceRange ?? "Contact for pricing"}
+            </div>
           </div>
         </div>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-1.5 mb-4">
           {school.integratedAtpl && (
-            <span className="px-2 py-0.5 rounded-md text-xs font-medium" style={{ background: "oklch(0.45 0.18 240 / 0.12)", color: "oklch(0.65 0.18 240)", border: "1px solid oklch(0.45 0.18 240 / 0.2)" }}>
+            <span
+              className="px-2 py-0.5 rounded-md text-xs font-medium"
+              style={{
+                background: "oklch(0.45 0.18 240 / 0.12)",
+                color: "oklch(0.65 0.18 240)",
+                border: "1px solid oklch(0.45 0.18 240 / 0.2)",
+              }}
+            >
               Integrated ATPL
             </span>
           )}
           {school.modularAtpl && (
-            <span className="px-2 py-0.5 rounded-md text-xs font-medium" style={{ background: "oklch(0.6 0.18 200 / 0.12)", color: "oklch(0.7 0.18 200)", border: "1px solid oklch(0.6 0.18 200 / 0.2)" }}>
+            <span
+              className="px-2 py-0.5 rounded-md text-xs font-medium"
+              style={{
+                background: "oklch(0.6 0.18 200 / 0.12)",
+                color: "oklch(0.7 0.18 200)",
+                border: "1px solid oklch(0.6 0.18 200 / 0.2)",
+              }}
+            >
               Modular ATPL
             </span>
           )}
           {school.ppl && (
-            <span className="px-2 py-0.5 rounded-md text-xs font-medium" style={{ background: "oklch(0.6 0.18 200 / 0.12)", color: "oklch(0.7 0.18 200)", border: "1px solid oklch(0.6 0.18 200 / 0.2)" }}>
+            <span
+              className="px-2 py-0.5 rounded-md text-xs font-medium"
+              style={{
+                background: "oklch(0.6 0.18 200 / 0.12)",
+                color: "oklch(0.7 0.18 200)",
+                border: "1px solid oklch(0.6 0.18 200 / 0.2)",
+              }}
+            >
               PPL
             </span>
           )}
           {school.financeAvailable === "yes" && (
-            <span className="px-2 py-0.5 rounded-md text-xs font-medium flex items-center gap-1" style={{ background: "oklch(0.55 0.18 145 / 0.1)", color: "oklch(0.65 0.18 145)", border: "1px solid oklch(0.55 0.18 145 / 0.2)" }}>
+            <span
+              className="px-2 py-0.5 rounded-md text-xs font-medium flex items-center gap-1"
+              style={{
+                background: "oklch(0.55 0.18 145 / 0.1)",
+                color: "oklch(0.65 0.18 145)",
+                border: "1px solid oklch(0.55 0.18 145 / 0.2)",
+              }}
+            >
               <CreditCard className="w-3 h-3" /> Finance available
             </span>
           )}
           {school.accommodationAvailable === "yes" && (
-            <span className="px-2 py-0.5 rounded-md text-xs font-medium" style={{ background: "oklch(0.65 0.2 300 / 0.1)", color: "oklch(0.7 0.2 300)", border: "1px solid oklch(0.65 0.2 300 / 0.15)" }}>
+            <span
+              className="px-2 py-0.5 rounded-md text-xs font-medium"
+              style={{
+                background: "oklch(0.65 0.2 300 / 0.1)",
+                color: "oklch(0.7 0.2 300)",
+                border: "1px solid oklch(0.65 0.2 300 / 0.15)",
+              }}
+            >
               Accommodation
             </span>
           )}
@@ -420,23 +699,44 @@ function SchoolCard({ school, onUnlock }: { school: FlightSchool; onUnlock: (s: 
         {/* Description */}
         {school.description && (
           <p className="text-sm leading-relaxed mb-4" style={{ color: muted }}>
-            {expanded ? school.description : `${school.description.slice(0, 180)}...`}
+            {expanded
+              ? school.description
+              : `${school.description.slice(0, 180)}...`}
           </p>
         )}
 
         {/* Airline partnerships */}
         {school.airlinePartnerships && (
-          <div className="flex items-start gap-2 mb-4 p-3 rounded-lg" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
-            <Plane className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" style={{ color: "oklch(0.65 0.18 240)" }} />
+          <div
+            className="flex items-start gap-2 mb-4 p-3 rounded-lg"
+            style={{
+              background: "oklch(0.45 0.18 240 / 0.07)",
+              border: "1px solid oklch(0.45 0.18 240 / 0.15)",
+            }}
+          >
+            <Plane
+              className="w-3.5 h-3.5 mt-0.5 flex-shrink-0"
+              style={{ color: "oklch(0.65 0.18 240)" }}
+            />
             <div>
-              <p className="text-xs font-semibold mb-0.5" style={{ color: "oklch(0.65 0.18 240)" }}>Airline partnerships</p>
-              <p className="text-xs" style={{ color: muted }}>{school.airlinePartnerships}</p>
+              <p
+                className="text-xs font-semibold mb-0.5"
+                style={{ color: "oklch(0.65 0.18 240)" }}
+              >
+                Airline partnerships
+              </p>
+              <p className="text-xs" style={{ color: muted }}>
+                {school.airlinePartnerships}
+              </p>
             </div>
           </div>
         )}
 
         {/* Actions */}
-        <div className="flex items-center gap-3 pt-2" style={{ borderTop: `1px solid ${border}` }}>
+        <div
+          className="flex items-center gap-3 pt-2"
+          style={{ borderTop: `1px solid ${border}` }}
+        >
           {school.description && school.description.length > 180 && (
             <button
               type="button"
@@ -449,16 +749,18 @@ function SchoolCard({ school, onUnlock }: { school: FlightSchool; onUnlock: (s: 
           )}
           <button
             type="button"
-            onClick={() => onUnlock({
-              id: school.id,
-              name: school.name,
-              country: school.country ?? "United States",
-              website: school.website,
-              contactEmail: school.contactEmail,
-              phone: school.phone,
-              priceRange: school.priceRange,
-              airlinePartnerships: school.airlinePartnerships,
-            })}
+            onClick={() =>
+              onUnlock({
+                id: school.id,
+                name: school.name,
+                country: school.country ?? "United States",
+                website: school.website,
+                contactEmail: school.contactEmail,
+                phone: school.phone,
+                priceRange: school.priceRange,
+                airlinePartnerships: school.airlinePartnerships,
+              })
+            }
             className="ml-auto inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all"
             style={{ background: brandGradient }}
           >

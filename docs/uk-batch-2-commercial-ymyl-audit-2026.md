@@ -9,18 +9,18 @@ This batch is now materially safer and closer to the elite standard. The main im
 
 ## What changed
 
-| Guide | Risk found | Fix made |
-| --- | --- | --- |
-| `BestFlightSchoolsUK.tsx` | Overconfident “best school”, verified-price and weather-guarantee wording. | Reframed school choice around fit, live quote verification, CAA approval checks and licence outcome. |
-| `FirstOfficerUK.tsx` | Current UK ATPL subjects, salary ranges, type-rating validation and command timelines needed caution. | Corrected 13-subject wording, softened salary/upgrade claims and added current-contract/type-rating verification language. |
-| `FlightInstructorUK.tsx` | FI-to-airline pathway sounded too automatic and US-style 1,500-hour assumptions leaked in. | Reframed FI as established but conditional; clarified airline minimums vary in the UK. |
-| `FrozenAtplUK.tsx` | “Every airline requires” and type-rating funding claims were too absolute. | Reframed fATPL as the normal route, with current CAA exam-rule and type-rating-term verification. |
-| `InstrumentRatingUK.tsx` | UK/EASA validity, IR recency and “absolute necessity” language needed precision. | Added conversion/validation caution and replaced brittle recency wording with current Part-FCL verification. |
-| `MccJocUK.tsx` | MCC/JOC requirements were too absolute across all pathways. | Reframed around first multi-pilot type-rating routes and target licence authority. |
-| `PilotEyesightUK.tsx` | Colour vision and laser-surgery outcomes were too deterministic. | Added CAA/AeMC case-by-case framing and removed assumptions about multi-crew limitations. |
-| `SimulatorAssessmentGuide.tsx` | Simulator-prep advice sounded universal. | Reframed preparation advice by airline profile, simulator type and budget. |
-| `TuiMPL.tsx` | 2026 pause, alternatives and Ryanair/Jet2 wording were too absolute. | Added live TUI careers verification and conditional pathway language. |
-| `BASpeedbirdAcademy.tsx` | Page incorrectly described Speedbird as self-funded and guaranteed employment. | Reframed as currently advertised funded pathway, conditional on BA training, licence, medical, security and employment standards. |
+| Guide                          | Risk found                                                                                            | Fix made                                                                                                                          |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `BestFlightSchoolsUK.tsx`      | Overconfident “best school”, verified-price and weather-guarantee wording.                            | Reframed school choice around fit, live quote verification, CAA approval checks and licence outcome.                              |
+| `FirstOfficerUK.tsx`           | Current UK ATPL subjects, salary ranges, type-rating validation and command timelines needed caution. | Corrected 13-subject wording, softened salary/upgrade claims and added current-contract/type-rating verification language.        |
+| `FlightInstructorUK.tsx`       | FI-to-airline pathway sounded too automatic and US-style 1,500-hour assumptions leaked in.            | Reframed FI as established but conditional; clarified airline minimums vary in the UK.                                            |
+| `FrozenAtplUK.tsx`             | “Every airline requires” and type-rating funding claims were too absolute.                            | Reframed fATPL as the normal route, with current CAA exam-rule and type-rating-term verification.                                 |
+| `InstrumentRatingUK.tsx`       | UK/EASA validity, IR recency and “absolute necessity” language needed precision.                      | Added conversion/validation caution and replaced brittle recency wording with current Part-FCL verification.                      |
+| `MccJocUK.tsx`                 | MCC/JOC requirements were too absolute across all pathways.                                           | Reframed around first multi-pilot type-rating routes and target licence authority.                                                |
+| `PilotEyesightUK.tsx`          | Colour vision and laser-surgery outcomes were too deterministic.                                      | Added CAA/AeMC case-by-case framing and removed assumptions about multi-crew limitations.                                         |
+| `SimulatorAssessmentGuide.tsx` | Simulator-prep advice sounded universal.                                                              | Reframed preparation advice by airline profile, simulator type and budget.                                                        |
+| `TuiMPL.tsx`                   | 2026 pause, alternatives and Ryanair/Jet2 wording were too absolute.                                  | Added live TUI careers verification and conditional pathway language.                                                             |
+| `BASpeedbirdAcademy.tsx`       | Page incorrectly described Speedbird as self-funded and guaranteed employment.                        | Reframed as currently advertised funded pathway, conditional on BA training, licence, medical, security and employment standards. |
 
 ## Remaining elite-standard follow-ups
 

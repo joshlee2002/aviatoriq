@@ -12,7 +12,9 @@
 import posthog from "posthog-js";
 
 const POSTHOG_KEY = import.meta.env.VITE_POSTHOG_KEY as string | undefined;
-const POSTHOG_HOST = (import.meta.env.VITE_POSTHOG_HOST as string | undefined) || "https://eu.i.posthog.com";
+const POSTHOG_HOST =
+  (import.meta.env.VITE_POSTHOG_HOST as string | undefined) ||
+  "https://eu.i.posthog.com";
 
 let initialised = false;
 
@@ -24,7 +26,7 @@ export function initAnalytics() {
     autocapture: false,
     capture_pageview: false,
     disable_session_recording: true,
-    loaded: (ph) => {
+    loaded: ph => {
       if (import.meta.env.DEV) ph.debug();
     },
   });
@@ -34,12 +36,17 @@ export function initAnalytics() {
 /** Track a page view — call on every route change */
 export function trackPageView(path: string) {
   if (POSTHOG_KEY) {
-    posthog.capture("$pageview", { $current_url: window.location.origin + path });
+    posthog.capture("$pageview", {
+      $current_url: window.location.origin + path,
+    });
   }
 }
 
 /** Track a named event with optional properties */
-export function trackEvent(event: string, properties?: Record<string, unknown>) {
+export function trackEvent(
+  event: string,
+  properties?: Record<string, unknown>
+) {
   try {
     if (POSTHOG_KEY) {
       posthog.capture(event, properties);
@@ -59,12 +66,18 @@ export function trackToolUsed(tool: string, country: "uk" | "us") {
 }
 
 /** Track guide read */
-export function trackGuideRead(slug: string, title: string, country: "uk" | "us") {
+export function trackGuideRead(
+  slug: string,
+  title: string,
+  country: "uk" | "us"
+) {
   trackEvent("guide_read", { slug, title, country });
 }
 
 /** Track quiz/assessment start */
-export function trackAssessmentStarted(type: "quiz" | "roadmap" | "roadmap_us") {
+export function trackAssessmentStarted(
+  type: "quiz" | "roadmap" | "roadmap_us"
+) {
   trackEvent("assessment_started", { type });
 }
 
@@ -74,7 +87,10 @@ export function trackAssessmentCompleted(type: string, result: string) {
 }
 
 /** Track school directory view */
-export function trackSchoolsViewed(country: "uk" | "us", filters?: Record<string, string>) {
+export function trackSchoolsViewed(
+  country: "uk" | "us",
+  filters?: Record<string, string>
+) {
   trackEvent("schools_viewed", { country, ...filters });
 }
 

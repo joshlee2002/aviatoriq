@@ -34,7 +34,12 @@ import {
   FileDown,
   Info,
 } from "lucide-react";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface FlightSchool {
@@ -94,14 +99,31 @@ function ScoreRing({ score }: { score: number }) {
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (score / 100) * circumference;
   const color = score >= 85 ? "#f97316" : score >= 55 ? "#f59e0b" : "#60a5fa";
-  const phase = score >= 85 ? "Flight Ready" : score >= 55 ? "Development" : "Exploration";
+  const phase =
+    score >= 85 ? "Flight Ready" : score >= 55 ? "Development" : "Exploration";
   return (
     <div className="relative w-36 h-36 flex items-center justify-center">
-      <svg className="absolute inset-0 -rotate-90" width="144" height="144" viewBox="0 0 144 144">
-        <circle cx="72" cy="72" r={radius} fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="10" />
+      <svg
+        className="absolute inset-0 -rotate-90"
+        width="144"
+        height="144"
+        viewBox="0 0 144 144"
+      >
         <circle
-          cx="72" cy="72" r={radius} fill="none"
-          stroke={color} strokeWidth="10"
+          cx="72"
+          cy="72"
+          r={radius}
+          fill="none"
+          stroke="rgba(255,255,255,0.1)"
+          strokeWidth="10"
+        />
+        <circle
+          cx="72"
+          cy="72"
+          r={radius}
+          fill="none"
+          stroke={color}
+          strokeWidth="10"
           strokeDasharray={circumference}
           strokeDashoffset={offset}
           strokeLinecap="round"
@@ -110,7 +132,9 @@ function ScoreRing({ score }: { score: number }) {
       </svg>
       <div className="text-center text-white">
         <div className="text-4xl font-black">{score}</div>
-        <div className="text-xs font-semibold mt-0.5" style={{ color }}>{phase}</div>
+        <div className="text-xs font-semibold mt-0.5" style={{ color }}>
+          {phase}
+        </div>
       </div>
     </div>
   );
@@ -122,18 +146,40 @@ function AnimatedBar({ score }: { score: number }) {
     const t = setTimeout(() => setWidth(score), 400);
     return () => clearTimeout(t);
   }, [score]);
-  const color = score >= 85 ? "bg-orange-500" : score >= 55 ? "bg-amber-500" : "bg-blue-400";
+  const color =
+    score >= 85
+      ? "bg-orange-500"
+      : score >= 55
+        ? "bg-amber-500"
+        : "bg-blue-400";
   return (
     <div className="h-2 bg-muted rounded-full overflow-hidden">
-      <div className={`h-full rounded-full transition-all duration-700 ease-out ${color}`} style={{ width: `${width}%` }} />
+      <div
+        className={`h-full rounded-full transition-all duration-700 ease-out ${color}`}
+        style={{ width: `${width}%` }}
+      />
     </div>
   );
 }
 
 function CategoryBadge({ category }: { category: string }) {
-  if (category === "Hot") return <span className="badge-hot"><Flame className="w-3 h-3" /> Flight Ready</span>;
-  if (category === "Warm") return <span className="badge-warm"><Thermometer className="w-3 h-3" /> Development Phase</span>;
-  return <span className="badge-cold"><Snowflake className="w-3 h-3" /> Exploration Phase</span>;
+  if (category === "Hot")
+    return (
+      <span className="badge-hot">
+        <Flame className="w-3 h-3" /> Flight Ready
+      </span>
+    );
+  if (category === "Warm")
+    return (
+      <span className="badge-warm">
+        <Thermometer className="w-3 h-3" /> Development Phase
+      </span>
+    );
+  return (
+    <span className="badge-cold">
+      <Snowflake className="w-3 h-3" /> Exploration Phase
+    </span>
+  );
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
@@ -151,14 +197,20 @@ export default function Results() {
     try {
       const raw = sessionStorage.getItem(`quiz_result_${leadId}`);
       return !!raw;
-    } catch { return false; }
+    } catch {
+      return false;
+    }
   });
   const [gateEmail, setGateEmail] = useState("");
   const [gateName, setGateName] = useState("");
   const [gateSubmitting, setGateSubmitting] = useState(false);
   const captureEmailMutation = trpc.leads.captureRoadmapEmail.useMutation({
-    onSuccess: () => { setEmailGateUnlocked(true); },
-    onError: () => { setEmailGateUnlocked(true); }, // unlock anyway on error
+    onSuccess: () => {
+      setEmailGateUnlocked(true);
+    },
+    onError: () => {
+      setEmailGateUnlocked(true);
+    }, // unlock anyway on error
   });
 
   // Try to load cached result from sessionStorage (set by Quiz.tsx on submit)
@@ -166,7 +218,9 @@ export default function Results() {
     try {
       const raw = sessionStorage.getItem(`quiz_result_${leadId}`);
       return raw ? JSON.parse(raw) : null;
-    } catch { return null; }
+    } catch {
+      return null;
+    }
   });
 
   const resultQuery = trpc.leads.getResult.useQuery(
@@ -180,7 +234,7 @@ export default function Results() {
     {
       enabled: !!leadId,
       // Poll every 5s until PDF is ready, stop after 12 attempts (60s)
-      refetchInterval: (q) => {
+      refetchInterval: q => {
         if (q.state.data?.pdfUrl) return false;
         if (pdfRetryCount >= 12) return false;
         return 5000;
@@ -189,8 +243,12 @@ export default function Results() {
   );
   const pdfTimedOut = !pdfQuery.data?.pdfUrl && pdfRetryCount >= 12;
   const roadmapMutation = trpc.leads.generateRoadmap.useMutation({
-    onSuccess: (data) => {
-      try { setRoadmap(JSON.parse(data.roadmap)); } catch { setRoadmapError(true); }
+    onSuccess: data => {
+      try {
+        setRoadmap(JSON.parse(data.roadmap));
+      } catch {
+        setRoadmapError(true);
+      }
     },
     onError: () => setRoadmapError(true),
   });
@@ -200,11 +258,18 @@ export default function Results() {
   const [financeName, setFinanceName] = useState("");
   const [financeEmail, setFinanceEmail] = useState("");
   const [financePhone, setFinancePhone] = useState("");
-  const [financeRoute, setFinanceRoute] = useState<"integrated" | "modular" | "unsure">("unsure");
-  const [financeBudget, setFinanceBudget] = useState<"under50k" | "50k_80k" | "80k_100k" | "over100k" | "unsure">("unsure");
+  const [financeRoute, setFinanceRoute] = useState<
+    "integrated" | "modular" | "unsure"
+  >("unsure");
+  const [financeBudget, setFinanceBudget] = useState<
+    "under50k" | "50k_80k" | "80k_100k" | "over100k" | "unsure"
+  >("unsure");
   const [financeConsent, setFinanceConsent] = useState(false);
   const submitFinanceInterest = trpc.finance.submitInterest.useMutation({
-    onSuccess: () => { setFinanceSubmitted(true); toast.success("We'll be in touch with finance guidance."); },
+    onSuccess: () => {
+      setFinanceSubmitted(true);
+      toast.success("We'll be in touch with finance guidance.");
+    },
     onError: () => toast.error("Something went wrong. Please try again."),
   });
 
@@ -212,11 +277,21 @@ export default function Results() {
   const activeResult = resultQuery.data ?? cachedResult;
 
   useEffect(() => {
-    if (activeResult && !roadmap && !roadmapMutation.isPending && !roadmapMutation.isSuccess) {
+    if (
+      activeResult &&
+      !roadmap &&
+      !roadmapMutation.isPending &&
+      !roadmapMutation.isSuccess
+    ) {
       const cached = (activeResult.lead as any).aiRoadmap;
       if (cached) {
-        try { setRoadmap(JSON.parse(cached)); } catch {
-          roadmapMutation.mutate({ leadId, leadData: activeResult.lead as any });
+        try {
+          setRoadmap(JSON.parse(cached));
+        } catch {
+          roadmapMutation.mutate({
+            leadId,
+            leadData: activeResult.lead as any,
+          });
         }
       } else {
         // Pass lead data as fallback so server can generate roadmap without DB
@@ -232,7 +307,11 @@ export default function Results() {
 
   const toggleSchool = (id: number) => {
     setSelectedSchoolIds(prev =>
-      prev.includes(id) ? prev.filter(s => s !== id) : prev.length < 3 ? [...prev, id] : prev
+      prev.includes(id)
+        ? prev.filter(s => s !== id)
+        : prev.length < 3
+          ? [...prev, id]
+          : prev
     );
   };
 
@@ -259,11 +338,21 @@ export default function Results() {
           noindex
         />
         <PublicNav />
-        <main className="flex-1 flex items-center justify-center py-20" style={{ background: "oklch(0.10 0.01 240)" }}>
+        <main
+          className="flex-1 flex items-center justify-center py-20"
+          style={{ background: "oklch(0.10 0.01 240)" }}
+        >
           <div className="text-center">
-            <Loader2 className="w-10 h-10 animate-spin mx-auto mb-4" style={{ color: "oklch(0.55 0.18 240)" }} />
-            <p className="font-semibold text-white mb-1">Calculating your AviatorIQ Score…</p>
-            <p className="text-sm" style={{ color: "oklch(0.6 0 0)" }}>Analysing your profile and matching training routes.</p>
+            <Loader2
+              className="w-10 h-10 animate-spin mx-auto mb-4"
+              style={{ color: "oklch(0.55 0.18 240)" }}
+            />
+            <p className="font-semibold text-white mb-1">
+              Calculating your AviatorIQ Score…
+            </p>
+            <p className="text-sm" style={{ color: "oklch(0.6 0 0)" }}>
+              Analysing your profile and matching training routes.
+            </p>
           </div>
         </main>
         <PublicFooter />
@@ -272,22 +361,57 @@ export default function Results() {
   }
 
   const { lead, matchedSchools } = activeResult as any;
-  const dimensions = (activeResult as unknown as { dimensions?: Dimensions }).dimensions;
-  const labels = (activeResult as unknown as { labels?: DimensionLabels }).labels;
-  const nextAction = (activeResult as unknown as { nextAction?: string }).nextAction;
-  const biggestRisk = (activeResult as unknown as { biggestRisk?: string }).biggestRisk;
-  const estimatedCostRange = (activeResult as unknown as { estimatedCostRange?: string }).estimatedCostRange;
-  const estimatedTimeline = (activeResult as unknown as { estimatedTimeline?: string }).estimatedTimeline;
-  const recommendedRoute = (activeResult as unknown as { recommendedRoute?: string }).recommendedRoute;
+  const dimensions = (activeResult as unknown as { dimensions?: Dimensions })
+    .dimensions;
+  const labels = (activeResult as unknown as { labels?: DimensionLabels })
+    .labels;
+  const nextAction = (activeResult as unknown as { nextAction?: string })
+    .nextAction;
+  const biggestRisk = (activeResult as unknown as { biggestRisk?: string })
+    .biggestRisk;
+  const estimatedCostRange = (
+    activeResult as unknown as { estimatedCostRange?: string }
+  ).estimatedCostRange;
+  const estimatedTimeline = (
+    activeResult as unknown as { estimatedTimeline?: string }
+  ).estimatedTimeline;
+  const recommendedRoute = (
+    activeResult as unknown as { recommendedRoute?: string }
+  ).recommendedRoute;
 
   const isGenerating = roadmapMutation.isPending || (!roadmap && !roadmapError);
 
   const dimensionConfig = [
-    { key: "readiness" as const, label: "Readiness", icon: <Clock className="w-4 h-4" />, color: "text-blue-500" },
-    { key: "finance" as const, label: "Finance", icon: <Banknote className="w-4 h-4" />, color: "text-green-500" },
-    { key: "medical" as const, label: "Medical", icon: <Heart className="w-4 h-4" />, color: "text-red-500" },
-    { key: "career" as const, label: "Career Clarity", icon: <Briefcase className="w-4 h-4" />, color: "text-purple-500" },
-    { key: "pathway" as const, label: "Pathway Match", icon: <Map className="w-4 h-4" />, color: "text-indigo-500" },
+    {
+      key: "readiness" as const,
+      label: "Readiness",
+      icon: <Clock className="w-4 h-4" />,
+      color: "text-blue-500",
+    },
+    {
+      key: "finance" as const,
+      label: "Finance",
+      icon: <Banknote className="w-4 h-4" />,
+      color: "text-green-500",
+    },
+    {
+      key: "medical" as const,
+      label: "Medical",
+      icon: <Heart className="w-4 h-4" />,
+      color: "text-red-500",
+    },
+    {
+      key: "career" as const,
+      label: "Career Clarity",
+      icon: <Briefcase className="w-4 h-4" />,
+      color: "text-purple-500",
+    },
+    {
+      key: "pathway" as const,
+      label: "Pathway Match",
+      icon: <Map className="w-4 h-4" />,
+      color: "text-indigo-500",
+    },
   ];
 
   return (
@@ -299,39 +423,82 @@ export default function Results() {
       />
       <PublicNav />
       <main className="flex-1" style={{ background: "oklch(0.10 0.01 240)" }}>
-
         {/* ── Mission Control Hero ── */}
         <div className="bg-hero relative overflow-hidden">
           {/* Radar grid */}
-          <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: "linear-gradient(oklch(1 0 0 / 1) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 1) 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-10" style={{ background: "radial-gradient(circle, oklch(0.65 0.18 230) 0%, transparent 70%)", transform: "translate(30%, -30%)" }} />
+          <div
+            className="absolute inset-0 opacity-[0.05]"
+            style={{
+              backgroundImage:
+                "linear-gradient(oklch(1 0 0 / 1) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 1) 1px, transparent 1px)",
+              backgroundSize: "40px 40px",
+            }}
+          />
+          <div
+            className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-10"
+            style={{
+              background:
+                "radial-gradient(circle, oklch(0.65 0.18 230) 0%, transparent 70%)",
+              transform: "translate(30%, -30%)",
+            }}
+          />
 
           <div className="container relative py-10 md:py-14">
             {/* Status bar */}
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-[var(--color-cockpit-green)] animate-pulse" />
-                <span className="text-white/50 text-xs font-semibold uppercase tracking-widest">Assessment Complete</span>
+                <span className="text-white/50 text-xs font-semibold uppercase tracking-widest">
+                  Assessment Complete
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 {pdfQuery.data?.pdfUrl ? (
-                  <a href={pdfQuery.data.pdfUrl} target="_blank" rel="noopener noreferrer"
+                  <a
+                    href={pdfQuery.data.pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/70 hover:text-white text-xs font-medium transition-colors no-underline"
-                    style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)" }}>
+                    style={{
+                      background: "oklch(1 0 0 / 0.08)",
+                      border: "1px solid oklch(1 0 0 / 0.15)",
+                    }}
+                  >
                     <FileDown className="w-3.5 h-3.5" />
                     Download PDF
                   </a>
                 ) : pdfTimedOut ? (
-                  <button
-                    onClick={() => { setPdfRetryCount(0); pdfQuery.refetch(); }}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-amber-400/80 hover:text-amber-300 text-xs font-medium transition-colors"
-                    style={{ background: "oklch(0.72 0.18 65 / 0.1)", border: "1px solid oklch(0.72 0.18 65 / 0.25)" }}>
-                    <AlertTriangle className="w-3 h-3" />
-                    Retry PDF
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <span
+                      className="text-white/40 text-xs"
+                      title="PDF generation is temporarily unavailable. Your roadmap is still accessible on this page."
+                    >
+                      <AlertTriangle className="w-3 h-3 inline mr-1 text-amber-400/60" />
+                      PDF unavailable
+                    </span>
+                    <button
+                      onClick={() => {
+                        setPdfRetryCount(0);
+                        pdfQuery.refetch();
+                      }}
+                      className="inline-flex items-center gap-1 px-2 py-1 rounded text-amber-400/70 hover:text-amber-300 text-xs font-medium transition-colors"
+                      style={{
+                        background: "oklch(0.72 0.18 65 / 0.08)",
+                        border: "1px solid oklch(0.72 0.18 65 / 0.2)",
+                      }}
+                      title="Try generating the PDF again"
+                    >
+                      Retry
+                    </button>
+                  </div>
                 ) : (
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/60 text-xs"
-                    style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
+                  <div
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/60 text-xs"
+                    style={{
+                      background: "oklch(1 0 0 / 0.05)",
+                      border: "1px solid oklch(1 0 0 / 0.08)",
+                    }}
+                  >
                     <Loader2 className="w-3 h-3 animate-spin" />
                     Generating PDF…
                   </div>
@@ -341,23 +508,47 @@ export default function Results() {
 
             {/* Main instrument panel */}
             <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-6 items-start">
-
               {/* Score gauge */}
               <div className="flex flex-col items-center gap-3 animate-scale-in">
                 <div className="relative w-40 h-40">
-                  <svg className="w-full h-full -rotate-90" viewBox="0 0 160 160">
-                    <circle cx="80" cy="80" r="66" fill="none" stroke="rgba(255,255,255,0.07)" strokeWidth="12" />
+                  <svg
+                    className="w-full h-full -rotate-90"
+                    viewBox="0 0 160 160"
+                  >
                     <circle
-                      cx="80" cy="80" r="66" fill="none"
-                      stroke={lead.leadScore >= 85 ? "oklch(0.72 0.2 145)" : lead.leadScore >= 55 ? "oklch(0.78 0.18 75)" : "oklch(0.65 0.18 230)"}
-                      strokeWidth="12" strokeLinecap="round"
+                      cx="80"
+                      cy="80"
+                      r="66"
+                      fill="none"
+                      stroke="rgba(255,255,255,0.07)"
+                      strokeWidth="12"
+                    />
+                    <circle
+                      cx="80"
+                      cy="80"
+                      r="66"
+                      fill="none"
+                      stroke={
+                        lead.leadScore >= 85
+                          ? "oklch(0.72 0.2 145)"
+                          : lead.leadScore >= 55
+                            ? "oklch(0.78 0.18 75)"
+                            : "oklch(0.65 0.18 230)"
+                      }
+                      strokeWidth="12"
+                      strokeLinecap="round"
                       strokeDasharray={`${2 * Math.PI * 66}`}
                       strokeDashoffset={`${2 * Math.PI * 66 * (1 - lead.leadScore / 100)}`}
-                      style={{ transition: "stroke-dashoffset 1.4s cubic-bezier(0.23,1,0.32,1)" }}
+                      style={{
+                        transition:
+                          "stroke-dashoffset 1.4s cubic-bezier(0.23,1,0.32,1)",
+                      }}
                     />
                   </svg>
                   <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <span className="text-5xl font-black text-white leading-none">{lead.leadScore}</span>
+                    <span className="text-5xl font-black text-white leading-none">
+                      {lead.leadScore}
+                    </span>
                     <span className="text-white/60 text-xs mt-1">/ 100</span>
                   </div>
                 </div>
@@ -365,7 +556,9 @@ export default function Results() {
                   <div className="flex justify-center mb-1">
                     <CategoryBadge category={lead.leadCategory} />
                   </div>
-                  <p className="text-white/65 text-xs text-center">AviatorIQ Score</p>
+                  <p className="text-white/65 text-xs text-center">
+                    AviatorIQ Score
+                  </p>
                 </div>
               </div>
 
@@ -379,46 +572,101 @@ export default function Results() {
                     {lead.leadCategory === "Hot"
                       ? "Strong readiness across all dimensions. You're positioned to begin serious training conversations."
                       : lead.leadCategory === "Warm"
-                      ? "Building solid foundations. A few key areas to develop before you're flight-ready."
-                      : "Exploration phase — exactly where most pilots start. Your roadmap is below."}
+                        ? "Building solid foundations. A few key areas to develop before you're flight-ready."
+                        : "Exploration phase — exactly where most pilots start. Your roadmap is below."}
                   </p>
                 </div>
 
                 {/* 4-tile instrument panel */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5">
                   {[
-                    { label: "Biggest Risk", value: biggestRisk ?? "—", color: "oklch(0.78 0.18 25)", icon: <AlertTriangle className="w-3.5 h-3.5" /> },
-                    { label: "Best Route", value: recommendedRoute ?? "—", color: "oklch(0.65 0.18 230)", icon: <Plane className="w-3.5 h-3.5" /> },
-                    { label: "Est. Cost", value: estimatedCostRange ? estimatedCostRange.split("–")[0].trim() + "–" + (estimatedCostRange.split("–")[1] ?? "").trim() : "—", color: "oklch(0.72 0.2 145)", icon: <Banknote className="w-3.5 h-3.5" /> },
-                    { label: "Timeline", value: estimatedTimeline ?? "—", color: "oklch(0.75 0.12 290)", icon: <Clock className="w-3.5 h-3.5" /> },
-                  ].map((tile) => (
+                    {
+                      label: "Biggest Risk",
+                      value: biggestRisk ?? "—",
+                      color: "oklch(0.78 0.18 25)",
+                      icon: <AlertTriangle className="w-3.5 h-3.5" />,
+                    },
+                    {
+                      label: "Best Route",
+                      value: recommendedRoute ?? "—",
+                      color: "oklch(0.65 0.18 230)",
+                      icon: <Plane className="w-3.5 h-3.5" />,
+                    },
+                    {
+                      label: "Est. Cost",
+                      value: estimatedCostRange
+                        ? estimatedCostRange.split("–")[0].trim() +
+                          "–" +
+                          (estimatedCostRange.split("–")[1] ?? "").trim()
+                        : "—",
+                      color: "oklch(0.72 0.2 145)",
+                      icon: <Banknote className="w-3.5 h-3.5" />,
+                    },
+                    {
+                      label: "Timeline",
+                      value: estimatedTimeline ?? "—",
+                      color: "oklch(0.75 0.12 290)",
+                      icon: <Clock className="w-3.5 h-3.5" />,
+                    },
+                  ].map(tile => (
                     <div key={tile.label} className="stat-tile">
-                      <div className="flex items-center gap-1.5 mb-1.5" style={{ color: tile.color }}>
+                      <div
+                        className="flex items-center gap-1.5 mb-1.5"
+                        style={{ color: tile.color }}
+                      >
                         {tile.icon}
-                        <span className="text-[10px] font-semibold uppercase tracking-wider text-white/60">{tile.label}</span>
+                        <span className="text-[10px] font-semibold uppercase tracking-wider text-white/60">
+                          {tile.label}
+                        </span>
                       </div>
-                      <div className="text-white font-display font-bold text-sm leading-tight">{tile.value}</div>
+                      <div className="text-white font-display font-bold text-sm leading-tight">
+                        {tile.value}
+                      </div>
                     </div>
                   ))}
                 </div>
 
                 {/* Share row */}
                 <div className="flex flex-wrap items-center gap-2 pt-1">
-                  <span className="text-white/60 text-xs font-medium uppercase tracking-wide">Share</span>
+                  <span className="text-white/60 text-xs font-medium uppercase tracking-wide">
+                    Share
+                  </span>
                   <a
-                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent('Could you actually become an airline pilot? I just took the AviatorIQ assessment to find out. ✈️')}&url=${encodeURIComponent(window.location.origin + '/quiz')}`}
-                    target="_blank" rel="noopener noreferrer"
+                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("Could you actually become an airline pilot? I just took the AviatorIQ assessment to find out. ✈️")}&url=${encodeURIComponent(window.location.origin + "/quiz")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/70 hover:text-white text-xs font-medium transition-colors no-underline"
-                    style={{ background: "oklch(0 0 0 / 0.3)", border: "1px solid oklch(1 0 0 / 0.15)" }}>
-                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    style={{
+                      background: "oklch(0 0 0 / 0.3)",
+                      border: "1px solid oklch(1 0 0 / 0.15)",
+                    }}
+                  >
+                    <svg
+                      className="w-3.5 h-3.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
                     Share on X
                   </a>
                   <a
-                    href={`https://wa.me/?text=${encodeURIComponent('Could you actually become an airline pilot? I just took the AviatorIQ assessment to find out: ' + window.location.origin + '/quiz ✈️')}`}
-                    target="_blank" rel="noopener noreferrer"
+                    href={`https://wa.me/?text=${encodeURIComponent("Could you actually become an airline pilot? I just took the AviatorIQ assessment to find out: " + window.location.origin + "/quiz ✈️")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/70 hover:text-white text-xs font-medium transition-colors no-underline"
-                    style={{ background: "oklch(0.45 0.18 145 / 0.4)", border: "1px solid oklch(1 0 0 / 0.15)" }}>
-                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    style={{
+                      background: "oklch(0.45 0.18 145 / 0.4)",
+                      border: "1px solid oklch(1 0 0 / 0.15)",
+                    }}
+                  >
+                    <svg
+                      className="w-3.5 h-3.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
                     WhatsApp
                   </a>
                 </div>
@@ -428,32 +676,96 @@ export default function Results() {
         </div>
 
         <div className="container max-w-3xl py-10 px-4 space-y-6">
-
           {/* ── Quick summary cards ── */}
-          {(recommendedRoute || estimatedCostRange || estimatedTimeline || biggestRisk) && (
+          {(recommendedRoute ||
+            estimatedCostRange ||
+            estimatedTimeline ||
+            biggestRisk) && (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 animate-fade-in-up">
               {[
-                { icon: <Plane className="w-4 h-4" />, label: "Recommended Route", value: recommendedRoute },
-                { icon: <Banknote className="w-4 h-4" />, label: "Estimated Cost", value: estimatedCostRange ?? undefined },
-                { icon: <Clock className="w-4 h-4" />, label: "Timeline", value: estimatedTimeline },
-                { icon: <AlertTriangle className="w-4 h-4" />, label: "Biggest Risk", value: biggestRisk },
-              ].filter(c => c.value).map((item, i) => (
-                <div key={i} className="rounded-xl p-4 text-center" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
-                  <div className="flex justify-center mb-2" style={{ color: "oklch(0.65 0.18 240)" }}>{item.icon}</div>
-                  <p className="text-xs mb-1" style={{ color: "oklch(0.55 0 0)" }}>{item.label}</p>
-                  <p className="text-sm font-bold text-white leading-tight">{item.value}</p>
-                </div>
-              ))}
+                {
+                  icon: <Plane className="w-4 h-4" />,
+                  label: "Recommended Route",
+                  value: recommendedRoute,
+                },
+                {
+                  icon: <Banknote className="w-4 h-4" />,
+                  label: "Estimated Cost",
+                  value: estimatedCostRange ?? undefined,
+                },
+                {
+                  icon: <Clock className="w-4 h-4" />,
+                  label: "Timeline",
+                  value: estimatedTimeline,
+                },
+                {
+                  icon: <AlertTriangle className="w-4 h-4" />,
+                  label: "Biggest Risk",
+                  value: biggestRisk,
+                },
+              ]
+                .filter(c => c.value)
+                .map((item, i) => (
+                  <div
+                    key={i}
+                    className="rounded-xl p-4 text-center"
+                    style={{
+                      background: "oklch(1 0 0 / 0.04)",
+                      border: "1px solid oklch(1 0 0 / 0.1)",
+                    }}
+                  >
+                    <div
+                      className="flex justify-center mb-2"
+                      style={{ color: "oklch(0.65 0.18 240)" }}
+                    >
+                      {item.icon}
+                    </div>
+                    <p
+                      className="text-xs mb-1"
+                      style={{ color: "oklch(0.55 0 0)" }}
+                    >
+                      {item.label}
+                    </p>
+                    <p className="text-sm font-bold text-white leading-tight">
+                      {item.value}
+                    </p>
+                  </div>
+                ))}
             </div>
           )}
 
           {/* ── Matched Schools + Request Introduction ── */}
-          <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
-            <h2 className="font-display font-bold text-white text-xl mb-1">Matched Flight Schools</h2>
+          <div
+            className="rounded-2xl p-6 animate-fade-in-up"
+            style={{
+              background: "oklch(1 0 0 / 0.04)",
+              border: "1px solid oklch(1 0 0 / 0.1)",
+            }}
+          >
+            <h2 className="font-display font-bold text-white text-xl mb-1">
+              Matched Flight Schools
+            </h2>
+            {(activeResult as any).schoolsAreGlobal && (
+              <div
+                className="flex items-start gap-2 mb-3 px-3 py-2.5 rounded-xl text-xs"
+                style={{
+                  background: "oklch(0.72 0.18 65 / 0.08)",
+                  border: "1px solid oklch(0.72 0.18 65 / 0.2)",
+                  color: "oklch(0.72 0.18 65)",
+                }}
+              >
+                <Globe className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" />
+                <span>
+                  We’re still building our {lead.country} directory — these are
+                  our top-rated schools worldwide that match your training
+                  route.
+                </span>
+              </div>
+            )}
             <p className="text-sm mb-5" style={{ color: "oklch(0.65 0 0)" }}>
               {matchedSchools.length > 0
-                ? `We found ${matchedSchools.length} school${matchedSchools.length !== 1 ? "s" : ""} that match your profile. Select up to 3 and request an introduction — we'll make the connection on your behalf.`
-                : "We're expanding our school network. Your profile has been saved and we'll notify you when suitable schools are added."}
+                ? `We found ${matchedSchools.length} school${matchedSchools.length !== 1 ? "s" : ""} that match your profile. Select up to 3 and request an introduction — we’ll make the connection on your behalf.`
+                : "We’re expanding our school network. Your profile has been saved and we’ll notify you when suitable schools are added."}
             </p>
 
             {matchedSchools.length > 0 ? (
@@ -461,82 +773,197 @@ export default function Results() {
                 <div className="space-y-3 mb-5">
                   {(matchedSchools as FlightSchool[]).map((school, idx) => {
                     const isSelected = selectedSchoolIds.includes(school.id);
-                    const isDisabled = !isSelected && selectedSchoolIds.length >= 3;
+                    const isDisabled =
+                      !isSelected && selectedSchoolIds.length >= 3;
                     const isTopPick = idx === 0;
                     return (
                       <div
                         key={school.id}
-                        onClick={() => !introSubmitted && !isDisabled && toggleSchool(school.id)}
+                        onClick={() =>
+                          !introSubmitted &&
+                          !isDisabled &&
+                          toggleSchool(school.id)
+                        }
                         className={`rounded-2xl transition-all cursor-pointer ${
-                          introSubmitted ? "opacity-60 cursor-default" :
-                          isDisabled ? "opacity-40 cursor-not-allowed" : "hover:scale-[1.01]"
+                          introSubmitted
+                            ? "opacity-60 cursor-default"
+                            : isDisabled
+                              ? "opacity-40 cursor-not-allowed"
+                              : "hover:scale-[1.01]"
                         }`}
                         style={{
                           border: isSelected
                             ? "1.5px solid oklch(0.55 0.18 240)"
                             : isTopPick
-                            ? "1.5px solid oklch(0.72 0.18 65 / 0.5)"
-                            : "1px solid oklch(1 0 0 / 0.1)",
+                              ? "1.5px solid oklch(0.72 0.18 65 / 0.5)"
+                              : "1px solid oklch(1 0 0 / 0.1)",
                           background: isSelected
                             ? "oklch(0.55 0.18 240 / 0.1)"
                             : "oklch(1 0 0 / 0.04)",
-                          boxShadow: isSelected ? "0 0 0 3px oklch(0.55 0.18 240 / 0.15)" : isTopPick ? "0 0 0 1px oklch(0.72 0.18 65 / 0.1)" : "none",
+                          boxShadow: isSelected
+                            ? "0 0 0 3px oklch(0.55 0.18 240 / 0.15)"
+                            : isTopPick
+                              ? "0 0 0 1px oklch(0.72 0.18 65 / 0.1)"
+                              : "none",
                         }}
                       >
                         {/* Top pick banner */}
                         {isTopPick && !introSubmitted && (
                           <div className="flex items-center gap-1.5 px-4 pt-3 pb-0">
-                            <Flame className="w-3 h-3" style={{ color: "oklch(0.72 0.18 65)" }} />
-                            <span className="text-xs font-bold uppercase tracking-wider" style={{ color: "oklch(0.72 0.18 65)" }}>Top match for your profile</span>
+                            <Flame
+                              className="w-3 h-3"
+                              style={{ color: "oklch(0.72 0.18 65)" }}
+                            />
+                            <span
+                              className="text-xs font-bold uppercase tracking-wider"
+                              style={{ color: "oklch(0.72 0.18 65)" }}
+                            >
+                              Top match for your profile
+                            </span>
                           </div>
                         )}
                         <div className="flex items-start gap-3 p-4">
                           <Checkbox
                             checked={isSelected}
                             disabled={introSubmitted || isDisabled}
-                            onCheckedChange={() => !introSubmitted && !isDisabled && toggleSchool(school.id)}
+                            onCheckedChange={() =>
+                              !introSubmitted &&
+                              !isDisabled &&
+                              toggleSchool(school.id)
+                            }
                             className="mt-1 flex-shrink-0"
-                            onClick={(e) => e.stopPropagation()}
+                            onClick={e => e.stopPropagation()}
                           />
                           <div className="flex-1 min-w-0">
                             {/* School name + badges row */}
                             <div className="flex items-start justify-between gap-2 flex-wrap">
-                              <h3 className="font-display font-bold text-white text-base leading-tight">{school.name}</h3>
+                              <h3 className="font-display font-bold text-white text-base leading-tight">
+                                {school.name}
+                              </h3>
                               <div className="flex items-center gap-1.5 flex-wrap flex-shrink-0">
                                 {school.financeAvailable === "yes" && (
-                                  <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ background: "oklch(0.45 0.18 145 / 0.2)", color: "oklch(0.75 0.18 145)", border: "1px solid oklch(0.45 0.18 145 / 0.3)" }}>Finance</span>
+                                  <span
+                                    className="text-xs px-2 py-0.5 rounded-full font-medium"
+                                    style={{
+                                      background: "oklch(0.45 0.18 145 / 0.2)",
+                                      color: "oklch(0.75 0.18 145)",
+                                      border:
+                                        "1px solid oklch(0.45 0.18 145 / 0.3)",
+                                    }}
+                                  >
+                                    Finance
+                                  </span>
                                 )}
                                 {school.accommodationAvailable === "yes" && (
-                                  <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ background: "oklch(0.55 0.18 240 / 0.15)", color: "oklch(0.75 0.15 240)", border: "1px solid oklch(0.55 0.18 240 / 0.25)" }}>Accommodation</span>
+                                  <span
+                                    className="text-xs px-2 py-0.5 rounded-full font-medium"
+                                    style={{
+                                      background: "oklch(0.55 0.18 240 / 0.15)",
+                                      color: "oklch(0.75 0.15 240)",
+                                      border:
+                                        "1px solid oklch(0.55 0.18 240 / 0.25)",
+                                    }}
+                                  >
+                                    Accommodation
+                                  </span>
                                 )}
                               </div>
                             </div>
                             {/* Location + price */}
-                            <p className="text-xs mt-1 flex items-center gap-1" style={{ color: "oklch(0.6 0 0)" }}>
+                            <p
+                              className="text-xs mt-1 flex items-center gap-1"
+                              style={{ color: "oklch(0.6 0 0)" }}
+                            >
                               <MapPin className="w-3 h-3 flex-shrink-0" />
-                              <span>{[school.city, school.country].filter(Boolean).join(", ")}</span>
+                              <span>
+                                {[school.city, school.country]
+                                  .filter(Boolean)
+                                  .join(", ")}
+                              </span>
                               {school.priceRange && (
-                                <><span className="mx-1 opacity-30">·</span><span className="font-medium" style={{ color: "oklch(0.72 0.18 65)" }}>{convertPriceString(school.priceRange, formatPrice)}{currency.code !== "GBP" ? ` (${currency.code})` : ""}</span></>
+                                <>
+                                  <span className="mx-1 opacity-30">·</span>
+                                  <span
+                                    className="font-medium"
+                                    style={{ color: "oklch(0.72 0.18 65)" }}
+                                  >
+                                    {convertPriceString(
+                                      school.priceRange,
+                                      formatPrice
+                                    )}
+                                    {currency.code !== "GBP"
+                                      ? ` (${currency.code})`
+                                      : ""}
+                                  </span>
+                                </>
                               )}
                             </p>
                             {/* Description */}
                             {school.description && (
-                              <p className="text-xs mt-2 leading-relaxed" style={{ color: "oklch(0.65 0.02 240)" }}>
+                              <p
+                                className="text-xs mt-2 leading-relaxed"
+                                style={{ color: "oklch(0.65 0.02 240)" }}
+                              >
                                 {school.description}
                               </p>
                             )}
                             {/* Airline partnerships */}
-                            {school.airlinePartnerships && school.airlinePartnerships !== "NULL" && (
-                              <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: "oklch(0.55 0 0)" }}>
-                                <Plane className="w-3 h-3 flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }} />
-                                <span><span className="font-medium" style={{ color: "oklch(0.72 0.18 65)" }}>Airline partners:</span> {school.airlinePartnerships}</span>
-                              </p>
-                            )}
+                            {school.airlinePartnerships &&
+                              school.airlinePartnerships !== "NULL" && (
+                                <p
+                                  className="text-xs mt-1.5 flex items-center gap-1"
+                                  style={{ color: "oklch(0.55 0 0)" }}
+                                >
+                                  <Plane
+                                    className="w-3 h-3 flex-shrink-0"
+                                    style={{ color: "oklch(0.72 0.18 65)" }}
+                                  />
+                                  <span>
+                                    <span
+                                      className="font-medium"
+                                      style={{ color: "oklch(0.72 0.18 65)" }}
+                                    >
+                                      Airline partners:
+                                    </span>{" "}
+                                    {school.airlinePartnerships}
+                                  </span>
+                                </p>
+                              )}
                             {/* Course tags */}
                             <div className="flex gap-1 mt-2 flex-wrap">
-                              {school.integratedAtpl && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "oklch(0.55 0.18 240 / 0.15)", color: "oklch(0.75 0.15 240)" }}>Integrated ATPL</span>}
-                              {school.modularAtpl && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "oklch(0.55 0.18 290 / 0.15)", color: "oklch(0.75 0.15 290)" }}>Modular ATPL</span>}
-                              {school.ppl && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "oklch(0.45 0.18 145 / 0.15)", color: "oklch(0.75 0.18 145)" }}>PPL</span>}
+                              {school.integratedAtpl && (
+                                <span
+                                  className="text-xs px-2 py-0.5 rounded-full"
+                                  style={{
+                                    background: "oklch(0.55 0.18 240 / 0.15)",
+                                    color: "oklch(0.75 0.15 240)",
+                                  }}
+                                >
+                                  Integrated ATPL
+                                </span>
+                              )}
+                              {school.modularAtpl && (
+                                <span
+                                  className="text-xs px-2 py-0.5 rounded-full"
+                                  style={{
+                                    background: "oklch(0.55 0.18 290 / 0.15)",
+                                    color: "oklch(0.75 0.15 290)",
+                                  }}
+                                >
+                                  Modular ATPL
+                                </span>
+                              )}
+                              {school.ppl && (
+                                <span
+                                  className="text-xs px-2 py-0.5 rounded-full"
+                                  style={{
+                                    background: "oklch(0.45 0.18 145 / 0.15)",
+                                    color: "oklch(0.75 0.18 145)",
+                                  }}
+                                >
+                                  PPL
+                                </span>
+                              )}
                             </div>
                             {/* Visit website link */}
                             {school.website && (
@@ -544,7 +971,7 @@ export default function Results() {
                                 href={school.website}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                onClick={(e) => e.stopPropagation()}
+                                onClick={e => e.stopPropagation()}
                                 className="inline-flex items-center gap-1 text-xs mt-2 font-medium no-underline transition-opacity hover:opacity-80"
                                 style={{ color: "oklch(0.65 0.18 240)" }}
                               >
@@ -567,35 +994,74 @@ export default function Results() {
                     </p>
                     <Button
                       onClick={handleRequestIntros}
-                      disabled={selectedSchoolIds.length === 0 || requestIntros.isPending}
+                      disabled={
+                        selectedSchoolIds.length === 0 ||
+                        requestIntros.isPending
+                      }
                       className="w-full btn-cta"
                       size="lg"
                     >
                       {requestIntros.isPending ? (
-                        <><Loader2 className="w-4 h-4 mr-2 animate-spin" /> Sending requests…</>
+                        <>
+                          <Loader2 className="w-4 h-4 mr-2 animate-spin" />{" "}
+                          Sending requests…
+                        </>
                       ) : (
-                        <><School className="w-4 h-4 mr-2" /> Request Introductions ({selectedSchoolIds.length})</>
+                        <>
+                          <School className="w-4 h-4 mr-2" /> Request
+                          Introductions ({selectedSchoolIds.length})
+                        </>
                       )}
                     </Button>
                   </div>
                 ) : (
-                  <div className="flex items-center gap-3 p-4 rounded-xl" style={{ background: "oklch(0.45 0.18 145 / 0.15)", border: "1px solid oklch(0.45 0.18 145 / 0.3)" }}>
-                    <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: "oklch(0.75 0.18 145)" }} />
+                  <div
+                    className="flex items-center gap-3 p-4 rounded-xl"
+                    style={{
+                      background: "oklch(0.45 0.18 145 / 0.15)",
+                      border: "1px solid oklch(0.45 0.18 145 / 0.3)",
+                    }}
+                  >
+                    <CheckCircle2
+                      className="w-5 h-5 flex-shrink-0"
+                      style={{ color: "oklch(0.75 0.18 145)" }}
+                    />
                     <div>
-                      <p className="font-semibold text-sm" style={{ color: "oklch(0.85 0.1 145)" }}>Introduction requests sent!</p>
-                      <p className="text-xs mt-0.5" style={{ color: "oklch(0.7 0.08 145)" }}>We've notified the selected schools. Expect to hear back within 2–3 business days.</p>
+                      <p
+                        className="font-semibold text-sm"
+                        style={{ color: "oklch(0.85 0.1 145)" }}
+                      >
+                        Introduction requests sent!
+                      </p>
+                      <p
+                        className="text-xs mt-0.5"
+                        style={{ color: "oklch(0.7 0.08 145)" }}
+                      >
+                        We've notified the selected schools. Expect to hear back
+                        within 2–3 business days.
+                      </p>
                     </div>
                   </div>
                 )}
               </>
             ) : (
               <div className="text-center py-6">
-                <Globe className="w-8 h-8 mx-auto mb-3" style={{ color: "oklch(0.5 0 0)" }} />
-                <p className="font-display font-semibold text-white mb-1">Expanding our school network</p>
-                <p className="text-sm" style={{ color: "oklch(0.6 0 0)" }}>
-                  We are still adding schools that match your profile. Your results have been saved.
+                <Globe
+                  className="w-8 h-8 mx-auto mb-3"
+                  style={{ color: "oklch(0.5 0 0)" }}
+                />
+                <p className="font-display font-semibold text-white mb-1">
+                  Expanding our school network
                 </p>
-                <Link href="/schools" className="inline-flex items-center gap-1 text-sm font-semibold mt-3" style={{ color: "oklch(0.65 0.18 240)" }}>
+                <p className="text-sm" style={{ color: "oklch(0.6 0 0)" }}>
+                  We are still adding schools that match your profile. Your
+                  results have been saved.
+                </p>
+                <Link
+                  href="/schools"
+                  className="inline-flex items-center gap-1 text-sm font-semibold mt-3"
+                  style={{ color: "oklch(0.65 0.18 240)" }}
+                >
                   Browse all schools <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
@@ -604,12 +1070,26 @@ export default function Results() {
 
           {/* ── Next Action ── */}
           {nextAction && (
-            <div className="rounded-2xl p-5 animate-fade-in-up flex items-start gap-4" style={{ background: "oklch(0.55 0.18 240 / 0.1)", border: "1px solid oklch(0.55 0.18 240 / 0.25)" }}>
-              <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "oklch(0.55 0.18 240)" }}>
+            <div
+              className="rounded-2xl p-5 animate-fade-in-up flex items-start gap-4"
+              style={{
+                background: "oklch(0.55 0.18 240 / 0.1)",
+                border: "1px solid oklch(0.55 0.18 240 / 0.25)",
+              }}
+            >
+              <div
+                className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0"
+                style={{ background: "oklch(0.55 0.18 240)" }}
+              >
                 <CheckCircle2 className="w-5 h-5 text-white" />
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: "oklch(0.65 0.18 240)" }}>Your Next Action</p>
+                <p
+                  className="text-xs font-semibold uppercase tracking-wider mb-1"
+                  style={{ color: "oklch(0.65 0.18 240)" }}
+                >
+                  Your Next Action
+                </p>
                 <p className="font-semibold text-white">{nextAction}</p>
               </div>
             </div>
@@ -617,23 +1097,52 @@ export default function Results() {
 
           {/* ── 5-Dimension Score Card ── */}
           {dimensions && labels && (
-            <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
-              <h2 className="font-display font-bold text-white text-lg mb-1">Your 5-Dimension AviatorIQ Breakdown</h2>
-              <p className="text-sm mb-5" style={{ color: "oklch(0.6 0 0)" }}>Each dimension is scored 0–100 based on your answers.</p>
+            <div
+              className="rounded-2xl p-6 animate-fade-in-up"
+              style={{
+                background: "oklch(1 0 0 / 0.04)",
+                border: "1px solid oklch(1 0 0 / 0.1)",
+              }}
+            >
+              <h2 className="font-display font-bold text-white text-lg mb-1">
+                Your 5-Dimension AviatorIQ Breakdown
+              </h2>
+              <p className="text-sm mb-5" style={{ color: "oklch(0.6 0 0)" }}>
+                Each dimension is scored 0–100 based on your answers.
+              </p>
               <div className="space-y-4">
                 {dimensionConfig.map(({ key, label, icon, color }) => (
                   <div key={key} className="space-y-1.5">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <span className={color}>{icon}</span>
-                        <span className="text-sm font-semibold text-white">{label}</span>
+                        <span className="text-sm font-semibold text-white">
+                          {label}
+                        </span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="text-xs font-medium px-2 py-0.5 rounded-full" style={{
-                          background: dimensions[key] >= 70 ? "oklch(0.45 0.18 145 / 0.2)" : dimensions[key] >= 45 ? "oklch(0.72 0.18 65 / 0.2)" : "oklch(0.55 0.18 25 / 0.2)",
-                          color: dimensions[key] >= 70 ? "oklch(0.75 0.18 145)" : dimensions[key] >= 45 ? "oklch(0.82 0.18 65)" : "oklch(0.75 0.18 25)"
-                        }}>{labels[key]}</span>
-                        <span className="text-sm font-bold text-white w-8 text-right">{dimensions[key]}</span>
+                        <span
+                          className="text-xs font-medium px-2 py-0.5 rounded-full"
+                          style={{
+                            background:
+                              dimensions[key] >= 70
+                                ? "oklch(0.45 0.18 145 / 0.2)"
+                                : dimensions[key] >= 45
+                                  ? "oklch(0.72 0.18 65 / 0.2)"
+                                  : "oklch(0.55 0.18 25 / 0.2)",
+                            color:
+                              dimensions[key] >= 70
+                                ? "oklch(0.75 0.18 145)"
+                                : dimensions[key] >= 45
+                                  ? "oklch(0.82 0.18 65)"
+                                  : "oklch(0.75 0.18 25)",
+                          }}
+                        >
+                          {labels[key]}
+                        </span>
+                        <span className="text-sm font-bold text-white w-8 text-right">
+                          {dimensions[key]}
+                        </span>
                       </div>
                     </div>
                     <AnimatedBar score={dimensions[key]} />
@@ -645,17 +1154,40 @@ export default function Results() {
 
           {/* ── Finance nudge ── */}
           {lead.wantsFinanceInfo === "Yes" && (
-            <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(0.45 0.18 145 / 0.1)", border: "1px solid oklch(0.45 0.18 145 / 0.25)" }}>
+            <div
+              className="rounded-2xl p-6 animate-fade-in-up"
+              style={{
+                background: "oklch(0.45 0.18 145 / 0.1)",
+                border: "1px solid oklch(0.45 0.18 145 / 0.25)",
+              }}
+            >
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "oklch(0.45 0.18 145 / 0.3)" }}>
-                  <Banknote className="w-5 h-5" style={{ color: "oklch(0.75 0.18 145)" }} />
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
+                  style={{ background: "oklch(0.45 0.18 145 / 0.3)" }}
+                >
+                  <Banknote
+                    className="w-5 h-5"
+                    style={{ color: "oklch(0.75 0.18 145)" }}
+                  />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-display font-bold text-white mb-1">You may qualify for pilot training finance</h3>
-                  <p className="text-sm mb-3" style={{ color: "oklch(0.7 0 0)" }}>
-                    Many aspiring pilots fund their training through specialist aviation loans, career development loans, school payment plans, and airline cadet sponsorships.
+                  <h3 className="font-display font-bold text-white mb-1">
+                    You may qualify for pilot training finance
+                  </h3>
+                  <p
+                    className="text-sm mb-3"
+                    style={{ color: "oklch(0.7 0 0)" }}
+                  >
+                    Many aspiring pilots fund their training through specialist
+                    aviation loans, career development loans, school payment
+                    plans, and airline cadet sponsorships.
                   </p>
-                  <Link href="/guides/finance-guide" className="inline-flex items-center gap-1 text-sm font-semibold" style={{ color: "oklch(0.75 0.18 145)" }}>
+                  <Link
+                    href="/guides/finance-guide"
+                    className="inline-flex items-center gap-1 text-sm font-semibold"
+                    style={{ color: "oklch(0.75 0.18 145)" }}
+                  >
                     Read the Finance Guide <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
@@ -666,33 +1198,84 @@ export default function Results() {
           {/* ── Flight Plan (AI Roadmap) ── */}
           {/* Email gate: shown when user arrives directly (not via quiz) */}
           {!emailGateUnlocked ? (
-            <div className="relative rounded-2xl overflow-hidden" style={{ background: "var(--color-navy)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
+            <div
+              className="relative rounded-2xl overflow-hidden"
+              style={{
+                background: "var(--color-navy)",
+                border: "1px solid oklch(1 0 0 / 0.1)",
+              }}
+            >
               {/* Blurred preview */}
-              <div className="p-6 blur-sm pointer-events-none select-none" aria-hidden="true">
+              <div
+                className="p-6 blur-sm pointer-events-none select-none"
+                aria-hidden="true"
+              >
                 <div className="flex items-center gap-2 mb-4">
                   <Map className="w-4 h-4 text-[var(--color-gold)]" />
-                  <span className="text-white font-display font-bold text-sm uppercase tracking-widest">Flight Plan</span>
+                  <span className="text-white font-display font-bold text-sm uppercase tracking-widest">
+                    Flight Plan
+                  </span>
                 </div>
                 <div className="space-y-3">
                   {[...Array(4)].map((_, i) => (
-                    <div key={i} className="h-4 rounded" style={{ background: "oklch(1 0 0 / 0.08)", width: `${70 + (i % 3) * 10}%` }} />
+                    <div
+                      key={i}
+                      className="h-4 rounded"
+                      style={{
+                        background: "oklch(1 0 0 / 0.08)",
+                        width: `${70 + (i % 3) * 10}%`,
+                      }}
+                    />
                   ))}
                 </div>
               </div>
               {/* Gate overlay */}
-              <div className="absolute inset-0 flex items-center justify-center" style={{ background: "oklch(0.10 0.08 252 / 0.85)", backdropFilter: "blur(4px)" }}>
-                <div className="w-full max-w-sm mx-4 p-6 rounded-2xl text-center" style={{ background: "oklch(0.14 0.08 250)", border: "1px solid oklch(1 0 0 / 0.15)" }}>
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3" style={{ background: "oklch(0.72 0.18 65 / 0.15)" }}>
-                    <Map className="w-6 h-6" style={{ color: "oklch(0.85 0.15 65)" }} />
+              <div
+                className="absolute inset-0 flex items-center justify-center"
+                style={{
+                  background: "oklch(0.10 0.08 252 / 0.85)",
+                  backdropFilter: "blur(4px)",
+                }}
+              >
+                <div
+                  className="w-full max-w-sm mx-4 p-6 rounded-2xl text-center"
+                  style={{
+                    background: "oklch(0.14 0.08 250)",
+                    border: "1px solid oklch(1 0 0 / 0.15)",
+                  }}
+                >
+                  <div
+                    className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3"
+                    style={{ background: "oklch(0.72 0.18 65 / 0.15)" }}
+                  >
+                    <Map
+                      className="w-6 h-6"
+                      style={{ color: "oklch(0.85 0.15 65)" }}
+                    />
                   </div>
-                  <h3 className="font-display font-bold text-white text-lg mb-1">Unlock Your Flight Plan</h3>
-                  <p className="text-sm mb-4" style={{ color: "oklch(0.65 0.04 240)" }}>Enter your name and email to reveal your personalised AI training roadmap.</p>
-                  <form onSubmit={async (e) => {
-                    e.preventDefault();
-                    if (!gateName.trim() || !gateEmail.includes("@")) return;
-                    setGateSubmitting(true);
-                    captureEmailMutation.mutate({ leadId, name: gateName, email: gateEmail });
-                  }} className="space-y-3">
+                  <h3 className="font-display font-bold text-white text-lg mb-1">
+                    Unlock Your Flight Plan
+                  </h3>
+                  <p
+                    className="text-sm mb-4"
+                    style={{ color: "oklch(0.65 0.04 240)" }}
+                  >
+                    Enter your name and email to reveal your personalised AI
+                    training roadmap.
+                  </p>
+                  <form
+                    onSubmit={async e => {
+                      e.preventDefault();
+                      if (!gateName.trim() || !gateEmail.includes("@")) return;
+                      setGateSubmitting(true);
+                      captureEmailMutation.mutate({
+                        leadId,
+                        name: gateName,
+                        email: gateEmail,
+                      });
+                    }}
+                    className="space-y-3"
+                  >
                     <input
                       type="text"
                       value={gateName}
@@ -700,7 +1283,10 @@ export default function Results() {
                       placeholder="Your first name"
                       required
                       className="w-full px-3 py-2.5 rounded-lg text-sm outline-none text-white placeholder-white/30"
-                      style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.15)" }}
+                      style={{
+                        background: "oklch(1 0 0 / 0.06)",
+                        border: "1px solid oklch(1 0 0 / 0.15)",
+                      }}
                     />
                     <input
                       type="email"
@@ -709,27 +1295,65 @@ export default function Results() {
                       placeholder="your@email.com"
                       required
                       className="w-full px-3 py-2.5 rounded-lg text-sm outline-none text-white placeholder-white/30"
-                      style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.15)" }}
+                      style={{
+                        background: "oklch(1 0 0 / 0.06)",
+                        border: "1px solid oklch(1 0 0 / 0.15)",
+                      }}
                     />
                     <button
                       type="submit"
-                      disabled={gateSubmitting || captureEmailMutation.isPending}
+                      disabled={
+                        gateSubmitting || captureEmailMutation.isPending
+                      }
                       className="w-full py-2.5 rounded-xl text-sm font-bold text-white flex items-center justify-center gap-2"
-                      style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))", opacity: (gateSubmitting || captureEmailMutation.isPending) ? 0.7 : 1 }}
+                      style={{
+                        background:
+                          "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))",
+                        opacity:
+                          gateSubmitting || captureEmailMutation.isPending
+                            ? 0.7
+                            : 1,
+                      }}
                     >
-                      {(gateSubmitting || captureEmailMutation.isPending) ? <><Loader2 className="w-4 h-4 animate-spin" /> Unlocking…</> : <>Reveal my Flight Plan <ArrowRight className="w-4 h-4" /></>}
+                      {gateSubmitting || captureEmailMutation.isPending ? (
+                        <>
+                          <Loader2 className="w-4 h-4 animate-spin" />{" "}
+                          Unlocking…
+                        </>
+                      ) : (
+                        <>
+                          Reveal my Flight Plan{" "}
+                          <ArrowRight className="w-4 h-4" />
+                        </>
+                      )}
                     </button>
                   </form>
-                  <p className="text-xs mt-3" style={{ color: "oklch(0.45 0.04 240)" }}>No spam. Unsubscribe any time.</p>
+                  <p
+                    className="text-xs mt-3"
+                    style={{ color: "oklch(0.45 0.04 240)" }}
+                  >
+                    No spam. Unsubscribe any time.
+                  </p>
                 </div>
               </div>
             </div>
           ) : isGenerating ? (
-            <div className="rounded-2xl overflow-hidden" style={{ background: "var(--color-navy)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
-              <div className="flex items-center justify-between px-6 py-4" style={{ borderBottom: "1px solid oklch(1 0 0 / 0.1)" }}>
+            <div
+              className="rounded-2xl overflow-hidden"
+              style={{
+                background: "var(--color-navy)",
+                border: "1px solid oklch(1 0 0 / 0.1)",
+              }}
+            >
+              <div
+                className="flex items-center justify-between px-6 py-4"
+                style={{ borderBottom: "1px solid oklch(1 0 0 / 0.1)" }}
+              >
                 <div className="flex items-center gap-2">
                   <Map className="w-4 h-4 text-[var(--color-gold)]" />
-                  <span className="text-white font-display font-bold text-sm uppercase tracking-widest">Flight Plan</span>
+                  <span className="text-white font-display font-bold text-sm uppercase tracking-widest">
+                    Flight Plan
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Loader2 className="w-4 h-4 animate-spin text-[var(--color-gold)]" />
@@ -737,27 +1361,53 @@ export default function Results() {
                 </div>
               </div>
               <div className="p-8 text-center">
-                <p className="text-white/70 text-sm">Our AI is analysing your profile and preparing your personalised training plan.</p>
+                <p className="text-white/70 text-sm">
+                  Our AI is analysing your profile and preparing your
+                  personalised training plan.
+                </p>
               </div>
             </div>
           ) : roadmapError ? (
             <div className="card-base p-6 border-amber-200 bg-amber-50">
               <div className="flex items-center gap-2 text-amber-700 mb-2">
                 <AlertTriangle className="w-5 h-5" />
-                <span className="font-semibold">Flight Plan generation delayed</span>
+                <span className="font-semibold">
+                  Flight Plan generation delayed
+                </span>
               </div>
-              <p className="text-sm text-amber-600">We were unable to generate your AI roadmap right now. Your results have been saved and we will follow up with you shortly.</p>
+              <p className="text-sm text-amber-600">
+                We were unable to generate your AI roadmap right now. Your
+                results have been saved and we will follow up with you shortly.
+              </p>
             </div>
           ) : roadmap ? (
-            <div className="rounded-2xl overflow-hidden animate-fade-in-up" style={{ background: "var(--color-navy)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
+            <div
+              className="rounded-2xl overflow-hidden animate-fade-in-up"
+              style={{
+                background: "var(--color-navy)",
+                border: "1px solid oklch(1 0 0 / 0.1)",
+              }}
+            >
               {/* Header bar */}
-              <div className="flex items-center justify-between px-6 py-4" style={{ borderBottom: "1px solid oklch(1 0 0 / 0.1)" }}>
+              <div
+                className="flex items-center justify-between px-6 py-4"
+                style={{ borderBottom: "1px solid oklch(1 0 0 / 0.1)" }}
+              >
                 <div className="flex items-center gap-2">
                   <Map className="w-4 h-4 text-[var(--color-gold)]" />
-                  <span className="text-white font-display font-bold text-sm uppercase tracking-widest">Flight Plan</span>
+                  <span className="text-white font-display font-bold text-sm uppercase tracking-widest">
+                    Flight Plan
+                  </span>
                 </div>
                 {roadmap.recommendedRoute && (
-                  <span className="text-xs px-3 py-1 rounded-full font-semibold" style={{ background: "oklch(0.65 0.18 230 / 0.2)", color: "oklch(0.8 0.15 230)", border: "1px solid oklch(0.65 0.18 230 / 0.3)" }}>
+                  <span
+                    className="text-xs px-3 py-1 rounded-full font-semibold"
+                    style={{
+                      background: "oklch(0.65 0.18 230 / 0.2)",
+                      color: "oklch(0.8 0.15 230)",
+                      border: "1px solid oklch(0.65 0.18 230 / 0.3)",
+                    }}
+                  >
                     {roadmap.recommendedRoute}
                   </span>
                 )}
@@ -766,8 +1416,16 @@ export default function Results() {
               <div className="p-6 space-y-0">
                 {/* Goal summary */}
                 {roadmap.pilotGoalSummary && (
-                  <div className="mb-6 p-4 rounded-xl" style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
-                    <p className="text-white/70 text-sm leading-relaxed">{roadmap.pilotGoalSummary}</p>
+                  <div
+                    className="mb-6 p-4 rounded-xl"
+                    style={{
+                      background: "oklch(1 0 0 / 0.05)",
+                      border: "1px solid oklch(1 0 0 / 0.08)",
+                    }}
+                  >
+                    <p className="text-white/70 text-sm leading-relaxed">
+                      {roadmap.pilotGoalSummary}
+                    </p>
                   </div>
                 )}
 
@@ -775,20 +1433,45 @@ export default function Results() {
                 {(roadmap.estimatedCostMin || roadmap.estimatedDuration) && (
                   <div className="grid grid-cols-2 gap-3 mb-6">
                     {roadmap.estimatedCostMin && roadmap.estimatedCostMax && (
-                      <div className="p-4 rounded-xl" style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
-                        <div className="text-[10px] font-semibold uppercase tracking-widest text-white/60 mb-1">Est. Cost</div>
+                      <div
+                        className="p-4 rounded-xl"
+                        style={{
+                          background: "oklch(1 0 0 / 0.05)",
+                          border: "1px solid oklch(1 0 0 / 0.08)",
+                        }}
+                      >
+                        <div className="text-[10px] font-semibold uppercase tracking-widest text-white/60 mb-1">
+                          Est. Cost
+                        </div>
                         <div className="font-display font-bold text-[var(--color-gold)] text-sm">
-                          {formatPrice(roadmap.estimatedCostMin!)} – {formatPrice(roadmap.estimatedCostMax!)}
+                          {formatPrice(roadmap.estimatedCostMin!)} –{" "}
+                          {formatPrice(roadmap.estimatedCostMax!)}
                         </div>
                         {currency.code !== "GBP" && (
-                          <div className="text-[10px] text-white/60 mt-0.5">≈ £{roadmap.estimatedCostMin!.toLocaleString("en-GB")} – £{roadmap.estimatedCostMax!.toLocaleString("en-GB")} GBP</div>
+                          <div className="text-[10px] text-white/60 mt-0.5">
+                            ≈ £
+                            {roadmap.estimatedCostMin!.toLocaleString("en-GB")}{" "}
+                            – £
+                            {roadmap.estimatedCostMax!.toLocaleString("en-GB")}{" "}
+                            GBP
+                          </div>
                         )}
                       </div>
                     )}
                     {roadmap.estimatedDuration && (
-                      <div className="p-4 rounded-xl" style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
-                        <div className="text-[10px] font-semibold uppercase tracking-widest text-white/60 mb-1">Duration</div>
-                        <div className="font-display font-bold text-white text-sm">{roadmap.estimatedDuration}</div>
+                      <div
+                        className="p-4 rounded-xl"
+                        style={{
+                          background: "oklch(1 0 0 / 0.05)",
+                          border: "1px solid oklch(1 0 0 / 0.08)",
+                        }}
+                      >
+                        <div className="text-[10px] font-semibold uppercase tracking-widest text-white/60 mb-1">
+                          Duration
+                        </div>
+                        <div className="font-display font-bold text-white text-sm">
+                          {roadmap.estimatedDuration}
+                        </div>
                       </div>
                     )}
                   </div>
@@ -797,24 +1480,45 @@ export default function Results() {
                 {/* Waypoints — next steps */}
                 {roadmap.nextSteps && roadmap.nextSteps.length > 0 && (
                   <div className="mb-6">
-                    <div className="text-[10px] font-semibold uppercase tracking-widest text-white/65 mb-4">Waypoints</div>
+                    <div className="text-[10px] font-semibold uppercase tracking-widest text-white/65 mb-4">
+                      Waypoints
+                    </div>
                     <div className="relative">
                       {/* Vertical runway line */}
-                      <div className="absolute left-[18px] top-6 bottom-6 w-px" style={{ background: "linear-gradient(to bottom, oklch(0.72 0.18 65 / 0.6), oklch(0.65 0.18 230 / 0.3))" }} />
+                      <div
+                        className="absolute left-[18px] top-6 bottom-6 w-px"
+                        style={{
+                          background:
+                            "linear-gradient(to bottom, oklch(0.72 0.18 65 / 0.6), oklch(0.65 0.18 230 / 0.3))",
+                        }}
+                      />
                       <ol className="space-y-4">
                         {roadmap.nextSteps.map((step, i) => (
                           <li key={i} className="flex items-start gap-4">
                             {/* Waypoint dot */}
-                            <div className="relative z-10 w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 font-display font-black text-xs"
+                            <div
+                              className="relative z-10 w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 font-display font-black text-xs"
                               style={{
-                                background: i === 0 ? "oklch(0.72 0.18 65)" : "oklch(1 0 0 / 0.08)",
-                                border: i === 0 ? "none" : "1px solid oklch(1 0 0 / 0.15)",
-                                color: i === 0 ? "oklch(0.15 0.05 240)" : "oklch(0.8 0.05 230)",
-                              }}>
+                                background:
+                                  i === 0
+                                    ? "oklch(0.72 0.18 65)"
+                                    : "oklch(1 0 0 / 0.08)",
+                                border:
+                                  i === 0
+                                    ? "none"
+                                    : "1px solid oklch(1 0 0 / 0.15)",
+                                color:
+                                  i === 0
+                                    ? "oklch(0.15 0.05 240)"
+                                    : "oklch(0.8 0.05 230)",
+                              }}
+                            >
                               {i + 1}
                             </div>
                             <div className="flex-1 pt-1.5">
-                              <p className="text-white/85 text-sm leading-relaxed">{step}</p>
+                              <p className="text-white/85 text-sm leading-relaxed">
+                                {step}
+                              </p>
                             </div>
                           </li>
                         ))}
@@ -827,19 +1531,48 @@ export default function Results() {
                 {(roadmap.medicalAdvice || roadmap.financeConsiderations) && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                     {roadmap.medicalAdvice && (
-                      <div className="p-4 rounded-xl" style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
-                        <div className="text-[10px] font-semibold uppercase tracking-widest text-white/65 mb-2">Medical Advisory</div>
-                        <p className="text-white/70 text-xs leading-relaxed mb-2">{roadmap.medicalAdvice}</p>
-                        <Link href="/guides/class-1-medical" className="inline-flex items-center gap-1 text-[10px] font-semibold no-underline" style={{ color: "oklch(0.72 0.18 65)" }}>
-                          Class 1 Medical guide <ArrowRight className="w-2.5 h-2.5" />
+                      <div
+                        className="p-4 rounded-xl"
+                        style={{
+                          background: "oklch(1 0 0 / 0.05)",
+                          border: "1px solid oklch(1 0 0 / 0.08)",
+                        }}
+                      >
+                        <div className="text-[10px] font-semibold uppercase tracking-widest text-white/65 mb-2">
+                          Medical Advisory
+                        </div>
+                        <p className="text-white/70 text-xs leading-relaxed mb-2">
+                          {roadmap.medicalAdvice}
+                        </p>
+                        <Link
+                          href="/guides/class-1-medical"
+                          className="inline-flex items-center gap-1 text-[10px] font-semibold no-underline"
+                          style={{ color: "oklch(0.72 0.18 65)" }}
+                        >
+                          Class 1 Medical guide{" "}
+                          <ArrowRight className="w-2.5 h-2.5" />
                         </Link>
                       </div>
                     )}
                     {roadmap.financeConsiderations && (
-                      <div className="p-4 rounded-xl" style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
-                        <div className="text-[10px] font-semibold uppercase tracking-widest text-white/65 mb-2">Finance Advisory</div>
-                        <p className="text-white/70 text-xs leading-relaxed mb-2">{roadmap.financeConsiderations}</p>
-                        <Link href="/guides/finance-guide" className="inline-flex items-center gap-1 text-[10px] font-semibold no-underline" style={{ color: "oklch(0.72 0.18 65)" }}>
+                      <div
+                        className="p-4 rounded-xl"
+                        style={{
+                          background: "oklch(1 0 0 / 0.05)",
+                          border: "1px solid oklch(1 0 0 / 0.08)",
+                        }}
+                      >
+                        <div className="text-[10px] font-semibold uppercase tracking-widest text-white/65 mb-2">
+                          Finance Advisory
+                        </div>
+                        <p className="text-white/70 text-xs leading-relaxed mb-2">
+                          {roadmap.financeConsiderations}
+                        </p>
+                        <Link
+                          href="/guides/finance-guide"
+                          className="inline-flex items-center gap-1 text-[10px] font-semibold no-underline"
+                          style={{ color: "oklch(0.72 0.18 65)" }}
+                        >
                           Finance guide <ArrowRight className="w-2.5 h-2.5" />
                         </Link>
                       </div>
@@ -849,9 +1582,23 @@ export default function Results() {
 
                 {/* Disclaimer */}
                 {roadmap.disclaimer && (
-                  <div className="flex items-start gap-2 p-3 rounded-lg" style={{ background: "oklch(0.72 0.18 65 / 0.08)", border: "1px solid oklch(0.72 0.18 65 / 0.15)" }}>
-                    <AlertTriangle className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" style={{ color: "oklch(0.72 0.18 65)" }} />
-                    <p className="text-[10px] leading-relaxed" style={{ color: "oklch(0.72 0.18 65 / 0.8)" }}>{roadmap.disclaimer}</p>
+                  <div
+                    className="flex items-start gap-2 p-3 rounded-lg"
+                    style={{
+                      background: "oklch(0.72 0.18 65 / 0.08)",
+                      border: "1px solid oklch(0.72 0.18 65 / 0.15)",
+                    }}
+                  >
+                    <AlertTriangle
+                      className="w-3.5 h-3.5 flex-shrink-0 mt-0.5"
+                      style={{ color: "oklch(0.72 0.18 65)" }}
+                    />
+                    <p
+                      className="text-[10px] leading-relaxed"
+                      style={{ color: "oklch(0.72 0.18 65 / 0.8)" }}
+                    >
+                      {roadmap.disclaimer}
+                    </p>
                   </div>
                 )}
               </div>
@@ -859,88 +1606,239 @@ export default function Results() {
           ) : null}
 
           {/* ── Finance Referral Card ── */}
-          <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(0.55 0.18 240 / 0.08)", border: "1px solid oklch(0.55 0.18 240 / 0.2)" }}>
+          <div
+            className="rounded-2xl p-6 animate-fade-in-up"
+            style={{
+              background: "oklch(0.55 0.18 240 / 0.08)",
+              border: "1px solid oklch(0.55 0.18 240 / 0.2)",
+            }}
+          >
             <div className="flex items-start gap-4 mb-4">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "oklch(0.55 0.18 240)" }}>
+              <div
+                className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
+                style={{ background: "oklch(0.55 0.18 240)" }}
+              >
                 <Banknote className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h3 className="font-display font-bold text-white text-lg mb-1">Get free finance guidance</h3>
-                <p className="text-sm" style={{ color: "oklch(0.65 0 0)" }}>Funding is the biggest barrier for most aspiring pilots. Leave your details and we will connect you with specialist aviation finance guidance — no obligation, no hard sell.</p>
+                <h3 className="font-display font-bold text-white text-lg mb-1">
+                  Get free finance guidance
+                </h3>
+                <p className="text-sm" style={{ color: "oklch(0.65 0 0)" }}>
+                  Funding is the biggest barrier for most aspiring pilots. Leave
+                  your details and we will connect you with specialist aviation
+                  finance guidance — no obligation, no hard sell.
+                </p>
               </div>
             </div>
             {financeSubmitted ? (
-              <div className="flex items-center gap-2 rounded-lg p-3" style={{ background: "oklch(0.45 0.18 145 / 0.15)", color: "oklch(0.75 0.18 145)" }}>
+              <div
+                className="flex items-center gap-2 rounded-lg p-3"
+                style={{
+                  background: "oklch(0.45 0.18 145 / 0.15)",
+                  color: "oklch(0.75 0.18 145)",
+                }}
+              >
                 <CheckCircle2 className="w-5 h-5" />
-                <span className="text-sm font-semibold">Received — we will be in touch shortly.</span>
+                <span className="text-sm font-semibold">
+                  Received — we will be in touch shortly.
+                </span>
               </div>
             ) : !financeFormOpen ? (
-              <button onClick={() => setFinanceFormOpen(true)} className="btn-cta text-sm w-full sm:w-auto">
+              <button
+                onClick={() => setFinanceFormOpen(true)}
+                className="btn-cta text-sm w-full sm:w-auto"
+              >
                 Get finance guidance <ArrowRight className="w-4 h-4" />
               </button>
             ) : (
               <div className="space-y-3">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <label className="block text-xs font-semibold text-white mb-1">Your name *</label>
-                    <input value={financeName} onChange={e => setFinanceName(e.target.value)} placeholder="Full name" className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white placeholder-[oklch(0.45_0_0)]" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)" }} />
+                    <label className="block text-xs font-semibold text-white mb-1">
+                      Your name *
+                    </label>
+                    <input
+                      value={financeName}
+                      onChange={e => setFinanceName(e.target.value)}
+                      placeholder="Full name"
+                      className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white placeholder-[oklch(0.45_0_0)]"
+                      style={{
+                        background: "oklch(1 0 0 / 0.06)",
+                        border: "1px solid oklch(1 0 0 / 0.12)",
+                      }}
+                    />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-white mb-1">Email address *</label>
-                    <input value={financeEmail} onChange={e => setFinanceEmail(e.target.value)} placeholder="you@example.com" type="email" className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white placeholder-[oklch(0.45_0_0)]" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)" }} />
+                    <label className="block text-xs font-semibold text-white mb-1">
+                      Email address *
+                    </label>
+                    <input
+                      value={financeEmail}
+                      onChange={e => setFinanceEmail(e.target.value)}
+                      placeholder="you@example.com"
+                      type="email"
+                      className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white placeholder-[oklch(0.45_0_0)]"
+                      style={{
+                        background: "oklch(1 0 0 / 0.06)",
+                        border: "1px solid oklch(1 0 0 / 0.12)",
+                      }}
+                    />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-white mb-1">Phone (optional)</label>
-                    <input value={financePhone} onChange={e => setFinancePhone(e.target.value)} placeholder="07xxx xxxxxx" className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white placeholder-[oklch(0.45_0_0)]" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)" }} />
+                    <label className="block text-xs font-semibold text-white mb-1">
+                      Phone (optional)
+                    </label>
+                    <input
+                      value={financePhone}
+                      onChange={e => setFinancePhone(e.target.value)}
+                      placeholder="07xxx xxxxxx"
+                      className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white placeholder-[oklch(0.45_0_0)]"
+                      style={{
+                        background: "oklch(1 0 0 / 0.06)",
+                        border: "1px solid oklch(1 0 0 / 0.12)",
+                      }}
+                    />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-white mb-1">Training route</label>
-                    <select value={financeRoute} onChange={e => setFinanceRoute(e.target.value as any)} className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white" style={{ background: "oklch(0.14 0.01 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
+                    <label className="block text-xs font-semibold text-white mb-1">
+                      Training route
+                    </label>
+                    <select
+                      value={financeRoute}
+                      onChange={e => setFinanceRoute(e.target.value as any)}
+                      className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white"
+                      style={{
+                        background: "oklch(0.14 0.01 240)",
+                        border: "1px solid oklch(1 0 0 / 0.12)",
+                      }}
+                    >
                       <option value="unsure">Not sure yet</option>
                       <option value="integrated">Integrated ATPL</option>
                       <option value="modular">Modular</option>
                     </select>
                   </div>
                   <div className="sm:col-span-2">
-                    <label className="block text-xs font-semibold text-white mb-1">Estimated training budget</label>
-                    <select value={financeBudget} onChange={e => setFinanceBudget(e.target.value as any)} className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white" style={{ background: "oklch(0.14 0.01 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
+                    <label className="block text-xs font-semibold text-white mb-1">
+                      Estimated training budget
+                    </label>
+                    <select
+                      value={financeBudget}
+                      onChange={e => setFinanceBudget(e.target.value as any)}
+                      className="w-full rounded-lg px-3 py-2 text-sm outline-none text-white"
+                      style={{
+                        background: "oklch(0.14 0.01 240)",
+                        border: "1px solid oklch(1 0 0 / 0.12)",
+                      }}
+                    >
                       <option value="unsure">Not sure yet</option>
-                      <option value="under50k">Under {currency.symbol}50,000</option>
-                      <option value="50k_80k">{currency.symbol}50,000 – {currency.symbol}80,000</option>
-                      <option value="80k_100k">{currency.symbol}80,000 – {currency.symbol}100,000</option>
-                      <option value="over100k">Over {currency.symbol}100,000</option>
+                      <option value="under50k">
+                        Under {currency.symbol}50,000
+                      </option>
+                      <option value="50k_80k">
+                        {currency.symbol}50,000 – {currency.symbol}80,000
+                      </option>
+                      <option value="80k_100k">
+                        {currency.symbol}80,000 – {currency.symbol}100,000
+                      </option>
+                      <option value="over100k">
+                        Over {currency.symbol}100,000
+                      </option>
                     </select>
                   </div>
                 </div>
                 <label className="flex items-start gap-2 cursor-pointer">
-                  <input type="checkbox" checked={financeConsent} onChange={e => setFinanceConsent(e.target.checked)} className="mt-0.5" />
-                  <span className="text-xs" style={{ color: "oklch(0.6 0 0)" }}>I consent to being contacted with finance guidance. I understand this is not financial advice.</span>
+                  <input
+                    type="checkbox"
+                    checked={financeConsent}
+                    onChange={e => setFinanceConsent(e.target.checked)}
+                    className="mt-0.5"
+                  />
+                  <span className="text-xs" style={{ color: "oklch(0.6 0 0)" }}>
+                    I consent to being contacted with finance guidance. I
+                    understand this is not financial advice.
+                  </span>
                 </label>
                 <button
                   onClick={() => {
-                    if (!financeName || !financeEmail || !financeConsent) { toast.error("Please fill in your name, email, and consent."); return; }
-                    submitFinanceInterest.mutate({ name: financeName, email: financeEmail, phone: financePhone || undefined, trainingRoute: financeRoute, estimatedBudget: financeBudget, source: "results_page", leadId: leadId || undefined, consentToContact: financeConsent });
+                    if (!financeName || !financeEmail || !financeConsent) {
+                      toast.error(
+                        "Please fill in your name, email, and consent."
+                      );
+                      return;
+                    }
+                    submitFinanceInterest.mutate({
+                      name: financeName,
+                      email: financeEmail,
+                      phone: financePhone || undefined,
+                      trainingRoute: financeRoute,
+                      estimatedBudget: financeBudget,
+                      source: "results_page",
+                      leadId: leadId || undefined,
+                      consentToContact: financeConsent,
+                    });
                   }}
                   disabled={submitFinanceInterest.isPending}
                   className="btn-cta text-sm w-full"
                 >
-                  {submitFinanceInterest.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : "Submit"}
+                  {submitFinanceInterest.isPending ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : (
+                    "Submit"
+                  )}
                 </button>
               </div>
             )}
           </div>
           {/* ── Final CTA ── */}
-          <div className="rounded-2xl p-8 text-center" style={{ background: "linear-gradient(135deg, oklch(0.55 0.18 240 / 0.15), oklch(0.45 0.2 260 / 0.1))", border: "1px solid oklch(0.55 0.18 240 / 0.25)" }}>
-            <div className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5" style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.62 0.2 45))", boxShadow: "0 0 30px oklch(0.72 0.18 65 / 0.3)" }}>
+          <div
+            className="rounded-2xl p-8 text-center"
+            style={{
+              background:
+                "linear-gradient(135deg, oklch(0.55 0.18 240 / 0.15), oklch(0.45 0.2 260 / 0.1))",
+              border: "1px solid oklch(0.55 0.18 240 / 0.25)",
+            }}
+          >
+            <div
+              className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5"
+              style={{
+                background:
+                  "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.62 0.2 45))",
+                boxShadow: "0 0 30px oklch(0.72 0.18 65 / 0.3)",
+              }}
+            >
               <Plane className="w-7 h-7 text-white" />
             </div>
-            <h3 className="font-display font-bold text-white text-2xl mb-3">Your roadmap is ready.</h3>
-            <p className="text-sm mb-6 max-w-md mx-auto" style={{ color: "oklch(0.65 0 0)" }}>Share your results, browse matched schools, or use the cost calculator to plan your budget in detail.</p>
+            <h3 className="font-display font-bold text-white text-2xl mb-3">
+              Your roadmap is ready.
+            </h3>
+            <p
+              className="text-sm mb-6 max-w-md mx-auto"
+              style={{ color: "oklch(0.65 0 0)" }}
+            >
+              Share your results, browse matched schools, or use the cost
+              calculator to plan your budget in detail.
+            </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/schools" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-white text-sm font-bold transition-all hover:scale-[1.02]" style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.62 0.2 45))", boxShadow: "0 4px 20px oklch(0.72 0.18 65 / 0.3)" }}>
+              <Link
+                href="/schools"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-white text-sm font-bold transition-all hover:scale-[1.02]"
+                style={{
+                  background:
+                    "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.62 0.2 45))",
+                  boxShadow: "0 4px 20px oklch(0.72 0.18 65 / 0.3)",
+                }}
+              >
                 Browse matched schools <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link href="/calculator" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all hover:bg-white/10" style={{ border: "1px solid oklch(1 0 0 / 0.2)", color: "oklch(0.75 0 0)" }}>
+              <Link
+                href="/calculator"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all hover:bg-white/10"
+                style={{
+                  border: "1px solid oklch(1 0 0 / 0.2)",
+                  color: "oklch(0.75 0 0)",
+                }}
+              >
                 Cost calculator
               </Link>
             </div>
@@ -948,14 +1846,31 @@ export default function Results() {
 
           {/* ── Post-result lead capture: Email my roadmap ── */}
           {emailGateUnlocked && roadmap && (
-            <div className="rounded-2xl p-6 animate-fade-in-up" style={{ background: "oklch(1 0 0 / 0.03)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
+            <div
+              className="rounded-2xl p-6 animate-fade-in-up"
+              style={{
+                background: "oklch(1 0 0 / 0.03)",
+                border: "1px solid oklch(1 0 0 / 0.08)",
+              }}
+            >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: "oklch(0.55 0.18 240 / 0.2)" }}>
-                  <FileDown className="w-4 h-4" style={{ color: "oklch(0.75 0.15 240)" }} />
+                <div
+                  className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                  style={{ background: "oklch(0.55 0.18 240 / 0.2)" }}
+                >
+                  <FileDown
+                    className="w-4 h-4"
+                    style={{ color: "oklch(0.75 0.15 240)" }}
+                  />
                 </div>
                 <div>
-                  <h3 className="font-display font-semibold text-white text-sm">Save your roadmap</h3>
-                  <p className="text-xs" style={{ color: "oklch(0.55 0 0)" }}>Get a copy of your full flight plan, matched schools, and next steps sent to your inbox.</p>
+                  <h3 className="font-display font-semibold text-white text-sm">
+                    Save your roadmap
+                  </h3>
+                  <p className="text-xs" style={{ color: "oklch(0.55 0 0)" }}>
+                    Get a copy of your full flight plan, matched schools, and
+                    next steps sent to your inbox.
+                  </p>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-2">
@@ -965,14 +1880,22 @@ export default function Results() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-white text-sm font-bold no-underline transition-all hover:scale-[1.01]"
-                    style={{ background: "oklch(0.55 0.18 240)", boxShadow: "0 2px 12px oklch(0.55 0.18 240 / 0.3)" }}
+                    style={{
+                      background: "oklch(0.55 0.18 240)",
+                      boxShadow: "0 2px 12px oklch(0.55 0.18 240 / 0.3)",
+                    }}
                   >
                     <FileDown className="w-4 h-4" />
                     Download PDF Blueprint
                   </a>
                 ) : (
-                  <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white/40 text-sm"
-                    style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
+                  <span
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white/40 text-sm"
+                    style={{
+                      background: "oklch(1 0 0 / 0.04)",
+                      border: "1px solid oklch(1 0 0 / 0.08)",
+                    }}
+                  >
                     <Loader2 className="w-4 h-4 animate-spin" />
                     PDF generating…
                   </span>
@@ -980,7 +1903,10 @@ export default function Results() {
                 <Link
                   href={`/schools`}
                   className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold no-underline transition-all hover:bg-white/10"
-                  style={{ border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.75 0 0)" }}
+                  style={{
+                    border: "1px solid oklch(1 0 0 / 0.15)",
+                    color: "oklch(0.75 0 0)",
+                  }}
                 >
                   <School className="w-4 h-4" />
                   Unlock matched schools
@@ -989,13 +1915,21 @@ export default function Results() {
                   <button
                     onClick={() => {
                       const firstSchool = (matchedSchools as FlightSchool[])[0];
-                      if (firstSchool && !selectedSchoolIds.includes(firstSchool.id)) {
+                      if (
+                        firstSchool &&
+                        !selectedSchoolIds.includes(firstSchool.id)
+                      ) {
                         setSelectedSchoolIds([firstSchool.id]);
                       }
-                      document.getElementById("school-intro-section")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("school-intro-section")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all hover:bg-white/10"
-                    style={{ border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.75 0 0)" }}
+                    style={{
+                      border: "1px solid oklch(1 0 0 / 0.15)",
+                      color: "oklch(0.75 0 0)",
+                    }}
                   >
                     <ArrowRight className="w-4 h-4" />
                     Request school introduction
@@ -1004,11 +1938,13 @@ export default function Results() {
               </div>
             </div>
           )}
-
         </div>
 
         {/* ── Recommended quizzes ── */}
-        <div className="max-w-2xl mx-auto px-4 pb-12" style={{ background: 'oklch(0.13 0.08 250)' }}>
+        <div
+          className="max-w-2xl mx-auto px-4 pb-12"
+          style={{ background: "oklch(0.13 0.08 250)" }}
+        >
           <RecommendedQuizzes count={3} />
         </div>
       </main>

@@ -15,8 +15,17 @@ export interface PilotSalarySource {
   role: string;
   salaryRange: string;
   currency: string;
-  payBasis: "Annual (basic)" | "Annual (total remuneration)" | "Monthly (tax-free)" | "Hourly (flying pay)" | "Annual (estimated)";
-  sourceType: "Official body" | "Official airline" | "Industry survey" | "Press report";
+  payBasis:
+    | "Annual (basic)"
+    | "Annual (total remuneration)"
+    | "Monthly (tax-free)"
+    | "Hourly (flying pay)"
+    | "Annual (estimated)";
+  sourceType:
+    | "Official body"
+    | "Official airline"
+    | "Industry survey"
+    | "Press report";
   sourceUrl: string;
   lastChecked: string;
   caveat: string;
@@ -34,7 +43,8 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Official body",
     sourceUrl: "https://www.balpa.org/becoming-a-pilot/salary-and-benefits/",
     lastChecked: "June 2026",
-    caveat: "BALPA figures represent typical starting rates. Actual pay varies by school, location, and contract type. Some instructors are self-employed.",
+    caveat:
+      "BALPA figures represent typical starting rates. Actual pay varies by school, location, and contract type. Some instructors are self-employed.",
   },
   {
     country: "United Kingdom",
@@ -46,7 +56,8 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Official body",
     sourceUrl: "https://www.balpa.org/becoming-a-pilot/salary-and-benefits/",
     lastChecked: "June 2026",
-    caveat: "BALPA figures represent typical basic pay without allowances. Actual total remuneration depends on duty pay, sector pay, and allowances.",
+    caveat:
+      "BALPA figures represent typical basic pay without allowances. Actual total remuneration depends on duty pay, sector pay, and allowances.",
   },
   {
     country: "United Kingdom",
@@ -58,7 +69,8 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Official body",
     sourceUrl: "https://www.balpa.org/becoming-a-pilot/salary-and-benefits/",
     lastChecked: "June 2026",
-    caveat: "BALPA figures represent typical basic pay without allowances. Actual total remuneration depends on duty pay, sector pay, and allowances. Figures reflect the current market; BALPA notes that 'the big salaries associated with being a pilot are fast disappearing'.",
+    caveat:
+      "BALPA figures represent typical basic pay without allowances. Actual total remuneration depends on duty pay, sector pay, and allowances. Figures reflect the current market; BALPA notes that 'the big salaries associated with being a pilot are fast disappearing'.",
   },
   {
     country: "United Kingdom",
@@ -70,7 +82,8 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Official body",
     sourceUrl: "https://www.balpa.org/becoming-a-pilot/salary-and-benefits/",
     lastChecked: "June 2026",
-    caveat: "BALPA figures represent typical basic pay without allowances. Long-haul positions are rarely available to new graduates. Command is typically based on seniority.",
+    caveat:
+      "BALPA figures represent typical basic pay without allowances. Long-haul positions are rarely available to new graduates. Command is typically based on seniority.",
   },
   {
     country: "United Kingdom",
@@ -82,7 +95,8 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Press report",
     sourceUrl: "https://simpleflying.com/uk-airline-pilot-salaries/",
     lastChecked: "June 2026",
-    caveat: "Wide range reflects junior Speedbird Academy graduates (year 1–5 on special scale, approx £40k–£85k) through to senior long-haul FOs. BA pilots narrowly rejected a pay overhaul in April 2026 — existing 2026 pay agreement remains in place. Verify current scales via BALPA or BA careers.",
+    caveat:
+      "Wide range reflects junior Speedbird Academy graduates (year 1–5 on special scale, approx £40k–£85k) through to senior long-haul FOs. BA pilots narrowly rejected a pay overhaul in April 2026 — existing 2026 pay agreement remains in place. Verify current scales via BALPA or BA careers.",
   },
   {
     country: "United Kingdom",
@@ -94,7 +108,8 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Press report",
     sourceUrl: "https://simpleflying.com/uk-airline-pilot-salaries/",
     lastChecked: "June 2026",
-    caveat: "Upper end reflects long-haul widebody captains with significant seniority. Not representative of a new command. BA pay negotiations ongoing as of June 2026.",
+    caveat:
+      "Upper end reflects long-haul widebody captains with significant seniority. Not representative of a new command. BA pay negotiations ongoing as of June 2026.",
   },
   {
     country: "United Kingdom",
@@ -106,7 +121,8 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Official body",
     sourceUrl: "https://www.balpa.org/becoming-a-pilot/salary-and-benefits/",
     lastChecked: "June 2026",
-    caveat: "Contract rates vary widely. No sick pay, no holiday pay, no guaranteed hours. BALPA warns that earnings may be good during peak times but are not guaranteed during quieter periods.",
+    caveat:
+      "Contract rates vary widely. No sick pay, no holiday pay, no guaranteed hours. BALPA warns that earnings may be good during peak times but are not guaranteed during quieter periods.",
   },
 
   // ── United States ────────────────────────────────────────────────────────────
@@ -118,9 +134,11 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     currency: "USD",
     payBasis: "Annual (total remuneration)",
     sourceType: "Industry survey",
-    sourceUrl: "https://atpflightschool.com/become-a-pilot/airline-career/commercial-pilot-salary.html",
+    sourceUrl:
+      "https://atpflightschool.com/become-a-pilot/airline-career/commercial-pilot-salary.html",
     lastChecked: "June 2026",
-    caveat: "Regional airline starting pay has increased significantly since 2022. Figures include base pay and per diem. Actual pay depends on airline, domicile, and contract. Verify current scales via ALPA or airline careers pages.",
+    caveat:
+      "Regional airline starting pay has increased significantly since 2022. Figures include base pay and per diem. Actual pay depends on airline, domicile, and contract. Verify current scales via ALPA or airline careers pages.",
   },
   {
     country: "United States",
@@ -130,9 +148,11 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     currency: "USD",
     payBasis: "Annual (total remuneration)",
     sourceType: "Press report",
-    sourceUrl: "https://atpflightschool.com/become-a-pilot/airline-career/commercial-pilot-salary.html",
+    sourceUrl:
+      "https://atpflightschool.com/become-a-pilot/airline-career/commercial-pilot-salary.html",
     lastChecked: "June 2026",
-    caveat: "Upper end reflects senior widebody captains at major carriers under current collective bargaining agreements. Not representative of a new entrant. Verify via ALPA.",
+    caveat:
+      "Upper end reflects senior widebody captains at major carriers under current collective bargaining agreements. Not representative of a new entrant. Verify via ALPA.",
   },
 
   // ── Canada ───────────────────────────────────────────────────────────────────
@@ -146,7 +166,8 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Industry survey",
     sourceUrl: "https://www.alpa.org/",
     lastChecked: "June 2026",
-    caveat: "Regional airline pay in Canada improved significantly following 2024 ALPA contract wins at Air Canada and WestJet. Figures are indicative. Verify current scales via ALPA Canada or airline careers pages.",
+    caveat:
+      "Regional airline pay in Canada improved significantly following 2024 ALPA contract wins at Air Canada and WestJet. Figures are indicative. Verify current scales via ALPA Canada or airline careers pages.",
   },
   {
     country: "Canada",
@@ -158,13 +179,15 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Industry survey",
     sourceUrl: "https://www.alpa.org/",
     lastChecked: "June 2026",
-    caveat: "Reflects post-2024 ALPA contract improvements. Upper end reflects senior widebody captains. Not representative of a new entrant.",
+    caveat:
+      "Reflects post-2024 ALPA contract improvements. Upper end reflects senior widebody captains. Not representative of a new entrant.",
   },
 
   // ── Australia ────────────────────────────────────────────────────────────────
   {
     country: "Australia",
-    airlineOrSource: "AFAP (Australian Federation of Air Pilots) / industry reports",
+    airlineOrSource:
+      "AFAP (Australian Federation of Air Pilots) / industry reports",
     role: "Regional First Officer (entry level)",
     salaryRange: "AUD $70,000–$100,000/yr",
     currency: "AUD",
@@ -172,7 +195,8 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Industry survey",
     sourceUrl: "https://www.afap.org.au/",
     lastChecked: "June 2026",
-    caveat: "Figures are indicative. Actual pay depends on airline, aircraft type, and roster. Verify via AFAP or airline careers pages.",
+    caveat:
+      "Figures are indicative. Actual pay depends on airline, aircraft type, and roster. Verify via AFAP or airline careers pages.",
   },
   {
     country: "Australia",
@@ -184,7 +208,8 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Industry survey",
     sourceUrl: "https://www.afap.org.au/",
     lastChecked: "June 2026",
-    caveat: "Upper end reflects senior widebody captains. Not representative of a new entrant.",
+    caveat:
+      "Upper end reflects senior widebody captains. Not representative of a new entrant.",
   },
 
   // ── UAE ──────────────────────────────────────────────────────────────────────
@@ -198,6 +223,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     sourceType: "Industry survey",
     sourceUrl: "https://www.emiratesgroupcareers.com/",
     lastChecked: "June 2026",
-    caveat: "UAE salaries are typically quoted as tax-free monthly figures. Packages often include housing allowance, travel benefits, and schooling allowance. Figures are indicative — verify directly with Emirates or Etihad careers.",
+    caveat:
+      "UAE salaries are typically quoted as tax-free monthly figures. Packages often include housing allowance, travel benefits, and schooling allowance. Figures are indicative — verify directly with Emirates or Etihad careers.",
   },
 ];

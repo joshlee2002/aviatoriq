@@ -47,6 +47,7 @@ The `/guides/` section should be the UK/general UK training section. However the
 **SEO risk:** Google may understand the pages, but the site architecture is cleaner if country guides live under `/australia/`, `/canada/`, and `/europe/` with canonical URLs matching that structure.
 
 **Recommended fix:**
+
 - Keep legacy redirects if these URLs have links.
 - Canonicalise new country-specific versions to `/australia/guides/...`, `/canada/guides/...`, and `/europe/guides/...`.
 - Keep `/guides/` for UK/global UK-intent pages.
@@ -54,6 +55,7 @@ The `/guides/` section should be the UK/general UK training section. However the
 ### 2. Core UK pathway pages
 
 Pages:
+
 - `HowToBecomePilot.tsx`
 - `PilotTrainingCosts.tsx`
 - `IntegratedVsModular.tsx`
@@ -63,16 +65,19 @@ Pages:
 - `ReadyToStartTraining.tsx`
 
 **What is good:**
+
 - These pages map to major search intent: how to become a pilot, pilot training cost, integrated vs modular, timeline, and readiness.
 - They have multiple sections and generally answer the right user journey.
 
 **What stops #1 ranking:**
+
 - Some meta descriptions are too long and likely to be rewritten.
 - Cost pages need stronger 2026 source tables and clearer assumptions.
 - “Best route” content should include a decision matrix and not just prose.
 - The pages need more original AviatorIQ value: route calculators, worked examples, and downloadable checklists.
 
 **Priority actions:**
+
 1. Add a “short answer” block in the first 150 words of every page.
 2. Add cost/timeline tables with assumptions and “last checked” date.
 3. Add a comparison matrix: integrated, modular, cadet, university/BSc, military.
@@ -82,21 +87,25 @@ Pages:
 ### 3. UK medical pages
 
 Pages:
+
 - `Class1Medical.tsx`
 - `Class1MedicalDisqualifiers.tsx`
 - `AdhdPilotGuide.tsx`
 - `PilotEyesightUK.tsx`
 
 **What is good:**
+
 - Medical intent is strong and valuable.
 - The pages generally focus on UK CAA Class 1 concepts.
 
 **What stops #1 ranking:**
+
 - Medical content is trust-sensitive. It needs explicit source dates and medical-examiner disclaimers near the top, not just at the bottom.
 - ADHD and disqualifier pages must avoid presenting universal outcomes; UK CAA medical decisions are case-specific.
 - Eyesight pages need exact UK CAA wording and should avoid casual “pass/fail” simplification.
 
 **Priority actions:**
+
 1. Add an above-the-fold warning: “Do not start expensive training until you have discussed your case with an AME/AeMC.”
 2. Cite UK CAA medical pages directly in visible source cards.
 3. Replace any absolute language with “may,” “typically,” or “case-by-case” where medically appropriate.
@@ -106,19 +115,23 @@ Pages:
 ### 4. UK finance pages
 
 Pages:
+
 - `PilotTrainingFinance2026.tsx`
 - `FinanceGuide.tsx` legacy redirect
 
 **What is good:**
+
 - Finance is one of the highest-value topics for aspiring pilots.
 - The legacy redirect now avoids active-sounding obsolete loan references.
 
 **What stops #1 ranking:**
+
 - UK pilot finance is volatile and can be dangerous if outdated.
 - BALPA currently states there are no banks offering pilot-training loans, so any page that implies active bank-backed loans must be edited with extreme care.
 - Users need repayment scenarios, risk warnings and alternatives, not generic “funding options.”
 
 **Priority actions:**
+
 1. Add a clear 2026 warning: “No mainstream UK bank pilot-training loans were found in current BALPA guidance; verify before applying.”
 2. Add funding options table: fully funded cadet, airline-sponsored, modular pay-as-you-go, family support, personal loan, savings, university/BSc route.
 3. Add repayment scenarios using realistic low/high first-officer salary assumptions.
@@ -128,21 +141,25 @@ Pages:
 ### 5. UK salary, shortage and lifestyle pages
 
 Pages:
+
 - `AirlinePilotSalary.tsx`
 - `PilotSalaryUK2026.tsx`
 - `PilotShortageUK.tsx`
 - `PilotLifestyleUK.tsx`
 
 **What is good:**
+
 - These are commercially valuable and likely to attract search demand.
 - Salary progression and lifestyle are high-interest topics.
 
 **What stops #1 ranking:**
+
 - Salary and shortage claims need dated sources and ranges.
 - The pages should separate first officer, senior FO, captain, training captain and long-haul/short-haul assumptions.
 - Pilot-shortage content should avoid hype; it needs evidence and caveats.
 
 **Priority actions:**
+
 1. Add salary tables by airline type, seniority and assumptions.
 2. Add source date for every pay range.
 3. Add caveats for base, aircraft, contract, allowances, overtime, union agreement and tax.
@@ -152,6 +169,7 @@ Pages:
 ### 6. UK cadet and airline-programme pages
 
 Pages:
+
 - `CadetProgrammes.tsx`
 - `BASpeedbirdAcademy.tsx`
 - `EasyJetGeneration.tsx`
@@ -160,15 +178,18 @@ Pages:
 - `TuiMPL.tsx`
 
 **What is good:**
+
 - Strong keyword targets with high intent.
 - Users actively search for programme status, requirements, selection process and costs.
 
 **What stops #1 ranking:**
+
 - Cadet-programme status changes frequently.
 - Every programme page needs “applications open/closed/paused/unknown — last checked” above the fold.
 - Entry requirements need airline/source citations, not generic wording.
 
 **Priority actions:**
+
 1. Add programme-status badge near the top of every cadet page.
 2. Add “last checked” date for applications and requirements.
 3. Link directly to official airline/training partner application pages.
@@ -178,6 +199,7 @@ Pages:
 ### 7. UK licence and rating pages
 
 Pages:
+
 - `PplGuideUK.tsx`
 - `CplGuideUK.tsx`
 - `InstrumentRatingUK.tsx`
@@ -190,15 +212,18 @@ Pages:
 - `HourBuilding.tsx`
 
 **What is good:**
+
 - Strong topical coverage across the whole training stack.
 - These pages can build authority if interlinked properly.
 
 **What stops #1 ranking:**
+
 - Some pages mix UK CAA/EASA language too loosely.
 - Several titles/meta descriptions need trimming.
 - Hour-building and licence pages need exact requirements tables, not just explanatory prose.
 
 **Priority actions:**
+
 1. Add UK CAA requirement tables to every licence/rating page.
 2. Add “UK CAA vs EASA” note only where relevant and avoid repeating it everywhere.
 3. Add “where this fits in the training journey” diagrams or tables.
@@ -208,6 +233,7 @@ Pages:
 ### 8. UK career and selection pages
 
 Pages:
+
 - `AirlineInterview.tsx`
 - `PilotAptitudeTest.tsx`
 - `PilotAptitudeTestPrep.tsx`
@@ -219,15 +245,18 @@ Pages:
 - `RAFvsCivilian.tsx`
 
 **What is good:**
+
 - These pages answer practical candidate questions and can win long-tail searches.
 - They support conversion into quiz/tools.
 
 **What stops #1 ranking:**
+
 - They need more original examples, templates and checklists.
 - Aptitude/simulator pages need clearer differentiation to avoid cannibalisation.
 - Age/women-in-aviation pages need stronger proof and avoid generic motivational content.
 
 **Priority actions:**
+
 1. Add downloadable or copyable CV, cover-letter, simulator brief and interview frameworks.
 2. Add real assessment-centre style examples without pretending to disclose confidential airline material.
 3. Add “who this is for” and “common mistakes” sections.
@@ -237,17 +266,21 @@ Pages:
 ### 9. UK school-ranking page
 
 Page:
+
 - `BestFlightSchoolsUK.tsx`
 
 **What is good:**
+
 - High commercial intent and excellent keyword value.
 
 **What stops #1 ranking:**
+
 - “Best” pages need defensible methodology.
 - The page should avoid looking like an affiliate list or subjective ranking.
 - Every school claim needs last-checked date, official school link, training type, approximate costs, aircraft/fleet, location and caveats.
 
 **Priority actions:**
+
 1. Add ranking methodology at the top.
 2. Add “not sponsored / how we rank” disclosure.
 3. Add school comparison table with last-checked dates.
@@ -256,42 +289,42 @@ Page:
 
 ## Page-by-page priority table
 
-| Priority | Page | Current issue | Action required |
-|---:|---|---|---|
-| 1 | `PilotTrainingFinance2026.tsx` | Highest YMYL risk; finance changes quickly | Re-verify every funding claim, add BALPA/GOV.UK warnings, repayment examples |
-| 1 | `Class1Medical.tsx` | Medical YMYL | Add above-fold AME/AeMC warning, exact UK CAA source wording |
-| 1 | `Class1MedicalDisqualifiers.tsx` | Medical YMYL and anxiety for users | Replace absolute wording, add deferral pathway and exact UK CAA citations |
-| 1 | `CadetProgrammes.tsx` | Programme status volatility | Add application-status table with official links and checked dates |
-| 1 | `BestFlightSchoolsUK.tsx` | High-value “best” page needs proof | Add methodology, source dates, school table and disclosure |
-| 2 | `PilotTrainingCosts.tsx` | Cost volatility | Add assumptions, source dates, integrated/modular totals |
-| 2 | `PilotSalaryUK2026.tsx` | Salary volatility | Add dated pay source table and assumptions |
-| 2 | `PilotShortageUK.tsx` | Risk of hype | Add evidence, caveats, no-guarantee wording |
-| 2 | `BASpeedbirdAcademy.tsx` | Programme status | Add official status and application source date |
-| 2 | `EasyJetGeneration.tsx` | Programme status | Add official status and training-provider details |
-| 2 | `TuiMPL.tsx` | Paused programme topic | Make status/date unmistakable above fold |
-| 3 | `PplGuideUK.tsx` | Requirements page | Add exact UK CAA table and source links |
-| 3 | `CplGuideUK.tsx` | Requirements page | Add exact UK CAA table and route diagram |
-| 3 | `InstrumentRatingUK.tsx` | UK/EASA nuance | Separate UK IR, CB-IR and EASA references carefully |
-| 3 | `FrozenAtplUK.tsx` | Core explainer | Add official CAA/ATO pathway sources |
-| 3 | `PilotAptitudeTest.tsx` / `PilotAptitudeTestPrep.tsx` | Possible cannibalisation | Split intent: overview vs preparation plan |
+| Priority | Page                                                  | Current issue                              | Action required                                                              |
+| -------: | ----------------------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------- |
+|        1 | `PilotTrainingFinance2026.tsx`                        | Highest YMYL risk; finance changes quickly | Re-verify every funding claim, add BALPA/GOV.UK warnings, repayment examples |
+|        1 | `Class1Medical.tsx`                                   | Medical YMYL                               | Add above-fold AME/AeMC warning, exact UK CAA source wording                 |
+|        1 | `Class1MedicalDisqualifiers.tsx`                      | Medical YMYL and anxiety for users         | Replace absolute wording, add deferral pathway and exact UK CAA citations    |
+|        1 | `CadetProgrammes.tsx`                                 | Programme status volatility                | Add application-status table with official links and checked dates           |
+|        1 | `BestFlightSchoolsUK.tsx`                             | High-value “best” page needs proof         | Add methodology, source dates, school table and disclosure                   |
+|        2 | `PilotTrainingCosts.tsx`                              | Cost volatility                            | Add assumptions, source dates, integrated/modular totals                     |
+|        2 | `PilotSalaryUK2026.tsx`                               | Salary volatility                          | Add dated pay source table and assumptions                                   |
+|        2 | `PilotShortageUK.tsx`                                 | Risk of hype                               | Add evidence, caveats, no-guarantee wording                                  |
+|        2 | `BASpeedbirdAcademy.tsx`                              | Programme status                           | Add official status and application source date                              |
+|        2 | `EasyJetGeneration.tsx`                               | Programme status                           | Add official status and training-provider details                            |
+|        2 | `TuiMPL.tsx`                                          | Paused programme topic                     | Make status/date unmistakable above fold                                     |
+|        3 | `PplGuideUK.tsx`                                      | Requirements page                          | Add exact UK CAA table and source links                                      |
+|        3 | `CplGuideUK.tsx`                                      | Requirements page                          | Add exact UK CAA table and route diagram                                     |
+|        3 | `InstrumentRatingUK.tsx`                              | UK/EASA nuance                             | Separate UK IR, CB-IR and EASA references carefully                          |
+|        3 | `FrozenAtplUK.tsx`                                    | Core explainer                             | Add official CAA/ATO pathway sources                                         |
+|        3 | `PilotAptitudeTest.tsx` / `PilotAptitudeTestPrep.tsx` | Possible cannibalisation                   | Split intent: overview vs preparation plan                                   |
 
 ## Route-level notes
 
-| Route | Verdict |
-|---|---|
-| `/guides/how-to-become-a-pilot` | Strong core page, but needs tighter meta and more official source proof. |
-| `/guides/pilot-training-costs` | High value; needs stronger 2026 cost evidence and assumptions. |
-| `/guides/integrated-vs-modular` | Good topic; trim meta and add decision matrix. |
-| `/guides/class-1-medical` | Must be medically cautious and source-exact. |
-| `/guides/adhd-pilot-uk` | Valuable; needs case-by-case wording and AME warning. |
-| `/guides/airline-pilot-salary` | Needs salary source dates and ranges by seniority. |
-| `/guides/how-to-finance-pilot-training-uk` | Must be rewritten with current BALPA/GOV.UK finance reality. |
-| `/guides/cadet-pilot-programmes-uk` | Needs application status and official links. |
-| `/guides/best-flight-schools-uk-2026` | Needs methodology, disclosure and source table. |
-| `/guides/ppl-uk` | Needs exact UK CAA requirements table. |
-| `/guides/cpl-uk` | Needs exact UK CAA requirements table. |
-| `/guides/instrument-rating-uk` | Needs careful UK CAA/EASA distinction. |
-| `/guides/pilot-lifestyle-uk` | Useful, but needs more evidence and specific roster examples. |
+| Route                                      | Verdict                                                                  |
+| ------------------------------------------ | ------------------------------------------------------------------------ |
+| `/guides/how-to-become-a-pilot`            | Strong core page, but needs tighter meta and more official source proof. |
+| `/guides/pilot-training-costs`             | High value; needs stronger 2026 cost evidence and assumptions.           |
+| `/guides/integrated-vs-modular`            | Good topic; trim meta and add decision matrix.                           |
+| `/guides/class-1-medical`                  | Must be medically cautious and source-exact.                             |
+| `/guides/adhd-pilot-uk`                    | Valuable; needs case-by-case wording and AME warning.                    |
+| `/guides/airline-pilot-salary`             | Needs salary source dates and ranges by seniority.                       |
+| `/guides/how-to-finance-pilot-training-uk` | Must be rewritten with current BALPA/GOV.UK finance reality.             |
+| `/guides/cadet-pilot-programmes-uk`        | Needs application status and official links.                             |
+| `/guides/best-flight-schools-uk-2026`      | Needs methodology, disclosure and source table.                          |
+| `/guides/ppl-uk`                           | Needs exact UK CAA requirements table.                                   |
+| `/guides/cpl-uk`                           | Needs exact UK CAA requirements table.                                   |
+| `/guides/instrument-rating-uk`             | Needs careful UK CAA/EASA distinction.                                   |
+| `/guides/pilot-lifestyle-uk`               | Useful, but needs more evidence and specific roster examples.            |
 
 ## What “#1-ready” means for the UK section
 

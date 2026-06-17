@@ -3,7 +3,13 @@ import SEO from "@/components/SEO";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import { Link } from "wouter";
-import { Compass, CheckCircle2, ChevronRight, AlertTriangle, Info } from "lucide-react";
+import {
+  Compass,
+  CheckCircle2,
+  ChevronRight,
+  AlertTriangle,
+  Info,
+} from "lucide-react";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface Question {
@@ -34,11 +40,24 @@ const QUESTIONS: Question[] = [
   {
     id: "country",
     text: "Which country do you want to train and work in?",
-    subtext: "This determines which regulator issues your licence and which airlines you can apply to.",
+    subtext:
+      "This determines which regulator issues your licence and which airlines you can apply to.",
     options: [
-      { label: "United Kingdom", value: "uk", description: "CAA ATPL — widely recognised globally" },
-      { label: "United States", value: "us", description: "FAA ATP — required for US airlines" },
-      { label: "Europe (EASA)", value: "eu", description: "EASA ATPL — required for EU airlines" },
+      {
+        label: "United Kingdom",
+        value: "uk",
+        description: "CAA ATPL — widely recognised globally",
+      },
+      {
+        label: "United States",
+        value: "us",
+        description: "FAA ATP — required for US airlines",
+      },
+      {
+        label: "Europe (EASA)",
+        value: "eu",
+        description: "EASA ATPL — required for EU airlines",
+      },
       { label: "Canada", value: "ca", description: "Transport Canada ATPL" },
       { label: "Australia", value: "au", description: "CASA ATPL" },
     ],
@@ -46,13 +65,34 @@ const QUESTIONS: Question[] = [
   {
     id: "budget",
     text: "What is your approximate training budget?",
-    subtext: "This is the total amount you can access — whether savings, loans, or a combination.",
+    subtext:
+      "This is the total amount you can access — whether savings, loans, or a combination.",
     options: [
-      { label: "Under £50k / $60k", value: "low", description: "Limits options to modular or PPL-only routes" },
-      { label: "£50k–£80k / $60k–$100k", value: "mid", description: "Covers most modular routes" },
-      { label: "£80k–£120k / $100k–$150k", value: "high", description: "Covers most integrated routes" },
-      { label: "Over £120k / $150k", value: "very_high", description: "Covers all routes including premium integrated" },
-      { label: "I want to minimise borrowing", value: "cadet_only", description: "Cadet programmes only — highly competitive" },
+      {
+        label: "Under £50k / $60k",
+        value: "low",
+        description: "Limits options to modular or PPL-only routes",
+      },
+      {
+        label: "£50k–£80k / $60k–$100k",
+        value: "mid",
+        description: "Covers most modular routes",
+      },
+      {
+        label: "£80k–£120k / $100k–$150k",
+        value: "high",
+        description: "Covers most integrated routes",
+      },
+      {
+        label: "Over £120k / $150k",
+        value: "very_high",
+        description: "Covers all routes including premium integrated",
+      },
+      {
+        label: "I want to minimise borrowing",
+        value: "cadet_only",
+        description: "Cadet programmes only — highly competitive",
+      },
     ],
   },
   {
@@ -67,7 +107,8 @@ const QUESTIONS: Question[] = [
   {
     id: "age",
     text: "How old are you?",
-    subtext: "There is no upper age limit to train as a pilot in the UK, US, or most markets. However, age affects the financial return on training.",
+    subtext:
+      "There is no upper age limit to train as a pilot in the UK, US, or most markets. However, age affects the financial return on training.",
     options: [
       { label: "Under 25", value: "young" },
       { label: "25–35", value: "mid" },
@@ -109,10 +150,12 @@ const ROUTE_RESULTS: Record<string, RouteResult> = {
       "If the school closes, you may lose credits and fees",
       "No degree qualification unless school offers a university partnership",
     ],
-    suitableFor: "Candidates with access to £85k+ in funding who want the fastest possible route to an airline.",
+    suitableFor:
+      "Candidates with access to £85k+ in funding who want the fastest possible route to an airline.",
     guideHref: "/guides/integrated-vs-modular",
     guideLabel: "Integrated vs Modular Guide",
-    caveat: "Costs vary significantly between schools. Always obtain an itemised prospectus and verify the school holds a current CAA ATO approval before enrolling.",
+    caveat:
+      "Costs vary significantly between schools. Always obtain an itemised prospectus and verify the school holds a current CAA ATO approval before enrolling.",
   },
   uk_modular: {
     id: "uk_modular",
@@ -134,15 +177,18 @@ const ROUTE_RESULTS: Record<string, RouteResult> = {
       "No built-in cadet pipeline — airline applications are self-directed",
       "Hour-building costs (£10k–£20k) are often underestimated",
     ],
-    suitableFor: "Candidates who cannot commit to full-time training or want to reduce borrowing by funding stages from income.",
+    suitableFor:
+      "Candidates who cannot commit to full-time training or want to reduce borrowing by funding stages from income.",
     guideHref: "/guides/integrated-vs-modular",
     guideLabel: "Integrated vs Modular Guide",
-    caveat: "The modular route requires careful planning. Gaps between modules can affect currency and may require additional training to regain proficiency.",
+    caveat:
+      "The modular route requires careful planning. Gaps between modules can affect currency and may require additional training to regain proficiency.",
   },
   uk_cadet: {
     id: "uk_cadet",
     title: "UK Airline Cadet Programme",
-    subtitle: "Funded or part-funded training with a conditional airline pathway",
+    subtitle:
+      "Funded or part-funded training with a conditional airline pathway",
     country: "UK",
     regulator: "CAA",
     estimatedCost: "£0–£15,000 (living costs)",
@@ -159,10 +205,12 @@ const ROUTE_RESULTS: Record<string, RouteResult> = {
       "You are tied to the sponsoring airline for several years",
       "Training bond means you repay costs if you leave early",
     ],
-    suitableFor: "Candidates who are willing to invest significant time in preparation and can handle a highly competitive selection process.",
+    suitableFor:
+      "Candidates who are willing to invest significant time in preparation and can handle a highly competitive selection process.",
     guideHref: "/guides/ba-speedbird-academy",
     guideLabel: "BA Speedbird Academy Guide",
-    caveat: "Always verify whether a programme is genuinely funded or self-funded with a conditional offer. These are very different propositions.",
+    caveat:
+      "Always verify whether a programme is genuinely funded or self-funded with a conditional offer. These are very different propositions.",
   },
   us_part141: {
     id: "us_part141",
@@ -184,10 +232,12 @@ const ROUTE_RESULTS: Record<string, RouteResult> = {
       "Total cost including hour-building is often $150k+",
       "Regional airline starting salaries have improved but vary widely",
     ],
-    suitableFor: "US-based candidates who want a structured pathway with airline partnerships and are prepared for the CFI/hour-building phase.",
+    suitableFor:
+      "US-based candidates who want a structured pathway with airline partnerships and are prepared for the CFI/hour-building phase.",
     guideHref: "/us/guides/how-to-become-a-pilot-usa",
     guideLabel: "How to Become a Pilot in the USA",
-    caveat: "The ATP 1,500-hour rule means the US route takes longer than the UK/EASA route. Budget for the CFI phase as a separate cost.",
+    caveat:
+      "The ATP 1,500-hour rule means the US route takes longer than the UK/EASA route. Budget for the CFI phase as a separate cost.",
   },
   eu_integrated: {
     id: "eu_integrated",
@@ -209,10 +259,12 @@ const ROUTE_RESULTS: Record<string, RouteResult> = {
       "Language of instruction varies — confirm English-language training if needed",
       "Some EU countries have limited regional airline sectors",
     ],
-    suitableFor: "Candidates who intend to work for EU-licensed airlines and want the fastest EASA ATPL route.",
+    suitableFor:
+      "Candidates who intend to work for EU-licensed airlines and want the fastest EASA ATPL route.",
     guideHref: "/europe/guides/how-to-become-a-pilot-europe",
     guideLabel: "How to Become a Pilot in Europe",
-    caveat: "UK nationals should confirm the EASA-to-UK CAA licence conversion pathway before enrolling at an EU school.",
+    caveat:
+      "UK nationals should confirm the EASA-to-UK CAA licence conversion pathway before enrolling at an EU school.",
   },
 };
 
@@ -225,7 +277,8 @@ function selectRoute(answers: Record<string, string>): RouteResult {
 
   if (country === "uk") {
     if (budget === "cadet_only") return ROUTE_RESULTS["uk_cadet"];
-    if (budget === "low" || budget === "mid" || timeline === "slow") return ROUTE_RESULTS["uk_modular"];
+    if (budget === "low" || budget === "mid" || timeline === "slow")
+      return ROUTE_RESULTS["uk_modular"];
     if (existing_licence === "military") return ROUTE_RESULTS["uk_modular"];
     return ROUTE_RESULTS["uk_integrated"];
   }
@@ -279,7 +332,9 @@ export default function RouteSelector() {
               Which Pilot Training Route Is Right for You?
             </h1>
             <p className="text-white/70">
-              Answer 5 questions to get a personalised route recommendation. This tool provides guidance only — always verify details with official sources before committing.
+              Answer 5 questions to get a personalised route recommendation.
+              This tool provides guidance only — always verify details with
+              official sources before committing.
             </p>
           </div>
 
@@ -291,14 +346,22 @@ export default function RouteSelector() {
                   <div
                     key={i}
                     className={`h-1.5 flex-1 rounded-full transition-colors ${
-                      i < currentQ ? "bg-blue-500" : i === currentQ ? "bg-blue-400" : "bg-white/10"
+                      i < currentQ
+                        ? "bg-blue-500"
+                        : i === currentQ
+                          ? "bg-blue-400"
+                          : "bg-white/10"
                     }`}
                   />
                 ))}
               </div>
-              <p className="text-xs text-white/40 mb-6">Question {currentQ + 1} of {QUESTIONS.length}</p>
+              <p className="text-xs text-white/40 mb-6">
+                Question {currentQ + 1} of {QUESTIONS.length}
+              </p>
 
-              <h2 className="font-display font-bold text-xl md:text-2xl mb-2">{question.text}</h2>
+              <h2 className="font-display font-bold text-xl md:text-2xl mb-2">
+                {question.text}
+              </h2>
               {question.subtext && (
                 <div className="flex gap-2 mb-6">
                   <Info className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
@@ -307,7 +370,7 @@ export default function RouteSelector() {
               )}
 
               <div className="space-y-3 mt-6">
-                {question.options.map((opt) => (
+                {question.options.map(opt => (
                   <button
                     key={opt.value}
                     onClick={() => handleAnswer(opt.value)}
@@ -317,7 +380,9 @@ export default function RouteSelector() {
                       <div>
                         <p className="font-medium text-white">{opt.label}</p>
                         {opt.description && (
-                          <p className="text-sm text-white/50 mt-0.5">{opt.description}</p>
+                          <p className="text-sm text-white/50 mt-0.5">
+                            {opt.description}
+                          </p>
                         )}
                       </div>
                       <ChevronRight className="w-4 h-4 text-white/30 group-hover:text-white/60 flex-shrink-0 transition-colors" />
@@ -341,9 +406,13 @@ export default function RouteSelector() {
               <div className="bg-gradient-to-br from-blue-900/50 to-blue-800/30 rounded-2xl border border-blue-500/30 p-6 md:p-8">
                 <div className="flex items-center gap-2 mb-2">
                   <CheckCircle2 className="w-5 h-5 text-green-400" />
-                  <p className="text-sm text-green-400 font-medium">Recommended Route</p>
+                  <p className="text-sm text-green-400 font-medium">
+                    Recommended Route
+                  </p>
                 </div>
-                <h2 className="font-display font-bold text-2xl md:text-3xl mb-1">{result.title}</h2>
+                <h2 className="font-display font-bold text-2xl md:text-3xl mb-1">
+                  {result.title}
+                </h2>
                 <p className="text-white/70 mb-4">{result.subtitle}</p>
 
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -352,8 +421,11 @@ export default function RouteSelector() {
                     { label: "Regulator", value: result.regulator },
                     { label: "Est. Cost", value: result.estimatedCost },
                     { label: "Est. Time", value: result.estimatedTime },
-                  ].map((item) => (
-                    <div key={item.label} className="bg-white/10 rounded-lg p-3 text-center">
+                  ].map(item => (
+                    <div
+                      key={item.label}
+                      className="bg-white/10 rounded-lg p-3 text-center"
+                    >
                       <p className="text-xs text-white/50 mb-1">{item.label}</p>
                       <p className="text-sm font-semibold">{item.value}</p>
                     </div>
@@ -370,7 +442,9 @@ export default function RouteSelector() {
               {/* Pros & Cons */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-green-900/20 rounded-xl border border-green-500/20 p-5">
-                  <p className="font-semibold text-sm text-green-400 mb-3">Advantages</p>
+                  <p className="font-semibold text-sm text-green-400 mb-3">
+                    Advantages
+                  </p>
                   <ul className="space-y-2">
                     {result.pros.map((pro, i) => (
                       <li key={i} className="flex gap-2 text-sm text-white/70">
@@ -381,7 +455,9 @@ export default function RouteSelector() {
                   </ul>
                 </div>
                 <div className="bg-red-900/20 rounded-xl border border-red-500/20 p-5">
-                  <p className="font-semibold text-sm text-red-400 mb-3">Considerations</p>
+                  <p className="font-semibold text-sm text-red-400 mb-3">
+                    Considerations
+                  </p>
                   <ul className="space-y-2">
                     {result.cons.map((con, i) => (
                       <li key={i} className="flex gap-2 text-sm text-white/70">
@@ -401,13 +477,22 @@ export default function RouteSelector() {
 
               {/* Actions */}
               <div className="flex flex-wrap gap-3">
-                <Link href={result.guideHref} className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+                <Link
+                  href={result.guideHref}
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
+                >
                   Read: {result.guideLabel}
                 </Link>
-                <Link href="/calculator" className="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+                <Link
+                  href="/calculator"
+                  className="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
+                >
                   Cost Calculator
                 </Link>
-                <button onClick={reset} className="text-sm text-white/50 hover:text-white/80 transition-colors px-3">
+                <button
+                  onClick={reset}
+                  className="text-sm text-white/50 hover:text-white/80 transition-colors px-3"
+                >
                   Start Again
                 </button>
               </div>

@@ -35,13 +35,25 @@ import {
 import { scoreLead } from "./scoring";
 import { generatePilotBlueprint } from "./pdfReport";
 import { scoreLicenceQuiz } from "./licenceQuizScoring";
-import { createLicenceQuizLead, getLicenceQuizStats, updateLicenceQuizEmail, createFinanceInterest, createFlightDeckShare, getFlightDeckShare, createCalcSession, createFlightDeckEmailCapture } from "./db";
+import {
+  createLicenceQuizLead,
+  getLicenceQuizStats,
+  updateLicenceQuizEmail,
+  createFinanceInterest,
+  createFlightDeckShare,
+  getFlightDeckShare,
+  createCalcSession,
+  createFlightDeckEmailCapture,
+} from "./db";
 import { nanoid } from "nanoid";
 
 // ─── Admin guard ──────────────────────────────────────────────────────────────
 const adminProcedure = protectedProcedure.use(({ ctx, next }) => {
   if (ctx.user.role !== "admin") {
-    throw new TRPCError({ code: "FORBIDDEN", message: "Admin access required" });
+    throw new TRPCError({
+      code: "FORBIDDEN",
+      message: "Admin access required",
+    });
   }
   return next({ ctx });
 });
@@ -84,7 +96,7 @@ export const appRouter = router({
   system: systemRouter,
 
   auth: router({
-    me: publicProcedure.query((opts) => opts.ctx.user),
+    me: publicProcedure.query(opts => opts.ctx.user),
     logout: publicProcedure.mutation(({ ctx }) => {
       const cookieOptions = getSessionCookieOptions(ctx.req);
       ctx.res.clearCookie(COOKIE_NAME, { ...cookieOptions, maxAge: -1 });
@@ -98,7 +110,10 @@ export const appRouter = router({
       .input(leadSubmitSchema)
       .mutation(async ({ input }) => {
         if (!input.consentToContact) {
-          throw new TRPCError({ code: "BAD_REQUEST", message: "Consent is required" });
+          throw new TRPCError({
+            code: "BAD_REQUEST",
+            message: "Consent is required",
+          });
         }
 
         // Score the lead
@@ -148,84 +163,104 @@ AviatorIQ Score: ${score}/100 (${category})`;
           const response = await invokeLLM({
             model: process.env.LLM_MODEL || "gpt-4.1-mini",
             messages: [
-              { role: "system", content: "You are a helpful aviation training advisor assistant. Be concise and professional." },
+              {
+                role: "system",
+                content:
+                  "You are a helpful aviation training advisor assistant. Be concise and professional.",
+              },
               { role: "user", content: summaryPrompt },
             ],
           });
           const content = response.choices[0]?.message?.content;
-          aiSummary = typeof content === 'string' ? content : undefined;
+          aiSummary = typeof content === "string" ? content : undefined;
         } catch (e) {
           console.warn("[AI] Summary generation failed:", e);
         }
 
         // Compute lead value (admin-only, not shown to user)
         const leadValue = (() => {
-          if (score >= 75 && (input.startTimeframe === "As soon as possible — I'm ready now" || input.startTimeframe === 'Within the next 12 months' || input.startTimeframe === 'Immediately' || input.startTimeframe === 'Within 3 months' || input.startTimeframe === 'Within 6 months')) return 'High';
-          if (score >= 45) return 'Medium';
-          return 'Low';
+          if (
+            score >= 75 &&
+            (input.startTimeframe === "As soon as possible — I'm ready now" ||
+              input.startTimeframe === "Within the next 12 months" ||
+              input.startTimeframe === "Immediately" ||
+              input.startTimeframe === "Within 3 months" ||
+              input.startTimeframe === "Within 6 months")
+          )
+            return "High";
+          if (score >= 45) return "Medium";
+          return "Low";
         })();
 
-                // Normalise optional string fields: undefined and empty string both become null
-        const ns = (v: string | undefined | null): string | null => (v === undefined || v === '' ? null : v);
+        // Normalise optional string fields: undefined and empty string both become null
+        const ns = (v: string | undefined | null): string | null =>
+          v === undefined || v === "" ? null : v;
 
         // Attempt to save lead to DB; fall back to an in-memory ID if DB is unavailable
         let leadId: number;
         try {
           leadId = await createLead({
-          fullName: input.fullName,
-          email: input.email,
-          phone: ns(input.phone),
-          country: ns(input.country),
-          city: ns(input.city),
-          age: input.age ?? null,
-          pilotGoal: ns(input.pilotGoal),
-          seriousness: ns(input.seriousness),
-          spokenToSchool: ns(input.spokenToSchool),
-          preferredRoute: ns(input.preferredRoute),
-          openToAbroad: ns(input.openToAbroad),
-          fundingMethod: ns(input.fundingMethod),
-          budgetRange: ns(input.budgetRange),
-          wantsFinanceInfo: ns(input.wantsFinanceInfo),
-          educationLevel: ns(input.educationLevel),
-          class1Medical: ns(input.class1Medical),
-          flyingExperience: ns(input.flyingExperience),
-          rightToWorkStudy: ns(input.rightToWorkStudy),
-          biggestConcern: ns(input.biggestConcern),
-          startTimeframe: ns(input.startTimeframe),
-          wantsSchoolContact: ns(input.wantsSchoolContact),
-          preferredContact: ns(input.preferredContact),
-          source: ns(input.source),
-          contactConsentSchools: input.contactConsentSchools ?? true,
-          contactConsentFinance: input.contactConsentFinance ?? false,
-          contactConsentMedical: input.contactConsentMedical ?? false,
-          contactConsentPartners: input.contactConsentPartners ?? false,
-          consentToContact: input.consentToContact,
-          consentToShare: input.consentToShare,
-          writtenAnswer: ns(input.writtenAnswer),
-          aiSummary: aiSummary ?? null,
-          leadScore: score,
-          leadCategory: category,
-          leadValue,
-          intentScore,
-          status: "New",
-          });
-        } catch (dbErr) {
-          console.error("[DB] Lead save FAILED — sending backup notification:", dbErr);
-          // Send backup notification with full lead payload so no data is lost
-          const backupPayload = JSON.stringify({
             fullName: input.fullName,
             email: input.email,
-            phone: input.phone ?? null,
-            country: input.country ?? null,
+            phone: ns(input.phone),
+            country: ns(input.country),
+            city: ns(input.city),
             age: input.age ?? null,
-            pilotGoal: input.pilotGoal ?? null,
-            budgetRange: input.budgetRange ?? null,
-            startTimeframe: input.startTimeframe ?? null,
+            pilotGoal: ns(input.pilotGoal),
+            seriousness: ns(input.seriousness),
+            spokenToSchool: ns(input.spokenToSchool),
+            preferredRoute: ns(input.preferredRoute),
+            openToAbroad: ns(input.openToAbroad),
+            fundingMethod: ns(input.fundingMethod),
+            budgetRange: ns(input.budgetRange),
+            wantsFinanceInfo: ns(input.wantsFinanceInfo),
+            educationLevel: ns(input.educationLevel),
+            class1Medical: ns(input.class1Medical),
+            flyingExperience: ns(input.flyingExperience),
+            rightToWorkStudy: ns(input.rightToWorkStudy),
+            biggestConcern: ns(input.biggestConcern),
+            startTimeframe: ns(input.startTimeframe),
+            wantsSchoolContact: ns(input.wantsSchoolContact),
+            preferredContact: ns(input.preferredContact),
+            source: ns(input.source),
+            contactConsentSchools: input.contactConsentSchools ?? true,
+            contactConsentFinance: input.contactConsentFinance ?? false,
+            contactConsentMedical: input.contactConsentMedical ?? false,
+            contactConsentPartners: input.contactConsentPartners ?? false,
+            consentToContact: input.consentToContact,
+            consentToShare: input.consentToShare,
+            writtenAnswer: ns(input.writtenAnswer),
+            aiSummary: aiSummary ?? null,
             leadScore: score,
             leadCategory: category,
-            consentToContact: input.consentToContact,
-            dbError: String(dbErr),
-          }, null, 2);
+            leadValue,
+            intentScore,
+            status: "New",
+          });
+        } catch (dbErr) {
+          console.error(
+            "[DB] Lead save FAILED — sending backup notification:",
+            dbErr
+          );
+          // Send backup notification with full lead payload so no data is lost
+          const backupPayload = JSON.stringify(
+            {
+              fullName: input.fullName,
+              email: input.email,
+              phone: input.phone ?? null,
+              country: input.country ?? null,
+              age: input.age ?? null,
+              pilotGoal: input.pilotGoal ?? null,
+              budgetRange: input.budgetRange ?? null,
+              startTimeframe: input.startTimeframe ?? null,
+              leadScore: score,
+              leadCategory: category,
+              consentToContact: input.consentToContact,
+              dbError: String(dbErr),
+            },
+            null,
+            2
+          );
           try {
             await notifyOwner({
               title: `⚠️ DB SAVE FAILED — Lead backup: ${input.fullName}`,
@@ -246,11 +281,15 @@ AviatorIQ Score: ${score}/100 (${category})`;
         // Generate PDF blueprint (non-blocking, best-effort)
         const leadForPdf = await getLeadById(leadId);
         if (leadForPdf) {
-          generatePilotBlueprint(leadForPdf, scoreResult.dimensions, scoreResult.labels)
-            .then(async (pdfUrl) => {
+          generatePilotBlueprint(
+            leadForPdf,
+            scoreResult.dimensions,
+            scoreResult.labels
+          )
+            .then(async pdfUrl => {
               await updateLead(leadId, { pdfKey: pdfUrl });
             })
-            .catch((e) => console.warn('[PDF] Blueprint generation failed:', e));
+            .catch(e => console.warn("[PDF] Blueprint generation failed:", e));
         }
 
         // Notify owner on Hot leads
@@ -274,7 +313,20 @@ AviatorIQ Score: ${score}/100 (${category})`;
           openToAbroad: input.openToAbroad,
         });
 
-        return { leadId, score, category, leadValue, matchedSchools, dimensions: scoreResult.dimensions, labels: scoreResult.labels, nextAction: scoreResult.nextAction, biggestRisk: scoreResult.biggestRisk, estimatedCostRange: scoreResult.estimatedCostRange, estimatedTimeline: scoreResult.estimatedTimeline, recommendedRoute: scoreResult.recommendedRoute };
+        return {
+          leadId,
+          score,
+          category,
+          leadValue,
+          matchedSchools,
+          dimensions: scoreResult.dimensions,
+          labels: scoreResult.labels,
+          nextAction: scoreResult.nextAction,
+          biggestRisk: scoreResult.biggestRisk,
+          estimatedCostRange: scoreResult.estimatedCostRange,
+          estimatedTimeline: scoreResult.estimatedTimeline,
+          recommendedRoute: scoreResult.recommendedRoute,
+        };
       }),
 
     getResult: publicProcedure
@@ -290,6 +342,13 @@ AviatorIQ Score: ${score}/100 (${category})`;
           wantsFinanceInfo: lead.wantsFinanceInfo,
           openToAbroad: lead.openToAbroad,
         });
+
+        // Detect if global fallback was used (schools from other countries mixed in)
+        const localSchoolCount = matchedSchools.filter(
+          s => !lead.country || s.country === lead.country
+        ).length;
+        const schoolsAreGlobal =
+          matchedSchools.length > 0 && localSchoolCount < 3 && !!lead.country;
 
         const scoreResult = scoreLead({
           pilotGoal: lead.pilotGoal,
@@ -309,7 +368,18 @@ AviatorIQ Score: ${score}/100 (${category})`;
           startTimeframe: lead.startTimeframe,
           biggestConcern: lead.biggestConcern,
         });
-        return { lead, matchedSchools, dimensions: scoreResult.dimensions, labels: scoreResult.labels, nextAction: scoreResult.nextAction, biggestRisk: scoreResult.biggestRisk, estimatedCostRange: scoreResult.estimatedCostRange, estimatedTimeline: scoreResult.estimatedTimeline, recommendedRoute: scoreResult.recommendedRoute };
+        return {
+          lead,
+          matchedSchools,
+          schoolsAreGlobal,
+          dimensions: scoreResult.dimensions,
+          labels: scoreResult.labels,
+          nextAction: scoreResult.nextAction,
+          biggestRisk: scoreResult.biggestRisk,
+          estimatedCostRange: scoreResult.estimatedCostRange,
+          estimatedTimeline: scoreResult.estimatedTimeline,
+          recommendedRoute: scoreResult.recommendedRoute,
+        };
       }),
 
     getPdfUrl: publicProcedure
@@ -321,51 +391,69 @@ AviatorIQ Score: ${score}/100 (${category})`;
       }),
 
     generateRoadmap: publicProcedure
-      .input(z.object({
-        leadId: z.number(),
-        // Optional client-side lead data for when DB is unavailable
-        leadData: z.object({
-          fullName: z.string().optional(),
-          age: z.number().optional().nullable(),
-          country: z.string().optional().nullable(),
-          pilotGoal: z.string().optional().nullable(),
-          biggestConcern: z.string().optional().nullable(),
-          spokenToSchool: z.string().optional().nullable(),
-          seriousness: z.string().optional().nullable(),
-          preferredRoute: z.string().optional().nullable(),
-          budgetRange: z.string().optional().nullable(),
-          fundingMethod: z.string().optional().nullable(),
-          wantsFinanceInfo: z.string().optional().nullable(),
-          class1Medical: z.string().optional().nullable(),
-          flyingExperience: z.string().optional().nullable(),
-          startTimeframe: z.string().optional().nullable(),
-          openToAbroad: z.string().optional().nullable(),
-          writtenAnswer: z.string().optional().nullable(),
-          leadScore: z.number().optional().nullable(),
-          leadCategory: z.string().optional().nullable(),
-        }).optional(),
-      }))
+      .input(
+        z.object({
+          leadId: z.number(),
+          // Optional client-side lead data for when DB is unavailable
+          leadData: z
+            .object({
+              fullName: z.string().optional(),
+              age: z.number().optional().nullable(),
+              country: z.string().optional().nullable(),
+              pilotGoal: z.string().optional().nullable(),
+              biggestConcern: z.string().optional().nullable(),
+              spokenToSchool: z.string().optional().nullable(),
+              seriousness: z.string().optional().nullable(),
+              preferredRoute: z.string().optional().nullable(),
+              budgetRange: z.string().optional().nullable(),
+              fundingMethod: z.string().optional().nullable(),
+              wantsFinanceInfo: z.string().optional().nullable(),
+              class1Medical: z.string().optional().nullable(),
+              flyingExperience: z.string().optional().nullable(),
+              startTimeframe: z.string().optional().nullable(),
+              openToAbroad: z.string().optional().nullable(),
+              writtenAnswer: z.string().optional().nullable(),
+              leadScore: z.number().optional().nullable(),
+              leadCategory: z.string().optional().nullable(),
+            })
+            .optional(),
+        })
+      )
       .mutation(async ({ input }) => {
         const dbLead = await getLeadById(input.leadId);
         // Use DB lead if available, otherwise fall back to client-provided data
-        const lead = dbLead ?? (input.leadData ? { ...input.leadData, id: input.leadId, aiRoadmap: null } as any : null);
+        const lead =
+          dbLead ??
+          (input.leadData
+            ? ({ ...input.leadData, id: input.leadId, aiRoadmap: null } as any)
+            : null);
         if (!lead) throw new TRPCError({ code: "NOT_FOUND" });
 
         // ── Input sanitisation: strip prompt injection attempts from free-text fields ──
-        const sanitiseField = (val: string | null | undefined): string | null => {
+        const sanitiseField = (
+          val: string | null | undefined
+        ): string | null => {
           if (!val) return null;
           // Truncate to 500 chars max
           const truncated = String(val).slice(0, 500);
           // Remove common prompt injection patterns
           return truncated
-            .replace(/ignore (previous|above|all) instructions?/gi, "[redacted]")
-            .replace(/you are now|act as|pretend (you are|to be)/gi, "[redacted]")
+            .replace(
+              /ignore (previous|above|all) instructions?/gi,
+              "[redacted]"
+            )
+            .replace(
+              /you are now|act as|pretend (you are|to be)/gi,
+              "[redacted]"
+            )
             .replace(/<\/?[a-z][^>]*>/gi, "") // strip HTML tags
             .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, ""); // strip control chars
         };
         const safeFullName = sanitiseField(lead.fullName) ?? "Candidate";
-        const safeWrittenAnswer = sanitiseField(lead.writtenAnswer) ?? "None provided";
-        const safeBiggestConcern = sanitiseField(lead.biggestConcern) ?? "Unknown";
+        const safeWrittenAnswer =
+          sanitiseField(lead.writtenAnswer) ?? "None provided";
+        const safeBiggestConcern =
+          sanitiseField(lead.biggestConcern) ?? "Unknown";
 
         // Return cached roadmap if available
         if (lead.aiRoadmap) {
@@ -417,17 +505,74 @@ Return a JSON object with these exact keys:
 
 Use honest, direct language. If their barrier is funding, say so clearly and give real options. If their timeline is unrealistic, say so kindly. Do not make promises about employment or medical approval. The goal is to give them the certainty they need to make a decision — not just to encourage them.`;
 
-        const response = await invokeLLM({
-          model: process.env.LLM_MODEL || "gpt-4.1-mini",
-          messages: [
-            { role: "system", content: "You are an expert aviation career advisor. Always respond with valid JSON only, no markdown." },
-            { role: "user", content: prompt },
-          ],
-          response_format: { type: "json_object" },
-        });
-
-        const rawContent = response.choices[0]?.message?.content;
-        const roadmap = typeof rawContent === 'string' ? rawContent : "{}";
+        // ── Graceful degradation: if OpenAI is unavailable, return structured fallback ──
+        let roadmap: string;
+        try {
+          const response = await invokeLLM({
+            model: process.env.LLM_MODEL || "gpt-4.1-mini",
+            messages: [
+              {
+                role: "system",
+                content:
+                  "You are an expert aviation career advisor. Always respond with valid JSON only, no markdown.",
+              },
+              { role: "user", content: prompt },
+            ],
+            response_format: { type: "json_object" },
+          });
+          const rawContent = response.choices[0]?.message?.content;
+          roadmap = typeof rawContent === "string" ? rawContent : "{}";
+        } catch (llmErr) {
+          console.warn(
+            "[Roadmap] LLM unavailable, returning structured fallback:",
+            (llmErr as Error).message
+          );
+          // Build a deterministic fallback roadmap from lead data alone
+          const fallback = {
+            pilotGoalSummary: `${lead.fullName ?? "You"} ${lead.pilotGoal ? `want to become a ${lead.pilotGoal} pilot` : "are exploring a career in aviation"}. ${lead.country ? `Based in ${lead.country}.` : ""}`,
+            biggestBarrier:
+              lead.biggestConcern ?? "Funding and finding the right school",
+            barrierAdvice:
+              "Speak directly to 2–3 flight schools to get accurate, up-to-date cost breakdowns and finance options. Many schools offer payment plans that are not advertised publicly.",
+            strongestAsset:
+              lead.flyingExperience && lead.flyingExperience !== "None"
+                ? `You already have flying experience (${lead.flyingExperience}), which puts you ahead of most applicants.`
+                : "Your motivation and early research puts you ahead of many aspiring pilots who never take the first step.",
+            recommendedRoute: lead.preferredRoute ?? "Integrated ATPL",
+            routeRationale: `Based on your profile, the ${lead.preferredRoute ?? "Integrated ATPL"} route aligns with your stated goal and timeframe.`,
+            estimatedCostMin: 80000,
+            estimatedCostMax: 130000,
+            estimatedDuration: "18–24 months",
+            readinessLabel:
+              lead.leadCategory === "Hot"
+                ? "Flight Ready"
+                : lead.leadCategory === "Warm"
+                  ? "Development Phase"
+                  : "Exploration Phase",
+            readinessExplanation:
+              lead.leadCategory === "Hot"
+                ? "You have strong indicators across funding, medical confidence, and commitment. You are ready to take the next step."
+                : "You are on the right path. A few key steps will move you from planning to action.",
+            nextSteps: [
+              "Book a Class 1 Medical assessment with a CAA-approved AME",
+              "Request prospectuses from 3 flight schools that match your route preference",
+              "Compare finance options — bank loans, school payment plans, and aviation bursaries",
+              "Attend an open day or discovery flight at your shortlisted school",
+              "Submit your application once you have confirmed funding",
+            ],
+            medicalAdvice:
+              "A Class 1 Medical is required for commercial pilot training. Book an assessment early — it is the single biggest unknown in your journey.",
+            financeConsiderations:
+              lead.wantsFinanceInfo === "Yes"
+                ? "Finance options are available at most integrated schools. Typical terms are 5–10 year repayment at competitive rates. Compare at least two providers before committing."
+                : "Most pilots self-fund or use a combination of savings and a bank loan. Start building a funding plan 12 months before your intended start date.",
+            schoolTypeRecommendation: `Look for a ${lead.preferredRoute === "Modular ATPL" ? "modular-friendly school with strong CFI support and flexible scheduling" : "fully integrated academy with airline partnerships and a structured cadet programme"}.`,
+            disclaimer:
+              "This report is guidance only and not official career, medical or financial advice. Always consult qualified professionals before making training decisions.",
+            _fallback: true,
+          };
+          roadmap = JSON.stringify(fallback);
+        }
 
         // Cache the roadmap
         await updateLead(lead.id, { aiRoadmap: roadmap });
@@ -437,31 +582,33 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
 
     /** Lead gate: capture name+email when a user unlocks a school's full details. */
     captureSchoolUnlock: publicProcedure
-      .input(z.object({
-        name: z.string().min(1),
-        email: z.string().email(),
-        schoolId: z.number(),
-        schoolName: z.string(),
-        country: z.string().optional(),
-      }))
+      .input(
+        z.object({
+          name: z.string().min(1),
+          email: z.string().email(),
+          schoolId: z.number(),
+          schoolName: z.string(),
+          country: z.string().optional(),
+        })
+      )
       .mutation(async ({ input }) => {
         try {
           const leadId = await createLead({
             fullName: input.name,
             email: input.email,
-            country: input.country ?? 'Unknown',
-            pilotGoal: 'airline',
+            country: input.country ?? "Unknown",
+            pilotGoal: "airline",
             leadScore: 40,
             intentScore: 50,
-            leadCategory: 'Warm',
-            source: 'school_unlock',
+            leadCategory: "Warm",
+            source: "school_unlock",
             consentToContact: true,
             consentToShare: true,
           });
           await createLeadAssignment({
             leadId,
             schoolId: input.schoolId,
-            status: 'Unlocked',
+            status: "Unlocked",
             notes: `Lead unlocked school details for ${input.schoolName}`,
           });
           try {
@@ -469,28 +616,40 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
               title: `\uD83D\uDD13 School Unlock: ${input.name}`,
               content: `${input.name} (${input.email}) unlocked full details for ${input.schoolName}.\nLead ID: ${leadId}`,
             });
-          } catch { /* non-critical */ }
+          } catch {
+            /* non-critical */
+          }
           return { success: true, leadId };
         } catch (e) {
-          console.error('[captureSchoolUnlock] Error:', e);
-          throw new TRPCError({ code: 'INTERNAL_SERVER_ERROR', message: 'Failed to capture lead' });
+          console.error("[captureSchoolUnlock] Error:", e);
+          throw new TRPCError({
+            code: "INTERNAL_SERVER_ERROR",
+            message: "Failed to capture lead",
+          });
         }
       }),
     /** Email gate: capture email before revealing the AI roadmap on the results page. */
     captureRoadmapEmail: publicProcedure
-      .input(z.object({
-        leadId: z.number(),
-        name: z.string().min(1),
-        email: z.string().email(),
-      }))
+      .input(
+        z.object({
+          leadId: z.number(),
+          name: z.string().min(1),
+          email: z.string().email(),
+        })
+      )
       .mutation(async ({ input }) => {
         // Update lead email/name if the lead exists and has no email (arrived via shared link)
         try {
           const lead = await getLeadById(input.leadId);
           if (lead && !lead.email) {
-            await updateLead(input.leadId, { email: input.email, fullName: input.name });
+            await updateLead(input.leadId, {
+              email: input.email,
+              fullName: input.name,
+            });
           }
-        } catch { /* non-critical */ }
+        } catch {
+          /* non-critical */
+        }
         return { success: true };
       }),
   }),
@@ -555,7 +714,11 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
     addNote: adminProcedure
       .input(z.object({ leadId: z.number(), note: z.string().min(1) }))
       .mutation(async ({ input, ctx }) => {
-        await createAdminNote({ leadId: input.leadId, note: input.note, authorId: ctx.user.id });
+        await createAdminNote({
+          leadId: input.leadId,
+          note: input.note,
+          authorId: ctx.user.id,
+        });
         return { success: true };
       }),
 
@@ -679,20 +842,23 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
       .input(z.object({ id: z.number() }))
       .query(async ({ input }) => {
         const school = await getFlightSchoolById(input.id);
-        if (!school || !school.active) throw new TRPCError({ code: "NOT_FOUND" });
+        if (!school || !school.active)
+          throw new TRPCError({ code: "NOT_FOUND" });
         return school;
       }),
   }),
   // ─── Introduction Requests ────────────────────────────────────────────────────
   introductions: router({
     requestIntroductions: publicProcedure
-      .input(z.object({
-        leadId: z.number(),
-        schoolIds: z.array(z.number()).min(1).max(5),
-      }))
+      .input(
+        z.object({
+          leadId: z.number(),
+          schoolIds: z.array(z.number()).min(1).max(5),
+        })
+      )
       .mutation(async ({ input }) => {
         const lead = await getLeadById(input.leadId);
-        if (!lead) throw new TRPCError({ code: 'NOT_FOUND' });
+        if (!lead) throw new TRPCError({ code: "NOT_FOUND" });
 
         const results = [];
         for (const schoolId of input.schoolIds) {
@@ -702,7 +868,7 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
             leadId: input.leadId,
             schoolId,
             schoolName: school.name,
-            status: 'Pending',
+            status: "Pending",
           });
           results.push({ id, schoolName: school.name });
         }
@@ -711,10 +877,10 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
         try {
           await notifyOwner({
             title: `🏫 Introduction Request: ${lead.fullName}`,
-            content: `${lead.fullName} has requested introductions to ${results.length} school(s):\n${results.map(r => `- ${r.schoolName}`).join('\n')}\n\nLead score: ${lead.leadScore}/100 (${lead.leadCategory})`,
+            content: `${lead.fullName} has requested introductions to ${results.length} school(s):\n${results.map(r => `- ${r.schoolName}`).join("\n")}\n\nLead score: ${lead.leadScore}/100 (${lead.leadCategory})`,
           });
         } catch (e) {
-          console.warn('[Notification] Introduction request notify failed:', e);
+          console.warn("[Notification] Introduction request notify failed:", e);
         }
 
         return { success: true, count: results.length, schools: results };
@@ -726,10 +892,9 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
         return getIntroductionRequestsByLeadId(input.leadId);
       }),
 
-    listAll: adminProcedure
-      .query(async () => {
-        return listAllIntroductionRequests();
-      }),
+    listAll: adminProcedure.query(async () => {
+      return listAllIntroductionRequests();
+    }),
   }),
   // ─── Partner / School Waitlist ───────────────────────────────────────────
   partner: router({
@@ -763,10 +928,10 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
         try {
           await notifyOwner({
             title: `🏫 New School Partner Application: ${input.schoolName}`,
-            content: `School: ${input.schoolName}\nCountry: ${input.country ?? 'N/A'}\nContact: ${input.contactName}\nEmail: ${input.email}\nWebsite: ${input.website ?? 'N/A'}\nCourses: ${input.coursesOffered ?? 'N/A'}\nFinance: ${input.financeAvailable ? 'Yes' : 'No'}\nWants leads: ${input.interestedInLeads ? 'Yes' : 'No'}`,
+            content: `School: ${input.schoolName}\nCountry: ${input.country ?? "N/A"}\nContact: ${input.contactName}\nEmail: ${input.email}\nWebsite: ${input.website ?? "N/A"}\nCourses: ${input.coursesOffered ?? "N/A"}\nFinance: ${input.financeAvailable ? "Yes" : "No"}\nWants leads: ${input.interestedInLeads ? "Yes" : "No"}`,
           });
         } catch (e) {
-          console.warn('[Notification] Partner waitlist notify failed:', e);
+          console.warn("[Notification] Partner waitlist notify failed:", e);
         }
         return { success: true, id: entry.id };
       }),
@@ -779,17 +944,19 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
   licenceQuiz: router({
     /** Submit answers, get result back immediately. Saves a record without email. */
     submit: publicProcedure
-      .input(z.object({
-        goal: z.string(),
-        timeCommitment: z.string(),
-        budget: z.string(),
-        wantsCommercial: z.string(),
-        experience: z.string(),
-        location: z.string(),
-        speedPriority: z.string(),
-        mainPriority: z.string(),
-        source: z.string().optional(),
-      }))
+      .input(
+        z.object({
+          goal: z.string(),
+          timeCommitment: z.string(),
+          budget: z.string(),
+          wantsCommercial: z.string(),
+          experience: z.string(),
+          location: z.string(),
+          speedPriority: z.string(),
+          mainPriority: z.string(),
+          source: z.string().optional(),
+        })
+      )
       .mutation(async ({ input }) => {
         const result = scoreLicenceQuiz(input);
         const record = await createLicenceQuizLead({
@@ -802,13 +969,19 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
 
     /** Capture email after result is shown — gated behind detailed breakdown. */
     captureEmail: publicProcedure
-      .input(z.object({
-        id: z.number(),
-        email: z.string().email(),
-        consentToContact: z.boolean(),
-      }))
+      .input(
+        z.object({
+          id: z.number(),
+          email: z.string().email(),
+          consentToContact: z.boolean(),
+        })
+      )
       .mutation(async ({ input }) => {
-        await updateLicenceQuizEmail(input.id, input.email, input.consentToContact);
+        await updateLicenceQuizEmail(
+          input.id,
+          input.email,
+          input.consentToContact
+        );
         return { success: true };
       }),
 
@@ -821,21 +994,28 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
   // ─── Finance Interest ──────────────────────────────────────────────────────
   finance: router({
     submitInterest: publicProcedure
-      .input(z.object({
-        name: z.string().min(2),
-        email: z.string().email(),
-        phone: z.string().optional(),
-        trainingRoute: z.enum(["integrated", "modular", "unsure"]).optional(),
-        estimatedBudget: z.enum(["under50k", "50k_80k", "80k_100k", "over100k", "unsure"]).optional(),
-        message: z.string().optional(),
-        source: z.string().optional(),
-        leadId: z.number().optional(),
-        consentToContact: z.boolean(),
-      }))
+      .input(
+        z.object({
+          name: z.string().min(2),
+          email: z.string().email(),
+          phone: z.string().optional(),
+          trainingRoute: z.enum(["integrated", "modular", "unsure"]).optional(),
+          estimatedBudget: z
+            .enum(["under50k", "50k_80k", "80k_100k", "over100k", "unsure"])
+            .optional(),
+          message: z.string().optional(),
+          source: z.string().optional(),
+          leadId: z.number().optional(),
+          consentToContact: z.boolean(),
+        })
+      )
       .mutation(async ({ input }) => {
         // Enforce consent — do not save or notify if user did not explicitly consent
         if (!input.consentToContact) {
-          throw new TRPCError({ code: "BAD_REQUEST", message: "Consent to contact is required." });
+          throw new TRPCError({
+            code: "BAD_REQUEST",
+            message: "Consent to contact is required.",
+          });
         }
         const id = await createFinanceInterest(input);
         await notifyOwner({
@@ -858,18 +1038,24 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
       .input(z.object({ shareId: z.string() }))
       .query(async ({ input }) => {
         const resultJson = await getFlightDeckShare(input.shareId);
-        if (!resultJson) throw new TRPCError({ code: "NOT_FOUND", message: "Share not found" });
+        if (!resultJson)
+          throw new TRPCError({
+            code: "NOT_FOUND",
+            message: "Share not found",
+          });
         return { resultJson };
       }),
     captureEmail: publicProcedure
-      .input(z.object({
-        email: z.string().email(),
-        name: z.string().optional(),
-        phase: z.string().optional(),
-        score: z.number().int().optional(),
-        biggestBarrier: z.string().optional(),
-        consentToContact: z.boolean(),
-      }))
+      .input(
+        z.object({
+          email: z.string().email(),
+          name: z.string().optional(),
+          phase: z.string().optional(),
+          score: z.number().int().optional(),
+          biggestBarrier: z.string().optional(),
+          consentToContact: z.boolean(),
+        })
+      )
       .mutation(async ({ input }) => {
         const id = await createFlightDeckEmailCapture({
           email: input.email,
@@ -878,13 +1064,13 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
           score: input.score,
           biggestBarrier: input.biggestBarrier,
           consentToContact: input.consentToContact,
-          source: 'flight_deck_results',
+          source: "flight_deck_results",
         });
         // Notify owner of new Flight Deck email capture
         try {
           await notifyOwner({
             title: `✈️ New Flight Deck Email Captured`,
-            content: `Name: ${input.name ?? 'Unknown'}\nEmail: ${input.email}\nPhase: ${input.phase ?? 'N/A'}\nScore: ${input.score ?? 'N/A'}\nBiggest Barrier: ${input.biggestBarrier ?? 'N/A'}`,
+            content: `Name: ${input.name ?? "Unknown"}\nEmail: ${input.email}\nPhase: ${input.phase ?? "N/A"}\nScore: ${input.score ?? "N/A"}\nBiggest Barrier: ${input.biggestBarrier ?? "N/A"}`,
           });
         } catch (e) {
           // Non-fatal
@@ -909,21 +1095,23 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
   // ─── Guide Email Subscribe ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   guides: router({
     subscribe: publicProcedure
-      .input(z.object({
-        email: z.string().email(),
-        source: z.string().optional(), // which guide page they subscribed from
-      }))
+      .input(
+        z.object({
+          email: z.string().email(),
+          source: z.string().optional(), // which guide page they subscribed from
+        })
+      )
       .mutation(async ({ input }) => {
         // Save as a flight deck email capture with source=guide_subscribe
         await createFlightDeckEmailCapture({
           email: input.email,
           consentToContact: true,
-          source: input.source ?? 'guide_subscribe',
+          source: input.source ?? "guide_subscribe",
         });
         try {
           await notifyOwner({
-            title: '📚 New Guide Email Subscriber',
-            content: `Email: ${input.email}\nSource: ${input.source ?? 'guide_subscribe'}`,
+            title: "📚 New Guide Email Subscriber",
+            content: `Email: ${input.email}\nSource: ${input.source ?? "guide_subscribe"}`,
           });
         } catch (e) {
           // Non-fatal
@@ -933,14 +1121,16 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
   }),
   calculator: router({
     saveSession: publicProcedure
-      .input(z.object({
-        route: z.string(),
-        location: z.string(),
-        pace: z.string(),
-        experience: z.string(),
-        funding: z.string(),
-        totalEstimate: z.number().int(),
-      }))
+      .input(
+        z.object({
+          route: z.string(),
+          location: z.string(),
+          pace: z.string(),
+          experience: z.string(),
+          funding: z.string(),
+          totalEstimate: z.number().int(),
+        })
+      )
       .mutation(async ({ input }) => {
         await createCalcSession(input);
         return { ok: true };

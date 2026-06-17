@@ -29,12 +29,29 @@ const STEPS: Step[] = [
   {
     id: "goal",
     question: "What is your main goal?",
-    subtext: "This shapes everything — your licence type, training route, and timeline.",
+    subtext:
+      "This shapes everything — your licence type, training route, and timeline.",
     options: [
-      { label: "Fly for a living", value: "professional", hint: "Airlines, commercial aviation, charter" },
-      { label: "Fly as a hobby or for personal travel", value: "recreational", hint: "Weekend flying, touring, leisure" },
-      { label: "Fly for business", value: "business", hint: "Own aircraft, corporate travel, charter" },
-      { label: "I'm not sure yet — I just want to start flying", value: "exploring", hint: "Exploring options before committing" },
+      {
+        label: "Fly for a living",
+        value: "professional",
+        hint: "Airlines, commercial aviation, charter",
+      },
+      {
+        label: "Fly as a hobby or for personal travel",
+        value: "recreational",
+        hint: "Weekend flying, touring, leisure",
+      },
+      {
+        label: "Fly for business",
+        value: "business",
+        hint: "Own aircraft, corporate travel, charter",
+      },
+      {
+        label: "I'm not sure yet — I just want to start flying",
+        value: "exploring",
+        hint: "Exploring options before committing",
+      },
     ],
   },
   {
@@ -42,16 +59,33 @@ const STEPS: Step[] = [
     question: "How much time can you commit to training?",
     subtext: "Honest answers here lead to more realistic recommendations.",
     options: [
-      { label: "Full-time", value: "fulltime", hint: "Training every day for 1–2 years" },
-      { label: "Part-time", value: "parttime", hint: "Evenings and weekends over 2–4 years" },
-      { label: "Flexible", value: "flexible", hint: "Some free time but it varies" },
-      { label: "Very limited", value: "limited", hint: "Occasional training only" },
+      {
+        label: "Full-time",
+        value: "fulltime",
+        hint: "Training every day for 1–2 years",
+      },
+      {
+        label: "Part-time",
+        value: "parttime",
+        hint: "Evenings and weekends over 2–4 years",
+      },
+      {
+        label: "Flexible",
+        value: "flexible",
+        hint: "Some free time but it varies",
+      },
+      {
+        label: "Very limited",
+        value: "limited",
+        hint: "Occasional training only",
+      },
     ],
   },
   {
     id: "budget",
     question: "What is your approximate budget for training?",
-    subtext: "This is one of the biggest factors in which licence is realistic for you.",
+    subtext:
+      "This is one of the biggest factors in which licence is realistic for you.",
     options: [
       { label: "Under £10,000", value: "under10k" },
       { label: "£10,000 – £30,000", value: "10k_30k" },
@@ -97,18 +131,33 @@ const STEPS: Step[] = [
     subtext: "Some licences can be achieved in months; others take years.",
     options: [
       { label: "Very important — qualify as fast as possible", value: "fast" },
-      { label: "Balanced — speed and cost in equal measure", value: "balanced" },
-      { label: "Not important — I'd rather take my time and save money", value: "slow" },
+      {
+        label: "Balanced — speed and cost in equal measure",
+        value: "balanced",
+      },
+      {
+        label: "Not important — I'd rather take my time and save money",
+        value: "slow",
+      },
     ],
   },
   {
     id: "mainPriority",
     question: "What matters most to you right now?",
     options: [
-      { label: "Getting airborne as quickly and cheaply as possible", value: "get_flying" },
+      {
+        label: "Getting airborne as quickly and cheaply as possible",
+        value: "get_flying",
+      },
       { label: "Building towards a professional career", value: "career" },
-      { label: "Understanding all my options before committing", value: "research" },
-      { label: "Finding the most cost-effective route to commercial flying", value: "value" },
+      {
+        label: "Understanding all my options before committing",
+        value: "research",
+      },
+      {
+        label: "Finding the most cost-effective route to commercial flying",
+        value: "value",
+      },
     ],
   },
 ];
@@ -125,7 +174,7 @@ export default function LicenceQuiz() {
   }, []);
 
   const submitMutation = trpc.licenceQuiz.submit.useMutation({
-    onSuccess: (data) => {
+    onSuccess: data => {
       // Store result in sessionStorage so results page can read it
       sessionStorage.setItem("licenceQuizResult", JSON.stringify(data));
       navigate("/quiz/licence/results");
@@ -136,7 +185,7 @@ export default function LicenceQuiz() {
   });
 
   const step = STEPS[currentStep];
-  const progress = ((currentStep) / STEPS.length) * 100;
+  const progress = (currentStep / STEPS.length) * 100;
   const selectedValue = answers[step.id];
 
   const handleSelect = (value: string) => {
@@ -146,26 +195,31 @@ export default function LicenceQuiz() {
     // Auto-advance after short delay
     setTimeout(() => {
       if (currentStep < STEPS.length - 1) {
-        setCurrentStep((s) => s + 1);
+        setCurrentStep(s => s + 1);
       } else {
         // Final step — submit
         const complete = newAnswers as Answers;
         setIsSubmitting(true);
-        const source = new URLSearchParams(window.location.search).get("source") ?? undefined;
+        const source =
+          new URLSearchParams(window.location.search).get("source") ??
+          undefined;
         submitMutation.mutate({ ...complete, source });
       }
     }, 280);
   };
 
   const handleBack = () => {
-    if (currentStep > 0) setCurrentStep((s) => s - 1);
+    if (currentStep > 0) setCurrentStep(s => s - 1);
   };
 
   return (
     <div className="min-h-screen bg-[var(--color-navy)] flex flex-col">
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 border-b border-white/10">
-        <Link href="/" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+        <Link
+          href="/"
+          className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
+        >
           <Plane className="w-5 h-5 text-[var(--color-gold)]" />
           <span className="font-display font-bold text-sm">AviatorIQ</span>
         </Link>
@@ -206,7 +260,7 @@ export default function LicenceQuiz() {
 
           {/* Options */}
           <div className="space-y-3">
-            {step.options.map((option) => {
+            {step.options.map(option => {
               const isSelected = selectedValue === option.value;
               return (
                 <button
@@ -214,18 +268,23 @@ export default function LicenceQuiz() {
                   onClick={() => handleSelect(option.value)}
                   disabled={isSubmitting}
                   className={`w-full text-left px-5 py-4 rounded-xl border transition-all duration-150 group
-                    ${isSelected
-                      ? "border-[var(--color-gold)] bg-[var(--color-gold)]/10 scale-[0.99]"
-                      : "border-white/15 bg-white/5 hover:border-white/30 hover:bg-white/8 active:scale-[0.98]"
+                    ${
+                      isSelected
+                        ? "border-[var(--color-gold)] bg-[var(--color-gold)]/10 scale-[0.99]"
+                        : "border-white/15 bg-white/5 hover:border-white/30 hover:bg-white/8 active:scale-[0.98]"
                     }`}
                 >
                   <div className="flex items-center justify-between gap-3">
                     <div className="flex-1">
-                      <span className={`font-medium text-sm md:text-base ${isSelected ? "text-[var(--color-gold)]" : "text-white"}`}>
+                      <span
+                        className={`font-medium text-sm md:text-base ${isSelected ? "text-[var(--color-gold)]" : "text-white"}`}
+                      >
                         {option.label}
                       </span>
                       {option.hint && (
-                        <p className="text-white/65 text-xs mt-0.5">{option.hint}</p>
+                        <p className="text-white/65 text-xs mt-0.5">
+                          {option.hint}
+                        </p>
                       )}
                     </div>
                     {isSelected ? (

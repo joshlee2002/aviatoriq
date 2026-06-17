@@ -3,74 +3,163 @@ import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
-import { ArrowRight, CheckCircle2, AlertTriangle, ChevronRight, ChevronLeft, Plane } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  AlertTriangle,
+  ChevronRight,
+  ChevronLeft,
+  Plane,
+} from "lucide-react";
 
 interface Question {
   id: string;
   text: string;
   subtext?: string;
-  options: { label: string; value: string; score: { integrated: number; modular: number } }[];
+  options: {
+    label: string;
+    value: string;
+    score: { integrated: number; modular: number };
+  }[];
 }
 
 const QUESTIONS: Question[] = [
   {
     id: "fulltime",
     text: "Can you train full-time for 18–24 months?",
-    subtext: "Integrated training requires full-time commitment. You cannot work alongside it.",
+    subtext:
+      "Integrated training requires full-time commitment. You cannot work alongside it.",
     options: [
-      { label: "Yes — I can commit fully", value: "yes", score: { integrated: 3, modular: 0 } },
-      { label: "Possibly, but it would be difficult", value: "maybe", score: { integrated: 1, modular: 1 } },
-      { label: "No — I need to keep working", value: "no", score: { integrated: 0, modular: 3 } },
+      {
+        label: "Yes — I can commit fully",
+        value: "yes",
+        score: { integrated: 3, modular: 0 },
+      },
+      {
+        label: "Possibly, but it would be difficult",
+        value: "maybe",
+        score: { integrated: 1, modular: 1 },
+      },
+      {
+        label: "No — I need to keep working",
+        value: "no",
+        score: { integrated: 0, modular: 3 },
+      },
     ],
   },
   {
     id: "budget",
     text: "What is your available budget for training?",
-    subtext: "Integrated training typically costs £90,000–£130,000 upfront. Modular can be spread over time.",
+    subtext:
+      "Integrated training typically costs £90,000–£130,000 upfront. Modular can be spread over time.",
     options: [
-      { label: "£90,000+ available or financed", value: "high", score: { integrated: 3, modular: 1 } },
-      { label: "£40,000–£90,000", value: "mid", score: { integrated: 0, modular: 3 } },
-      { label: "Under £40,000 right now", value: "low", score: { integrated: 0, modular: 3 } },
+      {
+        label: "£90,000+ available or financed",
+        value: "high",
+        score: { integrated: 3, modular: 1 },
+      },
+      {
+        label: "£40,000–£90,000",
+        value: "mid",
+        score: { integrated: 0, modular: 3 },
+      },
+      {
+        label: "Under £40,000 right now",
+        value: "low",
+        score: { integrated: 0, modular: 3 },
+      },
     ],
   },
   {
     id: "speed",
     text: "How important is it to qualify as fast as possible?",
-    subtext: "Integrated gets you to frozen ATPL in 18–24 months. Modular typically takes 3–5 years.",
+    subtext:
+      "Integrated gets you to frozen ATPL in 18–24 months. Modular typically takes 3–5 years.",
     options: [
-      { label: "Very important — I want to fly commercially ASAP", value: "high", score: { integrated: 3, modular: 0 } },
-      { label: "Somewhat important", value: "mid", score: { integrated: 2, modular: 1 } },
-      { label: "I'm happy to take my time", value: "low", score: { integrated: 0, modular: 3 } },
+      {
+        label: "Very important — I want to fly commercially ASAP",
+        value: "high",
+        score: { integrated: 3, modular: 0 },
+      },
+      {
+        label: "Somewhat important",
+        value: "mid",
+        score: { integrated: 2, modular: 1 },
+      },
+      {
+        label: "I'm happy to take my time",
+        value: "low",
+        score: { integrated: 0, modular: 3 },
+      },
     ],
   },
   {
     id: "structure",
     text: "Do you prefer a structured programme or self-directed learning?",
-    subtext: "Integrated provides a clear, guided pathway. Modular requires you to manage your own progression.",
+    subtext:
+      "Integrated provides a clear, guided pathway. Modular requires you to manage your own progression.",
     options: [
-      { label: "I prefer a structured, guided programme", value: "structured", score: { integrated: 3, modular: 0 } },
-      { label: "I'm comfortable with both", value: "either", score: { integrated: 1, modular: 1 } },
-      { label: "I prefer to manage my own learning", value: "self", score: { integrated: 0, modular: 3 } },
+      {
+        label: "I prefer a structured, guided programme",
+        value: "structured",
+        score: { integrated: 3, modular: 0 },
+      },
+      {
+        label: "I'm comfortable with both",
+        value: "either",
+        score: { integrated: 1, modular: 1 },
+      },
+      {
+        label: "I prefer to manage my own learning",
+        value: "self",
+        score: { integrated: 0, modular: 3 },
+      },
     ],
   },
   {
     id: "risk",
     text: "How do you feel about financial risk?",
-    subtext: "Integrated requires committing most of the cost upfront. Modular lets you pause if circumstances change.",
+    subtext:
+      "Integrated requires committing most of the cost upfront. Modular lets you pause if circumstances change.",
     options: [
-      { label: "I'm comfortable committing the full amount upfront", value: "low", score: { integrated: 3, modular: 1 } },
-      { label: "I'd prefer to spread the financial risk", value: "mid", score: { integrated: 0, modular: 3 } },
-      { label: "I need maximum flexibility — life might change", value: "high", score: { integrated: 0, modular: 3 } },
+      {
+        label: "I'm comfortable committing the full amount upfront",
+        value: "low",
+        score: { integrated: 3, modular: 1 },
+      },
+      {
+        label: "I'd prefer to spread the financial risk",
+        value: "mid",
+        score: { integrated: 0, modular: 3 },
+      },
+      {
+        label: "I need maximum flexibility — life might change",
+        value: "high",
+        score: { integrated: 0, modular: 3 },
+      },
     ],
   },
   {
     id: "family",
     text: "Do you have significant personal commitments (family, mortgage, etc.)?",
-    subtext: "Integrated training abroad or away from home can be difficult with family commitments.",
+    subtext:
+      "Integrated training abroad or away from home can be difficult with family commitments.",
     options: [
-      { label: "No major commitments — I have full flexibility", value: "none", score: { integrated: 3, modular: 1 } },
-      { label: "Some commitments but manageable", value: "some", score: { integrated: 1, modular: 2 } },
-      { label: "Significant commitments I can't step away from", value: "heavy", score: { integrated: 0, modular: 3 } },
+      {
+        label: "No major commitments — I have full flexibility",
+        value: "none",
+        score: { integrated: 3, modular: 1 },
+      },
+      {
+        label: "Some commitments but manageable",
+        value: "some",
+        score: { integrated: 1, modular: 2 },
+      },
+      {
+        label: "Significant commitments I can't step away from",
+        value: "heavy",
+        score: { integrated: 0, modular: 3 },
+      },
     ],
   },
 ];
@@ -84,7 +173,7 @@ function getResult(answers: Answers) {
   for (const q of QUESTIONS) {
     const ans = answers[q.id];
     if (!ans) continue;
-    const opt = q.options.find((o) => o.value === ans);
+    const opt = q.options.find(o => o.value === ans);
     if (opt) {
       integrated += opt.score.integrated;
       modular += opt.score.modular;
@@ -166,7 +255,9 @@ export default function IntModDecision() {
   const isIntro = step === 0;
   const isResult = step === QUESTIONS.length + 1;
   const currentQ = !isIntro && !isResult ? QUESTIONS[step - 1] : null;
-  const progress = isResult ? 100 : Math.round((step / (QUESTIONS.length + 1)) * 100);
+  const progress = isResult
+    ? 100
+    : Math.round((step / (QUESTIONS.length + 1)) * 100);
 
   function handleSelect(value: string) {
     setSelected(value);
@@ -174,9 +265,9 @@ export default function IntModDecision() {
 
   function handleNext() {
     if (currentQ && selected) {
-      setAnswers((prev) => ({ ...prev, [currentQ.id]: selected }));
+      setAnswers(prev => ({ ...prev, [currentQ.id]: selected }));
       setSelected(null);
-      setStep((s) => s + 1);
+      setStep(s => s + 1);
     } else if (isIntro) {
       setStep(1);
     }
@@ -185,7 +276,7 @@ export default function IntModDecision() {
   function handleBack() {
     if (step > 0) {
       setSelected(answers[QUESTIONS[step - 2]?.id] ?? null);
-      setStep((s) => s - 1);
+      setStep(s => s - 1);
     }
   }
 
@@ -202,7 +293,8 @@ export default function IntModDecision() {
           "@context": "https://schema.org",
           "@type": "WebApplication",
           name: "Integrated vs Modular Decision Tool",
-          description: "Free tool to determine whether integrated or modular ATPL training is right for your situation",
+          description:
+            "Free tool to determine whether integrated or modular ATPL training is right for your situation",
           url: "https://aviatoriq.com/tools/integrated-vs-modular",
           applicationCategory: "EducationalApplication",
         }}
@@ -210,7 +302,6 @@ export default function IntModDecision() {
       <PublicNav />
       <main className="flex-1 bg-sky-subtle py-10 px-4">
         <div className="container max-w-2xl">
-
           {/* Intro */}
           {isIntro && (
             <div className="card-base p-8 text-center">
@@ -221,19 +312,29 @@ export default function IntModDecision() {
                 Integrated or Modular?
               </h1>
               <p className="text-[var(--color-muted-foreground)] mb-2 max-w-md mx-auto">
-                This is one of the most important decisions you'll make about pilot training. Answer 6 questions and get a personalised recommendation.
+                This is one of the most important decisions you'll make about
+                pilot training. Answer 6 questions and get a personalised
+                recommendation.
               </p>
               <p className="text-sm text-[var(--color-muted-foreground)] mb-8 max-w-md mx-auto">
                 Takes about 2 minutes. No registration required.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8 text-left max-w-md mx-auto">
                 <div className="p-4 rounded-xl bg-blue-50 border border-blue-100">
-                  <div className="font-display font-bold text-blue-800 text-sm mb-1">Integrated</div>
-                  <div className="text-xs text-blue-700">18–24 months · £90k–£130k · Full-time</div>
+                  <div className="font-display font-bold text-blue-800 text-sm mb-1">
+                    Integrated
+                  </div>
+                  <div className="text-xs text-blue-700">
+                    18–24 months · £90k–£130k · Full-time
+                  </div>
                 </div>
                 <div className="p-4 rounded-xl bg-purple-50 border border-purple-100">
-                  <div className="font-display font-bold text-purple-800 text-sm mb-1">Modular</div>
-                  <div className="text-xs text-purple-700">3–5 years · £40k–£80k · Flexible</div>
+                  <div className="font-display font-bold text-purple-800 text-sm mb-1">
+                    Modular
+                  </div>
+                  <div className="text-xs text-purple-700">
+                    3–5 years · £40k–£80k · Flexible
+                  </div>
                 </div>
               </div>
               <button onClick={handleNext} className="btn-cta">
@@ -249,7 +350,9 @@ export default function IntModDecision() {
               {/* Progress */}
               <div className="mb-6">
                 <div className="flex justify-between text-xs text-[var(--color-muted-foreground)] mb-1.5">
-                  <span>Question {step} of {QUESTIONS.length}</span>
+                  <span>
+                    Question {step} of {QUESTIONS.length}
+                  </span>
                   <span>{progress}%</span>
                 </div>
                 <div className="h-1.5 bg-[var(--color-muted)] rounded-full overflow-hidden">
@@ -260,13 +363,17 @@ export default function IntModDecision() {
                 </div>
               </div>
 
-              <h2 className="font-display font-bold text-xl text-[var(--color-navy)] mb-2">{currentQ.text}</h2>
+              <h2 className="font-display font-bold text-xl text-[var(--color-navy)] mb-2">
+                {currentQ.text}
+              </h2>
               {currentQ.subtext && (
-                <p className="text-sm text-[var(--color-muted-foreground)] mb-6">{currentQ.subtext}</p>
+                <p className="text-sm text-[var(--color-muted-foreground)] mb-6">
+                  {currentQ.subtext}
+                </p>
               )}
 
               <div className="space-y-3 mb-8">
-                {currentQ.options.map((opt) => (
+                {currentQ.options.map(opt => (
                   <button
                     key={opt.value}
                     onClick={() => handleSelect(opt.value)}
@@ -277,14 +384,20 @@ export default function IntModDecision() {
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <div className={`w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center transition-all ${
-                        selected === opt.value
-                          ? "border-[var(--color-primary)] bg-[var(--color-primary)]"
-                          : "border-[var(--color-border)]"
-                      }`}>
-                        {selected === opt.value && <div className="w-2 h-2 rounded-full bg-white" />}
+                      <div
+                        className={`w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center transition-all ${
+                          selected === opt.value
+                            ? "border-[var(--color-primary)] bg-[var(--color-primary)]"
+                            : "border-[var(--color-border)]"
+                        }`}
+                      >
+                        {selected === opt.value && (
+                          <div className="w-2 h-2 rounded-full bg-white" />
+                        )}
                       </div>
-                      <span className="font-medium text-[var(--color-navy)] text-sm">{opt.label}</span>
+                      <span className="font-medium text-[var(--color-navy)] text-sm">
+                        {opt.label}
+                      </span>
                     </div>
                   </button>
                 ))}
@@ -315,12 +428,20 @@ export default function IntModDecision() {
             <div className="space-y-5">
               {/* Score bar */}
               <div className="card-base p-6">
-                <h2 className="font-display font-bold text-xl text-[var(--color-navy)] mb-1">{resultCopy.title}</h2>
-                <p className="text-sm text-[var(--color-muted-foreground)] mb-5">{resultCopy.summary}</p>
+                <h2 className="font-display font-bold text-xl text-[var(--color-navy)] mb-1">
+                  {resultCopy.title}
+                </h2>
+                <p className="text-sm text-[var(--color-muted-foreground)] mb-5">
+                  {resultCopy.summary}
+                </p>
 
                 <div className="mb-2 flex justify-between text-xs font-semibold">
-                  <span className="text-blue-700">Integrated {result.intPct}%</span>
-                  <span className="text-purple-700">Modular {result.modPct}%</span>
+                  <span className="text-blue-700">
+                    Integrated {result.intPct}%
+                  </span>
+                  <span className="text-purple-700">
+                    Modular {result.modPct}%
+                  </span>
                 </div>
                 <div className="h-3 rounded-full overflow-hidden bg-purple-100 flex">
                   <div
@@ -338,7 +459,10 @@ export default function IntModDecision() {
                 </h3>
                 <ul className="space-y-2">
                   {resultCopy.pros.map((p, i) => (
-                    <li key={i} className="flex items-start gap-2.5 text-sm text-[var(--color-foreground)]">
+                    <li
+                      key={i}
+                      className="flex items-start gap-2.5 text-sm text-[var(--color-foreground)]"
+                    >
                       <div className="w-1.5 h-1.5 rounded-full bg-green-500 mt-1.5 flex-shrink-0" />
                       {p}
                     </li>
@@ -354,7 +478,10 @@ export default function IntModDecision() {
                 </h3>
                 <ul className="space-y-2">
                   {resultCopy.risks.map((r, i) => (
-                    <li key={i} className="flex items-start gap-2.5 text-sm text-[var(--color-foreground)]">
+                    <li
+                      key={i}
+                      className="flex items-start gap-2.5 text-sm text-[var(--color-foreground)]"
+                    >
                       <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-1.5 flex-shrink-0" />
                       {r}
                     </li>
@@ -364,16 +491,26 @@ export default function IntModDecision() {
 
               {/* CTAs */}
               <div className="card-base p-6 bg-[var(--color-navy)] text-white text-center">
-                <h3 className="font-display font-bold text-lg mb-2">Ready to take the next step?</h3>
+                <h3 className="font-display font-bold text-lg mb-2">
+                  Ready to take the next step?
+                </h3>
                 <p className="text-white/70 text-sm mb-5">
-                  Get a full personalised roadmap — including cost estimate, timeline, and matched flight schools.
+                  Get a full personalised roadmap — including cost estimate,
+                  timeline, and matched flight schools.
                 </p>
-                <Link href={resultCopy.ctaHref} className="btn-cta mb-3 w-full justify-center">
+                <Link
+                  href={resultCopy.ctaHref}
+                  className="btn-cta mb-3 w-full justify-center"
+                >
                   {resultCopy.cta}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <button
-                  onClick={() => { setStep(0); setAnswers({}); setSelected(null); }}
+                  onClick={() => {
+                    setStep(0);
+                    setAnswers({});
+                    setSelected(null);
+                  }}
                   className="text-sm text-white/60 hover:text-white transition-colors"
                 >
                   Start over

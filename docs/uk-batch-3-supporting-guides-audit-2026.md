@@ -9,16 +9,16 @@ This batch brings the UK supporting guides up to the elite standard. The main im
 
 ## What changed
 
-| Guide | Risk found | Fix made |
-| --- | --- | --- |
-| `PilotLifestyleUK.tsx` | Lifestyle outcomes sounded guaranteed; ignored regulatory limits. | Reframed around CAA Flight Time Limitations (FTLs), added nuance to roster patterns (fixed vs random), and clarified commuting rules. |
-| `PilotCvGuide.tsx` | CV advice was slightly generic; ignored ATS screening. | Added specific guidance on Applicant Tracking Systems (ATS), clarified UK vs US formats (no photos), and hardened logbook discrepancy warnings. |
-| `AirlineInterview.tsx` | Simulator assessment advice was too casual. | Hardened raw data flying descriptions (no flight director, no autothrust) and added specific UK test providers (Cut-e, Compass). |
-| `PilotAptitudeTest.tsx` | Described aptitude tests as pass/fail exams. | Reframed as normative percentile benchmarking; clarified that tests measure capacity under pressure, not aviation knowledge. |
-| `PilotAptitudeTestPrep.tsx` | Implied preparation guarantees a pass. | Clarified that preparation reduces avoidable errors and interface shock, allowing true aptitude to be measured accurately. |
-| `AmITooOld.tsx` | Career lengths were overly optimistic; ignored medical rules. | Added exact career runways (e.g., 23 years from age 40), clarified the "Over 60 Rule" for multi-pilot crews, and emphasised ROI. |
-| `PilotTrainingOver40.tsx` | Medical renewal frequency was imprecise. | Clarified the 6-month Class 1 renewal requirement for single-pilot at 40 and multi-pilot at 60, plus cardiovascular screening needs. |
-| `WomenInAviation.tsx` | Statistics and scholarship claims were slightly vague. | Added exact CAA 2023 licensing statistics (301 licences) and clarified that scholarships rarely cover the full £100k integrated cost. |
+| Guide                       | Risk found                                                        | Fix made                                                                                                                                        |
+| --------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `PilotLifestyleUK.tsx`      | Lifestyle outcomes sounded guaranteed; ignored regulatory limits. | Reframed around CAA Flight Time Limitations (FTLs), added nuance to roster patterns (fixed vs random), and clarified commuting rules.           |
+| `PilotCvGuide.tsx`          | CV advice was slightly generic; ignored ATS screening.            | Added specific guidance on Applicant Tracking Systems (ATS), clarified UK vs US formats (no photos), and hardened logbook discrepancy warnings. |
+| `AirlineInterview.tsx`      | Simulator assessment advice was too casual.                       | Hardened raw data flying descriptions (no flight director, no autothrust) and added specific UK test providers (Cut-e, Compass).                |
+| `PilotAptitudeTest.tsx`     | Described aptitude tests as pass/fail exams.                      | Reframed as normative percentile benchmarking; clarified that tests measure capacity under pressure, not aviation knowledge.                    |
+| `PilotAptitudeTestPrep.tsx` | Implied preparation guarantees a pass.                            | Clarified that preparation reduces avoidable errors and interface shock, allowing true aptitude to be measured accurately.                      |
+| `AmITooOld.tsx`             | Career lengths were overly optimistic; ignored medical rules.     | Added exact career runways (e.g., 23 years from age 40), clarified the "Over 60 Rule" for multi-pilot crews, and emphasised ROI.                |
+| `PilotTrainingOver40.tsx`   | Medical renewal frequency was imprecise.                          | Clarified the 6-month Class 1 renewal requirement for single-pilot at 40 and multi-pilot at 60, plus cardiovascular screening needs.            |
+| `WomenInAviation.tsx`       | Statistics and scholarship claims were slightly vague.            | Added exact CAA 2023 licensing statistics (301 licences) and clarified that scholarships rarely cover the full £100k integrated cost.           |
 
 ## Remaining elite-standard follow-ups
 

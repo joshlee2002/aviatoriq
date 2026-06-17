@@ -58,16 +58,43 @@ const FALLBACK_RATES: Record<string, number> = {
 
 const COUNTRY_CURRENCY: Record<string, string> = {
   // GBP
-  GB: "GBP", IM: "GBP", JE: "GBP", GG: "GBP",
+  GB: "GBP",
+  IM: "GBP",
+  JE: "GBP",
+  GG: "GBP",
   // USD
-  US: "USD", PR: "USD", GU: "USD", VI: "USD", AS: "USD", MP: "USD",
+  US: "USD",
+  PR: "USD",
+  GU: "USD",
+  VI: "USD",
+  AS: "USD",
+  MP: "USD",
   // EUR
-  DE: "EUR", FR: "EUR", ES: "EUR", IT: "EUR", NL: "EUR", BE: "EUR",
-  AT: "EUR", PT: "EUR", IE: "EUR", FI: "EUR", GR: "EUR", LU: "EUR",
-  SK: "EUR", SI: "EUR", EE: "EUR", LV: "EUR", LT: "EUR", CY: "EUR",
-  MT: "EUR", HR: "EUR",
+  DE: "EUR",
+  FR: "EUR",
+  ES: "EUR",
+  IT: "EUR",
+  NL: "EUR",
+  BE: "EUR",
+  AT: "EUR",
+  PT: "EUR",
+  IE: "EUR",
+  FI: "EUR",
+  GR: "EUR",
+  LU: "EUR",
+  SK: "EUR",
+  SI: "EUR",
+  EE: "EUR",
+  LV: "EUR",
+  LT: "EUR",
+  CY: "EUR",
+  MT: "EUR",
+  HR: "EUR",
   // AUD
-  AU: "AUD", CX: "AUD", CC: "AUD", NF: "AUD",
+  AU: "AUD",
+  CX: "AUD",
+  CC: "AUD",
+  NF: "AUD",
   // CAD
   CA: "CAD",
   // NZD
@@ -111,7 +138,7 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
       // Check localStorage override first
       const stored = localStorage.getItem("aviatoriq_currency");
       if (stored) {
-        const found = SUPPORTED_CURRENCIES.find((c) => c.code === stored);
+        const found = SUPPORTED_CURRENCIES.find(c => c.code === stored);
         if (found) {
           setCurrencyState(found);
           setConverting(false);
@@ -120,13 +147,15 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
       }
 
       try {
-        const res = await fetch("https://ipapi.co/json/", { signal: AbortSignal.timeout(4000) });
+        const res = await fetch("https://ipapi.co/json/", {
+          signal: AbortSignal.timeout(4000),
+        });
         if (!res.ok) throw new Error("geo failed");
         const data = await res.json();
         if (cancelled) return;
         const countryCode: string = data.country_code ?? "";
         const currencyCode = COUNTRY_CURRENCY[countryCode] ?? "GBP";
-        const found = SUPPORTED_CURRENCIES.find((c) => c.code === currencyCode);
+        const found = SUPPORTED_CURRENCIES.find(c => c.code === currencyCode);
         if (found) setCurrencyState(found);
       } catch {
         // silently fall back to GBP
@@ -136,7 +165,9 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
     }
 
     detect();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   // 2. Fetch live rates (GBP base) from open.er-api.com (free, no key needed)
@@ -146,10 +177,9 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
     async function fetchRates() {
       try {
         // Use open.er-api.com — free tier, no API key required
-        const res = await fetch(
-          `https://open.er-api.com/v6/latest/GBP`,
-          { signal: AbortSignal.timeout(5000) }
-        );
+        const res = await fetch(`https://open.er-api.com/v6/latest/GBP`, {
+          signal: AbortSignal.timeout(5000),
+        });
         if (!res.ok) throw new Error("rates failed");
         const data = await res.json();
         if (cancelled) return;
@@ -162,11 +192,13 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
     }
 
     fetchRates();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const setCurrency = useCallback((code: string) => {
-    const found = SUPPORTED_CURRENCIES.find((c) => c.code === code);
+    const found = SUPPORTED_CURRENCIES.find(c => c.code === code);
     if (!found) return;
     setCurrencyState(found);
     localStorage.setItem("aviatoriq_currency", code);
@@ -191,7 +223,9 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
   );
 
   return (
-    <CurrencyContext.Provider value={{ currency, rates, setCurrency, formatPrice, converting }}>
+    <CurrencyContext.Provider
+      value={{ currency, rates, setCurrency, formatPrice, converting }}
+    >
       {children}
     </CurrencyContext.Provider>
   );

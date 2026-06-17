@@ -59,8 +59,12 @@ export const leads = mysqlTable("leads", {
   aiSummary: text("aiSummary"),
   aiRoadmap: text("aiRoadmap"),
   leadScore: int("leadScore").default(0).notNull(),
-  leadCategory: mysqlEnum("leadCategory", ["Hot", "Warm", "Cold"]).default("Cold").notNull(),
-  leadValue: mysqlEnum("leadValue", ["High", "Medium", "Low"]).default("Low").notNull(),
+  leadCategory: mysqlEnum("leadCategory", ["Hot", "Warm", "Cold"])
+    .default("Cold")
+    .notNull(),
+  leadValue: mysqlEnum("leadValue", ["High", "Medium", "Low"])
+    .default("Low")
+    .notNull(),
   intentScore: int("intentScore").default(0).notNull(),
   pdfKey: varchar("pdfKey", { length: 500 }),
   status: mysqlEnum("status", [
@@ -72,7 +76,9 @@ export const leads = mysqlTable("leads", {
     "Not Suitable",
     "Converted",
     "Archived",
-  ]).default("New").notNull(),
+  ])
+    .default("New")
+    .notNull(),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
 });
@@ -91,8 +97,16 @@ export const flightSchools = mysqlTable("flight_schools", {
   modularAtpl: boolean("modularAtpl").default(false),
   ppl: boolean("ppl").default(false),
   priceRange: varchar("priceRange", { length: 100 }),
-  financeAvailable: mysqlEnum("financeAvailable", ["yes", "no", "unknown"]).default("unknown"),
-  accommodationAvailable: mysqlEnum("accommodationAvailable", ["yes", "no", "unknown"]).default("unknown"),
+  financeAvailable: mysqlEnum("financeAvailable", [
+    "yes",
+    "no",
+    "unknown",
+  ]).default("unknown"),
+  accommodationAvailable: mysqlEnum("accommodationAvailable", [
+    "yes",
+    "no",
+    "unknown",
+  ]).default("unknown"),
   airlinePartnerships: text("airlinePartnerships"),
   website: varchar("website", { length: 500 }),
   contactEmail: varchar("contactEmail", { length: 320 }),
@@ -152,12 +166,15 @@ export const introductionRequests = mysqlTable("introduction_requests", {
   leadId: int("leadId").notNull(),
   schoolId: int("schoolId").notNull(),
   schoolName: varchar("schoolName", { length: 255 }),
-  status: mysqlEnum("status", ["Pending", "Sent", "Responded", "Declined"]).default("Pending").notNull(),
+  status: mysqlEnum("status", ["Pending", "Sent", "Responded", "Declined"])
+    .default("Pending")
+    .notNull(),
   sentAt: timestamp("sentAt"),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
 });
 export type IntroductionRequest = typeof introductionRequests.$inferSelect;
-export type InsertIntroductionRequest = typeof introductionRequests.$inferInsert;
+export type InsertIntroductionRequest =
+  typeof introductionRequests.$inferInsert;
 
 // ─── Licence Quiz Leads ───────────────────────────────────────────────────────
 export const licenceQuizLeads = mysqlTable("licence_quiz_leads", {
@@ -208,19 +225,24 @@ export type FlightDeckShare = typeof flightDeckShares.$inferSelect;
 export type InsertFlightDeckShare = typeof flightDeckShares.$inferInsert;
 
 // ─── Flight Deck Email Captures ───────────────────────────────────────────────
-export const flightDeckEmailCaptures = mysqlTable("flight_deck_email_captures", {
-  id: int("id").autoincrement().primaryKey(),
-  email: varchar("email", { length: 320 }).notNull(),
-  name: varchar("name", { length: 200 }),
-  phase: varchar("phase", { length: 50 }),
-  score: int("score"),
-  biggestBarrier: varchar("biggestBarrier", { length: 100 }),
-  consentToContact: boolean("consentToContact").default(false).notNull(),
-  source: varchar("source", { length: 100 }).default("flight_deck_results"),
-  createdAt: timestamp("createdAt").defaultNow().notNull(),
-});
-export type FlightDeckEmailCapture = typeof flightDeckEmailCaptures.$inferSelect;
-export type InsertFlightDeckEmailCapture = typeof flightDeckEmailCaptures.$inferInsert;
+export const flightDeckEmailCaptures = mysqlTable(
+  "flight_deck_email_captures",
+  {
+    id: int("id").autoincrement().primaryKey(),
+    email: varchar("email", { length: 320 }).notNull(),
+    name: varchar("name", { length: 200 }),
+    phase: varchar("phase", { length: 50 }),
+    score: int("score"),
+    biggestBarrier: varchar("biggestBarrier", { length: 100 }),
+    consentToContact: boolean("consentToContact").default(false).notNull(),
+    source: varchar("source", { length: 100 }).default("flight_deck_results"),
+    createdAt: timestamp("createdAt").defaultNow().notNull(),
+  }
+);
+export type FlightDeckEmailCapture =
+  typeof flightDeckEmailCaptures.$inferSelect;
+export type InsertFlightDeckEmailCapture =
+  typeof flightDeckEmailCaptures.$inferInsert;
 
 // ─── Calculator Sessions ──────────────────────────────────────────────────────
 export const calcSessions = mysqlTable("calc_sessions", {
@@ -240,8 +262,18 @@ export type InsertCalcSession = typeof calcSessions.$inferInsert;
 export const schoolSubscriptions = mysqlTable("school_subscriptions", {
   id: int("id").autoincrement().primaryKey(),
   schoolId: int("schoolId").notNull().unique(),
-  tier: mysqlEnum("tier", ["basic", "featured", "premium"]).default("basic").notNull(),
-  status: mysqlEnum("status", ["active", "trialing", "past_due", "cancelled", "pending"]).default("pending").notNull(),
+  tier: mysqlEnum("tier", ["basic", "featured", "premium"])
+    .default("basic")
+    .notNull(),
+  status: mysqlEnum("status", [
+    "active",
+    "trialing",
+    "past_due",
+    "cancelled",
+    "pending",
+  ])
+    .default("pending")
+    .notNull(),
   stripeCustomerId: varchar("stripeCustomerId", { length: 255 }),
   stripeSubscriptionId: varchar("stripeSubscriptionId", { length: 255 }),
   leadCreditsUsed: int("leadCreditsUsed").default(0).notNull(),

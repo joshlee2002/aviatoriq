@@ -75,13 +75,20 @@ export async function upsertUser(user: InsertUser): Promise<void> {
   if (!values.lastSignedIn) values.lastSignedIn = new Date();
   if (Object.keys(updateSet).length === 0) updateSet.lastSignedIn = new Date();
 
-  await db.insert(users).values(values).onDuplicateKeyUpdate({ set: updateSet });
+  await db
+    .insert(users)
+    .values(values)
+    .onDuplicateKeyUpdate({ set: updateSet });
 }
 
 export async function getUserByOpenId(openId: string) {
   const db = await getDb();
   if (!db) return undefined;
-  const result = await db.select().from(users).where(eq(users.openId, openId)).limit(1);
+  const result = await db
+    .select()
+    .from(users)
+    .where(eq(users.openId, openId))
+    .limit(1);
   return result[0];
 }
 
@@ -100,7 +107,10 @@ export async function getLeadById(id: number): Promise<Lead | undefined> {
   return result[0];
 }
 
-export async function updateLead(id: number, data: Partial<InsertLead>): Promise<void> {
+export async function updateLead(
+  id: number,
+  data: Partial<InsertLead>
+): Promise<void> {
   const db = await getDb();
   if (!db) return;
   await db.update(leads).set(data).where(eq(leads.id, id));
@@ -130,7 +140,9 @@ export interface LeadFilters {
   sortDir?: "asc" | "desc";
 }
 
-export async function listLeads(filters: LeadFilters = {}): Promise<{ items: Lead[]; total: number }> {
+export async function listLeads(
+  filters: LeadFilters = {}
+): Promise<{ items: Lead[]; total: number }> {
   const db = await getDb();
   if (!db) return { items: [], total: 0 };
 
@@ -139,19 +151,33 @@ export async function listLeads(filters: LeadFilters = {}): Promise<{ items: Lea
   if (filters.search) {
     const term = `%${filters.search}%`;
     conditions.push(
-      or(like(leads.fullName, term), like(leads.email, term), like(leads.country, term))
+      or(
+        like(leads.fullName, term),
+        like(leads.email, term),
+        like(leads.country, term)
+      )
     );
   }
   if (filters.country) conditions.push(eq(leads.country, filters.country));
-  if (filters.category) conditions.push(eq(leads.leadCategory, filters.category as Lead["leadCategory"]));
-  if (filters.status) conditions.push(eq(leads.status, filters.status as Lead["status"]));
-  if (filters.pilotGoal) conditions.push(eq(leads.pilotGoal, filters.pilotGoal));
-  if (filters.budgetRange) conditions.push(eq(leads.budgetRange, filters.budgetRange));
-  if (filters.startTimeframe) conditions.push(eq(leads.startTimeframe, filters.startTimeframe));
-  if (filters.wantsFinanceInfo) conditions.push(eq(leads.wantsFinanceInfo, filters.wantsFinanceInfo));
+  if (filters.category)
+    conditions.push(
+      eq(leads.leadCategory, filters.category as Lead["leadCategory"])
+    );
+  if (filters.status)
+    conditions.push(eq(leads.status, filters.status as Lead["status"]));
+  if (filters.pilotGoal)
+    conditions.push(eq(leads.pilotGoal, filters.pilotGoal));
+  if (filters.budgetRange)
+    conditions.push(eq(leads.budgetRange, filters.budgetRange));
+  if (filters.startTimeframe)
+    conditions.push(eq(leads.startTimeframe, filters.startTimeframe));
+  if (filters.wantsFinanceInfo)
+    conditions.push(eq(leads.wantsFinanceInfo, filters.wantsFinanceInfo));
   if (filters.source) conditions.push(eq(leads.source, filters.source));
-  if (filters.minScore !== undefined) conditions.push(gte(leads.leadScore, filters.minScore));
-  if (filters.maxScore !== undefined) conditions.push(lte(leads.leadScore, filters.maxScore));
+  if (filters.minScore !== undefined)
+    conditions.push(gte(leads.leadScore, filters.minScore));
+  if (filters.maxScore !== undefined)
+    conditions.push(lte(leads.leadScore, filters.maxScore));
 
   const where = conditions.length > 0 ? and(...(conditions as [])) : undefined;
 
@@ -161,11 +187,25 @@ export async function listLeads(filters: LeadFilters = {}): Promise<{ items: Lea
 
   const sortField = filters.sortBy ?? "createdAt";
   const sortDir = filters.sortDir ?? "desc";
-  const orderCol = sortField === "leadScore" ? leads.leadScore : sortField === "intentScore" ? leads.intentScore : leads.createdAt;
+  const orderCol =
+    sortField === "leadScore"
+      ? leads.leadScore
+      : sortField === "intentScore"
+        ? leads.intentScore
+        : leads.createdAt;
   const orderExpr = sortDir === "asc" ? asc(orderCol) : desc(orderCol);
   const [items, countResult] = await Promise.all([
-    db.select().from(leads).where(where).orderBy(orderExpr).limit(pageSize).offset(offset),
-    db.select({ count: sql<number>`count(*)` }).from(leads).where(where),
+    db
+      .select()
+      .from(leads)
+      .where(where)
+      .orderBy(orderExpr)
+      .limit(pageSize)
+      .offset(offset),
+    db
+      .select({ count: sql<number>`count(*)` })
+      .from(leads)
+      .where(where),
   ]);
 
   return { items, total: Number(countResult[0]?.count ?? 0) };
@@ -184,21 +224,32 @@ export async function createAdminNote(data: InsertAdminNote): Promise<void> {
   await db.insert(adminNotes).values(data);
 }
 
-export async function getAdminNotesByLeadId(leadId: number): Promise<AdminNote[]> {
+export async function getAdminNotesByLeadId(
+  leadId: number
+): Promise<AdminNote[]> {
   const db = await getDb();
   if (!db) return [];
-  return db.select().from(adminNotes).where(eq(adminNotes.leadId, leadId)).orderBy(desc(adminNotes.createdAt));
+  return db
+    .select()
+    .from(adminNotes)
+    .where(eq(adminNotes.leadId, leadId))
+    .orderBy(desc(adminNotes.createdAt));
 }
 
 // ─── Flight Schools ───────────────────────────────────────────────────────────
-export async function createFlightSchool(data: InsertFlightSchool): Promise<number> {
+export async function createFlightSchool(
+  data: InsertFlightSchool
+): Promise<number> {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
   const result = await db.insert(flightSchools).values(data);
   return (result[0] as { insertId: number }).insertId;
 }
 
-export async function updateFlightSchool(id: number, data: Partial<InsertFlightSchool>): Promise<void> {
+export async function updateFlightSchool(
+  id: number,
+  data: Partial<InsertFlightSchool>
+): Promise<void> {
   const db = await getDb();
   if (!db) return;
   await db.update(flightSchools).set(data).where(eq(flightSchools.id, id));
@@ -219,37 +270,65 @@ export interface SchoolFilters {
   activeOnly?: boolean;
 }
 
-export async function listFlightSchools(filters: SchoolFilters = {}): Promise<FlightSchool[]> {
+export async function listFlightSchools(
+  filters: SchoolFilters = {}
+): Promise<FlightSchool[]> {
   const db = await getDb();
   if (!db) return [];
 
   const conditions = [];
-  if (filters.activeOnly !== false) conditions.push(eq(flightSchools.active, true));
-  if (filters.country) conditions.push(eq(flightSchools.country, filters.country));
-  if (filters.integratedAtpl) conditions.push(eq(flightSchools.integratedAtpl, true));
+  if (filters.activeOnly !== false)
+    conditions.push(eq(flightSchools.active, true));
+  if (filters.country)
+    conditions.push(eq(flightSchools.country, filters.country));
+  if (filters.integratedAtpl)
+    conditions.push(eq(flightSchools.integratedAtpl, true));
   if (filters.modularAtpl) conditions.push(eq(flightSchools.modularAtpl, true));
   if (filters.ppl) conditions.push(eq(flightSchools.ppl, true));
-  if (filters.financeAvailable) conditions.push(sql`${flightSchools.financeAvailable} = ${filters.financeAvailable}`);
+  if (filters.financeAvailable)
+    conditions.push(
+      sql`${flightSchools.financeAvailable} = ${filters.financeAvailable}`
+    );
 
   const where = conditions.length > 0 ? and(...(conditions as [])) : undefined;
-  return db.select().from(flightSchools).where(where).orderBy(flightSchools.name);
+  return db
+    .select()
+    .from(flightSchools)
+    .where(where)
+    .orderBy(flightSchools.name);
 }
 
-export async function getFlightSchoolById(id: number): Promise<FlightSchool | undefined> {
+export async function getFlightSchoolById(
+  id: number
+): Promise<FlightSchool | undefined> {
   const db = await getDb();
   if (!db) return undefined;
-  const result = await db.select().from(flightSchools).where(eq(flightSchools.id, id)).limit(1);
+  const result = await db
+    .select()
+    .from(flightSchools)
+    .where(eq(flightSchools.id, id))
+    .limit(1);
   return result[0];
 }
 
 // ─── Lead Assignments ─────────────────────────────────────────────────────────
-export async function createLeadAssignment(data: InsertLeadAssignment): Promise<void> {
+export async function createLeadAssignment(
+  data: InsertLeadAssignment
+): Promise<void> {
   const db = await getDb();
   if (!db) return;
   await db.insert(leadAssignments).values(data);
 }
 
-export async function getLeadAssignments(leadId: number): Promise<(LeadAssignment & { schoolName: string | null; schoolContactEmail: string | null; schoolWebsite: string | null })[]> {
+export async function getLeadAssignments(
+  leadId: number
+): Promise<
+  (LeadAssignment & {
+    schoolName: string | null;
+    schoolContactEmail: string | null;
+    schoolWebsite: string | null;
+  })[]
+> {
   const db = await getDb();
   if (!db) return [];
   const rows = await db
@@ -305,24 +384,64 @@ export async function matchSchoolsForLead(lead: {
 
   const where = and(...(conditions as []));
   const results = await db.select().from(flightSchools).where(where).limit(6);
+
+  // ── Country fallback: if fewer than 3 local results, expand globally ──────
+  // This prevents an empty school section for countries with limited coverage.
+  if (results.length < 3 && lead.country) {
+    // Build fallback conditions without country filter
+    const fallbackConditions = [eq(flightSchools.active, true)] as Parameters<
+      typeof and
+    >;
+    if (lead.preferredRoute === "Integrated ATPL") {
+      fallbackConditions.push(eq(flightSchools.integratedAtpl, true));
+    } else if (lead.preferredRoute === "Modular ATPL") {
+      fallbackConditions.push(eq(flightSchools.modularAtpl, true));
+    } else if (lead.preferredRoute === "PPL only") {
+      fallbackConditions.push(eq(flightSchools.ppl, true));
+    }
+    if (lead.wantsFinanceInfo === "Yes") {
+      fallbackConditions.push(sql`${flightSchools.financeAvailable} = 'yes'`);
+    }
+    const fallbackWhere = and(...(fallbackConditions as []));
+    const fallbackResults = await db
+      .select()
+      .from(flightSchools)
+      .where(fallbackWhere)
+      .limit(6);
+    // Return fallback results, marking them so the UI can show the global note
+    // Deduplicate: prefer local results first, then fill with global
+    const localIds = new Set(results.map(r => r.id));
+    const extras = fallbackResults.filter(r => !localIds.has(r.id));
+    return [...results, ...extras].slice(0, 6);
+  }
+
   return results;
 }
 
 // ─── Introduction Requests ────────────────────────────────────────────────────
-export async function createIntroductionRequest(data: InsertIntroductionRequest): Promise<number> {
+export async function createIntroductionRequest(
+  data: InsertIntroductionRequest
+): Promise<number> {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
   const result = await db.insert(introductionRequests).values(data);
   return (result[0] as { insertId: number }).insertId;
 }
 
-export async function getIntroductionRequestsByLeadId(leadId: number): Promise<IntroductionRequest[]> {
+export async function getIntroductionRequestsByLeadId(
+  leadId: number
+): Promise<IntroductionRequest[]> {
   const db = await getDb();
   if (!db) return [];
-  return db.select().from(introductionRequests).where(eq(introductionRequests.leadId, leadId));
+  return db
+    .select()
+    .from(introductionRequests)
+    .where(eq(introductionRequests.leadId, leadId));
 }
 
-export async function listAllIntroductionRequests(): Promise<(IntroductionRequest & { schoolContactEmail: string | null })[]> {
+export async function listAllIntroductionRequests(): Promise<
+  (IntroductionRequest & { schoolContactEmail: string | null })[]
+> {
   const db = await getDb();
   if (!db) return [];
   const rows = await db
@@ -337,7 +456,10 @@ export async function listAllIntroductionRequests(): Promise<(IntroductionReques
       schoolContactEmail: flightSchools.contactEmail,
     })
     .from(introductionRequests)
-    .leftJoin(flightSchools, eq(introductionRequests.schoolId, flightSchools.id))
+    .leftJoin(
+      flightSchools,
+      eq(introductionRequests.schoolId, flightSchools.id)
+    )
     .orderBy(introductionRequests.createdAt);
   return rows;
 }
@@ -355,7 +477,10 @@ export async function createSchoolWaitlistEntry(
 export async function listSchoolWaitlist(): Promise<SchoolWaitlistEntry[]> {
   const db = await getDb();
   if (!db) return [];
-  return db.select().from(schoolWaitlist).orderBy(desc(schoolWaitlist.createdAt));
+  return db
+    .select()
+    .from(schoolWaitlist)
+    .orderBy(desc(schoolWaitlist.createdAt));
 }
 
 // ─── Analytics ──────────────────────────────────────────────────────────────────
@@ -370,29 +495,50 @@ export async function getLaunchStats() {
   const sevenDaysAgo = now - 7 * 24 * 60 * 60 * 1000;
 
   const recent = allLeads.filter(l => l.createdAt.getTime() >= sevenDaysAgo);
-  const recentIntros = allIntros.filter(i => i.createdAt.getTime() >= sevenDaysAgo);
+  const recentIntros = allIntros.filter(
+    i => i.createdAt.getTime() >= sevenDaysAgo
+  );
 
   const total7d = recent.length;
-  const hot7d = recent.filter(l => l.leadCategory === 'Hot').length;
+  const hot7d = recent.filter(l => l.leadCategory === "Hot").length;
   const introLeads7d = new Set(recentIntros.map(i => i.leadId)).size;
-  const introRate7d = total7d > 0 ? Math.round((introLeads7d / total7d) * 100) : 0;
-  const avgScore7d = total7d > 0 ? Math.round(recent.reduce((s, l) => s + (l.leadScore ?? 0), 0) / total7d) : 0;
-  const avgBudget7d = total7d > 0 ? (() => {
-    const budgetMap: Record<string, number> = {};
-    for (const l of recent) { const b = l.budgetRange ?? 'Unknown'; budgetMap[b] = (budgetMap[b] ?? 0) + 1; }
-    return Object.entries(budgetMap).sort((a, b) => b[1] - a[1])[0]?.[0] ?? 'N/A';
-  })() : 'N/A';
+  const introRate7d =
+    total7d > 0 ? Math.round((introLeads7d / total7d) * 100) : 0;
+  const avgScore7d =
+    total7d > 0
+      ? Math.round(recent.reduce((s, l) => s + (l.leadScore ?? 0), 0) / total7d)
+      : 0;
+  const avgBudget7d =
+    total7d > 0
+      ? (() => {
+          const budgetMap: Record<string, number> = {};
+          for (const l of recent) {
+            const b = l.budgetRange ?? "Unknown";
+            budgetMap[b] = (budgetMap[b] ?? 0) + 1;
+          }
+          return (
+            Object.entries(budgetMap).sort((a, b) => b[1] - a[1])[0]?.[0] ??
+            "N/A"
+          );
+        })()
+      : "N/A";
 
   const topSource7d = (() => {
     const srcMap: Record<string, number> = {};
-    for (const l of recent) { const s = l.source ?? 'Unknown'; srcMap[s] = (srcMap[s] ?? 0) + 1; }
-    return Object.entries(srcMap).sort((a, b) => b[1] - a[1])[0]?.[0] ?? 'N/A';
+    for (const l of recent) {
+      const s = l.source ?? "Unknown";
+      srcMap[s] = (srcMap[s] ?? 0) + 1;
+    }
+    return Object.entries(srcMap).sort((a, b) => b[1] - a[1])[0]?.[0] ?? "N/A";
   })();
 
   const topCountry7d = (() => {
     const cMap: Record<string, number> = {};
-    for (const l of recent) { const c = l.country ?? 'Unknown'; cMap[c] = (cMap[c] ?? 0) + 1; }
-    return Object.entries(cMap).sort((a, b) => b[1] - a[1])[0]?.[0] ?? 'N/A';
+    for (const l of recent) {
+      const c = l.country ?? "Unknown";
+      cMap[c] = (cMap[c] ?? 0) + 1;
+    }
+    return Object.entries(cMap).sort((a, b) => b[1] - a[1])[0]?.[0] ?? "N/A";
   })();
 
   // Leads per day last 7 days
@@ -400,7 +546,12 @@ export async function getLaunchStats() {
   for (let i = 6; i >= 0; i--) {
     const d = new Date(now - i * 24 * 60 * 60 * 1000);
     const dayStr = d.toISOString().slice(0, 10);
-    leadsPerDay7d.push({ date: dayStr, count: recent.filter(l => l.createdAt.toISOString().slice(0, 10) === dayStr).length });
+    leadsPerDay7d.push({
+      date: dayStr,
+      count: recent.filter(
+        l => l.createdAt.toISOString().slice(0, 10) === dayStr
+      ).length,
+    });
   }
 
   return {
@@ -415,7 +566,7 @@ export async function getLaunchStats() {
     leadsPerDay7d,
     // All-time totals for context
     totalAllTime: allLeads.length,
-    hotAllTime: allLeads.filter(l => l.leadCategory === 'Hot').length,
+    hotAllTime: allLeads.filter(l => l.leadCategory === "Hot").length,
     introAllTime: new Set(allIntros.map(i => i.leadId)).size,
   };
 }
@@ -426,63 +577,85 @@ export async function getLeadAnalytics() {
 
   const allLeads = await db.select().from(leads);
   const total = allLeads.length;
-  if (total === 0) return { total: 0, hot: 0, warm: 0, cold: 0, introductionRequestRate: 0, avgScore: 0, countryBreakdown: {}, goalBreakdown: {}, fundingBreakdown: {}, budgetBreakdown: {}, scoreDistribution: [], leadsPerDay: [] };
+  if (total === 0)
+    return {
+      total: 0,
+      hot: 0,
+      warm: 0,
+      cold: 0,
+      introductionRequestRate: 0,
+      avgScore: 0,
+      countryBreakdown: {},
+      goalBreakdown: {},
+      fundingBreakdown: {},
+      budgetBreakdown: {},
+      scoreDistribution: [],
+      leadsPerDay: [],
+    };
 
-  const hot = allLeads.filter(l => l.leadCategory === 'Hot').length;
-  const warm = allLeads.filter(l => l.leadCategory === 'Warm').length;
-  const cold = allLeads.filter(l => l.leadCategory === 'Cold').length;
-  const avgScore = Math.round(allLeads.reduce((s, l) => s + (l.leadScore ?? 0), 0) / total);
+  const hot = allLeads.filter(l => l.leadCategory === "Hot").length;
+  const warm = allLeads.filter(l => l.leadCategory === "Warm").length;
+  const cold = allLeads.filter(l => l.leadCategory === "Cold").length;
+  const avgScore = Math.round(
+    allLeads.reduce((s, l) => s + (l.leadScore ?? 0), 0) / total
+  );
 
   // Introduction request rate
   const allIntros = await db.select().from(introductionRequests);
   const leadsWithIntros = new Set(allIntros.map(i => i.leadId)).size;
-  const introductionRequestRate = total > 0 ? Math.round((leadsWithIntros / total) * 100) : 0;
+  const introductionRequestRate =
+    total > 0 ? Math.round((leadsWithIntros / total) * 100) : 0;
 
   // Country breakdown
   const countryBreakdown: Record<string, number> = {};
   for (const l of allLeads) {
-    const c = l.country ?? 'Unknown';
+    const c = l.country ?? "Unknown";
     countryBreakdown[c] = (countryBreakdown[c] ?? 0) + 1;
   }
 
   // Goal breakdown
   const goalBreakdown: Record<string, number> = {};
   for (const l of allLeads) {
-    const g = l.pilotGoal ?? 'Unknown';
+    const g = l.pilotGoal ?? "Unknown";
     goalBreakdown[g] = (goalBreakdown[g] ?? 0) + 1;
   }
 
   // Funding breakdown
   const fundingBreakdown: Record<string, number> = {};
   for (const l of allLeads) {
-    const f = l.fundingMethod ?? 'Unknown';
+    const f = l.fundingMethod ?? "Unknown";
     fundingBreakdown[f] = (fundingBreakdown[f] ?? 0) + 1;
   }
 
   // Budget breakdown
   const budgetBreakdown: Record<string, number> = {};
   for (const l of allLeads) {
-    const b = l.budgetRange ?? 'Unknown';
+    const b = l.budgetRange ?? "Unknown";
     budgetBreakdown[b] = (budgetBreakdown[b] ?? 0) + 1;
   }
 
   // Source breakdown
   const sourceBreakdown: Record<string, number> = {};
   for (const l of allLeads) {
-    const s = (l as any).source ?? 'Unknown';
-    if (s && s !== 'Unknown') sourceBreakdown[s] = (sourceBreakdown[s] ?? 0) + 1;
+    const s = (l as any).source ?? "Unknown";
+    if (s && s !== "Unknown")
+      sourceBreakdown[s] = (sourceBreakdown[s] ?? 0) + 1;
   }
 
   // Score distribution (buckets of 10)
   const scoreDistribution = Array.from({ length: 10 }, (_, i) => ({
     range: `${i * 10}–${i * 10 + 9}`,
-    count: allLeads.filter(l => (l.leadScore ?? 0) >= i * 10 && (l.leadScore ?? 0) <= i * 10 + 9).length,
+    count: allLeads.filter(
+      l => (l.leadScore ?? 0) >= i * 10 && (l.leadScore ?? 0) <= i * 10 + 9
+    ).length,
   }));
 
   // Leads per day (last 30 days)
   const now = Date.now();
   const thirtyDaysAgo = now - 30 * 24 * 60 * 60 * 1000;
-  const recentLeads = allLeads.filter(l => l.createdAt.getTime() >= thirtyDaysAgo);
+  const recentLeads = allLeads.filter(
+    l => l.createdAt.getTime() >= thirtyDaysAgo
+  );
   const leadsPerDayMap: Record<string, number> = {};
   for (const l of recentLeads) {
     const day = l.createdAt.toISOString().slice(0, 10);
@@ -512,7 +685,10 @@ export async function getLeadAnalytics() {
 // ─── Licence Quiz Helpers ─────────────────────────────────────────────────────
 
 export async function createLicenceQuizLead(
-  data: Omit<InsertLicenceQuizLead, "id" | "createdAt" | "email" | "consentToContact" | "proceededToMainQuiz">
+  data: Omit<
+    InsertLicenceQuizLead,
+    "id" | "createdAt" | "email" | "consentToContact" | "proceededToMainQuiz"
+  >
 ) {
   const db = await getDb();
   if (!db) throw new Error("Database unavailable");
@@ -524,13 +700,22 @@ export async function createLicenceQuizLead(
   return { id: (result as any).insertId as number };
 }
 
-export async function updateLicenceQuizEmail(id: number, email: string, consentToContact: boolean) {
+export async function updateLicenceQuizEmail(
+  id: number,
+  email: string,
+  consentToContact: boolean
+) {
   const db = await getDb();
   if (!db) return;
-  await db.update(licenceQuizLeads).set({ email, consentToContact }).where(eq(licenceQuizLeads.id, id));
+  await db
+    .update(licenceQuizLeads)
+    .set({ email, consentToContact })
+    .where(eq(licenceQuizLeads.id, id));
 }
 
-export async function getLicenceQuizStats(): Promise<Record<string, { total: number; proceededRate: number }>> {
+export async function getLicenceQuizStats(): Promise<
+  Record<string, { total: number; proceededRate: number }>
+> {
   const db = await getDb();
   if (!db) return {};
   const rows = await db.select().from(licenceQuizLeads);
@@ -544,13 +729,24 @@ export async function getLicenceQuizStats(): Promise<Record<string, { total: num
   return Object.fromEntries(
     Object.entries(stats).map(([k, v]) => [
       k,
-      { total: v.total, proceededRate: v.total > 0 ? Math.round((v.proceeded / v.total) * 100) : 0 },
+      {
+        total: v.total,
+        proceededRate:
+          v.total > 0 ? Math.round((v.proceeded / v.total) * 100) : 0,
+      },
     ])
   );
 }
 
 // ─── Finance Interest helpers ─────────────────────────────────────────────────
-import { financeInterests, flightDeckShares, flightDeckEmailCaptures, schoolSubscriptions, InsertFlightDeckEmailCapture, InsertSchoolSubscription } from "../drizzle/schema";
+import {
+  financeInterests,
+  flightDeckShares,
+  flightDeckEmailCaptures,
+  schoolSubscriptions,
+  InsertFlightDeckEmailCapture,
+  InsertSchoolSubscription,
+} from "../drizzle/schema";
 
 export async function createFinanceInterest(data: {
   name: string;
@@ -580,16 +776,25 @@ export async function createFinanceInterest(data: {
 }
 
 // ─── Flight Deck Share helpers ────────────────────────────────────────────────
-export async function createFlightDeckShare(shareId: string, resultJson: string): Promise<void> {
+export async function createFlightDeckShare(
+  shareId: string,
+  resultJson: string
+): Promise<void> {
   const db = await getDb();
   if (!db) return;
   await db.insert(flightDeckShares).values({ shareId, resultJson });
 }
 
-export async function getFlightDeckShare(shareId: string): Promise<string | null> {
+export async function getFlightDeckShare(
+  shareId: string
+): Promise<string | null> {
   const db = await getDb();
   if (!db) return null;
-  const rows = await db.select().from(flightDeckShares).where(eq(flightDeckShares.shareId, shareId)).limit(1);
+  const rows = await db
+    .select()
+    .from(flightDeckShares)
+    .where(eq(flightDeckShares.shareId, shareId))
+    .limit(1);
   return rows[0]?.resultJson ?? null;
 }
 
@@ -613,11 +818,11 @@ export async function createFlightDeckEmailCapture(data: {
       score: data.score ?? null,
       biggestBarrier: data.biggestBarrier ?? null,
       consentToContact: data.consentToContact,
-      source: data.source ?? 'flight_deck_results',
+      source: data.source ?? "flight_deck_results",
     });
     return (result as any)[0]?.insertId ?? null;
   } catch (e) {
-    console.error('[DB] createFlightDeckEmailCapture failed:', e);
+    console.error("[DB] createFlightDeckEmailCapture failed:", e);
     return null;
   }
 }
@@ -626,23 +831,34 @@ export async function createFlightDeckEmailCapture(data: {
 export async function getSchoolSubscription(schoolId: number) {
   const db = await getDb();
   if (!db) return null;
-  const rows = await db.select().from(schoolSubscriptions).where(eq(schoolSubscriptions.schoolId, schoolId)).limit(1);
+  const rows = await db
+    .select()
+    .from(schoolSubscriptions)
+    .where(eq(schoolSubscriptions.schoolId, schoolId))
+    .limit(1);
   return rows[0] ?? null;
 }
 
-export async function upsertSchoolSubscription(data: Omit<InsertSchoolSubscription, 'id' | 'createdAt' | 'updatedAt'>) {
+export async function upsertSchoolSubscription(
+  data: Omit<InsertSchoolSubscription, "id" | "createdAt" | "updatedAt">
+) {
   const db = await getDb();
   if (!db) return;
   const existing = await getSchoolSubscription(data.schoolId);
   if (existing) {
-    await db.update(schoolSubscriptions).set({ ...data }).where(eq(schoolSubscriptions.schoolId, data.schoolId));
+    await db
+      .update(schoolSubscriptions)
+      .set({ ...data })
+      .where(eq(schoolSubscriptions.schoolId, data.schoolId));
   } else {
     await db.insert(schoolSubscriptions).values(data);
   }
 }
 
 // ─── Calculator Sessions ──────────────────────────────────────────────────────
-export async function createCalcSession(data: Omit<InsertCalcSession, "id" | "createdAt">): Promise<void> {
+export async function createCalcSession(
+  data: Omit<InsertCalcSession, "id" | "createdAt">
+): Promise<void> {
   const db = await getDb();
   if (!db) return;
   try {
@@ -655,24 +871,32 @@ export async function createCalcSession(data: Omit<InsertCalcSession, "id" | "cr
 // ─── Public Platform Stats (homepage) ───────────────────────────────────────
 export async function getPublicPlatformStats() {
   const db = await getDb();
-  if (!db) return { totalAssessments: 0, avgScore: 0, mostCommonBarrier: "Finance" };
+  if (!db)
+    return { totalAssessments: 0, avgScore: 0, mostCommonBarrier: "Finance" };
 
-  const allLeads = await db.select({
-    leadScore: leads.leadScore,
-    biggestConcern: leads.biggestConcern,
-  }).from(leads);
+  const allLeads = await db
+    .select({
+      leadScore: leads.leadScore,
+      biggestConcern: leads.biggestConcern,
+    })
+    .from(leads);
 
   const totalAssessments = allLeads.length;
-  const avgScore = totalAssessments > 0
-    ? Math.round(allLeads.reduce((s, l) => s + (l.leadScore ?? 0), 0) / totalAssessments)
-    : 0;
+  const avgScore =
+    totalAssessments > 0
+      ? Math.round(
+          allLeads.reduce((s, l) => s + (l.leadScore ?? 0), 0) /
+            totalAssessments
+        )
+      : 0;
 
   const barrierMap: Record<string, number> = {};
   for (const l of allLeads) {
     const b = l.biggestConcern ?? "Finance";
     barrierMap[b] = (barrierMap[b] ?? 0) + 1;
   }
-  const mostCommonBarrier = Object.entries(barrierMap).sort((a, b) => b[1] - a[1])[0]?.[0] ?? "Finance";
+  const mostCommonBarrier =
+    Object.entries(barrierMap).sort((a, b) => b[1] - a[1])[0]?.[0] ?? "Finance";
 
   return { totalAssessments, avgScore, mostCommonBarrier };
 }

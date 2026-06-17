@@ -67,7 +67,10 @@ export function registerOAuthRoutes(app: Express) {
 
   // ─── Local login POST handler ────────────────────────────────────────────
   app.post("/api/auth/login", async (req: Request, res: Response) => {
-    const { username, password } = req.body as { username?: string; password?: string };
+    const { username, password } = req.body as {
+      username?: string;
+      password?: string;
+    };
 
     const validUsername = (username ?? "").trim().toLowerCase();
     const validPassword = (password ?? "").trim();
@@ -93,7 +96,10 @@ export function registerOAuthRoutes(app: Express) {
         });
 
         const cookieOptions = getSessionCookieOptions(req);
-        res.cookie(COOKIE_NAME, sessionToken, { ...cookieOptions, maxAge: ONE_YEAR_MS });
+        res.cookie(COOKIE_NAME, sessionToken, {
+          ...cookieOptions,
+          maxAge: ONE_YEAR_MS,
+        });
         res.redirect(302, "/");
       } catch (err) {
         console.error("[Auth] Login failed:", err);

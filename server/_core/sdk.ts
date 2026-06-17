@@ -58,7 +58,9 @@ class OAuthService {
       if (state.startsWith("http://") || state.startsWith("https://")) {
         return state;
       }
-      throw new Error(`Failed to decode OAuth state: ${state.substring(0, 20)}...`);
+      throw new Error(
+        `Failed to decode OAuth state: ${state.substring(0, 20)}...`
+      );
     }
   }
 
@@ -301,7 +303,8 @@ class SDKServer {
     // Self-hosted: if user not in DB, create from session data (no external OAuth sync)
     if (!user) {
       try {
-        const isAdmin = sessionUserId === (process.env.OWNER_OPEN_ID ?? "admin");
+        const isAdmin =
+          sessionUserId === (process.env.OWNER_OPEN_ID ?? "admin");
         await db.upsertUser({
           openId: sessionUserId,
           name: session.name || sessionUserId,

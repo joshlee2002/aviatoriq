@@ -15,18 +15,18 @@ This pass prioritised FAA/government sources and regulator-first wording:
 
 ## What changed
 
-| Guide | Risk found | Fix made |
-| --- | --- | --- |
-| `FaaMedicalGuide.tsx` | Medical timing, ADHD and SSRI language sounded too deterministic. | Reframed FAA medical outcomes as AME/FAA case-specific and removed fixed processing assumptions. |
-| `FaaMedicalClass1.tsx` | First Class duration and disqualifier language could read as automatic or self-diagnostic. | Reframed lower-class privilege duration, Part 67 conditions and BasicMed limits with FAA/AME caveats. |
-| `FaaMedicalClass2.tsx` | Class 2 guide overclaimed “current data” and did not emphasise FAA case-by-case decisions enough. | Added case-specific AME/FAA wording and softened Part 67 interpretation. |
-| `FaaMedicalClass3.tsx` | Third Class page used “exact” and “real cost” language and underplayed BasicMed context. | Reframed as cost ranges to verify and added BasicMed/FAA-review caveats. |
-| `FaaAtpRequirements.tsx` | ATP guide used hype language and overconfident demand/simulator-credit claims. | Rewrote title/meta and softened ATP demand, simulator credit and ATP CTP wording. |
-| `AtpCertificateUSA.tsx` | R-ATP-to-full-ATP and international recognition wording sounded automatic. | Clarified full ATP is not automatic and foreign privileges require validation/conversion. |
-| `Part61Vs141.tsx` | Cadet-programme and financing statements were too broad. | Reframed Part 141 as often required/preferred, and made airline pathway/interview claims conditional. |
-| `UsFlightSchoolLoans.tsx` | Loan and federal-aid wording could imply broader availability than reality. | Added Title IV/school eligibility caveats and softened cost/hour assumptions. |
-| `UsPilotRetirementAge.tsx` | Retirement-age language needed clearer Part 121 scope. | Clarified age 65 applies to Part 121 airline pilot service, not all flying. |
-| `PilotSalaryUSA.tsx` | Salary, upgrade and ROI claims were too fixed. | Reframed pay and upgrade timelines as contract-, seniority-, base- and cycle-dependent. |
+| Guide                      | Risk found                                                                                        | Fix made                                                                                              |
+| -------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `FaaMedicalGuide.tsx`      | Medical timing, ADHD and SSRI language sounded too deterministic.                                 | Reframed FAA medical outcomes as AME/FAA case-specific and removed fixed processing assumptions.      |
+| `FaaMedicalClass1.tsx`     | First Class duration and disqualifier language could read as automatic or self-diagnostic.        | Reframed lower-class privilege duration, Part 67 conditions and BasicMed limits with FAA/AME caveats. |
+| `FaaMedicalClass2.tsx`     | Class 2 guide overclaimed “current data” and did not emphasise FAA case-by-case decisions enough. | Added case-specific AME/FAA wording and softened Part 67 interpretation.                              |
+| `FaaMedicalClass3.tsx`     | Third Class page used “exact” and “real cost” language and underplayed BasicMed context.          | Reframed as cost ranges to verify and added BasicMed/FAA-review caveats.                              |
+| `FaaAtpRequirements.tsx`   | ATP guide used hype language and overconfident demand/simulator-credit claims.                    | Rewrote title/meta and softened ATP demand, simulator credit and ATP CTP wording.                     |
+| `AtpCertificateUSA.tsx`    | R-ATP-to-full-ATP and international recognition wording sounded automatic.                        | Clarified full ATP is not automatic and foreign privileges require validation/conversion.             |
+| `Part61Vs141.tsx`          | Cadet-programme and financing statements were too broad.                                          | Reframed Part 141 as often required/preferred, and made airline pathway/interview claims conditional. |
+| `UsFlightSchoolLoans.tsx`  | Loan and federal-aid wording could imply broader availability than reality.                       | Added Title IV/school eligibility caveats and softened cost/hour assumptions.                         |
+| `UsPilotRetirementAge.tsx` | Retirement-age language needed clearer Part 121 scope.                                            | Clarified age 65 applies to Part 121 airline pilot service, not all flying.                           |
+| `PilotSalaryUSA.tsx`       | Salary, upgrade and ROI claims were too fixed.                                                    | Reframed pay and upgrade timelines as contract-, seniority-, base- and cycle-dependent.               |
 
 ## Remaining follow-ups
 

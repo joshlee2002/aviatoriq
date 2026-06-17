@@ -37,7 +37,8 @@ export const STATIC_SCHOOLS: StaticSchool[] = [
     ppl: true,
     financeAvailable: "yes",
     accommodationAvailable: "yes",
-    airlinePartnerships: "easyJet, British Airways (Speedbird), Ryanair, Jet2, TUI, Wizz Air",
+    airlinePartnerships:
+      "easyJet, British Airways (Speedbird), Ryanair, Jet2, TUI, Wizz Air",
     website: "https://www.skyborne.com",
     badge: "easyJet Partner",
     highlights: [
@@ -48,8 +49,18 @@ export const STATIC_SCHOOLS: StaticSchool[] = [
     ],
     duration: "67 weeks",
     testimonials: [
-      { name: "Tom R.", role: "Skyborne graduate, now First Officer at easyJet", quote: "The easyJet partnership was the deciding factor for me. Knowing I had a conditional job offer before I even started training removed so much of the financial anxiety. The instructors were genuinely excellent." },
-      { name: "Priya S.", role: "Current Skyborne cadet, cohort 2025", quote: "The degree element was a bonus I didn't expect to value as much as I do. The University of West London integration means the student loan covers a significant chunk — it made the whole thing financially viable for me." },
+      {
+        name: "Tom R.",
+        role: "Skyborne graduate, now First Officer at easyJet",
+        quote:
+          "The easyJet partnership was the deciding factor for me. Knowing I had a conditional job offer before I even started training removed so much of the financial anxiety. The instructors were genuinely excellent.",
+      },
+      {
+        name: "Priya S.",
+        role: "Current Skyborne cadet, cohort 2025",
+        quote:
+          "The degree element was a bonus I didn't expect to value as much as I do. The University of West London integration means the student loan covers a significant chunk — it made the whole thing financially viable for me.",
+      },
     ],
   },
   {
@@ -77,8 +88,18 @@ export const STATIC_SCHOOLS: StaticSchool[] = [
     ],
     duration: "94 weeks",
     testimonials: [
-      { name: "James M.", role: "CAE Oxford graduate, now Captain at British Airways", quote: "CAE's reputation opens doors. When I walked into my BA Speedbird interview, they already knew the standard of training I'd received. The simulator hours and APS MCC were exceptional preparation." },
-      { name: "Aisha K.", role: "CAE Oxford graduate, easyJet MPL programme", quote: "The MPL route through CAE was the right call for me. You're training specifically for the airline from day one — the transition to the line was seamless compared to what I heard from friends on integrated courses." },
+      {
+        name: "James M.",
+        role: "CAE Oxford graduate, now Captain at British Airways",
+        quote:
+          "CAE's reputation opens doors. When I walked into my BA Speedbird interview, they already knew the standard of training I'd received. The simulator hours and APS MCC were exceptional preparation.",
+      },
+      {
+        name: "Aisha K.",
+        role: "CAE Oxford graduate, easyJet MPL programme",
+        quote:
+          "The MPL route through CAE was the right call for me. You're training specifically for the airline from day one — the transition to the line was seamless compared to what I heard from friends on integrated courses.",
+      },
     ],
   },
   {
@@ -106,7 +127,12 @@ export const STATIC_SCHOOLS: StaticSchool[] = [
     ],
     duration: "78 weeks",
     testimonials: [
-      { name: "Dan T.", role: "LEAP graduate, now First Officer at Jet2", quote: "The 'one price, no surprises' promise is real. I budgeted exactly what they quoted and that's what I paid. The Spain flying phase was brilliant — great weather, great instructors, and you rack up hours fast." },
+      {
+        name: "Dan T.",
+        role: "LEAP graduate, now First Officer at Jet2",
+        quote:
+          "The 'one price, no surprises' promise is real. I budgeted exactly what they quoted and that's what I paid. The Spain flying phase was brilliant — great weather, great instructors, and you rack up hours fast.",
+      },
     ],
   },
   {
@@ -159,8 +185,18 @@ export const STATIC_SCHOOLS: StaticSchool[] = [
     ],
     duration: "2–4 years (self-paced)",
     testimonials: [
-      { name: "Mark H.", role: "Aeros modular graduate, now FO at Ryanair", quote: "Modular gets a bad reputation but Aeros made it work. I kept my job for the first year, did the ATPL theory evenings and weekends, then went full-time for the flying. Took 3 years but I graduated debt-free compared to integrated friends." },
-      { name: "Sarah L.", role: "Aeros PPL to CPL, career changer at 34", quote: "I was 34 when I started and genuinely worried I'd left it too late. The Aeros team were completely matter-of-fact about it — they'd trained plenty of career changers. I'm now a First Officer at Loganair." },
+      {
+        name: "Mark H.",
+        role: "Aeros modular graduate, now FO at Ryanair",
+        quote:
+          "Modular gets a bad reputation but Aeros made it work. I kept my job for the first year, did the ATPL theory evenings and weekends, then went full-time for the flying. Took 3 years but I graduated debt-free compared to integrated friends.",
+      },
+      {
+        name: "Sarah L.",
+        role: "Aeros PPL to CPL, career changer at 34",
+        quote:
+          "I was 34 when I started and genuinely worried I'd left it too late. The Aeros team were completely matter-of-fact about it — they'd trained plenty of career changers. I'm now a First Officer at Loganair.",
+      },
     ],
   },
   {
@@ -188,7 +224,12 @@ export const STATIC_SCHOOLS: StaticSchool[] = [
     ],
     duration: "62 weeks",
     testimonials: [
-      { name: "Connor B.", role: "FTEJerez graduate, now FO at Vueling", quote: "The Ryanair pathway was my goal from day one and FTE delivered. The weather in Jerez means you fly almost every day — I finished my hours faster than friends at UK schools. The accommodation and meals included made budgeting simple." },
+      {
+        name: "Connor B.",
+        role: "FTEJerez graduate, now FO at Vueling",
+        quote:
+          "The Ryanair pathway was my goal from day one and FTE delivered. The weather in Jerez means you fly almost every day — I finished my hours faster than friends at UK schools. The accommodation and meals included made budgeting simple.",
+      },
     ],
   },
   {
@@ -216,7 +257,12 @@ export const STATIC_SCHOOLS: StaticSchool[] = [
     ],
     duration: "70 weeks",
     testimonials: [
-      { name: "Luke F.", role: "Bartolini Air graduate, now FO at Ryanair", quote: "I saved roughly £50,000 compared to training in the UK. The quality was genuinely excellent — CAA and EASA approved, so there were no issues with UK airline applications. Wrocław is a great city too. I'd recommend it without hesitation." },
+      {
+        name: "Luke F.",
+        role: "Bartolini Air graduate, now FO at Ryanair",
+        quote:
+          "I saved roughly £50,000 compared to training in the UK. The quality was genuinely excellent — CAA and EASA approved, so there were no issues with UK airline applications. Wrocław is a great city too. I'd recommend it without hesitation.",
+      },
     ],
   },
   {
@@ -463,7 +509,8 @@ export const US_SCHOOLS: StaticSchool[] = [
     ppl: true,
     financeAvailable: "yes",
     accommodationAvailable: "yes",
-    airlinePartnerships: "SkyWest Airlines, Envoy Air, Endeavor Air, Republic Airways, Mesa Airlines, GoJet Airlines",
+    airlinePartnerships:
+      "SkyWest Airlines, Envoy Air, Endeavor Air, Republic Airways, Mesa Airlines, GoJet Airlines",
     website: "https://atpflightschool.com",
     badge: "Largest US Academy",
     highlights: [
@@ -474,8 +521,18 @@ export const US_SCHOOLS: StaticSchool[] = [
     ],
     duration: "7 months (accelerated)",
     testimonials: [
-      { name: "Marcus T.", role: "ATP graduate, now First Officer at SkyWest", quote: "ATP's pace is intense but that's the point. I was at a regional airline 8 months after I started. The structured syllabus and airline partnerships made the whole process feel like a pipeline, not a gamble." },
-      { name: "Kayla R.", role: "ATP graduate, now First Officer at Envoy Air", quote: "The Sallie Mae financing made it possible. I had no aviation background and no savings. ATP walked me through the loan process and I was flying within weeks of applying." },
+      {
+        name: "Marcus T.",
+        role: "ATP graduate, now First Officer at SkyWest",
+        quote:
+          "ATP's pace is intense but that's the point. I was at a regional airline 8 months after I started. The structured syllabus and airline partnerships made the whole process feel like a pipeline, not a gamble.",
+      },
+      {
+        name: "Kayla R.",
+        role: "ATP graduate, now First Officer at Envoy Air",
+        quote:
+          "The Sallie Mae financing made it possible. I had no aviation background and no savings. ATP walked me through the loan process and I was flying within weeks of applying.",
+      },
     ],
   },
   {
@@ -492,7 +549,8 @@ export const US_SCHOOLS: StaticSchool[] = [
     ppl: true,
     financeAvailable: "yes",
     accommodationAvailable: "yes",
-    airlinePartnerships: "United Airlines Aviate, Delta Propel, American Airlines Cadet, Southwest Airlines Destination 225°",
+    airlinePartnerships:
+      "United Airlines Aviate, Delta Propel, American Airlines Cadet, Southwest Airlines Destination 225°",
     website: "https://www.embryriddle.edu",
     badge: "R-ATP 1,000 Hours",
     highlights: [
@@ -503,7 +561,12 @@ export const US_SCHOOLS: StaticSchool[] = [
     ],
     duration: "4 years (BSc + ratings)",
     testimonials: [
-      { name: "Jordan L.", role: "ERAU graduate, now First Officer at Delta", quote: "The R-ATP advantage is real. I got to Delta 18 months before my friends who went the Part 61 route. The degree also gave me options — if I'd decided not to fly, I had a real qualification to fall back on." },
+      {
+        name: "Jordan L.",
+        role: "ERAU graduate, now First Officer at Delta",
+        quote:
+          "The R-ATP advantage is real. I got to Delta 18 months before my friends who went the Part 61 route. The degree also gave me options — if I'd decided not to fly, I had a real qualification to fall back on.",
+      },
     ],
   },
   {
@@ -570,7 +633,8 @@ export const US_SCHOOLS: StaticSchool[] = [
     ppl: true,
     financeAvailable: "yes",
     accommodationAvailable: "yes",
-    airlinePartnerships: "United Airlines Aviate, Delta Propel, SkyWest Airlines",
+    airlinePartnerships:
+      "United Airlines Aviate, Delta Propel, SkyWest Airlines",
     website: "https://aviation.und.edu",
     badge: "R-ATP 1,000 Hours",
     highlights: [

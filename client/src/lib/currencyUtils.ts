@@ -16,7 +16,9 @@ export function parseGBPValues(priceStr: string): number[] {
   // Match patterns like £100,000 or £99950
   const matches = priceStr.match(/£([\d,]+)/g);
   if (!matches) return [];
-  return matches.map((m) => parseInt(m.replace(/[£,]/g, ""), 10)).filter((n) => !isNaN(n));
+  return matches
+    .map(m => parseInt(m.replace(/[£,]/g, ""), 10))
+    .filter(n => !isNaN(n));
 }
 
 /**
@@ -35,7 +37,9 @@ export function convertPriceString(
   // Extract trailing non-price text (e.g. " (ground school only)")
   const trailingMatch = priceStr.match(/(\s*\([^)]+\)\s*)$/);
   const trailing = trailingMatch ? trailingMatch[1] : "";
-  const core = trailing ? priceStr.slice(0, priceStr.length - trailing.length) : priceStr;
+  const core = trailing
+    ? priceStr.slice(0, priceStr.length - trailing.length)
+    : priceStr;
 
   // Replace each £X,XXX occurrence with the converted value
   const converted = core.replace(/£([\d,]+)/g, (_, digits) => {

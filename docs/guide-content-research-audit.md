@@ -15,12 +15,14 @@ The biggest issue is not that every guide is wrong. The biggest issue is that to
 ## Research sources used for this deeper pass
 
 ### United States / FAA
+
 - FAA Guide for Aviation Medical Examiners: https://www.faa.gov/ame_guide
 - FAA ADHD disposition protocol: https://www.faa.gov/ame_guide/dec_cons/disease_prot/adhd
 - FAA Pilot Training / restricted ATP overview: https://www.faa.gov/pilots/training/atp
 - FAA final rule material on ATP/R-ATP and Part 121 first officer requirements: https://www.faa.gov/documentlibrary/media/notice/n_8900.225.pdf
 
 ### United Kingdom / CAA and finance
+
 - UK CAA Class 1 medical application guidance: https://www.caa.co.uk/commercial-industry/pilot-licences/medical/apply-for-a-class-1-medical-certificate/
 - UK CAA initial Class 1 medical examination guidance: https://www.caa.co.uk/commercial-industry/pilot-licences/medical/initial-class-1-medical-examination/
 - UK CAA medical standards: https://www.caa.co.uk/aeromedical-examiners/medical-standards/
@@ -28,30 +30,36 @@ The biggest issue is not that every guide is wrong. The biggest issue is that to
 - BALPA pilot-training finance guidance: https://www.balpa.org/becoming-a-pilot/financing-your-training/
 
 ### Europe / EASA
+
 - EASA Easy Access Rules for Aircrew / Part-FCL and Part-MED: https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no
 - EASA Aircrew & Medical hub: https://www.easa.europa.eu/en/domains/aircrew-and-medical
 
 ### Canada / Transport Canada
+
 - Transport Canada medical certificate categories: https://tc.canada.ca/en/aviation/medical-fitness-aviation/apply-manage-aviation-medical-certificate/medical-certificate-categories
 - Transport Canada Standard 421 flight crew permits, licences and ratings: https://tc.canada.ca/en/corporate-services/acts-regulations/list-regulations/canadian-aviation-regulations-sor-96-433/standards/standard-421-flight-crew-permits-licences-ratings-canadian-aviation-regulations-cars
 - Transport Canada Standard 424 medical requirements: https://tc.canada.ca/en/corporate-services/acts-regulations/list-regulations/canadian-aviation-regulations-sor-96-433/standards/standard-424-medical-requirements-canadian-aviation-regulations-cars
 
 ### Australia / CASA
+
 - CASA Classes 1 to 3 medical certificates: https://www.casa.gov.au/licences-and-certificates/aviation-medicals/learn-about-medical-certificates/classes-1-3-medical-certificates
 - CASA Getting a commercial pilot licence: https://www.casa.gov.au/licences-and-certificates/pilots/pilot-licences/commercial-pilot-licences/getting-commercial-pilot-licence-cpl
 - CASA process to become a pilot: https://www.casa.gov.au/licences-and-certificates/pilots/process-become-pilot/starting-out
 
 ### New Zealand / CAA NZ
+
 - CAA NZ medical certification: https://www.aviation.govt.nz/licensing-and-certification/medical-certification/
 - CAA NZ pilot licensing: https://www.aviation.govt.nz/licensing-and-certification/pilots/pilot-licensing/
 - CAA NZ Part 61 Subpart E commercial pilot licences: https://www.aviation.govt.nz/rules/rule-part/part-61/subpart-e/
 
 ### South Africa / SACAA
+
 - SACAA aviation medicine: https://www.caa.co.za/industry-information/aviation-medicine/
 - SACAA licensing: https://www.caa.co.za/industry-information/personnel-licensing/licensing/
 - SACAA fees page: https://www.caa.co.za/information-for-the-public/fees/
 
 ### UAE / GCAA and cadet programmes
+
 - GCAA CAR-MED medical provisions: https://www.gcaa.gov.ae/en/epublication/EPublications/Civil%20Aviation%20Regulations%20%28CARs%29/CAR%20II%20-%20LICENSING%20AND%20TRAINING%20ORGANISATION%20REGULATIONS/CAR-MED%20-%20MEDICAL%20PROVISIONS%20-%20ISSUE%2002.pdf
 - GCAA CAR-FCL flight crew licensing: https://www.gcaa.gov.ae/en/epublication/EPublications/Civil%20Aviation%20Regulations%20%28CARs%29/CAR%20II%20-%20LICENSING%20AND%20TRAINING%20ORGANISATION%20REGULATIONS/CAR-FCL%20FLIGHT%20CREW%20LICENSING%20-%20ISSUE05.pdf
 - Emirates Flight Training Academy admissions: https://www.emiratesflighttrainingacademy.com/en/admissions/
@@ -64,10 +72,12 @@ The biggest issue is not that every guide is wrong. The biggest issue is that to
 Medical pages must be treated as aviation-medical guidance, not casual blog content. FAA, UK CAA, EASA, CASA, Transport Canada, CAA NZ, SACAA, and GCAA all use specific certificate categories, medical classes, examiner processes, deferral/referral language, and validity rules.
 
 **What looks directionally correct:**
+
 - FAA ADHD content correctly points users toward FAA-specific pathways such as Fast Track/Standard Track and AME involvement.
 - UK/EASA/CASA/Transport Canada/SACAA/GCAA pages generally use the right top-level concepts: Class 1 for commercial/professional pathways, Category 1 in Canada, and official aviation medical examiners.
 
 **What needs correction before 10/10:**
+
 - Every medical guide should include a visible source box with the relevant regulator page and a “last checked” date.
 - Any guide discussing disqualifying medication, ADHD, eyesight, mental health, diabetes, cardiac issues, or medical restrictions should say “speak to an AME/AeMC/CAME/DAME/medical examiner before spending money on training.”
 - Do not present costs, waiting periods, or approval likelihoods as universal. They vary by case and authority.
@@ -84,6 +94,7 @@ The legacy `FinanceGuide.tsx` references “Career Development Loans” and “H
 Salary and hiring pages are the most SEO-sensitive and most volatile. They can rank, but only if they are visibly updated, sourced, and transparent about uncertainty.
 
 **Required fix:** every salary/shortage/hiring/tax/benefits guide should include:
+
 - salary range date;
 - source type, such as union contract, airline careers page, public pay scale, regulator data, or credible industry survey;
 - country currency;
@@ -94,6 +105,7 @@ Salary and hiring pages are the most SEO-sensitive and most volatile. They can r
 Cadet schemes change frequently. Airline pages, admissions pages, and application portals must be checked before publication. The Emirates Flight Training Academy source currently shows live admissions/application content. Air Arabia/T3 information exists, but programme specifics need direct current admissions confirmation.
 
 **Required fix:** every cadet-program guide should include:
+
 - “status last checked” date;
 - whether applications are open, closed, waitlist, or unknown;
 - current age/education/English/medical/residency requirements from the airline or training academy page;
@@ -104,6 +116,7 @@ Cadet schemes change frequently. Airline pages, admissions pages, and applicatio
 The previous static audit flagged many pages with cross-country terminology. After research, that matters even more: each aviation authority uses different wording and legal structures.
 
 Examples of terms that must stay jurisdiction-pure:
+
 - USA: FAA, Part 61, Part 141, ATP, R-ATP, First/Second/Third Class medical, AME.
 - UK: UK CAA, UK Part-FCL, Class 1/2 medical, AeMC, integrated/modular ATPL route.
 - EASA Europe: EASA Part-FCL/Part-MED, member-state competent authority, ATO, ATPL theory.
@@ -116,11 +129,13 @@ Examples of terms that must stay jurisdiction-pure:
 ## SEO findings after reading the guide corpus
 
 ### What is good
+
 - The site has a large topical footprint across pilot training, medicals, cadets, finance, salaries, schools, interviews, military transition, and regional airline topics.
 - The shared guide layout gives useful SEO infrastructure: H1 title, meta description support, canonical support, Article schema, FAQ schema when supplied, breadcrumbs, author attribution, visible last-updated dates, CTAs, and related links.
 - The country strategy is strong in concept because users search by country and regulator.
 
 ### What is holding rankings back
+
 - Many titles are too long and read like generated blog titles rather than clean search titles.
 - Several meta descriptions are too long, too generic, or stuffed with too many entities.
 - Source blocks are not consistently strong enough. Named official sources should be visible on every regulated/financial/medical page.

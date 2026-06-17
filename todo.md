@@ -1,12 +1,14 @@
 # PilotPath TODO
 
 ## Phase 1 – Schema & Design System
+
 - [x] Create database schema (leads, flight_schools, lead_assignments, admin_notes)
 - [x] Apply schema migration via SQL
 - [x] Set up design tokens (aviation colour palette, typography, global CSS)
 - [x] Update index.html with Google Fonts
 
 ## Phase 2 – Server Routers
+
 - [x] Lead submission procedure (public)
 - [x] Lead scoring engine (server-side utility)
 - [x] AI roadmap generation procedure (server-side, uses LLM)
@@ -22,6 +24,7 @@
 - [x] Owner notification on Hot lead
 
 ## Phase 3 – Marketing Home Page
+
 - [x] Public navigation bar (logo, links, CTA button)
 - [x] Hero section with headline and CTA
 - [x] How it works section (3 steps)
@@ -32,6 +35,7 @@
 - [x] Footer with links
 
 ## Phase 4 – Multi-Step Quiz
+
 - [x] Quiz page with progress bar
 - [x] Section 1: Basic details (name, email, phone, country, city, age)
 - [x] Section 2: Pilot goal and seriousness
@@ -44,6 +48,7 @@
 - [x] Submit and trigger lead scoring
 
 ## Phase 5 – AI Personalised Report
+
 - [x] Results/roadmap page
 - [x] AI-generated training route recommendation
 - [x] Estimated cost range display
@@ -53,6 +58,7 @@
 - [x] Disclaimer section
 
 ## Phase 6 – Admin Dashboard
+
 - [x] Role-gated admin route (admin only)
 - [x] Lead table with score, category badge, status
 - [x] Search leads by name/email
@@ -68,6 +74,7 @@
 - [x] Admin: flight school management (add/edit/toggle active)
 
 ## Phase 7 – Flight School Directory & Cost Calculator
+
 - [x] Public flight school directory page
 - [x] Filter by country, training type, finance available
 - [x] School profile cards
@@ -77,6 +84,7 @@
 - [x] Calculator: show estimated cost breakdown
 
 ## Phase 8 – SEO Guide Pages & Analytics
+
 - [x] Guide: How to become a pilot
 - [x] Guide: How much does pilot training cost?
 - [x] Guide: Integrated vs Modular pilot training
@@ -94,6 +102,7 @@
 - [x] Owner email notification on Hot lead (via notifyOwner)
 
 ## Phase 9 – Polish & Delivery
+
 - [x] Wire all routes in App.tsx
 - [x] Privacy Policy page
 - [x] Terms page
@@ -197,6 +206,7 @@
 - [x] Write vitest tests for licenceQuizScoring engine (8 tests)
 
 ## Phase 17 – Monetisation: Finance Referral, Shareable Results, Guide Rewrites
+
 - [x] finance_interests table added to schema and applied to live DB
 - [x] flight_deck_shares table added to schema and applied to live DB
 - [x] Finance referral lead capture card on Results page (email, name, phone capture + owner notification)
@@ -214,6 +224,7 @@
 - [x] Rewrite TrainingTimeline guide (8 min, timeline table)
 
 ## Phase 18 – Personalised Pilot Training Cost Calculator
+
 - [x] Replace static Calculator.tsx with personalised multi-step calculator (5 inputs)
 - [x] Client-side cost engine: route × location × pace × experience × funding adjustments
 - [x] Live results panel: specific midpoint estimate, itemised breakdown, monthly payment plan

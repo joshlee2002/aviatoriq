@@ -9,12 +9,12 @@ These ten guides are now **closer to publishable for general informational use**
 
 **Current status after fixes:**
 
-| Area | Verdict | Notes |
-| --- | --- | --- |
-| UK country fit | Strong | Language now points to UK CAA, UK student finance, UK airlines, RAF recruitment and UK licence context. |
-| Factual credibility | Improved | Over-specific or brittle claims were softened where official pages can change or where evidence is individual/case-by-case. |
-| SEO usefulness | Improved | Search-intent coverage remains good; copy now reads less like hype and more like trustworthy advisory content. |
-| Still needs human review | Yes | Medical, finance and RAF recruitment pages should be rechecked by a subject-matter reviewer before being called “elite”. |
+| Area                     | Verdict  | Notes                                                                                                                       |
+| ------------------------ | -------- | --------------------------------------------------------------------------------------------------------------------------- |
+| UK country fit           | Strong   | Language now points to UK CAA, UK student finance, UK airlines, RAF recruitment and UK licence context.                     |
+| Factual credibility      | Improved | Over-specific or brittle claims were softened where official pages can change or where evidence is individual/case-by-case. |
+| SEO usefulness           | Improved | Search-intent coverage remains good; copy now reads less like hype and more like trustworthy advisory content.              |
+| Still needs human review | Yes      | Medical, finance and RAF recruitment pages should be rechecked by a subject-matter reviewer before being called “elite”.    |
 
 ## Official/current-source checks used
 
@@ -28,18 +28,18 @@ This batch was checked against the same 2026 research standard used for the firs
 
 ## What was fixed in the second ten
 
-| Guide | Main issue found | Fix made | Current publishability |
-| --- | --- | --- | --- |
-| Class 1 medical disqualifiers | Too many conditions were described as automatic/permanent disqualifiers. | Reframed serious conditions as likely deferral/refusal unless specialist evidence supports certification; replaced over-rigid eye-surgery timing with case-dependent wording. | Good for general guidance; needs AME/doctor review for elite medical accuracy. |
-| UK cadet programmes | Some programme numbers and “guaranteed job” claims were brittle or too absolute. | Updated BA 2026 places language, Jet2 intake language and made job outcomes conditional on training/airline criteria. | Good; recheck every airline page each intake season. |
-| UK pilot training finance | Funding routes sounded too broadly available; Lifetime ISA advice was risky. | Clarified that UK student finance/provider loans depend on course/provider/eligibility; warned that LISA withdrawals for training can trigger a charge. | Good; needs finance/legal review for elite advice. |
-| UK pilot salary 2026 | Salary and progression claims were too definitive. | Recast pay as indicative and dependent on base, airline, roster, seniority and contract. | Good; update every 6 months. |
-| Ready to start training | Class 1 cost estimate was low and job pathway language too absolute. | Raised Class 1 cost range and changed guaranteed-job style phrasing to conditional airline pathway language. | Strong for checklist intent. |
-| Hour building UK | Licence wording was too EASA-only and aircraft/PIC assumptions too rigid. | Reframed around the target authority/licence and softened aircraft/PIC hour assumptions. | Good. |
-| ATPL exams UK | Attempt/sitting wording was simplified too far. | Clarified that limits are controlled by sittings/attempts/time windows and candidates should verify the current CAA rules. | Good; exact exam-rule line should be periodically rechecked. |
-| UK pilot shortage | Shortage narrative implied too much certainty and near-guaranteed opportunity. | Rebalanced toward cyclical demand, bottlenecks, airline profitability and candidate quality. | Stronger and more credible. |
-| Type ratings UK | Self-funded type rating advice could lead to bad financial decisions. | Added stronger warnings against speculative self-funding without a signed pathway, contract terms, refund/bond clarity and employment linkage. | Good; finance/legal wording should be reviewed before “elite”. |
-| RAF vs civilian | RAF age limit/backlog claims were outdated or too definitive. | Updated to current RAF Direct Entry Pilot age framing and softened pipeline delay claims. | Good; RAF pages should be checked before each recruitment campaign. |
+| Guide                         | Main issue found                                                                 | Fix made                                                                                                                                                                      | Current publishability                                                         |
+| ----------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Class 1 medical disqualifiers | Too many conditions were described as automatic/permanent disqualifiers.         | Reframed serious conditions as likely deferral/refusal unless specialist evidence supports certification; replaced over-rigid eye-surgery timing with case-dependent wording. | Good for general guidance; needs AME/doctor review for elite medical accuracy. |
+| UK cadet programmes           | Some programme numbers and “guaranteed job” claims were brittle or too absolute. | Updated BA 2026 places language, Jet2 intake language and made job outcomes conditional on training/airline criteria.                                                         | Good; recheck every airline page each intake season.                           |
+| UK pilot training finance     | Funding routes sounded too broadly available; Lifetime ISA advice was risky.     | Clarified that UK student finance/provider loans depend on course/provider/eligibility; warned that LISA withdrawals for training can trigger a charge.                       | Good; needs finance/legal review for elite advice.                             |
+| UK pilot salary 2026          | Salary and progression claims were too definitive.                               | Recast pay as indicative and dependent on base, airline, roster, seniority and contract.                                                                                      | Good; update every 6 months.                                                   |
+| Ready to start training       | Class 1 cost estimate was low and job pathway language too absolute.             | Raised Class 1 cost range and changed guaranteed-job style phrasing to conditional airline pathway language.                                                                  | Strong for checklist intent.                                                   |
+| Hour building UK              | Licence wording was too EASA-only and aircraft/PIC assumptions too rigid.        | Reframed around the target authority/licence and softened aircraft/PIC hour assumptions.                                                                                      | Good.                                                                          |
+| ATPL exams UK                 | Attempt/sitting wording was simplified too far.                                  | Clarified that limits are controlled by sittings/attempts/time windows and candidates should verify the current CAA rules.                                                    | Good; exact exam-rule line should be periodically rechecked.                   |
+| UK pilot shortage             | Shortage narrative implied too much certainty and near-guaranteed opportunity.   | Rebalanced toward cyclical demand, bottlenecks, airline profitability and candidate quality.                                                                                  | Stronger and more credible.                                                    |
+| Type ratings UK               | Self-funded type rating advice could lead to bad financial decisions.            | Added stronger warnings against speculative self-funding without a signed pathway, contract terms, refund/bond clarity and employment linkage.                                | Good; finance/legal wording should be reviewed before “elite”.                 |
+| RAF vs civilian               | RAF age limit/backlog claims were outdated or too definitive.                    | Updated to current RAF Direct Entry Pilot age framing and softened pipeline delay claims.                                                                                     | Good; RAF pages should be checked before each recruitment campaign.            |
 
 ## Remaining risks before “number 1 on Google” standard
 

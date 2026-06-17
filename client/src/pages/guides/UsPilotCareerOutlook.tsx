@@ -11,23 +11,29 @@ const UsPilotCareerOutlook = () => {
       faqSchema={[
         {
           question: "Is there really a pilot shortage in 2026?",
-          answer: "Yes, there is a significant and structural pilot shortage in the US in 2026. Boeing projects a need for 127,000 new pilots in North America by 2042, and other analyses indicate a shortfall of 24,000 pilots in 2026 alone. This shortage is primarily driven by mandatory retirements, increased air travel demand, and fleet expansion, creating a sustained demand for qualified aviators, especially at the regional airline level.",
+          answer:
+            "Yes, there is a significant and structural pilot shortage in the US in 2026. Boeing projects a need for 127,000 new pilots in North America by 2042, and other analyses indicate a shortfall of 24,000 pilots in 2026 alone. This shortage is primarily driven by mandatory retirements, increased air travel demand, and fleet expansion, creating a sustained demand for qualified aviators, especially at the regional airline level.",
         },
         {
           question: "Will the pilot shortage end soon?",
-          answer: "The structural factors contributing to the pilot shortage, such as mandatory retirements at age 65 and ongoing fleet expansion, are expected to sustain demand through at least 2030 and likely beyond. While economic downturns could temporarily slow hiring, the long-term outlook remains strong. The industry has shown resilience in recovering from past economic challenges, suggesting the shortage will persist for the foreseeable future.",
+          answer:
+            "The structural factors contributing to the pilot shortage, such as mandatory retirements at age 65 and ongoing fleet expansion, are expected to sustain demand through at least 2030 and likely beyond. While economic downturns could temporarily slow hiring, the long-term outlook remains strong. The industry has shown resilience in recovering from past economic challenges, suggesting the shortage will persist for the foreseeable future.",
         },
         {
           question: "How much do new airline pilots make in 2026?",
-          answer: "New airline pilots starting as First Officers at regional airlines in 2026 can expect to earn between $90,000 and $115,000 in their first year. This is a substantial increase from previous years due to competitive hiring. As pilots progress to major airlines and eventually become Captains, their salaries can rise significantly, often exceeding $300,000 to $450,000+ annually.",
+          answer:
+            "New airline pilots starting as First Officers at regional airlines in 2026 can expect to earn between $90,000 and $115,000 in their first year. This is a substantial increase from previous years due to competitive hiring. As pilots progress to major airlines and eventually become Captains, their salaries can rise significantly, often exceeding $300,000 to $450,000+ annually.",
         },
         {
-          question: "What is the realistic timeline from zero hours to airline?",
-          answer: "For an individual starting with no prior flight experience, the journey to becoming a regional airline First Officer typically takes 3-4 years. This includes approximately 14-18 months for initial flight training (PPL, IR, CPL, MEL), followed by 9-18 months of time-building as a Certified Flight Instructor (CFI) to reach the 1,500 ATP flight hour requirement. After completing the ATP-CTP and ATP checkride, pilots can then enter regional airline training.",
+          question:
+            "What is the realistic timeline from zero hours to airline?",
+          answer:
+            "For an individual starting with no prior flight experience, the journey to becoming a regional airline First Officer typically takes 3-4 years. This includes approximately 14-18 months for initial flight training (PPL, IR, CPL, MEL), followed by 9-18 months of time-building as a Certified Flight Instructor (CFI) to reach the 1,500 ATP flight hour requirement. After completing the ATP-CTP and ATP checkride, pilots can then enter regional airline training.",
         },
         {
           question: "What is the ATP-CTP requirement?",
-          answer: "The Airline Transport Pilot Certification Training Program (ATP-CTP) is a mandatory course that must be completed before a pilot can take the Airline Transport Pilot (ATP) knowledge test. It is designed to bridge the gap between commercial pilot training and the demands of airline operations, covering advanced aerodynamics, automation, and multi-crew coordination. The program typically lasts 7-10 days and includes both ground school and full-flight simulator training.",
+          answer:
+            "The Airline Transport Pilot Certification Training Program (ATP-CTP) is a mandatory course that must be completed before a pilot can take the Airline Transport Pilot (ATP) knowledge test. It is designed to bridge the gap between commercial pilot training and the demands of airline operations, covering advanced aerodynamics, automation, and multi-crew coordination. The program typically lasts 7-10 days and includes both ground school and full-flight simulator training.",
         },
       ]}
       readTime="10 min read"
@@ -44,21 +50,40 @@ const UsPilotCareerOutlook = () => {
                 The aviation industry in the United States is currently
                 experiencing a dynamic period, marked by a significant and
                 persistent pilot shortage. This phenomenon, driven by a
-                confluence of factors including mandatory retirements,
-                increased air travel demand, and fleet expansion, has created
-                an unprecedented demand for qualified aviators. For aspiring
-                pilots, understanding the nuances of this outlook is crucial
-                in navigating their career path. This guide will delve into
-                the specifics of the US pilot career landscape in 2026,
-                examining the scale of the shortage, its underlying causes,
-                the impact on career timelines, and the financial prospects
-                for new entrants.
+                confluence of factors including mandatory retirements, increased
+                air travel demand, and fleet expansion, has created an
+                unprecedented demand for qualified aviators. For aspiring
+                pilots, understanding the nuances of this outlook is crucial in
+                navigating their career path. This guide will delve into the
+                specifics of the US pilot career landscape in 2026, examining
+                the scale of the shortage, its underlying causes, the impact on
+                career timelines, and the financial prospects for new entrants.
               </p>
-              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
-                Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
+              <p
+                className="text-sm p-3 rounded-lg my-3"
+                style={{
+                  background: "oklch(0.45 0.18 240 / 0.07)",
+                  border: "1px solid oklch(0.45 0.18 240 / 0.15)",
+                }}
+              >
+                Not sure where to start? Generate your free{" "}
+                <Link href="/us/roadmap" className="text-blue-400 underline">
+                  personalised US pilot career roadmap
+                </Link>{" "}
+                to get a clear path from zero to airline.
               </p>
-              <img src="/manus-storage/airline-pilot-cockpit_3c8e2f1a.jpg" alt="US airline pilot cockpit" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
-              <img src="/manus-storage/first-officer-job_23328c88.jpg" alt="US airline first officer" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img
+                src="/manus-storage/airline-pilot-cockpit_3c8e2f1a.jpg"
+                alt="US airline pilot cockpit"
+                className="w-full rounded-xl my-4 object-cover"
+                style={{ maxHeight: "320px" }}
+              />
+              <img
+                src="/manus-storage/first-officer-job_23328c88.jpg"
+                alt="US airline first officer"
+                className="w-full rounded-xl my-4 object-cover"
+                style={{ maxHeight: "320px" }}
+              />
             </>
           ),
         },
@@ -78,23 +103,22 @@ const UsPilotCareerOutlook = () => {
               <p>
                 Other sources, such as Oliver Wyman, estimate a shortfall of
                 17,000 pilots by 2032, with the largest gap of 24,000 pilots
-                anticipated in 2026. The US Bureau of Labor Statistics
-                projects around 18,200 openings for airline and commercial
-                pilots each year over the next decade. These figures
-                underscore a robust and sustained demand that is unlikely to
-                abate in the near future.
+                anticipated in 2026. The US Bureau of Labor Statistics projects
+                around 18,200 openings for airline and commercial pilots each
+                year over the next decade. These figures underscore a robust and
+                sustained demand that is unlikely to abate in the near future.
               </p>
               <p>
                 This shortage is not merely a statistical anomaly; it has
                 tangible effects on airline operations. Major carriers and
-                regional airlines alike have reported unfilled pilot
-                positions, leading to reduced routes and postponed
-                expansions. The most acute demand is observed at the regional
-                first officer level, where the 1,500-hour Airline Transport
-                Pilot (ATP) requirement creates a bottleneck for new pilots
-                entering the industry. The structural drivers behind this
-                demand suggest that even with potential economic fluctuations,
-                the long-term outlook for pilot hiring remains strong.
+                regional airlines alike have reported unfilled pilot positions,
+                leading to reduced routes and postponed expansions. The most
+                acute demand is observed at the regional first officer level,
+                where the 1,500-hour Airline Transport Pilot (ATP) requirement
+                creates a bottleneck for new pilots entering the industry. The
+                structural drivers behind this demand suggest that even with
+                potential economic fluctuations, the long-term outlook for pilot
+                hiring remains strong.
               </p>
             </>
           ),
@@ -105,56 +129,56 @@ const UsPilotCareerOutlook = () => {
             <>
               <p>
                 A significant contributor to the ongoing pilot shortage is the
-                mandatory retirement age for commercial airline pilots
-                operating under 14 CFR Part 121. In the US, these pilots are
-                required to retire at age 65. This regulation creates a
-                predictable and continuous outflow of experienced aviators
-                from the workforce. Each year, hundreds of pilots at major US
-                carriers reach this mandatory retirement age, necessitating a
-                constant influx of new talent to maintain operational
-                capacity.
+                mandatory retirement age for commercial airline pilots operating
+                under 14 CFR Part 121. In the US, these pilots are required to
+                retire at age 65. This regulation creates a predictable and
+                continuous outflow of experienced aviators from the workforce.
+                Each year, hundreds of pilots at major US carriers reach this
+                mandatory retirement age, necessitating a constant influx of new
+                talent to maintain operational capacity.
               </p>
               <p>
                 For instance, American Airlines alone projects approximately
                 4,000 mandatory retirements by 2030, with Delta, United, and
                 Southwest facing similar numbers proportional to their fleet
-                sizes. This steady stream of retirements, combined with the
-                time it takes to train and certify new pilots, ensures that
-                the demand for replacements will persist for the foreseeable
-                future. While discussions about raising the retirement age
-                have occurred, the current regulation remains a primary
-                driver of the pilot supply-demand imbalance.
+                sizes. This steady stream of retirements, combined with the time
+                it takes to train and certify new pilots, ensures that the
+                demand for replacements will persist for the foreseeable future.
+                While discussions about raising the retirement age have
+                occurred, the current regulation remains a primary driver of the
+                pilot supply-demand imbalance.
               </p>
             </>
           ),
         },
         {
-          heading: "Regional Airline Hiring and Major Airline Upgrade Timelines",
+          heading:
+            "Regional Airline Hiring and Major Airline Upgrade Timelines",
           content: (
             <>
               <p>
                 Regional airlines serve as the primary entry point for most
                 newly certificated ATP pilots in the US. These carriers are
                 actively hiring, offering crucial experience and a pathway to
-                major airlines. Companies like Republic Airways, Envoy Air,
-                PSA Airlines, SkyWest Airlines, and Endeavor Air are
-                consistently recruiting, with annual hires ranging from 200
-                to over 400 pilots each. Many regional airlines also offer
-                cadet programs and flow-through agreements, providing a more
-                direct route to major carriers for qualified pilots.
+                major airlines. Companies like Republic Airways, Envoy Air, PSA
+                Airlines, SkyWest Airlines, and Endeavor Air are consistently
+                recruiting, with annual hires ranging from 200 to over 400
+                pilots each. Many regional airlines also offer cadet programs
+                and flow-through agreements, providing a more direct route to
+                major carriers for qualified pilots.
               </p>
               <p>
-                Once pilots gain experience at regional airlines, they
-                typically transition to major airlines. The upgrade timelines
-                for moving from First Officer to Captain at major airlines
-                have been shrinking due to the high demand. While
-                historically this could take many years, some reports
-                indicate upgrade times at certain carriers have significantly
-                decreased, with some pilots reaching Captain within 2.5-3
-                years at airlines like Frontier. This accelerated career
-                progression is a direct consequence of the pilot shortage,
-                allowing pilots to advance more quickly and achieve higher
-                earning potential sooner than in previous decades.
+                Once pilots gain experience at regional airlines, they typically
+                transition to major airlines. The upgrade timelines for moving
+                from First Officer to Captain at major airlines have been
+                shrinking due to the high demand. While historically this could
+                take many years, some reports indicate upgrade times at certain
+                carriers have significantly decreased, with some pilots reaching
+                Captain within 2.5-3 years at airlines like Frontier. This
+                accelerated career progression is a direct consequence of the
+                pilot shortage, allowing pilots to advance more quickly and
+                achieve higher earning potential sooner than in previous
+                decades.
               </p>
             </>
           ),
@@ -165,49 +189,68 @@ const UsPilotCareerOutlook = () => {
             <>
               <p>
                 The increased demand for pilots has had a profound impact on
-                starting salaries, particularly at the regional airline
-                level. A decade ago, regional first officers might have
-                started with annual salaries in the $40,000-$60,000 range. By
-                2026, starting pay for regional first officers has sharply
-                risen to approximately $90,000 to $115,000 in their first
-                year. This significant increase reflects the competitive
-                environment as airlines vie for a limited pool of qualified
-                pilots.
+                starting salaries, particularly at the regional airline level. A
+                decade ago, regional first officers might have started with
+                annual salaries in the $40,000-$60,000 range. By 2026, starting
+                pay for regional first officers has sharply risen to
+                approximately $90,000 to $115,000 in their first year. This
+                significant increase reflects the competitive environment as
+                airlines vie for a limited pool of qualified pilots.
               </p>
               <p>
                 As pilots gain experience and move to major airlines, their
                 earning potential escalates further. Mainline major airline
-                first officers can expect starting salaries between $110,000
-                and $180,000, with Captains at major airlines earning
-                upwards of $300,000 to $450,000+ annually. These figures
-                demonstrate a substantial financial incentive for individuals
-                considering a pilot career, making it a highly lucrative
-                profession in the current market. The table below illustrates
-                the typical salary progression:
+                first officers can expect starting salaries between $110,000 and
+                $180,000, with Captains at major airlines earning upwards of
+                $300,000 to $450,000+ annually. These figures demonstrate a
+                substantial financial incentive for individuals considering a
+                pilot career, making it a highly lucrative profession in the
+                current market. The table below illustrates the typical salary
+                progression:
               </p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Position</th>
-                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Typical Annual Salary Range (2026)</th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">
+                      Position
+                    </th>
+                    <th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">
+                      Typical Annual Salary Range (2026)
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Regional First Officer (Year 1)</td>
-                    <td className="px-4 py-3 text-white/80">$90,000 - $115,000</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Regional First Officer (Year 1)
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      $90,000 - $115,000
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Regional Captain</td>
-                    <td className="px-4 py-3 text-white/80">$140,000 - $220,000</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Regional Captain
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      $140,000 - $220,000
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Major Airline First Officer (Entry)</td>
-                    <td className="px-4 py-3 text-white/80">$110,000 - $180,000</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Major Airline First Officer (Entry)
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      $110,000 - $180,000
+                    </td>
                   </tr>
                   <tr className="border-b border-white/10">
-                    <td className="px-4 py-3 text-white/80">Major Airline Captain</td>
-                    <td className="px-4 py-3 text-white/80">$300,000 - $450,000+</td>
+                    <td className="px-4 py-3 text-white/80">
+                      Major Airline Captain
+                    </td>
+                    <td className="px-4 py-3 text-white/80">
+                      $300,000 - $450,000+
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -221,28 +264,27 @@ const UsPilotCareerOutlook = () => {
               <p>
                 The Airline Transport Pilot Certification Training Program
                 (ATP-CTP) is a mandatory prerequisite for taking the ATP
-                knowledge test, which is required to obtain an ATP
-                certificate. This program, typically lasting 7-10 days,
-                covers a range of academic subjects and simulator training
-                designed to prepare pilots for the complexities of airline
-                operations. The cost of an ATP-CTP course can range from
-                $5,000 to $10,000, depending on the provider and inclusions.
+                knowledge test, which is required to obtain an ATP certificate.
+                This program, typically lasting 7-10 days, covers a range of
+                academic subjects and simulator training designed to prepare
+                pilots for the complexities of airline operations. The cost of
+                an ATP-CTP course can range from $5,000 to $10,000, depending on
+                the provider and inclusions.
               </p>
               <p>
                 For an individual starting flight training today with zero
-                hours, a realistic timeline to become an airline pilot
-                involves several stages. After obtaining private, instrument,
-                and commercial pilot certificates (PPL, IR, CPL, MEL), which
-                can take 14-18 months and cost approximately $60,000-$80,000,
-                aspiring pilots typically pursue a Certified Flight
-                Instructor (CFI) certificate. Working as a CFI allows them to
-                build the necessary 1,500 flight hours required for the ATP
-                certificate. This time-building phase can take 9-18 months,
-                during which CFIs can earn $45,000-$75,000 annually.
-                Following the ATP-CTP and ATP checkride, pilots can apply to
-                regional airlines, with the entire process from zero hours to
-                regional airline first officer taking approximately 3-4
-                years.
+                hours, a realistic timeline to become an airline pilot involves
+                several stages. After obtaining private, instrument, and
+                commercial pilot certificates (PPL, IR, CPL, MEL), which can
+                take 14-18 months and cost approximately $60,000-$80,000,
+                aspiring pilots typically pursue a Certified Flight Instructor
+                (CFI) certificate. Working as a CFI allows them to build the
+                necessary 1,500 flight hours required for the ATP certificate.
+                This time-building phase can take 9-18 months, during which CFIs
+                can earn $45,000-$75,000 annually. Following the ATP-CTP and ATP
+                checkride, pilots can apply to regional airlines, with the
+                entire process from zero hours to regional airline first officer
+                taking approximately 3-4 years.
               </p>
             </>
           ),
@@ -252,50 +294,55 @@ const UsPilotCareerOutlook = () => {
           content: (
             <>
               <p>
-                The career path for a US pilot typically involves starting at
-                a regional airline to build experience and then transitioning
-                to a major airline. The regional airline path offers
-                invaluable experience in a Part 121 environment, allowing
-                pilots to accumulate flight hours, build seniority, and
-                develop the skills necessary for major airline operations.
-                While regional airlines offer competitive starting salaries,
-                the ultimate goal for many is to reach a major airline, where
-                compensation and quality of life are generally higher.
+                The career path for a US pilot typically involves starting at a
+                regional airline to build experience and then transitioning to a
+                major airline. The regional airline path offers invaluable
+                experience in a Part 121 environment, allowing pilots to
+                accumulate flight hours, build seniority, and develop the skills
+                necessary for major airline operations. While regional airlines
+                offer competitive starting salaries, the ultimate goal for many
+                is to reach a major airline, where compensation and quality of
+                life are generally higher.
               </p>
               <p>
                 For someone starting training today, the outlook is
                 exceptionally favorable. The sustained demand, driven by
-                retirements and industry growth, means that career
-                progression is likely to be faster than in previous
-                generations. The shrinking upgrade timelines at major
-                airlines and the increasing starting salaries make the
-                investment in flight training more attractive. While the
-                journey requires significant dedication and financial
-                commitment, the current market conditions suggest that now is
-                indeed an opportune time to pursue a career as a professional
-                pilot in the United States.
+                retirements and industry growth, means that career progression
+                is likely to be faster than in previous generations. The
+                shrinking upgrade timelines at major airlines and the increasing
+                starting salaries make the investment in flight training more
+                attractive. While the journey requires significant dedication
+                and financial commitment, the current market conditions suggest
+                that now is indeed an opportune time to pursue a career as a
+                professional pilot in the United States.
               </p>
             </>
           ),
         },
       ]}
       relatedGuides={[
-        { title: "Pilot Salary USA", href: "/us/guides/airline-pilot-salary-usa" ,
+        {
+          title: "Pilot Salary USA",
+          href: "/us/guides/airline-pilot-salary-usa",
           time: "8 min read",
         },
-        { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot" ,
+        {
+          title: "How to Become a Pilot in the US",
+          href: "/us/guides/how-to-become-a-pilot",
           time: "8 min read",
         },
-        { title: "ATP Flight School Review", href: "/us/guides/atp-flight-school-guide" ,
+        {
+          title: "ATP Flight School Review",
+          href: "/us/guides/atp-flight-school-guide",
           time: "8 min read",
         },
       ]}
-    
       sources={[
-    { name: "UK Civil Aviation Authority (CAA)" },
-    { name: "EASA Part-FCL" },
-    { name: "BALPA Pay & Conditions Survey" },
-  ]}/>
+        { name: "UK Civil Aviation Authority (CAA)" },
+        { name: "EASA Part-FCL" },
+        { name: "BALPA Pay & Conditions Survey" },
+      ]}
+    />
   );
 };
 

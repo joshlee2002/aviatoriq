@@ -73,7 +73,7 @@ export default function RecommendedQuizzes({
   count = 3,
 }: RecommendedQuizzesProps) {
   // Filter out the current quiz and pick a deterministic set
-  const others = ALL_QUIZZES.filter((q) => q.slug !== currentSlug);
+  const others = ALL_QUIZZES.filter(q => q.slug !== currentSlug);
   // Shuffle deterministically based on currentSlug so it feels curated
   const seed = currentSlug ? currentSlug.length % others.length : 0;
   const rotated = [...others.slice(seed), ...others.slice(0, seed)];
@@ -97,7 +97,7 @@ export default function RecommendedQuizzes({
 
       {/* Cards grid */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        {shown.map((quiz) => (
+        {shown.map(quiz => (
           <Link
             key={quiz.slug}
             href={`/quizzes/${quiz.slug}`}

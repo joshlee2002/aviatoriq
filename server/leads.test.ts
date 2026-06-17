@@ -24,7 +24,8 @@ describe("Lead scoring integration", () => {
       flyingExperience: "PPL holder",
       rightToWorkStudy: "Yes",
       phone: "+44 7700 900000",
-      writtenAnswer: "I have been saving for three years and am fully committed.",
+      writtenAnswer:
+        "I have been saving for three years and am fully committed.",
       preferredRoute: "Integrated ATPL (full-time, 18-24 months)",
       startTimeframe: "As soon as possible — I'm ready now",
       country: "GB",
@@ -101,7 +102,8 @@ describe("Score boundary conditions", () => {
       flyingExperience: "PPL holder",
       rightToWorkStudy: "Yes",
       phone: "+44 7700 900000",
-      writtenAnswer: "I have been saving for three years and am fully committed to becoming an airline pilot.",
+      writtenAnswer:
+        "I have been saving for three years and am fully committed to becoming an airline pilot.",
     });
     expect(result.score).toBeLessThanOrEqual(100);
   });

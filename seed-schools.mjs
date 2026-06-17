@@ -24,7 +24,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "easyJet, Ryanair, TUI",
     website: "https://caemelbourneflight.com",
-    description: "One of the world's largest aviation training organisations. Offers integrated and modular ATPL programmes with strong airline placement records.",
+    description:
+      "One of the world's largest aviation training organisations. Offers integrated and modular ATPL programmes with strong airline placement records.",
   },
   {
     name: "L3Harris Airline Academy",
@@ -39,7 +40,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "TUI, Ryanair, Wizz Air",
     website: "https://l3airlineacademy.com",
-    description: "Part of L3Harris Technologies, offering fully integrated ATPL training with direct airline pathways.",
+    description:
+      "Part of L3Harris Technologies, offering fully integrated ATPL training with direct airline pathways.",
   },
   {
     name: "Skyborne Airline Academy",
@@ -54,7 +56,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Ryanair",
     website: "https://skyborne.com",
-    description: "Ryanair-affiliated academy with a guaranteed interview programme for graduates.",
+    description:
+      "Ryanair-affiliated academy with a guaranteed interview programme for graduates.",
   },
   {
     name: "FTA Global",
@@ -69,7 +72,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Various",
     website: "https://fta.aero",
-    description: "Established UK flight school offering integrated and modular ATPL, PPL, and instructor ratings.",
+    description:
+      "Established UK flight school offering integrated and modular ATPL, PPL, and instructor ratings.",
   },
   {
     name: "CTC Aviation (now L3Harris)",
@@ -84,7 +88,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "easyJet, Flybe",
     website: "https://l3airlineacademy.com",
-    description: "Former CTC Aviation, now part of L3Harris. Renowned for airline cadet programmes.",
+    description:
+      "Former CTC Aviation, now part of L3Harris. Renowned for airline cadet programmes.",
   },
   {
     name: "EPST (European Pilot Selection & Training)",
@@ -99,7 +104,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://epstflight.co.uk",
-    description: "Modular ATPL and PPL training at Coventry Airport. Flexible scheduling for working students.",
+    description:
+      "Modular ATPL and PPL training at Coventry Airport. Flexible scheduling for working students.",
   },
   {
     name: "Airways Aviation",
@@ -114,7 +120,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Various",
     website: "https://airwaysaviation.com",
-    description: "Multi-base flight school with integrated and modular ATPL programmes across the UK and internationally.",
+    description:
+      "Multi-base flight school with integrated and modular ATPL programmes across the UK and internationally.",
   },
   {
     name: "Bristol Groundschool",
@@ -129,7 +136,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://bristolgroundschool.co.uk",
-    description: "Leading ATPL ground school provider. Online and classroom courses for the ATPL theory exams.",
+    description:
+      "Leading ATPL ground school provider. Online and classroom courses for the ATPL theory exams.",
   },
   {
     name: "Stapleford Flight Centre",
@@ -144,7 +152,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://staplefordflightcentre.co.uk",
-    description: "One of the UK's oldest flight training schools, offering PPL, CPL, and modular ATPL training.",
+    description:
+      "One of the UK's oldest flight training schools, offering PPL, CPL, and modular ATPL training.",
   },
   {
     name: "Tayside Aviation",
@@ -159,7 +168,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: null,
     website: "https://taysideaviation.co.uk",
-    description: "Scotland's leading flight training school with a strong modular ATPL programme.",
+    description:
+      "Scotland's leading flight training school with a strong modular ATPL programme.",
   },
 
   // ── Ireland ───────────────────────────────────────────────────────────────
@@ -176,7 +186,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://ilas.ie",
-    description: "Irish flight training school offering PPL and modular ATPL training.",
+    description:
+      "Irish flight training school offering PPL and modular ATPL training.",
   },
   {
     name: "Ryanair Pilot Training (CRFT)",
@@ -191,7 +202,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Ryanair",
     website: "https://ryanair.com/pilots",
-    description: "Ryanair's direct entry cadet programme with guaranteed first officer positions upon successful completion.",
+    description:
+      "Ryanair's direct entry cadet programme with guaranteed first officer positions upon successful completion.",
   },
 
   // ── Spain ─────────────────────────────────────────────────────────────────
@@ -208,7 +220,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Iberia",
     website: "https://senasa.es",
-    description: "Spain's national aviation training company with integrated and modular ATPL programmes.",
+    description:
+      "Spain's national aviation training company with integrated and modular ATPL programmes.",
   },
   {
     name: "Aeroclub Barcelona-Sabadell",
@@ -223,7 +236,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://aeroclubsabadell.com",
-    description: "Long-established Spanish flight school offering PPL and modular ATPL training in good flying weather.",
+    description:
+      "Long-established Spanish flight school offering PPL and modular ATPL training in good flying weather.",
   },
   {
     name: "European Flyers",
@@ -238,7 +252,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Various",
     website: "https://europeanflyers.com",
-    description: "International flight school in southern Spain with excellent flying conditions year-round.",
+    description:
+      "International flight school in southern Spain with excellent flying conditions year-round.",
   },
 
   // ── Netherlands ───────────────────────────────────────────────────────────
@@ -255,7 +270,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "KLM",
     website: "https://klmflightacademy.com",
-    description: "KLM's official cadet training academy with a direct pathway to KLM and its subsidiaries.",
+    description:
+      "KLM's official cadet training academy with a direct pathway to KLM and its subsidiaries.",
   },
   {
     name: "Dutch Aviation College",
@@ -270,7 +286,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: null,
     website: "https://dutchaviationcollege.nl",
-    description: "Dutch flight school offering integrated and modular ATPL programmes with strong European airline connections.",
+    description:
+      "Dutch flight school offering integrated and modular ATPL programmes with strong European airline connections.",
   },
 
   // ── Germany ───────────────────────────────────────────────────────────────
@@ -287,7 +304,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Lufthansa, Austrian, Swiss",
     website: "https://lat.aero",
-    description: "Lufthansa Group's official pilot training academy. One of the most prestigious in Europe.",
+    description:
+      "Lufthansa Group's official pilot training academy. One of the most prestigious in Europe.",
   },
   {
     name: "Airline Training Center Arizona (ATCA) – Germany Base",
@@ -302,7 +320,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Condor, Eurowings",
     website: "https://atca.aero",
-    description: "German airline training centre with integrated ATPL and direct airline cadet pathways.",
+    description:
+      "German airline training centre with integrated ATPL and direct airline cadet pathways.",
   },
 
   // ── France ────────────────────────────────────────────────────────────────
@@ -319,7 +338,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Air France",
     website: "https://enac.fr",
-    description: "France's national civil aviation school. Highly respected state institution with subsidised training.",
+    description:
+      "France's national civil aviation school. Highly respected state institution with subsidised training.",
   },
   {
     name: "Aéroclub de France",
@@ -334,7 +354,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://aeroclubdefrance.fr",
-    description: "France's oldest aeroclub offering PPL and modular ATPL training near Paris.",
+    description:
+      "France's oldest aeroclub offering PPL and modular ATPL training near Paris.",
   },
 
   // ── Portugal ──────────────────────────────────────────────────────────────
@@ -351,7 +372,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://nortavia.pt",
-    description: "Portuguese flight school offering PPL and modular ATPL training in northern Portugal.",
+    description:
+      "Portuguese flight school offering PPL and modular ATPL training in northern Portugal.",
   },
 
   // ── Malta ─────────────────────────────────────────────────────────────────
@@ -368,7 +390,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: null,
     website: "https://maltaschoolofflying.com",
-    description: "EASA-approved flight school on Malta with excellent Mediterranean flying weather and English-language instruction.",
+    description:
+      "EASA-approved flight school on Malta with excellent Mediterranean flying weather and English-language instruction.",
   },
 
   // ── Greece ────────────────────────────────────────────────────────────────
@@ -385,7 +408,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Olympic Air",
     website: "https://olympicaviationacademy.gr",
-    description: "Greek aviation academy with integrated and modular ATPL programmes and strong Mediterranean flying conditions.",
+    description:
+      "Greek aviation academy with integrated and modular ATPL programmes and strong Mediterranean flying conditions.",
   },
 
   // ── Czech Republic ────────────────────────────────────────────────────────
@@ -402,7 +426,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: null,
     website: "https://brnoflight.cz",
-    description: "Central European flight school with competitive pricing and EASA-approved integrated and modular programmes.",
+    description:
+      "Central European flight school with competitive pricing and EASA-approved integrated and modular programmes.",
   },
 
   // ── Hungary ───────────────────────────────────────────────────────────────
@@ -419,7 +444,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Wizz Air",
     website: "https://careers.wizzair.com",
-    description: "Wizz Air's cadet programme with a guaranteed first officer position upon successful completion.",
+    description:
+      "Wizz Air's cadet programme with a guaranteed first officer position upon successful completion.",
   },
 
   // ── USA ───────────────────────────────────────────────────────────────────
@@ -436,7 +462,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "American, Delta, United",
     website: "https://atpflightschool.com",
-    description: "America's largest flight school with over 70 locations. Offers zero-to-airline programmes with major US carrier partnerships.",
+    description:
+      "America's largest flight school with over 70 locations. Offers zero-to-airline programmes with major US carrier partnerships.",
   },
   {
     name: "Embry-Riddle Aeronautical University",
@@ -451,7 +478,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Multiple US carriers",
     website: "https://embryriddle.edu",
-    description: "World's most prestigious aviation university. Degree-integrated flight training with exceptional airline placement rates.",
+    description:
+      "World's most prestigious aviation university. Degree-integrated flight training with exceptional airline placement rates.",
   },
   {
     name: "Sierra Nevada College Aviation",
@@ -466,7 +494,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: null,
     website: "https://sierranevada.edu",
-    description: "Aviation degree programme in Nevada with scenic mountain flying environment.",
+    description:
+      "Aviation degree programme in Nevada with scenic mountain flying environment.",
   },
   {
     name: "Pan Am International Flight Academy",
@@ -481,7 +510,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Various",
     website: "https://panamacademy.com",
-    description: "International flight training academy in Florida with year-round flying weather and simulator training.",
+    description:
+      "International flight training academy in Florida with year-round flying weather and simulator training.",
   },
 
   // ── Australia ─────────────────────────────────────────────────────────────
@@ -498,7 +528,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Qantas, Virgin Australia",
     website: "https://caemelbourneflight.com",
-    description: "Australia's largest flight training organisation. Integrated and modular ATPL with Qantas cadet pathways.",
+    description:
+      "Australia's largest flight training organisation. Integrated and modular ATPL with Qantas cadet pathways.",
   },
   {
     name: "Jetstar Airways Pilot Academy",
@@ -513,7 +544,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Jetstar",
     website: "https://jetstar.com/careers",
-    description: "Jetstar's cadet programme with a direct pathway to Jetstar first officer positions.",
+    description:
+      "Jetstar's cadet programme with a direct pathway to Jetstar first officer positions.",
   },
   {
     name: "Flightpath International",
@@ -528,7 +560,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://flightpath.com.au",
-    description: "Queensland-based flight school offering PPL and modular ATPL training.",
+    description:
+      "Queensland-based flight school offering PPL and modular ATPL training.",
   },
 
   // ── New Zealand ───────────────────────────────────────────────────────────
@@ -545,7 +578,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Air New Zealand",
     website: "https://airnewzealand.co.nz/careers",
-    description: "Air New Zealand's cadet programme with direct airline pathway.",
+    description:
+      "Air New Zealand's cadet programme with direct airline pathway.",
   },
 
   // ── Canada ────────────────────────────────────────────────────────────────
@@ -562,7 +596,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: "WestJet",
     website: "https://westjet.com/careers",
-    description: "WestJet's cadet programme with a direct pathway to WestJet first officer positions.",
+    description:
+      "WestJet's cadet programme with a direct pathway to WestJet first officer positions.",
   },
   {
     name: "Seneca College School of Aviation",
@@ -577,7 +612,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Air Canada",
     website: "https://senecacollege.ca",
-    description: "Canada's leading aviation college with Air Canada partnership and degree-integrated flight training.",
+    description:
+      "Canada's leading aviation college with Air Canada partnership and degree-integrated flight training.",
   },
 
   // ── UAE ───────────────────────────────────────────────────────────────────
@@ -594,7 +630,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Emirates",
     website: "https://emiratesflighttrainingacademy.com",
-    description: "Emirates' state-of-the-art training academy with a direct pathway to Emirates first officer positions.",
+    description:
+      "Emirates' state-of-the-art training academy with a direct pathway to Emirates first officer positions.",
   },
   {
     name: "Etihad Aviation Training",
@@ -609,7 +646,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Etihad Airways",
     website: "https://etihadaviation.com",
-    description: "Etihad's cadet programme with world-class facilities and a direct pathway to Etihad Airways.",
+    description:
+      "Etihad's cadet programme with world-class facilities and a direct pathway to Etihad Airways.",
   },
 
   // ── South Africa ──────────────────────────────────────────────────────────
@@ -626,7 +664,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://flyingacademy.co.za",
-    description: "South African flight school with modular ATPL training and competitive pricing.",
+    description:
+      "South African flight school with modular ATPL training and competitive pricing.",
   },
 
   // ── India ─────────────────────────────────────────────────────────────────
@@ -643,7 +682,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "IndiGo",
     website: "https://goindigo.in/careers",
-    description: "IndiGo's cadet programme with a direct pathway to first officer positions at India's largest airline.",
+    description:
+      "IndiGo's cadet programme with a direct pathway to first officer positions at India's largest airline.",
   },
   {
     name: "Bombay Flying Club",
@@ -658,7 +698,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://bombayflying.com",
-    description: "India's oldest flying club, established in 1928. Offers PPL and CPL training.",
+    description:
+      "India's oldest flying club, established in 1928. Offers PPL and CPL training.",
   },
 
   // ── Singapore ─────────────────────────────────────────────────────────────
@@ -675,7 +716,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Singapore Airlines",
     website: "https://singaporeair.com/careers",
-    description: "Singapore Airlines' fully sponsored cadet programme. Graduates are bonded to SIA for a number of years.",
+    description:
+      "Singapore Airlines' fully sponsored cadet programme. Graduates are bonded to SIA for a number of years.",
   },
 
   // ── Hong Kong ─────────────────────────────────────────────────────────────
@@ -692,7 +734,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Cathay Pacific",
     website: "https://cathaypacific.com/careers",
-    description: "Cathay Pacific's cadet programme with training in Australia and a direct pathway to Cathay Pacific.",
+    description:
+      "Cathay Pacific's cadet programme with training in Australia and a direct pathway to Cathay Pacific.",
   },
 
   // ── Norway ────────────────────────────────────────────────────────────────
@@ -709,7 +752,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Norwegian Air",
     website: "https://nac.no",
-    description: "Norway's leading aviation college with integrated ATPL and Norwegian Air cadet pathways.",
+    description:
+      "Norway's leading aviation college with integrated ATPL and Norwegian Air cadet pathways.",
   },
 
   // ── Sweden ────────────────────────────────────────────────────────────────
@@ -726,7 +770,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "SAS",
     website: "https://saa.se",
-    description: "Swedish aviation academy with integrated and modular ATPL programmes and SAS cadet pathways.",
+    description:
+      "Swedish aviation academy with integrated and modular ATPL programmes and SAS cadet pathways.",
   },
 
   // ── Switzerland ───────────────────────────────────────────────────────────
@@ -743,7 +788,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Swiss International Air Lines",
     website: "https://swiss.com/careers",
-    description: "Swiss International Air Lines' training subsidiary. Integrated ATPL with direct Swiss cadet pathway.",
+    description:
+      "Swiss International Air Lines' training subsidiary. Integrated ATPL with direct Swiss cadet pathway.",
   },
 
   // ── Italy ─────────────────────────────────────────────────────────────────
@@ -760,7 +806,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "ITA Airways",
     website: "https://ita-airways.com/careers",
-    description: "Italy's national carrier cadet programme, now operating under ITA Airways.",
+    description:
+      "Italy's national carrier cadet programme, now operating under ITA Airways.",
   },
 
   // ── Poland ────────────────────────────────────────────────────────────────
@@ -777,7 +824,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: "LOT Polish Airlines",
     website: "https://lot.com/careers",
-    description: "LOT Polish Airlines' cadet programme with a direct pathway to LOT first officer positions.",
+    description:
+      "LOT Polish Airlines' cadet programme with a direct pathway to LOT first officer positions.",
   },
 
   // ── Turkey ────────────────────────────────────────────────────────────────
@@ -794,7 +842,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Turkish Airlines",
     website: "https://turkishairlines.com/careers",
-    description: "Turkish Airlines' cadet programme with world-class facilities and a direct pathway to Turkish Airlines.",
+    description:
+      "Turkish Airlines' cadet programme with world-class facilities and a direct pathway to Turkish Airlines.",
   },
 
   // ── Kenya ─────────────────────────────────────────────────────────────────
@@ -811,7 +860,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Kenya Airways",
     website: "https://kenya-airways.com/careers",
-    description: "Kenya Airways' cadet programme with training in South Africa and a direct pathway to KQ.",
+    description:
+      "Kenya Airways' cadet programme with training in South Africa and a direct pathway to KQ.",
   },
 
   // ── Nigeria ───────────────────────────────────────────────────────────────
@@ -828,7 +878,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: null,
     website: "https://ncat.gov.ng",
-    description: "Nigeria's national aviation training institution offering PPL and CPL programmes.",
+    description:
+      "Nigeria's national aviation training institution offering PPL and CPL programmes.",
   },
 
   // ── Additional UK ─────────────────────────────────────────────────────────
@@ -845,7 +896,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://multiflight.com",
-    description: "Northern England's leading flight school at Leeds Bradford Airport. PPL and modular ATPL.",
+    description:
+      "Northern England's leading flight school at Leeds Bradford Airport. PPL and modular ATPL.",
   },
   {
     name: "Bonus Aviation",
@@ -860,7 +912,8 @@ const schools = [
     accommodationAvailable: "no",
     airlinePartnerships: null,
     website: "https://bonusaviation.co.uk",
-    description: "UK flight school at Cranfield Airport offering PPL and modular ATPL training.",
+    description:
+      "UK flight school at Cranfield Airport offering PPL and modular ATPL training.",
   },
   {
     name: "Flybe Flight Training",
@@ -875,7 +928,8 @@ const schools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Flybe",
     website: "https://flybe.com/careers",
-    description: "Flybe's cadet programme based in Exeter with a direct pathway to Flybe first officer positions.",
+    description:
+      "Flybe's cadet programme based in Exeter with a direct pathway to Flybe first officer positions.",
   },
 ];
 

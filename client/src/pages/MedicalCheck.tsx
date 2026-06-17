@@ -3,7 +3,15 @@ import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
-import { ArrowRight, ChevronRight, ChevronLeft, Heart, AlertTriangle, CheckCircle2, Info } from "lucide-react";
+import {
+  ArrowRight,
+  ChevronRight,
+  ChevronLeft,
+  Heart,
+  AlertTriangle,
+  CheckCircle2,
+  Info,
+} from "lucide-react";
 
 interface Question {
   id: string;
@@ -16,12 +24,27 @@ const QUESTIONS: Question[] = [
   {
     id: "vision",
     text: "How is your uncorrected vision?",
-    subtext: "The CAA requires minimum uncorrected visual acuity. Corrected vision (glasses/contacts) is acceptable.",
+    subtext:
+      "The CAA requires minimum uncorrected visual acuity. Corrected vision (glasses/contacts) is acceptable.",
     options: [
       { label: "Good — no glasses or contacts needed", value: "good", risk: 0 },
-      { label: "I wear glasses or contact lenses", value: "corrected", risk: 0 },
-      { label: "I've had laser eye surgery", value: "laser", risk: 1, flag: "Laser eye surgery is accepted by the CAA after a suitable recovery period (typically 12 months). Mention this to your AME." },
-      { label: "I have a significant eye condition", value: "condition", risk: 3, flag: "Certain eye conditions can affect Class 1 medical eligibility. Consult an AME before committing to training." },
+      {
+        label: "I wear glasses or contact lenses",
+        value: "corrected",
+        risk: 0,
+      },
+      {
+        label: "I've had laser eye surgery",
+        value: "laser",
+        risk: 1,
+        flag: "Laser eye surgery is accepted by the CAA after a suitable recovery period (typically 12 months). Mention this to your AME.",
+      },
+      {
+        label: "I have a significant eye condition",
+        value: "condition",
+        risk: 3,
+        flag: "Certain eye conditions can affect Class 1 medical eligibility. Consult an AME before committing to training.",
+      },
     ],
   },
   {
@@ -30,20 +53,51 @@ const QUESTIONS: Question[] = [
     subtext: "Heart conditions are assessed carefully for pilot medicals.",
     options: [
       { label: "No known heart conditions", value: "none", risk: 0 },
-      { label: "I have high blood pressure (controlled by medication)", value: "bp_meds", risk: 2, flag: "Controlled hypertension is often acceptable but requires careful AME assessment. Some medications are permitted, others are not." },
-      { label: "I have high blood pressure (uncontrolled)", value: "bp_uncontrolled", risk: 3, flag: "Uncontrolled hypertension is likely to prevent Class 1 certification until managed. See a GP first." },
-      { label: "I have or have had a more serious heart condition", value: "serious", risk: 4, flag: "Serious cardiovascular conditions require specialist AME assessment. Some conditions can be accommodated with an OML (Operational Multi-crew Limitation)." },
+      {
+        label: "I have high blood pressure (controlled by medication)",
+        value: "bp_meds",
+        risk: 2,
+        flag: "Controlled hypertension is often acceptable but requires careful AME assessment. Some medications are permitted, others are not.",
+      },
+      {
+        label: "I have high blood pressure (uncontrolled)",
+        value: "bp_uncontrolled",
+        risk: 3,
+        flag: "Uncontrolled hypertension is likely to prevent Class 1 certification until managed. See a GP first.",
+      },
+      {
+        label: "I have or have had a more serious heart condition",
+        value: "serious",
+        risk: 4,
+        flag: "Serious cardiovascular conditions require specialist AME assessment. Some conditions can be accommodated with an OML (Operational Multi-crew Limitation).",
+      },
     ],
   },
   {
     id: "mental",
     text: "Have you ever been diagnosed with a mental health condition?",
-    subtext: "The CAA assesses mental health on a case-by-case basis. Many conditions are manageable.",
+    subtext:
+      "The CAA assesses mental health on a case-by-case basis. Many conditions are manageable.",
     options: [
       { label: "No mental health diagnoses", value: "none", risk: 0 },
-      { label: "Mild anxiety or depression, no medication", value: "mild_no_meds", risk: 1, flag: "Mild, well-controlled anxiety or depression without medication is often acceptable. Be honest with your AME." },
-      { label: "Anxiety or depression, currently on medication", value: "meds", risk: 2, flag: "Some antidepressants (SSRIs) are now accepted by the CAA. Others are not. Your AME will advise based on your specific medication and history." },
-      { label: "More significant mental health history", value: "significant", risk: 3, flag: "More complex mental health history requires specialist assessment. Consult an AME before starting training — it may still be possible." },
+      {
+        label: "Mild anxiety or depression, no medication",
+        value: "mild_no_meds",
+        risk: 1,
+        flag: "Mild, well-controlled anxiety or depression without medication is often acceptable. Be honest with your AME.",
+      },
+      {
+        label: "Anxiety or depression, currently on medication",
+        value: "meds",
+        risk: 2,
+        flag: "Some antidepressants (SSRIs) are now accepted by the CAA. Others are not. Your AME will advise based on your specific medication and history.",
+      },
+      {
+        label: "More significant mental health history",
+        value: "significant",
+        risk: 3,
+        flag: "More complex mental health history requires specialist assessment. Consult an AME before starting training — it may still be possible.",
+      },
     ],
   },
   {
@@ -51,9 +105,24 @@ const QUESTIONS: Question[] = [
     text: "Do you have diabetes?",
     options: [
       { label: "No", value: "none", risk: 0 },
-      { label: "Diet-controlled diabetes", value: "diet", risk: 1, flag: "Diet-controlled diabetes is often acceptable for Class 1 medical. Disclose to your AME." },
-      { label: "Tablet-controlled diabetes", value: "tablets", risk: 2, flag: "Tablet-controlled diabetes may be acceptable with an OML. Requires specialist AME assessment." },
-      { label: "Insulin-dependent diabetes", value: "insulin", risk: 4, flag: "Insulin-dependent diabetes is generally incompatible with Class 1 medical certification. Consult an AME for the latest guidance as regulations do evolve." },
+      {
+        label: "Diet-controlled diabetes",
+        value: "diet",
+        risk: 1,
+        flag: "Diet-controlled diabetes is often acceptable for Class 1 medical. Disclose to your AME.",
+      },
+      {
+        label: "Tablet-controlled diabetes",
+        value: "tablets",
+        risk: 2,
+        flag: "Tablet-controlled diabetes may be acceptable with an OML. Requires specialist AME assessment.",
+      },
+      {
+        label: "Insulin-dependent diabetes",
+        value: "insulin",
+        risk: 4,
+        flag: "Insulin-dependent diabetes is generally incompatible with Class 1 medical certification. Consult an AME for the latest guidance as regulations do evolve.",
+      },
     ],
   },
   {
@@ -61,19 +130,45 @@ const QUESTIONS: Question[] = [
     text: "How is your hearing?",
     options: [
       { label: "Normal hearing", value: "normal", risk: 0 },
-      { label: "Mild hearing loss", value: "mild", risk: 1, flag: "Mild hearing loss may be acceptable depending on the degree. An AME will conduct an audiometric test." },
-      { label: "Significant hearing loss or hearing aids", value: "significant", risk: 3, flag: "Significant hearing loss is likely to affect Class 1 eligibility. Consult an AME before committing to training." },
+      {
+        label: "Mild hearing loss",
+        value: "mild",
+        risk: 1,
+        flag: "Mild hearing loss may be acceptable depending on the degree. An AME will conduct an audiometric test.",
+      },
+      {
+        label: "Significant hearing loss or hearing aids",
+        value: "significant",
+        risk: 3,
+        flag: "Significant hearing loss is likely to affect Class 1 eligibility. Consult an AME before committing to training.",
+      },
     ],
   },
   {
     id: "neuro",
     text: "Do you have any neurological conditions?",
-    subtext: "This includes epilepsy, seizures, migraines, head injuries, or neurological diagnoses.",
+    subtext:
+      "This includes epilepsy, seizures, migraines, head injuries, or neurological diagnoses.",
     options: [
       { label: "No neurological conditions", value: "none", risk: 0 },
-      { label: "History of migraines (well controlled)", value: "migraine", risk: 1, flag: "Well-controlled migraines without aura are often acceptable. Migraines with aura require more careful assessment." },
-      { label: "History of seizures or epilepsy", value: "epilepsy", risk: 4, flag: "Epilepsy and seizure history is a significant barrier to Class 1 certification. Consult an AME — some cases can be accommodated after a seizure-free period." },
-      { label: "Other neurological condition", value: "other", risk: 3, flag: "Neurological conditions are assessed individually. Consult an AME before committing to training." },
+      {
+        label: "History of migraines (well controlled)",
+        value: "migraine",
+        risk: 1,
+        flag: "Well-controlled migraines without aura are often acceptable. Migraines with aura require more careful assessment.",
+      },
+      {
+        label: "History of seizures or epilepsy",
+        value: "epilepsy",
+        risk: 4,
+        flag: "Epilepsy and seizure history is a significant barrier to Class 1 certification. Consult an AME — some cases can be accommodated after a seizure-free period.",
+      },
+      {
+        label: "Other neurological condition",
+        value: "other",
+        risk: 3,
+        flag: "Neurological conditions are assessed individually. Consult an AME before committing to training.",
+      },
     ],
   },
   {
@@ -81,8 +176,18 @@ const QUESTIONS: Question[] = [
     text: "How would you describe your current weight and fitness?",
     options: [
       { label: "Healthy weight and reasonably fit", value: "good", risk: 0 },
-      { label: "Slightly overweight but otherwise healthy", value: "overweight", risk: 1, flag: "Mild overweight is not automatically disqualifying but the AME will assess your overall health. A healthy BMI is beneficial." },
-      { label: "Significantly overweight or obese", value: "obese", risk: 2, flag: "Significant obesity can affect Class 1 eligibility due to associated health risks. Weight management before your medical is advisable." },
+      {
+        label: "Slightly overweight but otherwise healthy",
+        value: "overweight",
+        risk: 1,
+        flag: "Mild overweight is not automatically disqualifying but the AME will assess your overall health. A healthy BMI is beneficial.",
+      },
+      {
+        label: "Significantly overweight or obese",
+        value: "obese",
+        risk: 2,
+        flag: "Significant obesity can affect Class 1 eligibility due to associated health risks. Weight management before your medical is advisable.",
+      },
     ],
   },
 ];
@@ -96,7 +201,7 @@ function getResult(answers: Answers, questions: Question[]) {
   for (const q of questions) {
     const ans = answers[q.id];
     if (!ans) continue;
-    const opt = q.options.find((o) => o.value === ans);
+    const opt = q.options.find(o => o.value === ans);
     if (opt) {
       totalRisk += opt.risk;
       if (opt.flag) flags.push(opt.flag);
@@ -119,7 +224,8 @@ const RESULT_COPY = {
     colour: "text-green-700",
     bg: "bg-green-50 border-green-200",
     icon: <CheckCircle2 className="w-6 h-6 text-green-600" />,
-    advice: "Book your Class 1 medical with a CAA-approved AME before committing to expensive training. It's the most important first step.",
+    advice:
+      "Book your Class 1 medical with a CAA-approved AME before committing to expensive training. It's the most important first step.",
   },
   amber: {
     title: "Some factors worth discussing with an AME",
@@ -128,7 +234,8 @@ const RESULT_COPY = {
     colour: "text-amber-700",
     bg: "bg-amber-50 border-amber-200",
     icon: <AlertTriangle className="w-6 h-6 text-amber-600" />,
-    advice: "Speak to a CAA-approved AME before starting training. An initial consultation (often £150–£300) can clarify your position before you commit to any costs.",
+    advice:
+      "Speak to a CAA-approved AME before starting training. An initial consultation (often £150–£300) can clarify your position before you commit to any costs.",
   },
   red: {
     title: "We recommend speaking to an AME before committing to training",
@@ -137,7 +244,8 @@ const RESULT_COPY = {
     colour: "text-red-700",
     bg: "bg-red-50 border-red-200",
     icon: <AlertTriangle className="w-6 h-6 text-red-600" />,
-    advice: "Book an AME consultation as your first step. Do not commit to training costs until you have clarity on your medical eligibility.",
+    advice:
+      "Book an AME consultation as your first step. Do not commit to training costs until you have clarity on your medical eligibility.",
   },
 };
 
@@ -155,13 +263,15 @@ export default function MedicalCheck() {
   const isIntro = step === 0;
   const isResult = step === QUESTIONS.length + 1;
   const currentQ = !isIntro && !isResult ? QUESTIONS[step - 1] : null;
-  const progress = isResult ? 100 : Math.round((step / (QUESTIONS.length + 1)) * 100);
+  const progress = isResult
+    ? 100
+    : Math.round((step / (QUESTIONS.length + 1)) * 100);
 
   function handleNext() {
     if (currentQ && selected) {
-      setAnswers((prev) => ({ ...prev, [currentQ.id]: selected }));
+      setAnswers(prev => ({ ...prev, [currentQ.id]: selected }));
       setSelected(null);
-      setStep((s) => s + 1);
+      setStep(s => s + 1);
     } else if (isIntro) {
       setStep(1);
     }
@@ -170,7 +280,7 @@ export default function MedicalCheck() {
   function handleBack() {
     if (step > 0) {
       setSelected(answers[QUESTIONS[step - 2]?.id] ?? null);
-      setStep((s) => s - 1);
+      setStep(s => s - 1);
     }
   }
 
@@ -187,7 +297,8 @@ export default function MedicalCheck() {
           "@context": "https://schema.org",
           "@type": "WebApplication",
           name: "Pilot Medical Readiness Check",
-          description: "Free tool to assess whether your health profile is compatible with a pilot medical certificate (based on CAA/EASA Class 1 standards)",
+          description:
+            "Free tool to assess whether your health profile is compatible with a pilot medical certificate (based on CAA/EASA Class 1 standards)",
           url: "https://aviatoriq.com/tools/class-1-medical-check",
           applicationCategory: "HealthApplication",
         }}
@@ -195,7 +306,6 @@ export default function MedicalCheck() {
       <PublicNav />
       <main className="flex-1 bg-sky-subtle py-10 px-4">
         <div className="container max-w-2xl">
-
           {/* Intro */}
           {isIntro && (
             <div className="card-base p-8 text-center">
@@ -206,13 +316,18 @@ export default function MedicalCheck() {
                 Pilot Medical Readiness Check
               </h1>
               <p className="text-[var(--color-muted-foreground)] mb-4 max-w-md mx-auto">
-                The pilot medical is the biggest unknown for many aspiring pilots. Answer 7 questions and find out if your health profile is likely to be compatible — before you commit to expensive training.
+                The pilot medical is the biggest unknown for many aspiring
+                pilots. Answer 7 questions and find out if your health profile
+                is likely to be compatible — before you commit to expensive
+                training.
               </p>
               {/* Scope note for non-UK/EU users */}
               <div className="p-4 rounded-xl bg-blue-50 border border-blue-200 text-left mb-4 max-w-md mx-auto">
                 <div className="flex items-start gap-2.5">
                   <Info className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
-                  <p className="text-xs text-blue-800"><strong>Scope:</strong> {SCOPE_NOTE}</p>
+                  <p className="text-xs text-blue-800">
+                    <strong>Scope:</strong> {SCOPE_NOTE}
+                  </p>
                 </div>
               </div>
               <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-left mb-8 max-w-md mx-auto">
@@ -233,7 +348,9 @@ export default function MedicalCheck() {
             <div className="card-base p-8">
               <div className="mb-6">
                 <div className="flex justify-between text-xs text-[var(--color-muted-foreground)] mb-1.5">
-                  <span>Question {step} of {QUESTIONS.length}</span>
+                  <span>
+                    Question {step} of {QUESTIONS.length}
+                  </span>
                   <span>{progress}%</span>
                 </div>
                 <div className="h-1.5 bg-[var(--color-muted)] rounded-full overflow-hidden">
@@ -244,13 +361,17 @@ export default function MedicalCheck() {
                 </div>
               </div>
 
-              <h2 className="font-display font-bold text-xl text-[var(--color-navy)] mb-2">{currentQ.text}</h2>
+              <h2 className="font-display font-bold text-xl text-[var(--color-navy)] mb-2">
+                {currentQ.text}
+              </h2>
               {currentQ.subtext && (
-                <p className="text-sm text-[var(--color-muted-foreground)] mb-6">{currentQ.subtext}</p>
+                <p className="text-sm text-[var(--color-muted-foreground)] mb-6">
+                  {currentQ.subtext}
+                </p>
               )}
 
               <div className="space-y-3 mb-8">
-                {currentQ.options.map((opt) => (
+                {currentQ.options.map(opt => (
                   <button
                     key={opt.value}
                     onClick={() => setSelected(opt.value)}
@@ -261,14 +382,20 @@ export default function MedicalCheck() {
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <div className={`w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center transition-all ${
-                        selected === opt.value
-                          ? "border-[var(--color-primary)] bg-[var(--color-primary)]"
-                          : "border-[var(--color-border)]"
-                      }`}>
-                        {selected === opt.value && <div className="w-2 h-2 rounded-full bg-white" />}
+                      <div
+                        className={`w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center transition-all ${
+                          selected === opt.value
+                            ? "border-[var(--color-primary)] bg-[var(--color-primary)]"
+                            : "border-[var(--color-border)]"
+                        }`}
+                      >
+                        {selected === opt.value && (
+                          <div className="w-2 h-2 rounded-full bg-white" />
+                        )}
                       </div>
-                      <span className="font-medium text-[var(--color-navy)] text-sm">{opt.label}</span>
+                      <span className="font-medium text-[var(--color-navy)] text-sm">
+                        {opt.label}
+                      </span>
                     </div>
                   </button>
                 ))}
@@ -301,9 +428,15 @@ export default function MedicalCheck() {
               <div className={`card-base p-6 border-2 ${resultCopy.bg}`}>
                 <div className="flex items-start gap-3 mb-3">
                   {resultCopy.icon}
-                  <h2 className={`font-display font-bold text-xl ${resultCopy.colour}`}>{resultCopy.title}</h2>
+                  <h2
+                    className={`font-display font-bold text-xl ${resultCopy.colour}`}
+                  >
+                    {resultCopy.title}
+                  </h2>
                 </div>
-                <p className="text-sm text-[var(--color-foreground)] leading-relaxed">{resultCopy.summary}</p>
+                <p className="text-sm text-[var(--color-foreground)] leading-relaxed">
+                  {resultCopy.summary}
+                </p>
               </div>
 
               {/* Flags */}
@@ -315,7 +448,10 @@ export default function MedicalCheck() {
                   </h3>
                   <ul className="space-y-3">
                     {result.flags.map((flag, i) => (
-                      <li key={i} className="flex items-start gap-2.5 text-sm text-[var(--color-foreground)] p-3 rounded-lg bg-[var(--color-muted)]/50">
+                      <li
+                        key={i}
+                        className="flex items-start gap-2.5 text-sm text-[var(--color-foreground)] p-3 rounded-lg bg-[var(--color-muted)]/50"
+                      >
                         <div className="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 flex-shrink-0" />
                         {flag}
                       </li>
@@ -326,14 +462,25 @@ export default function MedicalCheck() {
 
               {/* Advice */}
               <div className="card-base p-6 bg-[var(--color-navy)] text-white">
-                <h3 className="font-display font-bold text-lg mb-2">Recommended next step</h3>
-                <p className="text-white/80 text-sm mb-5">{resultCopy.advice}</p>
-                <Link href="/quiz" className="btn-cta mb-3 w-full justify-center">
+                <h3 className="font-display font-bold text-lg mb-2">
+                  Recommended next step
+                </h3>
+                <p className="text-white/80 text-sm mb-5">
+                  {resultCopy.advice}
+                </p>
+                <Link
+                  href="/quiz"
+                  className="btn-cta mb-3 w-full justify-center"
+                >
                   Take the full pilot assessment
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <button
-                  onClick={() => { setStep(0); setAnswers({}); setSelected(null); }}
+                  onClick={() => {
+                    setStep(0);
+                    setAnswers({});
+                    setSelected(null);
+                  }}
                   className="text-sm text-white/60 hover:text-white transition-colors w-full text-center"
                 >
                   Start over
@@ -344,7 +491,9 @@ export default function MedicalCheck() {
               <div className="p-4 rounded-xl bg-[var(--color-muted)]/50 border border-[var(--color-border)]">
                 <div className="flex items-start gap-2.5">
                   <Info className="w-4 h-4 text-[var(--color-muted-foreground)] flex-shrink-0 mt-0.5" />
-                  <p className="text-xs text-[var(--color-muted-foreground)]">{DISCLAIMER}</p>
+                  <p className="text-xs text-[var(--color-muted-foreground)]">
+                    {DISCLAIMER}
+                  </p>
                 </div>
               </div>
 

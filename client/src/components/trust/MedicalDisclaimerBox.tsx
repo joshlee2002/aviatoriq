@@ -16,11 +16,15 @@ export interface MedicalDisclaimerBoxProps {
   className?: string;
 }
 
-const authorityLinks: Record<string, { name: string; url: string; ameNote: string }> = {
+const authorityLinks: Record<
+  string,
+  { name: string; url: string; ameNote: string }
+> = {
   "UK CAA": {
     name: "UK Civil Aviation Authority (CAA)",
     url: "https://www.caa.co.uk/medical/",
-    ameNote: "an Approved Medical Examiner (AME) or Aeromedical Centre (AeMC) approved by the UK CAA",
+    ameNote:
+      "an Approved Medical Examiner (AME) or Aeromedical Centre (AeMC) approved by the UK CAA",
   },
   FAA: {
     name: "Federal Aviation Administration (FAA)",
@@ -30,7 +34,8 @@ const authorityLinks: Record<string, { name: string; url: string; ameNote: strin
   EASA: {
     name: "European Union Aviation Safety Agency (EASA)",
     url: "https://www.easa.europa.eu/en/domains/aircrew/medical",
-    ameNote: "an EASA-approved AME or Aeromedical Centre (AeMC) in your member state",
+    ameNote:
+      "an EASA-approved AME or Aeromedical Centre (AeMC) in your member state",
   },
   CASA: {
     name: "Civil Aviation Safety Authority (CASA)",
@@ -68,13 +73,21 @@ export const MedicalDisclaimerBox: React.FC<MedicalDisclaimerBoxProps> = ({
         className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center mt-0.5"
         style={{ background: "oklch(0.55 0.18 30 / 0.12)" }}
       >
-        <Stethoscope className="w-4 h-4" style={{ color: "oklch(0.65 0.18 30)" }} />
+        <Stethoscope
+          className="w-4 h-4"
+          style={{ color: "oklch(0.65 0.18 30)" }}
+        />
       </div>
       <div>
-        <p className="text-xs font-semibold text-white mb-1">Not medical advice</p>
-        <p className="text-xs leading-relaxed" style={{ color: "oklch(0.65 0.04 240)" }}>
-          This guide is for general information only and does not constitute medical advice. Medical standards for
-          pilot licences are set by the{" "}
+        <p className="text-xs font-semibold text-white mb-1">
+          Not medical advice
+        </p>
+        <p
+          className="text-xs leading-relaxed"
+          style={{ color: "oklch(0.65 0.04 240)" }}
+        >
+          This guide is for general information only and does not constitute
+          medical advice. Medical standards for pilot licences are set by the{" "}
           <a
             href={auth.url}
             target="_blank"
@@ -84,12 +97,16 @@ export const MedicalDisclaimerBox: React.FC<MedicalDisclaimerBoxProps> = ({
           >
             {auth.name}
           </a>{" "}
-          and can change. Your individual eligibility depends on your specific medical history and can only be
-          determined by {auth.ameNote}. Do not self-assess your eligibility based on this guide — always seek a
+          and can change. Your individual eligibility depends on your specific
+          medical history and can only be determined by {auth.ameNote}. Do not
+          self-assess your eligibility based on this guide — always seek a
           formal medical examination before committing to pilot training.
         </p>
         {additionalNote && (
-          <p className="text-xs mt-2 leading-relaxed" style={{ color: "oklch(0.65 0.04 240)" }}>
+          <p
+            className="text-xs mt-2 leading-relaxed"
+            style={{ color: "oklch(0.65 0.04 240)" }}
+          >
             {additionalNote}
           </p>
         )}

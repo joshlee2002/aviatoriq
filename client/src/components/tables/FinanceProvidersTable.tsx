@@ -5,23 +5,29 @@
  */
 
 import React from "react";
-import { TRAINING_FINANCE_PROVIDERS_2026, FINANCE_DISCLAIMER } from "../../data/trainingFinanceProviders2026";
+import {
+  TRAINING_FINANCE_PROVIDERS_2026,
+  FINANCE_DISCLAIMER,
+} from "../../data/trainingFinanceProviders2026";
 
 interface FinanceProvidersTableProps {
   country: string;
   className?: string;
 }
 
-export const FinanceProvidersTable: React.FC<FinanceProvidersTableProps> = ({ country, className = "" }) => {
-  const providers = TRAINING_FINANCE_PROVIDERS_2026.filter((p) =>
+export const FinanceProvidersTable: React.FC<FinanceProvidersTableProps> = ({
+  country,
+  className = "",
+}) => {
+  const providers = TRAINING_FINANCE_PROVIDERS_2026.filter(p =>
     p.country.toLowerCase().includes(country.toLowerCase())
   );
 
   if (providers.length === 0) {
     return (
       <p className="text-sm text-gray-500 italic">
-        No verified finance provider data available for this country. Check your national financial regulator for
-        authorised lenders.
+        No verified finance provider data available for this country. Check your
+        national financial regulator for authorised lenders.
       </p>
     );
   }
@@ -30,7 +36,9 @@ export const FinanceProvidersTable: React.FC<FinanceProvidersTableProps> = ({ co
     <div className={`space-y-4 ${className}`}>
       {/* Finance disclaimer */}
       <div className="rounded-md border border-red-200 bg-red-50 p-3 text-xs text-red-800">
-        <p className="font-semibold mb-1">Financial information — not financial advice</p>
+        <p className="font-semibold mb-1">
+          Financial information — not financial advice
+        </p>
         <p>{FINANCE_DISCLAIMER}</p>
       </div>
 
@@ -38,11 +46,21 @@ export const FinanceProvidersTable: React.FC<FinanceProvidersTableProps> = ({ co
         <table className="min-w-full divide-y divide-gray-200 text-sm">
           <thead className="bg-gray-50">
             <tr>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Provider</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Product Type</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Amount Range</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Representative APR</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Key Eligibility</th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Provider
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Product Type
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Amount Range
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Representative APR
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Key Eligibility
+              </th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 bg-white">
@@ -62,8 +80,12 @@ export const FinanceProvidersTable: React.FC<FinanceProvidersTableProps> = ({ co
                 <td className="px-4 py-3 text-gray-700">
                   {p.minAmount} – {p.maxAmount}
                 </td>
-                <td className="px-4 py-3 text-gray-700">{p.representativeApr}</td>
-                <td className="px-4 py-3 text-xs text-gray-600">{p.eligibilityNotes}</td>
+                <td className="px-4 py-3 text-gray-700">
+                  {p.representativeApr}
+                </td>
+                <td className="px-4 py-3 text-xs text-gray-600">
+                  {p.eligibilityNotes}
+                </td>
               </tr>
             ))}
           </tbody>

@@ -4,7 +4,12 @@ import { describe, expect, it } from "vitest";
 // We duplicate the pure computation logic here so it can be unit-tested
 // without a browser environment.
 
-type Route = "integrated_uk" | "modular_uk" | "ppl_uk" | "integrated_eu" | "integrated_us";
+type Route =
+  | "integrated_uk"
+  | "modular_uk"
+  | "ppl_uk"
+  | "integrated_eu"
+  | "integrated_us";
 type Location = "uk_south" | "uk_north" | "europe" | "usa" | "online_only";
 type Pace = "full_time" | "part_time" | "flexible";
 type Experience = "zero" | "ppl" | "ppl_night" | "ppl_ir";
@@ -19,7 +24,7 @@ const BASE_MONTHS: Record<Route, Record<Pace, number>> = {
 };
 
 const BASE_TOTALS: Record<Route, number> = {
-  integrated_uk: 124350,  // sum of all base items
+  integrated_uk: 124350, // sum of all base items
   modular_uk: 52400,
   ppl_uk: 12850,
   integrated_eu: 110950,
@@ -73,7 +78,13 @@ describe("calculator cost engine", () => {
 
   describe("experience credits", () => {
     it("zero experience gives no credit on any route", () => {
-      const routes: Route[] = ["integrated_uk", "modular_uk", "ppl_uk", "integrated_eu", "integrated_us"];
+      const routes: Route[] = [
+        "integrated_uk",
+        "modular_uk",
+        "ppl_uk",
+        "integrated_eu",
+        "integrated_us",
+      ];
       for (const route of routes) {
         expect(getExperienceCredit(route, "zero")).toBe(0);
       }
@@ -99,11 +110,15 @@ describe("calculator cost engine", () => {
 
   describe("location multipliers", () => {
     it("uk_south has higher training multiplier than uk_north", () => {
-      expect(LOCATION_TRAINING_MULT["uk_south"]).toBeGreaterThan(LOCATION_TRAINING_MULT["uk_north"]);
+      expect(LOCATION_TRAINING_MULT["uk_south"]).toBeGreaterThan(
+        LOCATION_TRAINING_MULT["uk_north"]
+      );
     });
 
     it("europe has lower training multiplier than uk_south", () => {
-      expect(LOCATION_TRAINING_MULT["europe"]).toBeLessThan(LOCATION_TRAINING_MULT["uk_south"]);
+      expect(LOCATION_TRAINING_MULT["europe"]).toBeLessThan(
+        LOCATION_TRAINING_MULT["uk_south"]
+      );
     });
 
     it("uk_south multiplier is 1.1", () => {

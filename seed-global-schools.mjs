@@ -25,7 +25,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Qantas, Virgin Australia",
     website: "https://www.griffith.edu.au/aviation",
-    description: "Australia's largest university aviation programme. Offers CASA-approved integrated and modular CPL/ATPL training with strong airline cadet partnerships.",
+    description:
+      "Australia's largest university aviation programme. Offers CASA-approved integrated and modular CPL/ATPL training with strong airline cadet partnerships.",
   },
   {
     name: "AVIA (Australian Airline Pilot Academy)",
@@ -40,7 +41,8 @@ const newSchools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Rex, Alliance Airlines",
     website: "https://www.avia.com.au",
-    description: "CASA-approved flight training organisation based in Sydney. Specialises in modular CPL and ATPL training with a strong track record of airline placements.",
+    description:
+      "CASA-approved flight training organisation based in Sydney. Specialises in modular CPL and ATPL training with a strong track record of airline placements.",
   },
   {
     name: "CAE Melbourne Flight Training",
@@ -55,7 +57,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Qantas Group, Virgin Australia",
     website: "https://caemelbourneflight.com",
-    description: "Part of CAE's global network, offering integrated and modular ATPL training in Melbourne with strong Qantas Group cadet programme links.",
+    description:
+      "Part of CAE's global network, offering integrated and modular ATPL training in Melbourne with strong Qantas Group cadet programme links.",
   },
   {
     name: "Flight Training Adelaide",
@@ -70,7 +73,8 @@ const newSchools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Rex, QantasLink",
     website: "https://www.flighttrainingadelaide.com.au",
-    description: "South Australia's leading CASA-approved flight school. Offers PPL, CPL, and ATPL modular training with competitive pricing.",
+    description:
+      "South Australia's leading CASA-approved flight school. Offers PPL, CPL, and ATPL modular training with competitive pricing.",
   },
   {
     name: "Aero Australia",
@@ -85,7 +89,8 @@ const newSchools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Various regional",
     website: "https://www.aeroaustralia.com.au",
-    description: "Brisbane-based CASA-approved flight school offering modular CPL training and PPL courses at competitive rates.",
+    description:
+      "Brisbane-based CASA-approved flight school offering modular CPL training and PPL courses at competitive rates.",
   },
   {
     name: "Jandakot Flight Training Centre",
@@ -100,7 +105,8 @@ const newSchools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Cobham Aviation, Alliance Airlines",
     website: "https://www.jftc.com.au",
-    description: "Perth's leading flight training centre at Jandakot Airport. CASA-approved for CPL and ATPL training with strong connections to WA regional airlines.",
+    description:
+      "Perth's leading flight training centre at Jandakot Airport. CASA-approved for CPL and ATPL training with strong connections to WA regional airlines.",
   },
   {
     name: "Flightpath International",
@@ -115,7 +121,8 @@ const newSchools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Various",
     website: "https://www.flightpathinternational.com",
-    description: "Established Sydney flight school offering CASA-approved PPL and CPL training. Popular with international students seeking Australian CPL.",
+    description:
+      "Established Sydney flight school offering CASA-approved PPL and CPL training. Popular with international students seeking Australian CPL.",
   },
   {
     name: "RMIT University Aviation",
@@ -129,8 +136,10 @@ const newSchools = [
     financeAvailable: "yes",
     accommodationAvailable: "yes",
     airlinePartnerships: "Qantas, Virgin Australia",
-    website: "https://www.rmit.edu.au/study-with-us/levels-of-study/undergraduate-study/bachelor/aviation",
-    description: "University-based aviation programme at RMIT Melbourne. Combines academic degree with CASA-approved CPL training and strong industry connections.",
+    website:
+      "https://www.rmit.edu.au/study-with-us/levels-of-study/undergraduate-study/bachelor/aviation",
+    description:
+      "University-based aviation programme at RMIT Melbourne. Combines academic degree with CASA-approved CPL training and strong industry connections.",
   },
 
   // ── Canada ────────────────────────────────────────────────────────────────
@@ -147,7 +156,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Air Canada, Jazz Aviation",
     website: "https://www.senecacollege.ca/aviation",
-    description: "Canada's leading aviation college, located at Toronto Pearson. Offers Transport Canada-approved CPL and ATPL training with direct Air Canada cadet pathways.",
+    description:
+      "Canada's leading aviation college, located at Toronto Pearson. Offers Transport Canada-approved CPL and ATPL training with direct Air Canada cadet pathways.",
   },
   {
     name: "BCIT Aviation",
@@ -162,7 +172,8 @@ const newSchools = [
     accommodationAvailable: "no",
     airlinePartnerships: "WestJet, Air Canada",
     website: "https://www.bcit.ca/aviation",
-    description: "British Columbia Institute of Technology aviation programme. Transport Canada-approved CPL training with strong connections to WestJet and BC regional carriers.",
+    description:
+      "British Columbia Institute of Technology aviation programme. Transport Canada-approved CPL training with strong connections to WestJet and BC regional carriers.",
   },
   {
     name: "Confederation College Aviation",
@@ -177,7 +188,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Bearskin Airlines, Air Canada Express",
     website: "https://www.confederationcollege.ca/aviation",
-    description: "Northern Ontario aviation programme with Transport Canada-approved CPL training. Strong pathway into regional and northern operations.",
+    description:
+      "Northern Ontario aviation programme with Transport Canada-approved CPL training. Strong pathway into regional and northern operations.",
   },
   {
     name: "Harv's Air Pilot Training",
@@ -192,7 +204,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Various regional",
     website: "https://www.harvsair.com",
-    description: "Manitoba-based Transport Canada-approved flight school. Known for high completion rates and competitive pricing for CPL training.",
+    description:
+      "Manitoba-based Transport Canada-approved flight school. Known for high completion rates and competitive pricing for CPL training.",
   },
   {
     name: "Coastal Pacific Aviation",
@@ -207,7 +220,8 @@ const newSchools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Pacific Coastal Airlines",
     website: "https://www.coastalpacificaviation.com",
-    description: "Vancouver Island-based flight school offering Transport Canada CPL training with a focus on coastal and mountain flying environments.",
+    description:
+      "Vancouver Island-based flight school offering Transport Canada CPL training with a focus on coastal and mountain flying environments.",
   },
   {
     name: "Moncton Flight College",
@@ -222,7 +236,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Air Canada, WestJet, Sunwing",
     website: "https://www.monctonflightcollege.com",
-    description: "Atlantic Canada's largest aviation training centre. Transport Canada-approved integrated and modular ATPL training with strong airline partnerships.",
+    description:
+      "Atlantic Canada's largest aviation training centre. Transport Canada-approved integrated and modular ATPL training with strong airline partnerships.",
   },
   {
     name: "Waterloo Wellington Flight Centre",
@@ -237,7 +252,8 @@ const newSchools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Porter Airlines, Air Canada",
     website: "https://www.wwfc.ca",
-    description: "Ontario-based Transport Canada-approved flight school with a strong reputation for CPL training and instrument rating instruction.",
+    description:
+      "Ontario-based Transport Canada-approved flight school with a strong reputation for CPL training and instrument rating instruction.",
   },
   {
     name: "Pacific Flying Club",
@@ -252,7 +268,8 @@ const newSchools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Various",
     website: "https://www.pacificflyingclub.com",
-    description: "Vancouver-based Transport Canada-approved flight school. Offers PPL and CPL training with access to one of Canada's busiest airspaces.",
+    description:
+      "Vancouver-based Transport Canada-approved flight school. Offers PPL and CPL training with access to one of Canada's busiest airspaces.",
   },
 
   // ── Europe (additional schools) ───────────────────────────────────────────
@@ -269,7 +286,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Lufthansa, Swiss, Austrian",
     website: "https://www.lat.aero",
-    description: "Lufthansa Group's official pilot training academy. Integrated EASA ATPL training with a guaranteed pathway to Lufthansa, Swiss, or Austrian Airlines.",
+    description:
+      "Lufthansa Group's official pilot training academy. Integrated EASA ATPL training with a guaranteed pathway to Lufthansa, Swiss, or Austrian Airlines.",
   },
   {
     name: "KLM Flight Academy",
@@ -284,7 +302,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "KLM, Transavia",
     website: "https://www.klmflightacademy.com",
-    description: "KLM's official cadet training academy. EASA-approved integrated ATPL with a direct pathway to KLM and Transavia.",
+    description:
+      "KLM's official cadet training academy. EASA-approved integrated ATPL with a direct pathway to KLM and Transavia.",
   },
   {
     name: "Norwegian Aviation College (NAC)",
@@ -299,7 +318,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Norwegian, Widerøe",
     website: "https://www.nac.no",
-    description: "Norway's largest flight training organisation. EASA-approved integrated and modular ATPL training with strong connections to Norwegian and Widerøe.",
+    description:
+      "Norway's largest flight training organisation. EASA-approved integrated and modular ATPL training with strong connections to Norwegian and Widerøe.",
   },
   {
     name: "Ryanair Pilot Academy (Malta)",
@@ -314,7 +334,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Ryanair",
     website: "https://www.ryanair.com/gb/en/careers/pilot-academy",
-    description: "Ryanair's official cadet training programme based in Malta. EASA-approved integrated ATPL with a guaranteed Ryanair First Officer position upon graduation.",
+    description:
+      "Ryanair's official cadet training programme based in Malta. EASA-approved integrated ATPL with a guaranteed Ryanair First Officer position upon graduation.",
   },
   {
     name: "ENAC (École Nationale de l'Aviation Civile)",
@@ -329,7 +350,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Air France, Transavia France",
     website: "https://www.enac.fr",
-    description: "France's national civil aviation university. Subsidised EASA ATPL training with strong Air France cadet pathways. One of Europe's most prestigious aviation schools.",
+    description:
+      "France's national civil aviation university. Subsidised EASA ATPL training with strong Air France cadet pathways. One of Europe's most prestigious aviation schools.",
   },
   {
     name: "Aviación del Noroeste (ANOA)",
@@ -344,7 +366,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Iberia, Vueling",
     website: "https://www.anoa.es",
-    description: "EASA-approved Spanish flight school offering integrated and modular ATPL training. Popular with European students due to favourable flying weather and competitive pricing.",
+    description:
+      "EASA-approved Spanish flight school offering integrated and modular ATPL training. Popular with European students due to favourable flying weather and competitive pricing.",
   },
   {
     name: "Dublin Aerospace",
@@ -359,7 +382,8 @@ const newSchools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Ryanair, Aer Lingus",
     website: "https://www.dublinaerospace.com",
-    description: "Ireland's leading EASA-approved modular ATPL training provider. Strong connections to Ryanair and Aer Lingus with competitive Irish pricing.",
+    description:
+      "Ireland's leading EASA-approved modular ATPL training provider. Strong connections to Ryanair and Aer Lingus with competitive Irish pricing.",
   },
   {
     name: "Scandinavian Aviation Academy (SAA)",
@@ -374,7 +398,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "SAS, Norwegian",
     website: "https://www.saa.se",
-    description: "Sweden's largest flight training organisation. EASA-approved integrated and modular ATPL training with strong connections to SAS and Norwegian.",
+    description:
+      "Sweden's largest flight training organisation. EASA-approved integrated and modular ATPL training with strong connections to SAS and Norwegian.",
   },
   {
     name: "Aeronautica Militare (Italian Air Force Academy)",
@@ -389,7 +414,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "ITA Airways, Neos",
     website: "https://www.aeronautica.difesa.it",
-    description: "Italy's leading EASA-approved civilian pilot training programme. Integrated ATPL training with strong connections to ITA Airways and Italian regional carriers.",
+    description:
+      "Italy's leading EASA-approved civilian pilot training programme. Integrated ATPL training with strong connections to ITA Airways and Italian regional carriers.",
   },
   {
     name: "Czech Aviation Training Centre (CATC)",
@@ -404,7 +430,8 @@ const newSchools = [
     accommodationAvailable: "no",
     airlinePartnerships: "Czech Airlines, Smartwings",
     website: "https://www.catc.cz",
-    description: "Prague-based EASA-approved modular ATPL training provider. One of Central Europe's most affordable quality training options.",
+    description:
+      "Prague-based EASA-approved modular ATPL training provider. One of Central Europe's most affordable quality training options.",
   },
   {
     name: "Aegean Airlines Pilot Academy",
@@ -419,7 +446,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "Aegean Airlines, Olympic Air",
     website: "https://en.aegeanair.com/careers/pilot-academy",
-    description: "Aegean Airlines' official cadet programme. EASA-approved integrated ATPL training with a guaranteed pathway to Aegean Airlines or Olympic Air.",
+    description:
+      "Aegean Airlines' official cadet programme. EASA-approved integrated ATPL training with a guaranteed pathway to Aegean Airlines or Olympic Air.",
   },
   {
     name: "Wingsland Flight Academy",
@@ -434,7 +462,8 @@ const newSchools = [
     accommodationAvailable: "yes",
     airlinePartnerships: "TAP Air Portugal, Ryanair",
     website: "https://www.wingsland.pt",
-    description: "Portuguese EASA-approved flight school offering integrated and modular ATPL training. Excellent flying weather and competitive pricing attract students from across Europe.",
+    description:
+      "Portuguese EASA-approved flight school offering integrated and modular ATPL training. Excellent flying weather and competitive pricing attract students from across Europe.",
   },
 ];
 

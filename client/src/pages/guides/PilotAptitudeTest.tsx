@@ -16,17 +16,53 @@ export default function PilotAptitudeTest() {
       ctaHref="/quiz"
       ctaText="Start your career assessment"
       relatedGuides={[
-        { title: "BA Speedbird Academy 2026: Complete Guide", href: "/guides/ba-speedbird-academy", time: "10 min" },
-        { title: "easyJet Generation Pilot Programme: Complete Guide", href: "/guides/easyjet-generation-pilot", time: "9 min" },
-        { title: "How to Become a Pilot in the UK (2026 Guide)", href: "/guides/how-to-become-a-pilot", time: "8 min" },
-        { title: "Class 1 Medical: Complete Guide", href: "/guides/class-1-medical", time: "7 min" },
+        {
+          title: "BA Speedbird Academy 2026: Complete Guide",
+          href: "/guides/ba-speedbird-academy",
+          time: "10 min",
+        },
+        {
+          title: "easyJet Generation Pilot Programme: Complete Guide",
+          href: "/guides/easyjet-generation-pilot",
+          time: "9 min",
+        },
+        {
+          title: "How to Become a Pilot in the UK (2026 Guide)",
+          href: "/guides/how-to-become-a-pilot",
+          time: "8 min",
+        },
+        {
+          title: "Class 1 Medical: Complete Guide",
+          href: "/guides/class-1-medical",
+          time: "7 min",
+        },
       ]}
       faqSchema={[
-        { question: "What are pilot aptitude tests?", answer: "Pilot aptitude tests are psychometric assessments used by airlines and flight schools to identify candidates with the cognitive profile associated with successful pilots. They typically cover numerical reasoning, spatial awareness, multi-tasking, working memory, and psychomotor skills." },
-        { question: "Can you prepare for pilot aptitude tests?", answer: "Yes — preparation makes a measurable difference. The tests measure underlying cognitive abilities, but familiarity with the test format, question types, and time pressure significantly improves performance. Most candidates who prepare systematically score higher than those who don't." },
-        { question: "What is the DLR test for pilots?", answer: "The DLR (Deutsches Zentrum für Luft- und Raumfahrt) test is a comprehensive pilot aptitude assessment used by Lufthansa, Austrian Airlines, and several other European carriers. It covers cognitive ability, personality, and psychomotor skills, and is considered one of the most rigorous pilot selection assessments in the world." },
-        { question: "How hard are pilot aptitude tests?", answer: "The tests are designed to differentiate between candidates — they are not easy. However, they are not testing aviation knowledge. They are testing cognitive abilities that can be improved with practice. Systematic preparation can make the tests more manageable, but results still depend on aptitude, test-day performance and airline benchmarks." },
-        { question: "What happens if you fail a pilot aptitude test?", answer: "Failing a pilot aptitude test for one airline does not permanently disqualify you from aviation. Different airlines use different tests, and most allow reapplication after a waiting period (typically 6–12 months). Use the experience to identify your weaknesses and prepare more thoroughly for the next application." },
+        {
+          question: "What are pilot aptitude tests?",
+          answer:
+            "Pilot aptitude tests are psychometric assessments used by airlines and flight schools to identify candidates with the cognitive profile associated with successful pilots. They typically cover numerical reasoning, spatial awareness, multi-tasking, working memory, and psychomotor skills.",
+        },
+        {
+          question: "Can you prepare for pilot aptitude tests?",
+          answer:
+            "Yes — preparation makes a measurable difference. The tests measure underlying cognitive abilities, but familiarity with the test format, question types, and time pressure significantly improves performance. Most candidates who prepare systematically score higher than those who don't.",
+        },
+        {
+          question: "What is the DLR test for pilots?",
+          answer:
+            "The DLR (Deutsches Zentrum für Luft- und Raumfahrt) test is a comprehensive pilot aptitude assessment used by Lufthansa, Austrian Airlines, and several other European carriers. It covers cognitive ability, personality, and psychomotor skills, and is considered one of the most rigorous pilot selection assessments in the world.",
+        },
+        {
+          question: "How hard are pilot aptitude tests?",
+          answer:
+            "The tests are designed to differentiate between candidates — they are not easy. However, they are not testing aviation knowledge. They are testing cognitive abilities that can be improved with practice. Systematic preparation can make the tests more manageable, but results still depend on aptitude, test-day performance and airline benchmarks.",
+        },
+        {
+          question: "What happens if you fail a pilot aptitude test?",
+          answer:
+            "Failing a pilot aptitude test for one airline does not permanently disqualify you from aviation. Different airlines use different tests, and most allow reapplication after a waiting period (typically 6–12 months). Use the experience to identify your weaknesses and prepare more thoroughly for the next application.",
+        },
       ]}
       sections={[
         {
@@ -34,17 +70,51 @@ export default function PilotAptitudeTest() {
           content: (
             <>
               <p>
-                Before you can prepare effectively for pilot aptitude tests, you need to understand what they are actually measuring — and why. Airlines and flight schools use aptitude tests not to assess your aviation knowledge (you normally don't need any for ab-initio entry) but to identify whether you have the underlying cognitive profile associated with successful pilots.
+                Before you can prepare effectively for pilot aptitude tests, you
+                need to understand what they are actually measuring — and why.
+                Airlines and flight schools use aptitude tests not to assess
+                your aviation knowledge (you normally don't need any for
+                ab-initio entry) but to identify whether you have the underlying
+                cognitive profile associated with successful pilots.
               </p>
-              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
-                Before your interview, complete our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
+              <p
+                className="text-sm p-3 rounded-lg my-3"
+                style={{
+                  background: "oklch(0.45 0.18 240 / 0.07)",
+                  border: "1px solid oklch(0.45 0.18 240 / 0.15)",
+                }}
+              >
+                Before your interview, complete our free{" "}
+                <Link href="/quiz" className="text-blue-400 underline">
+                  Pilot Career Assessment
+                </Link>{" "}
+                to identify your strongest attributes and areas to develop.
               </p>
-              <img src="/manus-storage/simulator-assessment_08bb00b0.jpg" alt="Simulator assessment" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
+              <img
+                src="/manus-storage/simulator-assessment_08bb00b0.jpg"
+                alt="Simulator assessment"
+                className="w-full rounded-xl my-4 object-cover"
+                style={{ maxHeight: "320px" }}
+              />
               <p>
-                Research into pilot performance has identified a consistent set of cognitive abilities that predict success in training and on the line. These include: the ability to process multiple streams of information simultaneously (multi-tasking), strong spatial reasoning (understanding three-dimensional relationships), numerical accuracy under time pressure, working memory capacity, and psychomotor coordination (hand-eye coordination and fine motor control).
+                Research into pilot performance has identified a consistent set
+                of cognitive abilities that predict success in training and on
+                the line. These include: the ability to process multiple streams
+                of information simultaneously (multi-tasking), strong spatial
+                reasoning (understanding three-dimensional relationships),
+                numerical accuracy under time pressure, working memory capacity,
+                and psychomotor coordination (hand-eye coordination and fine
+                motor control).
               </p>
               <p>
-                The tests are designed to be difficult enough to differentiate between candidates — they are not pass/fail in the way a driving test is. Your score is compared against a normative population or airline benchmark, and airlines are looking for candidates who score in the upper percentiles. Preparation improves your familiarity with the format and reduces the cognitive load of understanding what you're being asked to do, which allows your true aptitude to be measured accurately.
+                The tests are designed to be difficult enough to differentiate
+                between candidates — they are not pass/fail in the way a driving
+                test is. Your score is compared against a normative population
+                or airline benchmark, and airlines are looking for candidates
+                who score in the upper percentiles. Preparation improves your
+                familiarity with the format and reduces the cognitive load of
+                understanding what you're being asked to do, which allows your
+                true aptitude to be measured accurately.
               </p>
             </>
           ),
@@ -54,25 +124,54 @@ export default function PilotAptitudeTest() {
           content: (
             <>
               <p>
-                Pilot aptitude tests vary between airlines and selection providers, but the following test types appear consistently across virtually all major UK airline and flight school selection processes:
+                Pilot aptitude tests vary between airlines and selection
+                providers, but the following test types appear consistently
+                across virtually all major UK airline and flight school
+                selection processes:
               </p>
               <p>
-                <strong>Numerical Reasoning:</strong> Questions involving arithmetic, data interpretation, percentages, ratios, and basic algebra. These are typically timed, with 30–60 seconds per question. The difficulty is not the mathematics — it is the time pressure. Candidates who are not fluent with mental arithmetic and quick data reading will struggle.
+                <strong>Numerical Reasoning:</strong> Questions involving
+                arithmetic, data interpretation, percentages, ratios, and basic
+                algebra. These are typically timed, with 30–60 seconds per
+                question. The difficulty is not the mathematics — it is the time
+                pressure. Candidates who are not fluent with mental arithmetic
+                and quick data reading will struggle.
               </p>
               <p>
-                <strong>Spatial Awareness / Orientation:</strong> Questions that test your ability to understand and manipulate three-dimensional objects and spatial relationships. Common formats include: identifying which 3D shape matches a 2D net, determining the orientation of an aircraft after a series of turns, and identifying which object is the mirror image of a target.
+                <strong>Spatial Awareness / Orientation:</strong> Questions that
+                test your ability to understand and manipulate three-dimensional
+                objects and spatial relationships. Common formats include:
+                identifying which 3D shape matches a 2D net, determining the
+                orientation of an aircraft after a series of turns, and
+                identifying which object is the mirror image of a target.
               </p>
               <p>
-                <strong>Multi-Tasking:</strong> The most pilot-specific test type. You are typically asked to perform two or more tasks simultaneously — for example, tracking a moving target with a joystick while responding to auditory or visual stimuli. These tests measure your ability to divide attention and maintain performance across multiple concurrent demands.
+                <strong>Multi-Tasking:</strong> The most pilot-specific test
+                type. You are typically asked to perform two or more tasks
+                simultaneously — for example, tracking a moving target with a
+                joystick while responding to auditory or visual stimuli. These
+                tests measure your ability to divide attention and maintain
+                performance across multiple concurrent demands.
               </p>
               <p>
-                <strong>Working Memory:</strong> Tests that assess your ability to hold and manipulate information in short-term memory. Common formats include remembering sequences of numbers or letters while performing another task, and updating a running total as new information is presented.
+                <strong>Working Memory:</strong> Tests that assess your ability
+                to hold and manipulate information in short-term memory. Common
+                formats include remembering sequences of numbers or letters
+                while performing another task, and updating a running total as
+                new information is presented.
               </p>
               <p>
-                <strong>Verbal Reasoning:</strong> Questions assessing your ability to read and interpret written information accurately. These test whether you can read an operations manual or regulation and extract the correct meaning under pressure.
+                <strong>Verbal Reasoning:</strong> Questions assessing your
+                ability to read and interpret written information accurately.
+                These test whether you can read an operations manual or
+                regulation and extract the correct meaning under pressure.
               </p>
               <p>
-                <strong>Psychomotor / Coordination Tests:</strong> Tests of hand-eye coordination and fine motor control, typically involving tracking a moving target with a joystick or mouse. These tests are often conducted at assessment centres rather than online.
+                <strong>Psychomotor / Coordination Tests:</strong> Tests of
+                hand-eye coordination and fine motor control, typically
+                involving tracking a moving target with a joystick or mouse.
+                These tests are often conducted at assessment centres rather
+                than online.
               </p>
             </>
           ),
@@ -82,19 +181,38 @@ export default function PilotAptitudeTest() {
           content: (
             <>
               <p>
-                Different airlines and flight schools use different test providers and formats. Understanding which tests you are likely to face helps you prepare more efficiently. Note that airlines change their providers periodically, so always verify the current format when you receive your invitation.
+                Different airlines and flight schools use different test
+                providers and formats. Understanding which tests you are likely
+                to face helps you prepare more efficiently. Note that airlines
+                change their providers periodically, so always verify the
+                current format when you receive your invitation.
               </p>
               <p>
-                <strong>British Airways (Speedbird Academy):</strong> Historically uses a combination of online aptitude tests (numerical, verbal, spatial) and assessment centre tests. The online tests are typically provided by third-party psychometric testing companies like SHL or Talent Q. BA's tests are considered among the most rigorous in UK aviation.
+                <strong>British Airways (Speedbird Academy):</strong>{" "}
+                Historically uses a combination of online aptitude tests
+                (numerical, verbal, spatial) and assessment centre tests. The
+                online tests are typically provided by third-party psychometric
+                testing companies like SHL or Talent Q. BA's tests are
+                considered among the most rigorous in UK aviation.
               </p>
               <p>
-                <strong>easyJet (Generation programme):</strong> Frequently uses Cut-e (Aon) or CAE's selection tools, which include numerical, spatial, and multi-tasking assessments. The Cut-e test battery is well-documented online and includes specific formats like the 'tube' spatial orientation test.
+                <strong>easyJet (Generation programme):</strong> Frequently uses
+                Cut-e (Aon) or CAE's selection tools, which include numerical,
+                spatial, and multi-tasking assessments. The Cut-e test battery
+                is well-documented online and includes specific formats like the
+                'tube' spatial orientation test.
               </p>
               <p>
-                <strong>Ryanair (partner schools):</strong> Tests vary by partner school. FTEJerez, Bartolini Air, and MATS each use their own selection tools, but all include numerical reasoning, spatial awareness, and a simulator assessment.
+                <strong>Ryanair (partner schools):</strong> Tests vary by
+                partner school. FTEJerez, Bartolini Air, and MATS each use their
+                own selection tools, but all include numerical reasoning,
+                spatial awareness, and a simulator assessment.
               </p>
               <p>
-                <strong>TUI Airways:</strong> Typically uses a standard pilot aptitude battery covering numerical, spatial, and multi-tasking components, followed by an assessment centre and simulator assessment.
+                <strong>TUI Airways:</strong> Typically uses a standard pilot
+                aptitude battery covering numerical, spatial, and multi-tasking
+                components, followed by an assessment centre and simulator
+                assessment.
               </p>
             </>
           ),
@@ -104,31 +222,54 @@ export default function PilotAptitudeTest() {
           content: (
             <>
               <p>
-                The following preparation plan is designed for candidates with 4–8 weeks before their aptitude tests. Adjust the timeline based on your starting point and the specific tests you are preparing for.
+                The following preparation plan is designed for candidates with
+                4–8 weeks before their aptitude tests. Adjust the timeline based
+                on your starting point and the specific tests you are preparing
+                for.
               </p>
               <p>
-                <strong>Week 1–2: Baseline Assessment and Numerical Fluency</strong>
+                <strong>
+                  Week 1–2: Baseline Assessment and Numerical Fluency
+                </strong>
               </p>
               <p>
-                Start by taking a free practice aptitude test to establish your baseline. Identify your weakest areas. In weeks 1–2, focus on numerical fluency: mental arithmetic, percentage calculations, ratio problems, and data interpretation. Aim to complete numerical reasoning questions in 30 seconds or less.
+                Start by taking a free practice aptitude test to establish your
+                baseline. Identify your weakest areas. In weeks 1–2, focus on
+                numerical fluency: mental arithmetic, percentage calculations,
+                ratio problems, and data interpretation. Aim to complete
+                numerical reasoning questions in 30 seconds or less.
               </p>
               <p>
                 <strong>Week 3–4: Spatial Awareness and Orientation</strong>
               </p>
               <p>
-                Spatial awareness is closely correlated with flying ability. Work through spatial reasoning practice tests daily. Focus particularly on mental rotation (imagining how objects look from different angles) and 3D visualisation.
+                Spatial awareness is closely correlated with flying ability.
+                Work through spatial reasoning practice tests daily. Focus
+                particularly on mental rotation (imagining how objects look from
+                different angles) and 3D visualisation.
               </p>
               <p>
                 <strong>Week 5–6: Multi-Tasking and Working Memory</strong>
               </p>
               <p>
-                Multi-tasking tests are the hardest to prepare for directly. Dual N-Back training (a working memory exercise available as a free app) has been shown to improve working memory capacity. For multi-tasking specifically, practise dividing your attention between two tasks simultaneously.
+                Multi-tasking tests are the hardest to prepare for directly.
+                Dual N-Back training (a working memory exercise available as a
+                free app) has been shown to improve working memory capacity. For
+                multi-tasking specifically, practise dividing your attention
+                between two tasks simultaneously.
               </p>
               <p>
-                <strong>Week 7–8: Full Practice Tests Under Timed Conditions</strong>
+                <strong>
+                  Week 7–8: Full Practice Tests Under Timed Conditions
+                </strong>
               </p>
               <p>
-                In the final two weeks, take full practice test batteries under realistic timed conditions. Simulate the assessment centre environment as closely as possible — no interruptions, strict time limits, no going back to change answers. Review your performance after each test and identify patterns in your errors.
+                In the final two weeks, take full practice test batteries under
+                realistic timed conditions. Simulate the assessment centre
+                environment as closely as possible — no interruptions, strict
+                time limits, no going back to change answers. Review your
+                performance after each test and identify patterns in your
+                errors.
               </p>
             </>
           ),
@@ -138,16 +279,33 @@ export default function PilotAptitudeTest() {
           content: (
             <>
               <p>
-                The following sample questions are representative of the types of questions you may encounter in pilot aptitude tests. They are not taken from any specific airline's test and are provided for illustrative purposes only.
+                The following sample questions are representative of the types
+                of questions you may encounter in pilot aptitude tests. They are
+                not taken from any specific airline's test and are provided for
+                illustrative purposes only.
               </p>
               <p>
-                <strong>Numerical Reasoning (example):</strong> An aircraft is flying at 250 knots. It needs to cover 180 nautical miles. How many minutes will the flight take? (Answer: 180 ÷ 250 × 60 = 43.2 minutes.) In the actual test, you may have approximately 30–45 seconds per question and will face more complex data interpretation questions alongside basic arithmetic.
+                <strong>Numerical Reasoning (example):</strong> An aircraft is
+                flying at 250 knots. It needs to cover 180 nautical miles. How
+                many minutes will the flight take? (Answer: 180 ÷ 250 × 60 =
+                43.2 minutes.) In the actual test, you may have approximately
+                30–45 seconds per question and will face more complex data
+                interpretation questions alongside basic arithmetic.
               </p>
               <p>
-                <strong>Spatial Awareness (example):</strong> An aircraft is heading North (360°). It turns 90° to the right, then 45° to the left. What direction is it now heading? (Answer: 045° / North-East.) In the actual test, you may face more complex multi-step orientation problems and 3D shape manipulation questions.
+                <strong>Spatial Awareness (example):</strong> An aircraft is
+                heading North (360°). It turns 90° to the right, then 45° to the
+                left. What direction is it now heading? (Answer: 045° /
+                North-East.) In the actual test, you may face more complex
+                multi-step orientation problems and 3D shape manipulation
+                questions.
               </p>
               <p>
-                <strong>Working Memory (example):</strong> You are shown a sequence of numbers: 7, 3, 9, 2, 5. You are then asked to recall the 3rd number in the sequence. In the actual test, the sequences are longer, presented more quickly, and you are often asked to perform a secondary task simultaneously.
+                <strong>Working Memory (example):</strong> You are shown a
+                sequence of numbers: 7, 3, 9, 2, 5. You are then asked to recall
+                the 3rd number in the sequence. In the actual test, the
+                sequences are longer, presented more quickly, and you are often
+                asked to perform a secondary task simultaneously.
               </p>
             </>
           ),
@@ -157,22 +315,44 @@ export default function PilotAptitudeTest() {
           content: (
             <>
               <p>
-                Preparation is the foundation, but how you perform on the day also matters. The following practical advice is based on what consistently separates high-performing candidates from those who underperform relative to their ability:
+                Preparation is the foundation, but how you perform on the day
+                also matters. The following practical advice is based on what
+                consistently separates high-performing candidates from those who
+                underperform relative to their ability:
               </p>
               <p>
-                <strong>Sleep.</strong> Cognitive performance is highly sensitive to sleep deprivation. Do not stay up late the night before preparing — your performance will be better after 8 hours of sleep than after 4 hours of last-minute practice.
+                <strong>Sleep.</strong> Cognitive performance is highly
+                sensitive to sleep deprivation. Do not stay up late the night
+                before preparing — your performance will be better after 8 hours
+                of sleep than after 4 hours of last-minute practice.
               </p>
               <p>
-                <strong>Read the instructions carefully.</strong> Many candidates lose marks not because they can't answer the questions but because they misunderstood what was being asked. Take the time to read each question carefully, even under time pressure.
+                <strong>Read the instructions carefully.</strong> Many
+                candidates lose marks not because they can't answer the
+                questions but because they misunderstood what was being asked.
+                Take the time to read each question carefully, even under time
+                pressure.
               </p>
               <p>
-                <strong>Don't dwell on difficult questions.</strong> In timed tests, spending 3 minutes on one question you can't answer costs you the time to answer three questions you could. Move on, mark the question if you can return to it, and come back at the end if time permits.
+                <strong>Don't dwell on difficult questions.</strong> In timed
+                tests, spending 3 minutes on one question you can't answer costs
+                you the time to answer three questions you could. Move on, mark
+                the question if you can return to it, and come back at the end
+                if time permits.
               </p>
               <p>
-                <strong>Stay calm during the multi-tasking tests.</strong> These tests are designed to be difficult — almost everyone finds them stressful. The key is to stay calm, prioritise the primary task, and accept that you may not be perfect.
+                <strong>Stay calm during the multi-tasking tests.</strong> These
+                tests are designed to be difficult — almost everyone finds them
+                stressful. The key is to stay calm, prioritise the primary task,
+                and accept that you may not be perfect.
               </p>
               <p>
-                <strong>Be honest in personality assessments.</strong> Many selection batteries include personality questionnaires. These are not pass/fail, and there are no "right" answers. Attempting to game personality assessments is both detectable and counterproductive — inconsistent responses are flagged. Answer honestly.
+                <strong>Be honest in personality assessments.</strong> Many
+                selection batteries include personality questionnaires. These
+                are not pass/fail, and there are no "right" answers. Attempting
+                to game personality assessments is both detectable and
+                counterproductive — inconsistent responses are flagged. Answer
+                honestly.
               </p>
             </>
           ),
@@ -182,25 +362,45 @@ export default function PilotAptitudeTest() {
           content: (
             <>
               <p>
-                You do not necessarily need to spend £200+ on a commercial aptitude test preparation course to prepare effectively. The following free and low-cost resources cover the core test types:
+                You do not necessarily need to spend £200+ on a commercial
+                aptitude test preparation course to prepare effectively. The
+                following free and low-cost resources cover the core test types:
               </p>
               <p>
-                <strong>Numerical Reasoning:</strong> Practice Aptitude Tests (practiceaptitudetests.com) — free numerical reasoning tests with worked solutions. Assessment Day (assessmentday.co.uk) — free and paid numerical reasoning practice. Khan Academy (khanacademy.org) — free maths refresher.
+                <strong>Numerical Reasoning:</strong> Practice Aptitude Tests
+                (practiceaptitudetests.com) — free numerical reasoning tests
+                with worked solutions. Assessment Day (assessmentday.co.uk) —
+                free and paid numerical reasoning practice. Khan Academy
+                (khanacademy.org) — free maths refresher.
               </p>
               <p>
-                <strong>Spatial Awareness:</strong> Practice Aptitude Tests (practiceaptitudetests.com) — free spatial reasoning tests. Spatial reasoning apps (available on iOS and Android).
+                <strong>Spatial Awareness:</strong> Practice Aptitude Tests
+                (practiceaptitudetests.com) — free spatial reasoning tests.
+                Spatial reasoning apps (available on iOS and Android).
               </p>
               <p>
-                <strong>Working Memory / Multi-Tasking:</strong> Dual N-Back training (available as a free app) — evidence-based working memory training.
+                <strong>Working Memory / Multi-Tasking:</strong> Dual N-Back
+                training (available as a free app) — evidence-based working
+                memory training.
               </p>
               <p>
-                <strong>Pilot-Specific Resources:</strong> PilotAptitudeTest.com and LatestPilotJobs offer specific pilot aptitude testing suites. While these are paid platforms, they offer free trials or limited free content that is highly relevant to airline selection.
+                <strong>Pilot-Specific Resources:</strong> PilotAptitudeTest.com
+                and LatestPilotJobs offer specific pilot aptitude testing
+                suites. While these are paid platforms, they offer free trials
+                or limited free content that is highly relevant to airline
+                selection.
               </p>
             </>
           ),
         },
       ]}
-      scopeBanner={<GuideScopeBanner scope="This guide focuses on UK airline aptitude tests (PILAPT, Compass, Cut-e, etc.)." usHref="/us/guides/pilot-aptitude-test-usa" usLabel="View USA aptitude tests →" />}
+      scopeBanner={
+        <GuideScopeBanner
+          scope="This guide focuses on UK airline aptitude tests (PILAPT, Compass, Cut-e, etc.)."
+          usHref="/us/guides/pilot-aptitude-test-usa"
+          usLabel="View USA aptitude tests →"
+        />
+      }
       sources={[
         { name: "Airline Recruitment Portals (BA, easyJet, Ryanair)" },
         { name: "BALPA Careers Guidance" },

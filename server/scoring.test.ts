@@ -31,7 +31,8 @@ describe("scoreLead", () => {
       flyingExperience: "PPL holder",
       rightToWorkStudy: "Yes",
       phone: "+44 7700 900000",
-      writtenAnswer: "I have always wanted to fly and have been saving for 3 years.",
+      writtenAnswer:
+        "I have always wanted to fly and have been saving for 3 years.",
       preferredRoute: "Integrated ATPL (full-time, 18-24 months)",
       startTimeframe: "As soon as possible — I'm ready now",
       country: "GB",

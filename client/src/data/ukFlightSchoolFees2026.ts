@@ -13,7 +13,14 @@ export interface UKFlightSchoolFee {
   schoolName: string;
   location: string;
   country: "United Kingdom";
-  routeType: "Integrated ATPL" | "Modular ATPL" | "MPL" | "PPL" | "CPL" | "Modular ATPL (part)" | "Integrated ATPL (degree)";
+  routeType:
+    | "Integrated ATPL"
+    | "Modular ATPL"
+    | "MPL"
+    | "PPL"
+    | "CPL"
+    | "Modular ATPL (part)"
+    | "Integrated ATPL (degree)";
   estimatedFee: string;
   whatIsIncluded: string;
   whatIsExcluded: string;
@@ -30,12 +37,15 @@ export const UK_FLIGHT_SCHOOL_FEES_2026: UKFlightSchoolFee[] = [
     country: "United Kingdom",
     routeType: "Integrated ATPL (degree)",
     estimatedFee: "£114,950",
-    whatIsIncluded: "Full integrated ATPL, BSc (Hons) degree via University of West London, all flight training, ground school, simulator hours, CAA exam fees",
-    whatIsExcluded: "Accommodation, living costs, uniform, headset, iPad, medical certificate",
+    whatIsIncluded:
+      "Full integrated ATPL, BSc (Hons) degree via University of West London, all flight training, ground school, simulator hours, CAA exam fees",
+    whatIsExcluded:
+      "Accommodation, living costs, uniform, headset, iPad, medical certificate",
     sourceUrl: "https://www.skyborne.com/uk/integrated-atpl/",
     lastChecked: "June 2026",
     confidenceLevel: "high",
-    caveat: "Fee confirmed on Skyborne website June 2026. Degree element makes up to £9,535/yr tuition-fee support via Student Finance England potentially available — verify eligibility before relying on this.",
+    caveat:
+      "Fee confirmed on Skyborne website June 2026. Degree element makes up to £9,535/yr tuition-fee support via Student Finance England potentially available — verify eligibility before relying on this.",
   },
   {
     schoolName: "CAE Oxford Aviation Academy",
@@ -43,12 +53,15 @@ export const UK_FLIGHT_SCHOOL_FEES_2026: UKFlightSchoolFee[] = [
     country: "United Kingdom",
     routeType: "Integrated ATPL",
     estimatedFee: "Not publicly confirmed — request direct quote",
-    whatIsIncluded: "Full integrated ATPL, all flight training, ground school, simulator hours",
-    whatIsExcluded: "Accommodation, living costs, medical certificate, type rating",
+    whatIsIncluded:
+      "Full integrated ATPL, all flight training, ground school, simulator hours",
+    whatIsExcluded:
+      "Accommodation, living costs, medical certificate, type rating",
     sourceUrl: "https://www.cae.com/civil-aviation/become-a-pilot/",
     lastChecked: "June 2026",
     confidenceLevel: "low",
-    caveat: "CAE does not publish a single headline fee on its public website. Fees vary by intake, campus, and programme variant. Request a current prospectus directly from CAE Oxford.",
+    caveat:
+      "CAE does not publish a single headline fee on its public website. Fees vary by intake, campus, and programme variant. Request a current prospectus directly from CAE Oxford.",
   },
   {
     schoolName: "L3Harris Airline Academy",
@@ -56,25 +69,32 @@ export const UK_FLIGHT_SCHOOL_FEES_2026: UKFlightSchoolFee[] = [
     country: "United Kingdom",
     routeType: "Integrated ATPL",
     estimatedFee: "Not publicly confirmed — request direct quote",
-    whatIsIncluded: "Full integrated ATPL, all flight training, ground school, simulator hours",
-    whatIsExcluded: "Accommodation, living costs, medical certificate, type rating",
+    whatIsIncluded:
+      "Full integrated ATPL, all flight training, ground school, simulator hours",
+    whatIsExcluded:
+      "Accommodation, living costs, medical certificate, type rating",
     sourceUrl: "https://l3airlineacademy.com/",
     lastChecked: "June 2026",
     confidenceLevel: "low",
-    caveat: "L3Harris does not publish a current headline fee publicly. Fees vary by intake and programme. Request a current prospectus directly from L3Harris.",
+    caveat:
+      "L3Harris does not publish a current headline fee publicly. Fees vary by intake and programme. Request a current prospectus directly from L3Harris.",
   },
   {
     schoolName: "FTE Jerez",
-    location: "Jerez de la Frontera, Spain (trains for UK CAA and EASA licences)",
+    location:
+      "Jerez de la Frontera, Spain (trains for UK CAA and EASA licences)",
     country: "United Kingdom",
     routeType: "Integrated ATPL",
     estimatedFee: "Not publicly confirmed — request direct quote",
-    whatIsIncluded: "Full integrated ATPL, all flight training, ground school, simulator hours",
-    whatIsExcluded: "Accommodation, living costs, medical certificate, type rating",
+    whatIsIncluded:
+      "Full integrated ATPL, all flight training, ground school, simulator hours",
+    whatIsExcluded:
+      "Accommodation, living costs, medical certificate, type rating",
     sourceUrl: "https://www.ftejerez.com/",
     lastChecked: "June 2026",
     confidenceLevel: "low",
-    caveat: "FTE Jerez is a Spain-based school delivering training for UK CAA and EASA licences. Fees vary by programme and are not publicly listed. Request a prospectus directly.",
+    caveat:
+      "FTE Jerez is a Spain-based school delivering training for UK CAA and EASA licences. Fees vary by programme and are not publicly listed. Request a prospectus directly.",
   },
   {
     schoolName: "Leading Edge Aviation",
@@ -82,12 +102,15 @@ export const UK_FLIGHT_SCHOOL_FEES_2026: UKFlightSchoolFee[] = [
     country: "United Kingdom",
     routeType: "Integrated ATPL",
     estimatedFee: "Not publicly confirmed — request direct quote",
-    whatIsIncluded: "Full integrated ATPL, all flight training, ground school, simulator hours",
-    whatIsExcluded: "Accommodation, living costs, medical certificate, type rating",
+    whatIsIncluded:
+      "Full integrated ATPL, all flight training, ground school, simulator hours",
+    whatIsExcluded:
+      "Accommodation, living costs, medical certificate, type rating",
     sourceUrl: "https://www.leadingedgeaviation.co.uk/",
     lastChecked: "June 2026",
     confidenceLevel: "low",
-    caveat: "Leading Edge is a Jet2FlightPath training partner. Fees for self-funded integrated ATPL are not publicly listed. Request a prospectus directly.",
+    caveat:
+      "Leading Edge is a Jet2FlightPath training partner. Fees for self-funded integrated ATPL are not publicly listed. Request a prospectus directly.",
   },
   {
     schoolName: "Tayside Aviation",
@@ -95,12 +118,15 @@ export const UK_FLIGHT_SCHOOL_FEES_2026: UKFlightSchoolFee[] = [
     country: "United Kingdom",
     routeType: "Integrated ATPL",
     estimatedFee: "Not publicly confirmed — request direct quote",
-    whatIsIncluded: "Full integrated ATPL, all flight training, ground school, simulator hours",
-    whatIsExcluded: "Accommodation, living costs, medical certificate, type rating",
+    whatIsIncluded:
+      "Full integrated ATPL, all flight training, ground school, simulator hours",
+    whatIsExcluded:
+      "Accommodation, living costs, medical certificate, type rating",
     sourceUrl: "https://www.taysideaviation.co.uk/",
     lastChecked: "June 2026",
     confidenceLevel: "low",
-    caveat: "Tayside does not publish a current headline fee publicly. Request a prospectus directly.",
+    caveat:
+      "Tayside does not publish a current headline fee publicly. Request a prospectus directly.",
   },
   {
     schoolName: "Bristol Groundschool",
@@ -109,11 +135,13 @@ export const UK_FLIGHT_SCHOOL_FEES_2026: UKFlightSchoolFee[] = [
     routeType: "Modular ATPL (part)",
     estimatedFee: "£3,000–£5,000 (ground school only)",
     whatIsIncluded: "ATPL ground school course and study materials",
-    whatIsExcluded: "All flight training, CAA exam fees, simulator, living costs",
+    whatIsExcluded:
+      "All flight training, CAA exam fees, simulator, living costs",
     sourceUrl: "https://www.bristol.gs/",
     lastChecked: "June 2026",
     confidenceLevel: "medium",
-    caveat: "Ground school only — this covers the theoretical knowledge component of a modular ATPL. Flight training costs are separate and depend on the flight school chosen.",
+    caveat:
+      "Ground school only — this covers the theoretical knowledge component of a modular ATPL. Flight training costs are separate and depend on the flight school chosen.",
   },
   {
     schoolName: "Oxford Aviation Academy (modular)",
@@ -122,11 +150,13 @@ export const UK_FLIGHT_SCHOOL_FEES_2026: UKFlightSchoolFee[] = [
     routeType: "Modular ATPL",
     estimatedFee: "Not publicly confirmed — request direct quote",
     whatIsIncluded: "Modular ATPL components as selected",
-    whatIsExcluded: "Accommodation, living costs, medical certificate, type rating",
+    whatIsExcluded:
+      "Accommodation, living costs, medical certificate, type rating",
     sourceUrl: "https://www.cae.com/civil-aviation/become-a-pilot/",
     lastChecked: "June 2026",
     confidenceLevel: "low",
-    caveat: "Modular ATPL costs vary significantly depending on which modules are taken, the aircraft types used, and the pace of training. No single public fee is available.",
+    caveat:
+      "Modular ATPL costs vary significantly depending on which modules are taken, the aircraft types used, and the pace of training. No single public fee is available.",
   },
 ];
 

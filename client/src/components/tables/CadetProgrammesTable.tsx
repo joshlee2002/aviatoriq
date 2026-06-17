@@ -5,7 +5,10 @@
  */
 
 import React from "react";
-import { CADET_PROGRAMMES_2026, CadetProgramme } from "../../data/cadetProgrammes2026";
+import {
+  CADET_PROGRAMMES_2026,
+  CadetProgramme,
+} from "../../data/cadetProgrammes2026";
 
 interface CadetProgrammesTableProps {
   country?: string; // Filter by country — if omitted, shows all
@@ -20,21 +23,31 @@ const statusColour = (status: CadetProgramme["status"]): string => {
   return "bg-gray-100 text-gray-700";
 };
 
-const fundingColour = (funding: CadetProgramme["fundedOrSelfFunded"]): string => {
-  if (funding === "Fully funded by airline") return "bg-green-50 text-green-700 font-semibold";
-  if (funding === "Deferred payment (repaid from salary)") return "bg-yellow-50 text-yellow-700";
+const fundingColour = (
+  funding: CadetProgramme["fundedOrSelfFunded"]
+): string => {
+  if (funding === "Fully funded by airline")
+    return "bg-green-50 text-green-700 font-semibold";
+  if (funding === "Deferred payment (repaid from salary)")
+    return "bg-yellow-50 text-yellow-700";
   return "bg-gray-50 text-gray-600";
 };
 
-export const CadetProgrammesTable: React.FC<CadetProgrammesTableProps> = ({ country, className = "" }) => {
+export const CadetProgrammesTable: React.FC<CadetProgrammesTableProps> = ({
+  country,
+  className = "",
+}) => {
   const programmes = country
-    ? CADET_PROGRAMMES_2026.filter((p) => p.country.toLowerCase().includes(country.toLowerCase()))
+    ? CADET_PROGRAMMES_2026.filter(p =>
+        p.country.toLowerCase().includes(country.toLowerCase())
+      )
     : CADET_PROGRAMMES_2026;
 
   if (programmes.length === 0) {
     return (
       <p className="text-sm text-gray-500 italic">
-        No cadet programme data available for this region. Check the airline's official careers page directly.
+        No cadet programme data available for this region. Check the airline's
+        official careers page directly.
       </p>
     );
   }
@@ -45,11 +58,21 @@ export const CadetProgrammesTable: React.FC<CadetProgrammesTableProps> = ({ coun
         <table className="min-w-full divide-y divide-gray-200 text-sm">
           <thead className="bg-gray-50">
             <tr>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Airline / Programme</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Status (June 2026)</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Funding</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Estimated Cost</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Training Partner</th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Airline / Programme
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Status (June 2026)
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Funding
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Estimated Cost
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Training Partner
+              </th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 bg-white">
@@ -60,17 +83,23 @@ export const CadetProgrammesTable: React.FC<CadetProgrammesTableProps> = ({ coun
                   <div className="text-xs text-gray-500">{p.programmeName}</div>
                 </td>
                 <td className="px-4 py-3">
-                  <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${statusColour(p.status)}`}>
+                  <span
+                    className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${statusColour(p.status)}`}
+                  >
                     {p.status}
                   </span>
                 </td>
                 <td className="px-4 py-3">
-                  <span className={`inline-block rounded px-2 py-0.5 text-xs ${fundingColour(p.fundedOrSelfFunded)}`}>
+                  <span
+                    className={`inline-block rounded px-2 py-0.5 text-xs ${fundingColour(p.fundedOrSelfFunded)}`}
+                  >
                     {p.fundedOrSelfFunded}
                   </span>
                 </td>
                 <td className="px-4 py-3 text-gray-700">{p.estimatedCost}</td>
-                <td className="px-4 py-3 text-gray-600 text-xs">{p.trainingPartner}</td>
+                <td className="px-4 py-3 text-gray-600 text-xs">
+                  {p.trainingPartner}
+                </td>
               </tr>
             ))}
           </tbody>
@@ -79,7 +108,9 @@ export const CadetProgrammesTable: React.FC<CadetProgrammesTableProps> = ({ coun
 
       {/* Caveats */}
       <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-xs text-amber-800 space-y-1">
-        <p className="font-semibold">Important: Verify all information directly with the airline</p>
+        <p className="font-semibold">
+          Important: Verify all information directly with the airline
+        </p>
         <ul className="list-disc list-inside space-y-0.5">
           {programmes.map((p, i) => (
             <li key={i}>
@@ -93,7 +124,12 @@ export const CadetProgrammesTable: React.FC<CadetProgrammesTableProps> = ({ coun
         Data last checked: June 2026. Sources:{" "}
         {programmes.map((p, i) => (
           <span key={i}>
-            <a href={p.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">
+            <a
+              href={p.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-600"
+            >
               {p.airline}
             </a>
             {i < programmes.length - 1 ? ", " : ""}

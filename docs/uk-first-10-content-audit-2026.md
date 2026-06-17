@@ -82,18 +82,18 @@ This pass reviewed the full article body for the first 10 UK guide pages in the 
 
 ## Current verdict on the first 10
 
-| Guide | Status after this pass |
-|---|---|
-| `HowToBecomePilot.tsx` | Improved; needs future live school/cadet status verification. |
-| `PilotTrainingCosts.tsx` | Improved; needs future live school-price table verification. |
-| `IntegratedVsModular.tsx` | Significantly improved; major exam-fee error corrected. |
-| `Class1Medical.tsx` | Improved; still needs specialist medical reviewer/AeMC review. |
-| `AdhdPilotGuide.tsx` | Needs specialist medical review before “elite” status. |
-| `IntegratedVsModularCost.tsx` | Improved; still needs live price checks. |
-| `AirlinePilotSalary.tsx` | Improved; still needs dated pay sources/contracts. |
-| `BestRouteToAirline.tsx` | Improved; needs stronger decision matrix and source links. |
-| `TrainingTimeline.tsx` | Good structurally; should later add sourced timeline tables. |
-| `AmITooOld.tsx` | Improved; medical/retirement wording now more cautious. |
+| Guide                         | Status after this pass                                         |
+| ----------------------------- | -------------------------------------------------------------- |
+| `HowToBecomePilot.tsx`        | Improved; needs future live school/cadet status verification.  |
+| `PilotTrainingCosts.tsx`      | Improved; needs future live school-price table verification.   |
+| `IntegratedVsModular.tsx`     | Significantly improved; major exam-fee error corrected.        |
+| `Class1Medical.tsx`           | Improved; still needs specialist medical reviewer/AeMC review. |
+| `AdhdPilotGuide.tsx`          | Needs specialist medical review before “elite” status.         |
+| `IntegratedVsModularCost.tsx` | Improved; still needs live price checks.                       |
+| `AirlinePilotSalary.tsx`      | Improved; still needs dated pay sources/contracts.             |
+| `BestRouteToAirline.tsx`      | Improved; needs stronger decision matrix and source links.     |
+| `TrainingTimeline.tsx`        | Good structurally; should later add sourced timeline tables.   |
+| `AmITooOld.tsx`               | Improved; medical/retirement wording now more cautious.        |
 
 ## Next 10 recommendation
 

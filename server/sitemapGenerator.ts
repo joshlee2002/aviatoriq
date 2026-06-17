@@ -15,10 +15,24 @@ function getPriority(path: string): string {
   if (path === "/") return "1.0";
   if (["/quiz", "/roadmap", "/guides"].includes(path)) return "0.9";
   // Regional hub pages
-  if (["/us", "/australia", "/canada", "/europe", "/uae", "/south-africa", "/new-zealand"].includes(path)) return "0.9";
+  if (
+    [
+      "/us",
+      "/australia",
+      "/canada",
+      "/europe",
+      "/uae",
+      "/south-africa",
+      "/new-zealand",
+    ].includes(path)
+  )
+    return "0.9";
   // All regional guide paths (UK, US, AU, CA, EU, UAE, SA, NZ)
   if (path.includes("/guides/")) return "0.8";
-  if (["/schools", "/calculator", "/us/schools", "/us/calculator"].includes(path)) return "0.8";
+  if (
+    ["/schools", "/calculator", "/us/schools", "/us/calculator"].includes(path)
+  )
+    return "0.8";
   if (["/partner", "/for-schools"].includes(path)) return "0.7";
   if (path.startsWith("/tools/")) return "0.7";
   if (["/about", "/contact"].includes(path)) return "0.5";
@@ -41,7 +55,7 @@ export function registerSitemapRoute(app: Express) {
       .map(([path]) => path);
 
     const urlEntries = indexableRoutes
-      .map((path) => {
+      .map(path => {
         const loc = `${BASE_URL}${path}`;
         return `  <url>
     <loc>${loc}</loc>

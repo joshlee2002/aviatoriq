@@ -12,15 +12,19 @@ interface PilotSalaryTableProps {
   className?: string;
 }
 
-export const PilotSalaryTable: React.FC<PilotSalaryTableProps> = ({ country, className = "" }) => {
-  const rows = PILOT_SALARY_SOURCES_2026.filter((s) =>
+export const PilotSalaryTable: React.FC<PilotSalaryTableProps> = ({
+  country,
+  className = "",
+}) => {
+  const rows = PILOT_SALARY_SOURCES_2026.filter(s =>
     s.country.toLowerCase().includes(country.toLowerCase())
   );
 
   if (rows.length === 0) {
     return (
       <p className="text-sm text-gray-500 italic">
-        No verified salary data available for this country. Check BALPA, ALPA, or AFAP for the latest figures.
+        No verified salary data available for this country. Check BALPA, ALPA,
+        or AFAP for the latest figures.
       </p>
     );
   }
@@ -31,11 +35,21 @@ export const PilotSalaryTable: React.FC<PilotSalaryTableProps> = ({ country, cla
         <table className="min-w-full divide-y divide-gray-200 text-sm">
           <thead className="bg-gray-50">
             <tr>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Role</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Salary Range</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Pay Basis</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Source</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Source Type</th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Role
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Salary Range
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Pay Basis
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Source
+              </th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">
+                Source Type
+              </th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 bg-white">
@@ -43,11 +57,15 @@ export const PilotSalaryTable: React.FC<PilotSalaryTableProps> = ({ country, cla
               <tr key={i} className="hover:bg-gray-50 transition-colors">
                 <td className="px-4 py-3">
                   <div className="font-medium text-gray-900">{row.role}</div>
-                  <div className="text-xs text-gray-500">{row.airlineOrSource}</div>
+                  <div className="text-xs text-gray-500">
+                    {row.airlineOrSource}
+                  </div>
                 </td>
                 <td className="px-4 py-3 font-semibold text-gray-800">
                   {row.salaryRange}
-                  <span className="ml-1 text-xs font-normal text-gray-500">({row.currency})</span>
+                  <span className="ml-1 text-xs font-normal text-gray-500">
+                    ({row.currency})
+                  </span>
                 </td>
                 <td className="px-4 py-3">
                   <span className="inline-block rounded-full px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-600">
@@ -70,8 +88,8 @@ export const PilotSalaryTable: React.FC<PilotSalaryTableProps> = ({ country, cla
                       row.sourceType === "Official body"
                         ? "bg-green-100 text-green-700"
                         : row.sourceType === "Official airline"
-                        ? "bg-blue-100 text-blue-700"
-                        : "bg-gray-100 text-gray-600"
+                          ? "bg-blue-100 text-blue-700"
+                          : "bg-gray-100 text-gray-600"
                     }`}
                   >
                     {row.sourceType}
@@ -84,12 +102,16 @@ export const PilotSalaryTable: React.FC<PilotSalaryTableProps> = ({ country, cla
       </div>
 
       <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-xs text-amber-800">
-        <p className="font-semibold mb-1">Salary figures are indicative ranges, not guarantees</p>
+        <p className="font-semibold mb-1">
+          Salary figures are indicative ranges, not guarantees
+        </p>
         <p>
-          Actual pay depends on airline, seniority, fleet type, roster, and allowances. Figures represent basic pay
-          unless otherwise stated. Allowances (duty pay, sector pay, per diem) can add significantly to total
-          remuneration. Always verify current scales with the relevant pilot association (BALPA, ALPA, AFAP) or the
-          airline's careers page before making financial decisions.
+          Actual pay depends on airline, seniority, fleet type, roster, and
+          allowances. Figures represent basic pay unless otherwise stated.
+          Allowances (duty pay, sector pay, per diem) can add significantly to
+          total remuneration. Always verify current scales with the relevant
+          pilot association (BALPA, ALPA, AFAP) or the airline's careers page
+          before making financial decisions.
         </p>
       </div>
 
