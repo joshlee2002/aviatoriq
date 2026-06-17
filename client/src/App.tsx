@@ -17,9 +17,14 @@ import { CurrencyProvider } from "./contexts/CurrencyContext";
 import CountrySelect from "./pages/CountrySelect";
 
 // US pages — HomeUS merged into country-aware Home.tsx (Phase 2 restructure)
+// US tool pages — accessed via country-aware hub wrappers
 import MedicalConditionLookupUS from "./pages/MedicalConditionLookupUS";
 import CadetEligibilityUS from "./pages/CadetEligibilityUS";
 import CalculatorUS from "./pages/CalculatorUS";
+import CalculatorHub from "./pages/CalculatorHub";
+import RoadmapHub from "./pages/RoadmapHub";
+import MedicalLookupHub from "./pages/MedicalLookupHub";
+import CadetEligibilityHub from "./pages/CadetEligibilityHub";
 import HowToBecomePilotUS from "./pages/guides/HowToBecomePilotUS";
 import SchoolsUS from "./pages/SchoolsUS";
 import Part61Vs141 from "./pages/guides/Part61Vs141";
@@ -336,11 +341,11 @@ function Router() {
 
       {/* Directory & tools */}
       <Route path="/schools" component={Schools} />
-      <Route path="/calculator" component={Calculator} />
+      <Route path="/calculator" component={CalculatorHub} />
       <Route path="/tools/integrated-vs-modular" component={IntModDecision} />
       <Route path="/tools/class-1-medical-check" component={MedicalCheck} />
-      <Route path="/tools/medical-condition-lookup" component={MedicalConditionLookup} />
-      <Route path="/tools/cadet-eligibility" component={CadetEligibility} />
+      <Route path="/tools/medical-condition-lookup" component={MedicalLookupHub} />
+      <Route path="/tools/cadet-eligibility" component={CadetEligibilityHub} />
       <Route path="/tools/finance-calculator" component={FinanceCalculator} />
       <Route path="/tools/salary-estimator" component={SalaryEstimator} />
       <Route path="/tools/route-selector" component={RouteSelector} />
@@ -408,7 +413,7 @@ function Router() {
       <Route path="/quizzes/:slug" component={QuizPage} />
 
       {/* Roadmap Generator */}
-      <Route path="/roadmap" component={RoadmapGenerator} />
+      <Route path="/roadmap" component={RoadmapHub} />
 
       {/* Admin */}
       <Route path="/admin" component={AdminDashboard} />
@@ -436,10 +441,11 @@ function Router() {
 
       {/* US routes */}
       <Route path="/us"><CountryRedirect country="us" to="/" /></Route>
-      <Route path="/us/medical-lookup" component={MedicalConditionLookupUS} />
-      <Route path="/us/cadet-eligibility" component={CadetEligibilityUS} />
-      <Route path="/us/calculator" component={CalculatorUS} />
-      <Route path="/us/roadmap" component={RoadmapGeneratorUS} />
+      {/* US tool routes redirect to unified hub pages (country pre-set to US) */}
+      <Route path="/us/medical-lookup"><CountryRedirect country="us" to="/tools/medical-condition-lookup" /></Route>
+      <Route path="/us/cadet-eligibility"><CountryRedirect country="us" to="/tools/cadet-eligibility" /></Route>
+      <Route path="/us/calculator"><CountryRedirect country="us" to="/calculator" /></Route>
+      <Route path="/us/roadmap"><CountryRedirect country="us" to="/roadmap" /></Route>
       <Route path="/us/partner" component={PartnerUS} />
       <Route path="/us/guides"><CountryRedirect country="us" to="/guides" /></Route>
       <Route path="/us/guides/how-to-become-a-pilot" component={HowToBecomePilotUS} />
