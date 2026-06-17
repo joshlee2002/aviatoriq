@@ -14,6 +14,13 @@ export default function Class1Medical() {
       readTime="12 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/class1-medical_c4a3b12e.jpg"
+      medicalDisclaimer={true}
+      medicalAuthority="UK CAA"
+      regulatorName="UK CAA Medical"
+      regulatorUrl="https://www.caa.co.uk/medical/"
+      methodologySummary="Primary source: UK CAA AMS documentation, AME/AeMC pricing verified June 2026."
+      methodologyDetail="All medical standards referenced in this guide are taken directly from the UK CAA Aeromedical Standards documentation and official AME/AeMC pricing pages, verified in June 2026. No secondary sources or forum posts were used for regulatory claims. Pricing was confirmed by direct review of Centreline, Birmingham AeMC, and Heathrow Medical Services public fee schedules."
+      methodologySources={[{ name: "UK CAA Medical", url: "https://www.caa.co.uk/medical/" }, { name: "Centreline Aviation Medical", url: "https://www.centreline.co.uk/" }, { name: "Birmingham AeMC", url: "https://www.birminghamaeromedical.co.uk/" }]}
       ctaHref="/tools/medical-condition-lookup"
       ctaText="Check medical conditions"
       faqSchema={[

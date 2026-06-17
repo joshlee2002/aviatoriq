@@ -65,7 +65,7 @@ export default function PilotTrainingCosts() {
               <p>
                 The following table shows indicative 2026 costs for leading UK integrated schools. Note that most schools do not publish their full fee schedule publicly; figures marked "Not confirmed" require a direct quote from the school.
               </p>
-              <FlightSchoolFeesTable trainingType="integrated" className="my-6" />
+              <FlightSchoolFeesTable trainingType="Integrated ATPL" className="my-6" />
               <p>
                 These figures represent training fees only. You must add living costs for the 18–24 month training period (depending on location and lifestyle), plus the hidden costs detailed later in this guide.
               </p>
@@ -82,7 +82,7 @@ export default function PilotTrainingCosts() {
               <p>
                 The following table shows indicative 2026 costs for modular training providers.
               </p>
-              <FlightSchoolFeesTable trainingType="modular" className="my-6" />
+              <FlightSchoolFeesTable trainingType="Modular ATPL" className="my-6" />
               <p>
                 Because modular training is completed in phases (PPL, Hour Building, ATPL Theory, CPL, ME/IR, MCC), you can pay as you go. However, you must still budget for the same hidden costs (medical, exams, equipment) as integrated students.
               </p>

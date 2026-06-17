@@ -5,6 +5,7 @@
  * Rules:
  * - All data sourced from official bodies (BALPA), official airline careers pages, or credible industry surveys.
  * - Salary figures are ranges, not guarantees. Actual pay depends on airline, seniority, fleet, roster, and allowances.
+ * - payBasis: how the figure is expressed (annual, monthly, hourly, tax-free monthly).
  * - Every row includes sourceUrl, lastChecked, and caveat.
  */
 
@@ -14,6 +15,7 @@ export interface PilotSalarySource {
   role: string;
   salaryRange: string;
   currency: string;
+  payBasis: "Annual (basic)" | "Annual (total remuneration)" | "Monthly (tax-free)" | "Hourly (flying pay)" | "Annual (estimated)";
   sourceType: "Official body" | "Official airline" | "Industry survey" | "Press report";
   sourceUrl: string;
   lastChecked: string;
@@ -28,6 +30,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Flying Instructor",
     salaryRange: "£13,200/yr basic + £15–£25/hr flying",
     currency: "GBP",
+    payBasis: "Annual (basic)",
     sourceType: "Official body",
     sourceUrl: "https://www.balpa.org/becoming-a-pilot/salary-and-benefits/",
     lastChecked: "June 2026",
@@ -39,6 +42,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Turboprop First Officer / Small Business Jet",
     salaryRange: "£17,000–£35,000/yr",
     currency: "GBP",
+    payBasis: "Annual (basic)",
     sourceType: "Official body",
     sourceUrl: "https://www.balpa.org/becoming-a-pilot/salary-and-benefits/",
     lastChecked: "June 2026",
@@ -50,6 +54,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Short-haul A320/B737 First Officer",
     salaryRange: "£35,000–£60,000/yr",
     currency: "GBP",
+    payBasis: "Annual (basic)",
     sourceType: "Official body",
     sourceUrl: "https://www.balpa.org/becoming-a-pilot/salary-and-benefits/",
     lastChecked: "June 2026",
@@ -61,6 +66,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Long-haul A330/B787 First Officer",
     salaryRange: "£55,000+/yr",
     currency: "GBP",
+    payBasis: "Annual (basic)",
     sourceType: "Official body",
     sourceUrl: "https://www.balpa.org/becoming-a-pilot/salary-and-benefits/",
     lastChecked: "June 2026",
@@ -72,6 +78,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "First Officer (all fleets)",
     salaryRange: "£40,000–£125,000/yr",
     currency: "GBP",
+    payBasis: "Annual (estimated)",
     sourceType: "Press report",
     sourceUrl: "https://simpleflying.com/uk-airline-pilot-salaries/",
     lastChecked: "June 2026",
@@ -83,6 +90,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Captain (all fleets)",
     salaryRange: "£100,000–£225,000+/yr",
     currency: "GBP",
+    payBasis: "Annual (estimated)",
     sourceType: "Press report",
     sourceUrl: "https://simpleflying.com/uk-airline-pilot-salaries/",
     lastChecked: "June 2026",
@@ -94,6 +102,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Contract / Zero-hours pilot",
     salaryRange: "£20–£100/hr flying",
     currency: "GBP",
+    payBasis: "Hourly (flying pay)",
     sourceType: "Official body",
     sourceUrl: "https://www.balpa.org/becoming-a-pilot/salary-and-benefits/",
     lastChecked: "June 2026",
@@ -107,6 +116,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Regional First Officer (entry level)",
     salaryRange: "$85,000–$100,000+/yr",
     currency: "USD",
+    payBasis: "Annual (total remuneration)",
     sourceType: "Industry survey",
     sourceUrl: "https://atpflightschool.com/become-a-pilot/airline-career/commercial-pilot-salary.html",
     lastChecked: "June 2026",
@@ -118,6 +128,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Major airline Captain (senior)",
     salaryRange: "$300,000–$450,000+/yr",
     currency: "USD",
+    payBasis: "Annual (total remuneration)",
     sourceType: "Press report",
     sourceUrl: "https://atpflightschool.com/become-a-pilot/airline-career/commercial-pilot-salary.html",
     lastChecked: "June 2026",
@@ -131,6 +142,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Regional First Officer (entry level)",
     salaryRange: "CAD $60,000–$90,000/yr",
     currency: "CAD",
+    payBasis: "Annual (basic)",
     sourceType: "Industry survey",
     sourceUrl: "https://www.alpa.org/",
     lastChecked: "June 2026",
@@ -142,6 +154,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Captain (major carrier, senior)",
     salaryRange: "CAD $200,000–$350,000+/yr",
     currency: "CAD",
+    payBasis: "Annual (estimated)",
     sourceType: "Industry survey",
     sourceUrl: "https://www.alpa.org/",
     lastChecked: "June 2026",
@@ -155,6 +168,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Regional First Officer (entry level)",
     salaryRange: "AUD $70,000–$100,000/yr",
     currency: "AUD",
+    payBasis: "Annual (basic)",
     sourceType: "Industry survey",
     sourceUrl: "https://www.afap.org.au/",
     lastChecked: "June 2026",
@@ -166,6 +180,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "Captain (major carrier, senior)",
     salaryRange: "AUD $200,000–$350,000+/yr",
     currency: "AUD",
+    payBasis: "Annual (estimated)",
     sourceType: "Industry survey",
     sourceUrl: "https://www.afap.org.au/",
     lastChecked: "June 2026",
@@ -179,6 +194,7 @@ export const PILOT_SALARY_SOURCES_2026: PilotSalarySource[] = [
     role: "First Officer (major Gulf carrier)",
     salaryRange: "USD $5,000–$10,000/month (tax-free)",
     currency: "USD",
+    payBasis: "Monthly (tax-free)",
     sourceType: "Industry survey",
     sourceUrl: "https://www.emiratesgroupcareers.com/",
     lastChecked: "June 2026",

@@ -287,6 +287,8 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import EditorialPolicy from "./pages/EditorialPolicy";
 import AboutOurAuthors from "./pages/AboutOurAuthors";
+import CorrectionsPolicy from "./pages/CorrectionsPolicy";
+import HowWeReview from "./pages/HowWeReview";
 import PilotTrainingCostsHub from "./pages/hubs/PilotTrainingCostsHub";
 import PilotMedicalHub from "./pages/hubs/PilotMedicalHub";
 import CadetProgrammesHub from "./pages/hubs/CadetProgrammesHub";
@@ -415,6 +417,8 @@ function Router() {
       <Route path="/terms" component={Terms} />
       <Route path="/editorial-policy" component={EditorialPolicy} />
       <Route path="/about-our-authors" component={AboutOurAuthors} />
+      <Route path="/corrections-policy" component={CorrectionsPolicy} />
+      <Route path="/how-we-review-pilot-training-information" component={HowWeReview} />
 
       {/* Country selector */}
       <Route path="/select" component={CountrySelect} />

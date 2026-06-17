@@ -14,6 +14,11 @@ export default function RyanairCadet() {
       lastUpdated="June 2026"
       category="Airline Cadet Programmes"
       heroImage="/manus-storage/ryanair-cadet_432ca710.jpg"
+      regulatorName="Ryanair Careers"
+      regulatorUrl="https://careers.ryanair.com/"
+      methodologySummary="Programme details verified against Ryanair official careers portal and EASA licensing documentation, June 2026."
+      methodologyDetail="All programme details in this guide are sourced from the Ryanair official careers portal and EASA Part-FCL licensing documentation. No third-party aggregators were used. Programme status is verified as of June 2026."
+      methodologySources={[{ name: "Ryanair Careers", url: "https://careers.ryanair.com/" }, { name: "EASA Part-FCL", url: "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011" }]}
       ctaHref="/tools/cadet-eligibility"
       ctaText="Check your cadet eligibility"
       scopeBanner={<GuideScopeBanner scope="This guide covers the Ryanair Mentored Programme pathway for UK and European cadets." />}

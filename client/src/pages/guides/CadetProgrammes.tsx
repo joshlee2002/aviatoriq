@@ -12,6 +12,11 @@ export default function CadetProgrammes() {
       readTime="14 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/cadet-programme_7f3a2c9e.jpg"
+      regulatorName="UK CAA Licensing"
+      regulatorUrl="https://www.caa.co.uk/commercial-industry/aircraft/pilot-licences/"
+      methodologySummary="Programme statuses verified against official airline careers pages and press releases, June 2026."
+      methodologyDetail="All cadet programme statuses in this guide are verified against official airline careers pages and press releases as of June 2026. No third-party aggregators or forums were used. Where a programme status could not be confirmed from an official source, this is stated explicitly."
+      methodologySources={[{ name: "BA Speedbird Academy", url: "https://careers.britishairways.com/speedbird-pilot-academy" }, { name: "easyJet Careers", url: "https://careers.easyjet.com/" }, { name: "Jet2 Careers", url: "https://www.jet2.com/careers" }]}
       ctaHref="/tools/cadet-eligibility"
       ctaText="Check your cadet eligibility"
       scopeBanner={<GuideScopeBanner scope="This guide covers UK airline cadet programmes only. For US cadet routes, see the United Aviate Program guide." usHref="/us/guides/united-aviate-program" usLabel="View USA cadet programmes →" />}

@@ -13,6 +13,11 @@ export default function EasyJetGeneration() {
       readTime="9 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/easyjet-generation_0954c6af.jpg"
+      regulatorName="easyJet Careers"
+      regulatorUrl="https://careers.easyjet.com/"
+      methodologySummary="Programme details verified against easyJet official careers portal, June 2026."
+      methodologyDetail="All programme details in this guide are sourced from the easyJet official careers portal and official easyJet press releases. No third-party aggregators were used. Programme status is verified as of June 2026."
+      methodologySources={[{ name: "easyJet Generation Pilot", url: "https://careers.easyjet.com/generation-easyjet" }, { name: "UK CAA Licensing", url: "https://www.caa.co.uk/commercial-industry/aircraft/pilot-licences/" }]}
       ctaHref="/tools/cadet-eligibility"
       ctaText="Check your cadet eligibility"
       faqSchema={[

@@ -33,6 +33,7 @@ export const PilotSalaryTable: React.FC<PilotSalaryTableProps> = ({ country, cla
             <tr>
               <th className="px-4 py-3 text-left font-semibold text-gray-700">Role</th>
               <th className="px-4 py-3 text-left font-semibold text-gray-700">Salary Range</th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">Pay Basis</th>
               <th className="px-4 py-3 text-left font-semibold text-gray-700">Source</th>
               <th className="px-4 py-3 text-left font-semibold text-gray-700">Source Type</th>
             </tr>
@@ -47,6 +48,11 @@ export const PilotSalaryTable: React.FC<PilotSalaryTableProps> = ({ country, cla
                 <td className="px-4 py-3 font-semibold text-gray-800">
                   {row.salaryRange}
                   <span className="ml-1 text-xs font-normal text-gray-500">({row.currency})</span>
+                </td>
+                <td className="px-4 py-3">
+                  <span className="inline-block rounded-full px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-600">
+                    {row.payBasis}
+                  </span>
                 </td>
                 <td className="px-4 py-3 text-xs">
                   <a

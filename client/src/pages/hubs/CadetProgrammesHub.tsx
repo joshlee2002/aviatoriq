@@ -40,8 +40,8 @@ const KEY_QUESTIONS = [
 ];
 
 export default function CadetProgrammesHub() {
-  const openProgrammes = CADET_PROGRAMMES_2026.filter(p => p.status === "Open" || p.status === "Open 2026");
-  const pausedProgrammes = CADET_PROGRAMMES_2026.filter(p => p.status !== "Open" && p.status !== "Open 2026");
+  const openProgrammes = CADET_PROGRAMMES_2026.filter(p => p.status === "Open — applications accepted" || p.status === "Ongoing intake — rolling applications");
+  const pausedProgrammes = CADET_PROGRAMMES_2026.filter(p => p.status !== "Open — applications accepted" && p.status !== "Ongoing intake — rolling applications");
 
   return (
     <>

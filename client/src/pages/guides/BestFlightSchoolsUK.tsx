@@ -13,6 +13,12 @@ export default function BestFlightSchoolsUK() {
       readTime="16 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/flight-schools-uk_d1a2b3c4.jpg"
+      financeDisclaimer={true}
+      regulatorName="UK CAA Approved Training Organisations"
+      regulatorUrl="https://www.caa.co.uk/commercial-industry/aircraft/pilot-licences/aeroplanes/approved-training-organisations/"
+      methodologySummary="School data sourced from UK CAA ATO register and individual school prospectuses, verified June 2026."
+      methodologyDetail="All school listings in this guide are verified against the UK CAA Approved Training Organisation (ATO) register. Fee data is sourced from individual school public websites or direct prospectuses. Where fees are not publicly confirmed, this is stated explicitly."
+      methodologySources={[{ name: "UK CAA ATO Register", url: "https://www.caa.co.uk/commercial-industry/aircraft/pilot-licences/aeroplanes/approved-training-organisations/" }, { name: "BALPA Training Guide", url: "https://www.balpa.org/becoming-a-pilot/" }]}
       ctaHref="/schools"
       ctaText="Find schools near you"
       faqSchema={[
@@ -107,7 +113,7 @@ export default function BestFlightSchoolsUK() {
               <p>
                 The UK integrated market is dominated by a few large academies. They charge premium prices (£90,000–£115,000) but offer structured, full-time programmes and dedicated airline placement teams.
               </p>
-              <FlightSchoolFeesTable trainingType="integrated" className="my-6" />
+              <FlightSchoolFeesTable trainingType="Integrated ATPL" className="my-6" />
               <p>
                 <strong>CAE (Oxford/Phoenix/Madrid):</strong> One of the largest aviation training organisations globally. They run the Generation easyJet Pilot Training Programme and have historically strong links with British Airways and Ryanair. Training is split between European/US fair-weather bases and the UK.
               </p>
@@ -127,7 +133,7 @@ export default function BestFlightSchoolsUK() {
               <p>
                 Modular schools offer the exact same frozen ATPL qualification as integrated schools, but allow you to train at your own pace and pay as you go. The total cost is significantly lower (£60,000–£80,000).
               </p>
-              <FlightSchoolFeesTable trainingType="modular" className="my-6" />
+              <FlightSchoolFeesTable trainingType="Modular ATPL" className="my-6" />
               <p>
                 <strong>Stapleford Flight Centre (Essex):</strong> One of the UK's longest-established modular schools. They operate their own airfield, have a large fleet, and are highly respected by airlines for producing resilient, capable pilots.
               </p>

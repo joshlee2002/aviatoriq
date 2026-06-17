@@ -1,13 +1,13 @@
 /**
- * FlightSchoolFeesTable.tsx
+ * VerifiedFeeTable.tsx
  * Reusable table component for rendering UK flight school fee data.
+ * Uses the updated schema: routeType, whatIsIncluded, whatIsExcluded, location.
  */
 
 import React from "react";
 import { UK_FLIGHT_SCHOOL_FEES_2026, UK_INTEGRATED_ATPL_COST_RANGE, UK_MODULAR_ATPL_COST_RANGE } from "../../data/ukFlightSchoolFees2026";
 
-interface FlightSchoolFeesTableProps {
-  trainingType?: "Integrated ATPL" | "Modular ATPL" | "all";
+interface VerifiedFeeTableProps {
   routeType?: "Integrated ATPL" | "Modular ATPL" | "all";
   className?: string;
 }
@@ -18,24 +18,27 @@ const confidenceBadge = (level: "high" | "medium" | "low") => {
     medium: "bg-yellow-100 text-yellow-700",
     low: "bg-gray-100 text-gray-600",
   };
+  const label = {
+    high: "Confirmed",
+    medium: "Estimated",
+    low: "Not confirmed",
+  };
   return (
     <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${map[level]}`}>
-      {level === "high" ? "Confirmed" : level === "medium" ? "Estimated" : "Not confirmed"}
+      {label[level]}
     </span>
   );
 };
 
-export const FlightSchoolFeesTable: React.FC<FlightSchoolFeesTableProps> = ({
-  trainingType = "all",
-  routeType,
+export const VerifiedFeeTable: React.FC<VerifiedFeeTableProps> = ({
+  routeType = "all",
   className = "",
 }) => {
-  const filterType = routeType ?? trainingType;
   const rows =
-    filterType === "all"
+    routeType === "all"
       ? UK_FLIGHT_SCHOOL_FEES_2026
       : UK_FLIGHT_SCHOOL_FEES_2026.filter((r) =>
-          r.routeType.toLowerCase().includes(filterType.toLowerCase())
+          r.routeType.toLowerCase().includes(routeType.toLowerCase())
         );
 
   return (
@@ -59,10 +62,11 @@ export const FlightSchoolFeesTable: React.FC<FlightSchoolFeesTableProps> = ({
           <thead className="bg-gray-50">
             <tr>
               <th className="px-4 py-3 text-left font-semibold text-gray-700">School</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Training Type</th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">Location</th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">Route Type</th>
               <th className="px-4 py-3 text-left font-semibold text-gray-700">Fee</th>
               <th className="px-4 py-3 text-left font-semibold text-gray-700">Confidence</th>
-              <th className="px-4 py-3 text-left font-semibold text-gray-700">Includes</th>
+              <th className="px-4 py-3 text-left font-semibold text-gray-700">What's Included</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 bg-white">
@@ -78,6 +82,7 @@ export const FlightSchoolFeesTable: React.FC<FlightSchoolFeesTableProps> = ({
                     {row.schoolName}
                   </a>
                 </td>
+                <td className="px-4 py-3 text-xs text-gray-600">{row.location}</td>
                 <td className="px-4 py-3 text-gray-700">{row.routeType}</td>
                 <td className="px-4 py-3 font-semibold text-gray-900">{row.estimatedFee}</td>
                 <td className="px-4 py-3">{confidenceBadge(row.confidenceLevel)}</td>
@@ -108,4 +113,4 @@ export const FlightSchoolFeesTable: React.FC<FlightSchoolFeesTableProps> = ({
   );
 };
 
-export default FlightSchoolFeesTable;
+export default VerifiedFeeTable;

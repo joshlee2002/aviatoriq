@@ -15,6 +15,11 @@ export default function HowToBecomePilot() {
       readTime="14 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/how-to-become-pilot_a1ed518f.jpg"
+      regulatorName="UK CAA Licensing"
+      regulatorUrl="https://www.caa.co.uk/commercial-industry/aircraft/pilot-licences/"
+      methodologySummary="Licensing pathway data sourced from UK CAA official documentation, verified June 2026."
+      methodologyDetail="All licensing requirements, training pathways, and regulatory information in this guide are sourced directly from UK CAA official documentation and BALPA published guidance. No secondary sources or forums were used for regulatory claims."
+      methodologySources={[{ name: "UK CAA Pilot Licences", url: "https://www.caa.co.uk/commercial-industry/aircraft/pilot-licences/" }, { name: "BALPA Becoming a Pilot", url: "https://www.balpa.org/becoming-a-pilot/" }]}
       ctaHref="/quiz"
       ctaText="Start your career assessment"
       faqSchema={[

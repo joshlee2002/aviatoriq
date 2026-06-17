@@ -5,6 +5,10 @@ import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import { ArrowRight, Clock, BookOpen, ChevronRight, Zap, Mail, CheckCircle2, List, ShieldCheck } from "lucide-react";
 import GuideSourcesBox, { type GuideSource } from "@/components/GuideSourcesBox";
+import { MedicalDisclaimerBox } from "@/components/trust/MedicalDisclaimerBox";
+import { FinanceDisclaimerBox } from "@/components/trust/FinanceDisclaimerBox";
+import { LastVerifiedBox } from "@/components/trust/LastVerifiedBox";
+import { MethodologyBox } from "@/components/trust/MethodologyBox";
 import { trpc } from "@/lib/trpc";
 
 // ─── Inline Email Capture ────────────────────────────────────────────
@@ -181,6 +185,22 @@ interface GuideLayoutProps {
   scopeBanner?: React.ReactNode;
   /** Sources reviewed for this guide */
   sources?: GuideSource[];
+  /** If true, renders a MedicalDisclaimerBox before the article content */
+  medicalDisclaimer?: boolean;
+  /** If true, renders a FinanceDisclaimerBox before the article content */
+  financeDisclaimer?: boolean;
+  /** Authority for the medical disclaimer (defaults to UK CAA) */
+  medicalAuthority?: "UK CAA" | "FAA" | "EASA" | "CASA" | "Transport Canada" | "GCAA";
+  /** Short methodology summary shown in the collapsible box */
+  methodologySummary?: string;
+  /** Full methodology detail shown when expanded */
+  methodologyDetail?: string;
+  /** Primary sources for the methodology box */
+  methodologySources?: { name: string; url: string }[];
+  /** Primary regulator name for the LastVerifiedBox */
+  regulatorName?: string;
+  /** Primary regulator URL for the LastVerifiedBox */
+  regulatorUrl?: string;
 }
 
 const surface = "oklch(0.14 0.08 250)";
@@ -328,6 +348,14 @@ export default function GuideLayout({
   heroImage,
   scopeBanner,
   sources,
+  medicalDisclaimer = false,
+  financeDisclaimer = false,
+  medicalAuthority = "UK CAA",
+  methodologySummary,
+  methodologyDetail,
+  methodologySources,
+  regulatorName,
+  regulatorUrl,
 }: GuideLayoutProps) {
   const guideScope = inferGuideScope(title, canonical, category);
   const reviewedSources = sources && sources.length > 0 ? sources : guideScope.sources;
@@ -448,6 +476,13 @@ export default function GuideLayout({
               {/* Main content column */}
               <div className="flex-1 min-w-0">
 
+                {/* Trust disclaimers — rendered before article content */}
+                {medicalDisclaimer && (
+                  <MedicalDisclaimerBox authority={medicalAuthority} className="mb-4" />
+                )}
+                {financeDisclaimer && (
+                  <FinanceDisclaimerBox className="mb-4" />
+                )}
                 {/* Mid-page CTA banner */}
                 <div
                   className="flex flex-col sm:flex-row items-center gap-3 p-4 md:p-5 rounded-2xl mb-6"
@@ -521,6 +556,24 @@ export default function GuideLayout({
                   {sections.length <= 2 && <div className="mt-10 pt-10" style={{ borderTop: `1px solid ${border}` }}><InlineEmailCapture /></div>}
                 </div>
 
+                {/* Trust layer: LastVerifiedBox + MethodologyBox */}
+                {(regulatorName && regulatorUrl) && (
+                  <LastVerifiedBox
+                    lastVerified={lastUpdated || "June 2026"}
+                    regulatorName={regulatorName}
+                    regulatorUrl={regulatorUrl}
+                    className="mb-3"
+                  />
+                )}
+                {(methodologySummary && methodologyDetail) && (
+                  <MethodologyBox
+                    summary={methodologySummary}
+                    detail={methodologyDetail}
+                    primarySources={methodologySources}
+                    lastVerified={lastUpdated || "June 2026"}
+                    className="mb-4"
+                  />
+                )}
                 {/* Sources box */}
                 <GuideSourcesBox sources={reviewedSources} lastReviewed={lastUpdated} />
 

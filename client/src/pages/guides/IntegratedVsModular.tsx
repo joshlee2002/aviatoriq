@@ -13,6 +13,12 @@ export default function IntegratedVsModular() {
       readTime="12 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/integrated-training_a566fa21.jpg"
+      financeDisclaimer={true}
+      regulatorName="UK CAA Licensing"
+      regulatorUrl="https://www.caa.co.uk/commercial-industry/aircraft/pilot-licences/"
+      methodologySummary="Route comparison data sourced from UK CAA Part-FCL documentation and school prospectuses, verified June 2026."
+      methodologyDetail="All route comparisons, cost ranges, and timeline estimates in this guide are sourced from UK CAA Part-FCL documentation, official school prospectuses, and BALPA guidance. No figures were estimated without a named source. Where exact costs are not publicly confirmed, this is stated explicitly."
+      methodologySources={[{ name: "UK CAA Part-FCL", url: "https://www.caa.co.uk/commercial-industry/aircraft/pilot-licences/aeroplanes/atpl/" }, { name: "BALPA Training Guide", url: "https://www.balpa.org/becoming-a-pilot/" }]}
       ctaHref="/quiz"
       ctaText="Start your career assessment"
       faqSchema={[
@@ -99,7 +105,7 @@ export default function IntegratedVsModular() {
               <p>
                 An integrated ATPL programme takes a cadet from zero experience to a frozen ATPL in a single, continuous, full-time course at one academy.
               </p>
-              <FlightSchoolFeesTable trainingType="integrated" className="my-6" />
+              <FlightSchoolFeesTable trainingType="Integrated ATPL" className="my-6" />
               <p>
                 The price includes everything: ATPL theory, all flying phases (PPL through to APS MCC), accommodation during the overseas flight phase (in some cases), examiner fees, and often a training guarantee that covers additional hours if you need extra support. What it does not include is the type rating — the aircraft-specific training required to join an airline — which costs an additional £20,000–£30,000.
               </p>
@@ -116,7 +122,7 @@ export default function IntegratedVsModular() {
               <p>
                 Modular training means completing each phase of the ATPL separately, at your own pace, and often at different schools. The total cost at a UK school in 2026 is approximately £60,000–£80,000 — significantly less than integrated.
               </p>
-              <FlightSchoolFeesTable trainingType="modular" className="my-6" />
+              <FlightSchoolFeesTable trainingType="Modular ATPL" className="my-6" />
               <p>
                 The primary advantage of modular is financial flexibility. You pay as you go, phase by phase. You can continue working in your current career to fund the training, reducing the need for massive unsecured loans. You also have the freedom to switch schools if you are unhappy with the quality of instruction, whereas integrated students are locked into one provider.
               </p>

@@ -20,7 +20,7 @@ const statusColour = (status: CadetProgramme["status"]): string => {
   return "bg-gray-100 text-gray-700";
 };
 
-const fundingColour = (funding: CadetProgramme["fundingType"]): string => {
+const fundingColour = (funding: CadetProgramme["fundedOrSelfFunded"]): string => {
   if (funding === "Fully funded by airline") return "bg-green-50 text-green-700 font-semibold";
   if (funding === "Deferred payment (repaid from salary)") return "bg-yellow-50 text-yellow-700";
   return "bg-gray-50 text-gray-600";
@@ -65,8 +65,8 @@ export const CadetProgrammesTable: React.FC<CadetProgrammesTableProps> = ({ coun
                   </span>
                 </td>
                 <td className="px-4 py-3">
-                  <span className={`inline-block rounded px-2 py-0.5 text-xs ${fundingColour(p.fundingType)}`}>
-                    {p.fundingType}
+                  <span className={`inline-block rounded px-2 py-0.5 text-xs ${fundingColour(p.fundedOrSelfFunded)}`}>
+                    {p.fundedOrSelfFunded}
                   </span>
                 </td>
                 <td className="px-4 py-3 text-gray-700">{p.estimatedCost}</td>

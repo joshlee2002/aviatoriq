@@ -13,6 +13,12 @@ const PilotTrainingFinance2026 = () => {
       readTime="11 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/training-finance-2026_cc42618a.jpg"
+      financeDisclaimer={true}
+      regulatorName="BALPA Finance Guide"
+      regulatorUrl="https://www.balpa.org/becoming-a-pilot/finance/"
+      methodologySummary="Finance data sourced from BALPA, Student Loans Company, and Lendwise official website, verified June 2026."
+      methodologyDetail="All loan rates, APRs, and funding limits in this guide are taken from official provider websites and BALPA published guidance as of June 2026. Lendwise APR is the representative figure published on their official website. SLC funding limits are taken from the Student Loans Company 2026/27 published rates. No figures were estimated or extrapolated."
+      methodologySources={[{ name: "BALPA Finance Guide", url: "https://www.balpa.org/becoming-a-pilot/finance/" }, { name: "Lendwise", url: "https://lendwise.com/" }, { name: "Student Loans Company", url: "https://www.gov.uk/student-finance" }]}
       ctaHref="/calculator"
       ctaText="Calculate your training costs"
       faqSchema={[

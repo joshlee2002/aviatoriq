@@ -12,6 +12,12 @@ export default function PilotSalaryUK2026() {
       readTime="12 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/uk-salary-2026_12c4d065.jpg"
+      financeDisclaimer={true}
+      regulatorName="BALPA Pay & Conditions"
+      regulatorUrl="https://www.balpa.org/becoming-a-pilot/salary-and-benefits/"
+      methodologySummary="Salary data sourced from BALPA published guidance and official airline careers pages, verified June 2026."
+      methodologyDetail="All salary ranges in this guide are sourced from BALPA published pay guidance, official airline careers pages, and publicly available collective agreements. No salary aggregator sites (Glassdoor, Indeed) were used as primary sources. Where exact figures are not publicly confirmed, this is stated explicitly."
+      methodologySources={[{ name: "BALPA Pay and Conditions", url: "https://www.balpa.org/becoming-a-pilot/salary-and-benefits/" }, { name: "UK CAA Licensing", url: "https://www.caa.co.uk/commercial-industry/aircraft/pilot-licences/" }]}
       ctaHref="/roadmap"
       ctaText="Generate my personalised roadmap"
       scopeBanner={<GuideScopeBanner scope="Salary figures in this guide are for UK airline pilots in GBP (2026)." usHref="/us/guides/airline-pilot-salary-usa" usLabel="View USA salaries →" />}

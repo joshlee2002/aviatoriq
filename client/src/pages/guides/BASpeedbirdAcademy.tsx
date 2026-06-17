@@ -14,6 +14,11 @@ export default function BASpeedbirdAcademy() {
       readTime="10 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/ba-speedbird_2f8a3c9e.jpg"
+      regulatorName="British Airways Careers"
+      regulatorUrl="https://careers.britishairways.com/speedbird-pilot-academy"
+      methodologySummary="Programme status and terms verified against BA official careers portal, June 2026."
+      methodologyDetail="All programme details, funding structure, training partner information, and bond terms in this guide are sourced from the British Airways official Speedbird Pilot Academy careers portal and official BA press releases. No third-party aggregators were used. Programme status is verified as of June 2026."
+      methodologySources={[{ name: "BA Speedbird Pilot Academy", url: "https://careers.britishairways.com/speedbird-pilot-academy" }, { name: "Skyborne Airline Academy", url: "https://www.skyborne.com/" }]}
       ctaHref="/tools/cadet-eligibility"
       ctaText="Check your cadet eligibility"
       faqSchema={[
