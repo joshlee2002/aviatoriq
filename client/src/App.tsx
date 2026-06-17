@@ -79,6 +79,9 @@ import QuizPage from "./pages/quizzes/QuizPage";
 // Roadmap Generator
 import RoadmapGenerator from "./pages/RoadmapGenerator";
 import RoadmapGeneratorUS from "./pages/RoadmapGeneratorUS";
+import FinanceCalculator from "./pages/FinanceCalculator";
+import SalaryEstimator from "./pages/SalaryEstimator";
+import RouteSelector from "./pages/RouteSelector";
 
 // New SEO guides
 import AmITooOld from "./pages/guides/AmITooOld";
@@ -325,6 +328,9 @@ function Router() {
       <Route path="/tools/class-1-medical-check" component={MedicalCheck} />
       <Route path="/tools/medical-condition-lookup" component={MedicalConditionLookup} />
       <Route path="/tools/cadet-eligibility" component={CadetEligibility} />
+      <Route path="/tools/finance-calculator" component={FinanceCalculator} />
+      <Route path="/tools/salary-estimator" component={SalaryEstimator} />
+      <Route path="/tools/route-selector" component={RouteSelector} />
 
       {/* Guides */}
       <Route path="/guides" component={GuidesIndex} />
