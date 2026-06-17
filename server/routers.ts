@@ -171,8 +171,16 @@ AviatorIQ Score: ${score}/100 (${category})`;
               { role: "user", content: summaryPrompt },
             ],
           });
-          const content = response.choices[0]?.message?.content;
-          aiSummary = typeof content === "string" ? content : undefined;
+          const rawSummaryContent = response.choices[0]?.message?.content;
+          if (typeof rawSummaryContent === "string") {
+            aiSummary = rawSummaryContent;
+          } else if (Array.isArray(rawSummaryContent)) {
+            const textPart = rawSummaryContent.find(
+              (p): p is { type: "text"; text: string } =>
+                typeof p === "object" && p !== null && (p as any).type === "text"
+            );
+            aiSummary = textPart?.text;
+          }
         } catch (e) {
           console.warn("[AI] Summary generation failed:", e);
         }
@@ -521,7 +529,23 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
             response_format: { type: "json_object" },
           });
           const rawContent = response.choices[0]?.message?.content;
-          roadmap = typeof rawContent === "string" ? rawContent : "{}";
+          // content can be a string OR an array of content parts (e.g. [{type:"text",text:"{...}"}])
+          if (typeof rawContent === "string") {
+            roadmap = rawContent;
+          } else if (Array.isArray(rawContent)) {
+            // Extract text from the first text-type content part
+            const textPart = rawContent.find(
+              (p): p is { type: "text"; text: string } =>
+                typeof p === "object" && p !== null && (p as any).type === "text"
+            );
+            roadmap = textPart?.text ?? "{}";
+          } else {
+            roadmap = "{}";
+          }
+          // Sanity check: if we got an empty or non-JSON string, throw to trigger fallback
+          if (!roadmap || roadmap.trim() === "{}" || roadmap.trim() === "") {
+            throw new Error("LLM returned empty or invalid JSON content");
+          }
         } catch (llmErr) {
           console.warn(
             "[Roadmap] LLM unavailable, returning structured fallback:",
