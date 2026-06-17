@@ -194,12 +194,15 @@ export default function Stories() {
             <p className="text-base md:text-lg lg:text-xl max-w-2xl mb-5" style={{ color: "oklch(0.65 0.04 240)" }}>
               Training journeys from working UK pilots — what route they took, what it cost, how long it took, and what they wish they'd known.
             </p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 p-4 rounded-xl text-xs" style={{ background: "oklch(0.72 0.18 65 / 0.08)", border: "1px solid oklch(0.72 0.18 65 / 0.3)" }}>
-              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 sm:mt-0" fill="none" viewBox="0 0 24 24" stroke="oklch(0.85 0.15 65)" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              <span style={{ color: "oklch(0.75 0.04 240)" }}>
-                <strong style={{ color: "oklch(0.85 0.15 65)" }}>About these stories:</strong> These are composite case studies based on real training routes, costs, and timelines sourced from UK flight schools and CAA data. Names are illustrative. Have a real story to share?
-              </span>
-              <a href="mailto:hello@aviatoriq.co.uk?subject=Share my pilot story" className="flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-semibold no-underline transition-all" style={{ background: "oklch(0.72 0.18 65 / 0.15)", border: "1px solid oklch(0.72 0.18 65 / 0.4)", color: "oklch(0.85 0.15 65)" }}>
+            <div className="flex flex-col sm:flex-row items-start gap-4 p-5 rounded-2xl" style={{ background: "oklch(0.55 0.18 65 / 0.10)", border: "2px solid oklch(0.72 0.18 65 / 0.40)" }}>
+              <div className="flex-shrink-0 w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: "oklch(0.72 0.18 65 / 0.2)" }}>
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="oklch(0.92 0.12 65)" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-bold mb-1" style={{ color: "oklch(0.92 0.12 65)" }}>Illustrative case studies — not verified personal accounts</p>
+                <p className="text-sm" style={{ color: "oklch(0.72 0.04 240)" }}>These stories are composite examples built from real training routes, published costs, and timelines sourced from UK flight schools and CAA data. Names and personal details are illustrative. They are designed to show realistic journeys, not to represent specific individuals.</p>
+              </div>
+              <a href="mailto:hello@aviatoriq.co.uk?subject=Share my pilot story" className="flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl font-semibold no-underline transition-all text-sm whitespace-nowrap" style={{ background: "oklch(0.72 0.18 65 / 0.18)", border: "1px solid oklch(0.72 0.18 65 / 0.45)", color: "oklch(0.92 0.12 65)" }}>
                 Share your story →
               </a>
             </div>

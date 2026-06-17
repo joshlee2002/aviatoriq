@@ -343,15 +343,16 @@ export default function Jobs() {
           <div className="container max-w-4xl">
 
             {/* Notice */}
-            <div className="p-4 rounded-xl mb-8 flex items-start gap-3"
-              style={{ background: "oklch(0.45 0.18 240 / 0.08)", border: "1px solid oklch(0.45 0.18 240 / 0.2)" }}>
-              <div className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                style={{ background: "oklch(0.45 0.18 240 / 0.2)", color: "oklch(0.7 0.18 240)" }}>
-                <span className="text-xs font-bold">i</span>
+            <div className="p-5 rounded-2xl mb-8 flex items-start gap-4"
+              style={{ background: "oklch(0.45 0.18 240 / 0.10)", border: "2px solid oklch(0.55 0.18 240 / 0.35)" }}>
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+                style={{ background: "oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.75 0.18 240)" }}>
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
-              <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>
-                <strong className="text-white/80">How this works:</strong> These are curated role profiles — not live job postings. Each one describes a hiring route that these airlines regularly recruit for, with a direct link to their official careers page where you can check current vacancies and apply. AviatorIQ is not a recruitment agency and does not charge fees. Always verify availability directly with the airline.
-              </p>
+              <div>
+                <p className="text-sm font-bold mb-1" style={{ color: "oklch(0.82 0.12 240)" }}>Role profiles — not live job postings</p>
+                <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>These are curated hiring route profiles for airlines that regularly recruit pilots. Each links to the airline’s official careers page where you can check current vacancies and apply directly. AviatorIQ is not a recruitment agency and does not charge fees. Always verify availability directly with the airline before applying.</p>
+              </div>
             </div>
 
             {/* Country Filter */}
