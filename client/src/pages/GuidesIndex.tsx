@@ -1,113 +1,65 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "wouter";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import { ArrowRight, Clock, ChevronRight, BookOpen, Zap } from "lucide-react";
 
+// UK-only guides — all routes verified in App.tsx
 const guides = [
-  // ── UK: Getting Started ──────────────────────────────────────────────────────
-  { title: "How to Become a Pilot", description: "A complete step-by-step guide from zero experience to your first airline job.", href: "/guides/how-to-become-a-pilot", time: "8 min read", category: "Getting Started", emoji: "🛫", market: "UK" },
-  { title: "Pilot Training Timeline Guide", description: "How long does it take to become a pilot? Realistic timelines for every route.", href: "/guides/training-timeline", time: "5 min read", category: "Getting Started", emoji: "📅", market: "UK" },
-  { title: "Am I Too Old to Become a Pilot?", description: "The honest answer on age limits, career runway, and whether training at 30, 40 or 50 makes sense.", href: "/guides/am-i-too-old-to-become-a-pilot", time: "6 min read", category: "Getting Started", emoji: "🎂", market: "UK" },
-  { title: "Am I Ready to Start Pilot Training?", description: "8 questions to answer honestly before committing money to flight training.", href: "/guides/am-i-ready-to-start-pilot-training", time: "7 min read", category: "Getting Started", emoji: "✅", market: "UK" },
-  { title: "Pilot Aptitude Test Preparation", description: "What the tests measure, how to prepare, and free resources — without paying £200 for a prep course.", href: "/guides/pilot-aptitude-test-preparation", time: "9 min read", category: "Getting Started", emoji: "🧠", market: "UK" },
-  { title: "Pilot Aptitude Test UK", description: "Overview of UK airline aptitude tests, what each section measures, and how to practise effectively.", href: "/guides/pilot-aptitude-test-uk", time: "8 min read", category: "Getting Started", emoji: "🧩", market: "UK" },
-  { title: "Pilot Lifestyle UK", description: "What life as a UK airline pilot actually looks like — rosters, bases, commuting, and work-life balance.", href: "/guides/pilot-lifestyle-uk", time: "7 min read", category: "Getting Started", emoji: "🌅", market: "UK" },
+  // ── Getting Started ──────────────────────────────────────────────────────────
+  { title: "How to Become a Pilot", description: "A complete step-by-step guide from zero experience to your first airline job.", href: "/guides/how-to-become-a-pilot", time: "8 min read", category: "Getting Started", emoji: "🛫" },
+  { title: "Pilot Training Timeline Guide", description: "How long does it take to become a pilot? Realistic timelines for every route.", href: "/guides/training-timeline", time: "5 min read", category: "Getting Started", emoji: "📅" },
+  { title: "Am I Too Old to Become a Pilot?", description: "The honest answer on age limits, career runway, and whether training at 30, 40 or 50 makes sense.", href: "/guides/am-i-too-old-to-become-a-pilot", time: "6 min read", category: "Getting Started", emoji: "🎂" },
+  { title: "Am I Ready to Start Pilot Training?", description: "8 questions to answer honestly before committing money to flight training.", href: "/guides/am-i-ready-to-start-pilot-training", time: "7 min read", category: "Getting Started", emoji: "✅" },
+  { title: "Pilot Aptitude Test Preparation", description: "What the tests measure, how to prepare, and free resources — without paying £200 for a prep course.", href: "/guides/pilot-aptitude-test-preparation", time: "9 min read", category: "Getting Started", emoji: "🧠" },
+  { title: "Pilot Aptitude Test UK", description: "Overview of UK airline aptitude tests, what each section measures, and how to practise effectively.", href: "/guides/pilot-aptitude-test-uk", time: "8 min read", category: "Getting Started", emoji: "🧩" },
+  { title: "Pilot Lifestyle UK", description: "What life as a UK airline pilot actually looks like — rosters, bases, commuting, and work-life balance.", href: "/guides/pilot-lifestyle-uk", time: "7 min read", category: "Getting Started", emoji: "🌅" },
 
-  // ── UK: Costs & Finance ──────────────────────────────────────────────────────
-  { title: "Pilot Training Cost Guide", description: "A detailed breakdown of what pilot training costs in the UK, Europe and USA.", href: "/guides/pilot-training-costs", time: "7 min read", category: "Costs & Finance", emoji: "💰", market: "UK" },
-  { title: "Pilot Training Finance Guide", description: "How to fund your training — loans, sponsorships, payment plans and government schemes.", href: "/guides/how-to-finance-pilot-training-uk", time: "6 min read", category: "Costs & Finance", emoji: "🏦", market: "UK" },
-  { title: "How to Finance Pilot Training (2026)", description: "Every realistic funding option — HSBC pilot loan, cadet bonds, savings strategies, and what to avoid.", href: "/guides/how-to-finance-pilot-training-uk", time: "9 min read", category: "Costs & Finance", emoji: "🏦", market: "UK" },
-  { title: "Pilot Training Finance 2026", description: "Updated 2026 guide to every funding route — bank loans, cadet bonds, income share, and new government schemes.", href: "/guides/pilot-training-finance-2026", time: "9 min read", category: "Costs & Finance", emoji: "💳", market: "UK" },
-  { title: "Pilot Training Over 40", description: "Is it worth training as a pilot in your 40s? Real numbers, ROI calculation, and what airlines think.", href: "/guides/pilot-training-over-40", time: "7 min read", category: "Costs & Finance", emoji: "📐", market: "UK" },
-  { title: "Integrated vs Modular: Which is Actually Cheaper?", description: "A brutally honest breakdown of the real costs of pilot training. We compare the £100k+ integrated route against the £60k modular route.", href: "/guides/integrated-vs-modular-cost", time: "9 min read", category: "Costs & Finance", emoji: "🧮", market: "UK" },
-  { title: "Finance Guide", description: "A complete guide to financing your pilot training — every option, every caveat.", href: "/guides/finance-guide", time: "8 min read", category: "Costs & Finance", emoji: "💼", market: "UK" },
+  // ── Costs & Finance ──────────────────────────────────────────────────────────
+  { title: "Pilot Training Cost Guide", description: "A detailed breakdown of what pilot training costs in the UK.", href: "/guides/pilot-training-costs", time: "7 min read", category: "Costs & Finance", emoji: "💰" },
+  { title: "How to Finance Pilot Training (2026)", description: "Every realistic funding option — HSBC pilot loan, cadet bonds, savings strategies, and what to avoid.", href: "/guides/how-to-finance-pilot-training-uk", time: "9 min read", category: "Costs & Finance", emoji: "🏦" },
+  { title: "Pilot Training Over 40", description: "Is it worth training as a pilot in your 40s? Real numbers, ROI calculation, and what airlines think.", href: "/guides/pilot-training-over-40", time: "7 min read", category: "Costs & Finance", emoji: "📐" },
+  { title: "Integrated vs Modular: Which is Actually Cheaper?", description: "A brutally honest breakdown of the real costs of pilot training. We compare the £100k+ integrated route against the £60k modular route.", href: "/guides/integrated-vs-modular-cost", time: "9 min read", category: "Costs & Finance", emoji: "🧮" },
+  { title: "Finance Guide", description: "A complete guide to financing your pilot training — every option, every caveat.", href: "/guides/finance-guide", time: "8 min read", category: "Costs & Finance", emoji: "💼" },
 
-  // ── UK: Training Routes ──────────────────────────────────────────────────────
-  { title: "Integrated vs Modular ATPL", description: "The two main routes to an ATPL explained — and how to choose between them.", href: "/guides/integrated-vs-modular", time: "6 min read", category: "Training Routes", emoji: "⚖️", market: "UK" },
-  { title: "Best Route to Becoming an Airline Pilot", description: "The fastest and most cost-effective paths from zero to a first officer seat.", href: "/guides/best-route-to-airline", time: "6 min read", category: "Training Routes", emoji: "🗺️", market: "UK" },
-  { title: "Modular vs Integrated: The Definitive Guide", description: "Real cost comparison, hiring outcomes, and which route is right for your situation. Not flight school marketing.", href: "/guides/modular-vs-integrated-pilot-training", time: "11 min read", category: "Training Routes", emoji: "⚖️", market: "UK" },
-  { title: "RAF vs Civilian Pilot Training", description: "Honest comparison of military and civilian routes — costs, timelines, lifestyle, and career outcomes.", href: "/guides/raf-vs-civilian-pilot-training", time: "8 min read", category: "Training Routes", emoji: "🪖", market: "UK" },
-  { title: "Best Flight Schools UK 2026", description: "Data-driven comparison of the UK's top flight schools — outcomes, costs, fleet, and what students say.", href: "/guides/best-flight-schools-uk-2026", time: "10 min read", category: "Training Routes", emoji: "🏫", market: "UK" },
-  { title: "ATPL Theory Exams: Complete Guide", description: "All 14 subjects, pass rates, difficulty ratings, and the study strategies that work.", href: "/guides/atpl-theory-exams-uk", time: "10 min read", category: "Training Routes", emoji: "📚", market: "UK" },
-  { title: "Hour Building for Pilots", description: "How to build your 200 hours cheaply and efficiently — best locations, aircraft, and strategies.", href: "/guides/hour-building-pilot-uk", time: "8 min read", category: "Training Routes", emoji: "⏱️", market: "UK" },
-  { title: "Pilot Type Ratings UK 2026", description: "What type ratings are, what they cost, and whether to self-fund or wait for airline sponsorship.", href: "/guides/pilot-type-rating-uk", time: "7 min read", category: "Training Routes", emoji: "🛩️", market: "UK" },
-  { title: "Private Pilot Licence (PPL) UK", description: "PPL requirements, costs (£8,000–£15,000), theory exams, and what you can do with a PPL.", href: "/guides/ppl-uk", time: "8 min read", category: "Training Routes", emoji: "🛩️", market: "UK" },
-  { title: "Commercial Pilot Licence (CPL) UK", description: "CPL requirements, costs, what jobs it unlocks, and how it fits into the ATPL pathway.", href: "/guides/cpl-uk", time: "8 min read", category: "Training Routes", emoji: "📋", market: "UK" },
-  { title: "Instrument Rating (IR) UK", description: "EASA IR vs UK IR vs EIR — requirements, costs, and why it's essential for an airline career.", href: "/guides/instrument-rating-uk", time: "8 min read", category: "Training Routes", emoji: "🧭", market: "UK" },
-  { title: "Frozen ATPL UK: What It Is & How to Get One", description: "What a frozen ATPL is, the 14 theory subjects, how long it takes, and how to unfreeze it.", href: "/guides/frozen-atpl-uk", time: "9 min read", category: "Training Routes", emoji: "❄️", market: "UK" },
-  { title: "How to Become a Flight Instructor (FI) UK", description: "FI rating requirements, costs, salary, and how instructing fits into the hour-building strategy.", href: "/guides/flight-instructor-uk", time: "8 min read", category: "Training Routes", emoji: "👨‍🏫", market: "UK" },
-  { title: "MCC & JOC Course UK", description: "What MCC and JOC are, cost (£3,500–£8,000), duration, and which airlines require which.", href: "/guides/mcc-joc-uk", time: "7 min read", category: "Training Routes", emoji: "🤝", market: "UK" },
+  // ── Training Routes ──────────────────────────────────────────────────────────
+  { title: "Integrated vs Modular ATPL", description: "The two main routes to an ATPL explained — and how to choose between them.", href: "/guides/integrated-vs-modular", time: "6 min read", category: "Training Routes", emoji: "⚖️" },
+  { title: "Best Route to Becoming an Airline Pilot", description: "The fastest and most cost-effective paths from zero to a first officer seat.", href: "/guides/best-route-to-airline", time: "6 min read", category: "Training Routes", emoji: "🗺️" },
+  { title: "RAF vs Civilian Pilot Training", description: "Honest comparison of military and civilian routes — costs, timelines, lifestyle, and career outcomes.", href: "/guides/raf-vs-civilian-pilot-training", time: "8 min read", category: "Training Routes", emoji: "🪖" },
+  { title: "Best Flight Schools UK 2026", description: "Data-driven comparison of the UK's top flight schools — outcomes, costs, fleet, and what students say.", href: "/guides/best-flight-schools-uk-2026", time: "10 min read", category: "Training Routes", emoji: "🏫" },
+  { title: "ATPL Theory Exams: Complete Guide", description: "All 14 subjects, pass rates, difficulty ratings, and the study strategies that work.", href: "/guides/atpl-theory-exams-uk", time: "10 min read", category: "Training Routes", emoji: "📚" },
+  { title: "Hour Building for Pilots", description: "How to build your 200 hours cheaply and efficiently — best locations, aircraft, and strategies.", href: "/guides/hour-building-pilot-uk", time: "8 min read", category: "Training Routes", emoji: "⏱️" },
+  { title: "Pilot Type Ratings UK 2026", description: "What type ratings are, what they cost, and whether to self-fund or wait for airline sponsorship.", href: "/guides/pilot-type-rating-uk", time: "7 min read", category: "Training Routes", emoji: "🛩️" },
+  { title: "Private Pilot Licence (PPL) UK", description: "PPL requirements, costs (£8,000–£15,000), theory exams, and what you can do with a PPL.", href: "/guides/ppl-uk", time: "8 min read", category: "Training Routes", emoji: "🛩️" },
+  { title: "Commercial Pilot Licence (CPL) UK", description: "CPL requirements, costs, what jobs it unlocks, and how it fits into the ATPL pathway.", href: "/guides/cpl-uk", time: "8 min read", category: "Training Routes", emoji: "📋" },
+  { title: "Instrument Rating (IR) UK", description: "EASA IR vs UK IR vs EIR — requirements, costs, and why it's essential for an airline career.", href: "/guides/instrument-rating-uk", time: "8 min read", category: "Training Routes", emoji: "🧭" },
+  { title: "Frozen ATPL UK: What It Is & How to Get One", description: "What a frozen ATPL is, the 14 theory subjects, how long it takes, and how to unfreeze it.", href: "/guides/frozen-atpl-uk", time: "9 min read", category: "Training Routes", emoji: "❄️" },
+  { title: "How to Become a Flight Instructor (FI) UK", description: "FI rating requirements, costs, salary, and how instructing fits into the hour-building strategy.", href: "/guides/flight-instructor-uk", time: "8 min read", category: "Training Routes", emoji: "👨‍🏫" },
+  { title: "MCC & JOC Course UK", description: "What MCC and JOC are, cost (£3,500–£8,000), duration, and which airlines require which.", href: "/guides/mcc-joc-uk", time: "7 min read", category: "Training Routes", emoji: "🤝" },
 
-  // ── UK: Medical ──────────────────────────────────────────────────────────────
-  { title: "Class 1 Medical Guide", description: "What the Class 1 Medical tests, how to pass it, and what to do with a health condition.", href: "/guides/class-1-medical", time: "5 min read", category: "Medical", emoji: "🩺", market: "UK" },
-  { title: "Can I Become a Pilot with ADHD?", description: "The 2026 UK CAA rules on ADHD, medication, and the exact steps to get your Class 1 Medical.", href: "/guides/adhd-pilot-uk", time: "6 min read", category: "Medical", emoji: "🧠", market: "UK" },
-  { title: "Class 1 Medical Disqualifiers", description: "What conditions disqualify you from a Class 1 medical — and which ones don't.", href: "/guides/class-1-medical-disqualifiers", time: "7 min read", category: "Medical", emoji: "❤️", market: "UK" },
-  { title: "Pilot Eyesight Requirements UK", description: "Can you become a pilot with glasses or contacts? Class 1 vision standards and colour vision rules.", href: "/guides/pilot-eyesight-requirements-uk", time: "6 min read", category: "Medical", emoji: "👁️", market: "UK" },
+  // ── Medical ──────────────────────────────────────────────────────────────────
+  { title: "Class 1 Medical Guide", description: "What the Class 1 Medical tests, how to pass it, and what to do with a health condition.", href: "/guides/class-1-medical", time: "5 min read", category: "Medical", emoji: "🩺" },
+  { title: "Can I Become a Pilot with ADHD?", description: "The 2026 UK CAA rules on ADHD, medication, and the exact steps to get your Class 1 Medical.", href: "/guides/adhd-pilot-uk", time: "6 min read", category: "Medical", emoji: "🧠" },
+  { title: "Class 1 Medical Disqualifiers", description: "What conditions disqualify you from a Class 1 medical — and which ones don't.", href: "/guides/class-1-medical-disqualifiers", time: "7 min read", category: "Medical", emoji: "❤️" },
+  { title: "Pilot Eyesight Requirements UK", description: "Can you become a pilot with glasses or contacts? Class 1 vision standards and colour vision rules.", href: "/guides/pilot-eyesight-requirements-uk", time: "6 min read", category: "Medical", emoji: "👁️" },
 
-  // ── UK: Career ───────────────────────────────────────────────────────────────
-  { title: "Airline Pilot Salary Guide", description: "What do airline pilots actually earn? First officer and captain salaries explained.", href: "/guides/airline-pilot-salary", time: "7 min read", category: "Career", emoji: "📈", market: "UK" },
-  { title: "The UK Pilot Shortage 2026", description: "Is the shortage real? What it means for your hiring prospects, salary, and career timeline.", href: "/guides/uk-pilot-shortage-2026", time: "7 min read", category: "Career", emoji: "📊", market: "UK" },
-  { title: "UK Pilot Salary Guide 2026", description: "Real salary figures for first officers and captains at every major UK airline.", href: "/guides/uk-pilot-salary-2026", time: "8 min read", category: "Career", emoji: "💷", market: "UK" },
-  { title: "Airline Pilot Interview Guide", description: "What happens in airline selection, what assessors look for, and how to prepare properly.", href: "/guides/airline-pilot-interview", time: "9 min read", category: "Career", emoji: "🎯", market: "UK" },
-  { title: "Women in Aviation UK", description: "Scholarships, challenges, industry progress and support organisations for women pursuing a pilot career.", href: "/guides/women-in-aviation-uk", time: "7 min read", category: "Career", emoji: "✈️", market: "UK" },
-  { title: "Pilot CV & Cover Letter Guide", description: "How to write a pilot CV and cover letter that gets you to interview — structure, content, and what to avoid.", href: "/guides/pilot-cv-cover-letter", time: "8 min read", category: "Career", emoji: "📄", market: "UK" },
-  { title: "Airline Simulator Assessment Guide", description: "What to expect in the sim assessment, how it's scored, and how to prepare for raw flying and CRM.", href: "/guides/airline-simulator-assessment", time: "8 min read", category: "Career", emoji: "🕹️", market: "UK" },
-  { title: "How to Become a First Officer at a UK Airline", description: "Minimum requirements, type rating costs, FO salary, and which airlines hire low-hours pilots.", href: "/guides/first-officer-uk", time: "9 min read", category: "Career", emoji: "🪑", market: "UK" },
+  // ── Career ───────────────────────────────────────────────────────────────────
+  { title: "Airline Pilot Salary Guide", description: "What do airline pilots actually earn? First officer and captain salaries explained.", href: "/guides/airline-pilot-salary", time: "7 min read", category: "Career", emoji: "📈" },
+  { title: "The UK Pilot Shortage 2026", description: "Is the shortage real? What it means for your hiring prospects, salary, and career timeline.", href: "/guides/uk-pilot-shortage-2026", time: "7 min read", category: "Career", emoji: "📊" },
+  { title: "UK Pilot Salary Guide 2026", description: "Real salary figures for first officers and captains at every major UK airline.", href: "/guides/uk-pilot-salary-2026", time: "8 min read", category: "Career", emoji: "💷" },
+  { title: "Airline Pilot Interview Guide", description: "What happens in airline selection, what assessors look for, and how to prepare properly.", href: "/guides/airline-pilot-interview", time: "9 min read", category: "Career", emoji: "🎯" },
+  { title: "Women in Aviation UK", description: "Scholarships, challenges, industry progress and support organisations for women pursuing a pilot career.", href: "/guides/women-in-aviation-uk", time: "7 min read", category: "Career", emoji: "✈️" },
+  { title: "Pilot CV & Cover Letter Guide", description: "How to write a pilot CV and cover letter that gets you to interview — structure, content, and what to avoid.", href: "/guides/pilot-cv-cover-letter", time: "8 min read", category: "Career", emoji: "📄" },
+  { title: "Airline Simulator Assessment Guide", description: "What to expect in the sim assessment, how it's scored, and how to prepare for raw flying and CRM.", href: "/guides/airline-simulator-assessment", time: "8 min read", category: "Career", emoji: "🕹️" },
+  { title: "How to Become a First Officer at a UK Airline", description: "Minimum requirements, type rating costs, FO salary, and which airlines hire low-hours pilots.", href: "/guides/first-officer-uk", time: "9 min read", category: "Career", emoji: "🪑" },
 
-  // ── UK: Cadet Programmes ─────────────────────────────────────────────────────
-  { title: "Cadet Pilot Programmes UK", description: "Every sponsored cadet scheme in the UK — BA, Jet2, Ryanair, easyJet — eligibility and how to apply.", href: "/guides/cadet-pilot-programmes-uk", time: "8 min read", category: "Cadet Programmes", emoji: "🎓", market: "UK" },
-  { title: "BA Speedbird Academy 2026", description: "Complete guide to BA's flagship cadet programme — selection, training at CAE Oxford, costs, and guaranteed FO job.", href: "/guides/ba-speedbird-academy", time: "10 min read", category: "Cadet Programmes", emoji: "✈️", market: "UK" },
-  { title: "easyJet Generation Pilot 2026", description: "The MPL route from zero hours to easyJet First Officer — how it works, costs, and how to get in.", href: "/guides/easyjet-generation-pilot", time: "9 min read", category: "Cadet Programmes", emoji: "🟠", market: "UK" },
-  { title: "Ryanair Cadet Programme 2026", description: "How Ryanair recruits cadets via FTEJerez, Bartolini Air, and MATS — costs from £47k, selection, and career.", href: "/guides/ryanair-cadet-programme", time: "8 min read", category: "Cadet Programmes", emoji: "🔵", market: "UK" },
-  { title: "Wizz Air Pilot Academy 2026", description: "Europe's fastest-growing airline's cadet programme — training, costs, and what a Wizz Air career looks like.", href: "/guides/wizz-air-pilot-academy", time: "8 min read", category: "Cadet Programmes", emoji: "🟣", market: "UK" },
-  { title: "TUI Airways MPL Programme 2026", description: "TUI's MPL cadet pathway from zero hours to Boeing 737 FO — selection, training, costs, and career.", href: "/guides/tui-mpl-cadet-programme", time: "8 min read", category: "Cadet Programmes", emoji: "🌴", market: "UK" },
-
-  // ── Global: Getting Started ──────────────────────────────────────────────────
-  { title: "How to Become a Pilot in Australia", description: "The complete 2026 guide to CASA licences, Part 141 vs 142, costs (AUD $65k–$120k), and the Qantas Academy pathway.", href: "/guides/how-to-become-a-pilot-australia", time: "12 min read", category: "Getting Started", emoji: "🇦🇺", market: "Global" },
-  { title: "How to Become a Pilot in Canada", description: "Transport Canada PPL to ATPL, real costs (CAD $80k–$130k), hour building in northern Canada, and aviation college pathways.", href: "/guides/how-to-become-a-pilot-canada", time: "11 min read", category: "Getting Started", emoji: "🇨🇦", market: "Global" },
-  { title: "How to Become a Pilot in Europe (EASA)", description: "EASA integrated vs modular ATPL, costs across 15 countries (€40k–€130k), and Lufthansa, Wizz Air, and Ryanair cadet programmes.", href: "/guides/how-to-become-a-pilot-europe", time: "13 min read", category: "Getting Started", emoji: "🇪🇺", market: "Global" },
-
-  // ── US: Getting Started ──────────────────────────────────────────────────────
-  { title: "How to Become a Pilot in the USA", description: "The complete 2026 guide to FAA licences, Part 141 vs Part 61, ATP minimums, and airline cadet programmes.", href: "/us/guides/how-to-become-a-pilot", time: "9 min read", category: "Getting Started", emoji: "🇺🇸", market: "US" },
-  { title: "Pilot Training Over 40 (USA)", description: "Is it worth training as a pilot in your 40s in the USA? Real numbers, ROI, and what US airlines think.", href: "/us/guides/pilot-training-over-40-usa", time: "7 min read", category: "Getting Started", emoji: "📐", market: "US" },
-  { title: "US Pilot Training Guide 2026", description: "Complete overview of the US pilot training pathway — from student pilot to ATP certificate.", href: "/us/guides/us-pilot-training-2026", time: "10 min read", category: "Getting Started", emoji: "🗺️", market: "US" },
-  { title: "US Pilot Training Market Guide", description: "How the US flight training industry works — Part 141 vs 61, university programmes, and choosing a school.", href: "/us/guides/us-pilot-training-market-guide", time: "9 min read", category: "Getting Started", emoji: "🏫", market: "US" },
-
-  // ── US: Training Routes ──────────────────────────────────────────────────────
-  { title: "Part 61 vs Part 141: Which is Right for You?", description: "The honest comparison of the two FAA training structures — cost, speed, and which schools offer what.", href: "/us/guides/part-61-vs-141", time: "8 min read", category: "Training Routes", emoji: "⚖️", market: "US" },
-  { title: "PPL Requirements USA", description: "FAA PPL requirements, cost ($8,000–$15,000), knowledge test, checkride, and what you can do with a PPL.", href: "/us/guides/ppl-requirements-usa", time: "8 min read", category: "Training Routes", emoji: "🛩️", market: "US" },
-  { title: "Commercial Pilot Certificate USA", description: "FAA CPL requirements, cost, what jobs it unlocks, and how it fits into the airline career path.", href: "/us/guides/commercial-pilot-certificate-usa", time: "8 min read", category: "Training Routes", emoji: "📋", market: "US" },
-  { title: "Instrument Rating USA", description: "FAA IR requirements, cost ($8,000–$15,000), what it allows you to do, and how to maintain currency.", href: "/us/guides/instrument-rating-usa", time: "8 min read", category: "Training Routes", emoji: "🧭", market: "US" },
-  { title: "ATP Certificate USA", description: "FAA ATP requirements, R-ATP pathways, ATP-CTP course, checkride, and what the ATP unlocks for your career.", href: "/us/guides/atp-certificate-usa", time: "10 min read", category: "Training Routes", emoji: "🏆", market: "US" },
-  { title: "FAA ATP Requirements", description: "Full breakdown of FAA ATP certificate requirements — hours, ratings, knowledge test, and checkride.", href: "/us/guides/faa-atp-requirements", time: "8 min read", category: "Training Routes", emoji: "📋", market: "US" },
-  { title: "How to Become a CFI in the USA", description: "CFI requirements, salary ($30,000–$60,000), how many hours you build per year, and the CFI to airline timeline.", href: "/us/guides/cfi-career-usa", time: "8 min read", category: "Training Routes", emoji: "👨‍🏫", market: "US" },
-
-  // ── US: Medical ──────────────────────────────────────────────────────────────
-  { title: "FAA Medical Requirements (2026)", description: "First, Second, and Third Class medical standards — what the AME checks and how to prepare.", href: "/us/guides/faa-medical-requirements", time: "7 min read", category: "Medical", emoji: "🏥", market: "US" },
-  { title: "FAA First Class Medical", description: "Requirements, what the AME examines, common disqualifiers, and how to get a Special Issuance.", href: "/us/guides/faa-medical-class-1", time: "8 min read", category: "Medical", emoji: "🩺", market: "US" },
-  { title: "FAA Second Class Medical", description: "Second Class medical standards, who needs it, and how it differs from First Class.", href: "/us/guides/faa-medical-class-2", time: "6 min read", category: "Medical", emoji: "🩺", market: "US" },
-  { title: "FAA Third Class Medical", description: "Third Class medical standards, BasicMed as an alternative, and what it allows you to fly.", href: "/us/guides/faa-medical-class-3", time: "6 min read", category: "Medical", emoji: "🩺", market: "US" },
-  { title: "Can You Be a Pilot with ADHD in the USA?", description: "FAA's position on ADHD, Special Issuance process, medication rules, and neuropsychological testing requirements.", href: "/us/guides/adhd-faa-medical", time: "8 min read", category: "Medical", emoji: "🧠", market: "US" },
-
-  // ── US: Costs & Finance ──────────────────────────────────────────────────────
-  { title: "How to Fund Pilot Training in the USA", description: "Sallie Mae loans, GI Bill, AOPA Finance, scholarships, and income share agreements — every realistic option.", href: "/us/guides/how-to-fund-pilot-training-usa", time: "9 min read", category: "Costs & Finance", emoji: "🏦", market: "US" },
-  { title: "Using the GI Bill for Flight School", description: "Which GI Bill chapters cover flight training, which schools are VA-approved, and how to apply.", href: "/us/guides/gi-bill-flight-training", time: "8 min read", category: "Costs & Finance", emoji: "🎖️", market: "US" },
-  { title: "US Flight School Loans", description: "Every loan option for US pilot training — Sallie Mae, AOPA, Meritize, bank loans, and what to watch out for.", href: "/us/guides/us-flight-school-loans", time: "8 min read", category: "Costs & Finance", emoji: "💳", market: "US" },
-
-  // ── US: Career ───────────────────────────────────────────────────────────────
-  { title: "Airline Pilot Salary USA 2026", description: "Real pay data for regional FOs, major airline first officers, and captains at Delta, United, American, Southwest, FedEx and UPS.", href: "/us/guides/airline-pilot-salary-usa", time: "10 min read", category: "Career", emoji: "💵", market: "US" },
-  { title: "US Pilot Career Outlook 2026", description: "Is now the best time to become a pilot? The real scale of the shortage, hiring timelines, and salary trajectory.", href: "/us/guides/us-pilot-career-outlook", time: "8 min read", category: "Career", emoji: "📊", market: "US" },
-  { title: "US Pilot Salary 2026", description: "Comprehensive salary guide for US airline pilots — regional, major, cargo, and charter.", href: "/us/guides/us-pilot-salary-2026", time: "9 min read", category: "Career", emoji: "💵", market: "US" },
-  { title: "US Pilot Shortage 2026", description: "The real state of the US pilot shortage — data, causes, and what it means for your career timeline.", href: "/us/guides/us-pilot-shortage-2026", time: "7 min read", category: "Career", emoji: "📉", market: "US" },
-  { title: "Major Airlines Hiring USA", description: "Which major US airlines are hiring, minimum requirements, and how to get your application noticed.", href: "/us/guides/major-airlines-hiring-usa", time: "8 min read", category: "Career", emoji: "🏢", market: "US" },
-  { title: "Airline Interview Prep (USA)", description: "How to prepare for US airline interviews — technical knowledge, HR questions, and sim assessment tips.", href: "/us/guides/airline-interview-prep", time: "9 min read", category: "Career", emoji: "🎯", market: "US" },
-  { title: "US Pilot Seniority Guide", description: "How seniority works at US airlines — what it controls, how to build it, and why it matters.", href: "/us/guides/us-pilot-seniority", time: "7 min read", category: "Career", emoji: "📊", market: "US" },
-  { title: "US Pilot Schedule Guide", description: "What a US airline pilot's schedule actually looks like — reserve, line, commuting, and quality of life.", href: "/us/guides/us-pilot-schedule", time: "7 min read", category: "Career", emoji: "📅", market: "US" },
-  { title: "US Pilot Commuting Guide", description: "How commuting works at US airlines — crash pads, jumpseating, and the real cost of commuting.", href: "/us/guides/us-pilot-commuting", time: "7 min read", category: "Career", emoji: "🚆", market: "US" },
-
-  // ── US: Cadet Programmes ─────────────────────────────────────────────────────
-  { title: "US Airline Cadet Programs 2026", description: "Every major US airline cadet and pathway program — Delta Propel, United Aviate, American Cadet, and more.", href: "/us/guides/us-cadet-programs", time: "9 min read", category: "Cadet Programmes", emoji: "🎓", market: "US" },
+  // ── Cadet Programmes ─────────────────────────────────────────────────────────
+  { title: "Cadet Pilot Programmes UK", description: "Every sponsored cadet scheme in the UK — BA, Jet2, Ryanair, easyJet — eligibility and how to apply.", href: "/guides/cadet-pilot-programmes-uk", time: "8 min read", category: "Cadet Programmes", emoji: "🎓" },
+  { title: "BA Speedbird Academy 2026", description: "Complete guide to BA's flagship cadet programme — selection, training at CAE Oxford, costs, and guaranteed FO job.", href: "/guides/ba-speedbird-academy", time: "10 min read", category: "Cadet Programmes", emoji: "✈️" },
+  { title: "easyJet Generation Pilot 2026", description: "The MPL route from zero hours to easyJet First Officer — how it works, costs, and how to get in.", href: "/guides/easyjet-generation-pilot", time: "9 min read", category: "Cadet Programmes", emoji: "🟠" },
+  { title: "Ryanair Cadet Programme 2026", description: "How Ryanair recruits cadets via FTEJerez, Bartolini Air, and MATS — costs from £47k, selection, and career.", href: "/guides/ryanair-cadet-programme", time: "8 min read", category: "Cadet Programmes", emoji: "🔵" },
+  { title: "Wizz Air Pilot Academy 2026", description: "Europe's fastest-growing airline's cadet programme — training, costs, and what a Wizz Air career looks like.", href: "/guides/wizz-air-pilot-academy", time: "8 min read", category: "Cadet Programmes", emoji: "🟣" },
+  { title: "TUI Airways MPL Programme 2026", description: "TUI's MPL cadet pathway from zero hours to Boeing 737 FO — selection, training, costs, and career.", href: "/guides/tui-mpl-cadet-programme", time: "8 min read", category: "Cadet Programmes", emoji: "🌴" },
 ];
 
 const categoryColors: Record<string, { bg: string; text: string; border: string }> = {
@@ -119,7 +71,15 @@ const categoryColors: Record<string, { bg: string; text: string; border: string 
   "Cadet Programmes": { bg: "oklch(0.55 0.2 145 / 0.12)", text: "oklch(0.72 0.18 145)", border: "oklch(0.55 0.2 145 / 0.25)" },
 };
 
-type MarketFilter = "All" | "UK" | "US" | "Global";
+const regions = [
+  { flag: "🇺🇸", label: "United States", href: "/us/guides" },
+  { flag: "🇦🇺", label: "Australia", href: "/australia/guides" },
+  { flag: "🇨🇦", label: "Canada", href: "/canada/guides" },
+  { flag: "🇪🇺", label: "Europe", href: "/europe/guides" },
+  { flag: "🇳🇿", label: "New Zealand", href: "/new-zealand/guides" },
+  { flag: "🇿🇦", label: "South Africa", href: "/south-africa/guides" },
+  { flag: "🇦🇪", label: "UAE", href: "/uae/guides" },
+];
 
 const surface = "oklch(0.14 0.08 250)";
 const borderStyle = "oklch(1 0 0 / 0.08)";
@@ -128,23 +88,9 @@ const muted = "oklch(0.55 0.04 240)";
 const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
 
 export default function GuidesIndex() {
-  useEffect(() => { document.title = "Pilot Training Guides – AviatorIQ"; }, []);
-  const [market, setMarket] = useState<MarketFilter>("All");
+  useEffect(() => { document.title = "UK Pilot Training Guides – AviatorIQ"; }, []);
 
-  const filtered = guides.filter((g) => market === "All" || g.market === market);
-  const categories = Array.from(new Set(filtered.map((g) => g.category)));
-
-  const tabStyle = (active: boolean) => ({
-    background: active ? "oklch(0.50 0.22 255)" : "oklch(1 0 0 / 0.05)",
-    border: `1px solid ${active ? "oklch(0.50 0.22 255)" : "oklch(1 0 0 / 0.10)"}`,
-    color: active ? "white" : "oklch(0.55 0.04 240)",
-    fontWeight: 700,
-    fontSize: "0.8rem",
-    padding: "0.4rem 1rem",
-    borderRadius: "9999px",
-    cursor: "pointer",
-    transition: "all 0.15s",
-  });
+  const categories = Array.from(new Set(guides.map((g) => g.category)));
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.10 0.08 252)" }}>
@@ -160,44 +106,38 @@ export default function GuidesIndex() {
           <div className="container max-w-3xl text-center relative">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-5" style={{ background: "oklch(0.45 0.18 240 / 0.12)", border: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.65 0.18 240)" }}>
               <BookOpen className="w-3 h-3" />
-              Free Guides
+              🇬🇧 UK Pilot Guides
             </div>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-3" style={{ letterSpacing: "-0.02em" }}>
-              Pilot Training Guides
+              UK Pilot Training Guides
             </h1>
-            <p className="text-base md:text-lg mb-5" style={{ color: "oklch(0.65 0.04 240)" }}>
-              Everything you need to understand before starting your pilot training journey. Written clearly, updated for 2026.
+            <p className="text-base md:text-lg mb-6" style={{ color: "oklch(0.65 0.04 240)" }}>
+              UK CAA rules, EASA licences, UK flight schools, and UK airline career paths. Written clearly, updated for 2026.
             </p>
-            <div className="flex flex-wrap justify-center gap-3 mb-4">
-              <Link href="/quiz" className="inline-flex items-center gap-2 px-7 py-3 rounded-xl text-sm font-bold text-white no-underline" style={{ background: ctaGradient, boxShadow: "0 0 24px oklch(0.72 0.18 65 / 0.3)" }}>
-                <Zap className="w-4 h-4" />
-                Take the free assessment
-              </Link>
-            </div>
-            <div className="flex flex-wrap justify-center gap-3 text-sm">
-              <Link href="/australia/guides" className="text-white/60 hover:text-white no-underline transition-colors">🇦🇺 Australia</Link>
-              <Link href="/canada/guides" className="text-white/60 hover:text-white no-underline transition-colors">🇨🇦 Canada</Link>
-              <Link href="/europe/guides" className="text-white/60 hover:text-white no-underline transition-colors">🇪🇺 Europe</Link>
-              <Link href="/new-zealand/guides" className="text-white/60 hover:text-white no-underline transition-colors">🇳🇿 New Zealand</Link>
-              <Link href="/south-africa/guides" className="text-white/60 hover:text-white no-underline transition-colors">🇿🇦 South Africa</Link>
-              <Link href="/uae/guides" className="text-white/60 hover:text-white no-underline transition-colors">🇦🇪 UAE</Link>
-            </div>
+            <Link href="/quiz" className="inline-flex items-center gap-2 px-7 py-3 rounded-xl text-sm font-bold text-white no-underline" style={{ background: ctaGradient, boxShadow: "0 0 24px oklch(0.72 0.18 65 / 0.3)" }}>
+              <Zap className="w-4 h-4" />
+              Take the free UK assessment
+            </Link>
           </div>
         </div>
 
-        {/* Market filter tabs */}
-        <div className="px-4 pt-6 pb-2" style={{ background: "oklch(0.11 0.08 252)" }}>
+        {/* Other regions */}
+        <div className="px-4 py-5" style={{ background: "oklch(0.12 0.08 252)", borderBottom: "1px solid oklch(1 0 0 / 0.07)" }}>
           <div className="container max-w-4xl">
-            <div className="flex items-center gap-2 flex-wrap">
-              <span className="text-xs font-semibold uppercase tracking-wider mr-1" style={{ color: muted }}>Show:</span>
-              {(["All", "UK", "US", "Global"] as MarketFilter[]).map((m) => (
-                <button key={m} style={tabStyle(market === m)} onClick={() => setMarket(m)}>
-                  {m === "UK" ? "🇬🇧 UK Guides" : m === "US" ? "🇺🇸 US Guides" : m === "Global" ? "🌍 Global Guides" : "All Guides"}
-                </button>
+            <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: muted }}>Guides for other countries</p>
+            <div className="flex flex-wrap gap-2">
+              {regions.map((r) => (
+                <Link
+                  key={r.href}
+                  href={r.href}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold no-underline transition-all"
+                  style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.10)", color: "oklch(0.7 0.04 240)" }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "oklch(1 0 0 / 0.09)"; (e.currentTarget as HTMLElement).style.color = "white"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "oklch(1 0 0 / 0.05)"; (e.currentTarget as HTMLElement).style.color = "oklch(0.7 0.04 240)"; }}
+                >
+                  {r.flag} {r.label}
+                </Link>
               ))}
-              <span className="ml-auto text-xs" style={{ color: muted }}>
-                {filtered.length} guide{filtered.length !== 1 ? "s" : ""}
-              </span>
             </div>
           </div>
         </div>
@@ -219,7 +159,7 @@ export default function GuidesIndex() {
                     <div className="flex-1 h-px" style={{ background: borderStyle }} />
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {filtered.filter((g) => g.category === cat).map((guide) => (
+                    {guides.filter((g) => g.category === cat).map((guide) => (
                       <Link
                         key={guide.href}
                         href={guide.href}
@@ -230,17 +170,9 @@ export default function GuidesIndex() {
                       >
                         <span className="text-2xl flex-shrink-0 mt-0.5">{guide.emoji}</span>
                         <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2 mb-1">
-                            <h3 className="font-display font-bold text-white/90 group-hover:text-white transition-colors text-sm leading-snug">
-                              {guide.title}
-                            </h3>
-                            {guide.market === "US" && (
-                              <span className="text-xs px-1.5 py-0.5 rounded-full flex-shrink-0" style={{ background: "oklch(0.55 0.2 25 / 0.15)", color: "oklch(0.75 0.18 25)", border: "1px solid oklch(0.55 0.2 25 / 0.25)" }}>US</span>
-                            )}
-                            {guide.market === "Global" && (
-                              <span className="text-xs px-1.5 py-0.5 rounded-full flex-shrink-0" style={{ background: "oklch(0.55 0.2 145 / 0.15)", color: "oklch(0.75 0.18 145)", border: "1px solid oklch(0.55 0.2 145 / 0.25)" }}>Global</span>
-                            )}
-                          </div>
+                          <h3 className="font-display font-bold text-white/90 group-hover:text-white transition-colors text-sm leading-snug mb-1">
+                            {guide.title}
+                          </h3>
                           <p className="text-xs leading-relaxed mb-3" style={{ color: muted }}>
                             {guide.description}
                           </p>
@@ -264,26 +196,16 @@ export default function GuidesIndex() {
             >
               <h3 className="font-display font-bold text-xl text-white mb-2">Ready to take the next step?</h3>
               <p className="text-sm mb-5" style={{ color: muted }}>
-                Take the free 5-minute assessment and get a personalised pilot training roadmap.
+                Take the free 5-minute assessment and get a personalised UK pilot training roadmap.
               </p>
-              <div className="flex flex-wrap justify-center gap-3">
-                <Link
-                  href="/quiz"
-                  className="inline-flex items-center gap-2 px-7 py-3 rounded-xl text-sm font-bold text-white no-underline"
-                  style={{ background: ctaGradient, boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.3)" }}
-                >
-                  Get your free UK roadmap
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-                <Link
-                  href="/us/roadmap"
-                  className="inline-flex items-center gap-2 px-7 py-3 rounded-xl text-sm font-bold text-white no-underline"
-                  style={{ background: "oklch(1 0 0 / 0.07)", border: "1px solid oklch(1 0 0 / 0.12)" }}
-                >
-                  🇺🇸 Get your free US roadmap
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
+              <Link
+                href="/quiz"
+                className="inline-flex items-center gap-2 px-7 py-3 rounded-xl text-sm font-bold text-white no-underline"
+                style={{ background: ctaGradient, boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.3)" }}
+              >
+                Get your free UK roadmap
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>

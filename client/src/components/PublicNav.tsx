@@ -475,6 +475,32 @@ export default function PublicNav() {
               </Link>
             ))}
 
+            {/* Guides by region in mobile */}
+            <div className="px-4 py-2" style={{ borderTop: "1px solid oklch(1 0 0 / 0.08)" }}>
+              <p className="text-xs font-semibold uppercase tracking-widest mt-1" style={{ color: "oklch(0.45 0.04 240)" }}>Guides by Region</p>
+            </div>
+            {([
+              { flag: "\uD83C\uDDEC\uD83C\uDDE7", label: "UK Guides", href: "/guides" },
+              { flag: "\uD83C\uDDFA\uD83C\uDDF8", label: "US Guides", href: "/us/guides" },
+              { flag: "\uD83C\uDDE6\uD83C\uDDFA", label: "Australia", href: "/australia/guides" },
+              { flag: "\uD83C\uDDE8\uD83C\uDDE6", label: "Canada", href: "/canada/guides" },
+              { flag: "\uD83C\uDDEA\uD83C\uDDFA", label: "Europe", href: "/europe/guides" },
+              { flag: "\uD83C\uDDF3\uD83C\uDDFF", label: "New Zealand", href: "/new-zealand/guides" },
+              { flag: "\uD83C\uDDFF\uD83C\uDDE6", label: "South Africa", href: "/south-africa/guides" },
+              { flag: "\uD83C\uDDE6\uD83C\uDDEA", label: "UAE", href: "/uae/guides" },
+            ] as { flag: string; label: string; href: string }[]).map((r) => (
+              <Link
+                key={r.href}
+                href={r.href}
+                onClick={() => setMobileOpen(false)}
+                className="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg no-underline transition-colors"
+                style={{ color: "oklch(0.7 0.04 240)" }}
+              >
+                <span>{r.flag}</span>
+                {r.label}
+              </Link>
+            ))}
+
             {/* Country switcher in mobile */}
             <div className="px-4 py-3" style={{ borderTop: "1px solid oklch(1 0 0 / 0.08)" }}>
               <button

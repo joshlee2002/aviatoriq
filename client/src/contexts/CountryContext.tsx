@@ -117,14 +117,44 @@ const CountryContext = createContext<CountryContextType>({
 
 const VALID_CODES: Country[] = ["uk", "us", "australia", "canada", "europe", "uae", "south-africa", "new-zealand", "india", "singapore", "other"];
 
+// Map IANA timezone prefix → Country code
+function detectCountryFromTimezone(): Country {
+  try {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (!tz) return null;
+    if (tz.startsWith("Europe/London") || tz === "GB") return "uk";
+    if (tz.startsWith("America/") && (
+      tz.includes("New_York") || tz.includes("Chicago") || tz.includes("Denver") ||
+      tz.includes("Los_Angeles") || tz.includes("Phoenix") || tz.includes("Anchorage") ||
+      tz.includes("Honolulu") || tz.includes("Detroit") || tz.includes("Indiana") ||
+      tz.includes("Kentucky") || tz.includes("Boise") || tz.includes("Juneau")
+    )) return "us";
+    if (tz.startsWith("Australia/")) return "australia";
+    if (tz.startsWith("America/Toronto") || tz.startsWith("America/Vancouver") ||
+        tz.startsWith("America/Winnipeg") || tz.startsWith("America/Edmonton") ||
+        tz.startsWith("America/Halifax") || tz.startsWith("America/St_Johns")) return "canada";
+    if (tz.startsWith("Pacific/Auckland") || tz.startsWith("Pacific/Chatham")) return "new-zealand";
+    if (tz.startsWith("Asia/Dubai")) return "uae";
+    if (tz.startsWith("Africa/Johannesburg")) return "south-africa";
+    if (tz.startsWith("Europe/")) return "europe";
+    if (tz.startsWith("Asia/Kolkata") || tz.startsWith("Asia/Calcutta")) return "india";
+    if (tz.startsWith("Asia/Singapore")) return "singapore";
+  } catch {
+    // Intl not supported — fall through
+  }
+  return null;
+}
+
 export function CountryProvider({ children }: { children: ReactNode }) {
   const [country, setCountryState] = useState<Country>(() => {
     const stored = localStorage.getItem("aviatoriq_country");
     if (stored && VALID_CODES.includes(stored as Country)) return stored as Country;
-    return null;
+    // First visit — auto-detect from timezone (soft suggestion, user can override)
+    return detectCountryFromTimezone();
   });
 
-  const hasSelected = country !== null;
+  // hasSelected is true only if the user has explicitly chosen, not just auto-detected
+  const hasSelected = !!localStorage.getItem("aviatoriq_country");
   const config = country ? COUNTRY_CONFIGS[country] : null;
 
   const setCountry = (c: Country) => {
