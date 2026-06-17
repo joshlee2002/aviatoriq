@@ -17,10 +17,10 @@ export default function TypeRatingUSA() {
       metaDescription="Airline type rating costs in the USA for 2026. A320 costs $32k–$42k. Boeing 737 costs $28k–$38k. Real comparison of self-funded vs airline-sponsored options and training bonds."
       scopeBanner={<><GuideScopeBanner scope="This guide covers FAA type ratings in the USA. UK/EASA type ratings work differently." usHref="/guides/pilot-type-rating-uk" usLabel="View UK type rating guide →" /></>}
       faqSchema={[
-        { question: "How much does an A320 type rating cost in the USA?", answer: "A self-funded Airbus A320 type rating in the USA costs $32,000–$42,000 in 2026. This covers ground school, simulator time, and the checkride. It does not include travel, accommodation, or retake fees." },
-        { question: "Do US airlines pay for type ratings?", answer: "Regional airlines frequently sponsor type ratings, usually tied to a 2–4 year training bond. Major airlines (Delta, United, American) typically hire pilots who already hold type ratings or have extensive turbine experience. Cadet programmes at majors may include type rating sponsorship." },
-        { question: "What is a training bond?", answer: "A training bond is a contractual agreement where an airline pays for your type rating in exchange for a commitment to stay with them for a set period (typically 2–5 years). If you leave early, you repay a prorated portion of the training cost." },
-        { question: "Should I self-fund my type rating or take a bond?", answer: "If you have a specific target airline that doesn't offer sponsorship, self-funding gives you flexibility. If you're a low-hours pilot without a clear target, a regional airline bond is often the most practical path — it gets you into a jet and building hours without depleting your savings." },
+        { question: "How much does an A320 type rating cost in the USA?", answer: "A self-funded Airbus A320 type rating in the USA typically costs $32,000–$42,000 in 2026. This covers ground school, simulator time, and the checkride. It does not include travel, accommodation, or retake fees if required." },
+        { question: "Do US airlines pay for type ratings?", answer: "Regional airlines (Part 121) frequently sponsor initial type ratings, usually tied to a 1–3 year training bond or contract. Major airlines (Delta, United, American) provide type ratings for new hires, but generally require candidates to already hold an ATP and have extensive turbine experience." },
+        { question: "What is a training bond?", answer: "A training bond or promissory note is a contractual agreement where an airline pays for your type rating in exchange for a commitment to stay with them for a set period. If you resign before the period ends, you must repay a prorated portion of the training cost." },
+        { question: "Should I self-fund my type rating or take a bond?", answer: "Self-funding is rare in the US Part 121 regional market, as airlines generally provide the rating. Self-funding makes sense if you are targeting specific Part 135 corporate operators, ACMI carriers, or foreign airlines that require an existing type rating for direct entry." },
       ]}
       sections={[
         {
@@ -28,16 +28,16 @@ export default function TypeRatingUSA() {
           content: (
             <>
               <p>
-                A type rating is the specific certification required to fly a large jet aircraft — an Airbus A320, Boeing 737, or regional jet like the Embraer E175. The FAA requires it for any aircraft that is turbojet-powered or requires more than one pilot. Without it, you cannot legally sit in the right seat of an airliner.
+                A type rating is the specific FAA certification required to act as Pilot-in-Command (PIC) — and increasingly, Second-in-Command (SIC) under Part 121 — of a large jet aircraft like an Airbus A320, Boeing 737, or Embraer E175. The FAA requires a type rating for any aircraft that is turbojet-powered or has a gross weight over 12,500 lbs.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.
               </p>
               <p>
-                The cost is high because the training is intensive. A typical A320 type rating involves 5–7 days of ground school covering the aircraft's systems in exhaustive detail, followed by 10–15 sessions in a Level D full-motion simulator (the highest certification level, costing $10,000–$15,000 per hour to operate), and a final checkride with an FAA Designated Pilot Examiner. The simulator time alone accounts for most of the cost.
+                The cost is high because the training is resource-intensive. A typical FAA type rating involves 5–7 days of systems ground school, followed by 10–15 sessions in a Level C or D full-motion simulator (which costs hundreds of dollars per hour to operate), and a final practical test (checkride) with an FAA Designated Pilot Examiner (DPE) or APD.
               </p>
               <p>
-                In the US, the type rating question matters more than in most other countries because the FAA's 1,500-hour rule means most pilots arrive at the airlines with just enough hours to qualify — they do not have the luxury of waiting for an airline to train them from scratch.
+                In the US airline industry, the dynamic around type ratings is fundamentally different from Europe. Because of the FAA's 1,500-hour rule, US regional airlines expect to hire pilots with a commercial certificate and 1,500 hours, and the airline itself provides the initial type rating (e.g., ERJ-175 or CRJ-900) as part of new hire training.
               </p>
             </>
           ),
@@ -47,14 +47,14 @@ export default function TypeRatingUSA() {
           content: (
             <>
               <p>
-                Here are the realistic self-funded costs for the most common US airline type ratings in 2026. These figures include ground school, simulator time, and the checkride. They do not include travel, accommodation, or retake fees — budget an additional $2,000–$5,000 for those.
+                If you choose to self-fund an initial type rating through an independent Part 142 training center (like CAE, FlightSafety, or Pan Am), here are the realistic costs for 2026. These figures include ground school, simulator time, and the checkride. They do not include travel, accommodation, or retake fees.
               </p>
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
                   <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
                     <tr className="border-b border-white/10">
                       <th className="px-4 py-3 font-semibold">Aircraft</th>
-                      <th className="px-4 py-3 font-semibold">Self-Funded Cost (USD)</th>
+                      <th className="px-4 py-3 font-semibold">Estimated Cost (USD)</th>
                       <th className="px-4 py-3 font-semibold">Duration</th>
                       <th className="px-4 py-3 font-semibold">Primary US Operators</th>
                     </tr>
@@ -76,54 +76,59 @@ export default function TypeRatingUSA() {
                       <td className="px-4 py-3 font-medium text-white">Embraer ERJ-170/190</td>
                       <td className="px-4 py-3">$25,000 – $35,000</td>
                       <td className="px-4 py-3">3–4 weeks</td>
-                      <td className="px-4 py-3">Republic, Envoy, Mesa, SkyWest</td>
+                      <td className="px-4 py-3">Republic, Envoy, SkyWest</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Bombardier CRJ Series</td>
                       <td className="px-4 py-3">$24,000 – $34,000</td>
                       <td className="px-4 py-3">3–4 weeks</td>
-                      <td className="px-4 py-3">SkyWest, Endeavor, PSA, Piedmont</td>
+                      <td className="px-4 py-3">SkyWest, Endeavor, PSA</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <p>
-                The A320 commands the highest price because it is the most sought-after type rating in the US market — it opens doors to United, American, JetBlue, Spirit, and Frontier. If you are going to self-fund a type rating, the A320 gives you the widest range of options.
+                Self-funding an A320 or B737 type rating is common in Europe, but highly unusual for a 1,500-hour pilot in the US. US legacy carriers (United, Delta, American) hire pilots based on total turbine time and experience, not because the applicant bought their own type rating. Buying a 737 type rating with 1,500 hours of Cessna 172 time will not get you hired at Southwest.
               </p>
             </>
           ),
         },
         {
-          heading: "Self-Funded vs. Airline Bond: When Each Makes Sense",
+          heading: "Self-Funded vs. Airline Sponsored: The US Reality",
           content: (
             <>
               <p>
-                The choice between self-funding and taking an airline's training bond is not a philosophical one — it is a financial calculation based on your specific situation.
+                In the US Part 121 environment, the choice between self-funding and airline sponsorship is largely made for you by industry norms.
               </p>
               <p>
-                <strong>Self-fund if:</strong> You have a specific target airline that does not offer sponsorship for your desired aircraft type. You have the financial means (savings or access to low-interest financing). You want the freedom to move between airlines without penalty. You have a strong application and expect to be hired quickly.
+                <strong>The Standard Path (Airline Sponsored):</strong> You reach 1,500 hours (usually by instructing), apply to a regional airline like SkyWest, Envoy, or Republic. The airline hires you, puts you through their Part 121 training program, and pays for your ERJ or CRJ type rating. You are paid a training salary during this time.
               </p>
               <p>
-                <strong>Take the bond if:</strong> You are a low-hours pilot who needs to get into a jet and start building turbine time. You do not have $30,000+ available. You are comfortable committing to a regional airline for 2–3 years. The bond terms are reasonable (prorated repayment, no interest on the bond amount).
-              </p>
-              <p>
-                The most common mistake is treating the bond as inherently bad. For a 1,500-hour pilot with no turbine time, a regional airline bond is often the most rational path to the flight deck. The alternative — spending $35,000 on a self-funded type rating and then waiting months for a job offer — is not obviously better.
+                <strong>When to Self-Fund:</strong> Self-funding makes sense primarily in the Part 135 (corporate/charter) world. If a corporate operator requires a Gulfstream or Citation type rating for direct entry, and you have the funds, buying the rating can secure the job. It is also used by pilots transitioning from military flying who need a civilian ATP and type rating to make themselves competitive for major airlines.
               </p>
             </>
           ),
         },
         {
-          heading: "Training Bonds: What the Fine Print Actually Says",
+          heading: "Training Bonds and Promissory Notes",
           content: (
             <>
               <p>
-                Most regional airline training bonds in the US work on a prorated basis. If the bond is for 3 years and you leave after 18 months, you repay 50% of the training cost. If you leave after 2 years, you repay 33%. After the bond period, you owe nothing and are free to move.
+                Because regional airlines invest $30,000+ in your initial type rating, they protect that investment using training contracts, often called promissory notes or training bonds.
               </p>
               <p>
-                The key things to check in any bond agreement: the total bond amount (some airlines include not just the type rating but also initial operating experience costs, pushing the total to $50,000+), whether the bond accrues interest, what triggers repayment (resignation vs. termination), and whether the bond is waived if the airline furloughs you.
+                These agreements stipulate that if you resign before a certain period (typically 1 to 3 years), you must repay a prorated portion of the training cost. For example, if you sign a 24-month, $30,000 note and leave for a major airline after 12 months, you owe the regional airline $15,000.
               </p>
               <p>
-                The opportunity cost of a bond is real. Staying at a regional for 3 years when you could have moved to a major after 18 months can cost $30,000–$60,000 in foregone salary. Run the numbers before signing.
+                <strong>What to check before signing:</strong>
+              </p>
+              <ul className="list-disc pl-5 space-y-2 mt-2 mb-4">
+                <li><strong>The total amount:</strong> Is it a realistic reflection of the type rating cost, or is it inflated?</li>
+                <li><strong>The proration schedule:</strong> Does the amount owed decrease monthly, or only annually?</li>
+                <li><strong>Termination clauses:</strong> What happens if you fail training? What if the airline furloughs you? (You should not owe the bond if the airline lets you go without cause).</li>
+              </ul>
+              <p>
+                In 2026, many pilots view these promissory notes simply as the cost of doing business. If a major airline offers you a job after 18 months, the significant pay increase at the major airline usually makes it financially viable to simply pay off the remainder of the regional airline's note.
               </p>
             </>
           ),
@@ -133,13 +138,10 @@ export default function TypeRatingUSA() {
           content: (
             <>
               <p>
-                If you decide to self-fund, your main options are: personal savings, an unsecured personal loan (typically 8–15% APR for aviation purposes), an aviation-specific loan from AOPA Finance or USAA, or a credit line against a home equity loan if you own property.
+                If you do find yourself in a situation where self-funding is necessary (e.g., for a specific corporate job), financing options include personal savings, unsecured personal loans, or aviation-specific loans from lenders like AOPA Finance.
               </p>
               <p>
-                Avoid financing a type rating on a high-interest credit card. The combination of a $35,000 balance at 22% APR and a 6-month job search timeline can put you in a genuinely difficult financial position. If you cannot secure financing at under 12% APR, seriously reconsider whether a bond is the better option.
-              </p>
-              <p>
-                The interest on an aviation education loan may be partially tax-deductible if the training maintains or improves skills required in your current job. Consult a tax professional — the rules are complex and individual circumstances vary significantly.
+                Interest rates for unsecured aviation loans can range from 8% to 15% APR. Avoid financing a $35,000 type rating on high-interest credit cards. If you do not have a guaranteed job offer contingent on the rating, taking on $35,000 of high-interest debt is an extreme financial risk.
               </p>
             </>
           ),
@@ -148,13 +150,13 @@ export default function TypeRatingUSA() {
       relatedGuides={[
         { title: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot", time: "12 min" },
         { title: "ATP Certificate USA", href: "/us/guides/atp-certificate-usa", time: "10 min" },
-        { title: "Pilot Type Ratings UK", href: "/guides/pilot-type-rating-uk", time: "7 min" },
+        { title: "Part 61 vs Part 141", href: "/us/guides/part-61-vs-141", time: "8 min" },
       ]}
-    
       sources={[
-    { name: "FAA" },
-    { name: "FAA Aeronautical Information Manual" },
-    { name: "Boeing Commercial Market Outlook" },
-  ]}/>
+        { name: "Federal Aviation Administration (FAA) Part 121 & Part 142" },
+        { name: "Airline Pilots Association (ALPA) Contract Data" },
+        { name: "Regional Airline Promissory Note Structures (Public Data)" },
+      ]}
+    />
   );
 }
