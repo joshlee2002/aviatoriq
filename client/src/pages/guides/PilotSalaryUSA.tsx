@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 import SalarySourceTable from "@/components/tables/SalarySourceTable";
+import { PILOT_SALARY_SOURCES_2026 } from "@/data/pilotSalarySources2026";
 
 // ── Pay basis explainer ───────────────────────────────────────────────────────
 // All salary figures in this guide are base pay only unless stated otherwise.
@@ -12,6 +13,25 @@ import SalarySourceTable from "@/components/tables/SalarySourceTable";
 // Actual pay depends on: airline, seat (FO/CA), fleet, base, credit hours,
 // guarantee, seniority number, contract year, and the state of the hiring cycle.
 // Do not use any figure in this guide as a guaranteed earnings projection.
+
+// ── Data layer helpers ────────────────────────────────────────────────────────
+// Filter airline-specific CBA rows for the FO and Captain tables.
+const US_CBA_ROWS = PILOT_SALARY_SOURCES_2026.filter(
+  (r) => r.country === "United States" && r.sourceType === "CBA / ALPA-reported"
+);
+
+const US_FO_ROWS = US_CBA_ROWS.filter((r) => r.role.toLowerCase().includes("first officer"));
+const US_CAPTAIN_ROWS = US_CBA_ROWS.filter((r) => r.role.toLowerCase().includes("captain"));
+
+// Derive a confidence badge label from sourceType
+const confidenceBadge = () => (
+  <span
+    className="inline-flex px-2 py-0.5 rounded-full text-xs font-medium"
+    style={{ background: "oklch(0.72 0.18 65 / 0.12)", color: "oklch(0.8 0.18 65)" }}
+  >
+    CBA-sourced
+  </span>
+);
 
 const PilotSalaryUSA = () => {
   return (
@@ -25,11 +45,13 @@ const PilotSalaryUSA = () => {
       heroImage="/manus-storage/pilot-salary-usa_292045db.jpg"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
-      methodologySummary="Salary data sourced from ALPA, ATP Flight School, and publicly reported CBA data. All figures are indicative ranges — verify current pay scales directly with airlines or via ALPA."
-      methodologyDetail="All salary figures in this guide are sourced from publicly available data: ALPA (Air Line Pilots Association) published guidance, ATP Flight School's publicly available salary data, and press-reported collective bargaining agreement (CBA) figures. No salary figure is estimated or extrapolated from non-public sources. All figures are base pay only unless explicitly stated. Total compensation (base + per diem + profit sharing + 401k + benefits) is materially higher. Actual pay depends on airline, seat, fleet, base, credit hours, guarantee, seniority, contract year, and the state of the hiring cycle. This guide is updated when new CBA data is publicly reported. Last reviewed June 2026."
+      methodologySummary="Salary data sourced from ALPA, APA, SWAPA, ATP Flight School, and publicly reported CBA data. All figures are indicative ranges — verify current pay scales directly with airlines or via ALPA."
+      methodologyDetail="All salary figures in this guide are sourced from publicly available data: ALPA (Air Line Pilots Association) published guidance, APA (Allied Pilots Association) and SWAPA (Southwest Airlines Pilots' Association) CBA summaries, ATP Flight School's publicly available salary data, and press-reported collective bargaining agreement (CBA) figures. Airline-specific annual figures are derived from current CBA hourly rates × 900 guaranteed credit hours/year (the standard base-pay calculation at US major carriers). No salary figure is estimated or extrapolated from non-public sources. All figures are base pay only unless explicitly stated. Total compensation (base + per diem + profit sharing + 401k + benefits) is materially higher. Actual pay depends on airline, seat, fleet, base, credit hours, guarantee, seniority, contract year, and the state of the hiring cycle. This guide is updated when new CBA data is publicly reported. Last reviewed June 2026."
       methodologySources={[
-        { name: "ALPA (Air Line Pilots Association)", url: "https://www.alpa.org/" },
+        { name: "ALPA (Air Line Pilots Association) — Pay & Benefits", url: "https://www.alpa.org/advancing-aviation/future-of-the-profession/become-a-pilot/career-outlook/pay-and-benefits" },
         { name: "ATP Flight School — Pilot Salary Data", url: "https://atpflightschool.com/become-a-pilot/airline-career/commercial-pilot-salary.html" },
+        { name: "Airmappr — US Pilot Salary Guide 2026 (citing ALPA/APA/SWAPA CBA rates)", url: "https://airmappr.com/articles/career/pilot-salary-usa" },
+        { name: "BLS — Airline and Commercial Pilots", url: "https://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm" },
         { name: "FAA", url: "https://www.faa.gov/" },
       ]}
       faqSchema={[
@@ -60,8 +82,10 @@ const PilotSalaryUSA = () => {
         { title: "ATP Certificate USA: Requirements & How to Get One", href: "/us/guides/atp-certificate-usa", time: "10 min read" },
       ]}
       sources={[
-        { name: "ALPA (Air Line Pilots Association)", url: "https://www.alpa.org/" },
+        { name: "ALPA (Air Line Pilots Association) — Pay & Benefits", url: "https://www.alpa.org/advancing-aviation/future-of-the-profession/become-a-pilot/career-outlook/pay-and-benefits" },
         { name: "ATP Flight School — Pilot Salary Data", url: "https://atpflightschool.com/become-a-pilot/airline-career/commercial-pilot-salary.html" },
+        { name: "Airmappr — US Pilot Salary Guide 2026", url: "https://airmappr.com/articles/career/pilot-salary-usa" },
+        { name: "BLS — Airline and Commercial Pilots", url: "https://www.bls.gov/ooh/transportation-and-material-moving/airline-and-commercial-pilots.htm" },
         { name: "FAA", url: "https://www.faa.gov/" },
         { name: "Boeing Commercial Market Outlook", url: "https://www.boeing.com/commercial/market/pilot-technician-outlook/" },
       ]}
@@ -89,7 +113,7 @@ const PilotSalaryUSA = () => {
                         { component: "Base pay", meaning: "Guaranteed annual salary before any additions", caveat: "Varies by airline, contract, seat, fleet, and seniority year" },
                         { component: "Per diem", meaning: "$2.00–$3.50/hr away from base (largely tax-advantaged)", caveat: "Adds $8,000–$15,000/yr for active pilots. Varies by airline and contract." },
                         { component: "Profit sharing", meaning: "Annual bonus tied to airline profitability", caveat: "Not guaranteed. Delta, Southwest, Alaska have historically paid 5–15% of eligible earnings." },
-                        { component: "401(k) match", meaning: "Employer contribution to retirement account (typically 15–17% of base)", caveat: "Adds $15,000–$50,000/yr equivalent for senior pilots. Varies by airline." },
+                        { component: "401(k) match", meaning: "Employer contribution to retirement account (typically 15–20% of base)", caveat: "Adds $15,000–$50,000/yr equivalent for senior pilots. Varies by airline." },
                         { component: "Signing bonus", meaning: "One-time payment on hire (varies by airline and staffing need)", caveat: "Not always available. May have repayment obligation if you leave early." },
                         { component: "Total compensation", meaning: "Base + per diem + profit sharing + 401k + benefits", caveat: "Can exceed $400,000/yr for senior major-airline captains. Not representative of a new entrant." },
                       ].map((row, i) => (
@@ -168,7 +192,7 @@ const PilotSalaryUSA = () => {
                 </table>
               </div>
               <p className="text-xs" style={{ color: "oklch(0.45 0.04 240)" }}>
-                Source: <a href="https://atpflightschool.com/become-a-pilot/airline-career/commercial-pilot-salary.html" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>ATP Flight School salary data</a> and <a href="https://www.alpa.org/" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>ALPA</a>, June 2026. Verify current figures directly.
+                Source: <a href="https://www.alpa.org/advancing-aviation/future-of-the-profession/become-a-pilot/career-outlook/pay-and-benefits" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>ALPA Pay &amp; Benefits</a> and <a href="https://atpflightschool.com/become-a-pilot/airline-career/commercial-pilot-salary.html" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>ATP Flight School salary data</a>, June 2026. Verify current figures directly.
               </p>
             </>
           ),
@@ -178,44 +202,38 @@ const PilotSalaryUSA = () => {
           content: (
             <>
               <p>
-                Major airline first officer salaries are governed by collective bargaining agreements negotiated by pilot unions (ALPA at most carriers, SWAPA at Southwest). The following figures represent approximate 2026 base pay ranges for first officers at the major US carriers. <strong>These are base pay only</strong> — per diem, profit sharing, and 401(k) contributions add substantially to total compensation.
+                Major airline first officer salaries are governed by collective bargaining agreements negotiated by pilot unions (ALPA at most carriers, SWAPA at Southwest). The following figures represent approximate 2026 base pay for first officers at the major US carriers, derived from current CBA hourly rates at 900 guaranteed credit hours per year. <strong>These are base pay only</strong> — per diem, profit sharing, and 401(k) contributions add substantially to total compensation.
               </p>
               <div className="overflow-x-auto my-6 rounded-xl" style={{ border: "1px solid oklch(1 0 0 / 0.08)" }}>
                 <table className="w-full text-sm">
                   <thead>
                     <tr style={{ background: "oklch(0.16 0.09 250)", borderBottom: "1px solid oklch(1 0 0 / 0.1)" }}>
-                      <th className="text-left px-4 py-3 font-semibold text-white">Airline</th>
-                      <th className="text-left px-4 py-3 font-semibold text-white">Year 1 FO (base)</th>
-                      <th className="text-left px-4 py-3 font-semibold text-white">Year 5 FO (base)</th>
-                      <th className="text-left px-4 py-3 font-semibold text-white">Year 10 FO (base)</th>
+                      <th className="text-left px-4 py-3 font-semibold text-white">Airline / Source</th>
+                      <th className="text-left px-4 py-3 font-semibold text-white">Role</th>
+                      <th className="text-left px-4 py-3 font-semibold text-white">Salary Range (base)</th>
+                      <th className="text-left px-4 py-3 font-semibold text-white">Pay Basis</th>
                       <th className="text-left px-4 py-3 font-semibold text-white">Confidence</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {[
-                      { airline: "Delta Air Lines", y1: "$100,000", y5: "$145,000", y10: "$185,000", conf: "medium" },
-                      { airline: "United Airlines", y1: "$95,000", y5: "$140,000", y10: "$180,000", conf: "medium" },
-                      { airline: "American Airlines", y1: "$90,000", y5: "$135,000", y10: "$175,000", conf: "medium" },
-                      { airline: "Southwest Airlines", y1: "$85,000", y5: "$130,000", y10: "$170,000", conf: "medium" },
-                      { airline: "Alaska Airlines", y1: "$80,000", y5: "$125,000", y10: "$160,000", conf: "medium" },
-                      { airline: "FedEx Express", y1: "$105,000", y5: "$155,000", y10: "$195,000", conf: "medium" },
-                      { airline: "UPS Airlines", y1: "$100,000", y5: "$150,000", y10: "$190,000", conf: "medium" },
-                    ].map((row, i) => (
+                    {US_FO_ROWS.map((row, i) => (
                       <tr key={i} style={{ borderBottom: "1px solid oklch(1 0 0 / 0.06)", background: i % 2 === 0 ? "transparent" : "oklch(1 0 0 / 0.02)" }}>
-                        <td className="px-4 py-3 font-medium text-white">{row.airline}</td>
-                        <td className="px-4 py-3 font-semibold" style={{ color: "oklch(0.85 0.15 65)" }}>{row.y1}</td>
-                        <td className="px-4 py-3" style={{ color: "oklch(0.7 0.04 240)" }}>{row.y5}</td>
-                        <td className="px-4 py-3" style={{ color: "oklch(0.7 0.04 240)" }}>{row.y10}</td>
-                        <td className="px-4 py-3">
-                          <span className="inline-flex px-2 py-0.5 rounded-full text-xs font-medium" style={{ background: "oklch(0.72 0.18 65 / 0.12)", color: "oklch(0.8 0.18 65)" }}>Medium</span>
+                        <td className="px-4 py-3 font-medium text-white">
+                          <a href={row.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.75 0.12 240)" }}>
+                            {row.airlineOrSource}
+                          </a>
                         </td>
+                        <td className="px-4 py-3" style={{ color: "oklch(0.7 0.04 240)" }}>{row.role}</td>
+                        <td className="px-4 py-3 font-semibold" style={{ color: "oklch(0.85 0.15 65)" }}>{row.salaryRange}</td>
+                        <td className="px-4 py-3 text-xs" style={{ color: "oklch(0.65 0.04 240)" }}>{row.payBasis}</td>
+                        <td className="px-4 py-3">{confidenceBadge()}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
               <p className="text-xs mb-4" style={{ color: "oklch(0.45 0.04 240)" }}>
-                Indicative ranges based on publicly reported CBA data and ATP Flight School salary data (June 2026). Base pay only — does not include per diem, profit sharing, or 401(k). Verify current pay scales via <a href="https://www.alpa.org/" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>ALPA</a> or airline careers pages before relying on any figure.
+                Annual figures derived from current CBA hourly rates × 900 guaranteed credit hours/year. Base pay only — does not include per diem, profit sharing, or 401(k). Sources: <a href="https://www.alpa.org/advancing-aviation/future-of-the-profession/become-a-pilot/career-outlook/pay-and-benefits" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>ALPA Pay &amp; Benefits</a> and <a href="https://airmappr.com/articles/career/pilot-salary-usa" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>Airmappr US Pilot Salary Guide 2026</a> (citing ALPA/APA/SWAPA CBA rates). Verify current pay scales via ALPA or airline careers pages before relying on any figure.
               </p>
               <p>
                 These figures are base pay only. Per diem, profit sharing, and 401(k) contributions add substantially to total compensation. Delta's profit sharing has historically added $15,000 to $40,000 per year for first officers. Southwest's profit sharing has been similarly generous in profitable years.
@@ -228,41 +246,38 @@ const PilotSalaryUSA = () => {
           content: (
             <>
               <p>
-                Captain salaries at major US airlines represent some of the highest compensation packages in any profession. The following figures represent approximate 2026 base pay for captains at major carriers. <strong>These are base pay only</strong> — total compensation including per diem, profit sharing, and 401(k) is materially higher.
+                Captain salaries at major US airlines represent some of the highest compensation packages in any profession. The following figures represent approximate 2026 base pay for captains at major carriers, derived from current CBA hourly rates at 900 guaranteed credit hours per year. <strong>These are base pay only</strong> — total compensation including per diem, profit sharing, and 401(k) is materially higher.
               </p>
               <div className="overflow-x-auto my-6 rounded-xl" style={{ border: "1px solid oklch(1 0 0 / 0.08)" }}>
                 <table className="w-full text-sm">
                   <thead>
                     <tr style={{ background: "oklch(0.16 0.09 250)", borderBottom: "1px solid oklch(1 0 0 / 0.1)" }}>
-                      <th className="text-left px-4 py-3 font-semibold text-white">Airline</th>
-                      <th className="text-left px-4 py-3 font-semibold text-white">Year 1 Captain (base)</th>
-                      <th className="text-left px-4 py-3 font-semibold text-white">Senior Captain (base)</th>
+                      <th className="text-left px-4 py-3 font-semibold text-white">Airline / Source</th>
+                      <th className="text-left px-4 py-3 font-semibold text-white">Role</th>
+                      <th className="text-left px-4 py-3 font-semibold text-white">Salary Range (base)</th>
+                      <th className="text-left px-4 py-3 font-semibold text-white">Pay Basis</th>
                       <th className="text-left px-4 py-3 font-semibold text-white">Confidence</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {[
-                      { airline: "Delta Air Lines", y1: "$200,000", senior: "$320,000+", conf: "medium" },
-                      { airline: "United Airlines", y1: "$195,000", senior: "$310,000+", conf: "medium" },
-                      { airline: "American Airlines", y1: "$185,000", senior: "$295,000+", conf: "medium" },
-                      { airline: "Southwest Airlines", y1: "$180,000", senior: "$285,000+", conf: "medium" },
-                      { airline: "FedEx Express", y1: "$220,000", senior: "$360,000+", conf: "medium" },
-                      { airline: "UPS Airlines", y1: "$215,000", senior: "$350,000+", conf: "medium" },
-                    ].map((row, i) => (
+                    {US_CAPTAIN_ROWS.map((row, i) => (
                       <tr key={i} style={{ borderBottom: "1px solid oklch(1 0 0 / 0.06)", background: i % 2 === 0 ? "transparent" : "oklch(1 0 0 / 0.02)" }}>
-                        <td className="px-4 py-3 font-medium text-white">{row.airline}</td>
-                        <td className="px-4 py-3 font-semibold" style={{ color: "oklch(0.85 0.15 65)" }}>{row.y1}</td>
-                        <td className="px-4 py-3 font-semibold" style={{ color: "oklch(0.85 0.15 65)" }}>{row.senior}</td>
-                        <td className="px-4 py-3">
-                          <span className="inline-flex px-2 py-0.5 rounded-full text-xs font-medium" style={{ background: "oklch(0.72 0.18 65 / 0.12)", color: "oklch(0.8 0.18 65)" }}>Medium</span>
+                        <td className="px-4 py-3 font-medium text-white">
+                          <a href={row.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.75 0.12 240)" }}>
+                            {row.airlineOrSource}
+                          </a>
                         </td>
+                        <td className="px-4 py-3" style={{ color: "oklch(0.7 0.04 240)" }}>{row.role}</td>
+                        <td className="px-4 py-3 font-semibold" style={{ color: "oklch(0.85 0.15 65)" }}>{row.salaryRange}</td>
+                        <td className="px-4 py-3 text-xs" style={{ color: "oklch(0.65 0.04 240)" }}>{row.payBasis}</td>
+                        <td className="px-4 py-3">{confidenceBadge()}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
               <p className="text-xs mb-4" style={{ color: "oklch(0.45 0.04 240)" }}>
-                Indicative ranges based on publicly reported CBA data (June 2026). Base pay only. Verify current pay scales via <a href="https://www.alpa.org/" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>ALPA</a> or airline careers pages.
+                Annual figures derived from current CBA hourly rates × 900 guaranteed credit hours/year. Base pay only. Sources: <a href="https://www.alpa.org/advancing-aviation/future-of-the-profession/become-a-pilot/career-outlook/pay-and-benefits" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>ALPA Pay &amp; Benefits</a> and <a href="https://airmappr.com/articles/career/pilot-salary-usa" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>Airmappr US Pilot Salary Guide 2026</a>. Verify via ALPA or airline careers pages.
               </p>
               <p>
                 FedEx and UPS captain salaries are among the highest in the industry because cargo operations often involve less desirable schedules (night flying, weekends, holidays) and the unions have negotiated premium compensation accordingly. Total compensation for senior FedEx and UPS captains, including per diem, profit sharing, and benefits, can exceed $400,000 per year — but this reflects senior widebody captains, not new entrants.
@@ -292,8 +307,8 @@ const PilotSalaryUSA = () => {
                       { stage: "Flight training (PPL → CFI)", timeline: "Years 0–2", pay: "$30,000–$50,000/yr as CFI", variables: "Training cost, loan terms, time to 1,500 hours" },
                       { stage: "Regional FO", timeline: "Years 2–4", pay: "$85,000–$130,000/yr", variables: "Airline, contract, base, signing bonus terms" },
                       { stage: "Regional captain or major FO hire", timeline: "Years 4–6", pay: "$90,000–$180,000/yr", variables: "Fleet growth, retirements, hiring cycle" },
-                      { stage: "Major airline FO", timeline: "Years 6–12", pay: "$100,000–$185,000/yr (base)", variables: "Seniority, fleet, base, credit hours" },
-                      { stage: "Major airline captain", timeline: "Years 12–20+", pay: "$200,000–$320,000+/yr (base)", variables: "Seniority, fleet, airline, contract year" },
+                      { stage: "Major airline FO", timeline: "Years 6–12", pay: "$106,000–$300,000/yr (base)", variables: "Seniority, fleet, base, credit hours" },
+                      { stage: "Major airline captain", timeline: "Years 12–20+", pay: "$262,000–$419,000+/yr (base)", variables: "Seniority, fleet, airline, contract year" },
                     ].map((row, i) => (
                       <tr key={i} style={{ borderBottom: "1px solid oklch(1 0 0 / 0.06)", background: i % 2 === 0 ? "transparent" : "oklch(1 0 0 / 0.02)" }}>
                         <td className="px-4 py-3 font-medium text-white align-top">{row.stage}</td>
@@ -334,7 +349,7 @@ const PilotSalaryUSA = () => {
                     {[
                       { component: "Per diem", value: "$8,000–$15,000/yr", caveat: "Paid at $2.00–$3.50/hr away from base. Largely tax-advantaged. Varies by airline and contract." },
                       { component: "Profit sharing", value: "$10,000–$50,000/yr (profitable years)", caveat: "Not guaranteed. Delta, Southwest, Alaska have historically paid 5–15% of eligible earnings. Zero in loss years." },
-                      { component: "401(k) employer contribution", value: "$15,000–$50,000/yr equivalent", caveat: "Most major airlines contribute 15–17% of base pay. Vesting schedule applies." },
+                      { component: "401(k) employer contribution", value: "$15,000–$50,000/yr equivalent", caveat: "Most major airlines contribute 15–20% of base pay. Delta, United, and American each contribute 18% from 2026. Southwest contributes 20%. Vesting schedule applies." },
                       { component: "Signing bonus", value: "$10,000–$75,000 (one-time)", caveat: "Not always available. Changes with staffing needs. May have repayment obligation if you leave early." },
                       { component: "Travel benefits", value: "Thousands of dollars/yr in equivalent value", caveat: "Free and discounted travel for pilot and immediate family. Value depends on how much you use it." },
                     ].map((row, i) => (
@@ -350,7 +365,7 @@ const PilotSalaryUSA = () => {
               <div className="p-4 rounded-xl mt-4" style={{ background: "oklch(0.16 0.06 250)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
                 <p className="text-sm font-semibold mb-2 text-white">Update schedule for this guide</p>
                 <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>
-                  Salary data in this guide is reviewed when new collective bargaining agreements are publicly reported or when ALPA publishes updated pay scale data. This guide was last reviewed in <strong className="text-white">June 2026</strong>. For the most current pay scales, consult <a href="https://www.alpa.org/" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>ALPA.org</a> or the relevant airline's careers page directly.
+                  Salary data in this guide is reviewed when new collective bargaining agreements are publicly reported or when ALPA publishes updated pay scale data. This guide was last reviewed in <strong className="text-white">June 2026</strong>. For the most current pay scales, consult <a href="https://www.alpa.org/advancing-aviation/future-of-the-profession/become-a-pilot/career-outlook/pay-and-benefits" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>ALPA Pay &amp; Benefits</a> or the relevant airline's careers page directly.
                 </p>
               </div>
             </>
