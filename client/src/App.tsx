@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { HelmetProvider } from "react-helmet-async";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch, useLocation } from "wouter";
+import { Route, Switch, Redirect, useLocation } from "wouter";
 import { useEffect } from "react";
 import { initAnalytics } from "./lib/analytics";
 import { usePageTracking } from "./hooks/usePageTracking";
@@ -33,13 +33,8 @@ import Results from "./pages/Results";
 import Schools from "./pages/Schools";
 import Calculator from "./pages/Calculator";
 import GuidesIndex from "./pages/GuidesIndex";
-import GuidesIndexUS from "./pages/GuidesIndexUS";
-import GuidesIndexAustralia from "./pages/GuidesIndexAustralia";
-import GuidesIndexCanada from "./pages/GuidesIndexCanada";
-import GuidesIndexEurope from "./pages/GuidesIndexEurope";
-import GuidesIndexNewZealand from "./pages/GuidesIndexNewZealand";
-import GuidesIndexSouthAfrica from "./pages/GuidesIndexSouthAfrica";
-import GuidesIndexUAE from "./pages/GuidesIndexUAE";
+// Regional guide index pages merged into unified GuidesIndex (country-aware)
+// Old separate pages kept on disk but no longer routed
 
 // Guide pages
 import HowToBecomePilot from "./pages/guides/HowToBecomePilot";
@@ -304,6 +299,12 @@ import FlightSchoolsHub from "./pages/hubs/FlightSchoolsHub";
 // Initialise PostHog analytics once on app load
 initAnalytics();
 
+// Sets country in localStorage then redirects to /guides so the unified index shows the right region
+function CountryRedirect({ country, to }: { country: string; to: string }) {
+  if (country) localStorage.setItem("aviatoriq_country", country);
+  return <Redirect to={to} />;
+}
+
 function ScrollToTop() {
   const [location] = useLocation();
   useEffect(() => {
@@ -441,7 +442,7 @@ function Router() {
       <Route path="/us/calculator" component={CalculatorUS} />
       <Route path="/us/roadmap" component={RoadmapGeneratorUS} />
       <Route path="/us/partner" component={PartnerUS} />
-      <Route path="/us/guides" component={GuidesIndexUS} />
+      <Route path="/us/guides"><CountryRedirect country="us" to="/guides" /></Route>
       <Route path="/us/guides/how-to-become-a-pilot" component={HowToBecomePilotUS} />
       <Route path="/us/guides/part-61-vs-141" component={Part61Vs141} />
       <Route path="/us/guides/faa-medical-requirements" component={FaaMedicalGuide} />
@@ -593,13 +594,13 @@ function Router() {
       <Route path="/us/guides/airline-interview-prep" component={AirlineInterviewPrepUSA} />
       <Route path="/guides/pilot-lifestyle-uk" component={PilotLifestyleUK} />
       <Route path="/uae/guides/how-to-become-a-pilot-uae" component={HowToBecomePilotUAE} />
-      {/* Regional guide index pages */}
-      <Route path="/australia/guides" component={GuidesIndexAustralia} />
-      <Route path="/canada/guides" component={GuidesIndexCanada} />
-      <Route path="/europe/guides" component={GuidesIndexEurope} />
-      <Route path="/new-zealand/guides" component={GuidesIndexNewZealand} />
-      <Route path="/south-africa/guides" component={GuidesIndexSouthAfrica} />
-      <Route path="/uae/guides" component={GuidesIndexUAE} />
+      {/* Regional guide index pages — redirect to unified /guides with country pre-set */}
+      <Route path="/australia/guides"><CountryRedirect country="australia" to="/guides" /></Route>
+      <Route path="/canada/guides"><CountryRedirect country="canada" to="/guides" /></Route>
+      <Route path="/europe/guides"><CountryRedirect country="europe" to="/guides" /></Route>
+      <Route path="/new-zealand/guides"><CountryRedirect country="new-zealand" to="/guides" /></Route>
+      <Route path="/south-africa/guides"><CountryRedirect country="south-africa" to="/guides" /></Route>
+      <Route path="/uae/guides"><CountryRedirect country="uae" to="/guides" /></Route>
       {/* Missing US guide route */}
       <Route path="/us/guides/us-pilot-shortage-2026" component={UsPilotShortage2026} />
       {/* Hub pages */}
