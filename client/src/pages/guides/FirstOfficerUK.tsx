@@ -6,7 +6,7 @@ const FirstOfficerUK = () => {
     <GuideLayout
       title="How to Become a First Officer at a UK Airline: The Complete 2026 Guide"
       subtitle="A practical guide to navigating the path to a First Officer role in the UK, covering qualifications, training, costs, and career progression."
-      canonical="/guides/first-officer-uk"
+      canonical="https://aviatoriq.com/guides/first-officer-uk"
       metaDescription="How to become a UK airline first officer in 2026: licence requirements, hours, MCC/JOC, type ratings, applications and first job routes."
       faqSchema={[
         {

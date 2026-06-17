@@ -6,8 +6,8 @@ const GiBillFlightTraining = () => {
     <GuideLayout
       title="Using the GI Bill for Flight School: What Veterans Need to Know in 2026"
       subtitle="A comprehensive guide for U.S. veterans navigating their education benefits for pilot training."
-      canonical="/us/guides/gi-bill-flight-training"
-      metaDescription="Discover how to use your GI Bill for flight school in 2026. Learn about eligible chapters, VA-approved Part 141 schools, covered costs, BAH, application process, and common mistakes to avoid."
+      canonical="https://aviatoriq.com/us/guides/gi-bill-flight-training"
+      metaDescription="Discover how to use your GI Bill for flight school in 2026. Learn about eligible chapters, VA-approved Part 141 schools, covered costs, BAH, application proc..."
       faqSchema={[
         {
           question: "Can I use my GI Bill for private pilot training?",

@@ -7,7 +7,7 @@ export default function IntegratedVsModularCost() {
     <GuideLayout
       title="Integrated vs Modular ATPL: Which is Actually Cheaper? (2026)"
       subtitle="A brutally honest cost comparison of the two main routes to a commercial pilot licence — including the hidden costs that marketing materials never mention."
-      canonical="/guides/integrated-vs-modular-cost"
+      canonical="https://aviatoriq.com/guides/integrated-vs-modular-cost"
       metaDescription="Integrated vs modular ATPL cost comparison 2026. Integrated: £80k-£130k. Modular: £55k-£85k. But the real difference is smaller than you think. Full breakdown."
       readTime="11 min read"
       lastUpdated="June 2026"

@@ -7,8 +7,8 @@ export default function PilotShortageUK() {
     <GuideLayout
       title="The UK Pilot Shortage: What It Means for Aspiring Pilots in 2026"
       subtitle="Is the pilot shortage real? We break down the 2026 data from the CAA, BALPA, and Boeing to show what the hiring market actually looks like for new commercial pilots."
-      canonical="/guides/uk-pilot-shortage-2026"
-      metaDescription="Is there a pilot shortage in the UK in 2026? Yes. Read the data on mandatory retirements, airline fleet expansion, and how it affects your career timeline and salary."
+      canonical="https://aviatoriq.com/guides/uk-pilot-shortage-2026"
+      metaDescription="Is there a pilot shortage in the UK in 2026? Yes. Read the data on mandatory retirements, airline fleet expansion, and how it affects your career timeline an..."
       readTime="10 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-shortage_9d4c2b8e.jpg"

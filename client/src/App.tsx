@@ -572,7 +572,6 @@ function Router() {
       <Route path="/us/guides/airline-interview-prep" component={AirlineInterviewPrepUSA} />
       <Route path="/guides/pilot-lifestyle-uk" component={PilotLifestyleUK} />
       <Route path="/uae/guides/how-to-become-a-pilot-uae" component={HowToBecomePilotUAE} />
-      <Route path="/uae/guides/uae-pilot-training-costs" component={UaePilotTrainingCosts} />
       {/* 404 */}
       <Route path="/404" component={NotFound} />
       <Route path="*" component={NotFound} />

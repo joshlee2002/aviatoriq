@@ -10,7 +10,13 @@ export default function BestFlightSchoolsNewZealand() {
       authorRole="Aviation Research Team"
       lastUpdated="June 2026"
       category="Flight Schools"
-      canonical="/new-zealand/guides/best-flight-schools-new-zealand"
+      canonical="https://aviatoriq.com/new-zealand/guides/best-flight-schools-new-zealand"
+      metaDescription="Best flight schools in New Zealand 2026: compare CAA NZ-approved ATOs for CPL and ATPL training, including costs, locations, and airline career pathways."
+      faqSchema={[
+        { question: "Do I need a Part 141 ATO to get a CPL in New Zealand?", answer: "Yes. To train for a Commercial Pilot Licence (CPL) or Multi-Engine Instrument Rating in New Zealand, your flight school must hold a Part 141 Aviation Training Organisation (ATO) certificate issued by the Civil Aviation Authority of New Zealand (CAA NZ)." },
+        { question: "Can I get a student loan for flight training in New Zealand?", answer: "Yes, but only for approved NZQA-accredited courses (such as the New Zealand Diploma in Aviation). Not all flight schools offer NZQA-accredited programmes, so you must verify this before enrolling if you require a StudyLink loan." },
+        { question: "Which is the best flight school in New Zealand?", answer: "There is no single 'best' school. The right choice depends on your budget, location, and career goals. Massey University offers an integrated degree pathway; Southern Wings offers strong airline partnerships; and Canterbury Aero Club offers cost-effective modular training." },
+      ]}
       ctaText="Find flight schools near me"
       ctaHref="/new-zealand/schools"
       sources={[

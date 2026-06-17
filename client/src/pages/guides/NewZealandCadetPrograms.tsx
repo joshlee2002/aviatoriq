@@ -12,7 +12,7 @@ export default function NewZealandCadetPrograms() {
       lastUpdated="June 2026"
       category="Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-cadet-programs"
-      metaDescription="Explore New Zealand's pilot cadet programs, including Air New Zealand's Mangōpare, and independent training pathways for 2026. Detailed insights on regulations, costs, and career opportunities."
+      metaDescription="Explore New Zealand's pilot cadet programs, including Air New Zealand's Mangōpare, and independent training pathways for 2026. Detailed insights on regulatio..."
       ctaText="Check your cadet eligibility"
       ctaHref="/tools/cadet-eligibility"
       sections={[

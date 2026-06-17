@@ -7,7 +7,7 @@ export default function PilotAptitudeTestPrep() {
     <GuideLayout
       title="Pilot Aptitude Test Preparation: How to Prepare in 2026"
       subtitle="A practical guide to preparing for PILAPT, Compass, and Cut-e tests. What they measure, how to prepare, and why natural ability is not enough."
-      canonical="/guides/pilot-aptitude-test-preparation"
+      canonical="https://aviatoriq.com/guides/pilot-aptitude-test-preparation"
       metaDescription="Pilot aptitude test preparation 2026. How to prepare for PILAPT, Compass, and Cut-e. Free resources, practice strategies, and what airlines are actually testing."
       readTime="11 min read"
       lastUpdated="June 2026"

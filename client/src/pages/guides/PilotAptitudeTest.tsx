@@ -7,7 +7,7 @@ export default function PilotAptitudeTest() {
     <GuideLayout
       title="Pilot Aptitude Tests UK 2026: Free Preparation Guide"
       subtitle="What the tests actually measure, how they work, and how to prepare — without paying £200+ for a prep course."
-      canonical="/guides/pilot-aptitude-test-uk"
+      canonical="https://aviatoriq.com/guides/pilot-aptitude-test-uk"
       metaDescription="Pilot aptitude tests UK 2026: what airlines test, common assessment types, preparation plan, practice tips and mistakes to avoid."
       readTime="11 min read"
       lastUpdated="June 2026"

@@ -12,7 +12,7 @@ export default function NzMedicalClass1() {
       lastUpdated="January 2026"
       category="Medical Certification"
       canonical="https://aviatoriq.com/new-zealand/guides/nz-medical-class-1"
-      metaDescription="Comprehensive guide to obtaining a New Zealand CAA Class 1 Medical Certificate in 2026. Learn about requirements, costs, the application process, and medical standards."
+      metaDescription="Comprehensive guide to obtaining a New Zealand CAA Class 1 Medical Certificate in 2026. Learn about requirements, costs, the application process, and medical..."
       ctaText="Check your medical condition"
       ctaHref="/tools/medical-condition-lookup"
       sections={[

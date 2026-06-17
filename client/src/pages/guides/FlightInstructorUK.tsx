@@ -6,7 +6,7 @@ const FlightInstructorUK = () => {
     <GuideLayout
       title="How to Become a Flight Instructor in the UK"
       subtitle="The Flight Instructor rating is the most practical way to build hours toward an airline career. Here is what it costs, what it pays, and how long it takes."
-      canonical="/guides/flight-instructor-uk"
+      canonical="https://aviatoriq.com/guides/flight-instructor-uk"
       metaDescription="How to become a flight instructor in the UK in 2026: FI rating requirements, cost, pay, hours, career value and airline progression."
       faqSchema={[
         {

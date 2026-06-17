@@ -6,7 +6,7 @@ const MccJocUK = () => {
     <GuideLayout
       title="MCC & JOC Course UK: Cost, APS MCC & Airline Value"
       subtitle="Multi-Crew Cooperation (MCC) and Jet Orientation Course (JOC) training in the UK, covering UK CAA requirements, costs, APS MCC options and career relevance."
-      canonical="/guides/mcc-joc-uk"
+      canonical="https://aviatoriq.com/guides/mcc-joc-uk"
       metaDescription="MCC and JOC courses UK 2026: compare MCC, JOC and APS MCC, costs, timing, airline value, provider choice and when to book."
       faqSchema={[
         {

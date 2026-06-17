@@ -12,7 +12,7 @@ export default function AustraliaMilitaryToAirlines() {
       lastUpdated="June 2026"
       category="Military to Commercial Transition"
       canonical="https://aviatoriq.com/australia/guides/australia-military-to-airlines"
-      metaDescription="Comprehensive guide for Australian military pilots transitioning to commercial airlines. Covers CASA regulations, ATPL conversion, costs, and employment prospects in 2026."
+      metaDescription="Comprehensive guide for Australian military pilots transitioning to commercial airlines. Covers CASA regulations, ATPL conversion, costs, and employment pros..."
       ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[

@@ -7,8 +7,8 @@ export default function AirlineInterview() {
     <GuideLayout
       title="Airline Pilot Interview Guide: What to Expect in 2026"
       subtitle="The complete guide to UK airline selection — aptitude tests, group exercises, simulator assessments, and panel interviews. What assessors actually look for."
-      canonical="/guides/airline-pilot-interview"
-      metaDescription="Airline pilot interview guide 2026. Aptitude tests (PILAPT, Compass), group exercises, simulator assessments, and panel interviews. What UK airlines actually look for."
+      canonical="https://aviatoriq.com/guides/airline-pilot-interview"
+      metaDescription="Airline pilot interview guide 2026. Aptitude tests (PILAPT, Compass), group exercises, simulator assessments, and panel interviews. What UK airlines actually..."
       readTime="12 min read"
       lastUpdated="June 2026"
       category="UK Pilot Careers"

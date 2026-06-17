@@ -7,8 +7,8 @@ export default function PilotTrainingOver40() {
     <GuideLayout
       title="Pilot Training Over 40: Is It Worth It? A Realistic Guide for 2026"
       subtitle="The honest numbers on ROI, medical considerations, and career length for pilots who start training in their 40s."
-      canonical="/guides/pilot-training-over-40"
-      metaDescription="Pilot training over 40 UK 2026. No upper age limit, mandatory retirement at 65. ROI calculation, Class 1 medical changes, and realistic career timeline for older pilots."
+      canonical="https://aviatoriq.com/guides/pilot-training-over-40"
+      metaDescription="Pilot training over 40 UK 2026. No upper age limit, mandatory retirement at 65. ROI calculation, Class 1 medical changes, and realistic career timeline for o..."
       readTime="11 min read"
       lastUpdated="June 2026"
       category="UK Pilot Careers"

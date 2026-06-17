@@ -11,7 +11,7 @@ export default function UsCadetPrograms() {
       lastUpdated="June 2026"
       category="Airline Pathways"
       canonical="https://aviatoriq.com/us/guides/us-cadet-programs"
-      metaDescription="US airline cadet programmes 2026: United Aviate ($111k–$122k), Delta Propel, American Airlines Cadet Academy ($123,995), Southwest Destination 225° (paused). Full comparison, costs, and eligibility."
+      metaDescription="US airline cadet programmes 2026: United Aviate ($111k–$122k), Delta Propel, American Airlines Cadet Academy ($123,995), Southwest Destination 225° (paused)...."
       ctaText="Check your US cadet programme eligibility"
       ctaHref="/quiz"
       faqSchema={[

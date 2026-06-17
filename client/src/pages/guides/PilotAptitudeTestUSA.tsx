@@ -7,7 +7,7 @@ export default function PilotAptitudeTestUSA() {
     <GuideLayout
       title="Pilot Aptitude Tests USA: How to Prepare in 2026"
       subtitle="What US airlines and cadet programmes actually test. How to pass the AFAST, Delta's psychological screening, and United Aviate assessments."
-      canonical="/us/guides/pilot-aptitude-test-usa"
+      canonical="https://aviatoriq.com/us/guides/pilot-aptitude-test-usa"
       metaDescription="Pilot aptitude test USA 2026. How to pass the AFAST, Delta psychological screening, and United Aviate assessments. What US airlines actually test."
       readTime="10 min read"
       lastUpdated="June 2026"

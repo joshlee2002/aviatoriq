@@ -7,7 +7,7 @@ export default function IntegratedVsModular() {
     <GuideLayout
       title="Integrated vs Modular ATPL Training UK 2026: Which Is Right for You?"
       subtitle="An honest, data-driven comparison of the two main routes to an ATPL — including verified 2026 costs, real timelines, airline acceptance, and a decision framework for your situation."
-      canonical="/guides/integrated-vs-modular"
+      canonical="https://aviatoriq.com/guides/integrated-vs-modular"
       metaDescription="Integrated vs modular ATPL training UK 2026: compare cost, timeline, airline recognition, flexibility and which route fits your budget."
       faqSchema={[
         { question: "What is the difference between integrated and modular ATPL training?", answer: "Integrated training is a single full-time programme (18–24 months, £95,880–£119,500) that takes you from zero to frozen ATPL at one academy. Modular training lets you complete each licence stage separately (2–5 years, £77,000–£90,000 in the UK), allowing you to keep working between phases." },

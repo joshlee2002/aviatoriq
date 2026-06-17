@@ -8,7 +8,7 @@ export default function HowToBecomePilotCanada() {
       title="How to Become a Pilot in Canada (2026 Complete Guide)"
       subtitle="The honest, step-by-step guide to Canadian pilot training — Transport Canada requirements, PPL to ATPL, real costs, and building hours in the north."
       canonical="https://aviatoriq.com/canada/guides/how-to-become-a-pilot"
-      metaDescription="How to become an airline pilot in Canada in 2026. Covers Transport Canada licences (PPL, CPL, ATPL), real flight school costs (CAD $80k–$130k), and hour building strategies."
+      metaDescription="How to become an airline pilot in Canada in 2026. Covers Transport Canada licences (PPL, CPL, ATPL), real flight school costs (CAD $80k–$130k), and hour buil..."
       readTime="14 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/airplane-takeoff_6f139e92.jpg"

@@ -7,8 +7,8 @@ export default function AdhdPilotGuide() {
     <GuideLayout
       title="Can I Become a Pilot with ADHD in the UK? (2026 CAA Rules)"
       subtitle="The honest truth about getting a Class 1 Medical with ADHD. CAA rules, medication bans, and the exact steps to prove your fitness to fly."
-      canonical="/guides/adhd-pilot-uk"
-      metaDescription="Can you become a commercial pilot in the UK with ADHD? The 2026 CAA rules explained. Medication bans, neuropsychological testing, and the 4 scenarios for certification."
+      canonical="https://aviatoriq.com/guides/adhd-pilot-uk"
+      metaDescription="Can you become a commercial pilot in the UK with ADHD? The 2026 CAA rules explained. Medication bans, neuropsychological testing, and the 4 scenarios for cer..."
       readTime="11 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/medical-check_8e2a1b9f.jpg"

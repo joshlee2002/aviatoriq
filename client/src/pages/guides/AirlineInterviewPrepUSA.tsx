@@ -10,8 +10,8 @@ export default function AirlineInterviewPrepUSA() {
       readTime="15 min read"
       lastUpdated="June 2026"
       category="US Pilot Careers"
-      canonical="/us/guides/airline-interview-prep"
-      metaDescription="Master the US airline interview process in 2026. Learn how to answer TMAAT behavioral questions, prepare for technical exams, and pass the simulator evaluation for major and regional airlines."
+      canonical="https://aviatoriq.com/us/guides/airline-interview-prep"
+      metaDescription="Master the US airline interview process in 2026. Learn how to answer TMAAT behavioral questions, prepare for technical exams, and pass the simulator evaluati..."
       ctaHref="/us/quiz"
       ctaText="Start your US career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide covers the airline interview process in the United States." globalHref="/guides/airline-interview-prep-uk" globalLabel="View UK guide →" />}

@@ -14,7 +14,7 @@ export default function PilotTrainingCostsUSA() {
       heroImage="/manus-storage/training-costs-usa_3d276236.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/pilot-training-costs-usa"
-      metaDescription="How much does pilot training cost in the USA in 2026? From zero to ATP, expect $80,000–$124,000. See real prices from ATP Flight School, Epic, and Embry-Riddle, plus financing options and ROI breakdown."
+      metaDescription="How much does pilot training cost in the USA in 2026? From zero to ATP, expect $80,000–$124,000. See real prices from ATP Flight School, Epic, and Embry-Ridd..."
       scopeBanner={<GuideScopeBanner scope="This guide covers US pilot training costs in USD (FAA routes). Costs vary significantly by country." usHref="/guides/pilot-training-costs" usLabel="View UK costs →" globalHref="/calculator" globalLabel="Use the cost calculator →" />}
       faqSchema={[
         { question: "How much does it cost to become an airline pilot in the USA?", answer: "In 2026, the total cost to go from zero experience to a Commercial Pilot Certificate with Flight Instructor ratings is $80,000 to $124,000. ATP Flight School's fixed-price Airline Career Pilot Program costs $123,995 from zero experience. Epic Flight Academy's Professional Airline Pilot Program is $83,647 total." },

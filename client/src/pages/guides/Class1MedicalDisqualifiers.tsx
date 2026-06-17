@@ -6,7 +6,7 @@ const Class1MedicalDisqualifiers = () => {
     <GuideLayout
       title="What Disqualifies You From a Class 1 Medical? (UK 2026)"
       subtitle="The complete, honest list of conditions that can fail a CAA Class 1 medical — and which ones are manageable under OML or with treatment."
-      canonical="/guides/class-1-medical-disqualifiers"
+      canonical="https://aviatoriq.com/guides/class-1-medical-disqualifiers"
       metaDescription="UK Class 1 Medical disqualifiers 2026: eyesight, heart, mental health, ADHD, diabetes, deferrals and why CAA cases are individual."
       faqSchema={[
         { question: "What conditions automatically disqualify you from a Class 1 medical?", answer: "Very few cases should be treated as “automatic” without CAA/AeMC assessment. Active psychosis, uncontrolled epilepsy, unstable cardiovascular disease and some insulin-treated diabetes cases are high-risk examples, but the CAA assesses medical evidence, treatment stability, operational limitations and safety risk case by case." },

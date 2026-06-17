@@ -14,7 +14,7 @@ export default function TypeRatingUSA() {
       heroImage="/manus-storage/type-rating-usa_492628c9.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/type-rating-usa"
-      metaDescription="Airline type rating costs in the USA for 2026. A320 costs $32k–$42k. Boeing 737 costs $28k–$38k. Real comparison of self-funded vs airline-sponsored options and training bonds."
+      metaDescription="Airline type rating costs in the USA for 2026. A320 costs $32k–$42k. Boeing 737 costs $28k–$38k. Real comparison of self-funded vs airline-sponsored options..."
       scopeBanner={<><GuideScopeBanner scope="This guide covers FAA type ratings in the USA. UK/EASA type ratings work differently." usHref="/guides/pilot-type-rating-uk" usLabel="View UK type rating guide →" /></>}
       faqSchema={[
         { question: "How much does an A320 type rating cost in the USA?", answer: "A self-funded Airbus A320 type rating in the USA typically costs $32,000–$42,000 in 2026. This covers ground school, simulator time, and the checkride. It does not include travel, accommodation, or retake fees if required." },

@@ -6,7 +6,7 @@ export default function PilotTrainingCosts() {
     <GuideLayout
       title="Pilot Training Costs UK 2026: The Complete Breakdown"
       subtitle="Every cost involved in becoming a UK airline pilot — integrated vs modular, hidden costs, overseas options, financing, and the real total you need to budget for."
-      canonical="/guides/pilot-training-costs"
+      canonical="https://aviatoriq.com/guides/pilot-training-costs"
       metaDescription="Pilot training costs UK 2026: integrated vs modular ATPL prices, hidden fees, type ratings, finance risks and realistic route-by-route budgets."
       readTime="15 min read"
       lastUpdated="June 2026"

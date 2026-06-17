@@ -6,8 +6,8 @@ const PplRequirementsUSA = () => {
     <GuideLayout
       title="Private Pilot License (PPL) Requirements USA: Cost, Hours & How to Get Started"
       subtitle="Everything you need to know about getting your FAA Private Pilot Certificate — minimum hours, real costs, medical requirements, and how long it actually takes."
-      canonical="/us/guides/ppl-requirements-usa"
-      metaDescription="Discover everything you need to know about obtaining your Private Pilot License (PPL) in the USA, including FAA Part 61 and Part 141 requirements, flight hours, typical costs, medical certificate details, and the path to becoming a certified private pilot."
+      canonical="https://aviatoriq.com/us/guides/ppl-requirements-usa"
+      metaDescription="Discover everything you need to know about obtaining your Private Pilot License (PPL) in the USA, including FAA Part 61 and Part 141 requirements, flight hou..."
       faqSchema={[
         {
           question: "What are the minimum flight hours required for a PPL in the USA?",

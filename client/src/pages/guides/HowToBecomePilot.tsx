@@ -7,7 +7,7 @@ const HowToBecomePilot = () => {
     <GuideLayout
       title="How to Become a Pilot in the UK (2026 Complete Guide)"
       subtitle="The honest, step-by-step guide to UK pilot training — routes, costs, timelines, medical requirements, and how to get your first airline job. Updated for 2026."
-      canonical="/guides/how-to-become-a-pilot"
+      canonical="https://aviatoriq.com/guides/how-to-become-a-pilot"
       metaDescription="How to become a pilot in the UK in 2026: Class 1 medical, integrated vs modular ATPL, cadet options, costs, timeline and first airline job steps."
       readTime="14 min read"
       lastUpdated="June 2026"

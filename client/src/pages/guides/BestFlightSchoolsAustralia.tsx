@@ -10,7 +10,7 @@ export default function BestFlightSchoolsAustralia() {
       readTime="12 min read"
       lastUpdated="June 2026"
       category="Australia Pilot Training"
-      canonical="/australia/guides/best-flight-schools-australia"
+      canonical="https://aviatoriq.com/australia/guides/best-flight-schools-australia"
       metaDescription="Discover the best flight schools in Australia for 2026. Compare university programs like UNSW and RMIT with private academies like Flight Training Adelaide and CAE."
       ctaHref="/schools"
       ctaText="Browse the full school directory"

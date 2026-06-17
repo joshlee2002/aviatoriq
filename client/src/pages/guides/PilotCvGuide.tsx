@@ -7,7 +7,7 @@ export default function PilotCvGuide() {
     <GuideLayout
       title="Pilot CV & Cover Letter Guide 2026"
       subtitle="Many pilot CVs fail at the first stage — not because of poor flying, but because of poor presentation. Here is exactly how to structure an aviation CV that passes screening and gets you to the next round."
-      canonical="/guides/pilot-cv-cover-letter"
+      canonical="https://aviatoriq.com/guides/pilot-cv-cover-letter"
       metaDescription="Pilot CV and cover letter guide for 2026: format, logbook details, airline screening tips, examples and mistakes to avoid."
       readTime="7 min read"
       heroImage="/manus-storage/pilot-cv_e66193e2.jpg"

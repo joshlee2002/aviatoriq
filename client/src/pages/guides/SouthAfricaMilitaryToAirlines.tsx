@@ -12,7 +12,7 @@ export default function SouthAfricaMilitaryToAirlines() {
       lastUpdated="January 2026"
       category="Career Transition"
       canonical="https://aviatoriq.com/south-africa/guides/military-to-airlines"
-      metaDescription="A detailed guide for South African Air Force (SAAF) pilots transitioning to commercial airlines, covering SACAA regulations, training costs, and career prospects in 2026."
+      metaDescription="A detailed guide for South African Air Force (SAAF) pilots transitioning to commercial airlines, covering SACAA regulations, training costs, and career prosp..."
       ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[

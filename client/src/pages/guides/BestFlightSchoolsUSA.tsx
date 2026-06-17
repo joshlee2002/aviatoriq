@@ -13,7 +13,7 @@ export default function BestFlightSchoolsUSA() {
       heroImage="/manus-storage/best-schools-usa_9e4f2b7a.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/best-flight-schools-usa"
-      metaDescription="Best flight schools in the USA 2026: ATP Flight School ($123,995), Epic Flight Academy ($83,647), Embry-Riddle ($200k+), CAE, UND, and local Part 61 clubs compared on cost, timeline, and airline placement."
+      metaDescription="Best flight schools in the USA 2026: ATP Flight School ($123,995), Epic Flight Academy ($83,647), Embry-Riddle ($200k+), CAE, UND, and local Part 61 clubs co..."
       faqSchema={[
         { question: "What is the best flight school in the USA?", answer: "The best flight school depends on your goals. ATP Flight School ($123,995) is best for the fastest route to the airlines. Epic Flight Academy ($83,647) is the most affordable accelerated option. Embry-Riddle is best if you want a bachelor's degree alongside your licences. Local Part 61 clubs are cheapest overall but take longer." },
         { question: "How much does ATP Flight School cost in 2026?", answer: "ATP Flight School's Airline Career Pilot Program costs $123,995 from zero experience, or $90,995 if you already hold a Private Pilot Certificate. This fixed price includes checkride fees at select locations (valued at approximately $12,000)." },

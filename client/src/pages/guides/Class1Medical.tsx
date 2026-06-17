@@ -7,7 +7,7 @@ const Class1Medical: React.FC = () => {
     <GuideLayout
       title="UK CAA Class 1 Medical: Complete 2026 Guide"
       subtitle="Everything you need to know about the UK CAA Class 1 Medical Certificate — what it tests, where to get it, what it costs in 2026, what can disqualify you, and the critical post-Brexit dual certificate situation."
-      canonical="/guides/class-1-medical"
+      canonical="https://aviatoriq.com/guides/class-1-medical"
       metaDescription="UK CAA Class 1 Medical 2026: costs, exam process, eyesight, mental health, deferrals, renewals and when to speak to an AME/AeMC."
       faqSchema={[
         { question: "How much does a UK CAA Class 1 medical cost in 2026?", answer: "UK CAA initial Class 1 medical costs: Centreline (London/Gatwick) £1,181 inc VAT; Birmingham AeMC £1,198 inc VAT; Heathrow Medical Services £1,377 inc VAT (combined UK+EASA). Renewals cost £297–£332 at most AMEs. The guide's older figures of £400–£600 are no longer accurate." },

@@ -13,7 +13,7 @@ export default function EuropePilotSalary2026() {
       lastUpdated="June 2026"
       category="European Pilot Careers"
       canonical="https://aviatoriq.com/europe/guides/pilot-salary-europe"
-      metaDescription="Discover the latest 2026 pilot salaries in Europe. Compare Ryanair, Wizz Air, easyJet, and Lufthansa pay scales. Understand base pay vs sector pay across EASA states."
+      metaDescription="Discover the latest 2026 pilot salaries in Europe. Compare Ryanair, Wizz Air, easyJet, and Lufthansa pay scales. Understand base pay vs sector pay across EAS..."
       heroImage="/manus-storage/europe-salary_h8i9j0k1.jpg"
       scopeBanner={<GuideScopeBanner scope="This guide covers commercial airline pilot salaries across EASA member states and the UK." />}
       ctaText="Generate my personalised European roadmap"

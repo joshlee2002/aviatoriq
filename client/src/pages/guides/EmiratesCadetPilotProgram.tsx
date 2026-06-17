@@ -13,7 +13,7 @@ export default function EmiratesCadetPilotProgram() {
       lastUpdated="June 2026"
       category="UAE Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/emirates-cadet-pilot-program"
-      metaDescription="Explore the Emirates Flight Training Academy (EFTA) programmes. Understand the difference between the funded UAE National route and the $160k self-funded International route."
+      metaDescription="Explore the Emirates Flight Training Academy (EFTA) programmes. Understand the difference between the funded UAE National route and the $160k self-funded Int..."
       heroImage="/manus-storage/emirates-cadet_p1q2r3s4.jpg"
       ctaText="Check your cadet eligibility"
       ctaHref="/tools/cadet-eligibility"

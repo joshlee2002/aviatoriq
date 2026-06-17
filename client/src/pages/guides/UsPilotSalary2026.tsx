@@ -11,7 +11,7 @@ export default function UsPilotSalary2026() {
       lastUpdated="June 2026"
       category="Pilot Careers"
       canonical="https://aviatoriq.com/us/guides/us-pilot-salary-2026"
-      metaDescription="US airline pilot salary 2026: Delta, United, American, and Southwest pay scales confirmed. Regional FOs start at $90k–$110k. Major airline captains earn $465,000–$520,000. Full breakdown inside."
+      metaDescription="US airline pilot salary 2026: Delta, United, American, and Southwest pay scales confirmed. Regional FOs start at $90k–$110k. Major airline captains earn $465..."
       ctaText="Get my free US pilot roadmap"
       ctaHref="/us/roadmap"
       faqSchema={[

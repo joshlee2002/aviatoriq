@@ -6,8 +6,8 @@ const CfiCareerUSA = () => {
     <GuideLayout
       title="How to Become a Flight Instructor (CFI) in the USA: Requirements, Salary & Career Path"
       subtitle="Becoming a Certified Flight Instructor in the United States, covering FAA requirements, training, salary expectations, and career progression."
-      canonical="/us/guides/cfi-career-usa"
-      metaDescription="Learn how to become a Flight Instructor (CFI) in the USA. This guide covers FAA requirements, CPL, FOI, FIA tests, CFII/MEI add-ons, salary, hour building, and career paths."
+      canonical="https://aviatoriq.com/us/guides/cfi-career-usa"
+      metaDescription="Learn how to become a Flight Instructor (CFI) in the USA. This guide covers FAA requirements, CPL, FOI, FIA tests, CFII/MEI add-ons, salary, hour building, a..."
       faqSchema={[
         {
           question: "Why is CFI the most common hour-building route in the US?",

@@ -7,7 +7,7 @@ export default function RAFvsCivilian() {
     <GuideLayout
       title="RAF vs Civilian Pilot Training: Which Path Is Right for You?"
       subtitle="An honest comparison of military and civilian routes to a pilot career — costs, timelines, lifestyle, and career outcomes in 2026."
-      canonical="/guides/raf-vs-civilian-pilot-training"
+      canonical="https://aviatoriq.com/guides/raf-vs-civilian-pilot-training"
       metaDescription="RAF vs civilian pilot training 2026. Compare costs (free vs £100k), timelines, lifestyle, career outcomes, and the current RAF training backlog."
       readTime="11 min read"
       lastUpdated="June 2026"

@@ -11,7 +11,7 @@ export default function PorterAirlinesCadet() {
       lastUpdated="January 2026"
       category="Airline Cadet Programs"
       canonical="https://aviatoriq.com/canada/guides/porter-airlines-cadet-program"
-      metaDescription="Navigate the Porter Airlines Cadet Program for 2026. Discover in-depth training modules, precise cost estimations in CAD, stringent eligibility, and a clear career trajectory to a Porter First Officer position."
+      metaDescription="Navigate the Porter Airlines Cadet Program for 2026. Discover in-depth training modules, precise cost estimations in CAD, stringent eligibility, and a clear..."
       ctaText="Check your cadet eligibility"
       ctaHref="/tools/cadet-eligibility"
       sections={[

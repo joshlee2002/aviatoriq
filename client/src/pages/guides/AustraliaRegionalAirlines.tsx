@@ -12,7 +12,7 @@ export default function AustraliaRegionalAirlines() {
       lastUpdated="June 2026"
       category="Australia Pilot Careers"
       canonical="https://aviatoriq.com/australia/guides/australia-regional-airlines"
-      metaDescription="Explore the detailed pathway to becoming a regional airline pilot in Australia, covering CASA regulations, training costs, and airline-specific requirements for 2026."
+      metaDescription="Explore the detailed pathway to becoming a regional airline pilot in Australia, covering CASA regulations, training costs, and airline-specific requirements..."
       ctaText="Get my free US pilot roadmap"
       ctaHref="/us/roadmap"
       sections={[

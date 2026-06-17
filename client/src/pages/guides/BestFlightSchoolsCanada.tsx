@@ -10,7 +10,7 @@ export default function BestFlightSchoolsCanada() {
       readTime="12 min read"
       lastUpdated="June 2026"
       category="Canada Pilot Training"
-      canonical="/canada/guides/best-flight-schools-canada"
+      canonical="https://aviatoriq.com/canada/guides/best-flight-schools-canada"
       metaDescription="Discover the best flight schools in Canada for 2026. Compare university programs like Seneca and Mount Royal with private academies across Ontario, BC, and Alberta."
       ctaHref="/schools"
       ctaText="Browse the full school directory"

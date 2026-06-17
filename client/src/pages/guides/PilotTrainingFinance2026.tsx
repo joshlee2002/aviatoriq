@@ -7,7 +7,7 @@ const PilotTrainingFinance2026 = () => {
     <GuideLayout
       title="How to Finance Pilot Training in the UK (2026 Guide)"
       subtitle="An honest, up-to-date breakdown of every realistic funding option for UK pilot training in 2026 — including what has changed, what no longer exists, and what the monthly repayment reality looks like."
-      canonical="/guides/how-to-finance-pilot-training-uk"
+      canonical="https://aviatoriq.com/guides/how-to-finance-pilot-training-uk"
       metaDescription="How to finance pilot training UK 2026: funded cadets, modular pay-as-you-go, SLC degree routes, specialist loans, savings and risks."
       faqSchema={[
         { question: "Can I get a bank loan for pilot training in the UK in 2026?", answer: "No high-street bank currently offers a dedicated pilot training loan in the UK. BALPA confirmed in 2026 that HSBC, NatWest, and BBVA have all discontinued their professional development loan products for pilot training. The main specialist lender is Lendwise, which offers unsecured loans up to £100,000 at approximately 12.73% APR representative over 10 years, with repayments starting after training ends." },

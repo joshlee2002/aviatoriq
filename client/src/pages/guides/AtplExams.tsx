@@ -7,7 +7,7 @@ export default function AtplExams() {
     <GuideLayout
       title="ATPL Theory Exams UK: Complete Guide 2026"
       subtitle="All 13 ATPL subjects ranked from easiest to hardest, with real pass rates, exam durations, and the study strategies that actually work."
-      canonical="/guides/atpl-theory-exams-uk"
+      canonical="https://aviatoriq.com/guides/atpl-theory-exams-uk"
       metaDescription="Complete guide to the 13 UK CAA/EASA ATPL theory exams. See real pass rates, subject difficulty rankings (Communications to Performance), and study tips."
       readTime="12 min read"
       lastUpdated="June 2026"

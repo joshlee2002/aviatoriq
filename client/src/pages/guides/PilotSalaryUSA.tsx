@@ -6,7 +6,7 @@ const PilotSalaryUSA = () => {
     <GuideLayout
       title="Airline Pilot Salary USA 2026: First Officer & Captain Pay at Every Major Airline"
       subtitle="2026 US airline pilot pay ranges for regional and major airline pilots — what compensation can look like by seat, seniority, contract and airline cycle."
-      canonical="/us/guides/airline-pilot-salary-usa"
+      canonical="https://aviatoriq.com/us/guides/airline-pilot-salary-usa"
       metaDescription="US airline pilot salary guide 2026 with indicative pay ranges for regional FOs, major airline first officers and captains, plus contract and seniority caveats."
       faqSchema={[
         {

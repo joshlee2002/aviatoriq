@@ -7,7 +7,7 @@ export default function BestFlightSchoolsUK() {
     <GuideLayout
       title="Best Flight Schools in the UK 2026: An Honest Comparison"
       subtitle="A data-driven comparison of the UK's top flight training schools — based on published 2026 costs, stated airline links, CAA approval checks and practical fit — with live prices to verify before enrolment."
-      canonical="/guides/best-flight-schools-uk-2026"
+      canonical="https://aviatoriq.com/guides/best-flight-schools-uk-2026"
       metaDescription="Best flight schools UK 2026: compare integrated and modular ATOs by cost, route, location, airline links, methodology and fit."
       readTime="14 min read"
       lastUpdated="June 2026"

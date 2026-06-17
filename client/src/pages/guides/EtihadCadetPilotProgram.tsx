@@ -12,7 +12,7 @@ export default function EtihadCadetPilotProgram() {
       lastUpdated="June 2026"
       category="Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/etihad-cadet-pilot-program"
-      metaDescription="Explore the Etihad Airways Cadet Pilot Program for 2026. Learn about eligibility, the MPL training structure, GCAA regulations, and career opportunities for UAE nationals."
+      metaDescription="Explore the Etihad Airways Cadet Pilot Program for 2026. Learn about eligibility, the MPL training structure, GCAA regulations, and career opportunities for..."
       ctaText="Check your cadet eligibility"
       ctaHref="/tools/cadet-eligibility"
       sections={[

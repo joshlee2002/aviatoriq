@@ -12,7 +12,7 @@ export default function HourBuildingUSA() {
       heroImage="/manus-storage/hour-building-usa_cbbd5703.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/hour-building-usa"
-      metaDescription="Discover effective CFI hour building methods, associated costs, and realistic timelines in the USA for 2026. This guide covers FAA Part 61/141 requirements and strategies to reach 1,500 hours."
+      metaDescription="Discover effective CFI hour building methods, associated costs, and realistic timelines in the USA for 2026. This guide covers FAA Part 61/141 requirements a..."
       scopeBanner={<GuideScopeBanner scope="This guide covers hour building requirements under FAA regulations." />}
       ctaText="Get my free US pilot roadmap"
       ctaHref="/us/roadmap"

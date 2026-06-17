@@ -6,7 +6,7 @@ const BestRouteToAirline = () => {
     <GuideLayout
       title="The Best Route to Becoming an Airline Pilot in 2026"
       subtitle="Which training path gives you the best chance of getting hired by a UK airline — and what airlines actually look for when recruiting."
-      canonical="/guides/best-route-to-airline"
+      canonical="https://aviatoriq.com/guides/best-route-to-airline"
       metaDescription="Best route to become an airline pilot in 2026: compare cadet, integrated, modular, university and RAF pathways for UK applicants."
       faqSchema={[
         { question: "What is the best way to become an airline pilot in the UK?", answer: "The strongest route depends on your finances, risk tolerance, medical status and learning style. A funded cadet programme is usually lowest financial risk if you win a place; integrated training is structured and fast; modular training can be cheaper and more flexible but requires more self-management." },

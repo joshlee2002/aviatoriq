@@ -10,7 +10,13 @@ export default function BestFlightSchoolsSouthAfrica() {
       authorRole="Aviation Research Team"
       lastUpdated="June 2026"
       category="Flight Schools"
-      canonical="/south-africa/guides/best-flight-schools-south-africa"
+      canonical="https://aviatoriq.com/south-africa/guides/best-flight-schools-south-africa"
+      metaDescription="Best flight schools in South Africa 2026: compare SACAA-approved ATOs for CPL and ATPL training, including costs, locations, and airline career pathways."
+      faqSchema={[
+        { question: "Does my flight school need SACAA approval?", answer: "Yes. To train for a South African Commercial Pilot Licence (CPL) or Instrument Rating, your flight school must be approved by the South African Civil Aviation Authority (SACAA) as an Approved Training Organisation (ATO)." },
+        { question: "How much does pilot training cost in South Africa?", answer: "Costs vary significantly. A full integrated CPL/IR programme at a major academy typically ranges from R450,000 to R750,000 ZAR. Modular training at an aero club can be considerably cheaper but requires more self-management." },
+        { question: "Which is the best flight school in South Africa?", answer: "There is no single best school. 43 Air School, Stellenbosch Flying Club, and Lanseria Flight Centre are among the most established. The right choice depends on your budget, location, and whether you want an integrated or modular pathway." },
+      ]}
       ctaText="Find flight schools near me"
       ctaHref="/south-africa/schools"
       sources={[

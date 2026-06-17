@@ -10,7 +10,7 @@ export default function PilotTrainingOver40USA() {
       heroImage="/manus-storage/pilot-over-40-usa_35140e0e.jpg"
       category="US Pilot Training"
       canonical="https://aviatoriq.com/us/guides/pilot-training-over-40-usa"
-      metaDescription="Considering a pilot career change over 40 in the USA? This 2026 guide provides a comprehensive roadmap, covering training costs, FAA medicals, funding, and career paths for older aspiring pilots."
+      metaDescription="Considering a pilot career change over 40 in the USA? This 2026 guide provides a comprehensive roadmap, covering training costs, FAA medicals, funding, and c..."
       sections={[
         {
           heading: "Is 40 Too Old to Become a Pilot? Addressing Age Concerns",

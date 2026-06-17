@@ -7,8 +7,8 @@ const TrainingTimeline = () => {
     <GuideLayout
       title="Pilot Training Timeline: How Long Does It Actually Take?"
       subtitle="Realistic timelines for every stage of pilot training in the UK — from first lesson to airline first officer."
-      canonical="/guides/training-timeline"
-      metaDescription="Pilot training timeline 2025: how long does it take to become an airline pilot in the UK? Integrated 18–24 months, modular 3–5 years. Realistic stage-by-stage breakdown."
+      canonical="https://aviatoriq.com/guides/training-timeline"
+      metaDescription="Pilot training timeline 2025: how long does it take to become an airline pilot in the UK? Integrated 18–24 months, modular 3–5 years. Realistic stage-by-stag..."
       faqSchema={[
         { question: "How long does it take to become an airline pilot?", answer: "Integrated ATPL training takes 18–24 months full-time. Modular training takes 3–5 years part-time. After training you need a type rating (4–6 weeks) before joining an airline. Total time from zero to airline first officer is typically 2–4 years." },
         { question: "Am I too old to become a pilot?", answer: "There is no upper age limit for private flying. For airline careers, the CAA mandatory retirement age is 65. Starting training at 30 is common and leaves 35 years of potential airline career. Starting at 40 is still viable for a 25-year career." },

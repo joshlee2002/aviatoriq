@@ -7,7 +7,7 @@ export default function SimulatorAssessmentGuide() {
     <GuideLayout
       title="Airline Simulator Assessment Guide: What to Expect"
       subtitle="How to prepare for one of the most stressful parts of airline selection. What raw data flying actually means, and why most candidates fail on CRM, not flying skills."
-      canonical="/guides/airline-simulator-assessment"
+      canonical="https://aviatoriq.com/guides/airline-simulator-assessment"
       metaDescription="Airline simulator assessment guide: what to expect, raw-data flying, CRM, briefing tips, common failures and practice plan."
       readTime="11 min read"
       lastUpdated="June 2026"

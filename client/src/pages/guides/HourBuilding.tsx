@@ -7,7 +7,7 @@ export default function HourBuilding() {
     <GuideLayout
       title="Hour Building for Pilots: The Complete UK Guide (2026)"
       subtitle="How to build your 100 hours of PIC time cheaply and efficiently — the best locations, aircraft, and strategies that actually work."
-      canonical="/guides/hour-building-pilot-uk"
+      canonical="https://aviatoriq.com/guides/hour-building-pilot-uk"
       metaDescription="Complete guide to hour building for UK EASA pilots in 2026. Spain costs €90/hr, South Africa €100/hr, UK £150/hr. Methods, destinations, and practical tips."
       readTime="11 min read"
       lastUpdated="June 2026"

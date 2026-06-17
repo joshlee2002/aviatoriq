@@ -7,7 +7,7 @@ export default function WomenInAviation() {
     <GuideLayout
       title="Women in Aviation: Becoming a Pilot in the UK (2026 Guide)"
       subtitle="Scholarships, challenges, industry progress, and support organisations for women pursuing a commercial pilot career in the UK."
-      canonical="/guides/women-in-aviation-uk"
+      canonical="https://aviatoriq.com/guides/women-in-aviation-uk"
       metaDescription="Women in aviation UK 2026. Scholarships, CAA statistics, challenges, and support organisations for women pursuing a commercial pilot career."
       readTime="11 min read"
       lastUpdated="June 2026"

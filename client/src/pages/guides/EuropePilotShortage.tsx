@@ -12,7 +12,7 @@ export default function EuropePilotShortage() {
       lastUpdated="January 2026"
       category="Pilot Training"
       canonical="https://aviatoriq.com/europe/guides/europe-pilot-shortage"
-      metaDescription="Explore the European pilot shortage in 2026, including EASA regulations, training costs, airline demand, and career prospects for future pilots. Understand the market dynamics and prepare for a thriving aviation career."
+      metaDescription="Explore the European pilot shortage in 2026, including EASA regulations, training costs, airline demand, and career prospects for future pilots. Understand t..."
       ctaText="Start your career assessment"
       ctaHref="/quiz"
       sections={[

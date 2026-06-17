@@ -8,7 +8,7 @@ export default function RyanairCadet() {
       title="Ryanair Mentored Programme 2026: Costs, Schools & Career Path"
       subtitle="How Ryanair recruits and trains its pilots. Understand the €80,000+ self-funded cost, the partner flight schools, and the reality of the €30,000 Type Rating."
       canonical="https://aviatoriq.com/guides/ryanair-cadet-programme"
-      metaDescription="Ryanair Mentored Programme 2026: Compare partner schools like FTEJerez and Bartolini Air. Understand the self-funded costs, the Type Rating bond, and First Officer salary."
+      metaDescription="Ryanair Mentored Programme 2026: Compare partner schools like FTEJerez and Bartolini Air. Understand the self-funded costs, the Type Rating bond, and First O..."
       readTime="8 min read"
       author="AviatorIQ Research"
       lastUpdated="June 2026"

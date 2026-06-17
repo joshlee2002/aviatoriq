@@ -12,7 +12,7 @@ export default function SaMedicalClass1() {
       lastUpdated="June 2026"
       category="South Africa Pilot Training"
       canonical="https://aviatoriq.com/south-africa/guides/sacaa-class-1-medical-certificate"
-      metaDescription="Comprehensive guide to the SACAA Class 1 Medical Certificate for aspiring pilots in South Africa. Covers 2026 requirements, costs, disqualifying conditions, and renewal."
+      metaDescription="Comprehensive guide to the SACAA Class 1 Medical Certificate for aspiring pilots in South Africa. Covers 2026 requirements, costs, disqualifying conditions,..."
       ctaText="Check your medical condition"
       ctaHref="/tools/medical-condition-lookup"
       sections={[

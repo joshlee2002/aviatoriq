@@ -6,7 +6,7 @@ const PplGuideUK = () => {
     <GuideLayout
       title="Private Pilot Licence (PPL) UK: The Complete 2026 Guide"
       subtitle="Everything you need to know about getting your Private Pilot Licence in the UK in 2026: requirements, costs, theory exams, and what comes next."
-      canonical="/guides/ppl-uk"
+      canonical="https://aviatoriq.com/guides/ppl-uk"
       metaDescription="A comprehensive 2026 guide to obtaining your Private Pilot Licence (PPL) in the UK, covering requirements, costs, theory, medicals, and next steps."
       faqSchema={[
         {

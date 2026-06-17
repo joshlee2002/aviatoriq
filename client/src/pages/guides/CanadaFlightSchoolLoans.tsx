@@ -13,7 +13,7 @@ export default function CanadaFlightSchoolLoans() {
       lastUpdated="June 2026"
       category="Canadian Financing"
       canonical="https://aviatoriq.com/canada/guides/flight-school-loans-canada"
-      metaDescription="Explore options for flight school loans in Canada for 2026. Understand OSAP/provincial limits, federal student aid, and private bank lines of credit for pilot training."
+      metaDescription="Explore options for flight school loans in Canada for 2026. Understand OSAP/provincial limits, federal student aid, and private bank lines of credit for pilo..."
       heroImage="/manus-storage/canada-loans_f4g5h6i7.jpg"
       scopeBanner={<GuideScopeBanner scope="This guide covers Canadian civilian flight training financing and provincial/federal student aid." />}
       ctaText="Calculate your Canadian training costs"

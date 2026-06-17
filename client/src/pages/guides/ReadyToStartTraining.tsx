@@ -7,7 +7,7 @@ export default function ReadyToStartTraining() {
     <GuideLayout
       title="Am I Ready to Start Pilot Training? 8 Questions to Answer Honestly"
       subtitle="Before you commit £100,000 to flight training, answer these 8 questions honestly. They will tell you whether you are genuinely ready — or whether you need to prepare more."
-      canonical="/guides/am-i-ready-to-start-pilot-training"
+      canonical="https://aviatoriq.com/guides/am-i-ready-to-start-pilot-training"
       metaDescription="Am I ready to start pilot training? 8 honest questions to answer before committing to flight school. Covers medical, finances, aptitude, motivation, and lifestyle."
       readTime="10 min read"
       lastUpdated="June 2026"

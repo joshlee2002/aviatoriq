@@ -7,7 +7,7 @@ export default function TypeRating() {
     <GuideLayout
       title="Pilot Type Rating UK 2026: Costs, Bonds & Risks"
       subtitle="Everything you need to know about type ratings — A320, B737, and beyond — including self-funded vs airline-sponsored options and the training bond reality."
-      canonical="/guides/pilot-type-rating-uk"
+      canonical="https://aviatoriq.com/guides/pilot-type-rating-uk"
       metaDescription="Pilot type rating UK 2026: what it costs, when airlines pay, training bonds, self-funded risks and what new pilots should know."
       readTime="11 min read"
       lastUpdated="June 2026"
