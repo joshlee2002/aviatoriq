@@ -42,7 +42,7 @@ export default function ReadyToStartTraining() {
                 This is the most important question on the list, and it must be answered before any other. A Class 1 Medical Certificate is a legal requirement for commercial flying. If you cannot obtain one, you cannot fly commercially — regardless of how much money you spend on training.
               </p>
               <p>
-                Do not assume you will pass. Conditions that seem minor — a history of depression, ADHD, colour blindness, or elevated blood pressure — can cause significant delays or permanent disqualification. The medical costs £500–£800 and takes a full day. If you have any doubt about your medical fitness, get the medical first.
+                Do not assume you will pass. Conditions that seem minor — a history of depression, ADHD, colour blindness, or elevated blood pressure — can cause significant delays, extra specialist reports or refusal if the CAA/AeMC cannot establish safe certification. Budget roughly £950–£1,400 for an initial UK Class 1 medical in 2026, with extra cost if you need combined UK/EASA issue or specialist reports. If you have any doubt about your medical fitness, get the medical first.
               </p>
               <p>
                 <strong>If your answer is no:</strong> Book a Class 1 Medical before you do anything else. Do not spend a single pound on flight training until you have a valid Class 1.
@@ -157,7 +157,7 @@ export default function ReadyToStartTraining() {
                 If you are under 40, you should apply to airline cadet programmes before committing to self-funded training. Cadet programmes (BA Speedbird Academy, Jet2 FlightPath, easyJet Generation Pilot) offer a conditional job offer before you start training — the single most valuable thing in pilot training.
               </p>
               <p>
-                The acceptance rates are low (under 1% for BA Speedbird), but the cost of applying is zero. If you are accepted, you have a guaranteed job. If you are rejected, you can proceed with self-funded training. There is no downside to applying.
+                The acceptance rates are low (under 1% for BA Speedbird), but the cost of applying is zero. If you are accepted, you may have a conditional airline pathway, but you still need to complete training and meet the airline standards. If you are rejected, you can proceed with self-funded training. There is little downside to applying, provided you do not delay essential medical checks, funding planning or realistic self-funded alternatives while waiting for a very competitive outcome.
               </p>
               <p>
                 <strong>If your answer is no:</strong> Apply to cadet programmes before committing to self-funded training. Use the <Link href="/tools/cadet-eligibility">Cadet Eligibility Checker</Link> to see which programmes you are eligible for.

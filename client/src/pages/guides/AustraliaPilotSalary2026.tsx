@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
 

@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 
 export default function Part61Vs141() {
@@ -29,7 +30,7 @@ export default function Part61Vs141() {
                 <strong>Part 61</strong> sets out the minimum aeronautical experience requirements for each certificate and rating. Any certificated flight instructor (CFI) can train a student under Part 61, with no formal curriculum approval required. The student and instructor have flexibility to design their own training syllabus around the FAA's minimum hour requirements.
               </p>
               <p className="mb-4">
-                <strong>Part 141</strong> requires the flight school to have an FAA-approved training course outline (TCO) for each certificate and rating it offers. The school undergoes regular FAA inspections, and training must follow the approved syllabus exactly. In exchange for this additional oversight, Part 141 schools are permitted to train students to the same standard with fewer minimum flight hours.
+                <strong>Part 141</strong> requires the flight school to have an FAA-approved training course outline (TCO) for each certificate and rating it offers. The school is subject to FAA oversight and must follow its FAA-approved training course outline. In exchange for this additional oversight, Part 141 schools are permitted to train students to the same standard with fewer minimum flight hours.
               </p>
               <div className="overflow-x-auto mt-4">
                 <table className="w-full text-sm border-collapse">
@@ -46,9 +47,9 @@ export default function Part61Vs141() {
                       ["PPL minimum hours", "40 hrs (avg: 60–70 hrs)", "35 hrs (avg: 45–55 hrs)"],
                       ["CPL minimum hours", "250 hrs total time", "190 hrs total time"],
                       ["Flexibility", "High — train at your own pace", "Low — structured daily schedule"],
-                      ["Airline cadet access", "Limited — most programmes excluded", "Required for all major cadet programmes"],
+                      ["Airline cadet access", "Limited — most programmes excluded", "Usually required for many structured cadet pathways"],
                       ["R-ATP eligibility (university)", "Not eligible", "Yes — 1,000 hrs with 4-yr AABI degree"],
-                      ["Financing options", "Limited — few lenders cover Part 61", "Sallie Mae, AOPA Finance, GI Bill eligible"],
+                      ["Financing options", "Limited — few lenders cover Part 61", "More lender/GI Bill options where the school and programme qualify"],
                     ].map(([factor, p61, p141], i) => (
                       <tr key={i} style={{ background: i % 2 === 0 ? "rgba(25, 35, 60, 0.8)" : "rgba(20, 30, 55, 0.7)" }}>
                         <td className="p-3 font-medium text-white">{factor}</td>
@@ -70,7 +71,7 @@ export default function Part61Vs141() {
                 The hour reduction under Part 141 is most significant at the Commercial Pilot Certificate (CPL) level. Under Part 61, you need 250 total flight hours to apply for a CPL. Under Part 141, that drops to 190 hours — a saving of 60 hours of flight time, which at typical wet rental rates of $150–$200/hour represents a potential saving of <strong>$9,000–$12,000</strong>.
               </p>
               <p className="mb-4">
-                For the Private Pilot Certificate (PPL), the difference is smaller: 40 hours minimum under Part 61 vs 35 hours under Part 141. In practice, most students take 60–70 hours under Part 61 and 45–55 hours under Part 141, because the structured syllabus of Part 141 reduces wasted repetitive lessons.
+                For the Private Pilot Certificate (PPL), the difference is smaller: 40 hours minimum under Part 61 vs 35 hours under Part 141. In practice, most students take 60–70 hours under Part 61 and 45–55 hours under Part 141, because a structured syllabus can reduce repetition for some students.
               </p>
               <p className="mb-4">
                 The most important hour difference for aspiring airline pilots is the <strong>Restricted ATP (R-ATP)</strong>. Graduates of AABI-accredited four-year aviation degree programmes at Part 141 schools can qualify for an R-ATP with just <strong>1,000 hours</strong> (vs 1,500 for the standard ATP). An associate's degree from a Part 141 school gets you an R-ATP at 1,250 hours. This allows you to serve as a co-pilot at a regional airline 500 hours earlier — roughly 12–18 months of flight instructing time saved.
@@ -116,27 +117,27 @@ export default function Part61Vs141() {
                 For the full zero-to-ATP pipeline at ATP Flight School (the largest Part 141 flight school in the USA), the published 2026 price for the Airline Career Pilot Program is <strong>$123,995</strong> — covering all certificates, ratings, and flight hours from zero time to ATP minimums, including CFI, CFII, and MEI ratings.
               </p>
               <p className="mb-4">
-                United Aviate Academy (Part 141, Goodyear AZ) publishes a total programme cost of approximately <strong>$111,700–$122,000</strong> including check ride fees and supplemental training funds, with a guaranteed interview at United Airlines upon completion.
+                United Aviate Academy (Part 141, Goodyear AZ) publishes programme-cost information that can change by intake and included items. Verify current tuition, fees, refund rules and any interview/pathway language directly with United Aviate before enrolling.
               </p>
             </div>
           ),
         },
         {
-          heading: "Airline cadet programmes: Part 141 is effectively required",
+          heading: "Airline cadet programmes: Part 141 is often preferred or required",
           content: (
             <div>
               <p className="mb-4">
-                If your goal is to join a structured airline cadet programme — United Aviate, Delta Propel, Southwest Destination 225°, or American Airlines Cadet Academy — Part 141 training is effectively a requirement. Here's the verified position of each programme as of 2026:
+                If your goal is to join a structured airline cadet programme — United Aviate, Delta Propel, Southwest Destination 225°, or American Airlines Cadet Academy — Part 141 or an approved affiliate pathway is often required. Programme status, partner schools and interview language can change, so verify the live airline page before committing money.
               </p>
               <div className="space-y-3 mb-4">
                 {[
                   {
                     prog: "United Aviate Academy",
-                    detail: "Part 141 school in Goodyear, AZ. Students must train at UAA or an Aviate partner school. All partner schools are Part 141. Graduates receive a guaranteed interview at United Airlines.",
+                    detail: "Part 141 school in Goodyear, AZ. Students must train at UAA or an Aviate partner school. All partner schools are Part 141. Graduates may receive pathway or interview consideration only if they meet current programme standards and terms.",
                   },
                   {
                     prog: "Delta Propel",
-                    detail: "Requires graduation from a U.S.-based AABI-accredited 4-year aviation programme or a Propel affiliate school. All affiliate schools — ATP Flight School, Academy of Aviation, Superior Flight School — are Part 141. Single-interview process leads to Endeavor Air then mainline Delta.",
+                    detail: "Requires graduation from a U.S.-based AABI-accredited 4-year aviation programme or a Propel affiliate school. All affiliate schools — ATP Flight School, Academy of Aviation, Superior Flight School — are Part 141. Pathway steps and interview processes are programme-specific and should be verified on Delta/Propel pages before applying.",
                   },
                   {
                     prog: "Southwest Destination 225° (Paused 2025–2026)",
@@ -144,7 +145,7 @@ export default function Part61Vs141() {
                   },
                   {
                     prog: "American Airlines Cadet Academy",
-                    detail: "Operated through ATP Flight School (Part 141). Application window closed for 2026 enrollment; next window expected early 2027. Graduates receive a Conditional Job Offer (CJO) for American Airlines.",
+                    detail: "Operated through ATP Flight School (Part 141). Application window closed for 2026 enrollment; next window expected early 2027. Any CJO or pathway language is conditional and should be verified against the current American Airlines Cadet Academy terms.",
                   },
                 ].map(({ prog, detail }) => (
                   <div key={prog} className="p-4 rounded-lg" style={{ background: "rgba(25, 35, 60, 0.8)", border: "1px solid rgba(255, 255, 255, 0.1)" }}>
@@ -228,7 +229,7 @@ export default function Part61Vs141() {
         },
         {
           question: "Do I need Part 141 training to join a US airline cadet programme?",
-          answer: "Yes, in practice. All major US airline cadet programmes — United Aviate, Delta Propel, Southwest Destination 225°, and American Airlines Cadet Academy — require training at Part 141 affiliate schools.",
+          answer: "Yes, in practice. Many major US airline cadet pathways use Part 141 schools or approved affiliates, but requirements vary by programme and intake. Always verify the current airline page.",
         },
         {
           question: "What is an R-ATP and how does it relate to Part 141?",

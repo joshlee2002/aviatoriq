@@ -7,11 +7,11 @@ const Class1MedicalDisqualifiers = () => {
       title="What Disqualifies You From a Class 1 Medical? (UK 2026)"
       subtitle="The complete, honest list of conditions that can fail a CAA Class 1 medical — and which ones are manageable under OML or with treatment."
       canonical="/guides/class-1-medical-disqualifiers"
-      metaDescription="What medical conditions disqualify you from a CAA Class 1 medical in the UK? This guide covers vision, cardiovascular, mental health, and other conditions — including which ones are manageable under OML."
+      metaDescription="UK Class 1 Medical disqualifiers 2026: eyesight, heart, mental health, ADHD, diabetes, deferrals and why CAA cases are individual."
       faqSchema={[
-        { question: "What conditions automatically disqualify you from a Class 1 medical?", answer: "Conditions that typically result in automatic disqualification include insulin-dependent diabetes, active psychosis, severe epilepsy, and certain cardiovascular conditions. However, many conditions that previously disqualified candidates are now manageable under an Operational Multi-crew Limitation (OML)." },
-        { question: "Can I fly commercially with glasses or contact lenses?", answer: "Yes. Corrected vision is acceptable for a Class 1 medical. Your uncorrected vision must meet minimum standards, and your corrected vision must reach the required level. Laser eye surgery (LASIK/PRK) is also accepted by the CAA after a suitable recovery period, typically 6–12 months." },
-        { question: "Does depression or anxiety disqualify you from a Class 1 medical?", answer: "Not automatically. Mild to moderate depression or anxiety that is well-controlled with medication or therapy may be compatible with a Class 1 medical under OML. The CAA assesses each case individually. Severe or unstable mental health conditions are more likely to result in disqualification." },
+        { question: "What conditions automatically disqualify you from a Class 1 medical?", answer: "Very few cases should be treated as “automatic” without CAA/AeMC assessment. Active psychosis, uncontrolled epilepsy, unstable cardiovascular disease and some insulin-treated diabetes cases are high-risk examples, but the CAA assesses medical evidence, treatment stability, operational limitations and safety risk case by case." },
+        { question: "Can I fly commercially with glasses or contact lenses?", answer: "Yes. Corrected vision is acceptable for a Class 1 medical. Your uncorrected vision must meet minimum standards, and your corrected vision must reach the required level. Laser eye surgery (LASIK/PRK) may be accepted by the CAA after a CAA/AeMC-specified recovery and stability period." },
+        { question: "Does depression or anxiety disqualify you from a Class 1 medical?", answer: "Not automatically. Mild to moderate depression or anxiety that is well-controlled with medication or therapy may be compatible with a Class 1 medical under OML. The CAA assesses each case individually. Severe or unstable mental-health conditions are more likely to result in deferral or refusal until specialist evidence supports safe certification." },
         { question: "How much does a Class 1 medical cost in the UK?", answer: "A Class 1 medical examination at a UK CAA-approved Aeromedical Medical Centre (AeMC) costs £957–£1,398 depending on the centre and whether you need a dual UK+EASA certificate. Centreline at Gatwick charges £1,181 inc VAT for a UK-only initial; Birmingham AeMC charges £1,198. It is strongly recommended to complete this before committing to expensive flight training." },
         { question: "What is an OML and how does it affect my flying career?", answer: "An Operational Multi-crew Limitation (OML) allows a pilot with a certain medical condition to fly commercially, provided they always fly with a co-pilot who holds a full, unrestricted medical. Most commercial airline flying is multi-crew anyway, so an OML has minimal practical impact on an airline career." },
       ]}
@@ -40,7 +40,7 @@ const Class1MedicalDisqualifiers = () => {
                 />
               </div>
               <p style={{ fontSize: "0.8rem", color: "rgba(255, 255, 255, 0.5)", textAlign: "center", marginBottom: "16px" }}>
-                CAA Class 1 medical assessment areas. Source: CAA Medical Department, 2026.
+                CAA Class 1 medical assessment areas. Source basis: UK CAA medical guidance and aeromedical practice, reviewed June 2026.
               </p>
               <img src="/manus-storage/medical-exam_79659228.jpg" alt="Aviation medical examination" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
             </>
@@ -51,7 +51,7 @@ const Class1MedicalDisqualifiers = () => {
           content: (
             <>
               <p>
-                Before you spend a single pound on flight training, you need a Class 1 medical. This is not optional advice — it is the most important financial decision you will make in your pilot training journey. The CAA Class 1 medical is the gateway to a commercial flying career, and failing it after spending £60,000–£100,000 on training is a catastrophic outcome that happens to real people every year.
+                Before you spend a single pound on flight training, you need a Class 1 medical. This is not optional advice — it is the most important financial decision you will make in your pilot training journey. The CAA Class 1 medical is the gateway to a commercial flying career, and finding out about a major medical issue after spending £60,000–£100,000 on training can be financially catastrophic.
               </p>
               <p>
                 The good news is that the medical is far less of a barrier than most people assume. The CAA's approach has become significantly more nuanced over the past decade, with the Operational Multi-crew Limitation (OML) system allowing many previously disqualifying conditions to be managed. This guide gives you the complete, honest picture.
@@ -76,7 +76,7 @@ const Class1MedicalDisqualifiers = () => {
                 <strong>Colour vision:</strong> Must pass the Ishihara test or an alternative CAA-approved colour vision test. Colour deficiency is not automatically disqualifying — candidates who fail the Ishihara can take the CAD (Colour Assessment and Diagnosis) test. If you pass the CAD, you can fly commercially with a colour vision deficiency, though with some limitations on certain roles.
               </p>
               <p>
-                <strong>Laser eye surgery:</strong> LASIK and PRK are accepted by the CAA. You must wait at least 6 months after surgery before applying for a Class 1 medical, and your post-operative vision must meet the standard requirements. Most candidates who have had laser surgery pass without issue.
+                <strong>Laser eye surgery:</strong> LASIK and PRK are accepted by the CAA. After eye surgery, waiting periods and evidence requirements depend on the procedure and outcome. Do not assume eligibility until an AeMC/AME has reviewed your records and confirmed the current CAA position. Most candidates who have had laser surgery pass without issue.
               </p>
             </>
           ),
@@ -175,8 +175,8 @@ const Class1MedicalDisqualifiers = () => {
       sources={[
     { name: "UK Civil Aviation Authority (CAA)" },
     { name: "EASA Part-MED", url: "https://www.easa.europa.eu/en/document-library/regulations/commission-regulation-eu-no-11782011" },
-    { name: "FAA" },
-    { name: "CASA" },
+    { name: "UK CAA Class 1 medical guidance" },
+    { name: "UK Civil Aviation Authority (CAA)" },
   ]}/>
   );
 };

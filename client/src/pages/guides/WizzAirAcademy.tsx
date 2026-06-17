@@ -1,10 +1,11 @@
+import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 
 export default function WizzAirAcademy() {
   return (
     <GuideLayout
       title="Wizz Air Pilot Academy 2026: Complete Guide"
-      subtitle="Europe's fastest-growing airline's cadet programme — how it works, where training takes place, what it costs, and what a Wizz Air career looks like."
+      subtitle="Wizz Air cadet programme — how it works, where training takes place, what it costs, and what a Wizz Air career looks like."
       canonical="/guides/wizz-air-pilot-academy"
       metaDescription="Wizz Air Pilot Academy 2026: training locations, selection process, costs, and First Officer career at one of Europe's fastest-growing airlines. Updated June 2026."
       readTime="8 min read"
@@ -20,9 +21,9 @@ export default function WizzAirAcademy() {
       ]}
       faqSchema={[
         { question: "What is the Wizz Air Pilot Academy?", answer: "The Wizz Air Pilot Academy is Wizz Air's ab-initio cadet programme, training pilots from zero experience to First Officer on Wizz Air's Airbus A320 family fleet. Training is conducted at approved partner schools across Europe." },
-        { question: "How much does the Wizz Air Pilot Academy cost?", answer: "Training costs vary by partner school but typically range from €65,000 to €100,000. Wizz Air does not fund training — it is self-sponsored." },
+        { question: "How much does the Wizz Air Pilot Academy cost?", answer: "Training costs and funding structure vary by partner school and intake. Treat any €65,000–€100,000 range as indicative and verify current Wizz Air/partner-school terms before applying." },
         { question: "What aircraft does Wizz Air fly?", answer: "Wizz Air operates an all-Airbus A320 family fleet, including the A320, A321, and A321neo. The airline is one of the largest A321neo operators in Europe." },
-        { question: "Is Wizz Air a good airline for a first pilot job?", answer: "Wizz Air offers a genuine route into commercial aviation with a modern fleet and growing network. The airline is expanding rapidly, which means genuine career progression opportunities. Pay starts lower than BA or easyJet but increases with experience." },
+        { question: "Is Wizz Air a good airline for a first pilot job?", answer: "Wizz Air offers a genuine route into commercial aviation with a modern fleet and growing network. The airline is expanding rapidly, which means potential career progression opportunities. Pay starts lower than BA or easyJet but increases with experience." },
         { question: "Where does Wizz Air operate from in the UK?", answer: "Wizz Air operates from London Gatwick, London Luton, and several other UK airports. The airline's UK operations have expanded significantly since 2020." },
       ]}
       sections={[
@@ -38,7 +39,7 @@ export default function WizzAirAcademy() {
               </p>
               <img src="/manus-storage/cadet-sponsored_7b4e9f2a.jpg" alt="Wizz Air cadet programme" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                For aspiring pilots, Wizz Air's rapid expansion creates genuine opportunities. The airline needs pilots — lots of them — and its Pilot Academy is one of the primary routes through which it recruits and trains the next generation of its flight crew. Unlike some cadet programmes that take only 20–30 cadets per year, Wizz Air's growth means it has the capacity to absorb significantly more cadet graduates.
+                For aspiring pilots, Wizz Air's rapid expansion creates genuine opportunities. The Pilot Academy can be one route into Wizz Air, but intake size, hiring demand and base availability change with fleet plans and market conditions, so verify the live careers page.
               </p>
               <p>
                 Wizz Air has UK bases at Gatwick and Luton, making it a realistic option for UK-based pilots who want to fly for a major European carrier without relocating permanently. The airline's network spans over 50 countries, giving pilots genuine variety in their flying.
@@ -123,13 +124,13 @@ export default function WizzAirAcademy() {
                 The Wizz Air Pilot Academy is self-funded. Training costs vary depending on the partner school and programme structure, but typically range from approximately €65,000 to €100,000 for the full integrated ATPL programme including type rating.
               </p>
               <p>
-                For UK students, the cost is broadly comparable to mid-range UK integrated schools, but the Wizz Air partnership provides the added security of a conditional job offer on completion — a significant advantage over self-sponsored training at a school without airline partnerships.
+                For UK students, the cost is broadly comparable to mid-range UK integrated schools, but the Wizz Air partnership provides the benefit of a conditional airline pathway — a significant advantage over self-sponsored training at a school without airline partnerships.
               </p>
               <p>
                 Financing options are available through the partner schools and specialist aviation finance providers. As with all pilot training financing, compare terms carefully and seek independent financial advice before committing.
               </p>
               <p>
-                Wizz Air First Officer salaries start at approximately €42,000–€55,000 (base), with productivity pay and allowances bringing total compensation higher. The airline's rapid expansion means genuine upgrade opportunities — Wizz Air has been promoting First Officers to Captain at a faster rate than many legacy carriers, with some pilots upgrading within 5–8 years of joining.
+                Wizz Air pay and upgrade timelines vary by base, contract, allowances, productivity, seniority and fleet growth. Verify current offer documents and treat upgrade timelines as scenarios, not promises.
               </p>
             </>
           ),

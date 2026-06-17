@@ -1,13 +1,14 @@
+import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
 
 export default function PilotCvGuide() {
   return (
     <GuideLayout
-      title="Pilot CV & Cover Letter Guide 2026: How to Get Through Airline Screening"
-      subtitle="Most pilot CVs fail at the first stage — not because of poor flying, but because of poor presentation. Here is exactly how to structure an aviation CV that passes screening and gets you to the next round."
+      title="Pilot CV & Cover Letter Guide 2026"
+      subtitle="Many pilot CVs fail at the first stage — not because of poor flying, but because of poor presentation. Here is exactly how to structure an aviation CV that passes screening and gets you to the next round."
       canonical="/guides/pilot-cv-cover-letter"
-      metaDescription="How to write a pilot CV and cover letter in 2026. Aviation CV structure, what to include, common mistakes, and cover letter templates for UK airline applications."
+      metaDescription="Pilot CV and cover letter guide for 2026: format, logbook details, airline screening tips, examples and mistakes to avoid."
       readTime="7 min read"
       heroImage="/manus-storage/pilot-cv_e66193e2.jpg"
       lastUpdated="June 2026"
@@ -15,7 +16,7 @@ export default function PilotCvGuide() {
       ctaText="Start your career assessment"
       faqSchema={[
         { question: "What should a pilot CV include?", answer: "A pilot CV should include: personal details (name, contact, nationality, right to work), licences and ratings (with issue dates and expiry), medical class and expiry, total hours and breakdown by type, type ratings, simulator experience, and employment history. Keep it to two pages maximum." },
-        { question: "How long should a pilot CV be?", answer: "A pilot CV should be one to two pages maximum. Airlines receive hundreds of applications — a concise, well-structured CV is more effective than a lengthy one. If you are a low-hours ab-initio graduate, one page is appropriate." },
+        { question: "How long should a pilot CV be?", answer: "A pilot CV is usually one to two pages unless an airline portal asks for a different format. Airlines receive hundreds of applications — a concise, well-structured CV is more effective than a lengthy one. If you are a low-hours ab-initio graduate, one page is appropriate." },
         { question: "What do airlines look for in a pilot CV?", answer: "Airlines screen CVs for minimum requirements first: licence type, hours, ratings, and right to work. If you meet the minimums, presentation and professionalism matter. A clear, error-free CV with accurate logbook data signals the same attention to detail required in the cockpit." },
         { question: "Should I include a cover letter with my pilot application?", answer: "Yes, if the application process allows it. A cover letter is your opportunity to explain why you want to fly for that specific airline and what makes you a strong candidate. Keep it to three paragraphs: why this airline, what you bring, and a call to action." },
         { question: "How do I write a pilot CV with no experience?", answer: "Ab-initio graduates should focus on: your training school and the quality of your training, your licence and ratings, any relevant non-aviation work experience that demonstrates transferable skills (leadership, communication, decision-making), and your motivation. Honesty about your hours is essential — never inflate logbook data." },
@@ -31,7 +32,7 @@ export default function PilotCvGuide() {
           content: (
             <>
               <p>
-                Airline recruitment teams screen pilot CVs in seconds. The first pass is purely mechanical: does this candidate meet the minimum requirements? Licence type, total hours, right to work, medical validity. If you do not meet the minimums, the CV goes no further regardless of how well it is written.
+                Airline recruitment teams often screen pilot CVs quickly. The first pass is purely mechanical: does this candidate meet the minimum requirements? Licence type, total hours, right to work, medical validity. If you do not meet the minimums, the application may go no further regardless of how well the CV is written.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Before your interview, complete our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
@@ -51,7 +52,7 @@ export default function PilotCvGuide() {
           content: (
             <>
               <p>
-                Use this structure for every airline application. Deviate from it only if the airline's application portal specifies a different format.
+                Use this structure unless the airline's application portal specifies a different format.
               </p>
               <p>
                 <strong>Section 1 — Personal Details:</strong> Full name, phone number, email address, location (city and country), nationality, and right to work status. Do not include a photograph unless specifically requested (it is not standard practice in UK aviation recruitment).
@@ -88,7 +89,7 @@ export default function PilotCvGuide() {
                 <strong>Inflated hours:</strong> Never round up. Never include simulator hours as flight hours. Never include hours you cannot substantiate in your logbook. Recruiters ask for logbook evidence at interview. Discrepancies — even minor ones — are grounds for immediate rejection and can damage your reputation in a small industry.
               </p>
               <p>
-                <strong>Expired documents:</strong> List your medical and ratings with their expiry dates. If something is expired, note it honestly. Attempting to obscure an expired medical or lapsed rating will be discovered.
+                <strong>Expired documents:</strong> List your medical and ratings with their expiry dates. If something is expired, note it honestly. Attempting to obscure an expired medical or lapsed rating is likely to be discovered and can damage trust.
               </p>
               <p>
                 <strong>Generic CVs:</strong> Sending the same CV to every airline without tailoring it is a missed opportunity. If an airline operates a specific fleet, mention your experience on similar types. If they have a cadet programme, reference your training pathway.
@@ -132,10 +133,10 @@ export default function PilotCvGuide() {
                 If you have just completed your ATPL training and have 200–250 hours, you cannot compete with experienced pilots on hours. You should not try to. Instead, focus on what you can offer:
               </p>
               <p>
-                <strong>Quality of training:</strong> Name your training school. If it is a reputable Part 141 or EASA-approved school, that carries weight. If you trained at Oxford Aviation Academy, L3Harris, or CAE, say so prominently.
+                <strong>Quality of training:</strong> Name your training school. If it is a recognised UK CAA/EASA-approved school, that carries weight. If you trained at Oxford Aviation Academy, L3Harris, or CAE, say so prominently.
               </p>
               <p>
-                <strong>ATPL theory results:</strong> If your average is above 90%, include it. Strong theory results signal academic ability and commitment.
+                <strong>ATPL theory results:</strong> If your average is strong, include it where the airline asks for or values theory performance. Strong theory results signal academic ability and commitment.
               </p>
               <p>
                 <strong>MCC and JOC:</strong> If you completed a multi-crew cooperation course and jet orientation course, include them. They demonstrate you have been exposed to airline-style operations.

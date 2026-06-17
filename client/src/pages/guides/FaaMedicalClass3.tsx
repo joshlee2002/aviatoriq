@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
 
@@ -5,7 +6,7 @@ export default function FaaMedicalClass3() {
   return (
     <GuideLayout
       title="Navigating Your Wings: The Definitive Guide to the FAA Class 3 Medical Certificate (2026)"
-      subtitle="Everything you need to know about requirements, the MedXPress application process, costs, and disqualifying conditions for your private pilot medical."
+      subtitle="A 2026 guide to FAA Third Class Medical requirements, MedXPress, AME costs, BasicMed context and medical issues that may require FAA review."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="January 2026"
@@ -19,7 +20,7 @@ export default function FaaMedicalClass3() {
           heading: "Introduction: The Foundation of Your Private Pilot Journey",
           content: (
             <>
-              <p>The FAA Class 3 Medical Certificate is the minimum medical standard required for a Private Pilot Certificate in the United States. This guide covers the exact requirements, the examination process, what conditions can disqualify you, and the real 2026 costs — so you know exactly what to expect before you book your appointment with an Aviation Medical Examiner (AME).</p>
+              <p>The FAA Third Class Medical Certificate is commonly used for private pilot privileges in the United States, although BasicMed may be available for some pilots and operations. This guide covers requirements, the examination process, conditions that may require FAA review, and 2026 cost ranges to verify before booking an Aviation Medical Examiner (AME).</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Use our free <Link href="/us/medical-lookup" className="text-blue-400 underline">FAA Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your FAA medical application.
               </p>
@@ -184,7 +185,7 @@ export default function FaaMedicalClass3() {
           heading: "Cost of the FAA Class 3 Medical Examination (2026)",
           content: (
             <>
-              <p>The FAA does not set fees for medical examinations; rather, individual Aviation Medical Examiners (AMEs) determine their own pricing. The cost can vary significantly based on location, the AME's practice, and whether additional tests or documentation are required. For 2026, typical costs for a Class 3 Medical Examination in the US generally range from <strong>$100 to $200 USD</strong>.</p>
+              <p>The FAA does not set fees for medical examinations; rather, individual Aviation Medical Examiners (AMEs) determine their own pricing. The cost can vary significantly based on location, the AME's practice, and whether additional tests or documentation are required. The FAA does not set AME fees. Many Class 3 exams fall around <strong>$100 to $200 USD</strong>, but confirm current pricing and any extra testing/documentation fees with the AME before booking.</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
@@ -263,7 +264,7 @@ export default function FaaMedicalClass3() {
       faqSchema={[
         {
           question: "How long does it take to get an FAA Class 3 Medical Certificate?",
-          answer: "If you meet all standards and have no disqualifying conditions or missing documentation, your AME can issue the certificate on the spot, typically within an hour of your exam. If your case is deferred to the FAA, it can take several weeks to several months, depending on the complexity of your medical history and the completeness of your submitted documentation."
+          answer: "If you meet all standards and have no FAA-review issue or missing documentation, your AME may be able to issue the certificate at the appointment. If your case is deferred to the FAA, timing can range from weeks to months depending on medical history, records requested and FAA workload."
         },
         {
           question: "Can I fly with glasses or contact lenses?",
@@ -271,7 +272,7 @@ export default function FaaMedicalClass3() {
         },
         {
           question: "What if I have a medical condition that might be disqualifying?",
-          answer: "Do not self-ground or assume you cannot get a medical certificate. It is crucial to consult with an Aviation Medical Examiner (AME) as early as possible. Many conditions that are initially disqualifying can be managed through the FAA's Special Issuance process, which allows for individual evaluation and potential certification with specific limitations or monitoring."
+          answer: "Do not assume you are permanently ineligible without getting qualified guidance. Consult an Aviation Medical Examiner (AME) early, especially before submitting MedXPress for a complex history. Many conditions that are initially disqualifying can be managed through the FAA's Special Issuance process, which allows for individual evaluation and potential certification with specific limitations or monitoring."
         },
         {
           question: "Is there an age limit for obtaining a Class 3 Medical Certificate?",

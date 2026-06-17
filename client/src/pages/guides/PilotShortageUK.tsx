@@ -27,7 +27,7 @@ export default function PilotShortageUK() {
           content: (
             <>
               <p>
-                If you are considering spending £100,000 on flight training, you need to know if there will actually be a job waiting for you at the end. The short answer in 2026 is yes — but the nature of the "pilot shortage" is often misunderstood.
+                If you are considering spending £100,000 on flight training, you need to know whether demand is strong enough to justify the risk. The short answer in 2026 is: there is demand, but no individual trainee should assume employment will follow automatically.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
@@ -36,7 +36,7 @@ export default function PilotShortageUK() {
                 There is not a shortage of people who <em>want</em> to be pilots. There is a structural shortage of <strong>experienced, type-rated Captains</strong>, which forces airlines to promote First Officers faster, which in turn creates a vacuum at the entry level that must be filled by newly qualified cadets.
               </p>
               <p>
-                According to Oliver Wyman's latest aviation forecast, the global pilot shortfall is expected to reach its peak in 2026, with a deficit of approximately 24,000 pilots worldwide . While the UK market is smaller than the US, it is deeply affected by this global trend.
+                Industry forecasts point to pilot supply pressure, especially for experienced captains, but forecasts are not job guarantees and can change with airline economics. While the UK market is smaller than the US, it is deeply affected by this global trend.
               </p>
             </>
           ),
@@ -46,7 +46,7 @@ export default function PilotShortageUK() {
           content: (
             <>
               <p>
-                The current hiring boom is not a temporary spike; it is the result of three converging factors:
+                The current hiring environment is supported by several factors, but aviation hiring remains cyclical:
               </p>
               <p>
                 <strong>1. The Retirement Wave:</strong> The mandatory retirement age for commercial pilots is 65. A massive cohort of pilots who joined the industry in the 1980s and 1990s are now hitting that age. At British Airways alone, hundreds of senior captains are retiring annually, creating a constant need for upward progression.
@@ -81,7 +81,7 @@ export default function PilotShortageUK() {
           content: (
             <>
               <p>
-                The shortage has shifted bargaining power back toward pilots. In 2026, we are seeing the most significant improvements in pilot pay and conditions in a generation.
+                The shortage has shifted bargaining power back toward pilots. In 2026, some airlines have improved pay and conditions to attract and retain crews, but outcomes vary by airline and contract.
               </p>
               <p>
                 Regional airlines (like Loganair and Aurigny) have been forced to increase salaries simply to stop their pilots from being poached by easyJet and Jet2. Meanwhile, legacy carriers like British Airways have negotiated new pay deals with BALPA (the pilot union) to ensure they remain the most attractive long-term employer in the UK market.
@@ -103,7 +103,7 @@ export default function PilotShortageUK() {
                 If you fail multiple ATPL exams, struggle through your flight training, or perform poorly in a simulator assessment, you will still struggle to find a job. The shortage means there are jobs available for <em>good</em> pilots; it does not guarantee a job for <em>every</em> pilot.
               </p>
               <p>
-                Your goal should be to pass your exams first time, build a strong training record, and prepare obsessively for airline assessments. If you do that, the 2026 market is the most favourable for new entrants in a generation.
+                Your goal should be to pass your exams first time, build a strong training record, and prepare obsessively for airline assessments. If you do that, the 2026 market can be favourable, but it is not risk-free and standards remain high.
               </p>
             </>
           ),

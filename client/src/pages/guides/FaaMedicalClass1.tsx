@@ -1,22 +1,23 @@
+import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 
 export default function FaaMedicalClass1() {
   return (
     <GuideLayout
       title="FAA Medical Class 1 Certificate 2026: Requirements, Costs & Process"
-      subtitle="Everything you need to know about the FAA First Class Medical — vision and hearing standards, AME exam process, disqualifying conditions, special issuances, and how much it costs."
+      subtitle="A 2026 guide to the FAA First Class Medical — vision and hearing standards, AME exam process, potentially disqualifying conditions, special issuances, and cost ranges to verify."
       readTime="12 min read"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
       category="Medical Requirements"
       canonical="https://aviatoriq.com/us/guides/faa-medical-class-1"
-      metaDescription="FAA Class 1 Medical Certificate 2026: vision 20/20 required, costs $150–$400, valid 12 months under 40 / 6 months over 40. Full requirements, AME process, and disqualifying conditions explained."
+      metaDescription="FAA First Class Medical Certificate 2026: vision standards, AME-set costs, duration rules, Special Issuance and potentially disqualifying conditions explained."
       ctaText="Check your FAA medical condition"
       ctaHref="/us/medical-lookup"
       faqSchema={[
         { question: "What are the vision requirements for an FAA Class 1 Medical?", answer: "Distant vision must be 20/20 or better in each eye separately, with or without correction. Near vision must be 20/40 or better at 16 inches. Intermediate vision (20/40 at 32 inches) is required for pilots aged 50 and over. Normal colour vision is required; colour vision deficiency may result in a limitation." },
         { question: "How much does an FAA Class 1 Medical cost?", answer: "FAA Class 1 Medical exams typically cost $150–$400 depending on the AME and location. An EKG (required at age 35 and over) adds $50–$150. There is no set FAA fee — AMEs set their own prices." },
-        { question: "How long is an FAA Class 1 Medical valid?", answer: "For ATP privileges: 12 calendar months if under 40, 6 calendar months if 40 or over. For commercial pilot privileges (not ATP): 12 calendar months at any age. When it expires for its primary purpose, it automatically downgrades to Class 2 then Class 3 validity." },
+        { question: "How long is an FAA Class 1 Medical valid?", answer: "For ATP privileges: 12 calendar months if under 40, 6 calendar months if 40 or over. For commercial pilot privileges (not ATP): 12 calendar months at any age. After the First Class duration ends, the certificate may still support lower-class privileges for the applicable duration if the pilot otherwise meets FAA rules." },
         { question: "What conditions disqualify you from an FAA Class 1 Medical?", answer: "Statutory disqualifying conditions include angina pectoris, cardiac valve replacement, coronary heart disease, epilepsy, psychosis, bipolar disorder, substance dependence, and diabetes requiring insulin. Many conditions can be considered for Special Issuance with documentation." },
         { question: "Can I fly with depression or anxiety and get an FAA Class 1 Medical?", answer: "Yes, in many cases. The FAA accepts four specific SSRIs (fluoxetine, sertraline, citalopram, escitalopram) under the SSRI protocol after a 6-month stable period. Anxiety managed without medication may be certifiable. Full disclosure to your AME is essential." },
         { question: "What is BasicMed and who can use it?", answer: "BasicMed is an alternative to the traditional FAA medical certificate for private pilots. It requires a physical exam by any state-licensed physician every 48 months and an online course every 24 months. It allows flying aircraft under 6,000 lbs with up to 6 occupants at altitudes below 18,000 ft. It cannot be used for commercial operations or ATP privileges." }
@@ -78,7 +79,7 @@ export default function FaaMedicalClass1() {
               </div>
 
               <p>
-                When a higher-class medical expires for its primary purpose, it automatically downgrades. A Class 1 held by a pilot aged 38 will function as a Class 2 for 12 months after the Class 1 expires, then as a Class 3 for a further period — giving up to 60 months of private pilot validity from a single Class 1 examination (for pilots under 40).
+                When a higher-class medical is no longer usable for its highest privilege, it may still support lower-class privileges for the applicable FAA duration. For example, a First Class medical issued before age 40 can continue to support lower-class privileges for longer than the First Class ATP duration, if the pilot otherwise meets FAA rules.
               </p>
             </>
           ),
@@ -174,7 +175,7 @@ export default function FaaMedicalClass1() {
           content: (
             <>
               <p>
-                14 CFR §67.113 lists the statutory disqualifying conditions for a Class 1 medical. These are conditions that automatically disqualify an applicant unless a Special Issuance is granted.
+                14 CFR Part 67 lists medical standards and conditions that can require denial or FAA review unless the applicant qualifies for FAA authorization such as Special Issuance. Treat this as a regulator/AME decision, not a self-diagnosis checklist.
               </p>
 
               <div className="overflow-x-auto my-6">
@@ -216,7 +217,7 @@ export default function FaaMedicalClass1() {
               </p>
 
               <p>
-                <strong>ADHD:</strong> ADHD is not automatically disqualifying, but stimulant medications (Adderall, Ritalin) are. Pilots with ADHD who are not on medication, or who have been off medication for at least 90 days, may be certifiable after neuropsychological testing. See our <a href="/us/guides/adhd-faa-medical" className="text-blue-400 hover:underline">ADHD and FAA Medical guide</a> for the full process.
+                <strong>ADHD:</strong> ADHD history is evaluated case by case, and stimulant medications such as Adderall or Ritalin are generally not compatible with flying while used. Applicants may need FAA-specified documentation and neuropsychological evaluation before certification can be considered. See our <a href="/us/guides/adhd-faa-medical" className="text-blue-400 hover:underline">ADHD and FAA Medical guide</a> for the full process.
               </p>
             </>
           ),
@@ -238,7 +239,7 @@ export default function FaaMedicalClass1() {
                 <li>You do not fly for compensation or hire</li>
               </ul>
               <p>
-                BasicMed cannot be used for commercial operations, ATP privileges, or flying internationally. If your goal is an airline career, you will need a Class 1 medical. But if you are training recreationally or as a private pilot, BasicMed is a significantly simpler and cheaper option.
+                BasicMed cannot be used for commercial operations or ATP privileges, and international use depends on the destination authority. If your goal is an airline career, plan around First Class medical eligibility. If you are flying recreationally, BasicMed may be simpler and cheaper if you meet its limits.
               </p>
             </>
           ),

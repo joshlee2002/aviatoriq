@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 
 const AtpCertificateUSA = () => {
@@ -95,7 +96,7 @@ const AtpCertificateUSA = () => {
                 <strong>Part 141 pathway (1,000 hours):</strong> Graduates of certain FAA-approved Part 141 flight schools with qualifying integrated curricula can apply with 1,000 hours. Not all Part 141 schools qualify — the school must have specific curriculum approval from the FAA. This pathway is offered by major flight academies such as ATP Flight School and Embry-Riddle.
               </p>
               <p>
-                The R-ATP allows you to serve as a first officer immediately upon reaching the reduced minimums. The full ATP is automatically granted when you reach 1,500 hours total time, at which point you become eligible to serve as captain.
+                The R-ATP can allow eligible pilots to serve as first officers after meeting the reduced minimums and airline hiring standards. A full ATP is not automatic; you must meet the remaining FAA aeronautical experience and certificate requirements before exercising unrestricted ATP privileges or serving as captain in operations that require them.
               </p>
             </>
           ),
@@ -137,13 +138,13 @@ const AtpCertificateUSA = () => {
           content: (
             <>
               <p>
-                The ATP certificate is the gateway to the most lucrative positions in commercial aviation. As a first officer at a major airline (Delta, United, American, Southwest, FedEx, UPS), starting salaries typically range from $80,000 to $130,000 in the first year, rising rapidly with seniority. Captain salaries at major carriers range from $180,000 to over $350,000 per year, with total compensation including per diem, profit sharing, and benefits often exceeding these figures.
+                The ATP certificate is the gateway to the most lucrative positions in commercial aviation. As a first officer at a major airline (Delta, United, American, Southwest, FedEx, UPS), first-year pay varies by airline contract, seat, fleet, guarantee, credit hours, per diem and bonuses; many major-airline first-officer packages are materially higher than regional starting pay. Captain salaries at major carriers range from $180,000 to over $350,000 per year, with total compensation including per diem, profit sharing, and benefits often exceeding these figures.
               </p>
               <p>
-                The timeline from ATP to major airline captain has shortened significantly due to the pilot shortage. Pilots who joined major airlines in 2019 to 2022 have been upgrading to captain in as few as 5 to 8 years, compared to the 10 to 15 year timelines that were common before the shortage. This acceleration is expected to continue through the late 2020s as the mandatory retirement age of 65 drives large numbers of senior captains out of the workforce.
+                The timeline from ATP to major-airline captain has shortened in some recent hiring cycles, but it remains seniority-, fleet-, base- and cycle-dependent. Pilots who joined major airlines in 2019 to 2022 have been upgrading to captain in as few as 5 to 8 years, compared to the 10 to 15 year timelines that were common before the shortage. Do not assume recent acceleration will continue: retirement flow, aircraft deliveries, hiring pauses, economic cycles and contract changes can all alter upgrade timing.
               </p>
               <p>
-                Beyond airlines, the ATP also opens doors to corporate aviation (Part 91 and Part 135 operations), cargo carriers (FedEx, UPS, Amazon Air), and government contract flying. The certificate is recognised internationally, and holders can often convert it to ICAO-compliant licences in other countries with reduced requirements.
+                Beyond airlines, the ATP also opens doors to corporate aviation (Part 91 and Part 135 operations), cargo carriers (FedEx, UPS, Amazon Air), and government contract flying. The ATP is an ICAO-aligned credential, but using it abroad requires the destination authority’s validation or conversion process; do not assume automatic foreign licence privileges.
               </p>
             </>
           ),

@@ -16,7 +16,7 @@ export default function HourBuilding() {
       ctaText="Start your career assessment"
       scopeBanner={<GuideScopeBanner scope="This guide covers hour building strategies for UK/EASA pilots (CPL prerequisites, popular locations from the UK)." usHref="/us/guides/hour-building-usa" usLabel="View USA version →" />}
       faqSchema={[
-        { question: "How many hours do I need for hour building?", answer: "For a modular EASA CPL, you need 200 hours total flight time, of which at least 100 hours must be as Pilot in Command (PIC). After your PPL, you typically have 45-55 hours total with 10-15 hours PIC, so you need to build approximately 85-90 more PIC hours." },
+        { question: "How many hours do I need for hour building?", answer: "For a modular UK CAA/EASA-style CPL route, you need 200 hours total flight time, of which at least 100 hours must be as Pilot in Command (PIC). After your PPL, you typically have 45-55 hours total with 10-15 hours PIC, so you need to build approximately 85-90 more PIC hours." },
         { question: "Where is the cheapest place to hour build?", answer: "Spain and Portugal offer the best combination of low cost (€75-120/hr) and excellent weather (300+ VFR days/year). South Africa is similarly priced but requires travel. The UK is the most expensive option (£130-170/hr) but the most convenient." },
         { question: "How long does hour building take?", answer: "If you fly intensively (10-15 hours per week), you can complete 100 hours in 7-10 weeks. Part-time hour building at weekends in the UK typically takes 6-12 months." },
         { question: "Can I hour build in the USA?", answer: "Yes. Florida and Arizona offer cheap aircraft rental ($80-140/hr) and excellent weather. However, you need an FAA licence validation or conversion to fly N-registered aircraft. Check acceptance of US hours with your EASA authority before committing." }
@@ -33,7 +33,7 @@ export default function HourBuilding() {
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
-                Under EASA Part-FCL, you need 200 hours total flight time to qualify for a CPL, of which at least 100 hours must be as PIC. After completing your PPL, you typically have 45–55 hours total with only 10–15 hours of solo PIC time. This means you need to build approximately 85–90 more hours of PIC time before you can start your CPL training.
+                For a UK CAA/EASA-style CPL route, you normally need 200 hours total flight time before CPL issue, including a significant PIC requirement. Verify the exact UK CAA requirements for your licence route. After completing your PPL, you typically have 45–55 hours total with only 10–15 hours of solo PIC time. This means you need to build approximately 85–90 more hours of PIC time before you can start your CPL training.
               </p>
               <p>
                 The cost of hour building varies enormously depending on where and how you fly. The spread between the cheapest and most expensive options is enormous: from £50/hr in an aircraft syndicate to £170/hr at a UK flying school. This difference, multiplied over 100 hours, can amount to £12,000 in savings — enough to pay for your entire CPL training.
@@ -46,13 +46,13 @@ export default function HourBuilding() {
           content: (
             <>
               <p>
-                Before planning where to fly, understand exactly what EASA requires. The rules are in Part-FCL and they are specific.
+                Before planning where to fly, understand exactly what your target authority and school require. The rules are in Part-FCL and they are specific.
               </p>
               <p>
                 You need 200 hours total flight time, of which at least 100 hours must be as PIC. You also need a qualifying cross-country flight: at least 540 km (300 NM) with full-stop landings at two aerodromes different from the departure point. This must be completed before the CPL skills test.
               </p>
               <p>
-                All PIC hours must be on Group A aircraft (single-engine piston aeroplanes, MTOW up to 2,000 kg). Standard trainers like the Cessna 152, Cessna 172, Piper PA-28, and Diamond DA40 all qualify. Night flying hours also count toward your total.
+                Make sure any hour-building aircraft and flight time will be accepted by your target school and licensing authority before you pay for it. Standard trainers like the Cessna 152, Cessna 172, Piper PA-28, and Diamond DA40 all qualify. Night flying hours also count toward your total.
               </p>
               <p>
                 Hours on N-registered (US) aircraft are generally accepted by EASA states for hour building, but policies vary. Check with your specific national aviation authority before committing to a US-based programme. South African SACAA hours also require validation by your EASA authority.
@@ -142,7 +142,7 @@ export default function HourBuilding() {
                 <strong>Aircraft Syndicate (Best UK Value):</strong> A PA-28 syndicate share might cost £2,000–£5,000 to buy in, with monthly fees of £100–£200 and hourly rates of £80–£100/hr — significantly below school rental. You get better availability and more flexibility. The trade-off: you need to find a syndicate with availability, the buy-in capital, and the commitment to sell your share when done.
               </p>
               <p>
-                <strong>Aircraft Ownership (Cheapest Per Hour):</strong> The most extreme option. Pilots report buying a cheap LAA (Light Aircraft Association) aircraft for £10,500, flying 100+ hours at approximately £50/hr in fuel and maintenance, then reselling for a similar price. The hourly cost is almost entirely fuel. You bear the risks of maintenance, insurance, and resale value — but if you buy well and sell well, it can be remarkably cheap.
+                <strong>Aircraft Ownership (Cheapest Per Hour):</strong> The most extreme option. Some pilots reduce costs through syndicates or aircraft ownership, but maintenance, insurance, resale risk and licence-credit rules must be understood before using this strategy. The headline hourly cost may look close to fuel-only, but the true cost includes maintenance reserves, insurance, parking, annual inspections, unscheduled defects and resale risk. It can work for experienced, well-advised pilots, but it is not a simple shortcut.
               </p>
             </>
           ),

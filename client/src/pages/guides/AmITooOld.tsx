@@ -30,7 +30,7 @@ export default function AmITooOld() {
                 There is no upper age limit to start pilot training in the UK. You can legally begin flight training at any age, and UK airlines are legally prohibited from discriminating on the basis of age under the Equality Act 2010.
               </p>
               <p>
-                The mandatory retirement age for commercial airline pilots is 65 — set by ICAO and adopted by the UK CAA. This is the only hard age limit in the system.
+                For most airline multi-pilot commercial air transport roles, age 65 is the practical upper limit under international and UK rules. Other flying work can differ, so check the exact role and regulation.
               </p>
               <p>
                 What this means in practice:
@@ -74,16 +74,16 @@ export default function AmITooOld() {
                 The Class 1 Medical is the practical age constraint in pilot training — not any legal rule about starting age. The older you are, the more demanding the medical becomes, and the higher the probability of developing a condition that prevents you from flying.
               </p>
               <p>
-                Under 40: Class 1 Medical valid for 24 months. Standard assessments.
+                For airline-style multi-pilot privileges, Class 1 validity is normally 12 months until age 60. Some commercial privileges have shorter validity from age 40, so check your certificate.
               </p>
               <p>
-                40–60: Class 1 Medical valid for 12 months. Annual ECG required. Additional cardiovascular checks as you age.
+                Age and operation type affect renewal frequency and medical checks. Expect more cardiovascular scrutiny as you get older, and verify the exact requirements with your AeMC/AME.
               </p>
               <p>
-                60–65: Class 1 Medical valid for 6 months. More frequent assessments. Can only fly as part of a two-pilot crew where the other pilot is under 60.
+                From age 60, airline multi-pilot privileges are generally subject to six-monthly medical validity and crew-age restrictions. Check the current UK CAA/ICAO rules for the role you are targeting.
               </p>
               <p>
-                The most important thing you can do before spending any money on flight training is to get a Class 1 Medical assessment. This costs £500–£800 and takes a full day. If you pass, you have certainty. If there are borderline issues, an AME can give you a realistic assessment of your long-term prospects.
+                The most important thing you can do before spending any money on flight training is to get a Class 1 Medical assessment. Budget roughly £950–£1,400 for an initial UK Class 1 assessment in 2026, with extra cost if you need combined UK/EASA issue or specialist reports. If you pass, you have certainty. If there are borderline issues, an AME can give you a realistic assessment of your long-term prospects.
               </p>
             </>
           ),
@@ -99,7 +99,7 @@ export default function AmITooOld() {
                 The one exception is cadet programmes. Most airline cadet programmes have informal upper age limits (typically 35–40) because they are investing in a long career return. The BA Speedbird Academy states an upper age limit of 58, but in practice, the vast majority of successful applicants are under 35.
               </p>
               <p>
-                For direct-entry First Officer positions (applying to airlines after completing your training independently), there is no age barrier. In 2026, with the pilot shortage at its peak, airlines are hiring qualified pilots of all ages.
+                For direct-entry First Officer positions (applying to airlines after completing your training independently), there is no age barrier. In 2026, some UK and European airlines are actively recruiting, but hiring remains cyclical. Age should not be treated as the main barrier; medical fitness, training performance, finances and selection results matter more.
               </p>
             </>
           ),

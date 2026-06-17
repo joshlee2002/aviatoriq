@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
 
@@ -74,7 +75,7 @@ const TrainingTimeline = () => {
           content: (
             <>
               <p>
-                Regardless of whether you choose the integrated or modular route, certain core phases of training are universal. Understanding the typical duration for each of these components will help you construct a more accurate personal timeline. It's important to these are averages, and individual progress can vary.
+                Regardless of whether you choose the integrated or modular route, certain core phases of training are universal. Understanding the typical duration for each of these components will help you construct a more accurate personal timeline. It's important to remember these are averages, and individual progress can vary.
               </p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>

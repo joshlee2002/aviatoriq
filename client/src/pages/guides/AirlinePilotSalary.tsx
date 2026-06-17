@@ -40,7 +40,7 @@ export default function AirlinePilotSalary() {
                 A pilot's take-home pay is rarely just a flat salary. It is a combination of <strong>Basic Pay</strong> (your guaranteed minimum), <strong>Flight/Sector Pay</strong> (money earned for each hour flown or sector completed), and <strong>Allowances/Per Diems</strong> (tax-free money for meals and expenses while away from base).
               </p>
               <p>
-                When you see a starting salary of £34,000 for a First Officer at a major airline, that is usually just the basic pay. Once flight pay and allowances are factored in, that same pilot is likely earning £60,000+ in their first year.
+                When you see a starting salary quoted for a First Officer, check whether it is basic pay only or total package. Flight pay, sector pay, allowances, overtime and pension contributions can materially change the total, but they vary by airline and contract.
               </p>
             </>
           ),
@@ -147,7 +147,7 @@ export default function AirlinePilotSalary() {
                 The trade-off in aviation is usually between <strong>speed of promotion</strong> and <strong>ultimate earning ceiling</strong>. 
               </p>
               <p>
-                If you join Ryanair, you could be a Captain earning £150,000 within four years of finishing flight school. If you join British Airways, you might wait 12 years for your fourth stripe, but you will eventually have access to long-haul command positions that peak well above £200,000, alongside superior pension contributions.
+                Upgrade timelines and captain pay vary widely by airline, base, fleet growth and seniority. Low-cost carriers can sometimes offer faster command opportunities, while legacy long-haul airlines may offer higher long-term earning potential. Do not assume any single upgrade timeline or pay figure will apply to your cohort.
               </p>
             </>
           ),
@@ -166,7 +166,7 @@ export default function AirlinePilotSalary() {
                 <strong>Staff Travel:</strong> Almost all airlines offer discounted standby travel for pilots and their families. Legacy carriers like BA and Virgin Atlantic offer access to massive global networks (and premium cabins), which is a major lifestyle perk.
               </p>
               <p>
-                <strong>The Tax Bite:</strong> Unlike pilots flying for Emirates or Qatar Airways in the Middle East, UK pilots pay full UK income tax. A Captain earning £170,000 gross will take home approximately £107,000 after tax and National Insurance (assuming standard 2025/26 tax bands). This is why pension contributions and tax-free per diems are so heavily negotiated by pilot unions like BALPA.
+                <strong>The Tax Bite:</strong> Unlike pilots flying for Emirates or Qatar Airways in the Middle East, UK pilots pay full UK income tax. A high-earning UK captain will pay full UK income tax and National Insurance unless their personal tax position differs. Use current HMRC rates or professional advice for take-home estimates rather than relying on a single static figure. This is why pension contributions and tax-free per diems are so heavily negotiated by pilot unions like BALPA.
               </p>
             </>
           ),

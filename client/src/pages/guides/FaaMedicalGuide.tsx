@@ -1,14 +1,15 @@
+import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 
 export default function FaaMedicalGuide() {
   return (
     <GuideLayout
       title="FAA Medical Certificate Requirements for Airline Pilots (2026)"
-      subtitle="Everything you need to know about the FAA First, Second, and Third Class Medical Certificates — vision standards, disqualifying conditions, ADHD, depression, and the Special Issuance process."
+      subtitle="A 2026 overview of FAA First, Second, and Third Class Medical Certificates — vision standards, potentially disqualifying conditions, ADHD, depression, and the Special Issuance process."
       readTime="11 min read"
       heroImage="/manus-storage/faa-medical_60c77c69.jpg"
       canonical="/us/guides/faa-medical-requirements"
-      metaDescription="FAA medical certificate requirements for pilots in 2026. First, Second, and Third Class standards, disqualifying conditions, ADHD, depression, SSRI policy, and Special Issuance explained."
+      metaDescription="FAA medical certificate requirements for pilots in 2026. First, Second, and Third Class standards, potentially disqualifying conditions, ADHD, depression, SSRI policy, and Special Issuance explained."
       author="Joshua Fagan"
       authorRole="Founder, AviatorIQ — researched from FAA 14 CFR Part 67, FAA MedXPress guidance, and HIMS AME consultation data"
       lastUpdated="June 2026"
@@ -18,7 +19,7 @@ export default function FaaMedicalGuide() {
           content: (
             <div>
               <p className="mb-4">
-                The FAA issues three classes of medical certificate, each with different standards and validity periods. For an airline career, you need a First Class. For a commercial pilot certificate (CPL), you need at least a Second Class. Third Class is sufficient for private flying.
+                The FAA issues three classes of medical certificate, each with different standards and duration rules. For airline pilot privileges, a First Class medical is the normal target. For commercial pilot privileges outside ATP operations, you generally need at least a Second Class. Third Class or BasicMed may be enough for many private-pilot operations, depending on the aircraft and operation.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Use our free <Link href="/us/medical-lookup" className="text-blue-400 underline">FAA Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your FAA medical application.
@@ -74,7 +75,7 @@ export default function FaaMedicalGuide() {
                 If you have a complex medical history — ADHD diagnosis, depression, DUI, heart condition — do <strong>not</strong> submit a MedXPress application until you have had a private, off-the-record consultation with a HIMS AME (Human Intervention Motivation Study Aviation Medical Examiner). A HIMS AME specialises in complex medical cases and can advise you on how to present your history before anything goes on your official FAA record.
               </p>
               <p>
-                The cost of an AME appointment is typically <strong>$150–$250</strong>, paid directly to the examiner. Insurance does not cover this. A HIMS AME consultation (not an official exam) typically costs $200–$400.
+                AME pricing is not set by the FAA. Many routine appointments fall around <strong>$150–$250</strong>, paid directly to the examiner, but location and complexity can change the price. A HIMS AME consultation (not an official exam) can cost more, so confirm fees before booking.
               </p>
             </div>
           ),
@@ -142,7 +143,7 @@ export default function FaaMedicalGuide() {
                 ))}
               </ul>
               <p className="mb-4">
-                The process is expensive, time-consuming, and not guaranteed. Many applicants with ADHD history are granted a Special Issuance, but the process typically takes 6–18 months. If you have a history of ADHD, consult a HIMS AME before doing anything else.
+                The process can be expensive, time-consuming, and is not guaranteed. Some applicants with ADHD history are certificated after FAA review, but timing depends on the evaluation pathway and records requested. If you have a history of ADHD, consult a HIMS AME before submitting MedXPress.
               </p>
               <p className="text-sm p-3 rounded-lg" style={{ background: "rgba(255, 255, 255, 0.5)", border: "1px solid rgba(255, 255, 255, 0.1)", color: "rgba(255, 255, 255, 0.8)" }}>
                 Use our <strong className="text-white">US Medical Condition Lookup</strong> tool to check your specific condition against FAA standards.
@@ -178,7 +179,7 @@ export default function FaaMedicalGuide() {
                 ))}
               </ul>
               <p>
-                The SSRI Special Issuance process typically takes 6–12 months for initial approval. It is not guaranteed, but the majority of straightforward cases are approved. If you are currently on an approved SSRI and considering a pilot career, do not stop your medication without medical advice — consult a HIMS AME first.
+                The SSRI Special Issuance process can take months for initial approval. It is not guaranteed, and timing depends on the completeness of records, FAA workload and the specifics of the diagnosis/treatment history. If you are currently on an approved SSRI and considering a pilot career, do not stop your medication without medical advice — consult a HIMS AME first.
               </p>
             </div>
           ),
@@ -191,7 +192,7 @@ export default function FaaMedicalGuide() {
                 If you are in good health with no significant medical history, the AME will issue your certificate at the end of your appointment. This is a <strong>Standard Issuance</strong> — the straightforward case.
               </p>
               <p className="mb-4">
-                If you have a condition that requires further review, the AME cannot issue the certificate at the appointment. They must defer your application to the FAA Aerospace Medical Certification Division (AMCD) in Oklahoma City. The AMCD reviews your medical records and, if they determine you are safe to fly, grants a <strong>Special Issuance</strong>. This process typically takes 3–18 months depending on the complexity of your case.
+                If you have a condition that requires further review, the AME cannot issue the certificate at the appointment. They must defer your application to the FAA Aerospace Medical Certification Division (AMCD) in Oklahoma City. The AMCD reviews your medical records and, if they determine you are safe to fly, grants a <strong>Special Issuance</strong>. This process can take months depending on the complexity of your case, the records requested and FAA review times.
               </p>
               <p className="mb-4">
                 Special Issuances must be renewed periodically (usually annually) and require you to submit updated medical records to maintain the certificate. They are not permanent — if your condition changes, the FAA can revoke the Special Issuance.

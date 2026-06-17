@@ -1,10 +1,11 @@
+import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 
 const FrozenAtplUK = () => {
   return (
     <GuideLayout
       title="Frozen ATPL UK 2026: What It Is, How to Get One, and What It Costs"
-      subtitle="The complete guide to the Frozen ATPL — the qualification every UK airline requires before they will hire you as a First Officer."
+      subtitle="The complete guide to the Frozen ATPL — the qualification status most UK airline First Officer routes expect before type rating or line training."
       canonical="/guides/frozen-atpl-uk"
       metaDescription="Frozen ATPL UK 2026: what it is, the 13 CAA theory subjects, real costs (Bristol Groundschool from £626), how to unfreeze it, and what airlines actually require."
       faqSchema={[
@@ -46,7 +47,7 @@ const FrozenAtplUK = () => {
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
               <p>
-                In practice, every UK airline requires a Frozen ATPL before they will hire you as a First Officer. The moment you join an airline, you begin building the flight hours that will eventually allow you to "unfreeze" it — at which point you hold a full ATPL and become eligible for command upgrade.
+                In practice, most UK airline First Officer routes require the licences, ratings and theory credits commonly described as a Frozen ATPL before type rating or line training. The moment you join an airline, you begin building the flight hours that will eventually allow you to "unfreeze" it — at which point you hold a full ATPL and have met one licensing milestone relevant to future command upgrade consideration.
               </p>
               <p>
                 The Frozen ATPL is the standard entry qualification for commercial aviation in the UK. It applies whether you trained via an integrated programme (CAE Oxford, Skyborne, FTEJerez) or the modular route (PPL → CPL → MEIR → ATPL theory separately).
@@ -94,7 +95,7 @@ const FrozenAtplUK = () => {
           content: (
             <>
               <p>
-                Post-Brexit, the UK CAA syllabus has 13 ATPL theory subjects (the old JAA/EASA system had 14 — the UK merged two of the Aircraft General Knowledge papers). Each paper requires a minimum pass mark of 75%, and you have 6 sittings over 18 months to pass all 13.
+                Post-Brexit, the UK CAA syllabus has 13 ATPL theory subjects (the old JAA/EASA system had 14 — the UK merged two of the Aircraft General Knowledge papers). Each paper requires a minimum pass mark of 75%. Plan around the current UK CAA sitting, attempt and validity rules, and verify them before starting because exam administration rules can change.
               </p>
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
@@ -212,7 +213,7 @@ const FrozenAtplUK = () => {
                 </table>
               </div>
               <p>
-                At a typical short-haul airline flying 800–900 hours per year, you will reach 1,500 hours in approximately 18–24 months of line flying. Once you meet all the requirements, you apply to the UK CAA to have your fATPL converted to a full ATPL — at which point you become eligible for command upgrade training.
+                At a typical short-haul airline flying 800–900 hours per year, you will reach 1,500 hours in approximately 18–24 months of line flying. Once you meet all the requirements, you apply to the UK CAA to have your fATPL converted to a full ATPL — at which point you meet one important licensing requirement for future command upgrade consideration; airline command also depends on seniority, vacancies, performance and company requirements.
               </p>
             </>
           ),
@@ -225,10 +226,10 @@ const FrozenAtplUK = () => {
                 Every UK airline that operates commercial air transport under CAT (Commercial Air Transport) rules requires First Officer applicants to hold a Frozen ATPL. There are no exceptions — it is a regulatory requirement under UK Air Navigation Order Article 20.
               </p>
               <p>
-                In practice, airlines also require a type rating for their specific aircraft (A320, B737, etc.), which is either funded by the airline (BA Speedbird, Jet2FlightPath) or self-funded by the candidate (Ryanair, easyJet, most others). The type rating costs approximately £20,000–£30,000 and is typically done at a simulator training centre (CAE, L3Harris/Acron, FlightSafety) after receiving a conditional job offer.
+                In practice, airlines also require a type rating for their specific aircraft (A320, B737, etc.), which may be airline-funded, bonded, salary-deducted or self-funded depending on the airline and offer terms. The type rating costs approximately £20,000–£30,000 and is typically done at a simulator training centre (CAE, L3Harris/Acron, FlightSafety) after receiving a conditional job offer.
               </p>
               <p>
-                Some airlines (Ryanair, Wizz Air) accept newly qualified pilots with as few as 200 hours total time — the minimum required to hold a CPL/MEIR. Others (BA, Virgin Atlantic) require significantly more experience. The Frozen ATPL is the entry ticket; the hours and type rating determine which airlines you can realistically target.
+                Some airlines (Ryanair, Wizz Air) accept newly qualified pilots with as few as 200 hours total time — the minimum required to hold a CPL/MEIR. Others may require more experience or select through specific cadet/direct-entry pathways. The Frozen ATPL is the entry ticket; the hours and type rating determine which airlines you can realistically target.
               </p>
             </>
           ),

@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
 
@@ -20,7 +21,7 @@ export default function FaaMedicalClass2() {
           content: (
             <>
               <p>
-                The Federal Aviation Administration (FAA) Class 2 Medical Certificate is a critical credential for aspiring and active commercial pilots, flight engineers, flight navigators, and air traffic control tower operators in the United States. Unlike the Class 3 medical, which permits private pilot privileges, the Class 2 certificate signifies a higher standard of medical fitness, essential for those operating aircraft for compensation or hire, but not as an airline transport pilot (ATP) in scheduled air carrier operations. Maintaining this certificate is paramount, as it directly impacts a pilot's ability to exercise their professional privileges and ensures the safety of the national airspace system. This guide provides an in-depth examination of the FAA Class 2 Medical Certificate requirements, application process, costs, and validity periods, reflecting the most current 2026 regulations and data.
+                The Federal Aviation Administration (FAA) Class 2 Medical Certificate is a critical credential for aspiring and active commercial pilots, flight engineers, flight navigators, and air traffic control tower operators in the United States. Unlike the Class 3 medical, which permits private pilot privileges, the Class 2 certificate signifies a higher standard of medical fitness, essential for those operating aircraft for compensation or hire, but not as an airline transport pilot (ATP) in scheduled air carrier operations. Maintaining this certificate is paramount, as it directly impacts a pilot's ability to exercise their professional privileges and ensures the safety of the national airspace system. This guide explains FAA Class 2 Medical Certificate requirements, application process, cost ranges and duration rules for 2026, with the caveat that AME/FAA decisions are case-specific.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Use our free <Link href="/us/medical-lookup" className="text-blue-400 underline">FAA Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your FAA medical application.
@@ -33,7 +34,7 @@ export default function FaaMedicalClass2() {
           content: (
             <>
               <p>
-                All FAA medical certifications are governed by Title 14 of the Code of Federal Regulations (CFR) Part 67, which meticulously outlines the medical standards for airmen. This regulatory framework establishes the minimum physical and mental health requirements necessary for safe flight operations. Part 67 categorizes medical certificates into three classes: Class 1 for Airline Transport Pilots, Class 2 for Commercial Pilots and related roles, and Class 3 for Private Pilots. Each class has progressively stringent requirements, with Class 1 being the most demanding. Understanding the specific criteria within Part 67 is fundamental for any pilot seeking to obtain or renew their medical certificate .
+                All FAA medical certifications are governed by Title 14 of the Code of Federal Regulations (CFR) Part 67, which meticulously outlines the medical standards for airmen. This regulatory framework establishes the minimum physical and mental health requirements necessary for safe flight operations. Part 67 categorizes medical certificates into three classes: Class 1 for Airline Transport Pilots, Class 2 for Commercial Pilots and related roles, and Class 3 for Private Pilots. Each class has progressively stringent requirements, with Class 1 being the most demanding. Understanding Part 67 is fundamental for any pilot seeking to obtain or renew a medical certificate, but individual certification decisions belong to the AME and FAA.
               </p>
             </>
           )

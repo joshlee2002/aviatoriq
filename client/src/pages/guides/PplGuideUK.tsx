@@ -11,7 +11,7 @@ const PplGuideUK = () => {
       faqSchema={[
         {
           question: "What is the minimum age to start PPL training in the UK?",
-          answer: "You can begin flight training for your PPL at any age, but you must be at least 16 years old to fly solo and 17 years old to hold the Private Pilot Licence (PPL) itself. There is no upper age limit, provided you can pass the required medical examinations.",
+          answer: "You can take introductory lessons at many ages, but formal solo/licence milestones are age-limited: you normally need to be at least 16 years old to fly solo and 17 years old to hold the Private Pilot Licence (PPL) itself. There is no upper age limit, provided you can pass the required medical examinations.",
         },
         {
           question: "How much does a PPL typically cost in the UK in 2026?",
@@ -23,7 +23,7 @@ const PplGuideUK = () => {
         },
         {
           question: "What medical certificate is required for a UK PPL?",
-          answer: "To obtain a UK Private Pilot Licence, you will need to hold a Part MED Class 2 Medical Certificate. This medical examination assesses your general health, vision, hearing, and other factors to ensure you are fit to fly. It must be obtained from an Aero Medical Examiner (AME) approved by the UK Civil Aviation Authority (CAA).",
+          answer: "To obtain a UK Private Pilot Licence, you will need to hold a Part MED Class 2 Medical Certificate. This medical examination assesses your general health, vision, hearing, and other factors to ensure you are fit to fly. It is normally obtained from an Aero Medical Examiner (AME) approved by the UK Civil Aviation Authority (CAA).",
         },
         {
           question: "What can I do with a UK Private Pilot Licence?",
@@ -59,10 +59,10 @@ const PplGuideUK = () => {
           content: (
             <>
               <p>
-                Obtaining a UK PPL involves meeting several key requirements set forth by the UK CAA. Firstly, while you can start flight training at any age, you must be at least 16 years old to fly solo and a minimum of 17 years old to be issued the PPL. There is no upper age limit, provided you maintain the necessary medical fitness. This accessibility makes flying a lifelong pursuit for many.
+                Obtaining a UK PPL involves meeting several key requirements set forth by the UK CAA. Firstly, while you can start flight training at any age, you normally need to be at least 16 years old to fly solo and a minimum of 17 years old to be issued the PPL. There is no upper age limit, provided you maintain the necessary medical fitness. This accessibility makes flying a lifelong pursuit for many.
               </p>
               <p>
-                A critical requirement is the Class 2 Medical Certificate. This must be obtained from a UK CAA-approved Aero Medical Examiner (AME). The medical examination assesses your overall health, including vision, hearing, cardiovascular health, and neurological function, to ensure you are fit to safely operate an aircraft. It's advisable to undergo this medical early in your training to identify any potential issues that could prevent you from obtaining the licence. The certificate typically needs to be renewed periodically, with frequency increasing with age.
+                A critical requirement is the Class 2 Medical Certificate. This must be obtained from a UK CAA-approved Aero Medical Examiner (AME). The medical examination assesses your overall health, including vision, hearing, cardiovascular health, and neurological function, to ensure you are fit to safely operate an aircraft. It's advisable to undergo this medical early in your training to identify any potential issues that could prevent you from obtaining the licence. Renewal periods vary with age and medical certificate type, so check the current UK CAA/AME guidance.
               </p>
               <p>
                 Flight experience is at the core of PPL training. You must complete a minimum of 45 hours of flight time, of which at least 25 hours must be dual instruction (with an instructor) and 10 hours must be supervised solo flight time. Within these 10 solo hours, you must complete at least 5 hours of solo cross-country flight time, including one cross-country flight of at least 270 km (150 NM) with full-stop landings at two aerodromes different from the departure aerodrome. Most students, however, require closer to 55-60 hours to reach the required proficiency for the skill test.
@@ -75,10 +75,10 @@ const PplGuideUK = () => {
           content: (
             <>
               <p>
-                The financial investment for a UK PPL is substantial, and it's essential to have a clear understanding of the costs involved. In 2026, the average expenditure for a PPL in the UK typically falls between £14,000 and £19,000. This range accounts for variations in flight school pricing, aircraft type, location, and the individual student's learning pace. It's rare for students to complete the licence in the absolute minimum 45 hours, so budgeting for additional hours is a pragmatic approach.
+                The financial investment for a UK PPL is substantial, and it's essential to have a clear understanding of the costs involved. In 2026, the average expenditure for a PPL in the UK typically falls between £14,000 and £19,000. This range accounts for variations in flight school pricing, aircraft type, location, and the individual student's learning pace. Many students do not complete the licence in the absolute minimum 45 hours, so budgeting for additional hours is a pragmatic approach.
               </p>
               <p>
-                Key cost components include hourly rates for aircraft rental and instructor fees. Aircraft rental for a common training aircraft like a Cessna 152 can range from £185 to £315 per hour, depending on the school and location. Instructor fees typically add another £25 to £35 per hour. Beyond these core flight costs, you'll need to factor in theoretical knowledge course materials, exam fees for both theory and practical tests, landing fees, navigation charges, and the initial Class 2 medical examination fee. Some schools offer integrated packages, which might seem more expensive upfront but can sometimes offer better value overall.
+                Key cost components include hourly rates for aircraft rental and instructor fees. Aircraft and instructor rates vary sharply by school, aircraft type and location; use written school quotes rather than assuming a national average. Beyond these core flight costs, you'll need to factor in theoretical knowledge course materials, exam fees for both theory and practical tests, landing fees, navigation charges, and the initial Class 2 medical examination fee. Some schools offer integrated packages, which might seem more expensive upfront but can sometimes offer better value overall.
               </p>
               <p>
                 Here's an estimated breakdown of typical PPL costs in the UK for 2026:
@@ -148,7 +148,7 @@ const PplGuideUK = () => {
                 The nine subjects are divided into common areas and those specific to aeroplane operations. The common subjects include Air Law, Human Performance and Limitations, Meteorology, Communications, and Navigation. These provide the fundamental knowledge required for any pilot. The aeroplane-specific subjects are Principles of Flight, Operational Procedures, Flight Performance and Planning, and Aircraft General Knowledge. These delve into the specifics of how aeroplanes fly, how they are operated, and their systems.
               </p>
               <p>
-                It's important to note that once you pass your first theoretical exam, you have a 24-month window to pass all remaining exams and complete your flight training, culminating in the skill test. If this period expires, you will need to retake any expired exams. Many students opt for ground school courses, either in-person or online, to prepare for these challenging exams, as a thorough understanding of the material is crucial not just for passing, but for safe flying.
+                It's important to note that theory validity windows and completion rules should be checked against current CAA guidance and your DTO/ATO before planning the training sequence. If this period expires, you will need to retake any expired exams. Many students opt for ground school courses, either in-person or online, to prepare for these challenging exams, as a thorough understanding of the material is crucial not just for passing, but for safe flying.
               </p>
             </>
           ),
@@ -177,7 +177,7 @@ const PplGuideUK = () => {
                 The UK Private Pilot Licence (PPL) grants you significant privileges, but it also comes with clear limitations. Understanding these is crucial for operating legally and safely. Fundamentally, a PPL allows you to act as the pilot in command (PIC) of an aircraft for non-commercial purposes. This means you can fly for personal enjoyment, take passengers (friends, family) with you, and even share the direct operating costs of a flight with those passengers. It's the ultimate freedom for recreational aviators.
               </p>
               <p>
-                However, the PPL explicitly prohibits you from flying for 'hire or reward'. This means you cannot be paid to fly, nor can you charge passengers for their seats beyond sharing the direct costs (fuel, landing fees, etc.). If you wish to pursue aviation as a career or undertake flights for commercial gain, you will need to progress to a Commercial Pilot Licence (CPL) or an Airline Transport Pilot Licence (ATPL). a basic PPL does not permit you to fly in Instrument Meteorological Conditions (IMC) or at night without further specific ratings, such as an Instrument Rating (IR) or a Night Rating.
+                However, the PPL explicitly prohibits you from flying for 'hire or reward'. This means you cannot be paid to fly, nor can you charge passengers for their seats beyond sharing the direct costs (fuel, landing fees, etc.). If you wish to pursue aviation as a career or undertake flights for commercial gain, you will need to progress to a Commercial Pilot Licence (CPL) or an Airline Transport Pilot Licence (ATPL). A basic PPL does not permit you to fly in Instrument Meteorological Conditions (IMC) or at night without further specific ratings, such as an Instrument Rating (IR) or a Night Rating.
               </p>
               <p>
                 You can also add various ratings and endorsements to your PPL to expand your privileges, such as a Night Rating, Instrument Rating (Restricted) (IR(R)), or various class/type ratings for different aircraft. These additional qualifications enhance your capabilities and allow you to fly in more diverse conditions or aircraft types, further enriching your flying experience within the non-commercial framework of the PPL.
@@ -193,10 +193,10 @@ const PplGuideUK = () => {
                 For many, the PPL is just the beginning of a longer aviation journey, often serving as the stepping stone towards a professional piloting career. Once you have your PPL, the next logical progression for aspiring commercial pilots is to obtain a Commercial Pilot Licence (CPL) and eventually an Airline Transport Pilot Licence (ATPL). This transition involves significantly more advanced training, both theoretical and practical, and a much greater financial and time commitment.
               </p>
               <p>
-                The path to a CPL typically involves accumulating additional flight hours beyond the PPL minimums, often reaching 150-200 hours, including more complex cross-country flights and night flying. You will also undertake advanced theoretical knowledge training covering subjects like Air Law, Aircraft General Knowledge, Flight Planning, Human Performance, Meteorology, Navigation, Operational Procedures, Principles of Flight, and Communications, but at a much deeper, commercial level. This culminates in a series of challenging theoretical exams and a rigorous practical skill test.
+                The path to a CPL typically involves accumulating additional flight hours beyond the PPL minimums, often reaching 150-200 hours, including more complex cross-country flights and night flying. You would also undertake advanced theoretical knowledge training covering subjects like Air Law, Aircraft General Knowledge, Flight Planning, Human Performance, Meteorology, Navigation, Operational Procedures, Principles of Flight, and Communications, but at a much deeper, commercial level. This culminates in a series of challenging theoretical exams and a rigorous practical skill test.
               </p>
               <p>
-                After obtaining your CPL, and often an Instrument Rating (IR) and Multi-Engine Piston (MEP) rating, you can then work towards your 'frozen ATPL'. This involves passing the 13 UK CAA ATPL theoretical knowledge exams. Once you gain sufficient experience (typically 1500 hours of flight time), your 'frozen ATPL' becomes a full ATPL, allowing you to act as pilot in command of multi-pilot aircraft in commercial air transport. The journey is long and demanding, but the PPL provides the essential foundation and initial experience.
+                After obtaining your CPL, and often an Instrument Rating (IR) and Multi-Engine Piston (MEP) rating, you can then work towards your 'frozen ATPL'. This involves passing the 13 UK CAA ATPL theoretical knowledge exams. A future full ATPL requires meeting the UK CAA flight-time, experience and skill-test requirements; the PPL is only the first step toward that professional pathway. The journey is long and demanding, but the PPL provides the essential foundation and initial experience.
               </p>
             </>
           ),

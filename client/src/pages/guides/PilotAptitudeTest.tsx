@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
 
@@ -7,7 +8,7 @@ export default function PilotAptitudeTest() {
       title="Pilot Aptitude Tests UK 2026: Free Preparation Guide"
       subtitle="What the tests actually measure, how they work, and how to prepare — without paying £200+ for a prep course."
       canonical="/guides/pilot-aptitude-test-uk"
-      metaDescription="Free pilot aptitude test preparation guide 2026: what the tests measure, sample questions, and how to prepare for numerical reasoning, spatial awareness, and multi-tasking assessments. Updated June 2026."
+      metaDescription="Pilot aptitude tests UK 2026: what airlines test, common assessment types, preparation plan, practice tips and mistakes to avoid."
       readTime="11 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/aptitude-test_3c7e9f2a.jpg"
@@ -23,7 +24,7 @@ export default function PilotAptitudeTest() {
         { question: "What are pilot aptitude tests?", answer: "Pilot aptitude tests are psychometric assessments used by airlines and flight schools to identify candidates with the cognitive profile associated with successful pilots. They typically cover numerical reasoning, spatial awareness, multi-tasking, working memory, and psychomotor skills." },
         { question: "Can you prepare for pilot aptitude tests?", answer: "Yes — preparation makes a measurable difference. The tests measure underlying cognitive abilities, but familiarity with the test format, question types, and time pressure significantly improves performance. Most candidates who prepare systematically score higher than those who don't." },
         { question: "What is the DLR test for pilots?", answer: "The DLR (Deutsches Zentrum für Luft- und Raumfahrt) test is a comprehensive pilot aptitude assessment used by Lufthansa, Austrian Airlines, and several other European carriers. It covers cognitive ability, personality, and psychomotor skills, and is considered one of the most rigorous pilot selection assessments in the world." },
-        { question: "How hard are pilot aptitude tests?", answer: "The tests are designed to differentiate between candidates — they are not easy. However, they are not testing aviation knowledge. They are testing cognitive abilities that can be improved with practice. Most candidates who prepare systematically find the tests manageable." },
+        { question: "How hard are pilot aptitude tests?", answer: "The tests are designed to differentiate between candidates — they are not easy. However, they are not testing aviation knowledge. They are testing cognitive abilities that can be improved with practice. Systematic preparation can make the tests more manageable, but results still depend on aptitude, test-day performance and airline benchmarks." },
         { question: "What happens if you fail a pilot aptitude test?", answer: "Failing a pilot aptitude test for one airline does not permanently disqualify you from aviation. Different airlines use different tests, and most allow reapplication after a waiting period (typically 6–12 months). Use the experience to identify your weaknesses and prepare more thoroughly for the next application." },
       ]}
       sections={[
@@ -42,7 +43,7 @@ export default function PilotAptitudeTest() {
                 Research into pilot performance has identified a consistent set of cognitive abilities that predict success in training and on the line. These include: the ability to process multiple streams of information simultaneously (multi-tasking), strong spatial reasoning (understanding three-dimensional relationships), numerical accuracy under time pressure, working memory capacity, and psychomotor coordination (hand-eye coordination and fine motor control).
               </p>
               <p>
-                The tests are designed to be difficult enough to differentiate between candidates — they are not pass/fail in the way an exam is. Your score is compared against a normative population, and airlines are looking for candidates who score in the upper percentiles. This means that preparation — which improves your familiarity with the format and reduces the cognitive load of understanding what you're being asked to do — can meaningfully improve your relative performance.
+                The tests are designed to be difficult enough to differentiate between candidates — they are not pass/fail in the way an exam is. Your score is compared against a normative population, and airlines are looking for candidates who score in the upper percentiles. This means that preparation — which improves your familiarity with the format and reduces the cognitive load of understanding what you're being asked to do — can improve familiarity and may improve relative performance.
               </p>
             </>
           ),
@@ -58,13 +59,13 @@ export default function PilotAptitudeTest() {
                 <strong>Numerical Reasoning:</strong> Questions involving arithmetic, data interpretation, percentages, ratios, and basic algebra. These are typically timed, with 30–60 seconds per question. The difficulty is not the mathematics — it is the time pressure. Candidates who are not fluent with mental arithmetic and quick data reading will struggle. Practice with timed numerical reasoning tests until you can work quickly and accurately.
               </p>
               <p>
-                <strong>Spatial Awareness / Orientation:</strong> Questions that test your ability to understand and manipulate three-dimensional objects and spatial relationships. Common formats include: identifying which 3D shape matches a 2D net, determining the orientation of an aircraft after a series of turns, and identifying which object is the mirror image of a target. These tests are highly correlated with flying ability and are weighted heavily in pilot selection.
+                <strong>Spatial Awareness / Orientation:</strong> Questions that test your ability to understand and manipulate three-dimensional objects and spatial relationships. Common formats include: identifying which 3D shape matches a 2D net, determining the orientation of an aircraft after a series of turns, and identifying which object is the mirror image of a target. These tests are relevant to flying tasks and may be weighted heavily depending on the airline or test provider.
               </p>
               <p>
                 <strong>Multi-Tasking:</strong> The most pilot-specific test type. You are typically asked to perform two or more tasks simultaneously — for example, tracking a moving target with a joystick while responding to auditory or visual stimuli. These tests measure your ability to divide attention and maintain performance across multiple concurrent demands. They are difficult to prepare for directly, but general dual-task practice (e.g., playing certain video games, practising instrument tracking) can improve underlying performance.
               </p>
               <p>
-                <strong>Working Memory:</strong> Tests that assess your ability to hold and manipulate information in short-term memory. Common formats include: remembering sequences of numbers or letters while performing another task, and updating a running total as new information is presented. These tests are closely related to the cognitive demands of flying, where you must hold multiple pieces of information (clearances, altitudes, headings, fuel state) in mind simultaneously.
+                <strong>Working Memory:</strong> Tests that assess your ability to hold and manipulate information in short-term memory. Common formats include: remembering sequences of numbers or letters while performing another task, and updating a running total as new information is presented. These tests relate to the cognitive demands of flying, where you must hold multiple pieces of information (clearances, altitudes, headings, fuel state) in mind simultaneously.
               </p>
               <p>
                 <strong>Verbal Reasoning:</strong> Questions assessing your ability to read and interpret written information accurately. Less heavily weighted than numerical and spatial tests in pilot selection, but still present in most selection batteries.
@@ -142,13 +143,13 @@ export default function PilotAptitudeTest() {
           content: (
             <>
               <p>
-                The following sample questions are representative of the types of questions you will encounter in pilot aptitude tests. They are not taken from any specific airline's test and are provided for illustrative purposes only.
+                The following sample questions are representative of the types of questions you may encounter in pilot aptitude tests. They are not taken from any specific airline's test and are provided for illustrative purposes only.
               </p>
               <p>
-                <strong>Numerical Reasoning (example):</strong> An aircraft is flying at 250 knots. It needs to cover 180 nautical miles. How many minutes will the flight take? (Answer: 180 ÷ 250 × 60 = 43.2 minutes.) In the actual test, you will have approximately 30–45 seconds per question and will face more complex data interpretation questions alongside basic arithmetic.
+                <strong>Numerical Reasoning (example):</strong> An aircraft is flying at 250 knots. It needs to cover 180 nautical miles. How many minutes will the flight take? (Answer: 180 ÷ 250 × 60 = 43.2 minutes.) In the actual test, you may have approximately 30–45 seconds per question and will face more complex data interpretation questions alongside basic arithmetic.
               </p>
               <p>
-                <strong>Spatial Awareness (example):</strong> An aircraft is heading north. It turns 90° to the right, then 45° to the left. What direction is it now heading? (Answer: 045° / North-East.) In the actual test, you will face more complex multi-step orientation problems and 3D shape manipulation questions.
+                <strong>Spatial Awareness (example):</strong> An aircraft is heading north. It turns 90° to the right, then 45° to the left. What direction is it now heading? (Answer: 045° / North-East.) In the actual test, you may face more complex multi-step orientation problems and 3D shape manipulation questions.
               </p>
               <p>
                 <strong>Working Memory (example):</strong> You are shown a sequence of numbers: 7, 3, 9, 2, 5. You are then asked to recall the 3rd number in the sequence. In the actual test, the sequences are longer, presented more quickly, and you are often asked to perform a secondary task simultaneously.
@@ -173,7 +174,7 @@ export default function PilotAptitudeTest() {
                 <strong>Don't dwell on difficult questions.</strong> In timed tests, spending 3 minutes on one question you can't answer costs you the time to answer three questions you could. Move on, mark the question if you can return to it, and come back at the end if time permits.
               </p>
               <p>
-                <strong>Stay calm during the multi-tasking tests.</strong> These tests are designed to be difficult — almost everyone finds them stressful. The key is to stay calm, prioritise the primary task, and accept that you will not be perfect. Anxiety reduces performance; acceptance of imperfection improves it.
+                <strong>Stay calm during the multi-tasking tests.</strong> These tests are designed to be difficult — almost everyone finds them stressful. The key is to stay calm, prioritise the primary task, and accept that you may not be perfect. Anxiety reduces performance; acceptance of imperfection improves it.
               </p>
               <p>
                 <strong>Be honest in personality assessments.</strong> Many selection batteries include personality questionnaires. These are not pass/fail, and there are no "right" answers. Attempting to game personality assessments is both detectable and counterproductive — the profiles that correlate with pilot success are well-documented, and inconsistent responses are flagged. Answer honestly.

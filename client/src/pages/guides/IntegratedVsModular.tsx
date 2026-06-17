@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
 
@@ -7,7 +8,7 @@ export default function IntegratedVsModular() {
       title="Integrated vs Modular ATPL Training UK 2026: Which Is Right for You?"
       subtitle="An honest, data-driven comparison of the two main routes to an ATPL — including verified 2026 costs, real timelines, airline acceptance, and a decision framework for your situation."
       canonical="/guides/integrated-vs-modular"
-      metaDescription="Integrated vs modular ATPL training UK 2026: honest comparison of cost, timeline, airline acceptance and which route suits your situation. Includes real 2026 prices from CAE, Acron, Stapleford and Bristol Groundschool."
+      metaDescription="Integrated vs modular ATPL training UK 2026: compare cost, timeline, airline recognition, flexibility and which route fits your budget."
       faqSchema={[
         { question: "What is the difference between integrated and modular ATPL training?", answer: "Integrated training is a single full-time programme (18–24 months, £95,880–£119,500) that takes you from zero to frozen ATPL at one academy. Modular training lets you complete each licence stage separately (2–5 years, £77,000–£90,000 in the UK), allowing you to keep working between phases." },
         { question: "Is integrated or modular training better for getting an airline job?", answer: "Both routes lead to the same frozen ATPL qualification. Major UK airlines including British Airways, easyJet, Ryanair, and Jet2 all accept both integrated and modular graduates. What matters most is your simulator performance, interview preparation, and total hours. The MPL route (via BA Speedbird or easyJet Generation) is the only route where the training method is tied to a specific airline." },
@@ -33,7 +34,7 @@ export default function IntegratedVsModular() {
           content: (
             <>
               <p>
-                Aspiring airline pilots in the UK have three routes to a frozen ATPL: integrated, modular, and MPL. The integrated and modular routes are self-funded and lead to the same qualification. The MPL is only available through sponsored airline cadet programmes. Understanding the real differences — not the marketing version — is the most important decision you will make before spending £80,000–£120,000.
+                Aspiring airline pilots in the UK have three routes to a frozen ATPL: integrated, modular, and MPL. The integrated and modular routes usually lead to a frozen ATPL route. MPL routes are airline-specific and may be funded, partly funded or self-funded depending on the programme. Understanding the real differences — not the marketing version — is the most important decision you will make before spending £80,000–£120,000.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
@@ -144,7 +145,7 @@ export default function IntegratedVsModular() {
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">ATPL Theory (BGS course + CAA exams)</td>
-                      <td className="px-4 py-3">£3,631 + up to £16,393 CAA fees</td>
+                      <td className="px-4 py-3">£3,631 + approx. £1,261 CAA exam first sittings</td>
                       <td className="px-4 py-3">13 subjects</td>
                       <td className="px-4 py-3">6–18 months</td>
                     </tr>
@@ -200,7 +201,7 @@ export default function IntegratedVsModular() {
                 </table>
               </div>
               <p className="text-xs text-white/50 mt-2">
-                Costs based on Stapleford Flight Centre pricelist from 1 April 2026 and Bristol Groundschool published prices. ATPL theory CAA exam fees assume all 13 papers passed at first sitting (£1,261 per paper = £16,393 total). Hour building overseas (Spain or Florida) reduces that line item to approximately £14,000. Total can be reduced to £55,000–£65,000 by training with Bartolini Air in Poland for an EASA licence.
+                Costs should be verified against the current school and UK CAA fee schedules before enrolling. UK CAA professional pilot exams are listed at £97 per exam in 2026; with 13 ATPL exams, first sittings are approximately £1,261 before resits or test-centre differences. Overseas hour building or EASA training can reduce cost, but verify the final licence authority and conversion implications.
               </p>
             </>
           ),
@@ -210,7 +211,7 @@ export default function IntegratedVsModular() {
           content: (
             <>
               <p>
-                Both integrated and modular students must pass the same 13 UK CAA ATPL theoretical knowledge subjects. These are examined by the CAA at approved test centres. The initial sitting fee is £1,261 per paper; resits cost £97 per paper. Passing all 13 at the first attempt costs £16,393 in CAA fees alone — a figure that is frequently omitted from modular cost estimates.
+                Both integrated and modular students must pass the same 13 UK CAA ATPL theoretical knowledge subjects. These are examined by the CAA at approved test centres. The CAA lists professional pilot examination fees at £97 per exam in 2026. With 13 ATPL theoretical knowledge exams, first sittings total approximately £1,261 before any resits, venue differences or provider fees.
               </p>
               <div className="overflow-x-auto my-6">
                 <table className="w-full text-sm text-left">
@@ -319,7 +320,7 @@ export default function IntegratedVsModular() {
               </div>
 
               <p>
-                The MPL route is the only one where the training method is directly tied to a specific airline. An MPL licence is type-specific and cannot easily be used at another airline without conversion. If you are selected for BA Speedbird or easyJet Generation, the MPL is an excellent outcome — but you should not choose integrated training specifically hoping to get onto these programmes, as selection rates are very low.
+                The MPL route is airline-specific and tied closely to the operator and training provider. An MPL licence is type-specific and cannot easily be used at another airline without conversion. If you are selected for BA Speedbird or easyJet Generation, the MPL is an excellent outcome — but you should not choose integrated training specifically hoping to get onto these programmes, as selection rates are very low.
               </p>
             </>
           ),

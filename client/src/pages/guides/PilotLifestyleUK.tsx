@@ -22,7 +22,7 @@ export default function PilotLifestyleUK() {
         },
         {
           question: "Do pilots sleep in hotels every night?",
-          answer: "No. If you fly short-haul for airlines like easyJet, Ryanair, or Jet2, you will return to your home base almost every single night. If you fly long-haul for British Airways or Virgin Atlantic, you will spend significant time in hotels overseas."
+          answer: "No. If you fly short-haul for airlines like easyJet, Ryanair, or Jet2, you often return to your home base, but roster pattern varies by airline, base and disruption. If you fly long-haul for British Airways or Virgin Atlantic, you may spend significant time in hotels overseas."
         },
         {
           question: "Is it hard to have a family as a pilot?",
@@ -51,21 +51,21 @@ export default function PilotLifestyleUK() {
           content: (
             <>
               <p>
-                The vast majority of newly qualified pilots in the UK will begin their careers flying short-haul operations on Airbus A320 or Boeing 737 aircraft.
+                The vast majority of newly qualified pilots in the UK often begin their careers flying short-haul operations on Airbus A320 or Boeing 737 aircraft.
               </p>
               
               <h3 className="text-xl font-bold mt-6 mb-3 text-white">The Roster</h3>
               <p>
-                Low-cost carriers (LCCs) operate on high utilization models. Airlines like easyJet and Ryanair famously operate a fixed roster pattern, typically <strong>5 days on, 4 days off</strong>. This is highly prized by pilots because it offers extreme predictability—you can plan a family holiday or a wedding six months in advance.
+                Low-cost carriers (LCCs) operate on high utilization models. Airlines like easyJet and Ryanair often use published roster patterns such as <strong>5 days on, 4 days off</strong>. This is highly prized by pilots because it offers extreme predictability—you can plan a family holiday or a wedding six months in advance.
               </p>
 
               <h3 className="text-xl font-bold mt-6 mb-3 text-white">The Daily Grind</h3>
               <p>
-                Short-haul flying is characterized by "multi-sector" days. You will typically fly two to four sectors (flights) per day. For example: London Gatwick to Alicante, back to Gatwick, then to Geneva, and back to Gatwick.
+                Short-haul flying is characterized by "multi-sector" days. You may typically fly two to four sectors (flights) per day. For example: London Gatwick to Alicante, back to Gatwick, then to Geneva, and back to Gatwick.
               </p>
               <ul className="list-disc pl-5 space-y-2 mt-2 mb-4">
-                <li><strong>Earlies:</strong> Reporting for duty at 04:30 AM. You will finish by early afternoon, leaving the rest of the day free, but you must go to bed very early to manage fatigue.</li>
-                <li><strong>Lates:</strong> Reporting for duty at 14:00 PM. You will finish around midnight or 01:00 AM.</li>
+                <li><strong>Earlies:</strong> Reporting for duty at 04:30 AM. You may finish by early afternoon, leaving the rest of the day free, but you need to manage sleep carefully very early to manage fatigue.</li>
+                <li><strong>Lates:</strong> Reporting for duty at 14:00 PM. You may finish around midnight or 01:00 AM.</li>
               </ul>
               <p>
                 <strong>The major benefit:</strong> You sleep in your own bed almost every night. There are very few "night stops" (layovers in hotels) in modern LCC operations.
@@ -88,7 +88,7 @@ export default function PilotLifestyleUK() {
 
               <h3 className="text-xl font-bold mt-6 mb-3 text-white">The Daily Grind</h3>
               <p>
-                You fly fewer sectors (usually just one long flight per day), but you cross multiple time zones. The primary challenge of long-haul flying is <strong>jet lag and fatigue management</strong>. You will spend significant time away from home, living out of a suitcase.
+                You fly fewer sectors (usually just one long flight per day), but you cross multiple time zones. The primary challenge of long-haul flying is <strong>jet lag and fatigue management</strong>. You may spend significant time away from home, living out of a suitcase.
               </p>
               <p>
                 <strong>The major benefit:</strong> When you are home, you are truly home for several days at a time. You also get to experience the "glamour" of layovers in major global cities, though a 24-hour layover after a 10-hour flight is often spent mostly sleeping.
@@ -101,11 +101,11 @@ export default function PilotLifestyleUK() {
           content: (
             <>
               <p>
-                Where you live in relation to your assigned airport (your "base") will dictate your quality of life more than almost any other factor.
+                Where you live in relation to your assigned airport (your "base") can strongly influence your quality of life more than almost any other factor.
               </p>
               <ul className="list-disc pl-5 space-y-4 mt-4 mb-6">
                 <li>
-                  <strong>Living in Base:</strong> If you live within a 45-minute drive of your base (e.g., living in Sussex while based at Gatwick), your lifestyle will be significantly better. You maximize your rest time and minimize stress.
+                  <strong>Living in Base:</strong> If you live within a 45-minute drive of your base (e.g., living in Sussex while based at Gatwick), your lifestyle is often easier. You can maximise rest time and reduce commuting stress.
                 </li>
                 <li>
                   <strong>Commuting:</strong> Many pilots choose to live far from their base for family or financial reasons, and commute by car or even by air. Commuting adds hours of unpaid, stressful travel to your working day. A 04:30 AM report time becomes a 02:30 AM wake-up if you have a two-hour commute.
@@ -122,7 +122,7 @@ export default function PilotLifestyleUK() {
                 Aviation is a 24/7/365 industry. Airplanes do not stop flying on Christmas Day, your partner's birthday, or your child's school play.
               </p>
               <p>
-                As a junior pilot, you will work weekends and holidays. Having a family as a pilot requires an incredibly supportive and independent partner who can handle solo parenting during your blocks of work or long-haul trips. However, the flip side is that when you have your 4 days off (on a short-haul roster), you are completely disconnected from work—there are no emails to answer or projects to take home.
+                As a junior pilot, you should expect weekends, holidays and early/late duties, especially when junior. Having a family as a pilot requires an incredibly supportive and independent partner who can handle solo parenting during your blocks of work or long-haul trips. However, the flip side is that when you have your 4 days off (on a short-haul roster), you are completely disconnected from work—there are no emails to answer or projects to take home.
               </p>
             </>
           ),

@@ -5,10 +5,10 @@ import GuideScopeBanner from "@/components/GuideScopeBanner";
 export default function TypeRating() {
   return (
     <GuideLayout
-      title="Pilot Type Ratings UK: What They Are, What They Cost, and How to Get One (2026)"
+      title="Pilot Type Rating UK 2026: Costs, Bonds & Risks"
       subtitle="Everything you need to know about type ratings — A320, B737, and beyond — including self-funded vs airline-sponsored options and the training bond reality."
       canonical="/guides/pilot-type-rating-uk"
-      metaDescription="What is a pilot type rating? How much does an A320 or B737 type rating cost in the UK in 2026? Self-funded vs airline-sponsored. Complete guide for aspiring airline pilots."
+      metaDescription="Pilot type rating UK 2026: what it costs, when airlines pay, training bonds, self-funded risks and what new pilots should know."
       readTime="11 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/type-rating_e790e1aa.jpg"
@@ -37,7 +37,7 @@ export default function TypeRating() {
                 When you graduate from flight school with a frozen ATPL, you are qualified to fly multi-engine aircraft under instrument flight rules. You are not qualified to fly an Airbus A320 or a Boeing 737. Before you can sit in the right seat of a commercial airliner, you must complete a type rating course for that specific aircraft.
               </p>
               <p>
-                The type rating is the final financial hurdle of pilot training — and for many newly qualified pilots, it is the most stressful one. You have already spent £80,000–£130,000 on your ATPL training, and now you face a further £20,000–£35,000 for a type rating, with no guarantee of a job at the end.
+                The type rating is the final financial hurdle of pilot training — and for many newly qualified pilots, it is the most stressful one. After ATPL training, a self-funded type rating can add £20,000–£35,000. Do not pay speculatively unless there is a clear employment pathway, contract and refund/bond position.
               </p>
             </>
           ),
@@ -103,7 +103,7 @@ export default function TypeRating() {
                 This is the most important decision you will face at the end of your training. Should you pay £30,000 for your own type rating, or should you wait for an airline to sponsor it?
               </p>
               <p>
-                <strong>Self-fund if:</strong> You have a specific target airline that does not offer sponsorship. You want maximum flexibility to apply to any airline without being tied to a bond. You have the financial means (savings or access to low-interest financing). You want to move quickly and not wait for an airline to open a bonded programme.
+                <strong>Self-fund if:</strong> You have a specific target airline that does not offer sponsorship. You want maximum flexibility to apply to any airline without being tied to a bond. You have the financial means (savings or access to low-interest financing). Only consider self-funding if you have a clear airline requirement or conditional offer; do not buy a type rating simply to look more employable.
               </p>
               <p>
                 <strong>Wait for sponsorship if:</strong> You do not have £30,000 available. You are comfortable committing to a specific airline for 2–3 years. The bond terms are reasonable (prorated repayment, no interest on the bond amount). You are applying to airlines that actively offer bonded type ratings (Ryanair, Jet2, easyJet).
@@ -125,7 +125,7 @@ export default function TypeRating() {
                 The key things to check in any bond agreement: the total bond amount (some airlines include not just the type rating but also initial operating experience costs, pushing the total to £50,000+), whether the bond accrues interest, what triggers repayment (resignation vs. termination), and whether the bond is waived if the airline makes you redundant.
               </p>
               <p>
-                The opportunity cost of a bond is real. Staying at a regional airline for 3 years when you could have moved to a mainline carrier after 18 months can cost £30,000–£60,000 in foregone salary. Run the numbers before signing.
+                The opportunity cost of a bond is real. A restrictive bond can create opportunity cost if a better role becomes available before the bond expires, so compare the bond terms against realistic career options. Run the numbers before signing.
               </p>
             </>
           ),
