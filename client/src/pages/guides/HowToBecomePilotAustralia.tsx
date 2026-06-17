@@ -1,4 +1,5 @@
 import GuideLayout from "@/components/GuideLayout";
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 import { Link } from "wouter";
 
 export default function HowToBecomePilotAustralia() {
@@ -25,6 +26,7 @@ export default function HowToBecomePilotAustralia() {
           heading: "Is 2026 a Good Time to Become a Pilot in Australia?",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>
                 The short answer is yes — but the pathway has changed significantly over the last few years. Australia is unique globally because of its vast geography, uncrowded airspace, and year-round VFR flying weather. This makes it not only a brilliant place to learn to fly, but a highly respected training ground for the Asia-Pacific region.
               </p>

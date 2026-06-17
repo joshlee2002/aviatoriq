@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaMilitaryToAirlines() {
   return (
@@ -20,11 +21,12 @@ export default function AustraliaMilitaryToAirlines() {
           heading: "Introduction: The Valued Transition",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>The transition from military to commercial aviation is a well-trodden path for many highly skilled pilots in Australia. The Australian Defence Force (ADF) produces some of the world's most capable aviators, equipped with exceptional discipline, decision-making under pressure, and advanced operational experience. These qualities are highly sought after by commercial airlines, making ex-military pilots prime candidates for a successful second career in the civilian sector. However, navigating the regulatory landscape of the Civil Aviation Safety Authority (CASA) and the specific requirements of Australian airlines requires careful planning and execution. This guide provides a comprehensive roadmap for ADF pilots looking to make this significant career move in 2026, detailing the licensing conversion process, associated costs, and employment opportunities.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
-              <p>While the skills acquired in the military are invaluable, the civilian aviation world operates under a different set of rules and procedures. Understanding these differences and proactively addressing the conversion requirements will streamline your journey. This guide will delve into the specifics of CASA regulations, the necessary examinations, financial considerations, and insights into what major Australian airlines are looking for for their pilot recruits.</p>
+              <p>While the skills acquired in the military are invaluable, the civilian aviation world operates under a different set of rules and procedures. Understanding these differences and proactively addressing the conversion requirements will streamline your journey. This guide will examine the specifics of CASA regulations, the necessary examinations, financial considerations, and insights into what major Australian airlines are looking for for their pilot recruits.</p>
             </>
           )
         },
@@ -43,7 +45,7 @@ export default function AustraliaMilitaryToAirlines() {
                 <li>Certified true copies of specific logbook pages, including your Certificate of Qualifications as a Pilot (aircraft type endorsement, initial and postgraduate flying qualifications, competencies, and renewals), and the last three full page openings of your logbook. CASA explicitly states not to submit PMKeys reports or ADO Service records in lieu of logbook entries.</li>
                 <li>Confirmation of your Aviation English Language Proficiency (AELP) assessment (Level 4 or higher).</li>
               </ul>
-              <p>It's important to note that while Form 61-1ADF facilitates the recognition of PPL/CPL and operational ratings, the full ATPL typically requires additional steps, particularly the passing of specific ATPL theory exams.</p>
+              <p>Note: while Form 61-1ADF facilitates the recognition of PPL/CPL and operational ratings, the full ATPL typically requires additional steps, particularly the passing of specific ATPL theory exams.</p>
               <h3>ATPL Conversion Examinations</h3>
               <p>To obtain an Australian ATPL, even with extensive military experience, you will generally need to pass a series of CASA ATPL theory examinations. These include:</p>
               <ul>

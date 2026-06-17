@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function SouthAfricaPilotSalary2026() {
   return (
@@ -20,6 +21,7 @@ export default function SouthAfricaPilotSalary2026() {
           heading: "Introduction: The South African Aviation Landscape",
           content: (
             <>
+              <GuideScopeBanner country="South Africa" regulator="SACAA" />
               <p>The aviation sector in South Africa, a vibrant hub for air travel across the continent, offers a dynamic and challenging career path for aspiring pilots. As of 2026, the industry continues to evolve, influenced by global economic trends, regional demand for air cargo and passenger services, and the stringent regulatory framework set by the South African Civil Aviation Authority (SACAA). Understanding the earning potential in this field is crucial for both those embarking on their pilot training journey and seasoned professionals considering their next career move. This guide provides an in-depth analysis of pilot salaries in South Africa for 2026, offering projections, detailing influencing factors, and outlining the financial landscape for aviators.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.
@@ -62,7 +64,7 @@ export default function SouthAfricaPilotSalary2026() {
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">First Officer (Major Airline - entry)</td><td className="px-4 py-3 text-white/80">500,000 - 750,000</td><td className="px-4 py-3 text-white/80">Highly competitive, often requires prior experience.</td></tr>
                 </tbody>
               </table>
-              <p>It's important to note that these figures often include base salary, flight pay, and sometimes allowances. Bonuses and profit-sharing schemes are less common at the entry-level but can contribute to overall compensation as experience grows.</p>
+              <p>Note: these figures often include base salary, flight pay, and sometimes allowances. Bonuses and profit-sharing schemes are less common at the entry-level but can contribute to overall compensation as experience grows.</p>
             </>
           )
         },

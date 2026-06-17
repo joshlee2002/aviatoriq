@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function NzAtplRequirements() {
   return (
@@ -20,6 +21,7 @@ export default function NzAtplRequirements() {
           heading: "Introduction to the New Zealand ATPL",
           content: (
             <>
+              <GuideScopeBanner country="New Zealand" regulator="CAA NZ" />
               <p>
                 The Airline Transport Pilot Licence (ATPL) represents the pinnacle of aviation certification, qualifying an individual to act as pilot-in-command of multi-crew aircraft in commercial air transport operations. In New Zealand, the Civil Aviation Authority (CAA NZ) governs the issuance of this prestigious licence, ensuring that only the most competent and experienced aviators command the nation's skies. Aspiring airline pilots embarking on this journey in 2026 must meticulously understand the regulatory framework, extensive flight experience prerequisites, rigorous theoretical examinations, and the significant financial investment required.
               </p>

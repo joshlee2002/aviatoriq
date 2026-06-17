@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function LufthansaEuropeanFlightAcademy() {
   return (
@@ -20,6 +21,7 @@ export default function LufthansaEuropeanFlightAcademy() {
           heading: "Introduction to the European Flight Academy (EFA)",
           content: (
             <>
+              <GuideScopeBanner country="Europe" regulator="EASA" />
               <p>
                 The European Flight Academy (EFA) serves as the exclusive ab-initio training arm for the Lufthansa Group. Formed in 2017 through the merger of Lufthansa Flight Training, Swiss AviationTraining, and the Pilot Training Network, EFA is designed to feed highly qualified pilots into the world's largest airline group by revenue. In 2026, the academy remains one of the most prestigious cadet pathways in European aviation, offering a standardized EASA integrated ATPL curriculum across multiple international training locations.
               </p>

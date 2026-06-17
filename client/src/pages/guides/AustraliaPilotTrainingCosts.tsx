@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaPilotTrainingCosts() {
   return (
@@ -20,6 +21,7 @@ export default function AustraliaPilotTrainingCosts() {
           heading: "Introduction: Navigating the Skies of Australian Pilot Training Costs",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>Aspiring aviators in Australia face a significant, yet rewarding, financial commitment when pursuing a career in the cockpit. The journey from a novice enthusiast to a certified commercial pilot involves a series of licenses, ratings, and rigorous training, each with its own associated costs. This guide provides an exhaustive, up-to-date analysis of pilot training expenses in Australia for 2026, incorporating Civil Aviation Safety Authority (CASA) regulations, typical flight school fees, and often-overlooked expenditures. Our aim is to equip you with transparent, accurate data to plan your aviation career with confidence.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Use our free <Link href="/calculator" className="text-blue-400 underline">Pilot Training Cost Calculator</Link> to get a personalised cost estimate based on your chosen route and country.
@@ -48,7 +50,7 @@ export default function AustraliaPilotTrainingCosts() {
           heading: "Detailed Cost Breakdown by Licence and Rating (AUD)",
           content: (
             <>
-              <p>The following tables provide estimated costs for each stage of pilot training in Australia for 2026. These figures are based on current market rates, including flight hours, ground school, examination fees, and essential equipment. It's important to note that actual costs can vary significantly based on the flight school, location, aircraft type, and individual learning pace.</p>
+              <p>The following tables provide estimated costs for each stage of pilot training in Australia for 2026. These figures are based on current market rates, including flight hours, ground school, examination fees, and essential equipment. Note: actual costs can vary significantly based on the flight school, location, aircraft type, and individual learning pace.</p>
               <h3>1. Recreational Pilot Licence (RPL)</h3>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>

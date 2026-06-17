@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function SouthAfricaPilotShortage() {
   return (
@@ -20,6 +21,7 @@ export default function SouthAfricaPilotShortage() {
           heading: "The Nuanced Reality of South Africa's Pilot Shortage in 2026",
           content: (
             <>
+              <GuideScopeBanner country="South Africa" regulator="SACAA" />
               <p>
                 The narrative surrounding a global pilot shortage often oversimplifies the complex dynamics at play within specific regions. In South Africa, as of 2026, the situation is less about a sheer lack of individuals entering the cockpit and more about a critical deficit of experienced captains. While the continent of Africa is projected to require over 23,000 new pilots by 2044 to sustain its aviation growth, South Africa faces a unique challenge: a significant number of its younger, highly-skilled first officers are increasingly marketable internationally. This phenomenon, often termed an 'exodus,' contributes to a talent drain, particularly at the senior leadership level within airlines.
               </p>

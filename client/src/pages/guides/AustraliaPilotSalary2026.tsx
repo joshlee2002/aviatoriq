@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaPilotSalary2026() {
   return (
@@ -20,6 +21,7 @@ export default function AustraliaPilotSalary2026() {
           heading: "The State of Australian Pilot Pay in 2026",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>The Australian aviation market is highly consolidated, dominated by the Qantas Group (including Jetstar and QantasLink) and Virgin Australia. This duopoly, combined with strict aviation safety standards managed by CASA, creates a highly regulated but lucrative career path for pilots.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.

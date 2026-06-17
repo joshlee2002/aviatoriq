@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function CanadaFlightInstructor() {
   return (
@@ -20,6 +21,7 @@ export default function CanadaFlightInstructor() {
           heading: "Introduction: The Role of a Flight Instructor in Canada",
           content: (
             <>
+              <GuideScopeBanner country="Canada" regulator="Transport Canada" />
               <p>Becoming a Flight Instructor (FI) in Canada is a highly rewarding career path, offering the unique opportunity to shape the next generation of aviators. This guide provides an in-depth look into the requirements, training process, associated costs, and career prospects for aspiring flight instructors in Canada, adhering to the latest Transport Canada regulations for 2026. The journey demands dedication, precision, and a profound understanding of aviation principles and instructional techniques.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.

@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AirNewZealandCadet() {
   return (
@@ -20,6 +21,7 @@ export default function AirNewZealandCadet() {
           heading: "Introduction to Pilot Training in New Zealand",
           content: (
             <>
+              <GuideScopeBanner country="New Zealand" regulator="CAA NZ" />
               <p>
                 New Zealand, known for its stunning landscapes and vibrant aviation sector, offers a robust and highly respected environment for aspiring pilots. The Civil Aviation Authority of New Zealand (CAA NZ) oversees all aviation activities, ensuring rigorous standards for pilot training and licensing. For those dreaming of a career in the cockpit, understanding the local regulatory framework, available training pathways, and financial commitments is paramount. This guide provides an exhaustive overview, focusing on the current landscape in 2026, including the general pilot training market and specific insights into the Air New Zealand Mangōpare Pilot Cadetship.
               </p>

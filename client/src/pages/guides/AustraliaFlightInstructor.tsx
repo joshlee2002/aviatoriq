@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaFlightInstructor() {
   return (
@@ -20,6 +21,7 @@ export default function AustraliaFlightInstructor() {
           heading: "Introduction to Flight Instruction in Australia",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>Becoming a Flight Instructor (FI) in Australia is a rewarding career path for experienced pilots looking to share their knowledge and passion for aviation. The role involves not only teaching the practical skills of flying but also instilling the critical theoretical understanding and safety culture essential for future aviators. This guide provides a detailed overview of the requirements, training process, costs, and career opportunities for aspiring Flight Instructors in Australia, adhering to the Civil Aviation Safety Authority (CASA) regulations for 2026.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
@@ -101,7 +103,7 @@ export default function AustraliaFlightInstructor() {
                 <li>Flight test fees.</li>
                 <li>Study materials and resources.</li>
               </ul>
-              <p>It's important to note that these figures are estimates, and additional costs may include accommodation, living expenses, and potential re-test fees if required. Some training providers, like Air Gold Coast, have quoted figures around AUD $40,087.00 for their FIR course (excluding optional endorsements), which aligns with the general market trend.</p>
+              <p>Note: these figures are estimates, and additional costs may include accommodation, living expenses, and potential re-test fees if required. Some training providers, like Air Gold Coast, have quoted figures around AUD $40,087.00 for their FIR course (excluding optional endorsements), which aligns with the general market trend.</p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10"><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Cost Component</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Estimated Range (AUD)</th><th className="px-4 py-3 text-white/70 font-semibold border-b border-white/20">Notes</th></tr>

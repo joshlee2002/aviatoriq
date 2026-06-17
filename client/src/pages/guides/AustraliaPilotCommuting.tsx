@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaPilotCommuting() {
   return (
@@ -20,6 +21,7 @@ export default function AustraliaPilotCommuting() {
           heading: "Introduction: The Reality of Pilot Commuting in Australia",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>
                 Pilot commuting, a common practice in global aviation, presents unique challenges and opportunities within the Australian context. As the aviation industry continues its robust recovery and growth into 2026, understanding the intricacies of commuting becomes paramount for both aspiring and established pilots. This guide delves deep into the practicalities, regulatory frameworks, financial implications, and lifestyle adjustments associated with pilot commuting across Australia, offering a professional and honest perspective.
               </p>

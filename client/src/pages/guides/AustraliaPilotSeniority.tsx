@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaPilotSeniority() {
   return (
@@ -20,11 +21,12 @@ export default function AustraliaPilotSeniority() {
           heading: "Introduction to Pilot Seniority",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>Pilot seniority is the bedrock of an airline pilot's career in Australia. It dictates everything from the aircraft you fly and the routes you are assigned, to your monthly schedule, vacation time, and your earning potential. Unlike many other professions where merit or performance reviews drive career advancement, the airline industry operates on a strict seniority-based system.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
-              <p>This guide provides a comprehensive, deep dive into how pilot seniority works in the Australian aviation market in 2026, focusing on major carriers like Qantas, Virgin Australia, and Jetstar.</p>
+              <p>This guide provides a comprehensive, deep examine how pilot seniority works in the Australian aviation market in 2026, focusing on major carriers like Qantas, Virgin Australia, and Jetstar.</p>
             </>
           )
         },

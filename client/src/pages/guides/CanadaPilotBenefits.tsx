@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function CanadaPilotBenefits() {
   return (
@@ -20,6 +21,7 @@ export default function CanadaPilotBenefits() {
           heading: "Introduction: The Allure of Canadian Aviation",
           content: (
             <>
+              <GuideScopeBanner country="Canada" regulator="Transport Canada" />
               <p>
                 Canada, with its vast airspace and robust aviation industry, offers an exceptional environment for aspiring pilots. The journey to becoming a professional pilot in Canada is rigorous but incredibly rewarding, leading to a career filled with challenge, prestige, and significant benefits. This comprehensive guide provides an in-depth look into the pilot training landscape in Canada for 2026, covering everything from licensing requirements and training costs to career prospects and the unique advantages of flying in Canadian skies.
               </p>

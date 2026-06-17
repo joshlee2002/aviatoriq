@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function NewZealandPilotSalary2026() {
   return (
@@ -19,6 +20,11 @@ export default function NewZealandPilotSalary2026() {
           heading: "Introduction: Navigating the Skies of Opportunity in New Zealand",
           content: (
             <>
+              <div className="bg-amber-50 border border-amber-200 text-amber-800 p-4 rounded-lg my-6">
+                <strong>Important Note:</strong> The figures provided in this guide are indicative estimates based on publicly available data. New Zealand pilot salaries and training costs vary significantly based on the flight school, airline, and economic conditions. Always verify current figures directly with CAA NZ-approved training organisations or airline recruiters.
+              </div>
+
+              <GuideScopeBanner country="New Zealand" regulator="CAA NZ" />
               <p>
                 New Zealand, renowned for its breathtaking landscapes and robust aviation sector, presents a compelling destination for aspiring and experienced pilots alike. The nation's aviation industry, anchored by its flag carrier Air New Zealand, offers a dynamic environment characterized by high operational standards, continuous innovation, and a strong emphasis on safety. As of 2026, the demand for skilled aviators remains consistent, driven by both domestic expansion and international route connectivity. This guide provides a meticulous examination of pilot salaries, comprehensive training costs, and the intricate process of international license conversion, offering an indispensable resource for those considering a career in the New Zealand skies.
               </p>

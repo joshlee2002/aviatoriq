@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function CanadaPilotCommuting() {
   return (
@@ -20,6 +21,7 @@ export default function CanadaPilotCommuting() {
           heading: "The Reality of Pilot Commuting in Canada",
           content: (
             <>
+              <GuideScopeBanner country="Canada" regulator="Transport Canada" />
               <p>
                 Pilot commuting, the practice of living in one city and being based in another for work, is a prevalent and often necessary aspect of an airline pilot's career in Canada. While it offers flexibility in lifestyle choices, it also introduces unique challenges related to logistics, fatigue management, and financial planning. For aspiring and current Canadian pilots, understanding the intricacies of commuting is crucial for a sustainable and successful career in the country's diverse aviation sector.
               </p>

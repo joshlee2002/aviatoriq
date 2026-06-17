@@ -1,12 +1,13 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function CanadaPilotShortage() {
   return (
     <GuideLayout
       title="Navigating the Canadian Skies: Understanding the 2026 Pilot Shortage"
-      subtitle="A deep dive into the realities of Canada's aviation labor market, training costs, and career opportunities for aspiring pilots."
+      subtitle="A deep examine the realities of Canada's aviation labor market, training costs, and career opportunities for aspiring pilots."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -20,6 +21,7 @@ export default function CanadaPilotShortage() {
           heading: "The Nuance of the Shortage: Beyond Simple Numbers",
           content: (
             <>
+              <GuideScopeBanner country="Canada" regulator="Transport Canada" />
               <p>
                 The Canadian aviation industry, a vital artery for commerce, tourism, and connectivity across its vast geography, faces a complex challenge in 2026: a persistent and evolving pilot shortage. While often framed as a simple deficit of qualified aviators, the reality is nuanced, encompassing issues of recruitment, retention, training costs, and global market dynamics.
               </p>

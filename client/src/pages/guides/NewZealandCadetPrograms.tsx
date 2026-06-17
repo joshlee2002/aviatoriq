@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function NewZealandCadetPrograms() {
   return (
@@ -20,6 +21,7 @@ export default function NewZealandCadetPrograms() {
           heading: "The Landscape of Pilot Training in New Zealand",
           content: (
             <>
+              <GuideScopeBanner country="New Zealand" regulator="CAA NZ" />
               <p>
                 New Zealand, known for its stunning landscapes and robust aviation industry, offers aspiring pilots a clear, albeit rigorous, path to the cockpit. In 2026, the demand for skilled aviators remains consistent, driven by both national carriers and regional operators. This guide delves into the primary avenues for pilot training: airline-sponsored cadet programs and independent flight training pathways, with a particular focus on the unique opportunities and regulatory environment within Aotearoa.
               </p>

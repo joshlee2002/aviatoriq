@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaPilotTaxes() {
   return (
@@ -20,6 +21,7 @@ export default function AustraliaPilotTaxes() {
           heading: "Understanding Your Income and Allowances as an Australian Pilot",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>As a pilot in Australia, understanding your taxable income and various allowances is the first step towards effective tax management. The Australian Taxation Office (ATO) mandates that all income received during the financial year must be declared. This includes your salary and wages, any cash or bonus payments, and compensation or insurance payments, such as those from income protection policies designed to replace lost salary and wages. It is crucial to distinguish between taxable allowances and non-taxable reimbursements to accurately report your earnings.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.

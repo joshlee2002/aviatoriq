@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function CanadaPilotSchedule() {
   return (
@@ -20,6 +21,7 @@ export default function CanadaPilotSchedule() {
           heading: "Introduction: Charting Your Course in Canadian Aviation",
           content: (
             <>
+              <GuideScopeBanner country="Canada" regulator="Transport Canada" />
               <p>Embarking on a career as a pilot in Canada is an ambitious and rewarding endeavor, demanding dedication, precision, and a clear understanding of the training landscape. Canada, with its vast airspace and robust aviation industry, offers world-class flight training opportunities. However, the journey from aspiring aviator to commercial pilot is structured and regulated, requiring careful planning of your training schedule. This guide provides an in-depth look at the typical timelines, regulatory milestones, and strategic considerations for pilot training in Canada, ensuring you are well-prepared for the demands of 2026 and beyond.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.

@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function CanadaMilitaryToAirlines() {
   return (
@@ -19,6 +20,7 @@ export default function CanadaMilitaryToAirlines() {
           heading: "Introduction: Charting a New Course",
           content: (
             <>
+              <GuideScopeBanner country="Canada" regulator="Transport Canada" />
               <p>The transition from military to civilian aviation is a significant career evolution, offering a new set of challenges and rewards. For Royal Canadian Air Force (RCAF) pilots, years of rigorous training, unparalleled experience, and disciplined service provide a robust foundation for a successful career in commercial aviation. This guide is meticulously crafted to provide a comprehensive, deep, and highly accurate roadmap for RCAF pilots aiming to join Canada's civilian airlines in 2026, focusing on the regulatory landscape, conversion processes, financial considerations, and specific airline requirements.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.

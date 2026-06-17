@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function SouthAfricaRegionalAirlines() {
   return (
@@ -20,6 +21,7 @@ export default function SouthAfricaRegionalAirlines() {
           heading: "Introduction to South Africa's Regional Aviation Landscape",
           content: (
             <>
+              <GuideScopeBanner country="South Africa" regulator="SACAA" />
               <p>South Africa, with its vast landscapes and growing economic ties across the continent, presents a vibrant and expanding regional aviation market. Aspiring pilots looking to embark on a fulfilling career will find a robust regulatory framework governed by the South African Civil Aviation Authority (SACAA) and numerous opportunities within regional carriers. This guide provides an exhaustive overview of the journey from aspiring aviator to a qualified pilot flying for South African regional airlines, focusing on 2026 data, regulations, and career insights.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.

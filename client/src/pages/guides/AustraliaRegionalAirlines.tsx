@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaRegionalAirlines() {
   return (
@@ -20,6 +21,7 @@ export default function AustraliaRegionalAirlines() {
           heading: "The Backbone of Australian Aviation: Regional Airlines in 2026",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>
                 Australia's vast and diverse landscape necessitates a robust regional aviation network. These airlines are not merely feeders for major international hubs; they are the lifeblood connecting remote communities, supporting vital industries, and facilitating domestic travel across the continent. In 2026, the regional sector continues to be a dynamic and essential component of the national economy, offering unique and rewarding career paths for aspiring pilots. Understanding this intricate ecosystem is the first step towards a successful career in the cockpit of a regional aircraft.
               </p>

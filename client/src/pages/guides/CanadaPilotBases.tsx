@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function CanadaPilotBases() {
   return (
@@ -20,11 +21,12 @@ export default function CanadaPilotBases() {
           heading: "Introduction to Canadian Pilot Bases",
           content: (
             <>
+              <GuideScopeBanner country="Canada" regulator="Transport Canada" />
               <p>Canada, with its vast and diverse geography, offers a dynamic and rewarding environment for aviation professionals. For pilots, understanding the landscape of available bases is crucial for career planning, lifestyle choices, and professional growth. In 2026, the Canadian aviation industry continues to evolve, driven by robust domestic travel, expanding international routes, and a steady demand for skilled aviators. This guide provides a comprehensive overview of pilot bases across major and regional airlines in Canada, offering insights into what aspiring and current pilots can expect.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
-              <p>Pilot bases, often referred to as domiciles, are the operational hubs where pilots are stationed. These locations serve as the starting and ending points for flight assignments, influencing everything from daily commutes to long-term living arrangements. The choice of a pilot base is a significant career decision, impacting work-life balance, family considerations, and access to training and development opportunities. This guide will delve into the specifics of these bases, highlighting key airlines, their primary hubs, and the broader implications for pilots.</p>
+              <p>Pilot bases, often referred to as domiciles, are the operational hubs where pilots are stationed. These locations serve as the starting and ending points for flight assignments, influencing everything from daily commutes to long-term living arrangements. The choice of a pilot base is a significant career decision, impacting work-life balance, family considerations, and access to training and development opportunities. This guide will examine the specifics of these bases, highlighting key airlines, their primary hubs, and the broader implications for pilots.</p>
             </>
           )
         },

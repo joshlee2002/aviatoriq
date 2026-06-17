@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function EuropeMilitaryToAirlines() {
   return (
@@ -20,6 +21,7 @@ export default function EuropeMilitaryToAirlines() {
           heading: "Introduction: Your Path to European Commercial Aviation",
           content: (
             <>
+              <GuideScopeBanner country="Europe" regulator="EASA" />
               <p>The transition from military aviation to a commercial airline career in Europe presents a unique and rewarding opportunity for skilled military pilots. Your extensive experience, discipline, and advanced flight training are highly valued assets within the civilian sector. However, navigating the regulatory landscape of the European Union Aviation Safety Agency (EASA) and converting your military qualifications to an EASA Airline Transport Pilot License (ATPL) requires a strategic and informed approach. This guide provides a detailed roadmap for military aviators looking to join Europe's leading airlines in 2026, offering insights into regulations, conversion processes, financial considerations, and employment prospects.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.

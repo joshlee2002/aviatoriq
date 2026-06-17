@@ -1,12 +1,13 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaPilotBenefits() {
   return (
     <GuideLayout
       title="Unlocking the Skies: Comprehensive Pilot Benefits in Australia (2026)"
-      subtitle="A deep dive into the lucrative compensation, extensive perks, and robust career progression for pilots in Australia, guided by CASA regulations."
+      subtitle="A deep examine the lucrative compensation, extensive perks, and robust career progression for pilots in Australia, guided by CASA regulations."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -20,6 +21,7 @@ export default function AustraliaPilotBenefits() {
           heading: "The Allure of an Aviation Career in Australia",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>Australia, with its vast landscapes and thriving tourism, presents a dynamic and rewarding environment for aspiring and experienced pilots. The nation's aviation sector is characterized by stringent safety standards, robust regulatory oversight by the Civil Aviation Safety Authority (CASA), and a consistent demand for skilled aviators across commercial, regional, and general aviation segments. As of 2026, the industry continues to offer not just competitive remuneration but also a comprehensive suite of benefits designed to attract and retain top talent.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.

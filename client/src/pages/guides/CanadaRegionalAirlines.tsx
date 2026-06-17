@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function CanadaRegionalAirlines() {
   return (
@@ -20,6 +21,7 @@ export default function CanadaRegionalAirlines() {
           heading: "Introduction to Canada's Regional Airline Sector",
           content: (
             <>
+              <GuideScopeBanner country="Canada" regulator="Transport Canada" />
               <p>Canada's vast geography and dispersed population centers make its regional airline sector a critical component of the national aviation infrastructure. These airlines serve as vital feeders to major hubs, connecting smaller communities to larger networks and offering essential air services across the country. For aspiring pilots, regional airlines often represent the first significant step in a professional aviation career, providing invaluable experience in multi-crew environments and advanced aircraft operations.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.

@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function NzMedicalClass1() {
   return (
@@ -20,6 +21,7 @@ export default function NzMedicalClass1() {
           heading: "Understanding the NZ CAA Class 1 Medical Certificate",
           content: (
             <>
+              <GuideScopeBanner country="New Zealand" regulator="CAA NZ" />
               <p>
                 Becoming a commercial pilot in New Zealand requires not only rigorous flight training but also a stringent medical certification process. The New Zealand Civil Aviation Authority (CAA) Class 1 Medical Certificate is the highest standard of medical fitness for aviators, essential for those aspiring to careers as airline pilots or commercial operators.
               </p>

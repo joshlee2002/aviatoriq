@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function CanadaPilotTaxes() {
   return (
@@ -20,6 +21,7 @@ export default function CanadaPilotTaxes() {
           heading: "1. Introduction to Canadian Pilot Taxation",
           content: (
             <>
+              <GuideScopeBanner country="Canada" regulator="Transport Canada" />
               <p>Understanding the intricacies of the Canadian tax system is paramount for both aspiring and professional pilots. The financial landscape of flight training and a career in aviation involves significant investments, making it crucial to navigate tax implications effectively. This guide provides a comprehensive overview of relevant tax considerations, focusing on the Canada Revenue Agency (CRA) regulations and provincial tax authorities that impact aviators across the nation.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Want to see exactly how your salary will progress? Generate your free <Link href="/roadmap" className="text-blue-400 underline">personalised pilot career roadmap</Link> to see a timeline from training to captain.

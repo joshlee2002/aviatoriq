@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function EuropePilotShortage() {
   return (
@@ -20,11 +21,12 @@ export default function EuropePilotShortage() {
           heading: "Introduction to the European Pilot Shortage",
           content: (
             <>
+              <GuideScopeBanner country="Europe" regulator="EASA" />
               <p>The aviation industry across Europe is currently experiencing a dynamic shift, with discussions around a potential pilot shortage gaining significant traction. As air travel continues its robust recovery from the global pandemic, airlines and industry analysts are closely monitoring whether the demand for qualified aviators will outpace the existing supply. Recent forecasts for 2026 and beyond indicate that pilot demand is indeed projected to exceed supply in many European regions, creating unprecedented opportunities for aspiring pilots.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.
               </p>
-              <p>This guide provides an in-depth look into the European pilot training market, exploring the multifaceted reasons behind the anticipated shortage, identifying the regions most affected, and detailing the potential impact on pilot terms and conditions. We will delve into EASA regulations, current training costs in EUR, and real-world airline dynamics to offer a factual and elite perspective for those considering a career in the cockpit.</p>
+              <p>This guide provides an in-depth look into the European pilot training market, exploring the multifaceted reasons behind the anticipated shortage, identifying the regions most affected, and detailing the potential impact on pilot terms and conditions. We will examine EASA regulations, current training costs in EUR, and real-world airline dynamics to offer a factual and elite perspective for those considering a career in the cockpit.</p>
             </>
           )
         },

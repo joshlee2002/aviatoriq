@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function EuropeFlightSchoolLoans() {
   return (
@@ -20,6 +21,7 @@ export default function EuropeFlightSchoolLoans() {
           heading: "The European Dream: Becoming an EASA-Certified Pilot",
           content: (
             <>
+              <GuideScopeBanner country="Europe" regulator="EASA" />
               <p>
                 Europe stands as a global hub for aviation, offering world-class pilot training under the stringent yet globally recognized standards of the European Union Aviation Safety Agency (EASA). Aspiring pilots from across the globe are drawn to the continent's reputable flight academies, diverse airspace, and direct pathways to major European airlines. However, the journey to the cockpit, while rewarding, requires a significant financial commitment. Understanding the landscape of pilot training costs and, crucially, the available financing options, is paramount for any prospective aviator in 2026.
               </p>

@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function CanadaPilotSeniority() {
   return (
@@ -20,6 +21,7 @@ export default function CanadaPilotSeniority() {
           heading: "The Cornerstone of a Canadian Pilot's Career: Understanding Seniority",
           content: (
             <>
+              <GuideScopeBanner country="Canada" regulator="Transport Canada" />
               <p>In the highly structured world of commercial aviation, seniority is not merely a concept but the fundamental pillar upon which a pilot's career trajectory is built. For aspiring and current pilots in Canada, a deep understanding of the seniority system is paramount. It dictates everything from flight schedules and aircraft assignments to base locations and promotion opportunities. Unlike many other professions where merit or performance might be the primary drivers of advancement, in aviation, particularly within major airlines, the length of service—your seniority date—is the ultimate determinant of your professional life.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.

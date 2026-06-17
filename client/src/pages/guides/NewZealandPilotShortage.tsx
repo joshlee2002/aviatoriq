@@ -1,12 +1,13 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function NewZealandPilotShortage() {
   return (
     <GuideLayout
       title="Navigating the New Zealand Pilot Shortage: Your 2026 Training and Career Guide"
-      subtitle="A deep dive into pilot training, costs, career prospects, and the ongoing pilot shortage in New Zealand for aspiring aviators in 2026."
+      subtitle="A deep examine pilot training, costs, career prospects, and the ongoing pilot shortage in New Zealand for aspiring aviators in 2026."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
@@ -20,6 +21,7 @@ export default function NewZealandPilotShortage() {
           heading: "Introduction: The Looming Pilot Shortage in New Zealand",
           content: (
             <>
+              <GuideScopeBanner country="New Zealand" regulator="CAA NZ" />
               <p>The global aviation industry continues to grapple with a significant pilot shortage, a challenge that extends to New Zealand. While the immediate post-pandemic recovery saw a surge in demand, projections for 2026 and beyond indicate a persistent need for qualified aviators. This shortage is driven by a combination of factors, including an aging pilot population reaching mandatory retirement, increased air travel demand, and the high cost and time commitment associated with pilot training . For New Zealand, this translates into both a challenge for airlines and an unparalleled opportunity for aspiring pilots.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.

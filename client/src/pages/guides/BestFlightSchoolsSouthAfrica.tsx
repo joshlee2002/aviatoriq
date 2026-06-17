@@ -1,4 +1,5 @@
 import GuideLayout from "@/components/GuideLayout";
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function BestFlightSchoolsSouthAfrica() {
   return (
@@ -33,6 +34,7 @@ export default function BestFlightSchoolsSouthAfrica() {
           heading: "How We Evaluate and Score Flight Schools",
           content: (
             <>
+              <GuideScopeBanner country="South Africa" regulator="SACAA" />
               <div className="bg-amber-50 border border-amber-200 p-5 rounded-lg mb-6 text-amber-900">
                 <p className="font-semibold text-base mb-3">Editorial Methodology & Conflict of Interest Statement</p>
                 <p className="text-sm mb-3">

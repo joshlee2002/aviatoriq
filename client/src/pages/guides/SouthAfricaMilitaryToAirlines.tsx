@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function SouthAfricaMilitaryToAirlines() {
   return (
@@ -20,6 +21,7 @@ export default function SouthAfricaMilitaryToAirlines() {
           heading: "1. Introduction: The Call to Commercial Aviation",
           content: (
             <>
+              <GuideScopeBanner country="South Africa" regulator="SACAA" />
               <p>The transition from military to commercial aviation represents a significant career evolution for South African Air Force (SAAF) pilots. This guide provides a comprehensive overview of the pathways, regulatory requirements, financial considerations, and career opportunities available to SAAF aviators seeking to join the ranks of commercial airline pilots in South Africa.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.

@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaPilotBases() {
   return (
@@ -20,6 +21,7 @@ export default function AustraliaPilotBases() {
           heading: "Introduction to Australian Pilot Bases",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>Australia, with its vast distances and thriving aviation industry, offers a dynamic landscape for aspiring pilots. Understanding the strategic importance of pilot bases is crucial for career planning, as these locations often dictate lifestyle, commuting, and career progression opportunities. In 2026, Australia's aviation sector continues its robust recovery, with major airlines actively recruiting and expanding their operations across key hubs.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.

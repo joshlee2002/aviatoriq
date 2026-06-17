@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaFlightSchoolLoans() {
   return (
@@ -20,6 +21,7 @@ export default function AustraliaFlightSchoolLoans() {
           heading: "Introduction",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>Aspiring pilots in Australia face a significant financial commitment to achieve their dreams. The journey from initial flight training to a Commercial Pilot Licence (CPL) and beyond can cost well over AUD $100,000. However, a range of financing options exists to make this career path accessible. This guide provides an in-depth look at the various loan programs, government assistance, and financial strategies available for pilot training in Australia in 2026, ensuring you have the knowledge to make informed decisions.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Use our free <Link href="/calculator" className="text-blue-400 underline">Pilot Training Cost Calculator</Link> to get a personalised cost estimate based on your chosen route and country.

@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function NzCplRequirements() {
   return (
@@ -20,6 +21,7 @@ export default function NzCplRequirements() {
           heading: "Introduction to the New Zealand Commercial Pilot Licence (CPL)",
           content: (
             <>
+              <GuideScopeBanner country="New Zealand" regulator="CAA NZ" />
               <p>Embarking on a career as a commercial pilot in New Zealand is a journey that demands dedication, precision, and a thorough understanding of the Civil Aviation Authority of New Zealand (CAA NZ) regulations. The Commercial Pilot Licence (CPL) is your gateway to flying professionally, whether it's for scenic flights, agricultural operations, or eventually, major airlines. This guide provides an in-depth look at the requirements, training pathways, and critical considerations for aspiring pilots in New Zealand for the year 2026.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Take our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to get a personalised training roadmap in under five minutes.

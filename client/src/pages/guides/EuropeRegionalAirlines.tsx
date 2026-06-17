@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function EuropeRegionalAirlines() {
   return (
@@ -20,6 +21,7 @@ export default function EuropeRegionalAirlines() {
           heading: "Introduction to European Regional Airline Pilot Training",
           content: (
             <>
+              <GuideScopeBanner country="Europe" regulator="EASA" />
               <p>The European regional airline sector is a vital component of the continent's aviation network, connecting smaller cities and feeding passengers into major hubs. In 2026, this dynamic market continues to experience steady growth, driven by increasing passenger demand and fleet modernization. This expansion translates into a consistent demand for highly skilled and well-trained pilots. Aspiring aviators looking to enter this exciting field must navigate a rigorous training landscape governed by the European Union Aviation Safety Agency (EASA), which sets stringent regulations to ensure the highest standards of safety and operational excellence across all Member States.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure where to start? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to get a clear path from zero to airline.

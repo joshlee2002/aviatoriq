@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
+import GuideScopeBanner from '@/components/GuideScopeBanner';
 
 export default function AustraliaCadetPrograms() {
   return (
@@ -20,6 +21,7 @@ export default function AustraliaCadetPrograms() {
           heading: "Introduction: Charting Your Course in Australian Aviation",
           content: (
             <>
+              <GuideScopeBanner country="Australia" regulator="CASA" />
               <p>Aspiring aviators in Australia have several compelling pathways to achieve their dream of becoming a commercial pilot, with cadet programs offering a structured and often airline-aligned route. These programs are designed to take individuals with little to no prior flying experience and transform them into competent, commercially licensed pilots ready for the demands of modern aviation. This guide provides an in-depth look at the Australian pilot cadet landscape in 2026, covering key programs, regulatory requirements, and financial considerations.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Not sure if you qualify? Try our free <Link href="/tools/cadet-eligibility" className="text-blue-400 underline">Cadet Eligibility Checker</Link> to see which programmes you are likely to be eligible for.
