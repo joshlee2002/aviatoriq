@@ -183,8 +183,8 @@ interface GuideLayoutProps {
   heroImage?: string;
   /** Optional scope banner shown above the article for non-UK/US readers */
   scopeBanner?: React.ReactNode;
-  /** Sources reviewed for this guide */
-  sources?: GuideSource[];
+  /** Sources reviewed for this guide — accepts plain strings or GuideSource objects */
+  sources?: (GuideSource | string)[];
   /** If true, renders a MedicalDisclaimerBox before the article content */
   medicalDisclaimer?: boolean;
   /** If true, renders a FinanceDisclaimerBox before the article content */
@@ -358,7 +358,11 @@ export default function GuideLayout({
   regulatorUrl,
 }: GuideLayoutProps) {
   const guideScope = inferGuideScope(title, canonical, category);
-  const reviewedSources = sources && sources.length > 0 ? sources : guideScope.sources;
+  // Coerce any plain-string sources to GuideSource objects for backward compatibility
+  const normalisedSources: GuideSource[] | undefined = sources && sources.length > 0
+    ? sources.map((s) => typeof s === "string" ? { name: s } : s)
+    : undefined;
+  const reviewedSources = normalisedSources && normalisedSources.length > 0 ? normalisedSources : guideScope.sources;
   const schemas: object[] = [];
 
   if (faqSchema && faqSchema.length > 0) {

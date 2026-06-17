@@ -23,10 +23,13 @@ const usGuideLinks = [
 ];
 
 const globalGuideLinks = [
-  { label: "🇦🇺 How to Become a Pilot in Australia", href: "/guides/how-to-become-a-pilot-australia" },
-  { label: "🇨🇦 How to Become a Pilot in Canada", href: "/guides/how-to-become-a-pilot-canada" },
-  { label: "🇪🇺 How to Become a Pilot in Europe", href: "/guides/how-to-become-a-pilot-europe" },
-  { label: "🇺🇸 How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot" },
+  { label: "🇦🇺 Australian Pilot Guides", href: "/australia/guides" },
+  { label: "🇨🇦 Canadian Pilot Guides", href: "/canada/guides" },
+  { label: "🇪🇺 European Pilot Guides", href: "/europe/guides" },
+  { label: "🇺🇸 US Pilot Guides", href: "/us/guides" },
+  { label: "🇳🇿 New Zealand Guides", href: "/new-zealand/guides" },
+  { label: "🇿🇦 South Africa Guides", href: "/south-africa/guides" },
+  { label: "🇦🇪 UAE Pilot Guides", href: "/uae/guides" },
 ];
 
 const ukToolLinks = [
@@ -36,6 +39,9 @@ const ukToolLinks = [
   { label: "Medical Readiness Check", href: "/tools/class-1-medical-check" },
   { label: "Medical Condition Lookup", href: "/tools/medical-condition-lookup" },
   { label: "Cadet Eligibility Checker", href: "/tools/cadet-eligibility" },
+  { label: "Finance Calculator", href: "/tools/finance-calculator" },
+  { label: "Salary Estimator", href: "/tools/salary-estimator" },
+  { label: "Route Selector", href: "/tools/route-selector" },
 ];
 
 const usToolLinks = [

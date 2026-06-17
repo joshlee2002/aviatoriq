@@ -79,6 +79,9 @@ const ukToolLinks = [
   { label: "Medical Readiness Check", href: "/tools/class-1-medical-check", desc: "Assess your pilot medical eligibility (CAA/EASA)", icon: "🩺" },
   { label: "Medical Condition Lookup", href: "/tools/medical-condition-lookup", desc: "Check any condition against pilot medical standards", icon: "🔍" },
   { label: "UK & EU Cadet Eligibility", href: "/tools/cadet-eligibility", desc: "BA, easyJet, Ryanair, Wizz Air, TUI programmes", icon: "✈️" },
+  { label: "Finance Calculator", href: "/tools/finance-calculator", desc: "Model loan repayments vs pilot salary over time", icon: "💷" },
+  { label: "Salary Estimator", href: "/tools/salary-estimator", desc: "Project your career earnings by airline and seniority", icon: "📈" },
+  { label: "Route Selector", href: "/tools/route-selector", desc: "Answer 5 questions to find your ideal training route", icon: "🧭" },
 ];
 
 const usToolLinks = [
@@ -503,19 +506,14 @@ export default function PublicNav() {
 
             {/* Country switcher in mobile */}
             <div className="px-4 py-3" style={{ borderTop: "1px solid oklch(1 0 0 / 0.08)" }}>
-              <button
-                type="button"
-                onClick={() => {
-                  const next = country === "us" ? "uk" : "us";
-                  setCountry(next);
-                  navigate(next === "us" ? "/us" : "/");
-                  setMobileOpen(false);
-                }}
-                className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold transition-all"
+              <Link
+                href="/select"
+                onClick={() => setMobileOpen(false)}
+                className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold transition-all no-underline"
                 style={{ border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.75 0.04 240)" }}
               >
-                {country === "us" ? "🌍 Switch to Global / UK version" : "🇺🇸 Switch to US version"}
-              </button>
+                🌍 Change country
+              </Link>
             </div>
 
             {user?.role === "admin" && (
