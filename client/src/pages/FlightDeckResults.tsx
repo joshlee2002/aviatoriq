@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation, Link } from "wouter";
 import { scoreFlightDeckQuiz, FlightDeckResult, FlightDeckInput } from "@/lib/flightDeckScoring";
+import { ALL_QUIZZES } from "@/data/quizzes";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import {
@@ -140,6 +141,50 @@ function EmailCaptureCard({ result }: { result: FlightDeckResult }) {
           )}
         </button>
       </form>
+    </div>
+  );
+}
+
+// ─── Quiz recommendation card ────────────────────────────────────────────────
+function FlightDeckNextQuiz() {
+  // Recommend the most relevant follow-up quiz after the Flight Deck
+  const quiz = ALL_QUIZZES.find((q) => q.slug === "flight-training-readiness");
+  if (!quiz) return null;
+
+  return (
+    <div className="rounded-2xl" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
+      <div className="px-5 pt-4 pb-1">
+        <p className="text-white/35 text-xs uppercase tracking-widest font-semibold">While you're here</p>
+      </div>
+      <Link
+        href={`/quizzes/${quiz.slug}`}
+        className="group flex items-center gap-4 px-5 py-4 no-underline transition-all duration-200 hover:bg-white/5 rounded-b-2xl"
+      >
+        <div
+          className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0"
+          style={{ background: `${quiz.accentColor}18` }}
+        >
+          {quiz.emoji}
+        </div>
+        <div className="flex-1 min-w-0">
+          {quiz.badge && (
+            <span
+              className="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full mb-1"
+              style={{ background: `${quiz.accentColor}22`, color: quiz.accentColor }}
+            >
+              {quiz.badge}
+            </span>
+          )}
+          <p className="font-display font-bold text-white text-sm leading-tight">{quiz.title}</p>
+          <p className="text-xs mt-0.5" style={{ color: "oklch(0.55 0.04 240)" }}>{quiz.tagline}</p>
+        </div>
+        <div
+          className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 transition-all group-hover:scale-110"
+          style={{ background: `${quiz.accentColor}22` }}
+        >
+          <ArrowRight className="w-4 h-4" style={{ color: quiz.accentColor }} />
+        </div>
+      </Link>
     </div>
   );
 }
@@ -295,6 +340,9 @@ export default function FlightDeckResults() {
             <span>✓ AI roadmap</span>
           </div>
         </div>
+
+        {/* ── Quiz recommendation ── */}
+        <FlightDeckNextQuiz />
 
         {/* ── Secondary actions ── */}
         <div className="flex items-center justify-center gap-6 pb-6">

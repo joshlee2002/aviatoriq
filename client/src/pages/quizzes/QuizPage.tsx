@@ -3,6 +3,7 @@ import { trpc } from "@/lib/trpc";
 import { useRoute, Link } from "wouter";
 import {
   getQuizBySlug,
+  ALL_QUIZZES,
   Quiz,
   QuizQuestion,
   QuizResult,
@@ -241,6 +242,71 @@ function QuizEmailCapture({ quizSlug }: { quizSlug: string }) {
   );
 }
 
+// ─── Next Quiz Recommendation Card ─────────────────────────────────────────
+
+// Maps each quiz slug to the most relevant next quiz slug
+const NEXT_QUIZ_MAP: Record<string, string> = {
+  "what-kind-of-pilot":     "flight-training-readiness",  // Know your type → test your readiness
+  "pilot-medical-check":    "flight-training-readiness",  // Medical cleared → are you ready overall?
+  "aviation-myth-buster":   "think-like-a-pilot",         // Know the facts → think like one
+  "flight-training-readiness": "biggest-obstacle",        // Know your readiness → find your blocker
+  "guess-the-aircraft":     "aviation-myth-buster",       // Aircraft buff → myth buster
+  "biggest-obstacle":       "flight-training-readiness",  // Know your obstacle → check readiness
+  "think-like-a-pilot":     "what-kind-of-pilot",         // Think like one → what kind are you?
+};
+
+function NextQuizCard({ currentSlug }: { currentSlug: string }) {
+  const nextSlug = NEXT_QUIZ_MAP[currentSlug];
+  const nextQuiz = nextSlug ? ALL_QUIZZES.find((q) => q.slug === nextSlug) : null;
+
+  // Fallback: pick the first quiz that isn't the current one
+  const fallback = ALL_QUIZZES.find((q) => q.slug !== currentSlug);
+  const quiz = nextQuiz ?? fallback;
+
+  if (!quiz) return null;
+
+  return (
+    <div className="mt-5">
+      <p className="text-white/35 text-xs uppercase tracking-widest font-semibold mb-3 text-center">Try next</p>
+      <Link
+        href={`/quizzes/${quiz.slug}`}
+        className="group flex items-center gap-4 rounded-2xl p-4 no-underline transition-all duration-200 hover:scale-[1.01]"
+        style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.1)" }}
+      >
+        <div
+          className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0"
+          style={{ background: `${quiz.accentColor}18` }}
+        >
+          {quiz.emoji}
+        </div>
+        <div className="flex-1 min-w-0">
+          {quiz.badge && (
+            <span
+              className="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full mb-1"
+              style={{ background: `${quiz.accentColor}22`, color: quiz.accentColor }}
+            >
+              {quiz.badge}
+            </span>
+          )}
+          <p className="font-display font-bold text-white text-sm leading-tight">{quiz.title}</p>
+          <p className="text-xs mt-0.5 truncate" style={{ color: "oklch(0.55 0.04 240)" }}>{quiz.tagline}</p>
+        </div>
+        <div
+          className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 transition-all group-hover:scale-110"
+          style={{ background: `${quiz.accentColor}22` }}
+        >
+          <ArrowRight className="w-4 h-4" style={{ color: quiz.accentColor }} />
+        </div>
+      </Link>
+      <div className="mt-3 text-center">
+        <Link href="/quizzes" className="text-white/35 hover:text-white/60 text-xs transition-colors no-underline">
+          See all quizzes →
+        </Link>
+      </div>
+    </div>
+  );
+}
+
 // ─── Result Card ──────────────────────────────────────────────────────────
 
 function ResultCard({
@@ -365,12 +431,8 @@ function ResultCard({
         {/* Email capture */}
         <QuizEmailCapture quizSlug={quiz.slug} />
 
-        {/* More quizzes */}
-        <div className="mt-4 text-center">
-          <Link href="/quizzes" className="text-white/50 hover:text-white/80 text-sm transition-colors no-underline">
-            ← Try another quiz
-          </Link>
-        </div>
+        {/* Next quiz recommendation */}
+        <NextQuizCard currentSlug={quiz.slug} />
       </div>
     </div>
   );
