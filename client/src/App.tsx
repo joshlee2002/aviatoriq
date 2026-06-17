@@ -16,8 +16,7 @@ import { CurrencyProvider } from "./contexts/CurrencyContext";
 // Country selector
 import CountrySelect from "./pages/CountrySelect";
 
-// US pages
-import HomeUS from "./pages/HomeUS";
+// US pages — HomeUS merged into country-aware Home.tsx (Phase 2 restructure)
 import MedicalConditionLookupUS from "./pages/MedicalConditionLookupUS";
 import CadetEligibilityUS from "./pages/CadetEligibilityUS";
 import CalculatorUS from "./pages/CalculatorUS";
@@ -436,7 +435,7 @@ function Router() {
       <Route path="/europe" component={HomeEurope} />
 
       {/* US routes */}
-      <Route path="/us" component={HomeUS} />
+      <Route path="/us"><CountryRedirect country="us" to="/" /></Route>
       <Route path="/us/medical-lookup" component={MedicalConditionLookupUS} />
       <Route path="/us/cadet-eligibility" component={CadetEligibilityUS} />
       <Route path="/us/calculator" component={CalculatorUS} />

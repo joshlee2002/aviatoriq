@@ -4,6 +4,7 @@ import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import EmailCapture from "@/components/EmailCapture";
 import { trpc } from "@/lib/trpc";
+import { useCountry } from "@/contexts/CountryContext";
 import {
   Plane,
   ArrowRight,
@@ -34,6 +35,255 @@ import {
   MonitorPlay,
 } from "lucide-react";
 
+// ─── Per-country config ─────────────────────────────────────────────────────
+interface HomeCountryConfig {
+  flag: string;
+  label: string;
+  regulator: string;
+  seoTitle: string;
+  seoDescription: string;
+  heroHeadline: string;
+  heroSub: string;
+  roadmapHref: string;
+  heroBadges: string[];
+  sampleCandidate: { initials: string; name: string; route: string; budget: string; timeline: string; barrier: string };
+  sampleSchools: { name: string; match: string; location: string }[];
+  featuredGuides: { title: string; href: string; time: string; icon: string }[];
+  guidesIndexHref: string;
+  guidesIndexLabel: string;
+  emailSource: string;
+  emailHeadline: string;
+  emailSubtext: string;
+  financeGuideHref: string;
+}
+
+const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
+  uk: {
+    flag: "🇬🇧", label: "United Kingdom", regulator: "CAA",
+    seoTitle: "AviatorIQ – What's Really Stopping You Becoming A Pilot?",
+    seoDescription: "Find your best route into UK pilot training. Take the free AviatorIQ career assessment and get a personalised pilot training roadmap matched to real UK flight schools.",
+    heroHeadline: "Your Personalised UK Pilot Training Roadmap",
+    heroSub: "UK pilot training is complex and expensive. AviatorIQ cuts through the noise — answer 5 questions and get a personalised CAA training roadmap, real 2026 costs, and matched UK flight schools.",
+    roadmapHref: "/roadmap",
+    heroBadges: ["Free · No registration", "Real 2026 UK costs", "Matched UK flight schools"],
+    sampleCandidate: { initials: "JM", name: "Jamie, 24 — London", route: "Integrated ATPL", budget: "£90k–£130k", timeline: "Within 12 months", barrier: "Finance" },
+    sampleSchools: [
+      { name: "Oxford Aviation Academy", match: "98%", location: "Oxford, UK" },
+      { name: "Acron Aviation Academy", match: "94%", location: "Bournemouth, UK" },
+      { name: "FTE Jerez", match: "91%", location: "Jerez, Spain" },
+    ],
+    featuredGuides: [
+      { title: "How to become a pilot in the UK", href: "/guides/how-to-become-a-pilot", time: "8 min read", icon: "🛫" },
+      { title: "Integrated vs Modular training", href: "/guides/integrated-vs-modular", time: "6 min read", icon: "⚖️" },
+      { title: "What is a CAA Class 1 Medical?", href: "/guides/class-1-medical", time: "5 min read", icon: "🩺" },
+      { title: "UK airline pilot salary 2026", href: "/guides/uk-pilot-salary-2026", time: "7 min read", icon: "💰" },
+      { title: "How long does training take?", href: "/guides/training-timeline", time: "5 min read", icon: "📅" },
+      { title: "How to finance pilot training", href: "/guides/how-to-finance-pilot-training-uk", time: "6 min read", icon: "🏦" },
+    ],
+    guidesIndexHref: "/guides", guidesIndexLabel: "All UK guides →",
+    emailSource: "global_homepage",
+    emailHeadline: "Get the free UK Pilot Training Guide 2026",
+    emailSubtext: "Everything you need to know about becoming a pilot in the UK — CAA costs, routes, medical requirements, and how to get your first airline job.",
+    financeGuideHref: "/guides/how-to-finance-pilot-training-uk",
+  },
+  us: {
+    flag: "🇺🇸", label: "United States", regulator: "FAA",
+    seoTitle: "AviatorIQ US — FAA Pilot Training Guidance, Costs & Flight Schools 2026",
+    seoDescription: "The most personalised pilot training guidance platform for the US. Part 141 vs 61, FAA medical requirements, ATP costs, airline cadet programmes, and the best US flight schools.",
+    heroHeadline: "Your Personalised FAA Pilot Training Roadmap",
+    heroSub: "Part 141 or Part 61? ATP or CPL? How much will it actually cost? Answer 5 questions and get a specific, data-driven roadmap — your exact FAA route, real 2026 costs, timeline, and matched US flight schools.",
+    roadmapHref: "/roadmap",
+    heroBadges: ["Free · No registration", "Real 2026 FAA costs", "Matched US flight schools"],
+    sampleCandidate: { initials: "AJ", name: "Alex, 26 — Dallas, TX", route: "Part 141 Accelerated", budget: "$80k–$120k", timeline: "Within 12 months", barrier: "Finance" },
+    sampleSchools: [
+      { name: "ATP Flight School", match: "97%", location: "Dallas, TX" },
+      { name: "Embry-Riddle Aeronautical", match: "93%", location: "Daytona Beach, FL" },
+      { name: "Sierra Academy", match: "89%", location: "Oakland, CA" },
+    ],
+    featuredGuides: [
+      { title: "How to become a pilot in the US", href: "/us/guides/how-to-become-a-pilot", time: "8 min read", icon: "🛫" },
+      { title: "Part 141 vs Part 61 training", href: "/us/guides/part-61-vs-141", time: "6 min read", icon: "⚖️" },
+      { title: "FAA medical requirements", href: "/us/guides/faa-medical-requirements", time: "5 min read", icon: "🩺" },
+      { title: "US airline pilot salary 2026", href: "/us/guides/airline-pilot-salary-usa", time: "7 min read", icon: "💰" },
+      { title: "GI Bill® flight training", href: "/us/guides/gi-bill-flight-training", time: "5 min read", icon: "🎖️" },
+      { title: "How to fund pilot training in the US", href: "/us/guides/how-to-fund-pilot-training-usa", time: "6 min read", icon: "🏦" },
+    ],
+    guidesIndexHref: "/guides", guidesIndexLabel: "All US guides →",
+    emailSource: "us_homepage",
+    emailHeadline: "Get the free US Pilot Training Guide 2026",
+    emailSubtext: "Everything you need to know about becoming a pilot in the US — FAA costs, routes, medical, and airline cadet programmes.",
+    financeGuideHref: "/us/guides/how-to-fund-pilot-training-usa",
+  },
+  australia: {
+    flag: "🇦🇺", label: "Australia", regulator: "CASA",
+    seoTitle: "AviatorIQ Australia — CASA Pilot Training Guidance & Costs 2026",
+    seoDescription: "Personalised pilot training guidance for Australia. CASA CPL/ATPL requirements, medical standards, training costs, and matched Australian flight schools.",
+    heroHeadline: "Your Personalised CASA Pilot Training Roadmap",
+    heroSub: "CASA CPL or ATPL? How much will training actually cost in Australia? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched Australian flight schools.",
+    roadmapHref: "/roadmap",
+    heroBadges: ["Free · No registration", "Real 2026 CASA costs", "Matched Australian schools"],
+    sampleCandidate: { initials: "SB", name: "Sam, 23 — Sydney", route: "Integrated ATPL", budget: "A$100k–A$150k", timeline: "Within 12 months", barrier: "Finance" },
+    sampleSchools: [
+      { name: "Qantas Group Pilot Academy", match: "96%", location: "Toowoomba, QLD" },
+      { name: "CASA Aviation Academy", match: "92%", location: "Melbourne, VIC" },
+      { name: "Flight Training Adelaide", match: "88%", location: "Adelaide, SA" },
+    ],
+    featuredGuides: [
+      { title: "How to become a pilot in Australia", href: "/guides/how-to-become-a-pilot-australia", time: "8 min read", icon: "🛫" },
+      { title: "CASA CPL requirements", href: "/australia/guides/casa-cpl-requirements", time: "6 min read", icon: "📋" },
+      { title: "CASA Class 1 Medical", href: "/australia/guides/casa-medical-class-1", time: "5 min read", icon: "🩺" },
+      { title: "Australia pilot salary 2026", href: "/australia/guides/australia-pilot-salary-2026", time: "7 min read", icon: "💰" },
+      { title: "Qantas Group Pilot Academy", href: "/australia/guides/qantas-group-pilot-academy", time: "6 min read", icon: "✈️" },
+      { title: "Australia pilot training costs", href: "/australia/guides/australia-pilot-training-costs", time: "6 min read", icon: "🏦" },
+    ],
+    guidesIndexHref: "/guides", guidesIndexLabel: "All Australia guides →",
+    emailSource: "australia_homepage",
+    emailHeadline: "Get the free Australia Pilot Training Guide 2026",
+    emailSubtext: "CASA requirements, training costs, cadet programmes, and how to get your first airline job in Australia.",
+    financeGuideHref: "/australia/guides/australia-pilot-training-costs",
+  },
+  canada: {
+    flag: "🇨🇦", label: "Canada", regulator: "Transport Canada",
+    seoTitle: "AviatorIQ Canada — Transport Canada Pilot Training Guidance & Costs 2026",
+    seoDescription: "Personalised pilot training guidance for Canada. Transport Canada CPL/ATPL requirements, medical standards, training costs, and matched Canadian flight schools.",
+    heroHeadline: "Your Personalised Canada Pilot Training Roadmap",
+    heroSub: "Transport Canada CPL or ATPL? How much will training cost in Canada? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched Canadian flight schools.",
+    roadmapHref: "/roadmap",
+    heroBadges: ["Free · No registration", "Real 2026 TC costs", "Matched Canadian schools"],
+    sampleCandidate: { initials: "MC", name: "Mike, 25 — Toronto", route: "Integrated ATPL", budget: "C$90k–C$140k", timeline: "Within 12 months", barrier: "Finance" },
+    sampleSchools: [
+      { name: "Seneca College Aviation", match: "95%", location: "Toronto, ON" },
+      { name: "Coastal Pacific Aviation", match: "91%", location: "Kelowna, BC" },
+      { name: "Harv's Air", match: "87%", location: "Steinbach, MB" },
+    ],
+    featuredGuides: [
+      { title: "How to become a pilot in Canada", href: "/guides/how-to-become-a-pilot-canada", time: "8 min read", icon: "🛫" },
+      { title: "Transport Canada CPL requirements", href: "/canada/guides/transport-canada-cpl-requirements", time: "6 min read", icon: "📋" },
+      { title: "TC Class 1 Medical", href: "/canada/guides/tc-medical-class-1", time: "5 min read", icon: "🩺" },
+      { title: "Canada pilot salary 2026", href: "/canada/guides/canada-pilot-salary-2026", time: "7 min read", icon: "💰" },
+      { title: "Air Canada Jazz cadet programme", href: "/canada/guides/air-canada-jazz-cadet", time: "6 min read", icon: "✈️" },
+      { title: "Canada pilot training costs", href: "/canada/guides/canada-pilot-training-costs", time: "6 min read", icon: "🏦" },
+    ],
+    guidesIndexHref: "/guides", guidesIndexLabel: "All Canada guides →",
+    emailSource: "canada_homepage",
+    emailHeadline: "Get the free Canada Pilot Training Guide 2026",
+    emailSubtext: "Transport Canada requirements, training costs, cadet programmes, and how to get your first airline job in Canada.",
+    financeGuideHref: "/canada/guides/canada-pilot-training-costs",
+  },
+  europe: {
+    flag: "🇪🇺", label: "Europe", regulator: "EASA",
+    seoTitle: "AviatorIQ Europe — EASA Pilot Training Guidance & Costs 2026",
+    seoDescription: "Personalised pilot training guidance for Europe. EASA CPL/ATPL requirements, medical standards, training costs, and matched European flight schools.",
+    heroHeadline: "Your Personalised EASA Pilot Training Roadmap",
+    heroSub: "EASA integrated or modular? How much will training cost in Europe? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched European flight schools.",
+    roadmapHref: "/roadmap",
+    heroBadges: ["Free · No registration", "Real 2026 EASA costs", "Matched European schools"],
+    sampleCandidate: { initials: "LP", name: "Lukas, 22 — Berlin", route: "Integrated ATPL", budget: "€80k–€120k", timeline: "Within 12 months", barrier: "Finance" },
+    sampleSchools: [
+      { name: "Lufthansa European Flight Academy", match: "96%", location: "Bremen, Germany" },
+      { name: "FTE Jerez", match: "92%", location: "Jerez, Spain" },
+      { name: "CAE Oxford (Amsterdam)", match: "88%", location: "Amsterdam, NL" },
+    ],
+    featuredGuides: [
+      { title: "How to become a pilot in Europe", href: "/guides/how-to-become-a-pilot-europe", time: "8 min read", icon: "🛫" },
+      { title: "EASA CPL requirements", href: "/europe/guides/easa-cpl-requirements", time: "6 min read", icon: "📋" },
+      { title: "EASA Class 1 Medical", href: "/europe/guides/easa-medical-class-1", time: "5 min read", icon: "🩺" },
+      { title: "Europe pilot salary 2026", href: "/europe/guides/pilot-salary-2026", time: "7 min read", icon: "💰" },
+      { title: "Lufthansa European Flight Academy", href: "/europe/guides/lufthansa-european-flight-academy", time: "6 min read", icon: "✈️" },
+      { title: "Europe pilot training costs", href: "/europe/guides/pilot-training-costs", time: "6 min read", icon: "🏦" },
+    ],
+    guidesIndexHref: "/guides", guidesIndexLabel: "All Europe guides →",
+    emailSource: "europe_homepage",
+    emailHeadline: "Get the free Europe Pilot Training Guide 2026",
+    emailSubtext: "EASA requirements, training costs, cadet programmes, and how to get your first airline job in Europe.",
+    financeGuideHref: "/europe/guides/pilot-training-costs",
+  },
+  "new-zealand": {
+    flag: "🇳🇿", label: "New Zealand", regulator: "CAA NZ",
+    seoTitle: "AviatorIQ New Zealand — CAA NZ Pilot Training Guidance & Costs 2026",
+    seoDescription: "Personalised pilot training guidance for New Zealand. CAA NZ requirements, training costs, and matched NZ flight schools.",
+    heroHeadline: "Your Personalised NZ Pilot Training Roadmap",
+    heroSub: "CAA NZ CPL or ATPL? How much will training cost in New Zealand? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched NZ flight schools.",
+    roadmapHref: "/roadmap",
+    heroBadges: ["Free · No registration", "Real 2026 NZ costs", "Matched NZ schools"],
+    sampleCandidate: { initials: "TW", name: "Tom, 24 — Auckland", route: "Integrated ATPL", budget: "NZ$90k–NZ$130k", timeline: "Within 12 months", barrier: "Finance" },
+    sampleSchools: [
+      { name: "Air New Zealand Cadet Programme", match: "95%", location: "Auckland, NZ" },
+      { name: "Massey University Aviation", match: "90%", location: "Palmerston North, NZ" },
+      { name: "New Zealand Aviation Academy", match: "86%", location: "Hamilton, NZ" },
+    ],
+    featuredGuides: [
+      { title: "NZ CPL requirements", href: "/new-zealand/guides/nz-cpl-requirements", time: "6 min read", icon: "📋" },
+      { title: "NZ Class 1 Medical", href: "/new-zealand/guides/nz-medical-class-1", time: "5 min read", icon: "🩺" },
+      { title: "NZ pilot salary 2026", href: "/new-zealand/guides/new-zealand-pilot-salary-2026", time: "7 min read", icon: "💰" },
+      { title: "Air New Zealand cadet programme", href: "/new-zealand/guides/air-new-zealand-cadet-pilot-training", time: "6 min read", icon: "✈️" },
+      { title: "NZ pilot training costs", href: "/new-zealand/guides/new-zealand-pilot-training-costs", time: "6 min read", icon: "🏦" },
+      { title: "Best flight schools NZ", href: "/new-zealand/guides/best-flight-schools-new-zealand", time: "5 min read", icon: "🏫" },
+    ],
+    guidesIndexHref: "/guides", guidesIndexLabel: "All NZ guides →",
+    emailSource: "nz_homepage",
+    emailHeadline: "Get the free NZ Pilot Training Guide 2026",
+    emailSubtext: "CAA NZ requirements, training costs, and how to get your first airline job in New Zealand.",
+    financeGuideHref: "/new-zealand/guides/new-zealand-pilot-training-costs",
+  },
+  "south-africa": {
+    flag: "🇿🇦", label: "South Africa", regulator: "SACAA",
+    seoTitle: "AviatorIQ South Africa — SACAA Pilot Training Guidance & Costs 2026",
+    seoDescription: "Personalised pilot training guidance for South Africa. SACAA requirements, training costs, and matched SA flight schools.",
+    heroHeadline: "Your Personalised SA Pilot Training Roadmap",
+    heroSub: "SACAA CPL or ATPL? How much will training cost in South Africa? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched SA flight schools.",
+    roadmapHref: "/roadmap",
+    heroBadges: ["Free · No registration", "Real 2026 SA costs", "Matched SA schools"],
+    sampleCandidate: { initials: "KM", name: "Kyle, 23 — Cape Town", route: "Integrated ATPL", budget: "R800k–R1.2m", timeline: "Within 12 months", barrier: "Finance" },
+    sampleSchools: [
+      { name: "43 Air School", match: "95%", location: "Port Elizabeth, SA" },
+      { name: "Comair Aviation Academy", match: "90%", location: "Johannesburg, SA" },
+      { name: "Stellenbosch Flying Club", match: "85%", location: "Stellenbosch, SA" },
+    ],
+    featuredGuides: [
+      { title: "SACAA CPL requirements", href: "/south-africa/guides/sacpl-requirements", time: "6 min read", icon: "📋" },
+      { title: "SACAA Class 1 Medical", href: "/south-africa/guides/sacaa-class-1-medical-certificate", time: "5 min read", icon: "🩺" },
+      { title: "SA pilot salary 2026", href: "/south-africa/guides/pilot-salary-2026", time: "7 min read", icon: "💰" },
+      { title: "Best flight schools SA", href: "/south-africa/guides/best-flight-schools-south-africa", time: "5 min read", icon: "🏫" },
+      { title: "SA pilot training costs", href: "/south-africa/guides/pilot-training-costs", time: "6 min read", icon: "🏦" },
+      { title: "SA regional airlines guide", href: "/south-africa/guides/south-africa-regional-airlines-pilot-training", time: "6 min read", icon: "✈️" },
+    ],
+    guidesIndexHref: "/guides", guidesIndexLabel: "All SA guides →",
+    emailSource: "sa_homepage",
+    emailHeadline: "Get the free SA Pilot Training Guide 2026",
+    emailSubtext: "SACAA requirements, training costs, and how to get your first airline job in South Africa.",
+    financeGuideHref: "/south-africa/guides/pilot-training-costs",
+  },
+  uae: {
+    flag: "🇦🇪", label: "UAE", regulator: "GCAA",
+    seoTitle: "AviatorIQ UAE — GCAA Pilot Training, Emirates & Etihad Cadet 2026",
+    seoDescription: "Personalised pilot training guidance for the UAE. GCAA requirements, Emirates and Etihad cadet programmes, training costs, and matched UAE flight schools.",
+    heroHeadline: "Your Personalised UAE Pilot Training Roadmap",
+    heroSub: "Emirates, Etihad, or Air Arabia cadet? How much will training cost in the UAE? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched UAE flight schools.",
+    roadmapHref: "/roadmap",
+    heroBadges: ["Free · No registration", "Real 2026 UAE costs", "Emirates & Etihad cadet info"],
+    sampleCandidate: { initials: "OA", name: "Omar, 24 — Dubai", route: "Integrated ATPL", budget: "AED 350k–500k", timeline: "Within 12 months", barrier: "Eligibility" },
+    sampleSchools: [
+      { name: "Emirates Flight Training Academy", match: "96%", location: "Dubai, UAE" },
+      { name: "Etihad Aviation Training", match: "92%", location: "Abu Dhabi, UAE" },
+      { name: "CAE Oxford (Dubai)", match: "87%", location: "Dubai, UAE" },
+    ],
+    featuredGuides: [
+      { title: "How to become a pilot in the UAE", href: "/uae/guides/how-to-become-a-pilot-uae", time: "8 min read", icon: "🛫" },
+      { title: "Emirates Cadet Pilot Program", href: "/uae/guides/emirates-cadet-pilot-program", time: "6 min read", icon: "✈️" },
+      { title: "Etihad Cadet Pilot Program", href: "/uae/guides/etihad-cadet-pilot-program", time: "6 min read", icon: "✈️" },
+      { title: "UAE pilot salary 2026", href: "/uae/guides/uae-pilot-salary-2026", time: "7 min read", icon: "💰" },
+      { title: "UAE pilot training costs", href: "/uae/guides/uae-pilot-training-costs", time: "6 min read", icon: "🏦" },
+      { title: "UAE Class 1 Medical", href: "/uae/guides/uae-medical-class-1", time: "5 min read", icon: "🩺" },
+    ],
+    guidesIndexHref: "/guides", guidesIndexLabel: "All UAE guides →",
+    emailSource: "uae_homepage",
+    emailHeadline: "Get the free UAE Pilot Training Guide 2026",
+    emailSubtext: "GCAA requirements, Emirates and Etihad cadet programmes, training costs, and how to get your first airline job in the UAE.",
+    financeGuideHref: "/uae/guides/uae-pilot-training-costs",
+  },
+};
+
 // ─── Shared style tokens ──────────────────────────────────────────────────────
 const surface = "oklch(0.14 0.08 250)";
 const surfaceHover = "oklch(0.17 0.08 250)";
@@ -44,7 +294,7 @@ const brandGradient = "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0
 const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
-function HeroSection() {
+function HeroSection({ cfg }: { cfg: HomeCountryConfig }) {
   const statsQuery = trpc.platform.stats.useQuery(undefined, { staleTime: 60_000 });
   const stats = statsQuery.data;
 
@@ -97,30 +347,30 @@ function HeroSection() {
               style={{ background: "oklch(1 0 0 / 0.07)", border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.75 0.04 240)" }}
             >
               <div className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-              Free · No registration · 🇬🇧 UK · 🇺🇸 USA · 8 countries
+              Free · No registration · {cfg.flag} {cfg.label}
             </div>
 
             <h1
               className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-display font-bold text-white mb-4 leading-[1.1] animate-fade-in-up"
               style={{ letterSpacing: "-0.02em" }}
             >
-              Your Personalised{" "}
+              {cfg.heroHeadline.split(" ").slice(0, -2).join(" ")}{" "}
               <span style={{ background: ctaGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                Pilot Training Roadmap
+                {cfg.heroHeadline.split(" ").slice(-2).join(" ")}
               </span>
             </h1>
 
             <p className="text-base md:text-lg mb-6 leading-relaxed animate-fade-in-up delay-100" style={{ color: "oklch(0.72 0.04 240)" }}>
-              AviatorIQ helps aspiring pilots understand their best training route, realistic costs, and matched flight schools — based on their country, budget, and situation. Answer 5 questions and get a free, personalised roadmap. No generic advice.
+              {cfg.heroSub}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-200">
               <Link
-                href="/roadmap"
+                href={cfg.roadmapHref}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white no-underline transition-all"
                 style={{ background: ctaGradient, boxShadow: "0 0 30px oklch(0.72 0.18 65 / 0.35)" }}
               >
-                Generate My Free Pilot Roadmap
+                Generate My Free {cfg.regulator} Roadmap
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
@@ -133,7 +383,7 @@ function HeroSection() {
             </div>
 
             <div className="flex flex-wrap items-center gap-5 mt-8 animate-fade-in-up delay-300">
-              {["Free · No registration", "Real 2026 costs & timelines", "Matched flight schools"].map((item) => (
+              {cfg.heroBadges.map((item) => (
                 <div key={item} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.6 0.04 240)" }}>
                   <CheckCircle2 className="w-3.5 h-3.5 flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }} />
                   {item}
@@ -162,7 +412,7 @@ function HeroSection() {
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: ctaGradient }}>JM</div>
                   <div>
-                    <div className="text-sm font-semibold text-white">Jamie, 24 — Sydney</div>
+                    <div className="text-sm font-semibold text-white">{cfg.sampleCandidate.name}</div>
                     <div className="text-xs" style={{ color: "oklch(0.6 0.04 240)" }}>Goal: Airline Pilot (ATPL)</div>
                   </div>
                   <div className="ml-auto text-right">
@@ -172,10 +422,10 @@ function HeroSection() {
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   {[
-                    { label: "Route", value: "Integrated ATPL" },
-                    { label: "Budget", value: "$80k–$140k" },
-                    { label: "Timeline", value: "Within 12 months" },
-                    { label: "Top barrier", value: "Finance" },
+                    { label: "Route", value: cfg.sampleCandidate.route },
+                    { label: "Budget", value: cfg.sampleCandidate.budget },
+                    { label: "Timeline", value: cfg.sampleCandidate.timeline },
+                    { label: "Top barrier", value: cfg.sampleCandidate.barrier },
                   ].map(item => (
                     <div key={item.label} className="rounded-lg px-3 py-2" style={{ background: "oklch(1 0 0 / 0.05)" }}>
                       <div className="text-[10px] uppercase tracking-wider mb-0.5" style={{ color: "oklch(0.5 0.04 240)" }}>{item.label}</div>
@@ -189,11 +439,7 @@ function HeroSection() {
               <div>
                 <div className="text-[10px] font-semibold uppercase tracking-widest mb-2 flex items-center gap-1.5" style={{ color: "oklch(0.4 0.04 240)" }}>Example Matched Schools <span className="text-[9px] px-1.5 py-0.5 rounded font-normal" style={{ background: "oklch(1 0 0 / 0.06)", color: "oklch(0.5 0.04 240)" }}>Illustrative only</span></div>
                 <div className="space-y-1.5">
-                  {[
-                    { name: "Oxford Aviation Academy", match: "98%", location: "Oxford, UK" },
-                    { name: "ATP Flight School", match: "94%", location: "Phoenix, USA" },
-                    { name: "CASA Aviation Academy", match: "91%", location: "Melbourne, AU" },
-                  ].map(school => (
+                  {cfg.sampleSchools.map(school => (
                     <div
                       key={school.name}
                       className="flex items-center justify-between px-3 py-2.5 rounded-lg"
@@ -583,7 +829,7 @@ function AfterTrainingSection() {
 }
 
 // ─── Cost Section ─────────────────────────────────────────────────────────────
-function CostSection() {
+function CostSection({ cfg }: { cfg: HomeCountryConfig }) {
   const costData = [
     { route: "Integrated ATPL", range: "£80k–£120k / $100k–$150k", duration: "18–24 months", flag: "✈️", color: "oklch(0.45 0.18 240)" },
     { route: "Modular ATPL", range: "£40k–£80k / $50k–$100k", duration: "3–5 years", flag: "🎓", color: "oklch(0.6 0.18 200)" },
@@ -648,7 +894,7 @@ function CostSection() {
                 </li>
               ))}
             </ul>
-            <Link href="/guides/finance-guide" className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline transition-all" style={{ color: "oklch(0.72 0.18 65)" }}>
+            <Link href={cfg.financeGuideHref} className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline transition-all" style={{ color: "oklch(0.72 0.18 65)" }}>
               Read the finance guide
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -704,15 +950,8 @@ function SchoolMatchingSection() {
 }
 
 // ─── Guides ───────────────────────────────────────────────────────────────────
-function GuidesSection() {
-  const guides = [
-    { title: "How to become a pilot", href: "/guides/how-to-become-a-pilot", time: "8 min read", icon: "🛫" },
-    { title: "Integrated vs Modular training", href: "/guides/integrated-vs-modular", time: "6 min read", icon: "⚖️" },
-    { title: "What is a Class 1 Medical?", href: "/guides/class-1-medical", time: "5 min read", icon: "🩺" },
-    { title: "Airline pilot salary guide", href: "/guides/airline-pilot-salary", time: "7 min read", icon: "💰" },
-    { title: "How long does training take?", href: "/guides/training-timeline", time: "5 min read", icon: "📅" },
-    { title: "Can I afford pilot training?", href: "/guides/finance-guide", time: "6 min read", icon: "🏦" },
-  ];
+function GuidesSection({ cfg }: { cfg: HomeCountryConfig }) {
+  const guides = cfg.featuredGuides;
 
   return (
     <section className="section" style={{ background: "oklch(0.13 0.09 250)" }}>
@@ -724,8 +963,8 @@ function GuidesSection() {
             </h2>
             <p style={{ color: muted }}>Everything you need to understand before you start.</p>
           </div>
-          <Link href="/guides" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white/70 no-underline transition-all hover:text-white whitespace-nowrap" style={{ background: "oklch(1 0 0 / 0.06)", border: `1px solid ${border}` }}>
-            All guides →
+          <Link href={cfg.guidesIndexHref} className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white/70 no-underline transition-all hover:text-white whitespace-nowrap" style={{ background: "oklch(1 0 0 / 0.06)", border: `1px solid ${border}` }}>
+            {cfg.guidesIndexLabel}
           </Link>
         </div>
 
@@ -800,11 +1039,14 @@ function CtaBannerSection() {
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 export default function Home() {
+  const { country } = useCountry();
+  const cfg = HOME_CONFIGS[country ?? "uk"] ?? HOME_CONFIGS["uk"];
+
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="AviatorIQ – What's Really Stopping You Becoming A Pilot?"
-        description="Find your best route into pilot training. Take the free AviatorIQ career assessment and get a personalised pilot training roadmap matched to real flight schools."
+        title={cfg.seoTitle}
+        description={cfg.seoDescription}
         canonical="/"
         schema={{
           "@context": "https://schema.org",
@@ -821,23 +1063,23 @@ export default function Home() {
       />
       <PublicNav />
       <main className="flex-1">
-        <HeroSection />
+        <HeroSection cfg={cfg} />
         <SocialProofBar />
         <HowItWorksSection />
         <ExpertCredibilitySection />
         <QuizTeaserSection />
-      <TrainingRoutesSection />
-      <AfterTrainingSection />
-      <CostSection />
+        <TrainingRoutesSection />
+        <AfterTrainingSection />
+        <CostSection cfg={cfg} />
         <SchoolMatchingSection />
-        <GuidesSection />
+        <GuidesSection cfg={cfg} />
         <CtaBannerSection />
         {/* Email Capture Section */}
         <section style={{ padding: "4rem 1.5rem", maxWidth: "600px", margin: "0 auto" }}>
           <EmailCapture
-            source="global_homepage"
-            headline="Get the free Pilot Training Guide 2026"
-            subtext="Everything you need to know about becoming a pilot — costs, routes, medical requirements, and how to get your first airline job. Sent straight to your inbox."
+            source={cfg.emailSource}
+            headline={cfg.emailHeadline}
+            subtext={cfg.emailSubtext}
             ctaLabel="Send me the free guide"
             variant="card"
           />
