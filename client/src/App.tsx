@@ -34,6 +34,12 @@ import Schools from "./pages/Schools";
 import Calculator from "./pages/Calculator";
 import GuidesIndex from "./pages/GuidesIndex";
 import GuidesIndexUS from "./pages/GuidesIndexUS";
+import GuidesIndexAustralia from "./pages/GuidesIndexAustralia";
+import GuidesIndexCanada from "./pages/GuidesIndexCanada";
+import GuidesIndexEurope from "./pages/GuidesIndexEurope";
+import GuidesIndexNewZealand from "./pages/GuidesIndexNewZealand";
+import GuidesIndexSouthAfrica from "./pages/GuidesIndexSouthAfrica";
+import GuidesIndexUAE from "./pages/GuidesIndexUAE";
 
 // Guide pages
 import HowToBecomePilot from "./pages/guides/HowToBecomePilot";
@@ -587,6 +593,15 @@ function Router() {
       <Route path="/us/guides/airline-interview-prep" component={AirlineInterviewPrepUSA} />
       <Route path="/guides/pilot-lifestyle-uk" component={PilotLifestyleUK} />
       <Route path="/uae/guides/how-to-become-a-pilot-uae" component={HowToBecomePilotUAE} />
+      {/* Regional guide index pages */}
+      <Route path="/australia/guides" component={GuidesIndexAustralia} />
+      <Route path="/canada/guides" component={GuidesIndexCanada} />
+      <Route path="/europe/guides" component={GuidesIndexEurope} />
+      <Route path="/new-zealand/guides" component={GuidesIndexNewZealand} />
+      <Route path="/south-africa/guides" component={GuidesIndexSouthAfrica} />
+      <Route path="/uae/guides" component={GuidesIndexUAE} />
+      {/* Missing US guide route */}
+      <Route path="/us/guides/us-pilot-shortage-2026" component={UsPilotShortage2026} />
       {/* Hub pages */}
       <Route path="/hubs/pilot-training-costs" component={PilotTrainingCostsHub} />
       <Route path="/hubs/pilot-medical" component={PilotMedicalHub} />
