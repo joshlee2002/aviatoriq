@@ -47,11 +47,7 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
       { label: "Route Selector", href: "/tools/route-selector", desc: "Answer 5 questions to find your ideal training route", icon: "🧭" },
     ],
     announcements: [
-      { text: "New guide: BA Speedbird Academy 2026 requirements", href: "/guides/ba-speedbird-academy" },
-      { text: "New tool: Medical Condition Lookup — check any condition against Class 1 standards", href: "/tools/medical-condition-lookup" },
-      { text: "New guide: Can you become a pilot with ADHD? 2026 CAA rules explained", href: "/guides/adhd-pilot-uk" },
-      { text: "New tool: Cadet Eligibility Checker — find which airline programmes you qualify for", href: "/tools/cadet-eligibility" },
-      { text: "New guide: Integrated vs Modular ATPL — which is actually cheaper in 2026?", href: "/guides/integrated-vs-modular-cost" },
+      { text: "New guide: BA Speedbird Academy 2026 — full requirements and selection process", href: "/guides/ba-speedbird-academy" },
     ],
   },
   us: {
@@ -70,10 +66,6 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     ],
     announcements: [
       { text: "New guide: Delta Propel Program — how to get selected in 2026", href: "/us/guides/delta-propel-program" },
-      { text: "New tool: FAA Medical Condition Lookup — check your eligibility", href: "/tools/medical-condition-lookup" },
-      { text: "New guide: United Aviate Academy — requirements, timeline & pay", href: "/us/guides/united-aviate-program" },
-      { text: "New tool: Cadet Eligibility Checker — find your US airline programme", href: "/tools/cadet-eligibility" },
-      { text: "New guide: ATP Flight School — full 2026 review and costs", href: "/us/guides/atp-flight-school-guide" },
     ],
   },
   australia: {
@@ -86,11 +78,7 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     ],
     toolLinks: SHARED_TOOLS,
     announcements: [
-      { text: "New guide: How to become a pilot in Australia — 2026 CASA guide", href: "/australia/guides/how-to-become-a-pilot-australia" },
-      { text: "New tool: Medical Condition Lookup — check CASA Class 1 standards", href: "/tools/medical-condition-lookup" },
-      { text: "New guide: Qantas Group Pilot Academy — 2026 requirements", href: "/australia/guides/qantas-group-pilot-academy" },
-      { text: "New guide: Australian pilot salary guide 2026", href: "/australia/guides/pilot-salary-australia" },
-      { text: "New tool: Pilot Roadmap Generator — find your Australian training path", href: "/roadmap" },
+      { text: "New guide: Qantas Group Pilot Academy — 2026 requirements and selection", href: "/australia/guides/qantas-group-pilot-academy" },
     ],
   },
   canada: {
@@ -103,11 +91,7 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     ],
     toolLinks: SHARED_TOOLS,
     announcements: [
-      { text: "New guide: How to become a pilot in Canada — 2026 Transport Canada guide", href: "/canada/guides/how-to-become-a-pilot-canada" },
-      { text: "New tool: Medical Condition Lookup — check Transport Canada Class 1 standards", href: "/tools/medical-condition-lookup" },
-      { text: "New guide: Canadian pilot salary guide 2026", href: "/canada/guides/pilot-salary-canada" },
-      { text: "New guide: Air Canada Pathways Program — 2026 requirements", href: "/canada/guides/air-canada-pathways" },
-      { text: "New tool: Pilot Roadmap Generator — find your Canadian training path", href: "/roadmap" },
+      { text: "New guide: Air Canada Pathways Program — 2026 requirements and timeline", href: "/canada/guides/air-canada-pathways" },
     ],
   },
   europe: {
@@ -123,11 +107,7 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
       { label: "Integrated vs Modular", href: "/tools/integrated-vs-modular", desc: "Find the right EASA training route", icon: "⚖️" },
     ],
     announcements: [
-      { text: "New guide: How to become a pilot in Europe — 2026 EASA guide", href: "/europe/guides/how-to-become-a-pilot-europe" },
-      { text: "New tool: Medical Condition Lookup — check EASA Class 1 standards", href: "/tools/medical-condition-lookup" },
-      { text: "New guide: European pilot salary guide 2026", href: "/europe/guides/pilot-salary-europe" },
-      { text: "New guide: Ryanair Mentorship Programme — 2026 requirements", href: "/europe/guides/ryanair-mentorship" },
-      { text: "New tool: Pilot Roadmap Generator — find your European training path", href: "/roadmap" },
+      { text: "New guide: Ryanair Mentorship Programme — 2026 requirements and how to apply", href: "/europe/guides/ryanair-mentorship" },
     ],
   },
   "new-zealand": {
@@ -140,11 +120,7 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     ],
     toolLinks: SHARED_TOOLS,
     announcements: [
-      { text: "New guide: How to become a pilot in New Zealand — 2026 CAA NZ guide", href: "/new-zealand/guides/how-to-become-a-pilot-new-zealand" },
-      { text: "New tool: Medical Condition Lookup — check CAA NZ Class 1 standards", href: "/tools/medical-condition-lookup" },
-      { text: "New guide: New Zealand pilot salary guide 2026", href: "/new-zealand/guides/pilot-salary-new-zealand" },
-      { text: "New tool: Pilot Roadmap Generator — find your NZ training path", href: "/roadmap" },
-      { text: "New guide: Air New Zealand cadet programme — 2026 requirements", href: "/new-zealand/guides/air-new-zealand-cadet" },
+      { text: "New guide: Air New Zealand cadet programme — 2026 requirements and selection", href: "/new-zealand/guides/air-new-zealand-cadet" },
     ],
   },
   "south-africa": {
@@ -157,10 +133,7 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     ],
     toolLinks: SHARED_TOOLS,
     announcements: [
-      { text: "New guide: How to become a pilot in South Africa — 2026 SACAA guide", href: "/south-africa/guides/how-to-become-a-pilot-south-africa" },
-      { text: "New tool: Medical Condition Lookup — check SACAA Class 1 standards", href: "/tools/medical-condition-lookup" },
-      { text: "New guide: South African pilot salary guide 2026", href: "/south-africa/guides/pilot-salary-south-africa" },
-      { text: "New tool: Pilot Roadmap Generator — find your South African training path", href: "/roadmap" },
+      { text: "New guide: South African pilot salary guide 2026 — SACAA, airlines and career outlook", href: "/south-africa/guides/pilot-salary-south-africa" },
     ],
   },
   uae: {
@@ -173,11 +146,7 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     ],
     toolLinks: SHARED_TOOLS,
     announcements: [
-      { text: "New guide: How to become a pilot in the UAE — 2026 GCAA guide", href: "/uae/guides/how-to-become-a-pilot-uae" },
-      { text: "New tool: Medical Condition Lookup — check GCAA Class 1 standards", href: "/tools/medical-condition-lookup" },
-      { text: "New guide: Emirates and Etihad cadet programmes — 2026 requirements", href: "/uae/guides/emirates-cadet-programme" },
-      { text: "New guide: UAE pilot salary guide 2026", href: "/uae/guides/pilot-salary-uae" },
-      { text: "New tool: Pilot Roadmap Generator — find your UAE training path", href: "/roadmap" },
+      { text: "New guide: Emirates and Etihad cadet programmes — 2026 requirements and pay", href: "/uae/guides/emirates-cadet-programme" },
     ],
   },
 };
@@ -189,24 +158,11 @@ function getConfig(country: string | null): CountryNavConfig {
 
 // ─── Announcement Bar ─────────────────────────────────────────────────────────
 function AnnouncementBar({ announcements }: { announcements: Announcement[] }) {
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    setCurrent(0);
-  }, [announcements]);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent(prev => (prev + 1) % announcements.length);
-    }, 4500);
-    return () => clearInterval(timer);
-  }, [announcements]);
-
-  const ann = announcements[current];
-
+  const ann = announcements[0];
+  if (!ann) return null;
   return (
     <div
-      className="w-full text-center py-2 px-4 text-xs font-semibold flex items-center justify-center gap-2"
+      className="w-full text-center py-1.5 px-4 text-xs font-medium flex items-center justify-center gap-2"
       style={{ background: "oklch(0.55 0.20 65)", color: "oklch(0.10 0.05 50)" }}
     >
       <span
@@ -215,7 +171,7 @@ function AnnouncementBar({ announcements }: { announcements: Announcement[] }) {
       >
         NEW
       </span>
-      <a href={ann.href} className="hover:underline transition-all" style={{ color: "inherit" }}>
+      <a href={ann.href} className="hover:underline" style={{ color: "inherit" }}>
         {ann.text}
       </a>
     </div>
