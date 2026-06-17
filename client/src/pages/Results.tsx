@@ -50,6 +50,9 @@ interface FlightSchool {
   financeAvailable: "yes" | "no" | "unknown" | null;
   website: string | null;
   active: boolean;
+  description: string | null;
+  airlinePartnerships: string | null;
+  accommodationAvailable: "yes" | "no" | "unknown" | null;
 }
 
 interface RoadmapData {
@@ -456,48 +459,98 @@ export default function Results() {
             {matchedSchools.length > 0 ? (
               <>
                 <div className="space-y-3 mb-5">
-                  {(matchedSchools as FlightSchool[]).map((school) => {
+                  {(matchedSchools as FlightSchool[]).map((school, idx) => {
                     const isSelected = selectedSchoolIds.includes(school.id);
                     const isDisabled = !isSelected && selectedSchoolIds.length >= 3;
+                    const isTopPick = idx === 0;
                     return (
                       <div
                         key={school.id}
                         onClick={() => !introSubmitted && !isDisabled && toggleSchool(school.id)}
-                        className={`rounded-xl p-4 transition-all cursor-pointer ${
+                        className={`rounded-2xl transition-all cursor-pointer ${
                           introSubmitted ? "opacity-60 cursor-default" :
-                          isSelected ? "shadow-sm" :
-                          isDisabled ? "opacity-50 cursor-not-allowed" : ""
+                          isDisabled ? "opacity-40 cursor-not-allowed" : "hover:scale-[1.01]"
                         }`}
                         style={{
-                          border: isSelected ? "1px solid oklch(0.55 0.18 240)" : "1px solid oklch(1 0 0 / 0.1)",
-                          background: isSelected ? "oklch(0.55 0.18 240 / 0.12)" : "oklch(1 0 0 / 0.04)"
+                          border: isSelected
+                            ? "1.5px solid oklch(0.55 0.18 240)"
+                            : isTopPick
+                            ? "1.5px solid oklch(0.72 0.18 65 / 0.5)"
+                            : "1px solid oklch(1 0 0 / 0.1)",
+                          background: isSelected
+                            ? "oklch(0.55 0.18 240 / 0.1)"
+                            : "oklch(1 0 0 / 0.04)",
+                          boxShadow: isSelected ? "0 0 0 3px oklch(0.55 0.18 240 / 0.15)" : isTopPick ? "0 0 0 1px oklch(0.72 0.18 65 / 0.1)" : "none",
                         }}
                       >
-                        <div className="flex items-start gap-3">
+                        {/* Top pick banner */}
+                        {isTopPick && !introSubmitted && (
+                          <div className="flex items-center gap-1.5 px-4 pt-3 pb-0">
+                            <Flame className="w-3 h-3" style={{ color: "oklch(0.72 0.18 65)" }} />
+                            <span className="text-xs font-bold uppercase tracking-wider" style={{ color: "oklch(0.72 0.18 65)" }}>Top match for your profile</span>
+                          </div>
+                        )}
+                        <div className="flex items-start gap-3 p-4">
                           <Checkbox
                             checked={isSelected}
                             disabled={introSubmitted || isDisabled}
                             onCheckedChange={() => !introSubmitted && !isDisabled && toggleSchool(school.id)}
-                            className="mt-0.5 flex-shrink-0"
+                            className="mt-1 flex-shrink-0"
                             onClick={(e) => e.stopPropagation()}
                           />
                           <div className="flex-1 min-w-0">
-                            <div className="flex items-center gap-2 flex-wrap">
-                              <h3 className="font-display font-semibold text-white text-sm">{school.name}</h3>
-                              {school.financeAvailable === "yes" && (
-                                <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "oklch(0.45 0.18 145 / 0.2)", color: "oklch(0.75 0.18 145)" }}>Finance available</span>
-                              )}
+                            {/* School name + badges row */}
+                            <div className="flex items-start justify-between gap-2 flex-wrap">
+                              <h3 className="font-display font-bold text-white text-base leading-tight">{school.name}</h3>
+                              <div className="flex items-center gap-1.5 flex-wrap flex-shrink-0">
+                                {school.financeAvailable === "yes" && (
+                                  <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ background: "oklch(0.45 0.18 145 / 0.2)", color: "oklch(0.75 0.18 145)", border: "1px solid oklch(0.45 0.18 145 / 0.3)" }}>Finance</span>
+                                )}
+                                {school.accommodationAvailable === "yes" && (
+                                  <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ background: "oklch(0.55 0.18 240 / 0.15)", color: "oklch(0.75 0.15 240)", border: "1px solid oklch(0.55 0.18 240 / 0.25)" }}>Accommodation</span>
+                                )}
+                              </div>
                             </div>
-                            <p className="text-xs mt-0.5 flex items-center gap-1" style={{ color: "oklch(0.6 0 0)" }}>
-                              <MapPin className="w-3 h-3" />
-                              {[school.city, school.country].filter(Boolean).join(", ")}
-                              {school.priceRange && ` · ${convertPriceString(school.priceRange, formatPrice)}${currency.code !== "GBP" ? ` (${currency.code})` : ""}`}
+                            {/* Location + price */}
+                            <p className="text-xs mt-1 flex items-center gap-1" style={{ color: "oklch(0.6 0 0)" }}>
+                              <MapPin className="w-3 h-3 flex-shrink-0" />
+                              <span>{[school.city, school.country].filter(Boolean).join(", ")}</span>
+                              {school.priceRange && (
+                                <><span className="mx-1 opacity-30">·</span><span className="font-medium" style={{ color: "oklch(0.72 0.18 65)" }}>{convertPriceString(school.priceRange, formatPrice)}{currency.code !== "GBP" ? ` (${currency.code})` : ""}</span></>
+                              )}
                             </p>
-                            <div className="flex gap-1 mt-1.5 flex-wrap">
+                            {/* Description */}
+                            {school.description && (
+                              <p className="text-xs mt-2 leading-relaxed" style={{ color: "oklch(0.65 0.02 240)" }}>
+                                {school.description}
+                              </p>
+                            )}
+                            {/* Airline partnerships */}
+                            {school.airlinePartnerships && school.airlinePartnerships !== "NULL" && (
+                              <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: "oklch(0.55 0 0)" }}>
+                                <Plane className="w-3 h-3 flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }} />
+                                <span><span className="font-medium" style={{ color: "oklch(0.72 0.18 65)" }}>Airline partners:</span> {school.airlinePartnerships}</span>
+                              </p>
+                            )}
+                            {/* Course tags */}
+                            <div className="flex gap-1 mt-2 flex-wrap">
                               {school.integratedAtpl && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "oklch(0.55 0.18 240 / 0.15)", color: "oklch(0.75 0.15 240)" }}>Integrated ATPL</span>}
                               {school.modularAtpl && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "oklch(0.55 0.18 290 / 0.15)", color: "oklch(0.75 0.15 290)" }}>Modular ATPL</span>}
                               {school.ppl && <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: "oklch(0.45 0.18 145 / 0.15)", color: "oklch(0.75 0.18 145)" }}>PPL</span>}
                             </div>
+                            {/* Visit website link */}
+                            {school.website && (
+                              <a
+                                href={school.website}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={(e) => e.stopPropagation()}
+                                className="inline-flex items-center gap-1 text-xs mt-2 font-medium no-underline transition-opacity hover:opacity-80"
+                                style={{ color: "oklch(0.65 0.18 240)" }}
+                              >
+                                Visit website <ArrowRight className="w-3 h-3" />
+                              </a>
+                            )}
                           </div>
                         </div>
                       </div>

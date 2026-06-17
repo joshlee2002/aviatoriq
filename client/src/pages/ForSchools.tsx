@@ -49,6 +49,28 @@ type FormData = z.infer<typeof schema>;
 // ─── Pricing tiers ────────────────────────────────────────────────────────────
 const tiers = [
   {
+    id: "founding",
+    name: "Founding Partner",
+    price: "Free",
+    period: "for 3 months",
+    description: "Join our founding cohort. Get full Featured access at no cost while we build our audience together.",
+    highlight: true,
+    badge: "Limited — 10 schools only",
+    features: [
+      "Full Featured listing in the flight school directory",
+      "Receive lead introduction requests — no charge",
+      "Full lead profile on each introduction (score, budget, goal, timeline)",
+      "Explicit consent confirmed on every lead",
+      "Founding Partner badge on your school profile",
+      "Input into AviatorIQ product roadmap",
+      "First access to Premium features when launched",
+    ],
+    notIncluded: [
+      "Real-time lead notifications (Premium only)",
+    ],
+    cta: "Apply as Founding Partner",
+  },
+  {
     id: "basic",
     name: "Basic Listing",
     price: "£149",
@@ -246,7 +268,7 @@ export default function ForSchools() {
               </span>
             </h1>
             <p className="text-lg mb-8 leading-relaxed" style={{ color: "oklch(0.65 0.04 240)" }}>
-              Every candidate on AviatorIQ has completed a detailed Career Assessment — scored on readiness, finance, medical, and career clarity. You only hear from pilots who match your school and have explicitly asked to.
+              We're onboarding our first 10 founding flight school partners — free for 3 months, no contract. Every candidate has completed a detailed Career Assessment scored on readiness, finance, medical, and career clarity. You only hear from pilots who match your school and have explicitly asked to be contacted.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <button

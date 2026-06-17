@@ -31,6 +31,9 @@ import {
   MonitorPlay,
   Globe,
   X,
+  ShieldCheck,
+  CalendarCheck,
+  BadgeCheck,
 } from "lucide-react";
 
 // ─── Shared style tokens ──────────────────────────────────────────────────────
@@ -307,6 +310,49 @@ function HeroSection() {
         </div>
       </div>
     </section>
+  );
+}
+
+// ─── Trust Signal Bar ────────────────────────────────────────────────────────
+function TrustSignalBar() {
+  return (
+    <div
+      style={{
+        background: "oklch(0.13 0.06 250)",
+        borderBottom: "1px solid oklch(1 0 0 / 0.07)",
+        borderTop: "1px solid oklch(1 0 0 / 0.07)",
+      }}
+    >
+      <div className="container py-3">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
+          {[
+            {
+              icon: <BadgeCheck className="w-3.5 h-3.5 flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }} />,
+              text: "Verified school data",
+            },
+            {
+              icon: <ShieldCheck className="w-3.5 h-3.5 flex-shrink-0" style={{ color: "oklch(0.65 0.18 240)" }} />,
+              text: "UK CAA & FAA licensed routes",
+            },
+            {
+              icon: <CalendarCheck className="w-3.5 h-3.5 flex-shrink-0" style={{ color: "oklch(0.65 0.15 160)" }} />,
+              text: "Updated June 2026",
+            },
+            {
+              icon: <Globe className="w-3.5 h-3.5 flex-shrink-0" style={{ color: "oklch(0.65 0.18 200)" }} />,
+              text: "Trusted by aspiring pilots in 12+ countries",
+            },
+          ].map((item) => (
+            <div key={item.text} className="flex items-center gap-2">
+              {item.icon}
+              <span className="text-xs font-medium" style={{ color: "oklch(0.62 0.04 240)" }}>
+                {item.text}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -834,6 +880,7 @@ export default function Home() {
       <CountryDetectionBanner />
       <main className="flex-1">
         <HeroSection />
+        <TrustSignalBar />
         <SocialProofBar />
         <CountryVersionsSection />
         <HowItWorksSection />
