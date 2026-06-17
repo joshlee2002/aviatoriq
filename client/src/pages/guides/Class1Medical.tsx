@@ -1,6 +1,7 @@
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
 import GuideScopeBanner from '@/components/GuideScopeBanner';
+import Class1MedicalProcess from '@/components/diagrams/Class1MedicalProcess';
 import { Link } from 'wouter';
 
 export default function Class1Medical() {
@@ -159,6 +160,7 @@ export default function Class1Medical() {
           heading: "What the Examination Tests",
           content: (
             <>
+              <Class1MedicalProcess />
               <p>
                 The initial Class 1 examination takes approximately four hours. The CAA specifies the following components: 
               </p>

@@ -2,6 +2,7 @@ import GuideLayout from "@/components/GuideLayout";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
 import FlightSchoolFeesTable from "@/components/tables/FlightSchoolFeesTable";
 import FinanceProvidersTable from "@/components/tables/FinanceProvidersTable";
+import UKCostStackDiagram from "@/components/diagrams/UKCostStackDiagram";
 
 export default function PilotTrainingCosts() {
   return (
@@ -92,6 +93,7 @@ export default function PilotTrainingCosts() {
           heading: "The Hidden Costs of Pilot Training",
           content: (
             <>
+              <UKCostStackDiagram />
               <p>
                 The training fee is only part of the financial picture. Whether you choose integrated or modular training, you must budget for the following additional costs:
               </p>

@@ -2,6 +2,7 @@ import GuideLayout from "@/components/GuideLayout";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
 import FlightSchoolFeesTable from "@/components/tables/FlightSchoolFeesTable";
 import CadetProgrammesTable from "@/components/tables/CadetProgrammesTable";
+import UKTrainingRouteFlowchart from "@/components/diagrams/UKTrainingRouteFlowchart";
 import { Link } from "wouter";
 
 export default function HowToBecomePilot() {
@@ -77,6 +78,7 @@ export default function HowToBecomePilot() {
               <p>
                 In the UK, there are two primary routes to a commercial pilot licence (frozen ATPL): Integrated and Modular.
               </p>
+              <UKTrainingRouteFlowchart />
               <ul className="list-disc list-inside space-y-3 mt-4 mb-6">
                 <li>
                   <strong>Integrated ATPL:</strong> A full-time, highly structured course at a single flight school taking 18–24 months. It is the most expensive route (typically £90,000–£115,000) but offers the fastest path and, in some cases, direct links to airline cadet pools.

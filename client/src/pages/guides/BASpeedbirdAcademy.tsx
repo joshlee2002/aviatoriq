@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
 import CadetProgrammesTable from "@/components/tables/CadetProgrammesTable";
+import CadetProgrammeTimeline from "@/components/diagrams/CadetProgrammeTimeline";
 
 export default function BASpeedbirdAcademy() {
   return (
@@ -107,6 +108,7 @@ export default function BASpeedbirdAcademy() {
           heading: "The Selection Process",
           content: (
             <>
+              <CadetProgrammeTimeline />
               <p>
                 The selection process is notoriously brutal and is designed to filter out 99% of applicants. It typically follows this structure:
               </p>
