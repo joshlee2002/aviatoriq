@@ -73,7 +73,20 @@ function profileRow(doc: PDFKit.PDFDocument, label: string, value: string | null
 }
 
 // ─── Main generator ───────────────────────────────────────────────────────────
-export async function generatePilotBlueprint(lead: Lead, dimensions?: Record<string, number>, labels?: Record<string, string>): Promise<string> {
+export interface AiRoadmapData {
+  routeRationale?: string;
+  barrierAdvice?: string;
+  biggestBarrier?: string;
+  nextSteps?: string[];
+  estimatedCostMin?: number;
+  estimatedCostMax?: number;
+  estimatedDuration?: string;
+  medicalAdvice?: string;
+  financeConsiderations?: string;
+  recommendedRoute?: string;
+}
+
+export async function generatePilotBlueprint(lead: Lead, dimensions?: Record<string, number>, labels?: Record<string, string>, aiRoadmap?: AiRoadmapData): Promise<string> {
   return new Promise((resolve, reject) => {
     const doc = new PDFDocument({ size: "A4", margin: 50, info: { Title: "AviatorIQ Pilot Blueprint", Author: "AviatorIQ" } });
     const chunks: Buffer[] = [];
@@ -173,29 +186,26 @@ export async function generatePilotBlueprint(lead: Lead, dimensions?: Record<str
     // ── Recommended Training Route ──────────────────────────────────────────
     if (y > doc.page.height - 200) { doc.addPage(); y = 50; }
     y = sectionHeader(doc, "Recommended Training Route", y, pageWidth);
-
-    const route = lead.preferredRoute ?? "Modular ATPL";
+    const route = aiRoadmap?.recommendedRoute ?? lead.preferredRoute ?? "Modular ATPL";
     doc.fontSize(10).fillColor(DARK_GREY).font("Helvetica").text(
-      `Based on your profile, the recommended training route is: `,
+      `Recommended route: `,
       50, y, { continued: true }
     );
     doc.fontSize(10).fillColor(NAVY).font("Helvetica-Bold").text(route);
     y += 20;
-
+    // Use AI-generated rationale if available, otherwise fall back to generic description
     const routeDesc: Record<string, string> = {
       "Integrated ATPL": "An Integrated ATPL programme takes you from zero to frozen ATPL in 18–24 months at a single approved training organisation. It is the fastest route to the flight deck but requires the largest upfront investment (typically £80,000–£120,000). Airline partnerships and cadet sponsorship schemes are most commonly offered through integrated providers.",
       "Modular ATPL": "A Modular ATPL allows you to complete each licence stage (PPL → Night Rating → IR → CPL → MCC) independently, spreading costs over time. Total cost typically ranges from £45,000–£80,000. This route offers greater flexibility but requires strong self-management and takes 2–4 years.",
       "PPL": "A Private Pilot Licence (PPL) is the first step in your aviation journey. It qualifies you to fly single-engine aircraft privately. Cost: approximately £8,000–£15,000 depending on school and country. From PPL you can progress to CPL, IR, and ultimately ATPL.",
     };
-
-    const desc = routeDesc[route] ?? "Your recommended training route has been selected based on your budget, timeline, and career goal. Speak to matched schools for a detailed programme breakdown.";
+    const desc = aiRoadmap?.routeRationale ?? routeDesc[route] ?? "Your recommended training route has been selected based on your budget, timeline, and career goal. Speak to matched schools for a detailed programme breakdown.";
     doc.fontSize(9).fillColor(DARK_GREY).font("Helvetica").text(desc, 50, y, { width: contentWidth });
     y += doc.heightOfString(desc, { width: contentWidth }) + 16;
 
     // ── Cost & Timeline ─────────────────────────────────────────────────────
     if (y > doc.page.height - 200) { doc.addPage(); y = 50; }
     y = sectionHeader(doc, "Estimated Cost & Timeline", y, pageWidth);
-
     const costMap: Record<string, string> = {
       "Under £10,000": "£8,000–£15,000",
       "£10,000–£30,000": "£15,000–£35,000",
@@ -208,9 +218,11 @@ export async function generatePilotBlueprint(lead: Lead, dimensions?: Record<str
       "Modular ATPL": "2–4 years",
       "PPL": "6–18 months",
     };
-
-    const costEstimate = costMap[lead.budgetRange ?? ""] ?? "£45,000–£100,000 (varies by route and country)";
-    const timelineEstimate = timelineMap[route] ?? "18 months – 4 years";
+    // Use AI-generated cost/timeline if available
+    const costEstimate = (aiRoadmap?.estimatedCostMin && aiRoadmap?.estimatedCostMax)
+      ? `£${aiRoadmap.estimatedCostMin.toLocaleString("en-GB")}–£${aiRoadmap.estimatedCostMax.toLocaleString("en-GB")}`
+      : costMap[lead.budgetRange ?? ""] ?? "£45,000–£100,000 (varies by route and country)";
+    const timelineEstimate = aiRoadmap?.estimatedDuration ?? timelineMap[route] ?? "18 months – 4 years";
 
     doc.rect(50, y, (contentWidth / 2) - 10, 60).fill(LIGHT_GREY);
     doc.fontSize(9).fillColor(MID_GREY).font("Helvetica").text("Estimated Total Cost", 60, y + 8);
@@ -225,24 +237,40 @@ export async function generatePilotBlueprint(lead: Lead, dimensions?: Record<str
     // ── Key Risks & Biggest Barrier ─────────────────────────────────────────
     if (y > doc.page.height - 200) { doc.addPage(); y = 50; }
     y = sectionHeader(doc, "Key Risks & Your Biggest Barrier", y, pageWidth);
-
-    const concern = lead.biggestConcern ?? "Cost";
-    const barrierText = `Based on your assessment, your biggest barrier is: ${concern}. This is a common challenge for aspiring pilots at your stage. The next actions section below provides specific steps to address this.`;
+    const concern = aiRoadmap?.biggestBarrier ?? lead.biggestConcern ?? "Cost";
+    // Use AI-generated barrier advice if available
+    const barrierText = aiRoadmap?.barrierAdvice
+      ? `Your biggest barrier: ${concern}\n\n${aiRoadmap.barrierAdvice}`
+      : `Based on your assessment, your biggest barrier is: ${concern}. This is a common challenge for aspiring pilots at your stage. The next actions section below provides specific steps to address this.`;
     doc.fontSize(10).fillColor(DARK_GREY).font("Helvetica").text(barrierText, 50, y, { width: contentWidth });
     y += doc.heightOfString(barrierText, { width: contentWidth }) + 16;
+    // Finance considerations (AI-generated if available)
+    if (aiRoadmap?.financeConsiderations) {
+      const financeNote = `Finance note: ${aiRoadmap.financeConsiderations}`;
+      doc.fontSize(9).fillColor(DARK_GREY).font("Helvetica").text(financeNote, 50, y, { width: contentWidth });
+      y += doc.heightOfString(financeNote, { width: contentWidth }) + 12;
+    }
+    // Medical advice (AI-generated if available)
+    if (aiRoadmap?.medicalAdvice) {
+      const medNote = `Medical: ${aiRoadmap.medicalAdvice}`;
+      doc.fontSize(9).fillColor(DARK_GREY).font("Helvetica").text(medNote, 50, y, { width: contentWidth });
+      y += doc.heightOfString(medNote, { width: contentWidth }) + 12;
+    }
 
     // ── Your Next 5 Actions ─────────────────────────────────────────────────
     if (y > doc.page.height - 250) { doc.addPage(); y = 50; }
     y = sectionHeader(doc, "Your Next 5 Actions", y, pageWidth);
-
-    const actions = [
+    // Use AI-generated next steps if available, otherwise fall back to generic actions
+    const genericActions = [
       `Book a Class 1 Aviation Medical with a CAA-approved AME to confirm your medical fitness before committing to training costs.`,
       `Research ${route} programmes in ${lead.country ?? "your country"} — request prospectuses from the matched schools in your AviatorIQ report.`,
       `Arrange a training finance consultation if required — many schools offer payment plans and specialist aviation lenders exist.`,
       `Join an online pilot community (PPRuNe, Reddit r/flying) to connect with students currently in training on your chosen route.`,
       `Return to AviatorIQ to request introductions to your matched schools — they have been selected based on your specific profile.`,
     ];
-
+    const actions = (aiRoadmap?.nextSteps && aiRoadmap.nextSteps.length > 0)
+      ? aiRoadmap.nextSteps.slice(0, 5)
+      : genericActions;
     for (let i = 0; i < actions.length; i++) {
       // Number circle
       doc.circle(62, y + 6, 8).fill(PRIMARY);

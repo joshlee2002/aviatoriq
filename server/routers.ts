@@ -33,7 +33,7 @@ import {
   updateLead,
 } from "./db";
 import { scoreLead } from "./scoring";
-import { generatePilotBlueprint } from "./pdfReport";
+import { generatePilotBlueprint, type AiRoadmapData } from "./pdfReport";
 import { scoreLicenceQuiz } from "./licenceQuizScoring";
 import { createLicenceQuizLead, getLicenceQuizStats, updateLicenceQuizEmail, createFinanceInterest, createFlightDeckShare, getFlightDeckShare, createCalcSession, createFlightDeckEmailCapture } from "./db";
 import { nanoid } from "nanoid";
@@ -431,6 +431,39 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
 
         // Cache the roadmap
         await updateLead(lead.id, { aiRoadmap: roadmap });
+
+        // Regenerate PDF with AI roadmap content (non-blocking, best-effort)
+        // Only for real DB leads (dbLead exists), not synthetic client-side leads
+        if (dbLead) {
+          try {
+            const parsedRoadmap: AiRoadmapData = JSON.parse(roadmap);
+            const scoreForPdf = scoreLead({
+              pilotGoal: dbLead.pilotGoal,
+              seriousness: dbLead.seriousness,
+              spokenToSchool: dbLead.spokenToSchool,
+              fundingMethod: dbLead.fundingMethod,
+              budgetRange: dbLead.budgetRange,
+              wantsFinanceInfo: dbLead.wantsFinanceInfo,
+              age: dbLead.age,
+              class1Medical: dbLead.class1Medical,
+              flyingExperience: dbLead.flyingExperience,
+              rightToWorkStudy: dbLead.rightToWorkStudy,
+              phone: dbLead.phone,
+              writtenAnswer: dbLead.writtenAnswer,
+              preferredRoute: dbLead.preferredRoute,
+              country: dbLead.country,
+              startTimeframe: dbLead.startTimeframe,
+              biggestConcern: dbLead.biggestConcern,
+            });
+            generatePilotBlueprint(dbLead, scoreForPdf.dimensions, scoreForPdf.labels, parsedRoadmap)
+              .then(async (pdfUrl) => {
+                await updateLead(dbLead.id, { pdfKey: pdfUrl });
+              })
+              .catch((e) => console.warn('[PDF] AI-enriched blueprint regeneration failed:', e));
+          } catch (e) {
+            console.warn('[PDF] Could not parse roadmap for PDF regeneration:', e);
+          }
+        }
 
         return { roadmap };
       }),
