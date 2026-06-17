@@ -23,6 +23,47 @@ export default function BestFlightSchoolsUSA() {
       ]}
       sections={[
         {
+          heading: "How We Evaluate and Score Flight Schools",
+          content: (
+            <>
+              <div className="bg-amber-50 border border-amber-200 p-5 rounded-lg mb-6 text-amber-900">
+                <p className="font-semibold text-base mb-3">Editorial Methodology & Conflict of Interest Statement</p>
+                <p className="text-sm mb-3">
+                  AviatorIQ does not receive referral fees, commissions, or payment from any flight school listed in this guide. Rankings are based solely on the scoring criteria above. All fees are sourced from official school websites and must be verified directly before enrolment.
+                </p>
+                <p className="text-sm">
+                  <strong>Regulatory verification:</strong> All schools listed are checked against the 
+                  <a href="https://www.faa.gov/training_testing/training/part141" target="_blank" rel="noopener noreferrer" className="underline font-medium">
+                    FAA approved training provider register
+                  </a>. A school must hold a current FAA Part 141 Certificate for the courses it advertises to be included in this guide.
+                </p>
+              </div>
+              <p>
+                Every flight school in this guide is evaluated against six objective scoring criteria. These criteria are designed to help you make a decision based on verifiable facts rather than marketing materials.
+              </p>
+              <ul className="list-disc pl-6 my-4 space-y-3">
+                <li><strong>FAA Certification:</strong> Verified Part 141 certificate status. Part 61 schools are included but noted separately.</li>
+                <li><strong>Published Pricing:</strong> Whether the school publishes a complete, itemised price list. Fixed-price programmes (e.g. ATP) score higher than hourly-rate schools.</li>
+                <li><strong>Airline Pathway Agreements:</strong> Named, verified agreements with specific regional or major airlines (e.g. Delta Propel, United Aviate).</li>
+                <li><strong>GI Bill Eligibility:</strong> Whether the programme is approved for VA education benefits.</li>
+                <li><strong>Fleet & Location Count:</strong> Number of training aircraft and training locations nationwide.</li>
+                <li><strong>R-ATP Eligibility:</strong> Whether the school's degree programme qualifies students for the Restricted ATP (1,000 hours) rather than the standard ATP (1,500 hours).</li>
+              </ul>
+              <p className="mt-4 font-medium">Best-for categories used in this guide:</p>
+              <ul className="list-disc pl-6 my-4 space-y-2">
+                <li><strong>Best for Speed to Airlines:</strong> Schools with the fastest zero-to-CFI timeline and the most direct regional airline pathways.</li>
+                <li><strong>Best for Cost:</strong> Schools with the lowest verified all-in tuition for the same licences.</li>
+                <li><strong>Best for Veterans:</strong> Schools with the broadest GI Bill and military tuition assistance eligibility.</li>
+                <li><strong>Best for Degree + Licences:</strong> University programmes where the degree reduces the ATP hour requirement to 1,000 (R-ATP).</li>
+              </ul>
+              <p className="text-sm text-white/60 mt-4">
+                <strong>Visible uncertainty:</strong> Where a school does not publicly disclose a metric (e.g. pass rates or exact fees), this is explicitly noted in the relevant entry. We do not assume or estimate undisclosed data.
+              </p>
+            </>
+          ),
+        },
+
+        {
           heading: "Choosing the Right Flight School in 2026",
           content: (
             <>

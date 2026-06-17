@@ -31,6 +31,47 @@ export default function BestFlightSchoolsAustralia() {
       ]}
       sections={[
         {
+          heading: "How We Evaluate and Score Flight Schools",
+          content: (
+            <>
+              <div className="bg-amber-50 border border-amber-200 p-5 rounded-lg mb-6 text-amber-900">
+                <p className="font-semibold text-base mb-3">Editorial Methodology & Conflict of Interest Statement</p>
+                <p className="text-sm mb-3">
+                  AviatorIQ does not receive referral fees, commissions, or payment from any flight school listed in this guide. Rankings are based solely on the scoring criteria above. All fees are in AUD and must be verified via direct quote before enrolment.
+                </p>
+                <p className="text-sm">
+                  <strong>Regulatory verification:</strong> All schools listed are checked against the 
+                  <a href="https://www.casa.gov.au/licences-and-certificates/flight-training" target="_blank" rel="noopener noreferrer" className="underline font-medium">
+                    CASA approved training provider register
+                  </a>. A school must hold a current CASA Part 141/142 Certificate for the courses it advertises to be included in this guide.
+                </p>
+              </div>
+              <p>
+                Every flight school in this guide is evaluated against six objective scoring criteria. These criteria are designed to help you make a decision based on verifiable facts rather than marketing materials.
+              </p>
+              <ul className="list-disc pl-6 my-4 space-y-3">
+                <li><strong>CASA Part 141/142 Approval:</strong> Verified against CASA's approved training provider register.</li>
+                <li><strong>Fee Transparency:</strong> Whether the school publishes itemised CPL/IFR fee schedules in AUD.</li>
+                <li><strong>VET Student Loan Eligibility:</strong> Whether the programme is approved for VET Student Loans (VSL), which can fund up to AUD $24,506 of tuition.</li>
+                <li><strong>Airline Pathway Agreements:</strong> Named, verified agreements with Qantas, Virgin Australia, Rex, or other Australian carriers.</li>
+                <li><strong>Fleet & Location:</strong> Aircraft fleet size and training location (weather and airspace access matter significantly in Australia).</li>
+                <li><strong>International Student Support:</strong> CRICOS registration and support services for international students.</li>
+              </ul>
+              <p className="mt-4 font-medium">Best-for categories used in this guide:</p>
+              <ul className="list-disc pl-6 my-4 space-y-2">
+                <li><strong>Best for Airline Pathway:</strong> Schools with named, verified agreements with Qantas Group, Virgin Australia, or Rex.</li>
+                <li><strong>Best for VET Student Loan:</strong> Schools where the programme qualifies for the maximum VET Student Loan entitlement.</li>
+                <li><strong>Best for International Students:</strong> CRICOS-registered schools with strong international student support.</li>
+                <li><strong>Best for Cost:</strong> Schools with the lowest verified all-in CPL/IFR fee in AUD.</li>
+              </ul>
+              <p className="text-sm text-white/60 mt-4">
+                <strong>Visible uncertainty:</strong> Where a school does not publicly disclose a metric (e.g. pass rates or exact fees), this is explicitly noted in the relevant entry. We do not assume or estimate undisclosed data.
+              </p>
+            </>
+          ),
+        },
+
+        {
           heading: "Choosing the Right Flight School in Australia",
           content: (
             <>

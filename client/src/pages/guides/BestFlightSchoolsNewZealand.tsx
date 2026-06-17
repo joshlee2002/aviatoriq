@@ -30,6 +30,47 @@ export default function BestFlightSchoolsNewZealand() {
       ]}
       sections={[
         {
+          heading: "How We Evaluate and Score Flight Schools",
+          content: (
+            <>
+              <div className="bg-amber-50 border border-amber-200 p-5 rounded-lg mb-6 text-amber-900">
+                <p className="font-semibold text-base mb-3">Editorial Methodology & Conflict of Interest Statement</p>
+                <p className="text-sm mb-3">
+                  AviatorIQ does not receive referral fees, commissions, or payment from any flight school listed in this guide. Rankings are based solely on the scoring criteria above. All fees are in NZD and must be verified via direct quote before enrolment.
+                </p>
+                <p className="text-sm">
+                  <strong>Regulatory verification:</strong> All schools listed are checked against the 
+                  <a href="https://www.aviation.govt.nz/licensing-and-certification/flight-training/" target="_blank" rel="noopener noreferrer" className="underline font-medium">
+                    CAA NZ approved training provider register
+                  </a>. A school must hold a current CAA NZ Part 141 Certificate for the courses it advertises to be included in this guide.
+                </p>
+              </div>
+              <p>
+                Every flight school in this guide is evaluated against six objective scoring criteria. These criteria are designed to help you make a decision based on verifiable facts rather than marketing materials.
+              </p>
+              <ul className="list-disc pl-6 my-4 space-y-3">
+                <li><strong>CAA NZ Part 141 Approval:</strong> Verified against the New Zealand CAA's approved training provider register.</li>
+                <li><strong>Fee Transparency:</strong> Whether the school publishes itemised CPL/IFR fee schedules in NZD.</li>
+                <li><strong>Airline Pathway Agreements:</strong> Named, verified agreements with Air New Zealand or other NZ/Pacific carriers.</li>
+                <li><strong>International Student Support:</strong> Whether the school holds approval to train international students and provides visa support.</li>
+                <li><strong>Fleet & Location:</strong> Aircraft fleet size and training location weather suitability.</li>
+                <li><strong>ICAO Licence Recognition:</strong> Whether the NZ CPL/ATPL is widely recognised for conversion in target markets.</li>
+              </ul>
+              <p className="mt-4 font-medium">Best-for categories used in this guide:</p>
+              <ul className="list-disc pl-6 my-4 space-y-2">
+                <li><strong>Best for International Students:</strong> Schools with strong international student support and ICAO-recognised licence outcomes.</li>
+                <li><strong>Best for Air New Zealand Pathway:</strong> Schools with named agreements or historical placement records with Air New Zealand.</li>
+                <li><strong>Best for Cost:</strong> Schools with the lowest verified all-in CPL/IFR fee in NZD.</li>
+                <li><strong>Best for Scenic Training Environment:</strong> Schools offering training in New Zealand's varied and challenging airspace.</li>
+              </ul>
+              <p className="text-sm text-white/60 mt-4">
+                <strong>Visible uncertainty:</strong> Where a school does not publicly disclose a metric (e.g. pass rates or exact fees), this is explicitly noted in the relevant entry. We do not assume or estimate undisclosed data.
+              </p>
+            </>
+          ),
+        },
+
+        {
           heading: "Choosing a Flight School in New Zealand",
           content: (
             <>

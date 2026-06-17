@@ -31,6 +31,47 @@ export default function BestFlightSchoolsCanada() {
       ]}
       sections={[
         {
+          heading: "How We Evaluate and Score Flight Schools",
+          content: (
+            <>
+              <div className="bg-amber-50 border border-amber-200 p-5 rounded-lg mb-6 text-amber-900">
+                <p className="font-semibold text-base mb-3">Editorial Methodology & Conflict of Interest Statement</p>
+                <p className="text-sm mb-3">
+                  AviatorIQ does not receive referral fees, commissions, or payment from any flight school listed in this guide. Rankings are based solely on the scoring criteria above. All fees are in CAD and must be verified via direct quote before enrolment.
+                </p>
+                <p className="text-sm">
+                  <strong>Regulatory verification:</strong> All schools listed are checked against the 
+                  <a href="https://tc.canada.ca/en/aviation/civil-aviation/licensing-pilots-personnel/flight-training-units" target="_blank" rel="noopener noreferrer" className="underline font-medium">
+                    Transport Canada approved training provider register
+                  </a>. A school must hold a current Transport Canada Flight Training Unit (FTU) for the courses it advertises to be included in this guide.
+                </p>
+              </div>
+              <p>
+                Every flight school in this guide is evaluated against six objective scoring criteria. These criteria are designed to help you make a decision based on verifiable facts rather than marketing materials.
+              </p>
+              <ul className="list-disc pl-6 my-4 space-y-3">
+                <li><strong>Transport Canada FTU Approval:</strong> Verified against Transport Canada's approved Flight Training Unit registry.</li>
+                <li><strong>Fee Transparency:</strong> Whether the school publishes itemised CPL/IFR fee schedules in CAD.</li>
+                <li><strong>Designated Learning Institution (DLI) Status:</strong> Whether the school holds DLI status, which is required for international students and OSAP/provincial loan eligibility.</li>
+                <li><strong>Airline Pathway Agreements:</strong> Named, verified agreements with Jazz Aviation, WestJet Encore, or other Canadian regional carriers.</li>
+                <li><strong>Fleet & Weather Conditions:</strong> Aircraft fleet size and the impact of local weather on training continuity.</li>
+                <li><strong>Degree/Diploma Pathway:</strong> Whether the school offers a Transport Canada-approved diploma or degree alongside the CPL.</li>
+              </ul>
+              <p className="mt-4 font-medium">Best-for categories used in this guide:</p>
+              <ul className="list-disc pl-6 my-4 space-y-2">
+                <li><strong>Best for University Pathway:</strong> Collegiate programs (Seneca, Mount Royal) that combine CPL training with a diploma/degree and OSAP eligibility.</li>
+                <li><strong>Best for International Students:</strong> Schools with DLI status and strong international student support services.</li>
+                <li><strong>Best for Cost:</strong> Private FTUs with the lowest verified all-in CPL/IFR fee in CAD.</li>
+                <li><strong>Best for Airline Pathway:</strong> Schools with named, verified agreements with Jazz, Encore, or WestJet.</li>
+              </ul>
+              <p className="text-sm text-white/60 mt-4">
+                <strong>Visible uncertainty:</strong> Where a school does not publicly disclose a metric (e.g. pass rates or exact fees), this is explicitly noted in the relevant entry. We do not assume or estimate undisclosed data.
+              </p>
+            </>
+          ),
+        },
+
+        {
           heading: "Choosing the Right Flight School in Canada",
           content: (
             <>

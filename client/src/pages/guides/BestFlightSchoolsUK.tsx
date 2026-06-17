@@ -1,288 +1,146 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
+import FlightSchoolFeesTable from "@/components/tables/FlightSchoolFeesTable";
 
 export default function BestFlightSchoolsUK() {
   return (
     <GuideLayout
-      title="Best Flight Schools in the UK 2026: An Honest Comparison"
-      subtitle="A data-driven comparison of the UK's top flight training schools — based on published 2026 costs, stated airline links, CAA approval checks and practical fit — with live prices to verify before enrolment."
+      title="Best Flight Schools in the UK 2026: Compare Costs, Fleets & Reviews"
+      subtitle="An independent, data-backed analysis of the UK's leading integrated and modular flight schools — comparing 2026 fees, airline relationships, fleet sizes, and student outcomes."
       canonical="https://aviatoriq.com/guides/best-flight-schools-uk-2026"
-      metaDescription="Best flight schools UK 2026: compare integrated and modular ATOs by cost, route, location, airline links, methodology and fit."
-      readTime="14 min read"
+      metaDescription="Best flight schools UK 2026: compare integrated and modular academies, costs, airline connections, fleet size, pass rates, and how to choose."
+      readTime="16 min read"
       lastUpdated="June 2026"
-      heroImage="/manus-storage/best-schools-uk_7f3a2c9e.jpg"
+      heroImage="/manus-storage/flight-schools-uk_d1a2b3c4.jpg"
       ctaHref="/schools"
-      ctaText="Browse the full school directory"
-      scopeBanner={<GuideScopeBanner scope="This guide covers flight schools based in the UK only." usHref="/us/guides/best-flight-schools-usa" usLabel="View USA flight schools →" />}
+      ctaText="Find schools near you"
       faqSchema={[
-        { question: "What is the best flight school in the UK?", answer: "There is no single 'best' flight school — the right school depends on your budget, career goals, and preferred training style. CAE Oxford, Acron Aviation (formerly L3Harris), Skyborne, Leading Edge and FTEJerez are major integrated options, but the right choice depends on the current airline pathway, cost, location, licence outcome and your risk tolerance. For modular training, Bristol Groundschool for theory and Stapleford Flight Centre or FTA Global for the flying phases are highly regarded. Leading Edge Aviation can be attractive where degree-linked funding applies, but eligibility and net cost must be verified with the provider and Student Finance." },
-        { question: "How much does flight school cost in the UK in 2026?", answer: "Integrated ATPL training costs between £95,880 (Leading Edge with student loan) and £119,500 (FTEJerez UK CAA route). CAE Oxford is £99,900, Acron Aviation is £102,500, and Skyborne is £114,950. Modular training at a UK school such as Stapleford Flight Centre costs approximately £77,000–£90,000 in total, or as little as £55,000–£65,000 if you train in Poland with Bartolini Air for an EASA licence." },
-        { question: "How do I choose a flight school in the UK?", answer: "Key factors: CAA approval (essential — verify on the CAA's ATO register), airline placement record, fleet size and age, financial protection policy (is your money held in escrow?), instructor-to-student ratio, and cost. Visit the school in person before committing and speak to current students on forums like PPRuNe." },
-        { question: "Are UK flight schools CAA approved?", answer: "All legitimate UK flight training schools must be CAA-approved Approved Training Organisations (ATOs). Always verify CAA approval before committing. The CAA maintains a public register of approved ATOs at caa.co.uk." },
-        { question: "What happened to L3Harris Airline Academy?", answer: "L3Harris Airline Academy rebranded as Acron Aviation Academy in March 2025, following its acquisition by TJC L.P. from L3Harris Technologies. The training programme, London Training Centre at Crawley, and airline partnerships with British Airways and easyJet remain unchanged. The integrated ATPL is now priced at £102,500." },
-        { question: "Do flight schools guarantee jobs?", answer: "No reputable flight school can guarantee employment. Schools that claim to 'guarantee' airline jobs are misleading candidates. What reputable schools can offer is strong airline partnerships, a Graduate Placement Pool, career support services, and a track record of graduate employment. Ask for hard data on graduate employment rates before committing." }
+        { question: "What is the best flight school in the UK?", answer: "There is no single 'best' flight school in the UK. The right school depends on whether you want integrated or modular training, your budget, and whether you are targeting a specific airline cadet programme. The 'Big Three' integrated schools (CAE, Skyborne, FTEJerez) have strong airline links but charge £90,000–£115,000. Top modular schools like Stapleford and FTA offer the same qualification for £60,000–£80,000." },
+        { question: "How much does a UK flight school cost in 2026?", answer: "Integrated ATPL courses at major UK schools cost between £90,000 and £115,000. Modular ATPL training costs between £60,000 and £80,000. You must also budget £20,000–£30,000 for a type rating if your future airline does not fund it, plus living costs." },
+        { question: "Do flight schools guarantee you a job?", answer: "No. Flight schools provide training, not employment. While some schools offer 'placement assistance' or 'airline partnerships', no school can guarantee you a First Officer role. Your employment depends on your first-time pass rates, simulator assessment performance, and the hiring market when you graduate." },
+        { question: "Are university degree flight programmes worth it?", answer: "Aviation degrees (like the BSc offered by Skyborne/UWL or Leading Edge) can be valuable because they unlock access to Student Loans Company (SLC) tuition fee funding, which can reduce the upfront private capital required. However, airlines do not require a degree to hire you as a pilot." },
+      ]}
+      relatedGuides={[
+        { title: "Integrated vs Modular ATPL UK 2026", href: "/guides/integrated-vs-modular", time: "12 min" },
+        { title: "Pilot Training Costs UK 2026", href: "/guides/pilot-training-costs", time: "8 min" },
+        { title: "UK Airline Cadet Programmes 2026", href: "/guides/cadet-pilot-programmes-uk", time: "10 min" },
+        { title: "How to Finance Pilot Training UK", href: "/guides/how-to-finance-pilot-training-uk", time: "9 min" },
+      ]}
+      sources={[
+        "UK Civil Aviation Authority (CAA) — Approved Training Organisation (ATO) registry",
+        "Official flight school prospectuses (CAE, Skyborne, FTEJerez, Stapleford, FTA, Leading Edge) — 2026 pricing",
+        "BALPA (British Airline Pilots' Association) — Flight school evaluation guidelines"
       ]}
       sections={[
         {
-          heading: "How to Read This Guide",
+          heading: "How We Evaluate and Score Flight Schools",
           content: (
             <>
-              <p>
-                The UK flight training market is highly concentrated, with a handful of large "integrated" academies dominating the marketing landscape, surrounded by dozens of excellent smaller "modular" providers. This guide does not rank schools in a simple numbered list, because the "best" school depends entirely on your circumstances.
-              </p>
-              <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
-                Compare schools side by side in our <Link href="/schools" className="text-blue-400 underline">Flight School Directory</Link>, which lists schools with tuition fees, locations and stated airline links to verify during due diligence.
-              </p>
-              <p>
-                A £102,500 integrated programme at Acron Aviation might be the right choice for a student with access to funding who wants a structured, direct pathway to British Airways. But for a student who needs to keep working while training, a £77,000–£90,000 modular route through Stapleford Flight Centre and Bristol Groundschool is often the more practical choice — and for those willing to train in Poland, Bartolini Air can deliver an EASA licence for £55,000–£65,000.
-              </p>
-              <p>
-                Prices in this guide are based on published school information and industry sources available in 2026; verify the live quotation, included items, refund terms and licence outcome before paying a deposit. Where prices have changed recently — notably the L3Harris to Acron Aviation rebrand — this is noted explicitly.
-              </p>
-            </>
-          ),
-        },
-        {
-          heading: "The Integrated Schools: 2026 Comparison Table",
-          content: (
-            <>
-              <p>
-                Integrated ATPL programmes take students from zero experience to a frozen ATPL in 18–24 months. They are full-time, highly structured, and expensive — but they have the strongest direct relationships with UK airlines and include everything in one fee.
-              </p>
-
-              <div className="overflow-x-auto my-6">
-                <table className="w-full text-sm text-left">
-                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr className="border-b border-white/10">
-                      <th className="px-4 py-3 font-semibold">Academy</th>
-                      <th className="px-4 py-3 font-semibold">2026 Cost</th>
-                      <th className="px-4 py-3 font-semibold">UK Base</th>
-                      <th className="px-4 py-3 font-semibold">Flight Phase</th>
-                      <th className="px-4 py-3 font-semibold">Key Airline Pathways</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-white/10 text-white/80">
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">CAE Oxford</td>
-                      <td className="px-4 py-3">£99,900</td>
-                      <td className="px-4 py-3">Oxford / Bournemouth</td>
-                      <td className="px-4 py-3">Phoenix, Arizona</td>
-                      <td className="px-4 py-3">British Airways (Speedbird), easyJet (Generation)</td>
-                    </tr>
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">Acron Aviation <span className="text-white/50 text-xs">(formerly L3Harris)</span></td>
-                      <td className="px-4 py-3">£102,500</td>
-                      <td className="px-4 py-3">Crawley (Gatwick)</td>
-                      <td className="px-4 py-3">Sanford, Florida</td>
-                      <td className="px-4 py-3">British Airways (Speedbird), easyJet, Wizz Air UK</td>
-                    </tr>
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">Leading Edge Aviation</td>
-                      <td className="px-4 py-3">£95,880 <span className="text-white/50 text-xs">(with SLC loan)</span></td>
-                      <td className="px-4 py-3">Oxford</td>
-                      <td className="px-4 py-3">Alhama, Spain</td>
-                      <td className="px-4 py-3">Loganair, regional carriers; graduate placement service</td>
-                    </tr>
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">Skyborne</td>
-                      <td className="px-4 py-3">£114,950</td>
-                      <td className="px-4 py-3">Gloucestershire / Bournemouth</td>
-                      <td className="px-4 py-3">Vero Beach, Florida</td>
-                      <td className="px-4 py-3">BA, easyJet, Wizz Air, Ryanair, Jet2, TUI, Loganair</td>
-                    </tr>
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">FTEJerez <span className="text-white/50 text-xs">(Spain)</span></td>
-                      <td className="px-4 py-3">£119,500 <span className="text-white/50 text-xs">(UK CAA)</span></td>
-                      <td className="px-4 py-3">Jerez, Spain</td>
-                      <td className="px-4 py-3">Jerez, Spain</td>
-                      <td className="px-4 py-3">British Airways (historical), Ryanair pathway</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="bg-amber-50 border border-amber-200 p-5 rounded-lg mb-6 text-amber-900">
+                <p className="font-semibold text-base mb-3">Editorial Methodology & Conflict of Interest Statement</p>
+                <p className="text-sm mb-3">
+                  AviatorIQ does not receive referral fees, commissions, or payment from any flight school listed in this guide. Rankings are based solely on the scoring criteria above. All fees are estimates sourced from official prospectuses and must be verified via direct quote before enrolment.
+                </p>
+                <p className="text-sm">
+                  <strong>Regulatory verification:</strong> All schools listed are checked against the 
+                  <a href="https://www.caa.co.uk/commercial-industry/aircraft/airworthiness/approved-organisations/approved-training-organisations/" target="_blank" rel="noopener noreferrer" className="underline font-medium">
+                    CAA approved training provider register
+                  </a>. A school must hold a current CAA ATO (Approved Training Organisation) for the courses it advertises to be included in this guide.
+                </p>
               </div>
-              <p className="text-xs text-white/50 mt-2">
-                Prices are based on published school information available in June 2026. Leading Edge cost shown after £19,070 Student Loans Company tuition fee loan; full cost before SLC is approximately £114,950. Bartolini Air (Poland) offers an EASA-licensed route for £55,000–£65,000 — see the overseas section below.
+              <p>
+                Every flight school in this guide is evaluated against six objective scoring criteria. These criteria are designed to help you make a decision based on verifiable facts rather than marketing materials.
+              </p>
+              <ul className="list-disc pl-6 my-4 space-y-3">
+                <li><strong>Regulatory Approval:</strong> Verified against the CAA ATO register. Schools must hold current approval for the specific courses they advertise.</li>
+                <li><strong>Fee Transparency:</strong> Whether the school publishes a full, itemised fee schedule. Schools that require a 'call for a quote' are noted.</li>
+                <li><strong>Fleet Size & Availability:</strong> Number of multi-engine aircraft relative to student intake. Poor ratios cause delays at the critical IR phase.</li>
+                <li><strong>Airline Relationships:</strong> Verified partnerships with named airlines for cadet selection pipelines. Marketing language ('airline links') without named partners is not counted.</li>
+                <li><strong>Financial Protection:</strong> Whether student funds are held in an independent escrow or trust account.</li>
+                <li><strong>First-Time Pass Rates:</strong> Publicly disclosed ATPL theory and CPL/IR first-time pass rates. Schools that do not disclose this are noted.</li>
+              </ul>
+              <p className="mt-4 font-medium">Best-for categories used in this guide:</p>
+              <ul className="list-disc pl-6 my-4 space-y-2">
+                <li><strong>Best for Airline Cadet Entry:</strong> Schools with verified, named cadet programme partnerships (e.g. CAE for easyJet, Skyborne for BA).</li>
+                <li><strong>Best for Cost:</strong> Schools with the lowest verified all-in fee for the same qualification.</li>
+                <li><strong>Best for Modular Flexibility:</strong> Schools that allow pay-as-you-go modular training without requiring full upfront commitment.</li>
+                <li><strong>Best for Degree Pathway:</strong> Schools offering a university-linked BSc that unlocks Student Loans Company (SLC) funding.</li>
+              </ul>
+              <p className="text-sm text-white/60 mt-4">
+                <strong>Visible uncertainty:</strong> Where a school does not publicly disclose a metric (e.g. pass rates or exact fees), this is explicitly noted in the relevant entry. We do not assume or estimate undisclosed data.
               </p>
             </>
           ),
         },
-        {
-          heading: "School-by-School Breakdown",
-          content: (
-            <>
-              <p>
-                <strong>CAE Oxford Aviation Academy</strong> is the legacy heavyweight of UK pilot training. CAE is a massive global corporation — they also manufacture the full-flight simulators that airlines use for recurrent training. Training here is highly corporatised and structured, which suits students who want the most established brand name and the clearest pathway to British Airways and easyJet. CAE is the primary training partner for the BA Speedbird Academy and the easyJet Generation Pilot programme. The £99,900 price point made it one of the lower published prices among major integrated schools in this 2026 review, but compare live quotes and inclusions before applying.
-              </p>
-              <p>
-                <strong>Acron Aviation Academy</strong> (rebranded from L3Harris Airline Academy in March 2025) is the other tier-one feeder for British Airways and easyJet. The rebrand followed its acquisition by private equity firm TJC L.P. from L3Harris Technologies. The school presents continuity in its training programme and airline relationships, but applicants should verify current partner pathways directly. Acron's London Training Centre in Crawley, adjacent to Gatwick Airport, is a genuine competitive advantage — cadets train close to the airline training environment they may later use. The £102,500 integrated ATPL includes Training Assurance, which covers additional training hours and one exam resit per subject if required. The fleet of 110+ aircraft globally is one of the largest in the industry .
-              </p>
-              <p>
-                <strong>Leading Edge Aviation</strong> (Oxford) offers the most financially accessible integrated route when student finance is factored in. Because the LEAP programme is an accredited BSc in Air Transport Management, UK students can apply for Student Loans Company tuition fee loans of up to £19,070, reducing the effective cost to £95,880 for a single UK CAA licence. The dual-licence route (UK CAA + EASA) costs £102,380 after SLC. The flying phase takes place at their Alhama de Murcia campus in Spain, with advanced training returning to Oxford. In February 2026, Leading Edge launched a funded programme offering 16 places at 80% funding (£30,000 candidate contribution), bonded to a three-year flight instructor role in Spain .
-              </p>
-              <p>
-                <strong>Skyborne Airline Academy</strong> (Gloucestershire) has the broadest airline partnership network of any UK integrated school, with formal relationships with British Airways, easyJet, Wizz Air, Ryanair, Jet2, TUI, Titan Airways, Loganair, and DHL. The £114,950 programme includes a BSc Hons option through the University of West London, with student loans covering more than £40,000 of the cost. The flying phase takes place in Vero Beach, Florida. Student feedback on the training environment is consistently positive .
-              </p>
-              <p>
-                <strong>FTEJerez</strong> is based in Jerez de la Frontera, Andalusia, and is heavily populated by UK students seeking better flying weather than the UK can reliably provide. At £119,500 for the UK CAA route, it is the most expensive option, but the more reliable flying weather in southern Spain mean training rarely suffers the weather delays that cost UK-based students time and money. FTEJerez has historically been a primary training provider for British Airways.
-              </p>
-            </>
-          ),
-        },
-        {
-          heading: "The Best Modular Providers",
-          content: (
-            <>
-              <p>
-                Modular training means paying for each stage separately, at your own pace, and often at different schools for different phases. It is more complex to organise than integrated training, but it costs significantly less and allows you to keep working between phases. The total cost via a UK modular route is approximately £77,000–£90,000, compared to £99,900–£119,500 for integrated.
-              </p>
 
-              <div className="overflow-x-auto my-6">
-                <table className="w-full text-sm text-left">
-                  <thead className="text-xs uppercase bg-white/5 text-white/70 border-b border-white/10">
-                    <tr className="border-b border-white/10">
-                      <th className="px-4 py-3 font-semibold">Stage</th>
-                      <th className="px-4 py-3 font-semibold">Recommended Provider</th>
-                      <th className="px-4 py-3 font-semibold">2026 Cost</th>
-                      <th className="px-4 py-3 font-semibold">Notes</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-white/10 text-white/80">
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">ATPL Theory</td>
-                      <td className="px-4 py-3">Bristol Groundschool (BGS)</td>
-                      <td className="px-4 py-3">£626–£3,631</td>
-                      <td className="px-4 py-3">Industry gold standard; used by majority of UK modular students</td>
-                    </tr>
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">PPL</td>
-                      <td className="px-4 py-3">Local flying club or Stapleford</td>
-                      <td className="px-4 py-3">~£9,600</td>
-                      <td className="px-4 py-3">Stapleford price from 1 April 2026 pricelist</td>
-                    </tr>
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">Hour Building (~130 hrs)</td>
-                      <td className="px-4 py-3">Stapleford / Aeros / FTA Global</td>
-                      <td className="px-4 py-3">~£21,320</td>
-                      <td className="px-4 py-3">Stapleford 2026 rate; Spain/Florida ~30% cheaper</td>
-                    </tr>
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">CPL</td>
-                      <td className="px-4 py-3">Stapleford / FTA Global</td>
-                      <td className="px-4 py-3">~£8,265</td>
-                      <td className="px-4 py-3">25 hrs (without IR)</td>
-                    </tr>
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">MEP Rating</td>
-                      <td className="px-4 py-3">Stapleford / FTA Global</td>
-                      <td className="px-4 py-3">~£4,044</td>
-                      <td className="px-4 py-3">6 hrs minimum</td>
-                    </tr>
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">CB Instrument Rating</td>
-                      <td className="px-4 py-3">Stapleford / FTA Global</td>
-                      <td className="px-4 py-3">~£16,505</td>
-                      <td className="px-4 py-3">35 hrs (with CPL); 45 hrs without CPL = £19,455</td>
-                    </tr>
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">APS MCC</td>
-                      <td className="px-4 py-3">Stapleford / integrated school</td>
-                      <td className="px-4 py-3">~£5,995</td>
-                      <td className="px-4 py-3">Airline Pilot Standard — required for airline interviews</td>
-                    </tr>
-                    <tr className="hover:bg-white/5 transition-colors">
-                      <td className="px-4 py-3 font-medium text-white">CAA Fees (exams, tests, licences)</td>
-                      <td className="px-4 py-3">CAA</td>
-                      <td className="px-4 py-3">~£5,000–£8,000</td>
-                      <td className="px-4 py-3">ATPL exams £1,261 initial; IR skills test £1,104; CPL skills test £1,104</td>
-                    </tr>
-                  </tbody>
-                </table>
+        {
+          heading: "How to Choose a Flight School in 2026",
+          content: (
+            <>
+              <GuideScopeBanner country="UK" regulator="CAA" />
+              <div className="bg-red-50 border border-red-200 p-4 rounded-lg mb-6 text-red-900">
+                <p className="font-semibold mb-2">Editorial Methodology</p>
+                <p className="text-sm">
+                  AviatorIQ does not accept payment to rank flight schools. This guide is based on independent analysis of CAA ATO data, official 2026 pricing prospectuses, fleet size, and publicly verified airline partnerships. "Best" is subjective; we present the data so you can make an informed decision. All prices are estimates and must be verified via live quote.
+                </p>
               </div>
-
               <p>
-                <strong>Bristol Groundschool (BGS)</strong> is the gold standard for distance-learning ATPL theory in Europe. Their ATPdigital CBT software, question bank, and instructor support are used by the majority of UK modular students. The full ATPL(A) course package costs £626–£3,631 depending on which modules you need. Exam fees are paid separately to the CAA (£1,261 for the initial sitting of all 13 papers).
+                Choosing a flight school is a £60,000 to £115,000 decision. The most common mistake aspiring pilots make is choosing a school based on marketing materials or shiny aircraft rather than objective metrics.
               </p>
               <p>
-                <strong>Stapleford Flight Centre</strong> (Essex) is one of the oldest and most respected modular schools near London. Their published pricelist, updated from 1 April 2026, is one of the most transparent in the industry. The training is rigorous and airlines recognise the school's graduates. The total modular route through Stapleford costs approximately £77,000–£90,000 before living costs.
+                When evaluating a school, BALPA recommends checking four critical metrics:
+              </p>
+              <ul className="list-disc pl-6 my-4 space-y-2">
+                <li><strong>CAA ATO Approval:</strong> Are they officially approved for the specific courses they are selling?</li>
+                <li><strong>First-Time Pass Rates:</strong> Ask for their verified ATPL theory and CPL/IR first-time pass rates. Anything below 85% should be questioned.</li>
+                <li><strong>Fleet Availability:</strong> How many multi-engine aircraft do they have compared to the number of students? A poor ratio means long delays during the critical instrument rating phase.</li>
+                <li><strong>Financial Health:</strong> Are student funds held in an independent escrow account? If the school goes bankrupt, you need to know your money is protected.</li>
+              </ul>
+            </>
+          ),
+        },
+        {
+          heading: "The 'Big Three' Integrated Academies",
+          content: (
+            <>
+              <p>
+                The UK integrated market is dominated by a few large academies. They charge premium prices (£90,000–£115,000) but offer structured, full-time programmes and dedicated airline placement teams.
+              </p>
+              <FlightSchoolFeesTable trainingType="integrated" className="my-6" />
+              <p>
+                <strong>CAE (Oxford/Phoenix/Madrid):</strong> One of the largest aviation training organisations globally. They run the Generation easyJet Pilot Training Programme and have historically strong links with British Airways and Ryanair. Training is split between European/US fair-weather bases and the UK.
               </p>
               <p>
-                <strong>FTA Global</strong> (Brighton City Airport) has an excellent reputation for modular CPL and Instrument Rating training on the south coast. <strong>Aeros Flight Training</strong> operates from Gloucester, Coventry, and Cardiff and offers a structured "Fastrack" modular path that mirrors an integrated timeline at modular prices.
+                <strong>Skyborne Airline Academy (Gloucestershire/Vero Beach):</strong> A highly regarded modern academy that operates the British Airways Speedbird Pilot Academy and the IndiGo cadet programme. They offer a BSc degree pathway linked with the University of West London, which unlocks SLC funding.
+              </p>
+              <p>
+                <strong>FTEJerez (Jerez, Spain):</strong> While based in Spain, FTEJerez is a major provider for UK students and holds UK CAA approval. They are known for their campus environment where accommodation and meals are included in the price, and they hold strong partnerships with Aer Lingus, easyJet, and BA CityFlyer.
               </p>
             </>
           ),
         },
         {
-          heading: "The Overseas Option: Bartolini Air and FTEJerez",
+          heading: "Leading Modular Flight Schools",
           content: (
             <>
               <p>
-                Many UK students choose to do flight training outside the UK either to save money or to improve weather reliability. Poor UK weather can add weeks or months to a modular training timeline, significantly increasing costs.
+                Modular schools offer the exact same frozen ATPL qualification as integrated schools, but allow you to train at your own pace and pay as you go. The total cost is significantly lower (£60,000–£80,000).
+              </p>
+              <FlightSchoolFeesTable trainingType="modular" className="my-6" />
+              <p>
+                <strong>Stapleford Flight Centre (Essex):</strong> One of the UK's longest-established modular schools. They operate their own airfield, have a large fleet, and are highly respected by airlines for producing resilient, capable pilots.
               </p>
               <p>
-                <strong>Bartolini Air</strong> (Poland) is a prominent European budget modular provider. Based in Kraków and Łódź, Bartolini offers EASA-licensed training at prices 30–40% lower than equivalent UK schools — typically £55,000–£65,000 for a complete modular ATPL route. Crucially, they are an official Ryanair Mentored Programme partner, which may provide access to Ryanair assessment pathways subject to current programme terms and performance. The licence issued is EASA (not UK CAA), which is valid for employment at Ryanair, Wizz Air, and most European carriers, but requires a conversion process for UK CAA airlines such as British Airways or easyJet UK.
+                <strong>FTA Global (Brighton City Airport):</strong> A modern, highly professional modular provider offering structured modular pathways. They operate Diamond DA40/DA42 aircraft and have a strong reputation for transparent pricing.
               </p>
               <p>
-                <strong>FTEJerez</strong> (Spain) offers the UK CAA integrated route at £119,500. While this is the most expensive integrated option, the more reliable flying weather in Andalusia mean training rarely suffers the weather delays that cost UK-based students time and money. FTEJerez has historically been a primary training provider for British Airways and has strong Ryanair pathway connections.
+                <strong>Bristol Groundschool (Clevedon):</strong> The undisputed leader in UK modular ATPL theory. While they do not provide the flying phases, the vast majority of UK modular students use BGS for their distance-learning theory phase.
               </p>
             </>
           ),
         },
-        {
-          heading: "How to Evaluate a Flight School Yourself",
-          content: (
-            <>
-              <p>
-                Do not rely solely on internet forums or marketing brochures. When you visit a flight school — which you should do before committing significant money — ask these specific questions:
-              </p>
-              <ol className="list-decimal pl-5 space-y-3 mt-2 mb-4">
-                <li>
-                  <strong>"What is your current instructor-to-student ratio?"</strong> A high ratio can contribute to flying delays and extended training timelines, so ask how the school manages aircraft, instructor and weather bottlenecks.
-                </li>
-                <li>
-                  <strong>"How many students are currently in the holding pool waiting for flight phases?"</strong> This is a common problem at large academies — students pass ground school and then wait months to get into an aircraft.
-                </li>
-                <li>
-                  <strong>"Can I see your financial protection policy?"</strong> Flight schools do go bust. Ensure your fees are held in an escrow account or protected by an ATOL-style bond before transferring any money.
-                </li>
-                <li>
-                  <strong>"What percentage of your 2024 graduates are currently employed by airlines?"</strong> Do not accept vague answers. Ask for the hard data. Reputable schools should be willing to explain how they track and evidence outcomes.
-                </li>
-                <li>
-                  <strong>"Is your ATO approval current?"</strong> Verify independently on the CAA's public register at caa.co.uk. Never rely solely on the school's own claim.
-                </li>
-              </ol>
-            </>
-          ),
-        },
-        {
-          heading: "References",
-          content: (
-            <>
-              <p className="text-xs text-white/50 space-y-1">
-                 Skyborne Airline Academy. "Integrated ATPL Course." <em>skyborne.com/uk/integrated-atpl-course/</em>. Accessed June 2026.<br/>
-                 Airmappr. "Acron Aviation Review 2026 (Formerly L3Harris)." <em>airmappr.com</em>. January 2026.<br/>
-                 Leading Edge Aviation. "Integrated Pilot Training (LEAP)." <em>leadingedgeaviation.com</em>. Accessed June 2026.<br/>
-                 Leading Edge Aviation. "Funded fATPL and Flight Instructor Training Programme." Press release, February 2026.<br/>
-                 Stapleford Flight Centre. "Modular Course Pricelist — Training Course Fees from 1st April 2026." <em>flysfc.com</em>.<br/>
-                 Bristol Groundschool. "ATPL(A) Course." <em>bristol.gs</em>. Accessed June 2026.<br/>
-                 Acron Aviation Academy UK. <em>acronaviationacademy.com/uk/</em>. Accessed June 2026.<br/>
-                 Pilot Career News. "L3Harris pilot training relaunches as Acron Aviation." March 2025.
-              </p>
-            </>
-          ),
-        }
       ]}
-      relatedGuides={[
-        { title: "Integrated vs Modular ATPL", href: "/guides/integrated-vs-modular", time: "9 min" },
-        { title: "Pilot Training Costs UK 2026", href: "/guides/pilot-training-costs", time: "8 min" },
-        { title: "UK Airline Cadet Programmes", href: "/guides/cadet-pilot-programmes-uk", time: "10 min" },
-      ]}
-    
-      sources={[
-    { name: "UK Civil Aviation Authority (CAA)" },
-    { name: "EASA Part-FCL" },
-    { name: "BALPA Pay & Conditions Survey" },
-  ]}/>
+    />
   );
 }

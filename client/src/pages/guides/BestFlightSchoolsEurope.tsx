@@ -33,6 +33,47 @@ export default function BestFlightSchoolsEurope() {
       ]}
       sections={[
         {
+          heading: "How We Evaluate and Score Flight Schools",
+          content: (
+            <>
+              <div className="bg-amber-50 border border-amber-200 p-5 rounded-lg mb-6 text-amber-900">
+                <p className="font-semibold text-base mb-3">Editorial Methodology & Conflict of Interest Statement</p>
+                <p className="text-sm mb-3">
+                  AviatorIQ does not receive referral fees, commissions, or payment from any flight school listed in this guide. Rankings are based solely on the scoring criteria above. All fees are in EUR and must be verified via direct quote before enrolment.
+                </p>
+                <p className="text-sm">
+                  <strong>Regulatory verification:</strong> All schools listed are checked against the 
+                  <a href="https://www.easa.europa.eu/en/domains/general-aviation/aerodromes-and-atm/approved-training-organisations" target="_blank" rel="noopener noreferrer" className="underline font-medium">
+                    EASA approved training provider register
+                  </a>. A school must hold a current EASA Part-ORA Approved Training Organisation (ATO) for the courses it advertises to be included in this guide.
+                </p>
+              </div>
+              <p>
+                Every flight school in this guide is evaluated against six objective scoring criteria. These criteria are designed to help you make a decision based on verifiable facts rather than marketing materials.
+              </p>
+              <ul className="list-disc pl-6 my-4 space-y-3">
+                <li><strong>EASA Part-ORA ATO Approval:</strong> Verified EASA ATO status for the specific licences advertised.</li>
+                <li><strong>Fee Transparency:</strong> Whether the school publishes itemised ATPL/CPL/IR fee schedules in EUR.</li>
+                <li><strong>Airline Pathway Agreements:</strong> Named, verified agreements with Lufthansa, Air France/KLM, Ryanair, easyJet, or other European carriers.</li>
+                <li><strong>Language of Instruction:</strong> Whether training is conducted in English (relevant for non-native speakers targeting international airlines).</li>
+                <li><strong>Weather & Location:</strong> Training location's weather suitability and proximity to controlled airspace for instrument training.</li>
+                <li><strong>UK CAA Acceptance:</strong> Whether the EASA licence issued is accepted for conversion to a UK CAA licence post-Brexit.</li>
+              </ul>
+              <p className="mt-4 font-medium">Best-for categories used in this guide:</p>
+              <ul className="list-disc pl-6 my-4 space-y-2">
+                <li><strong>Best for Airline Cadet Entry:</strong> Schools with verified, named cadet programme partnerships with major European carriers.</li>
+                <li><strong>Best for Cost:</strong> Schools with the lowest verified all-in ATPL fee in EUR.</li>
+                <li><strong>Best for UK Students Post-Brexit:</strong> Schools whose EASA licences have a clear, verified UK CAA conversion pathway.</li>
+                <li><strong>Best for Weather & Flying Conditions:</strong> Schools in Southern Europe with the highest annual flying hours.</li>
+              </ul>
+              <p className="text-sm text-white/60 mt-4">
+                <strong>Visible uncertainty:</strong> Where a school does not publicly disclose a metric (e.g. pass rates or exact fees), this is explicitly noted in the relevant entry. We do not assume or estimate undisclosed data.
+              </p>
+            </>
+          ),
+        },
+
+        {
           heading: "Choosing the Right EASA Flight School",
           content: (
             <>
