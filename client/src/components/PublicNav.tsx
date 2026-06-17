@@ -56,11 +56,13 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
       { label: "Quizzes", href: "/quizzes" },
       { label: "US Schools", href: "/us/schools" },
       { label: "Guides", href: "/guides" },
+      { label: "Pilot Stories", href: "/stories" },
       { label: "Jobs", href: "/jobs" },
       { label: "About", href: "/about" },
     ],
     toolLinks: [
       ...SHARED_TOOLS,
+      { label: "Part 61 vs Part 141", href: "/tools/integrated-vs-modular", desc: "Find the right FAA training route for you", icon: "⚖️" },
       { label: "Salary Estimator", href: "/tools/salary-estimator", desc: "Project your FAA career earnings by airline and seniority", icon: "📈" },
       { label: "Route Selector", href: "/tools/route-selector", desc: "Part 61, Part 141, or cadet — find your FAA path", icon: "🧭" },
     ],
@@ -72,7 +74,9 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     flag: "🇦🇺", code: "AU", homeHref: "/",
     navLinks: [
       { label: "Quizzes", href: "/quizzes" },
+      { label: "Flight Schools", href: "/australia/guides/best-flight-schools-australia" },
       { label: "Guides", href: "/guides" },
+      { label: "Pilot Stories", href: "/stories" },
       { label: "Jobs", href: "/jobs" },
       { label: "About", href: "/about" },
     ],
@@ -85,7 +89,9 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     flag: "🇨🇦", code: "CA", homeHref: "/",
     navLinks: [
       { label: "Quizzes", href: "/quizzes" },
+      { label: "Flight Schools", href: "/canada/guides/best-flight-schools-canada" },
       { label: "Guides", href: "/guides" },
+      { label: "Pilot Stories", href: "/stories" },
       { label: "Jobs", href: "/jobs" },
       { label: "About", href: "/about" },
     ],
@@ -98,7 +104,9 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     flag: "🇪🇺", code: "EU", homeHref: "/",
     navLinks: [
       { label: "Quizzes", href: "/quizzes" },
+      { label: "Flight Schools", href: "/europe/guides/best-flight-schools-europe" },
       { label: "Guides", href: "/guides" },
+      { label: "Pilot Stories", href: "/stories" },
       { label: "Jobs", href: "/jobs" },
       { label: "About", href: "/about" },
     ],
@@ -114,7 +122,9 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     flag: "🇳🇿", code: "NZ", homeHref: "/",
     navLinks: [
       { label: "Quizzes", href: "/quizzes" },
+      { label: "Flight Schools", href: "/new-zealand/guides/best-flight-schools-new-zealand" },
       { label: "Guides", href: "/guides" },
+      { label: "Pilot Stories", href: "/stories" },
       { label: "Jobs", href: "/jobs" },
       { label: "About", href: "/about" },
     ],
@@ -127,7 +137,9 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     flag: "🇿🇦", code: "ZA", homeHref: "/",
     navLinks: [
       { label: "Quizzes", href: "/quizzes" },
+      { label: "Flight Schools", href: "/south-africa/guides/best-flight-schools-south-africa" },
       { label: "Guides", href: "/guides" },
+      { label: "Pilot Stories", href: "/stories" },
       { label: "Jobs", href: "/jobs" },
       { label: "About", href: "/about" },
     ],
@@ -141,6 +153,7 @@ const NAV_CONFIG: Record<string, CountryNavConfig> = {
     navLinks: [
       { label: "Quizzes", href: "/quizzes" },
       { label: "Guides", href: "/guides" },
+      { label: "Pilot Stories", href: "/stories" },
       { label: "Jobs", href: "/jobs" },
       { label: "About", href: "/about" },
     ],
