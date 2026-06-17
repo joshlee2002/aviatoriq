@@ -50,7 +50,7 @@ async function startServer() {
   // ─── Global rate limiter — broad abuse prevention ─────────────────────────
   const globalLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 1000, // generous for page loads; mutations have their own stricter limiter
+    max: process.env.NODE_ENV === "development" ? 100000 : 1000, // generous for page loads; mutations have their own stricter limiter
     standardHeaders: true,
     legacyHeaders: false,
     message: { error: "Too many requests, please try again later." },
