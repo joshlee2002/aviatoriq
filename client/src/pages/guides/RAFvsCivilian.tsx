@@ -17,7 +17,7 @@ export default function RAFvsCivilian() {
       scopeBanner={<GuideScopeBanner scope="This guide compares RAF military training with UK civilian pilot training. Relevant to UK readers only." />}
       faqSchema={[
         { question: "Is RAF pilot training free?", answer: "Yes. The RAF pays for all pilot training costs, and you receive a salary throughout. In return, you commit to a minimum service period of typically 12 years (for fast jet pilots) or shorter for multi-engine roles." },
-        { question: "What is the age limit for RAF pilot training?", answer: "You must apply by age 26 for most RAF pilot roles. The minimum age is 17.5. You must be able to complete initial training before your 26th birthday." },
+        { question: "What is the age limit for RAF pilot training?", answer: "The current RAF Direct Entry Pilot page says candidates should apply before their 23rd birthday and must start Phase One training before their 24th birthday. The minimum age is 17.5. Check the RAF recruitment page before applying because age rules can change and differ by role." },
         { question: "Is there currently a training backlog in the RAF?", answer: "Yes. As of 2025-2026, there are reports of RAF pilot recruits waiting up to 5 years after joining before starting actual flying training, due to a backlog in the training pipeline. During this time, recruits are typically given ground-based roles." },
         { question: "Can RAF pilots transition to commercial airlines?", answer: "Yes. Many commercial airline pilots started their careers in the RAF. Airlines have specific military conversion programmes. However, you will typically need additional civilian licences (ATPL theory exams, instrument ratings) to convert your military experience." }
       ]}
@@ -49,7 +49,7 @@ export default function RAFvsCivilian() {
           content: (
             <>
               <p>
-                RAF pilot selection is one of the most rigorous selection processes in the UK. It involves the RAF Aircrew Selection process at RAF Cranwell, which includes cognitive aptitude tests, psychomotor assessments, medical examination, and interviews. The upper age limit is 26 for most pilot roles.
+                RAF pilot selection is one of the most rigorous selection processes in the UK. It involves the RAF Aircrew Selection process at RAF Cranwell, which includes cognitive aptitude tests, psychomotor assessments, medical examination, and interviews. The RAF Direct Entry Pilot upper-age rule is tighter than many older guides state: check the live RAF role page before planning around this route.
               </p>
               <p>
                 If selected, you undergo Initial Officer Training (IOT) — 24 weeks of military training at RAF Cranwell. This is not flying; it is military discipline, leadership, and officer development. After IOT, you begin Elementary Flying Training (EFT) on the Grob Tutor, then progress to Basic Flying Training (BFT) on the Texan T-1.
@@ -74,7 +74,7 @@ export default function RAFvsCivilian() {
                 The total cost is typically £80,000–£130,000 for an integrated programme, or £55,000–£80,000 for a modular route. Most candidates finance this through specialist aviation loans.
               </p>
               <p>
-                The key advantage of the civilian route is control. You choose your school, your training pace, and your target airline. You are not subject to military postings, deployments, or the RAF's training backlog. If the airline market is strong (as it is in 2026), you can move quickly from training to employment.
+                The key advantage of the civilian route is control. You choose your school, your training pace, and your target airline. You are not subject to military postings, deployments, or the RAF's training backlog. If the airline market is strong, you may move quickly from training to employment, but hiring remains cyclical and airline standards remain high.
               </p>
             </>
           ),

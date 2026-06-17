@@ -18,7 +18,7 @@ export default function AtplExams() {
       faqSchema={[
         { question: "How many ATPL exams are there?", answer: "There are 13 ATPL theory exams under the current UK CAA and EASA syllabus (previously 14, but VFR and IFR Communications were merged). You must pass all 13 to obtain a Frozen ATPL." },
         { question: "What is the pass mark for ATPL exams?", answer: "The minimum pass mark for every ATPL exam is 75%. However, airlines highly value first-time passes and strong average scores (aiming for 85-90%+)." },
-        { question: "How many times can you fail an ATPL exam?", answer: "You have a maximum of 6 attempts per subject, across a maximum of 6 total sittings. You must pass all 13 exams within 18 months of taking your first exam." },
+        { question: "How many times can you fail an ATPL exam?", answer: "Under common UK CAA/EASA-style rules, you should plan around a limited number of sittings and attempts, often described as six sittings and four attempts per subject. Verify the current CAA exam rules before starting. You must pass all 13 exams within 18 months of taking your first exam." },
         { question: "Which is the hardest ATPL exam?", answer: "Performance is widely considered the hardest ATPL exam, with the lowest average pass rate (around 58%). Principles of Flight and General Navigation are also consistently ranked among the most difficult." },
         { question: "How long does ATPL theory take?", answer: "Full-time residential ground school typically takes 6 to 8 months. Part-time distance learning usually takes 12 to 18 months while working alongside study." }
       ]}

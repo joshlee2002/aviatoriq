@@ -18,14 +18,9 @@ const FinanceGuide = () => {
   return (
     <SEO
       title="How to Finance Pilot Training in the UK | AviatorIQ"
-      description="How to fund pilot training in the UK in 2026. Covers aviation loans, HSBC pilot loan, Career Development Loans, savings strategies, and what to avoid. Real numbers, no fluff."
+      description="How to fund pilot training in the UK in 2026. Covers realistic self-funding, scholarships, modular training, family support, and loan risks to verify before applying."
       canonical="/guides/how-to-finance-pilot-training-uk"
-    
-      sources={[
-    { name: "UK Civil Aviation Authority (CAA)" },
-    { name: "EASA Part-FCL" },
-    { name: "BALPA Pay & Conditions Survey" },
-  ]}/>
+    />
   );
 };
 

@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
 
@@ -5,13 +6,13 @@ export default function UsPilotRetirementAge() {
   return (
     <GuideLayout
       title="The Mandatory Retirement Age for US Airline Pilots: Navigating Your Career to 65 and Beyond"
-      subtitle="The FAA mandates retirement at 65 for Part 121 airline pilots. Here is how the rule works, why it exists, and what the ongoing push to raise it to 67 means for your career."
+      subtitle="US Part 121 airline pilots cannot serve after age 65 under current FAA/federal rules. Here is how the rule works, what it does and does not cover, and why proposals to change it matter."
       readTime="12 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
       category="US Pilot Careers"
       canonical="https://aviatoriq.com/us/guides/us-pilot-retirement-age"
-      metaDescription="Understand the FAA's mandatory retirement age of 65 for US commercial airline pilots in 2026. Explore its history, current regulations, and the ongoing debate."
+      metaDescription="Understand the age 65 rule for US Part 121 airline pilots in 2026, including what it covers, what flying may remain possible, and current change proposals."
       ctaText="Get my free US pilot roadmap"
       ctaHref="/us/roadmap"
       sections={[
@@ -19,11 +20,11 @@ export default function UsPilotRetirementAge() {
           heading: "Introduction: The Age 65 Rule in 2026",
           content: (
             <>
-              <p>For aspiring and current commercial aviators in the United States, understanding the mandatory retirement age is a critical component of long-term career planning. As of 2026, the Federal Aviation Administration (FAA) mandates that pilots operating under 14 CFR Part 121—which governs major and regional airlines—must retire from their pilot duties upon reaching their 65th birthday. This regulation, while seemingly straightforward, is the culmination of decades of debate, legislative action, and international standardization efforts. It significantly impacts pilot career trajectories, airline staffing strategies, and the overall dynamics of the US aviation industry.</p>
+              <p>For aspiring and current commercial aviators in the United States, understanding the mandatory retirement age is a critical component of long-term career planning. As of 2026, pilots serving in 14 CFR Part 121 airline operations cannot serve as pilots after reaching age 65. This rule affects pilot career planning, airline staffing and seniority movement, but it does not ban all flying after 65.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
-                Want to see exactly how your salary will progress? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to see a timeline from training to captain.
+                Want a scenario-based view of how your career could progress? Generate your free <Link href="/us/roadmap" className="text-blue-400 underline">personalised US pilot career roadmap</Link> to see a timeline from training to captain.
               </p>
-              <p>While the age 65 rule is firmly in place, discussions surrounding its potential modification are a recurring feature on Capitol Hill. Proposals to raise the retirement age, often citing pilot shortages and the experience of older aviators, frequently emerge but have consistently faced significant hurdles. This guide covers the age 65 rule, exploring its historical origins, the current regulatory framework, the persistent arguments for and against its alteration, and what these factors mean for pilots navigating their professional lives in 2026 and beyond.</p>
+              <p>While the age 65 rule remains in place, proposals to modify it recur in Congress and industry debate. Proposals to raise the retirement age, often citing pilot shortages and the experience of older aviators, frequently emerge but have consistently faced significant hurdles. This guide covers the age 65 rule, exploring its historical origins, the current regulatory framework, the persistent arguments for and against its alteration, and what these factors mean for pilots navigating their professional lives in 2026 and beyond.</p>
             </>
           )
         },
@@ -84,7 +85,7 @@ export default function UsPilotRetirementAge() {
           heading: "The Ongoing Debate: Raising the Retirement Age to 67",
           content: (
             <>
-              <p>Despite the established age 65 rule, the debate over raising the mandatory retirement age to 67 continues to be a prominent topic within the US aviation industry. This discussion is often fueled by several factors, most notably the persistent pilot shortage, particularly affecting regional carriers, and the desire to leverage the extensive experience of senior pilots for a longer duration.</p>
+              <p>Despite the established age 65 rule, the debate over raising the mandatory retirement age to 67 continues to be a prominent topic within the US aviation industry. This discussion is often fueled by several factors, most notably pilot supply concerns, particularly affecting regional carriers, and the desire to leverage the extensive experience of senior pilots for a longer duration.</p>
               <p>Proponents of raising the age, including some lawmakers and airline executives, argue that extending pilot careers by two years could provide immediate relief to staffing challenges, retain invaluable experience within the cockpit, and offer a practical solution to workforce pipeline issues. They point to advancements in medical technology and pilot health, suggesting that many pilots remain fully capable of performing their duties safely and effectively beyond age 65.</p>
               <p>However, efforts to pass legislation, such as the proposed "Let Experienced Pilots Fly Act," have repeatedly stalled in Congress. The opposition is robust and comes from various stakeholders, including the Air Line Pilots Association (ALPA), the largest pilot union. Their concerns are primarily centered on:</p>
               <ul>
@@ -101,10 +102,10 @@ export default function UsPilotRetirementAge() {
           heading: "Implications for Pilot Careers and Hiring in 2026",
           content: (
             <>
-              <p>The steadfastness of the age 65 retirement rule has significant implications for both individual pilots and the broader airline industry in 2026. For pilots, it provides a clear and predictable career timeline, allowing for stable retirement planning and an uninterrupted seniority progression. However, it also means that highly experienced aviators, who may feel fully capable of continuing their duties, must transition out of Part 121 operations.</p>
+              <p>The age 65 rule has practical implications for both individual pilots and the broader airline industry in 2026. For pilots, it provides a clear and predictable career timeline, allowing for stable retirement planning and an uninterrupted seniority progression. However, it also means that highly experienced aviators, who may feel fully capable of continuing their duties, must transition out of Part 121 operations.</p>
               <p>For airlines, particularly those operating under Part 121, the age 65 rule creates a predictable "retirement churn." This consistent outflow of senior pilots generates regular vacancies for captain positions, facilitates fleet transitions, and drives the demand for new hires. This predictable cycle is a primary engine for airline hiring, creating opportunities for aspiring pilots to enter the industry and for first officers to upgrade to captain roles.</p>
               <p>If the retirement age were to be raised, even by a few years, it would likely lead to a short-term slowdown in hiring and upgrades. While it might retain experienced pilots, it would also reduce the number of immediate vacancies, potentially delaying career advancement for those earlier in their professional journey. Therefore, for individuals currently building flight hours or undergoing training, the current age 65 rule, despite its limitations for older pilots, ensures a more consistent flow of career opportunities within the airline sector.</p>
-              <p>Aspiring pilots should focus on meeting the rigorous qualifications for airline entry, including ATP minimums, R-ATP eligibility, and significant Pilot-in-Command (PIC) time. Maintaining a pristine logbook, excelling in interviews, and possessing a deep understanding of FAA regulations remain paramount, regardless of the ongoing discussions surrounding the retirement age. The industry continues to demand highly skilled and well-prepared aviators, and the age 65 rule shapes the rhythm of that demand.</p>
+              <p>Aspiring pilots should focus on meeting the rigorous qualifications for airline entry, including ATP minimums, R-ATP eligibility, and significant Pilot-in-Command (PIC) time. Maintaining a pristine logbook, excelling in interviews, and possessing a deep understanding of FAA regulations remain paramount, regardless of the ongoing discussions surrounding the retirement age. Airline hiring remains cyclical, and the age 65 rule is only one factor shaping demand.</p>
             </>
           )
         }
@@ -114,7 +115,7 @@ export default function UsPilotRetirementAge() {
         { question: "Does the age 65 rule apply to all types of pilots?", answer: "No, the age 65 rule specifically applies to pilots flying for major and regional airlines under 14 CFR Part 121. It does not apply to pilots in other sectors like corporate, charter, or instructional flying, where medical certification and company policies are the primary determinants." },
         { question: "Why was the retirement age changed from 60 to 65?", answer: "The retirement age was raised from 60 to 65 in 2007 by the 'Fair Treatment for Experienced Pilots Act.' This change was largely influenced by new international standards set by ICAO in 2006, which also raised the age limit to 65, and a recognition of advancements in pilot medical assessment." },
         { question: "Are there efforts to raise the pilot retirement age to 67?", answer: "Yes, there are ongoing legislative proposals, such as the 'Let Experienced Pilots Fly Act,' that aim to raise the mandatory retirement age to 67. However, as of June 2026, these efforts have not been successful due to concerns regarding safety, international compatibility, and potential impacts on career progression." },
-        { question: "What happens to pilots after they reach age 65?", answer: "Pilots reaching age 65 must retire from their duties as pilots in Part 121 airline operations. They may, however, continue to fly in other capacities not governed by Part 121, such as corporate or charter flying, provided they maintain their medical certification and meet other applicable requirements." }
+        { question: "What happens to pilots after they reach age 65?", answer: "Pilots reaching age 65 can no longer serve as pilots in Part 121 airline operations. They may be able to continue flying in other capacities not governed by Part 121, such as some corporate or charter roles, if they maintain the required medical certificate and meet operator, insurance and regulatory requirements." }
       ]}
       relatedGuides={[
         { title: "How to Become a Pilot in the US", href: "/us/guides/how-to-become-a-pilot", time: "15 min" },

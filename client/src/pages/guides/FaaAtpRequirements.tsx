@@ -1,17 +1,18 @@
+import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
 
 export default function FaaAtpRequirements() {
   return (
     <GuideLayout
-      title="Mastering the Skies: Your Definitive Guide to FAA ATP Requirements in 2026"
+      title="FAA ATP Requirements 2026: Hours, R-ATP, ATP CTP and Airline Eligibility"
       subtitle="A comprehensive overview of the Airline Transport Pilot (ATP) certificate, including eligibility, experience, training, and career pathways in the US pilot market."
       readTime="15 min"
       author="AviatorIQ Research"
       lastUpdated="June 2026"
       category="Pilot Training"
       canonical="https://aviatoriq.com/us/guides/faa-atp-requirements"
-      metaDescription="Detailed guide to FAA ATP requirements for 2026, covering Part 61, Part 141, costs, and career opportunities for aspiring airline pilots."
+      metaDescription="FAA ATP requirements for 2026: 14 CFR Part 61 hours, R-ATP pathways, ATP CTP, costs and airline eligibility considerations."
       ctaText="Check your FAA medical condition"
       ctaHref="/us/medical-lookup"
       sections={[
@@ -19,7 +20,7 @@ export default function FaaAtpRequirements() {
           heading: "Introduction to the Airline Transport Pilot (ATP) Certificate",
           content: (
             <>
-              <p>The Airline Transport Pilot (ATP) certificate represents the pinnacle of pilot certification in the United States, signifying the highest level of aeronautical knowledge, experience, and skill. It is the mandatory credential for pilots who wish to act as a Pilot in Command (PIC) or Second in Command (SIC) in Part 121 air carrier operations (scheduled airlines) and certain other commercial aviation roles. As of 2026, the demand for highly qualified ATP-certified pilots remains robust, driven by airline expansion and a wave of pilot retirements. This guide provides an exhaustive examination of the requirements, pathways, and considerations for obtaining your ATP certificate, ensuring you are thoroughly prepared for a successful career in the flight deck.</p>
+              <p>The Airline Transport Pilot (ATP) certificate represents the pinnacle of pilot certification in the United States, signifying the highest level of aeronautical knowledge, experience, and skill. It is the mandatory credential for pilots who wish to act as a Pilot in Command (PIC) or Second in Command (SIC) in Part 121 air carrier operations (scheduled airlines) and certain other commercial aviation roles. As of 2026, ATP demand remains cyclical and airline-specific, influenced by retirements, aircraft deliveries, profitability, training capacity and regional-airline hiring needs. This guide provides an exhaustive examination of the requirements, pathways, and considerations for obtaining your ATP certificate, ensuring you are thoroughly prepared for a successful career in the flight deck.</p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Use our free <Link href="/us/medical-lookup" className="text-blue-400 underline">FAA Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your FAA medical application.
               </p>
@@ -66,7 +67,7 @@ export default function FaaAtpRequirements() {
                   <tr className="border-b border-white/10"><td className="px-4 py-3 text-white/80">Multi-Engine (for ME ATP)</td><td className="px-4 py-3 text-white/80">50 hours</td><td className="px-4 py-3 text-white/80">In the class of airplane for the rating sought. Up to 25 hours can be in a full flight simulator.</td></tr>
                 </tbody>
               </table>
-              <p>a maximum of 100 hours of the total aeronautical experience requirements may be obtained in a full flight simulator or flight training device. Careful logging and verification of flight hours are paramount throughout this process.</p>
+              <p>Depending on the exact ATP category/class sought and approved training context, some simulator or flight training device time may be creditable toward FAA aeronautical experience requirements; verify the current 14 CFR §61.159 credit limits before planning around simulator time. Careful logging and verification of flight hours are paramount throughout this process.</p>
             </>
           )
         },
@@ -99,7 +100,7 @@ export default function FaaAtpRequirements() {
                 <li>At least 30 hours of classroom instruction covering aerodynamics, automation, adverse weather operations, air carrier operations, and leadership/professionalism.</li>
                 <li>At least 10 hours of flight training in a full flight simulator (FFS) and a flight training device (FTD), including at least 6 hours in an FFS for multi-engine aircraft.</li>
               </ul>
-              <p>As of 2026, the cost for an ATP CTP course generally ranges from <strong>$4,200 to $5,000 USD</strong>, depending on the training provider and location. It is a significant investment but a non-negotiable step for most aspiring airline pilots.</p>
+              <p>As of 2026, the cost for an ATP CTP course generally ranges from <strong>$4,200 to $5,000 USD</strong>, depending on the training provider and location. It is a significant investment and is required before taking the multiengine ATP knowledge test.</p>
             </>
           )
         },

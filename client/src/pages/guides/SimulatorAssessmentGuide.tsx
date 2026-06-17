@@ -5,10 +5,10 @@ import GuideScopeBanner from "@/components/GuideScopeBanner";
 export default function SimulatorAssessmentGuide() {
   return (
     <GuideLayout
-      title="Airline Simulator Assessment Guide: What to Expect in 2026"
-      subtitle="How to pass the most stressful part of airline selection. What raw data flying actually means, and why most candidates fail on CRM, not flying skills."
+      title="Airline Simulator Assessment Guide: What to Expect"
+      subtitle="How to prepare for one of the most stressful parts of airline selection. What raw data flying actually means, and why most candidates fail on CRM, not flying skills."
       canonical="/guides/airline-simulator-assessment"
-      metaDescription="Airline simulator assessment guide 2026. What to expect in a raw data sim check, how to handle CRM scenarios, and how to prepare for the hardest part of airline selection."
+      metaDescription="Airline simulator assessment guide: what to expect, raw-data flying, CRM, briefing tips, common failures and practice plan."
       readTime="11 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/sim-assessment_9d4c2b8e.jpg"
@@ -17,7 +17,7 @@ export default function SimulatorAssessmentGuide() {
       scopeBanner={<GuideScopeBanner scope="This guide covers simulator assessments for UK and European airlines." usHref="/us/guides/airline-interview-usa" usLabel="View USA airline interview guide →" />}
       faqSchema={[
         { question: "What is an airline simulator assessment?", answer: "A simulator assessment is a practical flight test in a full-motion Level D simulator (usually an A320 or B737). It is used by airlines to assess a candidate's basic instrument flying skills, crew resource management (CRM), and ability to learn under pressure." },
-        { question: "What does 'raw data flying' mean?", answer: "Raw data flying means flying the aircraft without the flight director (the guidance crosshairs on the primary flight display) or the autopilot. You must fly precise headings, altitudes, and speeds by interpreting the basic instruments yourself." },
+        { question: "What does 'raw data flying' mean?", answer: "Raw data flying means flying the aircraft without the flight director (the guidance crosshairs on the primary flight display) or the autopilot. You need to control headings, altitudes and speeds accurately by interpreting the basic instruments yourself." },
         { question: "Do I need to know the specific aircraft systems?", answer: "Generally, no. Unless you already hold a type rating for that aircraft, the assessors do not expect you to know the complex systems or standard operating procedures (SOPs) of the A320 or B737. They will set the aircraft up for you." },
         { question: "How should I prepare for a simulator assessment?", answer: "Book 2–3 hours in a fixed-base or full-motion simulator of the type you will be assessed in. Practice raw data ILS approaches, steep turns, and go-arounds. Most importantly, practice verbalising your thought process to demonstrate good CRM." }
       ]}
@@ -27,7 +27,7 @@ export default function SimulatorAssessmentGuide() {
           content: (
             <>
               <p>
-                The simulator assessment is the most technically demanding and stressful stage of airline pilot selection. You will be placed in a multi-million-pound Level D full-flight simulator — typically an Airbus A320 or Boeing 737 — alongside another candidate or a training captain.
+                The simulator assessment is often one of the most technically demanding and stressful stages of airline pilot selection. You may be placed in a full-flight or fixed-base simulator — typically an Airbus A320 or Boeing 737 — alongside another candidate or a training captain.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Before your interview, complete our free <Link href="/quiz" className="text-blue-400 underline">Pilot Career Assessment</Link> to identify your strongest attributes and areas to develop.
@@ -46,7 +46,7 @@ export default function SimulatorAssessmentGuide() {
           content: (
             <>
               <p>
-                Almost all airline assessments require "raw data" flying. This means the autopilot, autothrust, and flight directors (the crosshairs that tell you where to point the nose) are turned off. You must fly the aircraft using only the primary flight instruments.
+                Many airline assessments include "raw data" flying. This means the autopilot, autothrust, and flight directors (the crosshairs that tell you where to point the nose) are turned off. You may be asked to fly using primary flight instruments without flight-director guidance.
               </p>
               <p>
                 A typical 45-minute assessment profile looks like this:
@@ -85,7 +85,7 @@ export default function SimulatorAssessmentGuide() {
           content: (
             <>
               <p>
-                To pass the assessment, you must demonstrate that you are a safe, communicative multi-crew pilot. Here is how:
+                To perform well, aim to demonstrate that you are a safe, communicative multi-crew pilot. Here is how:
               </p>
               <p>
                 <strong>Think out loud:</strong> Narrate your intentions. "I am going to pitch up to 15 degrees and set climb thrust." This keeps the other pilot in the loop and shows the assessor your thought process.
@@ -104,10 +104,10 @@ export default function SimulatorAssessmentGuide() {
           content: (
             <>
               <p>
-                Do not walk into an airline simulator assessment having never flown a jet simulator. The inertia and pitch/power couples of an A320 or B737 are completely different from a Piper Seneca.
+                Do not walk into an airline simulator assessment without understanding basic jet handling expectations if a prep session is affordable and relevant. The inertia and pitch/power couples of an A320 or B737 are completely different from a Piper Seneca.
               </p>
               <p>
-                <strong>Book a prep session:</strong> Book 2–3 hours in a fixed-base or full-motion simulator of the type you will be assessed in. Many training centres (like Virtual Aviation or Jet Masterclass in the UK) offer specific "airline assessment prep" sessions with current airline captains. It will cost £500–£1,000, but it is the best investment you can make.
+                <strong>Book a prep session:</strong> Book 2–3 hours in a fixed-base or full-motion simulator of the type you will be assessed in. Many training centres (like Virtual Aviation or Jet Masterclass in the UK) offer specific "airline assessment prep" sessions with current airline captains. It will cost £500–£1,000, but it can be a high-value investment if it matches the airline's assessment profile and your budget.
               </p>
               <p>
                 <strong>Learn the pitch and power settings:</strong> Ask your prep instructor for the standard pitch and power settings for the aircraft. (e.g., in a B737, level flight at 210 knots clean is roughly 6 degrees nose up and 60% N1). If you know these numbers, you can set them and the aircraft will roughly do what you want, freeing up your mental capacity for navigation and CRM.

@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import React from 'react';
 import GuideLayout from '@/components/GuideLayout';
 
@@ -11,7 +12,7 @@ export default function UsFlightSchoolLoans() {
       lastUpdated="June 2026"
       category="Financing"
       canonical="https://aviatoriq.com/us/guides/us-flight-school-loans"
-      metaDescription="Discover the best US flight school loans for 2026. Learn about Part 61 vs. Part 141 costs, federal vs. private loans, and alternative financing options."
+      metaDescription="Compare US flight school loan options for 2026, including Part 61 vs. Part 141 costs, federal-aid limits, private loans, scholarships and repayment risks."
       ctaText="Calculate your US training costs"
       ctaHref="/us/calculator"
       sections={[
@@ -20,7 +21,7 @@ export default function UsFlightSchoolLoans() {
           content: (
             <>
               <p>
-                Aspiring aviators in the United States face a significant financial commitment when pursuing their dreams of becoming a pilot. With training costs often exceeding $100,000, understanding the landscape of flight school loans is paramount. The total cost of pilot training varies significantly based on the chosen flight school, the type of program (Part 61 vs. Part 141), and individual learning pace.
+                Aspiring aviators in the United States face a significant financial commitment when pursuing their dreams of becoming a pilot. With career-track training often reaching six figures, understanding the landscape of flight school loans is essential before enrolling. The total cost of pilot training varies significantly based on the chosen flight school, the type of program (Part 61 vs. Part 141), and individual learning pace.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Use our free <Link href="/us/calculator" className="text-blue-400 underline">US Pilot Training Cost Calculator</Link> to get a personalised estimate based on your chosen training path.
@@ -33,10 +34,10 @@ export default function UsFlightSchoolLoans() {
                 Federal Aviation Regulations (FAR) Part 61 and Part 141 define two distinct pathways for flight training. While both lead to the same FAA certifications, their structures have different cost implications.
               </p>
               <p>
-                <strong>Part 61 Training:</strong> Offers maximum flexibility, allowing students to train at their own pace with an instructor. This is often preferred by individuals balancing training with other commitments. While the FAA mandates a minimum of 40 flight hours for a PPL under Part 61, most students typically require 60-75 hours to pass their checkride. Costs are often pay-as-you-go, which can spread out expenses but may lead to higher overall costs if training is prolonged due to inconsistent flying.
+                <strong>Part 61 Training:</strong> Offers maximum flexibility, allowing students to train at their own pace with an instructor. This is often preferred by individuals balancing training with other commitments. While the FAA minimum for a private pilot certificate under Part 61 is generally 40 hours, many students need more than the minimum before checkride readiness. Costs are often pay-as-you-go, which can spread out expenses but may lead to higher overall costs if training is prolonged due to inconsistent flying.
               </p>
               <p>
-                <strong>Part 141 Training:</strong> Operates under strict FAA oversight with an approved, structured syllabus. These programs are typically more intensive and accelerated. Part 141 programs have reduced minimum flight hour requirements (e.g., 35 hours for a PPL), which can potentially lead to lower total costs if completed efficiently. However, these programs often require upfront tuition payments or structured payment plans.
+                <strong>Part 141 Training:</strong> Operates under strict FAA oversight with an approved, structured syllabus. These programs are typically more intensive and accelerated. Part 141 programmes can have reduced minimum flight-hour requirements (for example, 35 hours for a private pilot certificate in an approved course), but total cost still depends on proficiency, weather, scheduling and school fees. However, these programs often require upfront tuition payments or structured payment plans.
               </p>
               <table className="w-full text-sm text-left border-collapse">
                 <thead>
@@ -90,7 +91,7 @@ export default function UsFlightSchoolLoans() {
                 Federal student loans are generally considered the most advantageous due to their fixed interest rates, income-driven repayment plans, and potential for deferment or forbearance. However, eligibility for federal aid for flight training is highly specific.
               </p>
               <p>
-                To qualify for federal student loans (such as Direct Subsidized and Unsubsidized Loans), the flight school must be accredited, participate in Title IV federal financial aid programs, and offer qualifying degree or certificate programs. Many flight schools, often classified as trade schools, do not meet these stringent requirements.
+                To qualify for federal student loans (such as Direct Subsidized and Unsubsidized Loans), the flight school must be accredited, participate in Title IV federal financial aid programs, and offer qualifying degree or certificate programs. Many standalone flight schools do not participate in Title IV federal aid, so eligibility must be verified with the school and studentaid.gov before relying on federal loans.
               </p>
               <p>
                 Examples of qualifying programs include a Professional Pilot Science Associate Degree from Polk State College or an Aviation Science Degree from Aviator College. Prospective students should verify their chosen school's eligibility through the Department of Education's accreditation database.

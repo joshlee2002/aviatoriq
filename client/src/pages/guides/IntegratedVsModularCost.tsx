@@ -172,7 +172,7 @@ export default function IntegratedVsModularCost() {
                 Ryanair, easyJet, Jet2, and Wizz Air — the four largest employers of newly qualified pilots in the UK — all actively recruit modular graduates. What matters to these airlines is your ATPL exam average (aim for 85%+), your simulator performance in their assessment, and your interview skills. They do not ask whether you trained at CAE Oxford or Bristol Groundschool.
               </p>
               <p>
-                The one area where integrated training still has a genuine advantage is access to specific cadet programmes. The BA Speedbird Academy, easyJet Generation Pilot, and Jet2 FlightPath programmes all require integrated training at their partner schools. If you want a guaranteed job offer before you start training, integrated is the only option.
+                The one area where integrated training still has a genuine advantage is access to specific cadet programmes. The BA Speedbird Academy, easyJet Generation Pilot, and Jet2 FlightPath programmes all require integrated training at their partner schools. If you want a conditional pathway offer before you start training, integrated is the only option.
               </p>
             </>
           ),

@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import GuideLayout from '@/components/GuideLayout';
 
 export default function NewZealandPilotSalary2026() {

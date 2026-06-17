@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import GuideLayout from "@/components/GuideLayout";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
 
@@ -102,7 +103,7 @@ export default function AdhdPilotGuide() {
               </div>
 
               <p>
-                <strong>Scenario 1 (Childhood ADHD):</strong> This is the most common and most favourable case. You were diagnosed as a child, took medication during school, stopped at some point (often 16–18), and have no current symptoms. Research showing 40–60% of childhood cases improve significantly in adulthood is explicitly referenced by the CAA .
+                <strong>Scenario 1 (Childhood ADHD):</strong> This is the most common and most favourable case. You were diagnosed as a child, took medication during school, stopped at some point (often 16–18), and have no current symptoms. The CAA assesses current functional impact, treatment history, medication status and specialist evidence rather than relying on the diagnosis label alone.
               </p>
               <p>
                 <strong>Scenario 2 (Recently stopped medication):</strong> You were diagnosed as an adult, took medication, and are now stopping specifically to pursue a pilot career. The authority will want to see a stability period off medication (typically 6–12 months) and evidence that you can function without it.

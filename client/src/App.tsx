@@ -240,6 +240,12 @@ import UaePilotSalary2026 from "@/pages/guides/UaePilotSalary2026";
 import UaePilotLifestyle from "@/pages/guides/UaePilotLifestyle";
 import UaeMedicalClass1 from "@/pages/guides/UaeMedicalClass1";
 import UaePilotShortage from "@/pages/guides/UaePilotShortage";
+import BestFlightSchoolsCanada from "@/pages/guides/BestFlightSchoolsCanada";
+import BestFlightSchoolsAustralia from "@/pages/guides/BestFlightSchoolsAustralia";
+import BestFlightSchoolsEurope from "@/pages/guides/BestFlightSchoolsEurope";
+import AirlineInterviewPrepUSA from "@/pages/guides/AirlineInterviewPrepUSA";
+import PilotLifestyleUK from "@/pages/guides/PilotLifestyleUK";
+import HowToBecomePilotUAE from "@/pages/guides/HowToBecomePilotUAE";
 // New South Africa guides
 import SaCplRequirements from "@/pages/guides/SaCplRequirements";
 import SaAtplRequirements from "@/pages/guides/SaAtplRequirements";
@@ -566,7 +572,7 @@ function Router() {
       <Route path="/us/guides/airline-interview-prep" component={AirlineInterviewPrepUSA} />
       <Route path="/guides/pilot-lifestyle-uk" component={PilotLifestyleUK} />
       <Route path="/uae/guides/how-to-become-a-pilot-uae" component={HowToBecomePilotUAE} />
-      <Route path="/uae/guides/uae-pilot-training-costs" component={UAEPilotTrainingCosts} />
+      <Route path="/uae/guides/uae-pilot-training-costs" component={UaePilotTrainingCosts} />
       {/* 404 */}
       <Route path="/404" component={NotFound} />
       <Route path="*" component={NotFound} />

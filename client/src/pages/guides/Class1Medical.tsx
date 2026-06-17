@@ -8,7 +8,7 @@ const Class1Medical: React.FC = () => {
       title="UK CAA Class 1 Medical: Complete 2026 Guide"
       subtitle="Everything you need to know about the UK CAA Class 1 Medical Certificate — what it tests, where to get it, what it costs in 2026, what can disqualify you, and the critical post-Brexit dual certificate situation."
       canonical="/guides/class-1-medical"
-      metaDescription="UK CAA Class 1 Medical guide 2026. Real prices: Centreline £1,181, Birmingham £1,198, Heathrow £957–£1,377. Post-Brexit UK vs EASA certificates explained. SSRI acceptance, OML, colour vision, renewal frequency. Get your medical before you start training."
+      metaDescription="UK CAA Class 1 Medical 2026: costs, exam process, eyesight, mental health, deferrals, renewals and when to speak to an AME/AeMC."
       faqSchema={[
         { question: "How much does a UK CAA Class 1 medical cost in 2026?", answer: "UK CAA initial Class 1 medical costs: Centreline (London/Gatwick) £1,181 inc VAT; Birmingham AeMC £1,198 inc VAT; Heathrow Medical Services £1,377 inc VAT (combined UK+EASA). Renewals cost £297–£332 at most AMEs. The guide's older figures of £400–£600 are no longer accurate." },
         { question: "Do I need a UK CAA or EASA Class 1 medical?", answer: "Since Brexit, UK CAA and EASA are completely separate systems with no mutual recognition. If you plan to fly for UK operators (BA, easyJet UK, Jet2, TUI, Loganair), you need a UK CAA medical. If you want to fly for EASA operators (Ryanair with Irish licence, Wizz Air, Vueling), you need an EASA medical from an EASA-state AeMC. Most UK students get a combined UK+EASA medical to keep all options open." },
@@ -34,7 +34,7 @@ const Class1Medical: React.FC = () => {
           content: (
             <>
               <p>
-                The single most important piece of advice in this guide: <strong>book your Class 1 medical before you spend a single pound on flight training.</strong> The CAA, BALPA, and every reputable UK flight school say the same thing. Leading Edge Aviation now requires cadets to have their Class 1 medical in place at least three months before their course start date.
+                The single most important piece of advice in this guide: <strong>book your Class 1 medical before you spend a single pound on flight training.</strong> The CAA process makes the Class 1 medical the gateway to commercial pilot training, and reputable schools expect you to resolve it early. Some schools require it before course start or several months before training begins; check the exact school policy.
               </p>
               <p className="text-sm p-3 rounded-lg my-3" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
                 Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
@@ -80,7 +80,7 @@ const Class1Medical: React.FC = () => {
                 </table>
               </div>
               <p>
-                Most UK student pilots get a <strong>combined UK+EASA medical</strong> at their initial examination. All three UK AeMC organisations now offer dual issuance — the examination is conducted once, and results are submitted to both authorities. The EASA premium is approximately £366–£500 on top of the UK-only price.
+                Most UK student pilots get a <strong>combined UK+EASA medical</strong> at their initial examination. Some AeMCs offer combined UK CAA/EASA medical options, but availability, process and pricing vary. Check the AeMC directly before booking if you want both UK and EASA medical certificates.
               </p>
               <p>
                 If you only need an EASA medical (for example, you are targeting Ryanair or Wizz Air), you do not need a UK AeMC at all. Flying to Sofia, Riga, or Prague for an EASA medical costs approximately £260–£515 total (flights + medical), compared to £957–£1,377 at a UK AeMC. The saving is real. 
@@ -342,7 +342,7 @@ const Class1Medical: React.FC = () => {
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">Schizophrenia / psychotic disorder</td>
                       <td className="px-4 py-3 text-red-400">Fail</td>
-                      <td className="px-4 py-3">Absolute disqualifier under CAA regulations.</td>
+                      <td className="px-4 py-3">Usually incompatible with Class 1 certification unless CAA medical assessment and specialist evidence support a safe, limited certification route.</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="px-4 py-3 font-medium text-white">ADHD</td>

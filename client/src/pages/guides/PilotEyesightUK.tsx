@@ -4,26 +4,26 @@ import { Link } from "wouter";
 const PilotEyesightUK = () => {
   return (
     <GuideLayout
-      title="UK Pilot Eyesight Requirements 2026: Glasses, Contacts, Colour Vision & Laser Surgery"
+      title="UK Pilot Eyesight Requirements 2026"
       subtitle="Navigating the UK CAA Class 1 medical vision standards for aspiring pilots, including refractive error limits, colour vision, and laser eye surgery."
       canonical="/guides/pilot-eyesight-requirements-uk"
-      metaDescription="UK pilot eyesight requirements 2026: CAA Class 1 vision standards, refractive error limits, colour vision (CAD test), LASIK/PRK rules, and what actually disqualifies you."
+      metaDescription="UK pilot eyesight requirements 2026: Class 1 vision standards, glasses, contacts, colour vision, limits and medical exam tips."
       faqSchema={[
         {
           question: "Can I become a pilot in the UK if I wear glasses or contact lenses?",
-          answer: "Yes, wearing glasses or contact lenses is generally permitted for aspiring pilots in the UK, provided your corrected vision meets the stringent Class 1 medical standards set by the UK Civil Aviation Authority (CAA). There are specific limits on refractive errors (myopia, hypermetropia, astigmatism) that must be met, even with correction. It's crucial to always carry a spare pair of corrective lenses when exercising the privileges of your licence.",
+          answer: "Yes, wearing glasses or contact lenses is often permitted for aspiring pilots in the UK, provided your corrected vision meets the stringent Class 1 medical standards set by the UK Civil Aviation Authority (CAA). There are specific limits on refractive errors (myopia, hypermetropia, astigmatism) that are assessed alongside corrected vision and eye health. Carry spare corrective lenses if required by your medical certificate or operating rules.",
         },
         {
           question: "What are the distant vision requirements for a UK Class 1 medical?",
-          answer: "For a UK Class 1 medical certificate, your distant visual acuity, with or without correction, must be 6/9 (0.7) or better in each eye separately. Your visual acuity with both eyes together (binocular vision) must be 6/6 (1.0) or better. These standards ensure pilots have excellent vision for safe flight operations.",
+          answer: "For a UK Class 1 medical certificate, your distant visual acuity, with or without correction, normally needs to be 6/9 (0.7) or better in each eye separately. Your visual acuity with both eyes together (binocular vision) normally needs to be 6/6 (1.0) or better. These standards ensure pilots have excellent vision for safe flight operations.",
         },
         {
           question: "What happens if I fail the Ishihara colour vision test for a pilot medical?",
-          answer: "If you fail the initial Ishihara test, you will be referred for further colour perception testing to determine if you are 'colour safe'. In the UK, this typically involves the Colour Assessment and Diagnosis (CAD) test. If you pass the CAD test, you may be assessed as fit. If you fail, you might be issued a medical certificate with an 'operational multi-crew only' restriction, meaning you can only fly in a multi-pilot environment where another pilot can compensate for any colour vision deficiencies.",
+          answer: "If you fail the initial Ishihara test, you will be referred for further colour perception testing to determine if you are 'colour safe'. In the UK, this typically involves the Colour Assessment and Diagnosis (CAD) test. If you pass the CAD test, you may be assessed as fit. If you do not meet the required colour-vision standard, the CAA/AeMC will decide whether any certification or limitation is possible; do not assume a multi-crew limitation will be available.",
         },
         {
           question: "Is laser eye surgery (LASIK/PRK) allowed for UK pilot medicals?",
-          answer: "Yes, laser eye surgery (refractive surgery) such as LASIK or PRK is generally permitted for UK pilot medicals, but strict conditions apply. You must have full recovery of your visual function, and a satisfactory ophthalmological evaluation is required. There are typically waiting periods after surgery (e.g., 3-6 months) to ensure stability and no complications. The CAA will assess each case individually to ensure the procedure has not compromised eye health or visual stability.",
+          answer: "Yes, laser eye surgery (refractive surgery) such as LASIK or PRK is often permitted for UK pilot medicals, but strict conditions apply. You need evidence of recovered, stable visual function, and a satisfactory ophthalmological evaluation is normally required. The CAA/AeMC will normally require a recovery/stability period after surgery to ensure stability and no complications. The CAA will assess each case individually to ensure the procedure has not compromised eye health or visual stability.",
         },
         {
           question: "What vision conditions would disqualify me from becoming a pilot in the UK?",
@@ -47,7 +47,7 @@ const PilotEyesightUK = () => {
                 Use our free <Link href="/tools/medical-condition-lookup" className="text-blue-400 underline">Medical Condition Lookup Tool</Link> to check whether a specific condition is likely to affect your Class 1 medical application.
               </p>
               <p>
-                Post-Brexit, the UK CAA operates its own medical standards (UK-FCL), which are closely aligned with but not identical to the EASA standards. If you plan to fly for an EASA carrier (Ryanair, Wizz Air, etc.) you will need a separate EASA medical certificate — the vision standards are the same, but the certificates are issued separately.
+                Post-Brexit, the UK CAA operates its own medical certification system. If you plan to fly for an EASA carrier or on EASA licence privileges, you may need separate EASA medical documentation; check the target authority before training.
               </p>
               <img src="/manus-storage/medical-exam_79659228.jpg" alt="Aviation medical examination" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
             </>
@@ -58,9 +58,9 @@ const PilotEyesightUK = () => {
           content: (
             <>
               <p>The cornerstone of the Class 1 medical vision assessment is visual acuity – how clearly you can see at various distances. The CAA and EASA specify distinct requirements for distant, intermediate, and near vision, both with and without corrective lenses.</p>
-              <p>For <strong>distant visual acuity</strong>, with or without correction, you must achieve 6/9 (0.7) or better in each eye separately. Crucially, your visual acuity with both eyes together (binocular vision) must be 6/6 (1.0) or better. This ensures a pilot has excellent overall vision for identifying distant landmarks, other aircraft, and runway features.</p>
+              <p>For <strong>distant visual acuity</strong>, with or without correction, you normally need to achieve 6/9 (0.7) or better in each eye separately. Crucially, your visual acuity with both eyes together (binocular vision) normally needs to be 6/6 (1.0) or better. This ensures a pilot has excellent overall vision for identifying distant landmarks, other aircraft, and runway features.</p>
               <p><strong>Near and intermediate vision</strong> are equally important for tasks within the cockpit, such as reading instruments, charts, and electronic displays. Applicants must be able to read an N5 chart or equivalent at 30-50 cm (near vision) and an N14 chart or equivalent at 100 cm (intermediate vision), if necessary with correction. These tests simulate the distances at which pilots interact with their flight deck instruments and documentation.</p>
-              <p>Correction is permitted, but the underlying refractive error must also fall within acceptable limits — covered in the next section.</p>
+              <p>Correction is permitted, but the underlying refractive error is also assessed against acceptable limits — covered in the next section.</p>
             </>
           ),
         },
@@ -86,8 +86,8 @@ const PilotEyesightUK = () => {
           content: (
             <>
               <p>Accurate colour perception is vital for pilots to interpret cockpit displays, navigation lights, and air traffic control signals. The initial screening for colour vision deficiency during a UK Class 1 medical is typically the Ishihara test (24-plate version).</p>
-              <p>To pass the Ishihara test, you must correctly identify the first 15 plates presented in a random order without error. Failure to pass this initial test does not automatically disqualify you but triggers further, more advanced testing to determine if you are 'colour safe'.</p>
-              <p>Further testing in the UK often involves the Colour Assessment and Diagnosis (CAD) test. The CAD test is a sophisticated, computer-based assessment that measures the severity and type of colour vision deficiency. It costs approximately £150-£200 (as of 2024) and is conducted under CAA protocols. The UK CAA does not accept lantern testing as evidence of being colour safe. If you pass the CAD test, demonstrating that your colour perception is sufficient for aviation tasks, you may be deemed fit. However, if you fail the CAD test, you may be issued a medical certificate with an 'operational multi-crew only' restriction, meaning you can only fly in an aircraft with at least two pilots, where the other pilot can compensate for any colour vision limitations.</p>
+              <p>To pass the Ishihara test, you are normally screened using Ishihara plates presented in a random order without error. Failure to pass this initial test does not automatically disqualify you but triggers further, more advanced testing to determine if you are 'colour safe'.</p>
+              <p>Further testing in the UK often involves the Colour Assessment and Diagnosis (CAD) test. The CAD test is a sophisticated, computer-based assessment that measures the severity and type of colour vision deficiency. It costs approximately £150-£200 (as of 2024) and is conducted under CAA protocols. Follow the current UK CAA/AeMC colour-vision pathway rather than assuming that older lantern-test or forum advice applies. If you pass the required advanced test, you may be assessed as fit. If you do not meet the required standard, the CAA/AeMC decides whether certification, restrictions or refusal applies; do not assume a multi-crew limitation will be available.</p>
             </>
           ),
         },
@@ -96,8 +96,8 @@ const PilotEyesightUK = () => {
           content: (
             <>
               <p>Advancements in refractive surgery, such as LASIK and PRK, have made it possible for many individuals to correct their vision. For aspiring and current pilots in the UK, these procedures are generally accepted, but with strict conditions and a thorough post-operative assessment.</p>
-              <p>The primary requirement is that your visual function must have fully recovered and be stable, with no complications that could affect flight safety. Following laser eye surgery, a mandatory waiting period is typically imposed (e.g., 3 to 6 months) to ensure the eye has healed completely and the refractive error is stable. A satisfactory ophthalmological evaluation by an eye specialist is always required before recertification can be considered.</p>
-              <p>The CAA will assess the stability of your vision, the absence of glare or halo effects, and any potential long-term complications. Procedures like Radial Keratotomy (RK) are generally not accepted due to potential long-term instability. Always inform your AME about any refractive surgery you have undergone and provide all relevant medical documentation from your ophthalmologist.</p>
+              <p>The primary requirement is that your visual function must have fully recovered and be stable, with no complications that could affect flight safety. Following laser eye surgery, the CAA/AeMC will normally require a recovery and stability period plus ophthalmology evidence before certification or recertification can be considered.</p>
+              <p>The CAA will assess the stability of your vision, the absence of glare or halo effects, and any potential long-term complications. Some older procedures, such as radial keratotomy (RK), can be problematic because of long-term stability concerns; obtain specialist CAA/AeMC advice before assuming eligibility. Always inform your AME about any refractive surgery you have undergone and provide all relevant medical documentation from your ophthalmologist.</p>
             </>
           ),
         },

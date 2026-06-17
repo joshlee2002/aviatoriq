@@ -199,6 +199,117 @@ function toId(heading: string): string {
     .slice(0, 60);
 }
 
+type GuideScope = {
+  label: string;
+  authority: string;
+  terminology: string;
+  caution: string;
+  sources: GuideSource[];
+};
+
+const GUIDE_SCOPES: Record<string, GuideScope> = {
+  usa: {
+    label: "United States",
+    authority: "FAA",
+    terminology: "FAA rules, Part 61/141 training, ATP/R-ATP where relevant, and FAA medical certificate classes.",
+    caution: "US requirements can change by certificate, operation and medical history. Verify with the FAA, an AME, your school and the airline/programme before spending money.",
+    sources: [
+      { name: "FAA" },
+      { name: "FAA Guide for Aviation Medical Examiners" },
+      { name: "FAA ATP certification" },
+    ],
+  },
+  uk: {
+    label: "United Kingdom",
+    authority: "UK CAA",
+    terminology: "UK CAA licensing, UK Part-FCL concepts, Class 1/2 medicals, integrated/modular ATPL routes and UK market examples.",
+    caution: "UK training, finance and medical information is volatile. Verify with the UK CAA, an AeMC/AME, your ATO and any lender/programme before committing.",
+    sources: [
+      { name: "UK Civil Aviation Authority (CAA)" },
+      { name: "UK CAA Class 1 medical guidance" },
+      { name: "BALPA financing your training" },
+    ],
+  },
+  europe: {
+    label: "EASA Europe",
+    authority: "EASA and the relevant national aviation authority",
+    terminology: "EASA Part-FCL/Part-MED terminology, ATO routes, ATPL theory and member-state authority differences.",
+    caution: "EASA rules are implemented through national authorities. Confirm local differences with the ATO and competent authority in the country where you train or hold a licence.",
+    sources: [
+      { name: "EASA" },
+      { name: "EASA Easy Access Rules for Aircrew" },
+    ],
+  },
+  canada: {
+    label: "Canada",
+    authority: "Transport Canada",
+    terminology: "Canadian Aviation Regulations, Standard 421 licensing and Category 1 medical terminology.",
+    caution: "Canadian requirements vary by licence, rating and medical category. Confirm with Transport Canada, a CAME and your flight training unit.",
+    sources: [
+      { name: "Transport Canada" },
+      { name: "Transport Canada Standard 421" },
+      { name: "Transport Canada medical certificates" },
+    ],
+  },
+  australia: {
+    label: "Australia",
+    authority: "CASA",
+    terminology: "CASA Part 61 licensing, Australian medical classes, DAME processes and local airline/school examples.",
+    caution: "Australian licensing and medical requirements can depend on operation type and training pathway. Confirm with CASA, a DAME and your Part 141/142 school.",
+    sources: [
+      { name: "CASA" },
+      { name: "CASA pilot licences" },
+      { name: "CASA medical certificates" },
+    ],
+  },
+  newZealand: {
+    label: "New Zealand",
+    authority: "CAA New Zealand",
+    terminology: "CAA New Zealand Part 61 licensing, medical certification, fit-and-proper requirements and NZ training market examples.",
+    caution: "Confirm requirements with CAA New Zealand, a medical examiner and your training organisation before committing to training.",
+    sources: [
+      { name: "CAA New Zealand" },
+      { name: "CAA New Zealand pilot licensing" },
+      { name: "CAA New Zealand medical certification" },
+    ],
+  },
+  southAfrica: {
+    label: "South Africa",
+    authority: "SACAA",
+    terminology: "SACAA licensing, aviation medicine, ATO requirements, South African currency and local airline/school examples.",
+    caution: "Confirm requirements with SACAA, an approved aviation medical examiner and your ATO because fees, medical standards and programme availability can change.",
+    sources: [
+      { name: "SACAA" },
+      { name: "SACAA licensing" },
+      { name: "SACAA aviation medicine" },
+    ],
+  },
+  uae: {
+    label: "United Arab Emirates",
+    authority: "GCAA",
+    terminology: "GCAA CAR-FCL/CAR-MED terminology, UAE Class 1 medical expectations and UAE airline/training academy examples.",
+    caution: "UAE airline cadet and training requirements change quickly. Confirm with GCAA, the training organisation and the airline before applying or paying deposits.",
+    sources: [
+      { name: "GCAA" },
+      { name: "GCAA CAR-FCL" },
+      { name: "GCAA CAR-MED" },
+      { name: "Emirates Flight Training Academy" },
+    ],
+  },
+};
+
+function inferGuideScope(title: string, canonical?: string, category?: string): GuideScope {
+  const text = `${title} ${canonical || ""} ${category || ""}`.toLowerCase();
+  if (text.includes("/us/") || text.includes(" usa") || text.includes("faa") || text.includes("atp") || text.includes("part 61") || text.includes("united aviate") || text.includes("delta propel")) return GUIDE_SCOPES.usa;
+  if (text.includes("canada") || text.includes("transport canada") || text.includes("tc ")) return GUIDE_SCOPES.canada;
+  if (text.includes("australia") || text.includes("casa") || text.includes("qantas") || text.includes("virgin australia") || text.includes("rex")) return GUIDE_SCOPES.australia;
+  if (text.includes("new zealand") || text.includes("nz ") || text.includes("air new zealand")) return GUIDE_SCOPES.newZealand;
+  if (text.includes("south africa") || text.includes("sacaa") || text.includes("/za/")) return GUIDE_SCOPES.southAfrica;
+  if (text.includes("uae") || text.includes("emirates") || text.includes("etihad") || text.includes("air arabia") || text.includes("gcaa")) return GUIDE_SCOPES.uae;
+  if (text.includes("easa") || text.includes("europe") || text.includes("lufthansa") || text.includes("air france") || text.includes("wizz")) return GUIDE_SCOPES.europe;
+  return GUIDE_SCOPES.uk;
+}
+
 export default function GuideLayout({
   title,
   subtitle,
@@ -218,6 +329,8 @@ export default function GuideLayout({
   scopeBanner,
   sources,
 }: GuideLayoutProps) {
+  const guideScope = inferGuideScope(title, canonical, category);
+  const reviewedSources = sources && sources.length > 0 ? sources : guideScope.sources;
   const schemas: object[] = [];
 
   if (faqSchema && faqSchema.length > 0) {
@@ -359,6 +472,28 @@ export default function GuideLayout({
                   <div className="mb-2">{scopeBanner}</div>
                 )}
 
+                <div
+                  className="rounded-2xl p-4 md:p-5 mb-6"
+                  style={{ background: "oklch(0.16 0.09 250)", border: "1px solid oklch(0.65 0.18 240 / 0.22)" }}
+                >
+                  <div className="flex flex-col gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "oklch(0.72 0.18 65)" }}>
+                        2026 scope
+                      </span>
+                      <span className="text-xs px-2 py-1 rounded-full" style={{ background: "oklch(0.45 0.18 240 / 0.15)", color: "oklch(0.75 0.18 240)" }}>
+                        {guideScope.label} · {guideScope.authority}
+                      </span>
+                      <span className="text-xs" style={{ color: "oklch(0.48 0.04 240)" }}>
+                        Last reviewed {lastUpdated}
+                      </span>
+                    </div>
+                    <p className="text-sm leading-relaxed" style={{ color: "oklch(0.72 0.04 240)" }}>
+                      This guide uses {guideScope.terminology} {guideScope.caution}
+                    </p>
+                  </div>
+                </div>
+
                 {/* Article content */}
                 <div
                   className="p-5 md:p-8 lg:p-10 rounded-2xl mb-6"
@@ -387,9 +522,7 @@ export default function GuideLayout({
                 </div>
 
                 {/* Sources box */}
-                {sources && sources.length > 0 && (
-                  <GuideSourcesBox sources={sources} lastReviewed={lastUpdated} />
-                )}
+                <GuideSourcesBox sources={reviewedSources} lastReviewed={lastUpdated} />
 
                 {/* Bottom CTA */}
                 <div

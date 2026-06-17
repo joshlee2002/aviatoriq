@@ -19,7 +19,7 @@ const CplGuideUK = () => {
         },
         {
           question: "Can I get a CPL without an Instrument Rating (IR)?",
-          answer: "Yes, it is possible to obtain a CPL without an Instrument Rating (IR). However, a CPL without an IR will limit your commercial flying privileges to Visual Flight Rules (VFR) conditions. Most commercial operations, especially those involving passenger or cargo transport, require the ability to fly under Instrument Flight Rules (IFR), which necessitates an IR. Therefore, while technically possible, obtaining an IR alongside or shortly after your CPL is highly recommended for broader career opportunities.",
+          answer: "Yes, it is possible to obtain a CPL without an Instrument Rating (IR). However, a CPL without an IR will limit your commercial flying privileges to Visual Flight Rules (VFR) conditions. Many commercial and airline-style roles require instrument privileges, so a CPL without an IR is much less flexible. Check the target job, aircraft and operation before deciding whether to delay the IR.",
         },
         {
           question: "What is the minimum age to get a CPL in the UK?",
@@ -27,7 +27,7 @@ const CplGuideUK = () => {
         },
         {
           question: "What is a Class 1 Medical Certificate and why do I need it?",
-          answer: "A Class 1 Medical Certificate is a higher standard of medical fitness required for commercial pilots. It ensures that you are medically fit to safely exercise the privileges of a commercial pilot licence. This certificate involves comprehensive medical examinations, including vision, hearing, cardiovascular health, and neurological assessments. It is mandatory for all CPL holders and must be maintained with regular renewals to keep your licence valid. ",
+          answer: "A Class 1 Medical Certificate is a higher standard of medical fitness required for commercial pilots. It ensures that you are medically fit to safely exercise the privileges of a commercial pilot licence. This certificate involves comprehensive medical examinations, including vision, hearing, cardiovascular health, and neurological assessments. It is required to exercise commercial pilot privileges and must be maintained with regular renewals to keep your licence valid.",
         },
       ]}
       readTime="15 min read"
@@ -99,7 +99,7 @@ const CplGuideUK = () => {
                 <li>Visual Flight Rules (VFR) Communications <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/"></Link></li>
               </ul>
               <p>
-                Many aspiring pilots opt to complete the 14 ATPL (Airline Transport Pilot Licence) theoretical exams instead of the 13 CPL exams. This is often done for career flexibility, as passing the ATPL theory exams is a prerequisite for a 'frozen ATPL,' which is generally required for airline pilot positions. The theoretical knowledge training for a CPL(A) integrated course requires at least 350 hours of instruction <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/"></Link>.
+                Many aspiring pilots opt to complete the current UK CAA ATPL (Airline Transport Pilot Licence) theoretical exams instead of the CPL theoretical knowledge exams. This is often done for career flexibility because ATPL theory credits are part of the airline/frozen-ATPL pathway. The theoretical knowledge training for a CPL(A) integrated course requires at least 350 hours of instruction <Link href="https://www.caa.co.uk/commercial-industry/pilot-licences/aeroplanes/commercial-pilot-licence-for-aeroplanes-guidance/"></Link>.
               </p>
               <h3>Skill Test</h3>
               <p>
@@ -121,7 +121,7 @@ const CplGuideUK = () => {
               </p>
               <h3>Modular Route</h3>
               <p>
-                The modular route offers greater flexibility, allowing you to complete each stage of your training independently and at your own pace. This typically involves obtaining a Private Pilot Licence (PPL), building flight hours, completing CPL theoretical knowledge exams, and then undertaking the CPL flight training and skill test. The modular approach is often more cost-effective as it allows students to spread out expenses and even work while training. It also provides the freedom to choose different flight schools for different modules, potentially optimizing for cost or specific training quality. However, it requires a high degree of self-discipline and motivation to manage the progression through various stages. The total time to complete a modular CPL can vary significantly, but it generally takes longer than an integrated course.
+                The modular route offers greater flexibility, allowing you to complete each stage of your training independently and at your own pace. This typically involves obtaining a Private Pilot Licence (PPL), building flight hours, completing CPL theoretical knowledge exams, and then undertaking the CPL flight training and skill test. The modular approach is often more cost-effective as it allows students to spread out expenses and even work while training. It also provides the freedom to choose different flight schools for different modules, potentially optimizing for cost or specific training quality. However, it requires a high degree of self-discipline and motivation to manage the progression through various stages. The total time to complete a modular CPL can vary significantly and may be faster or slower depending on funding, weather, aircraft availability and how consistently you train.
               </p>
             </>
           ),
@@ -181,7 +181,7 @@ const CplGuideUK = () => {
               </p>
               <h3>Frozen Airline Transport Pilot Licence (ATPL)</h3>
               <p>
-                A 'frozen ATPL' is not a licence in itself but a status. You achieve frozen ATPL status when you have successfully completed all 14 ATPL theoretical knowledge examinations, hold a valid CPL, and have an Instrument Rating (IR) and a Multi-Engine Rating (MER). This status indicates that you have met all the theoretical and practical requirements for an ATPL, except for the flight experience. To 'unfreeze' your ATPL and obtain the full licence, you need to accumulate 1,500 hours of flight time, including specific amounts of multi-pilot and multi-engine experience. Most aspiring airline pilots aim for a frozen ATPL, as it is the standard entry requirement for major airlines.
+                A 'frozen ATPL' is not a licence in itself but a status. You achieve frozen ATPL status when you have successfully completed the current UK CAA ATPL theoretical knowledge examinations, hold a valid CPL, and have an Instrument Rating (IR) and a Multi-Engine Rating (MER). This status indicates that you have met all the theoretical and practical requirements for an ATPL, except for the flight experience. To 'unfreeze' your ATPL and obtain the full licence, you need to meet the UK CAA flight-time, experience and skill-test requirements. Most aspiring airline pilots aim for frozen ATPL status because it is the normal entry point for many First Officer routes.
               </p>
             </>
           ),
@@ -286,7 +286,7 @@ const CplGuideUK = () => {
               </ul>
               <h3>Step 3: ATPL/CPL Theoretical Knowledge Examinations</h3>
               <p>
-                With sufficient flight experience gained, the next major step is to complete the theoretical knowledge training. While a CPL-specific theory course exists (13 subjects), most modular students opt for the 14 ATPL (Airline Transport Pilot Licence) subjects due to the career advantages of a frozen ATPL. This phase typically involves:
+                With sufficient flight experience gained, the next major step is to complete the theoretical knowledge training. While a CPL-specific theory course exists (13 subjects), many modular students opt for the current UK CAA ATPL (Airline Transport Pilot Licence) subjects due to the career advantages of a frozen ATPL. This phase typically involves:
               </p>
               <ul>
                 <li>
