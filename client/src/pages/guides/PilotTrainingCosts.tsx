@@ -1,7 +1,6 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
-import FlightSchoolFeesTable from "@/components/tables/FlightSchoolFeesTable";
 import VerifiedFeeTable from "@/components/tables/VerifiedFeeTable";
 import FinanceProvidersTable from "@/components/tables/FinanceProvidersTable";
 import UKCostStackDiagram from "@/components/diagrams/UKCostStackDiagram";
@@ -10,7 +9,7 @@ import UKCostStackDiagram from "@/components/diagrams/UKCostStackDiagram";
 const COST_SCENARIOS = [
   {
     route: "Integrated ATPL (UK school)",
-    trainingFee: "£90,000–£115,000",
+    trainingFee: "£90,000–£120,000 (only some fees publicly confirmed — verify directly)",
     livingCosts: "£15,000–£25,000",
     hiddenCosts: "£5,000–£10,000",
     typeRating: "£20,000–£30,000 (if self-funded)",
@@ -20,7 +19,7 @@ const COST_SCENARIOS = [
   },
   {
     route: "Modular ATPL (UK school, part-time)",
-    trainingFee: "£60,000–£80,000",
+    trainingFee: "£60,000–£70,000 typically (£80,000 high end — depends on school, pace, resits)",
     livingCosts: "Minimal (can work alongside)",
     hiddenCosts: "£5,000–£10,000",
     typeRating: "£20,000–£30,000 (if self-funded)",
@@ -89,8 +88,8 @@ export default function PilotTrainingCosts() {
         { name: "Lendwise", url: "https://lendwise.com/" },
       ]}
       faqSchema={[
-        { question: "How much does ATPL training cost in the UK in 2026?", answer: "Integrated ATPL training at UK schools typically costs £90,000–£115,000. Modular ATPL training typically costs £60,000–£80,000 spread over 2–4 years. These figures represent training fees only — living costs, medical fees, and type ratings (if not funded by an airline) are additional." },
-        { question: "What is the cheapest way to become a pilot in the UK?", answer: "The cheapest route to a UK commercial pilot licence is modular ATPL training, which can be completed for £60,000–£80,000 over 2–4 years. Overseas integrated training (e.g. in Poland or Spain) can also offer significant savings compared to UK-based integrated schools, though living abroad is required." },
+        { question: "How much does ATPL training cost in the UK in 2026?", answer: "Integrated ATPL training at UK schools typically costs £90,000–£120,000. The only publicly confirmed integrated ATPL fee as of June 2026 is Skyborne at £114,950 — other schools do not publish headline fees and require a direct quote. Modular ATPL training typically costs £60,000–£70,000, with some routes reaching around £80,000 depending on school, pace, resits, accommodation, and extras. These figures represent training fees only — living costs, medical fees, and type ratings (if not funded by an airline) are additional." },
+        { question: "What is the cheapest way to become a pilot in the UK?", answer: "The cheapest route to a UK commercial pilot licence is modular ATPL training, which typically costs £60,000–£70,000 over 2–4 years, with some routes reaching around £80,000 depending on school, pace, resits, accommodation, and extras. Overseas integrated training (e.g. in Poland or Spain) can also offer significant savings compared to UK-based integrated schools, though living abroad is required." },
         { question: "Is pilot training worth the debt?", answer: "For most people who complete training and secure an airline job, yes. UK airline First Officers typically earn £35,000–£60,000, rising significantly with seniority and command. However, the financial risk is substantial — there is no guarantee of employment after self-funded training, and loan repayments must be met regardless of employment status." },
         { question: "Can I get a loan for pilot training?", answer: "Yes, but options are limited. Specialist aviation loans (e.g. Lendwise) are available but assess future earnings potential. High street personal loans rarely cover the full cost. Student loans are only available for specific university-linked degree routes (e.g. Skyborne/UWL). Always compare multiple providers." },
         { question: "What are the hidden costs of pilot training?", answer: "Beyond tuition, budget for: Class 1 Medical (£950–£1,400 initial at an AeMC), ATPL exam fees (£1,000–£1,500), equipment/headset (£500–£1,000), living costs during training (£12,000–£25,000+), exam resit fees, and potentially a type rating (£20,000–£30,000) if not funded by an airline." },
@@ -119,7 +118,7 @@ export default function PilotTrainingCosts() {
               </p>
               <img src="/manus-storage/training-finance-loan_7be38da5.jpg" alt="Pilot training finance and loans" className="w-full rounded-xl my-4 object-cover" style={{ maxHeight: "320px" }} />
               <p>
-                The headline figures are well-known: integrated ATPL training at a UK school typically costs £90,000–£115,000; modular ATPL training typically costs £60,000–£80,000. But these figures represent training fees only. The true total cost of becoming a UK airline pilot — including living costs, medical fees, equipment, exam fees, and the type rating — is often significantly higher.
+                The headline figures are well-known: integrated ATPL training at a UK school typically costs £90,000–£120,000 (though only Skyborne publishes a confirmed fee of £114,950 — other schools require a direct quote); modular ATPL training typically costs £60,000–£70,000, with some routes reaching around £80,000. But these figures represent training fees only. The true total cost of becoming a UK airline pilot — including living costs, medical fees, equipment, exam fees, and the type rating — is often significantly higher.
               </p>
               <p>
                 There is also a third option that most UK guides underreport: overseas integrated training. Some overseas schools offer lower-cost EASA or UK-linked training routes, but you must verify the exact approval, licence outcome, conversion implications, and airline acceptance before enrolling.
@@ -313,13 +312,13 @@ export default function PilotTrainingCosts() {
           content: (
             <>
               <p>
-                Securing £80,000–£130,000 for training is a major challenge. The following table outlines the verified finance providers operating in the UK market in 2026, with representative APR, eligibility notes, and source links.
+                Securing £60,000–£130,000 for training is a major challenge. The following table outlines the verified finance providers operating in the UK market in 2026, with representative APR, eligibility notes, and source links.
               </p>
               <FinanceProvidersTable country="UK" className="my-6" />
               <div className="p-4 rounded-xl my-4" style={{ background: "oklch(0.65 0.18 30 / 0.1)", border: "1px solid oklch(0.65 0.18 30 / 0.25)" }}>
                 <p className="text-sm font-semibold mb-2" style={{ color: "oklch(0.8 0.15 50)" }}>Risk Warning</p>
                 <p className="text-sm" style={{ color: "oklch(0.7 0.04 240)" }}>
-                  <strong className="text-white">Never borrow more than you can realistically repay if you do not secure a flying job immediately.</strong> The financial risk of self-funded training sits entirely with you. There is no guarantee of employment after completing training. Loan repayments must be met regardless of your employment status. At Lendwise's representative APR of 13.96%, a £100,000 loan over 10 years costs approximately £1,653 per month — roughly 48–57% of a new First Officer's net take-home pay.
+                  <strong className="text-white">Never borrow more than you can realistically repay if you do not secure a flying job immediately.</strong> The financial risk of self-funded training sits entirely with you. There is no guarantee of employment after completing training. Loan repayments must be met regardless of your employment status. At Lendwise's representative APR of 13.96%, a £100,000 loan over 10 years costs approximately £1,597 per month — roughly 47–55% of a new First Officer's net take-home pay (see our <Link href="/guides/pilot-training-finance-2026" className="underline" style={{ color: "oklch(0.72 0.18 240)" }}>Finance Guide</Link> for the full repayment breakdown).
                 </p>
               </div>
               <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>

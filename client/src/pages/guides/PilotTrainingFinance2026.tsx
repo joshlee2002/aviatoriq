@@ -1,7 +1,6 @@
 import GuideLayout from "@/components/GuideLayout";
 import { Link } from "wouter";
 import GuideScopeBanner from "@/components/GuideScopeBanner";
-import FinanceProvidersTable from "@/components/tables/FinanceProvidersTable";
 import FinanceProviderTable from "@/components/tables/FinanceProviderTable";
 
 // ── Repayment scenarios at 13.96% representative APR ─────────────────────────
