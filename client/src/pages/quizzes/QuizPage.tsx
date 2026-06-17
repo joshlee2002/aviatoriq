@@ -341,53 +341,79 @@ function ResultCard({
       <div className="w-full max-w-lg">
         {/* Score ring (for scored quizzes) */}
         {pct !== null && (
-          <div className="flex justify-center mb-8">
-            <div className="relative w-28 h-28">
-              <svg className="w-full h-full -rotate-90" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="8" />
+          <div className="flex flex-col items-center mb-8">
+            <div className="relative w-40 h-40">
+              {/* Outer glow */}
+              <div
+                className="absolute inset-0 rounded-full blur-xl opacity-20"
+                style={{ background: result.color }}
+              />
+              <svg className="w-full h-full -rotate-90 relative" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="7" />
                 <circle
                   cx="50" cy="50" r="42" fill="none"
                   stroke={result.color}
-                  strokeWidth="8"
+                  strokeWidth="7"
                   strokeLinecap="round"
                   strokeDasharray={`${2 * Math.PI * 42}`}
                   strokeDashoffset={`${2 * Math.PI * 42 * (1 - pct / 100)}`}
-                  style={{ transition: "stroke-dashoffset 1s ease-out" }}
+                  style={{ transition: "stroke-dashoffset 1.2s cubic-bezier(0.23,1,0.32,1)", filter: `drop-shadow(0 0 6px ${result.color})` }}
                 />
               </svg>
               <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <span className="text-white font-display font-bold text-2xl">{score}</span>
-                <span className="text-white/50 text-xs">/ {total}</span>
+                <span className="font-display font-bold text-4xl leading-none" style={{ color: result.color }}>{score}</span>
+                <span className="text-white/40 text-xs mt-1">/ {total}</span>
               </div>
             </div>
+            <p className="text-white/35 text-xs uppercase tracking-widest mt-3 font-semibold">{quiz.title}</p>
           </div>
         )}
 
-        {/* Emoji */}
+        {/* Emoji (personality / diagnostic quizzes) */}
         {pct === null && (
-          <div className="text-center text-6xl mb-6 animate-bounce-once">{result.emoji}</div>
+          <div className="flex flex-col items-center mb-6">
+            <div
+              className="w-24 h-24 rounded-3xl flex items-center justify-center text-5xl mb-3"
+              style={{ background: `${result.color}18`, border: `1px solid ${result.color}30` }}
+            >
+              {result.emoji}
+            </div>
+            <p className="text-white/35 text-xs uppercase tracking-widest font-semibold">{quiz.title}</p>
+          </div>
         )}
 
         {/* Badge */}
         {result.badge && (
           <div className="flex justify-center mb-3">
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-white/10 text-white/70 border border-white/15">
+            <span
+              className="text-xs font-bold px-3 py-1 rounded-full"
+              style={{ background: `${result.color}20`, color: result.color, border: `1px solid ${result.color}35` }}
+            >
               {result.badge}
             </span>
           </div>
         )}
 
         {/* Title */}
-        <h1 className="text-3xl md:text-4xl font-display font-bold text-white text-center mb-2">
+        <h1
+          className="text-4xl md:text-5xl font-display font-bold text-center mb-2 leading-tight"
+          style={{ color: result.color }}
+        >
           {result.title}
         </h1>
-        <p className="text-center mb-6" style={{ color: result.color }}>
+        <p className="text-center text-white/60 mb-6 text-sm">
           {result.subtitle}
         </p>
 
         {/* Description */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-6">
-          <p className="text-white/75 text-sm leading-relaxed">{result.description}</p>
+        <div
+          className="rounded-2xl p-6 mb-6"
+          style={{
+            background: `linear-gradient(135deg, ${result.color}10, ${result.color}06)`,
+            border: `1px solid ${result.color}28`,
+          }}
+        >
+          <p className="text-white/80 text-sm leading-relaxed">{result.description}</p>
         </div>
 
         {/* Actions */}
