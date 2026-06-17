@@ -1,4 +1,5 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
+import { trpc } from "@/lib/trpc";
 import { useRoute, Link } from "wouter";
 import {
   getQuizBySlug,
@@ -19,6 +20,7 @@ import {
   RotateCcw,
   ChevronLeft,
   Plane,
+  Mail,
 } from "lucide-react";
 
 // ─── Helpers ─────────────────────────────────────────────────────────────
@@ -163,6 +165,82 @@ function OptionButton({
   );
 }
 
+// ─── Quiz Email Capture Card ─────────────────────────────────────────────
+
+function QuizEmailCapture({ quizSlug }: { quizSlug: string }) {
+  const [email, setEmail] = useState("");
+  const [consent, setConsent] = useState(false);
+  const [error, setError] = useState("");
+
+  const subscribe = trpc.guides.subscribe.useMutation();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+    subscribe.mutate({ email, source: `quiz_result:${quizSlug}` });
+  };
+
+  if (subscribe.isSuccess) {
+    return (
+      <div className="mt-6 rounded-2xl p-5 flex items-center gap-4" style={{ background: "oklch(0.18 0.06 145 / 0.25)", border: "1px solid oklch(0.55 0.18 145 / 0.35)" }}>
+        <CheckCircle2 className="w-6 h-6 shrink-0" style={{ color: "oklch(0.72 0.18 145)" }} />
+        <div>
+          <p className="font-bold text-white text-sm">You're on the list.</p>
+          <p className="text-xs" style={{ color: "oklch(0.6 0.04 240)" }}>We'll send you pilot training insights and tool updates — no spam, unsubscribe any time.</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-6 rounded-2xl p-5" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.1)" }}>
+      <div className="flex items-start gap-3 mb-4">
+        <div className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style={{ background: "oklch(0.72 0.18 65 / 0.15)" }}>
+          <Mail className="w-4 h-4" style={{ color: "oklch(0.72 0.18 65)" }} />
+        </div>
+        <div>
+          <p className="font-bold text-white text-sm">Get your personalised pilot training guide</p>
+          <p className="text-xs mt-0.5" style={{ color: "oklch(0.55 0.04 240)" }}>Join 4,000+ aspiring pilots. Monthly insights, tool updates, no spam.</p>
+        </div>
+      </div>
+      <form onSubmit={handleSubmit} className="space-y-2.5">
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Your email address"
+          className="w-full px-4 py-2.5 rounded-xl text-white text-sm placeholder-white/30 focus:outline-none transition-colors"
+          style={{ background: "oklch(1 0 0 / 0.07)", border: "1px solid oklch(1 0 0 / 0.15)" }}
+        />
+        {error && <p className="text-red-400 text-xs">{error}</p>}
+        <label className="flex items-start gap-2 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={consent}
+            onChange={(e) => setConsent(e.target.checked)}
+            className="mt-0.5"
+          />
+          <span className="text-xs leading-relaxed" style={{ color: "oklch(0.5 0.03 240)" }}>
+            I'm happy to hear from AviatorIQ about pilot training options and matched flight schools.
+          </span>
+        </label>
+        <button
+          type="submit"
+          disabled={subscribe.isPending || !consent}
+          className="w-full py-2.5 rounded-xl font-bold text-sm transition-all disabled:opacity-50"
+          style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.62 0.2 45))", color: "oklch(0.12 0.04 250)" }}
+        >
+          {subscribe.isPending ? "Sending…" : "Send me the guide"}
+        </button>
+      </form>
+    </div>
+  );
+}
+
 // ─── Result Card ──────────────────────────────────────────────────────────
 
 function ResultCard({
@@ -283,6 +361,9 @@ function ResultCard({
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
+
+        {/* Email capture */}
+        <QuizEmailCapture quizSlug={quiz.slug} />
 
         {/* More quizzes */}
         <div className="mt-4 text-center">

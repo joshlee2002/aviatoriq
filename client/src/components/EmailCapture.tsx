@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Mail, CheckCircle, ArrowRight } from "lucide-react";
+import { trpc } from "@/lib/trpc";
 
 interface EmailCaptureProps {
   /** Where this capture is shown — used for analytics tracking */
@@ -22,9 +23,13 @@ export default function EmailCapture({
   variant = "card",
 }: EmailCaptureProps) {
   const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  const subscribe = trpc.guides.subscribe.useMutation({
+    onError: () => {
+      setError("Something went wrong. Please try again.");
+    },
+  });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,28 +37,18 @@ export default function EmailCapture({
       setError("Please enter a valid email address.");
       return;
     }
-    setLoading(true);
     setError("");
 
-    // Track the signup event if PostHog is available
+    // Fire PostHog event if available
     if (typeof window !== "undefined" && (window as any).posthog) {
       (window as any).posthog.capture("email_signup", { source, email });
     }
 
-    // Store in localStorage as a lightweight solution (no backend required)
-    try {
-      const existing = JSON.parse(localStorage.getItem("aviatoriq_signups") || "[]");
-      existing.push({ email, source, timestamp: new Date().toISOString() });
-      localStorage.setItem("aviatoriq_signups", JSON.stringify(existing));
-    } catch (_) {
-      // Silently fail if localStorage is unavailable
-    }
-
-    // Simulate a brief loading state for UX
-    await new Promise((r) => setTimeout(r, 600));
-    setLoading(false);
-    setSubmitted(true);
+    subscribe.mutate({ email, source });
   };
+
+  const loading = subscribe.isPending;
+  const submitted = subscribe.isSuccess;
 
   if (submitted) {
     return (
