@@ -47,6 +47,10 @@ import {
 } from "./db";
 import { nanoid } from "nanoid";
 import Stripe from "stripe";
+import { sendEmail } from "./_core/email";
+import WelcomeBlueprint from "./emails/WelcomeBlueprint";
+import IntroductionConfirmation from "./emails/IntroductionConfirmation";
+import * as React from "react";
 import {
   createRoadmapPurchase,
   completeRoadmapPurchase,
@@ -317,6 +321,21 @@ AviatorIQ Score: ${score}/100 (${category})`;
             console.warn("[Notification] Owner notify failed:", e);
           }
         }
+
+        // Send welcome email (non-blocking, fire-and-forget)
+        sendEmail({
+          to: input.email,
+          subject: `Your AviatorIQ Blueprint is ready, ${input.fullName.split(" ")[0]}`,
+          react: React.createElement(WelcomeBlueprint, {
+            firstName: input.fullName.split(" ")[0],
+            score,
+            category: category as "Hot" | "Warm" | "Cold",
+            resultsUrl: `${
+              process.env.APP_URL ??
+              "https://aviatoriq-production.up.railway.app"
+            }/results/${leadId}`,
+          }),
+        }).catch(e => console.warn("[Email] Welcome email failed (non-fatal):", e));
 
         // Match schools
         const matchedSchools = await matchSchoolsForLead({
@@ -977,7 +996,7 @@ IMPORTANT: The monthlyTimeline must be tailored to their specific route and coun
           results.push({ id, schoolName: school.name });
         }
 
-        // Notify owner
+                // Notify owner
         try {
           await notifyOwner({
             title: `🏫 Introduction Request: ${lead.fullName}`,
@@ -986,7 +1005,24 @@ IMPORTANT: The monthlyTimeline must be tailored to their specific route and coun
         } catch (e) {
           console.warn("[Notification] Introduction request notify failed:", e);
         }
-
+        // Send introduction confirmation email to the user (non-fatal)
+        if (lead.email) {
+          sendEmail({
+            to: lead.email,
+            subject: `Your introduction request has been sent to ${results.length} school${results.length !== 1 ? "s" : ""}`,
+            react: React.createElement(IntroductionConfirmation, {
+              firstName: lead.fullName?.split(" ")[0] ?? "there",
+              schools: results.map(r => ({
+                name: r.schoolName,
+                country: lead.country ?? "Unknown",
+              })),
+              resultsUrl: `${
+                process.env.APP_URL ??
+                "https://aviatoriq-production.up.railway.app"
+              }/results/${lead.id}`,
+            }),
+          }).catch(e => console.warn("[Email] Introduction confirmation email failed (non-fatal):", e));
+        }
         return { success: true, count: results.length, schools: results };
       }),
 

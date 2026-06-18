@@ -14,7 +14,10 @@ import { seoInjectorMiddleware } from "../seoInjector";
 import { registerSitemapRoute } from "../sitemapGenerator";
 import { validateEnv } from "./envValidation";
 import Stripe from "stripe";
-import { completeRoadmapPurchase } from "../db";
+import { completeRoadmapPurchase, getLeadById } from "../db";
+import { sendEmail } from "./email";
+import PremiumRoadmapUnlocked from "../emails/PremiumRoadmapUnlocked";
+import * as React from "react";
 
 // ─── Startup env validation ────────────────────────────────────────────────────
 validateEnv();
@@ -82,6 +85,34 @@ async function startServer() {
             console.log(
               `[Stripe] Premium roadmap unlocked for session ${session.id}`
             );
+            // ── Send post-payment confirmation email (non-fatal) ──────────
+            try {
+              const leadId = session.metadata?.leadId
+                ? Number(session.metadata.leadId)
+                : null;
+              if (leadId) {
+                const lead = await getLeadById(leadId);
+                if (lead?.email) {
+                  const firstName = lead.fullName?.split(" ")[0] ?? "there";
+                  const appUrl =
+                    process.env.APP_URL ??
+                    "https://aviatoriq-production.up.railway.app";
+                  const resultsUrl = `${appUrl}/results/${lead.id}`;
+                  await sendEmail({
+                    to: lead.email,
+                    subject: "Your Premium AviatorIQ Roadmap is unlocked \uD83C\uDF89",
+                    react: React.createElement(PremiumRoadmapUnlocked, {
+                      firstName,
+                      resultsUrl,
+                      pdfUrl: lead.pdfKey ?? null,
+                      leadId: lead.id,
+                    }),
+                  });
+                }
+              }
+            } catch (emailErr) {
+              console.warn("[Email] Post-payment email failed (non-fatal):", emailErr);
+            }
           } catch (e) {
             console.error("[Stripe] Failed to complete purchase:", e);
           }
