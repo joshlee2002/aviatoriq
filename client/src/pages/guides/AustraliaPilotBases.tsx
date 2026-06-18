@@ -14,8 +14,8 @@ export default function AustraliaPilotBases() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-bases"
       metaDescription="Explore Australia's key pilot bases, understand CASA regulations, training costs, and career prospects for pilots in 2026. Your essential guide to aviation i..."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to Australian Pilot Bases",

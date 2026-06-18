@@ -14,8 +14,8 @@ export default function CanadaPilotCommuting() {
       category="Pilot Lifestyle"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-commuting"
       metaDescription="Comprehensive guide for Canadian pilots on commuting, covering Transport Canada regulations, major airline policies, costs, and strategies for a successful career."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "The Reality of Pilot Commuting in Canada",

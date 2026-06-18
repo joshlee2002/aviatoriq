@@ -14,8 +14,8 @@ export default function SouthAfricaMilitaryToAirlines() {
       category="Career Transition"
       canonical="https://aviatoriq.com/south-africa/guides/military-to-airlines"
       metaDescription="A detailed guide for South African Air Force (SAAF) pilots transitioning to commercial airlines, covering SACAA regulations, training costs, and career prosp..."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "1. Introduction: The Call to Commercial Aviation",

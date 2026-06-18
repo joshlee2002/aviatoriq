@@ -12,8 +12,8 @@ export default function PilotCvGuide() {
       readTime="7 min read"
       heroImage="/manus-storage/pilot-cv_e66193e2.jpg"
       lastUpdated="June 2026"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       faqSchema={[
         {
           question: "What should a pilot CV include?",

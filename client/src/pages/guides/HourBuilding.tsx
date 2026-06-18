@@ -12,8 +12,8 @@ export default function HourBuilding() {
       readTime="11 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/hour-building_4e2d1a8c.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       scopeBanner={
         <GuideScopeBanner
           scope="This guide covers hour building strategies for UK/EASA pilots (CPL prerequisites, popular locations from the UK)."

@@ -14,8 +14,8 @@ export default function EuropeMilitaryToAirlines() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/europe/guides/military-to-airlines"
       metaDescription="Detailed guide for military pilots transitioning to European airlines. Covers EASA ATPL conversion, regulations, costs, and job prospects in 2026."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction: Your Path to European Commercial Aviation",

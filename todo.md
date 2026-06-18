@@ -386,3 +386,54 @@
 - [ ] Week 3: School matching scoring overhaul — score by country, route, budget, finance need, start timeline, medical readiness, relocation
 - [ ] Week 3: Partner lead sample card in admin
 - [ ] Week 4: Admin lead quality fields, finance/medical referral capture with consent
+
+## Phase 26 – Week 2: Core Funnel Clarity + Lead Tags + CTA Audit
+
+### Lead Tags (DB + Scoring + Admin + Export)
+- [x] `drizzle/schema.ts` — added `leadTags varchar(255)` column to the `leads` table
+- [x] `drizzle/0013_lead_tags.sql` — migration file (runs automatically on Railway deploy)
+- [x] `server/scoring.ts` — added `leadTags`, `strongestAsset`, `fundingGap` to `ScoreResult` and computed them in `scoreLead()`:
+  - `school-ready`: finance ≥ 70 AND readiness ≥ 70
+  - `finance-ready`: has a funding method AND budget ≥ £30k/€35k/$40k/A$50k
+  - `medical-risk`: class1Medical is "No" or "Not sure"
+  - `cadet-suitable`: airline goal + high budget + age ≤ 36
+  - `hot`/`warm`/`cold`: mirrors the lead category
+  - `strongestAsset`: highest-scoring dimension with a human-readable label
+  - `fundingGap`: estimated gap between budget and training cost (or null if budget covers it)
+- [x] `server/routers.ts` — `leads.submit` saves `leadTags` to DB and returns `strongestAsset` + `fundingGap`
+- [x] `client/src/pages/AdminDashboard.tsx` — lead table rows and detail modal show colour-coded tag badges
+- [x] `client/src/pages/AdminDashboard.tsx` — CSV export includes: Lead Tags, Intent Score, Biggest Concern, Funding Method, Class 1 Medical, Wants Finance Info, Start Timeframe
+
+### Free Results Page Improvements
+- [x] `client/src/pages/Results.tsx` — three new cards visible WITHOUT premium:
+  - **Funding Gap** (amber) — estimated shortfall with link to finance calculator
+  - **Strongest Asset** (green) — what's working in the user's favour
+  - **Your Next Step** (blue) — single most important next action
+- [x] `client/src/pages/Results.tsx` — Medical Risk Warning banner (visible without premium) when `medical-risk` tag is present
+
+### CTA Audit — 47 guide pages fixed
+- [x] Fixed wrong `/us/roadmap` on 5 non-US regional airline guides → `/roadmap`
+- [x] Fixed generic `/quiz` on 20 lifestyle/career/shortage guides → `/roadmap`
+- [x] Fixed 20 training route/career decision guides → `/roadmap`
+- [x] Fixed 6 licence requirement guides → `/roadmap`
+- [x] Fixed PilotCvGuide → `/roadmap`
+- [x] Kept `/quiz` for: AirlineInterview, PilotAptitudeTest, PilotAptitudeTestPrep (quiz is appropriate)
+
+### Quality Gates
+- `pnpm check`: ✅ zero TypeScript errors
+- `pnpm test`: ✅ 152 tests pass (9 test files)
+
+### Files changed
+- `drizzle/schema.ts` (leadTags column added)
+- `drizzle/0013_lead_tags.sql` (new migration)
+- `server/scoring.ts` (leadTags, strongestAsset, fundingGap added)
+- `server/routers.ts` (leadTags saved to DB; strongestAsset + fundingGap returned)
+- `client/src/pages/AdminDashboard.tsx` (tag badges, CSV export columns)
+- `client/src/pages/Results.tsx` (funding gap, strongest asset, next step, medical risk cards)
+- 47 guide pages (CTA href + text updated)
+
+### Still to do (Week 3–4)
+- [ ] Week 3: Cost calculator rebuild — low/typical/high ranges by country/route, hidden costs, assumptions, last-updated date
+- [ ] Week 3: School matching scoring overhaul — score by country, route, budget, finance need, start timeline, medical readiness, relocation
+- [ ] Week 3: Partner lead sample card in admin
+- [ ] Week 4: Admin lead quality fields, finance/medical referral capture with consent

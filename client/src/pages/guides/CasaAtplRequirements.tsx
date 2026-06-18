@@ -13,8 +13,8 @@ export default function CasaAtplRequirements() {
       category="Pilot Licences"
       canonical="https://aviatoriq.com/australia/guides/casa-atpl-requirements"
       metaDescription="Detailed guide to CASA ATPL requirements for 2026, covering eligibility, exams, flight hours, costs, and career opportunities in Australia."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to the CASA ATPL",

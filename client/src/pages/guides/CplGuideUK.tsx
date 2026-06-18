@@ -39,8 +39,8 @@ const CplGuideUK = () => {
       readTime="15 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/cpl-guide_9dea1e2a.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       sections={[
         {
           heading: "Introduction to the Commercial Pilot Licence (CPL) UK",

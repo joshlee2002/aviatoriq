@@ -14,8 +14,8 @@ export default function SouthAfricaPilotShortage() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/south-africa/guides/south-africa-pilot-shortage"
       metaDescription="Explore the South African pilot training landscape in 2026, including the nuanced pilot shortage, SACAA regulations, and detailed cost breakdowns."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading:

@@ -67,6 +67,8 @@ export const leads = mysqlTable("leads", {
     .notNull(),
   intentScore: int("intentScore").default(0).notNull(),
   pdfKey: varchar("pdfKey", { length: 500 }),
+  // Comma-separated lead quality tags: school-ready, finance-ready, medical-risk, cadet-suitable, hot, warm, cold
+  leadTags: varchar("leadTags", { length: 500 }),
   status: mysqlEnum("status", [
     "New",
     "Reviewed",

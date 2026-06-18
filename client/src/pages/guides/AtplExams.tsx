@@ -12,8 +12,8 @@ export default function AtplExams() {
       readTime="12 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/atpl-exams_5e2d1a8c.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       scopeBanner={
         <GuideScopeBanner
           scope="This guide covers the 13 ATPL theory exams under UK CAA/EASA regulations. The FAA has a different exam structure."

@@ -15,7 +15,7 @@ export default function CanadaRegionalAirlines() {
       canonical="https://aviatoriq.com/canada/guides/canada-regional-airlines"
       metaDescription="Explore the pathway to becoming a regional airline pilot in Canada, covering Transport Canada regulations, training costs, and career opportunities with majo..."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/us/roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to Canada's Regional Airline Sector",

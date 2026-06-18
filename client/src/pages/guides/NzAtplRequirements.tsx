@@ -14,8 +14,8 @@ export default function NzAtplRequirements() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/nz-atpl-requirements"
       metaDescription="A comprehensive guide to New Zealand ATPL requirements for 2026, detailing CAA NZ regulations, flight hours, costs, and career pathways for aspiring airline pilots."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to the New Zealand ATPL",

@@ -39,8 +39,8 @@ const InstrumentRatingUK = () => {
       readTime="15 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/instrument-rating_da56b64b.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       sections={[
         {
           heading: "Introduction to Instrument Rating (IR) in the UK",

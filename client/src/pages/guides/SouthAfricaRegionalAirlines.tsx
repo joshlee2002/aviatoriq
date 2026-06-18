@@ -15,7 +15,7 @@ export default function SouthAfricaRegionalAirlines() {
       canonical="https://aviatoriq.com/south-africa/guides/south-africa-regional-airlines-pilot-training"
       metaDescription="A detailed guide for aspiring pilots in South Africa, covering SACAA regulations, training costs, regional airline career paths, and essential insights for 2026."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/us/roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to South Africa's Regional Aviation Landscape",

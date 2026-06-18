@@ -14,8 +14,8 @@ export default function AustraliaPilotSeniority() {
       category="Career Progression"
       canonical="https://aviatoriq.com/australia/guides/pilot-seniority"
       metaDescription="Discover how pilot seniority works in Australia in 2026. Learn how it impacts your salary, aircraft type, base assignment, and career progression at major airlines."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to Pilot Seniority",

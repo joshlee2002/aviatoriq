@@ -39,8 +39,8 @@ const PplGuideUK = () => {
       readTime="15 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/ppl-guide_ba765335.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       sections={[
         {
           heading: "Understanding the UK Private Pilot Licence (PPL)",

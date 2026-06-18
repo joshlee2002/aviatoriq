@@ -264,6 +264,7 @@ AviatorIQ Score: ${score}/100 (${category})`;
             leadCategory: category,
             leadValue,
             intentScore,
+            leadTags: scoreResult.leadTags.join(","),
             status: "New",
           });
         } catch (dbErr) {
@@ -362,14 +363,16 @@ AviatorIQ Score: ${score}/100 (${category})`;
           matchedSchools,
           dimensions: scoreResult.dimensions,
           labels: scoreResult.labels,
-          nextAction: scoreResult.nextAction,
+                    nextAction: scoreResult.nextAction,
           biggestRisk: scoreResult.biggestRisk,
           estimatedCostRange: scoreResult.estimatedCostRange,
           estimatedTimeline: scoreResult.estimatedTimeline,
           recommendedRoute: scoreResult.recommendedRoute,
+          strongestAsset: scoreResult.strongestAsset,
+          fundingGap: scoreResult.fundingGap,
+          leadTags: scoreResult.leadTags,
         };
       }),
-
     getResult: publicProcedure
       .input(z.object({ leadId: z.number() }))
       .query(async ({ input }) => {

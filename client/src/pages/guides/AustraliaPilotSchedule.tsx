@@ -14,8 +14,8 @@ export default function AustraliaPilotSchedule() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/australia-pilot-schedule"
       metaDescription="Comprehensive guide for aspiring pilots in Australia, covering 2026 CASA regulations, license requirements, detailed costs in AUD, and career pathways."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to Pilot Training in Australia",

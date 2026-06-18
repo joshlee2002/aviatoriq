@@ -13,8 +13,8 @@ export default function PilotTrainingOver40() {
       lastUpdated="June 2026"
       category="UK Pilot Careers"
       heroImage="/manus-storage/pilot-over-40_9d4c2b8e.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       scopeBanner={
         <GuideScopeBanner
           scope="Medical requirements and career runway figures in this guide are based on UK/CAA and EASA regulations."

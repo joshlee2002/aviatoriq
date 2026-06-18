@@ -14,8 +14,8 @@ export default function CanadaPilotSeniority() {
       category="Career Progression"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-seniority"
       metaDescription="Explore the Canadian pilot seniority system, its mechanics, impact on airline careers, and how to navigate career progression in 2026."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading:

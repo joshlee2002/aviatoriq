@@ -12,8 +12,8 @@ export default function PilotShortageUK() {
       readTime="10 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-shortage_9d4c2b8e.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       scopeBanner={
         <GuideScopeBanner
           scope="This guide covers the pilot shortage in the UK specifically."

@@ -12,8 +12,8 @@ export default function RAFvsCivilian() {
       readTime="11 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/raf-vs-civilian_9d4c2b8e.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       scopeBanner={
         <GuideScopeBanner scope="This guide compares RAF military training with UK civilian pilot training. Relevant to UK readers only." />
       }

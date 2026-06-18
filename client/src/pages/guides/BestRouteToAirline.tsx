@@ -34,8 +34,8 @@ const BestRouteToAirline = () => {
       readTime="9 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/best-route-airline_3c8e2f1a.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       sections={[
         {
           heading: "Introduction: Navigating Your Path to the Flight Deck",

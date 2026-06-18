@@ -564,6 +564,15 @@ export default function Results() {
   const recommendedRoute = (
     activeResult as unknown as { recommendedRoute?: string }
   ).recommendedRoute;
+  const fundingGap = (
+    activeResult as unknown as { fundingGap?: string | null }
+  ).fundingGap;
+  const strongestAsset = (
+    activeResult as unknown as { strongestAsset?: string }
+  ).strongestAsset;
+  const leadTags: string[] = (
+    (activeResult as unknown as { leadTags?: string[] }).leadTags ?? []
+  );
 
   const isGenerating = roadmapMutation.isPending || (!roadmap && !roadmapError);
 
@@ -926,6 +935,91 @@ export default function Results() {
                     </p>
                   </div>
                 ))}
+            </div>
+          )}
+
+          {/* ── Funding Gap + Strongest Asset + Next Action ── */}
+          {(fundingGap || strongestAsset || nextAction) && (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 animate-fade-in-up">
+              {fundingGap && (
+                <div
+                  className="rounded-xl p-4"
+                  style={{
+                    background: "oklch(0.55 0.18 25 / 0.08)",
+                    border: "1px solid oklch(0.55 0.18 25 / 0.25)",
+                  }}
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <Banknote className="w-4 h-4" style={{ color: "oklch(0.65 0.18 25)" }} />
+                    <p className="text-xs font-semibold" style={{ color: "oklch(0.65 0.18 25)" }}>Funding Gap</p>
+                  </div>
+                  <p className="text-sm font-bold text-white leading-tight">{fundingGap}</p>
+                  <a
+                    href="/tools/finance-calculator"
+                    className="inline-block mt-2 text-xs font-semibold underline"
+                    style={{ color: "oklch(0.65 0.18 25)" }}
+                  >
+                    Explore finance options →
+                  </a>
+                </div>
+              )}
+              {strongestAsset && (
+                <div
+                  className="rounded-xl p-4"
+                  style={{
+                    background: "oklch(0.45 0.18 145 / 0.08)",
+                    border: "1px solid oklch(0.45 0.18 145 / 0.25)",
+                  }}
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <CheckCircle2 className="w-4 h-4" style={{ color: "oklch(0.65 0.18 145)" }} />
+                    <p className="text-xs font-semibold" style={{ color: "oklch(0.65 0.18 145)" }}>Strongest Asset</p>
+                  </div>
+                  <p className="text-sm font-bold text-white leading-tight">{strongestAsset}</p>
+                </div>
+              )}
+              {nextAction && (
+                <div
+                  className="rounded-xl p-4"
+                  style={{
+                    background: "oklch(0.55 0.18 240 / 0.08)",
+                    border: "1px solid oklch(0.55 0.18 240 / 0.25)",
+                  }}
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <ArrowRight className="w-4 h-4" style={{ color: "oklch(0.65 0.18 240)" }} />
+                    <p className="text-xs font-semibold" style={{ color: "oklch(0.65 0.18 240)" }}>Your Next Step</p>
+                  </div>
+                  <p className="text-sm font-bold text-white leading-tight">{nextAction}</p>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* ── Medical Risk Warning ── */}
+          {leadTags.includes("medical-risk") && (
+            <div
+              className="rounded-xl p-4 animate-fade-in-up flex items-start gap-3"
+              style={{
+                background: "oklch(0.55 0.18 25 / 0.06)",
+                border: "1px solid oklch(0.55 0.18 25 / 0.3)",
+              }}
+            >
+              <AlertTriangle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: "oklch(0.65 0.18 25)" }} />
+              <div>
+                <p className="text-sm font-bold text-white mb-1">Medical Clearance — Action Required</p>
+                <p className="text-xs leading-relaxed" style={{ color: "oklch(0.65 0 0)" }}>
+                  Your answers suggest a potential medical concern. A Class 1 Medical is required before you can fly commercially.
+                  Book an initial assessment with an Aviation Medical Examiner early — most concerns are resolvable.
+                </p>
+                <a
+                  href="/tools/class-1-medical-check"
+                  className="inline-block mt-2 text-xs font-semibold underline"
+                  style={{ color: "oklch(0.65 0.18 25)" }}
+                >
+                  Check your medical eligibility →
+                </a>
+              </div>
             </div>
           )}
 

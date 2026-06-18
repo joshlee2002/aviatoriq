@@ -15,8 +15,8 @@ export default function HowToBecomePilotUS() {
       authorRole="Founder, AviatorIQ"
       lastUpdated="June 2026"
       category="US Pilot Careers"
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       scopeBanner={
         <GuideScopeBanner
           scope="This guide covers FAA pilot training in the USA."

@@ -28,8 +28,8 @@ export default function IntegratedVsModular() {
           url: "https://www.balpa.org/becoming-a-pilot/",
         },
       ]}
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       faqSchema={[
         {
           question:

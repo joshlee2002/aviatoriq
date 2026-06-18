@@ -73,6 +73,7 @@ type Lead = {
   leadCategory: "Hot" | "Warm" | "Cold";
   leadValue: "High" | "Medium" | "Low";
   intentScore?: number;
+  leadTags?: string | null;
   status: string;
   createdAt: Date;
   updatedAt: Date;
@@ -251,6 +252,19 @@ function LeadDetailModal({
                   ⚡ Intent {lead.intentScore}/100
                 </span>
               )}
+              {lead.leadTags && lead.leadTags.split(",").filter(t => t && t !== "hot" && t !== "warm" && t !== "cold").map(tag => (
+                <span
+                  key={tag}
+                  className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold border"
+                  style={{
+                    background: tag === "school-ready" ? "#f0fdf4" : tag === "finance-ready" ? "#eff6ff" : tag === "medical-risk" ? "#fef2f2" : tag === "cadet-suitable" ? "#fffbeb" : "#f9fafb",
+                    color: tag === "school-ready" ? "#15803d" : tag === "finance-ready" ? "#1d4ed8" : tag === "medical-risk" ? "#dc2626" : tag === "cadet-suitable" ? "#b45309" : "#6b7280",
+                    borderColor: tag === "school-ready" ? "#bbf7d0" : tag === "finance-ready" ? "#bfdbfe" : tag === "medical-risk" ? "#fecaca" : tag === "cadet-suitable" ? "#fde68a" : "#e5e7eb",
+                  }}
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
           </div>
           <button
@@ -1716,6 +1730,13 @@ export default function AdminDashboard() {
       "Score",
       "Category",
       "Lead Value",
+      "Lead Tags",
+      "Intent Score",
+      "Biggest Concern",
+      "Funding Method",
+      "Class 1 Medical",
+      "Wants Finance Info",
+      "Start Timeframe",
       "Preferred Contact",
       "Status",
       "Created",
@@ -1734,6 +1755,13 @@ export default function AdminDashboard() {
       l.leadScore,
       l.leadCategory,
       (l as any).leadValue ?? "Low",
+      (l as any).leadTags ?? "",
+      (l as any).intentScore ?? "",
+      (l as any).biggestConcern ?? "",
+      (l as any).fundingMethod ?? "",
+      (l as any).class1Medical ?? "",
+      (l as any).wantsFinanceInfo ?? "",
+      (l as any).startTimeframe ?? "",
       (l as any).preferredContact ?? "",
       l.status,
       new Date(l.createdAt).toLocaleDateString(),
@@ -2624,6 +2652,23 @@ export default function AdminDashboard() {
                             <div className="mt-1">
                               <LeadValueBadge value={lead.leadValue ?? "Low"} />
                             </div>
+                            {lead.leadTags && (
+                              <div className="flex flex-wrap gap-0.5 mt-1">
+                                {lead.leadTags.split(",").filter(t => t && t !== "hot" && t !== "warm" && t !== "cold").map(tag => (
+                                  <span
+                                    key={tag}
+                                    className="inline-block px-1 py-0.5 rounded text-[9px] font-bold uppercase tracking-wide border"
+                                    style={{
+                                      background: tag === "school-ready" ? "#f0fdf4" : tag === "finance-ready" ? "#eff6ff" : tag === "medical-risk" ? "#fef2f2" : tag === "cadet-suitable" ? "#fffbeb" : "#f9fafb",
+                                      color: tag === "school-ready" ? "#15803d" : tag === "finance-ready" ? "#1d4ed8" : tag === "medical-risk" ? "#dc2626" : tag === "cadet-suitable" ? "#b45309" : "#6b7280",
+                                      borderColor: tag === "school-ready" ? "#bbf7d0" : tag === "finance-ready" ? "#bfdbfe" : tag === "medical-risk" ? "#fecaca" : tag === "cadet-suitable" ? "#fde68a" : "#e5e7eb",
+                                    }}
+                                  >
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
                           </td>
                           <td className="px-4 py-3 text-xs text-[var(--color-muted-foreground)] max-w-24 truncate">
                             {(lead as any).source ?? "—"}

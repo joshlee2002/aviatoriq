@@ -13,8 +13,8 @@ export default function CasaCplRequirements() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/australia/guides/casa-cpl-requirements"
       metaDescription="A detailed guide to CASA Commercial Pilot Licence (CPL) requirements in Australia for 2026, covering eligibility, training, costs, and career paths."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to the CASA Commercial Pilot Licence (CPL)",

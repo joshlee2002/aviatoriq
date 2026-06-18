@@ -13,8 +13,8 @@ export default function UaePilotShortage() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/uae/guides/uae-pilot-shortage"
       metaDescription="Explore the UAE pilot training market in 2026, covering regulations, costs, and career opportunities amidst a growing pilot shortage."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "The UAE Pilot Shortage: A Golden Opportunity in 2026",

@@ -14,8 +14,8 @@ export default function NewZealandPilotShortage() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/new-zealand/guides/new-zealand-pilot-shortage"
       metaDescription="Explore the New Zealand pilot shortage in 2026, including CAA NZ regulations, training costs (NZD), top flight schools, and career opportunities with major a..."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction: The Looming Pilot Shortage in New Zealand",

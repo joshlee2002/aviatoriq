@@ -15,7 +15,7 @@ export default function EuropeRegionalAirlines() {
       canonical="https://aviatoriq.com/europe/guides/europe-regional-airlines-pilot-training"
       metaDescription="Comprehensive guide to becoming a regional airline pilot in Europe, covering EASA ATPL/MPL, training costs, financing, and key airlines for 2026."
       ctaText="Get my free US pilot roadmap"
-      ctaHref="/us/roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to European Regional Airline Pilot Training",

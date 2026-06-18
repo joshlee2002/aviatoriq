@@ -13,8 +13,8 @@ export default function EasaAtplRequirements() {
       category="Pilot Training"
       canonical="https://aviatoriq.com/europe/guides/easa-atpl-requirements"
       metaDescription="A detailed 2026 guide to EASA ATPL requirements, covering integrated and modular training paths, costs, medicals, exams, and career outlook in Europe."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to EASA ATPL",

@@ -14,8 +14,8 @@ export default function CanadaPilotBases() {
       category="Canada Pilot Training"
       canonical="https://aviatoriq.com/canada/guides/canada-pilot-bases"
       metaDescription="Explore Canadian pilot bases for major and regional airlines in 2026, including Air Canada, WestJet, and Porter. Understand training, costs, and career paths."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to Canadian Pilot Bases",

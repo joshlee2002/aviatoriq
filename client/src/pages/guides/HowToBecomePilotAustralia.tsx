@@ -12,8 +12,8 @@ export default function HowToBecomePilotAustralia() {
       readTime="14 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/airplane-takeoff_6f139e92.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       faqSchema={[
         {
           question: "How long does it take to become a pilot in Australia?",

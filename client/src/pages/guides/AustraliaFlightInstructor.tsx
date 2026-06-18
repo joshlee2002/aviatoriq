@@ -14,8 +14,8 @@ export default function AustraliaFlightInstructor() {
       category="Flight Instructor Training"
       canonical="https://aviatoriq.com/australia/guides/australia-flight-instructor"
       metaDescription="A comprehensive guide for aspiring flight instructors in Australia. Learn about CASA regulations, training requirements, costs, and career opportunities in 2026."
-      ctaText="Start your career assessment"
-      ctaHref="/quiz"
+      ctaText="Generate my personalised roadmap"
+      ctaHref="/roadmap"
       sections={[
         {
           heading: "Introduction to Flight Instruction in Australia",

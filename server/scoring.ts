@@ -67,6 +67,9 @@ export interface ScoreResult {
   recommendedRoute: string;
   intentScore: number;
   countryProfile: CountryProfile;
+  leadTags: string[];
+  strongestAsset: string;
+  fundingGap: string | null;
 }
 
 // ── Country profiles ──────────────────────────────────────────────────────────
@@ -1042,6 +1045,78 @@ export function scoreLead(input: LeadInput): ScoreResult {
     }
   }
 
+  // ── Lead Tags ────────────────────────────────────────────────────────────
+  const leadTags: string[] = [];
+  // school-ready: high readiness + medical not at risk + has right to work
+  if (readiness >= 65 && medical >= 50 && input.rightToWorkStudy === "Yes")
+    leadTags.push("school-ready");
+  // finance-ready: has budget or has finance info / self-funded
+  if (
+    finance >= 60 ||
+    input.fundingMethod === "Self-funded / savings" ||
+    input.fundingMethod === "Family support" ||
+    isHighBudget(input.budgetRange)
+  )
+    leadTags.push("finance-ready");
+  // medical-risk: explicit concern or low medical score
+  if (
+    medical < 35 ||
+    input.class1Medical === "I have significant concerns" ||
+    input.class1Medical === "No" ||
+    input.biggestConcern === "I'm worried about passing the medical"
+  )
+    leadTags.push("medical-risk");
+  // cadet-suitable: airline goal + high budget or open to abroad + young enough
+  if (
+    isAirline &&
+    isHighBudget(input.budgetRange) &&
+    (input.age === null || input.age === undefined || input.age <= 36)
+  )
+    leadTags.push("cadet-suitable");
+  // hot/warm/cold mirrors category
+  leadTags.push(category.toLowerCase() as "hot" | "warm" | "cold");
+
+  // ── Strongest Asset ───────────────────────────────────────────────────────
+  let strongestAsset = "Motivation to become a pilot";
+  const dimensionScores: Array<[string, number]> = [
+    ["readiness", readiness],
+    ["finance", finance],
+    ["medical", medical],
+    ["career", career],
+    ["pathway", pathway],
+  ];
+  const [topDimension] = dimensionScores.sort((a, b) => b[1] - a[1])[0];
+  if (topDimension === "readiness") strongestAsset = "Strong commitment and readiness to start";
+  else if (topDimension === "finance") strongestAsset = "Solid financial position for training";
+  else if (topDimension === "medical") strongestAsset = "Good medical fitness";
+  else if (topDimension === "career") strongestAsset = "Clear career goal and direction";
+  else if (topDimension === "pathway") strongestAsset = "Well-matched training pathway";
+
+  // ── Funding Gap ───────────────────────────────────────────────────────────
+  // Derive a funding gap string if budget is below estimated cost
+  let fundingGap: string | null = null;
+  const budgetMap: Record<string, number> = {
+    "Under £20,000": 20000, "£20,000 – £40,000": 40000,
+    "£40,000 – £60,000": 60000, "£60,000 – £80,000": 80000,
+    "£80,000 – £100,000": 100000, "£100,000+": 120000,
+    "Under $20,000": 20000, "$20,000 – $50,000": 50000,
+    "$50,000 – $80,000": 80000, "$80,000 – $120,000": 120000, "$120,000+": 140000,
+    "Under A$30,000": 30000, "A$30,000 – A$70,000": 70000,
+    "A$70,000 – A$120,000": 120000, "A$120,000+": 140000,
+    "Under €20,000": 20000, "€20,000 – €50,000": 50000,
+    "€50,000 – €80,000": 80000, "€80,000 – €120,000": 120000, "€120,000+": 140000,
+  };
+  const costLow = parseInt(
+    (estimatedCostRange.match(/[\d,]+/) || ["0"])[0].replace(/,/g, ""),
+    10
+  );
+  const userBudget = input.budgetRange ? (budgetMap[input.budgetRange] ?? null) : null;
+  if (userBudget !== null && costLow > 0 && userBudget < costLow) {
+    const gap = costLow - userBudget;
+    const sym = profile.currencySymbol;
+    fundingGap = `${sym}${gap.toLocaleString("en-GB")} estimated gap — finance options available`;
+  }
+
   return {
     score,
     category,
@@ -1066,5 +1141,8 @@ export function scoreLead(input: LeadInput): ScoreResult {
     estimatedTimeline,
     recommendedRoute,
     countryProfile: profile,
+    leadTags,
+    strongestAsset,
+    fundingGap,
   };
 }

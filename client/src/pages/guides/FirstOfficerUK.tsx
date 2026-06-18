@@ -41,8 +41,8 @@ const FirstOfficerUK = () => {
       readTime="12 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/first-officer_8f42d3d9.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       sections={[
         {
           heading: "What Does a First Officer Do?",

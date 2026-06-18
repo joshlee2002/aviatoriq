@@ -42,8 +42,8 @@ const FlightInstructorUK = () => {
       readTime="12 min read"
       lastUpdated="June 2026"
       heroImage="/manus-storage/flight-instructor_8a93442c.jpg"
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       sections={[
         {
           heading: "Why Becoming a Flight Instructor is a Smart Career Move",

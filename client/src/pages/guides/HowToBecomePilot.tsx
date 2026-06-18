@@ -29,8 +29,8 @@ export default function HowToBecomePilot() {
           url: "https://www.balpa.org/becoming-a-pilot/",
         },
       ]}
-      ctaHref="/quiz"
-      ctaText="Start your career assessment"
+      ctaHref="/roadmap"
+      ctaText="Generate my personalised roadmap"
       faqSchema={[
         {
           question: "How long does it take to become a pilot in the UK?",
