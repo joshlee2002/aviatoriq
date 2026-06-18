@@ -1,6 +1,6 @@
 -- Migration 0010: Add flight_deck_email_captures and school_subscriptions tables
 
-CREATE TABLE `flight_deck_email_captures` (
+CREATE TABLE IF NOT EXISTS `flight_deck_email_captures` (
   `id` int AUTO_INCREMENT NOT NULL,
   `email` varchar(320) NOT NULL,
   `name` varchar(200),
@@ -13,7 +13,7 @@ CREATE TABLE `flight_deck_email_captures` (
   CONSTRAINT `flight_deck_email_captures_id` PRIMARY KEY(`id`)
 );--> statement-breakpoint
 
-CREATE TABLE `school_subscriptions` (
+CREATE TABLE IF NOT EXISTS `school_subscriptions` (
   `id` int AUTO_INCREMENT NOT NULL,
   `schoolId` int NOT NULL,
   `tier` enum('basic','featured','premium') NOT NULL DEFAULT 'basic',
