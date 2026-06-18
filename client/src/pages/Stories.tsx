@@ -3,6 +3,7 @@ import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import SEO from "@/components/SEO";
 import { ArrowRight, Zap, Quote, Clock, ChevronRight } from "lucide-react";
+import { trpc } from "@/lib/trpc";
 
 const bg = "oklch(0.10 0.08 252)";
 const surface = "oklch(0.14 0.08 250)";
@@ -179,6 +180,36 @@ const STORIES: Story[] = [
 ];
 
 export default function Stories() {
+  // Fetch from API, fall back to static data if DB unavailable
+  const storiesQuery = trpc.stories.list.useQuery();
+  const apiStories = storiesQuery.data?.stories;
+
+  // Map DB stories to the local Story shape, or use static fallback
+  const displayStories: Story[] = apiStories && apiStories.length > 0
+    ? apiStories.map(s => {
+        let qa: { q: string; a: string }[] = [];
+        try { qa = JSON.parse(s.qa); } catch {}
+        return {
+          id: String(s.id),
+          name: s.name,
+          currentRole: s.role,
+          airline: s.airline ?? "",
+          trainingRoute: s.route ?? "",
+          school: s.school ?? "",
+          trainingCost: s.totalCost ?? "",
+          timeToFirstJob: s.trainingDuration ?? "",
+          age: 0,
+          intro: s.heroQuote,
+          q1: qa[0] ?? { q: "", a: "" },
+          q2: qa[1] ?? { q: "", a: "" },
+          q3: qa[2] ?? { q: "", a: "" },
+          q4: qa[3] ?? { q: "", a: "" },
+          advice: qa[4]?.a ?? "",
+          avatar: s.name.split(" ").map((n: string) => n[0]).join("").slice(0, 2).toUpperCase(),
+        } as Story;
+      })
+    : STORIES;
+
   return (
     <div className="min-h-screen flex flex-col" style={{ background: bg }}>
       <SEO
@@ -298,7 +329,7 @@ export default function Stories() {
           <div className="container max-w-4xl">
             {/* Story cards index */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
-              {STORIES.map(story => (
+              {displayStories.map(story => (
                 <a
                   key={story.id}
                   href={`#${story.id}`}
@@ -346,7 +377,7 @@ export default function Stories() {
 
             {/* Full stories */}
             <div className="space-y-16">
-              {STORIES.map(story => (
+              {displayStories.map(story => (
                 <article key={story.id} id={story.id} className="scroll-mt-20">
                   {/* Story header */}
                   <div

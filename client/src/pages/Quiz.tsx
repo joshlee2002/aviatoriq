@@ -115,7 +115,7 @@ function OptionButton({
     <button
       type="button"
       onClick={onClick}
-      className={`w-full text-left px-5 py-4 rounded-xl border transition-all duration-200 font-medium text-sm ${
+      className={`w-full text-left px-4 py-4 sm:px-5 rounded-xl border transition-all duration-200 font-medium text-sm ${
         selected
           ? "border-[oklch(0.55_0.18_240)] bg-[oklch(0.55_0.18_240/0.15)] text-white shadow-[0_0_20px_oklch(0.55_0.18_240/0.2)]"
           : "border-[oklch(1_0_0/0.1)] bg-[oklch(1_0_0/0.04)] text-[oklch(0.85_0_0)] hover:border-[oklch(0.55_0.18_240/0.5)] hover:bg-[oklch(0.55_0.18_240/0.08)]"
@@ -1276,8 +1276,30 @@ export default function Quiz() {
     document.title = "Free Pilot Career Assessment – AviatorIQ";
   }, []);
 
+  // Pre-populate from URL params (e.g. from standalone quiz CTAs)
+  const getInitialData = (): QuizData => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const prefill: Partial<QuizData> = {};
+      const mappable: (keyof QuizData)[] = [
+        "pilotGoal", "biggestConcern", "budgetRange", "fundingMethod",
+        "class1Medical", "flyingExperience", "preferredRoute", "startTimeframe",
+        "seriousness", "country",
+      ];
+      for (const key of mappable) {
+        const val = params.get(key);
+        if (val) (prefill as Record<string, string>)[key] = decodeURIComponent(val);
+      }
+      const source = params.get("source");
+      if (source) prefill.source = decodeURIComponent(source);
+      return { ...EMPTY, ...prefill };
+    } catch {
+      return EMPTY;
+    }
+  };
+
   const [step, setStep] = useState(1);
-  const [data, setData] = useState<QuizData>(EMPTY);
+  const [data, setData] = useState<QuizData>(getInitialData);
   const [started, setStarted] = useState(false);
   const topRef = useRef<HTMLDivElement>(null);
   const [showStep1Errors, setShowStep1Errors] = useState(false);
@@ -1508,7 +1530,7 @@ export default function Quiz() {
       style={{ background: "oklch(0.10 0.01 240)" }}
     >
       <PublicNav />
-      <main className="flex-1 py-8 px-4 relative">
+      <main className="flex-1 py-6 px-3 sm:px-4 relative">
         {/* Subtle background glow */}
         <div
           className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] rounded-full opacity-10 pointer-events-none"
@@ -1522,16 +1544,16 @@ export default function Quiz() {
           <ProgressBar step={step} total={TOTAL_STEPS} />
 
           {/* Step card */}
-          <div className="rounded-2xl border border-[oklch(1_0_0/0.08)] bg-[oklch(1_0_0/0.04)] backdrop-blur-sm p-6 md:p-10 mb-6">
+          <div className="rounded-2xl border border-[oklch(1_0_0/0.08)] bg-[oklch(1_0_0/0.04)] backdrop-blur-sm p-4 sm:p-6 md:p-10 mb-6">
             {stepComponents[step]}
           </div>
 
           {/* Navigation */}
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center justify-between gap-3">
             <button
               onClick={handleBack}
               disabled={step === 1}
-              className="flex items-center gap-2 px-5 py-3 rounded-xl border border-[oklch(1_0_0/0.12)] text-[oklch(0.65_0_0)] text-sm font-medium transition-all hover:border-[oklch(1_0_0/0.25)] hover:text-white disabled:opacity-30 disabled:cursor-not-allowed"
+              className="flex items-center gap-2 px-4 py-3 rounded-xl border border-[oklch(1_0_0/0.12)] text-[oklch(0.65_0_0)] text-sm font-medium transition-all hover:border-[oklch(1_0_0/0.25)] hover:text-white disabled:opacity-30 disabled:cursor-not-allowed"
             >
               <ArrowLeft className="w-4 h-4" />
               Back

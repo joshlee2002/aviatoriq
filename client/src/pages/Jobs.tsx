@@ -3,6 +3,7 @@ import { useState } from "react";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import SEO from "@/components/SEO";
+import { trpc } from "@/lib/trpc";
 import {
   Briefcase,
   MapPin,
@@ -337,12 +338,32 @@ export default function Jobs() {
     "all"
   );
 
-  const isUS = (j: Job) => j.id >= 11;
-  const isUK = (j: Job) => j.id <= 10;
+  // Fetch from API, fall back to static data if DB unavailable
+  const jobsQuery = trpc.jobs.list.useQuery({ region: undefined });
+  const apiJobs = jobsQuery.data?.jobs;
 
-  const filteredJobs = JOBS.filter(j => {
-    if (countryFilter === "uk") return isUK(j);
-    if (countryFilter === "us") return isUS(j);
+  // Map API jobs to the local Job interface (API uses 'postedAt', static uses 'posted')
+  const allJobs: Job[] = apiJobs && apiJobs.length > 0
+    ? apiJobs.map(j => ({
+        id: j.id,
+        title: j.title,
+        airline: j.airline,
+        location: j.location,
+        type: j.type as Job["type"],
+        hours: j.hours ?? undefined,
+        salary: j.salary ?? undefined,
+        deadline: j.deadline ?? undefined,
+        link: j.link,
+        badge: j.badge ?? undefined,
+        description: j.description,
+        posted: j.postedAt instanceof Date ? j.postedAt.toISOString().slice(0, 10) : String(j.postedAt),
+        region: j.region,
+      }))
+    : JOBS;
+
+  const filteredJobs = allJobs.filter(j => {
+    if (countryFilter === "uk") return (j as any).region === "UK" || j.id <= 10;
+    if (countryFilter === "us") return (j as any).region === "US" || j.id >= 11;
     return true;
   });
 

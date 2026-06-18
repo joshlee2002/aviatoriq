@@ -248,6 +248,8 @@ interface GuideLayoutProps {
   relatedGuides?: RelatedGuide[];
   ctaText?: string;
   ctaHref?: string;
+  /** Optional supporting subtext for the CTA banner (overrides the default) */
+  ctaSubtext?: string;
   canonical?: string;
   metaDescription?: string;
   faqSchema?: { question: string; answer: string }[];
@@ -483,6 +485,7 @@ export default function GuideLayout({
   relatedGuides = [],
   ctaText = "Find my training route",
   ctaHref = "/quiz",
+  ctaSubtext,
   canonical,
   metaDescription,
   faqSchema,
@@ -752,7 +755,7 @@ export default function GuideLayout({
                       Get your personalised pilot roadmap
                     </p>
                     <p className="text-xs" style={{ color: muted }}>
-                      Free 5-minute assessment. No registration required.
+                      {ctaSubtext ?? "Free 5-minute assessment. No registration required."}
                     </p>
                   </div>
                   <Link

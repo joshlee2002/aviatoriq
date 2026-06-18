@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { Mail, Globe, Phone } from "lucide-react";
+import { Mail, Globe, Phone, Briefcase } from "lucide-react";
 import { trpc } from "@/lib/trpc";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { getLoginUrl } from "@/const";
@@ -727,6 +727,116 @@ function SchoolModal({ onClose }: { onClose: () => void }) {
 }
 
 // ─── Partner Applications Panel ──────────────────────────────────────────────
+// ─── Jobs Panel ───────────────────────────────────────────────────────────────
+function JobsPanel() {
+  const jobsQuery = trpc.jobs.list.useQuery({ region: undefined });
+  const deleteMutation = trpc.jobs.delete.useMutation({ onSuccess: () => jobsQuery.refetch() });
+  const jobs = jobsQuery.data?.jobs ?? [];
+
+  return (
+    <div className="card-base overflow-hidden">
+      <div className="p-4 border-b border-[var(--color-border)] flex items-center gap-2">
+        <Briefcase className="w-5 h-5 text-[var(--color-primary)]" />
+        <h3 className="font-display font-bold text-[var(--color-navy)]">Pilot Jobs</h3>
+        <span className="ml-auto text-xs text-[var(--color-muted-foreground)]">{jobs.length} active</span>
+      </div>
+      <div className="p-4">
+        <p className="text-sm text-[var(--color-muted-foreground)] mb-4">
+          Jobs are managed here. The Jobs page will show DB records when available, falling back to static data when the DB is empty.
+        </p>
+        {jobsQuery.isLoading ? (
+          <div className="flex items-center justify-center py-12">
+            <Loader2 className="w-6 h-6 animate-spin text-[var(--color-primary)]" />
+          </div>
+        ) : jobs.length === 0 ? (
+          <div className="text-center py-8">
+            <Briefcase className="w-10 h-10 text-[var(--color-muted-foreground)] mx-auto mb-3" />
+            <p className="font-semibold text-[var(--color-navy)]">No jobs in database</p>
+            <p className="text-sm text-[var(--color-muted-foreground)]">The Jobs page is currently showing static seed data. Add jobs here to override it.</p>
+          </div>
+        ) : (
+          <div className="space-y-2">
+            {jobs.map(job => (
+              <div key={job.id} className="flex items-center justify-between p-3 rounded-lg border border-[var(--color-border)]">
+                <div>
+                  <p className="font-semibold text-sm text-[var(--color-navy)]">{job.title}</p>
+                  <p className="text-xs text-[var(--color-muted-foreground)]">{job.airline} · {job.location} · {job.region}</p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className={`text-xs px-2 py-0.5 rounded-full ${job.active ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}`}>
+                    {job.active ? 'Active' : 'Inactive'}
+                  </span>
+                  <button
+                    onClick={() => deleteMutation.mutate({ id: job.id })}
+                    className="text-xs text-red-500 hover:text-red-700 transition-colors"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ─── Stories Panel ─────────────────────────────────────────────────────────────
+function StoriesPanel() {
+  const storiesQuery = trpc.stories.list.useQuery();
+  const deleteMutation = trpc.stories.delete.useMutation({ onSuccess: () => storiesQuery.refetch() });
+  const stories = storiesQuery.data?.stories ?? [];
+
+  return (
+    <div className="card-base overflow-hidden">
+      <div className="p-4 border-b border-[var(--color-border)] flex items-center gap-2">
+        <Users className="w-5 h-5 text-[var(--color-primary)]" />
+        <h3 className="font-display font-bold text-[var(--color-navy)]">Pilot Stories</h3>
+        <span className="ml-auto text-xs text-[var(--color-muted-foreground)]">{stories.length} stories</span>
+      </div>
+      <div className="p-4">
+        <p className="text-sm text-[var(--color-muted-foreground)] mb-4">
+          Stories are managed here. The Stories page will show DB records when available, falling back to static data when the DB is empty.
+        </p>
+        {storiesQuery.isLoading ? (
+          <div className="flex items-center justify-center py-12">
+            <Loader2 className="w-6 h-6 animate-spin text-[var(--color-primary)]" />
+          </div>
+        ) : stories.length === 0 ? (
+          <div className="text-center py-8">
+            <Users className="w-10 h-10 text-[var(--color-muted-foreground)] mx-auto mb-3" />
+            <p className="font-semibold text-[var(--color-navy)]">No stories in database</p>
+            <p className="text-sm text-[var(--color-muted-foreground)]">The Stories page is currently showing static seed data. Add stories here to override it.</p>
+          </div>
+        ) : (
+          <div className="space-y-2">
+            {stories.map(story => (
+              <div key={story.id} className="flex items-center justify-between p-3 rounded-lg border border-[var(--color-border)]">
+                <div>
+                  <p className="font-semibold text-sm text-[var(--color-navy)]">{story.name}</p>
+                  <p className="text-xs text-[var(--color-muted-foreground)]">{story.role} · {story.airline ?? 'No airline'} · {story.country ?? 'Unknown'}</p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className={`text-xs px-2 py-0.5 rounded-full ${story.featured ? 'bg-orange-100 text-orange-700' : story.active ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}`}>
+                    {story.featured ? 'Featured' : story.active ? 'Active' : 'Inactive'}
+                  </span>
+                  <button
+                    onClick={() => deleteMutation.mutate({ id: story.id })}
+                    className="text-xs text-red-500 hover:text-red-700 transition-colors"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function PartnerApplicationsPanel() {
   const waitlistQuery = trpc.partner.listWaitlist.useQuery();
   const entries = waitlistQuery.data ?? [];
@@ -961,7 +1071,7 @@ export default function AdminDashboard() {
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
   const [showSchools, setShowSchools] = useState(false);
   const [activeTab, setActiveTab] = useState<
-    "leads" | "introductions" | "analytics" | "partners"
+    "leads" | "introductions" | "analytics" | "partners" | "jobs" | "stories"
   >("leads");
   const analyticsQuery = trpc.analytics.overview.useQuery(undefined, {
     enabled: isAuthenticated && user?.role === "admin",
@@ -1262,7 +1372,7 @@ export default function AdminDashboard() {
 
         {/* Tabs */}
         <div className="flex gap-1 mb-5 bg-[var(--color-muted)] p-1 rounded-xl w-fit flex-wrap">
-          {(["leads", "introductions", "analytics", "partners"] as const).map(
+          {(["leads", "introductions", "analytics", "partners", "jobs", "stories"] as const).map(
             tab => (
               <button
                 key={tab}
@@ -1274,13 +1384,12 @@ export default function AdminDashboard() {
                     : "text-[var(--color-muted-foreground)] hover:text-[var(--color-foreground)]",
                 ].join(" ")}
               >
-                {tab === "leads"
-                  ? "Leads"
-                  : tab === "introductions"
-                    ? "Introductions"
-                    : tab === "analytics"
-                      ? "Analytics"
-                      : "Partners"}
+                {tab === "leads" ? "Leads"
+                  : tab === "introductions" ? "Introductions"
+                  : tab === "analytics" ? "Analytics"
+                  : tab === "partners" ? "Partners"
+                  : tab === "jobs" ? "Jobs"
+                  : "Stories"}
               </button>
             )
           )}
@@ -1288,6 +1397,8 @@ export default function AdminDashboard() {
 
         {activeTab === "introductions" && <IntroductionsPanel />}
         {activeTab === "partners" && <PartnerApplicationsPanel />}
+        {activeTab === "jobs" && <JobsPanel />}
+        {activeTab === "stories" && <StoriesPanel />}
 
         {activeTab === "analytics" && (
           <div className="space-y-6">

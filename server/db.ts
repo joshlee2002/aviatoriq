@@ -110,6 +110,18 @@ export async function getLeadById(id: number): Promise<Lead | undefined> {
   return result[0];
 }
 
+export async function getLatestLeadByEmail(email: string): Promise<Lead | undefined> {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db
+    .select()
+    .from(leads)
+    .where(eq(leads.email, email.toLowerCase().trim()))
+    .orderBy(desc(leads.createdAt))
+    .limit(1);
+  return result[0];
+}
+
 export async function updateLead(
   id: number,
   data: Partial<InsertLead>
@@ -983,4 +995,68 @@ export async function createQuizEmailCapture(data: {
       consentToContact: data.consentToContact,
     });
   return (result[0] as any).insertId;
+}
+
+// ─── Pilot Jobs ───────────────────────────────────────────────────────────────
+import {
+  PilotJob,
+  InsertPilotJob,
+  PilotStory,
+  InsertPilotStory,
+  pilotJobs,
+  pilotStories,
+} from "../drizzle/schema";
+
+export async function listPilotJobs(region?: string): Promise<PilotJob[]> {
+  const db = await getDb();
+  if (!db) return [];
+  const query = db.select().from(pilotJobs).where(eq(pilotJobs.active, true)).orderBy(desc(pilotJobs.postedAt));
+  const results = await query;
+  if (region) return results.filter(j => j.region === region || j.region === "Global");
+  return results;
+}
+
+export async function createPilotJob(data: Omit<InsertPilotJob, "id" | "createdAt" | "updatedAt">): Promise<number> {
+  const db = await getDb();
+  if (!db) throw new Error("Database unavailable");
+  const [result] = await db.insert(pilotJobs).values(data);
+  return (result as any).insertId;
+}
+
+export async function updatePilotJob(id: number, data: Partial<InsertPilotJob>): Promise<void> {
+  const db = await getDb();
+  if (!db) return;
+  await db.update(pilotJobs).set(data).where(eq(pilotJobs.id, id));
+}
+
+export async function deletePilotJob(id: number): Promise<void> {
+  const db = await getDb();
+  if (!db) return;
+  await db.delete(pilotJobs).where(eq(pilotJobs.id, id));
+}
+
+// ─── Pilot Stories ────────────────────────────────────────────────────────────
+export async function listPilotStories(): Promise<PilotStory[]> {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(pilotStories).where(eq(pilotStories.active, true)).orderBy(desc(pilotStories.createdAt));
+}
+
+export async function createPilotStory(data: Omit<InsertPilotStory, "id" | "createdAt" | "updatedAt">): Promise<number> {
+  const db = await getDb();
+  if (!db) throw new Error("Database unavailable");
+  const [result] = await db.insert(pilotStories).values(data);
+  return (result as any).insertId;
+}
+
+export async function updatePilotStory(id: number, data: Partial<InsertPilotStory>): Promise<void> {
+  const db = await getDb();
+  if (!db) return;
+  await db.update(pilotStories).set(data).where(eq(pilotStories.id, id));
+}
+
+export async function deletePilotStory(id: number): Promise<void> {
+  const db = await getDb();
+  if (!db) return;
+  await db.delete(pilotStories).where(eq(pilotStories.id, id));
 }

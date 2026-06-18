@@ -296,7 +296,7 @@ export const roadmapPurchases = mysqlTable("roadmap_purchases", {
   status: mysqlEnum("status", ["pending", "complete", "expired", "refunded"])
     .default("pending")
     .notNull(),
-  amountPence: int("amountPence").default(900).notNull(), // £9.00 in pence
+  amountPence: int("amountPence").default(1499).notNull(), // £14.99 in pence
   currency: varchar("currency", { length: 10 }).default("gbp").notNull(),
   email: varchar("email", { length: 320 }),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
@@ -318,3 +318,48 @@ export const quizEmailCaptures = mysqlTable("quiz_email_captures", {
 });
 export type QuizEmailCapture = typeof quizEmailCaptures.$inferSelect;
 export type InsertQuizEmailCapture = typeof quizEmailCaptures.$inferInsert;
+
+// ─── Pilot Jobs ─────────────────────────────────────────────────────────────────────────────
+export const pilotJobs = mysqlTable("pilot_jobs", {
+  id: int("id").autoincrement().primaryKey(),
+  title: varchar("title", { length: 255 }).notNull(),
+  airline: varchar("airline", { length: 255 }).notNull(),
+  location: varchar("location", { length: 255 }).notNull(),
+  type: mysqlEnum("type", ["First Officer", "Captain", "Cadet", "Instructor", "Other"]).notNull(),
+  hours: varchar("hours", { length: 100 }),
+  salary: varchar("salary", { length: 200 }),
+  deadline: varchar("deadline", { length: 100 }),
+  link: varchar("link", { length: 500 }).notNull(),
+  badge: varchar("badge", { length: 100 }),
+  description: text("description").notNull(),
+  region: mysqlEnum("region", ["UK", "US", "Global"]).default("UK").notNull(),
+  active: boolean("active").default(true).notNull(),
+  postedAt: timestamp("postedAt").defaultNow().notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+export type PilotJob = typeof pilotJobs.$inferSelect;
+export type InsertPilotJob = typeof pilotJobs.$inferInsert;
+
+// ─── Pilot Stories ────────────────────────────────────────────────────────────────────────────
+export const pilotStories = mysqlTable("pilot_stories", {
+  id: int("id").autoincrement().primaryKey(),
+  name: varchar("name", { length: 200 }).notNull(),
+  role: varchar("role", { length: 200 }).notNull(),
+  airline: varchar("airline", { length: 200 }),
+  route: varchar("route", { length: 100 }),
+  trainingDuration: varchar("trainingDuration", { length: 100 }),
+  totalCost: varchar("totalCost", { length: 100 }),
+  school: varchar("school", { length: 200 }),
+  country: varchar("country", { length: 100 }),
+  heroQuote: text("heroQuote").notNull(),
+  qa: text("qa").notNull(), // JSON array of {q, a} objects
+  tags: varchar("tags", { length: 500 }), // comma-separated
+  imageUrl: varchar("imageUrl", { length: 500 }),
+  active: boolean("active").default(true).notNull(),
+  featured: boolean("featured").default(false).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+export type PilotStory = typeof pilotStories.$inferSelect;
+export type InsertPilotStory = typeof pilotStories.$inferInsert;

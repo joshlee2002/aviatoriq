@@ -63,6 +63,9 @@ import AdminDashboard from "./pages/AdminDashboard";
 import IntModDecision from "./pages/IntModDecision";
 import MedicalCheck from "./pages/MedicalCheck";
 
+// Retrieve results
+import Retrieve from "./pages/Retrieve";
+
 // Partner page
 import Partner from "./pages/Partner";
 import PartnerUS from "./pages/PartnerUS";
@@ -313,6 +316,7 @@ function Router() {
         {/* Quiz funnel */}
         <Route path="/quiz" component={Quiz} />
         <Route path="/results/:leadId" component={Results} />
+        <Route path="/retrieve" component={Retrieve} />
 
         {/* Licence quiz */}
         <Route path="/quiz/licence" component={LicenceQuiz} />

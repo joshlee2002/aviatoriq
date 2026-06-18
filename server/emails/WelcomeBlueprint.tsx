@@ -159,10 +159,10 @@ export default function WelcomeBlueprint({
               Want the full picture?
             </Text>
             <Text style={{ color: WHITE, fontSize: "14px", fontWeight: "700", margin: "0 0 6px 0" }}>
-              Unlock your Premium Roadmap for £9
+              Unlock your Premium Pilot Blueprint for £14.99
             </Text>
             <Text style={{ color: GREY, fontSize: "12px", margin: "0 0 12px 0", lineHeight: "1.5" }}>
-              Get your month-by-month training timeline, a personalised risk analysis, verified 2026 school costs, and a 30-day action plan — all built around your exact profile.
+              Month-by-month training timeline, hidden cost breakdown, school selection guide, risk analysis, career reality check, 30-day action plan, and a downloadable PDF — all built around your exact profile.
             </Text>
             <Button
               href={resultsUrl}
@@ -178,7 +178,7 @@ export default function WelcomeBlueprint({
                 display: "inline-block",
               }}
             >
-              Unlock for £9 →
+              Unlock for £14.99 →
             </Button>
           </Section>
 

@@ -40,8 +40,67 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { AIChatBox, type Message as ChatMessage } from "@/components/AIChatBox";
+import { useState as useChatState } from "react";
 
-// ─── Types ────────────────────────────────────────────────────────────────────
+// ─── Premium Chat Component ─────────────────────────────────────────────────────────────────────────────
+function PremiumChat({ leadId }: { leadId: number }) {
+  const [messages, setMessages] = useChatState<ChatMessage[]>([]);
+  const chatMutation = trpc.leads.chat.useMutation({
+    onSuccess: data => {
+      setMessages(prev => [...prev, { role: "assistant", content: data.reply }]);
+    },
+    onError: () => {
+      setMessages(prev => [...prev, { role: "assistant", content: "Sorry, I couldn't generate a response right now. Please try again." }]);
+    },
+  });
+
+  const handleSend = (content: string) => {
+    const newMessages: ChatMessage[] = [...messages, { role: "user", content }];
+    setMessages(newMessages);
+    chatMutation.mutate({
+      leadId,
+      messages: newMessages.map(m => ({ role: m.role as "user" | "assistant", content: m.content as string })),
+    });
+  };
+
+  return (
+    <div
+      className="rounded-2xl overflow-hidden animate-fade-in-up"
+      style={{
+        background: "oklch(0.13 0.02 240)",
+        border: "1px solid oklch(0.55 0.18 240 / 0.2)",
+      }}
+    >
+      <div
+        className="flex items-center gap-2 px-5 py-4"
+        style={{ borderBottom: "1px solid oklch(0.55 0.18 240 / 0.15)" }}
+      >
+        <span className="text-base">🧠</span>
+        <div>
+          <h3 className="font-display font-bold text-white text-sm">Ask About Your Roadmap</h3>
+          <p className="text-xs" style={{ color: "oklch(0.55 0 0)" }}>Your AI advisor has full context about your profile and roadmap</p>
+        </div>
+      </div>
+      <AIChatBox
+        messages={messages}
+        onSendMessage={handleSend}
+        isLoading={chatMutation.isPending}
+        height="420px"
+        placeholder="Ask anything about your training journey…"
+        emptyStateMessage="Ask me anything about your pilot training roadmap"
+        suggestedPrompts={[
+          "What should I do in my first 30 days?",
+          "How do I compare flight schools?",
+          "What are the hidden costs I should budget for?",
+          "What does the career look like after I qualify?",
+        ]}
+      />
+    </div>
+  );
+}
+
+// ─── Types ─────────────────────────────────────────────────────────────────────────────
 interface FlightSchool {
   id: number;
   name: string;
@@ -79,6 +138,16 @@ interface MatchedSchoolContext {
   financeAvailable?: boolean;
   website?: string;
 }
+interface HiddenCostItem {
+  item: string;
+  estimatedCost: string;
+  notes: string;
+}
+interface SchoolCriterion {
+  criterion: string;
+  whyItMatters: string;
+  questionToAsk: string;
+}
 interface RoadmapData {
   pilotGoalSummary?: string;
   recommendedRoute?: string;
@@ -92,14 +161,21 @@ interface RoadmapData {
   medicalAdvice?: string;
   financeConsiderations?: string;
   schoolTypeRecommendation?: string;
+  matchedSchoolRationale?: string;
+  biggestBarrier?: string;
+  barrierAdvice?: string;
+  strongestAsset?: string;
+  careerRealityCheck?: string;
   disclaimer?: string;
-  // ─── Premium fields ───────────────────────────────────────────────────────
+  // ─── Premium fields ─────────────────────────────────────────────────────────────────────────────
+  keyInsight?: string;
   barrierDeepDive?: string;
+  hiddenCosts?: HiddenCostItem[];
+  schoolSelectionCriteria?: SchoolCriterion[];
   monthlyTimeline?: MonthlyMilestone[];
   riskScenarios?: RiskScenario[];
   matchedSchoolsContext?: MatchedSchoolContext[];
   thirtyDayActionPlan?: string[];
-  keyInsight?: string;
 }
 
 interface Dimensions {
@@ -255,19 +331,7 @@ export default function Results() {
     { enabled: !!leadId && !cachedResult }
   );
   const [pdfRetryCount, setPdfRetryCount] = useState(0);
-  const pdfQuery = trpc.leads.getPdfUrl.useQuery(
-    { leadId },
-    {
-      enabled: !!leadId,
-      // Poll every 5s until PDF is ready, stop after 12 attempts (60s)
-      refetchInterval: q => {
-        if (q.state.data?.pdfUrl) return false;
-        if (pdfRetryCount >= 12) return false;
-        return 5000;
-      },
-    }
-  );
-  const pdfTimedOut = !pdfQuery.data?.pdfUrl && pdfRetryCount >= 12;
+  // pdfQuery is defined after premiumUnlocked state below
   const roadmapMutation = trpc.leads.generateRoadmap.useMutation({
     onSuccess: data => {
       try {
@@ -301,6 +365,20 @@ export default function Results() {
     }
   });
   const [checkoutLoading, setCheckoutLoading] = useState(false);
+
+  // PDF query — only enabled after premium is unlocked, polls until PDF is ready
+  const pdfQuery = trpc.leads.getPdfUrl.useQuery(
+    { leadId, requirePremium: true },
+    {
+      enabled: !!leadId && premiumUnlocked,
+      refetchInterval: q => {
+        if (q.state.data?.pdfUrl) return false;
+        if (pdfRetryCount >= 20) return false;
+        return 5000;
+      },
+    }
+  );
+  const pdfTimedOut = !pdfQuery.data?.pdfUrl && pdfRetryCount >= 20;
 
   // Check if already purchased (on page load)
   const purchaseQuery = trpc.payments.checkPurchase.useQuery(
@@ -546,7 +624,7 @@ export default function Results() {
 
           <div className="container relative py-10 md:py-14">
             {/* Status bar */}
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-[var(--color-cockpit-green)] animate-pulse" />
                 <span className="text-white/50 text-xs font-semibold uppercase tracking-widest">
@@ -554,55 +632,46 @@ export default function Results() {
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                {pdfQuery.data?.pdfUrl ? (
-                  <a
-                    href={pdfQuery.data.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/70 hover:text-white text-xs font-medium transition-colors no-underline"
-                    style={{
-                      background: "oklch(1 0 0 / 0.08)",
-                      border: "1px solid oklch(1 0 0 / 0.15)",
-                    }}
-                  >
-                    <FileDown className="w-3.5 h-3.5" />
-                    Download PDF
-                  </a>
-                ) : pdfTimedOut ? (
-                  <div className="flex items-center gap-2">
-                    <span
-                      className="text-white/40 text-xs"
-                      title="PDF generation is temporarily unavailable. Your roadmap is still accessible on this page."
-                    >
-                      <AlertTriangle className="w-3 h-3 inline mr-1 text-amber-400/60" />
-                      PDF unavailable
-                    </span>
-                    <button
-                      onClick={() => {
-                        setPdfRetryCount(0);
-                        pdfQuery.refetch();
-                      }}
-                      className="inline-flex items-center gap-1 px-2 py-1 rounded text-amber-400/70 hover:text-amber-300 text-xs font-medium transition-colors"
+                {premiumUnlocked ? (
+                  pdfQuery.data?.pdfUrl ? (
+                    <a
+                      href={pdfQuery.data.pdfUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/70 hover:text-white text-xs font-medium transition-colors no-underline"
                       style={{
-                        background: "oklch(0.72 0.18 65 / 0.08)",
-                        border: "1px solid oklch(0.72 0.18 65 / 0.2)",
+                        background: "oklch(1 0 0 / 0.08)",
+                        border: "1px solid oklch(1 0 0 / 0.15)",
                       }}
-                      title="Try generating the PDF again"
                     >
-                      Retry
-                    </button>
-                  </div>
+                      <FileDown className="w-3.5 h-3.5" />
+                      Download PDF
+                    </a>
+                  ) : (
+                    <div
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/60 text-xs"
+                      style={{
+                        background: "oklch(1 0 0 / 0.05)",
+                        border: "1px solid oklch(1 0 0 / 0.08)",
+                      }}
+                    >
+                      <Loader2 className="w-3 h-3 animate-spin" />
+                      Generating PDF…
+                    </div>
+                  )
                 ) : (
-                  <div
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/60 text-xs"
+                  <button
+                    onClick={handleUnlockPremium}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all hover:scale-[1.02]"
                     style={{
-                      background: "oklch(1 0 0 / 0.05)",
-                      border: "1px solid oklch(1 0 0 / 0.08)",
+                      background: "oklch(0.55 0.18 240 / 0.15)",
+                      border: "1px solid oklch(0.55 0.18 240 / 0.35)",
+                      color: "oklch(0.75 0.15 240)",
                     }}
                   >
-                    <Loader2 className="w-3 h-3 animate-spin" />
-                    Generating PDF…
-                  </div>
+                    <span>🔒</span>
+                    Unlock PDF — £14.99
+                  </button>
                 )}
               </div>
             </div>
@@ -1741,44 +1810,60 @@ export default function Results() {
                     </div>
                     {/* Overlay */}
                     <div
-                      className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
-                      style={{ background: "oklch(0.13 0.02 240 / 0.85)" }}
+                      className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 py-6"
+                      style={{ background: "oklch(0.13 0.02 240 / 0.92)" }}
                     >
-                      <div
-                        className="w-12 h-12 rounded-full flex items-center justify-center mb-4"
-                        style={{ background: "oklch(0.55 0.18 240 / 0.2)", border: "1px solid oklch(0.55 0.18 240 / 0.4)" }}
-                      >
-                        <span className="text-2xl">🔒</span>
+                      <div className="w-full max-w-sm">
+                        <div
+                          className="w-10 h-10 rounded-full flex items-center justify-center mb-3 mx-auto"
+                          style={{ background: "oklch(0.55 0.18 240 / 0.2)", border: "1px solid oklch(0.55 0.18 240 / 0.4)" }}
+                        >
+                          <span className="text-xl">🔒</span>
+                        </div>
+                        <h3 className="font-display font-bold text-white text-lg mb-1">
+                          Your Premium Pilot Blueprint
+                        </h3>
+                        <p className="text-xs mb-4" style={{ color: "oklch(0.55 0 0)" }}>
+                          Based on your exact profile — not generic advice.
+                        </p>
+                        {/* Feature list */}
+                        <div className="grid grid-cols-2 gap-1.5 mb-4 text-left">
+                          {[
+                            "✨ Key insight for your profile",
+                            "📅 Month-by-month timeline",
+                            "💸 Hidden costs breakdown",
+                            "⚠️ Risk analysis & mitigation",
+                            "🏫 School selection guide",
+                            "✈️ Career reality check",
+                            "✅ 30-day action plan",
+                            "📄 Downloadable PDF blueprint",
+                          ].map((f, i) => (
+                            <div key={i} className="flex items-center gap-1.5">
+                              <p className="text-xs" style={{ color: "oklch(0.72 0 0)" }}>{f}</p>
+                            </div>
+                          ))}
+                        </div>
+                        <button
+                          onClick={handleUnlockPremium}
+                          disabled={checkoutLoading}
+                          className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-white text-sm transition-all mb-2"
+                          style={{
+                            background: checkoutLoading
+                              ? "oklch(0.45 0.18 240)"
+                              : "linear-gradient(135deg, oklch(0.55 0.18 240), oklch(0.45 0.2 260))",
+                            boxShadow: checkoutLoading ? "none" : "0 0 24px oklch(0.55 0.18 240 / 0.5)",
+                          }}
+                        >
+                          {checkoutLoading ? (
+                            <><Loader2 className="w-4 h-4 animate-spin" /> Processing…</>
+                          ) : (
+                            <><CreditCard className="w-4 h-4" /> Unlock for £14.99 — One-time</>
+                          )}
+                        </button>
+                        <p className="text-[10px]" style={{ color: "oklch(0.4 0 0)" }}>
+                          Secure payment via Stripe · Instant access · Money-back guarantee
+                        </p>
                       </div>
-                      <h3 className="font-display font-bold text-white text-xl mb-2">
-                        Your Full Premium Roadmap
-                      </h3>
-                      <p className="text-sm mb-1" style={{ color: "oklch(0.65 0 0)" }}>
-                        Unlock your month-by-month training timeline, personalised risk analysis, verified school costs, and a 30-day action plan.
-                      </p>
-                      <p className="text-xs mb-6" style={{ color: "oklch(0.55 0 0)" }}>
-                        Based on your exact profile — not generic advice.
-                      </p>
-                      <button
-                        onClick={handleUnlockPremium}
-                        disabled={checkoutLoading}
-                        className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white text-sm transition-all"
-                        style={{
-                          background: checkoutLoading
-                            ? "oklch(0.45 0.18 240)"
-                            : "oklch(0.55 0.18 240)",
-                          boxShadow: "0 0 20px oklch(0.55 0.18 240 / 0.4)",
-                        }}
-                      >
-                        {checkoutLoading ? (
-                          <><Loader2 className="w-4 h-4 animate-spin" /> Processing…</>
-                        ) : (
-                          <><CreditCard className="w-4 h-4" /> Unlock for £9 — One-time payment</>
-                        )}
-                      </button>
-                      <p className="text-xs mt-3" style={{ color: "oklch(0.45 0 0)" }}>
-                        Secure payment via Stripe · Instant access · PDF included
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -2013,6 +2098,84 @@ export default function Results() {
                     </div>
                   )}
 
+                  {/* Hidden Costs */}
+                  {roadmap.hiddenCosts && roadmap.hiddenCosts.length > 0 && (
+                    <div
+                      className="rounded-2xl p-6"
+                      style={{
+                        background: "oklch(0.13 0.02 240)",
+                        border: "1px solid oklch(0.65 0.18 30 / 0.2)",
+                      }}
+                    >
+                      <div className="flex items-center gap-2 mb-4">
+                        <span className="text-base">💸</span>
+                        <h3 className="font-display font-bold text-white text-base">Hidden Costs Nobody Tells You About</h3>
+                      </div>
+                      <p className="text-xs mb-4" style={{ color: "oklch(0.55 0 0)" }}>These costs are rarely included in school prospectus quotes. Budget for all of them before committing.</p>
+                      <div className="space-y-3">
+                        {roadmap.hiddenCosts.map((cost, i) => (
+                          <div key={i} className="flex items-start gap-3 rounded-xl p-3" style={{ background: "oklch(0.16 0.02 240)" }}>
+                            <div className="flex-1 min-w-0">
+                              <div className="flex items-center justify-between gap-2 mb-1">
+                                <p className="text-sm font-semibold text-white">{cost.item}</p>
+                                <span className="text-xs font-mono flex-shrink-0" style={{ color: "oklch(0.72 0.18 65)" }}>{cost.estimatedCost}</span>
+                              </div>
+                              <p className="text-xs leading-relaxed" style={{ color: "oklch(0.55 0 0)" }}>{cost.notes}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* School Selection Criteria */}
+                  {roadmap.schoolSelectionCriteria && roadmap.schoolSelectionCriteria.length > 0 && (
+                    <div
+                      className="rounded-2xl p-6"
+                      style={{
+                        background: "oklch(0.13 0.02 240)",
+                        border: "1px solid oklch(0.55 0.18 240 / 0.2)",
+                      }}
+                    >
+                      <div className="flex items-center gap-2 mb-4">
+                        <span className="text-base">🏫</span>
+                        <h3 className="font-display font-bold text-white text-base">How to Choose Your School — What to Ask</h3>
+                      </div>
+                      <p className="text-xs mb-4" style={{ color: "oklch(0.55 0 0)" }}>These are the exact questions to ask every school you visit. Most candidates never ask them.</p>
+                      <div className="space-y-4">
+                        {roadmap.schoolSelectionCriteria.map((c, i) => (
+                          <div key={i} className="rounded-xl p-4" style={{ background: "oklch(0.16 0.02 240)", border: "1px solid oklch(0.55 0.18 240 / 0.12)" }}>
+                            <p className="text-sm font-bold text-white mb-1">{c.criterion}</p>
+                            <p className="text-xs mb-2 leading-relaxed" style={{ color: "oklch(0.6 0 0)" }}>{c.whyItMatters}</p>
+                            <div className="flex items-start gap-2 rounded-lg p-2" style={{ background: "oklch(0.55 0.18 240 / 0.08)", border: "1px solid oklch(0.55 0.18 240 / 0.2)" }}>
+                              <span className="text-[10px] font-bold flex-shrink-0 mt-0.5" style={{ color: "oklch(0.65 0.18 240)" }}>ASK:</span>
+                              <p className="text-xs leading-relaxed" style={{ color: "oklch(0.75 0 0)" }}>{c.questionToAsk}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Career Reality Check */}
+                  {roadmap.careerRealityCheck && (
+                    <div
+                      className="rounded-2xl p-6"
+                      style={{
+                        background: "oklch(0.55 0.18 240 / 0.06)",
+                        border: "1px solid oklch(0.55 0.18 240 / 0.2)",
+                      }}
+                    >
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="text-base">✈️</span>
+                        <h3 className="font-display font-bold text-white text-base">The Full Career Journey — What Happens After Training</h3>
+                      </div>
+                      <p className="text-sm leading-relaxed" style={{ color: "oklch(0.75 0 0)" }}>
+                        {roadmap.careerRealityCheck}
+                      </p>
+                    </div>
+                  )}
+
                   {/* 30-Day Action Plan */}
                   {roadmap.thirtyDayActionPlan && roadmap.thirtyDayActionPlan.length > 0 && (
                     <div
@@ -2044,7 +2207,7 @@ export default function Results() {
 
                   {/* Premium PDF Download */}
                   <div
-                    className="rounded-2xl p-6 flex items-center justify-between gap-4"
+                    className="rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
                     style={{
                       background: "oklch(0.55 0.18 240 / 0.08)",
                       border: "1px solid oklch(0.55 0.18 240 / 0.25)",
@@ -2073,6 +2236,11 @@ export default function Results() {
                 </div>
               )}
             </div>
+          )}
+
+          {/* ── Premium AI Chat ── */}
+          {premiumUnlocked && leadId && (
+            <PremiumChat leadId={leadId} />
           )}
 
           {/* ── Finance Referral Card ── */}

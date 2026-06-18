@@ -269,19 +269,60 @@ function ShareableCard({
 
 // ─── Result Card ──────────────────────────────────────────────────────────
 
+// Map standalone quiz answer values to main assessment QuizData fields
+function buildPrefillUrl(quiz: Quiz, answers: Record<string, string>): string {
+  const params = new URLSearchParams();
+  params.set("source", `quiz:${quiz.slug}`);
+
+  // readiness quiz mappings
+  if (quiz.slug === "flight-training-readiness") {
+    const medical = answers["r3"];
+    if (medical) params.set("class1Medical", medical === "have_class1" ? "Yes, I hold a Class 1" : medical === "no_concerns" ? "No concerns" : medical === "some_concerns" ? "Some concerns" : "Significant concerns");
+    const experience = answers["r7"];
+    if (experience) params.set("flyingExperience", experience === "none" ? "None" : experience === "trial" ? "Trial lesson only" : experience === "ppl" ? "PPL holder" : "50+ hours");
+    const seriousness = answers["r6"];
+    if (seriousness) params.set("seriousness", seriousness === "full_time" ? "I want to start as soon as possible" : seriousness === "part_time" ? "I'm planning but not ready yet" : "Just exploring");
+  }
+
+  // obstacle/barrier quiz mappings
+  if (quiz.slug === "biggest-obstacle") {
+    const barrier = answers["o1"];
+    if (barrier) params.set("biggestConcern", barrier === "finance" ? "Cost of training" : barrier === "medical" ? "Medical requirements" : barrier === "confidence" ? "Not sure I could do it" : barrier === "time" ? "Time commitment" : "Not enough information");
+  }
+
+  // affordability quiz mappings
+  if (quiz.slug === "can-you-afford-pilot-training") {
+    const savings = answers["af2"];
+    if (savings) {
+      if (savings === "over100k") params.set("budgetRange", "£100,000+");
+      else if (savings === "50k_100k") params.set("budgetRange", "£50,000–£100,000");
+      else if (savings === "20k_50k") params.set("budgetRange", "£20,000–£50,000");
+      else params.set("budgetRange", "Under £20,000");
+    }
+    const financeResearch = answers["af4"];
+    if (financeResearch === "yes_researched" || financeResearch === "yes_approved") params.set("wantsFinanceInfo", "Yes");
+  }
+
+  const qs = params.toString();
+  return qs ? `/quiz?${qs}` : "/quiz";
+}
+
 function ResultCard({
   quiz,
   result,
   score,
   total,
   onRetake,
+  answers = {},
 }: {
   quiz: Quiz;
   result: QuizResult;
   score: number;
   total: number;
   onRetake: () => void;
+  answers?: Record<string, string>;
 }) {
+  const prefillUrl = buildPrefillUrl(quiz, answers);
   const [emailInput, setEmailInput] = useState("");
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [emailError, setEmailError] = useState("");
@@ -552,7 +593,7 @@ function ResultCard({
               "The Free Assessment scores you across 5 dimensions, matches you with flight schools, and generates an AI-powered PDF roadmap — free, no obligation."}
           </p>
           <Link
-            href="/quiz"
+            href={result.cta.href?.startsWith("/quiz") ? prefillUrl : (result.cta.href ?? prefillUrl)}
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-white font-bold text-sm transition-all hover:scale-[1.02] no-underline w-full"
             style={{
               background:
@@ -733,6 +774,7 @@ export default function QuizPage() {
           score={score}
           total={maxScore}
           onRetake={handleRetake}
+          answers={answers}
         />
       ) : (
         <div

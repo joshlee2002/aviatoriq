@@ -44,6 +44,15 @@ import {
   getFlightDeckShare,
   createCalcSession,
   createFlightDeckEmailCapture,
+  getLatestLeadByEmail,
+  listPilotJobs,
+  createPilotJob,
+  updatePilotJob,
+  deletePilotJob,
+  listPilotStories,
+  createPilotStory,
+  updatePilotStory,
+  deletePilotStory,
 } from "./db";
 import { nanoid } from "nanoid";
 import Stripe from "stripe";
@@ -415,12 +424,47 @@ AviatorIQ Score: ${score}/100 (${category})`;
         };
       }),
 
+    retrieveByEmail: publicProcedure
+      .input(z.object({ email: z.string().email() }))
+      .mutation(async ({ input }) => {
+        const lead = await getLatestLeadByEmail(input.email);
+        if (!lead) {
+          // Return success regardless to prevent email enumeration
+          return { sent: true };
+        }
+        const appUrl = process.env.APP_URL ?? "https://aviatoriq-production.up.railway.app";
+        const resultsUrl = `${appUrl}/results/${lead.id}`;
+        // Send results link email
+        try {
+          await sendEmail({
+            to: input.email,
+            subject: "Your AviatorIQ results link",
+            react: React.createElement(WelcomeBlueprint, {
+              firstName: lead.fullName?.split(" ")[0] ?? "there",
+              score: lead.leadScore,
+              category: lead.leadCategory as "Hot" | "Warm" | "Cold",
+              resultsUrl,
+            }),
+          });
+        } catch (e) {
+          console.warn("[Retrieve] Email send failed:", e);
+        }
+        return { sent: true };
+      }),
+
     getPdfUrl: publicProcedure
-      .input(z.object({ leadId: z.number() }))
+      .input(z.object({ leadId: z.number(), requirePremium: z.boolean().optional() }))
       .query(async ({ input }) => {
         const lead = await getLeadById(input.leadId);
         if (!lead) throw new TRPCError({ code: "NOT_FOUND" });
-        return { pdfUrl: lead.pdfKey ?? null };
+        // Gate PDF behind premium purchase if requirePremium is set
+        if (input.requirePremium) {
+          const purchase = await getRoadmapPurchaseByLead(input.leadId);
+          if (purchase?.status !== "complete") {
+            return { pdfUrl: null, requiresPurchase: true };
+          }
+        }
+        return { pdfUrl: lead.pdfKey ?? null, requiresPurchase: false };
       }),
 
     generateRoadmap: publicProcedure
@@ -542,6 +586,9 @@ CRITICAL INSTRUCTIONS:
 3. The month-by-month timeline must be realistic for their specific route, country, budget, and start timeframe — not a generic template.
 4. The risk scenarios must address the specific risks for THIS candidate based on their barrier, medical confidence, funding method, and age — not generic aviation risks.
 5. Cost figures must be in the local currency of the candidate's country (GBP for UK, USD for USA, AUD for Australia, CAD for Canada, EUR for Europe, USD for UAE, NZD for New Zealand, ZAR for South Africa).
+6. The hidden costs section must be brutally honest — research shows 80% of student pilots underestimate costs and drop out. Help this candidate avoid that by naming the specific costs they haven't budgeted for.
+7. The school selection criteria must be actionable — give them the exact questions to ask schools, not generic advice.
+8. The career reality check must be honest about the full journey: training → time building → regional FO → captain upgrade. Most candidates have no idea this takes 5–15 years total.
 
 ═══════════════════════════════════════
 CANDIDATE PROFILE
@@ -579,7 +626,9 @@ ${schoolContext}
 Return a JSON object with EXACTLY these keys. Do not add or remove keys:
 {
   "pilotGoalSummary": "2-3 sentences. Summarise their specific goal, current situation, and what makes their profile unique. Reference their country, age, and what they've already done.",
+  "keyInsight": "1 powerful, honest insight that most aspiring pilots never hear — specific to THIS candidate's profile. Not encouragement. A genuine insight that could change how they approach their training journey. E.g. if they're 34 and self-funding modular, tell them the real timeline to first airline job. If they have medical uncertainty, tell them to get the medical done before spending a penny on training. This should feel like advice from a trusted mentor who has seen hundreds of pilots succeed and fail.",
   "biggestBarrier": "Name their single biggest barrier in plain English — be specific and honest. Not a list — one clear barrier.",
+  "barrierDeepDive": "4-5 sentences of deep, honest analysis of their biggest barrier. Go beyond surface advice. If cost is the barrier: explain the real cost breakdown including hidden costs (headset £300-£1000, ground school materials £500, exam fees £200 each x 14 ATPL exams, medical £300-£600, MCC £3,000-£5,000, type rating £15,000-£25,000 not included in school quotes). If medical is the barrier: explain the specific conditions that are commonly flagged, the SOLI/RVSM process, and that most conditions are manageable with the right AME. If confidence is the barrier: explain the 15-hour cliff that 80% of student pilots hit and how to prepare for it mentally. Always be specific to their profile.",
   "barrierAdvice": "3-4 sentences of specific, actionable advice to address their biggest barrier. Use real options from the verified market data above. Name specific programmes, lenders, or steps where relevant.",
   "strongestAsset": "2 sentences. What is genuinely working in their favour — be specific to their profile, not generic encouragement.",
   "recommendedRoute": "The recommended training route name (e.g. Integrated ATPL, Modular ATPL, FAA Part 141, CASA CPL)",
@@ -590,27 +639,42 @@ Return a JSON object with EXACTLY these keys. Do not add or remove keys:
   "estimatedDuration": "e.g. 18-24 months — be specific to their route and country",
   "readinessLabel": "Flight Ready | Development Phase | Exploration Phase",
   "readinessExplanation": "2-3 sentences about their readiness — be honest, not just encouraging. If they have gaps, name them.",
+  "hiddenCosts": [
+    { "item": "Cost item name", "estimatedCost": "e.g. £300-£1,000", "notes": "1 sentence explaining when this cost hits and why it's often missed" }
+  ],
+  "schoolSelectionCriteria": [
+    { "criterion": "What to check", "whyItMatters": "1-2 sentences on why this matters for THIS candidate specifically", "questionToAsk": "The exact question to ask the school" }
+  ],
   "monthlyTimeline": [
-    { "month": "Month 1-2", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase, referencing their country and route" },
-    { "month": "Month 3-4", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase" },
-    { "month": "Month 5-8", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase" },
-    { "month": "Month 9-14", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase" },
-    { "month": "Month 15-18", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase" },
-    { "month": "Month 19-24", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase" }
+    { "month": "Month 1-2", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase, referencing their country and route", "cost": "Optional: estimated cost for this phase if significant" },
+    { "month": "Month 3-4", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase", "cost": null },
+    { "month": "Month 5-8", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase", "cost": null },
+    { "month": "Month 9-14", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase", "cost": null },
+    { "month": "Month 15-18", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase", "cost": null },
+    { "month": "Month 19-24", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase", "cost": null }
   ],
   "riskScenarios": [
     { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate based on their profile" },
     { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" },
     { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" }
   ],
+  "careerRealityCheck": "3-4 sentences giving an honest picture of the full career journey AFTER training. Include: typical time from licence to first airline job (6-18 months), regional FO starting salary, time to captain upgrade (2-7 years at regional, 5-15 years at major), and the seniority system reality. Be honest — most candidates only think about training, not the 10-15 years after it.",
   "matchedSchoolRationale": "2-3 sentences explaining what type of school suits this candidate and why, based on their profile and the matched schools above. Reference specific school names if relevant.",
   "nextSteps": ["Specific step 1 — must reference their country/route", "Specific step 2", "Specific step 3", "Specific step 4", "Specific step 5"],
+  "thirtyDayActionPlan": ["Day 1-3: Specific action", "Day 4-7: Specific action", "Day 8-14: Specific action", "Day 15-21: Specific action", "Day 22-30: Specific action"],
   "medicalAdvice": "2-3 sentences about Class 1 Medical relevant to their specific situation and country. If they have concerns, address them directly and name the specific AME process for their country.",
   "financeConsiderations": "2-3 sentences about financing specific to their budget, funding method, and country. Name real options from the verified market data.",
   "disclaimer": "This report is guidance only and not official career, medical or financial advice. Costs are verified as of June 2026 but subject to change — always confirm directly with training providers before committing."
 }
 
-IMPORTANT: The monthlyTimeline must be tailored to their specific route and country — not a generic template. The riskScenarios must be the 3 most relevant risks for THIS specific candidate. If their medical confidence is low, that must be a risk. If their funding method is a loan, debt risk must appear. If they are over 40, age-related airline hiring must appear as a risk.`;
+IMPORTANT RULES:
+- The monthlyTimeline must be tailored to their specific route and country — not a generic template.
+- The riskScenarios must be the 3 most relevant risks for THIS specific candidate. If their medical confidence is low, that must be a risk. If their funding method is a loan, debt risk must appear. If they are over 40, age-related airline hiring must appear as a risk.
+- The hiddenCosts must include at least 5 items that are genuinely missed by most candidates — not just the headline training cost.
+- The schoolSelectionCriteria must include at least 4 criteria with specific questions to ask, tailored to their route and country.
+- The thirtyDayActionPlan must be genuinely actionable — specific tasks for each time window, not vague suggestions.
+- The careerRealityCheck must be honest about the post-training journey, not just the training itself.
+- The keyInsight must be something they could not get from a generic guide — it must be specific to their exact profile.`;
 
         // ── Graceful degradation: if OpenAI is unavailable, return structured fallback ──
         let roadmap: string;
@@ -653,8 +717,11 @@ IMPORTANT: The monthlyTimeline must be tailored to their specific route and coun
           // Build a deterministic fallback roadmap from lead data alone
           const fallback = {
             pilotGoalSummary: `${lead.fullName ?? "You"} ${lead.pilotGoal ? `want to become a ${lead.pilotGoal} pilot` : "are exploring a career in aviation"}. ${lead.country ? `Based in ${lead.country}.` : ""}`,
+            keyInsight: "Book your Class 1 Medical before spending a single pound on training. It is the one unknown that can derail everything else, and most candidates leave it too late. An AME appointment costs £300–£600 and takes a few hours. It is the cheapest and most important thing you can do first.",
             biggestBarrier:
               lead.biggestConcern ?? "Funding and finding the right school",
+            barrierDeepDive:
+              "The headline training cost is only part of the picture. Most candidates budget for the school prospectus price and are then surprised by the costs that come on top: headset (£300–£1,000), ground school materials (£400–£600), 14 ATPL exam fees (£150–£200 each), Class 1 Medical (£300–£600), MCC/JOC course (£3,000–£5,000), and a type rating (£15,000–£25,000) which is rarely included in school quotes. Budget 15–20% above the headline figure to avoid running out of funds mid-training — the most common reason pilots drop out.",
             barrierAdvice:
               "Speak directly to 2–3 flight schools to get accurate, up-to-date cost breakdowns and finance options. Many schools offer payment plans that are not advertised publicly.",
             strongestAsset:
@@ -676,6 +743,20 @@ IMPORTANT: The monthlyTimeline must be tailored to their specific route and coun
               lead.leadCategory === "Hot"
                 ? "You have strong indicators across funding, medical confidence, and commitment. You are ready to take the next step."
                 : "You are on the right path. A few key steps will move you from planning to action.",
+            hiddenCosts: [
+              { item: "Class 1 Medical", estimatedCost: "£300–£600", notes: "Required before starting commercial training — book this first before committing to any school." },
+              { item: "Headset", estimatedCost: "£300–£1,000", notes: "Schools provide basic headsets but most students buy their own within the first month." },
+              { item: "ATPL Ground School Materials", estimatedCost: "£400–£600", notes: "Books, question banks, and study apps on top of ground school fees." },
+              { item: "14 ATPL Exam Fees", estimatedCost: "£150–£200 each", notes: "Each of the 14 ATPL theory exams has a separate sitting fee — rarely included in school quotes." },
+              { item: "MCC/JOC Course", estimatedCost: "£3,000–£5,000", notes: "Multi-Crew Cooperation course required before airline applications — often not included in integrated school fees." },
+              { item: "Type Rating", estimatedCost: "£15,000–£25,000", notes: "Required for your first airline job — almost never included in training programme costs." },
+            ],
+            schoolSelectionCriteria: [
+              { criterion: "Pass rates", whyItMatters: "First-time ATPL exam pass rates and skills test pass rates directly affect your timeline and costs.", questionToAsk: "What is your first-time pass rate for ATPL theory exams and the CPL/IR skills test?" },
+              { criterion: "Aircraft availability", whyItMatters: "Training delays due to aircraft maintenance are the most common cause of cost overruns.", questionToAsk: "What is your aircraft-to-student ratio and what is your average weather/maintenance cancellation rate?" },
+              { criterion: "Airline partnerships", whyItMatters: "Formal airline partnerships can mean guaranteed interviews or priority hiring after graduation.", questionToAsk: "Do you have formal airline partnership agreements, and what does that mean for graduates in practice?" },
+              { criterion: "Finance and refund policy", whyItMatters: "Schools that require full upfront payment put you at risk if the school closes or you need to leave.", questionToAsk: "What is your refund policy if I need to leave training, and do you offer stage-by-stage payment?" },
+            ],
             nextSteps: [
               "Book a Class 1 Medical assessment with a CAA-approved AME",
               "Request prospectuses from 3 flight schools that match your route preference",
@@ -683,13 +764,21 @@ IMPORTANT: The monthlyTimeline must be tailored to their specific route and coun
               "Attend an open day or discovery flight at your shortlisted school",
               "Submit your application once you have confirmed funding",
             ],
+            thirtyDayActionPlan: [
+              "Day 1–3: Research and book a Class 1 Medical appointment with a CAA-approved AME.",
+              "Day 4–7: Request full prospectuses and cost breakdowns (including hidden costs) from 3 shortlisted schools.",
+              "Day 8–14: Research finance options — contact BBVA, Caledonian, and your bank. Get pre-qualification estimates.",
+              "Day 15–21: Attend an open day or book a discovery flight at your top school choice.",
+              "Day 22–30: Review your full budget including hidden costs, confirm your funding plan, and submit your application.",
+            ],
+            careerRealityCheck: "After qualifying, most new commercial pilots spend 6–18 months job hunting before their first airline role. Starting salaries at regional carriers are typically £25,000–35,000 as a First Officer. Captain upgrade at a regional airline takes 2–7 years depending on seniority and fleet growth. Reaching a major airline captain position typically takes 10–15 years from licence issue. The seniority system means your career progression is tied to the airline you join and when — choosing your first employer carefully matters more than most candidates realise.",
             medicalAdvice:
               "A Class 1 Medical is required for commercial pilot training. Book an assessment early — it is the single biggest unknown in your journey.",
             financeConsiderations:
               lead.wantsFinanceInfo === "Yes"
                 ? "Finance options are available at most integrated schools. Typical terms are 5–10 year repayment at competitive rates. Compare at least two providers before committing."
                 : "Most pilots self-fund or use a combination of savings and a bank loan. Start building a funding plan 12 months before your intended start date.",
-            schoolTypeRecommendation: `Look for a ${lead.preferredRoute === "Modular ATPL" ? "modular-friendly school with strong CFI support and flexible scheduling" : "fully integrated academy with airline partnerships and a structured cadet programme"}.`,
+            matchedSchoolRationale: `Look for a ${lead.preferredRoute === "Modular ATPL" ? "modular-friendly school with strong CFI support and flexible scheduling" : "fully integrated academy with airline partnerships and a structured cadet programme"}.`,
             disclaimer:
               "This report is guidance only and not official career, medical or financial advice. Always consult qualified professionals before making training decisions.",
             _fallback: true,
@@ -700,7 +789,95 @@ IMPORTANT: The monthlyTimeline must be tailored to their specific route and coun
         // Cache the roadmap
         await updateLead(lead.id, { aiRoadmap: roadmap });
 
+        // Regenerate PDF now that we have the AI roadmap content
+        // Only do this for real DB leads (not client-side fallback leads)
+        if (dbLead) {
+          const leadForPdf = await getLeadById(lead.id);
+          if (leadForPdf) {
+            generatePilotBlueprint(
+              leadForPdf,
+              undefined, // dimensions not needed here — already stored on lead
+              undefined
+            )
+              .then(async pdfUrl => {
+                await updateLead(lead.id, { pdfKey: pdfUrl });
+                console.log(`[PDF] Regenerated premium PDF for lead ${lead.id}`);
+              })
+              .catch(e => console.warn("[PDF] Premium PDF regeneration failed:", e));
+          }
+        }
+
         return { roadmap };
+      }),
+
+    /** Premium AI chat — allows premium purchasers to ask follow-up questions about their roadmap */
+    chat: publicProcedure
+      .input(
+        z.object({
+          leadId: z.number(),
+          messages: z.array(
+            z.object({
+              role: z.enum(["user", "assistant"]),
+              content: z.string().max(2000),
+            })
+          ).max(20),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const lead = await getLeadById(input.leadId);
+        if (!lead) throw new TRPCError({ code: "NOT_FOUND" });
+
+        // Verify premium purchase
+        const purchase = await getRoadmapPurchaseByLead(input.leadId);
+        if (purchase?.status !== "complete") {
+          throw new TRPCError({
+            code: "FORBIDDEN",
+            message: "Premium roadmap required to use AI chat.",
+          });
+        }
+
+        // Build system context from lead profile and roadmap
+        let roadmapContext = "";
+        if (lead.aiRoadmap) {
+          try {
+            const rm = JSON.parse(lead.aiRoadmap);
+            roadmapContext = `\n\nCANDIDATE'S GENERATED ROADMAP SUMMARY:\n- Recommended route: ${rm.recommendedRoute ?? "Unknown"}\n- Estimated cost: ${rm.estimatedCostMin ?? "?"}–${rm.estimatedCostMax ?? "?"} ${rm.currency ?? ""}\n- Estimated duration: ${rm.estimatedDuration ?? "Unknown"}\n- Biggest barrier: ${rm.biggestBarrier ?? "Unknown"}\n- Readiness: ${rm.readinessLabel ?? "Unknown"}`;
+          } catch {}
+        }
+
+        const systemPrompt = `You are an expert aviation career advisor helping a specific aspiring pilot understand their personalised training roadmap. You have full context about their profile and roadmap.
+
+CANDIDATE PROFILE:
+- Name: ${lead.fullName}
+- Age: ${lead.age ?? "Unknown"}
+- Country: ${lead.country ?? "Unknown"}
+- Goal: ${lead.pilotGoal ?? "Unknown"}
+- Budget: ${lead.budgetRange ?? "Unknown"}
+- Funding: ${lead.fundingMethod ?? "Unknown"}
+- Medical confidence: ${lead.class1Medical ?? "Unknown"}
+- Flying experience: ${lead.flyingExperience ?? "Unknown"}
+- Preferred route: ${lead.preferredRoute ?? "Unknown"}
+- Start timeframe: ${lead.startTimeframe ?? "Unknown"}${roadmapContext}
+
+GUIDELINES:
+- Be specific to their profile — never give generic advice
+- Be honest, even if the answer is difficult
+- Keep responses concise (2-4 paragraphs max)
+- If you don't know something specific to their country or situation, say so clearly
+- Never invent school names, costs, or regulatory requirements
+- Always recommend they verify information directly with schools and regulators`;
+
+        const response = await invokeLLM({
+          model: process.env.LLM_MODEL || "gpt-4.1-mini",
+          messages: [
+            { role: "system", content: systemPrompt },
+            ...input.messages.map(m => ({ role: m.role as "user" | "assistant", content: m.content })),
+          ],
+        });
+
+        const content = response.choices[0]?.message?.content;
+        const reply = typeof content === "string" ? content : "I'm sorry, I couldn't generate a response. Please try again.";
+        return { reply };
       }),
 
     /** Lead gate: capture name+email when a user unlocks a school's full details. */
@@ -1357,11 +1534,11 @@ IMPORTANT: The monthlyTimeline must be tailored to their specific route and coun
             {
               price_data: {
                 currency: "gbp",
-                unit_amount: 900, // £9.00
+                unit_amount: 1499, // £14.99
                 product_data: {
-                  name: "AviatorIQ Premium Roadmap",
+                  name: "AviatorIQ Premium Pilot Blueprint",
                   description:
-                    "Your personalised pilot training roadmap — month-by-month timeline, risk analysis, verified school costs, and a downloadable PDF blueprint.",
+                    "Your personalised pilot training roadmap — month-by-month timeline, hidden cost breakdown, school selection guide, risk analysis, career reality check, 30-day action plan, and a downloadable PDF blueprint.",
                   images: [],
                 },
               },
@@ -1438,6 +1615,120 @@ IMPORTANT: The monthlyTimeline must be tailored to their specific route and coun
       .query(async ({ input }) => {
         const purchase = await getRoadmapPurchaseByLead(input.leadId);
         return { purchased: purchase?.status === "complete" };
+      }),
+  }),
+
+  // ─── Pilot Jobs ─────────────────────────────────────────────────────────────────────────────
+  jobs: router({
+    list: publicProcedure
+      .input(z.object({ region: z.string().optional() }))
+      .query(async ({ input }) => {
+        const jobs = await listPilotJobs(input.region);
+        return { jobs };
+      }),
+    create: adminProcedure
+      .input(z.object({
+        title: z.string().min(1).max(255),
+        airline: z.string().min(1).max(255),
+        location: z.string().min(1).max(255),
+        type: z.enum(["First Officer", "Captain", "Cadet", "Instructor", "Other"]),
+        hours: z.string().optional(),
+        salary: z.string().optional(),
+        deadline: z.string().optional(),
+        link: z.string().url(),
+        badge: z.string().optional(),
+        description: z.string().min(1),
+        region: z.enum(["UK", "US", "Global"]).default("UK"),
+        active: z.boolean().default(true),
+      }))
+      .mutation(async ({ input }) => {
+        const id = await createPilotJob(input);
+        return { id };
+      }),
+    update: adminProcedure
+      .input(z.object({
+        id: z.number().int(),
+        title: z.string().optional(),
+        airline: z.string().optional(),
+        location: z.string().optional(),
+        type: z.enum(["First Officer", "Captain", "Cadet", "Instructor", "Other"]).optional(),
+        hours: z.string().optional(),
+        salary: z.string().optional(),
+        deadline: z.string().optional(),
+        link: z.string().url().optional(),
+        badge: z.string().optional(),
+        description: z.string().optional(),
+        region: z.enum(["UK", "US", "Global"]).optional(),
+        active: z.boolean().optional(),
+      }))
+      .mutation(async ({ input }) => {
+        const { id, ...data } = input;
+        await updatePilotJob(id, data);
+        return { success: true };
+      }),
+    delete: adminProcedure
+      .input(z.object({ id: z.number().int() }))
+      .mutation(async ({ input }) => {
+        await deletePilotJob(input.id);
+        return { success: true };
+      }),
+  }),
+
+  // ─── Pilot Stories ────────────────────────────────────────────────────────────────────────────
+  stories: router({
+    list: publicProcedure.query(async () => {
+      const stories = await listPilotStories();
+      return { stories };
+    }),
+    create: adminProcedure
+      .input(z.object({
+        name: z.string().min(1).max(200),
+        role: z.string().min(1).max(200),
+        airline: z.string().optional(),
+        route: z.string().optional(),
+        trainingDuration: z.string().optional(),
+        totalCost: z.string().optional(),
+        school: z.string().optional(),
+        country: z.string().optional(),
+        heroQuote: z.string().min(1),
+        qa: z.string().min(1), // JSON string
+        tags: z.string().optional(),
+        imageUrl: z.string().optional(),
+        active: z.boolean().default(true),
+        featured: z.boolean().default(false),
+      }))
+      .mutation(async ({ input }) => {
+        const id = await createPilotStory(input);
+        return { id };
+      }),
+    update: adminProcedure
+      .input(z.object({
+        id: z.number().int(),
+        name: z.string().optional(),
+        role: z.string().optional(),
+        airline: z.string().optional(),
+        route: z.string().optional(),
+        trainingDuration: z.string().optional(),
+        totalCost: z.string().optional(),
+        school: z.string().optional(),
+        country: z.string().optional(),
+        heroQuote: z.string().optional(),
+        qa: z.string().optional(),
+        tags: z.string().optional(),
+        imageUrl: z.string().optional(),
+        active: z.boolean().optional(),
+        featured: z.boolean().optional(),
+      }))
+      .mutation(async ({ input }) => {
+        const { id, ...data } = input;
+        await updatePilotStory(id, data);
+        return { success: true };
+      }),
+    delete: adminProcedure
+      .input(z.object({ id: z.number().int() }))
+      .mutation(async ({ input }) => {
+        await deletePilotStory(input.id);
+        return { success: true };
       }),
   }),
 });

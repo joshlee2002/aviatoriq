@@ -32,9 +32,21 @@ interface RiskScenario {
   impact: "High" | "Medium" | "Low";
   mitigation: string;
 }
+interface HiddenCostItem {
+  item: string;
+  estimatedCost: string;
+  notes: string;
+}
+interface SchoolCriterion {
+  criterion: string;
+  whyItMatters: string;
+  questionToAsk: string;
+}
 interface AiRoadmap {
   pilotGoalSummary?: string;
+  keyInsight?: string;
   biggestBarrier?: string;
+  barrierDeepDive?: string;
   barrierAdvice?: string;
   strongestAsset?: string;
   recommendedRoute?: string;
@@ -45,10 +57,14 @@ interface AiRoadmap {
   estimatedDuration?: string;
   readinessLabel?: string;
   readinessExplanation?: string;
+  hiddenCosts?: HiddenCostItem[];
+  schoolSelectionCriteria?: SchoolCriterion[];
   monthlyTimeline?: TimelineEntry[];
   riskScenarios?: RiskScenario[];
+  careerRealityCheck?: string;
   matchedSchoolRationale?: string;
   nextSteps?: string[];
+  thirtyDayActionPlan?: string[];
   medicalAdvice?: string;
   financeConsiderations?: string;
   disclaimer?: string;
@@ -336,6 +352,71 @@ export async function generatePilotBlueprint(
     }
 
     // ── Medical Advice ──────────────────────────────────────────────────────
+    // ── Hidden Costs ──────────────────────────────────────────────────────────
+    if (ai?.hiddenCosts && ai.hiddenCosts.length > 0) {
+      y = pageBreakIfNeeded(doc, y, 200);
+      y = sectionHeader(doc, "Hidden Costs Nobody Tells You About", y, pageWidth);
+      doc.fontSize(9).fillColor(DARK_GREY).font("Helvetica").text(
+        "These costs are rarely included in school prospectus quotes. Budget for all of them before committing.",
+        50, y, { width: contentWidth }
+      );
+      y += 20;
+      for (const cost of ai.hiddenCosts) {
+        y = pageBreakIfNeeded(doc, y, 50);
+        doc.rect(50, y, contentWidth, 22).fill(LIGHT_GREY);
+        doc.fontSize(9).fillColor(NAVY).font("Helvetica-Bold").text(cost.item, 60, y + 6, { width: contentWidth - 160 });
+        doc.fontSize(9).fillColor(PRIMARY).font("Helvetica-Bold").text(cost.estimatedCost, contentWidth - 40, y + 6, { width: 80, align: "right" });
+        y += 26;
+        doc.fontSize(8).fillColor(DARK_GREY).font("Helvetica").text(cost.notes, 60, y, { width: contentWidth - 20 });
+        y += doc.heightOfString(cost.notes, { width: contentWidth - 20 }) + 10;
+      }
+      y += 6;
+    }
+
+    // ── School Selection Criteria ──────────────────────────────────────────────
+    if (ai?.schoolSelectionCriteria && ai.schoolSelectionCriteria.length > 0) {
+      y = pageBreakIfNeeded(doc, y, 200);
+      y = sectionHeader(doc, "How to Choose Your School — Questions to Ask", y, pageWidth);
+      doc.fontSize(9).fillColor(DARK_GREY).font("Helvetica").text(
+        "Ask every school you visit these exact questions. Most candidates never ask them.",
+        50, y, { width: contentWidth }
+      );
+      y += 20;
+      for (const c of ai.schoolSelectionCriteria) {
+        y = pageBreakIfNeeded(doc, y, 80);
+        doc.fontSize(9).fillColor(NAVY).font("Helvetica-Bold").text(c.criterion, 50, y, { width: contentWidth });
+        y += 14;
+        doc.fontSize(8).fillColor(DARK_GREY).font("Helvetica").text(c.whyItMatters, 50, y, { width: contentWidth });
+        y += doc.heightOfString(c.whyItMatters, { width: contentWidth }) + 6;
+        doc.fontSize(8).fillColor(PRIMARY).font("Helvetica-Bold").text(`Ask: "${c.questionToAsk}"`, 50, y, { width: contentWidth });
+        y += doc.heightOfString(`Ask: "${c.questionToAsk}"`, { width: contentWidth }) + 12;
+      }
+      y += 6;
+    }
+
+    // ── Career Reality Check ───────────────────────────────────────────────────
+    if (ai?.careerRealityCheck) {
+      y = pageBreakIfNeeded(doc, y, 120);
+      y = sectionHeader(doc, "The Full Career Journey — What Happens After Training", y, pageWidth);
+      doc.fontSize(10).fillColor(DARK_GREY).font("Helvetica").text(ai.careerRealityCheck, 50, y, { width: contentWidth });
+      y += doc.heightOfString(ai.careerRealityCheck, { width: contentWidth }) + 16;
+    }
+
+    // ── 30-Day Action Plan ─────────────────────────────────────────────────────
+    if (ai?.thirtyDayActionPlan && ai.thirtyDayActionPlan.length > 0) {
+      y = pageBreakIfNeeded(doc, y, 200);
+      y = sectionHeader(doc, "Your 30-Day Action Plan", y, pageWidth);
+      for (let i = 0; i < ai.thirtyDayActionPlan.length; i++) {
+        const action = ai.thirtyDayActionPlan[i]!;
+        y = pageBreakIfNeeded(doc, y, 40);
+        doc.circle(62, y + 6, 8).fill(GREEN);
+        doc.fontSize(9).fillColor(WHITE).font("Helvetica-Bold").text(`${i + 1}`, 58, y + 2, { width: 8, align: "center" });
+        doc.fontSize(9).fillColor(DARK_GREY).font("Helvetica").text(action, 76, y, { width: contentWidth - 30 });
+        y += doc.heightOfString(action, { width: contentWidth - 30 }) + 10;
+      }
+      y += 10;
+    }
+
     if (ai?.medicalAdvice) {
       y = pageBreakIfNeeded(doc, y, 120);
       y = sectionHeader(doc, "Class 1 Medical — Your Situation", y, pageWidth);
