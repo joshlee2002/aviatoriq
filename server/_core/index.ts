@@ -96,7 +96,7 @@ async function startServer() {
                   const firstName = lead.fullName?.split(" ")[0] ?? "there";
                   const appUrl =
                     process.env.APP_URL ??
-                    "https://aviatoriq-production.up.railway.app";
+                    "https://aviatoriq-production-4b36.up.railway.app";
                   const resultsUrl = `${appUrl}/results/${lead.id}`;
                   await sendEmail({
                     to: lead.email,

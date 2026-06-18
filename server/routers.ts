@@ -341,7 +341,7 @@ AviatorIQ Score: ${score}/100 (${category})`;
             category: category as "Hot" | "Warm" | "Cold",
             resultsUrl: `${
               process.env.APP_URL ??
-              "https://aviatoriq-production.up.railway.app"
+              "https://aviatoriq-production-4b36.up.railway.app"
             }/results/${leadId}`,
           }),
         }).catch(e => console.warn("[Email] Welcome email failed (non-fatal):", e));
@@ -432,7 +432,7 @@ AviatorIQ Score: ${score}/100 (${category})`;
           // Return success regardless to prevent email enumeration
           return { sent: true };
         }
-        const appUrl = process.env.APP_URL ?? "https://aviatoriq-production.up.railway.app";
+        const appUrl = process.env.APP_URL ?? "https://aviatoriq-production-4b36.up.railway.app";
         const resultsUrl = `${appUrl}/results/${lead.id}`;
         // Send results link email
         try {
@@ -1228,7 +1228,7 @@ GUIDELINES:
               })),
               resultsUrl: `${
                 process.env.APP_URL ??
-                "https://aviatoriq-production.up.railway.app"
+                "https://aviatoriq-production-4b36.up.railway.app"
               }/results/${lead.id}`,
             }),
           }).catch(e => console.warn("[Email] Introduction confirmation email failed (non-fatal):", e));
