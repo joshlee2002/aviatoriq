@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `roadmap_purchases` (
   `updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
   CONSTRAINT `roadmap_purchases_id` PRIMARY KEY(`id`),
   CONSTRAINT `roadmap_purchases_stripe_session_unique` UNIQUE(`stripeSessionId`)
-);
+);--> statement-breakpoint
 
 CREATE TABLE IF NOT EXISTS `quiz_email_captures` (
   `id` int AUTO_INCREMENT NOT NULL,

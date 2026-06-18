@@ -11,7 +11,7 @@ CREATE TABLE `flight_deck_email_captures` (
   `source` varchar(100) DEFAULT 'flight_deck_results',
   `createdAt` timestamp NOT NULL DEFAULT (now()),
   CONSTRAINT `flight_deck_email_captures_id` PRIMARY KEY(`id`)
-);
+);--> statement-breakpoint
 
 CREATE TABLE `school_subscriptions` (
   `id` int AUTO_INCREMENT NOT NULL,
