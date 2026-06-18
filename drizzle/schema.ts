@@ -304,3 +304,17 @@ export const roadmapPurchases = mysqlTable("roadmap_purchases", {
 });
 export type RoadmapPurchase = typeof roadmapPurchases.$inferSelect;
 export type InsertRoadmapPurchase = typeof roadmapPurchases.$inferInsert;
+// ─── Quiz Email Captures ──────────────────────────────────────────────────────
+export const quizEmailCaptures = mysqlTable("quiz_email_captures", {
+  id: int("id").autoincrement().primaryKey(),
+  email: varchar("email", { length: 320 }).notNull(),
+  name: varchar("name", { length: 200 }),
+  quizSlug: varchar("quizSlug", { length: 100 }).notNull(),
+  quizTitle: varchar("quizTitle", { length: 200 }),
+  resultId: varchar("resultId", { length: 100 }),
+  resultTitle: varchar("resultTitle", { length: 200 }),
+  consentToContact: boolean("consentToContact").default(false).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+export type QuizEmailCapture = typeof quizEmailCaptures.$inferSelect;
+export type InsertQuizEmailCapture = typeof quizEmailCaptures.$inferInsert;

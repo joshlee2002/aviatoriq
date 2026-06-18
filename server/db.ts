@@ -27,6 +27,7 @@ import {
   InsertCalcSession,
   roadmapPurchases,
   RoadmapPurchase,
+  quizEmailCaptures,
 } from "../drizzle/schema";
 import { ENV } from "./_core/env";
 
@@ -958,4 +959,28 @@ export async function getRoadmapPurchaseBySession(
     .where(eq(roadmapPurchases.stripeSessionId, stripeSessionId))
     .limit(1);
   return rows[0];
+}
+
+// ─── Quiz Email Captures ──────────────────────────────────────────────────────
+export async function createQuizEmailCapture(data: {
+  email: string;
+  name?: string;
+  quizSlug: string;
+  quizTitle?: string;
+  resultId?: string;
+  resultTitle?: string;
+  consentToContact: boolean;
+}): Promise<number> {
+  const result = await db
+    .insert(quizEmailCaptures)
+    .values({
+      email: data.email,
+      name: data.name,
+      quizSlug: data.quizSlug,
+      quizTitle: data.quizTitle,
+      resultId: data.resultId,
+      resultTitle: data.resultTitle,
+      consentToContact: data.consentToContact,
+    });
+  return (result[0] as any).insertId;
 }

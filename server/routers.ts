@@ -1276,6 +1276,43 @@ IMPORTANT: The monthlyTimeline must be tailored to their specific route and coun
         return { ok: true };
       }),
   }),
+  // ─── Quizzes ───────────────────────────────────────────────────────────────
+  quizzes: router({
+    captureEmail: publicProcedure
+      .input(
+        z.object({
+          email: z.string().email(),
+          name: z.string().optional(),
+          quizSlug: z.string(),
+          quizTitle: z.string().optional(),
+          resultId: z.string().optional(),
+          resultTitle: z.string().optional(),
+          consentToContact: z.boolean(),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const { createQuizEmailCapture } = await import("./db");
+        await createQuizEmailCapture({
+          email: input.email,
+          name: input.name,
+          quizSlug: input.quizSlug,
+          quizTitle: input.quizTitle,
+          resultId: input.resultId,
+          resultTitle: input.resultTitle,
+          consentToContact: input.consentToContact,
+        });
+        try {
+          await notifyOwner({
+            title: `\uD83C\uDFAF New Quiz Email: ${input.quizTitle ?? input.quizSlug}`,
+            content: `Result: ${input.resultTitle ?? input.resultId ?? "N/A"}\nEmail: ${input.email}\nName: ${input.name ?? "Unknown"}`,
+          });
+        } catch (e) {
+          // non-fatal
+        }
+        return { success: true };
+      }),
+  }),
+
   // ─── Payments ──────────────────────────────────────────────────────────────
   payments: router({
     // Create a Stripe Checkout session for the premium roadmap
@@ -1405,3 +1442,7 @@ IMPORTANT: The monthlyTimeline must be tailored to their specific route and coun
   }),
 });
 export type AppRouter = typeof appRouter;
+
+// ─── Quizzes Router ───────────────────────────────────────────────────────────
+// Note: appRouter is already exported above; we patch it via a separate export
+// so we don't break the existing structure. Instead, add to the existing router:

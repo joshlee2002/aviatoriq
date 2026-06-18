@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useRoute, Link } from "wouter";
 import {
   getQuizBySlug,
@@ -11,6 +11,7 @@ import PublicNav from "@/components/PublicNav";
 import RecommendedQuizzes from "@/components/RecommendedQuizzes";
 import PublicFooter from "@/components/PublicFooter";
 import SEO from "@/components/SEO";
+import { trpc } from "@/lib/trpc";
 import {
   ArrowLeft,
   ArrowRight,
@@ -20,6 +21,9 @@ import {
   RotateCcw,
   ChevronLeft,
   Plane,
+  Download,
+  Mail,
+  CheckCircle,
 } from "lucide-react";
 
 // ─── Helpers ─────────────────────────────────────────────────────────────
@@ -29,7 +33,6 @@ function computeResult(
   answers: Record<string, string>
 ): QuizResult {
   if (quiz.type === "personality") {
-    // Count archetype votes
     const votes: Record<string, number> = {};
     quiz.questions.forEach(q => {
       const chosen = q.options.find(o => o.value === answers[q.id]);
@@ -46,8 +49,6 @@ function computeResult(
   }
 
   if (quiz.type === "diagnostic") {
-    // Obstacle quiz: find most-voted category
-    // Normalize variant values (e.g. finance2 → finance) before tallying
     const normalizeValue = (v: string) => v.replace(/\d+$/, "");
     const votes: Record<string, number> = {};
     quiz.questions.forEach(q => {
@@ -60,10 +61,8 @@ function computeResult(
     const top = Object.entries(votes).sort((a, b) => b[1] - a[1])[0]?.[0];
     const byId = quiz.results.find(r => r.id === top);
     if (byId) return byId;
-    // Fallback: scored
   }
 
-  // Scored / trivia / visual / cognitive — sum scores
   let total = 0;
   quiz.questions.forEach(q => {
     const chosen = q.options.find(o => o.value === answers[q.id]);
@@ -108,7 +107,7 @@ function OptionButton({
 }: {
   option: QuizOption;
   selected: boolean;
-  revealed: boolean; // trivia: show correct/wrong
+  revealed: boolean;
   onClick: () => void;
   accentColor: string;
 }) {
@@ -178,6 +177,96 @@ function OptionButton({
   );
 }
 
+// ─── Shareable Card (hidden, used for html2canvas) ────────────────────────
+
+function ShareableCard({
+  quiz,
+  result,
+  score,
+  total,
+  cardRef,
+}: {
+  quiz: Quiz;
+  result: QuizResult;
+  score: number;
+  total: number;
+  cardRef: React.RefObject<HTMLDivElement>;
+}) {
+  const isScored = ["scored", "trivia", "visual", "cognitive"].includes(quiz.type);
+  const pct = isScored ? Math.round((score / total) * 100) : null;
+
+  return (
+    <div
+      ref={cardRef}
+      style={{
+        position: "fixed",
+        left: "-9999px",
+        top: 0,
+        width: "600px",
+        height: "315px",
+        background: "linear-gradient(135deg, #0a1628 0%, #1a2d4e 100%)",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "40px",
+        fontFamily: "system-ui, sans-serif",
+        borderRadius: "16px",
+        overflow: "hidden",
+      }}
+    >
+      {/* Background accent */}
+      <div style={{
+        position: "absolute",
+        top: "-60px",
+        right: "-60px",
+        width: "200px",
+        height: "200px",
+        borderRadius: "50%",
+        background: `${result.color}22`,
+        filter: "blur(40px)",
+      }} />
+
+      {/* AviatorIQ brand */}
+      <div style={{ position: "absolute", top: "20px", left: "28px", display: "flex", alignItems: "center", gap: "8px" }}>
+        <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: result.color }} />
+        <span style={{ color: "rgba(255,255,255,0.5)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase" }}>
+          AviatorIQ
+        </span>
+      </div>
+
+      {/* Quiz title */}
+      <p style={{ color: "rgba(255,255,255,0.45)", fontSize: "12px", marginBottom: "12px", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+        {quiz.title}
+      </p>
+
+      {/* Emoji or score */}
+      {pct !== null ? (
+        <div style={{ fontSize: "40px", fontWeight: 800, color: result.color, marginBottom: "8px" }}>
+          {score}/{total}
+        </div>
+      ) : (
+        <div style={{ fontSize: "52px", marginBottom: "8px" }}>{result.emoji}</div>
+      )}
+
+      {/* Result title */}
+      <h2 style={{ color: "#fff", fontSize: "28px", fontWeight: 800, textAlign: "center", margin: "0 0 6px 0" }}>
+        {result.title}
+      </h2>
+
+      {/* Subtitle */}
+      <p style={{ color: result.color, fontSize: "14px", textAlign: "center", margin: "0 0 16px 0" }}>
+        {result.subtitle}
+      </p>
+
+      {/* CTA */}
+      <div style={{ position: "absolute", bottom: "20px", right: "28px" }}>
+        <span style={{ color: "rgba(255,255,255,0.35)", fontSize: "11px" }}>aviatoriq.com</span>
+      </div>
+    </div>
+  );
+}
+
 // ─── Result Card ──────────────────────────────────────────────────────────
 
 function ResultCard({
@@ -193,10 +282,61 @@ function ResultCard({
   total: number;
   onRetake: () => void;
 }) {
+  const [emailInput, setEmailInput] = useState("");
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [emailError, setEmailError] = useState("");
+  const [generatingCard, setGeneratingCard] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  const captureEmailMutation = trpc.quizzes.captureEmail.useMutation({
+    onSuccess: () => setEmailSubmitted(true),
+    onError: () => setEmailError("Something went wrong. Please try again."),
+  });
+
   const isScored = ["scored", "trivia", "visual", "cognitive"].includes(
     quiz.type
   );
   const pct = isScored ? Math.round((score / total) * 100) : null;
+
+  const handleEmailSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!emailInput || !/^[^@]+@[^@]+\.[^@]+$/.test(emailInput)) {
+      setEmailError("Please enter a valid email address.");
+      return;
+    }
+    setEmailError("");
+    captureEmailMutation.mutate({
+      email: emailInput,
+      quizSlug: quiz.slug,
+      quizTitle: quiz.title,
+      resultId: result.id,
+      resultTitle: result.title,
+      consentToContact: true,
+    });
+  };
+
+  const handleGenerateCard = async () => {
+    if (!cardRef.current) return;
+    setGeneratingCard(true);
+    try {
+      const html2canvas = (await import("html2canvas")).default;
+      const canvas = await html2canvas(cardRef.current, {
+        backgroundColor: "#0a1628",
+        scale: 2,
+        useCORS: true,
+        logging: false,
+      });
+      const url = canvas.toDataURL("image/png");
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `aviatoriq-${quiz.slug}-result.png`;
+      a.click();
+    } catch (e) {
+      console.warn("Card generation failed:", e);
+    } finally {
+      setGeneratingCard(false);
+    }
+  };
 
   const handleShare = () => {
     const text = `I just took the "${quiz.title}" quiz on AviatorIQ and got: ${result.title}! ${result.subtitle}. Try it yourself 👉`;
@@ -213,8 +353,25 @@ function ResultCard({
     }
   };
 
+  // Email capture prompt — personalised by result type
+  const emailPromptText = (() => {
+    if (quiz.type === "personality") {
+      return `Want a personalised guide for ${result.title}? We'll send you the exact training route, costs, and next steps for your pilot type.`;
+    }
+    if (quiz.type === "diagnostic") {
+      return `We'll send you a free guide on overcoming your biggest obstacle — tailored to your result.`;
+    }
+    if (quiz.type === "scored" || quiz.type === "cognitive") {
+      return `Get a personalised breakdown of your result and what it means for your training readiness — sent to your inbox.`;
+    }
+    return `Get a free guide based on your result, plus tips on starting your pilot training journey.`;
+  })();
+
   return (
     <div className="flex-1 flex flex-col items-center justify-center px-4 py-10">
+      {/* Hidden shareable card for html2canvas */}
+      <ShareableCard quiz={quiz} result={result} score={score} total={total} cardRef={cardRef} />
+
       <div className="w-full max-w-lg">
         {/* Score ring (for scored quizzes) */}
         {pct !== null && (
@@ -283,8 +440,63 @@ function ResultCard({
           </p>
         </div>
 
-        {/* Actions */}
-        <div className="flex flex-col sm:flex-row gap-3">
+        {/* ── Email Capture ─────────────────────────────────────────────── */}
+        <div
+          className="mb-6 p-5 rounded-2xl border"
+          style={{
+            background: "linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02))",
+            borderColor: `${result.color}40`,
+          }}
+        >
+          {emailSubmitted ? (
+            <div className="flex items-center gap-3 text-center justify-center py-2">
+              <CheckCircle className="w-5 h-5 text-emerald-400 shrink-0" />
+              <p className="text-emerald-300 text-sm font-semibold">
+                You're in! Check your inbox for your personalised guide.
+              </p>
+            </div>
+          ) : (
+            <>
+              <div className="flex items-start gap-3 mb-4">
+                <Mail className="w-5 h-5 shrink-0 mt-0.5" style={{ color: result.color }} />
+                <div>
+                  <p className="text-white font-semibold text-sm mb-1">
+                    Get your free personalised guide
+                  </p>
+                  <p className="text-white/55 text-xs leading-relaxed">
+                    {emailPromptText}
+                  </p>
+                </div>
+              </div>
+              <form onSubmit={handleEmailSubmit} className="flex gap-2">
+                <input
+                  type="email"
+                  value={emailInput}
+                  onChange={e => { setEmailInput(e.target.value); setEmailError(""); }}
+                  placeholder="your@email.com"
+                  className="flex-1 bg-white/8 border border-white/15 rounded-xl px-4 py-2.5 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-white/30 transition-colors"
+                />
+                <button
+                  type="submit"
+                  disabled={captureEmailMutation.isPending}
+                  className="px-4 py-2.5 rounded-xl text-white text-sm font-bold transition-all hover:scale-105 disabled:opacity-50 whitespace-nowrap"
+                  style={{ background: result.color }}
+                >
+                  {captureEmailMutation.isPending ? "Sending..." : "Send it"}
+                </button>
+              </form>
+              {emailError && (
+                <p className="text-red-400 text-xs mt-2">{emailError}</p>
+              )}
+              <p className="text-white/25 text-xs mt-2">
+                No spam. Unsubscribe any time.
+              </p>
+            </>
+          )}
+        </div>
+
+        {/* ── Actions ───────────────────────────────────────────────────── */}
+        <div className="flex flex-col sm:flex-row gap-3 mb-4">
           <Link
             href={result.cta.href}
             className="flex-1 flex items-center justify-center gap-2 font-bold px-6 py-3.5 rounded-2xl text-sm transition-all duration-200 hover:scale-105 no-underline"
@@ -309,9 +521,19 @@ function ResultCard({
           </button>
         </div>
 
-        {/* Free Assessment CTA */}
+        {/* ── Download shareable card ───────────────────────────────────── */}
+        <button
+          onClick={handleGenerateCard}
+          disabled={generatingCard}
+          className="w-full flex items-center justify-center gap-2 bg-white/5 hover:bg-white/8 border border-white/10 text-white/60 hover:text-white/80 font-semibold px-5 py-3 rounded-2xl text-sm transition-all duration-200 mb-6 disabled:opacity-50"
+        >
+          <Download className="w-4 h-4" />
+          {generatingCard ? "Generating..." : "Download shareable result card"}
+        </button>
+
+        {/* ── Contextual Assessment CTA ─────────────────────────────────── */}
         <div
-          className="mt-6 p-6 rounded-2xl text-center"
+          className="p-6 rounded-2xl text-center"
           style={{
             background:
               "linear-gradient(135deg, oklch(0.55 0.18 240 / 0.12), oklch(0.45 0.2 260 / 0.08))",
@@ -323,12 +545,11 @@ function ResultCard({
             style={{ color: "oklch(0.72 0.18 65)" }}
           />
           <p className="font-display font-bold text-white text-base mb-1">
-            Want a full personalised roadmap?
+            {result.cta.assessmentPrompt ?? "Want a full personalised roadmap?"}
           </p>
           <p className="text-xs mb-4" style={{ color: "oklch(0.55 0.04 240)" }}>
-            The Free Assessment scores you across 5 dimensions, matches you with
-            flight schools, and generates an AI-powered PDF roadmap — free, no
-            obligation.
+            {result.cta.assessmentSubtext ??
+              "The Free Assessment scores you across 5 dimensions, matches you with flight schools, and generates an AI-powered PDF roadmap — free, no obligation."}
           </p>
           <Link
             href="/quiz"
@@ -339,7 +560,7 @@ function ResultCard({
               boxShadow: "0 4px 20px oklch(0.72 0.18 65 / 0.3)",
             }}
           >
-            Get My Free Pilot Assessment
+            {result.cta.assessmentLabel ?? "Get My Free Pilot Assessment"}
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -360,12 +581,11 @@ export default function QuizPage() {
 
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
-  const [revealed, setRevealed] = useState(false); // trivia: show explanation
+  const [revealed, setRevealed] = useState(false);
   const [done, setDone] = useState(false);
   const [animating, setAnimating] = useState(false);
   const [fadeIn, setFadeIn] = useState(true);
 
-  // Reset on slug change
   useEffect(() => {
     setCurrentStep(0);
     setAnswers({});
@@ -432,10 +652,8 @@ export default function QuizPage() {
     setAnswers(newAnswers);
 
     if (isTriviaType) {
-      // Reveal correct/wrong, then wait for "Next" button
       setRevealed(true);
     } else {
-      // Auto-advance after short delay
       setTimeout(advanceQuestion, 300);
     }
   };
