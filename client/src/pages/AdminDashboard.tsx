@@ -1443,6 +1443,55 @@ function PartnerApplicationsPanel() {
   const entries = waitlistQuery.data ?? [];
 
   return (
+    <div className="space-y-6">
+
+      {/* ── Sample Lead Card ─────────────────────────────────────────────── */}
+      <div className="card-base overflow-hidden">
+        <div className="p-4 border-b border-[var(--color-border)] flex items-center gap-2">
+          <Users className="w-5 h-5 text-[var(--color-primary)]" />
+          <h3 className="font-display font-bold text-[var(--color-navy)]">
+            What a Lead Looks Like
+          </h3>
+          <span className="ml-auto text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200 font-medium">
+            Sample only — not a real lead
+          </span>
+        </div>
+        <div className="p-5">
+          <p className="text-sm text-[var(--color-muted-foreground)] mb-4">
+            Every lead AviatorIQ generates includes the following verified profile data. Partner schools receive an introduction email with the lead's name, contact, and training profile.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+            {[
+              { label: "Name", value: "James Carter" },
+              { label: "Email", value: "james.carter@example.com" },
+              { label: "Country", value: "United Kingdom" },
+              { label: "Age", value: "24" },
+              { label: "Preferred Route", value: "Integrated ATPL" },
+              { label: "Budget", value: "£80k–£100k" },
+              { label: "Finance Needed", value: "Yes — looking for loan options" },
+              { label: "Target Airline", value: "Major UK carrier (easyJet / BA)" },
+              { label: "Start Timeline", value: "Within 6 months" },
+              { label: "Medical Status", value: "Class 1 confirmed" },
+              { label: "Lead Score", value: "82 / 100 (Hot)" },
+              { label: "Lead Tags", value: "school-ready · finance-ready · cadet-suitable" },
+              { label: "Strongest Asset", value: "High readiness score and confirmed budget" },
+              { label: "Funding Gap", value: "~£15,000" },
+            ].map(({ label, value }) => (
+              <div key={label} className="flex flex-col gap-0.5 p-3 rounded-xl bg-[var(--color-muted)]/40 border border-[var(--color-border)]">
+                <span className="text-xs font-semibold text-[var(--color-muted-foreground)] uppercase tracking-wide">{label}</span>
+                <span className="text-[var(--color-navy)] font-medium">{value}</span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 p-3 rounded-xl bg-green-50 border border-green-200">
+            <p className="text-xs text-green-800 font-medium">
+              Partner schools pay a flat monthly fee or per-introduction fee to receive warm introductions like this. The lead has already expressed interest in speaking to a school.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* ── Partner Applications ─────────────────────────────────────────── */}
     <div className="card-base overflow-hidden">
       <div className="p-4 border-b border-[var(--color-border)] flex items-center gap-2">
         <Building2 className="w-5 h-5 text-[var(--color-primary)]" />
@@ -1550,6 +1599,7 @@ function PartnerApplicationsPanel() {
           ))}
         </div>
       )}
+    </div>
     </div>
   );
 }

@@ -117,6 +117,8 @@ interface FlightSchool {
   description: string | null;
   airlinePartnerships: string | null;
   accommodationAvailable: "yes" | "no" | "unknown" | null;
+  matchScore?: number;
+  matchReasons?: string[];
 }
 
 interface MonthlyMilestone {
@@ -1218,6 +1220,24 @@ export default function Results() {
                                   </span>
                                 </p>
                               )}
+                            {/* Match reasons */}
+                            {school.matchReasons && school.matchReasons.length > 0 && (
+                              <div className="flex gap-1 mt-2 flex-wrap">
+                                {school.matchReasons.map((reason, i) => (
+                                  <span
+                                    key={i}
+                                    className="text-xs px-2 py-0.5 rounded-full"
+                                    style={{
+                                      background: "oklch(0.45 0.18 145 / 0.12)",
+                                      color: "oklch(0.72 0.18 145)",
+                                      border: "1px solid oklch(0.45 0.18 145 / 0.2)",
+                                    }}
+                                  >
+                                    ✓ {reason}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
                             {/* Course tags */}
                             <div className="flex gap-1 mt-2 flex-wrap">
                               {school.integratedAtpl && (

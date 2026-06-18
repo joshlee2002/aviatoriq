@@ -353,6 +353,8 @@ AviatorIQ Score: ${score}/100 (${category})`;
           budgetRange: input.budgetRange,
           wantsFinanceInfo: input.wantsFinanceInfo,
           openToAbroad: input.openToAbroad,
+          needsAccommodation: (input as Record<string, unknown>).needsAccommodation as string | null | undefined,
+          targetAirline: (input as Record<string, unknown>).targetAirline as string | null | undefined,
         });
 
         return {
@@ -385,6 +387,8 @@ AviatorIQ Score: ${score}/100 (${category})`;
           budgetRange: lead.budgetRange,
           wantsFinanceInfo: lead.wantsFinanceInfo,
           openToAbroad: lead.openToAbroad,
+          needsAccommodation: (lead as Record<string, unknown>).needsAccommodation as string | null | undefined,
+          targetAirline: (lead as Record<string, unknown>).targetAirline as string | null | undefined,
         });
 
         // Detect if global fallback was used (schools from other countries mixed in)
@@ -561,6 +565,8 @@ AviatorIQ Score: ${score}/100 (${category})`;
           budgetRange: lead.budgetRange,
           wantsFinanceInfo: lead.wantsFinanceInfo,
           openToAbroad: lead.openToAbroad,
+          needsAccommodation: (lead as Record<string, unknown>).needsAccommodation as string | null | undefined,
+          targetAirline: (lead as Record<string, unknown>).targetAirline as string | null | undefined,
         });
         const schoolContext =
           matchedSchoolsForPrompt.length > 0

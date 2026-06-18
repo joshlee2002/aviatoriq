@@ -437,3 +437,50 @@
 - [ ] Week 3: School matching scoring overhaul — score by country, route, budget, finance need, start timeline, medical readiness, relocation
 - [ ] Week 3: Partner lead sample card in admin
 - [ ] Week 4: Admin lead quality fields, finance/medical referral capture with consent
+
+## Phase 27 – Week 3: Cost Calculator Rebuild, School Matching Overhaul, Partner Lead Card
+
+### Cost Calculator (`client/src/pages/Calculator.tsx`) — full rewrite
+- [x] Rebuilt with real low/typical/high ranges per route (not ±12% of a midpoint)
+- [x] 10 routes: UK Integrated, UK Modular, UK PPL, EU Integrated, US Part 141, US Part 61, Australia Integrated, Canada Integrated, South Africa Integrated, UAE Integrated
+- [x] Each route has separate low/typical/high costs per line item (ground school, flight training, exams, simulator, etc.)
+- [x] Dedicated hidden costs section: MCC/JOC, type rating risk, exam resits, headset/equipment, visa/work permit, accommodation deposit
+- [x] Assumptions table showing what each estimate includes/excludes
+- [x] Last-updated date (June 2026) on all estimates
+- [x] Fixed CTA: now pushes to `/roadmap` ("Get my personalised roadmap") instead of generic `/quiz`
+- [x] Added secondary CTA: "Find matching schools" → `/results`
+
+### School Matching (`server/db.ts` — `matchSchoolsForLead`) — full rewrite
+- [x] Replaced pure SQL filter with a 6-dimension scoring engine (runs in JS after fetching all active schools)
+- [x] Scoring: country match (30pts), route match (30pts), budget fit (20pts), finance need (10pts), accommodation (5pts), airline partnerships (5pts)
+- [x] Budget fit uses numeric midpoints vs school price range — penalises schools well outside budget
+- [x] Returns up to 6 schools sorted by score, each with a `matchReasons: string[]` array explaining why they were matched
+- [x] Schools scoring below 20 excluded unless fewer than 3 qualify (graceful fallback)
+- [x] Added `needsAccommodation` and `targetAirline` parameters to all three call sites in `routers.ts`
+
+### Results Page — Match Reasons (`client/src/pages/Results.tsx`)
+- [x] Added `matchScore` and `matchReasons` to the `FlightSchool` interface
+- [x] Each school card now shows green "✓ reason" badges explaining why the school was matched
+
+### Admin Dashboard — Partner Lead Sample Card (`client/src/pages/AdminDashboard.tsx`)
+- [x] Added "What a Lead Looks Like" card at the top of the Partners tab
+- [x] Shows 14 fields a real lead contains (name, email, country, age, route, budget, finance need, target airline, start timeline, medical status, lead score, lead tags, strongest asset, funding gap)
+- [x] Green callout explaining the monetisation model (flat monthly fee or per-introduction)
+- [x] Clearly labelled "Sample only — not a real lead"
+
+### Quality Gates
+- `pnpm check`: ✅ zero TypeScript errors
+- `pnpm test`: ✅ 152 tests pass (9 test files)
+
+### Files changed
+- `client/src/pages/Calculator.tsx` (full rewrite)
+- `server/db.ts` (matchSchoolsForLead replaced with scoring engine)
+- `server/routers.ts` (three matchSchoolsForLead call sites updated)
+- `client/src/pages/Results.tsx` (FlightSchool type + match reasons display)
+- `client/src/pages/AdminDashboard.tsx` (partner lead sample card)
+
+### Still to do (Week 4)
+- [ ] Admin lead quality fields and partner feedback fields
+- [ ] Finance/medical referral capture behind clear consent
+- [ ] Stripe E2E test coverage
+- [ ] Zod validation on admin form inputs

@@ -366,71 +366,189 @@ export async function getLeadAssignments(
 }
 
 // ─── School Matching ──────────────────────────────────────────────────────────
+
+/**
+ * Scored school matching.
+ *
+ * Scoring dimensions (total 100 points):
+ *   Country match        30 pts  – same country as lead; 15 pts if open to abroad
+ *   Route match          30 pts  – school offers the lead's preferred route
+ *   Budget fit           20 pts  – school price range overlaps lead budget
+ *   Finance need         10 pts  – school offers finance when lead needs it
+ *   Accommodation        5 pts   – school offers accommodation when lead needs it
+ *   Airline partnerships 5 pts   – school has airline partnerships (cadet/sponsored)
+ *
+ * Returns up to 6 schools, sorted by score descending, each with a
+ * `matchReasons` array (string[]) explaining why they were selected.
+ * Schools scoring below 20 are excluded unless fewer than 3 qualify.
+ */
 export async function matchSchoolsForLead(lead: {
   country?: string | null;
   preferredRoute?: string | null;
   budgetRange?: string | null;
   wantsFinanceInfo?: string | null;
   openToAbroad?: string | null;
-}): Promise<FlightSchool[]> {
+  needsAccommodation?: string | null;
+  targetAirline?: string | null;
+}): Promise<(FlightSchool & { matchScore: number; matchReasons: string[] })[]> {
   const db = await getDb();
   if (!db) return [];
 
-  const conditions = [eq(flightSchools.active, true)] as Parameters<typeof and>;
+  // Fetch all active schools — scoring happens in JS, not SQL
+  const allSchools = await db
+    .select()
+    .from(flightSchools)
+    .where(eq(flightSchools.active, true));
 
-  // Country matching: if not open to abroad, filter by country
-  if (lead.country && lead.openToAbroad === "No") {
-    conditions.push(eq(flightSchools.country, lead.country));
-  }
+  // ── Budget range → numeric midpoint ──────────────────────────────────────
+  const budgetMidpoints: Record<string, number> = {
+    "Under £30k": 25000,
+    "£30k–£60k": 45000,
+    "£60k–£100k": 80000,
+    "Over £100k": 120000,
+    "Under $40k": 30000,
+    "$40k–$80k": 60000,
+    "$80k–$130k": 105000,
+    "Over $130k": 160000,
+    "Under A$50k": 37000,
+    "A$50k–A$90k": 70000,
+    "A$90k–A$140k": 115000,
+    "Over A$140k": 170000,
+  };
+  const leadBudget = lead.budgetRange
+    ? (budgetMidpoints[lead.budgetRange] ?? null)
+    : null;
 
-  // Route matching
-  if (lead.preferredRoute === "Integrated ATPL") {
-    conditions.push(eq(flightSchools.integratedAtpl, true));
-  } else if (lead.preferredRoute === "Modular ATPL") {
-    conditions.push(eq(flightSchools.modularAtpl, true));
-  } else if (lead.preferredRoute === "PPL only") {
-    conditions.push(eq(flightSchools.ppl, true));
-  }
-
-  // Finance matching
-  if (lead.wantsFinanceInfo === "Yes") {
-    conditions.push(sql`${flightSchools.financeAvailable} = 'yes'`);
-  }
-
-  const where = and(...(conditions as []));
-  const results = await db.select().from(flightSchools).where(where).limit(6);
-
-  // ── Country fallback: if fewer than 3 local results, expand globally ──────
-  // This prevents an empty school section for countries with limited coverage.
-  if (results.length < 3 && lead.country) {
-    // Build fallback conditions without country filter
-    const fallbackConditions = [eq(flightSchools.active, true)] as Parameters<
-      typeof and
-    >;
-    if (lead.preferredRoute === "Integrated ATPL") {
-      fallbackConditions.push(eq(flightSchools.integratedAtpl, true));
-    } else if (lead.preferredRoute === "Modular ATPL") {
-      fallbackConditions.push(eq(flightSchools.modularAtpl, true));
-    } else if (lead.preferredRoute === "PPL only") {
-      fallbackConditions.push(eq(flightSchools.ppl, true));
+  // ── Price range → numeric range ───────────────────────────────────────────
+  function parsePriceRange(
+    priceRange: string | null | undefined
+  ): [number, number] | null {
+    if (!priceRange) return null;
+    // Patterns: "£60k–£100k", "$80k–$130k", "Under £30k", "Over £100k"
+    const rangeMatch = priceRange.match(
+      /([£$A]?)(\d+)k?\s*[–-]\s*[£$A]?(\d+)k?/i
+    );
+    if (rangeMatch) {
+      return [parseInt(rangeMatch[2]) * 1000, parseInt(rangeMatch[3]) * 1000];
     }
+    const underMatch = priceRange.match(/under\s*[£$A]?(\d+)k?/i);
+    if (underMatch) return [0, parseInt(underMatch[1]) * 1000];
+    const overMatch = priceRange.match(/over\s*[£$A]?(\d+)k?/i);
+    if (overMatch) {
+      const base = parseInt(overMatch[1]) * 1000;
+      return [base, base * 1.5];
+    }
+    return null;
+  }
+
+  // ── Score each school ─────────────────────────────────────────────────────
+  const scored = allSchools.map(school => {
+    let score = 0;
+    const reasons: string[] = [];
+
+    // 1. Country match (30 pts)
+    if (lead.country && school.country) {
+      if (school.country === lead.country) {
+        score += 30;
+        reasons.push(`Based in ${school.country}`);
+      } else if (lead.openToAbroad !== "No") {
+        score += 15;
+        reasons.push(`International option (${school.country})`);
+      }
+    } else if (!lead.country) {
+      // No country preference — treat all schools equally
+      score += 15;
+    }
+
+    // 2. Route match (30 pts)
+    const route = lead.preferredRoute ?? "";
+    if (route === "Integrated ATPL" && school.integratedAtpl) {
+      score += 30;
+      reasons.push("Offers Integrated ATPL");
+    } else if (route === "Modular ATPL" && school.modularAtpl) {
+      score += 30;
+      reasons.push("Offers Modular ATPL");
+    } else if (route === "PPL only" && school.ppl) {
+      score += 30;
+      reasons.push("Offers PPL training");
+    } else if (!route) {
+      // No route preference — partial credit if school offers any route
+      score += 15;
+    }
+
+    // 3. Budget fit (20 pts)
+    if (leadBudget !== null) {
+      const schoolRange = parsePriceRange(school.priceRange);
+      if (schoolRange) {
+        const [low, high] = schoolRange;
+        if (leadBudget >= low && leadBudget <= high) {
+          score += 20;
+          reasons.push("Fits your budget");
+        } else if (leadBudget >= low * 0.8 && leadBudget <= high * 1.2) {
+          score += 10;
+          reasons.push("Close to your budget range");
+        }
+        // If budget is well below the school's range, penalise
+        if (leadBudget < low * 0.7) {
+          score -= 10;
+        }
+      } else {
+        // No price data — partial credit
+        score += 10;
+      }
+    } else {
+      score += 10; // No budget data — neutral
+    }
+
+    // 4. Finance need (10 pts)
     if (lead.wantsFinanceInfo === "Yes") {
-      fallbackConditions.push(sql`${flightSchools.financeAvailable} = 'yes'`);
+      if (school.financeAvailable === "yes") {
+        score += 10;
+        reasons.push("Offers finance / payment plans");
+      } else if (school.financeAvailable === "unknown") {
+        score += 3; // Unknown — slight positive
+      }
+    } else {
+      score += 5; // Finance not needed — neutral
     }
-    const fallbackWhere = and(...(fallbackConditions as []));
-    const fallbackResults = await db
-      .select()
-      .from(flightSchools)
-      .where(fallbackWhere)
-      .limit(6);
-    // Return fallback results, marking them so the UI can show the global note
-    // Deduplicate: prefer local results first, then fill with global
-    const localIds = new Set(results.map(r => r.id));
-    const extras = fallbackResults.filter(r => !localIds.has(r.id));
-    return [...results, ...extras].slice(0, 6);
+
+    // 5. Accommodation (5 pts)
+    if (lead.needsAccommodation === "Yes") {
+      if (school.accommodationAvailable === "yes") {
+        score += 5;
+        reasons.push("Accommodation available");
+      }
+    } else {
+      score += 3; // Not needed — neutral
+    }
+
+    // 6. Airline partnerships (5 pts)
+    if (school.airlinePartnerships && school.airlinePartnerships.trim().length > 5) {
+      score += 5;
+      reasons.push("Airline partnerships");
+    }
+
+    // Ensure score doesn't go below 0
+    score = Math.max(0, score);
+
+    return { ...school, matchScore: score, matchReasons: reasons };
+  });
+
+  // ── Sort by score, take top 6 above threshold ─────────────────────────────
+  const THRESHOLD = 20;
+  const qualified = scored
+    .filter(s => s.matchScore >= THRESHOLD)
+    .sort((a, b) => b.matchScore - a.matchScore)
+    .slice(0, 6);
+
+  // Fallback: if fewer than 3 qualify, take top 6 regardless of threshold
+  if (qualified.length < 3) {
+    return scored
+      .sort((a, b) => b.matchScore - a.matchScore)
+      .slice(0, 6);
   }
 
-  return results;
+  return qualified;
 }
 
 // ─── Introduction Requests ────────────────────────────────────────────────────
