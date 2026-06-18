@@ -484,3 +484,50 @@
 - [ ] Finance/medical referral capture behind clear consent
 - [ ] Stripe E2E test coverage
 - [ ] Zod validation on admin form inputs
+
+## Phase 28 – Week 4: Partner CRM Fields, Medical Referral Capture, Stripe Test Coverage
+
+### Admin Lead Quality & Partner CRM Fields
+- [x] `drizzle/schema.ts` — added `partnerReady` (boolean), `partnerFeedback` (text), `lastContacted` (date), `introStatus` (varchar) columns to leads table
+- [x] `drizzle/0014_partner_fields.sql` — migration adding the four partner CRM columns to leads
+- [x] `server/routers.ts` — `admin.updateLeadPartnerFields` procedure: admin can set partnerReady flag, partnerFeedback notes, lastContacted date, introStatus (none/contacted/intro-sent/converted)
+- [x] `client/src/pages/AdminDashboard.tsx` — `PartnerCRMSection` component: full CRM table for partner-ready leads with inline editing of all four fields, colour-coded intro status badges, last-contacted date picker
+- [x] `client/src/pages/AdminDashboard.tsx` — `LeadDetailModal` updated: shows partner fields (partnerReady toggle, partnerFeedback, lastContacted, introStatus) and consent flags (contactConsentFinance, contactConsentMedical)
+- [x] `client/src/pages/AdminDashboard.tsx` — Lead TypeScript type updated with all four partner fields
+
+### Medical Interests Table & Referral Capture
+- [x] `drizzle/schema.ts` — `medicalInterests` table added: id, leadId (FK), name, email, phone, medicalConcern, consentToContact, createdAt
+- [x] `drizzle/0015_medical_interests.sql` — migration creating the medical_interests table
+- [x] `server/db.ts` — `createMedicalInterest()` function added: inserts a row into medical_interests
+- [x] `server/routers.ts` — `medical` router added with `submitInterest` procedure: validates consent (throws TRPCError if false), calls createMedicalInterest, updates contactConsentMedical on the lead record
+- [x] `client/src/pages/Results.tsx` — Medical referral capture card added: visible only to leads with `medical-risk` tag; collects name, email, medical concern, explicit consent checkbox; submits via `trpc.medical.submitInterest`; shows success/error state
+
+### Finance Consent Persistence
+- [x] `server/routers.ts` — `finance.submitInterest` procedure updated: now updates `contactConsentFinance = true` on the lead record after successful submission (was previously only inserting into finance_interests table)
+
+### Stripe E2E Test Coverage
+- [x] `server/stripe.test.ts` — 22 new tests across 3 describe blocks:
+  - **parseAndNormaliseRoadmap — premium content protection** (6 tests): well-formed JSON, legacy field remapping, missing premium sections filled with defaults, malformed JSON parse-error marker, null/empty input handling, never-throws guarantee
+  - **Premium roadmap gating logic** (12 tests): getPdfUrl requiresPurchase flag for pending/complete/null purchase, checkPurchase purchased flag, verifyPayment unlocked logic (paid+matching leadId, not paid, mismatched leadId), createCheckout STRIPE_SECRET_KEY guard, double-purchase guard
+  - **Finance and medical consent enforcement** (4 tests): finance.submitInterest throws without consent, proceeds with consent; medical.submitInterest throws without consent, proceeds with consent
+
+### Quality Gates
+- `pnpm check`: ✅ zero TypeScript errors
+- `pnpm test`: ✅ 174 tests pass (10 test files)
+
+### Files changed
+- `drizzle/schema.ts` (partnerReady, partnerFeedback, lastContacted, introStatus columns; medicalInterests table)
+- `drizzle/0014_partner_fields.sql` (new migration)
+- `drizzle/0015_medical_interests.sql` (new migration)
+- `server/db.ts` (createMedicalInterest function)
+- `server/routers.ts` (admin.updateLeadPartnerFields; finance.submitInterest consent persistence; medical router)
+- `client/src/pages/AdminDashboard.tsx` (PartnerCRMSection; LeadDetailModal partner fields + consent display; Lead type)
+- `client/src/pages/Results.tsx` (medical referral capture card)
+- `server/stripe.test.ts` (22 new tests — Stripe gating, premium content protection, consent enforcement)
+
+### 30-Day Rebuild Plan — Complete
+All four weeks of the AviatorIQ production rebuild plan are now committed to main:
+- **Week 1** (commit 4f7756e): Zod validation, APP_URL centralisation, PDF retry fix, 25 schema tests
+- **Week 2** (commit 519664b): Lead tags, funding gap, strongest asset, results cards, medical risk banner, CTA audit (47 pages)
+- **Week 3** (commit 70d5d5f): Calculator rebuild, school matching scoring engine, partner lead sample card
+- **Week 4** (this commit): Partner CRM fields, medical referral capture, finance consent persistence, Stripe test coverage

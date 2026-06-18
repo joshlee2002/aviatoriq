@@ -74,6 +74,16 @@ type Lead = {
   leadValue: "High" | "Medium" | "Low";
   intentScore?: number;
   leadTags?: string | null;
+  // Consent fields
+  contactConsentSchools?: boolean | null;
+  contactConsentFinance?: boolean | null;
+  contactConsentMedical?: boolean | null;
+  contactConsentPartners?: boolean | null;
+  // Partner CRM fields
+  partnerReady?: boolean | null;
+  partnerFeedback?: string | null;
+  lastContacted?: Date | null;
+  introStatus?: string | null;
   status: string;
   createdAt: Date;
   updatedAt: Date;
@@ -147,6 +157,123 @@ function StatusBadge({ status }: { status: string }) {
     >
       {status}
     </span>
+  );
+}
+
+// ─── Partner CRM Section ────────────────────────────────────────────────────
+const INTRO_STATUSES = [
+  "None",
+  "Intro Sent",
+  "School Responded",
+  "Meeting Booked",
+  "Converted",
+  "Declined",
+] as const;
+
+function PartnerCRMSection({ lead }: { lead: Lead }) {
+  const utils = trpc.useUtils();
+  const [partnerReady, setPartnerReady] = useState(lead.partnerReady ?? false);
+  const [introStatus, setIntroStatus] = useState<string>(lead.introStatus ?? "None");
+  const [lastContacted, setLastContacted] = useState(
+    lead.lastContacted ? new Date(lead.lastContacted).toISOString().split("T")[0] : ""
+  );
+  const [partnerFeedback, setPartnerFeedback] = useState(lead.partnerFeedback ?? "");
+  const [saved, setSaved] = useState(false);
+
+  const updatePartner = trpc.admin.updateLeadPartnerFields.useMutation({
+    onSuccess: () => {
+      utils.admin.listLeads.invalidate();
+      setSaved(true);
+      setTimeout(() => setSaved(false), 2000);
+    },
+    onError: () => toast.error("Failed to save partner fields"),
+  });
+
+  const handleSave = () => {
+    updatePartner.mutate({
+      id: lead.id,
+      partnerReady,
+      introStatus: introStatus as typeof INTRO_STATUSES[number],
+      lastContacted: lastContacted || undefined,
+      partnerFeedback: partnerFeedback || undefined,
+    });
+  };
+
+  return (
+    <div className="p-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-muted)] space-y-3">
+      <div className="flex items-center justify-between">
+        <h4 className="text-sm font-semibold text-[var(--color-foreground)] flex items-center gap-2">
+          <Building2 className="w-4 h-4 text-[var(--color-primary)]" />
+          Partner CRM
+        </h4>
+        {saved && (
+          <span className="text-xs text-green-600 font-medium flex items-center gap-1">
+            <CheckCircle2 className="w-3 h-3" /> Saved
+          </span>
+        )}
+      </div>
+
+      <div className="grid grid-cols-2 gap-3">
+        {/* Partner Ready */}
+        <div className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            id={`partner-ready-${lead.id}`}
+            checked={partnerReady}
+            onChange={e => setPartnerReady(e.target.checked)}
+            className="w-4 h-4 accent-[var(--color-primary)]"
+          />
+          <label htmlFor={`partner-ready-${lead.id}`} className="text-sm font-medium text-[var(--color-foreground)]">
+            Partner-ready
+          </label>
+        </div>
+
+        {/* Intro Status */}
+        <div>
+          <label className="block text-xs text-[var(--color-muted-foreground)] mb-1">Intro status</label>
+          <select
+            value={introStatus}
+            onChange={e => setIntroStatus(e.target.value)}
+            className="w-full px-2 py-1.5 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none bg-white"
+          >
+            {INTRO_STATUSES.map(s => (
+              <option key={s} value={s}>{s}</option>
+            ))}
+          </select>
+        </div>
+
+        {/* Last Contacted */}
+        <div className="col-span-2">
+          <label className="block text-xs text-[var(--color-muted-foreground)] mb-1">Last contacted</label>
+          <input
+            type="date"
+            value={lastContacted}
+            onChange={e => setLastContacted(e.target.value)}
+            className="w-full px-2 py-1.5 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none bg-white"
+          />
+        </div>
+
+        {/* Partner Feedback */}
+        <div className="col-span-2">
+          <label className="block text-xs text-[var(--color-muted-foreground)] mb-1">School feedback / notes</label>
+          <textarea
+            value={partnerFeedback}
+            onChange={e => setPartnerFeedback(e.target.value)}
+            rows={2}
+            placeholder="e.g. School confirmed interest, awaiting reply…"
+            className="w-full px-2 py-1.5 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none bg-white resize-none"
+          />
+        </div>
+      </div>
+
+      <button
+        onClick={handleSave}
+        disabled={updatePartner.isPending}
+        className="btn-primary text-xs py-1.5 px-4"
+      >
+        {updatePartner.isPending ? "Saving…" : "Save partner fields"}
+      </button>
+    </div>
   );
 }
 
@@ -346,28 +473,33 @@ function LeadDetailModal({
           </div>
 
           {/* Consent */}
-          <div className="flex gap-4">
-            <div
-              className={`flex items-center gap-1.5 text-xs ${lead.consentToContact ? "text-green-700" : "text-red-600"}`}
-            >
-              {lead.consentToContact ? (
-                <CheckCircle2 className="w-3.5 h-3.5" />
-              ) : (
-                <AlertTriangle className="w-3.5 h-3.5" />
-              )}
-              Consent to contact
-            </div>
-            <div
-              className={`flex items-center gap-1.5 text-xs ${lead.consentToShare ? "text-green-700" : "text-gray-500"}`}
-            >
-              {lead.consentToShare ? (
-                <CheckCircle2 className="w-3.5 h-3.5" />
-              ) : (
-                <X className="w-3.5 h-3.5" />
-              )}
-              Consent to share
-            </div>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { label: "Contact consent", value: lead.consentToContact, required: true },
+              { label: "Share consent", value: lead.consentToShare, required: false },
+              { label: "School contact", value: lead.contactConsentSchools, required: false },
+              { label: "Finance referral", value: lead.contactConsentFinance, required: false },
+              { label: "Medical referral", value: lead.contactConsentMedical, required: false },
+              { label: "Partner contact", value: lead.contactConsentPartners, required: false },
+            ].map(c => (
+              <div
+                key={c.label}
+                className={`flex items-center gap-1 text-xs px-2 py-1 rounded-full border ${
+                  c.value
+                    ? "bg-green-50 text-green-700 border-green-200"
+                    : c.required
+                    ? "bg-red-50 text-red-600 border-red-200"
+                    : "bg-gray-50 text-gray-500 border-gray-200"
+                }`}
+              >
+                {c.value ? <CheckCircle2 className="w-3 h-3" /> : <X className="w-3 h-3" />}
+                {c.label}
+              </div>
+            ))}
           </div>
+
+          {/* Partner CRM */}
+          <PartnerCRMSection lead={lead} />
 
           {/* Assigned Schools + Notify School */}
           {detailQuery.data?.assignments &&

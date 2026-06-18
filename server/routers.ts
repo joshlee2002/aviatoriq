@@ -40,6 +40,7 @@ import {
   getLicenceQuizStats,
   updateLicenceQuizEmail,
   createFinanceInterest,
+  createMedicalInterest,
   createFlightDeckShare,
   getFlightDeckShare,
   createCalcSession,
@@ -1075,6 +1076,34 @@ GUIDELINES:
         return { success: true };
       }),
 
+    updateLeadPartnerFields: adminProcedure
+      .input(
+        z.object({
+          id: z.number(),
+          partnerReady: z.boolean().optional(),
+          partnerFeedback: z.string().max(2000).optional(),
+          lastContacted: z.string().optional(), // ISO date string
+          introStatus: z
+            .enum([
+              "None",
+              "Intro Sent",
+              "School Responded",
+              "Meeting Booked",
+              "Converted",
+              "Declined",
+            ])
+            .optional(),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const { id, lastContacted, ...rest } = input;
+        await updateLead(id, {
+          ...rest,
+          ...(lastContacted ? { lastContacted: new Date(lastContacted) } : {}),
+        });
+        return { success: true };
+      }),
+
     addNote: adminProcedure
       .input(z.object({ leadId: z.number(), note: z.string().min(1) }))
       .mutation(async ({ input, ctx }) => {
@@ -1396,6 +1425,10 @@ GUIDELINES:
           });
         }
         const id = await createFinanceInterest(input);
+        // If linked to a lead, mark that they consented to finance contact
+        if (input.leadId) {
+          await updateLead(input.leadId, { contactConsentFinance: true });
+        }
         await notifyOwner({
           title: "New Finance Interest Lead",
           content: `Name: ${input.name}\nEmail: ${input.email}\nPhone: ${input.phone ?? "N/A"}\nRoute: ${input.trainingRoute ?? "N/A"}\nBudget: ${input.estimatedBudget ?? "N/A"}\nSource: ${input.source ?? "N/A"}`,
@@ -1403,7 +1436,41 @@ GUIDELINES:
         return { success: true, id };
       }),
   }),
-  // ─── Flight Deck Share ───────────────────────────────────────────────────────
+  // --- Medical Interest ---
+  medical: router({
+    submitInterest: publicProcedure
+      .input(
+        z.object({
+          name: z.string().min(2),
+          email: z.string().email(),
+          phone: z.string().optional(),
+          country: z.string().optional(),
+          medicalConcern: z.string().optional(),
+          message: z.string().optional(),
+          source: z.string().optional(),
+          leadId: z.number().optional(),
+          consentToContact: z.boolean(),
+        })
+      )
+      .mutation(async ({ input }) => {
+        if (!input.consentToContact) {
+          throw new TRPCError({
+            code: "BAD_REQUEST",
+            message: "Consent to contact is required.",
+          });
+        }
+        const id = await createMedicalInterest(input);
+        if (input.leadId) {
+          await updateLead(input.leadId, { contactConsentMedical: true });
+        }
+        await notifyOwner({
+          title: "New Medical Interest Lead",
+          content: `Name: ${input.name}\nEmail: ${input.email}\nPhone: ${input.phone ?? "N/A"}\nCountry: ${input.country ?? "N/A"}\nConcern: ${input.medicalConcern ?? "N/A"}\nSource: ${input.source ?? "N/A"}`,
+        });
+        return { success: true, id };
+      }),
+  }),
+  // --- Flight Deck Share ---
   flightDeck: router({
     saveShare: publicProcedure
       .input(z.object({ resultJson: z.string() }))

@@ -69,6 +69,18 @@ export const leads = mysqlTable("leads", {
   pdfKey: varchar("pdfKey", { length: 500 }),
   // Comma-separated lead quality tags: school-ready, finance-ready, medical-risk, cadet-suitable, hot, warm, cold
   leadTags: varchar("leadTags", { length: 500 }),
+  // Partner / CRM quality fields (admin-managed)
+  partnerReady: boolean("partnerReady").default(false),
+  partnerFeedback: text("partnerFeedback"),
+  lastContacted: timestamp("lastContacted"),
+  introStatus: mysqlEnum("introStatus", [
+    "None",
+    "Intro Sent",
+    "School Responded",
+    "Meeting Booked",
+    "Converted",
+    "Declined",
+  ]).default("None"),
   status: mysqlEnum("status", [
     "New",
     "Reviewed",
@@ -215,6 +227,23 @@ export const financeInterests = mysqlTable("finance_interests", {
 });
 export type FinanceInterest = typeof financeInterests.$inferSelect;
 export type InsertFinanceInterest = typeof financeInterests.$inferInsert;
+
+// ─── Medical Interests ─────────────────────────────────────────────────────────────────
+export const medicalInterests = mysqlTable("medical_interests", {
+  id: int("id").autoincrement().primaryKey(),
+  name: varchar("name", { length: 200 }).notNull(),
+  email: varchar("email", { length: 320 }).notNull(),
+  phone: varchar("phone", { length: 50 }),
+  country: varchar("country", { length: 100 }),
+  medicalConcern: text("medicalConcern"),
+  message: text("message"),
+  source: varchar("source", { length: 100 }),
+  leadId: int("leadId"),
+  consentToContact: boolean("consentToContact").default(false).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+export type MedicalInterest = typeof medicalInterests.$inferSelect;
+export type InsertMedicalInterest = typeof medicalInterests.$inferInsert;
 
 // ─── Flight Deck Shares ───────────────────────────────────────────────────────
 export const flightDeckShares = mysqlTable("flight_deck_shares", {

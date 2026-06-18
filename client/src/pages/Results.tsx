@@ -358,6 +358,22 @@ export default function Results() {
   >("unsure");
   const [financeConsent, setFinanceConsent] = useState(false);
 
+  // Medical referral state
+  const [medicalFormOpen, setMedicalFormOpen] = useState(false);
+  const [medicalSubmitted, setMedicalSubmitted] = useState(false);
+  const [medicalName, setMedicalName] = useState("");
+  const [medicalEmail, setMedicalEmail] = useState("");
+  const [medicalPhone, setMedicalPhone] = useState("");
+  const [medicalConcern, setMedicalConcern] = useState("");
+  const [medicalConsent, setMedicalConsent] = useState(false);
+  const submitMedicalInterest = trpc.medical.submitInterest.useMutation({
+    onSuccess: () => {
+      setMedicalSubmitted(true);
+      toast.success("We'll be in touch with medical guidance.");
+    },
+    onError: () => toast.error("Something went wrong. Please try again."),
+  });
+
   // ─── Premium Roadmap Payment State ──────────────────────────────────────────
   const [premiumUnlocked, setPremiumUnlocked] = useState(() => {
     try {
@@ -1022,6 +1038,127 @@ export default function Results() {
                   Check your medical eligibility →
                 </a>
               </div>
+            </div>
+          )}
+
+          {/* ── Medical Referral Capture Card ── */}
+          {leadTags.includes("medical-risk") && (
+            <div
+              className="rounded-2xl p-6 animate-fade-in-up"
+              style={{
+                background: "oklch(0.55 0.18 25 / 0.04)",
+                border: "1px solid oklch(0.55 0.18 25 / 0.2)",
+              }}
+            >
+              <div className="flex items-start justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="font-display font-bold text-white text-lg mb-1">
+                    Get Medical Guidance
+                  </h3>
+                  <p className="text-sm" style={{ color: "oklch(0.65 0 0)" }}>
+                    We can connect you with an Aviation Medical Examiner (AME) who specialises in pilot medicals. Most concerns are resolvable with early assessment.
+                  </p>
+                </div>
+                <a
+                  href="/tools/class-1-medical-check"
+                  className="flex-shrink-0 text-xs font-semibold underline"
+                  style={{ color: "oklch(0.65 0.18 25)" }}
+                >
+                  Self-check first →
+                </a>
+              </div>
+              {medicalSubmitted ? (
+                <div className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.65 0.18 140)" }}>
+                  <CheckCircle2 className="w-4 h-4" />
+                  <span>Received — we'll be in touch with medical guidance shortly.</span>
+                </div>
+              ) : !medicalFormOpen ? (
+                <button
+                  onClick={() => setMedicalFormOpen(true)}
+                  className="text-sm font-semibold px-4 py-2 rounded-lg transition-all hover:opacity-90"
+                  style={{
+                    background: "oklch(0.55 0.18 25 / 0.15)",
+                    border: "1px solid oklch(0.55 0.18 25 / 0.4)",
+                    color: "oklch(0.75 0.12 25)",
+                  }}
+                >
+                  Request medical guidance
+                </button>
+              ) : (
+                <div className="space-y-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-xs font-medium mb-1" style={{ color: "oklch(0.65 0 0)" }}>Your name *</label>
+                      <input
+                        type="text"
+                        value={medicalName}
+                        onChange={e => setMedicalName(e.target.value)}
+                        placeholder="First name"
+                        className="w-full rounded-lg px-3 py-2 text-sm text-white outline-none"
+                        style={{ background: "oklch(0.14 0.01 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-medium mb-1" style={{ color: "oklch(0.65 0 0)" }}>Email address *</label>
+                      <input
+                        type="email"
+                        value={medicalEmail}
+                        onChange={e => setMedicalEmail(e.target.value)}
+                        placeholder="you@email.com"
+                        className="w-full rounded-lg px-3 py-2 text-sm text-white outline-none"
+                        style={{ background: "oklch(0.14 0.01 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-xs font-medium mb-1" style={{ color: "oklch(0.65 0 0)" }}>Briefly describe your concern (optional)</label>
+                    <textarea
+                      value={medicalConcern}
+                      onChange={e => setMedicalConcern(e.target.value)}
+                      placeholder="e.g. colour vision, previous surgery, medication..."
+                      rows={2}
+                      className="w-full rounded-lg px-3 py-2 text-sm text-white outline-none resize-none"
+                      style={{ background: "oklch(0.14 0.01 240)", border: "1px solid oklch(1 0 0 / 0.12)" }}
+                    />
+                  </div>
+                  <label className="flex items-start gap-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={medicalConsent}
+                      onChange={e => setMedicalConsent(e.target.checked)}
+                      className="mt-0.5"
+                    />
+                    <span className="text-xs" style={{ color: "oklch(0.6 0 0)" }}>
+                      I consent to being contacted with medical guidance. My information will not be shared with third parties without my permission.
+                    </span>
+                  </label>
+                  <button
+                    onClick={() => {
+                      if (!medicalName || !medicalEmail || !medicalConsent) {
+                        toast.error("Please fill in your name, email, and consent.");
+                        return;
+                      }
+                      submitMedicalInterest.mutate({
+                        name: medicalName,
+                        email: medicalEmail,
+                        phone: medicalPhone || undefined,
+                        medicalConcern: medicalConcern || undefined,
+                        source: "results_page",
+                        leadId: leadId || undefined,
+                        consentToContact: medicalConsent,
+                      });
+                    }}
+                    disabled={submitMedicalInterest.isPending}
+                    className="btn-cta text-sm w-full"
+                  >
+                    {submitMedicalInterest.isPending ? (
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                    ) : (
+                      "Submit"
+                    )}
+                  </button>
+                </div>
+              )}
             </div>
           )}
 

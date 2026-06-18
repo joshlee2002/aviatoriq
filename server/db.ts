@@ -877,6 +877,7 @@ import {
   flightDeckShares,
   flightDeckEmailCaptures,
   schoolSubscriptions,
+  medicalInterests,
   InsertFlightDeckEmailCapture,
   InsertSchoolSubscription,
 } from "../drizzle/schema";
@@ -900,6 +901,33 @@ export async function createFinanceInterest(data: {
     phone: data.phone ?? null,
     trainingRoute: data.trainingRoute ?? null,
     estimatedBudget: data.estimatedBudget ?? null,
+    message: data.message ?? null,
+    source: data.source ?? null,
+    leadId: data.leadId ?? null,
+    consentToContact: data.consentToContact,
+  });
+  return (result as any)[0]?.insertId ?? null;
+}
+
+export async function createMedicalInterest(data: {
+  name: string;
+  email: string;
+  phone?: string;
+  country?: string;
+  medicalConcern?: string;
+  message?: string;
+  source?: string;
+  leadId?: number;
+  consentToContact: boolean;
+}): Promise<number | null> {
+  const db = await getDb();
+  if (!db) return null;
+  const result = await db.insert(medicalInterests).values({
+    name: data.name,
+    email: data.email,
+    phone: data.phone ?? null,
+    country: data.country ?? null,
+    medicalConcern: data.medicalConcern ?? null,
     message: data.message ?? null,
     source: data.source ?? null,
     leadId: data.leadId ?? null,
