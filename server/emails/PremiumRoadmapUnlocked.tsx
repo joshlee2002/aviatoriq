@@ -37,7 +37,7 @@ const CARD_BG = "#111C2E";
 
 export default function PremiumRoadmapUnlocked({
   firstName = "there",
-  resultsUrl = "https://aviatoriq-production.up.railway.app",
+  resultsUrl = "https://aviatoriq.com",
   pdfUrl = null,
   leadId = 0,
 }: PremiumRoadmapUnlockedProps) {

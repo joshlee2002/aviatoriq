@@ -27,10 +27,12 @@ interface TimelineEntry {
   detail: string;
 }
 interface RiskScenario {
-  risk: string;
-  likelihood: "High" | "Medium" | "Low";
-  impact: "High" | "Medium" | "Low";
+  scenario: string;
+  probability: "High" | "Medium" | "Low";
   mitigation: string;
+  // legacy field aliases — kept for backward compat with old stored roadmaps
+  risk?: string;
+  likelihood?: "High" | "Medium" | "Low";
 }
 interface HiddenCostItem {
   item: string;
@@ -340,10 +342,12 @@ export async function generatePilotBlueprint(
       for (const risk of ai.riskScenarios) {
         y = pageBreakIfNeeded(doc, y, 110);
         doc.rect(50, y, contentWidth, 26).fill(LIGHT_GREY);
-        doc.fontSize(10).fillColor(NAVY).font("Helvetica-Bold").text(risk.risk, 60, y + 6, { width: contentWidth - 160 });
-        const lhColour = riskColour(risk.likelihood);
+        const riskTitle = risk.scenario ?? risk.risk ?? "Unknown risk";
+        const riskProb = risk.probability ?? risk.likelihood ?? "Medium";
+        doc.fontSize(10).fillColor(NAVY).font("Helvetica-Bold").text(riskTitle, 60, y + 6, { width: contentWidth - 160 });
+        const lhColour = riskColour(riskProb);
         doc.roundedRect(contentWidth - 40, y + 4, 80, 18, 3).fill(lhColour);
-        doc.fontSize(8).fillColor(WHITE).font("Helvetica-Bold").text(`${risk.likelihood} Risk`, contentWidth - 40, y + 8, { width: 80, align: "center" });
+        doc.fontSize(8).fillColor(WHITE).font("Helvetica-Bold").text(`${riskProb} Risk`, contentWidth - 40, y + 8, { width: 80, align: "center" });
         y += 30;
         doc.fontSize(9).fillColor(DARK_GREY).font("Helvetica").text(risk.mitigation, 50, y, { width: contentWidth });
         y += doc.heightOfString(risk.mitigation, { width: contentWidth }) + 14;
@@ -468,7 +472,7 @@ export async function generatePilotBlueprint(
       60, y + 32, { width: contentWidth - 20 }
     );
     doc.fontSize(9).fillColor(PRIMARY).font("Helvetica-Bold").text(
-      `Visit: aviatoriq-production.up.railway.app/results/${lead.id}`,
+      `Visit: aviatoriq.com/results/${lead.id}`,
       60, y + 58, { width: contentWidth - 20 }
     );
     y += 96;

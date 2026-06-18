@@ -41,7 +41,7 @@ const CARD_BG = "#111C2E";
 export default function IntroductionConfirmation({
   firstName = "there",
   schools = [],
-  resultsUrl = "https://aviatoriq-production.up.railway.app",
+  resultsUrl = "https://aviatoriq.com",
 }: IntroductionConfirmationProps) {
   return (
     <Html lang="en">

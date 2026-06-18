@@ -380,6 +380,14 @@ export default function Results() {
   );
   const pdfTimedOut = !pdfQuery.data?.pdfUrl && pdfRetryCount >= 20;
 
+  // Increment pdfRetryCount each time the PDF query refetches without a result.
+  // This allows the refetchInterval to stop after 20 attempts (~100 seconds).
+  useEffect(() => {
+    if (premiumUnlocked && !pdfQuery.data?.pdfUrl && pdfQuery.isFetching) {
+      setPdfRetryCount(c => c + 1);
+    }
+  }, [pdfQuery.dataUpdatedAt]);
+
   // Check if already purchased (on page load)
   const purchaseQuery = trpc.payments.checkPurchase.useQuery(
     { leadId },
@@ -654,8 +662,26 @@ export default function Results() {
                         border: "1px solid oklch(1 0 0 / 0.08)",
                       }}
                     >
-                      <Loader2 className="w-3 h-3 animate-spin" />
-                      Generating PDF…
+                      {pdfTimedOut ? (
+                        <>
+                          <span>⚠</span>
+                          PDF generation failed —{" "}
+                          <button
+                            className="underline cursor-pointer"
+                            onClick={() => {
+                              setPdfRetryCount(0);
+                              pdfQuery.refetch();
+                            }}
+                          >
+                            retry
+                          </button>
+                        </>
+                      ) : (
+                        <>
+                          <Loader2 className="w-3 h-3 animate-spin" />
+                          Generating PDF…
+                        </>
+                      )}
                     </div>
                   )
                 ) : (

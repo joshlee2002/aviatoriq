@@ -316,3 +316,73 @@
 - [x] Build For Schools pricing page at /for-schools (hero, stats, why partner, 3-tier pricing, example lead card, FAQ, application form)
 - [x] Wire /for-schools route in App.tsx
 - [x] Update "For Schools" nav button to point to /for-schools
+
+## Phase 25 – Week 1: Revenue-Critical Stability (30-Day Rebuild Plan)
+
+### Roadmap JSON validation & normalisation
+- [x] Create `server/roadmapSchema.ts` — single source of truth for AI roadmap JSON shape
+  - Zod schema with `.passthrough()` for future LLM fields
+  - `RiskScenarioSchema` with `.transform()` to remap legacy `risk`/`likelihood` → `scenario`/`probability`
+  - `normaliseRoadmap()` — fills every advertised premium section with safe, useful defaults if LLM omits them
+  - `parseAndNormaliseRoadmap()` — single entry point: JSON.parse → null/array guard → Zod → normalise → never throws
+  - Default values for: hiddenCosts (6 items), schoolSelectionCriteria (4 items), monthlyTimeline (6 phases), riskScenarios (3 scenarios), thirtyDayActionPlan (5 steps)
+- [x] Wire `parseAndNormaliseRoadmap` into `generateRoadmap` — LLM output normalised before DB storage
+- [x] Wire `parseAndNormaliseRoadmap` into `generateRoadmap` cache path — old stored roadmaps normalised on the way out
+- [x] Wire `parseAndNormaliseRoadmap` into `getResult` — `lead.aiRoadmap` normalised before being returned to frontend
+- [x] Write 25 vitest tests for roadmapSchema (all pass): valid input, legacy remapping, missing premium defaults, malformed JSON, null/empty input, Zod schema validation
+
+### APP_URL centralisation
+- [x] Create `server/_core/appUrl.ts` — `getAppUrl()` helper reads `APP_URL` env var with safe fallback
+- [x] Replace all 4 hardcoded Railway URL fallbacks across `server/_core/index.ts` and `server/routers.ts`
+- [x] Fix hardcoded URLs in `server/emails/IntroductionConfirmation.tsx`, `server/emails/PremiumRoadmapUnlocked.tsx`, `server/emails/WelcomeBlueprint.tsx`
+- [x] Fix hardcoded URL in `server/pdfReport.ts` CTA section
+
+### PDF field name alignment
+- [x] Update `server/pdfReport.ts` `RiskScenario` interface to use `scenario`/`probability` (canonical names)
+- [x] Update PDF risk rendering to use `risk.scenario ?? risk.risk` and `risk.probability ?? risk.likelihood` for backward compat with old stored PDFs
+
+### PDF retry/timeout fix
+- [x] Fix `pdfRetryCount` — `setPdfRetryCount` was never called; added `useEffect` in `Results.tsx` to increment on each refetch without a result
+- [x] Update PDF status UI: shows "PDF generation failed — retry" link after 20 failed polls (~100 seconds) instead of infinite spinner
+- [x] Retry button resets `pdfRetryCount` to 0 and calls `pdfQuery.refetch()`
+
+### Admin dashboard CRUD forms
+- [x] Add full create/edit/delete forms for Jobs panel in admin dashboard
+- [x] Add full create/edit/delete forms for Stories panel in admin dashboard
+- [x] Add Schools tab to admin dashboard tab bar (moved from floating modal button)
+- [x] Add full create/edit/delete forms for Schools panel in admin dashboard
+
+### Data population
+- [x] `seed-schools.mjs` — 65 flight schools across UK (20), US (15), AU (10), CA (10), EU (5), UAE (2), ZA (3)
+- [x] `seed-jobs.mjs` — 30 pilot job listings across UK (15), US (10), Global/AU/CA (5)
+- [x] `seed-stories.mjs` — 12 pilot stories covering all archetypes (career changer, military, women in aviation, helicopter, etc.)
+
+### Test results
+- 152 tests passing, 0 failing
+- `pnpm check` passes with 0 TypeScript errors
+
+### Files changed
+- `server/roadmapSchema.ts` (new)
+- `server/roadmapSchema.test.ts` (new, 25 tests)
+- `server/_core/appUrl.ts` (new)
+- `server/_core/index.ts` (APP_URL centralised)
+- `server/routers.ts` (normalisation wired into generateRoadmap + getResult; APP_URL centralised)
+- `server/pdfReport.ts` (risk field names aligned; hardcoded URL removed)
+- `server/emails/IntroductionConfirmation.tsx` (hardcoded URL removed)
+- `server/emails/PremiumRoadmapUnlocked.tsx` (hardcoded URL removed)
+- `server/emails/WelcomeBlueprint.tsx` (hardcoded URL removed)
+- `client/src/pages/Results.tsx` (PDF retry counter fixed; timeout UI added)
+- `client/src/pages/AdminDashboard.tsx` (full CRUD forms for Jobs, Stories, Schools; Schools tab added)
+- `seed-schools.mjs` (65 schools)
+- `seed-jobs.mjs` (new, 30 jobs)
+- `seed-stories.mjs` (new, 12 stories)
+- `docs/aviatoriq-product-audit-rebuild-plan.md` (new, from PR #3)
+
+### Still to do (Week 2–4)
+- [ ] Week 2: Lead tags (school-ready, finance-ready, medical-risk, cadet-suitable) — DB migration + scoring + admin display
+- [ ] Week 2: Results page improvements — funding gap, medical risk, biggest barrier, strongest asset, next action, school matches all visible without premium
+- [ ] Week 2: CTA audit — every page has one clear next step
+- [ ] Week 3: Cost calculator rebuild — low/typical/high ranges by country/route, hidden costs, assumptions, last-updated date
+- [ ] Week 3: School matching scoring overhaul — score by country, route, budget, finance need, start timeline, medical readiness, relocation
+- [ ] Week 3: Partner lead sample card in admin
+- [ ] Week 4: Admin lead quality fields, finance/medical referral capture with consent

@@ -59,7 +59,7 @@ export default function WelcomeBlueprint({
   firstName = "there",
   score = 65,
   category = "Warm",
-  resultsUrl = "https://aviatoriq-production.up.railway.app",
+  resultsUrl = "https://aviatoriq.com",
 }: WelcomeBlueprintProps) {
   const scoreColor = getScoreColor(category);
   const phaseLabel = getPhaseLabel(category);

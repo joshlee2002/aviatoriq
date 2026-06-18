@@ -65,6 +65,8 @@ import {
   completeRoadmapPurchase,
   getRoadmapPurchaseByLead,
 } from "./db";
+import { getAppUrl } from "./_core/appUrl";
+import { parseAndNormaliseRoadmap } from "./roadmapSchema";
 
 // ─── Admin guard ──────────────────────────────────────────────────────────────
 const adminProcedure = protectedProcedure.use(({ ctx, next }) => {
@@ -339,10 +341,7 @@ AviatorIQ Score: ${score}/100 (${category})`;
             firstName: input.fullName.split(" ")[0],
             score,
             category: category as "Hot" | "Warm" | "Cold",
-            resultsUrl: `${
-              process.env.APP_URL ??
-              "https://aviatoriq-production-4b36.up.railway.app"
-            }/results/${leadId}`,
+            resultsUrl: `${getAppUrl()}/results/${leadId}`,
           }),
         }).catch(e => console.warn("[Email] Welcome email failed (non-fatal):", e));
 
@@ -410,8 +409,20 @@ AviatorIQ Score: ${score}/100 (${category})`;
           startTimeframe: lead.startTimeframe,
           biggestConcern: lead.biggestConcern,
         });
+        // Normalise aiRoadmap in the lead object before returning.
+        // This ensures legacy field names (risk/likelihood) in old stored roadmaps
+        // are remapped on the way out, regardless of which path the frontend uses.
+        const normalisedLead = lead.aiRoadmap
+          ? {
+              ...lead,
+              aiRoadmap: JSON.stringify(
+                parseAndNormaliseRoadmap(lead.aiRoadmap, "getResult")
+              ),
+            }
+          : lead;
+
         return {
-          lead,
+          lead: normalisedLead,
           matchedSchools,
           schoolsAreGlobal,
           dimensions: scoreResult.dimensions,
@@ -432,7 +443,7 @@ AviatorIQ Score: ${score}/100 (${category})`;
           // Return success regardless to prevent email enumeration
           return { sent: true };
         }
-        const appUrl = process.env.APP_URL ?? "https://aviatoriq-production-4b36.up.railway.app";
+        const appUrl = getAppUrl();
         const resultsUrl = `${appUrl}/results/${lead.id}`;
         // Send results link email
         try {
@@ -532,9 +543,12 @@ AviatorIQ Score: ${score}/100 (${category})`;
         const safeBiggestConcern =
           sanitiseField(lead.biggestConcern) ?? "Unknown";
 
-        // Return cached roadmap if available
+        // Return cached roadmap if available.
+        // Always run through parseAndNormaliseRoadmap so legacy field names
+        // (e.g. risk/likelihood from old stored roadmaps) are remapped on the way out.
         if (lead.aiRoadmap) {
-          return { roadmap: lead.aiRoadmap };
+          const normalisedCached = parseAndNormaliseRoadmap(lead.aiRoadmap, "DB cache");
+          return { roadmap: JSON.stringify(normalisedCached) };
         }
 
         // ── Fetch matched schools to inject verified data into the prompt ─────────
@@ -818,6 +832,14 @@ IMPORTANT RULES:
           };
           roadmap = JSON.stringify(fallback);
         }
+
+        // Validate, normalise and re-serialise before caching.
+        // This ensures:
+        //   1. Legacy/mismatched LLM field names are remapped (e.g. risk→scenario).
+        //   2. Every advertised premium section has a safe default if the LLM omitted it.
+        //   3. The stored JSON is always the canonical shape the frontend expects.
+        const normalisedRoadmap = parseAndNormaliseRoadmap(roadmap, "LLM output");
+        roadmap = JSON.stringify(normalisedRoadmap);
 
         // Cache the roadmap
         await updateLead(lead.id, { aiRoadmap: roadmap });
@@ -1226,10 +1248,7 @@ GUIDELINES:
                 name: r.schoolName,
                 country: lead.country ?? "Unknown",
               })),
-              resultsUrl: `${
-                process.env.APP_URL ??
-                "https://aviatoriq-production-4b36.up.railway.app"
-              }/results/${lead.id}`,
+              resultsUrl: `${getAppUrl()}/results/${lead.id}`,
             }),
           }).catch(e => console.warn("[Email] Introduction confirmation email failed (non-fatal):", e));
         }
