@@ -25,6 +25,8 @@ import {
   schoolWaitlist,
   users,
   InsertCalcSession,
+  roadmapPurchases,
+  RoadmapPurchase,
 } from "../drizzle/schema";
 import { ENV } from "./_core/env";
 
@@ -899,4 +901,61 @@ export async function getPublicPlatformStats() {
     Object.entries(barrierMap).sort((a, b) => b[1] - a[1])[0]?.[0] ?? "Finance";
 
   return { totalAssessments, avgScore, mostCommonBarrier };
+}
+
+// ─── Roadmap Purchases ────────────────────────────────────────────────────────
+export async function createRoadmapPurchase(data: {
+  leadId: number;
+  stripeSessionId: string;
+  email?: string;
+  currency?: string;
+}): Promise<void> {
+  const db = await getDb();
+  await db.insert(roadmapPurchases).values({
+    leadId: data.leadId,
+    stripeSessionId: data.stripeSessionId,
+    email: data.email,
+    currency: data.currency ?? "gbp",
+    status: "pending",
+  });
+}
+
+export async function completeRoadmapPurchase(
+  stripeSessionId: string,
+  paymentIntentId?: string
+): Promise<void> {
+  const db = await getDb();
+  await db
+    .update(roadmapPurchases)
+    .set({
+      status: "complete",
+      stripePaymentIntentId: paymentIntentId,
+      completedAt: new Date(),
+    })
+    .where(eq(roadmapPurchases.stripeSessionId, stripeSessionId));
+}
+
+export async function getRoadmapPurchaseByLead(
+  leadId: number
+): Promise<{ status: string } | undefined> {
+  const db = await getDb();
+  const rows = await db
+    .select({ status: roadmapPurchases.status })
+    .from(roadmapPurchases)
+    .where(eq(roadmapPurchases.leadId, leadId))
+    .orderBy(desc(roadmapPurchases.createdAt))
+    .limit(1);
+  return rows[0];
+}
+
+export async function getRoadmapPurchaseBySession(
+  stripeSessionId: string
+): Promise<RoadmapPurchase | undefined> {
+  const db = await getDb();
+  const rows = await db
+    .select()
+    .from(roadmapPurchases)
+    .where(eq(roadmapPurchases.stripeSessionId, stripeSessionId))
+    .limit(1);
+  return rows[0];
 }

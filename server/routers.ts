@@ -46,6 +46,12 @@ import {
   createFlightDeckEmailCapture,
 } from "./db";
 import { nanoid } from "nanoid";
+import Stripe from "stripe";
+import {
+  createRoadmapPurchase,
+  completeRoadmapPurchase,
+  getRoadmapPurchaseByLead,
+} from "./db";
 
 // ─── Admin guard ──────────────────────────────────────────────────────────────
 const adminProcedure = protectedProcedure.use(({ ctx, next }) => {
@@ -468,11 +474,59 @@ AviatorIQ Score: ${score}/100 (${category})`;
           return { roadmap: lead.aiRoadmap };
         }
 
-        const prompt = `You are an expert aviation career advisor. Generate a personalised pilot training roadmap for this candidate. Format your response as structured JSON.
+        // ── Fetch matched schools to inject verified data into the prompt ─────────
+        const matchedSchoolsForPrompt = await matchSchoolsForLead({
+          country: lead.country,
+          preferredRoute: lead.preferredRoute,
+          budgetRange: lead.budgetRange,
+          wantsFinanceInfo: lead.wantsFinanceInfo,
+          openToAbroad: lead.openToAbroad,
+        });
+        const schoolContext =
+          matchedSchoolsForPrompt.length > 0
+            ? matchedSchoolsForPrompt
+                .map(
+                  (s) =>
+                    `- ${s.name} (${s.city ?? s.country}): ${s.priceRange ?? "price not published"}, Finance: ${s.financeAvailable}, Airline partnerships: ${s.airlinePartnerships ?? "none listed"}`
+                )
+                .join("\n")
+            : "No matched schools found — recommend the candidate research schools directly.";
 
-IMPORTANT: This roadmap must be insight-led. Start with the candidate's biggest barrier and address it directly. Do not just recommend a route — tell them what's actually standing between them and the cockpit, and what to do about it.
+        // ── Verified 2026 market cost data by country ──────────────────────────
+        const VERIFIED_MARKET_DATA: Record<string, string> = {
+          "United Kingdom":
+            "UK Integrated ATPL (2026 verified): Skyborne £131,400 (open, Ryanair Future Flyer partnership, Gloucestershire/Bournemouth/Florida); CAE/easyJet Generation MPL €115,000 (open, easyJet guaranteed interview); Acron Aviation Academy (formerly L3Harris) £94,500 — CLOSED for new cadets as of April 2025. Modular route: CPL/IR/MCC typically £45,000–£70,000 across multiple schools. FTA Global Brighton is PERMANENTLY CLOSED (collapsed May 2023 — do not recommend). Finance: BBVA, Caledonian, Barclays aviation loans available. Note: costs verified June 2026 — confirm directly with schools.",
+          "United States":
+            "USA (2026 verified): ATP Flight School Airline Career Pilot Program $123,995 fixed-cost (open, 88 locations, American/Delta/United Career Tracks); United Aviate Academy $111,700 (open, direct United Airlines First Officer pathway); Embry-Riddle Aeronautical University ~$80,000–$120,000 total flight costs (open, Delta Propel/United Aviate partnerships); Delta Propel Career Path — financial assistance available, open to AABI-accredited university students. R-ATP minimum 1,000 hours at Part 141 schools vs 1,500 hours Part 61. GI Bill covers up to $28,937/year for eligible veterans.",
+          "Australia":
+            "Australia (2026 verified): CAE Melbourne (formerly Oxford Aviation) Integrated CPL MECIR A$101,350 inc GST (open, CASA approved); Qantas Group Pilot Academy ~A$160,000+ (open, Toowoomba QLD, scholarships up to A$30,000 for accommodation, no guaranteed job). Modular route: CPL + ME IR typically A$60,000–A$90,000. CASA requires minimum 200 hours for CPL. Note: costs verified June 2026.",
+          "Canada":
+            "Canada (2026 verified): Seneca College Honours Bachelor of Aviation Technology ~CAD $69,376 domestic / CAD $246,087 international (open, Jazz Aviation cadet pathway). Modular CPL + ME IR typically CAD $80,000–$120,000. Transport Canada CPL minimum 200 hours. OSAP and aviation-specific loans available.",
+          "Europe":
+            "Europe (2026 verified): Lufthansa European Flight Academy €120,000 integrated ATPL (open, Lufthansa Group priority hiring, Brain Capital ISA financing with only €10,000 initial contribution, 50% reimbursement promise if no job offer within 24 months); CAE Madrid €116,000 EASA integrated ATPL (open). EASA fATPL requires 1,500 hours for unrestricted ATPL. Modular route across multiple EASA states typically €50,000–€80,000.",
+          "United Arab Emirates":
+            "UAE (2026 verified): Emirates Flight Training Academy USD $220,500 integrated ATPL (open, intakes every 2 months, 104-week programme, exclusive Emirates application pathway, fully sponsored for UAE nationals); Etihad Aviation Training — MPL only, not available for self-funded individuals, airline partnership access only. GCAA Class 1 medical required before enrolment.",
+          "New Zealand":
+            "New Zealand (2026 verified): Air New Zealand Mangōpare Cadetship — CURRENTLY CLOSED for applications. When open: cadets fund ~NZD $53,500 (20-30% of total cost), 14-month accelerated programme, 5-year service commitment required. Modular CPL + ME IR NZD $80,000–$120,000 at independent schools. CAA NZ CPL minimum 200 hours.",
+          "South Africa":
+            "South Africa (2026 verified): SACAA CPL minimum 200 hours. Integrated programmes typically ZAR 800,000–ZAR 1,200,000. Modular CPL + IR typically ZAR 400,000–ZAR 700,000. NSFAS does not cover aviation training. Aviation-specific bursaries from SAA and Airlink available. Comair is liquidated (2022) — do not reference. FlySafair and Airlink are active regional carriers for career pathways.",
+        };
+        const marketData =
+          VERIFIED_MARKET_DATA[lead.country ?? ""] ??
+          "No specific verified market data available for this country — advise the candidate to research local aviation authority-approved schools directly and verify costs in person.";
 
-Candidate profile:
+        const prompt = `You are an expert aviation career advisor with deep knowledge of pilot training across the UK, USA, Australia, Canada, Europe, UAE, New Zealand, and South Africa. Generate a premium personalised pilot training roadmap for this candidate. Format your response as structured JSON.
+
+CRITICAL INSTRUCTIONS:
+1. You MUST use the verified 2026 market data and matched schools provided below — do NOT rely on your training data for costs, school names, or programme status. If a school is listed as CLOSED, do not recommend it.
+2. This roadmap must be brutally honest and deeply personalised. Generic advice is not acceptable. Every section must reference specific details from the candidate's profile.
+3. The month-by-month timeline must be realistic for their specific route, country, budget, and start timeframe — not a generic template.
+4. The risk scenarios must address the specific risks for THIS candidate based on their barrier, medical confidence, funding method, and age — not generic aviation risks.
+5. Cost figures must be in the local currency of the candidate's country (GBP for UK, USD for USA, AUD for Australia, CAD for Canada, EUR for Europe, USD for UAE, NZD for New Zealand, ZAR for South Africa).
+
+═══════════════════════════════════════
+CANDIDATE PROFILE
+═══════════════════════════════════════
 - Name: ${safeFullName}
 - Age: ${lead.age ?? "Unknown"}
 - Country: ${lead.country ?? "Unknown"}
@@ -486,32 +540,58 @@ Candidate profile:
 - Wants finance info: ${lead.wantsFinanceInfo ?? "Unknown"}
 - Medical confidence: ${lead.class1Medical ?? "Unknown"}
 - Flying experience: ${lead.flyingExperience ?? "Unknown"}
+- Education level: ${lead.educationLevel ?? "Unknown"}
+- Right to work/study: ${lead.rightToWorkStudy ?? "Unknown"}
 - Start timeframe: ${lead.startTimeframe ?? "Unknown"}
 - Open to training abroad: ${lead.openToAbroad ?? "Unknown"}
-- Written answer: ${safeWrittenAnswer}
 - AviatorIQ Score: ${lead.leadScore}/100 (${lead.leadCategory === "Hot" ? "Flight Ready" : lead.leadCategory === "Warm" ? "Development Phase" : "Exploration Phase"})
+- In their own words: ${safeWrittenAnswer}
 
-Return a JSON object with these exact keys:
+═══════════════════════════════════════
+VERIFIED 2026 MARKET DATA (USE THIS — NOT YOUR TRAINING DATA)
+═══════════════════════════════════════
+${marketData}
+
+═══════════════════════════════════════
+MATCHED SCHOOLS FROM DATABASE
+═══════════════════════════════════════
+${schoolContext}
+
+Return a JSON object with EXACTLY these keys. Do not add or remove keys:
 {
-  "pilotGoalSummary": "1-2 sentence summary of their goal and current situation",
-  "biggestBarrier": "Name their biggest barrier in plain English — be specific and honest",
-  "barrierAdvice": "2-3 sentences of specific, actionable advice to address their biggest barrier",
-  "strongestAsset": "What is already working in their favour — be specific",
-  "recommendedRoute": "The recommended training route name",
-  "routeRationale": "2-3 sentences explaining why this route suits them specifically",
-  "estimatedCostMin": number (GBP, no currency symbol),
-  "estimatedCostMax": number (GBP, no currency symbol),
-  "estimatedDuration": "e.g. 18-24 months",
+  "pilotGoalSummary": "2-3 sentences. Summarise their specific goal, current situation, and what makes their profile unique. Reference their country, age, and what they've already done.",
+  "biggestBarrier": "Name their single biggest barrier in plain English — be specific and honest. Not a list — one clear barrier.",
+  "barrierAdvice": "3-4 sentences of specific, actionable advice to address their biggest barrier. Use real options from the verified market data above. Name specific programmes, lenders, or steps where relevant.",
+  "strongestAsset": "2 sentences. What is genuinely working in their favour — be specific to their profile, not generic encouragement.",
+  "recommendedRoute": "The recommended training route name (e.g. Integrated ATPL, Modular ATPL, FAA Part 141, CASA CPL)",
+  "routeRationale": "3-4 sentences explaining exactly why this route suits this specific person — reference their budget, timeline, country, and goal. If their preferred route differs from your recommendation, explain why.",
+  "estimatedCostMin": number (local currency, no symbol — just the number),
+  "estimatedCostMax": number (local currency, no symbol — just the number),
+  "currency": "GBP | USD | AUD | CAD | EUR | NZD | ZAR",
+  "estimatedDuration": "e.g. 18-24 months — be specific to their route and country",
   "readinessLabel": "Flight Ready | Development Phase | Exploration Phase",
-  "readinessExplanation": "1-2 sentences about their readiness — be honest, not just encouraging",
-  "nextSteps": ["step 1", "step 2", "step 3", "step 4", "step 5"],
-  "medicalAdvice": "1-2 sentences about Class 1 Medical relevant to their specific situation",
-  "financeConsiderations": "1-2 sentences about financing relevant to their budget and funding method",
-  "schoolTypeRecommendation": "What type of school to look for and why",
-  "disclaimer": "This report is guidance only and not official career, medical or financial advice. Always consult qualified professionals before making training decisions."
+  "readinessExplanation": "2-3 sentences about their readiness — be honest, not just encouraging. If they have gaps, name them.",
+  "monthlyTimeline": [
+    { "month": "Month 1-2", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase, referencing their country and route" },
+    { "month": "Month 3-4", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase" },
+    { "month": "Month 5-8", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase" },
+    { "month": "Month 9-14", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase" },
+    { "month": "Month 15-18", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase" },
+    { "month": "Month 19-24", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase" }
+  ],
+  "riskScenarios": [
+    { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate based on their profile" },
+    { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" },
+    { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" }
+  ],
+  "matchedSchoolRationale": "2-3 sentences explaining what type of school suits this candidate and why, based on their profile and the matched schools above. Reference specific school names if relevant.",
+  "nextSteps": ["Specific step 1 — must reference their country/route", "Specific step 2", "Specific step 3", "Specific step 4", "Specific step 5"],
+  "medicalAdvice": "2-3 sentences about Class 1 Medical relevant to their specific situation and country. If they have concerns, address them directly and name the specific AME process for their country.",
+  "financeConsiderations": "2-3 sentences about financing specific to their budget, funding method, and country. Name real options from the verified market data.",
+  "disclaimer": "This report is guidance only and not official career, medical or financial advice. Costs are verified as of June 2026 but subject to change — always confirm directly with training providers before committing."
 }
 
-Use honest, direct language. If their barrier is funding, say so clearly and give real options. If their timeline is unrealistic, say so kindly. Do not make promises about employment or medical approval. The goal is to give them the certainty they need to make a decision — not just to encourage them.`;
+IMPORTANT: The monthlyTimeline must be tailored to their specific route and country — not a generic template. The riskScenarios must be the 3 most relevant risks for THIS specific candidate. If their medical confidence is low, that must be a risk. If their funding method is a loan, debt risk must appear. If they are over 40, age-related airline hiring must appear as a risk.`;
 
         // ── Graceful degradation: if OpenAI is unavailable, return structured fallback ──
         let roadmap: string;
@@ -1160,6 +1240,132 @@ Use honest, direct language. If their barrier is funding, say so clearly and giv
         return { ok: true };
       }),
   }),
-});
+  // ─── Payments ──────────────────────────────────────────────────────────────
+  payments: router({
+    // Create a Stripe Checkout session for the premium roadmap
+    createCheckout: publicProcedure
+      .input(
+        z.object({
+          leadId: z.number().int(),
+          email: z.string().email().optional(),
+          successUrl: z.string().url(),
+          cancelUrl: z.string().url(),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const stripeKey = process.env.STRIPE_SECRET_KEY;
+        if (!stripeKey) {
+          throw new TRPCError({
+            code: "INTERNAL_SERVER_ERROR",
+            message: "Payment processing is not configured.",
+          });
+        }
 
+        const stripe = new Stripe(stripeKey, { apiVersion: "2025-05-28.basil" });
+
+        const lead = await getLeadById(input.leadId);
+        if (!lead) {
+          throw new TRPCError({ code: "NOT_FOUND", message: "Lead not found." });
+        }
+
+        // Check if already purchased
+        const existing = await getRoadmapPurchaseByLead(input.leadId);
+        if (existing?.status === "complete") {
+          throw new TRPCError({
+            code: "BAD_REQUEST",
+            message: "Premium roadmap already unlocked for this profile.",
+          });
+        }
+
+        const session = await stripe.checkout.sessions.create({
+          mode: "payment",
+          customer_email: input.email ?? lead.email ?? undefined,
+          line_items: [
+            {
+              price_data: {
+                currency: "gbp",
+                unit_amount: 900, // £9.00
+                product_data: {
+                  name: "AviatorIQ Premium Roadmap",
+                  description:
+                    "Your personalised pilot training roadmap — month-by-month timeline, risk analysis, verified school costs, and a downloadable PDF blueprint.",
+                  images: [],
+                },
+              },
+              quantity: 1,
+            },
+          ],
+          metadata: {
+            leadId: String(input.leadId),
+            product: "premium_roadmap",
+          },
+          success_url: input.successUrl + "?session_id={CHECKOUT_SESSION_ID}",
+          cancel_url: input.cancelUrl,
+          allow_promotion_codes: true,
+        });
+
+        // Record the pending purchase
+        await createRoadmapPurchase({
+          leadId: input.leadId,
+          stripeSessionId: session.id,
+          email: input.email ?? lead.email ?? undefined,
+          currency: "gbp",
+        });
+
+        return { checkoutUrl: session.url! };
+      }),
+
+    // Verify a completed Stripe session and unlock the premium roadmap
+    verifyPayment: publicProcedure
+      .input(
+        z.object({
+          sessionId: z.string(),
+          leadId: z.number().int(),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const stripeKey = process.env.STRIPE_SECRET_KEY;
+        if (!stripeKey) {
+          throw new TRPCError({
+            code: "INTERNAL_SERVER_ERROR",
+            message: "Payment processing is not configured.",
+          });
+        }
+
+        const stripe = new Stripe(stripeKey, { apiVersion: "2025-05-28.basil" });
+
+        try {
+          const session = await stripe.checkout.sessions.retrieve(input.sessionId);
+
+          if (
+            session.payment_status === "paid" &&
+            session.metadata?.leadId === String(input.leadId)
+          ) {
+            await completeRoadmapPurchase(
+              input.sessionId,
+              typeof session.payment_intent === "string"
+                ? session.payment_intent
+                : session.payment_intent?.id
+            );
+            return { unlocked: true };
+          }
+
+          return { unlocked: false };
+        } catch (e) {
+          throw new TRPCError({
+            code: "INTERNAL_SERVER_ERROR",
+            message: "Could not verify payment. Please contact support.",
+          });
+        }
+      }),
+
+    // Check if a lead has already purchased the premium roadmap
+    checkPurchase: publicProcedure
+      .input(z.object({ leadId: z.number().int() }))
+      .query(async ({ input }) => {
+        const purchase = await getRoadmapPurchaseByLead(input.leadId);
+        return { purchased: purchase?.status === "complete" };
+      }),
+  }),
+});
 export type AppRouter = typeof appRouter;

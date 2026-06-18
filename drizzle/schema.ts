@@ -286,3 +286,21 @@ export const schoolSubscriptions = mysqlTable("school_subscriptions", {
 });
 export type SchoolSubscription = typeof schoolSubscriptions.$inferSelect;
 export type InsertSchoolSubscription = typeof schoolSubscriptions.$inferInsert;
+
+// ─── Roadmap Purchases (Premium) ─────────────────────────────────────────────
+export const roadmapPurchases = mysqlTable("roadmap_purchases", {
+  id: int("id").autoincrement().primaryKey(),
+  leadId: int("leadId").notNull(),
+  stripeSessionId: varchar("stripeSessionId", { length: 255 }).notNull().unique(),
+  stripePaymentIntentId: varchar("stripePaymentIntentId", { length: 255 }),
+  status: mysqlEnum("status", ["pending", "complete", "expired", "refunded"])
+    .default("pending")
+    .notNull(),
+  amountPence: int("amountPence").default(900).notNull(), // £9.00 in pence
+  currency: varchar("currency", { length: 10 }).default("gbp").notNull(),
+  email: varchar("email", { length: 320 }),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  completedAt: timestamp("completedAt"),
+});
+export type RoadmapPurchase = typeof roadmapPurchases.$inferSelect;
+export type InsertRoadmapPurchase = typeof roadmapPurchases.$inferInsert;

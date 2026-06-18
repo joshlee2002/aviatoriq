@@ -13,6 +13,8 @@ import { serveStatic, setupVite } from "./vite";
 import { seoInjectorMiddleware } from "../seoInjector";
 import { registerSitemapRoute } from "../sitemapGenerator";
 import { validateEnv } from "./envValidation";
+import Stripe from "stripe";
+import { completeRoadmapPurchase } from "../db";
 
 // ─── Startup env validation ────────────────────────────────────────────────────
 validateEnv();
@@ -42,6 +44,52 @@ async function startServer() {
 
   // Trust the Manus reverse proxy so req.protocol is 'https' and secure cookies work correctly
   app.set("trust proxy", 1);
+
+  // ─── Stripe webhook — MUST use raw body, registered BEFORE json middleware ──
+  app.post(
+    "/api/stripe/webhook",
+    express.raw({ type: "application/json" }),
+    async (req, res) => {
+      const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+      const stripeKey = process.env.STRIPE_SECRET_KEY;
+      if (!webhookSecret || !stripeKey) {
+        res.status(400).send("Stripe not configured");
+        return;
+      }
+      const stripe = new Stripe(stripeKey, { apiVersion: "2025-05-28.basil" });
+      const sig = req.headers["stripe-signature"] as string;
+      let event: Stripe.Event;
+      try {
+        event = stripe.webhooks.constructEvent(req.body, sig, webhookSecret);
+      } catch (err) {
+        console.error("[Stripe] Webhook signature verification failed:", err);
+        res.status(400).send("Webhook signature invalid");
+        return;
+      }
+      if (event.type === "checkout.session.completed") {
+        const session = event.data.object as Stripe.Checkout.Session;
+        if (
+          session.payment_status === "paid" &&
+          session.metadata?.product === "premium_roadmap"
+        ) {
+          try {
+            await completeRoadmapPurchase(
+              session.id,
+              typeof session.payment_intent === "string"
+                ? session.payment_intent
+                : session.payment_intent?.id
+            );
+            console.log(
+              `[Stripe] Premium roadmap unlocked for session ${session.id}`
+            );
+          } catch (e) {
+            console.error("[Stripe] Failed to complete purchase:", e);
+          }
+        }
+      }
+      res.json({ received: true });
+    }
+  );
 
   // ─── Body parser — reduced from 50mb to 1mb (no file upload endpoint needs 50mb) ──
   app.use(express.json({ limit: "1mb" }));

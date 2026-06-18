@@ -60,6 +60,25 @@ interface FlightSchool {
   accommodationAvailable: "yes" | "no" | "unknown" | null;
 }
 
+interface MonthlyMilestone {
+  month: string;
+  milestone: string;
+  detail: string;
+  cost?: string;
+}
+interface RiskScenario {
+  scenario: string;
+  probability: "Low" | "Medium" | "High";
+  mitigation: string;
+}
+interface MatchedSchoolContext {
+  name: string;
+  country: string;
+  whyMatch: string;
+  verifiedCost?: string;
+  financeAvailable?: boolean;
+  website?: string;
+}
 interface RoadmapData {
   pilotGoalSummary?: string;
   recommendedRoute?: string;
@@ -74,6 +93,13 @@ interface RoadmapData {
   financeConsiderations?: string;
   schoolTypeRecommendation?: string;
   disclaimer?: string;
+  // ─── Premium fields ───────────────────────────────────────────────────────
+  barrierDeepDive?: string;
+  monthlyTimeline?: MonthlyMilestone[];
+  riskScenarios?: RiskScenario[];
+  matchedSchoolsContext?: MatchedSchoolContext[];
+  thirtyDayActionPlan?: string[];
+  keyInsight?: string;
 }
 
 interface Dimensions {
@@ -265,6 +291,81 @@ export default function Results() {
     "under50k" | "50k_80k" | "80k_100k" | "over100k" | "unsure"
   >("unsure");
   const [financeConsent, setFinanceConsent] = useState(false);
+
+  // ─── Premium Roadmap Payment State ──────────────────────────────────────────
+  const [premiumUnlocked, setPremiumUnlocked] = useState(() => {
+    try {
+      return sessionStorage.getItem(`premium_unlocked_${leadId}`) === "true";
+    } catch {
+      return false;
+    }
+  });
+  const [checkoutLoading, setCheckoutLoading] = useState(false);
+
+  // Check if already purchased (on page load)
+  const purchaseQuery = trpc.payments.checkPurchase.useQuery(
+    { leadId },
+    {
+      enabled: !!leadId && !premiumUnlocked,
+      onSuccess: (data: { purchased: boolean }) => {
+        if (data.purchased) {
+          setPremiumUnlocked(true);
+          try {
+            sessionStorage.setItem(`premium_unlocked_${leadId}`, "true");
+          } catch {}
+        }
+      },
+    }
+  );
+
+  // Verify payment after Stripe redirect
+  const verifyPayment = trpc.payments.verifyPayment.useMutation({
+    onSuccess: (data: { unlocked: boolean }) => {
+      if (data.unlocked) {
+        setPremiumUnlocked(true);
+        try {
+          sessionStorage.setItem(`premium_unlocked_${leadId}`, "true");
+        } catch {}
+        toast.success("🎉 Premium roadmap unlocked!");
+        // Remove session_id from URL
+        const url = new URL(window.location.href);
+        url.searchParams.delete("session_id");
+        window.history.replaceState({}, "", url.toString());
+      }
+    },
+  });
+
+  const createCheckout = trpc.payments.createCheckout.useMutation({
+    onSuccess: (data: { checkoutUrl: string }) => {
+      window.location.href = data.checkoutUrl;
+    },
+    onError: () => {
+      setCheckoutLoading(false);
+      toast.error("Could not start checkout. Please try again.");
+    },
+  });
+
+  // On mount: check for session_id in URL (Stripe redirect back)
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const sessionId = params.get("session_id");
+    if (sessionId && leadId && !premiumUnlocked) {
+      verifyPayment.mutate({ sessionId, leadId });
+    }
+  }, [leadId]);
+
+  const handleUnlockPremium = () => {
+    if (!leadId) return;
+    setCheckoutLoading(true);
+    const baseUrl = window.location.origin;
+    createCheckout.mutate({
+      leadId,
+      email: (activeResult as any)?.lead?.email ?? undefined,
+      successUrl: `${baseUrl}/results/${leadId}`,
+      cancelUrl: `${baseUrl}/results/${leadId}`,
+    });
+  };
+
   const submitFinanceInterest = trpc.finance.submitInterest.useMutation({
     onSuccess: () => {
       setFinanceSubmitted(true);
@@ -1581,7 +1682,7 @@ export default function Results() {
                 )}
 
                 {/* Disclaimer */}
-                {roadmap.disclaimer && (
+                                {roadmap.disclaimer && (
                   <div
                     className="flex items-start gap-2 p-3 rounded-lg"
                     style={{
@@ -1604,6 +1705,375 @@ export default function Results() {
               </div>
             </div>
           ) : null}
+
+          {/* ── PREMIUM GATE ── */}
+          {roadmap && (
+            <div className="animate-fade-in-up">
+              {!premiumUnlocked ? (
+                /* ── Locked State: teaser + CTA ── */
+                <div
+                  className="rounded-2xl overflow-hidden"
+                  style={{
+                    border: "1px solid oklch(0.55 0.18 240 / 0.3)",
+                    background: "oklch(0.13 0.02 240)",
+                  }}
+                >
+                  {/* Blurred preview rows */}
+                  <div className="relative">
+                    <div
+                      className="p-6 select-none"
+                      style={{ filter: "blur(4px)", pointerEvents: "none", userSelect: "none" }}
+                    >
+                      <div className="mb-4">
+                        <div className="h-4 w-48 rounded bg-white/10 mb-2" />
+                        <div className="h-3 w-full rounded bg-white/5 mb-1" />
+                        <div className="h-3 w-4/5 rounded bg-white/5" />
+                      </div>
+                      <div className="grid grid-cols-3 gap-3">
+                        {[1, 2, 3].map(i => (
+                          <div key={i} className="rounded-lg p-3" style={{ background: "oklch(0.18 0.02 240)" }}>
+                            <div className="h-3 w-16 rounded bg-white/10 mb-2" />
+                            <div className="h-2 w-full rounded bg-white/5 mb-1" />
+                            <div className="h-2 w-3/4 rounded bg-white/5" />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* Overlay */}
+                    <div
+                      className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
+                      style={{ background: "oklch(0.13 0.02 240 / 0.85)" }}
+                    >
+                      <div
+                        className="w-12 h-12 rounded-full flex items-center justify-center mb-4"
+                        style={{ background: "oklch(0.55 0.18 240 / 0.2)", border: "1px solid oklch(0.55 0.18 240 / 0.4)" }}
+                      >
+                        <span className="text-2xl">🔒</span>
+                      </div>
+                      <h3 className="font-display font-bold text-white text-xl mb-2">
+                        Your Full Premium Roadmap
+                      </h3>
+                      <p className="text-sm mb-1" style={{ color: "oklch(0.65 0 0)" }}>
+                        Unlock your month-by-month training timeline, personalised risk analysis, verified school costs, and a 30-day action plan.
+                      </p>
+                      <p className="text-xs mb-6" style={{ color: "oklch(0.55 0 0)" }}>
+                        Based on your exact profile — not generic advice.
+                      </p>
+                      <button
+                        onClick={handleUnlockPremium}
+                        disabled={checkoutLoading}
+                        className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white text-sm transition-all"
+                        style={{
+                          background: checkoutLoading
+                            ? "oklch(0.45 0.18 240)"
+                            : "oklch(0.55 0.18 240)",
+                          boxShadow: "0 0 20px oklch(0.55 0.18 240 / 0.4)",
+                        }}
+                      >
+                        {checkoutLoading ? (
+                          <><Loader2 className="w-4 h-4 animate-spin" /> Processing…</>
+                        ) : (
+                          <><CreditCard className="w-4 h-4" /> Unlock for £9 — One-time payment</>
+                        )}
+                      </button>
+                      <p className="text-xs mt-3" style={{ color: "oklch(0.45 0 0)" }}>
+                        Secure payment via Stripe · Instant access · PDF included
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                /* ── Unlocked State: full premium content ── */
+                <div className="space-y-6">
+                  {/* Key Insight */}
+                  {roadmap.keyInsight && (
+                    <div
+                      className="rounded-2xl p-6"
+                      style={{
+                        background: "oklch(0.55 0.18 240 / 0.08)",
+                        border: "1px solid oklch(0.55 0.18 240 / 0.25)",
+                      }}
+                    >
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="text-lg">✨</span>
+                        <h3 className="font-display font-bold text-white text-base">Key Insight</h3>
+                      </div>
+                      <p className="text-sm leading-relaxed" style={{ color: "oklch(0.75 0 0)" }}>
+                        {roadmap.keyInsight}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Barrier Deep Dive */}
+                  {roadmap.barrierDeepDive && (
+                    <div
+                      className="rounded-2xl p-6"
+                      style={{
+                        background: "oklch(0.65 0.18 30 / 0.06)",
+                        border: "1px solid oklch(0.65 0.18 30 / 0.2)",
+                      }}
+                    >
+                      <div className="flex items-center gap-2 mb-3">
+                        <AlertTriangle className="w-4 h-4" style={{ color: "oklch(0.65 0.18 30)" }} />
+                        <h3 className="font-display font-bold text-white text-base">Your Biggest Barrier — In Depth</h3>
+                      </div>
+                      <p className="text-sm leading-relaxed" style={{ color: "oklch(0.75 0 0)" }}>
+                        {roadmap.barrierDeepDive}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Month-by-Month Timeline */}
+                  {roadmap.monthlyTimeline && roadmap.monthlyTimeline.length > 0 && (
+                    <div
+                      className="rounded-2xl p-6"
+                      style={{
+                        background: "oklch(0.13 0.02 240)",
+                        border: "1px solid oklch(0.55 0.18 240 / 0.2)",
+                      }}
+                    >
+                      <div className="flex items-center gap-2 mb-5">
+                        <Clock className="w-4 h-4" style={{ color: "oklch(0.55 0.18 240)" }} />
+                        <h3 className="font-display font-bold text-white text-base">Your Month-by-Month Training Timeline</h3>
+                      </div>
+                      <div className="relative">
+                        <div
+                          className="absolute left-[11px] top-0 bottom-0 w-px"
+                          style={{ background: "oklch(0.55 0.18 240 / 0.2)" }}
+                        />
+                        <div className="space-y-5">
+                          {roadmap.monthlyTimeline.map((item, i) => (
+                            <div key={i} className="flex gap-4 pl-1">
+                              <div
+                                className="w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5 z-10"
+                                style={{ background: "oklch(0.55 0.18 240)", minWidth: "20px" }}
+                              >
+                                <span className="text-[9px] font-bold text-white">{i + 1}</span>
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <div className="flex items-start justify-between gap-2 mb-1">
+                                  <div>
+                                    <span
+                                      className="text-xs font-semibold"
+                                      style={{ color: "oklch(0.55 0.18 240)" }}
+                                    >
+                                      {item.month}
+                                    </span>
+                                    <p className="text-sm font-semibold text-white">{item.milestone}</p>
+                                  </div>
+                                  {item.cost && (
+                                    <span
+                                      className="text-xs font-mono px-2 py-0.5 rounded flex-shrink-0"
+                                      style={{
+                                        background: "oklch(0.45 0.15 140 / 0.15)",
+                                        color: "oklch(0.65 0.15 140)",
+                                        border: "1px solid oklch(0.45 0.15 140 / 0.3)",
+                                      }}
+                                    >
+                                      {item.cost}
+                                    </span>
+                                  )}
+                                </div>
+                                <p className="text-xs leading-relaxed" style={{ color: "oklch(0.6 0 0)" }}>
+                                  {item.detail}
+                                </p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Risk Scenarios */}
+                  {roadmap.riskScenarios && roadmap.riskScenarios.length > 0 && (
+                    <div
+                      className="rounded-2xl p-6"
+                      style={{
+                        background: "oklch(0.13 0.02 240)",
+                        border: "1px solid oklch(0.65 0.18 30 / 0.2)",
+                      }}
+                    >
+                      <div className="flex items-center gap-2 mb-5">
+                        <AlertTriangle className="w-4 h-4" style={{ color: "oklch(0.65 0.18 30)" }} />
+                        <h3 className="font-display font-bold text-white text-base">What Could Go Wrong — And How to Handle It</h3>
+                      </div>
+                      <div className="space-y-4">
+                        {roadmap.riskScenarios.map((risk, i) => {
+                          const probColor =
+                            risk.probability === "High"
+                              ? "oklch(0.65 0.18 30)"
+                              : risk.probability === "Medium"
+                                ? "oklch(0.72 0.18 65)"
+                                : "oklch(0.65 0.15 140)";
+                          return (
+                            <div
+                              key={i}
+                              className="rounded-xl p-4"
+                              style={{
+                                background: "oklch(0.16 0.02 240)",
+                                border: `1px solid ${probColor}30`,
+                              }}
+                            >
+                              <div className="flex items-start justify-between gap-2 mb-2">
+                                <p className="text-sm font-semibold text-white">{risk.scenario}</p>
+                                <span
+                                  className="text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0"
+                                  style={{
+                                    background: `${probColor}15`,
+                                    color: probColor,
+                                    border: `1px solid ${probColor}30`,
+                                  }}
+                                >
+                                  {risk.probability} Risk
+                                </span>
+                              </div>
+                              <p className="text-xs leading-relaxed" style={{ color: "oklch(0.6 0 0)" }}>
+                                <span className="font-semibold" style={{ color: "oklch(0.65 0.15 140)" }}>Mitigation: </span>
+                                {risk.mitigation}
+                              </p>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Matched Schools with Context */}
+                  {roadmap.matchedSchoolsContext && roadmap.matchedSchoolsContext.length > 0 && (
+                    <div
+                      className="rounded-2xl p-6"
+                      style={{
+                        background: "oklch(0.13 0.02 240)",
+                        border: "1px solid oklch(0.55 0.18 240 / 0.2)",
+                      }}
+                    >
+                      <div className="flex items-center gap-2 mb-5">
+                        <School className="w-4 h-4" style={{ color: "oklch(0.55 0.18 240)" }} />
+                        <h3 className="font-display font-bold text-white text-base">Your Matched Schools — Why They Fit You</h3>
+                      </div>
+                      <div className="space-y-4">
+                        {roadmap.matchedSchoolsContext.map((school, i) => (
+                          <div
+                            key={i}
+                            className="rounded-xl p-4"
+                            style={{
+                              background: "oklch(0.16 0.02 240)",
+                              border: "1px solid oklch(0.55 0.18 240 / 0.15)",
+                            }}
+                          >
+                            <div className="flex items-start justify-between gap-2 mb-2">
+                              <div>
+                                <p className="text-sm font-bold text-white">{school.name}</p>
+                                <p className="text-xs" style={{ color: "oklch(0.55 0 0)" }}>{school.country}</p>
+                              </div>
+                              {school.verifiedCost && (
+                                <span
+                                  className="text-xs font-mono px-2 py-0.5 rounded flex-shrink-0"
+                                  style={{
+                                    background: "oklch(0.45 0.15 140 / 0.15)",
+                                    color: "oklch(0.65 0.15 140)",
+                                    border: "1px solid oklch(0.45 0.15 140 / 0.3)",
+                                  }}
+                                >
+                                  {school.verifiedCost}
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-xs leading-relaxed mb-3" style={{ color: "oklch(0.65 0 0)" }}>
+                              {school.whyMatch}
+                            </p>
+                            <div className="flex items-center gap-3">
+                              {school.financeAvailable && (
+                                <span
+                                  className="text-[10px] px-2 py-0.5 rounded"
+                                  style={{
+                                    background: "oklch(0.45 0.15 140 / 0.12)",
+                                    color: "oklch(0.65 0.15 140)",
+                                  }}
+                                >
+                                  Finance available
+                                </span>
+                              )}
+                              {school.website && (
+                                <a
+                                  href={school.website}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-[10px] flex items-center gap-1 transition-opacity hover:opacity-80"
+                                  style={{ color: "oklch(0.55 0.18 240)" }}
+                                >
+                                  Visit school <ArrowRight className="w-2.5 h-2.5" />
+                                </a>
+                              )}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 30-Day Action Plan */}
+                  {roadmap.thirtyDayActionPlan && roadmap.thirtyDayActionPlan.length > 0 && (
+                    <div
+                      className="rounded-2xl p-6"
+                      style={{
+                        background: "oklch(0.45 0.15 140 / 0.06)",
+                        border: "1px solid oklch(0.45 0.15 140 / 0.2)",
+                      }}
+                    >
+                      <div className="flex items-center gap-2 mb-4">
+                        <CheckCircle2 className="w-4 h-4" style={{ color: "oklch(0.65 0.15 140)" }} />
+                        <h3 className="font-display font-bold text-white text-base">Your 30-Day Action Plan</h3>
+                      </div>
+                      <div className="space-y-3">
+                        {roadmap.thirtyDayActionPlan.map((action, i) => (
+                          <div key={i} className="flex items-start gap-3">
+                            <div
+                              className="w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5"
+                              style={{ background: "oklch(0.45 0.15 140 / 0.2)", border: "1px solid oklch(0.45 0.15 140 / 0.4)" }}
+                            >
+                              <span className="text-[9px] font-bold" style={{ color: "oklch(0.65 0.15 140)" }}>{i + 1}</span>
+                            </div>
+                            <p className="text-sm leading-relaxed" style={{ color: "oklch(0.75 0 0)" }}>{action}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Premium PDF Download */}
+                  <div
+                    className="rounded-2xl p-6 flex items-center justify-between gap-4"
+                    style={{
+                      background: "oklch(0.55 0.18 240 / 0.08)",
+                      border: "1px solid oklch(0.55 0.18 240 / 0.25)",
+                    }}
+                  >
+                    <div>
+                      <h3 className="font-display font-bold text-white text-base mb-1">Download Your Blueprint PDF</h3>
+                      <p className="text-xs" style={{ color: "oklch(0.55 0 0)" }}>Your full roadmap as a shareable PDF document.</p>
+                    </div>
+                    {pdfQuery.data?.pdfUrl ? (
+                      <a
+                        href={pdfQuery.data.pdfUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 rounded-xl font-semibold text-white text-sm flex-shrink-0 transition-opacity hover:opacity-80"
+                        style={{ background: "oklch(0.55 0.18 240)" }}
+                      >
+                        <FileDown className="w-4 h-4" /> Download PDF
+                      </a>
+                    ) : (
+                      <div className="flex items-center gap-2 text-xs flex-shrink-0" style={{ color: "oklch(0.55 0 0)" }}>
+                        <Loader2 className="w-3.5 h-3.5 animate-spin" /> Generating PDF…
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* ── Finance Referral Card ── */}
           <div
