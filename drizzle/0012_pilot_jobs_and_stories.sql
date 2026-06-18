@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `pilot_jobs` (
   `postedAt` timestamp NOT NULL DEFAULT (now()),
   `createdAt` timestamp NOT NULL DEFAULT (now()),
   `updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP
-);
+);--> statement-breakpoint
 
 CREATE TABLE IF NOT EXISTS `pilot_stories` (
   `id` int AUTO_INCREMENT PRIMARY KEY NOT NULL,
