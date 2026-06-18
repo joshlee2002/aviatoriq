@@ -1310,7 +1310,7 @@ function StoriesPanel() {
         <textarea value={form.qa} onChange={e => setForm(p => ({ ...p, qa: e.target.value }))}
           rows={4} placeholder='[{"q":"How did you start?","a":"I always loved planes..."}]'
           className="w-full px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm font-mono focus:border-[var(--color-primary)] outline-none resize-none" />
-        <p className="text-xs text-[var(--color-muted-foreground)] mt-1">Format: JSON array of {{q, a}} objects</p>
+        <p className="text-xs text-[var(--color-muted-foreground)] mt-1">Format: JSON array of q/a objects</p>
       </div>
       <div className="flex gap-4">
         <label className="flex items-center gap-2 text-sm cursor-pointer">

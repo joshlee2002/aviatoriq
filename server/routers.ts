@@ -341,7 +341,7 @@ AviatorIQ Score: ${score}/100 (${category})`;
             category: category as "Hot" | "Warm" | "Cold",
             resultsUrl: `${
               process.env.APP_URL ??
-              "https://aviatoriq-production.up.railway.app"
+              "https://aviatoriq-production-4b36.up.railway.app"
             }/results/${leadId}`,
           }),
         }).catch(e => console.warn("[Email] Welcome email failed (non-fatal):", e));
@@ -432,7 +432,7 @@ AviatorIQ Score: ${score}/100 (${category})`;
           // Return success regardless to prevent email enumeration
           return { sent: true };
         }
-        const appUrl = process.env.APP_URL ?? "https://aviatoriq-production.up.railway.app";
+        const appUrl = process.env.APP_URL ?? "https://aviatoriq-production-4b36.up.railway.app";
         const resultsUrl = `${appUrl}/results/${lead.id}`;
         // Send results link email
         try {
@@ -654,9 +654,9 @@ Return a JSON object with EXACTLY these keys. Do not add or remove keys:
     { "month": "Month 19-24", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase", "cost": null }
   ],
   "riskScenarios": [
-    { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate based on their profile" },
-    { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" },
-    { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" }
+    { "scenario": "Risk title", "probability": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate based on their profile" },
+    { "scenario": "Risk title", "probability": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" },
+    { "scenario": "Risk title", "probability": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" }
   ],
   "careerRealityCheck": "3-4 sentences giving an honest picture of the full career journey AFTER training. Include: typical time from licence to first airline job (6-18 months), regional FO starting salary, time to captain upgrade (2-7 years at regional, 5-15 years at major), and the seniority system reality. Be honest — most candidates only think about training, not the 10-15 years after it.",
   "matchedSchoolRationale": "2-3 sentences explaining what type of school suits this candidate and why, based on their profile and the matched schools above. Reference specific school names if relevant.",
@@ -756,6 +756,11 @@ IMPORTANT RULES:
               { criterion: "Aircraft availability", whyItMatters: "Training delays due to aircraft maintenance are the most common cause of cost overruns.", questionToAsk: "What is your aircraft-to-student ratio and what is your average weather/maintenance cancellation rate?" },
               { criterion: "Airline partnerships", whyItMatters: "Formal airline partnerships can mean guaranteed interviews or priority hiring after graduation.", questionToAsk: "Do you have formal airline partnership agreements, and what does that mean for graduates in practice?" },
               { criterion: "Finance and refund policy", whyItMatters: "Schools that require full upfront payment put you at risk if the school closes or you need to leave.", questionToAsk: "What is your refund policy if I need to leave training, and do you offer stage-by-stage payment?" },
+            ],
+            riskScenarios: [
+              { scenario: "Medical eligibility is not confirmed before spending money", probability: lead.class1Medical && lead.class1Medical.includes("hold") ? "Low" : "Medium", mitigation: "Book the relevant Class 1 medical before paying a school deposit. If anything is flagged, resolve it with the aeromedical examiner before committing to training finance." },
+              { scenario: "Training costs exceed the prospectus price", probability: "High", mitigation: "Budget 15-20% above headline fees for resits, extra hours, equipment, exam fees, accommodation, and delays. Ask every school for a written itemised quote and refund policy." },
+              { scenario: "First airline job takes longer than expected", probability: "Medium", mitigation: "Plan for 6-18 months between licence issue and first airline role. Preserve cash reserves and compare schools by graduate support, airline links, and first-time pass rates." },
             ],
             nextSteps: [
               "Book a Class 1 Medical assessment with a CAA-approved AME",
@@ -1195,7 +1200,7 @@ GUIDELINES:
               })),
               resultsUrl: `${
                 process.env.APP_URL ??
-                "https://aviatoriq-production.up.railway.app"
+                "https://aviatoriq-production-4b36.up.railway.app"
               }/results/${lead.id}`,
             }),
           }).catch(e => console.warn("[Email] Introduction confirmation email failed (non-fatal):", e));
