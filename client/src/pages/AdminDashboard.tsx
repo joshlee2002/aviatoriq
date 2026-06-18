@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { Mail, Globe, Phone, Briefcase } from "lucide-react";
 import { trpc } from "@/lib/trpc";
 import { useAuth } from "@/_core/hooks/useAuth";
@@ -31,6 +31,9 @@ import {
   BarChart2,
   PieChart,
   Target,
+  Pencil,
+  Save,
+  ChevronRight,
 } from "lucide-react";
 import DashboardLayout from "@/components/DashboardLayout";
 import { toast } from "sonner";
@@ -726,53 +729,472 @@ function SchoolModal({ onClose }: { onClose: () => void }) {
   );
 }
 
-// ─── Partner Applications Panel ──────────────────────────────────────────────
-// ─── Jobs Panel ───────────────────────────────────────────────────────────────
-function JobsPanel() {
-  const jobsQuery = trpc.jobs.list.useQuery({ region: undefined });
-  const deleteMutation = trpc.jobs.delete.useMutation({ onSuccess: () => jobsQuery.refetch() });
-  const jobs = jobsQuery.data?.jobs ?? [];
+// ─── Schools Panel (tab) ──────────────────────────────────────────────
+const EMPTY_SCHOOL_FORM = {
+  name: "",
+  country: "",
+  city: "",
+  airport: "",
+  courses: "",
+  integratedAtpl: false,
+  modularAtpl: false,
+  ppl: false,
+  priceRange: "",
+  financeAvailable: "unknown" as "yes" | "no" | "unknown",
+  accommodationAvailable: "unknown" as "yes" | "no" | "unknown",
+  airlinePartnerships: "",
+  website: "",
+  contactEmail: "",
+  phone: "",
+  description: "",
+  active: true,
+};
+
+function SchoolsPanel() {
+  const utils = trpc.useUtils();
+  const schoolsQuery = trpc.admin.listSchools.useQuery();
+  const schools = schoolsQuery.data ?? [];
+
+  const [showCreate, setShowCreate] = useState(false);
+  const [createForm, setCreateForm] = useState({ ...EMPTY_SCHOOL_FORM });
+  const [editingId, setEditingId] = useState<number | null>(null);
+  const [editForm, setEditForm] = useState({ ...EMPTY_SCHOOL_FORM });
+  const [filterText, setFilterText] = useState("");
+
+  const createMutation = trpc.admin.createSchool.useMutation({
+    onSuccess: () => {
+      utils.admin.listSchools.invalidate();
+      toast.success("School added");
+      setCreateForm({ ...EMPTY_SCHOOL_FORM });
+      setShowCreate(false);
+    },
+    onError: (e) => toast.error(e.message),
+  });
+
+  const updateMutation = trpc.admin.updateSchool.useMutation({
+    onSuccess: () => {
+      utils.admin.listSchools.invalidate();
+      toast.success("School updated");
+      setEditingId(null);
+    },
+    onError: (e) => toast.error(e.message),
+  });
+
+  const toggleActive = trpc.admin.updateSchool.useMutation({
+    onSuccess: () => utils.admin.listSchools.invalidate(),
+  });
+
+  const deleteMutation = trpc.admin.deleteSchool.useMutation({
+    onSuccess: () => { utils.admin.listSchools.invalidate(); toast.success("School deleted"); },
+  });
+
+  const startEdit = (school: typeof schools[0]) => {
+    setEditingId(school.id);
+    setEditForm({
+      name: school.name,
+      country: school.country ?? "",
+      city: school.city ?? "",
+      airport: school.airport ?? "",
+      courses: school.courses ?? "",
+      integratedAtpl: school.integratedAtpl ?? false,
+      modularAtpl: school.modularAtpl ?? false,
+      ppl: school.ppl ?? false,
+      priceRange: school.priceRange ?? "",
+      financeAvailable: (school.financeAvailable ?? "unknown") as "yes" | "no" | "unknown",
+      accommodationAvailable: (school.accommodationAvailable ?? "unknown") as "yes" | "no" | "unknown",
+      airlinePartnerships: school.airlinePartnerships ?? "",
+      website: school.website ?? "",
+      contactEmail: school.contactEmail ?? "",
+      phone: school.phone ?? "",
+      description: school.description ?? "",
+      active: school.active,
+    });
+  };
+
+  const SchoolFormFields = ({ form, setForm }: { form: typeof EMPTY_SCHOOL_FORM; setForm: React.Dispatch<React.SetStateAction<typeof EMPTY_SCHOOL_FORM>> }) => (
+    <div className="space-y-3">
+      <div className="grid grid-cols-2 gap-3">
+        {([
+          { key: "name", label: "School Name *", placeholder: "e.g. Oxford Aviation Academy" },
+          { key: "country", label: "Country", placeholder: "e.g. United Kingdom" },
+          { key: "city", label: "City", placeholder: "e.g. Oxford" },
+          { key: "airport", label: "Airport", placeholder: "e.g. EGTK" },
+          { key: "priceRange", label: "Price Range", placeholder: "e.g. \u00a380,000\u2013\u00a3100,000" },
+          { key: "website", label: "Website", placeholder: "https://..." },
+          { key: "contactEmail", label: "Contact Email", placeholder: "info@school.com" },
+          { key: "phone", label: "Phone", placeholder: "+44..." },
+          { key: "airlinePartnerships", label: "Airline Partnerships", placeholder: "e.g. easyJet, Ryanair" },
+        ] as { key: keyof typeof EMPTY_SCHOOL_FORM; label: string; placeholder: string }[]).map(f => (
+          <div key={f.key}>
+            <label className="block text-xs font-semibold text-[var(--color-muted-foreground)] mb-1">{f.label}</label>
+            <input type="text" value={form[f.key] as string}
+              onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))}
+              placeholder={f.placeholder}
+              className="w-full px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none" />
+          </div>
+        ))}
+      </div>
+      <div>
+        <label className="block text-xs font-semibold text-[var(--color-muted-foreground)] mb-1">Description</label>
+        <textarea value={form.description} onChange={e => setForm(p => ({ ...p, description: e.target.value }))}
+          rows={2} className="w-full px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none resize-none" />
+      </div>
+      <div className="flex flex-wrap gap-4">
+        {([{ key: "integratedAtpl", label: "Integrated ATPL" }, { key: "modularAtpl", label: "Modular ATPL" }, { key: "ppl", label: "PPL" }] as { key: keyof typeof EMPTY_SCHOOL_FORM; label: string }[]).map(f => (
+          <label key={f.key} className="flex items-center gap-2 text-sm cursor-pointer">
+            <input type="checkbox" checked={form[f.key] as boolean} onChange={e => setForm(p => ({ ...p, [f.key]: e.target.checked }))}
+              className="w-4 h-4 accent-[var(--color-primary)]" />
+            {f.label}
+          </label>
+        ))}
+        <div className="flex items-center gap-2">
+          <label className="text-xs font-semibold text-[var(--color-muted-foreground)]">Finance:</label>
+          <select value={form.financeAvailable} onChange={e => setForm(p => ({ ...p, financeAvailable: e.target.value as "yes" | "no" | "unknown" }))}
+            className="px-2 py-1 rounded border border-[var(--color-border)] text-xs">
+            <option value="yes">Yes</option><option value="no">No</option><option value="unknown">Unknown</option>
+          </select>
+        </div>
+        <div className="flex items-center gap-2">
+          <label className="text-xs font-semibold text-[var(--color-muted-foreground)]">Accommodation:</label>
+          <select value={form.accommodationAvailable} onChange={e => setForm(p => ({ ...p, accommodationAvailable: e.target.value as "yes" | "no" | "unknown" }))}
+            className="px-2 py-1 rounded border border-[var(--color-border)] text-xs">
+            <option value="yes">Yes</option><option value="no">No</option><option value="unknown">Unknown</option>
+          </select>
+        </div>
+        <label className="flex items-center gap-2 text-sm cursor-pointer">
+          <input type="checkbox" checked={form.active} onChange={e => setForm(p => ({ ...p, active: e.target.checked }))}
+            className="w-4 h-4 accent-[var(--color-primary)]" />
+          Active
+        </label>
+      </div>
+    </div>
+  );
+
+  const filtered = schools.filter(s =>
+    !filterText || s.name.toLowerCase().includes(filterText.toLowerCase()) || (s.country ?? "").toLowerCase().includes(filterText.toLowerCase())
+  );
 
   return (
-    <div className="card-base overflow-hidden">
-      <div className="p-4 border-b border-[var(--color-border)] flex items-center gap-2">
+    <div className="space-y-4">
+      {/* Header */}
+      <div className="card-base p-4 flex items-center gap-2 flex-wrap">
+        <School className="w-5 h-5 text-[var(--color-primary)]" />
+        <h3 className="font-display font-bold text-[var(--color-navy)]">Flight Schools</h3>
+        <span className="text-xs text-[var(--color-muted-foreground)] ml-1">{schools.length} total</span>
+        <div className="ml-auto flex items-center gap-2">
+          <div className="relative">
+            <Search className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-[var(--color-muted-foreground)]" />
+            <input type="text" value={filterText} onChange={e => setFilterText(e.target.value)}
+              placeholder="Filter schools..." className="pl-8 pr-3 py-1.5 rounded-lg border border-[var(--color-border)] text-xs focus:border-[var(--color-primary)] outline-none" />
+          </div>
+          <button onClick={() => setShowCreate(v => !v)}
+            className="btn-primary text-xs py-1.5 px-3 flex items-center gap-1">
+            <Plus className="w-3.5 h-3.5" />
+            {showCreate ? "Cancel" : "Add School"}
+          </button>
+        </div>
+      </div>
+
+      {/* Create form */}
+      {showCreate && (
+        <div className="card-base p-5 border-2 border-[var(--color-primary)]/30">
+          <h4 className="font-semibold text-[var(--color-navy)] mb-4">New Flight School</h4>
+          <SchoolFormFields form={createForm} setForm={setCreateForm} />
+          <div className="flex gap-2 mt-4">
+            <button
+              onClick={() => {
+                if (!createForm.name.trim()) { toast.error("School name is required"); return; }
+                createMutation.mutate(createForm);
+              }}
+              disabled={createMutation.isPending}
+              className="btn-primary text-sm flex items-center gap-1">
+              {createMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
+              Add School
+            </button>
+            <button onClick={() => setShowCreate(false)} className="btn-outline text-sm">Cancel</button>
+          </div>
+        </div>
+      )}
+
+      {/* School list */}
+      <div className="card-base overflow-hidden">
+        {schoolsQuery.isLoading ? (
+          <div className="flex items-center justify-center py-12">
+            <Loader2 className="w-6 h-6 animate-spin text-[var(--color-primary)]" />
+          </div>
+        ) : filtered.length === 0 ? (
+          <div className="text-center py-8 text-[var(--color-muted-foreground)]">
+            <School className="w-10 h-10 mx-auto mb-3 opacity-40" />
+            <p className="font-semibold text-[var(--color-navy)]">{filterText ? "No schools match your filter" : "No schools added yet"}</p>
+          </div>
+        ) : (
+          <div className="divide-y divide-[var(--color-border)]">
+            {filtered.map(school => (
+              <div key={school.id}>
+                {editingId === school.id ? (
+                  <div className="p-4 bg-[var(--color-muted)]/40">
+                    <SchoolFormFields form={editForm} setForm={setEditForm} />
+                    <div className="flex gap-2 mt-4">
+                      <button
+                        onClick={() => updateMutation.mutate({ id: school.id, ...editForm })}
+                        disabled={updateMutation.isPending}
+                        className="btn-primary text-xs flex items-center gap-1">
+                        {updateMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Save className="w-3.5 h-3.5" />}
+                        Save
+                      </button>
+                      <button onClick={() => setEditingId(null)} className="btn-outline text-xs">Cancel</button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex items-center justify-between p-3 hover:bg-[var(--color-muted)]/30 transition-colors">
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-sm text-[var(--color-navy)] truncate">{school.name}</p>
+                      <p className="text-xs text-[var(--color-muted-foreground)]">{school.country} {school.city ? `\u00b7 ${school.city}` : ""} {school.priceRange ? `\u00b7 ${school.priceRange}` : ""}</p>
+                    </div>
+                    <div className="flex items-center gap-2 ml-3 shrink-0">
+                      <button
+                        onClick={() => toggleActive.mutate({ id: school.id, active: !school.active })}
+                        className={`text-xs px-2 py-0.5 rounded-full border font-medium transition-colors ${
+                          school.active ? "border-green-200 bg-green-50 text-green-700 hover:bg-green-100" : "border-gray-200 bg-gray-50 text-gray-500 hover:bg-gray-100"
+                        }`}>
+                        {school.active ? "Active" : "Inactive"}
+                      </button>
+                      <button onClick={() => startEdit(school)}
+                        className="p-1.5 rounded text-[var(--color-primary)] hover:bg-[var(--color-primary)]/10 transition-colors">
+                        <Pencil className="w-3.5 h-3.5" />
+                      </button>
+                      <button onClick={() => confirm(`Delete "${school.name}"?`) && deleteMutation.mutate({ id: school.id })}
+                        className="p-1.5 rounded text-red-400 hover:text-red-600 hover:bg-red-50 transition-colors">
+                        <Trash2 className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ─── Partner Applications Panel ──────────────────────────────────────────────
+// ─── Jobs Panel ───────────────────────────────────────────────────────────────
+const EMPTY_JOB = {
+  title: "",
+  airline: "",
+  location: "",
+  type: "First Officer" as "First Officer" | "Captain" | "Cadet" | "Instructor" | "Other",
+  hours: "",
+  salary: "",
+  deadline: "",
+  link: "",
+  badge: "",
+  description: "",
+  region: "UK" as "UK" | "US" | "Global",
+  active: true,
+};
+
+function JobsPanel() {
+  const utils = trpc.useUtils();
+  const jobsQuery = trpc.jobs.list.useQuery({ region: undefined });
+  const jobs = jobsQuery.data?.jobs ?? [];
+
+  const [showCreate, setShowCreate] = useState(false);
+  const [createForm, setCreateForm] = useState({ ...EMPTY_JOB });
+  const [editingId, setEditingId] = useState<number | null>(null);
+  const [editForm, setEditForm] = useState({ ...EMPTY_JOB });
+
+  const createMutation = trpc.jobs.create.useMutation({
+    onSuccess: () => {
+      utils.jobs.list.invalidate();
+      toast.success("Job created");
+      setCreateForm({ ...EMPTY_JOB });
+      setShowCreate(false);
+    },
+    onError: (e) => toast.error(e.message),
+  });
+
+  const updateMutation = trpc.jobs.update.useMutation({
+    onSuccess: () => {
+      utils.jobs.list.invalidate();
+      toast.success("Job updated");
+      setEditingId(null);
+    },
+    onError: (e) => toast.error(e.message),
+  });
+
+  const deleteMutation = trpc.jobs.delete.useMutation({
+    onSuccess: () => { utils.jobs.list.invalidate(); toast.success("Job deleted"); },
+  });
+
+  const startEdit = (job: typeof jobs[0]) => {
+    setEditingId(job.id);
+    setEditForm({
+      title: job.title,
+      airline: job.airline,
+      location: job.location,
+      type: job.type as typeof EMPTY_JOB["type"],
+      hours: job.hours ?? "",
+      salary: job.salary ?? "",
+      deadline: job.deadline ?? "",
+      link: job.link,
+      badge: job.badge ?? "",
+      description: job.description,
+      region: (job.region ?? "UK") as typeof EMPTY_JOB["region"],
+      active: job.active ?? true,
+    });
+  };
+
+  const JobFormFields = ({ form, setForm }: { form: typeof EMPTY_JOB; setForm: React.Dispatch<React.SetStateAction<typeof EMPTY_JOB>> }) => (
+    <div className="space-y-3">
+      <div className="grid grid-cols-2 gap-3">
+        {([
+          { key: "title", label: "Job Title *", placeholder: "e.g. First Officer — A320" },
+          { key: "airline", label: "Airline *", placeholder: "e.g. easyJet" },
+          { key: "location", label: "Location *", placeholder: "e.g. UK Bases" },
+          { key: "hours", label: "Hours Required", placeholder: "e.g. 500+ hours" },
+          { key: "salary", label: "Salary", placeholder: "e.g. £50,000–£75,000" },
+          { key: "deadline", label: "Deadline", placeholder: "e.g. July 2026" },
+          { key: "link", label: "Apply URL *", placeholder: "https://..." },
+          { key: "badge", label: "Badge", placeholder: "e.g. Active Recruiting" },
+        ] as { key: keyof typeof EMPTY_JOB; label: string; placeholder: string }[]).map(f => (
+          <div key={f.key}>
+            <label className="block text-xs font-semibold text-[var(--color-muted-foreground)] mb-1">{f.label}</label>
+            <input
+              type="text"
+              value={form[f.key] as string}
+              onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))}
+              placeholder={f.placeholder}
+              className="w-full px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none"
+            />
+          </div>
+        ))}
+      </div>
+      <div className="grid grid-cols-3 gap-3">
+        <div>
+          <label className="block text-xs font-semibold text-[var(--color-muted-foreground)] mb-1">Type</label>
+          <select value={form.type} onChange={e => setForm(p => ({ ...p, type: e.target.value as typeof EMPTY_JOB["type"] }))}
+            className="w-full px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none">
+            {["First Officer","Captain","Cadet","Instructor","Other"].map(t => <option key={t}>{t}</option>)}
+          </select>
+        </div>
+        <div>
+          <label className="block text-xs font-semibold text-[var(--color-muted-foreground)] mb-1">Region</label>
+          <select value={form.region} onChange={e => setForm(p => ({ ...p, region: e.target.value as typeof EMPTY_JOB["region"] }))}
+            className="w-full px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none">
+            {["UK","US","Global"].map(r => <option key={r}>{r}</option>)}
+          </select>
+        </div>
+        <div className="flex items-end pb-2">
+          <label className="flex items-center gap-2 text-sm cursor-pointer">
+            <input type="checkbox" checked={form.active} onChange={e => setForm(p => ({ ...p, active: e.target.checked }))}
+              className="w-4 h-4 accent-[var(--color-primary)]" />
+            Active
+          </label>
+        </div>
+      </div>
+      <div>
+        <label className="block text-xs font-semibold text-[var(--color-muted-foreground)] mb-1">Description *</label>
+        <textarea value={form.description} onChange={e => setForm(p => ({ ...p, description: e.target.value }))}
+          rows={3} placeholder="Describe the role, requirements, and benefits..."
+          className="w-full px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none resize-none" />
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="space-y-4">
+      {/* Header */}
+      <div className="card-base p-4 flex items-center gap-2">
         <Briefcase className="w-5 h-5 text-[var(--color-primary)]" />
         <h3 className="font-display font-bold text-[var(--color-navy)]">Pilot Jobs</h3>
-        <span className="ml-auto text-xs text-[var(--color-muted-foreground)]">{jobs.length} active</span>
+        <span className="text-xs text-[var(--color-muted-foreground)] ml-1">{jobs.length} in DB</span>
+        <button onClick={() => setShowCreate(v => !v)}
+          className="ml-auto btn-primary text-xs py-1.5 px-3 flex items-center gap-1">
+          <Plus className="w-3.5 h-3.5" />
+          {showCreate ? "Cancel" : "Add Job"}
+        </button>
       </div>
-      <div className="p-4">
-        <p className="text-sm text-[var(--color-muted-foreground)] mb-4">
-          Jobs are managed here. The Jobs page will show DB records when available, falling back to static data when the DB is empty.
-        </p>
+
+      {/* Create form */}
+      {showCreate && (
+        <div className="card-base p-5 border-2 border-[var(--color-primary)]/30">
+          <h4 className="font-semibold text-[var(--color-navy)] mb-4">New Job Listing</h4>
+          <JobFormFields form={createForm} setForm={setCreateForm} />
+          <div className="flex gap-2 mt-4">
+            <button
+              onClick={() => {
+                if (!createForm.title || !createForm.airline || !createForm.location || !createForm.link || !createForm.description) {
+                  toast.error("Please fill in all required fields"); return;
+                }
+                createMutation.mutate(createForm);
+              }}
+              disabled={createMutation.isPending}
+              className="btn-primary text-sm flex items-center gap-1">
+              {createMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
+              Create Job
+            </button>
+            <button onClick={() => setShowCreate(false)} className="btn-outline text-sm">Cancel</button>
+          </div>
+        </div>
+      )}
+
+      {/* Job list */}
+      <div className="card-base overflow-hidden">
+        <div className="p-3 border-b border-[var(--color-border)]">
+          <p className="text-xs text-[var(--color-muted-foreground)]">DB records override static data on the public Jobs page. Empty DB = static fallback shown.</p>
+        </div>
         {jobsQuery.isLoading ? (
           <div className="flex items-center justify-center py-12">
             <Loader2 className="w-6 h-6 animate-spin text-[var(--color-primary)]" />
           </div>
         ) : jobs.length === 0 ? (
-          <div className="text-center py-8">
-            <Briefcase className="w-10 h-10 text-[var(--color-muted-foreground)] mx-auto mb-3" />
+          <div className="text-center py-8 text-[var(--color-muted-foreground)]">
+            <Briefcase className="w-10 h-10 mx-auto mb-3 opacity-40" />
             <p className="font-semibold text-[var(--color-navy)]">No jobs in database</p>
-            <p className="text-sm text-[var(--color-muted-foreground)]">The Jobs page is currently showing static seed data. Add jobs here to override it.</p>
+            <p className="text-sm">Static seed data is showing on the public page. Add jobs above to override.</p>
           </div>
         ) : (
-          <div className="space-y-2">
+          <div className="divide-y divide-[var(--color-border)]">
             {jobs.map(job => (
-              <div key={job.id} className="flex items-center justify-between p-3 rounded-lg border border-[var(--color-border)]">
-                <div>
-                  <p className="font-semibold text-sm text-[var(--color-navy)]">{job.title}</p>
-                  <p className="text-xs text-[var(--color-muted-foreground)]">{job.airline} · {job.location} · {job.region}</p>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className={`text-xs px-2 py-0.5 rounded-full ${job.active ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}`}>
-                    {job.active ? 'Active' : 'Inactive'}
-                  </span>
-                  <button
-                    onClick={() => deleteMutation.mutate({ id: job.id })}
-                    className="text-xs text-red-500 hover:text-red-700 transition-colors"
-                  >
-                    Delete
-                  </button>
-                </div>
+              <div key={job.id}>
+                {editingId === job.id ? (
+                  <div className="p-4 bg-[var(--color-muted)]/40">
+                    <JobFormFields form={editForm} setForm={setEditForm} />
+                    <div className="flex gap-2 mt-4">
+                      <button
+                        onClick={() => updateMutation.mutate({ id: job.id, ...editForm })}
+                        disabled={updateMutation.isPending}
+                        className="btn-primary text-xs flex items-center gap-1">
+                        {updateMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Save className="w-3.5 h-3.5" />}
+                        Save
+                      </button>
+                      <button onClick={() => setEditingId(null)} className="btn-outline text-xs">Cancel</button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex items-center justify-between p-3 hover:bg-[var(--color-muted)]/30 transition-colors">
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-sm text-[var(--color-navy)] truncate">{job.title}</p>
+                      <p className="text-xs text-[var(--color-muted-foreground)]">{job.airline} · {job.location} · <span className="font-medium">{job.region}</span></p>
+                    </div>
+                    <div className="flex items-center gap-2 ml-3 shrink-0">
+                      <span className={`text-xs px-2 py-0.5 rounded-full ${job.active ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}`}>
+                        {job.active ? 'Active' : 'Inactive'}
+                      </span>
+                      <button onClick={() => startEdit(job)}
+                        className="p-1.5 rounded text-[var(--color-primary)] hover:bg-[var(--color-primary)]/10 transition-colors">
+                        <Pencil className="w-3.5 h-3.5" />
+                      </button>
+                      <button onClick={() => confirm(`Delete "${job.title}"?`) && deleteMutation.mutate({ id: job.id })}
+                        className="p-1.5 rounded text-red-400 hover:text-red-600 hover:bg-red-50 transition-colors">
+                        <Trash2 className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -783,51 +1205,216 @@ function JobsPanel() {
 }
 
 // ─── Stories Panel ─────────────────────────────────────────────────────────────
+const EMPTY_STORY = {
+  name: "",
+  role: "",
+  airline: "",
+  route: "",
+  trainingDuration: "",
+  totalCost: "",
+  school: "",
+  country: "",
+  heroQuote: "",
+  qa: "[]",
+  tags: "",
+  imageUrl: "",
+  active: true,
+  featured: false,
+};
+
 function StoriesPanel() {
+  const utils = trpc.useUtils();
   const storiesQuery = trpc.stories.list.useQuery();
-  const deleteMutation = trpc.stories.delete.useMutation({ onSuccess: () => storiesQuery.refetch() });
   const stories = storiesQuery.data?.stories ?? [];
 
+  const [showCreate, setShowCreate] = useState(false);
+  const [createForm, setCreateForm] = useState({ ...EMPTY_STORY });
+  const [editingId, setEditingId] = useState<number | null>(null);
+  const [editForm, setEditForm] = useState({ ...EMPTY_STORY });
+
+  const createMutation = trpc.stories.create.useMutation({
+    onSuccess: () => {
+      utils.stories.list.invalidate();
+      toast.success("Story created");
+      setCreateForm({ ...EMPTY_STORY });
+      setShowCreate(false);
+    },
+    onError: (e) => toast.error(e.message),
+  });
+
+  const updateMutation = trpc.stories.update.useMutation({
+    onSuccess: () => {
+      utils.stories.list.invalidate();
+      toast.success("Story updated");
+      setEditingId(null);
+    },
+    onError: (e) => toast.error(e.message),
+  });
+
+  const deleteMutation = trpc.stories.delete.useMutation({
+    onSuccess: () => { utils.stories.list.invalidate(); toast.success("Story deleted"); },
+  });
+
+  const startEdit = (story: typeof stories[0]) => {
+    setEditingId(story.id);
+    setEditForm({
+      name: story.name,
+      role: story.role,
+      airline: story.airline ?? "",
+      route: story.route ?? "",
+      trainingDuration: story.trainingDuration ?? "",
+      totalCost: story.totalCost ?? "",
+      school: story.school ?? "",
+      country: story.country ?? "",
+      heroQuote: story.heroQuote,
+      qa: story.qa,
+      tags: story.tags ?? "",
+      imageUrl: story.imageUrl ?? "",
+      active: story.active ?? true,
+      featured: story.featured ?? false,
+    });
+  };
+
+  const StoryFormFields = ({ form, setForm }: { form: typeof EMPTY_STORY; setForm: React.Dispatch<React.SetStateAction<typeof EMPTY_STORY>> }) => (
+    <div className="space-y-3">
+      <div className="grid grid-cols-2 gap-3">
+        {([
+          { key: "name", label: "Name *", placeholder: "e.g. James Carter" },
+          { key: "role", label: "Role *", placeholder: "e.g. First Officer, TUI" },
+          { key: "airline", label: "Airline", placeholder: "e.g. TUI" },
+          { key: "route", label: "Route", placeholder: "e.g. UK short-haul" },
+          { key: "trainingDuration", label: "Training Duration", placeholder: "e.g. 18 months" },
+          { key: "totalCost", label: "Total Cost", placeholder: "e.g. \u00a395,000" },
+          { key: "school", label: "School", placeholder: "e.g. CAE Oxford" },
+          { key: "country", label: "Country", placeholder: "e.g. United Kingdom" },
+          { key: "tags", label: "Tags", placeholder: "e.g. UK,Integrated,Career Changer" },
+          { key: "imageUrl", label: "Image URL", placeholder: "https://..." },
+        ] as { key: keyof typeof EMPTY_STORY; label: string; placeholder: string }[]).map(f => (
+          <div key={f.key}>
+            <label className="block text-xs font-semibold text-[var(--color-muted-foreground)] mb-1">{f.label}</label>
+            <input type="text" value={form[f.key] as string}
+              onChange={e => setForm(p => ({ ...p, [f.key]: e.target.value }))}
+              placeholder={f.placeholder}
+              className="w-full px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none" />
+          </div>
+        ))}
+      </div>
+      <div>
+        <label className="block text-xs font-semibold text-[var(--color-muted-foreground)] mb-1">Hero Quote *</label>
+        <textarea value={form.heroQuote} onChange={e => setForm(p => ({ ...p, heroQuote: e.target.value }))}
+          rows={2} placeholder="The standout quote shown on the story card..."
+          className="w-full px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm focus:border-[var(--color-primary)] outline-none resize-none" />
+      </div>
+      <div>
+        <label className="block text-xs font-semibold text-[var(--color-muted-foreground)] mb-1">Q&amp;A (JSON array)</label>
+        <textarea value={form.qa} onChange={e => setForm(p => ({ ...p, qa: e.target.value }))}
+          rows={4} placeholder='[{"q":"How did you start?","a":"I always loved planes..."}]'
+          className="w-full px-3 py-2 rounded-lg border border-[var(--color-border)] text-sm font-mono focus:border-[var(--color-primary)] outline-none resize-none" />
+        <p className="text-xs text-[var(--color-muted-foreground)] mt-1">Format: JSON array of {{q, a}} objects</p>
+      </div>
+      <div className="flex gap-4">
+        <label className="flex items-center gap-2 text-sm cursor-pointer">
+          <input type="checkbox" checked={form.active} onChange={e => setForm(p => ({ ...p, active: e.target.checked }))}
+            className="w-4 h-4 accent-[var(--color-primary)]" />
+          Active
+        </label>
+        <label className="flex items-center gap-2 text-sm cursor-pointer">
+          <input type="checkbox" checked={form.featured} onChange={e => setForm(p => ({ ...p, featured: e.target.checked }))}
+            className="w-4 h-4 accent-[var(--color-primary)]" />
+          Featured
+        </label>
+      </div>
+    </div>
+  );
+
   return (
-    <div className="card-base overflow-hidden">
-      <div className="p-4 border-b border-[var(--color-border)] flex items-center gap-2">
+    <div className="space-y-4">
+      <div className="card-base p-4 flex items-center gap-2">
         <Users className="w-5 h-5 text-[var(--color-primary)]" />
         <h3 className="font-display font-bold text-[var(--color-navy)]">Pilot Stories</h3>
-        <span className="ml-auto text-xs text-[var(--color-muted-foreground)]">{stories.length} stories</span>
+        <span className="text-xs text-[var(--color-muted-foreground)] ml-1">{stories.length} in DB</span>
+        <button onClick={() => setShowCreate(v => !v)}
+          className="ml-auto btn-primary text-xs py-1.5 px-3 flex items-center gap-1">
+          <Plus className="w-3.5 h-3.5" />
+          {showCreate ? "Cancel" : "Add Story"}
+        </button>
       </div>
-      <div className="p-4">
-        <p className="text-sm text-[var(--color-muted-foreground)] mb-4">
-          Stories are managed here. The Stories page will show DB records when available, falling back to static data when the DB is empty.
-        </p>
+
+      {showCreate && (
+        <div className="card-base p-5 border-2 border-[var(--color-primary)]/30">
+          <h4 className="font-semibold text-[var(--color-navy)] mb-4">New Pilot Story</h4>
+          <StoryFormFields form={createForm} setForm={setCreateForm} />
+          <div className="flex gap-2 mt-4">
+            <button
+              onClick={() => {
+                if (!createForm.name || !createForm.role || !createForm.heroQuote) {
+                  toast.error("Name, role, and hero quote are required"); return;
+                }
+                createMutation.mutate(createForm);
+              }}
+              disabled={createMutation.isPending}
+              className="btn-primary text-sm flex items-center gap-1">
+              {createMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Plus className="w-4 h-4" />}
+              Create Story
+            </button>
+            <button onClick={() => setShowCreate(false)} className="btn-outline text-sm">Cancel</button>
+          </div>
+        </div>
+      )}
+
+      <div className="card-base overflow-hidden">
+        <div className="p-3 border-b border-[var(--color-border)]">
+          <p className="text-xs text-[var(--color-muted-foreground)]">DB records override static data on the public Stories page. Empty DB = static fallback shown.</p>
+        </div>
         {storiesQuery.isLoading ? (
           <div className="flex items-center justify-center py-12">
             <Loader2 className="w-6 h-6 animate-spin text-[var(--color-primary)]" />
           </div>
         ) : stories.length === 0 ? (
-          <div className="text-center py-8">
-            <Users className="w-10 h-10 text-[var(--color-muted-foreground)] mx-auto mb-3" />
+          <div className="text-center py-8 text-[var(--color-muted-foreground)]">
+            <Users className="w-10 h-10 mx-auto mb-3 opacity-40" />
             <p className="font-semibold text-[var(--color-navy)]">No stories in database</p>
-            <p className="text-sm text-[var(--color-muted-foreground)]">The Stories page is currently showing static seed data. Add stories here to override it.</p>
+            <p className="text-sm">Static seed data is showing on the public page. Add stories above to override.</p>
           </div>
         ) : (
-          <div className="space-y-2">
+          <div className="divide-y divide-[var(--color-border)]">
             {stories.map(story => (
-              <div key={story.id} className="flex items-center justify-between p-3 rounded-lg border border-[var(--color-border)]">
-                <div>
-                  <p className="font-semibold text-sm text-[var(--color-navy)]">{story.name}</p>
-                  <p className="text-xs text-[var(--color-muted-foreground)]">{story.role} · {story.airline ?? 'No airline'} · {story.country ?? 'Unknown'}</p>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className={`text-xs px-2 py-0.5 rounded-full ${story.featured ? 'bg-orange-100 text-orange-700' : story.active ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}`}>
-                    {story.featured ? 'Featured' : story.active ? 'Active' : 'Inactive'}
-                  </span>
-                  <button
-                    onClick={() => deleteMutation.mutate({ id: story.id })}
-                    className="text-xs text-red-500 hover:text-red-700 transition-colors"
-                  >
-                    Delete
-                  </button>
-                </div>
+              <div key={story.id}>
+                {editingId === story.id ? (
+                  <div className="p-4 bg-[var(--color-muted)]/40">
+                    <StoryFormFields form={editForm} setForm={setEditForm} />
+                    <div className="flex gap-2 mt-4">
+                      <button
+                        onClick={() => updateMutation.mutate({ id: story.id, ...editForm })}
+                        disabled={updateMutation.isPending}
+                        className="btn-primary text-xs flex items-center gap-1">
+                        {updateMutation.isPending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Save className="w-3.5 h-3.5" />}
+                        Save
+                      </button>
+                      <button onClick={() => setEditingId(null)} className="btn-outline text-xs">Cancel</button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex items-center justify-between p-3 hover:bg-[var(--color-muted)]/30 transition-colors">
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-sm text-[var(--color-navy)] truncate">{story.name}</p>
+                      <p className="text-xs text-[var(--color-muted-foreground)]">{story.role} \u00b7 {story.airline ?? 'No airline'} \u00b7 {story.country ?? 'Unknown'}</p>
+                    </div>
+                    <div className="flex items-center gap-2 ml-3 shrink-0">
+                      <span className={`text-xs px-2 py-0.5 rounded-full ${story.featured ? 'bg-orange-100 text-orange-700' : story.active ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'}`}>
+                        {story.featured ? 'Featured' : story.active ? 'Active' : 'Inactive'}
+                      </span>
+                      <button onClick={() => startEdit(story)}
+                        className="p-1.5 rounded text-[var(--color-primary)] hover:bg-[var(--color-primary)]/10 transition-colors">
+                        <Pencil className="w-3.5 h-3.5" />
+                      </button>
+                      <button onClick={() => confirm(`Delete story for "${story.name}"?`) && deleteMutation.mutate({ id: story.id })}
+                        className="p-1.5 rounded text-red-400 hover:text-red-600 hover:bg-red-50 transition-colors">
+                        <Trash2 className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -1071,7 +1658,7 @@ export default function AdminDashboard() {
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
   const [showSchools, setShowSchools] = useState(false);
   const [activeTab, setActiveTab] = useState<
-    "leads" | "introductions" | "analytics" | "partners" | "jobs" | "stories"
+    "leads" | "introductions" | "analytics" | "partners" | "jobs" | "stories" | "schools"
   >("leads");
   const analyticsQuery = trpc.analytics.overview.useQuery(undefined, {
     enabled: isAuthenticated && user?.role === "admin",
@@ -1372,7 +1959,7 @@ export default function AdminDashboard() {
 
         {/* Tabs */}
         <div className="flex gap-1 mb-5 bg-[var(--color-muted)] p-1 rounded-xl w-fit flex-wrap">
-          {(["leads", "introductions", "analytics", "partners", "jobs", "stories"] as const).map(
+          {(["leads", "introductions", "analytics", "partners", "jobs", "stories", "schools"] as const).map(
             tab => (
               <button
                 key={tab}
@@ -1389,7 +1976,8 @@ export default function AdminDashboard() {
                   : tab === "analytics" ? "Analytics"
                   : tab === "partners" ? "Partners"
                   : tab === "jobs" ? "Jobs"
-                  : "Stories"}
+                  : tab === "stories" ? "Stories"
+                  : "Schools"}
               </button>
             )
           )}
@@ -1399,6 +1987,7 @@ export default function AdminDashboard() {
         {activeTab === "partners" && <PartnerApplicationsPanel />}
         {activeTab === "jobs" && <JobsPanel />}
         {activeTab === "stories" && <StoriesPanel />}
+        {activeTab === "schools" && <SchoolsPanel />}
 
         {activeTab === "analytics" && (
           <div className="space-y-6">
