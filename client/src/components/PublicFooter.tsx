@@ -8,52 +8,28 @@ const ukGuideLinks = [
   { label: "Integrated vs Modular", href: "/guides/integrated-vs-modular" },
   { label: "Class 1 Medical", href: "/guides/class-1-medical" },
   { label: "BA Speedbird Academy", href: "/guides/ba-speedbird-academy" },
-  {
-    label: "easyJet Generation Pilot",
-    href: "/guides/easyjet-generation-pilot",
-  },
+  { label: "easyJet Generation Pilot", href: "/guides/easyjet-generation-pilot" },
   { label: "Ryanair Cadet Programme", href: "/guides/ryanair-cadet-programme" },
   { label: "Pilot Aptitude Tests", href: "/guides/pilot-aptitude-test-uk" },
 ];
 
 const usGuideLinks = [
-  {
-    label: "How to Become a Pilot in the USA",
-    href: "/us/guides/how-to-become-a-pilot",
-  },
+  { label: "How to Become a Pilot in the USA", href: "/us/guides/how-to-become-a-pilot" },
   { label: "Part 61 vs Part 141", href: "/us/guides/part-61-vs-141" },
-  {
-    label: "FAA Medical Requirements",
-    href: "/us/guides/faa-medical-requirements",
-  },
-  {
-    label: "Airline Pilot Salary USA",
-    href: "/us/guides/airline-pilot-salary-usa",
-  },
-  {
-    label: "How to Fund Pilot Training",
-    href: "/us/guides/how-to-fund-pilot-training-usa",
-  },
+  { label: "FAA Medical Requirements", href: "/us/guides/faa-medical-requirements" },
+  { label: "Airline Pilot Salary USA", href: "/us/guides/airline-pilot-salary-usa" },
+  { label: "How to Fund Pilot Training", href: "/us/guides/how-to-fund-pilot-training-usa" },
   { label: "ATP Certificate Guide", href: "/us/guides/atp-certificate-usa" },
 ];
 
 const globalGuideLinks = [
-  {
-    label: "🇦🇺 How to Become a Pilot in Australia",
-    href: "/guides/how-to-become-a-pilot-australia",
-  },
-  {
-    label: "🇨🇦 How to Become a Pilot in Canada",
-    href: "/guides/how-to-become-a-pilot-canada",
-  },
-  {
-    label: "🇪🇺 How to Become a Pilot in Europe",
-    href: "/guides/how-to-become-a-pilot-europe",
-  },
-  {
-    label: "🇺🇸 How to Become a Pilot in the USA",
-    href: "/us/guides/how-to-become-a-pilot",
-  },
+  { label: "🇦🇺 Australian Pilot Guides", href: "/australia/guides" },
+  { label: "🇨🇦 Canadian Pilot Guides", href: "/canada/guides" },
+  { label: "🇪🇺 European Pilot Guides", href: "/europe/guides" },
+  { label: "🇺🇸 US Pilot Guides", href: "/us/guides" },
+  { label: "🇳🇿 New Zealand Guides", href: "/new-zealand/guides" },
+  { label: "🇿🇦 South Africa Guides", href: "/south-africa/guides" },
+  { label: "🇦🇪 UAE Pilot Guides", href: "/uae/guides" },
 ];
 
 const ukToolLinks = [
@@ -61,11 +37,11 @@ const ukToolLinks = [
   { label: "Cost Calculator", href: "/calculator" },
   { label: "Integrated vs Modular Tool", href: "/tools/integrated-vs-modular" },
   { label: "Medical Readiness Check", href: "/tools/class-1-medical-check" },
-  {
-    label: "Medical Condition Lookup",
-    href: "/tools/medical-condition-lookup",
-  },
+  { label: "Medical Condition Lookup", href: "/tools/medical-condition-lookup" },
   { label: "Cadet Eligibility Checker", href: "/tools/cadet-eligibility" },
+  { label: "Finance Calculator", href: "/tools/finance-calculator" },
+  { label: "Salary Estimator", href: "/tools/salary-estimator" },
+  { label: "Route Selector", href: "/tools/route-selector" },
 ];
 
 const usToolLinks = [
@@ -109,47 +85,28 @@ export default function PublicFooter() {
   const homeHref = isUS ? "/us" : "/";
 
   return (
-    <footer
-      style={{
-        background: "oklch(0.08 0.07 252)",
-        borderTop: "1px solid oklch(1 0 0 / 0.07)",
-      }}
-    >
+    <footer style={{ background: "oklch(0.08 0.07 252)", borderTop: "1px solid oklch(1 0 0 / 0.07)" }}>
       <div className="container py-8 md:py-14">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-8 mb-8 md:mb-12">
+
           {/* Brand — spans 2 cols */}
           <div className="col-span-2 md:col-span-2">
-            <Link
-              href={homeHref}
-              className="inline-flex items-center gap-2.5 mb-5 no-underline group"
-            >
+            <Link href={homeHref} className="inline-flex items-center gap-2.5 mb-5 no-underline group">
               <div
                 className="w-9 h-9 rounded-xl flex items-center justify-center transition-all group-hover:scale-105"
-                style={{
-                  background:
-                    "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0.18 200))",
-                }}
+                style={{ background: "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0.18 200))" }}
               >
                 <Plane className="w-4.5 h-4.5 text-white" strokeWidth={2.5} />
               </div>
-              <span className="font-display font-bold text-xl text-white">
-                AviatorIQ
-              </span>
+              <span className="font-display font-bold text-xl text-white">AviatorIQ</span>
             </Link>
-            <p
-              className="text-sm leading-relaxed mb-6"
-              style={{ color: "oklch(0.5 0.04 240)" }}
-            >
+            <p className="text-sm leading-relaxed mb-6" style={{ color: "oklch(0.5 0.04 240)" }}>
               {tagline}
             </p>
             <Link
               href={assessmentHref}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white no-underline transition-all"
-              style={{
-                background:
-                  "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))",
-                boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.25)",
-              }}
+              style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))", boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.25)" }}
             >
               <Zap className="w-3.5 h-3.5" />
               {isUS ? "Explore US Platform" : "Free Assessment"}
@@ -158,23 +115,13 @@ export default function PublicFooter() {
 
           {/* Guides */}
           <div>
-            <h4
-              className="font-display font-semibold text-xs uppercase tracking-widest mb-4"
-              style={{ color: "oklch(0.45 0.04 240)" }}
-            >
-              Pilot Guides
-            </h4>
+            <h4 className="font-display font-semibold text-xs uppercase tracking-widest mb-4" style={{ color: "oklch(0.45 0.04 240)" }}>Pilot Guides</h4>
             <ul className="space-y-2.5">
-              {guideLinks.map(link => (
+              {guideLinks.map((link) => (
                 <li key={link.href + link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm no-underline transition-colors"
-                    style={{ color: "oklch(0.55 0.04 240)" }}
+                  <Link href={link.href} className="text-sm no-underline transition-colors" style={{ color: "oklch(0.55 0.04 240)" }}
                     onMouseEnter={e => (e.currentTarget.style.color = "white")}
-                    onMouseLeave={e =>
-                      (e.currentTarget.style.color = "oklch(0.55 0.04 240)")
-                    }
+                    onMouseLeave={e => (e.currentTarget.style.color = "oklch(0.55 0.04 240)")}
                   >
                     {link.label}
                   </Link>
@@ -185,23 +132,13 @@ export default function PublicFooter() {
 
           {/* Global Guides */}
           <div>
-            <h4
-              className="font-display font-semibold text-xs uppercase tracking-widest mb-4"
-              style={{ color: "oklch(0.45 0.04 240)" }}
-            >
-              Global Guides
-            </h4>
+            <h4 className="font-display font-semibold text-xs uppercase tracking-widest mb-4" style={{ color: "oklch(0.45 0.04 240)" }}>Global Guides</h4>
             <ul className="space-y-2.5">
-              {globalGuideLinks.map(link => (
+              {globalGuideLinks.map((link) => (
                 <li key={link.href + link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm no-underline transition-colors"
-                    style={{ color: "oklch(0.55 0.04 240)" }}
+                  <Link href={link.href} className="text-sm no-underline transition-colors" style={{ color: "oklch(0.55 0.04 240)" }}
                     onMouseEnter={e => (e.currentTarget.style.color = "white")}
-                    onMouseLeave={e =>
-                      (e.currentTarget.style.color = "oklch(0.55 0.04 240)")
-                    }
+                    onMouseLeave={e => (e.currentTarget.style.color = "oklch(0.55 0.04 240)")}
                   >
                     {link.label}
                   </Link>
@@ -212,46 +149,26 @@ export default function PublicFooter() {
 
           {/* Tools */}
           <div>
-            <h4
-              className="font-display font-semibold text-xs uppercase tracking-widest mb-4"
-              style={{ color: "oklch(0.45 0.04 240)" }}
-            >
-              Tools
-            </h4>
+            <h4 className="font-display font-semibold text-xs uppercase tracking-widest mb-4" style={{ color: "oklch(0.45 0.04 240)" }}>Tools</h4>
             <ul className="space-y-2.5 mb-6">
-              {toolLinks.map(link => (
+              {toolLinks.map((link) => (
                 <li key={link.href + link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm no-underline transition-colors"
-                    style={{ color: "oklch(0.55 0.04 240)" }}
+                  <Link href={link.href} className="text-sm no-underline transition-colors" style={{ color: "oklch(0.55 0.04 240)" }}
                     onMouseEnter={e => (e.currentTarget.style.color = "white")}
-                    onMouseLeave={e =>
-                      (e.currentTarget.style.color = "oklch(0.55 0.04 240)")
-                    }
+                    onMouseLeave={e => (e.currentTarget.style.color = "oklch(0.55 0.04 240)")}
                   >
                     {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
-            <h4
-              className="font-display font-semibold text-xs uppercase tracking-widest mb-4"
-              style={{ color: "oklch(0.45 0.04 240)" }}
-            >
-              Platform
-            </h4>
+            <h4 className="font-display font-semibold text-xs uppercase tracking-widest mb-4" style={{ color: "oklch(0.45 0.04 240)" }}>Platform</h4>
             <ul className="space-y-2.5">
-              {platformLinks.map(link => (
+              {platformLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm no-underline transition-colors"
-                    style={{ color: "oklch(0.55 0.04 240)" }}
+                  <Link href={link.href} className="text-sm no-underline transition-colors" style={{ color: "oklch(0.55 0.04 240)" }}
                     onMouseEnter={e => (e.currentTarget.style.color = "white")}
-                    onMouseLeave={e =>
-                      (e.currentTarget.style.color = "oklch(0.55 0.04 240)")
-                    }
+                    onMouseLeave={e => (e.currentTarget.style.color = "oklch(0.55 0.04 240)")}
                   >
                     {link.label}
                   </Link>
@@ -262,82 +179,44 @@ export default function PublicFooter() {
 
           {/* Trust signals */}
           <div>
-            <h4
-              className="font-display font-semibold text-xs uppercase tracking-widest mb-4"
-              style={{ color: "oklch(0.45 0.04 240)" }}
-            >
-              Why AviatorIQ
-            </h4>
+            <h4 className="font-display font-semibold text-xs uppercase tracking-widest mb-4" style={{ color: "oklch(0.45 0.04 240)" }}>Why AviatorIQ</h4>
             <div className="space-y-3">
-              {(isUS
-                ? [
-                    { stat: "50+", label: "US flight schools listed" },
-                    { stat: "20+", label: "US-specific guides" },
-                    { stat: "Free", label: "Always, no paywall" },
-                    { stat: "2026", label: "FAA data up to date" },
-                  ]
-                : [
-                    { stat: "50+", label: "UK & international schools" },
-                    { stat: "60+", label: "In-depth training guides" },
-                    { stat: "Free", label: "Always, no paywall" },
-                    { stat: "2026", label: "Data up to date" },
-                  ]
-              ).map(item => (
+              {(isUS ? [
+                { stat: "50+", label: "US flight schools listed" },
+                { stat: "20+", label: "US-specific guides" },
+                { stat: "Free", label: "Always, no paywall" },
+                { stat: "2026", label: "FAA data up to date" },
+              ] : [
+                { stat: "50+", label: "UK & international schools" },
+                { stat: "60+", label: "In-depth training guides" },
+                { stat: "Free", label: "Always, no paywall" },
+                { stat: "2026", label: "Data up to date" },
+              ]).map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
-                  <span
-                    className="font-display font-bold text-sm"
-                    style={{ color: "oklch(0.65 0.18 240)" }}
-                  >
-                    {item.stat}
-                  </span>
-                  <span
-                    className="text-xs"
-                    style={{ color: "oklch(0.5 0.04 240)" }}
-                  >
-                    {item.label}
-                  </span>
+                  <span className="font-display font-bold text-sm" style={{ color: "oklch(0.65 0.18 240)" }}>{item.stat}</span>
+                  <span className="text-xs" style={{ color: "oklch(0.5 0.04 240)" }}>{item.label}</span>
                 </div>
               ))}
             </div>
-            <div
-              className="mt-6 p-4 rounded-xl"
-              style={{
-                background: "oklch(1 0 0 / 0.04)",
-                border: "1px solid oklch(1 0 0 / 0.08)",
-              }}
-            >
-              <p
-                className="text-xs leading-relaxed"
-                style={{ color: "oklch(0.45 0.04 240)" }}
-              >
-                Guidance only — not official career, medical or financial
-                advice. Always verify with a qualified aviation professional.
+            <div className="mt-6 p-4 rounded-xl" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
+              <p className="text-xs leading-relaxed" style={{ color: "oklch(0.45 0.04 240)" }}>
+                Guidance only — not official career, medical or financial advice. Always verify with a qualified aviation professional.
               </p>
             </div>
           </div>
+
         </div>
 
         {/* Bottom bar */}
-        <div
-          className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-5"
-          style={{ borderTop: "1px solid oklch(1 0 0 / 0.07)" }}
-        >
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-5" style={{ borderTop: "1px solid oklch(1 0 0 / 0.07)" }}>
           <p className="text-xs" style={{ color: "oklch(0.4 0.04 240)" }}>
             © {new Date().getFullYear()} AviatorIQ. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
-            {legalLinks.map(link => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-xs no-underline transition-colors"
-                style={{ color: "oklch(0.4 0.04 240)" }}
-                onMouseEnter={e =>
-                  (e.currentTarget.style.color = "oklch(0.65 0.04 240)")
-                }
-                onMouseLeave={e =>
-                  (e.currentTarget.style.color = "oklch(0.4 0.04 240)")
-                }
+            {legalLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="text-xs no-underline transition-colors" style={{ color: "oklch(0.4 0.04 240)" }}
+                onMouseEnter={e => (e.currentTarget.style.color = "oklch(0.65 0.04 240)")}
+                onMouseLeave={e => (e.currentTarget.style.color = "oklch(0.4 0.04 240)")}
               >
                 {link.label}
               </Link>

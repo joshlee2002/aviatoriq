@@ -21,6 +21,7 @@ const sourceTypeBadge = (type: PilotSalarySource["sourceType"]) => {
     "Official airline": "bg-blue-100 text-blue-700",
     "Industry survey": "bg-purple-100 text-purple-700",
     "Press report": "bg-amber-100 text-amber-700",
+    "CBA / ALPA-reported": "bg-sky-100 text-sky-700",
   };
   return (
     <span
@@ -38,6 +39,7 @@ const payBasisBadge = (basis: PilotSalarySource["payBasis"]) => {
     "Monthly (tax-free)": "bg-emerald-100 text-emerald-700",
     "Hourly (flying pay)": "bg-indigo-100 text-indigo-700",
     "Annual (estimated)": "bg-yellow-100 text-yellow-700",
+    "Annual (CBA base, 900 hrs)": "bg-sky-100 text-sky-700",
   };
   return (
     <span

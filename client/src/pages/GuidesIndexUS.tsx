@@ -361,6 +361,116 @@ const usGuides = [
     category: "Career & Salary",
     emoji: "🏠",
   },
+  // Medical — detailed class guides
+  {
+    title: "FAA First Class Medical: Full Requirements 2026",
+    description: "Everything required for an FAA First Class Medical Certificate — vision, hearing, cardiovascular, mental health, and how to prepare for your AME exam.",
+    href: "/us/guides/faa-medical-class-1",
+    time: "8 min read",
+    category: "Medical",
+    emoji: "🏥",
+  },
+  {
+    title: "FAA Second Class Medical: Requirements & Differences 2026",
+    description: "How the FAA Second Class Medical differs from First Class, who needs it, and what commercial pilots must maintain to keep their certificate current.",
+    href: "/us/guides/faa-medical-class-2",
+    time: "7 min read",
+    category: "Medical",
+    emoji: "🩺",
+  },
+  {
+    title: "FAA Third Class Medical: Private Pilot Requirements 2026",
+    description: "The FAA Third Class Medical explained — BasicMed as an alternative, eligibility, duration, and what conditions are most commonly flagged.",
+    href: "/us/guides/faa-medical-class-3",
+    time: "7 min read",
+    category: "Medical",
+    emoji: "📋",
+  },
+  // Ratings — ATP requirements
+  {
+    title: "FAA ATP Requirements 2026: The Complete Guide",
+    description: "Full breakdown of FAA ATP certificate requirements — 1,500 hours (or R-ATP), ATP CTP, knowledge test, and the practical test standards.",
+    href: "/us/guides/faa-atp-requirements",
+    time: "8 min read",
+    category: "Ratings",
+    emoji: "📜",
+  },
+  // Career Preparation
+  {
+    title: "US Airline Interview Preparation 2026",
+    description: "How to prepare for major and regional airline interviews — HR questions, technical oral, sim evaluation, and what Delta, United, American, and Southwest look for.",
+    href: "/us/guides/airline-interview-prep",
+    time: "10 min read",
+    category: "Career Preparation",
+    emoji: "🎯",
+  },
+  {
+    title: "Major US Airlines Hiring 2026: Who Is Recruiting?",
+    description: "Current hiring status at Delta, United, American, Southwest, Alaska, and JetBlue — minimums, flow-through agreements, and how to get your application noticed.",
+    href: "/us/guides/major-airlines-hiring-usa",
+    time: "9 min read",
+    category: "Career Preparation",
+    emoji: "📊",
+  },
+  {
+    title: "US Airline Cadet Programs 2026: Complete Guide",
+    description: "Every major US airline cadet pathway compared — United Aviate, Delta Propel, American Cadet Academy, Southwest Destination 225°. Eligibility, costs, and timelines.",
+    href: "/us/guides/us-cadet-programs",
+    time: "11 min read",
+    category: "Airline Cadet Programmes",
+    emoji: "🔗",
+  },
+  // Finance
+  {
+    title: "US Flight School Loans 2026: Sallie Mae, AOPA & More",
+    description: "Every loan option for US pilot training — Sallie Mae, AOPA, Stratus Financial, Climb Credit, and VA benefits. Rates, terms, and how to choose.",
+    href: "/us/guides/us-flight-school-loans",
+    time: "8 min read",
+    category: "Finance & Funding",
+    emoji: "💳",
+  },
+  // Pilot Lifestyle
+  {
+    title: "US Pilot Schedule 2026: Rosters, Days Off & Work-Life Balance",
+    description: "How US airline pilot schedules work — bidding systems, reserve, line holder, days off per month, and how lifestyle differs by airline and fleet type.",
+    href: "/us/guides/us-pilot-schedule",
+    time: "8 min read",
+    category: "Career & Salary",
+    emoji: "🗓️",
+  },
+  {
+    title: "US Airline Pilot Commuting 2026: Is It Worth It?",
+    description: "How commuting works for US airline pilots — non-rev travel, crash pads, commuter clauses, and whether living away from base makes financial sense.",
+    href: "/us/guides/us-pilot-commuting",
+    time: "8 min read",
+    category: "Career & Salary",
+    emoji: "🛫",
+  },
+  {
+    title: "US Airline Pilot Seniority 2026: How It Works",
+    description: "The seniority system explained — how it affects pay, schedule, base, aircraft type, and upgrade timeline at US airlines. Why seniority is everything.",
+    href: "/us/guides/us-pilot-seniority",
+    time: "8 min read",
+    category: "Career & Salary",
+    emoji: "📊",
+  },
+  // Overview guides
+  {
+    title: "US Pilot Training 2026: The Complete Overview",
+    description: "The definitive 2026 overview of becoming a pilot in the United States — FAA licences, costs, timelines, airline pathways, and the current hiring market.",
+    href: "/us/guides/us-pilot-training-2026",
+    time: "12 min read",
+    category: "Getting Started",
+    emoji: "🇺🇸",
+  },
+  {
+    title: "US Pilot Training Market Guide 2026",
+    description: "A data-driven look at the US pilot training market — school costs, airline demand, regional vs major pathways, and how to position yourself for success.",
+    href: "/us/guides/us-pilot-training-market-guide",
+    time: "10 min read",
+    category: "Getting Started",
+    emoji: "📊",
+  },
 ];
 
 const categoryColors: Record<

@@ -3,20 +3,8 @@ import { Link, useLocation } from "wouter";
 import SEO from "@/components/SEO";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
-import {
-  ArrowRight,
-  Clock,
-  BookOpen,
-  ChevronRight,
-  Zap,
-  Mail,
-  CheckCircle2,
-  List,
-  ShieldCheck,
-} from "lucide-react";
-import GuideSourcesBox, {
-  type GuideSource,
-} from "@/components/GuideSourcesBox";
+import { ArrowRight, Clock, BookOpen, ChevronRight, Zap, Mail, CheckCircle2, List, ShieldCheck } from "lucide-react";
+import GuideSourcesBox, { type GuideSource } from "@/components/GuideSourcesBox";
 import { MedicalDisclaimerBox } from "@/components/trust/MedicalDisclaimerBox";
 import { FinanceDisclaimerBox } from "@/components/trust/FinanceDisclaimerBox";
 import { LastVerifiedBox } from "@/components/trust/LastVerifiedBox";
@@ -42,67 +30,37 @@ function InlineEmailCapture() {
 
   if (submitted) {
     return (
-      <div
-        className="flex items-center gap-3 p-4 rounded-xl my-6"
-        style={{
-          background: "oklch(0.55 0.18 145 / 0.1)",
-          border: "1px solid oklch(0.55 0.18 145 / 0.25)",
-        }}
-      >
-        <CheckCircle2
-          className="w-5 h-5 flex-shrink-0"
-          style={{ color: "oklch(0.7 0.18 145)" }}
-        />
+      <div className="flex items-center gap-3 p-4 rounded-xl my-6" style={{ background: "oklch(0.55 0.18 145 / 0.1)", border: "1px solid oklch(0.55 0.18 145 / 0.25)" }}>
+        <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: "oklch(0.7 0.18 145)" }} />
         <p className="text-sm" style={{ color: "oklch(0.75 0.04 240)" }}>
-          <strong className="text-white">You're on the list.</strong> We'll
-          email you when new guides and tools drop — no spam, unsubscribe any
-          time.
+          <strong className="text-white">You're on the list.</strong> We'll email you when new guides and tools drop — no spam, unsubscribe any time.
         </p>
       </div>
     );
   }
 
   return (
-    <div
-      className="p-5 rounded-xl my-6"
-      style={{
-        background: "oklch(0.45 0.18 240 / 0.07)",
-        border: "1px solid oklch(0.45 0.18 240 / 0.18)",
-      }}
-    >
+    <div className="p-5 rounded-xl my-6" style={{ background: "oklch(0.45 0.18 240 / 0.07)", border: "1px solid oklch(0.45 0.18 240 / 0.18)" }}>
       <div className="flex items-center gap-2 mb-2">
         <Mail className="w-4 h-4" style={{ color: "oklch(0.65 0.18 240)" }} />
-        <p className="text-sm font-semibold text-white">
-          Get new guides before everyone else
-        </p>
+        <p className="text-sm font-semibold text-white">Get new guides before everyone else</p>
       </div>
-      <p className="text-xs mb-3" style={{ color: "oklch(0.55 0.04 240)" }}>
-        We publish new pilot training guides and tools monthly. No spam.
-        Unsubscribe any time.
-      </p>
+      <p className="text-xs mb-3" style={{ color: "oklch(0.55 0.04 240)" }}>We publish new pilot training guides and tools monthly. No spam. Unsubscribe any time.</p>
       <form onSubmit={handleSubmit} className="flex gap-2">
         <input
           type="email"
           value={email}
-          onChange={e => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
           required
           className="flex-1 px-3 py-2 rounded-lg text-sm outline-none"
-          style={{
-            background: "oklch(0.16 0.08 250)",
-            border: "1px solid oklch(1 0 0 / 0.12)",
-            color: "white",
-          }}
+          style={{ background: "oklch(0.16 0.08 250)", border: "1px solid oklch(1 0 0 / 0.12)", color: "white" }}
         />
         <button
           type="submit"
           disabled={subscribe.isPending}
           className="px-4 py-2 rounded-lg text-sm font-bold text-white flex-shrink-0"
-          style={{
-            background:
-              "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))",
-            opacity: subscribe.isPending ? 0.7 : 1,
-          }}
+          style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))", opacity: subscribe.isPending ? 0.7 : 1 }}
         >
           {subscribe.isPending ? "..." : "Notify me"}
         </button>
@@ -117,22 +75,14 @@ interface TocItem {
   heading: string;
 }
 
-function TableOfContents({
-  items,
-  ctaHref,
-  ctaText,
-}: {
-  items: TocItem[];
-  ctaHref: string;
-  ctaText: string;
-}) {
+function TableOfContents({ items, ctaHref, ctaText }: { items: TocItem[]; ctaHref: string; ctaText: string }) {
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
     if (items.length === 0) return;
     const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
+      (entries) => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveId(entry.target.id);
           }
@@ -153,17 +103,11 @@ function TableOfContents({
     <aside className="hidden xl:block w-64 flex-shrink-0">
       <div
         className="sticky top-24 rounded-2xl p-5"
-        style={{
-          background: "oklch(0.14 0.08 250)",
-          border: "1px solid oklch(1 0 0 / 0.08)",
-        }}
+        style={{ background: "oklch(0.14 0.08 250)", border: "1px solid oklch(1 0 0 / 0.08)" }}
       >
         <div className="flex items-center gap-2 mb-4">
           <List className="w-4 h-4" style={{ color: "oklch(0.65 0.18 240)" }} />
-          <span
-            className="text-xs font-semibold uppercase tracking-widest"
-            style={{ color: "oklch(0.5 0.04 240)" }}
-          >
+          <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "oklch(0.5 0.04 240)" }}>
             In this guide
           </span>
         </div>
@@ -174,51 +118,32 @@ function TableOfContents({
                 <a
                   href={`#${id}`}
                   className="flex items-start gap-2 text-xs leading-snug no-underline transition-colors group"
-                  style={{
-                    color: activeId === id ? "white" : "oklch(0.55 0.04 240)",
-                  }}
-                  onClick={e => {
+                  style={{ color: activeId === id ? "white" : "oklch(0.55 0.04 240)" }}
+                  onClick={(e) => {
                     e.preventDefault();
-                    document
-                      .getElementById(id)
-                      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
                   }}
                 >
                   <span
                     className="flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center text-xs font-bold mt-0.5 transition-colors"
                     style={{
-                      background:
-                        activeId === id
-                          ? "oklch(0.45 0.18 240 / 0.4)"
-                          : "oklch(0.45 0.18 240 / 0.1)",
-                      color:
-                        activeId === id
-                          ? "oklch(0.75 0.18 240)"
-                          : "oklch(0.5 0.18 240)",
+                      background: activeId === id ? "oklch(0.45 0.18 240 / 0.4)" : "oklch(0.45 0.18 240 / 0.1)",
+                      color: activeId === id ? "oklch(0.75 0.18 240)" : "oklch(0.5 0.18 240)",
                     }}
                   >
                     {i + 1}
                   </span>
-                  <span className="group-hover:text-white transition-colors">
-                    {heading}
-                  </span>
+                  <span className="group-hover:text-white transition-colors">{heading}</span>
                 </a>
               </li>
             ))}
           </ol>
         </nav>
-        <div
-          className="mt-5 pt-4"
-          style={{ borderTop: "1px solid oklch(1 0 0 / 0.07)" }}
-        >
+        <div className="mt-5 pt-4" style={{ borderTop: "1px solid oklch(1 0 0 / 0.07)" }}>
           <Link
             href={ctaHref}
             className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl text-xs font-bold text-white no-underline"
-            style={{
-              background:
-                "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))",
-              boxShadow: "0 0 14px oklch(0.72 0.18 65 / 0.2)",
-            }}
+            style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))", boxShadow: "0 0 14px oklch(0.72 0.18 65 / 0.2)" }}
           >
             <Zap className="w-3 h-3" />
             {ctaText}
@@ -248,8 +173,6 @@ interface GuideLayoutProps {
   relatedGuides?: RelatedGuide[];
   ctaText?: string;
   ctaHref?: string;
-  /** Optional supporting subtext for the CTA banner (overrides the default) */
-  ctaSubtext?: string;
   canonical?: string;
   metaDescription?: string;
   faqSchema?: { question: string; answer: string }[];
@@ -260,20 +183,14 @@ interface GuideLayoutProps {
   heroImage?: string;
   /** Optional scope banner shown above the article for non-UK/US readers */
   scopeBanner?: React.ReactNode;
-  /** Sources reviewed for this guide */
-  sources?: GuideSource[];
+  /** Sources reviewed for this guide — accepts plain strings or GuideSource objects */
+  sources?: (GuideSource | string)[];
   /** If true, renders a MedicalDisclaimerBox before the article content */
   medicalDisclaimer?: boolean;
   /** If true, renders a FinanceDisclaimerBox before the article content */
   financeDisclaimer?: boolean;
   /** Authority for the medical disclaimer (defaults to UK CAA) */
-  medicalAuthority?:
-    | "UK CAA"
-    | "FAA"
-    | "EASA"
-    | "CASA"
-    | "Transport Canada"
-    | "GCAA";
+  medicalAuthority?: "UK CAA" | "FAA" | "EASA" | "CASA" | "Transport Canada" | "GCAA";
   /** Short methodology summary shown in the collapsible box */
   methodologySummary?: string;
   /** Full methodology detail shown when expanded */
@@ -290,10 +207,8 @@ const surface = "oklch(0.14 0.08 250)";
 const border = "oklch(1 0 0 / 0.08)";
 const borderHover = "oklch(1 0 0 / 0.18)";
 const muted = "oklch(0.55 0.04 240)";
-const ctaGradient =
-  "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
-const brandGradient =
-  "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0.18 200))";
+const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
+const brandGradient = "linear-gradient(135deg, oklch(0.45 0.18 240), oklch(0.6 0.18 200))";
 
 /** Convert a section heading to a URL-safe id */
 function toId(heading: string): string {
@@ -316,10 +231,8 @@ const GUIDE_SCOPES: Record<string, GuideScope> = {
   usa: {
     label: "United States",
     authority: "FAA",
-    terminology:
-      "FAA rules, Part 61/141 training, ATP/R-ATP where relevant, and FAA medical certificate classes.",
-    caution:
-      "US requirements can change by certificate, operation and medical history. Verify with the FAA, an AME, your school and the airline/programme before spending money.",
+    terminology: "FAA rules, Part 61/141 training, ATP/R-ATP where relevant, and FAA medical certificate classes.",
+    caution: "US requirements can change by certificate, operation and medical history. Verify with the FAA, an AME, your school and the airline/programme before spending money.",
     sources: [
       { name: "FAA" },
       { name: "FAA Guide for Aviation Medical Examiners" },
@@ -329,10 +242,8 @@ const GUIDE_SCOPES: Record<string, GuideScope> = {
   uk: {
     label: "United Kingdom",
     authority: "UK CAA",
-    terminology:
-      "UK CAA licensing, UK Part-FCL concepts, Class 1/2 medicals, integrated/modular ATPL routes and UK market examples.",
-    caution:
-      "UK training, finance and medical information is volatile. Verify with the UK CAA, an AeMC/AME, your ATO and any lender/programme before committing.",
+    terminology: "UK CAA licensing, UK Part-FCL concepts, Class 1/2 medicals, integrated/modular ATPL routes and UK market examples.",
+    caution: "UK training, finance and medical information is volatile. Verify with the UK CAA, an AeMC/AME, your ATO and any lender/programme before committing.",
     sources: [
       { name: "UK Civil Aviation Authority (CAA)" },
       { name: "UK CAA Class 1 medical guidance" },
@@ -342,19 +253,18 @@ const GUIDE_SCOPES: Record<string, GuideScope> = {
   europe: {
     label: "EASA Europe",
     authority: "EASA and the relevant national aviation authority",
-    terminology:
-      "EASA Part-FCL/Part-MED terminology, ATO routes, ATPL theory and member-state authority differences.",
-    caution:
-      "EASA rules are implemented through national authorities. Confirm local differences with the ATO and competent authority in the country where you train or hold a licence.",
-    sources: [{ name: "EASA" }, { name: "EASA Easy Access Rules for Aircrew" }],
+    terminology: "EASA Part-FCL/Part-MED terminology, ATO routes, ATPL theory and member-state authority differences.",
+    caution: "EASA rules are implemented through national authorities. Confirm local differences with the ATO and competent authority in the country where you train or hold a licence.",
+    sources: [
+      { name: "EASA" },
+      { name: "EASA Easy Access Rules for Aircrew" },
+    ],
   },
   canada: {
     label: "Canada",
     authority: "Transport Canada",
-    terminology:
-      "Canadian Aviation Regulations, Standard 421 licensing and Category 1 medical terminology.",
-    caution:
-      "Canadian requirements vary by licence, rating and medical category. Confirm with Transport Canada, a CAME and your flight training unit.",
+    terminology: "Canadian Aviation Regulations, Standard 421 licensing and Category 1 medical terminology.",
+    caution: "Canadian requirements vary by licence, rating and medical category. Confirm with Transport Canada, a CAME and your flight training unit.",
     sources: [
       { name: "Transport Canada" },
       { name: "Transport Canada Standard 421" },
@@ -364,10 +274,8 @@ const GUIDE_SCOPES: Record<string, GuideScope> = {
   australia: {
     label: "Australia",
     authority: "CASA",
-    terminology:
-      "CASA Part 61 licensing, Australian medical classes, DAME processes and local airline/school examples.",
-    caution:
-      "Australian licensing and medical requirements can depend on operation type and training pathway. Confirm with CASA, a DAME and your Part 141/142 school.",
+    terminology: "CASA Part 61 licensing, Australian medical classes, DAME processes and local airline/school examples.",
+    caution: "Australian licensing and medical requirements can depend on operation type and training pathway. Confirm with CASA, a DAME and your Part 141/142 school.",
     sources: [
       { name: "CASA" },
       { name: "CASA pilot licences" },
@@ -377,10 +285,8 @@ const GUIDE_SCOPES: Record<string, GuideScope> = {
   newZealand: {
     label: "New Zealand",
     authority: "CAA New Zealand",
-    terminology:
-      "CAA New Zealand Part 61 licensing, medical certification, fit-and-proper requirements and NZ training market examples.",
-    caution:
-      "Confirm requirements with CAA New Zealand, a medical examiner and your training organisation before committing to training.",
+    terminology: "CAA New Zealand Part 61 licensing, medical certification, fit-and-proper requirements and NZ training market examples.",
+    caution: "Confirm requirements with CAA New Zealand, a medical examiner and your training organisation before committing to training.",
     sources: [
       { name: "CAA New Zealand" },
       { name: "CAA New Zealand pilot licensing" },
@@ -390,10 +296,8 @@ const GUIDE_SCOPES: Record<string, GuideScope> = {
   southAfrica: {
     label: "South Africa",
     authority: "SACAA",
-    terminology:
-      "SACAA licensing, aviation medicine, ATO requirements, South African currency and local airline/school examples.",
-    caution:
-      "Confirm requirements with SACAA, an approved aviation medical examiner and your ATO because fees, medical standards and programme availability can change.",
+    terminology: "SACAA licensing, aviation medicine, ATO requirements, South African currency and local airline/school examples.",
+    caution: "Confirm requirements with SACAA, an approved aviation medical examiner and your ATO because fees, medical standards and programme availability can change.",
     sources: [
       { name: "SACAA" },
       { name: "SACAA licensing" },
@@ -403,10 +307,8 @@ const GUIDE_SCOPES: Record<string, GuideScope> = {
   uae: {
     label: "United Arab Emirates",
     authority: "GCAA",
-    terminology:
-      "GCAA CAR-FCL/CAR-MED terminology, UAE Class 1 medical expectations and UAE airline/training academy examples.",
-    caution:
-      "UAE airline cadet and training requirements change quickly. Confirm with GCAA, the training organisation and the airline before applying or paying deposits.",
+    terminology: "GCAA CAR-FCL/CAR-MED terminology, UAE Class 1 medical expectations and UAE airline/training academy examples.",
+    caution: "UAE airline cadet and training requirements change quickly. Confirm with GCAA, the training organisation and the airline before applying or paying deposits.",
     sources: [
       { name: "GCAA" },
       { name: "GCAA CAR-FCL" },
@@ -416,64 +318,15 @@ const GUIDE_SCOPES: Record<string, GuideScope> = {
   },
 };
 
-function inferGuideScope(
-  title: string,
-  canonical?: string,
-  category?: string
-): GuideScope {
+function inferGuideScope(title: string, canonical?: string, category?: string): GuideScope {
   const text = `${title} ${canonical || ""} ${category || ""}`.toLowerCase();
-  if (
-    text.includes("/us/") ||
-    text.includes(" usa") ||
-    text.includes("faa") ||
-    text.includes("atp") ||
-    text.includes("part 61") ||
-    text.includes("united aviate") ||
-    text.includes("delta propel")
-  )
-    return GUIDE_SCOPES.usa;
-  if (
-    text.includes("canada") ||
-    text.includes("transport canada") ||
-    text.includes("tc ")
-  )
-    return GUIDE_SCOPES.canada;
-  if (
-    text.includes("australia") ||
-    text.includes("casa") ||
-    text.includes("qantas") ||
-    text.includes("virgin australia") ||
-    text.includes("rex")
-  )
-    return GUIDE_SCOPES.australia;
-  if (
-    text.includes("new zealand") ||
-    text.includes("nz ") ||
-    text.includes("air new zealand")
-  )
-    return GUIDE_SCOPES.newZealand;
-  if (
-    text.includes("south africa") ||
-    text.includes("sacaa") ||
-    text.includes("/za/")
-  )
-    return GUIDE_SCOPES.southAfrica;
-  if (
-    text.includes("uae") ||
-    text.includes("emirates") ||
-    text.includes("etihad") ||
-    text.includes("air arabia") ||
-    text.includes("gcaa")
-  )
-    return GUIDE_SCOPES.uae;
-  if (
-    text.includes("easa") ||
-    text.includes("europe") ||
-    text.includes("lufthansa") ||
-    text.includes("air france") ||
-    text.includes("wizz")
-  )
-    return GUIDE_SCOPES.europe;
+  if (text.includes("/us/") || text.includes(" usa") || text.includes("faa") || text.includes("atp") || text.includes("part 61") || text.includes("united aviate") || text.includes("delta propel")) return GUIDE_SCOPES.usa;
+  if (text.includes("canada") || text.includes("transport canada") || text.includes("tc ")) return GUIDE_SCOPES.canada;
+  if (text.includes("australia") || text.includes("casa") || text.includes("qantas") || text.includes("virgin australia") || text.includes("rex")) return GUIDE_SCOPES.australia;
+  if (text.includes("new zealand") || text.includes("nz ") || text.includes("air new zealand")) return GUIDE_SCOPES.newZealand;
+  if (text.includes("south africa") || text.includes("sacaa") || text.includes("/za/")) return GUIDE_SCOPES.southAfrica;
+  if (text.includes("uae") || text.includes("emirates") || text.includes("etihad") || text.includes("air arabia") || text.includes("gcaa")) return GUIDE_SCOPES.uae;
+  if (text.includes("easa") || text.includes("europe") || text.includes("lufthansa") || text.includes("air france") || text.includes("wizz")) return GUIDE_SCOPES.europe;
   return GUIDE_SCOPES.uk;
 }
 
@@ -485,7 +338,6 @@ export default function GuideLayout({
   relatedGuides = [],
   ctaText = "Find my training route",
   ctaHref = "/quiz",
-  ctaSubtext,
   canonical,
   metaDescription,
   faqSchema,
@@ -506,8 +358,11 @@ export default function GuideLayout({
   regulatorUrl,
 }: GuideLayoutProps) {
   const guideScope = inferGuideScope(title, canonical, category);
-  const reviewedSources =
-    sources && sources.length > 0 ? sources : guideScope.sources;
+  // Coerce any plain-string sources to GuideSource objects for backward compatibility
+  const normalisedSources: GuideSource[] | undefined = sources && sources.length > 0
+    ? sources.map((s) => typeof s === "string" ? { name: s } : s)
+    : undefined;
+  const reviewedSources = normalisedSources && normalisedSources.length > 0 ? normalisedSources : guideScope.sources;
   const schemas: object[] = [];
 
   if (faqSchema && faqSchema.length > 0) {
@@ -527,26 +382,10 @@ export default function GuideLayout({
     "@type": "Article",
     headline: title,
     description: metaDescription || subtitle,
-    publisher: {
-      "@type": "Organization",
-      name: "AviatorIQ",
-      url: "https://aviatoriq.com",
-      logo: { "@type": "ImageObject", url: "https://aviatoriq.com/logo.png" },
-    },
-    author: {
-      "@type": "Person",
-      name: author,
-      url: "https://aviatoriq.com/about-our-authors",
-    },
+    publisher: { "@type": "Organization", name: "AviatorIQ", url: "https://aviatoriq.com", logo: { "@type": "ImageObject", url: "https://aviatoriq.com/logo.png" } },
+    author: { "@type": "Person", name: author, url: "https://aviatoriq.com/about-our-authors" },
     dateModified: lastUpdated,
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": canonical
-        ? canonical.startsWith("http")
-          ? canonical
-          : `https://aviatoriq.com${canonical}`
-        : "https://aviatoriq.com",
-    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": canonical ? (canonical.startsWith("http") ? canonical : `https://aviatoriq.com${canonical}`) : "https://aviatoriq.com" },
   });
 
   // Breadcrumb schema
@@ -554,28 +393,9 @@ export default function GuideLayout({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://aviatoriq.com",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Guides",
-        item: "https://aviatoriq.com/guides",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: title,
-        item: canonical
-          ? canonical.startsWith("http")
-            ? canonical
-            : `https://aviatoriq.com${canonical}`
-          : "https://aviatoriq.com",
-      },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://aviatoriq.com" },
+      { "@type": "ListItem", position: 2, name: "Guides", item: "https://aviatoriq.com/guides" },
+      { "@type": "ListItem", position: 3, name: title, item: canonical ? (canonical.startsWith("http") ? canonical : `https://aviatoriq.com${canonical}`) : "https://aviatoriq.com" },
     ],
   });
 
@@ -587,24 +407,17 @@ export default function GuideLayout({
     url: "https://aviatoriq.com",
     logo: "https://aviatoriq.com/logo.png",
     sameAs: [],
-    contactPoint: {
-      "@type": "ContactPoint",
-      email: "hello@aviatoriq.com",
-      contactType: "customer support",
-    },
+    contactPoint: { "@type": "ContactPoint", email: "hello@aviatoriq.com", contactType: "customer support" },
   });
 
   // Build ToC items from section headings
-  const tocItems: TocItem[] = sections.map(s => ({
+  const tocItems: TocItem[] = sections.map((s) => ({
     id: toId(s.heading),
     heading: s.heading,
   }));
 
   return (
-    <div
-      className="min-h-screen flex flex-col"
-      style={{ background: "oklch(0.10 0.08 252)" }}
-    >
+    <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.10 0.08 252)" }}>
       <SEO
         title={`${title} | AviatorIQ`}
         description={metaDescription || subtitle}
@@ -613,93 +426,35 @@ export default function GuideLayout({
       />
       <PublicNav />
       <main className="flex-1">
+
         {/* Hero */}
         <div
           className="relative overflow-hidden py-10 md:py-14"
-          style={{
-            background:
-              "linear-gradient(160deg, oklch(0.10 0.10 255) 0%, oklch(0.14 0.12 248) 100%)",
-          }}
+          style={{ background: "linear-gradient(160deg, oklch(0.10 0.10 255) 0%, oklch(0.14 0.12 248) 100%)" }}
         >
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              backgroundImage: `url('${heroImage || "/manus-storage/airplane-takeoff_6f139e92.jpg"}')`,
-              backgroundSize: "cover",
-              backgroundPosition: "center 40%",
-              opacity: heroImage ? 0.18 : 0.08,
-            }}
-          />
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              backgroundImage:
-                "linear-gradient(oklch(1 0 0 / 0.025) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 0.025) 1px, transparent 1px)",
-              backgroundSize: "56px 56px",
-            }}
-          />
+          <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: `url('${heroImage || '/manus-storage/airplane-takeoff_6f139e92.jpg'}')`, backgroundSize: "cover", backgroundPosition: "center 40%", opacity: heroImage ? 0.18 : 0.08 }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(oklch(1 0 0 / 0.025) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 0.025) 1px, transparent 1px)", backgroundSize: "56px 56px" }} />
           <div className="container max-w-5xl relative">
             {/* Breadcrumb */}
-            <div
-              className="flex items-center gap-2 text-sm mb-5"
-              style={{ color: "oklch(0.5 0.04 240)" }}
-            >
-              <Link
-                href="/guides"
-                className="no-underline transition-colors hover:text-white"
-                style={{ color: "oklch(0.5 0.04 240)" }}
-              >
-                Guides
-              </Link>
+            <div className="flex items-center gap-2 text-sm mb-5" style={{ color: "oklch(0.5 0.04 240)" }}>
+              <Link href="/guides" className="no-underline transition-colors hover:text-white" style={{ color: "oklch(0.5 0.04 240)" }}>Guides</Link>
               <ChevronRight className="w-3.5 h-3.5" />
               <span style={{ color: "oklch(0.7 0.04 240)" }}>{title}</span>
             </div>
-            <h1
-              className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-3"
-              style={{ letterSpacing: "-0.02em" }}
-            >
-              {title}
-            </h1>
-            <p
-              className="text-base md:text-lg mb-4 max-w-2xl"
-              style={{ color: "oklch(0.65 0.04 240)" }}
-            >
-              {subtitle}
-            </p>
-            <div
-              className="flex flex-wrap items-center gap-3 text-sm"
-              style={{ color: "oklch(0.5 0.04 240)" }}
-            >
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-3" style={{ letterSpacing: "-0.02em" }}>{title}</h1>
+            <p className="text-base md:text-lg mb-4 max-w-2xl" style={{ color: "oklch(0.65 0.04 240)" }}>{subtitle}</p>
+            <div className="flex flex-wrap items-center gap-3 text-sm" style={{ color: "oklch(0.5 0.04 240)" }}>
               <span className="flex items-center gap-1.5">
                 <Clock className="w-4 h-4" />
                 {readTime}
               </span>
               <span className="flex items-center gap-1.5">
-                <div
-                  className="w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold"
-                  style={{
-                    background: "oklch(0.45 0.18 240 / 0.2)",
-                    color: "oklch(0.65 0.18 240)",
-                  }}
-                >
-                  JF
-                </div>
-                <Link
-                  href="/about-our-authors"
-                  className="no-underline hover:text-white transition-colors"
-                  style={{ color: "oklch(0.5 0.04 240)" }}
-                >
-                  {author}
-                </Link>
+                <div className="w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold" style={{ background: "oklch(0.45 0.18 240 / 0.2)", color: "oklch(0.65 0.18 240)" }}>JF</div>
+                <Link href="/about-our-authors" className="no-underline hover:text-white transition-colors" style={{ color: "oklch(0.5 0.04 240)" }}>{author}</Link>
               </span>
               <span className="flex items-center gap-1.5">
-                <div
-                  className="w-1.5 h-1.5 rounded-full"
-                  style={{ background: "oklch(0.55 0.18 145)" }}
-                />
-                <span style={{ color: "oklch(0.55 0.18 145)" }}>
-                  Updated {lastUpdated}
-                </span>
+                <div className="w-1.5 h-1.5 rounded-full" style={{ background: "oklch(0.55 0.18 145)" }} />
+                <span style={{ color: "oklch(0.55 0.18 145)" }}>Updated {lastUpdated}</span>
               </span>
               {/* Editorial Policy badge */}
               <Link
@@ -707,64 +462,44 @@ export default function GuideLayout({
                 className="flex items-center gap-1.5 no-underline transition-colors hover:text-white"
                 style={{ color: "oklch(0.5 0.04 240)" }}
               >
-                <ShieldCheck
-                  className="w-3.5 h-3.5"
-                  style={{ color: "oklch(0.65 0.18 240)" }}
-                />
+                <ShieldCheck className="w-3.5 h-3.5" style={{ color: "oklch(0.65 0.18 240)" }} />
                 <span className="text-xs">Editorial Policy</span>
               </Link>
             </div>
             {authorRole && (
-              <p
-                className="text-xs mt-2"
-                style={{ color: "oklch(0.42 0.04 240)" }}
-              >
-                {authorRole}
-              </p>
+              <p className="text-xs mt-2" style={{ color: "oklch(0.42 0.04 240)" }}>{authorRole}</p>
             )}
           </div>
         </div>
 
         {/* Content area — two-column on xl screens */}
-        <div
-          className="py-6 md:py-10 px-4"
-          style={{ background: "oklch(0.11 0.08 252)" }}
-        >
+        <div className="py-6 md:py-10 px-4" style={{ background: "oklch(0.11 0.08 252)" }}>
           <div className="container max-w-5xl">
             <div className="flex gap-10 items-start">
+
               {/* Main content column */}
               <div className="flex-1 min-w-0">
+
                 {/* Trust disclaimers — rendered before article content */}
                 {medicalDisclaimer && (
-                  <MedicalDisclaimerBox
-                    authority={medicalAuthority}
-                    className="mb-4"
-                  />
+                  <MedicalDisclaimerBox authority={medicalAuthority} className="mb-4" />
                 )}
-                {financeDisclaimer && <FinanceDisclaimerBox className="mb-4" />}
+                {financeDisclaimer && (
+                  <FinanceDisclaimerBox className="mb-4" />
+                )}
                 {/* Mid-page CTA banner */}
                 <div
                   className="flex flex-col sm:flex-row items-center gap-3 p-4 md:p-5 rounded-2xl mb-6"
-                  style={{
-                    background: "oklch(0.45 0.18 240 / 0.08)",
-                    border: "1px solid oklch(0.45 0.18 240 / 0.2)",
-                  }}
+                  style={{ background: "oklch(0.45 0.18 240 / 0.08)", border: "1px solid oklch(0.45 0.18 240 / 0.2)" }}
                 >
                   <div className="flex-1">
-                    <p className="font-display font-bold text-white text-sm mb-0.5">
-                      Get your personalised pilot roadmap
-                    </p>
-                    <p className="text-xs" style={{ color: muted }}>
-                      {ctaSubtext ?? "Free 5-minute assessment. No registration required."}
-                    </p>
+                    <p className="font-display font-bold text-white text-sm mb-0.5">Get your personalised pilot roadmap</p>
+                    <p className="text-xs" style={{ color: muted }}>Free 5-minute assessment. No registration required.</p>
                   </div>
                   <Link
                     href={ctaHref}
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white no-underline whitespace-nowrap flex-shrink-0"
-                    style={{
-                      background: ctaGradient,
-                      boxShadow: "0 0 16px oklch(0.72 0.18 65 / 0.25)",
-                    }}
+                    style={{ background: ctaGradient, boxShadow: "0 0 16px oklch(0.72 0.18 65 / 0.25)" }}
                   >
                     <Zap className="w-3.5 h-3.5" />
                     {ctaText}
@@ -772,45 +507,28 @@ export default function GuideLayout({
                 </div>
 
                 {/* Scope banner for non-UK/US readers */}
-                {scopeBanner && <div className="mb-2">{scopeBanner}</div>}
+                {scopeBanner && (
+                  <div className="mb-2">{scopeBanner}</div>
+                )}
 
                 <div
                   className="rounded-2xl p-4 md:p-5 mb-6"
-                  style={{
-                    background: "oklch(0.16 0.09 250)",
-                    border: "1px solid oklch(0.65 0.18 240 / 0.22)",
-                  }}
+                  style={{ background: "oklch(0.16 0.09 250)", border: "1px solid oklch(0.65 0.18 240 / 0.22)" }}
                 >
                   <div className="flex flex-col gap-2">
                     <div className="flex flex-wrap items-center gap-2">
-                      <span
-                        className="text-xs font-semibold uppercase tracking-widest"
-                        style={{ color: "oklch(0.72 0.18 65)" }}
-                      >
+                      <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "oklch(0.72 0.18 65)" }}>
                         2026 scope
                       </span>
-                      <span
-                        className="text-xs px-2 py-1 rounded-full"
-                        style={{
-                          background: "oklch(0.45 0.18 240 / 0.15)",
-                          color: "oklch(0.75 0.18 240)",
-                        }}
-                      >
+                      <span className="text-xs px-2 py-1 rounded-full" style={{ background: "oklch(0.45 0.18 240 / 0.15)", color: "oklch(0.75 0.18 240)" }}>
                         {guideScope.label} · {guideScope.authority}
                       </span>
-                      <span
-                        className="text-xs"
-                        style={{ color: "oklch(0.48 0.04 240)" }}
-                      >
+                      <span className="text-xs" style={{ color: "oklch(0.48 0.04 240)" }}>
                         Last reviewed {lastUpdated}
                       </span>
                     </div>
-                    <p
-                      className="text-sm leading-relaxed"
-                      style={{ color: "oklch(0.72 0.04 240)" }}
-                    >
-                      This guide uses {guideScope.terminology}{" "}
-                      {guideScope.caution}
+                    <p className="text-sm leading-relaxed" style={{ color: "oklch(0.72 0.04 240)" }}>
+                      This guide uses {guideScope.terminology} {guideScope.caution}
                     </p>
                   </div>
                 </div>
@@ -824,14 +542,10 @@ export default function GuideLayout({
                     <div
                       key={i}
                       id={tocItems[i]?.id}
-                      className={
-                        i > 0 ? "mt-10 pt-10 scroll-mt-24" : "scroll-mt-24"
-                      }
+                      className={i > 0 ? "mt-10 pt-10 scroll-mt-24" : "scroll-mt-24"}
                       style={i > 0 ? { borderTop: `1px solid ${border}` } : {}}
                     >
-                      <h2 className="text-xl font-display font-bold text-white mb-4">
-                        {section.heading}
-                      </h2>
+                      <h2 className="text-xl font-display font-bold text-white mb-4">{section.heading}</h2>
                       <div
                         className="leading-relaxed space-y-4 text-sm"
                         style={{ color: "oklch(0.7 0.04 240)" }}
@@ -843,18 +557,11 @@ export default function GuideLayout({
                     </div>
                   ))}
                   {/* If fewer than 3 sections, show email capture at the end */}
-                  {sections.length <= 2 && (
-                    <div
-                      className="mt-10 pt-10"
-                      style={{ borderTop: `1px solid ${border}` }}
-                    >
-                      <InlineEmailCapture />
-                    </div>
-                  )}
+                  {sections.length <= 2 && <div className="mt-10 pt-10" style={{ borderTop: `1px solid ${border}` }}><InlineEmailCapture /></div>}
                 </div>
 
                 {/* Trust layer: LastVerifiedBox + MethodologyBox */}
-                {regulatorName && regulatorUrl && (
+                {(regulatorName && regulatorUrl) && (
                   <LastVerifiedBox
                     lastVerified={lastUpdated || "June 2026"}
                     regulatorName={regulatorName}
@@ -862,7 +569,7 @@ export default function GuideLayout({
                     className="mb-3"
                   />
                 )}
-                {methodologySummary && methodologyDetail && (
+                {(methodologySummary && methodologyDetail) && (
                   <MethodologyBox
                     summary={methodologySummary}
                     detail={methodologyDetail}
@@ -872,43 +579,22 @@ export default function GuideLayout({
                   />
                 )}
                 {/* Sources box */}
-                <GuideSourcesBox
-                  sources={reviewedSources}
-                  lastReviewed={lastUpdated}
-                />
+                <GuideSourcesBox sources={reviewedSources} lastReviewed={lastUpdated} />
 
                 {/* Bottom CTA */}
                 <div
                   className="p-5 md:p-8 rounded-2xl text-center mb-8"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, oklch(0.14 0.12 255), oklch(0.18 0.14 248))",
-                    border: "1px solid oklch(0.45 0.18 240 / 0.2)",
-                  }}
+                  style={{ background: "linear-gradient(135deg, oklch(0.14 0.12 255), oklch(0.18 0.14 248))", border: "1px solid oklch(0.45 0.18 240 / 0.2)" }}
                 >
-                  <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4"
-                    style={{
-                      background: "oklch(0.72 0.18 65 / 0.15)",
-                      color: "oklch(0.85 0.15 65)",
-                    }}
-                  >
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4" style={{ background: "oklch(0.72 0.18 65 / 0.15)", color: "oklch(0.85 0.15 65)" }}>
                     <BookOpen className="w-6 h-6" />
                   </div>
-                  <h3 className="font-display font-bold text-xl text-white mb-2">
-                    Ready to plan your pilot training?
-                  </h3>
-                  <p className="text-sm mb-5" style={{ color: muted }}>
-                    Take the free assessment and get a personalised roadmap,
-                    readiness score and matched flight schools.
-                  </p>
+                  <h3 className="font-display font-bold text-xl text-white mb-2">Ready to plan your pilot training?</h3>
+                  <p className="text-sm mb-5" style={{ color: muted }}>Take the free assessment and get a personalised roadmap, readiness score and matched flight schools.</p>
                   <Link
                     href={ctaHref}
                     className="inline-flex items-center gap-2 px-7 py-3 rounded-xl text-sm font-bold text-white no-underline"
-                    style={{
-                      background: ctaGradient,
-                      boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.3)",
-                    }}
+                    style={{ background: ctaGradient, boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.3)" }}
                   >
                     {ctaText}
                     <ArrowRight className="w-4 h-4" />
@@ -918,47 +604,24 @@ export default function GuideLayout({
                 {/* Related guides */}
                 {relatedGuides.length > 0 && (
                   <div>
-                    <h3 className="font-display font-bold text-white text-lg mb-4">
-                      Related guides
-                    </h3>
+                    <h3 className="font-display font-bold text-white text-lg mb-4">Related guides</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {relatedGuides.map(guide => (
+                      {relatedGuides.map((guide) => (
                         <Link
                           key={guide.href}
                           href={guide.href}
                           className="group flex items-center justify-between p-4 rounded-xl transition-all no-underline"
-                          style={{
-                            background: surface,
-                            border: `1px solid ${border}`,
-                          }}
-                          onMouseEnter={e => {
-                            (e.currentTarget as HTMLElement).style.border =
-                              `1px solid ${borderHover}`;
-                            (e.currentTarget as HTMLElement).style.transform =
-                              "translateY(-2px)";
-                          }}
-                          onMouseLeave={e => {
-                            (e.currentTarget as HTMLElement).style.border =
-                              `1px solid ${border}`;
-                            (e.currentTarget as HTMLElement).style.transform =
-                              "translateY(0)";
-                          }}
+                          style={{ background: surface, border: `1px solid ${border}` }}
+                          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
+                          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
                         >
                           <div>
                             <div className="font-display font-semibold text-white/80 group-hover:text-white transition-colors text-sm">
                               {guide.title}
                             </div>
-                            <div
-                              className="text-xs mt-0.5"
-                              style={{ color: muted }}
-                            >
-                              {guide.time}
-                            </div>
+                            <div className="text-xs mt-0.5" style={{ color: muted }}>{guide.time}</div>
                           </div>
-                          <ChevronRight
-                            className="w-4 h-4 flex-shrink-0 transition-transform group-hover:translate-x-1"
-                            style={{ color: muted }}
-                          />
+                          <ChevronRight className="w-4 h-4 flex-shrink-0 transition-transform group-hover:translate-x-1" style={{ color: muted }} />
                         </Link>
                       ))}
                     </div>
@@ -967,11 +630,8 @@ export default function GuideLayout({
               </div>
 
               {/* Sticky Table of Contents sidebar (xl screens only) */}
-              <TableOfContents
-                items={tocItems}
-                ctaHref={ctaHref}
-                ctaText={ctaText}
-              />
+              <TableOfContents items={tocItems} ctaHref={ctaHref} ctaText={ctaText} />
+
             </div>
           </div>
         </div>

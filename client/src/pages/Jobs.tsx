@@ -3,24 +3,13 @@ import { useState } from "react";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import SEO from "@/components/SEO";
-import { trpc } from "@/lib/trpc";
-import {
-  Briefcase,
-  MapPin,
-  Clock,
-  ArrowRight,
-  Zap,
-  ExternalLink,
-  RefreshCw,
-  ChevronRight,
-} from "lucide-react";
+import { Briefcase, MapPin, Clock, ArrowRight, Zap, ExternalLink, RefreshCw, ChevronRight } from "lucide-react";
 
 const bg = "oklch(0.10 0.08 252)";
 const surface = "oklch(0.14 0.08 250)";
 const border = "oklch(1 0 0 / 0.08)";
 const muted = "oklch(0.55 0.04 240)";
-const ctaGradient =
-  "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
+const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
 
 interface Job {
   id: number;
@@ -48,8 +37,7 @@ const JOBS: Job[] = [
     salary: "£50,000 – £75,000 (base + allowances)",
     link: "https://careers.easyjet.com/",
     badge: "Active Recruiting",
-    description:
-      "easyJet is actively recruiting First Officers across its UK bases for the A319/A320/A321. Candidates must hold a valid EUK ATPL or fATPL, Class 1 Medical, and have the right to work in the UK. MCC/JOC required. easyJet offers a structured career progression path from FO to Captain.",
+    description: "easyJet is actively recruiting First Officers across its UK bases for the A319/A320/A321. Candidates must hold a valid EUK ATPL or fATPL, Class 1 Medical, and have the right to work in the UK. MCC/JOC required. easyJet offers a structured career progression path from FO to Captain.",
     posted: "June 2026",
   },
   {
@@ -62,8 +50,7 @@ const JOBS: Job[] = [
     salary: "€45,000 – €65,000 (base + productivity pay)",
     link: "https://www.ryanair.com/gb/en/careers",
     badge: "Low Hours Welcome",
-    description:
-      "Ryanair's First Officer programme is one of the most accessible routes into commercial aviation for low-hours graduates. The airline regularly recruits from its cadet partner schools (FTEJerez, Bartolini Air, MATS) and accepts external applications. Productivity pay means earnings increase significantly with experience.",
+    description: "Ryanair's First Officer programme is one of the most accessible routes into commercial aviation for low-hours graduates. The airline regularly recruits from its cadet partner schools (FTEJerez, Bartolini Air, MATS) and accepts external applications. Productivity pay means earnings increase significantly with experience.",
     posted: "June 2026",
   },
   {
@@ -76,23 +63,20 @@ const JOBS: Job[] = [
     salary: "Self-funded (£100,000–£130,000 training cost)",
     link: "https://www.britishairways.com/en-gb/information/about-ba/careers/speedbird-academy",
     badge: "Applications Open",
-    description:
-      "The British Airways Speedbird Academy is one of the most prestigious cadet programmes in the world. Successful applicants train at CAE Oxford Aviation Academy and are guaranteed a First Officer position with British Airways on completion. Selection is highly competitive — typically 2,000+ applicants for ~20 places per intake.",
+    description: "The British Airways Speedbird Academy is one of the most prestigious cadet programmes in the world. Successful applicants train at CAE Oxford Aviation Academy and are guaranteed a First Officer position with British Airways on completion. Selection is highly competitive — typically 2,000+ applicants for ~20 places per intake.",
     posted: "June 2026",
   },
   {
     id: 4,
     title: "First Officer — Airbus A320",
     airline: "Jet2",
-    location:
-      "UK Bases (Leeds, Manchester, Birmingham, Glasgow, Newcastle, East Midlands)",
+    location: "UK Bases (Leeds, Manchester, Birmingham, Glasgow, Newcastle, East Midlands)",
     type: "First Officer",
     hours: "500+ hours total time",
     salary: "£52,000 – £72,000",
     link: "https://www.jet2.com/careers",
     badge: "Active Recruiting",
-    description:
-      "Jet2 is one of the UK's fastest-growing airlines and consistently ranks as one of the best places to work in UK aviation. The airline operates a modern A320 family fleet and offers a clear Captain upgrade path. Known for a positive working culture and strong employee benefits.",
+    description: "Jet2 is one of the UK's fastest-growing airlines and consistently ranks as one of the best places to work in UK aviation. The airline operates a modern A320 family fleet and offers a clear Captain upgrade path. Known for a positive working culture and strong employee benefits.",
     posted: "June 2026",
   },
   {
@@ -105,8 +89,7 @@ const JOBS: Job[] = [
     salary: "Self-funded (£99,900 training cost)",
     link: "https://www.cae.com/civil-aviation/become-a-pilot/generation-easyjet/",
     badge: "MPL Programme",
-    description:
-      "The Generation easyJet Multi-Crew Pilot Licence (MPL) programme is a direct pathway from zero hours to easyJet First Officer. Training is conducted at CAE Oxford Aviation Academy. The MPL licence is type-specific, meaning you train on the A320 simulator from an early stage. Guaranteed job offer on successful completion.",
+    description: "The Generation easyJet Multi-Crew Pilot Licence (MPL) programme is a direct pathway from zero hours to easyJet First Officer. Training is conducted at CAE Oxford Aviation Academy. The MPL licence is type-specific, meaning you train on the A320 simulator from an early stage. Guaranteed job offer on successful completion.",
     posted: "June 2026",
   },
   {
@@ -119,8 +102,7 @@ const JOBS: Job[] = [
     salary: "£50,000 – £70,000",
     link: "https://careers.tui.co.uk/",
     badge: "Active Recruiting",
-    description:
-      "TUI Airways operates a modern Boeing 737 MAX fleet on leisure routes across Europe, the Caribbean, and beyond. As a TUI FO you'll fly to some of the world's most desirable destinations. The airline has an MPL cadet programme and also recruits experienced FOs directly.",
+    description: "TUI Airways operates a modern Boeing 737 MAX fleet on leisure routes across Europe, the Caribbean, and beyond. As a TUI FO you'll fly to some of the world's most desirable destinations. The airline has an MPL cadet programme and also recruits experienced FOs directly.",
     posted: "June 2026",
   },
   {
@@ -133,8 +115,7 @@ const JOBS: Job[] = [
     salary: "£35,000 – £50,000",
     link: "https://www.loganair.co.uk/about-loganair/careers/",
     badge: "Regional Aviation",
-    description:
-      "Loganair is the UK's largest regional airline and an excellent first job for low-hours graduates. Flying into remote Scottish islands and UK regional airports, the role builds exceptional handling skills and decision-making experience. Many Loganair FOs progress to major carriers within 3–5 years.",
+    description: "Loganair is the UK's largest regional airline and an excellent first job for low-hours graduates. Flying into remote Scottish islands and UK regional airports, the role builds exceptional handling skills and decision-making experience. Many Loganair FOs progress to major carriers within 3–5 years.",
     posted: "June 2026",
   },
   {
@@ -147,8 +128,7 @@ const JOBS: Job[] = [
     salary: "£28,000 – £40,000 + benefits",
     link: "https://www.skyborne.com/careers",
     badge: "Instructor Role",
-    description:
-      "Skyborne is expanding its instructor team at both its Gloucestershire and Bournemouth campuses. Flight Instructor roles are an excellent way to build hours and experience while earning. Skyborne offers a structured pathway for instructors who want to progress into airline careers.",
+    description: "Skyborne is expanding its instructor team at both its Gloucestershire and Bournemouth campuses. Flight Instructor roles are an excellent way to build hours and experience while earning. Skyborne offers a structured pathway for instructors who want to progress into airline careers.",
     posted: "June 2026",
   },
   {
@@ -160,8 +140,7 @@ const JOBS: Job[] = [
     hours: "500+ hours",
     salary: "€42,000 – €62,000",
     link: "https://careers.wizzair.com/",
-    description:
-      "Wizz Air is one of Europe's fastest-growing low-cost carriers and actively recruits UK-based pilots. The airline operates an all-Airbus A320 family fleet and has a Pilot Academy cadet programme for zero-hours applicants. Strong productivity pay structure.",
+    description: "Wizz Air is one of Europe's fastest-growing low-cost carriers and actively recruits UK-based pilots. The airline operates an all-Airbus A320 family fleet and has a Pilot Academy cadet programme for zero-hours applicants. Strong productivity pay structure.",
     posted: "June 2026",
   },
   {
@@ -173,8 +152,7 @@ const JOBS: Job[] = [
     hours: "3,000+ hours, 1,000+ A320 family",
     salary: "£90,000 – £120,000",
     link: "https://careers.easyjet.com/",
-    description:
-      "easyJet promotes from within and also accepts external Captain applications. Candidates must hold an unrestricted ATPL, significant A320 family experience, and strong CRM skills. easyJet Captains benefit from one of the best pay and lifestyle packages in UK short-haul aviation.",
+    description: "easyJet promotes from within and also accepts external Captain applications. Candidates must hold an unrestricted ATPL, significant A320 family experience, and strong CRM skills. easyJet Captains benefit from one of the best pay and lifestyle packages in UK short-haul aviation.",
     posted: "June 2026",
   },
   // ─── US JOBS ─────────────────────────────────────────────────────────────────
@@ -185,12 +163,10 @@ const JOBS: Job[] = [
     location: "Training: Goodyear, AZ. Base: United hubs nationwide",
     type: "Cadet",
     hours: "No experience required (PPL preferred)",
-    salary:
-      "Self-funded training, guaranteed United FO interview on completion",
+    salary: "Self-funded training, guaranteed United FO interview on completion",
     link: "https://www.united.com/en/us/fly/company/careers/aviate.html",
     badge: "United Airlines Pipeline",
-    description:
-      "United Aviate is United Airlines' official cadet pathway. Selected candidates train at the United Aviate Academy in Goodyear, AZ and receive a guaranteed First Officer interview with United upon reaching ATP minimums. United Aviate is the most direct pipeline to the world's largest airline by fleet size.",
+    description: "United Aviate is United Airlines' official cadet pathway. Selected candidates train at the United Aviate Academy in Goodyear, AZ and receive a guaranteed First Officer interview with United upon reaching ATP minimums. United Aviate is the most direct pipeline to the world's largest airline by fleet size.",
     posted: "June 2026",
   },
   {
@@ -203,8 +179,7 @@ const JOBS: Job[] = [
     salary: "Self-funded training, guaranteed Delta FO interview on completion",
     link: "https://www.delta.com/us/en/careers/propel",
     badge: "Delta Airlines Pipeline",
-    description:
-      "Delta Propel is Delta Air Lines' structured cadet program, partnering with select flight schools including Embry-Riddle and ATP Flight School. Accepted candidates receive a Propel ID number — a guaranteed First Officer interview with Delta upon reaching ATP minimums. Delta is consistently rated the best major airline to work for in the US.",
+    description: "Delta Propel is Delta Air Lines' structured cadet program, partnering with select flight schools including Embry-Riddle and ATP Flight School. Accepted candidates receive a Propel ID number — a guaranteed First Officer interview with Delta upon reaching ATP minimums. Delta is consistently rated the best major airline to work for in the US.",
     posted: "June 2026",
   },
   {
@@ -217,8 +192,7 @@ const JOBS: Job[] = [
     salary: "Self-funded training, guaranteed AA FO interview on completion",
     link: "https://jobs.aa.com/cadet",
     badge: "American Airlines Pipeline",
-    description:
-      "American Airlines' Cadet Academy is a direct pipeline from zero hours to American Airlines First Officer. Training is conducted at L3Harris Flight Academy. Accepted cadets receive a Cadet ID — a guaranteed interview with American upon reaching 1,500 hours (or R-ATP minimums). American operates the world's largest fleet.",
+    description: "American Airlines' Cadet Academy is a direct pipeline from zero hours to American Airlines First Officer. Training is conducted at L3Harris Flight Academy. Accepted cadets receive a Cadet ID — a guaranteed interview with American upon reaching 1,500 hours (or R-ATP minimums). American operates the world's largest fleet.",
     posted: "June 2026",
   },
   {
@@ -228,27 +202,23 @@ const JOBS: Job[] = [
     location: "Training: L3Harris (Sanford, FL). Base: Southwest hubs",
     type: "Cadet",
     hours: "No experience required",
-    salary:
-      "Self-funded training, guaranteed Southwest FO interview on completion",
+    salary: "Self-funded training, guaranteed Southwest FO interview on completion",
     link: "https://www.southwest.com/careers/destination225",
     badge: "Southwest Pipeline",
-    description:
-      "Southwest Destination 225° is Southwest Airlines' cadet pathway, training exclusively at L3Harris Flight Academy. Southwest is known for its exceptional company culture, profit-sharing, and work-life balance. Destination 225° cadets receive a guaranteed First Officer interview upon reaching ATP minimums.",
+    description: "Southwest Destination 225° is Southwest Airlines' cadet pathway, training exclusively at L3Harris Flight Academy. Southwest is known for its exceptional company culture, profit-sharing, and work-life balance. Destination 225° cadets receive a guaranteed First Officer interview upon reaching ATP minimums.",
     posted: "June 2026",
   },
   {
     id: 15,
     title: "First Officer — Embraer E175",
     airline: "SkyWest Airlines",
-    location:
-      "US Bases (Salt Lake City, Los Angeles, Denver, Chicago, Portland, Seattle)",
+    location: "US Bases (Salt Lake City, Los Angeles, Denver, Chicago, Portland, Seattle)",
     type: "First Officer",
     hours: "1,500 hours (or R-ATP minimums)",
     salary: "$80,000 – $110,000 (Year 1–3)",
     link: "https://www.skywest.com/fly-skywest/pilot-career/",
     badge: "Top Regional Airline",
-    description:
-      "SkyWest is the largest regional airline in the United States and consistently rated the best regional to work for. Operating as Delta Connection, United Express, and American Eagle, SkyWest FOs gain exceptional experience on the E175 and CRJ-700/900. SkyWest offers a fast upgrade path to Captain and a clear pathway to major airlines.",
+    description: "SkyWest is the largest regional airline in the United States and consistently rated the best regional to work for. Operating as Delta Connection, United Express, and American Eagle, SkyWest FOs gain exceptional experience on the E175 and CRJ-700/900. SkyWest offers a fast upgrade path to Captain and a clear pathway to major airlines.",
     posted: "June 2026",
   },
   {
@@ -261,8 +231,7 @@ const JOBS: Job[] = [
     salary: "$75,000 – $100,000 (Year 1–3)",
     link: "https://www.envoyair.com/careers/pilots/",
     badge: "American Airlines Feeder",
-    description:
-      "Envoy Air is the wholly-owned regional subsidiary of American Airlines, operating as American Eagle. Envoy FOs have a direct pathway to American Airlines through the Envoy Career Incentive Program (CIP) — one of the fastest routes to a major airline in the US. Envoy recruits heavily from ATP Flight School and L3Harris.",
+    description: "Envoy Air is the wholly-owned regional subsidiary of American Airlines, operating as American Eagle. Envoy FOs have a direct pathway to American Airlines through the Envoy Career Incentive Program (CIP) — one of the fastest routes to a major airline in the US. Envoy recruits heavily from ATP Flight School and L3Harris.",
     posted: "June 2026",
   },
   {
@@ -275,8 +244,7 @@ const JOBS: Job[] = [
     salary: "$85,000 – $115,000 (Year 1–3)",
     link: "https://careers.flyfrontier.com/",
     badge: "Ultra-Low Cost Carrier",
-    description:
-      "Frontier Airlines is one of America's fastest-growing ultra-low-cost carriers and actively recruits First Officers from regional airlines. Frontier operates a mixed Boeing 737 and Airbus A320 family fleet. The airline offers competitive pay, a clear Captain upgrade path, and a growing route network.",
+    description: "Frontier Airlines is one of America's fastest-growing ultra-low-cost carriers and actively recruits First Officers from regional airlines. Frontier operates a mixed Boeing 737 and Airbus A320 family fleet. The airline offers competitive pay, a clear Captain upgrade path, and a growing route network.",
     posted: "June 2026",
   },
   {
@@ -289,81 +257,36 @@ const JOBS: Job[] = [
     salary: "$45,000 – $65,000 + benefits",
     link: "https://atpflightschool.com/become-a-pilot/flight-instructor-jobs.html",
     badge: "Build Hours Fast",
-    description:
-      "ATP Flight School hires CFIs at all 80+ of its US locations. As an ATP instructor, you'll build hours quickly — typically reaching 1,500 hours in 12–18 months. ATP instructors receive guaranteed interviews with ATP's airline partners (SkyWest, Envoy, Endeavor, Republic) upon reaching minimums. The fastest path to a regional airline in the US.",
+    description: "ATP Flight School hires CFIs at all 80+ of its US locations. As an ATP instructor, you'll build hours quickly — typically reaching 1,500 hours in 12–18 months. ATP instructors receive guaranteed interviews with ATP's airline partners (SkyWest, Envoy, Endeavor, Republic) upon reaching minimums. The fastest path to a regional airline in the US.",
     posted: "June 2026",
   },
 ];
 
-const typeColors: Record<string, { bg: string; text: string; border: string }> =
-  {
-    "First Officer": {
-      bg: "oklch(0.45 0.18 240 / 0.15)",
-      text: "oklch(0.7 0.18 240)",
-      border: "oklch(0.45 0.18 240 / 0.3)",
-    },
-    Captain: {
-      bg: "oklch(0.72 0.18 65 / 0.15)",
-      text: "oklch(0.85 0.15 65)",
-      border: "oklch(0.72 0.18 65 / 0.3)",
-    },
-    Cadet: {
-      bg: "oklch(0.55 0.18 145 / 0.15)",
-      text: "oklch(0.7 0.18 145)",
-      border: "oklch(0.55 0.18 145 / 0.3)",
-    },
-    Instructor: {
-      bg: "oklch(0.6 0.18 200 / 0.15)",
-      text: "oklch(0.75 0.15 200)",
-      border: "oklch(0.6 0.18 200 / 0.3)",
-    },
-    Other: {
-      bg: "oklch(0.5 0.04 240 / 0.15)",
-      text: "oklch(0.65 0.04 240)",
-      border: "oklch(0.5 0.04 240 / 0.3)",
-    },
-  };
+const typeColors: Record<string, { bg: string; text: string; border: string }> = {
+  "First Officer": { bg: "oklch(0.45 0.18 240 / 0.15)", text: "oklch(0.7 0.18 240)", border: "oklch(0.45 0.18 240 / 0.3)" },
+  "Captain": { bg: "oklch(0.72 0.18 65 / 0.15)", text: "oklch(0.85 0.15 65)", border: "oklch(0.72 0.18 65 / 0.3)" },
+  "Cadet": { bg: "oklch(0.55 0.18 145 / 0.15)", text: "oklch(0.7 0.18 145)", border: "oklch(0.55 0.18 145 / 0.3)" },
+  "Instructor": { bg: "oklch(0.6 0.18 200 / 0.15)", text: "oklch(0.75 0.15 200)", border: "oklch(0.6 0.18 200 / 0.3)" },
+  "Other": { bg: "oklch(0.5 0.04 240 / 0.15)", text: "oklch(0.65 0.04 240)", border: "oklch(0.5 0.04 240 / 0.3)" },
+};
 
 const jobSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "UK Airline Pilot Jobs 2026",
-  description:
-    "Current UK airline pilot vacancies — First Officer, Captain, Cadet, and Instructor roles",
+  description: "Current UK airline pilot vacancies — First Officer, Captain, Cadet, and Instructor roles",
   url: "https://aviatoriq.com/jobs",
 };
 
 export default function Jobs() {
-  const [countryFilter, setCountryFilter] = useState<"all" | "uk" | "us">(
-    "all"
-  );
+  const [countryFilter, setCountryFilter] = useState<"all" | "uk" | "us">("all");
 
-  // Fetch from API, fall back to static data if DB unavailable
-  const jobsQuery = trpc.jobs.list.useQuery({ region: undefined });
-  const apiJobs = jobsQuery.data?.jobs;
+  const isUS = (j: Job) => j.id >= 11;
+  const isUK = (j: Job) => j.id <= 10;
 
-  // Map API jobs to the local Job interface (API uses 'postedAt', static uses 'posted')
-  const allJobs: Job[] = apiJobs && apiJobs.length > 0
-    ? apiJobs.map(j => ({
-        id: j.id,
-        title: j.title,
-        airline: j.airline,
-        location: j.location,
-        type: j.type as Job["type"],
-        hours: j.hours ?? undefined,
-        salary: j.salary ?? undefined,
-        deadline: j.deadline ?? undefined,
-        link: j.link,
-        badge: j.badge ?? undefined,
-        description: j.description,
-        posted: j.postedAt instanceof Date ? j.postedAt.toISOString().slice(0, 10) : String(j.postedAt),
-        region: j.region,
-      }))
-    : JOBS;
-
-  const filteredJobs = allJobs.filter(j => {
-    if (countryFilter === "uk") return (j as any).region === "UK" || j.id <= 10;
-    if (countryFilter === "us") return (j as any).region === "US" || j.id >= 11;
+  const filteredJobs = JOBS.filter(j => {
+    if (countryFilter === "uk") return isUK(j);
+    if (countryFilter === "us") return isUS(j);
     return true;
   });
 
@@ -382,70 +305,32 @@ export default function Jobs() {
       />
       <PublicNav />
       <main className="flex-1">
+
         {/* Hero */}
         <div
           className="relative overflow-hidden py-10 md:py-16"
-          style={{
-            background:
-              "linear-gradient(160deg, oklch(0.10 0.10 255) 0%, oklch(0.14 0.12 248) 100%)",
-          }}
+          style={{ background: "linear-gradient(160deg, oklch(0.10 0.10 255) 0%, oklch(0.14 0.12 248) 100%)" }}
         >
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              backgroundImage:
-                "url('/manus-storage/airline-fleet_f3223103.jpg')",
-              backgroundSize: "cover",
-              backgroundPosition: "center 50%",
-              opacity: 0.09,
-            }}
-          />
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              backgroundImage:
-                "linear-gradient(oklch(1 0 0 / 0.025) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 0.025) 1px, transparent 1px)",
-              backgroundSize: "56px 56px",
-            }}
-          />
+          <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "url('/manus-storage/airline-fleet_f3223103.jpg')", backgroundSize: "cover", backgroundPosition: "center 50%", opacity: 0.09 }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(oklch(1 0 0 / 0.025) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 0.025) 1px, transparent 1px)", backgroundSize: "56px 56px" }} />
           <div className="container max-w-4xl relative">
-            <div
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-5"
-              style={{
-                background: "oklch(0.45 0.18 240 / 0.15)",
-                border: "1px solid oklch(0.45 0.18 240 / 0.3)",
-                color: "oklch(0.7 0.18 240)",
-              }}
-            >
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-5"
+              style={{ background: "oklch(0.45 0.18 240 / 0.15)", border: "1px solid oklch(0.45 0.18 240 / 0.3)", color: "oklch(0.7 0.18 240)" }}>
               <Briefcase className="w-3 h-3" />
               Pilot Jobs Board
             </div>
-            <h1
-              className="text-2xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4"
-              style={{ letterSpacing: "-0.02em" }}
-            >
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
               Pilot Careers Guide — UK &amp; USA 2026
             </h1>
-            <p
-              className="text-base md:text-lg lg:text-xl max-w-2xl mb-5"
-              style={{ color: "oklch(0.65 0.04 240)" }}
-            >
-              Profiles of the main pilot hiring routes at UK and US airlines —
-              First Officer, Captain, Cadet, and Instructor. Each profile links
-              directly to the airline's official careers page.
+            <p className="text-base md:text-lg lg:text-xl max-w-2xl mb-5" style={{ color: "oklch(0.65 0.04 240)" }}>
+              Profiles of the main pilot hiring routes at UK and US airlines — First Officer, Captain, Cadet, and Instructor. Each profile links directly to the airline's official careers page.
             </p>
             <div className="flex flex-wrap items-center gap-4">
-              <div
-                className="flex items-center gap-2 text-sm"
-                style={{ color: muted }}
-              >
+              <div className="flex items-center gap-2 text-sm" style={{ color: muted }}>
                 <RefreshCw className="w-4 h-4" />
                 Last reviewed: June 2026
               </div>
-              <div
-                className="flex items-center gap-2 text-sm"
-                style={{ color: muted }}
-              >
+              <div className="flex items-center gap-2 text-sm" style={{ color: muted }}>
                 <Briefcase className="w-4 h-4" />
                 {JOBS.length} role profiles
               </div>
@@ -454,98 +339,52 @@ export default function Jobs() {
         </div>
 
         {/* Content */}
-        <div
-          className="py-6 md:py-12 px-4"
-          style={{ background: "oklch(0.11 0.08 252)" }}
-        >
+        <div className="py-6 md:py-12 px-4" style={{ background: "oklch(0.11 0.08 252)" }}>
           <div className="container max-w-4xl">
+
             {/* Notice */}
-            <div
-              className="p-4 rounded-xl mb-8 flex items-start gap-3"
-              style={{
-                background: "oklch(0.45 0.18 240 / 0.08)",
-                border: "1px solid oklch(0.45 0.18 240 / 0.2)",
-              }}
-            >
-              <div
-                className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                style={{
-                  background: "oklch(0.45 0.18 240 / 0.2)",
-                  color: "oklch(0.7 0.18 240)",
-                }}
-              >
-                <span className="text-xs font-bold">i</span>
+            <div className="p-5 rounded-2xl mb-8 flex items-start gap-4"
+              style={{ background: "oklch(0.45 0.18 240 / 0.10)", border: "2px solid oklch(0.55 0.18 240 / 0.35)" }}>
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+                style={{ background: "oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.75 0.18 240)" }}>
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
-              <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>
-                <strong className="text-white/80">How this works:</strong> These
-                are curated role profiles — not live job postings. Each one
-                describes a hiring route that these airlines regularly recruit
-                for, with a direct link to their official careers page where you
-                can check current vacancies and apply. AviatorIQ is not a
-                recruitment agency and does not charge fees. Always verify
-                availability directly with the airline.
-              </p>
+              <div>
+                <p className="text-sm font-bold mb-1" style={{ color: "oklch(0.82 0.12 240)" }}>Role profiles — not live job postings</p>
+                <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>These are curated hiring route profiles for airlines that regularly recruit pilots. Each links to the airline’s official careers page where you can check current vacancies and apply directly. AviatorIQ is not a recruitment agency and does not charge fees. Always verify availability directly with the airline before applying.</p>
+              </div>
             </div>
 
             {/* Country Filter */}
             <div className="flex items-center gap-2 mb-8">
-              {(["all", "uk", "us"] as const).map(c => (
+              {(["all", "uk", "us"] as const).map((c) => (
                 <button
                   key={c}
                   onClick={() => setCountryFilter(c)}
                   className="px-4 py-2 rounded-lg text-sm font-semibold transition-all"
-                  style={
-                    countryFilter === c
-                      ? {
-                          background: "oklch(0.72 0.18 65)",
-                          color: "oklch(0.10 0.08 252)",
-                        }
-                      : {
-                          background: "oklch(0.14 0.08 250)",
-                          color: "oklch(0.65 0.04 240)",
-                          border: "1px solid oklch(1 0 0 / 0.08)",
-                        }
+                  style={countryFilter === c
+                    ? { background: "oklch(0.72 0.18 65)", color: "oklch(0.10 0.08 252)" }
+                    : { background: "oklch(0.14 0.08 250)", color: "oklch(0.65 0.04 240)", border: "1px solid oklch(1 0 0 / 0.08)" }
                   }
                 >
-                  {c === "all"
-                    ? "All Countries"
-                    : c === "uk"
-                      ? "🇬🇧 United Kingdom"
-                      : "🇺🇸 United States"}
+                  {c === "all" ? "All Countries" : c === "uk" ? "🇬🇧 United Kingdom" : "🇺🇸 United States"}
                 </button>
               ))}
-              <span
-                className="text-sm ml-2"
-                style={{ color: "oklch(0.55 0.04 240)" }}
-              >
-                {filteredJobs.length} listing
-                {filteredJobs.length !== 1 ? "s" : ""}
+              <span className="text-sm ml-2" style={{ color: "oklch(0.55 0.04 240)" }}>
+                {filteredJobs.length} listing{filteredJobs.length !== 1 ? "s" : ""}
               </span>
             </div>
 
             {/* Not yet trained? CTA */}
-            <div
-              className="p-6 rounded-2xl mb-10 flex flex-col sm:flex-row items-center gap-5"
-              style={{ background: surface, border: `1px solid ${border}` }}
-            >
+            <div className="p-6 rounded-2xl mb-10 flex flex-col sm:flex-row items-center gap-5"
+              style={{ background: surface, border: `1px solid ${border}` }}>
               <div className="flex-1">
-                <h3 className="font-display font-bold text-white mb-1">
-                  Still in training or just starting out?
-                </h3>
-                <p className="text-sm" style={{ color: muted }}>
-                  Take the free assessment to get a personalised roadmap,
-                  matched flight schools, and a realistic timeline to your first
-                  FO role.
-                </p>
+                <h3 className="font-display font-bold text-white mb-1">Still in training or just starting out?</h3>
+                <p className="text-sm" style={{ color: muted }}>Take the free assessment to get a personalised roadmap, matched flight schools, and a realistic timeline to your first FO role.</p>
               </div>
-              <Link
-                href="/quiz"
+              <Link href="/quiz"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white no-underline whitespace-nowrap flex-shrink-0"
-                style={{
-                  background: ctaGradient,
-                  boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.25)",
-                }}
-              >
+                style={{ background: ctaGradient, boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.25)" }}>
                 <Zap className="w-4 h-4" />
                 Free Assessment
               </Link>
@@ -554,17 +393,10 @@ export default function Jobs() {
             {/* Cadet roles */}
             {cadetRoles.length > 0 && (
               <section className="mb-10">
-                <h2 className="font-display font-bold text-xl text-white mb-1">
-                  Cadet Programmes
-                </h2>
-                <p className="text-sm mb-5" style={{ color: muted }}>
-                  Zero-hours pathways with guaranteed airline positions on
-                  completion.
-                </p>
+                <h2 className="font-display font-bold text-xl text-white mb-1">Cadet Programmes</h2>
+                <p className="text-sm mb-5" style={{ color: muted }}>Zero-hours pathways with guaranteed airline positions on completion.</p>
                 <div className="space-y-4">
-                  {cadetRoles.map(job => (
-                    <JobCard key={job.id} job={job} />
-                  ))}
+                  {cadetRoles.map(job => <JobCard key={job.id} job={job} />)}
                 </div>
               </section>
             )}
@@ -572,17 +404,10 @@ export default function Jobs() {
             {/* FO roles */}
             {foRoles.length > 0 && (
               <section className="mb-10">
-                <h2 className="font-display font-bold text-xl text-white mb-1">
-                  First Officer Roles
-                </h2>
-                <p className="text-sm mb-5" style={{ color: muted }}>
-                  Direct-entry FO hiring routes at UK and US airlines — click
-                  through to check current availability.
-                </p>
+                <h2 className="font-display font-bold text-xl text-white mb-1">First Officer Roles</h2>
+                <p className="text-sm mb-5" style={{ color: muted }}>Direct-entry FO hiring routes at UK and US airlines — click through to check current availability.</p>
                 <div className="space-y-4">
-                  {foRoles.map(job => (
-                    <JobCard key={job.id} job={job} />
-                  ))}
+                  {foRoles.map(job => <JobCard key={job.id} job={job} />)}
                 </div>
               </section>
             )}
@@ -590,17 +415,10 @@ export default function Jobs() {
             {/* Captain roles */}
             {captainRoles.length > 0 && (
               <section className="mb-10">
-                <h2 className="font-display font-bold text-xl text-white mb-1">
-                  Captain Roles
-                </h2>
-                <p className="text-sm mb-5" style={{ color: muted }}>
-                  Command upgrade and direct-entry Captain hiring routes — click
-                  through to check current availability.
-                </p>
+                <h2 className="font-display font-bold text-xl text-white mb-1">Captain Roles</h2>
+                <p className="text-sm mb-5" style={{ color: muted }}>Command upgrade and direct-entry Captain hiring routes — click through to check current availability.</p>
                 <div className="space-y-4">
-                  {captainRoles.map(job => (
-                    <JobCard key={job.id} job={job} />
-                  ))}
+                  {captainRoles.map(job => <JobCard key={job.id} job={job} />)}
                 </div>
               </section>
             )}
@@ -608,151 +426,64 @@ export default function Jobs() {
             {/* Instructor roles */}
             {instructorRoles.length > 0 && (
               <section className="mb-10">
-                <h2 className="font-display font-bold text-xl text-white mb-1">
-                  Instructor & Other Roles
-                </h2>
-                <p className="text-sm mb-5" style={{ color: muted }}>
-                  Flight instructor and aviation support roles — great for
-                  building hours.
-                </p>
+                <h2 className="font-display font-bold text-xl text-white mb-1">Instructor & Other Roles</h2>
+                <p className="text-sm mb-5" style={{ color: muted }}>Flight instructor and aviation support roles — great for building hours.</p>
                 <div className="space-y-4">
-                  {instructorRoles.map(job => (
-                    <JobCard key={job.id} job={job} />
-                  ))}
+                  {instructorRoles.map(job => <JobCard key={job.id} job={job} />)}
                 </div>
               </section>
             )}
 
             {/* More resources */}
-            <div
-              className="p-6 rounded-2xl mb-6"
-              style={{ background: surface, border: `1px solid ${border}` }}
-            >
-              <h3 className="font-display font-bold text-white mb-4">
-                Useful resources for job applications
-              </h3>
+            <div className="p-6 rounded-2xl mb-6" style={{ background: surface, border: `1px solid ${border}` }}>
+              <h3 className="font-display font-bold text-white mb-4">Useful resources for job applications</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
-                  {
-                    title: "Airline Interview Guide",
-                    href: "/guides/airline-pilot-interview",
-                    desc: "How to prepare for airline pilot assessments",
-                  },
-                  {
-                    title: "Pilot Salary UK 2026",
-                    href: "/guides/uk-pilot-salary-2026",
-                    desc: "What to expect at each career stage",
-                  },
-                  {
-                    title: "Type Rating Guide",
-                    href: "/guides/pilot-type-rating-uk",
-                    desc: "How type ratings work and what they cost",
-                  },
-                  {
-                    title: "Hour Building Guide",
-                    href: "/guides/hour-building-pilot-uk",
-                    desc: "How to build hours efficiently after training",
-                  },
+                  { title: "Airline Interview Guide", href: "/guides/airline-pilot-interview", desc: "How to prepare for airline pilot assessments" },
+                  { title: "Pilot Salary UK 2026", href: "/guides/uk-pilot-salary-2026", desc: "What to expect at each career stage" },
+                  { title: "Type Rating Guide", href: "/guides/pilot-type-rating-uk", desc: "How type ratings work and what they cost" },
+                  { title: "Hour Building Guide", href: "/guides/hour-building-pilot-uk", desc: "How to build hours efficiently after training" },
                 ].map(link => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
+                  <Link key={link.href} href={link.href}
                     className="flex items-center justify-between p-4 rounded-xl no-underline group transition-all"
-                    style={{
-                      background: "oklch(0.12 0.07 252)",
-                      border: "1px solid oklch(1 0 0 / 0.06)",
-                    }}
-                    onMouseEnter={e =>
-                      ((e.currentTarget as HTMLElement).style.border =
-                        "1px solid oklch(1 0 0 / 0.14)")
-                    }
-                    onMouseLeave={e =>
-                      ((e.currentTarget as HTMLElement).style.border =
-                        "1px solid oklch(1 0 0 / 0.06)")
-                    }
-                  >
+                    style={{ background: "oklch(0.12 0.07 252)", border: "1px solid oklch(1 0 0 / 0.06)" }}
+                    onMouseEnter={e => (e.currentTarget as HTMLElement).style.border = "1px solid oklch(1 0 0 / 0.14)"}
+                    onMouseLeave={e => (e.currentTarget as HTMLElement).style.border = "1px solid oklch(1 0 0 / 0.06)"}>
                     <div>
-                      <div className="font-semibold text-white/80 group-hover:text-white transition-colors text-sm">
-                        {link.title}
-                      </div>
-                      <div className="text-xs mt-0.5" style={{ color: muted }}>
-                        {link.desc}
-                      </div>
+                      <div className="font-semibold text-white/80 group-hover:text-white transition-colors text-sm">{link.title}</div>
+                      <div className="text-xs mt-0.5" style={{ color: muted }}>{link.desc}</div>
                     </div>
-                    <ChevronRight
-                      className="w-4 h-4 flex-shrink-0"
-                      style={{ color: muted }}
-                    />
+                    <ChevronRight className="w-4 h-4 flex-shrink-0" style={{ color: muted }} />
                   </Link>
                 ))}
               </div>
             </div>
 
             {/* External job boards */}
-            <div
-              className="p-6 rounded-2xl"
-              style={{ background: surface, border: `1px solid ${border}` }}
-            >
-              <h3 className="font-display font-bold text-white mb-2">
-                More pilot job boards
-              </h3>
-              <p className="text-sm mb-4" style={{ color: muted }}>
-                For a wider range of vacancies, these specialist aviation job
-                boards are worth bookmarking.
-              </p>
+            <div className="p-6 rounded-2xl" style={{ background: surface, border: `1px solid ${border}` }}>
+              <h3 className="font-display font-bold text-white mb-2">More pilot job boards</h3>
+              <p className="text-sm mb-4" style={{ color: muted }}>For a wider range of vacancies, these specialist aviation job boards are worth bookmarking.</p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {[
-                  {
-                    name: "Aviation Job Search",
-                    url: "https://www.aviationjobsearch.com",
-                    desc: "UK's largest aviation job board",
-                  },
-                  {
-                    name: "BALPA Job Board",
-                    url: "https://www.balpa.org/jobs",
-                    desc: "British Airline Pilots' Association",
-                  },
-                  {
-                    name: "Pilot Career Centre",
-                    url: "https://www.pilotcareercentre.com",
-                    desc: "European pilot vacancies",
-                  },
+                  { name: "Aviation Job Search", url: "https://www.aviationjobsearch.com", desc: "UK's largest aviation job board" },
+                  { name: "BALPA Job Board", url: "https://www.balpa.org/jobs", desc: "British Airline Pilots' Association" },
+                  { name: "Pilot Career Centre", url: "https://www.pilotcareercentre.com", desc: "European pilot vacancies" },
                 ].map(board => (
-                  <a
-                    key={board.url}
-                    href={board.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <a key={board.url} href={board.url} target="_blank" rel="noopener noreferrer"
                     className="flex items-start gap-3 p-4 rounded-xl no-underline group transition-all"
-                    style={{
-                      background: "oklch(0.12 0.07 252)",
-                      border: "1px solid oklch(1 0 0 / 0.06)",
-                    }}
-                    onMouseEnter={e =>
-                      ((e.currentTarget as HTMLElement).style.border =
-                        "1px solid oklch(1 0 0 / 0.14)")
-                    }
-                    onMouseLeave={e =>
-                      ((e.currentTarget as HTMLElement).style.border =
-                        "1px solid oklch(1 0 0 / 0.06)")
-                    }
-                  >
-                    <ExternalLink
-                      className="w-4 h-4 flex-shrink-0 mt-0.5"
-                      style={{ color: "oklch(0.6 0.18 240)" }}
-                    />
+                    style={{ background: "oklch(0.12 0.07 252)", border: "1px solid oklch(1 0 0 / 0.06)" }}
+                    onMouseEnter={e => (e.currentTarget as HTMLElement).style.border = "1px solid oklch(1 0 0 / 0.14)"}
+                    onMouseLeave={e => (e.currentTarget as HTMLElement).style.border = "1px solid oklch(1 0 0 / 0.06)"}>
+                    <ExternalLink className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: "oklch(0.6 0.18 240)" }} />
                     <div>
-                      <div className="font-semibold text-white/80 group-hover:text-white transition-colors text-sm">
-                        {board.name}
-                      </div>
-                      <div className="text-xs mt-0.5" style={{ color: muted }}>
-                        {board.desc}
-                      </div>
+                      <div className="font-semibold text-white/80 group-hover:text-white transition-colors text-sm">{board.name}</div>
+                      <div className="text-xs mt-0.5" style={{ color: muted }}>{board.desc}</div>
                     </div>
                   </a>
                 ))}
               </div>
             </div>
+
           </div>
         </div>
       </main>
@@ -764,114 +495,60 @@ export default function Jobs() {
 function JobCard({ job }: { job: Job }) {
   const colors = typeColors[job.type] || typeColors["Other"];
   return (
-    <div
-      className="p-4 md:p-6 rounded-2xl transition-all duration-200"
-      style={{
-        background: "oklch(0.14 0.08 250)",
-        border: "1px solid oklch(1 0 0 / 0.08)",
-      }}
-      onMouseEnter={e => {
-        (e.currentTarget as HTMLElement).style.border =
-          "1px solid oklch(1 0 0 / 0.16)";
-        (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
-      }}
-      onMouseLeave={e => {
-        (e.currentTarget as HTMLElement).style.border =
-          "1px solid oklch(1 0 0 / 0.08)";
-        (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
-      }}
-    >
+    <div className="p-4 md:p-6 rounded-2xl transition-all duration-200"
+      style={{ background: "oklch(0.14 0.08 250)", border: "1px solid oklch(1 0 0 / 0.08)" }}
+      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = "1px solid oklch(1 0 0 / 0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
+      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = "1px solid oklch(1 0 0 / 0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}>
+
       <div className="flex items-start justify-between gap-3 mb-3">
         <div className="flex-1">
           <div className="flex flex-wrap items-center gap-2 mb-1">
             <h3 className="font-display font-bold text-white">{job.title}</h3>
             {job.badge && (
-              <span
-                className="text-xs px-2 py-0.5 rounded-full font-semibold"
-                style={{
-                  background: "oklch(0.72 0.18 65 / 0.15)",
-                  color: "oklch(0.85 0.15 65)",
-                  border: "1px solid oklch(0.72 0.18 65 / 0.3)",
-                }}
-              >
+              <span className="text-xs px-2 py-0.5 rounded-full font-semibold"
+                style={{ background: "oklch(0.72 0.18 65 / 0.15)", color: "oklch(0.85 0.15 65)", border: "1px solid oklch(0.72 0.18 65 / 0.3)" }}>
                 {job.badge}
               </span>
             )}
           </div>
-          <p
-            className="font-semibold text-sm"
-            style={{ color: "oklch(0.65 0.18 240)" }}
-          >
-            {job.airline}
-          </p>
+          <p className="font-semibold text-sm" style={{ color: "oklch(0.65 0.18 240)" }}>{job.airline}</p>
         </div>
-        <span
-          className="text-xs px-2.5 py-1 rounded-full font-medium flex-shrink-0"
-          style={{
-            background: colors.bg,
-            color: colors.text,
-            border: `1px solid ${colors.border}`,
-          }}
-        >
+        <span className="text-xs px-2.5 py-1 rounded-full font-medium flex-shrink-0"
+          style={{ background: colors.bg, color: colors.text, border: `1px solid ${colors.border}` }}>
           {job.type}
         </span>
       </div>
 
       <div className="flex flex-wrap gap-x-4 gap-y-1.5 mb-3">
-        <div
-          className="flex items-center gap-1.5 text-xs"
-          style={{ color: muted }}
-        >
+        <div className="flex items-center gap-1.5 text-xs" style={{ color: muted }}>
           <MapPin className="w-3.5 h-3.5" />
           {job.location}
         </div>
         {job.hours && (
-          <div
-            className="flex items-center gap-1.5 text-xs"
-            style={{ color: muted }}
-          >
+          <div className="flex items-center gap-1.5 text-xs" style={{ color: muted }}>
             <Clock className="w-3.5 h-3.5" />
             {job.hours}
           </div>
         )}
         {job.salary && (
-          <div
-            className="flex items-center gap-1.5 text-xs font-semibold"
-            style={{ color: "oklch(0.65 0.18 145)" }}
-          >
+          <div className="flex items-center gap-1.5 text-xs font-semibold" style={{ color: "oklch(0.65 0.18 145)" }}>
             {job.salary}
           </div>
         )}
       </div>
 
-      <p
-        className="text-sm leading-relaxed mb-4"
-        style={{ color: "oklch(0.65 0.04 240)" }}
-      >
-        {job.description}
-      </p>
+      <p className="text-sm leading-relaxed mb-4" style={{ color: "oklch(0.65 0.04 240)" }}>{job.description}</p>
 
-      <div
-        className="flex items-center justify-between pt-4"
-        style={{ borderTop: "1px solid oklch(1 0 0 / 0.07)" }}
-      >
-        <span className="text-xs" style={{ color: muted }}>
-          Last reviewed: {job.posted}
-        </span>
+      <div className="flex items-center justify-between pt-4" style={{ borderTop: "1px solid oklch(1 0 0 / 0.07)" }}>
+        <span className="text-xs" style={{ color: muted }}>Last reviewed: {job.posted}</span>
         <a
           href={job.link}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline transition-colors"
           style={{ color: "oklch(0.65 0.18 240)" }}
-          onMouseEnter={e =>
-            ((e.currentTarget as HTMLElement).style.color =
-              "oklch(0.8 0.18 240)")
-          }
-          onMouseLeave={e =>
-            ((e.currentTarget as HTMLElement).style.color =
-              "oklch(0.65 0.18 240)")
-          }
+          onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "oklch(0.8 0.18 240)"}
+          onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "oklch(0.65 0.18 240)"}
         >
           Apply on official site
           <ExternalLink className="w-3.5 h-3.5" />
