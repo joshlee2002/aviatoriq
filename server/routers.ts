@@ -654,9 +654,9 @@ Return a JSON object with EXACTLY these keys. Do not add or remove keys:
     { "month": "Month 19-24", "phase": "Phase name", "milestone": "Specific milestone", "detail": "2-3 sentences of specific guidance for this phase", "cost": null }
   ],
   "riskScenarios": [
-    { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate based on their profile" },
-    { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" },
-    { "risk": "Risk title", "likelihood": "High | Medium | Low", "impact": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" }
+    { "scenario": "Risk title", "probability": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate based on their profile" },
+    { "scenario": "Risk title", "probability": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" },
+    { "scenario": "Risk title", "probability": "High | Medium | Low", "mitigation": "2-3 sentences of specific mitigation advice for THIS candidate" }
   ],
   "careerRealityCheck": "3-4 sentences giving an honest picture of the full career journey AFTER training. Include: typical time from licence to first airline job (6-18 months), regional FO starting salary, time to captain upgrade (2-7 years at regional, 5-15 years at major), and the seniority system reality. Be honest — most candidates only think about training, not the 10-15 years after it.",
   "matchedSchoolRationale": "2-3 sentences explaining what type of school suits this candidate and why, based on their profile and the matched schools above. Reference specific school names if relevant.",
@@ -756,6 +756,39 @@ IMPORTANT RULES:
               { criterion: "Aircraft availability", whyItMatters: "Training delays due to aircraft maintenance are the most common cause of cost overruns.", questionToAsk: "What is your aircraft-to-student ratio and what is your average weather/maintenance cancellation rate?" },
               { criterion: "Airline partnerships", whyItMatters: "Formal airline partnerships can mean guaranteed interviews or priority hiring after graduation.", questionToAsk: "Do you have formal airline partnership agreements, and what does that mean for graduates in practice?" },
               { criterion: "Finance and refund policy", whyItMatters: "Schools that require full upfront payment put you at risk if the school closes or you need to leave.", questionToAsk: "What is your refund policy if I need to leave training, and do you offer stage-by-stage payment?" },
+            ],
+            riskScenarios: [
+              {
+                scenario: lead.class1Medical === "No — I haven't had one and I'm worried about it"
+                  ? "Class 1 Medical failure or restriction"
+                  : lead.fundingMethod === "Bank loan" || lead.fundingMethod === "Finance / loan"
+                    ? "Training loan debt burden"
+                    : "Training cost overrun",
+                probability: lead.class1Medical === "No — I haven't had one and I'm worried about it"
+                  ? "High"
+                  : lead.fundingMethod === "Bank loan" || lead.fundingMethod === "Finance / loan"
+                    ? "Medium"
+                    : "Medium",
+                mitigation: lead.class1Medical === "No — I haven't had one and I'm worried about it"
+                  ? "Book a Class 1 Medical with a CAA-approved AME before committing to any training programme or spending money on applications. A medical assessment costs £300–£600 and takes a few hours — it is the single most important step you can take right now. Many conditions that seem disqualifying have waivers or workarounds."
+                  : lead.fundingMethod === "Bank loan" || lead.fundingMethod === "Finance / loan"
+                    ? "Compare at least two aviation finance providers before signing anything. Understand the total repayment amount, not just the monthly figure. Ensure you have a 15–20% contingency buffer above the headline training cost to cover hidden costs and potential delays."
+                    : "Budget 15–20% above the headline training cost to cover hidden costs: ATPL exam fees (£150–£200 each), headset (£300–£1,000), MCC/JOC course (£3,000–£5,000), and type rating (£15,000–£25,000). Request a full written cost breakdown from every school before committing.",
+              },
+              {
+                scenario: (lead.age ?? 0) >= 40
+                  ? "Age and airline hiring windows"
+                  : "Training delays extending timeline and costs",
+                probability: (lead.age ?? 0) >= 40 ? "High" : "Medium",
+                mitigation: (lead.age ?? 0) >= 40
+                  ? "Most airlines have no formal upper age limit for First Officers, but seniority-based progression means starting later limits your captain upgrade window. Target airlines with faster fleet growth and shorter upgrade times. Regional carriers and cargo operators often have more flexible hiring profiles than major flag carriers."
+                  : "Training delays due to aircraft availability, weather, and exam resits are the most common cause of cost overruns. Ask every school for their average student completion time versus their advertised timeline, and their aircraft-to-student ratio. Choose a school with a strong maintenance record and multiple aircraft of the same type.",
+              },
+              {
+                scenario: "School closure or financial instability",
+                probability: "Low",
+                mitigation: "Flight school closures do happen — Flybe's training arm and several smaller UK schools have closed in recent years. Protect yourself by choosing a school with a long operating history, checking their CAA approval status, and avoiding schools that require full upfront payment. Ask specifically about their refund policy and whether they hold student funds in a protected account.",
+              },
             ],
             nextSteps: [
               "Book a Class 1 Medical assessment with a CAA-approved AME",
