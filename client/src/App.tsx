@@ -147,10 +147,8 @@ import AdhdFaaMedical from "./pages/guides/AdhdFaaMedical";
 import AtpCertificateUSA from "./pages/guides/AtpCertificateUSA";
 import CfiCareerUSA from "./pages/guides/CfiCareerUSA";
 
-// Regional hub pages
-import HomeAustralia from "./pages/HomeAustralia";
-import HomeCanada from "./pages/HomeCanada";
-import HomeEurope from "./pages/HomeEurope";
+// Regional hub pages — consolidated into CountryHub
+import CountryHub from "./pages/CountryHub";
 
 // New regional guides (Australia, Canada, Europe)
 import HowToBecomePilotAustralia from "./pages/guides/HowToBecomePilotAustralia";
@@ -271,10 +269,7 @@ import NewZealandPilotSalary2026 from "@/pages/guides/NewZealandPilotSalary2026"
 import NewZealandPilotShortage from "@/pages/guides/NewZealandPilotShortage";
 import BestFlightSchoolsNewZealand from "@/pages/guides/BestFlightSchoolsNewZealand";
 import NewZealandRegionalAirlines from "@/pages/guides/NewZealandRegionalAirlines";
-// New hub pages
-import HomeUAE from "./pages/HomeUAE";
-import HomeSouthAfrica from "./pages/HomeSouthAfrica";
-import HomeNewZealand from "./pages/HomeNewZealand";
+// HomeUAE, HomeSouthAfrica, HomeNewZealand — replaced by CountryHub
 
 // New section pages
 import Stories from "./pages/Stories";
@@ -529,10 +524,10 @@ function Router() {
         {/* Country selector */}
         <Route path="/select" component={CountrySelect} />
 
-        {/* Regional hub routes */}
-        <Route path="/australia" component={HomeAustralia} />
-        <Route path="/canada" component={HomeCanada} />
-        <Route path="/europe" component={HomeEurope} />
+        {/* Regional hub routes — all served by CountryHub */}
+        <Route path="/australia" component={() => <CountryHub />} />
+        <Route path="/canada" component={() => <CountryHub />} />
+        <Route path="/europe" component={() => <CountryHub />} />
 
         {/* US routes */}
         <Route path="/us" component={HomeUS} />
@@ -938,7 +933,7 @@ function Router() {
           component={EuropePilotSeniority}
         />
         {/* UAE hub and guides */}
-        <Route path="/uae" component={HomeUAE} />
+        <Route path="/uae" component={() => <CountryHub />} />
         <Route
           path="/uae/guides/uae-pilot-training-costs"
           component={UaePilotTrainingCosts}
@@ -972,7 +967,7 @@ function Router() {
           component={UaePilotShortage}
         />
         {/* South Africa hub and guides */}
-        <Route path="/south-africa" component={HomeSouthAfrica} />
+        <Route path="/south-africa" component={() => <CountryHub />} />
         <Route
           path="/south-africa/guides/sacpl-requirements"
           component={SaCplRequirements}
@@ -1014,7 +1009,7 @@ function Router() {
           component={SouthAfricaMilitaryToAirlines}
         />
         {/* New Zealand hub and guides */}
-        <Route path="/new-zealand" component={HomeNewZealand} />
+        <Route path="/new-zealand" component={() => <CountryHub />} />
         <Route
           path="/new-zealand/guides/nz-cpl-requirements"
           component={NzCplRequirements}
