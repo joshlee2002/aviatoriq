@@ -383,18 +383,17 @@ export default function Results() {
   // Check if already purchased (on page load)
   const purchaseQuery = trpc.payments.checkPurchase.useQuery(
     { leadId },
-    {
-      enabled: !!leadId && !premiumUnlocked,
-      onSuccess: (data: { purchased: boolean }) => {
-        if (data.purchased) {
-          setPremiumUnlocked(true);
-          try {
-            sessionStorage.setItem(`premium_unlocked_${leadId}`, "true");
-          } catch {}
-        }
-      },
-    }
+    { enabled: !!leadId && !premiumUnlocked }
   );
+  // React to purchase check result
+  useEffect(() => {
+    if (purchaseQuery.data?.purchased && !premiumUnlocked) {
+      setPremiumUnlocked(true);
+      try {
+        sessionStorage.setItem(`premium_unlocked_${leadId}`, "true");
+      } catch {}
+    }
+  }, [purchaseQuery.data?.purchased]);
 
   // Verify payment after Stripe redirect
   const verifyPayment = trpc.payments.verifyPayment.useMutation({

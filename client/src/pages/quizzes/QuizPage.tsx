@@ -190,7 +190,7 @@ function ShareableCard({
   result: QuizResult;
   score: number;
   total: number;
-  cardRef: React.RefObject<HTMLDivElement>;
+  cardRef: React.RefObject<HTMLDivElement | null>;
 }) {
   const isScored = ["scored", "trivia", "visual", "cognitive"].includes(quiz.type);
   const pct = isScored ? Math.round((score / total) * 100) : null;

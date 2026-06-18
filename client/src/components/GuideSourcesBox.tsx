@@ -1,15 +1,18 @@
 import { ExternalLink, BookOpen } from "lucide-react";
 
-export interface GuideSource {
-  /** Display name, e.g. "UK Civil Aviation Authority (CAA)" */
-  name: string;
-  /** Optional direct URL to the source document */
-  url?: string;
-}
+export type GuideSource =
+  | string
+  | { name: string; url?: string };
 
 interface GuideSourcesBoxProps {
   sources: GuideSource[];
   lastReviewed?: string;
+}
+
+/** Normalise a GuideSource to an object shape */
+function normaliseSource(source: GuideSource): { name: string; url?: string } {
+  if (typeof source === "string") return { name: source };
+  return source;
 }
 
 const REGULATOR_URLS: Record<string, string> = {
@@ -68,8 +71,9 @@ const REGULATOR_URLS: Record<string, string> = {
 };
 
 function resolveUrl(source: GuideSource): string | undefined {
-  if (source.url) return source.url;
-  return REGULATOR_URLS[source.name];
+  const s = normaliseSource(source);
+  if (s.url) return s.url;
+  return REGULATOR_URLS[s.name];
 }
 
 /**
@@ -114,11 +118,12 @@ export default function GuideSourcesBox({
         )}
       </div>
       <div className="flex flex-wrap gap-2">
-        {sources.map(s => {
-          const url = resolveUrl(s);
+        {sources.map((raw, idx) => {
+          const s = normaliseSource(raw);
+          const url = resolveUrl(raw);
           return url ? (
             <a
-              key={s.name}
+              key={s.name + idx}
               href={url}
               target="_blank"
               rel="noopener noreferrer"
@@ -142,7 +147,7 @@ export default function GuideSourcesBox({
             </a>
           ) : (
             <span
-              key={s.name}
+              key={s.name + idx}
               className="inline-flex items-center text-xs px-3 py-1.5 rounded-full"
               style={{
                 background: "oklch(0.45 0.18 240 / 0.08)",

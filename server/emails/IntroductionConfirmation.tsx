@@ -47,7 +47,7 @@ export default function IntroductionConfirmation({
     <Html lang="en">
       <Head />
       <Preview>
-        Your introduction request has been sent to {schools.length} flight school{schools.length !== 1 ? "s" : ""} — what to expect next.
+        Your introduction request has been sent to {String(schools.length)} flight school{schools.length !== 1 ? "s" : ""} — what to expect next.
       </Preview>
       <Body style={{ backgroundColor: NAVY, margin: 0, padding: 0, fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
         <Container style={{ maxWidth: "600px", margin: "0 auto", padding: "0" }}>

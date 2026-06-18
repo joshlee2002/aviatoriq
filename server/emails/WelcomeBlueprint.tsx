@@ -69,7 +69,7 @@ export default function WelcomeBlueprint({
     <Html lang="en">
       <Head />
       <Preview>
-        Your AviatorIQ Score is {score}/100 — your personalised pilot training blueprint is ready.
+        Your AviatorIQ Score is {String(score)}/100 — your personalised pilot training blueprint is ready.
       </Preview>
       <Body style={{ backgroundColor: NAVY, margin: 0, padding: 0, fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
         <Container style={{ maxWidth: "600px", margin: "0 auto", padding: "0" }}>

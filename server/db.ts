@@ -924,6 +924,7 @@ export async function createRoadmapPurchase(data: {
   currency?: string;
 }): Promise<void> {
   const db = await getDb();
+  if (!db) return;
   await db.insert(roadmapPurchases).values({
     leadId: data.leadId,
     stripeSessionId: data.stripeSessionId,
@@ -938,6 +939,7 @@ export async function completeRoadmapPurchase(
   paymentIntentId?: string
 ): Promise<void> {
   const db = await getDb();
+  if (!db) return;
   await db
     .update(roadmapPurchases)
     .set({
@@ -952,6 +954,7 @@ export async function getRoadmapPurchaseByLead(
   leadId: number
 ): Promise<{ status: string } | undefined> {
   const db = await getDb();
+  if (!db) return undefined;
   const rows = await db
     .select({ status: roadmapPurchases.status })
     .from(roadmapPurchases)
@@ -965,6 +968,7 @@ export async function getRoadmapPurchaseBySession(
   stripeSessionId: string
 ): Promise<RoadmapPurchase | undefined> {
   const db = await getDb();
+  if (!db) return undefined;
   const rows = await db
     .select()
     .from(roadmapPurchases)
@@ -983,6 +987,8 @@ export async function createQuizEmailCapture(data: {
   resultTitle?: string;
   consentToContact: boolean;
 }): Promise<number> {
+  const db = await getDb();
+  if (!db) throw new Error("Database unavailable");
   const result = await db
     .insert(quizEmailCaptures)
     .values({

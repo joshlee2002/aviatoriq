@@ -2945,7 +2945,6 @@ export const ALL_QUIZZES: Quiz[] = [
 ];
 
 // ─── Helper Types & Functions ─────────────────────────────────────────────
-export type QuizOption = QuizQuestion['options'][number];
 
 export function getQuizBySlug(slug: string): Quiz | undefined {
   return ALL_QUIZZES.find((q) => q.slug === slug);

@@ -59,7 +59,7 @@ async function startServer() {
         res.status(400).send("Stripe not configured");
         return;
       }
-      const stripe = new Stripe(stripeKey, { apiVersion: "2025-05-28.basil" });
+      const stripe = new Stripe(stripeKey, { apiVersion: "2026-05-27.dahlia" });
       const sig = req.headers["stripe-signature"] as string;
       let event: Stripe.Event;
       try {

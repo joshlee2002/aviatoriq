@@ -1511,7 +1511,7 @@ GUIDELINES:
           });
         }
 
-        const stripe = new Stripe(stripeKey, { apiVersion: "2025-05-28.basil" });
+        const stripe = new Stripe(stripeKey, { apiVersion: "2026-05-27.dahlia" });
 
         const lead = await getLeadById(input.leadId);
         if (!lead) {
@@ -1582,7 +1582,7 @@ GUIDELINES:
           });
         }
 
-        const stripe = new Stripe(stripeKey, { apiVersion: "2025-05-28.basil" });
+        const stripe = new Stripe(stripeKey, { apiVersion: "2026-05-27.dahlia" });
 
         try {
           const session = await stripe.checkout.sessions.retrieve(input.sessionId);
