@@ -98,9 +98,9 @@ export default function PilotSalaryHub() {
   return (
     <>
       <SEO
-        title="Pilot Salary Guide 2026 | UK, USA, Europe, Canada, Australia | AviatorIQ"
+        title="Pilot Salary Guide 2026 | UK, USA, Europe, Canada, Australia | AviatorPath"
         description="Verified pilot salary guides for every major market. UK CAA, FAA, EASA, Transport Canada, CASA. From First Officer to Senior Captain. Use our free salary estimator."
-        canonical="https://aviatoriq.com/hubs/pilot-salary"
+        canonical="https://aviatorpath.com/hubs/pilot-salary"
       />
       <PublicNav />
       <main className="min-h-screen bg-[var(--color-navy)] text-white pt-20 pb-16">

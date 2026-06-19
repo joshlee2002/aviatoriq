@@ -117,14 +117,14 @@ export function validateEnv(): void {
 
   // Print warnings
   if (warnings.length > 0) {
-    console.warn("\n⚠️  AviatorIQ ENV Warnings:");
+    console.warn("\n⚠️  AviatorPath ENV Warnings:");
     warnings.forEach(w => console.warn(w));
     console.warn("");
   }
 
   // Throw on errors
   if (errors.length > 0) {
-    console.error("\n❌ AviatorIQ ENV Errors — server cannot start:");
+    console.error("\n❌ AviatorPath ENV Errors — server cannot start:");
     errors.forEach(e => console.error(e));
     console.error(
       "\nFix the above environment variables in your .env file and restart.\n"

@@ -342,7 +342,7 @@ export default function GuideLayout({
   metaDescription,
   faqSchema,
   author = "Joshua Fagan",
-  authorRole = "Founder, AviatorIQ — researched from CAA, EASA & official school prospectuses",
+  authorRole = "Founder, AviatorPath — researched from CAA, EASA & official school prospectuses",
   lastUpdated = "June 2026",
   category,
   heroImage,
@@ -382,10 +382,10 @@ export default function GuideLayout({
     "@type": "Article",
     headline: title,
     description: metaDescription || subtitle,
-    publisher: { "@type": "Organization", name: "AviatorIQ", url: "https://aviatoriq.com", logo: { "@type": "ImageObject", url: "https://aviatoriq.com/logo.png" } },
-    author: { "@type": "Person", name: author, url: "https://aviatoriq.com/about-our-authors" },
+    publisher: { "@type": "Organization", name: "AviatorPath", url: "https://aviatorpath.com", logo: { "@type": "ImageObject", url: "https://aviatorpath.com/logo.png" } },
+    author: { "@type": "Person", name: author, url: "https://aviatorpath.com/about-our-authors" },
     dateModified: lastUpdated,
-    mainEntityOfPage: { "@type": "WebPage", "@id": canonical ? (canonical.startsWith("http") ? canonical : `https://aviatoriq.com${canonical}`) : "https://aviatoriq.com" },
+    mainEntityOfPage: { "@type": "WebPage", "@id": canonical ? (canonical.startsWith("http") ? canonical : `https://aviatorpath.com${canonical}`) : "https://aviatorpath.com" },
   });
 
   // Breadcrumb schema
@@ -393,9 +393,9 @@ export default function GuideLayout({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://aviatoriq.com" },
-      { "@type": "ListItem", position: 2, name: "Guides", item: "https://aviatoriq.com/guides" },
-      { "@type": "ListItem", position: 3, name: title, item: canonical ? (canonical.startsWith("http") ? canonical : `https://aviatoriq.com${canonical}`) : "https://aviatoriq.com" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://aviatorpath.com" },
+      { "@type": "ListItem", position: 2, name: "Guides", item: "https://aviatorpath.com/guides" },
+      { "@type": "ListItem", position: 3, name: title, item: canonical ? (canonical.startsWith("http") ? canonical : `https://aviatorpath.com${canonical}`) : "https://aviatorpath.com" },
     ],
   });
 
@@ -403,11 +403,11 @@ export default function GuideLayout({
   schemas.push({
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "AviatorIQ",
-    url: "https://aviatoriq.com",
-    logo: "https://aviatoriq.com/logo.png",
+    name: "AviatorPath",
+    url: "https://aviatorpath.com",
+    logo: "https://aviatorpath.com/logo.png",
     sameAs: [],
-    contactPoint: { "@type": "ContactPoint", email: "hello@aviatoriq.com", contactType: "customer support" },
+    contactPoint: { "@type": "ContactPoint", email: "hello@aviatorpath.com", contactType: "customer support" },
   });
 
   // Build ToC items from section headings
@@ -419,7 +419,7 @@ export default function GuideLayout({
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.10 0.08 252)" }}>
       <SEO
-        title={`${title} | AviatorIQ`}
+        title={`${title} | AviatorPath`}
         description={metaDescription || subtitle}
         canonical={canonical}
         schema={schemas}

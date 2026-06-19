@@ -434,9 +434,9 @@ export default function MedicalConditionLookupUS() {
       }}
     >
       <SEO
-        title="FAA Medical Condition Lookup | AviatorIQ US"
+        title="FAA Medical Condition Lookup | AviatorPath US"
         description="Check if your medical condition (ADHD, asthma, vision, etc.) meets FAA First Class medical standards for airline pilots."
-        canonical="https://aviatoriq.com/us/medical-lookup"
+        canonical="https://aviatorpath.com/us/medical-lookup"
       />
       <PublicNav />
 

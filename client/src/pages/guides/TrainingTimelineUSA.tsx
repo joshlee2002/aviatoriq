@@ -7,7 +7,7 @@ export default function TrainingTimelineUSA() {
     <GuideLayout
       title="How Long Does It Take to Become a Pilot in the USA? (2026 Timeline)"
       subtitle="The honest timeline from zero experience to a regional airline right seat — breaking down Part 141, Part 61, and the 1,500-hour rule."
-      canonical="https://aviatoriq.com/us/guides/pilot-training-timeline-usa"
+      canonical="https://aviatorpath.com/us/guides/pilot-training-timeline-usa"
       metaDescription="How long does it take to become a pilot in the USA? 2026 timeline breakdown: 7-12 months for flight school, 1.5-2 years instructing to reach 1,500 hours."
       readTime="10 min read"
       lastUpdated="June 2026"

@@ -116,9 +116,9 @@ export default function PilotTrainingCostsHub() {
   return (
     <>
       <SEO
-        title="Pilot Training Costs 2026 | UK, USA, Canada, Australia, Europe | AviatorIQ"
+        title="Pilot Training Costs 2026 | UK, USA, Canada, Australia, Europe | AviatorPath"
         description="Verified pilot training cost guides for every major market. UK integrated and modular costs, US FAA pathway costs, Canada, Australia, and Europe. Use our free cost calculator to estimate your total training budget."
-        canonical="https://aviatoriq.com/hubs/pilot-training-costs"
+        canonical="https://aviatorpath.com/hubs/pilot-training-costs"
       />
       <PublicNav />
       <main className="min-h-screen bg-[var(--color-navy)] text-white pt-20 pb-16">

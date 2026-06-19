@@ -285,7 +285,7 @@ function QuizEmailCapture({ quizSlug }: { quizSlug: string }) {
             className="mt-0.5"
           />
           <span className="text-xs leading-relaxed" style={{ color: "oklch(0.5 0.03 240)" }}>
-            I'm happy to hear from AviatorIQ about pilot training options and matched flight schools.
+            I'm happy to hear from AviatorPath about pilot training options and matched flight schools.
           </span>
         </label>
         <button
@@ -385,7 +385,7 @@ function ResultCard({
   const pct = isScored ? Math.round((score / total) * 100) : null;
 
   const handleShare = () => {
-    const text = `I just took the "${quiz.title}" quiz on AviatorIQ and got: ${result.title}! ${result.subtitle}. Try it yourself 👉`;
+    const text = `I just took the "${quiz.title}" quiz on AviatorPath and got: ${result.title}! ${result.subtitle}. Try it yourself 👉`;
     if (navigator.share) {
       navigator.share({ title: result.title, text, url: window.location.href }).catch(() => {});
     } else {
@@ -632,7 +632,7 @@ export default function QuizPage() {
       style={{ background: quiz.gradient }}
     >
       <SEO
-        title={`${quiz.title} | AviatorIQ Quizzes`}
+        title={`${quiz.title} | AviatorPath Quizzes`}
         description={quiz.description}
         canonical={`/quizzes/${quiz.slug}`}
       />
@@ -641,7 +641,7 @@ export default function QuizPage() {
       <header className="flex items-center justify-between px-6 py-4 border-b border-white/10">
         <Link href="/quizzes" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors no-underline">
           <Plane className="w-4 h-4" style={{ color: quiz.accentColor }} />
-          <span className="font-display font-bold text-sm text-white/80">AviatorIQ</span>
+          <span className="font-display font-bold text-sm text-white/80">AviatorPath</span>
         </Link>
         {!done && (
           <div className="flex items-center gap-3">

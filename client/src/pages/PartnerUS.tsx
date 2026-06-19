@@ -57,7 +57,7 @@ const tiers = [
       "Standard listing in the US flight school directory",
       "School profile: name, location, courses, FAA part, website",
       "Matched to relevant candidates by route & state",
-      "AviatorIQ badge for your website",
+      "AviatorPath badge for your website",
       "Monthly performance report (impressions, clicks)",
     ],
     notIncluded: [
@@ -100,7 +100,7 @@ const tiers = [
       "Priority placement above all other schools",
       "Dedicated account review call (quarterly)",
       "Co-branded content opportunity (guide feature, case study)",
-      "Early access to new AviatorIQ tools and data",
+      "Early access to new AviatorPath tools and data",
     ],
     notIncluded: [],
     cta: "Apply for Premium",
@@ -125,7 +125,7 @@ function ExampleLeadCard() {
       <div className="space-y-2 text-sm">
         <div className="flex justify-between">
           <span className="text-[var(--color-muted-foreground)]">
-            AviatorIQ Score
+            AviatorPath Score
           </span>
           <span className="font-bold text-white">87 / 100</span>
         </div>
@@ -219,7 +219,7 @@ const dataPoints = [
   "US citizenship / right to train",
   "Preferred contact method (Email / Phone / Text)",
   "Consent to be contacted by schools and finance providers",
-  "AviatorIQ Score across 5 dimensions",
+  "AviatorPath Score across 5 dimensions",
   "AI-generated readiness summary",
 ];
 
@@ -233,7 +233,7 @@ const benefits = [
   {
     icon: <BarChart3 className="w-5 h-5 text-[var(--color-primary)]" />,
     title: "Scored and classified",
-    body: "Each lead carries an AviatorIQ Score (0–100) and a classification: Flight Ready, Development Phase, or Exploration Phase. Filter by what matters to you.",
+    body: "Each lead carries an AviatorPath Score (0–100) and a classification: Flight Ready, Development Phase, or Exploration Phase. Filter by what matters to you.",
   },
   {
     icon: <Shield className="w-5 h-5 text-[var(--color-primary)]" />,
@@ -253,14 +253,14 @@ const benefits = [
   {
     icon: <Building2 className="w-5 h-5 text-[var(--color-primary)]" />,
     title: "US directory listing",
-    body: "Your school appears in the AviatorIQ US flight school directory, matched to candidates based on state, FAA part (141/61), training type, and finance availability.",
+    body: "Your school appears in the AviatorPath US flight school directory, matched to candidates based on state, FAA part (141/61), training type, and finance availability.",
   },
 ];
 
 // ─── Main component ───────────────────────────────────────────────────────────
 export default function PartnerUS() {
   useEffect(() => {
-    document.title = "Partner With AviatorIQ – US Flight School Directory";
+    document.title = "Partner With AviatorPath – US Flight School Directory";
   }, []);
   const [submitted, setSubmitted] = useState(false);
   const [selectedTier, setSelectedTier] = useState<string | null>(null);
@@ -302,9 +302,9 @@ export default function PartnerUS() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="Partner With AviatorIQ | US Flight School Lead Generation"
-        description="Join the AviatorIQ US partner programme. Receive pre-qualified, scored aspiring pilots who have actively requested an introduction to your FAA-approved flight school. Three tiers from $179/month."
-        canonical="https://aviatoriq.com/us/partner"
+        title="Partner With AviatorPath | US Flight School Lead Generation"
+        description="Join the AviatorPath US partner programme. Receive pre-qualified, scored aspiring pilots who have actively requested an introduction to your FAA-approved flight school. Three tiers from $179/month."
+        canonical="https://aviatorpath.com/us/partner"
       />
       <PublicNav />
 
@@ -325,7 +325,7 @@ export default function PartnerUS() {
             🇺🇸 For US Flight Schools &amp; Training Providers
           </span>
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Partner With AviatorIQ — US Programme
+            Partner With AviatorPath — US Programme
           </h1>
           <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-8">
             Receive pre-qualified, scored aspiring US pilots who have actively
@@ -349,17 +349,17 @@ export default function PartnerUS() {
         </div>
       </section>
 
-      {/* ── What is AviatorIQ ── */}
+      {/* ── What is AviatorPath ── */}
       <section
         className="py-16 px-4"
         style={{ background: "oklch(0.12 0.09 252)" }}
       >
         <div className="max-w-4xl mx-auto">
           <h2 className="font-display text-3xl font-bold text-white mb-4 text-center">
-            What is AviatorIQ?
+            What is AviatorPath?
           </h2>
           <p className="text-white/60 text-center max-w-2xl mx-auto mb-10">
-            AviatorIQ is a pilot career assessment platform built for the US
+            AviatorPath is a pilot career assessment platform built for the US
             market. Aspiring pilots complete a 15-question assessment covering
             their goal, budget, timeline, FAA medical status, and funding
             method. The platform scores them across five dimensions, generates a
@@ -414,7 +414,7 @@ export default function PartnerUS() {
             How leads are classified
           </h2>
           <p className="text-white/60 text-center mb-10 max-w-xl mx-auto">
-            Every candidate receives an AviatorIQ Score and a classification
+            Every candidate receives an AviatorPath Score and a classification
             based on their readiness to start training.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
@@ -486,7 +486,7 @@ export default function PartnerUS() {
       >
         <div className="max-w-4xl mx-auto">
           <h2 className="font-display text-3xl font-bold text-white mb-3 text-center">
-            Why partner with AviatorIQ?
+            Why partner with AviatorPath?
           </h2>
           <p className="text-white/60 text-center mb-10 max-w-xl mx-auto">
             We are not a directory. We are a qualification engine that sits
@@ -605,7 +605,7 @@ export default function PartnerUS() {
           <p className="text-center text-xs text-white/40 mt-6">
             Not sure which tier is right for you?{" "}
             <a
-              href="mailto:hello@aviatoriq.co.uk"
+              href="mailto:hello@aviatorpath.co.uk"
               className="text-[var(--color-primary)] hover:underline"
             >
               Email us
@@ -650,7 +650,7 @@ export default function PartnerUS() {
                 Application received
               </h3>
               <p className="text-[var(--color-muted-foreground)] mb-6">
-                Thank you for your interest in partnering with AviatorIQ. We
+                Thank you for your interest in partnering with AviatorPath. We
                 will review your application and be in touch within 2 business
                 days.
               </p>
@@ -659,13 +659,13 @@ export default function PartnerUS() {
                   href="/us"
                   className="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold hover:underline"
                 >
-                  Back to AviatorIQ US <ArrowRight className="w-4 h-4" />
+                  Back to AviatorPath US <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
-                  href="mailto:hello@aviatoriq.co.uk"
+                  href="mailto:hello@aviatorpath.co.uk"
                   className="inline-flex items-center gap-2 text-[var(--color-muted-foreground)] font-semibold hover:underline text-sm"
                 >
-                  <Mail className="w-4 h-4" /> hello@aviatoriq.co.uk
+                  <Mail className="w-4 h-4" /> hello@aviatorpath.co.uk
                 </a>
               </div>
             </div>
@@ -841,7 +841,7 @@ export default function PartnerUS() {
 
               <p className="text-xs text-white/40 text-center">
                 By submitting this form you agree to be contacted by the
-                AviatorIQ team regarding partnership opportunities. We do not
+                AviatorPath team regarding partnership opportunities. We do not
                 share your details with third parties.
               </p>
             </form>

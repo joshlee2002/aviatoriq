@@ -10,7 +10,7 @@ export default function AirlineInterviewUSA() {
       lastUpdated="June 2026"
       heroImage="/manus-storage/airline-interview-usa_2b9e4f7a.jpg"
       category="US Pilot Training"
-      canonical="https://aviatoriq.com/us/guides/airline-interview-usa"
+      canonical="https://aviatorpath.com/us/guides/airline-interview-usa"
       metaDescription="Prepare for your 2026 US airline pilot interview. Master the TMAAT behavioral questions, STAR method, technical assessments, and simulator evaluations."
       scopeBanner={
         <GuideScopeBanner scope="This guide covers civilian airline interview processes in the United States." />

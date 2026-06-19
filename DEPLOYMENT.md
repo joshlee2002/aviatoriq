@@ -1,10 +1,10 @@
-# AviatorIQ Deployment Guide
+# AviatorPath Deployment Guide
 
-This guide covers deploying AviatorIQ to Railway and configuring optional services like OpenAI and Cloudflare R2 for persistent storage.
+This guide covers deploying AviatorPath to Railway and configuring optional services like OpenAI and Cloudflare R2 for persistent storage.
 
 ## 1. Deploying to Railway
 
-AviatorIQ is designed to be deployed easily on [Railway](https://railway.app/).
+AviatorPath is designed to be deployed easily on [Railway](https://railway.app/).
 
 1. Connect your GitHub repository to Railway.
 2. Add a **MySQL** database plugin to your Railway project.
@@ -30,7 +30,7 @@ By default, uploaded files (like school images added via the admin dashboard) ar
 To ensure images persist across deploys, you should configure Cloudflare R2 (or any S3-compatible storage). The 109 default seeded images will continue to be served locally even when R2 is configured.
 
 - `STORAGE_BUCKET_URL` — e.g. `https://<account-id>.r2.cloudflarestorage.com`
-- `STORAGE_BUCKET_NAME` — e.g. `aviatoriq`
+- `STORAGE_BUCKET_NAME` — e.g. `aviatorpath`
 - `STORAGE_ACCESS_KEY_ID` — Your R2/S3 access key
 - `STORAGE_SECRET_ACCESS_KEY` — Your R2/S3 secret key
 - `STORAGE_PUBLIC_CDN_URL` — (Optional) A public bucket URL for direct reads, e.g. `https://pub-<hash>.r2.dev`
@@ -39,7 +39,7 @@ To ensure images persist across deploys, you should configure Cloudflare R2 (or 
 ## 3. Configuring Cloudflare R2 for Storage
 
 1. Create a Cloudflare account and navigate to **R2**.
-2. Create a new bucket named `aviatoriq`.
+2. Create a new bucket named `aviatorpath`.
 3. In the bucket settings, under **Public Access**, enable "Public URL" or "Custom Domain" so images can be served directly to users.
 4. Go back to the main R2 page and click **Manage R2 API Tokens**.
 5. Create a new token with **Object Read & Write** permissions.

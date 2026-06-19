@@ -57,7 +57,7 @@ export default function GuidesIndex() {
   return (
     <div style={{ background: "oklch(0.10 0.08 252)", minHeight: "100vh" }}>
       <SEO
-        title={`${config.label} Pilot Training Guides 2026 | AviatorIQ`}
+        title={`${config.label} Pilot Training Guides 2026 | AviatorPath`}
         description={`Free ${config.label} pilot training guides — ${config.regulator} licences, costs, medical requirements, cadet programmes, and career advice. Updated 2026.`}
       />
       <PublicNav />

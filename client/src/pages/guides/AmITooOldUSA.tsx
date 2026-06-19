@@ -9,7 +9,7 @@ export default function AmITooOldUSA() {
       lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-over-40-usa_35140e0e.jpg"
       category="US Pilot Training"
-      canonical="https://aviatoriq.com/us/guides/am-i-too-old-to-become-a-pilot-usa"
+      canonical="https://aviatorpath.com/us/guides/am-i-too-old-to-become-a-pilot-usa"
       metaDescription="Wondering 'am I too old to become a pilot USA'? Explore our 2026 guide covering FAA age limits, medical requirements, financing, and career paths for older pilots."
       sections={[
         {

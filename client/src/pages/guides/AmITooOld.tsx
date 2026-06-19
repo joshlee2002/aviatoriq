@@ -7,7 +7,7 @@ export default function AmITooOld() {
     <GuideLayout
       title="Am I Too Old to Become a Pilot? The Honest Answer (2026)"
       subtitle="No upper age limit exists for pilot training — but there are real considerations around career length, medical requirements, and return on investment."
-      canonical="https://aviatoriq.com/guides/am-i-too-old-to-become-a-pilot"
+      canonical="https://aviatorpath.com/guides/am-i-too-old-to-become-a-pilot"
       metaDescription="Am I too old to become a pilot? No upper age limit in the UK. Mandatory retirement at 65. Real analysis of career length, medical requirements, and ROI by st..."
       readTime="10 min read"
       lastUpdated="June 2026"
@@ -227,7 +227,7 @@ export default function AmITooOld() {
               <p>
                 If you can answer all four of these questions positively, age is
                 not the barrier. Use the{" "}
-                <Link href="/quiz">AviatorIQ Career Readiness Assessment</Link>{" "}
+                <Link href="/quiz">AviatorPath Career Readiness Assessment</Link>{" "}
                 to get a personalised evaluation of your readiness.
               </p>
             </>

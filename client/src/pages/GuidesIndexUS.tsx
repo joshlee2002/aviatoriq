@@ -570,7 +570,7 @@ const usTools = [
 
 export default function GuidesIndexUS() {
   useEffect(() => {
-    document.title = "US Pilot Training Guides (2026) – AviatorIQ";
+    document.title = "US Pilot Training Guides (2026) – AviatorPath";
   }, []);
 
   const categoryOrder = [
@@ -593,9 +593,9 @@ export default function GuidesIndexUS() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="US Pilot Training Guides (2026) | AviatorIQ"
+        title="US Pilot Training Guides (2026) | AviatorPath"
         description="Free guides for aspiring US pilots — FAA licences, Part 141 vs Part 61, ATP certificate, medical requirements, GI Bill, airline cadet programmes, and pilot salaries. Updated for 2026."
-        canonical="https://aviatoriq.com/us/guides"
+        canonical="https://aviatorpath.com/us/guides"
       />
       <PublicNav />
       <main className="flex-1">

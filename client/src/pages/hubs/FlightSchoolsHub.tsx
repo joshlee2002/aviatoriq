@@ -104,9 +104,9 @@ export default function FlightSchoolsHub() {
   return (
     <>
       <SEO
-        title="Best Flight Schools 2026 | UK, USA, Canada, Australia, Europe | AviatorIQ"
+        title="Best Flight Schools 2026 | UK, USA, Canada, Australia, Europe | AviatorPath"
         description="Verified flight school guides for every major market. CAA, FAA, EASA, CASA, Transport Canada approved schools. Methodology, scoring criteria, and due diligence checklist."
-        canonical="https://aviatoriq.com/hubs/flight-schools"
+        canonical="https://aviatorpath.com/hubs/flight-schools"
       />
       <PublicNav />
       <main className="min-h-screen bg-[var(--color-navy)] text-white pt-20 pb-16">
@@ -135,7 +135,7 @@ export default function FlightSchoolsHub() {
                 Conflict of Interest Statement
               </p>
               <p className="text-sm text-white/70">
-                AviatorIQ does not accept payment from flight schools for
+                AviatorPath does not accept payment from flight schools for
                 inclusion in our guides. Schools are assessed against published
                 criteria including regulatory approval, training quality
                 indicators, fee transparency, and student feedback. We may earn

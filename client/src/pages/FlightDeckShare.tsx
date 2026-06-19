@@ -156,13 +156,13 @@ export default function FlightDeckShare() {
           className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
         >
           <Plane className="w-5 h-5 text-[var(--color-gold)]" />
-          <span className="font-display font-bold text-sm">AviatorIQ</span>
+          <span className="font-display font-bold text-sm">AviatorPath</span>
         </Link>
         <span className="text-white/60 text-xs">Shared result</span>
       </header>
       <div className="bg-white/5 border-b border-white/10 px-6 py-3 text-center">
         <p className="text-white/70 text-xs">
-          Someone shared their AviatorIQ pilot profile with you.
+          Someone shared their AviatorPath pilot profile with you.
         </p>
       </div>
       <div className="max-w-lg mx-auto px-4 py-8 space-y-4">

@@ -1,7 +1,7 @@
 /**
  * ReviewerBox.tsx
  * Displays reviewer attribution for a guide.
- * Uses "Editorially reviewed by AviatorIQ" as the honest default placeholder
+ * Uses "Editorially reviewed by AviatorPath" as the honest default placeholder
  * when no named expert reviewer has been confirmed.
  */
 
@@ -12,7 +12,7 @@ export interface ReviewerBoxProps {
   /** Named reviewer — only use if credentials are independently verifiable */
   reviewerName?: string;
   reviewerRole?: string;
-  /** If true (default), shows "Editorially reviewed by AviatorIQ" */
+  /** If true (default), shows "Editorially reviewed by AviatorPath" */
   editorialReview?: boolean;
   /** Optional note about what kind of expert review is pending */
   pendingReviewNote?: string;
@@ -61,7 +61,7 @@ export const ReviewerBox: React.FC<ReviewerBoxProps> = ({
         ) : (
           <>
             <p className="text-xs font-semibold text-white">
-              Editorially reviewed by AviatorIQ
+              Editorially reviewed by AviatorPath
             </p>
             <p
               className="text-xs mt-0.5"
@@ -69,7 +69,7 @@ export const ReviewerBox: React.FC<ReviewerBoxProps> = ({
             >
               {pendingReviewNote
                 ? pendingReviewNote
-                : "This guide has been reviewed against primary regulatory and official sources by the AviatorIQ editorial team. Expert review by a named specialist is pending."}
+                : "This guide has been reviewed against primary regulatory and official sources by the AviatorPath editorial team. Expert review by a named specialist is pending."}
             </p>
           </>
         )}

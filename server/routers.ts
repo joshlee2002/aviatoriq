@@ -180,7 +180,7 @@ Lead details:
 - Flying experience: ${input.flyingExperience ?? "Unknown"}
 - Written answer: ${input.writtenAnswer ?? "None"}
 
-AviatorIQ Score: ${score}/100 (${category})`;
+AviatorPath Score: ${score}/100 (${category})`;
 
           const response = await invokeLLM({
             model: process.env.LLM_MODEL || "gpt-4.1-mini",
@@ -338,7 +338,7 @@ AviatorIQ Score: ${score}/100 (${category})`;
         // Send welcome email (non-blocking, fire-and-forget)
         sendEmail({
           to: input.email,
-          subject: `Your AviatorIQ Blueprint is ready, ${input.fullName.split(" ")[0]}`,
+          subject: `Your AviatorPath Blueprint is ready, ${input.fullName.split(" ")[0]}`,
           react: React.createElement(WelcomeBlueprint, {
             firstName: input.fullName.split(" ")[0],
             score,
@@ -457,7 +457,7 @@ AviatorIQ Score: ${score}/100 (${category})`;
         try {
           await sendEmail({
             to: input.email,
-            subject: "Your AviatorIQ results link",
+            subject: "Your AviatorPath results link",
             react: React.createElement(WelcomeBlueprint, {
               firstName: lead.fullName?.split(" ")[0] ?? "there",
               score: lead.leadScore,
@@ -634,7 +634,7 @@ CANDIDATE PROFILE
 - Right to work/study: ${lead.rightToWorkStudy ?? "Unknown"}
 - Start timeframe: ${lead.startTimeframe ?? "Unknown"}
 - Open to training abroad: ${lead.openToAbroad ?? "Unknown"}
-- AviatorIQ Score: ${lead.leadScore}/100 (${lead.leadCategory === "Hot" ? "Flight Ready" : lead.leadCategory === "Warm" ? "Development Phase" : "Exploration Phase"})
+- AviatorPath Score: ${lead.leadScore}/100 (${lead.leadCategory === "Hot" ? "Flight Ready" : lead.leadCategory === "Warm" ? "Development Phase" : "Exploration Phase"})
 - In their own words: ${safeWrittenAnswer}
 
 ═══════════════════════════════════════
@@ -1664,7 +1664,7 @@ GUIDELINES:
                 currency: "gbp",
                 unit_amount: 1499, // £14.99
                 product_data: {
-                  name: "AviatorIQ Premium Pilot Blueprint",
+                  name: "AviatorPath Premium Pilot Blueprint",
                   description:
                     "Your personalised pilot training roadmap — month-by-month timeline, hidden cost breakdown, school selection guide, risk analysis, career reality check, 30-day action plan, and a downloadable PDF blueprint.",
                   images: [],

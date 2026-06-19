@@ -7,7 +7,7 @@ export default function AirlinePilotSalary() {
     <GuideLayout
       title="UK Airline Pilot Salary Guide 2026"
       subtitle="Verified salary figures for first officers and captains at UK airlines — including base pay, allowances, and what actually affects your earnings."
-      canonical="https://aviatoriq.com/guides/airline-pilot-salary"
+      canonical="https://aviatorpath.com/guides/airline-pilot-salary"
       metaDescription="UK airline pilot salary 2026: easyJet FO £65k–£100k, Ryanair FO £50k–£95k, BA FO £40k–£120k. Verified from BALPA and airline data."
       readTime="11 min read"
       lastUpdated="June 2026"

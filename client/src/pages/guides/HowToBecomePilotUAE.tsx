@@ -10,7 +10,7 @@ export default function HowToBecomePilotUAE() {
       readTime="14 min read"
       lastUpdated="June 2026"
       category="UAE Pilot Training"
-      canonical="https://aviatoriq.com/uae/guides/how-to-become-a-pilot-uae"
+      canonical="https://aviatorpath.com/uae/guides/how-to-become-a-pilot-uae"
       metaDescription="Learn how to become a commercial pilot in the UAE in 2026. Step-by-step guide covering GCAA requirements, flight schools, and cadet programs at Emirates and Etihad."
       ctaHref="/roadmap"
       ctaText="Generate my career roadmap"

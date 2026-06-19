@@ -11,7 +11,7 @@ const STORAGE_PATH =
   process.env.LOCAL_STORAGE_PATH ?? path.join(process.cwd(), "uploads");
 
 const BUCKET_URL = process.env.STORAGE_BUCKET_URL;
-const BUCKET_NAME = process.env.STORAGE_BUCKET_NAME ?? "aviatoriq";
+const BUCKET_NAME = process.env.STORAGE_BUCKET_NAME ?? "aviatorpath";
 const PUBLIC_CDN = process.env.STORAGE_PUBLIC_CDN_URL;
 
 function buildRemoteUrl(key: string): string | null {

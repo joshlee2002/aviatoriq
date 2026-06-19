@@ -180,7 +180,7 @@ function getSubheadline(
 }
 
 function getShareText(score: number, phase: string, licence: string): string {
-  return `I just took the AviatorIQ flight potential quiz and scored ${score}/100 — ${phase} phase. My recommended route: ${licence}. How close are you? 👇`;
+  return `I just took the AviatorPath flight potential quiz and scored ${score}/100 — ${phase} phase. My recommended route: ${licence}. How close are you? 👇`;
 }
 
 // ─── Main scoring function ────────────────────────────────────────────────────

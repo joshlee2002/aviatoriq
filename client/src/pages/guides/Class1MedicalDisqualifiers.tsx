@@ -6,7 +6,7 @@ const Class1MedicalDisqualifiers = () => {
     <GuideLayout
       title="What Disqualifies You From a Class 1 Medical? (UK 2026)"
       subtitle="The complete, honest list of conditions that can fail a CAA Class 1 medical — and which ones are manageable under OML or with treatment."
-      canonical="https://aviatoriq.com/guides/class-1-medical-disqualifiers"
+      canonical="https://aviatorpath.com/guides/class-1-medical-disqualifiers"
       metaDescription="UK Class 1 Medical disqualifiers 2026: eyesight, heart, mental health, ADHD, diabetes, deferrals and why CAA cases are individual."
       faqSchema={[
         {
@@ -321,7 +321,7 @@ const Class1MedicalDisqualifiers = () => {
                 disqualified. Consult an Aviation Medical Examiner (AME) first,
                 and use the{" "}
                 <Link href="/tools/class-1-medical-check">
-                  AviatorIQ Medical Check tool
+                  AviatorPath Medical Check tool
                 </Link>{" "}
                 to get an initial assessment of your situation.
               </p>

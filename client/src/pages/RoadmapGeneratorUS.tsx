@@ -160,12 +160,12 @@ export default function RoadmapGeneratorUS() {
   };
 
   const handleShare = async () => {
-    const text = `I just got my personalised US pilot training roadmap from AviatorIQ — my path is: ${roadmapResultsUS[result!].title}. Get yours free:`;
+    const text = `I just got my personalised US pilot training roadmap from AviatorPath — my path is: ${roadmapResultsUS[result!].title}. Get yours free:`;
     const url = window.location.href;
     if (navigator.share) {
       try {
         await navigator.share({
-          title: "My US Pilot Training Roadmap — AviatorIQ",
+          title: "My US Pilot Training Roadmap — AviatorPath",
           text,
           url,
         });
@@ -192,9 +192,9 @@ export default function RoadmapGeneratorUS() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="US Pilot Training Roadmap — Find Your FAA Path | AviatorIQ"
+        title="US Pilot Training Roadmap — Find Your FAA Path | AviatorPath"
         description="Answer 5 questions. Get a personalised US pilot training roadmap — Part 141, Part 61, airline cadet programmes, or university R-ATP. Free, data-driven, and built for the US market."
-        canonical="https://aviatoriq.com/us/roadmap"
+        canonical="https://aviatorpath.com/us/roadmap"
       />
       <PublicNav />
 

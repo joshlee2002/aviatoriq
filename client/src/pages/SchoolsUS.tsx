@@ -175,7 +175,7 @@ export default function SchoolsUS() {
   return (
     <>
       <SEO
-        title="US Flight Schools Directory 2026 — Find Your FAA Training Academy | AviatorIQ"
+        title="US Flight Schools Directory 2026 — Find Your FAA Training Academy | AviatorPath"
         description="Compare the best US flight schools in 2026. ATP, Embry-Riddle, CAE USA, L3Harris, and more. Part 141 vs Part 61, costs, airline partnerships, and financing options."
         canonical="/us/schools"
       />

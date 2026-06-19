@@ -12,7 +12,7 @@ export interface AuthorBoxProps {
   role: string;
   bio?: string;
   profileUrl?: string;
-  /** If true, shows "Editorially reviewed by AviatorIQ" instead of a named individual */
+  /** If true, shows "Editorially reviewed by AviatorPath" instead of a named individual */
   editorialOnly?: boolean;
 }
 
@@ -40,13 +40,13 @@ export const AuthorBox: React.FC<AuthorBoxProps> = ({
         </div>
         <div>
           <p className="text-xs font-semibold text-white">
-            Editorially reviewed by AviatorIQ
+            Editorially reviewed by AviatorPath
           </p>
           <p
             className="text-xs mt-0.5"
             style={{ color: "oklch(0.55 0.04 240)" }}
           >
-            This guide has been reviewed by the AviatorIQ editorial team against
+            This guide has been reviewed by the AviatorPath editorial team against
             primary regulatory sources. Expert review by a named individual is
             pending.
           </p>

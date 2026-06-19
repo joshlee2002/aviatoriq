@@ -343,7 +343,7 @@ function getShareText(
   barrierLabel: string,
   strongestAsset: string
 ): string {
-  return `I just took the AviatorIQ assessment. Flight Potential: ${score}/100 (${phase} phase). Biggest barrier: ${barrierLabel}. Strongest asset: ${strongestAsset}. What's stopping you? 👇`;
+  return `I just took the AviatorPath assessment. Flight Potential: ${score}/100 (${phase} phase). Biggest barrier: ${barrierLabel}. Strongest asset: ${strongestAsset}. What's stopping you? 👇`;
 }
 
 export function scoreFlightDeckQuiz(input: FlightDeckInput): FlightDeckResult {

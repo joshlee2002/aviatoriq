@@ -28,8 +28,8 @@ export default function Retrieve() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.10 0.08 252)" }}>
       <SEO
-        title="Retrieve Your Results — AviatorIQ"
-        description="Lost your AviatorIQ results link? Enter your email and we'll send it straight to your inbox."
+        title="Retrieve Your Results — AviatorPath"
+        description="Lost your AviatorPath results link? Enter your email and we'll send it straight to your inbox."
         canonical="/retrieve"
         noindex={true}
       />

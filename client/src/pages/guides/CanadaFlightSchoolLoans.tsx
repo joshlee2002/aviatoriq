@@ -9,10 +9,10 @@ export default function CanadaFlightSchoolLoans() {
       title="Navigating Flight School Loans in Canada: 2026 Financing Guide"
       subtitle="Understanding and securing financial aid for pilot training in Canada, covering federal student aid limits, provincial loans, and private bank lines of credit."
       readTime="12 min"
-      author="AviatorIQ Research"
+      author="AviatorPath Research"
       lastUpdated="June 2026"
       category="Canadian Financing"
-      canonical="https://aviatoriq.com/canada/guides/flight-school-loans-canada"
+      canonical="https://aviatorpath.com/canada/guides/flight-school-loans-canada"
       metaDescription="Explore options for flight school loans in Canada for 2026. Understand OSAP/provincial limits, federal student aid, and private bank lines of credit for pilo..."
       heroImage="/manus-storage/canada-loans_f4g5h6i7.jpg"
       scopeBanner={

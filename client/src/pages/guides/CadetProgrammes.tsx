@@ -7,7 +7,7 @@ export default function CadetProgrammes() {
     <GuideLayout
       title="UK Airline Cadet Pilot Programmes 2026: The Complete Guide"
       subtitle="Every sponsored cadet scheme in the UK — BA Speedbird, easyJet Generation, Jet2FlightPath, Ryanair, Wizz Air — with real costs, places, timelines, bonds, and current application status."
-      canonical="https://aviatoriq.com/guides/cadet-pilot-programmes-uk"
+      canonical="https://aviatorpath.com/guides/cadet-pilot-programmes-uk"
       metaDescription="UK airline cadet programmes 2026: BA Speedbird, Jet2, easyJet, Ryanair, Wizz and TUI status, costs, requirements and funding."
       readTime="14 min read"
       lastUpdated="June 2026"

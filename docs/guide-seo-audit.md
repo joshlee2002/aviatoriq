@@ -1,4 +1,4 @@
-# AviatorIQ Guide SEO & Country Relevance Audit — June 16, 2026
+# AviatorPath Guide SEO & Country Relevance Audit — June 16, 2026
 
 This audit covers every guide component in `client/src/pages/guides` (183 files). The inventory pass read every `.tsx` guide file in that folder and extracted each file's title, canonical path, meta description, section headings, FAQ entries, source-block presence, visible word count, and country/regulator signals. It combines that full-file static review with SEO heuristics aligned to current Google Search Central guidance: helpful, reliable, people-first content; concise descriptive titles; accurate snippets/meta descriptions; schema that matches visible content; and clear trust signals/sources.
 

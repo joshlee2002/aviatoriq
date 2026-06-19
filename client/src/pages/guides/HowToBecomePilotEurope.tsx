@@ -7,10 +7,10 @@ export default function HowToBecomePilotEurope() {
     <GuideLayout
       title="How to Become an Airline Pilot in Europe (2026 EASA Guide)"
       subtitle="The honest, data-driven guide to European pilot training under EASA — integrated vs modular ATPL, real costs across 15 countries, and how to land your first airline job."
-      canonical="https://aviatoriq.com/europe/guides/how-to-become-a-pilot"
+      canonical="https://aviatorpath.com/europe/guides/how-to-become-a-pilot"
       metaDescription="How to become an airline pilot in Europe in 2026. Covers EASA regulations, integrated vs modular ATPL routes, real costs (€45k–€130k), and airline cadet programmes."
       readTime="16 min read"
-      author="AviatorIQ Research"
+      author="AviatorPath Research"
       lastUpdated="June 2026"
       category="European Pilot Careers"
       heroImage="/manus-storage/airplane-takeoff_6f139e92.jpg"

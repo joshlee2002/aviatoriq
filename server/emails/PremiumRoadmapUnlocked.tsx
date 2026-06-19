@@ -37,7 +37,7 @@ const CARD_BG = "#111C2E";
 
 export default function PremiumRoadmapUnlocked({
   firstName = "there",
-  resultsUrl = "https://aviatoriq.com",
+  resultsUrl = "https://aviatorpath.com",
   pdfUrl = null,
   leadId = 0,
 }: PremiumRoadmapUnlockedProps) {
@@ -45,7 +45,7 @@ export default function PremiumRoadmapUnlocked({
     <Html lang="en">
       <Head />
       <Preview>
-        Your premium AviatorIQ roadmap is unlocked — your personalised pilot
+        Your premium AviatorPath roadmap is unlocked — your personalised pilot
         training plan is ready.
       </Preview>
       <Body style={{ backgroundColor: NAVY, margin: 0, padding: 0, fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
@@ -174,10 +174,10 @@ export default function PremiumRoadmapUnlocked({
           {/* ── Footer ── */}
           <Section style={{ padding: "0 24px 32px 24px" }}>
             <Text style={{ color: GREY, fontSize: "11px", margin: "0 0 4px 0", lineHeight: "1.6" }}>
-              You received this email because you purchased the AviatorIQ Premium Roadmap. Questions? Reply to this email and we'll get back to you.
+              You received this email because you purchased the AviatorPath Premium Roadmap. Questions? Reply to this email and we'll get back to you.
             </Text>
             <Text style={{ color: "rgba(148,163,184,0.5)", fontSize: "10px", margin: 0 }}>
-              AviatorIQ · Helping aspiring pilots navigate their training journey · aviatoriq.com
+              AviatorPath · Helping aspiring pilots navigate their training journey · aviatorpath.com
             </Text>
           </Section>
 

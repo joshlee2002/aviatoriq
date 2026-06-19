@@ -65,8 +65,8 @@ export default function AboutOurAuthors() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="About Our Authors | AviatorIQ"
-        description="Learn about the AviatorIQ editorial team and how we research, verify, and maintain our pilot training guides across 9 country markets."
+        title="About Our Authors | AviatorPath"
+        description="Learn about the AviatorPath editorial team and how we research, verify, and maintain our pilot training guides across 9 country markets."
         canonical="/about-our-authors"
       />
       <PublicNav />
@@ -86,7 +86,7 @@ export default function AboutOurAuthors() {
               className="text-base max-w-2xl"
               style={{ color: "oklch(0.65 0.04 240)" }}
             >
-              AviatorIQ guides are produced by a dedicated editorial team that
+              AviatorPath guides are produced by a dedicated editorial team that
               researches, verifies, and maintains content across 9 country
               markets. Every factual claim is traceable to a named primary
               source.
@@ -176,7 +176,7 @@ export default function AboutOurAuthors() {
                 className="text-sm leading-relaxed"
                 style={{ color: "oklch(0.6 0.04 240)" }}
               >
-                All content on AviatorIQ is reviewed for accuracy before
+                All content on AviatorPath is reviewed for accuracy before
                 publication and updated on a rolling 6-month cycle. For more
                 information about how we research and maintain our guides,
                 please read our{" "}
@@ -195,10 +195,10 @@ export default function AboutOurAuthors() {
                 If you believe any information is incorrect or outdated, please
                 contact us at{" "}
                 <a
-                  href="mailto:hello@aviatoriq.com"
+                  href="mailto:hello@aviatorpath.com"
                   className="text-blue-400 underline"
                 >
-                  hello@aviatoriq.com
+                  hello@aviatorpath.com
                 </a>
                 .
               </p>

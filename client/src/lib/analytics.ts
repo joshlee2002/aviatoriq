@@ -1,5 +1,5 @@
 /**
- * AviatorIQ Analytics
+ * AviatorPath Analytics
  * Uses PostHog for privacy-friendly, GDPR-compliant analytics.
  * No cookies by default — uses localStorage persistence.
  *

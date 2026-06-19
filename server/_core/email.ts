@@ -1,5 +1,5 @@
 /**
- * AviatorIQ Transactional Email Utility
+ * AviatorPath Transactional Email Utility
  * Powered by Resend. Non-throwing — logs failures without crashing the caller.
  */
 import { Resend } from "resend";
@@ -31,7 +31,7 @@ export async function sendEmail({
   try {
     const html = await render(react);
     const { error } = await resend.emails.send({
-      from: process.env.EMAIL_FROM ?? "AviatorIQ <hello@aviatoriq.com>",
+      from: process.env.EMAIL_FROM ?? "AviatorPath <hello@aviatorpath.com>",
       to,
       subject,
       html,

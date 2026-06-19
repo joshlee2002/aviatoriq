@@ -1,9 +1,9 @@
-# AviatorIQ QA & Cleanup Checklist
+# AviatorPath QA & Cleanup Checklist
 
 **Date:** June 17, 2026  
 **Status:** Completed
 
-This document outlines the full live-site QA, codebase audit, and cleanup performed on AviatorIQ.
+This document outlines the full live-site QA, codebase audit, and cleanup performed on AviatorPath.
 
 ## 1. Routing & Broken Content Fixes
 
@@ -37,11 +37,11 @@ This document outlines the full live-site QA, codebase audit, and cleanup perfor
 
 | Component    | Status   | Issue Found                                 | Fix Made                                                                                                                            | Risk |
 | :----------- | :------- | :------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------- | :--- |
-| Homepage     | Polished | Weak positioning, messy layout.             | Rewrote hero text to: "AviatorIQ helps aspiring pilots understand their best route, costs, readiness and matched training options". | None |
+| Homepage     | Polished | Weak positioning, messy layout.             | Rewrote hero text to: "AviatorPath helps aspiring pilots understand their best route, costs, readiness and matched training options". | None |
 | Typography   | Polished | Inconsistent fonts and spacing.             | Added global design improvements to `index.css`. Improved card borders and hover states.                                            | None |
 | Mobile UX    | Polished | Mobile country switcher only toggled UK/US. | Replaced toggle with a full country grid selector in the mobile menu.                                                               | None |
 | Results Page | Polished | Blank screenshot issue during render.       | Verified the dark theme renders correctly. Score ring, school matching, and roadmap all display cleanly.                            | None |
 
 ## Summary
 
-AviatorIQ is now clean, country-specific, credible, modern, fully functional, and ready for real users and flight school leads.
+AviatorPath is now clean, country-specific, credible, modern, fully functional, and ready for real users and flight school leads.

@@ -63,7 +63,7 @@ const tiers = [
       "Full lead profile on each introduction (score, budget, goal, timeline)",
       "Explicit consent confirmed on every lead",
       "Founding Partner badge on your school profile",
-      "Input into AviatorIQ product roadmap",
+      "Input into AviatorPath product roadmap",
       "First access to Premium features when launched",
     ],
     notIncluded: ["Real-time lead notifications (Premium only)"],
@@ -82,7 +82,7 @@ const tiers = [
       "Standard listing in the flight school directory",
       "School profile: name, location, courses, website",
       "Matched to relevant candidates by route & country",
-      "AviatorIQ badge for your website",
+      "AviatorPath badge for your website",
       "Monthly performance report (impressions, clicks)",
     ],
     notIncluded: [
@@ -127,7 +127,7 @@ const tiers = [
       "Priority placement above all other schools",
       "Dedicated account review call (quarterly)",
       "Co-branded content opportunity (guide feature, case study)",
-      "Early access to new AviatorIQ tools and data",
+      "Early access to new AviatorPath tools and data",
     ],
     notIncluded: [],
     cta: "Apply for Premium",
@@ -142,7 +142,7 @@ const faqs = [
   },
   {
     q: "What does an introduction look like?",
-    a: "You receive the candidate's full profile: name, email, AviatorIQ score, training goal, budget range, preferred start date, and their biggest stated barrier. You contact them directly — there's no middleman.",
+    a: "You receive the candidate's full profile: name, email, AviatorPath score, training goal, budget range, preferred start date, and their biggest stated barrier. You contact them directly — there's no middleman.",
   },
   {
     q: "How many leads can I expect per month?",
@@ -239,7 +239,7 @@ export default function ForSchools() {
       toast.success("Application received! We'll be in touch within 48 hours.");
     } catch {
       toast.error(
-        "Something went wrong. Please try again or email hello@aviatoriq.com"
+        "Something went wrong. Please try again or email hello@aviatorpath.com"
       );
     }
   };
@@ -266,8 +266,8 @@ export default function ForSchools() {
   return (
     <div style={{ background: bg, minHeight: "100vh", color: "white" }}>
       <SEO
-        title="Partner With AviatorIQ — For Flight Schools"
-        description="Reach qualified, pre-assessed aspiring pilots. AviatorIQ matches candidates to flight schools based on budget, goal, and readiness. Apply for a listing today."
+        title="Partner With AviatorPath — For Flight Schools"
+        description="Reach qualified, pre-assessed aspiring pilots. AviatorPath matches candidates to flight schools based on budget, goal, and readiness. Apply for a listing today."
         canonical="/for-schools"
       />
       <PublicNav />
@@ -387,12 +387,12 @@ export default function ForSchools() {
         </div>
       </section>
 
-      {/* ── Why AviatorIQ ── */}
+      {/* ── Why AviatorPath ── */}
       <section className="py-20">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center mb-14">
             <h2 className="text-3xl font-display font-bold mb-4">
-              Why partner with AviatorIQ?
+              Why partner with AviatorPath?
             </h2>
             <p className="text-base" style={{ color: "oklch(0.6 0.04 240)" }}>
               Unlike job boards or generic directories, every candidate has been
@@ -404,7 +404,7 @@ export default function ForSchools() {
               {
                 icon: <Flame className="w-5 h-5" />,
                 title: "Pre-qualified candidates",
-                desc: "Every lead has completed a 5-minute Career Assessment. You see their AviatorIQ score, budget, goal, and timeline before you respond.",
+                desc: "Every lead has completed a 5-minute Career Assessment. You see their AviatorPath score, budget, goal, and timeline before you respond.",
                 color: "oklch(0.72 0.18 65)",
               },
               {
@@ -585,7 +585,7 @@ export default function ForSchools() {
           >
             All prices exclude VAT. Multi-campus discounts available.{" "}
             <a
-              href="mailto:hello@aviatoriq.com"
+              href="mailto:hello@aviatorpath.com"
               className="underline"
               style={{ color: "oklch(0.65 0.18 240)" }}
             >
@@ -615,7 +615,7 @@ export default function ForSchools() {
               </p>
               <ul className="space-y-3">
                 {[
-                  "AviatorIQ score (0–100) across 5 dimensions",
+                  "AviatorPath score (0–100) across 5 dimensions",
                   "Training goal and preferred route",
                   "Budget range and funding method",
                   "Preferred start date",
@@ -686,7 +686,7 @@ export default function ForSchools() {
                     className="text-xs font-semibold uppercase tracking-wider"
                     style={{ color: "oklch(0.55 0.04 240)" }}
                   >
-                    AviatorIQ Score
+                    AviatorPath Score
                   </span>
                   <span
                     className="text-2xl font-display font-bold"
@@ -760,7 +760,7 @@ export default function ForSchools() {
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white no-underline"
                   style={{ background: brandGradient }}
                 >
-                  Back to AviatorIQ
+                  Back to AviatorPath
                 </Link>
               </div>
             ) : (
@@ -982,11 +982,11 @@ export default function ForSchools() {
             >
               Email us at{" "}
               <a
-                href="mailto:hello@aviatoriq.com"
+                href="mailto:hello@aviatorpath.com"
                 className="font-semibold underline"
                 style={{ color: "oklch(0.65 0.18 240)" }}
               >
-                hello@aviatoriq.com
+                hello@aviatorpath.com
               </a>{" "}
               and we'll get back to you within one business day.
             </p>

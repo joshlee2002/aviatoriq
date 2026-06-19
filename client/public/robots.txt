@@ -27,4 +27,4 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-Sitemap: https://aviatoriq.com/sitemap.xml
+Sitemap: https://aviatorpath.com/sitemap.xml

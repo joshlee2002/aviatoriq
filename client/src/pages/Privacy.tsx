@@ -6,8 +6,8 @@ export default function Privacy() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="Privacy Policy | AviatorIQ"
-        description="AviatorIQ's privacy policy. Learn how we collect, use, and protect your personal data when you use our pilot career assessment platform."
+        title="Privacy Policy | AviatorPath"
+        description="AviatorPath's privacy policy. Learn how we collect, use, and protect your personal data when you use our pilot career assessment platform."
         canonical="/privacy"
       />
       <PublicNav />
@@ -27,7 +27,7 @@ export default function Privacy() {
                 {
                   heading: "1. Who we are",
                   content:
-                    "AviatorIQ is a career guidance platform for aspiring pilots. We help users understand their training options and connect with flight schools. References to 'we', 'us' or 'our' in this policy refer to AviatorIQ.",
+                    "AviatorPath is a career guidance platform for aspiring pilots. We help users understand their training options and connect with flight schools. References to 'we', 'us' or 'our' in this policy refer to AviatorPath.",
                 },
                 {
                   heading: "2. What data we collect",
@@ -47,7 +47,7 @@ export default function Privacy() {
                 {
                   heading: "5. Your rights",
                   content:
-                    "Under UK GDPR, you have the right to: access the personal data we hold about you, request correction of inaccurate data, request deletion of your data, withdraw consent at any time, and lodge a complaint with the Information Commissioner's Office (ICO). To exercise any of these rights, email us at privacy@aviatoriq.co.uk.",
+                    "Under UK GDPR, you have the right to: access the personal data we hold about you, request correction of inaccurate data, request deletion of your data, withdraw consent at any time, and lodge a complaint with the Information Commissioner's Office (ICO). To exercise any of these rights, email us at privacy@aviatorpath.co.uk.",
                 },
                 {
                   heading: "6. Data retention",
@@ -62,7 +62,7 @@ export default function Privacy() {
                 {
                   heading: "8. Contact",
                   content:
-                    "For privacy-related enquiries, email privacy@aviatoriq.co.uk.",
+                    "For privacy-related enquiries, email privacy@aviatorpath.co.uk.",
                 },
               ].map(section => (
                 <div key={section.heading}>

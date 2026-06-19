@@ -9,10 +9,10 @@ export default function CanadaPilotTrainingCosts() {
       title="Pilot Training Costs in Canada (2026 Realistic Breakdown)"
       subtitle="A comprehensive breakdown of Transport Canada flight training expenses, from PPL to CPL/Multi-IFR, and strategies to budget safely."
       readTime="12 min"
-      author="AviatorIQ Research"
+      author="AviatorPath Research"
       lastUpdated="June 2026"
       category="Canadian Pilot Training"
-      canonical="https://aviatoriq.com/canada/guides/pilot-training-costs"
+      canonical="https://aviatorpath.com/canada/guides/pilot-training-costs"
       metaDescription="Detailed guide on pilot training costs in Canada for 2026. Discover the real costs of PPL, CPL, Multi-IFR (CAD $80k–$120k) and hidden fees to watch out for."
       heroImage="/manus-storage/training-costs_b1a2c3d4.jpg"
       scopeBanner={

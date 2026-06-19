@@ -7,10 +7,10 @@ export default function WizzAirAcademy() {
     <GuideLayout
       title="Wizz Air Pilot Academy 2026: Costs, Schools & Deferred Funding"
       subtitle="How Wizz Air recruits cadets. Understand the deferred funding model, the €60,000+ total cost, and the reality of the 5-year bond."
-      canonical="https://aviatoriq.com/guides/wizz-air-pilot-academy"
+      canonical="https://aviatorpath.com/guides/wizz-air-pilot-academy"
       metaDescription="Wizz Air Pilot Academy 2026: Learn about the deferred funding model, partner schools (Trener, Egnatia), and the reality of First Officer pay and bonding."
       readTime="9 min read"
-      author="AviatorIQ Research"
+      author="AviatorPath Research"
       lastUpdated="June 2026"
       category="Airline Cadet Programmes"
       heroImage="/manus-storage/wizzair-cadet_8bbabaaa.jpg"

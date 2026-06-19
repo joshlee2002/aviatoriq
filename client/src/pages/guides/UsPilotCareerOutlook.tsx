@@ -6,7 +6,7 @@ const UsPilotCareerOutlook = () => {
     <GuideLayout
       title="US Pilot Shortage 2026: Is Now the Best Time to Become a Pilot?"
       subtitle="A comprehensive look at the US pilot career outlook in 2026, covering shortage scale, retirement age, hiring trends, salaries, and career timelines."
-      canonical="https://aviatoriq.com/us/guides/us-pilot-career-outlook"
+      canonical="https://aviatorpath.com/us/guides/us-pilot-career-outlook"
       metaDescription="Explore the US pilot shortage in 2026, including Boeing projections, mandatory retirement age, regional and major airline hiring, rising salaries, and ATP-CT..."
       faqSchema={[
         {

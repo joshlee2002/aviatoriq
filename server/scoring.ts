@@ -1,5 +1,5 @@
 /**
- * AviatorIQ Lead Scoring Engine — Gen 3 (Global)
+ * AviatorPath Lead Scoring Engine — Gen 3 (Global)
  * Overall score: 0–100
  * Hot: 85–100 | Warm: 55–84 | Cold: <55
  *

@@ -9,10 +9,10 @@ export default function EuropePilotSalary2026() {
       title="European Pilot Salary Guide 2026: Ryanair, Wizz Air & Legacy Pay"
       subtitle="A comprehensive analysis of pilot compensation across Europe. From a €35k Wizz Air cadet to a €250k Lufthansa Captain — real 2026 pay scales, sector pay, and taxation."
       readTime="15 min"
-      author="AviatorIQ Research"
+      author="AviatorPath Research"
       lastUpdated="June 2026"
       category="European Pilot Careers"
-      canonical="https://aviatoriq.com/europe/guides/pilot-salary-europe"
+      canonical="https://aviatorpath.com/europe/guides/pilot-salary-europe"
       metaDescription="Discover the latest 2026 pilot salaries in Europe. Compare Ryanair, Wizz Air, easyJet, and Lufthansa pay scales. Understand base pay vs sector pay across EAS..."
       heroImage="/manus-storage/europe-salary_h8i9j0k1.jpg"
       scopeBanner={

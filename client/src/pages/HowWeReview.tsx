@@ -105,7 +105,7 @@ export default function HowWeReview() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="How We Review Pilot Training Information | AviatorIQ"
+        title="How We Review Pilot Training Information | AviatorPath"
         description="Our step-by-step process for researching, verifying, and maintaining pilot training guides across 9 country markets."
         canonical="/how-we-review-pilot-training-information"
       />
@@ -144,7 +144,7 @@ export default function HowWeReview() {
               className="text-base leading-relaxed"
               style={{ color: "oklch(0.65 0.04 240)" }}
             >
-              AviatorIQ covers pilot training regulations, medical standards,
+              AviatorPath covers pilot training regulations, medical standards,
               costs, and career pathways across nine country markets. This is
               high-stakes content. Here is exactly how we research, verify, and
               maintain it.

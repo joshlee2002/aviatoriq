@@ -13,7 +13,7 @@ The sitewide technical SEO pass resolved all critical structural issues. Every g
 ### 1. Canonical URL Normalisation
 
 - **64 guide files** had relative canonical URLs (e.g. `canonical="/guides/..."`) which would render as relative paths in the `<head>`.
-- All 64 were updated to absolute URLs (`canonical="https://aviatoriq.com/guides/..."`).
+- All 64 were updated to absolute URLs (`canonical="https://aviatorpath.com/guides/..."`).
 - **0 guides** now have relative canonical URLs.
 
 ### 2. Duplicate Canonical Conflict

@@ -676,7 +676,7 @@ export default function MedicalConditionLookup() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="Pilot Medical Condition Lookup | Can I Become a Pilot? | AviatorIQ"
+        title="Pilot Medical Condition Lookup | Can I Become a Pilot? | AviatorPath"
         description="Search any medical condition to find out if it affects your pilot medical eligibility. Based on CAA/EASA Class 1 standards. Covers asthma, ADHD, colour blindness, diabetes, depression, epilepsy and more."
         canonical="/tools/medical-condition-lookup"
         schema={{

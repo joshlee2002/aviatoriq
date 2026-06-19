@@ -58,7 +58,7 @@ const platformLinks = [
   { label: "Career Readiness Assessment", href: "/quiz" },
   { label: "Real Pilot Stories", href: "/stories" },
   { label: "Pilot Jobs Board", href: "/jobs" },
-  { label: "Partner With AviatorIQ", href: "/partner" },
+  { label: "Partner With AviatorPath", href: "/partner" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
   { label: "Editorial Policy", href: "/editorial-policy" },
@@ -98,7 +98,7 @@ export default function PublicFooter() {
               >
                 <Plane className="w-4.5 h-4.5 text-white" strokeWidth={2.5} />
               </div>
-              <span className="font-display font-bold text-xl text-white">AviatorIQ</span>
+              <span className="font-display font-bold text-xl text-white">AviatorPath</span>
             </Link>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "oklch(0.5 0.04 240)" }}>
               {tagline}
@@ -179,7 +179,7 @@ export default function PublicFooter() {
 
           {/* Trust signals */}
           <div>
-            <h4 className="font-display font-semibold text-xs uppercase tracking-widest mb-4" style={{ color: "oklch(0.45 0.04 240)" }}>Why AviatorIQ</h4>
+            <h4 className="font-display font-semibold text-xs uppercase tracking-widest mb-4" style={{ color: "oklch(0.45 0.04 240)" }}>Why AviatorPath</h4>
             <div className="space-y-3">
               {(isUS ? [
                 { stat: "50+", label: "US flight schools listed" },
@@ -210,7 +210,7 @@ export default function PublicFooter() {
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-5" style={{ borderTop: "1px solid oklch(1 0 0 / 0.07)" }}>
           <p className="text-xs" style={{ color: "oklch(0.4 0.04 240)" }}>
-            © {new Date().getFullYear()} AviatorIQ. All rights reserved.
+            © {new Date().getFullYear()} AviatorPath. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
             {legalLinks.map((link) => (

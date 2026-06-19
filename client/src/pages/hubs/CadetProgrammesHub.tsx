@@ -108,9 +108,9 @@ export default function CadetProgrammesHub() {
   return (
     <>
       <SEO
-        title="Airline Cadet Programmes 2026 | BA, easyJet, Emirates, Ryanair | AviatorIQ"
+        title="Airline Cadet Programmes 2026 | BA, easyJet, Emirates, Ryanair | AviatorPath"
         description="Complete guide to airline cadet programmes in 2026. BA Speedbird Academy, easyJet Generation easyJet, Emirates, Ryanair, Wizz Air, TUI MPL, Qantas, and more. Understand funded vs self-funded pathways."
-        canonical="https://aviatoriq.com/hubs/cadet-programmes"
+        canonical="https://aviatorpath.com/hubs/cadet-programmes"
       />
       <PublicNav />
       <main className="min-h-screen bg-[var(--color-navy)] text-white pt-20 pb-16">

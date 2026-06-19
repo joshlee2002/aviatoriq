@@ -6,7 +6,7 @@ const AdhdFaaMedical = () => {
     <GuideLayout
       title="Can You Be a Pilot with ADHD in the USA? FAA Medical Rules Explained"
       subtitle="Navigating the FAA's medical certification process with a history of ADHD can be complex, but it's not impossible. This guide explains the requirements, challenges, and pathways to becoming a pilot."
-      canonical="https://aviatoriq.com/us/guides/adhd-faa-medical"
+      canonical="https://aviatorpath.com/us/guides/adhd-faa-medical"
       metaDescription="Understand the FAA's medical rules for pilots with ADHD, including Special Issuance, disqualifying medications, neuropsychological testing, and the Fast Trac..."
       faqSchema={[
         {

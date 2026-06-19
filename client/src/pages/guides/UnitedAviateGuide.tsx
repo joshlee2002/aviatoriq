@@ -7,7 +7,7 @@ export default function UnitedAviateGuide() {
     <GuideLayout
       title="United Aviate Program: 2026 Requirements & Complete Guide"
       subtitle="How United's pilot development programme actually works. The difference between the Academy and the Program, transition requirements, and the CJO."
-      canonical="https://aviatoriq.com/us/guides/united-aviate-program"
+      canonical="https://aviatorpath.com/us/guides/united-aviate-program"
       metaDescription="United Aviate Program 2026 guide. Requirements, transition timeline, United Aviate Academy vs the general program, and how to secure a United First Officer CJO."
       readTime="11 min read"
       lastUpdated="June 2026"

@@ -172,12 +172,12 @@ export default function RoadmapGenerator() {
   };
 
   const handleShare = async () => {
-    const text = `I just got my personalised pilot training roadmap from AviatorIQ — my path is: ${roadmapResults[result!].title}. Get yours free:`;
+    const text = `I just got my personalised pilot training roadmap from AviatorPath — my path is: ${roadmapResults[result!].title}. Get yours free:`;
     const url = window.location.href;
     if (navigator.share) {
       try {
         await navigator.share({
-          title: "My Pilot Training Roadmap — AviatorIQ",
+          title: "My Pilot Training Roadmap — AviatorPath",
           text,
           url,
         });
@@ -204,7 +204,7 @@ export default function RoadmapGenerator() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="Personalised Pilot Training Roadmap | AviatorIQ"
+        title="Personalised Pilot Training Roadmap | AviatorPath"
         description="Answer 5 questions. Get a data-driven, personalised pilot training roadmap — costs, timeline, matched schools, and a step-by-step action plan built for your exact situation."
       />
       <PublicNav />

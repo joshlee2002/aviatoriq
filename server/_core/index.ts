@@ -99,7 +99,7 @@ async function startServer() {
                   const resultsUrl = `${appUrl}/results/${lead.id}`;
                   await sendEmail({
                     to: lead.email,
-                    subject: "Your Premium AviatorIQ Roadmap is unlocked \uD83C\uDF89",
+                    subject: "Your Premium AviatorPath Roadmap is unlocked \uD83C\uDF89",
                     react: React.createElement(PremiumRoadmapUnlocked, {
                       firstName,
                       resultsUrl,

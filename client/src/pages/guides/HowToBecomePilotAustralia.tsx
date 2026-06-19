@@ -7,7 +7,7 @@ export default function HowToBecomePilotAustralia() {
     <GuideLayout
       title="How to Become a Pilot in Australia (2026 Complete Guide)"
       subtitle="The honest, step-by-step guide to Australian pilot training — CASA licences, Part 141 vs 142, real costs, timelines, and how to get your first airline job."
-      canonical="https://aviatoriq.com/guides/how-to-become-a-pilot-australia"
+      canonical="https://aviatorpath.com/guides/how-to-become-a-pilot-australia"
       metaDescription="How to become an airline pilot in Australia in 2026. Covers CASA licences (RPL, PPL, CPL, ATPL), Part 142 integrated vs modular routes, real costs (AUD $65k–..."
       readTime="14 min read"
       lastUpdated="June 2026"

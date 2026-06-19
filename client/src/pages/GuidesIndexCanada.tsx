@@ -56,7 +56,7 @@ const muted = "oklch(0.55 0.04 240)";
 const ctaGradient = "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.2 50))";
 
 export default function GuidesIndexCanada() {
-  useEffect(() => { document.title = "Canada Pilot Training Guides 2026 – AviatorIQ"; }, []);
+  useEffect(() => { document.title = "Canada Pilot Training Guides 2026 – AviatorPath"; }, []);
   const categories = Array.from(new Set(guides.map((g) => g.category)));
 
   return (

@@ -125,7 +125,7 @@ function EmailCaptureCard({ result }: { result: FlightDeckResult }) {
             className="mt-0.5 w-4 h-4 rounded accent-[var(--color-gold)] shrink-0"
           />
           <span className="text-white/40 text-xs leading-relaxed">
-            I agree to receive my pilot roadmap and occasional guidance emails from AviatorIQ. No spam, unsubscribe anytime.
+            I agree to receive my pilot roadmap and occasional guidance emails from AviatorPath. No spam, unsubscribe anytime.
           </span>
         </label>
         <button
@@ -199,7 +199,7 @@ export default function FlightDeckResults() {
     onSuccess: (data) => setShareId(data.shareId),
   });
   useEffect(() => {
-    document.title = "Your Pilot Profile | AviatorIQ";
+    document.title = "Your Pilot Profile | AviatorPath";
     const stored = sessionStorage.getItem("flightDeckAnswers");
     if (!stored) {
       navigate("/quiz/flight-deck");
@@ -253,7 +253,7 @@ export default function FlightDeckResults() {
       <header className="flex items-center justify-between px-6 py-4 border-b border-white/10">
         <Link href="/" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
           <Plane className="w-5 h-5 text-[var(--color-gold)]" />
-          <span className="font-display font-bold text-sm">AviatorIQ</span>
+          <span className="font-display font-bold text-sm">AviatorPath</span>
         </Link>
         <button onClick={handleShare} className="flex items-center gap-1.5 text-white/45 hover:text-white/70 text-xs transition-colors">
           <Share2 className="w-4 h-4" />
@@ -325,7 +325,7 @@ export default function FlightDeckResults() {
               Get Your Full Pilot Blueprint
             </h2>
             <p className="text-[var(--color-navy)]/75 text-sm mb-5 max-w-sm mx-auto leading-relaxed">
-              10 minutes. Full AviatorIQ Score, AI training roadmap, 5-dimension breakdown, and matched flight schools — completely free.
+              10 minutes. Full AviatorPath Score, AI training roadmap, 5-dimension breakdown, and matched flight schools — completely free.
             </p>
             <Link href="/quiz">
               <button className="w-full py-4 rounded-xl bg-[var(--color-navy)] text-white font-bold text-sm hover:bg-[var(--color-navy)]/90 transition-all active:scale-[0.98] flex items-center justify-center gap-2">

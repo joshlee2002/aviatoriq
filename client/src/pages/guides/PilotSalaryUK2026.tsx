@@ -7,7 +7,7 @@ export default function PilotSalaryUK2026() {
     <GuideLayout
       title="UK Pilot Salary Guide 2026: First Officer to Captain"
       subtitle="Real salary figures for UK airline pilots in 2026 — by rank, airline, and aircraft type. Based on current pay scales and union data."
-      canonical="https://aviatoriq.com/guides/uk-pilot-salary-2026"
+      canonical="https://aviatorpath.com/guides/uk-pilot-salary-2026"
       metaDescription="UK pilot salary 2026: first officer and captain pay ranges, airline differences, progression, allowances and key caveats for trainees."
       readTime="12 min read"
       lastUpdated="June 2026"

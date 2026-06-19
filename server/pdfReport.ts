@@ -1,5 +1,5 @@
 /**
- * AviatorIQ Pilot Blueprint PDF Generator
+ * AviatorPath Pilot Blueprint PDF Generator
  * Premium version: pulls from AI roadmap output for personalised content.
  * Falls back to lead data if aiRoadmap is not yet generated.
  */
@@ -152,7 +152,7 @@ export async function generatePilotBlueprint(
     const doc = new PDFDocument({
       size: "A4",
       margin: 50,
-      info: { Title: "AviatorIQ Premium Pilot Blueprint", Author: "AviatorIQ" },
+      info: { Title: "AviatorPath Premium Pilot Blueprint", Author: "AviatorPath" },
     });
     const chunks: Buffer[] = [];
     doc.on("data", (chunk: Buffer) => chunks.push(chunk));
@@ -187,7 +187,7 @@ export async function generatePilotBlueprint(
 
     // ── Cover / Header ──────────────────────────────────────────────────────
     doc.rect(0, 0, pageWidth, 180).fill(NAVY);
-    doc.fontSize(22).fillColor(PRIMARY).font("Helvetica-Bold").text("AviatorIQ", 50, 40);
+    doc.fontSize(22).fillColor(PRIMARY).font("Helvetica-Bold").text("AviatorPath", 50, 40);
     doc.fontSize(11).fillColor("#93C5FD").font("Helvetica").text("Pilot Career Intelligence Platform", 50, 68);
     doc.fontSize(18).fillColor(WHITE).font("Helvetica-Bold").text("Premium Pilot Blueprint", 50, 100);
     doc.fontSize(11).fillColor("#CBD5E1").font("Helvetica").text(`Prepared for: ${lead.fullName}`, 50, 124);
@@ -198,14 +198,14 @@ export async function generatePilotBlueprint(
     const badgeX = pageWidth - 140;
     doc.circle(badgeX + 45, 90, 45).fill(scoreColour(score));
     doc.fontSize(28).fillColor(WHITE).font("Helvetica-Bold").text(`${score}`, badgeX + 18, 72, { width: 54, align: "center" });
-    doc.fontSize(9).fillColor(WHITE).font("Helvetica").text("AviatorIQ Score", badgeX + 5, 113, { width: 80, align: "center" });
+    doc.fontSize(9).fillColor(WHITE).font("Helvetica").text("AviatorPath Score", badgeX + 5, 113, { width: 80, align: "center" });
     doc.roundedRect(badgeX - 10, 138, 100, 22, 4).fill(catColour);
     doc.fontSize(9).fillColor(WHITE).font("Helvetica-Bold").text(catLabel, badgeX - 10, 144, { width: 100, align: "center" });
 
     let y = 200;
 
     // ── Score Dimensions ────────────────────────────────────────────────────
-    y = sectionHeader(doc, "Your AviatorIQ Score Breakdown", y, pageWidth);
+    y = sectionHeader(doc, "Your AviatorPath Score Breakdown", y, pageWidth);
     const dimKeys = ["readiness", "finance", "medical", "career", "pathway"];
     const dimLabels: Record<string, string> = {
       readiness: "Readiness Score",
@@ -452,7 +452,7 @@ export async function generatePilotBlueprint(
       `Research training programmes in ${lead.country ?? "your country"} and request prospectuses from matched schools.`,
       `Arrange a training finance consultation — many schools offer payment plans and specialist aviation lenders exist.`,
       `Join an online pilot community (PPRuNe, Reddit r/flying) to connect with students currently in training.`,
-      `Return to AviatorIQ to request introductions to your matched schools.`,
+      `Return to AviatorPath to request introductions to your matched schools.`,
     ];
     for (let i = 0; i < actions.length; i++) {
       y = pageBreakIfNeeded(doc, y, 50);
@@ -468,11 +468,11 @@ export async function generatePilotBlueprint(
     doc.rect(50, y, contentWidth, 80).fill(NAVY);
     doc.fontSize(13).fillColor(WHITE).font("Helvetica-Bold").text("Ready to speak with a flight school?", 60, y + 12, { width: contentWidth - 20 });
     doc.fontSize(9).fillColor("#CBD5E1").font("Helvetica").text(
-      "Return to your AviatorIQ results page to request introductions to your matched schools. They will receive your full profile and contact you directly.",
+      "Return to your AviatorPath results page to request introductions to your matched schools. They will receive your full profile and contact you directly.",
       60, y + 32, { width: contentWidth - 20 }
     );
     doc.fontSize(9).fillColor(PRIMARY).font("Helvetica-Bold").text(
-      `Visit: aviatoriq.com/results/${lead.id}`,
+      `Visit: aviatorpath.com/results/${lead.id}`,
       60, y + 58, { width: contentWidth - 20 }
     );
     y += 96;
@@ -480,7 +480,7 @@ export async function generatePilotBlueprint(
     // ── Disclaimer ──────────────────────────────────────────────────────────
     y = pageBreakIfNeeded(doc, y, 60);
     const disclaimer = ai?.disclaimer ??
-      "Disclaimer: This report is generated from your self-reported assessment answers and is intended as general guidance only. Cost estimates, timelines, and school recommendations are indicative and subject to change. AviatorIQ is not a regulated financial adviser or medical authority. Always verify information directly with training providers and qualified professionals before making financial commitments. Costs verified June 2026.";
+      "Disclaimer: This report is generated from your self-reported assessment answers and is intended as general guidance only. Cost estimates, timelines, and school recommendations are indicative and subject to change. AviatorPath is not a regulated financial adviser or medical authority. Always verify information directly with training providers and qualified professionals before making financial commitments. Costs verified June 2026.";
     doc.fontSize(7).fillColor(MID_GREY).font("Helvetica").text(disclaimer, 50, y, { width: contentWidth });
 
     doc.end();

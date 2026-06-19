@@ -8,7 +8,7 @@ export default function EasyJetGeneration() {
     <GuideLayout
       title="easyJet Generation Pilot Programme 2026: MPL vs ATPL Routes"
       subtitle="A detailed breakdown of the easyJet cadet pathway. Understand the €100,000+ self-funded cost, the CAE MPL route vs the Skyborne ATPL route, and the conditional employment reality."
-      canonical="https://aviatoriq.com/guides/easyjet-generation-pilot"
+      canonical="https://aviatorpath.com/guides/easyjet-generation-pilot"
       metaDescription="easyJet Generation Pilot Programme 2026: Compare the CAE MPL and Skyborne ATPL routes. Understand the €100,000+ self-funded costs and conditional First Offic..."
       readTime="9 min read"
       lastUpdated="June 2026"

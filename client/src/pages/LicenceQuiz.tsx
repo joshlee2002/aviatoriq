@@ -170,7 +170,7 @@ export default function LicenceQuiz() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    document.title = "Which Pilot Licence Is Right For You? | AviatorIQ";
+    document.title = "Which Pilot Licence Is Right For You? | AviatorPath";
   }, []);
 
   const submitMutation = trpc.licenceQuiz.submit.useMutation({
@@ -221,7 +221,7 @@ export default function LicenceQuiz() {
           className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
         >
           <Plane className="w-5 h-5 text-[var(--color-gold)]" />
-          <span className="font-display font-bold text-sm">AviatorIQ</span>
+          <span className="font-display font-bold text-sm">AviatorPath</span>
         </Link>
         <span className="text-white/50 text-xs">
           Question {currentStep + 1} of {STEPS.length}

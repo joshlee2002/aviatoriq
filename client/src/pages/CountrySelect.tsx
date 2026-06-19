@@ -55,9 +55,9 @@ export default function CountrySelect() {
   return (
     <>
       <SEO
-        title="AviatorIQ — Choose Your Country"
+        title="AviatorPath — Choose Your Country"
         description="The world's most personalised pilot training guidance platform. Select your country to get started with tailored costs, routes, and school recommendations."
-        canonical="https://aviatoriq.com/select"
+        canonical="https://aviatorpath.com/select"
       />
       <div
         className="min-h-screen flex flex-col items-center justify-center px-4 py-16"
@@ -72,7 +72,7 @@ export default function CountrySelect() {
             <span className="text-white font-bold text-lg">A</span>
           </div>
           <span className="text-white font-bold text-2xl tracking-tight">
-            AviatorIQ
+            AviatorPath
           </span>
         </div>
 

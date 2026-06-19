@@ -113,12 +113,12 @@
 - [x] Vitest unit tests for lead router
 - [x] Final checkpoint
 
-## Phase 10 – AviatorIQ Rebrand & Platform Upgrade
+## Phase 10 – AviatorPath Rebrand & Platform Upgrade
 
-- [x] Rename platform from PilotPath to AviatorIQ in all files (HTML title, nav, footer, meta, copy)
-- [x] Update app title secret VITE_APP_TITLE to AviatorIQ
+- [x] Rename platform from PilotPath to AviatorPath in all files (HTML title, nav, footer, meta, copy)
+- [x] Update app title secret VITE_APP_TITLE to AviatorPath
 - [x] Update scoring engine to return 5 sub-scores (Readiness, Finance, Medical, Career, Pathway)
-- [x] Rebuild results page with 5-dimension AviatorIQ score card
+- [x] Rebuild results page with 5-dimension AviatorPath score card
 - [x] Replace "Visit School" links with "Request Introduction" checkbox flow
 - [x] Add introduction_requests table to schema and router
 - [x] Seed 50 real flight schools with country, type, finance, website data
@@ -139,7 +139,7 @@
 
 ## Phase 12 – Partner Page, Quiz Enhancement, PDF & Analytics
 
-- [x] Partner With AviatorIQ school-facing sales page (/partner)
+- [x] Partner With AviatorPath school-facing sales page (/partner)
 - [x] Add preferred contact method question to quiz (Email/Phone/WhatsApp/Any)
 - [x] Add preferredContact field to leads schema and migration
 - [x] Lead value estimation in admin dashboard (High/Medium/Low, not visible to users)
@@ -188,7 +188,7 @@
 - [x] Build results page at /quiz/licence/results with immediate result display
 - [x] Add email gate for detailed PDF breakdown (email + consent only)
 - [x] Add social proof stat ("X% of users with this result take the career assessment")
-- [x] Add AviatorIQ Career Assessment CTA funnel on results page
+- [x] Add AviatorPath Career Assessment CTA funnel on results page
 - [x] Add licence quiz entry point card on homepage
 - [x] Add licence quiz link in PublicNav and footer
 - [x] Register /quiz/licence and /quiz/licence/results routes in App.tsx
@@ -198,7 +198,7 @@
 
 - [x] Build client-side scoring engine in client/src/lib/flightDeckScoring.ts
 - [x] Build 6-question quiz UI at /quiz/flight-deck with dark aviation theme
-- [x] Build results page at /quiz/flight-deck/results with Flight Potential Score, barrier card, timeline, and AviatorIQ CTA
+- [x] Build results page at /quiz/flight-deck/results with Flight Potential Score, barrier card, timeline, and AviatorPath CTA
 - [x] Register routes in App.tsx
 - [x] Add Flight Deck quiz as primary card in homepage QuizTeaserSection (3-card grid)
 - [x] Update PublicNav Quizzes link to point to /quiz/flight-deck
@@ -376,7 +376,7 @@
 - `seed-schools.mjs` (65 schools)
 - `seed-jobs.mjs` (new, 30 jobs)
 - `seed-stories.mjs` (new, 12 stories)
-- `docs/aviatoriq-product-audit-rebuild-plan.md` (new, from PR #3)
+- `docs/aviatorpath-product-audit-rebuild-plan.md` (new, from PR #3)
 
 ### Still to do (Week 2–4)
 - [ ] Week 2: Lead tags (school-ready, finance-ready, medical-risk, cadet-suitable) — DB migration + scoring + admin display
@@ -526,7 +526,7 @@
 - `server/stripe.test.ts` (22 new tests — Stripe gating, premium content protection, consent enforcement)
 
 ### 30-Day Rebuild Plan — Complete
-All four weeks of the AviatorIQ production rebuild plan are now committed to main:
+All four weeks of the AviatorPath production rebuild plan are now committed to main:
 - **Week 1** (commit 4f7756e): Zod validation, APP_URL centralisation, PDF retry fix, 25 schema tests
 - **Week 2** (commit 519664b): Lead tags, funding gap, strongest asset, results cards, medical risk banner, CTA audit (47 pages)
 - **Week 3** (commit 70d5d5f): Calculator rebuild, school matching scoring engine, partner lead sample card

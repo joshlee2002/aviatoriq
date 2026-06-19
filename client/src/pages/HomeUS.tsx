@@ -403,7 +403,7 @@ function HowItWorksSection() {
       icon: <Target className="w-6 h-6" />,
       title: "Discover your biggest barrier",
       description:
-        "Get your AviatorIQ Score and a clear, honest answer: what is actually standing between you and an FAA certificate? Finance, time, medical, or something else?",
+        "Get your AviatorPath Score and a clear, honest answer: what is actually standing between you and an FAA certificate? Finance, time, medical, or something else?",
       color: "oklch(0.72 0.18 65)",
     },
     {
@@ -519,7 +519,7 @@ function ExpertCredibilitySection() {
     {
       icon: <Target className="w-6 h-6" />,
       title: "Built for one decision",
-      body: "AviatorIQ exists for one purpose: to help you decide whether and how to become a pilot in the US. We don't sell courses, we don't run a flight school. No agenda.",
+      body: "AviatorPath exists for one purpose: to help you decide whether and how to become a pilot in the US. We don't sell courses, we don't run a flight school. No agenda.",
       color: "oklch(0.55 0.18 145)",
     },
   ];
@@ -537,7 +537,7 @@ function ExpertCredibilitySection() {
             }}
           >
             <Shield className="w-3 h-3" />
-            Why trust AviatorIQ
+            Why trust AviatorPath
           </div>
           <h2
             className="text-3xl md:text-4xl font-display font-bold text-white mb-4"
@@ -547,7 +547,7 @@ function ExpertCredibilitySection() {
           </h2>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: muted }}>
             The internet is full of flight school websites dressed up as advice.
-            AviatorIQ is independent. Here's what that means in practice.
+            AviatorPath is independent. Here's what that means in practice.
           </p>
         </div>
 
@@ -604,7 +604,7 @@ function ExpertCredibilitySection() {
             </span>{" "}
             If you spot anything inaccurate in our guides, we want to know.{" "}
             <a
-              href="mailto:hello@aviatoriq.com"
+              href="mailto:hello@aviatorpath.com"
               className="underline"
               style={{ color: "oklch(0.65 0.18 240)" }}
             >
@@ -649,7 +649,7 @@ function QuizTeaserSection() {
       badgeColor: "oklch(0.72 0.18 65)",
       tag: "Most popular",
       title: "Career Readiness Assessment",
-      desc: "Your AviatorIQ Score, biggest barrier, AI training roadmap, matched US flight schools, and a free PDF blueprint.",
+      desc: "Your AviatorPath Score, biggest barrier, AI training roadmap, matched US flight schools, and a free PDF blueprint.",
       href: "/quiz",
       cta: "Take the assessment",
       variant: "primary",
@@ -953,7 +953,7 @@ function TrainingRoutesSection() {
           </h2>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: muted }}>
             Whether you want to fly for a major airline, for pleasure, or as a
-            career change, AviatorIQ helps you find the right FAA route.
+            career change, AviatorPath helps you find the right FAA route.
           </p>
         </div>
 
@@ -1297,7 +1297,7 @@ function SchoolMatchingSection() {
             Matched to the right US flight school
           </h2>
           <p className="text-lg" style={{ color: muted }}>
-            After your assessment, AviatorIQ matches you with US flight schools
+            After your assessment, AviatorPath matches you with US flight schools
             based on your state, training goal, budget and FAA route — not
             random results.
           </p>
@@ -1571,14 +1571,14 @@ export default function HomeUS() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="AviatorIQ US — FAA Pilot Training Guidance, Costs & Flight Schools 2026"
+        title="AviatorPath US — FAA Pilot Training Guidance, Costs & Flight Schools 2026"
         description="The most personalised pilot training guidance platform for the US. Part 141 vs 61, FAA medical requirements, ATP costs, airline cadet programmes, and the best US flight schools."
         canonical="/us"
         schema={{
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "AviatorIQ US",
-          url: "https://aviatoriq.com/us",
+          name: "AviatorPath US",
+          url: "https://aviatorpath.com/us",
           description:
             "The decision platform for people thinking about becoming a pilot in the United States.",
         }}

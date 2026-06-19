@@ -12,37 +12,37 @@
 import type { Request, Response, NextFunction } from "express";
 import { getMetaForPath } from "./seoMeta";
 
-const SITE_NAME = "AviatorIQ";
-const DEFAULT_OG_IMAGE = "https://aviatoriq.com/og-default.jpg";
+const SITE_NAME = "AviatorPath";
+const DEFAULT_OG_IMAGE = "https://aviatorpath.com/og-default.jpg";
 
 /** Global Organization + WebSite schema injected on every page */
 const globalSchema = JSON.stringify([
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "AviatorIQ",
-    url: "https://aviatoriq.com",
-    logo: "https://aviatoriq.com/favicon.svg",
+    name: "AviatorPath",
+    url: "https://aviatorpath.com",
+    logo: "https://aviatorpath.com/favicon.svg",
     sameAs: [
-      "https://twitter.com/aviatoriq",
-      "https://www.linkedin.com/company/aviatoriq",
+      "https://twitter.com/aviatorpath",
+      "https://www.linkedin.com/company/aviatorpath",
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      email: "hello@aviatoriq.co.uk",
+      email: "hello@aviatorpath.co.uk",
       contactType: "customer support",
     },
   },
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "AviatorIQ",
-    url: "https://aviatoriq.com",
+    name: "AviatorPath",
+    url: "https://aviatorpath.com",
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://aviatoriq.com/schools?q={search_term_string}",
+        urlTemplate: "https://aviatorpath.com/schools?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },
@@ -98,7 +98,7 @@ export function buildSeoTags(urlPath: string): string | null {
     <meta name="twitter:title" content="${title}" />
     <meta name="twitter:description" content="${description}" />
     <meta name="twitter:image" content="${ogImage}" />
-    <meta name="twitter:site" content="@aviatoriq" />
+    <meta name="twitter:site" content="@aviatorpath" />
     <!-- Global Schema -->
     <script type="application/ld+json">${globalSchema}</script>`;
 }

@@ -275,7 +275,7 @@ const jobSchema = {
   "@type": "ItemList",
   name: "UK Airline Pilot Jobs 2026",
   description: "Current UK airline pilot vacancies — First Officer, Captain, Cadet, and Instructor roles",
-  url: "https://aviatoriq.com/jobs",
+  url: "https://aviatorpath.com/jobs",
 };
 
 export default function Jobs() {
@@ -298,9 +298,9 @@ export default function Jobs() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: bg }}>
       <SEO
-        title="Pilot Jobs UK 2026 | Airline & Aviation Vacancies | AviatorIQ"
+        title="Pilot Jobs UK 2026 | Airline & Aviation Vacancies | AviatorPath"
         description="Current UK airline pilot jobs — First Officer, Captain, Cadet, and Instructor vacancies at easyJet, Ryanair, British Airways, Jet2, TUI, and more. Updated June 2026."
-        canonical="https://aviatoriq.com/jobs"
+        canonical="https://aviatorpath.com/jobs"
         schema={jobSchema}
       />
       <PublicNav />
@@ -351,7 +351,7 @@ export default function Jobs() {
               </div>
               <div>
                 <p className="text-sm font-bold mb-1" style={{ color: "oklch(0.82 0.12 240)" }}>Role profiles — not live job postings</p>
-                <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>These are curated hiring route profiles for airlines that regularly recruit pilots. Each links to the airline’s official careers page where you can check current vacancies and apply directly. AviatorIQ is not a recruitment agency and does not charge fees. Always verify availability directly with the airline before applying.</p>
+                <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>These are curated hiring route profiles for airlines that regularly recruit pilots. Each links to the airline’s official careers page where you can check current vacancies and apply directly. AviatorPath is not a recruitment agency and does not charge fees. Always verify availability directly with the airline before applying.</p>
               </div>
             </div>
 

@@ -136,7 +136,7 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
 
     async function detect() {
       // Check localStorage override first
-      const stored = localStorage.getItem("aviatoriq_currency");
+      const stored = localStorage.getItem("aviatorpath_currency");
       if (stored) {
         const found = SUPPORTED_CURRENCIES.find(c => c.code === stored);
         if (found) {
@@ -201,7 +201,7 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
     const found = SUPPORTED_CURRENCIES.find(c => c.code === code);
     if (!found) return;
     setCurrencyState(found);
-    localStorage.setItem("aviatoriq_currency", code);
+    localStorage.setItem("aviatorpath_currency", code);
   }, []);
 
   const formatPrice = useCallback(

@@ -9,7 +9,7 @@ export default function BASpeedbirdAcademy() {
     <GuideLayout
       title="British Airways Speedbird Academy 2026: Funding, Selection & Reality"
       subtitle="Everything you need to know about BA's fully funded cadet programme. Understand the 1% acceptance rate, the training bond, and the conditional First Officer pathway."
-      canonical="https://aviatoriq.com/guides/ba-speedbird-academy"
+      canonical="https://aviatorpath.com/guides/ba-speedbird-academy"
       metaDescription="British Airways Speedbird Academy 2026: application process, selection stages, fully funded training at FTEJerez/Skyborne, and the reality of the training bond."
       readTime="10 min read"
       lastUpdated="June 2026"

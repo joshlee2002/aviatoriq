@@ -10,8 +10,8 @@ export default function EditorialPolicy() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="Editorial Policy | AviatorIQ"
-        description="AviatorIQ's editorial policy. Learn how we research, write, fact-check, and update our pilot training guides to ensure accuracy and trustworthiness."
+        title="Editorial Policy | AviatorPath"
+        description="AviatorPath's editorial policy. Learn how we research, write, fact-check, and update our pilot training guides to ensure accuracy and trustworthiness."
         canonical="/editorial-policy"
       />
       <PublicNav />
@@ -44,7 +44,7 @@ export default function EditorialPolicy() {
             <section>
               <h2 className="text-xl font-bold text-white mb-3">Our Mission</h2>
               <p className="text-sm leading-relaxed">
-                AviatorIQ exists to make accurate, up-to-date pilot training
+                AviatorPath exists to make accurate, up-to-date pilot training
                 information freely available to everyone. We believe that the
                 cost of becoming a commercial pilot should not be made worse by
                 a lack of clear, trustworthy guidance. Every guide we publish is
@@ -58,7 +58,7 @@ export default function EditorialPolicy() {
                 Who Writes Our Guides
               </h2>
               <p className="text-sm leading-relaxed mb-3">
-                Our content is produced by the AviatorIQ editorial team, drawing
+                Our content is produced by the AviatorPath editorial team, drawing
                 on publicly available regulatory documentation, official airline
                 careers pages, industry salary surveys, and direct
                 correspondence with Approved Training Organisations (ATOs).
@@ -155,7 +155,7 @@ export default function EditorialPolicy() {
                 Commercial Independence
               </h2>
               <p className="text-sm leading-relaxed mb-3">
-                AviatorIQ generates revenue through partnerships with flight
+                AviatorPath generates revenue through partnerships with flight
                 schools and training providers listed in our Flight School
                 Directory. However, our editorial content is completely
                 independent from our commercial relationships.
@@ -183,13 +183,13 @@ export default function EditorialPolicy() {
               </h2>
               <p className="text-sm leading-relaxed">
                 We take accuracy seriously. If you believe any information on
-                AviatorIQ is incorrect, outdated, or misleading, please contact
+                AviatorPath is incorrect, outdated, or misleading, please contact
                 us at{" "}
                 <a
-                  href="mailto:hello@aviatoriq.com"
+                  href="mailto:hello@aviatorpath.com"
                   className="text-blue-400 underline"
                 >
-                  hello@aviatoriq.com
+                  hello@aviatorpath.com
                 </a>
                 . We will investigate all corrections requests within 5 business
                 days and update the guide if warranted.
@@ -199,7 +199,7 @@ export default function EditorialPolicy() {
             <section>
               <h2 className="text-xl font-bold text-white mb-3">Disclaimer</h2>
               <p className="text-sm leading-relaxed">
-                The content on AviatorIQ is provided for general informational
+                The content on AviatorPath is provided for general informational
                 purposes only. It does not constitute official aviation,
                 medical, legal, or financial advice. Always verify regulatory
                 requirements directly with the relevant authority (CAA, EASA,

@@ -365,7 +365,7 @@ const STEP_LABELS = [
 
 export default function Calculator() {
   useEffect(() => {
-    document.title = "Personalised Pilot Training Cost Calculator – AviatorIQ";
+    document.title = "Personalised Pilot Training Cost Calculator – AviatorPath";
   }, []);
 
   const { formatPrice, currency } = useCurrency();
@@ -557,7 +557,7 @@ export default function Calculator() {
   return (
     <div className="min-h-screen flex flex-col bg-[var(--color-background)]">
       <SEO
-        title="Pilot Training Cost Calculator 2025 | AviatorIQ"
+        title="Pilot Training Cost Calculator 2025 | AviatorPath"
         description="Get a personalised estimate of your pilot training costs. Choose your route (integrated, modular, PPL), location and funding method. Free, instant, no registration."
         canonical="/calculator"
         schema={{
@@ -566,7 +566,7 @@ export default function Calculator() {
           name: "Pilot Training Cost Calculator",
           description:
             "Personalised pilot training cost estimator for UK and international routes",
-          url: "https://aviatoriq.com/calculator",
+          url: "https://aviatorpath.com/calculator",
           applicationCategory: "EducationalApplication",
         }}
       />

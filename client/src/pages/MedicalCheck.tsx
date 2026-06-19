@@ -290,7 +290,7 @@ export default function MedicalCheck() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="Pilot Medical Readiness Check | AviatorIQ"
+        title="Pilot Medical Readiness Check | AviatorPath"
         description="Answer 7 questions and find out if your health profile is likely to be compatible with a pilot medical certificate. Based on CAA/EASA Class 1 standards. Free, confidential, no registration required."
         canonical="/tools/class-1-medical-check"
         schema={{
@@ -299,7 +299,7 @@ export default function MedicalCheck() {
           name: "Pilot Medical Readiness Check",
           description:
             "Free tool to assess whether your health profile is compatible with a pilot medical certificate (based on CAA/EASA Class 1 standards)",
-          url: "https://aviatoriq.com/tools/class-1-medical-check",
+          url: "https://aviatorpath.com/tools/class-1-medical-check",
           applicationCategory: "HealthApplication",
         }}
       />

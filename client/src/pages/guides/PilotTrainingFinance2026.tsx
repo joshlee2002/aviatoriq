@@ -37,7 +37,7 @@ const PilotTrainingFinance2026 = () => {
     <GuideLayout
       title="How to Finance Pilot Training in the UK (2026 Guide)"
       subtitle="An honest, up-to-date breakdown of every realistic funding option for UK pilot training in 2026 — including what has changed, what no longer exists, and what the monthly repayment reality looks like."
-      canonical="https://aviatoriq.com/guides/how-to-finance-pilot-training-uk"
+      canonical="https://aviatorpath.com/guides/how-to-finance-pilot-training-uk"
       metaDescription="How to finance pilot training UK 2026: funded cadets, modular pay-as-you-go, SLC degree routes, specialist loans, savings and risks."
       readTime="11 min read"
       lastUpdated="June 2026"

@@ -166,9 +166,9 @@ export default function FinanceCalculator() {
   return (
     <>
       <SEO
-        title="Pilot Training Finance Repayment Calculator | AviatorIQ"
+        title="Pilot Training Finance Repayment Calculator | AviatorPath"
         description="Calculate your monthly repayments, total interest, and debt burden as a percentage of your pilot salary. Free finance repayment calculator for UK, US, and international pilot training loans."
-        canonical="https://aviatoriq.com/tools/finance-calculator"
+        canonical="https://aviatorpath.com/tools/finance-calculator"
       />
       <PublicNav />
       <main className="min-h-screen bg-[var(--color-navy)] text-white pt-20 pb-16">
@@ -197,7 +197,7 @@ export default function FinanceCalculator() {
               repayment amounts depend on your lender's specific terms, fees,
               and interest calculation method. APR figures are indicative.
               Always obtain a formal loan illustration from your lender before
-              borrowing. AviatorIQ is not a financial adviser.
+              borrowing. AviatorPath is not a financial adviser.
             </p>
           </div>
 

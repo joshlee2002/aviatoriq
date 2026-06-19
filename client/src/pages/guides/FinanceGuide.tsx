@@ -17,9 +17,9 @@ const FinanceGuide = () => {
 
   return (
     <SEO
-      title="How to Finance Pilot Training in the UK | AviatorIQ"
+      title="How to Finance Pilot Training in the UK | AviatorPath"
       description="How to fund pilot training in the UK in 2026. Covers realistic self-funding, scholarships, modular training, family support, and loan risks to verify before applying."
-      canonical="https://aviatoriq.com/guides/how-to-finance-pilot-training-uk"
+      canonical="https://aviatorpath.com/guides/how-to-finance-pilot-training-uk"
     />
   );
 };

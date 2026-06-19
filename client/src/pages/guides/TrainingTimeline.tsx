@@ -7,7 +7,7 @@ const TrainingTimeline = () => {
     <GuideLayout
       title="Pilot Training Timeline: How Long Does It Actually Take?"
       subtitle="Realistic timelines for every stage of pilot training in the UK — from first lesson to airline first officer."
-      canonical="https://aviatoriq.com/guides/training-timeline"
+      canonical="https://aviatorpath.com/guides/training-timeline"
       metaDescription="Pilot training timeline 2025: how long does it take to become an airline pilot in the UK? Integrated 18–24 months, modular 3–5 years. Realistic stage-by-stag..."
       faqSchema={[
         {

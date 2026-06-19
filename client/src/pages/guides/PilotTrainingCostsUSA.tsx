@@ -13,7 +13,7 @@ export default function PilotTrainingCostsUSA() {
       lastUpdated="June 2026"
       heroImage="/manus-storage/training-costs-usa_3d276236.jpg"
       category="US Pilot Training"
-      canonical="https://aviatoriq.com/us/guides/pilot-training-costs-usa"
+      canonical="https://aviatorpath.com/us/guides/pilot-training-costs-usa"
       metaDescription="How much does pilot training cost in the USA in 2026? From zero to ATP, expect $80,000–$124,000. See real prices from ATP Flight School, Epic, and Embry-Ridd..."
       scopeBanner={
         <GuideScopeBanner

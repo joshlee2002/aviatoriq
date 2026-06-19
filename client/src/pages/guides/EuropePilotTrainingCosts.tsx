@@ -9,10 +9,10 @@ export default function EuropePilotTrainingCosts() {
       title="EASA Pilot Training Costs 2026: The True Price of a Frozen ATPL"
       subtitle="An honest breakdown of European flight school costs. From €50k Eastern European modular routes to €120k+ Western European integrated academies, plus the hidden €30k type rating."
       readTime="14 min"
-      author="AviatorIQ Research"
+      author="AviatorPath Research"
       lastUpdated="June 2026"
       category="European Training Costs"
-      canonical="https://aviatoriq.com/europe/guides/pilot-training-costs"
+      canonical="https://aviatorpath.com/europe/guides/pilot-training-costs"
       metaDescription="Explore the detailed costs of pilot training in Europe for 2026. Compare €50k modular vs €120k integrated ATPL programs across EASA member states."
       heroImage="/manus-storage/europe-costs_l2m3n4o5.jpg"
       scopeBanner={

@@ -7,7 +7,7 @@ export default function AtpFlightSchoolGuide() {
     <GuideLayout
       title="ATP Flight School Review: 2026 Cost, Timeline & Reality Check"
       subtitle="Is the $103,995 'zero-to-hero' program worth it? The honest truth about the pace, the instructor ratio, and the airline pipelines at America's largest flight school."
-      canonical="https://aviatoriq.com/us/guides/atp-flight-school-guide"
+      canonical="https://aviatorpath.com/us/guides/atp-flight-school-guide"
       metaDescription="ATP Flight School review 2026. Costs ($103,995), 7-month timeline, washout rates, and whether the Airline Career Pilot Program is right for you."
       readTime="11 min read"
       lastUpdated="June 2026"

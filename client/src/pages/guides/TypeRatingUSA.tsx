@@ -13,7 +13,7 @@ export default function TypeRatingUSA() {
       lastUpdated="June 2026"
       heroImage="/manus-storage/type-rating-usa_492628c9.jpg"
       category="US Pilot Training"
-      canonical="https://aviatoriq.com/us/guides/type-rating-usa"
+      canonical="https://aviatorpath.com/us/guides/type-rating-usa"
       metaDescription="Airline type rating costs in the USA for 2026. A320 costs $32k–$42k. Boeing 737 costs $28k–$38k. Real comparison of self-funded vs airline-sponsored options..."
       scopeBanner={
         <>

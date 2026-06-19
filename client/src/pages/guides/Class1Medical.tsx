@@ -9,7 +9,7 @@ export default function Class1Medical() {
     <GuideLayout
       title="UK CAA Class 1 Medical: Complete 2026 Guide"
       subtitle="Everything you need to know about the UK CAA Class 1 Medical Certificate — what it tests, where to get it, what it costs in 2026, and the critical post-Brexit dual certificate situation."
-      canonical="https://aviatoriq.com/guides/class-1-medical"
+      canonical="https://aviatorpath.com/guides/class-1-medical"
       metaDescription="UK CAA Class 1 Medical 2026: costs, exam process, eyesight, mental health, deferrals, renewals and when to speak to an AME/AeMC."
       readTime="12 min read"
       lastUpdated="June 2026"

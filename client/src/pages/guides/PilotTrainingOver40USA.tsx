@@ -9,7 +9,7 @@ export default function PilotTrainingOver40USA() {
       lastUpdated="June 2026"
       heroImage="/manus-storage/pilot-over-40-usa_35140e0e.jpg"
       category="US Pilot Training"
-      canonical="https://aviatoriq.com/us/guides/pilot-training-over-40-usa"
+      canonical="https://aviatorpath.com/us/guides/pilot-training-over-40-usa"
       metaDescription="Considering a pilot career change over 40 in the USA? This 2026 guide provides a comprehensive roadmap, covering training costs, FAA medicals, funding, and c..."
       sections={[
         {

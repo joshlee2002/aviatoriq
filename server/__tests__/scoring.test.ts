@@ -1,5 +1,5 @@
 /**
- * AviatorIQ — Vitest test suite
+ * AviatorPath — Vitest test suite
  * Covers: scoring engine, consent validation, input constraints,
  *         school matching logic, roadmap sanitisation, and finance consent.
  *

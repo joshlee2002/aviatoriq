@@ -8,10 +8,10 @@ export default function Part61Vs141() {
       subtitle="The two FAA-approved training frameworks have different structures, costs, and timelines. Here's how to choose the right one for your goals in 2026."
       readTime="10 min read"
       heroImage="/manus-storage/part61-141_25c6f61a.jpg"
-      canonical="https://aviatoriq.com/us/guides/part-61-vs-141"
+      canonical="https://aviatorpath.com/us/guides/part-61-vs-141"
       metaDescription="Part 61 vs Part 141 flight training USA — what's the difference, which costs less, which is faster, and which leads to airline cadet programmes. Full 2026 co..."
       author="Joshua Fagan"
-      authorRole="Founder, AviatorIQ — researched from FAA 14 CFR Parts 61 & 141, ATP Flight School, United Aviate Academy, and AABI-accredited university prospectuses"
+      authorRole="Founder, AviatorPath — researched from FAA 14 CFR Parts 61 & 141, ATP Flight School, United Aviate Academy, and AABI-accredited university prospectuses"
       lastUpdated="June 2026"
       sections={[
         {

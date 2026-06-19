@@ -8,7 +8,7 @@ export default function IntegratedVsModular() {
     <GuideLayout
       title="Integrated vs Modular ATPL Training UK 2026: Which Is Right for You?"
       subtitle="An honest, data-driven comparison of the two main routes to an ATPL — including verified 2026 costs, real timelines, airline acceptance, and a decision framework for your situation."
-      canonical="https://aviatoriq.com/guides/integrated-vs-modular"
+      canonical="https://aviatorpath.com/guides/integrated-vs-modular"
       metaDescription="Integrated vs modular ATPL training UK 2026: compare cost, timeline, airline recognition, flexibility and which route fits your budget."
       readTime="12 min read"
       lastUpdated="June 2026"

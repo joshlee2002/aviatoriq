@@ -280,7 +280,7 @@ export default function FlightDeckQuiz() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    document.title = "What's Really Stopping You Becoming A Pilot? | AviatorIQ";
+    document.title = "What's Really Stopping You Becoming A Pilot? | AviatorPath";
   }, []);
 
   const step = STEPS[currentStep];
@@ -320,7 +320,7 @@ export default function FlightDeckQuiz() {
           className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
         >
           <Plane className="w-5 h-5 text-[var(--color-gold)]" />
-          <span className="font-display font-bold text-sm">AviatorIQ</span>
+          <span className="font-display font-bold text-sm">AviatorPath</span>
         </Link>
         <div className="flex items-center gap-3">
           <span className="text-white/70 text-xs">

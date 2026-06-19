@@ -9,8 +9,8 @@ interface SEOProps {
   noindex?: boolean;
 }
 
-const SITE_NAME = "AviatorIQ";
-const BASE_URL = "https://aviatoriq.com";
+const SITE_NAME = "AviatorPath";
+const BASE_URL = "https://aviatorpath.com";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-default.jpg`;
 
 export default function SEO({

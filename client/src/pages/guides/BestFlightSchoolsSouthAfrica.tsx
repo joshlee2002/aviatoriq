@@ -7,11 +7,11 @@ export default function BestFlightSchoolsSouthAfrica() {
       title="Best Flight Schools in South Africa 2026"
       subtitle="A comprehensive guide to the top-rated SACAA-approved flight schools, cadet programmes, and aviation academies across South Africa."
       readTime="9 min"
-      author="AviatorIQ Editorial Team"
+      author="AviatorPath Editorial Team"
       authorRole="Aviation Research Team"
       lastUpdated="June 2026"
       category="Flight Schools"
-      canonical="https://aviatoriq.com/south-africa/guides/best-flight-schools-south-africa"
+      canonical="https://aviatorpath.com/south-africa/guides/best-flight-schools-south-africa"
       metaDescription="Best flight schools in South Africa 2026: compare SACAA-approved ATOs for CPL and ATPL training, including costs, locations, and airline career pathways."
       faqSchema={[
         {
@@ -67,7 +67,7 @@ export default function BestFlightSchoolsSouthAfrica() {
                   Editorial Methodology & Conflict of Interest Statement
                 </p>
                 <p className="text-sm mb-3">
-                  AviatorIQ does not receive referral fees, commissions, or
+                  AviatorPath does not receive referral fees, commissions, or
                   payment from any flight school listed in this guide. Rankings
                   are based solely on the scoring criteria above. All fees are
                   in ZAR and must be verified via direct quote before enrolment.

@@ -74,7 +74,7 @@ Pages:
 - Some meta descriptions are too long and likely to be rewritten.
 - Cost pages need stronger 2026 source tables and clearer assumptions.
 - “Best route” content should include a decision matrix and not just prose.
-- The pages need more original AviatorIQ value: route calculators, worked examples, and downloadable checklists.
+- The pages need more original AviatorPath value: route calculators, worked examples, and downloadable checklists.
 
 **Priority actions:**
 

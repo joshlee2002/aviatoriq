@@ -90,9 +90,9 @@ export default function CalculatorUS() {
       }}
     >
       <SEO
-        title="US Pilot Training Cost Calculator | AviatorIQ US"
+        title="US Pilot Training Cost Calculator | AviatorPath US"
         description="Calculate the exact cost of becoming an airline pilot in the USA. Compare Part 61 vs Part 141 costs."
-        canonical="https://aviatoriq.com/us/calculator"
+        canonical="https://aviatorpath.com/us/calculator"
       />
       <PublicNav />
 

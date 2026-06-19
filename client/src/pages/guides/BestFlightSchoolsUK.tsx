@@ -53,7 +53,7 @@ const SCORING_CRITERIA = [
 // ── School comparison table ──────────────────────────────────────────────────
 // All data sourced from official school websites and UK CAA ATO register, June 2026.
 // "Not disclosed" means the school does not publish this information publicly.
-// AviatorIQ does not receive referral fees from any school listed.
+// AviatorPath does not receive referral fees from any school listed.
 const SCHOOL_COMPARISON = [
   {
     schoolName: "Skyborne Airline Academy",
@@ -180,7 +180,7 @@ export default function BestFlightSchoolsUK() {
     <GuideLayout
       title="Best Flight Schools in the UK 2026: Compare Costs, Fleets & Reviews"
       subtitle="An independent, data-backed analysis of the UK's leading integrated and modular flight schools — comparing 2026 fees, airline relationships, fleet sizes, and student outcomes."
-      canonical="https://aviatoriq.com/guides/best-flight-schools-uk-2026"
+      canonical="https://aviatorpath.com/guides/best-flight-schools-uk-2026"
       metaDescription="Best flight schools UK 2026: compare integrated and modular academies, costs, airline connections, fleet size, pass rates, and how to choose."
       readTime="16 min read"
       lastUpdated="June 2026"
@@ -188,8 +188,8 @@ export default function BestFlightSchoolsUK() {
       financeDisclaimer={true}
       regulatorName="UK CAA Approved Training Organisations"
       regulatorUrl="https://www.caa.co.uk/commercial-industry/aircraft/pilot-licences/aeroplanes/approved-training-organisations/"
-      methodologySummary="School data sourced from UK CAA ATO register and individual school prospectuses, verified June 2026. AviatorIQ does not receive referral fees from any school listed."
-      methodologyDetail="All school listings in this guide are verified against the UK CAA Approved Training Organisation (ATO) register. Fee data is sourced from individual school public websites or direct prospectuses as of June 2026. Where fees are not publicly confirmed, this is stated explicitly — no fee is estimated or assumed. Airline partnership claims are only listed where confirmed by the school or airline publicly. AviatorIQ does not receive referral fees, commissions, or payment from any flight school listed in this guide. The 'best for' categories are based on the scoring criteria described in this guide, not on editorial opinion or commercial relationships."
+      methodologySummary="School data sourced from UK CAA ATO register and individual school prospectuses, verified June 2026. AviatorPath does not receive referral fees from any school listed."
+      methodologyDetail="All school listings in this guide are verified against the UK CAA Approved Training Organisation (ATO) register. Fee data is sourced from individual school public websites or direct prospectuses as of June 2026. Where fees are not publicly confirmed, this is stated explicitly — no fee is estimated or assumed. Airline partnership claims are only listed where confirmed by the school or airline publicly. AviatorPath does not receive referral fees, commissions, or payment from any flight school listed in this guide. The 'best for' categories are based on the scoring criteria described in this guide, not on editorial opinion or commercial relationships."
       methodologySources={[
         {
           name: "UK CAA ATO Register",
@@ -210,7 +210,7 @@ export default function BestFlightSchoolsUK() {
         {
           question: "What is the best flight school in the UK?",
           answer:
-            "There is no single 'best' flight school in the UK — the right school depends on your route (integrated vs modular), budget, and whether you are targeting a specific airline cadet programme. This guide presents verified data on the main schools so you can make an informed decision. AviatorIQ does not rank schools by name or accept payment to promote any school.",
+            "There is no single 'best' flight school in the UK — the right school depends on your route (integrated vs modular), budget, and whether you are targeting a specific airline cadet programme. This guide presents verified data on the main schools so you can make an informed decision. AviatorPath does not rank schools by name or accept payment to promote any school.",
         },
         {
           question: "How much does a UK flight school cost in 2026?",
@@ -286,7 +286,7 @@ export default function BestFlightSchoolsUK() {
                   className="text-sm mb-3"
                   style={{ color: "oklch(0.7 0.04 240)" }}
                 >
-                  AviatorIQ does not receive referral fees, commissions, or
+                  AviatorPath does not receive referral fees, commissions, or
                   payment from any flight school listed in this guide. No school
                   has paid to be featured, ranked, or described in any
                   particular way. The "best for" categories in this guide are
@@ -757,7 +757,7 @@ export default function BestFlightSchoolsUK() {
               </div>
               <p className="text-xs" style={{ color: "oklch(0.45 0.04 240)" }}>
                 All data sourced from official school websites and UK CAA ATO
-                register, June 2026. AviatorIQ does not receive referral fees
+                register, June 2026. AviatorPath does not receive referral fees
                 from any school listed. Fee confidence: High = confirmed on
                 school website; Medium = from press/third-party; Low = not
                 publicly confirmed — request direct quote.

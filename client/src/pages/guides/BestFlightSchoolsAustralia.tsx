@@ -10,7 +10,7 @@ export default function BestFlightSchoolsAustralia() {
       readTime="12 min read"
       lastUpdated="June 2026"
       category="Australia Pilot Training"
-      canonical="https://aviatoriq.com/australia/guides/best-flight-schools-australia"
+      canonical="https://aviatorpath.com/australia/guides/best-flight-schools-australia"
       metaDescription="Discover the best flight schools in Australia for 2026. Compare university programs like UNSW and RMIT with private academies like Flight Training Adelaide and CAE."
       ctaHref="/schools"
       ctaText="Browse the full school directory"
@@ -48,7 +48,7 @@ export default function BestFlightSchoolsAustralia() {
                   Editorial Methodology & Conflict of Interest Statement
                 </p>
                 <p className="text-sm mb-3">
-                  AviatorIQ does not receive referral fees, commissions, or
+                  AviatorPath does not receive referral fees, commissions, or
                   payment from any flight school listed in this guide. Rankings
                   are based solely on the scoring criteria above. All fees are
                   in AUD and must be verified via direct quote before enrolment.

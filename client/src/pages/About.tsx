@@ -26,24 +26,24 @@ const founderSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Joshua Fagan",
-  jobTitle: "Founder, AviatorIQ",
+  jobTitle: "Founder, AviatorPath",
   description:
-    "Joshua Fagan is the founder of AviatorIQ, the UK's most personalised pilot training guidance platform. He built AviatorIQ after spending years researching the UK pilot training market and identifying how confusing, expensive, and poorly explained the path to becoming a pilot was for most aspiring aviators.",
-  url: "https://aviatoriq.com/about",
+    "Joshua Fagan is the founder of AviatorPath, the UK's most personalised pilot training guidance platform. He built AviatorPath after spending years researching the UK pilot training market and identifying how confusing, expensive, and poorly explained the path to becoming a pilot was for most aspiring aviators.",
+  url: "https://aviatorpath.com/about",
   worksFor: {
     "@type": "Organization",
-    name: "AviatorIQ",
-    url: "https://aviatoriq.com",
+    name: "AviatorPath",
+    url: "https://aviatorpath.com",
   },
 };
 
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "AviatorIQ",
-  url: "https://aviatoriq.com",
+  name: "AviatorPath",
+  url: "https://aviatorpath.com",
   description:
-    "AviatorIQ is the UK's most personalised pilot training guidance platform — interactive tools, deep research guides, and a free career assessment that matches aspiring pilots with the right flight school.",
+    "AviatorPath is the UK's most personalised pilot training guidance platform — interactive tools, deep research guides, and a free career assessment that matches aspiring pilots with the right flight school.",
   founder: {
     "@type": "Person",
     name: "Joshua Fagan",
@@ -56,9 +56,9 @@ export default function About() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: bg }}>
       <SEO
-        title="About AviatorIQ | Founded by Joshua Fagan"
-        description="AviatorIQ was founded by Joshua Fagan to fix the broken, confusing world of UK pilot training guidance. Learn who we are, why we built this, and what we stand for."
-        canonical="https://aviatoriq.com/about"
+        title="About AviatorPath | Founded by Joshua Fagan"
+        description="AviatorPath was founded by Joshua Fagan to fix the broken, confusing world of UK pilot training guidance. Learn who we are, why we built this, and what we stand for."
+        canonical="https://aviatorpath.com/about"
         schema={[founderSchema, orgSchema]}
       />
       <PublicNav />
@@ -88,7 +88,7 @@ export default function About() {
                 color: "oklch(0.7 0.18 240)",
               }}
             >
-              About AviatorIQ
+              About AviatorPath
             </div>
             <h1
               className="text-2xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4"
@@ -101,7 +101,7 @@ export default function About() {
               className="text-base md:text-lg lg:text-xl max-w-2xl"
               style={{ color: "oklch(0.65 0.04 240)" }}
             >
-              AviatorIQ exists because the information aspiring pilots actually
+              AviatorPath exists because the information aspiring pilots actually
               need — honest, specific, and personalised — was almost impossible
               to find.
             </p>
@@ -145,7 +145,7 @@ export default function About() {
                     className="text-sm font-medium mb-4"
                     style={{ color: "oklch(0.6 0.18 240)" }}
                   >
-                    Founder, AviatorIQ
+                    Founder, AviatorPath
                   </p>
                   <div className="space-y-2 w-full">
                     {[
@@ -187,7 +187,7 @@ export default function About() {
                     style={{ color: "oklch(0.7 0.04 240)" }}
                   >
                     <p>
-                      I built AviatorIQ because the information available to
+                      I built AviatorPath because the information available to
                       aspiring pilots was, frankly, a mess. Scattered across
                       dozens of sites, full of outdated costs, vague advice, and
                       — in some cases — outright misleading claims designed to
@@ -211,7 +211,7 @@ export default function About() {
                       financial models that make this industry work.
                     </p>
                     <p>
-                      The result is AviatorIQ — a platform built around one
+                      The result is AviatorPath — a platform built around one
                       principle:{" "}
                       <strong className="text-white">
                         every aspiring pilot deserves personalised, honest
@@ -224,7 +224,7 @@ export default function About() {
                     style={{ borderTop: `1px solid ${border}` }}
                   >
                     <p className="text-xs" style={{ color: muted }}>
-                      All content on AviatorIQ is researched from primary
+                      All content on AviatorPath is researched from primary
                       sources: CAA publications, EASA regulations, official
                       school prospectuses, BALPA data, and direct school
                       communications. Where we express opinions, we say so
@@ -238,7 +238,7 @@ export default function About() {
             {/* What we stand for */}
             <div className="mb-12">
               <h2 className="font-display font-bold text-2xl text-white mb-2">
-                What AviatorIQ stands for
+                What AviatorPath stands for
               </h2>
               <p className="text-sm mb-8" style={{ color: muted }}>
                 Three principles that guide every page on this site.
@@ -334,7 +334,7 @@ export default function About() {
               >
                 <p className="text-xs" style={{ color: muted }}>
                   <strong className="text-white/60">Important:</strong>{" "}
-                  AviatorIQ provides guidance and information only. Nothing on
+                  AviatorPath provides guidance and information only. Nothing on
                   this site constitutes official medical, financial, or career
                   advice. Always verify medical eligibility with a CAA-approved
                   AME, financial decisions with a qualified adviser, and
@@ -346,7 +346,7 @@ export default function About() {
             {/* What's on the site */}
             <div className="mb-12">
               <h2 className="font-display font-bold text-2xl text-white mb-2">
-                What you'll find on AviatorIQ
+                What you'll find on AviatorPath
               </h2>
               <p className="text-sm mb-8" style={{ color: muted }}>
                 Everything built to answer the questions aspiring pilots

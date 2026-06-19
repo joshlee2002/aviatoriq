@@ -103,9 +103,9 @@ export default function PilotMedicalHub() {
   return (
     <>
       <SEO
-        title="Pilot Medical Requirements 2026 | Class 1 CAA, FAA | AviatorIQ"
+        title="Pilot Medical Requirements 2026 | Class 1 CAA, FAA | AviatorPath"
         description="Complete guide to pilot medical requirements for UK CAA Class 1, FAA medical certificates, ADHD, eyesight, and common disqualifiers. Use our free medical condition lookup tool."
-        canonical="https://aviatoriq.com/hubs/pilot-medical"
+        canonical="https://aviatorpath.com/hubs/pilot-medical"
       />
       <PublicNav />
       <main className="min-h-screen bg-[var(--color-navy)] text-white pt-20 pb-16">

@@ -8,10 +8,10 @@ export default function BestFlightSchoolsEurope() {
       title="Best Flight Schools in Europe (EASA): 2026 Directory & Review"
       subtitle="A comprehensive guide to the top-rated EASA Approved Training Organisations (ATOs) across Europe. Compare costs, locations, and airline cadet partnerships."
       readTime="12 min read"
-      author="AviatorIQ Research"
+      author="AviatorPath Research"
       lastUpdated="June 2026"
       category="European Pilot Training"
-      canonical="https://aviatoriq.com/europe/guides/best-flight-schools-europe"
+      canonical="https://aviatorpath.com/europe/guides/best-flight-schools-europe"
       metaDescription="Discover the best EASA flight schools in Europe for 2026. Compare top ATOs like FTEJerez, Bartolini Air, and CAE across Spain, Poland, and the broader EU."
       heroImage="/manus-storage/europe-schools_p6q7r8s9.jpg"
       ctaHref="/europe/schools"
@@ -46,7 +46,7 @@ export default function BestFlightSchoolsEurope() {
                   Editorial Methodology & Conflict of Interest Statement
                 </p>
                 <p className="text-sm mb-3">
-                  AviatorIQ does not receive referral fees, commissions, or
+                  AviatorPath does not receive referral fees, commissions, or
                   payment from any flight school listed in this guide. Rankings
                   are based solely on the scoring criteria above. All fees are
                   in EUR and must be verified via direct quote before enrolment.

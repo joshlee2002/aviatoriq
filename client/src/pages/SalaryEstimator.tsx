@@ -134,9 +134,9 @@ export default function SalaryEstimator() {
   return (
     <>
       <SEO
-        title="Pilot Salary Estimator | AviatorIQ"
+        title="Pilot Salary Estimator | AviatorPath"
         description="Estimate your pilot salary at each career stage — First Officer to Senior Captain. Compare UK, US, Europe, Canada, and Australia. All figures are indicative ranges from BALPA and ALPA data."
-        canonical="https://aviatoriq.com/tools/salary-estimator"
+        canonical="https://aviatorpath.com/tools/salary-estimator"
       />
       <PublicNav />
       <main className="min-h-screen bg-[var(--color-navy)] text-white pt-20 pb-16">

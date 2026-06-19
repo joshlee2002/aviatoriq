@@ -1157,7 +1157,7 @@ function Step7({
         {/* Source */}
         <div className="p-5 rounded-xl bg-[oklch(1_0_0/0.04)] border border-[oklch(1_0_0/0.08)]">
           <p className="text-sm font-semibold text-white mb-1">
-            How did you hear about AviatorIQ?
+            How did you hear about AviatorPath?
           </p>
           <p className="text-xs text-[oklch(0.5_0_0)] mb-4">Optional.</p>
           <div className="grid grid-cols-2 gap-2">
@@ -1229,8 +1229,8 @@ function Step7({
             </div>
             <span className="text-sm text-[oklch(0.75_0_0)] leading-relaxed">
               <strong className="text-white">Required:</strong> I agree to
-              AviatorIQ storing my answers and contacting me about pilot
-              training options. I also agree that AviatorIQ may share my details
+              AviatorPath storing my answers and contacting me about pilot
+              training options. I also agree that AviatorPath may share my details
               with relevant flight schools or training partners where I have
               requested introductions.
             </span>
@@ -1249,7 +1249,7 @@ function Step7({
               )}
             </div>
             <span className="text-sm text-[oklch(0.75_0_0)] leading-relaxed">
-              Optional: I am happy for AviatorIQ to use my anonymised data to
+              Optional: I am happy for AviatorPath to use my anonymised data to
               improve its school matching and guidance services.
             </span>
           </label>
@@ -1273,7 +1273,7 @@ function Step7({
 // ─── Main Quiz Component ──────────────────────────────────────────────────────
 export default function Quiz() {
   useEffect(() => {
-    document.title = "Free Pilot Career Assessment – AviatorIQ";
+    document.title = "Free Pilot Career Assessment – AviatorPath";
   }, []);
 
   // Pre-populate from URL params (e.g. from standalone quiz CTAs)

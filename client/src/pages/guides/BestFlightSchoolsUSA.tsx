@@ -12,7 +12,7 @@ export default function BestFlightSchoolsUSA() {
       lastUpdated="June 2026"
       heroImage="/manus-storage/best-schools-usa_9e4f2b7a.jpg"
       category="US Pilot Training"
-      canonical="https://aviatoriq.com/us/guides/best-flight-schools-usa"
+      canonical="https://aviatorpath.com/us/guides/best-flight-schools-usa"
       metaDescription="Best flight schools in the USA 2026: ATP Flight School ($123,995), Epic Flight Academy ($83,647), Embry-Riddle ($200k+), CAE, UND, and local Part 61 clubs co..."
       faqSchema={[
         {
@@ -52,7 +52,7 @@ export default function BestFlightSchoolsUSA() {
                   Editorial Methodology & Conflict of Interest Statement
                 </p>
                 <p className="text-sm mb-3">
-                  AviatorIQ does not receive referral fees, commissions, or
+                  AviatorPath does not receive referral fees, commissions, or
                   payment from any flight school listed in this guide. Rankings
                   are based solely on the scoring criteria above. All fees are
                   sourced from official school websites and must be verified

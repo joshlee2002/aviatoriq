@@ -1,4 +1,4 @@
-# AviatorIQ — Quiz & Roadmap Honest Audit + £4.99 Upgrade Strategy
+# AviatorPath — Quiz & Roadmap Honest Audit + £4.99 Upgrade Strategy
 
 ---
 

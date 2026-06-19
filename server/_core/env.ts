@@ -1,5 +1,5 @@
 export const ENV = {
-  appId: process.env.VITE_APP_ID ?? "aviatoriq-self-hosted",
+  appId: process.env.VITE_APP_ID ?? "aviatorpath-self-hosted",
   cookieSecret: process.env.JWT_SECRET ?? "change-me-in-production",
   databaseUrl: process.env.DATABASE_URL ?? "",
   oAuthServerUrl: process.env.OAUTH_SERVER_URL ?? "",

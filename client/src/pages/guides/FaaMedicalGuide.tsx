@@ -8,10 +8,10 @@ export default function FaaMedicalGuide() {
       subtitle="A 2026 overview of FAA First, Second, and Third Class Medical Certificates — vision standards, potentially disqualifying conditions, ADHD, depression, and the Special Issuance process."
       readTime="11 min read"
       heroImage="/manus-storage/faa-medical_60c77c69.jpg"
-      canonical="https://aviatoriq.com/us/guides/faa-medical-requirements"
+      canonical="https://aviatorpath.com/us/guides/faa-medical-requirements"
       metaDescription="FAA medical certificate requirements for pilots in 2026. First, Second, and Third Class standards, potentially disqualifying conditions, ADHD, depression, SS..."
       author="Joshua Fagan"
-      authorRole="Founder, AviatorIQ — researched from FAA 14 CFR Part 67, FAA MedXPress guidance, and HIMS AME consultation data"
+      authorRole="Founder, AviatorPath — researched from FAA 14 CFR Part 67, FAA MedXPress guidance, and HIMS AME consultation data"
       lastUpdated="June 2026"
       sections={[
         {

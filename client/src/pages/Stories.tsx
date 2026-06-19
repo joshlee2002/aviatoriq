@@ -161,15 +161,15 @@ export default function Stories() {
   return (
     <div className="min-h-screen flex flex-col" style={{ background: bg }}>
       <SEO
-        title="Real Pilot Stories UK | How They Did It | AviatorIQ"
+        title="Real Pilot Stories UK | How They Did It | AviatorPath"
         description="Real UK pilot career stories — how they trained, what it cost, how long it took, and what they wish they'd known. Honest accounts from working pilots."
-        canonical="https://aviatoriq.com/stories"
+        canonical="https://aviatorpath.com/stories"
         schema={{
           "@context": "https://schema.org",
           "@type": "ItemList",
           name: "Real UK Pilot Career Stories",
           description: "Honest accounts from working UK pilots about their training journey",
-          url: "https://aviatoriq.com/stories",
+          url: "https://aviatorpath.com/stories",
         }}
       />
       <PublicNav />
@@ -202,7 +202,7 @@ export default function Stories() {
                 <p className="text-sm font-bold mb-1" style={{ color: "oklch(0.92 0.12 65)" }}>Illustrative case studies — not verified personal accounts</p>
                 <p className="text-sm" style={{ color: "oklch(0.72 0.04 240)" }}>These stories are composite examples built from real training routes, published costs, and timelines sourced from UK flight schools and CAA data. Names and personal details are illustrative. They are designed to show realistic journeys, not to represent specific individuals.</p>
               </div>
-              <a href="mailto:hello@aviatoriq.co.uk?subject=Share my pilot story" className="flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl font-semibold no-underline transition-all text-sm whitespace-nowrap" style={{ background: "oklch(0.72 0.18 65 / 0.18)", border: "1px solid oklch(0.72 0.18 65 / 0.45)", color: "oklch(0.92 0.12 65)" }}>
+              <a href="mailto:hello@aviatorpath.co.uk?subject=Share my pilot story" className="flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl font-semibold no-underline transition-all text-sm whitespace-nowrap" style={{ background: "oklch(0.72 0.18 65 / 0.18)", border: "1px solid oklch(0.72 0.18 65 / 0.45)", color: "oklch(0.92 0.12 65)" }}>
                 Share your story →
               </a>
             </div>

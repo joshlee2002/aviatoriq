@@ -438,7 +438,7 @@ export default function CadetEligibility() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="UK & European Cadet Programme Eligibility Checker | AviatorIQ"
+        title="UK & European Cadet Programme Eligibility Checker | AviatorPath"
         description="Answer 5 questions to find out which UK and European airline cadet programmes you are eligible for — BA Speedbird Academy, easyJet Generation Pilot, Ryanair, Wizz Air, and TUI MPL."
         canonical="/tools/cadet-eligibility"
         schema={{

@@ -112,10 +112,10 @@ const COUNTRY_HUB_CONFIGS: Record<string, CountryHubConfig> = {
     ],
     roadmapHref: "/quiz",
     seo: {
-      title: "Become a Pilot in Australia 2026 | CASA Training Guide | AviatorIQ",
+      title: "Become a Pilot in Australia 2026 | CASA Training Guide | AviatorPath",
       description:
         "Australia's most complete pilot training resource. CASA CPL/ATPL routes, real 2026 costs in AUD, Class 1 medical guidance, and matched Australian flight schools.",
-      canonical: "https://aviatoriq.com/australia",
+      canonical: "https://aviatorpath.com/australia",
     },
     stats: [
       { value: "A$80k–A$140k", label: "Integrated ATPL cost", iconName: "dollar" },
@@ -184,10 +184,10 @@ const COUNTRY_HUB_CONFIGS: Record<string, CountryHubConfig> = {
     ],
     roadmapHref: "/quiz",
     seo: {
-      title: "Become a Pilot in Canada 2026 | Transport Canada Training Guide | AviatorIQ",
+      title: "Become a Pilot in Canada 2026 | Transport Canada Training Guide | AviatorPath",
       description:
         "Canada's most complete pilot training resource. Transport Canada CPL/ATPL routes, real 2026 costs in CAD, Class 1 medical guidance, and matched Canadian flight schools.",
-      canonical: "https://aviatoriq.com/canada",
+      canonical: "https://aviatorpath.com/canada",
     },
     stats: [
       { value: "C$80k–C$130k", label: "Integrated ATPL cost", iconName: "dollar" },
@@ -256,10 +256,10 @@ const COUNTRY_HUB_CONFIGS: Record<string, CountryHubConfig> = {
     ],
     roadmapHref: "/quiz",
     seo: {
-      title: "Become a Pilot in Europe 2026 | EASA Training Guide | AviatorIQ",
+      title: "Become a Pilot in Europe 2026 | EASA Training Guide | AviatorPath",
       description:
         "Europe's most complete pilot training resource. EASA ATPL routes, real 2026 costs in EUR, Class 1 medical guidance, and matched European flight schools.",
-      canonical: "https://aviatoriq.com/europe",
+      canonical: "https://aviatorpath.com/europe",
     },
     stats: [
       { value: "€70k–€120k", label: "Integrated ATPL cost", iconName: "dollar" },
@@ -339,10 +339,10 @@ const COUNTRY_HUB_CONFIGS: Record<string, CountryHubConfig> = {
     ],
     roadmapHref: "/quiz",
     seo: {
-      title: "Become a Pilot in the UAE 2026 | GCAA Training Guide | AviatorIQ",
+      title: "Become a Pilot in the UAE 2026 | GCAA Training Guide | AviatorPath",
       description:
         "The UAE's most complete pilot training resource. GCAA routes, real 2026 costs in AED, Class 1 medical guidance, and matched UAE flight academies.",
-      canonical: "https://aviatoriq.com/uae",
+      canonical: "https://aviatorpath.com/uae",
     },
     stats: [
       { value: "AED 350k–500k", label: "Integrated ATPL cost", iconName: "dollar" },
@@ -415,10 +415,10 @@ const COUNTRY_HUB_CONFIGS: Record<string, CountryHubConfig> = {
     ],
     roadmapHref: "/quiz",
     seo: {
-      title: "Become a Pilot in South Africa 2026 | SACAA Training Guide | AviatorIQ",
+      title: "Become a Pilot in South Africa 2026 | SACAA Training Guide | AviatorPath",
       description:
         "South Africa's most complete pilot training resource. SACAA CPL/ATPL routes, real 2026 costs in ZAR, Class 1 medical guidance, and matched South African flight schools.",
-      canonical: "https://aviatoriq.com/south-africa",
+      canonical: "https://aviatorpath.com/south-africa",
     },
     stats: [
       { value: "R350k–R550k", label: "Integrated ATPL cost", iconName: "dollar" },
@@ -491,10 +491,10 @@ const COUNTRY_HUB_CONFIGS: Record<string, CountryHubConfig> = {
     ],
     roadmapHref: "/quiz",
     seo: {
-      title: "Become a Pilot in New Zealand 2026 | CAA NZ Training Guide | AviatorIQ",
+      title: "Become a Pilot in New Zealand 2026 | CAA NZ Training Guide | AviatorPath",
       description:
         "New Zealand's most complete pilot training resource. CAA NZ CPL/ATPL routes, real 2026 costs in NZD, Class 1 medical guidance, and matched New Zealand flight schools.",
-      canonical: "https://aviatoriq.com/new-zealand",
+      canonical: "https://aviatorpath.com/new-zealand",
     },
     stats: [
       { value: "NZ$100k–NZ$160k", label: "Integrated ATPL cost", iconName: "dollar" },

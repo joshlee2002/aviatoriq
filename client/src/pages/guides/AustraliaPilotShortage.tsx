@@ -7,7 +7,7 @@ export default function AustraliaPilotShortage() {
     <GuideLayout
       title="The Australian Pilot Shortage 2026: Myth vs Reality"
       subtitle="Is there really a pilot shortage in Australia? We break down the 'Vacuum Effect', the difference between a Captain shortage and a Cadet surplus, and what it means for your career prospects in 2026."
-      canonical="https://aviatoriq.com/australia/guides/australia-pilot-shortage"
+      canonical="https://aviatorpath.com/australia/guides/australia-pilot-shortage"
       metaDescription="Analysis of the Australian pilot shortage in 2026. Understand the 'Vacuum Effect', Qantas Group hiring, and why regional airlines and flight schools are stru..."
       readTime="12 min read"
       lastUpdated="June 2026"

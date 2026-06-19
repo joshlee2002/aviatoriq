@@ -6,7 +6,7 @@ const FrozenAtplUK = () => {
     <GuideLayout
       title="Frozen ATPL UK 2026: What It Is, How to Get One, and What It Costs"
       subtitle="The complete guide to the Frozen ATPL — the qualification status most UK airline First Officer routes expect before type rating or line training."
-      canonical="https://aviatoriq.com/guides/frozen-atpl-uk"
+      canonical="https://aviatorpath.com/guides/frozen-atpl-uk"
       metaDescription="Frozen ATPL UK 2026: what it is, the 13 CAA theory subjects, real costs (Bristol Groundschool from £626), how to unfreeze it, and what airlines actually require."
       faqSchema={[
         {

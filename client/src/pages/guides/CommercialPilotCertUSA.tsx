@@ -54,7 +54,7 @@ const CommercialPilotCertUSA = () => {
     <GuideLayout
       title="Commercial Pilot Certificate (CPL) USA: Requirements, Cost & Career Options"
       subtitle="Obtaining a Commercial Pilot Certificate in the USA, covering FAA requirements, training costs, and diverse career opportunities."
-      canonical="https://aviatoriq.com/us/guides/commercial-pilot-certificate-usa"
+      canonical="https://aviatorpath.com/us/guides/commercial-pilot-certificate-usa"
       metaDescription="Explore the FAA Commercial Pilot Certificate (CPL) in the USA. Learn about Part 61 and Part 141 requirements, training costs, knowledge tests, checkrides, an..."
       faqSchema={[
         {

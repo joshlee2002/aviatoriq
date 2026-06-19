@@ -8,8 +8,8 @@ export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="Contact AviatorIQ | Get in Touch"
-        description="Contact AviatorIQ with questions about pilot training, partnership enquiries, or feedback. Email us at hello@aviatoriq.co.uk."
+        title="Contact AviatorPath | Get in Touch"
+        description="Contact AviatorPath with questions about pilot training, partnership enquiries, or feedback. Email us at hello@aviatorpath.co.uk."
         canonical="/contact"
       />
       <PublicNav />
@@ -20,7 +20,7 @@ export default function Contact() {
               Contact Us
             </h1>
             <p className="text-lg text-white/80">
-              Have a question about pilot training or AviatorIQ? We are here to
+              Have a question about pilot training or AviatorPath? We are here to
               help.
             </p>
           </div>
@@ -53,13 +53,13 @@ export default function Contact() {
                 </h3>
                 <p className="text-sm text-[var(--color-muted-foreground)] mb-4">
                   For general enquiries, school partnership requests, or
-                  feedback about AviatorIQ, email us directly.
+                  feedback about AviatorPath, email us directly.
                 </p>
                 <a
-                  href="mailto:hello@aviatoriq.co.uk"
+                  href="mailto:hello@aviatorpath.co.uk"
                   className="btn-outline text-sm"
                 >
-                  hello@aviatoriq.co.uk
+                  hello@aviatorpath.co.uk
                 </a>
               </div>
             </div>
@@ -70,11 +70,11 @@ export default function Contact() {
               <div className="space-y-5">
                 {[
                   {
-                    q: "Is AviatorIQ free to use?",
+                    q: "Is AviatorPath free to use?",
                     a: "Yes. The career assessment, personalised roadmap, school directory and all guides are completely free for aspiring pilots.",
                   },
                   {
-                    q: "How does AviatorIQ make money?",
+                    q: "How does AviatorPath make money?",
                     a: "We work with flight schools and training providers who pay to be featured in our directory and receive matched leads from the assessment.",
                   },
                   {

@@ -6,7 +6,7 @@ const AtpCertificateUSA = () => {
     <GuideLayout
       title="Airline Transport Pilot (ATP) Certificate USA: Requirements, Cost & How to Get One"
       subtitle="The ATP certificate is the highest level of FAA pilot certification and the final step to an airline captain seat."
-      canonical="https://aviatoriq.com/us/guides/atp-certificate-usa"
+      canonical="https://aviatorpath.com/us/guides/atp-certificate-usa"
       metaDescription="Complete guide to the FAA ATP certificate — 1,500-hour requirements, R-ATP pathways, ATP-CTP course, checkride, and costs. Updated for 2026."
       faqSchema={[
         {

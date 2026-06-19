@@ -25,7 +25,7 @@ const STORAGE_PATH =
 
 // ─── R2/S3 configuration ──────────────────────────────────────────────────────
 const BUCKET_URL = process.env.STORAGE_BUCKET_URL; // e.g. https://<account>.r2.cloudflarestorage.com
-const BUCKET_NAME = process.env.STORAGE_BUCKET_NAME ?? "aviatoriq";
+const BUCKET_NAME = process.env.STORAGE_BUCKET_NAME ?? "aviatorpath";
 const ACCESS_KEY = process.env.STORAGE_ACCESS_KEY_ID;
 const SECRET_KEY = process.env.STORAGE_SECRET_ACCESS_KEY;
 const PUBLIC_CDN = process.env.STORAGE_PUBLIC_CDN_URL; // optional: public bucket URL for direct reads

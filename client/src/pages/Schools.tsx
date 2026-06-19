@@ -122,7 +122,7 @@ export default function Schools() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="Global Flight School Directory 2026 | AviatorIQ"
+        title="Global Flight School Directory 2026 | AviatorPath"
         description="Browse 54+ flight schools worldwide — UK, USA, Australia, Europe and more. Filter by country, training type and finance. Get matched to the right school for your goals."
         canonical="/schools"
         schema={{
@@ -131,7 +131,7 @@ export default function Schools() {
           name: "Flight School Directory",
           description:
             "Directory of UK and international flight schools for aspiring pilots",
-          url: "https://aviatoriq.com/schools",
+          url: "https://aviatorpath.com/schools",
         }}
       />
       <PublicNav />

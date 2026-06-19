@@ -11,8 +11,8 @@ export default function CorrectionsPolicy() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="Corrections Policy | AviatorIQ"
-        description="How AviatorIQ handles factual corrections, updates, and reader feedback on our pilot training guides."
+        title="Corrections Policy | AviatorPath"
+        description="How AviatorPath handles factual corrections, updates, and reader feedback on our pilot training guides."
         canonical="/corrections-policy"
       />
       <PublicNav />
@@ -75,7 +75,7 @@ export default function CorrectionsPolicy() {
                 className="text-sm leading-relaxed mb-3"
                 style={{ color: "oklch(0.65 0.04 240)" }}
               >
-                AviatorIQ publishes guides on pilot training, medical standards,
+                AviatorPath publishes guides on pilot training, medical standards,
                 regulations, costs, and career pathways. This is YMYL (Your
                 Money or Your Life) content — mistakes can lead aspiring pilots
                 to make costly or unsafe decisions. We take this responsibility
@@ -114,14 +114,14 @@ export default function CorrectionsPolicy() {
                 className="text-sm leading-relaxed mb-4"
                 style={{ color: "oklch(0.65 0.04 240)" }}
               >
-                If you believe any information on AviatorIQ is factually
+                If you believe any information on AviatorPath is factually
                 incorrect, outdated, or misleading, please contact us at{" "}
                 <a
-                  href="mailto:corrections@aviatoriq.com"
+                  href="mailto:corrections@aviatorpath.com"
                   className="underline hover:opacity-80"
                   style={{ color: "oklch(0.65 0.18 240)" }}
                 >
-                  corrections@aviatoriq.com
+                  corrections@aviatorpath.com
                 </a>{" "}
                 with the following:
               </p>

@@ -7,11 +7,11 @@ export default function BestFlightSchoolsNewZealand() {
       title="Best Flight Schools in New Zealand 2026"
       subtitle="A comprehensive guide to the top-rated CAA NZ approved flight schools, aero clubs, and aviation academies across New Zealand."
       readTime="9 min"
-      author="AviatorIQ Editorial Team"
+      author="AviatorPath Editorial Team"
       authorRole="Aviation Research Team"
       lastUpdated="June 2026"
       category="Flight Schools"
-      canonical="https://aviatoriq.com/new-zealand/guides/best-flight-schools-new-zealand"
+      canonical="https://aviatorpath.com/new-zealand/guides/best-flight-schools-new-zealand"
       metaDescription="Best flight schools in New Zealand 2026: compare CAA NZ-approved ATOs for CPL and ATPL training, including costs, locations, and airline career pathways."
       faqSchema={[
         {
@@ -68,7 +68,7 @@ export default function BestFlightSchoolsNewZealand() {
                   Editorial Methodology & Conflict of Interest Statement
                 </p>
                 <p className="text-sm mb-3">
-                  AviatorIQ does not receive referral fees, commissions, or
+                  AviatorPath does not receive referral fees, commissions, or
                   payment from any flight school listed in this guide. Rankings
                   are based solely on the scoring criteria above. All fees are
                   in NZD and must be verified via direct quote before enrolment.

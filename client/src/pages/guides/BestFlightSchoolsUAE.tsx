@@ -7,11 +7,11 @@ export default function BestFlightSchoolsUAE() {
       title="Best Flight Schools in the UAE 2026"
       subtitle="A comprehensive guide to GCAA-approved flight academies in the United Arab Emirates, covering Emirates Flight Training Academy, Alpha Aviation Academy, Etihad Aviation Training, and Fujairah Aviation Academy."
       readTime="14 min"
-      author="AviatorIQ Editorial Team"
+      author="AviatorPath Editorial Team"
       authorRole="Aviation Research Team"
       lastUpdated="June 2026"
       category="Flight Schools"
-      canonical="https://aviatoriq.com/uae/guides/best-flight-schools-uae"
+      canonical="https://aviatorpath.com/uae/guides/best-flight-schools-uae"
       metaDescription="Compare the best GCAA-approved flight schools in the UAE for 2026. Covers Emirates Flight Training Academy, Alpha Aviation Academy, Etihad Aviation Training, and Fujairah Aviation Academy — costs, pathways, and airline cadet routes."
       faqSchema={[
         {
@@ -57,7 +57,7 @@ export default function BestFlightSchoolsUAE() {
               <div className="bg-amber-50 border border-amber-200 p-5 rounded-lg mb-6 text-amber-900">
                 <p className="font-semibold text-base mb-3">Editorial Methodology & Conflict of Interest Statement</p>
                 <p className="text-sm mb-3">
-                  AviatorIQ does not receive referral fees, commissions, or payment from any flight school listed in this guide. Rankings are based solely on the scoring criteria below. All fees are indicative and must be verified via direct quote before enrolment — the UAE has very limited public fee disclosure.
+                  AviatorPath does not receive referral fees, commissions, or payment from any flight school listed in this guide. Rankings are based solely on the scoring criteria below. All fees are indicative and must be verified via direct quote before enrolment — the UAE has very limited public fee disclosure.
                 </p>
                 <p className="text-sm">
                   <strong>Regulatory verification:</strong> All schools listed hold a current UAE GCAA Approved Training Organisation (ATO) approval for the courses they advertise. Verify current approval status at{" "}
@@ -98,7 +98,7 @@ export default function BestFlightSchoolsUAE() {
                 The United Arab Emirates has established itself as one of the world's premier aviation training hubs. Its year-round flying weather, world-class infrastructure, and proximity to major Gulf airlines make it an attractive training destination for both UAE nationals and international students. However, the UAE market has some important characteristics that differ from European or North American training environments.
               </p>
               <p className="mt-4">
-                First, <strong>fee transparency is limited</strong>. Most UAE flight academies do not publish full course fee schedules online. You will almost always need to contact the school directly for a detailed quote. The indicative figures in this guide are sourced from publicly available information and existing AviatorIQ guides, but must be verified before you commit.
+                First, <strong>fee transparency is limited</strong>. Most UAE flight academies do not publish full course fee schedules online. You will almost always need to contact the school directly for a detailed quote. The indicative figures in this guide are sourced from publicly available information and existing AviatorPath guides, but must be verified before you commit.
               </p>
               <p className="mt-4">
                 Second, <strong>the sponsored cadet routes are highly restricted</strong>. The Emirates and Etihad funded cadet programmes are exclusively for UAE nationals. International students must self-fund, which at premier academies means costs of AED 500,000–650,000 (approximately USD 136,000–177,000). This is comparable to UK integrated training costs but without the student finance infrastructure.

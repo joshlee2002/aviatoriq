@@ -375,7 +375,7 @@ export default function PublicNav() {
                 >
                   <Plane className="w-4 h-4 text-white" strokeWidth={2.5} />
                 </div>
-                <span>AviatorIQ</span>
+                <span>AviatorPath</span>
               </Link>
 
               {/* Desktop nav */}

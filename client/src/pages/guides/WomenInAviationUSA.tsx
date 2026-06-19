@@ -12,7 +12,7 @@ export default function WomenInAviationUSA() {
       category="US Pilot Careers"
       ctaHref="/us/roadmap"
       ctaText="Get my free US pilot roadmap"
-      canonical="https://aviatoriq.com/us/guides/women-in-aviation"
+      canonical="https://aviatorpath.com/us/guides/women-in-aviation"
       metaDescription="Guide for women pursuing a pilot career in the USA. Covers FAA demographics (6% female ATPs), WAI and Ninety-Nines scholarships, and airline diversity initia..."
       heroImage="/manus-storage/women-aviation_a1ed518f.jpg"
       scopeBanner={

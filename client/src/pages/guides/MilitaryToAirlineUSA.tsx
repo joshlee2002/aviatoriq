@@ -7,7 +7,7 @@ export default function MilitaryToAirlineUSA() {
     <GuideLayout
       title="Military Pilot to Airline Transition USA: Your 2026 Guide"
       subtitle="How to transition from the US military to a commercial airline career — the 750-hour R-ATP, translating hours, and leveraging military experience in 2026."
-      canonical="https://aviatoriq.com/us/guides/military-to-airline-usa"
+      canonical="https://aviatorpath.com/us/guides/military-to-airline-usa"
       metaDescription="Military pilot to airline transition USA 2026. How to translate military flight hours, the 750-hour R-ATP rule, GI Bill funding, and how airlines view milita..."
       readTime="11 min read"
       lastUpdated="June 2026"

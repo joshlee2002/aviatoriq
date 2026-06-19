@@ -7,7 +7,7 @@ const FundPilotTrainingUSA = () => {
     <GuideLayout
       title="How to Fund Pilot Training in the USA: Loans, GI Bill & Scholarships 2026"
       subtitle="Explore the reality of financing US flight training in 2026, including specialized aviation loans, GI Bill limits, and how to combine funding sources safely."
-      canonical="https://aviatoriq.com/us/guides/fund-pilot-training-usa"
+      canonical="https://aviatorpath.com/us/guides/fund-pilot-training-usa"
       metaDescription="Discover how to fund your pilot training in the USA. Understand specialized aviation loans (Sallie Mae, Meritize), GI Bill limits, and scholarship realities."
       readTime="11 min read"
       lastUpdated="June 2026"

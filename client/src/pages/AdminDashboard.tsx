@@ -515,10 +515,10 @@ function LeadDetailModal({
                     const schoolName =
                       (a as any).schoolName ?? `School #${a.schoolId}`;
                     const subject = encodeURIComponent(
-                      `AviatorIQ Lead Introduction — ${lead.fullName}`
+                      `AviatorPath Lead Introduction — ${lead.fullName}`
                     );
                     const body = encodeURIComponent(
-                      `Hi ${schoolName} Team,\n\nA prospective student has expressed interest in your flight school through AviatorIQ.\n\nLead details:\n- Name: ${lead.fullName}\n- Country: ${lead.country ?? "N/A"}\n- Budget: ${lead.budgetRange ?? "N/A"}\n- Route: ${lead.preferredRoute ?? "N/A"}\n- Score: ${lead.leadScore}/100 (${lead.leadCategory})\n\nPlease reach out to them directly at: ${lead.email}${lead.phone ? `\nPhone: ${lead.phone}` : ""}\n\nBest regards,\nAviatorIQ Team`
+                      `Hi ${schoolName} Team,\n\nA prospective student has expressed interest in your flight school through AviatorPath.\n\nLead details:\n- Name: ${lead.fullName}\n- Country: ${lead.country ?? "N/A"}\n- Budget: ${lead.budgetRange ?? "N/A"}\n- Route: ${lead.preferredRoute ?? "N/A"}\n- Score: ${lead.leadScore}/100 (${lead.leadCategory})\n\nPlease reach out to them directly at: ${lead.email}${lead.phone ? `\nPhone: ${lead.phone}` : ""}\n\nBest regards,\nAviatorPath Team`
                     );
                     return (
                       <div
@@ -1590,7 +1590,7 @@ function PartnerApplicationsPanel() {
         </div>
         <div className="p-5">
           <p className="text-sm text-[var(--color-muted-foreground)] mb-4">
-            Every lead AviatorIQ generates includes the following verified profile data. Partner schools receive an introduction email with the lead's name, contact, and training profile.
+            Every lead AviatorPath generates includes the following verified profile data. Partner schools receive an introduction email with the lead's name, contact, and training profile.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
             {[
@@ -1720,7 +1720,7 @@ function PartnerApplicationsPanel() {
                     )}
                   </div>
                   <a
-                    href={`mailto:${entry.email}?subject=AviatorIQ Partner Programme — ${encodeURIComponent(entry.schoolName)}`}
+                    href={`mailto:${entry.email}?subject=AviatorPath Partner Programme — ${encodeURIComponent(entry.schoolName)}`}
                     className="inline-flex items-center gap-1 text-xs text-white bg-[var(--color-primary)] hover:bg-orange-600 px-3 py-1.5 rounded-lg font-semibold transition-colors"
                   >
                     <Mail className="w-3 h-3" /> Reply
@@ -1821,7 +1821,7 @@ function IntroductionsPanel() {
                   <td className="px-4 py-3">
                     {intro.schoolContactEmail ? (
                       <a
-                        href={`mailto:${intro.schoolContactEmail}?subject=${encodeURIComponent(`AviatorIQ Introduction Request — Lead #${intro.leadId}`)}&body=${encodeURIComponent(`Hi ${intro.schoolName} Team,\n\nA student has requested an introduction to your school via AviatorIQ.\n\nLead ID: #${intro.leadId}\nSchool requested: ${intro.schoolName}\nRequest date: ${new Date(intro.createdAt).toLocaleDateString()}\n\nPlease log in to the AviatorIQ admin dashboard to view full lead details and respond.\n\nBest regards,\nAviatorIQ Team`)}`}
+                        href={`mailto:${intro.schoolContactEmail}?subject=${encodeURIComponent(`AviatorPath Introduction Request — Lead #${intro.leadId}`)}&body=${encodeURIComponent(`Hi ${intro.schoolName} Team,\n\nA student has requested an introduction to your school via AviatorPath.\n\nLead ID: #${intro.leadId}\nSchool requested: ${intro.schoolName}\nRequest date: ${new Date(intro.createdAt).toLocaleDateString()}\n\nPlease log in to the AviatorPath admin dashboard to view full lead details and respond.\n\nBest regards,\nAviatorPath Team`)}`}
                         className="inline-flex items-center gap-1 text-xs font-semibold text-white bg-[var(--color-primary)] hover:bg-orange-600 px-2.5 py-1.5 rounded-lg transition-colors whitespace-nowrap"
                       >
                         <Mail className="w-3 h-3" />
@@ -1955,7 +1955,7 @@ export default function AdminDashboard() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `aviatoriq-leads-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.download = `aviatorpath-leads-${new Date().toISOString().slice(0, 10)}.csv`;
     a.click();
     URL.revokeObjectURL(url);
     toast.success("CSV exported");
@@ -2016,7 +2016,7 @@ export default function AdminDashboard() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
           <div>
             <h1 className="text-2xl font-display font-bold text-[var(--color-navy)]">
-              AviatorIQ Admin
+              AviatorPath Admin
             </h1>
             <p className="text-sm text-[var(--color-muted-foreground)]">
               {total} total leads
@@ -2085,7 +2085,7 @@ export default function AdminDashboard() {
                     {
                       label: "Avg Score",
                       value: s.avgScore7d > 0 ? `${s.avgScore7d}/100` : "—",
-                      sub: "AviatorIQ score",
+                      sub: "AviatorPath score",
                       highlight: false,
                     },
                     {

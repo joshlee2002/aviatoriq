@@ -433,7 +433,7 @@ export default function QuizHub() {
       style={{ background: "oklch(0.10 0.08 252)" }}
     >
       <SEO
-        title="Aviation Quizzes | AviatorIQ"
+        title="Aviation Quizzes | AviatorPath"
         description="9 interactive aviation quizzes — from personality tests to myth busters. Find out what kind of pilot you are, test your knowledge, and discover what's really stopping you."
         canonical="/quizzes"
       />
@@ -477,7 +477,7 @@ export default function QuizHub() {
               color: "oklch(0.65 0.18 240)",
             }}
           >
-            ✈️ AviatorIQ Quiz Suite
+            ✈️ AviatorPath Quiz Suite
           </div>
 
           <h1
@@ -632,7 +632,7 @@ export default function QuizHub() {
                 className="text-lg mb-8 max-w-xl mx-auto"
                 style={{ color: muted }}
               >
-                Get your personalised roadmap, AviatorIQ Score, training route,
+                Get your personalised roadmap, AviatorPath Score, training route,
                 cost estimate and matched flight schools.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

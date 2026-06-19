@@ -41,7 +41,7 @@ const CARD_BG = "#111C2E";
 export default function IntroductionConfirmation({
   firstName = "there",
   schools = [],
-  resultsUrl = "https://aviatoriq.com",
+  resultsUrl = "https://aviatorpath.com",
 }: IntroductionConfirmationProps) {
   return (
     <Html lang="en">
@@ -117,7 +117,7 @@ export default function IntroductionConfirmation({
             {[
               { icon: "📬", text: "Schools will typically respond within 24–48 hours." },
               { icon: "🔒", text: "You won't receive unsolicited calls. Schools only contact you through the channels you've agreed to." },
-              { icon: "🤝", text: "This introduction is completely free — AviatorIQ never charges you for connecting with schools." },
+              { icon: "🤝", text: "This introduction is completely free — AviatorPath never charges you for connecting with schools." },
               { icon: "❓", text: "Have questions before speaking to a school? Reply to this email and we'll help." },
             ].map((item, i) => (
               <Row key={i} style={{ marginBottom: "10px" }}>
@@ -158,10 +158,10 @@ export default function IntroductionConfirmation({
           {/* ── Footer ── */}
           <Section style={{ padding: "0 24px 32px 24px" }}>
             <Text style={{ color: GREY, fontSize: "11px", margin: "0 0 4px 0", lineHeight: "1.6" }}>
-              You received this email because you requested introductions to flight schools through AviatorIQ. We will never share your details with schools you haven't selected.
+              You received this email because you requested introductions to flight schools through AviatorPath. We will never share your details with schools you haven't selected.
             </Text>
             <Text style={{ color: "rgba(148,163,184,0.5)", fontSize: "10px", margin: 0 }}>
-              AviatorIQ · Helping aspiring pilots navigate their training journey · aviatoriq.com
+              AviatorPath · Helping aspiring pilots navigate their training journey · aviatorpath.com
             </Text>
           </Section>
 

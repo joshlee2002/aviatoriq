@@ -7,7 +7,7 @@
 import type { Express } from "express";
 import { routeMetaMap } from "./seoMeta";
 
-const BASE_URL = "https://aviatoriq.com";
+const BASE_URL = "https://aviatorpath.com";
 const TODAY = new Date().toISOString().split("T")[0];
 
 // Priority map by route type
@@ -78,7 +78,7 @@ ${urlEntries}
 
   // Also serve robots.txt dynamically (overrides static file if present)
   app.get("/robots.txt", (_req, res) => {
-    const robots = `# AviatorIQ robots.txt
+    const robots = `# AviatorPath robots.txt
 User-agent: *
 Allow: /
 Disallow: /admin

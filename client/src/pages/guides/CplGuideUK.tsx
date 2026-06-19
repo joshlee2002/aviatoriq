@@ -6,7 +6,7 @@ const CplGuideUK = () => {
     <GuideLayout
       title="Commercial Pilot Licence (CPL) UK: Requirements, Cost & How to Get One"
       subtitle="Requirements, costs, training routes, and career opportunities for the UK Commercial Pilot Licence — the licence that lets you earn money from flying."
-      canonical="https://aviatoriq.com/guides/cpl-uk"
+      canonical="https://aviatorpath.com/guides/cpl-uk"
       metaDescription="UK Commercial Pilot Licence (CPL) 2026: requirements, costs (£55k–£120k), training routes, and the difference between CPL and frozen ATPL. CAA-sourced data."
       faqSchema={[
         {

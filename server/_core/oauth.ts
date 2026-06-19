@@ -1,7 +1,7 @@
 /**
  * Self-hosted authentication routes.
  * Replaces Manus OAuth with a simple local admin login using a fixed password.
- * The admin password is set via ADMIN_PASSWORD env var (default: aviatoriq2026).
+ * The admin password is set via ADMIN_PASSWORD env var (default: aviatorpath2026).
  */
 import { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
 import type { Express, Request, Response } from "express";
@@ -10,8 +10,8 @@ import { getSessionCookieOptions } from "./cookies";
 import { sdk } from "./sdk";
 
 const ADMIN_OPEN_ID = process.env.OWNER_OPEN_ID ?? "admin";
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD ?? "aviatoriq2026";
-const ADMIN_NAME = process.env.ADMIN_NAME ?? "AviatorIQ Admin";
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD ?? "aviatorpath2026";
+const ADMIN_NAME = process.env.ADMIN_NAME ?? "AviatorPath Admin";
 
 export function registerOAuthRoutes(app: Express) {
   // ─── Local login page ────────────────────────────────────────────────────
@@ -21,7 +21,7 @@ export function registerOAuthRoutes(app: Express) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AviatorIQ — Admin Login</title>
+  <title>AviatorPath — Admin Login</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -47,7 +47,7 @@ export function registerOAuthRoutes(app: Express) {
 </head>
 <body>
   <div class="card">
-    <div class="logo">AviatorIQ</div>
+    <div class="logo">AviatorPath</div>
     <div class="subtitle">Admin Dashboard Login</div>
     <form method="POST" action="/api/auth/login">
       <div class="field">
@@ -111,7 +111,7 @@ export function registerOAuthRoutes(app: Express) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AviatorIQ — Admin Login</title>
+  <title>AviatorPath — Admin Login</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -137,7 +137,7 @@ export function registerOAuthRoutes(app: Express) {
 </head>
 <body>
   <div class="card">
-    <div class="logo">AviatorIQ</div>
+    <div class="logo">AviatorPath</div>
     <div class="subtitle">Admin Dashboard Login</div>
     <div class="error">Invalid username or password. Please try again.</div>
     <form method="POST" action="/api/auth/login">

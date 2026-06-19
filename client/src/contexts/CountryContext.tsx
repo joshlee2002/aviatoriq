@@ -147,20 +147,20 @@ function detectCountryFromTimezone(): Country {
 
 export function CountryProvider({ children }: { children: ReactNode }) {
   const [country, setCountryState] = useState<Country>(() => {
-    const stored = localStorage.getItem("aviatoriq_country");
+    const stored = localStorage.getItem("aviatorpath_country");
     if (stored && VALID_CODES.includes(stored as Country)) return stored as Country;
     // First visit — auto-detect from timezone (soft suggestion, user can override)
     return detectCountryFromTimezone();
   });
 
   // hasSelected is true only if the user has explicitly chosen, not just auto-detected
-  const hasSelected = !!localStorage.getItem("aviatoriq_country");
+  const hasSelected = !!localStorage.getItem("aviatorpath_country");
   const config = country ? COUNTRY_CONFIGS[country] : null;
 
   const setCountry = (c: Country) => {
     setCountryState(c);
-    if (c) localStorage.setItem("aviatoriq_country", c);
-    else localStorage.removeItem("aviatoriq_country");
+    if (c) localStorage.setItem("aviatorpath_country", c);
+    else localStorage.removeItem("aviatorpath_country");
   };
 
   return (

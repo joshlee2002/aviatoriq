@@ -1,4 +1,4 @@
-// ─── AviatorIQ Quiz Suite ─────────────────────────────────────────────────
+// ─── AviatorPath Quiz Suite ─────────────────────────────────────────────────
 // 9 quizzes: personality, practical, trivia, diagnostic, visual, diagnostic, cognitive, diagnostic, personality
 
 export type QuizType =
@@ -1598,7 +1598,7 @@ const readinessQuiz: Quiz = {
       title: "Nearly There",
       subtitle: "A few things to resolve — then you're clear",
       description:
-        "You scored 17–24. You're close. You have the motivation and most of the pieces in place, but there are one or two areas — likely finance, medical clarity, or life situation — that need resolving before you commit. The good news: these are solvable problems. Take the full AviatorIQ assessment to identify exactly which dimension is holding you back and get a specific action plan.",
+        "You scored 17–24. You're close. You have the motivation and most of the pieces in place, but there are one or two areas — likely finance, medical clarity, or life situation — that need resolving before you commit. The good news: these are solvable problems. Take the full AviatorPath assessment to identify exactly which dimension is holding you back and get a specific action plan.",
       emoji: "📋",
       color: "#3b82f6",
       minScore: 17,
@@ -1616,7 +1616,7 @@ const readinessQuiz: Quiz = {
       title: "Building the Foundations",
       subtitle: "Real progress needed before you're ready",
       description:
-        "You scored 9–16. You want to fly, but there are several areas that need serious attention before training is realistic. This isn't a reason to give up — it's a reason to get specific about what needs to change and build a realistic timeline. The full AviatorIQ assessment will identify your biggest barriers and give you a concrete plan to address them.",
+        "You scored 9–16. You want to fly, but there are several areas that need serious attention before training is realistic. This isn't a reason to give up — it's a reason to get specific about what needs to change and build a realistic timeline. The full AviatorPath assessment will identify your biggest barriers and give you a concrete plan to address them.",
       emoji: "🏗️",
       color: "#f59e0b",
       minScore: 9,
@@ -1975,7 +1975,7 @@ const obstacleQuiz: Quiz = {
       title: "Your Barrier: Information Overload",
       subtitle: "You're overwhelmed by complexity and don't know where to start",
       description:
-        "Aviation has a lot of jargon, a lot of routes, and a lot of conflicting advice online. It's genuinely confusing. The best starting point is a simple, structured overview of the pathway — from zero experience to airline pilot — without the noise. Start with our 'How to Become a Pilot' guide, then take the full AviatorIQ assessment to get a personalised roadmap that cuts through the confusion.",
+        "Aviation has a lot of jargon, a lot of routes, and a lot of conflicting advice online. It's genuinely confusing. The best starting point is a simple, structured overview of the pathway — from zero experience to airline pilot — without the noise. Start with our 'How to Become a Pilot' guide, then take the full AviatorPath assessment to get a personalised roadmap that cuts through the confusion.",
       emoji: "🗺️",
       color: "#16a34a",
       cta: {

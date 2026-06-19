@@ -98,7 +98,7 @@ export default function LicenceQuizResults() {
   });
 
   useEffect(() => {
-    document.title = "Your Pilot Licence Recommendation | AviatorIQ";
+    document.title = "Your Pilot Licence Recommendation | AviatorPath";
     const stored = sessionStorage.getItem("licenceQuizResult");
     if (!stored) {
       navigate("/quiz/licence");
@@ -163,7 +163,7 @@ export default function LicenceQuizResults() {
           className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
         >
           <Plane className="w-5 h-5 text-[var(--color-gold)]" />
-          <span className="font-display font-bold text-sm">AviatorIQ</span>
+          <span className="font-display font-bold text-sm">AviatorPath</span>
         </Link>
         <button
           onClick={handleShare}
@@ -309,7 +309,7 @@ export default function LicenceQuizResults() {
                     className="mt-0.5 accent-[var(--color-gold)]"
                   />
                   <span className="text-white/45 text-xs leading-relaxed">
-                    I'm happy to hear from AviatorIQ about training options and
+                    I'm happy to hear from AviatorPath about training options and
                     matched flight schools.
                   </span>
                 </label>

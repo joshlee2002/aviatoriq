@@ -1,4 +1,4 @@
-# AviatorIQ product audit and rebuild plan
+# AviatorPath product audit and rebuild plan
 
 Date: 2026-06-18
 
@@ -6,7 +6,7 @@ Date: 2026-06-18
 
 Current product score: **5.5 / 10**.
 
-AviatorIQ has the raw ingredients of a valuable pilot-career guidance business: a large SEO surface, a serious lead form, quiz funnels, school matching, admin tooling, partner pages, PDF generation, Stripe premium flow, and credible trust-policy pages. It is not yet a coherent business-grade product. The site currently feels like many promising modules stitched together rather than one rigorous decision engine that a user would trust before spending £70,000-£120,000 on training.
+AviatorPath has the raw ingredients of a valuable pilot-career guidance business: a large SEO surface, a serious lead form, quiz funnels, school matching, admin tooling, partner pages, PDF generation, Stripe premium flow, and credible trust-policy pages. It is not yet a coherent business-grade product. The site currently feels like many promising modules stitched together rather than one rigorous decision engine that a user would trust before spending £70,000-£120,000 on training.
 
 The biggest commercial gap is not traffic or content volume. It is **trustworthy conversion**: every guide, calculator, quiz, and roadmap must push the user into one clear next step while producing a lead record that schools, finance partners, and medical partners would actually pay for.
 
@@ -208,7 +208,7 @@ Schools do not want “AI quiz leads”. They want prospects who:
 
 ## School partner pitch
 
-**AviatorIQ helps aspiring pilots understand the real cost, route, medical, and school decisions before they enquire. That means schools receive fewer vague dreamers and more informed candidates who know their budget, preferred route, start timeframe, and next step.**
+**AviatorPath helps aspiring pilots understand the real cost, route, medical, and school decisions before they enquire. That means schools receive fewer vague dreamers and more informed candidates who know their budget, preferred route, start timeframe, and next step.**
 
 What partners receive:
 
@@ -430,7 +430,7 @@ Why it is better than a generic form:
 
 ## Final product vision
 
-AviatorIQ should become **the decision engine for aspiring pilots**.
+AviatorPath should become **the decision engine for aspiring pilots**.
 
 The free product should help users answer five expensive questions:
 
@@ -446,6 +446,6 @@ The business should monetise only when it improves the user journey:
 - Finance partners receive users with real funding gaps and repayment intent.
 - Medical partners receive users who need AME guidance before wasting money.
 - Premium roadmap buyers get a genuinely personalised plan that saves them time, mistakes, and wasted applications.
-- A school dashboard becomes the operating system for partner schools to manage AviatorIQ-sourced prospects.
+- A school dashboard becomes the operating system for partner schools to manage AviatorPath-sourced prospects.
 
 The product should not be “AI quizzes about becoming a pilot”. It should be **the trusted pre-application layer for pilot training**.

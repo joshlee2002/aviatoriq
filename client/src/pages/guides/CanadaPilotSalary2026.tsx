@@ -9,10 +9,10 @@ export default function CanadaPilotSalary2026() {
       title="Canadian Airline Pilot Salary 2026: Air Canada, WestJet & Regionals"
       subtitle="The complete breakdown of pilot pay in Canada. From a $35k flight instructor to a $350k Air Canada Boeing 777 Captain — real 2026 pay scales, per diems, and union contracts."
       readTime="14 min"
-      author="AviatorIQ Research"
+      author="AviatorPath Research"
       lastUpdated="June 2026"
       category="Canadian Pilot Careers"
-      canonical="https://aviatoriq.com/canada/guides/pilot-salary-canada"
+      canonical="https://aviatorpath.com/canada/guides/pilot-salary-canada"
       metaDescription="Canadian pilot salary guide 2026. Real pay data for Air Canada, WestJet, Porter, Flair, and regional airlines. First Officer and Captain pay scales explained."
       heroImage="/manus-storage/pilot-salary-canada_d29f8c11.jpg"
       scopeBanner={

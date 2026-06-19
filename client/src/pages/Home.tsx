@@ -60,8 +60,8 @@ interface HomeCountryConfig {
 const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
   uk: {
     flag: "🇬🇧", label: "United Kingdom", regulator: "CAA",
-    seoTitle: "AviatorIQ – What's Really Stopping You Becoming A Pilot?",
-    seoDescription: "Find your best route into UK pilot training. Take the free AviatorIQ career assessment and get a personalised pilot training roadmap matched to real UK flight schools.",
+    seoTitle: "AviatorPath – What's Really Stopping You Becoming A Pilot?",
+    seoDescription: "Find your best route into UK pilot training. Take the free AviatorPath career assessment and get a personalised pilot training roadmap matched to real UK flight schools.",
     heroHeadline: "Could You Actually Become A Pilot?",
     heroSub: "Discover your training route, costs, challenges and matched UK flight schools in under 5 minutes. Free, no registration required.",
     roadmapHref: "/roadmap",
@@ -88,7 +88,7 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
   },
   us: {
     flag: "🇺🇸", label: "United States", regulator: "FAA",
-    seoTitle: "AviatorIQ US — FAA Pilot Training Guidance, Costs & Flight Schools 2026",
+    seoTitle: "AviatorPath US — FAA Pilot Training Guidance, Costs & Flight Schools 2026",
     seoDescription: "The most personalised pilot training guidance platform for the US. Part 141 vs 61, FAA medical requirements, ATP costs, airline cadet programmes, and the best US flight schools.",
     heroHeadline: "Could You Actually Become A Pilot?",
     heroSub: "Discover your FAA training route, costs, challenges and matched US flight schools in under 5 minutes. Free, no registration required.",
@@ -116,7 +116,7 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
   },
   australia: {
     flag: "🇦🇺", label: "Australia", regulator: "CASA",
-    seoTitle: "AviatorIQ Australia — CASA Pilot Training Guidance & Costs 2026",
+    seoTitle: "AviatorPath Australia — CASA Pilot Training Guidance & Costs 2026",
     seoDescription: "Personalised pilot training guidance for Australia. CASA CPL/ATPL requirements, medical standards, training costs, and matched Australian flight schools.",
     heroHeadline: "Could You Actually Become A Pilot?",
     heroSub: "Discover your CASA training route, costs, challenges and matched Australian flight schools in under 5 minutes. Free, no registration required.",
@@ -144,7 +144,7 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
   },
   canada: {
     flag: "🇨🇦", label: "Canada", regulator: "Transport Canada",
-    seoTitle: "AviatorIQ Canada — Transport Canada Pilot Training Guidance & Costs 2026",
+    seoTitle: "AviatorPath Canada — Transport Canada Pilot Training Guidance & Costs 2026",
     seoDescription: "Personalised pilot training guidance for Canada. Transport Canada CPL/ATPL requirements, medical standards, training costs, and matched Canadian flight schools.",
     heroHeadline: "Could You Actually Become A Pilot?",
     heroSub: "Discover your Transport Canada training route, costs, challenges and matched Canadian flight schools in under 5 minutes. Free, no registration required.",
@@ -172,7 +172,7 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
   },
   europe: {
     flag: "🇪🇺", label: "Europe", regulator: "EASA",
-    seoTitle: "AviatorIQ Europe — EASA Pilot Training Guidance & Costs 2026",
+    seoTitle: "AviatorPath Europe — EASA Pilot Training Guidance & Costs 2026",
     seoDescription: "Personalised pilot training guidance for Europe. EASA CPL/ATPL requirements, medical standards, training costs, and matched European flight schools.",
     heroHeadline: "Could You Actually Become A Pilot?",
     heroSub: "Discover your EASA training route, costs, challenges and matched European flight schools in under 5 minutes. Free, no registration required.",
@@ -200,7 +200,7 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
   },
   "new-zealand": {
     flag: "🇳🇿", label: "New Zealand", regulator: "CAA NZ",
-    seoTitle: "AviatorIQ New Zealand — CAA NZ Pilot Training Guidance & Costs 2026",
+    seoTitle: "AviatorPath New Zealand — CAA NZ Pilot Training Guidance & Costs 2026",
     seoDescription: "Personalised pilot training guidance for New Zealand. CAA NZ requirements, training costs, and matched NZ flight schools.",
     heroHeadline: "Could You Actually Become A Pilot?",
     heroSub: "Discover your CAA NZ training route, costs, challenges and matched New Zealand flight schools in under 5 minutes. Free, no registration required.",
@@ -228,7 +228,7 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
   },
   "south-africa": {
     flag: "🇿🇦", label: "South Africa", regulator: "SACAA",
-    seoTitle: "AviatorIQ South Africa — SACAA Pilot Training Guidance & Costs 2026",
+    seoTitle: "AviatorPath South Africa — SACAA Pilot Training Guidance & Costs 2026",
     seoDescription: "Personalised pilot training guidance for South Africa. SACAA requirements, training costs, and matched SA flight schools.",
     heroHeadline: "Could You Actually Become A Pilot?",
     heroSub: "Discover your SACAA training route, costs, challenges and matched South African flight schools in under 5 minutes. Free, no registration required.",
@@ -256,7 +256,7 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
   },
   uae: {
     flag: "🇦🇪", label: "UAE", regulator: "GCAA",
-    seoTitle: "AviatorIQ UAE — GCAA Pilot Training, Emirates & Etihad Cadet 2026",
+    seoTitle: "AviatorPath UAE — GCAA Pilot Training, Emirates & Etihad Cadet 2026",
     seoDescription: "Personalised pilot training guidance for the UAE. GCAA requirements, Emirates and Etihad cadet programmes, training costs, and matched UAE flight schools.",
     heroHeadline: "Could You Actually Become A Pilot?",
     heroSub: "Discover your GCAA training route, costs, challenges and matched UAE flight schools in under 5 minutes. Free, no registration required.",
@@ -485,7 +485,7 @@ function SocialProofBar() {
 function HowItWorksSection() {
   const steps = [
     { number: "01", icon: <BookOpen className="w-6 h-6" />, title: "Answer a few honest questions", description: "Tell us about your goal, your situation, and what's been stopping you. Takes around 5 minutes. Completely free.", color: "oklch(0.45 0.18 240)" },
-    { number: "02", icon: <Target className="w-6 h-6" />, title: "Discover your biggest barrier", description: "Get your AviatorIQ Score and a clear answer to what is actually standing between you and the cockpit.", color: "oklch(0.72 0.18 65)" },
+    { number: "02", icon: <Target className="w-6 h-6" />, title: "Discover your biggest barrier", description: "Get your AviatorPath Score and a clear answer to what is actually standing between you and the cockpit.", color: "oklch(0.72 0.18 65)" },
     { number: "03", icon: <Building2 className="w-6 h-6" />, title: "Get a personalised roadmap", description: "A training roadmap built around your barrier, your budget, and your timeline — with matched flight schools.", color: "oklch(0.6 0.18 200)" },
   ];
 
@@ -630,7 +630,7 @@ function QuizTeaserSection() {
       badgeColor: "oklch(0.72 0.18 65)",
       tag: "Most popular",
       title: "Could I Become A Pilot?",
-      desc: "Your AviatorIQ Score, biggest barrier, personalised training roadmap, matched flight schools, and a free PDF blueprint.",
+      desc: "Your AviatorPath Score, biggest barrier, personalised training roadmap, matched flight schools, and a free PDF blueprint.",
       href: "/quiz",
       cta: "Take the assessment",
       variant: "primary",
@@ -881,7 +881,7 @@ function SchoolMatchingSection() {
             Matched to the right flight school
           </h2>
           <p className="text-lg" style={{ color: muted }}>
-            After your assessment, AviatorIQ matches you with flight schools based on your country, training goal, budget and preferences — not random results.
+            After your assessment, AviatorPath matches you with flight schools based on your country, training goal, budget and preferences — not random results.
           </p>
         </div>
 
@@ -1010,12 +1010,12 @@ export default function Home() {
         schema={{
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "AviatorIQ",
-          "url": "https://aviatoriq.com",
+          "name": "AviatorPath",
+          "url": "https://aviatorpath.com",
           "description": "The decision platform for people thinking about becoming a pilot.",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://aviatoriq.com/schools?search={search_term_string}",
+            "target": "https://aviatorpath.com/schools?search={search_term_string}",
             "query-input": "required name=search_term_string",
           },
         }}

@@ -537,7 +537,7 @@ export default function Results() {
     return (
       <div className="min-h-screen flex flex-col">
         <SEO
-          title="Your AviatorIQ Pilot Blueprint – Results"
+          title="Your AviatorPath Pilot Blueprint – Results"
           description="Your personalised pilot training roadmap with AI-generated flight plan, matched schools, and career readiness score."
           noindex
         />
@@ -552,7 +552,7 @@ export default function Results() {
               style={{ color: "oklch(0.55 0.18 240)" }}
             />
             <p className="font-semibold text-white mb-1">
-              Calculating your AviatorIQ Score…
+              Calculating your AviatorPath Score…
             </p>
             <p className="text-sm" style={{ color: "oklch(0.6 0 0)" }}>
               Analysing your profile and matching training routes.
@@ -630,7 +630,7 @@ export default function Results() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title={`${lead.fullName?.split(" ")[0] ?? "Your"}'s AviatorIQ Pilot Blueprint`}
+        title={`${lead.fullName?.split(" ")[0] ?? "Your"}'s AviatorPath Pilot Blueprint`}
         description="Your personalised pilot training roadmap with AI-generated flight plan, matched schools, and career readiness score."
         noindex
       />
@@ -779,7 +779,7 @@ export default function Results() {
                     <CategoryBadge category={lead.leadCategory} />
                   </div>
                   <p className="text-white/65 text-xs text-center">
-                    AviatorIQ Score
+                    AviatorPath Score
                   </p>
                 </div>
               </div>
@@ -854,7 +854,7 @@ export default function Results() {
                     Share
                   </span>
                   <a
-                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("Could you actually become an airline pilot? I just took the AviatorIQ assessment to find out. ✈️")}&url=${encodeURIComponent(window.location.origin + "/quiz")}`}
+                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("Could you actually become an airline pilot? I just took the AviatorPath assessment to find out. ✈️")}&url=${encodeURIComponent(window.location.origin + "/quiz")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/70 hover:text-white text-xs font-medium transition-colors no-underline"
@@ -873,7 +873,7 @@ export default function Results() {
                     Share on X
                   </a>
                   <a
-                    href={`https://wa.me/?text=${encodeURIComponent("Could you actually become an airline pilot? I just took the AviatorIQ assessment to find out: " + window.location.origin + "/quiz ✈️")}`}
+                    href={`https://wa.me/?text=${encodeURIComponent("Could you actually become an airline pilot? I just took the AviatorPath assessment to find out: " + window.location.origin + "/quiz ✈️")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-white/70 hover:text-white text-xs font-medium transition-colors no-underline"
@@ -1551,7 +1551,7 @@ export default function Results() {
               }}
             >
               <h2 className="font-display font-bold text-white text-lg mb-1">
-                Your 5-Dimension AviatorIQ Breakdown
+                Your 5-Dimension AviatorPath Breakdown
               </h2>
               <p className="text-sm mb-5" style={{ color: "oklch(0.6 0 0)" }}>
                 Each dimension is scored 0–100 based on your answers.

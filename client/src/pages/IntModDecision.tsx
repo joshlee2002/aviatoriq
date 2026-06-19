@@ -292,7 +292,7 @@ export default function IntModDecision() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="Integrated vs Modular Pilot Training: Which Is Right for You? | AviatorIQ"
+        title="Integrated vs Modular Pilot Training: Which Is Right for You? | AviatorPath"
         description="Answer 6 questions and find out whether integrated or modular ATPL training suits your situation. Free personalised recommendation with pros, risks and next steps."
         canonical="/tools/integrated-vs-modular"
         schema={{
@@ -301,7 +301,7 @@ export default function IntModDecision() {
           name: "Integrated vs Modular Decision Tool",
           description:
             "Free tool to determine whether integrated or modular ATPL training is right for your situation",
-          url: "https://aviatoriq.com/tools/integrated-vs-modular",
+          url: "https://aviatorpath.com/tools/integrated-vs-modular",
           applicationCategory: "EducationalApplication",
         }}
       />

@@ -6,7 +6,7 @@ const PilotEyesightUK = () => {
     <GuideLayout
       title="UK Pilot Eyesight Requirements 2026"
       subtitle="Navigating the UK CAA Class 1 medical vision standards for aspiring pilots, including refractive error limits, colour vision, and laser eye surgery."
-      canonical="https://aviatoriq.com/guides/pilot-eyesight-requirements-uk"
+      canonical="https://aviatorpath.com/guides/pilot-eyesight-requirements-uk"
       metaDescription="UK pilot eyesight requirements 2026: Class 1 vision standards, glasses, contacts, colour vision, limits and medical exam tips."
       faqSchema={[
         {

@@ -338,9 +338,9 @@ export default function RouteSelector() {
   return (
     <>
       <SEO
-        title="Pilot Training Route Selector | AviatorIQ"
+        title="Pilot Training Route Selector | AviatorPath"
         description="Answer 5 questions to find the right pilot training route for your budget, timeline, and country. Integrated, modular, cadet, FAA, EASA — we'll point you in the right direction."
-        canonical="https://aviatoriq.com/tools/route-selector"
+        canonical="https://aviatorpath.com/tools/route-selector"
       />
       <PublicNav />
       <main className="min-h-screen bg-[var(--color-navy)] text-white pt-20 pb-16">

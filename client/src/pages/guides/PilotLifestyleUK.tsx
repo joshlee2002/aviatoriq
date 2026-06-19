@@ -10,7 +10,7 @@ export default function PilotLifestyleUK() {
       readTime="10 min read"
       lastUpdated="June 2026"
       category="UK Pilot Careers"
-      canonical="https://aviatoriq.com/guides/pilot-lifestyle-uk"
+      canonical="https://aviatorpath.com/guides/pilot-lifestyle-uk"
       metaDescription="What is the real lifestyle of a UK airline pilot? We break down short-haul vs long-haul rosters, dealing with fatigue, commuting, and balancing family life."
       ctaHref="/roadmap"
       ctaText="Generate my career roadmap"

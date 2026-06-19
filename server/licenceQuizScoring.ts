@@ -87,7 +87,7 @@ const RESULTS: Record<
     estimatedTimeline: "3–5 years part-time modular",
     bestFor:
       "Career changers, those who want commercial flying without integrated training costs",
-    ctaText: "Take the full AviatorIQ assessment to plan your CPL roadmap",
+    ctaText: "Take the full AviatorPath assessment to plan your CPL roadmap",
     careerAssessmentRate: 74,
   },
   Integrated_ATPL: {
@@ -106,7 +106,7 @@ const RESULTS: Record<
     bestFor:
       "School leavers, career changers with funding, those who want the fastest airline route",
     ctaText:
-      "Take the AviatorIQ assessment to see if you're ready for integrated training",
+      "Take the AviatorPath assessment to see if you're ready for integrated training",
     careerAssessmentRate: 81,
   },
   Modular_ATPL: {
@@ -125,7 +125,7 @@ const RESULTS: Record<
     bestFor:
       "Self-funders, career changers who can't go full-time, older applicants",
     ctaText:
-      "Take the AviatorIQ assessment to build your modular training plan",
+      "Take the AviatorPath assessment to build your modular training plan",
     careerAssessmentRate: 77,
   },
   FAA_PPL: {
@@ -144,7 +144,7 @@ const RESULTS: Record<
     bestFor:
       "Those open to training overseas, budget-conscious candidates, gap year students",
     ctaText:
-      "Take the full AviatorIQ assessment to plan your complete training route",
+      "Take the full AviatorPath assessment to plan your complete training route",
     careerAssessmentRate: 53,
   },
 };

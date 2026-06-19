@@ -59,7 +59,7 @@ export default function WelcomeBlueprint({
   firstName = "there",
   score = 65,
   category = "Warm",
-  resultsUrl = "https://aviatoriq.com",
+  resultsUrl = "https://aviatorpath.com",
 }: WelcomeBlueprintProps) {
   const scoreColor = getScoreColor(category);
   const phaseLabel = getPhaseLabel(category);
@@ -69,7 +69,7 @@ export default function WelcomeBlueprint({
     <Html lang="en">
       <Head />
       <Preview>
-        Your AviatorIQ Score is {String(score)}/100 — your personalised pilot training blueprint is ready.
+        Your AviatorPath Score is {String(score)}/100 — your personalised pilot training blueprint is ready.
       </Preview>
       <Body style={{ backgroundColor: NAVY, margin: 0, padding: 0, fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
         <Container style={{ maxWidth: "600px", margin: "0 auto", padding: "0" }}>
@@ -93,7 +93,7 @@ export default function WelcomeBlueprint({
           {/* ── Score Hero ── */}
           <Section style={{ backgroundColor: NAVY_LIGHT, margin: "24px 24px 0 24px", borderRadius: "16px", padding: "40px 32px", border: `1px solid ${scoreColor}30` }}>
             <Text style={{ color: GREY, fontSize: "11px", fontWeight: "700", letterSpacing: "1.5px", textTransform: "uppercase" as const, margin: "0 0 16px 0", textAlign: "center" as const }}>
-              Your AviatorIQ Score
+              Your AviatorPath Score
             </Text>
             <Text style={{ color: scoreColor, fontSize: "72px", fontWeight: "900", margin: "0 0 4px 0", textAlign: "center" as const, lineHeight: "1" }}>
               {score}
@@ -188,10 +188,10 @@ export default function WelcomeBlueprint({
           {/* ── Footer ── */}
           <Section style={{ padding: "0 24px 32px 24px" }}>
             <Text style={{ color: GREY, fontSize: "11px", margin: "0 0 4px 0", lineHeight: "1.6" }}>
-              You received this email because you completed the AviatorIQ assessment. We'll never share your details with schools without your permission.
+              You received this email because you completed the AviatorPath assessment. We'll never share your details with schools without your permission.
             </Text>
             <Text style={{ color: "rgba(148,163,184,0.5)", fontSize: "10px", margin: 0 }}>
-              AviatorIQ · Helping aspiring pilots navigate their training journey · aviatoriq.com
+              AviatorPath · Helping aspiring pilots navigate their training journey · aviatorpath.com
             </Text>
           </Section>
 
