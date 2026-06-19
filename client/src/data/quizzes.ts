@@ -2933,15 +2933,18 @@ const airlineMatchQuiz: Quiz = {
 
 // ─── Master Quiz Registry ─────────────────────────────────────────────────
 export const ALL_QUIZZES: Quiz[] = [
-  pilotPersonalityQuiz,
-  mythBusterQuiz,
-  pilotThinkingQuiz,
-  guessAircraftQuiz,
-  readinessQuiz,
-  medicalQuiz,
-  obstacleQuiz,
-  affordabilityQuiz,
-  airlineMatchQuiz,
+  // High commercial intent — decision-stage visitors
+  obstacleQuiz,        // What's Really Stopping You Becoming A Pilot?
+  affordabilityQuiz,   // Could You Afford Pilot Training?
+  medicalQuiz,         // Could You Pass A Pilot Medical?
+  readinessQuiz,       // How Ready Are You To Start Training?
+  // Mid intent — engagement & curiosity
+  pilotThinkingQuiz,   // Do You Think Like A Pilot?
+  pilotPersonalityQuiz, // What Kind Of Pilot Are You?
+  // Lower intent — fun / viral
+  mythBusterQuiz,      // Aviation Myth Buster
+  guessAircraftQuiz,   // Guess The Aircraft
+  airlineMatchQuiz,    // Which Airline Suits Your Personality?
 ];
 
 // ─── Helper Types & Functions ─────────────────────────────────────────────

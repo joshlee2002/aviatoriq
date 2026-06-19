@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { ALL_QUIZZES, Quiz } from "@/data/quizzes";
+import { ALL_QUIZZES } from "@/data/quizzes";
+import type { Quiz } from "@/data/quizzes";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import SEO from "@/components/SEO";
@@ -367,7 +368,7 @@ function StatsBar() {
           {[
             {
               icon: <Trophy className="w-4 h-4" />,
-              value: "7",
+              value: String(ALL_QUIZZES.length),
               label: "quizzes",
               color: "oklch(0.72 0.18 65)",
             },
@@ -433,7 +434,7 @@ export default function QuizHub() {
     >
       <SEO
         title="Aviation Quizzes | AviatorIQ"
-        description="7 interactive aviation quizzes — from personality tests to myth busters. Find out what kind of pilot you are, test your knowledge, and discover what's really stopping you."
+        description="9 interactive aviation quizzes — from personality tests to myth busters. Find out what kind of pilot you are, test your knowledge, and discover what's really stopping you."
         canonical="/quizzes"
       />
       <PublicNav />
@@ -500,10 +501,8 @@ export default function QuizHub() {
             className="text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto"
             style={{ color: muted }}
           >
-            Seven quizzes — some serious, some fun, all genuinely useful.
-            Discover your pilot archetype, bust aviation myths, test your
-            decision-making, and find out what's really standing between you and
-            the cockpit.
+            {ALL_QUIZZES.length} quizzes — some serious, some fun, all genuinely useful.
+            Each one answers a specific question. The full assessment answers all of them.
           </p>
 
           {/* Feature pills */}
@@ -558,7 +557,7 @@ export default function QuizHub() {
               className="text-xs uppercase tracking-widest font-semibold"
               style={{ color: muted }}
             >
-              All 7 Quizzes
+              All {ALL_QUIZZES.length} Quizzes
             </span>
             <div
               className="h-px flex-1"
@@ -624,12 +623,17 @@ export default function QuizHub() {
                 Ready for the real thing?
               </h2>
               <p
+                className="text-sm font-semibold mb-3 uppercase tracking-wider"
+                style={{ color: "oklch(0.72 0.18 65)" }}
+              >
+                These quizzes answer one question. The full assessment answers all of them.
+              </p>
+              <p
                 className="text-lg mb-8 max-w-xl mx-auto"
                 style={{ color: muted }}
               >
-                The quizzes are a taster. The full AviatorIQ Career Assessment
-                gives you a personalised AI roadmap, your AviatorIQ Score, and
-                matched flight schools.
+                Get your personalised roadmap, AviatorIQ Score, training route,
+                cost estimate and matched flight schools.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -642,16 +646,6 @@ export default function QuizHub() {
                 >
                   Take the Full Assessment
                   <ArrowRight className="w-5 h-5" />
-                </Link>
-                <Link
-                  href="/roadmap"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-white/70 no-underline transition-all hover:text-white"
-                  style={{
-                    background: "oklch(1 0 0 / 0.08)",
-                    border: "1px solid oklch(1 0 0 / 0.15)",
-                  }}
-                >
-                  Generate My Roadmap
                 </Link>
               </div>
               <p className="text-sm mt-4" style={{ color: muted }}>
