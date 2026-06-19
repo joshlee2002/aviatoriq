@@ -691,7 +691,7 @@ export default function Calculator() {
           {result && (
             <div className="space-y-5">
               {/* Summary card */}
-              <div className="card-base p-6 bg-[var(--color-navy)] text-white">
+              <div style={{background: "oklch(0.25 0.06 255)", color: "white"}} className="rounded-2xl p-6">
                 <div className="flex items-start justify-between gap-4 mb-4">
                   <div>
                     <div className="text-sm font-medium text-white/60 mb-1">
