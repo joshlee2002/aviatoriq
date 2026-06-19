@@ -475,42 +475,38 @@ function ResultCard({
           <p className="text-white/80 text-sm leading-relaxed">{result.description}</p>
         </div>
 
-        {/* Actions */}
-        <div className="flex flex-col sm:flex-row gap-3">
-          <Link
-            href={result.cta.href}
-            className="flex-1 flex items-center justify-center gap-2 font-bold px-6 py-3.5 rounded-2xl text-sm transition-all duration-200 hover:scale-105 no-underline"
-            style={{ background: result.color, color: "#fff" }}
-          >
-            {result.cta.label}
+        {/* Assessment CTA — primary conversion goal, sits above secondary actions */}
+        <div className="mb-5 p-6 rounded-2xl text-center" style={{ background: 'linear-gradient(135deg, oklch(0.55 0.18 240 / 0.12), oklch(0.45 0.2 260 / 0.08))', border: '1px solid oklch(0.55 0.18 240 / 0.25)' }}>
+          <Plane className="w-8 h-8 mx-auto mb-3" style={{ color: 'oklch(0.72 0.18 65)' }} />
+          <p className="font-display font-bold text-white text-base mb-1">
+            {result.cta.assessmentPrompt ?? "Find out if becoming a pilot is actually realistic for you."}
+          </p>
+          <p className="text-xs mb-4" style={{ color: 'oklch(0.55 0.04 240)' }}>
+            {result.cta.assessmentSubtext ?? "The full assessment combines your goals, finances, medical readiness and training route into one personalised result with matched flight schools."}
+          </p>
+          <Link href="/quiz" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-white font-bold text-sm transition-all hover:scale-[1.02] no-underline w-full"
+            style={{ background: 'linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.62 0.2 45))', boxShadow: '0 4px 20px oklch(0.72 0.18 65 / 0.3)' }}>
+            {result.cta.assessmentLabel ?? "Get My Full Pilot Assessment"}
             <ArrowRight className="w-4 h-4" />
           </Link>
+        </div>
+
+        {/* Secondary actions — share and retake */}
+        <div className="flex gap-3">
           <button
             onClick={handleShare}
-            className="flex items-center justify-center gap-2 bg-white/8 hover:bg-white/14 border border-white/12 text-white font-semibold px-5 py-3.5 rounded-2xl text-sm transition-all duration-200"
+            className="flex-1 flex items-center justify-center gap-2 bg-white/8 hover:bg-white/14 border border-white/12 text-white font-semibold px-5 py-3 rounded-2xl text-sm transition-all duration-200"
           >
             <Share2 className="w-4 h-4" />
             Share
           </button>
           <button
             onClick={onRetake}
-            className="flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/8 text-white/60 hover:text-white font-semibold px-5 py-3.5 rounded-2xl text-sm transition-all duration-200"
+            className="flex-1 flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/8 text-white/60 hover:text-white font-semibold px-5 py-3 rounded-2xl text-sm transition-all duration-200"
           >
             <RotateCcw className="w-4 h-4" />
             Retake
           </button>
-        </div>
-
-        {/* Free Assessment CTA */}
-        <div className="mt-6 p-6 rounded-2xl text-center" style={{ background: 'linear-gradient(135deg, oklch(0.55 0.18 240 / 0.12), oklch(0.45 0.2 260 / 0.08))', border: '1px solid oklch(0.55 0.18 240 / 0.25)' }}>
-          <Plane className="w-8 h-8 mx-auto mb-3" style={{ color: 'oklch(0.72 0.18 65)' }} />
-          <p className="font-display font-bold text-white text-base mb-1">Want a full personalised roadmap?</p>
-          <p className="text-xs mb-4" style={{ color: 'oklch(0.55 0.04 240)' }}>The Free Assessment scores you across 5 dimensions, matches you with flight schools, and generates an AI-powered PDF roadmap — free, no obligation.</p>
-          <Link href="/quiz" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-white font-bold text-sm transition-all hover:scale-[1.02] no-underline w-full"
-            style={{ background: 'linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.62 0.2 45))', boxShadow: '0 4px 20px oklch(0.72 0.18 65 / 0.3)' }}>
-            Get My Free Pilot Assessment
-            <ArrowRight className="w-4 h-4" />
-          </Link>
         </div>
 
         {/* Email capture */}

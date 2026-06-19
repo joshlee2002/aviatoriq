@@ -352,9 +352,9 @@ const pilotPersonalityQuiz: Quiz = {
       cta: {
         label: "Find your airline training route",
         href: "/quiz",
-        assessmentPrompt: "Airline Captains take the integrated ATPL route. Want to see exactly what that looks like for you?",
-        assessmentSubtext: "Get a personalised cost breakdown, timeline, and matched schools for the integrated route — free, takes 5 minutes.",
-        assessmentLabel: "Build My Airline Roadmap",
+        assessmentPrompt: "You've discovered your pilot type. The full assessment shows whether that path is realistic, what licences you need, what it costs, and which schools fit your situation.",
+        assessmentSubtext: "The full assessment combines your pilot type with finances, medical readiness and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -368,9 +368,9 @@ const pilotPersonalityQuiz: Quiz = {
       cta: {
         label: "Explore the modular training route",
         href: "/quiz",
-        assessmentPrompt: "Bush pilots usually take the modular route. Want to see how it fits your life and budget?",
-        assessmentSubtext: "The full assessment maps out your modular training path, costs, and the schools that suit your style — free.",
-        assessmentLabel: "Map My Modular Route",
+        assessmentPrompt: "You've discovered your pilot type. The full assessment shows whether that path is realistic, what licences you need, what it costs, and which schools fit your situation.",
+        assessmentSubtext: "The full assessment combines your pilot type with finances, medical readiness and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -384,9 +384,9 @@ const pilotPersonalityQuiz: Quiz = {
       cta: {
         label: "Start your personalised assessment",
         href: "/quiz",
-        assessmentPrompt: "Corporate pilots need a CPL with multi-engine and instrument ratings. Want your personalised path?",
-        assessmentSubtext: "Get a step-by-step roadmap to business aviation — costs, timeline, and matched schools.",
-        assessmentLabel: "Plan My Corporate Aviation Path",
+        assessmentPrompt: "You've discovered your pilot type. The full assessment shows whether that path is realistic, what licences you need, what it costs, and which schools fit your situation.",
+        assessmentSubtext: "The full assessment combines your pilot type with finances, medical readiness and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -400,9 +400,9 @@ const pilotPersonalityQuiz: Quiz = {
       cta: {
         label: "Find your training path",
         href: "/quiz",
-        assessmentPrompt: "Aerobatic pilots start with a PPL and build from there. Want to see your exact route?",
-        assessmentSubtext: "The assessment maps your training path from zero to aerobatic rating — with real costs and timelines.",
-        assessmentLabel: "Start My Aerobatic Journey",
+        assessmentPrompt: "You've discovered your pilot type. The full assessment shows whether that path is realistic, what licences you need, what it costs, and which schools fit your situation.",
+        assessmentSubtext: "The full assessment combines your pilot type with finances, medical readiness and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -416,9 +416,9 @@ const pilotPersonalityQuiz: Quiz = {
       cta: {
         label: "Take the full career assessment",
         href: "/quiz",
-        assessmentPrompt: "Military and high-performance pilots need a very specific path. Want to see yours?",
-        assessmentSubtext: "The assessment identifies whether military sponsorship or the civilian fast-jet route is right for your profile.",
-        assessmentLabel: "Find My High-Performance Route",
+        assessmentPrompt: "You've discovered your pilot type. The full assessment shows whether that path is realistic, what licences you need, what it costs, and which schools fit your situation.",
+        assessmentSubtext: "The full assessment combines your pilot type with finances, medical readiness and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -432,9 +432,9 @@ const pilotPersonalityQuiz: Quiz = {
       cta: {
         label: "Explore the instructor route",
         href: "/quiz",
-        assessmentPrompt: "Flight instructors build hours fast and shape the next generation. Want to see the FI route in detail?",
-        assessmentSubtext: "Get a personalised roadmap to your Flight Instructor rating — costs, timeline, and the schools that train the best instructors.",
-        assessmentLabel: "Plan My Instructor Route",
+        assessmentPrompt: "You've discovered your pilot type. The full assessment shows whether that path is realistic, what licences you need, what it costs, and which schools fit your situation.",
+        assessmentSubtext: "The full assessment combines your pilot type with finances, medical readiness and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
   ],
@@ -715,9 +715,9 @@ const medicalQuiz: Quiz = {
       cta: {
         label: "Find out more about the Class 1 medical",
         href: "/tools/class-1-medical-check",
-        assessmentPrompt: "Your medical profile looks good. Now let's build your training roadmap.",
-        assessmentSubtext: "Get a personalised route, cost breakdown, and matched schools — takes 5 minutes.",
-        assessmentLabel: "Build My Roadmap",
+        assessmentPrompt: "Your medical position looks clear. Now find out if the full picture adds up.",
+        assessmentSubtext: "The full assessment combines medical readiness with your finances, goals and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -733,9 +733,9 @@ const medicalQuiz: Quiz = {
       cta: {
         label: "Use the medical condition lookup tool",
         href: "/tools/class-1-medical-check",
-        assessmentPrompt: "Some conditions need checking before you commit to training. Use our lookup tool.",
-        assessmentSubtext: "Check your specific condition against CAA, FAA, and CASA standards — free, instant results.",
-        assessmentLabel: "Check My Medical Eligibility",
+        assessmentPrompt: "You understand your likely medical position. The full assessment combines medical readiness with finances, goals and training options.",
+        assessmentSubtext: "The full assessment combines medical readiness with your finances, goals and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -751,9 +751,9 @@ const medicalQuiz: Quiz = {
       cta: {
         label: "Read our medical disqualifiers guide",
         href: "/guides/class-1-medical-disqualifiers",
-        assessmentPrompt: "Understanding your medical situation is the first step. Our guide covers every condition.",
-        assessmentSubtext: "Plain English breakdown of Class 1 medical standards across all major regulators.",
-        assessmentLabel: "Read the Medical Guide",
+        assessmentPrompt: "Medical questions are the most common barrier. The full assessment helps you understand the real picture.",
+        assessmentSubtext: "The full assessment combines your medical situation with finances, goals and training options — free, no registration.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
   ],
@@ -970,9 +970,9 @@ const mythBusterQuiz: Quiz = {
       cta: {
         label: "Take the full career assessment",
         href: "/quiz",
-        assessmentPrompt: "You think like a pilot. Now let's build your actual roadmap.",
-        assessmentSubtext: "Get your personalised training route, cost breakdown, and matched schools — takes 5 minutes.",
-        assessmentLabel: "Build My Roadmap",
+        assessmentPrompt: "You know your aviation facts. Now find out if becoming a pilot is actually realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -988,9 +988,9 @@ const mythBusterQuiz: Quiz = {
       cta: {
         label: "Start your pilot journey",
         href: "/quiz",
-        assessmentPrompt: "You've got the curiosity. Let's turn it into a real plan.",
-        assessmentSubtext: "The assessment takes 5 minutes and gives you a personalised roadmap to the flight deck.",
-        assessmentLabel: "Start My Pilot Journey",
+        assessmentPrompt: "You've got the knowledge. The full assessment shows whether the path is realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1006,9 +1006,9 @@ const mythBusterQuiz: Quiz = {
       cta: {
         label: "Explore our aviation guides",
         href: "/guides",
-        assessmentPrompt: "Curiosity is where every pilot starts. Our guides will give you the real picture.",
-        assessmentSubtext: "No jargon, no myths — just clear answers to the questions every aspiring pilot has.",
-        assessmentLabel: "Explore the Guides",
+        assessmentPrompt: "Everyone starts somewhere. The full assessment shows whether becoming a pilot is realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1024,9 +1024,9 @@ const mythBusterQuiz: Quiz = {
       cta: {
         label: "Start with our beginner guides",
         href: "/guides",
-        assessmentPrompt: "Everyone starts somewhere. Our beginner guides cut through the myths.",
-        assessmentSubtext: "Plain English guides covering costs, medical requirements, and how to get started.",
-        assessmentLabel: "Start Learning",
+        assessmentPrompt: "Everyone starts somewhere. The full assessment shows whether becoming a pilot is realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
   ],
@@ -1195,9 +1195,9 @@ const guessAircraftQuiz: Quiz = {
       cta: {
         label: "Take the full career assessment",
         href: "/quiz",
-        assessmentPrompt: "You're ready to go. Let's build your exact training roadmap.",
-        assessmentSubtext: "Get your personalised route, cost breakdown, and matched schools — takes 5 minutes.",
-        assessmentLabel: "Build My Roadmap Now",
+        assessmentPrompt: "You know your aircraft. Now find out if becoming a pilot is actually realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1213,9 +1213,9 @@ const guessAircraftQuiz: Quiz = {
       cta: {
         label: "Start your pilot journey",
         href: "/quiz",
-        assessmentPrompt: "You're close. The assessment will pinpoint exactly what's holding you back.",
-        assessmentSubtext: "Find out your biggest barrier and get a step-by-step plan to overcome it.",
-        assessmentLabel: "Find My Biggest Barrier",
+        assessmentPrompt: "You know your aviation. The full assessment shows whether the path is realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1231,9 +1231,9 @@ const guessAircraftQuiz: Quiz = {
       cta: {
         label: "Explore our aviation guides",
         href: "/guides",
-        assessmentPrompt: "Building your foundations is the right move. Start with the right information.",
-        assessmentSubtext: "Our guides cover everything from costs to medical requirements — in plain English.",
-        assessmentLabel: "Explore the Guides",
+        assessmentPrompt: "Everyone starts somewhere. The full assessment shows whether becoming a pilot is realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1249,9 +1249,9 @@ const guessAircraftQuiz: Quiz = {
       cta: {
         label: "Start with our beginner guides",
         href: "/guides",
-        assessmentPrompt: "Every pilot started exactly where you are. The guides will show you the way.",
-        assessmentSubtext: "No jargon, no pressure — just clear answers to the questions every aspiring pilot has.",
-        assessmentLabel: "Start Learning",
+        assessmentPrompt: "Everyone starts as a passenger. The full assessment shows whether becoming a pilot is realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
   ],
@@ -1588,9 +1588,9 @@ const readinessQuiz: Quiz = {
       cta: {
         label: "Find your flight school now",
         href: "/schools",
-        assessmentPrompt: "You're flight ready. Let's find the right school for your profile.",
-        assessmentSubtext: "Take the full assessment to get matched with schools that fit your budget, location, and route.",
-        assessmentLabel: "Find My Matched Schools",
+        assessmentPrompt: "You're ready. Now get the complete picture — training route, costs, and matched schools.",
+        assessmentSubtext: "The full assessment combines your readiness with finances, medical position and goals into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1606,9 +1606,9 @@ const readinessQuiz: Quiz = {
       cta: {
         label: "Get your personalised action plan",
         href: "/quiz",
-        assessmentPrompt: "You're nearly there. The assessment will show you exactly what's left to do.",
-        assessmentSubtext: "Get a personalised action plan that addresses your specific gaps — takes 5 minutes.",
-        assessmentLabel: "Get My Action Plan",
+        assessmentPrompt: "You're nearly there. The full assessment shows exactly what's left and how to close the gap.",
+        assessmentSubtext: "The full assessment combines your readiness with finances, medical position and goals into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1624,9 +1624,9 @@ const readinessQuiz: Quiz = {
       cta: {
         label: "Take the full assessment",
         href: "/quiz",
-        assessmentPrompt: "Building your foundations is the right move. Let's map out your path.",
-        assessmentSubtext: "The assessment identifies your barriers and gives you a step-by-step plan to overcome them.",
-        assessmentLabel: "Map My Training Path",
+        assessmentPrompt: "You're building the foundations. The full assessment shows what the realistic path looks like from here.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1642,9 +1642,9 @@ const readinessQuiz: Quiz = {
       cta: {
         label: "Start with our beginner guides",
         href: "/guides",
-        assessmentPrompt: "Every pilot started exactly where you are. The guides will show you the way.",
-        assessmentSubtext: "Start with our free beginner's guide — no jargon, no pressure, just clear answers.",
-        assessmentLabel: "Start With the Basics",
+        assessmentPrompt: "Every pilot started exactly where you are. The full assessment shows whether the path is realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
   ],
@@ -1917,9 +1917,9 @@ const obstacleQuiz: Quiz = {
       cta: {
         label: "Read the pilot training finance guide",
         href: "/guides/finance-guide",
-        assessmentPrompt: "Finance is the most common barrier — and the most solvable. Let's look at your options.",
-        assessmentSubtext: "The assessment maps out every funding route available for your country and profile.",
-        assessmentLabel: "Explore My Funding Options",
+        assessmentPrompt: "You've identified your biggest barrier. The full assessment shows exactly how to overcome it.",
+        assessmentSubtext: "The full assessment combines your obstacle with finances, medical readiness and goals into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1933,9 +1933,9 @@ const obstacleQuiz: Quiz = {
       cta: {
         label: "Explore the modular training route",
         href: "/tools/integrated-vs-modular",
-        assessmentPrompt: "Time is a real constraint — but modular training is built for people with lives.",
-        assessmentSubtext: "See how the modular route fits around your current commitments, with real timelines.",
-        assessmentLabel: "See the Modular Route",
+        assessmentPrompt: "You've identified your biggest barrier. The full assessment shows exactly how to overcome it.",
+        assessmentSubtext: "The full assessment combines your obstacle with finances, medical readiness and goals into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1949,9 +1949,9 @@ const obstacleQuiz: Quiz = {
       cta: {
         label: "Check the Class 1 Medical tool",
         href: "/tools/class-1-medical-check",
-        assessmentPrompt: "Medical concerns are common — and most conditions don't disqualify you.",
-        assessmentSubtext: "Use our medical condition lookup tool to check your specific situation before spending anything.",
-        assessmentLabel: "Check My Medical Eligibility",
+        assessmentPrompt: "Medical concerns are common — and most conditions don't disqualify you. The full assessment shows what's realistic for your situation.",
+        assessmentSubtext: "The full assessment combines your medical situation with finances, goals and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1965,9 +1965,9 @@ const obstacleQuiz: Quiz = {
       cta: {
         label: "Take the full career assessment",
         href: "/quiz",
-        assessmentPrompt: "You're nearly there. The assessment will show you exactly what's left to do.",
-        assessmentSubtext: "Get a personalised action plan that addresses your specific gaps — takes 5 minutes.",
-        assessmentLabel: "Get My Action Plan",
+        assessmentPrompt: "You've identified your barrier. The full assessment shows exactly how to overcome it.",
+        assessmentSubtext: "The full assessment combines your obstacle with finances, medical readiness and goals into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -1981,9 +1981,9 @@ const obstacleQuiz: Quiz = {
       cta: {
         label: "Read the beginner's guide",
         href: "/guides/how-to-become-a-pilot",
-        assessmentPrompt: "Information is the cure. Start with the most important question: what does your path actually look like?",
-        assessmentSubtext: "The assessment gives you a personalised roadmap based on your country, budget, and goals.",
-        assessmentLabel: "Get My Personalised Roadmap",
+        assessmentPrompt: "You need answers, not more research. The full assessment shows exactly what your path looks like.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
   ],
@@ -2285,9 +2285,9 @@ const pilotThinkingQuiz: Quiz = {
       cta: {
         label: "Take the full career assessment",
         href: "/quiz",
-        assessmentPrompt: "You think like a pilot. Now let's build your actual training roadmap.",
-        assessmentSubtext: "Get your personalised route, timeline, and matched schools — takes 5 minutes.",
-        assessmentLabel: "Build My Roadmap",
+        assessmentPrompt: "You think like a pilot. Now find out if becoming one is actually realistic for you.",
+        assessmentSubtext: "The full assessment combines your thinking style with finances, medical readiness and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -2303,9 +2303,9 @@ const pilotThinkingQuiz: Quiz = {
       cta: {
         label: "Start your pilot journey",
         href: "/quiz",
-        assessmentPrompt: "Good instincts, developing judgement. The full assessment will map your exact path.",
-        assessmentSubtext: "Find out your training route, costs, and the schools that match your profile.",
-        assessmentLabel: "Start My Journey",
+        assessmentPrompt: "Good instincts, developing judgement. The full assessment shows whether the path is realistic for you.",
+        assessmentSubtext: "The full assessment combines your thinking style with finances, medical readiness and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -2321,9 +2321,9 @@ const pilotThinkingQuiz: Quiz = {
       cta: {
         label: "Explore our aviation guides",
         href: "/guides",
-        assessmentPrompt: "Pilot thinking is a skill you can learn. Our guides are the starting point.",
-        assessmentSubtext: "Plain English guides on everything from training routes to medical requirements.",
-        assessmentLabel: "Start Learning",
+        assessmentPrompt: "Pilot thinking is a skill you can learn. The full assessment shows what the realistic path looks like from where you are.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -2339,9 +2339,9 @@ const pilotThinkingQuiz: Quiz = {
       cta: {
         label: "Start with our beginner guides",
         href: "/guides",
-        assessmentPrompt: "Everyone starts as a passenger. Our beginner guides will show you the way.",
-        assessmentSubtext: "No jargon, no pressure — just clear answers to the questions every aspiring pilot has.",
-        assessmentLabel: "Start With the Basics",
+        assessmentPrompt: "Everyone starts as a passenger. The full assessment shows whether becoming a pilot is realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
   ],
@@ -2560,9 +2560,9 @@ const affordabilityQuiz: Quiz = {
       cta: {
         label: "Find your flight school",
         href: "/schools",
-        assessmentPrompt: "You're financially ready. Let's match you with the right school.",
-        assessmentSubtext: "Take the full assessment to get matched with schools that fit your budget and training goals.",
-        assessmentLabel: "Find My Matched Schools",
+        assessmentPrompt: "You've seen your funding position. The full assessment shows the most realistic training route based on your budget and timeline.",
+        assessmentSubtext: "The full assessment combines finances with your goals, medical readiness and training options into one personalised result with matched schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -2578,9 +2578,9 @@ const affordabilityQuiz: Quiz = {
       cta: {
         label: "Read the pilot training finance guide",
         href: "/guides/finance-guide",
-        assessmentPrompt: "Funding is available — you just need to know where to look.",
-        assessmentSubtext: "The finance guide covers every loan, scholarship, and sponsorship option available in your country.",
-        assessmentLabel: "Explore Funding Options",
+        assessmentPrompt: "You've seen your funding position. The full assessment shows the most realistic training route based on your budget.",
+        assessmentSubtext: "The full assessment combines finances with your goals, medical readiness and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -2596,9 +2596,9 @@ const affordabilityQuiz: Quiz = {
       cta: {
         label: "Explore all funding options",
         href: "/guides/finance-guide",
-        assessmentPrompt: "Finance is the most common barrier — and there are more options than you think.",
-        assessmentSubtext: "The assessment maps out every funding route available for your specific country and profile.",
-        assessmentLabel: "Find My Funding Route",
+        assessmentPrompt: "Finance is the most common barrier — and there are more options than you think. The full assessment shows what's realistic for your situation.",
+        assessmentSubtext: "The full assessment combines your financial position with goals, medical readiness and training options into one personalised result.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
   ],
@@ -2843,9 +2843,9 @@ const airlineMatchQuiz: Quiz = {
       cta: {
         label: "Find your training route to a low-cost career",
         href: "/quiz",
-        assessmentPrompt: "Ryanair is one of the fastest paths to high hours. Want to see the training route?",
-        assessmentSubtext: "The assessment maps out the exact training path to a low-cost carrier career — costs, timeline, matched schools.",
-        assessmentLabel: "Plan My Ryanair Route",
+        assessmentPrompt: "Find out if becoming a pilot is actually realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -2859,9 +2859,9 @@ const airlineMatchQuiz: Quiz = {
       cta: {
         label: "Take the full career assessment",
         href: "/quiz",
-        assessmentPrompt: "easyJet is a great lifestyle airline. Want to see the training path?",
-        assessmentSubtext: "Get your personalised roadmap to an easyJet career — costs, timeline, and matched schools.",
-        assessmentLabel: "Plan My easyJet Route",
+        assessmentPrompt: "Find out if becoming a pilot is actually realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -2875,9 +2875,9 @@ const airlineMatchQuiz: Quiz = {
       cta: {
         label: "Explore the BA cadet programme",
         href: "/quiz",
-        assessmentPrompt: "British Airways is the most prestigious UK airline. Want to see the cadet pathway?",
-        assessmentSubtext: "The assessment maps out the BA Future Pilot Programme route and what it takes to get in.",
-        assessmentLabel: "Explore the BA Cadet Route",
+        assessmentPrompt: "Find out if becoming a pilot is actually realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -2891,9 +2891,9 @@ const airlineMatchQuiz: Quiz = {
       cta: {
         label: "Find your training route",
         href: "/quiz",
-        assessmentPrompt: "Emirates is the pinnacle of long-haul aviation. Want to see the path?",
-        assessmentSubtext: "The assessment maps out the training route and profile that Emirates looks for.",
-        assessmentLabel: "Plan My Emirates Route",
+        assessmentPrompt: "Find out if becoming a pilot is actually realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -2907,9 +2907,9 @@ const airlineMatchQuiz: Quiz = {
       cta: {
         label: "Take the full career assessment",
         href: "/quiz",
-        assessmentPrompt: "Wizz Air is one of Europe's fastest-growing carriers. Want to see the path?",
-        assessmentSubtext: "Get your personalised roadmap to a Wizz Air career — costs, timeline, and matched schools.",
-        assessmentLabel: "Plan My Wizz Air Route",
+        assessmentPrompt: "Find out if becoming a pilot is actually realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
     {
@@ -2923,9 +2923,9 @@ const airlineMatchQuiz: Quiz = {
       cta: {
         label: "Find your training route",
         href: "/quiz",
-        assessmentPrompt: "TUI is a great lifestyle airline with a strong cadet programme. Want to see the path?",
-        assessmentSubtext: "The assessment maps out the TUI cadet route and what your training journey would look like.",
-        assessmentLabel: "Plan My TUI Route",
+        assessmentPrompt: "Find out if becoming a pilot is actually realistic for you.",
+        assessmentSubtext: "The full assessment combines your goals, finances, medical readiness and training options into one personalised result with matched flight schools.",
+        assessmentLabel: "Get My Full Pilot Assessment",
       },
     },
   ],
