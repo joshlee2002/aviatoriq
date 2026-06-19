@@ -10,7 +10,8 @@ import { usePageTracking } from "./hooks/usePageTracking";
 import ErrorBoundary from "./components/ErrorBoundary";
 
 import { ThemeProvider } from "./contexts/ThemeContext";
-import { CountryProvider } from "./contexts/CountryContext";
+import { CountryProvider, useCountry } from "./contexts/CountryContext";
+import type { Country } from "./contexts/CountryContext";
 import { CurrencyProvider } from "./contexts/CurrencyContext";
 
 // Country selector
@@ -299,9 +300,13 @@ import FlightSchoolsHub from "./pages/hubs/FlightSchoolsHub";
 // Initialise PostHog analytics once on app load
 initAnalytics();
 
-// Sets country in localStorage then redirects to /guides so the unified index shows the right region
+// Sets country in both React context state AND localStorage, then redirects to the unified Home.tsx
+// Must use useCountry() so the already-mounted CountryProvider updates its in-memory state.
 function CountryRedirect({ country, to }: { country: string; to: string }) {
-  if (country) localStorage.setItem("aviatoriq_country", country);
+  const { setCountry } = useCountry();
+  useEffect(() => {
+    if (country) setCountry(country as Country);
+  }, [country, setCountry]);
   return <Redirect to={to} />;
 }
 
