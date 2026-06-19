@@ -555,7 +555,7 @@ function SchoolCard({
   school,
   onUnlock,
 }: {
-  school: FlightSchool;
+  school: FlightSchool | import("@/data/schools").StaticSchool;
   onUnlock: (s: UnlockTarget) => void;
 }) {
   const [expanded, setExpanded] = useState(false);
@@ -761,8 +761,8 @@ function SchoolCard({
                 name: school.name,
                 country: school.country ?? "United States",
                 website: school.website,
-                contactEmail: school.contactEmail,
-                phone: school.phone,
+                contactEmail: (school as { contactEmail?: string | null }).contactEmail ?? null,
+                phone: (school as { phone?: string | null }).phone ?? null,
                 priceRange: school.priceRange,
                 airlinePartnerships: school.airlinePartnerships,
               })

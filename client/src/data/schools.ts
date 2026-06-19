@@ -826,34 +826,34 @@ export const US_SCHOOLS: StaticSchool[] = [
 export const ALL_SCHOOLS: StaticSchool[] = [...STATIC_SCHOOLS, ...US_SCHOOLS];
 
 // Per-school Pexels images — unique photo for every school card
-// Sourced June 2026 via Pexels API (aviation/campus search terms)
+// Sourced June 2026 via Pexels API — each photo ID is distinct, visually verified
 export const SCHOOL_IMAGES: Record<number, string> = {
-  1:   "https://images.pexels.com/photos/10965912/pexels-photo-10965912.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  2:   "https://images.pexels.com/photos/19589880/pexels-photo-19589880.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  3:   "https://images.pexels.com/photos/32922715/pexels-photo-32922715.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  4:   "https://images.pexels.com/photos/13816422/pexels-photo-13816422.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  5:   "https://images.pexels.com/photos/5262805/pexels-photo-5262805.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  6:   "https://images.pexels.com/photos/33231842/pexels-photo-33231842.png?auto=compress&cs=tinysrgb&h=400&w=800",
-  7:   "https://images.pexels.com/photos/33020982/pexels-photo-33020982.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  8:   "https://images.pexels.com/photos/9158761/pexels-photo-9158761.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  9:   "https://images.pexels.com/photos/35453770/pexels-photo-35453770.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  10:  "https://images.pexels.com/photos/37159693/pexels-photo-37159693.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  11:  "https://images.pexels.com/photos/32138453/pexels-photo-32138453.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  12:  "https://images.pexels.com/photos/2497926/pexels-photo-2497926.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  13:  "https://images.pexels.com/photos/30261302/pexels-photo-30261302.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  14:  "https://images.pexels.com/photos/36006606/pexels-photo-36006606.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  15:  "https://images.pexels.com/photos/14628247/pexels-photo-14628247.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  16:  "https://images.pexels.com/photos/30342626/pexels-photo-30342626.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  101: "https://images.pexels.com/photos/10362464/pexels-photo-10362464.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  102: "https://images.pexels.com/photos/31039051/pexels-photo-31039051.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  103: "https://images.pexels.com/photos/6916506/pexels-photo-6916506.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  104: "https://images.pexels.com/photos/37010312/pexels-photo-37010312.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  105: "https://images.pexels.com/photos/31785120/pexels-photo-31785120.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  106: "https://images.pexels.com/photos/8228203/pexels-photo-8228203.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  107: "https://images.pexels.com/photos/34894314/pexels-photo-34894314.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  108: "https://images.pexels.com/photos/914403/pexels-photo-914403.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  109: "https://images.pexels.com/photos/9611088/pexels-photo-9611088.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  110: "https://images.pexels.com/photos/30272219/pexels-photo-30272219.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  111: "https://images.pexels.com/photos/3099037/pexels-photo-3099037.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
-  112: "https://images.pexels.com/photos/35453767/pexels-photo-35453767.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  1:   "https://images.pexels.com/photos/11929778/pexels-photo-11929778.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Skyborne — cadets group
+  2:   "https://images.pexels.com/photos/3862634/pexels-photo-3862634.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",   // CAE Oxford — simulator cockpit
+  3:   "https://images.pexels.com/photos/32922715/pexels-photo-32922715.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // LEAP — aircraft taking off
+  4:   "https://images.pexels.com/photos/14628247/pexels-photo-14628247.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Acron — aircraft on display airfield
+  5:   "https://images.pexels.com/photos/35408680/pexels-photo-35408680.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Aeros — colourful trainer aircraft
+  6:   "https://images.pexels.com/photos/36863387/pexels-photo-36863387.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // FTEJerez — Vueling A321 takeoff Spain
+  7:   "https://images.pexels.com/photos/27519457/pexels-photo-27519457.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Bartolini — Aeroklub Pomorski Poland
+  8:   "https://images.pexels.com/photos/9489917/pexels-photo-9489917.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",   // Bristol GS — students studying
+  9:   "https://images.pexels.com/photos/16562841/pexels-photo-16562841.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Airways Aviation — jet at terminal
+  10:  "https://images.pexels.com/photos/8580909/pexels-photo-8580909.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",   // Stapleford — light aircraft grass runway
+  11:  "https://images.pexels.com/photos/33350502/pexels-photo-33350502.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // TAE Greece — aircraft azure waters Greece
+  12:  "https://images.pexels.com/photos/18048437/pexels-photo-18048437.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Wizz Air Academy — airline pilot cockpit
+  13:  "https://images.pexels.com/photos/33844248/pexels-photo-33844248.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Ryanair Future Flyer — boarding Ryanair
+  14:  "https://images.pexels.com/photos/36006606/pexels-photo-36006606.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Airbus Flight Academy — Airbus factory
+  15:  "https://images.pexels.com/photos/31793505/pexels-photo-31793505.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Jet2 Flight Path — Jet2 aircraft runway
+  16:  "https://images.pexels.com/photos/4269510/pexels-photo-4269510.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",   // OAA — pilots in uniform back view
+  101: "https://images.pexels.com/photos/10362464/pexels-photo-10362464.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // ATP Flight School — private jets ramp
+  102: "https://images.pexels.com/photos/9400906/pexels-photo-9400906.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",   // Embry-Riddle — Daytona Beach aerial
+  103: "https://images.pexels.com/photos/3862137/pexels-photo-3862137.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",   // USATS — female pilot flight simulator
+  104: "https://images.pexels.com/photos/236070/pexels-photo-236070.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",     // L3Harris — private jets tarmac
+  105: "https://images.pexels.com/photos/6049773/pexels-photo-6049773.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",   // Epic Flight — vintage aircraft Florida
+  106: "https://images.pexels.com/photos/7478338/pexels-photo-7478338.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",   // CAE Phoenix — American Airlines Phoenix
+  107: "https://images.pexels.com/photos/36410538/pexels-photo-36410538.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Envoy — cockpit pilot flying
+  108: "https://images.pexels.com/photos/16774340/pexels-photo-16774340.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Spartan — aircraft mid-flight
+  109: "https://images.pexels.com/photos/28610626/pexels-photo-28610626.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",  // Sierra Nevada — mountain lake
+  110: "https://images.pexels.com/photos/5741643/pexels-photo-5741643.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",   // American Flyers — Cessna blue sky
+  111: "https://images.pexels.com/photos/3862143/pexels-photo-3862143.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",   // FlightSafety — engineers cockpit design
+  112: "https://images.pexels.com/photos/13731953/pexels-photo-13731953.png?auto=compress&cs=tinysrgb&h=400&w=800",   // Westwind — classic propeller close-up
 };
