@@ -1,9 +1,10 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import SEO from "@/components/SEO";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import { Link } from "wouter";
-import { TrendingUp, AlertTriangle, Info } from "lucide-react";
+import { TrendingUp, AlertTriangle, Info, ArrowRight } from "lucide-react";
+import { useCountry } from "@/contexts/CountryContext";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 // All figures are indicative ranges sourced from BALPA, ALPA, and public
@@ -86,9 +87,31 @@ const COUNTRY_CONFIG: Record<
   au: { label: "Australia", sym: "A$", key: "auAud" },
 };
 
+// Map CountryContext country keys to SalaryEstimator CountryKey
+const CONTEXT_TO_SALARY_KEY: Record<string, CountryKey> = {
+  uk: "uk",
+  us: "us",
+  europe: "eu",
+  canada: "ca",
+  australia: "au",
+  "new-zealand": "au",
+  uae: "uk",
+  "south-africa": "uk",
+  india: "uk",
+  singapore: "uk",
+  other: "uk",
+};
+
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function SalaryEstimator() {
+  const { country: ctxCountry } = useCountry();
   const [country, setCountry] = useState<CountryKey>("uk");
+
+  // Auto-select salary market based on user's country
+  useEffect(() => {
+    const mapped = CONTEXT_TO_SALARY_KEY[ctxCountry] ?? "uk";
+    setCountry(mapped);
+  }, [ctxCountry]);
   const [yearsTraining, setYearsTraining] = useState(2);
   const [route, setRoute] = useState<"integrated" | "modular" | "cadet">(
     "integrated"
@@ -289,25 +312,38 @@ export default function SalaryEstimator() {
             </ul>
           </div>
 
-          {/* CTA */}
-          <div className="mt-8 text-center">
-            <p className="text-white/60 text-sm mb-4">
-              Want to model your loan repayments against these salary figures?
+          {/* Tool CTAs */}
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <Link
+              href="/tools/finance-calculator"
+              className="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
+            >
+              Finance Repayment Calculator
+            </Link>
+            <Link
+              href="/calculator"
+              className="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
+            >
+              Training Cost Calculator
+            </Link>
+          </div>
+
+          {/* Assessment CTA */}
+          <div className="mt-8 bg-gradient-to-br from-blue-900/60 to-blue-800/40 border border-blue-500/30 rounded-2xl p-8 text-center">
+            <p className="text-xs font-semibold uppercase tracking-widest text-blue-300 mb-3">Next Step</p>
+            <h2 className="font-display font-bold text-2xl text-white mb-3">
+              You've seen the salary potential. Now find out if the path is realistic for you.
+            </h2>
+            <p className="text-white/70 text-sm max-w-xl mx-auto mb-6">
+              The full assessment combines your goals, finances, medical readiness and training options into one personalised result — with matched flight schools.
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <Link
-                href="/tools/finance-calculator"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
-              >
-                Finance Repayment Calculator
-              </Link>
-              <Link
-                href="/calculator"
-                className="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
-              >
-                Training Cost Calculator
-              </Link>
-            </div>
+            <Link
+              href="/quiz"
+              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-7 py-3.5 rounded-xl transition-colors text-sm"
+            >
+              Get My Full Pilot Assessment
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </main>

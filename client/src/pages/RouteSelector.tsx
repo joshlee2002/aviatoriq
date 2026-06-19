@@ -3,6 +3,7 @@ import SEO from "@/components/SEO";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import { Link } from "wouter";
+import { useCountry } from "@/contexts/CountryContext";
 import {
   Compass,
   CheckCircle2,
@@ -287,6 +288,28 @@ function selectRoute(answers: Record<string, string>): RouteResult {
   return ROUTE_RESULTS["uk_integrated"];
 }
 
+// ─── Assessment CTA ───────────────────────────────────────────────────────────────
+function AssessmentCTA() {
+  return (
+    <div className="bg-gradient-to-br from-blue-900/60 to-blue-800/40 border border-blue-500/30 rounded-2xl p-7 text-center">
+      <p className="text-xs font-semibold uppercase tracking-widest text-blue-300 mb-3">Next Step</p>
+      <h2 className="font-display font-bold text-xl text-white mb-2">
+        You've found your route. Now get the full picture.
+      </h2>
+      <p className="text-white/70 text-sm max-w-lg mx-auto mb-5">
+        The full assessment combines your route with your finances, medical readiness and goals — and matches you with flight schools that fit your situation.
+      </p>
+      <Link
+        href="/quiz"
+        className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm"
+      >
+        Get My Full Pilot Assessment
+        <ChevronRight className="w-4 h-4" />
+      </Link>
+    </div>
+  );
+}
+
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function RouteSelector() {
   const [currentQ, setCurrentQ] = useState(0);
@@ -475,11 +498,14 @@ export default function RouteSelector() {
                 <p className="text-sm text-amber-200">{result.caveat}</p>
               </div>
 
+              {/* Assessment CTA */}
+              <AssessmentCTA />
+
               {/* Actions */}
               <div className="flex flex-wrap gap-3">
                 <Link
                   href={result.guideHref}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
+                  className="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
                 >
                   Read: {result.guideLabel}
                 </Link>

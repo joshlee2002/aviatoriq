@@ -894,20 +894,18 @@ export default function Calculator() {
                 </p>
               </div>
 
-              {/* CTA */}
+              {/* Assessment CTA */}
               <div className="card-base p-6 bg-[var(--color-navy)] text-white text-center">
+                <p className="text-xs font-semibold uppercase tracking-widest text-blue-300 mb-3">Next Step</p>
                 <h3 className="font-display font-bold text-xl mb-2">
-                  Know your cost. Now understand your readiness.
+                  You've seen the cost. Now find out if the full picture adds up.
                 </h3>
                 <p className="text-white/70 text-sm mb-5 max-w-md mx-auto">
-                  The Career Readiness Assessment identifies your biggest
-                  barrier to starting — whether that's funding, medical,
-                  confidence, or timing — and gives you a personalised plan to
-                  overcome it.
+                  The full assessment combines your cost estimate with your goals, medical readiness and training options — and matches you with flight schools that fit your budget.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Link href="/quiz" className="btn-cta text-sm">
-                    Find my biggest barrier
+                    Get My Full Pilot Assessment
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link

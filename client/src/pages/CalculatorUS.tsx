@@ -8,6 +8,7 @@ import {
   ChevronRight,
   Info,
   CheckCircle2,
+  ArrowRight,
 } from "lucide-react";
 
 type Route = "part_141_university" | "part_141_academy" | "part_61";
@@ -346,7 +347,26 @@ export default function CalculatorUS() {
                 </div>
               </div>
 
-              <div className="mt-8 text-center">
+              {/* Assessment CTA */}
+              <div className="mt-8 rounded-2xl p-7 text-center" style={{ background: "oklch(0.18 0.06 240)", border: "1px solid oklch(0.3 0.1 240)" }}>
+                <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "oklch(0.65 0.22 45)" }}>Next Step</p>
+                <h3 className="font-bold text-xl text-white mb-2">
+                  You've seen the cost. Now find out if the full picture adds up.
+                </h3>
+                <p className="text-sm mb-5 max-w-md mx-auto" style={{ color: "oklch(0.65 0.04 240)" }}>
+                  The full assessment combines your cost estimate with your goals, medical readiness and training options — and matches you with flight schools that fit your budget.
+                </p>
+                <Link
+                  href="/quiz"
+                  className="inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-xl transition-colors text-sm text-white"
+                  style={{ background: "oklch(0.65 0.22 45)" }}
+                >
+                  Get My Full Pilot Assessment
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              <div className="mt-6 text-center">
                 <button
                   onClick={() => {
                     setStep(1);

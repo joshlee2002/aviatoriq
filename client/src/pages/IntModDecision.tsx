@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useCountry } from "@/contexts/CountryContext";
 import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import PublicNav from "@/components/PublicNav";
@@ -208,7 +209,7 @@ const RESULT_COPY = {
       "No flexibility to pause — you commit to the full programme",
       "Training often requires relocating or living away from home",
     ],
-    cta: "Get a personalised training roadmap",
+    cta: "Get My Full Pilot Assessment",
     ctaHref: "/quiz",
   },
   modular: {
@@ -216,7 +217,7 @@ const RESULT_COPY = {
     summary:
       "Your situation — whether that's financial constraints, personal commitments, or a preference for flexibility — points strongly toward modular training. You can build your licences in stages, keep working, and manage your financial risk.",
     pros: [
-      "Lower total cost: £40,000–£80,000 spread over time",
+      "Lower total cost spread over time",
       "Keep working while you train — no need to give up your income",
       "Flexibility to pause if life circumstances change",
       "Train at your own pace and choose your own schools",
@@ -226,8 +227,8 @@ const RESULT_COPY = {
       "Requires self-discipline to manage your own progression",
       "Some airlines historically preferred integrated graduates (though this is changing)",
     ],
-    cta: "Find modular schools that match your budget",
-    ctaHref: "/schools",
+    cta: "Get My Full Pilot Assessment",
+    ctaHref: "/quiz",
   },
   either: {
     title: "Either route could work for you",
@@ -242,12 +243,17 @@ const RESULT_COPY = {
       "The decision requires careful financial planning either way",
       "Consider speaking to an admissions advisor at both types of school",
     ],
-    cta: "Take the full assessment for a personalised roadmap",
+    cta: "Get My Full Pilot Assessment",
     ctaHref: "/quiz",
   },
 };
 
 export default function IntModDecision() {
+  const { currencySymbol, country } = useCountry();
+  const sym = currencySymbol || "£";
+  // Country-aware cost ranges for integrated vs modular
+  const intCostRange = country === "us" ? `$120,000–$200,000` : country === "australia" ? `A$90,000–A$140,000` : country === "canada" ? `CA$90,000–CA$140,000` : country === "europe" ? `€80,000–€130,000` : `${sym}90,000–${sym}130,000`;
+  const modLowRange = country === "us" ? `$60,000–$120,000` : country === "australia" ? `A$50,000–A$90,000` : country === "canada" ? `CA$50,000–CA$90,000` : country === "europe" ? `€50,000–€90,000` : `${sym}40,000–${sym}80,000`;
   const [step, setStep] = useState(0); // 0 = intro, 1-6 = questions, 7 = result
   const [answers, setAnswers] = useState<Answers>({});
   const [selected, setSelected] = useState<string | null>(null);
@@ -325,7 +331,7 @@ export default function IntModDecision() {
                     Integrated
                   </div>
                   <div className="text-xs text-blue-700">
-                    18–24 months · £90k–£130k · Full-time
+                    18–24 months · {intCostRange} · Full-time
                   </div>
                 </div>
                 <div className="p-4 rounded-xl bg-purple-50 border border-purple-100">
@@ -333,7 +339,7 @@ export default function IntModDecision() {
                     Modular
                   </div>
                   <div className="text-xs text-purple-700">
-                    3–5 years · £40k–£80k · Flexible
+                    3–5 years · {modLowRange} · Flexible
                   </div>
                 </div>
               </div>
@@ -491,12 +497,12 @@ export default function IntModDecision() {
 
               {/* CTAs */}
               <div className="card-base p-6 bg-[var(--color-navy)] text-white text-center">
+                <p className="text-xs font-semibold uppercase tracking-widest text-blue-300 mb-3">Next Step</p>
                 <h3 className="font-display font-bold text-lg mb-2">
-                  Ready to take the next step?
+                  You've found your route. Now find out if it's realistic for you.
                 </h3>
                 <p className="text-white/70 text-sm mb-5">
-                  Get a full personalised roadmap — including cost estimate,
-                  timeline, and matched flight schools.
+                  The full assessment combines your route choice with your finances, medical readiness and goals — and matches you with flight schools.
                 </p>
                 <Link
                   href={resultCopy.ctaHref}

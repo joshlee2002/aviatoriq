@@ -922,7 +922,7 @@ export default function MedicalConditionLookup() {
               </div>
             </div>
 
-            {/* CTA */}
+            {/* Medical Check CTA */}
             <div
               className="rounded-2xl p-6 md:p-8 text-center"
               style={{
@@ -965,6 +965,24 @@ export default function MedicalConditionLookup() {
                   Read the Class 1 Medical Guide
                 </Link>
               </div>
+            </div>
+
+            {/* Assessment CTA */}
+            <div className="rounded-2xl p-7 text-center" style={{ background: "linear-gradient(135deg, oklch(0.16 0.08 255), oklch(0.2 0.1 248))", border: "1px solid oklch(0.35 0.15 240 / 0.3)" }}>
+              <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "oklch(0.65 0.18 240)" }}>Next Step</p>
+              <h3 className="font-display font-bold text-xl text-white mb-2">
+                Your medical position looks clear. Now find out if the full picture adds up.
+              </h3>
+              <p className="text-sm mb-5 max-w-md mx-auto" style={{ color: "oklch(0.65 0.04 240)" }}>
+                The full assessment combines your medical readiness with your goals, finances and training options — and matches you with flight schools.
+              </p>
+              <Link
+                href="/quiz"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white no-underline"
+                style={{ background: "linear-gradient(135deg, oklch(0.55 0.2 255), oklch(0.48 0.22 248))", boxShadow: "0 0 16px oklch(0.55 0.2 255 / 0.25)" }}
+              >
+                Get My Full Pilot Assessment <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>

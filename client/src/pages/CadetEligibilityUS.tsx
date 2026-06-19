@@ -12,6 +12,7 @@ import {
   GraduationCap,
   Clock,
   Wallet,
+  ArrowRight,
 } from "lucide-react";
 
 // ─── Types & Data ───────────────────────────────────────────────────────────
@@ -484,6 +485,28 @@ export default function CadetEligibilityUS() {
               )}
             </div>
           )}
+        </div>
+      </section>
+
+      {/* Assessment CTA */}
+      <section className="py-12" style={{ background: "oklch(0.13 0.06 240)" }}>
+        <div className="container mx-auto px-4 max-w-2xl">
+          <div className="rounded-2xl p-7 text-center" style={{ background: "linear-gradient(135deg, oklch(0.16 0.08 255), oklch(0.2 0.1 248))", border: "1px solid oklch(0.35 0.15 240 / 0.3)" }}>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "oklch(0.65 0.18 240)" }}>Next Step</p>
+            <h3 className="font-bold text-xl text-white mb-2">
+              You've checked your eligibility. Now find out if the full picture adds up.
+            </h3>
+            <p className="text-sm mb-5 max-w-md mx-auto" style={{ color: "oklch(0.65 0.04 240)" }}>
+              The full assessment combines your cadet eligibility with your finances, medical readiness and goals — and matches you with flight schools.
+            </p>
+            <Link
+              href="/quiz"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white no-underline"
+              style={{ background: "linear-gradient(135deg, oklch(0.55 0.2 255), oklch(0.48 0.22 248))", boxShadow: "0 0 16px oklch(0.55 0.2 255 / 0.25)" }}
+            >
+              Get My Full Pilot Assessment <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 

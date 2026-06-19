@@ -805,16 +805,15 @@ export default function CadetEligibility() {
                     border: "1px solid oklch(0.45 0.18 240 / 0.2)",
                   }}
                 >
+                  <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "oklch(0.65 0.18 240)" }}>Next Step</p>
                   <h3 className="font-display font-bold text-xl text-white mb-2">
-                    Want a full personalised roadmap?
+                    You've checked your eligibility. Now find out if the full picture adds up.
                   </h3>
                   <p
                     className="text-sm mb-5"
                     style={{ color: "oklch(0.65 0.04 240)" }}
                   >
-                    Take the free 10-question AviatorIQ assessment to get a
-                    personalised training roadmap, readiness score, and matched
-                    flight schools.
+                    The full assessment combines your cadet eligibility with your finances, medical readiness and goals — and matches you with flight schools.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <Link
@@ -826,7 +825,7 @@ export default function CadetEligibility() {
                         boxShadow: "0 0 16px oklch(0.72 0.18 65 / 0.25)",
                       }}
                     >
-                      Take the full assessment{" "}
+                      Get My Full Pilot Assessment{" "}
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                     <Link

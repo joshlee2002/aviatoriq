@@ -1,9 +1,10 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import SEO from "@/components/SEO";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import { Link } from "wouter";
-import { Calculator, AlertTriangle, Info, TrendingDown } from "lucide-react";
+import { Calculator, AlertTriangle, Info, TrendingDown, ArrowRight } from "lucide-react";
+import { useCountry } from "@/contexts/CountryContext";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface LoanInputs {
@@ -99,7 +100,23 @@ const PRESETS = [
 ];
 
 // ─── Component ────────────────────────────────────────────────────────────────
+// Map CountryContext country keys to FinanceCalculator currency codes
+const COUNTRY_TO_CURRENCY: Record<string, "GBP" | "USD" | "CAD" | "AUD" | "EUR"> = {
+  uk: "GBP",
+  us: "USD",
+  canada: "CAD",
+  australia: "AUD",
+  "new-zealand": "AUD",
+  europe: "EUR",
+  uae: "USD",
+  "south-africa": "USD",
+  india: "USD",
+  singapore: "USD",
+  other: "GBP",
+};
+
 export default function FinanceCalculator() {
+  const { country } = useCountry();
   const [inputs, setInputs] = useState<LoanInputs>({
     loanAmount: 95000,
     apr: 7.9,
@@ -110,6 +127,12 @@ export default function FinanceCalculator() {
   const [currency, setCurrency] = useState<
     "GBP" | "USD" | "CAD" | "AUD" | "EUR"
   >("GBP");
+
+  // Auto-select currency based on user's country
+  useEffect(() => {
+    const mapped = COUNTRY_TO_CURRENCY[country] ?? "GBP";
+    setCurrency(mapped);
+  }, [country]);
 
   const currencySymbols: Record<string, string> = {
     GBP: "£",
@@ -501,6 +524,24 @@ export default function FinanceCalculator() {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Assessment CTA */}
+          <div className="mt-10 bg-gradient-to-br from-blue-900/60 to-blue-800/40 border border-blue-500/30 rounded-2xl p-8 text-center">
+            <p className="text-xs font-semibold uppercase tracking-widest text-blue-300 mb-3">Next Step</p>
+            <h2 className="font-display font-bold text-2xl text-white mb-3">
+              You've modelled the numbers. Now find out if the full picture adds up.
+            </h2>
+            <p className="text-white/70 text-sm max-w-xl mx-auto mb-6">
+              The full assessment combines your financial position with your goals, medical readiness and training options — and matches you with flight schools that fit your budget.
+            </p>
+            <Link
+              href="/quiz"
+              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-7 py-3.5 rounded-xl transition-colors text-sm"
+            >
+              Get My Full Pilot Assessment
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </main>
