@@ -109,7 +109,7 @@ export default function SalaryEstimator() {
 
   // Auto-select salary market based on user's country
   useEffect(() => {
-    const mapped = CONTEXT_TO_SALARY_KEY[ctxCountry] ?? "uk";
+    const mapped = ctxCountry ? (CONTEXT_TO_SALARY_KEY[ctxCountry] ?? "uk") : "uk";
     setCountry(mapped);
   }, [ctxCountry]);
   const [yearsTraining, setYearsTraining] = useState(2);

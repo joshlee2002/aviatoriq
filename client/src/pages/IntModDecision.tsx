@@ -249,8 +249,8 @@ const RESULT_COPY = {
 };
 
 export default function IntModDecision() {
-  const { currencySymbol, country } = useCountry();
-  const sym = currencySymbol || "£";
+  const { country, config } = useCountry();
+  const sym = config?.currencySymbol ?? "£";
   // Country-aware cost ranges for integrated vs modular
   const intCostRange = country === "us" ? `$120,000–$200,000` : country === "australia" ? `A$90,000–A$140,000` : country === "canada" ? `CA$90,000–CA$140,000` : country === "europe" ? `€80,000–€130,000` : `${sym}90,000–${sym}130,000`;
   const modLowRange = country === "us" ? `$60,000–$120,000` : country === "australia" ? `A$50,000–A$90,000` : country === "canada" ? `CA$50,000–CA$90,000` : country === "europe" ? `€50,000–€90,000` : `${sym}40,000–${sym}80,000`;

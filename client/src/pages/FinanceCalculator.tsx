@@ -130,7 +130,7 @@ export default function FinanceCalculator() {
 
   // Auto-select currency based on user's country
   useEffect(() => {
-    const mapped = COUNTRY_TO_CURRENCY[country] ?? "GBP";
+    const mapped = country ? (COUNTRY_TO_CURRENCY[country] ?? "GBP") : "GBP";
     setCurrency(mapped);
   }, [country]);
 
