@@ -590,8 +590,8 @@ export default function Calculator() {
         </div>
 
         <div className="container max-w-3xl py-10 px-4">
-          {/* Progress bar */}
-          <div className="mb-8">
+          {/* Progress bar — only show while answering questions */}
+          {!result && <div className="mb-8">
             <div className="flex items-center justify-between mb-2">
               {STEP_LABELS.map((label, i) => (
                 <button
@@ -624,7 +624,7 @@ export default function Calculator() {
                 style={{ width: `${(step / 4) * 100}%` }}
               />
             </div>
-          </div>
+          </div>}
 
           {/* Step panel */}
           {!isComplete ? (
