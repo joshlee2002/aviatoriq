@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useMemo } from "react";
 import { trpc } from "@/lib/trpc";
 import { useRoute, Link } from "wouter";
 import {
@@ -9,6 +9,7 @@ import {
   QuizResult,
   QuizOption,
 } from "@/data/quizzes";
+import { useCountry } from "@/contexts/CountryContext";
 import PublicNav from "@/components/PublicNav";
 import PublicFooter from "@/components/PublicFooter";
 import SEO from "@/components/SEO";
@@ -23,6 +24,64 @@ import {
   Plane,
   Mail,
 } from "lucide-react";
+
+// ─── Quiz Localisation ───────────────────────────────────────────────────
+// Replaces hardcoded £/$ currency placeholders and regulator names in quiz
+// question labels and explanations with the user's country-specific values.
+
+const CURRENCY_PLACEHOLDER_RE = /£([d,]+(?:–£[d,]+)?(?:\+)?)/g;
+const USD_PLACEHOLDER_RE = /\s*\/\s*\$[d,]+(?:–\$[d,]+)?(?:\+)?/g;
+
+function localiseQuiz(quiz: Quiz, currencySymbol: string, regulator: string): Quiz {
+  // Only localise the affordability quiz (currency labels) and myth buster (regulator in explanations)
+  if (quiz.slug !== "can-you-afford-pilot-training" && quiz.slug !== "aviation-myth-buster") {
+    return quiz;
+  }
+
+  const localiseLabel = (label: string): string => {
+    if (currencySymbol === "£") return label; // already correct for UK
+    // Replace £ amounts with local currency, strip the / $ part
+    return label
+      .replace(/£60,000\s*\/\s*\$75,000/g, `${currencySymbol}75,000`)
+      .replace(/£30,000–£60,000\s*\/\s*\$40,000–\$75,000/g, `${currencySymbol}40,000–${currencySymbol}75,000`)
+      .replace(/£30,000\s*\/\s*\$40,000/g, `${currencySymbol}40,000`)
+      .replace(/Under £30,000\s*\/\s*\$40,000/g, `Under ${currencySymbol}40,000`)
+      .replace(/£10,000–£30,000\s*\/\s*\$15,000–\$40,000/g, `${currencySymbol}15,000–${currencySymbol}40,000`)
+      .replace(/£10,000\s*\/\s*\$15,000/g, `${currencySymbol}15,000`)
+      .replace(/under £10,000\s*\/\s*\$15,000/g, `under ${currencySymbol}15,000`);
+  };
+
+  const localiseExplanation = (text: string): string => {
+    // Swap FAA and EASA references for the user's regulator where appropriate
+    if (regulator === "CAA" || regulator === "CAA NZ") {
+      // UK/NZ: replace "FAA and EASA" pair with "CAA and EASA"
+      return text.replace(/\bFAA and EASA\b/g, "CAA and EASA");
+    }
+    if (regulator === "FAA") return text; // US: already correct
+    if (regulator === "EASA") {
+      // Europe: replace "FAA and EASA" pair with "FAA and EASA" (already correct)
+      return text;
+    }
+    // All other countries: replace "FAA and EASA" pair with the user's regulator + " and EASA"
+    // and replace standalone FAA/EASA with the user's regulator
+    return text
+      .replace(/\bFAA and EASA\b/g, `${regulator} and EASA`)
+      .replace(/\bFAA\b/g, regulator)
+      .replace(/\bEASA\b/g, regulator);
+  };
+
+  return {
+    ...quiz,
+    questions: quiz.questions.map((q) => ({
+      ...q,
+      options: q.options.map((o) => ({
+        ...o,
+        label: localiseLabel(o.label),
+      })),
+      explanation: q.explanation ? localiseExplanation(q.explanation) : q.explanation,
+    })),
+  };
+}
 
 // ─── Helpers ─────────────────────────────────────────────────────────────
 
@@ -469,7 +528,14 @@ function ResultCard({
 export default function QuizPage() {
   const [, params] = useRoute("/quizzes/:slug");
   const slug = params?.slug ?? "";
-  const quiz = getQuizBySlug(slug);
+  const rawQuiz = getQuizBySlug(slug);
+  const { config } = useCountry();
+  const currencySymbol = config?.currencySymbol ?? "£";
+  const regulator = config?.regulator ?? "CAA";
+  const quiz = useMemo(
+    () => rawQuiz ? localiseQuiz(rawQuiz, currencySymbol, regulator) : rawQuiz,
+    [rawQuiz, currencySymbol, regulator]
+  );
 
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
