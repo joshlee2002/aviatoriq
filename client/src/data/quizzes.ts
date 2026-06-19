@@ -816,14 +816,14 @@ const mythBusterQuiz: Quiz = {
       question: "Autopilot flies the plane for most of a commercial flight.",
       options: [
         {
-          value: "true",
-          label: "TRUE — autopilot handles the majority of cruise flight",
-          correct: true,
-        },
-        {
           value: "false",
           label: "FALSE — pilots manually fly throughout the flight",
           correct: false,
+        },
+        {
+          value: "true",
+          label: "TRUE — autopilot handles the majority of cruise flight",
+          correct: true,
         },
       ],
       explanation:
@@ -834,14 +834,14 @@ const mythBusterQuiz: Quiz = {
       question: "You can use your phone on a plane — it won't actually cause a crash.",
       options: [
         {
-          value: "true",
-          label: "TRUE — the interference risk is theoretical, not proven",
-          correct: true,
-        },
-        {
           value: "false",
           label: "FALSE — phone signals genuinely interfere with avionics",
           correct: false,
+        },
+        {
+          value: "true",
+          label: "TRUE — the interference risk is theoretical, not proven",
+          correct: true,
         },
       ],
       explanation:
@@ -870,14 +870,14 @@ const mythBusterQuiz: Quiz = {
       question: "Both pilots eat different meals to reduce the risk of food poisoning.",
       options: [
         {
-          value: "true",
-          label: "TRUE — many airlines require pilots to eat different meals",
-          correct: true,
-        },
-        {
           value: "false",
           label: "FALSE — there is no such rule",
           correct: false,
+        },
+        {
+          value: "true",
+          label: "TRUE — many airlines require pilots to eat different meals",
+          correct: true,
         },
       ],
       explanation:
@@ -888,14 +888,14 @@ const mythBusterQuiz: Quiz = {
       question: "Some airlines genuinely skip row 13 on their aircraft.",
       options: [
         {
-          value: "true",
-          label: "TRUE — multiple major airlines skip row 13",
-          correct: true,
-        },
-        {
           value: "false",
           label: "FALSE — all airlines use sequential row numbering",
           correct: false,
+        },
+        {
+          value: "true",
+          label: "TRUE — multiple major airlines skip row 13",
+          correct: true,
         },
       ],
       explanation:
@@ -942,14 +942,14 @@ const mythBusterQuiz: Quiz = {
       question: "The cabin air on a plane is recycled and full of germs.",
       options: [
         {
-          value: "false",
-          label: "FALSE — cabin air is filtered to hospital standards",
-          correct: true,
-        },
-        {
           value: "true",
           label: "TRUE — recycled air spreads illness",
           correct: false,
+        },
+        {
+          value: "false",
+          label: "FALSE — cabin air is filtered to hospital standards",
+          correct: true,
         },
       ],
       explanation:
