@@ -22,7 +22,7 @@ import {
   CheckCircle,
   Quote,
 } from "lucide-react";
-import { ALL_SCHOOLS, type StaticSchool } from "@/data/schools";
+import { ALL_SCHOOLS, SCHOOL_IMAGES, type StaticSchool } from "@/data/schools";
 
 const COUNTRIES = [
   "United Kingdom",
@@ -350,10 +350,10 @@ export default function Schools() {
                     <div className="w-full h-32 relative overflow-hidden">
                       <img
                         src={
-                          school.country === "United Kingdom" ||
-                          school.country === "UK"
+                          SCHOOL_IMAGES[school.id] ??
+                          (school.country === "United Kingdom" || school.country === "UK"
                             ? "/manus-storage/uk-school_2515f292.jpg"
-                            : "/manus-storage/usa-school_36756c90.jpg"
+                            : "/manus-storage/usa-school_36756c90.jpg")
                         }
                         alt={school.name}
                         className="w-full h-full object-cover"

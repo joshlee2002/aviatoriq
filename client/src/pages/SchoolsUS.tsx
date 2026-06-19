@@ -20,6 +20,7 @@ import {
   Loader2,
 } from "lucide-react";
 import type { FlightSchool } from "../../../drizzle/schema";
+import { US_SCHOOLS, SCHOOL_IMAGES } from "@/data/schools";
 
 const surface = "oklch(0.14 0.08 250)";
 const border = "oklch(1 0 0 / 0.08)";
@@ -79,9 +80,11 @@ export default function SchoolsUS() {
   const [searchTerm, setSearchTerm] = useState("");
   const [unlockSchool, setUnlockSchool] = useState<UnlockTarget | null>(null);
 
-  // Fetch US schools from DB
+  // Fetch US schools from DB — fall back to static data if DB is empty
   const schoolsQuery = trpc.schools.list.useQuery({ country: "United States" });
-  const allSchools: FlightSchool[] = schoolsQuery.data ?? [];
+  const dbSchools: FlightSchool[] = schoolsQuery.data ?? [];
+  // Use DB schools if available, otherwise use static US_SCHOOLS as fallback
+  const allSchools = dbSchools.length > 0 ? dbSchools : US_SCHOOLS;
 
   // State keyword map for matching against city strings
   const STATE_KEYWORDS: Record<string, string[]> = {
@@ -557,7 +560,7 @@ function SchoolCard({
 }) {
   const [expanded, setExpanded] = useState(false);
 
-  const heroImg = "/manus-storage/usa-school_36756c90.jpg";
+  const heroImg = SCHOOL_IMAGES[school.id] ?? "/manus-storage/usa-school_36756c90.jpg";
 
   return (
     <div
@@ -578,6 +581,9 @@ function SchoolCard({
           alt={school.name}
           className="w-full h-full object-cover"
           style={{ filter: "brightness(0.75)" }}
+          onError={e => {
+            (e.target as HTMLImageElement).src = "/manus-storage/usa-school_36756c90.jpg";
+          }}
         />
         <div
           className="absolute inset-0"

@@ -824,3 +824,36 @@ export const US_SCHOOLS: StaticSchool[] = [
 
 // Combined export for use in the Schools directory
 export const ALL_SCHOOLS: StaticSchool[] = [...STATIC_SCHOOLS, ...US_SCHOOLS];
+
+// Per-school Pexels images — unique photo for every school card
+// Sourced June 2026 via Pexels API (aviation/campus search terms)
+export const SCHOOL_IMAGES: Record<number, string> = {
+  1:   "https://images.pexels.com/photos/10965912/pexels-photo-10965912.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  2:   "https://images.pexels.com/photos/19589880/pexels-photo-19589880.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  3:   "https://images.pexels.com/photos/32922715/pexels-photo-32922715.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  4:   "https://images.pexels.com/photos/13816422/pexels-photo-13816422.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  5:   "https://images.pexels.com/photos/5262805/pexels-photo-5262805.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  6:   "https://images.pexels.com/photos/33231842/pexels-photo-33231842.png?auto=compress&cs=tinysrgb&h=400&w=800",
+  7:   "https://images.pexels.com/photos/33020982/pexels-photo-33020982.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  8:   "https://images.pexels.com/photos/9158761/pexels-photo-9158761.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  9:   "https://images.pexels.com/photos/35453770/pexels-photo-35453770.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  10:  "https://images.pexels.com/photos/37159693/pexels-photo-37159693.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  11:  "https://images.pexels.com/photos/32138453/pexels-photo-32138453.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  12:  "https://images.pexels.com/photos/2497926/pexels-photo-2497926.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  13:  "https://images.pexels.com/photos/30261302/pexels-photo-30261302.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  14:  "https://images.pexels.com/photos/36006606/pexels-photo-36006606.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  15:  "https://images.pexels.com/photos/14628247/pexels-photo-14628247.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  16:  "https://images.pexels.com/photos/30342626/pexels-photo-30342626.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  101: "https://images.pexels.com/photos/10362464/pexels-photo-10362464.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  102: "https://images.pexels.com/photos/31039051/pexels-photo-31039051.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  103: "https://images.pexels.com/photos/6916506/pexels-photo-6916506.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  104: "https://images.pexels.com/photos/37010312/pexels-photo-37010312.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  105: "https://images.pexels.com/photos/31785120/pexels-photo-31785120.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  106: "https://images.pexels.com/photos/8228203/pexels-photo-8228203.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  107: "https://images.pexels.com/photos/34894314/pexels-photo-34894314.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  108: "https://images.pexels.com/photos/914403/pexels-photo-914403.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  109: "https://images.pexels.com/photos/9611088/pexels-photo-9611088.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  110: "https://images.pexels.com/photos/30272219/pexels-photo-30272219.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  111: "https://images.pexels.com/photos/3099037/pexels-photo-3099037.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+  112: "https://images.pexels.com/photos/35453767/pexels-photo-35453767.jpeg?auto=compress&cs=tinysrgb&h=400&w=800",
+};
