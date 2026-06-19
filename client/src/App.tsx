@@ -152,10 +152,7 @@ import AdhdFaaMedical from "./pages/guides/AdhdFaaMedical";
 import AtpCertificateUSA from "./pages/guides/AtpCertificateUSA";
 import CfiCareerUSA from "./pages/guides/CfiCareerUSA";
 
-// Regional hub pages
-import HomeAustralia from "./pages/HomeAustralia";
-import HomeCanada from "./pages/HomeCanada";
-import HomeEurope from "./pages/HomeEurope";
+// Regional hub pages — migrated to CountryRedirect → unified Home.tsx (Phase 3 restructure)
 
 // New regional guides (Australia, Canada, Europe)
 import HowToBecomePilotAustralia from "./pages/guides/HowToBecomePilotAustralia";
@@ -278,9 +275,7 @@ import BestFlightSchoolsNewZealand from "@/pages/guides/BestFlightSchoolsNewZeal
 import NewZealandRegionalAirlines from "@/pages/guides/NewZealandRegionalAirlines";
 import BestFlightSchoolsUAE from "@/pages/guides/BestFlightSchoolsUAE";
 // New hub pages
-import HomeUAE from "./pages/HomeUAE";
-import HomeSouthAfrica from "./pages/HomeSouthAfrica";
-import HomeNewZealand from "./pages/HomeNewZealand";
+// HomeUAE, HomeSouthAfrica, HomeNewZealand — migrated to CountryRedirect → unified Home.tsx
 
 // New section pages
 import Stories from "./pages/Stories";
@@ -435,10 +430,10 @@ function Router() {
       {/* Country selector */}
       <Route path="/select" component={CountrySelect} />
 
-      {/* Regional hub routes */}
-      <Route path="/australia" component={HomeAustralia} />
-      <Route path="/canada" component={HomeCanada} />
-      <Route path="/europe" component={HomeEurope} />
+      {/* Regional hub routes — CountryRedirect sets country in localStorage then renders unified Home.tsx */}
+      <Route path="/australia"><CountryRedirect country="australia" to="/" /></Route>
+      <Route path="/canada"><CountryRedirect country="canada" to="/" /></Route>
+      <Route path="/europe"><CountryRedirect country="europe" to="/" /></Route>
 
       {/* US routes */}
       <Route path="/us"><CountryRedirect country="us" to="/" /></Route>
@@ -560,7 +555,7 @@ function Router() {
       <Route path="/europe/guides/europe-flight-instructor" component={EuropeFlightInstructor} />
       <Route path="/europe/guides/europe-pilot-seniority" component={EuropePilotSeniority} />
       {/* UAE hub and guides */}
-      <Route path="/uae" component={HomeUAE} />
+      <Route path="/uae"><CountryRedirect country="uae" to="/" /></Route>
       <Route path="/uae/guides/uae-pilot-training-costs" component={UaePilotTrainingCosts} />
       <Route path="/uae/guides/emirates-cadet-pilot-program" component={EmiratesCadetPilotProgram} />
       <Route path="/uae/guides/etihad-cadet-pilot-program" component={EtihadCadetPilotProgram} />
@@ -570,7 +565,7 @@ function Router() {
       <Route path="/uae/guides/uae-medical-class-1" component={UaeMedicalClass1} />
       <Route path="/uae/guides/uae-pilot-shortage" component={UaePilotShortage} />
       {/* South Africa hub and guides */}
-      <Route path="/south-africa" component={HomeSouthAfrica} />
+      <Route path="/south-africa"><CountryRedirect country="south-africa" to="/" /></Route>
       <Route path="/south-africa/guides/sacpl-requirements" component={SaCplRequirements} />
       <Route path="/south-africa/guides/sa-atpl-requirements" component={SaAtplRequirements} />
       <Route path="/south-africa/guides/sacaa-class-1-medical-certificate" component={SaMedicalClass1} />
@@ -582,7 +577,7 @@ function Router() {
       <Route path="/south-africa/guides/south-africa-regional-airlines-pilot-training" component={SouthAfricaRegionalAirlines} />
       <Route path="/south-africa/guides/military-to-airlines" component={SouthAfricaMilitaryToAirlines} />
       {/* New Zealand hub and guides */}
-      <Route path="/new-zealand" component={HomeNewZealand} />
+      <Route path="/new-zealand"><CountryRedirect country="new-zealand" to="/" /></Route>
       <Route path="/new-zealand/guides/nz-cpl-requirements" component={NzCplRequirements} />
       <Route path="/new-zealand/guides/nz-atpl-requirements" component={NzAtplRequirements} />
       <Route path="/new-zealand/guides/nz-medical-class-1" component={NzMedicalClass1} />

@@ -62,8 +62,8 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
     flag: "🇬🇧", label: "United Kingdom", regulator: "CAA",
     seoTitle: "AviatorIQ – What's Really Stopping You Becoming A Pilot?",
     seoDescription: "Find your best route into UK pilot training. Take the free AviatorIQ career assessment and get a personalised pilot training roadmap matched to real UK flight schools.",
-    heroHeadline: "Your Personalised UK Pilot Training Roadmap",
-    heroSub: "UK pilot training is complex and expensive. AviatorIQ cuts through the noise — answer 5 questions and get a personalised CAA training roadmap, real 2026 costs, and matched UK flight schools.",
+    heroHeadline: "Could You Actually Become A Pilot?",
+    heroSub: "Discover your training route, costs, challenges and matched UK flight schools in under 5 minutes. Free, no registration required.",
     roadmapHref: "/roadmap",
     heroBadges: ["Free · No registration", "Real 2026 UK costs", "Matched UK flight schools"],
     sampleCandidate: { initials: "JM", name: "Jamie, 24 — London", route: "Integrated ATPL", budget: "£90k–£130k", timeline: "Within 12 months", barrier: "Finance" },
@@ -90,8 +90,8 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
     flag: "🇺🇸", label: "United States", regulator: "FAA",
     seoTitle: "AviatorIQ US — FAA Pilot Training Guidance, Costs & Flight Schools 2026",
     seoDescription: "The most personalised pilot training guidance platform for the US. Part 141 vs 61, FAA medical requirements, ATP costs, airline cadet programmes, and the best US flight schools.",
-    heroHeadline: "Your Personalised FAA Pilot Training Roadmap",
-    heroSub: "Part 141 or Part 61? ATP or CPL? How much will it actually cost? Answer 5 questions and get a specific, data-driven roadmap — your exact FAA route, real 2026 costs, timeline, and matched US flight schools.",
+    heroHeadline: "Could You Actually Become A Pilot?",
+    heroSub: "Discover your FAA training route, costs, challenges and matched US flight schools in under 5 minutes. Free, no registration required.",
     roadmapHref: "/roadmap",
     heroBadges: ["Free · No registration", "Real 2026 FAA costs", "Matched US flight schools"],
     sampleCandidate: { initials: "AJ", name: "Alex, 26 — Dallas, TX", route: "Part 141 Accelerated", budget: "$80k–$120k", timeline: "Within 12 months", barrier: "Finance" },
@@ -118,8 +118,8 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
     flag: "🇦🇺", label: "Australia", regulator: "CASA",
     seoTitle: "AviatorIQ Australia — CASA Pilot Training Guidance & Costs 2026",
     seoDescription: "Personalised pilot training guidance for Australia. CASA CPL/ATPL requirements, medical standards, training costs, and matched Australian flight schools.",
-    heroHeadline: "Your Personalised CASA Pilot Training Roadmap",
-    heroSub: "CASA CPL or ATPL? How much will training actually cost in Australia? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched Australian flight schools.",
+    heroHeadline: "Could You Actually Become A Pilot?",
+    heroSub: "Discover your CASA training route, costs, challenges and matched Australian flight schools in under 5 minutes. Free, no registration required.",
     roadmapHref: "/roadmap",
     heroBadges: ["Free · No registration", "Real 2026 CASA costs", "Matched Australian schools"],
     sampleCandidate: { initials: "SB", name: "Sam, 23 — Sydney", route: "Integrated ATPL", budget: "A$100k–A$150k", timeline: "Within 12 months", barrier: "Finance" },
@@ -146,8 +146,8 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
     flag: "🇨🇦", label: "Canada", regulator: "Transport Canada",
     seoTitle: "AviatorIQ Canada — Transport Canada Pilot Training Guidance & Costs 2026",
     seoDescription: "Personalised pilot training guidance for Canada. Transport Canada CPL/ATPL requirements, medical standards, training costs, and matched Canadian flight schools.",
-    heroHeadline: "Your Personalised Canada Pilot Training Roadmap",
-    heroSub: "Transport Canada CPL or ATPL? How much will training cost in Canada? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched Canadian flight schools.",
+    heroHeadline: "Could You Actually Become A Pilot?",
+    heroSub: "Discover your Transport Canada training route, costs, challenges and matched Canadian flight schools in under 5 minutes. Free, no registration required.",
     roadmapHref: "/roadmap",
     heroBadges: ["Free · No registration", "Real 2026 TC costs", "Matched Canadian schools"],
     sampleCandidate: { initials: "MC", name: "Mike, 25 — Toronto", route: "Integrated ATPL", budget: "C$90k–C$140k", timeline: "Within 12 months", barrier: "Finance" },
@@ -174,8 +174,8 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
     flag: "🇪🇺", label: "Europe", regulator: "EASA",
     seoTitle: "AviatorIQ Europe — EASA Pilot Training Guidance & Costs 2026",
     seoDescription: "Personalised pilot training guidance for Europe. EASA CPL/ATPL requirements, medical standards, training costs, and matched European flight schools.",
-    heroHeadline: "Your Personalised EASA Pilot Training Roadmap",
-    heroSub: "EASA integrated or modular? How much will training cost in Europe? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched European flight schools.",
+    heroHeadline: "Could You Actually Become A Pilot?",
+    heroSub: "Discover your EASA training route, costs, challenges and matched European flight schools in under 5 minutes. Free, no registration required.",
     roadmapHref: "/roadmap",
     heroBadges: ["Free · No registration", "Real 2026 EASA costs", "Matched European schools"],
     sampleCandidate: { initials: "LP", name: "Lukas, 22 — Berlin", route: "Integrated ATPL", budget: "€80k–€120k", timeline: "Within 12 months", barrier: "Finance" },
@@ -202,8 +202,8 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
     flag: "🇳🇿", label: "New Zealand", regulator: "CAA NZ",
     seoTitle: "AviatorIQ New Zealand — CAA NZ Pilot Training Guidance & Costs 2026",
     seoDescription: "Personalised pilot training guidance for New Zealand. CAA NZ requirements, training costs, and matched NZ flight schools.",
-    heroHeadline: "Your Personalised NZ Pilot Training Roadmap",
-    heroSub: "CAA NZ CPL or ATPL? How much will training cost in New Zealand? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched NZ flight schools.",
+    heroHeadline: "Could You Actually Become A Pilot?",
+    heroSub: "Discover your CAA NZ training route, costs, challenges and matched New Zealand flight schools in under 5 minutes. Free, no registration required.",
     roadmapHref: "/roadmap",
     heroBadges: ["Free · No registration", "Real 2026 NZ costs", "Matched NZ schools"],
     sampleCandidate: { initials: "TW", name: "Tom, 24 — Auckland", route: "Integrated ATPL", budget: "NZ$90k–NZ$130k", timeline: "Within 12 months", barrier: "Finance" },
@@ -230,8 +230,8 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
     flag: "🇿🇦", label: "South Africa", regulator: "SACAA",
     seoTitle: "AviatorIQ South Africa — SACAA Pilot Training Guidance & Costs 2026",
     seoDescription: "Personalised pilot training guidance for South Africa. SACAA requirements, training costs, and matched SA flight schools.",
-    heroHeadline: "Your Personalised SA Pilot Training Roadmap",
-    heroSub: "SACAA CPL or ATPL? How much will training cost in South Africa? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched SA flight schools.",
+    heroHeadline: "Could You Actually Become A Pilot?",
+    heroSub: "Discover your SACAA training route, costs, challenges and matched South African flight schools in under 5 minutes. Free, no registration required.",
     roadmapHref: "/roadmap",
     heroBadges: ["Free · No registration", "Real 2026 SA costs", "Matched SA schools"],
     sampleCandidate: { initials: "KM", name: "Kyle, 23 — Cape Town", route: "Integrated ATPL", budget: "R800k–R1.2m", timeline: "Within 12 months", barrier: "Finance" },
@@ -258,8 +258,8 @@ const HOME_CONFIGS: Record<string, HomeCountryConfig> = {
     flag: "🇦🇪", label: "UAE", regulator: "GCAA",
     seoTitle: "AviatorIQ UAE — GCAA Pilot Training, Emirates & Etihad Cadet 2026",
     seoDescription: "Personalised pilot training guidance for the UAE. GCAA requirements, Emirates and Etihad cadet programmes, training costs, and matched UAE flight schools.",
-    heroHeadline: "Your Personalised UAE Pilot Training Roadmap",
-    heroSub: "Emirates, Etihad, or Air Arabia cadet? How much will training cost in the UAE? Answer 5 questions and get a personalised roadmap — your exact route, real 2026 costs, and matched UAE flight schools.",
+    heroHeadline: "Could You Actually Become A Pilot?",
+    heroSub: "Discover your GCAA training route, costs, challenges and matched UAE flight schools in under 5 minutes. Free, no registration required.",
     roadmapHref: "/roadmap",
     heroBadges: ["Free · No registration", "Real 2026 UAE costs", "Emirates & Etihad cadet info"],
     sampleCandidate: { initials: "OA", name: "Omar, 24 — Dubai", route: "Integrated ATPL", budget: "AED 350k–500k", timeline: "Within 12 months", barrier: "Eligibility" },
@@ -354,9 +354,9 @@ function HeroSection({ cfg }: { cfg: HomeCountryConfig }) {
               className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-display font-bold text-white mb-4 leading-[1.1] animate-fade-in-up"
               style={{ letterSpacing: "-0.02em" }}
             >
-              {cfg.heroHeadline.split(" ").slice(0, -2).join(" ")}{" "}
+              {cfg.heroHeadline.split(" ").slice(0, -3).join(" ")}{" "}
               <span style={{ background: ctaGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                {cfg.heroHeadline.split(" ").slice(-2).join(" ")}
+                {cfg.heroHeadline.split(" ").slice(-3).join(" ")}
               </span>
             </h1>
 
@@ -366,19 +366,12 @@ function HeroSection({ cfg }: { cfg: HomeCountryConfig }) {
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-200">
               <Link
-                href={cfg.roadmapHref}
+                href="/quiz"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white no-underline transition-all"
                 style={{ background: ctaGradient, boxShadow: "0 0 30px oklch(0.72 0.18 65 / 0.35)" }}
               >
-                Generate My Free {cfg.regulator} Roadmap
+                Start Free Assessment
                 <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                href="/quiz"
-                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-base font-semibold text-white/80 no-underline transition-all hover:text-white"
-                style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.15)" }}
-              >
-                Find My Training Route
               </Link>
             </div>
 
@@ -470,10 +463,10 @@ function SocialProofBar() {
       <div className="container py-4">
         <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
           {[
-            { value: "182", label: "Training guides" },
-            { value: "8", label: "Countries covered" },
-            { value: "11", label: "Free tools" },
-            { value: "Free", label: "Always, no registration" },
+            { value: "50+", label: "Flight schools analysed" },
+            { value: "Personalised", label: "Training routes" },
+            { value: "UK costs", label: "Included in results" },
+            { value: "School", label: "Matching included" },
           ].map((stat) => (
             <div key={stat.label} className="flex items-center gap-3">
               <span className="font-display font-bold text-lg" style={{ background: brandGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
@@ -491,9 +484,9 @@ function SocialProofBar() {
 // ─── How It Works ─────────────────────────────────────────────────────────────
 function HowItWorksSection() {
   const steps = [
-    { number: "01", icon: <BookOpen className="w-6 h-6" />, title: "Answer a few honest questions", description: "Tell us about your goal, your situation, and — most importantly — what's been stopping you. The assessment takes around 5 minutes and is completely free.", color: "oklch(0.45 0.18 240)" },
-    { number: "02", icon: <Target className="w-6 h-6" />, title: "Discover your biggest barrier", description: "Get your AviatorIQ Score and a clear, honest answer to the question you've been avoiding: what is actually standing between you and the cockpit?", color: "oklch(0.72 0.18 65)" },
-    { number: "03", icon: <Building2 className="w-6 h-6" />, title: "Get a personalised roadmap", description: "Receive a training roadmap that addresses your specific barrier, recommends the right route, and matches you with real flight schools.", color: "oklch(0.6 0.18 200)" },
+    { number: "01", icon: <BookOpen className="w-6 h-6" />, title: "Answer a few honest questions", description: "Tell us about your goal, your situation, and what's been stopping you. Takes around 5 minutes. Completely free.", color: "oklch(0.45 0.18 240)" },
+    { number: "02", icon: <Target className="w-6 h-6" />, title: "Discover your biggest barrier", description: "Get your AviatorIQ Score and a clear answer to what is actually standing between you and the cockpit.", color: "oklch(0.72 0.18 65)" },
+    { number: "03", icon: <Building2 className="w-6 h-6" />, title: "Get a personalised roadmap", description: "A training roadmap built around your barrier, your budget, and your timeline — with matched flight schools.", color: "oklch(0.6 0.18 200)" },
   ];
 
   return (
@@ -501,13 +494,13 @@ function HowItWorksSection() {
       <div className="container">
         <div className="text-center mb-8 md:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4" style={{ background: "oklch(0.45 0.18 240 / 0.12)", border: "1px solid oklch(0.45 0.18 240 / 0.25)", color: "oklch(0.65 0.18 240)" }}>
-            How it works
+            Three steps
           </div>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
-            Three steps from curiosity to a clear plan
+            From curiosity to a clear plan
           </h2>
           <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: muted }}>
-            No generic advice. No information overload. Just a clear answer to the question you actually need answered.
+            Answer a few questions. Get a personalised roadmap. No generic advice, no information overload.
           </p>
         </div>
 
@@ -541,9 +534,9 @@ function HowItWorksSection() {
           <Link
             href="/quiz"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white no-underline transition-all"
-            style={{ background: brandGradient, boxShadow: "0 0 24px oklch(0.45 0.18 240 / 0.3)" }}
+            style={{ background: ctaGradient, boxShadow: "0 0 24px oklch(0.72 0.18 65 / 0.3)" }}
           >
-            Start your assessment
+            Start Free Assessment
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -639,7 +632,7 @@ function QuizTeaserSection() {
       badge: "2 minutes",
       badgeColor: "oklch(0.45 0.18 240)",
       tag: "New",
-      title: "What's Really Stopping You?",
+      title: "What's Stopping Me Becoming A Pilot?",
       desc: "7 questions. Find your biggest barrier, your strongest asset, and your Flight Potential Score — no sign-up needed.",
       href: "/quiz/flight-deck",
       cta: "Find out now",
@@ -650,7 +643,7 @@ function QuizTeaserSection() {
       badge: "2–3 minutes",
       badgeColor: "oklch(0.6 0.18 200)",
       tag: null,
-      title: "Which Pilot Licence Is Right For You?",
+      title: "Which Licence Is Right For Me?",
       desc: "PPL, ATPL, LAPL or CPL? Answer 8 questions and get a personalised licence recommendation with cost estimates.",
       href: "/quiz/licence",
       cta: "Find my licence",
@@ -661,8 +654,8 @@ function QuizTeaserSection() {
       badge: "5 minutes",
       badgeColor: "oklch(0.72 0.18 65)",
       tag: "Most popular",
-      title: "Career Readiness Assessment",
-      desc: "Your AviatorIQ Score, biggest barrier, AI training roadmap, matched flight schools, and a free PDF blueprint.",
+      title: "Could I Become A Pilot?",
+      desc: "Your AviatorIQ Score, biggest barrier, personalised training roadmap, matched flight schools, and a free PDF blueprint.",
       href: "/quiz",
       cta: "Take the assessment",
       variant: "primary",
@@ -677,10 +670,10 @@ function QuizTeaserSection() {
             Three assessments
           </div>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
-            Find your answer in minutes
+            Pick the question you need answered
           </h2>
           <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: muted }}>
-            Each assessment is designed to give you one thing: certainty. Not information — certainty. Pick the question you most need answered right now.
+            Three short assessments. Each one gives you a clear, personalised answer — not generic advice.
           </p>
         </div>
 
@@ -1009,26 +1002,19 @@ function CtaBannerSection() {
             Free · No registration required
           </div>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
-            Your Roadmap Is 5 Questions Away.
+            Your answer is 5 questions away.
           </h2>
           <p className="text-lg mb-8" style={{ color: "oklch(0.72 0.04 240)" }}>
-            Answer 5 questions. Get your specific training route, real 2026 costs, a step-by-step action plan, and matched flight schools. Free, no registration.
+            Get your specific training route, real 2026 costs, and matched flight schools. Free, no registration.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/roadmap"
+              href="/quiz"
               className="inline-flex items-center gap-2 px-10 py-4 rounded-xl text-base font-bold text-white no-underline transition-all"
               style={{ background: ctaGradient, boxShadow: "0 0 40px oklch(0.72 0.18 65 / 0.4)" }}
             >
-              Generate My Roadmap
+              Start Free Assessment
               <ArrowRight className="w-5 h-5" />
-            </Link>
-            <Link
-              href="/quiz"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-white/70 no-underline transition-all hover:text-white"
-              style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)" }}
-            >
-              Full Career Assessment
             </Link>
           </div>
         </div>
@@ -1065,9 +1051,9 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection cfg={cfg} />
         <SocialProofBar />
+        <QuizTeaserSection />
         <HowItWorksSection />
         <ExpertCredibilitySection />
-        <QuizTeaserSection />
         <TrainingRoutesSection />
         <AfterTrainingSection />
         <CostSection cfg={cfg} />
