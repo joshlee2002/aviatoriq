@@ -551,25 +551,19 @@ function ExpertCredibilitySection() {
     {
       icon: <Shield className="w-6 h-6" />,
       title: "No sponsored rankings",
-      body: "Flight schools are listed on merit, not because they pay us. Every school in our directory is included because it's a legitimate, nationally approved training provider.",
+      body: "Schools are listed on merit. No one pays to appear in our directory or assessments.",
       color: "oklch(0.45 0.18 240)",
-    },
-    {
-      icon: <BookOpen className="w-6 h-6" />,
-      title: "Researched from primary sources",
-      body: "Every cost figure, timeline, and requirement in our guides is sourced from national aviation authorities and direct school prospectuses — not copied from other websites. We cite our sources.",
-      color: "oklch(0.6 0.18 200)",
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Updated for 2026",
-      body: "Pilot training costs and requirements change. We review and update every guide at least twice a year. Every page shows its last-updated date so you know what you're reading.",
+      body: "Costs and requirements change. Every guide is reviewed regularly and shows its last-updated date.",
       color: "oklch(0.72 0.18 65)",
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: "Built for one decision",
-      body: "AviatorIQ exists for one purpose: to help you decide whether and how to become a pilot. We don't sell courses, we don't run a flight school. We have no incentive to mislead you.",
+      title: "Built to help you choose",
+      body: "We don't sell courses or run a flight school. Our only goal is to help you make the right training decision.",
       color: "oklch(0.55 0.18 145)",
     },
   ];
@@ -577,47 +571,28 @@ function ExpertCredibilitySection() {
   return (
     <section className="section" style={{ background: "oklch(0.11 0.08 252)" }}>
       <div className="container">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4" style={{ background: "oklch(0.72 0.18 65 / 0.12)", border: "1px solid oklch(0.72 0.18 65 / 0.25)", color: "oklch(0.85 0.15 65)" }}>
-            <Shield className="w-3 h-3" />
-            Why trust AviatorIQ
-          </div>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-3" style={{ letterSpacing: "-0.02em" }}>
             Honest information. No agenda.
           </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: muted }}>
-            The internet is full of flight school websites dressed up as advice. AviatorIQ is independent. Here's what that means in practice.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {pillars.map((p) => (
             <div
               key={p.title}
-              className="p-5 md:p-7 rounded-2xl flex gap-5 transition-all duration-300"
+              className="p-5 rounded-2xl flex gap-4"
               style={{ background: surface, border: `1px solid ${border}` }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
             >
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: `${p.color.replace(")", " / 0.15)")}`, color: p.color }}>
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: `${p.color.replace(")", " / 0.15)")}`, color: p.color }}>
                 {p.icon}
               </div>
               <div>
-                <h3 className="font-display font-bold text-white mb-2">{p.title}</h3>
+                <h3 className="font-display font-bold text-white mb-1 text-sm">{p.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: muted }}>{p.body}</p>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Pilot community note */}
-        <div className="mt-8 p-6 rounded-2xl text-center" style={{ background: "oklch(0.45 0.18 240 / 0.06)", border: "1px solid oklch(0.45 0.18 240 / 0.15)" }}>
-          <p className="text-sm" style={{ color: "oklch(0.65 0.04 240)" }}>
-            <span className="font-semibold text-white">Are you a pilot or flight instructor?</span>{" "}
-            If you spot anything inaccurate in our guides, we want to know.{" "}
-            <a href="mailto:hello@aviatoriq.com" className="underline" style={{ color: "oklch(0.65 0.18 240)" }}>Email us</a>{" "}
-            and we'll review and credit you.
-          </p>
         </div>
       </div>
     </section>
@@ -726,38 +701,36 @@ function QuizTeaserSection() {
 // ─── Training Routes ──────────────────────────────────────────────────────────
 function TrainingRoutesSection() {
   const routes = [
-    { icon: <Plane className="w-6 h-6" />, color: "oklch(0.45 0.18 240)", title: "Airline Pilot Training", description: "The most common goal. Choose between Integrated ATPL (fastest, £80k–£120k) or Modular ATPL (flexible, £40k–£80k). Both lead to the same licence.", cta: "Find airline training", href: "/quiz" },
-    { icon: <Compass className="w-6 h-6" />, color: "oklch(0.6 0.18 200)", title: "Private Pilot Licence", description: "Fly for pleasure or personal travel. A PPL typically takes 6–18 months and costs £8,000–£15,000 depending on location and aircraft type.", cta: "Explore PPL training", href: "/quiz" },
-    { icon: <Building2 className="w-6 h-6" />, color: "oklch(0.72 0.18 65)", title: "Corporate & Private Jets", description: "Fly high-net-worth individuals on business jets. Requires ATPL and type ratings. A growing sector with strong demand for experienced pilots.", cta: "Learn about corporate", href: "/quiz" },
-    { icon: <GraduationCap className="w-6 h-6" />, color: "oklch(0.65 0.2 300)", title: "Flight Instructor", description: "Teach others to fly while building your own hours. A popular route for modular students to build flight time before airline applications.", cta: "Explore instructing", href: "/quiz" },
+    { icon: <Plane className="w-6 h-6" />, color: "oklch(0.45 0.18 240)", title: "Airline Pilot (ATPL)", description: "Integrated (18–24 months, £80k–£120k) or Modular (3–5 years, £40k–£80k). Both lead to the same licence. Not sure which suits you?", cta: "Take the assessment", href: "/quiz" },
+    { icon: <Compass className="w-6 h-6" />, color: "oklch(0.6 0.18 200)", title: "Private Pilot (PPL)", description: "Fly for pleasure or personal travel. Typically 6–18 months and £8,000–£15,000. A good starting point if you're unsure about going commercial.", cta: "Take the assessment", href: "/quiz" },
   ];
 
   return (
     <section className="section" style={{ background: "oklch(0.11 0.08 252)" }}>
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4" style={{ letterSpacing: "-0.02em" }}>
-            Every type of pilot training, covered
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-3" style={{ letterSpacing: "-0.02em" }}>
+            Not sure which route is right for you?
           </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: muted }}>
-            Whether you want to fly for an airline, for pleasure, or as a career change, AviatorIQ helps you find the right route.
+          <p className="text-base max-w-xl mx-auto" style={{ color: muted }}>
+            The assessment will tell you in under 5 minutes.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-3xl mx-auto">
           {routes.map((route) => (
             <div
               key={route.title}
-              className="p-5 md:p-7 rounded-2xl transition-all duration-300 group"
+              className="p-5 rounded-2xl transition-all duration-300 group"
               style={{ background: surface, border: `1px solid ${border}` }}
               onMouseEnter={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${borderHover}`; (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
               onMouseLeave={e => { (e.currentTarget as HTMLElement).style.border = `1px solid ${border}`; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
             >
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ background: `${route.color.replace(")", " / 0.15)")}`, color: route.color }}>
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style={{ background: `${route.color.replace(")", " / 0.15)")}`, color: route.color }}>
                 {route.icon}
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-3">{route.title}</h3>
-              <p className="leading-relaxed mb-5 text-sm" style={{ color: muted }}>{route.description}</p>
+              <h3 className="text-base font-display font-bold text-white mb-2">{route.title}</h3>
+              <p className="leading-relaxed mb-4 text-sm" style={{ color: muted }}>{route.description}</p>
               <Link href={route.href} className="inline-flex items-center gap-1.5 text-sm font-semibold no-underline transition-all" style={{ color: route.color }}>
                 {route.cta}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -951,10 +924,10 @@ function GuidesSection({ cfg }: { cfg: HomeCountryConfig }) {
       <div className="container">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-10 gap-4">
           <div>
-            <h2 className="text-3xl font-display font-bold text-white mb-2" style={{ letterSpacing: "-0.02em" }}>
-              Pilot training guides
+            <h2 className="text-2xl font-display font-bold text-white mb-2" style={{ letterSpacing: "-0.02em" }}>
+              Read before you decide
             </h2>
-            <p style={{ color: muted }}>Everything you need to understand before you start.</p>
+            <p style={{ color: muted }}>Key guides to read alongside your assessment results.</p>
           </div>
           <Link href={cfg.guidesIndexHref} className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white/70 no-underline transition-all hover:text-white whitespace-nowrap" style={{ background: "oklch(1 0 0 / 0.06)", border: `1px solid ${border}` }}>
             {cfg.guidesIndexLabel}
@@ -1054,10 +1027,9 @@ export default function Home() {
         <QuizTeaserSection />
         <HowItWorksSection />
         <ExpertCredibilitySection />
-        <TrainingRoutesSection />
-        <AfterTrainingSection />
         <CostSection cfg={cfg} />
         <SchoolMatchingSection />
+        <TrainingRoutesSection />
         <GuidesSection cfg={cfg} />
         <CtaBannerSection />
         {/* Email Capture Section */}
