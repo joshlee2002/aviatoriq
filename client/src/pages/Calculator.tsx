@@ -895,22 +895,30 @@ export default function Calculator() {
               </div>
 
               {/* Assessment CTA */}
-              <div className="card-base p-6 bg-[var(--color-navy)] text-white text-center">
-                <p className="text-xs font-semibold uppercase tracking-widest text-blue-300 mb-3">Next Step</p>
-                <h3 className="font-display font-bold text-xl mb-2">
+              <div
+                className="rounded-2xl p-6 text-center"
+                style={{ background: "oklch(0.13 0.08 250)", border: "1px solid oklch(1 0 0 / 0.08)" }}
+              >
+                <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "oklch(0.65 0.18 240)" }}>Next Step</p>
+                <h3 className="font-display font-bold text-xl mb-2 text-white">
                   You've seen the cost. Now find out if the full picture adds up.
                 </h3>
-                <p className="text-white/70 text-sm mb-5 max-w-md mx-auto">
+                <p className="text-sm mb-5 max-w-md mx-auto" style={{ color: "oklch(0.75 0.04 240)" }}>
                   The full assessment combines your cost estimate with your goals, medical readiness and training options — and matches you with flight schools that fit your budget.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <Link href="/quiz" className="btn-cta text-sm">
+                  <Link
+                    href="/quiz"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white no-underline"
+                    style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.22 45))", boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.25)" }}
+                  >
                     Get My Full Pilot Assessment
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link
                     href="/guides/pilot-training-costs"
-                    className="btn-outline text-sm border-white/30 text-white hover:bg-white/10"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white no-underline transition-all hover:bg-white/10"
+                    style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.15)" }}
                   >
                     Full cost guide
                   </Link>

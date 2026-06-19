@@ -496,17 +496,21 @@ export default function IntModDecision() {
               </div>
 
               {/* CTAs */}
-              <div className="card-base p-6 bg-[var(--color-navy)] text-white text-center">
-                <p className="text-xs font-semibold uppercase tracking-widest text-blue-300 mb-3">Next Step</p>
-                <h3 className="font-display font-bold text-lg mb-2">
+              <div
+                className="rounded-2xl p-6 text-center"
+                style={{ background: "oklch(0.13 0.08 250)", border: "1px solid oklch(1 0 0 / 0.08)" }}
+              >
+                <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "oklch(0.65 0.18 240)" }}>Next Step</p>
+                <h3 className="font-display font-bold text-lg mb-2 text-white">
                   You've found your route. Now find out if it's realistic for you.
                 </h3>
-                <p className="text-white/70 text-sm mb-5">
+                <p className="text-sm mb-5" style={{ color: "oklch(0.75 0.04 240)" }}>
                   The full assessment combines your route choice with your finances, medical readiness and goals — and matches you with flight schools.
                 </p>
                 <Link
                   href={resultCopy.ctaHref}
-                  className="btn-cta mb-3 w-full justify-center"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white no-underline mb-3 w-full justify-center"
+                  style={{ background: "linear-gradient(135deg, oklch(0.72 0.18 65), oklch(0.65 0.22 45))", boxShadow: "0 0 20px oklch(0.72 0.18 65 / 0.25)" }}
                 >
                   {resultCopy.cta}
                   <ArrowRight className="w-4 h-4" />
@@ -517,7 +521,8 @@ export default function IntModDecision() {
                     setAnswers({});
                     setSelected(null);
                   }}
-                  className="text-sm text-white/60 hover:text-white transition-colors"
+                  className="text-sm hover:text-white transition-colors"
+                  style={{ color: "oklch(0.65 0.04 240)" }}
                 >
                   Start over
                 </button>
