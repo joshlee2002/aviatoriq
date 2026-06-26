@@ -533,6 +533,38 @@ export default function Results() {
     }
   };
 
+  if (resultQuery.isError && !cachedResult) {
+    return (
+      <div className="min-h-screen flex flex-col">
+        <SEO title="Result Not Found – AviatorPath" noindex />
+        <PublicNav />
+        <main
+          className="flex-1 flex items-center justify-center py-20 px-4"
+          style={{ background: "oklch(0.10 0.01 240)" }}
+        >
+          <div className="max-w-md w-full text-center">
+            <div className="w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <AlertTriangle className="w-8 h-8 text-red-500" />
+            </div>
+            <h1 className="text-2xl font-display font-bold text-white mb-3">
+              Blueprint Not Found
+            </h1>
+            <p className="text-white/60 mb-8">
+              We couldn't find your assessment results. This usually happens if the submission was interrupted or the link has expired.
+            </p>
+            <Link
+              href="/quiz"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-black font-bold transition-all hover:scale-[1.02]"
+            >
+              Take Assessment Again <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </main>
+        <PublicFooter />
+      </div>
+    );
+  }
+
   if ((resultQuery.isLoading && !cachedResult) || !activeResult) {
     return (
       <div className="min-h-screen flex flex-col">
